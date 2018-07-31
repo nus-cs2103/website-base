@@ -31,7 +31,7 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 <br>
 
-<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" minimized />
+<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
 
 </div>
 {% endmacro %} 

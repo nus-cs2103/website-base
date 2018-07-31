@@ -102,6 +102,7 @@ For either direction, you need to define a target user profile and a value propo
    * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
 
 1. **Do a share of team-tasks**: These are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
+   <span id="scope-example-team-tasks"></span>
 
    <panel header="{{ icon_example }} Examples of team-tasks" minimized>
    

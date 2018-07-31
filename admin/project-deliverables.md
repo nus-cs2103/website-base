@@ -40,7 +40,7 @@ Here is a list of main deliverables of the project; their details are given in t
 </span>
 
 
-### Deliverable: Developer Guide (UG)
+### Deliverable: Developer Guide (DG)
 <span id="project-deliverables-dg">
 
 * The Developer Guide (DG) of the product should match the proposed v2.0 of the product and should be in sync with the current version of the product.
