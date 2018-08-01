@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Learning Outcomes
-
 This module is organized primarily around a list of Learning Outcomes.
 
 Each week has a suggested list of LOs. They are categorized using a star-rating system<span class="flat"> ([link](#starRatingSystem))</span>.

@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Grade Breakdown
-
 <img src="{{baseUrl}}/admin/images/gradeBreakdown.png" width="600"/>
 <p/>
 <span class="flat"><markdown>

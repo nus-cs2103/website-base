@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Assessment
-
 Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
 
 **Total**: 50 marks ({{ icon_individual }} 40 individual marks + {{ icon_team }} 10 team marks)

@@ -2,8 +2,6 @@
 <div id="main">
 <div id="essential">
 
-# Using this Website
-
 {{ icon_important_big_red }} This _Schedule Page_ is your main source of information for {{ module_pair }}. You will need to refer to it weekly.
 
 {{ icon_info }} More details for the upcoming weeks (and upcoming sections of the textbook) will be added as the weeks progress. In general, ==information given for more than 1 week into the future should be treated as _tentative_==.

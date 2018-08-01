@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Lectures
-
 <img src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%">
 
 **Timing/venue**: 

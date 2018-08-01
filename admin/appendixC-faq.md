@@ -3,9 +3,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Appendix C: Frequently Asked Questions
-
-{% for faq in faqs %} 
+{% for faq in faqs %}
 * [{{ faq.title }}](#{{ faq.id }}) {{show_stars(faq.priority) }}
 {% endfor %}
 

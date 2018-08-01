@@ -1,9 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Exams
-
-There is no midterm.  
+There is no midterm.
 
 The final exam has two parts: 
 * Part 1: MCQ questions (1 hour, 20 marks) 

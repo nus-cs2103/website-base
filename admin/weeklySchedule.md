@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Weekly Schedule
-
 :calendar: **[Friday (previous week)]**<br>
 
 Attend the lecture for, 

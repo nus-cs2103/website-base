@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → mid-v1.4 [week 12]
-
 <tip-box>
 
 Overview: <include src="project-timeline.md#mid-v14-overview" inline />

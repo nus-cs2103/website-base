@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Overview
-
 The high-level learning outcome of the project (and to a large degree, the entire module):
 
 <tip-box> {{ icon_outcome }} Can contribute production quality SE work to a small/medium software project </tip-box>

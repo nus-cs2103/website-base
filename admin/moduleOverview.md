@@ -1,8 +1,6 @@
 {% macro show_main_text() %} 
 <div id="main">
 
-# {{ module_pair }} {{ module_name }}
-
 <big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big>
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">

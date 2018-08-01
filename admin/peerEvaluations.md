@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Peer Evaluations
-
 We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation system to conduct several rounds of peer-evaluations.
 All peer evaluations will be taken into account when determining your participation marks. The system also allows you to give anonymous feedback to your teammates.
 

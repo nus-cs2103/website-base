@@ -1,10 +1,8 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Tutorials
-
 <panel type="seamless" expanded >
-<span slot="header" class="card-title"><markdown>### Tutorial Timetable <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light ">#tutor role</span><span class="badge badge-pill badge-light">#times</span><span class="badge badge-pill badge-light">#venue</span></span></markdown></span>
+<span slot="header" class="card-title"><markdown>### Tutorial Timetable</markdown></span>
 <div id="tutorialTimetable">
 
 <tip-box> 

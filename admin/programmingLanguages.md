@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Programming Language
-
 <table class="two-column-content">
 <tr>
 <td width="160px">

@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Deliverables
-
 Here is a list of main deliverables of the project; their details are given in the subsequent sections.
 * Product
   * Executable

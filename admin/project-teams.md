@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Forming Teams
-
 <img src="{{baseUrl}}/admin/images/team.png" width="300px"><br>
 <small>%%[Picture: The team that was at the top of early Google]%%</small>
 <p/>

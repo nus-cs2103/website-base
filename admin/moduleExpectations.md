@@ -1,8 +1,6 @@
 {% macro show_main_text() %} 
 <div id="main">
 
-# Module Expectations
-
 ### Prior Knowledge: Java and OOP
 
 This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills. 

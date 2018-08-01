@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import show_stars with context %}
+
 {% macro show_admin_pagetop_for_topic(topics, topic) %}
 <frontmatter>
 title: "Admin: {{ topic.title }}"
@@ -72,14 +74,14 @@ head: adminHead.md
 {% endmacro %}
 
 {% set topics = [
-  {level: 1, id: "moduleOverview", title: "Module Overview", link: "moduleOverview.html", priority: 1},
+  {level: 1, id: "moduleOverview", title: module_pair + " " + module_name, link: "moduleOverview.html", priority: 1},
   {level: 1, id: "usingThisWebsite", title: "Using this Website", link: "usingThisWebsite.html", highlight: "true", priority: 1},
   {level: 1, id: "moduleExpectations", title: "Module Expectations", link: "moduleExpectations.html", priority: 2},
   {level: 0, id: "moduleStructure", title: "Module Structure"},
     {level: 2, id: "weeklySchedule", title: "Weekly Schedule", link: "weeklySchedule.html", priority: 3},
     {level: 2, id: "learningOutcomes", title: "Learning Outcomes", link: "learningOutcomes.html", priority: 2},
     {level: 2, id: "lectures", title: "Lectures", link: "lectures.html", priority: 3},
-    {level: 2, id: "tutorials", title: "Tutorials", link: "tutorials.html", priority: 2},
+    {level: 2, id: "tutorials", title: "Tutorials", link: "tutorials.html", priority: 2, tags: ["tutor role", "times", "venue"]},
   {level: 1, id: "instructors", title: "Instructors", link: "instructors.html", priority: 4},
   {level: 1, id: "textbooks", title: "Text Books", link: "textbooks.html", priority: 2},
   {level: 1, id: "programmingLanguages", title: "Programming Language", link: "programmingLanguages.html", priority: 2},
@@ -215,8 +217,18 @@ week13: [
   {topic_id: "project-w13-v14"}]
 }%}
 
+{% macro show_title(current_topic_id, topics) -%}
+{% for topic in topics  %}
+{% if topic.id == current_topic_id %}
+{% set hashes = "#" if topic.level == 1 else "##" %}
+<markdown>{{ hashes }} {{ topic.title }} <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) }} {% for tag in topic.tags %}<span class="badge badge-pill badge-light ">#{{ tag }}</span> {% endfor %}</span></markdown>
+{% endif %}
+{% endfor %}
+{%- endmacro %}
+
 {% macro show_admin_page(current_topic_id, main_text_macro)%}
 {{ show_admin_pagetop(topics, current_topic_id) }}
+{{ show_title(current_topic_id, topics) | trim }}
 {{ main_text_macro() }}
 {{ show_admin_pagebottom(topics, current_topic_id) }}
 {% endmacro %}

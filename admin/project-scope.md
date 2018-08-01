@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Scope
-
 <div id="project-direction">
 In general, each team is expected to take one of these two directions:
 

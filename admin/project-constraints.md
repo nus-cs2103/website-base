@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Constraints
-
 Your project should comply with the following constraints.
 %%**Reason**: to increase comparability among projects and to maximize applicability of module learning outcomes in the project.%%
 

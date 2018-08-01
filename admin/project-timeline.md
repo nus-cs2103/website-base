@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Timeline
-
 [<img src="{{baseUrl}}/admin/images/timeline.png" width="100%">](images/timeline.png)
 
 To expedite your project implementation, you will be given some sample code (AddressBook-Level1 to AddressBook-Level4, shown as `AB1` to `AB4` in the diagram above).  You can use `AB1` to `AB3` to ramp up your tech skills in preparation for the project. `AB4` is to be used as the basis for your project.

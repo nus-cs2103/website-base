@@ -3,7 +3,6 @@
 
 <div id="title">
 
-## Project → inception [week 3]
 </div>
 <div id="body">
 

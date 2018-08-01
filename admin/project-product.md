@@ -1,8 +1,6 @@
 {% macro show_main_text() %} 
 <div id="main">
 
-## Project → The Product
-
 In this semester, we are going to enhance [an AddressBook application](https://se-edu.github.io/addressbook-level4/).
 
 <img src="{{module_org}}/addressbook-level4/raw/master/docs/images/Ui.png" width="600"/>

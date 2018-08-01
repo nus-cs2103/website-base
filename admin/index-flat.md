@@ -10,7 +10,7 @@ head: adminHead-flat.md
 
 <include src="../common/header-flat.md" />
 
-{% from "common/admin.njk" import topics with context %}
+{% from "common/admin.njk" import topics, show_title with context %}
 
 
 {% macro show_hr()%} 
@@ -32,6 +32,7 @@ head: adminHead-flat.md
 {% endif %}
 <div id="admin-{{ topic.id }}-anchor"></div>
 <div id="admin-{{ topic.id }}">
+{{ show_title(topic.id, topics) | trim }}
   <include src="{{ topic.id }}.md#main" />
 </div>
 <br>

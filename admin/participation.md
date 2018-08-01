@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Participation Marks
-
 10 marks allocated for participation can be earned in the following ways (there are ~28 available marks to choose from):
 
 * <tooltip content="No `Below Average`/`Poor` ratings">Good peer ratings</tooltip>
