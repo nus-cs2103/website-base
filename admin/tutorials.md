@@ -62,7 +62,7 @@
 * **No direct tech help**: Tutors are prohibited from giving technical help. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%    
 
 <div class="indented-level2">
-<panel src="appendixD-help.md#main" header="Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module }}/T" class="embedding" minimized />
+<panel src="appendixD-help.md#main" header="Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module_pair }}" class="embedding" minimized />
 </div>
 
 <br/>

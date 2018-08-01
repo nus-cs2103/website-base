@@ -1,5 +1,7 @@
 <span id="module">CS2103</span>
 
+<span id="module_pair">CS2103/T</span>
+
 <span id="semester">AY1718S2</span>
 
 <span id="period">Aug '18</span>

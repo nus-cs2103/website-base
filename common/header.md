@@ -1,5 +1,5 @@
 <navbar placement="top" type="inverse">
-  <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">{{ module }}/T <small>{{ period }}</small></a>
+  <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">{{ module_pair }} <small>{{ period }}</small></a>
   <dropdown text="Nested" class="nav-link">
     <li><a href="{{baseUrl}}/index.html" class="dropdown-item"> {{ icon_tick }} Nested (current format)</a></li>
     <li><a href="{{baseUrl}}/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>

@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Software Engineering for Self-Directed Learners [{{ module }}/T Flat Version]"
+title: "Software Engineering for Self-Directed Learners [{{ module_pair }} Flat Version]"
 footer: footer.md
 siteNav: se-book-adapted-sitenav.md
 </frontmatter>

@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Software Engineering for Self-Directed Learners [Printable Version for {{ module }}/T]"
+title: "Software Engineering for Self-Directed Learners [Printable Version for {{ module_pair }}]"
 footer: footer.md
 </frontmatter>
 

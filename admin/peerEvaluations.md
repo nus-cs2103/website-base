@@ -11,7 +11,7 @@ All peer evaluations will be taken into account when determining your participat
 **Extra Requirements:** [considered for participation marks]
 
 * :exclamation: Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you can lose participation marks.==
-* :bulb: TEAMMATES normally allows students to access it without using Google login. In this module, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. %%Reason: {{ module }} is a big class. This profile helps us to remember you better, even after the module is over.%%
+* :bulb: TEAMMATES normally allows students to access it without using Google login. In this module, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. %%Reason: {{ module_pair }} is a big class. This profile helps us to remember you better, even after the module is over.%%
 
 <modal title="%%Admin {{ icon_embedding }} Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto">
   <include src="project-deliverables.md#profile-photo" />

@@ -17,7 +17,7 @@ Same lectures, same exam. Separate tutorials, separate project grading. Unless s
 
 <img src="{{baseUrl}}/admin/images/Why workload heavy.png" width="250" />
 
-{{ module }}/T prepares you for many higher-level project modules (CS3216/7, CS3203, CS3281/2, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
+{{ module_pair }} prepares you for many higher-level project modules (CS3216/7, CS3203, CS3281/2, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
 
 Remember, everything you learn here is going to be useful in a SE-related career.
 
@@ -29,7 +29,7 @@ Also, consider this a gradual introduction to 'heavy' modules; most project modu
 
 <div id="admin-faq-aPlus">
 
-In {{ module }}/T, A+ is not given simply based on the final score. To get an A+ you should,
+In {{ module_pair }}, A+ is not given simply based on the final score. To get an A+ you should,
 
 * score enough to get an A
 * be considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
@@ -141,7 +141,7 @@ The high number of submissions is not meant to increase workload but to spread i
 
 <div id="admin-faq-fromScratch">
 
-There are many reasons. One of them is that most of you will be working with existing software in your first few years of the career while hardly any school projects train you to work with existing code bases. We decided to bite the bullet and use {{ module }}/T to train you to work in existing code bases.
+There are many reasons. One of them is that most of you will be working with existing software in your first few years of the career while hardly any school projects train you to work with existing code bases. We decided to bite the bullet and use {{ module_pair }} to train you to work in existing code bases.
 
 </div>
 
