@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    
     <link rel="stylesheet" href="/website-base/css/main.css">
 <link rel="stylesheet" href="/website-base/css/schedule.css">
     <link rel="icon" href="/website-base/favicon.ico">
@@ -197,15 +197,13 @@
                           <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
                           <p>Method: Move it outside of the expression.</p>
                           <p><span class="fas fa-cube"></span> Example:</p>
-                          <tabs>
-                          
-                            <tab header="Java">
-                              <div>
-                                <table>
-                                  <tr>
-                                  
-                                    <td valign="top">
-                                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
+                          <div class="alt-java">
+                            <div>
+                              <table>
+                                <tr>
+                                
+                                  <td valign="top">
+                                    <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
     total = price * <span class="hljs-number">0.95</span>;
     send();
 } <span class="hljs-keyword">else</span> {
@@ -213,13 +211,13 @@
     send();
 }
 </code></pre>
-                                      <p></p>
-                                    </td>
-                                  
-                                    <td valign="center"> → </td>
-                                  
-                                    <td valign="top">
-                                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
+                                    <p></p>
+                                  </td>
+                                
+                                  <td valign="center"> → </td>
+                                
+                                  <td valign="top">
+                                    <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
     total = price * <span class="hljs-number">0.95</span>;
 } <span class="hljs-keyword">else</span> {
     total = price * <span class="hljs-number">0.98</span>;
@@ -227,57 +225,53 @@
 send();
 
 </code></pre>
-                                      <p></p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </div>
-                            </tab>
-                          
-                            <tab header="Python">
-                              <div>
-                                <table>
-                                  <tr>
-                                  
-                                    <td valign="top">
-                                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                                    <p></p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="alt-python">
+                            <div>
+                              <table>
+                                <tr>
+                                
+                                  <td valign="top">
+                                    <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
     send()
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     send()
 </code></pre>
-                                      <p></p>
-                                    </td>
-                                  
-                                    <td valign="center"> → </td>
-                                  
-                                    <td valign="top">
-                                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                                    <p></p>
+                                  </td>
+                                
+                                  <td valign="center"> → </td>
+                                
+                                  <td valign="top">
+                                    <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     
 send()
 </code></pre>
-                                      <p></p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </div>
-                            </tab>
-                          </tabs>
+                                    <p></p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
                         </tip-box>
                         <tip-box>
                           <p>Refactoring Name: <strong>Extract Method</strong></p>
                           <p>Situation: You have a code fragment that can be grouped together.</p>
                           <p>Method: Turn the fragment into a method whose name explains the purpose of the method.</p>
                           <p><span class="fas fa-cube"></span> Example:</p>
-                          <tabs>
-                          
-                            <tab header="Java">
-                              <div>
-                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                          <div class="alt-java">
+                            <div>
+                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
 
     <span class="hljs-comment">//print details</span>
@@ -285,8 +279,8 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
 }
 </code></pre>
-                                <p><span class="fas fa-arrow-down"></span></p>
-                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                              <p><span class="fas fa-arrow-down"></span></p>
+                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
     printDetails(getOutstanding());
 }
@@ -296,20 +290,19 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
 }
 </code></pre>
-                              </div>
-                            </tab>
-                          
-                            <tab header="Python">
-                              <div>
-                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+                            </div>
+                          </div>
+                          <div class="alt-python">
+                            <div>
+                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
 
     //<span class="hljs-keyword">print</span> details
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + get_outstanding())
 </code></pre>
-                                <p><span class="fas fa-arrow-down"></span></p>
-                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+                              <p><span class="fas fa-arrow-down"></span></p>
+                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
     print_details(get_outstanding())
 
@@ -317,9 +310,8 @@ send()
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + amount)
 </code></pre>
-                              </div>
-                            </tab>
-                          </tabs>
+                            </div>
+                          </div>
                         </tip-box>
                         <tip-box>
                           <p>💡 Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
@@ -1529,7 +1521,6 @@ index 15b57f7..17f4528 100644
             <modal large="" title="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Participation Marks%%" id="modal:project1kloc-participation">
             
               <div>
-                <h1 id="participation-marks">Participation Marks</h1>
                 <p>10 marks allocated for participation can be earned in the following ways (there are ~28 available marks to choose from):</p>
                 <ul>
                   <li>
@@ -1553,8 +1544,8 @@ index 15b57f7..17f4528 100644
                   </li>
                   <li>Enhanced AB1-AB3: 1 mark each</li>
                 </ul>
-                <p>
-                  <panel src="/website-base\admin\peerEvaluations._include_.html#peerEvaluation-criteria" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Peer Evaluations → Criteria" minimized="" fragment="peerEvaluation-criteria"></panel>
+                <p><span class="flat"><span class="dimmed">Related: [<a href="#admin-peerEvaluations-anchor">Admin: Peer Evaluation</a>]</span></span>
+                  <panel src="/website-base\admin\peerEvaluations._include_.html#peerEvaluation-criteria" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Peer Evaluations → Criteria" class="embedding" minimized="" fragment="peerEvaluation-criteria"></panel>
                 </p>
               </div>
             </modal>
@@ -1660,15 +1651,13 @@ index 15b57f7..17f4528 100644
                             <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
                             <p>Method: Move it outside of the expression.</p>
                             <p><span class="fas fa-cube"></span> Example:</p>
-                            <tabs>
-                            
-                              <tab header="Java">
-                                <div>
-                                  <table>
-                                    <tr>
-                                    
-                                      <td valign="top">
-                                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
+                            <div class="alt-java">
+                              <div>
+                                <table>
+                                  <tr>
+                                  
+                                    <td valign="top">
+                                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
     total = price * <span class="hljs-number">0.95</span>;
     send();
 } <span class="hljs-keyword">else</span> {
@@ -1676,13 +1665,13 @@ index 15b57f7..17f4528 100644
     send();
 }
 </code></pre>
-                                        <p></p>
-                                      </td>
-                                    
-                                      <td valign="center"> → </td>
-                                    
-                                      <td valign="top">
-                                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
+                                      <p></p>
+                                    </td>
+                                  
+                                    <td valign="center"> → </td>
+                                  
+                                    <td valign="top">
+                                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
     total = price * <span class="hljs-number">0.95</span>;
 } <span class="hljs-keyword">else</span> {
     total = price * <span class="hljs-number">0.98</span>;
@@ -1690,57 +1679,53 @@ index 15b57f7..17f4528 100644
 send();
 
 </code></pre>
-                                        <p></p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </div>
-                              </tab>
-                            
-                              <tab header="Python">
-                                <div>
-                                  <table>
-                                    <tr>
-                                    
-                                      <td valign="top">
-                                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                                      <p></p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="alt-python">
+                              <div>
+                                <table>
+                                  <tr>
+                                  
+                                    <td valign="top">
+                                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
     send()
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     send()
 </code></pre>
-                                        <p></p>
-                                      </td>
-                                    
-                                      <td valign="center"> → </td>
-                                    
-                                      <td valign="top">
-                                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                                      <p></p>
+                                    </td>
+                                  
+                                    <td valign="center"> → </td>
+                                  
+                                    <td valign="top">
+                                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     
 send()
 </code></pre>
-                                        <p></p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </div>
-                              </tab>
-                            </tabs>
+                                      <p></p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
                           </tip-box>
                           <tip-box>
                             <p>Refactoring Name: <strong>Extract Method</strong></p>
                             <p>Situation: You have a code fragment that can be grouped together.</p>
                             <p>Method: Turn the fragment into a method whose name explains the purpose of the method.</p>
                             <p><span class="fas fa-cube"></span> Example:</p>
-                            <tabs>
-                            
-                              <tab header="Java">
-                                <div>
-                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                            <div class="alt-java">
+                              <div>
+                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
 
     <span class="hljs-comment">//print details</span>
@@ -1748,8 +1733,8 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
 }
 </code></pre>
-                                  <p><span class="fas fa-arrow-down"></span></p>
-                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                                <p><span class="fas fa-arrow-down"></span></p>
+                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
     printDetails(getOutstanding());
 }
@@ -1759,20 +1744,19 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
 }
 </code></pre>
-                                </div>
-                              </tab>
-                            
-                              <tab header="Python">
-                                <div>
-                                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+                              </div>
+                            </div>
+                            <div class="alt-python">
+                              <div>
+                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
 
     //<span class="hljs-keyword">print</span> details
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + get_outstanding())
 </code></pre>
-                                  <p><span class="fas fa-arrow-down"></span></p>
-                                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+                                <p><span class="fas fa-arrow-down"></span></p>
+                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
     print_details(get_outstanding())
 
@@ -1780,9 +1764,8 @@ send()
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + amount)
 </code></pre>
-                                </div>
-                              </tab>
-                            </tabs>
+                              </div>
+                            </div>
                           </tip-box>
                           <tip-box>
                             <p>💡 Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
@@ -2725,7 +2708,6 @@ index 15b57f7..17f4528 100644
                 <modal large="" title="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Participation Marks%%" id="modal:project1kloc-participation">
                 
                   <div>
-                    <h1 id="participation-marks-2">Participation Marks</h1>
                     <p>10 marks allocated for participation can be earned in the following ways (there are ~28 available marks to choose from):</p>
                     <ul>
                       <li>
@@ -2749,8 +2731,8 @@ index 15b57f7..17f4528 100644
                       </li>
                       <li>Enhanced AB1-AB3: 1 mark each</li>
                     </ul>
-                    <p>
-                      <panel src="/website-base\admin\peerEvaluations._include_.html#peerEvaluation-criteria" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Peer Evaluations → Criteria" minimized="" fragment="peerEvaluation-criteria"></panel>
+                    <p><span class="flat"><span class="dimmed">Related: [<a href="#admin-peerEvaluations-anchor">Admin: Peer Evaluation</a>]</span></span>
+                      <panel src="/website-base\admin\peerEvaluations._include_.html#peerEvaluation-criteria" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Peer Evaluations → Criteria" class="embedding" minimized="" fragment="peerEvaluation-criteria"></panel>
                     </p>
                   </div>
                 </modal>
@@ -2849,7 +2831,7 @@ index 15b57f7..17f4528 100644
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Tue, 31 Jul 2018 05:16:39 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    
     
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
@@ -402,13 +402,19 @@
           </tip-box>
           <h5 id="implementing-classes"><big>Implementing Classes</big></h5>
           <p>Given below are some resources on how to implement classes:</p>
-          <span class="java">
-<ul>
-<li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables</a> – Start from the linked page and follow the next few steps in the tutorial
-</li></ul></span>
-          <span class="alt-python">
-<div><ul>
-<li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#classes">Python Programming Basics: OOP: Classes</a> - Basics of writing classes using Python</li></ul></div></span></div>
+          <div class="alt-java">
+            <ul>
+              <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables</a> – Start from the linked page and follow the next few steps in the tutorial</li>
+            </ul>
+          </div>
+          <div class="alt-python">
+            <div>
+              <ul>
+                <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#classes">Python Programming Basics: OOP: Classes</a> - Basics of writing classes using Python</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="indented-less">
@@ -440,25 +446,16 @@
             class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
           <h5 id="implementing-class-level-members"><big>Implementing class-level members</big></h5>
           <p>Some resources to learn how to implement class-level members:</p>
-          <tabs>
-          
-            <tab header="Java">
-              <ul>
-                <li>
-                  <p><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html">Oracle’s official Java tutorial on class-level members</a></p>
-                </li>
-              </ul>
-            </tab>
-          
-            <tab header="Python">
-
-              <li>
-                <p><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#class-level-members">Python Programming Basics: OOP: Class-Level Members</a></p>
-              </li>
-
-              <p></p>
-            </tab>
-          </tabs>
+          <div class="alt-java">
+            <ul>
+              <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html">Oracle’s official Java tutorial on class-level members</a></li>
+            </ul>
+          </div>
+          <div class="alt-python">
+            <ul>
+              <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#class-level-members">Python Programming Basics: OOP: Class-Level Members</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -582,26 +579,20 @@
           <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class will always have a <code>ConfigGenerator</code> object, provided the variable is not set to null at some point.</p>
-            <tabs>
-            
-              <tab header="Java">
-                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+            <div class="alt-java">
+              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
     ...
 }
 </code></pre>
-                <p></p>
-              </tab>
-            
-              <tab header="Python">
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
-  
+            </div>
+            <div class="alt-python">
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.config_gen = ConfigGenerator()
 </code></pre>
-                <p></p>
-              </tab>
-            </tabs>
+            </div>
           </tip-box>
           <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
           <tip-box>
@@ -898,31 +889,21 @@
             <p><span class="fas fa-cube"></span> The <code>Honey</code> class inherits from the <code>Food</code> class <em>and</em> the <code>Medicine</code> class <span class="dimmed">because honey can be consumed as a food as well as a medicine (in some oriental medicine practices)</span>.</p>
           </tip-box>
           <h5 id="implementing-inheritance"><big>Implementing inheritance</big></h5>
-          <tabs>
-          
-            <tab header="Java">
-              <p>To learn how to implement inheritance in Java, you can follow [<a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a>]</p>
-              <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> A very beginner-friendly video about implementing Java inheritance.">
-                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/9JpNY-XAseg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                <p></p>
-              </panel>
+          <div class="alt-java">
+            <p>To learn how to implement inheritance in Java, you can follow [<a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a>]</p>
+            <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> A very beginner-friendly video about implementing Java inheritance.">
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/9JpNY-XAseg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
               <p></p>
-              <p>💡 Java requires all classes to have a parent class. If you do not specify a parent class, Java automatically assigns the <code>Object</code> class as the parent class.</p>
-              <p>
-                <hr>
-              </p>
-            </tab>
-          
-            <tab header="Python">
-              <ul>
-                <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#inheritance">Python Programming Basics: OOP: Inheritance</a></li>
-              </ul>
-              <p>💡 Python automatically assigns the <code>object</code> class as the parent class.</p>
-              <p>
-                <hr>
-              </p>
-            </tab>
-          </tabs>
+            </panel>
+            <p></p>
+            <p>💡 Java requires all classes to have a parent class. If you do not specify a parent class, Java automatically assigns the <code>Object</code> class as the parent class.</p>
+          </div>
+          <div class="alt-python">
+            <ul>
+              <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#inheritance">Python Programming Basics: OOP: Inheritance</a></li>
+            </ul>
+            <p>💡 Python automatically assigns the <code>object</code> class as the parent class.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -1001,14 +982,12 @@
                       </tip-box>
                       <h5 id="implementing-overloading"><big>Implementing overloading</big></h5>
                       <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-                      <tabs>
-                      
-                        <tab header="Java">
-                          <div>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
-                                Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                      <div class="alt-java">
+                        <div>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
+                              Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
     }
@@ -1029,24 +1008,16 @@
     }
 }
 </code></pre>
-                            </tip-box>
-                            <p><span class="fas fa-paperclip"></span> Resources:</p>
-                            <ul>
-                              <li>
-                                <p><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related topic
-                                  <mark><em>type promotion</em></mark>.</p>
-                              </li>
-                            </ul>
-                          </div>
-                        </tab>
-
-
-                        <p>
-                          <tab header="Python"></tab>
-                        </p>
+                          </tip-box>
+                          <p><span class="fas fa-paperclip"></span> Resources:</p>
+                          <ul>
+                            <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="alt-python">
                         <div><span>❗️ Python does not have direct support for method overloading.</span></div>
-                      </tabs>
-                      <p></p>
+                      </div>
                     </div>
                     <div></div>
                   </div>
@@ -1056,13 +1027,11 @@
           </tip-box>
           <h5 id="implementing-overriding"><big>Implementing overriding</big></h5>
           <p><strong>To override a method inherited from an ancestor class, simply re-implement the method in the target class.</strong></p>
-          <tabs>
-          
-            <tab header="Java">
-              <div>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
-                  <pre><code class="hljs java">
+          <div class="alt-java">
+            <div>
+              <tip-box>
+                <p><span class="fas fa-cube"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                <pre><code class="hljs java">
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
@@ -1091,23 +1060,22 @@
     }
 }
 </code></pre>
-                </tip-box>
-                <p><span class="fas fa-paperclip"></span> Resources:</p>
-                <ul>
-                  <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
-                </ul>
-              </div>
-            </tab>
-          
-            <tab header="Python">
-              <div>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
-                  <table>
-                    <tr>
-                    
-                      <td>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+              </tip-box>
+              <p><span class="fas fa-paperclip"></span> Resources:</p>
+              <ul>
+                <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="alt-python">
+            <div>
+              <tip-box>
+                <p><span class="fas fa-cube"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                <table>
+                  <tr>
+                  
+                    <td>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
     
@@ -1115,13 +1083,13 @@
     print(<span class="hljs-string">'My name is'</span>, self.name)
     
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td valign="bottom">  <br><br></td>
-                    
-                      <td valign="bottom">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                      <p></p>
+                    </td>
+                  
+                    <td valign="bottom">  <br><br></td>
+                  
+                    <td valign="bottom">
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     self.name = name
     self.matric = matric
@@ -1129,38 +1097,37 @@
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is a student'</span>)
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                  <table>
-                    <tr>
-                    
-                      <td>
-                        <pre><code class="hljs python">amy = Person(<span class="hljs-string">'Amy'</span>)
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                  
+                    <td>
+                      <pre><code class="hljs python">amy = Person(<span class="hljs-string">'Amy'</span>)
 amy.print_info()
 
 ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)
 ben.print_info()
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td valign="bottom"> → <br><br></td>
-                    
-                      <td valign="bottom">
-                        <pre class="hljs"><code>My name is Amy
+                      <p></p>
+                    </td>
+                  
+                    <td valign="bottom"> → <br><br></td>
+                  
+                    <td valign="bottom">
+                      <pre class="hljs"><code>My name is Amy
 Ben is a student
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                  <p></p>
-                </tip-box>
-              </div>
-            </tab>
-          </tabs>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+                <p></p>
+              </tip-box>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1217,14 +1184,12 @@ Ben is a student
           </tip-box>
           <h5 id="implementing-overloading-2"><big>Implementing overloading</big></h5>
           <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-          <tabs>
-          
-            <tab header="Java">
-              <div>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
-                    Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+          <div class="alt-java">
+            <div>
+              <tip-box>
+                <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>. Furthermore,
+                  the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
     }
@@ -1245,23 +1210,16 @@ Ben is a student
     }
 }
 </code></pre>
-                </tip-box>
-                <p><span class="fas fa-paperclip"></span> Resources:</p>
-                <ul>
-                  <li>
-                    <p><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</p>
-                  </li>
-                </ul>
-              </div>
-            </tab>
-
-
-            <p>
-              <tab header="Python"></tab>
-            </p>
+              </tip-box>
+              <p><span class="fas fa-paperclip"></span> Resources:</p>
+              <ul>
+                <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="alt-python">
             <div><span>❗️ Python does not have direct support for method overloading.</span></div>
-          </tabs>
-          <p></p>
+          </div>
         </div>
       </div>
     </div>
@@ -1529,14 +1487,12 @@ AcademicStaff academicStaff = staff; // Not OK
                                 </tip-box>
                                 <h5 id="implementing-overloading-3"><big>Implementing overloading</big></h5>
                                 <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-                                <tabs>
-                                
-                                  <tab header="Java">
-                                    <div>
-                                      <tip-box>
-                                        <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
-                                          Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-                                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                                <div class="alt-java">
+                                  <div>
+                                    <tip-box>
+                                      <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
+                                        Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
     }
@@ -1557,24 +1513,17 @@ AcademicStaff academicStaff = staff; // Not OK
     }
 }
 </code></pre>
-                                      </tip-box>
-                                      <p><span class="fas fa-paperclip"></span> Resources:</p>
-                                      <ul>
-                                        <li>
-                                          <p><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related
-                                            topic <mark><em>type promotion</em></mark>.</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </tab>
-
-
-                                  <p>
-                                    <tab header="Python"></tab>
-                                  </p>
+                                    </tip-box>
+                                    <p><span class="fas fa-paperclip"></span> Resources:</p>
+                                    <ul>
+                                      <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related
+                                        topic <mark><em>type promotion</em></mark>.</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="alt-python">
                                   <div><span>❗️ Python does not have direct support for method overloading.</span></div>
-                                </tabs>
-                                <p></p>
+                                </div>
                               </div>
                               <div></div>
                             </div>
@@ -1584,13 +1533,11 @@ AcademicStaff academicStaff = staff; // Not OK
                     </tip-box>
                     <h5 id="implementing-overriding-2"><big>Implementing overriding</big></h5>
                     <p><strong>To override a method inherited from an ancestor class, simply re-implement the method in the target class.</strong></p>
-                    <tabs>
-                    
-                      <tab header="Java">
-                        <div>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
-                            <pre><code class="hljs java">
+                    <div class="alt-java">
+                      <div>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                          <pre><code class="hljs java">
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
@@ -1619,23 +1566,22 @@ AcademicStaff academicStaff = staff; // Not OK
     }
 }
 </code></pre>
-                          </tip-box>
-                          <p><span class="fas fa-paperclip"></span> Resources:</p>
-                          <ul>
-                            <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
-                          </ul>
-                        </div>
-                      </tab>
-                    
-                      <tab header="Python">
-                        <div>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
-                            <table>
-                              <tr>
-                              
-                                <td>
-                                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                        </tip-box>
+                        <p><span class="fas fa-paperclip"></span> Resources:</p>
+                        <ul>
+                          <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="alt-python">
+                      <div>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                          <table>
+                            <tr>
+                            
+                              <td>
+                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
     
@@ -1643,13 +1589,13 @@ AcademicStaff academicStaff = staff; // Not OK
     print(<span class="hljs-string">'My name is'</span>, self.name)
     
 </code></pre>
-                                  <p></p>
-                                </td>
-                              
-                                <td valign="bottom">  <br><br></td>
-                              
-                                <td valign="bottom">
-                                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                                <p></p>
+                              </td>
+                            
+                              <td valign="bottom">  <br><br></td>
+                            
+                              <td valign="bottom">
+                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     self.name = name
     self.matric = matric
@@ -1657,38 +1603,37 @@ AcademicStaff academicStaff = staff; // Not OK
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is a student'</span>)
 </code></pre>
-                                  <p></p>
-                                </td>
-                              </tr>
-                            </table>
-                            <table>
-                              <tr>
-                              
-                                <td>
-                                  <pre><code class="hljs python">amy = Person(<span class="hljs-string">'Amy'</span>)
+                                <p></p>
+                              </td>
+                            </tr>
+                          </table>
+                          <table>
+                            <tr>
+                            
+                              <td>
+                                <pre><code class="hljs python">amy = Person(<span class="hljs-string">'Amy'</span>)
 amy.print_info()
 
 ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)
 ben.print_info()
 </code></pre>
-                                  <p></p>
-                                </td>
-                              
-                                <td valign="bottom"> → <br><br></td>
-                              
-                                <td valign="bottom">
-                                  <pre class="hljs"><code>My name is Amy
+                                <p></p>
+                              </td>
+                            
+                              <td valign="bottom"> → <br><br></td>
+                            
+                              <td valign="bottom">
+                                <pre class="hljs"><code>My name is Amy
 Ben is a student
 </code></pre>
-                                  <p></p>
-                                </td>
-                              </tr>
-                            </table>
-                            <p></p>
-                          </tip-box>
-                        </div>
-                      </tab>
-                    </tabs>
+                                <p></p>
+                              </td>
+                            </tr>
+                          </table>
+                          <p></p>
+                        </tip-box>
+                      </div>
+                    </div>
                   </div>
                   <div>
                     <div>
@@ -1798,14 +1743,12 @@ Ben is a student
                     </tip-box>
                     <h5 id="implementing-overloading-4"><big>Implementing overloading</big></h5>
                     <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-                    <tabs>
-                    
-                      <tab header="Java">
-                        <div>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
-                              Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                    <div class="alt-java">
+                      <div>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
+                            Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
     }
@@ -1826,24 +1769,16 @@ Ben is a student
     }
 }
 </code></pre>
-                          </tip-box>
-                          <p><span class="fas fa-paperclip"></span> Resources:</p>
-                          <ul>
-                            <li>
-                              <p><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related topic
-                                <mark><em>type promotion</em></mark>.</p>
-                            </li>
-                          </ul>
-                        </div>
-                      </tab>
-
-
-                      <p>
-                        <tab header="Python"></tab>
-                      </p>
+                        </tip-box>
+                        <p><span class="fas fa-paperclip"></span> Resources:</p>
+                        <ul>
+                          <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="alt-python">
                       <div><span>❗️ Python does not have direct support for method overloading.</span></div>
-                    </tabs>
-                    <p></p>
+                    </div>
                   </div>
                   <div></div>
                 </div>
@@ -4969,20 +4904,18 @@ studentList.addUi(statusUi);
             and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> The two code samples given below achieve the same functionality, but one is easier to read.</p>
-            <tabs>
-            
-              <tab header="Java">
-                <div>
-                  <table>
-                    <tr>
-                    
-                      <td>
-                        <p>
-                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                            </span>
-                          </font>
-                        </p>
-                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
+            <div class="alt-java">
+              <div>
+                <table>
+                  <tr>
+                  
+                    <td>
+                      <p>
+                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
         <span class="hljs-keyword">if</span> (!sub) {
@@ -5000,18 +4933,18 @@ studentList.addUi(statusUi);
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td>  <br><br></td>
-                    
-                      <td valign="top">
-                        <p>
-                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                            </span>
-                          </font>
-                        </p>
-                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
+                      <p></p>
+                    </td>
+                  
+                    <td>  <br><br></td>
+                  
+                    <td valign="top">
+                      <p>
+                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
         subsidy = REJECT_SENIOR;
@@ -5025,25 +4958,24 @@ studentList.addUi(statusUi);
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </tab>
-            
-              <tab header="Python">
-                <div>
-                  <table>
-                    <tr>
-                    
-                      <td>
-                        <p>
-                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                            </span>
-                          </font>
-                        </p>
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="alt-python">
+              <div>
+                <table>
+                  <tr>
+                  
+                    <td>
+                      <p>
+                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
         <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
             <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
@@ -5056,18 +4988,18 @@ studentList.addUi(statusUi);
         subsidy = <span class="hljs-number">-1</span>
     <span class="hljs-keyword">return</span> subsidy
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td>  <br><br></td>
-                    
-                      <td valign="top">
-                        <p>
-                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                            </span>
-                          </font>
-                        </p>
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
+                      <p></p>
+                    </td>
+                  
+                    <td>  <br><br></td>
+                  
+                    <td valign="top">
+                      <p>
+                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
         <span class="hljs-keyword">return</span> REJECT_SENIOR
     <span class="hljs-keyword">elif</span> is_already_subsidised:
@@ -5077,13 +5009,12 @@ studentList.addUi(statusUi);
     <span class="hljs-keyword">else</span>:
         <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </tab>
-            </tabs>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -5135,25 +5066,23 @@ studentList.addUi(statusUi);
         <div>
           <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and use them to calculate the final
             value).</p>
-          <tabs>
-          
-            <tab header="Java">
-              <div>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> Example:</p>
-                  <p>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font>
-                  </p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
+          <div class="alt-java">
+            <div>
+              <tip-box>
+                <p><span class="fas fa-cube"></span> Example:</p>
+                <p>
+                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                    </span>
+                  </font>
+                </p>
+                <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
-                  <p>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                      </span>
-                    </font>
-                  </p>
-                  <pre><code class="hljs java">
+                <p>
+                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                    </span>
+                  </font>
+                </p>
+                <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
 <span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
 <span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
@@ -5162,27 +5091,26 @@ studentList.addUi(statusUi);
 
 <span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
 </code></pre>
-                </tip-box>
-              </div>
-            </tab>
-          
-            <tab header="Python">
-              <div>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> Example:</p>
-                  <p>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font>
-                  </p>
-                  <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
+              </tip-box>
+            </div>
+          </div>
+          <div class="alt-python">
+            <div>
+              <tip-box>
+                <p><span class="fas fa-cube"></span> Example:</p>
+                <p>
+                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                    </span>
+                  </font>
+                </p>
+                <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
-                  <p>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                      </span>
-                    </font>
-                  </p>
-                  <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
+                <p>
+                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                    </span>
+                  </font>
+                </p>
+                <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
 is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
 
@@ -5190,10 +5118,9 @@ is_urgent = type_code == URGENT
 
 <span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
 </code></pre>
-                </tip-box>
-              </div>
-            </tab>
-          </tabs>
+              </tip-box>
+            </div>
+          </div>
           <blockquote>
             <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. <sub>-- Edsger Dijkstra</sub></p>
           </blockquote>
@@ -5212,89 +5139,85 @@ is_urgent = type_code == URGENT
             <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Example:</p>
-            <tabs>
-            
-              <tab header="Java">
-                <div>
-                  <table>
-                    <tr>
-                    
-                      <td valign="top">
-                        <p>
-                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                            </span>
-                          </font>
-                        </p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+            <div class="alt-java">
+              <div>
+                <table>
+                  <tr>
+                  
+                    <td valign="top">
+                      <p>
+                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td>  <br><br></td>
-                    
-                      <td valign="top">
-                        <p>
-                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                            </span>
-                          </font>
-                        </p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+                      <p></p>
+                    </td>
+                  
+                    <td>  <br><br></td>
+                  
+                    <td valign="top">
+                      <p>
+                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
 <span class="hljs-keyword">return</span> PI;
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </tab>
-            
-              <tab header="Python">
-                <div>
-                  <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
-                  <table>
-                    <tr>
-                    
-                      <td valign="top">
-                        <p>
-                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                            </span>
-                          </font>
-                        </p>
-                        <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="alt-python">
+              <div>
+                <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
+                <table>
+                  <tr>
+                  
+                    <td valign="top">
+                      <p>
+                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td>  <br><br></td>
-                    
-                      <td valign="top">
-                        <p>
-                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                            </span>
-                          </font>
-                        </p>
-                        <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+                      <p></p>
+                    </td>
+                  
+                    <td>  <br><br></td>
+                  
+                    <td valign="top">
+                      <p>
+                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                          </span>
+                        </font>
+                      </p>
+                      <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
 <span class="hljs-keyword">return</span> PI
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </tab>
-            </tabs>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </tip-box>
           <p>Similarly, we can have ‘magic’ values of other data types.</p>
           <tip-box>
@@ -5675,30 +5598,26 @@ exit();
           <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Examples:</p>
-            <tabs>
-            
-              <tab header="Java">
-                <p>
-                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                    </span>
-                  </font>
-                </p>
-                <pre><code class="hljs java">Person student;
+            <div class="alt-java">
+              <p>
+                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                  </span>
+                </font>
+              </p>
+              <pre><code class="hljs java">Person student;
 ArrayList&lt;Person&gt; students;
 </code></pre>
-              </tab>
-            
-              <tab header="Python">
-                <p>
-                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                    </span>
-                  </font>
-                </p>
-                <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
+            </div>
+            <div class="alt-python">
+              <p>
+                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                  </span>
+                </font>
+              </p>
+              <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
 students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
 </code></pre>
-              </tab>
-            </tabs>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -6173,54 +6092,50 @@ trimInput();
             an operation to explain its purpose.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Examples:</p>
-            <tabs>
-            
-              <tab header="Java">
-                <div>
-                  <p>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                  <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+            <div class="alt-java">
+              <div>
+                <p>
+                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                    </span>
+                  </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                  <p>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                      </span>
-                    </font>
-                  </p>
-                  <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+                <p>
+                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                    </span>
+                  </font>
+                </p>
+                <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                </div>
-              </tab>
-            
-              <tab header="Python">
-                <div>
-                  <p>
-                    <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                      </span>
-                    </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                  <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+              </div>
+            </div>
+            <div class="alt-python">
+              <div>
+                <p>
+                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                    </span>
+                  </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
     ...
 </code></pre>
-                  <p>
-                    <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                      </span>
-                    </font>
-                  </p>
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+                <p>
+                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                    </span>
+                  </font>
+                </p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
 <span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
     ...
 </code></pre>
-                </div>
-              </tab>
-            </tabs>
+              </div>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -6321,15 +6236,13 @@ compact(input);
             <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
             <p>Method: Move it outside of the expression.</p>
             <p><span class="fas fa-cube"></span> Example:</p>
-            <tabs>
-            
-              <tab header="Java">
-                <div>
-                  <table>
-                    <tr>
-                    
-                      <td valign="top">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
+            <div class="alt-java">
+              <div>
+                <table>
+                  <tr>
+                  
+                    <td valign="top">
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
     total = price * <span class="hljs-number">0.95</span>;
     send();
 } <span class="hljs-keyword">else</span> {
@@ -6337,13 +6250,13 @@ compact(input);
     send();
 }
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td valign="center"> → </td>
-                    
-                      <td valign="top">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
+                      <p></p>
+                    </td>
+                  
+                    <td valign="center"> → </td>
+                  
+                    <td valign="top">
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
     total = price * <span class="hljs-number">0.95</span>;
 } <span class="hljs-keyword">else</span> {
     total = price * <span class="hljs-number">0.98</span>;
@@ -6351,57 +6264,53 @@ compact(input);
 send();
 
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </tab>
-            
-              <tab header="Python">
-                <div>
-                  <table>
-                    <tr>
-                    
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="alt-python">
+              <div>
+                <table>
+                  <tr>
+                  
+                    <td valign="top">
+                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
     send()
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     send()
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td valign="center"> → </td>
-                    
-                      <td valign="top">
-                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                      <p></p>
+                    </td>
+                  
+                    <td valign="center"> → </td>
+                  
+                    <td valign="top">
+                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     
 send()
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </tab>
-            </tabs>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </tip-box>
           <tip-box>
             <p>Refactoring Name: <strong>Extract Method</strong></p>
             <p>Situation: You have a code fragment that can be grouped together.</p>
             <p>Method: Turn the fragment into a method whose name explains the purpose of the method.</p>
             <p><span class="fas fa-cube"></span> Example:</p>
-            <tabs>
-            
-              <tab header="Java">
-                <div>
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+            <div class="alt-java">
+              <div>
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
 
     <span class="hljs-comment">//print details</span>
@@ -6409,8 +6318,8 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
 }
 </code></pre>
-                  <p><span class="fas fa-arrow-down"></span></p>
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
     printDetails(getOutstanding());
 }
@@ -6420,20 +6329,19 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
 }
 </code></pre>
-                </div>
-              </tab>
-            
-              <tab header="Python">
-                <div>
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+              </div>
+            </div>
+            <div class="alt-python">
+              <div>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
 
     //<span class="hljs-keyword">print</span> details
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + get_outstanding())
 </code></pre>
-                  <p><span class="fas fa-arrow-down"></span></p>
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
     print_details(get_outstanding())
 
@@ -6441,9 +6349,8 @@ send()
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + amount)
 </code></pre>
-                </div>
-              </tab>
-            </tabs>
+              </div>
+            </div>
           </tip-box>
           <tip-box>
             <p>💡 Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
@@ -6520,24 +6427,18 @@ send()
             </li>
           </ol>
           <tip-box>
-            <tabs>
-            
-              <tab header="Java">
-                <ul>
-                  <li><span class="fas fa-cube"></span> Example of API Documentation: <a href="http://download.oracle.com/javase/8/docs/api/">String API</a>.</li>
-                  <li><span class="fas fa-cube"></span> Example of tutorial-style documentation: <a href="https://docs.oracle.com/javase/tutorial/i18n/index.html">Java Intenatioanalization Tutorial</a></li>
-                </ul>
-                <p></p>
-              </tab>
-            
-              <tab header="Python">
-                <ul>
-                  <li><span class="fas fa-cube"></span> Example of API Documentation: <a href="https://docs.python.org/3/library/string.html">string API</a>.</li>
-                  <li><span class="fas fa-cube"></span> Example of tutorial-style documentation: <a href="https://docs.python.org/3/howto/regex.html">How to use Regular Expressions in Python</a></li>
-                </ul>
-                <p></p>
-              </tab>
-            </tabs>
+            <div class="alt-java">
+              <ul>
+                <li><span class="fas fa-cube"></span> Example of API Documentation: <a href="http://download.oracle.com/javase/8/docs/api/">String API</a>.</li>
+                <li><span class="fas fa-cube"></span> Example of tutorial-style documentation: <a href="https://docs.oracle.com/javase/tutorial/i18n/index.html">Java Intenatioanalization Tutorial</a></li>
+              </ul>
+            </div>
+            <div class="alt-python">
+              <ul>
+                <li><span class="fas fa-cube"></span> Example of API Documentation: <a href="https://docs.python.org/3/library/string.html">string API</a>.</li>
+                <li><span class="fas fa-cube"></span> Example of tutorial-style documentation: <a href="https://docs.python.org/3/howto/regex.html">How to use Regular Expressions in Python</a></li>
+              </ul>
+            </div>
           </tip-box>
           <ol start="2">
             <li><strong>Documentation for <em>developer-as-maintainer</em></strong>: There is a need to document how a system or a component is designed, implemented and tested so that other developers can maintain and evolve the code. Writing documentation
@@ -6863,22 +6764,15 @@ send()
             it caught, it can throw/raise the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the
             <tooltip content="the hieararchy of function calls">function call stack</tooltip> until it is received by the main function and thrown to the runtime, thus halting the system.</p>
           <tip-box>
-            <tabs>
-            
-              <tab header="Java">
-                <p><span class="fas fa-cube"></span> In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method
-                  inside a <code>try{ }</code> block and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
-                <img src="/website-base/book/errorHandling/exceptions/how/images/processInput.png" width="400">
-                <p></p>
-                <p></p>
-              </tab>
-            
-              <tab header="Python">
-                <p><span class="fas fa-cube"></span> In the code given below, <code>process_array</code> function can potentially raise a <code>ValueError</code> exception. Because of that, <code>process_input</code> function invokes <code>process_array</code>                  function inside a <code>try</code> clause and has a <code>except</code> clause to specify what to do if the exception is actually raised.</p>
-                <img src="/website-base/book/errorHandling/exceptions/how/images/example-python.png" width="400">
-                <p></p>
-              </tab>
-            </tabs>
+            <div class="alt-java">
+              <p><span class="fas fa-cube"></span> In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method
+                inside a <code>try{ }</code> block and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
+              <img src="/website-base/book/errorHandling/exceptions/how/images/processInput.png" width="400">
+              <p></p>
+            </div>
+            <div class="alt-python">
+              <p><span class="fas fa-cube"></span> In the code given below, <code>process_array</code> function can potentially raise a <code>ValueError</code> exception. Because of that, <code>process_input</code> function invokes <code>process_array</code>                function inside a <code>try</code> clause and has a <code>except</code> clause to specify what to do if the exception is actually raised.</p>
+              <img src="/website-base/book/errorHandling/exceptions/how/images/example-python.png" width="400"></div>
           </tip-box>
           <p>Advantages of exception handling in this way:</p>
           <ul>
@@ -7396,19 +7290,15 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
         <div>
           <p>A library is a collection of modular code that is general and can be used by other programs.</p>
           <tip-box>
-            <tabs>
-            
-              <tab header="Java">
-                <p><span class="fas fa-cube"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
-                <p><span class="fas fa-cube"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
-              </tab>
-            
-              <tab header="Python">
-                <p><span class="fas fa-cube"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution. Classes such as <code>list</code>,
-                  <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
-                <p><span class="fas fa-cube"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
-              </tab>
-            </tabs>
+            <div class="alt-java">
+              <p><span class="fas fa-cube"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
+              <p><span class="fas fa-cube"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+            </div>
+            <div class="alt-python">
+              <p><span class="fas fa-cube"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution. Classes such as <code>list</code>,
+                <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
+              <p><span class="fas fa-cube"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -7831,11 +7721,9 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
           <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
           <tip-box>
             <p><span class="fas fa-cube"></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
-            <tabs>
-            
-              <tab header="Java">
-                <div>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+            <div class="alt-java">
+              <div>
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
         <span class="hljs-comment">//...</span>
     }
@@ -7864,12 +7752,11 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     }
 }
 </code></pre>
-                </div>
-              </tab>
-            
-              <tab header="Python">
-                <div>
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
+              </div>
+            </div>
+            <div class="alt-python">
+              <div>
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
@@ -7890,9 +7777,8 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
       <span class="hljs-comment"># another unit tests for write(string) method</span>
 </code></pre>
-                </div>
-              </tab>
-            </tabs>
+              </div>
+            </div>
           </tip-box>
         </div>
       </div>
@@ -14833,7 +14719,7 @@ AcademicStaff academicStaff = staff; // Not OK
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Tue, 31 Jul 2018 05:16:39 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    
     <link rel="stylesheet" href="/website-base/css/main.css">
 <link rel="stylesheet" href="/website-base/css/schedule.css">
     <link rel="icon" href="/website-base/favicon.ico">
@@ -2824,13 +2824,19 @@
                     </tip-box>
                     <h5 id="implementing-classes"><big>Implementing Classes</big></h5>
                     <p>Given below are some resources on how to implement classes:</p>
-                    <span class="java">
-<ul>
-<li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables</a> – Start from the linked page and follow the next few steps in the tutorial
-</li></ul></span>
-                    <span class="alt-python">
-<div><ul>
-<li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#classes">Python Programming Basics: OOP: Classes</a> - Basics of writing classes using Python</li></ul></div></span></div>
+                    <div class="alt-java">
+                      <ul>
+                        <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables</a> – Start from the linked page and follow the next few steps in the tutorial</li>
+                      </ul>
+                    </div>
+                    <div class="alt-python">
+                      <div>
+                        <ul>
+                          <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#classes">Python Programming Basics: OOP: Classes</a> - Basics of writing classes using Python</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                   <div>
                     <div>
                       <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
@@ -3427,21 +3433,14 @@
                       the exception it caught, it can throw/raise the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the
                       <tooltip content="the hieararchy of function calls">function call stack</tooltip> until it is received by the main function and thrown to the runtime, thus halting the system.</p>
                     <tip-box>
-                      <tabs>
-                      
-                        <tab header="Java">
-                          <p><span class="fas fa-cube"></span> In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code>                            method inside a <code>try{ }</code> block and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
-                          <img src="/website-base/book/errorHandling/exceptions/how/images/processInput.png" width="400">
-                          <p></p>
-                          <p></p>
-                        </tab>
-                      
-                        <tab header="Python">
-                          <p><span class="fas fa-cube"></span> In the code given below, <code>process_array</code> function can potentially raise a <code>ValueError</code> exception. Because of that, <code>process_input</code> function invokes <code>process_array</code>                            function inside a <code>try</code> clause and has a <code>except</code> clause to specify what to do if the exception is actually raised.</p>
-                          <img src="/website-base/book/errorHandling/exceptions/how/images/example-python.png" width="400">
-                          <p></p>
-                        </tab>
-                      </tabs>
+                      <div class="alt-java">
+                        <p><span class="fas fa-cube"></span> In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code>                          method inside a <code>try{ }</code> block and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
+                        <img src="/website-base/book/errorHandling/exceptions/how/images/processInput.png" width="400">
+                        <p></p>
+                      </div>
+                      <div class="alt-python">
+                        <p><span class="fas fa-cube"></span> In the code given below, <code>process_array</code> function can potentially raise a <code>ValueError</code> exception. Because of that, <code>process_input</code> function invokes <code>process_array</code>                          function inside a <code>try</code> clause and has a <code>except</code> clause to specify what to do if the exception is actually raised.</p>
+                        <img src="/website-base/book/errorHandling/exceptions/how/images/example-python.png" width="400"></div>
                     </tip-box>
                     <p>Advantages of exception handling in this way:</p>
                     <ul>
@@ -4005,7 +4004,7 @@ This repo can be used to practice creating PRs.
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Tue, 31 Jul 2018 05:16:39 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
 </footer>
 </div>
 </body>

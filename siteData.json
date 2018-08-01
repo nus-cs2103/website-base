@@ -12,7 +12,7 @@
     },
     {
       "headings": {
-        "appendix-a-module-principles": "Appendix A: Module Principles"
+        "a-module-principles": "A: Module Principles \n            \n              \n          "
       },
       "title": "Admin: A: Module Principles",
       "footer": "footer.md",
@@ -22,7 +22,7 @@
     },
     {
       "headings": {
-        "appendix-b-module-policies": "Appendix B: Module Policies",
+        "b-module-policies": "B: Module Policies \n            \n          ",
         "policy-on-following-instructions": "Policy on following instructions \n          ",
         "policy-on-grading-smallerlarger-teams": "Policy on grading smaller/larger teams \n          ",
         "policy-on-project-work-distribution": "Policy on project work distribution \n          ",
@@ -44,7 +44,7 @@
     },
     {
       "headings": {
-        "appendix-c-frequently-asked-questions": "Appendix C: Frequently Asked Questions",
+        "c-frequently-asked-questions": "C: Frequently Asked Questions \n            \n          ",
         "where-is-everything": "Where is everything? \n          ",
         "what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module": "What are the differences between the T and the non-T version of the module? \n          ",
         "why-the-workload-is-so-high": "Why the workload is so high? \n          ",
@@ -59,7 +59,7 @@
         "why-im-not-allowed-to-use-my-favorite-toolframeworklanguage-etc": "Why I’m not allowed to use my favorite tool/framework/language etc.? \n          ",
         "why-so-many-submissions": "Why so many submissions? \n          ",
         "why-arent-we-allowed-to-build-a-new-product-from-scratch": "Why aren't we allowed to build a new product from scratch? \n          ",
-        "why-submission-requirements-differ-between-module-t-and-cs2101": "Why submission requirements differ between T and CS2101? \n          "
+        "why-submission-requirements-differ-between-cs2103t-and-cs2101": "Why submission requirements differ between CS2103/T and CS2101? \n          "
       },
       "title": "Admin: C: Frequently Asked Questions",
       "footer": "footer.md",
@@ -69,7 +69,7 @@
     },
     {
       "headings": {
-        "appendix-d-getting-help-in-this-module": "Appendix D: Getting help in this module"
+        "d-getting-help-in-this-module": "D: Getting help in this module \n            \n            \n          "
       },
       "title": "Admin: D: Getting help in this module",
       "footer": "footer.md",
@@ -79,7 +79,7 @@
     },
     {
       "headings": {
-        "appendix-e-using-github-project-hosting": "Appendix E: Using GitHub Project Hosting",
+        "e-using-github": "E: Using GitHub \n            \n          ",
         "creating-a-github-account": "Creating a GitHub account",
         "setting-git-username-to-match-github-username": "Setting Git Username to Match GitHub Username",
         "submitting-pull-requests-as-evidence-of-an-lo": "Submitting Pull Requests as evidence of an LO",
@@ -99,7 +99,7 @@
     },
     {
       "headings": {
-        "appendix-f-handling-teamwork-issues": "Appendix F: Handling teamwork issues"
+        "f-handling-teamwork-issues": "F: Handling teamwork issues \n            \n              \n          "
       },
       "title": "Admin: F: Handling teamwork issues",
       "footer": "footer.md",
@@ -109,7 +109,7 @@
     },
     {
       "headings": {
-        "exams": "Exams",
+        "exams": "Exams \n            \n            \n          ",
         "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
         "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)"
       },
@@ -126,7 +126,7 @@
     },
     {
       "headings": {
-        "grade-breakdown": "Grade Breakdown"
+        "grade-breakdown": "Grade Breakdown \n            \n            \n          "
       },
       "title": "Admin: Grade Breakdown",
       "footer": "footer.md",
@@ -136,9 +136,9 @@
     },
     {
       "headings": {
-        "cs2103t-software-engineering": "CS2103/T Software Engineering"
+        "cs2103t-software-engineering": "CS2103/T Software Engineering \n            \n          "
       },
-      "title": "Admin: Module Overview",
+      "title": "Admin: CS2103/T Software Engineering",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
@@ -146,7 +146,7 @@
     },
     {
       "headings": {
-        "instructors": "Instructors"
+        "instructors": "Instructors \n            \n              \n          "
       },
       "title": "Admin: Instructors",
       "footer": "footer.md",
@@ -156,7 +156,7 @@
     },
     {
       "headings": {
-        "learning-outcomes": "Learning Outcomes"
+        "learning-outcomes": "Learning Outcomes \n            \n            \n          "
       },
       "title": "Admin: Learning Outcomes",
       "footer": "footer.md",
@@ -166,7 +166,7 @@
     },
     {
       "headings": {
-        "lectures": "Lectures"
+        "lectures": "Lectures \n            \n              \n              \n          "
       },
       "title": "Admin: Lectures",
       "footer": "footer.md",
@@ -176,7 +176,7 @@
     },
     {
       "headings": {
-        "module-expectations": "Module Expectations",
+        "module-expectations": "Module Expectations \n            \n            \n          ",
         "prior-knowledge-java-and-oop": "Prior Knowledge: Java and OOP",
         "workload": "Workload",
         "star-rating-system": "Star rating system"
@@ -189,9 +189,9 @@
     },
     {
       "headings": {
-        "cs2103t-software-engineering": "CS2103/T Software Engineering"
+        "cs2103t-software-engineering": "CS2103/T Software Engineering \n            \n          "
       },
-      "title": "Admin: Module Overview",
+      "title": "Admin: CS2103/T Software Engineering",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
@@ -199,7 +199,7 @@
     },
     {
       "headings": {
-        "participation-marks": "Participation Marks"
+        "participation-marks": "Participation Marks \n            \n            \n          "
       },
       "title": "Admin: Participation Marks",
       "footer": "footer.md",
@@ -209,7 +209,7 @@
     },
     {
       "headings": {
-        "peer-evaluations": "Peer Evaluations"
+        "peer-evaluations": "Peer Evaluations \n            \n            \n          "
       },
       "title": "Admin: Peer Evaluations",
       "footer": "footer.md",
@@ -219,7 +219,7 @@
     },
     {
       "headings": {
-        "programming-language": "Programming Language",
+        "programming-language": "Programming Language \n            \n            \n          ",
         "java-coding-standard": "Java coding standard"
       },
       "title": "Admin: Programming Language",
@@ -230,7 +230,7 @@
     },
     {
       "headings": {
-        "project-assessment": "Project → Assessment"
+        "project-assessment": "Project: Assessment \n            \n            \n          "
       },
       "title": "Admin: Project: Assessment",
       "footer": "footer.md",
@@ -240,7 +240,7 @@
     },
     {
       "headings": {
-        "project-constraints": "Project → Constraints"
+        "project-constraints": "Project: Constraints \n            \n            \n          "
       },
       "title": "Admin: Project: Constraints",
       "footer": "footer.md",
@@ -250,11 +250,11 @@
     },
     {
       "headings": {
-        "project-deliverables": "Project → Deliverables",
+        "project-deliverables": "Project: Deliverables \n            \n            \n          ",
         "deliverable-executable": "Deliverable: Executable",
         "deliverable-source-code": "Deliverable: Source code",
         "deliverable-user-guide-ug": "Deliverable: User Guide (UG)",
-        "deliverable-developer-guide-ug": "Deliverable: Developer Guide (UG)",
+        "deliverable-developer-guide-dg": "Deliverable: Developer Guide (DG)",
         "deliverable-product-website": "Deliverable: Product Website",
         "deliverable-project-portfolio-page-ppp": "Deliverable: Project Portfolio Page (PPP)",
         "deliverable-demo": "Deliverable: Demo",
@@ -268,7 +268,7 @@
     },
     {
       "headings": {
-        "project-overview": "Project → Overview"
+        "project-overview": "Project: Overview \n            \n            \n          "
       },
       "title": "Admin: Project: Overview",
       "footer": "footer.md",
@@ -278,7 +278,7 @@
     },
     {
       "headings": {
-        "project-the-product": "Project → The Product"
+        "project-the-product": "Project: The product \n            \n            \n          "
       },
       "title": "Admin: Project: The product",
       "footer": "footer.md",
@@ -288,7 +288,7 @@
     },
     {
       "headings": {
-        "project-scope": "Project → Scope"
+        "project-scope": "Project: Scope \n            \n            \n          "
       },
       "title": "Admin: Project: Scope",
       "footer": "footer.md",
@@ -298,7 +298,7 @@
     },
     {
       "headings": {
-        "project-supervision": "Project → Supervision"
+        "project-supervision": "Project: Supervision \n            \n            \n          "
       },
       "title": "Admin: Project: Supervision",
       "footer": "footer.md",
@@ -308,7 +308,7 @@
     },
     {
       "headings": {
-        "project-forming-teams": "Project → Forming Teams"
+        "forming-teams": "Forming Teams \n            \n            \n          "
       },
       "title": "Admin: Forming Teams",
       "footer": "footer.md",
@@ -318,7 +318,7 @@
     },
     {
       "headings": {
-        "project-timeline": "Project → Timeline"
+        "project-timeline": "Project: Timeline \n            \n            \n          "
       },
       "title": "Admin: Project: Timeline",
       "footer": "footer.md",
@@ -328,7 +328,7 @@
     },
     {
       "headings": {
-        "project-inception-week-3": "Project → inception [week 3]"
+        "project-inception-week-3": "Project: inception [week 3] \n            \n            \n          "
       },
       "title": "Admin: Project: inception [week 3]",
       "footer": "footer.md",
@@ -338,7 +338,7 @@
     },
     {
       "headings": {
-        "project-mid-v10-week-4": "Project → mid-v1.0 [week 4]"
+        "project-mid-v10-week-4": "Project: mid-v1.0 [week 4] \n            \n              \n              \n          "
       },
       "title": "Admin: Project: mid-v1.0 [week 4]",
       "footer": "footer.md",
@@ -348,7 +348,7 @@
     },
     {
       "headings": {
-        "project-v10-week-5": "Project → v1.0 [week 5]",
+        "project-v10-week-5": "Project: v1.0 [week 5] \n            \n            \n          ",
         "v10-documentation": "v1.0 Documentation",
         "v10-project-management": "v1.0 Project Management"
       },
@@ -360,7 +360,7 @@
     },
     {
       "headings": {
-        "project-mid-v11-week-6": "Project → mid-v1.1 [week 6]"
+        "project-mid-v11-week-6": "Project: mid-v1.1 [week 6] \n            \n            \n          "
       },
       "title": "Admin: Project: mid-v1.1 [week 6]",
       "footer": "footer.md",
@@ -370,7 +370,7 @@
     },
     {
       "headings": {
-        "project-v11-week-7": "Project → v1.1 [week 7]",
+        "project-v11-week-7": "Project: v1.1 [week 7] \n            \n            \n          ",
         "v11-project-management": "v1.1 Project Management",
         "v11-documentation": "v1.1 Documentation",
         "v11-product": "v1.1 Product"
@@ -383,7 +383,7 @@
     },
     {
       "headings": {
-        "project-mid-v12-week-8": "Project → mid-v1.2 [week 8]"
+        "project-mid-v12-week-8": "Project: mid-v1.2 [week 8] \n            \n              \n              \n          "
       },
       "title": "Admin: Project: mid-v1.2 [week 8]",
       "footer": "footer.md",
@@ -393,7 +393,7 @@
     },
     {
       "headings": {
-        "project-v12-week-9": "Project → v1.2 [week 9]",
+        "project-v12-week-9": "Project: v1.2 [week 9] \n            \n            \n          ",
         "v12-project-management": "v1.2 Project Management",
         "v12-product": "v1.2 Product",
         "v12-documentation": "v1.2 Documentation",
@@ -407,7 +407,7 @@
     },
     {
       "headings": {
-        "project-mid-v13-week-10": "Project → mid-v1.3 [week 10]"
+        "project-mid-v13-week-10": "Project: mid-v1.3 [week 10] \n            \n            \n          "
       },
       "title": "Admin: Project: mid-v1.3 [week 10]",
       "footer": "footer.md",
@@ -417,7 +417,7 @@
     },
     {
       "headings": {
-        "project-v13-week-11": "Project → v1.3 [week 11]",
+        "project-v13-week-11": "Project: v1.3 [week 11] \n            \n            \n          ",
         "v13-project-management": "v1.3 Project Management",
         "v13-product": "v1.3 Product",
         "v13-documentation": "v1.3 Documentation",
@@ -432,7 +432,7 @@
     },
     {
       "headings": {
-        "project-mid-v14-week-12": "Project → mid-v1.4 [week 12]"
+        "project-mid-v14-week-12": "Project: mid-v1.4 [week 12] \n            \n              \n              \n          "
       },
       "title": "Admin: Project: mid-v1.4 [week 12]",
       "footer": "footer.md",
@@ -442,7 +442,7 @@
     },
     {
       "headings": {
-        "project-v14-week-13": "Project → v1.4 [week 13]",
+        "project-v14-week-13": "Project: v1.4 [week 13] \n            \n            \n          ",
         "v14-product": "v1.4 Product",
         "v14-source-code": "v1.4 Source Code",
         "v14-user-guide": "v1.4 User Guide",
@@ -535,7 +535,7 @@
     },
     {
       "headings": {
-        "text-books": "Text Books"
+        "text-books": "Text Books \n            \n            \n          "
       },
       "title": "Admin: Text Books",
       "footer": "footer.md",
@@ -545,7 +545,7 @@
     },
     {
       "headings": {
-        "tools": "Tools"
+        "tools": "Tools \n            \n              \n              \n          "
       },
       "title": "Admin: Tools",
       "footer": "footer.md",
@@ -556,8 +556,8 @@
     {
       "headings": {
         "tutorial-structure": "Tutorial Structure",
-        "tutorial-timetable-tutor-roletimesvenue": "Tutorial Timetable #tutor role#times\n          #venue\n            \n            ",
-        "tutorials": "Tutorials"
+        "tutorial-timetable": "Tutorial Timetable",
+        "tutorials-tutor-role-times-venue": "Tutorials \n             #tutor role #times #venue\n          "
       },
       "title": "Admin: Tutorials",
       "footer": "footer.md",
@@ -567,7 +567,7 @@
     },
     {
       "headings": {
-        "using-this-website": "Using this Website",
+        "using-this-website": "Using this Website \n            \n          ",
         "browser-compatibility": "Browser Compatibility",
         "information-layers": "Information Layers",
         "conventions-used": "Conventions Used",
@@ -587,7 +587,7 @@
     },
     {
       "headings": {
-        "weekly-schedule": "Weekly Schedule"
+        "weekly-schedule": "Weekly Schedule \n            \n              \n              \n          "
       },
       "title": "Admin: Weekly Schedule",
       "footer": "footer.md",

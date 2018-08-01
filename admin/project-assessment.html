@@ -29,7 +29,7 @@
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="moduleOverview.html">Module Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span>
+      <li style="margin-top: 10px"><a href="moduleOverview.html">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span>
         </span>
       </li>
       <li style="margin-top: 10px"><a href="usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span>
@@ -167,8 +167,16 @@
         </span>
       </p>
       <br>
+      <p>
+        <div>
+          <h2 id="project-assessment">Project: Assessment <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+              aria-hidden="true"></span></span>
+            </span>
+            </span>
+          </h2>
+        </div>
+      </p>
       <div id="main">
-        <h2 id="project-assessment">Project → Assessment</h2>
         <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. CS2103T projects will be assessed separately from CS2103 projects. This is to account for the perceived difference in workload. Given below is the marking scheme.</p>
         <p><strong>Total</strong>: 50 marks (<span class="fas fa-user"></span> 40 individual marks + <span class="fas fa-users"></span> 10 team marks)</p>
         <panel header="1. **Product features** %%[<span class='fas fa-users'></span> 5 marks]%%" expanded="">
@@ -283,20 +291,18 @@
                                     needs to be read, understood, and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
                                   <tip-box>
                                     <p><span class="fas fa-cube"></span> The two code samples given below achieve the same functionality, but one is easier to read.</p>
-                                    <tabs>
-                                    
-                                      <tab header="Java">
-                                        <div>
-                                          <table>
-                                            <tr>
-                                            
-                                              <td>
-                                                <p>
-                                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
+                                    <div class="alt-java">
+                                      <div>
+                                        <table>
+                                          <tr>
+                                          
+                                            <td>
+                                              <p>
+                                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
         <span class="hljs-keyword">if</span> (!sub) {
@@ -314,18 +320,18 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                                                <p></p>
-                                              </td>
-                                            
-                                              <td>  <br><br></td>
-                                            
-                                              <td valign="top">
-                                                <p>
-                                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
+                                              <p></p>
+                                            </td>
+                                          
+                                            <td>  <br><br></td>
+                                          
+                                            <td valign="top">
+                                              <p>
+                                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
         subsidy = REJECT_SENIOR;
@@ -339,25 +345,24 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                                                <p></p>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                      </tab>
-                                    
-                                      <tab header="Python">
-                                        <div>
-                                          <table>
-                                            <tr>
-                                            
-                                              <td>
-                                                <p>
-                                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
+                                              <p></p>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </div>
+                                    <div class="alt-python">
+                                      <div>
+                                        <table>
+                                          <tr>
+                                          
+                                            <td>
+                                              <p>
+                                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
         <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
             <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
@@ -370,18 +375,18 @@
         subsidy = <span class="hljs-number">-1</span>
     <span class="hljs-keyword">return</span> subsidy
 </code></pre>
-                                                <p></p>
-                                              </td>
-                                            
-                                              <td>  <br><br></td>
-                                            
-                                              <td valign="top">
-                                                <p>
-                                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
+                                              <p></p>
+                                            </td>
+                                          
+                                            <td>  <br><br></td>
+                                          
+                                            <td valign="top">
+                                              <p>
+                                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
         <span class="hljs-keyword">return</span> REJECT_SENIOR
     <span class="hljs-keyword">elif</span> is_already_subsidised:
@@ -391,13 +396,12 @@
     <span class="hljs-keyword">else</span>:
         <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
 </code></pre>
-                                                <p></p>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                      </tab>
-                                    </tabs>
+                                              <p></p>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </div>
                                   </tip-box>
                                 </div>
                                 <div></div>
@@ -470,25 +474,23 @@
                                       <div>
                                         <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and
                                           use them to calculate the final value).</p>
-                                        <tabs>
-                                        
-                                          <tab header="Java">
-                                            <div>
-                                              <tip-box>
-                                                <p><span class="fas fa-cube"></span> Example:</p>
-                                                <p>
-                                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
+                                        <div class="alt-java">
+                                          <div>
+                                            <tip-box>
+                                              <p><span class="fas fa-cube"></span> Example:</p>
+                                              <p>
+                                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
-                                                <p>
-                                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs java">
+                                              <p>
+                                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
 <span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
 <span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
@@ -497,27 +499,26 @@
 
 <span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
 </code></pre>
-                                              </tip-box>
-                                            </div>
-                                          </tab>
-                                        
-                                          <tab header="Python">
-                                            <div>
-                                              <tip-box>
-                                                <p><span class="fas fa-cube"></span> Example:</p>
-                                                <p>
-                                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
+                                            </tip-box>
+                                          </div>
+                                        </div>
+                                        <div class="alt-python">
+                                          <div>
+                                            <tip-box>
+                                              <p><span class="fas fa-cube"></span> Example:</p>
+                                              <p>
+                                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
-                                                <p>
-                                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
+                                              <p>
+                                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
 is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
 
@@ -525,10 +526,9 @@ is_urgent = type_code == URGENT
 
 <span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
 </code></pre>
-                                              </tip-box>
-                                            </div>
-                                          </tab>
-                                        </tabs>
+                                            </tip-box>
+                                          </div>
+                                        </div>
                                         <blockquote>
                                           <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague.
                                             <sub>-- Edsger Dijkstra</sub></p>
@@ -555,89 +555,85 @@ is_urgent = type_code == URGENT
                                           <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
                                         <tip-box>
                                           <p><span class="fas fa-cube"></span> Example:</p>
-                                          <tabs>
-                                          
-                                            <tab header="Java">
-                                              <div>
-                                                <table>
-                                                  <tr>
-                                                  
-                                                    <td valign="top">
-                                                      <p>
-                                                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                          </span>
-                                                        </font>
-                                                      </p>
-                                                      <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+                                          <div class="alt-java">
+                                            <div>
+                                              <table>
+                                                <tr>
+                                                
+                                                  <td valign="top">
+                                                    <p>
+                                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                        </span>
+                                                      </font>
+                                                    </p>
+                                                    <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
 </code></pre>
-                                                      <p></p>
-                                                    </td>
-                                                  
-                                                    <td>  <br><br></td>
-                                                  
-                                                    <td valign="top">
-                                                      <p>
-                                                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                          </span>
-                                                        </font>
-                                                      </p>
-                                                      <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+                                                    <p></p>
+                                                  </td>
+                                                
+                                                  <td>  <br><br></td>
+                                                
+                                                  <td valign="top">
+                                                    <p>
+                                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                        </span>
+                                                      </font>
+                                                    </p>
+                                                    <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
 <span class="hljs-keyword">return</span> PI;
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
 </code></pre>
-                                                      <p></p>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </div>
-                                            </tab>
-                                          
-                                            <tab header="Python">
-                                              <div>
-                                                <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
-                                                <table>
-                                                  <tr>
-                                                  
-                                                    <td valign="top">
-                                                      <p>
-                                                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                          </span>
-                                                        </font>
-                                                      </p>
-                                                      <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+                                                    <p></p>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </div>
+                                          </div>
+                                          <div class="alt-python">
+                                            <div>
+                                              <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
+                                              <table>
+                                                <tr>
+                                                
+                                                  <td valign="top">
+                                                    <p>
+                                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                        </span>
+                                                      </font>
+                                                    </p>
+                                                    <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
 </code></pre>
-                                                      <p></p>
-                                                    </td>
-                                                  
-                                                    <td>  <br><br></td>
-                                                  
-                                                    <td valign="top">
-                                                      <p>
-                                                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                          </span>
-                                                        </font>
-                                                      </p>
-                                                      <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+                                                    <p></p>
+                                                  </td>
+                                                
+                                                  <td>  <br><br></td>
+                                                
+                                                  <td valign="top">
+                                                    <p>
+                                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                        </span>
+                                                      </font>
+                                                    </p>
+                                                    <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
 <span class="hljs-keyword">return</span> PI
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
 </code></pre>
-                                                      <p></p>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </div>
-                                            </tab>
-                                          </tabs>
+                                                    <p></p>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </div>
+                                          </div>
                                         </tip-box>
                                         <p>Similarly, we can have ‘magic’ values of other data types.</p>
                                         <tip-box>
@@ -1182,30 +1178,26 @@ exit();
                                         <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
                                         <tip-box>
                                           <p><span class="fas fa-cube"></span> Examples:</p>
-                                          <tabs>
-                                          
-                                            <tab header="Java">
-                                              <p>
-                                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                  </span>
-                                                </font>
-                                              </p>
-                                              <pre><code class="hljs java">Person student;
+                                          <div class="alt-java">
+                                            <p>
+                                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                </span>
+                                              </font>
+                                            </p>
+                                            <pre><code class="hljs java">Person student;
 ArrayList&lt;Person&gt; students;
 </code></pre>
-                                            </tab>
-                                          
-                                            <tab header="Python">
-                                              <p>
-                                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                  </span>
-                                                </font>
-                                              </p>
-                                              <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
+                                          </div>
+                                          <div class="alt-python">
+                                            <p>
+                                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                </span>
+                                              </font>
+                                            </p>
+                                            <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
 students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
 </code></pre>
-                                            </tab>
-                                          </tabs>
+                                          </div>
                                         </tip-box>
                                       </div>
                                       <div></div>
@@ -1797,54 +1789,50 @@ trimInput();
                                         <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em>                                          that you write for a class or an operation to explain its purpose.</p>
                                         <tip-box>
                                           <p><span class="fas fa-cube"></span> Examples:</p>
-                                          <tabs>
-                                          
-                                            <tab header="Java">
-                                              <div>
-                                                <p>
-                                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                    </span>
-                                                  </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                                                <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+                                          <div class="alt-java">
+                                            <div>
+                                              <p>
+                                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                  </span>
+                                                </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                                              <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                                                <p>
-                                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+                                              <p>
+                                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                                              </div>
-                                            </tab>
-                                          
-                                            <tab header="Python">
-                                              <div>
-                                                <p>
-                                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
-                                                    </span>
-                                                  </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                                                <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+                                            </div>
+                                          </div>
+                                          <div class="alt-python">
+                                            <div>
+                                              <p>
+                                                <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                                                  </span>
+                                                </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                                              <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
     ...
 </code></pre>
-                                                <p>
-                                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
-                                                    </span>
-                                                  </font>
-                                                </p>
-                                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+                                              <p>
+                                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                                                  </span>
+                                                </font>
+                                              </p>
+                                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
 <span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
     ...
 </code></pre>
-                                              </div>
-                                            </tab>
-                                          </tabs>
+                                            </div>
+                                          </div>
                                         </tip-box>
                                       </div>
                                       <div></div>
@@ -1931,8 +1919,8 @@ compact(input);
         </panel>
         <panel header="3. **QA** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
           <p>Evaluates: How good is your Quality Assurance?</p>
-          <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 Practical Exam, 4. bugs found during PE.</p>
-          <panel type="seamless" header="%%Click here for more info on v1.4 practical exam%%">
+          <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 <a href="#deliverable-practical-exam">Practical Exam</a>, 4. bugs found during PE.</p>
+          <panel type="seamless" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Deliverables → Practical Exam%%" class="embedding" minimized="">
             <div>
               <p><strong>Objectives:</strong></p>
               <ul>
@@ -2206,10 +2194,11 @@ compact(input);
               <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
             </ul>
             <p><strong>B. Team-based tasks</strong>:</p>
-            <p>Evaluates: how much you contributed to common team-based tasks</p>
+            <p>Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat"><a href="#scope-example-team-tasks">team-based tasks</a></span></p>
             <p>Based on: peer evaluations and tutor observations</p>
             <p>
-              <panel src="/website-base\admin\project-scope._include_.html#example-team-tasks" type="seamless" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team tasks" fragment="example-team-tasks"></panel>
+              <panel src="/website-base\admin\project-scope._include_.html#example-team-tasks" type="seamless" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team tasks" class="embedding"
+                minimized="" fragment="example-team-tasks"></panel>
             </p>
           </div>
         </panel>
@@ -2227,7 +2216,7 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Tue, 31 Jul 2018 05:16:39 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
 </footer>
 </div>
 </body>

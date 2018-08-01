@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\..\markbind\css\site-nav.css">
+    
     <link rel="stylesheet" href="/website-base/css/main.css">
 <link rel="stylesheet" href="/website-base/css/schedule.css">
     <link rel="icon" href="/website-base/favicon.ico">
@@ -89,7 +89,7 @@
         </panel>
         <p></p>
         <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-cs2101Differences" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-cs2101Differences">
-          <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Why submission requirements differ between T and CS2101? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Why submission requirements differ between CS2103/T and CS2101? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -1200,11 +1200,9 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
                     <tip-box>
                       <p><span class="fas fa-cube"></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
-                      <tabs>
-                      
-                        <tab header="Java">
-                          <div>
-                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+                      <div class="alt-java">
+                        <div>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
         <span class="hljs-comment">//...</span>
     }
@@ -1233,12 +1231,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
     }
 }
 </code></pre>
-                          </div>
-                        </tab>
-                      
-                        <tab header="Python">
-                          <div>
-                            <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
+                        </div>
+                      </div>
+                      <div class="alt-python">
+                        <div>
+                          <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
@@ -1259,9 +1256,8 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
       <span class="hljs-comment"># another unit tests for write(string) method</span>
 </code></pre>
-                          </div>
-                        </tab>
-                      </tabs>
+                        </div>
+                      </div>
                     </tip-box>
                   </div>
                   <div>
@@ -3657,11 +3653,9 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                         <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
-                          <tabs>
-                          
-                            <tab header="Java">
-                              <div>
-                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+                          <div class="alt-java">
+                            <div>
+                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
         <span class="hljs-comment">//...</span>
     }
@@ -3690,12 +3684,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
     }
 }
 </code></pre>
-                              </div>
-                            </tab>
-                          
-                            <tab header="Python">
-                              <div>
-                                <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
+                            </div>
+                          </div>
+                          <div class="alt-python">
+                            <div>
+                              <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
@@ -3716,9 +3709,8 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
       <span class="hljs-comment"># another unit tests for write(string) method</span>
 </code></pre>
-                              </div>
-                            </tab>
-                          </tabs>
+                            </div>
+                          </div>
                         </tip-box>
                       </div>
                       <div>
@@ -4826,7 +4818,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Tue, 31 Jul 2018 05:16:39 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
 </footer>
 </div>
 </body>

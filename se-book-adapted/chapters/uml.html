@@ -382,43 +382,39 @@
                       <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Car class">
                         <question>
                           <p>Draw a UML diagram to represent the <code>Car</code> class as given below. Include visibilities.</p>
-                          <tabs>
-                          
-                            <tab header="Java">
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
-    
+                          <div class="alt-java">
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+
     Engine engine;
     <span class="hljs-keyword">private</span> List&lt;Wheel&gt;[] wheels = <span class="hljs-keyword">null</span>;
     <span class="hljs-keyword">public</span> String model;
-    
+
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
         move(speed);
     }
-    
+
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">move</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
         ...
     }
 }
 </code></pre>
-                            </tab>
-                          
-                            <tab header="Python">
-                              <p>💡 You may omit <code>self</code> from method signatures in the class diagram.</p>
-                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
-    
+                          </div>
+                          <div class="alt-python">
+                            <p>💡 You may omit <code>self</code> from method signatures in the class diagram.</p>
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model)</span>:</span>
     self._engine = <span class="hljs-keyword">None</span> <span class="hljs-comment"># type: Engine</span>
     self.__wheels = []  <span class="hljs-comment"># type: a list of Wheel objects</span>
     self.model = model  <span class="hljs-comment"># type: string</span>
-    
+
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self, speed)</span>:</span> <span class="hljs-comment"># speed is an int</span>
       self.move(speed)
-    
+
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__move</span><span class="hljs-params">(self, speed)</span>:</span>
       <span class="hljs-keyword">pass</span>
 </code></pre>
-                            </tab>
-                          </tabs>
+                          </div>
                         </question>
                       </panel>
                     </div>
@@ -1088,15 +1084,14 @@
                       <div>
                         <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Class Diagram for code">
                           <question>
-                            <tabs>
-                            
-                              <tab header="Java">
-                                <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
-                                <ul>
-                                  <li>Make the multiplicities as strict as possible without contradicting the code.</li>
-                                  <li>You may omit the <code>Main</code> class from both diagrams.</li>
-                                </ul>
-                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;
+                            <div class="alt-java">
+                              <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
+                              <ul>
+                                <li>Make the multiplicities as strict as possible without contradicting the code.</li>
+                                <li>You may omit the <code>Main</code> class from both diagrams.</li>
+                              </ul>
+                              <pre><code class="hljs java">
+<span class="hljs-keyword">import</span> java.util.ArrayList;
 <span class="hljs-keyword">import</span> java.util.List;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -1126,7 +1121,7 @@
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setMainCard</span><span class="hljs-params">(Card card)</span></span>{
         <span class="hljs-keyword">this</span>.mainCard = card;
     }
-    
+
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSubCard</span><span class="hljs-params">(Card card)</span></span>{
         <span class="hljs-keyword">this</span>.subCard = card;
     }
@@ -1137,34 +1132,33 @@
 }
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span></span>{
-    
+
 }
 </code></pre>
-                              </tab>
-                            
-                              <tab header="Python">
-                                <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running the code. Make the multiplicities as strict as possible without contradicting the code.</p>
-                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>:</span>
-  
+                            </div>
+                            <div class="alt-python">
+                              <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running the code. Make the multiplicities as strict as possible without contradicting the code.</p>
+                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>:</span>
+
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, item)</span>:</span>
     self.__item = item <span class="hljs-comment"># type: Item</span>
-    
+
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>:</span>
-  
+
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.__previous_boxes = [] <span class="hljs-comment"># type: list of Box objects</span>
     self.__main_card = <span class="hljs-keyword">None</span>    <span class="hljs-comment"># type: Car</span>
     self.__sub_card = <span class="hljs-keyword">None</span>     <span class="hljs-comment"># type: Card</span>
-    
+
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_main_card</span><span class="hljs-params">(self, card)</span>:</span>
     self.__main_card = card <span class="hljs-comment"># type: Card</span>
-    
+
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_sub_card</span><span class="hljs-params">(self, card)</span>:</span>
     self.__sub_card = card <span class="hljs-comment"># type: Card</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_previous_box</span><span class="hljs-params">(self, previous_box)</span>:</span>
     self.__previous_boxes.append(previous_box)
-    
+
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span>:</span>
   <span class="hljs-keyword">pass</span>
@@ -1178,8 +1172,7 @@ item2.set_main_card(Card());
 item2.add_previous_box(box1);
 item2.add_previous_box(box2);
 </code></pre>
-                              </tab>
-                            </tabs>
+                            </div>
                             <div slot="answer">
                               <img src="/website-base/book/uml/classDiagrams/combine/basic/images/classDiagramForCodeAnswer.png" width="600"></div>
                           </question>
@@ -1626,14 +1619,12 @@ item2.add_previous_box(box2);
                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Car object">
                       <question>
                         <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
-                        <tabs>
-                        
-                          <tab header="Java">
-                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
-    
+                        <div class="alt-java">
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
-    
+
     Car(<span class="hljs-keyword">double</span> price, <span class="hljs-keyword">int</span> speed){
         <span class="hljs-comment">//...</span>
     }
@@ -1643,21 +1634,19 @@ item2.add_previous_box(box2);
 
 Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
 </code></pre>
-                          </tab>
-                        
-                          <tab header="Python">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
-  
+                        </div>
+                        <div class="alt-python">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, price, speed)</span>:</span>
     self.__price = price <span class="hljs-comment"># type: float</span>
     self.__speed = speed <span class="hljs-comment"># type: int</span>
-    
+
 
 <span class="hljs-comment"># somewhere else in the code</span>
-my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);  
+my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
 </code></pre>
-                          </tab>
-                        </tabs>
+                        </div>
                       </question>
                     </panel>
                   </div>
@@ -2084,7 +2073,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.0</a> at Tue, 31 Jul 2018 05:16:39 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
 </footer>
 </div>
 </body>

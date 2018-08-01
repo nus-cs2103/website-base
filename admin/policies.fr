@@ -1,6 +1,6 @@
 <div id="policy-followingInstructions">
 
-When working with others, especially in a large class such as {{ module }},  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated violations of instructions. On the other hand we do understand that humans are liable to make mistakes. That is why we only penalize repeated or frequent mistakes. 
+When working with others, especially in a large class such as {{ module_pair }},  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated violations of instructions. On the other hand we do understand that humans are liable to make mistakes. That is why we only penalize repeated or frequent mistakes. 
 
 </div>
 
@@ -14,7 +14,8 @@ As most of the work is graded individually, team sizes of 3, 4, or 5 is not expe
 
 As most of the work is graded individually, it is OK to do less or more than equal share in your project team.
 
-<panel src="project-scope.md#individual-expectations" header="Admin {{ icon_embedding }} Project → Scope: Expectations from each student" minimized />
+<span class="flat">%%Related: [[Admin: Project: Scope](#individual-expectations)]%%</span>
+<panel src="project-scope.md#individual-expectations" header="Admin {{ icon_embedding }} Project → Scope: Expectations from each student" class="embedding" minimized />
 
 </div>
 
@@ -49,7 +50,8 @@ The promptness of a reply is even more important when the email is requesting yo
 
 **We encourage you to give tech help to each other**, but do it in a way that the other person learns from it.
 
-<panel src="appendixD-help.md#main" header="Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module }}/T" minimized  />
+<span class="flat">%%Related: [[Admin: Appendix D: Getting Help](#admin-appendixD-help-anchor)]%%</span>
+<panel src="appendixD-help.md#main" header="Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module_pair }}" class="embedding" minimized  />
 
 </div>
 
