@@ -3,7 +3,6 @@
 
 <div id="title">
 
-## Project → v1.1 [week 7]
 </div>
 <div id="body"> 
 
@@ -23,7 +22,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 :exclamation: Reminder: Reaching individual and team milestones are considered for grading the _project management_ component of your project grade (expand the panel below for more info).
 
-<panel src="project-assessment.md#project-management-grading" header="Admin {{ icon_embedding }} Project Assessment → Project Management" minimized  />
+<panel src="project-assessment.md#project-management-grading" header="Admin {{ icon_embedding }} Project Assessment → Project Management" class="embedding" minimized  />
 
 <div id="documentation">
 

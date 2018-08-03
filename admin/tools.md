@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Tools
-
 <img src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px">
 
 **Collaboration platform**: You are ==_required to_ use GitHub== as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). See [Appendix E]({{baseUrl}}/admin/index.html#admin-appendixE-github) for more info on how to setup and use GitHub for your project.

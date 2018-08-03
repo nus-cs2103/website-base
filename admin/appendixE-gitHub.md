@@ -1,9 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-
-# Appendix E: Using GitHub Project Hosting
-
 ## Creating a GitHub account
 
 <div id="githubAccount">

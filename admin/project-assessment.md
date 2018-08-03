@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Assessment
-
 Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
 
 **Total**: 50 marks ({{ icon_individual }} 40 individual marks + {{ icon_team }} 10 team marks)
@@ -62,9 +60,9 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 Evaluates: How good is your Quality Assurance? 
 
-Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 Practical Exam, 4. bugs found during PE. 
+Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 [Practical Exam](#deliverable-practical-exam), 4. bugs found during PE.
 
-<panel type="seamless" header="%%Click here for more info on v1.4 practical exam%%">
+<panel type="seamless" header="%%Admin {{ icon_embedding }} Deliverables → Practical Exam%%" class="embedding" minimized >
   <include src="project-deliverables.md#project-deliverables-practicalexam"/>
 </panel>
 <panel type="seamless" header="Expectations for writing automated tests:" expanded>
@@ -105,11 +103,11 @@ Other criteria:
 
 **B. Team-based tasks**: 
 
-Evaluates: how much you contributed to common team-based tasks
+  Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat">[team-based tasks](#scope-example-team-tasks)</span>
 
 Based on: peer evaluations and tutor observations
 
-<panel src="project-scope.md#example-team-tasks" type="seamless" header="Admin {{ icon_embedding }} Project Scope → Examples of team tasks" />
+<panel src="project-scope.md#example-team-tasks" type="seamless" header="Admin {{ icon_embedding }} Project Scope → Examples of team tasks" class="embedding" minimized />
 
 </div>
 </panel>

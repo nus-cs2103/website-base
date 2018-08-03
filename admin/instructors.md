@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Instructors
-
 <iframe src="{{ instructors_page }}" width="800" height="1000" ></iframe>
 
 </div>

@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Supervision
-
 Your tutor will serve as your _project supervisor_ too.
 
 **The supervisor's main job is to observe, facilitate self/peer learning, evaluate, and give feedback.**

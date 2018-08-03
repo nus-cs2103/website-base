@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Appendix A: Module Principles
-
 These are some of the main principles underlying the module structure.
 
 <tip-box type="important">

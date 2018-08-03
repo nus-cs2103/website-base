@@ -3,7 +3,6 @@
 
 <div id="title">
 
-## Project → v1.0 [week 5]
 </div>
 <div id="body">
 
@@ -27,7 +26,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 :exclamation: The deadline for reaching a milestone is ==the midnight before your tutorial== %%e.g., if your tutorial is on Wednesday, you need to reach the milestone by Tuesday midnight.%%
 
-<panel src="project-assessment.md#project-management-grading" header="Admin {{ icon_embedding }} Project Assessment → Project Management" minimized />
+<panel src="project-assessment.md#project-management-grading" header="Admin {{ icon_embedding }} Project Assessment → Project Management" class="embedding" minimized />
 
 ### v1.0 Documentation
 

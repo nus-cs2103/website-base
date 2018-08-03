@@ -3,7 +3,6 @@
 
 <div id="title">
 
-## Project → mid-v1.1 [week 6]
 </div>
 <div id="body">
 
@@ -73,7 +72,7 @@ Before you do any coding for the project, please ensure you have set the Git use
   * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  
 
 <div class="indented-level2">
-<panel src="project-scope.md#roles" header="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" minimized />
+<panel src="project-scope.md#roles" header="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" class="embedding" minimized />
 </div>
 <p/>
 
@@ -100,7 +99,7 @@ Before you do any coding for the project, please ensure you have set the Git use
   :exclamation: Before you start coding, please read our reuse policy given below, in particular, ==how to give credit when you reuse code from Internet or classmates==:
 
 <div class="indented-level2">
-<panel src="appendixB-policies.md#policy-reuse" header="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" minimized /><p/>
+<panel src="appendixB-policies.md#policy-reuse" header="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" class="embedding" minimized /><p/>
 </div>
 
 

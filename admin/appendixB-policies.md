@@ -3,9 +3,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-# Appendix B: Module Policies
-
-{% for policy in policies %} 
+{% for policy in policies %}
 * [{{ policy.title }}](#{{ policy.id }}) {{show_stars(policy.priority) }}
 {% endfor %}
 

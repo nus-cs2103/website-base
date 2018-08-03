@@ -1,13 +1,11 @@
 {% macro show_main_text() %} 
 <div id="main">
 
-# {{ module }}/T Software Engineering
-
 <big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big>
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
-<p class="lead"><md>{{ module }}/T is an introductory Software Engineering module. It covers roughly **a 50-50 balance of basic SE theory and practice** that a student needs to know before going for SE internships in the industry or taking <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially">**iterative approach**</tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch">**brown-field approach** to teaching SE</tooltip>.</md></p>
+<p class="lead"><md>{{ module_pair }} is an introductory Software Engineering module. It covers roughly **a 50-50 balance of basic SE theory and practice** that a student needs to know before going for SE internships in the industry or taking <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially">**iterative approach**</tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch">**brown-field approach** to teaching SE</tooltip>.</md></p>
 
 On the theory side, this module is supported by a customized online text book [_Software Engineering for Self-Directed Learners_]({{ baseUrl }}/se-book-adapted/index.html), integrated into this module website.
 
@@ -31,7 +29,7 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 <br>
 
-<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" minimized />
+<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
 
 </div>
 {% endmacro %} 

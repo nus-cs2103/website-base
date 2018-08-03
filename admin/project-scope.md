@@ -1,8 +1,6 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Project → Scope
-
 <div id="project-direction">
 In general, each team is expected to take one of these two directions:
 
@@ -37,9 +35,9 @@ In general, each team is expected to take one of these two directions:
    
 For either direction, you need to define a target user profile and a value proposition:
 
-* **Target user profile**: Define a very specific target user profile. <br> :bulb: We require you narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module }} instructors.%%<br><br>
+* **Target user profile**: Define a very specific target user profile. <br> :bulb: We require you narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
  :exclamation: Be careful not to contradict given project constraints when defining the user profile %%&nbsp;e.g. the target user should still prefer typing over mouse actions%%.<br><br>
-  **It is expected that your product will be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module }} instructors only, such as the ability to navigate to a student's project on GitHub%% :bulb: Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
+  **It is expected that your product will be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module_pair }} instructors only, such as the ability to navigate to a student's project on GitHub%% :bulb: Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
   
   <panel header="Why the need to narrow down the user profile?" minimized>
   
@@ -102,6 +100,7 @@ For either direction, you need to define a target user profile and a value propo
    * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
 
 1. **Do a share of team-tasks**: These are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
+   <span id="scope-example-team-tasks"></span>
 
    <panel header="{{ icon_example }} Examples of team-tasks" minimized>
    

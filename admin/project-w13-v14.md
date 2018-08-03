@@ -3,7 +3,6 @@
 
 <div id="title">
 
-## Project → v1.4 [week 13]
 </div>
 <div id="body">
 
@@ -37,22 +36,26 @@ Team/Individual Item | Name format | Upload to
 * **Do not update the repo during the 14 days after the deadline.** Get our permission first if you need to update the repo during that _freeze_ period. You can continue to evolve your repo after that. 
 </tip-box>
 
-**Grading**: 
+**Grading**:
 
-<panel src="project-assessment.md" header="%%Admin {{ icon_embedding }} Project: Assessment%%" />
+<span class="flat">Described in [[Admin: Project: Assessment](#admin-project-assessment-anchor)]</span>
+
+<panel src="project-assessment.md#main" header="%%Admin {{ icon_embedding }} Project: Assessment%%" class="embedding" />
 
 
 ### v1.4 Product
 
-<panel src="project-deliverables.md#project-deliverables-executable" header="%%Admin {{ icon_embedding }} Project → Deliverables → Executable%%" />
+<span class="flat">Described in [[Admin: Project: Deliverables: Executable](#deliverable-executable)]</span>
+<panel src="project-deliverables.md#project-deliverables-executable" header="%%Admin {{ icon_embedding }} Project → Deliverables → Executable%%"  class="embedding" />
 <p/>
 
-**Submission**: See summary of submissions above 
+**Submission**: See summary of submissions above
 
 
 ### v1.4 Source Code
 
-<panel src="project-deliverables.md#project-deliverables-sourcecode" header="%%Admin {{ icon_embedding }} Project → Deliverables → Source Code%%" />
+<span class="flat">Described in [[Admin: Project: Deliverables: Source Code](#deliverable-source-code)]</span>
+<panel src="project-deliverables.md#project-deliverables-sourcecode" header="%%Admin {{ icon_embedding }} Project → Deliverables → Source Code%%" class="embedding" />
 <p/>
 
 **Submission**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline will be considered a later submission). Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
@@ -60,7 +63,8 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 User Guide
 
-<panel src="project-deliverables.md#project-deliverables-ug" header="%%Admin {{ icon_embedding }} Project → Deliverables → User Guide%%" />
+<span class="flat">Described in [[Admin: Project: Deliverables: User Guide](#deliverable-user-guide-ug)]</span>
+<panel src="project-deliverables.md#project-deliverables-ug" header="%%Admin {{ icon_embedding }} Project → Deliverables → User Guide%%" class="embedding" />
 <p/>
 
 **Submission**: Convert the pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE. See _summary of submissions_ above for the file name format.
@@ -68,7 +72,8 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Developer Guide
 
-<panel src="project-deliverables.md#project-deliverables-dg" header="%%Admin {{ icon_embedding }} Project → Deliverables → Developer Guide%%" />
+<span class="flat">Described in [[Admin: Project: Deliverables: Developer Guide](#deliverable-developer-guide-dg)]</span>
+<panel src="project-deliverables.md#project-deliverables-dg" header="%%Admin {{ icon_embedding }} Project → Deliverables → Developer Guide%%" class="embedding" />
 <p/>
 
 **Submission**: Similar to UG
@@ -76,7 +81,8 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Product Website
 
-<panel src="project-deliverables.md#project-deliverables-website" header="%%Admin {{ icon_embedding }} Project → Deliverables → Product Website%%" />
+<span class="flat">Described in [[Admin: Project: Deliverables: Product Website](#deliverable-product-website)]</span>
+<panel src="project-deliverables.md#project-deliverables-website" header="%%Admin {{ icon_embedding }} Project → Deliverables → Product Website%%" class="embedding" />
 <p/>
 
 **Submission**: Push the code to GitHub
@@ -86,20 +92,22 @@ Team/Individual Item | Name format | Upload to
 
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
 
-<panel src="project-deliverables.md#project-deliverables-demo" header="%%Admin {{ icon_embedding }} Project → Deliverables → Demo%%" />
+<span class="flat">Described in [[Admin: Project: Deliverables: Demo](#deliverable-demo)]</span>
+<panel src="project-deliverables.md#project-deliverables-demo" header="%%Admin {{ icon_embedding }} Project → Deliverables → Demo%%" class="embedding" />
 <p/>
 
 * **Venue:** Same as the tutorial venue unless informed otherwise.
-* **Schedule:** Your demo timing is same as your tutorial time in week 13.  
+* **Schedule:** Your demo timing is same as your tutorial time in week 13.
     Starting times: `Team B1: 00 minutes, B2: 20 minutes, B3: 40 minutes, B4: TBA`<br>
-    At least some team members need to arrive 15 minutes ahead of the allocated time to set up your computer.<br> 
+    At least some team members need to arrive 15 minutes ahead of the allocated time to set up your computer.<br>
     There is an ==automatic penalty if you are not ready to start on time.==<br>
     Wait outside the venue until you are called in.
-    
+
 
 ### v1.4 Practical Exam
 
-<panel src="project-deliverables.md#project-deliverables-practicalexam" header="%%Admin {{ icon_embedding }} Project → Deliverables → Practical Exam%%" />
+<span class="flat">Described in [[Admin: Project: Deliverables: Practical Exam](#deliverable-practical-exam)]</span>
+<panel src="project-deliverables.md#project-deliverables-practicalexam" header="%%Admin {{ icon_embedding }} Project → Deliverables → Practical Exam%%" class="embedding" />
 <p/>
 
 **Time/venue:** week 13 lecture slot
