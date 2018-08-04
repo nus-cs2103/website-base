@@ -46,7 +46,7 @@
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
 * The tutor will direct students to share/discuss evidence of achieving the weekly learning outcomes (LO). 
 * If some students have met with difficulties while achieving an LO, the tutor can direct those students to get help from those who have achieved the LO. **The number of LOs that can be covered in the tutorial session depends on how well-prepared you are.**
-* The tutor will observe, and give feedback on, how well you are achieving required LOs.
+* The tutor will observe, and give feedback on how well you are achieving required LOs.
 * Please ==bring your laptop to tutorials.== You often need it to show evidence of LOs you achieved. At other times, we ask you to work on project related things with your team members, which too may require the laptop.
 
 <div class="indented-level2">
