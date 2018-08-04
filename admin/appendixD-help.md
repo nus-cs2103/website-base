@@ -16,11 +16,11 @@ The question you should always ask yourself is, 'how do I solve this problem if 
 
 <big>{{ icon_dislike }} **What not to do:**</big> 
 
-* When faced with a technical problem or a doubt about a concept, don'f fire off an email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.
+* When faced with a technical problem or a doubt about a concept, don't fire off an email lecturer/tutor immediately after you encounter a problem or a doubt, unless it is something only the lecturer/tutor is supposed to know.
 
 <big>{{ icon_like }} **What to do:**</big>
 
-* **Check what is given**: Check if the problem/concept has been discussed in the lectures, text book, or the list of resources given to you. Yes it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.
+* **Check what is given**: Check if the problem/concept has been discussed in the lectures, text book, or the list of resources given to you. Yes, it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.
 
 * **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).  
   Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.    
@@ -36,7 +36,7 @@ The question you should always ask yourself is, 'how do I solve this problem if 
 
   <img src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"/><br/>
 
-  _Rubber duck debugging_ is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.
+  _Rubber duck debugging_ is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book _The Pragmatic Programmer_ in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.
 
   [for more, see [wikipedia entry](https://en.wikipedia.org/wiki/Rubber_duck_debugging)]  
 
