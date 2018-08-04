@@ -2,13 +2,14 @@
 <div id="main">
 <div id="essential">
 
-{{ icon_important_big_red }} This _Schedule Page_ is your main source of information for {{ module_pair }}. You will need to refer to it weekly.
+{{ icon_important_big_red }} The _Schedule Page_ is your main source of information for {{ module_pair }}. You will need to refer to it weekly.
 
-{{ icon_info }} More details for the upcoming weeks (and upcoming sections of the textbook) will be added as the weeks progress. In general, ==information given for more than 1 week into the future should be treated as _tentative_==.
+{{ icon_info }} More details for the upcoming weeks will be added as the weeks progress. In general, ==information given for more than 1 week into the future should be treated as _tentative_==.
 
+<div class="full-mode">
 
-:bulb: **For those who don't like the nested-info style used by this website**, we have also provided flat all-in-one versions of the textbook and the admin info.
-
+:bulb: **For those who don't like the _nested_ style used by this website**, we have also provided _flat_ version of the the website. You can switch between the two versions using the top navigation bar of the website.
+</div>
 
 <include src="../book/about/usage.md#browsers" />
 <include src="../book/about/usage.md#layers"/>
