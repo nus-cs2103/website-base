@@ -3,7 +3,7 @@
 
 ### Prior Knowledge: Java and OOP
 
-This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills. 
+This module requires you to write Java code almost every week, starting from the very first week. If your Java skills are shaky, do brush up your Java programming skills. 
 
 In particular, you may want to **have a look at the new Java 8 features** such as _streams_, _lambdas_, _Optionals_, that may not have been covered in previous Java modules.
 
