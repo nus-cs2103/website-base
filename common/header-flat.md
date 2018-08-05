@@ -5,7 +5,7 @@
     <li><a href="{{baseUrl}}/index.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Nested</a></li>
   </dropdown>
   <li><a href="{{baseUrl}}/index-flat.html" class="nav-link"><md>**Schedule**</md></a></li>
-  <li><a href="{{baseUrl}}/se-book-adapted/index-flat.html" class="nav-link"><md>**Textbook**</md></a></li>
+  <li><a href="{{baseUrl}}/se-book-adapted/index.html" target="_blank" class="nav-link"><md>**Textbook**</md></a></li>
 
   <li><a href="{{baseUrl}}/admin/index-flat.html" class="nav-link"><md>**Admin Info**</md></a></li>
   <dropdown text="Links" class="nav-link">

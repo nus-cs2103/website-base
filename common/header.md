@@ -5,7 +5,7 @@
     <li><a href="{{baseUrl}}/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
   </dropdown>
   <li><a href="{{baseUrl}}/index.html" class="nav-link"><md>**Schedule**</md></a></li>
-  <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
+  <li><a href="{{baseUrl}}/se-book-adapted/index.html" target="_blank" class="nav-link"><md>**Textbook**</md></a></li>
   <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
   <dropdown text="Links" class="nav-link">
     <li><a href="{{bugs_link}}" target="_blank" class="dropdown-item"> {{ fas_bug }} Report Bugs</a></li>
