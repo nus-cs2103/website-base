@@ -1,1 +1,0 @@
-[[slides](http://www.comp.nus.edu.sg/~{{ module | lower }}/{{ semester }}/slides/L8.pptx)]
