@@ -25,8 +25,8 @@ Your project should comply with the following constraints.
 * **Constraint-OO**: The software should follow the Object-oriented paradigm.<br/> 
   %%**Reason:** For you to practice using OOP in a non-trivial project.%%  
     
-* **Constraint-No-DBSM**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data.<br/>
-  %%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for {{ module_pair }} module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
+* **Constraint-No-DBMS**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data.<br/>
+  %%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for {{ module_pair }} module learning outcomes; covering DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
 
 * **Constraint-Platform-Independent**: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and OS-specific features.<br/>
   %%**Reason:** Peer testers should be able to use any of these platforms.%%
@@ -35,7 +35,7 @@ Your project should comply with the following constraints.
   %%**Reason:** We do not want to install all your projects on our testing machines when we test them for grading.%%
 
 * **Constraint-External-Software**: The use of third-party frameworks/libraries is allowed but only if they,
-    *   are free.
+    *   are free, open-source and have permissive license terms %%(E.g., trial version of libraries that require purchase after N days are not allowed)%%.
     *   do not require any installation by the user of your software.
     *   do not violate other constraints.
 
