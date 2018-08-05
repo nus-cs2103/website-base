@@ -4,19 +4,19 @@
 
 <span id="module_name">Software Engineering</span>
 
-<span id="semester">AY1718S2</span>
+<span id="semester">AY1819S1</span>
 
 <span id="period">Aug '18</span>
 
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 
-<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true</span>
+<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vSMEFXr-yL298GPeuNxkC7m87bYqi4KTWo7zZRtDXLCIIhb0osxn5aM3gVk6DCOC6pEu5nMw7Gf1YwJ/pub?embed=true</span>
 
 <span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml</span>
 
-<span id="ivle_files">https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac</span>
+<span id="ivle_files">https://luminus.nus.edu.sg/modules/c2ea2a78-8f0a-4cab-b965-4939b2b75856/files/241785ff-7068-4182-baf5-7ca030296ead</span>
 
-<span id="ivle_announcements">https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f</span>
+<span id="ivle_announcements">https://luminus.nus.edu.sg/modules/c2ea2a78-8f0a-4cab-b965-4939b2b75856/announcements/active</span>
 
 <span id="bugs_link">{{ module_org | safe }}/website/issues</span>
 
