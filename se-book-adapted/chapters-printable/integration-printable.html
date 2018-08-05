@@ -17,163 +17,158 @@
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
-<div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-<div class="website-content">
-  <div id="title">
+<div id="app">
+    <div id="content-wrapper">
+  <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+  <div class="website-content">
+    <div id="title">
+      <div>
+        <h1 id="integration">Integration</h1>
+      </div>
+    </div>
     <div>
-      <h1 id="integration">Integration</h1>
+      <p><small><span class="dimmed"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
     </div>
-  </div>
-  <div>
-    <p><small><span class="dimmed"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
-  </div>
-  <div>
-    <h2 id="introduction">Introduction</h2>
-  </div>
-  <div class="indented-less">
+    <div>
+      <h2 id="introduction">Introduction</h2>
+    </div>
     <div class="indented-less">
-      <h4 id="what">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-        </small>
-        </span>
-      </h4>
       <div class="indented-less">
-        <div>
-          <p><strong>Combining parts of a software product to form a whole is called <em>integration</em></strong>. It is also one of the most troublesome tasks and it rarely goes smoothly.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h2 id="approaches">Approaches</h2>
-  </div>
-  <div class="indented-less">
-    <div class="indented-less">
-      <h4 id="late-and-one-time-vs-early-and-frequent">'Late and One Time' vs 'Early and Frequent' <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-        <span
-          class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+        <h4 id="what">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
-      </h4>
-      <div class="indented-less">
-        <div>
-          <p><strong>In terms of timing and frequency, there are two general approaches to integration: <em>late and one-time</em>, <em>early and frequent</em>.</strong></p>
-          <p><strong><em>Late and one-time</em>: wait till all components are completed and integrate all finished components near the end of the project.</strong></p>
-          <tip-box type="wrong">
-            <p>This approach is not recommended because integration often causes many component incompatibilities (due to previous miscommunications and misunderstandings) to surface which can lead to delivery delays <span class="dimmed"> i.e. Late integration → incompatibilities found → major rework required → cannot meet the delivery date</span>.</p>
-          </tip-box>
-          <p><strong><em>Early and frequent</em>: integrate early and evolve each part in parallel, in small steps, re-integrating frequently.</strong></p>
-          <tip-box>
-            <p><span class="fas fa-cube"></span> A <em><tooltip content="it compiles and runs but does not produce any useful output">walking skeleton</tooltip></em> can be written first. This can be done by one developer, possibly the one in charge of integration.
-              After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the new code to the main system.</p>
-          </tip-box>
-          <div v-closeable="" alt="slideshow: comparison">
-            <p>Here is an animation that compares the two approaches:</p>
-            <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212312&authkey=AHtrsZMwQmNcyAE&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
-                mozallowfullscreen="" allowfullscreen></iframe></div>
+        </h4>
+        <div class="indented-less">
+          <div>
+            <p><strong>Combining parts of a software product to form a whole is called <em>integration</em></strong>. It is also one of the most troublesome tasks and it rarely goes smoothly.</p>
           </div>
         </div>
       </div>
     </div>
+    <div>
+      <h2 id="approaches">Approaches</h2>
+    </div>
     <div class="indented-less">
-      <h4 id="big-bang-vs-incremental-integration">Big-Bang vs Incremental Integration <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-          aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-        </small>
-        </span>
-      </h4>
       <div class="indented-less">
-        <div>
-          <p><strong><em>Big-bang integration</em>: integrate all components at the same time.</strong></p>
-          <tip-box type="wrong">
-            <p>Big-bang is not recommended because it will uncover too many problems at the same time which could make debugging and bug-fixing more complex than when problems are uncovered incrementally.</p>
-          </tip-box>
-          <p><strong><em>Incremental integration</em>: integrate few components at a time.</strong> This approach is better than the big-bang integration because it surfaces integration problems in a more manageable way.</p>
-          <div v-closeable="" alt="slideshow: comparison">
-            <p>Here is an animation that compares the two approaches:</p>
-            <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212315&authkey=AG4cur5IrM7vr7M&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
-                mozallowfullscreen="" allowfullscreen></iframe></div>
+        <h4 id="late-and-one-time-vs-early-and-frequent">'Late and One Time' vs 'Early and Frequent' <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+          <span
+            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+            </small>
+            </span>
+        </h4>
+        <div class="indented-less">
+          <div>
+            <p><strong>In terms of timing and frequency, there are two general approaches to integration: <em>late and one-time</em>, <em>early and frequent</em>.</strong></p>
+            <p><strong><em>Late and one-time</em>: wait till all components are completed and integrate all finished components near the end of the project.</strong></p>
+            <tip-box type="wrong">
+              <p>This approach is not recommended because integration often causes many component incompatibilities (due to previous miscommunications and misunderstandings) to surface which can lead to delivery delays <span class="dimmed"> i.e. Late integration → incompatibilities found → major rework required → cannot meet the delivery date</span>.</p>
+            </tip-box>
+            <p><strong><em>Early and frequent</em>: integrate early and evolve each part in parallel, in small steps, re-integrating frequently.</strong></p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> A <em><tooltip content="it compiles and runs but does not produce any useful output">walking skeleton</tooltip></em> can be written first. This can be done by one developer, possibly the one in charge of
+                integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the new code to the main system.</p>
+            </tip-box>
+            <div v-closeable="" alt="slideshow: comparison">
+              <p>Here is an animation that compares the two approaches:</p>
+              <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212312&authkey=AHtrsZMwQmNcyAE&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                  mozallowfullscreen="" allowfullscreen></iframe></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indented-less">
+        <h4 id="big-bang-vs-incremental-integration">Big-Bang vs Incremental Integration <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+            </small>
+            </span>
+        </h4>
+        <div class="indented-less">
+          <div>
+            <p><strong><em>Big-bang integration</em>: integrate all components at the same time.</strong></p>
+            <tip-box type="wrong">
+              <p>Big-bang is not recommended because it will uncover too many problems at the same time which could make debugging and bug-fixing more complex than when problems are uncovered incrementally.</p>
+            </tip-box>
+            <p><strong><em>Incremental integration</em>: integrate few components at a time.</strong> This approach is better than the big-bang integration because it surfaces integration problems in a more manageable way.</p>
+            <div v-closeable="" alt="slideshow: comparison">
+              <p>Here is an animation that compares the two approaches:</p>
+              <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212315&authkey=AG4cur5IrM7vr7M&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                  mozallowfullscreen="" allowfullscreen></iframe></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div>
-    <h2 id="build-automation">Build Automation</h2>
-  </div>
-  <div class="indented-less">
-    <div class="indented-less">
-      <h4 id="what-2">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-          aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-        </small>
-        </span>
-      </h4>
-      <div class="indented-less">
-        <div>
-          <p><strong>Build automation tools automate the steps of the build process, usually by means of build scripts.</strong></p>
-          <p>In a non-trivial project, building a product from source code can be a complex multi-step process. <span class="dimmed"> For example, it can include steps such as to pull code from the revision control system, compile, link, run automated tests, automatically update release documents (e.g. build number), package into a distributable, push to repo, deploy to a server, delete temporary files created during building/testing, email developers of the new build, and so on. Furthermore, this build process can be done ‘on demand’, it can be scheduled (e.g. every day at midnight) or it can be triggered by various events (e.g. triggered by a code push to the revision control system).</span></p>
-          <p>Some of these build steps such as to compile, link and package are already automated in most modern IDEs. <span class="dimmed"> For example, several steps happen automatically when the ‘build’ button of the IDE is clicked. Some IDEs even allow customization to this build process to some extent.</span></p>
-          <p>However, most big projects use specialized build tools to automate complex build processes.</p>
-          <tip-box>
-            <p><span class="fas fa-cube"></span> Some popular build tools relevant to Java developers:</p>
-            <ul>
-              <li><a href="https://gradle.org/">Gradle</a></li>
-              <li><a href="http://maven.apache.org/">Maven</a></li>
-              <li><a href="http://ant.apache.org/">Apache Ant</a></li>
-              <li><a href="http://www.gnu.org/software/make/">GNU Make</a></li>
-            </ul>
-            <p><span class="fas fa-cube"></span> <span class="dimmed">Some other build tools : Grunt (JavaScript), Rake (Ruby)</span></p>
-          </tip-box>
-          <p><strong>Some build tools also serve as <em>dependency management tools</em></strong>. Modern software projects often depend on third party libraries that evolve constantly. That means developers need to download the correct version of the required
-            libraries and update them regularly. Therefore, dependency management is an important part of build automation. Dependency Management tools can automate that aspect of a project.</p>
-          <tip-box>
-            <p><span class="fas fa-cube"></span> Maven and Gradle, in addition to managing the build process, can play the role of dependency management tools too.</p>
-          </tip-box>
-        </div>
-      </div>
+    <div>
+      <h2 id="build-automation">Build Automation</h2>
     </div>
     <div class="indented-less">
-      <h4 id="continuous-integration-and-continuous-deployment">Continuous Integration and Continuous Deployment <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-        <span
-          class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+      <div class="indented-less">
+        <h4 id="what-2">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
-      </h4>
+        </h4>
+        <div class="indented-less">
+          <div>
+            <p><strong>Build automation tools automate the steps of the build process, usually by means of build scripts.</strong></p>
+            <p>In a non-trivial project, building a product from source code can be a complex multi-step process. <span class="dimmed"> For example, it can include steps such as to pull code from the revision control system, compile, link, run automated tests, automatically update release documents (e.g. build number), package into a distributable, push to repo, deploy to a server, delete temporary files created during building/testing, email developers of the new build, and so on. Furthermore, this build process can be done ‘on demand’, it can be scheduled (e.g. every day at midnight) or it can be triggered by various events (e.g. triggered by a code push to the revision control system).</span></p>
+            <p>Some of these build steps such as to compile, link and package are already automated in most modern IDEs. <span class="dimmed"> For example, several steps happen automatically when the ‘build’ button of the IDE is clicked. Some IDEs even allow customization to this build process to some extent.</span></p>
+            <p>However, most big projects use specialized build tools to automate complex build processes.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Some popular build tools relevant to Java developers:</p>
+              <ul>
+                <li><a href="https://gradle.org/">Gradle</a></li>
+                <li><a href="http://maven.apache.org/">Maven</a></li>
+                <li><a href="http://ant.apache.org/">Apache Ant</a></li>
+                <li><a href="http://www.gnu.org/software/make/">GNU Make</a></li>
+              </ul>
+              <p><span class="fas fa-cube"></span> <span class="dimmed">Some other build tools : Grunt (JavaScript), Rake (Ruby)</span></p>
+            </tip-box>
+            <p><strong>Some build tools also serve as <em>dependency management tools</em></strong>. Modern software projects often depend on third party libraries that evolve constantly. That means developers need to download the correct version of the
+              required libraries and update them regularly. Therefore, dependency management is an important part of build automation. Dependency Management tools can automate that aspect of a project.</p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Maven and Gradle, in addition to managing the build process, can play the role of dependency management tools too.</p>
+            </tip-box>
+          </div>
+        </div>
+      </div>
       <div class="indented-less">
-        <div>
-          <p><strong>An extreme application of build automation is called <em>continuous integration (CI)</em> in which integration, building, and testing happens automatically after each code change.</strong></p>
-          <p><strong>A natural extension of CI is <em>Continuous Deployment (CD)</em> where the changes are not only integrated continuously, but also deployed to end-users at the same time.</strong></p>
-          <tip-box>
-            <p><span class="fas fa-cube"></span> Some examples of CI/CD tools:</p>
-            <ul>
-              <li><a href="https://travis-ci.org/">Travis</a></li>
-              <li><a href="http://jenkins-ci.org">Jenkins</a></li>
-              <li><a href="https://www.appveyor.com">Appveyor</a></li>
-              <li><a href="https://circleci.com">CircleCI</a></li>
-            </ul>
-          </tip-box>
+        <h4 id="continuous-integration-and-continuous-deployment">Continuous Integration and Continuous Deployment <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+          <span
+            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
+            </small>
+            </span>
+        </h4>
+        <div class="indented-less">
+          <div>
+            <p><strong>An extreme application of build automation is called <em>continuous integration (CI)</em> in which integration, building, and testing happens automatically after each code change.</strong></p>
+            <p><strong>A natural extension of CI is <em>Continuous Deployment (CD)</em> where the changes are not only integrated continuously, but also deployed to end-users at the same time.</strong></p>
+            <tip-box>
+              <p><span class="fas fa-cube"></span> Some examples of CI/CD tools:</p>
+              <ul>
+                <li><a href="https://travis-ci.org/">Travis</a></li>
+                <li><a href="http://jenkins-ci.org">Jenkins</a></li>
+                <li><a href="https://www.appveyor.com">Appveyor</a></li>
+                <li><a href="https://circleci.com">CircleCI</a></li>
+              </ul>
+            </tip-box>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div>
-    <h2 id="approaches-2">Approaches</h2>
-  </div>
-  <div class="indented-less">
-    <div class="indented-less">
-      <h4 id="review">Review <span class="badge badge-light"><small><small></small></small></span></h4>
-      <div class="indented-less">
-        <div>
-          <p>...</p>
-        </div>
-      </div>
+    <div>
+      <h2 id="approaches-2">Approaches</h2>
     </div>
+    <div class="indented-less"></div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 03:23:08 GMT</small></div>
 </footer>
 </div>
 </body>

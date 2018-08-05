@@ -25,7 +25,7 @@
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
-<div id="app" class="container-fluid">
+<div id="app">
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
@@ -126,151 +126,153 @@
     </div>
   </div>
   <div id="page-content">
-    <div>
-      <navbar placement="top" type="inverse">
-        <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
-        <dropdown text="Nested" class="nav-link">
-          <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
-          <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
-        </dropdown>
-        <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
-        <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-        <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-        <dropdown text="Links" class="nav-link">
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-          <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
-          <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
-          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
-          <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-          <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
-          <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
-        </dropdown>
-        <li slot="right" class="nav-link">
-          <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-          </form>
-        </li>
-      </navbar>
-    </div>
-    <div class="website-content">
-      <p><span style="float:right"><span><a href="usingThisWebsite.html">Using this Website <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
-        </span>
-        </span>
-      </p>
-      <br>
-      <p>
-        <div>
-          <h1 id="cs2103t-software-engineering">CS2103/T Software Engineering <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-          </h1>
-        </div>
-      </p>
-      <div id="main">
-        <p><big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big></p>
-        <img src="/website-base/images/growingPlant.png" width="700">
-        <p class="lead"><span>CS2103/T is an introductory Software Engineering module. It covers roughly <strong>a 50-50 balance of basic SE theory and practice</strong> that a student needs to know before going for SE internships in the industry or taking <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially"><strong>iterative approach</strong></tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch"><strong>brown-field approach</strong> to teaching SE</tooltip>.</span></p>
-        <p>On the theory side, this module is supported by a customized online text book <a href="/website-base/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
-        <p><a href="images/timeline.png"><img src="/website-base/admin/images/timeline.png" width="100%"></a></p>
-        <p>The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project <a href="https://se-edu.github.io/addressbook-level4/">AddressBook-Level4 (AB4)</a> -- a relatively small yet non-trivial
-          (10 KLoC) generic product -- and enhance it into a better product or evolve it into a different product. To help students to tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing
-          size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).</p>
-        <p>Given below is a summary of what the module covers and does not cover <span class="dimmed">(i.e., unticked items)</span>.</p>
-        <div class="table-responsive">
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Topic</th>
-                <th><span style="color:green"><span class="fas fa-check"></span></span> Covered</th>
-                <th><span style="color:red"><span class="fas fa-times"></span></span> Not covered</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Java</td>
-                <td>Used heavily, but not taught</td>
-                <td>syntax <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
-              </tr>
-              <tr>
-                <td>OOP</td>
-                <td>Used in a non-trivial project,
-                  <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
-                </td>
-                <td>basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
-              </tr>
-              <tr>
-                <td>SE tools/practices</td>
-                <td>
-                  <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
-                </td>
-                <td>those specific to start-ups</td>
-              </tr>
-              <tr>
-                <td>Modeling</td>
-                <td>
-                  <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">this Developer Guide of AB4</a>)</td>
-                <td>intensive
-                  <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
-                </td>
-              </tr>
-              <tr>
-                <td>Requirements</td>
-                <td>
-                  <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements</td>
-                <td>rapid prototyping, heavy UI design, designing a product from scratch</td>
-              </tr>
-              <tr>
-                <td>Documentation</td>
-                <td>Documentation targeting end users (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html">example</a>) as well as those targeting developers (<a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html">example</a>)</td>
-                <td>Marketing materials</td>
-              </tr>
-              <tr>
-                <td>Project Management</td>
-                <td>Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely</td>
-                <td>Setting up project infrastructure from scratch</td>
-              </tr>
-              <tr>
-                <td>Testing</td>
-                <td>
-                  <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and
-                  <tooltip content="e.g., acceptance testing">user testing</tooltip>
-                </td>
-                <td>
-                  <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
-                </td>
-              </tr>
-              <tr>
-                <td>Applications domains</td>
-                <td>Cross-platform desktop applications</td>
-                <td>Web programming, Mobile programming, Database programming</td>
-              </tr>
-            </tbody>
-          </table>
-        </div><br>
+    <div id="content-wrapper">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
+          <dropdown text="Nested" class="nav-link">
+            <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
+            <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
+          </dropdown>
+          <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
+          <li><a href="/website-base/se-book-adapted/index.html" target="_blank" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+          <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+            <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+            <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
+          </dropdown>
+          <li slot="right" class="nav-link">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+            </form>
+          </li>
+        </navbar>
+      </div>
+      <div class="website-content">
+        <p><span style="float:right"><span><a href="usingThisWebsite.html">Using this Website <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+          </span>
+          </span>
+        </p>
+        <br>
         <p>
-          <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-tVsNonT" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> **FAQ: What are the differences between CS2103 and CS2103T?**" class="embedding"
-            minimized="" fragment="admin-faq-tVsNonT"></panel>
+          <div>
+            <h1 id="cs2103t-software-engineering">CS2103/T Software Engineering <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+            </h1>
+          </div>
+        </p>
+        <div id="main">
+          <p><big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big></p>
+          <img src="/website-base/images/growingPlant.png" width="700">
+          <p class="lead"><span>CS2103/T is an introductory Software Engineering module. It covers roughly <strong>a 50-50 balance of basic SE theory and practice</strong> that a student needs to know before going for SE internships in the industry or taking <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through each topic sequentially"><strong>iterative approach</strong></tooltip> of going increasingly deeper into SE by exposing students to a series of increasingly bigger software projects. The module is notable as one of the rare SE modules that takes a <tooltip content="getting students to learn SE by workin on existing software, as opposed to the green-field approach of getting students to build something from scratch"><strong>brown-field approach</strong> to teaching SE</tooltip>.</span></p>
+          <p>On the theory side, this module is supported by a customized online text book <a href="/website-base/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
+          <p><a href="images/timeline.png"><img src="/website-base/admin/images/timeline.png" width="100%"></a></p>
+          <p>The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project <a href="https://se-edu.github.io/addressbook-level4/">AddressBook-Level4 (AB4)</a> -- a relatively small yet non-trivial
+            (10 KLoC) generic product -- and enhance it into a better product or evolve it into a different product. To help students to tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing
+            size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).</p>
+          <p>Given below is a summary of what the module covers and does not cover <span class="dimmed">(i.e., unticked items)</span>.</p>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Topic</th>
+                  <th><span style="color:green"><span class="fas fa-check"></span></span> Covered</th>
+                  <th><span style="color:red"><span class="fas fa-times"></span></span> Not covered</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Java</td>
+                  <td>Used heavily, but not taught</td>
+                  <td>syntax <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
+                </tr>
+                <tr>
+                  <td>OOP</td>
+                  <td>Used in a non-trivial project,
+                    <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
+                  </td>
+                  <td>basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
+                </tr>
+                <tr>
+                  <td>SE tools/practices</td>
+                  <td>
+                    <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
+                  </td>
+                  <td>those specific to start-ups</td>
+                </tr>
+                <tr>
+                  <td>Modeling</td>
+                  <td>
+                    <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">this Developer Guide of AB4</a>)</td>
+                  <td>intensive
+                    <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Requirements</td>
+                  <td>
+                    <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements</td>
+                  <td>rapid prototyping, heavy UI design, designing a product from scratch</td>
+                </tr>
+                <tr>
+                  <td>Documentation</td>
+                  <td>Documentation targeting end users (<a href="https://se-edu.github.io/addressbook-level4/UserGuide.html">example</a>) as well as those targeting developers (<a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html">example</a>)</td>
+                  <td>Marketing materials</td>
+                </tr>
+                <tr>
+                  <td>Project Management</td>
+                  <td>Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely</td>
+                  <td>Setting up project infrastructure from scratch</td>
+                </tr>
+                <tr>
+                  <td>Testing</td>
+                  <td>
+                    <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and
+                    <tooltip content="e.g., acceptance testing">user testing</tooltip>
+                  </td>
+                  <td>
+                    <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Applications domains</td>
+                  <td>Cross-platform desktop applications</td>
+                  <td>Web programming, Mobile programming, Database programming</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><br>
+          <p>
+            <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-tVsNonT" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> **FAQ: What are the differences between CS2103 and CS2103T?**" class="embedding"
+              minimized="" fragment="admin-faq-tVsNonT"></panel>
+          </p>
+        </div>
+        <br>
+        <p><span style="float:right"><span><a href="usingThisWebsite.html">Using this Website <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+          </span>
+          </span>
         </p>
       </div>
-      <br>
-      <p><span style="float:right"><span><a href="usingThisWebsite.html">Using this Website <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
-        </span>
-        </span>
-      </p>
     </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 03:23:08 GMT</small></div>
 </footer>
 </div>
 </body>

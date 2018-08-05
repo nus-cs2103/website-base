@@ -25,7 +25,7 @@
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
-<div id="app" class="container-fluid">
+<div id="app">
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
@@ -126,272 +126,275 @@
     </div>
   </div>
   <div id="page-content">
-    <div>
-      <navbar placement="top" type="inverse">
-        <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
-        <dropdown text="Nested" class="nav-link">
-          <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
-          <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
-        </dropdown>
-        <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
-        <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-        <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-        <dropdown text="Links" class="nav-link">
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-          <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
-          <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
-          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
-          <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-          <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
-          <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
-        </dropdown>
-        <li slot="right" class="nav-link">
-          <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-          </form>
-        </li>
-      </navbar>
-    </div>
-    <div class="website-content">
-      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="lectures.html">Lectures</a></span>
-        </span><span style="float:right"><span><a href="instructors.html">Instructors <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
-        </span>
-        </span>
-      </p>
-      <br>
-      <p>
-        <div>
-          <h2 id="tutorials-tutor-role-times-venue">Tutorials <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-              aria-hidden="true"></span></span>
-            </span> <span class="badge badge-pill badge-light ">#tutor role</span> <span class="badge badge-pill badge-light ">#times</span> <span class="badge badge-pill badge-light ">#venue</span></span>
-          </h2>
-        </div>
-      </p>
-      <div id="main">
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div><h3 id="tutorial-timetable">Tutorial Timetable</h3></div></span>
-          <div id="tutorialTimetable">
-            <tip-box>
-              <p>
-                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <mark>Our tutorials start on week 2</mark> (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T)
-                students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.</p>
-              <p>
-                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code> <code>0900</code> and so on.</p>
-            </tip-box>
-            <div class="table-responsive">
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th>Tutorial ID <span class="dimmed">(ID in CORS)</span></th>
-                    <th>Time</th>
-                    <th>Venue</th>
-                    <th>Tutors (<a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">contact details</a>)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W09 <span class="dimmed">(T1)</span></td>
-                    <td><strong>W</strong>ed <strong>09</strong>00</td>
-                    <td>COM1-B103 (ALL<sup>*</sup>)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W10 <span class="dimmed">(T2)</span></td>
-                    <td><strong>W</strong>ed <strong>10</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W11 <span class="dimmed">(T3)</span></td>
-                    <td><strong>W</strong>ed <strong>11</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W13 <span class="dimmed">(T4)</span></td>
-                    <td><strong>W</strong>ed <strong>13</strong>00</td>
-                    <td>COM1-0201 (SR5)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W14 <span class="dimmed">(T5)</span></td>
-                    <td><strong>W</strong>ed <strong>14</strong>00</td>
-                    <td>COM1-0201 (SR5)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CS)</td>
-                    <td>W15 <span class="dimmed">(T6)</span></td>
-                    <td><strong>W</strong>ed <strong>15</strong>00</td>
-                    <td>COM1-0201 (SR5)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T09 <span class="dimmed">(C01)</span></td>
-                    <td><strong>T</strong>hu <strong>09</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T10 <span class="dimmed">(C04)</span></td>
-                    <td><strong>T</strong>hu <strong>10</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T11 <span class="dimmed">(C03)</span></td>
-                    <td><strong>T</strong>hu <strong>11</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>T12 <span class="dimmed">(5)</span></td>
-                    <td><strong>T</strong>hu <strong>12</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>T13 <span class="dimmed">(6)</span></td>
-                    <td><strong>T</strong>hu <strong>13</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>T14 <span class="dimmed">(4)</span></td>
-                    <td><strong>T</strong>hu <strong>14</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T15 <span class="dimmed">(C02)</span></td>
-                    <td><strong>T</strong>hu <strong>15</strong>00</td>
-                    <td>COM1-0210 (SR10)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T16 <span class="dimmed">(C06)</span></td>
-                    <td><strong>T</strong>hu <strong>16</strong>00</td>
-                    <td>COM1-0201 (SR5)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103T (CEG)</td>
-                    <td>T17 <span class="dimmed">(C05)</span></td>
-                    <td><strong>T</strong>hu <strong>17</strong>00</td>
-                    <td>COM1-0210 (SR10)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>F09 <span class="dimmed">(1)</span></td>
-                    <td><strong>F</strong>ri <strong>09</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>F10 <span class="dimmed">(2)</span></td>
-                    <td><strong>F</strong>ri <strong>10</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>CS2103</td>
-                    <td>F11 <span class="dimmed">(3)</span></td>
-                    <td><strong>F</strong>ri <strong>11</strong>00</td>
-                    <td>COM1-B103 (ALL)</td>
-                    <td>TBD</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><span class="dimmed">*ALL: Active Learning Room</span></p>
-          </div>
-        </panel>
-        <panel type="seamless" header="### Tutorial Structure" expanded="">
-          <div id="tutorialStructure">
-            <p><strong>What happens during the tutorial</strong>:</p>
-            <ul>
-              <li>A tutorial group is handled by two tutors. Each tutor will work with two teams.</li>
-              <li>The tutor will direct students to share/discuss evidence of achieving the weekly learning outcomes (LO).</li>
-              <li>If some students have met with difficulties while achieving an LO, the tutor can direct those students to get help from those who have achieved the LO. <strong>The number of LOs that can be covered in the tutorial session depends on how well-prepared you are.</strong></li>
-              <li>The tutor will observe, and give feedback on, how well you are achieving required LOs.</li>
-              <li>Please <mark>bring your laptop to tutorials.</mark> You often need it to show evidence of LOs you achieved. At other times, we ask you to work on project related things with your team members, which too may require the laptop.</li>
-            </ul>
-            <div class="indented-level2">
-              <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-noLaptop" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> FAQ: What if I don't carry around a laptop?" class="embedding" minimized="" fragment="admin-faq-noLaptop"></panel>
-            </div>
-            <br>
-            <p><strong>The role of our tutors</strong> is different from tutors in other modules.</p>
-            <ul>
-              <li><strong>No direct tech help</strong>: Tutors are prohibited from giving technical help. <span class="dimmed">Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.</span></li>
-            </ul>
-            <div class="indented-level2">
-              <panel src="/website-base\admin\appendixD-help._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D: How to get Help in CS2103/T" class="embedding" minimized="" fragment="main"></panel>
-            </div>
-            <br>
-            <ul>
-              <li><strong>No ‘teaching’</strong>: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify
-                doubts under the right circumstances.</li>
-            </ul>
-            <div class="indented-level2">
-              <panel src="/website-base\admin\appendixD-help._include_.html#questions-for-tutros" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D (extract): Questions suitable for tutor" class="embedding" minimized=""
-                fragment="questions-for-tutros"></panel>
-            </div>
-            <br>
-            <ul>
-              <li><strong>No leading from the front</strong>: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give you
-                feedback on how you are doing (or have done) project tasks so that you can improve further.</li>
-            </ul>
-            <p><strong>Timing/venue:</strong></p>
-            <ul>
-              <li>Please refer to the <a href="/website-base/index.html">Schedule page</a> for further details on each tutorial.</li>
-              <li>You are expected to arrive on time. <mark>Punctuality is considered for participation marks.</mark></li>
-              <li>You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is dismissed.</li>
-              <li>Please make sure you <mark>vacate the table 5 minutes before the hour</mark> so that the next group can start on time.</li>
-              <li>In the past many students have suggested to increase the tutorial duration because 1 hour is barely enough to get through all weekly LOs. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to
-                make the best of the one hour available by coming well prepared and starting on time.</li>
-            </ul>
-            <p><strong>Grading:</strong></p>
-            <p>Tutorials are not graded. However, your conduct will be reviewed by team members and the tutor which will determine your participation marks.</p>
-          </div>
-        </panel>
+    <div id="content-wrapper">
+      <div>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
+          <dropdown text="Nested" class="nav-link">
+            <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
+            <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
+          </dropdown>
+          <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
+          <li><a href="/website-base/se-book-adapted/index.html" target="_blank" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+          <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+          <dropdown text="Links" class="nav-link">
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+            <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+            <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
+          </dropdown>
+          <li slot="right" class="nav-link">
+            <form class="navbar-form">
+              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+            </form>
+          </li>
+        </navbar>
       </div>
-      <br>
-      <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="lectures.html">Lectures</a></span>
-        </span><span style="float:right"><span><a href="instructors.html">Instructors <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
-        </span>
-        </span>
-      </p>
+      <div class="website-content">
+        <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="lectures.html">Lectures</a></span>
+          </span><span style="float:right"><span><a href="instructors.html">Instructors <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+          </span>
+          </span>
+        </p>
+        <br>
+        <p>
+          <div>
+            <h2 id="tutorials-tutor-role-times-venue">Tutorials <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span></span>
+              </span> <span class="badge badge-pill badge-light ">#tutor role</span> <span class="badge badge-pill badge-light ">#times</span> <span class="badge badge-pill badge-light ">#venue</span></span>
+            </h2>
+          </div>
+        </p>
+        <div id="main">
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div><h3 id="tutorial-timetable">Tutorial Timetable</h3></div></span>
+            <div id="tutorialTimetable">
+              <tip-box>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <mark>Our tutorials start on week 2</mark> (even before CORS tutorial bidding is over), not in week 3 as other modules do. CS2103 (not CS2103T)
+                  students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.</p>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Our tutorial IDs are different from CORS. Format: <code>W09</code> means <code>Wednesday</code> <code>0900</code> and so on.</p>
+              </tip-box>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Module</th>
+                      <th>Tutorial ID <span class="dimmed">(ID in CORS)</span></th>
+                      <th>Time</th>
+                      <th>Venue</th>
+                      <th>Tutors (<a href="https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true">contact details</a>)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W09 <span class="dimmed">(T1)</span></td>
+                      <td><strong>W</strong>ed <strong>09</strong>00</td>
+                      <td>COM1-B103 (ALL<sup>*</sup>)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W10 <span class="dimmed">(T2)</span></td>
+                      <td><strong>W</strong>ed <strong>10</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W11 <span class="dimmed">(T3)</span></td>
+                      <td><strong>W</strong>ed <strong>11</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W13 <span class="dimmed">(T4)</span></td>
+                      <td><strong>W</strong>ed <strong>13</strong>00</td>
+                      <td>COM1-0201 (SR5)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W14 <span class="dimmed">(T5)</span></td>
+                      <td><strong>W</strong>ed <strong>14</strong>00</td>
+                      <td>COM1-0201 (SR5)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CS)</td>
+                      <td>W15 <span class="dimmed">(T6)</span></td>
+                      <td><strong>W</strong>ed <strong>15</strong>00</td>
+                      <td>COM1-0201 (SR5)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T09 <span class="dimmed">(C01)</span></td>
+                      <td><strong>T</strong>hu <strong>09</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T10 <span class="dimmed">(C04)</span></td>
+                      <td><strong>T</strong>hu <strong>10</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T11 <span class="dimmed">(C03)</span></td>
+                      <td><strong>T</strong>hu <strong>11</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>T12 <span class="dimmed">(5)</span></td>
+                      <td><strong>T</strong>hu <strong>12</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>T13 <span class="dimmed">(6)</span></td>
+                      <td><strong>T</strong>hu <strong>13</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>T14 <span class="dimmed">(4)</span></td>
+                      <td><strong>T</strong>hu <strong>14</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T15 <span class="dimmed">(C02)</span></td>
+                      <td><strong>T</strong>hu <strong>15</strong>00</td>
+                      <td>COM1-0210 (SR10)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T16 <span class="dimmed">(C06)</span></td>
+                      <td><strong>T</strong>hu <strong>16</strong>00</td>
+                      <td>COM1-0201 (SR5)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103T (CEG)</td>
+                      <td>T17 <span class="dimmed">(C05)</span></td>
+                      <td><strong>T</strong>hu <strong>17</strong>00</td>
+                      <td>COM1-0210 (SR10)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>F09 <span class="dimmed">(1)</span></td>
+                      <td><strong>F</strong>ri <strong>09</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>F10 <span class="dimmed">(2)</span></td>
+                      <td><strong>F</strong>ri <strong>10</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                    <tr>
+                      <td>CS2103</td>
+                      <td>F11 <span class="dimmed">(3)</span></td>
+                      <td><strong>F</strong>ri <strong>11</strong>00</td>
+                      <td>COM1-B103 (ALL)</td>
+                      <td>TBD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p><span class="dimmed">*ALL: Active Learning Room</span></p>
+            </div>
+          </panel>
+          <panel type="seamless" header="### Tutorial Structure" expanded="">
+            <div id="tutorialStructure">
+              <p><strong>What happens during the tutorial</strong>:</p>
+              <ul>
+                <li>A tutorial group is handled by two tutors. Each tutor will work with two teams.</li>
+                <li>The tutor will direct students to share/discuss evidence of achieving the weekly learning outcomes (LO).</li>
+                <li>If some students have met with difficulties while achieving an LO, the tutor can direct those students to get help from those who have achieved the LO. <strong>The number of LOs that can be covered in the tutorial session depends on how well-prepared you are.</strong></li>
+                <li>The tutor will observe, and give feedback on, how well you are achieving required LOs.</li>
+                <li>Please <mark>bring your laptop to tutorials.</mark> You often need it to show evidence of LOs you achieved. At other times, we ask you to work on project related things with your team members, which too may require the laptop.</li>
+              </ul>
+              <div class="indented-level2">
+                <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-noLaptop" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> FAQ: What if I don't carry around a laptop?" class="embedding" minimized="" fragment="admin-faq-noLaptop"></panel>
+              </div>
+              <br>
+              <p><strong>The role of our tutors</strong> is different from tutors in other modules.</p>
+              <ul>
+                <li><strong>No direct tech help</strong>: Tutors are prohibited from giving technical help. <span class="dimmed">Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.</span></li>
+              </ul>
+              <div class="indented-level2">
+                <panel src="/website-base\admin\appendixD-help._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D: How to get Help in CS2103/T" class="embedding" minimized="" fragment="main"></panel>
+              </div>
+              <br>
+              <ul>
+                <li><strong>No ‘teaching’</strong>: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify
+                  doubts under the right circumstances.</li>
+              </ul>
+              <div class="indented-level2">
+                <panel src="/website-base\admin\appendixD-help._include_.html#questions-for-tutros" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D (extract): Questions suitable for tutor" class="embedding" minimized=""
+                  fragment="questions-for-tutros"></panel>
+              </div>
+              <br>
+              <ul>
+                <li><strong>No leading from the front</strong>: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give
+                  you feedback on how you are doing (or have done) project tasks so that you can improve further.</li>
+              </ul>
+              <p><strong>Timing/venue:</strong></p>
+              <ul>
+                <li>Please refer to the <a href="/website-base/index.html">Schedule page</a> for further details on each tutorial.</li>
+                <li>You are expected to arrive on time. <mark>Punctuality is considered for participation marks.</mark></li>
+                <li>You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is
+                  dismissed.</li>
+                <li>Please make sure you <mark>vacate the table 5 minutes before the hour</mark> so that the next group can start on time.</li>
+                <li>In the past many students have suggested to increase the tutorial duration because 1 hour is barely enough to get through all weekly LOs. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try
+                  to make the best of the one hour available by coming well prepared and starting on time.</li>
+              </ul>
+              <p><strong>Grading:</strong></p>
+              <p>Tutorials are not graded. However, your conduct will be reviewed by team members and the tutor which will determine your participation marks.</p>
+            </div>
+          </panel>
+        </div>
+        <br>
+        <p><span style="float:left"><span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <a href="lectures.html">Lectures</a></span>
+          </span><span style="float:right"><span><a href="instructors.html">Instructors <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+          </span>
+          </span>
+        </p>
+      </div>
     </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 03:23:08 GMT</small></div>
 </footer>
 </div>
 </body>

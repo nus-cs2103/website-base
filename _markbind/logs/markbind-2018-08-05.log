@@ -1,0 +1,76 @@
+2018-08-05T02:53:24.246Z - info: Website generation started at 10:53:21
+2018-08-05T02:53:29.149Z - info: Building assets...
+2018-08-05T02:53:32.924Z - info: Assets built
+2018-08-05T02:53:32.924Z - info: Generating pages...
+2018-08-05T02:54:49.653Z - info: Pages built
+2018-08-05T02:54:49.731Z - info: Site data built
+2018-08-05T02:54:49.731Z - info: Website generation complete! Total build time: 88.391s
+2018-08-05T02:54:49.743Z - info: Generate Site durationMs=88403
+2018-08-05T02:54:49.766Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-08-05T02:54:49.766Z - info: Press CTRL+C to stop ...
+2018-08-05T02:58:13.995Z - info: Website generation started at 10:58:11
+2018-08-05T02:58:16.271Z - info: Building assets...
+2018-08-05T02:58:19.259Z - info: Assets built
+2018-08-05T02:58:19.260Z - info: Generating pages...
+2018-08-05T02:59:38.210Z - info: Pages built
+2018-08-05T02:59:38.270Z - info: Site data built
+2018-08-05T02:59:38.270Z - info: Website generation complete! Total build time: 86.691s
+2018-08-05T02:59:38.283Z - info: Generate Site durationMs=86704
+2018-08-05T02:59:38.302Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-08-05T02:59:38.302Z - info: Press CTRL+C to stop ...
+2018-08-05T03:06:31.308Z - info: [11:06:31] Reload for file change: C:\repos\nus-cs2103\website-base\common\header-book.md
+2018-08-05T03:06:32.340Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\common\header-book.md
+2018-08-05T03:06:32.356Z - info: Rebuilding 34 pages
+2018-08-05T03:06:56.079Z - info: Pages rebuilt
+2018-08-05T03:06:56.086Z - info: Site data built
+2018-08-05T03:12:04.717Z - info: Website generation started at 11:12:02
+2018-08-05T03:12:07.009Z - info: Building assets...
+2018-08-05T03:12:10.021Z - info: Assets built
+2018-08-05T03:12:10.021Z - info: Generating pages...
+2018-08-05T03:13:17.723Z - info: Pages built
+2018-08-05T03:13:17.802Z - info: Site data built
+2018-08-05T03:13:17.802Z - info: Website generation complete! Total build time: 75.587s
+2018-08-05T03:13:17.802Z - info: Generate Site durationMs=75587
+2018-08-05T03:13:17.833Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-08-05T03:13:17.833Z - info: Press CTRL+C to stop ...
+2018-08-05T03:14:39.434Z - info: [11:14:39] Reload for file change: C:\repos\nus-cs2103\website-base\common\header-book.md
+2018-08-05T03:14:40.454Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\common\header-book.md
+2018-08-05T03:14:40.485Z - info: Rebuilding 34 pages
+2018-08-05T03:14:50.233Z - info: Pages rebuilt
+2018-08-05T03:14:50.240Z - info: Site data built
+2018-08-05T03:16:06.677Z - info: [11:16:06] Reload for file deletion: C:\repos\nus-cs2103\website-base\se-book-adapted\index-flat.md
+2018-08-05T03:16:07.685Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\se-book-adapted\index-flat.md
+2018-08-05T03:16:07.687Z - info: Rebuilding 1 pages
+2018-08-05T03:16:07.691Z - error:  Error: ENOENT: no such file or directory, open 'C:\repos\nus-cs2103\website-base\se-book-adapted\index-flat.md'
+2018-08-05T03:16:07.692Z - warn:  Error: Error while generating C:\repos\nus-cs2103\website-base\se-book-adapted\index-flat.md
+    at processingFiles.push.page.generate.catch (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\Site.js:593:33)
+    at tryCatcher (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+2018-08-05T03:16:10.124Z - error: Error while generating C:\repos\nus-cs2103\website-base\se-book-adapted\index-flat.md
+2018-08-05T03:16:53.789Z - info: [11:16:53] Reload for file change: C:\repos\nus-cs2103\website-base\se-book-adapted\index.md
+2018-08-05T03:16:53.789Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103\website-base\se-book-adapted\index.md
+2018-08-05T03:16:53.789Z - info: Rebuilding 1 pages
+2018-08-05T03:16:54.381Z - info: Pages rebuilt
+2018-08-05T03:16:54.381Z - info: Site data built
+2018-08-05T03:16:54.396Z - error: Error while generating C:\repos\nus-cs2103\website-base\se-book-adapted\index-flat.md
+2018-08-05T03:17:02.055Z - info: Website generation started at 11:17:02
+2018-08-05T03:17:04.483Z - info: Building assets...
+2018-08-05T03:17:07.589Z - info: Assets built
+2018-08-05T03:17:07.590Z - info: Generating pages...
+2018-08-05T03:18:22.706Z - info: Pages built
+2018-08-05T03:18:22.787Z - info: Site data built
+2018-08-05T03:18:22.787Z - info: Website generation complete! Total build time: 80.759s
+2018-08-05T03:18:22.800Z - info: Generate Site durationMs=80772
+2018-08-05T03:18:22.819Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
+2018-08-05T03:18:22.819Z - info: Press CTRL+C to stop ...
+2018-08-05T03:23:03.528Z - info: Website generation started at 11:23:01
+2018-08-05T03:23:05.860Z - info: Building assets...

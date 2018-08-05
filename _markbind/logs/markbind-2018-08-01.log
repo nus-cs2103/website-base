@@ -1441,3 +1441,8 @@ TypeError: Cannot read property 'toString' of null
 2018-08-01T15:36:08.190Z - info: Generate Site durationMs=99043
 2018-08-01T15:36:08.213Z - info: Serving "C:\repos\nus-cs2103\website-base\_site" at http://127.0.0.1:8080
 2018-08-01T15:36:08.213Z - info: Press CTRL+C to stop ...
+2018-08-01T15:51:05.864Z - info: Pages built
+2018-08-01T15:51:05.926Z - info: Site data built
+2018-08-01T15:51:05.926Z - info: Build success!
+2018-08-01T15:51:05.926Z - info: Generate Site durationMs=75229
+2018-08-01T15:51:54.475Z - info: Deployed!

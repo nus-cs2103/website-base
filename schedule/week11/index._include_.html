@@ -2559,78 +2559,80 @@ studentList.addUi(statusUi);
   <span slot="header" class="card-title activity-type"><span class="fas fa-chalkboard-teacher"></span> Tutorial 11</span>
   <div class="indented">
     <div>
-      <p><strong>Show evidence of achieving v1.3 team/individual milestone</strong></p>
-      <ul>
-        <li>[One member] Show the v1.3 release, the milestone, and collated code on GitHub</li>
-        <li>[Each member] Demo your contribution for v1.3 using the jar file</li>
-      </ul>
-      <p><strong>Questions to discuss during tutorial:</strong></p>
-      <p><mark>While the tutor is checking team/individual milestones, divide these questions among team members and get ready to answer them</mark>.</p>
-      <ol>
-        <li>
-          <p>How does an <em>OO Domain Model</em> differ from a class diagram?</p>
-        </li>
-        <li>
-          <p>Draw an OODM for the description below, about how modules work in a certain university:</p>
-          <tip-box>
-            <p>A module has a name and a code. A module is taken by 10 or more students, and taught by one instructor. A module can have a number tasks which can be assignments or tests. Some assignments are compulsory. When a student attempts a task, a
-              grade and an optional feedback is given.</p>
-          </tip-box>
-        </li>
-        <li>
-          <p>Apply heuristics for combining multiple test inputs to the following test cases, assuming all 6 values in the table need to be tested. ✅ indicates valid values and ❗️ indicates invalid values. Point out where the heuristics are contradicted
-            and how to improve the test cases.</p>
-          <tip-box>
-            <p>SUT: <code>foo(x,y)</code></p>
-            <div class="table-responsive">
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Test case</th>
-                    <th>x</th>
-                    <th>y</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>TC1</td>
-                    <td>✅ x1-valid</td>
-                    <td>✅ y1-valid</td>
-                  </tr>
-                  <tr>
-                    <td>TC2</td>
-                    <td>✅ x2-valid</td>
-                    <td>❗️ y2-invalid</td>
-                  </tr>
-                  <tr>
-                    <td>TC3</td>
-                    <td>❗️ x3-invalid</td>
-                    <td>❗️ y3-invalid</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </tip-box>
-        </li>
-        <li>
-          <p>Distinguish between <em>sequential</em> and <em>iterative</em> processes. Which one are we using in the project?</p>
-        </li>
-        <li>
-          <p>Distinguish between <em>breadth-first</em> and <em>depth-first</em> iterative processes using your project as an example.</p>
-        </li>
-        <li>
-          <p>Describe how <em>agile process models</em> differ from traditional process models.</p>
-        </li>
-        <li>
-          <p>Describe some distinguishing features of Scrum. Relate those features to your project. <span class="dimmed"> i.e. are they applicable? are you doing something similar?</span></p>
-        </li>
-        <li>
-          <p>When do you use <em>MVC</em> pattern? Do we have MVC in AB4?</p>
-        </li>
-        <li>
-          <p>When do you use the <em>Observer</em> pattern? Do we have the Observer pattern in AB4?</p>
-        </li>
-      </ol>
+      <div>
+        <p><strong>Show evidence of achieving v1.3 team/individual milestone</strong></p>
+        <ul>
+          <li>[One member] Show the v1.3 release, the milestone, and collated code on GitHub</li>
+          <li>[Each member] Demo your contribution for v1.3 using the jar file</li>
+        </ul>
+        <p><strong>Questions to discuss during tutorial:</strong></p>
+        <p><mark>While the tutor is checking team/individual milestones, divide these questions among team members and get ready to answer them</mark>.</p>
+        <ol>
+          <li>
+            <p>How does an <em>OO Domain Model</em> differ from a class diagram?</p>
+          </li>
+          <li>
+            <p>Draw an OODM for the description below, about how modules work in a certain university:</p>
+            <tip-box>
+              <p>A module has a name and a code. A module is taken by 10 or more students, and taught by one instructor. A module can have a number tasks which can be assignments or tests. Some assignments are compulsory. When a student attempts a task,
+                a grade and an optional feedback is given.</p>
+            </tip-box>
+          </li>
+          <li>
+            <p>Apply heuristics for combining multiple test inputs to the following test cases, assuming all 6 values in the table need to be tested. ✅ indicates valid values and ❗️ indicates invalid values. Point out where the heuristics are contradicted
+              and how to improve the test cases.</p>
+            <tip-box>
+              <p>SUT: <code>foo(x,y)</code></p>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Test case</th>
+                      <th>x</th>
+                      <th>y</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>TC1</td>
+                      <td>✅ x1-valid</td>
+                      <td>✅ y1-valid</td>
+                    </tr>
+                    <tr>
+                      <td>TC2</td>
+                      <td>✅ x2-valid</td>
+                      <td>❗️ y2-invalid</td>
+                    </tr>
+                    <tr>
+                      <td>TC3</td>
+                      <td>❗️ x3-invalid</td>
+                      <td>❗️ y3-invalid</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </tip-box>
+          </li>
+          <li>
+            <p>Distinguish between <em>sequential</em> and <em>iterative</em> processes. Which one are we using in the project?</p>
+          </li>
+          <li>
+            <p>Distinguish between <em>breadth-first</em> and <em>depth-first</em> iterative processes using your project as an example.</p>
+          </li>
+          <li>
+            <p>Describe how <em>agile process models</em> differ from traditional process models.</p>
+          </li>
+          <li>
+            <p>Describe some distinguishing features of Scrum. Relate those features to your project. <span class="dimmed"> i.e. are they applicable? are you doing something similar?</span></p>
+          </li>
+          <li>
+            <p>When do you use <em>MVC</em> pattern? Do we have MVC in AB4?</p>
+          </li>
+          <li>
+            <p>When do you use the <em>Observer</em> pattern? Do we have the Observer pattern in AB4?</p>
+          </li>
+        </ol>
+      </div>
       <br>
       <panel type="seamless" header="##### Evidence for weekly LOs %%(for reference)%%">
         <panel type="seamless" expanded="">

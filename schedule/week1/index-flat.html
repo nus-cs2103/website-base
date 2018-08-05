@@ -25,255 +25,258 @@
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
-<div id="app" class="container-fluid">
-    <div>
-  <navbar placement="top" type="inverse">
-    <a slot="brand" href="/website-base/index-flat.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
-    <dropdown text="Flat" class="nav-link">
-      <li><a href="/website-base/index-flat.html" class="dropdown-item"> <span class="fas fa-check"></span> Flat (current format)</a></li>
-      <li><a href="/website-base/index.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Nested</a></li>
-    </dropdown>
-    <li><a href="/website-base/index-flat.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
-    <li><a href="/website-base/se-book-adapted/index-flat.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-    <li><a href="/website-base/admin/index-flat.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-    <dropdown text="Links" class="nav-link">
-      <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-      <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-      <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-      <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
-      <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
-      <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
-      <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-      <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-      <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-      <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-      <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
-      <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
-    </dropdown>
-  </navbar>
-</div>
-<div class="website-content" id="main">
-  <h2 id="week-1-aug-13">Week 1 [Aug 13]</h2>
-  <div class="indented">
-    <h3 id="todo"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</h3>
+<div id="app">
+    <div id="content-wrapper">
+  <div>
+    <navbar placement="top" type="inverse">
+      <a slot="brand" href="/website-base/index-flat.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
+      <dropdown text="Flat" class="nav-link">
+        <li><a href="/website-base/index-flat.html" class="dropdown-item"> <span class="fas fa-check"></span> Flat (current format)</a></li>
+        <li><a href="/website-base/index.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Nested</a></li>
+      </dropdown>
+      <li><a href="/website-base/index-flat.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
+      <li><a href="/website-base/se-book-adapted/index.html" target="_blank" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+      <li><a href="/website-base/admin/index-flat.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+      <dropdown text="Links" class="nav-link">
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+        <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+        <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
+        <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+        <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+        <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+        <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
+      </dropdown>
+    </navbar>
+  </div>
+  <div class="website-content" id="main">
+    <h2 id="week-1-aug-13">Week 1 [Aug 13]</h2>
     <div class="indented">
-      <div>
-        <p><span class="dimmed">Given below are some preparatory tasks you can do as you wait for the module to start:</span></p>
-        <p><span class="activity-desc">Getting ready for the module:<span></span></span>
-        </p>
-        <div class="indented">
+      <h3 id="todo"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Todo</h3>
+      <div class="indented">
+        <div>
+          <p><span class="dimmed">Given below are some preparatory tasks you can do as you wait for the module to start:</span></p>
+          <p><span class="activity-desc">Getting ready for the module:<span></span></span>
+          </p>
+          <div class="indented">
 
-          <panel no-close="">
-            <span slot="header" class="card-title">Learn how to form project teams <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            <p><mark>Delay forming teams</mark> until your place in a tutorial is confirmed.</p>
-            <p>
-              <panel type="danger" src="/website-base\admin\project-teams._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Team Forming :star:" expanded="" fragment="main"></panel>
-            </p>
-          </panel>
-
-          <panel no-close="">
-            <span slot="header" class="card-title">[Exchange students only] Know how to sign up for tutorials <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            <p>Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your
-              appeal on ORATUT, we can allocate you to the tutorial slot.<br></p>
-          </panel>
-
-          <panel no-close="">
-            <span slot="header" class="card-title">Create a GitHub account <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            <panel header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E (Using GitHub) → Creating a GitHub account" expanded="">
-              <div type="danger">
-                <p>Create a personal GitHub account if you don't have one yet.</p>
-                <ol>
-                  <li>
-                    <p>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</p>
-                  </li>
-                  <li>
-                    <p>Strongly recommended: Complete your GitHub profile. In particular,</p>
-                    <ul>
-                      <li>Specify your full name.</li>
-                      <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
-                    </ul>
-                    <panel type="seamless" header="%%Why am I being pushed to complete my GitHub profile?%%">
-                      <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub
-                        account just for the module.</p>
-                    </panel>
-                    <panel src="/website-base\admin\project-deliverables._include_.html#profile-photo" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo" minimized="" fragment="profile-photo"></panel>
-                  </li>
-                </ol>
-              </div>
+            <panel no-close="">
+              <span slot="header" class="card-title">Learn how to form project teams <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              <p><mark>Delay forming teams</mark> until your place in a tutorial is confirmed.</p>
+              <p>
+                <panel type="danger" src="/website-base\admin\project-teams._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Team Forming :star:" expanded="" fragment="main"></panel>
+              </p>
             </panel>
-          </panel>
 
-          <panel no-close="">
-            <span slot="header" class="card-title"><span>Submit the pre-module survey <mark>(Compulsory)</mark> ⏰</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            <p><em>Pre-Module Survey</em> will be available on IVLE <strong>Week 1 Monday - Friday 2359 ⏰</strong>. <span class="dimmed">We need all of you to submit it because it tells us some important information about you, especially your GitHub username.</span></p>
-          </panel>
-
-          <panel no-close="">
-            <span slot="header" class="card-title">Join the Slack channel <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <panel header="%%**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tools → Communication**%%" expanded="">
-              <div type="danger">
-                <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker) to
-                  practice how to communicate technical things in written form.</p>
-                <ul>
-                  <li>Instead of the IVLE forum, we encourage you to <mark>post your questions/suggestions in this <a href="https://github.com/nus-cs2103-AY1718S2/forum/issues">github/nus-cs2103-AY1718S2/forum</a></mark>.</li>
-                  <li>Alternatively, you can post in our slack channel <a href="https://nus-cs2103-ay1718s2.slack.com">https://nus-cs2103-ay1718s2.slack.com</a>. We encourage you all to <mark>join the slack channel</mark> (you'll need to use an email address
-                    ending in <code>@nus.edu.sg</code>, <code>@comp.nus.edu.sg</code>, <code>@u.nus.edu.sg</code> or <code>@u.nus.edu</code> to join this channel).</li>
-                  <li>Note that slack is useful for quick chats while issue tracker is useful for longer-running conversations.</li>
-                  <li>You are encouraged to use channels with a wider audience (common channel in slack, GitHub issue tracker) for module-related communication as much as possible, rather than private channels such as private slack/FB messages or direct emails.
-                    <span class="dimmed">Rationale: more classmates can benefit from the discussions</span>.</li>
-                </ul>
-              </div>
+            <panel no-close="">
+              <span slot="header" class="card-title">[Exchange students only] Know how to sign up for tutorials <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              <p>Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your
+                appeal on ORATUT, we can allocate you to the tutorial slot.<br></p>
             </panel>
-          </panel>
 
-          <panel no-close="">
-            <span slot="header" class="card-title">Prepare to meet module expectations <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-              aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <panel header="%%**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Module Expectations**%%" expanded="">
-              <div type="danger">
-                <h3 id="prior-knowledge-java-and-oop">Prior Knowledge: Java and OOP</h3>
-                <p>This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills.</p>
-                <p>In particular, you may want to <strong>have a look at the new Java 8 features</strong> such as <em>streams</em>, <em>lambdas</em>, <em>Optionals</em>, that may not have been covered in previous Java modules.</p>
-                <p>CS2103 students: <mark>This module assumes a reasonable prior knowledge of Java and OOP</mark> because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching
-                  to CS2113 (Software Engineering &amp; Object-Oriented Programming) instead.</p>
-                <h3 id="workload">Workload</h3>
-                <p>Given 60% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its peer modules</strong> <span class="dimmed">(e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program)</span>.</p>
-                <ul>
-                  <li>Note that the <strong>module contains more things than a typical students can do</strong>, in order to provide enough things for even the strongest students to learn as much as they wish to.</li>
-                  <li>This means it is <mark><strong>perfectly OK if you don't have time to learn everything the module offers</strong></mark>. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.</li>
-                  <li>We have provided a star rating system to guide you when prioritizing which things to do.</li>
-                </ul>
-                <div id="starRatingSystem">
-                  <h4 id="star-rating-system">Star rating system</h4>
-                  <div class="indented">
-                    <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
-                    </p>
-                    <p><strong>Star ratings for Learning Outcomes</strong> (and text book sections):</p>
-                    <ul>
-                      <li>
-                        <p><strong>One-star LOs</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The LOs you need to achieve just to keep up with the module. We recommend you to
-                          <mark>achieve these LOs if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</p>
-                      </li>
-                      <li>
-                        <p><strong>Two-stars LOs</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                          </span>: Can get you up to a <strong>B+</strong>.</p>
-                      </li>
-                      <li>
-                        <p><strong>Three-stars LOs</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                            aria-hidden="true"></span></span>: Can get you up to an <strong>A</strong>.</p>
-                      </li>
-                      <li>
-                        <p><strong>Four-stars LOs</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                            aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive
-                          entry requirements (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star LOs are not examinable</mark>. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</p>
-                      </li>
-                      <li>
-                        <p>LOs marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
-                            aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                          <span
-                            class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+            <panel no-close="">
+              <span slot="header" class="card-title">Create a GitHub account <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              <panel header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E (Using GitHub) → Creating a GitHub account" expanded="">
+                <div type="danger">
+                  <p>Create a personal GitHub account if you don't have one yet.</p>
+                  <ol>
+                    <li>
+                      <p>You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts.</p>
+                    </li>
+                    <li>
+                      <p>Strongly recommended: Complete your GitHub profile. In particular,</p>
+                      <ul>
+                        <li>Specify your full name.</li>
+                        <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
+                      </ul>
+                      <panel type="seamless" header="%%Why am I being pushed to complete my GitHub profile?%%">
+                        <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub
+                          account just for the module.</p>
+                      </panel>
+                      <panel src="/website-base\admin\project-deliverables._include_.html#profile-photo" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo" minimized="" fragment="profile-photo"></panel>
+                    </li>
+                  </ol>
+                </div>
+              </panel>
+            </panel>
+
+            <panel no-close="">
+              <span slot="header" class="card-title"><span>Submit the pre-module survey <mark>(Compulsory)</mark> ⏰</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              <p><em>Pre-Module Survey</em> will be available on IVLE <strong>Week 1 Monday - Friday 2359 ⏰</strong>. <span class="dimmed">We need all of you to submit it because it tells us some important information about you, especially your GitHub username.</span></p>
+            </panel>
+
+            <panel no-close="">
+              <span slot="header" class="card-title">Join the Slack channel <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <panel header="%%**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Tools → Communication**%%" expanded="">
+                <div type="danger">
+                  <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker) to
+                    practice how to communicate technical things in written form.</p>
+                  <ul>
+                    <li>Instead of the IVLE forum, we encourage you to <mark>post your questions/suggestions in this <a href="https://github.com/nus-cs2103-AY1718S2/forum/issues">github/nus-cs2103-AY1718S2/forum</a></mark>.</li>
+                    <li>Alternatively, you can post in our slack channel <a href="https://nus-cs2103-ay1718s2.slack.com">https://nus-cs2103-ay1718s2.slack.com</a>. We encourage you all to <mark>join the slack channel</mark> (you'll need to use an email address
+                      ending in <code>@nus.edu.sg</code>, <code>@comp.nus.edu.sg</code>, <code>@u.nus.edu.sg</code> or <code>@u.nus.edu</code> to join this channel).</li>
+                    <li>Note that slack is useful for quick chats while issue tracker is useful for longer-running conversations.</li>
+                    <li>You are encouraged to use channels with a wider audience (common channel in slack, GitHub issue tracker) for module-related communication as much as possible, rather than private channels such as private slack/FB messages or direct
+                      emails. <span class="dimmed">Rationale: more classmates can benefit from the discussions</span>.</li>
+                  </ul>
+                </div>
+              </panel>
+            </panel>
+
+            <panel no-close="">
+              <span slot="header" class="card-title">Prepare to meet module expectations <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <panel header="%%**Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Module Expectations**%%" expanded="">
+                <div type="danger">
+                  <h3 id="prior-knowledge-java-and-oop">Prior Knowledge: Java and OOP</h3>
+                  <p>This module requires you to write Java code almost every week, staring from the very first week. If your Java skills are shaky, do brush up your Java programming skills.</p>
+                  <p>In particular, you may want to <strong>have a look at the new Java 8 features</strong> such as <em>streams</em>, <em>lambdas</em>, <em>Optionals</em>, that may not have been covered in previous Java modules.</p>
+                  <p>CS2103 students: <mark>This module assumes a reasonable prior knowledge of Java and OOP</mark> because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching
+                    to CS2113 (Software Engineering &amp; Object-Oriented Programming) instead.</p>
+                  <h3 id="workload">Workload</h3>
+                  <p>Given 60% of this module is based on CA, it can appear to be <em>heavy</em>. However, <strong>it is not expected that you will spend more time on this module than its peer modules</strong> <span class="dimmed">(e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program)</span>.</p>
+                  <ul>
+                    <li>Note that the <strong>module contains more things than a typical students can do</strong>, in order to provide enough things for even the strongest students to learn as much as they wish to.</li>
+                    <li>This means it is <mark><strong>perfectly OK if you don't have time to learn everything the module offers</strong></mark>. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.</li>
+                    <li>We have provided a star rating system to guide you when prioritizing which things to do.</li>
+                  </ul>
+                  <div id="starRatingSystem">
+                    <h4 id="star-rating-system">Star rating system</h4>
+                    <div class="indented">
+                      <p class="lead"> Start with things that are rated one-star and progress to things with more stars. Things rated four stars are optional.
+                      </p>
+                      <p><strong>Star ratings for Learning Outcomes</strong> (and text book sections):</p>
+                      <ul>
+                        <li>
+                          <p><strong>One-star LOs</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: The LOs you need to achieve just to keep up with the module. We recommend you
+                            to <mark>achieve these LOs if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</p>
+                        </li>
+                        <li>
+                          <p><strong>Two-stars LOs</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                            </span>: Can get you up to a <strong>B+</strong>.</p>
+                        </li>
+                        <li>
+                          <p><strong>Three-stars LOs</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                              aria-hidden="true"></span></span>: Can get you up to an <strong>A</strong>.</p>
+                        </li>
+                        <li>
+                          <p><strong>Four-stars LOs</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                              aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>: Can be useful for getting an <strong>A+</strong>, tutors positions, and getting into downstream SE modules that have competitive
+                            entry requirements (e.g., CS3281&amp;2, CS3217, CS3216). <mark>Four-star LOs are not examinable</mark>. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)</p>
+                        </li>
+                        <li>
+                          <p>LOs marked with two <span class="glyphicon glyphicon-education" aria-hidden="true"></span> icons e.g., <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
                             <span
-                              class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                              class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+                                aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
                               <span
-                                class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                                  aria-hidden="true"></span></span> are relevant LOs you are expected have achieved in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar
-                                to the star rating system above i.e., one-star prerequisite LOs are the most basic and the most important. four-star pre-requisite LOs can be ignored without affecting CAP.</p>
-                      </li>
-                    </ul>
-                    <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
-                    <ul>
-                      <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark>                        without affecting your ability to follow the module.</li>
-                    </ul>
+                                class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                                <span
+                                  class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                                    aria-hidden="true"></span></span> are relevant LOs you are expected have achieved in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar
+                                  to the star rating system above i.e., one-star prerequisite LOs are the most basic and the most important. four-star pre-requisite LOs can be ignored without affecting CAP.</p>
+                        </li>
+                      </ul>
+                      <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
+                      <ul>
+                        <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark>                          without affecting your ability to follow the module.</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </panel>
             </panel>
-          </panel>
+          </div>
+          <br>
+          <p><span class="dimmed">Given below are some module <em>admin info</em> to read around this time:</span></p>
+          <p></p>
         </div>
-        <br>
-        <p><span class="dimmed">Given below are some module <em>admin info</em> to read around this time:</span></p>
+        <p><span class="activity-desc">Admin info to read:<span></span></span>
+        </p>
+        <div class="indented">
+          <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-whereIsEverything">
+            <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Where is everything? <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+          </panel>
+          <p></p>
+          <panel src="/website-base\admin\programmingLanguages._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+            <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Programming Language <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              </span>
+          </panel>
+          <p></p>
+          <panel src="/website-base\admin\textbooks._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+            <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Text Books <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              </span>
+          </panel>
+          <p></p>
+          <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-tVsNonT" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-tVsNonT">
+            <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → What are the differences between the T and the non-T version of the module?
+            <span
+              class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+          </panel>
+          <p></p>
+          <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-highWorkload" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-highWorkload">
+            <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Why the workload is so high? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+          </panel>
+          <p></p>
+          <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-aPlus" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-aPlus">
+            <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → What are the extra requirements to get an A+? <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+          </panel>
+          <p></p>
+        </div>
         <p></p>
       </div>
-      <p><span class="activity-desc">Admin info to read:<span></span></span>
-      </p>
+      <h3 id="tutorial-1"><span class="fas fa-chalkboard-teacher"></span> Tutorial 1</h3>
       <div class="indented">
-        <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-whereIsEverything" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-whereIsEverything">
-          <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Where is everything? <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          </span>
-          </span>
-        </panel>
-        <p></p>
-        <panel src="/website-base\admin\programmingLanguages._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
-          <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Programming Language <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </span>
-            </span>
-            </span>
-            </span>
-        </panel>
-        <p></p>
-        <panel src="/website-base\admin\textbooks._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
-          <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Text Books <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </span>
-            </span>
-            </span>
-            </span>
-        </panel>
-        <p></p>
-        <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-tVsNonT" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-tVsNonT">
-          <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → What are the differences between the T and the non-T version of the module?
-          <span
-            class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-        </panel>
-        <p></p>
-        <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-highWorkload" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-highWorkload">
-          <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Why the workload is so high? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-        </panel>
-        <p></p>
-        <panel src="/website-base\admin\appendixC-faq._include_.html#admin-faq-aPlus" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-aPlus">
-          <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → What are the extra requirements to get an A+? <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </span>
-            </span>
-        </panel>
-        <p></p>
+        <div>
+          <p>Note: We use <code>Tutorial 1</code> to mean <code>the tutorial in week 1</code>.<br>
+            <strong>No tutorial in week 1.</strong></p>
+        </div>
       </div>
-      <p></p>
-    </div>
-    <h3 id="tutorial-1"><span class="fas fa-chalkboard-teacher"></span> Tutorial 1</h3>
-    <div class="indented">
-      <div>
-        <p>Note: We use <code>Tutorial 1</code> to mean <code>the tutorial in week 1</code>.<br>
-          <strong>No tutorial in week 1.</strong></p>
-      </div>
-    </div>
-    <h3 id="lecture-1"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 1</h3>
-    <div class="indented">
-      <div>
-        <p><mark>This lecture is compulsory</mark> to attend.</p>
-        <p><strong>Slides</strong>: [<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L1P1.%20Module%20Intro.pptx">Part 1</a>][<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L1P2.%20RCS,%20IDEs,%20CLI%20testing.pptx">Part 2</a>]</p>
+      <h3 id="lecture-1"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 1</h3>
+      <div class="indented">
+        <div>
+          <p><mark>This lecture is compulsory</mark> to attend.</p>
+          <p><strong>Slides</strong>: [<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L1P1.%20Module%20Intro.pptx">Part 1</a>][<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L1P2.%20RCS,%20IDEs,%20CLI%20testing.pptx">Part 2</a>]</p>
+        </div>
       </div>
     </div>
   </div>
@@ -281,7 +284,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 03:23:08 GMT</small></div>
 </footer>
 </div>
 </body>

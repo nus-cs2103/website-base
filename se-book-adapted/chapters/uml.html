@@ -24,7 +24,7 @@
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
-<div id="app" class="container-fluid">
+<div id="app">
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
@@ -153,108 +153,86 @@
     </div>
   </div>
   <div id="page-content">
-    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-    <div class="website-content">
-      <div>
-        <navbar placement="top" type="inverse">
-          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
-          <dropdown text="Nested" class="nav-link">
-            <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
-            <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
-          </dropdown>
-          <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
-          <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-          <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-          <dropdown text="Links" class="nav-link">
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-            <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
-            <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
-            <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
-          </dropdown>
-          <li slot="right" class="nav-link">
-            <form class="navbar-form">
-              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-            </form>
-          </li>
-        </navbar>
-      </div>
-      <p><span class="dimmed"><strong><span></span></strong>
-        </span>
-      </p>
-      <div id="title">
+    <div id="content-wrapper">
+      <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+      <div class="website-content">
         <div>
-          <h1 id="uml">UML</h1>
+          <navbar placement="top" type="inverse">
+            <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span><span class="text-white">Textbook: <strong>Software Engineering for Self-Directed Learners</strong></span> <span class="badge badge-pill badge-success">CS2103/T edition - 2018</span></span>
+            <li slot="right" class="nav-link">
+              <form class="navbar-form">
+                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+              </form>
+            </li>
+          </navbar>
         </div>
-      </div>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
+        <p><span class="dimmed"><strong><span></span></strong>
+          </span>
+        </p>
+        <div id="title">
+          <div>
+            <h1 id="uml">UML</h1>
+          </div>
+        </div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
 <h2 id="class-diagrams">Class Diagrams</h2></div></span>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="introduction">Introduction</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/identify class diagrams</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution.</strong> These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> An example class diagram:</p>
-                  <img src="/website-base/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></tip-box>
-              </div>
-              <div></div>
-            </div>
-          </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
-<h3 id="classes">Classes</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can draw UML classes</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p>The basic UML notations used to represent a <em>class</em>:<br></p>
-                <img src="/website-base/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="130">
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/identify class diagrams</span>
+                </span>
+                </span>
+                </span>
                 <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> A <code>Table</code> class shown in UML notation:</p>
-                  <img src="/website-base/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
+                <div>
+                  <p><strong>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution.</strong> These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> An example class diagram:</p>
+                    <img src="/website-base/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></tip-box>
+                </div>
+                <div></div>
+              </div>
+            </panel>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
+<h3 id="classes">Classes</h3></div></span>
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can draw UML classes</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p>The basic UML notations used to represent a <em>class</em>:<br></p>
+                  <img src="/website-base/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="130">
                   <p></p>
-                  <panel type="seamless" header="The equivalent code">
-                    <table>
-                      <tr>
-                      
-                        <td>
-                          <p>Java <span class="fas fa-arrow-down"></span></p>
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> A <code>Table</code> class shown in UML notation:</p>
+                    <img src="/website-base/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
+                    <p></p>
+                    <panel type="seamless" header="The equivalent code">
+                      <table>
+                        <tr>
+                        
+                          <td>
+                            <p>Java <span class="fas fa-arrow-down"></span></p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
     
     Integer number;
     Chair[] chairs = <span class="hljs-keyword">null</span>;
@@ -268,14 +246,14 @@
     }
 }
 </code></pre>
-                          <p></p>
-                        </td>
-                      
-                        <td valign="bottom">  <br><br></td>
-                      
-                        <td valign="bottom">
-                          <p>Python <span class="fas fa-arrow-down"></span></p>
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
+                            <p></p>
+                          </td>
+                        
+                          <td valign="bottom">  <br><br></td>
+                        
+                          <td valign="bottom">
+                            <p>Python <span class="fas fa-arrow-down"></span></p>
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
     
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.number = <span class="hljs-number">0</span>
@@ -289,101 +267,101 @@
     <span class="hljs-comment"># ...</span>
     
 </code></pre>
-                          <p></p>
-                        </td>
-                      </tr>
-                    </table>
-                  </panel>
-                </tip-box>
-                <p><strong>The 'Operations' compartment and/or the 'Attributes' compartment may be omitted</strong> if such details are not important for the task at hand. 'Attributes' always appear above the 'Operations' compartment. All operations should
-                  be in one compartment rather than each operation in a separate compartment. Same goes for attributes.</p>
-                <tip-box>
-                  <img src="/website-base/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></tip-box>
-                <p><strong>The <em>visibility</em> of attributes and operations is used to indicate the level of access allowed for each attribute or operation.</strong> The types of visibility and their exact meanings depend on the programming language
-                  used. Here are some common visibilities and how they are indicated in a class diagram:</p>
-                <ul>
-                  <li><code>+</code> : public</li>
-                  <li><code>-</code> : private</li>
-                  <li><code>#</code> : protected</li>
-                  <li><code>~</code> : package private</li>
-                </ul>
-                <panel type="seamless" header="How visibilities map to programming language features">
-                  <div class="table-responsive">
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>visibility</th>
-                          <th>Java</th>
-                          <th>Python</th>
+                            <p></p>
+                          </td>
                         </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><code>-</code> private</td>
-                          <td><code>private</code></td>
-                          <td>at least two leading underscores (and at most one trailing underscores) in the name</td>
-                        </tr>
-                        <tr>
-                          <td><code>#</code> protected</td>
-                          <td><code>protected</code></td>
-                          <td>one leading underscore in the name</td>
-                        </tr>
-                        <tr>
-                          <td><code>+</code> public</td>
-                          <td><code>public</code></td>
-                          <td>all other cases</td>
-                        </tr>
-                        <tr>
-                          <td><code>~</code> package private</td>
-                          <td>default visibility</td>
-                          <td>not applicable</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <p></p>
-                </panel>
-                <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> <code>Table</code> class with visibilities shown:</p>
-                  <img src="/website-base/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div>
-                <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which classes are correct?">
-                        <question>
-                          <p>Which of these follow the correct UML notation?</p>
-                          <img src="/website-base/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
-                          <p></p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 1</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 2</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 3</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 4</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 5</li>
-                          </ul>
-                          <div slot="answer">
-                            <ol>
-                              <li>Incorrect : <em>Attributes</em> compartment should be above the <em>Methods</em> compartment.</li>
-                              <li>Incorrect : All attributes should be inside the same compartment.</li>
-                              <li>Correct</li>
-                              <li>Correct : Both <em>Attributes</em> and <em>Methods</em> compartments can be omitted.</li>
-                              <li>Correct : The <em>Attributes</em> and <em>Methods</em> compartments can be empty.</li>
-                            </ol>
-                          </div>
-                        </question>
-                      </panel>
+                      </table>
+                    </panel>
+                  </tip-box>
+                  <p><strong>The 'Operations' compartment and/or the 'Attributes' compartment may be omitted</strong> if such details are not important for the task at hand. 'Attributes' always appear above the 'Operations' compartment. All operations should
+                    be in one compartment rather than each operation in a separate compartment. Same goes for attributes.</p>
+                  <tip-box>
+                    <img src="/website-base/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></tip-box>
+                  <p><strong>The <em>visibility</em> of attributes and operations is used to indicate the level of access allowed for each attribute or operation.</strong> The types of visibility and their exact meanings depend on the programming language
+                    used. Here are some common visibilities and how they are indicated in a class diagram:</p>
+                  <ul>
+                    <li><code>+</code> : public</li>
+                    <li><code>-</code> : private</li>
+                    <li><code>#</code> : protected</li>
+                    <li><code>~</code> : package private</li>
+                  </ul>
+                  <panel type="seamless" header="How visibilities map to programming language features">
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>visibility</th>
+                            <th>Java</th>
+                            <th>Python</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><code>-</code> private</td>
+                            <td><code>private</code></td>
+                            <td>at least two leading underscores (and at most one trailing underscores) in the name</td>
+                          </tr>
+                          <tr>
+                            <td><code>#</code> protected</td>
+                            <td><code>protected</code></td>
+                            <td>one leading underscore in the name</td>
+                          </tr>
+                          <tr>
+                            <td><code>+</code> public</td>
+                            <td><code>public</code></td>
+                            <td>all other cases</td>
+                          </tr>
+                          <tr>
+                            <td><code>~</code> package private</td>
+                            <td>default visibility</td>
+                            <td>not applicable</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Car class">
-                        <question>
-                          <p>Draw a UML diagram to represent the <code>Car</code> class as given below. Include visibilities.</p>
-                          <div class="alt-java">
-                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+                    <p></p>
+                  </panel>
+                  <p></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> <code>Table</code> class with visibilities shown:</p>
+                    <img src="/website-base/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which classes are correct?">
+                          <question>
+                            <p>Which of these follow the correct UML notation?</p>
+                            <img src="/website-base/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
+                            <p></p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 1</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 2</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 3</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 4</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 5</li>
+                            </ul>
+                            <div slot="answer">
+                              <ol>
+                                <li>Incorrect : <em>Attributes</em> compartment should be above the <em>Methods</em> compartment.</li>
+                                <li>Incorrect : All attributes should be inside the same compartment.</li>
+                                <li>Correct</li>
+                                <li>Correct : Both <em>Attributes</em> and <em>Methods</em> compartments can be omitted.</li>
+                                <li>Correct : The <em>Attributes</em> and <em>Methods</em> compartments can be empty.</li>
+                              </ol>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Car class">
+                          <question>
+                            <p>Draw a UML diagram to represent the <code>Car</code> class as given below. Include visibilities.</p>
+                            <div class="alt-java">
+                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
 
     Engine engine;
     <span class="hljs-keyword">private</span> List&lt;Wheel&gt;[] wheels = <span class="hljs-keyword">null</span>;
@@ -398,10 +376,10 @@
     }
 }
 </code></pre>
-                          </div>
-                          <div class="alt-python">
-                            <p>💡 You may omit <code>self</code> from method signatures in the class diagram.</p>
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+                            </div>
+                            <div class="alt-python">
+                              <p>💡 You may omit <code>self</code> from method signatures in the class diagram.</p>
+                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model)</span>:</span>
     self._engine = <span class="hljs-keyword">None</span> <span class="hljs-comment"># type: Engine</span>
@@ -414,50 +392,48 @@
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__move</span><span class="hljs-params">(self, speed)</span>:</span>
       <span class="hljs-keyword">pass</span>
 </code></pre>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
                 </div>
               </div>
-            </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="associations">Associations</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret simple associations in a class diagram</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p>We use a solid line to show an association between two classes.</p>
-                <img src="/website-base/book/uml/classDiagrams/associations/what/images/notation.png" width="300">
-                <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br>
-                    <img src="/website-base/book/uml/classDiagrams/associations/what/images/example.png" width="300"></p>
-                </tip-box>
-              </div>
-              <div></div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Navigability" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret simple associations in a class diagram</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p>We use a solid line to show an association between two classes.</p>
+                  <img src="/website-base/book/uml/classDiagrams/associations/what/images/notation.png" width="300">
+                  <p></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br>
+                      <img src="/website-base/book/uml/classDiagrams/associations/what/images/example.png" width="300"></p>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
+            </panel>
+            <panel type="seamless" header="#### Navigability" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret association navigabilities in class diagrams</span>
@@ -542,36 +518,37 @@
                     </panel>
                   </div>
                 </div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Roles" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+              </div>
+            </panel>
+            <panel type="seamless" header="#### Roles" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/use association roles in class diagrams</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong><em>Association Role</em> labels are used to indicate the role played by the classes in the association.</strong></p>
-                  <img src="/website-base/book/uml/classDiagrams/associations/roles/images/notation.png" height="60">
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> This association represents a marriage between a <code>Man</code> object and a <code>Woman</code> object. The respective roles played by objects of these two classes are <code>husband</code> and <code>wife</code>.</p>
-                    <img src="/website-base/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
-                    <p></p>
-                    <p>Note how the variable names match closely with the association roles.</p>
-                    <table>
-                      <tr>
-                      
-                        <td valign="top">
-                          <p>Java <span class="fas fa-arrow-down"></span></p>
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/use association roles in class diagrams</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p><strong><em>Association Role</em> labels are used to indicate the role played by the classes in the association.</strong></p>
+                    <img src="/website-base/book/uml/classDiagrams/associations/roles/images/notation.png" height="60">
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> This association represents a marriage between a <code>Man</code> object and a <code>Woman</code> object. The respective roles played by objects of these two classes are <code>husband</code> and
+                        <code>wife</code>.</p>
+                      <img src="/website-base/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
+                      <p></p>
+                      <p>Note how the variable names match closely with the association roles.</p>
+                      <table>
+                        <tr>
+                        
+                          <td valign="top">
+                            <p>Java <span class="fas fa-arrow-down"></span></p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
     Woman wife;
 }
 
@@ -579,14 +556,14 @@
     Man husband;
 }
 </code></pre>
-                          <p></p>
-                        </td>
-                      
-                        <td>  <br><br></td>
-                      
-                        <td valign="top">
-                          <p>Python <span class="fas fa-arrow-down"></span></p>
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span>
+                            <p></p>
+                          </td>
+                        
+                          <td>  <br><br></td>
+                        
+                          <td valign="top">
+                            <p>Python <span class="fas fa-arrow-down"></span></p>
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.wife = <span class="hljs-keyword">None</span> <span class="hljs-comment"># a Woman object</span>
 
@@ -594,51 +571,49 @@
    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
      self.husband = <span class="hljs-keyword">None</span> <span class="hljs-comment"># a Man object</span>
 </code></pre>
-                          <p></p>
-                        </td>
-                      </tr>
-                    </table>
-                  </tip-box>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> The role of <code>Student</code> objects in this association is <code>charges</code> <span class="dimmed">(i.e. Admin is in charge of students)</span></p>
-                    <img src="/website-base/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
-                    <p></p>
-                    <table>
-                      <tr>
-                      
-                        <td valign="top">
-                          <p>Java <span class="fas fa-arrow-down"></span></p>
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
+                            <p></p>
+                          </td>
+                        </tr>
+                      </table>
+                    </tip-box>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> The role of <code>Student</code> objects in this association is <code>charges</code> <span class="dimmed">(i.e. Admin is in charge of students)</span></p>
+                      <img src="/website-base/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
+                      <p></p>
+                      <table>
+                        <tr>
+                        
+                          <td valign="top">
+                            <p>Java <span class="fas fa-arrow-down"></span></p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
     List&lt;Student&gt; charges;
 }
 </code></pre>
-                          <p></p>
-                        </td>
-                      
-                        <td>  <br><br></td>
-                      
-                        <td valign="top">
-                          <p>Python <span class="fas fa-arrow-down"></span></p>
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span>
+                            <p></p>
+                          </td>
+                        
+                          <td>  <br><br></td>
+                        
+                          <td valign="top">
+                            <p>Python <span class="fas fa-arrow-down"></span></p>
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.charges = [] <span class="hljs-comment"># list of Student objects</span>
 </code></pre>
-                          <p></p>
-                        </td>
-                      </tr>
-                    </table>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Labels" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
+                            <p></p>
+                          </td>
+                        </tr>
+                      </table>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
+            <panel type="seamless" header="#### Labels" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/use association labels in class diagrams</span>
@@ -660,238 +635,236 @@
                   </tip-box>
                 </div>
                 <div></div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Multiplicity" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+              </div>
+            </panel>
+            <panel type="seamless" header="#### Multiplicity" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain what is the multiplicity of an association</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/notation.png" height="120">
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain what is the multiplicity of an association</span>
+                  </span>
+                  </span>
+                  </span>
                   <p></p>
-                  <p>Commonly used multiplicities:</p>
-                  <ul>
-                    <li><code>0..1</code> : <em>optional</em>, can be linked to 0 or 1 objects</li>
-                    <li><code>1</code> : <em>compulsory</em>, must be linked to one object at all times.</li>
-                    <li><code>*</code> : can be linked to 0 or more objects.</li>
-                    <li><code>n..m</code> : the number of linked objects must be <code>n</code> to <code>m</code> inclusive</li>
-                  </ul>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> In the diagram below, an <code>Admin</code> object administers (in charge of) any number of students but a <code>Student</code> object must always be under the charge of exactly one <code>Admin</code>                      object</p>
-                    <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300"></tip-box>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> In the diagram below,</p>
-                    <ul>
-                      <li>Each student must be supervised by exactly one professor. i.e. There cannot be a student who doesn't have a supervisor or has multiple supervisors.</li>
-                      <li>A professor cannot supervise more than 5 students but can have no students to supervise.</li>
-                      <li>An admin can handle any number of professors and any number of students, including none.</li>
-                      <li>A professor/student can be handled by any number of admins, including none.</li>
-                    </ul>
-                    <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70"></tip-box>
-                </div>
-                <div>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which statement agrees with the  multiplicity shown in this diagram?">
-                          <question>
-                            <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
-                            <p></p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Unit</code> object can be linked to any number of <code>Item</code> objects</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An <code>Item</code> object must be linked 1,2,3 or 4 <code>Unit</code> objects.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Unit</code> object must be linked 1,2,3, or 4 <code>Item</code> objects</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Item</code> object can be 0 or more <code>Unit</code> objects.</li>
-                            </ul>
-                            <div slot="answer">
-                              <p>(c)(d)</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
+                    <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/notation.png" height="120">
+                    <p></p>
+                    <p>Commonly used multiplicities:</p>
+                    <ul>
+                      <li><code>0..1</code> : <em>optional</em>, can be linked to 0 or 1 objects</li>
+                      <li><code>1</code> : <em>compulsory</em>, must be linked to one object at all times.</li>
+                      <li><code>*</code> : can be linked to 0 or more objects.</li>
+                      <li><code>n..m</code> : the number of linked objects must be <code>n</code> to <code>m</code> inclusive</li>
+                    </ul>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> In the diagram below, an <code>Admin</code> object administers (in charge of) any number of students but a <code>Student</code> object must always be under the charge of exactly one <code>Admin</code>                        object</p>
+                      <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300"></tip-box>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> In the diagram below,</p>
+                      <ul>
+                        <li>Each student must be supervised by exactly one professor. i.e. There cannot be a student who doesn't have a supervisor or has multiple supervisors.</li>
+                        <li>A professor cannot supervise more than 5 students but can have no students to supervise.</li>
+                        <li>An admin can handle any number of professors and any number of students, including none.</li>
+                        <li>A professor/student can be handled by any number of admins, including none.</li>
+                      </ul>
+                      <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70"></tip-box>
                   </div>
-                </div>
-            </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which statement agrees with the  multiplicity shown in this diagram?">
+                            <question>
+                              <img src="/website-base/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
+                              <p></p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Unit</code> object can be linked to any number of <code>Item</code> objects</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An <code>Item</code> object must be linked 1,2,3 or 4 <code>Unit</code> objects.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Unit</code> object must be linked 1,2,3, or 4 <code>Item</code> objects</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Item</code> object can be 0 or more <code>Unit</code> objects.</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(c)(d)</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="dependencies">Dependencies</h3></div></span>
-          <panel type="seamless" header="#### Dependencies" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### Dependencies" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use dependencies in a class diagram</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p>In a UML class diagram, a <strong>dependency is a weaker form of an association where there is an interactions between objects that do not result in a long-term relationship</strong> between the said objects.</p>
-                  <p><strong>UML uses a dashed arrow to show dependencies.</strong></p>
-                  <img src="/website-base/book/uml/classDiagrams/dependencies/what/images/notation.png" width="350">
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Two examples of dependencies:</p>
-                    <img src="/website-base/book/uml/classDiagrams/dependencies/what/images/examples.png" width="450">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use dependencies in a class diagram</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p>In a UML class diagram, a <strong>dependency is a weaker form of an association where there is an interactions between objects that do not result in a long-term relationship</strong> between the said objects.</p>
+                    <p><strong>UML uses a dashed arrow to show dependencies.</strong></p>
+                    <img src="/website-base/book/uml/classDiagrams/dependencies/what/images/notation.png" width="350">
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Two examples of dependencies:</p>
+                      <img src="/website-base/book/uml/classDiagrams/dependencies/what/images/examples.png" width="450">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="associations-as-attributes">Associations as Attributes</h3></div></span>
-          <panel type="seamless" header="#### Associations as Attributes" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### Associations as Attributes" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can show an association as an attribute</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>An association can be shown as an attribute instead of a line.</strong></p>
-                  <p>Association multiplicities and the default value too can be shown as part of the attribute using the following notation. Both are optional.</p>
-                  <p><code>name: type [multiplicity] = default value</code></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> The diagram below depicts a multi-player <em>Square Game</em> being played on a board comprising of 100 squares. Each of the squares may be occupied with any number of pieces, each belonging to a certain
-                      player.</p>
-                    <p>A <code>Piece</code> may or may not be on a <code>Square</code>. Note how that association can be replaced by an <code>isOn</code> attribute of the <code>Piece</code> class. The <code>isOn</code> attribute can either be <code>null</code>                      or hold a reference to a <code>Square</code> object, matching the <code>0..1</code> multiplicity of the association it replaces. The default value is <code>null</code>.</p>
-                    <img src="/website-base/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" width="600">
-                    <p></p>
-                    <p>The association that a <code>Board</code> has 100 <code>Sqaure</code>s can be shown in either of these two ways:</p>
-                    <img src="/website-base/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can show an association as an attribute</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p><strong>An association can be shown as an attribute instead of a line.</strong></p>
+                    <p>Association multiplicities and the default value too can be shown as part of the attribute using the following notation. Both are optional.</p>
+                    <p><code>name: type [multiplicity] = default value</code></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> The diagram below depicts a multi-player <em>Square Game</em> being played on a board comprising of 100 squares. Each of the squares may be occupied with any number of pieces, each belonging to a
+                        certain player.</p>
+                      <p>A <code>Piece</code> may or may not be on a <code>Square</code>. Note how that association can be replaced by an <code>isOn</code> attribute of the <code>Piece</code> class. The <code>isOn</code> attribute can either be <code>null</code>                        or hold a reference to a <code>Square</code> object, matching the <code>0..1</code> multiplicity of the association it replaces. The default value is <code>null</code>.</p>
+                      <img src="/website-base/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" width="600">
+                      <p></p>
+                      <p>The association that a <code>Board</code> has 100 <code>Sqaure</code>s can be shown in either of these two ways:</p>
+                      <img src="/website-base/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="enumerations">Enumerations</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret enumerations in class diagrams</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p>Notation:</p>
-                  <img src="/website-base/book/uml/classDiagrams/enumerations/what/images/notation.png" width="150">
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> In the class diagram below, there are two enumerations in use:</p>
-                    <img src="/website-base/book/uml/classDiagrams/enumerations/what/images/playerTurn.png" width="600">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret enumerations in class diagrams</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p>Notation:</p>
+                    <img src="/website-base/book/uml/classDiagrams/enumerations/what/images/notation.png" width="150">
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> In the class diagram below, there are two enumerations in use:</p>
+                      <img src="/website-base/book/uml/classDiagrams/enumerations/what/images/playerTurn.png" width="600">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="class-level-members">Class Level Members</h3></div></span>
-          <panel type="seamless" header="#### Class-Level Members" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### Class-Level Members" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret class-level members in class diagrams</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p>In UML class diagrams, <strong>underlines denote class-level attributes and variables.</strong></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> In the class below, <code>totalStudents</code> attribute and the <code>getTotalStudents</code> method are class-level.</p>
-                    <img src="/website-base/book/uml/classDiagrams/classLevelMembers/what/images/student.png" height="120">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret class-level members in class diagrams</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p>In UML class diagrams, <strong>underlines denote class-level attributes and variables.</strong></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> In the class below, <code>totalStudents</code> attribute and the <code>getTotalStudents</code> method are class-level.</p>
+                      <img src="/website-base/book/uml/classDiagrams/classLevelMembers/what/images/student.png" height="120">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="association-classes">Association Classes</h3></div></span>
-          <panel type="seamless" header="#### Association Classes" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### Association Classes" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </font>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret association classes in class diagrams</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p>Association classes are denoted as a connection to an association link using a dashed line as shown below.</p>
-                  <img src="/website-base/book/uml/classDiagrams/associationClasses/what/images/notation.png" height="100">
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> In this example <code>Loan</code> is an association class because it stores information about the <code>borrows</code> association between the <code>User</code> and the <code>Book</code>.</p>
-                    <img src="/website-base/book/uml/classDiagrams/associationClasses/what/images/bookLoan.png" height="150">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
+                <span
+                  class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </font>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret association classes in class diagrams</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p>Association classes are denoted as a connection to an association link using a dashed line as shown below.</p>
+                    <img src="/website-base/book/uml/classDiagrams/associationClasses/what/images/notation.png" height="100">
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> In this example <code>Loan</code> is an association class because it stores information about the <code>borrows</code> association between the <code>User</code> and the <code>Book</code>.</p>
+                      <img src="/website-base/book/uml/classDiagrams/associationClasses/what/images/bookLoan.png" height="150">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="composition">Composition</h3></div></span>
-          <panel type="seamless" header="#### Composition" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
+            <panel type="seamless" header="#### Composition" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret composition in class diagrams</span>
@@ -911,73 +884,71 @@
                   </tip-box>
                 </div>
                 <div></div>
-            </div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="aggregation">Aggregation</h3></div></span>
-          <panel type="seamless" header="#### Aggregation" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### Aggregation" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret aggregation in class diagrams</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>UML uses a hollow diamond is used to indicate an aggregation.</strong></p>
-                  <p>Notation:</p>
-                  <img src="/website-base/book/uml/classDiagrams/aggregation/what/images/notation.png" height="45">
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Example:</p>
-                    <img src="/website-base/book/uml/classDiagrams/aggregation/what/images/clubPerson.png" height="85">
-                    <p></p>
-                  </tip-box>
-                  <tip-box type="tip">
-                    <p><strong>Aggregation vs Composition</strong></p>
-                    <p>The distinction between composition (◆) and aggregation (◇) is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether because using it adds more confusion than clarity.</p>
-                  </tip-box>
-                </div>
-                <div>
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret aggregation in class diagrams</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one is not recommended to use?">
-                          <question>
-                            <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                            <ul radio-group="29b56" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
-                            </ul>
-                            <div slot="answer">
-                              <p>(b)</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
+                    <p><strong>UML uses a hollow diamond is used to indicate an aggregation.</strong></p>
+                    <p>Notation:</p>
+                    <img src="/website-base/book/uml/classDiagrams/aggregation/what/images/notation.png" height="45">
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Example:</p>
+                      <img src="/website-base/book/uml/classDiagrams/aggregation/what/images/clubPerson.png" height="85">
+                      <p></p>
+                    </tip-box>
+                    <tip-box type="tip">
+                      <p><strong>Aggregation vs Composition</strong></p>
+                      <p>The distinction between composition (◆) and aggregation (◇) is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether because using it adds more confusion than clarity.</p>
+                    </tip-box>
                   </div>
-                </div>
-            </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one is not recommended to use?">
+                            <question>
+                              <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
+                              <ul radio-group="29b56" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(b)</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="class-inheritance">Class Inheritance</h3></div></span>
-          <panel type="seamless" header="#### Inheritance" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
+            <panel type="seamless" header="#### Inheritance" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret class inheritance in class diagrams</span>
@@ -997,19 +968,17 @@
                   </tip-box>
                 </div>
                 <div></div>
-            </div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="interfaces">Interfaces</h3></div></span>
-          <panel type="seamless" header="#### Interfaces" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
+            <panel type="seamless" header="#### Interfaces" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret interfaces in class diagrams</span>
@@ -1026,50 +995,48 @@
                   </tip-box>
                 </div>
                 <div></div>
-            </div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="abstract-classes">Abstract Classes</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret abstract classes in class diagrams</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p>We can use <em>italics</em> or <code>{abstract}</code> keyword to denote abstract classes/methods.</p>
-                  <img src="/website-base/book/uml/classDiagrams/abstractClasses/what/images/notation.png" height="110">
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret abstract classes in class diagrams</span>
+                  </span>
+                  </span>
+                  </span>
                   <p></p>
-                  <tip-box>
-                    <p>Example:</p>
-                    <img src="/website-base/book/uml/classDiagrams/abstractClasses/what/images/staff.png" height="110">
+                  <div>
+                    <p>We can use <em>italics</em> or <code>{abstract}</code> keyword to denote abstract classes/methods.</p>
+                    <img src="/website-base/book/uml/classDiagrams/abstractClasses/what/images/notation.png" height="110">
                     <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
+                    <tip-box>
+                      <p>Example:</p>
+                      <img src="/website-base/book/uml/classDiagrams/abstractClasses/what/images/staff.png" height="110">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="combine">Combine</h3></div></span>
-          <panel type="seamless" header="#### Basic" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
+            <panel type="seamless" header="#### Basic" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can combine different basic aspects of class diagrams</span>
@@ -1221,406 +1188,406 @@ item2.add_previous_box(box2);
                     </panel>
                   </div>
                 </div>
+              </div>
+            </panel>
+          </panel>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
+<h2 id="sequence-diagrams">Sequence Diagrams</h2></div></span>
+          <panel type="seamless" header="#### Introduction" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/identify sequence diagrams</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>A UML sequence diagram <em>captures the interactions between multiple objects for a given scenario.</em></strong></p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> Some exmaple sequence diagrams:</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/introduction/images/textLogic.png" height="300">
+                  <p></p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/introduction/images/logicMinefield.png" height="300">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Basic" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with basic notation</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p>Notation:</p>
+                <img src="/website-base/book/uml/sequenceDiagrams/basic/images/notation.png" height="300">
+                <p></p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> This sequence diagram shows some interactions between a human user and the Text UI of a
+                    <tooltip content="Command Line Interface">CLI</tooltip> Minesweeper game.</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/basic/images/playerText.png" height="300">
+                  <p></p>
+                  <p>The player runs the <code>newgame</code> action on the <code>TextUi</code> object which results in the <code>TextUi</code> showing the minefield to the player. Then, the player runs the <code>clear x y</code> command; in response, the
+                    <code>TextUi</code> object shows the updated minefield.</p>
+                </tip-box>
+                <p>The <code>:TextUi</code> in the above example denotes <em>an unnamed instance of the class TextUi</em>. If there were two instances of <code>TextUi</code> in the diagram, they can be distinguished by naming them e.g. <code>TextUi1:TextUi</code>                  and <code>TextUi2:TextUi</code>.</p>
+                <p><strong>Arrows representing method calls should be solid arrows while those representing method returns should be dashed arrows</strong>.</p>
+                <p>Note that unlike in Object Diagrams, the <strong>class/object name is not underlined in sequence diagrams</strong>.</p>
+                <tip-box>
+                  <p>❌ <strong>[Common notation error] Activation bar too long:</strong> The activation bar of a method cannot start before the method call arrives and a method cannot remain active after the method had returned. <span class="dimmed"> In the two sequence diagrams below, the one on the left commits this error because the activation bar starts <em>before</em> the method <code>Foo#xyz()</code> is called and remains active <em>after</em> the method returns.</span></p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/basic/images/commonError-activationBarTooLong.png" height="120">
+                  <p>❌ <strong>[Common notation error] Broken activation bar:</strong> The activation bar should remain unbroken from the point the method is called until the method returns. <span class="dimmed"> In the two sequence diagrams below, the one on the left commits this error because the activation bar for the method <code>Foo#abc()</code> is not contiguous, but appears as two pieces instead.</span></p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/basic/images/commonError-brokenActivationBar.png" height="120"></tip-box>
+              </div>
+              <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Object Creation" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with object creation</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p>Notation:</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/objectCreation/images/notation.png" height="180">
+                  <p></p>
+                  <ul>
+                    <li>The arrow that represents the constructor arrives at the side of the box representing the instance.</li>
+                    <li>The activation bar represents the period the constructor is active.</li>
+                  </ul>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> The <code>Logic</code> object creates a <code>Minefield</code> object.</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/objectCreation/images/logicMinefield.png" height="150">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Object Deletion" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with object deletion</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>UML uses an <code>X</code> at the end of the lifeline of an object to show it's deletion.</strong></p>
+                  <tip-box>
+                    <p>💡 Although object deletion is not that important in languages such as Java that support automatic memory management, you can still show object deletion in UML diagrams to indicate the point at which the object ceases to be used.</p>
+                  </tip-box>
+                  <p>Notation:</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/notation.png" height="100">
+                  <p></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Note how the diagrams shows the deletion of the <code>Minefield</code> object</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/logicMinefield.png" height="120">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Loops" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with loops</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p>Notation:</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/loops/images/notation.png" height="80">
+                  <p></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> The <code>Player</code> calls the <code>mark x,y</code> command or <code>clear x y</code> command repeatedly until the game is won or lost.</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/loops/images/playerText.png" height="300">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Self Invocation" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with self invocation</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>UML can show a method of an object calling another of its own methods.</strong></p>
+                  <p>Notation:</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" height="120">
+                  <p></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> The <code>markCellAt(...)</code> method of a <code>Logic</code> object is calling its own <code>updateState(...)</code> method.</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" height="100">
+                    <p></p>
+                    <p><span class="fas fa-cube"></span> In this variation, the <code>Book#write()</code> method is calling the <code>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code>getAuthor()</code> method of
+                      the calling object.</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" height="150">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Alternative Paths" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with alternative paths</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>UML uses <code>alt</code> frames to indicate alternative paths.</strong></p>
+                  <p>Notation:</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/notation.png" height="100">
+                  <p></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> <code>Minefield</code> calls the <code>Cell#setMine</code> if the cell is supposed to be a mined cell, and calls the <code>Cell:setMineCount(...)</code> method otherwise.</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/minefieldCell.png" height="180">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Optional Paths" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with optional paths</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>UML uses <code>opt</code> frames to indicate optional paths.</strong></p>
+                  <p>Notation:</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/notation.png" height="50">
+                  <p></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> <code>Logic#markCellAt(...)</code> calls <code>Timer#start()</code> only if it is the first move of the player.</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png" height="150">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Parallel Paths" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </font>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with parallel paths</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>UML uses <code>par</code> frames to indicate parallel paths.</strong></p>
+                  <p>Notation:</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/notation.png" height="100">
+                  <p></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> <code>Logic</code> is calling methods <code>CloudServer#poll()</code> and <code>LocalServer#poll()</code> in parallel.</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/logicServerData.png" height="150">
+                    <p></p>
+                    <tip-box>
+                      <p>💡 If you show parallel paths in a sequence diagram, the corresponding Java implementation is likely to be <em>multi-threaded</em> <span class="dimmed">  because a normal Java program cannot do multiple things at the same time</span>.</p>
+                    </tip-box>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Reference Frames" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </font>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with reference frames</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>UML uses <em>ref frame</em> to allow a segment of the interaction to be omitted and shown as a separate sequence diagram.</strong> Reference frames help us to break complicated sequence diagrams into multiple parts or simply
+                    to omit details we are not interested in showing.</p>
+                  <p>Notation:</p>
+                  <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/notation.png" height="100">
+                  <p></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> The details of the <code>get minefield appearance</code> interactions have been omitted from the diagram.</p>
+                    <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png" height="250">
+                    <p></p>
+                    <p>Those details are shown in a separate sequence diagram given below.<br>
+                      <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png" height="170"></p>
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Minimal Notation" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with minimal notation</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p>To reduce clutter, <strong>activation bars and return arrows may be omitted</strong> if they do not result in ambiguities or loss of information. Informal operation descriptions such as those given in the example below can be used, if
+                    more precise details are not required for the task at hand.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> A minimal sequence diagram</p>
+
+                    <img src="/website-base/book/uml/sequenceDiagrams/minimalNotation/images/textLogic.png" height="150">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
             </div>
           </panel>
         </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
-<h2 id="sequence-diagrams">Sequence Diagrams</h2></div></span>
-        <panel type="seamless" header="#### Introduction" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
+<h2 id="object-diagrams">Object Diagrams</h2></div></span>
+          <panel type="seamless" header="#### Introduction" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/identify sequence diagrams</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong>A UML sequence diagram <em>captures the interactions between multiple objects for a given scenario.</em></strong></p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> Some exmaple sequence diagrams:</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/introduction/images/textLogic.png" height="300">
-                <p></p>
-                <img src="/website-base/book/uml/sequenceDiagrams/introduction/images/logicMinefield.png" height="300">
-                <p></p>
-              </tip-box>
-            </div>
-            <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Basic" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with basic notation</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p>Notation:</p>
-              <img src="/website-base/book/uml/sequenceDiagrams/basic/images/notation.png" height="300">
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/identify object diagrams</span>
+              </span>
+              </span>
+              </span>
               <p></p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> This sequence diagram shows some interactions between a human user and the Text UI of a
-                  <tooltip content="Command Line Interface">CLI</tooltip> Minesweeper game.</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/basic/images/playerText.png" height="300">
-                <p></p>
-                <p>The player runs the <code>newgame</code> action on the <code>TextUi</code> object which results in the <code>TextUi</code> showing the minefield to the player. Then, the player runs the <code>clear x y</code> command; in response, the
-                  <code>TextUi</code> object shows the updated minefield.</p>
-              </tip-box>
-              <p>The <code>:TextUi</code> in the above example denotes <em>an unnamed instance of the class TextUi</em>. If there were two instances of <code>TextUi</code> in the diagram, they can be distinguished by naming them e.g. <code>TextUi1:TextUi</code>                and <code>TextUi2:TextUi</code>.</p>
-              <p><strong>Arrows representing method calls should be solid arrows while those representing method returns should be dashed arrows</strong>.</p>
-              <p>Note that unlike in Object Diagrams, the <strong>class/object name is not underlined in sequence diagrams</strong>.</p>
-              <tip-box>
-                <p>❌ <strong>[Common notation error] Activation bar too long:</strong> The activation bar of a method cannot start before the method call arrives and a method cannot remain active after the method had returned. <span class="dimmed"> In the two sequence diagrams below, the one on the left commits this error because the activation bar starts <em>before</em> the method <code>Foo#xyz()</code> is called and remains active <em>after</em> the method returns.</span></p>
-                <img src="/website-base/book/uml/sequenceDiagrams/basic/images/commonError-activationBarTooLong.png" height="120">
-                <p>❌ <strong>[Common notation error] Broken activation bar:</strong> The activation bar should remain unbroken from the point the method is called until the method returns. <span class="dimmed"> In the two sequence diagrams below, the one on the left commits this error because the activation bar for the method <code>Foo#abc()</code> is not contiguous, but appears as two pieces instead.</span></p>
-                <img src="/website-base/book/uml/sequenceDiagrams/basic/images/commonError-brokenActivationBar.png" height="120"></tip-box>
+              <div>
+                <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
+                <tip-box>
+                  <img src="/website-base/book/oop/associations/what/images/completeStructure.png" height="120"></tip-box>
+              </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Object Creation" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+          </panel>
+          <panel type="seamless" header="#### Objects" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with object creation</span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can draw UML objects</span>
               </span>
               </span>
               </span>
               <p></p>
               <div>
                 <p>Notation:</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/objectCreation/images/notation.png" height="180">
+                <img src="/website-base/book/uml/objectDiagrams/objects/images/notation.png" height="85">
                 <p></p>
+                <p>Notes:</p>
                 <ul>
-                  <li>The arrow that represents the constructor arrives at the side of the box representing the instance.</li>
-                  <li>The activation bar represents the period the constructor is active.</li>
+                  <li>The class name and object name e.g. <code>car1:Car</code> are underlined.</li>
+                  <li><code>objectName:ClassName</code> is meant to say 'an instance of <code>ClassName</code> identified as <code>objectName</code>'.</li>
+                  <li>Unlike classes, there is no compartment for methods.</li>
+                  <li><em>Attributes</em> compartment can be omitted if it is not relevant to the task at hand.</li>
+                  <li>Object name can be omitted too e.g. <code>:Car</code> which is meant to say 'an <em>unnamed</em> instance of a Car object'.</li>
                 </ul>
                 <tip-box>
-                  <p><span class="fas fa-cube"></span> The <code>Logic</code> object creates a <code>Minefield</code> object.</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/objectCreation/images/logicMinefield.png" height="150">
+                  <p><span class="fas fa-cube"></span> Some example objects:</p>
+                  <img src="/website-base/book/uml/objectDiagrams/objects/images/professorStudent.png" height="65">
                   <p></p>
                 </tip-box>
               </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Object Deletion" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with object deletion</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
               <div>
-                <p><strong>UML uses an <code>X</code> at the end of the lifeline of an object to show it's deletion.</strong></p>
-                <tip-box>
-                  <p>💡 Although object deletion is not that important in languages such as Java that support automatic memory management, you can still show object deletion in UML diagrams to indicate the point at which the object ceases to be used.</p>
-                </tip-box>
-                <p>Notation:</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/notation.png" height="100">
-                <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> Note how the diagrams shows the deletion of the <code>Minefield</code> object</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/objectDeletion/images/logicMinefield.png" height="120">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Loops" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with loops</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p>Notation:</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/loops/images/notation.png" height="80">
-                <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> The <code>Player</code> calls the <code>mark x,y</code> command or <code>clear x y</code> command repeatedly until the game is won or lost.</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/loops/images/playerText.png" height="300">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Self Invocation" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with self invocation</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>UML can show a method of an object calling another of its own methods.</strong></p>
-                <p>Notation:</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" height="120">
-                <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> The <code>markCellAt(...)</code> method of a <code>Logic</code> object is calling its own <code>updateState(...)</code> method.</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" height="100">
-                  <p></p>
-                  <p><span class="fas fa-cube"></span> In this variation, the <code>Book#write()</code> method is calling the <code>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code>getAuthor()</code> method of
-                    the calling object.</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" height="150">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Alternative Paths" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with alternative paths</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>UML uses <code>alt</code> frames to indicate alternative paths.</strong></p>
-                <p>Notation:</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/notation.png" height="100">
-                <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> <code>Minefield</code> calls the <code>Cell#setMine</code> if the cell is supposed to be a mined cell, and calls the <code>Cell:setMineCount(...)</code> method otherwise.</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/alternativePaths/images/minefieldCell.png" height="180">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Optional Paths" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with optional paths</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>UML uses <code>opt</code> frames to indicate optional paths.</strong></p>
-                <p>Notation:</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/notation.png" height="50">
-                <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> <code>Logic#markCellAt(...)</code> calls <code>Timer#start()</code> only if it is the first move of the player.</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png" height="150">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Parallel Paths" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </font>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with parallel paths</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>UML uses <code>par</code> frames to indicate parallel paths.</strong></p>
-                <p>Notation:</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/notation.png" height="100">
-                <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> <code>Logic</code> is calling methods <code>CloudServer#poll()</code> and <code>LocalServer#poll()</code> in parallel.</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/parallelPaths/images/logicServerData.png" height="150">
-                  <p></p>
-                  <tip-box>
-                    <p>💡 If you show parallel paths in a sequence diagram, the corresponding Java implementation is likely to be <em>multi-threaded</em> <span class="dimmed">  because a normal Java program cannot do multiple things at the same time</span>.</p>
-                  </tip-box>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Reference Frames" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </font>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with reference frames</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>UML uses <em>ref frame</em> to allow a segment of the interaction to be omitted and shown as a separate sequence diagram.</strong> Reference frames help us to break complicated sequence diagrams into multiple parts or simply to
-                  omit details we are not interested in showing.</p>
-                <p>Notation:</p>
-                <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/notation.png" height="100">
-                <p></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> The details of the <code>get minefield appearance</code> interactions have been omitted from the diagram.</p>
-                  <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png" height="250">
-                  <p></p>
-                  <p>Those details are shown in a separate sequence diagram given below.<br>
-                    <img src="/website-base/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png" height="170"></p>
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Minimal Notation" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with minimal notation</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p>To reduce clutter, <strong>activation bars and return arrows may be omitted</strong> if they do not result in ambiguities or loss of information. Informal operation descriptions such as those given in the example below can be used, if
-                  more precise details are not required for the task at hand.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> A minimal sequence diagram</p>
-
-                  <img src="/website-base/book/uml/sequenceDiagrams/minimalNotation/images/textLogic.png" height="150">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
-<h2 id="object-diagrams">Object Diagrams</h2></div></span>
-        <panel type="seamless" header="#### Introduction" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain/identify object diagrams</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
-              <tip-box>
-                <img src="/website-base/book/oop/associations/what/images/completeStructure.png" height="120"></tip-box>
-            </div>
-            <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Objects" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can draw UML objects</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p>Notation:</p>
-              <img src="/website-base/book/uml/objectDiagrams/objects/images/notation.png" height="85">
-              <p></p>
-              <p>Notes:</p>
-              <ul>
-                <li>The class name and object name e.g. <code>car1:Car</code> are underlined.</li>
-                <li><code>objectName:ClassName</code> is meant to say 'an instance of <code>ClassName</code> identified as <code>objectName</code>'.</li>
-                <li>Unlike classes, there is no compartment for methods.</li>
-                <li><em>Attributes</em> compartment can be omitted if it is not relevant to the task at hand.</li>
-                <li>Object name can be omitted too e.g. <code>:Car</code> which is meant to say 'an <em>unnamed</em> instance of a Car object'.</li>
-              </ul>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> Some example objects:</p>
-                <img src="/website-base/book/uml/objectDiagrams/objects/images/professorStudent.png" height="65">
-                <p></p>
-              </tip-box>
-            </div>
-            <div>
-              <div>
-                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                  <div>
-                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Car object">
-                      <question>
-                        <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
-                        <div class="alt-java">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Car object">
+                        <question>
+                          <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
+                          <div class="alt-java">
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
@@ -1634,9 +1601,9 @@ item2.add_previous_box(box2);
 
 Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
 </code></pre>
-                        </div>
-                        <div class="alt-python">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+                          </div>
+                          <div class="alt-python">
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, price, speed)</span>:</span>
     self.__price = price <span class="hljs-comment"># type: float</span>
@@ -1646,64 +1613,34 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
 <span class="hljs-comment"># somewhere else in the code</span>
 my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
 </code></pre>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
               </div>
             </div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### What" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret simple associations among objects</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p>A solid line indicates an association between two objects.</p>
-              <img src="/website-base/book/uml/objectDiagrams/associations/images/notation.png" width="300">
-              <tip-box>
-                <p><span class="fas fa-cube"></span> An example object diagram showing two associations:<br>
-                  <img src="/website-base/book/uml/objectDiagrams/associations/images/example.png" width="300"></p>
-              </tip-box>
-            </div>
-            <div></div>
-          </div>
-        </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
-<h2 id="activity-diagrams">Activity Diagrams</h2></div></span>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
-<h3 id="introduction-2">Introduction</h3></div></span>
-          <panel type="seamless" header="#### Introduction" expanded="">
+          </panel>
+          <panel type="seamless" header="#### What" expanded="">
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
                 aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain activity diagrams</span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret simple associations among objects</span>
               </span>
               </span>
               </span>
               <p></p>
               <div>
-                <p><strong>A UML Activity diagram (AD) can model workflows.</strong></p>
-                <div v-closeable="" alt="">
-                  <p>An example activity diagram:<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
-                    <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
-                </div>
+                <p>A solid line indicates an association between two objects.</p>
+                <img src="/website-base/book/uml/objectDiagrams/associations/images/notation.png" width="300">
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> An example object diagram showing two associations:<br>
+                    <img src="/website-base/book/uml/objectDiagrams/associations/images/example.png" width="300"></p>
+                </tip-box>
               </div>
               <div></div>
             </div>
@@ -1711,14 +1648,42 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
         </panel>
         <panel type="seamless" expanded="">
           <span slot="header" class="card-title"><div>
-<h3 id="basic-notations">Basic Notations</h3></div></span>
-          <panel type="seamless" header="#### Linear Paths" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+<h2 id="activity-diagrams">Activity Diagrams</h2></div></span>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
+<h3 id="introduction-2">Introduction</h3></div></span>
+            <panel type="seamless" header="#### Introduction" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain activity diagrams</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>A UML Activity diagram (AD) can model workflows.</strong></p>
+                  <div v-closeable="" alt="">
+                    <p>An example activity diagram:<br>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
+                      <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
+                  </div>
+                </div>
+                <div></div>
+              </div>
+            </panel>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
+<h3 id="basic-notations">Basic Notations</h3></div></span>
+            <panel type="seamless" header="#### Linear Paths" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret linear paths in activity diagrams</span>
@@ -1769,15 +1734,13 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                     </panel>
                   </div>
                 </div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Alternate Paths" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
+              </div>
+            </panel>
+            <panel type="seamless" header="#### Alternate Paths" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret alternate paths in activity diagrams</span>
@@ -1831,15 +1794,13 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                     </panel>
                   </div>
                 </div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Parallel Paths" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
+              </div>
+            </panel>
+            <panel type="seamless" header="#### Parallel Paths" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret parallel paths in activity diagrams</span>
@@ -1888,192 +1849,193 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                     </panel>
                   </div>
                 </div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Rakes" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+              </div>
+            </panel>
+            <panel type="seamless" header="#### Rakes" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </font>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use rakes in activity diagrams</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>The rake notation is used to indicate that a part of the activity is given as a separate diagram.</strong></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Here is the AD for a game of ‘Snakes and Ladders’.</p>
-                    <img src="/website-base/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
-                    <p></p>
-                    <p>The <em>rake</em> symbol (in the <code>Move piece</code> action above) is used to show that the action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p>
-                    <img src="/website-base/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png" height="230">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Swimlanes" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+                <span
+                  class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </font>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use rakes in activity diagrams</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p><strong>The rake notation is used to indicate that a part of the activity is given as a separate diagram.</strong></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Here is the AD for a game of ‘Snakes and Ladders’.</p>
+                      <img src="/website-base/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
+                      <p></p>
+                      <p>The <em>rake</em> symbol (in the <code>Move piece</code> action above) is used to show that the action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p>
+                      <img src="/website-base/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png" height="230">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
+            <panel type="seamless" header="#### Swimlanes" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </font>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain swimlanes in activity diagrams</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</strong></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> A simple example of a swimlane diagram:</p>
-                    <img src="/website-base/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png" height="220">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
+                <span
+                  class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </font>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain swimlanes in activity diagrams</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p><strong>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</strong></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> A simple example of a swimlane diagram:</p>
+                      <img src="/website-base/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png" height="220">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
           </panel>
         </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
 <h2 id="notes">Notes</h2></div></span>
-        <panel type="seamless" header="#### Notes" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
+          <panel type="seamless" header="#### Notes" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use UML notes</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>UML notes can augment UML diagrams with additional information.</strong> These notes can be shown connected to a particular element in the diagram or can be shown without a connection. The diagram below shows examples of both.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> Example:</p>
-                  <img src="/website-base/book/uml/notes/notes/images/adminProfessor.png" height="120">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Constraints" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </font>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can specify constraints in UML diagrams</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>A <em>constraint</em>  can be given inside a note, within curly braces</strong>. Natural language or a formal notation such as <em>OCL (Object Constraint Language)</em> may be used to specify constraints.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> Example:</p>
-                  <img src="/website-base/book/uml/notes/constraints/images/playerTurn.png" height="120">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
-<h2 id="miscellaneous">Miscellaneous</h2></div></span>
-        <panel type="seamless" header="#### Object vs Class Diagrams" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can distinguish between class diagrams and object diagrams</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
-                <ul>
-                  <li>Shows objects instead of classes:
-                    <ul>
-                      <li>Instance name may be shown</li>
-                      <li>There is a <code>:</code> before the class name</li>
-                      <li>Instance and class names are underlined</li>
-                    </ul>
-                  </li>
-                  <li>Methods are omitted</li>
-                  <li>Multiplicities are omitted</li>
-                </ul>
-                <p>Furthermore, <strong>multiple object diagrams can correspond to a single class diagram</strong>.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p>
-                  <img src="/website-base/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png" height="85">
-                  <p></p>
-                  <img src="/website-base/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
-                  <p></p>
-                </tip-box>
-              </div>
-              <div>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use UML notes</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which class diagrams match object diagram?">
-                        <question>
-                          <p>Which of these class diagrams match the given object diagram?</p>
-                          <img src="/website-base/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
-                          <p></p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
-                          </ul>
-                          <div slot="answer">
-                            <p>(a) (b)</p>
-                            <p>Explanation: Both class diagrams allow one <code>Unit</code> object to be linked to one <code>Item</code> object.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
+                  <p><strong>UML notes can augment UML diagrams with additional information.</strong> These notes can be shown connected to a particular element in the diagram or can be shown without a connection. The diagram below shows examples of both.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Example:</p>
+                    <img src="/website-base/book/uml/notes/notes/images/adminProfessor.png" height="120">
+                    <p></p>
+                  </tip-box>
                 </div>
-              </div>
-          </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Constraints" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </font>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can specify constraints in UML diagrams</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>A <em>constraint</em>  can be given inside a note, within curly braces</strong>. Natural language or a formal notation such as <em>OCL (Object Constraint Language)</em> may be used to specify constraints.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Example:</p>
+                    <img src="/website-base/book/uml/notes/constraints/images/playerTurn.png" height="120">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
         </panel>
-      </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
+<h2 id="miscellaneous">Miscellaneous</h2></div></span>
+          <panel type="seamless" header="#### Object vs Class Diagrams" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can distinguish between class diagrams and object diagrams</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
+                  <ul>
+                    <li>Shows objects instead of classes:
+                      <ul>
+                        <li>Instance name may be shown</li>
+                        <li>There is a <code>:</code> before the class name</li>
+                        <li>Instance and class names are underlined</li>
+                      </ul>
+                    </li>
+                    <li>Methods are omitted</li>
+                    <li>Multiplicities are omitted</li>
+                  </ul>
+                  <p>Furthermore, <strong>multiple object diagrams can correspond to a single class diagram</strong>.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p>
+                    <img src="/website-base/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png" height="85">
+                    <p></p>
+                    <img src="/website-base/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which class diagrams match object diagram?">
+                          <question>
+                            <p>Which of these class diagrams match the given object diagram?</p>
+                            <img src="/website-base/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
+                            <p></p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                            </ul>
+                            <div slot="answer">
+                              <p>(a) (b)</p>
+                              <p>Explanation: Both class diagrams allow one <code>Unit</code> object to be linked to one <code>Item</code> object.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+            </div>
+          </panel>
+        </panel>
+      </div>
     </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 03:23:08 GMT</small></div>
 </footer>
 </div>
 </body>

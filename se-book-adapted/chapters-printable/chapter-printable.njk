@@ -18,31 +18,37 @@ footer: footer.md
 {% macro show_level_two(location, topic) %}
 {% set level_location =  location + "/" + topic.name %}
 {% set level_is_empty =  (topic.name == "") %}
-{% if not level_is_empty %}
-  <include src="{{ level_location }}/text.md#title"/>
-{% endif %}
+{% set level_is_omitted =  (topic.priority in ["-1", "4", "0"]) %}
+{% if not level_is_omitted %}
+  {% if not level_is_empty %}
+<include src="{{ level_location }}/text.md#title"/>
+  {% endif %}
   {% for sub_topic in topic.level_three_topics %}
     {# omit if priority is 4 or 0:4  #}
-    {% if not "4" in sub_topic.priority  %}
+    {% if not sub_topic.priority in ["-1", "4", "0", "0:4"]  %}
 <div class="indented-less">
       {{show_level_three(level_location , sub_topic) }}
 </div>
     {% endif %}
   {% endfor %}
+{% endif %} {# end of: if not level_is_omitted #}
 {% endmacro %}
 
 
 {% macro show_level_one(location, topic) %}
 {% set level_location =  location + "/" + topic.name %}
 {% set level_is_empty =  (topic.name == "") %}
-{% if not level_is_empty %}
-  <include src="{{ level_location }}/text.md#title" />
-{% endif %}
+{% set level_is_omitted =  (topic.priority in ["-1", "4", "0"]) %}
+{% if not level_is_omitted %}
+  {% if not level_is_empty %}
+<include src="{{ level_location }}/text.md#title" />
+  {% endif %}
   {% for sub_topic in topic.level_two_topics %}
 <div class="indented-less">
     {{show_level_two(level_location , sub_topic) }}
 </div>
   {% endfor %}
+{% endif %} {# end of: if not level_is_omitted #}
 {% endmacro %}
 
 

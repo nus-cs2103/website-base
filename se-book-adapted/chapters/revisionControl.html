@@ -24,7 +24,7 @@
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
-<div id="app" class="container-fluid">
+<div id="app">
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
@@ -153,159 +153,135 @@
     </div>
   </div>
   <div id="page-content">
-    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-    <div class="website-content">
-      <div>
-        <navbar placement="top" type="inverse">
-          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
-          <dropdown text="Nested" class="nav-link">
-            <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
-            <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
-          </dropdown>
-          <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
-          <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-          <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-          <dropdown text="Links" class="nav-link">
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-            <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
-            <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
-            <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
-          </dropdown>
-          <li slot="right" class="nav-link">
-            <form class="navbar-form">
-              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-            </form>
-          </li>
-        </navbar>
-      </div>
-      <p><span class="dimmed"><strong><span></span></strong>
-        </span>
-      </p>
-      <div id="title">
+    <div id="content-wrapper">
+      <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+      <div class="website-content">
         <div>
-          <h1 id="revision-control">Revision Control</h1>
+          <navbar placement="top" type="inverse">
+            <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span><span class="text-white">Textbook: <strong>Software Engineering for Self-Directed Learners</strong></span> <span class="badge badge-pill badge-success">CS2103/T edition - 2018</span></span>
+            <li slot="right" class="nav-link">
+              <form class="navbar-form">
+                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+              </form>
+            </li>
+          </navbar>
         </div>
-      </div>
-      <panel type="seamless" header="#### What" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
+        <p><span class="dimmed"><strong><span></span></strong>
+          </span>
+        </p>
+        <div id="title">
+          <div>
+            <h1 id="revision-control">Revision Control</h1>
+          </div>
+        </div>
+        <panel type="seamless" header="#### What" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            </span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain revision control</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
-              <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
-              <tabs>
-                <tab header="<span class='far fa-file-alt'></span>">
-                  <blockquote>
-                    <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that contains
-                      a number, each one higher than the number of the preceding version.</p>
-                    <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to help
-                      a single user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best modern revision
-                      control tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
-                    <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have a log
-                      of who made it; why they made it; when they made it; and what the change was.</p>
-                    <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software will
-                      help you to identify and resolve those conflicts.</p>
-                    <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even
-                      help you to efficiently figure out exactly when a problem was introduced.</p>
-                    <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
-                      or with a hundred other people.</p>
-                    <p>-- [adapted from
-                      <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
-                  </blockquote>
-                  <hr>
-                </tab>
-                <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
-                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                  <hr>
-                </tab>
-              </tabs>
-              <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
-                <div slot="content">
-                  <div>
-                    <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
-                  </div>
-                </div>
-              </popover>
-            </div>
-            <div>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain revision control</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
               <div>
-                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                  <div>
-                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What does RCS stand for?">
-                      <question has-input="true">
-                        <div slot="answer">
-                          <p>Revision Control Software</p>
-                        </div>
-                      </question>
-                    </panel>
+                <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
+                <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
+                <tabs>
+                  <tab header="<span class='far fa-file-alt'></span>">
+                    <blockquote>
+                      <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that contains
+                        a number, each one higher than the number of the preceding version.</p>
+                      <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to help
+                        a single user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best modern
+                        revision control tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
+                      <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have a
+                        log of who made it; why they made it; when they made it; and what the change was.</p>
+                      <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software will
+                        help you to identify and resolve those conflicts.</p>
+                      <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even
+                        help you to efficiently figure out exactly when a problem was introduced.</p>
+                      <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
+                        or with a hundred other people.</p>
+                      <p>-- [adapted from
+                        <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
+                    </blockquote>
+                    <hr>
+                  </tab>
+                  <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
+                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                    <hr>
+                  </tab>
+                </tabs>
+                <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+                  <div slot="content">
+                    <div>
+                      <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
+                    </div>
                   </div>
-                  <div>
-                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is a Revision?">
-                      <question has-input="true">
-                        <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
-                        <div slot="answer">
-                          <p>Versions of a piece of information. For example, take a file containing program code. If you modify the code and save the file, you have a new version of that file.</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                  <div>
-                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these is not considered a benefit of a typical RCS?">
-                      <question>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Help a developer recover from a incorrect modification to a code file</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Makes it easier for a group of developers to collaborate on a project</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Manage the drift between multiple versions of your project</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Detect when multiple developers make incompatible changes to the same file</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. All of them are benefits of RCS</li>
-                        </ul>
-                        <div slot="answer">
-                          <p>f</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                  <div>
-                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain RCS in a team project context">
-                      <question has-input="true">
-                        <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
+                </popover>
               </div>
-            </div>
-        </div>
-      </panel>
-      <panel type="seamless" header="#### Repositories" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            </span>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What does RCS stand for?">
+                        <question has-input="true">
+                          <div slot="answer">
+                            <p>Revision Control Software</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is a Revision?">
+                        <question has-input="true">
+                          <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
+                          <div slot="answer">
+                            <p>Versions of a piece of information. For example, take a file containing program code. If you modify the code and save the file, you have a new version of that file.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these is not considered a benefit of a typical RCS?">
+                        <question>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Help a developer recover from a incorrect modification to a code file</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Makes it easier for a group of developers to collaborate on a project</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Manage the drift between multiple versions of your project</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Detect when multiple developers make incompatible changes to the same file</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. All of them are benefits of RCS</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>f</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain RCS in a team project context">
+                        <question has-input="true">
+                          <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Repositories" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
             </span>
             </span>
             <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain repositories</span>
@@ -345,15 +321,13 @@
                 </panel>
               </div>
             </div>
-        </div>
-      </panel>
-      <panel type="seamless" header="#### Saving History" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            </span>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Saving History" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
             </span>
             </span>
             <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain saving history</span>
@@ -387,253 +361,255 @@
               <p><strong>We can <mark>tag</mark> a specific commit with a more easily identifiable name</strong> e.g. <code>v1.0.2</code></p>
             </div>
             <div></div>
-        </div>
-      </panel>
-      <panel type="seamless" header="#### Using History" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Using History" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            </span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain using history</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong><trigger for="pop:rcs">RCS</trigger> tools store the history of the working directory as a series of commits.</strong> This means we should commit after each change that we want the RCS to 'remember' for us.</p>
-              <p><strong>To see what changed between two points of the history, you can ask the RCS tool to  <mark><em>diff</em></mark> the two commits in concern.</strong></p>
-              <p><strong>To restore the state of the working directory at a point in the past, you can <mark><em>checkout</em></mark> the commit in concern.</strong> i.e., we can traverse the history of the working directory simply by checking out the commits
-                we are interested in.</p>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain using history</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
               <div>
-                <popover id="pop:rcs" placement="top">
-                  <div slot="content">
-                    <div>
-                      <p><strong>RCS</strong> : Revision Control Software.</p>
+                <p><strong><trigger for="pop:rcs">RCS</trigger> tools store the history of the working directory as a series of commits.</strong> This means we should commit after each change that we want the RCS to 'remember' for us.</p>
+                <p><strong>To see what changed between two points of the history, you can ask the RCS tool to  <mark><em>diff</em></mark> the two commits in concern.</strong></p>
+                <p><strong>To restore the state of the working directory at a point in the past, you can <mark><em>checkout</em></mark> the commit in concern.</strong> i.e., we can traverse the history of the working directory simply by checking out the
+                  commits we are interested in.</p>
+                <div>
+                  <popover id="pop:rcs" placement="top">
+                    <div slot="content">
+                      <div>
+                        <p><strong>RCS</strong> : Revision Control Software.</p>
+                      </div>
                     </div>
-                  </div>
-                </popover>
+                  </popover>
+                </div>
               </div>
-            </div>
-            <div></div>
-        </div>
-      </panel>
-      <panel type="seamless" header="#### Remote Repositories" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
+              <div></div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Remote Repositories" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            </span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain remote repositories</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong>Remote repositories are copies of a repo that are hosted on remote computers.</strong> They are especially useful for sharing the revision history of a codebase among team members of a multi-person project. <span class="dimmed">They can also serve as a remote backup of your code base.</span></p>
-              <p><strong>You can <mark><em>clone</em></mark> a remote repo onto your computer</strong> which will create a copy of a remote repo on your computer, including the version history as the remote repo.</p>
-              <p><strong>You can <mark><em>push</em></mark> new commits in your clone to the remote repo</strong> which will copy the new commits onto the remote repo. Note that pushing to a remote repo requires you to have write-access to it.</p>
-              <p><strong>You can <mark><em>pull</em></mark> from the remote repos to receive new commits in the remote repo</strong>. Pulling is used to <em>sync</em> your local repo with latest changes to the remote repo.</p>
-              <p>While it is possible to set up your own remote repo on a server, an easier option is to use a remote repo hosting service such as GitHub or BitBucket.</p>
-              <p><strong>A <mark><em>fork</em></mark> is a remote copy of a remote repo</strong>. If there is a remote repo that you want to push to but you do not have write access to it, you can fork the remote repo, which gives you your own remote repo
-                that you can push to.</p>
-              <p><strong>A <mark><em>pull request</em></mark> is mechanism for contributing code to a remote repo.</strong> It is a formal request sent to the maintainers of the repo asking them to pull your new code to their repo.</p>
-              <div v-closeable="" alt="slideshow: remote repo scenario">
-                <p>Here is a scenario that includes all the concepts introduced above (click on the slide to advance the animation):</p>
-                <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212290&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
-                    mozallowfullscreen="" allowfullscreen></iframe></div>
-              </div>
-            </div>
-            <div></div>
-        </div>
-      </panel>
-      <panel type="seamless" header="#### Branching" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            </span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain branching</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong><mark><em>Branching</em></mark> is the process of evolving multiple versions of the software in parallel.</strong> For example, one team member can create a new branch and add an experimental feature to it while the rest of the team
-                keeps working on another branch. Branches can be given names e.g. <code>master</code> <code>release</code> <code>dev</code>.</p>
-              <p><strong>A branch can be <mark><em>merged</em></mark> into another branch.</strong> Merging usually result in a new commit that represents the changes done in the branch being merged.</p>
-              <pic src="/website-base/book/revisionControl/branching/images/diagram.png" height="180">
-                <strong>Branching and merging</strong></pic>
-              <p><strong><mark><em>Merge conflicts</em></mark> happen when you try to merge two branches that had changed the same part of the code</strong> and the RCS software cannot decide which changes to keep. In those cases we have to ‘resolve’ those
-                conflicts manually.</p>
-            </div>
-            <div>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain remote repositories</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
               <div>
-                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                  <div>
-                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is branching?">
-                      <question has-input="true">
-                        <p>In the context of RCS, what is the <em>branching</em>? What is the need for branching?.</p>
-                      </question>
-                    </panel>
-                  </div>
-                  <div>
-                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is merging?">
-                      <question has-input="true">
-                        <p>In the context of RCS, what is the <em>merging</em> branches? How can it lead to <em>merge conflicts</em>?.</p>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
+                <p><strong>Remote repositories are copies of a repo that are hosted on remote computers.</strong> They are especially useful for sharing the revision history of a codebase among team members of a multi-person project. <span class="dimmed">They can also serve as a remote backup of your code base.</span></p>
+                <p><strong>You can <mark><em>clone</em></mark> a remote repo onto your computer</strong> which will create a copy of a remote repo on your computer, including the version history as the remote repo.</p>
+                <p><strong>You can <mark><em>push</em></mark> new commits in your clone to the remote repo</strong> which will copy the new commits onto the remote repo. Note that pushing to a remote repo requires you to have write-access to it.</p>
+                <p><strong>You can <mark><em>pull</em></mark> from the remote repos to receive new commits in the remote repo</strong>. Pulling is used to <em>sync</em> your local repo with latest changes to the remote repo.</p>
+                <p>While it is possible to set up your own remote repo on a server, an easier option is to use a remote repo hosting service such as GitHub or BitBucket.</p>
+                <p><strong>A <mark><em>fork</em></mark> is a remote copy of a remote repo</strong>. If there is a remote repo that you want to push to but you do not have write access to it, you can fork the remote repo, which gives you your own remote repo
+                  that you can push to.</p>
+                <p><strong>A <mark><em>pull request</em></mark> is mechanism for contributing code to a remote repo.</strong> It is a formal request sent to the maintainers of the repo asking them to pull your new code to their repo.</p>
+                <div v-closeable="" alt="slideshow: remote repo scenario">
+                  <p>Here is a scenario that includes all the concepts introduced above (click on the slide to advance the animation):</p>
+                  <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212290&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                      mozallowfullscreen="" allowfullscreen></iframe></div>
+                </div>
               </div>
-            </div>
-        </div>
-      </panel>
-      <panel type="seamless" header="#### DRCS vs CRCS" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
+              <div></div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Branching" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain branching</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong><mark><em>Branching</em></mark> is the process of evolving multiple versions of the software in parallel.</strong> For example, one team member can create a new branch and add an experimental feature to it while the rest of the
+                  team keeps working on another branch. Branches can be given names e.g. <code>master</code> <code>release</code> <code>dev</code>.</p>
+                <p><strong>A branch can be <mark><em>merged</em></mark> into another branch.</strong> Merging usually result in a new commit that represents the changes done in the branch being merged.</p>
+                <pic src="/website-base/book/revisionControl/branching/images/diagram.png" height="180">
+                  <strong>Branching and merging</strong></pic>
+                <p><strong><mark><em>Merge conflicts</em></mark> happen when you try to merge two branches that had changed the same part of the code</strong> and the RCS software cannot decide which changes to keep. In those cases we have to ‘resolve’ those
+                  conflicts manually.</p>
+              </div>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is branching?">
+                        <question has-input="true">
+                          <p>In the context of RCS, what is the <em>branching</em>? What is the need for branching?.</p>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is merging?">
+                        <question has-input="true">
+                          <p>In the context of RCS, what is the <em>merging</em> branches? How can it lead to <em>merge conflicts</em>?.</p>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### DRCS vs CRCS" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            </span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain DRCS vs CRCS</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong>RCS can be done in two ways: the <em>centralized</em> way and the <em>distributed</em> way.</strong></p>
-              <p><strong>Centralized RCS (CRCS for short)uses a central remote repo that is shared by the team.</strong> Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository. Older RCS
-                tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo either. Instead, they force users to do all the versioning with the remote repo.</p>
-              <pic src="/website-base/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png" height="180">
-                <strong>The centralized RCS approach without any local repos (e.g., CVS, SVN)</strong></pic>
-              <p><strong>Distributed RCS (DRCS for short, also known as Decentralized RCS) allows multiple remote repos</strong> and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team. For example,
-                every team member can have his/her own remote repository in addition to their own local repository, as shown in the diagram below. Git and Mercurial are some prominent RCS tools that support the distributed approach.</p>
-              <pic src="/website-base/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png" height="240">
-                <strong>The decentralized RCS approach</strong></pic>
-            </div>
-            <div></div>
-        </div>
-      </panel>
-      <panel type="seamless" header="#### Forking Flow" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain DRCS vs CRCS</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>RCS can be done in two ways: the <em>centralized</em> way and the <em>distributed</em> way.</strong></p>
+                <p><strong>Centralized RCS (CRCS for short)uses a central remote repo that is shared by the team.</strong> Team members download (‘pull’) and upload (‘push’) changes between their own local repositories and the central repository. Older RCS
+                  tools such as CVS and SVN support only this model. Note that these older RCS do not support the notion of a local repo either. Instead, they force users to do all the versioning with the remote repo.</p>
+                <pic src="/website-base/book/revisionControl/drcsVsCrcs/images/crcsDiagram.png" height="180">
+                  <strong>The centralized RCS approach without any local repos (e.g., CVS, SVN)</strong></pic>
+                <p><strong>Distributed RCS (DRCS for short, also known as Decentralized RCS) allows multiple remote repos</strong> and pulling and pushing can be done among them in arbitrary ways. The workflow can vary differently from team to team. For
+                  example, every team member can have his/her own remote repository in addition to their own local repository, as shown in the diagram below. Git and Mercurial are some prominent RCS tools that support the distributed approach.</p>
+                <pic src="/website-base/book/revisionControl/drcsVsCrcs/images/drcsDiagram.png" height="240">
+                  <strong>The decentralized RCS approach</strong></pic>
+              </div>
+              <div></div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Forking Flow" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            </span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain forking workflow</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <img src="/website-base/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+            <span
+              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain forking workflow</span>
+              </span>
+              </span>
+              </span>
               <p></p>
-              <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
-              <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
-              <ol>
-                <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
-                <li>Jean pushes the branch to her fork.</li>
-                <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
-                <li>Other members review Jean’s pull request.</li>
-                <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
-                <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
-                <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own fork.</li>
-              </ol>
-            </div>
-            <div>
               <div>
-                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                  <ul>
-                    <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
-                  </ul>
-                </panel>
+                <img src="/website-base/book/revisionControl/forkingWorkflow/images/diagram.png" height="330">
+                <p></p>
+                <p><strong>In the <em>forking workflow</em>, the 'official' version of the software is kept in a remote repo designated as the 'main repo'. All team members fork the main repo create pull requests from their fork to the main repo.</strong></p>
+                <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
+                <ol>
+                  <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.</li>
+                  <li>Jean pushes the branch to her fork.</li>
+                  <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
+                  <li>Other members review Jean’s pull request.</li>
+                  <li>If reviewers suggested any changes, Jean updates the PR accordingly.</li>
+                  <li>When reviewers are satisfied with the PR, one of the members (usually the team lead or a designated 'maintainer' of the main repo) merges the PR, which brings Jean’s code to the main repo.</li>
+                  <li>Other members, realizing there is new code in the upstream repo, sync their forks with the new upstream repo (i.e. the main repo). This is done by pulling the new code to their own local repo and pushing the updated code to their own
+                    fork.</li>
+                </ol>
               </div>
-            </div>
-        </div>
-      </panel>
-      <panel type="seamless" header="#### Feature Branch Flow" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                    <ul>
+                      <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li>
+                    </ul>
+                  </panel>
+                </div>
+              </div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Feature Branch Flow" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </font>
-            </span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain feature branch flow</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong><em>Feature branch</em> workflow is similar to forking workflow except there are no forks or PRs.</strong> Everyone is pushing/pulling from the same remote repo. The phrase <em>feature branch</em> is used because each new feature
-                (or bug fix, or any other modification) is done in a separate branch.</p>
-              <img src="/website-base/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain feature branch flow</span>
+              </span>
+              </span>
+              </span>
               <p></p>
-            </div>
-            <div>
               <div>
-                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                  <ul>
-                    <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">A detailed explanation of the Feature Branch Workflow</a> - From Atlassian</li>
-                  </ul>
-                </panel>
+                <p><strong><em>Feature branch</em> workflow is similar to forking workflow except there are no forks or PRs.</strong> Everyone is pushing/pulling from the same remote repo. The phrase <em>feature branch</em> is used because each new feature
+                  (or bug fix, or any other modification) is done in a separate branch.</p>
+                <img src="/website-base/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
+                <p></p>
               </div>
-            </div>
-        </div>
-      </panel>
-      <panel type="seamless" header="#### Centralized Flow" expanded="">
-        <div class="indented">
-          <span class="badge badge-light">
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                    <ul>
+                      <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">A detailed explanation of the Feature Branch Workflow</a> - From Atlassian</li>
+                    </ul>
+                  </panel>
+                </div>
+              </div>
+          </div>
+        </panel>
+        <panel type="seamless" header="#### Centralized Flow" expanded="">
+          <div class="indented">
+            <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </font>
-            </span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain centralized flow</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the master branch.</strong></p>
-            </div>
-            <div>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </font>
+              </span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain centralized flow</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
               <div>
-                <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                  <ul>
-                    <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li>
-                  </ul>
-                </panel>
+                <p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the master branch.</strong></p>
               </div>
-            </div>
-        </div>
-      </panel>
+              <div>
+                <div>
+                  <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                    <ul>
+                      <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li>
+                    </ul>
+                  </panel>
+                </div>
+              </div>
+          </div>
+        </panel>
+      </div>
     </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 03:23:08 GMT</small></div>
 </footer>
 </div>
 </body>

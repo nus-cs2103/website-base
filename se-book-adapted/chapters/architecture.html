@@ -24,7 +24,7 @@
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
-<div id="app" class="container-fluid">
+<div id="app">
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
@@ -153,268 +153,244 @@
     </div>
   </div>
   <div id="page-content">
-    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-    <div class="website-content">
-      <div>
-        <navbar placement="top" type="inverse">
-          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
-          <dropdown text="Nested" class="nav-link">
-            <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
-            <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
-          </dropdown>
-          <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
-          <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-          <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-          <dropdown text="Links" class="nav-link">
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-            <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
-            <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
-            <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
-          </dropdown>
-          <li slot="right" class="nav-link">
-            <form class="navbar-form">
-              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-            </form>
-          </li>
-        </navbar>
-      </div>
-      <p><span class="dimmed"><strong><span></span></strong>
-        </span>
-      </p>
-      <div id="title">
+    <div id="content-wrapper">
+      <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+      <div class="website-content">
         <div>
-          <h1 id="software-architecture">Software Architecture</h1>
+          <navbar placement="top" type="inverse">
+            <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span><span class="text-white">Textbook: <strong>Software Engineering for Self-Directed Learners</strong></span> <span class="badge badge-pill badge-success">CS2103/T edition - 2018</span></span>
+            <li slot="right" class="nav-link">
+              <form class="navbar-form">
+                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+              </form>
+            </li>
+          </navbar>
         </div>
-      </div>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
-<h2 id="introduction">Introduction</h2></div></span>
-        <panel type="seamless" header="#### What" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain Software Architecture</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <blockquote>
-                <p>The software architecture of a program or computing system is the structure or structures of the system, which comprise software elements, the externally visible properties of those elements, and the relationships among them. Architecture
-                  is concerned with the public side of interfaces; private details of elements—details having to do solely with internal implementation—are not architectural.
-                  <sub>-- <em>Software Architecture in Practice (2nd edition)</em>, Bass, Clements, and Kazman</sub></p>
-              </blockquote>
-              <p><strong>The software architecture shows the overall organization of the system and can be viewed as a very high-level design.</strong> It usually consists of a set of interacting components that fit together to achieve the required functionality.
-                It should be a simple and technically viable structure that is well-understood and agreed-upon by everyone in the development team, and it forms the basis for the implementation.</p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> A possible architecture for a <em>Minesweeper</em> game</p>
-                <table>
-                  <tr>
-                    <td><img src="/website-base/book/architecture/introduction/what/images/minesweeper.png" height="220"></td>
-                    <td width="10px"></td>
-                    <td><img src="/website-base/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></td>
-                  </tr>
-                </table>
-                <p></p>
-                <p>Main components:</p>
-                <ul>
-                  <li><code>GUI</code>: Graphical user interface</li>
-                  <li><code>TextUi</code>: Textual user interface</li>
-                  <li><code>ATD</code>: An automated test driver used for testing the game logic</li>
-                  <li><code>Logic</code>: computation and logic of the game</li>
-                  <li><code>Store</code>: storage and retrieval of game data (high scores etc.)</li>
-                </ul>
-              </tip-box>
-              <p><strong>The architecture is typically designed by the <em>software architect</em></strong>, who provides the technical vision of the system and makes high-level (i.e. architecture-level) technical decisions about the project.</p>
-            </div>
-            <div>
-              <div>
-                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                  <div>
-                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about architecture">
-                      <question>
-                        <p>Choose the correct statement</p>
-                        <ul class="task-list">
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The architecture of a system should be simple enough for all team members to understand it.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The architecture is primarily a high-level design of the system.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The architecture is usually decided by the project manager.</li>
-                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The architecture can contain details private to a component.</li>
-                        </ul>
-                        <div slot="answer">
-                          <p>(a)(b)</p>
-                          <p><s>(c)</s> Reason: Architecture is usually designed by the Architect</p>
-                          <p><s>(d)</s> Reason:</p>
-                          <blockquote>
-                            <p>... private details of elements—details having to do solely with internal implementation—are not architectural.</p>
-                          </blockquote>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
-              </div>
-            </div>
+        <p><span class="dimmed"><strong><span></span></strong>
+          </span>
+        </p>
+        <div id="title">
+          <div>
+            <h1 id="software-architecture">Software Architecture</h1>
           </div>
-        </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
-<h2 id="architecture-diagrams">Architecture Diagrams</h2></div></span>
-        <panel type="seamless" header="#### Reading" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret an architecture diagram</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p><strong>Architecture diagrams are free-form diagrams.</strong> There is no universally adopted standard notation for architecture diagrams. Any symbol that reasonably describes the architecture may be used.</p>
-              <div v-closeable="" alt="architecture diagram examples" id="architecture-diagram-examples">
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> Some example architecture diagrams:</p>
-                  <tabs>
-                  
-                    <tab header="TEAMMATES">
-                      <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
-                      <p>
-                        <hr>
-                      </p>
-                    </tab>
-                  
-                    <tab header="se-edu/addressbook-level4">
-                      <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
-                      <p>
-                        <hr>
-                      </p>
-                    </tab>
-                  
-                    <tab header="Example 1">
-                      <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
-                        <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
-                      <p>
-                        <hr>
-                      </p>
-                    </tab>
-                  
-                    <tab header="Example 2">
-                      <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
-                        <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
-                      <p>
-                        <hr>
-                      </p>
-                    </tab>
-                  
-                    <tab header="Example 3">
-                      <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
-                        <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
-                      <p>
-                        <hr>
-                      </p>
-                    </tab>
-                  </tabs>
-                </tip-box>
-              </div>
-            </div>
-            <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Drawing" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can draw an architecture diagram</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p>While architecture diagrams have no standard notation, try to follow these basic guidelines when drawing them.</p>
-              <ul>
-                <li>
-                  <p>Minimize the variety of symbols. If the symbols you choose do not have widely-understood meanings <span class="dimmed"> e.g. A drum symbol is widely-understood as representing a database</span>, explain their meaning.</p>
-                </li>
-                <li>
-                  <p>Avoid the indiscriminate use of double-headed arrows to show interactions between components.</p>
-                </li>
-              </ul>
-              <tip-box>
-                <p><span class="fas fa-cube"></span>Consider the two architecture diagrams of the same software given below. Because <code>Diagram 2</code> uses double headed arrows, the important fact that GUI has a bi-directional dependency with the Logic
-                  component is no longer captured.</p>
-                <img src="/website-base/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190">
-                <p></p>
-              </tip-box>
-            </div>
-            <div></div>
-          </div>
-        </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
-<h2 id="architectural-styles">Architectural Styles</h2></div></span>
+        </div>
         <panel type="seamless" expanded="">
           <span slot="header" class="card-title"><div>
-<h3 id="introduction-2">Introduction</h3></div></span>
+<h2 id="introduction">Introduction</h2></div></span>
           <panel type="seamless" header="#### What" expanded="">
             <div class="indented">
               <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain architectural styles</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain Software Architecture</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <blockquote>
+                  <p>The software architecture of a program or computing system is the structure or structures of the system, which comprise software elements, the externally visible properties of those elements, and the relationships among them. Architecture
+                    is concerned with the public side of interfaces; private details of elements—details having to do solely with internal implementation—are not architectural.
+                    <sub>-- <em>Software Architecture in Practice (2nd edition)</em>, Bass, Clements, and Kazman</sub></p>
+                </blockquote>
+                <p><strong>The software architecture shows the overall organization of the system and can be viewed as a very high-level design.</strong> It usually consists of a set of interacting components that fit together to achieve the required functionality.
+                  It should be a simple and technically viable structure that is well-understood and agreed-upon by everyone in the development team, and it forms the basis for the implementation.</p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> A possible architecture for a <em>Minesweeper</em> game</p>
+                  <table>
+                    <tr>
+                      <td><img src="/website-base/book/architecture/introduction/what/images/minesweeper.png" height="220"></td>
+                      <td width="10px"></td>
+                      <td><img src="/website-base/book/architecture/introduction/what/images/minesweeperArchitecture.png" height="160"></td>
+                    </tr>
+                  </table>
+                  <p></p>
+                  <p>Main components:</p>
+                  <ul>
+                    <li><code>GUI</code>: Graphical user interface</li>
+                    <li><code>TextUi</code>: Textual user interface</li>
+                    <li><code>ATD</code>: An automated test driver used for testing the game logic</li>
+                    <li><code>Logic</code>: computation and logic of the game</li>
+                    <li><code>Store</code>: storage and retrieval of game data (high scores etc.)</li>
+                  </ul>
+                </tip-box>
+                <p><strong>The architecture is typically designed by the <em>software architect</em></strong>, who provides the technical vision of the system and makes high-level (i.e. architecture-level) technical decisions about the project.</p>
+              </div>
+              <div>
                 <div>
-                  <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
-                    <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
-                  </tip-box>
-                  <modal title="" id="modal:archiStyles-buildingArchitectures">
-                    <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg"><br>
-                      <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
-                  </modal>
+                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                    <div>
+                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about architecture">
+                        <question>
+                          <p>Choose the correct statement</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The architecture of a system should be simple enough for all team members to understand it.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The architecture is primarily a high-level design of the system.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The architecture is usually decided by the project manager.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The architecture can contain details private to a component.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)(b)</p>
+                            <p><s>(c)</s> Reason: Architecture is usually designed by the Architect</p>
+                            <p><s>(d)</s> Reason:</p>
+                            <blockquote>
+                              <p>... private details of elements—details having to do solely with internal implementation—are not architectural.</p>
+                            </blockquote>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
                 </div>
-                <div></div>
+              </div>
             </div>
           </panel>
         </panel>
         <panel type="seamless" expanded="">
           <span slot="header" class="card-title"><div>
-<h3 id="n-tier-architectural-style">N-tier Architectural Style</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
+<h2 id="architecture-diagrams">Architecture Diagrams</h2></div></span>
+          <panel type="seamless" header="#### Reading" expanded="">
             <div class="indented">
               <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can interpret an architecture diagram</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>Architecture diagrams are free-form diagrams.</strong> There is no universally adopted standard notation for architecture diagrams. Any symbol that reasonably describes the architecture may be used.</p>
+                <div v-closeable="" alt="architecture diagram examples" id="architecture-diagram-examples">
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Some example architecture diagrams:</p>
+                    <tabs>
+                    
+                      <tab header="TEAMMATES">
+                        <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
+                        <p>
+                          <hr>
+                        </p>
+                      </tab>
+                    
+                      <tab header="se-edu/addressbook-level4">
+                        <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
+                        <p>
+                          <hr>
+                        </p>
+                      </tab>
+                    
+                      <tab header="Example 1">
+                        <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
+                          <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
+                        <p>
+                          <hr>
+                        </p>
+                      </tab>
+                    
+                      <tab header="Example 2">
+                        <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
+                          <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
+                        <p>
+                          <hr>
+                        </p>
+                      </tab>
+                    
+                      <tab header="Example 3">
+                        <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
+                          <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
+                        <p>
+                          <hr>
+                        </p>
+                      </tab>
+                    </tabs>
+                  </tip-box>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Drawing" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can draw an architecture diagram</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p>While architecture diagrams have no standard notation, try to follow these basic guidelines when drawing them.</p>
+                <ul>
+                  <li>
+                    <p>Minimize the variety of symbols. If the symbols you choose do not have widely-understood meanings <span class="dimmed"> e.g. A drum symbol is widely-understood as representing a database</span>, explain their meaning.</p>
+                  </li>
+                  <li>
+                    <p>Avoid the indiscriminate use of double-headed arrows to show interactions between components.</p>
+                  </li>
+                </ul>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span>Consider the two architecture diagrams of the same software given below. Because <code>Diagram 2</code> uses double headed arrows, the important fact that GUI has a bi-directional dependency with the
+                    Logic component is no longer captured.</p>
+                  <img src="/website-base/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </panel>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
+<h2 id="architectural-styles">Architectural Styles</h2></div></span>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
+<h3 id="introduction-2">Introduction</h3></div></span>
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain architectural styles</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
+                      <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
+                    </tip-box>
+                    <modal title="" id="modal:archiStyles-buildingArchitectures">
+                      <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg"><br>
+                        <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
+                    </modal>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
+<h3 id="n-tier-architectural-style">N-tier Architectural Style</h3></div></span>
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can identify n-tier architectural style</span>
@@ -432,112 +408,109 @@
                   <p></p>
                 </div>
                 <div></div>
-            </div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="client-server-architectural-style">Client-server Architectural Style</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can identify the client-server architectural style</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>The <em>client-server</em> style has at least one component playing the role of a server and at least one client component accessing the services of the server.</strong> This is an architectural style used often in distributed
-                    applications.</p>
-                  <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can identify the client-server architectural style</span>
+                  </span>
+                  </span>
+                  </span>
                   <p></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> The online game and the Web application below uses the client-server style.</p>
-                    <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
-                </div>
-                <div></div>
-            </div>
-          </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
-<h3 id="transaction-processing-architectural-style">Transaction Processing Architectural Style</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can identify transaction processing architectural style</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong> Task
-                    queuing, ordering, undo etc. are handled by the dispatcher.</p>
-                  <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> In this example from a Banking system, transactions are generated by the terminals used by
-                      <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
-                    <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120"></tip-box>
-                </div>
-                <div></div>
-            </div>
-          </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
-<h3 id="service-oriented-architectural-style">Service-oriented Architectural Style</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can identify service-oriented architectural style</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>The <em>service-oriented architecture</em> (SOA) style builds applications by combining functionalities packaged as <em>programmatically accessible services</em></strong>. SOA aims to achieve interoperability between distributed
-                    services, which may not even be implemented using the same programming language. A common way to implement SOA is through the use of <em>XML web services</em> where the web is used as the medium for the services to interact, and XML
-                    is used as the language of communication between service providers and service users.</p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants to charge HSBC credit cards.
-                      Using these web services, an ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and HSBC services follow the SOA architecture,
-                      their web services can be reused by the web application, even if all three systems use different programming platforms.</p>
-                    <img src="/website-base/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
+                  <div>
+                    <p><strong>The <em>client-server</em> style has at least one component playing the role of a server and at least one client component accessing the services of the server.</strong> This is an architectural style used often in distributed
+                      applications.</p>
+                    <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServer.png" height="120">
                     <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-            </div>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> The online game and the Web application below uses the client-server style.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/clientServer/what/images/clientServerExamples.png" height="200"></tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
+<h3 id="transaction-processing-architectural-style">Transaction Processing Architectural Style</h3></div></span>
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can identify transaction processing architectural style</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p><strong>The <em>transaction processing</em> style divides the workload of the system down to a number of <em>transactions</em> which are then given to a <em>dispatcher</em> that controls the execution of each transaction.</strong>                      Task queuing, ordering, undo etc. are handled by the dispatcher.</p>
+                    <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> In this example from a Banking system, transactions are generated by the terminals used by
+                        <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120"></tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
+<h3 id="service-oriented-architectural-style">Service-oriented Architectural Style</h3></div></span>
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can identify service-oriented architectural style</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
+                  <div>
+                    <p><strong>The <em>service-oriented architecture</em> (SOA) style builds applications by combining functionalities packaged as <em>programmatically accessible services</em></strong>. SOA aims to achieve interoperability between distributed
+                      services, which may not even be implemented using the same programming language. A common way to implement SOA is through the use of <em>XML web services</em> where the web is used as the medium for the services to interact, and
+                      XML is used as the language of communication between service providers and service users.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Suppose that <a href="http://Amazon.com">Amazon.com</a> provides a web service for customers to browse and buy merchandise, while HSBC provides a web service for merchants to charge HSBC credit cards.
+                        Using these web services, an ‘eBookShop’ web application can be developed that allows HSBC customers to buy merchandise from Amazon and pay for them using HSBC credit cards. Because both Amazon and HSBC services follow the SOA
+                        architecture, their web services can be reused by the web application, even if all three systems use different programming platforms.</p>
+                      <img src="/website-base/book/architecture/architecturalStyles/serviceOriented/what/images/amazonWebServices.png" height="280">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div></div>
+              </div>
+            </panel>
+          </panel>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="event-driven-architectural-style">Event-driven Architectural Style</h3></div></span>
-          <panel type="seamless" header="#### What" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
+            <panel type="seamless" header="#### What" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can identify event-driven architectural style</span>
@@ -554,114 +527,115 @@
                     <img src="/website-base/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
                 </div>
                 <div></div>
-            </div>
+              </div>
+            </panel>
           </panel>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><div>
+          <panel type="seamless" expanded="">
+            <span slot="header" class="card-title"><div>
 <h3 id="more">More</h3></div></span>
-          <panel type="seamless" header="#### More Styles" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+            <panel type="seamless" header="#### More Styles" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </font>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can name several other architecture styles</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>Other well-known architectural styles include the <em>pipes-and-filters architectures</em>, the <em>broker architectures</em>, the <em>peer-to-peer architectures</em>, and the <em>message-oriented architectures</em>.</strong></p>
-                </div>
-                <div>
+                <span
+                  class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </font>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can name several other architecture styles</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
                   <div>
-                    <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                      <ul>
-                        <li>
-                          <p><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"><strong>Pipes and Filters pattern</strong></a> -- an article from Microsoft about the pipes and filters architectural style</p>
-                        </li>
-                        <li>
-                          <p><a href="https://en.wikipedia.org/wiki/Broker_pattern"><strong>Broker pattern</strong></a> -- Wikipedia article on the broker architectural style</p>
-                        </li>
-                        <li>
-                          <p><a href="https://en.wikipedia.org/wiki/Peer-to-peer"><strong>Peer-to-peer pattern</strong></a> -- Wikipedia article on the P2P architectural style</p>
-                        </li>
-                        <li>
-                          <p><a href="http://searchmicroservices.techtarget.com/definition/message-driven-processing"><strong>Message-driven processing</strong></a> -- a post by <em>Margaret Rouse</em></p>
-                        </li>
-                      </ul>
-                    </panel>
+                    <p><strong>Other well-known architectural styles include the <em>pipes-and-filters architectures</em>, the <em>broker architectures</em>, the <em>peer-to-peer architectures</em>, and the <em>message-oriented architectures</em>.</strong></p>
                   </div>
-                </div>
-            </div>
-          </panel>
-          <panel type="seamless" header="#### Using Styles" expanded="">
-            <div class="indented">
-              <span class="badge badge-light">
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
+                        <ul>
+                          <li>
+                            <p><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"><strong>Pipes and Filters pattern</strong></a> -- an article from Microsoft about the pipes and filters architectural style</p>
+                          </li>
+                          <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Broker_pattern"><strong>Broker pattern</strong></a> -- Wikipedia article on the broker architectural style</p>
+                          </li>
+                          <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Peer-to-peer"><strong>Peer-to-peer pattern</strong></a> -- Wikipedia article on the P2P architectural style</p>
+                          </li>
+                          <li>
+                            <p><a href="http://searchmicroservices.techtarget.com/definition/message-driven-processing"><strong>Message-driven processing</strong></a> -- a post by <em>Margaret Rouse</em></p>
+                          </li>
+                        </ul>
+                      </panel>
+                    </div>
+                  </div>
+              </div>
+            </panel>
+            <panel type="seamless" header="#### Using Styles" expanded="">
+              <div class="indented">
+                <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how architectural styles are combined</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>Most applications use a mix of these architectural styles.</strong></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> An application can use a client-server architecture where the server component comprises several layers, i.e. it uses the n-Tier architecture.</p>
-                  </tip-box>
-                </div>
-                <div>
+                <span
+                  class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  </span>
+                  </span>
+                  </span>
+                  <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how architectural styles are combined</span>
+                  </span>
+                  </span>
+                  </span>
+                  <p></p>
                   <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                      <div>
-                        <panel header="Q: Comment on how to use architecture styles in Minesweeper.">
-                          <question has-input="true">
-                            <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before
-                              any of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
-                            <p>Comment on how each of the following architectural styles (these architectural styles are patterns too) could be potentially useful when designing the architecture for this game.</p>
-                            <ol>
-                              <li>Client-server</li>
-                              <li>Transaction-processing</li>
-                              <li>SOA (Service Oriented Architecture)</li>
-                              <li>multi-layer (n-tier)</li>
-                            </ol>
-                            <div slot="answer">
-                              <ol>
-                                <li>Client-server – Clients can be the game UI running on player PCs. The server can be the game logic running on one machine.</li>
-                                <li>Transaction-processing – Each player action can be packaged as transactions (by the client component running on the player PC) and sent to the server. Server processes them in the order they are received.</li>
-                                <li>SOA – The game can access a remote web services for things such as getting new puzzles, validating puzzles, charging players subscription fees, etc.</li>
-                                <li>Multi-layer – The server component can have two layers: logic layer and the storage layer.</li>
-                              </ol>
-                              <img src="/website-base/book/architecture/architecturalStyles/more/usingStyles/images/minesweeperExample.png" height="300">
-                              <p></p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
+                    <p><strong>Most applications use a mix of these architectural styles.</strong></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> An application can use a client-server architecture where the server component comprises several layers, i.e. it uses the n-Tier architecture.</p>
+                    </tip-box>
                   </div>
-                </div>
-            </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="Q: Comment on how to use architecture styles in Minesweeper.">
+                            <question has-input="true">
+                              <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before
+                                any of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
+                              <p>Comment on how each of the following architectural styles (these architectural styles are patterns too) could be potentially useful when designing the architecture for this game.</p>
+                              <ol>
+                                <li>Client-server</li>
+                                <li>Transaction-processing</li>
+                                <li>SOA (Service Oriented Architecture)</li>
+                                <li>multi-layer (n-tier)</li>
+                              </ol>
+                              <div slot="answer">
+                                <ol>
+                                  <li>Client-server – Clients can be the game UI running on player PCs. The server can be the game logic running on one machine.</li>
+                                  <li>Transaction-processing – Each player action can be packaged as transactions (by the client component running on the player PC) and sent to the server. Server processes them in the order they are received.</li>
+                                  <li>SOA – The game can access a remote web services for things such as getting new puzzles, validating puzzles, charging players subscription fees, etc.</li>
+                                  <li>Multi-layer – The server component can have two layers: logic layer and the storage layer.</li>
+                                </ol>
+                                <img src="/website-base/book/architecture/architecturalStyles/more/usingStyles/images/minesweeperExample.png" height="300">
+                                <p></p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+              </div>
+            </panel>
           </panel>
         </panel>
-      </panel>
+      </div>
     </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 03:23:08 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -24,7 +24,7 @@
     <link rel="icon" href="/website-base/favicon.ico">
 </head>
 <body>
-<div id="app" class="container-fluid">
+<div id="app">
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
@@ -153,59 +153,36 @@
     </div>
   </div>
   <div id="page-content">
-    <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-    <div class="website-content">
-      <div>
-        <navbar placement="top" type="inverse">
-          <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
-          <dropdown text="Nested" class="nav-link">
-            <li><a href="/website-base/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
-            <li><a href="/website-base/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
-          </dropdown>
-          <li><a href="/website-base/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
-          <li><a href="/website-base/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-          <li><a href="/website-base/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-          <dropdown text="Links" class="nav-link">
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-            <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
-            <li><a href="/website-base/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> IVLE Announcements</a></li>
-            <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> IVLE File Submissions</a></li>
-            <li><a href="/website-base/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
-            <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
-            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
-            <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
-          </dropdown>
-          <li slot="right" class="nav-link">
-            <form class="navbar-form">
-              <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
-            </form>
-          </li>
-        </navbar>
-      </div>
-      <p><span class="dimmed"><strong><span></span></strong>
-        </span>
-      </p>
-      <div id="title">
+    <div id="content-wrapper">
+      <link rel="stylesheet" href="/website-base/book/css/textbook.css">
+      <div class="website-content">
         <div>
-          <h1 id="object-oriented-programming">Object-Oriented Programming</h1>
+          <navbar placement="top" type="inverse">
+            <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span><span class="text-white">Textbook: <strong>Software Engineering for Self-Directed Learners</strong></span> <span class="badge badge-pill badge-success">CS2103/T edition - 2018</span></span>
+            <li slot="right" class="nav-link">
+              <form class="navbar-form">
+                <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+              </form>
+            </li>
+          </navbar>
         </div>
-      </div>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
+        <p><span class="dimmed"><strong><span></span></strong>
+          </span>
+        </p>
+        <div id="title">
+          <div>
+            <h1 id="object-oriented-programming">Object-Oriented Programming</h1>
+          </div>
+        </div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
 <h2 id="introduction">Introduction</h2></div></span>
-        <panel type="seamless" header="#### What" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+          <panel type="seamless" header="#### What" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can describe OOP at a higher level</span>
@@ -306,18 +283,17 @@
                   </panel>
                 </div>
               </div>
-          </div>
+            </div>
+          </panel>
         </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
 <h2 id="objects">Objects</h2></div></span>
-        <panel type="seamless" header="#### What" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+          <panel type="seamless" header="#### What" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can describe how OOP relates to the real world</span>
@@ -593,14 +569,13 @@
                   </panel>
                 </div>
               </div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Objects as Abstractions" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Objects as Abstractions" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the abstraction aspect of OOP</span>
@@ -617,14 +592,13 @@
                 </tip-box>
               </div>
               <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Encapsulation Of Objects" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Encapsulation Of Objects" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the encapsulation aspect of OOP</span>
@@ -665,18 +639,17 @@
                   </panel>
                 </div>
               </div>
-          </div>
+            </div>
+          </panel>
         </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
 <h2 id="classes">Classes</h2></div></span>
-        <panel type="seamless" header="#### What" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+          <panel type="seamless" header="#### What" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the relationship between classes and objects </span>
@@ -760,14 +733,13 @@
                   </panel>
                 </div>
               </div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Class Level Members" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Class Level Members" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain class-level members</span>
@@ -832,14 +804,13 @@
                   </panel>
                 </div>
               </div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Enumerations" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Enumerations" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of enumerations</span>
@@ -869,93 +840,93 @@
                   </panel>
                 </div>
               </div>
-          </div>
-        </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
-<h2 id="associations">Associations</h2></div></span>
-        <panel type="seamless" header="#### What" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-              aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
-            </span>
-            </span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain associations</span>
-            </span>
-            </span>
-            </span>
-            <p></p>
-            <div>
-              <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such <strong>connections between objects are called <em>associations</em>.</strong></p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> Suppose an OOP program for managing a learning management system creates an object structure to represent the related objects. In that object structure we can expect to have associations between a<code>Course</code>                  object that represents a specific course and <code>Student</code> objects that represents students taking that course.</p>
-              </tip-box>
-              <p><strong>Associations in an object structure can change over time</strong>.</p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> To continue the previous example, the associations between a <code>Course</code> object and <code>Student</code> objects can change as students enroll in the module or drop the module over time.</p>
-              </tip-box>
-              <p><strong>Associations among objects can be generalized as associations between the corresponding classles too.</strong></p>
-              <tip-box>
-                <p><span class="fas fa-cube"></span> In our example, as some <code>Course</code> objects can have associations with some <code>Student</code> objects, we can view it as an association between the <code>Course</code> class and the <code>Student</code>                  class.</p>
-              </tip-box>
-              <h5 id="implementing-associations"><big>Implementing associations</big></h5>
-              <p><strong>We use instance level variables to implement associations.</strong></p>
             </div>
-            <div></div>
-          </div>
+          </panel>
         </panel>
-        <panel type="seamless" header="#### Navigability" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
+<h2 id="associations">Associations</h2></div></span>
+          <panel type="seamless" header="#### What" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of navigability</span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain associations</span>
               </span>
               </span>
               </span>
               <p></p>
               <div>
-                <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. <strong>The concept of which class in the association knows about the other class is called <em>navigability</em>.</strong></p>
+                <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such <strong>connections between objects are called <em>associations</em>.</strong></p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> Suppose an OOP program for managing a learning management system creates an object structure to represent the related objects. In that object structure we can expect to have associations between a<code>Course</code>                    object that represents a specific course and <code>Student</code> objects that represents students taking that course.</p>
+                </tip-box>
+                <p><strong>Associations in an object structure can change over time</strong>.</p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> To continue the previous example, the associations between a <code>Course</code> object and <code>Student</code> objects can change as students enroll in the module or drop the module over time.</p>
+                </tip-box>
+                <p><strong>Associations among objects can be generalized as associations between the corresponding classles too.</strong></p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> In our example, as some <code>Course</code> objects can have associations with some <code>Student</code> objects, we can view it as an association between the <code>Course</code> class and the <code>Student</code>                    class.</p>
+                </tip-box>
+                <h5 id="implementing-associations"><big>Implementing associations</big></h5>
+                <p><strong>We use instance level variables to implement associations.</strong></p>
               </div>
               <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Multiplicity" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Navigability" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of multiplicity</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong><em>Multiplicity</em> is the aspect of an OOP solution that dictates how many objects take part in each association.</strong></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> The navigability of the association between <code>Course</code> objects and <code>Student</code> objects tells you how many <code>Course</code> objects can be associated with one <code>Student</code>                    object and vice versa.</p>
-                </tip-box>
-                <h5 id="implementing-multiplicity"><big>Implementing multiplicity</big></h5>
-                <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class has a variable that can hold <code>0..1</code> <span class="dimmed">i.e., zero or one</span> <code>Minefield</code> objects.</p>
-                  <div>
-                    <table>
-                      <tr>
-                      
-                        <td>
-                          <p>Java <span class="fas fa-arrow-down"></span></p>
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of navigability</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. <strong>The concept of which class in the association knows about the other class is called <em>navigability</em>.</strong></p>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Multiplicity" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of multiplicity</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong><em>Multiplicity</em> is the aspect of an OOP solution that dictates how many objects take part in each association.</strong></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> The navigability of the association between <code>Course</code> objects and <code>Student</code> objects tells you how many <code>Course</code> objects can be associated with one <code>Student</code>                      object and vice versa.</p>
+                  </tip-box>
+                  <h5 id="implementing-multiplicity"><big>Implementing multiplicity</big></h5>
+                  <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class has a variable that can hold <code>0..1</code> <span class="dimmed">i.e., zero or one</span> <code>Minefield</code> objects.</p>
+                    <div>
+                      <table>
+                        <tr>
+                        
+                          <td>
+                            <p>Java <span class="fas fa-arrow-down"></span></p>
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
     Minefield minefield;
 }
 
@@ -966,14 +937,14 @@
 
 
 </code></pre>
-                          <p></p>
-                        </td>
-                      
-                        <td valign="bottom">  <br><br></td>
-                      
-                        <td valign="bottom">
-                          <p>Python <span class="fas fa-arrow-down"></span></p>
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+                            <p></p>
+                          </td>
+                        
+                          <td valign="bottom">  <br><br></td>
+                        
+                          <td valign="bottom">
+                            <p>Python <span class="fas fa-arrow-down"></span></p>
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
     self.minefield = minefield
@@ -984,39 +955,39 @@
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
   <span class="hljs-comment"># ...</span>
 </code></pre>
-                          <p></p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </tip-box>
-                <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class will always have a <code>ConfigGenerator</code> object, provided the variable is not set to null at some point.</p>
-                  <div class="alt-java">
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+                            <p></p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </tip-box>
+                  <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class will always have a <code>ConfigGenerator</code> object, provided the variable is not set to null at some point.</p>
+                    <div class="alt-java">
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
     ...
 }
 </code></pre>
-                  </div>
-                  <div class="alt-python">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+                    </div>
+                    <div class="alt-python">
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.config_gen = ConfigGenerator()
 </code></pre>
-                  </div>
-                </tip-box>
-                <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> In the code below, the <code>Foo</code> class has a variable to hold a <code>Bar</code> object and vice versa <span class="dimmed">i.e., each object can have an association with an object of the other type</span>.</p>
-                  <table>
-                    <tr>
-                    
-                      <td>
-                        <p>Java <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+                    </div>
+                  </tip-box>
+                  <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> In the code below, the <code>Foo</code> class has a variable to hold a <code>Bar</code> object and vice versa <span class="dimmed">i.e., each object can have an association with an object of the other type</span>.</p>
+                    <table>
+                      <tr>
+                      
+                        <td>
+                          <p>Java <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
     Bar bar;
     <span class="hljs-comment">//...</span>
 }
@@ -1028,14 +999,14 @@
 }
 
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td valign="bottom">  <br><br></td>
-                    
-                      <td valign="bottom">
-                        <p>Python <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+                          <p></p>
+                        </td>
+                      
+                        <td valign="bottom">  <br><br></td>
+                      
+                        <td valign="bottom">
+                          <p>Python <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, bar)</span>:</span>
     self.bar = bar;
@@ -1047,74 +1018,74 @@
     self.foo = foo;
     
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </tip-box>
-                <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
-                <tip-box>
-                  <table>
-                    <tr>
-                    
-                      <td>
-                        <p>Java <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </tip-box>
+                  <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+                  <tip-box>
+                    <table>
+                      <tr>
+                      
+                        <td>
+                          <p>Java <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
     Cell[][] cell;
     ...
 }
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td valign="bottom">  <br><br></td>
-                    
-                      <td valign="bottom">
-                        <p>Python <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
+                          <p></p>
+                        </td>
+                      
+                        <td valign="bottom">  <br><br></td>
+                      
+                        <td valign="bottom">
+                          <p>Python <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.cells = {<span class="hljs-number">1</span>:[], <span class="hljs-number">2</span>:[], <span class="hljs-number">3</span>:[]}
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Dependencies" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Dependencies" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain dependencies among classes</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p>Dependencies are objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> A <code>Course</code> object can have a dependency on a <code>Registrar</code> object to obtain the maximum number of students it can support.</p>
-                </tip-box>
-                <h5 id="implementing-dependencies"><big>Implementing dependencies</big></h5>
-                <p>Dependencies result from interactions between objects that do not result in a long-term link between the said objects.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
-                    <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
-                  <table>
-                    <tr>
-                    
-                      <td>
-                        <p>Java <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain dependencies among classes</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p>Dependencies are objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> A <code>Course</code> object can have a dependency on a <code>Registrar</code> object to obtain the maximum number of students it can support.</p>
+                  </tip-box>
+                  <h5 id="implementing-dependencies"><big>Implementing dependencies</big></h5>
+                  <p>Dependencies result from interactions between objects that do not result in a long-term link between the said objects.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
+                      <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
+                    <table>
+                      <tr>
+                      
+                        <td>
+                          <p>Java <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     
     <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculate</span><span class="hljs-params">(Bar bar)</span></span>{
         <span class="hljs-keyword">return</span> bar.getValue();
@@ -1129,14 +1100,14 @@
     }
 }
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td>  <br><br></td>
-                    
-                      <td valign="top">
-                        <p>Python <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+                          <p></p>
+                        </td>
+                      
+                        <td>  <br><br></td>
+                      
+                        <td valign="top">
+                          <p>Python <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
     
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate</span><span class="hljs-params">(self, bar)</span>:</span>
         <span class="hljs-keyword">return</span> bar.value;
@@ -1146,105 +1117,105 @@
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, value)</span>:</span>
       self.value = value
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                  <p>The code above results in a dependency from <code>Foo</code> class to the <code>Bar</code> class.</p>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Composition" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                    <p>The code above results in a dependency from <code>Foo</code> class to the <code>Bar</code> class.</p>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Composition" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of composition</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>A composition is an association that represents a strong <em>whole-part</em> relationship.</strong> When the <em>whole</em> is destroyed, <em>parts</em> are destroyed too.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> A <code>Board</code> (used for playing board games) consists of <code>Square</code> objects.</p>
-                </tip-box>
-                <p><strong>Composition also implies that there cannot be cyclical links</strong>.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> The ‘sub-folder’ association between <code>Folder</code> objects is a composition type association. That means if the <code>Folder</code> object <code>foo</code> is a sub folder of <code>Folder</code>                    object <code>bar</code>, <code>bar</code> cannot be a sub-folder of <code>foo</code>.</p>
-                </tip-box>
-                <h5 id="implementing-composition"><big>Implementing composition</big></h5>
-                <p><strong>Composition too is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of the
-                  ‘whole’ object.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> In the code below, the <code>Email</code> has a composition type relationship with the <code>Subject</code> class, in the sense that the subject is part of the email.</p>
-                  <table>
-                    <tr>
-                    
-                      <td valign="top">
-                        <p>Java <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span> </span>{
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of composition</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>A composition is an association that represents a strong <em>whole-part</em> relationship.</strong> When the <em>whole</em> is destroyed, <em>parts</em> are destroyed too.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> A <code>Board</code> (used for playing board games) consists of <code>Square</code> objects.</p>
+                  </tip-box>
+                  <p><strong>Composition also implies that there cannot be cyclical links</strong>.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> The ‘sub-folder’ association between <code>Folder</code> objects is a composition type association. That means if the <code>Folder</code> object <code>foo</code> is a sub folder of <code>Folder</code>                      object <code>bar</code>, <code>bar</code> cannot be a sub-folder of <code>foo</code>.</p>
+                  </tip-box>
+                  <h5 id="implementing-composition"><big>Implementing composition</big></h5>
+                  <p><strong>Composition too is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of
+                    the ‘whole’ object.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> In the code below, the <code>Email</code> has a composition type relationship with the <code>Subject</code> class, in the sense that the subject is part of the email.</p>
+                    <table>
+                      <tr>
+                      
+                        <td valign="top">
+                          <p>Java <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span> </span>{
     <span class="hljs-keyword">private</span> Subject subject;
   ...
 }
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td>  <br><br></td>
-                    
-                      <td valign="top">
-                        <p>Python <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span>:</span>
+                          <p></p>
+                        </td>
+                      
+                        <td>  <br><br></td>
+                      
+                        <td valign="top">
+                          <p>Python <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.__subject = Subject()
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Aggregation" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Aggregation" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of aggregations</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> <code>SportsClub</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>SportsClub</code> object.</p>
-                </tip-box>
-                <h5 id="implementing-aggregation"><strong>Implementing aggregation</strong></h5>
-                <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code> a object who is the leader
-                    of the team.</p>
-                  <table>
-                    <tr>
-                    
-                      <td valign="top">
-                        <p>Java <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of aggregations</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> <code>SportsClub</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>SportsClub</code> object.</p>
+                  </tip-box>
+                  <h5 id="implementing-aggregation"><strong>Implementing aggregation</strong></h5>
+                  <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code> a object who is the leader
+                      of the team.</p>
+                    <table>
+                      <tr>
+                      
+                        <td valign="top">
+                          <p>Java <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{
     Person leader;
     ...
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(Person p)</span> </span>{
@@ -1252,14 +1223,14 @@
     }
 }
 </code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td>  <br><br></td>
-                    
-                      <td valign="top">
-                        <p>Python <span class="fas fa-arrow-down"></span></p>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span>
+                          <p></p>
+                        </td>
+                      
+                        <td>  <br><br></td>
+                      
+                        <td valign="top">
+                          <p>Python <span class="fas fa-arrow-down"></span></p>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.__leader = <span class="hljs-keyword">None</span>
@@ -1267,41 +1238,42 @@
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self, person)</span>:</span>
     self.__leader = person
 </code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                </tip-box>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Association Classes" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </tip-box>
+                </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Association Classes" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </font>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of association classes</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>An <em>association class</em> represents additional information about an association.</strong> It is a normal class but plays a special role from a design point of view.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association rather
-                    than specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p>
-                </tip-box>
-                <h5 id="implementing-association-classes"><big>Implementing association classes</big></h5>
-                <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> In the code below, the <code>Transaction</code> class is an association class that represent a transaction between a <code>Person</code> who is the seller and another <code>Person</code> who is the buyer.</p>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Transaction</span></span>{
+              <span
+                class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </font>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of association classes</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p><strong>An <em>association class</em> represents additional information about an association.</strong> It is a normal class but plays a special role from a design point of view.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association
+                      rather than specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p>
+                  </tip-box>
+                  <h5 id="implementing-association-classes"><big>Implementing association classes</big></h5>
+                  <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> In the code below, the <code>Transaction</code> class is an association class that represent a transaction between a <code>Person</code> who is the seller and another <code>Person</code> who is the
+                      buyer.</p>
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Transaction</span></span>{
     
     <span class="hljs-comment">//all fields are compulsory</span>
     Person seller;
@@ -1314,46 +1286,45 @@
     }
 }
 </code></pre>
-                </tip-box>
-              </div>
-              <div>
-                <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which are suitable as an Association Class?">
-                        <question>
-                          <p>Which one of these is the suitable as an Association Class?</p>
-                          <img src="/website-base/book/oop/associations/associationClasses/images/exerciseDiagram.png" width="500">
-                          <p></p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
-                          </ul>
-                          <div slot="answer">
-                            <p>(a)(b)<s>(c)</s>(d)</p>
-                            <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would
-                              be suitable as an association class.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
+                  </tip-box>
                 </div>
-              </div>
-          </div>
+                <div>
+                  <div>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which are suitable as an Association Class?">
+                          <question>
+                            <p>Which one of these is the suitable as an Association Class?</p>
+                            <img src="/website-base/book/oop/associations/associationClasses/images/exerciseDiagram.png" width="500">
+                            <p></p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
+                            </ul>
+                            <div slot="answer">
+                              <p>(a)(b)<s>(c)</s>(d)</p>
+                              <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would
+                                be suitable as an association class.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+            </div>
+          </panel>
         </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
 <h2 id="inheritance">Inheritance</h2></div></span>
-        <panel type="seamless" header="#### What" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+          <panel type="seamless" header="#### What" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the meaning of inheritance</span>
@@ -1441,14 +1412,13 @@
                   </panel>
                 </div>
               </div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Overriding" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Overriding" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain method overriding</span>
@@ -1699,14 +1669,13 @@ Ben is a student
                   </panel>
                 </div>
               </div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Overloading" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Overloading" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain method overloading</span>
@@ -1798,14 +1767,13 @@ Ben is a student
                 </div>
               </div>
               <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Interfaces" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Interfaces" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain interfaces</span>
@@ -1898,14 +1866,13 @@ Ben is a student
                   </panel>
                 </div>
               </div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Abstract Classes" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Abstract Classes" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can implement abstract classes</span>
@@ -1982,14 +1949,13 @@ Ben is a student
                   </panel>
                 </div>
               </div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Substitutability" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Substitutability" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain substitutability</span>
@@ -2016,14 +1982,13 @@ AcademicStaff academicStaff = staff; // Not OK
                 </tip-box>
               </div>
               <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Dynamic and Static Binding" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Dynamic and Static Binding" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain dynamic and static binding</span>
@@ -2451,18 +2416,17 @@ void calculateGrade (String matric) { ... }
                 </tip-box>
               </div>
               <div></div>
-          </div>
+            </div>
+          </panel>
         </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
 <h2 id="polymorphism">Polymorphism</h2></div></span>
-        <panel type="seamless" header="#### What" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+          <panel type="seamless" header="#### What" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain OOP polymorphism</span>
@@ -2530,14 +2494,13 @@ void calculateGrade (String matric) { ... }
                   or an <code>Academic</code> object.</p>
               </div>
               <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### How" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### How" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
               </span>
               </span>
               <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism</span>
@@ -2713,127 +2676,128 @@ void calculateGrade (String matric) { ... }
                   </panel>
                 </div>
               </div>
-          </div>
+            </div>
+          </panel>
         </panel>
-      </panel>
-      <panel type="seamless" expanded="">
-        <span slot="header" class="card-title"><div>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><div>
 <h2 id="more">More</h2></div></span>
-        <panel type="seamless" header="#### Miscellaneous" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
+          <panel type="seamless" header="#### Miscellaneous" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-            <span
-              class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can answer frequently asked OOP questions</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p><strong>What’s the difference between a Class, an Abstract Class, and an Interface?</strong></p>
-                <ul>
-                  <li>An interface is a behavior specification with no implementation.</li>
-                  <li>A class is a behavior specification + implementation.</li>
-                  <li>An abstract class is a behavior specification + a possibly incomplete implementation.</li>
-                </ul>
-                <p><strong>How does overriding differ from <em>overloading</em>?</strong></p>
-                <p>Overloading is used to indicate that multiple operations do similar things but take different parameters. Overloaded methods have the same method name but different method signatures and possibly different return types.</p>
-                <p>Overriding is when a sub-class redefines an operation using the same method name and the same type signature. Overridden methods have the same name, same method signature, and same return type.</p>
-              </div>
-              <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Review" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </font>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can combine some OOP concepts</span>
-              </span>
-              </span>
-              </span>
-              <p></p>
-              <div>
-                <p>...</p>
-              </div>
-              <div>
+              <span
+                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can answer frequently asked OOP questions</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
                 <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> In the context of OOP, what is the relationship between abstraction and encapsulation?">
-                        <panel header="%%Prerequisites%%" expandable="" expanded="">
-                          <panel src="/website-base\book\oop\objects\encapsulation\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation"></panel>
-                          <panel src="/website-base\book\oop\objects\abstraction\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction"></panel>
-                        </panel>
-                        <p></p>
-                        <question>
-                          In the context of OOP, what is the relationship between abstraction and encapsulation?
-                          <ul radio-group="ee8f2" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> a. They are the same thing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> b. They are opposites</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> c. Encapsulation strengthens abstraction</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> d. Abstraction strengthens encapsulation</label></li>
-                          </ul>
-                          <div slot="answer">
-                            <ul radio-group="a056c" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" checked name="a056c" type="radio"> c. Encapsulation strengthens abstraction</label></li>
-                            </ul>
-                            <p>Explanation: We can have abstraction without encapsulation. For example, we can <em>think</em> in terms of student entities when we code in C (a procedural language). But when we use a language that has encapsulation too (e.g.,
-                              in Java/C++/C#), we can package all student related data and functions into one construct (i.e. a class). This makes the ‘student’ abstraction stronger because now we can not only think in terms of students, the program can
-                              perform actions using objects that represent student entities.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these do not belong to four main OO principles?">
-                        <panel header="%%Prerequisites%%" expandable="" expanded="">
-                          <panel src="/website-base\book\oop\objects\abstraction\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction"></panel>
-                          <panel src="/website-base\book\oop\objects\encapsulation\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation"></panel>
-                          <panel src="/website-base\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Basic"></panel>
-                          <panel src="/website-base\book\oop\inheritance\substitutability\unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Substitutability"></panel>
-                          <panel src="/website-base\book\oop\polymorphism\what\unit-inElsewhere-asFlat._include_.html" header="OOP: Polymorphism: Introduction"></panel>
-                        </panel>
-                        <p></p>
-                        <question>
-                          Which of these do not belong to four main OO principles?
-                          <ul radio-group="8d0f5" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> a. Abstraction</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> b. Encapsulation</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> c. Inheritance</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> d. Substitutability</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> e. Polymorphism</label></li>
-                          </ul>
-                          <div slot="answer">
-                            <ul radio-group="30555" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" checked name="30555" type="radio"> d. Substitutability</label></li>
-                            </ul>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
+                  <p><strong>What’s the difference between a Class, an Abstract Class, and an Interface?</strong></p>
+                  <ul>
+                    <li>An interface is a behavior specification with no implementation.</li>
+                    <li>A class is a behavior specification + implementation.</li>
+                    <li>An abstract class is a behavior specification + a possibly incomplete implementation.</li>
+                  </ul>
+                  <p><strong>How does overriding differ from <em>overloading</em>?</strong></p>
+                  <p>Overloading is used to indicate that multiple operations do similar things but take different parameters. Overloaded methods have the same method name but different method signatures and possibly different return types.</p>
+                  <p>Overriding is when a sub-class redefines an operation using the same method name and the same type signature. Overridden methods have the same name, same method signature, and same return type.</p>
                 </div>
-              </div>
-          </div>
+                <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Review" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="ForestGreen"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </font>
+                </span>
+                </span>
+                </span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can combine some OOP concepts</span>
+                </span>
+                </span>
+                </span>
+                <p></p>
+                <div>
+                  <p>...</p>
+                </div>
+                <div>
+                  <div>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> In the context of OOP, what is the relationship between abstraction and encapsulation?">
+                          <panel header="%%Prerequisites%%" expandable="" expanded="">
+                            <panel src="/website-base\book\oop\objects\encapsulation\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation"></panel>
+                            <panel src="/website-base\book\oop\objects\abstraction\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction"></panel>
+                          </panel>
+                          <p></p>
+                          <question>
+                            In the context of OOP, what is the relationship between abstraction and encapsulation?
+                            <ul radio-group="ee8f2" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> a. They are the same thing</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> b. They are opposites</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="ee8f2" type="radio"> d. Abstraction strengthens encapsulation</label></li>
+                            </ul>
+                            <div slot="answer">
+                              <ul radio-group="a056c" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" checked name="a056c" type="radio"> c. Encapsulation strengthens abstraction</label></li>
+                              </ul>
+                              <p>Explanation: We can have abstraction without encapsulation. For example, we can <em>think</em> in terms of student entities when we code in C (a procedural language). But when we use a language that has encapsulation too
+                                (e.g., in Java/C++/C#), we can package all student related data and functions into one construct (i.e. a class). This makes the ‘student’ abstraction stronger because now we can not only think in terms of students, the
+                                program can perform actions using objects that represent student entities.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these do not belong to four main OO principles?">
+                          <panel header="%%Prerequisites%%" expandable="" expanded="">
+                            <panel src="/website-base\book\oop\objects\abstraction\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction"></panel>
+                            <panel src="/website-base\book\oop\objects\encapsulation\unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation"></panel>
+                            <panel src="/website-base\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Basic"></panel>
+                            <panel src="/website-base\book\oop\inheritance\substitutability\unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Substitutability"></panel>
+                            <panel src="/website-base\book\oop\polymorphism\what\unit-inElsewhere-asFlat._include_.html" header="OOP: Polymorphism: Introduction"></panel>
+                          </panel>
+                          <p></p>
+                          <question>
+                            Which of these do not belong to four main OO principles?
+                            <ul radio-group="8d0f5" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> a. Abstraction</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> b. Encapsulation</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> c. Inheritance</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> d. Substitutability</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="8d0f5" type="radio"> e. Polymorphism</label></li>
+                            </ul>
+                            <div slot="answer">
+                              <ul radio-group="30555" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" checked name="30555" type="radio"> d. Substitutability</label></li>
+                              </ul>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+            </div>
+          </panel>
         </panel>
-      </panel>
+      </div>
     </div>
   </div>
 </div>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.10.1</a> at Wed, 01 Aug 2018 15:49:58 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 03:23:08 GMT</small></div>
 </footer>
 </div>
 </body>
