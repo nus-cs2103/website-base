@@ -2,7 +2,7 @@
 
 **Acceptable**: Some code that you have written that uses the varargs feature.
 
-**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-Varargs]({{module_org}}/addressbook-level1#use-varargs-lo-varargss) 
+**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-Varargs]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-varargs-lo-varargss)
 
 **Submission**: Show your code to the tutor during the tutorial.
 </div>
