@@ -9,12 +9,12 @@
 
   <li><a href="{{baseUrl}}/admin/index-flat.html" class="nav-link"><md>**Admin Info**</md></a></li>
   <dropdown text="Links" class="nav-link">
-    <li><a href="{{module_org}}/website/issues" target="_blank" class="dropdown-item"> {{ fas_bug }} Report Bugs</a></li>
+    <li><a href="{{forum_link}}" target="_blank" class="dropdown-item"> {{ fas_bug }} Report Bugs</a></li>
     <li><a href="{{slack_team}}" target="_blank" class="dropdown-item">{{ fab_slack_hash }} Slack</a></li>
-    <li><a href="{{module_org}}/forum/issues" target="_blank" class="dropdown-item">{{ fas_comment }} Forum</a></li>
+    <li><a href="{{bugs_link}}" target="_blank" class="dropdown-item">{{ fas_comment }} Forum</a></li>
     <li><a href="{{ instructors_page }}" target="_blank" class="dropdown-item">{{ fas_user_tie }} Instructors</a></li>
-    <li><a href="{{ivle_announcements}}" target="_blank" class="dropdown-item">{{ glyphicon_bullhorn }} IVLE Announcements</a></li>
-        <li><a href="{{ivle_files}}" target="_blank" class="dropdown-item">{{ fas_file_upload }} IVLE File Submissions</a></li>
+    <li><a href="{{ivle_announcements}}" target="_blank" class="dropdown-item">{{ glyphicon_bullhorn }} Announcements</a></li>
+        <li><a href="{{ivle_files}}" target="_blank" class="dropdown-item">{{ fas_file_upload }} File Submissions</a></li>
     <li><a href="{{baseUrl}}/admin/tutorials.html" target="_blank" class="dropdown-item">{{ glyphicon_calendar }} Tutorial Schedule</a></li>
     <li><a href="{{team_IDs_page}}" target="_blank" class="dropdown-item">{{ glyphicon_list_alt }} Team IDs</a></li>
     <li><a href="{{java_coding_standard}}" target="_blank" class="dropdown-item">{{ fas_code }} Java Coding Standard</a></li>

@@ -18,6 +18,10 @@
 
 <span id="ivle_announcements">https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f</span>
 
+<span id="bugs_link">{{ module_org | safe }}/website/issues</span>
+
+<span id="forum_link">{{ module_org | safe }}/forum/issues</span>
+
 <span id="slack_team">https://nus-{{ module | lower }}-{{ semester | lower }}.slack.com</span>
 
 <span id="java_coding_standard">https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html</span>
@@ -25,6 +29,8 @@
 <span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
 
 <span id="dashed_line"><hr style="border-top: dashed 1px; border-color:grey" /></span>
+
+<span id="dotted_line"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></span>
 
 <span id="icon_deadline">:alarm_clock:</span>
 <span id="icon_dislike">{{ fas_thumbs_down | safe }}</span>
