@@ -11,7 +11,7 @@ Given below is the high-level timeline of the project.
 
 Week  | Stage     | Activities
 ------|-----------|-----------
-**3** |inception| <span id="inception-overview">decide on a overall project direction %%(user profile, optimize or morph?, problem addressed)%%</span>
+**3** |inception| <span id="inception-overview">decide on a overall project direction %%(user profile, problem addressed, optimize or morph?)%%</span>
 **4** |mid-v1.0 | <span id="mid-v10-overview">decide on requirements %%(user stories, use cases, non-functional requirements)%%</span>
 **5** |v1.0     | <span id="v10-overview">conceptualize product and document it as a user guide(draft), draft a rough project plan</span>
 **6** |mid-v1.1 | <span id="mid-v11-overview">set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span>
