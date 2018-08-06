@@ -35,7 +35,7 @@ Your project should comply with the following constraints.
   %%**Reason:** We do not want to install all your projects on our testing machines when we test them for grading.%%
 
 * **Constraint-External-Software**: The use of third-party frameworks/libraries is allowed but only if they,
-    *   are free, open-source and have permissive license terms %%(E.g., trial version of libraries that require purchase after N days are not allowed)%%.
+    *   are free, open-source, and have permissive license terms %%(E.g., trial version of libraries that require purchase after N days are not allowed)%%.
     *   do not require any installation by the user of your software.
     *   do not violate other constraints.
 
