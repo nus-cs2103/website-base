@@ -11,12 +11,13 @@
 Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]  %%e.g. add a new command%%
 
 * The size of the enhancement does not matter.
-* Change the code in small steps and commit after each significant change.
-* Try to stay within the procedural (not OOP) style of the code base. %%Reason: in this LO, we try to stretch ourselves to the limits of the procedural approach%%.
-* Update all relevant tests.
-* [Optional] Update all relevant documentation.
-* [Optional] Try to follow [our coding standard]({{baseUrl}}/admin/programmingLanguages.html#java-coding-standard) in your new code.
-* [Optional] Fork address [AddressBook - Level1]({{module_org}}/addressbook-level1) to your GitHub account and push your changes to your fork.
+* Step 1: Fork address [AddressBook - Level1]({{module_org}}/addressbook-level1) to your GitHub account.
+* Step 2: Change the code in small steps and commit after each significant change. You may commit to the `master` branch.
+  * Try to stay within the procedural (not OOP) style of the code base. %%Reason: in this LO, we try to stretch ourselves to the limits of the procedural approach%%.
+  * Update all relevant tests. Ensure all tests pass.
+  * [Optional] Update all relevant documentation.
+  * [Optional] Try to follow [our coding standard]({{baseUrl}}/admin/programmingLanguages.html#java-coding-standard) in your new code.
+* Step 3: push the updated AB1 code to your fork
 
   <tip-box type="tip">
   
@@ -24,7 +25,7 @@ Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]
  
   </tip-box>
 
-**Submission**: demo during tutorial.
+**Submission**: No special submission required. Our scripts will check your fork automatically.
 
 </div>
 
