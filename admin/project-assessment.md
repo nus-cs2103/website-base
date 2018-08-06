@@ -29,7 +29,7 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 <span id="code-quality-tips">
 
-* Ensure your code has at least some evidence of these (see [here](../se-book-adapted/chapters/errorHandling.html) for more info)
+* Ensure your code has at least some evidence of these (see [here]({{baseUrl}}/se-book-adapted/chapters/errorHandling.html) for more info)
   * logging
   * exceptions
   * assertions
@@ -37,11 +37,11 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
   
 * Ensure there are no [coding standard]({{java_coding_standard}}) violations %%&nbsp;e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
 
-* Ensure [SLAP](../se-book-adapted/chapters/codeQuality.html#slap-hard) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.
+* Ensure [SLAP]({{baseUrl}}/se-book-adapted/chapters/codeQuality.html#slap-hard) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.
 
 * Reduce code duplications %%&nbsp;i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code. 
 
-* In addition, tyr to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.
+* In addition, try to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.
 
 </span>
 
@@ -60,7 +60,7 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 Evaluates: How good is your Quality Assurance? 
 
-Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 [Practical Exam](#deliverable-practical-exam), 4. bugs found during PE.
+Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 [Practical Exam]({{baseUrl}}/admin/index-flat.html#deliverable-practical-exam), 4. bugs found during PE.
 
 <panel type="seamless" header="%%Admin {{ icon_embedding }} Deliverables → Practical Exam%%" class="embedding" minimized >
   <include src="project-deliverables.md#project-deliverables-practicalexam"/>
@@ -103,7 +103,7 @@ Other criteria:
 
 **B. Team-based tasks**: 
 
-  Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat">[team-based tasks](#scope-example-team-tasks)</span>
+  Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat">[team-based tasks]({{baseUrl}}/admin/index-flat.html#scope-example-team-tasks)</span>
 
 Based on: peer evaluations and tutor observations
 
