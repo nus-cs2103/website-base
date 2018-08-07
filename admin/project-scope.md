@@ -35,7 +35,7 @@ In general, each team is expected to take one of these two directions:
    
 For either direction, you need to define a target user profile and a value proposition:
 
-* **Target user profile**: Define a very specific target user profile. <br> :bulb: We require you narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
+* **Target user profile**: Define a very specific target user profile. <br> :bulb: We require you to narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
  :exclamation: Be careful not to contradict given project constraints when defining the user profile %%&nbsp;e.g. the target user should still prefer typing over mouse actions%%.<br><br>
   **It is expected that your product will be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module_pair }} instructors only, such as the ability to navigate to a student's project on GitHub%% :bulb: Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
   
@@ -44,8 +44,8 @@ For either direction, you need to define a target user profile and a value propo
   * It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.
   * It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job of implementing that feature.
   </panel>
-
-* **Value proposition**: Define a clear _value proposition_ %%(what problem does the product solve? how does it make the the user's life easier?)%% that matches the target user profile.
+  <br>
+  * **Value proposition**: Define a clear _value proposition_ %%(what problem does the product solve? how does it make the the user's life easier?)%% that matches the target user profile.
 
 </div>
    
