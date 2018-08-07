@@ -14,7 +14,7 @@
   * Pre-module survey (0.5 marks)
 * Enhanced AB1-AB3: 1 mark each
 
-<span class="flat">%%Related: [[Admin: Peer Evaluation](#admin-peerEvaluations-anchor)]%%</span>
+<span class="flat">%%Related: [[Admin: Peer Evaluation]({{baseUrl}}/admin/index-flat.html#admin-peerEvaluations-anchor)]%%</span>
 <panel src="peerEvaluations.md#peerEvaluation-criteria" header="Admin {{ icon_embedding }} Peer Evaluations → Criteria" class="embedding" minimized />
   
 </div>
