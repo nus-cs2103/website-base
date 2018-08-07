@@ -4,7 +4,7 @@
 <img src="{{baseUrl}}/admin/images/gradeBreakdown.png" width="600"/>
 <p/>
 <span class="flat"><markdown>
-%%Related: [[Admin: Participation Marks](#admin-participation-anchor)][[Admin: Exams](#admin-exams-anchor)][[Admin: Project: Assessment](#admin-project-assessment-anchor)]%%
+%%Related: [[Admin: Participation Marks]({{baseUrl}}/admin/index-flat.html#admin-participation-anchor)][[Admin: Exams]({{baseUrl}}/admin/index-flat.html#admin-exams-anchor)][[Admin: Project: Assessment]({{baseUrl}}/admin/index-flat.html#admin-project-assessment-anchor)]%%
 </markdown></span>
 <panel src="participation.md#main" header="Admin {{ icon_embedding }} Participation Marks" class="embedding" minimized  />
 <panel src="exams.md#main" header="Admin {{ icon_embedding }} Exams" class="embedding" minimized  />
