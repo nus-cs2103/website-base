@@ -3,3 +3,5 @@ _site/
 .temp/
 *.iml
 _markbind/logs/
+syncpull.sh
+syncpush.sh
