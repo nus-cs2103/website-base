@@ -1,7 +1,7 @@
 <frontmatter>
 title: "Full Schedule of Module Activities (flat version)"
 footer: footer.md
-head: scheduleHead.md
+head: scheduleHead-flat.md
 </frontmatter>
 
 {% import "common/outcomes.njk" as outcomes with context %}
