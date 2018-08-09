@@ -13,6 +13,8 @@
 
 </tip-box>
 
+Coming soon..
+<!--
 | Module | Tutorial ID %%(ID in CORS)%% | Time      | Venue            | Tutors ([contact details](https://docs.google.com/document/d/126YRkm4bWW1rai3u0Szc-4mLqhIyQUVL6EC54jM5f2g/pub?embed=true)) 
 |---------------|----------------|------------------|------------------|----
 | CS2103T (CS)  | W09  %%(T1)%%  | **W**ed **09**00 | COM1-B103 (ALL<sup>*</sup>)  | TBD            
@@ -35,6 +37,7 @@
 | CS2103        | F11  %%(3)%%   | **F**ri **11**00 | COM1-B103 (ALL)  | TBD      
 
 %%*ALL: Active Learning Room%%
+-->
 </div>
 </panel>
 
