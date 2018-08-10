@@ -3,13 +3,14 @@
 
 This module is organized primarily around a list of Learning Outcomes.
 
-Each week has a suggested list of LOs. They are categorized using a star-rating system<span class="flat"> ([link](#starRatingSystem))</span>.
+Each week has a suggested list of LOs. They are categorized using a star-rating system.
 
-<panel  src="moduleExpectations.md#starRatingSystem" header="Admin {{ icon_embedding }} Module Expectations → Star Rating System" class="embedding" minimized />
+{{ embed_topic("moduleExpectations.md#starRatingSystem", "Admin " + icon_embedding + " Module Expectations → Star Rating System", "learningOutcomes-starRatingSystem") }}
 
 </div>
 
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("learningOutcomes", show_main_text) }}

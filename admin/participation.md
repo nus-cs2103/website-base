@@ -14,11 +14,11 @@
   * Pre-module survey (0.5 marks)
 * Enhanced AB1-AB3: 1 mark each
 
-<span class="flat">%%Related: [[Admin: Peer Evaluation]({{baseUrl}}/admin/index-flat.html#admin-peerEvaluations-anchor)]%%</span>
-<panel src="peerEvaluations.md#peerEvaluation-criteria" header="Admin {{ icon_embedding }} Peer Evaluations → Criteria" class="embedding" minimized />
-  
+{{ embed_topic("peerEvaluations.md#peerEvaluation-criteria", "Admin " + icon_embedding + " Peer Evaluations → Criteria", "participation-peerEvals", "3") }}
+
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("participation", show_main_text) }}

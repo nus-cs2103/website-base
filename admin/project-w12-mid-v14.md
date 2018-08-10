@@ -20,7 +20,7 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 </modal>
 
 <div class="indented-level2">
-<panel src="project-assessment.md#code-quality-tips" header="Admin {{ icon_embedding }} Project Asessement → Code Quality Tips" class="embedding" minimized />
+{{ embed_topic("project-assessment.md#code-quality-tips", "Admin " + icon_embedding + " Project Assessment → Code Quality Tips", "midv14_codeQualityTips", "3") }}
 </div>
 
 **<big>Documentation:</big>**
@@ -31,7 +31,7 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 
 
 <div class="indented-level2">
-<panel src="project-deliverables.md#project-deliverables-ppp" header="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" class="embedding" minimized />
+{{ embed_topic("project-deliverables.md#project-deliverables-ppp", "Admin " + icon_embedding + " Project → Deliverables → Project Portfolio Page", "midv14_deliverablesPpp", "2") }}
 </div>
 
 
@@ -49,5 +49,6 @@ Overview: <include src="project-timeline.md#mid-v14-overview" inline />
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-w12-mid-v14", show_main_text) }}

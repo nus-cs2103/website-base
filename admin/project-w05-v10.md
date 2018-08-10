@@ -26,7 +26,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 :exclamation: The deadline for reaching a milestone is ==the midnight before your tutorial== %%e.g., if your tutorial is on Wednesday, you need to reach the milestone by Tuesday midnight.%%
 
-<panel src="project-assessment.md#project-management-grading" header="Admin {{ icon_embedding }} Project Assessment → Project Management" class="embedding" minimized />
+{{ embed_topic("project-assessment.md#project-management-grading", "Admin " + icon_embedding + " Project Assessment → Project Management", "v10-projectMgsAssessment", "3") }}
 
 ### v1.0 Documentation
 
@@ -61,5 +61,6 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-w05-v10", show_main_text) }}

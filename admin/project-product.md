@@ -8,12 +8,12 @@ In this semester, we are going to enhance [an AddressBook application](https://s
 
 This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, ==Command Line Interface (CLI) is the primary mode of input.== 
 
-<panel src="project-constraints.md#constraint-cli" header="Admin {{ icon_embedding }} Admin: Project Contstraints: More info about the 'CLI app' requirement" class="embedding" minimized />
+{{ embed_topic("project-constraints.md#constraint-cli", "Admin " + icon_embedding + " Project Contstraints → More info about the 'CLI app' requirement", "projectProduct-constraintCli", "2") }}
 <p/>
 
 </div>
 {% endmacro %} 
 
-
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-product", show_main_text) }}

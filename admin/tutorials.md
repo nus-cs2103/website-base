@@ -50,25 +50,25 @@
 * Please ==bring your laptop to tutorials.== You often need it to show evidence of LOs you achieved. At other times, we ask you to work on project related things with your team members, which too may require the laptop.
 
 <div class="indented-level2">
-<panel src="appendixC-faq.md#admin-faq-noLaptop" header="Admin {{ icon_embedding }} FAQ: What if I don't carry around a laptop?" class="embedding" minimized />
+{{ embed_topic("appendixC-faq.md#admin-faq-noLaptop", "Admin " + icon_embedding + " Appendix C(FAQ): What if I don't carry around a laptop?", "tutorials-faqLaptop", "4") }}
 </div>
 
 <br/>
 
 **The role of our tutors** is different from tutors in other modules.
 
-* **No direct tech help**: Tutors are prohibited from giving technical help. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%    
+* **No direct tech help**: Tutors are prohibited from giving technical help. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
 
 <div class="indented-level2">
-<panel src="appendixD-help.md#main" header="Admin {{ icon_embedding }} Appendix D: How to get Help in {{ module_pair }}" class="embedding" minimized />
+{{ embed_topic("appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + module_pair, "tutorials-apdxD", "2") }}
 </div>
 
 <br/>
 
-* **No ‘teaching’**: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify doubts under the right circumstances. 
+* **No ‘teaching’**: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify doubts under the right circumstances.
 
 <div class="indented-level2">
-<panel src="appendixD-help.md#questions-for-tutros" header="Admin {{ icon_embedding }} Appendix D (extract): Questions suitable for tutor" class="embedding" minimized />
+{{ embed_topic("appendixD-help.md#questions-for-tutros", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable for tutor", "tutorials-apdxDtutorQuestions", "2") }}
 </div>
 
 <br/>
@@ -100,5 +100,6 @@ Exchange students need to use the ORATUT system to register for the tutorials. Y
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("tutorials", show_main_text) }}

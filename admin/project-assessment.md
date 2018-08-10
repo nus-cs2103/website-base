@@ -62,9 +62,7 @@ Evaluates: How good is your Quality Assurance?
 
 Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 [Practical Exam]({{baseUrl}}/admin/index-flat.html#deliverable-practical-exam), 4. bugs found during PE.
 
-<panel type="seamless" header="%%Admin {{ icon_embedding }} Deliverables → Practical Exam%%" class="embedding" minimized >
-  <include src="project-deliverables.md#project-deliverables-practicalexam"/>
-</panel>
+{{ embed_topic("project-deliverables.md#project-deliverables-practicalexam", "Admin " + icon_embedding + " Deliverables → Practical Exam", "projectAssessment-Pe", "3") }}
 <panel type="seamless" header="Expectations for writing automated tests:" expanded>
   <include src="project-testing.fr#expectations"/>
 </panel>
@@ -107,7 +105,7 @@ Other criteria:
 
 Based on: peer evaluations and tutor observations
 
-<panel src="project-scope.md#example-team-tasks" type="seamless" header="Admin {{ icon_embedding }} Project Scope → Examples of team tasks" class="embedding" minimized />
+{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " Project Scope → Examples of team tasks", "projectAssessment-exmapleTeamTasks", "3") }}
 
 </div>
 </panel>
@@ -116,5 +114,6 @@ Based on: peer evaluations and tutor observations
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-assessment", show_main_text) }}

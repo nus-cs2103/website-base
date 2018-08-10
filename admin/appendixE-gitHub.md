@@ -55,9 +55,11 @@ More info about setting Git username is [here](https://help.github.com/articles/
    e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), `[W2.2b][W09-A1]James Yong`. 
    Your Team ID can be found in [this page](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true). 
    Note that our tutorial IDs are different from those shown in CORS/IVLE. Our tutorial IDs are given in the panel below.
-   
-<panel src="../admin/tutorials.md#tutorialTimetable" header="%%Admin {{ icon_embedding }} Tutorials → Tutorial Timetable%%" /><p/>
-    
+
+<div class="indented-level2">
+{{ embed_topic("../admin/tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial Timetable", "apdxE-tutrialIds", "4") }}
+</div>
+
 5. Check the 'Files Changed' tab on GitHub to confirm the PR contains intended changes only.<br/> 
     ![](images/FilesChangedTab.png)
     
@@ -235,5 +237,6 @@ We recommend using the _Forking Workflow_.
 
 </div>{% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("appendixE-gitHub", show_main_text) }}

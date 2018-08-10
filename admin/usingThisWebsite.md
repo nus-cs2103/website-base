@@ -14,9 +14,10 @@
 <include src="../book/about/usage.md#browsers" />
 <include src="../book/about/usage.md#layers"/>
 
-This website ==uses a star rating system== <span class="flat"><md>%%(see [[Admin: Module Expectations: Star Rating System]({{ baseUrl }}/admin/index-flat.html#star-rating-system)])%%</md></span> to indicate the priority level of contents.
+This website ==uses a star rating system== to indicate the priority level of contents.
 
-<panel src="moduleExpectations.md#starRatingSystem" header="Admin {{ icon_embedding }} Module Expectations: Star Rating System" class="embedding" minimized />
+{{ embed_topic("moduleExpectations.md#starRatingSystem", "Admin " + icon_embedding + " Module Expectations → Star Rating System", "usingThisWebsite-starRatingSystem") }}
+
 
 </div>
 <div id="more">
@@ -50,6 +51,6 @@ This website was generated using the [MarkBind](https://markbind.github.io/) sof
 </div>
 {% endmacro %} 
 
-
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("usingThisWebsite", show_main_text) }}
