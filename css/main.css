@@ -15,3 +15,7 @@ mark {
 .important {
     color: #980000;
 }
+
+.alt-python {
+    display: none;
+}

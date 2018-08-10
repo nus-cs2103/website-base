@@ -3,3 +3,5 @@ _site/
 .temp/
 *.iml
 _markbind/logs/
+pullall.sh
+pushall.sh
