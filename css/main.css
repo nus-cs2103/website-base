@@ -24,6 +24,10 @@ mark {
     display: none;
 }
 
+.indented-less {
+    padding-left: 10px;
+}
+
 .indented {
     padding-left: 20px;
 }
