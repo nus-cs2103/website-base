@@ -7,4 +7,7 @@
 <panel type="warning" header="**Admin {{icon_embedding }} Weekly schedule** {{ glyphicon_star }}{{ glyphicon_star }}" expandable>
   <include src="../../admin/weeklySchedule.md#main"/>
 </panel>
+<panel type="success" header="**Admin {{icon_embedding }} Module overview** {{ glyphicon_star }}{{ glyphicon_star }}{{ glyphicon_star }}{{ glyphicon_star }}" expandable>
+  <include src="../../admin/moduleOverview.md#main"/>
+</panel>
 
