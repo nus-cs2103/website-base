@@ -99,3 +99,16 @@
 {% endfor %}
 </div>
 {% endmacro %}
+
+{% macro embed_topic(source, title, trigger_id, level="0") %}
+{% set stars = {"0": "", "1": s, "2": s+s, "3": s+s+s, "4": s+s+s+s} %}
+
+<div class="flat"><markdown>%%Relevant: [<trigger trigger="click" for="modal:{{ trigger_id }}">{{ title | safe }}</trigger> {{ stars[level] | safe }}]%%</markdown></div>
+
+<modal large title="{{ title | safe }}  {{ stars[level] | safe }}" id="modal:{{ trigger_id }}">
+  <include src="{{ source }}"/>
+</modal>
+
+<panel src="{{ source }}" header="{{ title | safe }}  {{ stars[level] | safe }}" class="embedding" minimized />
+
+{% endmacro %}
