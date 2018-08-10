@@ -89,9 +89,9 @@ Tutorials are not graded. However, your conduct will be reviewed by team members
 
 <div id="exchangeStudentTutorialSignup">
 
-**[Exchange students only] Registering for tutorials**
+**[Exchange students only] Registering for tutorials:**
 
-Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your appeal on ORATUT, we can allocate you to the tutorial slot.
+* Exchange students need to use the ORATUT system to register for the tutorials. You must have received the instructions from UG office on how/when to go about the registration process. If not, please talk to UG office. When we can see your appeal on ORATUT, we can allocate you to the tutorial slot.
 </div>
 
 

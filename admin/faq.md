@@ -17,7 +17,7 @@ Same lectures, same exam. Separate tutorials, separate project grading. Unless s
 
 <img src="{{baseUrl}}/admin/images/Why workload heavy.png" width="250" />
 
-{{ module_pair }} prepares you for many higher-level project modules (CS3216/7, CS3203, CS3281/2, etc.), each requiring a slightly different skill set. It is also the only SE course some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
+{{ module_pair }} prepares you for many higher-level project modules (CS3216/7, CS3203, CS3281/2, etc.), each requiring a slightly different skill set. It is also the only SE module some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
 
 Remember, everything you learn here is going to be useful in a SE-related career.
 

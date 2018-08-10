@@ -23,9 +23,9 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 ### v1.3 Project Management
 
-<tip-box type="important">
+<tip-box>
 
-You are required to <tooltip content="extract your own code and put in one file">collate</tooltip> code at this milestone. %%&nbsp;Reason: You will be required to collate code at your final submission. As an early preparation for that, we require you to collate code once at v1.3 so that you can iron out any code collation glitches early.%% 
+{{ icon_important_big_red }} You are required to <tooltip content="extract your own code and put in one file">collate</tooltip> code at this milestone. %%&nbsp;Reason: You will be required to collate code at your final submission. As an early preparation for that, we require you to collate code once at v1.3 so that you can iron out any code collation glitches early.%%
 
 </tip-box>
 
@@ -41,9 +41,9 @@ You are required to <tooltip content="extract your own code and put in one file"
 
 ### v1.3 Documentation
 
-<tip-box type="important"> 
+<tip-box>
 
-v1.3 user guide should be updated to match the current version of the product. %%&nbsp;Reason: v1.3 will be subjected to a trial _acceptance testing_ session%%
+{{ icon_important_big_red }} v1.3 user guide should be updated to match the current version of the product. %%&nbsp;Reason: v1.3 will be subjected to a trial _acceptance testing_ session%%
   
 </tip-box>
 
@@ -70,9 +70,9 @@ v1.3 user guide should be updated to match the current version of the product. %
 
 ### v1.3 Testing
 
-<tip-box type="important"> 
+<tip-box>
   
-Taking part in v1.3 testing is compulsory and counts for participation marks.
+{{ icon_important_big_red }} Taking part in v1.3 testing is compulsory and counts for participation marks.
 
 </tip-box>
 

@@ -20,9 +20,11 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 {{ icon_individual }} Have done some enhancement to the code | at least attempted to enhance the code of a component, even if you did not fully succeed
 {{ icon_team }} All project documents updated as required | updated docs are merged to the master branch
 
-:exclamation: Reminder: Reaching individual and team milestones are considered for grading the _project management_ component of your project grade (expand the panel below for more info).
+{{ icon_important_big_red }} Reminder: Reaching individual and team milestones are considered for <trigger trigger="click" for="modal:v11-projectMgtGrading">grading the _project management_ component</trigger> of your project grade.
 
-<panel src="project-assessment.md#project-management-grading" header="Admin {{ icon_embedding }} Project Assessment → Project Management" class="embedding" minimized  />
+<modal large title="Admin {{ icon_embedding }} Project Assessment → Project Management" id="modal:v11-projectMgtGrading">
+  <include src="project-assessment.md#project-management-grading"/>
+</modal>
 
 <div id="documentation">
 

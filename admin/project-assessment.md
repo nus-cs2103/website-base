@@ -43,14 +43,15 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 
 * In addition, try to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.
 
-</span>
-
-</panel><p>
-
 
 <modal large title="Textbook {{ icon_embedding }} Implementation →" id="modal:v15-codeQuality">
   <include src="../book/codeQuality/container-inElsewhere-asFlat.md" boilerplate />
 </modal>
+
+</span>
+
+</panel><p>
+
 
 **B. Depth and completeness of the major feature**
 

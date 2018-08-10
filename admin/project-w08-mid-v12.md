@@ -40,7 +40,7 @@ Overview: <include src="project-timeline.md#mid-v12-overview" inline />
 
 * **Start proper milestone management**
 
-  * :exclamation: Starting from the upcoming milestone, ==there are additional requirements to follow== regarding how you **use GitHub to manage your milestones**, as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
+  * {{ icon_important_big_red }} Starting from the upcoming milestone, ==there are additional requirements to follow== regarding how you **use GitHub to manage your milestones**, as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
 
 * As before, you are _recommended_ (but not required) to **follow the forking workflow** when evolving the product.
 
