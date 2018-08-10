@@ -11,7 +11,7 @@
   
 **Acceptable**: Any code you have written that uses Java enumerations.
 
-**Suggested**: The exercise in [AddressBook-Level1: LO-Enums]({{module_org}}/addressbook-level1/#use-enums-lo-enums)
+**Suggested**: The exercise in [AddressBook-Level1: LO-Enums]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc/#use-enums-lo-enums)
 
 **Submission**: Show your code during tutorial
 
