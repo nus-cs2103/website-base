@@ -55,10 +55,11 @@
 {% endmacro %}
 
 
-{% macro show_admin_topic(topics, id_of_topic_to_show, is_flat=false) %}
+{% macro show_admin_topic(topics, id_of_topic_to_show, div_to_show="main", div_title="", is_flat=false) %}
 {% for topic in topics %}
 {% if topic.id == id_of_topic_to_show %}
-{{ show_admin_section_to_read(topic.title, topic.priority, "../../admin/" + topic.id + ".md#main", is_flat) }}
+{% set panel_title =  topic.title + ((" [" + div_title + "]") if div_title != "") %}
+{{ show_admin_section_to_read(panel_title, topic.priority, "../../admin/" + topic.id + ".md#" + div_to_show, is_flat) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
@@ -87,7 +88,9 @@
 <div class="indented">
 {% for section in sections_to_show %}
 {% if section.topic_id %}
-  {{ show_admin_topic(topics, section.topic_id, is_flat) }}
+  {% set div_to_show = section.div if section.div else "main"  %}
+  {% set div_title = section.div_title if section.div_title else ""  %}
+  {{ show_admin_topic(topics, section.topic_id, div_to_show, div_title, is_flat) }}
 {% elif section.faq_id %}
   {{ show_admin_faq(faqs, section.faq_id, is_flat) }}
 {% elif section.policy_id %}
