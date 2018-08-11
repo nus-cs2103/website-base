@@ -2,7 +2,7 @@
 <div id="main">
 <div id="essential">
 
-{{ icon_important_big_red }} The _Schedule Page_ is your main source of information for {{ module_pair }}. You will need to refer to it weekly.
+{{ icon_important_big_red }} The {{ schedule_link }} is your main source of information for {{ module_pair }}. You will need to refer to it weekly.
 
 {{ icon_info }} More details for the upcoming weeks will be added as the weeks progress. In general, ==information given for more than 1 week into the future should be treated as _tentative_==.
 
