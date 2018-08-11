@@ -20,7 +20,7 @@ The question you should always ask yourself is, 'how do I solve this problem if 
 
 <big>{{ icon_like }} **What to do:**</big>
 
-* **Check what is given**: Check if the problem/concept has been discussed in the lectures, text book, or the list of resources given to you. Yes, it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.
+* **Check what is given**: Check if the problem/concept has been discussed in the lectures, textbook, or the list of resources given to you. Yes, it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.
 
 * **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).  
   Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.    
