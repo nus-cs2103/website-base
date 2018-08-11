@@ -49,16 +49,18 @@
 {% if is_flat %}
   {% set panel_title %}<span class="text-white">{{ panel_title | safe }}</span> {% endset %}
 {% endif %}
-<panel  src="{{ source }}" type="{{ panel_type }}" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" >
+<panel  type="{{ panel_type }}" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" >
 <span slot="header" class="card-title">{{ panel_title | safe }}</span>
+<include src="{{ source }}" />
 </panel><p/>
 {% endmacro %}
 
 
-{% macro show_admin_topic(topics, id_of_topic_to_show, is_flat=false) %}
+{% macro show_admin_topic(topics, id_of_topic_to_show, div_to_show="main", div_title="", is_flat=false) %}
 {% for topic in topics %}
 {% if topic.id == id_of_topic_to_show %}
-{{ show_admin_section_to_read(topic.title, topic.priority, "../../admin/" + topic.id + ".md#main", is_flat) }}
+{% set panel_title =  topic.title + ((" [" + div_title + "]") if div_title != "") %}
+{{ show_admin_section_to_read(panel_title, topic.priority, "../../admin/" + topic.id + ".md#" + div_to_show, is_flat) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
@@ -87,7 +89,9 @@
 <div class="indented">
 {% for section in sections_to_show %}
 {% if section.topic_id %}
-  {{ show_admin_topic(topics, section.topic_id, is_flat) }}
+  {% set div_to_show = section.div if section.div else "main"  %}
+  {% set div_title = section.div_title if section.div_title else ""  %}
+  {{ show_admin_topic(topics, section.topic_id, div_to_show, div_title, is_flat) }}
 {% elif section.faq_id %}
   {{ show_admin_faq(faqs, section.faq_id, is_flat) }}
 {% elif section.policy_id %}
@@ -95,4 +99,17 @@
 {% endif %}
 {% endfor %}
 </div>
+{% endmacro %}
+
+{% macro embed_topic(source, title, trigger_id, level="0") %}
+{% set stars = {"0": "", "1": s, "2": s+s, "3": s+s+s, "4": s+s+s+s} %}
+
+<div class="flat"><markdown>%%Relevant: [<trigger trigger="click" for="modal:{{ trigger_id }}">{{ title | safe }}</trigger> {{ stars[level] | safe }}]%%</markdown></div>
+
+<modal large title="{{ title | safe }}  {{ stars[level] | safe }}" id="modal:{{ trigger_id }}">
+  <include src="{{ source }}"/>
+</modal>
+
+<panel src="{{ source }}" header="{{ title | safe }}  {{ stars[level] | safe }}" class="embedding" minimized />
+
 {% endmacro %}

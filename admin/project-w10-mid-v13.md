@@ -19,7 +19,7 @@ Overview: <include src="project-timeline.md#mid-v13-overview" inline />
 
 **<big>Product:</big>**
 
-* :exclamation: Try to **do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** as described in the Developer Guide. You can name it something like `v1.2.1`. Reason: You are _required_ to do a proper product release for v1.3. Doing a trial at this point will help you iron out any problems in advance.
+* {{ icon_important_big_red }} Try to **do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** as described in the Developer Guide. You can name it something like `v1.2.1`. Reason: You are _required_ to do a proper product release for v1.3. Doing a trial at this point will help you iron out any problems in advance.
 
 
 **<big>Documentation:</big>**

@@ -14,7 +14,7 @@
 
 **Team ID**: This will be given to you after forming teams. It has the form `TUTORIAL_ID-TEAM_NUMBER` e.g, `W14-2` means you are in tutorial W14 (i.e., Wed 1400-1500), team 2.
 
-<panel src="../admin/tutorials.md#tutorialTimetable" header="Admin {{ icon_embedding }} Tutorials → Tutorial IDs" class="embedding" minimized /><p/>
+{{ embed_topic("tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial IDs", "projectTeams-tutorialIDs", "3") }}
 
 **Team composition**
 
@@ -30,5 +30,6 @@ We allow some freedom in choosing team members, subject to these constraints:
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-teams", show_main_text) }}

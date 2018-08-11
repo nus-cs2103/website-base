@@ -45,8 +45,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Product
 
-<span class="flat">Described in [[Admin: Project: Deliverables: Executable](#deliverable-executable)]</span>
-<panel src="project-deliverables.md#project-deliverables-executable" header="%%Admin {{ icon_embedding }} Project → Deliverables → Executable%%"  class="embedding" />
+{{ embed_topic("project-deliverables.md#project-deliverables-executable", "Admin " + icon_embedding + " Project → Deliverables → Executable", "v14-executable", "3") }}
 <p/>
 
 **Submission**: See summary of submissions above
@@ -54,8 +53,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Source Code
 
-<span class="flat">Described in [[Admin: Project: Deliverables: Source Code](#deliverable-source-code)]</span>
-<panel src="project-deliverables.md#project-deliverables-sourcecode" header="%%Admin {{ icon_embedding }} Project → Deliverables → Source Code%%" class="embedding" />
+{{ embed_topic("project-deliverables.md#project-deliverables-sourcecode", "Admin " + icon_embedding + " Project → Deliverables → Source Code", "v14-sourcecode", "3") }}
 <p/>
 
 **Submission**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline will be considered a later submission). Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
@@ -63,8 +61,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 User Guide
 
-<span class="flat">Described in [[Admin: Project: Deliverables: User Guide](#deliverable-user-guide-ug)]</span>
-<panel src="project-deliverables.md#project-deliverables-ug" header="%%Admin {{ icon_embedding }} Project → Deliverables → User Guide%%" class="embedding" />
+{{ embed_topic("project-deliverables.md#project-deliverables-ug", "Admin " + icon_embedding + " Project → Deliverables → User Guide", "v14-deliverableUg", "3") }}
 <p/>
 
 **Submission**: Convert the pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to IVLE. See _summary of submissions_ above for the file name format.
@@ -72,8 +69,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Developer Guide
 
-<span class="flat">Described in [[Admin: Project: Deliverables: Developer Guide](#deliverable-developer-guide-dg)]</span>
-<panel src="project-deliverables.md#project-deliverables-dg" header="%%Admin {{ icon_embedding }} Project → Deliverables → Developer Guide%%" class="embedding" />
+{{ embed_topic("project-deliverables.md#project-deliverables-dg", "Admin " + icon_embedding + " Project → Deliverables → Developer Guide", "v14-deliverableDg", "3") }}
 <p/>
 
 **Submission**: Similar to UG
@@ -81,8 +77,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Product Website
 
-<span class="flat">Described in [[Admin: Project: Deliverables: Product Website](#deliverable-product-website)]</span>
-<panel src="project-deliverables.md#project-deliverables-website" header="%%Admin {{ icon_embedding }} Project → Deliverables → Product Website%%" class="embedding" />
+{{ embed_topic("project-deliverables.md#project-deliverables-website", "Admin " + icon_embedding + " Project → Deliverables → Product Website", "v14-deliverableWebsite", "3") }}
 <p/>
 
 **Submission**: Push the code to GitHub
@@ -92,8 +87,7 @@ Team/Individual Item | Name format | Upload to
 
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
 
-<span class="flat">Described in [[Admin: Project: Deliverables: Demo](#deliverable-demo)]</span>
-<panel src="project-deliverables.md#project-deliverables-demo" header="%%Admin {{ icon_embedding }} Project → Deliverables → Demo%%" class="embedding" />
+{{ embed_topic("project-deliverables.md#project-deliverables-demo", "Admin " + icon_embedding + " Project → Deliverables → Demo", "v14-deliverableDemo", "3") }}
 <p/>
 
 * **Venue:** Same as the tutorial venue unless informed otherwise.
@@ -106,8 +100,7 @@ Team/Individual Item | Name format | Upload to
 
 ### v1.4 Practical Exam
 
-<span class="flat">Described in [[Admin: Project: Deliverables: Practical Exam](#deliverable-practical-exam)]</span>
-<panel src="project-deliverables.md#project-deliverables-practicalexam" header="%%Admin {{ icon_embedding }} Project → Deliverables → Practical Exam%%" class="embedding" />
+{{ embed_topic("project-deliverables.md#project-deliverables-practicalexam", "Admin " + icon_embedding + " Project → Deliverables → Practical Exam", "v14-deliverablePe", "3") }}
 <p/>
 
 **Time/venue:** week 13 lecture slot
@@ -116,5 +109,6 @@ Team/Individual Item | Name format | Upload to
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-w13-v14", show_main_text) }}

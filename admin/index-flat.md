@@ -33,7 +33,9 @@ head: adminHead-flat.md
 <div id="admin-{{ topic.id }}-anchor"></div>
 <div id="admin-{{ topic.id }}">
 {{ show_title(topic.id, topics) | trim }}
+<div class="indented-less">
   <include src="{{ topic.id }}.md#main" />
+</div>
 </div>
 <br>
 {% elif topic.level == 0 %}

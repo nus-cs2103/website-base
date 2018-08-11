@@ -75,6 +75,8 @@
 
 <span id="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></span>
 
+<span id="s">{{ glyphicon_star | safe }}</span>
+
 <span id="star"><span class='glyphicon glyphicon-star' aria-hidden='true'></span></span>
 
 <span id="one_star"><span class='badge badge-pill badge-danger'>{{ star | safe }} </span></span>

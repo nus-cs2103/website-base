@@ -27,11 +27,13 @@ Overview: <include src="project-timeline.md#mid-v11-overview" inline />
 
 * All members: Set up your own forks of the team repo, so that you can submit PRs to your team repo using the forking workflow.
 
-<tip-box type="important"> 
-  
-Before you do any coding for the project, please ensure you have set the Git username correctly (see panel below for more details) in all Computers you use for coding.
+<tip-box>
+ 
+{{ icon_important_big_red }} Before you do any coding for the project, please ensure you have <trigger trigger="click" for="modal:midv11-gitUsername">set the Git username correctly (as explained in Appendix E)</trigger> in _all_ Computers you use for coding.
 
-<panel src="appendixE-gitHub.md#git-username" header="%%Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username%%" />
+<modal large title="Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username" id="modal:midv11-gitUsername">
+  <include src="appendixE-gitHub.md#git-username"/>
+</modal>
 
 </tip-box>
 
@@ -69,12 +71,11 @@ Before you do any coding for the project, please ensure you have set the Git use
   <include src="project-deliverables.md#profile-photo"/>
 </modal>
 
-  * Indicate the different roles played and responsibilities held by each team member. You can reassign these roles and responsibilities later in the project, if necessary.  
+  * Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities %%(as explained in Admin {{ icon_embedding }} Project Scope)%%</trigger> later in the project, if necessary.
 
-<div class="indented-level2">
-<panel src="project-scope.md#roles" header="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" class="embedding" minimized />
-</div>
-<p/>
+<modal large title="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
+  <include src="project-scope.md#roles"/>
+</modal>
 
 * **README.adoc** page: Update it to match your project. 
   * Add a UI mockup of your intended final product.   
@@ -96,12 +97,11 @@ Before you do any coding for the project, please ensure you have set the Git use
 
   **Submission**: Create PRs from your own fork to your team repo. Get it merged by following your team's workflow.
   
-  :exclamation: Before you start coding, please read our reuse policy given below, in particular, ==how to give credit when you reuse code from Internet or classmates==:
+  {{ icon_important_big_red }} Before you start coding, please read <trigger trigger="click" for="modal:midv11-reusePolicy">our reuse policy %%(in Admin: Appendix B)%%</trigger>, in particular, ==how to give credit when you reuse code from Internet or classmates==:
 
-<div class="indented-level2">
-<panel src="appendixB-policies.md#policy-reuse" header="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" class="embedding" minimized /><p/>
-</div>
-
+<modal large title="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" id="modal:midv11-reusePolicy">
+  <include src="appendixB-policies.md#policy-reuse"/>
+</modal>
 
 </div>
 

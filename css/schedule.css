@@ -5,10 +5,6 @@
     text-align:justify
 }
 
-.indented {
-    padding-left: 20px;
-}
-
 .activity-type {
     background: linear-gradient(to right, #4267b2, #4267b2 ,#4267b2 ,#4267b2 , white);
     color: white;

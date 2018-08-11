@@ -1,7 +1,7 @@
 Collate is a tool for collating code written by different developers.
 
 Steps to use Collate:
-1. Download `Collate-TUI.jar` from the [Collate Tool project](https://github.com/se-edu/collate)
+1. Download `Collate-TUI.jar` from the [Collate Tool project](https://github.com/se-edu/collate/releases)
 1. Annotate your code to indicate who wrote which part of the code (instructions given below)
 1. Run the Collate tool to collate code written by each person into separate files (instructions given below)
 
@@ -33,7 +33,7 @@ The `//@@author` tag should appear only at the beginning of the code you wrote. 
   ```
   
 * **The author tag syntax varies based on file type** e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
-  Here is an example code from an xml file.
+  Here is an example code from an xml/fxml file.
    ```
    <!-- @@author sereneWong -->
    <textbox>

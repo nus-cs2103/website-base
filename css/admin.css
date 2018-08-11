@@ -16,19 +16,3 @@ h2{
 h3{
     color:purple;
 }
-
-.indented {
-    padding-left: 20px;
-}
-
-.indented-level2 {
-    padding-left: 40px;
-}
-
-.indented-level3 {
-    padding-left: 60px;
-}
-
-.flat {
-    display: none;
-}
