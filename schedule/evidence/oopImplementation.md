@@ -9,7 +9,7 @@
 
 **Acceptable**: Some OOP code you have written in which there are more than 10 classes.
 
-**Suggested**: Do the exercise in [[addressbook-level2: LO-ImplementClasses]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass)]. Update I/O tests (i.e. `expected.txt` etc.) and the User Guide (if applicable) but you may ignore JUnit tests (we have not covered that topic yet).
+**Suggested**: Do the exercise in [[addressbook-level2: LO-ImplementClasses]({{module_org}}/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#implement-a-class-code-lo-implementclass-code)]. Update I/O tests (i.e. `expected.txt` etc.) and the User Guide (if applicable) but you may ignore JUnit tests (we have not covered that topic yet).
 
 <include src="project.md#submission_PR_optional" />
 
@@ -19,7 +19,7 @@
 
 **Acceptable**: Evidence of having used Java inheritance in some project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level2: LO-Inheritance]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-inheritance-to-achieve-code-reuse-lo-inheritance)]
+**Suggested**: Do the exercise in [[Addressbook-Level2: LO-Inheritance]({{module_org}}/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#use-inheritance-to-achieve-code-reuse-code-lo-inheritance-code)]
 
 <include src="project.md#PR_to_AB2" />
 
@@ -38,7 +38,7 @@
 
 <div id="composition">
 
-The exercise in [[addressbook-level2: LO-ImplementClasses]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#implement-a-class-lo-implementclass)] also covers composition (note the &#9670; in the class diagram).
+The exercise in [[addressbook-level2: LO-ImplementClasses]({{module_org}}/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#implement-a-class-code-lo-implementclass-code)] also covers composition (note the &#9670; in the class diagram).
 
 </div>
 
@@ -54,7 +54,7 @@ Some evidence of using method overriding in some code you wrote.
 
 **Acceptable**: Using polymorphism in any past project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Polymorphism]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-polymorphism-lo-polymorphism)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Polymorphism]({{module_org}}/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#use-polymorphism-code-lo-polymorphism-code)]
    
 <include src="project.md#PR_to_AB3" />
 
@@ -76,7 +76,7 @@ Some evidence of using method overriding in some code you wrote.
 
 **Acceptable**: Using interfaces in any past project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Interfaces]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-interfaces-lo-interfaces)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-Interfaces]({{module_org}}/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#use-interfaces-code-lo-interfaces-code)]
    
 <include src="project.md#PR_to_AB3" />
 
@@ -87,6 +87,6 @@ Some evidence of using method overriding in some code you wrote.
 
 **Acceptable**: Evidence of implementing an association class. 
 
-**Suggested**: Do the exercise in [[AddressBook - Level 2: LO-AssociationClass]({{module_org}}/addressbook-level2/blob/master/doc/LearningOutcomes.md#use-association-classes-lo-associationclass)] and create a PR against [[AddressBook - Level 2]({{module_org}}/addressbook-level2)]
+**Suggested**: Do the exercise in [[AddressBook - Level 2: LO-AssociationClass]({{module_org}}/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#use-association-classes-code-lo-associationclass-code)] and create a PR against [[AddressBook - Level 2]({{module_org}}/addressbook-level2)]
 
 </div>

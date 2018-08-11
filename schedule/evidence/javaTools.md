@@ -2,7 +2,7 @@
 
 **Acceptable**: Some code that you have written that uses the varargs feature.
 
-**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-Varargs]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-varargs-lo-varargss)
+**Suggested**: Do the exercise given in [AddressBook - Level1 : LO-Varargs]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-varargs-code-lo-varargs-code)
 
 **Submission**: Show your code to the tutor during the tutorial.
 </div>
@@ -11,7 +11,7 @@
   
 **Acceptable**: Any code you have written that uses Java enumerations.
 
-**Suggested**: The exercise in [AddressBook-Level1: LO-Enums]({{module_org}}/addressbook-level1/#use-enums-lo-enums)
+**Suggested**: The exercise in [AddressBook-Level1: LO-Enums]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc/#use-enums-code-lo-enums-code)
 
 **Submission**: Show your code during tutorial
 
@@ -22,7 +22,7 @@
 
 **Acceptable**: Using JavaFX in any past project.
 
-**Suggested**: Do the exercise in [[Addressbook-Level3: LO-JavaFX]({{module_org}}/addressbook-level3/blob/master/doc/LearningOutcomes.md#use-java-fx-for-gui-programming-lo-javafx)]
+**Suggested**: Do the exercise in [[Addressbook-Level3: LO-JavaFX]({{module_org}}/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#use-java-fx-for-gui-programming-code-lo-javafx-code)]
    
 <include src="project.md#PR_to_AB3" />
 

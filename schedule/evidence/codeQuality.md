@@ -38,7 +38,7 @@ Evidence of applying these guidelines to some code (e.g. to addressbook-level1).
 
 Similar to the above LO [Can follow basic guidelines for improving readability]
 
-In particular, try the exercise in [addressbook-level1 [LO-MethodAbstraction]]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#abstract-methods-well-lo-methodabstraction)
+In particular, try the exercise in [addressbook-level1 [LO-MethodAbstraction]]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#abstract-methods-well-code-lo-methodabstraction-code)
 
 </div>
 
