@@ -49,8 +49,9 @@
 {% if is_flat %}
   {% set panel_title %}<span class="text-white">{{ panel_title | safe }}</span> {% endset %}
 {% endif %}
-<panel  src="{{ source }}" type="{{ panel_type }}" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" >
+<panel  type="{{ panel_type }}" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" >
 <span slot="header" class="card-title">{{ panel_title | safe }}</span>
+<include src="{{ source }}" />
 </panel><p/>
 {% endmacro %}
 
