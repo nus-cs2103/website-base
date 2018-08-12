@@ -6,10 +6,7 @@
 </div>
 <div id="body">
 
-<tip-box>
-
-Overview: <include src="project-timeline.md#mid-v12-overview" inline />
-</tip-box>
+<p class="lead" style="color: purple"><md>{{ far_check_circle }} <include src="project-timeline.md#mid-v12-overview" inline /></md></p>
 
 <div id="product">
 

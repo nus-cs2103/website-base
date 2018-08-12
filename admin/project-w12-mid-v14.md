@@ -1,10 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-<tip-box>
-
-Overview: <include src="project-timeline.md#mid-v14-overview" inline />
-</tip-box>
+<p class="lead" style="color: purple"><md>{{ far_check_circle }} <include src="project-timeline.md#mid-v14-overview" inline /></md></p>
 
 **<big>Project Management:</big>**
 
