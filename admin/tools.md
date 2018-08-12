@@ -1,7 +1,9 @@
 {% macro show_main_text() %}
 <div id="main">
 
-<img src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px">
+<img src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px"><br>
+
+**Learning Management System**: This module website is the main source of information for the module. In addition, we use IVLE for some things %%(e.g., announcements, file submissions, grade book, ...)%% and LumiNUS for lecture webcasts %%(reason: IVLE no longer supports webcasts)%%.
 
 **Collaboration platform**: You are ==_required to_ use GitHub== as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). See [Appendix E]({{baseUrl}}/admin/index.html#admin-appendixE-github) for more info on how to setup and use GitHub for your project.
 
