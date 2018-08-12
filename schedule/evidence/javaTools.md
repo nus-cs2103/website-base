@@ -4,7 +4,7 @@
 
 **Suggested**: Do the exercise given in [AddressBook - Level1 : LO-Varargs]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-varargs-code-lo-varargs-code)
 
-**Submission**: Show your code to the tutor during the tutorial.
+**Submission**: not required
 </div>
 
 <div id="enums">
@@ -13,7 +13,7 @@
 
 **Suggested**: The exercise in [AddressBook-Level1: LO-Enums]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc/#use-enums-code-lo-enums-code)
 
-**Submission**: Show your code during tutorial
+**Submission**: not required
 
 </div>
 
@@ -23,6 +23,8 @@
 **Acceptable**: Using JavaFX in any past project.
 
 **Suggested**: Do the exercise in [[Addressbook-Level3: LO-JavaFX]({{module_org}}/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#use-java-fx-for-gui-programming-code-lo-javafx-code)]
+
+**Submission**: not required
    
 <include src="project.md#PR_to_AB3" />
 
