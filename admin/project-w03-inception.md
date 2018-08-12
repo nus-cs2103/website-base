@@ -6,7 +6,7 @@
 </div>
 <div id="body">
 
-<p class="lead" style="color: purple"><md>{{ far_check_circle }} <include src="project-timeline.md#inception-overview" inline /></md></p>
+<p class="lead" style="color: purple"><md>{{ far_calendar_check }} <include src="project-timeline.md#inception-overview" inline /></md></p>
 
 It is not too early to set an overall direction for your project.
 

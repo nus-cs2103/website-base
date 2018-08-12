@@ -6,7 +6,7 @@
 </div>
 <div id="body">
 
-<p class="lead" style="color: purple"><md>{{ far_check_circle }} <include src="project-timeline.md#mid-v13-overview" inline /></md></p>
+<p class="lead" style="color: purple"><md>{{ far_calendar_check }} <include src="project-timeline.md#mid-v13-overview" inline /></md></p>
 
 
 **<big>Project Management:</big>**

@@ -6,7 +6,7 @@
 </div>
 <div id="body">
 
-<p class="lead" style="color: purple"><md>{{ far_check_circle }} <include src="project-timeline.md#mid-v10-overview" inline /></md></p>
+<p class="lead" style="color: purple"><md>{{ far_calendar_check }} <include src="project-timeline.md#mid-v10-overview" inline /></md></p>
 
 :bulb: Given below are some guidance on the recommended progress at this point of the project %%(i.e., at week 4, which is the midway point of the milestone v1.0)%%
 
