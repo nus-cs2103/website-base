@@ -6,12 +6,9 @@
 </div>
 <div id="body">
 
-<tip-box>
+<p class="lead" style="color: purple"><md>{{ far_calendar_check }} <include src="project-timeline.md#inception-overview" inline /></md></p>
 
-Overview: <include src="project-timeline.md#inception-overview" inline />
-</tip-box>
-
-This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).
+It is not too early to set an overall direction for your project.
 
 * **Set up a weekly project meeting time/venue with your team members**
   

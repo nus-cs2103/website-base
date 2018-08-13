@@ -6,12 +6,9 @@
 </div>
 <div id="body">
 
-Given below are some guidance on the recommended progress at this point of the project %%(i.e., at week 4, which is the midway point of the milestone v1.0)%%
+<p class="lead" style="color: purple"><md>{{ far_calendar_check }} <include src="project-timeline.md#mid-v10-overview" inline /></md></p>
 
-<tip-box>
-
-Overview: <include src="project-timeline.md#mid-v10-overview" inline />
-</tip-box>
+:bulb: Given below are some guidance on the recommended progress at this point of the project %%(i.e., at week 4, which is the midway point of the milestone v1.0)%%
 
 This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).
 

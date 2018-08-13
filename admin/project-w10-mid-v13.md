@@ -6,10 +6,7 @@
 </div>
 <div id="body">
 
-<tip-box>
-
-Overview: <include src="project-timeline.md#mid-v13-overview" inline />
-</tip-box>
+<p class="lead" style="color: purple"><md>{{ far_calendar_check }} <include src="project-timeline.md#mid-v13-overview" inline /></md></p>
 
 
 **<big>Project Management:</big>**
