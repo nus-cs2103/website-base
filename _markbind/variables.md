@@ -18,7 +18,7 @@
 
 <span id="ivle_announcements">https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19</span>
 
-<span id="bugs_link">{{ module_org | safe }}/website/issues</span>
+<span id="bugs_link">{{ module_org | safe }}/cs2103-website/issues</span>
 
 <span id="forum_link">{{ module_org | safe }}/forum/issues</span>
 
