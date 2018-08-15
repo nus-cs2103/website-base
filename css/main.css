@@ -15,3 +15,27 @@ mark {
 .important {
     color: #980000;
 }
+
+.alt-python {
+    display: none;
+}
+
+.flat {
+    display: none;
+}
+
+.indented-less {
+    padding-left: 10px;
+}
+
+.indented {
+    padding-left: 20px;
+}
+
+.indented-level2 {
+    padding-left: 40px;
+}
+
+.indented-level3 {
+    padding-left: 60px;
+}
