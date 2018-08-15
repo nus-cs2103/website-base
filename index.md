@@ -1,13 +1,2 @@
-<frontmatter>
-title: "Home"
-footer: footer.md
-head: scheduleHead.md
-</frontmatter>
 
-<include src="common/header.md" />
-
-<div class="website-content" id="main">
-
-<include src="schedule/index.md#main" />
-
-</div>
+<md>**The current CS2103/T website is at [https://www.comp.nus.edu.sg/~cs2103](https://www.comp.nus.edu.sg/~cs2103)**</md>
