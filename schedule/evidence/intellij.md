@@ -4,7 +4,7 @@
 
 **Suggested**: Do the exercise given in [AddressBook - Level1 : LO-IdeSetup]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#set-up-a-project-in-an-ide-code-lo-idesetup-code)
 
-**Submission**: Demo the test during the tutorial.
+**Submission**: Demo the project setup during the tutorial.
 </div>
 
 
@@ -14,7 +14,7 @@
 
 **Suggested**: Do the exercise given in [AddressBook - Level1 : LO-CodeNavigation]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#navigate-code-efficiently-code-lo-codenavigation-code)
 
-**Submission**: Demo the test during the tutorial.
+**Submission**: Demo the relevant IDE features during the tutorial.
 </div>
 
 <div id="refactoring">
