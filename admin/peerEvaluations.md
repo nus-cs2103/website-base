@@ -51,12 +51,6 @@ Here are some things to keep in mind:
 
 </span>
 
-The final peer evaluation (in week 13) is graded. In that peer-evaluation you will be asked to evaluate the work of your team members and another team. The quality and accuracy of your evaluation will affect your grade and your evaluations will be considered as a data point in determining the grade of the team members.
-
-<img src="{{baseUrl}}/admin/images/peer evaluations.png" width="600px">
-
-
-
 </div>
 {% endmacro %}
 
