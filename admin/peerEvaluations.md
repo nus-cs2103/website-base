@@ -8,7 +8,7 @@ All peer evaluations will be taken into account when determining your participat
 
 **Extra Requirements:** [considered for participation marks]
 
-* :exclamation: Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you can lose participation marks.==
+* {{ icon_important_big_red }} Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you can lose participation marks.==
 * :bulb: TEAMMATES normally allows students to access it without using Google login. In this module, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. %%Reason: {{ module_pair }} is a big class. This profile helps us to remember you better, even after the module is over.%%
 
 <modal title="%%Admin {{ icon_embedding }} Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto">
@@ -29,7 +29,7 @@ All peer evaluations will be taken into account when determining your participat
 * **Quality**: Does not deliver work products that seem to be below the student's competence level i.e. tries their best to make the work product as high quality as possible within her competency level.
 * **Meticulousness**:
   * Rarely overlooks submission requirements.
-  * Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.
+  * Rarely misses compulsory module activities such as pre-module survey.
 * **Teamwork**: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.
 
   

@@ -11,7 +11,7 @@ Evaluates: How well do your features fit together to form a cohesive product (no
 
 Based on: user guide and the product demo. The **quality of the demo will be factored in** as well.
 
-:exclamation: Feature that fit well with the other features will earn more marks. 
+:bulb: Feature that fit well with the other features will earn more marks.
 
 </panel>
 
@@ -23,7 +23,7 @@ Evaluates:
 
 How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.
 
-Based on: an inspection of the collated code (submitted in your `/collated/*.md` files).
+Based on: an inspection of the parts of the code you claim as written by you.
 
 <panel header=":bulb: Tips: how to score high for code quality" no-close>
 
@@ -53,7 +53,7 @@ Based on: an inspection of the collated code (submitted in your `/collated/*.md`
 </panel><p>
 
 
-**B. Depth and completeness of the major feature**
+**B. Depth and completeness of your feature**
 
 </panel>
 
@@ -89,7 +89,7 @@ Evaluates: How well you did in project management related aspects of the project
 
 Based on: Supervisor observations of project milestones and GitHub data. 
  
-Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.
+Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. To get a good grade for this aspect, achieve recommended weekly progress in at least 6/10 weeks.
   
 Other criteria:
 * Good use of GitHub milestones
