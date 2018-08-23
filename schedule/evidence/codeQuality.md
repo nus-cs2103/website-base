@@ -18,7 +18,11 @@
 
 <div id="followStandard_intermediate">
 
-Similar to [Can follow simple mechanical style rules] above, but also fix violations of _intermediate_ style rules.
+Similar to the LO <trigger trigger="click" for="modal:evidenceCodeQuality-followStandardBasic">Can follow simple mechanical style rules</trigger>, but also fix violations of _intermediate_ style rules.
+
+<modal large title="Evidence for LO: Can follow simple mechanical style rules" id="modal:evidenceCodeQuality-followStandardBasic">
+  <include src="codeQuality.md#followStandard_basic"/>
+</modal>
 
 </div>
 

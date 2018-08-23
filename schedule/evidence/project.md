@@ -1,6 +1,6 @@
 <div id="1kloc">
 
-{{ icon_important_big_red }} This LO can earn you <trigger trigger="click" for="modal:project1kloc-participation">1 participation mark</trigger>. 
+{{ icon_important_big_red }} This LO can earn you <trigger trigger="click" for="modal:project1kloc-participation">2 participation marks</trigger>.
  
 <modal large title="%%Admin {{ icon_embedding }} Participation Marks%%" id="modal:project1kloc-participation">
   <include src="../../admin/participation.md#main"/>
@@ -19,11 +19,7 @@ Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]
   * [Optional] Try to follow [our coding standard]({{baseUrl}}/admin/programmingLanguages.html#java-coding-standard) in your new code.
 * Step 3: push the updated AB1 code to your fork
 
-  <tip-box type="tip">
-  
-  Note that you can reuse the code you write here in your final project, if applicable.
- 
-  </tip-box>
+:bulb: Note that you can reuse the code you write here in your final project, if applicable.
 
 **Submission**: No special submission required. Our scripts will check your fork automatically.
 
