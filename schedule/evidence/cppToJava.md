@@ -68,6 +68,30 @@ To be able to do exercises such as these:
 <include src="../../book/cppToJava/classes/classLevelMembers/q-getMaxRadius.md" />
 </div>
 
+<div id="usefulClasses_stringClass">
+To be able to do exercises such as these:
+
+<include src="../../book/cppToJava/usefulClasses/stringClass/q-printPriceMethod.md" />
+</div>
+
+<div id="usefulClasses_wrapperClasses">
+To be able to do exercises such as these:
+
+<include src="../../book/cppToJava/usefulClasses/wrapperClasses/q-printTotalScoreMethod.md" />
+</div>
+
+<div id="usefulClasses_arraysClass">
+To be able to do exercises such as these:
+
+<include src="../../book/cppToJava/usefulClasses/arraysClass/q-filterEmailsMethod.md" />
+</div>
+
+<div id="usefulClasses_scannerClass">
+To be able to do exercises such as these:
+
+<include src="../../book/cppToJava/usefulClasses/scannerClass/q-findTotalExpenditure.md" />
+</div>
+
 <div id="collections_what">
 
 **Acceptable**: Some code that you have written that uses some Java Collection classes.
