@@ -16,7 +16,7 @@ It is not too early to set an overall direction for your project.
   
 * **Play around with AB4**
   
-  Download the latest released version %%(i.e., the jar file)%% of AB4 from [its upstream repo](https://se-edu.github.io/addressbook-level4/) and play around with it to familiarize with its current features.
+  Download the latest released version %%(i.e., the jar file)%% of AB4 from [its upstream repo](https://se-edu.github.io/addressbook-level4/UserGuide.html) and play around with it to familiarize with its current features.
 
 * **Decide project direction, target user profile, and problem addressed**
   
