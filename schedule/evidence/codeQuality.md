@@ -13,6 +13,10 @@
 
 **Submission**: Show the relevant commits during the tutorial.
 
+Suggested question to discuss during tutorial:
+
+<include src="../../book/codeQuality/followStandard/basic/q-listViolations.md" />
+
 </div>
 
 
