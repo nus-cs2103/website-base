@@ -96,7 +96,7 @@ Penalties:
   * The work comes from a source of 'good standing' (such as an established open source project). This means you cannot reuse code written by an outside 'friend'.
   * You clearly give credit to the original author. Acknowledge use of third party resources clearly e.g. in the welcome message, splash screen (if any) or under the 'about' menu. If you are open about reuse, you are less likely to get into trouble if you unintentionally reused something copyrighted.
   * You do not violate the license under which the work has been released. Please  **do not use 3rd-party images/audio** in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.
-  * ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our GitHub forum. That way, the whole class get to see what libraries are being used by others.
+  * ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ forum_link }}). That way, the whole class get to see what libraries are being used by others.
 
 <tip-box> 
 
