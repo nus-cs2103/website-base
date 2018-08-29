@@ -113,3 +113,9 @@ To be able to do exercises such as these:
 
 **Submission**: Show your code to the tutor during the tutorial.
 </div>
+
+<div id="javaCommon">
+
+Please refer to the relevant sections of the [_C++ to Java_ chapter of the Textbook]({{baseUrl}}/se-book-adapted/chapters/cppToJava.html) for help on using Java.
+
+</div>

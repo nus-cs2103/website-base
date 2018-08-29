@@ -89,7 +89,7 @@ If you choose option 2, we recommend that you complete this week's _Project Mana
 
 <div id="PR_to_AB2">
 
-**Submission**: Create a PR against [Addressbook-Level2]({{module_org}}/addressbook-level2).  ==Only clean PRs== (i.e. free of unrelated code modifications) will be accepted. 
+**Submission**: Create a PR against [Addressbook-Level2]({{module_org}}/addressbook-level2).  ==Try to make a _clean_ PR== (i.e. free of unrelated code modifications).
 
 <panel src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" header="%%Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" />
 

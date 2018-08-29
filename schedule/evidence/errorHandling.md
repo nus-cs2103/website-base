@@ -4,8 +4,6 @@
 
 **Suggested**: Do the exercise in [addressbook-level2: LO-Exceptions]({{module_org}}/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#handle-exceptions-code-lo-exceptions-code).
 
-<include src="project.md#submission_PR_optional" />
-
 </div>
 
 
