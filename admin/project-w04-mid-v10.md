@@ -23,8 +23,9 @@ This is a good time to analyze requirements with a view to conceptualizing the n
   * Refer <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories →  Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.
   
   * You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
-    
-  * Note that ==you should not 'evaluate' the value of user stories while doing the above==. %%&nbsp;Reason: an important aspect of brainstorming is not judging the ideas generated.%%  
+
+  * Note that ==you should not 'evaluate' the value of user stories while doing the above==. %%&nbsp;Reason: an important aspect of brainstorming is not judging the ideas generated.%%
+
 
 <modal large title="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
   <include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -43,15 +44,28 @@ This is a good time to analyze requirements with a view to conceptualizing the n
 </modal>
 
 <div class="indented-level3">
-  <panel header="{{ icon_example }} User Story examples (from a different product)" minimized>
-  
-  `As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.`  
-  `As a user I can find upcoming tasks, so that I can decide what needs to be done soon.`  
-  `As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.`  
-  `As a new user I can view more information about a particular command, so that I can learn how to use various commands.`  
-  `As an advanced user I can use shorter versions of a command, so that type a command faster.`  
-  
-  </panel>
+<box>
+
+:bulb: Recommended: **You can use GitHub issue tracker to manage user stories**, but for that you need to set up your team's GitHub organization, project fork, and issue tracker first. Instructions for doing those steps are in the panel below.
+
+<panel header="%%Admin {{ icon_embedding }} Appendix E: GitHub (extract)%%">
+  <include src="appendixE-gitHub.md#organization-setup"/>
+  <include src="appendixE-gitHub.md#repo-setup"/>
+  <include src="appendixE-gitHub.md#issue-tracker-setup"/>
+  <include src="appendixE-gitHub.md#project-schedule-tracking"/>
+</panel>
+
+</box>
+
+<panel header="{{ icon_example }} User Story examples (from a different product)" minimized>
+
+`As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.`
+`As a user I can find upcoming tasks, so that I can decide what needs to be done soon.`
+`As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.`
+`As a new user I can view more information about a particular command, so that I can learn how to use various commands.`
+`As an advanced user I can use shorter versions of a command, so that type a command faster.`
+
+</panel>
 </div>
 
 <br>
