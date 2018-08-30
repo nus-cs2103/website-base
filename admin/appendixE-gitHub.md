@@ -116,13 +116,14 @@ Note that some of our download scripts depend on the following folder paths. Ple
 
 ## Issue tracker setup
 
-Configure the issue tracker of the `main` repo as follows:
+We recommend you configure the issue tracker of the `main` repo as follows:
 
-* Delete existing labels and add the following labels.
+* Delete existing labels and add the following labels.<br>
+  :bulb: **Issue type** labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.
 
 <tip-box>
 
-Issue type labels:
+**Issue type** labels:
 * `type.epic` : A big feature which can be broken down into smaller stories e.g. search
 * `type.story` : A user story
 * `type.enhancement`: An enhancement to an existing story
@@ -133,13 +134,13 @@ Issue type labels:
 
 <tip-box>
 
-Status labels:
+**Status** labels:
 * `status.ongoing` : The issue is currently being worked on. note: remove this label before closing an issue.
 </tip-box>
 
 <tip-box>
 
-Priority labels:
+**Priority** labels:
 * `priority.high` : Must do
 * `priority.medium` : Nice to have
 * `priority.low` : Unlikely to do 
@@ -150,7 +151,7 @@ Priority labels:
 
 <tip-box>
 
-Bug Severity labels:
+**Bug Severity** labels:
 * `severity.Low` : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.
 * `severity.Medium` : A flaw that causes occasional inconvenience to some users but they can continue to use the product.
 * `severity.High` : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.
@@ -173,11 +174,15 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 ### Using Issues:
 
+<big>**During the initial stages:**</big>
+
 * **Record each of the user stories you plan to deliver as an issue in the issue tracker.** 
     %%e.g.%% `Title: As a user I can add a deadline`  
     `Description: ... so that I can keep track of my deadlines`
 
 * **Assign the `type.*` and `priority.*` labels to those issues.**
+
+<big>**From milestone v1.1:**</big>
 
 * **When you start implementing a story, break it down to tasks.** Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. %%e.g.%%   
   * %%:+1: Good: Update class diagram in the project manual for v1.4%% 
@@ -201,6 +206,8 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 <div id="using-milestones">
 
 ### Using Milestones:
+
+We recommend you do the following from milestone v1.1:
 
 * Use [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.
 
