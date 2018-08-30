@@ -115,7 +115,7 @@ Covered by:
 
 <div id="mid-v10">
 
-Covered by:
+Covered by the below. Try to ==do at least **step 1**== before coming to the tutorial.
 
 <panel src="../../admin/project-w04-mid-v10.md#main" header="%%Admin {{ icon_embedding }} Project → mid-v1.0%%" no-close />
 
