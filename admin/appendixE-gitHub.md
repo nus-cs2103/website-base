@@ -124,26 +124,26 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 <tip-box>
 
 **Issue type** labels:
-* `type.epic` : A big feature which can be broken down into smaller stories e.g. search
-* `type.story` : A user story
-* `type.enhancement`: An enhancement to an existing story
-* `type.task` : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
-* `type.bug` : A bug
+* `type.Epic` : A big feature which can be broken down into smaller stories e.g. search
+* `type.Story` : A user story
+* `type.Enhancement`: An enhancement to an existing story
+* `type.Task` : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
+* `type.Bug` : A bug
 
 </tip-box>
 
 <tip-box>
 
 **Status** labels:
-* `status.ongoing` : The issue is currently being worked on. note: remove this label before closing an issue.
+* `status.Ongoing` : The issue is currently being worked on. note: remove this label before closing an issue.
 </tip-box>
 
 <tip-box>
 
 **Priority** labels:
-* `priority.high` : Must do
-* `priority.medium` : Nice to have
-* `priority.low` : Unlikely to do 
+* `priority.High` : Must do
+* `priority.Medium` : Nice to have
+* `priority.Low` : Unlikely to do
 
 </tip-box>
 
@@ -185,8 +185,8 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 <big>**From milestone v1.1:**</big>
 
 * **When you start implementing a story, break it down to tasks.** Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. %%e.g.%%   
-  * %%:+1: Good: Update class diagram in the project manual for v1.4%% 
-  * %%:-1: Bad (reasons: not a one-person task, not small enough): Write the project manual%%
+  * %%{{ icon_like }} Good: `Update class diagram in the project manual for v1.4`%%
+  * %%{{ icon_dislike }} Bad (reasons: not a one-person task, not small enough): `Write the project manual`%%
 
 * **Write a descriptive title for the issue.** %%e.g. Add support for the 'undo' command to the parser.%%
 
