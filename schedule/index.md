@@ -135,7 +135,7 @@ head: scheduleHead.md
       {subheading: "Supplementary Requirements"},
         {location: ["specifyingRequirements", "supplementaryRequirements", "what"], omit_evidence: true},
   {name: "OOP"},
-    {heading: "Can explaine basic OOP concepts"},
+    {heading: "Can explain basic OOP concepts"},
       {location: ["oop", "introduction", "what"], omit_evidence: true},
       {location: ["oop", "objects", "what"]},
       {location: ["oop", "classes", "what"]},
