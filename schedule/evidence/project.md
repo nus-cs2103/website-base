@@ -32,7 +32,7 @@ Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]
   This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
 </tip-box>
 
-This LO can earn you 2 participation marks, 1 mark for the individual component and 1 for the team component. You can omit either one of them.
+==This LO can earn you 3 participation marks==, 2 mark for the individual component and 1 bonus mark for the team component. You can omit either one of them.
 
 :bulb: When working with existing code, a safe approach is to **change the code in very small steps, each resulting in a verifiable change** without breaking the app. For example, when adding a new `sort` command, the first few steps can be,
 1. Teach the app to accept a `sort` command but ignore it.
@@ -45,7 +45,7 @@ This LO can earn you 2 participation marks, 1 mark for the individual component 
 
 #### Individual component:
 
-**Requirements**: Do an enhancement to [[AddressBook - Level2]({{module_org}}/addressbook-level2)]  %%e.g. add a new command%%. It can be the same enhancement you did to AddressBook Level1 (at the 1KLoC milestone in week 3). The size of the enhancement does not matter but you must,
+**Requirements**: Do an enhancement to [[AddressBook - Level2]({{module_org}}/addressbook-level2)]  %%e.g. add a new command%%. It can be the same enhancement you did to AddressBook Level1 (at the 1KLoC milestone in week 3). The size of the enhancement does not matter but try to limit to one enhancement (rather than mix many enhancements). In addition,
 * update the User Guide
 * update existing tests and add new tests if necessary, for both JUnit tests and I/O tests
 * follow the coding standard
@@ -54,7 +54,7 @@ This LO can earn you 2 participation marks, 1 mark for the individual component 
 Optional but encouraged:
 * Update the Developer Guide
 
-<include src="project.md#submission_PR_optional" />
+<include src="project.md#PR_to_AB2" />
 
 #### Team component:
 
@@ -71,19 +71,6 @@ The team component is ==to be done by all members==, including those who didn't 
 
 <div id="3kloc">
 ...
-</div>
-
-
-<div id="submission_PR_optional">
-
-**Submission**: 
-* Options 1 (discouraged): Show the relevant code during the tutorial.
-* Options 2 (preferred): Create a pull request by following the instructions below.
-
-<panel src="../../admin/appendixE-gitHub.md#tutorial-pr-instructions" header="%%Admin {{ icon_embedding }} Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" />
-
-If you choose option 2, we recommend that you complete this week's _Project Management_ LOs first; there are many ways to create PRs but we expect you to create PRs in a specific way, as specified in the LOs. 
-
 </div>
 
 
