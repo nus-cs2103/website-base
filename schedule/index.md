@@ -597,9 +597,8 @@ head: scheduleHead.md
 
 
 {% macro show_current_week(week) %}
-<panel type="seamless" expanded no-close>
+<panel type="seamless" src="week{{ week.num }}/index.md" no-close>
 <span slot="header" class="card-title week"> Week {{ week.num }} [{{ week.day }}]</span>
-  {{ show_week_schedule(week.num, "week" + week.num + "/") }}
 </panel>
 {% endmacro %}
 
