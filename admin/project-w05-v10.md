@@ -19,19 +19,27 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 {{ icon_team }} v2.0 conceptualized | a draft of v2.0 user guide in some form
 {{ icon_team }} feature releases planned | a rough feature release plan
 
-:exclamation: ==Reaching individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
+{{ icon_important_big_red }} ==Reaching individual and team milestones are considered for grading== the _project management_ component of your project grade (expand the panel below for more info).
 
-:exclamation: The deadline for reaching a milestone is ==the midnight before your tutorial== %%e.g., if your tutorial is on Wednesday, you need to reach the milestone by Tuesday midnight.%%
+{{ icon_important_big_red }} The deadline for reaching a milestone is ==the midnight before your tutorial== %%e.g., if your tutorial is on Wednesday, you need to reach the milestone by Tuesday midnight.%%
 
 {{ embed_topic("project-assessment.md#project-management-grading", "Admin " + icon_embedding + " Project Assessment → Project Management", "v10-projectMgsAssessment", "3") }}
 
 ### v1.0 Documentation
 
 * **Developer Guide**:
-  Have a draft of the requirements of your project, as described in mid-v1.0 progress guide.
+  Have a draft of the requirements of your project, as described in <trigger trigger="click" for="modal:v10-midv10">mid-v1.0 progress guide</trigger>.
+
+<modal large title="Admin » Project → mid-v1.0" id="modal:v10-midv10">
+  <include src="project-w04-mid-v10.md#body"/>
+</modal>
   
 * **User Guide**:  
-  Draft a user guide in a convenient format (e.g., a GoogleDoc) to describe what the product would be like when it is at 2.0.  We recommend that you follow the existing <tooltip content="AddressBook-Level4">AB4</tooltip> User Guide in terms of structure and format.
+  Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at v2.0.
+  * We recommend that you follow the existing [AB4 User Guide](https://nus-{{ module }}-{{ semester | lower }}.github.io/addressbook-level4/UserGuide.html) in terms of structure and format.
+  * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in asciidoc format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
+  * Do try to come up with concrete command syntax for feature that you would implement (at least for those that you will implement by v1.4).
+  * Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint or [Balsamiq](https://balsamiq.com/))%%.
 
   <tip-box> 
   
@@ -50,7 +58,17 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 * After the v2.0 is conceptualized, decide which features each member will do by v1.4. %%We realize that it will be hard for you to estimate the effort required for each feature as you are not familiar with the code base. Nevertheless, come up with a project plan as per your best estimate; this plan can be revised at later stages. It is better to start with _some_ plan rather than no plan at all. If in doubt, choose to do _less_ than _more_; we don't expect you to deliver a lot of big features.%%
 * Divide each of those features into three increments, to be released at v1.1, v1.2, v1.3 (v1.4 omitted deliberately as a buffer). Ideally, each increment should deliver a end-user testable enhancement.
-* Document the above two items somewhere e.g., in a Google doc/sheet
+* Document the above two items somewhere e.g., in a Google doc/sheet. An example is given below:
+
+  ```
+  * Jake Woo: Profile photo feature
+    * v1.1: show a place holder for photo, showing a generic default image
+    * v1.2: can specify photo location if it is in local hard disk,
+            show photo from local hard disk
+    * v1.3: auto-copy the photo to app folder, support using online photo
+            as profile pic, stylize photo e.g., round frame
+  ```
+
 
 =={{ icon_important_big_red }} **Submission**==: Include in the pdf file you upload to IVLE.
 
