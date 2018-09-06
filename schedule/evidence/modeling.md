@@ -9,6 +9,12 @@
 
 </div>
 
+<div id="modelingStructures_objectDiagrams">
+
+<include src="../../book/uml/classDiagrams/combine/basic/q-essay-objectDiagramsForClassDiagram.md" />
+
+</div>
+
 
 <div id=""modelingStructures_classDiagramsIntermediate">
 

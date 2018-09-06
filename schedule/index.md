@@ -176,6 +176,7 @@ head: scheduleHead.md
     {heading: "Can explain basic object/class structures"},
       {location: ["modeling", "modelingStructures", "ooStructures"], omit_evidence: true},
       {location: ["modeling", "modelingStructures", "classDiagramsBasic"]},
+      {location: ["modeling", "modelingStructures", "objectDiagrams"]},
       {location: ["uml", "miscellaneous", "objectVsClassDiagrams"], omit_evidence: true},
   {name: "Implementation"},
     {heading: "Can implement polymorphism"},
