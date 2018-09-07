@@ -41,19 +41,19 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 1. Fork the repo to your personal GitHub account, if you haven't done so already.
 
-2. Create a branch named after the LO IDe.g. `W2.2b`  
+2. Create a branch named after the LO ID e.g. `W2.2b`
     ==Remember to switch to master branch before creating the new branch.==
     
 3. Commit your changes to that branch. Push to your fork.
 
-4. Create a Pull Request against the master branch of the repo  
+4. Create a Pull Request against the `master` branch of the repo
    `{{module_org}}/{repo_name}`  
-   e.g. `{{module_org}}/addressbook-level1`  
+   e.g. `{{module_org}}/addressbook-level2`
    ==(do not create PRs against the upstream repo at `se-edu` org)== <br/> 
    <img src="{{baseUrl}}/admin/images/PrDetails.png" width="700" /><br/>
    PR name should be: `[LO_ID][TEAM_ID]Your Name`  
-   e.g. If you are in team 1 of tutorial W09 (i.e. Wednesday 9am), `[W2.2b][W09-A1]James Yong`. 
-   Your Team ID can be found in [this page](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true). 
+   e.g. If you are in tutorial W09 (i.e. Wednesday 9am) and team 1, `[W2.2b][W09-1]James Yong`.
+   Your Team ID can be found in [this page]({{ team_IDs_page }}).
    Note that our tutorial IDs are different from those shown in CORS/IVLE. Our tutorial IDs are given in the panel below.
 
 <div class="indented-level2">
@@ -77,7 +77,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 The instructions below are for setting up a GitHub organization for your team.
 
-You can create your GitHub account after receiving your team ID. Here are the instructions (==please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work==):
+You can create your GitHub organization (for your team) after receiving your team ID. Here are the instructions (==please follow the organization/repo name format precisely because we use scripts to download your code. If the names are not as expected, our scripts will not work==):
 
 * One team member (e.g. team leader) should create an organization with the following details:
 * ==Organization name : `{{ module }}-{{ semester }}-TEAM_ID`==. e.g.  `{{ module }}-{{ semester }}-W12-1`
@@ -95,14 +95,15 @@ You can create your GitHub account after receiving your team ID. Here are the in
 Only one team member:
 
 1. Fork [Address Book Level 4]({{module_org}}/addressbook-level4) to your team org.
-1. Rename the forked repo as `main`. This repo is to be used as the repo for your project.
-1. Ensure your team members have the desired level of access to your team repo
+1. ==Rename the forked repo as `main`==. This repo is to be used as the repo for your project.
+1. Ensure your team members have the desired level of access to your team repo.
 
 All team members:
 
-1. Fork the `main` repo (created above) to your personal GitHub account. 
+1. Go to the `main` repo (created above) and click on the `watch` button to subscribe to activities of the repo
+1. Fork the `main` repo to your personal GitHub account.
 1. Clone the fork to your Computer.
-1. Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).
+1. Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).
 
 Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project. 
 * `/src/main`  
@@ -115,13 +116,14 @@ Note that some of our download scripts depend on the following folder paths. Ple
 
 ## Issue tracker setup
 
-When you create a repo, you get an issue tracker for that repo automatically. Configure it as follows:
+We recommend you configure the issue tracker of the `main` repo as follows:
 
-* Delete existing labels and add the following labels.
+* Delete existing labels and add the following labels.<br>
+  :bulb: **Issue type** labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.
 
 <tip-box>
 
-Issue type labels:
+**Issue type** labels:
 * `type.epic` : A big feature which can be broken down into smaller stories e.g. search
 * `type.story` : A user story
 * `type.enhancement`: An enhancement to an existing story
@@ -132,13 +134,13 @@ Issue type labels:
 
 <tip-box>
 
-Status labels:
+**Status** labels:
 * `status.ongoing` : The issue is currently being worked on. note: remove this label before closing an issue.
 </tip-box>
 
 <tip-box>
 
-Priority labels:
+**Priority** labels:
 * `priority.high` : Must do
 * `priority.medium` : Nice to have
 * `priority.low` : Unlikely to do 
@@ -149,7 +151,7 @@ Priority labels:
 
 <tip-box>
 
-Bug Severity labels:
+**Bug Severity** labels:
 * `severity.Low` : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.
 * `severity.Medium` : A flaw that causes occasional inconvenience to some users but they can continue to use the product.
 * `severity.High` : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.
@@ -172,11 +174,15 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 ### Using Issues:
 
+<big>**During the initial stages:**</big>
+
 * **Record each of the user stories you plan to deliver as an issue in the issue tracker.** 
     %%e.g.%% `Title: As a user I can add a deadline`  
     `Description: ... so that I can keep track of my deadlines`
 
 * **Assign the `type.*` and `priority.*` labels to those issues.**
+
+<big>**From milestone v1.1:**</big>
 
 * **When you start implementing a story, break it down to tasks.** Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. %%e.g.%%   
   * %%:+1: Good: Update class diagram in the project manual for v1.4%% 
@@ -200,6 +206,8 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 <div id="using-milestones">
 
 ### Using Milestones:
+
+We recommend you do the following from milestone v1.1:
 
 * Use [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.
 
