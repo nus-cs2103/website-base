@@ -10,7 +10,7 @@
 
 **v1.0 Summary of Milestone**
 
-Here is a summary of items you need to deliver to _reach_ v1.1 individual ({{ icon_individual }}) and team ({{ icon_team }}) milestones. See sections below for more details of each item. 
+Here is a summary of items you need to deliver to _reach_ v1.0 individual ({{ icon_individual }}) and team ({{ icon_team }}) milestones. See sections below for more details of each item. 
 
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
