@@ -22,7 +22,9 @@
   <include src="appendixE-gitHub.md#repo-setup"/>
 </modal>
 
-* All members: Set up your own forks of the team repo, so that you can submit PRs to your team repo using the forking workflow.
+* All members:
+  * Set up your own forks of the team repo, so that you can submit PRs to your team repo using the forking workflow.
+  * Set up the AB-4 developer environment in your computer. You are recommended to use JDK 9 for AB-4 as some of the libraries used in AB-4 have not updated to support Java 10 yet. ==JDK 9 can be downloaded from the [Java Archive](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html).==
 
 <tip-box>
  
