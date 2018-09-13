@@ -68,6 +68,17 @@ The team component is ==to be done by all members==, including those who didn't 
 
 </div>
 
+<div id="3kloc">
+
+==[Optional, but recommended]== If you are not comfortable jumping from AB-2 (~2KLoc) straight to AB-4 (~10KLoc), we recommend that you play around with [[AddressBook - Level3]({{module_org}}/addressbook-level3)] for a bit before moving to AB-4. As before, fork, clone, set up project in your Computer, and try to do a small enhancement to AB-3.
+
+How AB-3 differs from AB-2:
+* A simple GUI has been added to replace the Text UI.
+* No more I/O tests
+* A `Logic` class has been added together with a `LogicTest` class.
+
+</div>
+
 
 <div id="3kloc">
 ...

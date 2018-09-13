@@ -237,6 +237,7 @@ head: scheduleHead.md
       {location: ["integration", "buildAutomation", "what"]},
       {location: ["integration", "buildAutomation", "continuousIntegrationDeployment"]},
   {name: ":parking: Project"},
+    {heading: "Can work with a 3KLoC code base", priority: "3", file: "project.md#3kloc"},
     {heading: "Can contribute to project documentation", priority: "1", file: "project.md#mid-v11"},
 {week: "7"},
   {name: "Design"},
