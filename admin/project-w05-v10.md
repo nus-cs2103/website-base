@@ -44,7 +44,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 **Suggested length**: Follow the existing user guide and developer guides in terms of the level of details.
 
-**Submission**: Save your draft a single pdf file, name it `{Your Team ID}.pdf` %%e.g., `W09-3.pdf`%% and upload to IVLE.
+=={{ icon_important_big_red }} **Submission**==: Save your draft a single pdf file, name it `{Your Team ID}.pdf` %%e.g., `W09-3.pdf`%% and upload to IVLE.
 
 ### v1.0 Project Management
 
@@ -52,7 +52,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 * Divide each of those features into three increments, to be released at v1.1, v1.2, v1.3 (v1.4 omitted deliberately as a buffer). Ideally, each increment should deliver a end-user testable enhancement.
 * Document the above two items somewhere e.g., in a Google doc/sheet
 
-**Submission**: Include in the pdf file you upload to IVLE.
+=={{ icon_important_big_red }} **Submission**==: Include in the pdf file you upload to IVLE.
 
 </div>
 </div>
