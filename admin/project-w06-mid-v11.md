@@ -47,7 +47,7 @@
 
 1. Divide among yourselves who will update which parts of the document(s).
 1. Update the team repo by following the <trigger trigger="click" for="modal:v10-forkingworkflow">forking workflow</trigger>.
-1. One member: create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level4]({{module_org}}/addressbook-level4)] `master` branch. PR name: `[v1.x][Team ID] Product Name` e.g., `[v1.x][T09-B2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed (that's why we use `v1.x` instead of `v1.0` in the PR title).%% In the PR description <tooltip content="use @githubUserName">mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
+1. One member: create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level4]({{module_org}}/addressbook-level4)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[T09-2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
 
 <modal large title="TextBook {{ icon_embedding }}" id="modal:v10-forkingworkflow">
   <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
