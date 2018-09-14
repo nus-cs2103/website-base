@@ -1,7 +1,5 @@
 <div id="multilevelDesign_what">
 
-Covered by the deliverable below %%&nbsp;(i.e. to be able to enhance an component of AddressBook-Level4, you need to be able to understand its multi-level design)%%:
-
-<include src="../../admin/project-w07-v11.md#product" name="%%Admin {{ icon_embedding }} v1.1 → Product%%" />
+Covered by the project. In particular, when getting started on modifying AB-4, you are recommended to start by doing _local_ changes (i.e., changes local to a component) first and then move to _global_ changes (i.e., changes that touch multiple components). As AB-4 users multi-level design, you should be able to do most of the local changes without having to learn internal details of the other components.
 
 </div>
