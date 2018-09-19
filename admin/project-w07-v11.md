@@ -13,7 +13,6 @@
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
 {{ icon_team }} Team org/repo set up | as stated
-{{ icon_team }} Project plan formalized | as stated
 {{ icon_individual }} Have done some enhancement to the code | at least attempted to enhance the code of a component, even if you did not fully succeed
 {{ icon_team }} All project documents updated as required | updated docs are merged to the master branch
 
@@ -30,8 +29,6 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 * {{ icon_team }} Fix any errors in org/repo set up %%&nbsp;(e.g. wrong repo name)%%.
 
 * When all changes intended for v1.1 is merged to the master branch, use `git tag` feature to tag the current version as `v1.1`
-
-* Start tracking your project schedule using GitHub issue tracker and milestones. More instructions coming soon.
 
 
 ### v1.1 Documentation

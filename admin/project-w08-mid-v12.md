@@ -36,6 +36,9 @@
   * Now that you have a some idea about the code base, revisit the feature release plan and adjust it if necessary. The adjustment can be done using GitHub issue tracker. 
 
 * **Start proper milestone management**
+  * Formalize the project plan in GitHub. More info to be added.
+
+  * Start tracking your project schedule using GitHub issue tracker and milestones.
 
   * {{ icon_important_big_red }} Starting from the upcoming milestone, ==there are additional requirements to follow== regarding how you **use GitHub to manage your milestones**, as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
 
