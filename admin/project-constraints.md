@@ -15,7 +15,7 @@ Your project should comply with the following constraints.
   * Mouse actions should have keyboard alternatives. 
   * Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse actions or key combinations.
   * <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. %%&nbsp;Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.%%
-  * :exclamation: While we don't prohibit <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading. 
+  * {{ icon_important_big_red }} While we don't prohibit <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading.
 
 </span>
 
@@ -33,6 +33,11 @@ Your project should comply with the following constraints.
 
 * **Constraint-No-Installer**: The software should work without requiring an installer. Having an optional installer is OK as long as the portable (non-installed) version has all the critical functionality.  
   %%**Reason:** We do not want to install all your projects on our testing machines when we test them for grading.%%
+
+* **Constraint-Minimal-Network**:
+  * The software should not depend on your own remote server. %%**Reason:** Anyone should be able to test your app any time, even after the semester is over.%%
+  * It is OK to use a reliable public API e.g., Google search but we recommend that you have a fallback mechanism (e.g., able to load data using a data file if the network is down). %%**Reason:** During the mass peer-testing session the network access can be intermittent due to high load. If your feature cannot be tested due to lack of Internet, that will have to be counted as a major bug, to be fair to those whose app is being tested and bugs found being penalized.%%
+  * Also be cautioned that automated testing of such features will be harder, and public APIs can block your access if they mistake your automated tests as a bot attack.
 
 * **Constraint-External-Software**: The use of third-party frameworks/libraries is allowed but only if they,
     *   are free, open-source, and have permissive license terms %%(E.g., trial version of libraries that require purchase after N days are not allowed)%%.
