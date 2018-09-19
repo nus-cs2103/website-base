@@ -83,8 +83,8 @@ You can create your GitHub organization (for your team) after receiving your tea
 * ==Organization name : `{{ module }}-{{ semester }}-TEAM_ID`==. e.g.  `{{ module }}-{{ semester }}-W12-1`
 * Plan:  Open Source ($0/month) 
 * After that, the same person can add members to the organization:
-* Create a team called `developers` to your organization.
-* Add your team members to the developers team.
+  * Create a team called `developers` to your organization.
+  * Add your team members to the developers team.
 
 </div>
 
@@ -95,7 +95,8 @@ You can create your GitHub organization (for your team) after receiving your tea
 Only one team member:
 
 1. Fork [Address Book Level 4]({{module_org}}/addressbook-level4) to your team org.
-1. ==Rename the forked repo as `main`==. This repo is to be used as the repo for your project.
+1. ==Rename the forked repo as `main`==. This repo (let's call it the _team repo_) is to be used as the repo for your project.
+1. ==Ensure the issue tracker of your team repo is enabled.== %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.%%
 1. Ensure your team members have the desired level of access to your team repo.
 
 All team members:
