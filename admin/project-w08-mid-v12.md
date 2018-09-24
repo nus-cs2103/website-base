@@ -20,6 +20,12 @@
 * **Switch to AB-3 or AB-2 if AB-4 is not working out for you**.  There is no explicit penalty for switching to a lower level AB. All projects are evaluated based on the same yardstick irrespective of on which AB it is based. As an AB is given to you as a 'free' head-start, a lower level AB gives you a shorter head-start, which means your final product is likely to be less functional than those from teams using AB-4 unless you progress faster than them. Nevertheless, you should switch to AB2/3 if you feel you can learn more from the project that way, as our goal is to maximize learning, not features.<br>
   If your team wants to stay with AB-4 but you want to switch to a lower level AB, let the us know so that we can work something out for you.
 
+<div class="indented-level2">
+
+{{ embed_topic("project-deliverables.md#notes-for-ab23", "Admin {{ icon_embedding }} Project Deliverables → Notes for Those Using AB-2 or AB-3 for the Project", "midv12-notesForAb23", "3") }}
+</div>
+
+
 * **Adjust process rigor to suit your team's pace**, as explained below.
 
   * **Automated tests** have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
@@ -30,7 +36,7 @@
 
   * **Workflow**: While _forking workflow_ is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_.
 
-<modal title="Admin {{ icon_embedding }} Project Asessement → Expectation on testing" id="modal:v12-testingExpectations">
+<modal title="Admin {{ icon_embedding }} Project Assessment → Expectation on testing" id="modal:v12-testingExpectations">
   <include src="project-testing.fr#expectations"/>
 </modal>
 
@@ -62,5 +68,6 @@
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-w08-mid-v12", show_main_text) }}
