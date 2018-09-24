@@ -300,6 +300,21 @@ Bug Type Labels:
 
 </span>
 
+### Notes for Those Using AB-2 or AB-3 for the Project
+<span id="notes-for-ab23">
+
+If you have opted to use AB-2 or AB-3 instead of AB-4 as the basis of your product, please note the following points:
+* Set up [auto-publishing of documentation similar to AB-4](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation)
+* Add Project Portfolio Pages (PPP) for members, similar to the example provided in AB-4
+* You can convert UG, DG, and PPP into pdf files using [instructions provided in AB-4 DG](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#converting-documentation-to-pdf-format)
+* Create an _About Us_ page similar to AB-4 and update it as described in <trigger trigger="click" for="modal:deliverables-midv11">mid-v1.1 progress guide</trigger>
+
+<modal large title="Admin {{ icon_embedding }} Project: mid-v1.1" id="modal:deliverables-midv11">
+  <include src="project-w06-mid-v11.md#body"/>
+</modal>
+
+</span>
+
 </div>
 {% endmacro %}
 
