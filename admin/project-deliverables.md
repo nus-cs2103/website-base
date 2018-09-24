@@ -3,16 +3,17 @@
 
 Here is a list of main deliverables of the project; their details are given in the subsequent sections.
 * Product
-  * Executable
-  * Source code
+  * [Executable](#deliverable-executable)
+  * [Source code](#deliverable-source-code)
 * Documentation
-  * User Guide
-  * Developer Guide
-  * Product Website
-  * Project Portfolio Page
-* Product Demo
-* Peer testing results
-* Peer evaluation
+  * [User Guide](#deliverable-user-guide-ug)
+  * [Developer Guide](#deliverable-developer-guide-dg)
+  * [Product Website](#deliverable-product-website)
+  * [Project Portfolio Page](#deliverable-project-portfolio-page-ppp)
+* [Product Demo](#deliverable-demo)
+* [Practical Exam](#deliverable-practical-exam)
+  * Peer testing results
+  * Peer evaluation
 
 
 ### Deliverable: Executable
