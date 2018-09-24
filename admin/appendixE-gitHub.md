@@ -171,11 +171,11 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 
 ## Project Schedule Tracking
 
-In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking _all_ noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current status of the project. You can also use GitHub's new [Projects feature](https://www.youtube.com/watch?v=C6MGKHkNtxU) to manage the project, but keep it linked to the issue tracker as much as you can.
+In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking _all_ noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current status of the project. You can also use GitHub's [Projects feature](https://www.youtube.com/watch?v=C6MGKHkNtxU) to manage the project, but keep it linked to the issue tracker as much as you can.
 
 ### Using Issues:
 
-<big>**During the initial stages:**</big>
+<big>**During the initial stages**</big> (latest by the start of v1.2):
 
 * **Record each of the user stories you plan to deliver as an issue in the issue tracker.** 
     %%e.g.%% `Title: As a user I can add a deadline`  
@@ -183,19 +183,23 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * **Assign the `type.*` and `priority.*` labels to those issues.**
 
-<big>**From milestone v1.1:**</big>
+* **Formalize the project plan** by assigning relevant issues to the corresponding milestone.
+
+<big>**From milestone v1.2:**</big>
 
 * **When you start implementing a story, break it down to tasks.** Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. %%e.g.%%   
   * %%{{ icon_like }} Good: `Update class diagram in the project manual for v1.4`%%
   * %%{{ icon_dislike }} Bad (reasons: not a one-person task, not small enough): `Write the project manual`%%
+<br><br>
 
-* **Write a descriptive title for the issue.** %%e.g. Add support for the 'undo' command to the parser.%%
+* **Write a descriptive title for the issue.** %%e.g. `Add support for the 'undo' command to the parser`%%
 
 * **There is no need to break things into VERY small tasks.** Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. %%eg.,%%
 
   * `Implementing parser `  %%: too big because it cannot be done by a single person in a week.%% 
   * `Implementing parser support for adding of floating tasks` %%: appropriate size.%%
- 
+<br><br>
+
 * **Do not track things taken for granted.** %%e.g., `push code to repo` should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.%%
 
 * **Omit redundant details.** In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough. Similarly, labels such as `priority` can be omitted if you think they don't help you.
@@ -208,7 +212,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 ### Using Milestones:
 
-We recommend you do the following from milestone v1.1:
+We recommend you do the following from milestone v1.2:
 
 * Use [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.
 
@@ -218,9 +222,9 @@ We recommend you do the following from milestone v1.1:
 
 **Wrapping up a Milestone**:<br>
 ==Here are the conditions to satisfy for a milestone to be considered properly wrapped up==:
-  * A working product tagged with the correct tag (e.g. v1.2) is pushed to the main repo.
+  * A working product tagged with the correct tag (e.g. `v1.2`) is pushed to the main repo.
   * All tests passing on Travis for the version tagged above.
-  * Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone.<br>
+  * Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.<br>
     <img src="{{baseUrl}}/admin/images/assigningIssuesToMilestones.png" width="700"/>
   * Milestone closed. If there are incomplete issues or unmerged PRs in the milestone, move them to a future milestone.<br>
     <img src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
@@ -228,7 +232,7 @@ We recommend you do the following from milestone v1.1:
     
   * Optionally, future milestones are revised based on what you experienced in the current milestone %%&nbsp;e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation%%.
    
-  * Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.  
+  * Doing a 'release' on GitHub is optional for v1.2 but compulsory from v1.3. 
 
 </div>
 
