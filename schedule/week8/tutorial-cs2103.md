@@ -1,6 +1,10 @@
 **Questions to discuss during tutorial:**
 
-1. Which architecture styles are used by AB4?
+1. What’s the use of assertions?
+1. Demonstrate an assertion failure using Intellij.
+1. Why do we need logging? What’s the purpose of logging levels? What are the available logging levels in AB4?
+1. Explain what Gradle is. How is it used in AB4?
+1. Explain what Travis is. How is it used in AB4?
 1. Any example of using a very high-level abstraction in the project?
 1. What is coupling? 
    1. `Foo` depends on `Bar` if …?
