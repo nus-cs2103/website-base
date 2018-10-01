@@ -80,7 +80,7 @@
 
 * **README.adoc** page: Update it to match your project. 
   * Add a UI mockup of your intended final product.   
-    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts.  
+    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example](https://nus-cs2103-ay1819s1.github.io/cs2103-website/admin/projectList.html)), yours should not look out of place.%%
   * The original `README.adoc` file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should ==restructure this page to look like the home page of a real product== (not a school project) targeting real users %%&nbsp;e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.%% On a related note, also remove `Learning Outcomes` link and related pages.
   * Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at `https://github.com/se-edu/`
 
