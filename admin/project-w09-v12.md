@@ -14,7 +14,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
 {{ icon_individual }} Contributed code to the product as described in mid-v1.2 progress guide | some code merged
 {{ icon_individual }} Described implementation details in the Developer Guide | some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content
-{{ icon_team }} v1.2 managed using GitHub features (issue tracker, milestones, etc.) | A new version git tagged `v1.2` is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>. 
+{{ icon_team }} v1.2 managed using GitHub features (issue tracker, milestones, etc.) | A new version git tagged `v1.2` is in your repo.<br> Milestone v1.2 _wrapped up_ as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
 
 <modal large title="Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking" id="modal:v12-projectTracking">
   <include src="appendixE-gitHub.md#project-schedule-tracking"/>
@@ -27,17 +27,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 ### v1.2 Product
 
-* {{ icon_individual }} Merge some code into master (in the team repo).  
-
-<tip-box> 
-
-:bulb: We use a tool called _Collate_ to extract out code written by each member in your final project submission. The tool requires you to annotate code with special tags to mark code written by you. Adding those annotations is usually done at v1.3 but you are welcome to start early. 
-
-<panel header="**How to collate code for grading**" no-close>
-  <include src="collate.fr" />
-</panel><p/>
-
-</tip-box>
+* {{ icon_individual }} Merge some code into the `master` branch of your team repo.
 
 ### v1.2 Documentation
 

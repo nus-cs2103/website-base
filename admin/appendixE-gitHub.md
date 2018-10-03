@@ -279,7 +279,7 @@ We recommend you do the following from milestone v1.2:
   * All tests passing on Travis for the version tagged above.
   * Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.<br>
     <img src="{{baseUrl}}/admin/images/assigningIssuesToMilestones.png" width="700"/>
-  * Milestone closed. If there are incomplete issues or unmerged PRs in the milestone, move them to a future milestone.<br>
+  * Milestone closed.<br>
     <img src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
   * Optionally, issues for the next milestone are assigned to team members (this is not compulsory to do _before_ the tutorial, but we recommend you to do it soon after the tutorial). 
     
