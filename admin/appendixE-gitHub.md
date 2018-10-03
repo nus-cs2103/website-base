@@ -75,14 +75,13 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 ## Organization setup
 
-The instructions below are for setting up a GitHub organization for your team.
+{{ icon_important_big_red }} Please follow the organization/repo name format precisely because we use scripts to download your code or else our scripts will not be able to detect your work.
 
-You can create your GitHub organization (for your team) after receiving your team ID. Here are the instructions (==please follow the organization/repo name format precisely because we use scripts to download your code. If the names are not as expected, our scripts will not work==):
-
-* One team member (e.g. team leader) should create an organization with the following details:
-* ==Organization name : `{{ module }}-{{ semester }}-TEAM_ID`==. e.g.  `{{ module }}-{{ semester }}-W12-1`
-* Plan:  Open Source ($0/month) 
-* After that, the same person can add members to the organization:
+After receiving your team ID, one team member should do the following steps:
+* Create a GitHub organization with the following details:
+  * ==Organization name : `{{ module }}-{{ semester }}-TEAM_ID`==. e.g.  `{{ module }}-{{ semester }}-W12-1`
+  * Plan:  Open Source ($0/month) 
+* Add members to the organization:
   * Create a team called `developers` to your organization.
   * Add your team members to the developers team.
 
@@ -94,22 +93,76 @@ You can create your GitHub organization (for your team) after receiving your tea
 
 Only one team member:
 
-1. Fork [Address Book Level 4]({{module_org}}/addressbook-level4) to your team org.
-1. ==Rename the forked repo as `main`==. This repo (let's call it the _team repo_) is to be used as the repo for your project.
+1. **Fork** [Address Book Level 4]({{module_org}}/addressbook-level4) to your team org.
+1. ==**Rename** the forked repo as `main`==. This repo (let's call it the _team repo_) is to be used as the repo for your project.
 1. ==Ensure the issue tracker of your team repo is enabled.== %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.%%
 1. Ensure your team members have the desired level of access to your team repo.
+1. [**Enable Travis CI for the team repo**](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingTravis.html#setting-up-travis-ci).
+1. [**Set up _auto-publishing_ of docs**](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation). When set up correctly, your project website should be available via the URL  `https://nus-{{ module | lower }}-{{ semester | lower }}-{team-id}.github.io/main` e.g., `https://{{ module | lower }}-{{ semester | lower }}-w13-1.github.io/main/`. This also requires you to [enable the _GitHub Pages_ feature of your team repo and configure it to serve the website from the `gh-pages` branch](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).
+1. **create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level4]({{module_org}}/addressbook-level4)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[T09-2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
 
 All team members:
 
-1. Go to the `main` repo (created above) and click on the `watch` button to subscribe to activities of the repo
-1. Fork the `main` repo to your personal GitHub account.
-1. Clone the fork to your Computer.
+1. **Watch**the `main` repo (created above) i.e., go to the repo and click on the `watch` button to subscribe to activities of the repo
+1. **Fork** the `main` repo to your personal GitHub account.
+1. **Clone** the fork to your Computer.
 1. Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).
+1. **Set up the developer environment** in your computer. You are recommended to use JDK 9 for AB-4 as some of the libraries used in AB-4 have not updated to support Java 10 yet. ==JDK 9 can be downloaded from the [Java Archive](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html).==
 
 Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project. 
 * `/src/main`  
 * `/src/test`  
 * `/docs`
+
+</div>
+
+<div id="workflow">
+
+## Workflow
+
+{{ icon_important_big_red }} **Before you do any coding for the project**,
+  * Ensure you have <trigger trigger="click" for="modal:appE-gitUsername">set the Git username correctly (as explained in Appendix E)</trigger> in _all_ Computers you use for coding.
+  * Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy %%(in Admin: Appendix B)%%</trigger>, in particular, ==how to give credit when you reuse code from the Internet or classmates==:
+
+<modal large title="Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username" id="modal:appE-gitUsername">
+  <include src="appendixE-gitHub.md#git-username"/>
+</modal>
+<modal large title="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" id="modal:appE-reusePolicy">
+  <include src="appendixB-policies.md#policy-reuse"/>
+</modal>
+
+
+**Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger> in your project up to v1.1.** In particular,
+  * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
+  * **Do not merge PRs failing <tooltip content="Continuous Integration e.g., Travis">CI</tooltip>.** After [setting up Travis](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingTravis.html#setting-up-travis-ci), the CI status of a PR is reported at the bottom of the PR page. The screenshot below shows the status of a PR that is passing all CI checks. <br>
+    <img src="{{ baseUrl }}/admin/images/gitHubPrStatus.png" width="700"/><br>
+    **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.
+  * After [setting up Netlify](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingNetlify.html), you can use _Netlify PR Preview_ to preview changes to documentation files, if the PR contains updates to documentation. To see the preview, click on the `Details` link in front of the Netlify status reported (refer screenshot above).
+
+<div id="workflow-after-v11">
+
+**After completing v1.1, you can adjust process rigor to suit your team's pace,** as explained below.
+
+  * **Reduce automated tests** have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
+    It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
+    There is no direct penalty for removing GUI tests. Also note <trigger trigger="click" for="modal:appEworkflow-testingExpectations">our expectation on test code</trigger>.
+
+  * **Reduce automated checks**: You can also reduce the rigor of checkstyle checks to expedite PR processing.
+
+  * **Switch to a lighter workflow**: While _forking workflow_ is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. However, we still recommend that you use PR reviews, at least for PRs affecting others' features.
+
+**You can also increase the rigor/safety of your workflow** in the following ways:
+
+  * Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs.
+
+<modal title="Admin {{ icon_embedding }} Project Assessment → Expectation on testing" id="modal:appEworkflow-testingExpectations">
+  <include src="project-testing.fr#expectations"/>
+</modal>
+</div>
+
+<modal large title="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
+  <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
 
 </div>
 
