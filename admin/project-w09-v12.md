@@ -14,8 +14,12 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
 {{ icon_individual }} Contributed code to the product as described in mid-v1.2 progress guide | some code merged
 {{ icon_individual }} Described implementation details in the Developer Guide | some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content
-{{ icon_team }} v1.2 managed using GitHub features (issue tracker, milestones, etc.) | A new version git tagged `v1.2` is in your repo.<br> Milestone v1.2 _wrapped up_ as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
+{{ icon_team }} Issue tracker set up | As explained in <trigger trigger="click" for="modal:v12-issueTrackerSetup">[Admin {{ icon_embedding }} Appendix E: GitHub: Issue Tracker Setup]</trigger>.
+{{ icon_team }} v1.2 managed using GitHub features (issue tracker, milestones, etc.) | Milestone v1.2 managed as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
 
+<modal large title="Admin {{ icon_embedding }} Appendix E: GitHub: Project Issue Tracker Setup" id="modal:v12-issueTrackerSetup">
+  <include src="appendixE-gitHub.md#issue-tracker-setup"/>
+</modal>
 <modal large title="Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking" id="modal:v12-projectTracking">
   <include src="appendixE-gitHub.md#project-schedule-tracking"/>
 </modal>
@@ -23,7 +27,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
   
 ### v1.2 Project Management
 
-* {{ icon_team }} Manage, and close, the v1.2 milestone using GitHub.
+* {{ icon_team }} Manage the milestone v1.2 as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
 
 ### v1.2 Product
 
