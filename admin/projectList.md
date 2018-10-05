@@ -287,7 +287,7 @@ LI ...NZE | PRATY...GHOSH | QUEK ...HERNG | ZHANG...LIZHI | ZHOU ...EGANG |
 <img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/Ui.png" width="750" /><p/>
 ANG C... SHIN | LIN... XU | PARK ...G JUN | THADD...HI YU | XIAO ...YILIN |
 ----- | ----- | ----- | ----- | ----- |
-<img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/crimsonang.png" width="120" /> | <img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/woodsuns.png" width="120" /> | <img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/park-sang-jun.png" width="120" /> | <img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/thaddeuslzy.png" width="120" /> | <img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/hotarumin.png" width="120" /> |
+<img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/crimsonang.png" width="120" /> | <img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/woodnsuns.png" width="120" /> | <img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/park-sang-jun.png" width="120" /> | <img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/thaddeuslzy.png" width="120" /> | <img src="https://rawgit.com/CS2103-AY1819S1-T12-3/main/master/docs/images/hotarumin.png" width="120" /> |
 <hr>
 
 #### [T12-4](https://github.com/CS2103-AY1819S1-T12-4/main) [<img src="https://travis-ci.org/CS2103-AY1819S1-T12-4/main.svg?branch=master" alt="Build Status">](https://travis-ci.org/CS2103-AY1819S1-T12-4/main)
