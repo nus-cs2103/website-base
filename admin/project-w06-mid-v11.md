@@ -52,7 +52,7 @@ When updating code in the repo, follow the workflow explained below:
   Update the following pages in your project repo:
 </div> 
  
-* **About Us page**:  
+* **_About Us_ page**:
   This page is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
   * Replace info of SE-EDU developers with info of your team, including a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.  
   * Including the name/photo of the supervisor/lecturer is optional. 
@@ -66,6 +66,8 @@ When updating code in the repo, follow the workflow explained below:
 <modal large title="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
   <include src="project-scope.md#roles"/>
 </modal>
+
+* **_Contact Us_ Page**: Update to match your product.
 
 * **README.adoc** page: Update it to match your project.
 
