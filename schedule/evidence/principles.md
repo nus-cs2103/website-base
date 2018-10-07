@@ -1,10 +1,6 @@
 <div id="singleResponsibilityPrinciple">
 
-**Acceptable**: Evidence of having used SRP in some project.
-
-**Suggested**: Do the exercise in [[Addressbook-Level2: LO-SRP]({{module_org}}/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code)]
-
-<include src="project.md#PR_to_AB2" />
+Explain SRP in relation to AddressBook-Level4 (or your own project).
 
 </div>
 

@@ -1,13 +1,8 @@
-**Show evidence of achieving v1.2 team/individual milestone**
-* [One member] Show the 'insights' tab of your team repo's GitHub page
-* [Each member] show these using the `master` branch in your computer:
-  * Point out the part you added to the Developer Guide
-  * Demo the enhancement you added to v1.2 
-
 **Questions to discuss during tutorial:**
 
-==While the tutor is checking team/individual milestones, divide these questions among team members and get ready to answer them==. The number of questions that can be discussed depends on how prepared you are.
-
+1. What’s the use of assertions?
+1. Demonstrate an assertion failure using Intellij.
+1. Why do we need logging? What’s the purpose of logging levels? What are the available logging levels in AB4?
 1. What is _Liskov Substitution Principle_?<br>
    Give an example from the project where LSP is followed and explain how to change the code to break LSP.
 1. What is _defensive programming_?<br>
