@@ -23,7 +23,7 @@ head: scheduleHead.md
 ] %}
 
 
-{% set current_weeks = ["8"] %}
+{% set current_weeks = ["9"] %}
 
 
 {% set all_outcomes = [
@@ -143,7 +143,7 @@ head: scheduleHead.md
       {location: ["oop", "objects", "encapsulation"], omit_evidence: true},
     {heading: "Can use Java enumerations"},
       {location: ["oop", "classes", "enumerations"]},
-      {location: ["javaTools", "enums"]},
+      {location: ["cppToJava", "misc", "enums"]},
     {heading: "Can implement class-level members"},
       {location: ["oop", "classes", "classLevelMembers"], omit_evidence: true},
     {heading: "Can implement inheritance"},
