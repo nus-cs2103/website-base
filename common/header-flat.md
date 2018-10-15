@@ -24,6 +24,7 @@
     <li><a href="{{module_org}}/addressbook-level3" target="_blank" class="dropdown-item">{{ icon_repo }} Addressbook-level3</a></li>
     <li><a href="{{module_org}}/addressbook-level4" target="_blank" class="dropdown-item">{{ icon_repo }} Addressbook-level4</a></li>
     <li><a href="{{baseUrl}}/admin/projectList.html" class="dropdown-item">{{ fas_th_list }} Projects List</a></li>
+    <li><a href="{{baseUrl}}/admin/reposenseConfigTemplates.html" class="dropdown-item">{{ fas_th_list }} config.json templates for Reposense</a></li>
     <li><a href="https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard" target="_blank" class="dropdown-item">{{ fas_chart_area }} Project Code Dashboard (BETA)</a></li>
   </dropdown>
 </navbar>
