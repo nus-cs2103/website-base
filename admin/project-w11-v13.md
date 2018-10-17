@@ -14,7 +14,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
 {{ icon_individual }} Contributed code to v1.3 | code merged
 {{ icon_individual }} Code collated | as stated
-{{ icon_team }} v1.3 jar file released properly on GitHub | as stated
+{{ icon_team }} v1.3 jar file released on GitHub | as stated
 {{ icon_team }} v1.3 milestone properly wrapped up on GitHub | as stated
 {{ icon_team }} Documentation updated to match v1.3 | at least the User Guide and the `README.adoc` is updated
 
@@ -62,21 +62,29 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 ### v1.3 Demo
 
-* Optional. If you want feedback on your features, you can demo the feature and get feedback from the tutor.
+* Do a quick demo of the main features ==using the jar file==. Objective: to ensure the jar file works.
 
 
-### v1.3 Testing
+### v1.3 Testing (_aka_ Practical Exam Dry Run)
 
-<tip-box>
-  
-{{ icon_important_big_red }} Taking part in v1.3 testing is compulsory and counts for participation marks.
+Your v1.3 is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:v13peDryRun-pe">Practical Exam that will be done at v1.4</trigger>.
 
-</tip-box>
+<modal large title="Admin {{ icon_embedding }} Project → Deliverables" id="modal:v13peDryRun-pe">
+  <include src="project-deliverables.md#project-deliverables-practicalexam"/>
+</modal>
 
-v1.3 is subjected to a round of peer _acceptance/system testing_.
+<box>
+
+{{ icon_important_big_red }} **Taking part in the PE dry run is strongly encouraged as it ==can affect your grade in the following ways==.**
+* If the product you are allocated to test in the Practical Exam (at v1.4) had a very low bug count, we will consider your performance in PE dry run as well when grading the PE.
+* PE dry run will help you practice for the actual PE.
+* Taking part in the PE dry run will earn you participation points.
+
+</box>
+
 
 **Objectives**:
-* **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging</tooltip>, bug fixing, communicating with users, evaluating products etc. 
+* **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging</tooltip>, bug fixing, communicating with users/testers/developers, evaluating products etc.
 * **To help you improve your product** before the final submission.
   
 **When, where**: 
@@ -94,9 +102,8 @@ v1.3 is subjected to a round of peer _acceptance/system testing_.
 * Before posting a report/suggestion, check if it is already posted by someone else. If it is, post in the same thread to confirm/support the issue and add your input.
 * Use descriptive titles for the issues. Give a good description of the bug/suggestion, including steps required to reproduce.
   * :bulb: Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
-  
-**Grading**:
-* Considered for participation. In addition, issues you created can be included in your <trigger trigger="click" for="modal:v1.3-ppp">project portfolio page</trigger> to show how you contributed to another project.
+
+* Issues you created can be included in your <trigger trigger="click" for="modal:v1.3-ppp">project portfolio page</trigger> to show how you contributed to another project.
 * There is **no penalty for bugs reported** in your product.
   
 <modal large title="Admin {{ icon_embedding }} Project →" id="modal:v1.3-ppp">
