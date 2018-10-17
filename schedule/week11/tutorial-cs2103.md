@@ -6,16 +6,6 @@
 
 ==While the tutor is checking team/individual milestones, divide these questions among team members and get ready to answer them==. 
 
-1. How does an _OO Domain Model_ differ from a class diagram?
-
-1. Draw an OODM for the description below, about how modules work in a certain university:
-
-   <tip-box> 
-
-   A module has a name and a code. A module is taken by 10 or more students, and taught by one instructor. A module can have a number tasks which can be assignments or tests. Some assignments are compulsory. When a student attempts a task, a grade and an optional feedback is given.
-
-   </tip-box>
-
 1. Apply heuristics for combining multiple test inputs to the following test cases, assuming all 6 values in the table need to be tested. :white_check_mark: indicates valid values and :exclamation: indicates invalid values. Point out where the heuristics are contradicted and how to improve the test cases.
 
    <tip-box> 
@@ -42,3 +32,6 @@
 1. When do you use _MVC_ pattern? Do we have MVC in AB4?
 
 1. When do you use the _Observer_ pattern? Do we have the Observer pattern in AB4?
+
+1. distinguish between _libraries_, _frameworks_, _platforms_<br>
+   a. give examples of each used in AB4

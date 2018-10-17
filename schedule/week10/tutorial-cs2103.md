@@ -1,10 +1,16 @@
-**Show evidence of achieving mid-v1.3 team/individual milestone**
-* [One member] Show the mid-v1.3 release and the milestone on GitHub
-* [Each member] Demo your contribution for mid-v1.3 using the jar file 
-
 **Questions to discuss during tutorial:**
 
-==While the tutor is checking team/individual milestones, divide these questions among team members and get ready to answer them==. 
+Divide these questions among team members and get ready to answer them.
+
+1. How does an _OO Domain Model_ differ from a class diagram?
+
+1. Draw an OODM for the description below, about how modules work in a certain university:
+
+   <box>
+
+   A module has a name and a code. A module is taken by 10 or more students, and taught by one instructor. A module can have a number tasks which can be assignments or tests. Some assignments are compulsory. When a student attempts a task, a grade and an optional feedback is given.
+
+   </box>
 
 1. Explain and justify: _testing should be efficient and effective_<br>
    a. Explain _exploratory_ and _scripted_ testing<br>
@@ -28,10 +34,9 @@
 1. What’s a _design pattern_?<br>
    a. When do you use the _Singleton_ pattern, _Facade_ pattern, _Command_ pattern?<br>
    b. Which of the three patterns are used in AB4? Hint: See [[AB4 Learning Outcomes: LO-DesignPatterns]({{module_org}}/addressbook-level4/blob/master/docs/LearningOutcomes.adoc#apply-design-patterns-code-lo-designpatterns-code)]
-1. Explain basic AD notation using the example below:<br>
-   <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
-   <sub>[[source:wikipeida](https://en.wikipedia.org/wiki/Activity_diagram)]</sub>
 
+
+To be moved to T9
 
 1. Explain how _Law of Demeter_ affects coupling<br>
    a. Add a line to this code that violates LoD
@@ -40,5 +45,4 @@
        //...
    }   
    ```
-1. distinguish between _libraries_, _frameworks_, _platforms_<br>
-   a. give examples of each used in AB4
+
