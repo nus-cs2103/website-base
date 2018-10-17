@@ -13,28 +13,22 @@
 Milestone | Minimum acceptable performance to consider as 'reached'
 --------- | -------------------------------------------------------
 {{ icon_individual }} Contributed code to v1.3 | code merged
-{{ icon_individual }} Code collated | as stated
+{{ icon_individual }} Code is RepoSense-compatible | as stated in mid-v1.3
 {{ icon_team }} v1.3 jar file released on GitHub | as stated
 {{ icon_team }} v1.3 milestone properly wrapped up on GitHub | as stated
 {{ icon_team }} Documentation updated to match v1.3 | at least the User Guide and the `README.adoc` is updated
 
 ### v1.3 Project Management
 
-<tip-box>
+Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v13-reposense">as explained in mid-v1.3</trigger>.
 
-{{ icon_important_big_red }} You are required to <tooltip content="extract your own code and put in one file">collate</tooltip> code at this milestone. %%&nbsp;Reason: You will be required to collate code at your final submission. As an early preparation for that, we require you to collate code once at v1.3 so that you can iron out any code collation glitches early.%%
-
-</tip-box>
-
-<panel header="**How to collate code for grading**">
-  <include src="collate.fr" />
-</panel><p/>
+<modal large title="Admin {{ icon_embedding }} Project → v1.3 (extract)" id="modal:v13-reposense">
+  <include src="reposenseCompatibility.md" />
+</modal>
 
 ### v1.3 Product
 
 * As before, move the product towards v2.0.
-
-  **Submission**: Push the code (==including the `collated` folder== and files created above) to GitHub.
 
 ### v1.3 Documentation
 

@@ -85,7 +85,6 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 * **What to include:**
   * Main things to include: 
-    * links to collated code
     * features you implemented %%&nbsp;(include relevant extracts from the user guide and the developer guide)%%
     * features you propose to implement in future %%&nbsp;(include relevant extracts from the user guide and the developer guide if applicable)%%<br>
       Note: the purpose of allowing you to include _proposed_ features is to provide you more flexibility to show your documentation skills. %%&nbsp;e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.%%

@@ -119,7 +119,7 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
   //Solution below adapted from https://stackoverflow.com/a/16252290
   {Your implmentation of the reused solution here ...}
   ```
-* If you copy-pasted a non-trivial code block (possibly with minor modifications %%&nbsp;renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-collateSyntax">Collate Tool Syntax</trigger>)<br>
+* If you copy-pasted a non-trivial code block (possibly with minor modifications %%&nbsp;renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags">`@@author` tags</trigger>)<br>
   Format:
   ```java
   //@@author {yourGithubUsername}-reused
@@ -146,8 +146,8 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
 
 </tip-box>
 
-<modal large title="Admin {{ icon_embedding }} Project mid-v1.3 → Collate Tool" id="modal:reusePolicy-collateSyntax">
-  <include src="collate.fr"/>
+<modal large title="Admin {{ icon_embedding }} Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">
+  <include src="reposenseAuthorAnnotation.md"/>
 </modal>
 
 <modal large title="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">

@@ -18,7 +18,6 @@ Team/Individual Item | Name format | Upload to
 {{ icon_team }} Developer Guide | `[TEAM_ID][Project Name]DeveloperGuide.pdf`<br> %%e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf%% | IVLE
 {{ icon_team }} Product Website | `README.adoc`, `Ui.png`, `AboutUs.adoc` | GitHub
 {{ icon_individual }} Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Portfolio.pdf%% | IVLE
-{{ icon_individual }} Collated files | | GitHub
 
 **Deadline** for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.
 
@@ -53,7 +52,7 @@ Team/Individual Item | Name format | Upload to
 {{ embed_topic("project-deliverables.md#project-deliverables-sourcecode", "Admin " + icon_embedding + " Project → Deliverables → Source Code", "v14-sourcecode", "3") }}
 <p/>
 
-**Submission**: Push the code to GitHub and tag with the version number. Source code (==including collated .md files==; please ensure the collated `.md` files are up to date; any updates to collated code files after the deadline will be considered a later submission). Note that the quality of the code in these ==collated code files accounts for a significant component of your final score==, graded individually.
+**Submission**: Push the code to GitHub and tag with the version number. Source code (==please ensure the code reported by RepoSense as yours is correct;== any updates to RepoSense config files or `@@author` annotations after the deadline will be considered a later submission). Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually.
 
 
 ### v1.4 User Guide

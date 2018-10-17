@@ -22,11 +22,7 @@
 **Revision control**: You are ==_required to_ use Git==. Other revision control software are not allowed.  
 The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com/) (which comes bundled with Git), but you may use any other, or none.
 
-**Collating code**: To extract out code written by each person, we use a custom-built tool called Collate.
-
-<panel header="More info on the Collate tool">
-  <include src="collate.fr" />
-</panel>
+**Analyzing code authorship**: We use a custom-built tool called [RepoSense](https://github.com/reposense/RepoSense) for extracting code written by each person.
 
 </div>
 {% endmacro %}

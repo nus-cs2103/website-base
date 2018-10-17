@@ -15,6 +15,11 @@
 * :bulb: We recommend that **each PR also updates the relevant parts of documents and tests**. That way, your documentation/testing work will not pile up towards the end.
 * :bulb: There is [a way to get GitHub to auto-close the relevant issue when a PR is merged](https://help.github.com/articles/closing-issues-using-keywords/) ([example](https://github.com/se-edu/addressbook-level4/pull/888)).
 
+**Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>**, as explained below:
+
+<panel type="seamless" header="#### Ensuring your code is RepoSense-Compatible" expanded >
+  <include src="reposenseCompatibility.md#main" />
+</panel>
 
 **<big>Product:</big>**
 
