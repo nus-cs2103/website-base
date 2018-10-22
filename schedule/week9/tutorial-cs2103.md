@@ -28,6 +28,13 @@ Divide these five questions among team members. Be prepared to answer questions 
 1. Give an example of _static analysis_ being used in Intellij
 
 **Q5**
+1. Explain how _Law of Demeter_ affects coupling<br>
+   a. Add a line to this code that violates LoD
+   ```java
+   void foo(P p){
+       //...
+   }
+   ```
 1. Give an example in the project code that violates the _Law of Demeter_.
 1. What’s the problem with the architecture diagram on the right?<br>
    <img src="{{baseUrl}}/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190" /><br>
