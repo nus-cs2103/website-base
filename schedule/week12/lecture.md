@@ -3,7 +3,7 @@
 **Practice exam**
 
 * Seating row assignment is [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true)
-
+<!--
 * Answers are given below. If you have any doubts about any of the question, please post in our forum to discuss.<br>
   **Q: `A`**<br>
   A1: `A`<br>
@@ -56,7 +56,7 @@
   A48: `A`<br>
   A49: `E`<br>
   A50: `E`<br>
-
+-->
 
 **Talk on getting ready for internships**
 

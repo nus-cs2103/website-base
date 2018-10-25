@@ -1,9 +1,8 @@
-**Show evidence of achieving v1.3 team/individual milestone**
-* [Each member] Demo your contribution for v1.3 using the jar file
+**One member** (preferably a different member each week): do a quick demo of your v1.3 using the jar file
 
 **Questions to discuss during tutorial:**
 
-==While the tutor is checking team/individual milestones, divide these questions among team members and get ready to answer them==. 
+Divide these questions among team members and get ready to answer them.
 
 1. Apply heuristics for combining multiple test inputs to the following test cases, assuming all 6 values in the table need to be tested. :white_check_mark: indicates valid values and :exclamation: indicates invalid values. Point out where the heuristics are contradicted and how to improve the test cases.
 
@@ -31,6 +30,3 @@
 1. When do you use _MVC_ pattern? Do we have MVC in AB4?
 
 1. When do you use the _Observer_ pattern? Do we have the Observer pattern in AB4?
-
-1. distinguish between _libraries_, _frameworks_, _platforms_<br>
-   a. give examples of each used in AB4
