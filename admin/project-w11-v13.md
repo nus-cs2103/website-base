@@ -30,12 +30,14 @@ Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v1
 
 * As before, move the product towards v2.0.
 
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide](https://nus-{{ module | lower }}-{{ semester }}.github.io/addressbook-level4/DeveloperGuide.html#making-a-release). Do some manual tests to ensure the jar file works.
+
 ### v1.3 Documentation
 
 <tip-box>
 
 {{ icon_important_big_red }} v1.3 user guide should be updated to match the current version of the product. %%&nbsp;Reason: v1.3 will be subjected to a trial _acceptance testing_ session%%
-  
+
 </tip-box>
 
 * **README page**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular,
@@ -56,10 +58,14 @@ Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v1
 
 ### v1.3 Demo
 
-* Do a quick demo of the main features ==using the jar file==. Objective: to ensure the jar file works.
+* Do a quick demo of the main features ==using the jar file==. Objective: demonstrate that the jar file works.
 
 
 ### v1.3 Testing (_aka_ Practical Exam Dry Run)
+
+**When, where**: To be done **during Lecture 11**. Duration: **30 minutes** (we'll stop the lecture for a 30 minute block for you do do the testing).
+
+==The info below are from the previous semester. We'll let you know when the updated instructions are ready.==
 
 Your v1.3 is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:v13peDryRun-pe">Practical Exam that will be done at v1.4</trigger>.
 
@@ -76,18 +82,15 @@ Your v1.3 is subjected to a round of peer _acceptance/system testing_, also call
 
 </box>
 
-
 **Objectives**:
-* **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging</tooltip>, bug fixing, communicating with users/testers/developers, evaluating products etc.
+* **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.
 * **To help you improve your product** before the final submission.
-  
-**When, where**: 
-* To be done **during Lecture 11**. Duration: **30 minutes** (we'll stop the lecture for a 30 minute block for you do do the testing).
+
 
 **During the session**:
 * Each student will be assigned a product from another team to test.
 * Download the latest jar file from the team's GitHub page. ==Copy it to an empty folder==. 
-* Test the product based on the user guide. First, _acceptance test_ it from the perspective of the target user profile. If there is any time left, you can switch to _system testing_ mode.
+* Test the product based on the user guide (the UG is most likely accessible using the `help` command). First, _acceptance test_ it from the perspective of the target user profile. If there is any time left, you can switch to _system testing_ mode.
 * Post bugs you find in the team's issue tracker. 
   * Each bug should be a separate issue.
   * Even problems in the user guide %%&nbsp;e.g. lack of explanations%% can be posted as issues.
