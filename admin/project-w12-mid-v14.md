@@ -13,7 +13,7 @@
 * After you have sufficient code coverage, fix remaining code quality problems and bring up the quality to your target level.
 
 <modal title="Admin {{ icon_embedding }} Project Asessement → Expectation on testing" id="modal:mid-v14-testingExpectations">
-  <include src="project-testing.fr#expectations"/>
+  <include src="project-testing.mbdf#expectations"/>
 </modal>
 
 <div class="indented-level2">

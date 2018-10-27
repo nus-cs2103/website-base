@@ -1,3 +1,4 @@
+
 <div id="expectations">
 
 * There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.
@@ -9,8 +10,17 @@
 <div id="testingPreparations">
 
 **Preparation**:
+
+* Ensure that **you can access the relevant issue tracker** given below:<br>
+  -- for PE Dry Run: [nus-{{ module | lower }}-{{ semester }}/**pe-dry-run**]({{module_org}}/pe-dry-run/issues)<br>
+  -- for PE: [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues)
+  * If you cannot access it, you may not have accepted the invitation to join the GitHub org used by the module. Go to [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation) to accept the invitation.
+  * If you cannot find the invitation, post in our [forum]({{ forum_link }}).
+
 * Ensure you have access to a **computer that is able to run module projects** %%&nbsp;e.g. has the right Java version%%.
+
 * **Have a good screen grab tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.
-* :bulb: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker. 
-  
+  * :bulb: You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.
+
+* **Charge your computer** before coming to the PE session. The testing venue may not have enough charging points.
 </div>

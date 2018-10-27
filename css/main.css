@@ -39,3 +39,7 @@ mark {
 .indented-level3 {
     padding-left: 60px;
 }
+
+.indented-level4 {
+    padding-left: 80px;
+}

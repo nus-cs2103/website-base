@@ -142,68 +142,127 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 </span>
 
+### Deliverable: Practical Exam (Dry Run)
+
+<span id="project-deliverables-practicalexam-dry-run">
+
+**What**: The v1.3 is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.
+
+**When, where**: uses a 30 minute slot at the start of week 11 lecture
+
+<modal large title="Admin {{ icon_embedding }} Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
+  <include src="project-deliverables.md#project-deliverables-practicalexam"/>
+</modal>
+
+{{ icon_important_big_red }} **Grading**: Taking part in the PE dry run is strongly encouraged as it ==can affect your grade in the following ways==.
+* If the product you are allocated to test in the Practical Exam (at v1.4) had a very low bug count, we will consider your performance in PE dry run as well when grading the PE.
+* PE dry run will help you practice for the actual PE.
+* Taking part in the PE dry run will earn you participation points.
+* There is ==no penalty for bugs reported== in your product. Every bug you find is a win-win for you and the team whose product you are testing.
+
+**Objectives**:
+* **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.
+* **To help you improve your product** before the final submission.
+
+<include src="project-testing.mbdf#testingPreparations" />
+
+**During the session**:
+1. **Take note of your team to test and your _Tester ID_**. Distributed via IVLE gradebook.
+1. Download the latest jar file from the team's GitHub page. ==Copy it to an empty folder==.
+
+<div id="project-deliverables-pe-testing-intructions">
+<box>
+
+##### Testing instructions for PE and PE Dry Run
+
+* **What to test**:
+  * PE Dry Run (at v1.3): Test the product based on the user guide (the UG is most likely accessible using the `help` command). First, _acceptance test_ it from the perspective of the target user profile. If there is any time left, you can switch to _system testing_ mode.
+  * PE (at v1.4): Test based on the Developer Guide (Appendix named _Instructions for Manual Testing_) and the User Guide. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
+
+* **What not to test**:
+  * Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%&nbsp;Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
+  * Omit feature that existed in AB-4.
+
+* **Type of testing**:
+  * PE Dry Run (at v1.3): Do _system_ testing first %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can do _acceptance_ testing as well %%i.e., does the product solve the problem it claims to solve?%%.
+  * PE (at v1.4): Do system testing only.
+
+* **These are considered _bugs_**:
+  * Behavior differs from the User Guide (or Developer Guide)
+  * A legitimate user behavior is not handled %%e.g. incorrect commands, extra parameters%%
+  * Behavior is not specified and differs from normal expectations %%e.g. error message does not match the error%%
+  * Problems in the User Guide e.g., missing/incorrect info
+
+* **Where to report bugs**: Post bug in the following issue trackers (==not in the team's repo==):
+  * PE Dry Run (at v1.3): [nus-{{ module | lower }}-{{ semester }}/**pe-dry-run**]({{module_org}}/pe-dry-run/issues).
+  * PE (at v1.4): [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues).
+
+* **Bug report format**:
+  * ==Do not use team ID in bug reports==. %%Reason: to prevent others copying your bug reports%%
+  * Each bug should be a separate issue.
+  * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
+  * Use a descriptive title.
+  * Give a good description of the bug with steps to reproduce and screenshots.
+  * Assign a severity to the bug report:
+
+<div class="indented-level4">
+<include src="appendixE-gitHub.md#bug-severity" />
+</div>
+
+* **About posting _suggestions_:**
+  * PE Dry Run (at v1.3): You can also post suggestions on how to improve the product. :bulb: Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
+  * PE (at v1.4): Do not post suggestions.
+
+</box>
+</div>
+
+<modal large title="Admin {{ icon_embedding }} Project →" id="modal:v1.3-ppp">
+  <include src="project-deliverables.md#project-deliverables-ppp"/>
+</modal>
+
+**After the session**:
+* It is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.
+* You can post in the issue thread to communicate with the tester %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
+  * :bulb: Do not argue with the issue reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and close the issue.
+
+</span>
 
 ### Deliverable: Practical Exam
 
 <span id="project-deliverables-practicalexam">
 
-**Objectives:** 
-* Evaluate your,
-  * manual testing skills
-  * product evaluation skills
-  * effort estimation skills
-* Peer-evaluate your
-  * product design {{ icon_team }}
-  * implementation effort {{ icon_individual }}
-  * documentation quality {{ icon_individual }}
-  
-<tip-box> 
+**Objectives:**
+* Evaluate your manual testing skills, product evaluation skills, effort estimation skills
+* Peer-evaluate your product design %%{{ icon_team }}%%, implementation effort %%{{ icon_individual }}%%, documentation quality %%{{ icon_individual }}%%
 
-* Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total). 
-* You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. %%&nbsp;Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem to be based on a sincere effort to test/evaluate.%%
+**When, where**: Week 13 lecture
+
+{{ icon_important_big_red }} **Grading**:
+* Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total).
+* You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. %%Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem to be based on a sincere effort to test/evaluate.%%
 * The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.
 
-</tip-box>
-
-
-<include src="project-testing.fr#testingPreparations" />
+<include src="project-testing.mbdf#testingPreparations" />
 
 **During:** 
 
-1. **Take note of your team to test and your _Tester ID_**. Both will be given to you by the teaching team (distributed via IVLE gradebook). 
-1. **Download from IVLE all files** submitted by the team %%&nbsp;(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
-1. **[~40 minutes] Test the product and report bugs** 
-   * Launch the jar file. Test it. 
-   * You can use Developer Guide (Appendix named _Instructions for Manual Testing_) and the User Guide in your testing. 
-   * No need to test features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%&nbsp;Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
-   * The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
-   * You can do _acceptance_ testing as well as _system_ testing.
-   * Omit feature that existed in AB4. Instead, test features added by the team. 
-   * Report bugs in the [practical exam issue tracker]({{module_org}}/pe/issues), ==not in the team's repo==. 
-     * Issue title format: `[Tester ID] Issue description` %%&nbsp;e.g. `[26] Empty name crashes app`%%
-     * Do not use team ID in bug reports %%&nbsp;Reason: to prevent others copying your bug reports%%
-   * Report bugs only. Do not post suggestions. These are considered bugs:
-     * Behavior differs from the User Guide (or Developer Guide)
-     * A legitimate user behavior is not handled %%&nbsp;e.g. incorrect commands, extra parameters%%
-     * Behavior is not specified and differs from normal expectations %%&nbsp;e.g. error message does not match the error%%
-   * Write good quality bug reports; :exclamation: **poor quality or incorrect bug reports will not earn credit**.
-     * Use a descriptive title
-     * Give a good description of the bug with steps to reproduce and screenshots
-     * {{glyphicon_eye_close}} Note that we will **anonymize bug reports** before revealing it to the receiving team. 
-   * Assign a severity to the bug report:
+1. **Take note of your team to test**. It will be given to you by the teaching team (distributed via IVLE gradebook).
+1. **Download from IVLE all files** submitted by the team %%(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
+1. **[~40 minutes] Test the product and report bugs** as described below:
 
-<include src="appendixE-gitHub.md#bug-severity" />
-
+<div class="indented-level2">
+  <include src="project-deliverables.md#project-deliverables-pe-testing-intructions" />
+</div>
 
 1. **[~40 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.  
   
    * **A. Cohesiveness of product features** [{{ icon_team }}]: Do the features fit together and match the stated target user and the value proposition?
      * `low`: One of these
-       * target user is too general %%&nbsp;i.e. not narrower than AB4%%
-       * target user and value proposition is not clear from the user guide OR
-       * features don't seem to match for the most part.
-     * `medium`: Some features match but some don't.
-     * `high`: All features match but the features are not very high value to the target user.
+       * target user is too general %%&nbsp;i.e. wider than AB4%%
+       * target user and value proposition is not clear from the user guide
+       * features don't seem to fit together for the most part
+     * `medium`: Some features fit together but some don't.
+     * `high`: All features fit together but the features are not very high value to the target user.
      * `excellent`: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.
      * `unable to judge`: You are unable to judge this aspect for some reason.
   

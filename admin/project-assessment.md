@@ -65,7 +65,7 @@ Based on: 1. your test code 2. our own manual testing 3. your performance in the
 
 {{ embed_topic("project-deliverables.md#project-deliverables-practicalexam", "Admin " + icon_embedding + " Deliverables → Practical Exam", "projectAssessment-Pe", "3") }}
 <panel type="seamless" header="Expectations for writing automated tests:" expanded>
-  <include src="project-testing.fr#expectations"/>
+  <include src="project-testing.mbdf#expectations"/>
 </panel>
   
 </panel>
