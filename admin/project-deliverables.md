@@ -111,7 +111,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 ### Deliverable: Demo
 <span id="project-deliverables-demo">
 
-* **Duration:** Strictly `(teamSize x 3) + 1` minutes %%&nbsp;e.g. 17 minutes for a 5-person team.%% Exceeding this limit will be penalized. The extra minute is for the first speaker to give an overview of the product.
+* **Duration:** Strictly `(teamSize x 4) + 2` minutes %%&nbsp;e.g. 22 minutes for a 5-person team.%% Exceeding this limit will be penalized. The extra two minutes is for the first speaker to give an overview of the product.
 
 * **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed but they are familiar with the AddressBook-level4 (AB4) product.
 
@@ -276,10 +276,10 @@ At the end of the project each student is required to submit a _Project Portfoli
    * **C. Amount of work** [{{ icon_individual }}]:  Evaluate the amount of work on a scale of 0 to 30
      * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
      * Count all implementation/testing/documentation work as mentioned in that person's portfolio page.
-     * :exclamation: Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
+     * {{ icon_important_big_red }} Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
      * When estimating effort, ignore features that are driven by GUI inputs.
   
-   * **D. Depth of feature (major feature)** [{{ icon_individual }}]: Evaluate ==the major feature== done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have the commands `edit`, `undo`, and `redo`.
+   * **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have the commands `edit`, `undo`, and `redo`.
      * `low` : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%. 
      * `medium` : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
      * `high`: One of the below
@@ -325,30 +325,35 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 * **Decide if it is a real bug and apply ONLY one of these labels**.
 
-<tip-box> 
+<div class="indented">
+<box>
 
 Response Labels:
-* `response.Accepted` : You accept it as a bug. 
-* `response.Rejected` : What tester thought as a bug is in fact expected behavior. :exclamation: The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can also reject bugs that you inherited from AB4.
-* `response.CannotReproduce` : You are unable to reproduce the behavior reported in the bug after multiple tries. 
-* `response.IssueUnclear` : The issue description is not clear.
+* `response.Accepted`: You accept it as a bug.
+* `response.Rejected`: What tester treated as a bug is in fact the expected behavior. {{ icon_important_big_red }} The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can reject bugs that you inherited from AB4.
+* `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
+* `response.IssueUnclear`: The issue description is not clear.
 
-</tip-box>
+</box>
+</div>
 
 * If applicable, **decide the type of bug**:
 
-<tip-box> 
+<div class="indented">
+<box>
 
 Bug Type Labels:
 * `type-FunctionalityBug` : the bug is a flaw in how the product works.
 * `type-DocumentationBug` : the bug is in the documentation.
 
-</tip-box>
+</box>
+</div>
 
 * **Suggest a severity for the bug**:
 
-<include src="appendixE-gitHub.md#bug-severity" />
-
+<div class="indented">
+  <include src="appendixE-gitHub.md#bug-severity" />
+</div>
 
 * **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.**
 
