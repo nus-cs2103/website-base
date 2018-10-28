@@ -1,32 +1,24 @@
-**One member** (preferably a different member each week): do a quick demo of your v1.3 using the jar file
+**A. One member do a quick demo of your v1.3 using the jar file** (preferably a different member from previous weeks):
 
-**Questions to discuss during tutorial:**
+**B. Whole team: do this question together, using the whiteboard**
 
-Divide these questions among team members and get ready to answer them.
+<div class="indented">
+  <include src="../../book/testCaseDesign/combiningTestInputs/mix/q-testCasesForConsumeMethod.md" />
+</div>
+<br>
 
-1. Apply heuristics for combining multiple test inputs to the following test cases, assuming all 6 values in the table need to be tested. :white_check_mark: indicates valid values and :exclamation: indicates invalid values. Point out where the heuristics are contradicted and how to improve the test cases.
-
-   <tip-box> 
-   
-   SUT: `foo(x,y)`
-   
-   Test case |  x  |  y
-   --------- | --- | ---
-   TC1 | :white_check_mark: x1-valid | :white_check_mark: y1-valid
-   TC2 | :white_check_mark: x2-valid | :exclamation: y2-invalid
-   TC3 | :exclamation: x3-invalid | :exclamation: y3-invalid
-   
-   </tip-box>
-
+**C. Divide these questions among team members and get ready to answer them.**
 
 1. Distinguish between _sequential_ and _iterative_ processes. Which one are we using in the project?
-
 1. Distinguish between _breadth-first_ and _depth-first_ iterative processes using your project as an example.
-
 1. Describe how _agile process models_ differ from traditional process models.
-
-1. Describe some distinguishing features of Scrum. Relate those features to your project. %%&nbsp;i.e. are they applicable? are you doing something similar?%%
-    
 1. When do you use _MVC_ pattern? Do we have MVC in AB4?
-
 1. When do you use the _Observer_ pattern? Do we have the Observer pattern in AB4?
+
+**D. Divide XP and Scrum between the two teams** for the following activity, if there is enough time left.
+
+* Each team use the Web to find about 5 distinguishing features of the process model.
+  * Some interesting [SCRUM concepts](https://www.scrum.org/resources/what-is-scrum): Product backlog, scrum board, story points, burndown charts, scrum master, product owner
+  * XP rules are described at [http://www.extremeprogramming.org/rules.html](http://www.extremeprogramming.org/rules.html)
+
+* Relate those features to your project. %%i.e. are they applicable? are you doing something similar?%%
