@@ -40,14 +40,11 @@ Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v1
 
 </tip-box>
 
-* **README page**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular,
-  * ==Describe the profile of the target user==
-  * Remove irrelevant content such as _Learning Outcomes_
-  * ==Update the `Ui.png` to match the current product==
+* **README page**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product==.
   
 * **User Guide**: ==This document will be used by acceptance testers==. Update to match the current version. In particular,
-  * Clearly indicate which features are not implemented yet %%&nbsp;e.g. tag those features with a `Coming in v2.0`%%. 
-  * For those features already implemented, ensure their descriptions match the exact behavior of the product %%&nbsp;e.g. replace mockups with actual screenshots%% 
+  * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in v2.0`%%.
+  * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
  
 * **Developer Guide**: As before, update if necessary.
   
