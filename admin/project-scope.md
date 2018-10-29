@@ -1,6 +1,8 @@
 {% macro show_main_text() %}
 <div id="main">
 
+<span class="keyword d-none">project expectations</span>
+
 <div id="project-direction">
 In general, each team is expected to take one of these two directions:
 
@@ -151,6 +153,12 @@ For either direction, you need to define a target user profile and a value propo
 
 1. ==Write **~300-500 LoC of code**, on average.==
 
+<div class="indented-level2">
+
+   {{ embed_topic("project-testing.mbdf#expectations", "Admin " + icon_embedding + " Project Asessement → Expectation on testing", "projectScope-testingExpectations", "3") }}
+</div>
+
+
 </span>
 <span id="team-expectations">
 
@@ -169,5 +177,6 @@ For either direction, you need to define a target user profile and a value propo
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-scope", show_main_text) }}
