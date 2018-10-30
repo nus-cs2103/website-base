@@ -12,8 +12,8 @@
 **Preparation**:
 
 * Ensure that **you can access the relevant issue tracker** given below:<br>
-  -- for PE Dry Run: [nus-{{ module | lower }}-{{ semester }}/**pe-dry-run**]({{module_org}}/pe-dry-run/issues)<br>
-  -- for PE: [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues)
+  -- for PE Dry Run (at **v1.3**): [nus-{{ module | lower }}-{{ semester }}/**pe-dry-run**]({{module_org}}/pe-dry-run/issues)<br>
+  -- for PE (at **v1.4**): [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues)
   * If you cannot access it, you may not have accepted the invitation to join the GitHub org used by the module. Go to [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation) to accept the invitation.
   * If you cannot find the invitation, post in our [forum]({{ forum_link }}).
 

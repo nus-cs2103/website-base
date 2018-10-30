@@ -167,7 +167,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 <include src="project-testing.mbdf#testingPreparations" />
 
 **During the session**:
-1. **Take note of your team to test and your _Tester ID_**. Distributed via IVLE gradebook.
+1. **Take note of your team to test**. Distributed via IVLE gradebook.
 1. Download the latest jar file from the team's GitHub page. ==Copy it to an empty folder==.
 
 <div id="project-deliverables-pe-testing-intructions">
@@ -176,33 +176,33 @@ At the end of the project each student is required to submit a _Project Portfoli
 ##### Testing instructions for PE and PE Dry Run
 
 * **What to test**:
-  * PE Dry Run (at v1.3): Test the product based on the user guide (the UG is most likely accessible using the `help` command). First, _acceptance test_ it from the perspective of the target user profile. If there is any time left, you can switch to _system testing_ mode.
-  * PE (at v1.4): Test based on the Developer Guide (Appendix named _Instructions for Manual Testing_) and the User Guide. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
+  * PE Dry Run (at **v1.3**):
+    * Test the product ==based on the User Guide== (the UG is most likely accessible using the `help` command).
+    * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
+  * PE (at **v1.4**):
+    * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
+    * Do ==_system testing only_==. No need to do _acceptance testing_.
 
 * **What not to test**:
-  * Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%&nbsp;Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
+  * Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
   * Omit feature that existed in AB-4.
 
-* **Type of testing**:
-  * PE Dry Run (at v1.3): Do _system_ testing first %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can do _acceptance_ testing as well %%i.e., does the product solve the problem it claims to solve?%%.
-  * PE (at v1.4): Do system testing only.
-
 * **These are considered _bugs_**:
-  * Behavior differs from the User Guide (or Developer Guide)
+  * Behavior differs from the User Guide
   * A legitimate user behavior is not handled %%e.g. incorrect commands, extra parameters%%
   * Behavior is not specified and differs from normal expectations %%e.g. error message does not match the error%%
   * Problems in the User Guide e.g., missing/incorrect info
 
 * **Where to report bugs**: Post bug in the following issue trackers (==not in the team's repo==):
-  * PE Dry Run (at v1.3): [nus-{{ module | lower }}-{{ semester }}/**pe-dry-run**]({{module_org}}/pe-dry-run/issues).
-  * PE (at v1.4): [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues).
+  * PE Dry Run (at **v1.3**): [nus-{{ module | lower }}-{{ semester }}/**pe-dry-run**]({{module_org}}/pe-dry-run/issues).
+  * PE (at **v1.4**): [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues).
 
 * **Bug report format**:
   * ==Do not use team ID in bug reports==. %%Reason: to prevent others copying your bug reports%%
   * Each bug should be a separate issue.
   * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
   * Use a descriptive title.
-  * Give a good description of the bug with steps to reproduce and screenshots.
+  * Give a good description of the bug with ==steps to reproduce and screenshots==.
   * Assign a severity to the bug report:
 
 <div class="indented-level4">
@@ -210,8 +210,8 @@ At the end of the project each student is required to submit a _Project Portfoli
 </div>
 
 * **About posting _suggestions_:**
-  * PE Dry Run (at v1.3): You can also post suggestions on how to improve the product. :bulb: Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
-  * PE (at v1.4): Do not post suggestions.
+  * PE Dry Run (at **v1.3**): You can also post suggestions on how to improve the product. :bulb: Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
+  * PE (at **v1.4**): Do not post suggestions.
 
 </box>
 </div>
@@ -221,7 +221,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 </modal>
 
 **After the session**:
-* It is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.
+* We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.
 * You can post in the issue thread to communicate with the tester %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
   * :bulb: Do not argue with the issue reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and close the issue.
 
