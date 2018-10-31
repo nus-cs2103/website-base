@@ -24,6 +24,12 @@ The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com
 
 **Analyzing code authorship**: We use a custom-built tool called [RepoSense](https://github.com/reposense/RepoSense) for extracting code written by each person.
 
+<div class="indented-level2">
+<panel type="seamless" header="##### Using RepoSense">
+  <include src="reposenseCompatibility.md#main" />
+</panel>
+</div>
+
 </div>
 {% endmacro %}
 

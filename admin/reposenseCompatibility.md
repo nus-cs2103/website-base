@@ -1,4 +1,4 @@
-#### Ensuring your code is RepoSense-Compatible
+#### Using RepoSense
 
 <div id="main">
 
