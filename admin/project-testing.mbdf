@@ -13,8 +13,8 @@
 
 * Ensure that **you can access the relevant issue tracker** given below:<br>
   -- for PE Dry Run (at **v1.3**): [nus-{{ module | lower }}-{{ semester }}/**pe-dry-run**]({{module_org}}/pe-dry-run/issues)<br>
-  -- for PE (at **v1.4**): [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues)
-  * If you cannot access it, you may not have accepted the invitation to join the GitHub org used by the module. Go to [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation) to accept the invitation.
+  -- for PE (at **v1.4**): [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues) (will open only near the actual PE)
+  * ==These are private repos!==. If you cannot access the relevant repo, you may not have accepted the invitation to join the GitHub org used by the module. Go to [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation) to accept the invitation.
   * If you cannot find the invitation, post in our [forum]({{ forum_link }}).
 
 * Ensure you have access to a **computer that is able to run module projects** %%&nbsp;e.g. has the right Java version%%.

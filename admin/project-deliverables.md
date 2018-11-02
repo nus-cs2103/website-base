@@ -213,6 +213,8 @@ At the end of the project each student is required to submit a _Project Portfoli
   * PE Dry Run (at **v1.3**): You can also post suggestions on how to improve the product. :bulb: Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
   * PE (at **v1.4**): Do not post suggestions.
 
+* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch%%, you can test the _fallback_ team allocated to you. But in this case ==you must inform us immediately after the session== so that we can send your bug reports to the correct team.
+
 </box>
 </div>
 
