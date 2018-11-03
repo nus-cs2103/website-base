@@ -11,6 +11,7 @@ Here is a list of main deliverables of the project; their details are given in t
   * [Product Website](#deliverable-product-website)
   * [Project Portfolio Page](#deliverable-project-portfolio-page-ppp)
 * [Product Demo](#deliverable-demo)
+* [Practical Exam Dry Run](#deliverable-practical-exam-dry-run)
 * [Practical Exam](#deliverable-practical-exam)
   * Peer testing results
   * Peer evaluation
@@ -83,29 +84,41 @@ At the end of the project each student is required to submit a _Project Portfoli
     * contributions to the project
     * your documentation skills
 
-* **What to include:**
-  * Main things to include: 
-    * features you implemented %%&nbsp;(include relevant extracts from the user guide and the developer guide)%%
-    * features you propose to implement in future %%&nbsp;(include relevant extracts from the user guide and the developer guide if applicable)%%<br>
-      Note: the purpose of allowing you to include _proposed_ features is to provide you more flexibility to show your documentation skills. %%&nbsp;e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.%%
-    * other significant contributions to the project %%&nbsp;e.g. tweaks to existing features, setting up project tools%%
-  * Other things you can include: 
-    * Evidence of helping others %%&nbsp;e.g. responses you posted in our forum, bugs you reported in other team's products%%, 
-    * Evidence of technical leadership %%&nbsp;e.g. sharing useful information in the forum%%
+* **Sections to include:**
+  * **Overview**: A short overview of your product to provide some context to the reader.
+  * **Summary of Contributions**:
+    * **Code contributed**: Give a link to your code on [Project Code Dashboard](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard), which should be `https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard/#=undefined&search=YourGithubUserName` (==replace `YourGithubUserName` with your actual username==).
+    * **Main feature implemented:** A summary of the main feature (the so called _major enhancement_) you implemented
+    * **Other contributions:**
+      * Other _minor_ enhancements you did which are not related to your _main_ feature
+      * Contributions to project management %%e.g., setting up project tools, managing releases, managing issue tracker etc.%%
+      * Evidence of helping others %%e.g. responses you posted in our forum, bugs you reported in other team's products%%,
+      * Evidence of technical leadership %%e.g. sharing useful information in the forum%%
+
+  * **Contributions to the User Guide**: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
+    %%The purpose of allowing you to include _proposed_ features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.%%
+  * **Contributions to the Developer Guide**: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.
+
   * If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
 
 * **Format**:
+  * File name: `docs/team/GitHubUserName.adoc` e.g., `docs/team/JamesTan2001.adoc`
+  * {{ icon_example }} Follow the [example in the AddressBook-Level4](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html), but ignore the following two lines in it.<br>
+      >* **Minor enhancement:** added a history command that allows the user to navigate to previous commands using up/down keys.
+      >* **Code contributed:** [[Functional code]()] [[Test code]()] _{give links to collated code files}_
+
+  * :bulb: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html).
+
+  * =={{ icon_important_big_red }} It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
+
   * Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the ==page limits given below are _after_ converting to PDF format==. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
     Content | Limit
     ------- | -----
-    Description in point form | 0.5-1
-    Extracts from the User Guide | 1-3
-    Extracts from the Developer Guide | 3-6
+    Overview + Summary of contributions | 0.5-1
+    Contributions to the User Guide | 1-3
+    Contributions to the Developer Guide | 3-6
     Total | 5-10
-  * {{ icon_example }} Follow the [example in the AddressBook-Level4](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html).
-  * :bulb: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html). 
-  * {{ icon_important_big_red }} It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
-  
+
 </span>
 
 ### Deliverable: Demo
