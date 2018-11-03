@@ -138,20 +138,19 @@ At the end of the project each student is required to submit a _Project Portfoli
 * **Structure:**  
   * Demo the product using the same executable you submitted, on your own laptop, using the TV.  
   * It can be **a _sitting down_ demo**: You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.
-  * It will be uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.
-  * The app should be populated with a significant amount of realistic data at the start. %%&nbsp;e.g at least 20 contacts%%.
+  * It will be an uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.
+  * The demo should use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name">_realistic_</tooltip> demo data. %%&nbsp;e.g at least 20 contacts%%. Trying to demo a product using just 1-2 sample data creates a bad impression.
   * **Dress code** : The level of formality is up to you, but it is recommended that the whole team dress at the same level.
     
 * **Optimizing the time:** 
   * Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.  
-   Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]`Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.` [do this] `If Jim needs to postpone the meeting, he can type …`  
+   Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this] `Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.` [do this] `If Jim needs to postpone the meeting, he can type …`
     It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.  
     Note that CS2101 demo requirements may differ. Different context → Different requirements.  
   * Rehearse the steps well and ensure you can do a smooth demo. Poor quality demos can affect your grade.
   * Don’t waste time repeating things the target audience already knows. e.g. no need to say things like "We are students from NUS, SoC". 
-  * Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just 1-2 sample data creates a bad impression too.
   * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
-  * Limit the demo to CLI inputs only. There is no point explaining GUI inputs because they don't earn marks.
+  * Limit the demo to CLI inputs only. Do not explain GUI inputs because they don't earn marks.
 
 </span>
 
@@ -180,8 +179,9 @@ At the end of the project each student is required to submit a _Project Portfoli
 <include src="project-testing.mbdf#testingPreparations" />
 
 **During the session**:
-1. **Take note of your team to test**. Distributed via IVLE gradebook.
+1. **Take note of your team to test**. Distributed via IVLE gradebook and via email.
 1. Download the latest jar file from the team's GitHub page. ==Copy it to an empty folder==.
+1. Confirm you are testing the allocated product by comparing the product UI with the UI screenshot sent via email.
 
 <div id="project-deliverables-pe-testing-intructions">
 <box>
@@ -194,7 +194,7 @@ At the end of the project each student is required to submit a _Project Portfoli
     * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
   * PE (at **v1.4**):
     * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
-    * Do ==_system testing only_==. No need to do _acceptance testing_.
+    * Do ==_system testing only_== %%i.e., verify actual behavior against documented behavior%%. Do not do _acceptance testing_.
 
 * **What not to test**:
   * Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
@@ -211,12 +211,13 @@ At the end of the project each student is required to submit a _Project Portfoli
   * PE (at **v1.4**): [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues).
 
 * **Bug report format**:
+  * {{ icon_important_big_red }} Post bugs as you find them %%(i.e., do not wait to post all bugs at the end)%% because the issue tracker will close exactly at the end of the allocated time.
   * ==Do not use team ID in bug reports==. %%Reason: to prevent others copying your bug reports%%
   * Each bug should be a separate issue.
   * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
   * Use a descriptive title.
   * Give a good description of the bug with ==steps to reproduce and screenshots==.
-  * Assign a severity to the bug report:
+  * Assign a severity to the bug report. Bug report without a priority label are considered `severity.Low` (lower severity bugs earn lower credit):
 
 <div class="indented-level4">
 <include src="appendixE-gitHub.md#bug-severity" />
@@ -269,12 +270,12 @@ At the end of the project each student is required to submit a _Project Portfoli
   <include src="project-deliverables.md#project-deliverables-pe-testing-intructions" />
 </div>
 
-1. **[~40 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.  
+1. **[~50 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.
   
    * **A. Cohesiveness of product features** [{{ icon_team }}]: Do the features fit together and match the stated target user and the value proposition?
      * `low`: One of these
        * target user is too general %%&nbsp;i.e. wider than AB4%%
-       * target user and value proposition is not clear from the user guide
+       * target user and/or value proposition not clear from the user guide
        * features don't seem to fit together for the most part
      * `medium`: Some features fit together but some don't.
      * `high`: All features fit together but the features are not very high value to the target user.
@@ -284,17 +285,16 @@ At the end of the project each student is required to submit a _Project Portfoli
    * **B. Quality of user docs** [{{ icon_individual }}]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.== 
      * `low`: Hard to understand, often inaccurate or missing important information.
      * `medium`: Needs some effort to understand; some information is missing.
-     * `high`: Mostly easy to follow. Only a few areas for improvements.
+     * `high`: Mostly easy to follow. Only a few areas need improvements.
      * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).
      * `unable to judge`: Less than 1 page worth of UG content written by the student.
 
-   * **C. Amount of work** [{{ icon_individual }}]:  Evaluate the amount of work on a scale of 0 to 30
+   * **C. Amount of work** [{{ icon_individual }}]:  Evaluate the amount of work, on a scale of 0 to 30.
      * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
-     * Count all implementation/testing/documentation work as mentioned in that person's portfolio page.
+     * Consider ==the _main feature_ only==. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.
      * {{ icon_important_big_red }} Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
-     * When estimating effort, ignore features that are driven by GUI inputs.
-  
-   * **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have the commands `edit`, `undo`, and `redo`.
+
+   * **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
      * `low` : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%. 
      * `medium` : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
      * `high`: One of the below
@@ -334,7 +334,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 * **Do not edit the subject or the description. Do not close bug reports.** Your response (if any) should be added as a comment.
 
-* **If the bug is reported multiple times**, mark all copies EXCEPT one as duplicates using the `duplicate` tag. In addition, use [this technique](https://help.github.com/articles/about-duplicate-issues-and-pull-requests/) to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.
+* **If the bug is reported multiple times**, mark all copies EXCEPT one as duplicates using the `duplicate` tag (if the duplicates have different severity levels, you should ==keep the one with the highest severity==). In addition, use [this technique](https://help.github.com/articles/about-duplicate-issues-and-pull-requests/) to indicate which issue they are duplicates of.  Duplicates can be omitted from processing steps given below.
 
 * **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know (email prof).
 
@@ -352,7 +352,7 @@ Response Labels:
 </box>
 </div>
 
-* If applicable, **decide the type of bug**:
+* If applicable, **decide the type of bug**. Bugs without `type-` are considered `type-FunctionalityBug` by default (which are liable to a heavier penalty):
 
 <div class="indented">
 <box>
@@ -364,13 +364,13 @@ Bug Type Labels:
 </box>
 </div>
 
-* **Suggest a severity for the bug**:
+* **If you disagree with the original severity assigned to the bug**, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:
 
 <div class="indented">
   <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
-* **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.**
+* **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.**
 
 * **Add an explanatory comment** explaining your choice of labels and assignees.
 
