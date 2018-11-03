@@ -1,8 +1,9 @@
 ==no webcast==
 
-**Practice exam**
+Part A: **Practice exam** i.e., a simulated version of the final exam, but shorter. If you don't come to the lecture, you can still receive a softcopy of the practice exam paper.
 
-* Seating row assignment is [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vTSnp6t_MzmNDS2Jg5GPWkHoJmX0ISL_XBz86Z2n_CxvEkwHw4yZCWxaDZbRFb6PBotFQRPZXfreJwI/pubhtml?gid=0&single=true)
+Part B: **Internship Tips** -- a talk about how to do well in internships (and SE jobs in general)
+
 <!--
 * Answers are given below. If you have any doubts about any of the question, please post in our forum to discuss.<br>
   **Q: `A`**<br>
@@ -57,6 +58,4 @@
   A49: `E`<br>
   A50: `E`<br>
 -->
-
-**Talk on getting ready for internships**
 
