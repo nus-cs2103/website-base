@@ -289,22 +289,7 @@ At the end of the project each student is required to submit a _Project Portfoli
      * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).
      * `unable to judge`: Less than 1 page worth of UG content written by the student.
 
-   * **C. Amount of work** [{{ icon_individual }}]:  Evaluate the amount of work, on a scale of 0 to 30.
-     * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
-     * Consider ==the _main feature_ only==. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.
-     * {{ icon_important_big_red }} Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
-
-   * **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
-     * `low` : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%. 
-     * `medium` : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-     * `high`: One of the below
-       * A moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.
-       * A difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-     * `excellent`: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
-     * `outstanding`: A difficult feature, implemented as good as it can be under the circumstances. %%&nbsp;undo/redo command that even allows undoing non-mutating commands such as _select_, allows selectively undo specific commands in the history, etc.%%
-     * `unable to judge`: You are unable to judge this aspect for some reason.
-  
-   * **E. Quality of developer docs** [{{ icon_individual }}]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.== 
+   * **C. Quality of developer docs** [{{ icon_individual }}]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.==
      * `low`: One of these
        * Very small amount of content (i.e., 0.5 - 1 page).
        * Hardly any use to the reader (i.e., content doesn't make much sense or redundant).
@@ -317,6 +302,21 @@ At the end of the project each student is required to submit a _Project Portfoli
        * no content at all.
        * less than 0.5 pages worth of content.
        * other problems in the document %%&nbsp;e.g. looks like included wrong content%%.
+
+   * **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+     * `low` : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+     * `medium` : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+     * `high`: One of the below
+       * A moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.
+       * A difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
+     * `excellent`: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+     * `outstanding`: A difficult feature, implemented as good as it can be under the circumstances. %%&nbsp;undo/redo command that even allows undoing non-mutating commands such as _select_, allows selectively undo specific commands in the history, etc.%%
+     * `unable to judge`: You are unable to judge this aspect for some reason.
+
+   * **E. Amount of work** [{{ icon_individual }}]:  Evaluate the amount of work, on a scale of 0 to 30.
+     * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
+     * Consider ==the _main feature_ only==. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.
+     * {{ icon_important_big_red }} Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
 
 **Bug Review Period**:
 
