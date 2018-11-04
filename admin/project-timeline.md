@@ -21,7 +21,7 @@ Week  | Stage     | Activities
 **10**|mid-v1.3 | <span id="mid-v13-overview">Continue to enhance features. Make code RepoSense-compatible. Try doing a proper release.</span>
 **11**|v1.3     | <span id="v13-overview">Release as a jar file, release updated user guide, peer-test released products, verify code authorship.</span>
 **12**|mid-v1.4 | <span id="mid-v14-overview">Tweak as per peer-testing results, draft Project Portfolio Page, practice product demo.</span>
-**13**|v1.4     | <span id="v14-overview">Final tweaks to docs/product, release product, demo product, test/evaluate peer products.</span>
+**13**|v1.4     | <span id="v14-overview">Final tweaks to docs/product, release product, demo product, evaluate peer projects.</span>
 
 More details of each stage is provided elsewhere is this website.
 

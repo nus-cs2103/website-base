@@ -13,24 +13,21 @@
 Team/Individual Item | Name format | Upload to
 -------------------- | ----------- | ---------
 {{ icon_team }} Source code |  tag as `v1.4` | GitHub
-{{ icon_team }} Jar file |  `[team][product name].jar`<br>%%e.g. [T09-B1][ContactsPlus].jar%% | IVLE
-{{ icon_team }} User Guide | `[TEAM_ID][Project Name]UserGuide.pdf`<br>  %%e.g.[T09-B1][Contacts Plus]UserGuide.pdf%% | IVLE
-{{ icon_team }} Developer Guide | `[TEAM_ID][Project Name]DeveloperGuide.pdf`<br> %%e.g. [T09-B1][Contacts Plus]DeveloperGuide.pdf%% | IVLE
-{{ icon_team }} Product Website | `README.adoc`, `Ui.png`, `AboutUs.adoc` | GitHub
-{{ icon_individual }} Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[T09-B1][John Doe]Portfolio.pdf%% | IVLE
+{{ icon_team }} Jar file |  `[team][product name].jar`<br>%%e.g. [W09-1][ContactsPlus].jar%% | IVLE
+{{ icon_team }} User Guide | `[TEAM_ID][product Name]UserGuide.pdf`<br>  %%e.g.[W09-1][Contacts Plus]UserGuide.pdf%% | IVLE
+{{ icon_team }} Developer Guide | `[TEAM_ID][product Name]DeveloperGuide.pdf`<br> %%e.g. [W09-1][Contacts Plus]DeveloperGuide.pdf%% | IVLE
+{{ icon_team }} Product Website | `README` page, `Ui.png`, `AboutUs` page | github.io
+{{ icon_individual }} Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[W09-1][John Doe]Portfolio.pdf%%<br>html version of PPP page on the product website | IVLE<br><br>github.io
 
 **Deadline** for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.
 
-<tip-box> 
-
-* :exclamation: **Penalty for late submission:** ==-1 mark for each hour delayed, up to 3 hours.== Even a 1-second delay is considered late, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis. 
+* {{ icon_important_big_red }} **Penalty for late submission:** ==-1 mark for each hour delayed, up to 3 hours.== Even a one-second delay is considered late, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis.
   * For submissions done via IVLE, the submission time is the timestamp shown by IVLE.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
 * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions. 
-* :exclamation: Please **follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name, team member photos not suitable, etc.
+* {{ icon_important_big_red }} Please **follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name, team member photos not suitable, etc.
 * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%&nbsp;e.g. broken links, outdated diagrams/instructions etc.%%.
-* **Do not update the repo during the 14 days after the deadline.** Get our permission first if you need to update the repo during that _freeze_ period. You can continue to evolve your repo after that. 
-</tip-box>
+* **Do not update the repo during the 14 days after the deadline.** Get our permission first if you need to update the repo during that _freeze_ period. You can continue to evolve your repo after that.
 
 **Grading**:
 
@@ -70,28 +67,34 @@ Team/Individual Item | Name format | Upload to
 
 **Submission**: Similar to UG
 
+### v1.4 Project Portfolio Page (PPP)
+
+{{ embed_topic("project-deliverables.md#project-deliverables-ppp", "Admin " + icon_embedding + " Project → Deliverables → Project Portfolio Page", "v14-deliverablePpp", "3") }}
+<p/>
+
+**Submission**: Similar to UG
+
 
 ### v1.4 Product Website
 
 {{ embed_topic("project-deliverables.md#project-deliverables-website", "Admin " + icon_embedding + " Project → Deliverables → Product Website", "v14-deliverableWebsite", "3") }}
 <p/>
 
-**Submission**: Push the code to GitHub
+**Submission**: Push the code to GitHub. Ensure the website is auto-published.
 
 
 ### v1.4 Demo
 
-<img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px">
+<img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px"><p/>
 
 {{ embed_topic("project-deliverables.md#project-deliverables-demo", "Admin " + icon_embedding + " Project → Deliverables → Demo", "v14-deliverableDemo", "3") }}
 <p/>
 
 * **Venue:** Same as the tutorial venue unless informed otherwise.
 * **Schedule:** Your demo timing is same as your tutorial time in week 13.
-    Starting times: `Team B1: 00 minutes, B2: 20 minutes, B3: 40 minutes, B4: TBA`<br>
-    At least some team members need to arrive 15 minutes ahead of the allocated time to set up your computer.<br>
-    There is an ==automatic penalty if you are not ready to start on time.==<br>
-    Wait outside the venue until you are called in.
+  * Please arrive on time and remain outside the venue until called in.
+  * There is an ==automatic penalty if you are not ready to start on time.==<br>
+  * Wait outside the venue until you are called in.
 
 
 ### v1.4 Practical Exam
