@@ -87,7 +87,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 * **Sections to include:**
   * **Overview**: A short overview of your product to provide some context to the reader.
   * **Summary of Contributions**:
-    * **Code contributed**: Give a link to your code on [Project Code Dashboard](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard), which should be `https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard/#=undefined&search=YourGithubUserName` (==replace `YourGithubUserName` with your actual username==).
+    * **Code contributed**: Give a link to your code on [Project Code Dashboard](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard), which should be `https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard/#=undefined&search=githbub_username_in_lower_case` (==replace `githbub_username_in_lower_case` with your actual username== in lower case e.g., `johndoe`). This link is also available in the [Project List Page]({{baseUrl}}/admin/projectList.html) -- linked to the {{ fas_code }} icon under your photo.
     * **Main feature implemented:** A summary of the main feature (the so called _major enhancement_) you implemented
     * **Other contributions:**
       * Other _minor_ enhancements you did which are not related to your _main_ feature
@@ -102,7 +102,7 @@ At the end of the project each student is required to submit a _Project Portfoli
   * If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
 
 * **Format**:
-  * File name: `docs/team/GitHubUserName.adoc` e.g., `docs/team/JamesTan2001.adoc`
+  * File name: `docs/team/githbub_username_in_lower_case.adoc` e.g., `docs/team/johndoe.adoc`
   * {{ icon_example }} Follow the [example in the AddressBook-Level4](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html), but ignore the following two lines in it.<br>
       >* **Minor enhancement:** added a history command that allows the user to navigate to previous commands using up/down keys.
       >* **Code contributed:** [[Functional code]()] [[Test code]()] _{give links to collated code files}_
