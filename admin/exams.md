@@ -23,11 +23,9 @@ Each MCQ question gives you a statement to evaluate.
 
 
 Unless stated otherwise, the meaning of answer options are<br>
-**A.** `True`<br>
-**B.** Option not used<br>
-**C.** `Question unclear` (in this case, write down your doubt in the question paper)<br>
-**D.** Option not used<br>
-**E.** `False`
+**A**: Agree. If the question has multiple statements, ++agree with all of them++.<br>
+**B**: Disagree. If the question has multiple statements, ++disagree with at least one of them++<br>
+**C**, **D**, **E**: Not used
 
 Number of questions: 100
 
@@ -37,13 +35,14 @@ Note that you have **slightly more than ½ minute for each question**, which mea
 </div>
 
 Given the fast pace required by the paper, to be fair to all students, **you will not be allowed to clarify doubts about questions** (in Part 1) by talking to invigilators. 
-* If a question is not clear, you can choose option C and write your doubt in the exam paper, near the unclear question. 
-* If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.
+* If a question is not clear, you can circle the question number in the question paper and write your doubt in the question paper, near that question.
+* If your doubt is justified %%(e.g. there is a typo in the question)%% or if many students found the question to be unclear, the examiner may decide to omit that question from grading.
 
 **Questions in Part 1 are confidential.** You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.
 
 <div class="full-mode">
-You will be given OCR forms to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given 2 OCR forms. **Indicate your student number in both OCR forms**. 
+
+You will be given OCR forms %%(i.e., bubble sheets)%% to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given 2 OCR forms. **Indicate your student number in both OCR forms**.
 </div>
 
 To save space, we use the following notation in MCQ question.
@@ -57,7 +56,7 @@ To save space, we use the following notation in MCQ question.
 
 * IDEs can help with [++writing++ | debugging | ++testing++] code.
 
-The correct response for it is `False` because IDEs can help with all three of the given options, not just writing and testing.
+The correct response for it is `Disagree` because IDEs can help with all three of the given options, not just writing and testing.
 
 </tip-box>
 
@@ -81,12 +80,12 @@ Some questions have tags e.g., the question below has a tag  **`JAVA`**. These *
 
 <img src="{{baseUrl}}/admin/images/contextTag.png" /><br>
 
-**The paper is open-book**: you may bring any printed or written materials to the exam in hard copy format. 
+**The exam paper is open-book**: you may bring any printed or written materials to the exam in hard copy format.
 However, given the fast pace required by Part 1, you will not have time left to refer notes during that part of the exam. 
 
 :bulb: **Mark the OCR form as you go**, rather than planning to transfer your answers to the OCR form near the end. %%&nbsp;Reason: Given there are 100 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.%%
 
-:bulb: **Write the answer in the exam paper as well** as marking it in the OCR form. %%&nbsp;Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.%%
+:bulb: **Write the answer in the exam paper as well** when marking it in the OCR form. %%&nbsp;Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.%%
 
 :bulb: We have tried to **avoid deliberately misleading/tricky questions**. If a question seems to take a very long time to figure out, you are probably over-thinking it.
 
@@ -100,12 +99,7 @@ You will be given a practice exam paper to familiarize yourself with this slight
 
 Unlike in part 1, **you can ask invigilators for clarifications** if you found a question to be unclear in part 2.
 
-Yes, **you may use pencils** when answering part 2. 
-<div class="full-mode">
-
-[[Sample paper](http://www.comp.nus.edu.sg/~{{ module | lower }}/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202.pdf)]
-[[Answers to the sample paper](http://www.comp.nus.edu.sg/~{{ module | lower }}/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202%20(answers).pdf)]
-</div>
+Yes, **you may use pencils** when answering part 2.
 
 </div>
 
