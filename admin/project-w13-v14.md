@@ -94,8 +94,7 @@ Team/Individual Item | Name format | Upload to
 * **Schedule:** Your demo timing is same as your tutorial time in week 13.
   * Please arrive on time and remain outside the venue until called in.
   * There is an ==automatic penalty if you are not ready to start on time.==<br>
-  * Wait outside the venue until you are called in.
-
+  * You should bring your own adapter if the display adapters available in your tutorial venue don't work for you.
 
 ### v1.4 Practical Exam
 
