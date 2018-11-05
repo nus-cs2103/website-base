@@ -340,8 +340,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "activityDiagrams", heading: "Activity Diagrams", priority: "3"},
-              {name: "activityDiagramsIntermediate", heading: "Activity Diagrams", priority: "4"},
+              {name: "activityDiagrams", heading: "Activity Diagrams - Basic", priority: "3"},
+              {name: "activityDiagramsIntermediate", heading: "Activity Diagrams - Intermediate", priority: "4"},
               {name: "sequenceDiagramsBasic", heading: "Sequence Diagrams - Basic", priority: "2"},
               {name: "sequenceDiagramsIntermediate", heading: "Sequence Diagrams - Intermediate", priority: "3"},
               {name: "sequenceDiagramsAdvanced", heading: "Sequence Diagrams - Advanced", priority: "-1"},
@@ -477,6 +477,7 @@
       },
       {
         name: "abstractionOccurrence",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
@@ -532,6 +533,7 @@
       },
       {
         name: "more",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
@@ -557,7 +559,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "Multi-Level Design", priority: "2"}
+              {name: "what", heading: "What", priority: "2"}
             ]
           }
         ]
@@ -568,7 +570,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "Top-Down and Bottom-Up Design", priority: "3"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           }
         ]
@@ -579,7 +581,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "Agile Design", priority: "3"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           }
         ]
@@ -831,6 +833,7 @@
           },
           {
             name: "markdown",
+            priority: "4",
             level_three_topics: [
               {name: "what", heading: "What", priority: "4"},
               {name: "how", heading: "How", priority: "4"}
@@ -916,6 +919,7 @@
       },
       {
         name: "designByContract",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
@@ -969,6 +973,7 @@
       },
       {
         name: "more",
+        priority: "-1",
         level_two_topics: [
           {
             name: "",
@@ -1480,13 +1485,13 @@
           {
             name: "dependencies",
             level_three_topics: [
-              {name: "what", heading: "Dependencies", priority: "3"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           },
           {
             name: "associationsAsAttributes",
             level_three_topics: [
-              {name: "what", heading: "Associations as Attributes", priority: "3"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           },
           {
@@ -1498,37 +1503,37 @@
           {
             name: "classLevelMembers",
             level_three_topics: [
-              {name: "what", heading: "Class-Level Members", priority: "3"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           },
           {
             name: "associationClasses",
             level_three_topics: [
-              {name: "what", heading: "Association Classes", priority: "4"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
             name: "composition",
             level_three_topics: [
-              {name: "what", heading: "Composition", priority: "2"}
+              {name: "what", heading: "What", priority: "2"}
             ]
           },
           {
             name: "aggregation",
             level_three_topics: [
-              {name: "what", heading: "Aggregation", priority: "3"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           },
           {
             name: "classInheritance",
             level_three_topics: [
-              {name: "what", heading: "Inheritance", priority: "2"}
+              {name: "what", heading: "What", priority: "2"}
             ]
           },
           {
             name: "interfaces",
             level_three_topics: [
-              {name: "what", heading: "Interfaces", priority: "2"}
+              {name: "what", heading: "What", priority: "2"}
             ]
           },
           {
@@ -1539,6 +1544,7 @@
           },
           {
             name: "combine",
+            priority: "4",
             level_three_topics: [
               {name: "basic", heading: "Basic", priority: "2"}
             ]
@@ -1574,7 +1580,7 @@
             level_three_topics: [
               {name: "introduction", heading: "Introduction", priority: "1"},
               {name: "objects", heading: "Objects", priority: "1"},
-              {name: "associations", heading: "What", priority: "1"}
+              {name: "associations", heading: "Associations", priority: "1"}
             ]
           }
         ]
@@ -1585,7 +1591,7 @@
           {
             name: "introduction",
             level_three_topics: [
-              {name: "what", heading: "Introduction", priority: "1"}
+              {name: "what", heading: "What", priority: "1"}
             ]
           },
           {
@@ -1628,6 +1634,7 @@
   intellij : {
     name: "intellij",
     heading: "Intellij IDEA",
+    priority: "4",
     level_one_topics: [
       {
         name: "",
@@ -1916,7 +1923,8 @@
               {name: "fileAccess", heading: "File Access", priority: "0:3"},
               {name: "accessModifiers", heading: "Access Modifiers", priority: "0:1"},
               {name: "constants", heading: "Constants", priority: "0:1"},
-              {name: "casting", heading: "Casting", priority: "0:1"}
+              {name: "casting", heading: "Casting", priority: "0:1"},
+              {name: "jar", heading: "JAR Files", priority: "0:3"}
             ]
           }
         ]
@@ -1933,9 +1941,9 @@
   {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
   {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]},
   {heading: "Project Management", chapters: [chapters.revisionControl, chapters.projectPlanning, chapters.teamwork, chapters.processModels]},
-  {heading: "Tools", chapters: [chapters.uml, chapters.intellij, chapters.gitAndGithub, chapters.javaTools, chapters.junit]},
-  {heading: "Principles", chapters: [chapters.principles]}
-  ] 
+  {heading: "Principles", chapters: [chapters.principles]},
+  {heading: "Tools", chapters: [chapters.uml, chapters.intellij, chapters.gitAndGithub, chapters.javaTools, chapters.junit]}
+  ]
 %}
 
 {% set definitions = [
