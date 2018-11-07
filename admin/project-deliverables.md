@@ -124,9 +124,9 @@ At the end of the project each student is required to submit a _Project Portfoli
 ### Deliverable: Demo
 <span id="project-deliverables-demo">
 
-* **Duration:** Strictly 18 minutes for a 5-person team and 15 minutes for a 4-person team. Exceeding this limit will be penalized.
+* **Duration:** Strictly 18 minutes for a 5-person team and 15 minutes for a 4-person team. Exceeding this limit will be penalized. Any set up time will be taken out of your allocated time.
 
-* **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed but they are familiar with the AddressBook-level4 (AB4) product.
+* **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed but they are familiar with the AddressBook-level4 (AB4) product. The actual audience are the evaluators (the team supervisor and another tutor).
 
 * **Scope**: 
   * **Each person should demo the enhancements they added**. However, it's ok for one member to do all the typing.
@@ -134,6 +134,8 @@ At the end of the project each student is required to submit a _Project Portfoli
   * It is recommended you showcase how the feature improves the user’s life rather than simply describe each feature.
   * No need to cover design/implementation details as the manager is not interested in those details.
   * Mention features you inherited from AB4 only if they are needed to explain your new features. %%&nbsp;Reason: existing features will not earn you marks, and the audience is already familiar with AB4 features.%%
+  * Each person should demo their ==main feature only==. You are free to 'tie-in' other work under the main feature, but anything that cannot be tied-in to the main feature should be omitted from the demo (as those are not graded, showing them to the evaluators will only make the evaluation harder). For similar reasons, ==do not demo GUI inputs== (but you can demo GUI outputs).
+   * We recommend each person to ==start by giving an overview of the main feature== before going into the details. That the evaluator informed of your main feature from the very start.
 
 * **Structure:**  
   * Demo the product using the same executable you submitted, on your own laptop, using the TV.  
@@ -150,7 +152,11 @@ At the end of the project each student is required to submit a _Project Portfoli
   * Rehearse the steps well and ensure you can do a smooth demo. Poor quality demos can affect your grade.
   * Don’t waste time repeating things the target audience already knows. e.g. no need to say things like "We are students from NUS, SoC". 
   * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
-  * Limit the demo to CLI inputs only. Do not explain GUI inputs because they don't earn marks.
+
+* **Special circumstances:**
+  * If your main feature was not merged on time: inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.
+  * If you have no user visible features to show, you can still contribute to the demo by giving an overvie of the product (at the start) and/or giving a wrap of of the product (at the end).
+  * If you are unable to come to the demo due to a valid reason, you can ask a team member to demo your feature. Remember to submit the evidence of your excuse %%e.g., MC%% to prof. The demo is part of module assessment and ==absence without a valid reason== will cause you to lose marks.
 
 </span>
 
