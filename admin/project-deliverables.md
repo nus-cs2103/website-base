@@ -293,11 +293,10 @@ At the end of the project each student is required to submit a _Project Portfoli
      * `low`: Hard to understand, often inaccurate or missing important information.
      * `medium`: Needs some effort to understand; some information is missing.
      * `high`: Mostly easy to follow. Only a few areas need improvements.
-     * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).
+     * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either). Understandable to the target end user.
 
    * **C. Quality of developer docs** [{{ icon_individual }}]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.==
      * `unable to judge`: One of these
-       * no content at all.
        * less than 0.5 pages worth of content.
        * other problems in the document %%&nbsp;e.g. looks like included wrong content%%.
      * `low`: One of these
@@ -320,14 +319,14 @@ At the end of the project each student is required to submit a _Project Portfoli
 
    * **E. Amount of work** [{{ icon_individual }}]:  Evaluate the amount of work, on a scale of 0 to 30.
      * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
-     * Consider ==the _main feature_ only==. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.
+     * Consider ==the _main feature_ only==. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best-guess judgement call based on the available info.
      * {{ icon_important_big_red }} Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
 
 **Bug Review Period**:
 
 There will be a review period for you to respond to the [bug reports]({{module_org}}/pe-results/issues) you received.
 
-Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Wednesday midnight**. 
+Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Wednesday midnight**. However, you are required to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
@@ -339,7 +338,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 * **Do not edit the subject or the description. Do not close bug reports.** Your response (if any) should be added as a comment.
 
-* **If the bug is reported multiple times**, mark all copies EXCEPT one as duplicates using the `duplicate` tag (if the duplicates have different severity levels, you should ==keep the one with the highest severity==). In addition, use [this technique](https://help.github.com/articles/about-duplicate-issues-and-pull-requests/) to indicate which issue they are duplicates of.  Duplicates can be omitted from processing steps given below.
+* **If the bug is reported multiple times**, mark all copies EXCEPT one as duplicates using the `duplicate` tag (if the duplicates have different severity levels, you should ==keep the one with the highest severity==). In addition, ==use [this technique](https://help.github.com/articles/about-duplicate-issues-and-pull-requests/) to indicate which issue they are duplicates of==.  Duplicates can be omitted from processing steps given below.
 
 * **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know (email prof).
 
