@@ -72,12 +72,13 @@ Based on: 1. your test code 2. our own manual testing 3. your performance in the
 
 <panel header="4. **Documentation** %%[{{ icon_individual }} 10 marks]%%" expanded>
 
-Evaluates: How well does your user guide achieves its objectives? 
+Evaluates: How good are the sections you wrote for the user guide and the developer guide?
 
 Based on: the relevant sections of your project portfolio. Criteria considered:
 * Explanation should be clear and written to match the audience.
 * Good use of visuals to complement text.
-    
+* Use of correct UML notations (where applicable)
+
 </panel>
   
 <panel header="5. **Project management** %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%" expanded>
@@ -89,7 +90,7 @@ Evaluates: How well you did in project management related aspects of the project
 
 Based on: Supervisor observations of project milestones and GitHub data. 
  
-Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. To get a good grade for this aspect, achieve recommended weekly progress in at least 6/10 weeks.
+Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. To get a good grade for this aspect, achieve at least 60% of the recommended milestone progress.
   
 Other criteria:
 * Good use of GitHub milestones
@@ -102,7 +103,7 @@ Other criteria:
 
 **B. Team-based tasks**: 
 
-  Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat">[team-based tasks]({{baseUrl}}/admin/index-flat.html#scope-example-team-tasks)</span>
+Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat">[team-based tasks]({{baseUrl}}/admin/index-flat.html#scope-example-team-tasks)</span>
 
 Based on: peer evaluations and tutor observations
 
