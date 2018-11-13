@@ -44,9 +44,9 @@ Here is a list of main deliverables of the project; their details are given in t
 <span id="project-deliverables-dg">
 
 * The Developer Guide (DG) of the product should match the proposed v2.0 of the product and should be in sync with the current version of the product.
-* :exclamation: **The appendix named _Instructions for Manual Testing_** of the Developer Guide should include testing instructions to **cover all your major and minor enhancements**. There is no need to add testing instructions for existing features if you did not touch them.<br>
+* {{ icon_important_big_red }} **The appendix named _Instructions for Manual Testing_** of the Developer Guide should include testing instructions to **cover the main enhancement of each team member**. There is no need to add testing instructions for existing features if you did not touch them.<br>
   :bulb: What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%&nbsp;i.e. annoys the tester%%, the tester can report it as a bug %%&nbsp;(because flaws in developer docs are considered as bugs)%%.
-* Ensure the DG matches the product precisely, as it will be used by peer evaluators (and ==any inaccuracy in the content will be considered bugs==).
+* Ensure the parted DG parts included in PPPs match the product precisely, as PPPs will be used by peer evaluators (and ==any inaccuracy in the content will be considered bugs==).
     
 </span>
 
