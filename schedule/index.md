@@ -23,7 +23,7 @@ head: scheduleHead.md
 ] %}
 
 
-{% set current_weeks = ["12"] %}
+{% set current_weeks = ["13"] %}
 
 
 {% set all_outcomes = [
@@ -506,7 +506,7 @@ head: scheduleHead.md
     {heading: "Can describe a technical contribution", priority: "1", file: "project.md#mid-v14"},
 {week: "13"},
   {name: ":parking: Project"},
-    {heading: "Can acceptance-test a product", priority: "1", file: "project.md#v14"},
+    {heading: "Can system-test a product", priority: "1", file: "project.md#v14"},
     {heading: "Can evaluate a technical effort", priority: "1", file: "project.md#v14"},
     {heading: "Can demo a product", priority: "1", file: "project.md#v14"}
 ]%}
