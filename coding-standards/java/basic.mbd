@@ -1,0 +1,15 @@
+<frontmatter>
+title: "Java Coding Standard"
+footer: footer.md
+head: adminHead.md
+</frontmatter>
+
+<link rel="stylesheet" href="{{ baseUrl }}/coding-standards/basic.css">
+
+# Java Coding Standard (Basic)
+
+<include src="rules.mbdf" />
+
+
+
+

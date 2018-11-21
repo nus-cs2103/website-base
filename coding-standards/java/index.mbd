@@ -1,0 +1,13 @@
+<frontmatter>
+title: "Java Coding Standard"
+footer: footer.md
+head: adminHead.md
+</frontmatter>
+
+# Java Coding Standard
+
+<include src="rules.mbdf" />
+
+
+
+
