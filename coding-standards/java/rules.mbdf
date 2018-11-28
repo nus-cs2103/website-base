@@ -83,8 +83,8 @@ openDvdPlayer();
 
 {{ bad }}
 ```java
-exportHtmlSource();
-openDvdPlayer();
+exportHTMLSource();
+openDVDPlayer();
 ```
   </div>
 </div>
