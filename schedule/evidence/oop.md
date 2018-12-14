@@ -14,7 +14,7 @@
 
 <div id="classes_enumerations">
 
-...
+<include src="../../book/uml/classDiagrams/enumerations/what/q-essay-defineWeekDays.md" />
 
 </div>
 
