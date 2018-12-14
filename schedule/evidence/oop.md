@@ -1,20 +1,20 @@
 <div id="objects_what">
 
-<include src="../../book/oop/objects/what/q-essay-describeObjectInScenario.md" />
+...
 
 </div>
 
 
 <div id="classes_what">
 
-<include src="../../book/oop/classes/what/q-essay-identifyClassesAndObjects.md" />
+...
 
 </div>
 
 
 <div id="classes_enumerations">
 
-<include src="../../book/oop/classes/enumerations/q-essay-defineWeekDays.md" />
+...
 
 </div>
 
