@@ -569,38 +569,38 @@ head: scheduleHead.md
 
 
 {% macro show_week_schedule(week_num, path="") %}
-{{ show_week_todos(week_num, path) }}
 
-{# omit outcomes if it is the first week #}
-{% if week_num != "1" %} 
-  {{ show_week_outcomes(week_num, path) }}
-{% endif %}
+<include src="../../common/header.md" />
 
-{{ show_week_tutorial(week_num, path) }}
-{{ show_week_lecture(week_num, path) }}
+<div class="website-content" id="main">
+
+{{ show_week_schedule_body(week_num, path) }}
+
+</div>
 
 {% endmacro %}
 
 
-{% macro show_past_week(week) %}
-<panel type="seamless" src="week{{ week.num }}/index.md" no-close>
-<span slot="header" class="card-title week-past"> Week {{ week.num }} [{{ week.day }}]</span>
-</panel>
+{% macro show_week_schedule_body(week_num, path="") %}
+
+# Week {{ week_num }}
+
+<tabs>
+  <tab header="{{ icon_outcome }} Topics">
+    <include src="{{ path }}outcomes.md" />
+  </tab>
+  <tab header="{{ icon_tutorial }} Tutorial">
+    <include src="{{ path }}tutorial.md" active />
+  </tab>
+  <tab header="{{ icon_todo }} Todo">
+    <include src="{{ path }}todo.md" />
+  </tab>
+</tabs>
+
 {% endmacro %}
 
 
-{% macro show_future_week(week) %}
-<panel type="seamless" src="week{{ week.num }}/index.md" no-close>
-<span slot="header" class="card-title week-future"> Week {{ week.num }} [{{ week.day }}]</span>
-</panel>
-{% endmacro %}
 
-
-{% macro show_current_week(week) %}
-<panel type="seamless" src="week{{ week.num }}/index.md" no-close>
-<span slot="header" class="card-title week"> Week {{ week.num }} [{{ week.day }}]</span>
-</panel>
-{% endmacro %}
 
 <!-- ============================= page content ============================================ -->
 
@@ -608,24 +608,11 @@ head: scheduleHead.md
 
 <div class="website-content" id="main">
 
-# Full Schedule of Module Activities
-
-<panel src="overview/index.md" header=":exclamation: **Info relevant to all weeks**"  />
-<panel src="../admin/tutorials.md#tutorialTimetable" header="**{{glyphicon_calendar}} Tutorial Timetable**" />
-
-<p/>
-
 {% for week in weeks %}
-{% set current_week_num = current_weeks[0] | int %}
 {% set week_num = week.num | int %}
-{% if week.num in current_weeks %} 
-  {{ show_current_week(week) }}
-{% elseif week_num < current_week_num %}
-  {{ show_past_week(week) }}
-{% else %}
-  {{ show_future_week(week) }}
+{% if week.num in current_weeks %}
+  {{ show_week_schedule_body(week.num, "week" + week_num + "/") }}
 {% endif %}
 {% endfor %}
-
 
 </div>

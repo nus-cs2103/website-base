@@ -1,0 +1,1 @@
+No topics are allocated to week 1 as our lecture falls on the Friday.

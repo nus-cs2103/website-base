@@ -1,10 +1,10 @@
 <navbar placement="top" type="inverse">
   <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">{{ module_pair }} <small>{{ period }}</small></a>
-  <dropdown text="Nested" class="nav-link">
-    <li><a href="{{baseUrl}}/index.html" class="dropdown-item"> {{ icon_tick }} Nested (current format)</a></li>
-    <li><a href="{{baseUrl}}/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
+  <dropdown text="Schedule" class="nav-link">
+{% for week_num in [1, 2, 3,4, 5, 6, 7, 8, 9, 10, 11, 12, 13] %}
+  <li><a href="{{ baseUrl }}/schedule/week{{ week_num }}/index.html" class="dropdown-item"> Week {{ week_num }}</a></li>
+{% endfor %}
   </dropdown>
-  <li><a href="{{baseUrl}}/index.html" class="nav-link"><md>**Schedule**</md></a></li>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" target="_blank" class="nav-link"><md>**Textbook**</md></a></li>
   <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
   <dropdown text="Links" class="nav-link">

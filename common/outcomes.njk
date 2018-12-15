@@ -86,16 +86,9 @@
 {% endif %}
 {% set panel_decorations = "no-switch" if is_flat else "" %}
 {% set panel_expandable = "false" if is_flat else "true" %}
-<panel type="{{ show_priority_style(priority) }}" expanded no-close {{ panel_decorations }} epxandable="{{ panel_expandable }}">
-<span slot="header" class="card-title"><md><big><span class='badge badge-pill badge-light'>`{{ id_prefix }}`</span></big> <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#outcomes" inline/> {{ show_stars(priority) }}</md></span>
-  <include src="{{ path_displacement }}../../book/{{ full_path }}/unit-inElsewhere-asFlat.md" boilerplate />
-  {% if unit.omit_evidence %}
-    {# no need to show evidence #}
-  {% elseif unit.evidence %}
-{{ show_specific_evidence(unit.evidence, path_displacement) }}
-  {% else %}
-{{ show_default_evidence(chapter, path, path_displacement) }}
-  {% endif %}
+<panel type="seamless" expanded>
+<span slot="header" class="card-title"><md><span class='badge badge-pill badge-light'>%%[{{ id_prefix }}]%%</span> %%**<include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />**%% **<big><big><include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline /></big></big>**</md> {{ show_stars(priority) }}</span>
+  <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
 {% endmacro %}
 
@@ -146,8 +139,9 @@
 {% set letter_index = 0 %}
 {% set panel_decorations = "expanded no-switch" if params.is_flat else "" %}
 {% set panel_expandable = "false" if params.is_flat else "true" %}
-<panel no-close {{ panel_decorations }} expandable="{{ panel_expandable }}">
-<span slot="header" class="card-title"><md>`{{ prefix | trim }}` **{{ params.outcome.heading }}** {{ show_stars(priority) }}</md> </span>
+<panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}">
+<span slot="header" class="card-title"><markdown><big> %%[{{ prefix | trim }}]%% <big><big>**{{ params.outcome.heading }}**</big></big></big> {{ show_stars(priority) }}</markdown> </span>
+<div class="indented-level1">
 {% if params.outcome.file %}
   <include src="{{ params.path_displacement }}../evidence/{{ params.outcome.file }}" />
 {% else %}
@@ -160,13 +154,12 @@
     {% endif %}
   {% endfor %}
 {% endif %}
+</div>
 </panel>
 {% endmacro %}
 
 
 {% macro show_outcome_group(entries, params={name: "n/a", week_num: "n/a", starting_index: "n/a", is_flat: false}) %}
-<span class="activity-desc">{{ params.name }}</span>
-<div class="indented">
 {% set  outcome_number = params.starting_index | int %}
 {% for entry in entries  %}
   {% if entry.heading %}
@@ -174,7 +167,6 @@
 {% set  outcome_number = outcome_number + 1 %}
   {% endif %}
 {% endfor %}
-</div>
 <p/>
 {% endmacro %}
 
@@ -214,8 +206,6 @@ head: scheduleHead.md
 </frontmatter>
 
 <div class="website-content">
-
-## Week {{ week_num }} - Outcomes
 
 <div id="main">
 

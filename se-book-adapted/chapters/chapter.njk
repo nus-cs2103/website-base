@@ -29,7 +29,7 @@ head: bookHead.md
 {% if not level_is_omitted %}
   {% if not level_is_empty %}
 <panel type="seamless" expanded>
-  <span slot="header" class="card-title"><include src="{{ level_location }}/text.md#title"/></span>
+  <span slot="header" class="card-title"><markdown>### <include src="{{ level_location }}/text.md#title" inline /></markdown></span>
   {% endif %}
     {% for sub_topic in topic.level_three_topics %}
       {% if sub_topic.priority != "-1" %}
@@ -50,7 +50,7 @@ head: bookHead.md
 {% if not level_is_omitted %}
   {% if not level_is_empty %}
 <panel type="seamless" expanded>
-  <span slot="header" class="card-title"><include src="{{ level_location }}/text.md#title" /></span>
+  <span slot="header" class="card-title"><markdown>## <include src="{{ level_location }}/text.md#title" inline /></markdown></span>
   {% endif %}
     {% for sub_topic in topic.level_two_topics %}
 {{show_level_two(level_location , sub_topic) }}
@@ -77,7 +77,7 @@ title: {{ chapter.heading }}
 %%**<include src="{{ level_location }}/../path.md" inline />**%%
 
 <div id="title">
-  <include src="{{ level_location }}/text.md#title" />
+<markdown># <include src="{{ level_location }}/text.md#title" inline /></markdown>
 </div>
 
 {% for topic in chapter.level_one_topics %}

@@ -21,7 +21,7 @@ footer: footer.md
 {% set level_is_omitted =  (topic.priority in ["-1", "4", "0"]) %}
 {% if not level_is_omitted %}
   {% if not level_is_empty %}
-<include src="{{ level_location }}/text.md#title"/>
+<markdown>### <include src="{{ level_location }}/text.md#title" inline /></markdown>
   {% endif %}
   {% for sub_topic in topic.level_three_topics %}
     {# omit if priority is 4 or 0:4  #}
@@ -41,7 +41,7 @@ footer: footer.md
 {% set level_is_omitted =  (topic.priority in ["-1", "4", "0"]) %}
 {% if not level_is_omitted %}
   {% if not level_is_empty %}
-<include src="{{ level_location }}/text.md#title" />
+<markdown>## <include src="{{ level_location }}/text.md#title" inline /></markdown>
   {% endif %}
   {% for sub_topic in topic.level_two_topics %}
 <div class="indented-less">
@@ -57,7 +57,7 @@ footer: footer.md
 {% set level_location =  book_location + chapter.name %}
 
 <div id="title">
-  <include src="{{ level_location }}/text.md#title" />
+<markdown># <include src="{{ level_location }}/text.md#title" inline /></markdown>
 </div>
 
 {% for topic in chapter.level_one_topics %}
@@ -79,7 +79,7 @@ title: {{ chapter.heading }}
 <div class="website-content">
 
 <div id="title">
-  <include src="{{ level_location }}/text.md#title" />
+<markdown># <include src="{{ level_location }}/text.md#title" inline /></markdown>
 </div>
 
 <include src="../print.md#printable-version-description" />
