@@ -4,9 +4,9 @@
 
 <span id="module_name">Software Engineering</span>
 
-<span id="semester">AY1819S1</span>
+<span id="semester">AY1819S2</span>
 
-<span id="period">Aug '18</span>
+<span id="period">Jan '19</span>
 
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 
