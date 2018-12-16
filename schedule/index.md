@@ -574,9 +574,18 @@ head: scheduleHead.md
 
 <div class="website-content" id="main">
 
+{{ show_nav_buttons(week_num) }}
+
 {{ show_week_schedule_body(week_num, path) }}
 
 </div>
+
+{% endmacro %}
+
+
+{% macro show_nav_buttons(week_num) %}
+{% set week_num = week_num | int %}
+{% if week_num != 1 %}<span style="float:left"><md>[{{ glyphicon_chevron_left }} Previous Week]({{ baseUrl }}/schedule/week{{ (week_num - 1) }}/)</md></span>{% endif %}{% if week_num != 13 %}<span style="float:right"><md>[Next Week {{ glyphicon_chevron_right }}]({{ baseUrl }}/schedule/week{{ (week_num + 1) }}/)</md></span>{% endif %}<br>
 
 {% endmacro %}
 
@@ -610,6 +619,8 @@ head: scheduleHead.md
 <include src="../common/header.md" />
 
 <div class="website-content" id="main">
+
+{{ show_nav_buttons(current_weeks[0]) }}
 
 {% for week in weeks %}
 {% set week_num = week.num | int %}
