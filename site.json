@@ -39,6 +39,9 @@
     {"glob": "book/combined/exercises.md"},
     {"src": "se-book-adapted/print.md",
       "searchable": "no"
+    },
+    {"glob": "book/**/index.md",
+      "searchable": "no"
     }
   ],
   "headingIndexingLevel": 5
