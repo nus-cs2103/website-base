@@ -32,7 +32,7 @@ Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]
 
 <div id="2kloc">
 
-<tip-box type="important"> 
+<tip-box type="important">
   This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
 </tip-box>
 
@@ -45,7 +45,7 @@ This LO can earn you 2 participation marks, 1 mark for the individual component 
 4. ...
 
 :bulb: Note that you can reuse the code you write here in your final project, if applicable.
- 
+
 
 #### Individual component:
 
@@ -70,6 +70,11 @@ The team component is ==to be done by all members==, including those who didn't 
 
 * **Submission**: Just update PR created in the individual component by adding comments/commits to it.
 
+</div>
+
+
+<div id="3kloc">
+...
 </div>
 
 
