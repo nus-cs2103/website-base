@@ -80,11 +80,6 @@ How AB-3 differs from AB-2:
 </div>
 
 
-<div id="3kloc">
-...
-</div>
-
-
 <div id="PR_to_AB2">
 
 **Submission**: Create a PR against [Addressbook-Level2]({{module_org}}/addressbook-level2).  ==Try to make a _clean_ PR== (i.e. free of unrelated code modifications).
