@@ -7,19 +7,19 @@ head: scheduleHead.md
 {% import "common/outcomes.njk" as outcomes with context %}
 
 {% set weeks = [
-    {num: "1", day:"Aug 13"},
-    {num: "2", day:"Aug 20"},
-    {num: "3", day:"Aug 27"}, 
-    {num: "4", day:"Sep 3"},
-    {num: "5", day: "Sep 10" },
-    {num: "6", day: "Sep 17" },
-    {num: "7", day: "Oct 1" },
-    {num: "8", day: "Oct 8" },
-    {num: "9", day: "Oct 15" },
-    {num: "10", day: "Oct 22" },
-    {num: "11", day: "Oct 29" },
-    {num: "12", day: "Nov 5" },
-    {num: "13", day: "Nov 12" }
+    {num: "1", day:"Jan 14"},
+    {num: "2", day:"Jan 21"},
+    {num: "3", day:"Jan 28"},
+    {num: "4", day:"Feb 4"},
+    {num: "5", day: "Feb 11" },
+    {num: "6", day: "Feb 18" },
+    {num: "7", day: "Mar 4" },
+    {num: "8", day: "Mar 11" },
+    {num: "9", day: "Mar 18" },
+    {num: "10", day: "Mar 25" },
+    {num: "11", day: "Apr 1" },
+    {num: "12", day: "Apr 8" },
+    {num: "13", day: "Apr 12" }
 ] %}
 
 
