@@ -362,8 +362,8 @@ Response Labels:
 <box>
 
 Bug Type Labels:
-* `type-FunctionalityBug` : the bug is a flaw in how the product works.
-* `type-DocumentationBug` : the bug is in the documentation.
+* `type.FunctionalityBug` : the bug is a flaw in how the product works.
+* `type.DocumentationBug` : the bug is in the documentation.
 
 </box>
 </div>
