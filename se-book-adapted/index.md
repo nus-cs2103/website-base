@@ -27,14 +27,14 @@
 
 {% macro show_toc() %}
 <frontmatter>
-title: "Software Engineering for Self-Directed Learners [{{ module_pair }} Version]"
+title: "Textbook"
 footer: footer.md
 siteNav: se-book-adapted-sitenav.md
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
 
-<include src="../common/header-book.md" />
+<include src="../common/header.md" />
 
 <div class="website-content" id="main">
 

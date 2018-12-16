@@ -5,7 +5,7 @@
   <li><a href="{{ baseUrl }}/schedule/week{{ week_num }}/index.html" class="dropdown-item"> Week {{ week_num }}</a></li>
 {% endfor %}
   </dropdown>
-  <li><a href="{{baseUrl}}/se-book-adapted/index.html" target="_blank" class="nav-link"><md>**Textbook**</md></a></li>
+  <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
   <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
   <dropdown text="Links" class="nav-link">
     <li><a href="{{bugs_link}}" target="_blank" class="dropdown-item"> {{ fas_bug }} Report Bugs</a></li>
