@@ -55,6 +55,7 @@
 <span id="icon_print">{{ glyphicon_print | safe }}</span>
 <span id="icon_prereq">{{ glyphicon_education | safe }}</span>
 <span id="icon_preview">{{ glyphicon_eye_open | safe }}</span>
+<span id="icon_project">{{ fas_drafting_compass | safe }}</span>
 <span id="icon_Q">{{ glyphicon_question_sign | safe }}</span>
 <span id="icon_Q_A">{{ icon_Q | safe }}{{ glyphicon_ok_sign | safe }}</span>
 <span id="icon_resource">{{ fas_paperclip | safe }}</span>

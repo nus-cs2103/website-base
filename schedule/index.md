@@ -589,6 +589,9 @@ head: scheduleHead.md
   <tab header="{{ icon_outcome }} Topics">
     <include src="{{ path }}outcomes.md" />
   </tab>
+  <tab header="{{ icon_project }} Project">
+    <include src="{{ path }}project.md" active />
+  </tab>
   <tab header="{{ icon_tutorial }} Tutorial">
     <include src="{{ path }}tutorial.md" active />
   </tab>
