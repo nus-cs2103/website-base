@@ -1,8 +1,9 @@
+{% from "schedule/index.md" import weeks, current_weeks with context %}
 <navbar placement="top" type="inverse">
   <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">{{ module_pair }} <small>{{ period }}</small></a>
   <dropdown text="Schedule" class="nav-link">
-{% for week_num in [1, 2, 3,4, 5, 6, 7, 8, 9, 10, 11, 12, 13] %}
-  <li><a href="{{ baseUrl }}/schedule/week{{ week_num }}/index.html" class="dropdown-item"> Week {{ week_num }}</a></li>
+{% for week in weeks %}
+<li><a href="{{ baseUrl }}/schedule/week{{ week.num }}/index.html" class="dropdown-item"> <md>**Week {{ week.num }}** [{{ week.day }}] {% if current_weeks[0] == week.num %} {{ fas_arrow_circle_left }}{% endif %}</md></a></li>
 {% endfor %}
   </dropdown>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
