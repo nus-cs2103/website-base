@@ -568,15 +568,18 @@ head: scheduleHead.md
 {% endmacro %}
 
 
-{% macro show_week_schedule(week_num, path="") %}
+{% macro show_week_schedule(week_num_string, path="") %}
+
+{% set week_num_int = week_num_string | int %}
+{% set week = weeks[week_num_int - 1] %}
 
 <include src="../../common/header.md" />
 
 <div class="website-content" id="main">
 
-{{ show_nav_buttons(week_num) }}
+{{ show_nav_buttons(week.num) }}
 
-{{ show_week_schedule_body(week_num, path) }}
+{{ show_week_schedule_body(week, path) }}
 
 </div>
 
@@ -590,9 +593,9 @@ head: scheduleHead.md
 {% endmacro %}
 
 
-{% macro show_week_schedule_body(week_num, path="") %}
+{% macro show_week_schedule_body(week, path="") %}
 
-# Week {{ week_num }}
+# Week {{ week.num }} <small><small>%%[{{ week.day }}]%%</small></small>
 
 <tabs>
   <tab header="{{ icon_outcome }} Topics">
@@ -625,7 +628,9 @@ head: scheduleHead.md
 {% for week in weeks %}
 {% set week_num = week.num | int %}
 {% if week.num in current_weeks %}
-  {{ show_week_schedule_body(week.num, "week" + week_num + "/") }}
+  {{ show_week_schedule_body(week, "week" + week_num + "/") }}
+<br>
+<br>
 {% endif %}
 {% endfor %}
 
