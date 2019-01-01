@@ -128,18 +128,24 @@
 {% endmacro %}
 
 
-{% macro show_outcome(entries, params={week_num: "n/a", starting_index: "n/a", outcome: "n/a", is_flat: false}) %}
+{% macro show_outcome(entries, params={week_num: "n/a", starting_index: "n/a", outcome: "n/a", is_flat: false, is_toc: false}) %}
 {% if not params.outcome.priority %}
   {% set priority = get_collective_priority(entries) | trim %}
 {% else %}
   {% set priority = params.outcome.priority %}
 {% endif %}
 {% set  prefix = "W" + params.week_num + "." + params.starting_index%}
+{% set  anchor = prefix | trim | replace(".", "-") %}
 {% set letters = "abcdefghijklmnop" | list %}
 {% set letter_index = 0 %}
 {% set panel_decorations = "expanded no-switch" if params.is_flat else "" %}
 {% set panel_expandable = "false" if params.is_flat else "true" %}
-<panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}">
+{% if params.is_toc %}
+* [[{{ prefix | trim }}] {{ params.outcome.heading }}](#{{ anchor }})
+{% else %}
+<span id="{{ anchor }}" />
+
+<panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" expanded >
 <span slot="header" class="card-title"><markdown><big> %%[{{ prefix | trim }}]%% <big><big>**{{ params.outcome.heading }}**</big></big></big> {{ show_stars(priority) }}</markdown> </span>
 <div class="indented-level1">
 {% if params.outcome.file %}
@@ -156,14 +162,15 @@
 {% endif %}
 </div>
 </panel>
+{% endif %} {# if params.is_toc #}
 {% endmacro %}
 
 
-{% macro show_outcome_group(entries, params={name: "n/a", week_num: "n/a", starting_index: "n/a", is_flat: false}) %}
+{% macro show_outcome_group(entries, params={name: "n/a", week_num: "n/a", starting_index: "n/a", is_flat: false, is_toc: false}) %}
 {% set  outcome_number = params.starting_index | int %}
 {% for entry in entries  %}
   {% if entry.heading %}
-{{ apply_to("heading", entry.heading, entries, show_outcome, {week_num: params.week_num, starting_index: outcome_number , outcome: entry, path_displacement: params.path_displacement, is_flat: params.is_flat}) }}
+{{ apply_to("heading", entry.heading, entries, show_outcome, {week_num: params.week_num, starting_index: outcome_number , outcome: entry, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
 {% set  outcome_number = outcome_number + 1 %}
   {% endif %}
 {% endfor %}
@@ -171,11 +178,11 @@
 {% endmacro %}
 
 
-{% macro show_week(entries, params={week_num: "n/a", is_flat: false}) %}
+{% macro show_week(entries, params={week_num: "n/a", is_flat: false, is_toc: false}) %}
 {% set i = 1 %}
 {% for entry in entries  %}
   {% if entry.name %}
-{{ apply_to("name", entry.name, entries, show_outcome_group, {name: entry.name, week_num: params.week_num, starting_index: i, path_displacement: params.path_displacement, is_flat: params.is_flat}) }}
+{{ apply_to("name", entry.name, entries, show_outcome_group, {name: entry.name, week_num: params.week_num, starting_index: i, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
   {% set i = i + apply_to("name", entry.name, entries, count_outcomes) | trim | int %}
   {% endif %}
 {% endfor %}
@@ -193,8 +200,8 @@
 {% endmacro %}
 
 
-{% macro show_week_schedule_main(week_num, entries, path_displacement, is_flat=false) %}
-{{ apply_to("week", week_num, entries, show_week, {week_num: week_num, path_displacement: path_displacement, is_flat: is_flat}) }}
+{% macro show_week_schedule_main(week_num, entries, path_displacement, is_flat=false, is_toc=false) %}
+{{ apply_to("week", week_num, entries, show_week, {week_num: week_num, path_displacement: path_displacement, is_flat: is_flat, is_toc: is_toc}) }}
 {% endmacro %}
 
 
@@ -208,6 +215,13 @@ head: scheduleHead.md
 <div class="website-content">
 
 <div id="main">
+
+<div class="indented">
+
+{{ show_week_schedule_main(week_num, entries, path_displacement, is_toc=true) }}
+</div>
+
+<hr style="border: 1px dotted #cccccc;" />
 
 {{ show_week_schedule_main(week_num, entries, path_displacement) }}
 
