@@ -602,10 +602,10 @@ head: scheduleHead.md
     <include src="{{ path }}outcomes.md" />
   </tab>
   <tab header="{{ icon_project }} Project">
-    <include src="{{ path }}project.md" active />
+    <include src="{{ path }}project.md" optional />
   </tab>
   <tab header="{{ icon_tutorial }} Tutorial">
-    <include src="{{ path }}tutorial.md" active />
+    <include src="{{ path }}tutorial.md" />
   </tab>
   <tab header="{{ icon_todo }} Todo">
     <include src="{{ path }}todo.md" />
