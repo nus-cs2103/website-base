@@ -141,7 +141,7 @@
 {% set panel_decorations = "expanded no-switch" if params.is_flat else "" %}
 {% set panel_expandable = "false" if params.is_flat else "true" %}
 {% if params.is_toc %}
-* [[{{ prefix | trim }}] {{ params.outcome.heading }}](#{{ anchor }})
+* [[{{ prefix | trim }}] {{ params.outcome.heading }} {{ show_stars(priority) }}](#{{ anchor }})
 {% else %}
 <span id="{{ anchor }}" />
 
