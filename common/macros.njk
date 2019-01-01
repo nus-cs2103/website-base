@@ -85,8 +85,6 @@
 
 
 {% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show, is_flat=false) %}
-<span class="activity-desc">Admin info to read:<span>
-<div class="indented">
 {% for section in sections_to_show %}
 {% if section.topic_id %}
   {% set div_to_show = section.div if section.div else "main"  %}
@@ -98,7 +96,6 @@
   {{ show_admin_policy(policies, section.policy_id, is_flat) }}
 {% endif %}
 {% endfor %}
-</div>
 {% endmacro %}
 
 {% macro embed_topic(source, title, trigger_id, level="0") %}

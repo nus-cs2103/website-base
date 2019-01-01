@@ -598,6 +598,9 @@ head: scheduleHead.md
 # Week {{ week.num }} <small><small>%%[{{ week.day }}]%%</small></small>
 
 <tabs>
+  <tab header="{{ icon_announcement }} Notices">
+    <include src="{{ path }}notices.md" optional />
+  </tab>
   <tab header="{{ icon_outcome }} Topics">
     <include src="{{ path }}outcomes.md" />
   </tab>
@@ -607,7 +610,7 @@ head: scheduleHead.md
   <tab header="{{ icon_tutorial }} Tutorial">
     <include src="{{ path }}tutorial.md" />
   </tab>
-  <tab header="{{ icon_todo }} Todo">
+  <tab header="{{ icon_info }} Admin Info">
     <include src="{{ path }}todo.md" />
   </tab>
 </tabs>
