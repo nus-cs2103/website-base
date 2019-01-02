@@ -9,16 +9,20 @@ Create a personal GitHub account if you don't have one yet.
 1. You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts. 
 2. Strongly recommended: Complete your GitHub profile. In particular,  
    * Specify your full name. 
-   * Upload a suitable profile photo (i.e. a recent photo of your face). 
+   * Upload a profile photo that matches <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.
 
    <panel type="seamless" header="%%Why am I being pushed to complete my GitHub profile?%%" >
-   
+
    The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just for the module.
-   
+
    </panel>
-   <panel src="project-deliverables.md#profile-photo" header="Admin {{ icon_embedding }} Choosing a profile photo" minimized />
-   
-   </div>
+3. ==You are discouraged from changing your GitHub username during the semester/exam/grading period== as it can cause our auto-grading scripts to miss your GitHub activities. If you do change your GitHub username during that period, please let us know immediately.
+
+<modal large title="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
+  <include src="project-deliverables.md#profile-photo"/>
+</modal>
+
+</div>
 
 <div id="git-username">
 
