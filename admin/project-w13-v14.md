@@ -19,8 +19,9 @@ Team/Individual Item | Name format | Upload to
 {{ icon_team }} Product Website | `README` page, `Ui.png`, `AboutUs` page | github.io
 {{ icon_individual }} Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[W09-1][John Doe]Portfolio.pdf%%<br>html version of PPP page on the product website | IVLE<br><br>github.io
 
-**Deadline** for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.
-
+* **Deadline** for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.<br>
+* Submit to IVLE folder we have set up, not to your project space.<br>
+  {{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.
 * {{ icon_important_big_red }} **Penalty for late submission:** ==-1 mark for each hour delayed, up to 3 hours.== Even a one-second delay is considered late, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis.
   * For submissions done via IVLE, the submission time is the timestamp shown by IVLE.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
