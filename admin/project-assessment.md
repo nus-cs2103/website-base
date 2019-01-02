@@ -71,7 +71,7 @@ Based on:
 </panel>
 
 <modal large title="Our expectations for automated testing in the project" id="modal:projectAssessmentQA-testingExpectations">
-  <include src="project-testing.mbdf#expectations"/>
+  <include src="project-scope.md#testing-expectations"/>
 </modal>
 
 <panel header="4. **Documentation** %%[{{ icon_individual }} 10 marks]%%" expanded>
