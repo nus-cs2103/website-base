@@ -245,16 +245,13 @@ At the end of the project each student is required to submit a _Project Portfoli
     * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
   * PE (at **v1.4**):
     * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
-    * Do ==_system testing only_== %%i.e., verify actual behavior against documented behavior%%. Do not do _acceptance testing_.
-
-* **What not to test**:
-  * Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) %%Reason: Only CLI-driven features can earn credit, as per given project constraints.%% Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.
-  * Omit feature that existed in AB-4.
+    * As before, do both ==system testing and acceptance testing== but give priority to system testing as system testing bugs can earn you more credit.
 
 * **These are considered _bugs_**:
   * Behavior differs from the User Guide
   * A legitimate user behavior is not handled %%e.g. incorrect commands, extra parameters%%
   * Behavior is not specified and differs from normal expectations %%e.g. error message does not match the error%%
+  * The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'
   * Problems in the User Guide e.g., missing/incorrect info
 
 * **Where to report bugs**: Post bug in the following issue trackers (==not in the team's repo==):
@@ -276,7 +273,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 * **About posting _suggestions_:**
   * PE Dry Run (at **v1.3**): You can also post suggestions on how to improve the product. :bulb: Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
-  * PE (at **v1.4**): Do not post suggestions.
+  * PE (at **v1.4**): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug.
 
 * **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch%%, you can test the _fallback_ team allocated to you. But in this case ==you must inform us immediately after the session== so that we can send your bug reports to the correct team.
 
@@ -321,7 +318,7 @@ At the end of the project each student is required to submit a _Project Portfoli
   <include src="project-deliverables.md#project-deliverables-pe-testing-intructions" />
 </div>
 
-1. **[~50 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.
+1. **[~60 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.
   
    * **A. Cohesiveness of product features** [{{ icon_team }}]: Do the features fit together and match the stated target user and the value proposition?
      * `unable to judge`: You are unable to judge this aspect for some reason.
@@ -381,7 +378,9 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 * **First, don't freak out if there are lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
 
-* **Do not edit the subject or the description. Do not close bug reports.** Your response (if any) should be added as a comment.
+* **Do not edit the subject or the description.** Your response (if any) should be added as a comment.
+
+* You may (but not required to) close the bug report after you are done processing it, as a convenient means of separating the 'processed' issues from 'not yet processed' issues.
 
 * **If the bug is reported multiple times**, mark all copies EXCEPT one as duplicates using the `duplicate` tag (if the duplicates have different severity levels, you should ==keep the one with the highest severity==). In addition, ==use [this technique](https://help.github.com/articles/about-duplicate-issues-and-pull-requests/) to indicate which issue they are duplicates of==.  Duplicates can be omitted from processing steps given below.
 
@@ -394,21 +393,24 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 Response Labels:
 * `response.Accepted`: You accept it as a bug.
+* `response.NotInScope`: It is a valid issue but not something the team should be penalized for e.g., it was not related to features delivered in v1.4.
 * `response.Rejected`: What tester treated as a bug is in fact the expected behavior. {{ icon_important_big_red }} The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can reject bugs that you inherited from AB4.
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
-* `response.IssueUnclear`: The issue description is not clear.
+* `response.IssueUnclear`: The issue description is not clear. Don't post comments asked the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymized.
 
 </box>
 </div>
 
-* If applicable, **decide the type of bug**. Bugs without `type-` are considered `type-FunctionalityBug` by default (which are liable to a heavier penalty):
+* If applicable, **decide the type of bug**. Bugs without `type.*` are considered `type.FunctionalityBug` by default (which are liable to a heavier penalty).
 
 <div class="indented">
 <box>
 
 Bug Type Labels:
-* `type.FunctionalityBug` : the bug is a flaw in how the product works.
-* `type.DocumentationBug` : the bug is in the documentation.
+* `type.FeatureFlaw`: some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for normal usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.
+* `type.FunctionalityBug`: the bug is a flaw in how the product works.
+* `type.DocTypo`: A minor spelling/grammar error in the documentation. Does not affect the user.
+* `type.DocumentationBug`: A flaw in the documentation that can potentially affect the user %%e.g., a missing step, a wrong instruction%%
 
 </box>
 </div>
@@ -420,8 +422,11 @@ Bug Type Labels:
 </div>
 
 * **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.**
+ * We recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, even if the bug was caused indirectly by someone else. Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
 
 * **Add an explanatory comment** explaining your choice of labels and assignees.
+
+* We recommend choosing `type.*`, `severity.*` and assignee even for bugs you are not accepting. Reason: your _non-acceptance_ may be rejected by the tutor later, in which case we need to grade it as an accepted bug.
 
 </tip-box>
 
