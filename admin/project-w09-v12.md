@@ -31,7 +31,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 ### v1.2 Product
 
-* {{ icon_individual }} Merge some code into the `master` branch of your team repo.
+* {{ icon_individual }} Merge some code into the `master` branch of your team repo. ==This is expected to be a user-visible enhancement.==
 
 ### v1.2 Documentation
 
