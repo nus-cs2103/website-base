@@ -55,7 +55,50 @@ Here is a list of main deliverables of the project; their details are given in t
 <span id="project-deliverables-website">
 
 * Include an updated version of the online UG and DG that match v1.4 executable
-* README : ==Ensure the `Ui.png` matches the current product==
+* README :
+  * ==Ensure the `Ui.png` matches the current product==
+<div class="indented-level3" id="tips-for-product-screenshot">
+
+<box>
+
+:bulb: **Some common sense tips for a good product screenshot**
+
+`Ui.png` represents your product in its full glory.
+* Before taking the screenshot, populate the product with data that makes the product look good. For example, if the product is supposed to show photos, use real photos instead of dummy placeholders.
+* It should show a state in which the product is well-populated %%i.e., don't leave data panels largely blank%%
+* Choose a state that showcase the main features of the product %%i.e., the login screen is not usually a good choice%%
+* Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is being in use for real.
+
+<panel type="seamless" header="Examples">
+
+<tabs>
+  <tab header="Not Good">
+
+   <img src="{{ baseUrl }}/admin/images/Ui-notGood1.png" width="600" />
+
+  </tab>
+  <tab header="Not Good">
+
+   <img src="{{ baseUrl }}/admin/images/Ui-notGood2.png" width="600" />
+
+  </tab>
+  <tab header="Good">
+
+   <img src="{{ baseUrl }}/admin/images/Ui-good1.png" width="600" />
+
+  </tab>
+  <tab header="Good">
+
+   <img src="{{ baseUrl }}/admin/images/Ui-good2.png" width="600" />
+
+</tab>
+</tabs>
+
+</panel>
+
+</box>
+</div>
+
 * AboutUs : Ensure the following:
   * Use a suitable profile photo
 <div id="profile-photo" class="indented-level2">
