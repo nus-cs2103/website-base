@@ -105,13 +105,13 @@ Other criteria:
 * Good use of buffers %%(opposite: everything at the last minute)%%
 * Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%% 
 
-**B. Team-based tasks**: 
+**B. Team-tasks**:
 
-Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat">[team-based tasks]({{baseUrl}}/admin/index-flat.html#scope-example-team-tasks)</span>
+Evaluates: How much did you contribute to team-tasks?
 
 Based on: peer evaluations and tutor observations
 
-{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " Project Scope → Examples of team tasks", "projectAssessment-exmapleTeamTasks", "3") }}
+{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " Project Scope → Examples of team-tasks", "projectAssessment-exmapleTeamTasks", "3") }}
 
 </div>
 </panel>

@@ -44,7 +44,7 @@ Here is a list of main deliverables of the project; their details are given in t
 <span id="project-deliverables-dg">
 
 * The Developer Guide (DG) of the product should match the proposed v2.0 of the product and should be in sync with the current version of the product.
-* {{ icon_important_big_red }} **The appendix named _Instructions for Manual Testing_** of the Developer Guide should include testing instructions to **cover the main enhancement of each team member**. There is no need to add testing instructions for existing features if you did not touch them.<br>
+* {{ icon_important_big_red }} **The appendix named _Instructions for Manual Testing_** of the Developer Guide should include testing instructions to **cover the features of each team member**. There is no need to add testing instructions for existing features if you did not touch them.<br>
   :bulb: What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%&nbsp;i.e. annoys the tester%%, the tester can report it as a bug %%&nbsp;(because flaws in developer docs are considered as bugs)%%.
 * Ensure the parted DG parts included in PPPs match the product precisely, as PPPs will be used by peer evaluators (and ==any inaccuracy in the content will be considered bugs==).
     
@@ -88,9 +88,8 @@ At the end of the project each student is required to submit a _Project Portfoli
   * **Overview**: A short overview of your product to provide some context to the reader.
   * **Summary of Contributions**:
     * **Code contributed**: Give a link to your code on [Project Code Dashboard](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard), which should be `https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard/#=undefined&search=githbub_username_in_lower_case` (==replace `githbub_username_in_lower_case` with your actual username== in lower case e.g., `johndoe`). This link is also available in the [Project List Page]({{baseUrl}}/admin/projectList.html) -- linked to the {{ fas_code }} icon under your photo.
-    * **Main feature implemented:** A summary of the main feature (the so called _major enhancement_) you implemented
+    * **Features implemented:** A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.
     * **Other contributions:**
-      * Other _minor_ enhancements you did which are not related to your _main_ feature
       * Contributions to project management %%e.g., setting up project tools, managing releases, managing issue tracker etc.%%
       * Evidence of helping others %%e.g. responses you posted in our forum, bugs you reported in other team's products%%,
       * Evidence of technical leadership %%e.g. sharing useful information in the forum%%
@@ -103,9 +102,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 * **Format**:
   * File name: `docs/team/githbub_username_in_lower_case.adoc` e.g., `docs/team/johndoe.adoc`
-  * {{ icon_example }} Follow the [example in the AddressBook-Level4](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html), but ignore the following two lines in it.<br>
-      >* **Minor enhancement:** added a history command that allows the user to navigate to previous commands using up/down keys.
-      >* **Code contributed:** [[Functional code]()] [[Test code]()] _{give links to collated code files}_
+  * {{ icon_example }} Follow the [example in the AddressBook-Level4](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html)
 
   * :bulb: You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/team/johndoe.html).
 
@@ -134,8 +131,7 @@ At the end of the project each student is required to submit a _Project Portfoli
   * It is recommended you showcase how the feature improves the user’s life rather than simply describe each feature.
   * No need to cover design/implementation details as the manager is not interested in those details.
   * Mention features you inherited from AB4 only if they are needed to explain your new features. %%&nbsp;Reason: existing features will not earn you marks, and the audience is already familiar with AB4 features.%%
-  * Each person should demo their ==main feature only==. You are free to 'tie-in' other work under the main feature, but anything that cannot be tied-in to the main feature should be omitted from the demo (as those are not graded, showing them to the evaluators will only make the evaluation harder). For similar reasons, ==do not demo GUI inputs== (but you can demo GUI outputs).
-   * We recommend each person to ==start by giving an overview of the main feature== before going into the details. That the evaluator informed of your main feature from the very start.
+  * Each person should demo their features.
 
 * **Structure:**  
   * Demo the product using the same executable you submitted, on your own laptop, using the TV.  
@@ -154,8 +150,8 @@ At the end of the project each student is required to submit a _Project Portfoli
   * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
 
 * **Special circumstances:**
-  * If your main feature was not merged on time: inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.
-  * If you have no user visible features to show, you can still contribute to the demo by giving an overvie of the product (at the start) and/or giving a wrap of of the product (at the end).
+  * If a significant feature was not merged on time: inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.
+  * If you have no user visible features to show, you can still contribute to the demo by giving an overview of the product (at the start) and/or giving a wrap of of the product (at the end).
   * If you are unable to come to the demo due to a valid reason, you can ask a team member to demo your feature. Remember to submit the evidence of your excuse %%e.g., MC%% to prof. The demo is part of module assessment and ==absence without a valid reason== will cause you to lose marks.
 
 </span>
@@ -308,7 +304,7 @@ At the end of the project each student is required to submit a _Project Portfoli
      * `high`: Enough diagrams (at lest two kinds of UML diagrams used) and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.
      * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.
 
-   * **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+   * **D. Depth of feature** [{{ icon_individual }}]: Evaluate the biggest feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
      * `unable to judge`: You are unable to judge this aspect for some reason.
      * `low` : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
      * `medium` : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
@@ -319,7 +315,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
    * **E. Amount of work** [{{ icon_individual }}]:  Evaluate the amount of work, on a scale of 0 to 30.
      * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
-     * Consider ==the _main feature_ only==. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best-guess judgement call based on the available info.
+     * Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.
      * {{ icon_important_big_red }} Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
 
 #### Processing PE Bug Reports:
