@@ -61,14 +61,18 @@ Based on: an inspection of the parts of the code you claim as written by you.
 
 Evaluates: How good is your Quality Assurance? 
 
-Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 [Practical Exam]({{baseUrl}}/admin/index-flat.html#deliverable-practical-exam), 4. bugs found during PE.
+Based on:
+1. **bugs you found** in the v1.4 [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable%3A-practical-exam)
+1. **bugs in your work** found by others during the PE
+1. **testability of your feature** %%(you will lose marks if testers feel that your feature is hard to test manually)%%
+1. **your test code** %%(you will lose marks if you don't meet <trigger trigger="click" for="modal:projectAssessmentQA-testingExpectations">our expectations for automated testing</trigger>)%%
+1. our own manual testing (when necessary)
 
-{{ embed_topic("project-deliverables.md#project-deliverables-practicalexam", "Admin " + icon_embedding + " Deliverables → Practical Exam", "projectAssessment-Pe", "3") }}
-<panel type="seamless" header="Expectations for writing automated tests:" expanded>
-  <include src="project-testing.mbdf#expectations"/>
 </panel>
-  
-</panel>
+
+<modal large title="Our expectations for automated testing in the project" id="modal:projectAssessmentQA-testingExpectations">
+  <include src="project-testing.mbdf#expectations"/>
+</modal>
 
 <panel header="4. **Documentation** %%[{{ icon_individual }} 10 marks]%%" expanded>
 
