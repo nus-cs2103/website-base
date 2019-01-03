@@ -22,7 +22,11 @@ Team/Individual Item | Name format | Upload to
 * **Deadline** for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.<br>
 * Submit to IVLE folder we have set up, not to your project space.<br>
   {{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.
-* {{ icon_important_big_red }} **Penalty for late submission:** ==-1 mark for each hour delayed, up to 3 hours.== Even a one-second delay is considered late, irrespective of the reason. Penalty for delays beyond 3 hours are determined on a case by case basis.
+* {{ icon_important_big_red }} **Penalty for late submission:**<br>
+  ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
+  -2 for an _extended delay_ (up to 24 hours late).<br>
+  Penalty for delays beyond 24 hours is determined on a case by case basis.
+  * Even a one-second delay is considered late, irrespective of the reason.
   * For submissions done via IVLE, the submission time is the timestamp shown by IVLE.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
 * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions. 
