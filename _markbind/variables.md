@@ -22,9 +22,9 @@
 
 <span id="forum_link">{{ module_org | safe }}/forum/issues</span>
 
-<span id="admin_link"><span class="flat"><md>[Admin Info page]({{baseUrl}}/admin/index-flat.html)</md></span><span class="nested"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span></span>
+<span id="admin_link"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span>
 
-<span id="schedule_link"><span class="flat"><md>[Schedule page]({{baseUrl}}/index-flat.html)</md></span><span class="nested"><md>[Schedule page]({{baseUrl}}/index.html)</md></span></span>
+<span id="schedule_link"><md>[Schedule page]({{baseUrl}}/index.html)</md></span>
 
 <span id="slack_team">https://nus-{{ module | lower }}-{{ semester | lower }}.slack.com</span>
 

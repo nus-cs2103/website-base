@@ -562,7 +562,7 @@ head: scheduleHead.md
     <include src="{{ path }}project.md" optional />
   </tab>
   <tab header="{{ icon_tutorial }} Tutorial">
-    <include src="{{ path }}tutorial.md" />
+    <include src="tutorial-{{ module | lower }}.md" optional />
   </tab>
   <tab header="{{ icon_info }} Admin Info">
     <include src="{{ path }}todo.md" />

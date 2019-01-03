@@ -14,11 +14,6 @@
   ],
   "pages": [
     {"glob": "index.md"},
-    {"glob": "index-flat.md",
-      "searchable": "no"},
-    {"src": "admin/index-flat.md",
-      "searchable": "no"
-    },
     {"glob": "admin/*.md"},
     {"glob": "admin/gradeBreakdown.md"},
     {"glob": "schedule/index.md",
@@ -30,8 +25,6 @@
     {"glob": "coding-standards/**/*.mbd"},
     {"glob": "book/about/acknowledgements.md"},
     {"glob": "se-book-adapted/index.md"},
-    {"glob": "se-book-adapted/index-flat.md",
-      "searchable": "no"},
     {"glob": "se-book-adapted/chapters/*.md"},
     {"glob": "se-book-adapted/chapters-printable/*.md",
       "searchable": "no"
