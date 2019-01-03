@@ -599,7 +599,7 @@ head: scheduleHead.md
 
 <tabs>
   <tab header="{{ icon_announcement }} Notices">
-    <include src="{{ path }}notices.md" optional />
+    <include src="{{ path }}notices-{{ module | lower }}.md" optional />
   </tab>
   <tab header="{{ icon_outcome }} Topics">
     <include src="{{ path }}outcomes.md" />
