@@ -1,6 +1,6 @@
 <div id="additional">
 
-%%Given below are some module _admin info_ to read around this time:%%
+%%Admin info relevant to the week's will appear in this tab.%%
 
 <panel type="danger" header="**Admin {{icon_embedding }} Using this website [essential info]** {{ glyphicon_star }}" expandable>
   <include src="../../admin/usingThisWebsite.md#essential"/>

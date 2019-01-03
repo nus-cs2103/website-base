@@ -10,6 +10,8 @@
 
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 
+<span id="module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/{{ module | lower }}-website</span>
+
 <span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vSMEFXr-yL298GPeuNxkC7m87bYqi4KTWo7zZRtDXLCIIhb0osxn5aM3gVk6DCOC6pEu5nMw7Gf1YwJ/pub?embed=true</span>
 
 <span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true</span>
