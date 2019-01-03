@@ -45,7 +45,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 1. Fork the repo to your personal GitHub account, if you haven't done so already.
 
-2. Create a branch named after the LO ID e.g. `W2.2b`
+2. Create a branch named after the topic ID e.g. `W2.2b`
     ==Remember to switch to master branch before creating the new branch.==
     
 3. Commit your changes to that branch. Push to your fork.

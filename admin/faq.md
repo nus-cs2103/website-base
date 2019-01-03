@@ -123,7 +123,7 @@ Pedagogical reasons:
 
 Practical reasons:
 
-* Some of the LOs are tightly coupled to tools. Allowing more tools means tutors need to learn more tools, which increases their workload.
+* Some of the topics are tightly coupled to tools. Allowing more tools means tutors need to learn more tools, which increases their workload.
 * We provide learning resources for tools. e.g. 'Git guides'. Allowing more tools means we need to produce more resources.
 * When all students use the same tool, the collective expertise of the tool is more, increasing the opportunities for you to learn from each others.
 

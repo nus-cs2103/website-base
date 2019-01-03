@@ -22,7 +22,7 @@ Suggested question to discuss during tutorial:
 
 <div id="followStandard_intermediate">
 
-Similar to the LO <trigger trigger="click" for="modal:evidenceCodeQuality-followStandardBasic">Can follow simple mechanical style rules</trigger>, but also fix violations of _intermediate_ style rules.
+Similar to the topic on <trigger trigger="click" for="modal:evidenceCodeQuality-followStandardBasic">Coding Standard (Basic)</trigger>, but also fix violations of _intermediate_ style rules.
 
 <modal large title="Evidence for LO: Can follow simple mechanical style rules" id="modal:evidenceCodeQuality-followStandardBasic">
   <include src="codeQuality.md#followStandard_basic"/>
@@ -44,7 +44,7 @@ Evidence of applying these guidelines to some code (e.g. to addressbook-level1).
 
 <div id="maximiseReadability_intermediate">
 
-Similar to the above LO [Can follow basic guidelines for improving readability]
+Similar to the above topic [Can follow basic guidelines for improving readability]
 
 In particular, try the exercise in [addressbook-level1 [LO-MethodAbstraction]]({{module_org}}/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#abstract-methods-well-code-lo-methodabstraction-code)
 
@@ -53,6 +53,6 @@ In particular, try the exercise in [addressbook-level1 [LO-MethodAbstraction]]({
 
 <div id="maximiseReadability_advanced">
 
-Similar to the above LO [Can follow basic guidelines for improving readability]
+Similar to the above topic [Can follow basic guidelines for improving readability]
 
 </div>

@@ -3,7 +3,7 @@
 
 This module is organized primarily around a list of Learning Outcomes.
 
-Each week has a suggested list of LOs. They are categorized using a star-rating system.
+Each week has a suggested list of topics. They are categorized using a star-rating system.
 
 {{ embed_topic("moduleExpectations.md#starRatingSystem", "Admin " + icon_embedding + " Module Expectations → Star Rating System", "learningOutcomes-starRatingSystem") }}
 

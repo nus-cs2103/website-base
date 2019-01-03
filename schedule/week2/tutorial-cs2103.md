@@ -10,9 +10,9 @@
 
 <br/>
 
-<big>****Show evidence of weekly learning outcomes****</big>
+<big>****Show evidence of learning the topics assigned for the week****</big>
 
-* Starting with learning outcomes at {{ macros.show_stars("1") }} level, share/discuss/demo evidence of (as directed by the tutor) weekly learning outcomes.
+* Starting with topics at {{ macros.show_stars("1") }} level, share/discuss/demo evidence of (as directed by the tutor) weekly topics.
 
 * Suggested minimal achievements for the tutorial:
   * Set up AddressBook-level1 in Intellij

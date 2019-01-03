@@ -6,5 +6,5 @@ Therefore, we **strongly encourage you to achieve the `W4.1 Can create PRs on Gi
 </tip-box>
 
 
-* As before, demo/discuss evidence of achieving LOs as directed by the tutor.
+* As before, demo/discuss evidence of learning the topics as directed by the tutor.
 

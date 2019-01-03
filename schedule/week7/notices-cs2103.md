@@ -1,6 +1,6 @@
-**The [Project List Page]({{ module_website }}/admin/projectList.html) will be up this week.
+* The [Project List Page]({{ module_website }}/admin/projectList.html) will be up this week.
 
-**If your photo or your UI mockup does not appear in the page**, you have not followed our instructions correctly. As you can see, 'close enough' is sometimes not 'good enough'. Please rectify before v1.1 deadline. In particular,
+**If your photo or your UI mock-up does not appear in the page**, you have not followed our instructions correctly. 'Close enough' is sometimes not 'good enough'. Please rectify before v1.1 deadline. In particular,
   * Please **follow our guidelines for your photo**. If not, the photo will not serve its intended purpose (i.e., for others to identify you).
   * Please **limit the `Ui.png` to one screenshot only**, so that your UI mockup takes roughly the same amount of space as other teams' in the Teams Page.
 

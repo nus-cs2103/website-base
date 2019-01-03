@@ -8,6 +8,10 @@ There are 30+ available points to choose from:
 * <tooltip content="No `Below Average`/`Poor` ratings">Good peer ratings</tooltip>
   * Criteria for professional conduct (1 point for each criterion, max 7)
   * Competency criteria (2 points for each, max 6)
+  <box type="warning">
+
+  Only those who submit peer evaluations can earn participation points from peer evaluations they receive.
+  </box>
 * In-lecture quizzes (1 each, max 10 points)
 * Module admin tasks done _on time_ and _as instructed_
   * Peer evaluations (1 points each, max 3)

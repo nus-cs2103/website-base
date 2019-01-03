@@ -18,7 +18,7 @@
   %%**Reason:** To allow advanced users to manipulate the data by editing the data file.%%
 
 * **Constraint-No-DBMS**: Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data.<br/>
-  %%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for {{ module_pair }} module learning outcomes; covering DBMS-related LOs will have to be left to database modules or level 3 project modules.%%
+  %%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for {{ module_pair }} module learning outcomes; covering DBMS-related topics will have to be left to database modules or level 3 project modules.%%
 
 * **Constraint-OO**: The software should follow the Object-oriented paradigm.<br/>
   %%**Reason:** For you to practice using OOP in a non-trivial project.%%

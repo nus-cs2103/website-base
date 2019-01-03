@@ -1,6 +1,6 @@
 <div id="1kloc">
 
-{{ icon_important_big_red }} This LO can earn you <trigger trigger="click" for="modal:project1kloc-participation">2 participation marks</trigger>.
+{{ icon_important_big_red }} This task can earn you <trigger trigger="click" for="modal:project1kloc-participation">2 participation marks</trigger>.
  
 <modal large title="%%Admin {{ icon_embedding }} Participation Marks%%" id="modal:project1kloc-participation">
   <include src="../../admin/participation.md#main"/>
@@ -29,10 +29,10 @@ Do an enhancement to [[AddressBook - Level1]({{module_org}}/addressbook-level1)]
 <div id="2kloc">
 
 <tip-box type="important">
-  This LO requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
+  This task requires coordination and cooperation among team members. It also requires a few days to complete; we recommend that you start it early in the week rather than just before the tutorial day.
 </tip-box>
 
-==This LO can earn you 3 participation marks==, 2 mark for the individual component and 1 bonus mark for the team component. You can omit either one of them.
+==This task can earn you 3 participation marks==, 2 mark for the individual component and 1 bonus mark for the team component. You can omit either one of them.
 
 :bulb: When working with existing code, a safe approach is to **change the code in very small steps, each resulting in a verifiable change** without breaking the app. For example, when adding a new `sort` command, the first few steps can be,
 1. Teach the app to accept a `sort` command but ignore it.

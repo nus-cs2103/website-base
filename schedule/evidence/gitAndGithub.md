@@ -28,7 +28,7 @@ Have a local repo that has git-ignored files.
 
 **Acceptable**: Any evidence of pulling from a remote Git repo.
 
-**Suggested**: Follow the steps in the LO details. 
+**Suggested**: Follow the steps in the topic.
 
 **Submission**: Demo a pull operation to the tutor.
 
@@ -39,7 +39,7 @@ Have a local repo that has git-ignored files.
 
 **Acceptable**: Any evidence of pushing to a remote Git repo.
 
-**Suggested**: Follow the steps in the LO details. 
+**Suggested**: Follow the steps in the topic details.
 
 **Submission**: Show pushed commits in the remote repo.
 
@@ -49,7 +49,7 @@ Have a local repo that has git-ignored files.
 
 **Acceptable**: Show how to traverse history using any local repo.
 
-**Suggested**: Show how to traverse history using the steps given in the LO above.
+**Suggested**: Show how to traverse history using the steps given in the topic above.
 
 **Submission**: Demo during the tutorial.
 
@@ -122,7 +122,7 @@ Have a local repo that has git-ignored files.
 
 **Acceptable**: Evidence of following the forking workflow ==with the current team members== using _any_ repo.
 
-**Suggested**: Evidence of following the steps in the LO with current team members.
+**Suggested**: Evidence of following the steps in the topic with current team members.
 
 **Submission**: Show during the tutorial.
 
