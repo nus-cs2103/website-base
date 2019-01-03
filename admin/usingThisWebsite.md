@@ -6,11 +6,6 @@
 
 {{ icon_info }} More details for the upcoming weeks will be added as the weeks progress. In general, ==information given for more than 1 week into the future should be treated as _tentative_==.
 
-<div class="full-mode">
-
-:bulb: **For those who don't like the _nested_ style used by this website**, we have also provided _flat_ version of the the website. You can switch between the two versions using the top navigation bar of the website.
-</div>
-
 <include src="../book/about/usage.md#browsers" />
 <include src="../book/about/usage.md#layers"/>
 
@@ -35,7 +30,7 @@ This website ==uses a star rating system== to indicate the priority level of con
 
 ### Searching for keywords
 
-Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting [in the website issue tracker]({{module_org}}/website/issues) so that we can add the missing keyword to our search index.
+Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting [in the forum]({{forum_link}}) so that we can add the missing keyword to our search index.
 
 <include src="../book/about/usage.md#saving" />
 

@@ -60,6 +60,7 @@ For either direction, you need to define a target user profile and a value propo
 
 ##### [Individual] Expectations on Features
 
+* You are expected to add at least one feature to the product.
 * ==One big feature can earn you more marks than multiple small features.== %%Reason: When grading your work for depth and completeness, only your biggest feature you will be considered.%%
 * At lest one feature should be end-user visible and end-user testable. %%Reason: If your feature cannot be identified and tested by the testers, we will not be able to give marks for the quality assurance of that feature.%%
 * The features should fit with the rest of the software (and the target user profile) and should have the consent of the team members.. %%You will lose marks if you go 'rogue' and add features that don't fit with the product.%%
@@ -103,21 +104,21 @@ Here is a non-exhaustive list of minor enhancements:
 We strongly recommend that you contribute to multiple (preferably, all) aspects of the project e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.
 
 In particular, ==you are required to divide work based on features rather than components==:
-   * By the <tooltip content="i.e. by `v1.4`">end of this project</tooltip> each team member is expected to have implemented an enhancement end-to-end, doing required changes in _almost all_ components. %%&nbsp;Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components%%.
+   * By the <tooltip content="i.e. by `v1.4`">end of this project</tooltip> each team member is expected to have implemented at least one feature end-to-end, doing required changes in _almost all_ components. %%&nbsp;Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components%%.
    * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
 
 ##### [Individual] Expectations on Code
 
-* Based on past experience, ==it is possible for a feature requiring **~300-500 LoC of code** to earn full marks== provided the feature do well in all grading criteria.
+* Based on past experience, ==it is possible for a feature consisting of **~300-500 LoC of code** to earn full marks== provided the feature do well in all grading criteria.
 
 ##### [Individual] Expectations on Documentation
 
 * You are expected to write user documentation and developer documentation for your features.
-* The objective is to showcase your ability to write the two types of documentation. If the documentation for your features is not enough to meet that objective, or does not reach the following minimal requirement, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.
+* **The objective is to showcase your ability to write the two types of documentation.** If the documentation for your features is not enough to meet that objective, or does not reach the following minimal requirement, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.
   * Contribution to the user guide: 1 page
   * Contribution to the developer guide: 3 pages
-* You are expected to ==showcase your ability to use the various UML diagrams (at least 2 types)==. As mentioned in the previous point, if the documentation of your features doesn't give you enough opportunities to do so %%e.g., your features only required minor updates to existing diagrams%%, you are expected to create those opportunities yourself by documenting proposed features or alternative designs. Evaluators will not be able to give you marks unless there is sufficient evidence of your skills.
-* You are recommended to, but not required to, update all existing content/diagrams in the AB-4 user/developer guides to match your product. However, all diagrams that are included in the part of documentation claimed as done by you should be updated to match the current product.
+* You are expected to ==showcase your ability to use the various UML diagrams (at least 2 types)==. As mentioned in the previous point, if the documentation of your features doesn't give you enough opportunities to do so %%e.g., your features only required minor updates to existing diagrams%%, you are expected to create those opportunities yourself by documenting proposed features or alternative designs. Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.
+* You are recommended to, but not required to, update all existing AB-4 documentation to match your product. However, all diagrams that are included in the part of documentation claimed as done by you should be updated to match the current product.
 
 ##### [Individual] Expectations on Testing
 
@@ -126,7 +127,6 @@ In particular, ==you are required to divide work based on features rather than c
 * There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.
 * You ==must write _some_ tests== so that we can evaluate your ability to write tests.
 * How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.
-* Applying <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because the code has low testability.
 
 </div>
 
@@ -187,7 +187,7 @@ Please make sure each of the important roles are assigned to one person in the t
 #### {{ icon_team }} Team Expectations
 
 1. **Preserve _product integrity_**: i.e. ensure,
-   1. enhancements added fit together to form a cohesive product,
+   1. features fit together to form a cohesive product,
    1. documentation follows a consistent style and presents a cohesive picture to the reader, and
    1. final project demo presents a cohesive picture to the audience.
 1. **Maintain product quality**: i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.

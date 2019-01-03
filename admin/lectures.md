@@ -22,7 +22,7 @@ Lectures start on time sharp and end around 15 minutes before official end time.
 
 **Webcast**: All lectures will be webcast. However, some things are not captured well in the webcast recording. You are advised to treat the webcast as a 'backup' for you to catch up anything missed during the lecture. ==Webcast lectures will be available on LumiNUS instead fo IVLE== (IVLE no longer supports webcasts).
 
-**Handouts**: There are no handouts. All learning materials are organized around learning outcomes (not lectures or topics), are given in Web format, and can be found in the [Textbook]({{baseUrl}}/se-book-adapted/index.html) section and are also hyperlinked from the {{ schedule_link }}.
+**Handouts**: There are no handouts. All learning materials are organized around topics, are given in Web format, and can be found in the [Textbook]({{baseUrl}}/se-book-adapted/index.html) section and are also embedded in from the {{ schedule_link }}.
 
 **Slides**: Our lecture slides are not suited for printing or using as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to IVLE *after* the lecture.
 

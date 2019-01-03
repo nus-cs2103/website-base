@@ -40,8 +40,8 @@
 **What happens during the tutorial**:
 
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
-* The tutor will direct students to share/discuss evidence of achieving the weekly learning outcomes (LO). 
-* If some students have met with difficulties while achieving an LO, the tutor can direct those students to get help from those who have achieved the LO. **The number of topics that can be covered in the tutorial session depends on how well-prepared you are.**
+* The tutor will direct students to share/discuss evidence of learning the weekly topics.
+* If some students have met with difficulties while learning a topic, the tutor can direct those students to get help from those who have learned the topic. **The number of topics that can be covered in the tutorial session depends on how well-prepared you are.**
 * The tutor will observe, and give feedback on how well you are learning required topics.
 * Please ==bring your laptop to tutorials.== You often need it to show evidence of learning the topics. At other times, we ask you to work on project related things with your team members, which too may require the laptop.
 
@@ -53,7 +53,7 @@
 
 **The role of our tutors** is different from tutors in other modules.
 
-* **No direct tech help**: Tutors are prohibited from giving technical help. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
+* **No direct tech help**: Tutors are prohibited from giving direct technical help. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
 
 <div class="indented-level2">
 {{ embed_topic("appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + module_pair, "tutorials-apdxD", "2") }}

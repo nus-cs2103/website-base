@@ -7,17 +7,13 @@
 
 This module is supported by a number of software tools developed by past students. Here are some of them whose work was directly relevant to the module for this semester:
 
-* Aditya Agarwal
 * Chng Zhi Xuan
 * Devamanyu Hazarica
 * Eugene Peh
-* Jia Zhixin
-* Lai Hoang Dung (Louis)
+* Jamos Tay
 * Metta Ong
-* Sidhdharth Aravindan
 * Tan Jun An
 * Tan Wang Leng
-* Teng Yong Hao
 
 
 </div>

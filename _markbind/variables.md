@@ -39,6 +39,7 @@
 <span id="dotted_line"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></span>
 
 <span id="icon_announcement">{{ fas_bell | safe }}</span>
+<span id="icon_calendar">{{ fas_calendar_alt | safe }}</span>
 <span id="icon_deadline">:alarm_clock:</span>
 <span id="icon_dislike">{{ fas_thumbs_down | safe }}</span>
 <span id="icon_example">{{ fas_cube | safe }}</span>

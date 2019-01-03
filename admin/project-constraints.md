@@ -3,7 +3,7 @@
 
 **Your project should comply with the following constraints.** %%**Reason**: to increase comparability among projects and to maximize applicability of module learning outcomes in the project.%%
 
-* **Constraint-Morph**: The final product should be a result of morphing the given code base. i.e. enhance and/or evolve the given code to arrive at the new software. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. one feature/component at a time%%<br/>
+* **Constraint-Brownfield**: The final product should be a result of evolving/enhancing/morphing the given code base. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. one feature/component at a time%%<br/>
   %%**Reason:** To ensure your code has a decent quality level from the start.%%
 
 * **Constraint-Typing-Preferred**: The product should be targeting users who can type fast and prefer typing over other means of input.<br>
@@ -47,7 +47,7 @@
 * **Recommendation-Minimal-Network**: It is OK to use a reliable public API %%e.g., Google search%% but we recommend that you have a fallback mechanism (e.g., able to load data using a data file if the network is down). %%**Reason:** During the mass peer-testing session the network access can be intermittent due to high load. If your feature cannot be tested due to lack of Internet, that will have to be counted as a major bug, to be fair to those whose app is being tested and bugs found being penalized.%%<br>
   ==If you use NUS data== (e.g., scrape data from an NUS website), please work with [NUS IT](https://nusit.nus.edu.sg/contact-us/) directly to get their approval first. Even well-intentioned use of NUS data without approval can get you into serious trouble (has happened before). The teaching team will not be able to get approval for you as the use of NUS data is not a module requirement.
 
-* **Recommendation-Testability**: Avoid implementing hard-to-test (both for manual testing as well as automated testing) features or features that makes your product hard-to-test. %%Reason: _testability_ is a grading criterion. If you choose to implement such a feature, you will need to spend an extra effort to reach an acceptable level of testability. Here are some hard-to-test features.%%
+* **Recommendation-Testability**: Avoid implementing hard-to-test (both for manual testing as well as automated testing) features or features that make your product hard-to-test. %%Reason: _testability_ is a grading criterion. If you choose to implement such a feature, you will need to spend an extra effort to reach an acceptable level of testability.%%
   Here are some examples of features that are hard-to-test:
   * Features that depend heavily on remote APIs: Those APIs can block your access if they mistake your automated tests as a bot attack. Some remote APIs require setting up accounts, keys, login etc, that will irritate the testers of your product and give a low rating to the testability of your work.
   * Audio-related features: The peer testing of your product is done under exam conditions where it is not appropriate to play audio.
@@ -55,7 +55,7 @@
 
 <span id="constraint-cli">
 
-* **Recommendation-CLI-First**: As per _Constraint-Typing-Preferred_, the input to the app needs to be primarily CLI. The GUI can still be used to give visual feedback to the user rather than to collect input. While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users, which will be graded under the _product design_ criterion.<br>
+* **Recommendation-CLI-First**: As per _Constraint-Typing-Preferred_, the input to the app needs to be primarily CLI. The GUI can be used to give visual feedback to the user rather than to collect input. While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users, which will be graded under the _product design_ criterion.<br>
   Some suggestions:
   * Give keyboard alternatives to mouse/GUI inputs, if any.
   * Regular typing is usually faster than using key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse actions or key combinations.

@@ -5,7 +5,7 @@ Note that project grading is ==not competitive (not bell curved)==. {{ module }}
 
 **Total**: 50 marks ({{ icon_individual }} 40 individual marks + {{ icon_team }} 10 team marks)
 
-<panel header="1. **Product features** %%[{{ icon_team }} 5 marks]%%" expanded>
+<panel header="1. **Product design** %%[{{ icon_team }} 5 marks]%%" expanded>
 
 Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?
 
@@ -53,7 +53,7 @@ Based on: an inspection of the parts of the code you claim as written by you.
 </panel><p>
 
 
-**B. Depth and completeness of your feature**
+**B. Quality of your feature(s)**
 
 </panel>
 

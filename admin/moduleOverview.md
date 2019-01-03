@@ -11,9 +11,9 @@ On the theory side, this module is supported by a customized online textbook [_S
 
 [<img src="{{baseUrl}}/admin/images/timeline.png" width="100%">](images/timeline.png)
 
-The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project [AddressBook-Level4 (AB4)](https://se-edu.github.io/addressbook-level4/) -- a relatively small yet non-trivial (10 KLoC) generic product -- and enhance it into a better product or evolve it into a different product. To help students to tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).
+The practice side of this module is mainly covered by a team project. Students are expected to take over an existing project [AddressBook-Level4 (AB4)](https://se-edu.github.io/addressbook-level4/) -- a relatively small yet non-trivial (10 KLoC) generic product -- and enhance it into a better product or evolve it into a different product. To help students tackle the learning curve of working with 10 KLoC of code, the module takes them through a series of projects of increasing size, from AddressBook-Level1(1 KLoC) to AddressBook-Level3(4 KLoC).
 
-Given below is a summary of what the module covers and does not cover %%(i.e., unticked items)%%.
+Given below is a summary of what the module covers and does not cover.
 
 Topic | {{ icon_tick_green }} Covered | {{ icon_x_red }} Not covered
 ------|---------|------------
@@ -23,7 +23,7 @@ SE tools/practices | <tooltip content="e.g., revision control, continuous integr
 Modeling | <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in [this Developer Guide of AB4](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design)) | intensive <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
 Requirements | <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements | rapid prototyping, heavy UI design, designing a product from scratch
 Documentation | Documentation targeting end users ([example](https://se-edu.github.io/addressbook-level4/UserGuide.html)) as well as those targeting developers ([example](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html)) | Marketing materials
-Project Management | Iterative delivery of a product, Working collaboratively with team members, on-site as well as remotely | Setting up project infrastructure from scratch
+Project Management | Iterative delivery of a product, working collaboratively with team members, on-site as well as remotely | Setting up project infrastructure from scratch
 Testing | <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and <tooltip content="e.g., acceptance testing">user testing</tooltip> | <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
 Applications domains | Cross-platform desktop applications | Web programming, Mobile programming, Database programming
 

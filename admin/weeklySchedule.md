@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-:calendar: **[Friday (previous week)]**<br>
+{{ icon_calendar }} **[Friday (previous week)]**<br>
 
 Attend the lecture for, 
 * a recap of the preceding week's topics
@@ -11,22 +11,20 @@ Attend the lecture for,
 
 <p/>
 
-:calendar: **[Saturday (previous week) - Tuesday]**<br>
+{{ icon_calendar }} **[Saturday (previous week) - Tuesday]**<br>
  
  * Use the relevant learning resources to learn the topics.
  * Self-test your knowledge using exercises given in the learning resources. 
  * If you don't have time to learn all topics assigned to the week, use the star rating system to decide which ones to do first.
 
-{{ embed_topic("learningOutcomes.md#main", "Admin " + icon_embedding + " Learning Outcomes", "weeklySchedule-learningOutcomes", "2") }}
-
 <p/>
 
-:calendar: **[Wednesday - Friday]**<br>
+{{ icon_calendar }} **[Wednesday - Friday]**<br>
  
 Attend the tutorial to,
 
 * demonstrate evidence of your learning weekly topics to the tutor
-* learn from peer demos of their own learning
+* learn from peer demos of showing evidence of their own learning
 
 {{ embed_topic("tutorials.md#main", "Admin " + icon_embedding + " Tutorials", "weeklySchedule-tutorials", "2") }}
 
