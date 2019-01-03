@@ -312,52 +312,60 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 1. **Take note of your team to test**. It will be given to you by the teaching team (distributed via IVLE gradebook).
 1. **Download from IVLE all files** submitted by the team %%(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
-1. **[~40 minutes] Test the product and report bugs** as described below:
+1. **[60 minutes] Test the product and report bugs** as described below:
 
 <div class="indented-level2">
   <include src="project-deliverables.md#project-deliverables-pe-testing-intructions" />
 </div>
 
-1. **[~60 minutes] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.
+1. **[Remainder of the session] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but ==you have until the end of the day to submit (or revise) your submissions==.
   
-   * **A. Cohesiveness of product features** [{{ icon_team }}]: Do the features fit together and match the stated target user and the value proposition?
-     * `unable to judge`: You are unable to judge this aspect for some reason.
-     * `low`: One of these
-       * target user is too general %%&nbsp;i.e. wider than AB4%%
-       * target user and/or value proposition not clear from the user guide
-       * features don't seem to fit together for the most part
-     * `medium`: Some features fit together but some don't.
-     * `high`: All features fit together but the features are not very high value to the target user.
-     * `excellent`: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.
+   * **A. Product Design** [{{ icon_team }}]: Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is described in the User Guide**.
+     - [ ] `unable to judge`: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.
+     - [ ] `target user specified and appropriate`: The target user is clearly specified, **prefers typing over other modes of input**, and not too general (should be narrowed to a specific user group with certain characteristics).
+     - [ ] `value specified and matching`: The value offered by the product is clearly specified and matches the target user.
+     - [ ] `value: low`: The value to target user is low. App is not worth using.
+     - [ ] `value: medium`: Some small group of target users might find the app worth using.
+     - [ ] `value: high`: Most of the target users are likely to find the app worth using.
+     - [ ] `feature-fit: low`: Features don't seem to fit together.
+     - [ ] `feature-fit: medium`: Some features fit together but some don't.
+     - [ ] `feature-fit: high`: All features fit together.
+     - [ ] `polished`: The product looks well-designed.
 
-   * **B. Quality of user docs** [{{ icon_individual }}]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.== 
-     * `unable to judge`: Less than 1 page worth of UG content written by the student.
-     * `low`: Hard to understand, often inaccurate or missing important information.
-     * `medium`: Needs some effort to understand; some information is missing.
-     * `high`: Mostly easy to follow. Only a few areas need improvements.
-     * `excellent`: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either). Understandable to the target end user.
+   * **B. Quality of user docs** [{{ icon_individual }}]: Evaluate **based on the parts of the user guide written by the person,** as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.==
+     - [ ] `UG/ unable to judge`: Less than 1 page worth of UG content written by the student or cannot find PPP
+     - [ ] `UG/ good use of visuals`: Uses visuals e.g., screenshots.
+     - [ ] `UG/ good use of examples`: Uses examples e.g., sample inputs/outputs.
+     - [ ] `UG/ just enough information`: Not too much information. All important information is given.
+     - [ ] `UG/ easy to understand`: The information is easy to understand for the target audience.
+     - [ ] `UG/ polished`: The document looks neat, well-formatted, and professional.
 
-   * **C. Quality of developer docs** [{{ icon_individual }}]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.==
-     * `unable to judge`: One of these
-       * less than 0.5 pages worth of content.
-       * other problems in the document %%&nbsp;e.g. looks like included wrong content%%.
-     * `low`: One of these
-       * Very small amount of content (i.e., 0.5 - 1 page).
-       * Hardly any use to the reader (i.e., content doesn't make much sense or redundant).
-       * Uses ad-hoc diagrams where UML diagrams could have been used instead.
-       * Multiple notation errors in UML diagrams.
-     * `medium`: _Some_ diagrams, _some_ descriptions, but does not help the reader that much %%&nbsp;e.g. overly complicated diagrams%%.
-     * `high`: Enough diagrams (at lest two kinds of UML diagrams used) and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.
-     * `excellent`: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.
+   * **C. Quality of developer docs** [{{ icon_individual }}]: Evaluate **based on the developer docs cited/reproduced in the respective project portfolio page.** ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.==
+     - [ ] `DG/ unable to judge`: Less than 0.5 pages worth of content OR other problems in the document %%e.g. looks like included wrong content%%.
+     - [ ] `DG/ too little`: 0.5 - 1 page of documentation
+     - [ ] `DG/ types of UML diagrams: 1`: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)
+     - [ ] `DG/ types of UML diagrams: 2`: Two types of diagrams used
+     - [ ] `DG/ types of UML diagrams: 3+`: Three or more types of diagrams used
+     - [ ] `DG/ UML diagrams suitable`: The diagrams used for the right purpose
+     - [ ] `DG/ UML notation correct`: No more than one minor error in the UML notation
+     - [ ] `DG/ diagrams not repetitive`: No evidence of repeating the same diagram with minor differences
+     - [ ] `DG/ diagrams not too complicated`: Diagrams don't cram too much information into them
+     - [ ] `DG/ diagrams integrates with text`: Diagrams are well integrated into the textual explanations
+     - [ ] `DG/ easy to understand`: The document is easy to understand/follow
+     - [ ] `DG/ just enough information`: Not too much information. All important information is given.
+     - [ ] `DG/ polished`: The document looks neat, well-formatted, and professional.
 
-   * **D. Depth of feature** [{{ icon_individual }}]: Evaluate the biggest feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
-     * `unable to judge`: You are unable to judge this aspect for some reason.
-     * `low` : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-     * `medium` : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-     * `high`: One of the below
-       * A moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.
-       * A difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-     * `excellent`: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+   * **D. Feature Quality** [{{ icon_individual }}]: Evaluate ==the biggest feature done by the student== for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+     - [ ] `Feature/ difficulty: unable to judge`: You are unable to judge this aspect for some reason.
+     - [ ] `Feature/ difficulty: low`: %%e.g. make the existing _find_ command case insensitive%%.
+     - [ ] `Feature/ difficulty: medium`: %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+     - [ ] `Feature/ difficulty: high`: e.g., %%undo/redo command%%
+     - [ ] `Feature/ completeness: unable to judge`: You are unable to judge this aspect for some reason.
+     - [ ] `Feature/ completeness: low`: A partial implementation of the feature. Barely useful.
+     - [ ] `Feature/ completeness: medium`: The feature has enough functionality to be useful for some of the users.
+     - [ ] `Feature/ completeness: high`: The feature has all functionality to be useful to almost all users.
+     - [ ] `Feature/ not hard to test`: The feature was not too hard to test manually.
+     - [ ] `Feature/ polished: high`: The feature looks _polished_ (as if done by a professional programmer).
 
    * **E. Amount of work** [{{ icon_individual }}]:  Evaluate the amount of work, on a scale of 0 to 30.
      * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
