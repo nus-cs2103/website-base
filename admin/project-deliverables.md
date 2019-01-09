@@ -376,7 +376,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 Response Labels:
 * `response.Accepted`: You accept it as a bug.
 * `response.NotInScope`: It is a valid issue but not something the team should be penalized for e.g., it was not related to features delivered in v1.4.
-* `response.Rejected`: What tester treated as a bug is in fact the expected behavior. {{ icon_important_big_red }} The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can reject bugs that you inherited from AB4.
+* `response.Rejected`: What tester treated as a bug is in fact the expected behavior.  You can reject bugs that you inherited from AB4.
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asked the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymized.
 
@@ -397,7 +397,9 @@ Bug Type Labels:
 </box>
 </div>
 
-* **If you disagree with the original severity assigned to the bug**, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:
+* **If you disagree with the original severity assigned to the bug**, you may change it to the correct level.
+
+{{ icon_important_big_red }} For all cases of downgrading severity or non-acceptance of a bug, ==you must add a comment justifying your stance==. All such cases will be double-checked by the teaching team and indiscriminate downgrading/non-acceptance of bugs without a good justification, if deemed as a case of trying to _game the system_, may be penalized as it is unfair to the tester.
 
 <div class="indented">
   <include src="appendixE-gitHub.md#bug-severity" />
