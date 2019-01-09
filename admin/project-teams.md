@@ -5,10 +5,7 @@
 <small>%%[Picture: The team that was at the top of early Google]%%</small>
 <p/>
 
-**When to form teams**
-
-* {{ module }}T: Your team will be formed by CS2101 side in week 1.
-* {{ module }}: Your team will be formed in week 3 tutorial.
+**When to form teams**: Your team will be formed in week 3 tutorial.
 
 **Team size**: The default ==team size is five==. 
 
@@ -21,9 +18,9 @@
 We allow some freedom in choosing team members, subject to these constraints:
 
 * All team members should be in the same tutorial. ==Delay forming teams until your place in a tutorial is confirmed.== We do not allow changing tutorials to team up with your preferred team mates.  
-* Teams of ==single nationality are not allowed== %%&nbsp;Rationale: to train you to work in multicultural teams.%% However, we allow same nationality teams if the only language common among all team members is English. e.g. an all-Singaporean team that include both Chinese and Malay students.
+* Teams of ==single nationality are not allowed==  unless the only language common among all team members is English. e.g. an all-Singaporean team that include both Chinese and Malay students. %%Rationale: to train you to work in multicultural teams, to ensure that English is used for all project communication%%
 * No more than one exchange students per team %%Rationale: to increase interaction between exchange students and NUS students.%%
-* Gender balanced teams are encouraged. While all-male teams may be unavoidable at times (due to high male percentage in the cohort), all-female teams are highly discouraged.
+* Same gender teams are highly discouraged unless unavoidable. %%Rationale: to train you for mixed-gender work environments.%%
 
 * Also note that ==**we may modify teams when circumstances call for it**==. There is no avenue for you to object. Staying with your preferred team is not guaranteed.
 
