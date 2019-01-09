@@ -296,15 +296,16 @@ At the end of the project each student is required to submit a _Project Portfoli
 <span id="project-deliverables-practicalexam">
 
 **Objectives:**
-* Evaluate your manual testing skills, product evaluation skills, effort estimation skills
-* Peer-evaluate your product design %%{{ icon_team }}%%, implementation effort %%{{ icon_individual }}%%, documentation quality %%{{ icon_individual }}%%
+* The primary objective of the PE is to ==increase the rigor of project assessment==. Assessing most aspects of the project involves an element subjectivity. As the project counts for 50% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
+* Note that ==none of the significant project grade components are calculated solely based on peer ratings==. Rather, PE data are mostly used to cross-validate tutor assessments and identify cases that need further investigation. When peer inputs are used for grading, usually they are combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other teams, if that is appropriate.
+* As a bonus, PE also gives us an opportunity to evaluate your manual testing skills, product evaluation skills, effort estimation skills etc.
+* Note that the PE is not a means of _pitting you against each other_. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
 
 **When, where**: Week 13 lecture
 
 {{ icon_important_big_red }} **Grading**:
-* Your performance in the practical exam will be considered for your final grade (under the _QA_ category and under _Implementation_ category, about 10 marks in total).
-* You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. %%Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem to be based on a sincere effort to test/evaluate.%%
-* The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.
+* Your performance in the practical exam will affect your final grade and your peers, as explained in [_Admin: Project Assessment_]({{ baseUrl }}/admin/project-assessment.html) section.
+* As your submissions can affect the grades of peers, note that we have put in measures to identify insincere/random evaluations and penalize accordingly.
 
 <include src="project-testing.mbdf#testingPreparations" />
 
@@ -319,58 +320,31 @@ At the end of the project each student is required to submit a _Project Portfoli
 </div>
 
 1. **[Remainder of the session] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but ==you have until the end of the day to submit (or revise) your submissions==.
-  
-   * **A. Product Design** [{{ icon_team }}]: Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is described in the User Guide**.
-     - [ ] `unable to judge`: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.
-     - [ ] `target user specified and appropriate`: The target user is clearly specified, **prefers typing over other modes of input**, and not too general (should be narrowed to a specific user group with certain characteristics).
-     - [ ] `value specified and matching`: The value offered by the product is clearly specified and matches the target user.
-     - [ ] `value: low`: The value to target user is low. App is not worth using.
-     - [ ] `value: medium`: Some small group of target users might find the app worth using.
-     - [ ] `value: high`: Most of the target users are likely to find the app worth using.
-     - [ ] `feature-fit: low`: Features don't seem to fit together.
-     - [ ] `feature-fit: medium`: Some features fit together but some don't.
-     - [ ] `feature-fit: high`: All features fit together.
-     - [ ] `polished`: The product looks well-designed.
+   * **A. Product Design** [{{ icon_team }}]:
 
-   * **B. Quality of user docs** [{{ icon_individual }}]: Evaluate **based on the parts of the user guide written by the person,** as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.==
-     - [ ] `UG/ unable to judge`: Less than 1 page worth of UG content written by the student or cannot find PPP
-     - [ ] `UG/ good use of visuals`: Uses visuals e.g., screenshots.
-     - [ ] `UG/ good use of examples`: Uses examples e.g., sample inputs/outputs.
-     - [ ] `UG/ just enough information`: Not too much information. All important information is given.
-     - [ ] `UG/ easy to understand`: The information is easy to understand for the target audience.
-     - [ ] `UG/ polished`: The document looks neat, well-formatted, and professional.
+<div class="indented-level2">
+  <include src="project-assessment.md#projectGrading-featureFit-instructions" />
+</div>
 
-   * **C. Quality of developer docs** [{{ icon_individual }}]: Evaluate **based on the developer docs cited/reproduced in the respective project portfolio page.** ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.==
-     - [ ] `DG/ unable to judge`: Less than 0.5 pages worth of content OR other problems in the document %%e.g. looks like included wrong content%%.
-     - [ ] `DG/ too little`: 0.5 - 1 page of documentation
-     - [ ] `DG/ types of UML diagrams: 1`: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)
-     - [ ] `DG/ types of UML diagrams: 2`: Two types of diagrams used
-     - [ ] `DG/ types of UML diagrams: 3+`: Three or more types of diagrams used
-     - [ ] `DG/ UML diagrams suitable`: The diagrams used for the right purpose
-     - [ ] `DG/ UML notation correct`: No more than one minor error in the UML notation
-     - [ ] `DG/ diagrams not repetitive`: No evidence of repeating the same diagram with minor differences
-     - [ ] `DG/ diagrams not too complicated`: Diagrams don't cram too much information into them
-     - [ ] `DG/ diagrams integrates with text`: Diagrams are well integrated into the textual explanations
-     - [ ] `DG/ easy to understand`: The document is easy to understand/follow
-     - [ ] `DG/ just enough information`: Not too much information. All important information is given.
-     - [ ] `DG/ polished`: The document looks neat, well-formatted, and professional.
+   * **B. Quality of user docs** [{{ icon_individual }}]:
+<div class="indented-level2">
+  <include src="project-assessment.md#projectGrading-userGuide-instructions" />
+</div>
 
-   * **D. Feature Quality** [{{ icon_individual }}]: Evaluate ==the biggest feature done by the student== for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
-     - [ ] `Feature/ difficulty: unable to judge`: You are unable to judge this aspect for some reason.
-     - [ ] `Feature/ difficulty: low`: %%e.g. make the existing _find_ command case insensitive%%.
-     - [ ] `Feature/ difficulty: medium`: %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-     - [ ] `Feature/ difficulty: high`: e.g., %%undo/redo command%%
-     - [ ] `Feature/ completeness: unable to judge`: You are unable to judge this aspect for some reason.
-     - [ ] `Feature/ completeness: low`: A partial implementation of the feature. Barely useful.
-     - [ ] `Feature/ completeness: medium`: The feature has enough functionality to be useful for some of the users.
-     - [ ] `Feature/ completeness: high`: The feature has all functionality to be useful to almost all users.
-     - [ ] `Feature/ not hard to test`: The feature was not too hard to test manually.
-     - [ ] `Feature/ polished: high`: The feature looks _polished_ (as if done by a professional programmer).
+   * **C. Quality of developer docs** [{{ icon_individual }}]:
+<div class="indented-level2">
+  <include src="project-assessment.md#projectGrading-devGuide-instructions" />
+</div>
 
-   * **E. Amount of work** [{{ icon_individual }}]:  Evaluate the amount of work, on a scale of 0 to 30.
-     * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
-     * Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.
-     * {{ icon_important_big_red }} Do not give a high value just _to be nice_. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. ==You will lose marks if that is the case.==
+   * **D. Feature Quality** [{{ icon_individual }}]:
+<div class="indented-level2">
+  <include src="project-assessment.md#projectGrading-featureQuality-instructions" />
+</div>
+
+   * **E. Amount of work** [{{ icon_individual }}]:
+<div class="indented-level2">
+  <include src="project-assessment.md#projectGrading-effort-instructions" />
+</div>
 
 #### Processing PE Bug Reports:
 

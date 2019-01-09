@@ -22,7 +22,7 @@
 </modal>
 
 <div class="indented-level2">
-{{ embed_topic("project-assessment.md#code-quality-tips", "Admin " + icon_embedding + " Project Assessment → Code Quality Tips", "midv14_codeQualityTips", "3") }}
+{{ embed_topic("project-assessment.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " Project Assessment → Code Quality Tips", "midv14_codeQualityTips", "3") }}
 </div>
 
 **<big>Documentation:</big>**

@@ -5,44 +5,76 @@ Note that project grading is ==not competitive (not bell curved)==. {{ module }}
 
 **Total**: 50 marks ({{ icon_individual }} 40 individual marks + {{ icon_team }} 10 team marks)
 
-<panel header="1. **Product design** %%[{{ icon_team }} 5 marks]%%" expanded>
+See the sections below for details of how we assess each aspect.
 
-Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?
+-----------------------------------------------------------------------------------------------------------------------
 
-Based on: user guide and the product demo. The **quality of the demo will be factored in** as well.
+#### 1. Project Assessment: Product Design %%[{{ icon_team }} 5 marks]%%
 
-:bulb: Feature that fit well with the other features will earn more marks.
+**Evaluates:** how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user
 
-</panel>
+**Evaluated by:**
+* tutors (based on product demo and user guide)
+* peers from other teams (based on peer testing and user guide)
 
-<panel header="2. **Implementation** %%[{{ icon_individual }} 15 marks]%%" expanded>
+{{ icon_info }} For reference, here are some grading instructions that will be given to peers/tutors grading this aspect:
 
-Evaluates: 
+<blockquote>
+<div id="projectGrading-featureFit-instructions">
 
-**A. Code quality/quantity:** 
+Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is described in the User Guide**.
+- [ ] `unable to judge`: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.
 
-How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.
+- Target user:
+  - [ ] `target user specified and appropriate`: The target user is clearly specified, **prefers typing over other modes of input**, and not too general (should be narrowed to a specific user group with certain characteristics).
+  - [ ] `value specified and matching`: The value offered by the product is clearly specified and matches the target user.
 
-Based on: an inspection of the parts of the code you claim as written by you.
+- Value to the target user:
+  - [ ] `value: low`: The value to target user is low. App is not worth using.
+  - [ ] `value: medium`: Some small group of target users might find the app worth using.
+  - [ ] `value: high`: Most of the target users are likely to find the app worth using.
 
-<panel header=":bulb: Tips: how to score high for code quality" no-close>
+- Feature-fit:
+  - [ ] `feature-fit: low`: Features don't seem to fit together.
+  - [ ] `feature-fit: medium`: Some features fit together but some don't.
+  - [ ] `feature-fit: high`: All features fit together.
 
-<span id="code-quality-tips">
+- [ ] `polished`: The product looks well-designed.
+</div>
+</blockquote>
 
-* Ensure your code has at least some evidence of these (see [here]({{baseUrl}}/se-book-adapted/chapters/errorHandling.html) for more info)
+-----------------------------------------------------------------------------------------------------------------------
+
+#### 2. Project Assessment: Implementation %%[{{ icon_individual }} 15 marks]%%
+
+**<big>2A. Code quality</big>**
+
+**Evaluates:** the quality of the code you have written yourself
+
+**Based on:** the parts of the code you claim as written by you
+
+**Evaluation method:**: manual inspection by tutors + automated-analysis by a script
+
+{{ icon_info }} For reference, here are some factors considered when grading this aspect:
+
+<span id="projectGrading-codeQuality-criteria">
+<blockquote>
+
+* At least some evidence of these (see [here]({{baseUrl}}/se-book-adapted/chapters/errorHandling.html) for more info)
   * logging
   * exceptions
   * assertions
   * defensive coding
-  
-* Ensure there are no [coding standard]({{java_coding_standard}}) violations %%&nbsp;e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
 
-* Ensure [SLAP]({{baseUrl}}/se-book-adapted/chapters/codeQuality.html#slap-hard) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.
+* No [coding standard]({{java_coding_standard}}) violations %%e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
 
-* Reduce code duplications %%&nbsp;i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code. 
+* [SLAP]({{baseUrl}}/se-book-adapted/chapters/codeQuality.html#slap-hard) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.
 
-* In addition, try to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.
+* No noticeable code duplications %%i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code.
 
+* Evidence of applying <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger>.
+
+</blockquote>
 
 <modal large title="Textbook {{ icon_embedding }} Implementation →" id="modal:v15-codeQuality">
   <include src="../book/codeQuality/container-inElsewhere-asFlat.md" boilerplate />
@@ -50,51 +82,148 @@ Based on: an inspection of the parts of the code you claim as written by you.
 
 </span>
 
-</panel><p>
 
+**<big>2B. Feature Quality</big>**
 
-**B. Quality of your feature(s)**
+**Evaluates:** how deep is your biggest feature, how complete is the feature, how well it solves the target user needs, etc.
 
-</panel>
+**Evaluation method:**
+* by peers from own team and other teams (based on peer testing session, PPP, RepoSense data) -- more weight for team members from own team than those from other teams
+* by tutors (based on demo, <tooltip content="Project Portfolio Page">PPP</tooltip>, RepoSense data)
 
-<panel header="3. **QA** %%[{{ icon_individual }} 10 marks]%%" expanded>
+{{ icon_info }} For reference, here are some grading instructions that will be given to peers/tutors grading this aspect:
 
-Evaluates: How good is your Quality Assurance? 
+<blockquote>
+<div id="projectGrading-featureQuality-instructions">
 
-Based on:
-1. **bugs you found** in the v1.4 [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable%3A-practical-exam)
-1. **bugs in your work** found by others during the PE
-1. **testability of your feature** %%(you will lose marks if testers feel that your feature is hard to test manually)%%
-1. **your test code** %%(you will lose marks if you don't meet <trigger trigger="click" for="modal:projectAssessmentQA-testingExpectations">our expectations for automated testing</trigger>)%%
+Evaluate ==the biggest feature done by the student== for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+
+- Difficulty
+  - [ ] `Feature/ difficulty: unable to judge`: You are unable to judge this aspect for some reason.
+  - [ ] `Feature/ difficulty: low`: %%e.g. make the existing _find_ command case insensitive%%.
+  - [ ] `Feature/ difficulty: medium`: %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+  - [ ] `Feature/ difficulty: high`: e.g., %%undo/redo command%%
+- Completeness
+  - [ ] `Feature/ completeness: unable to judge`: You are unable to judge this aspect for some reason.
+  - [ ] `Feature/ completeness: low`: A partial implementation of the feature. Barely useful.
+  - [ ] `Feature/ completeness: medium`: The feature has enough functionality to be useful for some of the users.
+  - [ ] `Feature/ completeness: high`: The feature has all functionality to be useful to almost all users.
+- Other
+  - [ ] `Feature/ not hard to test`: The feature was not too hard to test manually.
+  - [ ] `Feature/ polished: high`: The feature looks _polished_ (as if done by a professional programmer).
+
+</div>
+<div id="projectGrading-effort-instructions">
+
+Evaluate the amount of work, on a scale of 0 to 30.
+* Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
+* Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.
+* {{ icon_important_big_red }} Do not give a high value just _to be nice_. You will be asked to provide a brief justification for your effort estimates.
+</div>
+</blockquote>
+
+-----------------------------------------------------------------------------------------------------------------------
+
+#### 3. Project Assessment: QA %%[{{ icon_individual }} 10 marks]%%
+
+<big>**3A. System/Acceptance Testing:**</big>
+
+**Evaluates:** How well you can system-test/acceptance-test a product
+
+**Based on:**
+1. bugs you found in the [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable%3A-practical-exam)
 1. our own manual testing (when necessary)
 
-</panel>
+**Evaluated by:** teaching team (in the capacity of _moderators_ %%e.g., to verify if it is reasonable for you to reject a bug reported by others%%)
+
+<big>**3B. Developer Testing:**</big>
+
+**Evaluates:** How well you tested your own feature
+
+**Based on:**
+1. bugs in your work found by others during the PE
+1. your test code %%(note <trigger trigger="click" for="modal:projectAssessmentQA-testingExpectations">our expectations for automated testing</trigger>)%%
+
+**Evaluated by:** tutors (in the capacity of _moderators_ %%e.g., to verify if it is reasonable for the team to downgrade the severity of a bug you reported%%)
 
 <modal large title="Our expectations for automated testing in the project" id="modal:projectAssessmentQA-testingExpectations">
   <include src="project-scope.md#testing-expectations"/>
 </modal>
 
-<panel header="4. **Documentation** %%[{{ icon_individual }} 10 marks]%%" expanded>
+<big>**Notes on how marks are calculated based on bugs**</big>
 
-Evaluates: How good are the sections you wrote for the user guide and the developer guide?
+* Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not be affect marks of the tester or the developer.
+* The penalty/credit for a bug varies based on,
+  * The severity of the bug: `severity.High` > `severity.Medium` > `severity.Low`
+  * The type of the bug:  `type.FunctionalityBug` > `type.DocumentationBug` > `type.FeatureFlaw` > `type.DocTypo`
+* The penalty for a bug is divided equally among assignees.
+* The developers are not penalized for the duplicate bug reports they received but the testers earn credit for the duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.
+* <tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn slightly less credit for the tester and slightly more penalty for the developer.
+* If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means %%(e.g., performance in mock PE)%% to calculate your marks for system/acceptance testing.
+* Your marks for developer testing depends on the _bug density_ rather than total bug count. Here's an example:
+  * `n` bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks
+  * `n` bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks
+* You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.
+* Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">de-duplicating</tooltip>, if deemed an unethical attempt to _game the system_, may be penalized.
 
-Based on: the relevant sections of your project portfolio. Criteria considered:
-* Explanation should be clear and written to match the audience.
-* Good use of visuals to complement text.
-* Use of correct UML notations (where applicable)
+-----------------------------------------------------------------------------------------------------------------------
 
-</panel>
-  
-<panel header="5. **Project management** %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%" expanded>
+#### 4. Project Assessment: Documentation %%[{{ icon_individual }} 10 marks]%%
+
+**Evaluates:** the quality of the sections you wrote for the user guide and the developer guide
+
+**Based on:** the relevant sections of your PPP.
+
+**Evaluated by:** tutors, peers from own team and other teams
+
+{{ icon_info }} For reference, here are some grading instructions that will be given to peers/tutors grading this aspect:
+
+<blockquote>
+<div id="projectGrading-userGuide-instructions">
+
+Evaluate the quality of user documentation **based on the parts of the user guide written by the person,** as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.==
+- [ ] `UG/ unable to judge`: Less than 1 page worth of UG content written by the student or cannot find PPP
+- [ ] `UG/ good use of visuals`: Uses visuals e.g., screenshots.
+- [ ] `UG/ good use of examples`: Uses examples e.g., sample inputs/outputs.
+- [ ] `UG/ just enough information`: Not too much information. All important information is given.
+- [ ] `UG/ easy to understand`: The information is easy to understand for the target audience.
+- [ ] `UG/ polished`: The document looks neat, well-formatted, and professional.
+
+</div>
+<div id="projectGrading-devGuide-instructions">
+
+Evaluate the quality of developer documentation **based on the developer docs cited/reproduced in the respective project portfolio page.** ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.==
+- [ ] `DG/ unable to judge`: Less than 0.5 pages worth of content OR other problems in the document %%e.g. looks like included wrong content%%.
+- [ ] `DG/ too little`: 0.5 - 1 page of documentation
+- Diagrams:
+  - [ ] `DG/ types of UML diagrams: 1`: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)
+  - [ ] `DG/ types of UML diagrams: 2`: Two types of diagrams used
+  - [ ] `DG/ types of UML diagrams: 3+`: Three or more types of diagrams used
+  - [ ] `DG/ UML diagrams suitable`: The diagrams used for the right purpose
+  - [ ] `DG/ UML notation correct`: No more than one minor error in the UML notation
+  - [ ] `DG/ diagrams not repetitive`: No evidence of repeating the same diagram with minor differences
+  - [ ] `DG/ diagrams not too complicated`: Diagrams don't cram too much information into them
+  - [ ] `DG/ diagrams integrates with text`: Diagrams are well integrated into the textual explanations
+- [ ] `DG/ easy to understand`: The document is easy to understand/follow
+- [ ] `DG/ just enough information`: Not too much information. All important information is given.
+- [ ] `DG/ polished`: The document looks neat, well-formatted, and professional.
+
+</div>
+</blockquote>
+
+-----------------------------------------------------------------------------------------------------------------------
+
+#### 5. Project Assessment: Project Management %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%
+
 <div id="project-management-grading"> 
 
-**A. Process:** 
+<big>**5A. Process:**</big>
 
-Evaluates: How well you did in project management related aspects of the project, as an individual and as a team 
+**Evaluates:** How well you did in project management related aspects of the project, as an individual and as a team
 
-Based on: Supervisor observations of project milestones and GitHub data. 
+**Based on:** tutor/bot observations of project milestones and GitHub data
  
-Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. To get a good grade for this aspect, achieve at least 60% of the recommended milestone progress.
+Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. ==To get a good grade for this aspect, achieve at least 60% of the recommended milestone progress.==
   
 Other criteria:
 * Good use of GitHub milestones
@@ -105,17 +234,17 @@ Other criteria:
 * Good use of buffers %%(opposite: everything at the last minute)%%
 * Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%% 
 
-**B. Team-tasks**:
+<big>**5B. Team-tasks:**</big>
 
-Evaluates: How much did you contribute to team-tasks?
+**Evaluates:** How much you contributed to team-tasks
 
-Based on: peer evaluations and tutor observations
+**Based on:** peer evaluations, tutor observations
+
+To earn full marks, you should have done a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
 
 {{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " Project Scope → Examples of team-tasks", "projectAssessment-exmapleTeamTasks", "3") }}
 
 </div>
-</panel>
-<p/>
 
 </div>
 {% endmacro %}
