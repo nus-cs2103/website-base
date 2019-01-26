@@ -131,7 +131,7 @@ Evaluate the amount of work, on a scale of 0 to 30.
 **Evaluates:** How well you can system-test/acceptance-test a product
 
 **Based on:**
-1. bugs you found in the [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable%3A-practical-exam)
+1. bugs you found in the [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable-practical-exam)
 1. our own manual testing (when necessary)
 
 **Evaluated by:** teaching team (in the capacity of _moderators_ %%e.g., to verify if it is reasonable for you to reject a bug reported by others%%)
