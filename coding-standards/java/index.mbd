@@ -2,6 +2,7 @@
 title: "Java Coding Standard"
 footer: footer.md
 head: adminHead.md
+tags: ["level--*", "-level--basic-only", "-level--intermediate-only"]
 </frontmatter>
 
 # Java Coding Standard
