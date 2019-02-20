@@ -2,20 +2,20 @@
 
 :bulb: Use the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) for any topics not covered in this document.
 
-<span class="intermediate">
+<span tags="level--intermediate">
 <box>
 
 **Basic Rules**: Marked with :star:<br>
 **Intermediate Rules**: Marked with :star::star:<br>
-<span class="advanced"><md>**Advanced Rules**: Marked with :star::star::star:</md></span>
+<span tags="level--advanced"><md>**Advanced Rules**: Marked with :star::star::star:</md></span>
 </box>
 </span>
 
 
 - [**Naming**](#naming)
 - [**Layout**](#layout)
-- [**Statements**](#statements): [Package/Import](#package-and-import-statements) | <span class="advanced"> [Classes and Interfaces](#classes-and-interfaces)
-| [Methods](#methods) | </span>[Types](#types) | <span class="intermediate"> [Variables](#variables) | </span>[Loops](#loops) | [Conditionals](#conditionals)
+- [**Statements**](#statements): [Package/Import](#package-and-import-statements) | <span tags="level--advanced"> [Classes and Interfaces](#classes-and-interfaces)
+| [Methods](#methods) | </span>[Types](#types) | <span tags="level--intermediate"> [Variables](#variables) | </span>[Loops](#loops) | [Conditionals](#conditionals)
 - [**Comments**](#comments)
 - [References](#references)
 - [Contributors](#contributors)
@@ -67,7 +67,7 @@ Third part or both second and third parts can be omitted depending on what's cov
 For example, the test method `sortList_emptyList()` will test `sortList()` method for all variations of the 'empty list'
 scenario and the test method `sortList()` will test the `sortList()` method for all scenarios.
 
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: Abbreviations and acronyms should not be uppercase when used as a part of a name.**
 <div class="row">
@@ -90,13 +90,13 @@ openDVDPlayer();
 </div>
 
 </div>
-<div class="intermediate-only">{{ pagebreak }}</div>
+<div tags="level--intermediate-only">{{ pagebreak }}</div>
 
 **:star: All names should be written in English.**
 
 %%{{ icon_info}} Rationale: The code is meant for an international audience.%%
 
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: Variables with a large scope should have long names, variables with a small scope can have short names.**
 
@@ -117,7 +117,7 @@ boolean hasLicense();
 boolean canEvaluate();
 boolean shouldAbort = false;
 ```
-<div class="basic-only">{{ pagebreak }}</div>
+<div tags="level--basic-only">{{ pagebreak }}</div>
 
 Setter methods for boolean variables must be of the form:
 
@@ -127,7 +127,7 @@ void setFound(boolean isFound);
 
 %%{{ icon_info }} Rationale: This is the naming convention for boolean methods and variables used by Java core packages. It also makes the code read like%% normal English e.g. `if(isOpen) ...`
 
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: Plural form should be used on names representing a collection of objects.**
 
@@ -156,7 +156,7 @@ for (int i = 0; i < nTables; i++) {
 
 %%{{ icon_info }} Rationale: The notation is taken from mathematics where it is an established convention for indicating iterators.%%
 
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: Associated constants (final variables) should be prefixed by a common type name.**
 
@@ -197,7 +197,7 @@ if(isReady){
 }
 ```
 
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: Place line break to improve readability**
 
@@ -295,7 +295,7 @@ alpha = (aLongBooleanExpression)
 
 </div>
 
-<div class="intermediate-only">{{ pagebreak }}</div>
+<div tags="level--intermediate-only">{{ pagebreak }}</div>
 
 **:star: Use K&R style brackets (aka [Egyptian style](https://blog.codinghorror.com/new-programming-jargon/)).**
 
@@ -333,7 +333,7 @@ public void someMethod() throws SomeException {
     ...
 }
 ```
-<div class="basic-only">{{ pagebreak }}</div>
+<div tags="level--basic-only">{{ pagebreak }}</div>
 
 **:star: The _if-else_ class of statements should have the following form:**
 
@@ -430,7 +430,7 @@ The explicit `//Fallthrough` comment should be included whenever there is a `cas
 
 %%{{ icon_info }} Rationale: Leaving out the `break` is a common error, and it must be made clear that it is intentional when it is not there.%%
 
-<div class="intermediate-only">{{ pagebreak }}</div>
+<div tags="level--intermediate-only">{{ pagebreak }}</div>
 
 **:star: A _try-catch_ statement should have the following form:**
 
@@ -461,7 +461,7 @@ try {
   </div>
 </div>
 
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: White space within a statement**
 
@@ -477,7 +477,7 @@ Rule | {{ good }} | {{ bad }}
 %%{{ icon_info }} Rationale: Makes the individual components of the statements stand out and enhances readability.%%
 
 </div>
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: Logical units within a block should be separated by one blank line.**
 
@@ -502,7 +502,7 @@ transformation.multiply(matrix);
 
 </div>
 
-<div class="basic-only">{{ pagebreak }}</div>
+<div tags="level--basic-only">{{ pagebreak }}</div>
 
 ## **Statements**
 
@@ -514,20 +514,20 @@ Every class should be part of some package.
 
 %%{{ icon_info }} Rationale: It will help you and other developers easily understand the code base when all the classes have been grouped in packages.%%
 
-<div class="advanced">
+<div tags="level--advanced">
 
 **:star::star::star: Put related classes in a single package.**
 
 Package together the classes that are related. For example in Java, the classes related to file writing is grouped in the package `java.io` and the classes which handle lists, maps etc are grouped in `java.util` package.
 
 </div>
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: The ordering of import statements must be consistent.**
 
 %%{{ icon_info }} Rationale: A consistent ordering of import statements makes it easier to browse the list and determine the dependencies when there are many%% imports.
 
-<div class="intermediate-only">{{ pagebreak }}</div>
+<div tags="level--intermediate-only">{{ pagebreak }}</div>
 Example:
 
 ```java
@@ -579,12 +579,12 @@ import java.util.*;
 
 %%{{ icon_info }} Rationale: Importing classes explicitly gives an excellent documentation value for the class at hand and makes the class easier to comprehend and maintain. Appropriate tools should be used in order to always keep the import list minimal and up to date. IDE's can be configured to do this easily.%%
 
-<div class="advanced">
+<div tags="level--advanced">
 
 ### **Classes and Interfaces**
 
 </div>
-<div class="advanced">
+<div tags="level--advanced">
 
 **:star::star::star: Class and Interface declarations should be organized in the following manner:**
 
@@ -598,12 +598,12 @@ import java.util.*;
 %%{{ icon_info }} Rationale: Make code easy to navigate by making the location of each class element predictable.%%
 
 </div>
-<div class="advanced">
+<div tags="level--advanced">
 
 ### **Methods**
 
 </div>
-<div class="advanced">
+<div tags="level--advanced">
 
 **:star::star::star: Method modifiers should be given in the following order:**
 
@@ -661,12 +661,12 @@ int a[] = new int[20];
 
 %%{{ icon_info }} Rationale: The *arrayness* is a feature of the base type, not the variable. Java allows both forms however.%%
 
-<div class="intermediate">
+<div tags="level--intermediate">
 
 ### **Variables**
 
 </div>
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: Variables should be initialized where they are declared and they should be declared in the smallest scope possible.**
 
@@ -702,8 +702,8 @@ for (i = 0; i < 10; i++) {
 %%{{ icon_info }} Rationale: This ensures that variables are valid at any time. Sometimes it is impossible to initialize a variable to a valid value where it is declared.  In these cases it should be left uninitialized rather than initialized to some phony value.%%
 
 </div>
-<div class="intermediate-only">{{ pagebreak }}</div>
-<div class="intermediate">
+<div tags="level--intermediate-only">{{ pagebreak }}</div>
+<div tags="level--intermediate">
 
 **:star::star: Class variables should never be declared public.**
 
@@ -720,7 +720,7 @@ public class Foo{
 %%{{ icon_info }} Rationale: The concept of Java information hiding and encapsulation is violated by public variables. Use private variables and access functions instead. One exception to this rule is when the class is essentially a data structure, with no behavior. In this case it is appropriate to make the class' instance variables public.%%
 
 </div>
-<div class="advanced">
+<div tags="level--advanced">
 
 **:star::star::star: Avoid unnecessary use of `this` with fields.**
 
@@ -809,7 +809,7 @@ if (isDone) doCleanup();
 
 %%{{ icon_info }} Rationale: This helps when debugging using an IDE debugger. When writing on a single line, it is not apparent whether the condition is really true or not.%%
 
-<div class="basic-only">{{ pagebreak }}</div>
+<div tags="level--basic-only">{{ pagebreak }}</div>
 
 **:star: Single statement conditionals should still be wrapped by curly brackets.**
 
@@ -850,7 +850,7 @@ Furthermore, use American spelling and avoid local slang.
 
 %%{{ icon_info }} Rationale: The code is meant for an international audience.%%
 
-<div class="intermediate">
+<div tags="level--intermediate">
 
 **:star::star: Write descriptive header comments for all public classes/methods.**
 
@@ -859,15 +859,15 @@ You MUST write header comments for all classes, public methods.
 %%{{ icon_info }} Rationale: `public` method are meant to be used by others and the users should not be forced to read the code of the method to understand its exact behavior. The code, even if it is self-explanatory, can only tell the reader HOW the code works, not WHAT the code is supposed to do.%%
 
 </div>
-<div class="advanced">
+<div tags="level--advanced">
 
 **:star::star::star: All non-trivial private methods should carry header comments.**
 
 %%{{ icon_info }} Rationale: Writing header comments will hep novice programmers to self-detect abstraction problems. e.g. If it is hard to describe the method succinctly, there is something wrong with the method abstraction.%%
 
 </div>
-<div class="intermediate-only">{{ pagebreak }}</div>
-<div class="intermediate">
+<div tags="level--intermediate-only">{{ pagebreak }}</div>
+<div tags="level--intermediate">
 
 **:star::star: Javadoc comments should have the following form:**
 

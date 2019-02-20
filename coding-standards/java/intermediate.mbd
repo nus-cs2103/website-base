@@ -2,9 +2,8 @@
 title: "Java Coding Standard"
 footer: footer.md
 head: adminHead.md
+tags: ["-level--*", "level--basic", "level--intermediate", "level--intermediate-only"]
 </frontmatter>
-
-<link rel="stylesheet" href="{{ baseUrl }}/coding-standards/intermediate.css">
 
 # Java Coding Standard (Basic + Intermediate)
 
