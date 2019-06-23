@@ -53,27 +53,6 @@
 {% endmacro %}
 
 
-{% macro show_evidence(evidence_location_full) %}
-{{ dashed_line | safe}}
-
-{{evidence}}
-
-<include src="{{ evidence_location_full }}" />
-
-{% endmacro %}
-
-{% macro show_default_evidence(chapter, unit_location, path_displacement) %}
-{% set evidence_location_full =  path_displacement + "../evidence/" + chapter + ".md#" + (unit_location | replace("/", "_")) %}
-{{ show_evidence(evidence_location_full)}}
-{% endmacro %}
-
-
-{% macro show_specific_evidence(evidence_location, path_displacement) %}
-{% set evidence_location_full =  path_displacement + "../evidence/" + evidence_location %}
-{{ show_evidence(evidence_location_full)}}
-{% endmacro %}
-
-
 {% macro show_unit(id_prefix, unit, path_displacement="", is_flat=true) %}
 {% set chapter = unit.location[0] %}
 {% set path_as_array = unit.location.slice(1,4) %}
@@ -148,18 +127,14 @@
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" expanded >
 <span slot="header" class="card-title"><markdown><big> %%[{{ prefix | trim }}]%% <big><big>**{{ params.outcome.heading }}**</big></big></big> {{ show_stars(priority) }}</markdown> </span>
 <div class="indented-level1">
-{% if params.outcome.file %}
-  <include src="{{ params.path_displacement }}../evidence/{{ params.outcome.file }}" />
-{% else %}
-  {% for entry in entries  %}
-    {% if entry.location %}
+{% for entry in entries  %}
+  {% if entry.location %}
 {{ show_unit(prefix + letters[letter_index], entry, params.path_displacement, params.is_flat) }}
-      {% set letter_index = letter_index + 1 %}
-    {% elseif entry.subheading %}
+    {% set letter_index = letter_index + 1 %}
+  {% elseif entry.subheading %}
 {{  show_subheading(entry.subheading) }}
-    {% endif %}
-  {% endfor %}
-{% endif %}
+  {% endif %}
+{% endfor %}
 </div>
 </panel>
 {% endif %} {# if params.is_toc #}
