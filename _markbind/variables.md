@@ -4,13 +4,13 @@
 
 <span id="module_name">Software Engineering</span>
 
-<span id="semester">AY1819S2</span>
+<span id="semester">AY1920S1</span>
 
-<span id="period">Jan '19</span>
+<span id="period">Aug '19</span>
 
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 
-<span id="module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/{{ module | lower }}-website</span>
+<span id="module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</span>
 
 <span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vSMEFXr-yL298GPeuNxkC7m87bYqi4KTWo7zZRtDXLCIIhb0osxn5aM3gVk6DCOC6pEu5nMw7Gf1YwJ/pub?embed=true</span>
 
