@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-<p class="lead" style="color: purple"><md>{{ far_calendar_check }} <include src="project-timeline.md#mid-v14-overview" inline /></md></p>
+<p class="lead" style="color: purple"><md>:far-calendar-check: <include src="project-timeline.md#mid-v14-overview" inline /></md></p>
 
 **<big>Project Management:</big>**
 

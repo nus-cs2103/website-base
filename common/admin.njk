@@ -27,12 +27,12 @@ head: adminHead.md
 
 
 {% macro show_previous(topic)-%}
-<span style="float:left"><md>{{ glyphicon_chevron_left }} [{{ topic.title }}]({{ topic.link }})</md></span>
+<span style="float:left"><md>:glyphicon-chevron-left: [{{ topic.title }}]({{ topic.link }})</md></span>
 {%- endmacro %}
 
 
 {% macro show_next(topic)-%}
-<span style="float:right"><md>[{{ topic.title }} {{ glyphicon_chevron_right }}]({{ topic.link }})</md></span>
+<span style="float:right"><md>[{{ topic.title }} :glyphicon-chevron-right:]({{ topic.link }})</md></span>
 {%- endmacro %}
 
 

@@ -130,7 +130,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 * **Sections to include:**
   * **Overview**: A short overview of your product to provide some context to the reader.
   * **Summary of Contributions**:
-    * **Code contributed**: Give a link to your code on [Project Code Dashboard](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard), which should be `https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard/#=undefined&search=githbub_username_in_lower_case` (==replace `githbub_username_in_lower_case` with your actual username== in lower case e.g., `johndoe`). This link is also available in the [Project List Page]({{baseUrl}}/admin/projectList.html) -- linked to the {{ fas_code }} icon under your photo.
+    * **Code contributed**: Give a link to your code on [Project Code Dashboard](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard), which should be `https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard/#=undefined&search=githbub_username_in_lower_case` (==replace `githbub_username_in_lower_case` with your actual username== in lower case e.g., `johndoe`). This link is also available in the [Project List Page]({{baseUrl}}/admin/projectList.html) -- linked to the :fas-code: icon under your photo.
     * **Features implemented:** A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.
     * **Other contributions:**
       * Contributions to project management %%e.g., setting up project tools, managing releases, managing issue tracker etc.%%

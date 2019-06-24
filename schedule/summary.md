@@ -22,9 +22,9 @@
 {% if item.week %}
 <br><big><md>**Week {{ item.week }}**</md></big>
 {% elif item.name %}
-<br>{{ fas_circle }} **{{ item.name }}**
+<br>:fas-circle: **{{ item.name }}**
 {% elif item.heading %}
-<br>&nbsp;&nbsp;&nbsp;{{ far_circle }} {{ item.heading }} {{ show_stars(item.priority) if item.priority }} :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;:far-circle: {{ item.heading }} {{ show_stars(item.priority) if item.priority }} :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 {% elif item.location %}
 {{ show_unit(item) | trim }}
 {% endif %}

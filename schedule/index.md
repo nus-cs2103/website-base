@@ -539,7 +539,7 @@ head: scheduleHead.md
 
 {% macro show_nav_buttons(week_num) %}
 {% set week_num = week_num | int %}
-{% if week_num != 1 %}<span style="float:left"><md>[{{ glyphicon_chevron_left }} Previous Week]({{ baseUrl }}/schedule/week{{ (week_num - 1) }}/)</md></span>{% endif %}{% if week_num != 13 %}<span style="float:right"><md>[Next Week {{ glyphicon_chevron_right }}]({{ baseUrl }}/schedule/week{{ (week_num + 1) }}/)</md></span>{% endif %}<br>
+{% if week_num != 1 %}<span style="float:left"><md>[:glyphicon-chevron-left: Previous Week]({{ baseUrl }}/schedule/week{{ (week_num - 1) }}/)</md></span>{% endif %}{% if week_num != 13 %}<span style="float:right"><md>[Next Week :glyphicon-chevron-right:]({{ baseUrl }}/schedule/week{{ (week_num + 1) }}/)</md></span>{% endif %}<br>
 
 {% endmacro %}
 

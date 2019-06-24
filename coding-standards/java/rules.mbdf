@@ -180,7 +180,7 @@ for (i = 0; i < nElements; i++) {
 }
 ```
 
-%%{{ icon_info }} Rationale: Just follow it {{ far_grin_tongue_squint}}%%
+%%{{ icon_info }} Rationale: Just follow it :far-grin-tongue-squint:%%
 
 **:star: Line length should be no longer than 120 chars.**
 
@@ -324,7 +324,7 @@ while (!done)
   </div>
 </div>
 
-%%{{ icon_info }} Rationale: Just follow it. {{ far_grin_tongue_squint}}%%
+%%{{ icon_info }} Rationale: Just follow it. :far-grin-tongue-squint:%%
 
 **:star: Method definitions should have the following form:**
 
