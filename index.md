@@ -1,10 +1,9 @@
 <frontmatter>
 title: "Home"
+header: header.md
 footer: footer.md
 head: scheduleHead.md
 </frontmatter>
-
-<include src="common/header.md" />
 
 <div class="website-content" id="main">
 

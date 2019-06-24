@@ -28,13 +28,12 @@
 {% macro show_toc() %}
 <frontmatter>
 title: "Textbook"
+header: header.md
 footer: footer.md
 siteNav: se-book-adapted-sitenav.md
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
-
-<include src="../common/header.md" />
 
 <div class="website-content" id="main">
 

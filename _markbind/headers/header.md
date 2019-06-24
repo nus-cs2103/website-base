@@ -1,5 +1,6 @@
 {% from "schedule/index.md" import weeks, current_weeks with context %}
-<navbar placement="top" type="inverse">
+<header>
+<navbar placement="top" type="dark">
   <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">{{ module_pair }} <small>{{ period }}</small></a>
   <dropdown text="Schedule" class="nav-link">
 {% for week in weeks %}
@@ -34,3 +35,4 @@
     </form>
   </li>
 </navbar>
+</header>

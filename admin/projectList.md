@@ -1,10 +1,9 @@
 <frontmatter>
 title: "Project List"
+header: header.md
 footer: footer.md
 head: scheduleHead.md
 </frontmatter>
-
-<include src="../common/header.md" />
 
 # CS2103/T Project List
 
