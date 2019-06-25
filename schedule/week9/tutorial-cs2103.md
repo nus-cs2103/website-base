@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(9, "tutorial") }}
+
 **Questions to discuss during tutorial:**
 
 Whole team: do this question together, using the whiteboard:

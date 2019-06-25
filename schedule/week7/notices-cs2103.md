@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(7, "notices") }}
+
 * The [Project List Page]({{ module_website }}/admin/projectList.html) will be up this week.
 
 **If your photo or your UI mock-up does not appear in the page**, you have not followed our instructions correctly. 'Close enough' is sometimes not 'good enough'. Please rectify before v1.1 deadline. In particular,

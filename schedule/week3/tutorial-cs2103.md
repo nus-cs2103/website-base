@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(3, "tutorial") }}
+
 **{{ module }} students only**: Form teams at the beginning of the tutorial. Be sure to conform to team forming constrains.
 
 <panel src="../../admin/project-teams.md#main" header="Admin {{ icon_embedding }} Team Forming :star:" minimized />

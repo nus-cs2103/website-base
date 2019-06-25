@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(7, "tutorial") }}
+
 **Questions to discuss during tutorial:**
 
 1. Which architecture styles are used by AB-4?

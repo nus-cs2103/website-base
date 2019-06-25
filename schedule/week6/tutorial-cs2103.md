@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(6, "tutorial") }}
+
 **Questions to do during tutorial:**<br>
 
 <include src="../../book/modeling/modelingStructures/classDiagramsIntermediate/q-explainClassDiagramNotation.md" />

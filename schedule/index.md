@@ -5,7 +5,6 @@ footer: footer.md
 head: scheduleHead.md
 </frontmatter>
 
-{% import "common/outcomes.njk" as outcomes with context %}
 
 {% set weeks = [
     {num: "1", day:"Jan 14"},
@@ -24,10 +23,10 @@ head: scheduleHead.md
 ] %}
 
 
-{% set current_weeks = ["1", "2"] %}
+{% set current_weeks = ["2"] %}
 
 
-{% set all_outcomes = [
+{% set all_topics = [
 {week: "2"},
   {name: "SE Intro"},
     {heading: "SE: Intro"},
@@ -481,62 +480,6 @@ head: scheduleHead.md
 ]%}
 
 
-{% macro show_week_outcomes(week_num, path="") %}
-<panel type="seamless" popup-url="{{baseUrl}}/schedule/week{{ week_num }}/outcomes.html" expanded no-close>
-  <span slot="header" class="card-title activity-type">{{ icon_outcome }} Outcomes</span>
-  <div class="indented">
-  {{ outcomes.show_week_schedule_main(week_num, all_outcomes, path) }}
-  </div>
-</panel>
-{% endmacro %}
-
-
-{% macro show_week_todos(week_num, path="") %}
-<panel type="seamless" expanded no-close>
-  <span slot="header" class="card-title activity-type">{{ icon_todo }} Todo</span>
-  <div class="indented">
-  <include src="{{ path }}todo.md" />
-  </div>
-</panel>
-{% endmacro %}
-
-
-{% macro show_week_tutorial(week_num, path="") %}
-<panel type="seamless" expanded no-close>
-<span slot="header" class="card-title activity-type">{{ icon_tutorial }} Tutorial {{ week_num }}</span>
-   <div class="indented">
-   <include src="{{ path }}tutorial.md" />
-   </div>
-</panel>
-{% endmacro %}
-
-
-{% macro show_week_lecture(week_num, path="") %}
-<panel type="seamless" expanded no-close>
-<span slot="header" class="card-title activity-type">{{ icon_lecture }} Lecture {{ week_num }}</span>
-  <div class="indented">
-  <include src="{{ path }}lecture.md" />
-  </div>
-</panel>
-{% endmacro %}
-
-
-{% macro show_week_schedule(week_num_string, path="") %}
-
-{% set week_num_int = week_num_string | int %}
-{% set week = weeks[week_num_int - 1] %}
-
-<div class="website-content" id="main">
-
-{{ show_nav_buttons(week.num) }}
-
-{{ show_week_schedule_body(week, path) }}
-
-</div>
-
-{% endmacro %}
-
-
 {% macro show_nav_buttons(week_num) %}
 {% set week_num = week_num | int %}
 {% if week_num != 1 %}<span style="float:left"><md>[:glyphicon-chevron-left: Previous Week]({{ baseUrl }}/schedule/week{{ (week_num - 1) }}/)</md></span>{% endif %}{% if week_num != 13 %}<span style="float:right"><md>[Next Week :glyphicon-chevron-right:]({{ baseUrl }}/schedule/week{{ (week_num + 1) }}/)</md></span>{% endif %}<br>
@@ -544,46 +487,44 @@ head: scheduleHead.md
 {% endmacro %}
 
 
-{% macro show_week_schedule_body(week, path="") %}
+{% macro show_week_pagetop(week_num_int, category, path="") %}
+
+{% set week = weeks[week_num_int - 1] %}
+
+{% set categories = {
+  notices: {name: "Notices", file: "index", icon: icon_announcement},
+  topics: {name: "Topics", file: "topics", icon: icon_outcome},
+  project: {name: "Project", file: "project", icon: icon_project},
+  tutorial: {name: "Tutorial", file: "tutorial-" + (module | lower), icon: icon_tutorial},
+  admin: {name: "Admin Info", file: "admin", icon: icon_info}
+} %}
+
+<frontmatter>
+title: "Week {{ week.num }} - {{ categories[category].name }}"
+header: header.md
+footer: footer.md
+head: scheduleHead.md
+pageNav: 4
+</frontmatter>
+
+{{ show_nav_buttons(week.num) }}
 
 # Week {{ week.num }} <small><small>%%[{{ week.day }}]%%</small></small>
 
-<tabs>
-  <tab header="{{ icon_announcement }} Notices">
-    <include src="{{ path }}notices-{{ module | lower }}.md" optional />
-  </tab>
-  <tab header="{{ icon_outcome }} Topics">
-    <include src="{{ path }}topics.md" />
-  </tab>
-  <tab header="{{ icon_project }} Project">
-    <include src="{{ path }}project.md" optional />
-  </tab>
-  <tab header="{{ icon_tutorial }} Tutorial">
-    <include src="{{ path }}tutorial-{{ module | lower }}.md" optional />
-  </tab>
-  <tab header="{{ icon_info }} Admin Info">
-    <include src="{{ path }}admin.md" />
-  </tab>
-</tabs>
+<ul class="nav nav-tabs">
+{% for c,v in categories %}
+<li class="nav-item">
+  {%- set is_active = " active" if categories[category] == v else "" -%}
+  <a class="nav-link{{ is_active }}" href="{{v.file}}.html">{{ v.icon }} {{v.name}}</a>
+</li>
+{% endfor %}
+</ul>
+
+<p/>
 
 {% endmacro %}
 
 
-
-
 <!-- ============================= page content ============================================ -->
 
-<div class="website-content" id="main">
-
-{{ show_nav_buttons(current_weeks[0]) }}
-
-{% for week in weeks %}
-{% set week_num = week.num | int %}
-{% if week.num in current_weeks %}
-  {{ show_week_schedule_body(week, "week" + week_num + "/") }}
-<br>
-<br>
-{% endif %}
-{% endfor %}
-
-</div>
+<include src="week{{ current_weeks[0] }}/index.md" />

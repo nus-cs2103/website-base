@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(4, "notices") }}
+
 * **Quiz results will be posted** in the forum. Participation marks for lecture participation (based on quiz participation) will be posted on IVLE gradebook soon. If you have any queries/objections about your marks, please write to the module email `{{ module | lower }}@comp.nus.edu.sg`.
 
 * We will be adding you all to {{ module | lower }}-{{ semester }} github org. **Please accept the invitation sent by GitHub** as you need to be a member of the org for some of the future module activities. If you did not receive the invitation link, you can use the link [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation).

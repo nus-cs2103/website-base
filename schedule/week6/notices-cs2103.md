@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(6, "notices") }}
+
 **💹 Project progress**
 
 * While we allow you to jump straight to AB-4, **we recommend you to play around with the AB-3 code base** (i.e., fork, clone, setup, and enhance)  before moving to AB-4.  You can practice with AB-3 while at the the same time updating docs of AB-4 as required by the next project milestone.

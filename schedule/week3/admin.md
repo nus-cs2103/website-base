@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(3, "admin") }}
+
 <div id="additional"></div>
 
 {% import "common/macros.njk" as macros with context %}

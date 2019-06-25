@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(8, "notices") }}
+
 **Come prepared for the tutorial**:
 
 * This week's tutorial involves discussing some theory questions. There are 5 questions (listed under Tutorial 8 in the [schedule page](https://nus-cs2103-ay1819s1.github.io/cs2103-website/index.html)). **Please divide the questions among yourselves and come prepared to answer them during the tutorial.** We will not be able to finish all five questions during the tutorial unless you come prepared.

@@ -1,8 +1,8 @@
-{% import "common/outcomes.njk" as outcomes with context %}
+{% import "common/topics.njk" as topics with context %}
 {% from "common/macros.njk" import  show_stars, show_priority_style with context %}
 {% import "se-book-adapted/config.njk" as config with context %}
 
-{% from "schedule/index.md" import all_outcomes %}
+{% from "schedule/index.md" import all_topics %}
 
 
 {% macro show_unit(unit) -%}
@@ -31,4 +31,4 @@
 {%- endmacro %}
 
 
-{% for item in all_outcomes %}&nbsp;{{ show_item(item) | trim }}{% endfor %}
+{% for item in all_topics %}&nbsp;{{ show_item(item) | trim }}{% endfor %}

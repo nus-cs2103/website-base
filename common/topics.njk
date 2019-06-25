@@ -46,6 +46,9 @@
 {% macro get_end_index(filter_property, filter_value, start, entries) %}{{get_end_index_untrimmed(filter_property, filter_value, start, entries) | trim }}{% endmacro %}
 
 
+{%- macro make_anchor(text) %}{{ text | trim | replace(".", "-") }}{% endmacro -%}
+
+
 {% macro apply_to(filter_property, filter_value, entries, op, params={})%}
 {% set start = get_start_index(filter_property, filter_value, entries) %}
 {% set end = get_end_index(filter_property, filter_value, start, entries) %}
@@ -53,7 +56,7 @@
 {% endmacro %}
 
 
-{% macro show_unit(id_prefix, unit, path_displacement="", is_flat=true) %}
+{% macro show_unit(id_prefix, unit, path_displacement="", is_flat=true, is_toc=false) %}
 {% set chapter = unit.location[0] %}
 {% set path_as_array = unit.location.slice(1,4) %}
 {% set path = path_as_array.join("/") %}
@@ -65,10 +68,16 @@
 {% endif %}
 {% set panel_decorations = "no-switch" if is_flat else "" %}
 {% set panel_expandable = "false" if is_flat else "true" %}
+{% if not is_toc %}
+<span id="{{ make_anchor(id_prefix) }}" />
+
 <panel type="seamless" expanded>
-<span slot="header" class="card-title"><md><span class='badge badge-pill badge-light'>%%[{{ id_prefix }}]%%</span> %%**<include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />**%% **<big><big><include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline /></big></big>**</md> {{ show_stars(priority) }}</span>
+<span slot="header" class="card-title"><h4><md><small><span class='badge badge-pill badge-light'>%%{{ id_prefix }}%%</span> %%**<include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />**%%</small> **<include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline />**</md> <small><small>{{ show_stars(priority) }}</small></small></h4></span>
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
+{% else %}
+* %%[[{{ id_prefix }}](#{{ make_anchor(id_prefix) }})] <include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />%% <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline /> {{ show_stars(priority) }}
+{% endif %}
 {% endmacro %}
 
 
@@ -83,6 +92,7 @@
   {{ 5 }}
 {% endif %}
 {% endmacro %}
+
 
 {% macro get_collective_priority(entries)%}
 {% set priority = 5 %}
@@ -103,29 +113,42 @@
 {% macro show_subheading(subheading) %}
 <br/>
 
-%%**{{ subheading }}**%%
+### %%**{{ subheading }}**%%
 {% endmacro %}
 
 
-{% macro show_outcome(entries, params={week_num: "n/a", starting_index: "n/a", outcome: "n/a", is_flat: false, is_toc: false}) %}
-{% if not params.outcome.priority %}
+{% macro show_topic(entries, params={week_num: "n/a", starting_index: "n/a", topic: "n/a", is_flat: false, is_toc: false}) %}
+{% if not params.topic.priority %}
   {% set priority = get_collective_priority(entries) | trim %}
 {% else %}
-  {% set priority = params.outcome.priority %}
+  {% set priority = params.topic.priority %}
 {% endif %}
 {% set  prefix = "W" + params.week_num + "." + params.starting_index%}
-{% set  anchor = prefix | trim | replace(".", "-") %}
+{% set  anchor = make_anchor(prefix) %}
 {% set letters = "abcdefghijklmnop" | list %}
 {% set letter_index = 0 %}
 {% set panel_decorations = "expanded no-switch" if params.is_flat else "" %}
 {% set panel_expandable = "false" if params.is_flat else "true" %}
 {% if params.is_toc %}
-* [[{{ prefix | trim }}] {{ params.outcome.heading }} {{ show_stars(priority) }}](#{{ anchor }})
+* [[{{ prefix | trim }}](#{{ make_anchor(prefix) }})] **{{ params.topic.heading }}** {{ show_stars(priority) }}
+<div class="indented-level2">
+<small>
+
+{% for entry in entries  %}
+  {% if entry.location %}
+{{ show_unit(prefix + letters[letter_index], entry, params.path_displacement, params.is_flat, true) }}
+    {% set letter_index = letter_index + 1 %}
+  {% elseif entry.subheading %}
+&nbsp;&nbsp; **{{ entry.subheading }}**
+  {% endif %}
+{% endfor %}
+</small>
+</div>
 {% else %}
 <span id="{{ anchor }}" />
 
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" expanded >
-<span slot="header" class="card-title"><markdown><big> %%[{{ prefix | trim }}]%% <big><big>**{{ params.outcome.heading }}**</big></big></big> {{ show_stars(priority) }}</markdown> </span>
+<span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
 <div class="indented-level1">
 {% for entry in entries  %}
   {% if entry.location %}
@@ -141,12 +164,12 @@
 {% endmacro %}
 
 
-{% macro show_outcome_group(entries, params={name: "n/a", week_num: "n/a", starting_index: "n/a", is_flat: false, is_toc: false}) %}
-{% set  outcome_number = params.starting_index | int %}
+{% macro show_topic_group(entries, params={name: "n/a", week_num: "n/a", starting_index: "n/a", is_flat: false, is_toc: false}) %}
+{% set  topic_number = params.starting_index | int %}
 {% for entry in entries  %}
   {% if entry.heading %}
-{{ apply_to("heading", entry.heading, entries, show_outcome, {week_num: params.week_num, starting_index: outcome_number , outcome: entry, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
-{% set  outcome_number = outcome_number + 1 %}
+{{ apply_to("heading", entry.heading, entries, show_topic, {week_num: params.week_num, starting_index: topic_number , topic: entry, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
+{% set  topic_number = topic_number + 1 %}
   {% endif %}
 {% endfor %}
 <p/>
@@ -157,14 +180,14 @@
 {% set i = 1 %}
 {% for entry in entries  %}
   {% if entry.name %}
-{{ apply_to("name", entry.name, entries, show_outcome_group, {name: entry.name, week_num: params.week_num, starting_index: i, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
-  {% set i = i + apply_to("name", entry.name, entries, count_outcomes) | trim | int %}
+{{ apply_to("name", entry.name, entries, show_topic_group, {name: entry.name, week_num: params.week_num, starting_index: i, path_displacement: params.path_displacement, is_flat: params.is_flat, is_toc: params.is_toc}) }}
+  {% set i = i + apply_to("name", entry.name, entries, count_topics) | trim | int %}
   {% endif %}
 {% endfor %}
 {% endmacro %}
 
 
-{% macro count_outcomes(entries, params={})%}
+{% macro count_topics(entries, params={})%}
 {% set count = 0 %}
 {% for entry in entries %}
   {% if entry.heading %}
@@ -181,31 +204,12 @@
 
 
 {% macro show_week_schedule(week_num, entries, path_displacement="") %}
-<frontmatter>
-title: "Week {{ week_num }} - Outcomes"
-header: header.md
-footer: footer.md
-head: scheduleHead.md
-</frontmatter>
-
-<div class="website-content">
-
-<div id="main">
-
-<div class="indented">
+<panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
 
 {{ show_week_schedule_main(week_num, entries, path_displacement, is_toc=true) }}
-</div>
+</panel>
 
 <hr style="border: 1px dotted #cccccc;" />
 
 {{ show_week_schedule_main(week_num, entries, path_displacement) }}
-
-</div>
-</div>
-
 {% endmacro %}
-
-
-
-

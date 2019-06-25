@@ -1,3 +1,6 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{{ show_week_pagetop(2, "notices") }}
+
 * Note that **module announcements will be posted in in [this issue tracker **aka _forum_**]({{ forum_link }})**, and cross-posted on IVLE.
   * Reason for using issue tracker for announcements/discussions: It allows you to post responses to announcements, and is a tool from the SE world
   * You are encouraged to _watch_ [that repo]({{ forum_link }}) to get alerts when new issues/comments are posted
