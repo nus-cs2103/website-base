@@ -39,6 +39,7 @@
       "searchable": "no"
     },
     {"glob": "se-book-adapted/common/*.md"},
+    {"glob": "se-book-adapted/projectDuke/*.md"},
     {"glob": "book/combined/exercises.md"},
     {"src": "se-book-adapted/print.md",
       "searchable": "no"
