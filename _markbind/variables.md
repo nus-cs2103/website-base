@@ -69,6 +69,7 @@
 <span id="icon_terminal"><smal><span class="badge badge-secondary">&gt;_</span></smal></span>
 <span id="icon_text"><md>:far-file-alt:</md></span>
 <span id="icon_tick"><md>:fas-check:</md></span>
+<span id="icon_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb:</span></span>
 <span id="icon_tick_green"><span style="color:green">{{ icon_tick | safe }}</span></span>
 <span id="icon_todo"><md>:glyphicon-check:</md></span>
 <span id="icon_tutorial"><md>:fas-chalkboard-teacher:</md></span>
