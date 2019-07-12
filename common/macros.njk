@@ -110,3 +110,5 @@
 <panel src="{{ source }}" header="{{ title | safe }}  {{ stars[level] | safe }}" class="embedding" minimized />
 
 {% endmacro %}
+
+{% macro thumb(text) %}<span class="badge badge-pill badge-dark p-2"><big><big>{{ text }}</big></big></span>{% endmacro %}
