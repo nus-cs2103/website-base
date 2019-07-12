@@ -1,6 +1,10 @@
 {% from "schedule/index.md" import show_week_pagetop with context%}
 {{ show_week_pagetop(3, "project") }}
 
-# Project Milestone: Inception
+# iP
+
+<include src="../../admin/ip-w03.md#body" />
+
+# tP Milestone: Inception
 
 <include src="../../admin/project-w03-inception.md#main" />
