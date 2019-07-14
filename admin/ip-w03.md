@@ -18,7 +18,7 @@ In this week, we try to practice git branching as we do the iP.
 
 {{ thumb(2) }} As in the previous week, commit, tag, and push, as you do the following enhancements in the `master` branch (no need to use separate branches).
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-MoreOOP**" var-fragment="extensions.mbdf#A-MoreOOP" />
-<include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-Packages**" var-fragment="extensions.mbdf#A-Packages" />
+<include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-Packages** `[optional]`" var-fragment="extensions.mbdf#A-Packages" />
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-JUnit**" var-fragment="extensions.mbdf#A-JUnit" />
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-Jar**" var-fragment="extensions.mbdf#A-Jar" />
 

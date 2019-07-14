@@ -7,7 +7,7 @@
 <div id="body">
 
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-UserGuide**" var-fragment="extensions.mbdf#A-UserGuide" />
-<include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-DevGuide**" var-fragment="extensions.mbdf#A-DevGuide" />
+<include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-Release**" var-fragment="extensions.mbdf#A-Release" />
 
 </div>
 </div>

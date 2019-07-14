@@ -22,9 +22,9 @@
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Level 3: Mark as Done**" var-fragment="text.md#level3" />
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Level 4: ToDo, Event, Deadline**" var-fragment="text.md#level4" />
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-TextUiTesting**" var-fragment="extensions.mbdf#A-TextUiTesting" />
-<include src="dukeFragment.md" boilerplate var-header="**Duke - Level 5: Handle Incorrect Inputs**" var-fragment="text.md#level5" />
+<include src="dukeFragment.md" boilerplate var-header="**Duke - Level 5: Handle Errors**" var-fragment="text.md#level5" />
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Level 6: Delete**" var-fragment="text.md#level6" />
-<include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-Enums**" var-fragment="extensions.mbdf#A-Enums" />
+<include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-Enums** `[if applicable]`" var-fragment="extensions.mbdf#A-Enums" />
 
 </div>
 </div>
