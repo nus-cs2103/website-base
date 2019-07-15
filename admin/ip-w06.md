@@ -6,8 +6,8 @@
 </div>
 <div id="body">
 
-<include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-UserGuide**" var-fragment="extensions.mbdf#A-UserGuide" />
-<include src="dukeFragment.md" boilerplate var-header="**Duke - Ext: A-Release**" var-fragment="extensions.mbdf#A-Release" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-UserGuide`: User Guide**" var-fragment="extensions.mbdf#A-UserGuide" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-Release`: Release**" var-fragment="extensions.mbdf#A-Release" />
 
 </div>
 </div>

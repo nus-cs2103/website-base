@@ -5,6 +5,9 @@
 
 <include src="../../admin/ip-w05.md#body" />
 
+<br>
+{{ hr_double }}
+
 # tP Milestone: v1.0
 
 <include src="../../admin/project-w05-v10.md#main" />
