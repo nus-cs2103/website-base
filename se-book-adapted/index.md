@@ -37,7 +37,7 @@ siteNav: se-book-adapted-sitenav.md
 
 <div class="website-content" id="main">
 
-## Software Engineering for Self-Directed Learners <small><small><small><span class='badge badge-pill badge-success'>{{ module_pair }} edition - 2018</span></small></small></small>
+## Software Engineering for Self-Directed Learners {{ edition_badge }}
 
 <a href="{{baseUrl}}/book/about/acknowledgements.html" target="_blank">Acknowledgements</a> | <a href="{{baseUrl}}/se-book-adapted/print.html" target="_blank"><md>All chapters as one **printer-friendly page** (huge file!) {{ icon_print }}</md></a>
 

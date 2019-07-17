@@ -11,7 +11,7 @@ footer: footer.md
 {% import "se-book-adapted/config.njk" as config with context %}
 {% import "se-book-adapted/chapters-printable/chapter-printable.njk" as chapter_template with context %}
 
-# <big>**Software Engineering for Self-Directed Learners**</big>
+# <big>**Software Engineering for Self-Directed Learners**</big> {{ edition_badge }}
 
 <span id="printable-version-description"><small>%%{{ icon_print }} This is a **printer-friendly** version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.%%</small></span>
 
