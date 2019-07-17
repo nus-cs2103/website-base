@@ -7,6 +7,22 @@ head: scheduleHead.md
 
 
 {% set weeks = [
+    {num: "1", day:"Aug 12"},
+    {num: "2", day:"Aug 19"},
+    {num: "3", day:"Aug 26"},
+    {num: "4", day:"Sep 2"},
+    {num: "5", day: "Sep 9" },
+    {num: "6", day: "Sep 16" },
+    {num: "7", day: "Sep 30" },
+    {num: "8", day: "Oct 7" },
+    {num: "9", day: "Oct 14" },
+    {num: "10", day: "Oct 21" },
+    {num: "11", day: "Oct 28" },
+    {num: "12", day: "Nov 4" },
+    {num: "13", day: "Nov 11" }
+] %}
+
+<!--
     {num: "1", day:"Jan 14"},
     {num: "2", day:"Jan 21"},
     {num: "3", day:"Jan 28"},
@@ -19,11 +35,11 @@ head: scheduleHead.md
     {num: "10", day: "Mar 25" },
     {num: "11", day: "Apr 1" },
     {num: "12", day: "Apr 8" },
-    {num: "13", day: "Apr 12" }
-] %}
+    {num: "13", day: "Apr 15" }
+-->
 
 
-{% set current_weeks = ["2"] %}
+{% set current_weeks = ["1"] %}
 
 
 {% set all_topics = [
