@@ -112,3 +112,8 @@
 {% endmacro %}
 
 {% macro thumb(text) %}<span class="badge badge-pill badge-dark p-2"><big><big>{{ text }}</big></big></span>{% endmacro %}
+
+{% macro timing_badge(text, type="danger") %}<span class="badge badge-{{ type }} font-weight-normal"><md>:far-clock: {{ text }}</md></span>{% endmacro %}
+
+{% macro show_as_tab(text, icon) %}<span class="border border-bottom-0 rounded-top">&nbsp;{{ icon }} {{ text }} </span>{% endmacro %}
+
