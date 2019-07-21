@@ -41,8 +41,9 @@
 <span id="dotted_line"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></span>
 
 <span id="icon_announcement"><md>:fas-bell:</md></span>
+<span id="icon_book"><md>:fas-book:</md></span>
 <span id="icon_calendar"><md>:fas-calendar-alt:</md></span>
-<span id="icon_deadline">:alarm_clock:</span>
+<span id="icon_deadline"><md>:fas-clock:</md></span>
 <span id="icon_dislike"><md>:fas-thumbs-down:</md></span>
 <span id="icon_example"><md>:fas-cube:</md></span>
 <span id="icon_embedding"><md>:glyphicon-log-in:</md></span>
