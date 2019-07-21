@@ -534,7 +534,7 @@ head: scheduleHead.md
 
 {% set categories = {
   notices: {name: "Notices", file: "index", icon: icon_announcement},
-  topics: {name: "Topics", file: "topics", icon: icon_outcome},
+  topics: {name: "Topics", file: "topics", icon: icon_book},
   project: {name: "Project", file: "project", icon: icon_project},
   tutorial: {name: "Tutorial", file: "tutorial-" + (module | lower), icon: icon_tutorial},
   admin: {name: "Admin Info", file: "admin", icon: icon_info}

@@ -6,7 +6,7 @@
 </div>
 <div id="body">
 
-{{ thumb(1) }} Ensure you have met the following prerequisites:
+{{ thumb(1) }} **Ensure you have met the following prerequisites:**
 
 <box>
 
@@ -21,13 +21,13 @@
 </box>
 <br>
 
-{{ thumb(2) }} Set up the project in your Computer:
+{{ thumb(2) }} **Set up the project in your Computer:**
 1. Fork [this repo: TBD], and clone it into your Computer.
 1. Set up the project in your IDE as explained in the README file.
 
-{{ thumb(3) }} Implement the following levels/extensions in the given order.
-   * Commit code at important points. Minimally, commit after reaching each level/extension.
-   * After reaching each level/extension,
+{{ thumb(3) }} **Implement the following <tooltip content="an _increment_ is a level or an extension">increments</tooltip>** in the given order.
+   * Commit code at important points. Minimally, commit after completing each increment.
+   * After reaching each increment,
      * **`git tag`** the commit with an appropriate label e.g., `Level-2`, `A-TextUiTesting`
      * **`git push`** the code to your fork
 <include src="dukeFragment.md" boilerplate var-header="**`Level-1`: Greet, Echo, Exit**" var-fragment="text.md#level1" />

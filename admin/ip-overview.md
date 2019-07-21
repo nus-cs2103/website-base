@@ -22,7 +22,7 @@ The project is to be **done over weeks 2-6**. The work to be done in each week i
 <box type="warning">
 
 * **Volatile requirements ahead!**: Some requirements will only be released later (or could be changed along the way), to simulate how requirements of a project may not be available at the start or stay the same during the project.
-* **Requirements may differ between students!**: Note that some requirements that are to be released later could be different from others.
+* **Requirements may differ between students!**: Note that some requirements that are to be released later could be different from one student to another.
 </box>
 
 </div>

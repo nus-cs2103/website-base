@@ -11,7 +11,7 @@ Create a personal GitHub account if you don't have one yet.
    * Specify your full name. 
    * Upload a profile photo that matches <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.
 
-   <panel type="seamless" header="%%Why am I being pushed to complete my GitHub profile?%%" >
+   <panel type="seamless" header="%%Why am I being asked to complete my GitHub profile?%%" >
 
    The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just for the module.
 
