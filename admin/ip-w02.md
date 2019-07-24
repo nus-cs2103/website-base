@@ -25,10 +25,10 @@
 1. Fork [this repo: TBD], and clone it into your Computer.
 1. Set up the project in your IDE as explained in the README file.
 
-{{ thumb(3) }} **Implement the following <tooltip content="an _increment_ is a level or an extension">increments</tooltip>** in the given order.
-   * Commit code at important points. Minimally, commit after completing each increment.
-   * After reaching each increment,
-     * **`git tag`** the commit with an appropriate label e.g., `Level-2`, `A-TextUiTesting`
+{{ thumb(3) }} **Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip>** in the given order.
+   * Commit code at important points. ==Minimally, commit after completing each increment==.
+   * After completing each increment,
+     * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
      * **`git push`** the code to your fork
 <include src="dukeFragment.md" boilerplate var-header="**`Level-1`: Greet, Echo, Exit**" var-fragment="text.md#level1" />
 <include src="dukeFragment.md" boilerplate var-header="**`Level-2`: Add, List**" var-fragment="text.md#level2" />

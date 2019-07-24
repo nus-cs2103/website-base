@@ -7,8 +7,6 @@
 
 <tip-box> 
 
-{{ icon_important_big_red }} ==Our tutorials start on week 2== (even before CORS tutorial bidding is over), not in week 3 as other modules do. {{ module }} (not {{ module }}T) students need to choose a temporary tutorial slot for week 2 tutorial. We'll inform you the procedure to do so in due course.
-
 {{ icon_important_big_red }} Our tutorial IDs are different from CORS. Format: `W09` means `Wednesday` `0900` and so on.
 
 </tip-box>

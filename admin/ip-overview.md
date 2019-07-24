@@ -6,18 +6,18 @@
 </div>
 <div id="body">
 
-The objective of the individual project (iP):
-* Refresh programming skills you learned in CS2030
-* Learn some skills required for the team project
+The objectives of the individual project (iP):
+* refresh programming skills you learned in CS2030
+* learn some skills required for the team project
 
-All skills you will learn when doing the iP will be useful in the team project (tP). Furthermore, some of the code you will write in iP can be adapted for the tP.
+All skills you will learn in the iP will be useful in the team project (tP). Furthermore, some of the code you will write in iP can be adapted for the tP.
 
-The iP is based on the generic project [_Project Duke_](../se-book-adapted/projectDuke/index.html), the overview of which is given below.
+The iP is based on the generic project called [_Project Duke_](../se-book-adapted/projectDuke/index.html), the overview of which is given below.
 
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Overview**" var-fragment="text.md#intro" />
 <br>
 
-The project is to be **done over weeks 2-6**. The work to be done in each week is explained in separate sections.
+The project is to be **done over weeks 2-6**.
 
 <box type="warning">
 

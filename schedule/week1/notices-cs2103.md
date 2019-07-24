@@ -25,4 +25,4 @@
 
 ##### {{ timing_badge("within the week", "secondary") }} 
 
-* **See the [{{ show_as_tab("Admin", icon_info) }}](admin.html)&nbsp;tab (above)** for some important admin info you need to know at the start of the semester.
+* **See the** [{{ show_as_tab("Admin Info", icon_info) }}](admin.html)&nbsp;**tab (above)** for some important admin info you need to know at the start of the semester.

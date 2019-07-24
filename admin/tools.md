@@ -29,8 +29,8 @@ You are ==_required to_ use GitHub== as the hosting and collaboration platform o
 
 * **The preferred channels for module-related communications are**:
   * ==[github/nus-{{ module | lower }}-{{ semester }}/forum]({{module_org}}/forum/issues)== (not LumiNUS forum) -- suitable for longer-running conversations
-  * in our slack channel [{{slack_team}}]({{slack_team}}) -- suitable for quick chats 
-* When communicating with instructors, prefer the two public channels given above. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the public channels are not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy.%%.
+  * our slack channel [{{slack_team}}]({{slack_team}}) -- suitable for quick chats 
+* When communicating with instructors, prefer the two public channels given above. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the public channels are not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy%%.
 * You are encouraged to help others in the forum (e.g., share tips, help with technical problems). ==We consider such sharing when giving out `A+` grades and when recruiting tutors.==
 
 **Preparation:** We encourage you all to,

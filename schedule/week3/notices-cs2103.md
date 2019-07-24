@@ -1,9 +1,10 @@
+{% from "common/macros.njk" import embed_topic, timing_badge, show_as_tab with context %}
 {% from "schedule/index.md" import show_week_pagetop with context%}
 {{ show_week_pagetop(3, "notices") }}
 
-* We start formal tutorials this week. The [tutorial time table](https://nus-cs2103-ay1819s1.github.io/cs2103-website/admin/tutorials.html#tutorial-timetable) is on the module website.
+##### {{ timing_badge("by <tooltip content='2359 immediately _before_ your tutorial'>weekly deadline</tooltip>") }}
 
-* ==**There is graded project task** this week!==
+* We start formal tutorials this week. The [tutorial time table]({{ module_website }}/admin/tutorials.html#tutorial-timetable) is on the module website.
 
 * Note that the official {{ icon_deadline }} **deadline to achieve weekly project tasks is the midnight before your tutorial**. Our scripts that detect your work run at midnight and only the work that's done by midnight will be eligible for marks (for cases where the task is graded).
 
