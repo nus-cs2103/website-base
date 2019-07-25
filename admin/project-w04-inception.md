@@ -6,11 +6,19 @@
 </div>
 <div id="body">
 
-<p class="lead" style="color: purple"><md>:far-calendar-check: <include src="project-timeline.md#mid-v10-overview" inline /></md></p>
+<p class="lead" style="color: purple"><md>:far-calendar-check: <include src="project-timeline.md#inception-overview" inline /></md></p>
 
 :bulb: Given below are some guidance on the recommended progress at this point of the project %%(i.e., at week 4, which is the midway point of the milestone v1.0)%%
 
 This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).
+
+* **Decide project direction, target user profile, and problem addressed**
+
+  Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in <trigger trigger="click" for="modal:v10-scope">[Admin {{ icon_embedding }} Project Scope]</trigger>
+
+<modal large title="Admin {{ icon_embedding }} Project Scope (Extract)" id="modal:v10-scope">
+  <include src="project-scope.md#project-direction"/>
+</modal>
 
 * **Step 1 : Brainstorm user stories**
 
@@ -120,4 +128,4 @@ This is a good time to analyze requirements with a view to conceptualizing the n
 {% endmacro %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-w04-mid-v10", show_main_text) }}
+{{ show_admin_page("project-w04-inception", show_main_text) }}

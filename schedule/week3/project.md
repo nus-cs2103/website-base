@@ -5,6 +5,6 @@
 
 <include src="../../admin/ip-w03.md#body" />
 
-# tP Milestone: Inception
+# tP Milestone: Kickoff
 
-<include src="../../admin/project-w03-inception.md#main" />
+<include src="../../admin/project-w03-kickoff.md#main" />

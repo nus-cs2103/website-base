@@ -1,23 +1,21 @@
 {% macro show_main_text() %}
 <div id="main">
 
-[<img src="{{baseUrl}}/admin/images/timeline.png" width="100%">](images/timeline.png)
-
-To expedite your project implementation, you will be given some sample code (AddressBook-Level1 to AddressBook-Level4, shown as `AB1` to `AB4` in the diagram above).  You can use `AB1` to `AB3` to ramp up your tech skills in preparation for the project. `AB4` is the version you will use as the starting point for your final project. Some of the work you do in `AB1` to `AB3` can be ported over to `AB4` and can be used to claim credit in the final project.
+You will start the tP in week 3, while the iP is ongoing. You will deliver the tP iteratively, planning the project as if you are aiming for a `v2.0` but delivering only the iterations `v1.0` to `v1.4` during the module. The `v1.4` is the version that will be subjected to final project grading.
 
 Given below is the high-level timeline of the project.
 
 Week  | Stage     | Activities
 ------|-----------|-----------
-**3** |inception| <span id="inception-overview">Decide on a overall project direction %%(user profile, problem addressed, optimize or morph?).%%</span>
-**4** |mid-v1.0 | <span id="mid-v10-overview">Decide on requirements %%(user stories, use cases, non-functional requirements).%%</span>
-**5** |v1.0     | <span id="v10-overview">Conceptualize product and document it as a user guide(draft), draft a rough project plan.</span>
-**6** |mid-v1.1 | <span id="mid-v11-overview">Set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base.</span>
-**7** |v1.1     | <span id="v11-overview">Update UG and DG in the repo, attempt to do global-impact changes to the code base.</span>
-**8** |mid-v1.2 | <span id="mid-v12-overview">Adjust project schedule/rigor as needed, start proper milestone management.</span>
-**9** |v1.2     | <span id="v12-overview">Move code towards v2.0 in small steps, start documenting design/implementation details in DG.</span>
-**10**|mid-v1.3 | <span id="mid-v13-overview">Continue to enhance features. Make code RepoSense-compatible. Try doing a proper release.</span>
-**11**|v1.3     | <span id="v13-overview">Release as a jar file, release updated user guide, peer-test released products, verify code authorship.</span>
+**3** |kick-off | <span id="kickoff-overview">Set up a project meeting time. Familiarize with AB3</span>
+**4** |inception| <span id="inception-overview">Start weekly project meetings. Start a collaborative doc to take project notes. Decide on a overall project direction %%(user profile, problem addressed).%%</span>
+**5** |v1.0     | <span id="v10-overview">Start documenting requirements %%(user stories, use cases, NFRs).%%</span>
+**6** |mid-v1.1 | <span id="mid-v11-overview">Set up project repo. Get familiar with the code base. Draft the UG.</span>
+**7** |v1.1     | <span id="v11-overview">Transfer documentation to the repo %%(AboutUs; ContactUs; README; UG; DG: user stories, glossary, NFRs, use cases)%%, draft a rough project plan.</span>
+**8** |mid-v1.2 | <span id="mid-v12-overview">Start proper milestone management.Start adding a minimal version of the new feature.</span>
+**9** |v1.2     | <span id="v12-overview">Deliver/demo a minimal version of the new features.</span>
+**10**|mid-v1.3 | <span id="mid-v13-overview">Start on the full version of the new features. Update DG with design/implementation details. Make code RepoSense-compatible. Try doing a proper release.</span>
+**11**|v1.3     | <span id="v13-overview">Deliver the meat of the feature, release as a jar file, release updated user guide, peer-test released products, verify code authorship.</span>
 **12**|mid-v1.4 | <span id="mid-v14-overview">Tweak as per peer-testing results, draft Project Portfolio Page, practice product demo.</span>
 **13**|v1.4     | <span id="v14-overview">Final tweaks to docs/product, release product, demo product, evaluate peer projects.</span>
 

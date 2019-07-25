@@ -15,4 +15,4 @@
 
 ##### {{ timing_badge("in the tutorial", "info") }}
 
-* **CS2103 students only:** ==forming project teams will happen at the _start_ of this week's tutorial==. 
+* **CS2103 students only:** ==forming project teams will happen at the _start_ of this week's tutorial==. See the [{{ show_as_tab("Tutorial", icon_tutorial) }}](project.html)&nbsp;tab for more info.
