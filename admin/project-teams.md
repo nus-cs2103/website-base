@@ -5,11 +5,16 @@
 <small>%%[Picture: The team that was at the top of early Google]%%</small>
 <p/>
 
-**When to form teams**: Your team will be formed in week 3 tutorial.
+**When to form teams**:
+* CS2103T: Your team will be formed by the CS2101 side.
+* CS2103: Your team will be formed at the _start_ of the week 3 tutorial. Please try to arrive on time for that tutorial; if you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
 
-**Team size**: The default ==team size is five==. 
+**Team size**: The default ==team size is five==.
+
+<div id="teamIdFormat">
 
 **Team ID**: This will be given to you after forming teams. It has the form `TUTORIAL_ID-TEAM_NUMBER` e.g, `W14-2` means you are in tutorial W14 (i.e., Wed 1400-1500), team 2.
+</div>
 
 {{ embed_topic("tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial IDs", "projectTeams-tutorialIDs", "3") }}
 
