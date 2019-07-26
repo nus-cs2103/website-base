@@ -1,9 +1,11 @@
+{% from "common/admin.njk" import show_project_summary_lead with context %}
+
 {% macro show_main_text() %}
 <div id="main">
 
-<div id="title">
+{% call show_project_summary_lead()%}
 
-</div>
+{% endcall %}
 <div id="body">
 
 <include src="dukeFragment.md" boilerplate var-header="**`A-UserGuide`: User Guide**" var-fragment="extensions.mbdf#A-UserGuide" />

@@ -1,11 +1,12 @@
+{% from "common/admin.njk" import show_project_summary_lead with context %}
 {% from "common/macros.njk" import thumb with context %}
 
 {% macro show_main_text() %}
 <div id="main">
 
-<div id="title">
+{% call show_project_summary_lead()%}
 
-</div>
+{% endcall %}
 <div id="body">
 
 {{ thumb(1) }} Add the following deliverables, doing each in the following manner:

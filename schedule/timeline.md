@@ -14,10 +14,7 @@ pageNav: 3
 
 {% for week_num in range(1, 14) %}
 
-<span class="text-center">
-
 ### <span class="badge badge-pill badge-dark"><small>**Week {{ week_num }}**</small></span>
-</span>
 
 <include src="week{{ week_num }}/notices-{{ module }}.md#summary" optional />
 {% endfor %}

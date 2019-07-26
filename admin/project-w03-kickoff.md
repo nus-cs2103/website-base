@@ -1,12 +1,14 @@
+{% from "common/admin.njk" import show_project_summary_lead with context %}
+
 {% macro show_main_text() %}
 <div id="main">
 
-<div id="title">
+{% call show_project_summary_lead()%}
+1. Set up a project meeting time.
+2. Get familiar with AB3 features.
+{% endcall %}
 
-</div>
 <div id="body">
-
-<p class="lead" style="color: purple"><md>:far-calendar-check: <include src="project-timeline.md#kickoff-overview" inline /></md></p>
 
 * **Familiarize yourself with AB3**: Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html) and play around with it to familiarize with its current features.
 

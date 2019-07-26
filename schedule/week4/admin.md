@@ -1,15 +1,13 @@
 {% from "schedule/index.md" import show_week_pagetop with context%}
+{% import "common/macros.njk" as macros with context %}
+{% from "common/admin.njk" import topics, policies, faqs, admin_topics_to_read, show_admin_summary with context %}
+
 {{ show_week_pagetop(4, "admin") }}
 
-<panel type="seamless" header="%%{{ icon_info }} TLDR%%" >
-<span id="summary">
-
-**Admin:**
+{% call show_admin_summary() %}
 1. Accept GitHub invitation from the module organization
 1. Practice peer evaluation on TEAMMATES
-</span>
-</panel>
-<p/>
+{% endcall %}
 
 <div id="additional">
 
@@ -17,8 +15,5 @@
 
 * **A practice peer evaluation/feedback session** will be set up on TEAMMATES. You should receive the submission link by Thursday noon. This session is for you get get used to the system and also to get to know the evaluation criteria. This round of peer evaluations are not used for grading. Email `{{ module | lower }}@comp.nus.edu.sg` if you did not receive the submission link on time.
 </div>
-
-{% import "common/macros.njk" as macros with context %}
-{% from "common/admin.njk" import topics, policies, faqs, admin_topics_to_read with context %}
 
 {{ macros.show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week4, is_flat=false ) }}

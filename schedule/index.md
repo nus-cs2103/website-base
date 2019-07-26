@@ -573,13 +573,12 @@ pageNav: 4
 <div class="container">
   <div class="row">
   <div class="col-sm border-right border-bottom">
-<span class="badge badge-pill badge-light float-right ml-1"><trigger trigger="click" for="modal:week{{ week_num }}Summary-toc"><md>%%:fas-stream:%%</md></trigger></span>
-
-<modal large title="Week {{ week_num }} Topics" id="modal:week{{ week_num }}Summary-toc">
-  <include src="topics.md#toc"/>
-</modal>
 
 {{ topics.show_week_schedule_main(week_num, all_topics, "", is_toc=true, is_flat=true) }}
+
+<panel type="seamless" header="%%Full ToC%%">
+  <include src="topics.md#toc"/>
+</panel>
 
   </div>
   <div class="col-sm border-bottom">
@@ -595,8 +594,8 @@ pageNav: 4
 {% endmacro %}
 
 {% macro show_project_summary(ip_file=false, tp_file=false) %}
-<panel type="seamless" header="%%{{ icon_info }} TLDR%%" >
-<span id="summary">
+<panel type="seamless" header="%%{{ icon_info }} TLDR%%" expanded>
+<span id="summary" style="color: purple;">
 
 {% if ip_file %}
 **iP:**

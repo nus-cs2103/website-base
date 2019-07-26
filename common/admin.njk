@@ -98,8 +98,8 @@ head: adminHead.md
     {level: 2, id: "project-constraints", title: "tP: Constraints", link: "project-constraints.html", priority: 2},
     {level: 2, id: "project-teams", title: "tP: Forming Teams", link: "project-teams.html", priority: 2},
     {level: 2, id: "project-timeline", title: "tP: Timeline", link: "project-timeline.html", priority: 2},
-    {level: 2, id: "project-w03-kickoff", title: "tP: inception [week 3]", link: "project-w03-kickoff.html", priority: 2},
-    {level: 2, id: "project-w04-inception", title: "tP: mid-v1.0 [week 4]", link: "project-w04-inception.html", priority: 3},
+    {level: 2, id: "project-w03-kickoff", title: "tP: Kickoff [week 3]", link: "project-w03-kickoff.html", priority: 2},
+    {level: 2, id: "project-w04-inception", title: "tP: Inception [week 4]", link: "project-w04-inception.html", priority: 3},
     {level: 2, id: "project-w05-v10", title: "tP: v1.0 [week 5]", link: "project-w05-v10.html", priority: 2},
     {level: 2, id: "project-w06-mid-v11", title: "tP: mid-v1.1 [week 6]", link: "project-w06-mid-v11.html", priority: 2},
     {level: 2, id: "project-w07-v11", title: "tP: v1.1 [week 7]", link: "project-w07-v11.html", priority: 2},
@@ -242,4 +242,23 @@ week13: [
 {{ show_title(current_topic_id, topics) | trim }}
 {{ main_text_macro() }}
 {{ show_admin_pagebottom(topics, current_topic_id) }}
+{% endmacro %}
+
+{% macro show_admin_summary()%}
+<panel type="seamless" header="%%{{ icon_info }} TLDR%%" expanded >
+<span id="summary" style="color: purple;">
+
+**Admin:**
+{{ caller() }}
+</span>
+</panel>
+<p/>
+
+{% endmacro %}
+
+{% macro show_project_summary_lead()%}
+<div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
+
+{{ caller() }}
+</div>
 {% endmacro %}

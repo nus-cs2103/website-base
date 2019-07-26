@@ -1,18 +1,15 @@
+{% from "common/admin.njk" import show_project_summary_lead with context %}
+
 {% macro show_main_text() %}
 <div id="main">
 
-<div id="title">
-
-</div>
-<div id="summary">
-
+{% call show_project_summary_lead()%}
 1. Start weekly project meetings.
 1. Start a collaborative doc to take project notes.
 1. Decide on a overall project direction %%(user profile, problem addressed).%%
-</div>
-<div id="body">
+{% endcall %}
 
-<p class="lead" style="color: purple"><md>:far-calendar-check: <include src="project-timeline.md#inception-overview" inline /></md></p>
+<div id="body">
 
 :bulb: Given below are some guidance on the recommended progress at this point of the project %%(i.e., at week 4, which is the midway point of the milestone v1.0)%%
 

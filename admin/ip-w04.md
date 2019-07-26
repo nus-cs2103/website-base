@@ -1,15 +1,15 @@
+{% from "common/admin.njk" import show_project_summary_lead with context %}
 {% from "common/macros.njk" import thumb with context %}
+
 {% macro show_main_text() %}
 <div id="main">
 
-<div id="title">
-
-</div>
-<div id="summary">
-1. Review some peer PRs 
+{% call show_project_summary_lead()%}
+1. Review some peer PRs
 1. Add increments: `A-Gradle`,`A-CheckStyle`, `Level-10`, `A-Varargs`
 1. Add another extension
-</div>
+{% endcall %}
+
 <div id="body">
 
 

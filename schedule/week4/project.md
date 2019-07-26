@@ -12,4 +12,4 @@
 
 # tP Milestone: Inception
 
-<include src="../../admin/project-w04-inception.md#main" />
+<include src="../../admin/project-w04-inception.md#body" />
