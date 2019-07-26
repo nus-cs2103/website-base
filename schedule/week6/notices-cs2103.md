@@ -18,3 +18,5 @@
 * Do **inform your tutor (or write to the module email) if you are falling behind or cannot cope with the module requirements**. While we try to avoid _hand holding_ or _spoon feeding_ students, we do want to help you keep up with the module pace when necessary.
 
 * **If you encounter any technical difficulties when setting up AB-4**, please post in our forum so that AB-4 developers can follow up with you. Unlike in first year programming modules, there is no guarantee that tutors will know solutions to your technical problems -- it is not reasonable to even expect so. But you can increase your chances of a solution if you post in the forum as soon as you encounter them. Also, see [Admin » Appendix D: Getting Help in this Module ]({{ module_website }}/admin/appendixD-help.html#d-getting-help-in-this-module)
+
+* **One part of this week's lecture is not covered in the textbook** and is relevant for your project work for the upcoming project milestone v1.0. You are encouraged to attend this week's lecture even if you don't normally come to lectures.

@@ -12,7 +12,7 @@ Week  | Stage     | Activities
 **5** |v1.0     | <span id="v10-overview">Start documenting requirements %%(user stories, use cases, NFRs).%%</span>
 **6** |mid-v1.1 | <span id="mid-v11-overview">Set up project repo. Get familiar with the code base. Draft the UG.</span>
 **7** |v1.1     | <span id="v11-overview">Transfer documentation to the repo %%(AboutUs; ContactUs; README; UG; DG: user stories, glossary, NFRs, use cases)%%, draft a rough project plan.</span>
-**8** |mid-v1.2 | <span id="mid-v12-overview">Start proper milestone management.Start adding a minimal version of the new feature.</span>
+**8** |mid-v1.2 | <span id="mid-v12-overview">Start proper milestone management. Start adding a minimal version of the new feature.</span>
 **9** |v1.2     | <span id="v12-overview">Deliver/demo a minimal version of the new features.</span>
 **10**|mid-v1.3 | <span id="mid-v13-overview">Start on the full version of the new features. Update DG with design/implementation details. Make code RepoSense-compatible. Try doing a proper release.</span>
 **11**|v1.3     | <span id="v13-overview">Deliver the meat of the feature, release as a jar file, release updated user guide, peer-test released products, verify code authorship.</span>
