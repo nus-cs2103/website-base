@@ -5,6 +5,7 @@ footer: footer.md
 head: scheduleHead.md
 </frontmatter>
 
+{% import "common/topics.njk" as topics with context %}
 
 {% set weeks = [
     {num: "1", day:"Aug 12"},
@@ -533,7 +534,7 @@ head: scheduleHead.md
 {% set week = weeks[week_num_int - 1] %}
 
 {% set categories = {
-  notices: {name: "Notices", file: "index", icon: icon_announcement},
+  notices: {name: "Summary", file: "index", icon: icon_announcement},
   topics: {name: "Topics", file: "topics", icon: icon_book},
   project: {name: "Project", file: "project", icon: icon_project},
   tutorial: {name: "Tutorial", file: "tutorial-" + (module | lower), icon: icon_tutorial},
@@ -565,6 +566,50 @@ pageNav: 4
 
 {% endmacro %}
 
+
+{% macro show_week_summary(week_num) %}
+
+<span id="summary">
+<div class="container">
+  <div class="row">
+  <div class="col-sm border-right border-bottom">
+<span class="badge badge-pill badge-light float-right ml-1"><trigger trigger="click" for="modal:week{{ week_num }}Summary-toc"><md>%%:fas-stream:%%</md></trigger></span>
+
+<modal large title="Week {{ week_num }} Topics" id="modal:week{{ week_num }}Summary-toc">
+  <include src="topics.md#toc"/>
+</modal>
+
+{{ topics.show_week_schedule_main(week_num, all_topics, "", is_toc=true, is_flat=true) }}
+
+  </div>
+  <div class="col-sm border-bottom">
+
+<include src="admin.md#summary" optional/>
+<include src="project.md#summary" optional/>
+
+  </div>
+  </div>
+</div>
+</span>
+<br>
+{% endmacro %}
+
+{% macro show_project_summary(ip_file=false, tp_file=false) %}
+<panel type="seamless" header="%%{{ icon_info }} TLDR%%" >
+<span id="summary">
+
+{% if ip_file %}
+**iP:**
+<include src="../../admin/{{ ip_file }}#summary" />
+{% endif %}
+{% if tp_file %}
+**tP:**
+<include src="../../admin/project-w04-inception.md#summary" />
+{% endif %}
+</span>
+</panel>
+<p/>
+{% endmacro %}
 
 <!-- ============================= page content ============================================ -->
 

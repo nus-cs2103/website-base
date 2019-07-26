@@ -1,5 +1,7 @@
-{% from "schedule/index.md" import show_week_pagetop with context%}
+{% from "schedule/index.md" import show_week_pagetop, show_project_summary with context%}
 {{ show_week_pagetop(4, "project") }}
+
+{{ show_project_summary(ip_file="ip-w04.md", tp_file="project-w04-inception.md") }}
 
 # iP
 
@@ -8,6 +10,6 @@
 <br>
 {{ hr_double }}
 
-# tP Milestone: mid-v1.0
+# tP Milestone: Inception
 
 <include src="../../admin/project-w04-inception.md#main" />

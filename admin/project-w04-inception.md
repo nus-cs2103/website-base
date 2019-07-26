@@ -4,6 +4,12 @@
 <div id="title">
 
 </div>
+<div id="summary">
+
+1. Start weekly project meetings.
+1. Start a collaborative doc to take project notes.
+1. Decide on a overall project direction %%(user profile, problem addressed).%%
+</div>
 <div id="body">
 
 <p class="lead" style="color: purple"><md>:far-calendar-check: <include src="project-timeline.md#inception-overview" inline /></md></p>

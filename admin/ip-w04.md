@@ -5,6 +5,11 @@
 <div id="title">
 
 </div>
+<div id="summary">
+1. Review some peer PRs 
+1. Add increments: `A-Gradle`,`A-CheckStyle`, `Level-10`, `A-Varargs`
+1. Add another extension
+</div>
 <div id="body">
 
 
