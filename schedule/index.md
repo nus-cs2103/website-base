@@ -581,6 +581,7 @@ pageNav: 4
   </div>
   <div class="col-sm border-bottom">
 
+**Admin:**
 <include src="admin.md#summary" optional/>
 <include src="project.md#summary" optional/>
 
@@ -592,8 +593,7 @@ pageNav: 4
 {% endmacro %}
 
 {% macro show_project_summary(ip_file=false, tp_file=false) %}
-<panel type="seamless" header="%%{{ icon_info }} TLDR%%" expanded>
-<span id="summary" style="color: purple;">
+<div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
 
 {% if ip_file %}
 **iP:**
@@ -603,9 +603,8 @@ pageNav: 4
 **tP:**
 <include src="../../admin/project-w04-inception.md#summary" />
 {% endif %}
-</span>
-</panel>
-<p/>
+</div>
+
 {% endmacro %}
 
 <!-- ============================= page content ============================================ -->
