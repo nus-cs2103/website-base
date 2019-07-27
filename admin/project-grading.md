@@ -9,7 +9,7 @@ See the sections below for details of how we assess each aspect.
 
 -----------------------------------------------------------------------------------------------------------------------
 
-#### 1. Project Assessment: Product Design %%[{{ icon_team }} 5 marks]%%
+#### 1. Project Grading: Product Design %%[{{ icon_team }} 5 marks]%%
 
 **Evaluates:** how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user
 
@@ -45,7 +45,7 @@ Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is de
 
 -----------------------------------------------------------------------------------------------------------------------
 
-#### 2. Project Assessment: Implementation %%[{{ icon_individual }} 15 marks]%%
+#### 2. Project Grading: Implementation %%[{{ icon_individual }} 15 marks]%%
 
 **<big>2A. Code quality</big>**
 
@@ -124,7 +124,7 @@ Evaluate the amount of work, on a scale of 0 to 30.
 
 -----------------------------------------------------------------------------------------------------------------------
 
-#### 3. Project Assessment: QA %%[{{ icon_individual }} 10 marks]%%
+#### 3. Project Grading: QA %%[{{ icon_individual }} 10 marks]%%
 
 <big>**3A. System/Acceptance Testing:**</big>
 
@@ -142,11 +142,11 @@ Evaluate the amount of work, on a scale of 0 to 30.
 
 **Based on:**
 1. bugs in your work found by others during the PE
-1. your test code %%(note <trigger trigger="click" for="modal:projectAssessmentQA-testingExpectations">our expectations for automated testing</trigger>)%%
+1. your test code %%(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)%%
 
 **Evaluated by:** tutors (in the capacity of _moderators_ %%e.g., to verify if it is reasonable for the team to downgrade the severity of a bug you reported%%)
 
-<modal large title="Our expectations for automated testing in the project" id="modal:projectAssessmentQA-testingExpectations">
+<modal large title="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations">
   <include src="project-scope.md#testing-expectations"/>
 </modal>
 
@@ -168,7 +168,7 @@ Evaluate the amount of work, on a scale of 0 to 30.
 
 -----------------------------------------------------------------------------------------------------------------------
 
-#### 4. Project Assessment: Documentation %%[{{ icon_individual }} 10 marks]%%
+#### 4. Project Grading: Documentation %%[{{ icon_individual }} 10 marks]%%
 
 **Evaluates:** the quality of the sections you wrote for the user guide and the developer guide
 
@@ -213,7 +213,7 @@ Evaluate the quality of developer documentation **based on the developer docs ci
 
 -----------------------------------------------------------------------------------------------------------------------
 
-#### 5. Project Assessment: Project Management %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%
+#### 5. Project Grading: Project Management %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%
 
 <div id="project-management-grading"> 
 
@@ -242,7 +242,7 @@ Other criteria:
 
 To earn full marks, you should have done a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
 
-{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " Project Scope → Examples of team-tasks", "projectAssessment-exmapleTeamTasks", "3") }}
+{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " Project Scope → Examples of team-tasks", "projectGrading-exmapleTeamTasks", "3") }}
 
 </div>
 
@@ -251,4 +251,4 @@ To earn full marks, you should have done a fair share of the team tasks. You can
 
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-assessment", show_main_text) }}
+{{ show_admin_page("project-grading", show_main_text) }}

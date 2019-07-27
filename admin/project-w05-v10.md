@@ -23,7 +23,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 {{ icon_important_big_red }} The deadline for reaching a milestone is ==the midnight before your tutorial== %%e.g., if your tutorial is on Wednesday, you need to reach the milestone by Tuesday midnight.%%
 
-{{ embed_topic("project-assessment.md#project-management-grading", "Admin " + icon_embedding + " Project Assessment → Project Management", "v10-projectMgsAssessment", "3") }}
+{{ embed_topic("project-grading.md#project-management-grading", "Admin " + icon_embedding + " Project Grading → Project Management", "v10-projectMgsGrading", "3") }}
 
 ### v1.0 Documentation
 

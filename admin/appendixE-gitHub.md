@@ -159,7 +159,7 @@ Note that some of our download scripts depend on the following folder paths. Ple
 
   * Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs.
 
-<modal title="Admin {{ icon_embedding }} Project Assessment → Expectation on testing" id="modal:appEworkflow-testingExpectations">
+<modal title="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
   <include src="project-scope.md#testing-expectations"/>
 </modal>
 </div>

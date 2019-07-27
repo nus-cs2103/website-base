@@ -38,7 +38,7 @@ Given the fast pace required by the paper, to be fair to all students, **you wil
 * If a question is not clear, you can circle the question number in the question paper and write your doubt in the question paper, near that question.
 * If your doubt is justified %%(e.g. there is a typo in the question)%% or if many students found the question to be unclear, the examiner may decide to omit that question from grading.
 
-**Questions in Part 1 are confidential.** You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.
+**Questions in Part 1 are confidential.** You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the exam paper are to be returned at the end of the exam.
 
 <div class="full-mode">
 

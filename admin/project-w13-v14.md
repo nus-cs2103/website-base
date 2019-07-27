@@ -36,9 +36,9 @@ Team/Individual Item | Name format | Upload to
 
 **Grading**:
 
-<span class="flat">Described in [[Admin: Project: Assessment](#admin-project-assessment-anchor)]</span>
+<span class="flat">Described in [[Admin: Project: Grading](#admin-project-grading-anchor)]</span>
 
-<panel src="project-assessment.md#main" header="%%Admin {{ icon_embedding }} Project: Assessment%%" class="embedding" />
+<panel src="project-grading.md#main" header="%%Admin {{ icon_embedding }} Project: Grading%%" class="embedding" />
 
 
 ### v1.4 Product

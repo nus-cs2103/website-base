@@ -7,7 +7,7 @@
 
 * At this point of the project there are several non-trivial tools you need to learn e.g., JavaFX, Gradle, Travis, Java 8 features, Git, etc. We recommend that you **divide up the learning tasks among team members and plan to learn them gradually** over the next few weeks.
 
-* Be reminded that **your performance in meeting individual/team project milestones** (as detected by our scripts and observed by tutors) **will be counted towards your [project grade under the _project management_ component]({{ module_website }}/admin/project-assessment.html)**. Please do follow exact setup instructions because deviations will affect our script's ability to detect your work.
+* Be reminded that **your performance in meeting individual/team project milestones** (as detected by our scripts and observed by tutors) **will be counted towards your [project grade under the _project management_ component]({{ module_website }}/admin/project-grading.html)**. Please do follow exact setup instructions because deviations will affect our script's ability to detect your work.
 
 **💰 After reaching 15 participation points**:
 

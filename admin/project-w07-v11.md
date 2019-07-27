@@ -29,8 +29,8 @@ Milestone | Minimum acceptable performance to consider as 'reached'
   <include src="project-w06-mid-v11.md#body"/>
 </modal>
 
-<modal large title="Admin {{ icon_embedding }} Project Assessment → Project Management" id="modal:v11-projectMgtGrading">
-  <include src="project-assessment.md#project-management-grading"/>
+<modal large title="Admin {{ icon_embedding }} Project Grading → Project Management" id="modal:v11-projectMgtGrading">
+  <include src="project-grading.md#project-management-grading"/>
 </modal>
 
 <modal large title="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:v11-photo">

@@ -6,7 +6,7 @@
 
 {{ embed_topic("participation.md#main", "Admin " + icon_embedding + " Participation Marks", "gradeBreakdown-participation", "3") }}
 {{ embed_topic("exams.md#main", "Admin " + icon_embedding + " Exams", "gradeBreakdown-exams", "3") }}
-{{ embed_topic("project-assessment.md#main", "Admin " + icon_embedding + " Project Assessment", "gradeBreakdown-projectAssessment", "3") }}
+{{ embed_topic("project-grading.md#main", "Admin " + icon_embedding + " Project Grading", "gradeBreakdown-projectGrading", "3") }}
 
 </div>
 {% endmacro %}

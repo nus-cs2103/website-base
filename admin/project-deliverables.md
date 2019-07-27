@@ -201,7 +201,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 * **Special circumstances:**
   * If a significant feature was not merged on time: inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.
   * If you have no user visible features to show, you can still contribute to the demo by giving an overview of the product (at the start) and/or giving a wrap of of the product (at the end).
-  * If you are unable to come to the demo due to a valid reason, you can ask a team member to demo your feature. Remember to submit the evidence of your excuse %%e.g., MC%% to prof. The demo is part of module assessment and ==absence without a valid reason== will cause you to lose marks.
+  * If you are unable to come to the demo due to a valid reason, you can ask a team member to demo your feature. Remember to submit the evidence of your excuse %%e.g., MC%% to prof. The demo is part of module grading and ==absence without a valid reason== will cause you to lose marks.
 
 </span>
 
@@ -296,15 +296,15 @@ At the end of the project each student is required to submit a _Project Portfoli
 <span id="project-deliverables-practicalexam">
 
 **Objectives:**
-* The primary objective of the PE is to ==increase the rigor of project assessment==. Assessing most aspects of the project involves an element subjectivity. As the project counts for 50% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
-* Note that ==none of the significant project grade components are calculated solely based on peer ratings==. Rather, PE data are mostly used to cross-validate tutor assessments and identify cases that need further investigation. When peer inputs are used for grading, usually they are combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other teams, if that is appropriate.
+* The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for 50% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
+* Note that ==none of the significant project grade components are calculated solely based on peer ratings==. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs are used for grading, usually they are combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other teams, if that is appropriate.
 * As a bonus, PE also gives us an opportunity to evaluate your manual testing skills, product evaluation skills, effort estimation skills etc.
 * Note that the PE is not a means of _pitting you against each other_. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
 
 **When, where**: Week 13 lecture
 
 {{ icon_important_big_red }} **Grading**:
-* Your performance in the practical exam will affect your final grade and your peers, as explained in [_Admin: Project Assessment_]({{ baseUrl }}/admin/project-assessment.html) section.
+* Your performance in the practical exam will affect your final grade and your peers, as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/project-grading.html) section.
 * As your submissions can affect the grades of peers, note that we have put in measures to identify insincere/random evaluations and penalize accordingly.
 
 <include src="project-testing.mbdf#testingPreparations" />
@@ -323,27 +323,27 @@ At the end of the project each student is required to submit a _Project Portfoli
    * **A. Product Design** [{{ icon_team }}]:
 
 <div class="indented-level2">
-  <include src="project-assessment.md#projectGrading-featureFit-instructions" />
+  <include src="project-grading.md#projectGrading-featureFit-instructions" />
 </div>
 
    * **B. Quality of user docs** [{{ icon_individual }}]:
 <div class="indented-level2">
-  <include src="project-assessment.md#projectGrading-userGuide-instructions" />
+  <include src="project-grading.md#projectGrading-userGuide-instructions" />
 </div>
 
    * **C. Quality of developer docs** [{{ icon_individual }}]:
 <div class="indented-level2">
-  <include src="project-assessment.md#projectGrading-devGuide-instructions" />
+  <include src="project-grading.md#projectGrading-devGuide-instructions" />
 </div>
 
    * **D. Feature Quality** [{{ icon_individual }}]:
 <div class="indented-level2">
-  <include src="project-assessment.md#projectGrading-featureQuality-instructions" />
+  <include src="project-grading.md#projectGrading-featureQuality-instructions" />
 </div>
 
    * **E. Amount of work** [{{ icon_individual }}]:
 <div class="indented-level2">
-  <include src="project-assessment.md#projectGrading-effort-instructions" />
+  <include src="project-grading.md#projectGrading-effort-instructions" />
 </div>
 
 #### Processing PE Bug Reports:
