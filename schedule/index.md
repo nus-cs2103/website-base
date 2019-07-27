@@ -601,7 +601,7 @@ pageNav: 4
 {% endif %}
 {% if tp_file %}
 **tP:**
-<include src="../../admin/project-w04-inception.md#summary" />
+<include src="../../admin/{{ tp_file }}#summary" />
 {% endif %}
 </div>
 

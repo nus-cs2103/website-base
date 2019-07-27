@@ -1,5 +1,5 @@
-{% from "common/admin.njk" import show_project_summary_lead with context %}
-{% from "common/macros.njk" import thumb with context %}
+{% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
+{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
 {% macro show_main_text() %}
 <div id="main">
@@ -41,5 +41,4 @@
 </div>
 {% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("ip-w04", show_main_text) }}

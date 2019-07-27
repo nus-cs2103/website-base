@@ -1,5 +1,5 @@
-{% from "common/admin.njk" import show_project_summary_lead with context %}
-{% from "common/macros.njk" import thumb, timing_badge with context %}
+{% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
+{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
 {% macro show_main_text() %}
 <div id="main">
@@ -53,6 +53,4 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
 </div>
 {% endmacro %}
 
-{% from "common/macros.njk" import embed_topic, thumb with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("ip-w02", show_main_text) }}
