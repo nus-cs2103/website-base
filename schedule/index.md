@@ -522,24 +522,7 @@ head: scheduleHead.md
 ]%}
 
 
-{% macro show_nav_buttons(week_num) %}
-{% set week_num = week_num | int %}
-{% if week_num != 1 %}<span style="float:left"><md>[:glyphicon-chevron-left: Previous Week]({{ baseUrl }}/schedule/week{{ (week_num - 1) }}/)</md></span>{% endif %}{% if week_num != 13 %}<span style="float:right"><md>[Next Week :glyphicon-chevron-right:]({{ baseUrl }}/schedule/week{{ (week_num + 1) }}/)</md></span>{% endif %}<br>
-
-{% endmacro %}
-
-
-{% macro show_week_pagetop(week_num_int, category, path="") %}
-
-{% set week = weeks[week_num_int - 1] %}
-
-{% set categories = {
-  notices: {name: "Summary", file: "index", icon: icon_announcement},
-  topics: {name: "Topics", file: "topics", icon: icon_book},
-  project: {name: "Project", file: "project", icon: icon_project},
-  tutorial: {name: "Tutorial", file: "tutorial-" + (module | lower), icon: icon_tutorial},
-  admin: {name: "Admin Info", file: "admin", icon: icon_info}
-} %}
+{% macro show_week_pagetop(week_num, category) %}
 
 <frontmatter>
 title: "Week {{ week.num }} - {{ categories[category].name }}"
@@ -549,20 +532,35 @@ head: scheduleHead.md
 pageNav: 4
 </frontmatter>
 
-{{ show_nav_buttons(week.num) }}
+{% set week = weeks[week_num - 1] %}
 
-# Week {{ week.num }} <small><small>%%[{{ week.day }}]%%</small></small>
+{% set categories = {
+  notices: {name: "Summary", file: "index", icon: icon_announcement},
+  topics: {name: "Topics", file: "topics", icon: icon_book},
+  project: {name: "Project", file: "project", icon: icon_project},
+  tutorial: {name: "Tutorial", file: "tutorial-" + (module | lower), icon: icon_tutorial},
+  admin: {name: "Admin Info", file: "admin", icon: icon_info}
+} %}
 
-<ul class="nav nav-tabs">
+
+<nav>
+<ul class="pagination mt-2">
+{%- set previous_status = " disabled" if week_num == 1 else "" -%}
+{%- set next_status = " disabled" if week_num == 13 else "" -%}
+<li class="page-item{{ previous_status }}"><a class="page-link" href="../week{{ (week_num - 1) }}/"><md>:glyphicon-chevron-left: **Previous Week**</md></a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li>
 {% for c,v in categories %}
-<li class="nav-item">
   {%- set is_active = " active" if categories[category] == v else "" -%}
-  <a class="nav-link{{ is_active }}" href="{{v.file}}.html">{{ v.icon }} {{v.name}}</a>
+  <li class="page-item{{ is_active }}"><a class="page-link" href="{{v.file}}.html">{{ v.icon }} {{v.name}}</a></li>
 </li>
 {% endfor %}
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item{{ next_status }}"><a class="page-link" href="../week{{ (week_num + 1) }}/"><md>**Next Week** :glyphicon-chevron-right:</md></a></li>
 </ul>
+</nav>
 
 <p/>
+
+# Week {{ week.num }} <small><small>%%[{{ week.day }}]%%</small></small> - {{ categories[category].name }}
 
 {% endmacro %}
 
