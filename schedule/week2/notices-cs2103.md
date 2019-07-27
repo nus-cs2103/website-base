@@ -7,6 +7,6 @@
 <include src="../timeline.md#warnings" />
 </box>
 
-{{ show_week_summary(3) }}
+{{ show_week_summary(2) }}
 
 
