@@ -2,10 +2,18 @@
 {% from "schedule/index.md" import show_week_pagetop, show_week_summary with context%}
 {{ show_week_pagetop(3, "notices") }}
 
-<box type="warning">
+<box type="warning" dismissible>
 
-* The **deadline to achieve weekly tasks is the midnight before your tutorial**, unless mentioned otherwise. Our scripts that detect your work run at midnight and only the work that's done by midnight will be eligible for marks (for cases where the task is graded).
 * We start tutorials this week. The [tutorial time table]({{ module_website }}/admin/tutorials.html#tutorial-timetable) is on the module website.
 </box>
+<box dismissible>
+
+Rminder about this warning from the previous week:
+<include src="../timeline.md#warnings" />
+</box>
+
+<panel type="seamless" header="Reminder about deadlines">
+<include src="../timeline.md#warnings" />
+</panel>
 
 {{ show_week_summary(3) }}

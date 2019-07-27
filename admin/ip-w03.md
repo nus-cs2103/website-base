@@ -8,7 +8,7 @@
 1. Do as parallel branches: `Level-7` and `Level-8` as branches
 1. Do increments `A-MoreOOP`, `A-Packages`, `A-JUnit`, `A-Jar`
 1. Do as parallel branches: `A-JavaDoc`, `A-CodingStandard`, `Level-9`
-4. Create a PR to the upstream repo
+1. Create a PR to the upstream repo
 {% endcall %}
 
 <div id="body">

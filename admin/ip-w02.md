@@ -1,10 +1,13 @@
 {% from "common/admin.njk" import show_project_summary_lead with context %}
+{% from "common/macros.njk" import thumb, timing_badge with context %}
 
 {% macro show_main_text() %}
 <div id="main">
 
 {% call show_project_summary_lead()%}
-
+1. Learn about the project, set up prerequisites
+1. Set up the project in your Computer
+3. Implement increments while committing code frequently: `Level-1`, `Level-2`, `Level-3`, `Level-4`, `A-TextUiTesting`, `Level-5`, `Level-6`, `A-Enums` {{ timing_badge("by Thursday 2359") }}
 {% endcall %}
 <div id="body">
 
