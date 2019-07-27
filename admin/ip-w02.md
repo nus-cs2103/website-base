@@ -5,13 +5,15 @@
 <div id="main">
 
 {% call show_project_summary_lead()%}
-1. Learn about the project, set up prerequisites
+1. Set up prerequisites
 1. Set up the project in your Computer
 3. Implement increments while committing code frequently: `Level-1`, `Level-2`, `Level-3`, `Level-4`, `A-TextUiTesting`, `Level-5`, `Level-6`, `A-Enums` {{ timing_badge("by Thursday 2359") }}
 {% endcall %}
 <div id="body">
 
-{{ thumb(1) }} **Ensure you have met the following prerequisites:**
+#### {{ thumb(1) }} Set up prerequisites
+
+**Ensure you have met the following prerequisites:**
 
 <box>
 
@@ -26,11 +28,14 @@
 </box>
 <br>
 
-{{ thumb(2) }} **Set up the project in your Computer:**
+#### {{ thumb(2) }} Set up the project in your Computer
+
 1. Fork [this repo: TBD], and clone it into your Computer.
 1. Set up the project in your IDE as explained in the README file.
 
-{{ thumb(3) }} **Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip>** in the given order.
+#### {{ thumb(3) }} Implement increments while committing code frequently
+
+Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> in the given order.
    * Commit code at important points. ==Minimally, commit after completing each increment==.
    * After completing each increment,
      * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`

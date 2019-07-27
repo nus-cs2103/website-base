@@ -8,12 +8,8 @@
 </box>
 <box dismissible>
 
-Rminder about this warning from the previous week:
+Reminder about this warning from the previous week:
 <include src="../timeline.md#warnings" />
 </box>
-
-<panel type="seamless" header="Reminder about deadlines">
-<include src="../timeline.md#warnings" />
-</panel>
 
 {{ show_week_summary(3) }}

@@ -19,9 +19,8 @@ In general, each team is expected to take one of these two directions:
      
   </panel><p/>
 
-   
-* **[Direction 2] _Morph_** AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.<br>
-  {{ icon_important_big_red }} This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.
+
+* **[Direction 2] _Morph_** AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.
    
   <panel type="seamless" header="%%{{ icon_example }} Examples for the _morph_ direction%%">
      
@@ -36,7 +35,9 @@ In general, each team is expected to take one of these two directions:
   * Multiple types of related things %%&nbsp;e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
      
   </panel><p/>
-   
+
+Note that both directions are equally acceptable.
+
 For either direction, you need to define a target user profile and a value proposition:
 
 * **Target user profile**: Define a very specific target user profile. <br> :bulb: We require you to narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>

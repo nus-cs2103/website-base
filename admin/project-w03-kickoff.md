@@ -1,4 +1,5 @@
 {% from "common/admin.njk" import show_project_summary_lead with context %}
+{% from "common/macros.njk" import thumb with context %}
 
 {% macro show_main_text() %}
 <div id="main">
@@ -10,7 +11,7 @@
 
 <div id="body">
 
-* **Familiarize yourself with AB3**: Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html) and play around with it to familiarize with its current features.
+#### {{ thumb(1) }} Set up a project meeting time.
 
 * **Set up a weekly project meeting time/venue with your team members**:
 
@@ -18,6 +19,10 @@
 
   * After the team has been finalized (latest by week 3 tutorial), decide on a 1-2 hour time slot and a venue that all commit to. **All members are expected to honor this commitment** (not doing so could lower the peer evaluation ratings you receive, which in turn will be factored into your grade).<br>
     {{ icon_tip }} The best time to have the weekly project meeting is, after the previous week's lecture but before the deadline for weekly tasks.
+
+#### {{ thumb(2) }} Get familiar with AB3 features.
+
+* **Familiarize yourself with AB3**: Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html) and play around with it to familiarize with its current features.
 
 </div>
 </div>

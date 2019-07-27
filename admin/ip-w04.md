@@ -13,11 +13,15 @@
 <div id="body">
 
 
-{{ thumb(1) }} **Review two PRs** created by your classmates. You will be notified separately which PRs to review.
+#### {{ thumb(1) }} Review some peer PRs
+
+**Review two PRs** created by your classmates. You will be notified separately which PRs to review.
 
 <br/>
 
-{{ thumb(2) }} **Add the following enhancements**. As before, do each enhancement in a separate branch and merge to the `master` branch only when ready (if you push incomplete features into the `master` branch, it can confuse others reviewing your PR).
+#### {{ thumb(2) }} Add increments: `A-Gradle`,`A-CheckStyle`, `Level-10`, `A-Varargs`
+
+**Add the following increments**. As before, do each enhancement in a separate branch and merge to the `master` branch only when ready (if you push incomplete features into the `master` branch, it can confuse others reviewing your PR).
 <br>
 
 <include src="dukeFragment.md" boilerplate var-header="**`A-Gradle`: Gradle**" var-fragment="extensions.mbdf#A-Gradle" />
@@ -28,7 +32,9 @@
 
 <p/>
 
-{{ thumb(3) }} **Add another extension** [to be specified nearer to the date]
+#### {{ thumb(3) }} Add another extension
+
+**Add another extension** [to be specified nearer to the date]
 
 <br>
 </div>

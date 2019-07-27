@@ -560,7 +560,7 @@ pageNav: 4
 
 <p/>
 
-# Week {{ week.num }} <small><small>%%[{{ week.day }}]%%</small></small> - {{ categories[category].name }}
+# Week {{ week.num }} <small><small>%%[{{ week.day }}]%% - {{ categories[category].name }}</small></small>
 
 {% endmacro %}
 

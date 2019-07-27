@@ -86,7 +86,7 @@
 
 {% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show, is_flat=false) %}
 
-**Other admin info you may want to read this week**:
+#### {{ thumb("+") }} Other admin info you may want to read this week:
 <div class="indented">
 {% for section in sections_to_show %}
 {% if section.topic_id %}

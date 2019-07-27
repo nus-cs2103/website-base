@@ -6,7 +6,9 @@
 
 We'll be starting the individual project (iP) this week.
 
-{{ thumb(0) }} **Read the following two sections**, if you haven't done so already:
+#### {{ thumb(0) }} Learn about the project
+
+**Read the following two sections**, if you haven't done so already:
 
 <div class="indented">
 
