@@ -106,7 +106,7 @@ Here is a list of main deliverables of the project; their details are given in t
 * The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
   <img src="{{baseUrl}}/admin/images/profilephotos.png" style="width: 365.33px">
 
-* If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may omit the photo from module-related documents that are publicly visible.
+* If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use [a placeholder image](https://en.wikipedia.org/wiki/File:Portrait_placeholder.png) in place of the photo in module-related documents that are publicly visible.
 
 </div>
 

@@ -19,3 +19,6 @@
 * **Try to achieve all milestone requirements, but do not fret if you miss a few**.  You will get full marks as long as you achieve about 60% of the milestone requirements on average. Yes, that's a pretty low bar, but we have set it low in order to reduce workload and stress. Ideally, you should achieve close to 80-90%.
 
 
+**If your photo or your UI mock-up does not appear in the page**, you have not followed our instructions correctly. 'Close enough' is sometimes not 'good enough'. Please rectify before v1.1 deadline. In particular,
+  * Please **follow our guidelines for your photo**. If not, the photo will not serve its intended purpose (i.e., for others to identify you).
+  * Please **limit the `Ui.png` to one screenshot only**, so that your UI mockup takes roughly the same amount of space as other teams' in the Teams Page.

@@ -50,6 +50,9 @@ Milestone | Minimum acceptable performance to consider as 'reached'
   * For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#undo-redo-feature).
   
 
+**Wrap up the milestone using a git tag `v1.1`** as explained below:
+  * When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, reassign them to a future milestone.
+
 ### v1.2 Demo
 
 Do an informal demo of the new feature during the tutorial. ==To save time, we recommend that one member demos all new features, using the commit tagged as `v1.2` in the `master` branch== %%&nbsp;i.e. only features included in the current release should be demoed%%.
