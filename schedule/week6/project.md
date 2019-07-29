@@ -10,6 +10,6 @@
 <br>
 {{ hr_double }}
 
-# tP Milestone: mid-v1.1
+# tP: mid-v1.1
 
 <include src="../../admin/project-w06-mid-v11.md#body" />

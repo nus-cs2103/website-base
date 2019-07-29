@@ -6,13 +6,13 @@
 
 {% call show_project_summary_lead()%}
 
-1. Add increments `A-Assertions`, `A-CodeQuality`, `A-Lambdas`, `A-Streams`
+1. Add increments as PRs: `A-Assertions`, `A-CodeQuality`, `A-Lambdas`, `A-Streams`
 1. Set up CI
 1. Add another extension [TBD]
 {% endcall %}
 <div id="body">
 
-#### {{ thumb(1) }} Add increments `A-Assertions`, `A-CodeQuality`, `A-Lambdas`, `A-Streams`
+#### {{ thumb(1) }} Add increments as PRs: `A-Assertions`, `A-CodeQuality`, `A-Lambdas`, `A-Streams`
 
 Add the following increments, doing each in the following manner:
 1. add the extension in a separate branch

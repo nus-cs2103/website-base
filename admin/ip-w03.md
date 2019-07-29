@@ -17,7 +17,9 @@ In this week, we try to practice git branching as we do the iP.
 
 #### {{ thumb(1) }} Do as parallel branches: `Level-7` and `Level-8`
 
-Do Level 7 in a branch named `branch-level7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-level8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.
+Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
+ {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
+ {{ icon_tip }} Try merging without a _fast-forward_.
 
 <include src="dukeFragment.md" boilerplate var-header="**`Level-7`: Save**" var-fragment="text.md#level7" />
 <include src="dukeFragment.md" boilerplate var-header="**`Level-8`: Dates and Times**" var-fragment="text.md#level8" />
@@ -36,7 +38,7 @@ As in the previous week, commit, tag, and push, as you do the following incremen
 
 #### {{ thumb(3) }} Do as parallel branches: `A-JavaDoc`, `A-CodingStandard`, `Level-9`
 
-As in the step 1 above, implement these three increments as three parallel branches first, and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 <include src="dukeFragment.md" boilerplate var-header="**`A-JavaDoc`: JavaDoc**" var-fragment="extensions.mbdf#A-JavaDoc" />
 <include src="dukeFragment.md" boilerplate var-header="**`A-CodingStandard`: Coding Standard**" var-fragment="extensions.mbdf#A-CodingStandard" />
 <include src="dukeFragment.md" boilerplate var-header="**`Level-9`: Find**" var-fragment="text.md#level9" />

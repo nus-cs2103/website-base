@@ -1,6 +1,6 @@
 {% from "schedule/index.md" import show_week_pagetop with context%}
 {{ show_week_pagetop(11, "project") }}
 
-# Project Milestone: v1.3
+# tP: v1.3
 
 <include src="../../admin/project-w11-v13.md#main" />

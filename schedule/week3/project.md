@@ -7,6 +7,6 @@
 
 <include src="../../admin/ip-w03.md#body" />
 
-# tP Milestone: Kickoff
+# tP: Kickoff
 
 <include src="../../admin/project-w03-kickoff.md#body" />

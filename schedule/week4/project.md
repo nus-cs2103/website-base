@@ -10,6 +10,6 @@
 <br>
 {{ hr_double }}
 
-# tP Milestone: Inception
+# tP: Inception
 
 <include src="../../admin/project-w04-inception.md#body" />

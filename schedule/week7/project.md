@@ -3,6 +3,6 @@
 
 {{ show_project_summary(ip_file="ip-w06.md", tp_file="project-w07-v11.md") }}
 
-# tP Milestone: v1.1
+# tp: v1.1
 
 <include src="../../admin/project-w07-v11.md#body" />
