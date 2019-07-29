@@ -76,7 +76,7 @@
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
 {% else %}
-* %%[[{{ id_prefix }}](topics.md#{{ make_anchor(id_prefix) }})] <include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />%% <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline /> {{ show_stars(priority) }}
+* %%[[{{ id_prefix }}](topics.html#{{ make_anchor(id_prefix) }})] <include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />%% <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline /> {{ show_stars(priority) }}
 {% endif %}
 {% endmacro %}
 
