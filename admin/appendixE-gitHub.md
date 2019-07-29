@@ -124,6 +124,8 @@ Note that some of our download scripts depend on the following folder paths. Ple
 
 ## Workflow
 
+<div id="workflow-before-v11">
+
 {{ icon_important_big_red }} **Before you do any coding for the project**,
   * Ensure you have <trigger trigger="click" for="modal:appE-gitUsername">set the Git username correctly (as explained in Appendix E)</trigger> in _all_ Computers you use for coding.
   * Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy %%(in Admin: Appendix B)%%</trigger>, in particular, ==how to give credit when you reuse code from the Internet or classmates==:
@@ -143,13 +145,18 @@ Note that some of our download scripts depend on the following folder paths. Ple
     **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.
   * After [setting up Netlify](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingNetlify.html), you can use _Netlify PR Preview_ to preview changes to documentation files, if the PR contains updates to documentation. To see the preview, click on the `Details` link in front of the Netlify status reported (refer screenshot above).
 
+<modal large title="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
+  <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+</div>
 <div id="workflow-after-v11">
 
-**After completing v1.1, you can adjust process rigor to suit your team's pace,** as explained below.
+**After completing v1.1, you can reduce process rigor** to suit your teams pace. Here are some examples:
 
-  * **Reduce automated tests** have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
+  * **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
     It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
-    There is no direct penalty for removing GUI tests. Also note <trigger trigger="click" for="modal:appEworkflow-testingExpectations">our expectation on test code</trigger>.
+    There is no direct penalty for removing tests. Also note <trigger trigger="click" for="modal:appEworkflow-testingExpectations">our expectation on test code</trigger>.
 
   * **Reduce automated checks**: You can also reduce the rigor of checkstyle checks to expedite PR processing.
 
@@ -164,9 +171,6 @@ Note that some of our download scripts depend on the following folder paths. Ple
 </modal>
 </div>
 
-<modal large title="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
-  <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
-</modal>
 
 </div>
 

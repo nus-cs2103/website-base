@@ -15,14 +15,17 @@
 
 <div id="body">
 
-#### {{ thumb(1) }} {{ icon_team }} update project site: `AboutUs`, `ContactUs`, `README`
+#### {{ thumb(1) }} {{ icon_team }} Update project site: `AboutUs`, `ContactUs`, `README`
 
 <box type="info">
 
 **Recommended procedure for updating docs**:
 
 1. Divide among yourselves who will update which parts of the document(s).
-1. Update the team repo by following the forking workflow.
+1. Update the team repo by following the recommended workflow.
+
+{{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "v11-workflowBeforeV11", "3") }}
+
 </box>
 
 Update the following pages in your project repo:
@@ -61,12 +64,16 @@ Update the following pages in your project repo:
 
   * Acknowledge the original source of the code i.e. AddressBook-Level3 project created by SE-EDU initiative at `https://se-education.org`
 
+<box>
 
-#### {{ thumb(2) }} {{ icon_individual }} update UG
+{{ icon_tip }} If you updated the above pages correctly, details of your project in the [**Project List Page**]({{ module_website }}/admin/projectList.html) should look neat and complete %%i.e., no broken links%%.
+</box>
+
+#### {{ thumb(2) }} {{ icon_individual }} Update UG
 
 Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' ([example](https://se-edu.github.io/addressbook-level3/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).
 
-#### {{ thumb(3) }} {{ icon_team }} update DG: user stories, glossary, NFRs, use cases
+#### {{ thumb(3) }} {{ icon_team }} Update DG: user stories, glossary, NFRs, use cases
 
 * Update the following in the DG, based on your project notes from the previous weeks.<br>
   {{ icon_tip }} Some examples of these can be found in the [AB4 Developer Guide](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#product-scope).
@@ -94,13 +101,13 @@ Move the draft UG into the User Guide page in your repository. If a feature is n
   <include src="../book/gatheringRequirements/productSurveys/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
-#### {{ thumb(4) }} {{ icon_team }} wrap up v1.1
+#### {{ thumb(4) }} {{ icon_team }} Wrap up v1.1
 
 
 * After all changes that _can_ be merged before the milestone deadline has been merged, use `git tag` feature to tag the current version with the milestone `v1.1` and push the tag to the team repo.
 
 
-#### {{ thumb(5) }} {{ icon_individual }} draft a rough project plan
+#### {{ thumb(5) }} {{ icon_individual }} Draft a rough project plan
 
 * After the v2.0 is conceptualized, decide which features each member will do by v1.4. %%We realize that it will be hard for you to estimate the effort required for each feature as you are not very familiar with the code base yet. Nevertheless, come up with a project plan as per your best estimate; this plan can be revised at later stages. It is better to start with _some_ plan rather than no plan at all. If in doubt, choose to do _less_ than _more_; we don't expect you to deliver a lot of big features anyway.%%
 * Divide each of those features into two increments, to be released at v1.2, v1.3 (v1.4 omitted deliberately as a buffer). ==Each increment should deliver a end-user visible enhancement.==

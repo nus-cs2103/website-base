@@ -1,61 +1,30 @@
+{% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
+{% from "common/macros.njk" import embed_topic, thumb with context %}
+
 {% macro show_main_text() %}
 <div id="main">
 
-<div id="title">
+{% call show_project_summary_lead()%}
+1. {{ icon_individual }} Deliver an intermediate version of the new features
+1. {{ icon_team }} Wrap up milestone
+1. {{ icon_individual }} Demo new features
+{% endcall %}
 
-</div>
 <div id="body">
 
-<p class="lead" style="color: purple"><md>:far-calendar-check: <include src="project-timeline.md#v12-overview" inline /></md></p>
+#### {{ icon_individual }} Deliver an intermediate version of the new features
 
-**v1.2 Summary of Milestone**
+* The feature should be merged and user visible, although simpler than the version you intend to deliver at v1.4.
 
-Milestone | Minimum acceptable performance to consider as 'reached'
---------- | -------------------------------------------------------
-{{ icon_individual }} Contributed code to the product as described in mid-v1.2 progress guide | some code merged
-{{ icon_individual }} Described implementation details in the Developer Guide | some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content
-{{ icon_team }} Issue tracker set up | As explained in <trigger trigger="click" for="modal:v12-issueTrackerSetup">[Admin {{ icon_embedding }} Appendix E: GitHub: Issue Tracker Setup]</trigger>.
-{{ icon_team }} v1.2 managed using GitHub features (issue tracker, milestones, etc.) | Milestone v1.2 managed as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
-
-<modal large title="Admin {{ icon_embedding }} Appendix E: GitHub: Project Issue Tracker Setup" id="modal:v12-issueTrackerSetup">
-  <include src="appendixE-gitHub.md#issue-tracker-setup"/>
-</modal>
-<modal large title="Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking" id="modal:v12-projectTracking">
-  <include src="appendixE-gitHub.md#project-schedule-tracking"/>
-</modal>
-
-  
-### v1.2 Project Management
+#### {{ icon_team }} Wrap up milestone
 
 * {{ icon_team }} Manage the milestone v1.2 as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
-
-### v1.2 Product
-
-* {{ icon_individual }} Merge some code into the `master` branch of your team repo. ==This is expected to be a user-visible enhancement.==
-
-### v1.2 Documentation
-
-* **User Guide**: Update as necessary.
-  * If a feature has been released in this version, remove the `Coming in v2.0` annotation from that feature. Also replace UI mock-ups with actual screenshots.
-  * If a feature design has changed, update the descriptions accordingly.
-
-* **Developer Guide**:
-  * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
-    Expected length: 1+ page per person
-  * The description can contain things such as,
-    * How the feature is implemented.
-    * Why it is implemented that way.
-    * Alternatives considered.
-  * The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).
-  * For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level4 developer guide](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#undo-redo-feature).
-  
-
-**Wrap up the milestone using a git tag `v1.1`** as explained below:
+* **Wrap up the milestone using a git tag `v1.1`** as explained below:
   * When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, reassign them to a future milestone.
 
-### v1.2 Demo
+#### {{ icon_individual }} Demo new features
 
-Do an informal demo of the new feature during the tutorial. ==To save time, we recommend that one member demos all new features, using the commit tagged as `v1.2` in the `master` branch== %%&nbsp;i.e. only features included in the current release should be demoed%%.
+* Do an informal demo of the new feature during the tutorial. ==To save time, we recommend that one member demos all new features, using the commit tagged as `v1.2` in the `master` branch== %%i.e. only features included in the current release should be demoed%%.
 
 </div>
 </div>
