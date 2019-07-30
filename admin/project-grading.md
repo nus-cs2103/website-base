@@ -58,7 +58,6 @@ Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is de
 {{ icon_info }} For reference, here are some factors considered when grading this aspect:
 
 <span id="projectGrading-codeQuality-criteria">
-<blockquote>
 
 * At least some evidence of these (see [here]({{baseUrl}}/se-book-adapted/chapters/errorHandling.html) for more info)
   * logging
@@ -72,13 +71,7 @@ Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is de
 
 * No noticeable code duplications %%i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code.
 
-* Evidence of applying <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger>.
-
-</blockquote>
-
-<modal large title="Textbook {{ icon_embedding }} Implementation →" id="modal:v15-codeQuality">
-  <include src="../book/codeQuality/container-inElsewhere-asFlat.md" boilerplate />
-</modal>
+* Evidence of applying [code quality guidelines covered in the module](../book/codeQuality/).
 
 </span>
 
