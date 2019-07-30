@@ -6,9 +6,12 @@
 
 {% call show_admin_summary() %}
 
+1. Submit peer evaluation on TEAMMATES {{ timing_badge("by Thursday 2359") }}
 {% endcall %}
 
 <div id="additional">
+
+#### {{ thumb(1) }} Submit peer evaluation on TEAMMATES {{ timing_badge("by Thursday 2359", "secondary") }}
 
 </div>
 
