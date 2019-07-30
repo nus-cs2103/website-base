@@ -13,7 +13,7 @@
 ### {{ policy.title }} <small><small>{{show_stars(policy.priority) }}</small></small>
 
 <div class="indented">
-<include src="policies.fr#{{ policy.id }}" />
+<include src="policies.mbdf#{{ policy.id }}" />
 </div>
 
 </div>
