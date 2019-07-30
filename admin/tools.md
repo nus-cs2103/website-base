@@ -59,15 +59,11 @@ You are ==_required to_ use Git==. Other revision control software are not allow
   {{ icon_tip }} SourceTree comes with bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot.
 
 </div><hr><!-- ----------------------------------------------------------------------------------------------------- -->
+<div id="reposense">
 
 #### Tool Used: RepoSense (for Analyzing Code Authorship)
 
-We use a custom-built tool called [RepoSense](https://github.com/reposense/RepoSense) for extracting code written by each person.
-
-<div class="indented-level2">
-<panel type="seamless" header="##### Using RepoSense">
-  <include src="reposenseCompatibility.md#main" />
-</panel>
+<include src="reposenseCompatibility.md" />
 </div>
 
 </div>

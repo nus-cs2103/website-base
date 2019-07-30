@@ -1,9 +1,13 @@
+{% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
+{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+
 {% macro show_main_text() %}
 <div id="main">
 
-<div id="title">
+{% call show_project_summary_lead()%}
 
-</div>
+{% endcall %}
+
 <div id="body">
 
 <p class="lead" style="color: purple"><md>:far-calendar-check: <include src="project-timeline.md#v13-overview" inline /></md></p>
@@ -22,9 +26,9 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v13-reposense">as explained in mid-v1.3</trigger>.
 
-<modal large title="Admin {{ icon_embedding }} Project → v1.3 (extract)" id="modal:v13-reposense">
-  <include src="reposenseCompatibility.md" />
-</modal>
+<div class="indented-level2">
+{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "midv13_repoSenseCompatibility", "1") }}
+</div>
 
 ### v1.3 Product
 
@@ -72,6 +76,4 @@ Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v1
 </div>
 {% endmacro %}
 
-{% from "common/macros.njk" import embed_topic with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-w11-v13", show_main_text) }}

@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
-{% from "common/macros.njk" import embed_topic, thumb with context %}
+{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
 {% macro show_main_text() %}
 <div id="main">

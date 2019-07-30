@@ -9,7 +9,7 @@
 * {{ icon_important_big_red }} Ensure the code attributed to you by RepoSense is correct, as reported in the [Project Activity Dashboard](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard)
 
 <div class="indented-level2">
-{{ embed_topic("reposenseCompatibility.md#main", "Admin " + icon_embedding + " Tools → Using RepoSense", "midv14_repoSenseCompatibility", "1") }}
+{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → Using RepoSense", "midv14_repoSenseCompatibility", "1") }}
 </div>
 
 **<big>Product:</big>**
