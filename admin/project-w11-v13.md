@@ -6,71 +6,52 @@
 
 {% call show_project_summary_lead()%}
 
+1. {{ icon_individual }} Deliver the feature
+1. {{ icon_individual }} Update user docs
+1. {{ icon_team }} Release as a jar file
+1. {{ icon_team }} Wrap up milestone
+1. {{ icon_individual }} Attend practical exam dry run {{ timing_badge("during Lecture") }}
 {% endcall %}
 
 <div id="body">
 
-<p class="lead" style="color: purple"><md>:far-calendar-check: <include src="project-timeline.md#v13-overview" inline /></md></p>
+#### {{ thumb(1) }} {{ icon_individual }} Deliver the feature
 
-**v1.3 Summary of Milestone**
+* Ideally, this version of the feature should be a release-candidate for the v1.4 i.e., has the functionality.
 
-Milestone | Minimum acceptable performance to consider as 'reached'
---------- | -------------------------------------------------------
-{{ icon_individual }} Contributed code to v1.3 | code merged
-{{ icon_individual }} Code is RepoSense-compatible | as stated in mid-v1.3
-{{ icon_team }} v1.3 jar file released on GitHub | as stated
-{{ icon_team }} v1.3 milestone properly wrapped up on GitHub | as stated
-{{ icon_team }} Documentation updated to match v1.3 | at least the User Guide and the `README.adoc` is updated
 
-### v1.3 Project Management
+#### {{ thumb(2) }} {{ icon_individual }} Update user docs
 
-Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v13-reposense">as explained in mid-v1.3</trigger>.
-
-<div class="indented-level2">
-{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "midv13_repoSenseCompatibility", "1") }}
-</div>
-
-### v1.3 Product
-
-* As before, move the product towards v2.0.
-
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide](https://nus-{{ module | lower }}-{{ semester }}.github.io/addressbook-level4/DeveloperGuide.html#making-a-release). Do some manual tests to ensure the jar file works.
-
-### v1.3 Documentation
-
-<tip-box>
-
-{{ icon_important_big_red }} v1.3 user guide should be updated to match the current version of the product. %%&nbsp;Reason: v1.3 will be subjected to a trial _acceptance testing_ session%%
-
-</tip-box>
+* {{ icon_important_big_red }} v1.3 user guide should be updated to match the current version of the product. %%&nbsp;Reason: testers will need to refer to the UG during the practical exam dry run%%.
+  * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in v2.0`%%.
+  * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 
 * **README page**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">:bulb: tips</trigger>)==.
 
 <modal large title="Admin → Project Deliverables → Website" id="modal:v13-tipsForProductScreenshot">
   <include src="project-deliverables.md#tips-for-product-screenshot"/>
 </modal>
-  
-* **User Guide**: ==This document will be used by acceptance testers==. Update to match the current version. In particular,
-  * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in v2.0`%%.
-  * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
- 
-* **Developer Guide**: As before, update if necessary.
-  
-* **AboutUs page**: Update to reflect current state of roles and responsibilities.  
-
-**Submission**: Must be included in the version tagged `v1.3`.
 
 
-### v1.3 Demo
+#### {{ thumb(3) }} {{ icon_team }} Release as a jar file
 
-* Do a quick demo of the main features ==using the jar file==. Objective: demonstrate that the jar file works.
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide](https://nus-{{ module | lower }}-{{ semester }}.github.io/addressbook-level3/DeveloperGuide.html#making-a-release). Do some manual tests to ensure the jar file works.
 
 
-### v1.3 Testing (_aka_ Practical Exam Dry Run)
+#### {{ thumb(4) }} {{ icon_team }} Wrap up milestone
 
-=={{ icon_important_big_red }} See info in the panel below:==
-<br>
+* as before
+
+
+#### {{ thumb(5) }} {{ icon_individual }} Attend practical exam dry run {{ timing_badge("during Lecture", "secondary") }}
+
+* =={{ icon_important_big_red }} See info in the panel below:==
+
+<div class="indented-level2">
+
 {{ embed_topic("project-deliverables.md#project-deliverables-practicalexam-dry-run", "Admin " + icon_embedding + " Project Deliverables → **Practical Exam - Dry Run**", "v13-peDryRun", "1") }}
+</div>
+
 
 </div>
 </div>
