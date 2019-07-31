@@ -524,24 +524,23 @@ head: scheduleHead.md
 
 {% macro show_week_pagetop(week_num, category) %}
 
+{% set week = weeks[week_num - 1] %}
+
+{% set categories = {
+  notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
+  topics: {name: "Topics", file: "topics", icon: icon_book, pagenav: 3},
+  project: {name: "Project", file: "project", icon: icon_project, pagenav: 4},
+  tutorial: {name: "Tutorial", file: "tutorial-" + (module | lower), icon: icon_tutorial, pagenav: 4},
+  admin: {name: "Admin Info", file: "admin", icon: icon_info, pagenav: 4}
+} %}
+
 <frontmatter>
 title: "Week {{ week.num }} - {{ categories[category].name }}"
 header: header.md
 footer: footer.md
 head: scheduleHead.md
-pageNav: 4
+pageNav: {{ categories[category].pagenav }}
 </frontmatter>
-
-{% set week = weeks[week_num - 1] %}
-
-{% set categories = {
-  notices: {name: "Summary", file: "index", icon: icon_announcement},
-  topics: {name: "Topics", file: "topics", icon: icon_book},
-  project: {name: "Project", file: "project", icon: icon_project},
-  tutorial: {name: "Tutorial", file: "tutorial-" + (module | lower), icon: icon_tutorial},
-  admin: {name: "Admin Info", file: "admin", icon: icon_info}
-} %}
-
 
 <nav>
 <ul class="pagination mt-2">
