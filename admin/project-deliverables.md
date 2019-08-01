@@ -111,7 +111,7 @@ Here is a list of main deliverables of the project; their details are given in t
 </div>
 
   * Contains a ==link to each person's Project Portfolio page== 
-  * Team member ==names match full names used by IVLE==
+  * Team member ==names match full names used by LumiNUS==
   
     
 </span>
@@ -230,7 +230,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 <include src="project-testing.mbdf#testingPreparations" />
 
 **During the session**:
-1. **Take note of your team to test**. Distributed via IVLE gradebook and via email.
+1. **Take note of your team to test**. Distributed via LumiNUS gradebook and via email.
 1. Download the latest jar file from the team's GitHub page. ==Copy it to an empty folder==.
 1. Confirm you are testing the allocated product by comparing the product UI with the UI screenshot sent via email.
 
@@ -311,8 +311,8 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 **During:** 
 
-1. **Take note of your team to test**. It will be given to you by the teaching team (distributed via IVLE gradebook).
-1. **Download from IVLE all files** submitted by the team %%(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
+1. **Take note of your team to test**. It will be given to you by the teaching team (distributed via LumiNUS gradebook).
+1. **Download from LumiNUS all files** submitted by the team %%(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
 1. **[60 minutes] Test the product and report bugs** as described below:
 
 <div class="indented-level2">

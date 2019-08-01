@@ -41,7 +41,7 @@
 * The tutor will direct students to share/discuss evidence of learning the weekly topics.
 * If some students have met with difficulties while learning a topic, the tutor can direct those students to get help from those who have learned the topic. **The number of topics that can be covered in the tutorial session depends on how well-prepared you are.**
 * The tutor will observe, and give feedback on how well you are learning required topics.
-* Please ==bring your laptop to tutorials.== You often need it to show evidence of learning the topics. At other times, we ask you to work on project related things with your team members, which too may require the laptop.
+* Please ==bring your laptop to tutorials.== Often, you will need it for tutorial tasks.
 
 <div class="indented-level2">
 {{ embed_topic("appendixC-faq.md#admin-faq-noLaptop", "Admin " + icon_embedding + " Appendix C(FAQ): What if I don't carry around a laptop?", "tutorials-faqLaptop", "4") }}

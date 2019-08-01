@@ -32,7 +32,7 @@ Given 60% of this module is based on CA, it can appear to be _heavy_. However, *
 * **Three-stars topics** {{ three_stars }}: Can get you up to an **A**.
 * **Four-stars topics** {{ four_stars }}: Can be useful for getting an **A+**, tutors positions, and getting into downstream SE modules that have competitive entry requirements (e.g., CS3281&2, CS3217, CS3216). ==Four-star topics are not examinable==. Omitting them will not affect your CAP (as A+ has the same CAP as an A grade)
 
-* Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }},{{ prereq_four_stars }} are relevant topoics you are expected have learned in prerequisite modules. They are given for reference, but are examinable. The number of stars indicate the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.
+* Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }},{{ prereq_four_stars }} are relevant topics you are expected to have learned in prerequisite modules. They are given for reference, but ==are examinable==. The number of stars indicates the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.
 
 **Star ratings for other things** e.g., admin info sections:
 

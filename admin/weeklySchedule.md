@@ -11,15 +11,17 @@ Attend the lecture for,
 
 <p/>
 
-{{ icon_calendar }} **[Saturday (previous week) - Tuesday]**<br>
+{{ icon_calendar }} **[Saturday (previous week) - Tutorial day]**<br>
  
  * Use the relevant learning resources to learn the topics.
  * Self-test your knowledge using exercises given in the learning resources. 
+ * ==Submit the post-lecture quiz==
+ * ==Do project tasks== %%(e.g., attend weekly project meeting, finish weekly deliverables)%%
  * If you don't have time to learn all topics assigned to the week, use the star rating system to decide which ones to do first.
 
 <p/>
 
-{{ icon_calendar }} **[Wednesday - Friday]**<br>
+{{ icon_calendar }} **[Tutorial Day (Wednesday - Friday)]**<br>
  
 Attend the tutorial to,
 

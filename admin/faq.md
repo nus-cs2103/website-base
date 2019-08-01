@@ -9,7 +9,7 @@ The <span class="font-weight-bold">{{ schedule_link }}</span> is ==_the_ one pag
 
 <div id="admin-faq-tVsNonT">
 
-Same lectures, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.
+Same lecture content (but different lecture slots), same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.
 
 </div>
 
@@ -55,7 +55,7 @@ Related article: [This Is The Personality Trait That Most Often Predicts Success
 
 <img src="{{baseUrl}}/admin/images/Forces me to visit a separate website.png" width="655" height="271"/>
 
-We have a separate website because some of the module information does not fit into the structure imposed by IVLE.
+We have a separate website because some of the module information does not fit into the structure imposed by LumiNUS.
 
 On a related note, keep in mind that 'hunting and gathering' of relevant information is one of the skills you need to survive 'in the wild'. Do not always expect all relevant materials to appear 'magically' in some kind of 'work bin'.
 

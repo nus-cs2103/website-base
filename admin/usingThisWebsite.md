@@ -2,7 +2,7 @@
 <div id="main">
 <div id="essential">
 
-{{ icon_important_big_red }} The {{ schedule_link }} is your main source of information for {{ module_pair }}. You will need to refer to it weekly.
+{{ icon_important_big_red }} The {{ schedule_link }} is your main source of information for {{ module_pair }}. You will need to refer to it weekly. For an overview of the full schedule, refer to the [Full Timeline](../schedule/timeline.html) page.
 
 {{ icon_info }} More details for the upcoming weeks will be added as the weeks progress. In general, ==information given for more than 1 week into the future should be treated as _tentative_==.
 
@@ -40,7 +40,7 @@ Printer-friendly version %%(indicated by {{icon_print}} icon)%% have been provid
 
 ### Making this Website Better
 
-This website was generated using the [MarkBind](https://markbind.github.io/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted [at the website issue tracker]({{module_org}}/website/issues).
+This website was generated using the [MarkBind](https://markbind.org/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted [at the website issue tracker]({{module_org}}/website/issues).
 
 </div>
 </div>
