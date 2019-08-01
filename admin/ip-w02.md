@@ -6,7 +6,7 @@
 
 {% call show_project_summary_lead()%}
 1. Set up prerequisites
-1. Set up the project in your Computer
+1. Set up the project in your computer
 3. Implement increments while committing code frequently: `Level-1`, `Level-2`, `Level-3`, `Level-4`, `A-TextUiTesting`, `Level-5`, `Level-6`, `A-Enums` {{ timing_badge("by Thursday 2359") }}
 {% endcall %}
 <div id="body">
@@ -19,18 +19,20 @@
 
 **Prerequisites**:
 
-* Install Git in your Computer.
+* Install Git in your computer.
 * Have a GitHub account.
-* Recommended: Installed an IDE in your Computer.
+* Recommended: Installed an IDE in your computer.
 
 {{ embed_topic("tools.md#main", "Admin " + icon_embedding + " **Tools**", "ipW02-tools", "2") }}
 
 </box>
 <br>
 
-#### {{ thumb(2) }} Set up the project in your Computer
+#### {{ thumb(2) }} Set up the project in your computer
 
-1. Fork [this repo: TBD], and clone it into your Computer.
+1. Fork [{{ module_org }}/duke]({{ module_org }}/duke).
+1.  ==Ensure the issue tracker of your fork is enabled.== %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.%%
+1. Clone the fork onto your computer.
 1. Set up the project in your IDE as explained in the README file.
 
 #### {{ thumb(3) }} Implement increments while committing code frequently

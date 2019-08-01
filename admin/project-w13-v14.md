@@ -59,7 +59,7 @@
 </div>
 
 
-* {{ icon_team }} **User Guide**: Convert the pdf (AB4 dev guide has some instructions on converting project docs to pdf) and upload to LumiNUS.<br>
+* {{ icon_team }} **User Guide**: Convert the pdf (AB3 dev guide has some instructions on converting project docs to pdf) and upload to LumiNUS.<br>
   File name: `[TEAM_ID][product Name]UserGuide.pdf`  %%e.g.[W09-1][Contacts Plus]UserGuide.pdf%%
 
 <div class="indented-level2">

@@ -19,8 +19,8 @@ Divide these questions among team members and get ready to answer them.
 
 **Q2**
 1. Explain and justify: _testing should be efficient and effective_
-1. Explain how _exploratory_ and _scripted_ testing is used in AB4/project
-1. Give an example of a _negative_ test case in AB4/project
+1. Explain how _exploratory_ and _scripted_ testing is used in AB3/project
+1. Give an example of a _negative_ test case in AB3/project
 1. Explain _grey-box_ test case design
 
 **Q3**
@@ -38,11 +38,11 @@ Divide these questions among team members and get ready to answer them.
 **Q4**
 1. Explain: _Boundary Value Analysis_ improves E&E of testing
 1. What are the boundary values for the parameter `day` in the question above?
-1. How can EP and BVA heuristics be used in AB4/project? Hint: See [[AB4 Learning Outcomes: LO-TestCaseDesignHeuristics]({{module_org}}/addressbook-level4/blob/master/docs/LearningOutcomes.adoc#apply-test-case-design-heuristics-code-lo-testcasedesignheuristics-code)]
+1. How can EP and BVA heuristics be used in AB3/project? Hint: See [[AB3 Learning Outcomes: LO-TestCaseDesignHeuristics]({{module_org}}/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#apply-test-case-design-heuristics-code-lo-testcasedesignheuristics-code)]
 
 **Q5**
 1. What’s a _design pattern_?
 1. When do you use the _Singleton_ pattern, _Facade_ pattern, _Command_ pattern?
-1. Which of the three patterns are used in AB4? Hint: See [[AB4 Learning Outcomes: LO-DesignPatterns]({{module_org}}/addressbook-level4/blob/master/docs/LearningOutcomes.adoc#apply-design-patterns-code-lo-designpatterns-code)]
+1. Which of the three patterns are used in AB3? Hint: See [[AB3 Learning Outcomes: LO-DesignPatterns]({{module_org}}/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#apply-design-patterns-code-lo-designpatterns-code)]
 
 

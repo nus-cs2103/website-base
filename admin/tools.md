@@ -45,7 +45,7 @@ You are ==_required to_ use GitHub== as the hosting and collaboration platform o
 You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for module-related programming work. While the use of Intellij is not compulsory, note that module materials are optimized for Intellij. Use other IDEs at your own risk. 
 
 **Preparation:**
-* Install the IDE in your Computer. You may use the Intellij community edition (free) or the ultimate edition (free for students). 
+* Install the IDE in your computer. You may use the Intellij community edition (free) or the ultimate edition (free for students).
 
 </div><hr><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="rcs">
@@ -55,7 +55,7 @@ You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for 
 You are ==_required to_ use Git==. Other revision control software are not allowed. The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com/), but you may use any other, or none.
 
 **Preparation:**
-* Install Git and a Git GUI client on your Computer.<br>
+* Install Git and a Git GUI client on your computer.<br>
   {{ icon_tip }} SourceTree comes with bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot.
 
 </div><hr><!-- ----------------------------------------------------------------------------------------------------- -->

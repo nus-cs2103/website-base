@@ -37,7 +37,7 @@ Admin info relevant to the week's will appear in this tab.
 
 #### {{ thumb(3) }} Attend the lecture
 * Attend the Week 1 lecture (Week 1 lecture is ==**compulsory**==).
-* Bring your Computer to the lecture. Some lecture activities will require you to use it.
+* Bring your computer to the lecture. Some lecture activities will require you to use it.
 
 #### {{ thumb(4) }} Submit the pre-module survey {{ timing_badge("by Friday 2359", "secondary") }}
 * **Submit the pre-module survey ==(compulsory)==**<br>

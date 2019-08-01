@@ -4,10 +4,10 @@
 **Questions to discuss during tutorial:** Divide these five questions among team members. Be prepared to answer questions allocated to you.
 
 **Q1**
-1. Explain what Gradle is. How is it used in AB4?
-1. Explain what Travis is. How is it used in AB4?
+1. Explain what Gradle is. How is it used in AB3?
+1. Explain what Travis is. How is it used in AB3?
 1. Which integration approach is used by the project?
-1. What is test coverage? How is it used in AB4?
+1. What is test coverage? How is it used in AB3?
 1. How to measure coverage in Intellij?
 1. How do you ensure some clean up code is run after each JUnit test case?
 1. What’s the difference between _buffers_ and _padding/inflating_ estimates?
@@ -33,6 +33,6 @@
 
 **Q5**
 1. What is _unit/integration/system/acceptance_ testing?
-1. How is each one done in AB4?
+1. How is each one done in AB3?
 1. What’s the difference between _unit testing_ and _integration testing_?
 1. What’s the difference between _system testing_ and _acceptance testing_?

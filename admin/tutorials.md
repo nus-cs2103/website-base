@@ -27,7 +27,6 @@
 | CS2103T  | F10  %%(T10)%%  | **F**ri **10**00 | COM1-0210 (SR10)  | TBD
 | CS2103   | F11  %%(T09)%%  | **F**ri **11**00 | COM1-0210 (SR10)  | TBD
 
-%%*ALL: Active Learning Room%%
 
 </div>
 </panel>

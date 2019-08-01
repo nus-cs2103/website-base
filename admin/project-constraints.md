@@ -28,7 +28,7 @@
   %%**Reason:** Peer testers should be able to use any of these platforms.%%
 
 * **Constraint-Portable**: The software should work without requiring an installer.<br>
-  %%**Reason:** Testers may not want to install your product on their Computer.%%
+  %%**Reason:** Testers may not want to install your product on their computer.%%
 
 * **Constraint-No-Remote-Server**: The software should not depend on your own remote server.<br>
   %%**Reason:** Anyone should be able to use/test your app any time, even after the semester is over.%%

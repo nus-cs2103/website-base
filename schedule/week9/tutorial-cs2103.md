@@ -15,7 +15,7 @@ Divide these five questions among team members. Be prepared to answer questions 
 **Q1**
 1. What’s the use of assertions?
 1. Demonstrate an assertion failure using Intellij.
-1. What’s the purpose of logging levels? What are the available logging levels in AB4?
+1. What’s the purpose of logging levels? What are the available logging levels in AB3?
 
 **Q2**
 1. What is _Liskov Substitution Principle_?<br>

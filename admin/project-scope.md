@@ -119,7 +119,7 @@ In particular, ==you are required to divide work based on features rather than c
   * Contribution to the user guide: 1 page
   * Contribution to the developer guide: 3 pages
 * You are expected to ==showcase your ability to use the various UML diagrams (at least 2 types)==. As mentioned in the previous point, if the documentation of your features doesn't give you enough opportunities to do so %%e.g., your features only required minor updates to existing diagrams%%, you are expected to create those opportunities yourself by documenting proposed features or alternative designs. Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.
-* You are recommended to, but not required to, update all existing AB-4 documentation to match your product. However, all diagrams that are included in the part of documentation claimed as done by you should be updated to match the current product.
+* You are recommended to, but not required to, update all existing AB3 documentation to match your product. However, all diagrams that are included in the part of documentation claimed as done by you should be updated to match the current product.
 
 ##### [Individual] Expectations on Testing
 

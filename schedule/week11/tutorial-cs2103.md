@@ -15,8 +15,8 @@
 1. Distinguish between _sequential_ and _iterative_ processes. Which one are we using in the project?
 1. Distinguish between _breadth-first_ and _depth-first_ iterative processes using your project as an example.
 1. Describe how _agile process models_ differ from traditional process models.
-1. When do you use _MVC_ pattern? Do we have MVC in AB4?
-1. When do you use the _Observer_ pattern? Do we have the Observer pattern in AB4?
+1. When do you use _MVC_ pattern? Do we have MVC in AB3?
+1. When do you use the _Observer_ pattern? Do we have the Observer pattern in AB3?
 
 **D. Divide XP and Scrum between the two teams** for the following activity, if there is enough time left.
 

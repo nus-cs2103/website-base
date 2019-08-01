@@ -89,7 +89,7 @@ Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is de
 <blockquote>
 <div id="projectGrading-featureQuality-instructions">
 
-Evaluate ==the biggest feature done by the student== for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+Evaluate ==the biggest feature done by the student== for difficulty, completeness, and testability. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
 
 - Difficulty
   - [ ] `Feature/ difficulty: unable to judge`: You are unable to judge this aspect for some reason.

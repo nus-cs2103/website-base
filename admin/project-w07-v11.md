@@ -76,7 +76,7 @@ Move the draft UG into the User Guide page in your repository. If a feature is n
 #### {{ thumb(3) }} {{ icon_team }} Update DG: user stories, glossary, NFRs, use cases
 
 * Update the following in the DG, based on your project notes from the previous weeks.<br>
-  {{ icon_tip }} Some examples of these can be found in the [AB4 Developer Guide](https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#product-scope).
+  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-edu.github.io/addressbook-level3/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
   * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
