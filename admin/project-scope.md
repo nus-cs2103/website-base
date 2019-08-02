@@ -40,10 +40,10 @@ Note that both directions are equally acceptable.
 
 For either direction, you need to define a target user profile and a value proposition:
 
-* **Target user profile**: Define a very specific target user profile. <br> :bulb: We require you to narrow down the target user profile %%&nbsp;as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
+* **Target user profile**: Define a very specific target user profile. <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
  {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/project-constraints.html) when defining the user profile %%&nbsp;e.g. the target user should still prefer typing over mouse actions%%.<br><br>
   **It is expected that your product will be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module_pair }} instructors only, such as the ability to navigate to a student's project on GitHub%%<br>
-    :bulb: Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
+    {{ icon_tip }} Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
   
   <panel type="seamless" header="%%Why the need to narrow down the user profile?%%" >
   
@@ -102,7 +102,7 @@ Here is a non-exhaustive list of minor enhancements:
 
 </panel><p/>
 
-We strongly recommend that you contribute to multiple (preferably, all) aspects of the project e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose marks allocated for the aspects you did not do.
+We strongly recommend that you contribute to multiple (preferably, all) aspects of the project e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do.
 
 In particular, ==you are required to divide work based on features rather than components==:
    * By the <tooltip content="i.e. by `v1.4`">end of this project</tooltip> each team member is expected to have implemented at least one feature end-to-end, doing required changes in _almost all_ components. %%&nbsp;Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components%%.
@@ -110,7 +110,7 @@ In particular, ==you are required to divide work based on features rather than c
 
 ##### [Individual] Expectations on Code
 
-* Based on past experience, ==it is possible for a feature consisting of **~300-500 LoC of code** to earn full marks== provided the feature do well in all grading criteria.
+* Based on past experience, ==it is possible for a feature consisting of **~300-500 LoC of functional code** to earn full marks== provided the feature do well in all grading criteria.
 
 ##### [Individual] Expectations on Documentation
 
@@ -192,8 +192,7 @@ Please make sure each of the important roles are assigned to one person in the t
    1. documentation follows a consistent style and presents a cohesive picture to the reader, and
    1. final project demo presents a cohesive picture to the audience.
 1. **Maintain product quality**: i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
-1. **Manage the project smoothly**: i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
-
+1. **Manage the project**: i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
 </span>
 
 

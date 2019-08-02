@@ -5,16 +5,23 @@
 
 **Dev Team**:
 
-This module is supported by a number of software tools developed by past students. Here are some of them whose work was directly relevant to the module for this semester:
+This module is supported by a number of software tools developed by our students. Here are some of them whose work is directly relevant to the module for this semester:
 
-* Chng Zhi Xuan
-* Devamanyu Hazarica
-* Eugene Peh
-* Jamos Tay
-* Metta Ong
-* Tan Jun An
+* Chin Jian Hao Kevin
+* Daryl Tan
+* Evangelos Sigalas
+* Herty Liany
+* James Pang Mun Wai
+* Jin Minjia
+* Koh Jun Wei
+* Lee Jin Yao
+* Lee Yi Jie Joel
+* Low Shi Lei, Deborah
+* Lum Ka Fai Jeffry
+* Prithivi Raj s/o Siva Kumar
+* Ronak Lakhotia
 * Tan Wang Leng
-
+* Yip Seng Yeun (Alfred)
 
 </div>
 {% endmacro %}

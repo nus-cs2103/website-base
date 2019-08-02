@@ -6,7 +6,7 @@
 
 <span id="semester">AY1920S1</span>
 
-<span id="period">Aug '19</span>
+<span id="period">2019 Aug-Dec</span>
 
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-success'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 
@@ -14,7 +14,7 @@
 
 <span id="module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</span>
 
-<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vSMEFXr-yL298GPeuNxkC7m87bYqi4KTWo7zZRtDXLCIIhb0osxn5aM3gVk6DCOC6pEu5nMw7Gf1YwJ/pub?embed=true</span>
+<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQt_VkIgajiPIkdLzgqLTBkYf6UoYhAEMkgDns7S3eWfsx7x2EsI0wix6RLHooaYbETWkTuGnqGP-5s/pub?embedded=true</span>
 
 <span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true</span>
 
