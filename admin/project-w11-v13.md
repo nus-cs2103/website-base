@@ -22,7 +22,7 @@
 
 #### {{ thumb(2) }} {{ icon_individual }} Update user docs
 
-* {{ icon_important_big_red }} v1.3 user guide should be updated to match the current version of the product. %%&nbsp;Reason: testers will need to refer to the UG during the practical exam dry run%%.
+* {{ icon_important_big_red }} v1.3 user guide should be updated to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
   * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in v2.0`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 

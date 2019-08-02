@@ -102,7 +102,7 @@ Penalties:
 
 #### Giving credit for reused work
 
-Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module %%&nbsp;i.e., not applicable outside the module (outside the module you should follow the rules specified by your employer and the license of the reused work)%%
+Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module %%i.e., not applicable outside the module (outside the module you should follow the rules specified by your employer and the license of the reused work)%%
 
 
 If you **used a third party library**: 
@@ -110,7 +110,7 @@ If you **used a third party library**:
 * mention in the <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented
 
 
-If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOverflow answers%% or<br>
+If you **reused code snippets found on the Internet** %%e.g. from StackOverflow answers%% or<br>
 **referred code in another software** or<br>
 **referred project code by current/past student**:
 * If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
@@ -119,7 +119,7 @@ If you **reused code snippets found on the Internet** %%&nbsp;e.g. from StackOve
   //Solution below adapted from https://stackoverflow.com/a/16252290
   {Your implmentation of the reused solution here ...}
   ```
-* If you copy-pasted a non-trivial code block (possibly with minor modifications %%&nbsp;renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags">`@@author` tags</trigger>)<br>
+* If you copy-pasted a non-trivial code block (possibly with minor modifications %%renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags">`@@author` tags</trigger>)<br>
   Format:
   ```java
   //@@author {yourGithubUsername}-reused

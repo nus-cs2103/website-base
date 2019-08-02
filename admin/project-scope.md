@@ -13,9 +13,9 @@ In general, each team is expected to take one of these two directions:
   <panel type="seamless" header="%%{{ icon_example }} Examples for the _optimize_ direction%%">
      
   An AddressBook,
-     * for users in a specific profession %%&nbsp;e.g. doctors, salesmen, teachers, etc.%%
-     * based on the nature/scale of contacts %%&nbsp;e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)%%
-     * based on what users do with the contacts %%&nbsp;e.g. organize group events, share info, do business, do analytics%%   
+     * for users in a specific profession %%e.g. doctors, salesmen, teachers, etc.%%
+     * based on the nature/scale of contacts %%e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)%%
+     * based on what users do with the contacts %%e.g. organize group events, share info, do business, do analytics%%   
      
   </panel><p/>
 
@@ -32,7 +32,7 @@ In general, each team is expected to take one of these two directions:
   * Forum posts, news feeds, Social media feeds
   * Online projects or issue trackers that the user is interested in
   * Emails, possibly from different accounts
-  * Multiple types of related things %%&nbsp;e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
+  * Multiple types of related things %%e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
      
   </panel><p/>
 
@@ -41,7 +41,7 @@ Note that both directions are equally acceptable.
 For either direction, you need to define a target user profile and a value proposition:
 
 * **Target user profile**: Define a very specific target user profile. <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
- {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/project-constraints.html) when defining the user profile %%&nbsp;e.g. the target user should still prefer typing over mouse actions%%.<br><br>
+ {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/project-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing over mouse actions%%.<br><br>
   **It is expected that your product will be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module_pair }} instructors only, such as the ability to navigate to a student's project on GitHub%%<br>
     {{ icon_tip }} Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
   
@@ -91,11 +91,11 @@ Here are some examples of different enhancements and the grade the student is li
 
 Here is a non-exhaustive list of minor enhancements:
 
-1. Support different themes for the Look & Feel %%&nbsp;dark, light, etc.%%
-1. Support more fields %%&nbsp;e.g. Birthday%%
-1. Load a different page instead of the default Google search page %%&nbsp;e.g. Google Maps page or Twitter page%%
+1. Support different themes for the Look & Feel %%dark, light, etc.%%
+1. Support more fields %%e.g. Birthday%%
+1. Load a different page instead of the default Google search page %%e.g. Google Maps page or Twitter page%%
 1. Sort items
-1. Multiple panels %%&nbsp;e.g. an additional panel to show recently accessed items%%
+1. Multiple panels %%e.g. an additional panel to show recently accessed items%%
 1. Marking some items as favorites
 1. Ability to search by labels
 1. Ability to specify colors for labels
@@ -105,8 +105,8 @@ Here is a non-exhaustive list of minor enhancements:
 We strongly recommend that you contribute to multiple (preferably, all) aspects of the project e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do.
 
 In particular, ==you are required to divide work based on features rather than components==:
-   * By the <tooltip content="i.e. by `v1.4`">end of this project</tooltip> each team member is expected to have implemented at least one feature end-to-end, doing required changes in _almost all_ components. %%&nbsp;Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components%%.
-   * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%&nbsp;e.g., you can review others' changes to your component and suggest possible changes%%.
+   * By the <tooltip content="i.e. by `v1.4`">end of this project</tooltip> each team member is expected to have implemented at least one feature end-to-end, doing required changes in _almost all_ components. %%Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components%%.
+   * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
 
 ##### [Individual] Expectations on Code
 

@@ -67,7 +67,7 @@ Only one team member:
 1. Ensure your team members have the desired level of access to your team repo.
 1. [**Enable Travis CI for the team repo**](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/UsingTravis.html#setting-up-travis-ci).
 1. [**Set up _auto-publishing_ of docs**](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/UsingTravis.html#enabling-auto-publishing-of-documentation). When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/main` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/main/`. This also requires you to [enable the _GitHub Pages_ feature of your team repo and configure it to serve the website from the `gh-pages` branch](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).
-1. **create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level3]({{module_org}}/addressbook-level3)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[CS2103T-T09-2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
+1. **create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level3]({{module_org}}/addressbook-level3)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[CS2103T-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
 
 All team members:
 
@@ -255,7 +255,7 @@ We recommend you do proper milestone management starting from v1.2. ==Given belo
   * **Milestone closed.**<br>
     <img src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
 
-  * **If necessary, future milestones are revised** based on what you experienced in the current milestone %%&nbsp;e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation%%.
+  * **If necessary, future milestones are revised** based on what you experienced in the current milestone %%e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation%%.
    
    
 

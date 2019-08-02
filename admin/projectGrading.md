@@ -7,7 +7,7 @@
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -42,11 +42,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -61,7 +61,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -96,11 +96,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -115,7 +115,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -150,11 +150,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -169,7 +169,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -204,11 +204,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -223,7 +223,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -258,11 +258,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -277,7 +277,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -312,11 +312,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -331,7 +331,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -366,11 +366,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -385,7 +385,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -420,11 +420,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -439,7 +439,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -473,11 +473,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -492,7 +492,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -526,11 +526,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -545,7 +545,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -579,11 +579,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -598,7 +598,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -633,11 +633,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -652,7 +652,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -687,11 +687,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -706,7 +706,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -741,11 +741,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -760,7 +760,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -795,11 +795,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -814,7 +814,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -849,11 +849,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -868,7 +868,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -903,11 +903,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -922,7 +922,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -957,11 +957,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -976,7 +976,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1011,11 +1011,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1030,7 +1030,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1065,11 +1065,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1084,7 +1084,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1119,11 +1119,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1138,7 +1138,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1173,11 +1173,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1192,7 +1192,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1227,11 +1227,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1246,7 +1246,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1281,11 +1281,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1300,7 +1300,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1335,11 +1335,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1354,7 +1354,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1389,11 +1389,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1408,7 +1408,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1442,11 +1442,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1461,7 +1461,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1496,11 +1496,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1515,7 +1515,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1550,11 +1550,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1569,7 +1569,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1604,11 +1604,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1623,7 +1623,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1658,11 +1658,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1677,7 +1677,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1712,11 +1712,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1731,7 +1731,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1766,11 +1766,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1785,7 +1785,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1820,11 +1820,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1839,7 +1839,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1874,11 +1874,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1893,7 +1893,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1927,11 +1927,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -1946,7 +1946,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -1981,11 +1981,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2000,7 +2000,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2035,11 +2035,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2054,7 +2054,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2089,11 +2089,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2108,7 +2108,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2143,11 +2143,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2162,7 +2162,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2196,11 +2196,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2215,7 +2215,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2250,11 +2250,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2269,7 +2269,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2304,11 +2304,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2323,7 +2323,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2358,11 +2358,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2377,7 +2377,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2412,11 +2412,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2431,7 +2431,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2466,11 +2466,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2485,7 +2485,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2520,11 +2520,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2539,7 +2539,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2574,11 +2574,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2593,7 +2593,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2628,11 +2628,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2647,7 +2647,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2682,11 +2682,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
@@ -2701,7 +2701,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%&nbsp;i.e. wider than AB3%%
+  * target user is too general %%i.e. wider than AB3%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
@@ -2736,11 +2736,11 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 **D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command that allows multiple undo/redo%%.
+* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}

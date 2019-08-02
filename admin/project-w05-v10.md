@@ -25,7 +25,7 @@
 
   * You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
 
-  * Note that ==you should not 'evaluate' the value of user stories while doing the above==. %%&nbsp;Reason: an important aspect of brainstorming is not judging the ideas generated.%%
+  * Note that ==you should not 'evaluate' the value of user stories while doing the above==. %%Reason: an important aspect of brainstorming is not judging the ideas generated.%%
 
 
 <modal large title="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">

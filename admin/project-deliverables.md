@@ -45,7 +45,7 @@ Here is a list of main deliverables of the project; their details are given in t
 
 * The Developer Guide (DG) of the product should match the proposed v2.0 of the product and should be in sync with the current version of the product.
 * {{ icon_important_big_red }} **The appendix named _Instructions for Manual Testing_** of the Developer Guide should include testing instructions to **cover the features of each team member**. There is no need to add testing instructions for existing features if you did not touch them.<br>
-  {{ icon_tip }} What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%&nbsp;i.e. annoys the tester%%, the tester can report it as a bug %%&nbsp;(because flaws in developer docs are considered as bugs)%%.
+  {{ icon_tip }} What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%i.e. annoys the tester%%, the tester can report it as a bug %%(because flaws in developer docs are considered as bugs)%%.
 * Ensure the parted DG parts included in PPPs match the product precisely, as PPPs will be used by peer evaluators (and ==any inaccuracy in the content will be considered bugs==).
     
 </span>
@@ -122,7 +122,7 @@ Here is a list of main deliverables of the project; their details are given in t
 At the end of the project each student is required to submit a _Project Portfolio Page_.
 
 * **Objective:** 
-  * For you to use %%&nbsp;(e.g. in your resume)%% as a well-documented data point of your SE experience 
+  * For you to use %%(e.g. in your resume)%% as a well-documented data point of your SE experience 
   * For us to use as a data point to evaluate your,
     * contributions to the project
     * your documentation skills
@@ -149,7 +149,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
   * {{ icon_tip }} You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/team/johndoe.html).
 
-  * =={{ icon_important_big_red }} It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%&nbsp;e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%&nbsp;(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%&nbsp;Reason: Your writing skills will be evaluated based on the PPP%%
+  * =={{ icon_important_big_red }} It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%Reason: Your writing skills will be evaluated based on the PPP%%
 
 * **Page limit**:
   Content | Limit
@@ -176,17 +176,17 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 * **Scope**: 
   * **Each person should demo the enhancements they added**. However, it's ok for one member to do all the typing.
-  * Subjected to the constraint mentioned in the previous point, as far as possible, organize the demo to present a cohesive picture of the product as a whole, presented in a logical order. %%&nbsp;Remember to explain the profile of the target user profile and value proposition early in the demo.%%
+  * Subjected to the constraint mentioned in the previous point, as far as possible, organize the demo to present a cohesive picture of the product as a whole, presented in a logical order. %%Remember to explain the profile of the target user profile and value proposition early in the demo.%%
   * It is recommended you showcase how the feature improves the user’s life rather than simply describe each feature.
   * No need to cover design/implementation details as the manager is not interested in those details.
-  * Mention features you inherited from AB3 only if they are needed to explain your new features. %%&nbsp;Reason: existing features will not earn you marks, and the audience is already familiar with AB3 features.%%
+  * Mention features you inherited from AB3 only if they are needed to explain your new features. %%Reason: existing features will not earn you marks, and the audience is already familiar with AB3 features.%%
   * Each person should demo their features.
 
 * **Structure:**  
   * Demo the product using the same executable you submitted, on your own laptop, using the TV.  
   * It can be **a _sitting down_ demo**: You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.
   * It will be an uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.
-  * The demo should use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name">_realistic_</tooltip> demo data. %%&nbsp;e.g at least 20 contacts%%. Trying to demo a product using just 1-2 sample data creates a bad impression.
+  * The demo should use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name">_realistic_</tooltip> demo data. %%e.g at least 20 contacts%%. Trying to demo a product using just 1-2 sample data creates a bad impression.
   * **Dress code** : The level of formality is up to you, but it is recommended that the whole team dress at the same level.
     
 * **Optimizing the time:** 
