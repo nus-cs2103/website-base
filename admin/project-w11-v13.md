@@ -26,7 +26,7 @@
   * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in v2.0`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 
-* **README page**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">:bulb: tips</trigger>)==.
+* **README page**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.
 
 <modal large title="Admin → Project Deliverables → Website" id="modal:v13-tipsForProductScreenshot">
   <include src="project-deliverables.md#tips-for-product-screenshot"/>

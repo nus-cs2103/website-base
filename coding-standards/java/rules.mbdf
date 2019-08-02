@@ -1,6 +1,6 @@
 <sub>Versions: [[Basic Rules]({{baseUrl}}/coding-standards/java/basic.html)] [[Basic + Intermediate Rules]({{baseUrl}}/coding-standards/java/intermediate.html)] [[All Rules]({{baseUrl}}/coding-standards/java/index.html)]</sub>
 
-:bulb: Use the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) for any topics not covered in this document.
+{{ icon_tip }} Use the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) for any topics not covered in this document.
 
 <span tags="level--intermediate">
 <box>
@@ -407,7 +407,7 @@ do {
 
 
 **:star: The _switch_ statement should have the following form:** ==Note there is no indentation for `case` clauses.==<br>
-:bulb: Configure your IDE to follow this style instead.
+{{ icon_tip }} Configure your IDE to follow this style instead.
 
 ```java
 switch (condition) {
@@ -550,7 +550,7 @@ import javafx.geometry.Point2D;
 import junit.framework.AssertionFailedError;
 ```
 
-:bulb: IDEs have support for auto-ordering import statements. However, note that the default orderings of different IDEs are not always the same. It is recommended that you and your team use the same IDE and stick to a consistent ordering.
+{{ icon_tip }} IDEs have support for auto-ordering import statements. However, note that the default orderings of different IDEs are not always the same. It is recommended that you and your team use the same IDE and stick to a consistent ordering.
 
 </div>
 

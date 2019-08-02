@@ -145,7 +145,7 @@ Note that some of our download scripts depend on the following folder paths. Ple
 We recommend you configure the issue tracker of the `main` repo as follows:
 
 * Delete existing labels and add the following labels.<br>
-  :bulb: **Issue type** labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.
+  {{ icon_tip }} **Issue type** labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.
 
 <tip-box>
 

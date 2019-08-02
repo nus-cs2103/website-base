@@ -56,11 +56,11 @@ The `//@@author` tag should indicates the beginning of the code you wrote. The c
 
 * **Annotate both functional and test code** There is no need to annotate documentation files.
 
-* **Annotate only significant size code blocks that can be reviewed on its own** %%&nbsp;e.g., a class, a sequence of methods, a  method.%% <br> **Claiming credit for code blocks smaller than a method is discouraged** but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement.
+* **Annotate only significant size code blocks that can be reviewed on its own** %%e.g., a class, a sequence of methods, a  method.%% <br> **Claiming credit for code blocks smaller than a method is discouraged** but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement.
   * If an enhancement required you to do tiny changes in many places, there is no need to annotate all those tiny changes; you can describe those changes in the Project Portfolio page instead.
   * If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).
   * Related to the above point, ==if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself==. For example, no more than 20% of it can be code you reused from somewhere.
-  * :bulb: GitHub has a [_blame_ feature and a _history_](https://help.github.com/articles/tracing-changes-in-a-file/) feature that can help you determine who wrote a piece of code.
+  * {{ icon_tip }} GitHub has a [_blame_ feature and a _history_](https://help.github.com/articles/tracing-changes-in-a-file/) feature that can help you determine who wrote a piece of code.
 
 * **Do not try to boost the quantity of your contribution using unethical means** such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.
   Individual members are responsible for making sure code attributed to them are correct.

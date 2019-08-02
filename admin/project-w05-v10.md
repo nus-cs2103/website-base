@@ -47,7 +47,7 @@
 <div class="indented-level3">
 <box>
 
-:bulb: Recommended: **You can use GitHub issue tracker to manage user stories**, but for that you need to set up your team's GitHub organization, project fork, and issue tracker first. Instructions for doing those steps are in the panel below.
+{{ icon_tip }} Recommended: **You can use GitHub issue tracker to manage user stories**, but for that you need to set up your team's GitHub organization, project fork, and issue tracker first. Instructions for doing those steps are in the panel below.
 
 <panel header="%%Admin {{ icon_embedding }} Appendix E: GitHub (extract)%%">
   <include src="appendixE-gitHub.md#organization-setup"/>

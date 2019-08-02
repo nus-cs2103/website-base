@@ -50,7 +50,7 @@ The question you should always ask yourself is, 'how do I solve this problem if 
     
     <tip-box>
     
-    :bulb: How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.
+    {{ icon_tip }} How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.
     
     </tip-box>
 
@@ -59,7 +59,7 @@ The question you should always ask yourself is, 'how do I solve this problem if 
     
     <tip-box>
     
-    :bulb: Know what these stand for: **RTFM**, **STFW**, **GIYF**
+    {{ icon_tip }} Know what these stand for: **RTFM**, **STFW**, **GIYF**
     
     </tip-box>
     
