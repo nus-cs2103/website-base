@@ -7,7 +7,7 @@
 
 <tip-box> 
 
-{{ icon_important_big_red }} Our tutorial IDs are different from CORS. Format: `CS2103T-W09` means a tutorial of `CS2103T` module, held on `Wednesday` at `0900`, and so on.
+{{ icon_important_big_red }} Our tutorial IDs are different from LumiNUS. Format: `CS2103T-W09` means a tutorial of `CS2103T` module, held on `Wednesday` at `0900`, and so on.
 
 </tip-box>
 

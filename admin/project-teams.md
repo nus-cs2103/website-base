@@ -13,7 +13,7 @@
 
 <div id="teamIdFormat">
 
-**Team ID**: This will be given to you after forming teams. It has the form `TUTORIAL_ID-TEAM_NUMBER` e.g, `W14-2` means you are in tutorial W14 (i.e., Wed 1400-1500), team 2.
+**Team ID**: This will be given to you after forming teams. It has the form `TUTORIAL_ID-TEAM_NUMBER` e.g, `CS2103-W14-2` means you are in tutorial `CS2103-W14` (i.e., in module `CS2103`, on `Wednesday`, at `1400-1500`), team `2`.
 </div>
 
 {{ embed_topic("tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial IDs", "projectTeams-tutorialIDs", "3") }}
@@ -25,7 +25,7 @@ We allow some freedom in choosing team members, subject to these constraints:
 * All team members should be in the same tutorial. ==Delay forming teams until your place in a tutorial is confirmed.== We do not allow changing tutorials to team up with your preferred team mates.  
 * Teams of ==single nationality are not allowed==  unless the only language common among all team members is English. e.g. an all-Singaporean team that include both Chinese and Malay students. %%Rationale: to train you to work in multicultural teams, to ensure that English is used for all project communication%%
 * No more than one exchange students per team %%Rationale: to increase interaction between exchange students and NUS students.%%
-* Same gender teams are highly discouraged unless unavoidable. %%Rationale: to train you for mixed-gender work environments.%%
+* Same gender teams are discouraged but allowed. %%Rationale: to train you for mixed-gender work environments.%%
 
 * Also note that ==**we may modify teams when circumstances call for it**==. There is no avenue for you to object. Staying with your preferred team is not guaranteed.
 
