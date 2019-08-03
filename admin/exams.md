@@ -9,6 +9,13 @@ The final exam has two parts:
 
 Both papers will be given to you at the start but you need to **answer Part 1 first** (i.e. MCQ paper). It will be **collected 1 hour after the exam start time** (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.
 
+<box type="important">
+
+Given the fast pace required by the paper and the large class size, to be fair to all students, **invigilators will not answer queries about the questions in the exam paper** (but _will_ answer queries related to exam administration).
+* If you have a doubt/query about a question or would like to make an assumption about a question, write down your doubt/query/assumption in the space provided for it in the exam paper.
+* Those doubts/queries/assumptions (if justified) will be taken into account when grading.
+</box>
+
 ## Final Exam: Part 1 (MCQ)
 
 Each MCQ question gives you a statement to evaluate. 
@@ -34,10 +41,6 @@ Number of questions: 100
 Note that you have **slightly more than ½ minute for each question**, which means you need to go through the questions fairly quickly.
 </div>
 
-Given the fast pace required by the paper, to be fair to all students, **you will not be allowed to clarify doubts about questions** (in Part 1) by talking to invigilators. 
-* If a question is not clear, you can circle the question number in the question paper and write your doubt in the question paper, near that question.
-* If your doubt is justified %%(e.g. there is a typo in the question)%% or if many students found the question to be unclear, the examiner may decide to omit that question from grading.
-
 **Questions in Part 1 are confidential.** You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the exam paper are to be returned at the end of the exam.
 
 <div class="full-mode">
@@ -60,15 +63,15 @@ The correct response for it is `Disagree` because IDEs can help with all three o
 
 </tip-box>
 
-Some questions will use ++underlines++ or ==highlighting== to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance of that part.
+Some questions will use ==highlighting== to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance of that part.
 
 <tip-box> 
 
 {{ icon_example }} Consider the statement below:
   
-> Technique ABC ++can++ be used to generate more test cases. 
+> Technique ABC ==can== be used to generate more test cases.
 
-The word ++can++ is underlined because the decision you need to make is whether the ABC _can or cannot_ be used to generate more test cases; the decision is not whether ABC can be used to generate _more or better_ test cases.
+The word ==can== is highlighted because the decision you need to make is whether the ABC _can or cannot_ be used to generate more test cases; the decision is not whether ABC can be used to generate _more or better_ test cases.
 
 </tip-box>
 
@@ -96,8 +99,6 @@ You will be given a practice exam paper to familiarize yourself with this slight
 
 
 ## Final Exam: Part 2 (Essay)
-
-Unlike in part 1, **you can ask invigilators for clarifications** if you found a question to be unclear in part 2.
 
 Yes, **you may use pencils** when answering part 2.
 

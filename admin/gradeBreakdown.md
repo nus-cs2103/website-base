@@ -1,12 +1,12 @@
 {% macro show_main_text() %}
 <div id="main">
 
-<img src="{{baseUrl}}/admin/images/gradeBreakdown.png" width="600"/>
-<p/>
+<puml src="images/grade-breakdown.puml" />
 
 {{ embed_topic("participation.md#main", "Admin " + icon_embedding + " Participation Marks", "gradeBreakdown-participation", "3") }}
 {{ embed_topic("exams.md#main", "Admin " + icon_embedding + " Exams", "gradeBreakdown-exams", "3") }}
-{{ embed_topic("project-grading.md#main", "Admin " + icon_embedding + " Project Grading", "gradeBreakdown-projectGrading", "3") }}
+{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " Individual Project (iP) Grading", "gradeBreakdown-ipGrading", "3") }}
+{{ embed_topic("project-grading.md#main", "Admin " + icon_embedding + " Team Project (tP) Grading", "gradeBreakdown-tpGrading", "3") }}
 
 </div>
 {% endmacro %}

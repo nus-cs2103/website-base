@@ -5,27 +5,32 @@
 
 <img src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px"><br>
 
-#### Tools Used: Learning Management System
+#### <div class="text-white bg-dark p-1">Tools Used: Learning Management System</div>
 
 This module website is the main source of information for the module. In addition, we use LumiNUS for some things %%(e.g., webcasts, announcements, file submissions, grade book, ...)%%.
 
-<hr><!-- ----------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="github">
 
-#### Tool Used: GitHub (for Code Hosting)
+#### <div class="text-white bg-dark p-1">Tool Used: GitHub (for Code Hosting)</div>
 
 You are ==_required to_ use GitHub== as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). 
 
-**Preparation**: Create a GitHub account (if you don't have one yet), as explained in the panel below.
+<box>
+
+<span style="color:purple">**:fas-hard-hat: Preparation**:</span>
+
+Create a GitHub account (if you don't have one yet), as explained in the panel below.
 
 {{ embed_topic("appendixE-gitHub.md#githubAccount", "Admin " + icon_embedding + " **Appendix E - GitHub: Creating an Account**", "-", "2") }}
+</box>
 
 **More info**: See [Appendix E - Using GitHub](appendixE-gitHub.html).
 
-</div><hr><!-- ----------------------------------------------------------------------------------------------------- -->
+</div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="communication">
 
-#### Tools Used: for Communication
+#### <div class="text-white bg-dark p-1">Tools Used: for Communication</div>
 
 * **The preferred channels for module-related communications are**:
   * ==[github/nus-{{ module | lower }}-{{ semester }}/forum]({{module_org}}/forum/issues)== (not LumiNUS forum) -- suitable for longer-running conversations
@@ -33,35 +38,52 @@ You are ==_required to_ use GitHub== as the hosting and collaboration platform o
 * When communicating with instructors, prefer the two public channels given above. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the public channels are not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy%%.
 * You are encouraged to help others in the forum (e.g., share tips, help with technical problems). ==We consider such sharing when giving out `A+` grades and when recruiting tutors.==
 
-**Preparation:** We encourage you all to,
+<box>
+
+<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+
+We encourage you all to,
 * ==join the slack channel== (you'll need to use an email address ending in `@nus.edu.sg`, `@comp.nus.edu.sg`, `@u.nus.edu.sg` or `@u.nus.edu` to join this channel).
 * ==_watch_ [the forum]({{ forum_link }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
+</box>
 
-</div><hr><!-- ----------------------------------------------------------------------------------------------------- -->
+</div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="ide">
 
-#### Tool Used: Intellij IDE
+#### <div class="text-white bg-dark p-1">Tool Used: Intellij IDE</div>
 
 You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for module-related programming work. While the use of Intellij is not compulsory, note that module materials are optimized for Intellij. Use other IDEs at your own risk. 
 
-**Preparation:**
-* Install the IDE in your computer. You may use the Intellij community edition (free) or the ultimate edition (free for students).
+<box>
 
-</div><hr><!-- ----------------------------------------------------------------------------------------------------- -->
+<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+* Install the IDE in your computer. You may use the Intellij community edition (free) or the ultimate edition (free for students).
+</box>
+
+</div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="rcs">
 
-#### Tool Used: Git (for Revision Control)
+#### <div class="text-white bg-dark p-1">Tool Used: Git (for Revision Control)</div>
 
 You are ==_required to_ use Git==. Other revision control software are not allowed. The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com/), but you may use any other, or none.
 
-**Preparation:**
+<box>
+
+<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 * Install Git and a Git GUI client on your computer.<br>
   {{ icon_tip }} SourceTree comes with bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot.
+* Set your Git `user.name` to a reasonable value.
+<div class="indented-level2">
 
-</div><hr><!-- ----------------------------------------------------------------------------------------------------- -->
+{{ embed_topic("appendixE-gitHub.md#git-username", "Admin " + icon_embedding + " **Appendix E - Setting Git `user.name`**", "-", "1") }}
+</div>
+
+</box>
+
+</div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="reposense">
 
-#### Tool Used: RepoSense (for Analyzing Code Authorship)
+#### <div class="text-white bg-dark p-1">Tool Used: RepoSense (for Analyzing Code Authorship)</div>
 
 <include src="reposenseCompatibility.md" />
 </div>

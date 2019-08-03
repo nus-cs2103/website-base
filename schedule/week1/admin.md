@@ -27,7 +27,7 @@ Admin info relevant to the week's will appear in this tab.
 
 #### {{ thumb(2) }} Set up the tools {{ timing_badge("before the lecture", "secondary") }}
 
-* Follow the 'Preparation' instructions of the following tools.
+  * Follow the <span class="border" style="color:purple">&nbsp;**:fas-hard-hat: Preparation**&nbsp;</span> instructions of the following tools.
 
 <div class="indented-level2">
 {{ embed_topic("../../admin/tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "-", "2") }}

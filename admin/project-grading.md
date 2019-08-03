@@ -3,7 +3,7 @@
 
 Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
 
-**Total**: 50 marks ({{ icon_individual }} 40 individual marks + {{ icon_team }} 10 team marks)
+**Total**: 45 marks ({{ icon_individual }} 35 individual marks + {{ icon_team }} 10 team marks)
 
 See the sections below for details of how we assess each aspect.
 
@@ -45,7 +45,7 @@ Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is de
 
 -----------------------------------------------------------------------------------------------------------------------
 
-#### 2. Project Grading: Implementation %%[{{ icon_individual }} 15 marks]%%
+#### 2. Project Grading: Implementation %%[{{ icon_individual }} 10 marks]%%
 
 **<big>2A. Code quality</big>**
 
@@ -151,13 +151,13 @@ Evaluate the amount of work, on a scale of 0 to 30.
   * The type of the bug:  `type.FunctionalityBug` > `type.DocumentationBug` > `type.FeatureFlaw` > `type.DocTypo`
 * The penalty for a bug is divided equally among assignees.
 * The developers are not penalized for the duplicate bug reports they received but the testers earn credit for the duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.
-* <tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn slightly less credit for the tester and slightly more penalty for the developer.
-* If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means %%(e.g., performance in mock PE)%% to calculate your marks for system/acceptance testing.
+* <tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.
+* If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means %%(e.g., performance in PE dry run)%% to calculate your marks for system/acceptance testing.
 * Your marks for developer testing depends on the _bug density_ rather than total bug count. Here's an example:
   * `n` bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks
   * `n` bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks
 * You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.
-* Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">de-duplicating</tooltip>, if deemed an unethical attempt to _game the system_, may be penalized.
+* Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>, if deemed an unethical attempt to _game the system_, may be penalized.
 
 -----------------------------------------------------------------------------------------------------------------------
 

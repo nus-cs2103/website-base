@@ -45,7 +45,7 @@ In {{ module_pair }}, A+ is not given simply based on the final score. To get an
 
 Sometimes, small things matter in big ways. e.g., all other things being equal, a job may be offered to the candidate who has the neater looking CV although both have the same qualifications. This may be unfair, but that's how the world works. Students forget this harsh reality when they are in the protected environment of the school and tend to get sloppy with their work habits. That is why we reward all positive behavior, even small ones (e.g., following precise submission instructions, arriving on time etc.).
 
-But unlike the real world, we are forgiving. That is why you can still earn full 10 marks of the participation marks even if you miss a few things here and there.
+But unlike the real world, we are forgiving. That is why you can still earn full marks for participation even if you miss a few things here and there.
 
 Related article: [This Is The Personality Trait That Most Often Predicts Success](http://www.businessinsider.sg/conscientiousness-predicts-success-2014-4/#.Vewqb_mqpBc) (this is why we reward things like punctuality).
 
@@ -96,16 +96,6 @@ But, wider scope → more diverse projects → harder for us to go deep into you
 That is why a strictly-defined project is more suitable for a first course in SE that focuses on nuts-and-bolts of SE. After learning those fundamentals, in higher level project modules you can focus more on the creative side of software projects without being dragged down by nuts-and-bolts SE issues (because you already know how to deal with them). However, we would like to allow some room for creativity too. That is why we let you build products that are slight variations of a given theme.
 
 Also note: **The freedom to do 'anything' is not a necessary condition for creativity**. Do not mistake being different for being creative. In fact, the more constrained you are, the more you need creativity to stand out.
-
-</div>
-
-<div id="admin-faq-vagueRequirements">
-
-<img src="{{baseUrl}}/admin/images/vague requirement.png" width="737" height="210"/>
-
-"You tell me exactly what to do - I do that - you pay me (in grades)" is a model for contract work, not for learning. Being able to survive in imprecise, uncertain, volatile problem contexts is precisely what we are trying to teach you.
-
-For example, the best way to communicate something often depends on what is being communicated. That is why we don't specify the precise content for project documents. Instead, we aim to refine project documents iteratively. We believe the learning experience will be richer if we let you decide the best way to present your project information rather than just following our instructions blindly. For example, in real-life projects you are rarely told which diagrams to draw; that is a decision you have to make yourself.
 
 </div>
 

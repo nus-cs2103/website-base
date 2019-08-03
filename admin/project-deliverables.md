@@ -44,9 +44,9 @@ Here is a list of main deliverables of the project; their details are given in t
 <span id="project-deliverables-dg">
 
 * The Developer Guide (DG) of the product should match the proposed v2.0 of the product and should be in sync with the current version of the product.
-* {{ icon_important_big_red }} **The appendix named _Instructions for Manual Testing_** of the Developer Guide should include testing instructions to **cover the features of each team member**. There is no need to add testing instructions for existing features if you did not touch them.<br>
-  {{ icon_tip }} What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%i.e. annoys the tester%%, the tester can report it as a bug %%(because flaws in developer docs are considered as bugs)%%.
-* Ensure the parted DG parts included in PPPs match the product precisely, as PPPs will be used by peer evaluators (and ==any inaccuracy in the content will be considered bugs==).
+* {{ icon_important_big_red }} **The appendix named _Instructions for Manual Testing_** of the Developer Guide should include testing instructions to **cover the features of each team member**. There is no need to add testing instructions for existing AB3 features if you did not touch them.<br>
+  {{ icon_tip }} What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%i.e. annoys the tester%%, the tester can report it as a bug %%(because flaws in developer docs are considered as bugs)%% or give a lower rating for the _testability_ of your product.
+* Ensure the DG parts included in PPPs match the product precisely, as PPPs will be used by peer evaluators (and ==any inaccuracy in the content will be considered bugs==).
     
 </span>
 
@@ -55,7 +55,7 @@ Here is a list of main deliverables of the project; their details are given in t
 <span id="project-deliverables-website">
 
 * Include an updated version of the online UG and DG that match v1.4 executable
-* README :
+* **README** :
   * ==Ensure the `Ui.png` matches the current product==
 <div class="indented-level3" id="tips-for-product-screenshot">
 
@@ -67,29 +67,33 @@ Here is a list of main deliverables of the project; their details are given in t
 * Before taking the screenshot, populate the product with data that makes the product look good. For example, if the product is supposed to show photos, use real photos instead of dummy placeholders.
 * It should show a state in which the product is well-populated %%i.e., don't leave data panels largely blank%%
 * Choose a state that showcase the main features of the product %%i.e., the login screen is not usually a good choice%%
-* Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is being in use for real.
+* Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is in use for real.
 
-<panel type="seamless" header="Examples">
+<panel type="seamless" header="Examples" expanded >
 
 <tabs>
-  <tab header="Not Good">
+  <tab header=":-1: Not Good">
 
-   <img src="{{ baseUrl }}/admin/images/Ui-notGood1.png" width="600" />
+Reason: Distracting annotations.
 
-  </tab>
-  <tab header="Not Good">
-
-   <img src="{{ baseUrl }}/admin/images/Ui-notGood2.png" width="600" />
+   <img src="images/Ui-notGood1.png" width="600" />
 
   </tab>
-  <tab header="Good">
+  <tab header=":-1: Not Good">
 
-   <img src="{{ baseUrl }}/admin/images/Ui-good1.png" width="600" />
+Reason: Not enough data.
+
+   <img src="images/Ui-notGood2.png" width="600" />
 
   </tab>
-  <tab header="Good">
+  <tab header=":+1: Good">
 
-   <img src="{{ baseUrl }}/admin/images/Ui-good2.png" width="600" />
+   <img src="images/Ui-good1.png" width="600" />
+
+  </tab>
+  <tab header=":+1: Good">
+
+   <img src="images/Ui-good2.png" width="600" />
 
 </tab>
 </tabs>
@@ -99,7 +103,7 @@ Here is a list of main deliverables of the project; their details are given in t
 </box>
 </div>
 
-* AboutUs : Ensure the following:
+* **AboutUs** : Ensure the following:
   * Use a suitable profile photo
 <div id="profile-photo" class="indented-level2">
 
@@ -149,7 +153,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
   * {{ icon_tip }} You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/team/johndoe.html).
 
-  * =={{ icon_important_big_red }} It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%e.g. someone else wrote described the feature in the User Guide but you implemented the feature%%, clearly state that the section was written by someone else %%(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%Reason: Your writing skills will be evaluated based on the PPP%%
+  * =={{ icon_important_big_red }} It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%e.g. someone else wrote the description of your feature in the User Guide%%, clearly state that the section was written by someone else %%(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%Reason: Your writing skills will be evaluated based on the PPP%%
 
 * **Page limit**:
   Content | Limit
@@ -175,28 +179,30 @@ At the end of the project each student is required to submit a _Project Portfoli
 * **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed but they are familiar with the AddressBook-level3 (AB3) product. The actual audience are the evaluators (the team supervisor and another tutor).
 
 * **Scope**: 
-  * **Each person should demo the enhancements they added**. However, it's ok for one member to do all the typing.
-  * Subjected to the constraint mentioned in the previous point, as far as possible, organize the demo to present a cohesive picture of the product as a whole, presented in a logical order. %%Remember to explain the profile of the target user profile and value proposition early in the demo.%%
+  * **Each person should demo the enhancements they added**. However, it's OK for one member to do all the typing.
+  * Each person should demo their part in one go %%i.e., one person should not appear multiple times in the demo. Reasons: it will interfere with grading as some things are graded individually%%. However, it's OK for one person to give a short intro at the start and appear again later in the demo to demo her features.
+  * Subjected to the previous two points, as far as possible, organize the demo to present a cohesive picture of the product as a whole, presented in a logical order. %%Remember to explain the profile of the target user profile and value proposition early in the demo.%%
   * It is recommended you showcase how the feature improves the user’s life rather than simply describe each feature.
   * No need to cover design/implementation details as the manager is not interested in those details.
-  * Mention features you inherited from AB3 only if they are needed to explain your new features. %%Reason: existing features will not earn you marks, and the audience is already familiar with AB3 features.%%
-  * Each person should demo their features.
+  * Do not demo features you inherited from AB3 unless they are needed to explain your new features. %%Reason: existing features will not earn you marks, and the audience is already familiar with AB3 features.%%
+  * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
 
-* **Structure:**  
+* **Structure:**
   * Demo the product using the same executable you submitted, on your own laptop, using the TV.  
   * It can be **a _sitting down_ demo**: You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.
   * It will be an uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.
   * The demo should use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name">_realistic_</tooltip> demo data. %%e.g at least 20 contacts%%. Trying to demo a product using just 1-2 sample data creates a bad impression.
   * **Dress code** : The level of formality is up to you, but it is recommended that the whole team dress at the same level.
-    
+
 * **Optimizing the time:** 
   * Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.  
-   Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this] `Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.` [do this] `If Jim needs to postpone the meeting, he can type …`
+   Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example,<br>
+   [Instead of this] `Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.`<br>
+   [do this] `If Jim needs to postpone the meeting, he can type …`<br>
     It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.  
     Note that CS2101 demo requirements may differ. Different context → Different requirements.  
   * Rehearse the steps well and ensure you can do a smooth demo. Poor quality demos can affect your grade.
   * Don’t waste time repeating things the target audience already knows. e.g. no need to say things like "We are students from NUS, SoC". 
-  * Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
 
 * **Special circumstances:**
   * If a significant feature was not merged on time: inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.
@@ -254,21 +260,22 @@ At the end of the project each student is required to submit a _Project Portfoli
   * The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'
   * Problems in the User Guide e.g., missing/incorrect info
 
-* **Where to report bugs**: Post bug in the following issue trackers (==not in the team's repo==):
-  * PE Dry Run (at **v1.3**): [nus-{{ module | lower }}-{{ semester }}/**pe-dry-run**]({{module_org}}/pe-dry-run/issues).
-  * PE (at **v1.4**): [nus-{{ module | lower }}-{{ semester }}/**pe**]({{module_org}}/pe/issues).
+* **Where to report bugs**: Post bug in the following issue trackers that you created in your personal GitHub account (==not in the team's repo==):
+  * PE Dry Run (at **v1.3**): `pe-d`<br>
+  * PE (at **v1.4**): `pe`
 
 * **Bug report format**:
   * {{ icon_important_big_red }} Post bugs as you find them %%(i.e., do not wait to post all bugs at the end)%% because the issue tracker will close exactly at the end of the allocated time.
-  * ==Do not use team ID in bug reports==. %%Reason: to prevent others copying your bug reports%%
   * Each bug should be a separate issue.
   * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
   * Use a descriptive title.
   * Give a good description of the bug with ==steps to reproduce and screenshots==.
-  * Assign a severity to the bug report. Bug report without a priority label are considered `severity.Low` (lower severity bugs earn lower credit):
+  * Assign a severity to the bug report. Bug report without a priority label are considered `severity.Low` (lower severity bugs earn lower credit)<br>
 
 <div class="indented-level4">
 <include src="appendixE-gitHub.md#bug-severity" />
+Also assign a `type.*` label to the issue.
+<include src="project-deliverables.md#type-labels" />
 </div>
 
 * **About posting _suggestions_:**
@@ -375,25 +382,24 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 Response Labels:
 * `response.Accepted`: You accept it as a bug.
-* `response.NotInScope`: It is a valid issue but not something the team should be penalized for e.g., it was not related to features delivered in v1.4.
+* `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in v1.4%%.
 * `response.Rejected`: What tester treated as a bug is in fact the expected behavior.  You can reject bugs that you inherited from AB3.
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
-* `response.IssueUnclear`: The issue description is not clear. Don't post comments asked the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymized.
+* `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
 
 </box>
 </div>
 
 * If applicable, **decide the type of bug**. Bugs without `type.*` are considered `type.FunctionalityBug` by default (which are liable to a heavier penalty).
 
-<div class="indented">
+<div class="indented" id="type-labels">
 <box>
 
-Bug Type Labels:
-* `type.FeatureFlaw`: some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for normal usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.
-* `type.FunctionalityBug`: the bug is a flaw in how the product works.
-* `type.DocTypo`: A minor spelling/grammar error in the documentation. Does not affect the user.
+**Type** labels:
+* `type.FunctionalityBug`: A functionality does not work as specified/expected.
+* `type.FeatureFlaw`: One of these:some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for normal usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.
+* `type.DocTypo`: A minor typo in the documentation %%e.g., spelling error%%. Does not affect the users.
 * `type.DocumentationBug`: A flaw in the documentation that can potentially affect the user %%e.g., a missing step, a wrong instruction%%
-
 </box>
 </div>
 
@@ -410,7 +416,7 @@ Bug Type Labels:
 
 * **Add an explanatory comment** explaining your choice of labels and assignees.
 
-* We recommend choosing `type.*`, `severity.*` and assignee even for bugs you are not accepting. Reason: your _non-acceptance_ may be rejected by the tutor later, in which case we need to grade it as an accepted bug.
+* Choose the correct `type.*`, `severity.*` labels and assignee even for bugs you are not accepting. Reason: your _non-acceptance_ may be rejected by the tutor later, in which case we need to grade it as an accepted bug.
 
 </tip-box>
 

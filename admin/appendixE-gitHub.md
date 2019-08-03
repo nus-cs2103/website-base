@@ -26,11 +26,11 @@ Create a personal GitHub account if you don't have one yet.
 
 <div id="git-username">
 
-## Setting Git Username to Match GitHub Username
+## Setting Git `user.name`
 
-We use various tools to analyze your code. ==For us to be able to identify your commits, we encourage you to use the GitHub username as your Git username as well. If there is a mismatch, or if you use multiple user names for Git,== our tools might miss some of your work and as a result you might not get credit for some of your work.
+We use various tools to analyze your code. ==For us to be able to identify your commits, we encourage you to set your Git `user.name` in all computers you use to a sensible string that uniquely identify you. For example, ==you can to GitHub username or your full name as your Git username==. If this user name is not set properly or if you use multiple user names for Git, our tools might miss some of your work and as a result you might not get credit for some of your work.
 
-In each computer you use for coding, after installing Git, you should set the Git username as follows.
+In each computer you use for coding, after installing Git, you can set the Git username as follows.
 
 1. Open a command window that can run Git commands (e.g., Git bash window)
 2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME`<br>
