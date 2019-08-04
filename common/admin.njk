@@ -84,7 +84,7 @@ pageNav: 4
   {level: 1, id: "instructors", title: "Instructors", link: "instructors.html", priority: 4},
   {level: 1, id: "textbooks", title: "Textbooks", link: "textbooks.html", priority: 2},
   {level: 1, id: "programmingLanguages", title: "Programming Language", link: "programmingLanguages.html", priority: 2},
-  {level: 0, id: "ip", title: "Individual Project (iP)"},
+  {level: -1, id: "ip", title: "Individual Project (iP)"},
     {level: 2, id: "ip-overview", title: "iP: Overview", link: "ip-overview.html", priority: 2},
     {level: 2, id: "ip-w02", title: "iP: Week 2", link: "ip-w02.html", priority: 2},
     {level: 2, id: "ip-w03", title: "iP: Week 3", link: "ip-w03.html", priority: 2},
@@ -92,7 +92,7 @@ pageNav: 4
     {level: 2, id: "ip-w05", title: "iP: Week 5", link: "ip-w05.html", priority: 2},
     {level: 2, id: "ip-w06", title: "iP: Week 6", link: "ip-w06.html", priority: 2},
     {level: 2, id: "ip-grading", title: "iP: Grading", link: "ip-grading.html", priority: 2},
-  {level: 0, id: "project", title: "Team Project (tP)"},
+  {level: -1, id: "project", title: "Team Project (tP)"},
     {level: 2, id: "project-overview", title: "tP: Overview", link: "project-overview.html", priority: 2},
     {level: 2, id: "project-product", title: "tP: The product", link: "project-product.html", priority: 2},
     {level: 2, id: "project-scope", title: "tP: Scope", link: "project-scope.html", priority: 2},
@@ -139,7 +139,7 @@ pageNav: 4
   {id: "admin-faq-narrowScope", title: "Why very narrow project scope?", priority: 4},
   {id: "admin-faq-favoriteTool", title: "Why I’m not allowed to use my favorite tool/framework/language etc.?", priority: 4},
   {id: "admin-faq-manySubmissions", title: "Why so many submissions?", priority: 4},
-  {id: "admin-faq-fromScratch", title: "Why aren't we allowed to build a new product from scratch?", priority: 4},
+  {id: "admin-faq-fromScratch", title: "Why aren't we allowed to build a new product from scratch in the tP?", priority: 4},
   {id: "admin-faq-cs2101Differences", title: "Why submission requirements differ between " + module_pair + " and CS2101?", priority: 4}
 ]%}
 
@@ -153,8 +153,7 @@ pageNav: 4
   {id: "policy-publishingSubmissions", title: "Policy on publishing submissions", priority: 4},
   {id: "policy-plagiarism", title: "Policy on plagiarism", priority: 1},
   {id: "policy-reuse", title: "Policy on reuse", priority: 2},
-  {id: "policy-outsiderHelp", title: "Policy on help from outsiders", priority: 2},
-  {id: "policy-submissionLength", title: "Policy on suggested length for submissions", priority: 3}
+  {id: "policy-outsiderHelp", title: "Policy on help from outsiders", priority: 2}
 ]%}
 
 {% set admin_topics_to_read = {
@@ -202,7 +201,6 @@ week5: [
   {policy_id: "policy-teamSize"},
   {faq_id: "admin-faq-beanCounting"}],
 week6: [
-  {policy_id: "policy-submissionLength"},
   {faq_id: "admin-faq-narrowScope"}],
 week7: [
   {topic_id: "project-w07-v11"},

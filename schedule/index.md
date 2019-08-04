@@ -591,7 +591,7 @@ pageNav: {{ categories[category].pagenav }}
 <br>
 {% endmacro %}
 
-{% macro show_project_summary(ip_file=false, tp_file=false) %}
+{% macro show_project_summary(ip_file=false, tp_file=false, milestone=false) %}
 <div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
 
 {% if ip_file %}
@@ -599,7 +599,7 @@ pageNav: {{ categories[category].pagenav }}
 <include src="../../admin/{{ ip_file }}#summary" />
 {% endif %}
 {% if tp_file %}
-**tP:**
+**tP:** {% if milestone %}<span class="border rounded text-success border-success pr-1 pl-1">:fas-tag: **{{ milestone }}**</span>{% endif %}
 <include src="../../admin/{{ tp_file }}#summary" />
 {% endif %}
 </div>

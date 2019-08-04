@@ -57,7 +57,7 @@ For either direction, you need to define a target user profile and a value propo
    
 #### {{ icon_individual }} Individual Expectations
 
-<span id="individual-expectations">
+<div id="individualExpectations">
 
 ##### [Individual] Expectations on Features
 
@@ -182,7 +182,7 @@ This is a non-exhaustive list; you may define additional roles.
 Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but **for each aspect there should be one person who is unequivocally the person responsible for it**.
 </span>
 
-</span>
+</div>
 <span id="team-expectations">
 
 #### {{ icon_team }} Team Expectations

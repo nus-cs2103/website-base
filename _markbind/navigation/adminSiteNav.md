@@ -13,6 +13,8 @@
   * <small>[{{ title }}]({{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}</small>
 {% elif topic.level == 0 %}
 * {{ title }} :expanded:
+{% elif topic.level == -1 %}
+* {{ title }}
 {% endif %}
 {% endfor %}
 

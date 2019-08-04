@@ -8,7 +8,7 @@
 1. {{ icon_team }} Update project site: `AboutUs`, `ContactUs`, `README`
 1. {{ icon_individual }} Update UG
 1. {{ icon_team }} Update DG: user stories, glossary, NFRs, use cases
-1. {{ icon_team }} Wrap up v1.1
+1. {{ icon_team }} Wrap up **v1.1**
 1. {{ icon_individual }} Draft a rough project plan
 1. {{ icon_individual }} Start implementing a minimal version of your feature
 {% endcall %}

@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-## Creating a GitHub account
+### <div class="text-white bg-dark p-1">Creating a GitHub Account</div>
 
 <div id="githubAccount">
 
@@ -24,24 +24,9 @@ Create a personal GitHub account if you don't have one yet.
 
 </div>
 
-<div id="git-username">
-
-## Setting Git `user.name`
-
-We use various tools to analyze your code. ==For us to be able to identify your commits, we encourage you to set your Git `user.name` in all computers you use to a sensible string that uniquely identify you. For example, ==you can to GitHub username or your full name as your Git username==. If this user name is not set properly or if you use multiple user names for Git, our tools might miss some of your work and as a result you might not get credit for some of your work.
-
-In each computer you use for coding, after installing Git, you can set the Git username as follows.
-
-1. Open a command window that can run Git commands (e.g., Git bash window)
-2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME`<br>
-   e.g., `git config --global user.name JohnDoe`
-   
-More info about setting Git username is [here](https://help.github.com/articles/setting-your-username-in-git/).
-
-</div>
 <div id="organization-setup">
 
-## Organization setup
+### <div class="text-white bg-dark p-1">Organization Setup</div>
 
 {{ icon_important_big_red }} Please follow the organization/repo name format precisely because we use scripts to download your code or else our scripts will not be able to detect your work.
 
@@ -57,7 +42,7 @@ After receiving your team ID, one team member should do the following steps:
 
 <div id="repo-setup">
 
-## Repo setup
+### <div class="text-white bg-dark p-1">Repo Setup</div>
 
 Only one team member:
 
@@ -86,7 +71,7 @@ Note that some of our download scripts depend on the following folder paths. Ple
 
 <div id="workflow">
 
-## Workflow
+### <div class="text-white bg-dark p-1">Workflow</div>
 
 <div id="workflow-before-v11">
 
@@ -95,7 +80,7 @@ Note that some of our download scripts depend on the following folder paths. Ple
   * Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy %%(in Admin: Appendix B)%%</trigger>, in particular, ==how to give credit when you reuse code from the Internet or classmates==:
 
 <modal large title="Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username" id="modal:appE-gitUsername">
-  <include src="appendixE-gitHub.md#git-username"/>
+  <include src="tools.md#git-username"/>
 </modal>
 <modal large title="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" id="modal:appE-reusePolicy">
   <include src="appendixB-policies.md#policy-reuse"/>
@@ -140,7 +125,7 @@ Note that some of our download scripts depend on the following folder paths. Ple
 
 <div id="issue-tracker-setup">
 
-## Issue tracker setup
+### <div class="text-white bg-dark p-1">Issue Tracker Setup</div>
 
 We recommend you configure the issue tracker of the `main` repo as follows:
 
@@ -153,7 +138,7 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 * `type.Epic` : A big feature which can be broken down into smaller stories e.g. search
 * `type.Story` : A user story
 * `type.Enhancement`: An enhancement to an existing story
-* `type.Task` : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
+* `type.Task` (or `type.Chore`) : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
 * `type.Bug` : A bug
 
 </tip-box>
@@ -194,11 +179,11 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 
 <div id="project-schedule-tracking">
 
-## Project Schedule Tracking
+### <div class="text-white bg-dark p-1">Project Schedule Tracking</div>
 
 In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking _all_ noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current status of the project. You can also use GitHub's [Projects feature](https://www.youtube.com/watch?v=C6MGKHkNtxU) to manage the project, but keep it linked to the issue tracker as much as you can.
 
-### Using Issues:
+#### Using Issues:
 
 <big>**During the initial stages**</big> (latest by the start of v1.2):
 
@@ -232,7 +217,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 <div id="using-milestones">
 
-### Using Milestones:
+#### Using Milestones:
 
 We recommend you do proper milestone management starting from v1.2. ==Given below are the conditions to satisfy for a milestone to be considered properly managed==:
 
@@ -256,8 +241,6 @@ We recommend you do proper milestone management starting from v1.2. ==Given belo
     <img src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
 
   * **If necessary, future milestones are revised** based on what you experienced in the current milestone %%e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation%%.
-   
-   
 
 </div>
 

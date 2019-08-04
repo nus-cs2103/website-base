@@ -10,6 +10,32 @@
 This module website is the main source of information for the module. In addition, we use LumiNUS for some things %%(e.g., webcasts, announcements, file submissions, grade book, ...)%%.
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
+<div id="rcs">
+
+#### <div class="text-white bg-dark p-1">Tool Used: Git (for Revision Control)</div>
+
+You are ==_required to_ use Git==. Other revision control software are not allowed. The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com/), but you may use any other, or none.
+
+<box>
+
+<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+
+**Install Git and a Git GUI client** on your computer.<br>
+  {{ icon_tip }} SourceTree comes with bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot.
+
+<div id="git-username">
+
+**Set Git `user.name`**: We use various tools to analyze your code. ==For us to be able to identify your commits, we encourage you to set your Git `user.name` in all computers you use to a sensible string that uniquely identify you. For example, ==you can to GitHub username or your full name as your Git username==. If this user name is not set properly or if you use multiple user names for Git, our tools might miss some of your work and as a result you might not get credit for some of your work.
+
+* In each computer you use for coding, after installing Git, you can set the Git username as follows.
+  1. Open a command window that can run Git commands (e.g., Git bash window)
+  2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME`<br>
+     e.g., `git config --global user.name JohnDoe`
+  More info about setting Git username is [here](https://help.github.com/articles/setting-your-username-in-git/).
+</div>
+</box>
+
+</div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="github">
 
 #### <div class="text-white bg-dark p-1">Tool Used: GitHub (for Code Hosting)</div>
@@ -61,26 +87,7 @@ You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for 
 </box>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
-<div id="rcs">
 
-#### <div class="text-white bg-dark p-1">Tool Used: Git (for Revision Control)</div>
-
-You are ==_required to_ use Git==. Other revision control software are not allowed. The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com/), but you may use any other, or none.
-
-<box>
-
-<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
-* Install Git and a Git GUI client on your computer.<br>
-  {{ icon_tip }} SourceTree comes with bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot.
-* Set your Git `user.name` to a reasonable value.
-<div class="indented-level2">
-
-{{ embed_topic("appendixE-gitHub.md#git-username", "Admin " + icon_embedding + " **Appendix E - Setting Git `user.name`**", "-", "1") }}
-</div>
-
-</box>
-
-</div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="reposense">
 
 #### <div class="text-white bg-dark p-1">Tool Used: RepoSense (for Analyzing Code Authorship)</div>

@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import embed_topic with context %}
+
 <div id="policy-followingInstructions">
 
 When working with others, especially in a large class such as {{ module_pair }},  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated violations of instructions. On the other hand we do understand that humans are liable to make mistakes. That is why we only penalize repeated or frequent mistakes. 
@@ -14,8 +16,7 @@ As most of the work is graded individually, team sizes of 3, 4, or 5 is not expe
 
 As most of the work is graded individually, it is OK to do less or more than equal share in your project team.
 
-<span class="flat">%%Related: [[Admin: Project: Scope](#individual-expectations)]%%</span>
-<panel src="project-scope.md#individual-expectations" header="Admin {{ icon_embedding }} Project → Scope: Expectations from each student" class="embedding" minimized />
+{{ embed_topic("project-scope.md#individualExpectations", "Admin " + icon_embedding + " Project → Scope: Expectations from each student", "policies-individual", "3") }}
 
 </div>
 
@@ -58,7 +59,7 @@ The promptness of a reply is even more important when the email is requesting yo
 <div id="policy-publishingSubmissions">
 
 The source code are publicly available and are available for reuse by others without any restrictions.   
-Is publishing submissions unfair to the team? We don't think so. If you were the first to think of something your peers are willing to adopt later, that means you are already ahead of them and they are unlikely to earn more marks by adopting your ideas.
+Is publishing submissions unfair to the author? We don't think so. If you were the first to think of something your peers are willing to adopt later, that means you are already ahead of them and they are unlikely to earn more marks by adopting your ideas.
 
 </div>
 
@@ -87,10 +88,10 @@ Penalties:
 
 <div id="policy-reuse">
 
-**Reuse is encouraged. However, note that reuse has its own costs** (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for using work done by others.
+**Reuse is encouraged. However, note that reuse has its own costs** (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for _reusing_ work done by others.
 
 * You are allowed to reuse work from your classmates, subject to following conditions:
-  * The work has been published by us or the authors.
+  * The work has been shared publicly by us or the authors.
   * You clearly give credit to the original author(s).
 * You are allowed to reuse work from external sources, subject to following conditions:
   * The work comes from a source of 'good standing' (such as an established open source project). This means you cannot reuse code written by an outside 'friend'.
@@ -137,7 +138,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   Collections.sort(persons, new Comparator<CustomData>() {
       @Override
       public int compare(CustomData lhs, CustomData rhs) {
-          return lhs.customInt > rhs.customInt ? -1 : (lhs.customInt < rhs.customInt) ? 1 : 0;
+          return lhs.customInt > rhs.customInt ? -1 : 0;
       }
   });
   //@@author
@@ -162,8 +163,3 @@ In general, you are **not allowed to involve outsiders** in your project excep
 
 </div>
 
-<div id="policy-submissionLength">
-
-We don't usually give a strict page limit for documents such as User Guide and the Developer Guide. You need to decide yourself how long the document should be based on the purpose and the intended audience. You can determine the level of details required based on the samples we provide.
-
-</div>

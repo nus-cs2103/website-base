@@ -14,11 +14,11 @@ The question you should always ask yourself is, 'how do I solve this problem if 
 
 <img src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"/><br>
 
-<big>{{ icon_dislike }} **What not to do:**</big> 
+<span class="text-danger"><big>{{ icon_dislike }} **What not to do:**</big></span> 
 
-* When faced with a technical problem or a doubt about a concept, don't fire off an email lecturer/tutor immediately, unless it is something only the lecturer/tutor is supposed to know.
+* <span class="text-danger">**Send a help request to an instructor**:</span> When faced with a technical problem or a doubt about a concept, don't fire off an email lecturer/tutor immediately, unless it is something only the lecturer/tutor is supposed to know.
 
-<big>{{ icon_like }} **What to do:**</big>
+<span class="text-success"><big>{{ icon_like }} **What to do:**</big></span>
 
 * **Check what is given**: Check if the problem/concept has been discussed in the lectures, textbook, or the list of resources given to you. Yes, it is easier for you to write an email to the tutor/lecturer instead, but that shouldn't be your default behavior. We know that sometimes it is difficult to find stuff in the resources we have provided. But you should try first.
 
@@ -76,10 +76,13 @@ The question you should always ask yourself is, 'how do I solve this problem if 
 
 * **Request our help**: Failing all above, you can always request for help by emailing the lecturer.
 
-Resources
+<box>
+
+{{ icon_resource }} Resources
 
 * [lifehacker article]  [Google Tips and Tricks Every Student Should Know](http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671)
 * [Article] [How To Ask Questions The Smart Way](http://catb.org/esr/faqs/smart-questions.html) by Eric Steven Raymond
+</box>
 
 </div>
 {% endmacro %}

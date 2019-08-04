@@ -9,12 +9,15 @@
     * Answered 40-80% questions correctly: 1 point
   * Post-lecture quiz:
     * Answered at least 80% of the questions correctly: 3 points
-    * Answered 40-80% questions correctly: 2 point
-  * Missing compulsory administrative requirements %%e.g., forgot to submit peer evaluations%%: -1 for each miss
+    * Answered 60-80% questions correctly: 2 points
+    * Answered 40-60% questions correctly: 1 point
+  * Missing compulsory administrative requirements %%e.g., forgot to submit peer evaluations%%: -2 for each miss
 
 * **B. <tooltip content="No multiple `Below Average`/`Poor` ratings">Received good peer evaluations</tooltip>**
 
-In addition, you can receive a bonus mark if you received good ratings for all 10 peer evaluations criteria.
+In addition, you can receive a bonus marks in the following ways. Bonus marks can be used to top up your participation marks should your marks from the above falls below 5.
+* Receiving good ratings for all 10 peer evaluations criteria: 1 mark
+* Being very helpful to classmates %%e.g., multiple helpful posts in forum%%: 1 mark
 
 <div class="indented">
 
