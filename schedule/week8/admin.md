@@ -20,5 +20,3 @@
 * **Peer Evaluation Round 1** will open on TEAMMATES. You will receive the submission link soon. **If you do not submit feedback responses, you will forfeit participation marks that you earned based on feedback ratings received from others**.
 
 </div>
-
-{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week8, is_flat=false ) }}

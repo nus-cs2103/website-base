@@ -14,5 +14,3 @@
 
 * As per usual.
 </div>
-
-{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week12, is_flat=false ) }}

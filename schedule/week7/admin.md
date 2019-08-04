@@ -20,5 +20,3 @@
 See the [{{ show_as_tab('Project', icon_project) }}](project.html) for more details.
 
 </div>
-
-{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week7, is_flat=false ) }}

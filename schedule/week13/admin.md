@@ -14,5 +14,3 @@
 #### {{ thumb(1) }} Submit peer evaluation on TEAMMATES {{ timing_badge("by Thursday 2359", "secondary") }}
 
 </div>
-
-{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week13, is_flat=false ) }}

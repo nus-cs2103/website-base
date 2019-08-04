@@ -3,11 +3,14 @@
 
 {{ icon_calendar }} **[Friday (previous week)]**<br>
 
-Attend the lecture for, 
-* a recap of the preceding week's topics
-* an introduction to the current week's topics
+* Attend the lecture to, 
+  * see a recap of the preceding week's topics
+  * get an introduction to the current week's topics
+  * submit the in-lecture quiz
 
+<div class="indented-level2">
 {{ embed_topic("lectures.md#main", "Admin " + icon_embedding + " Lectures", "weeklySchedule-lectures", "3") }}
+</div>
 
 <p/>
 
@@ -23,12 +26,13 @@ Attend the lecture for,
 
 {{ icon_calendar }} **[Tutorial Day (Wednesday - Friday)]**<br>
  
-Attend the tutorial to,
+* Attend the tutorial to,
+  * demonstrate evidence of your learning weekly topics to the tutor
+  * learn from peer demos of showing evidence of their own learning
 
-* demonstrate evidence of your learning weekly topics to the tutor
-* learn from peer demos of showing evidence of their own learning
-
+<div class="indented-level2">
 {{ embed_topic("tutorials.md#main", "Admin " + icon_embedding + " Tutorials", "weeklySchedule-tutorials", "2") }}
+</div>
 
 
 </div>

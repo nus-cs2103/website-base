@@ -30,9 +30,9 @@ Admin info relevant to the week's will appear in this tab.
   * Follow the <span class="border" style="color:purple">&nbsp;**:fas-hard-hat: Preparation**&nbsp;</span> instructions of the following tools.
 
 <div class="indented-level2">
-{{ embed_topic("../../admin/tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "-", "2") }}
-{{ embed_topic("../../admin/tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "-", "2") }}
 {{ embed_topic("../../admin/tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "-", "2") }}
+{{ embed_topic("../../admin/tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "-", "2") }}
+{{ embed_topic("../../admin/tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "-", "2") }}
 </div>
 
 #### {{ thumb(3) }} Attend the lecture
@@ -48,6 +48,9 @@ Admin info relevant to the week's will appear in this tab.
 * **See the** [{{ show_as_tab("Admin Info", icon_info) }}](admin.html)&nbsp;**tab (above)** for some important admin info you need to know at the start of the semester.
 <div class="indented-level2">
 
+<panel type="danger" header="**Admin {{icon_embedding }} Module expectations and the ==star rating system==** :glyphicon-star:" minimized>
+  <include src="../../admin/moduleExpectations.md"/>
+</panel><p/>
 <panel type="danger" header="**Admin {{icon_embedding }} Using this website [essential info]** :glyphicon-star:" minimized>
   <include src="../../admin/usingThisWebsite.md#essential"/>
 </panel><p/>

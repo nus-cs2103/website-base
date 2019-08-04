@@ -20,13 +20,24 @@ Given below are some guidance on the recommended progress at this point of the p
 
 #### {{ thumb(2) }} Decide on a overall project direction %%(user profile, problem addressed)%%
 
+* **Learn about the tP**
+<div class="indented-level2">
+
+{{ embed_topic("project-overview.md", "Admin " + icon_embedding + " **tP: Overview**", "-", "3") }}
+{{ embed_topic("project-product.md", "Admin " + icon_embedding + " **tP: Product**", "-", "3") }}
+
+</div>
+
 * **Decide project direction, target user profile, and problem addressed**
 
-  Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in <trigger trigger="click" for="modal:v10-scope">[Admin {{ icon_embedding }} Project Scope]</trigger>
+  Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:
 
-<modal large title="Admin {{ icon_embedding }} Project Scope (Extract)" id="modal:v10-scope">
-  <include src="project-scope.md#project-direction"/>
-</modal>
+<div class="indented-level2">
+
+{{ embed_topic("project-scope.md", "Admin " + icon_embedding + " **tP: Scope**", "-", "3") }}
+{{ embed_topic("project-constraints.md", "Admin " + icon_embedding + " **tP: Constraints**", "-", "3") }}
+
+</div>
 
 #### {{ thumb(3) }} Start a collaborative doc to take project notes
 

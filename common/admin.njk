@@ -159,68 +159,52 @@ pageNav: 4
 {% set admin_topics_to_read = {
 week1: [
   {faq_id: "admin-faq-whereIsEverything"},
-  {topic_id: "moduleExpectations"},
-  {topic_id: "appendixE-gitHub", div: "githubAccount", div_title: "Creating a GitHub Account"},
-  {topic_id: "tools", div: "communication", div_title: "Communication"},
   {topic_id: "project-teams"},
   {topic_id: "programmingLanguages"},
   {topic_id: "textbooks"},
+  {topic_id: "gradeBreakdown"},
+  {topic_id: "participation"},
   {topic_id: "tutorials", div: "exchangeStudentTutorialSignup", div_title: "Exchange Students: Tutorial Registration"},
   {faq_id: "admin-faq-tVsNonT"},
   {faq_id: "admin-faq-highWorkload"},
   {faq_id: "admin-faq-aPlus"}],
 week2: [
-  {policy_id: "policy-techHelp"},
-  {topic_id: "tools"},
-  {topic_id: "project-overview"},
-  {topic_id: "project-product"},
-  {topic_id: "project-scope"},
-  {topic_id: "project-constraints"},
-  {topic_id: "appendixA-principles"},
-  {faq_id: "admin-faq-separateWebsite"},
-  {faq_id: "admin-faq-slideFormat"},
-  {faq_id: "admin-faq-selfStudy"}],
-week3: [
-  {topic_id: "project-grading"},
-  {policy_id: "policy-followingInstructions"},
-  {topic_id: "peerEvaluations"},
-  {topic_id: "gradeBreakdown"},
-  {topic_id: "participation"},
-  {topic_id: "project-supervision"},
-  {faq_id: "admin-faq-noLaptop"}],
-week4: [
   {policy_id: "policy-plagiarism"},
   {policy_id: "policy-reuse"},
   {policy_id: "policy-outsiderHelp"},
-  {topic_id: "exams"},
-  {faq_id: "admin-faq-noLaptop"},
+  {policy_id: "policy-followingInstructions"},
+  {policy_id: "policy-techHelp"},
+  {topic_id: "appendixA-principles"},
+  {faq_id: "admin-faq-separateWebsite"},
+  {faq_id: "admin-faq-slideFormat"},
+  {faq_id: "admin-faq-selfStudy"},
+  {faq_id: "admin-faq-noLaptop"}],
+week3: [
+  {topic_id: "peerEvaluations"},
+  {topic_id: "project-supervision"},
+  {policy_id: "policy-teamSize"}],
+week4: [
+  {faq_id: "admin-faq-fromScratch"},
+  {faq_id: "admin-faq-narrowScope"},
+  {faq_id: "admin-faq-favoriteTool"},
   {policy_id: "policy-publishingSubmissions"}],
 week5: [
+  {topic_id: "project-grading"},
   {policy_id: "policy-workDistribution"},
   {policy_id: "policy-responseTime"},
-  {policy_id: "policy-teamSize"},
   {faq_id: "admin-faq-beanCounting"}],
 week6: [
-  {faq_id: "admin-faq-narrowScope"}],
-week7: [
-  {topic_id: "project-w07-v11"},
+  {topic_id: "exams"},
   {topic_id: "appendixF-teamworkIssues"},
-  {faq_id: "admin-faq-favoriteTool"}],
-week8: [
-  {topic_id: "project-w08-mid-v12"},
-  {faq_id: "admin-faq-fromScratch"},
   {faq_id: "admin-faq-manySubmissions"},
   {faq_id: "admin-faq-cs2101Differences"}],
-week9: [
-  {topic_id: "project-w09-v12"}],
-week10: [
-  {topic_id: "project-w10-mid-v13"}],
-week11: [
-  {topic_id: "project-w11-v13"}],
-week12: [
-  {topic_id: "project-w12-mid-v14"}],
-week13: [
-  {topic_id: "project-w13-v14"}]
+week7: [],
+week8: [],
+week9: [],
+week10: [],
+week11: [],
+week12: [],
+week13: []
 }%}
 
 {% macro show_title(current_topic_id, topics) -%}
