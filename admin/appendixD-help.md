@@ -48,20 +48,20 @@ The question you should always ask yourself is, 'how do I solve this problem if 
   * PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.
   * Learn to isolate the problem. "My code doesn't work" isn't going to help even if you post the whole code online. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself. If not, at least it increases the chance of someone else being able to help you.  
     
-    <tip-box>
+    <box>
     
     {{ icon_tip }} How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.
     
-    </tip-box>
+    </box>
 
   * Generalize the problem. "How to write tasks to a text file using Java" is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) "How to write to a file using Java".
   * Explain well. Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.  
     
-    <tip-box>
+    <box>
     
     {{ icon_tip }} Know what these stand for: **RTFM**, **STFW**, **GIYF**
     
-    </tip-box>
+    </box>
     
 <span id="questions-for-tutros">
 

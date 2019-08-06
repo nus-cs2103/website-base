@@ -3,9 +3,9 @@
 
 These are some of the main principles underlying the module structure.
 
-<tip-box type="important">
+<box type="important">
 The product is you, NOT what you build.
-</tip-box>
+</box>
 
 The software product you build is a side effect only. You are the product of this module. This means,
 

@@ -5,11 +5,11 @@
 <span slot="header" class="card-title"><markdown>### Tutorial Timetable</markdown></span>
 <div id="tutorialTimetable">
 
-<tip-box> 
+<box>
 
 {{ icon_important_big_red }} Our tutorial IDs are different from LumiNUS. Format: `CS2103T-W09` means a tutorial of `CS2103T` module, held on `Wednesday` at `0900`, and so on.
 
-</tip-box>
+</box>
 
 <variable name="cs2103"><span class="badge badge-info">&nbsp;CS2103&nbsp;</span></variable>
 <variable name="cs2103t"><span class="badge badge-warning">CS2103T</span></variable>

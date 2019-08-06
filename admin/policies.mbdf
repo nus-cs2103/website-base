@@ -99,7 +99,7 @@ Penalties:
   * You do not violate the license under which the work has been released. Please  **do not use 3rd-party images/audio** in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.
   * ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ forum_link }}). That way, the whole class get to see what libraries are being used by others.
 
-<tip-box> 
+<box>
 
 #### Giving credit for reused work
 
@@ -145,7 +145,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   return persons;
   ```
 
-</tip-box>
+</box>
 
 <modal large title="Admin {{ icon_embedding }} Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">
   <include src="reposenseAuthorAnnotation.md"/>

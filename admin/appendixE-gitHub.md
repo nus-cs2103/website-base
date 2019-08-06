@@ -132,7 +132,7 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 * Delete existing labels and add the following labels.<br>
   {{ icon_tip }} **Issue type** labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.
 
-<tip-box>
+<box>
 
 **Issue type** labels:
 * `type.Epic` : A big feature which can be broken down into smaller stories e.g. search
@@ -141,33 +141,33 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 * `type.Task` (or `type.Chore`) : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
 * `type.Bug` : A bug
 
-</tip-box>
+</box>
 
-<tip-box>
+<box>
 
 **Status** labels:
 * `status.Ongoing` : The issue is currently being worked on. note: remove this label before closing an issue.
-</tip-box>
+</box>
 
-<tip-box>
+<box>
 
 **Priority** labels:
 * `priority.High` : Must do
 * `priority.Medium` : Nice to have
 * `priority.Low` : Unlikely to do
 
-</tip-box>
+</box>
 
 <span id="bug-severity">
 
-<tip-box>
+<box>
 
 **Bug Severity** labels:
 * `severity.Low` : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.
 * `severity.Medium` : A flaw that causes occasional inconvenience to some users but they can continue to use the product.
 * `severity.High` : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.
 
-</tip-box>
+</box>
 
 </span>
 

@@ -20,13 +20,13 @@ Given the fast pace required by the paper and the large class size, to be fair t
 
 Each MCQ question gives you a statement to evaluate. 
 
-<tip-box> 
+<box>
 
 {{ icon_example }} An example statement
 
 >Testing is a Q&A activity
 
-</tip-box>
+</box>
 
 
 Unless stated otherwise, the meaning of answer options are<br>
@@ -51,7 +51,7 @@ You will be given OCR forms %%(i.e., bubble sheets)%% to indicate your answers f
 To save space, we use the following notation in MCQ question.
  **[++x++ | y | ++z++] means ‘x and z, but not y’**
 
-<tip-box> 
+<box>
 
 {{ icon_example }} SE is [boring | ++useful++ | ++fun++] means _SE is not boring_ AND _SE is useful_ AND _SE is fun_.
 
@@ -61,11 +61,11 @@ To save space, we use the following notation in MCQ question.
 
 The correct response for it is `Disagree` because IDEs can help with all three of the given options, not just writing and testing.
 
-</tip-box>
+</box>
 
 Some questions will use ==highlighting== to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance of that part.
 
-<tip-box> 
+<box>
 
 {{ icon_example }} Consider the statement below:
   
@@ -73,7 +73,7 @@ Some questions will use ==highlighting== to draw your attention to a specific pa
 
 The word ==can== is highlighted because the decision you need to make is whether the ABC _can or cannot_ be used to generate more test cases; the decision is not whether ABC can be used to generate _more or better_ test cases.
 
-</tip-box>
+</box>
 
 Markers such as the one given below appears at left margin of the paper to **indicate where the question corresponds to a new column in the OCR form**. E.g. questions 11, 21, 31, etc. (a column has 10 questions). Such markers can help you to detect if you missed a question in the previous 10 questions. You can safely ignore those markers if you are not interested in making use of that additional hint.
 

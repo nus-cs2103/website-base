@@ -361,7 +361,7 @@ Duration: The review period will start around 1 day after the PE (exact time to 
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
-<tip-box> 
+<box>
 
 **Instructions for Reviewing Bug Reports**
 
@@ -418,7 +418,7 @@ Response Labels:
 
 * Choose the correct `type.*`, `severity.*` labels and assignee even for bugs you are not accepting. Reason: your _non-acceptance_ may be rejected by the tutor later, in which case we need to grade it as an accepted bug.
 
-</tip-box>
+</box>
 
 </span>
 
