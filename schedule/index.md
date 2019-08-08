@@ -574,7 +574,7 @@ pageNav: {{ categories[category].pagenav }}
 {{ topics.show_week_schedule_main(week_num, all_topics, "", is_toc=true, is_flat=true) }}
 
 <panel type="seamless" header="%%Full ToC%%">
-  <include src="topics.md#toc"/>
+  <include src="topics.md#toc" optional />
 </panel>
 
   </div>
