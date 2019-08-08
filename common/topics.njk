@@ -71,11 +71,11 @@
 {% if not is_toc %}
 <span id="{{ make_anchor(id_prefix) }}" />
 
-<panel type="seamless" expanded>
+<panel type="seamless" expanded popup-url="{{ baseUrl }}/book/{{  full_path }}">
 <span slot="header" class="card-title">
 <span class='badge badge-pill badge-light text-mute'>{{ id_prefix }}</span> {{ show_stars(priority) }}
 
-####  <small><span class="font-weight-bold text-muted"><include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline trim /></span></small> **<include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline />** 
+####  <small><span class="font-weight-bold text-muted"><include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline trim /></span></small> **<include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline />**
 </span>
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
