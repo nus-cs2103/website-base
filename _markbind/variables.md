@@ -16,11 +16,11 @@
 
 <span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQt_VkIgajiPIkdLzgqLTBkYf6UoYhAEMkgDns7S3eWfsx7x2EsI0wix6RLHooaYbETWkTuGnqGP-5s/pub?embedded=true</span>
 
-<span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true</span>
+<span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true</span>
 
-<span id="ivle_files">https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db</span>
+<span id="ivle_files">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
 
-<span id="ivle_announcements">https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19</span>
+<span id="ivle_announcements">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
 
 <span id="bugs_link">{{ module_org | safe }}/forum/issues</span>
 
