@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-**To receive full 5 marks allocated for participation, meet the both these criteria**
+**To receive full 5 marks allocated for participation, meet both these criteria:**
 
 * **A. Earn at least half of weekly participation points in at least 10 weeks.**
   * In-lecture quiz:
@@ -27,9 +27,9 @@ In addition, you can receive a bonus marks in the following ways. Bonus marks ca
 <box>
 
 {{ icon_example }} Some examples:
-* Alicia earned 1/2, 3/5, ++2/5++, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 4/5, 5/5 in the first 12 weeks. As she received at least half points in 11 of the weeks, she gets 5 participation marks. The bonus mark is not applicable as she has full marks already.
+* Alicia earned 1/2, 3/5, ++2/5++, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 4/5, 5/5 in the first 12 weeks. As she received at least half of the points in 11 of the weeks, she gets 5 participation marks. Bonus marks are not applicable as she has full marks already.
 * Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he received good peer ratings for all criteria, and hence get a bonus mark to make it 5/5.
-* Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received very negative ratings for two criteria, giving him 1/5 participation marks.
+* Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.
 
 
 </box>

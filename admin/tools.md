@@ -85,6 +85,7 @@ You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for 
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 * Install the IDE in your computer. You may use the Intellij community edition (free) or the ultimate edition (free for students).
+* If you have an older version of the IDE, we recommend updating to the latest version (i.e., 2019 edition).
 </box>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->

@@ -30,6 +30,7 @@ Admin info relevant to the week's will appear in this tab.
   * Follow the <span class="border" style="color:purple">&nbsp;**:fas-hard-hat: Preparation**&nbsp;</span> instructions of the following tools.
 
 <div class="indented-level2">
+{{ embed_topic("../../admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "-", "2") }}
 {{ embed_topic("../../admin/tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "-", "2") }}
 {{ embed_topic("../../admin/tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "-", "2") }}
 {{ embed_topic("../../admin/tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "-", "2") }}

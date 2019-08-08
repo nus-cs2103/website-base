@@ -24,6 +24,13 @@ This module follows the ==[this Java coding standard]({{java_coding_standard}})=
 
 ==**In the project you are required to follow basic and intermediate guidelines**== (those marked as :star: and :star::star:). In other programming activities in the module, we recommend (but not require) you to follow the coding standard.
 
+<box>
+
+<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+
+We strongly recommend **Java 11** (the Oracle version or the OpenJDK version).
+</box>
+
 </div>
 {% endmacro %}
 
