@@ -47,7 +47,7 @@ You are ==_required to_ use Git==. Other revision control software are not allow
 
 After installing Git in a computer, you can set the Git username as follows:
 1. Open a command window that can run Git commands (e.g., Git bash window)
-2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME`<br>
+2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME` (omit the `--global` flag to limit the setting to the current repo repo)<br>
    e.g., `git config --global user.name JohnDoe`
 
 More info about setting Git username is [here](https://help.github.com/articles/setting-your-username-in-git/).
