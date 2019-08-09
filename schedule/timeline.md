@@ -7,7 +7,7 @@ pageNav: 3
 </frontmatter>
 
 {% import "common/topics.njk" as topics with context %}
-{% from "schedule/index.md" import all_topics with context %}
+{% from "schedule/index.md" import all_topics, weeks with context %}
 
 
 # Summary of the Module Timeline
@@ -22,9 +22,12 @@ pageNav: 3
 </span>
 </box>
 
+{% macro show_links(week_num) -%}
+<small><small><a href="week{{ week_num }}/project.html" class="badge badge-light">%%{{ icon_book }}%%</a></small></small><small><small><a href="week{{ week_num }}/topics.html" class="badge badge-light">%%{{ icon_project }}%%</a></small></small><small><small><a href="week{{ week_num }}/tutorial-{{ module | lower }}.html" class="badge badge-light">%%{{ icon_tutorial }}%%</a></small></small><small><small><a href="week{{ week_num }}/admin.html" class="badge badge-light">%%{{ icon_info }}%%</a></small></small>
+{%- endmacro %}
 {% for week_num in range(1, 14) %}
 
-### <span class="badge badge-pill badge-dark"><small>**Week {{ week_num }}**</small></span>
+### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ weeks[week_num-1].day }}</small></small></a> {{ show_links(week_num) }}
 
 <include src="week{{ week_num }}/notices-{{ module }}.md#summary" optional />
 {% endfor %}
