@@ -13,6 +13,11 @@
     * Answered 40-60% questions correctly: 1 point
   * Missing compulsory administrative requirements %%e.g., forgot to submit peer evaluations%%: -2 for each miss
 
+<div class="indented">
+
+{{ icon_info }} As the lecture on Week `N` covers topics for Week `N+1`, the Lecture `N`'s in-lecture and post-lecture quiz points are counted for Week `N+1`
+</div>
+
 * **B. <tooltip content="No multiple `Below Average`/`Poor` ratings">Received good peer evaluations</tooltip>**
 
 In addition, you can receive a bonus marks in the following ways. Bonus marks can be used to top up your participation marks should your marks from the above falls below 5.
