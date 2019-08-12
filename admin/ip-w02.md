@@ -41,7 +41,7 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
    * Commit code at important points. ==Minimally, commit after completing each increment==.
    * After completing each increment,
      * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
-     * **`git push`** the code to your fork
+     * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
 <include src="dukeFragment.md" boilerplate var-header="**`Level-1`: Greet, Echo, Exit**" var-fragment="text.md#level1" />
 <include src="dukeFragment.md" boilerplate var-header="**`Level-2`: Add, List**" var-fragment="text.md#level2" />
 <include src="dukeFragment.md" boilerplate var-header="**`Level-3`: Mark as Done**" var-fragment="text.md#level3" />

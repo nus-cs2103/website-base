@@ -13,7 +13,7 @@
 
 #### {{ thumb(1) }} Submit post-lecture quiz {{ timing_badge("by Thursday 2359", "secondary") }}
 
-* **Read weekly topics** allocated for this week. **Submit the post-lecture quiz** to test your knowledge of those topics. The quiz link will be emailed to you on the previous week's Friday.
+* **Read weekly topics** allocated for this week. **Submit the `Lecture 1 - Post-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
 
 
 #### {{ thumb(2) }} Get connected with communication channels
