@@ -15,6 +15,10 @@
 
 In this week, we try to practice git branching as we do the iP.
 
+#### {{ thumb(0) }} Do any leftover iP increments from the previous week
+
+* Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.
+
 #### {{ thumb(1) }} Do as parallel branches: `Level-7` and `Level-8`
 
 Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>

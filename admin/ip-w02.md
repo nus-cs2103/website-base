@@ -11,6 +11,11 @@
 {% endcall %}
 <div id="body">
 
+<box type="info">
+
+iP is a new addition to the module. And we have done some major changes to tP too. As such, it is possible that there will be some teething issues. If you encounter any problem while doing iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
+</box>
+
 #### {{ thumb(1) }} Set up prerequisites
 
 **Ensure you have met the following prerequisites:**
