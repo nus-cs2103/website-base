@@ -38,7 +38,7 @@ iP is a new addition to the module. And we have done some major changes to tP to
 1. Fork [{{ module_org }}/duke]({{ module_org }}/duke).
 1.  ==Ensure the issue tracker of your fork is enabled.== %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.%%
 1. Clone the fork onto your computer.
-1. Set up the project in your IDE as explained in the README file.
+1. Set up the project in your IDE as explained in [the README file]({{ module_org }}/duke/blob/master/README.md).
 
 #### {{ thumb(3) }} Implement increments while committing code frequently
 
