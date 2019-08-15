@@ -10,7 +10,7 @@ Admin info relevant to the week's will appear in this tab.
 </box>
 
 {% call show_admin_summary() %}
-1. Submit pre-lecture quiz {{ timing_badge("before the lecture") }}
+1. Submit pre-lecture quiz {{ timing_badge("by week 2 Monday 2359") }}
 1. Set up the tools {{ timing_badge("before the lecture") }}
 1. Submit the pre-module survey {{ timing_badge("by Friday 2359") }}
 1. Learn about the module
@@ -19,7 +19,7 @@ Admin info relevant to the week's will appear in this tab.
 
 <div id="additional">
 
-#### {{ thumb(1) }} Submit pre-lecture quiz {{ timing_badge("before the lecture", "secondary") }}
+#### {{ thumb(1) }} Submit pre-lecture quiz {{ timing_badge("by week 2 Monday 2359", "secondary") }}
 
 * **Read prerequisite  [{{ show_as_tab('Topics', icon_book) }}](topics.html)** allocated for week 1. **Submit `Lecture 1 - Pre-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
 
