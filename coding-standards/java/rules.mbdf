@@ -191,7 +191,7 @@ Try to keep line length shorter than 110 characters (soft limit). But it is OK t
 ```java
 setText("Long line split"
         + "into two parts.");
-if(isReady){
+if (isReady) {
     setText("Long line split"
             + "into two parts.");
 }
