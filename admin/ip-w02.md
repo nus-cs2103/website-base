@@ -36,11 +36,11 @@ iP is a new addition to the module. And we have done some major changes to tP to
 #### {{ thumb(2) }} Set up the project in your computer
 
 1. Fork [{{ module_org }}/duke]({{ module_org }}/duke).
-1.  ==Do not disable the issue tracker of your fork== (it's enabled by default). %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.%%<br>
+1.  ==Enable the issue tracker of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.%%<br>
     {{ icon_tip }} If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/duke/issues` e.g., `https://github.com/johnDoe/duke/issues`
 1. Clone the fork onto your computer.
 1. Set up the project in your IDE as explained in [the README file]({{ module_org }}/duke/blob/master/README.md).<br>
-   {{ icon_tip }} If you somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning by following [the Gradle tutorial]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md).
+   {{ icon_tip }} If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning by following [the Gradle tutorial]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md).
 
 #### {{ thumb(3) }} Implement increments while committing code frequently
 
