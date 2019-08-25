@@ -11,13 +11,6 @@
 
 **Team size**: The default ==team size is five==.
 
-<div id="teamIdFormat">
-
-**Team ID**: This will be given to you after forming teams. It has the form `TUTORIAL_ID-TEAM_NUMBER` e.g, `CS2103-W14-2` means you are in tutorial `CS2103-W14` (i.e., in module `CS2103`, on `Wednesday`, at `1400-1500`), team `2`.
-</div>
-
-{{ embed_topic("tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial IDs", "projectTeams-tutorialIDs", "3") }}
-
 **Team composition**
 
 We allow some freedom in choosing team members, subject to these constraints:
@@ -29,6 +22,21 @@ We allow some freedom in choosing team members, subject to these constraints:
 
 * Also note that ==**we may modify teams when circumstances call for it**==. There is no avenue for you to object. Staying with your preferred team is not guaranteed.
 
+</div>
+<div id="teamIdFormat">
+
+**Team ID**: This will be given to you after forming teams. It has the form `TUTORIAL_ID-TEAM_NUMBER` e.g, `CS2103-W14-2` means you are in tutorial `CS2103-W14` (i.e., in module `CS2103`, on `Wednesday`, at `1400-1500`), team `2`.
+
+{{ embed_topic("tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial IDs", "projectTeams-tutorialIDs", "3") }}
+</div>
+<div id="teamCommunication">
+
+* **We recommend at least one 1-2 hour ==face-to-face== project meeting per week**, in addition to any online meetings. %%Reason: you need to know how to run both types of project meetings%%. The project meeting time can be used to discuss project related things, but also, can be used as a time for team members to work on the project tasks individually (having all members in the same place will facilitate easier collaboration and more peer-learning).
+
+* After the team has been finalized (latest by week 3 tutorial), decide on a 1-2 hour time slot and a venue that all commit to. **All members are expected to honor this commitment** (not doing so could lower the peer evaluation ratings you receive, which in turn will be factored into your grade).<br>
+  {{ icon_tip }} The best time to have the weekly project meeting is, after the previous week's lecture but before the deadline for weekly tasks.
+
+* You can also create private slack channels within the [module's slack team]({{slack_team}}). These channels will not be visible to others (even instructors).
 </div>
 {% endmacro %}
 

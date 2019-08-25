@@ -1,11 +1,47 @@
 {% from "schedule/index.md" import show_week_pagetop with context%}
+{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 {{ show_week_pagetop(3, "tutorial") }}
 
-**{{ module }} students only**: 
-* Form teams at the beginning of the tutorial. See the panel below for _team forming constrains_ and other related info.<br>
-  <panel src="../../admin/project-teams.md#main" header="Admin {{ icon_embedding }} Team Forming :star:" minimized />
-* Get your team ID from the tutor. ==Each student must submit your team ID via the LumiNUS poll== - for us to know which team you joined. Note the team ID follows <trigger trigger="click" for="modal:t2-teamId">a specific format</trigger>.
+#### {{ thumb(0) }} **[{{ module }} students only] Form teams**
 
-<modal large title="Admin {{ icon_embedding }} Team Forming → Team ID format" id="modal:t2-teamId">
-  <include src="../../admin/project-teams.md#teamIdFormat"/>
-</modal>
+* Form teams, under the guidance of the tutor. See the panel below for _team forming constrains_ and other related info.<br>
+
+<div class="indented-level2">
+
+{{ embed_topic("../../admin/project-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "-", "2") }}
+
+</div>
+
+
+#### {{ thumb(1) }} **Register the team** {{ timing_badge("before leaving the tutorial") }}
+
+* Get your team ID from the tutor. ==Each student must submit your team ID== via the LumiNUS `Class Groups` page -- for us to know which team you joined. Note the team ID follows a specific format.
+
+<div class="indented-level2">
+
+{{ embed_topic("../../admin/project-teams.md#teamIdFormat", "Admin " + icon_embedding + " **Teams → Team ID Format**", "-", "2") }}
+
+</div>
+
+
+#### {{ thumb(2) }} **Introduce yourselves**
+
+* Introduce yourself to the tutor and the members of your team and the _partner_ team (i.e., the other team under your tutor)
+
+
+#### {{ thumb(3) }} **Fix a weekly project meeting time**
+
+* If you haven't done so already, set up a weekly project meeting time/venue (and communication channels) with your team members.
+<div class="indented-level2">
+
+{{ embed_topic("../../admin/project-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "-", "2") }}
+</div>
+
+
+#### {{ thumb(4) }} **Find coding standard violations** (optional activity)
+
+* Do the following exercise, if you have time.
+<div class="indented-level2">
+
+<include src="..\..\book\codeQuality\followStandard\basic\q-listViolations.md" />
+</div>
