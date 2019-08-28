@@ -155,7 +155,7 @@ head: scheduleHead.md
       {location: ["modeling", "introduction", "what"]},
       {location: ["modeling", "introduction", "how"]},
       {location: ["modeling", "introduction", "umlModels"]},
-    {heading: "Class/Ojbect Diagrams: Basics"},
+    {heading: "Class/Object Diagrams: Basics"},
       {location: ["modeling", "modelingStructures", "ooStructures"]},
       {location: ["modeling", "modelingStructures", "classDiagramsBasic"]},
       {location: ["modeling", "modelingStructures", "objectDiagrams"]},

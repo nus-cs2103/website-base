@@ -7,7 +7,6 @@
 {% call show_admin_summary() %}
 1. Accept GitHub invitation from the module organization
 1. Submit post-lecture quiz
-1. Practice peer evaluation on TEAMMATES {{ timing_badge("by Saturday", "secondary") }}
 {% endcall %}
 
 <div id="additional">
@@ -20,9 +19,6 @@
 
 * As per usual.
 
-#### {{ thumb(3) }} Practice peer evaluation on TEAMMATES {{ timing_badge("by Saturday", "secondary") }}
-
-* **A practice peer evaluation/feedback session** will be set up on TEAMMATES. You should receive the submission link by Thursday noon. This session is for you get get used to the system and also to get to know the evaluation criteria. This round of peer evaluations are not used for grading. Email `{{ module | lower }}@comp.nus.edu.sg` if you did not receive the submission link on time.
 </div>
 
 {{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week4, is_flat=false ) }}

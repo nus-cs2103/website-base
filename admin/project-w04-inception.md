@@ -41,7 +41,7 @@ Given below are some guidance on the recommended progress at this point of the p
 
 #### {{ thumb(3) }} Start a collaborative doc to take project notes
 
-* We recommend you keep project notes in a easy-to-use collaborative docs such as GoogleDocs/sheets. Document the decisions taken above in the collaborative docs.
+* We recommend keeping project notes in easy-to-use collaborative docs such as GoogleDocs/sheets. Document the decisions taken above in one of those docs.
 
 </div>
 </div>
