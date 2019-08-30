@@ -193,7 +193,7 @@ setText("Long line split"
         + "into two parts.");
 if (isReady) {
     setText("Long line split"
-            + "into two parts.");
+        + "into two parts.");
 }
 ```
 
@@ -213,13 +213,13 @@ In general:
 
 ```java
 totalSum = a + b + c
-          + d + e;
+        + d + e;
 setText("Long line split"
-         + "into two parts.");
+        + "into two parts.");
 method(param1,
-       object.method()
-             .method2(),
-       param3);
+        object.method()
+                .method2(),
+        param3);
 ```
 </div>
 
