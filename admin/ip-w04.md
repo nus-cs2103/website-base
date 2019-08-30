@@ -29,6 +29,7 @@ We expect the PR peer-review to be mutually beneficial to the reviewer and the a
 * Feel free to ask for more info from the author, to help you understand the code/design. For example, you can ask why the author chose to write the code in a specific way.
 * Feel free to compliment the author when appropriate %%e.g., _hey, I like how clean this bit of code is_ :+1:%%
 * You can also suggest alternatives for the author to consider.
+* You can use Markdown (more specifically, [GFMD](https://guides.github.com/features/mastering-markdown/)) in your comments.
 
 {{ icon_tip }} **Tips for authors**:
 * Don't get into arguments with reviewers.
@@ -41,6 +42,7 @@ We expect the PR peer-review to be mutually beneficial to the reviewer and the a
 
 * **Add the following increments**. As before, do each enhancement in a separate branch and merge to the `master` branch only when ready (if you push incomplete features into the `master` branch, it can confuse others reviewing your PR).
 <br>
+{{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
 
 <include src="dukeFragment.md" boilerplate var-header="**`A-Gradle`: Gradle**" var-fragment="extensions.mbdf#A-Gradle" />
 <include src="dukeFragment.md" boilerplate var-header="**`A-CheckStyle`: CheckStyle**" var-tag="optional" var-fragment="extensions.mbdf#A-CheckStyle" />

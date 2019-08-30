@@ -5,10 +5,10 @@
 <div id="main">
 
 {% call show_project_summary_lead()%}
+1. Create a PR to the upstream repo
 1. Do as parallel branches: `Level-7` and `Level-8`
 1. Do increments `A-MoreOOP`, `A-Packages`, `A-JUnit`, `A-Jar`
 1. Do as parallel branches: `A-JavaDoc`, `A-CodingStandard`, `Level-9`
-1. Create a PR to the upstream repo
 {% endcall %}
 
 <div id="body">
@@ -19,7 +19,12 @@ In this week, we try to practice git branching as we do the iP.
 
 * Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.
 
-#### {{ thumb(1) }} Do as parallel branches: `Level-7` and `Level-8`
+#### {{ thumb(1) }} Create a PR to the upstream repo
+
+Create a pull request (PR) from the `master` branch of your fork to the upstream repo.
+* PR name: `[Your name] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
+
+#### {{ thumb(2) }} Do as parallel branches: `Level-7` and `Level-8`
 
 Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
  {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
@@ -31,7 +36,7 @@ Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go b
 
 <p/>
 
-#### {{ thumb(2) }} Do increments `A-MoreOOP`, `A-Packages`, `A-JUnit`, `A-Jar`
+#### {{ thumb(3) }} Do increments `A-MoreOOP`, `A-Packages`, `A-JUnit`, `A-Jar`
 
 As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).
 <include src="dukeFragment.md" boilerplate var-header="**`A-MoreOOP`: More OOP**" var-fragment="extensions.mbdf#A-MoreOOP" />
@@ -41,7 +46,7 @@ As in the previous week, commit, tag, and push, as you do the following incremen
 
 <p/>
 
-#### {{ thumb(3) }} Do as parallel branches: `A-JavaDoc`, `A-CodingStandard`, `Level-9`
+#### {{ thumb(4) }} Do as parallel branches: `A-JavaDoc`, `A-CodingStandard`, `Level-9`
 
 As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 <include src="dukeFragment.md" boilerplate var-header="**`A-JavaDoc`: JavaDoc**" var-fragment="extensions.mbdf#A-JavaDoc" />
@@ -49,11 +54,6 @@ As in the step 1 above, implement these three increments as three parallel branc
 <include src="dukeFragment.md" boilerplate var-header="**`Level-9`: Find**" var-fragment="text.md#level9" />
 
 <p/>
-
-#### {{ thumb(4) }} Create a PR to the upstream repo
-
-Create a pull request (PR) from the `master` branch of your fork to the upstream repo.
-* PR name: `[Your name] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
 
 <br>
 </div>
