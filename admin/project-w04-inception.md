@@ -23,8 +23,8 @@ Given below are some guidance on the recommended progress at this point of the p
 * **Learn about the tP**
 <div class="indented-level2">
 
-{{ embed_topic("project-overview.md", "Admin " + icon_embedding + " **tP: Overview**", "-", "3") }}
-{{ embed_topic("project-product.md", "Admin " + icon_embedding + " **tP: Product**", "-", "3") }}
+{{ embed_topic("project-overview.md#main", "Admin " + icon_embedding + " **tP: Overview**", "-", "3") }}
+{{ embed_topic("project-product.md#main", "Admin " + icon_embedding + " **tP: Product**", "-", "3") }}
 
 </div>
 
@@ -34,8 +34,8 @@ Given below are some guidance on the recommended progress at this point of the p
 
 <div class="indented-level2">
 
-{{ embed_topic("project-scope.md", "Admin " + icon_embedding + " **tP: Scope**", "-", "3") }}
-{{ embed_topic("project-constraints.md", "Admin " + icon_embedding + " **tP: Constraints**", "-", "3") }}
+{{ embed_topic("project-scope.md#main", "Admin " + icon_embedding + " **tP: Scope**", "-", "3") }}
+{{ embed_topic("project-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "-", "3") }}
 
 </div>
 
