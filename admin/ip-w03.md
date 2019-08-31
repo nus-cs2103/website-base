@@ -22,7 +22,7 @@ In this week, we try to practice git branching as we do the iP.
 #### {{ thumb(1) }} Create a PR to the upstream repo
 
 Create a pull request (PR) from the `master` branch of your fork to the upstream repo.
-* PR name: `[Your name] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
+* PR name: `[{Your name}] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
 
 #### {{ thumb(2) }} Do as parallel branches: `Level-7` and `Level-8`
 

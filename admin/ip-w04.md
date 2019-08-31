@@ -14,26 +14,35 @@
 
 #### {{ thumb(1) }} Review some peer PRs
 
-* **Review two PRs** created by your classmates. PRs can be found [here]({{ module_org }}/duke/pulls). You will be notified separately whose PRs to review. To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
+* **Review two PRs** created by your classmates. PRs can be found [here]({{ module_org }}/duke/pulls).
+  * The allocation of which PRs to review will be specified in [this page]({{team_IDs_page}}) (you will be notified when the allocation is ready).
+  * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
+  * If the student you have been allocated to review has not created a PR by Monday, you can review another PR of your choice.
 
-<div class="indented">
+<div class="indented-level2">
 
 <box type="success">
 
 We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
 </box>
 
-{{ icon_tip }} **Tips for reviewers**:
+<panel header="##### Guidelines for PR reviewers/authors" expanded>
+
+**Guidelines for reviewers**:
+* If you are new to GitHub PRs, see [GitHub help on how to review PRs](https://help.github.com/en/articles/about-pull-request-reviews).
 * Read the blog post [**10 tips for reviewing code you don’t like**](https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/) - by David Lloyd (a Red Had developer). In particular, follow the tip about phrasing objections as questions.
 * Comment on coding standard violations.
 * Feel free to ask for more info from the author, to help you understand the code/design. For example, you can ask why the author chose to write the code in a specific way.
 * Feel free to compliment the author when appropriate %%e.g., _hey, I like how clean this bit of code is_ :+1:%%
-* You can also suggest alternatives for the author to consider.
-* You can use Markdown (more specifically, [GFMD](https://guides.github.com/features/mastering-markdown/)) in your comments.
+* You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. ==You are very welcome to offer to help the author with the project== (in your PR review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.
+* You can use Markdown (specifically, [GitHub-Flavored Markdown](https://guides.github.com/features/mastering-markdown/)) in your comments.
+* At the end of the review, we recommend you to choose `Comment` (i.e., not `Approve` or `Request changes`)
 
-{{ icon_tip }} **Tips for authors**:
-* Don't get into arguments with reviewers.
+**Guidelines for authors**:
+* Don't get into arguments with reviewers. If you disagree with the reviewer, you can explain your own view in a non-confrontational way without trying to prove your way is better.
 * Thank reviewers for their inputs.
+
+</panel>
 </div>
 
 <br/>
