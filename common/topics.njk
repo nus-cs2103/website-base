@@ -129,7 +129,7 @@
 {% endif %}
 {% set  prefix = "W" + params.week_num + "." + params.starting_index%}
 {% set  anchor = make_anchor(prefix) %}
-{% set letters = "abcdefghijklmnop" | list %}
+{% set letters = "abcdefghijklmnopqrstuvwxyzABCDEFGH" | list %}
 {% set letter_index = 0 %}
 {% set panel_decorations = "expanded no-switch" if params.is_flat else "" %}
 {% set panel_expandable = "false" if params.is_flat else "true" %}
@@ -149,7 +149,7 @@
 {% endfor %}
 </small>
 </div>
-{% endif %} {# if not params.is_flat #}
+{% endif %} {# if not params.is_flat #}imag
 {% else %}
 <span id="{{ anchor }}" />
 
