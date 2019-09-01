@@ -43,6 +43,14 @@ We expect the PR peer-review to be mutually beneficial to the reviewer and the a
 * Thank reviewers for their inputs.
 
 </panel>
+<p/>
+</div>
+
+* {{ icon_tip }} **Use the iP Code Dashboard to view others' code**: You can now easily view [iP code written by classmates](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard), using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+
+<div class="indented-level2">
+
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "-", "3") }}
 </div>
 
 <br/>

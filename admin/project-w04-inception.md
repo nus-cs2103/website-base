@@ -16,7 +16,7 @@ Given below are some guidance on the recommended progress at this point of the p
 
 #### {{ thumb(1) }} Start weekly project meetings
 
-* We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks.
+* We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, ==it is also acceptable to discuss weekly post-lecture quiz together with team members as you do the quiz== i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.
 
 #### {{ thumb(2) }} Decide on a overall project direction %%(user profile, problem addressed)%%
 
