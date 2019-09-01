@@ -38,7 +38,7 @@
 </div>
 
 
-#### {{ thumb(4) }} **Find coding standard violations** (optional activity)
+#### {{ thumb(4) }} **Find coding standard violations** {{ icon_extra }}
 
 * Do the following exercise, if you have time.
 <div class="indented-level2">
