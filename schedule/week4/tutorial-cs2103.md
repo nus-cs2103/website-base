@@ -17,7 +17,13 @@
 
 #### {{ thumb(3) }} **Discuss weekly topics**
 
-* If you have any doubts about the weekly topics, share them with others and get their inputs.
+* If you have any doubts about the weekly topics, share them with others and get their inputs. You can use the following exercise as part of your discussion.
+
+<div class="indented-level2">
+
+<include src="../../book/combined/exercises/interpretClassAndObjectDiagramAllNotations.md" />
+<p/>
+</div>
 
 #### {{ thumb(4) }} **Share Git tips** {{ icon_extra }}
 
