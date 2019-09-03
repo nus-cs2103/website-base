@@ -11,8 +11,6 @@
 
 <div id="body">
 
-**v1.0 Summary of Milestone**
-
 #### {{ thumb(1) }} Brainstorm user stories
 
   <img src="{{baseUrl}}/admin/images/v00.png" width="250px">
@@ -59,13 +57,14 @@
 </box>
 
 <panel header="{{ icon_example }} User Story examples (from a different product)" minimized>
+<span class="text-monospace">
 
-`As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.`
-`As a user I can find upcoming tasks, so that I can decide what needs to be done soon.`
-`As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.`
-`As a new user I can view more information about a particular command, so that I can learn how to use various commands.`
-`As an advanced user I can use shorter versions of a command, so that type a command faster.`
-
+* As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.
+* As a user I can find upcoming tasks, so that I can decide what needs to be done soon.
+* As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.
+* As a new user I can view more information about a particular command, so that I can learn how to use various commands.
+* As an advanced user I can use shorter versions of a command, so that type a command faster.
+</span>
 </panel>
 </div>
 

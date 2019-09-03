@@ -8,13 +8,13 @@
 
 1. Add increments as PRs: `A-Assertions`, `A-CodeQuality`, `A-Lambdas`, `A-Streams`
 1. Set up CI
-1. Add another extension [TBD]
+1. Add an extension
 {% endcall %}
 <div id="body">
 
-#### {{ thumb(1) }} Add increments as PRs: `A-Assertions`, `A-CodeQuality`, `A-Lambdas`, `A-Streams`
+#### {{ thumb(1) }} Add increments ==as PRs==: `A-Assertions`, `A-CodeQuality`, `A-Lambdas`, `A-Streams`
 
-Add the following increments, doing each in the following manner:
+* Add the following increments, doing each in the following manner:
 1. add the extension in a separate branch
 1. push the branch to your fork
 1. create PR within your fork (i.e., from the new branch, to the `master` branch)
@@ -30,15 +30,22 @@ Add the following increments, doing each in the following manner:
 
 #### {{ thumb(2) }} Set up CI
 
-We recommend that at least some member of the team attempt the following.
+* We recommend that ==at least one member== of the team attempt the following.
 
 <include src="dukeFragment.md" boilerplate var-header="**`A-Travis`: Travis**" var-tag="optional" var-fragment="extensions.mbdf#A-Travis" />
 
 <p/>
 
-#### {{ thumb(3) }} Add another extension [TBD]
+#### {{ thumb(3) }} Add an extension
 
-Add the extension [to be specified nearer to the date]
+* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b).
+
+<div class="indented-level2">
+
+{{ icon_important_big_red }} Discuss with your team members to ensure that each member picks a different increment.
+
+{{ icon_tip }} You may want to pick an increment that is relevant to your tP so that the code can be reused in the tP later.
+</div>
 
 <p/>
 </div>
