@@ -5,13 +5,13 @@
 <div id="main">
 
 {% call show_project_summary_lead()%}
-1. Brainstorm user stories
-1. Prioritize user stories
+1. Brainstorm user stories {{ timing_badge("before the tutorial") }}
+1. Prioritize user stories {{ timing_badge("before or during the tutorial", "info") }}
 {% endcall %}
 
 <div id="body">
 
-#### {{ thumb(1) }} Brainstorm user stories
+#### {{ thumb(1) }} Brainstorm user stories {{ timing_badge("beforethe tutorial", "secondary") }}
 
   <img src="{{baseUrl}}/admin/images/v00.png" width="250px">
 
@@ -70,7 +70,7 @@
 
 <br>
 
-#### {{ thumb(2) }} Prioritize the user stories
+#### {{ thumb(2) }} Prioritize the user stories {{ timing_badge("before or during the tutorial", "secondary") }}
 
   <img src="{{baseUrl}}/admin/images/userstories.png" width="250px">
 

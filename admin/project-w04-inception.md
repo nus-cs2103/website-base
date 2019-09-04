@@ -6,8 +6,8 @@
 
 {% call show_project_summary_lead()%}
 1. Start weekly project meetings
-1. Decide on a overall project direction %%(user profile, problem addressed).%%
-1. Start a collaborative doc to take project notes
+1. Decide on a overall project direction %%(user profile, problem addressed)%% {{ timing_badge("before the tutorial") }}
+1. Start a collaborative doc to take project notes {{ timing_badge("before the tutorial") }}
 {% endcall %}
 
 <div id="body">
@@ -28,7 +28,7 @@ Given below are some guidance on the recommended progress at this point of the p
 
 </div>
 
-* **Decide project direction, target user profile, and problem addressed**
+* **Decide project direction, target user profile, and problem addressed** {{ timing_badge("before the tutorial", "secondary") }}
 
   Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:
 
@@ -39,7 +39,7 @@ Given below are some guidance on the recommended progress at this point of the p
 
 </div>
 
-#### {{ thumb(3) }} Start a collaborative doc to take project notes
+#### {{ thumb(3) }} Start a collaborative doc to take project notes {{ timing_badge("before the tutorial", "secondary") }}
 
 * We recommend keeping project notes in easy-to-use collaborative docs such as GoogleDocs/sheets. Document the decisions taken above in one of those docs.
 
