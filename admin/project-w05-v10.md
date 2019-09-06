@@ -11,7 +11,7 @@
 
 <div id="body">
 
-#### {{ thumb(1) }} Brainstorm user stories {{ timing_badge("beforethe tutorial", "secondary") }}
+#### {{ thumb(1) }} Brainstorm user stories {{ timing_badge("before the tutorial", "secondary") }}
 
   <img src="{{baseUrl}}/admin/images/v00.png" width="250px">
 

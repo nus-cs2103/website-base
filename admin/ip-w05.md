@@ -38,7 +38,7 @@
 
 #### {{ thumb(3) }} Add an extension
 
-* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b).
+* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category
 
 <div class="indented-level2">
 
