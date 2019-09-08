@@ -2,7 +2,14 @@
 {% from "schedule/index.md" import show_week_pagetop with context%}
 {{ show_week_pagetop(5, "tutorial") }}
 
-#### {{ thumb(1) }} Discuss the code quality of PRs
+#### {{ thumb(1) }} Discuss iP progress
+
+Quickly update the tutor about your iP progress:
+* Has at least one team member managed to set up Travis?
+* Has everyone completed `Level-10` (i.e., the GUI) and `A-Gradle`? Any GUIs that went beyond the JavaFx tutorial?
+* Anyone has iP increments overdue more than one week?
+
+#### {{ thumb(2) }} Discuss the code quality of iP PRs
 
 <div class="indented">
 
@@ -104,7 +111,7 @@
 {{ icon_tip }} After the tutorial, you can apply the insights gained from this activity to **improve the code quality of your own iP**, if necessary.
 </div>
 
-#### {{ thumb(2) }} Prioritize tP user stories
+#### {{ thumb(3) }} Prioritize tP user stories
 
 * Show your list of tP user stories to the tutor %%(for progress tracking)%%.
 * If you haven't done so already, prioritize tP user stories as explained in the [{{ show_as_tab('Project', icon_project) }}](project.html#2-prioritize-the-user-stories-before-or-during-the-tutorial).
