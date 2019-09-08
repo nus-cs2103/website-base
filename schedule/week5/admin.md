@@ -18,7 +18,7 @@
 
 #### {{ thumb(2) }} Practice peer evaluation on TEAMMATES {{ timing_badge("by Saturday", "secondary") }}
 
-* **A practice peer evaluation/feedback session** will be set up on TEAMMATES. You should receive the submission link by Thursday noon. This session is for you get get used to the system and also to get to know the evaluation criteria. This round of peer evaluations are not used for grading. Email `{{ module | lower }}@comp.nus.edu.sg` if you did not receive the submission link on time.
+* **A practice peer evaluation/feedback session** will be set up on TEAMMATES. You should receive the submission link by Monday noon. This session is for you get get used to the system and also to get to know the evaluation criteria. This round of peer evaluations are not used for grading. Email `{{ module | lower }}@comp.nus.edu.sg` if you did not receive the submission link on time.
 
 </div>
 

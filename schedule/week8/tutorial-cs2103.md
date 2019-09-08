@@ -36,3 +36,6 @@
 1. How is each one done in AB3?
 1. What’s the difference between _unit testing_ and _integration testing_?
 1. What’s the difference between _system testing_ and _acceptance testing_?
+
+<include src="../../book/modeling/modelingStructures/classDiagramsBasic/q-essay-explainClassDiagram.md" />
+<include src="../../book/uml/classDiagrams/combine/basic/q-essay-objectDiagramsForClassDiagram.md" />

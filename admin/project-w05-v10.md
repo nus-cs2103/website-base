@@ -83,7 +83,7 @@
     * `Nice-To-Have` : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.
     * `Not-Useful` : No significant benefit to the target user, or does not fit into the product vision.
 
-  * %%If using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.%%
+  * %%If you are using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.%%
 
 </div>
 </div>

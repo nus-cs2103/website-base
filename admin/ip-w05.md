@@ -38,13 +38,13 @@
 
 #### {{ thumb(3) }} Add an extension
 
-* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category
+* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
 
 <div class="indented-level2">
 
-{{ icon_important_big_red }} Discuss with your team members to ensure that each member picks a different increment.
+{{ icon_important_big_red }} Discuss with your team members to ensure that each member picks a different extension.
 
-{{ icon_tip }} You may want to pick an increment that is relevant to your tP so that the code can be reused in the tP later.
+{{ icon_tip }} You may want to pick an extension that is relevant to your tP so that the code can be reused in the tP later.
 </div>
 
 <p/>
