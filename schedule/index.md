@@ -270,7 +270,7 @@ head: scheduleHead.md
       {location: ["architecture", "architectureDiagrams", "reading"]},
       {location: ["designApproaches", "multilevelDesign", "what"]},
   {name: "Implementation"},
-    {heading: "IDEs: Intermediate Features"},
+    {heading: "IDEs: Basic Features"},
       {location: ["ides", "debugging", "what"]},
       {location: ["intellij", "debuggingBasic"]},
       {location: ["intellij", "codeNavigation"]},
