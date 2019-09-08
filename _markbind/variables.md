@@ -12,7 +12,9 @@
 
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 
-<span id="module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</span>
+<span id="module_gh_pages">https://nus-{{ module | lower }}-{{ semester }}.github.io</span>
+
+<span id="module_website">{{ module_gh_pages }}/website</span>
 
 <span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQt_VkIgajiPIkdLzgqLTBkYf6UoYhAEMkgDns7S3eWfsx7x2EsI0wix6RLHooaYbETWkTuGnqGP-5s/pub?embedded=true</span>
 

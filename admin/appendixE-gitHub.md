@@ -101,7 +101,7 @@ Note that some of our download scripts depend on the following folder paths. Ple
 </div>
 <div id="workflow-after-v11">
 
-**After completing v1.1, you can reduce process rigor** to suit your teams pace. Here are some examples:
+**After completing v1.1, you can reduce process rigor** to suit your team's pace. Here are some examples:
 
   * **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
     It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>

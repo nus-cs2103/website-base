@@ -41,8 +41,17 @@
 
 #### {{ thumb(2) }} {{ icon_individual }} Get familiar with the code base
 
-* Do the provided tutorials to get familiar with the codebase
-* When updating code in the repo, follow the workflow explained below:
+* Do the following tutorials to get familiar with the codebase
+  * [Tutorial 1 - Tracing a Command Execution Path]({{ module_gh_pages }}/addressbook-level3/tutorials/TracingCode)
+  * [Tutorial 2 - Removing a field from an entity]({{ module_gh_pages }}/addressbook-level3/tutorials/RemovingFields)
+    * You may remove a different field than the one given in the tutorial.
+    * Submission: Do your changes in a branch named `tutorial-removing-field` and push to your fork.
+  * Tutorial 3 - Adding a new Command (coming soon)
+    * You may add a different command than the one given in the tutorial.
+    * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. 
+* ==Ideally, you should do the tutorials by week 6 tutorial== (i.e., midnight before), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
+* The PRs created for tutorials need not be merged, unless the changes are actually in-line with your project idea.
+* For reference, here is the workflow you should follow use to merge code in your tP:
 
 <div class="indented-level2">
 

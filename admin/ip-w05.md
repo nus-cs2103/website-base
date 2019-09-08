@@ -12,6 +12,11 @@
 {% endcall %}
 <div id="body">
 
+#### {{ thumb(0) }} Generate a new jar file {{ icon_extra }}
+
+* We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [Gradle tutorial provided]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md#shadow) (see the `shadowJar` task).
+
+
 #### {{ thumb(1) }} Add increments ==as PRs==: `A-Assertions`, `A-CodeQuality`, `A-Lambdas`, `A-Streams`
 
 * Add the following increments, doing each in the following manner:
