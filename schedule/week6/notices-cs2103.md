@@ -6,6 +6,5 @@
 
 <box type="tip" dismissible>
 
-**One part of this week's lecture is not covered in the textbook** and is relevant for your project work for the upcoming project milestone v1.0. You are encouraged to attend this week's lecture even if you don't normally come to lectures.
+**One part of this week's lecture is not covered in the textbook** and is relevant for your team project. You are encouraged to attend this week's lecture even if you don't normally come to lectures.
 </box>
-
