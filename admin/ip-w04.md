@@ -31,6 +31,7 @@ We expect the PR peer-review to be mutually beneficial to the reviewer and the a
 **Guidelines for reviewers**:
 * If you are new to GitHub PRs, see [GitHub help on how to review PRs](https://help.github.com/en/articles/about-pull-request-reviews).
 * Read the blog post [**10 tips for reviewing code you don’t like**](https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/) - by David Lloyd (a Red Had developer). In particular, follow the tip about phrasing objections as questions.
+* Rather than give one overall comment for the entire PR, add specific comments at relevant places of the code.
 * Comment on coding standard violations.
 * Feel free to ask for more info from the author, to help you understand the code/design. For example, you can ask why the author chose to write the code in a specific way.
 * Feel free to compliment the author when appropriate %%e.g., _hey, I like how clean this bit of code is_ :+1:%%

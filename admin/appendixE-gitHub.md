@@ -34,6 +34,7 @@ After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
   * **Organization name** ==(all UPPER CASE) : `{{ semester }}-TEAM_ID`==. e.g.  `{{ semester }}-CS2103T-W12-1`, `{{ semester }}-CS2103-F09-3`
   * Plan:  Open Source ($0/month) 
+  * This organization belongs to: My personal account
 * Add members to the organization:
   * Create a team called `developers` to your organization.
   * Add your team members to the developers team.
