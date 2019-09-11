@@ -16,7 +16,7 @@ Quickly update the tutor about your iP progress:
 {{ icon_team }} This activity is to be done as a team. One team member needs to be connected to the TV.
 </div>
 
-1. **Locate PRs to discuss**: Go to the [list of Duke PRs]({{ module_org }}/duke/pulls). Locate the PRs (you can filter using `tutorial.*` and `team.*` labels) from the team you are allocated to discuss (given below).
+1. **Find the team you are allocated to discuss** (given below).
 
    <panel header="Team allocation for the code quality discussion" minimized >
    
@@ -93,9 +93,10 @@ Quickly update the tutor about your iP progress:
    </panel>
    <p/>
 
+1. **Locate PRs from that team**: Go to the [list of Duke PRs]({{ module_org }}/duke/pulls). Locate the PRs (you can filter using `tutorial.*` and `team.*` labels).
 1. **Pick a PR to review.** When choosing, give priority to PRs with fewer comments.
-1. **Discuss code quality** Go through the code, and discuss the ==abstraction (SLAP, arrow-head style code, too-long methods, too-deep nesting)== aspect of the PR
-1. **Add comments**: If the team agrees that the code quality of a specific piece of code should be improved some way, add a comment (team members can take turns on adding comments).<br/>
+1. **Discuss abstraction aspect of the code** Go through the code, and discuss the ==abstraction (SLAP, arrow-head style code, too-long methods, too-deep nesting)== aspect of the PR
+1. **Add comments**: If the team agrees that the abstraction aspect of specific piece of code should be improved some way, add a comment (team members can take turns on adding comments).<br/>
    If you are unsure about a case, you can also rope the tutor in to the discussion.
 1. **Repeat for remaining PRs**: Continue to review PRs until the 30 minutes mark.
 
