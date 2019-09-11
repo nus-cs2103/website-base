@@ -94,17 +94,10 @@ Quickly update the tutor about your iP progress:
    <p/>
 
 1. **Pick a PR to review.** When choosing, give priority to PRs with fewer comments.
-1. **Discuss code quality** Go through the code, and discuss the code quality of the PR. Example aspects to consider:
-   * abstraction: SLAP, arrow-head style code, too-long methods, too-deep nesting
-   * comments: missing comments, redundant comments
-   * magic literals
-   * hard-to-understand code
-   * coding standard violations
-   * class/method/variable naming
+1. **Discuss code quality** Go through the code, and discuss the ==abstraction (SLAP, arrow-head style code, too-long methods, too-deep nesting)== aspect of the PR
 1. **Add comments**: If the team agrees that the code quality of a specific piece of code should be improved some way, add a comment (team members can take turns on adding comments).<br/>
    If you are unsure about a case, you can also rope the tutor in to the discussion.
-1. **Repeat for other PRs**: Spend ==no more than 10 minutes on one PR==. When you reach 10 minutes, move to another PR.<br/>
-   Discuss ==at least 2 PRs==.
+1. **Repeat for remaining PRs**: Continue to review PRs until the 30 minutes mark.
 
 <div class="indented">
 
