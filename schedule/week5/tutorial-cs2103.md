@@ -94,10 +94,12 @@ Quickly update the tutor about your iP progress:
    <p/>
 
 1. **Locate PRs from that team**: Go to the [list of Duke PRs]({{ module_org }}/duke/pulls). Locate the PRs (you can filter using `tutorial.*` and `team.*` labels).
-1. **Pick a PR to review.** When choosing, give priority to PRs with fewer comments.
-1. **Discuss abstraction aspect of the code** Go through the code, and discuss the ==abstraction (SLAP, arrow-head style code, too-long methods, too-deep nesting)== aspect of the PR
+   <img src="../../admin/images/filterPrsUsingLabels.png" />
+1. **Pick a PR to review**, giving priority to ==PRs with fewer comments==.
+1. **Discuss abstraction aspect of the code**: Go through the code, and discuss the ==abstraction (SLAP, arrow-head style code, too-long methods, too-deep nesting)== aspect of the PR<br/>
+   {{ icon_tip }} To identify long methods or deep nesting, zoom out and scroll through the entire PR code to do a visual inspection (no need to read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction.If you are unsure about a case, you can also rope the tutor in to the discussion.
 1. **Add comments**: If the team agrees that the abstraction aspect of specific piece of code should be improved some way, add a comment (team members can take turns on adding comments).<br/>
-   If you are unsure about a case, you can also rope the tutor in to the discussion.
+   e.g., `This method looks rather long; perhaps it can be shortened using SLAP?`
 1. **Repeat for remaining PRs**: Continue to review PRs until the 30 minutes mark.
 
 <div class="indented">
