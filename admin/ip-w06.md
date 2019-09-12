@@ -38,7 +38,8 @@
 #### {{ thumb(3) }} Release the product
 
 * Create a new jar file.
-* Ensure the jar file works as it will be used to grade your iP.
+* Ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
+  ==Get a team member to test the Jar file on their computer== %%(reason: it's possible for the jar file to work on your computer but not on others')%%.
 * Create a new release on GitHub (e.g., `v0.2`) and upload the jar file.
 
 <div class="indented">

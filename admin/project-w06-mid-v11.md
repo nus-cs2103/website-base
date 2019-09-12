@@ -5,7 +5,7 @@
 <div id="main">
 
 {% call show_project_summary_lead()%}
-1. {{ icon_team }} Set up project repo
+1. {{ icon_team }} Set up the project repo
 1. {{ icon_individual }} Get familiar with the code base
 1. {{ icon_team }}  Conceptualize v2.0
 1. {{ icon_individual }} Draft the UG
@@ -25,7 +25,7 @@
 {{ icon_important_big_red }} **Milestone requirements are cumulative**. The recommended progress for the mid-milestone is an implicit requirement for the actual milestone unless a milestone requirement overrides a mid-milestone requirement %%e.g., mid-milestone requires a document to be in a temp format while the actual milestone requires it to be in the proper format%%. Similarly, a requirement for milestone `n` is also an implicit requirement for milestone `n+1` unless `n+1` overrides the `n` requirement. This means ==if you miss some requirement at milestone `n`, you should try to achieve it before milestone `n+1`== or else it could be noted again as a 'missed requirement' at milestone `n+1`.
 </box>
 
-#### {{ thumb(1) }} {{ icon_team }} Set up project repo
+#### {{ thumb(1) }} {{ icon_team }} Set up the project repo
 
 * Set up the team org and the team repo as explained below:
 
@@ -44,13 +44,13 @@
 * Do the following tutorials to get familiar with the codebase
   * [Tutorial 1 - Tracing a Command Execution Path]({{ module_gh_pages }}/addressbook-level3/tutorials/TracingCode)
   * [Tutorial 2 - Removing a field from an entity]({{ module_gh_pages }}/addressbook-level3/tutorials/RemovingFields)
-    * You may remove a different field than the one given in the tutorial.
+    * If you an experience programmer, you can remove a different field than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-removing-field` and push to your fork.
   * Tutorial 3 - Adding a new Command (coming soon)
-    * You may add a different command than the one given in the tutorial.
+    * If you an experience programmer, you can add a different command than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. 
-* ==Ideally, you should do the tutorials by week 6 tutorial== (i.e., midnight before), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
-* The PRs created for tutorials need not be merged, unless the changes are actually in-line with your project idea.
+* ==Ideally, you should do the above tutorials by week 6== (i.e., midnight before the tutorial), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
+* The PRs created for tutorials need not be merged, unless the changes are actually in line with your project idea.
 * For reference, here is the workflow you should follow use to merge code in your tP:
 
 <div class="indented-level2">
