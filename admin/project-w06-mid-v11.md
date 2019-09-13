@@ -46,7 +46,7 @@
   * [Tutorial 2 - Removing a field from an entity]({{ module_gh_pages }}/addressbook-level3/tutorials/RemovingFields)
     * If you an experience programmer, you can remove a different field than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-removing-field` and push to your fork.
-  * Tutorial 3 - Adding a new Command (coming soon)
+  * [Tutorial 3 - Adding a new Command]({{ module_gh_pages }}/addressbook-level3/tutorials/AddRemark)
     * If you an experience programmer, you can add a different command than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. 
 * ==Ideally, you should do the above tutorials by week 6== (i.e., midnight before the tutorial), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
