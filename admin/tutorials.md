@@ -27,7 +27,7 @@ Module        | Venue             | Time               | ~~%%Tutorial ID<br>in L
 {{ cs2103t }} | COM1-0210 (SR 10) | **T**hu  **12**:00 | ~~%%G04%%~~ | **`CS2103T-T12`**| Jun Rong, Brian
 {{ cs2103t }} | COM1-0210 (SR 10) | **T**hu  **13**:00 | ~~%%G10%%~~ | **`CS2103T-T13`**| Xiaowen, Yuan Chuan
 {{ cs2103 }}  | COM1-0210 (SR 10) | **T**hu  **14**:00 | ~~%%02%%~~  | **`CS2103-T14`**| Gilbert, Yuan Chuan
-{{ cs2103 }}  | COM1-0210 (SR 10) | **T**hu  **16**:00 | ~~%%04%%~~  | **`CS2103-T15`**| Kyler, ZhiHui
+{{ cs2103 }}  | COM1-0210 (SR 10) | **T**hu  **16**:00 | ~~%%04%%~~  | **`CS2103-T16`**| Kyler, ZhiHui
 {{ cs2103t }} | ~~COM1-B103~~ COM1-0210 (SR 10) | **T**hu  **17**:00 | ~~%%G13%%~~ | **`CS2103T-T17`**| Jun Rong
  | | | | | |
 {{ cs2103 }}  | COM1-0210 (SR 10) | **F**ri  **09**:00 | ~~%%06%%~~  | **`CS2103-F09`**| Jonathan, Keith
