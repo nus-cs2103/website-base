@@ -32,6 +32,7 @@
 {{ embed_topic("project-deliverables.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "ipW6-tipsForScreenshots", "3") }}
 </div>
 
+
 * **Add a brief User Guide (UG)**
 
 <div class="indented">
@@ -39,6 +40,8 @@
 <include src="dukeFragment.md" boilerplate var-header="**`A-UserGuide`: User Guide**" var-fragment="extensions.mbdf#A-UserGuide" />
 </div>
 <p/>
+
+* {{ icon_tip }} If you added the `Ui.png` correctly and set up product website correctly, ==you should be able to see your screenshot in the [iP Showcase](ip-showcase.html) page==.
 
 #### {{ thumb(3) }} Release the product
 
