@@ -60,10 +60,10 @@ All team members:
 1. **Watch** the `main` repo (created above) i.e., go to the repo and click on the `watch` button to subscribe to activities of the repo
 1. **Fork** the `main` repo to your personal GitHub account.
 1. **Clone** the fork to your computer.
-1. Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).
-1. **Set up the developer environment** in your computer.
+1. **Set up** the developer environment in your computer.<br>
+   Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).
 
-Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project. 
+Note that some of our bot scripts depend on the following folder paths. Please do not alter those paths in your project.
 * `/src/main`  
 * `/src/test`  
 * `/docs`

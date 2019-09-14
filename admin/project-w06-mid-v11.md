@@ -9,14 +9,14 @@
 1. {{ icon_individual }} Get familiar with the code base
 1. {{ icon_team }}  Conceptualize v2.0
 1. {{ icon_individual }} Draft the UG
-1. {{ icon_team }} Refine product design
+1. {{ icon_team }} Refine the product design
 {% endcall %}
 
 <div id="body">
 
 <box dismissible>
 
-{{ icon_individual }} indicates an individual milestone %%(i.e., each team member has to do their part of the milestone, graded individually)%% while {{ icon_team }} indicates a team milestone %%(some or all members may do the work, graded for the whole team)%%.
+{{ icon_individual }} indicates an individual milestone %%(i.e., each team member has to do their part of the milestone, graded individually)%% while {{ icon_team }} indicates a team milestone %%(some or all members may do the work; graded for the whole team)%%.
 
 {{ icon_important_big_red }} **Milestone progress is graded**. Be reminded that reaching individual and team milestones are considered for <trigger trigger="click" for="modal:v11-projectMgtGrading">grading the _project management_ component</trigger> of your project grade.
 
@@ -44,14 +44,14 @@
 * Do the following tutorials to get familiar with the codebase
   * [Tutorial 1 - Tracing a Command Execution Path]({{ module_gh_pages }}/addressbook-level3/tutorials/TracingCode)
   * [Tutorial 2 - Removing a field from an entity]({{ module_gh_pages }}/addressbook-level3/tutorials/RemovingFields)
-    * If you an experience programmer, you can remove a different field than the one given in the tutorial.
+    * If you are an experienced programmer, you can remove a different field than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-removing-field` and push to your fork.
   * [Tutorial 3 - Adding a new Command]({{ module_gh_pages }}/addressbook-level3/tutorials/AddRemark)
-    * If you an experience programmer, you can add a different command than the one given in the tutorial.
+    * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. 
 * ==Ideally, you should do the above tutorials by week 6== (i.e., midnight before the tutorial), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
 * The PRs created for tutorials need not be merged, unless the changes are actually in line with your project idea.
-* For reference, here is the workflow you should follow use to merge code in your tP:
+* For reference, given below is the workflow you should follow use to merge code in your tP:
 
 <div class="indented-level2">
 
@@ -81,7 +81,7 @@
    
   </box>
 
-#### {{ thumb(5) }} {{ icon_team }} Refine product design
+#### {{ thumb(5) }} {{ icon_team }} Refine the product design
 
 * Review the UG to ensure the features written by each member fit together to form a cohesive product. Note that cohesiveness of the product is a grading criterion.
 

@@ -11,6 +11,11 @@
 {% endcall %}
 <div id="body">
 
+<box type="important">
+
+**Aim to finish the iP by this week!**<br> Although the official iP submission deadline is Week 7 Monday, aim to finish the iP **by this week's <tooltip content="i.e., 2359 before the tutorial">weekly deadline</tooltip>** so that you can devote more time to the tP after this week. %%The extra time for the iP (i.e., from week 6 to 7) is meant as a buffer for those lagging behind in the iP.%%
+</box>
+
 #### {{ thumb(1) }} Finalize the features
 
 * You may give the product any name, but do not rename the repo.

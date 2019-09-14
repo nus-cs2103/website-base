@@ -6,7 +6,6 @@
 
 {% call show_admin_summary() %}
 1. Submit post-lecture quiz
-1. iP final submission {{ timing_badge('by weekly deadline') }}
 {% endcall %}
 
 <div id="additional">
@@ -14,9 +13,5 @@
 #### {{ thumb(1) }} Submit post-lecture quiz
 
 * As per usual.
-
-#### {{ thumb(2) }} iP final submission {{ timing_badge('by weekly deadline', 'secondary') }}
-
-See the [{{ show_as_tab('Project', icon_project) }}](project.html) for more details.
 
 </div>
