@@ -24,7 +24,7 @@
     <li><a href="{{baseUrl}}/admin/ip-overview.html" class="dropdown-item"><md>{{ icon_project }} Individual Project Info</md></a></li>
     <li><a href="{{module_org}}/duke" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke Upstream Repo</md></a></li>
     <li><a href="https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><md>:fas-chart-area: iP Code Dashboard</md></a></li>
-    <li><a href="admin/ip-showcase.html" target="_blank" class="dropdown-item"><md>:fas-th-list: iP Showcase</md></a></li>
+    <li><a href="{{baseUrl}}/admin/ip-showcase.html" target="_blank" class="dropdown-item"><md>:fas-th-list: iP Showcase</md></a></li>
     <hr>
     <md>**&nbsp;Team Project (tP):**</md>
     <li><a href="{{baseUrl}}/admin/project-overview.html" class="dropdown-item"><md>{{ icon_project }} Team Project Info</md></a></li>
