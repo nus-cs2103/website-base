@@ -372,8 +372,11 @@ pageNav: 3
 {% if student_tutorial == tutorial %}
 {% set student_name = student[0] %}
 {% set username = student[2] %}
-#### {{ student_name }} (`@{{ username }}`) <small>[:fas-home:](https://{{ username }}.github.io/duke) [:fab-github:](https://github.com/{{ username }}/duke) [:fas-code:](https://nus-cs2103-ay1920s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors&search={{ username }}&sortWithin=title&since=2019-08-16&timeframe=commit&mergegroup=false&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ studen_namet }}%2Fduke%5Bmaster%5D) [:fas-code-branch:](https://github.com/nus-cs2103-AY1920S1/duke/pulls/{{ username }})</small>
-<img src="https://{{ username }}.github.io/duke/Ui.png" height="750" /><p/>
+{% set current_semester = "AY1920S1" %}
+{% set duke_website = "https://" + username + ".github.io/duke" %}
+{% set duke_repo = "https://github.com/" + username + "/duke" %}
+#### {{ student_name }} (`@{{ username }}`) <small>[:fas-home:]({{ duke_website }}) [:fab-github:]({{ duke_repo }}) [:fas-download:]({{ duke_repo }}/releases) [:fas-code:](https://nus-cs2103-{{ current_semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors&search={{ username }}&sortWithin=title&since=2019-08-16&timeframe=commit&mergegroup=false&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2Fduke%5Bmaster%5D) [:fas-code-branch:](https://github.com/nus-cs2103-{{ current_semester }}/duke/pulls/{{ username }})</small>
+<img src="{{ duke_website }}/Ui.png" height="750" /><p/>
 <hr>
 {% endif %}
 {% endfor %}

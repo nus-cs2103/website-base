@@ -35,6 +35,8 @@
 * {{ show_constraint("Constraint-Platform-Independent") }} The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and OS-specific features.<br/>
   %%**Reason:** Peer testers should be able to use any of these platforms.%%
 
+* {{ show_constraint("Constraint-Java-Version") }} The software should work on a computer that has version 11 of Java %%i.e., no other Java version installed%%.
+
 * {{ show_constraint("Constraint-Portable") }} The software should work without requiring an installer.<br>
   %%**Reason:** Testers may not want to install your product on their computer.%%
 
