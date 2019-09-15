@@ -11,11 +11,12 @@
 
 * Show the following to the tutor:
   - [ ] the product website of your team repo
-  - [ ] your UG draft
+  - [ ] your UG draft %%(i.e., a copy of the PDF file you uploaded to LumiNUS)%% -- one team member to give a quick overview of the product and the proposed features
   - [ ] AB3 project setup on your computer
   - [ ] any AB3 tutorials done
 
-* Discuss any difficulties you encountered while doing AB3 tutorials or understanding AB3 developer documentation.
+* Discuss any difficulties you encountered while doing AB3 tutorials.
+* Discuss any difficulties understanding AB3 developer documentation, UML diagrams in particular.
 
 #### {{ thumb(3) }} **Discuss weekly topics**
 
