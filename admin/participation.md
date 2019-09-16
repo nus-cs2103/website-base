@@ -45,6 +45,22 @@ Low attendance/participation can affect participation marks directly (i.e., atte
 * Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he received good peer ratings for all criteria, and hence get a bonus mark to make it 5/5.
 * Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.
 
+<box type="success">
+
+**Participation marks are available in [this page]({{ participation_marks_page }}).**
+
+* The important column is the <span class="text-monospace">==Weeks Count==</span> column. It tells you how many weeks you have met the bar for the criterion <span class="badge badge-info badge-pill">A</span>). Your target is to hit 10 weeks.
+* Participation of a week is usually calculated based on two quizzes. For example, week 4 score is calculated based on,
+  * `W4-Q1`: previous week's (i.e., lecture 3) in-lecture quiz
+  * `W4-Q2`: previous week's (i.e., lecture 3) post-lecture quiz
+* Participation bar for weeks 1-3 have been simplified as follows %%(to account for late enrollments, LumiNUS problems etc.)%%:
+  * Week 1: submitted pre-module survey or pre-lecture quiz
+  * Week 2: submitted at least one of the quizzes
+  * Week 3: did reasonably in both quizzes or did well in one of the quizzes
+
+{{ icon_info }} If you have queries about the participation marks, please email `{{ module | lower }}@comp.nus.edu.sg`.
+</box>
+
 </div>
 {% endmacro %}
 
