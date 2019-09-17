@@ -51,7 +51,7 @@ We expect the PR peer-review to be mutually beneficial to the reviewer and the a
 
 <div class="indented-level2">
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "-", "3") }}
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "-", "1") }}
 </div>
 
 <br/>

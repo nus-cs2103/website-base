@@ -45,7 +45,7 @@ Low attendance/participation can affect participation marks directly (i.e., atte
 * Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he received good peer ratings for all criteria, and hence get a bonus mark to make it 5/5.
 * Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.
 
-<box type="success">
+<panel type="info" header="##### Where to find your participation marks progress" expanded no-close no-switch >
 
 **Participation marks are available in [this page]({{ participation_marks_page }}).**
 
@@ -57,9 +57,10 @@ Low attendance/participation can affect participation marks directly (i.e., atte
   * Week 1: submitted pre-module survey or pre-lecture quiz
   * Week 2: submitted at least one of the quizzes
   * Week 3: did reasonably in both quizzes or did well in one of the quizzes
+* Quizzes for Week 4 and thereafter are counted as explained in <span class="badge badge-info badge-pill">A</span> above.
 
 {{ icon_info }} If you have queries about the participation marks, please email `{{ module | lower }}@comp.nus.edu.sg`.
-</box>
+</panel>
 
 </div>
 {% endmacro %}

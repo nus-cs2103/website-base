@@ -20,6 +20,11 @@
 
 * You may give the product any name, but do not rename the repo.
 * Reminder: you can give the chatbot any personality (there is no need to follow the exact command/response formats given)
+* {{ icon_important_big_red }} Remember to give credit to any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
+<div class="indented-level2">
+
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "-", "1") }}
+</div>
 
 #### {{ thumb(2) }} Set up a product website
 
@@ -47,7 +52,7 @@
 
 * Create a new jar file.
 * Ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
-  ==Get a team member to test the Jar file on their computer== %%(reason: it's possible for the jar file to work on your computer but not on others')%%.
+  ==Get a team member to test the Jar file on their computer==, preferrably someone using a different Operating System %%(reason: it's possible for the jar file to work on your computer but not on others')%%.
 * Create a new release on GitHub (e.g., `v0.2`) and upload the jar file.
 
 <div class="indented">
