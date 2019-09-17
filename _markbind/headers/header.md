@@ -32,8 +32,8 @@
     <li><a href="{{team_IDs_page}}" target="_blank" class="dropdown-item"><md>:glyphicon-list-alt: Team IDs</md></a></li>
     <li><a href="{{module_org}}/addressbook-level3" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Addressbook-level3</md></a></li>
     <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Addressbook-level 1,2,4</md></a></li>
-    <!--<li><a href="{{baseUrl}}/admin/projectList.html" class="dropdown-item"><md>:fas-th-list: Projects List</md></a></li>
-    <li><a href="{{baseUrl}}/admin/reposenseConfigTemplates.html" class="dropdown-item"><md>:fas-th-list:</md> config.json templates for Reposense</a></li>-->
+    <li><a href="{{baseUrl}}/admin/projectList.html" class="dropdown-item"><md>:fas-th-list: Projects List</md></a></li>
+    <!--<li><a href="{{baseUrl}}/admin/reposenseConfigTemplates.html" class="dropdown-item"><md>:fas-th-list:</md> config.json templates for Reposense</a></li>-->
   </dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
