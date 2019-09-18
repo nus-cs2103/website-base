@@ -20,11 +20,12 @@
 
 #### {{ thumb(3) }} **Discuss weekly topics**
 
-* If you have any doubts about the weekly topics, share them with others and get their inputs. You can use the following exercises as part of your discussion.
+* If you have any doubts about the weekly topics, share them with others and get their inputs. You can use the following exercises in your discussion.
 
 <div class="indented-level2">
 
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsBasic/q-explainMachineSequenceDiagram.md" />
+<include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" />
 <p/>
 </div>
 

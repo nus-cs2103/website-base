@@ -19,6 +19,7 @@
 #### {{ thumb(2) }} Submit the final version {{ timing_badge('by Monday 2359', "secondary") }}
 
 * Submission is to be done via GitHub releases. If there were any changes to the code since the last release, do a new release.
+* {{ icon_important_big_red }} The jar file should be ==cross-platform and should work in a computer that has Java 11==.
 
 </div>
 </div>

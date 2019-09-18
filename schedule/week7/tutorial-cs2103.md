@@ -6,6 +6,5 @@
 1. Which architecture styles are used by AB3?
 1. What is an API? How is it used in AB3?
 
-<include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" />
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-drawPrintQuoteSd.md" />
 <include src="../../book/combined/exercises/reviewCliAppCode.md" /><p/>
