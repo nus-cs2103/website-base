@@ -15,7 +15,7 @@ pageNav: 2
 <div class="row">
 <div class="col border">
 
-### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:far-comment:]({{ team_repo }}/issues/new)</small> [<img src="https://travis-ci.org/{{ team_org }}/main.svg?branch=master" alt="Build Status">](https://travis-ci.org/{{ team_org }}/main)
+### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/addressbook-level3/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> [<img src="https://travis-ci.org/{{ team_org }}/main.svg?branch=master" alt="Build Status">](https://travis-ci.org/{{ team_org }}/main)
 <img src="{{ team_website }}/images/Ui.png" width="750" /><p/>
 </div>
 </div>
