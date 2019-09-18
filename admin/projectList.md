@@ -16,7 +16,7 @@ pageNav: 2
 <div class="col border">
 
 ### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/addressbook-level3/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> [<img src="https://travis-ci.org/{{ team_org }}/main.svg?branch=master" alt="Build Status">](https://travis-ci.org/{{ team_org }}/main)
-<img src="{{ team_website }}/images/Ui.png" width="750" /><p/>
+<img src="{{ team_website }}/images/Ui.png" width="750" onerror="this.src='images/placeholder-large.png';" /><p/>
 </div>
 </div>
 <div class="row">
@@ -34,7 +34,7 @@ pageNav: 2
 <div class="col text-center border">
 
 **{{ name }}**<br>
-<img src="{{ team_website }}/images/{{ username | lower }}.png" width="120" /><br>[:fas-file-powerpoint:]({{ team_website }}/team/{{ username | lower }}.html) [:fas-code:](https://nus-{{ module }}-{{ current_semester }}.github.io/tp-dashboard/#=undefined&search={{ username | lower }}) [:fas-code-branch:]({{ team_repo }}/pulls?q=is%3Apr+author%3A{{ username }})
+<img src="{{ team_website }}/images/{{ username | lower }}.png" width="120"  onerror="this.src='images/placeholder-small.png';"/><br>[:fas-file-powerpoint:]({{ team_website }}/team/{{ username | lower }}.html) [:fas-code:](https://nus-{{ module }}-{{ current_semester }}.github.io/tp-dashboard/#=undefined&search={{ username | lower }}) [:fas-code-branch:]({{ team_repo }}/pulls?q=is%3Apr+author%3A{{ username }})
 </div>
 {% endmacro %}
 
