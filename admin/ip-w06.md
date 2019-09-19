@@ -29,7 +29,7 @@
 #### {{ thumb(2) }} Set up a product website
 
 * **Add a representative screenshot** of the product to the `docs` folder.
-  * ==The file name should be `docs/Ui.png` exactly== (even if the file format is not `png`, name it `png`)
+  * ==The file name should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
   * Ideally, the product name is visible in the screenshot e.g., in the title bar of the Window
 
 <div class="indented-level2">
@@ -46,14 +46,15 @@
 </div>
 <p/>
 
-* {{ icon_tip }} If you added the `Ui.png` correctly and set up product website correctly, ==you should be able to see your screenshot in the [iP Showcase](ip-showcase.html) page==.
+* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%%.
 
 #### {{ thumb(3) }} Release the product
 
-* Create a new jar file.
-* Ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
-  ==Get a team member to test the Jar file on their computer==, preferrably someone using a different Operating System %%(reason: it's possible for the jar file to work on your computer but not on others')%%.
-* Create a new release on GitHub (e.g., `v0.2`) and upload the jar file.
+* **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the project is very simple.
+* **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
+  1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
+  1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.
+* **Create a new release on GitHub** (e.g., `v0.2`) and upload the jar file.
 
 <div class="indented">
 

@@ -9,12 +9,10 @@
 
 #### {{ thumb(2) }} **Discuss tP progress**
 
-* Show the following to the tutor:
-  - [ ] the product website of your team repo
-  - [ ] your UG draft %%(i.e., a copy of the PDF file you uploaded to LumiNUS)%% -- one team member to give a quick overview of the product and the proposed features
-  - [ ] AB3 project setup on your computer
-  - [ ] any AB3 tutorials done
-
+* Show your UG draft %%(i.e., a copy of the PDF file you uploaded to LumiNUS)%%. 
+* Go through some product usage scenarios to illustrate how the product will be used. Some examples:
+  * Scenario: the user using it for the first time (e.g., how would the initial data will be loaded?)
+  * Scenario: a typical usage where on a subsequent time
 * Discuss any difficulties you encountered while doing AB3 tutorials.
 * Discuss any difficulties understanding AB3 developer documentation, UML diagrams in particular.
 
