@@ -64,9 +64,12 @@ Here is a list of main deliverables of the project; their details are given in t
 {{ icon_tip }} **Some common sense tips for a good product screenshot**
 
 `Ui.png` represents your product in its full glory.
-* Before taking the screenshot, populate the product with data that makes the product look good. For example, if the product is supposed to show photos, use real photos instead of dummy placeholders.
+* Before taking the screenshot, populate the product with data that makes the product look good. For example,
+  * if the product is supposed to show photos, use real photos instead of dummy placeholders.
+  * if the product doesn't have nice line wrapping for long inputs/outputs, don't use such inputs/outputs for the screenshot.
 * It should show a state in which the product is well-populated %%i.e., don't leave data panels largely blank%%
 * Choose a state that showcase the main features of the product %%i.e., the login screen is not usually a good choice%%
+* Take a clean screenshot with a decent resolution. Some screenshot tools can capture a specified window only. If your tool cannot do that, make sure you crop away the extraneous parts captured by the screenshot.
 * Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is in use for real.
 
 <panel type="seamless" header="Examples" expanded >
@@ -84,6 +87,13 @@ Reason: Distracting annotations.
 Reason: Not enough data.
 
    <img src="images/Ui-notGood2.png" width="600" />
+
+  </tab>
+  <tab header=":-1: Not Good">
+
+Reason: screenshot not cropped cleanly (contains extra background details)
+
+   <img src="images/Ui-notGood3.png" width="600" />
 
   </tab>
   <tab header=":+1: Good">

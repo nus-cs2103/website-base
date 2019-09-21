@@ -21,6 +21,23 @@
 * Submission is to be done via GitHub releases. If there were any changes to the code since the last release, do a new release.
 * {{ icon_important_big_red }} The jar file should be ==cross-platform and should work in a computer that has Java 11==.
 
+<div class="indented">
+<panel minimized >
+<div slot="header" class="card-title">
+
+{{ icon_tip }} Getting more out of the iP
+</div>
+
+Although the bar you need to reach to get full marks for the iP is quite low, if you wish to use the iP in your resume, you can do more to make your iP look more impressive to a potential employer. Some ideas:
+* Make the UI look nicer, unique, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
+* Add a demo video or an animated gif to your user guide to show how the app works.
+* Add more features.
+
+On a somewhat related note, you can also create similar product websites for your projects from other modules.
+</panel>
+
+</div>
+
 </div>
 </div>
 {% endmacro %}
