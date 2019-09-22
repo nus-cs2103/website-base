@@ -25,15 +25,16 @@
 <panel minimized >
 <div slot="header" class="card-title">
 
-{{ icon_tip }} Getting more out of the iP
+{{ icon_tip }} **Getting more out of the iP**
 </div>
 
-Although the bar you need to reach to get full marks for the iP is quite low, if you wish to use the iP in your resume, you can do more to make your iP look more impressive to a potential employer. Some ideas:
-* Make the UI look nicer, unique, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
-* Add a demo video or an animated gif to your user guide to show how the app works.
-* Add more features.
+**If you wish to cite the iP in your resume**, you can do more to make it look more impressive to a potential employer. These improvements are not considered for grading and can be done after the semester is over. Some ideas:
+* **Improve the GUI**: Make the UI look nicer, unique, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
+* **Add a demo** video or an animated gif to your user guide to show how the app works.
+* **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge badge-light badge-pill text-monospace">**</>**</span>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
+* **Add more features.**
 
-On a somewhat related note, you can also create similar product websites for your projects from other modules.
+On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other modules, pet projects).
 </panel>
 
 </div>

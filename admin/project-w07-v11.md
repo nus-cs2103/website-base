@@ -5,7 +5,7 @@
 <div id="main">
 
 {% call show_project_summary_lead()%}
-1. {{ icon_team }} Update project site: `AboutUs`, `ContactUs`, `README`
+1. {{ icon_team }} Update project website: `AboutUs`, `ContactUs`, `README`
 1. {{ icon_individual }} Update UG
 1. {{ icon_team }} Update DG: user stories, glossary, NFRs, use cases
 1. {{ icon_team }} Wrap up **v1.1**
@@ -15,7 +15,7 @@
 
 <div id="body">
 
-#### {{ thumb(1) }} {{ icon_team }} Update project site: `AboutUs`, `ContactUs`, `README`
+#### {{ thumb(1) }} {{ icon_team }} Update project website: `AboutUs`, `ContactUs`, `README`
 
 <box type="info">
 
@@ -81,7 +81,7 @@ Move the draft UG into the User Guide page in your repository. If a feature is n
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
   * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
   * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>:
-    Note: Many of the project constraints mentioned above are NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
+    Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
   * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth recording.
   *  [Optional] <trigger trigger="click" for="modal:v10-prodsurveys">**Product survey**</trigger>: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view).
 
@@ -104,7 +104,7 @@ Move the draft UG into the User Guide page in your repository. If a feature is n
 #### {{ thumb(4) }} {{ icon_team }} Wrap up v1.1
 
 
-* After all changes that _can_ be merged before the milestone deadline has been merged, use `git tag` feature to tag the current version with the milestone `v1.1` and push the tag to the team repo.
+* After all changes that _can_ be merged before the milestone deadline have been merged, use `git tag` feature to tag the current version with the milestone `v1.1` and push the tag to the team repo.
 
 
 #### {{ thumb(5) }} {{ icon_individual }} Draft a rough project plan
@@ -117,7 +117,7 @@ Move the draft UG into the User Guide page in your repository. If a feature is n
     * v1.3: can specify photo location if it is in local hard disk,
             show photo from local hard disk
   ```
-* Record the project plan in the issue tracker by creating issues and assigning them to the relevant team member and the relevant milestone.
+* Record the project plan in the issue tracker (create new issues if necessary) by assigning issues to the relevant team member and the relevant milestone.
 
 #### {{ thumb(6) }} {{ icon_individual }} start implementing a minimal version of your feature
 

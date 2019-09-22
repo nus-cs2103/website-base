@@ -76,9 +76,7 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 
 <div id="workflow-before-v11">
 
-{{ icon_important_big_red }} **Before you do any coding for the project**,
-  * Ensure you have <trigger trigger="click" for="modal:appE-gitUsername">set the Git username correctly (as explained in Appendix E)</trigger> in _all_ computers you use for coding.
-  * Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy %%(in Admin: Appendix B)%%</trigger>, in particular, ==how to give credit when you reuse code from the Internet or classmates==:
+{{ icon_important_big_red }} **Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy %%(in Admin: Appendix B)%%</trigger>**, in particular, ==how to give credit when you reuse code from the Internet or classmates==:
 
 <modal large title="Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username" id="modal:appE-gitUsername">
   <include src="tools.md#git-username"/>
@@ -89,11 +87,19 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 
 
 **Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger> in your project up to v1.1.** In particular,
-  * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
-  * **Do not merge PRs failing <tooltip content="Continuous Integration e.g., Travis">CI</tooltip>.** After [setting up Travis](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/UsingTravis.html#setting-up-travis-ci), the CI status of a PR is reported at the bottom of the PR page. The screenshot below shows the status of a PR that is passing all CI checks. <br>
-    <img src="{{ baseUrl }}/admin/images/gitHubPrStatus.png" width="700"/><br>
-    **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.
-  * After [setting up Netlify](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/UsingNetlify.html), you can use _Netlify PR Preview_ to preview changes to documentation files, if the PR contains updates to documentation. To see the preview, click on the `Details` link in front of the Netlify status reported (refer screenshot above).
+
+* **Create issues to represent project tasks** so that they can be tracked using the issue tracker features.
+* **Create a PR when you implement a project task** that updates the code.<br>
+  {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.<br>
+  {{ icon_pro_tip }} `LGTM` is common abbreviation you can use in the review comments to mean `Looks Good To Merge`.
+* **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
+  * After [setting up Netlify](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/UsingNetlify.html), you can use _Netlify PR Preview_ to preview changes to documentation files, if the PR contains updates to documentation. To see the preview, click on the `Details` link in front of the Netlify status reported (refer screenshot below).<br>
+  <img src="{{ baseUrl }}/admin/images/gitHubPrStatus.png" width="700"/>
+* **Do not merge PRs failing <tooltip content="Continuous Integration e.g., Travis">CI</tooltip>.** After [setting up Travis](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/UsingTravis.html#setting-up-travis-ci), the CI status of a PR is reported at the bottom of the PR page. The screenshot below shows the status of a PR that is passing all CI checks.
+  * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.<br>
+  {{ icon_pro_tip }} You can use GitHub's [_protected branches_](https://help.github.com/en/articles/about-protected-branches) feature to prevent CI-failing PRs from being merged.
+* After merging a PR, close the corresponding issue.<br>
+  {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
 
 <modal large title="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
   <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -104,17 +110,17 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 
 **After completing v1.1, you can reduce process rigor** to suit your team's pace. Here are some examples:
 
-  * **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
-    It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
-    There is no direct penalty for removing tests. Also note <trigger trigger="click" for="modal:appEworkflow-testingExpectations">our expectation on test code</trigger>.
+* **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
+  It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
+  There is no direct penalty for removing tests. Also note <trigger trigger="click" for="modal:appEworkflow-testingExpectations">our expectation on test code</trigger>.
 
-  * **Reduce automated checks**: You can also reduce the rigor of checkstyle checks to expedite PR processing.
+* **Reduce automated checks**: You can also reduce the rigor of checkstyle checks to expedite PR processing.
 
-  * **Switch to a lighter workflow**: While _forking workflow_ is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. However, we still recommend that you use PR reviews, at least for PRs affecting others' features.
+* **Switch to a lighter workflow**: While _forking workflow_ is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. However, we still recommend that you use PR reviews, at least for PRs affecting others' features.
 
 **You can also increase the rigor/safety of your workflow** in the following ways:
 
-  * Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs.
+* Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs.
 
 <modal title="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
   <include src="project-scope.md#testing-expectations"/>

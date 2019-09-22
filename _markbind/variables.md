@@ -68,6 +68,7 @@
 <span id="icon_print"><md>:glyphicon-print:</md></span>
 <span id="icon_prereq"><md>:glyphicon-education:</md></span>
 <span id="icon_preview"><md>:glyphicon-eye-open:</md></span>
+<span id="icon_pro_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb: PRO TIP</span></span>
 <span id="icon_project"><md>:fas-drafting-compass:</md></span>
 <span id="icon_Q"><md>:glyphicon-question-sign:</md></span>
 <span id="icon_Q_A">{{ icon_Q | safe }}:glyphicon-ok-sign:</span>
