@@ -64,6 +64,9 @@ Update the following pages in your project repo:
 
   * Acknowledge the original source of the code i.e. AddressBook-Level3 project created by SE-EDU initiative at `https://se-education.org`
 
+  * Update the website heading to match your product. Currently it is set to `AddressBook Level 3 - ...`.<br>
+    <img src="images/addressBookWebsiteHeading.png" />
+
 <box>
 
 {{ icon_tip }} If you updated the above pages correctly, details of your project in the [**Project List Page**](projectList.html) should look neat and complete %%i.e., no broken links%%.
