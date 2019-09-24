@@ -73,7 +73,7 @@ pageNav: 2
 ["WANG... INMAN", "CS2103-T11-1", "tirameshu"],
 ["CHEN... EN SU", "CS2103-T11-2", "chensu2436"],
 ["CHEON ...YUAN", "CS2103-T11-2", "CheongLiYuan"],
-["LUK C ...HENG", "CS2103-T11-2", "Aarroff"],
+["LUK C ...HENG", "CS2103-T11-2", "AaronLuk"],
 ["NG YO ...KUAN", "CS2103-T11-2", "SendorasLeft"],
 ["TAN W ...ADAM", "CS2103-T11-2", "MistyRainforest"],
 ["CHRIS ...TENG", "CS2103-T11-3", "belbel98"],
