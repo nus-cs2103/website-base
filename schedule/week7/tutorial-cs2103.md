@@ -6,7 +6,7 @@
 #### {{ thumb(1) }} Exercise on Requirements: PR Tracker
 
 * **Divide the team into sub-team** A and sub-team B, 2-3 members each.
-* {{ timing_badge("7-8 minutes", "info") }} **Write the answers to the following questions** on the white-board. 
+* {{ timing_badge("7-8 minutes", "info") }} **Write the answers to the following questions** on the white-board.
 
 <div class="indented-level2">
 <box>
@@ -27,7 +27,7 @@
 
 
 System: PRT<br>
-Use Case: U3. Add comments to mentee PRs<br> 
+Use Case: U3. Add comments to mentee PRs<br>
 Actor: ...<br>
 Precondition: ...<br>
 
@@ -40,7 +40,7 @@ Precondition: ...<br>
 
 * {{ timing_badge("7-8 minutes", "info") }} **Discuss the answers** with the whole team and the tutor
 
-#### {{ thumb(2) }} Review Requirements of a peer team
+#### {{ thumb(2) }} Review Requirements of a Peer Team
 
 * **Find the team you have been allocated to discuss** in the panel below and click on the link to locate their team PR.
 
@@ -71,8 +71,21 @@ Team          | Discuss PR of | Backup team to discuss
 * **Go to the PR**.
 * **Go the to the preview of the Developer Guide** via the Netlify preview link.
   <img src="../../admin/images/prNetlifyPreview.png" />
-* {{ timing_badge("7-8 minutes", "info") }} **Read the following sections and make notes** of areas to improve and doubts. To be done collectively with sub-team members.<br>
+* {{ timing_badge("7-8 minutes", "info") }} **Read the following sections and add review comments** of areas to improve and doubts.<br>
   %%**If the DG does not have enough content for you to review**, you can review the _backup_ team (see the third column in the allocation panel).%%
+
+<div class="indented-level2">
+
+<box>
+
+* To be done collectively with sub-team members.
+* Add the review comment in the correct place of the code.
+* Choose the `Start a review` option rather than `Add single comment`.
+* Each person can do their own review, but coordinate with sub-team members to avoid duplicating the same point.
+* Phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).
+* Do not finalize the review at this stage. Just keep adding comments.
+</box>
+
   * **Sub-team A:** use cases
     * Is the step numbering correct?
     * Are all possible extensions mentioned?
@@ -89,6 +102,8 @@ Team          | Discuss PR of | Backup team to discuss
       * Is each NFR _well-defined_ (i.e., possible to decide when it has been met)?
       * Is each NFR reasonably achievable?
       * Are more relevant NFRs have been left out?
-* {{ timing_badge("7-8 minutes", "info") }} **Discuss with the tutor** and other team members.
-* {{ timing_badge("5 minutes", "info") }} **Add a comment** (not a formal review) in the PR to give your comments to the team. Different members can comment about different things.<br>
+</div>
+
+* {{ timing_badge("7-8 minutes", "info") }} **Discuss your comments/observations/doubts with the tutor** and other team members to confirm the comments you entered are correct.
+* {{ timing_badge("5 minutes", "info") }} **Update your review comments if necessary**, based on the discussion you just had. After that, you can submit the review.<br>
   {{ icon_tip }} After adding comments, you may want to unsubscribe from the PR to avoid getting GitHub alerts from that PR in the future.
