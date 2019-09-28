@@ -374,12 +374,12 @@ This activity is worth 2 participation points!
 1. **Find out which iPs are allocated for your evaluation** from the panel above.
 1. **Download the JAR file** of the first iP by following the link provided.
 1. **Locate the User Guide** of the app by following the link provided.
-1. **Open the LumiNUS survey** that you will be using to submit your evaluation and take note of the things you need to evaluate.
+1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
    {{ icon_tip }} If double-clicking the jar file doesn't work, use the `java -jar {file_name}` command to open it.
 1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
 1. **Submit your evaluation** using the survey.
-1. **Repeat the above steps for the 2nd iP** allocated to you.
+1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
 
 </div>
 </div>
