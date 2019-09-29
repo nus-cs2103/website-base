@@ -330,7 +330,7 @@ head: scheduleHead.md
       {location: ["revisionControl", "centralizedFlow"]},
 {week: "8"},
   {name: "Design"},
-    {heading: "%%[Revisiting] Drawing Class/Ojbect Diagrams%%"},
+    {heading: "%%[Revisiting] Drawing Class/Object Diagrams%%"},
       {location: ["modeling", "modelingStructures", "classDiagramsBasic"]},
       {location: ["modeling", "modelingStructures", "objectDiagrams"]},
       {location: ["uml", "miscellaneous", "objectVsClassDiagrams"]},
