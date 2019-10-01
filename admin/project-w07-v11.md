@@ -129,7 +129,7 @@ Update the following pages in your project repo:
 
 #### {{ thumb(6) }} {{ icon_individual }} start implementing a minimal version of your feature
 
-If you have time, start implementing the version of your feature to be delivered in v1.2. We recommend that you break your v1.2 feature down to even smaller increments.
+* While we do not _require_ you to do functionality changes in v1.1, if you have time, start implementing the version of your feature to be delivered in v1.2. We recommend that you break your v1.2 feature down to even smaller increments.
 
 
 </div>
