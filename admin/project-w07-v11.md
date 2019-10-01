@@ -74,7 +74,12 @@ Update the following pages in your project repo:
 
 #### {{ thumb(2) }} {{ icon_individual }} Update UG
 
-Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' ([example](https://se-edu.github.io/addressbook-level3/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).
+* Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' ([example](https://se-edu.github.io/addressbook-level3/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).<br>
+  As <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ tp_dashboard }}).
+
+<modal large title="About Dividing Documentation Work" id="modal:v11-divideDocs">
+  <include src="project-w06-mid-v11.md#divideDocs"/>
+</modal>
 
 #### {{ thumb(3) }} {{ icon_team }} Update DG: user stories, glossary, NFRs, use cases
 
