@@ -24,7 +24,7 @@
     <md>**&nbsp;Individual Project (iP):**</md>
     <li><a href="{{baseUrl}}/admin/ip-overview.html" class="dropdown-item"><md>{{ icon_project }} Individual Project Info</md></a></li>
     <li><a href="{{module_org}}/duke" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke Upstream Repo</md></a></li>
-    <li><a href="https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><md>:fas-chart-area: iP Code Dashboard</md></a></li>
+    <li><a href="{{ ip_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: iP Code Dashboard</md></a></li>
     <li><a href="{{baseUrl}}/admin/ip-showcase.html" class="dropdown-item"><md>:fas-th-list: iP Showcase</md></a></li>
     <hr>
     <md>**&nbsp;Team Project (tP):**</md>
@@ -32,7 +32,7 @@
     <li><a href="{{team_IDs_page}}" target="_blank" class="dropdown-item"><md>:glyphicon-list-alt: Team IDs</md></a></li>
     <li><a href="{{module_org}}/addressbook-level3" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Addressbook-level3</md></a></li>
     <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Addressbook-level 1,2,4</md></a></li>
-    <li><a href="https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>
+    <li><a href="{{ tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>
     <li><a href="{{baseUrl}}/admin/projectList.html" class="dropdown-item"><md>:fas-th-list: tP Showcase</md></a></li>
   </dropdown>
   <li slot="right" class="nav-link">

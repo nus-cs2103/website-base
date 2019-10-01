@@ -38,6 +38,9 @@
 
 <span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
 
+<span id="ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</span>
+<span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard</span>
+
 <span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
 
 <span id="dashed_line"><hr style="border-top: dashed 1px; border-color:grey" /></span>
