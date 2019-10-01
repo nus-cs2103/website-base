@@ -64,7 +64,7 @@ Update the following pages in your project repo:
 
   * Acknowledge the original source of the code i.e. AddressBook-Level3 project created by SE-EDU initiative at `https://se-education.org`
 
-  * Update the website heading to match your product. Currently it is set to `AddressBook Level 3 - ...`.<br>
+* **Website heading**: Update the website heading to match your product. Currently it is set to `AddressBook Level 3 - ...`.<br>
     <img src="images/addressBookWebsiteHeading.png" />
 
 <box>
