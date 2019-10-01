@@ -6,8 +6,8 @@
 
 {% call show_project_summary_lead()%}
 1. {{ icon_team }} Update project website: `AboutUs`, `ContactUs`, `README`
-1. {{ icon_individual }} Update UG
-1. {{ icon_team }} Update DG: user stories, glossary, NFRs, use cases
+1. {{ icon_individual }} Update the UG
+1. {{ icon_team }} Update the DG: user stories, glossary, NFRs, use cases
 1. {{ icon_team }} Wrap up **v1.1**
 1. {{ icon_individual }} Draft a rough project plan
 1. {{ icon_individual }} Start implementing a minimal version of your feature
@@ -72,16 +72,17 @@ Update the following pages in your project repo:
 {{ icon_tip }} If you updated the above pages correctly, details of your project in the [**Project List Page**](projectList.html) should look neat and complete %%i.e., no broken links%%.
 </box>
 
-#### {{ thumb(2) }} {{ icon_individual }} Update UG
+#### {{ thumb(2) }} {{ icon_individual }} Update the UG
 
 * Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' ([example](https://se-edu.github.io/addressbook-level3/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).<br>
-  As <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ tp_dashboard }}).
+  As <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ tp_dashboard }}).<br>
+  {{ icon_tip }} While it is more convenient for one person to update the entire UG, splitting the work will give you a good opportunity to learn to deal with merge conflicts.
 
 <modal large title="About Dividing Documentation Work" id="modal:v11-divideDocs">
   <include src="project-w06-mid-v11.md#divideDocs"/>
 </modal>
 
-#### {{ thumb(3) }} {{ icon_team }} Update DG: user stories, glossary, NFRs, use cases
+#### {{ thumb(3) }} {{ icon_team }} Update the DG: user stories, glossary, NFRs, use cases
 
 * Update the following in the DG, based on your project notes from the previous weeks.<br>
   {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-edu.github.io/addressbook-level3/DeveloperGuide.html#product-scope).
