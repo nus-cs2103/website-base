@@ -52,7 +52,7 @@ Precondition: ...<br>
 {%- endmacro %}
 
 {% macro get_pr_link(team_id) -%}
-[{{ team_id }}](https://github.com/nus-cs2103-AY1920S1/addressbook-level3/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }})
+[{{ team_id }}](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls?q=is%3Aopen+is%3Apr+label%3Atutorial.{{ team_id.slice(0, -2) }}+label%3Ateam.{{ team_id.slice(-1) }})
 {%- endmacro  %}
 
 <div class="indented-level2">
