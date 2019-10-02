@@ -62,6 +62,14 @@ For either direction, you need to define a target user profile and a value propo
 ##### [Individual] Expectations on Features
 
 * You are expected to add at least one feature to the product.
+
+<div class="indented-level2" id="featureDefinition">
+<box>
+
+{{ icon_info }} **What is considered a _feature_?** As long as you can convince the evaluators (some of whom are your peers) that the work you did belongs under a "feature X", it can be considered as a feature. e.g., `adding support for reminders`, `improving the GUI design` `making the command user friendly` etc.
+</box>
+</div>
+
 * ==One big feature can earn you more marks than multiple small features.== %%Reason: When grading your work for depth and completeness, only your biggest feature you will be considered.%%
 * At least one feature (preferably, the biggest feature) should be end-user visible and end-user testable. %%Reason: If your feature cannot be identified and tested by the testers, we will not be able to give marks for the quality assurance of that feature.%%
 * The features should fit with the rest of the software (and the target user profile) and should have the consent of the team members.. %%You will lose marks if you go 'rogue' and add features that don't fit with the product.%%

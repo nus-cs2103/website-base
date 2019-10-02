@@ -112,21 +112,25 @@ Update the following pages in your project repo:
 
 #### {{ thumb(4) }} {{ icon_team }} Wrap up v1.1
 
-
 * After all changes that _can_ be merged before the milestone deadline have been merged, use `git tag` feature to tag the current version with the milestone `v1.1` and push the tag to the team repo.
 
 
-#### {{ thumb(5) }} {{ icon_individual }} Draft a rough project plan
+#### {{ thumb(5) }} {{ icon_team }} {{ icon_individual }} Draft a rough project plan
 
-* After the v2.0 is conceptualized, decide which features each member will do by v1.4. %%We realize that it will be hard for you to estimate the effort required for each feature as you are not very familiar with the code base yet. Nevertheless, come up with a project plan as per your best estimate; this plan can be revised at later stages. It is better to start with _some_ plan rather than no plan at all. If in doubt, choose to do _less_ than _more_; we don't expect you to deliver a lot of big features anyway.%%
-* Divide each of those features into two increments, to be released at v1.2, v1.3 (v1.4 omitted deliberately as a buffer). ==Each increment should deliver a end-user visible enhancement.==
+* {{ icon_team }} **Decide which <trigger trigger="click" for="modal:v11-featureDefinition">features</trigger> each member will do by v1.4.** %%We realize that it will be hard for you to estimate the effort required for each feature as you are not very familiar with the code base yet. Nevertheless, come up with a project plan as per your best estimate; this plan can be revised at later stages. It is better to start with _some_ plan rather than no plan at all. If in doubt, choose to do _less_ than _more_; we don't expect you to deliver a lot of big features anyway.%%
+* {{ icon_individual }} **Divide each of those features into two increments**, to be released at v1.2, v1.3 (v1.4 omitted deliberately as a buffer). ==Each increment should deliver a end-user visible enhancement.==
   ```
   * Jake Woo: Profile photo feature
     * v1.2: show a place holder for photo, showing a generic default image
     * v1.3: can specify photo location if it is in local hard disk,
             show photo from local hard disk
   ```
-* Record the project plan in the issue tracker (create new issues if necessary) by assigning issues to the relevant team member and the relevant milestone.
+
+<modal large title="What is a Feature?" id="modal:v11-featureDefinition">
+  <include src="project-scope.md#featureDefinition"/>
+</modal>
+
+* {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a place holder for photo, showing a generic default image` should be assigned to Jake and to milestone `v1.2`%%
 
 #### {{ thumb(6) }} {{ icon_individual }} start implementing a minimal version of your feature
 
