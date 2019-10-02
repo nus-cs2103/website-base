@@ -16,9 +16,9 @@
 <span class="text-monospace">Pull Request Tracker (PRT) is a desktop application meant to help CS2103 tutors deal with GitHub PRs more efficiently (compared to the GitHub Web interface). For example, it will help tutors find and review PRs from their _mentees_ easily. It will help the _managers_ of the module (e.g., professor, head TA) to easily keep track of how tutors are dealing with mentee PRs. PRT will communicate with GitHub using the GitHub API.</span>
 
 **Sub-team A:**
-* Write 2 must-have and 2 nice-to-have user stories, covering user types `tutor` and `manager`.
-* Write 2 <tooltip content="Non-Functional Requirements">NFRs</tooltip>, 1 related to performance/scalability, and one related to usability.
-* Give 2 terms worth recording in the glossary.
+* Write 1 must-have and 1 nice-to-have user stories, covering user types `tutor` and `manager`.
+* Write at least 1 <tooltip content="Non-Functional Requirements">NFRs</tooltip>, related to performance/scalability and/or usability.
+* Give at least 1 terms worth recording in the glossary.
 
 **Sub-team B:**
 * Complete the following use case. Give at least one extension. Note that the tutor should give comments in the order of PR size (i.e., give comments to smaller PRs first). Assume the following use cases exists already: `U1. Sort PRs by a criterion`, `U2. Add comments to a PR`
