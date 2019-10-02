@@ -66,7 +66,7 @@ For either direction, you need to define a target user profile and a value propo
 <div class="indented-level2" id="featureDefinition">
 <box>
 
-{{ icon_info }} **What is considered a _feature_?** As long as you can convince the evaluators (some of whom are your peers) that the work you did belongs under a "feature X", it can be considered as a feature. e.g., `adding support for reminders`, `improving the GUI design` `making the command user friendly` etc.
+{{ icon_info }} **What is considered a _feature_?** As long as you can convince the evaluators (some of whom are your peers) that the work you did belongs under a <tooltip content="i.e., it can be separately identified, tested, and evaluated">distinct</tooltip> "feature X", it can be considered as a feature. e.g., `adding support for reminders`, `improving the GUI design`, `making the command user-friendly`.
 </box>
 </div>
 

@@ -326,7 +326,6 @@ pageNav: 2
 ["LAWNC ... A WEI", "CS2103T-W12-1", "lawncegoh"],
 ["LEE W ... I GEN", "CS2103T-W12-1", "weigenie"],
 ["TAN Z ...MING", "CS2103T-W12-1", "TanZhanMing"],
-["WANG... G QIN", "CS2103T-W12-1", "wangqinNick"],
 ["ANG C ... ELVIN", "CS2103T-W12-2", "krusagiz"],
 ["LEE B ... QIANG", "CS2103T-W12-2", "lightz96"],
 ["LYE J ... N WEN", "CS2103T-W12-2", "lye-jw"],
