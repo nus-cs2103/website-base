@@ -11,6 +11,13 @@
 {% endcall %}
 <div id="body">
 
+<box>
+
+**Reminder:**
+
+<include src="project-w06-mid-v11.md#milestoneCumulative" />
+</box>
+
 
 #### {{ thumb(0, "secondary") }} %%{{ icon_individual }} Ensure you know tP expectations%%
 

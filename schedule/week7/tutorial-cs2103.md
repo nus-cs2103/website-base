@@ -72,7 +72,7 @@ Team          | Discuss PR of | Backup team to discuss
 * **Go the to the preview of the Developer Guide** via the Netlify preview link.
   <img src="../../admin/images/prNetlifyPreview.png" />
 * {{ timing_badge("7-8 minutes", "info") }} **Read the following sections and add review comments** of areas to improve and doubts.<br>
-  %%**If the DG does not have enough content for you to review**, you can review the _backup_ team (see the third column in the allocation panel).%%
+  %%**If the DG does not have enough content for you to review**, you can review the _backup_ team (see the third column in the allocation panel). If even the backup team is not suitable, choose any random teams having tutorials in the same day and not in the same tutorial as you.%%
 
 <div class="indented-level2">
 
