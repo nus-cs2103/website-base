@@ -5,7 +5,8 @@
 #### {{ thumb(1) }} Exercise: draw a class diagram and an object diagram
 
 * **Divide into two sub-teams** as you did in the previous week.
-* {{ timing_badge("10 minutes", "info") }} **Each sub-team do the part (a)** of the following exercise, by drawing the answer on the whiteboard.
+* {{ timing_badge("10 minutes", "info") }} **Each sub-team do the part (a)** of the following exercise, by drawing the answer on the whiteboard. Use the following layout for the answer for part (a):<br>
+  <img src="images/classLayout.png" width="600"/>
 
 <div class="indented-level2">
 
