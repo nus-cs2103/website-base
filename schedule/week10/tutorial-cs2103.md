@@ -3,19 +3,13 @@
 
 **Questions to discuss during tutorial:**
 
-Whole team: do this question together, using the whiteboard:
-
 <div class="indented">
-  <include src="../../book/modeling/modelingStructures/objectOrientedDomainModels/q-courseDomainModel.md" />
+  <include src="../../book/modeling/modelingBehaviors/activityDiagrams/q-modelWorkflowOfBurgerShop.md" />
 </div>
 <br>
 
-Divide these questions among team members and get ready to answer them.
 
-**Q1**
-1. How does an _OO Domain Model_ differ from a class diagram?
-1. What's the relationship between an OODM and a class diagram for a software? %%e.g., exactly the same?, one is a sub-set of the other?%%
-1. Which diagram can we use to show ~~class~~object structures in a problem domain?
+Divide these questions among team members and get ready to answer them.
 
 **Q2**
 1. Explain and justify: _testing should be efficient and effective_
@@ -46,3 +40,15 @@ Divide these questions among team members and get ready to answer them.
 1. Which of the three patterns are used in AB3? Hint: See [[AB3 Learning Outcomes: LO-DesignPatterns]({{module_org}}/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#apply-design-patterns-code-lo-designpatterns-code)]
 
 
+**Q1**
+1. What’s the use of assertions?
+1. Demonstrate an assertion failure using Intellij.
+1. What’s the purpose of logging levels? What are the available logging levels in AB3?
+**Q3**
+1. What is _defensive programming_?<br>
+   Give an example of defensive programming from your project.
+
+**Q4**
+1. What’s the difference between _validation_ and _verification_?<br>
+   Acceptance tests are validation tests or verification tests?
+1. Give an example of _static analysis_ being used in Intellij
