@@ -3,12 +3,6 @@
 
 **Questions to discuss during tutorial:**
 
-<div class="indented">
-  <include src="../../book/modeling/modelingBehaviors/activityDiagrams/q-modelWorkflowOfBurgerShop.md" />
-</div>
-<br>
-
-
 Divide these questions among team members and get ready to answer them.
 
 **Q2**

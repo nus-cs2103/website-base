@@ -25,9 +25,12 @@
   <include src="appendixE-gitHub.md#project-schedule-tracking"/>
 </modal>
 
+<div id="demo">
+
 #### {{ icon_individual }} Demo new features
 
 * **Do an informal demo** of the new features during the tutorial. ==To save time, we recommend that one member demos all new features, using the commit tagged as `v1.2` in the `master` branch== %%i.e. only features included in the current release should be demoed%%.
+</div>
 
 </div>
 </div>
