@@ -17,6 +17,18 @@ We will be using a tool called [RepoSense](http://reposense.org) to make it **ea
   * the actual authorship does not match the authorship determined by git blame/log e.g., another student touched your code after you wrote it, and Git log attributed the code to that student instead
 
 * In those cases, you can provide more information to RepoSense to rectify the situation, in the following way:
+
+<div class="indented-level2">
+<box>
+
+**For simple cases** such as the following, you can create a PR to update our config files [here]({{ module_org }}/tp-dashboard/tree/master/configs). The meaning of the config files are given in the [RepoSense user guide](https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#customize-using-csv-config-files).
+  * missing some commits due to using multiple git `user.name`s
+  * some commits/files need to be omitted from the analysis
+
+For more complicated needs, follow the instructions below this box. If you are not sure which option to use, please post in the [forum]({{ forum_link }}) to ask.
+</box>
+</div>
+
   * Install RepoSense (see the [Getting Started](https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#getting-started) section of the RepoSense User Guide)
   * Use the two methods described in the RepoSense User Guide section [Configuring a Repo to Provide Additional Data to RepoSense](https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#configuring-a-repo-to-provide-additional-data-to-reposense) to provide additional data to the authorship analysis to make it more accurate.
    * If you add a `config.json` file to your repo (as specified by one of the two methods),
