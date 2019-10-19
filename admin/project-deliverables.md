@@ -159,9 +159,9 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 * **Format**:
   * File name: `docs/team/githbub_username_in_lower_case.adoc` e.g., `docs/team/johndoe.adoc`
-  * {{ icon_example }} Follow the [example in the AddressBook-Level3](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/team/johndoe.html)
+  * {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ ab3_website }}/team/johndoe.html)
 
-  * {{ icon_tip }} You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/team/johndoe.html).
+  * {{ icon_tip }} You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample]({{ ab3_website }}/team/johndoe.html).
 
   * =={{ icon_important_big_red }} It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%e.g. someone else wrote the description of your feature in the User Guide%%, clearly state that the section was written by someone else %%(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%Reason: Your writing skills will be evaluated based on the PPP%%
 

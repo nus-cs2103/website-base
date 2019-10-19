@@ -70,7 +70,7 @@
 #### {{ thumb(4) }} {{ icon_individual }} Draft the UG
 
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at v2.0.
-  * We recommend that you follow the existing [AB3 User Guide](https://nus-{{ module }}-{{ semester | lower }}.github.io/addressbook-level3/UserGuide.html) in terms of structure and format.
+  * We recommend that you follow the existing [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
   * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in asciidoc format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
   * Do try to come up with concrete command syntax for feature that you would implement (at least for those that you will implement by v1.4).
   * Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%.

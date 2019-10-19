@@ -35,7 +35,7 @@
 
 #### {{ thumb(3) }} {{ icon_team }} Release as a jar file
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide](https://nus-{{ module | lower }}-{{ semester }}.github.io/addressbook-level3/DeveloperGuide.html#making-a-release). Do some manual tests to ensure the jar file works.
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DeveloperGuide.html#making-a-release). Do some manual tests to ensure the jar file works.
 
 
 #### {{ thumb(4) }} {{ icon_team }} Wrap up milestone

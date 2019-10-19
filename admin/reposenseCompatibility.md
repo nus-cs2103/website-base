@@ -35,11 +35,11 @@ For more complicated needs, follow the instructions below this box. If you are n
      * **Please use the exact partial name from [here]({{ team_IDs_page }})** as the display name.<br>
        e.g., `"displayName": "ABDUL ... JAVID",`
      * If your commits have multiple author names, specify all of them<br>
-       e.g., `"authorNames": ["theMyth", "theLegend", "theGary"]`
+       e.g., `"authorNames": ["theMyth", "theLegend", "The Gary"]`
      * Update the line `config.json` in the `.gitignore` file of your repo as `/config.json` so that it ignores the `config.json` produced by the app but not the `_reposense/config.json`.
    * If you add `@@author` annotations, please follow the guidelines below:
 
-<div class="indented-level4">
+<div class="indented-level2">
 <panel header="Adding `@@author` tags to indicate authorship">
   <include src="reposenseAuthorAnnotation.md" />
 </panel>

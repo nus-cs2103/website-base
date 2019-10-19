@@ -33,15 +33,16 @@
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
     Expected length: 1+ page per person
   * The description can contain things such as,
-    * How the feature is implemented.
+    * How the feature is implemented (or is going to be implemented).
     * Why it is implemented that way.
     * Alternatives considered.
   * The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).
-  * For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3/DeveloperGuide.html#proposed-undo-redo-feature).
+  * Try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams. AB3 uses PlantUML (see [instructions]({{ ab3_website }}/UsingPlantUml.html)) for diagrams. but you may use any other tool (e.g., PowerPoint). If you do, choose a tool that allows incremental updates to diagrams %%(reason: because diagrams need to be updated multiple times as the product evolves)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.
+  * For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ ab3_website }}/DeveloperGuide.html#proposed-undo-redo-feature).
 
 #### {{ thumb(3) }} {{ icon_team }} Do a release
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide](https://nus-{{ module | lower }}-{{ semester }}.github.io/addressbook-level3/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for v1.3. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for v1.3. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 
 #### {{ thumb(4) }} {{ icon_individual }} Make code RepoSense-compatible
 

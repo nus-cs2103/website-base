@@ -74,7 +74,7 @@ Update the following pages in your project repo:
 
 #### {{ thumb(2) }} {{ icon_individual }} Update the UG
 
-* Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' ([example](https://se-edu.github.io/addressbook-level3/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).<br>
+* Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' ([example]({{ ab3_website }}/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).<br>
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ tp_dashboard }}).<br>
   {{ icon_tip }} While it is more convenient for one person to update the entire UG, splitting the work will give you a good opportunity to learn to deal with merge conflicts.
 
@@ -85,7 +85,7 @@ Update the following pages in your project repo:
 #### {{ thumb(3) }} {{ icon_team }} Update the DG: user stories, glossary, NFRs, use cases
 
 * Update the following in the DG, based on your project notes from the previous weeks.<br>
-  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-edu.github.io/addressbook-level3/DeveloperGuide.html#product-scope).
+  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ ab3_website }}/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
   * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
