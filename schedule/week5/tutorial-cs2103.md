@@ -22,10 +22,8 @@ Quickly update the tutor about your iP progress:
    <panel header="Team allocation for the code quality discussion" minimized >
    
    Team          | Discuss PRs of
-   --------------|--------------
-   {% for team in team_review_allocation  %}
-   {{ team[0] }} | {{ team[1] }}
-   {% endfor %}
+   --------------|--------------{% for team in team_review_allocation  %}
+   {{ team[0] }} | {{ team[1] }}{% endfor %}
    </panel>
    <p/>
 

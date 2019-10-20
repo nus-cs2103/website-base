@@ -25,3 +25,17 @@
   * XP rules are described at [http://www.extremeprogramming.org/rules.html](http://www.extremeprogramming.org/rules.html)
 
 * Relate those features to your project. %%i.e. are they applicable? are you doing something similar?%%
+
+1. What are the EPs for the parameter `day` of this method
+   ```java
+   /**
+    * Returns true if the three values represent a valid day
+    */
+   boolean isValidDay(int year, int month, int day){
+   
+   } 
+   ```
+1. What are the boundary values for the parameter `day` in the question above?
+1. What’s the purpose of logging levels? What are the available logging levels in AB3?
+1. Demonstrate an assertion failure using Intellij.
+1. Give an example of defensive programming from your project.

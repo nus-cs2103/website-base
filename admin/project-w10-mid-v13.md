@@ -36,9 +36,43 @@
     * How the feature is implemented (or is going to be implemented).
     * Why it is implemented that way.
     * Alternatives considered.
-  * The stated objective is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).
-  * Try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams. AB3 uses PlantUML (see [instructions]({{ ab3_website }}/UsingPlantUml.html)) for diagrams. but you may use any other tool (e.g., PowerPoint). If you do, choose a tool that allows incremental updates to diagrams %%(reason: because diagrams need to be updated multiple times as the product evolves)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.
-  * For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ ab3_website }}/DeveloperGuide.html#proposed-undo-redo-feature).
+  * **Diagramming tools**: AB3 uses PlantUML (see [instructions]({{ ab3_website }}/UsingPlantUml.html)) for diagrams. but you may use any other tool (e.g., PowerPoint). If you do, choose a tool that allows incremental updates to diagrams %%(reason: because diagrams need to be updated multiple times as the product evolves)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.
+<div class="indented-level2">
+
+<panel type="success" expanded>
+<span slot="header" class="card-title">
+
+##### {{ icon_tip }} DG Tips
+</span>
+<div id="dg-tips">
+
+* **Aim to showcase your documentation skills**: The stated objective of the DG is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).<br>
+  For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ ab3_website }}/DeveloperGuide.html#proposed-undo-redo-feature).
+* **Use multiple UML diagram types**: Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.
+* **Keeping diagrams simple**. The aim is to make diagrams ==_comprehensible_, not necessarily _comprehensive_==. Ways to simplify diagrams:
+  * Omit less important details e.g., a class diagram can omit minor utility classes. 
+  * Omit repetitive details e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete `*Command` classes).
+  * Limit the scope of a diagram. Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it. In particular, avoid showing lower-level details of multiple components in the same diagram unless strictly necessary e.g., note how the <trigger trigger="click" for="modal:ipWeek10-deleteSd">this sequence diagram</trigger> shows only the detailed interactions within the Logic component i.e., does not show detailed interactions within the model component.
+  * Break diagrams into smaller fragments when possible.
+  * Stay at the highest level of abstraction possible e.g., note how <trigger trigger="click" for="modal:ipWeek10-archiSd">this sequence diagram</trigger> shows only the interactions between architectural components, abstracting away the interactions that happen inside each component.
+* **Integrate diagrams into the description.** Plase the diagram close it where it is being described.
+* **Use code snippets sparingly.** The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only.
+
+<modal large title="AB3 - Class Diagram of the Logic Component" id="modal:ipWeek10-logicClassDiagram">
+  <img src="{{ ab3_website }}/images/LogicClassDiagram.png" width="900"/>
+</modal>
+
+<modal large title="AB3 - Sequence Diagram for the `delete` command" id="modal:ipWeek10-deleteSd">
+  <img src="{{ ab3_website }}/images/DeleteSequenceDiagram.png" width="900"/>
+</modal>
+
+<modal large title="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd">
+  <img src="{{ ab3_website }}/images/ArchitectureSequenceDiagram.png"/>
+</modal>
+</panel>
+
+</div>
+</div>
 
 #### {{ thumb(3) }} {{ icon_team }} Do a release
 
