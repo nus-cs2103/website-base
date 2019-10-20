@@ -37,6 +37,7 @@
     * Why it is implemented that way.
     * Alternatives considered.
   * **Diagramming tools**: AB3 uses PlantUML (see [instructions]({{ ab3_website }}/UsingPlantUml.html)) for diagrams. but you may use any other tool (e.g., PowerPoint). If you do, choose a tool that allows incremental updates to diagrams %%(reason: because diagrams need to be updated multiple times as the product evolves)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.
+
 <div class="indented-level2">
 
 <panel type="success" expanded>
@@ -44,7 +45,7 @@
 
 ##### {{ icon_tip }} DG Tips
 </span>
-<div id="dg-tips">
+<span id="dgTips">
 
 * **Aim to showcase your documentation skills**: The stated objective of the DG is to explain the implementation to a future developer, but a hidden objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).<br>
   For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ ab3_website }}/DeveloperGuide.html#proposed-undo-redo-feature).
@@ -69,9 +70,9 @@
 <modal large title="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd">
   <img src="{{ ab3_website }}/images/ArchitectureSequenceDiagram.png"/>
 </modal>
-</panel>
 
-</div>
+</span>
+</panel>
 </div>
 
 #### {{ thumb(3) }} {{ icon_team }} Do a release

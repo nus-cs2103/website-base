@@ -60,7 +60,7 @@ Team          | Sub-team A <small>%%(backup)%%</small> | Sub-team B <small>%%(ba
 {{ icon_important_big_red }} Pay attention to these as they are same as the final evaluation criteria of the DG.<br>
 
 Also see:
-{{ embed_topic("../../admin/project-w10-mid-v13.md#dg-tips", "Admin " + icon_embedding + " tP: mid-v1.3 → DG Tips", "t10-dgTips", "3") }}
+{{ embed_topic("../../admin/project-w10-mid-v13.md#dgTips", "Admin " + icon_embedding + " tP: mid-v1.3 → DG Tips", "t10-dgTips", "3") }}
 
 **Architecture**
 - [ ] The Architecture diagram uses intuitive symbols.
