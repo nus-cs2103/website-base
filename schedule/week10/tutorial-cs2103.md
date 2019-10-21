@@ -3,6 +3,35 @@
 {% from "schedule/index.md" import show_week_pagetop with context%}
 {{ show_week_pagetop(10, "tutorial") }}
 
+#### {{ thumb(0) }} Smoke-test CATcher
+
+<div class="indented-level2">
+
+<box dismissible>
+
+%%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we would like to use for the PE this semester.%%
+</box>
+
+In this tutorial, we would like to smoke-test the CATcher app **to ensure it can run in your computer**.
+<p/>
+
+<panel type="info" header="**The steps for smoke-testing CATcher:**" minimized>
+
+1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
+1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
+   {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.
+1. **Login**: Choose the profile `CS2103T Alpha Test`, enter your GitHub credentials, and submit.<br>
+   <img src="../../admin/images/catcherLogin.png" />
+1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
+1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. e.g., you can copy-paste screenshots into the bug description and use Markdown syntax.<br>
+  {{ icon_info }} The `severity` and `type` labels are compulsory.
+1. **Report any problems you encounter** at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
+
+</panel>
+<p/>
+
+</div>
+
 #### {{ thumb(1) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
 
 * **Divide into two sub-teams**, ensuring that each team has at least one member who is good with UML.
@@ -52,6 +81,7 @@ Team          | Sub-team A <small>%%(backup)%%</small> | Sub-team B <small>%%(ba
 * Phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).
 * Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams.
 * Do not finalize the review at this stage. Just keep adding comments.
+* <span class="text-success">**The understanding you gain from this exercise can indirectly determine how well you do in your own project.**</span> ==If you have even the slightest doubt about your observations in this exercise, please discuss it with the tutor== to ensure you have the right understanding of the criteria used.
 </box>
 
 <box border-left-color="green">
