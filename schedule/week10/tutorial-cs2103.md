@@ -21,7 +21,7 @@ In this tutorial, we would like to smoke-test the CATcher app **to ensure it can
 1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
    {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.
 1. **Login**: Choose the profile `CS2103/T Alpha Test`, enter your GitHub credentials, and submit.<br>
-   {{ icon_tip }} If you have 2FA enabled for GitHub, you'll have to disable it temporarily when using CATcher %%(CATcher is not yet compatible with 2FA)%%.<br>
+   {{ icon_tip }} If you have 2FA enabled for GitHub, you can [create a personal access token with `repo` permissions](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and use that as the password.<br>
    <img src="../../admin/images/catcherLogin.png" />
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
 1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. e.g., you can copy-paste screenshots into the bug description and use Markdown syntax.<br>
@@ -64,7 +64,7 @@ Team          | Sub-team A <small>%%(backup)%%</small> | Sub-team B <small>%%(ba
 </div>
 
 * **Go to the PR** and **navigate the to the <trigger trigger="click" for="modal:t10-netlifyPreview">Netlify preview</trigger>**.
-* **Confirm that the DG has significant updates**, to the diagrams in particular. If it doesn't, you can review the _backup_ team (given within brackets). %%If even the backup team is not suitable, choose any random teams having tutorials in the same day and not in the same tutorial as you.%%
+* **Confirm that the DG has significant updates**, to the diagrams in particular. If it doesn't, you can review the _backup_ team (given within brackets). %%If even the backup team is not suitable, ask the tutor for a suggestion or choose any random teams having tutorials in the same day.%%
 * **Evaluate the `Design` and the `Implementation` sections against the stated expectations** (given further down); add your observations as comments.<br>
 
 <modal large title="" id="modal:t10-netlifyPreview">
@@ -109,7 +109,7 @@ Also see:
 - [ ] Not repetitive (opposite: many similar diagrams with minor differences).
 
 **Descriptions**
-- [ ] Easy to understand/follow
+- [ ] Easy to understand/follow (==were you able to understand their design?==)
 - [ ] Just enough information: Not too much information. All important information is given.
 
 **Overall**
