@@ -28,8 +28,11 @@ In this tutorial, we would like to smoke-test the CATcher app **to ensure it can
   {{ icon_info }} The `severity` and `type` labels are compulsory.
 1. **Report any problems you encounter** at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
 
+
 </panel>
 <p/>
+
+{{ icon_important_big_red }} **Being able to run CATcher is important for the PE** -- if you are unable to run it, please follow up via the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues) until you resolve the issue ASAP.
 
 </div>
 
@@ -51,7 +54,7 @@ In this tutorial, we would like to smoke-test the CATcher app **to ensure it can
 
 <div class="indented-level2">
 
-<panel header="Team allocation for PR discussion" minimized >
+<panel header="Allocation for DG review" >
 
 Team          | Sub-team A <small>%%(backup)%%</small> | Sub-team B <small>%%(backup)%%</small>
 --------------|----------------------------------------|---------------------------------------
@@ -67,7 +70,7 @@ Team          | Sub-team A <small>%%(backup)%%</small> | Sub-team B <small>%%(ba
 * **Confirm that the DG has significant updates**, to the diagrams in particular. If it doesn't, you can review the _backup_ team (given within brackets). %%If even the backup team is not suitable, ask the tutor for a suggestion or choose any random teams having tutorials in the same day.%%
 * **Evaluate the `Design` and the `Implementation` sections against the stated expectations** (given further down); add your observations as comments.<br>
 
-<modal large title="" id="modal:t10-netlifyPreview">
+<modal large title="How to access the Netlify preview" id="modal:t10-netlifyPreview">
   <img src="../../admin/images/prNetlifyPreview.png" />
 </modal>
 
