@@ -51,7 +51,9 @@
   For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ ab3_website }}/DeveloperGuide.html#proposed-undo-redo-feature).
 * **Use multiple UML diagram types.** Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.
 * **Keep diagrams simple.** The aim is to make diagrams ==_comprehensible_, not necessarily _comprehensive_==. Ways to simplify diagrams:
-  * **Omit less important details** e.g., a class diagram can omit minor utility classes, private/unimportant members; a sequence diagram can omit less important interactions, self-calls. 
+  * **Omit less important details**. Examples:
+    * a class diagram can omit minor utility classes, private/unimportant members; some less-important associations can be shown as attributes instead.
+    * a sequence diagram can omit less important interactions, self-calls. 
   * **Omit repetitive details** e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete `*Command` classes).
   * **Limit the scope of a diagram.** Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it. In particular, avoid showing lower-level details of multiple components in the same diagram unless strictly necessary e.g., note how the <trigger trigger="click" for="modal:ipWeek10-deleteSd">this sequence diagram</trigger> shows only the detailed interactions within the Logic component i.e., does not show detailed interactions within the model component.
   * **Break diagrams into smaller fragments** when possible.

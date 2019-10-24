@@ -116,7 +116,8 @@ Also see:
 - [ ] Just enough information: Not too much information. All important information is given.
 
 **Overall**
-- [ ] Polished: The document looks neat, well-formatted, and professional.
+- [ ] Polished: The document looks neat, well-formatted, and professional.<br>
+  &nbsp;&nbsp;{{ icon_info }} e.g., Are the diagrams resized to match the text size of the main document?
 
 </box>
 
