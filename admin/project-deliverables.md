@@ -225,6 +225,11 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 <span id="project-deliverables-practicalexam-dry-run">
 
+<span class="text-danger">
+
+**The information below is outdated. Updated info coming soon.**
+</span>
+
 **What**: The v1.3 is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.
 
 **When, where**: uses a 30 minute slot at the start of week 11 lecture

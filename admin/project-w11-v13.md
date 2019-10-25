@@ -9,8 +9,8 @@
 1. {{ icon_individual }} Deliver the feature
 1. {{ icon_individual }} Update user docs
 1. {{ icon_team }} Release as a jar file
-1. {{ icon_team }} Wrap up milestone
-1. {{ icon_individual }} Attend practical exam dry run {{ timing_badge("during Lecture") }}
+1. {{ icon_team }} Wrap up the milestone
+1. {{ icon_individual }} Attend the practical exam dry run {{ timing_badge("during Lecture") }}
 {% endcall %}
 
 <div id="body">
@@ -35,15 +35,15 @@
 
 #### {{ thumb(3) }} {{ icon_team }} Release as a jar file
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DeveloperGuide.html#making-a-release). Do some manual tests to ensure the jar file works.
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). Do some manual tests to ensure the jar file works.
 
 
-#### {{ thumb(4) }} {{ icon_team }} Wrap up milestone
+#### {{ thumb(4) }} {{ icon_team }} Wrap up the milestone
 
 * as before
 
 
-#### {{ thumb(5) }} {{ icon_individual }} Attend practical exam dry run {{ timing_badge("during Lecture", "secondary") }}
+#### {{ thumb(5) }} {{ icon_individual }} Attend the practical exam dry run {{ timing_badge("during Lecture", "secondary") }}
 
 * =={{ icon_important_big_red }} See info in the panel below:==
 
