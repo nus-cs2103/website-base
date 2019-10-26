@@ -4,10 +4,18 @@
 
 #### {{ thumb(1) }} Demo v1.3
 
-* One member do a quick demo of your v1.3 using the jar file (preferably a different member from previous weeks).
-Make sure the jar file is ==in an empty folder== before you start.
+* One member is to do a quick demo of your `v1.3` ==using the jar file==. Make sure the jar file is ==in an empty folder== before you start. Others can help to confirm the jar file works on other OS'es.
 
-#### {{ thumb(2) }} Exercise of test case design
+<div class="indented-level2">
+<box type="success" border-left-color="green" icon="">
+
+You may release a newer version to be used for the PE dry run, but make sure it is released <span class="text-danger">by Friday 10am</span>.
+</box>
+</div>
+
+#### {{ thumb(2) }} Exercise: test case design
+
+* Divide into sub-teams and do the following exercises on the white board. Both sub-teams should do both exercises.
 
 1. What are the EPs for the parameter `day` of this method
    ```java
@@ -20,21 +28,22 @@ Make sure the jar file is ==in an empty folder== before you start.
    ```
 1. What are the boundary values for the parameter `day` in the question above?
 
-<div class="indented">
+<div class="indented-level2">
   <include src="../../book/testCaseDesign/combiningTestInputs/mix/q-testCasesForConsumeMethod.md" />
 </div>
 <br>
 
+#### {{ thumb(3) }} Exercise: defensive programming
+
 1. Demonstrate an assertion failure using Intellij.
 1. Give an example of defensive programming from your project.
 
-#### {{ thumb(2) }} Exercise on process models
+#### {{ thumb(4) }} Exercise: process models
 
-* Divide XP and Scrum between the two teams** for the following activity, if there is enough time left.
+* Divide XP and Scrum between the two sub-teams.
 
-* Each team use the Web to find about 5 distinguishing features of the process model.
+* Each sub-team to use the Web to find about 5 distinguishing features of the process model.
   * Some interesting [SCRUM concepts](https://www.scrum.org/resources/what-is-scrum): Product backlog, scrum board, story points, burndown charts, scrum master, product owner
   * XP rules are described at [http://www.extremeprogramming.org/rules.html](http://www.extremeprogramming.org/rules.html)
 
 * Relate those features to your project. %%i.e. are they applicable? are you doing something similar?%%
-
