@@ -11,27 +11,25 @@ Here is a list of main deliverables of the project; their details are given in t
   * [Product Website](#deliverable-product-website)
   * [Project Portfolio Page](#deliverable-project-portfolio-page-ppp)
 * [Product Demo](#deliverable-demo)
-* [Practical Exam Dry Run](#deliverable-practical-exam-dry-run)
-* [Practical Exam](#deliverable-practical-exam)
-  * Peer testing results
-  * Peer evaluation
+* [Practical Exam Dry Run (PE-D)](#deliverable-practical-exam-dry-run-pe-d)
+* [Practical Exam (PE)](#deliverable-practical-exam-pe)
 
 
-### Deliverable: Executable
+### <div class="text-white bg-info p-1">Deliverable: Executable</div>
 <span id="project-deliverables-executable">
 
 * The product should be delivered as an executable jar file.
 * Ideally, the product delivered at v1.4 should be a <tooltip content=" i.e., it can be used by end-users">_releasable_</tooltip> product. However, in the interest of lowering your workload, we do not penalize if the product is <tooltip content="i.e., the product is not usable by end-users because some essential features are missing">not releasable</tooltip>, ==as long as the product is <tooltip content="i.e., the features it has can be tested from an end-user perspective">_acceptance testable_</tooltip>==.
 </span>
 
-### Deliverable: Source code
+### <div class="text-white bg-info p-1">Deliverable: Source code</div>
 <span id="project-deliverables-sourcecode">
 
 * The source code should match the executable, and should include the revision history of the source code, as a Git repo.
 </span>
 
 
-### Deliverable: User Guide (UG)
+### <div class="text-white bg-info p-1">Deliverable: User Guide (UG)</div>
 <span id="project-deliverables-ug">
 
 * The User Guide (UG) of the product should match the proposed v2.0 of the product and in sync with the current version of the product.
@@ -40,7 +38,7 @@ Here is a list of main deliverables of the project; their details are given in t
 </span>
 
 
-### Deliverable: Developer Guide (DG)
+### <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div>
 <span id="project-deliverables-dg">
 
 * The Developer Guide (DG) of the product should match the proposed v2.0 of the product and should be in sync with the current version of the product.
@@ -51,7 +49,7 @@ Here is a list of main deliverables of the project; their details are given in t
 </span>
 
 
-### Deliverable: Product Website
+### <div class="text-white bg-info p-1">Deliverable: Product Website</div>
 <span id="project-deliverables-website">
 
 * Include an updated version of the online UG and DG that match v1.4 executable
@@ -130,7 +128,7 @@ Reason: screenshot not cropped cleanly (contains extra background details)
     
 </span>
 
-### Deliverable: Project Portfolio Page (PPP)
+### <div class="text-white bg-info p-1">Deliverable: Project Portfolio Page (PPP)</div>
 <span id="project-deliverables-ppp">
 
 At the end of the project each student is required to submit a _Project Portfolio Page_.
@@ -181,7 +179,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 </span>
 
-### Deliverable: Demo
+### <div class="text-white bg-info p-1">Deliverable: Demo</div>
 <span id="project-deliverables-demo">
 
 * **Duration:** Strictly 18 minutes for a 5-person team and 15 minutes for a 4-person team. Exceeding this limit will be penalized. Any set up time will be taken out of your allocated time.
@@ -221,18 +219,15 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 </span>
 
-### Deliverable: Practical Exam (Dry Run)
+### <div class="text-white bg-primary p-1">Deliverable: Practical Exam Dry Run (PE-D)</div>
 
 <span id="project-deliverables-practicalexam-dry-run">
 
-<span class="text-danger">
+#### <span class="badge badge-primary">PE-D</span> Overview
 
-**The information below is outdated. Updated info coming soon.**
-</span>
+**What**: The v1.3 is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.
 
-**What**: The v1.3 is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.
-
-**When, where**: uses a 30 minute slot at the start of week 11 lecture
+**When, where**: uses a 40 minute slot at the start of week 11 lecture
 
 <modal large title="Admin {{ icon_embedding }} Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
   <include src="project-deliverables.md#project-deliverables-practicalexam"/>
@@ -244,29 +239,40 @@ At the end of the project each student is required to submit a _Project Portfoli
 * Taking part in the PE dry run will earn you participation points.
 * There is ==no penalty for bugs reported== in your product. Every bug you find is a win-win for you and the team whose product you are testing.
 
-**Objectives**:
+**Why**:
 * **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.
 * **To help you improve your product** before the final submission.
 
+#### <span class="badge badge-primary">PE-D</span> Preparation
+
 <include src="project-testing.mbdf#testingPreparations" />
 
-**During the session**:
-1. **Take note of your team to test**. Distributed via LumiNUS gradebook and via email.
-1. Download the latest jar file from the team's GitHub page. ==Copy it to an empty folder==.
-1. Confirm you are testing the allocated product by comparing the product UI with the UI screenshot sent via email.
+#### <span class="badge badge-primary">PE-D</span> During the session
 
 <div id="project-deliverables-pe-testing-intructions">
 <box>
 
-##### Testing instructions for PE and PE Dry Run
+##### <div class="text-white bg-secondary p-1">**Testing instructions for PE and PE-D**</div>
 
-* **What to test**:
-  * PE Dry Run (at **v1.3**):
-    * Test the product ==based on the User Guide== (the UG is most likely accessible using the `help` command).
-    * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
-  * PE (at **v1.4**):
-    * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
-    * As before, do both ==system testing and acceptance testing== but give priority to system testing as system testing bugs can earn you more credit.
+###### <div class="text-white bg-secondary p-1">a) Launching the JAR file</div>
+
+* Put the jar file ==in an empty folder==.
+* Open a command window. Run the `java -version` command to ensure you are using Java 11.
+* Launch the jar file ==using the `java -jar` command== (do not use double-clicking).
+* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch%%, you can test the _fallback_ team allocated to you. But in this case ==you must inform us immediately after the session== so that we can send your bug reports to the correct team.
+  * PE-D: Download the JAR file from their GitHub page
+  * PE: 1. Download from LumiNUS all files submitted by the team %%(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
+
+###### <div class="text-white bg-secondary p-1">b) What to test</div>
+
+* PE Dry Run (at **v1.3**):
+  * Test the product ==based on the User Guide== (the UG is most likely accessible using the `help` command).
+  * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
+* PE (at **v1.4**):
+  * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
+  * As before, do both ==system testing and acceptance testing== but give priority to system testing as system-testing bugs can earn you more credit.
+
+###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
 
 * **These are considered _bugs_**:
   * Behavior differs from the User Guide
@@ -275,29 +281,52 @@ At the end of the project each student is required to submit a _Project Portfoli
   * The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'
   * Problems in the User Guide e.g., missing/incorrect info
 
-* **Where to report bugs**: Post bug in the following issue trackers that you created in your personal GitHub account (==not in the team's repo==):
-  * PE Dry Run (at **v1.3**): `pe-d`<br>
-  * PE (at **v1.4**): `pe`
-
-* **Bug report format**:
-  * {{ icon_important_big_red }} Post bugs as you find them %%(i.e., do not wait to post all bugs at the end)%% because the issue tracker will close exactly at the end of the allocated time.
-  * Each bug should be a separate issue.
-  * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
-  * Use a descriptive title.
-  * Give a good description of the bug with ==steps to reproduce and screenshots==.
-  * Assign a severity to the bug report. Bug report without a priority label are considered `severity.Low` (lower severity bugs earn lower credit)<br>
-
-<div class="indented-level4">
-<include src="appendixE-gitHub.md#bug-severity" />
-Also assign a `type.*` label to the issue.
-<include src="project-deliverables.md#type-labels" />
-</div>
-
 * **About posting _suggestions_:**
   * PE Dry Run (at **v1.3**): You can also post suggestions on how to improve the product. {{ icon_tip }} Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
-  * PE (at **v1.4**): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug.
+  * PE (at **v1.4**): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`.
 
-* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch%%, you can test the _fallback_ team allocated to you. But in this case ==you must inform us immediately after the session== so that we can send your bug reports to the correct team.
+###### <div class="text-white bg-secondary p-1">d) How to report bugs</div>
+
+* {{ icon_important_big_red }} **Post bugs as you find them** %%(i.e., do not wait to post all bugs at the end)%% because <span class="text-danger">bug reports created/modified after the allocated time will not count.</span>
+<div class="indented-level2">
+
+<tabs> 
+  <tab header="Using CATcher">
+
+* Launch CATcher, and login to the correct profile:
+  * PE Dry Run: `{{ module }}/T PE Dry run`
+  * PE: `{{ module }}/T PE`
+* Post bugs using CATcher.
+</tab>
+<tab header="Not using CATcher">
+<div class="indented-less">
+
+<markdown>
+* Post bug reports in the following repo you created earlier:
+  * PE Dry Run: `ped`
+  * PE: `pe`
+</markdown>
+</div>
+</tab>
+</tabs>
+</div>
+
+###### <div class="text-white bg-secondary p-1">e) Bug report format</div>
+
+* Each bug should be a separate issue.
+* Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
+* Use a descriptive title.
+* Give a good description of the bug with ==steps to reproduce and screenshots==.
+* Assign exactly one `severity.*` label to the bug report. Bug report without a severity label are considered `severity.Low` (lower severity bugs earn lower credit)<br>
+
+<div class="indented-level2">
+<include src="appendixE-gitHub.md#bug-severity" />
+</div>
+
+* Assign exactly one `type.*` label to the issue.
+<div class="indented-level2">
+<include src="project-deliverables.md#type-labels" />
+</div>
 
 </box>
 </div>
@@ -306,73 +335,98 @@ Also assign a `type.*` label to the issue.
   <include src="project-deliverables.md#project-deliverables-ppp"/>
 </modal>
 
-**After the session**:
+#### <span class="badge badge-primary">PE-D</span> After the session
 * We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.
-* You can post in the issue thread to communicate with the tester %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
-  * {{ icon_tip }} Do not argue with the issue reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and close the issue.
+* You can navigate to the original bug report (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
+  * {{ icon_tip }} Do not argue with the bug reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and discontinue to discussion.
 
 </span>
 
-### Deliverable: Practical Exam
+### <div class="text-white bg-success p-1">Deliverable: Practical Exam (PE)</div>
 
 <span id="project-deliverables-practicalexam">
 
+#### <span class="badge badge-success">PE</span> <span class="text-success">Overview</span>
+
 **Objectives:**
-* The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for 50% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
-* Note that ==none of the significant project grade components are calculated solely based on peer ratings==. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs are used for grading, usually they are combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other teams, if that is appropriate.
-* As a bonus, PE also gives us an opportunity to evaluate your manual testing skills, product evaluation skills, effort estimation skills etc.
-* Note that the PE is not a means of _pitting you against each other_. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
+* The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for 45% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
+* PE is also ==used to evaluate your manual testing skills, product evaluation skills, effort estimation skills== etc.
+* Note that significant project components are ==not graded solely based on peer ratings==. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
+* Note that the PE is ==not a means of _pitting you against each other_==. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
 
-**When, where**: Week 13 lecture
+**Grading**:
+* Your performance in the practical exam will affect your final grade and your peers', as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/project-grading.html) section.
+* As such, we have put in measures to identify and ==penalize insincere/random evaluations==.
+* Also see:
 
-{{ icon_important_big_red }} **Grading**:
-* Your performance in the practical exam will affect your final grade and your peers, as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/project-grading.html) section.
-* As your submissions can affect the grades of peers, note that we have put in measures to identify insincere/random evaluations and penalize accordingly.
+<div class="indented-level2">
+
+{{ embed_topic("project-grading.md#pe-grading-notes", "Admin " + icon_embedding + " tP Grading → Notes on grading PE product testing", "projectDeliverables-peGradingNotes", "3") }}
+</div>
+
+#### <span class="badge badge-success">PE</span> <span class="text-success">Preparation</span>
+
+* It's similar to,
+<div class="indented-level2">
+
+<panel type="primary" header="PE-D Preparation" minimized>
 
 <include src="project-testing.mbdf#testingPreparations" />
+</panel>
+</div>
+<p/>
 
-**During:** 
+#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
 
-1. **Take note of your team to test**. It will be given to you by the teaching team (distributed via LumiNUS gradebook).
-1. **Download from LumiNUS all files** submitted by the team %%(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
-1. **[60 minutes] Test the product and report bugs** as described below:
+* **When, where**: Week 13 lecture
+
+##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Testing [60 minutes]</span>
+
+* **Test the product and report bugs** as described below:
 
 <div class="indented-level2">
   <include src="project-deliverables.md#project-deliverables-pe-testing-intructions" />
 </div>
 
-1. **[Remainder of the session] Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but ==you have until the end of the day to submit (or revise) your submissions==.
-   * **A. Product Design** [{{ icon_team }}]:
+##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Product Evaluation</span>
 
+* **Evaluate the following aspects.** Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.
+
+<div class="indented-level2">
+<box>
+
+**A. Product Design** [{{ icon_team }}]:
 <div class="indented-level2">
   <include src="project-grading.md#projectGrading-featureFit-instructions" />
 </div>
 
-   * **B. Quality of user docs** [{{ icon_individual }}]:
-<div class="indented-level2">
+**B. Quality of user docs** [{{ icon_individual }}]:
+<div class="indented">
   <include src="project-grading.md#projectGrading-userGuide-instructions" />
 </div>
 
-   * **C. Quality of developer docs** [{{ icon_individual }}]:
-<div class="indented-level2">
+**C. Quality of developer docs** [{{ icon_individual }}]:
+<div class="indented">
   <include src="project-grading.md#projectGrading-devGuide-instructions" />
 </div>
 
-   * **D. Feature Quality** [{{ icon_individual }}]:
-<div class="indented-level2">
+**D. Feature Quality** [{{ icon_individual }}]:
+<div class="indented">
   <include src="project-grading.md#projectGrading-featureQuality-instructions" />
 </div>
 
-   * **E. Amount of work** [{{ icon_individual }}]:
-<div class="indented-level2">
+**E. Amount of work** [{{ icon_individual }}]:
+<div class="indented">
   <include src="project-grading.md#projectGrading-effort-instructions" />
 </div>
+</box>
+</div>
 
-#### Processing PE Bug Reports:
+#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
 
-There will be a review period for you to respond to the [bug reports]({{module_org}}/pe-results/issues) you received.
+This phase is for you to respond to the bug reports you received.
 
-Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Wednesday midnight**. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
+Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Tuesday midnight**. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
@@ -380,22 +434,67 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 **Instructions for Reviewing Bug Reports**
 
-* **First, don't freak out if there are lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
+* **Don't freak out if there are lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
 
+<tabs> 
+  <tab header="Using CATcher">
+
+* Launch CATcher, and login to the profile `{{ module }}/T PE`
+* Respond to the bug reports shown.
+</tab>
+<tab header="Not using CATcher">
+<div class="indented-less">
+
+<markdown>
+
+<box type="warning">
+
+The dev responses need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are strongly recommended to use CATcher for this phase. If you want to give your response via GitHub instead, **<span class="text-danger">please get our permission first</span>**.
+</box>
+
+* Go to the [dev-response issue tracker]({{ module_org }}/pe-dev-response)
+* Use `tutorial.*` and `team.*` labels to filter bug reports your team received.
 * **Do not edit the subject or the description.** Your response (if any) should be added as a comment.
+* Add a comment using the following exact template.
+  ```markdown
+  # Team's Response
+  {replace this with your response}
+  
+  ## Duplicate status (if any):
+  
+  ```
+  Here is an example:
+  ```markdown
+  # Team's Response
 
-* You may (but not required to) close the bug report after you are done processing it, as a convenient means of separating the 'processed' issues from 'not yet processed' issues.
+  Yes this is a bug. But it is a duplicate.
+  * Changed the bug type because this is just a bug in the UG.
+  * Lowered the severity because users can still use the feature.
+  
+  ## Duplicate status (if any):
+  Duplicate of #67
+  ```
+* Do not close the bug report after you are done processing it.
+* Use the exact `Duplicate of #123` format to indicate duplicates.
+</markdown>
+</div>
+</tab>
+</tabs>
 
-* **If the bug is reported multiple times**, mark all copies EXCEPT one as duplicates using the `duplicate` tag (if the duplicates have different severity levels, you should ==keep the one with the highest severity==). In addition, ==use [this technique](https://help.github.com/articles/about-duplicate-issues-and-pull-requests/) to indicate which issue they are duplicates of==.  Duplicates can be omitted from processing steps given below.
+* **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know ASAP.
+* **If the bug is reported multiple times**,
+  * Mark all copies EXCEPT one as duplicates using the `duplicate` tag
+  * If the duplicates have different severity levels, you should ==keep the one with the highest severity==.
+  * For each group of duplicates, all duplicates should point to one _parent_ i.e., no multiple levels of duplicates, and no cyclical duplication relationships
+  * If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the `type.*` and `severity.*` from the parent.
+<p/>
 
-* **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know (email prof).
-
-* **Decide if it is a real bug and apply ONLY one of these labels**.
+* **Apply exactly one of these labels** (if missing, we assign: `response.Accepted`)
 
 <div class="indented">
 <box>
 
-Response Labels:
+**Response** Labels:
 * `response.Accepted`: You accept it as a bug.
 * `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in v1.4%%.
 * `response.Rejected`: What tester treated as a bug is in fact the expected behavior.  You can reject bugs that you inherited from AB3.
@@ -405,40 +504,58 @@ Response Labels:
 </box>
 </div>
 
-* If applicable, **decide the type of bug**. Bugs without `type.*` are considered `type.FunctionalityBug` by default (which are liable to a heavier penalty).
+
+* **Apply exactly one of these labels** (if missing, we assign: `type.FunctionalityBug`)
 
 <div class="indented" id="type-labels">
 <box>
 
 **Type** labels:
 * `type.FunctionalityBug`: A functionality does not work as specified/expected.
-* `type.FeatureFlaw`: One of these:some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for normal usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.
-* `type.DocTypo`: A minor typo in the documentation %%e.g., spelling error%%. Does not affect the users.
-* `type.DocumentationBug`: A flaw in the documentation that can potentially affect the user %%e.g., a missing step, a wrong instruction%%
+* `type.FeatureFlaw`: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.
+* `type.DocTypo`: A minor typo in the documentation %%e.g., spelling error%% that does not affect the users.
+* `type.DocumentationBug`: A flaw in the documentation that can potentially affect the user %%e.g., a missing step, a wrong instruction, typos that affect users%%
 </box>
 </div>
 
 * **If you disagree with the original severity assigned to the bug**, you may change it to the correct level.
-
-{{ icon_important_big_red }} For all cases of downgrading severity or non-acceptance of a bug, ==you must add a comment justifying your stance==. All such cases will be double-checked by the teaching team and indiscriminate downgrading/non-acceptance of bugs without a good justification, if deemed as a case of trying to _game the system_, may be penalized as it is unfair to the tester.
 
 <div class="indented">
   <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
 * **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.**
- * We recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, even if the bug was caused indirectly by someone else. Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
+  * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
+<p/>
 
-* **Add an explanatory comment** explaining your choice of labels and assignees.
+* As far as possible, **choose the correct `type.*`, `severity.*`, and assignees even for bugs you are not accepting or for bugs that are marked as duplicates**. Reason: your _non-acceptance_  or duplication status may be rejected in a later phase, in which case we need to grade it as an accepted/non-duplicate bug.
 
-* Choose the correct `type.*`, `severity.*` labels and assignee even for bugs you are not accepting. Reason: your _non-acceptance_ may be rejected by the tutor later, in which case we need to grade it as an accepted bug.
+* **Justify your response.** For all of the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be double-checked by the teaching team in later phases. ==<span class="text-danger">Indiscriminate/unreasonable dev/tester responses, if deemed as a case of trying to _game the system_, will be penalized.</span>==
+  * downgrading severity
+  * non-acceptance of a bug
+  * changing the bug type
+  * non-obvious duplicate
 
+<p/>
 </box>
+
+#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
+
+* In this phase you will get to state whether you agree or disagree with the dev response to the bugs you reported.
+* This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.
+* Deadline: Reading week Wednesday 2359 
+* More info coming soon.
+
+#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
+
+* In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome.
+* In the unlikely we need your inputs, the tutor will contact you.
 
 </span>
 
 </div>
 {% endmacro %}
 
+{% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 {{ show_admin_page("project-deliverables", show_main_text) }}

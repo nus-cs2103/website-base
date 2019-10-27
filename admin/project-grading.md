@@ -143,7 +143,11 @@ Evaluate the amount of work, on a scale of 0 to 30.
   <include src="project-scope.md#testing-expectations"/>
 </modal>
 
-<big>**Notes on how marks are calculated based on bugs**</big>
+<box>
+
+<div id="pe-grading-notes">
+
+##### Notes on how marks are calculated based on PE product testing
 
 * Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not be affect marks of the tester or the developer.
 * The penalty/credit for a bug varies based on,
@@ -158,6 +162,8 @@ Evaluate the amount of work, on a scale of 0 to 30.
   * `n` bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks
 * You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.
 * Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>, if deemed an unethical attempt to _game the system_, may be penalized.
+</div>
+</box>
 
 -----------------------------------------------------------------------------------------------------------------------
 

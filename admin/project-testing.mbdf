@@ -1,19 +1,37 @@
 <div id="testingPreparations">
 
-**Preparation**:
-
-* Create a new repo with the name given below in your personal GitHub account. Remember to enable the issue tracker:<br>
-  -- for PE Dry Run (at **v1.3**): `pe-d`<br>
-  -- for PE (at **v1.4**): `pe`
-  * Ensure that you have accepted the invitation to join the GitHub org used by the module. Go to [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation) to accept the invitation.
-  * If you cannot find the invitation, post in our [forum]({{ forum_link }}).
+* Ensure that you have accepted the invitation to join the GitHub org used by the module. Go to [{{ module_org }}]({{ module_org }}) to accept the invitation.
 
 * Ensure you have access to a **computer that is able to run module projects** %%e.g. has the right Java version%%.
 
-* Download the CATcher (link to be given nearer to the date) and ensure you can run it on your computer.
+<tabs> 
+  <tab header="Using CATcher">
+
+* **Download the [latest CATcher](https://github.com/CATcher-org/CATcher/releases)** and ensure you can run it on your computer.
+</tab>
+<tab header="Not using CATcher">
+<div class="indented-less">
+
+<markdown>
+* Create a public repo in your GitHub account with the following name:
+  * PE Dry Run: `ped`
+  * PE: `pe`
+* Enable its issue tracker and add the following labels to it (the label names should be precisely as given).
+
+<div class="indented-level2">
+<include src="appendixE-gitHub.md#bug-severity" />
+<include src="project-deliverables.md#type-labels" />
+</div>
+
+</markdown>
+</div>
+</tab>
+</tabs>
 
 * **Have a good screen grab tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.
   * {{ icon_tip }} You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in bug report.
 
-* **Charge your computer** before coming to the PE session. The testing venue may not have enough charging points.
+* **<span class="text-danger">Download the product to be tested</span>** <tooltip content="notifications are likely to go out on the morning of the PE/PE-D session">after you have been notified</tooltip> of which team you have been allocated to test.
+
+* **Charge your computer** before coming to the session. The testing venue might not have enough charging points.
 </div>
