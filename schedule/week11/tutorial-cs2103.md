@@ -15,20 +15,10 @@ You may release a newer version to be used for the PE dry run, but make sure it 
 
 #### {{ thumb(2) }} Exercise: test case design
 
-* Divide into sub-teams and do the following exercises on the white board. Both sub-teams should do both exercises.
-
-1. What are the EPs for the parameter `day` of this method
-   ```java
-   /**
-    * Returns true if the three values represent a valid day
-    */
-   boolean isValidDay(int year, int month, int day){
-   
-   } 
-   ```
-1. What are the boundary values for the parameter `day` in the question above?
+* Divide into two sub-teams and do the following exercises on the white board. Both sub-teams should do both exercises.
 
 <div class="indented-level2">
+  <include src="../../book/testCaseDesign/summary/exercises/q-essay-dayParameter.md" />
   <include src="../../book/testCaseDesign/combiningTestInputs/mix/q-testCasesForConsumeMethod.md" />
 </div>
 <br>
@@ -36,7 +26,7 @@ You may release a newer version to be used for the PE dry run, but make sure it 
 #### {{ thumb(3) }} Exercise: defensive programming
 
 1. Demonstrate an assertion failure using Intellij.
-1. Give an example of defensive programming from your project.
+1. Give an example of defensive programming from AB3 or your tP.
 
 #### {{ thumb(4) }} Exercise: process models
 
