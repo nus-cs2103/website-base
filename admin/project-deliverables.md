@@ -223,7 +223,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 <span id="project-deliverables-practicalexam-dry-run">
 
-#### <span class="badge badge-primary">PE-D</span> Overview
+#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span>
 
 **What**: The v1.3 is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.
 
@@ -243,11 +243,11 @@ At the end of the project each student is required to submit a _Project Portfoli
 * **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.
 * **To help you improve your product** before the final submission.
 
-#### <span class="badge badge-primary">PE-D</span> Preparation
+#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Preparation</span>
 
 <include src="project-testing.mbdf#testingPreparations" />
 
-#### <span class="badge badge-primary">PE-D</span> During the session
+#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">During the session</span>
 
 <div id="project-deliverables-pe-testing-intructions">
 <box>
@@ -335,7 +335,7 @@ At the end of the project each student is required to submit a _Project Portfoli
   <include src="project-deliverables.md#project-deliverables-ppp"/>
 </modal>
 
-#### <span class="badge badge-primary">PE-D</span> After the session
+#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span>
 * We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.
 * You can navigate to the original bug report (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
   * {{ icon_tip }} Do not argue with the bug reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and discontinue to discussion.
