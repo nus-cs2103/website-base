@@ -16,6 +16,8 @@
 #### {{ thumb(1) }} {{ icon_individual }} Start on the full version of the new features
 
 * Start on implementing the full version of your new feature(s). Aim to finish it in v1.3 (v1.4 can serve as a buffer). As before, you can divide the work into even smaller increments %%e.g., aim to deliver a v1.2.1 at the end of this week%%.
+* **Maintain the defensiveness of the code**: Remember to use assertions, exceptions, and logging in your code, as well as other defensive programming measures when appropriate.<br>
+  {{ icon_important_big_red }} Remember to enable assertions in your IDEA run configurations and gradle file.
 * Continue to do deliberate project management using GitHub issue tracker, milestones, labels, etc. as you did in v1.2.
 * {{ icon_tip }} We recommend that **each PR also updates the relevant parts of documents and tests**. That way, your documentation/testing work will not pile up towards the end.
 * {{ icon_tip }} There is [a way to get GitHub to auto-close the relevant issue when a PR is merged](https://help.github.com/articles/closing-issues-using-keywords/) ([example](https://github.com/se-edu/addressbook-level4/pull/888)).
@@ -115,7 +117,7 @@ It will look more 'polished' if the two text sizes match.
 #### {{ thumb(4) }} {{ icon_individual }} Make code RepoSense-compatible
 
 
-* **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>**, as explained below:
+* **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code it attributes to you is indeed the code written by you**, as explained below:
 
 <div class="indented-level2">
 {{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "midv13_repoSenseCompatibility", "1") }}

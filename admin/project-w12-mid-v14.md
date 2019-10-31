@@ -8,7 +8,7 @@
 
 1. {{ icon_individual }} Tweak the product as per peer-testing results.
 1. {{ icon_individual }} Draft the PPP
-1. {{ icon_team }} Prepare for the demo dry run
+1. {{ icon_team }} Prepare for the demo rehearsal
 {% endcall %}
 
 <div id="body">
@@ -43,7 +43,7 @@
 {{ embed_topic("project-deliverables.md#project-deliverables-ppp", "Admin " + icon_embedding + " Project → Deliverables → Project Portfolio Page", "midv14_deliverablesPpp", "2") }}
 </div>
 
-#### {{ thumb(3) }} {{ icon_team }} Prepare for the demo dry run
+#### {{ thumb(3) }} {{ icon_team }} Prepare for the demo rehearsal
 
 * You will do a product demo during the tutorial to serve as a rehearsal for the final project demo at v1.4
   * ==Follow <trigger trigger="click" for="modal:mid-v14-demo-instructions">final demo instructions</trigger>== as much as possible.
