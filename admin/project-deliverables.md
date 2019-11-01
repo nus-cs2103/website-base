@@ -133,49 +133,63 @@ Reason: screenshot not cropped cleanly (contains extra background details)
 
 At the end of the project each student is required to submit a _Project Portfolio Page_.
 
-* **Objective:** 
-  * For you to use %%(e.g. in your resume)%% as a well-documented data point of your SE experience 
-  * For us to use as a data point to evaluate your,
-    * contributions to the project
-    * your documentation skills
+#### <span class="badge badge-info">PPP</span> <span class="text-info">Objectives</span>
 
-* **Sections to include:**
-  * **Overview**: A short overview of your product to provide some context to the reader.
-  * **Summary of Contributions**:
-    * **Code contributed**: Give a link to your code on [tP Code Dashboard]({{ tp_dashboard }}). The link is available in the [Project List Page]({{baseUrl}}/admin/projectList.html) -- linked to the :fas-code: icon under your photo.
-    * **Features implemented:** A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.
-    * **Other contributions:**
-      * Contributions to project management %%e.g., setting up project tools, managing releases, managing issue tracker etc.%%
-      * Evidence of helping others %%e.g. responses you posted in our forum, bugs you reported in other team's products%%,
-      * Evidence of technical leadership %%e.g. sharing useful information in the forum%%
+* For you to use %%(e.g. in your resume)%% as a well-documented data point of your SE experience
+* For us to use as a data point to evaluate your,
+  * contributions to the project
+  * your documentation skills
 
-  * **Contributions to the User Guide**: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
-    %%The purpose of allowing you to include _proposed_ features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.%%
-  * **Contributions to the Developer Guide**: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.
+#### <span class="badge badge-info">PPP</span> <span class="text-info">Sections to include</span>
 
-  * If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
+* **Overview**: A short overview of your product to provide some context to the reader.
+* **Summary of Contributions**:
+  * **Code contributed**: Give a link to your code on [tP Code Dashboard]({{ tp_dashboard }}). The link is available in the [Project List Page]({{baseUrl}}/admin/projectList.html) -- linked to the :fas-code: icon under your photo.
+  * **Features implemented:** A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.
+  * **Other contributions:**
+    * Contributions to project management %%e.g., setting up project tools, managing releases, managing issue tracker etc.%%
+    * Evidence of helping others %%e.g. responses you posted in our forum, bugs you reported in other team's products%%,
+    * Evidence of technical leadership %%e.g. sharing useful information in the forum%%
 
-* **Format**:
-  * File name: `docs/team/githbub_username_in_lower_case.adoc` e.g., `docs/team/johndoe.adoc`
-  * {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ ab3_website }}/team/johndoe.html)
+<div class="indented-level2">
+<box border-left-color="darkcyan">
 
-  * {{ icon_tip }} You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample]({{ ab3_website }}/team/johndoe.html).
+{{ icon_tip }} Keep in mind that your feature(s) will be evaluated for **depth, completeness, and effort**. Use the PPP to convince evaluator how good those aspects of your features are.<br>
+It is fine if you want to directly explain each of those aspects of your features in the PPP %%i.e., how deep the feature is, why it is complete, how hard it was to implement%%.
+</box>
+</div>
 
-  * =={{ icon_important_big_red }} It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%e.g. someone else wrote the description of your feature in the User Guide%%, clearly state that the section was written by someone else %%(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%Reason: Your writing skills will be evaluated based on the PPP%%
+* **Contributions to the User Guide**: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
+  %%The purpose of allowing you to include _proposed_ features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.%%
+* **Contributions to the Developer Guide**: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.
 
-* **Page limit**:
-  Content | Limit
-  ------- | -----
-  Overview + Summary of contributions | 0.5-1 (soft limit)
-  Contributions to the User Guide | 1-3 (soft limit)
-  Contributions to the Developer Guide | 3-6 (soft limit)
-  Total | 5-10 ==(strict)==
+* If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)
 
-  * The ==page limits given above are _after_ converting to PDF format==. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
-  * %%Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.%%<br>
+#### <span class="badge badge-info">PPP</span> <span class="text-info">Format</span>
+
+* File name: `docs/team/githbub_username_in_lower_case.adoc` e.g., `docs/team/johndoe.adoc`
+* {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ ab3_website }}/team/johndoe.html)
+
+* {{ icon_tip }} You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample]({{ ab3_website }}/team/johndoe.html).
+
+* =={{ icon_important_big_red }} It is assumed that all contents in the PPP were written primarily by you.== If any section is written by someone else %%e.g. someone else wrote the description of your feature in the User Guide%%, clearly state that the section was written by someone else %%(e.g. `Start of Extract [from: User Guide] written by Jane Doe`)%%. %%Reason: Your writing skills will be evaluated based on the PPP%%
+
+#### <span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span>
+
+<div class="indented-level2">
+
+Content | Limit
+------- | -----
+Overview + Summary of contributions | 0.5-1 (soft limit)
+Contributions to the User Guide | 1-3 (soft limit)
+Contributions to the Developer Guide | 3-6 (soft limit)
+Total | 5-10 ==(strict)==
+</div>
+
+* The ==page limits given above are _after_ converting to PDF format==. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
+* %%Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.%%<br>
    If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
-   %%It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.%%
-
+  %%It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.%%
 
 </span>
 
@@ -335,10 +349,13 @@ At the end of the project each student is required to submit a _Project Portfoli
   <include src="project-deliverables.md#project-deliverables-ppp"/>
 </modal>
 
+<span id="after-ped">
+
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span>
 * We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.
 * You can navigate to the original bug report (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
   * {{ icon_tip }} Do not argue with the bug reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and discontinue to discussion.
+</span>
 
 </span>
 

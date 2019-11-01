@@ -22,6 +22,12 @@
 
 #### {{ thumb(1) }} {{ icon_individual }} Tweak the product as per peer-testing results
 
+* Learn the procedure for dealing with PED bugs you received:
+
+<div class="indented-level2">
+{{ embed_topic("project-deliverables.md#after-ped", "Admin " + icon_embedding + " Project → Deliverables → **After the PED**", "midv14_afterPed", "3") }}
+</div>
+
 * **Freeze features** around this time. Ensure the current product have all the features you intend to release at v1.4. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
 * **Update documentation** to match the product.
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of <trigger trigger="click" for="modal:mid-v14-testingExpectations">our expectation on test code</trigger>. 
@@ -56,8 +62,9 @@
 
 #### {{ thumb("+") }} {{ icon_team }} Other things to note
 
-* {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct, as reported in the [Project Activity Dashboard](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/{{ module | lower }}-dashboard)
-
+* {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct, as reported in the [tp Code Dashboard]({{ tp_dashboard }}). Click on the `</>` icon against your name and check the ==lines attributed to you (i.e., lines marked as green)== reflects your code contribution correctly. Note that some aspects of your project grade (e.g., code quality) will be graded based on those lines.
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/greenLines.png" width="600">
+<p/>
 <div class="indented-level2">
 {{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → Using RepoSense", "midv14_repoSenseCompatibility", "1") }}
 </div>
