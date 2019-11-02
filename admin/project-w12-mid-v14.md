@@ -62,7 +62,7 @@
 
 #### {{ thumb("+") }} {{ icon_team }} Other things to note
 
-* {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct, as reported in the [tp Code Dashboard]({{ tp_dashboard }}). Click on the `</>` icon against your name and check the ==lines attributed to you (i.e., lines marked as green)== reflects your code contribution correctly. Note that some aspects of your project grade (e.g., code quality) will be graded based on those lines.
+* {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct, as reported in the [tp Code Dashboard]({{ tp_dashboard }}). Click on the `</>` icon against your name and verify that the ==lines attributed to you (i.e., lines marked as green)== reflects your code contribution correctly. This is important becaues some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/greenLines.png" width="600">
 <p/>
 <div class="indented-level2">

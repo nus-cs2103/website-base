@@ -27,13 +27,3 @@ You may release a newer version to be used for the PE dry run, but make sure it 
 
 1. Demonstrate an assertion failure using Intellij.
 1. Give an example of defensive programming from AB3 or your tP.
-
-#### {{ thumb(4) }} Exercise: process models
-
-* Divide XP and Scrum between the two sub-teams.
-
-* Each sub-team to use the Web to find about 5 distinguishing features of the process model.
-  * Some interesting [SCRUM concepts](https://www.scrum.org/resources/what-is-scrum): Product backlog, scrum board, story points, burndown charts, scrum master, product owner
-  * XP rules are described at [http://www.extremeprogramming.org/rules.html](http://www.extremeprogramming.org/rules.html)
-
-* Relate those features to your project. %%i.e. are they applicable? are you doing something similar?%%
