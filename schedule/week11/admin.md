@@ -5,9 +5,12 @@
 {{ show_week_pagetop(11, "admin") }}
 
 {% call show_admin_summary() %}
-
+1. Submit post-lecture quiz
 {% endcall %}
 
 <div id="additional">
 
+#### {{ thumb(1) }} Submit post-lecture quiz
+
+* As per usual.
 </div>
