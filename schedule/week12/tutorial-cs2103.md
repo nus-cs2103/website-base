@@ -23,7 +23,7 @@ Do this if you did not do this in the previous week's tutorial.
 
 * Divide XP and Scrum between the two sub-teams.
 
-* Each sub-team to use the Web to find about 5 distinguishing features of the process model.
+* Each person to use the Web to find about 2 distinguishing features of the process model i.e., if the sub-team has 2 members, find info about 4 features.
   * Some interesting [SCRUM concepts](https://www.scrum.org/resources/what-is-scrum): Product backlog, scrum board, story points, burndown charts, scrum master, product owner
   * XP rules are described at [http://www.extremeprogramming.org/rules.html](http://www.extremeprogramming.org/rules.html)
 
