@@ -13,6 +13,11 @@
 
 <div id="body">
 
+<box dismissible>
+
+{{ icon_tip }} when setting the v1.4 deadline in GitHub milestones, remember that the v1.4 submission deadline is Week 13 Monday for _everyone_ (does not vary by tutorial day). Set your own deadline accordingly, or else the bot will flag it as an 'unsuitable' deadline.
+</box>
+
 <box background-color="white" border-color="red">
 
 **Remind yourself of the project grading criteria:**
