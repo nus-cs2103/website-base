@@ -1,18 +1,21 @@
 
-## F11-1
+## CS2103-F09-1
 
-<img src="https://CS2103-AY1819S1-F11-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -29,44 +32,52 @@
 
 {{ pagebreak }}
 
-## F11-1
+## CS2103-F09-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-F11-1.github.io/main/images/heartofal1on.png" height="150" /> |**DANIEL NG SZE YAO** |
-<img src="https://CS2103-AY1819S1-F11-1.github.io/main/images/chengyuuu.png" height="150" /> |**GOH CHENG YU** |
-<img src="https://CS2103-AY1819S1-F11-1.github.io/main/images/hexinyiyi.png" height="150" /> |**HE XINYI** |
-<img src="https://CS2103-AY1819S1-F11-1.github.io/main/images/jiacheng-panda.png" height="150" /> |**WU JIACHENG** |
-<img src="https://CS2103-AY1819S1-F11-1.github.io/main/images/yezhongz.png" height="150" /> |**ZHANG YEZHONG** |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/kendrickang.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ANG WEI HENG KENDRICK** |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/mirozo.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**GOH RUI ZHI** |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/dcshzj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HSU ZHONG JUN** |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/chriskheng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KHENG YAU DONG** |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/mrchensheng21.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KWAN CHEN SHENG** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## F11-2
+## CS2103-F09-2
 
-<img src="https://CS2103-AY1819S1-F11-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -83,44 +94,53 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## F11-2
+## CS2103-F09-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-F11-2.github.io/main/images/adamwth.png" height="150" /> |**CHEW YONG SOON** |
-<img src="https://CS2103-AY1819S1-F11-2.github.io/main/images/pikulet.png" height="150" /> |**JOYCE YEO SHUHUI** |
-<img src="https://CS2103-AY1819S1-F11-2.github.io/main/images/neilish3re.png" height="150" /> |**NEIL MEHTA** |
-<img src="https://CS2103-AY1819S1-F11-2.github.io/main/images/jiaqingtan.png" height="150" /> |**TAN JIAQING** |
-<img src="https://CS2103-AY1819S1-F11-2.github.io/main/images/teowz46.png" height="150" /> |**TEO WEI ZHENG** |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/ahaliq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ABDUL HALIQ S/O ABDUL LATIFF** |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/huiminlim.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM HUI MIN** |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/nattanyz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN YAN ZHEN, NATALIE** |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/phirehandy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**MUHAMMAD TAHA B JAILANI** |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/timothyleong97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEONG JIA HAO, TIMOTHY** |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/shawnpunchew11.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SHAWN CHEW** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## F11-3
+## CS2103-F09-3
 
-<img src="https://CS2103-AY1819S1-F11-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -137,44 +157,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## F11-3
+## CS2103-F09-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-F11-3.github.io/main/images/jiaxiu11.png" height="150" /> |**CAI JIAXIU** |
-<img src="https://CS2103-AY1819S1-F11-3.github.io/main/images/chikchengyao.png" height="150" /> |**CHIK CHENG YAO** |
-<img src="https://CS2103-AY1819S1-F11-3.github.io/main/images/unsatisfiedpopcorn.png" height="150" /> |**JEFFERY KWOH JI HUI** |
-<img src="https://CS2103-AY1819S1-F11-3.github.io/main/images/pengnam.png" height="150" /> |**NG PENG NAM, SEAN** |
-<img src="https://CS2103-AY1819S1-F11-3.github.io/main/images/remo5000.png" height="150" /> |**VIGNESH SHANKAR** |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/andyylam.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ANDY LAM KWOK WEE** |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/halfwhole.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM ZI WEI** |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/liuzechu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIU ZECHU** |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/chowyiwai.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHOW YI WAI** |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/yaaanch.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ONG YAN CHUN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## F11-4
+## CS2103-F09-4
 
-<img src="https://CS2103-AY1819S1-F11-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -191,44 +219,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## F11-4
+## CS2103-F09-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-F11-4.github.io/main/images/souless94.png" height="150" /> |**CHIA WEN KAI** |
-<img src="https://CS2103-AY1819S1-F11-4.github.io/main/images/nigelngyy.png" height="150" /> |**NG YUAN YUN NIGEL** |
-<img src="https://CS2103-AY1819S1-F11-4.github.io/main/images/happytreat.png" height="150" /> |**SIM MING HUI MELODIES** |
-<img src="https://CS2103-AY1819S1-F11-4.github.io/main/images/zhiwei94.png" height="150" /> |**TAN ZHI WEI** |
-<img src="https://CS2103-AY1819S1-F11-4.github.io/main/images/aspiringdevslog.png" height="150" /> |**TANG WEE JIE LESLIE** |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/olivercheok20.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**OLIVER CHEOK** |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/ybchen97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEN YUANBO** |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/chaitanyabaranwal.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHAITANYA BARANWAL** |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/larrylawl.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LAW ANN LIAT LARRY** |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/chowyiyin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHOW YI YIN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## F10-1
+## CS2103-F10-1
 
-<img src="https://CS2103-AY1819S1-F10-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -245,44 +281,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## F10-1
+## CS2103-F10-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-F10-1.github.io/main/images/jroberts91.png" height="150" /> |**DE JESUS JOSHUA ROBERT DE GUZMAN** |
-<img src="https://CS2103-AY1819S1-F10-1.github.io/main/images/elliottan.png" height="150" /> |**ELLIOT TAN YEW HAN** |
-<img src="https://CS2103-AY1819S1-F10-1.github.io/main/images/choojeremy.png" height="150" /> |**JEREMY CHOO WUN KA** |
-<img src="https://CS2103-AY1819S1-F10-1.github.io/main/images/kokjianyu.png" height="150" /> |**KOK JIAN YU** |
-<img src="https://CS2103-AY1819S1-F10-1.github.io/main/images/rnardha.png" height="150" /> |**RAYNARD HADIWIDJAJA** |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/francislow.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LOW SIU YUAN, FRANCIS** |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/crazoter.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE WEI REN MATTHEW** |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/gabrielchao.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHAO FANG HOW, GABRIEL** |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/cheongsiuhong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEONG SIU HONG** |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/sandydays.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**RAMACHANDRAN SANDHYA** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## F10-2
+## CS2103-F10-2
 
-<img src="https://CS2103-AY1819S1-F10-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -299,44 +343,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## F10-2
+## CS2103-F10-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-F10-2.github.io/main/images/wn96.png" height="150" /> |**ANG WEI NENG** |
-<img src="https://CS2103-AY1819S1-F10-2.github.io/main/images/prokarius.png" height="150" /> |**KUM WEI KUAN** |
-<img src="https://CS2103-AY1819S1-F10-2.github.io/main/images/fongyuan.png" height="150" /> |**LIM FONG YUAN** |
-<img src="https://CS2103-AY1819S1-F10-2.github.io/main/images/kelly9373.png" height="150" /> |**LIU XIAOHANG** |
-<img src="https://CS2103-AY1819S1-F10-2.github.io/main/images/xantho09.png" height="150" /> |**MUHAMMAD IRHAM RASYIDI BIN ZAINAL** |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/zhangxuan97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ZHANG XUAN** |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/teika97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TIE YING KATHLEEN** |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/kelvinnharris.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KELVIN HARRIS** |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/evelynejuliet.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**EVELYNE JULIET** |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/manasvegi.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**VEGI MANAS** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## F10-3
+## CS2103-F10-3
 
-<img src="https://CS2103-AY1819S1-F10-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -353,44 +405,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## F10-3
+## CS2103-F10-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-F10-3.github.io/main/images/dongsiji.png" height="150" /> |**DONG SIJI** |
-<img src="https://CS2103-AY1819S1-F10-3.github.io/main/images/nightyeti.png" height="150" /> |**GAN CHIN YAO** |
-<img src="https://CS2103-AY1819S1-F10-3.github.io/main/images/liaujianjie.png" height="150" /> |**LIAU JIAN JIE** |
-<img src="https://CS2103-AY1819S1-F10-3.github.io/main/images/wailunlim.png" height="150" /> |**LIM WAI LUN** |
-<img src="https://CS2103-AY1819S1-F10-3.github.io/main/images/eehooi.png" height="150" /> |**NG EE HOOI** |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/khiangleon.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SIM KHIANG LEON** |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/shaunngtx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NG TZE XUAN, SHAUN** |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/neoshh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NEO SI HAO** |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/jxofficial.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KENG JUN XIAN** |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/wilfredbtan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WILFRED BRADLEY TAN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## F10-4
+## CS2103T-F11-1
 
-<img src="https://CS2103-AY1819S1-F10-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -407,44 +467,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## F10-4
+## CS2103T-F11-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-F10-4.github.io/main/images/azhikai.png" height="150" /> |**ANG ZHI KAI** |
-<img src="https://CS2103-AY1819S1-F10-4.github.io/main/images/yican95.png" height="150" /> |**LEE YI CAN** |
-<img src="https://CS2103-AY1819S1-F10-4.github.io/main/images/hyperionnkj.png" height="150" /> |**NEO KAI JUN** |
-<img src="https://CS2103-AY1819S1-F10-4.github.io/main/images/m4dkip.png" height="150" /> |**ONG MING XIAN** |
-<img src="https://CS2103-AY1819S1-F10-4.github.io/main/images/rebstan97.png" height="150" /> |**TAN YING ZI REBECCA** |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/brianyenna.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YEN REN ZUO BRIAN** |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/hcwong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JOSHUA WONG HSIEN-CHIEN** |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/john0227.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KYUNGHO MIN** |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/joanna-yja.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YAP JIA AUN** |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/abhiman2211.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ABHIMAN YADAV** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T10-1
+## CS2103T-F11-2
 
-<img src="https://CS2103-AY1819S1-T10-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -461,43 +529,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T10-1
+## CS2103T-F11-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T10-1.github.io/main/images/bryanwongweiheng.png" height="150" /> |**BRYAN WONG WEI HENG** |
-<img src="https://CS2103-AY1819S1-T10-1.github.io/main/images/sleepysanjinli.png" height="150" /> |**LI YIXIN** |
-<img src="https://CS2103-AY1819S1-T10-1.github.io/main/images/pangjiahao.png" height="150" /> |**PANG JIA HAO** |
-<img src="https://CS2103-AY1819S1-T10-1.github.io/main/images/vig42.png" height="150" /> |**VIGHNESH RAMESH IYER** |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/jermytan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN KAI QUN JEREMY** |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/kalsyc.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SIM JUN YUEN, DARREN** |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/liawsy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIAW SIEW YEE** |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/xiaoyu-nus.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIU XIAOYU** |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/febee99.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**PHOEBE CHAN KAR HUI** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T10-2
+## CS2103T-F11-3
 
-<img src="https://CS2103-AY1819S1-T10-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -514,43 +591,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T10-2
+## CS2103T-F11-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T10-2.github.io/main/images/florafong97.png" height="150" /> |**FONG MEI YEE, FLORA** |
-<img src="https://CS2103-AY1819S1-T10-2.github.io/main/images/giamjuxian.png" height="150" /> |**GIAM JU XIAN** |
-<img src="https://CS2103-AY1819S1-T10-2.github.io/main/images/elroyhaw.png" height="150" /> |**HAW ZHE HAO ELROY** |
-<img src="https://CS2103-AY1819S1-T10-2.github.io/main/images/yangyafei1998.png" height="150" /> |**YANG YAFEI** |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/niqiukun.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NI TIANZHEN** |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/jityong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEOW JIT YONG** |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/eejian97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE EE JIAN** |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/hooncp.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HOON CHEE PING** |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/yhtingg.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YANG HUI TING** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T10-3
+## CS2103T-F11-4
 
-<img src="https://CS2103-AY1819S1-T10-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -567,43 +653,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T10-3
+## CS2103T-F11-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T10-3.github.io/main/images/danielkoh94.png" height="150" /> |**DANIEL KOH CHONG XIANG** |
-<img src="https://CS2103-AY1819S1-T10-3.github.io/main/images/alexehrs.png" height="150" /> |**EHRS ALEXANDER ANDERS** |
-<img src="https://CS2103-AY1819S1-T10-3.github.io/main/images/harryqu123.png" height="150" /> |**QU HAOXUAN** |
-<img src="https://CS2103-AY1819S1-T10-3.github.io/main/images/russellong95.png" height="150" /> |**RUSSELL ONG REN-YIH** |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/parcly-taxel.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JEREMY TAN JIERUI** |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/auxinnn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ZHANG DONGJUN** |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/shuiyao-sg.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SHUI YAO** |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/shirleywangxt.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WANG XUETING** |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/irene-lly.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE LI YING IRENE** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T13-1
+## CS2103T-F12-1
 
-<img src="https://CS2103-AY1819S1-T13-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -620,44 +715,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T13-1
+## CS2103T-F12-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T13-1.github.io/main/images/cjuanvip.png" height="150" /> |**CHEN JUAN** |
-<img src="https://CS2103-AY1819S1-T13-1.github.io/main/images/chenlu-chua.png" height="150" /> |**CHUA CHEN LU** |
-<img src="https://CS2103-AY1819S1-T13-1.github.io/main/images/lzyandy.png" height="150" /> |**LIU ZHAOYU** |
-<img src="https://CS2103-AY1819S1-T13-1.github.io/main/images/junjiee.png" height="150" /> |**ONG JUN JIE** |
-<img src="https://CS2103-AY1819S1-T13-1.github.io/main/images/hrxiong.png" height="150" /> |**XIONG HAORAN** |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/bruceskellator.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**BRUCE ONG** |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/marcusteh1238.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TEH HAO RUI MARCUS** |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/kyzure.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TIMOTHY YU ZHIWEN** |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/chenggeng97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ONG CHENG GENG** |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/weomucat.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**DENIS TJIA** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T13-2
+## CS2103T-F12-2
 
-<img src="https://CS2103-AY1819S1-T13-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -674,44 +777,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T13-2
+## CS2103T-F12-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T13-2.github.io/main/images/iamrence.png" height="150" /> |**GOH YANG YU, TERENCE** |
-<img src="https://CS2103-AY1819S1-T13-2.github.io/main/images/dankhoo.png" height="150" /> |**KHOO JIN ZHENG DANIEL** |
-<img src="https://CS2103-AY1819S1-T13-2.github.io/main/images/ngeowxiuqi.png" height="150" /> |**NGEOW XIU QI** |
-<img src="https://CS2103-AY1819S1-T13-2.github.io/main/images/abtyx.png" height="150" /> |**TAN YUXUAN** |
-<img src="https://CS2103-AY1819S1-T13-2.github.io/main/images/valensia0711.png" height="150" /> |**VALENSIA SEBASTIANI** |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/q-gabe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**GABRIEL ONG LIAN XIN** |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/sqwq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ZHENG SHIQIAO** |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/reignofcomputer.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JASON CHEE WENG KAY** |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/gachia.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**GABRIEL CHIA WENHAO** |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/wingedevil.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JERROLD TAN YU YI** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T13-3
+## CS2103T-F12-3
 
-<img src="https://CS2103-AY1819S1-T13-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -728,44 +839,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T13-3
+## CS2103T-F12-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T13-3.github.io/main/images/hidingmode.png" height="150" /> |**DAVID CHOO** |
-<img src="https://CS2103-AY1819S1-T13-3.github.io/main/images/handshou.png" height="150" /> |**HANSEL CHIA CHEN YOUNG** |
-<img src="https://CS2103-AY1819S1-T13-3.github.io/main/images/nancyquris.png" height="150" /> |**LIU YINGNAN** |
-<img src="https://CS2103-AY1819S1-T13-3.github.io/main/images/haydenphillips.png" height="150" /> |**PHILLIPS HAYDEN ROY** |
-<img src="https://CS2103-AY1819S1-T13-3.github.io/main/images/gongjie663746.png" height="150" /> |**QI GONGJIE** |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/e0031374.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ONG YIN MING JONAS** |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/stevenwjy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**STEVEN WIJAYA** |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/yehezkiel01.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YEHEZKIEL RAYMUNDO THEODOROES** |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/shiweing.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NG SHI WEI** |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/tanlk99.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN LIKAI** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T13-4
+## CS2103T-F12-4
 
-<img src="https://CS2103-AY1819S1-T13-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -782,44 +901,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T13-4
+## CS2103T-F12-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T13-4.github.io/main/images/alexkmj.png" height="150" /> |**ALEX KOH** |
-<img src="https://CS2103-AY1819S1-T13-4.github.io/main/images/jeremiah-ang.png" height="150" /> |**JEREMIAH ANG YONG EN** |
-<img src="https://CS2103-AY1819S1-T13-4.github.io/main/images/jeremyyew.png" height="150" /> |**JEREMY YEW ERN** |
-<img src="https://CS2103-AY1819S1-T13-4.github.io/main/images/josephambe.png" height="150" /> |**JOSEPH AMBER KIM** |
-<img src="https://CS2103-AY1819S1-T13-4.github.io/main/images/bugeyedbug.png" height="150" /> |**KONG JUN YIN** |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/xinmingzh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ZHOU XINMING** |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/davidcwh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHIA WEI HAO, DAVID** |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/waynefong0401.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**FANG WEIWEN** |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/waifonglee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE WAI FONG** |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/weiijiie.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HUANG WEIJIE** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T09-1
+## CS2103T-F13-1
 
-<img src="https://CS2103-AY1819S1-T09-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -836,44 +963,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T09-1
+## CS2103T-F13-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T09-1.github.io/main/images/tuesmiddt.png" height="150" /> |**CHEN SHAOWEI** |
-<img src="https://CS2103-AY1819S1-T09-1.github.io/main/images/indocomsoft.png" height="150" /> |**JULIUS PUTRA TANU SETIAJI** |
-<img src="https://CS2103-AY1819S1-T09-1.github.io/main/images/jaypeeteedee.png" height="150" /> |**PHUA TAI DA JOHN** |
-<img src="https://CS2103-AY1819S1-T09-1.github.io/main/images/taneliang.png" height="150" /> |**TAN E-LIANG** |
-<img src="https://CS2103-AY1819S1-T09-1.github.io/main/images/zxjtan.png" height="150" /> |**TAN ZONG XIAN** |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/hoholyin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HO HOL YIN** |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/cronyxx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YEO TONG** |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/seeziyang.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SEE ZI YANG** |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/shiyao821.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WANG SHIYAO** |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/linyutinglyt.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIN YUTING** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T09-2
+## CS2103T-F13-2
 
-<img src="https://CS2103-AY1819S1-T09-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -890,44 +1025,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T09-2
+## CS2103T-F13-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T09-2.github.io/main/images/lessthanfree.png" height="150" /> |**DAVID GOH ZHI WEI** |
-<img src="https://CS2103-AY1819S1-T09-2.github.io/main/images/tomforge.png" height="150" /> |**FOO GUO WEI** |
-<img src="https://CS2103-AY1819S1-T09-2.github.io/main/images/leeyjjoel.png" height="150" /> |**LEE YI JIE JOEL** |
-<img src="https://CS2103-AY1819S1-T09-2.github.io/main/images/truongthanh2606.png" height="150" /> |**NGUYEN TRONG TRUONG THANH** |
-<img src="https://CS2103-AY1819S1-T09-2.github.io/main/images/yujiatay.png" height="150" /> |**TAY YU JIA** |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/jon-chua.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHUA JIA CHENG, JON** |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/seanlowjk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LOW JUN KAI, SEAN** |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/fatclarence.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KOH WEE LUN, CLARENCE** |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/robytanama.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ROBY TANAMA** |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/raikonen.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHOO ZE YUAN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T09-3
+## CS2103T-F13-3
 
-<img src="https://CS2103-AY1819S1-T09-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -944,44 +1087,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T09-3
+## CS2103T-F13-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T09-3.github.io/main/images/benedictcss.png" height="150" /> |**BENEDICT CHUA SONG SHING** |
-<img src="https://CS2103-AY1819S1-T09-3.github.io/main/images/ihwk1996.png" height="150" /> |**IVAN HO WENG KWONG** |
-<img src="https://CS2103-AY1819S1-T09-3.github.io/main/images/j-lum.png" height="150" /> |**LUM KA FAI JEFFRY** |
-<img src="https://CS2103-AY1819S1-T09-3.github.io/main/images/chivent.png" height="150" /> |**ONG KAI LE** |
-<img src="https://CS2103-AY1819S1-T09-3.github.io/main/images/lancelotwillow.png" height="150" /> |**ZHANG TIANYANG** |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/choongyx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHOONG YONG XIN** |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/nanosync.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**BENEDICT PAK HONG JUN** |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/minpyaemoe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**MIN PYAE MOE** |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/austinsantoso.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**AUSTIN SANTOSO** |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/jonathantjendana.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JONATHAN TJENDANA** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T09-4
+## CS2103T-F13-4
 
-<img src="https://CS2103-AY1819S1-T09-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -998,44 +1149,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T09-4
+## CS2103T-F13-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T09-4.github.io/main/images/alvinnyk.png" height="150" /> |**ALVIN NG YAN KIT** |
-<img src="https://CS2103-AY1819S1-T09-4.github.io/main/images/lexzt.png" height="150" /> |**FONG ZHI ZHONG** |
-<img src="https://CS2103-AY1819S1-T09-4.github.io/main/images/yuroutang.png" height="150" /> |**TANG YUROU** |
-<img src="https://CS2103-AY1819S1-T09-4.github.io/main/images/dlworldpeace.png" height="150" /> |**XIAO DELONG** |
-<img src="https://CS2103-AY1819S1-T09-4.github.io/main/images/zhuanyu.png" height="150" /> |**YEO ZHUAN YU** |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/wongchuankai.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WONG CHUAN KAI** |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/heze8.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CALEB GOH EE GEN** |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/jcjjjared.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHIANG JIAJUN JARED** |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/tswuxia.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WU XIA** |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/michelleykw.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**MICHELLE YONG KAI WEN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T12-1
+## CS2103T-F14-1
 
-<img src="https://CS2103-AY1819S1-T12-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1052,44 +1211,51 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T12-1
+## CS2103T-F14-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T12-1.github.io/main/images/snookerballs.png" height="150" /> |**JAIME CHOW WEN JUAN** |
-<img src="https://CS2103-AY1819S1-T12-1.github.io/main/images/jasonchong96.png" height="150" /> |**JASON CHONG YI SHENG** |
-<img src="https://CS2103-AY1819S1-T12-1.github.io/main/images/jcjxwy.png" height="150" /> |**JIANG CHEN** |
-<img src="https://CS2103-AY1819S1-T12-1.github.io/main/images/jonathantjm.png" height="150" /> |**JONATHAN TAN JIT MING** |
-<img src="https://CS2103-AY1819S1-T12-1.github.io/main/images/winsonhys.png" height="150" /> |**WINSON HENG YONG SENG** |
+<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/ning-sy210.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NING SHENGYING** |
+<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/alxkohh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ALEX KOH NAN YU** |
+<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/limhawjia.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM HAW JIA** |
+<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/zhangj1an.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ZHANG JIAN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T12-2
+## CS2103T-F14-2
 
-<img src="https://CS2103-AY1819S1-T12-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1106,44 +1272,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T12-2
+## CS2103T-F14-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T12-2.github.io/main/images/lixinze777.png" height="150" /> |**LI XINZE** |
-<img src="https://CS2103-AY1819S1-T12-2.github.io/main/images/pratyushghosh.png" height="150" /> |**PRATYUSH GHOSH** |
-<img src="https://CS2103-AY1819S1-T12-2.github.io/main/images/shuiherng.png" height="150" /> |**QUEK SHUI HERNG** |
-<img src="https://CS2103-AY1819S1-T12-2.github.io/main/images/kumuwu.png" height="150" /> |**ZHANG LIZHI** |
-<img src="https://CS2103-AY1819S1-T12-2.github.io/main/images/zzg229.png" height="150" /> |**ZHOU ZEGANG** |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/teoshyanjie.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TEO SHYAN JIE** |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/xuerneas.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**XU TU NAN** |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/ngswbryan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**BRYAN NG SOON WEI** |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/kerwin97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM SHI CHEN KERWIN** |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/caesarpjz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CAESAR PANG JIAN ZHANG** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T12-3
+## CS2103T-F14-3
 
-<img src="https://CS2103-AY1819S1-T12-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1160,44 +1334,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T12-3
+## CS2103T-F14-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T12-3.github.io/main/images/crimsonang.png" height="150" /> |**ANG CHEN SHIN** |
-<img src="https://CS2103-AY1819S1-T12-3.github.io/main/images/woodnsuns.png" height="150" /> |**LIN XU** |
-<img src="https://CS2103-AY1819S1-T12-3.github.io/main/images/park-sang-jun.png" height="150" /> |**PARK SANG JUN** |
-<img src="https://CS2103-AY1819S1-T12-3.github.io/main/images/thaddeuslzy.png" height="150" /> |**THADDEUS LIM ZHI YU** |
-<img src="https://CS2103-AY1819S1-T12-3.github.io/main/images/hotarumin.png" height="150" /> |**XIAO YILIN** |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/jun-ha0.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NG JUN HAO** |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/lyskevin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM YONG SHEN, KEVIN** |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/brebeek.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HU YUCHEN** |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/nordic96.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KO GI HUN** |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/uggi121.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SUDHARSHAN MADHAVAN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T12-4
+## CS2103T-F14-4
 
-<img src="https://CS2103-AY1819S1-T12-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1214,44 +1396,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T12-4
+## CS2103T-F14-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T12-4.github.io/main/images/jasonvank.png" height="150" /> |**FAN WENKAI** |
-<img src="https://CS2103-AY1819S1-T12-4.github.io/main/images/leo-1997.png" height="150" /> |**LI CHANGRUI** |
-<img src="https://CS2103-AY1819S1-T12-4.github.io/main/images/xllliu.png" height="150" /> |**LIU TIANYU** |
-<img src="https://CS2103-AY1819S1-T12-4.github.io/main/images/zhengwei143.png" height="150" /> |**TAN ZHENG WEI** |
-<img src="https://CS2103-AY1819S1-T12-4.github.io/main/images/yshu7.png" height="150" /> |**YANG SHUQI** |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/samyj2606.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SAM YONG JEK** |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/junnbang.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN JUN BANG** |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/argvampir.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**RUSHAGRID KUNTHAMAS** |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/tysng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SONG TIANYI** |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/cheeyou.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEE YOU** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T16-1
+## CS2103-T11-1
 
-<img src="https://CS2103-AY1819S1-T16-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1268,44 +1458,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T16-1
+## CS2103-T11-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T16-1.github.io/main/images/bannified.png" height="150" /> |**CHONG JUN HONG, DOMINIC** |
-<img src="https://CS2103-AY1819S1-T16-1.github.io/main/images/leongshengmin.png" height="150" /> |**LEONG SHENGMIN** |
-<img src="https://CS2103-AY1819S1-T16-1.github.io/main/images/jiholim.png" height="150" /> |**LIM JI HO** |
-<img src="https://CS2103-AY1819S1-T16-1.github.io/main/images/lionelat.png" height="150" /> |**LIONEL TAN JUNZER** |
-<img src="https://CS2103-AY1819S1-T16-1.github.io/main/images/dioptrique.png" height="150" /> |**T ANANDA KUMAR** |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/madanalogy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**MUHAMMAD AHMED BIN ANWAR BAHAJJAJ** |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/atharvjoshi.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JOSHI ATHARV ABHAY** |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/tirameshu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WANG XINMAN** |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/hellopanda128.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIN MEI AN** |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/yoshi275.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NG QIAN JIE CHERYL** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T16-2
+## CS2103-T11-2
 
-<img src="https://CS2103-AY1819S1-T16-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1322,44 +1520,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T16-2
+## CS2103-T11-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T16-2.github.io/main/images/caephler.png" height="150" /> |**GABRIEL TAN CHUAN EN** |
-<img src="https://CS2103-AY1819S1-T16-2.github.io/main/images/keithtan.png" height="150" /> |**KEITH TAN JIA WEN** |
-<img src="https://CS2103-AY1819S1-T16-2.github.io/main/images/darieca.png" height="150" /> |**LIM ZI HUI DARIECA** |
-<img src="https://CS2103-AY1819S1-T16-2.github.io/main/images/wenshei.png" height="150" /> |**ONG WEN SHEI** |
-<img src="https://CS2103-AY1819S1-T16-2.github.io/main/images/triger15.png" height="150" /> |**ONG YU-HE** |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/sendorasleft.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NG YONG KUAN** |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/cheongliyuan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEONG LI YUAN** |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/mistyrainforest.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN WEI, ADAM** |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/aaronluk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LUK CHI HENG** |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/chensu2436.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEN SU** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T16-3
+## CS2103-T11-3
 
-<img src="https://CS2103-AY1819S1-T16-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1376,44 +1582,51 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T16-3
+## CS2103-T11-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T16-3.github.io/main/images/juxd.png" height="150" /> |**JULIUS SANDER NUGROHO** |
-<img src="https://CS2103-AY1819S1-T16-3.github.io/main/images/kohchihao.png" height="150" /> |**KOH CHI HAO** |
-<img src="https://CS2103-AY1819S1-T16-3.github.io/main/images/monmanuela.png" height="150" /> |**MONIKA MANUELA HENGKI** |
-<img src="https://CS2103-AY1819S1-T16-3.github.io/main/images/rrtheonlyone.png" height="150" /> |**RAHUL RAJESH** |
-<img src="https://CS2103-AY1819S1-T16-3.github.io/main/images/jinyingtan.png" height="150" /> |**TAN JIN YING** |
+<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/ooimingsheng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**OOI MING SHENG** |
+<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/howeichin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HO WEI CHIN** |
+<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/belbel98.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHRISTABEL TEO HWEE TENG** |
+<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/shawnkoh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KOH ZHENG QIANG SHAWN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## T16-4
+## CS2103-T14-1
 
-<img src="https://CS2103-AY1819S1-T16-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1430,43 +1643,51 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## T16-4
+## CS2103-T14-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-T16-4.github.io/main/images/hilda-ang.png" height="150" /> |**HILDA ANGGRAENI** |
-<img src="https://CS2103-AY1819S1-T16-4.github.io/main/images/rongjiecomputer.png" height="150" /> |**LOO RONG JIE** |
-<img src="https://CS2103-AY1819S1-T16-4.github.io/main/images/romaromama.png" height="150" /> |**REZKY ARIZAPUTRA** |
-<img src="https://CS2103-AY1819S1-T16-4.github.io/main/images/gabrielyik.png" height="150" /> |**YIK REN JUN, GABRIEL** |
+<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/xelyion.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YOON JIA JUN, KEN** |
+<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/sebastianlie.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SEBASTIAN LIE HSIEN YONG** |
+<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/sheryltay28.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAY SHERYL** |
+<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/weikiat97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LOH WEI KIAT** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W10-1
+## CS2103-T14-2
 
-<img src="https://CS2103-AY1819S1-W10-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1483,44 +1704,51 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W10-1
+## CS2103-T14-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W10-1.github.io/main/images/spikerheado1234.png" height="150" /> |**AHAN GUPTA** |
-<img src="https://CS2103-AY1819S1-W10-1.github.io/main/images/alistairong.png" height="150" /> |**ALISTAIR ONG NAI HIAN** |
-<img src="https://CS2103-AY1819S1-W10-1.github.io/main/images/kongzijin.png" height="150" /> |**KONG ZIJIN** |
-<img src="https://CS2103-AY1819S1-W10-1.github.io/main/images/xueyantian.png" height="150" /> |**TIAN XUEYAN** |
-<img src="https://CS2103-AY1819S1-W10-1.github.io/main/images/waytan.png" height="150" /> |**WAY TAN** |
+<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/ahmadhatziq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**AHMAD HATZIQ B MOHAMAD** |
+<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/ellieyee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ELLIE YEE WEN NA** |
+<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/lumos309.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN YUGIN** |
+<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/zihawkeye.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YEW KAI ZHE** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W10-2
+## CS2103-T14-3
 
-<img src="https://CS2103-AY1819S1-W10-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1537,44 +1765,51 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W10-2
+## CS2103-T14-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W10-2.github.io/main/images/chelchia.png" height="150" /> |**CHELSEA CHIA JIA HWA** |
-<img src="https://CS2103-AY1819S1-W10-2.github.io/main/images/yewwoei.png" height="150" /> |**LOW YEW WOEI** |
-<img src="https://CS2103-AY1819S1-W10-2.github.io/main/images/evanmok2401.png" height="150" /> |**MOK KEN HAN, EVAN** |
-<img src="https://CS2103-AY1819S1-W10-2.github.io/main/images/katenhy.png" height="150" /> |**NG HOI YING** |
-<img src="https://CS2103-AY1819S1-W10-2.github.io/main/images/meena567.png" height="150" /> |**SOLAYAPPAN MEENAKSHI** |
+<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/lzw12345.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LING ZHI WEI** |
+<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/oscar-b-liang.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIANG BOYUAN** |
+<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/akimatsu98.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HE SONGCHI** |
+<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/jolynnn8d.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JOLYN TAN SI QI** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W10-3
+## CS2103-T14-4
 
-<img src="https://CS2103-AY1819S1-W10-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1591,44 +1826,51 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W10-3
+## CS2103-T14-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W10-3.github.io/main/images/adeeldb.png" height="150" /> |**ADEEL DHEDHI BHYRIA** |
-<img src="https://CS2103-AY1819S1-W10-3.github.io/main/images/thejrlinguist.png" height="150" /> |**CHOW KENG JI** |
-<img src="https://CS2103-AY1819S1-W10-3.github.io/main/images/adjscent.png" height="150" /> |**SOH JASON** |
-<img src="https://CS2103-AY1819S1-W10-3.github.io/main/images/yao-feng.png" height="150" /> |**WANG YAOFENG** |
-<img src="https://CS2103-AY1819S1-W10-3.github.io/main/images/agendazhang.png" height="150" /> |**ZHANG CHENG** |
+<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/limxuanhui.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM XUAN HUI** |
+<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/muhammadaljunied.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SYED MUHAMMAD BIN ABDULLAH ALJUNIED** |
+<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/cary-xx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**XIU ZIHENG** |
+<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/choonx99.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NG CHOON WAH** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W10-4
+## CS2103-T16-1
 
-<img src="https://CS2103-AY1819S1-W10-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1645,44 +1887,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W10-4
+## CS2103-T16-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W10-4.github.io/main/images/barkhyehyeon.png" height="150" /> |**BARK HYEHYEON** |
-<img src="https://CS2103-AY1819S1-W10-4.github.io/main/images/benntay.png" height="150" /> |**BENN TAY GUOBIN** |
-<img src="https://CS2103-AY1819S1-W10-4.github.io/main/images/limshiminjonathan.png" height="150" /> |**LIM SHI MIN** |
-<img src="https://CS2103-AY1819S1-W10-4.github.io/main/images/alecngzw.png" height="150" /> |**NG ZHEN WEI ALEC** |
-<img src="https://CS2103-AY1819S1-W10-4.github.io/main/images/junrong09.png" height="150" /> |**YUEN JUN RONG** |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/chen-xi-cx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEN XI** |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/scwaterbear.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**STEPHEN CHUA RONG ZHI** |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/zhanghuafan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ZHANG XIAOYU** |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/jyx11011.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JIANG YUXIN** |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/whneo97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NEO WEIHONG** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W13-1
+## CS2103-T16-2
 
-<img src="https://CS2103-AY1819S1-W13-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1699,44 +1949,51 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W13-1
+## CS2103-T16-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W13-1.github.io/main/images/a19sean.png" height="150" /> |**AUYOK SEAN** |
-<img src="https://CS2103-AY1819S1-W13-1.github.io/main/images/chantca95.png" height="150" /> |**CHAN TJUN CHUANG, ALEX** |
-<img src="https://CS2103-AY1819S1-W13-1.github.io/main/images/ayushchatto.png" height="150" /> |**CHATTORAJ AYUSH** |
-<img src="https://CS2103-AY1819S1-W13-1.github.io/main/images/denzelchung.png" height="150" /> |**CHUNG ZHI LI, DENZEL** |
-<img src="https://CS2103-AY1819S1-W13-1.github.io/main/images/zioul123.png" height="150" /> |**KIM-CHAN TZE HUI, LOUIZ** |
+<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/tohcejasmine.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TOH CHOOI ERN, JASMINE** |
+<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/tuandingwei.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TUAN DING WEI** |
+<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/joannasara.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JOANNA SARA SUSAN PURBA** |
+<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/victorvic54.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**VICTOR VARIAN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W13-2
+## CS2103-T16-3
 
-<img src="https://CS2103-AY1819S1-W13-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1753,44 +2010,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W13-2
+## CS2103-T16-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W13-2.github.io/main/images/cjiefeng.png" height="150" /> |**CHAI JIE FENG** |
-<img src="https://CS2103-AY1819S1-W13-2.github.io/main/images/kaitingpeck.png" height="150" /> |**PECK KAI TING** |
-<img src="https://CS2103-AY1819S1-W13-2.github.io/main/images/pratyayj.png" height="150" /> |**PRATYAY JAIDEV** |
-<img src="https://CS2103-AY1819S1-W13-2.github.io/main/images/ryantanwk.png" height="150" /> |**RYAN TAN WEI KEAT** |
-<img src="https://CS2103-AY1819S1-W13-2.github.io/main/images/yap666y.png" height="150" /> |**YAP YU WEI** |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/livingonedge.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**BILL CHEE** |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/moziliar.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**MO ZONGRAN** |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/gary-lgy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIU GUANGYUAN** |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/cutieprobe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIU ZIMU** |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/jonchan51.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHAN WAI HON JONATHAN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W13-3
+## CS2103-T16-4
 
-<img src="https://CS2103-AY1819S1-W13-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1807,44 +2072,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W13-3
+## CS2103-T16-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W13-3.github.io/main/images/andrewtanjs.png" height="150" /> |**ANDREW TAN JIN SHEN** |
-<img src="https://CS2103-AY1819S1-W13-3.github.io/main/images/cyrusguo.png" height="150" /> |**CYRUS GUO XUHUI** |
-<img src="https://CS2103-AY1819S1-W13-3.github.io/main/images/preethi-d.png" height="150" /> |**DEVARAJAN PREETHI** |
-<img src="https://CS2103-AY1819S1-W13-3.github.io/main/images/alyip98.png" height="150" /> |**YIP SENG YEUN** |
-<img src="https://CS2103-AY1819S1-W13-3.github.io/main/images/yogtew.png" height="150" /> |**YOGUSVI TEWARI** |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/rongrongrr.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHAN JING RONG** |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/jessicax941.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JESSICA PHUA SHU XIN** |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/dandford.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ONG MING CHUNG** |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/yuhongtay.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAY YU HONG** |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/swampertx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN YEE JIAN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W13-4
+## CS2103T-T09-1
 
-<img src="https://CS2103-AY1819S1-W13-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1861,44 +2134,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W13-4
+## CS2103T-T09-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W13-4.github.io/main/images/andlimey.png" height="150" /> |**ANDY CHAN WAI YEE** |
-<img src="https://CS2103-AY1819S1-W13-4.github.io/main/images/susterdrifter.png" height="150" /> |**ANTHONY HALIM** |
-<img src="https://CS2103-AY1819S1-W13-4.github.io/main/images/lywjoel.png" height="150" /> |**LEE YI WEI, JOEL** |
-<img src="https://CS2103-AY1819S1-W13-4.github.io/main/images/ongyz.png" height="150" /> |**ONG YAN ZHI** |
-<img src="https://CS2103-AY1819S1-W13-4.github.io/main/images/ooihuiying.png" height="150" /> |**OOI HUI YING** |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/1nefootstep.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEONG SHEU XIANG** |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/onearmyj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEN YI JUN** |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/oscarsu97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**OSCAR SU ZHEN HONG** |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/ernestyyh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YEO YIK HWEE ERNEST** |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/kxxmxxx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEW KAI MING** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W12-1
+## CS2103T-T09-2
 
-<img src="https://CS2103-AY1819S1-W12-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1915,43 +2196,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W12-1
+## CS2103T-T09-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W12-1.github.io/main/images/dan-delion.png" height="150" /> |**BOBBIE RAMADHANI SOEDIRGO** |
-<img src="https://CS2103-AY1819S1-W12-1.github.io/main/images/plty.png" height="150" /> |**JERRELL EZRALEMUEL** |
-<img src="https://CS2103-AY1819S1-W12-1.github.io/main/images/kevvvinn.png" height="150" /> |**LAW YONG KHAN, KEVIN** |
-<img src="https://CS2103-AY1819S1-W12-1.github.io/main/images/swiftkage.png" height="150" /> |**LIM YU XI** |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/weihaw08.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HO WEI HAW** |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/t-cheepeng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN CHEE PENG** |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/jietung.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHAI JIE TUNG** |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/garylyp.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM YAN PENG, GARY** |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/kwekke.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KWEK KEE EN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W12-2
+## CS2103T-T09-3
 
-<img src="https://CS2103-AY1819S1-W12-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -1968,44 +2258,51 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W12-2
+## CS2103T-T09-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W12-2.github.io/main/images/aaditkamat.png" height="150" /> |**AADIT RAHUL KAMAT** |
-<img src="https://CS2103-AY1819S1-W12-2.github.io/main/images/julianc269.png" height="150" /> |**CHEONG KIT WAI, JULIAN** |
-<img src="https://CS2103-AY1819S1-W12-2.github.io/main/images/weiqing-nic.png" height="150" /> |**LEE WEI QING** |
-<img src="https://CS2103-AY1819S1-W12-2.github.io/main/images/xiaoyeong.png" height="150" /> |**LOU SHAW YEONG** |
-<img src="https://CS2103-AY1819S1-W12-2.github.io/main/images/bellaaarh.png" height="150" /> |**YSABELLA TAN YU LIN** |
+<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/carbongrid.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**DANIEL TAN JUN XIAN** |
+<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/sakurablossom.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LUM CHANG XIN SHAWN** |
+<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/wongsm7.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WONG SHUN MIN** |
+<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/woon17.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WEN SHUFA** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W12-3
+## CS2103T-T09-4
 
-<img src="https://CS2103-AY1819S1-W12-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2022,44 +2319,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W12-3
+## CS2103T-T09-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W12-3.github.io/main/images/junhui2778.png" height="150" /> |**CHUA JUN HUI** |
-<img src="https://CS2103-AY1819S1-W12-3.github.io/main/images/hozongsien.png" height="150" /> |**HO ZONG SIEN** |
-<img src="https://CS2103-AY1819S1-W12-3.github.io/main/images/junwei96.png" height="150" /> |**KOH JUN WEI** |
-<img src="https://CS2103-AY1819S1-W12-3.github.io/main/images/shaniceabigail.png" height="150" /> |**SHANICE ABIGAIL** |
-<img src="https://CS2103-AY1819S1-W12-3.github.io/main/images/cary-xx.png" height="150" /> |**XIU ZIHENG** |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/yeodonghan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YEO DONG HAN** |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/eugeneteu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**EUGENE TEU CHU WEI** |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/zhixianggg.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**OON ZHI XIANG** |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/ubersaiyan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YAN WEI LIANG** |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/qiujiaaa.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**OOI QIU JIA** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W12-4
+## CS2103T-T10-1
 
-<img src="https://CS2103-AY1819S1-W12-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2076,44 +2381,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W12-4
+## CS2103T-T10-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W12-4.github.io/main/images/zzsmao.png" height="150" /> |**CHUA ZHEN HAO** |
-<img src="https://CS2103-AY1819S1-W12-4.github.io/main/images/henryjk.png" height="150" /> |**HENRY JAYAKUSUMA** |
-<img src="https://CS2103-AY1819S1-W12-4.github.io/main/images/spencertan96.png" height="150" /> |**SPENCER TAN WEN HAO** |
-<img src="https://CS2103-AY1819S1-W12-4.github.io/main/images/zackkh95.png" height="150" /> |**TAN KEN HAO ZACHARY** |
-<img src="https://CS2103-AY1819S1-W12-4.github.io/main/images/robertvictoreen.png" height="150" /> |**VICTOREEN ROBERT ELLIOT** |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/marcfyk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**MARC FONG YUNG KIT** |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/ryanytan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**RYAN TAN YU** |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/nishcafe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ANISHA NICOLE JOSEPH** |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/gohsnn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**GOH SI NING** |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/mrnewguy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN YE KAI** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W14-1
+## CS2103T-T10-2
 
-<img src="https://CS2103-AY1819S1-W14-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2130,44 +2443,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W14-1
+## CS2103T-T10-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W14-1.github.io/main/images/aaronseahyh.png" height="150" /> |**AARON SEAH YUHAO** |
-<img src="https://CS2103-AY1819S1-W14-1.github.io/main/images/arsalanc-v2.png" height="150" /> |**ARSALAN CHEEMA** |
-<img src="https://CS2103-AY1819S1-W14-1.github.io/main/images/jjlee050.png" height="150" /> |**LEE ZHUO XUN** |
-<img src="https://CS2103-AY1819S1-W14-1.github.io/main/images/gingivitiss.png" height="150" /> |**SIMANGAN SOPHIA MARIELLE MAGIS** |
-<img src="https://CS2103-AY1819S1-W14-1.github.io/main/images/iamjackslayer.png" height="150" /> |**WONG ZHING JIEH JACK** |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/bigjunnn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIEW JUN WEI** |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/khairulazman1997.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**MUHAMMAD KHAIRUL AZMAN** |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/bakwxh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE WAH** |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/hua-lun.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHUA HUA LUN** |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/yyuanxin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YEO YUAN XIN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W14-2
+## CS2103T-T10-3
 
-<img src="https://CS2103-AY1819S1-W14-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2184,43 +2505,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W14-2
+## CS2103T-T10-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W14-2.github.io/main/images/keenlok.png" height="150" /> |**LAI KEEN LOK** |
-<img src="https://CS2103-AY1819S1-W14-2.github.io/main/images/leongengsea.png" height="150" /> |**LEONG ENG SEA** |
-<img src="https://CS2103-AY1819S1-W14-2.github.io/main/images/jiajunteo.png" height="150" /> |**TEO JIA JUN** |
-<img src="https://CS2103-AY1819S1-W14-2.github.io/main/images/yupeihenry.png" height="150" /> |**YU PEI, HENRY** |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/lrchema.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHANDRASEKARAN HEMA** |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/blimyj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**BRYAN LIM YAN JIE** |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/sianghwee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NG SIANG HWEE** |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/icesiolz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LOW CHENG YI** |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/mannggoo.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM YU HUI** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W14-3
+## CS2103T-T10-4
 
-<img src="https://CS2103-AY1819S1-W14-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2237,44 +2567,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W14-3
+## CS2103T-T10-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W14-3.github.io/main/images/snajef.png" height="150" /> |**DARIEN CHONG YUNG HAN** |
-<img src="https://CS2103-AY1819S1-W14-3.github.io/main/images/gaojiaxin666.png" height="150" /> |**GAO JIAXIN** |
-<img src="https://CS2103-AY1819S1-W14-3.github.io/main/images/omegafishy.png" height="150" /> |**LING ZHI YU** |
-<img src="https://CS2103-AY1819S1-W14-3.github.io/main/images/jeffypie369.png" height="150" /> |**SIE XIANG YI, JEFFERSON** |
-<img src="https://CS2103-AY1819S1-W14-3.github.io/main/images/yuntongzhang.png" height="150" /> |**ZHANG YUNTONG** |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/alvinnyk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ALVIN NG YAN KIT** |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/aidilfbk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**AIDIL FITRAHADI BIN KAMSANI** |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/klementtan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN DE NING, KLEMENT** |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/marqueurs404.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ONG PANG YI MARCUS** |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/yijiee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM YI JIE** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W14-4
+## CS2103T-T11-1
 
-<img src="https://CS2103-AY1819S1-W14-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2291,44 +2629,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W14-4
+## CS2103T-T11-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W14-4.github.io/main/images/darren96.png" height="150" /> |**DARREN ONG YUN KAI** |
-<img src="https://CS2103-AY1819S1-W14-4.github.io/main/images/esmondtan.png" height="150" /> |**ESMOND TAN** |
-<img src="https://CS2103-AY1819S1-W14-4.github.io/main/images/zulq9.png" height="150" /> |**MUHAMMAD ZULQARNAIN BIN RAMLAN** |
-<img src="https://CS2103-AY1819S1-W14-4.github.io/main/images/fzdy1914.png" height="150" /> |**WANG CHAO** |
-<img src="https://CS2103-AY1819S1-W14-4.github.io/main/images/yao-tx.png" height="150" /> |**YAO TENGXIONG** |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/qweiping31415.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**QUEK WEI PING** |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/briyanii.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**FUNG BRIAN PEI-EN** |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/ryoarmanda.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**RYO CHANDRA PUTRA ARMANDA** |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/anqichen9856.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEN ANQI** |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/czkay.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHONG ZI KANG** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W16-1
+## CS2103T-T11-2
 
-<img src="https://CS2103-AY1819S1-W16-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2345,44 +2691,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W16-1
+## CS2103T-T11-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W16-1.github.io/main/images/ericyjw.png" height="150" /> |**ERIC YANG JIA WEI** |
-<img src="https://CS2103-AY1819S1-W16-1.github.io/main/images/javenseow.png" height="150" /> |**JAVEN SEOW YU BIN** |
-<img src="https://CS2103-AY1819S1-W16-1.github.io/main/images/eatorbeeaten.png" height="150" /> |**KOK YUAN** |
-<img src="https://CS2103-AY1819S1-W16-1.github.io/main/images/kengwoon.png" height="150" /> |**SHANNA LIM KENG WOON** |
-<img src="https://CS2103-AY1819S1-W16-1.github.io/main/images/gilgameshtc.png" height="150" /> |**TRAVIS CHING JIA YEA** |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/jascxx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JASON SATHYA CITRO** |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/sreesubbash.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**L.V.SREE SUBBASH** |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/dragontho.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**THO WEN LONG, PAUL** |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/chrischenhui.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEN HUI** |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/kohyida1997.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KOH YI DA** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W16-2
+## CS2103T-T11-3
 
-<img src="https://CS2103-AY1819S1-W16-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2399,44 +2753,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W16-2
+## CS2103T-T11-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W16-2.github.io/main/images/afiqlattif.png" height="150" /> |**MUHAMMAD AFIQ B ABDUL LATTIF** |
-<img src="https://CS2103-AY1819S1-W16-2.github.io/main/images/scrubbius.png" height="150" /> |**NGOH WEN JUN** |
-<img src="https://CS2103-AY1819S1-W16-2.github.io/main/images/kratious.png" height="150" /> |**SEM JING HAN** |
-<img src="https://CS2103-AY1819S1-W16-2.github.io/main/images/sharan8.png" height="150" /> |**THANGAVEL SHARAN** |
-<img src="https://CS2103-AY1819S1-W16-2.github.io/main/images/imarbles.png" height="150" /> |**YEO YI JIA, AMABEL** |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/eshwarkp.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ESHWAR S/O KAMALAPATHY** |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/divinedx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHIA DE XUN** |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/shihaoyap.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YAP SHI HAO** |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/crisgu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**GU CHUNZHI** |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/calvincxz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CALVIN CHEN XINGZHU** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W16-3
+## CS2103T-T11-4
 
-<img src="https://CS2103-AY1819S1-W16-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2453,44 +2815,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W16-3
+## CS2103T-T11-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W16-3.github.io/main/images/garygohyp.png" height="150" /> |**GARY GOH YIPENG** |
-<img src="https://CS2103-AY1819S1-W16-3.github.io/main/images/guestuser0123.png" height="150" /> |**KENNETH GOH JUN TECK** |
-<img src="https://CS2103-AY1819S1-W16-3.github.io/main/images/ngkangtze.png" height="150" /> |**NG KANG TZE** |
-<img src="https://CS2103-AY1819S1-W16-3.github.io/main/images/nelvintan.png" height="150" /> |**TAN THONG CAI, NELVIN** |
-<img src="https://CS2103-AY1819S1-W16-3.github.io/main/images/tristonpang.png" height="150" /> |**TRISTON PANG ERH SYEN** |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/teoha.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**DERRICK TEO HAO YING** |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/eizon05.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KARAN SAPRA** |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/sakshipradyumn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SAKSHI PRADYUMN** |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/ang-zeyu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ANG ZE YU** |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/arjunwangty.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WANG TIANYI** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W16-4
+## CS2103T-T12-1
 
-<img src="https://CS2103-AY1819S1-W16-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2507,44 +2877,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W16-4
+## CS2103T-T12-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W16-4.github.io/main/images/blewjy.png" height="150" /> |**BRYAN LEW JU YU** |
-<img src="https://CS2103-AY1819S1-W16-4.github.io/main/images/clawyq.png" height="150" /> |**LAW YONG QIANG, CLINTON** |
-<img src="https://CS2103-AY1819S1-W16-4.github.io/main/images/99percentile.png" height="150" /> |**LEE YU CONG** |
-<img src="https://CS2103-AY1819S1-W16-4.github.io/main/images/syahiranrafi.png" height="150" /> |**MUHAMMAD SYAHIRAN BIN MOHAMED RAFI** |
-<img src="https://CS2103-AY1819S1-W16-4.github.io/main/images/chestersng.png" height="150" /> |**SNG YU FENG CHESTER** |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/ambhinav.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ABHINAV RAMNATH** |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/arunbecoding.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**RAVI ARUN KUMARR** |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/elsakoh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KOH HUI HUI ELIZABETH** |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/gabrielseow.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SEOW ZHI XIAN GABRIEL** |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/seahlynn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SEAH LYNN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W17-1
+## CS2103T-T12-2
 
-<img src="https://CS2103-AY1819S1-W17-1.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2561,44 +2939,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W17-1
+## CS2103T-T12-2
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W17-1.github.io/main/images/anubh-v.png" height="150" /> |**ANUBHAV** |
-<img src="https://CS2103-AY1819S1-W17-1.github.io/main/images/scalarmotion.png" height="150" /> |**GU WANGFAN** |
-<img src="https://CS2103-AY1819S1-W17-1.github.io/main/images/jhengy.png" height="150" /> |**JIANG HENGYUAN** |
-<img src="https://CS2103-AY1819S1-W17-1.github.io/main/images/marvintxd.png" height="150" /> |**MARVIN TAN XU DONG** |
-<img src="https://CS2103-AY1819S1-W17-1.github.io/main/images/ongspxm.png" height="150" /> |**ONG SHU PENG** |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/charliechoong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHOONG JIN YAO** |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/soilingrogue.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YUAN XINRAN, STANLEY** |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/etlow.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LOW EE TER** |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/ryantay232.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**RYAN TAY JIA JIAN** |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/mackymaguire.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ZHOU TIANYU** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W17-2
+## CS2103T-T12-3
 
-<img src="https://CS2103-AY1819S1-W17-2.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2615,44 +3001,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W17-2
+## CS2103T-T12-3
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W17-2.github.io/main/images/etjk.png" height="150" /> |**EDRIC TEO JIN KAI** |
-<img src="https://CS2103-AY1819S1-W17-2.github.io/main/images/hzf1174.png" height="150" /> |**HE ZHENFENG** |
-<img src="https://CS2103-AY1819S1-W17-2.github.io/main/images/deming16.png" height="150" /> |**LIN DEMING** |
-<img src="https://CS2103-AY1819S1-W17-2.github.io/main/images/rtjl.png" height="150" /> |**REUBEN TAN JUN LIANG** |
-<img src="https://CS2103-AY1819S1-W17-2.github.io/main/images/crimsonjacket.png" height="150" /> |**TAN JIA WANG, DANIEL** |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/changuo79.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ERWIN CHAN GUO XIN** |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/hellodommy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**DOMINIQUE NG WENYI** |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/junhuplim.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM JUN HUP** |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/jeunhoe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**POON JEUN HOE** |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/shawnlsj97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE SHI JIE SHAWN** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W17-3
+## CS2103T-T12-4
 
-<img src="https://CS2103-AY1819S1-W17-3.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2669,44 +3063,52 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W17-3
+## CS2103T-T12-4
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W17-3.github.io/main/images/zenious.png" height="150" /> |**KOH ZHENG WEI** |
-<img src="https://CS2103-AY1819S1-W17-3.github.io/main/images/jeffreyooi.png" height="150" /> |**OOI HENG SENG** |
-<img src="https://CS2103-AY1819S1-W17-3.github.io/main/images/nyxf4ll.png" height="150" /> |**PAKORN UEAREEWORAKUL** |
-<img src="https://CS2103-AY1819S1-W17-3.github.io/main/images/betakuwe.png" height="150" /> |**TAN KUAN WEI BENJAMIN** |
-<img src="https://CS2103-AY1819S1-W17-3.github.io/main/images/derek-hardy.png" height="150" /> |**ZHUANG XINJIE** |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/leonardtay748.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEONARD TAY JIA HAO** |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/dalsontws.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN WEI SHIN DALSON** |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/leowwb.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEOW WEN BIN** |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/shutingy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YANG SHUTING** |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/keiteo.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KEITH TEO XU HUI** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
 
 
 
-## W17-4
+## CS2103T-T13-1
 
-<img src="https://CS2103-AY1819S1-W17-4.github.io/main/images/Ui.png" height="550" /><br>
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
 
 #### {{ icon_team }} Feature fit:
 <div style="font-size:20px">
 
 * **`low`(`1`)**: One of these
-  * target user is too general %%i.e. wider than AB3%%
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
   * target user and/or value proposition not clear from the user guide
   * features don't seem to fit together for the most part
 * **`medium`(`2`)**: Some features fit together but some don't.
 * **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
-* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user. ==i.e., a product that makes sense==
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
 </div>
 
 #### {{ icon_team }} Demo quality:
@@ -2723,24 +3125,1081 @@ Member | Comments <font color="white">------------------------------------------
 
 {{ pagebreak }}
 
-## W17-4
+## CS2103T-T13-1
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://CS2103-AY1819S1-W17-4.github.io/main/images/btzy.png" height="150" /> |**BERNARD TEO ZHI YI** |
-<img src="https://CS2103-AY1819S1-W17-4.github.io/main/images/sijie123.png" height="150" /> |**LIN SI JIE** |
-<img src="https://CS2103-AY1819S1-W17-4.github.io/main/images/kc97ble.png" height="150" /> |**NGUYEN TIEN TRUNG KIEN** |
-<img src="https://CS2103-AY1819S1-W17-4.github.io/main/images/ranaldmiao.png" height="150" /> |**RANALD LAM YUN SHAO** |
-<img src="https://CS2103-AY1819S1-W17-4.github.io/main/images/sidhant007.png" height="150" /> |**SIDHANT BANSAL** |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/therealravager.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ISKANDAR ZULKARNAIEN B SUHAINI** |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/yen-peng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YIP YEN PENG** |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/c-likethis123.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHOW JIA YING** |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/williamryank.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WILLIAM RYAN KUSNADI** |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/simnee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHUA SIM NEE** |
 
 <div style="font-size:20px">
 
-**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-* **`low`(`1`)** : An easy feature %%e.g. make the existing _find_ command case insensitive%%.
-* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%e.g. an _edit_ command that allows editing any field%%.<br>
-  OR a difficult feature with a reasonable implementation but some aspects are not covered %%undo/redo command that only allows a single undo/redo%%.
-* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%undo/redo command that allows multiple undo/redo%%.
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-T13-2
+
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-T13-2
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/shaoyi1997.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HONG SHAO YI** |
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/ambervoong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**VOONG YU XUAN** |
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/dalisc.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHAN DALIS** |
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/arjavibahety.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**BAHETY ARJAVI** |
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/bernicechio.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**BERNICE CHIO HUI YIN** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-T13-3
+
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-T13-3
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/coderstellaj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JIN SHUYUAN** |
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/dawo5010.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**DANIEL WONG YONG SHEN** |
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/kangyeelim.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM KANG YEE** |
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/evondong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**EVON DONG BING BING** |
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/michaelatsh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TANG SHI HUI, MICHAELA** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-T13-4
+
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-T13-4
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/openorclose.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**DARYL TAN** |
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/kxyoke.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YOKE KAI XIN** |
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/na-nazhou.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NA NAZHOU** |
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/tsai-hsiao-han.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TSAI, HSIAO-HAN** |
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/dorcastan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**DORCAS TABITHA TAN** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-T17-1
+
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-T17-1
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/fadisng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SNG JIA MING FADI FARIS** |
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/ccyccyccy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHONG CHEE YUAN** |
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/r-d-d-d.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WANG RUNDING** |
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/jerryk1997.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KWONG CHUNG YUE JERRY** |
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/philipalexanderb.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**PHILIP ALEXANDER BOEDIMAN** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-T17-2
+
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-T17-2
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/bjhoohaha.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ONG BING JUE** |
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/honhaochen.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**HON HAO CHEN** |
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/tishyakhanna97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TISHYA KHANNA** |
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/ngzhaoming.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NG ZHAO MING** |
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/pohlinwei.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**POH LIN WEI** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W11-1
+
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W11-1
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/luwenq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LU WENQI** |
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/le0tan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN YUANHONG** |
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/jiayushe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SHE JIAYU** |
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/tiuweehan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TIU WEE HAN** |
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/seris370.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**YU CHENGHUI** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W11-2
+
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W11-2
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/liakify.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE LIAK GHEE** |
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/johnnzj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JOHN NG ZHENG JIE** |
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/podocarp.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JIA XIAODONG** |
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/aulud.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KEVEN LOO YUQUAN** |
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/daekoon.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM DAEKOON** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W11-3
+
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W11-3
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/junhongt.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TEO JUN HONG** |
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/dvrylc.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHAN KOK JING, DARYL** |
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/walnads.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NADIA ATIQAH BINTE MOHD YAHYA** |
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/jakq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ANG KAI QI** |
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/rohitreddybalam.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**BALAM SAI ROHIT REDDY** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W11-4
+
+<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W11-4
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/iltep64.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**RYAN CHEW JING RONG** |
+<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/fangpinsern.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**FANG PIN SERN** |
+<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/felixnwj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**NG WEN JUN, FELIX** |
+<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/mauricetxs.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN XIANG SHENG, MAURICE** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W12-1
+
+<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W12-1
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/weigenie.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE WEI GEN** |
+<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/joshuaseetss.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JOSHUA SEET SIANG SUEN** |
+<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/lawncegoh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LAWNCE GOH JIA WEI** |
+<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/tanzhanming.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN ZHAN MING** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W12-2
+
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W12-2
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/limerencee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**POH JIA HAO** |
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/lightz96.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE BO QIANG** |
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/krusagiz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**ANG CHIN GUAN, MELVIN** |
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/lye-jw.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LYE JIAN WEN** |
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/kensonoenqh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**OEN QI HAN, KENSON** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W12-3
+
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W12-3
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/joloong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LOONG JIAN HUNG, JOEL** |
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/dingyuchen.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**DING YUCHEN** |
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/berttwm.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN WEI MING, BERTRAND** |
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/wallacelim97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WALLACE LIM** |
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/yewon0303.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**PARK YE WON** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W12-4
+
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W12-4
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/leeyiyuan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LEE YIYUAN** |
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/nexolute.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM WEI JIE, EUGENE** |
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/weiyang13.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TAN WEI YANG** |
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/alaete.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**OLIVIA YU WANZHI** |
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/troomtroom.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KARTIKE KHANDELWAL** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W13-1
+
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W13-1
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/bitterg0d.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WANG RONG SHIRLEY** |
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/alexwxh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**WU XINGHAO, ALEX** |
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/geshuming.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**GE SHUMING** |
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/cowsaysbaa.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**GUO ZILI** |
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/kzrthikz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**MURUGESAN KARTHIKA** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W13-2
+
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W13-2
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/alages97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**K ALAGES** |
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/lumwb.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LUM WEI BOON** |
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/fabbbbbbyy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**FABIAN CHIA HUP PENG** |
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/russell-loh-nus.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**RUSSELL LOH CHUN FA** |
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/jeongyh99.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JEONG YU HAN** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W13-3
+
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W13-3
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/chanjunren.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHAN JUN REN** |
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/sam-limyr.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**LIM YU RONG, SAMUEL** |
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/sahilgat.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**SAHIL S/O SANJEEV GATHANI** |
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/jaesimin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**JASMINE YEO JIA MIN** |
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/ckb055.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEN KAIBIN** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
+</div>
+
+{{ pagebreak }}
+
+
+
+## CS2103T-W13-4
+
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/Ui.png" height="550" 
+onerror="this.src='images/placeholder-large.png';" /><br>
+
+#### {{ icon_team }} Feature fit:
+<div style="font-size:20px">
+
+* **`low`(`1`)**: One of these
+  * target user is too general %%&nbsp;i.e. wider than AB4%%
+  * target user and/or value proposition not clear from the user guide
+  * features don't seem to fit together for the most part
+* **`medium`(`2`)**: Some features fit together but some don't.
+* **`high`(`3`)**: All features fit together but the features are not very high value to the target user.
+* **`excellent`(`4`)**: The target user is clearly defined (not too general) and almost all new features are of
+  high-value to the target user. i.e. the product is very attractive to the target user.
+  ==i.e., a product that makes sense==
+</div>
+
+#### {{ icon_team }} Demo quality:
+<div style="font-size:20px">
+
+- [ ] Started with good overview
+- [ ] Reasonable flow
+- [ ] No evidence of 'winging it' (i.e., some level of prior planning is evident)
+- [ ] Used realistic data
+- [ ] Used enough test data %%i.e., more data than visible in the list view%%
+- [ ] Finished within time 
+</div>
+
+
+{{ pagebreak }}
+
+## CS2103T-W13-4
+
+Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
+-------|---------
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/thwnus.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**TEE HAO WEI** |
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/tcgj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHONG GUANG JUN** |
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/chenjiehan318.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**CHEN JIEHAN** |
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/kenneth-fung.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**KENNETH FUNG CHEN YU** |
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/cambrian-dk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> |**DARYL KOH YI KAI** |
+
+<div style="font-size:20px">
+
+**D. Depth of feature** [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty, depth,
+  and completeness. Note: examples given below assume that AB4 did not have the commands `edit`, `undo`, and `redo`.
+* **`low`(`1`)** : An easy feature %%&nbsp;e.g. make the existing _find_ command case insensitive%%.
+* **`medium`(`2`)** : Moderately difficult feature, barely acceptable implementation %%&nbsp;e.g. an _edit_ command
+  that requires the user to type _all_ fields, even the ones that are not being edited%%.
+* **`high`(`3`)**: One of the below: a moderately difficult feature but fully implemented %%&nbsp;e.g. an _edit_
+  command that allows editing any field%%.<br>
+  OR a difficult feature with a reasonable implementation but some aspects are not covered %%&nbsp;undo/redo command
+  that only allows a single undo/redo%%.
+* **`excellent`(`4`)**: A difficult feature, all reasonable aspects are fully implemented %%&nbsp;undo/redo command
+  that allows multiple undo/redo%%.
 </div>
 
 {{ pagebreak }}
