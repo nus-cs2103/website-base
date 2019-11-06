@@ -198,7 +198,7 @@ Total | 5-10 ==(strict)==
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Duration</span>
 
-* **Strictly 18 minutes for a 5-person team and 15 minutes for a 4-person team.** Exceeding this limit will be penalized. Any set up time will be taken out of your allocated time.
+* **Strictly 18 minutes for a 5-person team, 15 minutes for a 4-person team**, 21 minutes for a 6-person team. Exceeding this limit will be penalized. Any set up time will be taken out of your allocated time.
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Target audience</span>
 
@@ -206,13 +206,38 @@ Total | 5-10 ==(strict)==
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Scope</span>
 
-* **Each person should demo the enhancements they added**. However, it's OK for one member to do all the typing.
-* **Start by introducing yourself**. As the demo is being used for individual evaluations, the evaluators need to know your name.
-* **Each person should demo their part in one go** %%i.e., one person should not appear multiple times in the demo. Reasons: it will interfere with grading as some things are graded individually%%. However, it's OK for one person to give a short intro at the start and appear again later in the demo to demo her features.
-* **Use a reasonable order of presenters**: Subjected to the previous two points, as far as possible, organize the demo to present a cohesive picture of the product as a whole, presented in a logical order. %%Remember to explain the profile of the target user profile and value proposition early in the demo.%%
-* **Showcase how the feature improves the user’s life** rather than simply describe each feature.
+* **First, one person should give an overview of the product**. At the very start of the demo, give a quick overview of the product so that the evaluators get a sense of the full picture early. Include the following:
+  * **What** is it? %%e.g., FooBar is a product to ensure the user takes frequent standing-breaks while working.%%
+  * **Who** is it for? %%e.g., It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods of sitting.%%
+  * **How** does it help? Give an overview of how the product's features help to solve the target problem for the target user %%e.g., The user first sets the parameters such as frequency and targets, and then enters a command to record the start of the sitting time, ... The app shows the length of the sitting periods, and alerts the user if ...%%
+* **Then, each person should demo their feature(s)**. However, it's OK for one member to do all the typing.
+  * **Start by stating your name and your feature(s)**. As the demo is being used for individual evaluations, the evaluators need to know your name and the feature(s) you did.
+  * **Each person should demo their part in one go** %%i.e., one person should not appear multiple times in the demo. Reasons: it will interfere with grading as some things are graded individually%%. However, it's OK for one person to give a short intro at the start and appear again later in the demo to demo her features.
+  * **Use a reasonable order of presenters**: Subjected to the previous two points, as far as possible, organize the demo to present a cohesive picture of the product as a whole, presented in a logical order.
 * **No need to cover design/implementation details** as the manager is not interested in those details.
 * **No need to demo features inherited from AB3** unless they are needed to explain your new features. %%Reason: existing features will not earn you marks, and the audience is already familiar with AB3 features.%%
+* Here is an example:
+  ```
+  [OVERVIEW - 2 minutes]
+    Hi, welcome to the demo of our product FooBar. It is a product to ensure the user takes 
+      frequent standing-breaks while working.
+    It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods
+      of sitting.
+    The user first sets the parameters such as frequency and targets, and then enters a command
+      to record the start of the sitting time, ... The app shows the length of the sitting
+      periods, and alerts the user if ...
+    Now, let's dive in the details of the features.
+    
+  [ADAM - 3 minutes]
+    Hi, I'm Adam. I added the ability for the user to set parameters. When a user stars using
+      FooBar, the app will ask  for compulsory parameters, like this ...
+    ...
+  
+  [BERNICE - 3 minutes]
+    Hi, I'm Bernice. I added the feature to give background notification. 
+    Here's how it works. ...
+    ...
+  ```
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Structure</span>
 
@@ -230,7 +255,8 @@ Total | 5-10 ==(strict)==
  [Instead of this] `Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.`<br>
  [do this] `If Jim needs to postpone the meeting, he can type …`<br>
   It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.  
-  Note that CS2101 demo requirements may differ. Different context → Different requirements.  
+  Note that CS2101 demo requirements may differ. Different context → Different requirements.
+* **Showcase how the feature improves the user’s life** rather than simply describe each feature.
 * **Rehearse the steps well** and ensure you can do a smooth demo. ==Find a [_golden path_](https://www.ibtimes.co.uk/sleight-hand-white-lies-bottle-scotch-how-apple-pulled-off-first-iphone-launch-1600085) and stick to it==. Poor quality demos can affect your grade.
 * **Don’t waste time repeating things the target audience already knows.** e.g. no need to say things like "We are students from NUS, SoC". 
 
