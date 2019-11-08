@@ -103,7 +103,7 @@ Evaluate ==the biggest feature done by the student== for difficulty, completenes
   - [ ] `Feature/ completeness: high`: The feature has all functionality to be useful to almost all users.
 - Other
   - [ ] `Feature/ not hard to test`: The feature was not too hard to test manually.
-  - [ ] `Feature/ polished: high`: The feature looks _polished_ (as if done by a professional programmer).
+  - [ ] `Feature/ polished`: The feature looks _polished_ (as if done by a professional programmer).
 
 </div>
 <div id="projectGrading-effort-instructions">

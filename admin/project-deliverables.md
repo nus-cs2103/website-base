@@ -206,12 +206,13 @@ Total | 5-10 ==(strict)==
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Scope</span>
 
-* **First, one person should give an overview of the product**. At the very start of the demo, give a quick overview of the product so that the evaluators get a sense of the full picture early. Include the following:
+* ==**First, one person should give an overview of the product**==. At the very start of the demo, give a quick overview of the product so that the evaluators get a sense of the full picture early. Include the following:
   * **What** is it? %%e.g., FooBar is a product to ensure the user takes frequent standing-breaks while working.%%
   * **Who** is it for? %%e.g., It is for someone who works at a PC, prefers typing, and wants to avoid prolonged periods of sitting.%%
   * **How** does it help? Give an overview of how the product's features help to solve the target problem for the target user %%e.g., The user first sets the parameters such as frequency and targets, and then enters a command to record the start of the sitting time, ... The app shows the length of the sitting periods, and alerts the user if ...%%
+  * There is no need to introduce team members or explain who did what, at this point.
 * **Then, each person should demo their feature(s)**. However, it's OK for one member to do all the typing.
-  * **Start by stating your name and your feature(s)**. As the demo is being used for individual evaluations, the evaluators need to know your name and the feature(s) you did.
+  * ==**Start by stating your name and your feature(s)**==. As the demo is being used for individual evaluations, the evaluators need to know your name and the feature(s) you did.
   * **Each person should demo their part in one go** %%i.e., one person should not appear multiple times in the demo. Reasons: it will interfere with grading as some things are graded individually%%. However, it's OK for one person to give a short intro at the start and appear again later in the demo to demo her features.
   * **Use a reasonable order of presenters**: Subjected to the previous two points, as far as possible, organize the demo to present a cohesive picture of the product as a whole, presented in a logical order.
 * **No need to cover design/implementation details** as the manager is not interested in those details.
@@ -258,7 +259,8 @@ Total | 5-10 ==(strict)==
   Note that CS2101 demo requirements may differ. Different context → Different requirements.
 * **Showcase how the feature improves the user’s life** rather than simply describe each feature.
 * **Rehearse the steps well** and ensure you can do a smooth demo. ==Find a [_golden path_](https://www.ibtimes.co.uk/sleight-hand-white-lies-bottle-scotch-how-apple-pulled-off-first-iphone-launch-1600085) and stick to it==. Poor quality demos can affect your grade.
-* **Don’t waste time repeating things the target audience already knows.** e.g. no need to say things like "We are students from NUS, SoC". 
+* **Don’t waste time repeating things the target audience already knows.** e.g. no need to say things like "We are students from NUS, SoC".
+* **No need to introduce next presenter** at the end of your part, as the next speaker is supposed to self-introduce anyway.
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Special circumstances</span>
 
