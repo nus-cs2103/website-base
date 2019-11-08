@@ -43,7 +43,7 @@
 * {{ icon_team }} **Product**:
   * Do a release on GitHub, tagged as `v1.4`.
   * Upload the jar file to LumiNUS. <br>
-    File name: `[team][product name].jar` %%e.g. [W09-1][ContactsPlus].jar%%
+    File name: `[team][product name].jar` %%e.g. [CS2103T-W09-1][ContactsPlus].jar%%
 
 <div class="indented-level2">
 
@@ -60,7 +60,7 @@
 
 
 * {{ icon_team }} **User Guide**: Convert the pdf (AB3 dev guide has some instructions on converting project docs to pdf) and upload to LumiNUS.<br>
-  File name: `[TEAM_ID][product Name]UserGuide.pdf`  %%e.g.[W09-1][Contacts Plus]UserGuide.pdf%%
+  File name: `[TEAM_ID][product Name]UserGuide.pdf`  %%e.g.[CS2103T-W09-1][Contacts Plus]UserGuide.pdf%%
 
 <div class="indented-level2">
 
@@ -68,7 +68,7 @@
 </div>
 
 * {{ icon_team }} **Developer Guide**: submit similar to UG<br>
-  File name: `[TEAM_ID][product Name]DeveloperGuide.pdf` %%e.g. [W09-1][Contacts Plus]DeveloperGuide.pdf%%
+  File name: `[TEAM_ID][product Name]DeveloperGuide.pdf` %%e.g. [CS2103T-W09-1][Contacts Plus]DeveloperGuide.pdf%%
 
 <div class="indented-level2">
 
@@ -79,7 +79,7 @@
 
 * {{ icon_individual }} **Project Portfolio Page (PPP)**:
   * PDF file: submit similar to UG<br>
-    File name: `[TEAM_ID][Your Name]Portfolio.pdf` %%e.g.[W09-1][John Doe]Portfolio.pdf%%
+    File name: `[TEAM_ID][Your Name]Portfolio.pdf` %%e.g.[CS2103T-W09-1][John Doe]Portfolio.pdf%%
   * HTML version: make available on `github.io`
 
 <div class="indented-level2">
