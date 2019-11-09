@@ -8,6 +8,7 @@
 
 1. {{ icon_individual }} Do final tweaks to the feature
 1. {{ icon_team }} Submit the deliverables {{ timing_badge("by Monday 2359") }}
+1. {{ icon_team }} Wrap up the milestone {{ timing_badge("by Wednesday 2359") }}
 1. {{ icon_team }} Demo the product {{ timing_badge("during Tutorial", "secondary") }}
 1. {{ icon_team }} Prepare for the practical exam {{ timing_badge("before Lecture", "secondary") }}
 1. {{ icon_individual }} Attend the practical exam {{ timing_badge("during Lecture") }}
@@ -98,8 +99,11 @@
 <p/>
 
 
+#### {{ thumb(3) }} {{ icon_team }} Wrap up the milestone {{ timing_badge("by Wednesday 2359", "secondary") }}
 
-#### {{ thumb(3) }} {{ icon_team }} Demo the product {{ timing_badge("during Tutorial", "secondary") }}
+* As usual, wrap up the milestone on GitHub. Note that the deadline for this is the same for everyone (i.e., does not depend on your tutorial).
+
+#### {{ thumb(4) }} {{ icon_team }} Demo the product {{ timing_badge("during Tutorial", "secondary") }}
 
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px"><p/>
 
@@ -113,12 +117,12 @@
   * You should bring your own adapter if the display adapters available in your tutorial venue don't work for you.
 
 
-#### {{ thumb(4) }} {{ icon_team }} Prepare for the practical exam {{ timing_badge("before Lecture", "secondary") }}
+#### {{ thumb(5) }} {{ icon_team }} Prepare for the practical exam {{ timing_badge("before Lecture", "secondary") }}
 
 * **Download the zip file containing the product to be tested.** More information to be released later.
 
 
-#### {{ thumb(5) }} {{ icon_individual }} Attend the practical exam {{ timing_badge("during Lecture", "secondary") }}
+#### {{ thumb(6) }} {{ icon_individual }} Attend the practical exam {{ timing_badge("during Lecture", "secondary") }}
 
 * Attend the practical test, to be done during the lecture. 
   {{ embed_topic("project-deliverables.md#project-deliverables-practicalexam", "Admin " + icon_embedding + " Project → Deliverables → Practical Exam", "v14-deliverablePe", "3") }}

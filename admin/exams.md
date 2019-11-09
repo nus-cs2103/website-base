@@ -11,8 +11,8 @@ Both papers will be given to you at the start but you need to **answer Part 1 fi
 
 <box type="important">
 
-Given the fast pace required by the paper and the large class size, to be fair to all students, **invigilators will not answer queries about the questions in the exam paper** (but _will_ answer queries related to exam administration).
-* If you have a doubt/query about a question or would like to make an assumption about a question, write down your doubt/query/assumption in the space provided for it in the exam paper.
+Given the fast pace required by the paper, the large class size, and the need to collect part 1 answer scripts in the middle of the exam, to be fair to all students, **invigilators will not answer queries about the questions in the exam paper** (but _will_ answer queries related to exam administration).
+* If you have a doubt/query about a question ,or would like to make an assumption about a question, or would like to report a potential error in the exam paper, write down your doubt/query/assumption in the space provided for it at the end of the exam paper.
 * Those doubts/queries/assumptions (if justified) will be taken into account when grading.
 </box>
 
