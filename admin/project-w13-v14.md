@@ -39,8 +39,11 @@
   * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%e.g. broken links, outdated diagrams/instructions etc.%%.
 * **Do not update the repo during the 14 days after the deadline.** Get our permission first if you need to update the repo during that _freeze_ period. You can continue to evolve your repo after that.
 
+<div class="indented">
 
 <big>**Submissions:**</big>
+</div>
+
 * {{ icon_team }} **Product**:
   * Do a release on GitHub, tagged as `v1.4`.
   * Upload the jar file to LumiNUS. <br>
@@ -105,10 +108,13 @@
 
 #### {{ thumb(4) }} {{ icon_team }} Demo the product {{ timing_badge("during Tutorial", "secondary") }}
 
+<div class="indented-level2">
+
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px"><p/>
 
 {{ embed_topic("project-deliverables.md#project-deliverables-demo", "Admin " + icon_embedding + " Project → Deliverables → Demo", "v14-deliverableDemo", "3") }}
 <p/>
+</div>
 
 * **Venue:** Same as the tutorial venue unless informed otherwise.
 * **Schedule:** Your demo timing is same as your tutorial time in week 13.
@@ -124,9 +130,12 @@
 
 #### {{ thumb(6) }} {{ icon_individual }} Attend the practical exam {{ timing_badge("during Lecture", "secondary") }}
 
-* Attend the practical test, to be done during the lecture. 
-  {{ embed_topic("project-deliverables.md#project-deliverables-practicalexam", "Admin " + icon_embedding + " Project → Deliverables → Practical Exam", "v14-deliverablePe", "3") }}
+* Attend the practical test, to be done during the lecture.
 
+<div class="indented-level2">
+
+{{ embed_topic("project-deliverables.md#project-deliverables-practicalexam", "Admin " + icon_embedding + " Project → Deliverables → Practical Exam", "v14-deliverablePe", "3") }}
+</div>
 
 </div>
 </div>

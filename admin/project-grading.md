@@ -22,24 +22,27 @@ See the sections below for details of how we assess each aspect.
 <blockquote>
 <div id="projectGrading-featureFit-instructions">
 
-Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is described in the User Guide**.
+Evaluate the product design ==based on how the product V2.0 (not V1.4) is described in the User Guide==.
 - [ ] `unable to judge`: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.
 
-- Target user:
-  - [ ] `target user specified and appropriate`: The target user is clearly specified, **prefers typing over other modes of input**, and not too general (should be narrowed to a specific user group with certain characteristics).
-  - [ ] `value specified and matching`: The value offered by the product is clearly specified and matches the target user.
+**Target user**:
+- [ ] `target user specified and appropriate`: The target user is clearly specified, ==prefers typing over other modes of input==, and not too general (should be narrowed to a specific user group with certain characteristics).
+- [ ] `value specified and matching`: The value offered by the product is clearly specified and matches the target user.
 
-- Value to the target user:
-  - [ ] `value: low`: The value to target user is low. App is not worth using.
-  - [ ] `value: medium`: Some small group of target users might find the app worth using.
-  - [ ] `value: high`: Most of the target users are likely to find the app worth using.
+**Value to the target user**:
+- [ ] `value: low`: The value to target user is low. App is not worth using.
+- [ ] `value: medium`: Some small group of target users might find the app worth using.
+- [ ] `value: high`: One of the below:
+  * Most of the target users are likely to find the app worth using.
+  * It feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI.
 
-- Feature-fit:
+**Feature-fit**:
   - [ ] `feature-fit: low`: Features don't seem to fit together.
   - [ ] `feature-fit: medium`: Some features fit together but some don't.
   - [ ] `feature-fit: high`: All features fit together.
 
-- [ ] `polished`: The product looks well-designed.
+**Other**:
+- [ ] `polished`: The product looks well-designed, ==good enough to be a real product== (i.e., A/A+ effort)
 </div>
 </blockquote>
 
@@ -91,19 +94,26 @@ Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is de
 
 Evaluate ==the biggest feature done by the student== for difficulty, completeness, and testability. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
 
-- Difficulty
-  - [ ] `Feature/ difficulty: unable to judge`: You are unable to judge this aspect for some reason.
-  - [ ] `Feature/ difficulty: low`: %%e.g. make the existing _find_ command case insensitive%%.
-  - [ ] `Feature/ difficulty: medium`: %%e.g. an _edit_ command that requires the user to type _all_ fields, even the ones that are not being edited%%.
-  - [ ] `Feature/ difficulty: high`: e.g., %%undo/redo command%%
-- Completeness
-  - [ ] `Feature/ completeness: unable to judge`: You are unable to judge this aspect for some reason.
-  - [ ] `Feature/ completeness: low`: A partial implementation of the feature. Barely useful.
-  - [ ] `Feature/ completeness: medium`: The feature has enough functionality to be useful for some of the users.
-  - [ ] `Feature/ completeness: high`: The feature has all functionality to be useful to almost all users.
-- Other
-  - [ ] `Feature/ not hard to test`: The feature was not too hard to test manually.
-  - [ ] `Feature/ polished`: The feature looks _polished_ (as if done by a professional programmer).
+**Difficulty**:
+- [ ] `Feature/ difficulty: unable to judge`: You are unable to judge this aspect for some reason.
+- [ ] `Feature/ difficulty: low`: Examples:
+  * Make the existing _find_ command case insensitive.
+  * CRUD for a simple entity type just like Person that is not connected to any other entity type.
+- [ ] `Feature/ difficulty: medium`: Examples:
+  * A moderately difficult new command that is not similar to existing commands.
+  * A new entity type moderately different from Person and lightly connected to other entity types..
+- [ ] `Feature/ difficulty: high`: Examples:
+  * a) A high-level of natural language support b) A deep integration with another product c) An enhancement that makes the product good enough to take to the market d) A new entity type very different from Person and deeply connected to many other entity types
+
+**Completeness**:
+- [ ] `Feature/ completeness: unable to judge`: You are unable to judge this aspect for some reason.
+- [ ] `Feature/ completeness: low`: A partial implementation of the feature. Barely useful.
+- [ ] `Feature/ completeness: medium`: The feature has enough functionality to be useful for some of the users.
+- [ ] `Feature/ completeness: high`: The feature has all functionality to be useful to almost all users.
+
+**Other**:
+- [ ] `Feature/ not hard to test`: The feature was not too hard to test manually.
+- [ ] `Feature/ polished`: The feature looks _polished_ (as if done by a professional programmer), A/A+ effort.
 
 </div>
 <div id="projectGrading-effort-instructions">
@@ -111,7 +121,7 @@ Evaluate ==the biggest feature done by the student== for difficulty, completenes
 Evaluate the amount of work, on a scale of 0 to 30.
 * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
 * Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.
-* {{ icon_important_big_red }} Do not give a high value just _to be nice_. You will be asked to provide a brief justification for your effort estimates.
+* {{ icon_important_big_red }} Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
 </div>
 </blockquote>
 

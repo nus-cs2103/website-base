@@ -13,4 +13,35 @@
 
 #### {{ thumb(1) }} Submit peer evaluation on TEAMMATES {{ timing_badge("by Thursday 2359", "secondary") }}
 
+* There are ==two peer evaluations to submit==
+* ==There will be bonus marks for good peer evaluations== i.e., those who are close to the overall consensus.
+* For reference, here are the detailed criteria to be used:
+<div class="indented-level2">
+
+##### Peer Evaluation - (Part 1)
+
+<panel type="info" header="Admin → tP → Grading → **UG**" expanded>
+
+<include src="../../admin/project-grading.md#projectGrading-userGuide-instructions" />
+</panel>
+
+<panel type="info" header="Admin → tP → Grading → **DG**" expanded>
+
+<include src="../../admin/project-grading.md#projectGrading-devGuide-instructions" />
+</panel>
+
+<panel type="info" header="Admin → tP → Grading → **Feature**" expanded>
+
+<include src="../../admin/project-grading.md#projectGrading-featureQuality-instructions" />
+</panel>
+<p/>
+
+##### Peer Evaluation - (Part 2)
+
+<panel type="warning" header="Admin → Peer Evaluations → Criteria" expanded>
+
+<include src="../../admin/peerEvaluations.md#peerEvaluation-criteria" />
+</panel>
+
+</div>
 </div>
