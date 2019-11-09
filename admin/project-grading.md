@@ -109,7 +109,7 @@ Evaluate ==the biggest feature done by the student== for difficulty, completenes
 - [ ] `Feature/ completeness: unable to judge`: You are unable to judge this aspect for some reason.
 - [ ] `Feature/ completeness: low`: A partial implementation of the feature. Barely useful.
 - [ ] `Feature/ completeness: medium`: The feature has enough functionality to be useful for some of the users.
-- [ ] `Feature/ completeness: high`: The feature has all functionality to be useful to almost all users.
+- [ ] `Feature/ completeness: high`: The feature has all functionality to be useful to almost all users AND Some optimization for keyboard users e.g., easy-to-type syntax.
 
 **Other**:
 - [ ] `Feature/ not hard to test`: The feature was not too hard to test manually.
