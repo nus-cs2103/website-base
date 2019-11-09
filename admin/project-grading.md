@@ -118,7 +118,7 @@ Evaluate ==the biggest feature done by the student== for difficulty, completenes
 </div>
 <div id="projectGrading-effort-instructions">
 
-Evaluate the amount of work, on a scale of 0 to 30.
+Evaluate the amount of work (i.e., ==all work described in the PPP==, not just the biggest feature), on a scale of 0 to 30.
 * Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
 * Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.
 * {{ icon_important_big_red }} Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==

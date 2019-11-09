@@ -6,15 +6,15 @@
 
 {% call show_admin_summary() %}
 
-1. Submit peer evaluation on TEAMMATES {{ timing_badge("by Thursday 2359") }}
+1. Submit peer evaluations 1 & 2 on TEAMMATES {{ timing_badge("by Thursday 2359") }}
 {% endcall %}
 
 <div id="additional">
 
-#### {{ thumb(1) }} Submit peer evaluation on TEAMMATES {{ timing_badge("by Thursday 2359", "secondary") }}
+#### {{ thumb(1) }} Submit peer evaluations 1 & 2 on TEAMMATES {{ timing_badge("by Thursday 2359", "secondary") }}
 
 * There are ==two peer evaluations to submit==
-* ==There will be bonus marks for good peer evaluations== i.e., those who are close to the overall consensus.
+* ==There will be bonus marks for <tooltip content="i.e., those who are close to the overall consensus">good</tooltip> peer evaluations==.
 * For reference, here are the detailed criteria to be used:
 <div class="indented-level2">
 
@@ -34,11 +34,16 @@
 
 <include src="../../admin/project-grading.md#projectGrading-featureQuality-instructions" />
 </panel>
+
+<panel type="primary" header="Admin → tP → Grading → **Effort**" expanded>
+
+<include src="../../admin/project-grading.md#projectGrading-effort-instructions" />
+</panel>
 <p/>
 
 ##### Peer Evaluation - (Part 2)
 
-<panel type="warning" header="Admin → Peer Evaluations → Criteria" expanded>
+<panel type="warning" header="Admin → Peer Evaluations → **Conduct & Competency**" expanded>
 
 <include src="../../admin/peerEvaluations.md#peerEvaluation-criteria" />
 </panel>
