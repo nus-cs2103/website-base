@@ -10,7 +10,7 @@
 1. {{ icon_team }} Submit the deliverables {{ timing_badge("by Monday 2359") }}
 1. {{ icon_team }} Wrap up the milestone {{ timing_badge("by Wednesday 2359") }}
 1. {{ icon_team }} Demo the product {{ timing_badge("during Tutorial", "secondary") }}
-1. {{ icon_team }} Prepare for the practical exam {{ timing_badge("before Lecture", "secondary") }}
+1. {{ icon_individual }} Prepare for the practical exam {{ timing_badge("before Lecture", "secondary") }}
 1. {{ icon_individual }} Attend the practical exam {{ timing_badge("during Lecture") }}
 {% endcall %}
 
@@ -106,6 +106,8 @@
 
 * As usual, wrap up the milestone on GitHub. Note that the deadline for this is the same for everyone (i.e., does not depend on your tutorial).
 
+<span id="demo-instructions" >
+
 #### {{ thumb(4) }} {{ icon_team }} Demo the product {{ timing_badge("during Tutorial", "secondary") }}
 
 <div class="indented-level2">
@@ -116,16 +118,29 @@
 <p/>
 </div>
 
-* **Venue:** Same as the tutorial venue unless informed otherwise.
+* **Venue:** Same as the tutorial venue unless informed otherwise. You'll be using the TV at your regular tutorial table (not the projector) for the demo.
 * **Schedule:** Your demo timing is same as your tutorial time in week 13.
-  * Please arrive on time and remain outside the venue until called in.
-  * There is an ==automatic penalty if you are not ready to start on time.==<br>
-  * You should bring your own adapter if the display adapters available in your tutorial venue don't work for you.
+  * Teams `1` and `3` will start at 05-minutes mark (e.g., 11.05 am), and teams `2` and `4` start at 30-minutes mark (e.g., 11.30 am).
+  * Please ==arrive _before_ time== and remain outside the venue until called in. Late arrival or absence is liable to a penalty.
+  * Any delay in starting the presentation is deducted out of your time allotment %%e.g., if you are scheduled to demo at 11.05-11.23 am (i.e., 18 minutes), you'll have to stop at 11.23 am even if you start at 11.10 am.%%
+* You should bring your own adapter if the display adapters available in your tutorial venue don't work for you.
+</span>
 
 
-#### {{ thumb(5) }} {{ icon_team }} Prepare for the practical exam {{ timing_badge("before Lecture", "secondary") }}
+#### {{ thumb(5) }} {{ icon_individual }} Prepare for the practical exam {{ timing_badge("before Lecture", "secondary") }}
 
-* **Download the zip file containing the product to be tested.** More information to be released later.
+<div class="indented-level2">
+
+<panel type="primary" header="Admin → Deliverables → **PE Overview**" minimized>
+
+<include src="project-deliverables.md#pe-overview" />
+</panel>
+<p/>
+<panel type="primary" header="Admin → Deliverables → **PE-D/PE Preparation**" minimized>
+
+<include src="project-testing.mbdf#testingPreparations" />
+</panel>
+</div>
 
 
 #### {{ thumb(6) }} {{ icon_individual }} Attend the practical exam {{ timing_badge("during Lecture", "secondary") }}

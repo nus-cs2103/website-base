@@ -403,6 +403,8 @@ Total | 5-10 ==(strict)==
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Overview</span>
 
+<span id="pe-overview">
+
 **Objectives:**
 * The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for 45% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
 * PE is also ==used to evaluate your manual testing skills, product evaluation skills, effort estimation skills== etc.
@@ -418,6 +420,7 @@ Total | 5-10 ==(strict)==
 
 {{ embed_topic("project-grading.md#pe-grading-notes", "Admin " + icon_embedding + " tP Grading → Notes on grading PE product testing", "projectDeliverables-peGradingNotes", "3") }}
 </div>
+</span>
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Preparation</span>
 
@@ -504,7 +507,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 <box type="warning">
 
-The dev responses need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are strongly recommended to use CATcher for this phase. If you want to give your response via GitHub instead, **<span class="text-danger">please get our permission first</span>**.
+Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are strongly recommended to use CATcher for PE-D and PE activities. If you want to give your response via GitHub instead, **<span class="text-danger">please get our permission first</span>**.
 </box>
 
 * Go to the [dev-response issue tracker]({{ module_org }}/pe-dev-response)

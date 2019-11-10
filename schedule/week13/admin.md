@@ -13,7 +13,8 @@
 
 #### {{ thumb(1) }} Submit peer evaluations 1 & 2 on TEAMMATES {{ timing_badge("by Thursday 2359", "secondary") }}
 
-* There are ==two peer evaluations to submit==
+* There are ==two peer evaluations to submit.==
+* Submission will open on Tuesday morning (after the final submission deadline).
 * ==There will be bonus marks for <tooltip content="i.e., those who are close to the overall consensus">good</tooltip> peer evaluations==.
 * For reference, here are the detailed criteria to be used:
 <div class="indented-level2">
