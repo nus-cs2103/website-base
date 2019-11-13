@@ -37,7 +37,10 @@
   * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.
 * {{ icon_important_big_red }} Please **follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
   * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%e.g. broken links, outdated diagrams/instructions etc.%%.
-* **Do not update the repo during the 14 days after the deadline.** Get our permission first if you need to update the repo during that _freeze_ period. You can continue to evolve your repo after that.
+* **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _freeze_ period.
+  * You can update issues/milestones/PRs even during the _freeze_ period.
+  * You can update the code during the freeze period if the change is related to a late submission approved by us.
+  * You can continue to evolve your repo after the freeze period.
 
 <div class="indented">
 

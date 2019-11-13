@@ -50,27 +50,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/kendrickang.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ANG WEI HENG KENDRICK**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/mirozo.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **GOH RUI ZHI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/dcshzj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HSU ZHONG JUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/chriskheng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KHENG YAU DONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/mrchensheng21.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KWAN CHEN SHENG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/kendrickang.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ANG WEI HENG KENDRICK**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/mirozo.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **GOH RUI ZHI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/dcshzj.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HSU ZHONG JUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/chriskheng.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KHENG YAU DONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-1.github.io/main/images/mrchensheng21.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KWAN CHEN SHENG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -136,28 +136,28 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/ahaliq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ABDUL HALIQ S/O ABDUL LATIFF**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/huiminlim.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM HUI MIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/nattanyz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN YAN ZHEN, NATALIE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/phirehandy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **MUHAMMAD TAHA B JAILANI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/timothyleong97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEONG JIA HAO, TIMOTHY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/shawnpunchew11.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SHAWN CHEW**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/ahaliq.png" height="160" onerror="this.src='images/placeholder-small.png';" /> | **ABDUL HALIQ S/O ABDUL LATIFF**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/huiminlim.png" height="160" onerror="this.src='images/placeholder-small.png';" /> | **LIM HUI MIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/nattanyz.png" height="160" onerror="this.src='images/placeholder-small.png';" /> | **TAN YAN ZHEN, NATALIE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/phirehandy.png" height="160" onerror="this.src='images/placeholder-small.png';" /> | **MUHAMMAD TAHA B JAILANI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/timothyleong97.png" height="160" onerror="this.src='images/placeholder-small.png';" /> | **LEONG JIA HAO, TIMOTHY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-2.github.io/main/images/shawnpunchew11.png" height="160" onerror="this.src='images/placeholder-small.png';" /> | **SHAWN CHEW**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -223,27 +223,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/andyylam.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ANDY LAM KWOK WEE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/halfwhole.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM ZI WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/liuzechu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIU ZECHU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/chowyiwai.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHOW YI WAI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/yaaanch.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ONG YAN CHUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/andyylam.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ANDY LAM KWOK WEE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/halfwhole.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM ZI WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/liuzechu.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIU ZECHU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/chowyiwai.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHOW YI WAI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-3.github.io/main/images/yaaanch.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ONG YAN CHUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -309,27 +309,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/olivercheok20.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **OLIVER CHEOK**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/ybchen97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEN YUANBO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/chaitanyabaranwal.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHAITANYA BARANWAL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/larrylawl.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LAW ANN LIAT LARRY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/chowyiyin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHOW YI YIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/olivercheok20.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **OLIVER CHEOK**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/ybchen97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEN YUANBO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/chaitanyabaranwal.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHAITANYA BARANWAL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/larrylawl.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LAW ANN LIAT LARRY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F09-4.github.io/main/images/chowyiyin.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHOW YI YIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -395,27 +395,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/francislow.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LOW SIU YUAN, FRANCIS**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/crazoter.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE WEI REN MATTHEW**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/gabrielchao.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHAO FANG HOW, GABRIEL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/cheongsiuhong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEONG SIU HONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/sandydays.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **RAMACHANDRAN SANDHYA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/francislow.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LOW SIU YUAN, FRANCIS**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/crazoter.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE WEI REN MATTHEW**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/gabrielchao.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHAO FANG HOW, GABRIEL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/cheongsiuhong.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEONG SIU HONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-1.github.io/main/images/sandydays.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **RAMACHANDRAN SANDHYA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -481,27 +481,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/zhangxuan97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ZHANG XUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/teika97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TIE YING KATHLEEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/kelvinnharris.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KELVIN HARRIS**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/evelynejuliet.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **EVELYNE JULIET**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/manasvegi.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **VEGI MANAS**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/zhangxuan97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ZHANG XUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/teika97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TIE YING KATHLEEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/kelvinnharris.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KELVIN HARRIS**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/evelynejuliet.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **EVELYNE JULIET**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-2.github.io/main/images/manasvegi.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **VEGI MANAS**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -567,27 +567,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/khiangleon.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SIM KHIANG LEON**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/shaunngtx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NG TZE XUAN, SHAUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/neoshh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NEO SI HAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/jxofficial.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KENG JUN XIAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/wilfredbtan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WILFRED BRADLEY TAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/khiangleon.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SIM KHIANG LEON**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/shaunngtx.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NG TZE XUAN, SHAUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/neoshh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NEO SI HAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/jxofficial.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KENG JUN XIAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-F10-3.github.io/main/images/wilfredbtan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WILFRED BRADLEY TAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -653,27 +653,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/brianyenna.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YEN REN ZUO BRIAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/hcwong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JOSHUA WONG HSIEN-CHIEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/john0227.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KYUNGHO MIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/joanna-yja.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YAP JIA AUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/abhiman2211.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ABHIMAN YADAV**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/brianyenna.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YEN REN ZUO BRIAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/hcwong.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JOSHUA WONG HSIEN-CHIEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/john0227.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KYUNGHO MIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/joanna-yja.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YAP JIA AUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-1.github.io/main/images/abhiman2211.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ABHIMAN YADAV**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -739,27 +739,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/jermytan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN KAI QUN JEREMY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/kalsyc.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SIM JUN YUEN, DARREN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/liawsy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIAW SIEW YEE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/xiaoyu-nus.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIU XIAOYU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/febee99.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **PHOEBE CHAN KAR HUI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/jermytan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN KAI QUN JEREMY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/kalsyc.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SIM JUN YUEN, DARREN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/liawsy.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIAW SIEW YEE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/xiaoyu-nus.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIU XIAOYU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-2.github.io/main/images/febee99.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **PHOEBE CHAN KAR HUI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -825,27 +825,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/niqiukun.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NI TIANZHEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/jityong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEOW JIT YONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/eejian97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE EE JIAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/hooncp.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HOON CHEE PING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/yhtingg.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YANG HUI TING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/niqiukun.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NI TIANZHEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/jityong.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEOW JIT YONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/eejian97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE EE JIAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/hooncp.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HOON CHEE PING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-3.github.io/main/images/yhtingg.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YANG HUI TING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -911,27 +911,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/parcly-taxel.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JEREMY TAN JIERUI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/auxinnn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ZHANG DONGJUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/shuiyao-sg.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SHUI YAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/shirleywangxt.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WANG XUETING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/irene-lly.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE LI YING IRENE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/parcly-taxel.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JEREMY TAN JIERUI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/auxinnn.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ZHANG DONGJUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/shuiyao-sg.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SHUI YAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/shirleywangxt.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WANG XUETING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F11-4.github.io/main/images/irene-lly.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE LI YING IRENE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -997,27 +997,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/bruceskellator.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **BRUCE ONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/marcusteh1238.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TEH HAO RUI MARCUS**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/kyzure.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TIMOTHY YU ZHIWEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/chenggeng97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ONG CHENG GENG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/weomucat.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **DENIS TJIA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/bruceskellator.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **BRUCE ONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/marcusteh1238.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TEH HAO RUI MARCUS**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/kyzure.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TIMOTHY YU ZHIWEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/chenggeng97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ONG CHENG GENG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-1.github.io/main/images/weomucat.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **DENIS TJIA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1083,27 +1083,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/q-gabe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **GABRIEL ONG LIAN XIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/sqwq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ZHENG SHIQIAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/reignofcomputer.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JASON CHEE WENG KAY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/gachia.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **GABRIEL CHIA WENHAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/wingedevil.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JERROLD TAN YU YI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/q-gabe.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **GABRIEL ONG LIAN XIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/sqwq.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ZHENG SHIQIAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/reignofcomputer.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JASON CHEE WENG KAY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/gachia.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **GABRIEL CHIA WENHAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-2.github.io/main/images/wingedevil.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JERROLD TAN YU YI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1169,27 +1169,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/e0031374.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ONG YIN MING JONAS**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/stevenwjy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **STEVEN WIJAYA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/yehezkiel01.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YEHEZKIEL RAYMUNDO THEODOROES**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/shiweing.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NG SHI WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/tanlk99.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN LIKAI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/e0031374.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ONG YIN MING JONAS**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/stevenwjy.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **STEVEN WIJAYA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/yehezkiel01.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YEHEZKIEL RAYMUNDO THEODOROES**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/shiweing.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NG SHI WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-3.github.io/main/images/tanlk99.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN LIKAI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1255,27 +1255,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/xinmingzh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ZHOU XINMING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/davidcwh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHIA WEI HAO, DAVID**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/waynefong0401.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **FANG WEIWEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/waifonglee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE WAI FONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/weiijiie.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HUANG WEIJIE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/xinmingzh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ZHOU XINMING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/davidcwh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHIA WEI HAO, DAVID**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/waynefong0401.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **FANG WEIWEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/waifonglee.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE WAI FONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F12-4.github.io/main/images/weiijiie.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HUANG WEIJIE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1341,27 +1341,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/hoholyin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HO HOL YIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/cronyxx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YEO TONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/seeziyang.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SEE ZI YANG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/shiyao821.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WANG SHIYAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/linyutinglyt.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIN YUTING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/hoholyin.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HO HOL YIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/cronyxx.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YEO TONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/seeziyang.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SEE ZI YANG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/shiyao821.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WANG SHIYAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-1.github.io/main/images/linyutinglyt.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIN YUTING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1427,27 +1427,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/jon-chua.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHUA JIA CHENG, JON**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/seanlowjk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LOW JUN KAI, SEAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/fatclarence.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KOH WEE LUN, CLARENCE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/robytanama.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ROBY TANAMA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/raikonen.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHOO ZE YUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/jon-chua.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHUA JIA CHENG, JON**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/seanlowjk.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LOW JUN KAI, SEAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/fatclarence.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KOH WEE LUN, CLARENCE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/robytanama.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ROBY TANAMA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-2.github.io/main/images/raikonen.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHOO ZE YUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1513,27 +1513,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/choongyx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHOONG YONG XIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/nanosync.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **BENEDICT PAK HONG JUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/minpyaemoe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **MIN PYAE MOE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/austinsantoso.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **AUSTIN SANTOSO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/jonathantjendana.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JONATHAN TJENDANA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/choongyx.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHOONG YONG XIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/nanosync.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **BENEDICT PAK HONG JUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/minpyaemoe.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **MIN PYAE MOE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/austinsantoso.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **AUSTIN SANTOSO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-3.github.io/main/images/jonathantjendana.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JONATHAN TJENDANA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1599,27 +1599,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/wongchuankai.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WONG CHUAN KAI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/heze8.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CALEB GOH EE GEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/jcjjjared.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHIANG JIAJUN JARED**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/tswuxia.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WU XIA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/michelleykw.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **MICHELLE YONG KAI WEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/wongchuankai.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WONG CHUAN KAI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/heze8.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CALEB GOH EE GEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/jcjjjared.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHIANG JIAJUN JARED**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/tswuxia.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WU XIA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F13-4.github.io/main/images/michelleykw.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **MICHELLE YONG KAI WEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1685,26 +1685,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/ning-sy210.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NING SHENGYING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/alxkohh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ALEX KOH NAN YU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/limhawjia.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM HAW JIA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/zhangj1an.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ZHANG JIAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/ning-sy210.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NING SHENGYING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/alxkohh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ALEX KOH NAN YU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/limhawjia.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM HAW JIA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-1.github.io/main/images/zhangj1an.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ZHANG JIAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1770,27 +1770,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/teoshyanjie.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TEO SHYAN JIE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/xuerneas.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **XU TU NAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/ngswbryan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **BRYAN NG SOON WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/kerwin97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM SHI CHEN KERWIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/caesarpjz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CAESAR PANG JIAN ZHANG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/teoshyanjie.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TEO SHYAN JIE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/xuerneas.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **XU TU NAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/ngswbryan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **BRYAN NG SOON WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/kerwin97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM SHI CHEN KERWIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-2.github.io/main/images/caesarpjz.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CAESAR PANG JIAN ZHANG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1856,27 +1856,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/jun-ha0.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NG JUN HAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/lyskevin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM YONG SHEN, KEVIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/brebeek.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HU YUCHEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/nordic96.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KO GI HUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/uggi121.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SUDHARSHAN MADHAVAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/jun-ha0.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NG JUN HAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/lyskevin.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM YONG SHEN, KEVIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/brebeek.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HU YUCHEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/nordic96.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KO GI HUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-3.github.io/main/images/uggi121.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SUDHARSHAN MADHAVAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -1942,27 +1942,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/samyj2606.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SAM YONG JEK**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/junnbang.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN JUN BANG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/argvampir.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **RUSHAGRID KUNTHAMAS**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/tysng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SONG TIANYI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/cheeyou.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEE YOU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/samyj2606.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SAM YONG JEK**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/junnbang.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN JUN BANG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/argvampir.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **RUSHAGRID KUNTHAMAS**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/tysng.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SONG TIANYI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-F14-4.github.io/main/images/cheeyou.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEE YOU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2028,27 +2028,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/madanalogy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **MUHAMMAD AHMED BIN ANWAR BAHAJJAJ**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/atharvjoshi.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JOSHI ATHARV ABHAY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/tirameshu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WANG XINMAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/hellopanda128.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIN MEI AN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/yoshi275.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NG QIAN JIE CHERYL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/madanalogy.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **MUHAMMAD AHMED BIN ANWAR BAHAJJAJ**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/atharvjoshi.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JOSHI ATHARV ABHAY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/tirameshu.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WANG XINMAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/hellopanda128.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIN MEI AN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-1.github.io/main/images/yoshi275.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NG QIAN JIE CHERYL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2114,27 +2114,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/sendorasleft.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NG YONG KUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/cheongliyuan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEONG LI YUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/mistyrainforest.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN WEI, ADAM**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/aaronluk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LUK CHI HENG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/chensu2436.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEN SU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/sendorasleft.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NG YONG KUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/cheongliyuan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEONG LI YUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/mistyrainforest.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN WEI, ADAM**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/aaronluk.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LUK CHI HENG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-2.github.io/main/images/chensu2436.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEN SU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2200,26 +2200,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/ooimingsheng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **OOI MING SHENG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/howeichin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HO WEI CHIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/belbel98.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHRISTABEL TEO HWEE TENG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/shawnkoh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KOH ZHENG QIANG SHAWN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/ooimingsheng.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **OOI MING SHENG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/howeichin.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HO WEI CHIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/belbel98.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHRISTABEL TEO HWEE TENG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T11-3.github.io/main/images/shawnkoh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KOH ZHENG QIANG SHAWN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2285,26 +2285,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/xelyion.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YOON JIA JUN, KEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/sebastianlie.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SEBASTIAN LIE HSIEN YONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/sheryltay28.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAY SHERYL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/weikiat97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LOH WEI KIAT**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/xelyion.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YOON JIA JUN, KEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/sebastianlie.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SEBASTIAN LIE HSIEN YONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/sheryltay28.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAY SHERYL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-1.github.io/main/images/weikiat97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LOH WEI KIAT**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2370,26 +2370,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/ahmadhatziq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **AHMAD HATZIQ B MOHAMAD**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/ellieyee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ELLIE YEE WEN NA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/lumos309.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN YUGIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/zihawkeye.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YEW KAI ZHE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/ahmadhatziq.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **AHMAD HATZIQ B MOHAMAD**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/ellieyee.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ELLIE YEE WEN NA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/lumos309.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN YUGIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-2.github.io/main/images/zihawkeye.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YEW KAI ZHE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2455,26 +2455,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/lzw12345.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LING ZHI WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/oscar-b-liang.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIANG BOYUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/akimatsu98.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HE SONGCHI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/jolynnn8d.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JOLYN TAN SI QI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/lzw12345.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LING ZHI WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/oscar-b-liang.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIANG BOYUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/akimatsu98.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HE SONGCHI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-3.github.io/main/images/jolynnn8d.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JOLYN TAN SI QI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2540,26 +2540,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/limxuanhui.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM XUAN HUI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/muhammadaljunied.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SYED MUHAMMAD BIN ABDULLAH ALJUNIED**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/cary-xx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **XIU ZIHENG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/choonx99.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NG CHOON WAH**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/limxuanhui.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM XUAN HUI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/muhammadaljunied.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SYED MUHAMMAD BIN ABDULLAH ALJUNIED**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/cary-xx.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **XIU ZIHENG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T14-4.github.io/main/images/choonx99.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NG CHOON WAH**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2625,27 +2625,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/chen-xi-cx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEN XI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/scwaterbear.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **STEPHEN CHUA RONG ZHI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/zhanghuafan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ZHANG XIAOYU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/jyx11011.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JIANG YUXIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/whneo97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NEO WEIHONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/chen-xi-cx.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEN XI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/scwaterbear.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **STEPHEN CHUA RONG ZHI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/zhanghuafan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ZHANG XIAOYU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/jyx11011.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JIANG YUXIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-1.github.io/main/images/whneo97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NEO WEIHONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2711,26 +2711,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/tohcejasmine.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TOH CHOOI ERN, JASMINE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/tuandingwei.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TUAN DING WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/joannasara.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JOANNA SARA SUSAN PURBA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/victorvic54.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **VICTOR VARIAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/tohcejasmine.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TOH CHOOI ERN, JASMINE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/tuandingwei.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TUAN DING WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/joannasara.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JOANNA SARA SUSAN PURBA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-2.github.io/main/images/victorvic54.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **VICTOR VARIAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2796,27 +2796,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/livingonedge.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **BILL CHEE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/moziliar.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **MO ZONGRAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/gary-lgy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIU GUANGYUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/cutieprobe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIU ZIMU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/jonchan51.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHAN WAI HON JONATHAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/livingonedge.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **BILL CHEE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/moziliar.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **MO ZONGRAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/gary-lgy.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIU GUANGYUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/cutieprobe.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIU ZIMU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-3.github.io/main/images/jonchan51.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHAN WAI HON JONATHAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2882,27 +2882,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/rongrongrr.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHAN JING RONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/jessicax941.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JESSICA PHUA SHU XIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/dandford.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ONG MING CHUNG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/yuhongtay.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAY YU HONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/swampertx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN YEE JIAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/rongrongrr.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHAN JING RONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/jessicax941.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JESSICA PHUA SHU XIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/dandford.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ONG MING CHUNG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/yuhongtay.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAY YU HONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103-T16-4.github.io/main/images/swampertx.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN YEE JIAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -2968,27 +2968,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/1nefootstep.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEONG SHEU XIANG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/onearmyj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEN YI JUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/oscarsu97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **OSCAR SU ZHEN HONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/ernestyyh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YEO YIK HWEE ERNEST**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/kxxmxxx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEW KAI MING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/1nefootstep.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEONG SHEU XIANG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/onearmyj.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEN YI JUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/oscarsu97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **OSCAR SU ZHEN HONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/ernestyyh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YEO YIK HWEE ERNEST**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-1.github.io/main/images/kxxmxxx.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEW KAI MING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3054,27 +3054,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/weihaw08.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HO WEI HAW**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/t-cheepeng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN CHEE PENG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/jietung.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHAI JIE TUNG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/garylyp.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM YAN PENG, GARY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/kwekke.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KWEK KEE EN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/weihaw08.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HO WEI HAW**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/t-cheepeng.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN CHEE PENG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/jietung.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHAI JIE TUNG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/garylyp.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM YAN PENG, GARY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-2.github.io/main/images/kwekke.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KWEK KEE EN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3140,26 +3140,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/carbongrid.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **DANIEL TAN JUN XIAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/sakurablossom.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LUM CHANG XIN SHAWN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/wongsm7.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WONG SHUN MIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/woon17.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WEN SHUFA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/carbongrid.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **DANIEL TAN JUN XIAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/sakurablossom.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LUM CHANG XIN SHAWN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/wongsm7.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WONG SHUN MIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-3.github.io/main/images/woon17.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WEN SHUFA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3225,27 +3225,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/yeodonghan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YEO DONG HAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/eugeneteu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **EUGENE TEU CHU WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/zhixianggg.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **OON ZHI XIANG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/ubersaiyan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YAN WEI LIANG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/qiujiaaa.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **OOI QIU JIA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/yeodonghan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YEO DONG HAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/eugeneteu.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **EUGENE TEU CHU WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/zhixianggg.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **OON ZHI XIANG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/ubersaiyan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YAN WEI LIANG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T09-4.github.io/main/images/qiujiaaa.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **OOI QIU JIA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3311,27 +3311,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/marcfyk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **MARC FONG YUNG KIT**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/ryanytan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **RYAN TAN YU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/nishcafe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ANISHA NICOLE JOSEPH**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/gohsnn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **GOH SI NING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/mrnewguy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN YE KAI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/marcfyk.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **MARC FONG YUNG KIT**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/ryanytan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **RYAN TAN YU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/nishcafe.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ANISHA NICOLE JOSEPH**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/gohsnn.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **GOH SI NING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-1.github.io/main/images/mrnewguy.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN YE KAI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3397,27 +3397,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/bigjunnn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIEW JUN WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/khairulazman1997.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **MUHAMMAD KHAIRUL AZMAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/bakwxh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE WAH**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/hua-lun.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHUA HUA LUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/yyuanxin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YEO YUAN XIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/bigjunnn.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIEW JUN WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/khairulazman1997.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **MUHAMMAD KHAIRUL AZMAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/bakwxh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE WAH**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/hua-lun.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHUA HUA LUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-2.github.io/main/images/yyuanxin.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YEO YUAN XIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3483,27 +3483,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/lrchema.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHANDRASEKARAN HEMA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/blimyj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **BRYAN LIM YAN JIE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/sianghwee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NG SIANG HWEE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/icesiolz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LOW CHENG YI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/mannggoo.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM YU HUI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/lrchema.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHANDRASEKARAN HEMA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/blimyj.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **BRYAN LIM YAN JIE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/sianghwee.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NG SIANG HWEE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/icesiolz.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LOW CHENG YI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-3.github.io/main/images/mannggoo.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM YU HUI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3569,27 +3569,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/alvinnyk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ALVIN NG YAN KIT**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/aidilfbk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **AIDIL FITRAHADI BIN KAMSANI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/klementtan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN DE NING, KLEMENT**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/marqueurs404.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ONG PANG YI MARCUS**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/yijiee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM YI JIE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/alvinnyk.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ALVIN NG YAN KIT**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/aidilfbk.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **AIDIL FITRAHADI BIN KAMSANI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/klementtan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN DE NING, KLEMENT**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/marqueurs404.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ONG PANG YI MARCUS**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T10-4.github.io/main/images/yijiee.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM YI JIE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3655,27 +3655,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/qweiping31415.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **QUEK WEI PING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/briyanii.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **FUNG BRIAN PEI-EN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/ryoarmanda.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **RYO CHANDRA PUTRA ARMANDA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/anqichen9856.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEN ANQI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/czkay.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHONG ZI KANG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/qweiping31415.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **QUEK WEI PING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/briyanii.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **FUNG BRIAN PEI-EN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/ryoarmanda.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **RYO CHANDRA PUTRA ARMANDA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/anqichen9856.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEN ANQI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-1.github.io/main/images/czkay.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHONG ZI KANG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3741,27 +3741,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/jascxx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JASON SATHYA CITRO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/sreesubbash.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **L.V.SREE SUBBASH**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/dragontho.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **THO WEN LONG, PAUL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/chrischenhui.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEN HUI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/kohyida1997.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KOH YI DA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/jascxx.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JASON SATHYA CITRO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/sreesubbash.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **L.V.SREE SUBBASH**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/dragontho.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **THO WEN LONG, PAUL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/chrischenhui.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEN HUI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-2.github.io/main/images/kohyida1997.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KOH YI DA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3827,27 +3827,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/eshwarkp.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ESHWAR S/O KAMALAPATHY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/divinedx.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHIA DE XUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/shihaoyap.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YAP SHI HAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/crisgu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **GU CHUNZHI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/calvincxz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CALVIN CHEN XINGZHU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/eshwarkp.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ESHWAR S/O KAMALAPATHY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/divinedx.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHIA DE XUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/shihaoyap.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YAP SHI HAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/crisgu.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **GU CHUNZHI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-3.github.io/main/images/calvincxz.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CALVIN CHEN XINGZHU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3913,27 +3913,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/teoha.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **DERRICK TEO HAO YING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/eizon05.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KARAN SAPRA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/sakshipradyumn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SAKSHI PRADYUMN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/ang-zeyu.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ANG ZE YU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/arjunwangty.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WANG TIANYI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/teoha.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **DERRICK TEO HAO YING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/eizon05.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KARAN SAPRA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/sakshipradyumn.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SAKSHI PRADYUMN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/ang-zeyu.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ANG ZE YU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T11-4.github.io/main/images/arjunwangty.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WANG TIANYI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -3999,27 +3999,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/ambhinav.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ABHINAV RAMNATH**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/arunbecoding.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **RAVI ARUN KUMARR**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/elsakoh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KOH HUI HUI ELIZABETH**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/gabrielseow.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SEOW ZHI XIAN GABRIEL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/seahlynn.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SEAH LYNN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/ambhinav.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ABHINAV RAMNATH**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/arunbecoding.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **RAVI ARUN KUMARR**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/elsakoh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KOH HUI HUI ELIZABETH**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/gabrielseow.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SEOW ZHI XIAN GABRIEL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-1.github.io/main/images/seahlynn.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SEAH LYNN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4085,27 +4085,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/charliechoong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHOONG JIN YAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/soilingrogue.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YUAN XINRAN, STANLEY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/etlow.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LOW EE TER**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/ryantay232.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **RYAN TAY JIA JIAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/mackymaguire.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ZHOU TIANYU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/charliechoong.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHOONG JIN YAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/soilingrogue.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YUAN XINRAN, STANLEY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/etlow.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LOW EE TER**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/ryantay232.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **RYAN TAY JIA JIAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-2.github.io/main/images/mackymaguire.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ZHOU TIANYU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4171,27 +4171,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/changuo79.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ERWIN CHAN GUO XIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/hellodommy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **DOMINIQUE NG WENYI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/junhuplim.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM JUN HUP**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/jeunhoe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **POON JEUN HOE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/shawnlsj97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE SHI JIE SHAWN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/changuo79.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ERWIN CHAN GUO XIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/hellodommy.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **DOMINIQUE NG WENYI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/junhuplim.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM JUN HUP**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/jeunhoe.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **POON JEUN HOE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-3.github.io/main/images/shawnlsj97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE SHI JIE SHAWN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4257,27 +4257,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/leonardtay748.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEONARD TAY JIA HAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/dalsontws.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN WEI SHIN DALSON**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/leowwb.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEOW WEN BIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/shutingy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YANG SHUTING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/keiteo.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KEITH TEO XU HUI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/leonardtay748.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEONARD TAY JIA HAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/dalsontws.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN WEI SHIN DALSON**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/leowwb.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEOW WEN BIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/shutingy.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YANG SHUTING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T12-4.github.io/main/images/keiteo.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KEITH TEO XU HUI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4343,27 +4343,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/therealravager.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ISKANDAR ZULKARNAIEN B SUHAINI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/yen-peng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YIP YEN PENG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/c-likethis123.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHOW JIA YING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/williamryank.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WILLIAM RYAN KUSNADI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/simnee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHUA SIM NEE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/therealravager.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ISKANDAR ZULKARNAIEN B SUHAINI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/yen-peng.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YIP YEN PENG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/c-likethis123.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHOW JIA YING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/williamryank.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WILLIAM RYAN KUSNADI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-1.github.io/main/images/simnee.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHUA SIM NEE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4429,27 +4429,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/shaoyi1997.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HONG SHAO YI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/ambervoong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **VOONG YU XUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/dalisc.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHAN DALIS**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/arjavibahety.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **BAHETY ARJAVI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/bernicechio.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **BERNICE CHIO HUI YIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/shaoyi1997.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HONG SHAO YI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/ambervoong.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **VOONG YU XUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/dalisc.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHAN DALIS**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/arjavibahety.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **BAHETY ARJAVI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-2.github.io/main/images/bernicechio.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **BERNICE CHIO HUI YIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4515,27 +4515,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/coderstellaj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JIN SHUYUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/dawo5010.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **DANIEL WONG YONG SHEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/kangyeelim.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM KANG YEE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/evondong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **EVON DONG BING BING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/michaelatsh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TANG SHI HUI, MICHAELA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/coderstellaj.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JIN SHUYUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/dawo5010.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **DANIEL WONG YONG SHEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/kangyeelim.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM KANG YEE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/evondong.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **EVON DONG BING BING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-3.github.io/main/images/michaelatsh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TANG SHI HUI, MICHAELA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4601,27 +4601,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/openorclose.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **DARYL TAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/kxyoke.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YOKE KAI XIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/na-nazhou.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NA NAZHOU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/tsai-hsiao-han.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TSAI, HSIAO-HAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/dorcastan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **DORCAS TABITHA TAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/openorclose.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **DARYL TAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/kxyoke.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YOKE KAI XIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/na-nazhou.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NA NAZHOU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/tsai-hsiao-han.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TSAI, HSIAO-HAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T13-4.github.io/main/images/dorcastan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **DORCAS TABITHA TAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4687,27 +4687,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/fadisng.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SNG JIA MING FADI FARIS**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/ccyccyccy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHONG CHEE YUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/r-d-d-d.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WANG RUNDING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/jerryk1997.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KWONG CHUNG YUE JERRY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/philipalexanderb.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **PHILIP ALEXANDER BOEDIMAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/fadisng.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SNG JIA MING FADI FARIS**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/ccyccyccy.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHONG CHEE YUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/r-d-d-d.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WANG RUNDING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/jerryk1997.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KWONG CHUNG YUE JERRY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T17-1.github.io/main/images/philipalexanderb.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **PHILIP ALEXANDER BOEDIMAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4773,27 +4773,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/bjhoohaha.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ONG BING JUE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/honhaochen.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **HON HAO CHEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/tishyakhanna97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TISHYA KHANNA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/ngzhaoming.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NG ZHAO MING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/pohlinwei.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **POH LIN WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/bjhoohaha.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ONG BING JUE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/honhaochen.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **HON HAO CHEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/tishyakhanna97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TISHYA KHANNA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/ngzhaoming.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NG ZHAO MING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-T17-2.github.io/main/images/pohlinwei.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **POH LIN WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4859,27 +4859,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/luwenq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LU WENQI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/le0tan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN YUANHONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/jiayushe.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SHE JIAYU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/tiuweehan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TIU WEE HAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/seris370.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **YU CHENGHUI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/luwenq.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LU WENQI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/le0tan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN YUANHONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/jiayushe.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SHE JIAYU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/tiuweehan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TIU WEE HAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-1.github.io/main/images/seris370.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **YU CHENGHUI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -4945,27 +4945,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/liakify.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE LIAK GHEE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/johnnzj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JOHN NG ZHENG JIE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/podocarp.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JIA XIAODONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/aulud.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KEVEN LOO YUQUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/daekoon.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM DAEKOON**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/liakify.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE LIAK GHEE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/johnnzj.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JOHN NG ZHENG JIE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/podocarp.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JIA XIAODONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/aulud.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KEVEN LOO YUQUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-2.github.io/main/images/daekoon.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM DAEKOON**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5031,27 +5031,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/junhongt.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TEO JUN HONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/dvrylc.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHAN KOK JING, DARYL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/walnads.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NADIA ATIQAH BINTE MOHD YAHYA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/jakq.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ANG KAI QI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/rohitreddybalam.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **BALAM SAI ROHIT REDDY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/junhongt.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TEO JUN HONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/dvrylc.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHAN KOK JING, DARYL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/walnads.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NADIA ATIQAH BINTE MOHD YAHYA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/jakq.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ANG KAI QI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-3.github.io/main/images/rohitreddybalam.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **BALAM SAI ROHIT REDDY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5117,26 +5117,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/iltep64.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **RYAN CHEW JING RONG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/fangpinsern.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **FANG PIN SERN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/felixnwj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **NG WEN JUN, FELIX**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/mauricetxs.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN XIANG SHENG, MAURICE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/iltep64.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **RYAN CHEW JING RONG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/fangpinsern.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **FANG PIN SERN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/felixnwj.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **NG WEN JUN, FELIX**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W11-4.github.io/main/images/mauricetxs.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN XIANG SHENG, MAURICE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5202,26 +5202,26 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/weigenie.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE WEI GEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/joshuaseetss.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JOSHUA SEET SIANG SUEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/lawncegoh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LAWNCE GOH JIA WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/tanzhanming.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN ZHAN MING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/weigenie.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE WEI GEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/joshuaseetss.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JOSHUA SEET SIANG SUEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/lawncegoh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LAWNCE GOH JIA WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-1.github.io/main/images/tanzhanming.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN ZHAN MING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5287,27 +5287,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/limerencee.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **POH JIA HAO**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/lightz96.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE BO QIANG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/krusagiz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **ANG CHIN GUAN, MELVIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/lye-jw.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LYE JIAN WEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/kensonoenqh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **OEN QI HAN, KENSON**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/limerencee.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **POH JIA HAO**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/lightz96.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE BO QIANG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/krusagiz.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **ANG CHIN GUAN, MELVIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/lye-jw.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LYE JIAN WEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-2.github.io/main/images/kensonoenqh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **OEN QI HAN, KENSON**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5373,27 +5373,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/joloong.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LOONG JIAN HUNG, JOEL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/dingyuchen.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **DING YUCHEN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/berttwm.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN WEI MING, BERTRAND**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/wallacelim97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WALLACE LIM**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/yewon0303.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **PARK YE WON**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/joloong.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LOONG JIAN HUNG, JOEL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/dingyuchen.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **DING YUCHEN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/berttwm.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN WEI MING, BERTRAND**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/wallacelim97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WALLACE LIM**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-3.github.io/main/images/yewon0303.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **PARK YE WON**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5459,27 +5459,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/leeyiyuan.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LEE YIYUAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/nexolute.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM WEI JIE, EUGENE**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/weiyang13.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TAN WEI YANG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/alaete.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **OLIVIA YU WANZHI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/troomtroom.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KARTIKE KHANDELWAL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/leeyiyuan.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LEE YIYUAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/nexolute.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM WEI JIE, EUGENE**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/weiyang13.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TAN WEI YANG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/alaete.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **OLIVIA YU WANZHI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W12-4.github.io/main/images/troomtroom.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KARTIKE KHANDELWAL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5545,27 +5545,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/bitterg0d.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WANG RONG SHIRLEY**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/alexwxh.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **WU XINGHAO, ALEX**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/geshuming.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **GE SHUMING**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/cowsaysbaa.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **GUO ZILI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/kzrthikz.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **MURUGESAN KARTHIKA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/bitterg0d.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WANG RONG SHIRLEY**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/alexwxh.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **WU XINGHAO, ALEX**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/geshuming.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **GE SHUMING**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/cowsaysbaa.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **GUO ZILI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-1.github.io/main/images/kzrthikz.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **MURUGESAN KARTHIKA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5631,27 +5631,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/alages97.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **K ALAGES**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/lumwb.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LUM WEI BOON**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/fabbbbbbyy.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **FABIAN CHIA HUP PENG**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/russell-loh-nus.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **RUSSELL LOH CHUN FA**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/jeongyh99.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JEONG YU HAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/alages97.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **K ALAGES**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/lumwb.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LUM WEI BOON**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/fabbbbbbyy.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **FABIAN CHIA HUP PENG**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/russell-loh-nus.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **RUSSELL LOH CHUN FA**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-2.github.io/main/images/jeongyh99.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JEONG YU HAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5717,27 +5717,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/chanjunren.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHAN JUN REN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/sam-limyr.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **LIM YU RONG, SAMUEL**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/sahilgat.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **SAHIL S/O SANJEEV GATHANI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/jaesimin.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **JASMINE YEO JIA MIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/ckb055.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEN KAIBIN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/chanjunren.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHAN JUN REN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/sam-limyr.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **LIM YU RONG, SAMUEL**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/sahilgat.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **SAHIL S/O SANJEEV GATHANI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/jaesimin.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **JASMINE YEO JIA MIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-3.github.io/main/images/ckb055.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEN KAIBIN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
@@ -5803,27 +5803,27 @@ Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 Member | Comments <font color="white">------------------------------------------------------------------------------------------------</font>
 -------|---------
-<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/thwnus.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **TEE HAO WEI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/tcgj.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHONG GUANG JUN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/chenjiehan318.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **CHEN JIEHAN**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/kenneth-fung.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **KENNETH FUNG CHEN YU**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
-<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/cambrian-dk.png" height="150" onerror="this.src='images/placeholder-large.png';" /> | **DARYL KOH YI KAI**<br>[Difficulty: `L` `M` `H` ]&nbsp;[Completeness: `L` `M` `H` ]&nbsp;[Polished? `0` `1` ] |
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/thwnus.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **TEE HAO WEI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/tcgj.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHONG GUANG JUN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/chenjiehan318.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **CHEN JIEHAN**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/kenneth-fung.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **KENNETH FUNG CHEN YU**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
+<img src="https://AY1920S1-CS2103T-W13-4.github.io/main/images/cambrian-dk.png" height="185" onerror="this.src='images/placeholder-small.png';" /> | **DARYL KOH YI KAI**<span style="float:right;font-size: 20px">[Diff: **`L` `m` `h`** ]&nbsp;[Compl: **`L` `m` `h`** ]&nbsp;[Polished? `0` `1` ]</span> |
 
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`U`: Unable to judge][`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
 
 **Difficulty/Depth**:
-- ( ) `L`: %%e.g., 1. make the existing _find_ command case insensitive%% <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
-      that is not connected to any other entity type%%
-- ( ) `M`:   %%Examples: 1. a moderately difficult new command that is not similar to existing commands%%. <br>
-      %%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
-      lightly connected to other entity types%%.
-- ( ) `H`: %%e.g., a) A high-level of natural language support b) A deep integration with another product c)
+- ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. CRUD for a simple entity type just like Person 
+      that is not connected to any other entity type
+- ( ) `M`:   Examples: 1. a moderately difficult new command that is not similar to existing commands. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. a new entity type moderately different from Person and 
+      lightly connected to other entity types.
+- ( ) `H`: e.g., a) A high-level of natural language support b) A deep integration with another product c)
        An enhancement that makes the product good enough to take to the market d) A new entity type very different from
-       Person and deeply connected to many other entity types%%
+       Person and deeply connected to many other entity types
 
 **Completeness**:
 - ( ) `L`: A partial implementation of the feature. Barely useful.
