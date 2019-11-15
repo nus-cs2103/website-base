@@ -167,8 +167,8 @@ It is fine if you want to directly explain each of those aspects of your feature
 
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Format</span>
 
-* File name: `docs/team/githbub_username_in_lower_case.adoc` e.g., `docs/team/johndoe.adoc`
-* {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ ab3_website }}/team/johndoe.html)
+* File name: `docs/team/githbub_username_in_lower_case.adoc` e.g., `docs/team/johndoe123.adoc`
+* {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ ab3_website }}/team/johndoe123.html)
 
 * {{ icon_tip }} You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample]({{ ab3_website }}/team/johndoe.html).
 
