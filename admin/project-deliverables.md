@@ -500,7 +500,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 <box type="info" icon=":fas-hard-hat:">
 
 * CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum or ask in slack if you need any guidance with its usage.
-* Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and worth through the issues together. If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
+* Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
 </box>
 * Launch CATcher, and login to the profile `{{ module }}/T PE`. It will show all the bugs assigned to your team, divided into three sections:
   1. `Issues Pending Responses` - Issues that your team has not processed yet.
