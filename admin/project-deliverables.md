@@ -550,7 +550,7 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 
 * **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know ASAP.
 * **If the bug is reported multiple times**,
-  * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the `duplicate` tag. The one not mark
+  * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the `duplicate` tag.
   * If the duplicates have different severity levels, you should ==keep the one with the highest severity== as the _original_. But you can downgrade the severity of the original or the duplicates.
   * For each group of duplicates, all duplicates should point to one _original_ i.e., no multiple levels of duplicates, and no cyclical duplication relationships.
   * If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the `type.*` and `severity.*` from the _original_.
