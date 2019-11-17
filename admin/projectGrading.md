@@ -59,7 +59,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -146,7 +146,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -232,7 +232,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -318,7 +318,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -404,7 +404,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -490,7 +490,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -576,7 +576,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -662,7 +662,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -748,7 +748,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -834,7 +834,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -920,7 +920,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1006,7 +1006,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1092,7 +1092,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1178,7 +1178,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1264,7 +1264,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1350,7 +1350,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1436,7 +1436,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1522,7 +1522,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1608,7 +1608,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1693,7 +1693,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1779,7 +1779,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1865,7 +1865,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -1951,7 +1951,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2037,7 +2037,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2123,7 +2123,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2208,7 +2208,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2293,7 +2293,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2378,7 +2378,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2463,7 +2463,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2548,7 +2548,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2634,7 +2634,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2719,7 +2719,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2805,7 +2805,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2891,7 +2891,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -2977,7 +2977,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3063,7 +3063,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3148,7 +3148,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3234,7 +3234,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3320,7 +3320,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3406,7 +3406,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3492,7 +3492,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3578,7 +3578,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3664,7 +3664,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3750,7 +3750,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3836,7 +3836,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -3922,7 +3922,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4008,7 +4008,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4094,7 +4094,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4180,7 +4180,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4266,7 +4266,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4352,7 +4352,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4438,7 +4438,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4524,7 +4524,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4610,7 +4610,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4696,7 +4696,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4782,7 +4782,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4868,7 +4868,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -4954,7 +4954,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5040,7 +5040,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5125,7 +5125,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5210,7 +5210,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5296,7 +5296,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5382,7 +5382,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5468,7 +5468,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5554,7 +5554,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5640,7 +5640,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5726,7 +5726,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
@@ -5812,7 +5812,7 @@ Member | Comments <font color="white">------------------------------------------
 <div style="font-size:20px">
 
 [{{ icon_individual }}]: Evaluate the feature done by the student for difficulty/depth  and completeness.<br>
-Scale: [`L`: Low, B- and below][`M`: Medium, B+/A-][`H`: High, A/A+]
+Scale: [`L`: Low, B- and below][`M`: Medium, B][`H`: High, B+/A-][`polished`: A/A+]
 
 **Difficulty/Depth**:
 - ( ) `L`: e.g., 1. make the existing _find_ command case insensitive <br>
