@@ -614,7 +614,7 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
   * not accepted
   * severity downgraded
   * bug type changed
-* As before, consider carefully before you object to a team response. ==<span class="text-danger"If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
+* As before, consider carefully before you object to a team response. ==<span class="text-danger">If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
 * This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.
 * **Deadline: Reading week Thursday 2359**
 * Procedure:
