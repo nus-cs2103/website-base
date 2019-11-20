@@ -512,11 +512,13 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 <div class="indented-less">
 
 <markdown>
+<span id="warning-use-catcher">
 
 <box type="warning">
 
 Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are strongly recommended to use CATcher for PE-D and PE activities. If you want to give your response via GitHub instead, **<span class="text-danger">please get our permission first</span>**.
 </box>
+</span>
 
 * Go to the [dev-response issue tracker]({{ module_org }}/pe-dev-response)
 * Use `tutorial.*` and `team.*` labels to filter bug reports your team received.
@@ -608,16 +610,48 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
 
-* In this phase you will get to state whether you agree or disagree with the dev response to the bugs you reported.
+* In this phase you will get to state whether you agree or disagree with the dev response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving team, you can record your objections and the reason for the objection.
+  * not accepted
+  * severity downgraded
+  * bug type changed
+* As before, consider carefully before you object to a team response. ==<span class="text-danger"If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
 * This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.
 * **Deadline: Reading week Thursday 2359**
 * Procedure:
-  * When the phase has been announced as open, login to CATcher as usual (profile: `CS2103/T PE`).
-  * If a bug reported has been subjected to any of the below by the receiving team, CATcher will allow you to record your objections and the reason for the objection.
-    * not accepted
-    * severity downgraded
-    * bug type changed
-* As before, consider carefully before you object to a team response. ==<span class="text-danger"If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
+
+<div class="indented-level2">
+
+<tabs> 
+  <tab header="Using CATcher">
+
+* When the phase has been announced as open, login to CATcher as usual (profile: `CS2103/T PE`).
+* For the issues listed, go to the details, and read the team's response. 
+* If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
+
+</tab>
+<tab header="Not using CATcher">
+<div class="indented-less">
+
+<markdown>
+<include src="project-deliverables.md#warning-use-catcher" />
+
+* When the phase has been announced as open, go to your `pe` repo.
+* For the issues listed, go to the details, and read the bot's comment containing the team's response.
+* If you disagree with any of the items listed in that comment, tick on the `[ ] I disagree` tick box. ==Edit the comment (do not add a new comment)== to replace the `[replace this with your reason]` with your reasoning. Here is an example:<br>
+</markdown>
+
+```
+Team chose ['response.IssueUnclear']
+
+- [x] I disagree
+
+**Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.
+```
+</div>
+</tab>
+</tabs>
+</div>
+
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
 
