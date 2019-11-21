@@ -356,6 +356,7 @@ Total | 5-10 ==(strict)==
 * Post bug reports in the following repo you created earlier:
   * PE Dry Run: `ped`
   * PE: `pe`
+* The whole description of the bug should be in the issue description i.e., ==do not add comments to the issue==.
 </markdown>
 </div>
 </tab>
