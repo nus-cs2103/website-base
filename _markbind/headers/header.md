@@ -1,5 +1,6 @@
 {% from "schedule/index.md" import weeks, current_weeks with context %}
 <header>
+<!-- div class="w-100 p-1 bg-warning text-center"><md>**This site is outdated! The new version is [here](http://www.comp.nus.edu.sg/~cs2103).**</md></div -->
 <navbar placement="top" type="dark">
   <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">{{ module_pair }} <small>{{ period }}</small></a>
   <dropdown text="Schedule" class="nav-link">
