@@ -43,4 +43,4 @@ On a somewhat related note, you can also **create similar product websites for y
 </div>
 {% endmacro %}
 
-{{ show_admin_page("ip-w06", show_main_text) }}
+{{ show_admin_page("ip-w07", show_main_text) }}

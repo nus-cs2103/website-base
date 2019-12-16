@@ -68,7 +68,7 @@ Module        | Venue             | Time               | ~~%%Tutorial ID<br>in L
 
 <br/>
 
-* **No ‘teaching’**: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you. Self-learning is a vital part of the module. But of course tutors can help you clarify doubts under the right circumstances.
+* **No ‘teaching’**: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you as self-learning is a vital part of the module. For example, the tutor will not do a mini-lecture at the start of the tutorial. Of course tutors can help you clarify doubts under the right circumstances.
 
 <div class="indented-level2">
 {{ embed_topic("appendixD-help.md#questions-for-tutros", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable for tutor", "tutorials-apdxDtutorQuestions", "2") }}
@@ -84,7 +84,7 @@ Module        | Venue             | Time               | ~~%%Tutorial ID<br>in L
 * You are expected to arrive on time. ==Punctuality is considered for participation marks.==
 * You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is dismissed.
 * Please make sure you ==vacate the table 5 minutes before the hour== so that the next group can start on time.
-* In the past many students have requested to increase the tutorial duration because a single hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to make the best of the one hour available by coming well prepared and starting on time.
+* In the past, many students have requested to increase the tutorial duration because a mere hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to make the best of the one hour available by coming well prepared and starting on time.
 
 **Grading:**
 

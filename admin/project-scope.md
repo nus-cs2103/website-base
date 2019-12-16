@@ -59,66 +59,42 @@ For either direction, you need to define a target user profile and a value propo
 
 <div id="individualExpectations">
 
-##### [Individual] Expectations on Features
+##### [Individual] Expectations on Enhancements
 
-* You are expected to add at least one feature to the product.
+* **You are expected to enhance the product in some way(s).** User-visible enhancements are preferred, but it is not a strict requirement. Some examples:
 
-<div class="indented-level2" id="featureDefinition">
+<div class="indented-level2">
+<panel type="seamless" header="Example enhancements" minimized >
+  * Add a new feature %%e.g. add the ability to view statistics%%
+  * Enhance an existing features in a major way %%e.g. make the command syntax more user friendly and closer to natural language%%
+  * A redesign of the GUI %%e.g. make it work like a chat application (note: chat is a form of CLI)%%
+  * A redesign of the code %%e.g. Improve the design to improve the code quality.%%
+
+</panel><p/>
+</div>
+
+* **The enhancement(s) should fit with the rest of the software** (and the target user profile) and should have the consent of the team members. %%You will lose marks if you go 'rogue' and add things that don't fit with the product.%%
+
+<div class="indented">
+
 <box>
 
-{{ icon_info }} **What is considered a _feature_?** As long as you can convince the evaluators (some of whom are your peers) that the work you did belongs under a <tooltip content="i.e., it can be separately identified, tested, and evaluated">distinct</tooltip> "feature X", it can be considered as a feature. e.g., `adding support for reminders`, `improving the GUI design`, `making the command user-friendly`.
+**Tips:**
+
+{{ icon_tip }} **Fewer but bigger enhancement can earn you more marks than many small enhancements.** %%Reason: You will also be graded for the depth/difficulty of your work.%% But it is fine to do small features at first to build up confidence before you start a big enhancement.
+
+{{ icon_tip }} **Contribute to all aspects of the project** e.g. write backend code, frontend code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
+
+{{ icon_tip }} **Do _all_ the work related to your enhancement yourself.** %%Reason:If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%
+
+{{ icon_tip }} **Divide the components of the product among team members**. Notwithstanding the above, you are still expected to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
 </box>
 </div>
 
-* ==One big feature can earn you more marks than multiple small features.== %%Reason: When grading your work for depth and completeness, only your biggest feature you will be considered.%%
-* At least one feature (preferably, the biggest feature) should be end-user visible and end-user testable. %%Reason: If your feature cannot be identified and tested by the testers, we will not be able to give marks for the quality assurance of that feature.%%
-* The features should fit with the rest of the software (and the target user profile) and should have the consent of the team members.. %%You will lose marks if you go 'rogue' and add features that don't fit with the product.%%
-
-
-<panel type="seamless" header="%%{{ icon_example }} Examples of suitable enhancements%%" >
-
-1. Add a new feature
-1. Enhance an existing features in a major way %%e.g. make the command syntax more user friendly and closer to natural language%%
-1. A major redesign of the GUI %%e.g. make it work like a chat application (note: chat is a form of CLI)%%
-1. Integrate with online services %%e.g. Google contacts, Facebook, GitHub, etc.%%
-
-</panel>
-
-
-<panel type="seamless" header="%%{{ icon_example }} Enhancement vs Grade: Examples%%">
-
-Here are some examples of different enhancements and the grade the student is likely to earn for the relevant parts of the project grade.
-* Example 1 (Expected grade: `A`) : [Add support for undo/redo](https://github.com/se-edu/addressbook-level4/pull/610/files)
-* Example 2 (Expected grade: `B`) : [Add support for viewing history](https://github.com/se-edu/addressbook-level4/pull/440/files)
-
-</panel><p/>
-
-* Although we prefer one big feature over multiple small features, it is fine to do small features at first to build up confidence before you start a big feature.
-
-<panel type="seamless" header="%%{{ icon_example }} Examples of minor enhancements%%">
-
-Here is a non-exhaustive list of minor enhancements:
-
-1. Support different themes for the Look & Feel %%dark, light, etc.%%
-1. Support more fields %%e.g. Birthday%%
-1. Load a different page instead of the default Google search page %%e.g. Google Maps page or Twitter page%%
-1. Sort items
-1. Multiple panels %%e.g. an additional panel to show recently accessed items%%
-1. Marking some items as favorites
-1. Ability to search by labels
-1. Ability to specify colors for labels
-
-</panel><p/>
-
-We strongly recommend that you contribute to multiple (preferably, all) aspects of the project e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do.
-
-In particular, ==you are required to divide work based on features rather than components==:
-   * By the <tooltip content="i.e. by `v1.4`">end of this project</tooltip> each team member is expected to have implemented at least one feature end-to-end, doing required changes in _almost all_ components. %%Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components%%.
-   * Nevertheless, you are ==still expected to divide the components of the product among team members== so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
-
-##### [Individual] Expectations on Code
-
-* Based on past experience, ==it is possible for a feature consisting of **~300-500 LoC of functional code** to earn full marks== provided the feature do well in all grading criteria.
+* **How much code to write?** The project grade depends on the value you added, as perceived by evaluators (i.e., team members, peer evaluators, and tutors) as well as other factors such as the quality of the code. As such, there is no strong correlation between the LoC and the grade. For instance, in a recent semester, a student who wrote 500 LoC of functional code (i.e., excluding test code and documentation) was able to reach top 20% (in terms of project marks), another who wrote 900 LoC reached the top 10%, while another who wrote more than 5000 LoC ended up in the bottom 10%. Also see the the percentiles of functional LoC  written by that batch of students, given below:
+  Percentile | 25    | 50    |  75 
+  -----------|-------|-------|----
+  LoC        | ~1000 | ~1500 | ~2500
 
 ##### [Individual] Expectations on Documentation
 
@@ -126,8 +102,8 @@ In particular, ==you are required to divide work based on features rather than c
 * **The objective is to showcase your ability to write the two types of documentation.** If the documentation for your features is not enough to meet that objective, or does not reach the following minimal requirement, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.
   * Contribution to the user guide: 1 page
   * Contribution to the developer guide: 3 pages
-* You are expected to ==showcase your ability to use the various UML diagrams (at least 2 types)==. As mentioned in the previous point, if the documentation of your features doesn't give you enough opportunities to do so %%e.g., your features only required minor updates to existing diagrams%%, you are expected to create those opportunities yourself by documenting proposed features or alternative designs. Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.
-* You are recommended to, but not required to, update all existing AB3 documentation to match your product. However, all diagrams that are included in the part of documentation claimed as done by you should be updated to match the current product.
+* You are expected to ==showcase your ability to use the various UML diagrams (at least 2 types)==. As mentioned in the previous point, if the documentation of your features doesn't give you enough opportunities to do so %%e.g., your features only required minor updates to existing diagrams%%, you are expected to create those opportunities yourself by documenting _proposed_ features or _alternative_ designs. Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.
+* You are required to update the entire UG and DG to match your product. However, there is no need to update other documents such as tutorials that are AB3 specific.
 
 ##### [Individual] Expectations on Testing
 

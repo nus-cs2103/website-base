@@ -28,7 +28,7 @@ This module follows the ==[this Java coding standard]({{java_coding_standard}})=
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
-We strongly recommend **Java 11** (the Oracle version or the OpenJDK version).
+We require you to use **Java 11** (the Oracle version or the OpenJDK version) for all module work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
 </box>
 
 </div>

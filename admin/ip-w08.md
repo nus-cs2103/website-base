@@ -386,4 +386,4 @@ This activity is worth 2 participation points!
 </div>
 {% endmacro %}
 
-{{ show_admin_page("ip-w06", show_main_text) }}
+{{ show_admin_page("ip-w08", show_main_text) }}

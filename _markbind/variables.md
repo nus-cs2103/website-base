@@ -4,9 +4,9 @@
 
 <span id="module_name">Software Engineering</span>
 
-<span id="semester">AY1920S1</span>
+<span id="semester">AY1920S2</span>
 
-<span id="period">2019 Aug-Dec</span>
+<span id="period">2020 Jan-Apr</span>
 
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-success'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 
