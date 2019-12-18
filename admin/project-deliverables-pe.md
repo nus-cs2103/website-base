@@ -1,0 +1,266 @@
+{% from "common/macros.njk" import embed_topic with context %}
+
+#### <span class="badge badge-success">PE</span> <span class="text-success">Overview</span>
+
+<span id="pe-overview">
+
+**Objectives:**
+* The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for 45% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
+* PE is also ==used to evaluate your manual testing skills, product evaluation skills, effort estimation skills== etc.
+* Note that significant project components are ==not graded solely based on peer ratings==. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
+* Note that the PE is ==not a means of _pitting you against each other_==. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
+
+**Grading**:
+* Your performance in the practical exam will affect your final grade and your peers', as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/project-grading.html) section.
+* As such, we have put in measures to identify and ==penalize insincere/random evaluations==.
+* Also see:
+
+<div class="indented-level2">
+
+{{ embed_topic("project-grading.md#pe-grading-notes", "Admin " + icon_embedding + " tP Grading → Notes on grading PE product testing", "projectDeliverables-peGradingNotes", "3") }}
+</div>
+</span>
+
+#### <span class="badge badge-success">PE</span> <span class="text-success">Preparation</span>
+
+* It's similar to,
+<div class="indented-level2">
+
+<panel type="primary" header="PE-D Preparation" minimized>
+
+<include src="project-testing.mbdf#testingPreparations" />
+</panel>
+</div>
+<p/>
+
+#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
+
+* **When, where**: Week 13 lecture
+
+##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
+
+* **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
+
+<div class="indented-level2">
+<include src="project-deliverables-ped.md#project-deliverables-pe-testing-intructions" />
+</div>
+
+##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [20 minutes]</span>
+
+* **This slot is for reporting documentation bugs only**. You may report bugs related to UG and DG.
+* UG:
+  * ...
+* DG:
+  * ...
+
+##### <span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [10 minutes]</span>
+
+* **Evaluate the following aspects.** Submit via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.
+
+<div class="indented-level2">
+<box>
+
+**A. Product Design** [{{ icon_team }}]:
+<div class="indented-level2">
+<include src="project-grading.md#projectGrading-featureFit-instructions" />
+</div>
+
+**B. Quality of user docs** [{{ icon_individual }}]:
+<div class="indented">
+<include src="project-grading.md#projectGrading-userGuide-instructions" />
+</div>
+
+**C. Quality of developer docs** [{{ icon_individual }}]:
+<div class="indented">
+<include src="project-grading.md#projectGrading-devGuide-instructions" />
+</div>
+
+**D. Feature Quality** [{{ icon_individual }}]:
+<div class="indented">
+<include src="project-grading.md#projectGrading-featureQuality-instructions" />
+</div>
+
+**E. Amount of work** [{{ icon_individual }}]:
+<div class="indented">
+<include src="project-grading.md#projectGrading-effort-instructions" />
+</div>
+</box>
+</div>
+
+#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
+
+This phase is for you to respond to the bug reports you received.
+
+Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Tuesday midnight**. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
+
+Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
+
+<box>
+
+**Instructions for Reviewing Bug Reports**
+
+* **Don't freak out if there are lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
+
+<tabs>
+<tab header="Using CATcher">
+
+<box type="info" icon=":fas-hard-hat:">
+
+* CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum if you need any guidance with its usage.
+* Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
+</box>
+* Launch CATcher, and login to the profile `{{ module }}/T PE`. It will show all the bugs assigned to your team, divided into three sections:
+  1. `Issues Pending Responses` - Issues that your team has not processed yet.
+  1. `Issues Responded` - Your job is to get all issues to the second category.
+  1. `Faulty Issues` - e.g., Bugs marked as duplicates of each other, or causing circular _duplicate_ relationships. Fix the problem given so that no issues remain in this category.
+* Respond to the bug reports shown.
+</tab>
+<tab header="Not using CATcher">
+<div class="indented-less">
+
+<markdown>
+<span id="warning-use-catcher">
+
+<box type="warning">
+
+Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are strongly recommended to use CATcher for PE-D and PE activities. If you want to give your response via GitHub instead, **<span class="text-danger">please get our permission first</span>**.
+</box>
+</span>
+
+* Go to the [dev-response issue tracker]({{ module_org }}/pe-dev-response)
+* Use `tutorial.*` and `team.*` labels to filter bug reports your team received.
+* **Do not edit the subject or the description.** Your response (if any) should be added as a comment.
+* Add a comment using the following exact template.
+```markdown
+# Team's Response
+{replace this with your response}
+
+## Duplicate status (if any):
+
+```
+Here is an example:
+```markdown
+# Team's Response
+
+Yes this is a bug. But it is a duplicate.
+* Changed the bug type because this is just a bug in the UG.
+* Lowered the severity because users can still use the feature.
+
+## Duplicate status (if any):
+Duplicate of #67
+```
+* Do not close the bug report after you are done processing it.
+* Use the exact `Duplicate of #123` format to indicate duplicates.
+* There should be exactly one comment per issue. If there are multiple comments, the last one will be taken for processing.
+</markdown>
+</div>
+</tab>
+</tabs>
+
+* **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know ASAP.
+* **If the bug is reported multiple times**,
+  * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the `duplicate` tag.
+  * If the duplicates have different severity levels, you should ==keep the one with the highest severity== as the _original_. But you can downgrade the severity of the original or the duplicates.
+  * For each group of duplicates, all duplicates should point to one _original_ i.e., no multiple levels of duplicates, and no cyclical duplication relationships.
+  * If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the `type.*` and `severity.*` from the _original_.
+<p/>
+
+* **Apply exactly one of these labels** (if missing, we assign: `response.Accepted`)
+
+<div class="indented">
+<box>
+
+**Response** Labels:
+* `response.Accepted`: You accept it as a bug.
+* `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in v1.4%%.
+* `response.Rejected`: What tester treated as a bug is in fact the expected behavior.  You can reject bugs that you inherited from AB3.
+* `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
+* `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
+
+</box>
+</div>
+
+
+* **Apply exactly one of these labels** (if missing, we assign: `type.FunctionalityBug`)
+
+<div class="indented" id="type-labels">
+<box>
+
+**Type** labels:
+* `type.FunctionalityBug`: A functionality does not work as specified/expected.
+* `type.FeatureFlaw`: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.
+* `type.DocTypo`: A minor typo in the documentation %%e.g., spelling error%% that does not affect the users.
+* `type.DocumentationBug`: A flaw in the documentation that can potentially affect the user %%e.g., a missing step, a wrong instruction, typos that affect users%%
+</box>
+</div>
+
+* **If you disagree with the original severity assigned to the bug**, you may change it to the correct level.
+
+<div class="indented">
+<include src="appendixE-gitHub.md#bug-severity" />
+</div>
+
+* **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.**
+  * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
+<p/>
+
+* As far as possible, **choose the correct `type.*`, `severity.*`, and assignees even for bugs you are not accepting or for bugs that are marked as duplicates**. Reason: your _non-acceptance_  or duplication status may be rejected in a later phase, in which case we need to grade it as an accepted/non-duplicate bug.
+
+* **Justify your response.** For all of the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be double-checked by the teaching team in later phases. ==<span class="text-danger">Indiscriminate/unreasonable dev/tester responses, if deemed as a case of trying to _game the system_, will be penalized.</span>==
+  * downgrading severity
+  * non-acceptance of a bug
+  * changing the bug type
+  * non-obvious duplicate
+
+<p/>
+</box>
+
+#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
+
+* In this phase you will get to state whether you agree or disagree with the dev response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving team, you can record your objections and the reason for the objection.
+  * not accepted
+  * severity downgraded
+  * bug type changed
+* As before, consider carefully before you object to a team's response. ==<span class="text-danger">If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
+* This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.
+* **Deadline: Reading week Thursday 2359**
+* Procedure:
+
+<div class="indented-level2">
+
+<tabs>
+<tab header="Using CATcher">
+
+* When the phase has been announced as open, login to CATcher as usual (profile: `CS2103/T PE`).
+* For the issues listed, go to the details, and read the team's response.
+* If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
+
+</tab>
+<tab header="Not using CATcher">
+<div class="indented-less">
+
+<markdown>
+<include src="project-deliverables-pe.md#warning-use-catcher" />
+
+* When the phase has been announced as open, go to your `pe` repo.
+* For the issues listed, go to the details, and read the bot's comment containing the team's response.
+* If you disagree with any of the items listed in that comment, tick on the `[ ] I disagree` tick box. ==Edit the comment (do not add a new comment)== to replace the `[replace this with your reason]` with your reasoning. Here is an example:<br>
+</markdown>
+
+```
+Team chose ['response.IssueUnclear']
+
+- [x] I disagree
+
+**Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.
+```
+</div>
+</tab>
+</tabs>
+</div>
+
+
+#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
+
+* In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome.
+* In the unlikely we need your inputs, the tutor will contact you.

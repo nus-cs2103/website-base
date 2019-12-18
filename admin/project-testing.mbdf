@@ -25,7 +25,7 @@ Issues created for PED and PE need to be in a precise format for our grading scr
 
 <div class="indented-level2">
 <include src="appendixE-gitHub.md#bug-severity" />
-<include src="project-deliverables.md#type-labels" />
+<include src="project-deliverables-pe.md#type-labels" />
 </div>
 
 </markdown>

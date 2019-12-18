@@ -1,0 +1,121 @@
+#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span>
+
+**What**: The v1.3 is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.
+
+**When, where**: uses a 40 minute slot at the start of week 11 lecture
+
+<modal large title="Admin {{ icon_embedding }} Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
+  <include src="project-deliverables.md#project-deliverables-practicalexam"/>
+</modal>
+
+{{ icon_important_big_red }} **Grading**: Taking part in the PE dry run is strongly encouraged as it ==can affect your grade in the following ways==.
+* If the product you are allocated to test in the Practical Exam (at v1.4) had a very low bug count, we will consider your performance in PE dry run as well when grading the PE.
+* PE dry run will help you practice for the actual PE.
+* Taking part in the PE dry run will earn you participation points.
+* There is ==no penalty for bugs reported== in your product. Every bug you find is a win-win for you and the team whose product you are testing.
+
+**Why**:
+* **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.
+* **To help you improve your product** before the final submission.
+
+#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Preparation</span>
+
+<include src="project-testing.mbdf#testingPreparations" />
+
+#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">During the session</span>
+
+<div id="project-deliverables-pe-testing-intructions">
+<box>
+
+##### <div class="text-white bg-secondary p-1">**Testing instructions for PE and PE-D**</div>
+
+###### <div class="text-white bg-secondary p-1">a) Launching the JAR file</div>
+
+* Put the jar file ==in an empty folder==.
+* Open a command window. Run the `java -version` command to ensure you are using Java 11.
+* Launch the jar file ==using the `java -jar` command== (do not use double-clicking).
+* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch%%, you can test the _fallback_ team allocated to you. But in this case ==you must inform us immediately after the session== so that we can send your bug reports to the correct team.
+  * PE-D: Download the JAR file from their GitHub page
+  * PE: 1. Download from LumiNUS all files submitted by the team %%(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
+
+###### <div class="text-white bg-secondary p-1">b) What to test</div>
+
+* PE Dry Run (at **v1.3**):
+  * Test the product ==based on the User Guide== (the UG is most likely accessible using the `help` command).
+  * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
+* PE (at **v1.4**):
+  * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
+  * As before, do both ==system testing and acceptance testing== but give priority to system testing as system-testing bugs can earn you more credit.
+
+###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
+
+* **These are considered _bugs_**:
+  * Behavior differs from the User Guide
+  * A legitimate user behavior is not handled %%e.g. incorrect commands, extra parameters%%
+  * Behavior is not specified and differs from normal expectations %%e.g. error message does not match the error%%
+  * The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'
+  * Problems in the User Guide or the Developer Guide e.g., missing/incorrect info
+
+* **About posting _suggestions_:**
+  * PE Dry Run (at **v1.3**): You can also post suggestions on how to improve the product. {{ icon_tip }} Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
+  * PE (at **v1.4**): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`.
+
+###### <div class="text-white bg-secondary p-1">d) How to report bugs</div>
+
+* {{ icon_important_big_red }} **Post bugs as you find them** %%(i.e., do not wait to post all bugs at the end)%% because <span class="text-danger">bug reports created/modified after the allocated time will not count.</span>
+<div class="indented-level2">
+
+<tabs>
+<tab header="Using CATcher">
+
+* Launch CATcher, and login to the correct profile:
+  * PE Dry Run: `{{ module }}/T PE Dry run`
+  * PE: `{{ module }}/T PE`
+* Post bugs using CATcher.
+</tab>
+<tab header="Not using CATcher">
+<div class="indented-less">
+
+<markdown>
+* Post bug reports in the following repo you created earlier:
+  * PE Dry Run: `ped`
+  * PE: `pe`
+* The whole description of the bug should be in the issue description i.e., ==do not add comments to the issue==.
+</markdown>
+</div>
+</tab>
+</tabs>
+</div>
+
+###### <div class="text-white bg-secondary p-1">e) Bug report format</div>
+
+* Each bug should be a separate issue.
+* Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
+* Use a descriptive title.
+* Give a good description of the bug with ==steps to reproduce and screenshots==. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.
+* Assign exactly one `severity.*` label to the bug report. Bug report without a severity label are considered `severity.Low` (lower severity bugs earn lower credit)<br>
+
+<div class="indented-level2">
+<include src="appendixE-gitHub.md#bug-severity" />
+</div>
+
+* Assign exactly one `type.*` label to the issue.
+<div class="indented-level2">
+<include src="project-deliverables-pe.md#type-labels" />
+</div>
+
+</box>
+</div>
+
+<modal large title="Admin {{ icon_embedding }} Project →" id="modal:v1.3-ppp">
+  <include src="project-deliverables.md#project-deliverables-ppp"/>
+</modal>
+
+<span id="after-ped">
+
+#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span>
+* We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.
+* If you have received bug reports that don't seem to be about your project, do let us know ASAP (email the prof).
+* You can navigate to the original bug report (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
+  * {{ icon_tip }} Do not argue with the bug reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and discontinue to discussion.
+</span>

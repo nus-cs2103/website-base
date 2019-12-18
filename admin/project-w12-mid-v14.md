@@ -30,7 +30,7 @@
 * Learn the procedure for dealing with PED bugs you received:
 
 <div class="indented-level2">
-{{ embed_topic("project-deliverables.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "midv14_afterPed", "3") }}
+{{ embed_topic("project-deliverables-ped.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "midv14_afterPed", "3") }}
 </div>
 
 * **Freeze features** around this time. Ensure the current product have all the features you intend to release at v1.4. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.

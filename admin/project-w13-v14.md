@@ -137,7 +137,7 @@
 
 <panel type="primary" header="Admin → Deliverables → **PE Overview**" minimized>
 
-<include src="project-deliverables.md#pe-overview" />
+<include src="project-deliverables-pe.md#pe-overview" />
 </panel>
 <p/>
 <panel type="primary" header="Admin → Deliverables → **PE-D/PE Preparation**" minimized>
