@@ -54,7 +54,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-deliverables.md#project-deliverables-executable", "Admin " + icon_embedding + " Project → Deliverables → Executable", "v14-executable", "3") }}
+{{ embed_topic("project-deliverables.md#project-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "v14-executable", "3") }}
 </div>
 
 
@@ -62,7 +62,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-deliverables.md#project-deliverables-sourcecode", "Admin " + icon_embedding + " Project → Deliverables → Source Code", "v14-sourcecode", "3") }}
+{{ embed_topic("project-deliverables.md#project-deliverables-sourcecode", "Admin " + icon_embedding + " tP → Deliverables → Source Code", "v14-sourcecode", "3") }}
 </div>
 
 
@@ -71,7 +71,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-deliverables.md#project-deliverables-ug", "Admin " + icon_embedding + " Project → Deliverables → User Guide", "v14-deliverableUg", "3") }}
+{{ embed_topic("project-deliverables.md#project-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "v14-deliverableUg", "3") }}
 </div>
 
 * {{ icon_team }} **Developer Guide**: submit similar to UG<br>
@@ -79,7 +79,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-deliverables.md#project-deliverables-dg", "Admin " + icon_embedding + " Project → Deliverables → Developer Guide", "v14-deliverableDg", "3") }}
+{{ embed_topic("project-deliverables.md#project-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "v14-deliverableDg", "3") }}
 </div>
 <p/>
 
@@ -92,7 +92,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-deliverables.md#project-deliverables-ppp", "Admin " + icon_embedding + " Project → Deliverables → Project Portfolio Page", "v14-deliverablePpp", "3") }}
+{{ embed_topic("project-deliverables.md#project-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "v14-deliverablePpp", "3") }}
 </div>
 <p/>
 
@@ -101,7 +101,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-deliverables.md#project-deliverables-website", "Admin " + icon_embedding + " Project → Deliverables → Product Website", "v14-deliverableWebsite", "3") }}
+{{ embed_topic("project-deliverables.md#project-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "v14-deliverableWebsite", "3") }}
 </div>
 <p/>
 
@@ -118,7 +118,7 @@
 
 <img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px"><p/>
 
-{{ embed_topic("project-deliverables.md#project-deliverables-demo", "Admin " + icon_embedding + " Project → Deliverables → Demo", "v14-deliverableDemo", "3") }}
+{{ embed_topic("project-deliverables.md#project-deliverables-demo", "Admin " + icon_embedding + " tP → Deliverables → Demo", "v14-deliverableDemo", "3") }}
 <p/>
 </div>
 
@@ -153,7 +153,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-deliverables.md#project-deliverables-practicalexam", "Admin " + icon_embedding + " Project → Deliverables → Practical Exam", "v14-deliverablePe", "3") }}
+{{ embed_topic("project-deliverables.md#project-deliverables-practicalexam", "Admin " + icon_embedding + " tP → Deliverables → Practical Exam", "v14-deliverablePe", "3") }}
 </div>
 
 </div>

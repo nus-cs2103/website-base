@@ -36,8 +36,6 @@
 
 <span id="schedule_link"><md>[Schedule page]({{baseUrl}}/index.html)</md></span>
 
-<span id="slack_team">https://nus-{{ module | lower }}-{{ semester | lower }}.slack.com</span>
-
 <span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
 
 <span id="ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</span>

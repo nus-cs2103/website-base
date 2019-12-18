@@ -57,11 +57,11 @@
 **In addition, you are strongly encouraged to follow these recommendations** as they can help increase your project score.
 
 * {{ show_recommendation("Recommendation-Minimal-Network") }} It is OK to use a reliable public API %%e.g., Google search%% but we recommend that you have a fallback mechanism (e.g., able to load data using a data file if the network is down).<br>
-  %%**Reason:** During the mass peer-testing session the network access can be intermittent due to high load. If your feature cannot be tested due to lack of Internet, that will have to be counted as a major bug, to be fair to those whose app is being tested and bugs found being penalized.%%<br>
+  %%**Reason:** During the mass peer-testing session, the network access can be intermittent due to high load. If your feature cannot be tested due to lack of Internet, that will have to be counted as a major bug, to be fair to those whose app is being tested and bugs found being penalized.%%<br>
   ==If you use NUS data== (e.g., scrape data from an NUS website), please work with [NUS IT](https://nusit.nus.edu.sg/contact-us/) directly to get their approval first. Even well-intentioned use of NUS data without approval can get you into serious trouble (has happened before). The teaching team will not be able to get approval for you as the use of NUS data is not a module requirement.
 
 * {{ show_recommendation("Recommendation-Testability") }} Avoid implementing hard-to-test (both for manual testing as well as automated testing) features or features that make your product hard-to-test.<br>
-  %%**Reason**: _testability_ is a grading criterion. If you choose to implement such a feature, you will need to spend an extra effort to reach an acceptable level of testability.%%
+  %%**Reason**: ==_testability_ is a grading criterion.== If you choose to implement such a feature, you will need to spend an extra effort to reach an acceptable level of testability.%%
   Here are some examples of features that are hard-to-test:
   * Features that depend heavily on remote APIs: Those APIs can block your access if they mistake your automated tests as a bot attack. Some remote APIs require setting up accounts, keys, login etc, that will irritate the testers of your product and give a low rating to the testability of your work.
   * Audio-related features: The peer testing of your product is done under exam conditions where it is not appropriate to play audio.
@@ -70,12 +70,11 @@
 
 <span id="constraint-cli">
 
-* {{ show_recommendation("Recommendation-CLI-First") }} As per _Constraint-Typing-Preferred_, the input to the app needs to be primarily CLI. The GUI can be used to give visual feedback to the user rather than to collect input. While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users, which will be graded under the _product design_ criterion.<br>
-  Some suggestions:
-  * Give keyboard alternatives to mouse/GUI inputs, if any.
-  * Regular typing is usually faster than using key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse actions or key combinations.
+* {{ show_recommendation("Recommendation-CLI-First") }} Following from the _Constraint-Typing-Preferred_, if the app is optimized for the target user (graded under the _product design_ criterion), ==a user who can type fast should be able to accomplish most tasks faster via CLI, compared to a hypothetical GUI-only version of the app.== %%For example, adding a new entity via the CLI should be faster than entering the same data through a GUI form.%%<br>
+  Therefore, the input to the app needs to be primarily CLI. The GUI is used primarily to give visual feedback to the user. While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br>
+  Also keep in mind:
+  * Regular typing is usually faster than using key combinations.
   * <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert users.<br>
-   %%Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.%%
 </span>
 
 <box type="warning">

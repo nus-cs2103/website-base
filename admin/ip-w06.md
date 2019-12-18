@@ -34,7 +34,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-deliverables.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "ipW6-tipsForScreenshots", "3") }}
+{{ embed_topic("project-deliverables-website.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "ipW6-tipsForScreenshots", "3") }}
 </div>
 
 

@@ -63,7 +63,7 @@
     * You can use `ref` frames to break sequence diagrams to multiple diagrams. Similarly, `rake`s can be used to divide activity diagrams.
   * **Stay at the highest level of abstraction** possible e.g., note how <trigger trigger="click" for="modal:ipWeek10-archiSd">this sequence diagram</trigger> shows only the interactions between architectural components, abstracting away the interactions that happen inside each component.
   * For some more examples, see <trigger trigger="click" for="modal:ipWeek10-umlExamples">here</trigger>.
-* **Integrate diagrams into the description.** Place the diagram close it where it is being described.
+* **Integrate diagrams into the description.** Place the diagram close to where it is being described.
 * **Use code snippets sparingly.** The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only.
 * **Resize diagrams** so that the text size in the diagram matches the the text size of the main text of the diagram. See <trigger trigger="click" for="modal:ipWeek10-diagramSizeNegative">example</trigger>.
 
@@ -116,13 +116,19 @@ It will look more 'polished' if the two text sizes match.
 
 #### {{ thumb(4) }} {{ icon_individual }} Make code RepoSense-compatible
 
+<div id="midV13-repoSenseCompatible">
 
 * **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code it attributes to you is indeed the code written by you**, as explained below:
+  * Go to the [tp Code Dashboard]({{ tp_dashboard }}). Click on the `</>` icon against your name and verify that the ==lines attributed to you (i.e., lines marked as green)== reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/greenLines.png" width="600">
+  <p/>
 
-<div class="indented-level2">
+  * More info on how to make the code RepoSense compatible:
+
+<div class="indented-level4">
 {{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "midv13_repoSenseCompatibility", "1") }}
 </div>
-
+</div>
 
 </div>
 </div>

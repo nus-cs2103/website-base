@@ -17,115 +17,27 @@ Here is a list of main deliverables of the project; their details are given in t
 
 ### <div class="text-white bg-info p-1">Deliverable: Executable</div>
 <span id="project-deliverables-executable">
-
-* The product should be delivered as an executable jar file.
-* Ideally, the product delivered at v1.4 should be a <tooltip content=" i.e., it can be used by end-users">_releasable_</tooltip> product. However, in the interest of lowering your workload, we do not penalize if the product is <tooltip content="i.e., the product is not usable by end-users because some essential features are missing">not releasable</tooltip>, ==as long as the product is <tooltip content="i.e., the features it has can be tested from an end-user perspective">_acceptance testable_</tooltip>==.
+<include src="project-deliverables-executable.md" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Source code</div>
 <span id="project-deliverables-sourcecode">
-
-* The source code should match the executable, and should include the revision history of the source code, as a Git repo.
+<include src="project-deliverables-sourcecode.md" />
 </span>
-
 
 ### <div class="text-white bg-info p-1">Deliverable: User Guide (UG)</div>
 <span id="project-deliverables-ug">
-
-* The User Guide (UG) of the product should match the proposed v2.0 of the product and in sync with the current version of the product.
-* Features not implemented yet should be clearly marked as `Coming in v2.0`
-* Ensure the UG matches the product precisely, as it will be used by peer testers (and ==any inaccuracy in the content will be considered bugs==).
+<include src="project-deliverables-ug.md" />
 </span>
-
 
 ### <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div>
 <span id="project-deliverables-dg">
-
-* The Developer Guide (DG) of the product should match the proposed v2.0 of the product and should be in sync with the current version of the product.
-* {{ icon_important_big_red }} **The appendix named _Instructions for Manual Testing_** of the Developer Guide should include testing instructions to **cover the features of each team member**. There is no need to add testing instructions for existing AB3 features if you did not touch them.<br>
-  {{ icon_tip }} What to include in the appendix _Instructions for Manual Testing_? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder %%i.e. annoys the tester%%, the tester can report it as a bug %%(because flaws in developer docs are considered as bugs)%% or give a lower rating for the _testability_ of your product.
-* Ensure the DG parts included in PPPs match the product precisely, as PPPs will be used by peer evaluators (and ==any inaccuracy in the content will be considered bugs==).
-    
+<include src="project-deliverables-dg.md" />
 </span>
-
 
 ### <div class="text-white bg-info p-1">Deliverable: Product Website</div>
 <span id="project-deliverables-website">
-
-* Include an updated version of the online UG and DG that match v1.4 executable
-* **README** :
-  * ==Ensure the `Ui.png` matches the current product==
-<div class="indented-level3" id="tips-for-product-screenshot">
-
-<box>
-
-{{ icon_tip }} **Some common sense tips for a good product screenshot**
-
-`Ui.png` represents your product in its full glory.
-* Before taking the screenshot, populate the product with data that makes the product look good. For example,
-  * if the product is supposed to show photos, use real photos instead of dummy placeholders.
-  * if the product doesn't have nice line wrapping for long inputs/outputs, don't use such inputs/outputs for the screenshot.
-* It should show a state in which the product is well-populated %%i.e., don't leave data panels largely blank%%
-* Choose a state that showcase the main features of the product %%i.e., the login screen is not usually a good choice%%
-* Take a clean screenshot with a decent resolution. Some screenshot tools can capture a specified window only. If your tool cannot do that, make sure you crop away the extraneous parts captured by the screenshot.
-* Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is in use for real.
-
-<panel type="seamless" header="Examples" expanded >
-
-<tabs>
-  <tab header=":-1: Not Good">
-
-Reason: Distracting annotations.
-
-   <img src="images/Ui-notGood1.png" width="600" />
-
-  </tab>
-  <tab header=":-1: Not Good">
-
-Reason: Not enough data.
-
-   <img src="images/Ui-notGood2.png" width="600" />
-
-  </tab>
-  <tab header=":-1: Not Good">
-
-Reason: screenshot not cropped cleanly (contains extra background details)
-
-   <img src="images/Ui-notGood3.png" width="600" />
-
-  </tab>
-  <tab header=":+1: Good">
-
-   <img src="images/Ui-good1.png" width="600" />
-
-  </tab>
-  <tab header=":+1: Good">
-
-   <img src="images/Ui-good2.png" width="600" />
-
-</tab>
-</tabs>
-
-</panel>
-
-</box>
-</div>
-
-* **AboutUs** : Ensure the following:
-  * Use a suitable profile photo
-<div id="profile-photo" class="indented-level2">
-
-* The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
-  <img src="{{baseUrl}}/admin/images/profilephotos.png" style="width: 365.33px">
-
-* If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use [a placeholder image](https://en.wikipedia.org/wiki/File:Portrait_placeholder.png) in place of the photo in module-related documents that are publicly visible.
-
-</div>
-
-  * Contains a ==link to each person's Project Portfolio page== 
-  * Team member ==names match full names used by LumiNUS==
-  
-    
+<include src="project-deliverables-website.md" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Project Portfolio Page (PPP)</div>
@@ -500,7 +412,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 <box type="info" icon=":fas-hard-hat:">
 
-* CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum or ask in slack if you need any guidance with its usage.
+* CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum if you need any guidance with its usage.
 * Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
 </box>
 * Launch CATcher, and login to the profile `{{ module }}/T PE`. It will show all the bugs assigned to your team, divided into three sections:

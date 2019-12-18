@@ -17,7 +17,7 @@
 {{ icon_tip }} **Dealing with technical problems**: Unlike tutorial questions for which instructors have model solutions, given the complexity of industry tools we use (Gradle, Travis, Git, ...) and the rapid pace they are updated, instructors don't have ready solutions to most technical problems you face in this module. The only realistic way to solve those problems at a large scale is crowd-sourcing i.e., someone else who faced a similar problem might know how to fix it. Here are some tips:
 * Don't request to meet the prof/tutor to solve the problem. That can only work if the person is supposed to know how to solve all technical problems, which is not the case.
 * Often, technical problems arise due to deviations in how you perform a step or a difference in your environment. **Get your team to meet for a weekly work-together session**. When you do the iP tasks together, it is easy to compare with each other and figure out what deviation is causing the problem. That is, crowd-source your team first.
-* Failing the above, **post in the forum, rather than slack, or email**. The forum is more suited for longer-term discussion threads. Slack is better suited for quick chats.
+* Failing the above, **post in the forum**.
   * Give full details of the problem e.g., screenshots, code snippets, stack traces, etc.
   * If the problem is code-related, push the current state of the code to a branch and give the link to the branch. That gives a chance for someone to reproduce the state of your project in their computer.
   * Avoid addressing the question to one person (e.g., the prof), unless really necessary. Doing so will discourage others from answering that question.

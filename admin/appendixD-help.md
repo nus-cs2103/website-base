@@ -30,7 +30,7 @@ The question you should always ask yourself is, 'how do I solve this problem if 
 
   Ask your team members.   
 
-  Ask classmates using the module forum or the slack channel. Even if you figured out one way to solve a problem, discussing it on a public forum might lead you to better ways of solving it, and will help other classmates who are facing similar problems too. If you are really shy to ask questions in the forum, you may use [this form](https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform) to submit your question anonymously which we will then post in the forum.
+  Ask classmates using the module forum. Even if you figured out one way to solve a problem, discussing it on a public forum might lead you to better ways of solving it, and will help other classmates who are facing similar problems too. If you are really shy to ask questions in the forum, you may use [this form](https://docs.google.com/forms/d/1vf2TjVhASq_u1_kQEEyURE5fTeBg6iKwGQDJUxYiAmg/viewform) to submit your question anonymously which we will then post in the forum.
 
   <panel header="Rubber Duck Debugging">
 

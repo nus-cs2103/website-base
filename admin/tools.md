@@ -59,10 +59,8 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 #### <div class="text-white bg-dark p-1">Tools Used: for Communication</div>
 
-* **The preferred channels for module-related communications are**:
-  * ==[github/nus-{{ module | lower }}-{{ semester }}/forum]({{module_org}}/forum/issues)== (not LumiNUS forum) -- suitable for longer-running conversations
-  * our slack channel [{{slack_team}}]({{slack_team}}) -- suitable for quick chats 
-* When communicating with instructors, prefer the two public channels given above. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the public channels are not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy%%.
+* **The preferred channels for module-related communication is the `forum` on GitHub** ==[{{forum_link}}]({{forum_link}})== (not the LumiNUS forum)
+* When communicating with instructors, use the forum. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the forum is not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy%%.
 * You are encouraged to help others in the forum (e.g., share tips, help with technical problems). ==We consider such sharing when giving out `A+` grades and when recruiting tutors.==
 
 <box>
@@ -70,7 +68,6 @@ More info about setting Git username is [here](https://help.github.com/articles/
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
 We encourage you all to,
-* ==join the slack channel== (you'll need to use an email address ending in `@nus.edu.sg`, `@comp.nus.edu.sg`, `@u.nus.edu.sg` or `@u.nus.edu` to join this channel).
 * ==_watch_ [the forum]({{ forum_link }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
 </box>
 

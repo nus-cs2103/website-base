@@ -34,7 +34,7 @@ In {{ module_pair }}, A+ is not given simply based on the final score. To get an
 * score enough to get an A
 * be considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
 * be considered helpful by peers (based on peer evaluations and tutor observations)
-  * In particular, you are encouraged to be active on the slack channel and our [forum]({{module_org}}/forum/issues) and give your inputs to ongoing discussions so that other students can benefit from your relatively higher expertise that makes you deserve an A+.
+  * In particular, you are encouraged to be active on the [forum]({{forum_link}}) and give your inputs to ongoing discussions so that other students can benefit from your relatively higher expertise that makes you deserve an A+.
   * Whenever you can, go out of your way to review PRs created by other team members.
 
 </div>
