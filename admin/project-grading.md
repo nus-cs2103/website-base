@@ -8,6 +8,7 @@ Note that project grading is ==not competitive (not bell curved)==. {{ module }}
 See the sections below for details of how we assess each aspect.
 
 -----------------------------------------------------------------------------------------------------------------------
+<div id="criteria-productDesign">
 
 #### 1. Project Grading: Product Design %%[{{ icon_team }} 5 marks]%%
 
@@ -22,29 +23,21 @@ See the sections below for details of how we assess each aspect.
 <blockquote>
 <div id="projectGrading-featureFit-instructions">
 
-Evaluate the product design ==based on how the product V2.0 (not V1.4) is described in the User Guide==.
-- [ ] `unable to judge`: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.
+Evaluate the product design based on the User Guide and the actual product behavior.
 
 **Target user**:
 - [ ] `target user specified and appropriate`: The target user is clearly specified, ==prefers typing over other modes of input==, and not too general (should be narrowed to a specific user group with certain characteristics).
 - [ ] `value specified and matching`: The value offered by the product is clearly specified and matches the target user.
+- [ ] `optimized for the target user`: It feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI.
 
 **Value to the target user**:
-- [ ] `value: low`: The value to target user is low. App is not worth using.
-- [ ] `value: medium`: Some small group of target users might find the app worth using.
-- [ ] `value: high`: One of the below:
-  * Most of the target users are likely to find the app worth using.
-  * It feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI.
+- ( ) `low`: The value to target user is low. App is not worth using.
+- ( ) `medium`: Some small group of target users might find the app worth using.
+- ( ) `high`: Most of the target users are likely to find the app worth using.
 
-**Feature-fit**:
-  - [ ] `feature-fit: low`: Features don't seem to fit together.
-  - [ ] `feature-fit: medium`: Some features fit together but some don't.
-  - [ ] `feature-fit: high`: All features fit together.
-
-**Other**:
-- [ ] `polished`: The product looks well-designed, ==good enough to be a real product== (i.e., A/A+ effort)
 </div>
 </blockquote>
+</div>
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -79,50 +72,44 @@ Evaluate the product design ==based on how the product V2.0 (not V1.4) is descri
 </span>
 
 
-**<big>2B. Feature Quality</big>**
+**<big>2B. Effort</big>**
 
-**Evaluates:** how deep is your biggest feature, how complete is the feature, how well it solves the target user needs, etc.
+**Evaluates:** how much value contributed to the product
 
-**Evaluation method:**
-* by peers from own team and other teams (based on peer testing session, PPP, RepoSense data) -- more weight for team members from own team than those from other teams
-* by tutors (based on demo, <tooltip content="Project Portfolio Page">PPP</tooltip>, RepoSense data)
+**Method:** This is evaluated in 2 steps.
 
-{{ icon_info }} For reference, here are some grading instructions that will be given to peers/tutors grading this aspect:
+Step 1: We evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
+
+{{ icon_info }} For reference, here are some grading instructions that will be given to them:
 
 <blockquote>
+
 <div id="projectGrading-featureQuality-instructions">
 
-Evaluate ==the biggest feature done by the student== for difficulty, completeness, and testability. Note: examples given below assume that AB3 did not have the commands `edit`, `undo`, and `redo`.
-
-**Difficulty**:
-- [ ] `Feature/ difficulty: unable to judge`: You are unable to judge this aspect for some reason.
-- [ ] `Feature/ difficulty: low`: Examples:
-  * Make the existing _find_ command case insensitive.
-  * CRUD for a simple entity type just like Person that is not connected to any other entity type.
-- [ ] `Feature/ difficulty: medium`: Examples:
-  * A moderately difficult new command that is not similar to existing commands.
-  * A new entity type moderately different from Person and lightly connected to other entity types..
-- [ ] `Feature/ difficulty: high`: Examples:
-  * a) A high-level of natural language support b) A deep integration with another product c) An enhancement that makes the product good enough to take to the market d) A new entity type very different from Person and deeply connected to many other entity types
-
-**Completeness**:
-- [ ] `Feature/ completeness: unable to judge`: You are unable to judge this aspect for some reason.
-- [ ] `Feature/ completeness: low`: A partial implementation of the feature. Barely useful.
-- [ ] `Feature/ completeness: medium`: The feature has enough functionality to be useful for some of the users.
-- [ ] `Feature/ completeness: high`: The feature has all functionality to be useful to almost all users AND Some optimization for keyboard users e.g., easy-to-type syntax.
-
-**Other**:
-- [ ] `Feature/ not hard to test`: The feature was not too hard to test manually.
-- [ ] `Feature/ polished`: The feature looks _polished_ (as if done by a professional programmer), A/A+ effort.
-
+**Quality**: Compared to AB3, the quality of this product is,
+- ( )  Significantly lower
+- ( )  Slightly lower
+- ( )  Similar
+- ( )  Slightly higher
+- ( )  Significantly higher
 </div>
+
 <div id="projectGrading-effort-instructions">
 
-Evaluate the amount of work (i.e., ==all work described in the PPP==, not just the biggest feature), on a scale of 0 to 30.
-* Consider [this PR (`history` command)](https://github.com/se-edu/addressbook-level4/pull/440/files) as 5 units of effort which means [this PR (`undo/redo` command)](https://github.com/se-edu/addressbook-level4/pull/610/files) is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the `undo/redo` feature (which was given as an example of an `A` grade project), we expect most students to be have efforts lower than 20.
+**Effort**: Assume the effort required to create AB3 from scratch is 10 in a scale of 0 to 30. How much effort do you estimate the team put in for this project?
 * Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.
 * {{ icon_important_big_red }} Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
 </div>
+</blockquote>
+
+Step 2: We evaluate how much of that effort was can be attributed to you. This is evaluated by team members, tutors.
+
+{{ icon_info }} For reference, here are some grading instructions that will be given to them:
+
+<blockquote>
+
+Evaluate the contribution to the product by each team member, not including contributions to documentation or contribution to team-based tasks.
+
 </blockquote>
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -133,11 +120,7 @@ Evaluate the amount of work (i.e., ==all work described in the PPP==, not just t
 
 **Evaluates:** How well you can system-test/acceptance-test a product
 
-**Based on:**
-1. bugs you found in the [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable-practical-exam)
-1. our own manual testing (when necessary)
-
-**Evaluated by:** teaching team (in the capacity of _moderators_ %%e.g., to verify if it is reasonable for you to reject a bug reported by others%%)
+**Based on:** bugs you found in the [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable-practical-exam)
 
 <big>**3B. Developer Testing:**</big>
 
@@ -146,8 +129,6 @@ Evaluate the amount of work (i.e., ==all work described in the PPP==, not just t
 **Based on:**
 1. bugs in your work found by others during the PE
 1. your test code %%(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)%%
-
-**Evaluated by:** tutors (in the capacity of _moderators_ %%e.g., to verify if it is reasonable for the team to downgrade the severity of a bug you reported%%)
 
 <modal large title="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations">
   <include src="project-scope.md#testing-expectations"/>
@@ -159,6 +140,7 @@ Evaluate the amount of work (i.e., ==all work described in the PPP==, not just t
 
 ##### Notes on how marks are calculated based on PE product testing
 
+* ==Of 3A and 3B above, the one you do better will be given a 70% weight and the other a 30% weight== so that your total score is driven by your strengths rather than weaknesses.
 * Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not be affect marks of the tester or the developer.
 * The penalty/credit for a bug varies based on,
   * The severity of the bug: `severity.High` > `severity.Medium` > `severity.Low`

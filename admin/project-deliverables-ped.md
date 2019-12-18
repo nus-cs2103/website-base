@@ -53,8 +53,12 @@
   * Behavior differs from the User Guide
   * A legitimate user behavior is not handled %%e.g. incorrect commands, extra parameters%%
   * Behavior is not specified and differs from normal expectations %%e.g. error message does not match the error%%
-  * The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'
   * Problems in the User Guide or the Developer Guide e.g., missing/incorrect info
+  * These will be considered as `Type.FeatureFlaw` bugs
+    * The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'
+    * Hard-to-test features
+    * Features that don't fit well with the product
+    * Features that are not optimized enough for fast-typists
 
 * **About posting _suggestions_:**
   * PE Dry Run (at **v1.3**): You can also post suggestions on how to improve the product. {{ icon_tip }} Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.

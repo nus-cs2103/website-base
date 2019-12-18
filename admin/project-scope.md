@@ -81,8 +81,6 @@ For either direction, you need to define a target user profile and a value propo
 
 **Tips:**
 
-{{ icon_tip }} **Fewer but bigger enhancement can earn you more marks than many small enhancements.** %%Reason: You will also be graded for the depth/difficulty of your work.%% But it is fine to do small features at first to build up confidence before you start a big enhancement.
-
 {{ icon_tip }} **Contribute to all aspects of the project** e.g. write backend code, frontend code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
 
 {{ icon_tip }} **Do _all_ the work related to your enhancement yourself.** %%Reason:If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%
