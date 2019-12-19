@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import embed_topic with context %}
+
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span>
 
 **What**: The v1.3 is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.
@@ -49,16 +51,20 @@
 
 ###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
 
-* **These are considered _bugs_**:
-  * Behavior differs from the User Guide
-  * A legitimate user behavior is not handled %%e.g. incorrect commands, extra parameters%%
-  * Behavior is not specified and differs from normal expectations %%e.g. error message does not match the error%%
-  * Problems in the User Guide or the Developer Guide e.g., missing/incorrect info
-  * These will be considered as `Type.FeatureFlaw` bugs
-    * The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'
-    * Hard-to-test features
-    * Features that don't fit well with the product
-    * Features that are not optimized enough for fast-typists
+* PE Dry Run (at **v1.3**): You may report functionality bugs, UG bugs, and feature flaws.
+
+<div class="indented-level2">
+
+{{ embed_topic("project-grading-bugs.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "projectDeliverablesPe-functionalityBugs", "3") }}
+{{ embed_topic("project-grading-bugs.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "projectDeliverablesPe-featureFlaws", "3") }}
+{{ embed_topic("project-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "projectDeliverablesPe-possibleUgBugs", "3") }}
+</div>
+
+* PE (at **v1.4**): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).
+
+<div class="indented-level2">
+{{ embed_topic("project-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "projectDeliverablesPe-possibleUgBugs", "3") }}
+</div>
 
 * **About posting _suggestions_:**
   * PE Dry Run (at **v1.3**): You can also post suggestions on how to improve the product. {{ icon_tip }} Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.

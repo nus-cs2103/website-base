@@ -17,7 +17,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-grading.md#pe-grading-notes", "Admin " + icon_embedding + " tP Grading → Notes on grading PE product testing", "projectDeliverables-peGradingNotes", "3") }}
+{{ embed_topic("project-grading-bugs.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "projectDeliverables-peGradingNotes", "3") }}
 </div>
 </span>
 
@@ -48,10 +48,14 @@
 ##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [20 minutes]</span>
 
 * **This slot is for reporting documentation bugs only**. You may report bugs related to UG and DG.
-* UG:
-  * ...
-* DG:
-  * ...
+* **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.
+
+<div class="indented-level2">
+
+{{ embed_topic("project-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "projectDeliverablesPe-possibleUgBugs", "3") }}
+{{ embed_topic("project-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "projectDeliverablesPe-possibleUgBugs", "3") }}
+</div>
+
 
 ##### <span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [10 minutes]</span>
 
@@ -189,7 +193,6 @@ Duplicate of #67
 **Type** labels:
 * `type.FunctionalityBug`: A functionality does not work as specified/expected.
 * `type.FeatureFlaw`: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.
-* `type.DocTypo`: A minor typo in the documentation %%e.g., spelling error%% that does not affect the users.
 * `type.DocumentationBug`: A flaw in the documentation that can potentially affect the user %%e.g., a missing step, a wrong instruction, typos that affect users%%
 </box>
 </div>

@@ -1,7 +1,7 @@
 {% macro show_main_text() %}
 <div id="main">
 
-Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
+Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. Given below is the marking scheme.
 
 **Total**: 45 marks ({{ icon_individual }} 35 individual marks + {{ icon_team }} 10 team marks)
 
@@ -10,7 +10,7 @@ See the sections below for details of how we assess each aspect.
 -----------------------------------------------------------------------------------------------------------------------
 <div id="criteria-productDesign">
 
-#### 1. Project Grading: Product Design %%[{{ icon_team }} 5 marks]%%
+#### 1. Project Grading: Product Design %%[{{ icon_team }}/{{ icon_individual }} 5 marks]%%
 
 **Evaluates:** how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user
 
@@ -18,7 +18,7 @@ See the sections below for details of how we assess each aspect.
 * tutors (based on product demo and user guide)
 * peers from other teams (based on peer testing and user guide)
 
-{{ icon_info }} For reference, here are some grading instructions that will be given to peers/tutors grading this aspect:
+{{ icon_info }} For reference, here are some grading instructions given to evaluators:
 
 <blockquote>
 <div id="projectGrading-featureFit-instructions">
@@ -37,6 +37,12 @@ Evaluate the product design based on the User Guide and the actual product behav
 
 </div>
 </blockquote>
+
+In addition, feature flaws reported in the PE will be considered when grading this aspect.
+
+<box>
+<include src="project-grading-bugs.md#featureFlaws" />
+</box>
 </div>
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -49,9 +55,11 @@ Evaluate the product design based on the User Guide and the actual product behav
 
 **Based on:** the parts of the code you claim as written by you
 
-**Evaluation method:**: manual inspection by tutors + automated-analysis by a script
+**Evaluation method:** manual inspection by tutors + automated-analysis by a script
 
-{{ icon_info }} For reference, here are some factors considered when grading this aspect:
+{{ icon_info }} For reference, here are some grading instructions given to evaluators:
+
+<blockquote>
 
 <span id="projectGrading-codeQuality-criteria">
 
@@ -70,17 +78,17 @@ Evaluate the product design based on the User Guide and the actual product behav
 * Evidence of applying [code quality guidelines covered in the module](../book/codeQuality/).
 
 </span>
-
+</blockquote>
 
 **<big>2B. Effort</big>**
 
-**Evaluates:** how much value contributed to the product
+**Evaluates:** how much value you contributed to the product
 
-**Method:** This is evaluated in 2 steps.
+**Method:** Evaluated in two steps.
 
-Step 1: We evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
+Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
 
-{{ icon_info }} For reference, here are some grading instructions that will be given to them:
+{{ icon_info }} For reference, here are some grading instructions given to evaluators:
 
 <blockquote>
 
@@ -90,25 +98,25 @@ Step 1: We evaluate the effort for the entire project. This is evaluated by peer
 - ( )  Significantly lower
 - ( )  Slightly lower
 - ( )  Similar
-- ( )  Slightly higher
-- ( )  Significantly higher
+- ( )  Higher
 </div>
 
 <div id="projectGrading-effort-instructions">
 
 **Effort**: Assume the effort required to create AB3 from scratch is 10 in a scale of 0 to 30. How much effort do you estimate the team put in for this project?
-* Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.
 * {{ icon_important_big_red }} Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
 </div>
 </blockquote>
 
-Step 2: We evaluate how much of that effort was can be attributed to you. This is evaluated by team members, tutors.
+Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
-{{ icon_info }} For reference, here are some grading instructions that will be given to them:
+{{ icon_info }} For reference, here are some grading instructions given to evaluators:
 
 <blockquote>
 
-Evaluate the contribution to the product by each team member, not including contributions to documentation or contribution to team-based tasks.
+Evaluate the contribution to the product by each team member. 
+* Count all implementation/testing/documentation work as mentioned in that person's PPP.
+* Also look at the actual code written by the person.
 
 </blockquote>
 
@@ -116,18 +124,13 @@ Evaluate the contribution to the product by each team member, not including cont
 
 #### 3. Project Grading: QA %%[{{ icon_individual }} 10 marks]%%
 
-<big>**3A. System/Acceptance Testing:**</big>
 
-**Evaluates:** How well you can system-test/acceptance-test a product
-
-**Based on:** bugs you found in the [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable-practical-exam)
-
-<big>**3B. Developer Testing:**</big>
+<big>**3A. Developer Testing:**</big>
 
 **Evaluates:** How well you tested your own feature
 
 **Based on:**
-1. bugs in your work found by others during the PE
+1. functionality bugs in your work found by others during the PE
 1. your test code %%(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)%%
 
 <modal large title="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations">
@@ -135,72 +138,74 @@ Evaluate the contribution to the product by each team member, not including cont
 </modal>
 
 <box>
+<include src="project-grading-bugs.md#functionalityBugs" />
+</box>
 
-<div id="pe-grading-notes">
 
-##### Notes on how marks are calculated based on PE product testing
+<big>**3B. System/Acceptance Testing:**</big>
 
-* ==Of 3A and 3B above, the one you do better will be given a 70% weight and the other a 30% weight== so that your total score is driven by your strengths rather than weaknesses.
-* Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not be affect marks of the tester or the developer.
-* The penalty/credit for a bug varies based on,
-  * The severity of the bug: `severity.High` > `severity.Medium` > `severity.Low`
-  * The type of the bug:  `type.FunctionalityBug` > `type.DocumentationBug` > `type.FeatureFlaw` > `type.DocTypo`
-* The penalty for a bug is divided equally among assignees.
-* The developers are not penalized for the duplicate bug reports they received but the testers earn credit for the duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.
-* <tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.
-* If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means %%(e.g., performance in PE dry run)%% to calculate your marks for system/acceptance testing.
-* Your marks for developer testing depends on the _bug density_ rather than total bug count. Here's an example:
-  * `n` bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks
-  * `n` bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks
-* You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.
-* Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>, if deemed an unethical attempt to _game the system_, may be penalized.
-</div>
+**Evaluates:** How well you can system-test/acceptance-test a product
+
+**Based on:** bugs you found in the [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable-practical-exam). In addition to functionality bugs, you get credit for reporting documentation bugs and feature flaws.
+
+<box>
+<include src="project-grading-bugs.md#bugCalculationNotes" />
 </box>
 
 -----------------------------------------------------------------------------------------------------------------------
 
 #### 4. Project Grading: Documentation %%[{{ icon_individual }} 10 marks]%%
 
-**Evaluates:** the quality of the sections you wrote for the user guide and the developer guide
+**Evaluates:** your contribution to project documents
 
-**Based on:** the relevant sections of your PPP.
+**Method:** Evaluated in two steps.
 
-**Evaluated by:** tutors, peers from own team and other teams
+Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.
 
-{{ icon_info }} For reference, here are some grading instructions that will be given to peers/tutors grading this aspect:
+{{ icon_info }} For reference, here are some instructions given to evaluators:
 
 <blockquote>
 <div id="projectGrading-userGuide-instructions">
 
-Evaluate the quality of user documentation **based on the parts of the user guide written by the person,** as reproduced in the project portfolio.  ==Evaluate from an end-user perspective.==
-- [ ] `UG/ unable to judge`: Less than 1 page worth of UG content written by the student or cannot find PPP
-- [ ] `UG/ good use of visuals`: Uses visuals e.g., screenshots.
-- [ ] `UG/ good use of examples`: Uses examples e.g., sample inputs/outputs.
-- [ ] `UG/ just enough information`: Not too much information. All important information is given.
-- [ ] `UG/ easy to understand`: The information is easy to understand for the target audience.
-- [ ] `UG/ polished`: The document looks neat, well-formatted, and professional.
+**UG**: Compared to AB3, the quality of this UG is,
+- ( )  Significantly lower
+- ( )  Slightly lower
+- ( )  Similar
+- ( )  Higher
 
 </div>
 <div id="projectGrading-devGuide-instructions">
 
-Evaluate the quality of developer documentation **based on the developer docs cited/reproduced in the respective project portfolio page.** ==Evaluate from the perspective of a new developer trying to understand how the features are implemented.==
-- [ ] `DG/ unable to judge`: Less than 0.5 pages worth of content OR other problems in the document %%e.g. looks like included wrong content%%.
-- [ ] `DG/ too little`: 0.5 - 1 page of documentation
-- Diagrams:
-  - [ ] `DG/ types of UML diagrams: 1`: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)
-  - [ ] `DG/ types of UML diagrams: 2`: Two types of diagrams used
-  - [ ] `DG/ types of UML diagrams: 3+`: Three or more types of diagrams used
-  - [ ] `DG/ UML diagrams suitable`: The diagrams used for the right purpose
-  - [ ] `DG/ UML notation correct`: No more than one minor error in the UML notation
-  - [ ] `DG/ diagrams not repetitive`: No evidence of repeating the same diagram with minor differences
-  - [ ] `DG/ diagrams not too complicated`: Diagrams don't cram too much information into them
-  - [ ] `DG/ diagrams integrates with text`: Diagrams are well integrated into the textual explanations
-- [ ] `DG/ easy to understand`: The document is easy to understand/follow
-- [ ] `DG/ just enough information`: Not too much information. All important information is given.
-- [ ] `DG/ polished`: The document looks neat, well-formatted, and professional.
-
+**DG**: similar to UG
 </div>
 </blockquote>
+
+Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
+
+{{ icon_info }} For reference, here are some grading instructions given to evaluators:
+
+<blockquote>
+
+**Q**: Evaluate the contribution to the UG by each team member. Note that your evaluation must correspond to RepoSense data and the claims made by the PPP of each member.
+
+**Q**: Evaluate the contribution to the DG by each team member.
+
+**Q**: Which type of these UML diagrams in the DG did you personally add (or significantly modified)?
+- [ ] Class Diagrams
+- [ ] Object Diagrams
+- [ ] Sequence Diagrams
+- [ ] Activity Diagrams
+</blockquote>
+
+In addition, UG and DG bugs you received in the PE will be considered for grading this component.
+
+<box>
+<include src="project-grading-bugs.md#ugBugs" />
+</box>
+
+<box>
+<include src="project-grading-bugs.md#dgBugs" />
+</box>
 
 -----------------------------------------------------------------------------------------------------------------------
 

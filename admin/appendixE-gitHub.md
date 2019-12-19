@@ -170,6 +170,7 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 <box>
 
 **Bug Severity** labels:
+* `severity.VeryLow` : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.
 * `severity.Low` : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.
 * `severity.Medium` : A flaw that causes occasional inconvenience to some users but they can continue to use the product.
 * `severity.High` : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.
