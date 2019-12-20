@@ -7,7 +7,7 @@ head: scheduleHead.md
 
 {% import "common/topics.njk" as topics with context %}
 
-{% set weeks = [
+<!--
     {num: "1", day:"Aug 12"},
     {num: "2", day:"Aug 19"},
     {num: "3", day:"Aug 26"},
@@ -21,23 +21,23 @@ head: scheduleHead.md
     {num: "11", day: "Oct 28" },
     {num: "12", day: "Nov 4" },
     {num: "13", day: "Nov 11" }
-] %}
-
-<!--
-    {num: "1", day:"Jan 14"},
-    {num: "2", day:"Jan 21"},
-    {num: "3", day:"Jan 28"},
-    {num: "4", day:"Feb 4"},
-    {num: "5", day: "Feb 11" },
-    {num: "6", day: "Feb 18" },
-    {num: "7", day: "Mar 4" },
-    {num: "8", day: "Mar 11" },
-    {num: "9", day: "Mar 18" },
-    {num: "10", day: "Mar 25" },
-    {num: "11", day: "Apr 1" },
-    {num: "12", day: "Apr 8" },
-    {num: "13", day: "Apr 15" }
 -->
+
+{% set weeks = [
+    {num: "1", day:"Jan 13"},
+    {num: "2", day:"Jan 20"},
+    {num: "3", day:"Jan 27"},
+    {num: "4", day:"Feb 3"},
+    {num: "5", day: "Feb 10" },
+    {num: "6", day: "Feb 17" },
+    {num: "7", day: "Mar 2" },
+    {num: "8", day: "Mar 9" },
+    {num: "9", day: "Mar 16" },
+    {num: "10", day: "Mar 23" },
+    {num: "11", day: "Mar 30" },
+    {num: "12", day: "Apr 6" },
+    {num: "13", day: "Apr 13" }
+] %}
 
 
 {% set current_weeks = ["1"] %}
