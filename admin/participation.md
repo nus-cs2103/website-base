@@ -18,18 +18,19 @@
 {{ icon_info }} As the lecture on Week `N` covers topics for Week `N+1`, the Lecture `N`'s in-lecture and post-lecture quiz points are counted for Week `N+1`
 </div>
 
-**{{ thumb("B", "info") }} Received <tooltip content="No multiple `Below Average`/`Poor` ratings">good peer evaluations</tooltip>**
+**{{ thumb("B", "info") }} Received good peer evaluations**
 
 <div class="indented">
+
+{{ embed_topic("peerEvaluations.md#peerEvaluation-criteria", "Admin " + icon_embedding + " Peer Evaluations → Criteria", "participation-peerEvals", "3") }}
+
+* -1 for each _professional conduct_ criterion in which you score below average (based on the average of ratings received).
+* No penalty for scoring low on _competency criteria_.
 
 In addition, you can receive a bonus marks in the following ways. Bonus marks can be used to top up your participation marks should your marks from the above falls below 5.
 * Receiving good ratings for all 10 peer evaluations criteria: 1 mark
 * Being very helpful to classmates %%e.g., multiple helpful posts in forum%%: 1 mark
 
-<div class="indented">
-
-{{ embed_topic("peerEvaluations.md#peerEvaluation-criteria", "Admin " + icon_embedding + " Peer Evaluations → Criteria", "participation-peerEvals", "3") }}
-</div>
 </div>
 
 **{{ thumb("C", "info") }} Tutorial attendance/participation not too low**
