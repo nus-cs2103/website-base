@@ -3,7 +3,7 @@
 
 <span class="keyword d-none">project expectations</span>
 
-#### Project Direction
+### <div class="text-white bg-dark p-1">Project Direction</div>
 
 <div id="project-direction">
 In general, each team is expected to take one of these two directions:
@@ -54,12 +54,12 @@ For either direction, you need to define a target user profile and a value propo
   * **Value proposition**: Define a clear _value proposition_ %%(what problem does the product solve? how does it make the the user's life easier?)%% that matches the target user profile.
 
 </div>
-   
-#### {{ icon_individual }} Individual Expectations
+
+### <div class="text-white bg-dark p-1">{{ icon_individual }} Individual Expectations</div>
 
 <div id="individualExpectations">
 
-##### [Individual] Expectations on Enhancements
+#### <span class="badge badge-dark">{{ icon_individual }} Individual</span> <span class="text-dark">Expectations on Enhancements</span>
 
 * **You are expected to enhance the product in some way(s).** User-visible enhancements are preferred, but it is not a strict requirement. Some examples:
 
@@ -94,7 +94,7 @@ For either direction, you need to define a target user profile and a value propo
   -----------|-------|-------|----
   LoC        | ~1000 | ~1500 | ~2500
 
-##### [Individual] Expectations on Documentation
+#### <span class="badge badge-dark">{{ icon_individual }} Individual</span> <span class="text-dark">Expectations on Documentation</span>
 
 * You are expected to write user documentation and developer documentation for your features.
 * **The objective is to showcase your ability to write the two types of documentation.** If the documentation for your features is not enough to meet that objective, or does not reach the following minimal requirement, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.
@@ -103,7 +103,7 @@ For either direction, you need to define a target user profile and a value propo
 * You are expected to ==showcase your ability to use the various UML diagrams (at least 2 types)==. As mentioned in the previous point, if the documentation of your features doesn't give you enough opportunities to do so %%e.g., your features only required minor updates to existing diagrams%%, you are expected to create those opportunities yourself by documenting _proposed_ features or _alternative_ designs. Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.
 * You are required to update the entire UG and DG to match your product. However, there is no need to update other documents such as tutorials that are AB3 specific.
 
-##### [Individual] Expectations on Testing
+#### <span class="badge badge-dark">{{ icon_individual }} Individual</span> <span class="text-dark">Expectations on Testing</span>
 
 <div id="testing-expectations">
 
@@ -113,8 +113,7 @@ For either direction, you need to define a target user profile and a value propo
 
 </div>
 
-
-##### [Individual] Expectations on Teamwork
+#### <span class="badge badge-dark">{{ icon_individual }} Individual</span> <span class="text-dark">Expectations on Teamwork</span>
 
 _Team-tasks_ are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
 
@@ -167,7 +166,7 @@ Please make sure each of the important roles are assigned to one person in the t
 </div>
 <span id="team-expectations">
 
-#### {{ icon_team }} Team Expectations
+### <div class="text-white bg-dark p-1">{{ icon_team }} Team Expectations</div>
 
 1. **Preserve _product integrity_**: i.e. ensure,
    1. features fit together to form a cohesive product,
