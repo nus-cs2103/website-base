@@ -7,10 +7,10 @@ Note that project grading is ==not competitive (not bell curved)==. {{ module }}
 
 See the sections below for details of how we assess each aspect.
 
------------------------------------------------------------------------------------------------------------------------
+<!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-productDesign">
 
-#### 1. Project Grading: Product Design %%[{{ icon_team }}/{{ icon_individual }} 5 marks]%%
+#### <div class="bg-warning p-1">1. Project Grading: Product Design %%[{{ icon_team }}/{{ icon_individual }} 5 marks]%%</div>
 
 **Evaluates:** how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user
 
@@ -18,9 +18,10 @@ See the sections below for details of how we assess each aspect.
 * tutors (based on product demo and user guide)
 * peers from other teams (based on peer testing and user guide)
 
+<box background-color="white" border-color="grey" border-left-color="gold">
+
 {{ icon_info }} For reference, here are some grading instructions given to evaluators:
 
-<blockquote>
 <div id="projectGrading-featureFit-instructions">
 
 Evaluate the product design based on the User Guide and the actual product behavior.
@@ -36,7 +37,7 @@ Evaluate the product design based on the User Guide and the actual product behav
 - ( ) `high`: Most of the target users are likely to find the app worth using.
 
 </div>
-</blockquote>
+</box>
 
 In addition, feature flaws reported in the PE will be considered when grading this aspect.
 
@@ -45,9 +46,9 @@ In addition, feature flaws reported in the PE will be considered when grading th
 </box>
 </div>
 
------------------------------------------------------------------------------------------------------------------------
+<!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### 2. Project Grading: Implementation %%[{{ icon_individual }} 10 marks]%%
+#### <div class="bg-warning p-1">2. Project Grading: Implementation %%[{{ icon_individual }} 10 marks]%%</div>
 
 **<big>2A. Code quality</big>**
 
@@ -57,9 +58,9 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Evaluation method:** manual inspection by tutors + automated-analysis by a script
 
-{{ icon_info }} For reference, here are some grading instructions given to evaluators:
+<box background-color="white" border-color="grey" border-left-color="gold">
 
-<blockquote>
+{{ icon_info }} For reference, here are some grading instructions given to evaluators:
 
 <span id="projectGrading-codeQuality-criteria">
 
@@ -78,7 +79,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 * Evidence of applying [code quality guidelines covered in the module](../book/codeQuality/).
 
 </span>
-</blockquote>
+</box>
 
 **<big>2B. Effort</big>**
 
@@ -88,9 +89,9 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
 
-{{ icon_info }} For reference, here are some grading instructions given to evaluators:
+<box background-color="white" border-color="grey" border-left-color="gold">
 
-<blockquote>
+{{ icon_info }} For reference, here are some grading instructions given to evaluators:
 
 <div id="projectGrading-featureQuality-instructions">
 
@@ -106,23 +107,21 @@ Step 1: Evaluate the effort for the entire project. This is evaluated by peers w
 **Effort**: Assume the effort required to create AB3 from scratch is 10 in a scale of 0 to 30. How much effort do you estimate the team put in for this project?
 * {{ icon_important_big_red }} Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
 </div>
-</blockquote>
+</box>
 
 Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
+<box background-color="white" border-color="grey" border-left-color="gold">
+
 {{ icon_info }} For reference, here are some grading instructions given to evaluators:
 
-<blockquote>
-
-Evaluate the contribution to the product by each team member. 
+Evaluate the contribution to the product by each team member.
 * Count all implementation/testing/documentation work as mentioned in that person's PPP.
 * Also look at the actual code written by the person.
+</box>
+<!-- -------------------------------------------------------------------------------------------------------------- -->
 
-</blockquote>
-
------------------------------------------------------------------------------------------------------------------------
-
-#### 3. Project Grading: QA %%[{{ icon_individual }} 10 marks]%%
+#### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_individual }} 10 marks]%%</div>
 
 
 <big>**3A. Developer Testing:**</big>
@@ -152,9 +151,9 @@ Evaluate the contribution to the product by each team member.
 <include src="project-grading-bugs.md#bugCalculationNotes" />
 </box>
 
------------------------------------------------------------------------------------------------------------------------
+<!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### 4. Project Grading: Documentation %%[{{ icon_individual }} 10 marks]%%
+#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_individual }} 10 marks]%%</div>
 
 **Evaluates:** your contribution to project documents
 
@@ -162,9 +161,9 @@ Evaluate the contribution to the product by each team member.
 
 Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.
 
+<box background-color="white" border-color="grey" border-left-color="gold">
 {{ icon_info }} For reference, here are some instructions given to evaluators:
 
-<blockquote>
 <div id="projectGrading-userGuide-instructions">
 
 **UG**: Compared to AB3, the quality of this UG is,
@@ -178,13 +177,13 @@ Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your
 
 **DG**: similar to UG
 </div>
-</blockquote>
+</box>
 
 Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
-{{ icon_info }} For reference, here are some grading instructions given to evaluators:
+<box background-color="white" border-color="grey" border-left-color="gold">
 
-<blockquote>
+{{ icon_info }} For reference, here are some grading instructions given to evaluators:
 
 **Q**: Evaluate the contribution to the UG by each team member. Note that your evaluation must correspond to RepoSense data and the claims made by the PPP of each member.
 
@@ -195,7 +194,7 @@ Step 2: Evaluate how much of that effort can be attributed to you. This is evalu
 - [ ] Object Diagrams
 - [ ] Sequence Diagrams
 - [ ] Activity Diagrams
-</blockquote>
+</box>
 
 In addition, UG and DG bugs you received in the PE will be considered for grading this component.
 
@@ -207,9 +206,9 @@ In addition, UG and DG bugs you received in the PE will be considered for gradin
 <include src="project-grading-bugs.md#dgBugs" />
 </box>
 
------------------------------------------------------------------------------------------------------------------------
+<!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### 5. Project Grading: Project Management %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%
+#### <div class="bg-warning p-1">5. Project Grading: Project Management %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%</div>
 
 <div id="project-management-grading"> 
 
@@ -236,7 +235,7 @@ Other criteria:
 
 **Based on:** peer evaluations, tutor observations
 
-To earn full marks, you should have done a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
+To earn full marks, you should have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
 
 {{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " tP Scope → Examples of team-tasks", "projectGrading-exmapleTeamTasks", "3") }}
 
