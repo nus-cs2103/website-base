@@ -1,45 +1,40 @@
 {% macro show_main_text() %}
 <div id="main">
 
-We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation system to conduct several rounds of peer-evaluations.
-All peer evaluations will be taken into account when determining your participation marks. The system also allows you to give anonymous feedback to your teammates.
+This module leverages peer feedback/evaluations in many ways. In particular, we do several rounds of peer evaluations using TEAMMATES.
 
-<span id="extra-requirements">
+{{ embed_topic("tools.md#teammates", "Admin " + icon_embedding + " Tools → TEAMMATES", "peerEvaluations-teammates", "3") }}
 
-**Extra Requirements:** [considered for participation marks]
-
-* {{ icon_important_big_red }} Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you can lose participation marks.==
-* Optional: TEAMMATES normally allows students to access it without using Google login. We encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. %%Reason: {{ module_pair }} is a big class. This profile helps us to remember you better, even after the module is over.%%
-
-<modal title="%%Admin {{ icon_embedding }} Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto">
-  <include src="project-deliverables-website.md#profile-photo" />
-</modal>
-
-</span>
+{{ icon_important_big_red }} Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you can lose participation marks.==
 
 <div id="peerEvaluation-criteria">
+<box background-color="white" border-color="grey" border-left-color="gold">
 
-<big>**Peer evaluation criteria: professional conduct**</big>
-* **Professional Communication** : 
+#### Peer Evaluation Criteria: Professional Conduct
+* **Professional Communication** :
   * Communicates sufficiently and professionally. e.g. Does not use offensive language or excessive slang in project communications.
   * Responds to communication from team members in a timely manner (e.g. within 24 hours).
 * **Punctuality**: Does not cause others to waste time or slow down project progress by frequent tardiness.
-* **Dependability**: Promises what can be done, and delivers what was promised. 
+* **Dependability**: Promises what can be done, and delivers what was promised.
 * **Effort**: Puts in sufficient effort to, and tries their best to keep up with the module/project pace. Seeks help from others when necessary.
 * **Quality**: Does not deliver work products that seem to be below the student's competence level i.e. tries their best to make the work product as high quality as possible within her competency level.
 * **Meticulousness**:
   * Rarely overlooks submission requirements.
   * Rarely misses compulsory module activities such as pre-module survey.
 * **Teamwork**: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc. Honors all collectively agreed-upon commitments e.g., weekly project meetings.
+</box>
+<box background-color="white" border-color="grey" border-left-color="gold">
 
-  
-<big>**Peer evaluation criteria: competency**</big>
+#### Peer Evaluation Criteria: Competency
 * **Technical Competency**: Able to gain competency in all the required tools and techniques.
 * **Mentoring skills**: Helps others when possible. Able to mentor others well.
 * **Communication skills**: Able to communicate (written and spoken) well. Takes initiative in discussions.
+</box>
 </div>
 
 <span id="giving-peer-feedback">
+
+#### Guidelines for Giving Peer Feedback
 
 Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. Half-hearted/trivial feedback will not earn participation marks.
 
@@ -55,4 +50,5 @@ Here are some things to keep in mind:
 {% endmacro %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/macros.njk" import embed_topic with context %}
 {{ show_admin_page("peerEvaluations", show_main_text) }}

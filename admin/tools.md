@@ -5,7 +5,7 @@
 
 <img src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px"><br>
 
-#### <div class="text-white bg-dark p-1">Tools Used: Learning Management System</div>
+#### <div class="text-white bg-dark p-1">Tool Used: Learning Management System</div>
 
 This module website is the main source of information for the module. In addition, we use LumiNUS for some things %%(e.g., webcasts, announcements, file submissions, grade book, ...)%%.
 
@@ -43,11 +43,11 @@ You are ==_required to_ use Git==. Other revision control software are not allow
 
 <div id="git-username">
 
-**Set Git `user.name`**: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to ==set your Git `user.name` in all computers you use== to a sensible string that uniquely identifies you. For example, ==you can to GitHub username or your full name as your Git username==. If this user name is not set properly or if you use multiple user names for Git, our tools might miss some of your work and as a result you might not get credit for some of your work.
+**Set Git `user.name`**: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to ==set your Git `user.name` in all computers you use== to a sensible string that uniquely identifies you. For example, ==you can set it to your GitHub username or your full name==. If this user name is not set properly or if you use multiple user names for Git, our tools might miss some of your work and as a result you might not get credit for some of your work.
 
 After installing Git in a computer, you can set the Git username as follows:
 1. Open a command window that can run Git commands (e.g., Git bash window)
-2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME` (omit the `--global` flag to limit the setting to the current repo repo)<br>
+2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME` (omit the `--global` flag to limit the setting to the current repo only)<br>
    e.g., `git config --global user.name JohnDoe`
 
 More info about setting Git username is [here](https://help.github.com/articles/setting-your-username-in-git/).
@@ -67,8 +67,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
-We encourage you all to,
-* ==_watch_ [the forum]({{ forum_link }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
+We encourage all to ==_watch_ [the forum]({{ forum_link }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
 </box>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
@@ -90,7 +89,25 @@ You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for 
 
 #### <div class="text-white bg-dark p-1">Tool Used: RepoSense (for Analyzing Code Authorship)</div>
 
-<include src="reposenseCompatibility.md" />
+<include src="tools-reposense.md" />
+</div><!-- ----------------------------------------------------------------------------------------------------- -->
+<div id="teammates">
+
+#### <div class="text-white bg-dark p-1">Tool Used: TEAMMATES (for Peer Evaluations/Feedback)</div>
+
+We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation system. %%TEAMMATES is a project run by NUS SoC students and used by over 0.5 million users from over 1000 universities.%%
+
+<box>
+
+<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+When the first feedback session is opne on TEAMMATES, you will receive an eamil from TEAMMATES. There is nothing for you to do until then.
+
+When you do receive that email, TEAMMATES will allow you to access it without using a Google login. However, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. %%Reason: {{ module_pair }} is a big class. This profile helps us to remember you better, even after the module is over.%%
+
+<modal title="%%Admin {{ icon_embedding }} Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto">
+  <include src="project-deliverables-website.md#profile-photo" />
+</modal>
+</box>
 </div>
 
 </div>
