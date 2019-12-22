@@ -3,7 +3,7 @@
 
 This module leverages peer feedback/evaluations in many ways. In particular, we do several rounds of peer evaluations using TEAMMATES.
 
-{{ embed_topic("tools.md#teammates", "Admin " + icon_embedding + " Tools → TEAMMATES", "peerEvaluations-teammates", "3") }}
+{{ embed_topic("tools.md#teammates", "Admin " + icon_embedding + " Tools → TEAMMATES", "3") }}
 
 {{ icon_important_big_red }} Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you can lose participation marks.==
 

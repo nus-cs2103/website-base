@@ -21,7 +21,7 @@
 * Follow the 'Preparation' instructions of the following tools to get connected with the communication channels used by the module.
 
 <div class="indented-level2">
-{{ embed_topic("../../admin/tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "-", "3") }}
+{{ embed_topic("../../admin/tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "3") }}
 </div>
 
 </div>

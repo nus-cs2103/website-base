@@ -29,7 +29,7 @@
 Further reading:
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/appendixD-help.md", "Admin " + icon_embedding + " Appendix D: How to Get Help", "week4Notices-appD", "4") }}
+{{ embed_topic("../../admin/appendixD-help.md", "Admin " + icon_embedding + " Appendix D: How to Get Help", "4") }}
 </div>
 
 </box>

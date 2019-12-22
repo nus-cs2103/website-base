@@ -126,7 +126,7 @@ It will look more 'polished' if the two text sizes match.
   * More info on how to make the code RepoSense compatible:
 
 <div class="indented-level4">
-{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "midv13_repoSenseCompatibility", "1") }}
+{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1") }}
 </div>
 </div>
 

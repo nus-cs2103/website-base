@@ -9,7 +9,7 @@
   * submit the in-lecture quiz
 
 <div class="indented-level2">
-{{ embed_topic("lectures.md#main", "Admin " + icon_embedding + " Lectures", "weeklySchedule-lectures", "3") }}
+{{ embed_topic("lectures.md#main", "Admin " + icon_embedding + " Lectures", "3") }}
 </div>
 
 <p/>
@@ -31,7 +31,7 @@
   * learn from peer demos of showing evidence of their own learning
 
 <div class="indented-level2">
-{{ embed_topic("tutorials.md#main", "Admin " + icon_embedding + " Tutorials", "weeklySchedule-tutorials", "2") }}
+{{ embed_topic("tutorials.md#main", "Admin " + icon_embedding + " Tutorials", "2") }}
 </div>
 
 

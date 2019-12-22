@@ -53,7 +53,7 @@ Module        | Venue             | Time               | ~~%%Tutorial ID<br>in L
 * Please ==bring your laptop to tutorials.== Often, you will need it for tutorial tasks.
 
 <div class="indented-level2">
-{{ embed_topic("appendixC-faq.md#admin-faq-noLaptop", "Admin " + icon_embedding + " Appendix C(FAQ): What if I don't carry around a laptop?", "tutorials-faqLaptop", "4") }}
+{{ embed_topic("appendixC-faq.md#admin-faq-noLaptop", "Admin " + icon_embedding + " Appendix C(FAQ): What if I don't carry around a laptop?", "4") }}
 </div>
 
 <br/>
@@ -63,7 +63,7 @@ Module        | Venue             | Time               | ~~%%Tutorial ID<br>in L
 * **No direct tech help**: Tutors are prohibited from giving direct technical help, other than to give you some general direction to finding a solution. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
 
 <div class="indented-level2">
-{{ embed_topic("appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + module_pair, "tutorials-apdxD", "2") }}
+{{ embed_topic("appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + module_pair, "2") }}
 </div>
 
 <br/>
@@ -71,7 +71,7 @@ Module        | Venue             | Time               | ~~%%Tutorial ID<br>in L
 * **No ‘teaching’**: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you as self-learning is a vital part of the module. For example, the tutor will not do a mini-lecture at the start of the tutorial. Of course tutors can help you clarify doubts under the right circumstances.
 
 <div class="indented-level2">
-{{ embed_topic("appendixD-help.md#questions-for-tutros", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable for tutor", "tutorials-apdxDtutorQuestions", "2") }}
+{{ embed_topic("appendixD-help.md#questions-for-tutros", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable for tutor", "2") }}
 </div>
 
 <br/>

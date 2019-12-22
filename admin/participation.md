@@ -22,7 +22,7 @@
 
 <div class="indented">
 
-{{ embed_topic("peerEvaluations.md#peerEvaluation-criteria", "Admin " + icon_embedding + " Peer Evaluations → Criteria", "participation-peerEvals", "3") }}
+{{ embed_topic("peerEvaluations.md#peerEvaluation-criteria", "Admin " + icon_embedding + " Peer Evaluations → Criteria", "3") }}
 
 * -1 for each _professional conduct_ criterion in which you score below average (based on the average of ratings received).
 * No penalty for scoring low on _competency criteria_.

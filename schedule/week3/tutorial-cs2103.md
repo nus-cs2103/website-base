@@ -8,7 +8,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/project-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "-", "2") }}
+{{ embed_topic("../../admin/project-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "2") }}
 
 </div>
 
@@ -19,7 +19,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/project-teams.md#teamIdFormat", "Admin " + icon_embedding + " **Teams → Team ID Format**", "-", "2") }}
+{{ embed_topic("../../admin/project-teams.md#teamIdFormat", "Admin " + icon_embedding + " **Teams → Team ID Format**", "2") }}
 
 </div>
 
@@ -34,7 +34,7 @@
 * If you haven't done so already, set up a weekly project meeting time/venue (and communication channels) with your team members.
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/project-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "-", "2") }}
+{{ embed_topic("../../admin/project-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2") }}
 </div>
 
 

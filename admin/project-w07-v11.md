@@ -24,7 +24,7 @@
 1. Divide among yourselves who will update which parts of the document(s).
 1. Update the team repo by following the recommended workflow.
 
-{{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "v11-workflowBeforeV11", "3") }}
+{{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3") }}
 
 </box>
 

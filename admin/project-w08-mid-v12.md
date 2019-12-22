@@ -25,8 +25,8 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-scope.md#individualExpectations", "Admin " + icon_embedding + " tP Scope: Individual Expectations", "midv12-teamScope", "3") }}
-{{ embed_topic("project-scope.md#team-expectations", "Admin " + icon_embedding + " tP Scope: Team Expectations", "midv12-individualScope", "3") }}
+{{ embed_topic("project-scope.md#individualExpectations", "Admin " + icon_embedding + " tP Scope: Individual Expectations", "3") }}
+{{ embed_topic("project-scope.md#team-expectations", "Admin " + icon_embedding + " tP Scope: Team Expectations", "3") }}
 </div>
 
 
@@ -36,7 +36,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("appendixE-gitHub.md#workflow-after-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow (after v1.1)**", "midv12-workflowAfterV11", "3") }}
+{{ embed_topic("appendixE-gitHub.md#workflow-after-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow (after v1.1)**", "3") }}
 
 <box type="tip">
 
@@ -51,14 +51,14 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("appendixE-gitHub.md#issue-tracker-setup", "Admin " + icon_embedding + " Appendix E(extract): **Setting up the issue tracker**", "midv12-issueTrackerSetup", "1") }}
+{{ embed_topic("appendixE-gitHub.md#issue-tracker-setup", "Admin " + icon_embedding + " Appendix E(extract): **Setting up the issue tracker**", "1") }}
 </div>
 
 * **Start proper schedule tracking and milestone management** as explained in the panel below.
 
 <div class="indented-level2">
 
-{{ embed_topic("appendixE-gitHub.md#project-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "midv12-projectScheduleTracking", "1") }}
+{{ embed_topic("appendixE-gitHub.md#project-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1") }}
 </div>
 
 <div class="indented">

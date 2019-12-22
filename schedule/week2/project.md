@@ -12,8 +12,8 @@ We'll be starting the individual project (iP) this week.
 
 <div class="indented">
 
-{{ embed_topic("../../admin/ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "ipW02-overview", "3") }}
-{{ embed_topic("../../admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "ipW02-overview", "1") }}
+{{ embed_topic("../../admin/ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3") }}
+{{ embed_topic("../../admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1") }}
 </div>
 
 <include src="../../admin/ip-w02.md#body" />

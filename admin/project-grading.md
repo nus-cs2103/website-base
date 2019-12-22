@@ -237,7 +237,7 @@ Other criteria:
 
 To earn full marks, you should have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
 
-{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " tP Scope → Examples of team-tasks", "projectGrading-exmapleTeamTasks", "3") }}
+{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " tP Scope → Examples of team-tasks", "3") }}
 
 </div>
 

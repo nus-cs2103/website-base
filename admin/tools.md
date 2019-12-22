@@ -22,7 +22,7 @@ You are ==_required to_ use GitHub== as the hosting and collaboration platform o
 
 Create a GitHub account (if you don't have one yet), as explained in the panel below.
 
-{{ embed_topic("appendixE-gitHub.md#githubAccount", "Admin " + icon_embedding + " **Appendix E - GitHub: Creating an Account**", "-", "2") }}
+{{ embed_topic("appendixE-gitHub.md#githubAccount", "Admin " + icon_embedding + " **Appendix E - GitHub: Creating an Account**", "2") }}
 </box>
 
 **More info**: See [Appendix E - Using GitHub](appendixE-gitHub.html).

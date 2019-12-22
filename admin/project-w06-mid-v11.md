@@ -34,12 +34,12 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E(extract): **Organization setup**", "midv11-orgSetup", "1") }}
+{{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E(extract): **Organization setup**", "1") }}
 </div>
 
 <div class="indented-level2">
 
-{{ embed_topic("appendixE-gitHub.md#repo-setup", "Admin " + icon_embedding + " Appendix E(extract): **Repo setup**", "midv11-repoSetup", "1") }}
+{{ embed_topic("appendixE-gitHub.md#repo-setup", "Admin " + icon_embedding + " Appendix E(extract): **Repo setup**", "1") }}
 </div>
 
 #### {{ thumb(2) }} {{ icon_individual }} Get familiar with the code base
@@ -58,7 +58,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "midv11-workflow", "1") }}
+{{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1") }}
 </div>
 
 #### {{ thumb(3) }} {{ icon_team }} Conceptualize v2.0

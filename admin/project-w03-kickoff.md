@@ -21,7 +21,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "-", "2") }}
+{{ embed_topic("project-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2") }}
 </div>
 
 </div>

@@ -23,7 +23,7 @@
 * {{ icon_important_big_red }} Remember to give credit to any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
 <div class="indented-level2">
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "-", "1") }}
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1") }}
 </div>
 
 #### {{ thumb(2) }} Set up a product website
@@ -34,7 +34,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-deliverables-website.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "ipW6-tipsForScreenshots", "3") }}
+{{ embed_topic("project-deliverables-website.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3") }}
 </div>
 
 

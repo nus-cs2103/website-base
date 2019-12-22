@@ -55,15 +55,15 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-grading-bugs.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "projectDeliverablesPe-functionalityBugs", "3") }}
-{{ embed_topic("project-grading-bugs.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "projectDeliverablesPe-featureFlaws", "3") }}
-{{ embed_topic("project-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "projectDeliverablesPe-possibleUgBugs", "3") }}
+{{ embed_topic("project-grading-bugs.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
+{{ embed_topic("project-grading-bugs.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
+{{ embed_topic("project-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
 </div>
 
 * PE (at **v1.4**): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).
 
 <div class="indented-level2">
-{{ embed_topic("project-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "projectDeliverablesPe-possibleUgBugs", "3") }}
+{{ embed_topic("project-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3") }}
 </div>
 
 * **About posting _suggestions_:**

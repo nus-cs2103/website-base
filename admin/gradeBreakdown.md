@@ -3,10 +3,10 @@
 
 <puml src="images/grade-breakdown.puml" />
 
-{{ embed_topic("participation.md#main", "Admin " + icon_embedding + " Participation Marks", "gradeBreakdown-participation", "3") }}
-{{ embed_topic("exams.md#main", "Admin " + icon_embedding + " Exams", "gradeBreakdown-exams", "3") }}
-{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " Individual Project (iP) Grading", "gradeBreakdown-ipGrading", "3") }}
-{{ embed_topic("project-grading.md#main", "Admin " + icon_embedding + " Team Project (tP) Grading", "gradeBreakdown-tpGrading", "3") }}
+{{ embed_topic("participation.md#main", "Admin " + icon_embedding + " Participation Marks", "3") }}
+{{ embed_topic("exams.md#main", "Admin " + icon_embedding + " Exams", "3") }}
+{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " Individual Project (iP) Grading", "3") }}
+{{ embed_topic("project-grading.md#main", "Admin " + icon_embedding + " Team Project (tP) Grading", "3") }}
 
 </div>
 {% endmacro %}

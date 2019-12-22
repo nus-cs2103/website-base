@@ -17,7 +17,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-grading-bugs.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "projectDeliverables-peGradingNotes", "3") }}
+{{ embed_topic("project-grading-bugs.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "3") }}
 </div>
 </span>
 
@@ -52,8 +52,8 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "projectDeliverablesPe-possibleUgBugs", "3") }}
-{{ embed_topic("project-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "projectDeliverablesPe-possibleUgBugs", "3") }}
+{{ embed_topic("project-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
+{{ embed_topic("project-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3") }}
 </div>
 
 

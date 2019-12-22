@@ -28,7 +28,7 @@ iP (and the tP) undergoes changes after each semester. As such, teething issues 
 * Have a GitHub account.
 * Recommended: Installed an IDE in your computer.
 
-{{ embed_topic("tools.md#main", "Admin " + icon_embedding + " **Tools**", "ipW02-tools", "2") }}
+{{ embed_topic("tools.md#main", "Admin " + icon_embedding + " **Tools**", "2") }}
 
 </box>
 <br>
