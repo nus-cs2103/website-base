@@ -1,6 +1,6 @@
 <div id="featureFlaws">
 
-These will be considered _feature flaws_:<br>
+These are considered _feature flaws_:<br>
 :fas-bug: The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
 :fas-bug: Hard-to-test features<br>
 :fas-bug: Features that don't fit well with the product<br>
@@ -44,20 +44,20 @@ These are considered DG bugs (if they hinder the reader):
 
 <div id="bugCalculationNotes">
 
-##### Notes on how marks are calculated based on PE product testing
+##### Grading bugs found in the PE
 
 * ==Of 3A and 3B above, the one you do better will be given a 70% weight and the other a 30% weight== so that your total score is driven by your strengths rather than weaknesses.
-* Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not be affect marks of the tester or the developer.
+* Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.
 * The penalty/credit for a bug varies based on,
   * The severity of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
   * The type of the bug:  `type.FunctionalityBug` > `type.DocumentationBug` > `type.FeatureFlaw`
 * The penalty for a bug is divided equally among assignees.
-* The developers are not penalized for the duplicate bug reports they received but the testers earn credit for the duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.
+* Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.
 * <tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.
 * If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means %%(e.g., performance in PE dry run)%% to calculate your marks for system/acceptance testing.
 * Your marks for developer testing depends on the _bug density_ rather than total bug count. Here's an example:
   * `n` bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks
   * `n` bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks
 * You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.
-* Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>, if deemed an unethical attempt to _game the system_, may be penalized.
+* Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>, if deemed an unethical attempt to _game the system_, will be penalized.
 </div>

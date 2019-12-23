@@ -33,15 +33,11 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **<big>2A. Code quality</big>**
 
-**Evaluates:** the quality of the code you have written yourself
-
-**Based on:** the parts of the code you claim as written by you
+**Evaluates:** the quality of the parts of the code you claim as written by you
 
 **Evaluation method:** manual inspection by tutors + automated-analysis by a script
 
-<box background-color="white" border-color="grey" border-left-color="gold">
-
-{{ icon_info }} For reference, here are some grading instructions given to evaluators:
+**Criteria:**
 
 <span id="projectGrading-codeQuality-criteria">
 
@@ -60,28 +56,21 @@ In addition, feature flaws reported in the PE will be considered when grading th
 * Evidence of applying [code quality guidelines covered in the module](../book/codeQuality/).
 
 </span>
-</box>
 
 **<big>2B. Effort</big>**
 
 **Evaluates:** how much value you contributed to the product
 
-**Method:** Evaluated in two steps.
+**Method:**
 
-Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
+* Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
 
-{{ embed_topic("project-deliverables-pe.md#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Implementation Effort==", "3", indent="1") }}
+{{ embed_topic("project-deliverables-pe.md#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Questions used for Implementation Effort==", "3", indent="2") }}
 
-Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
+* Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
-<box background-color="white" border-color="grey" border-left-color="gold">
+{{ embed_topic("peerEvaluations.md#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
 
-{{ icon_info }} For reference, here are some grading instructions given to evaluators:
-
-Evaluate the contribution to the product by each team member.
-* Count all implementation/testing/documentation work as mentioned in that person's PPP.
-* Also look at the actual code written by the person.
-</box>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
 #### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_individual }} 10 marks]%%</div>
@@ -92,7 +81,7 @@ Evaluate the contribution to the product by each team member.
 **Evaluates:** How well you tested your own feature
 
 **Based on:**
-1. functionality bugs in your work found by others during the PE
+1. functionality bugs in your work found by others during the [Practical Exam (PE)]({{baseUrl}}/admin/project-deliverables.html#deliverable-practical-exam)
 1. your test code %%(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)%%
 
 <modal large title="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations">
@@ -108,7 +97,7 @@ Evaluate the contribution to the product by each team member.
 
 **Evaluates:** How well you can system-test/acceptance-test a product
 
-**Based on:** bugs you found in the [Practical Exam]({{baseUrl}}/admin/project-deliverables.html#deliverable-practical-exam). In addition to functionality bugs, you get credit for reporting documentation bugs and feature flaws.
+**Based on:** bugs you found in the PE. In addition to functionality bugs, you get credit for reporting documentation bugs and feature flaws.
 
 <box>
 <include src="project-grading-bugs.md#bugCalculationNotes" />
@@ -122,29 +111,19 @@ Evaluate the contribution to the product by each team member.
 
 **Method:** Evaluated in two steps.
 
-Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.
+* Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.
 
-{{ embed_topic("project-deliverables-pe.md#projectGrading-userGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for User Guide==", "3") }}
-{{ embed_topic("project-deliverables-pe.md#projectGrading-devGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Developer Guide==", "3") }}
+{{ embed_topic("project-deliverables-pe.md#projectGrading-userGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for User Guide==", "3", indent="2") }}
+{{ embed_topic("project-deliverables-pe.md#projectGrading-devGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Developer Guide==", "3", indent="2") }}
 
-Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
+* Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
-<box background-color="white" border-color="grey" border-left-color="gold">
+{{ embed_topic("peerEvaluations.md#teamMemberEvaluation-ug", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating the Contribution to the UG==", "3", indent="2") }}
+{{ embed_topic("peerEvaluations.md#teamMemberEvaluation-dg", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating the Contribution to the DG==", "3", indent="2") }}
 
-{{ icon_info }} For reference, here are some grading instructions given to evaluators:
+* In addition, UG and DG bugs you received in the PE will be considered for grading this component.
 
-**Q**: Evaluate the contribution to the UG by each team member. Note that your evaluation must correspond to RepoSense data and the claims made by the PPP of each member.
-
-**Q**: Evaluate the contribution to the DG by each team member.
-
-**Q**: Which type of these UML diagrams in the DG did you personally add (or significantly modified)?
-- [ ] Class Diagrams
-- [ ] Object Diagrams
-- [ ] Sequence Diagrams
-- [ ] Activity Diagrams
-</box>
-
-In addition, UG and DG bugs you received in the PE will be considered for grading this component.
+<div class="indented-level2">
 
 <box>
 <include src="project-grading-bugs.md#ugBugs" />
@@ -153,6 +132,7 @@ In addition, UG and DG bugs you received in the PE will be considered for gradin
 <box>
 <include src="project-grading-bugs.md#dgBugs" />
 </box>
+</div>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
@@ -165,27 +145,29 @@ In addition, UG and DG bugs you received in the PE will be considered for gradin
 **Evaluates:** How well you did in project management related aspects of the project, as an individual and as a team
 
 **Based on:** tutor/bot observations of project milestones and GitHub data
- 
-Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. ==To get a good grade for this aspect, achieve at least 60% of the recommended milestone progress.==
-  
-Other criteria:
+
+**Grading criteria:**
+
+* Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. ==To get a good grade for this aspect, achieve at least 60% of the recommended milestone progress.==
 * Good use of GitHub milestones
 * Good use of GitHub release mechanism
 * Good version control, based on the repo
 * Reasonable attempt to use the forking workflow
 * Good task definition, assignment and tracking, based on the issue tracker
 * Good use of buffers %%(opposite: everything at the last minute)%%
-* Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%% 
+* Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%%
+
 
 <big>**5B. Team-tasks:**</big>
 
 **Evaluates:** How much you contributed to team-tasks
 
+{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " tP Scope → Examples of team-tasks", "3", indent="1") }}
+
 **Based on:** peer evaluations, tutor observations
 
-To earn full marks, you should have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
+**Grading criteria:** To earn full marks, you should have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
 
-{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " tP Scope → Examples of team-tasks", "3") }}
 
 </div>
 

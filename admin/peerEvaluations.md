@@ -7,13 +7,13 @@ This module leverages peer feedback/evaluations in many ways. In particular, we 
 
 {{ icon_important_big_red }} Submitting peer evaluations is compulsory. ==If you routinely miss submitting peer evaluations, you can lose participation marks.==
 
-### Practice Peer Evaluation
+### Session: `Practice Peer Evaluation`
 
 * Objective: to give you a chance to familiarize with the TEAMMATES tool
 * Held early in the semester
 * Not considered for grading
 
-### Midterm Peer Evaluation
+### Session: `Midterm Peer Evaluation`
 
 * Held just after recess week
 
@@ -24,33 +24,36 @@ This module leverages peer feedback/evaluations in many ways. In particular, we 
 <div id="teamMemberEvaluation-ug">
 
 <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the User Guide is,**
+
+<span id="equalShareScale">
+<panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer">
+
 - ( ) `Equal share` %%i.e., if the team has 4 members, this person did 1/4 of the work%%
 - ( ) `Equal share + 10%` %%i.e., this person did about 10% more than an equal share (equal share x 1.10)%%
 - ( ) `Equal share + 20%` %%i.e., this person did about 20% more than an equal share (equal share x 1.20)%%
 - ( ) ...
 - ( ) `Equal share - 10%` %%i.e., this person did about 10% less than an equal share (equal share x 0.90)%%
 - ( ) `Equal share - 20%` %%i.e., this person did about 20% less than an equal share (equal share x 0.80)%%
+</panel>
+</span>
 </div>
 <p/>
 <div id="teamMemberEvaluation-dg">
 
 <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the Developer Guide is,**
-- ( ) `Equal share` 
-- ( ) ...
+<include src="peerEvaluations.md#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-teamTasks">
 
 <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the team-based tasks is,**
-- ( ) `Equal share` 
-- ( ) ...
+<include src="peerEvaluations.md#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-implementation">
 
 <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,**
-- ( ) `Equal share` 
-- ( ) ...
+<include src="peerEvaluations.md#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-conduct">
@@ -105,7 +108,7 @@ This module leverages peer feedback/evaluations in many ways. In particular, we 
 </box>
 <p/>
 
-### Final Peer Evaluation
+### Session: `Final Peer Evaluation`
 
 * Held soon after the final project submission.
 * In addition to the questions of the Midterm Peer Evaluation, these additional questions will be included.
@@ -119,14 +122,14 @@ This module leverages peer feedback/evaluations in many ways. In particular, we 
 </box>
 
 
-### Responses Peer Evaluation
+### Session: `Responses Peer Evaluation`
 
 * This is a chance for you to submit your objections to the ratings you received in the Final Peer Evaluation
 
 
 <span id="giving-peer-feedback">
 
-#### Guidelines for Giving Peer Feedback
+### Guidelines for Giving Peer Feedback
 
 Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. Half-hearted/trivial feedback will not earn participation marks.
 
