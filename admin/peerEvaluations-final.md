@@ -1,0 +1,18 @@
+{% from "common/macros.njk" import embed_topic with context %}
+
+### Session: `Final Peer Evaluation`
+
+* Held soon after the final project submission.
+* ==There will be bonus marks for <tooltip content="i.e., those who are close to the overall consensus">good</tooltip> peer evaluations==.
+* This session includes all questions from the Midterm Peer Evaluation:
+
+{{ embed_topic("peerEvaluations-midterm.md#questions", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation Questions", "1", indent="2") }}
+
+* In addition, it contains these additional questions:
+
+<box>
+
+<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Do you agree with the contributions claimed by team members, as stated in their PPP?**
+<p/>
+
+</box>

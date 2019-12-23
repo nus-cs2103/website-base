@@ -69,7 +69,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 * Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
-{{ embed_topic("peerEvaluations.md#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
+{{ embed_topic("peerEvaluations-midterm.md#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
@@ -118,8 +118,8 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 * Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
-{{ embed_topic("peerEvaluations.md#teamMemberEvaluation-ug", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating the Contribution to the UG==", "3", indent="2") }}
-{{ embed_topic("peerEvaluations.md#teamMemberEvaluation-dg", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating the Contribution to the DG==", "3", indent="2") }}
+{{ embed_topic("peerEvaluations-midterm.md#teamMemberEvaluation-ug", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating the Contribution to the UG==", "3", indent="2") }}
+{{ embed_topic("peerEvaluations-midterm.md#teamMemberEvaluation-dg", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating the Contribution to the DG==", "3", indent="2") }}
 
 * In addition, UG and DG bugs you received in the PE will be considered for grading this component.
 
