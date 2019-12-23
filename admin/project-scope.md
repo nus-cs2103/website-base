@@ -6,9 +6,9 @@
 ### <div class="text-white bg-dark p-1">Project Direction</div>
 
 <div id="project-direction">
-In general, each team is expected to take one of these two directions:
 
-* **[Direction 1]  _Optimize_** AddressBook for a more specific target user group:
+* You can take one of these two directions, ==both of which are equally acceptable==:
+  * **[Direction 1]  _Optimize_** AddressBook for a more specific target user group:
    
   <panel type="seamless" header="%%{{ icon_example }} Examples for the _optimize_ direction%%">
      
@@ -20,7 +20,7 @@ In general, each team is expected to take one of these two directions:
   </panel><p/>
 
 
-* **[Direction 2] _Morph_** AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.
+  * **[Direction 2] _Morph_** AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.
    
   <panel type="seamless" header="%%{{ icon_example }} Examples for the _morph_ direction%%">
      
@@ -36,35 +36,44 @@ In general, each team is expected to take one of these two directions:
      
   </panel><p/>
 
-Note that both directions are equally acceptable.
-
-For either direction, you need to define a target user profile and a value proposition:
-
-* **Target user profile**: Define a very specific target user profile. <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
- {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/project-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing over mouse actions%%.<br><br>
-  **It is expected that your product will be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module_pair }} instructors only, such as the ability to navigate to a student's project on GitHub%%<br>
-    {{ icon_tip }} Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
-  
-  <panel type="seamless" header="%%Why the need to narrow down the user profile?%%" >
-  
-  * It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.
-  * It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job of implementing that feature.
-  </panel>
-  <br>
-  * **Value proposition**: Define a clear _value proposition_ %%(what problem does the product solve? how does it make the the user's life easier?)%% that matches the target user profile.
-
 </div>
 
-### <div class="text-white bg-dark p-1">{{ icon_individual }} Individual Expectations</div>
+### <div class="text-white bg-dark p-1">Target User</div>
+
+* **Define a very specific target user profile.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
+ {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/project-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing over mouse actions%%.
+
+<div class="indented-level2">
+
+<panel type="seamless" header="%%Why the need to narrow down the user profile?%%" >
+
+* It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.
+* It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job of implementing that feature.
+</panel>
+</div>
+
+* **The product should be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module_pair }} instructors only, such as the ability to navigate to a student's project on GitHub%%<br>
+    {{ icon_tip }} Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
+
+### <div class="text-white bg-dark p-1">Value Proposition</div>
+
+* **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the the user's life easier?
+<p/>
+
+### <div class="text-white bg-info p-1">{{ icon_individual }} Individual Expectations</div>
 
 <div id="individualExpectations">
 
-#### <span class="badge badge-dark">{{ icon_individual }} Individual</span> <span class="text-dark">Expectations on Enhancements</span>
+#### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Implementation</span>
 
-* **You are expected to enhance the product in some way(s).** User-visible enhancements are preferred, but it is not a strict requirement. Some examples:
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Enhance the product in some way(s).**</span>
+  * User-visible enhancements are preferred, but it is not a strict requirement.:
+  * **The enhancement(s) should fit with the rest of the software** (and the target user profile) and should have the consent of the team members. %%You will lose marks if you go 'rogue' and add things that don't fit with the product.%%
+  * Given below are some examples:
 
-<div class="indented-level2">
+<div class="indented-level4">
 <panel type="seamless" header="Example enhancements" minimized >
+
   * Add a new feature %%e.g. add the ability to view statistics%%
   * Enhance an existing features in a major way %%e.g. make the command syntax more user friendly and closer to natural language%%
   * A redesign of the GUI %%e.g. make it work like a chat application (note: chat is a form of CLI)%%
@@ -73,51 +82,52 @@ For either direction, you need to define a target user profile and a value propo
 </panel><p/>
 </div>
 
-* **The enhancement(s) should fit with the rest of the software** (and the target user profile) and should have the consent of the team members. %%You will lose marks if you go 'rogue' and add things that don't fit with the product.%%
+* **Tip: Contribute to all aspects of the project** e.g. write backend code, frontend code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
 
-<div class="indented">
+* **Tip: Do _all_ the work related to your enhancement yourself.** %%Reason:If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%
+
+* **Tip: Divide the components of the product among team members**. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
 
 <box>
 
-**Tips:**
-
-{{ icon_tip }} **Contribute to all aspects of the project** e.g. write backend code, frontend code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
-
-{{ icon_tip }} **Do _all_ the work related to your enhancement yourself.** %%Reason:If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%
-
-{{ icon_tip }} **Divide the components of the product among team members**. Notwithstanding the above, you are still expected to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
-</box>
-</div>
-
-* **How much code to write?** The project grade depends on the value you added, as perceived by evaluators (i.e., team members, peer evaluators, and tutors) as well as other factors such as the quality of the code. As such, there is no strong correlation between the LoC and the grade. For instance, in a recent semester, a student who wrote 500 LoC of functional code (i.e., excluding test code and documentation) was able to reach top 20% (in terms of project marks), another who wrote 900 LoC reached the top 10%, while another who wrote more than 5000 LoC ended up in the bottom 10%. Also see the the percentiles of functional LoC  written by that batch of students, given below:
+**:thinking: How much code to write?** The project grade depends on the value you added, as perceived by evaluators (i.e., team members, peer evaluators, and tutors) as well as other factors such as the quality of the code. As such, there is no strong correlation between the LoC and the grade. For instance, in a recent semester, a student who wrote 500 LoC of <tooltip content="i.e., excluding test code and documentation">functional code</tooltip> was able to reach top 20% (in terms of project marks), another who wrote 900 LoC reached the top 10%, while another who wrote more than 5000 LoC ended up in the bottom 10%. Also see the the percentiles of functional LoC  written by that batch of students, given below:
   Percentile | 25    | 50    |  75 
   -----------|-------|-------|----
   LoC        | ~1000 | ~1500 | ~2500
+</box>
 
-#### <span class="badge badge-dark">{{ icon_individual }} Individual</span> <span class="text-dark">Expectations on Documentation</span>
+#### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Documentation</span>
 
-* You are expected to write user documentation and developer documentation for your features.
-* **The objective is to showcase your ability to write the two types of documentation.** If the documentation for your features is not enough to meet that objective, or does not reach the following minimal requirement, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.
-  * Contribution to the user guide: 1 page
-  * Contribution to the developer guide: 3 pages
-* You are expected to ==showcase your ability to use the various UML diagrams (at least 2 types)==. As mentioned in the previous point, if the documentation of your features doesn't give you enough opportunities to do so %%e.g., your features only required minor updates to existing diagrams%%, you are expected to create those opportunities yourself by documenting _proposed_ features or _alternative_ designs. Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.
-* You are required to update the entire UG and DG to match your product. However, there is no need to update other documents such as tutorials that are AB3 specific.
+* **Objective:** showcase your ability to write both _user-facing documentation_ and _developer-facing documentation_.
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added.The minimum requirement is given below. %%(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)%%
+  * UG: at least 1 page
+  * DG: at least 3 pages
+* **Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements**, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations. 
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Use at least 2 types of UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.
 
-#### <span class="badge badge-dark">{{ icon_individual }} Individual</span> <span class="text-dark">Expectations on Testing</span>
+#### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Testing</span>
 
 <div id="testing-expectations">
 
-* There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.
-* You ==must write _some_ tests== so that we can evaluate your ability to write tests.
-* How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Write _some_ automated tests**</span> so that we can evaluate your ability to write tests.
+
+<box>
+
+**:thinking: How much testings is enough?** We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br>
+There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. ==The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.==
+</box>
 
 </div>
 
-#### <span class="badge badge-dark">{{ icon_individual }} Individual</span> <span class="text-dark">Expectations on Teamwork</span>
+#### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Teamwork</span>
+
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Do a fair share of the _team tasks_**.</span>
+
+<div id="team-tasks" class="indented-level2">
+
+<box>
 
 _Team-tasks_ are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
-
-<span id="scope-example-team-tasks"></span>
 
 <panel type="seamless" header="%%{{ icon_example }} Examples of team-tasks%%">
 
@@ -136,9 +146,15 @@ Here is a non-exhaustive list of team-tasks:
 1. Incorporating more useful tools/libraries/frameworks into the product or the project workflow %%(e.g. automate more aspects of the project workflow using a GitHub plugin)%%
 
 </span>
-
 </panel><p/>
-   
+</box>
+</div>
+
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Assume a fair share of project roles and responsibilities**.</span>
+
+<div class="indented-level2">
+
+<box>
 <span id="roles">
 
 _Roles_ indicate aspects you are in charge of and responsible for. %%E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.%%
@@ -156,24 +172,28 @@ This is a non-exhaustive list; you may define additional roles.
 * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
 * _[Tool ABC] expert_: %%e.g. Intellij expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
 * _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in v1.3-v1.4.
+</panel><p/>
 
-</panel>
-<p/>
+{{ icon_tip }} Ensure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but **for each aspect there should be one person who is unequivocally the person responsible for it**. %%Reason: when _everyone is responsible for everything_, no one is.%%
+</box>
+</div>
 
-Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but **for each aspect there should be one person who is unequivocally the person responsible for it**.
+
 </span>
+
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Review each others work**.</span> %%Reason: reviewing skills is a learning outcome, and it is mutually beneficial.%%
 
 </div>
 <span id="team-expectations">
 
-### <div class="text-white bg-dark p-1">{{ icon_team }} Team Expectations</div>
+### <div class="text-white bg-success p-1">{{ icon_team }} Team Expectations</div>
 
-1. **Preserve _product integrity_**: i.e. ensure,
-   1. features fit together to form a cohesive product,
-   1. documentation follows a consistent style and presents a cohesive picture to the reader, and
-   1. final project demo presents a cohesive picture to the audience.
-1. **Maintain product quality**: i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
-1. **Manage the project**: i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
+* <span class="badge badge-success">Expectation</span> <span class="text-success">**Preserve _product integrity_**</span> i.e. ensure,
+  1. features fit together to form a cohesive product,
+  1. documentation follows a consistent style and presents a cohesive picture to the reader, and
+  1. final project demo presents a cohesive picture to the audience.
+* <span class="badge badge-success">Expectation</span> <span class="text-success">**Maintain product quality**</span>** i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
+* <span class="badge badge-success">Expectation</span> <span class="text-success">**Manage the project**</span>** i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
 </span>
 
 

@@ -18,26 +18,7 @@ See the sections below for details of how we assess each aspect.
 * tutors (based on product demo and user guide)
 * peers from other teams (based on peer testing and user guide)
 
-<box background-color="white" border-color="grey" border-left-color="gold">
-
-{{ icon_info }} For reference, here are some grading instructions given to evaluators:
-
-<div id="projectGrading-featureFit-instructions">
-
-Evaluate the product design based on the User Guide and the actual product behavior.
-
-**Target user**:
-- [ ] `target user specified and appropriate`: The target user is clearly specified, ==prefers typing over other modes of input==, and not too general (should be narrowed to a specific user group with certain characteristics).
-- [ ] `value specified and matching`: The value offered by the product is clearly specified and matches the target user.
-- [ ] `optimized for the target user`: It feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI.
-
-**Value to the target user**:
-- ( ) `low`: The value to target user is low. App is not worth using.
-- ( ) `medium`: Some small group of target users might find the app worth using.
-- ( ) `high`: Most of the target users are likely to find the app worth using.
-
-</div>
-</box>
+{{ embed_topic("project-deliverables-pe.md#projectGrading-featureFit-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Product Design==", "3") }}
 
 In addition, feature flaws reported in the PE will be considered when grading this aspect.
 
@@ -89,25 +70,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
 
-<box background-color="white" border-color="grey" border-left-color="gold">
-
-{{ icon_info }} For reference, here are some grading instructions given to evaluators:
-
-<div id="projectGrading-featureQuality-instructions">
-
-**Quality**: Compared to AB3, the quality of this product is,
-- ( )  Significantly lower
-- ( )  Slightly lower
-- ( )  Similar
-- ( )  Higher
-</div>
-
-<div id="projectGrading-effort-instructions">
-
-**Effort**: Assume the effort required to create AB3 from scratch is 10 in a scale of 0 to 30. How much effort do you estimate the team put in for this project?
-* {{ icon_important_big_red }} Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
-</div>
-</box>
+{{ embed_topic("project-deliverables-pe.md#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Implementation Effort==", "3", indent="1") }}
 
 Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
@@ -161,23 +124,8 @@ Evaluate the contribution to the product by each team member.
 
 Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.
 
-<box background-color="white" border-color="grey" border-left-color="gold">
-{{ icon_info }} For reference, here are some instructions given to evaluators:
-
-<div id="projectGrading-userGuide-instructions">
-
-**UG**: Compared to AB3, the quality of this UG is,
-- ( )  Significantly lower
-- ( )  Slightly lower
-- ( )  Similar
-- ( )  Higher
-
-</div>
-<div id="projectGrading-devGuide-instructions">
-
-**DG**: similar to UG
-</div>
-</box>
+{{ embed_topic("project-deliverables-pe.md#projectGrading-userGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for User Guide==", "3") }}
+{{ embed_topic("project-deliverables-pe.md#projectGrading-devGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Developer Guide==", "3") }}
 
 Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 

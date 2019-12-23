@@ -23,22 +23,17 @@
 
 <panel type="info" header="Admin → tP → Grading → **UG**" expanded>
 
-<include src="../../admin/project-grading.md#projectGrading-userGuide-instructions" />
+<include src="../../admin/project-deliverables-pe.md#projectGrading-userGuide-instructions" />
 </panel>
 
 <panel type="info" header="Admin → tP → Grading → **DG**" expanded>
 
-<include src="../../admin/project-grading.md#projectGrading-devGuide-instructions" />
-</panel>
-
-<panel type="info" header="Admin → tP → Grading → **Feature**" expanded>
-
-<include src="../../admin/project-grading.md#projectGrading-featureQuality-instructions" />
+<include src="../../admin/project-deliverables-pe.md#projectGrading-devGuide-instructions" />
 </panel>
 
 <panel type="primary" header="Admin → tP → Grading → **Effort**" expanded>
 
-<include src="../../admin/project-grading.md#projectGrading-effort-instructions" />
+<include src="../../admin/project-deliverables-pe.md#projectGrading-effort-instructions" />
 </panel>
 <p/>
 
@@ -46,7 +41,8 @@
 
 <panel type="warning" header="Admin → Peer Evaluations → **Conduct & Competency**" expanded>
 
-<include src="../../admin/peerEvaluations.md#peerEvaluation-criteria" />
+<include src="../../admin/peerEvaluations.md#teamMemberEvaluation-conduct" />
+<include src="../../admin/peerEvaluations.md#teamMemberEvaluation-competency" />
 </panel>
 
 </div>

@@ -57,37 +57,63 @@
 </div>
 
 
-##### <span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [10 minutes]</span>
+##### <span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
 
-* **Evaluate the following aspects.** Submit via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.
+* To be submitted via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.
 
-<div class="indented-level2">
+<div class="indented">
 <box>
 
-**A. Product Design** [{{ icon_team }}]:
-<div class="indented-level2">
-<include src="project-grading.md#projectGrading-featureFit-instructions" />
+##### **Important questions included in the evaluation:**
+
+<div id="projectGrading-featureFit-instructions">
+
+<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Quality of the product design,**<br>
+Evaluate based on the User Guide and the actual product behavior.
+
+ Criterion | Unable to judge | Low | Medium | High
+-----------|-----------------|-----|--------|-----
+`target user` | not specified | | | clearly specified and narrowed down appropriately
+`value proposition`| not specified | The value to target user is low. App is not worth using | Some small group of target users might find the app worth using | Most of the target users are likely to find the app worth using
+`optimized for target user` | | Not enough focus for CLI users | Mostly CLI-based, but cumbersome to use most of the time | feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI
+</div>
+<p/>
+<div id="projectGrading-userGuide-instructions">
+
+<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,**<br>
+Evaluate based on fit-for-purpose, from the perspective of a target user.
+For reference, the AB3 UG is [here](https://se-education.org/addressbook-level3/UserGuide.html).<br>
+
+- ( )  Significantly lower
+- ( )  Slightly lower
+- ( )  Similar
+- ( )  Higher
+
+</div>
+<p/>
+<div id="projectGrading-devGuide-instructions">
+
+<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Compared to AB3, the overall quality of the DG you evaluated is,**<br>
+Evaluate based on fit-for-purpose from the perspective of a new team member trying to understand the product's internal design by reading the DG.
+For reference, the AB3 DG is [here](https://se-education.org/addressbook-level3/DeveloperGuide.html).<br>
+
+- ( )  Significantly lower
+- ( )  Slightly lower
+- ( )  Similar
+- ( )  Higher
+
+</div>
+<p/>
+<div id="projectGrading-effort-instructions">
+
+<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **If the implementation effort required to create AB3 from scratch is 10, the estimated implementation effort of this project is,** [`0`..`30`]
+* Do read the DG appendix named `Effort`, if any.
+* ==Consider implementation work only (i.e., exclude testing, documentation, project management etc.)==
+* Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
 </div>
 
-**B. Quality of user docs** [{{ icon_individual }}]:
-<div class="indented">
-<include src="project-grading.md#projectGrading-userGuide-instructions" />
-</div>
+<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **[Optional] Concerns or any noteworthy observations about the product you evaluated**
 
-**C. Quality of developer docs** [{{ icon_individual }}]:
-<div class="indented">
-<include src="project-grading.md#projectGrading-devGuide-instructions" />
-</div>
-
-**D. Feature Quality** [{{ icon_individual }}]:
-<div class="indented">
-<include src="project-grading.md#projectGrading-featureQuality-instructions" />
-</div>
-
-**E. Amount of work** [{{ icon_individual }}]:
-<div class="indented">
-<include src="project-grading.md#projectGrading-effort-instructions" />
-</div>
 </box>
 </div>
 
