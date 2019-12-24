@@ -21,6 +21,7 @@
 * You should receive the submission link by Monday noon. Email `{{ module | lower }}@comp.nus.edu.sg` if you did not receive the submission link on time.
 {{ embed_topic("../../admin/peerEvaluations.md#intro", "Admin " + icon_embedding + " Peer Evaluations → Introduction", "3", indent="2") }}
 {{ embed_topic("../../admin/peerEvaluations.md#practicePeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Practice Peer Evaluation", "1", indent="2") }}
+{{ embed_topic("../../admin/appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "3", indent="2", type="danger") }}
 
 
 </div>
