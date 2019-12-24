@@ -8,7 +8,7 @@ In this semester, we are going to enhance [an AddressBook application](https://s
 
 This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, ==Command Line Interface (CLI) is the primary mode of input.== 
 
-{{ embed_topic("project-constraints.md#constraint-cli", "Admin " + icon_embedding + " tP Contstraints → More info about the 'CLI app' requirement", "2") }}
+{{ embed_topic("project-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Contstraints → Recommendation-CLI-First", "2") }}
 <p/>
 
 </div>
