@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import embed_topic with context %}
+
 {% macro show_constraint(constraint_id, recommendation=false) -%}
 {% set constraint_style = "info" if recommendation else "warning" %}
 {% set constraint_icon = ":far-thumbs-up:" if recommendation else ":fas-ban:" %}
@@ -74,18 +76,27 @@ The software should not depend on your own remote server.<br>
 
 {% call show_constraint("Constraint-External-Software") -%}
 The use of third-party frameworks/libraries is allowed but only if they,
-    * are free, open-source, and have permissive license terms %%(E.g., trial version of libraries that require purchase after N days are not allowed)%%.
-    * do not require any installation by the user of your software.
-    * do not violate other constraints.
+* are free, open-source, and have permissive license terms %%(E.g., trial version of libraries that require purchase after N days are not allowed)%%.
+* do not require any installation by the user of your software.
+* do not violate other constraints.
 
-  and is subjected to prior approval by the teaching team.<br> 
-  %%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the module.%%
+and is subjected to prior approval by the teaching team.<br> 
+%%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the module.%%
 
-  Please ==post in the [forum]({{module_org}}/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>
-  %%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
+Please ==post in the [forum]({{module_org}}/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>
+%%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
+{%- endcall  %}
+
+{% call show_constraint("Constraint-File-Size") -%}
+The file sizes of the deliverables should not exceed the limits given below. <br>
+%%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue%%:
+* <span class="text-danger">JAR file: 100Mb</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
+* <span class="text-danger">PDF files: 15Mb/file</span> (Not following the recommended method of converting to PDF can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots). 
+{%- endcall  %}
+
+-----------------------------------------------------------------------------------------------------------------------
 
 **In addition, you are strongly encouraged to follow these recommendations** as they can help increase your project score.
-{%- endcall  %}
 
 {% call show_constraint("Recommendation-Minimal-Network", recommendation=true) -%}
 It is OK to use a reliable public API %%e.g., Google search%% but we recommend that you have a fallback mechanism (e.g., able to load data using a data file if the network is down).<br>
