@@ -91,13 +91,13 @@ Team          | Discuss PR of | Backup team to discuss
 
 **Sub-team A:** Review use cases, w.r.t. the possible bugs are given below.
 
-{{ embed_topic("../../admin/project-grading-bugs.md#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case Bugs", "3", indent="2", status="expanded") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
 
 **Sub-team B**: review user stores, NFRs, glossary, w.r.t. the possible bugs are given below.
 
-{{ embed_topic("../../admin/project-grading-bugs.md#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story Bugs", "3", indent="2", status="expanded") }}
-{{ embed_topic("../../admin/project-grading-bugs.md#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR Bugs", "3", indent="2", status="expanded") }}
-{{ embed_topic("../../admin/project-grading-bugs.md#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary Bugs", "3", indent="2", status="expanded") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
 
 </div>
 
