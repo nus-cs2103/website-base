@@ -49,30 +49,35 @@ In this tutorial, we would like to smoke-test the CATcher app **to ensure it can
 {%- endmacro %}
 
 {% macro get_pr_link(team_id) -%}
-[{{ team_id }}](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls?q=is%3Aopen+is%3Apr+label%3Atutorial.{{ team_id.slice(0, -2) }}+label%3Ateam.{{ team_id.slice(-1) }})
+[PR](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls?q=is%3Aopen+is%3Apr+label%3Atutorial.{{ team_id.slice(0, -2) }}+label%3Ateam.{{ team_id.slice(-1) }})
+{%- endmacro  %}
+
+{% macro get_dg_link(team_id) -%}
+[DG](https://{{ semester }}-{{ team_id | lower}}.github.io/main/DeveloperGuide.html)
+{%- endmacro  %}
+
+{% macro get_links(team_id, backup_team_id) -%}
+{{ team_id }}: {{ get_pr_link(team_id) }} {{ get_dg_link(team_id) }} <small>%%({{ backup_team_id }}: {{ get_pr_link(backup_team_id) }} {{ get_dg_link(backup_team_id) }})%%</small>
 {%- endmacro  %}
 
 <div class="indented-level2">
 
 <panel header="Allocation for DG review" >
 
-Team          | Sub-team A <small>%%(backup)%%</small> | Sub-team B <small>%%(backup)%%</small>
---------------|----------------------------------------|---------------------------------------
+Your Team ID  | Sub-team A Reviews <small>%%(backup)%%</small> | Sub-team B Reviews <small>%%(backup)%%</small>
+--------------|------------------------------------------------|---------------------------------------
 {% for team in team_review_allocation  %}
 {%- set backup_team1 %}{{ get_review_allocation_for_team(team[1]) }}{% endset -%}
 {%- set backup_team2 %}{{ get_review_allocation_for_team(team[2]) }}{% endset -%}
-{{ team[0] }} | {{ get_pr_link(team[1]) }} <small>%%({{ get_pr_link(backup_team1) }})%%</small> | {{ get_pr_link(team[2]) }} <small>%%({{ get_pr_link(backup_team2) }})%%</small>
+{{ team[0] }} | {{ get_links(team[1], backup_team1) }} | {{ get_links(team[2], backup_team2) }} 
 {% endfor %}
 </panel>
 </div>
 
-* **Go to the PR** and **navigate the to the <trigger trigger="click" for="modal:t10-netlifyPreview">Netlify preview</trigger>**.
+* **Go to the PR** of the allocated team.
+* **Open the DG of that team in another Browser tab**.
 * **Confirm that the DG has significant updates**, to the diagrams in particular. If it doesn't, you can review the _backup_ team (given within brackets). %%If even the backup team is not suitable, ask the tutor for a suggestion or choose any random teams having tutorials in the same day.%%
 * **Evaluate the `Design` and the `Implementation` sections against the stated expectations** (given further down); add your observations as comments.<br>
-
-<modal large title="How to access the Netlify preview" id="modal:t10-netlifyPreview">
-  <img src="../../admin/images/prNetlifyPreview.png" />
-</modal>
 
 <div class="indented-level2">
 

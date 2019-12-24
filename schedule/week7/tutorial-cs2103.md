@@ -52,7 +52,11 @@ Precondition: ...<br>
 {%- endmacro %}
 
 {% macro get_pr_link(team_id) -%}
-[{{ team_id }}](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls?q=is%3Aopen+is%3Apr+label%3Atutorial.{{ team_id.slice(0, -2) }}+label%3Ateam.{{ team_id.slice(-1) }})
+[PR](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls?q=is%3Aopen+is%3Apr+label%3Atutorial.{{ team_id.slice(0, -2) }}+label%3Ateam.{{ team_id.slice(-1) }})
+{%- endmacro  %}
+
+{% macro get_dg_link(team_id) -%}
+[DG](https://{{ semester }}-{{ team_id | lower}}.github.io/main/DeveloperGuide.html)
 {%- endmacro  %}
 
 <div class="indented-level2">
@@ -63,15 +67,14 @@ Team          | Discuss PR of | Backup team to discuss
 --------------|---------------|-----------------------
 {% for team in team_review_allocation  %}
 {%- set backup_team %}{{ get_review_allocation_for_team(team[1]) }}{% endset -%}
-{{ team[0] }} | {{ get_pr_link(team[1]) }} | {{ get_pr_link(backup_team) }}
+{{ team[0] }} | {{ team[1] }}: {{ get_pr_link(team[1]) }} {{ get_dg_link(team[1]) }} | {{ backup_team }}: {{ get_pr_link(backup_team) }} {{ get_dg_link(backup_team) }}
 {% endfor %}
 </panel>
 </div>
 
 * **Go to the PR**.
-* **Go the to the preview of the Developer Guide** via the Netlify preview link.
-  <img src="../../admin/images/prNetlifyPreview.png" />
-* {{ timing_badge("7-8 minutes", "info") }} **Read the following sections and add review comments** of areas to improve and doubts.<br>
+* **In another Browser tab, open their Developer Guide** page in their website (i.e., the html version, not the adoc version).
+* {{ timing_badge("7-8 minutes", "info") }} **Read the following sections in the DB and add review comments in the PR** of areas to improve and doubts.<br>
   %%**If the DG does not have enough content for you to review**, you can review the _backup_ team (see the third column in the allocation panel). If even the backup team is not suitable, choose any random teams having tutorials in the same day and not in the same tutorial as you.%%
 
 <div class="indented-level2">
