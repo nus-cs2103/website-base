@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import thumb, show_as_tab, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 {% from "schedule/studentData.njk" import team_review_allocation with context %}
 {% from "schedule/index.md" import show_week_pagetop with context%}
 {{ show_week_pagetop(7, "tutorial") }}
@@ -86,22 +86,16 @@ Team          | Discuss PR of | Backup team to discuss
 * Do not finalize the review at this stage. Just keep adding comments.
 </box>
 
-  * **Sub-team A:** use cases
-    * Is the step numbering correct?
-    * Are all possible extensions mentioned?
-    * Are there any unnecessary UI details mentioned?
-    * Any other formatting/notational errors?
-  * **Sub-team B**:
-    * User stories
-      * Is the user story format correct?
-      * All three parts present?
-      * Does the benefit match the function?
-      * Any important user stories missing?
-    * NFRs
-      * Are the NFRs are really _Non-Functional_?
-      * Is each NFR _well-defined_ (i.e., possible to decide when it has been met)?
-      * Is each NFR reasonably achievable?
-      * Are more relevant NFRs have been left out?
+**Sub-team A:** Review use cases, w.r.t. the possible bugs are given below.
+
+{{ embed_topic("../../admin/project-grading-bugs.md#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case Bugs", "3", indent="2", status="expanded") }}
+
+**Sub-team B**: review user stores, NFRs, glossary, w.r.t. the possible bugs are given below.
+
+{{ embed_topic("../../admin/project-grading-bugs.md#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story Bugs", "3", indent="2", status="expanded") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR Bugs", "3", indent="2", status="expanded") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary Bugs", "3", indent="2", status="expanded") }}
+
 </div>
 
 * {{ timing_badge("7-8 minutes", "info") }} **Discuss your comments/observations/doubts with the tutor** and other team members to confirm the comments you entered are correct.
