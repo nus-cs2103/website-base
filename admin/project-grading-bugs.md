@@ -15,24 +15,38 @@ These are considered _functionality bugs_:<br>
 :fas-bug: Behavior is not specified and differs from normal expectations %%e.g. error message does not match the error%%<br>
 </div>
 
-<div id="ugBugs">
+<div id="generalDocBugs">
 
-**These are considered UG bugs (if they hinder the reader):**<br>
+<span id="visualsBugs">
+
 :fas-bug: Use of visuals
 * Not enough visuals e.g., screenshots/diagrams
 * The visuals are not well integrated to the explanation
 * The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+</span>
+<span id="examplesBugs">
 
 :fas-bug: Use of examples:
 * Not enough or too many examples e.g., sample inputs/outputs
+</span>
+<span id="explanationBugs">
 
 :fas-bug: Explanations:
 * The explanation is too brief or unnecessarily long.
 * The information is hard to understand for the target audience. e.g., using terms the reader might not know
+</span>
+<span id="neatnessBugs">
 
 :fas-bug: Neatness:
 * looks messy
 * not well-formatted
+</span>
+</div>
+
+<div id="ugBugs">
+
+**These are considered UG bugs (if they hinder the reader):**<br>
+<include src="project-grading-bugs.md#generalDocBugs" />
 </div>
 
 <div id="dgBugs">
@@ -43,15 +57,27 @@ These are considered _functionality bugs_:<br>
 <include src="project-grading-bugs.md#ugBugs" />
 </panel>
 
+<span id="architectureDiagramBugs">
+
+:fas-bug: Architecture:
+* Symbols used are not intuitive
+* Indiscriminate use of double-headed arrows
+* <tooltip content="e.g., the sequence diagram showing interactions between main components">_architecture-level_</tooltip> diagrams contain lower-level details
+* Description given are not usufficiently high-level
+</span>
+<span id="umlDiagramBugs">
+
 :fas-bug: UML diagrams:
 * notation incorrect or not compliant with the notation covered in the module.
 * Some other type of diagram used when a UML diagram would have worked just as well.
 * The diagram used is not suitable for the purpose it is used.
 * The diagram is too complicated.
+</span>
+<span id="codeSnippetBugs">
 
 :fas-bug: Code snippets:
 * Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
-
+</span>
 <span id="userStoryBugs">
 
 :fas-bug: Problems in User Stories. Examples:

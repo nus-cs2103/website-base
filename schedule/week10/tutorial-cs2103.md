@@ -77,7 +77,7 @@ Your Team ID  | Sub-team A Reviews <small>%%(backup)%%</small> | Sub-team B Revi
 * **Go to the PR** of the allocated team.
 * **Open the DG of that team in another Browser tab**.
 * **Confirm that the DG has significant updates**, to the diagrams in particular. If it doesn't, you can review the _backup_ team (given within brackets). %%If even the backup team is not suitable, ask the tutor for a suggestion or choose any random teams having tutorials in the same day.%%
-* **Evaluate the `Design` and the `Implementation` sections against the stated expectations** (given further down); add your observations as comments.<br>
+* **Evaluate the `Design` and the `Implementation` sections w.r.t possible DG bugs** (given further down); add your observations as comments.<br>
 
 <div class="indented-level2">
 
@@ -95,34 +95,15 @@ Your Team ID  | Sub-team A Reviews <small>%%(backup)%%</small> | Sub-team B Revi
 
 <box border-left-color="green">
 
-##### <span class="text-success">DG Expectations</span> 
+##### <span class="text-success">DG - Possible Bugs</span> 
 {{ icon_important_big_red }} Pay attention to these as they are same as the final evaluation criteria of the DG.<br>
 
+{{ embed_topic("../../admin/project-grading-bugs.md#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
+
 Also see:
-{{ embed_topic("../../admin/project-w10-mid-v13.md#dgTips", "Admin " + icon_embedding + " tP: mid-v1.3 → DG Tips", "3") }}
-
-**Architecture**
-- [ ] The Architecture diagram uses intuitive symbols.
-- [ ] No indiscriminate use of double-headed arrows.
-- [ ] Any <tooltip content="e.g., the sequence diagram showing interactions between main components">_architecture-level_</tooltip> diagrams do not contain lower-level details.
-- [ ] The description given is understandable and sufficiently high-level.
-
-**Diagrams**
-- [ ] Uses the correct UML notation.<br>
-  &nbsp;&nbsp;{{ icon_info }} If you notice UML notation errors, please point them out.
-- [ ] Not cluttered with too much unnecessary details.
-- [ ] Each diagrams is relatively simple and easy to understand.
-- [ ] Uses multiple types of diagrams (ideal: uses Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams)
-- [ ] Diagrams are well-integrated into the description.
-- [ ] Not repetitive (opposite: many similar diagrams with minor differences).
-
-**Descriptions**
-- [ ] Easy to understand/follow (==were you able to understand their design?==)
-- [ ] Just enough information: Not too much information. All important information is given.
-
-**Overall**
-- [ ] Polished: The document looks neat, well-formatted, and professional.<br>
-  &nbsp;&nbsp;{{ icon_info }} e.g., Are the diagrams resized to match the text size of the main document?
+{{ embed_topic("../../admin/project-w10-mid-v13.md#dgTips", "Admin " + icon_embedding + " tP: mid-v1.3 → DG Tips", "3", indent="1", status="expanded", type="success") }}
 
 </box>
 
