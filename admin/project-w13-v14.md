@@ -67,7 +67,7 @@
 
 
 * {{ icon_team }} **User Guide**: Convert the pdf (AB3 dev guide has some instructions on converting project docs to pdf) and upload to LumiNUS.<br>
-  File name: `[TEAM_ID][product Name]UserGuide.pdf`  %%e.g.[{{ module }}T-W09-1][Contacts Plus]UserGuide.pdf%%
+  File name: `[TEAM_ID][product Name]UG.pdf`  %%e.g.[{{ module }}T-W09-1][Contacts Plus]UG.pdf%%
 
 <div class="indented-level2">
 
@@ -75,7 +75,7 @@
 </div>
 
 * {{ icon_team }} **Developer Guide**: submit similar to UG<br>
-  File name: `[TEAM_ID][product Name]DeveloperGuide.pdf` %%e.g. [{{ module }}T-W09-1][Contacts Plus]DeveloperGuide.pdf%%
+  File name: `[TEAM_ID][product Name]DG.pdf` %%e.g. [{{ module }}T-W09-1][Contacts Plus]DG.pdf%%
 
 <div class="indented-level2">
 
@@ -86,7 +86,7 @@
 
 * {{ icon_individual }} **Project Portfolio Page (PPP)**:
   * PDF file: submit similar to UG<br>
-    File name: `[TEAM_ID][Your full Name as Given in LumiNUS]Portfolio.pdf` %%e.g.[{{ module }}T-W09-1][Leow Wai Kit, John]Portfolio.pdf%%<br>
+    File name: `[TEAM_ID][Your full Name as Given in LumiNUS]PPP.pdf` %%e.g.[{{ module }}T-W09-1][Leow Wai Kit, John]PPP.pdf%%<br>
     {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names) 
   * HTML version: make available on `github.io`
 
