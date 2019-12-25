@@ -579,7 +579,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="col-sm border-bottom">
 
 **Admin:**
-<include src="admin.md#summary" optional/>
+<include src="admin-{{ module | lower }}.mbdf#summary" optional/>
 <include src="project.md#summary" optional/>
 
   </div>
@@ -611,6 +611,13 @@ pageNav: {{ categories[category].pagenav }}
 <include src="notices-{{ module | lower }}.mbdf" optional />
 
 {{ show_week_summary(week_num) }}
+{% endmacro %}
+
+
+{% macro show_week_admin_page(week_num) %}
+{{ show_week_pagetop(1, "admin") }}
+
+<include src="admin-{{ module | lower }}.mbdf" optional />
 {% endmacro %}
 
 <!-- ============================= page content ============================================ -->

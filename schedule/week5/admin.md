@@ -1,29 +1,3 @@
-{% from "schedule/index.md" import show_week_pagetop with context%}
-{% from "common/macros.njk" import embed_topic, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
-{% from "common/admin.njk" import topics, policies, faqs, admin_topics_to_read, show_admin_summary with context %}
+{% from "schedule/index.md" import show_week_admin_page with context %}
 
-{{ show_week_pagetop(5, "admin") }}
-
-{% call show_admin_summary() %}
-
-1. Submit post-lecture quiz
-1. Practice peer evaluation on TEAMMATES {{ timing_badge("by Saturday", "secondary") }}
-{% endcall %}
-
-<div id="additional">
-
-#### {{ thumb(1) }} Submit post-lecture quiz
-
-* As per usual.
-
-#### {{ thumb(2) }} Practice peer evaluation on TEAMMATES {{ timing_badge("by Saturday", "secondary") }}
-
-* You should receive the submission link by Monday noon. Email `{{ module | lower }}@comp.nus.edu.sg` if you did not receive the submission link on time.
-{{ embed_topic("../../admin/peerEvaluations.md#intro", "Admin " + icon_embedding + " Peer Evaluations → Introduction", "3", indent="2") }}
-{{ embed_topic("../../admin/peerEvaluations.md#practicePeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Practice Peer Evaluation", "1", indent="2") }}
-{{ embed_topic("../../admin/appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "3", indent="2", type="danger") }}
-
-
-</div>
-
-{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week5, is_flat=false ) }}
+{{ show_week_admin_page(5) }}

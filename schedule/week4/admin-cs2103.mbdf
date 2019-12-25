@@ -1,0 +1,18 @@
+{% from "common/macros.njk" import embed_topic, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
+{% from "common/admin.njk" import admin_topics_to_read, faqs, policies, show_admin_summary, topics with context %}
+
+{% call show_admin_summary() %}
+1. Accept GitHub invitation from the module organization
+1. Submit post-lecture quiz
+{% endcall %}
+
+
+#### {{ thumb(1) }} Accept GitHub invitation from the module organization
+
+* We will be adding you all to {{ module | lower }}-{{ semester }} github org. **Please accept the invitation sent by GitHub** as you need to be a member of the org for some of the future module activities. If you did not receive the invitation link, you can use the link [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation).
+
+#### {{ thumb(2) }} Submit post-lecture quiz
+
+* As per usual.
+
+{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week4, is_flat=false ) }}

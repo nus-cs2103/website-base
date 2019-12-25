@@ -1,0 +1,18 @@
+{% from "common/macros.njk" import embed_topic, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
+{% from "common/admin.njk" import admin_topics_to_read, faqs, policies, show_admin_summary, topics with context %}
+
+{% call show_admin_summary() %}
+1. Submit post-lecture quiz
+1. [optional] Submit mid-term feedback for the teaching team {{ timing_badge("by Sunday", "secondary") }}
+{% endcall %}
+
+
+#### {{ thumb(1) }} Submit post-lecture quiz
+
+* As per usual.
+
+#### {{ thumb(2) }} [optional] Submit mid-term feedback for the teaching team {{ timing_badge("by Sunday", "secondary") }}
+* **An anonymous survey to submit feedback about the teaching team** will open on LumiNUS around Monday. You will receive an email when it opens. Please take a few minutes to give feedback to your tutors.
+
+
+{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week6, is_flat=false ) }}
