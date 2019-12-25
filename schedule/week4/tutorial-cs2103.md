@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import thumb with context %}
-{% from "schedule/index.md" import show_week_pagetop with context%}
+{% from "schedule/index.md" import show_week_pagetop with context %}
 {{ show_week_pagetop(4, "tutorial") }}
 
 #### {{ thumb(1) }} **Discuss iP progress**

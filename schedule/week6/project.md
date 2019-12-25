@@ -1,4 +1,4 @@
-{% from "schedule/index.md" import show_week_pagetop, show_project_summary with context%}
+{% from "schedule/index.md" import show_week_pagetop, show_project_summary with context %}
 {{ show_week_pagetop(6, "project") }}
 
 {{ show_project_summary(ip_file="ip-w06.md", tp_file="project-w06-mid-v11.md") }}

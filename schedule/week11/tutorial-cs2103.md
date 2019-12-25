@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
-{% from "schedule/index.md" import show_week_pagetop with context%}
+{% from "schedule/index.md" import show_week_pagetop with context %}
 {{ show_week_pagetop(11, "tutorial") }}
 
 #### {{ thumb(1) }} Demo v1.3

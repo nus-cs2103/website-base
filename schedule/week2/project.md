@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import embed_topic, thumb with context %}
-{% from "schedule/index.md" import show_week_pagetop, show_project_summary with context%}
+{% from "schedule/index.md" import show_week_pagetop, show_project_summary with context %}
 {{ show_week_pagetop(2, "project") }}
 
 {{ show_project_summary(ip_file="ip-w02.md") }}

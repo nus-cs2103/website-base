@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import thumb, show_as_tab with context %}
 {% from "schedule/studentData.njk" import team_review_allocation with context %}
-{% from "schedule/index.md" import show_week_pagetop with context%}
+{% from "schedule/index.md" import show_week_pagetop with context %}
 {{ show_week_pagetop(5, "tutorial") }}
 
 #### {{ thumb(1) }} Discuss iP progress

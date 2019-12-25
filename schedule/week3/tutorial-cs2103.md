@@ -1,4 +1,4 @@
-{% from "schedule/index.md" import show_week_pagetop with context%}
+{% from "schedule/index.md" import show_week_pagetop with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 {{ show_week_pagetop(3, "tutorial") }}
 
