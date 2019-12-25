@@ -604,6 +604,15 @@ pageNav: {{ categories[category].pagenav }}
 
 {% endmacro %}
 
+
+{% macro show_week_index_page(week_num) %}
+{{ show_week_pagetop(week_num, "notices") }}
+
+<include src="notices-{{ module | lower }}.mbdf" optional />
+
+{{ show_week_summary(week_num) }}
+{% endmacro %}
+
 <!-- ============================= page content ============================================ -->
 
 <include src="week{{ current_weeks[0] }}/index.md" />

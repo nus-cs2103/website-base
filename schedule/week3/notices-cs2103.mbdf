@@ -1,6 +1,4 @@
-{% from "common/macros.njk" import embed_topic, timing_badge, show_as_tab with context %}
-{% from "schedule/index.md" import show_week_pagetop, show_week_summary with context%}
-{{ show_week_pagetop(3, "notices") }}
+{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
 
 <box type="warning" dismissible>
 
@@ -11,5 +9,3 @@
 Reminder about this warning from the previous week:
 <include src="../timeline.md#warnings" />
 </box>
-
-{{ show_week_summary(3) }}

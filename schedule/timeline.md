@@ -28,8 +28,5 @@ pageNav: 3
 
 ### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ weeks[week_num-1].day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_project, "project.html") }}{{ show_link(week_num, icon_tutorial, "tutorial-" + (module | lower) + ".html") }}{{ show_link(week_num, icon_info, "admin.html") }}
 
-<include src="week{{ week_num }}/notices-{{ module }}.md#summary" optional />
+<include src="week{{ week_num }}/index.md#summary" optional />
 {% endfor %}
-
-
-

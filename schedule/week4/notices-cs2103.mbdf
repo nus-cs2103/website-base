@@ -1,6 +1,4 @@
-{% from "schedule/index.md" import show_week_pagetop, show_week_summary with context%}
-{% from "common/macros.njk" import embed_topic with context%}
-{{ show_week_pagetop(4, "notices") }}
+{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
 
 <box dismissible>
 
@@ -14,5 +12,3 @@
 
 {{ embed_topic("../../admin/appendixD-help.md", "Admin " + icon_embedding + " Appendix D: How to Get Help", "4", indent="2") }}
 </box>
-
-{{ show_week_summary(4) }}
