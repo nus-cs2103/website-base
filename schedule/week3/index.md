@@ -1,3 +1,3 @@
 {% from "schedule/index.md" import show_week_index_page with context %}
-{{ show_week_index_page(3, "notices") }}
+{{ show_week_index_page(3) }}
 
