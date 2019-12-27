@@ -648,5 +648,5 @@ Topics allocated to the week will appear in this tab.
 
 <!-- ============================= page content ============================================ -->
 
-{% set week_to_show = "1" if current_week in ["-1", "0", "14"] else current_weeks %}
+{% set week_to_show = "1" if current_week in ["-1", "0", "14"] else current_week %}
 <include src="week{{ week_to_show }}/index.md" />
