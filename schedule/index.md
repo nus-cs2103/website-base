@@ -46,7 +46,7 @@ pageNav: 1
 14: site no longer used, lands in the module intro page
 1..13: site is active, lands in the week's schedule page
 #}
-{% set current_weeks = ["-1"] %}
+{% set current_week = "-1" %}
 
 
 {% set all_topics = [
@@ -635,7 +635,7 @@ pageNav: {{ categories[category].pagenav }}
 <div class="website-content">
 {{ show_week_pagetop(week_num, "topics") }}
 
-{% if "1" in current_weeks %}
+{% if current_week == "1" %}
 <box type="info" dismissible>
 
 Topics allocated to the week will appear in this tab.
@@ -648,5 +648,5 @@ Topics allocated to the week will appear in this tab.
 
 <!-- ============================= page content ============================================ -->
 
-{% set week_to_show = "1" if ("-1" in current_weeks or "0" in current_weeks or "14" in current_weeks) else current_weeks[0] %}
+{% set week_to_show = "1" if current_week in ["-1", "0", "14"] else current_weeks %}
 <include src="week{{ week_to_show }}/index.md" />

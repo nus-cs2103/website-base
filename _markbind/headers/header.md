@@ -1,8 +1,8 @@
-{% from "schedule/index.md" import weeks, current_weeks with context %}
+{% from "schedule/index.md" import weeks, current_week with context %}
 <header>
-{% if "-1" in current_weeks %}
+{% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is not ready yet! The updated version will be available soon.**</md></div >
-{% elif "14" in current_weeks %}
+{% elif current_week == "14" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is from a past semester! The current version is [here](http://www.comp.nus.edu.sg/~{{ module | lower }}).**</md></div>
 {% endif %}
 <navbar placement="top" type="dark">
@@ -10,7 +10,7 @@
   <dropdown text="Schedule" class="nav-link">
   <li><a href="{{baseUrl}}/schedule/timeline.html" class="dropdown-item"><md>**Full Timeline**</md></a></li>
 {% for week in weeks %}
-<li><a href="{{ baseUrl }}/schedule/week{{ week.num }}/index.html" class="dropdown-item"> <md>**Week {{ week.num }}** [{{ week.day }}] {% if current_weeks[0] == week.num %} :fas-arrow-circle-left:{% endif %}</md></a></li>
+<li><a href="{{ baseUrl }}/schedule/week{{ week.num }}/index.html" class="dropdown-item"> <md>**Week {{ week.num }}** [{{ week.day }}] {% if current_week == week.num %} :fas-arrow-circle-left:{% endif %}</md></a></li>
 {% endfor %}
   </dropdown>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
