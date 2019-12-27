@@ -9,6 +9,7 @@ pageNav: 3
 {% import "common/topics.njk" as topics with context %}
 {% from "schedule/index.md" import all_topics, weeks with context %}
 
+<div class="website-content">
 
 # Summary of the Module Timeline
 
@@ -30,3 +31,5 @@ pageNav: 3
 
 <include src="week{{ week_num }}/index.md#summary" optional />
 {% endfor %}
+
+</div>
