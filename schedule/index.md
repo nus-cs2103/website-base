@@ -1,8 +1,9 @@
 <frontmatter>
-title: "Full Schedule of Module Activities"
+title: "Schedule"
 header: header.md
 footer: footer.md
 head: scheduleHead.md
+pageNav: 1
 </frontmatter>
 
 {% import "common/topics.njk" as topics with context %}
@@ -606,22 +607,27 @@ pageNav: {{ categories[category].pagenav }}
 
 
 {% macro show_week_index_page(week_num) %}
+<div class="website-content">
 {{ show_week_pagetop(week_num, "notices") }}
 
 <include src="notices-{{ module | lower }}.mbdf" optional />
 
 {{ show_week_summary(week_num) }}
+</div>
 {% endmacro %}
 
 
 {% macro show_week_admin_page(week_num) %}
-{{ show_week_pagetop(1, "admin") }}
+<div class="website-content">
+{{ show_week_pagetop(week_num, "admin") }}
 
 <include src="admin-{{ module | lower }}.mbdf" optional />
+</div>
 {% endmacro %}
 
 
 {% macro show_week_topics_page(week_num) %}
+<div class="website-content">
 {{ show_week_pagetop(week_num, "topics") }}
 
 {% if "1" in current_weeks %}
@@ -631,6 +637,7 @@ Topics allocated to the week will appear in this tab.
 </box>
 {% endif %}
 {{ topics.show_week_schedule(week_num, all_topics) }}
+</div>
 {% endmacro %}
 
 
