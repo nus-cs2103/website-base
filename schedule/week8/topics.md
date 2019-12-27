@@ -1,6 +1,3 @@
-{% from "schedule/index.md" import show_week_pagetop with context %}
-{{ show_week_pagetop(8, "topics") }}
+{% from "schedule/index.md" import show_week_topics_page with context %}
 
-{% import "common/topics.njk" as topics with context %}
-{% from "schedule/index.md" import all_topics with context %}
-{{ topics.show_week_schedule("8", all_topics) }}
+{{ show_week_topics_page("8") }}

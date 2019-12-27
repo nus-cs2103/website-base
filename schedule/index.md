@@ -620,6 +620,20 @@ pageNav: {{ categories[category].pagenav }}
 <include src="admin-{{ module | lower }}.mbdf" optional />
 {% endmacro %}
 
+
+{% macro show_week_topics_page(week_num) %}
+{{ show_week_pagetop(week_num, "topics") }}
+
+{% if "1" in current_weeks %}
+<box type="info" dismissible>
+
+Topics allocated to the week will appear in this tab.
+</box>
+{% endif %}
+{{ topics.show_week_schedule(week_num, all_topics) }}
+{% endmacro %}
+
+
 <!-- ============================= page content ============================================ -->
 
 <include src="week{{ current_weeks[0] }}/index.md" />
