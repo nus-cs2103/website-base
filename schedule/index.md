@@ -40,8 +40,13 @@ pageNav: 1
     {num: "13", day: "Apr 13" }
 ] %}
 
-
-{% set current_weeks = ["1"] %}
+{#
+-1: site not ready, lands in the module intro page
+0: site ready but semester hasn't started, lands in the module intro page
+14: site no longer used, lands in the module intro page
+1..13: site is active, lands in the week's schedule page
+#}
+{% set current_weeks = ["-1"] %}
 
 
 {% set all_topics = [
@@ -643,4 +648,5 @@ Topics allocated to the week will appear in this tab.
 
 <!-- ============================= page content ============================================ -->
 
-<include src="week{{ current_weeks[0] }}/index.md" />
+{% set week_to_show = "1" if ("-1" in current_weeks or "0" in current_weeks or "14" in current_weeks) else current_weeks[0] %}
+<include src="week{{ week_to_show }}/index.md" />
