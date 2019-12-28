@@ -534,7 +534,7 @@ pageNav: 1
   notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
   topics: {name: "Topics", file: "topics", icon: icon_book, pagenav: 3},
   project: {name: "Project", file: "project", icon: icon_project, pagenav: 4},
-  tutorial: {name: "Tutorial", file: "tutorial-" + (module | lower), icon: icon_tutorial, pagenav: 4},
+  tutorial: {name: "Tutorial", file: "tutorial", icon: icon_tutorial, pagenav: 4},
   admin: {name: "Admin Info", file: "admin", icon: icon_info, pagenav: 4}
 } %}
 
@@ -642,6 +642,21 @@ Topics allocated to the week will appear in this tab.
 </box>
 {% endif %}
 {{ topics.show_week_schedule(week_num, all_topics) }}
+</div>
+{% endmacro %}
+
+
+{% macro show_week_tutorial_page(week_num) %}
+<div class="website-content">
+{{ show_week_pagetop(week_num, "tutorial") }}
+
+{% if current_week == "1" %}
+<box type="info" dismissible>
+
+Information relevant to the week's tutorial will appear in this tab.
+</box>
+{% endif %}
+<include src="tutorial-{{ module | lower }}.mbdf" optional />
 </div>
 {% endmacro %}
 
