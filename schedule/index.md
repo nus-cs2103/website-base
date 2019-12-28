@@ -661,6 +661,21 @@ Information relevant to the week's tutorial will appear in this tab.
 {% endmacro %}
 
 
+{% macro show_week_project_page(week_num) %}
+<div class="website-content">
+{{ show_week_pagetop(week_num, "project") }}
+
+{% if current_week == "1" %}
+<box type="info" dismissible>
+
+In future weeks, project-related information relevant to the week will appear in this tab.
+</box>
+{% endif %}
+<include src="project-{{ module | lower }}.mbdf" optional />
+</div>
+{% endmacro %}
+
+
 <!-- ============================= page content ============================================ -->
 
 {% set week_to_show = "1" if current_week in ["-1", "0", "14"] else current_week %}

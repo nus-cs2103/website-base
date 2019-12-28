@@ -29,7 +29,7 @@
       "searchable": "no"},
     {"glob": "schedule/**/topics.md",
       "searchable": "no"},
-    {"glob": "schedule/**/tutorial*.md",
+    {"glob": "schedule/**/tutorial.md",
       "searchable": "no"},
     {"glob": "coding-standards/**/*.mbd"},
     {"glob": "book/about/acknowledgements.md"},
