@@ -37,4 +37,3 @@
 
 {{ find_priority("uml", ["classDiagrams", "introduction", "what"]) }}
 {{ find_priority("softwareEngineering", ["introduction", "prosAndCons"]) }}
-{{ find_priority("javaTools", ["varargs"]) }}
