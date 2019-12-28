@@ -8,7 +8,9 @@
 
 <span id="period">2020 Jan-Apr</span>
 
-<span id="edition_badge"><small><small><small><span class='badge badge-pill badge-success'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
+<span id="module_color">success</span>
+
+<span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 
