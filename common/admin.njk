@@ -214,7 +214,7 @@ week13: []
 {% macro show_title(current_topic_id, topics) -%}
 {% for topic in topics  %}
 {% if topic.id == current_topic_id %}
-{% set hashes = "#" if topic.level == 1 else "##" %}
+{% set hashes = "#" %}
 <markdown>{{ hashes }} {{ topic.title }} <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) }} {% for tag in topic.tags %}<span class="badge badge-pill badge-light ">#{{ tag }}</span> {% endfor %}</span></markdown>
 {% endif %}
 {% endfor %}
