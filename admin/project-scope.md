@@ -7,36 +7,63 @@
 
 <div id="project-direction">
 
-* You can take one of these two directions, ==both of which are equally acceptable==:
-  * **[Direction 1]  _Optimize_** AddressBook for a more specific target user group:
-   
-  <panel type="seamless" header="%%{{ icon_example }} Examples for the _optimize_ direction%%">
-     
-  An AddressBook,
-     * for users in a specific profession %%e.g. doctors, salesmen, teachers, etc.%%
-     * based on the nature/scale of contacts %%e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)%%
-     * based on what users do with the contacts %%e.g. organize group events, share info, do business, do analytics%%   
-     
-  </panel><p/>
+You can take one of these two directions, ==both of which are equally acceptable==:
 
+#### <span class="badge badge-dark">Direction 1</span> _Optimize_
 
-  * **[Direction 2] _Morph_** AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.
-   
-  <panel type="seamless" header="%%{{ icon_example }} Examples for the _morph_ direction%%">
-     
-  An app to manage, 
-  * Bookmarks of websites
-  * Tasks/Schedule
-  * Location info
-  * Thing to memorize i.e. flash cards, trivia
-  * Forum posts, news feeds, Social media feeds
-  * Online projects or issue trackers that the user is interested in
-  * Emails, possibly from different accounts
-  * Multiple types of related things %%e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
-     
-  </panel><p/>
+* Optimize the AddressBook for a more specific target user group. 
 
+<div class="indented-level2">
+
+<panel type="seamless" header="{{ icon_example }} Examples for the _optimize_ direction" minimized>
+
+An AddressBook,
+  * for users in a specific profession %%e.g. doctors, salesmen, teachers, etc.%%
+  * based on the nature/scale of contacts %%e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)%%
+  * based on what users do with the contacts %%e.g. organize group events, share info, do business, do analytics%%   
+</panel><p/>
 </div>
+
+* **The expected level of functionality** from a 5-person team is equivalent to the functionality of the fictional ABX app given below:
+  * Existing AB3 features are optimized to the new target user group.
+  * Person objects are enhanced to contain more details.
+  * There are a handful of new functionality that are specific to the target user group.
+
+#### <span class="badge badge-dark">Direction 2</span> _Morph_
+
+* **Morph the AddressBook into a different product**: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else. Examples: 
+
+<div class="indented-level2">
+
+<panel type="seamless" header="{{ icon_example }} Examples for the _morph_ direction" minimized>
+   
+An app to manage, 
+* Bookmarks of websites
+* Tasks/Schedule
+* Location info
+* Thing to memorize i.e. flash cards, trivia
+* Forum posts, news feeds, Social media feeds
+* Online projects or issue trackers that the user is interested in
+* Emails, possibly from different accounts
+* Multiple types of related things %%e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
+   
+</panel><p/>
+</div>
+
+* **The expected level of functionality** from a 5-person team is equivalent to the functionality of the fictional FooBar app given below:
+  * FooBar is similar to AB3, but keeps track of two different types of entities Foo entities and Bar entities.
+  * Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.
+  * In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a handful of FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.
+</div>
+
+<box>
+
+{{ icon_tip }} **For both directions:**
+* Put in another way, a 5-person team is expected to roughly ==double the value provided by AB3==. Adding a lot more features than that is unlikely to increase your marks. Instead, spend that effort on increasing the quality of your features.
+* If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
+  * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)
+  * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
+</box>
 
 ### <div class="text-white bg-dark p-1">Target User</div>
 
@@ -59,6 +86,18 @@
 
 * **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the the user's life easier?
 <p/>
+
+<span id="team-expectations">
+
+### <div class="text-white bg-success p-1">{{ icon_team }} Team Expectations</div>
+
+* <span class="badge badge-success">Expectation</span> <span class="text-success">**Preserve _product integrity_**</span> i.e. ensure,
+  1. features fit together to form a cohesive product,
+  1. documentation follows a consistent style and presents a cohesive picture to the reader, and
+  1. final project demo presents a cohesive picture to the audience.
+* <span class="badge badge-success">Expectation</span> <span class="text-success">**Maintain product quality**</span> i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
+* <span class="badge badge-success">Expectation</span> <span class="text-success">**Manage the project**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
+</span>
 
 ### <div class="text-white bg-info p-1">{{ icon_individual }} Individual Expectations</div>
 
@@ -88,13 +127,6 @@
 
 * **Tip: Divide the components of the product among team members**. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
 
-<box>
-
-**:thinking: How much code to write?** The project grade depends on the value you added, as perceived by evaluators (i.e., team members, peer evaluators, and tutors) as well as other factors such as the quality of the code. As such, there is no strong correlation between the LoC and the grade. For instance, in a recent semester, a student who wrote 500 LoC of <tooltip content="i.e., excluding test code and documentation">functional code</tooltip> was able to reach top 20% (in terms of project marks), another who wrote 900 LoC reached the top 10%, while another who wrote more than 5000 LoC ended up in the bottom 10%. Also see the the percentiles of functional LoC  written by that batch of students, given below:
-  Percentile | 25    | 50    |  75 
-  -----------|-------|-------|----
-  LoC        | ~1000 | ~1500 | ~2500
-</box>
 
 #### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Documentation</span>
 
@@ -111,11 +143,14 @@
 
 * <span class="badge badge-info">Expectation</span> <span class="text-info">**Write _some_ automated tests**</span> so that we can evaluate your ability to write tests.
 
+<div class="indented">
+
 <box>
 
 **:thinking: How much testings is enough?** We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br>
 There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. ==The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.==
 </box>
+</div>
 
 </div>
 
@@ -129,7 +164,7 @@ There is no requirement for a minimum coverage level. Note that in a production 
 
 _Team-tasks_ are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
 
-<panel type="seamless" header="%%{{ icon_example }} Examples of team-tasks%%">
+<panel type="seamless" header="{{ icon_example }} Examples of team-tasks">
 
 <span id="example-team-tasks">
 
@@ -184,18 +219,6 @@ This is a non-exhaustive list; you may define additional roles.
 * <span class="badge badge-info">Expectation</span> <span class="text-info">**Review each others work**.</span> %%Reason: reviewing skills is a learning outcome, and it is mutually beneficial.%%
 
 </div>
-<span id="team-expectations">
-
-### <div class="text-white bg-success p-1">{{ icon_team }} Team Expectations</div>
-
-* <span class="badge badge-success">Expectation</span> <span class="text-success">**Preserve _product integrity_**</span> i.e. ensure,
-  1. features fit together to form a cohesive product,
-  1. documentation follows a consistent style and presents a cohesive picture to the reader, and
-  1. final project demo presents a cohesive picture to the audience.
-* <span class="badge badge-success">Expectation</span> <span class="text-success">**Maintain product quality**</span>** i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
-* <span class="badge badge-success">Expectation</span> <span class="text-success">**Manage the project**</span>** i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
-</span>
-
 
 </div>
 {% endmacro %}
