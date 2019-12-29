@@ -2,6 +2,6 @@
 
 {{ show_project_summary(tp_file="project-w12-mid-v14.md") }}
 
-# tP: mid-v1.4
+## tP: mid-v1.4
 
 <include src="../../admin/project-w12-mid-v14.md#body" />

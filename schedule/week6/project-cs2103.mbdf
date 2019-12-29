@@ -2,13 +2,13 @@
 
 {{ show_project_summary(ip_file="ip-w06.md", tp_file="project-w06-mid-v11.md") }}
 
-# iP
+## iP
 
 <include src="../../admin/ip-w06.md#body" />
 
 <br>
 {{ hr_double }}
 
-# tP: mid-v1.1
+## tP: mid-v1.1
 
 <include src="../../admin/project-w06-mid-v11.md#body" />

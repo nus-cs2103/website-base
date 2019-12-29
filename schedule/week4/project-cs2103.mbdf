@@ -2,13 +2,13 @@
 
 {{ show_project_summary(ip_file="ip-w04.md", tp_file="project-w04-inception.md") }}
 
-# iP
+## iP
 
 <include src="../../admin/ip-w04.md#body" />
 
 <br>
 {{ hr_double }}
 
-# tP: Inception
+## tP: Inception
 
 <include src="../../admin/project-w04-inception.md#body" />
