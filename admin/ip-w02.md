@@ -16,6 +16,16 @@
 iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
 </box>
 
+#### {{ thumb(0) }} Learn about the project
+
+**Read the following two sections**, if you haven't done so already:
+
+<div class="indented">
+
+{{ embed_topic("ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3") }}
+{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1") }}
+</div>
+
 #### {{ thumb(1) }} Set up prerequisites
 
 **Ensure you have met the following prerequisites:**

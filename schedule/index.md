@@ -586,7 +586,7 @@ pageNav: {{ categories[category].pagenav }}
 
 **Admin:**
 <include src="admin-{{ module | lower }}.mbdf#summary" optional/>
-<include src="project.md#summary" optional/>
+<include src="project-{{ module | lower }}.mbdf#summary" optional/>
 
   </div>
   </div>

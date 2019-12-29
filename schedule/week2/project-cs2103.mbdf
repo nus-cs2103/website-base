@@ -1,16 +1,7 @@
-{% from "common/macros.njk" import embed_topic, thumb with context %}
 {% from "schedule/index.md" import show_project_summary with context %}
 
-We'll be starting the individual project (iP) this week.
+{{ show_project_summary(ip_file="ip-w02.md") }}
 
-#### {{ thumb(0) }} Learn about the project
-
-**Read the following two sections**, if you haven't done so already:
-
-<div class="indented">
-
-{{ embed_topic("../../admin/ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3") }}
-{{ embed_topic("../../admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1") }}
-</div>
+## iP
 
 <include src="../../admin/ip-w02.md#body" />
