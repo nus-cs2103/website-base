@@ -127,9 +127,9 @@ void setFound(boolean isFound);
 
 %%{{ icon_info }} Rationale: This is the naming convention for boolean methods and variables used by Java core packages. It also makes the code read like%% normal English e.g. `if(isOpen) ...`
 
-<div tags="level--intermediate">
+<div tags="level--basic">
 
-**:star::star: Plural form should be used on names representing a collection of objects.**
+**:star: Plural form should be used on names representing a collection of objects.**
 
 ```java
 Collection<Point> points;
@@ -867,9 +867,9 @@ You MUST write header comments for all classes, public methods.
 
 </div>
 <div tags="level--intermediate-only">{{ pagebreak }}</div>
-<div tags="level--intermediate">
+<div tags="level--basic">
 
-**:star::star: Javadoc comments should have the following form:**
+**:star: Javadoc comments should have the following form:**
 
 ```java
 /**
