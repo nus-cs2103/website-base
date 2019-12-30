@@ -123,7 +123,7 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 * Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs.
 
 <modal title="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
-  <include src="project-scope.md#testing-expectations"/>
+  <include src="project-expectations.md#testing-expectations"/>
 </modal>
 </div>
 

@@ -42,7 +42,7 @@ Update the following pages in your project repo:
 </modal>
 
 <modal large title="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
-  <include src="project-scope.md#roles"/>
+  <include src="project-expectations.md#roles"/>
 </modal>
 
 * **_Contact Us_ Page**: Update to match your product.

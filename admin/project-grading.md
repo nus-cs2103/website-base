@@ -85,7 +85,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 1. your test code %%(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)%%
 
 <modal large title="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations">
-  <include src="project-scope.md#testing-expectations"/>
+  <include src="project-expectations.md#testing-expectations"/>
 </modal>
 
 <box>
@@ -162,7 +162,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Evaluates:** How much you contributed to team-tasks
 
-{{ embed_topic("project-scope.md#example-team-tasks", "Admin " + icon_embedding + " tP Scope → Examples of team-tasks", "3", indent="1") }}
+{{ embed_topic("project-expectations.md#example-team-tasks", "Admin " + icon_embedding + " tP Scope → Examples of team-tasks", "3", indent="1") }}
 
 **Based on:** peer evaluations, tutor observations
 

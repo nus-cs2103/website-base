@@ -2,42 +2,13 @@
 <div id="main">
 
 <span class="keyword d-none">project expectations</span>
+<span id="project-direction">
 
-### <div class="text-white bg-dark p-1">Project Direction</div>
+### <div class="text-white bg-dark p-1">Direction</div>
 
-<div id="project-direction">
 
-You can take one of these two directions, ==both of which are equally acceptable==:
-
-#### <span class="badge badge-dark">Direction 1</span> _Optimize_
-
-* Optimize the AddressBook for a more specific target user group. 
-
-<div class="indented-level2">
-
-<panel type="seamless" header="{{ icon_example }} Examples for the _optimize_ direction" minimized>
-
-An AddressBook,
-  * for users in a specific profession %%e.g. doctors, salesmen, teachers, etc.%%
-  * based on the nature/scale of contacts %%e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)%%
-  * based on what users do with the contacts %%e.g. organize group events, share info, do business, do analytics%%   
-</panel><p/>
-</div>
-
-* **The expected level of functionality** from a 5-person team is equivalent to the functionality of the fictional ABX app given below:
-  * Existing AB3 features are optimized to the new target user group.
-  * Person objects are enhanced to contain more details.
-  * There are a handful of new functionality that are specific to the target user group.
-
-#### <span class="badge badge-dark">Direction 2</span> _Morph_
-
-* **Morph the AddressBook into a different product**: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else. Examples: 
-
-<div class="indented-level2">
-
-<panel type="seamless" header="{{ icon_example }} Examples for the _morph_ direction" minimized>
-   
-An app to manage, 
+**You may evolve the <tooltip content="AddressBook-Level3">AB3</tooltip> any direction you wish.** For example, an app to manage one of these: 
+* Contact details
 * Bookmarks of websites
 * Tasks/Schedule
 * Location info
@@ -46,28 +17,37 @@ An app to manage,
 * Online projects or issue trackers that the user is interested in
 * Emails, possibly from different accounts
 * Multiple types of related things %%e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
-   
-</panel><p/>
-</div>
+* ...
+</span>
+<span id="project-functionality">
 
-* **The expected level of functionality** from a 5-person team is equivalent to the functionality of the fictional FooBar app given below:
-  * FooBar is similar to AB3, but keeps track of two different types of entities Foo entities and Bar entities.
+### <div class="text-white bg-dark p-1">Functionality</div>
+
+**The expected level of functionality from a 5-person team is roughly ==double of AB3 functionality==**. Some examples:
+* Example 1: A fictional contact management app optimized for a specific target user group:
+  * Existing AB3 features are optimized to the new target user group.
+  * Person objects are enhanced to contain more details.
+  * There are a 4-5 new functionality that are specific to the target user group.
+* Example 2: a FooBar app that keeps track of two different types of entities _Foo_ entities and _Bar_ entities.
   * Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.
-  * In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a handful of FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.
-</div>
+  * In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a 4-5 FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.
 
 <box>
 
-{{ icon_tip }} **For both directions:**
-* Put in another way, a 5-person team is expected to roughly ==double the value provided by AB3==. Adding a lot more features than that is unlikely to increase your marks. Instead, spend that effort on increasing the quality of your features.
-* If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
+{{ icon_tip }} If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
   * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)
   * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
 </box>
 
-### <div class="text-white bg-dark p-1">Target User</div>
+<box type="important">
 
-* **Define a very specific target user profile.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
+Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. ==Adding more functionality than the expected level will not increase your marks==. You are better off spending that effort in improving other aspects of the project.
+</box>
+</span>
+
+### <div class="text-white bg-dark p-1">Target User & Value Proposition</div>
+
+* **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
  {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/project-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing over mouse actions%%.
 
 <div class="indented-level2">
@@ -79,13 +59,16 @@ An app to manage,
 </panel>
 </div>
 
-* **The product should be optimized for the chosen target users** %%i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to {{ module_pair }} instructors only, such as the ability to navigate to a student's project on GitHub%%<br>
+* **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the the user's life easier?
+* **Optimize the product to the chosen target users** i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). 
+  * Example 1: If the product targets {{ module_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to navigate to a student's project on GitHub%% 
+  * Example 2: If your app manages contacts, you can optimize its features based on,
+    * the profession of the target user %%e.g. doctors, salesmen, teachers, etc.%%
+    * the nature/scale of contacts %%e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)%%
+    * what users do with the contacts %%e.g. organize group events, share info, do business, do analytics%%
+
     {{ icon_tip }} Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
 
-### <div class="text-white bg-dark p-1">Value Proposition</div>
-
-* **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the the user's life easier?
-<p/>
 
 <span id="team-expectations">
 
@@ -225,4 +208,4 @@ This is a non-exhaustive list; you may define additional roles.
 
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-scope", show_main_text) }}
+{{ show_admin_page("project-expectations", show_main_text) }}

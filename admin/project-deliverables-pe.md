@@ -106,7 +106,7 @@ For reference, the AB3 DG is [here](https://se-education.org/addressbook-level3/
 <p/>
 <div id="projectGrading-effort-instructions">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **If the implementation effort required to create AB3 from scratch is 10, the estimated implementation effort of this project is,** [`0`..`30`]
+<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **If the implementation effort required to create AB3 from scratch is 10, the estimated implementation effort of this team is,** [`0`..`20`] e.g., if you give `8`, that means the team's effort is about 80% of that spent on creating AB3. We expect most typical teams to score near to `10`.
 * Do read the DG appendix named `Effort`, if any.
 * ==Consider implementation work only (i.e., exclude testing, documentation, project management etc.)==
 * Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==

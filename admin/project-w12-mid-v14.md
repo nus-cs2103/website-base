@@ -38,7 +38,7 @@
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 
 <div class="indented-level2">
-{{ embed_topic("project-scope.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → Expectation on testing", "3") }}
+{{ embed_topic("project-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → Expectation on testing", "3") }}
 </div>
 
 * **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level.

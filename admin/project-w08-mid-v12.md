@@ -25,8 +25,8 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-scope.md#individualExpectations", "Admin " + icon_embedding + " tP Scope: Individual Expectations", "3") }}
-{{ embed_topic("project-scope.md#team-expectations", "Admin " + icon_embedding + " tP Scope: Team Expectations", "3") }}
+{{ embed_topic("project-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP Scope: Individual Expectations", "3") }}
+{{ embed_topic("project-expectations.md#team-expectations", "Admin " + icon_embedding + " tP Scope: Team Expectations", "3") }}
 </div>
 
 
