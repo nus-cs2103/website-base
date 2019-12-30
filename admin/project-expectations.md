@@ -6,8 +6,18 @@
 
 ### <div class="text-white bg-dark p-1">Direction</div>
 
+In this semester, we are going to start with [an AddressBook application](https://se-edu.github.io/addressbook-level3/).
 
-**You may evolve the <tooltip content="AddressBook-Level3">AB3</tooltip> any direction you wish.** For example, an app to manage one of these: 
+<img src="https://github.com/se-edu/addressbook-level3/raw/master/docs/images/Ui.png" width="600"/>
+<p/>
+
+This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, ==Command Line Interface (CLI) is the primary mode of input.== 
+
+{{ embed_topic("project-constraints.md#Constraint-Typing-Preferred", "Admin " + icon_embedding + " tP Contstraints → Constraint-Typing-Preferred", "2", indent="1") }}
+{{ embed_topic("project-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Contstraints → Recommendation-CLI-First", "2", indent="1") }}
+<p/>
+
+**You may evolve/morph the <tooltip content="AddressBook-Level3">AB3</tooltip> any direction you wish.** For example, an app to manage one of these: 
 * Contact details
 * Bookmarks of websites
 * Tasks/Schedule
@@ -18,31 +28,6 @@
 * Emails, possibly from different accounts
 * Multiple types of related things %%e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
 * ...
-</span>
-<span id="project-functionality">
-
-### <div class="text-white bg-dark p-1">Functionality</div>
-
-**The expected level of functionality from a 5-person team is roughly ==double of AB3 functionality==**. Some examples:
-* Example 1: A fictional contact management app optimized for a specific target user group:
-  * Existing AB3 features are optimized to the new target user group.
-  * Person objects are enhanced to contain more details.
-  * There are a 4-5 new functionality that are specific to the target user group.
-* Example 2: a FooBar app that keeps track of two different types of entities _Foo_ entities and _Bar_ entities.
-  * Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.
-  * In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a 4-5 FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.
-
-<box>
-
-{{ icon_tip }} If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
-  * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)
-  * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
-</box>
-
-<box type="important">
-
-Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. ==Adding more functionality than the expected level will not increase your marks==. You are better off spending that effort in improving other aspects of the project.
-</box>
 </span>
 
 ### <div class="text-white bg-dark p-1">Target User & Value Proposition</div>
@@ -69,8 +54,32 @@ Note that we have reduced the tP functionality expectations for this semester by
 
     {{ icon_tip }} Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
 
+<span id="functionalityExpectations">
 
-<span id="team-expectations">
+### <div class="text-white bg-danger p-1">Functionality Expectations</div>
+
+**The expected level of functionality from a 5-person team is roughly the ==equivalent effort taken to create AB3==**. Some examples meeting that criterion:
+* Example 1: A fictional contact management app optimized for a specific target user group:
+  * Existing AB3 features are optimized to the new target user group.
+  * Person objects are enhanced to contain more details.
+  * There are a 4-5 new functionality that are specific to the target user group.
+* Example 2: a FooBar app that keeps track of two different types of entities _Foo_ entities and _Bar_ entities.
+  * Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.
+  * In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a 4-5 FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.
+
+<box>
+
+{{ icon_tip }} If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
+  * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)
+  * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
+</box>
+
+<box type="important">
+
+Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. ==Adding more functionality than the expected level will not increase your marks==. You are better off spending that effort in improving other aspects of the project.
+</box>
+</span>
+<span id="teamExpectations">
 
 ### <div class="text-white bg-success p-1">{{ icon_team }} Team Expectations</div>
 
@@ -82,9 +91,9 @@ Note that we have reduced the tP functionality expectations for this semester by
 * <span class="badge badge-success">Expectation</span> <span class="text-success">**Manage the project**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
 </span>
 
-### <div class="text-white bg-info p-1">{{ icon_individual }} Individual Expectations</div>
+<span id="individualExpectations">
 
-<div id="individualExpectations">
+### <div class="text-white bg-info p-1">{{ icon_individual }} Individual Expectations</div>
 
 #### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Implementation</span>
 
@@ -201,7 +210,7 @@ This is a non-exhaustive list; you may define additional roles.
 
 * <span class="badge badge-info">Expectation</span> <span class="text-info">**Review each others work**.</span> %%Reason: reviewing skills is a learning outcome, and it is mutually beneficial.%%
 
-</div>
+</span>
 
 </div>
 {% endmacro %}

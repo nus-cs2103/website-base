@@ -162,7 +162,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Evaluates:** How much you contributed to team-tasks
 
-{{ embed_topic("project-expectations.md#example-team-tasks", "Admin " + icon_embedding + " tP Scope → Examples of team-tasks", "3", indent="1") }}
+{{ embed_topic("project-expectations.md#example-team-tasks", "Admin " + icon_embedding + " tP → Expectations: Examples of team-tasks", "3", indent="1") }}
 
 **Based on:** peer evaluations, tutor observations
 

@@ -24,7 +24,6 @@ Given below are some guidance on the recommended progress at this point of the p
 <div class="indented-level2">
 
 {{ embed_topic("project-overview.md#main", "Admin " + icon_embedding + " **tP: Overview**", "3") }}
-{{ embed_topic("project-product.md#main", "Admin " + icon_embedding + " **tP: Product**", "3") }}
 
 </div>
 
@@ -34,7 +33,7 @@ Given below are some guidance on the recommended progress at this point of the p
 
 <div class="indented-level2">
 
-{{ embed_topic("project-expectations.md#main", "Admin " + icon_embedding + " **tP: Scope**", "3") }}
+{{ embed_topic("project-expectations.md#main", "Admin " + icon_embedding + " **tP: Expectations**", "3") }}
 {{ embed_topic("project-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3") }}
 {{ embed_topic("project-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3") }}
 
