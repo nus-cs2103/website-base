@@ -202,11 +202,9 @@ This is a non-exhaustive list; you may define additional roles.
 </panel><p/>
 
 {{ icon_tip }} Ensure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but **for each aspect there should be one person who is unequivocally the person responsible for it**. %%Reason: when _everyone is responsible for everything_, no one is.%%
+</span>
 </box>
 </div>
-
-
-</span>
 
 * <span class="badge badge-info">Expectation</span> <span class="text-info">**Review each others work**.</span> %%Reason: reviewing skills is a learning outcome, and it is mutually beneficial.%%
 
