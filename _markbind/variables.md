@@ -4,7 +4,8 @@
 
 <span id="module_name">Software Engineering</span>
 
-<span id="semester">AY1920S2</span>
+<span id="S">2</span>
+<span id="semester">AY1920S{{ S }}</span>
 
 <span id="period">2020 Jan-Apr</span>
 

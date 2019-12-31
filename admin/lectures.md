@@ -3,13 +3,20 @@
 
 <img src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%">
 
-**Timing/venue**: 
+**Timing/venue**:
 
-Semester               | Module   | Venue            | Time 
+{% set sem1_lectures %}
+{{ module }}   | LT19             | **1200**-1400
+{{ module }}T  | ICube Auditorium | **1600**-1800
+{% endset %}
+{% set sem2_lectures %}
+{{ module }}/T | ICube Auditorium | **1400**-1600
+{% endset %}
+{% set lectures = (sem1_lectures | trim) if S == "1" else (sem2_lectures | trim) %}
+
+Module   | Venue            | Time
 ---------------------- | -------- | ---------------- |---------------
-Semester 1 (Aug-Nov)   | CS2103   | LT19             | **1200**-1400
-Semester 1 (Aug-Nov)   | CS2103T  | ICube Auditorium | **1600**-1800
-Semester 2 (Jan-April) | CS2103/T | ICube Auditorium | **1400**-1600
+{{ lectures }}
 
 Lectures start on time sharp and end around 15 minutes before official end time.
 
