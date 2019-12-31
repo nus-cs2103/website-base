@@ -7,15 +7,14 @@
 
 <box>
 
-{{ icon_important_big_red }} Our tutorial IDs are different from LumiNUS. Format: `CS2103T-W09` means a tutorial of `CS2103T` module, held on `Wednesday` at `0900`, and so on.
+{{ icon_important_big_red }} Our tutorial IDs are different from LumiNUS. Format: `{{ module }}T-W09` means a tutorial of `{{ module }}T` module, held on `Wednesday` at `0900`, and so on.
 
 </box>
 
 <variable name="cs2103"><span class="badge badge-info">&nbsp;CS2103&nbsp;</span></variable>
 <variable name="cs2103t"><span class="badge badge-warning">CS2103T</span></variable>
 
-Module        | Venue             | Time               | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors
---------------|-------------------|--------------------|-------------|----------------- | ------
+{% set sem1_tutorials %}
 {{ cs2103t }} | COM1-0210 (SR 10) | **W**ed  **11**:00 | ~~%%G01%%~~ | **`CS2103T-W11`**| Damith, Yuan Chuan
 {{ cs2103t }} | COM1-0210 (SR 10) | **W**ed  **12**:00 | ~~%%G02%%~~ | **`CS2103T-W12`**| Joanne, Andrew
 {{ cs2103t }} | COM1-0210 (SR 10) | **W**ed  **13**:00 | ~~%%G03%%~~ | **`CS2103T-W13`**| Jacob, Benjamin
@@ -36,6 +35,17 @@ Module        | Venue             | Time               | ~~%%Tutorial ID<br>in L
 {{ cs2103t }} | COM1-0210 (SR 10) | **F**ri  **12**:00 | ~~%%G08%%~~ | **`CS2103T-F12`**| Ayush, Yash
 {{ cs2103t }} | COM1-0210 (SR 10) | **F**ri  **13**:00 | ~~%%G07%%~~ | **`CS2103T-F13`**| LongBin, Yash
 {{ cs2103t }} | COM1-0210 (SR 10) | **F**ri  **14**:00 | ~~%%G09%%~~ | **`CS2103T-F14`**| Alfred, Yash
+{% endset %}
+{% set sem2_tutorials %}
+{{ cs2103t }} | - | - | - | - | -
+{{ cs2103t }} | - | - | - | - | -
+{{ cs2103 }} | - | - | - | - | -
+{% endset %}
+{% set tutorials = (sem1_tutorials | trim) if S == "1" else (sem2_tutorials | trim) %}
+
+Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors
+-------|-------|------|------------------------------------------------------------|----------------------------------------|-------
+{{ tutorials }}
 
 
 </div>
@@ -88,7 +98,7 @@ Module        | Venue             | Time               | ~~%%Tutorial ID<br>in L
 
 **Grading:**
 
-Tutorials are not graded. However, your conduct will be reviewed by team members and the tutor which will determine your participation marks.
+Your conduct in tutorials be evaluated by team members and the tutor which can affect your participation marks.
 
 <div id="exchangeStudentTutorialSignup">
 
