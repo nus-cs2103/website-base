@@ -28,12 +28,12 @@ pageNav: 4
 
 
 {% macro show_previous(topic)-%}
-<span class="float-left algolia-no-index"><b-btn variant="light" href="{{ topic.link }}"><md>:far-arrow-alt-circle-left: {{ topic.title }}</md></b-btn></span>
+<span class="float-left algolia-no-index"><b-btn variant="light" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>:far-arrow-alt-circle-left: {{ topic.title }}</md></b-btn></span>
 {%- endmacro %}
 
 
 {% macro show_next(topic)-%}
-<span class="float-right algolia-no-index"><b-btn variant="light" href="{{ topic.link }}"><md>{{ topic.title }} :far-arrow-alt-circle-right:</md></b-btn></span>
+<span class="float-right algolia-no-index"><b-btn variant="light" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>{{ topic.title }} :far-arrow-alt-circle-right:</md></b-btn></span>
 {%- endmacro %}
 
 

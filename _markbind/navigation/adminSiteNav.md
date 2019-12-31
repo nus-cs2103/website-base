@@ -8,9 +8,9 @@
 {% set decoration = "==" if topic.highlight else "" %} 
 {% set title = decoration + topic.title + decoration %} 
 {% if topic.level == 1%} 
-* [{{ title }}]({{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}
+* [{{ title }}]({{ baseUrl }}/admin/{{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}
 {% elif topic.level == 2 %}
-  * <small>[{{ title }}]({{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}</small>
+  * <small>[{{ title }}]({{ baseUrl }}/admin/{{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}</small>
 {% elif topic.level == 0 %}
 * {{ title }} :expanded:
 {% elif topic.level == -1 %}
