@@ -32,7 +32,7 @@
     <li><a href="{{baseUrl}}/admin/ip-showcase.html" class="dropdown-item"><md>:fas-th-list: iP Showcase</md></a></li>
     <hr>
     <md>**&nbsp;Team Project (tP):**</md>
-    <li><a href="{{baseUrl}}/admin/project-overview.html" class="dropdown-item"><md>{{ icon_project }} Team Project Info</md></a></li>
+    <li><a href="{{baseUrl}}/admin/project-expectations.html" class="dropdown-item"><md>{{ icon_project }} Team Project Info</md></a></li>
     <li><a href="{{team_IDs_page}}" target="_blank" class="dropdown-item"><md>:glyphicon-list-alt: Team IDs</md></a></li>
     <li><a href="{{module_org}}/addressbook-level3" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Addressbook-level3</md></a></li>
     <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Addressbook-level 1,2,4</md></a></li>

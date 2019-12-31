@@ -20,13 +20,6 @@ Given below are some guidance on the recommended progress at this point of the p
 
 #### {{ thumb(2) }} Decide on a overall project direction %%(user profile, problem addressed)%%
 
-* **Learn about the tP**
-<div class="indented-level2">
-
-{{ embed_topic("project-overview.md#main", "Admin " + icon_embedding + " **tP: Overview**", "3") }}
-
-</div>
-
 * **Decide project direction, target user profile, and problem addressed** {{ timing_badge("before the tutorial", "secondary") }}
 
   Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:

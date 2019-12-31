@@ -2,11 +2,22 @@
 <div id="main">
 
 <span class="keyword d-none">project expectations</span>
+
+### <div class="text-white bg-dark p-1">Outcomes</div>
+
+The high-level learning outcome of the team project (tP):
+
+<box> {{ icon_outcome }} Can contribute production quality SE work to a small/medium software project </box>
+
+Accordingly, the tP is structured to resemble an intermediate stage of a non-trivial real-life brownfield software project in which you will,
+ 1. conceptualize and implement enhancements to a given product, and,
+ 1. have it ready to be continued by future developers
+
 <span id="project-direction">
 
 ### <div class="text-white bg-dark p-1">Direction</div>
 
-In this semester, we are going to start with [an AddressBook application](https://se-edu.github.io/addressbook-level3/).
+The tP uses a generic application called [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) (from https://se-education.org) as the starting point.
 
 <img src="https://github.com/se-edu/addressbook-level3/raw/master/docs/images/Ui.png" width="600"/>
 <p/>
@@ -32,6 +43,7 @@ This product is meant for users who can type fast, and prefer typing over mouse/
 
 ### <div class="text-white bg-dark p-1">Target User & Value Proposition</div>
 
+You are expected to:
 * **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
  {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/project-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing over mouse actions%%.
 
@@ -58,7 +70,7 @@ This product is meant for users who can type fast, and prefer typing over mouse/
 
 ### <div class="text-white bg-danger p-1">Functionality Expectations</div>
 
-**The expected level of functionality from a 5-person team is roughly the ==equivalent effort taken to create AB3==**. Some examples meeting that criterion:
+**The expected level of _functionality_ from a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Some examples meeting that criterion:
 * Example 1: A fictional contact management app optimized for a specific target user group:
   * Existing AB3 features are optimized to the new target user group.
   * Person objects are enhanced to contain more details.
