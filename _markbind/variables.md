@@ -103,21 +103,21 @@
 
 <span id="star"><span class='glyphicon glyphicon-star' aria-hidden='true'></span></span>
 
-<span id="one_star"><span class='badge badge-pill badge-danger'>{{ star | safe }} </span></span>
+<span id="one_star"><span class='badge badge-pill badge-light text-danger'>{{ star | safe }} </span></span>
 
 <span id="prereq_no_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }}</span></span>
 
 <span id="prereq_one_star"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }} </span></span>
 
-<span id="two_stars"><span class='badge badge-pill badge-warning'><span style='color:white'>{{ star | safe }}{{ star | safe }} </span></span></span>
+<span id="two_stars"><span class='badge badge-pill badge-light text-warning'>{{ star | safe }}{{ star | safe }} </span></span>
 
 <span id="prereq_two_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }} </span></span>
 
-<span id="three_stars"><span class='badge badge-pill badge-info'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
+<span id="three_stars"><span class='badge badge-pill badge-light text-primary'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
 
 <span id="prereq_three_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
 
-<span id="four_stars"><span class='badge badge-pill badge-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
+<span id="four_stars"><span class='badge badge-pill badge-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}: OPTIONAL</span></span>
 
 <span id="prereq_four_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
 

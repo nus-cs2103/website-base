@@ -68,10 +68,11 @@
 {% endif %}
 {% set panel_decorations = "no-switch" if is_flat else "" %}
 {% set panel_expandable = "false" if is_flat else "true" %}
+{% set expanded = "expanded" if priority != "4" else "" %}
 {% if not is_toc %}
 <span id="{{ make_anchor(id_prefix) }}" />
 
-<panel type="seamless" expanded popup-url="{{ baseUrl }}/book/{{  full_path }}">
+<panel type="seamless" {{ expanded }} popup-url="{{ baseUrl }}/book/{{  full_path }}">
 <span slot="header" class="card-title">
 <span class='badge badge-pill badge-light text-mute'>{{ id_prefix }}</span> {{ show_stars(priority) }}
 
