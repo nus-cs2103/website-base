@@ -6,9 +6,12 @@
 </div>
 <div id="body">
 
-The objectives of the individual project (iP):
-* refresh programming skills you learned in CS2030
-* learn some skills required for the team project
+The objectives of the individual project (iP) is to learn/refresh the basics of,
+* Java
+* OOP
+* IDEs
+* Git and GitHub
+* Code quality
 
 All skills you will learn in the iP will be useful in the team project (tP). Furthermore, some of the code you will write in iP can be adapted for the tP.
 

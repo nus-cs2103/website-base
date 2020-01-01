@@ -13,7 +13,7 @@
 
 <box type="info">
 
-iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
+The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
 </box>
 
 #### {{ thumb(0) }} Learn about the project
