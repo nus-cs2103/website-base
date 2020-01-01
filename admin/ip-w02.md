@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
-{% from "admin/ip-tasks.mbdf" import duke_increments as d, learn_about_the_project, set_up_prerequisites, set_up_project, implement_increments with context %}
+{% from "admin/ip-tasks.mbdf" import ip_steps, show_ip_step, duke_increments as d, learn_about_the_project, set_up_prerequisites, set_up_project, implement_increments with context %}
 
 {% macro show_main_text() %}
 <div id="main">
@@ -17,7 +17,7 @@
 The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
 </box>
 
-{{ learn_about_the_project(0) }}
+{{ show_ip_step(0, ip_steps.learn_about_the_project) }}
 
 {{ set_up_prerequisites(1) }}
 

@@ -129,3 +129,41 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
 {% endmacro %}
 {#====================================================================================================================#}
+
+<span id="heading_learn_about_the_project">Learn about the project</span>
+<span id="desc_learn_about_the_project">
+* **Read the following two sections**, if you haven't done so already:
+
+{{ embed_topic("ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3", indent="2") }}
+{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="2") }}
+</span>
+{#====================================================================================================================#}
+
+<span id="heading_evaluate_peer_ips">Evaluate two peer iPs</span>
+<span id="desc_evaluate_peer_ips">
+
+1. **Find out which iPs are allocated for your evaluation** from the panel above.
+1. **Download the JAR file** of the first iP by following the link provided.
+1. **Locate the User Guide** of the app by following the link provided.
+1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
+1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
+   {{ icon_tip }} If double-clicking the jar file doesn't work, use the `java -jar {file_name}` command to open it.<br>
+   {{ icon_important_big_red }} Make sure you are using Java 11 to run the jar file (use `java -version` command to confirm).
+1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
+1. **Submit your evaluation** using the survey.
+1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
+</span>
+{#====================================================================================================================#}
+
+{% set ip_steps = {
+  learn_about_the_project: {id: 'learn_about_the_project', deadline: false},
+  evaluate_peer_ips: {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
+} %}
+
+{% macro show_ip_step(number, step) %}
+{% set deadline_badge = timing_badge(step.deadline, 'secondary') if step.deadline else ''  %}
+#### {{ thumb(number) }} <include src="ip-tasks.mbdf#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
+
+{{ caller() }}
+<include src="ip-tasks.mbdf#desc_{{ step.id }}" />
+{% endmacro %}
