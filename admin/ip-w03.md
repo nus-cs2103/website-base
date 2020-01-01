@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
-{% from "admin/ip-tasks.mbdf" import fininsh_leftover_tasks, create_pr_to_upstream, do_as_parallel_branches with context %}
+{% from "admin/ip-tasks.mbdf" import duke_increments as d, implement_increments, finish_leftover_tasks, create_pr_to_upstream with context %}
 
 {% macro show_main_text() %}
 <div id="main">
@@ -16,30 +16,24 @@
 
 In this week, we try to practice git branching as we do the iP.
 
-{{ fininsh_leftover_tasks(0) }}
+{{ finish_leftover_tasks(0) }}
 
 {{ create_pr_to_upstream(1) }}
 
-{{ do_as_parallel_branches(2) }}
+{% call implement_increments(2, [d.Level_7, d.Level_8]) %}
+* Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
+ {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
+ {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
+ {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
+{% endcall %}
 
-#### {{ thumb(3) }} Do increments `A-MoreOOP`, `A-Packages`, `A-JUnit`, `A-Jar`
+{% call implement_increments(3, [d.A_MoreOOP, d.A_Packages, d.A_JUnit, d.A_Jar]) %}
+* As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).
+{% endcall %}
 
-As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).
-<include src="dukeFragment.md" boilerplate var-header="**`A-MoreOOP`: More OOP**" var-fragment="extensions.mbdf#A-MoreOOP" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-Packages`: Java Packages**" var-tag="optional" var-fragment="extensions.mbdf#A-Packages" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-JUnit`: JUnit Testing**" var-fragment="extensions.mbdf#A-JUnit" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-Jar`: JAR file**" var-fragment="extensions.mbdf#A-Jar" />
-
-<p/>
-
-#### {{ thumb(4) }} Do as parallel branches: `A-JavaDoc`, `A-CodingStandard`, `Level-9`
-
-As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
-<include src="dukeFragment.md" boilerplate var-header="**`A-JavaDoc`: JavaDoc**" var-fragment="extensions.mbdf#A-JavaDoc" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-CodingStandard`: Coding Standard**" var-fragment="extensions.mbdf#A-CodingStandard" />
-<include src="dukeFragment.md" boilerplate var-header="**`Level-9`: Find**" var-fragment="text.md#Level-9" />
-
-<p/>
+{% call implement_increments(4, [d.A_JavaDoc, d.A_CodingStandard, d.Level_9]) %}
+* As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+{% endcall %}
 
 <br>
 </div>

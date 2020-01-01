@@ -1,5 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+{% from "admin/ip-tasks.mbdf" import duke_increments as d, implement_increments, evaluate_peer_ips with context %}
 
 {% macro get_links(username) -%}
 {{ username }}: [[JAR](https://github.com/{{ username }}/duke/releases)][[User Guide](https://{{ username }}.github.io/duke)][[Code](https://nus-cs2103-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors&search={{ username }}&sortWithin=title&since=2019-08-16&timeframe=commit&mergegroup=false&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2Fduke%5Bmaster%5D)]
@@ -355,8 +356,8 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {% endcall %}
 <div id="body">
 
-#### {{ thumb(1) }} Evaluate two peer iPs {{ timing_badge('by Saturday 2359', "secondary") }}
 
+{% call evaluate_peer_ips(1) %}
 <div class="indented-level2">
 
 <box type="warning">
@@ -370,17 +371,7 @@ This activity is worth 2 participation points!
 </panel>
 <p/>
 </div>
-
-1. **Find out which iPs are allocated for your evaluation** from the panel above.
-1. **Download the JAR file** of the first iP by following the link provided.
-1. **Locate the User Guide** of the app by following the link provided.
-1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
-1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
-   {{ icon_tip }} If double-clicking the jar file doesn't work, use the `java -jar {file_name}` command to open it.<br>
-   {{ icon_important_big_red }} Make sure you are using Java 11 to run the jar file (use `java -version` command to confirm).
-1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
-1. **Submit your evaluation** using the survey.
-1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
+{% endcall %}
 
 </div>
 </div>

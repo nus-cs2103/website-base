@@ -1,7 +1,72 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
+{% set duke_increments = {
+Level_1: {id: 'Level-1', title: 'Greet, Echo, Exit', tag: ''},
+Level_2: {id: 'Level-2', title: 'Add, List', tag: ''},
+Level_3: {id: 'Level-3', title: 'Mark as Done', tag: ''},
+Level_4: {id: 'Level-4', title: 'ToDo, Event, Deadline', tag: ''},
+Level_5: {id: 'Level-5', title: 'Handle Errors', tag: ''},
+Level_6: {id: 'Level-6', title: 'Delete', tag: ''},
+Level_7: {id: 'Level-7', title: 'Save', tag: ''},
+Level_8: {id: 'Level-8', title: 'Dates and Times', tag: ''},
+Level_9: {id: 'Level-9', title: 'Find', tag: ''},
+A_TextUiTesting: {id: 'A-TextUiTesting', title: 'Text UI Testing', tag: ''},
+A_Enums: {id: 'A-Enums', title: 'Enums', tag: 'if-applicable'},
+A_MoreOOP: {id: 'A-MoreOOP', title: 'More OOP', tag: ''},
+A_Packages: {id: 'A-Packages', title: 'Java Packages', tag: 'optional'},
+A_JUnit: {id: 'A-JUnit', title: 'JUnit Testing', tag: ''},
+A_Jar: {id: 'A-Jar', title: 'JAR File', tag: ''},
+A_JavaDoc: {id: 'A-JavaDoc', title: 'JavaDoc', tag: ''},
+A_CodingStandard: {id: 'A-CodingStandard', title: 'Coding Standard', tag: ''}
+} %}
+
+{#====================================================================================================================
+ # Common text segments
+ #====================================================================================================================#}
+
+<span id="commit-tag-push">
+
+Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
+   * Commit code at important points. ==Minimally, commit after completing each increment==.
+   * After completing each increment,
+     * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
+     * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
+</span>
+<span id="no-jumping-ahead">
+
+<box>
+
+{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons:
+1. In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spread over a longer period**, rather than to be done as a short burst. Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
+1. As a further incentive to not jump ahead, we have left some future project requirements unspecified, and we might change some requirements along the way too.
+</box>
+</span>
+
+{#====================================================================================================================
+ # Common macros
+ #====================================================================================================================#}
+{% macro get_id_list(increments) -%}
+{% set id_list = [] %}
+{% for i in increments %} {% set id_list = (id_list.push('`' + i.id + '`'), id_list) %} {% endfor %}
+{{ id_list | join(", ") }}
+{%- endmacro %}
 {#====================================================================================================================#}
+{% macro implement_increments(number, increments) %}
+#### {{ thumb(number) }} Implement increments {{ get_id_list(increments) | trim }}
+
+{{ caller() }}
+
+{% for i in increments %}
+{% set file = 'text.md' if i.id[0] == 'L' else 'extensions.mbdf' %}
+{% set tag = ('var-tag=' + i.tag) if i.tag != '' else '' %}
+<include src="dukeFragment.md" boilerplate var-header="**`{{ i.id }}`: {{ i.title }}**" {{ tag }} var-fragment="{{ file }}#{{ i.id }}" />
+{% endfor %}
+<p/>
+{% endmacro %}
+{#====================================================================================================================
+ # Steps
+ #====================================================================================================================#}
 {% macro learn_about_the_project(number) %}
 #### {{ thumb(number) }} Learn about the project
 
@@ -33,35 +98,7 @@
    {{ icon_tip }} If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning by following [the Gradle tutorial]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md).
 {% endmacro %}
 {#====================================================================================================================#}
-{% macro implement_increments(number) %}
-#### {{ thumb(number) }} Implement increments while committing code frequently
-
-Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
-   * Commit code at important points. ==Minimally, commit after completing each increment==.
-   * After completing each increment,
-     * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
-     * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
-
-<box>
-
-{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons:
-1. In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spread over a longer period**, rather than to be done as a short burst. Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
-1. As a further incentive to not jump ahead, we have left some future project requirements unspecified, and we might change some requirements along the way too.
-</box>
-
-<include src="dukeFragment.md" boilerplate var-header="**`Level-1`: Greet, Echo, Exit**" var-fragment="text.md#Level-1" />
-<include src="dukeFragment.md" boilerplate var-header="**`Level-2`: Add, List**" var-fragment="text.md#Level-2" />
-<include src="dukeFragment.md" boilerplate var-header="**`Level-3`: Mark as Done**" var-fragment="text.md#Level-3" />
-<include src="dukeFragment.md" boilerplate var-header="**`Level-4`: ToDo, Event, Deadline**" var-fragment="text.md#Level-4" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-TextUiTesting`: Text UI Testing**" var-tag="optional" var-fragment="extensions.mbdf#A-TextUiTesting" />
-<include src="dukeFragment.md" boilerplate var-header="**`Level-5`: Handle Errors**" var-fragment="text.md#Level-5" />
-<include src="dukeFragment.md" boilerplate var-header="**`Level-6`: Delete**" var-fragment="text.md#Level-6" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-Enums`: Enums**" var-tag="if-applicable" var-fragment="extensions.mbdf#A-Enums" />
-
-<p/>
-{% endmacro %}
-{#====================================================================================================================#}
-{% macro fininsh_leftover_tasks(number) %}
+{% macro finish_leftover_tasks(number) %}
 #### {{ thumb(number) }} Do any leftover iP tasks from the previous week
 
 * Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.
@@ -74,17 +111,21 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
   * PR name: `[{Your name}] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
 {% endmacro %}
 {#====================================================================================================================#}
-{% macro do_as_parallel_branches(number) %}
-#### {{ thumb(number) }} Do as parallel branches: `Level-7` and `Level-8`
+{#====================================================================================================================#}
+{% macro evaluate_peer_ips(number) %}
+#### {{ thumb(number) }} Evaluate two peer iPs {{ timing_badge('by Saturday 2359', "secondary") }}
 
-Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
- {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
- {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
- {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
+{{ caller() }}
 
-<include src="dukeFragment.md" boilerplate var-header="**`Level-7`: Save**" var-fragment="text.md#Level-7" />
-<include src="dukeFragment.md" boilerplate var-header="**`Level-8`: Dates and Times**" var-fragment="text.md#Level-8" />
-
-<p/>
+1. **Find out which iPs are allocated for your evaluation** from the panel above.
+1. **Download the JAR file** of the first iP by following the link provided.
+1. **Locate the User Guide** of the app by following the link provided.
+1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
+1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
+   {{ icon_tip }} If double-clicking the jar file doesn't work, use the `java -jar {file_name}` command to open it.<br>
+   {{ icon_important_big_red }} Make sure you are using Java 11 to run the jar file (use `java -version` command to confirm).
+1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
+1. **Submit your evaluation** using the survey.
+1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
 {% endmacro %}
 {#====================================================================================================================#}

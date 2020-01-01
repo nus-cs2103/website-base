@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
-{% from "admin/ip-tasks.mbdf" import learn_about_the_project, set_up_prerequisites, set_up_project, implement_increments with context %}
+{% from "admin/ip-tasks.mbdf" import duke_increments as d, learn_about_the_project, set_up_prerequisites, set_up_project, implement_increments with context %}
 
 {% macro show_main_text() %}
 <div id="main">
@@ -23,7 +23,12 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 
 {{ set_up_project(2) }}
 
-{{ implement_increments(3) }}
+{% call implement_increments(3, [d.Level_1, d.Level_2, d.Level_3, d.Level_4, d.A_TextUiTesting, d.Level_5, d.Level_6, d.A_Enums]) %}
+
+<include src="ip-tasks.mbdf#commit-tag-push" />
+<include src="ip-tasks.mbdf#no-jumping-ahead" />
+
+{% endcall %}
 
 </div>
 </div>
