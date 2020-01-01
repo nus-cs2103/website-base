@@ -37,7 +37,7 @@ As in the previous week, commit, tag, and push, as you do the following incremen
 As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 <include src="dukeFragment.md" boilerplate var-header="**`A-JavaDoc`: JavaDoc**" var-fragment="extensions.mbdf#A-JavaDoc" />
 <include src="dukeFragment.md" boilerplate var-header="**`A-CodingStandard`: Coding Standard**" var-fragment="extensions.mbdf#A-CodingStandard" />
-<include src="dukeFragment.md" boilerplate var-header="**`Level-9`: Find**" var-fragment="text.md#level9" />
+<include src="dukeFragment.md" boilerplate var-header="**`Level-9`: Find**" var-fragment="text.md#Level-9" />
 
 <p/>
 
