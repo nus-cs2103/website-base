@@ -11,7 +11,7 @@ CS2103 students: ==This module assumes a reasonable prior knowledge of Java and 
 
 ### Workload
 
-Given 60% of this module is based on CA, it can appear to be _heavy_. However, **it is not expected that you will spend more time on this module than its peer modules** %%(e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program)%%. 
+As 60% of this module is based on CA, it can appear to be _heavy_. However, **it is not expected that you will spend more time on this module than its <tooltip content="e.g., if this module is core for you, it should not take more time than other level 2 core modules in your program">peer modules</tooltip>**. 
 * Note that the **module contains more things than a typical students can do**, in order to provide enough things for even the strongest students to learn as much as they wish to. 
 * This means it is ==**perfectly OK if you don't have time to learn everything the module offers**==. Control your workload based on time you spend for the module in a week e.g., 1-1.5 days per week.
 * We have provided a star rating system to guide you when prioritizing which things to do.
