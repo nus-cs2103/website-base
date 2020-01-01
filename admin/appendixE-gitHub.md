@@ -19,7 +19,7 @@ Create a personal GitHub account if you don't have one yet.
 3. ==You are discouraged from changing your GitHub username during the semester/exam/grading period== as it can cause our auto-grading scripts to miss your GitHub activities. If you do change your GitHub username during that period, please let us know immediately.
 
 <modal large title="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
-  <include src="project-deliverables-website.md#profile-photo"/>
+  <include src="tp-deliverables-website.md#profile-photo"/>
 </modal>
 
 </div>
@@ -123,7 +123,7 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 * Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs.
 
 <modal title="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
-  <include src="project-expectations.md#testing-expectations"/>
+  <include src="tp-expectations.md#testing-expectations"/>
 </modal>
 </div>
 
@@ -185,7 +185,7 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 
 </div>
 
-<div id="project-schedule-tracking">
+<div id="tp-schedule-tracking">
 
 ### <div class="text-white bg-dark p-1">Project Schedule Tracking</div>
 

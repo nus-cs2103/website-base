@@ -16,7 +16,7 @@ As most of the work is graded individually, team sizes of 3, 4, or 5 is not expe
 
 As most of the work is graded individually, it is OK to do less or more than equal share in your project team.
 
-{{ embed_topic("project-expectations.md#individual-expectations", "Admin " + icon_embedding + " tP → Expectations: Expectations from each student", "3") }}
+{{ embed_topic("tp-expectations.md#individual-expectations", "Admin " + icon_embedding + " tP → Expectations: Expectations from each student", "3") }}
 
 </div>
 
@@ -152,7 +152,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
 </modal>
 
 <modal large title="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
-  <include src="project-deliverables.md#project-deliverables-ppp"/>
+  <include src="tp-deliverables.md#tp-deliverables-ppp"/>
 </modal>
 
 </div>

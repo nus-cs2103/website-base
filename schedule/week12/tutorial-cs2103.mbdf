@@ -7,7 +7,7 @@
 * Do a project demo dry run (as per project demo instructions given below) for your tutor.
 
 <div class="indented-level2">
-{{ embed_topic("../../admin/project-deliverables.md#project-deliverables-demo", "Admin " + icon_embedding + " tP → Deliverables → **Demo**", "3") }}
+{{ embed_topic("../../admin/tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → Deliverables → **Demo**", "3") }}
 </div>
 
 #### {{ thumb(2) }} Optional Exercise: process models

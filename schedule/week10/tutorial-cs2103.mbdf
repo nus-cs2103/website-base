@@ -96,12 +96,12 @@ Your Team ID  | Sub-team A Reviews <small>%%(backup)%%</small> | Sub-team B Revi
 ##### <span class="text-success">DG - Possible Bugs</span> 
 {{ icon_important_big_red }} Pay attention to these as they are same as the final evaluation criteria of the DG.<br>
 
-{{ embed_topic("../../admin/project-grading-bugs.md#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/project-grading-bugs.md#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/project-grading-bugs.md#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.md#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.md#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.md#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
 
 Also see:
-{{ embed_topic("../../admin/project-w10-mid-v13.md#dgTips", "Admin " + icon_embedding + " tP: mid-v1.3 → DG Tips", "3", indent="1", status="expanded", type="success") }}
+{{ embed_topic("../../admin/tp-w10-mid-v13.md#dgTips", "Admin " + icon_embedding + " tP: mid-v1.3 → DG Tips", "3", indent="1", status="expanded", type="success") }}
 
 </box>
 

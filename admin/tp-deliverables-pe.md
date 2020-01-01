@@ -11,13 +11,13 @@
 * Note that the PE is ==not a means of _pitting you against each other_==. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
 
 **Grading**:
-* Your performance in the practical exam will affect your final grade and your peers', as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/project-grading.html) section.
+* Your performance in the practical exam will affect your final grade and your peers', as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/tp-grading.html) section.
 * As such, we have put in measures to identify and ==penalize insincere/random evaluations==.
 * Also see:
 
 <div class="indented-level2">
 
-{{ embed_topic("project-grading-bugs.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "3") }}
+{{ embed_topic("tp-grading-bugs.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "3") }}
 </div>
 </span>
 
@@ -28,7 +28,7 @@
 
 <panel type="primary" header="PE-D Preparation" minimized>
 
-<include src="project-testing.mbdf#testingPreparations" />
+<include src="tp-testing.mbdf#testingPreparations" />
 </panel>
 </div>
 <p/>
@@ -42,7 +42,7 @@
 * **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
 
 <div class="indented-level2">
-<include src="project-deliverables-ped.md#project-deliverables-pe-testing-intructions" />
+<include src="tp-deliverables-ped.md#tp-deliverables-pe-testing-intructions" />
 </div>
 
 ##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [20 minutes]</span>
@@ -52,8 +52,8 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
-{{ embed_topic("project-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3") }}
 </div>
 
 
@@ -269,7 +269,7 @@ Duplicate of #67
 <div class="indented-less">
 
 <markdown>
-<include src="project-deliverables-pe.md#warning-use-catcher" />
+<include src="tp-deliverables-pe.md#warning-use-catcher" />
 
 * When the phase has been announced as open, go to your `pe` repo.
 * For the issues listed, go to the details, and read the bot's comment containing the team's response.

@@ -7,7 +7,7 @@
 **When, where**: uses a 40 minute slot at the start of week 11 lecture
 
 <modal large title="Admin {{ icon_embedding }} Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
-  <include src="project-deliverables.md#project-deliverables-practicalexam"/>
+  <include src="tp-deliverables.md#tp-deliverables-practicalexam"/>
 </modal>
 
 {{ icon_important_big_red }} **Grading**: Taking part in the PE dry run is strongly encouraged as it ==can affect your grade in the following ways==.
@@ -22,11 +22,11 @@
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Preparation</span>
 
-<include src="project-testing.mbdf#testingPreparations" />
+<include src="tp-testing.mbdf#testingPreparations" />
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">During the session</span>
 
-<div id="project-deliverables-pe-testing-intructions">
+<div id="tp-deliverables-pe-testing-intructions">
 <box>
 
 ##### <div class="text-white bg-secondary p-1">**Testing instructions for PE and PE-D**</div>
@@ -55,15 +55,15 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-grading-bugs.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
-{{ embed_topic("project-grading-bugs.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
-{{ embed_topic("project-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
 </div>
 
 * PE (at **v1.4**): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).
 
 <div class="indented-level2">
-{{ embed_topic("project-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3") }}
 </div>
 
 * **About posting _suggestions_:**
@@ -111,14 +111,14 @@
 
 * Assign exactly one `type.*` label to the issue.
 <div class="indented-level2">
-<include src="project-deliverables-pe.md#type-labels" />
+<include src="tp-deliverables-pe.md#type-labels" />
 </div>
 
 </box>
 </div>
 
 <modal large title="Admin {{ icon_embedding }} Project →" id="modal:v1.3-ppp">
-  <include src="project-deliverables.md#project-deliverables-ppp"/>
+  <include src="tp-deliverables.md#tp-deliverables-ppp"/>
 </modal>
 
 <span id="after-ped">

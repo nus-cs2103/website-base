@@ -13,4 +13,4 @@ Note that **it is not the supervisor’s job to chase you down and give help**. 
 {% endmacro %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-supervision", show_main_text) }}
+{{ show_admin_page("tp-supervision", show_main_text) }}

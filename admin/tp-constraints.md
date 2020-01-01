@@ -130,4 +130,4 @@ If you are not sure if your product complies with a certain constraint/recommend
 {% endmacro %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-constraints", show_main_text) }}
+{{ show_admin_page("tp-constraints", show_main_text) }}

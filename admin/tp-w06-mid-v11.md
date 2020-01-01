@@ -95,4 +95,4 @@
 </div>
 {% endmacro %}
 
-{{ show_admin_page("project-w06-mid-v11", show_main_text) }}
+{{ show_admin_page("tp-w06-mid-v11", show_main_text) }}

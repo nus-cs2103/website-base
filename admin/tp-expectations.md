@@ -13,7 +13,7 @@ Accordingly, the tP is structured to resemble an intermediate stage of a non-tri
  1. conceptualize and implement enhancements to a given product, and,
  1. have it ready to be continued by future developers
 
-<span id="project-direction">
+<span id="tp-direction">
 
 ### <div class="text-white bg-dark p-1">Direction</div>
 
@@ -24,8 +24,8 @@ The tP uses a generic application called [AddressBook-Level3 (AB3)](https://se-e
 
 This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, ==Command Line Interface (CLI) is the primary mode of input.== 
 
-{{ embed_topic("project-constraints.md#Constraint-Typing-Preferred", "Admin " + icon_embedding + " tP Contstraints → Constraint-Typing-Preferred", "2", indent="1") }}
-{{ embed_topic("project-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Contstraints → Recommendation-CLI-First", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-Typing-Preferred", "Admin " + icon_embedding + " tP Contstraints → Constraint-Typing-Preferred", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Contstraints → Recommendation-CLI-First", "2", indent="1") }}
 <p/>
 
 **You may evolve/morph the <tooltip content="AddressBook-Level3">AB3</tooltip> any direction you wish.** For example, an app to manage one of these: 
@@ -45,7 +45,7 @@ This product is meant for users who can type fast, and prefer typing over mouse/
 
 You are expected to:
 * **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
- {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/project-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing over mouse actions%%.
+ {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/tp-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing over mouse actions%%.
 
 <div class="indented-level2">
 
@@ -227,4 +227,4 @@ This is a non-exhaustive list; you may define additional roles.
 
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-expectations", show_main_text) }}
+{{ show_admin_page("tp-expectations", show_main_text) }}

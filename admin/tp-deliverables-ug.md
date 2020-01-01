@@ -5,4 +5,4 @@
 * **Optionally, can also cover future features**. Mark those as `Coming in v2.0`.
 
 Also note the following constraint:
-{{ embed_topic("project-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Contstraints → Constraint-File-Size", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Contstraints → Constraint-File-Size", "2", indent="1") }}

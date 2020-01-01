@@ -15,7 +15,7 @@
 
 **Reminder:**
 
-<include src="project-w06-mid-v11.md#milestoneCumulative" />
+<include src="tp-w06-mid-v11.md#milestoneCumulative" />
 </box>
 
 
@@ -25,9 +25,9 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-expectations.md#functionalityExpectations", "Admin " + icon_embedding + " tP: Functionality Expectations", "3") }}
-{{ embed_topic("project-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations", "3") }}
-{{ embed_topic("project-expectations.md#teamExpectations", "Admin " + icon_embedding + " tP: Team Expectations", "3") }}
+{{ embed_topic("tp-expectations.md#functionalityExpectations", "Admin " + icon_embedding + " tP: Functionality Expectations", "3") }}
+{{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations", "3") }}
+{{ embed_topic("tp-expectations.md#teamExpectations", "Admin " + icon_embedding + " tP: Team Expectations", "3") }}
 </div>
 
 
@@ -59,7 +59,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("appendixE-gitHub.md#project-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1") }}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1") }}
 </div>
 
 <div class="indented">
@@ -82,4 +82,4 @@
 
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-w08-mid-v12", show_main_text) }}
+{{ show_admin_page("tp-w08-mid-v12", show_main_text) }}

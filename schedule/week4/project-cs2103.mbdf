@@ -1,6 +1,6 @@
 {% from "schedule/index.md" import show_project_summary with context %}
 
-{{ show_project_summary(ip_file="ip-w04.md", tp_file="project-w04-inception.md") }}
+{{ show_project_summary(ip_file="ip-w04.md", tp_file="tp-w04-inception.md") }}
 
 ## iP
 
@@ -11,4 +11,4 @@
 
 ## tP: Inception
 
-<include src="../../admin/project-w04-inception.md#body" />
+<include src="../../admin/tp-w04-inception.md#body" />

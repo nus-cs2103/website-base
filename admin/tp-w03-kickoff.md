@@ -21,11 +21,11 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("project-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2") }}
+{{ embed_topic("tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2") }}
 </div>
 
 </div>
 </div>
 {% endmacro %}
 
-{{ show_admin_page("project-w03-kickoff", show_main_text) }}
+{{ show_admin_page("tp-w03-kickoff", show_main_text) }}

@@ -4,14 +4,14 @@
 
 * Form teams, under the guidance of the tutor. See the panel below for _team forming constrains_ and other related info.<br>
 
-{{ embed_topic("../../admin/project-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "2", indent="2") }}
+{{ embed_topic("../../admin/tp-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "2", indent="2") }}
 
 
 #### {{ thumb(1) }} **Register the team** {{ timing_badge("before leaving the tutorial") }}
 
 * Get your team ID from the tutor. ==Each student must submit your team ID== via the LumiNUS `Class Groups` page -- for us to know which team you joined. Note the team ID follows a specific format.
 
-{{ embed_topic("../../admin/project-teams.md#teamIdFormat", "Admin " + icon_embedding + " **Teams → Team ID Format**", "2", indent="2") }}
+{{ embed_topic("../../admin/tp-teams.md#teamIdFormat", "Admin " + icon_embedding + " **Teams → Team ID Format**", "2", indent="2") }}
 
 
 #### {{ thumb(2) }} **Introduce yourselves**
@@ -23,7 +23,7 @@
 
 * If you haven't done so already, set up a weekly project meeting time/venue (and communication channels) with your team members.
 
-{{ embed_topic("../../admin/project-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="2") }}
+{{ embed_topic("../../admin/tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="2") }}
 
 
 #### {{ thumb(4) }} **Find coding standard violations** {{ icon_extra }}

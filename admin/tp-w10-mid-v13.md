@@ -135,4 +135,4 @@ It will look more 'polished' if the two text sizes match.
 {% endmacro %}
 
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-w10-mid-v13", show_main_text) }}
+{{ show_admin_page("tp-w10-mid-v13", show_main_text) }}

@@ -26,9 +26,9 @@ Given below are some guidance on the recommended progress at this point of the p
 
 <div class="indented-level2">
 
-{{ embed_topic("project-expectations.md#main", "Admin " + icon_embedding + " **tP: Expectations**", "3") }}
-{{ embed_topic("project-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3") }}
-{{ embed_topic("project-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3") }}
+{{ embed_topic("tp-expectations.md#main", "Admin " + icon_embedding + " **tP: Expectations**", "3") }}
+{{ embed_topic("tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3") }}
+{{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3") }}
 
 </div>
 
@@ -40,4 +40,4 @@ Given below are some guidance on the recommended progress at this point of the p
 </div>
 {% endmacro %}
 
-{{ show_admin_page("project-w04-inception", show_main_text) }}
+{{ show_admin_page("tp-w04-inception", show_main_text) }}

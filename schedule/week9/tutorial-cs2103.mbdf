@@ -4,7 +4,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/project-w09-v12.md#demo", "Admin " + icon_embedding + " tP v1.2: Demo", "3") }}
+{{ embed_topic("../../admin/tp-w09-v12.md#demo", "Admin " + icon_embedding + " tP v1.2: Demo", "3") }}
 </div>
 
 #### {{ thumb(2) }} Do a Postmortem of v1.2

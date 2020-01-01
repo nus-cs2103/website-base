@@ -18,12 +18,12 @@ See the sections below for details of how we assess each aspect.
 * tutors (based on product demo and user guide)
 * peers from other teams (based on peer testing and user guide)
 
-{{ embed_topic("project-deliverables-pe.md#projectGrading-featureFit-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Product Design==", "3") }}
+{{ embed_topic("tp-deliverables-pe.md#projectGrading-featureFit-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Product Design==", "3") }}
 
 In addition, feature flaws reported in the PE will be considered when grading this aspect.
 
 <box>
-<include src="project-grading-bugs.md#featureFlaws" />
+<include src="tp-grading-bugs.md#featureFlaws" />
 </box>
 </div>
 
@@ -65,7 +65,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 * Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
 
-{{ embed_topic("project-deliverables-pe.md#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Questions used for Implementation Effort==", "3", indent="2") }}
+{{ embed_topic("tp-deliverables-pe.md#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Questions used for Implementation Effort==", "3", indent="2") }}
 
 * Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
@@ -81,15 +81,15 @@ In addition, feature flaws reported in the PE will be considered when grading th
 **Evaluates:** How well you tested your own feature
 
 **Based on:**
-1. functionality bugs in your work found by others during the [Practical Exam (PE)]({{baseUrl}}/admin/project-deliverables.html#deliverable-practical-exam)
+1. functionality bugs in your work found by others during the [Practical Exam (PE)]({{baseUrl}}/admin/tp-deliverables.html#deliverable-practical-exam)
 1. your test code %%(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)%%
 
 <modal large title="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations">
-  <include src="project-expectations.md#testing-expectations"/>
+  <include src="tp-expectations.md#testing-expectations"/>
 </modal>
 
 <box>
-<include src="project-grading-bugs.md#functionalityBugs" />
+<include src="tp-grading-bugs.md#functionalityBugs" />
 </box>
 
 
@@ -100,7 +100,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 **Based on:** bugs you found in the PE. In addition to functionality bugs, you get credit for reporting documentation bugs and feature flaws.
 
 <box>
-<include src="project-grading-bugs.md#bugCalculationNotes" />
+<include src="tp-grading-bugs.md#bugCalculationNotes" />
 </box>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
@@ -113,8 +113,8 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 * Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.
 
-{{ embed_topic("project-deliverables-pe.md#projectGrading-userGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for User Guide==", "3", indent="2") }}
-{{ embed_topic("project-deliverables-pe.md#projectGrading-devGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Developer Guide==", "3", indent="2") }}
+{{ embed_topic("tp-deliverables-pe.md#projectGrading-userGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for User Guide==", "3", indent="2") }}
+{{ embed_topic("tp-deliverables-pe.md#projectGrading-devGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Developer Guide==", "3", indent="2") }}
 
 * Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
@@ -126,11 +126,11 @@ In addition, feature flaws reported in the PE will be considered when grading th
 <div class="indented-level2">
 
 <box>
-<include src="project-grading-bugs.md#ugBugs" />
+<include src="tp-grading-bugs.md#ugBugs" />
 </box>
 
 <box>
-<include src="project-grading-bugs.md#dgBugs" />
+<include src="tp-grading-bugs.md#dgBugs" />
 </box>
 </div>
 
@@ -162,7 +162,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Evaluates:** How much you contributed to team-tasks
 
-{{ embed_topic("project-expectations.md#example-team-tasks", "Admin " + icon_embedding + " tP → Expectations: Examples of team-tasks", "3", indent="1") }}
+{{ embed_topic("tp-expectations.md#example-team-tasks", "Admin " + icon_embedding + " tP → Expectations: Examples of team-tasks", "3", indent="1") }}
 
 **Based on:** peer evaluations, tutor observations
 
@@ -176,4 +176,4 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-grading", show_main_text) }}
+{{ show_admin_page("tp-grading", show_main_text) }}

@@ -49,4 +49,4 @@
 
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("project-teams", show_main_text) }}
+{{ show_admin_page("tp-teams", show_main_text) }}
