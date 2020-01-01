@@ -1,5 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+{% from "admin/ip-tasks.mbdf" import fininsh_leftover_tasks, create_pr_to_upstream, do_as_parallel_branches with context %}
 
 {% macro show_main_text() %}
 <div id="main">
@@ -15,26 +16,11 @@
 
 In this week, we try to practice git branching as we do the iP.
 
-#### {{ thumb(0) }} Do any leftover iP increments from the previous week
+{{ fininsh_leftover_tasks(0) }}
 
-* Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.
+{{ create_pr_to_upstream(1) }}
 
-#### {{ thumb(1) }} Create a PR to the upstream repo
-
-Create a pull request (PR) from the `master` branch of your fork to the upstream repo.
-* PR name: `[{Your name}] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
-
-#### {{ thumb(2) }} Do as parallel branches: `Level-7` and `Level-8`
-
-Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
- {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
- {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
- {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
-
-<include src="dukeFragment.md" boilerplate var-header="**`Level-7`: Save**" var-fragment="text.md#level7" />
-<include src="dukeFragment.md" boilerplate var-header="**`Level-8`: Dates and Times**" var-fragment="text.md#level8" />
-
-<p/>
+{{ do_as_parallel_branches(2) }}
 
 #### {{ thumb(3) }} Do increments `A-MoreOOP`, `A-Packages`, `A-JUnit`, `A-Jar`
 
