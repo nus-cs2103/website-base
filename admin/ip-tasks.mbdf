@@ -1,7 +1,7 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
-{% set duke_increments = {
+{% set DIs = {
 Level_1: {id: 'Level-1', title: 'Greet, Echo, Exit', tag: ''},
 Level_2: {id: 'Level-2', title: 'Add, List', tag: ''},
 Level_3: {id: 'Level-3', title: 'Mark as Done', tag: ''},
@@ -11,14 +11,78 @@ Level_6: {id: 'Level-6', title: 'Delete', tag: ''},
 Level_7: {id: 'Level-7', title: 'Save', tag: ''},
 Level_8: {id: 'Level-8', title: 'Dates and Times', tag: ''},
 Level_9: {id: 'Level-9', title: 'Find', tag: ''},
-A_TextUiTesting: {id: 'A-TextUiTesting', title: 'Text UI Testing', tag: ''},
-A_Enums: {id: 'A-Enums', title: 'Enums', tag: 'if-applicable'},
-A_MoreOOP: {id: 'A-MoreOOP', title: 'More OOP', tag: ''},
-A_Packages: {id: 'A-Packages', title: 'Java Packages', tag: 'optional'},
-A_JUnit: {id: 'A-JUnit', title: 'JUnit Testing', tag: ''},
-A_Jar: {id: 'A-Jar', title: 'JAR File', tag: ''},
+Level_10: {id: 'Level-10', title: 'GUI', tag: ''},
+A_TextUiTesting: {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: ''},
+A_Enums: {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'},
+A_MoreOOP: {id: 'A-MoreOOP', title: 'Use More OOP', tag: ''},
+A_Packages: {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'},
+A_JUnit: {id: 'A-JUnit', title: 'Add JUnit Tess', tag: ''},
+A_Jar: {id: 'A-Jar', title: 'Create a JAR File', tag: ''},
 A_JavaDoc: {id: 'A-JavaDoc', title: 'JavaDoc', tag: ''},
-A_CodingStandard: {id: 'A-CodingStandard', title: 'Coding Standard', tag: ''}
+A_CodingStandard: {id: 'A-CodingStandard', title: 'Follow the Coding Standard', tag: ''},
+A_Gradle: {id: 'A-Gradle', title: 'Use Gradle', tag: ''},
+A_CheckStyle: {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
+A_Varargs: {id: 'A-Varargs', title: 'Use Varargs', tag: 'if-applicable'},
+A_Assertions: {id: 'A-Assertions', title: 'Use Assertions', tag: ''},
+A_CodeQuality: {id: 'A-CodeQuality', title: 'Improve Code Quality', tag: ''},
+A_Lambdas: {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
+A_Streams: {id: 'A-Streams', title: 'Use Streams', tag: 'optional'},
+A_Travis: {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
+} %}
+
+{% set ip_steps = {
+  learn_about_the_project: {id: 'learn_about_the_project', deadline: false},
+  set_up_prerequisites: {id: 'set_up_prerequisites', deadline: false},
+  set_up_project: {id: 'set_up_project', deadline: false},
+  finish_leftover_tasks: {id: 'finish_leftover_tasks', deadline: false},
+  create_pr_to_upstream: {id: 'create_pr_to_upstream', deadline: false},
+  review_two_prs: {id: 'review_two_prs', deadline: false},
+  generate_new_jar: {id: 'generate_new_jar', deadline: false},
+  add_an_extension: {id: 'add_an_extension', deadline: false},
+  finalize_features: {id: 'finalize_features', deadline: false},
+  set_up_website: {id: 'set_up_website', deadline: false},
+  release_product: {id: 'release_product', deadline: false},
+  do_final_cleanups: {id: 'do_final_cleanups', deadline: false},
+  submit_final_version: {id: 'submit_final_version', deadline: 'by Monday 2359'},
+  evaluate_peer_ips: {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
+} %}
+
+{% set ip_schedule = {
+week2: [
+  ip_steps.learn_about_the_project,
+  ip_steps.set_up_prerequisites,
+  ip_steps.set_up_project,
+  {id: 'add_increments', suffix: ' while committing frequently', increments:  [DIs.Level_1, DIs.Level_2, DIs.Level_3, DIs.Level_4, DIs.A_TextUiTesting, DIs.Level_5, DIs.Level_6, DIs.A_Enums], deadline: 'by Thursday 2359'}
+],
+week3: [
+  ip_steps.finish_leftover_tasks,
+  ip_steps.create_pr_to_upstream,
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.Level_7, DIs.Level_8], deadline: false},
+  {id: 'add_increments', suffix: '', increments:  [DIs.A_MoreOOP, DIs.A_Packages, DIs.A_JUnit, DIs.A_Jar], deadline: false},
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_JavaDoc, DIs.A_CodingStandard, DIs.Level_9], deadline: false}
+],
+week4: [
+  ip_steps.review_two_prs,
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_Gradle, DIs.A_CheckStyle, DIs.Level_10, DIs.A_Varargs], deadline: false}
+],
+week5: [
+  ip_steps.generate_new_jar,
+  {id: 'add_increments', suffix: ' as PRs', increments:  [DIs.A_Assertions, DIs.A_CodeQuality, DIs.A_Lambdas, DIs.A_Streams], deadline: false},
+  {id: 'add_increments', suffix: '', increments:  [DIs.A_Travis], deadline: false},
+  ip_steps.add_an_extension
+],
+week6: [
+  ip_steps.finalize_features,
+  ip_steps.set_up_website,
+  ip_steps.release_product
+],
+week7: [
+  ip_steps.do_final_cleanups,
+  ip_steps.submit_final_version
+],
+week8: [
+  ip_steps.evaluate_peer_ips
+]
 } %}
 
 {#====================================================================================================================
@@ -44,92 +108,32 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
 </span>
 
 {#====================================================================================================================
- # Common macros
+ # CS2103 Weekly Intros
  #====================================================================================================================#}
-{% macro get_id_list(increments) -%}
-{% set id_list = [] %}
-{% for i in increments %} {% set id_list = (id_list.push('`' + i.id + '`'), id_list) %} {% endfor %}
-{{ id_list | join(", ") }}
-{%- endmacro %}
+<span id="cs2103-week2-intro">
+
+<box type="info">
+
+The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
+</box>
+</span>
+
 {#====================================================================================================================#}
-{% macro implement_increments(number, increments) %}
-#### {{ thumb(number) }} Implement increments {{ get_id_list(increments) | trim }}
+<span id="cs2103-week3-intro">
 
-{{ caller() }}
-
-{% for i in increments %}
-{% set file = 'text.md' if i.id[0] == 'L' else 'extensions.mbdf' %}
-{% set tag = ('var-tag=' + i.tag) if i.tag != '' else '' %}
-<include src="dukeFragment.md" boilerplate var-header="**`{{ i.id }}`: {{ i.title }}**" {{ tag }} var-fragment="{{ file }}#{{ i.id }}" />
-{% endfor %}
-<p/>
-{% endmacro %}
-{#====================================================================================================================
- # Steps
- #====================================================================================================================#}
-{% macro learn_about_the_project(number) %}
-#### {{ thumb(number) }} Learn about the project
-
-* **Read the following two sections**, if you haven't done so already:
-
-{{ embed_topic("ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3", indent="2") }}
-{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="2") }}
-{% endmacro %}
+In this week, we try to practice git branching as we do the iP.
+</span>
 {#====================================================================================================================#}
-{% macro set_up_prerequisites(number) %}
-#### {{ thumb(number) }} Set up prerequisites
+<span id="cs2103-week6-intro">
 
-* **Ensure you have followed the <span class="pr-1 pl-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following module tools:**
+<box type="important">
 
-{{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
-{{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="2") }}
-{{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="2") }}
-{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="2") }}
-{% endmacro %}
+**Aim to finish the iP by this week!**<br> Although the official iP submission deadline is Week 7 Monday, aim to finish the iP **by this week's <tooltip content="i.e., 2359 before the tutorial">weekly deadline</tooltip>** so that you can devote more time to the tP after this week. %%The extra time for the iP (i.e., from week 6 to 7) is meant as a buffer for those lagging behind in the iP.%%
+</box>
+</span>
 {#====================================================================================================================#}
-{% macro set_up_project(number) %}
-#### {{ thumb(number) }} Set up the project in your computer
-
-1. Fork [{{ module_org }}/duke]({{ module_org }}/duke).
-1.  ==Enable the issue tracker of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.%%<br>
-    {{ icon_tip }} If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/duke/issues` e.g., `https://github.com/johnDoe/duke/issues`
-1. Clone the fork onto your computer.
-1. Set up the project in your IDE as explained in [the README file]({{ module_org }}/duke/blob/master/README.md).<br>
-   {{ icon_tip }} If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning by following [the Gradle tutorial]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md).
-{% endmacro %}
+{# Steps
 {#====================================================================================================================#}
-{% macro finish_leftover_tasks(number) %}
-#### {{ thumb(number) }} Do any leftover iP tasks from the previous week
-
-* Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.
-{% endmacro %}
-{#====================================================================================================================#}
-{% macro create_pr_to_upstream(number) %}
-#### {{ thumb(number) }} Create a PR to the upstream repo
-
-* Create a pull request (PR) from the `master` branch of your fork to the upstream repo.
-  * PR name: `[{Your name}] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
-{% endmacro %}
-{#====================================================================================================================#}
-{#====================================================================================================================#}
-{% macro evaluate_peer_ips(number) %}
-#### {{ thumb(number) }} Evaluate two peer iPs {{ timing_badge('by Saturday 2359', "secondary") }}
-
-{{ caller() }}
-
-1. **Find out which iPs are allocated for your evaluation** from the panel above.
-1. **Download the JAR file** of the first iP by following the link provided.
-1. **Locate the User Guide** of the app by following the link provided.
-1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
-1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
-   {{ icon_tip }} If double-clicking the jar file doesn't work, use the `java -jar {file_name}` command to open it.<br>
-   {{ icon_important_big_red }} Make sure you are using Java 11 to run the jar file (use `java -version` command to confirm).
-1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
-1. **Submit your evaluation** using the survey.
-1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
-{% endmacro %}
-{#====================================================================================================================#}
-
 <span id="heading_learn_about_the_project">Learn about the project</span>
 <span id="desc_learn_about_the_project">
 * **Read the following two sections**, if you haven't done so already:
@@ -138,9 +142,105 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
 {{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
+<span id="heading_set_up_prerequisites">Set up prerequisites</span>
+<span id="desc_set_up_prerequisites">
+* **Ensure you have followed the <span class="pr-1 pl-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following module tools:**
+
+{{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
+{{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="2") }}
+{{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="2") }}
+{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="extra_Level-1">
+<include src="ip-tasks.mbdf#commit-tag-push" />
+<include src="ip-tasks.mbdf#no-jumping-ahead" />
+</span>
+{#====================================================================================================================#}
+<span id="heading_set_up_project">Set up the project in your computer</span>
+<span id="desc_set_up_project">
+1. Fork [{{ module_org }}/duke]({{ module_org }}/duke).
+1.  ==Enable the issue tracker of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.%%<br>
+    {{ icon_tip }} If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/duke/issues` e.g., `https://github.com/johnDoe/duke/issues`
+1. Clone the fork onto your computer.
+1. Set up the project in your IDE as explained in [the README file]({{ module_org }}/duke/blob/master/README.md).<br>
+   {{ icon_tip }} If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning by following [the Gradle tutorial]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md).
+</span>
+{#====================================================================================================================#}
+<span id="heading_finish_leftover_tasks">Do any leftover iP tasks from the previous week</span>
+<span id="desc_finish_leftover_tasks">
+* Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.
+</span>
+{#====================================================================================================================#}
+<span id="heading_create_pr_to_upstream">Create a PR to the upstream repo</span>
+<span id="desc_create_pr_to_upstream">
+* Create a pull request (PR) from the `master` branch of your fork to the upstream repo.
+  * PR name: `[{Your name}] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
+</span>
+{#====================================================================================================================#}
+<span id="extra_Level-7">
+
+* Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
+ {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
+ {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
+ {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
+</span>
+<span id="extra_A-MoreOOP">
+
+* As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).
+</span>
+<span id="extra_A-JavaDoc">
+
+* As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+</span>
+{#====================================================================================================================#}
+<span id="heading_review_two_prs">Review some peer PRs</span>
+<span id="desc_review_two_prs">
+* **Review two PRs** created by your classmates. PRs can be found [here]({{ module_org }}/duke/pulls).
+  * The allocation of which PRs to review will be specified in [this page]({{team_IDs_page}}) (you will be notified when the allocation is ready).
+  * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
+  * If the student you have been allocated to review has not created a PR by Monday, you can review another PR of your choice.
+
+<div class="indented-level2">
+
+<box type="success">
+
+We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
+</box>
+
+* Read up the following guidelines:
+
+{{ embed_topic("appendixE-gitHub.md#pr-review-guidelines", "Admin " + icon_embedding + " **Using GitHub → Guidelines for Reviewing PRs**", "3", indent="2", status="expanded") }}
+
+* Additional guidelines:
+  * Comment on coding standard violations.
+  * At the end of the review, we recommend you to choose `Comment` (i.e., not `Approve` or `Request changes`)
+
+</div>
+
+* {{ icon_tip }} **Use the iP Code Dashboard to view others' code**: You can now easily view [iP code written by classmates](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard), using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent="2") }}
+</span>
+{#====================================================================================================================#}
 
 <span id="heading_evaluate_peer_ips">Evaluate two peer iPs</span>
 <span id="desc_evaluate_peer_ips">
+
+<div class="indented-level2">
+
+<box type="warning">
+
+This activity is worth 2 participation points!
+</box>
+<p/>
+<panel header="Allocation for iP peer evaluation" minimized >
+
+{% from "admin/ip-peer-review-allocation.njk" import show_allocation_table with context %}
+{{ show_allocation_table() }}
+</panel>
+<p/>
+</div>
 
 1. **Find out which iPs are allocated for your evaluation** from the panel above.
 1. **Download the JAR file** of the first iP by following the link provided.
@@ -154,20 +254,191 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
 </span>
 {#====================================================================================================================#}
+<span id="extra_A-Gradle">
 
-{% set ip_steps = {
-  learn_about_the_project: {id: 'learn_about_the_project', deadline: false},
-  evaluate_peer_ips: {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
-} %}
+* **Do each enhancement in a separate branch and merge to the `master` branch only when ready** (if you push incomplete features into the `master` branch, it can confuse others reviewing your PR).
+<br>
+{{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
+</span>
+{#====================================================================================================================#}
+<span id="heading_generate_new_jar">Generate a new jar file {{ icon_extra | safe}}</span>
+<span id="desc_generate_new_jar">
+* We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [Gradle tutorial provided]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md#shadow) (see the `shadowJar` task).
+</span>
+{#====================================================================================================================#}
+<span id="extra_A-Assertion">
 
-{% macro show_ip_step_with_extra(number, step) %}
-{% set deadline_badge = timing_badge(step.deadline, 'secondary') if step.deadline else ''  %}
-#### {{ thumb(number) }} <include src="ip-tasks.mbdf#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
+* Add the following increments, doing each in the following manner:
+1. add the extension in a separate branch
+1. push the branch to your fork
+1. create PR within your fork (i.e., from the new branch, to the `master` branch)
+1. merge the PR; you can try various merge options such as `Squash and Merge`, `Rebase and Merge`
+1. sync your local clone with the fork
+</span>
+{#====================================================================================================================#}
+<span id="extra_A-Travis">
 
-{{ caller() }}
-<include src="ip-tasks.mbdf#desc_{{ step.id }}" />
-{% endmacro %}
+* We recommend that ==at least one member== of the team attempt the following.
+</span>
+{#====================================================================================================================#}
+<span id="heading_finalize_features">Finalize the features</span>
+<span id="desc_finalize_features">
+* You may give the product any name, but do not rename the repo.
+* Reminder: you can give the chatbot any personality (there is no need to follow the exact command/response formats given)
+* {{ icon_important_big_red }} Remember to give credit to any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
+
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_set_up_website">Set up a product website</span>
+<span id="desc_set_up_website">
+* **Add a representative screenshot** of the product to the `docs` folder.
+  * ==The file name should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
+  * Ideally, the product name is visible in the screenshot e.g., in the title bar of the Window
+
+{{ embed_topic("tp-deliverables-website.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
+
+* **Add a brief User Guide (UG)**
+
+<div class="indented">
+
+<include src="dukeFragment.md" boilerplate var-header="**`A-UserGuide`: User Guide**" var-fragment="extensions.mbdf#A-UserGuide" />
+</div>
+<p/>
+
+* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%%.
+</span>
+{#====================================================================================================================#}
+<span id="heading_release_product">Release the product</span>
+<span id="desc_release_product">
+* **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the project is very simple.
+* **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
+  1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
+  1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.
+* **Create a new release on GitHub** (e.g., `v0.2`) and upload the jar file.
+
+<div class="indented">
+
+<include src="dukeFragment.md" boilerplate var-header="**`A-Release`: Release**" var-fragment="extensions.mbdf#A-Release" />
+</div>
+<p/>
+</span>
+{#====================================================================================================================#}
+<span id="heading_do_final_cleanups">Do any final clean-ups</span>
+<span id="desc_do_final_cleanups">
+* Finish leftover increments from the previous weeks, if any
+* Do any code cleanups, if necessary
+* Update the User Guide, if necessary
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_final_version">Submit the final version</span>
+<span id="desc_submit_final_version">
+* Submission is to be done via GitHub releases. If there were any changes to the code since the last release, do a new release.
+* {{ icon_important_big_red }} The jar file should be ==cross-platform and should work in a computer that has Java 11==.
+
+<div class="indented">
+<panel minimized >
+<div slot="header" class="card-title">
+
+{{ icon_tip }} **Getting more out of the iP**
+</div>
+
+**If you wish to cite the iP in your resume**, you can do more to make it look more impressive to a potential employer. These improvements are not considered for grading and can be done after the semester is over. Some ideas:
+* **Improve the GUI**: Make the UI look nicer, unique, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
+* **Add a demo** video or an animated gif to your user guide to show how the app works.
+* **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge badge-light badge-pill text-monospace">**</>**</span>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
+* **Add more features.**
+
+On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other modules, pet projects).
+</panel>
+
+</div>
+</span>
+{#====================================================================================================================#}
+<span id="heading_"></span>
+<span id="desc_">
+
+</span>
+{#====================================================================================================================#}
+<span id="heading_add_an_extension">Add an extension</span>
+<span id="desc_add_an_extension">
+
+* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
+
+<div class="indented-level2">
+
+{{ icon_important_big_red }} Discuss with your team members to ensure that each member picks a different extension.
+
+{{ icon_tip }} You may want to pick an extension that is relevant to your tP so that the code can be reused in the tP later.
+</div>
+</span>
+{#====================================================================================================================#}
+
+{% macro get_id_list(increments) -%}
+{% set id_list = [] %}
+{% for i in increments %} {% set id_list = (id_list.push('`' + i.id + '`'), id_list) %} {% endfor %}
+{{ id_list | join(", ") }}
+{%- endmacro %}
+{#====================================================================================================================#}
+
+{% macro get_ip_step_heading(step) -%}
+{% set deadline_badge = timing_badge(step.deadline, 'danger') if step.deadline else ''  %}
+{% if step.id == 'add_increments' %}
+Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
+{% else %}
+<include src="ip-tasks.mbdf#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
+{% endif %}
+{%- endmacro %}
+{#====================================================================================================================#}
 
 {% macro show_ip_step(number, step) %}
-{% call show_ip_step_with_extra(number, step) %}{% endcall %}
+
+#### {{ thumb(number) }} {{ get_ip_step_heading(step) | trim }}
+
+{% if step.id == 'add_increments' %}
+  {% if step.pre != '' %}
+<include src="ip-tasks.mbdf#extra_{{ step.increments[0].id }}" optional />
+  {% endif %}
+  {% for i in step.increments %}
+    {% set file = 'text.md' if i.id[0] == 'L' else 'extensions.mbdf' %}
+    {% set tag = ('var-tag=' + i.tag) if i.tag != '' else '' %}
+<include src="dukeFragment.md" boilerplate var-header="**`{{ i.id }}`: {{ i.title }}**" {{ tag }} var-fragment="{{ file }}#{{ i.id }}" />
+  {% endfor %}
+{% else %}
+<include src="ip-tasks.mbdf#desc_{{ step.id }}" />
+{% endif %}
+<p/>
+{% endmacro %}
+
+{#====================================================================================================================#}
+
+{% macro show_ip_steps(steps) %}
+{% for step in steps %}
+{{ show_ip_step(loop.index, step) }}
+{% endfor %}
+{% endmacro %}
+{#====================================================================================================================#}
+
+{% macro show_ip_steps_summary(steps) %}
+{% call show_project_summary_lead()%}
+{% for step in steps %}1. {{ get_ip_step_heading(step) | trim }}
+{% endfor %}
+{% endcall %}
+{% endmacro %}
+{#====================================================================================================================#}
+
+{% macro show_ip_page(week_num) %}
+{% set this_week_steps = ip_schedule['week' + week_num] %}
+<div id="main">
+
+{{ show_ip_steps_summary(this_week_steps) }}
+
+<div id="body">
+
+<include src="ip-tasks.mbdf#{{ module | lower }}-week{{ week_num }}-intro" optional/>
+
+{{ show_ip_steps(this_week_steps) }}
+
+</div>
+</div>
 {% endmacro %}
