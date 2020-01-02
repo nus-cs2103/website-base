@@ -1,0 +1,82 @@
+{% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
+{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+{% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
+
+{% set tp_schedule = {
+week3: [
+  {id: 'get_familiar_with_ab3', deadline: false},
+  {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'}
+],
+week4: [
+  {id: 'start_weekly_meetings', deadline: false},
+  {id: 'decide_project_direction', deadline: false},
+  {id: 'start_project_notes', deadline: 'before the tutorial'}
+]
+} %}
+
+{#====================================================================================================================
+ # CS2103 Weekly Intros
+ #====================================================================================================================#}
+<span id="cs2103-week4-intro">
+
+Given below are some guidance on the recommended progress at this point of the project
+
+</span>
+
+{#====================================================================================================================#}
+{# Steps
+{#====================================================================================================================#}
+<span id="heading_get_familiar_with_ab3">Get familiar with AB3 features</span>
+<span id="desc_get_familiar_with_ab3">
+
+* **Familiarize yourself with AB3**: Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html) and play around with it to familiarize with its current features.
+</span>
+{#====================================================================================================================#}
+<span id="heading_set_up_meeting_time">Set up a project meeting time</span>
+<span id="desc_set_up_meeting_time">
+
+* After forming teams, **set up a weekly project meeting time/venue (and communication channels) with your team members**:
+
+{{ embed_topic("tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_start_weekly_meetings">Start weekly project meetings</span>
+<span id="desc_start_weekly_meetings">
+
+* We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, ==it is also acceptable to discuss weekly post-lecture quiz together with team members as you do the quiz== i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.
+</span>
+{#====================================================================================================================#}
+<span id="heading_decide_project_direction">Decide on a overall project direction %%(user profile, problem addressed)%%</span>
+<span id="desc_decide_project_direction">
+
+* **Decide project direction, target user profile, and problem addressed**: Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:
+
+{{ embed_topic("tp-expectations.md#main", "Admin " + icon_embedding + " **tP: Expectations**", "3", indent="2") }}
+{{ embed_topic("tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3", indent="2") }}
+{{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3", indent="2") }}
+
+</span>
+{#====================================================================================================================#}
+<span id="heading_start_project_notes">Start a collaborative doc to take project notes</span>
+<span id="desc_start_project_notes">
+
+* We recommend keeping project notes in easy-to-use collaborative docs such as GoogleDocs/sheets. Document the decisions taken above in one of those docs.
+</span>
+{#====================================================================================================================#}
+<span id="heading_"></span>
+<span id="desc_">
+
+
+</span>
+{#====================================================================================================================#}
+
+{% macro show_tp_page(week_num) %}
+{{ show_xp_page(week_num, tp_schedule['week' + week_num], 'tp-tasks.mbdf') }}
+{% endmacro %}
+{#====================================================================================================================#}
+
+{% macro show_admin_tp_page(week_num) %}
+{% call show_admin_page("tp-w0" + week_num) %}
+{{ show_tp_page(week_num) }}
+{% endcall %}
+{% endmacro %}

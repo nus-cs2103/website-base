@@ -355,11 +355,6 @@ On a somewhat related note, you can also **create similar product websites for y
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_"></span>
-<span id="desc_">
-
-</span>
-{#====================================================================================================================#}
 <span id="heading_add_an_extension">Add an extension</span>
 <span id="desc_add_an_extension">
 
@@ -381,23 +376,23 @@ On a somewhat related note, you can also **create similar product websites for y
 {%- endmacro %}
 {#====================================================================================================================#}
 
-{% macro get_ip_step_heading(step) -%}
+{% macro get_xp_step_heading(step, tasks_file) -%}
 {% set deadline_badge = timing_badge(step.deadline, 'danger') if step.deadline else ''  %}
 {% if step.id == 'add_increments' %}
 Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
 {% else %}
-<include src="ip-tasks.mbdf#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
+<include src="{{ tasks_file }}#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
 {% endif %}
 {%- endmacro %}
 {#====================================================================================================================#}
 
-{% macro show_ip_step(number, step) %}
+{% macro show_xp_step(number, step, tasks_file) %}
 
-#### {{ thumb(number) }} {{ get_ip_step_heading(step) | trim }}
+#### {{ thumb(number) }} {{ get_xp_step_heading(step, tasks_file) | trim }}
 
 {% if step.id == 'add_increments' %}
   {% if step.pre != '' %}
-<include src="ip-tasks.mbdf#extra_{{ step.increments[0].id }}" optional />
+<include src="{{ tasks_file }}#extra_{{ step.increments[0].id }}" optional />
   {% endif %}
   {% for i in step.increments %}
     {% set file = 'text.md' if i.id[0] == 'L' else 'extensions.mbdf' %}
@@ -405,40 +400,44 @@ Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ d
 <include src="dukeFragment.md" boilerplate var-header="**`{{ i.id }}`: {{ i.title }}**" {{ tag }} var-fragment="{{ file }}#{{ i.id }}" />
   {% endfor %}
 {% else %}
-<include src="ip-tasks.mbdf#desc_{{ step.id }}" />
+<include src="{{ tasks_file }}#desc_{{ step.id }}" />
 {% endif %}
 <p/>
 {% endmacro %}
 
 {#====================================================================================================================#}
 
-{% macro show_ip_steps(steps) %}
+{% macro show_xp_steps(steps, tasks_file) %}
 {% for step in steps %}
-{{ show_ip_step(loop.index, step) }}
+{{ show_xp_step(loop.index, step, tasks_file) }}
 {% endfor %}
 {% endmacro %}
 {#====================================================================================================================#}
 
-{% macro show_ip_steps_summary(steps) %}
+{% macro show_xp_steps_summary(steps, tasks_file) %}
 {% call show_project_summary_lead()%}
-{% for step in steps %}1. {{ get_ip_step_heading(step) | trim }}
+{% for step in steps %}1. {{ get_xp_step_heading(step, tasks_file) | trim }}
 {% endfor %}
 {% endcall %}
 {% endmacro %}
 {#====================================================================================================================#}
 
-{% macro show_ip_page(week_num) %}
-{% set this_week_steps = ip_schedule['week' + week_num] %}
+{% macro show_xp_page(week_num, steps, tasks_file) %}
 <div id="main">
 
-{{ show_ip_steps_summary(this_week_steps) }}
+{{ show_xp_steps_summary(steps, tasks_file) }}
 
 <div id="body">
 
-<include src="ip-tasks.mbdf#{{ module | lower }}-week{{ week_num }}-intro" optional/>
+<include src="{{ tasks_file }}#{{ module | lower }}-week{{ week_num }}-intro" optional/>
 
-{{ show_ip_steps(this_week_steps) }}
+{{ show_xp_steps(steps, tasks_file) }}
 
 </div>
 </div>
+{% endmacro %}
+{#====================================================================================================================#}
+
+{% macro show_ip_page(week_num) %}
+{{ show_xp_page(week_num, ip_schedule['week' + week_num], 'ip-tasks.mbdf') }}
 {% endmacro %}
