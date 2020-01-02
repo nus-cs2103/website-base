@@ -1,4 +1,7 @@
-{% macro show_main_text() %}
+{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("tutorials") %}
 <div id="main">
 
 <panel type="seamless" expanded >
@@ -111,8 +114,5 @@ Your conduct in tutorials be evaluated by team members and the tutor which can a
 </div>
 </panel>
 </div>
-{% endmacro %}
 
-{% from "common/macros.njk" import embed_topic with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("tutorials", show_main_text) }}
+{% endcall %}

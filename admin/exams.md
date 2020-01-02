@@ -1,4 +1,6 @@
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("exams") %}
 <div id="main">
 
 There is no midterm.
@@ -105,7 +107,5 @@ Yes, **you may use pencils** when answering part 2.
 </div>
 
 
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("exams", show_main_text) }}
+{% endcall %}

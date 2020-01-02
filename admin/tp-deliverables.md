@@ -1,4 +1,7 @@
-{% macro show_main_text() %}
+{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("tp-deliverables") %}
 <div id="main">
 
 Here is a list of main deliverables of the project; their details are given in the subsequent sections.
@@ -61,8 +64,5 @@ Here is a list of main deliverables of the project; their details are given in t
 </span>
 
 </div>
-{% endmacro %}
 
-{% from "common/macros.njk" import embed_topic with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("tp-deliverables", show_main_text) }}
+{% endcall %}

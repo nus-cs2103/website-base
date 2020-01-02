@@ -13,7 +13,9 @@
 </div>
 {%- endmacro %}
 
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("tp-constraints") %}
 <div id="main">
 
 **Your project should comply with the following constraints.** %%**Reason**: to increase comparability among projects and to maximize applicability of module learning outcomes in the project.%%
@@ -127,7 +129,5 @@ If you are not sure if your product complies with a certain constraint/recommend
 </box>
 
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("tp-constraints", show_main_text) }}
+{% endcall %}

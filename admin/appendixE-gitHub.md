@@ -1,4 +1,7 @@
-{% macro show_main_text() %}
+{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("appendixE-gitHub") %}
 <div id="main">
 
 ### <div class="text-white bg-dark p-1">Creating a GitHub Account</div>
@@ -271,8 +274,5 @@ We recommend you do proper milestone management starting from v1.2. ==Given belo
 
 </div>
 
-</div>{% endmacro %}
-
-{% from "common/macros.njk" import embed_topic with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("appendixE-gitHub", show_main_text) }}
+</div>
+{% endcall %}

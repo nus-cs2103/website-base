@@ -1,4 +1,6 @@
-{% macro show_main_text() %} 
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("moduleOverview") %} 
 
 
 <div id="admin-moduleOverview-anchor"></div>
@@ -6,7 +8,5 @@
   <include src="moduleOverview.md#main" />
 </div>
 
-{% endmacro %} 
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("moduleOverview", show_main_text) }}
+{% endcall %}

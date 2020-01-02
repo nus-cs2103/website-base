@@ -1,4 +1,6 @@
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("lectures") %}
 <div id="main">
 
 <img src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%">
@@ -28,7 +30,5 @@ Lectures start on time sharp and end around 15 minutes before official end time.
 
 
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("lectures", show_main_text) }}
+{% endcall %}

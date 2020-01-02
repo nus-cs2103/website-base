@@ -1,6 +1,8 @@
 {% from "common/macros.njk" import  show_stars with context %}
 
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page, faqs with context %}
+
+{% call show_admin_page("appendixC-faq") %}
 <div id="main">
 
 {% for faq in faqs %}
@@ -20,7 +22,5 @@
 {% endfor %}
 
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page, faqs with context %}
-{{ show_admin_page("appendixC-faq", show_main_text) }}
+{% endcall %}

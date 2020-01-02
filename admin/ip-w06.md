@@ -3,9 +3,7 @@
 
 {% set this_week_num = '6' %}
 
-{% macro show_main_text() %}
+{% call show_admin_page("ip-w0" + this_week_num) %}
 {{ show_ip_page(this_week_num) }}
-{% endmacro %}
-
-{{ show_admin_page("ip-w0" + this_week_num, show_main_text) }}
+{% endcall %}
 

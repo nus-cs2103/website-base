@@ -1,4 +1,6 @@
-{% macro show_main_text() %} 
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("moduleOverview") %} 
 <div id="main">
 
 <big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big>
@@ -30,8 +32,5 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 <panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
 
 </div>
-{% endmacro %} 
 
-
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("moduleOverview", show_main_text) }}
+{% endcall %}

@@ -1,4 +1,7 @@
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/macros.njk" import embed_topic with context %}
+
+{% call show_admin_page("peerEvaluations") %}
 <div id="main">
 
 <div id="intro">
@@ -41,8 +44,5 @@ Here are some things to keep in mind:
 </span>
 
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import embed_topic with context %}
-{{ show_admin_page("peerEvaluations", show_main_text) }}
+{% endcall %}

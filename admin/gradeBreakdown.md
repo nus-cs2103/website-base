@@ -1,4 +1,7 @@
-{% macro show_main_text() %}
+{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("gradeBreakdown") %}
 <div id="main">
 
 <puml src="images/grade-breakdown.puml" />
@@ -9,8 +12,5 @@
 {{ embed_topic("tp-grading.md#main", "Admin " + icon_embedding + " Team Project (tP) Grading", "3") }}
 
 </div>
-{% endmacro %}
 
-{% from "common/macros.njk" import embed_topic with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("gradeBreakdown", show_main_text) }}
+{% endcall %}

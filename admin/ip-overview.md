@@ -1,4 +1,6 @@
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("ip-overview") %}
 <div id="main">
 
 <div id="title">
@@ -30,7 +32,5 @@ The project is to be **done over weeks 2-6**.
 
 </div>
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("ip-overview", show_main_text) }}
+{% endcall %}

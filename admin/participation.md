@@ -1,4 +1,7 @@
-{% macro show_main_text() %}
+{% from "common/macros.njk" import embed_topic, thumb with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("participation") %}
 <div id="main">
 
 **To receive full 5 marks allocated for participation, meet the criteria {{ thumb("A", "info") }}, {{ thumb("B", "info") }}, and {{ thumb("C", "info") }}.**
@@ -65,8 +68,5 @@ Low attendance/participation can affect participation marks directly (i.e., atte
 </panel>
 
 </div>
-{% endmacro %}
 
-{% from "common/macros.njk" import embed_topic, thumb with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("participation", show_main_text) }}
+{% endcall %}

@@ -1,7 +1,9 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
-{% macro show_main_text() %}
+
+
+{% call show_admin_page("tp-w04-inception") %}
 <div id="main">
 
 {% call show_project_summary_lead()%}
@@ -38,6 +40,5 @@ Given below are some guidance on the recommended progress at this point of the p
 
 </div>
 </div>
-{% endmacro %}
 
-{{ show_admin_page("tp-w04-inception", show_main_text) }}
+{% endcall %}

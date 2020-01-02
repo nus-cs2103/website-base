@@ -1,4 +1,7 @@
-{% macro show_main_text() %}
+{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("weeklySchedule") %}
 <div id="main">
 
 {{ icon_calendar }} **[Friday (previous week)]**<br>
@@ -36,8 +39,5 @@
 
 
 </div>
-{% endmacro %}
 
-{% from "common/macros.njk" import embed_topic with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("weeklySchedule", show_main_text) }}
+{% endcall %}

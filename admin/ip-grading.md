@@ -1,4 +1,6 @@
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("ip-grading") %}
 <div id="main">
 
 <div id="title">
@@ -12,7 +14,5 @@ To get full marks, you should achieve **at least some iP deliverables in most we
 
 </div>
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("ip-grading", show_main_text) }}
+{% endcall %}

@@ -1,4 +1,6 @@
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("appendixD-help") %}
 <div id="main">
 
 %%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on module topics too. e.g. what is the difference between _refactoring_ and _rewriting_?%%
@@ -87,7 +89,5 @@ _Rubber duck debugging_ is an informal term used in software engineering to ref
 </box>
 
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("appendixD-help", show_main_text) }}
+{% endcall %}

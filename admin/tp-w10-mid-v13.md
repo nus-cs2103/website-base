@@ -1,7 +1,9 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("tp-w10-mid-v13") %}
 <div id="main">
 
 {% call show_project_summary_lead()%}
@@ -132,7 +134,5 @@ It will look more 'polished' if the two text sizes match.
 
 </div>
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("tp-w10-mid-v13", show_main_text) }}
+{% endcall %}

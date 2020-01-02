@@ -218,10 +218,10 @@ week13: []
 {% endfor %}
 {%- endmacro %}
 
-{% macro show_admin_page(current_topic_id, main_text_macro)%}
+{% macro show_admin_page(current_topic_id)%}
 {{ show_admin_pagetop(topics, current_topic_id) }}
 {{ show_title(current_topic_id, topics) | trim }}
-{{ main_text_macro() }}
+{{ caller() }}
 {{ show_admin_pagebottom(topics, current_topic_id) }}
 {% endmacro %}
 

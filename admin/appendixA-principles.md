@@ -1,4 +1,6 @@
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("appendixA-principles") %}
 <div id="main">
 
 These are some of the main principles underlying the module structure.
@@ -153,7 +155,5 @@ In this module, last minute heroics will not earn you a good project grade, and 
 When you start the module, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. All marks allocated to intermediate deliverables are within the reach of everyone in the class irrespective of their prior knowledge.
 
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("appendixA-principles", show_main_text) }}
+{% endcall %}

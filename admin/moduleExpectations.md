@@ -1,4 +1,6 @@
-{% macro show_main_text() %} 
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("moduleExpectations") %} 
 <div id="main">
 
 ### Prior Knowledge: Java and OOP
@@ -41,8 +43,5 @@ As 60% of this module is based on CA, it can appear to be _heavy_. However, **it
 </div>
 
 </div>
-{% endmacro %} 
 
-
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("moduleExpectations", show_main_text) }}
+{% endcall %}

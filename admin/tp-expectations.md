@@ -1,4 +1,7 @@
-{% macro show_main_text() %}
+{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("tp-expectations") %}
 <div id="main">
 
 <span class="keyword d-none">project expectations</span>
@@ -223,8 +226,5 @@ This is a non-exhaustive list; you may define additional roles.
 </span>
 
 </div>
-{% endmacro %}
 
-{% from "common/macros.njk" import embed_topic with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("tp-expectations", show_main_text) }}
+{% endcall %}

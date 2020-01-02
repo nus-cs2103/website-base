@@ -1,4 +1,6 @@
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("programmingLanguages") %}
 <div id="main">
 
 <table class="two-column-content">
@@ -32,7 +34,5 @@ This module follows the ==[this Java coding standard]({{java_coding_standard}})=
 ==**You are required to follow basic guidelines**== (those marked as :star:) in the module projects. Intermediate and advanced guidelines are optional.
 
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("programmingLanguages", show_main_text) }}
+{% endcall %}

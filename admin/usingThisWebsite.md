@@ -1,4 +1,7 @@
-{% macro show_main_text() %} 
+{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("usingThisWebsite") %} 
 <div id="main">
 <div id="essential">
 
@@ -44,8 +47,5 @@ This website was generated using the [MarkBind](https://markbind.org/) software 
 
 </div>
 </div>
-{% endmacro %} 
 
-{% from "common/macros.njk" import embed_topic with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("usingThisWebsite", show_main_text) }}
+{% endcall %}

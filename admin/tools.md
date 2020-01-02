@@ -1,6 +1,8 @@
 {% from "common/macros.njk" import embed_topic with context %}
 
-{% macro show_main_text() %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("tools") %}
 <div id="main">
 
 <img src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px"><br>
@@ -111,7 +113,5 @@ When you do receive that email, TEAMMATES will allow you to access it without us
 </div>
 
 </div>
-{% endmacro %}
 
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("tools", show_main_text) }}
+{% endcall %}

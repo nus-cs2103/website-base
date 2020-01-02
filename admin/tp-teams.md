@@ -1,4 +1,7 @@
-{% macro show_main_text() %}
+{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
+
+{% call show_admin_page("tp-teams") %}
 <div id="main">
 
 <img src="{{baseUrl}}/admin/images/team.png" width="300px"><br>
@@ -45,8 +48,5 @@
 * **Fix a weekly 1-2 hour time slot and a venue for project meetings** after the team has been finalized (latest by week 3 tutorial). ==All members are expected to attend weekly project meetings== (not doing so could lower the peer evaluation ratings you receive, which in turn will be factored into your grade).<br>
   {{ icon_tip }} The best time to have the weekly project meeting is, after the previous week's lecture but before the deadline for weekly tasks.
 </div>
-{% endmacro %}
 
-{% from "common/macros.njk" import embed_topic with context %}
-{% from "common/admin.njk" import show_admin_page with context %}
-{{ show_admin_page("tp-teams", show_main_text) }}
+{% endcall %}
