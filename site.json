@@ -16,7 +16,6 @@
     {"src": "index.md",
       "searchable": "no"},
     {"glob": "admin/*.md"},
-    {"glob": "admin/gradeBreakdown.md"},
     {"glob": "schedule/index.md",
       "searchable": "no"},
     {"glob": "schedule/timeline.md",
