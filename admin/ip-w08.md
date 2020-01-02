@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
-{% from "admin/ip-tasks.mbdf" import ip_steps, show_ip_step, evaluate_peer_ips with context %}
+{% from "admin/ip-tasks.mbdf" import ip_steps, show_ip_step_with_extra, evaluate_peer_ips with context %}
 
 {% macro get_links(username) -%}
 {{ username }}: [[JAR](https://github.com/{{ username }}/duke/releases)][[User Guide](https://{{ username }}.github.io/duke)][[Code](https://nus-cs2103-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors&search={{ username }}&sortWithin=title&since=2019-08-16&timeframe=commit&mergegroup=false&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2Fduke%5Bmaster%5D)]
@@ -357,7 +357,7 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 <div id="body">
 
 
-{% call show_ip_step(1, ip_steps.evaluate_peer_ips) %}
+{% call show_ip_step_with_extra(1, ip_steps.evaluate_peer_ips) %}
 <div class="indented-level2">
 
 <box type="warning">

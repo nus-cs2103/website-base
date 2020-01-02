@@ -160,10 +160,14 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
   evaluate_peer_ips: {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
 } %}
 
-{% macro show_ip_step(number, step) %}
+{% macro show_ip_step_with_extra(number, step) %}
 {% set deadline_badge = timing_badge(step.deadline, 'secondary') if step.deadline else ''  %}
 #### {{ thumb(number) }} <include src="ip-tasks.mbdf#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
 
 {{ caller() }}
 <include src="ip-tasks.mbdf#desc_{{ step.id }}" />
+{% endmacro %}
+
+{% macro show_ip_step(number, step) %}
+{% call show_ip_step_with_extra(number, step) %}{% endcall %}
 {% endmacro %}
