@@ -15,7 +15,7 @@
 ### {{ faq.title }} <small><small>{{show_stars(faq.priority) }}</small></small>
 
 <div class="indented">
-<include src="faq.md#{{ faq.id }}" />
+<include src="faq.mbdf#{{ faq.id }}" />
 </div>
 
 </div>

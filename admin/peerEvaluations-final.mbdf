@@ -6,7 +6,7 @@
 * ==There will be bonus marks for <tooltip content="i.e., those who are close to the overall consensus">good</tooltip> peer evaluations==.
 * This session includes all questions from the Midterm Peer Evaluation:
 
-{{ embed_topic("peerEvaluations-midterm.md#questions", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation Questions", "1", indent="2") }}
+{{ embed_topic("peerEvaluations-midterm.mbdf#questions", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation Questions", "1", indent="2") }}
 
 * In addition, it contains these additional questions:
 

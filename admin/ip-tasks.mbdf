@@ -296,7 +296,7 @@ This activity is worth 2 participation points!
   * ==The file name should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
   * Ideally, the product name is visible in the screenshot e.g., in the title bar of the Window
 
-{{ embed_topic("tp-deliverables-website.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
+{{ embed_topic("tp-deliverables-website.mbdf#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
 
 * **Add a brief User Guide (UG)**
 

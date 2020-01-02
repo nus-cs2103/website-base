@@ -20,47 +20,47 @@ Here is a list of main deliverables of the project; their details are given in t
 
 ### <div class="text-white bg-info p-1">Deliverable: Executable</div>
 <span id="tp-deliverables-executable">
-<include src="tp-deliverables-executable.md" />
+<include src="tp-deliverables-executable.mbdf" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Source code</div>
 <span id="tp-deliverables-sourcecode">
-<include src="tp-deliverables-sourcecode.md" />
+<include src="tp-deliverables-sourcecode.mbdf" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: User Guide (UG)</div>
 <span id="tp-deliverables-ug">
-<include src="tp-deliverables-ug.md" />
+<include src="tp-deliverables-ug.mbdf" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div>
 <span id="tp-deliverables-dg">
-<include src="tp-deliverables-dg.md" />
+<include src="tp-deliverables-dg.mbdf" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Product Website</div>
 <span id="tp-deliverables-website">
-<include src="tp-deliverables-website.md" />
+<include src="tp-deliverables-website.mbdf" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Project Portfolio Page (PPP)</div>
 <span id="tp-deliverables-ppp">
-<include src="tp-deliverables-ppp.md" />
+<include src="tp-deliverables-ppp.mbdf" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Demo</div>
 <span id="tp-deliverables-demo">
-<include src="tp-deliverables-demo.md" />
+<include src="tp-deliverables-demo.mbdf" />
 </span>
 
 ### <div class="text-white bg-primary p-1">Deliverable: Practical Exam Dry Run (PE-D)</div>
 <span id="tp-deliverables-practicalexam-dry-run">
-<include src="tp-deliverables-ped.md" />
+<include src="tp-deliverables-ped.mbdf" />
 </span>
 
 ### <div class="text-white bg-success p-1">Deliverable: Practical Exam (PE)</div>
 <span id="tp-deliverables-practicalexam">
-<include src="tp-deliverables-pe.md" />
+<include src="tp-deliverables-pe.mbdf" />
 </span>
 
 </div>

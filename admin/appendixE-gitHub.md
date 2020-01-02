@@ -22,7 +22,7 @@ Create a personal GitHub account if you don't have one yet.
 3. ==You are discouraged from changing your GitHub username during the semester/exam/grading period== as it can cause our auto-grading scripts to miss your GitHub activities. If you do change your GitHub username during that period, please let us know immediately.
 
 <modal large title="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
-  <include src="tp-deliverables-website.md#profile-photo"/>
+  <include src="tp-deliverables-website.mbdf#profile-photo"/>
 </modal>
 
 </div>

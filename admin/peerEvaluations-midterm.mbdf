@@ -29,19 +29,19 @@
 <div id="teamMemberEvaluation-dg">
 
 <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the Developer Guide is,**
-<include src="peerEvaluations-midterm.md#equalShareScale" />
+<include src="peerEvaluations-midterm.mbdf#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-teamTasks">
 
 <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the team-based tasks is,**
-<include src="peerEvaluations-midterm.md#equalShareScale" />
+<include src="peerEvaluations-midterm.mbdf#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-implementation">
 
 <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,**
-<include src="peerEvaluations-midterm.md#equalShareScale" />
+<include src="peerEvaluations-midterm.mbdf#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-conduct">
