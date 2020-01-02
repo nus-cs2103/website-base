@@ -3,7 +3,7 @@
 
 
 
-{% call show_admin_page("tp-w12-mid-v14") %}
+{% call show_admin_page("tp-w12") %}
 <div id="main">
 
 {% call show_project_summary_lead()%}
@@ -74,7 +74,7 @@
 * {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct.
 
 <div class="indented-level2">
-{{ embed_topic("tp-w10-mid-v13.md#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-v1.3 → Making the Code RepoSense-Compatible", "1") }}
+{{ embed_topic("tp-w10.md#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-v1.3 → Making the Code RepoSense-Compatible", "1") }}
 </div>
 
 </div>

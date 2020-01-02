@@ -3,7 +3,7 @@
 
 {% from "common/admin.njk" import show_admin_page with context %}
 
-{% call show_admin_page("tp-w09-v12") %}
+{% call show_admin_page("tp-w09") %}
 <div id="main">
 
 {% call show_project_summary_lead()%}

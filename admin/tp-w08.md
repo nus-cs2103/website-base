@@ -4,7 +4,7 @@
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
-{% call show_admin_page("tp-w08-mid-v12") %}
+{% call show_admin_page("tp-w08") %}
 <div id="main">
 
 {% call show_project_summary_lead()%}
@@ -18,7 +18,7 @@
 
 **Reminder:**
 
-<include src="tp-w06-mid-v11.md#milestoneCumulative" />
+<include src="tp-w06.md#milestoneCumulative" />
 </box>
 
 

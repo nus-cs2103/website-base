@@ -3,7 +3,7 @@
 
 
 
-{% call show_admin_page("tp-w07-v11") %}
+{% call show_admin_page("tp-w07") %}
 <div id="main">
 
 {% call show_project_summary_lead()%}
@@ -81,7 +81,7 @@ Update the following pages in your project repo:
   {{ icon_tip }} While it is more convenient for one person to update the entire UG, splitting the work will give you a good opportunity to learn to deal with merge conflicts.
 
 <modal large title="About Dividing Documentation Work" id="modal:v11-divideDocs">
-  <include src="tp-w06-mid-v11.md#divideDocs"/>
+  <include src="tp-w06.md#divideDocs"/>
 </modal>
 
 #### {{ thumb(3) }} {{ icon_team }} Update the DG: user stories, glossary, NFRs, use cases

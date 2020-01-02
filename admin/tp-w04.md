@@ -3,7 +3,7 @@
 
 
 
-{% call show_admin_page("tp-w04-inception") %}
+{% call show_admin_page("tp-w04") %}
 <div id="main">
 
 {% call show_project_summary_lead()%}

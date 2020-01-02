@@ -3,7 +3,7 @@
 
 
 
-{% call show_admin_page("tp-w05-v10") %}
+{% call show_admin_page("tp-w05") %}
 <div id="main">
 
 {% call show_project_summary_lead()%}
