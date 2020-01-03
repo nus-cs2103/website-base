@@ -86,7 +86,9 @@ Given below are some guidance on the recommended progress at this point of the p
 
 {{ icon_individual }} indicates an individual milestone %%(i.e., each team member has to do their part of the milestone, graded individually)%% while {{ icon_team }} indicates a team milestone %%(some or all members may do the work; graded for the whole team)%%.
 
-{{ icon_important_big_red }} **Milestone progress is graded**. Be reminded that reaching individual and team milestones are considered for <trigger trigger="click" for="modal:v11-projectMgtGrading">grading the _project management_ component</trigger> of your project grade.
+{{ icon_important_big_red }} **Milestone progress is graded**. Be reminded that reaching individual and team milestones are considered for <trigger trigger="click" for="modal:w06Intro-projectMgtGrading">grading the _project management_ component</trigger> of your project grade.
+
+{{ embed_topic("tp-grading.md#project-management-grading", "Admin " + icon_embedding + " tP → Grading → Project Management", "3", indent="1") }}
 
 {{ icon_important_big_red }} **Most aspects project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. We prefer not to spend admin resources processing requests for partial credit for work that did not follow the instructions precisely, unless the progress was not detected due to a bug in the script.
 
