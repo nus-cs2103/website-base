@@ -42,14 +42,8 @@
 
 
 {% macro show_admin_section_to_read(heading, priority, source, is_flat=false) %}
-{% set  panel_type = "dark" if is_flat else "default"%}
-{% set  panel_expandable = "false" if is_flat else "true"%}
-{% set  panel_decorations = "expanded no-switch" if is_flat else ""%}
 {% set panel_title %} Admin {{ icon_embedding | safe }} {{ heading }} {{ show_stars(priority) }}{% endset %}
-{% if is_flat %}
-  {% set panel_title %}<span class="text-white">{{ panel_title | safe }}</span> {% endset %}
-{% endif %}
-<panel  type="{{ panel_type }}" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" >
+<panel  type="{{ panel_type }}" minimized >
 <span slot="header" class="card-title">{{ panel_title | safe }}</span>
 <include src="{{ source }}" />
 </panel><p/>
@@ -87,7 +81,7 @@
 {% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show, is_flat=false) %}
 
 #### {{ thumb("+") }} Other admin info you may want to read this week:
-<div class="indented">
+<div class="indented-level2">
 {% for section in sections_to_show %}
 {% if section.topic_id %}
   {% set div_to_show = section.div if section.div else "main"  %}

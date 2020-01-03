@@ -1,0 +1,72 @@
+{% from "common/admin.njk" import admin_topics_to_read, faqs, policies, show_admin_summary, topics with context %}
+{% from "common/macros.njk" import embed_topic, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
+{% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
+
+{% set admin_schedule = {
+week01: [
+  {id: 'submit_pre_lecture_quiz', deadline: "by week 2 Monday 2359"},
+  {id: 'set_up_tools', deadline: "before the lecture"},
+  {id: 'submit_pre_module_survey', deadline: "by Friday 2359"},
+  {id: 'learn_about_the_module', deadline: ""},
+  {id: 'attend_the_first_lecture', deadline: ""}
+]
+} %}
+{#====================================================================================================================#}
+{# Tasks
+{#====================================================================================================================#}
+<span id="heading_submit_pre_lecture_quiz">Submit pre-lecture quiz</span>
+<span id="desc_submit_pre_lecture_quiz">
+
+* **Read prerequisite  [{{ show_as_tab('Topics', icon_book) }}](topics.html)** allocated for week 1. **Submit `Lecture 1 - Pre-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
+</span>
+{#====================================================================================================================#}
+<span id="heading_set_up_tools">Set up the tools</span>
+<span id="desc_set_up_tools">
+
+* Follow the <span class="border pr-1 pl-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions of the following tools.
+
+{{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
+{{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="2") }}
+{{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "2", indent="2") }}
+{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_pre_module_survey">Submit the pre-module survey</span>
+<span id="desc_submit_pre_module_survey">
+
+* **Submit the pre-module survey ==(compulsory)==**<br>
+  _Pre-Module Survey_ will be available on LumiNUS **Week 1 Monday - Friday 2359**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
+</span>
+{#====================================================================================================================#}
+<span id="heading_learn_about_the_module">Learn about the module</span>
+<span id="desc_learn_about_the_module">
+
+* Read the following admin info about the module.
+
+{{ embed_topic("moduleExpectations.md#main", "Admin " + icon_embedding + " **Module expectations and the ==star rating system==**", "1", indent="2", type="danger") }}
+{{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="2", type="danger") }}
+{{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="2", type="info") }}
+{{ embed_topic("weeklySchedule.md#main", "Admin " + icon_embedding + " **Weekly schedule**", "2", indent="2", type="warning") }}
+{{ embed_topic("moduleOverview.md#main", "Admin " + icon_embedding + " **Module overview**", "4", indent="2", type="success") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_attend_the_first_lecture">Attend the first lecture</span>
+<span id="desc_attend_the_first_lecture">
+
+* Attend the Week 1 lecture (Week 1 lecture is ==**compulsory**==).
+* Bring your computer to the lecture. Some lecture activities will need it.
+</span>
+{#====================================================================================================================#}
+<span id="heading_"></span>
+<span id="desc_">
+
+
+</span>
+{#====================================================================================================================#}
+{#====================================================================================================================#}
+
+{% macro show_weekly_admin_page(week_num) %}
+{{ show_xp_page(week_num, admin_schedule['week' + week_num], '../../admin/admin-tasks.mbdf') }}
+
+{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read['week' + week_num], is_flat=false ) }}
+{% endmacro %}

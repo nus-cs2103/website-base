@@ -1,4 +1,4 @@
-{% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 {% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
 

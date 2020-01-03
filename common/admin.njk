@@ -128,11 +128,11 @@ pageNav: 4
 
 {% set faqs = [
   {id: "admin-faq-whereIsEverything", title: "Where is everything?", priority: 1},
-  {id: "admin-faq-tVsNonT", title: "What are the differences between the T and the non-T version of the module?", priority: 4},
+  {id: "admin-faq-tVsNonT", title: "What are the differences between " + module + "T and " + module + "?", priority: 4},
   {id: "admin-faq-highWorkload", title: "Why the workload is so high?", priority: 4},
   {id: "admin-faq-aPlus", title: "What are the extra requirements to get an A+?", priority: 3},
   {id: "admin-faq-beanCounting", title: "Why so much bean counting?", priority: 4},
-  {id: "admin-faq-separateWebsite", title: "Why you force me to visit a separate website instead of using LumiNUS?", priority: 4},
+  {id: "admin-faq-separateWebsite", title: "Why use a separate website instead of using LumiNUS?", priority: 4},
   {id: "admin-faq-slideFormat", title: "Why slides are not detailed?", priority: 4},
   {id: "admin-faq-selfStudy", title: "Why so much self-study?", priority: 4},
   {id: "admin-faq-noLaptop", title: "What if I don’t carry around a laptop?", priority: 4},
@@ -158,7 +158,7 @@ pageNav: 4
 ]%}
 
 {% set admin_topics_to_read = {
-week1: [
+week01: [
   {faq_id: "admin-faq-whereIsEverything"},
   {topic_id: "tp-teams"},
   {topic_id: "programmingLanguages"},
