@@ -1,57 +1,61 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
-{% set DIs = {
-Level_1: {id: 'Level-1', title: 'Greet, Echo, Exit', tag: ''},
-Level_2: {id: 'Level-2', title: 'Add, List', tag: ''},
-Level_3: {id: 'Level-3', title: 'Mark as Done', tag: ''},
-Level_4: {id: 'Level-4', title: 'ToDo, Event, Deadline', tag: ''},
-Level_5: {id: 'Level-5', title: 'Handle Errors', tag: ''},
-Level_6: {id: 'Level-6', title: 'Delete', tag: ''},
-Level_7: {id: 'Level-7', title: 'Save', tag: ''},
-Level_8: {id: 'Level-8', title: 'Dates and Times', tag: ''},
-Level_9: {id: 'Level-9', title: 'Find', tag: ''},
-Level_10: {id: 'Level-10', title: 'GUI', tag: ''},
-A_TextUiTesting: {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: ''},
-A_Enums: {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'},
-A_MoreOOP: {id: 'A-MoreOOP', title: 'Use More OOP', tag: ''},
-A_Packages: {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'},
-A_JUnit: {id: 'A-JUnit', title: 'Add JUnit Tess', tag: ''},
-A_Jar: {id: 'A-Jar', title: 'Create a JAR File', tag: ''},
-A_JavaDoc: {id: 'A-JavaDoc', title: 'JavaDoc', tag: ''},
-A_CodingStandard: {id: 'A-CodingStandard', title: 'Follow the Coding Standard', tag: ''},
-A_Gradle: {id: 'A-Gradle', title: 'Use Gradle', tag: ''},
-A_CheckStyle: {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
-A_Varargs: {id: 'A-Varargs', title: 'Use Varargs', tag: 'if-applicable'},
-A_Assertions: {id: 'A-Assertions', title: 'Use Assertions', tag: ''},
-A_CodeQuality: {id: 'A-CodeQuality', title: 'Improve Code Quality', tag: ''},
-A_Lambdas: {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
-A_Streams: {id: 'A-Streams', title: 'Use Streams', tag: 'optional'},
-A_Travis: {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
-} %}
-
 {% set ip_schedule = {
 week02: [
   {id: 'learn_about_the_project', deadline: false},
   {id: 'set_up_prerequisites', deadline: false},
   {id: 'set_up_project', deadline: false},
-  {id: 'add_increments', suffix: ' while committing frequently', increments:  [DIs.Level_1, DIs.Level_2, DIs.Level_3, DIs.Level_4, DIs.A_TextUiTesting, DIs.Level_5, DIs.Level_6, DIs.A_Enums], deadline: 'by Thursday 2359'}
+  {id: 'add_increments', suffix: ' while committing frequently', deadline: 'by Thursday 2359', increments: [
+    {id: 'Level-1', title: 'Greet, Echo, Exit', tag: ''},
+    {id: 'Level-2', title: 'Add, List', tag: ''},
+    {id: 'Level-3', title: 'Mark as Done', tag: ''},
+    {id: 'Level-4', title: 'ToDo, Event, Deadline', tag: ''},
+    {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: ''},
+    {id: 'Level-5', title: 'Handle Errors', tag: ''},
+    {id: 'Level-6', title: 'Delete', tag: ''},
+    {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'}
+  ]}
 ],
 week03: [
   {id: 'finish_leftover_tasks', deadline: false},
   {id: 'create_pr_to_upstream', deadline: false},
-  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.Level_7, DIs.Level_8], deadline: false},
-  {id: 'add_increments', suffix: '', increments:  [DIs.A_MoreOOP, DIs.A_Packages, DIs.A_JUnit, DIs.A_Jar], deadline: false},
-  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_JavaDoc, DIs.A_CodingStandard, DIs.Level_9], deadline: false}
+  {id: 'add_increments', suffix: ' as parallel branches', deadline: false, increments:  [
+    {id: 'Level-7', title: 'Save', tag: ''},
+    {id: 'Level-8', title: 'Dates and Times', tag: ''}
+  ]},
+  {id: 'add_increments', suffix: '', deadline: false, increments:  [
+    {id: 'A-MoreOOP', title: 'Use More OOP', tag: ''},
+    {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'},
+    {id: 'A-JUnit', title: 'Add JUnit Tess', tag: ''},
+    {id: 'A-Jar', title: 'Create a JAR File', tag: ''}
+  ]},
+  {id: 'add_increments', suffix: ' as parallel branches', deadline: false, increments:  [
+    {id: 'A-JavaDoc', title: 'JavaDoc', tag: ''},
+    {id: 'A-CodingStandard', title: 'Follow the Coding Standard', tag: ''},
+    {id: 'Level-9', title: 'Find', tag: ''}
+  ]}
 ],
 week04: [
   {id: 'review_two_prs', deadline: false},
-  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_Gradle, DIs.A_CheckStyle, DIs.Level_10, DIs.A_Varargs], deadline: false}
+  {id: 'add_increments', suffix: ' as parallel branches', deadline: false, increments:  [
+    {id: 'A-Gradle', title: 'Use Gradle', tag: ''},
+    {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
+    {id: 'Level-10', title: 'GUI', tag: ''},
+    {id: 'A-Varargs', title: 'Use Varargs', tag: 'if-applicable'}
+  ]}
 ],
 week05: [
   {id: 'generate_new_jar', deadline: false},
-  {id: 'add_increments', suffix: ' as PRs', increments:  [DIs.A_Assertions, DIs.A_CodeQuality, DIs.A_Lambdas, DIs.A_Streams], deadline: false},
-  {id: 'add_increments', suffix: '', increments:  [DIs.A_Travis], deadline: false},
+  {id: 'add_increments', suffix: ' as PRs', deadline: false, increments:  [
+    {id: 'A-Assertions', title: 'Use Assertions', tag: ''},
+    {id: 'A-CodeQuality', title: 'Improve Code Quality', tag: ''},
+    {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
+    {id: 'A-Streams', title: 'Use Streams', tag: 'optional'}
+  ]},
+  {id: 'add_increments', suffix: '', deadline: false, increments:  [
+    {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
+  ]},
   {id: 'add_an_extension', deadline: false}
 ],
 week06: [
