@@ -22,7 +22,7 @@ The iP is based on the generic project called [_Project Duke_](../se-book-adapte
 <include src="dukeFragment.md" boilerplate var-header="**Duke - Overview**" var-fragment="text.md#intro" />
 <br>
 
-The project is to be **done over weeks 2-6**.
+The project is to be **done over the first half of the semester**.
 
 <box type="warning">
 

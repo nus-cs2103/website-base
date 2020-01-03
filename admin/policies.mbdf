@@ -107,8 +107,8 @@ Given below are how to give credit for things you reuse from elsewhere. These re
 
 
 If you **used a third party library**: 
-* Mention in the `README.adoc` (under the _Acknowledgements_ section) 
-* mention in the <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented
+* iP/tP: Mention in the `README` file (under the _Acknowledgements_ section) 
+* tP: Mention in the <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented
 
 
 If you **reused code snippets found on the Internet** %%e.g. from StackOverflow answers%% or<br>
