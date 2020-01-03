@@ -30,58 +30,41 @@ A_Streams: {id: 'A-Streams', title: 'Use Streams', tag: 'optional'},
 A_Travis: {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
 } %}
 
-{% set ip_steps = {
-  learn_about_the_project: {id: 'learn_about_the_project', deadline: false},
-  set_up_prerequisites: {id: 'set_up_prerequisites', deadline: false},
-  set_up_project: {id: 'set_up_project', deadline: false},
-  finish_leftover_tasks: {id: 'finish_leftover_tasks', deadline: false},
-  create_pr_to_upstream: {id: 'create_pr_to_upstream', deadline: false},
-  review_two_prs: {id: 'review_two_prs', deadline: false},
-  generate_new_jar: {id: 'generate_new_jar', deadline: false},
-  add_an_extension: {id: 'add_an_extension', deadline: false},
-  finalize_features: {id: 'finalize_features', deadline: false},
-  set_up_website: {id: 'set_up_website', deadline: false},
-  release_product: {id: 'release_product', deadline: false},
-  do_final_cleanups: {id: 'do_final_cleanups', deadline: false},
-  submit_final_version: {id: 'submit_final_version', deadline: 'by Monday 2359'},
-  evaluate_peer_ips: {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
-} %}
-
 {% set ip_schedule = {
 week02: [
-  ip_steps.learn_about_the_project,
-  ip_steps.set_up_prerequisites,
-  ip_steps.set_up_project,
+  {id: 'learn_about_the_project', deadline: false},
+  {id: 'set_up_prerequisites', deadline: false},
+  {id: 'set_up_project', deadline: false},
   {id: 'add_increments', suffix: ' while committing frequently', increments:  [DIs.Level_1, DIs.Level_2, DIs.Level_3, DIs.Level_4, DIs.A_TextUiTesting, DIs.Level_5, DIs.Level_6, DIs.A_Enums], deadline: 'by Thursday 2359'}
 ],
 week03: [
-  ip_steps.finish_leftover_tasks,
-  ip_steps.create_pr_to_upstream,
+  {id: 'finish_leftover_tasks', deadline: false},
+  {id: 'create_pr_to_upstream', deadline: false},
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.Level_7, DIs.Level_8], deadline: false},
   {id: 'add_increments', suffix: '', increments:  [DIs.A_MoreOOP, DIs.A_Packages, DIs.A_JUnit, DIs.A_Jar], deadline: false},
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_JavaDoc, DIs.A_CodingStandard, DIs.Level_9], deadline: false}
 ],
 week04: [
-  ip_steps.review_two_prs,
+  {id: 'review_two_prs', deadline: false},
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_Gradle, DIs.A_CheckStyle, DIs.Level_10, DIs.A_Varargs], deadline: false}
 ],
 week05: [
-  ip_steps.generate_new_jar,
+  {id: 'generate_new_jar', deadline: false},
   {id: 'add_increments', suffix: ' as PRs', increments:  [DIs.A_Assertions, DIs.A_CodeQuality, DIs.A_Lambdas, DIs.A_Streams], deadline: false},
   {id: 'add_increments', suffix: '', increments:  [DIs.A_Travis], deadline: false},
-  ip_steps.add_an_extension
+  {id: 'add_an_extension', deadline: false}
 ],
 week06: [
-  ip_steps.finalize_features,
-  ip_steps.set_up_website,
-  ip_steps.release_product
+  {id: 'finalize_features', deadline: false},
+  {id: 'set_up_website', deadline: false},
+  {id: 'release_product', deadline: false}
 ],
 week07: [
-  ip_steps.do_final_cleanups,
-  ip_steps.submit_final_version
+  {id: 'do_final_cleanups', deadline: false},
+  {id: 'submit_final_version', deadline: 'by Monday 2359'}
 ],
 week08: [
-  ip_steps.evaluate_peer_ips
+  {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
 ]
 } %}
 
