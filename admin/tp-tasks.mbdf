@@ -3,36 +3,136 @@
 {% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
 
 {% set tp_schedule = {
-week3: [
+week03: [
   {id: 'get_familiar_with_ab3', deadline: false},
   {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'}
 ],
-week4: [
+week04: [
   {id: 'start_weekly_meetings', deadline: false},
   {id: 'decide_project_direction', deadline: false},
   {id: 'start_project_notes', deadline: 'before the tutorial'}
+],
+week05: [
+  {id: 'brainstorm_user_stories', deadline: 'before the tutorial'},
+  {id: 'prioritize_user_stories', deadline: 'before/during the tutorial'}
+],
+week06: [
+  {id: 'set_up_project_repo', deadline: false},
+  {id: 'get_familiar_with_the_code_base', deadline: false},
+  {id: 'conceptualize_v2', deadline: false},
+  {id: 'draft_the_ug', deadline: false},
+  {id: 'refine_product_design', deadline: false}
+],
+week07: [
+  {id: 'update_website_aboutus_contactus_readme', deadline: false},
+  {id: 'update_the_ug', deadline: false},
+  {id: 'update_dg_user_stories_etc', deadline: false},
+  {id: 'wrap_up_v11', deadline: false},
+  {id: 'draft_a_rough_project_plan', deadline: false},
+  {id: 'start_implementing_a_minimal_version', deadline: false}
+],
+week08: [
+  {id: 'ensure_you_know_tp_expectations', deadline: false},
+  {id: 'adjust_process_rigor', deadline: false},
+  {id: 'start_proper_milestone_management', deadline: false},
+  {id: 'add_another_increment_to_your_feature', deadline: false}
+],
+week09: [
+  {id: 'deliver_an_intermediate_version_of_your_enhancement', deadline: false},
+  {id: 'wrap_up_v12', deadline: false},
+  {id: 'do_an_informal_demo', deadline: false}
+],
+week10: [
+  {id: 'start_on_the_full_version', deadline: false},
+  {id: 'update_dg_with_design_details', deadline: 'IMPORTANT'},
+  {id: 'do_a_release', deadline: false},
+  {id: 'make_code_reposense_compatible', deadline: false}
+],
+week11: [
+  {id: 'deliver_the_feature', deadline: false},
+  {id: 'update_user_docs', deadline: false},
+  {id: 'release_as_a_jar_file', deadline: false},
+  {id: 'wrap_up_v13', deadline: false},
+  {id: 'attend_the_PED', deadline: 'During the lecture'}
+],
+week12: [
+  {id: 'tweak_product_as_per_PED', deadline: false},
+  {id: 'draft_the_ppp', deadline: false},
+  {id: 'prepare_for_demo', deadline: false},
+  {id: 'double_check_reposense_compatibility', deadline: false}
+],
+week13: [
+  {id: 'do_final_tweaks', deadline: false},
+  {id: 'submit_final_deliverables', deadline: 'by Monday 2359'},
+  {id: 'wrap_up_final_milesone', deadline: 'by Wednesday 2359'},
+  {id: 'demo_the_product', deadline: 'during the tutorial'},
+  {id: 'prepare_for_PE', deadline: 'before the lecture'},
+  {id: 'attend_the_PE', deadline: 'during the lecture'}
 ]
 } %}
 
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
-<span id="cs2103-week4-intro">
+<span id="cs2103-week04-intro">
 
 Given below are some guidance on the recommended progress at this point of the project
 
+</span>
+{#====================================================================================================================#}
+<span id="cs2103-week06-intro">
+
+<box dismissible>
+
+{{ icon_individual }} indicates an individual milestone %%(i.e., each team member has to do their part of the milestone, graded individually)%% while {{ icon_team }} indicates a team milestone %%(some or all members may do the work; graded for the whole team)%%.
+
+{{ icon_important_big_red }} **Milestone progress is graded**. Be reminded that reaching individual and team milestones are considered for <trigger trigger="click" for="modal:v11-projectMgtGrading">grading the _project management_ component</trigger> of your project grade.
+
+{{ icon_important_big_red }} **Most aspects project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. We prefer not to spend admin resources processing requests for partial credit for work that did not follow the instructions precisely, unless the progress was not detected due to a bug in the script.
+
+<span id="milestoneCumulative">
+
+{{ icon_important_big_red }} **Milestone requirements are cumulative**. The recommended progress for the mid-milestone is an implicit requirement for the actual milestone unless a milestone requirement overrides a mid-milestone requirement %%e.g., mid-milestone requires a document to be in a temp format while the actual milestone requires it to be in the proper format%%. Similarly, a requirement for milestone `n` is also an implicit requirement for milestone `n+1` unless `n+1` overrides the `n` requirement. This means ==if you miss some requirement at milestone `n`, you should try to achieve it before milestone `n+1`== or else it could be noted again as a 'missed requirement' at milestone `n+1`.
+</span>
+</box>
+</span>
+{#====================================================================================================================#}
+<span id="cs2103-week08-intro">
+
+<box>
+
+**Reminder:**
+
+<include src="tp-tasks.mbdf#milestoneCumulative" />
+</box>
+</span>
+
+{#====================================================================================================================#}
+<span id="cs2103-week12-intro">
+
+<box dismissible>
+
+{{ icon_tip }} when setting the v1.4 deadline in GitHub milestones, remember that the v1.4 submission deadline is Week 13 Monday for _everyone_ (does not vary by tutorial day). Set your own deadline accordingly, or else the bot will flag it as an 'unsuitable' deadline.
+</box>
+
+<box background-color="white" border-color="red">
+
+**Remind yourself of the project grading criteria:**
+
+<panel type="seamless" src="tp-grading.md#main" header="%%Admin {{ icon_embedding }} tP → Grading%%" class="embedding" />
+</box>
 </span>
 
 {#====================================================================================================================#}
 {# Steps
 {#====================================================================================================================#}
-<span id="heading_get_familiar_with_ab3">Get familiar with AB3 features</span>
+<span id="heading_get_familiar_with_ab3">{{ icon_individual }} Get familiar with AB3 features</span>
 <span id="desc_get_familiar_with_ab3">
 
 * **Familiarize yourself with AB3**: Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html) and play around with it to familiarize with its current features.
 </span>
 {#====================================================================================================================#}
-<span id="heading_set_up_meeting_time">Set up a project meeting time</span>
+<span id="heading_set_up_meeting_time">{{ icon_team }} Set up a project meeting time</span>
 <span id="desc_set_up_meeting_time">
 
 * After forming teams, **set up a weekly project meeting time/venue (and communication channels) with your team members**:
@@ -40,13 +140,13 @@ Given below are some guidance on the recommended progress at this point of the p
 {{ embed_topic("tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_weekly_meetings">Start weekly project meetings</span>
+<span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>
 <span id="desc_start_weekly_meetings">
 
 * We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, ==it is also acceptable to discuss weekly post-lecture quiz together with team members as you do the quiz== i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.
 </span>
 {#====================================================================================================================#}
-<span id="heading_decide_project_direction">Decide on a overall project direction %%(user profile, problem addressed)%%</span>
+<span id="heading_decide_project_direction">{{ icon_team }} Decide on a overall project direction %%(user profile, problem addressed)%%</span>
 <span id="desc_decide_project_direction">
 
 * **Decide project direction, target user profile, and problem addressed**: Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:
@@ -57,16 +157,622 @@ Given below are some guidance on the recommended progress at this point of the p
 
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_project_notes">Start a collaborative doc to take project notes</span>
+<span id="heading_start_project_notes">{{ icon_team }} Start a collaborative doc to take project notes</span>
 <span id="desc_start_project_notes">
 
 * We recommend keeping project notes in easy-to-use collaborative docs such as GoogleDocs/sheets. Document the decisions taken above in one of those docs.
 </span>
 {#====================================================================================================================#}
-<span id="heading_"></span>
-<span id="desc_">
+<span id="heading_brainstorm_user_stories">{{ icon_team }} Brainstorm user stories</span>
+<span id="desc_brainstorm_user_stories">
+
+  <img class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px">
+
+* Get together with your team members and <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> **&nbsp;for the v2.0 of the product**. Note that in the module project you will deliver only up to v1.4 but here you should consider up to v2.0 (i.e. beyond the module).
+  * It is ok to have more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.%%
+  * Refer <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories →  Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.
+  * You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
+  * Note that ==you should not 'evaluate' the value of user stories while doing the above==. %%Reason: an important aspect of brainstorming is not judging the ideas generated.%%
 
 
+<modal large title="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
+  <include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+<modal large title="Textbook {{ icon_embedding }}" id="modal:v10-userstories">
+  <include src="../book/specifyingRequirements/userStories/introduction/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+<modal large title="Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools">
+  <include src="../book/specifyingRequirements/userStories/usage/tools.md"/>
+</modal>
+
+<modal large title="Textbook {{ icon_embedding }} Specifying Requirements → UserStories →  Usage → (section) Tips" id="modal:v10-userstoryusagetips">
+  <include src="../book/specifyingRequirements/userStories/usage/text.md#usageTips"/>
+</modal>
+
+<div class="indented-level3">
+<box>
+
+{{ icon_tip }} Recommended: **You can use GitHub issue tracker to manage user stories**, but for that you need to set up your team's GitHub organization, project fork, and issue tracker first. Instructions for doing those steps are in the panel below.
+
+<panel header="%%Admin {{ icon_embedding }} Appendix E: GitHub (extract)%%">
+  <include src="appendixE-gitHub.md#organization-setup"/>
+  <include src="appendixE-gitHub.md#repo-setup"/>
+  <include src="appendixE-gitHub.md#issue-tracker-setup"/>
+  <include src="appendixE-gitHub.md#tp-schedule-tracking"/>
+</panel>
+
+</box>
+
+<panel header="{{ icon_example }} User Story examples (from a different product)" minimized>
+<span class="text-monospace">
+
+* As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.
+* As a user I can find upcoming tasks, so that I can decide what needs to be done soon.
+* As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.
+* As a new user I can view more information about a particular command, so that I can learn how to use various commands.
+* As an advanced user I can use shorter versions of a command, so that type a command faster.
+</span>
+</panel>
+</div>
+</span>
+{#====================================================================================================================#}
+<span id="heading_prioritize_user_stories">{{ icon_team }} Prioritize the user stories</span>
+<span id="desc_prioritize_user_stories">
+
+  <img class="indented-level2" src="{{baseUrl}}/admin/images/userstories.png" width="400px">
+
+* Suggested workflow:
+  * Take one user story at a time and get team member opinions about it.
+  * Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:
+    * `Must-Have` : The product will be practically useless to the target user without this feature.
+    * `Nice-To-Have` : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.
+    * `Not-Useful` : No significant benefit to the target user, or does not fit into the product vision.
+  * %%If you are using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.%%
+</span>
+{#====================================================================================================================#}
+<span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
+<span id="desc_set_up_project_repo">
+
+* Set up the team org and the team repo as explained below:
+
+{{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E(extract): **Organization setup**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#repo-setup", "Admin " + icon_embedding + " Appendix E(extract): **Repo setup**", "1", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the code base</span>
+<span id="desc_get_familiar_with_the_code_base">
+
+* Do the following tutorials to get familiar with the codebase
+  * [Tutorial 1 - Tracing a Command Execution Path]({{ module_gh_pages }}/addressbook-level3/tutorials/TracingCode)
+  * [Tutorial 2 - Removing a field from an entity]({{ module_gh_pages }}/addressbook-level3/tutorials/RemovingFields)
+    * If you are an experienced programmer, you can remove a different field than the one given in the tutorial.
+    * Submission: Do your changes in a branch named `tutorial-removing-field` and push to your fork.
+  * [Tutorial 3 - Adding a new Command]({{ module_gh_pages }}/addressbook-level3/tutorials/AddRemark)
+    * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
+    * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. 
+* ==Ideally, you should do the above tutorials by week 6== (i.e., midnight before the tutorial), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
+* The PRs created for tutorials need not be merged, unless the changes are actually in line with your project idea.
+* For reference, given below is the workflow you should follow use to merge code in your tP:
+
+{{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_conceptualize_v2">{{ icon_team }} Conceptualize v2.0</span>
+<span id="desc_conceptualize_v2">
+
+* Based on your user story categorization in the previous week, given module requirements/constraints for the project, and the current state of the product, select which user stories you are likely to include in v2.0.
+* Conceptualize the product in terms of how it will look like at v2.0.
+</span>
+{#====================================================================================================================#}
+<span id="heading_draft_the_ug">{{ icon_individual }} Draft the UG</span>
+<span id="desc_draft_the_ug">
+
+* Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at v2.0.
+  * We recommend that you follow the existing [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
+  * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in asciidoc format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
+  * Do try to come up with concrete command syntax for feature that you would implement (at least for those that you will implement by v1.4).
+  * Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%.
+  * {{ icon_important_big_red }} **Submission**: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `CS2103T-W09-1.pdf`, and upload to LumiNUS.<br><br>
+
+<div id="divideDocs" class="indented">
+
+  <box>
+
+  {{ icon_tip }} It is highly recommended that you **divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding** %%e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%. For features that are not planned to be implemented by v1.4, you can divide them based on who will be implementing them _if_ the project were to continue until v2.0 (hypothetically).
+
+  %%Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.%%
+   
+  </box>
+</div>
+</span>
+{#====================================================================================================================#}
+<span id="heading_refine_product_design">{{ icon_team }} Refine the product design</span>
+<span id="desc_refine_product_design">
+
+* Review the UG to ensure the features written by each member fit together to form a cohesive product. Note that cohesiveness of the product is a grading criterion.
+</span>
+{#====================================================================================================================#}
+<span id="heading_update_website_aboutus_contactus_readme">{{ icon_team }} Update project website: `AboutUs`, `ContactUs`, `README`</span>
+<span id="desc_update_website_aboutus_contactus_readme">
+
+<box type="info">
+
+**Recommended procedure for updating docs**:
+
+1. Divide among yourselves who will update which parts of the document(s).
+1. Update the team repo by following the recommended workflow.
+
+{{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3") }}
+
+</box>
+
+Update the following pages in your project repo:
+
+* **_About Us_ page**:
+  This page is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
+  * Replace info of SE-EDU developers with info of your team. Include a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.
+  * Including the name/photo of the supervisor/lecturer is optional.
+  * The filename of the profile photo (even a placeholder image) should be `doc/images/githbub_username_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%. ==If you photo is in jpg format, name the file as `.png` anyway==.
+  * Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities %%(as explained in Admin {{ icon_embedding }} Project Scope)%%</trigger> later in the project, if necessary.
+
+<modal large title="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:mid-v12-photo">
+  <include src="tp-deliverables-website.mbdf#profile-photo"/>
+</modal>
+
+<modal large title="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
+  <include src="tp-expectations.md#roles"/>
+</modal>
+
+* **_Contact Us_ Page**: Update to match your product.
+
+* **README.adoc** page: Update it to match your project.
+
+  * Add a UI mockup of your intended final product.
+    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example](projectList.html)), yours should not look out of place.%%
+
+  * The original `README.adoc` file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should ==restructure this page to look like the home page of a real product== (not a school project) targeting real users. For instance,
+    * remove references to addressbook-level2
+    * remove Learning Outcomes
+    * mention your target users
+    * add a marketing blurb
+
+  * Update the link of the Travis _build status badge_ (<img src="https://travis-ci.org/se-edu/addressbook-level3.svg?branch=master" alt="Build Status">) so that it reflects the build status of your team repo. For the other badges,
+    * either set up the respective tool for your project (AB3 Developer Guide has instructions on how to set up AppVeyor and Coveralls) and update the badges accordingly,
+    * or remove the badge.
+
+  * Acknowledge the original source of the code i.e. AddressBook-Level3 project created by SE-EDU initiative at `https://se-education.org`
+
+* **Website heading**: Update the website heading to match your product. Currently it is set to `AddressBook Level 3 - ...`.<br>
+    <img src="images/addressBookWebsiteHeading.png" />
+
+<box>
+
+{{ icon_tip }} If you updated the above pages correctly, details of your project in the [**Project List Page**](projectList.html) should look neat and complete %%i.e., no broken links%%.
+</box>
+</span>
+{#====================================================================================================================#}
+<span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
+<span id="desc_update_the_ug">
+
+* Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' ([example]({{ ab3_website }}/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).<br>
+  As <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ tp_dashboard }}).<br>
+  {{ icon_tip }} While it is more convenient for one person to update the entire UG, splitting the work will give you a good opportunity to learn to deal with merge conflicts.
+
+<modal large title="About Dividing Documentation Work" id="modal:v11-divideDocs">
+  <include src="tp-tasks.mbdf#divideDocs"/>
+</modal>
+</span>
+{#====================================================================================================================#}
+<span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs, use cases</span>
+<span id="desc_update_dg_user_stories_etc">
+
+* Update the following in the DG, based on your project notes from the previous weeks.<br>
+  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ ab3_website }}/DeveloperGuide.html#product-scope).
+
+  * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
+  * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
+  * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>:
+    Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
+  * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth recording.
+  *  [Optional] <trigger trigger="click" for="modal:v10-prodsurveys">**Product survey**</trigger>: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view).
+
+<modal large title="Textbook {{ icon_embedding }} Specifying Requirements → Use Cases" id="modal:v10-usecases">
+  <include src="../book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat.md" boilerplate />
+</modal>
+
+<modal large title="Textbook {{ icon_embedding }}" id="modal:v10-nfr">
+  <include src="../book/requirements/nonFunctionalRequirements/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+<modal title="Textbook {{ icon_embedding }}" id="modal:v10-glossary">
+  <include src="../book/specifyingRequirements/glossary/what/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
+<modal title="Textbook {{ icon_embedding }}" id="modal:v10-prodsurveys">
+  <include src="../book/gatheringRequirements/productSurveys/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+</span>
+{#====================================================================================================================#}
+<span id="heading_wrap_up_v11">{{ icon_team }} Wrap up v1.1</span>
+<span id="desc_wrap_up_v11">
+
+* After all changes that _can_ be merged before the milestone deadline have been merged, use `git tag` feature to tag the current version with the milestone `v1.1` and push the tag to the team repo.
+</span>
+{#====================================================================================================================#}
+<span id="heading_draft_a_rough_project_plan">{{ icon_team }} Draft a rough project plan</span>
+<span id="desc_draft_a_rough_project_plan">
+
+* {{ icon_team }} **Decide which enhancements each member will do by v1.4.** %%We realize that it will be hard for you to estimate the effort required for each feature as you are not very familiar with the code base yet. Nevertheless, come up with a project plan as per your best estimate; this plan can be revised at later stages. It is better to start with _some_ plan rather than no plan at all. If in doubt, choose to do _less_ than _more_; we don't expect you to deliver a lot of big features anyway.%%
+* {{ icon_individual }} **Divide each of those features into two increments**, to be released at v1.2, v1.3 (v1.4 omitted deliberately as a buffer). ==Each increment should deliver a end-user visible enhancement.==
+  ```
+  * Jake Woo: Profile photo feature
+    * v1.2: show a place holder for photo, showing a generic default image
+    * v1.3: can specify photo location if it is in local hard disk,
+            show photo from local hard disk
+  ```
+
+* {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a place holder for photo, showing a generic default image` should be assigned to Jake and to milestone `v1.2`%%
+</span>
+{#====================================================================================================================#}
+<span id="heading_start_implementing_a_minimal_version">{{ icon_individual }} start implementing a minimal version of your enhancement</span>
+<span id="desc_start_implementing_a_minimal_version">
+
+* While we do not _require_ you to do functionality changes in v1.1, if you have time, start implementing the version of your feature to be delivered in v1.2. We recommend that you break your v1.2 feature down to even smaller increments.
+</span>
+{#====================================================================================================================#}
+<span id="heading_ensure_you_know_tp_expectations">%%{{ icon_individual }} Ensure you know tP expectations%%</span>
+<span id="desc_ensure_you_know_tp_expectations">
+
+* If you haven't done so already, make sure you know individual and team expectations of the tP
+
+{{ embed_topic("tp-expectations.md#functionalityExpectations", "Admin " + icon_embedding + " tP: Functionality Expectations", "3", indent="2") }}
+{{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations", "3", indent="2") }}
+{{ embed_topic("tp-expectations.md#teamExpectations", "Admin " + icon_embedding + " tP: Team Expectations", "3", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_adjust_process_rigor">{{ icon_team }} Adjust process rigor if necessary</span>
+<span id="desc_adjust_process_rigor">
+
+* **Adjust process rigor to suit your team's pace**, as explained in the panel below.
+
+{{ embed_topic("appendixE-gitHub.md#workflow-after-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow (after v1.1)**", "3", indent="2") }}
+
+<box type="tip">
+
+**You are free to adjust _process rigor_ and _project plan_ at any future time in the project**, starting from v1.2. If you are not sure if a certain adjustment is allowed, you can check with the teaching team first.
+</box>
+</span>
+{#====================================================================================================================#}
+<span id="heading_start_proper_milestone_management">{{ icon_team }} Start proper milestone management</span>
+<span id="desc_start_proper_milestone_management">
+
+* **Set up the issue tracker** as described in the panel below, if you haven't done so already.
+
+{{ embed_topic("appendixE-gitHub.md#issue-tracker-setup", "Admin " + icon_embedding + " Appendix E(extract): **Setting up the issue tracker**", "1", indent="2") }}
+
+* **Start proper schedule tracking and milestone management** as explained in the panel below.
+
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
+
+<div class="indented">
+
+{{ icon_tip }} **Try to achieve all milestone requirements, but do not fret if you miss a few**.  You will get full marks as long as you achieve about 60% of the milestone requirements on average. Yes, that's a pretty low bar, but we have set it low in order to reduce workload and stress. Ideally, you should achieve close to 80-90%.
+</div>
+</span>
+{#====================================================================================================================#}
+<span id="heading_add_another_increment_to_your_feature">{{ icon_individual }} Add another increment to your feature</span>
+<span id="desc_add_another_increment_to_your_feature">
+
+* Add an increment to your feature, aiming to deliver a ==user-visible== version of your feature by v1.2 %%i.e., simpler than the feature intended for v1.4, but still usable by the user%%.
+
+* {{ icon_important_big_red }} **From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="v1.3, v1.4"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
+ If an enhancement is too big to complete in one milestone, try to deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first.
+</span>
+{#====================================================================================================================#}
+<span id="heading_deliver_an_intermediate_version_of_your_enhancement">{{ icon_team }} Deliver an intermediate version of the new features</span>
+<span id="desc_deliver_an_intermediate_version_of_your_enhancement">
+
+* The feature should be merged and user visible, although simpler than the version you intend to deliver at v1.4.
+</span>
+{#====================================================================================================================#}
+<span id="heading_wrap_up_v12">{{ icon_team }} Wrap up milestone</span>
+<span id="desc_wrap_up_v12">
+
+* {{ icon_team }} **Manage the milestone** v1.2 as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
+* **Wrap up the milestone** using a git tag `v1.2`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, reassign them to a future milestone.
+
+<modal large title="Appendix E: Using GitHub →" id="modal:v12-projectTracking">
+  <include src="appendixE-gitHub.md#tp-schedule-tracking"/>
+</modal>
+
+</span>
+{#====================================================================================================================#}
+<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo</span>
+<span id="desc_do_an_informal_demo">
+
+<div id="demo">
+
+* **Do an informal demo** of the new features during the tutorial. ==To save time, we recommend that one member demos all new features, using the commit tagged as `v1.2` in the `master` branch== %%i.e. only features included in the current release should be demoed%%.
+</div>
+</span>
+{#====================================================================================================================#}
+<span id="heading_start_on_the_full_version">{{ icon_individual }} Start on the full version of the new features</span>
+<span id="desc_start_on_the_full_version">
+
+* Start on implementing the full version of your new feature(s). Aim to finish it in v1.3 (v1.4 can serve as a buffer). As before, you can divide the work into even smaller increments %%e.g., aim to deliver a v1.2.1 at the end of this week%%.
+* **Maintain the defensiveness of the code**: Remember to use assertions, exceptions, and logging in your code, as well as other defensive programming measures when appropriate.<br>
+  {{ icon_important_big_red }} Remember to enable assertions in your IDEA run configurations and gradle file.
+* Continue to do deliberate project management using GitHub issue tracker, milestones, labels, etc. as you did in v1.2.
+* {{ icon_tip }} We recommend that **each PR also updates the relevant parts of documents and tests**. That way, your documentation/testing work will not pile up towards the end.
+* {{ icon_tip }} There is [a way to get GitHub to auto-close the relevant issue when a PR is merged](https://help.github.com/articles/closing-issues-using-keywords/) ([example](https://github.com/se-edu/addressbook-level4/pull/888)).
+</span>
+{#====================================================================================================================#}
+<span id="heading_update_dg_with_design_details">{{ icon_individual }} Update DG with design details</span>
+<span id="desc_update_dg_with_design_details">
+
+<div class="indented">
+<box>
+
+{{ icon_important_big_red }} Do a sincere job on this task because this is your only chance to get feedback on the DG before it is graded at v1.4.
+</box>
+</div>
+
+* **Update the Developer Guide** as follows:
+  * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
+    Expected length: 1+ page per person
+  * The description can contain things such as,
+    * How the feature is implemented (or is going to be implemented).
+    * Why it is implemented that way.
+    * Alternatives considered.
+  * **Diagramming tools**: AB3 uses PlantUML (see [instructions]({{ ab3_website }}/UsingPlantUml.html)) for diagrams. but you may use any other tool (e.g., PowerPoint). If you do, choose a tool that allows incremental updates to diagrams %%(reason: because diagrams need to be updated multiple times as the product evolves)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.
+
+<div class="indented-level2">
+
+<panel type="success" expanded>
+<span slot="header" class="card-title">
+
+##### {{ icon_tip }} DG Tips
+</span>
+<span id="dgTips">
+
+<include src="tp-deliverables-dg.mbdf#dg-tips" />
+</span>
+</panel>
+<p/>
+</div>
+</span>
+{#====================================================================================================================#}
+<span id="heading_do_a_release">{{ icon_team }} Do a release</span>
+<span id="desc_do_a_release">
+
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for v1.3. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
+</span>
+{#====================================================================================================================#}
+<span id="heading_make_code_reposense_compatible">{{ icon_individual }} Make the code RepoSense-compatible</span>
+<span id="desc_make_code_reposense_compatible">
+
+<span id="midV13-repoSenseCompatible">
+
+* **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code it attributes to you is indeed the code written by you**, as explained below:
+  * Go to the [tp Code Dashboard]({{ tp_dashboard }}). Click on the `</>` icon against your name and verify that the ==lines attributed to you (i.e., lines marked as green)== reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/greenLines.png" width="600">
+  <p/>
+
+  * More info on how to make the code RepoSense compatible:
+
+{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="4") }}
+</span>
+</span>
+{#====================================================================================================================#}
+<span id="heading_deliver_the_feature">{{ icon_individual }} Deliver the feature</span>
+<span id="desc_deliver_the_feature">
+
+* Ideally, this version of the feature should be a release-candidate for the v1.4 i.e., has the functionality expected of v1.4.
+</span>
+{#====================================================================================================================#}
+<span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>
+<span id="desc_update_user_docs">
+
+* {{ icon_important_big_red }} v1.3 user guide should be updated to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
+  * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in v2.0`%%.
+  * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
+
+* **README page**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.
+
+<modal large title="Admin → Project Deliverables → Website" id="modal:v13-tipsForProductScreenshot">
+  <include src="tp-deliverables-website.mbdf#tips-for-product-screenshot"/>
+</modal>
+</span>
+{#====================================================================================================================#}
+<span id="heading_release_as_a_jar_file">{{ icon_team }} Release as a jar file</span>
+<span id="desc_release_as_a_jar_file">
+
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). Do some manual tests to ensure the jar file works.
+</span>
+{#====================================================================================================================#}
+<span id="heading_wrap_up_v13">{{ icon_team }} Wrap up v1.3</span>
+<span id="desc_wrap_up_v13">
+
+* as before
+</span>
+{#====================================================================================================================#}
+<span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>
+<span id="desc_attend_the_PED">
+
+* =={{ icon_important_big_red }} See info in the panel below:==
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Tweak the product as per peer-testing results</span>
+<span id="desc_tweak_product_as_per_PED">
+
+* Learn the procedure for dealing with PED bugs you received:
+
+{{ embed_topic("tp-deliverables-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
+
+* **Freeze features** around this time. Ensure the current product have all the features you intend to release at v1.4. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
+* **Update documentation** to match the product.
+* **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
+
+{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → Expectation on testing", "3", indent="2") }}
+
+* **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level.
+
+{{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → Code Quality Tips", "3", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_draft_the_ppp">{{ icon_individual }} Draft the PPP</span>
+<span id="desc_draft_the_ppp">
+
+* **Create the first version of your _Project Portfolio Page (PPP)_**.<br>
+  Reason: ==Each member needs to create a PPP== to describe your contribution to the project. Creating a PPP takes a significant effort; it is ==too risky to leave it to the last week of the project==. 
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_prepare_for_demo">{{ icon_team }} Prepare for the demo rehearsal</span>
+<span id="desc_prepare_for_demo">
+
+* You will do a product demo during the tutorial to serve as a rehearsal for the final project demo at v1.4
+  * ==**Follow final demo instructions** (given in the panel below)== as much as possible .
+  * **Cover all features**, not just the ones added in the recent iteration.
+  * **Make it a 'well prepared' demo** i.e., know in advance exactly what you'll do in the demo.
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → v1.4 Demo (extract)", "3", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_double_check_reposense_compatibility">{{ icon_team }} Double-check RepoSense compatibility</span>
+<span id="desc_double_check_reposense_compatibility">
+
+* {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct.
+
+{{ embed_topic("tp-tasks.mbdf#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-v1.3 → Making the Code RepoSense-Compatible", "1", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_do_final_tweaks">{{ icon_individual }} Do final tweaks to the feature</span>
+<span id="desc_do_final_tweaks">
+
+* Do the final tweaks to the feature and the documentation. We strongly recommend not to do major changes to the product this close to the submission deadline.
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
+<span id="desc_submit_final_deliverables">
+
+* **Deadline** for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.<br>
+* Submit to LumiNUS folder we have set up, not to your project space.<br>
+  {{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.
+* {{ icon_important_big_red }} **Penalty for late submission:**<br>
+  ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
+  -2 for an _extended delay_ (up to 24 hours late).<br>
+  Penalty for delays beyond 24 hours is determined on a case by case basis.
+  * Even a one-second delay is considered late, irrespective of the reason.
+  * For submissions done via LumiNUS, the submission time is the timestamp shown by LumiNUS.
+  * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
+  * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.
+* {{ icon_important_big_red }} Please **follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
+  * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%e.g. broken links, outdated diagrams/instructions etc.%%.
+* **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _freeze_ period.
+  * You can update issues/milestones/PRs even during the _freeze_ period.
+  * You can update the code during the freeze period if the change is related to a late submission approved by us.
+  * You can continue to evolve your repo after the freeze period.
+
+<div class="indented">
+
+<big>**Submissions:**</big>
+</div>
+
+* {{ icon_team }} **Product**:
+  * Do a release on GitHub, tagged as `v1.4`.
+  * Upload the jar file to LumiNUS. <br>
+    File name: `[team][product name].jar` %%e.g. [{{ module }}T-W09-1][ContactsPlus].jar%%
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
+
+
+* {{ icon_team }} **Source Code**: Push the code to GitHub and tag with the version number. Source code (==please ensure the code reported by RepoSense as yours is correct;== any updates to RepoSense config files or `@@author` annotations after the deadline will be considered a later submission). Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually.
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-sourcecode", "Admin " + icon_embedding + " tP → Deliverables → Source Code", "3", indent="2") }}
+
+
+* {{ icon_team }} **User Guide**: Convert the pdf (AB3 dev guide has some instructions on converting project docs to pdf) and upload to LumiNUS.<br>
+  File name: `[TEAM_ID][product Name]UG.pdf`  %%e.g.[{{ module }}T-W09-1][Contacts Plus]UG.pdf%%
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
+
+* {{ icon_team }} **Developer Guide**: submit similar to UG<br>
+  File name: `[TEAM_ID][product Name]DG.pdf` %%e.g. [{{ module }}T-W09-1][Contacts Plus]DG.pdf%%
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "3", indent="2") }}
+
+
+* {{ icon_individual }} **Project Portfolio Page (PPP)**:
+  * PDF file: submit similar to UG<br>
+    File name: `[TEAM_ID][Your full Name as Given in LumiNUS]PPP.pdf` %%e.g.[{{ module }}T-W09-1][Leow Wai Kit, John]PPP.pdf%%<br>
+    {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names) 
+  * HTML version: make available on `github.io`
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "3", indent="2") }}
+
+
+* {{ icon_team }} **Product Website**: Update (e.g., `README` page, `Ui.png`, `AboutUs`) on GitHub. Ensure the website is auto-published.
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "3", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_wrap_up_final_milesone">{{ icon_team }} Wrap up the milestone</span>
+<span id="desc_wrap_up_final_milesone">
+
+* As usual, wrap up the milestone on GitHub. Note that the deadline for this is the same for everyone (i.e., does not depend on your tutorial).
+</span>
+{#====================================================================================================================#}
+<span id="heading_demo_the_product">{{ icon_team }} Demo the product</span>
+<span id="desc_demo_the_product">
+
+<span id="demo-instructions" >
+
+<div class="indented-level2">
+
+<img src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px"><p/>
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → Deliverables → Demo", "3") }}
+<p/>
+</div>
+
+* **Venue:** Same as the tutorial venue unless informed otherwise. You'll be using the TV at your regular tutorial table (not the projector) for the demo.
+* **Schedule:** Your demo timing is same as your tutorial time in week 13.
+  * Teams `1` and `3` will start at 05-minutes mark (e.g., 11.05 am), and teams `2` and `4` start at 30-minutes mark (e.g., 11.30 am).
+  * Please ==arrive _before_ time== and remain outside the venue until called in. Late arrival or absence is liable to a penalty.
+  * Any delay in starting the presentation is deducted out of your time allotment %%e.g., if you are scheduled to demo at 11.05-11.23 am (i.e., 18 minutes), you'll have to stop at 11.23 am even if you start at 11.10 am.%%
+* You should bring your own adapter if the display adapters available in your tutorial venue don't work for you.
+</span>
+</span>
+{#====================================================================================================================#}
+<span id="heading_prepare_for_PE">{{ icon_individual }} Prepare for the practical exam</span>
+<span id="desc_prepare_for_PE">
+
+<div class="indented-level2">
+
+<panel type="primary" header="Admin → Deliverables → **PE Overview**" minimized>
+
+<include src="tp-deliverables-pe.mbdf#pe-overview" />
+</panel>
+<p/>
+<panel type="primary" header="Admin → Deliverables → **PE-D/PE Preparation**" minimized>
+
+<include src="tp-testing.mbdf#testingPreparations" />
+</panel>
+</div>
+</span>
+{#====================================================================================================================#}
+<span id="heading_attend_the_PE">{{ icon_individual }} Attend the practical exam</span>
+<span id="desc_attend_the_PE">
+
+* Attend the practical test, to be done during the lecture.
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-practicalexam", "Admin " + icon_embedding + " tP → Deliverables → Practical Exam", "3", indent="2") }}
 </span>
 {#====================================================================================================================#}
 
@@ -76,7 +782,7 @@ Given below are some guidance on the recommended progress at this point of the p
 {#====================================================================================================================#}
 
 {% macro show_admin_tp_page(week_num) %}
-{% call show_admin_page("tp-w0" + week_num) %}
+{% call show_admin_page("tp-w" + week_num) %}
 {{ show_tp_page(week_num) }}
 {% endcall %}
 {% endmacro %}

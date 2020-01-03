@@ -27,8 +27,6 @@ Create a personal GitHub account if you don't have one yet.
 
 </div>
 
-<div id="organization-setup">
-
 ### <div class="text-white bg-dark p-1">Guidelines for Reviewing PRs</div>
 
 <div id="pr-review-guidelines">
@@ -45,6 +43,8 @@ Create a personal GitHub account if you don't have one yet.
 * Don't get into arguments with reviewers. If you disagree with the reviewer, you can explain your own view in a non-confrontational way without trying to prove your way is better.
 * Thank reviewers for their inputs.
 </div>
+
+<div id="organization-setup">
 
 ### <div class="text-white bg-dark p-1">Organization Setup</div>
 

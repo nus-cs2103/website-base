@@ -48,39 +48,39 @@ A_Travis: {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
 } %}
 
 {% set ip_schedule = {
-week2: [
+week02: [
   ip_steps.learn_about_the_project,
   ip_steps.set_up_prerequisites,
   ip_steps.set_up_project,
   {id: 'add_increments', suffix: ' while committing frequently', increments:  [DIs.Level_1, DIs.Level_2, DIs.Level_3, DIs.Level_4, DIs.A_TextUiTesting, DIs.Level_5, DIs.Level_6, DIs.A_Enums], deadline: 'by Thursday 2359'}
 ],
-week3: [
+week03: [
   ip_steps.finish_leftover_tasks,
   ip_steps.create_pr_to_upstream,
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.Level_7, DIs.Level_8], deadline: false},
   {id: 'add_increments', suffix: '', increments:  [DIs.A_MoreOOP, DIs.A_Packages, DIs.A_JUnit, DIs.A_Jar], deadline: false},
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_JavaDoc, DIs.A_CodingStandard, DIs.Level_9], deadline: false}
 ],
-week4: [
+week04: [
   ip_steps.review_two_prs,
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_Gradle, DIs.A_CheckStyle, DIs.Level_10, DIs.A_Varargs], deadline: false}
 ],
-week5: [
+week05: [
   ip_steps.generate_new_jar,
   {id: 'add_increments', suffix: ' as PRs', increments:  [DIs.A_Assertions, DIs.A_CodeQuality, DIs.A_Lambdas, DIs.A_Streams], deadline: false},
   {id: 'add_increments', suffix: '', increments:  [DIs.A_Travis], deadline: false},
   ip_steps.add_an_extension
 ],
-week6: [
+week06: [
   ip_steps.finalize_features,
   ip_steps.set_up_website,
   ip_steps.release_product
 ],
-week7: [
+week07: [
   ip_steps.do_final_cleanups,
   ip_steps.submit_final_version
 ],
-week8: [
+week08: [
   ip_steps.evaluate_peer_ips
 ]
 } %}
@@ -110,7 +110,7 @@ Implement the following <tooltip content="in this context, an _increment_ is a D
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
-<span id="cs2103-week2-intro">
+<span id="cs2103-week02-intro">
 
 <box type="info">
 
@@ -119,12 +119,12 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 </span>
 
 {#====================================================================================================================#}
-<span id="cs2103-week3-intro">
+<span id="cs2103-week03-intro">
 
 In this week, we try to practice git branching as we do the iP.
 </span>
 {#====================================================================================================================#}
-<span id="cs2103-week6-intro">
+<span id="cs2103-week06-intro">
 
 <box type="important">
 
@@ -440,4 +440,11 @@ Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ d
 
 {% macro show_ip_page(week_num) %}
 {{ show_xp_page(week_num, ip_schedule['week' + week_num], 'ip-tasks.mbdf') }}
+{% endmacro %}
+{#====================================================================================================================#}
+
+{% macro show_admin_ip_page(week_num) %}
+{% call show_admin_page("ip-w" + week_num) %}
+{{ show_ip_page(week_num) }}
+{% endcall %}
 {% endmacro %}
