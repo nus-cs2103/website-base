@@ -363,8 +363,8 @@ On a somewhat related note, you can also **create similar product websites for y
 {%- endmacro %}
 {#====================================================================================================================#}
 
-{% macro get_xp_step_heading(step, tasks_file) -%}
-{% set deadline_badge = timing_badge(step.deadline, 'danger') if step.deadline else ''  %}
+{% macro get_xp_step_heading(step, tasks_file, is_summary=false) -%}
+{% set deadline_badge = timing_badge(step.deadline, 'danger' if is_summary else 'secondary') if step.deadline else ''  %}
 {% if step.id == 'add_increments' %}
 Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
 {% else %}
@@ -403,7 +403,7 @@ Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ d
 
 {% macro show_xp_steps_summary(steps, tasks_file) %}
 {% call show_project_summary_lead()%}
-{% for step in steps %}1. {{ get_xp_step_heading(step, tasks_file) | trim }}
+{% for step in steps %}1. {{ get_xp_step_heading(step, tasks_file, is_summary=true) | trim }}
 {% endfor %}
 {% endcall %}
 {% endmacro %}
