@@ -3,22 +3,22 @@
 {% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
 
 {% set admin_schedule = {
-week01: [
+week1: [
   {id: 'submit_pre_lecture_quiz', deadline: "by week 2 Monday 2359"},
   {id: 'set_up_tools', deadline: "before the lecture"},
   {id: 'submit_pre_module_survey', deadline: "by Friday 2359"},
   {id: 'learn_about_the_module'},
   {id: 'attend_the_first_lecture'}
 ],
-week02: [
+week2: [
   {id: 'submit_first_post_lecture_quiz', deadline: "Thursday 2359"},
   {id: 'get_connect_with_comm_channels'}
 ],
-week03: [
+week3: [
   {id: 'submit_post_lecture_quiz'},
   {id: 'form_teams'}
 ],
-week04: [
+week4: [
   {id: 'accept_github_invitations'},
   {id: 'submit_post_lecture_quiz'}
 ],
@@ -26,18 +26,18 @@ week05: [
   {id: 'submit_post_lecture_quiz'},
   {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: "by Sunday"}
 ],
-week06: [
+week6: [
   {id: 'submit_post_lecture_quiz'},
   {id: 'submit_midterm_feedback_for_the_module', deadline: "by Sunday", deadline_type: 'info'}
 ],
-week07: [
+week7: [
   {id: 'submit_post_lecture_quiz'}
 ],
-week08: [
+week8: [
   {id: 'submit_post_lecture_quiz'},
   {id: 'submit_midterm_peer_evaluations', deadline: "by Sunday"}
 ],
-week09: [
+week9: [
   {id: 'submit_post_lecture_quiz'}
 ],
 week10: [
