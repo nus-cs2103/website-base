@@ -63,7 +63,7 @@
 {% macro show_admin_faq(faqs, id_of_faq_to_show, is_flat=false) %}
 {% for faq in faqs %}
 {% if faq.id == id_of_faq_to_show %}
-{{ show_admin_section_to_read("Appendix C (FAQs) → " + faq.title, faq.priority, "../../admin/appendixC-faq.md/#" + faq.id, is_flat ) }}
+{{ show_admin_section_to_read("Apdx C (FAQs) → " + faq.title, faq.priority, "../../admin/appendixC-faq.md/#" + faq.id, is_flat ) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
@@ -72,7 +72,7 @@
 {% macro show_admin_policy(policies, id_of_policy_to_show, is_flat=false) %}
 {% for policy in policies %}
 {% if policy.id == id_of_policy_to_show %}
-{{ show_admin_section_to_read("Appendix B (Policies) → " + policy.title, policy.priority, "../../admin/appendixB-policies.md/#" + policy.id, is_flat ) }}
+{{ show_admin_section_to_read("Apdx B (Policies) → " + policy.title, policy.priority, "../../admin/appendixB-policies.md/#" + policy.id, is_flat ) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
@@ -80,7 +80,7 @@
 
 {% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show, is_flat=false) %}
 
-#### {{ thumb("+") }} Other admin info you may want to read this week:
+#### {{ thumb("+") }} Other info relevant to this week:
 <div class="indented-level2">
 {% for section in sections_to_show %}
 {% if section.topic_id %}
