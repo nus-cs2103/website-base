@@ -3,27 +3,27 @@
 {% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
 
 {% set tp_schedule = {
-week03: [
+week3: [
   {id: 'get_familiar_with_ab3', deadline: false},
   {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'}
 ],
-week04: [
+week4: [
   {id: 'start_weekly_meetings', deadline: false},
   {id: 'decide_project_direction', deadline: false},
   {id: 'start_project_notes', deadline: 'before the tutorial'}
 ],
-week05: [
+week5: [
   {id: 'brainstorm_user_stories', deadline: 'before the tutorial'},
   {id: 'prioritize_user_stories', deadline: 'before/during the tutorial'}
 ],
-week06: [
+week6: [
   {id: 'set_up_project_repo', deadline: false},
   {id: 'get_familiar_with_the_code_base', deadline: false},
   {id: 'conceptualize_v2', deadline: false},
   {id: 'draft_the_ug', deadline: false},
   {id: 'refine_product_design', deadline: false}
 ],
-week07: [
+week7: [
   {id: 'update_website_aboutus_contactus_readme', deadline: false},
   {id: 'update_the_ug', deadline: false},
   {id: 'update_dg_user_stories_etc', deadline: false},
@@ -31,13 +31,13 @@ week07: [
   {id: 'draft_a_rough_project_plan', deadline: false},
   {id: 'start_implementing_a_minimal_version', deadline: false}
 ],
-week08: [
+week8: [
   {id: 'ensure_you_know_tp_expectations', deadline: false},
   {id: 'adjust_process_rigor', deadline: false},
   {id: 'start_proper_milestone_management', deadline: false},
   {id: 'add_another_increment_to_your_feature', deadline: false}
 ],
-week09: [
+week9: [
   {id: 'deliver_an_intermediate_version_of_your_enhancement', deadline: false},
   {id: 'wrap_up_v12', deadline: false},
   {id: 'do_an_informal_demo', deadline: false}

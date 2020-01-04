@@ -1,6 +1,6 @@
 {% from "schedule/index.md" import show_project_summary with context %}
 
-{{ show_project_summary(ip_file="ip-w7.md", tp_file="tp-w07.md", milestone="v1.1") }}
+{{ show_project_summary(ip_file="ip-w7.md", tp_file="tp-w7.md", milestone="v1.1") }}
 
 ## iP
 
@@ -11,4 +11,4 @@
 
 ## tP: v1.1
 
-<include src="../../admin/tp-w07.md#body" />
+<include src="../../admin/tp-w7.md#body" />
