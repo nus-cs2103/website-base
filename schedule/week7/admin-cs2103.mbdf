@@ -1,3 +1,0 @@
-{% from "admin/admin-tasks.mbdf" import show_weekly_admin_page with context %}
-
-{{ show_weekly_admin_page(7) }}

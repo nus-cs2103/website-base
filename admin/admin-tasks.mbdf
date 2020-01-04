@@ -163,7 +163,7 @@ week13: [
 {#====================================================================================================================#}
 {#====================================================================================================================#}
 
-{% macro show_weekly_admin_page(week_num) %}
+{% macro show_weekly_admin_tasks(week_num) %}
 {{ show_xp_page(week_num, admin_schedule['week' + week_num], '../../admin/admin-tasks.mbdf') }}
 
 {% set admin_topics_to_show = admin_topics_to_read['week' + week_num] %}

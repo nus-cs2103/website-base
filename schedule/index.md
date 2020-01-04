@@ -7,6 +7,7 @@ pageNav: 1
 </frontmatter>
 
 {% import "common/topics.njk" as topics with context %}
+{% from "admin/admin-tasks.mbdf" import show_weekly_admin_tasks with context %}
 
 <!--
     {num: "1", day:"Aug 12"},
@@ -585,7 +586,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="col-sm border-bottom">
 
 **Admin:**
-<include src="admin-{{ module | lower }}.mbdf#summary" optional/>
+<include src="admin.md#summary" optional/>
 <include src="project-{{ module | lower }}.mbdf#summary" optional/>
 
   </div>
@@ -625,8 +626,7 @@ pageNav: {{ categories[category].pagenav }}
 {% macro show_week_admin_page(week_num) %}
 <div class="website-content">
 {{ show_week_pagetop(week_num, "admin") }}
-
-<include src="admin-{{ module | lower }}.mbdf" optional />
+{{ show_weekly_admin_tasks(week_num) }}
 </div>
 {% endmacro %}
 
