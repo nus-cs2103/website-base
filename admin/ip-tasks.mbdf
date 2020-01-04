@@ -84,34 +84,32 @@ week8: [
      * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
      * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
 </span>
-<span id="no-jumping-ahead">
-
-<box>
-
-{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons:
-1. In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spread over a longer period**, rather than to be done as a short burst. Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
-1. As a further incentive to not jump ahead, we have left some future project requirements unspecified, and we might change some requirements along the way too.
-</box>
-</span>
-
-{#====================================================================================================================
- # CS2103 Weekly Intros
- #====================================================================================================================#}
-<span id="cs2103-week02-intro">
+<span id="volatile-requirements">
 
 <box type="info">
 
 The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
 </box>
 </span>
+<span id="no-jumping-ahead">
 
-{#====================================================================================================================#}
-<span id="cs2103-week03-intro">
+<box>
 
-In this week, we try to practice git branching as we do the iP.
+{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spread over a longer period**, rather than to be done as a short burst. Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
+</box>
 </span>
+
+{#====================================================================================================================
+ # CS2103 Weekly Intros
+ #====================================================================================================================#}
+<span id="cs2103-week2-intro">
+
+<include src="ip-tasks.mbdf#volatile-requirements" />
+<include src="ip-tasks.mbdf#no-jumping-ahead" />
+</span>
+
 {#====================================================================================================================#}
-<span id="cs2103-week06-intro">
+<span id="cs2103-week6-intro">
 
 <box type="important">
 
@@ -141,7 +139,6 @@ In this week, we try to practice git branching as we do the iP.
 {#====================================================================================================================#}
 <span id="extra_Level-1">
 <include src="ip-tasks.mbdf#commit-tag-push" />
-<include src="ip-tasks.mbdf#no-jumping-ahead" />
 </span>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project in your computer</span>
