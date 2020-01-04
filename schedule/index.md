@@ -626,6 +626,14 @@ pageNav: {{ categories[category].pagenav }}
 {% macro show_week_admin_page(week_num) %}
 <div class="website-content">
 {{ show_week_pagetop(week_num, "admin") }}
+
+{% if week_num == "1" %}
+<box type="info" dismissible>
+
+Admin info relevant to the week will appear in this tab.
+</box>
+{% endif %}
+
 {{ show_weekly_admin_tasks(week_num) }}
 </div>
 {% endmacro %}
@@ -635,10 +643,11 @@ pageNav: {{ categories[category].pagenav }}
 <div class="website-content">
 {{ show_week_pagetop(week_num, "topics") }}
 
-{% if current_week == "1" %}
+{% if week_num == "1" %}
 <box type="info" dismissible>
 
-Topics allocated to the week will appear in this tab.
+* Topics allocated to the week will appear in this tab.
+* If the lecture is in the 2nd half of the week (i.e., Wednesday 12 noon or later), the lecture in week `N` will cover topics allocated to the week `N+1` e.g., **Lecture 1 will cover Week 2 topics**, and so on.
 </box>
 {% endif %}
 {{ topics.show_week_schedule(week_num, all_topics) }}
@@ -650,7 +659,7 @@ Topics allocated to the week will appear in this tab.
 <div class="website-content">
 {{ show_week_pagetop(week_num, "tutorial") }}
 
-{% if current_week == "1" %}
+{% if week_num == "1" %}
 <box type="info" dismissible>
 
 Information relevant to the week's tutorial will appear in this tab.
@@ -665,10 +674,10 @@ Information relevant to the week's tutorial will appear in this tab.
 <div class="website-content">
 {{ show_week_pagetop(week_num, "project") }}
 
-{% if current_week == "1" %}
+{% if week_num == "1" %}
 <box type="info" dismissible>
 
-In future weeks, project-related information relevant to the week will appear in this tab.
+Project-related information relevant to the week will appear in this tab.
 </box>
 {% endif %}
 <include src="project-{{ module | lower }}.mbdf" optional />
