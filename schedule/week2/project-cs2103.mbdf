@@ -1,7 +1,7 @@
 {% from "schedule/index.md" import show_project_summary with context %}
 
-{{ show_project_summary(ip_file="ip-w02.md") }}
+{{ show_project_summary(ip_file="ip-w2.md") }}
 
 ## iP
 
-<include src="../../admin/ip-w02.md#body" />
+<include src="../../admin/ip-w2.md#body" />

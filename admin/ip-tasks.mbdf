@@ -2,7 +2,7 @@
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
 {% set ip_schedule = {
-week02: [
+week2: [
   {id: 'learn_about_the_project', deadline: false},
   {id: 'set_up_prerequisites', deadline: false},
   {id: 'set_up_project', deadline: false},
@@ -17,7 +17,7 @@ week02: [
     {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'}
   ]}
 ],
-week03: [
+week3: [
   {id: 'finish_leftover_tasks', deadline: false},
   {id: 'create_pr_to_upstream', deadline: false},
   {id: 'add_increments', suffix: ' as parallel branches', deadline: false, increments:  [
@@ -36,7 +36,7 @@ week03: [
     {id: 'Level-9', title: 'Find', tag: ''}
   ]}
 ],
-week04: [
+week4: [
   {id: 'review_two_prs', deadline: false},
   {id: 'add_increments', suffix: ' as parallel branches', deadline: false, increments:  [
     {id: 'A-Gradle', title: 'Use Gradle', tag: ''},
@@ -45,7 +45,7 @@ week04: [
     {id: 'A-Varargs', title: 'Use Varargs', tag: 'if-applicable'}
   ]}
 ],
-week05: [
+week5: [
   {id: 'generate_new_jar', deadline: false},
   {id: 'add_increments', suffix: ' as PRs', deadline: false, increments:  [
     {id: 'A-Assertions', title: 'Use Assertions', tag: ''},
@@ -58,16 +58,16 @@ week05: [
   ]},
   {id: 'add_an_extension', deadline: false}
 ],
-week06: [
+week6: [
   {id: 'finalize_features', deadline: false},
   {id: 'set_up_website', deadline: false},
   {id: 'release_product', deadline: false}
 ],
-week07: [
+week7: [
   {id: 'do_final_cleanups', deadline: false},
   {id: 'submit_final_version', deadline: 'by Monday 2359'}
 ],
-week08: [
+week8: [
   {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
 ]
 } %}

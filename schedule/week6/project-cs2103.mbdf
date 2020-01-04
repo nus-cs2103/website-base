@@ -1,10 +1,10 @@
 {% from "schedule/index.md" import show_project_summary with context %}
 
-{{ show_project_summary(ip_file="ip-w06.md", tp_file="tp-w06.md") }}
+{{ show_project_summary(ip_file="ip-w6.md", tp_file="tp-w06.md") }}
 
 ## iP
 
-<include src="../../admin/ip-w06.md#body" />
+<include src="../../admin/ip-w6.md#body" />
 
 <br>
 {{ hr_double }}
