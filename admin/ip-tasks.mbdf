@@ -76,13 +76,19 @@ week8: [
  # Common text segments
  #====================================================================================================================#}
 
-<span id="commit-tag-push">
+<span id="order">
 
 * Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
-   * Commit code at important points. ==Minimally, commit after completing each increment==.
-   * After completing each increment,
-     * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
-     * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
+</span>
+<span id="commit">
+
+* From this point onward, commit code at important points. ==Minimally, commit after completing each increment==.
+</span>
+<span id="tag-push">
+
+* From this point onward, after completing each increment,
+  * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
+  * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
 </span>
 <span id="volatile-requirements">
 
@@ -138,7 +144,9 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 </span>
 {#====================================================================================================================#}
 <span id="extra_Level-1">
-<include src="ip-tasks.mbdf#commit-tag-push" />
+<include src="ip-tasks.mbdf#order" />
+<include src="ip-tasks.mbdf#commit" />
+<include src="ip-tasks.mbdf#tag-push" />
 </span>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project in your computer</span>
