@@ -193,9 +193,6 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
   * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
   * If the student you have been allocated to review has not created a PR by Monday, you can review another PR of your choice.
 
-<div class="indented-level2">
-
-<box type="success">
 
 We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
 </box>

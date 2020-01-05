@@ -31,6 +31,11 @@ Create a personal GitHub account if you don't have one yet.
 
 <div id="pr-review-guidelines">
 
+<box type="success">
+
+We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
+</box>
+
 * If you are new to GitHub PRs, see [GitHub help on how to review PRs](https://help.github.com/en/articles/about-pull-request-reviews).
 * Read the blog post [**10 tips for reviewing code you don’t like**](https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/) - by David Lloyd (a Red Hat developer). In particular, follow the tip about phrasing objections as questions.
 * Rather than give one overall comment for the entire PR, add specific comments at relevant places of the code.
@@ -52,7 +57,7 @@ Create a personal GitHub account if you don't have one yet.
 
 After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
-  * **Organization name** ==(all UPPER CASE) : `{{ semester }}-TEAM_ID`==. e.g.  `{{ semester }}-CS2103T-W12-1`, `{{ semester }}-CS2103-F09-3`
+  * **Organization name** ==(all UPPER CASE) : `{{ semester }}-TEAM_ID`==. e.g.  `{{ semester }}-{{ module }}T-W12-1`, `{{ semester }}-{{ module }}-F09-3`
   * Plan:  Open Source ($0/month) 
   * This organization belongs to: My personal account
 * Add members to the organization:

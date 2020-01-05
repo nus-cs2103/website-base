@@ -145,10 +145,10 @@ Given below are some guidance on the recommended progress at this point of the p
 <span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>
 <span id="desc_start_weekly_meetings">
 
-* We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, ==it is also acceptable to discuss weekly post-lecture quiz together with team members as you do the quiz== i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.
+* We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, ==it is also acceptable to discuss weekly post-lecture quiz (if any) together with team members as you do the quiz== i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.
 </span>
 {#====================================================================================================================#}
-<span id="heading_decide_project_direction">{{ icon_team }} Decide on a overall project direction %%(user profile, problem addressed)%%</span>
+<span id="heading_decide_project_direction">{{ icon_team }} Decide on an overall project direction %%(user profile, problem addressed)%%</span>
 <span id="desc_decide_project_direction">
 
 * **Decide project direction, target user profile, and problem addressed**: Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:
@@ -162,7 +162,7 @@ Given below are some guidance on the recommended progress at this point of the p
 <span id="heading_start_project_notes">{{ icon_team }} Start a collaborative doc to take project notes</span>
 <span id="desc_start_project_notes">
 
-* We recommend keeping project notes in easy-to-use collaborative docs such as GoogleDocs/sheets. Document the decisions taken above in one of those docs.
+* Keep project notes in easy-to-use collaborative docs such as GoogleDocs/sheets. Document the decisions taken above in one of those docs. ==This document will be checked by the tutor at the next tutorial.==
 </span>
 {#====================================================================================================================#}
 <span id="heading_brainstorm_user_stories">{{ icon_team }} Brainstorm user stories</span>
@@ -170,8 +170,8 @@ Given below are some guidance on the recommended progress at this point of the p
 
   <img class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px">
 
-* Get together with your team members and <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> **&nbsp;for the v2.0 of the product**. Note that in the module project you will deliver only up to v1.4 but here you should consider up to v2.0 (i.e. beyond the module).
-  * It is ok to have more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.%%
+* Get together with your team members and <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> **&nbsp;for the v2.0 of the product**.
+  * At this stage, aim to have more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.%%
   * Refer <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories →  Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.
   * You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
   * Note that ==you should not 'evaluate' the value of user stories while doing the above==. %%Reason: an important aspect of brainstorming is not judging the ideas generated.%%
@@ -196,7 +196,7 @@ Given below are some guidance on the recommended progress at this point of the p
 <div class="indented-level3">
 <box>
 
-{{ icon_tip }} Recommended: **You can use GitHub issue tracker to manage user stories**, but for that you need to set up your team's GitHub organization, project fork, and issue tracker first. Instructions for doing those steps are in the panel below.
+{{ icon_tip }} Recommended: **You can use GitHub issue tracker to manage user stories**, but for that you need to set up your team's GitHub organization, team repo, and its issue tracker first. Instructions for doing those steps are in the panel below.
 
 <panel header="%%Admin {{ icon_embedding }} Appendix E: GitHub (extract)%%">
   <include src="appendixE-gitHub.md#organization-setup"/>
@@ -274,15 +274,15 @@ Given below are some guidance on the recommended progress at this point of the p
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at v2.0.
   * We recommend that you follow the existing [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
   * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in asciidoc format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
-  * Do try to come up with concrete command syntax for feature that you would implement (at least for those that you will implement by v1.4).
+  * Do try to come up with concrete command syntax for the CLI commands that you will deliver at the end of the semester.
   * Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%.
-  * {{ icon_important_big_red }} **Submission**: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `CS2103T-W09-1.pdf`, and upload to LumiNUS.<br><br>
+  * {{ icon_important_big_red }} **Submission**: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ module }}T-W09-1.pdf`, and upload to LumiNUS.<br><br>
 
 <div id="divideDocs" class="indented">
 
   <box>
 
-  {{ icon_tip }} It is highly recommended that you **divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding** %%e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%. For features that are not planned to be implemented by v1.4, you can divide them based on who will be implementing them _if_ the project were to continue until v2.0 (hypothetically).
+  {{ icon_tip }} It is highly recommended that you **divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding** %%e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%.
 
   %%Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.%%
    
@@ -293,7 +293,10 @@ Given below are some guidance on the recommended progress at this point of the p
 <span id="heading_refine_product_design">{{ icon_team }} Refine the product design</span>
 <span id="desc_refine_product_design">
 
-* Review the UG to ensure the features written by each member fit together to form a cohesive product. Note that cohesiveness of the product is a grading criterion.
+* Review the UG to ensure the features written by each member fit together to form a cohesive product. Note that cohesiveness of the product can affect the grading of the _product design_ aspect.
+
+{{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Product Design==**", "3", indent="2") }}
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_update_website_aboutus_contactus_readme">{{ icon_team }} Update project website: `AboutUs`, `ContactUs`, `README`</span>
