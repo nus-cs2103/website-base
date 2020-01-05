@@ -14,42 +14,9 @@
 
 </box>
 
-<variable name="cs2103"><span class="badge badge-info">&nbsp;CS2103&nbsp;</span></variable>
-<variable name="cs2103t"><span class="badge badge-warning">CS2103T</span></variable>
-
-{% set sem1_tutorials %}
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **W**ed  **11**:00 | ~~%%G01%%~~ | **`CS2103T-W11`**| Damith, Yuan Chuan
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **W**ed  **12**:00 | ~~%%G02%%~~ | **`CS2103T-W12`**| Joanne, Andrew
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **W**ed  **13**:00 | ~~%%G03%%~~ | **`CS2103T-W13`**| Jacob, Benjamin
- | | | | | |
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **T**hu  **09**:00 | ~~%%G11%%~~ | **`CS2103T-T09`**| Jeffry, Yuan Chuan
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **T**hu  **10**:00 | ~~%%G05%%~~ | **`CS2103T-T10`**| Jeffry, Tejas
-{{ cs2103 | safe }}  | ==COM1-B103==     | **T**hu  **11**:00 | ~~%%08%%~~  | **`CS2103-T11`**| Damith, Brian
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **T**hu  **11**:00 | ~~%%G06%%~~ | **`CS2103T-T11`**| James, Jeff
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **T**hu  **12**:00 | ~~%%G04%%~~ | **`CS2103T-T12`**| Jun Rong, Brian
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **T**hu  **13**:00 | ~~%%G10%%~~ | **`CS2103T-T13`**| Xiaowen, Yuan Chuan
-{{ cs2103 | safe }}  | COM1-0210 (SR 10) | **T**hu  **14**:00 | ~~%%02%%~~  | **`CS2103-T14`**| Gilbert, Yuan Chuan
-{{ cs2103 | safe }}  | COM1-0210 (SR 10) | **T**hu  **16**:00 | ~~%%04%%~~  | **`CS2103-T16`**| Kyler, ZhiHui
-{{ cs2103t | safe }} | ~~COM1-B103~~ COM1-0210 (SR 10) | **T**hu  **17**:00 | ~~%%G13%%~~ | **`CS2103T-T17`**| Jun Rong
- | | | | | |
-{{ cs2103 | safe }}  | COM1-0210 (SR 10) | **F**ri  **09**:00 | ~~%%06%%~~  | **`CS2103-F09`**| Jonathan, Keith
-{{ cs2103 | safe }}  | COM1-0210 (SR 10) | **F**ri  **10**:00 | ~~%%07%%~~  | **`CS2103-F10`**| Jonathan, Keith
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **F**ri  **11**:00 | ~~%%G12%%~~ | **`CS2103T-F11`**| Jia Hao, Yuan Chuan
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **F**ri  **12**:00 | ~~%%G08%%~~ | **`CS2103T-F12`**| Ayush, Yash
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **F**ri  **13**:00 | ~~%%G07%%~~ | **`CS2103T-F13`**| LongBin, Yash
-{{ cs2103t | safe }} | COM1-0210 (SR 10) | **F**ri  **14**:00 | ~~%%G09%%~~ | **`CS2103T-F14`**| Alfred, Yash
-{% endset %}
-{% set sem2_tutorials %}
-{{ cs2103t | safe }} | - | - | - | - | -
-{{ cs2103t | safe }} | - | - | - | - | -
-{{ cs2103 | safe }} | - | - | - | - | -
-{% endset %}
-{% set tutorials = (sem1_tutorials | trim) if S == "1" else (sem2_tutorials | trim) %}
-
 Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------
-{{ tutorials }}
-
+<include src="tutorial-schedule-{{ module }}-S{{ S }}.mbdf" inline />
 
 </div>
 </panel>

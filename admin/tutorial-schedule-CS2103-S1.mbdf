@@ -1,0 +1,20 @@
+{{ MT | safe }} | COM1-0210 (SR 10) | **W**ed  **11**:00 | ~~%%G01%%~~ | **`CS2103T-W11`**| Damith, Yuan Chuan
+{{ MT | safe }} | COM1-0210 (SR 10) | **W**ed  **12**:00 | ~~%%G02%%~~ | **`CS2103T-W12`**| Joanne, Andrew
+{{ MT | safe }} | COM1-0210 (SR 10) | **W**ed  **13**:00 | ~~%%G03%%~~ | **`CS2103T-W13`**| Jacob, Benjamin
+ | | | | | |
+{{ MT | safe }} | COM1-0210 (SR 10) | **T**hu  **09**:00 | ~~%%G11%%~~ | **`CS2103T-T09`**| Jeffry, Yuan Chuan
+{{ MT | safe }} | COM1-0210 (SR 10) | **T**hu  **10**:00 | ~~%%G05%%~~ | **`CS2103T-T10`**| Jeffry, Tejas
+{{ M | safe }}  | ==COM1-B103==     | **T**hu  **11**:00 | ~~%%08%%~~  | **`CS2103-T11`**| Damith, Brian
+{{ MT | safe }} | COM1-0210 (SR 10) | **T**hu  **11**:00 | ~~%%G06%%~~ | **`CS2103T-T11`**| James, Jeff
+{{ MT | safe }} | COM1-0210 (SR 10) | **T**hu  **12**:00 | ~~%%G04%%~~ | **`CS2103T-T12`**| Jun Rong, Brian
+{{ MT | safe }} | COM1-0210 (SR 10) | **T**hu  **13**:00 | ~~%%G10%%~~ | **`CS2103T-T13`**| Xiaowen, Yuan Chuan
+{{ M | safe }}  | COM1-0210 (SR 10) | **T**hu  **14**:00 | ~~%%02%%~~  | **`CS2103-T14`**| Gilbert, Yuan Chuan
+{{ M | safe }}  | COM1-0210 (SR 10) | **T**hu  **16**:00 | ~~%%04%%~~  | **`CS2103-T16`**| Kyler, ZhiHui
+{{ MT | safe }} | ~~COM1-B103~~ COM1-0210 (SR 10) | **T**hu  **17**:00 | ~~%%G13%%~~ | **`CS2103T-T17`**| Jun Rong
+ | | | | | |
+{{ M | safe }}  | COM1-0210 (SR 10) | **F**ri  **09**:00 | ~~%%06%%~~  | **`CS2103-F09`**| Jonathan, Keith
+{{ M | safe }}  | COM1-0210 (SR 10) | **F**ri  **10**:00 | ~~%%07%%~~  | **`CS2103-F10`**| Jonathan, Keith
+{{ MT | safe }} | COM1-0210 (SR 10) | **F**ri  **11**:00 | ~~%%G12%%~~ | **`CS2103T-F11`**| Jia Hao, Yuan Chuan
+{{ MT | safe }} | COM1-0210 (SR 10) | **F**ri  **12**:00 | ~~%%G08%%~~ | **`CS2103T-F12`**| Ayush, Yash
+{{ MT | safe }} | COM1-0210 (SR 10) | **F**ri  **13**:00 | ~~%%G07%%~~ | **`CS2103T-F13`**| LongBin, Yash
+{{ MT | safe }} | COM1-0210 (SR 10) | **F**ri  **14**:00 | ~~%%G09%%~~ | **`CS2103T-F14`**| Alfred, Yash

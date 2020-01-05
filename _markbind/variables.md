@@ -13,6 +13,9 @@
 
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 
+<span name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></span>
+<span name="MT"><span class="badge badge-warning">{{ module }}T</span></span>
+
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 
 <span id="module_gh_pages">https://nus-{{ module | lower }}-{{ semester }}.github.io</span>
