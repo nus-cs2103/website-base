@@ -369,7 +369,8 @@ On a somewhat related note, you can also **create similar product websites for y
 {% set deadline_type = step.deadline_type if step.deadline_type else 'danger' %}
 {% set deadline_badge = timing_badge(step.deadline, deadline_type if is_summary else 'secondary') if step.deadline else ''  %}
 {% if step.id == 'add_increments' %}
-Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
+{% set prefix = "Add Increment" + ("" if (step.increments | length) == 1 else "s") %}
+{{ prefix }}{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
 {% else %}
 <include src="{{ tasks_file }}#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
 {% endif %}

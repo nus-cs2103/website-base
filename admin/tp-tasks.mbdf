@@ -282,9 +282,11 @@ Given below are some guidance on the recommended progress at this point of the p
 
   <box>
 
-  {{ icon_tip }} It is highly recommended that you **divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding** %%e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%.
+  {{ icon_tip }} Recommended: **Divide documentation work (in the User Guide and the Developer Guide) among team members equally; preferably based on enhancements/features each person would be adding** %%e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%.
 
   %%Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.%%
+
+  {{ embed_topic("tp-grading.md#criteria-documentation", "Admin " + icon_embedding + " **tP: Grading → ==Documentation==**", "3") }}
    
   </box>
 </div>

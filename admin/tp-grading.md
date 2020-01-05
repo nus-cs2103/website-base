@@ -107,6 +107,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 </box>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
+<div id="criteria-documentation">
 
 #### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_individual }} 10 marks]%%</div>
 
@@ -137,6 +138,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 </box>
 </div>
 
+</div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
 #### <div class="bg-warning p-1">5. Project Grading: Project Management %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%</div>
