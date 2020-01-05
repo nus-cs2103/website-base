@@ -9,8 +9,8 @@
 <p/>
 
 #### When to form teams
-* CS2103T: Your team will be formed by the CS2101 side.
-* CS2103: Your team will be formed at the _start_ of the week 3 tutorial. Please try to arrive on time for that tutorial; if you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
+* {{ module }}T: Your team will be formed by the CS2101 side.
+* {{ module }}: Your team will be formed at the _start_ of the week 3 tutorial. Please try to arrive on time for that tutorial; if you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
 
 #### Team size
 
@@ -31,7 +31,7 @@
 #### Team ID
 
 * **To be given to you after forming teams.**
-* **Has the form `TUTORIAL_ID-TEAM_NUMBER`** e.g, `CS2103-W14-2` means you are in tutorial `CS2103-W14` (i.e., in module `CS2103`, on `Wednesday`, at `1400-1500`), team `2`.
+* **Has the form `TUTORIAL_ID-TEAM_NUMBER`** e.g, `{{ module }}-W14-2` means you are in tutorial `{{ module }}-W14` (i.e., in module `{{ module }}`, on `Wednesday`, at `1400-1500`), team `2`.
 
 <div class="indented-level2">
 
