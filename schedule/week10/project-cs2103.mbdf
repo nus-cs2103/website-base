@@ -2,6 +2,6 @@
 
 {{ show_project_summary(tp_file="tp-w10.md") }}
 
-## tP: mid-v1.3
+## tP: mid-{{ penultimate_version }}
 
 <include src="../../admin/tp-w10.md#body" />

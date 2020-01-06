@@ -49,5 +49,5 @@ For more complicated needs, follow the instructions below this box. If you are n
   * If you choose to annotate code, minimize annotating code chunks smaller than a method. We do not grade code snippets too small to be read meaningfully.
   * If you encounter any problem when doing the above or if you have questions, please post in the [forum]({{ forum_link }}).
 
-==**We recommend you ensure your code is RepoSense-compatible by v1.3**==
+==**We recommend you ensure your code is RepoSense-compatible by {{ penultimate_version }}**==
 

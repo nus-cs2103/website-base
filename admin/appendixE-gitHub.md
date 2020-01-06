@@ -204,7 +204,7 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 
 </span>
 
-* Create following milestones : `v1.0`, `v1.1`, `v1.2`, `v1.3`, `v1.4`,
+* Create following milestones : `v1.0`, `v1.1`, `v1.2`, `{{ penultimate_version }}`, `{{ final_version }}`,
 
 * You may configure other project settings as you wish. e.g. more labels, more milestones
 
@@ -233,7 +233,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 * **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked.%%e.g.%% 
   * A typical task should be able to done by one person, in a few hours.
     * %%{{ icon_dislike }} Bad (reasons: not a one-person task, not small enough): `Write the Developer Guide`%%
-    * %%{{ icon_like }} Good: `Update class diagram in the Developer Guide for v1.4`%%
+    * %%{{ icon_like }} Good: `Update class diagram in the Developer Guide for {{ final_version }}`%%
 
   * There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. %%eg.,%%
     * %%{{ icon_dislike }} Bad:`Implementing parser ` (reason: too big).%%
@@ -263,7 +263,7 @@ We recommend you do proper milestone management starting from v1.2. ==Given belo
 **Wrapping up a Milestone**:<br>
 
   * **A working product tagged** with the correct tag (e.g. `v1.2`) and is pushed to the main repo<br>
-    or a **product _release_ done on GitHub**. A product release is optional for v1.2 but required from from v1.3. Click [here](https://github.com/se-edu/addressbook-level3/releases/) to see an example release.
+    or a **product _release_ done on GitHub**. A product release is optional for v1.2 but required from from {{ penultimate_version }}. Click [here](https://github.com/se-edu/addressbook-level3/releases/) to see an example release.
 
   * **All tests passing** on Travis for the version tagged/released.
 

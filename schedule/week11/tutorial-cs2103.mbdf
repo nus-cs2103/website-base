@@ -1,8 +1,8 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 
-#### {{ thumb(1) }} Demo v1.3
+#### {{ thumb(1) }} Demo {{ penultimate_version }}
 
-* One member is to do a quick demo of your `v1.3` ==using the jar file==. Make sure the jar file is ==in an empty folder== before you start. Others can help to confirm the jar file works on other OS'es.
+* One member is to do a quick demo of your `{{ penultimate_version }}` ==using the jar file==. Make sure the jar file is ==in an empty folder== before you start. Others can help to confirm the jar file works on other OS'es.
 
 <div class="indented-level2">
 <box type="success" border-left-color="green" icon="">

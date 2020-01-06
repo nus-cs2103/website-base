@@ -9,7 +9,7 @@
 
 #### {{ thumb(2) }} Do a Postmortem of v1.2
 
-* Share with the tutor your opinion on **how v1.2 went**, and your **plans to improve the process** (not the product) in v1.3, individually and as a team.
+* Share with the tutor your opinion on **how v1.2 went**, and your **plans to improve the process** (not the product) in {{ penultimate_version }}, individually and as a team.
 
 #### {{ thumb(3) }} Exercise: OODMs, Activity Diagrams
 

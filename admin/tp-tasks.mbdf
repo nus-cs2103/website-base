@@ -114,7 +114,7 @@ Given below are some guidance on the recommended progress at this point of the p
 
 <box dismissible>
 
-{{ icon_tip }} when setting the v1.4 deadline in GitHub milestones, remember that the v1.4 submission deadline is Week 13 Monday for _everyone_ (does not vary by tutorial day). Set your own deadline accordingly, or else the bot will flag it as an 'unsuitable' deadline.
+{{ icon_tip }} when setting the {{ final_version }} deadline in GitHub milestones, remember that the {{ final_version }} submission deadline is Week 13 Monday for _everyone_ (does not vary by tutorial day). Set your own deadline accordingly, or else the bot will flag it as an 'unsuitable' deadline.
 </box>
 
 <box background-color="white" border-color="red">
@@ -411,12 +411,12 @@ Update the following pages in your project repo:
 <span id="heading_draft_a_rough_project_plan">{{ icon_team }} Draft a rough project plan</span>
 <span id="desc_draft_a_rough_project_plan">
 
-* {{ icon_team }} **Decide which enhancements each member will do by v1.4.** %%We realize that it will be hard for you to estimate the effort required for each feature as you are not very familiar with the code base yet. Nevertheless, come up with a project plan as per your best estimate; this plan can be revised at later stages. It is better to start with _some_ plan rather than no plan at all. If in doubt, choose to do _less_ than _more_; we don't expect you to deliver a lot of big features anyway.%%
-* {{ icon_individual }} **Divide each of those features into two increments**, to be released at v1.2, v1.3 (v1.4 omitted deliberately as a buffer). ==Each increment should deliver a end-user visible enhancement.==
+* {{ icon_team }} **Decide which enhancements each member will do by {{ final_version }}.** %%We realize that it will be hard for you to estimate the effort required for each feature as you are not very familiar with the code base yet. Nevertheless, come up with a project plan as per your best estimate; this plan can be revised at later stages. It is better to start with _some_ plan rather than no plan at all. If in doubt, choose to do _less_ than _more_; we don't expect you to deliver a lot of big features anyway.%%
+* {{ icon_individual }} **Divide each of those features into two increments**, to be released at v1.2, {{ penultimate_version }} ({{ final_version }} omitted deliberately as a buffer). ==Each increment should deliver a end-user visible enhancement.==
   ```
   * Jake Woo: Profile photo feature
     * v1.2: show a place holder for photo, showing a generic default image
-    * v1.3: can specify photo location if it is in local hard disk,
+    * {{ penultimate_version }}: can specify photo location if it is in local hard disk,
             show photo from local hard disk
   ```
 
@@ -472,16 +472,16 @@ Update the following pages in your project repo:
 <span id="heading_add_another_increment_to_your_feature">{{ icon_individual }} Add another increment to your feature</span>
 <span id="desc_add_another_increment_to_your_feature">
 
-* Add an increment to your feature, aiming to deliver a ==user-visible== version of your feature by v1.2 %%i.e., simpler than the feature intended for v1.4, but still usable by the user%%.
+* Add an increment to your feature, aiming to deliver a ==user-visible== version of your feature by v1.2 %%i.e., simpler than the feature intended for {{ final_version }}, but still usable by the user%%.
 
-* {{ icon_important_big_red }} **From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="v1.3, v1.4"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
+* {{ icon_important_big_red }} **From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ penultimate_version }}, {{ final_version }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
  If an enhancement is too big to complete in one milestone, try to deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first.
 </span>
 {#====================================================================================================================#}
 <span id="heading_deliver_an_intermediate_version_of_your_enhancement">{{ icon_team }} Deliver an intermediate version of the new features</span>
 <span id="desc_deliver_an_intermediate_version_of_your_enhancement">
 
-* The feature should be merged and user visible, although simpler than the version you intend to deliver at v1.4.
+* The feature should be merged and user visible, although simpler than the version you intend to deliver at {{ final_version }}.
 </span>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_v12">{{ icon_team }} Wrap up milestone</span>
@@ -508,7 +508,7 @@ Update the following pages in your project repo:
 <span id="heading_start_on_the_full_version">{{ icon_individual }} Start on the full version of the new features</span>
 <span id="desc_start_on_the_full_version">
 
-* Start on implementing the full version of your new feature(s). Aim to finish it in v1.3 (v1.4 can serve as a buffer). As before, you can divide the work into even smaller increments %%e.g., aim to deliver a v1.2.1 at the end of this week%%.
+* Start on implementing the full version of your new feature(s). Aim to finish it in {{ penultimate_version }} ({{ final_version }} can serve as a buffer). As before, you can divide the work into even smaller increments %%e.g., aim to deliver a v1.2.1 at the end of this week%%.
 * **Maintain the defensiveness of the code**: Remember to use assertions, exceptions, and logging in your code, as well as other defensive programming measures when appropriate.<br>
   {{ icon_important_big_red }} Remember to enable assertions in your IDEA run configurations and gradle file.
 * Continue to do deliberate project management using GitHub issue tracker, milestones, labels, etc. as you did in v1.2.
@@ -521,7 +521,7 @@ Update the following pages in your project repo:
 <div class="indented">
 <box>
 
-{{ icon_important_big_red }} Do a sincere job on this task because this is your only chance to get feedback on the DG before it is graded at v1.4.
+{{ icon_important_big_red }} Do a sincere job on this task because this is your only chance to get feedback on the DG before it is graded at {{ final_version }}.
 </box>
 </div>
 
@@ -543,7 +543,7 @@ Update the following pages in your project repo:
 </span>
 <span id="dgTips">
 
-<include src="tp-deliverables-dg.mbdf#dg-tips" />
+<include src="tp-deliverables-dg.mbdf#dgTips" />
 </span>
 </panel>
 <p/>
@@ -553,7 +553,7 @@ Update the following pages in your project repo:
 <span id="heading_do_a_release">{{ icon_team }} Do a release</span>
 <span id="desc_do_a_release">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for v1.3. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ penultimate_version }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 </span>
 {#====================================================================================================================#}
 <span id="heading_make_code_reposense_compatible">{{ icon_individual }} Make the code RepoSense-compatible</span>
@@ -575,13 +575,13 @@ Update the following pages in your project repo:
 <span id="heading_deliver_the_feature">{{ icon_individual }} Deliver the feature</span>
 <span id="desc_deliver_the_feature">
 
-* Ideally, this version of the feature should be a release-candidate for the v1.4 i.e., has the functionality expected of v1.4.
+* Ideally, this version of the feature should be a release-candidate for the {{ final_version }} i.e., has the functionality expected of {{ final_version }}.
 </span>
 {#====================================================================================================================#}
 <span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>
 <span id="desc_update_user_docs">
 
-* {{ icon_important_big_red }} v1.3 user guide should be updated to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
+* {{ icon_important_big_red }} {{ penultimate_version }} user guide should be updated to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
   * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in v2.0`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 
@@ -598,7 +598,7 @@ Update the following pages in your project repo:
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). Do some manual tests to ensure the jar file works.
 </span>
 {#====================================================================================================================#}
-<span id="heading_wrap_up_v13">{{ icon_team }} Wrap up v1.3</span>
+<span id="heading_wrap_up_v13">{{ icon_team }} Wrap up {{ penultimate_version }}</span>
 <span id="desc_wrap_up_v13">
 
 * as before
@@ -619,7 +619,7 @@ Update the following pages in your project repo:
 
 {{ embed_topic("tp-deliverables-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
 
-* **Freeze features** around this time. Ensure the current product have all the features you intend to release at v1.4. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
+* **Freeze features** around this time. Ensure the current product have all the features you intend to release at {{ final_version }}. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
 * **Update documentation** to match the product.
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 
@@ -642,12 +642,12 @@ Update the following pages in your project repo:
 <span id="heading_prepare_for_demo">{{ icon_team }} Prepare for the demo rehearsal</span>
 <span id="desc_prepare_for_demo">
 
-* You will do a product demo during the tutorial to serve as a rehearsal for the final project demo at v1.4
+* You will do a product demo during the tutorial to serve as a rehearsal for the final project demo at {{ final_version }}
   * ==**Follow final demo instructions** (given in the panel below)== as much as possible .
   * **Cover all features**, not just the ones added in the recent iteration.
   * **Make it a 'well prepared' demo** i.e., know in advance exactly what you'll do in the demo.
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → v1.4 Demo (extract)", "3", indent="2") }}
+{{ embed_topic("tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → Final Demo (extract)", "3", indent="2") }}
 </span>
 {#====================================================================================================================#}
 <span id="heading_double_check_reposense_compatibility">{{ icon_team }} Double-check RepoSense compatibility</span>
@@ -667,7 +667,7 @@ Update the following pages in your project repo:
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
 <span id="desc_submit_final_deliverables">
 
-* **Deadline** for all v1.4 submissions is Week 13 Monday 23.59 unless stated otherwise.<br>
+* **Deadline** for all {{ final_version }} submissions is Week 13 Monday 23.59 unless stated otherwise.<br>
 * Submit to LumiNUS folder we have set up, not to your project space.<br>
   {{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.
 * {{ icon_important_big_red }} **Penalty for late submission:**<br>
@@ -691,7 +691,7 @@ Update the following pages in your project repo:
 </div>
 
 * {{ icon_team }} **Product**:
-  * Do a release on GitHub, tagged as `v1.4`.
+  * Do a release on GitHub, tagged as `{{ final_version }}`.
   * Upload the jar file to LumiNUS. <br>
     File name: `[team][product name].jar` %%e.g. [{{ module }}T-W09-1][ContactsPlus].jar%%
 

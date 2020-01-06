@@ -213,7 +213,7 @@ This is a non-exhaustive list; you may define additional roles.
 * _Integration_: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.
 * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
 * _[Tool ABC] expert_: %%e.g. Intellij expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
-* _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in v1.3-v1.4.
+* _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in {{ penultimate_version }}-{{ final_version }}.
 </panel><p/>
 
 {{ icon_tip }} Ensure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but **for each aspect there should be one person who is unequivocally the person responsible for it**. %%Reason: when _everyone is responsible for everything_, no one is.%%

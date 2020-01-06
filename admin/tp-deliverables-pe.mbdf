@@ -202,7 +202,7 @@ Duplicate of #67
 
 **Response** Labels:
 * `response.Accepted`: You accept it as a bug.
-* `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in v1.4%%.
+* `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in {{ final_version }}%%.
 * `response.Rejected`: What tester treated as a bug is in fact the expected behavior.  You can reject bugs that you inherited from AB3.
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
@@ -218,7 +218,7 @@ Duplicate of #67
 
 **Type** labels:
 * `type.FunctionalityBug`: A functionality does not work as specified/expected.
-* `type.FeatureFlaw`: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.
+* `type.FeatureFlaw`: Some functionality missing from a feature delivered in {{ final_version }} in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of {{ final_version }} features. These issues are counted against the 'depth and completeness' of the feature.
 * `type.DocumentationBug`: A flaw in the documentation that can potentially affect the user %%e.g., a missing step, a wrong instruction, typos that affect users%%
 </box>
 </div>
