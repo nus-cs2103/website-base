@@ -3,6 +3,7 @@
 
 #### {{ thumb(0) }} Smoke-test CATcher
 
+<span id="catcher-alpha">
 <div class="indented-level2">
 
 <box dismissible>
@@ -18,7 +19,7 @@ In this tutorial, we would like to smoke-test the CATcher app **to ensure it can
 1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
 1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
    {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.
-1. **Login**: Choose the profile `CS2103/T Alpha Test`, enter your GitHub credentials, and submit.<br>
+1. **Login**: Choose the profile `{{ module }}/T Alpha Test`, enter your GitHub credentials, and submit.<br>
    {{ icon_tip }} If you have 2FA enabled for GitHub, you can [create a personal access token with `repo` permissions](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and use that as the password.<br>
    <img src="../../admin/images/catcherLogin.png" />
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
@@ -33,6 +34,7 @@ In this tutorial, we would like to smoke-test the CATcher app **to ensure it can
 {{ icon_important_big_red }} **Being able to run CATcher is important for the PE** -- if you are unable to run it, please follow up via the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues) until you resolve the issue ASAP.
 
 </div>
+</span>
 
 #### {{ thumb(1) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
 
@@ -101,7 +103,7 @@ Your Team ID  | Sub-team A Reviews <small>%%(backup)%%</small> | Sub-team B Revi
 {{ embed_topic("../../admin/tp-grading-bugs.mbdf#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
 
 Also see:
-{{ embed_topic("../../admin/tp-deliverables-dg.mbdf#dg-tips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="1", status="expanded", type="success") }}
+{{ embed_topic("../../admin/tp-deliverables-dg.mbdf#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="1", status="expanded", type="success") }}
 
 </box>
 

@@ -513,7 +513,6 @@ Update the following pages in your project repo:
   {{ icon_important_big_red }} Remember to enable assertions in your IDEA run configurations and gradle file.
 * Continue to do deliberate project management using GitHub issue tracker, milestones, labels, etc. as you did in v1.2.
 * {{ icon_tip }} We recommend that **each PR also updates the relevant parts of documents and tests**. That way, your documentation/testing work will not pile up towards the end.
-* {{ icon_tip }} There is [a way to get GitHub to auto-close the relevant issue when a PR is merged](https://help.github.com/articles/closing-issues-using-keywords/) ([example](https://github.com/se-edu/addressbook-level4/pull/888)).
 </span>
 {#====================================================================================================================#}
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update DG with design details</span>
