@@ -170,7 +170,7 @@ Given below are some guidance on the recommended progress at this point of the p
 
   <img class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px">
 
-* Get together with your team members and <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> **&nbsp;for the v2.0 of the product**.
+* Get together with your team members and <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> **&nbsp;for the the product**.
   * At this stage, aim to have more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.%%
   * Refer <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories →  Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.
   * You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
@@ -261,17 +261,17 @@ Given below are some guidance on the recommended progress at this point of the p
 {{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_conceptualize_v2">{{ icon_team }} Conceptualize v2.0</span>
+<span id="heading_conceptualize_v2">{{ icon_team }} Conceptualize {{ future_version }}</span>
 <span id="desc_conceptualize_v2">
 
-* Based on your user story categorization in the previous week, given module requirements/constraints for the project, and the current state of the product, select which user stories you are likely to include in v2.0.
-* Conceptualize the product in terms of how it will look like at v2.0.
+* Based on your user story categorization in the previous week, given module requirements/constraints for the project, and the current state of the product, select which user stories you are likely to include in {{ future_version }}.
+* Conceptualize the product in terms of how it will look like at {{ future_version }}.
 </span>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ug">{{ icon_individual }} Draft the UG</span>
 <span id="desc_draft_the_ug">
 
-* Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at v2.0.
+* Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ future_version }}.
   * We recommend that you follow the existing [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
   * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in asciidoc format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at the end of the semester.
@@ -363,7 +363,7 @@ Update the following pages in your project repo:
 <span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
 <span id="desc_update_the_ug">
 
-* Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' ([example]({{ ab3_website }}/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).<br>
+* Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in {{ future_version }}' ([example]({{ ab3_website }}/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).<br>
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ tp_dashboard }}).<br>
   {{ icon_tip }} While it is more convenient for one person to update the entire UG, splitting the work will give you a good opportunity to learn to deal with merge conflicts.
 
@@ -582,7 +582,7 @@ Update the following pages in your project repo:
 <span id="desc_update_user_docs">
 
 * {{ icon_important_big_red }} {{ penultimate_version }} user guide should be updated to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
-  * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in v2.0`%%.
+  * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in {{ future_version }}`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 
 * **README page**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.

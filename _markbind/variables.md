@@ -49,6 +49,7 @@
 
 <span id="penultimate_version">v1.3</span>
 <span id="final_version">v1.4</span>
+<span id="future_version">v2.0</span>
 
 <span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
 
