@@ -3,7 +3,7 @@
 {% call show_admin_page("appendixF-teamworkIssues") %}
 <div id="main">
 
-If your team is facing difficulties due to differences in skill/motivation /availability among team members,
+If your team is facing difficulties due to differences in skill/motivation/availability among team members,
 
 * **First, do not expect everyone to have the same skill/motivation level as you.** It is fine if someone wants to do less and have low expectations from the module. That doesn't mean that person is a bad person. Everyone is entitled to have their own priorities.
 

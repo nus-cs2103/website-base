@@ -127,12 +127,6 @@ The high number of submissions is not meant to increase workload but to spread i
 
 </div>
 
-<div id="admin-faq-fromScratch">
-
-There are many reasons. One of them is that most of you will be working with existing software in your first few years of the career while hardly any school projects train you to work with existing code bases. We decided to bite the bullet and use {{ module_pair }} to train you to work in existing code bases.
-
-</div>
-
 <div id="admin-faq-cs2101Differences">
 
 <img src="{{baseUrl}}/admin/images/Submission requirements differ.png" width="300"/>

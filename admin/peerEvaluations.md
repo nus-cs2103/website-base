@@ -25,7 +25,7 @@ This module leverages peer feedback/evaluations in many ways. In particular, we 
 <include src="peerEvaluations-final.mbdf" />
 </div>
 
-### Session: `Responses Peer Evaluation`
+### Session: `Responses to Peer Evaluations`
 
 * This is a chance for you to submit your objections to the ratings you received in the Final Peer Evaluation
 
