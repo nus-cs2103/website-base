@@ -33,17 +33,16 @@ sitting periods, and alerts the user if ...
 
 * There is no need to introduce team members or explain who did what. %%Reason: to save time.%%
 * **Each person should do a fair share of the demo**. However, it's OK for one member to do all the typing.
-* **There is no need for you to demo your own work**.
+* **There is no need for each person to demo their own work**.
 * **Present the features in a reasonable order**: Organize the demo to present a cohesive picture of the product as a whole, presented in a logical order.
 * **No need to cover design/implementation details** as the manager is not interested in those details.
-* **No need to demo features inherited from AB3** unless they are needed to explain your new features. %%Reason: existing features will not earn you marks, and the audience is already familiar with AB3 features.%%
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Structure</span>
 
 * **Demo the product using the same executable** you submitted, on your own laptop, using the TV.
 * **It can be a _sitting down_ demo.** You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.
 * **It will be an uninterrupted demo.** The audience members will not interrupt you during the demo. That means you should finish within the given time.
-* **Use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name">_realistic_</tooltip> demo data.** %%e.g at least 20 contacts%%. Trying to demo a product using just 1-2 sample data creates a bad impression.
+* **Use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name">_realistic_</tooltip> demo data.** %%e.g at least 20 data items%%. Trying to demo a product using just 1-2 sample data creates a bad impression.
 * **Dress code**: The level of formality is up to you, but it is recommended that the whole team dress at the same level.
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Tips</span>

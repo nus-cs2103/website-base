@@ -231,6 +231,7 @@ Duplicate of #67
 
 * **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.**
   * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
+  * It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never review it), provided the bug should have been reasonably apparent to a reviewer. For example, if someone put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.
 <p/>
 
 * As far as possible, **choose the correct `type.*`, `severity.*`, and assignees even for bugs you are not accepting or for bugs that are marked as duplicates**. Reason: your _non-acceptance_  or duplication status may be rejected in a later phase, in which case we need to grade it as an accepted/non-duplicate bug.
