@@ -40,7 +40,7 @@
 
 <span id="admin_link"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span>
 
-<span id="schedule_link"><md>[Schedule page]({{baseUrl}}/index.html)</md></span>
+<span id="schedule_link"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></span>
 
 <span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
 

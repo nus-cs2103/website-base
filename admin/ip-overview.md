@@ -15,7 +15,7 @@ The objectives of the individual project (iP) is to learn/refresh the basics of,
 * Git and GitHub
 * Code quality
 
-All skills you will learn in the iP will be useful in the team project (tP). Furthermore, some of the code you will write in iP can be adapted for the tP.
+All skills you will learn in the iP will be useful in the team project (tP). Furthermore, some of the iP code can be adapted for the tP.
 
 The iP is based on the generic project called [_Project Duke_](../se-book-adapted/projectDuke/index.html), the overview of which is given below.
 

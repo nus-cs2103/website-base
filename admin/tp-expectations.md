@@ -163,7 +163,7 @@ There is no requirement for a minimum coverage level. Note that in a production 
 
 #### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Teamwork</span>
 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Do a fair share of the _team tasks_**.</span>
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Do a fair share of the _team-tasks_**.</span>
 
 <div id="team-tasks" class="indented-level2">
 
