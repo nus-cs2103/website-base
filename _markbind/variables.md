@@ -47,6 +47,7 @@
 <span id="ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</span>
 <span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard</span>
 
+<span id="first_version">v1.2</span>
 <span id="penultimate_version">v1.3</span>
 <span id="final_version">v1.4</span>
 <span id="future_version">v2.0</span>
