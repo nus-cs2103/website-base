@@ -47,6 +47,10 @@
 
 
 {%- macro make_anchor(text) %}{{ text | trim | replace(".", "-") }}{% endmacro -%}
+{%- macro slugify(text) %}{{ text | lower | replace(' ', '-') | replace(':', '')  | replace('/', '-') | replace(',', '')  | replace("'", "") }}{% endmacro -%}
+{%- macro commentary(span_id) %}
+<include src="commentary.mbdf#{{ span_id }}" optional />
+{% endmacro -%}
 
 
 {% macro apply_to(filter_property, filter_value, entries, op, params={})%}
@@ -71,6 +75,8 @@
 {% set expanded = "expanded" if priority != "4" else "" %}
 {% if not is_toc %}
 <span id="{{ make_anchor(id_prefix) }}" />
+
+{{ commentary(slugify(full_path)) }}
 
 <panel type="seamless" {{ expanded }} popup-url="{{ baseUrl }}/book/{{  full_path }}">
 <span slot="header" class="card-title">
@@ -117,6 +123,7 @@
 
 {% macro show_subheading(subheading) %}
 <br/>
+{{ commentary(slugify(subheading)) }}
 
 ### %%**{{ subheading }}**%%
 {% endmacro %}
@@ -153,6 +160,8 @@
 {% endif %} {# if not params.is_flat #}
 {% else %}
 <span id="{{ anchor }}" />
+
+{{ commentary(slugify(params.topic.heading)) }}
 
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" expanded >
 <span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
