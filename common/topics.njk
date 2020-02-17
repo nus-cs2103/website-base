@@ -51,6 +51,12 @@
 {%- macro commentary(span_id) %}
 <include src="commentary.mbdf#{{ span_id }}" optional />
 {% endmacro -%}
+{%- macro followup(span_id) %}
+<p/>
+<div class="indented">
+<include src="commentary.mbdf#followup-{{ span_id }}" optional />
+</div>
+{% endmacro -%}
 
 
 {% macro apply_to(filter_property, filter_value, entries, op, params={})%}
@@ -86,6 +92,7 @@
 </span>
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
+{{ followup(slugify(full_path)) }}
 {% else %}
 * %%[[{{ id_prefix }}](topics.html#{{ make_anchor(id_prefix) }})] <include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />%% <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline /> {{ show_stars(priority) }}
 {% endif %}
@@ -176,6 +183,7 @@
 {% endfor %}
 </div>
 </panel>
+{{ followup(slugify(params.topic.heading)) }}
 {% endif %} {# if params.is_toc #}
 {% endmacro %}
 
