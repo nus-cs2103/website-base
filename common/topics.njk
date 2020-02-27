@@ -47,7 +47,7 @@
 
 
 {%- macro make_anchor(text) %}{{ text | trim | replace(".", "-") }}{% endmacro -%}
-{%- macro slugify(text) %}{{ text | lower | replace(' ', '-') | replace(':', '')  | replace('/', '-') | replace(',', '')  | replace("'", "") }}{% endmacro -%}
+{%- macro slugify(text) %}{{ text | replace(' ', '-') | replace(':', '')  | replace('/', '-') | replace(',', '')  | replace("'", "") }}{% endmacro -%}
 {%- macro commentary(span_id) %}
 <include src="commentary.mbdf#{{ span_id }}" optional />
 {% endmacro -%}
