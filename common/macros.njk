@@ -99,7 +99,10 @@
 {% macro embed_topic(source, title, level="0", indent="0", status="minimized", type="") %}
 {% set stars = {"0": "", "1": s, "2": s+s, "3": s+s+s, "4": s+s+s+s} %}
 {%  if indent != "0" %}<div class="indented-level{{ indent }}">{% endif %}
-<panel type="{{ type }}" src="{{ source }}" header="{{ title | safe }}  {{ stars[level] | safe }}" class="embedding" {{ status }} />
+<panel type="{{ type }}" header="{{ title | safe }} {{ stars[level] | safe }}" class="embedding" {{ status }} >
+
+<include src="{{ source }}" />
+</panel>
 {%  if indent != "0" %}</div><p/>{% endif %}
 
 {% endmacro %}
