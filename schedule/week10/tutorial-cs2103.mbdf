@@ -19,11 +19,14 @@ In this tutorial, we would like to smoke-test the CATcher app **to ensure it can
 1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
 1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
    {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.
-1. **Login**: Choose the profile `{{ module }}/T Alpha Test`, enter your GitHub credentials, and submit.<br>
-   {{ icon_tip }} If you have 2FA enabled for GitHub, you can [create a personal access token with `repo` permissions](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) and use that as the password.<br>
+1. **Login**: Choose the _session_ `{{ module }}/T Alpha Test`, and submit.
    <img src="../../admin/images/catcherLogin.png" />
+1. In the next screen, submit your GitHub credentials directly or choose to the `Use GitHub login interface` to login to CATcher using your GitHub account.<br>
+   If the app asks for public repo access permissions, grant it (just go with the default settings).
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
-1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. e.g., you can copy-paste screenshots into the bug description and use Markdown syntax.<br>
+1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
+   {{ icon_tip }} you can ==copy-paste screenshots== into the bug description<br>
+   {{ icon_tip }} You can use Markdown syntax in the bug descriptions.
   {{ icon_info }} The `severity` and `type` labels are compulsory.
 1. **Report any problems you encounter** at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
 
