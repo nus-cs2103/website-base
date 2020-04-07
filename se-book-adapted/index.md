@@ -4,7 +4,7 @@
 {% macro show_chapter(section, chapter) %}
 
 * [{{ chapter.heading }}]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}.html)
-  <trigger for="pop:{{ chapter.name }}-preview">{{icon_preview}}</trigger> [{{icon_print}}]({{baseUrl}}/se-book-adapted/chapters-printable/{{ chapter.name }}-printable.html)
+  [{{icon_print}}]({{baseUrl}}/se-book-adapted/chapters-printable/{{ chapter.name }}-printable.html)
 {% endmacro %}
 
 
