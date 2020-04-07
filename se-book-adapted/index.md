@@ -5,12 +5,6 @@
 
 * [{{ chapter.heading }}]({{baseUrl}}/se-book-adapted/chapters/{{ chapter.name }}.html)
   <trigger for="pop:{{ chapter.name }}-preview">{{icon_preview}}</trigger> [{{icon_print}}]({{baseUrl}}/se-book-adapted/chapters-printable/{{ chapter.name }}-printable.html)
-
-<popover id="pop:{{ chapter.name }}-preview" title="{{ chapter.heading}} {{icon_preview}}" placement="right">
-  <div slot="content">
-    <include src="../book/{{chapter.name}}/preview.md" />
-  </div>
-</popover>
 {% endmacro %}
 
 
