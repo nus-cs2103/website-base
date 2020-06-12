@@ -693,7 +693,7 @@ Update the following pages in your project repo:
 * {{ icon_team }} **Product**:
   * Do a release on GitHub, tagged as `{{ final_version }}`.
   * Upload the jar file to LumiNUS. <br>
-    File name: `[team][product name].jar` %%e.g. [{{ module }}T-W09-1][ContactsPlus].jar%%
+    File name: `[team ID][product name].jar` %%e.g. [{{ module }}T-W09-1][ContactsPlus].jar%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
 
