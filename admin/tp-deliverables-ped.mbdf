@@ -4,14 +4,14 @@
 
 **What**: The {{ penultimate_version }} is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ final_version }}</trigger>.
 
-**When, where**: uses a 40 minute slot at the start of week 11 lecture
+**When, where**: uses a 40 minute slot at the start of week 11 lecture slot (to be done online).
 
 <modal large header="Admin {{ icon_embedding }} Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
   <include src="tp-deliverables.md#tp-deliverables-practicalexam"/>
 </modal>
 
-{{ icon_important_big_red }} **Grading**: Taking part in the PE dry run is strongly encouraged as it ==can affect your grade in the following ways==.
-* If the product you are allocated to test in the Practical Exam (at {{ final_version }}) had a very low bug count, we will consider your performance in PE dry run as well when grading the PE.
+{{ icon_important_big_red }} **Grading**: The PE dry run ==affects your grade in the following ways==.
+* If the product you are allocated to test in the Practical Exam (at {{ final_version }}) had a very low bug count if you scored low in the PE, we will consider your performance in PE dry run as well when calculating the PE marks.
 * PE dry run will help you practice for the actual PE.
 * Taking part in the PE dry run will earn you participation points.
 * There is ==no penalty for bugs reported== in your product. Every bug you find is a win-win for you and the team whose product you are testing.
@@ -33,42 +33,83 @@
 
 ###### <div class="text-white bg-secondary p-1">a) Launching the JAR file</div>
 
-* Put the jar file ==in an empty folder==.
+* Get the jar file to be tested:
+
+<tabs active="1">
+<tab header="~~PE Dry Run (at **{{ penultimate_version }}**)~~">
+
+* Download the jar file from the team's releases page, if you haven't done this already.
+
+</tab>
+<tab header="PE (at **{{ final_version }}**)">
+
+* Download the zip file from the given location, if you haven't done that already.
+* Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix `_inner.zip`.
+* Unzip the inner zip file. This will give you the jar file and other PDF files needed for the PE. ==Warning: do not run the jar file while it is still inside the zip file==.
+
+</tab>
+</tabs>
+<p/>
+
+* Put the downloaded jar file ==in an empty folder==.
 * Open a command window. Run the `java -version` command to ensure you are using Java 11.
 * Launch the jar file ==using the `java -jar` command== (do not use double-clicking).
-* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch%%, you can test the _fallback_ team allocated to you. But in this case ==you must inform us immediately after the session== so that we can send your bug reports to the correct team.
-  * PE-D: Download the JAR file from their GitHub page
-  * PE: 1. Download from LumiNUS all files submitted by the team %%(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)%% ==into an empty folder==.
+* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via Gitter or Zoom chat) to receive a _fallback_ team to test.
+
 
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
 
-* PE Dry Run (at **{{ penultimate_version }}**):
-  * Test the product ==based on the User Guide== (the UG is most likely accessible using the `help` command).
-  * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
-* PE (at **{{ final_version }}**):
-  * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
-  * As before, do both ==system testing and acceptance testing== but give priority to system testing as system-testing bugs can earn you more credit.
+<tabs active="1">
+<tab header="~~PE Dry Run (at **{{ penultimate_version }}**)~~">
+
+* Test the product ==based on the User Guide== available from their GitHub website `https://{team-id}.github.io/tp/UserGuide.html`.
+* Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
+
+</tab>
+<tab header="PE (at **{{ final_version }}**)">
+
+* Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
+* As before, do both ==system testing and acceptance testing== but give priority to system testing as system-testing bugs can earn you more credit.
+
+</tab>
+</tabs>
+<p/>
 
 ###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
 
-* PE Dry Run (at **{{ penultimate_version }}**): You may report functionality bugs, UG bugs, and feature flaws.
+<tabs active="1">
+<tab header="~~PE Dry Run (at **{{ penultimate_version }}**)~~">
 
+* You may report functionality bugs, UG bugs, and feature flaws.
 <div class="indented-level2">
 
 {{ embed_topic("tp-grading-bugs.mbdf#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
-{{ embed_topic("tp-grading-bugs.mbdf#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs.mbdf#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3") }}
 {{ embed_topic("tp-grading-bugs.mbdf#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
-</div>
+</div><p/>
 
-* PE (at **{{ final_version }}**): In addition to the reporting functionality bugs, UG bugs, and feature flaws, there will be an extra time given specifically for reporting documentation bugs (i.e., UG and DG bugs).
+* You can also post suggestions on how to improve the product.<br>
+  {{ icon_tip }} Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
 
-<div class="indented-level2">
-{{ embed_topic("tp-grading-bugs.mbdf#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3") }}
-</div>
+</tab>
+<tab header="PE (at **{{ final_version }}**)">
 
-* **About posting _suggestions_:**
-  * PE Dry Run (at **{{ penultimate_version }}**): You can also post suggestions on how to improve the product. {{ icon_tip }} Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
-  * PE (at **{{ final_version }}**): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`.
+* Report functionality bugs:
+
+{{ embed_topic("tp-grading-bugs.mbdf#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3", indent="2") }}
+
+
+* Do not post suggestions but if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`.
+{{ embed_topic("tp-grading-bugs.mbdf#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3", indent="2") }}
+
+* You may also report UG bugs.
+{{ embed_topic("tp-grading-bugs.mbdf#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
+
+
+</tab>
+</tabs>
+<p/>
+
 
 ###### <div class="text-white bg-secondary p-1">d) How to report bugs</div>
 
@@ -124,8 +165,8 @@
 <span id="after-ped">
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span>
-* We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission {{ final_version }}. For some issues, the correct decision could be to reject or postpone to a version beyond {{ final_version }}.
+* We'll transfer the relevant bug reports to your repo within a day after the session is over. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission {{ final_version }}. For some issues, the correct decision could be to reject or postpone to a version beyond {{ final_version }}.
 * If you have received bug reports that don't seem to be about your project, do let us know ASAP (email the prof).
-* You can navigate to the original bug report (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond.
+* You can navigate to the original bug report (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the original bug reporter.
   * {{ icon_tip }} Do not argue with the bug reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and discontinue to discussion.
 </span>

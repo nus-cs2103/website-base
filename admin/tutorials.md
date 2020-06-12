@@ -14,7 +14,7 @@
 
 </box>
 
-Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors
+Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details]({{ instructors_page }}))
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------
 <include src="tutorial-schedule-{{ module }}-S{{ S }}.mbdf" inline />
 

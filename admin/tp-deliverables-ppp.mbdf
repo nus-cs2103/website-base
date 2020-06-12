@@ -38,10 +38,13 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Format</span>
 
-* File name: `docs/team/githbub_username_in_lower_case.adoc` e.g., `docs/team/goodcoder123.adoc`
+* File name (i.e., in the repo): `docs/team/githbub_username_in_lower_case.md` e.g., `docs/team/goodcoder123.md`
 * {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ ab3_website }}/team/johndoe.html)
 
-* {{ icon_tip }} You can use the [Asciidoc's `include` feature](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files) to include sections from the developer guide or the user guide in your PPP. Follow the example in the [sample]({{ ab3_website }}/team/johndoe.html).
+<div class="indented-level2">
+
+<include src="tp-tasks.mbdf#tip-how-to-convert-to-pdf" />
+</div>
 
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span>
 

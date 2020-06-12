@@ -16,6 +16,14 @@ Accordingly, the tP is structured to resemble an intermediate stage of a non-tri
  1. conceptualize and implement enhancements to a given product, and,
  1. have it ready to be continued by future developers
 
+The focus of the tP is to learn the following aspects:
+* ~~coding~~
+* working in a team
+* process/workflow
+* documentation
+* scheduling and tracking project progress, meeting delivery deadline
+* quality assurance
+
 <span id="tp-direction">
 
 ### <div class="text-white bg-dark p-1">Direction</div>
@@ -112,8 +120,8 @@ Note that we have reduced the tP functionality expectations for this semester by
 
 #### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Implementation</span>
 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Enhance the product in some way(s).**</span>
-  * User-visible enhancements are preferred, but it is not a strict requirement.:
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Contribute to the functional code of the product.**</span>
+  * User-visible features are preferred, but it is not a strict requirement.:
   * **The enhancement(s) should fit with the rest of the software** (and the target user profile) and should have the consent of the team members. %%You will lose marks if you go 'rogue' and add things that don't fit with the product.%%
   * Given below are some examples:
 

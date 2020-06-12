@@ -246,17 +246,15 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * **Assign tasks (i.e., issues) to the corresponding team members using the `assignees` field.** ==Normally, there should be some ongoing tasks and some pending tasks against each team member at any point==.
 
-* Optionally, you can use `status.ongoing` label to indicate issues currently ongoing.
-
 <div id="using-milestones">
 
 #### Using Milestones:
 
-We recommend you do proper milestone management starting from v1.2. ==Given below are the conditions to satisfy for a milestone to be considered properly managed==:
+==Given below are the conditions to satisfy for a milestone to be considered properly managed==:
 
 **Planning a Milestone**:<br>
 
-* **Issues assigned to the milestone, team members assigned to issues**: Used [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones. Also make sure those issues are assigned to team members. %%Note that you can change the milestone plan along the way as necessary.%%
+* **Issues assigned to the milestone, team members assigned to issues**: Used [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones. Ensured issues are assigned to team members. %%Note that you can change the milestone plan along the way as necessary.%%
 
 * **Deadline set for the milestones** (in the GitHub milestone). %%Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.%%
 

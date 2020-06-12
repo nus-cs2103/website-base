@@ -690,6 +690,17 @@ Update the following pages in your project repo:
 <big>**Submissions:**</big>
 </div>
 
+<div class="indented-level2" id="tip-how-to-convert-to-pdf">
+<box type="important" light>
+
+* **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique]({{ baseUrl }}/admin/usingThisWebsite.html#saving-as-pdf-files) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.== You may un-tick the `background graphics` option as well if you wish.
+
+{{ embed_topic("../book/about/usage.md#saving", "Admin " + icon_embedding + " Using This Webiste → Saving as PDF Files", "3", indent="2") }}
+
+* **Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be reported as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+</box>
+</div>
+
 * {{ icon_team }} **Product**:
   * Do a release on GitHub, tagged as `{{ final_version }}`.
   * Upload the jar file to LumiNUS. <br>

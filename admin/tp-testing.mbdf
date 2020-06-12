@@ -4,39 +4,46 @@
 
 * Ensure you have access to a **computer that is able to run module projects** %%e.g. has the right Java version%%.
 
-<tabs> 
-  <tab header="Using CATcher">
-
 * **Download the [latest CATcher](https://github.com/CATcher-org/CATcher/releases)** and ensure you can run it on your computer.
-</tab>
-<tab header="Not using CATcher">
-<div class="indented-less">
+
+<div class="indented-level2">
+
+<panel header="If not using CATcher" minimized>
 
 <box type="warning">
 
-Issues created for PED and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are strongly recommended to use CATcher for PED and PE activities. If you want to give your response via GitHub instead, **<span class="text-danger">please get our permission first</span>**.
+Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are **<span class="text-danger">not allowed to use the GitHub interface for PE-D and PE activities, unless you have obtained  our permission first</span>**.
 </box>
 
-<markdown>
 * Create a public repo in your GitHub account with the following name:
   * PE Dry Run: `ped`
   * PE: `pe`
 * Enable its issue tracker and add the following labels to it (the label names should be precisely as given).
 
-<div class="indented-level2">
 <include src="appendixE-gitHub.md#bug-severity" />
 <include src="tp-deliverables-pe.mbdf#type-labels" />
-</div>
 
-</markdown>
+</panel><p/>
 </div>
-</tab>
-</tabs>
 
 * **Have a good screen grab tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.
   * {{ icon_tip }} You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in bug report.
 
-* **<span class="text-danger">Download the product to be tested</span>** <tooltip content="notifications are likely to go out on the morning of the PE/PE-D session">after you have been notified</tooltip> of which team you have been allocated to test.
+* **<span class="text-danger">Download the product to be tested</span>**.
+
+<tabs active="1" add-class="ml-4">
+<tab header="~~PE Dry Run (at **{{ penultimate_version }}**)~~">
+
+* After you have been notified which team to test (likely to be in the morning of PE-D day), download the jar file from the team's releases page.
+
+</tab>
+<tab header="PE (at **{{ final_version }}**)">
+
+* After you have been notified of the download location, download the zip file that bears your name.
+
+</tab>
+</tabs>
+<p/>
 
 * **Charge your computer** before coming to the session. The testing venue might not have enough charging points.
 </div>

@@ -5,10 +5,10 @@
 <span id="pe-overview">
 
 **Objectives:**
-* The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for 45% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
+* The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
 * PE is also ==used to evaluate your manual testing skills, product evaluation skills, effort estimation skills== etc.
 * Note that significant project components are ==not graded solely based on peer ratings==. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
-* Note that the PE is ==not a means of _pitting you against each other_==. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
+* PE is ==not a means of _pitting you against each other_==. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
 
 **Grading**:
 * Your performance in the practical exam will affect your final grade and your peers', as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/tp-grading.html) section.
@@ -35,7 +35,31 @@
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
 
-* **When, where**: Week 13 lecture
+<box type="important" light icon=":fas-exclamation-circle:" icon-size="2x">
+
+**PE Phase 1 is an 'exam', to be done under exam conditions:**
+* You are not allowed to communicate with others (except the invigilators).
+* You are not allowed to share your work with others.
+* Violators will be reported to the university for disciplinary action.
+
+</box>
+
+<box type="info" light>
+
+**Online channels used for the PE**:
+* ****Gitter****:
+  * Prof will be online in [Gitter](https://gitter.im/nus-{{ module | lower }}-{{ semester }}/community).
+  * ==Direct all your queries to prof as private messages to `@damithc`. <span class="text-danger">Do not use the public chat channel</span> .== If you use the main channel, you might accidentally reveal which team you are testing.
+* ****Zoom****:
+  * There will be a Zoom meeting (details will be announced later) to provide you with audio announcements.
+  * Join it and **keep the speaker** on during the PE session so that you can hear our announcements.
+  * You can use it to chat with the prof (but Gitter is preferred for chatting as it's harder to post screenshots in Zoom chats).
+  * You will not be able to share your screen, share your cam, or talk to us.
+
+
+</box>
+
+* **When, where**: Week 13 lecture slot
 
 ##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
 
@@ -45,17 +69,14 @@
 <include src="tp-deliverables-ped.mbdf#tp-deliverables-pe-testing-intructions" />
 </div>
 
-##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [20 minutes]</span>
+##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
 
-* **This slot is for reporting documentation bugs only**. You may report bugs related to UG and DG.
+* **This slot is for reporting documentation bugs only**. You may report bugs related to the UG and the DG.
 * **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.
 
-<div class="indented-level2">
-
-{{ embed_topic("tp-grading-bugs.mbdf#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
-{{ embed_topic("tp-grading-bugs.mbdf#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3") }}
-</div>
-
+{{ embed_topic("tp-grading-bugs.mbdf#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs.mbdf#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
+<p/>
 
 ##### <span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
 
@@ -121,7 +142,7 @@ For reference, the AB3 DG is [here](https://se-education.org/addressbook-level3/
 
 This phase is for you to respond to the bug reports you received.
 
-Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Tuesday midnight**. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
+Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Saturday midnight** (i.e., within 3 days). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
@@ -151,12 +172,13 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 <markdown>
 <span id="warning-use-catcher">
 
-<box type="warning">
+<box type="wrong">
 
-Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are strongly recommended to use CATcher for PE-D and PE activities. If you want to give your response via GitHub instead, **<span class="text-danger">please get our permission first</span>**.
+**You must use CATcher. You are strictly prohibited from editing PE bug reports using the GitHub Web interface** as it can can render bug reports unprocessable by CATcher, sometimes in an irreversible ways, and can affect the entire class. Please contact the prof if you are unable to use CATcher for some reason.
 </box>
 </span>
 
+<!--
 * Go to the [dev-response issue tracker]({{ module_org }}/pe-dev-response)
 * Use `tutorial.*` and `team.*` labels to filter bug reports your team received.
 * **Do not edit the subject or the description.** Your response (if any) should be added as a comment.
@@ -184,18 +206,21 @@ Duplicate of #67
 * There should be exactly one comment per issue. If there are multiple comments, the last one will be taken for processing.
 </markdown>
 </div>
+-->
+
 </tab>
 </tabs>
+<p/>
 
 * **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know ASAP.
 * **If the bug is reported multiple times**,
-  * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the `duplicate` tag.
+  * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the :fas-check-square: `A Duplicate of` tick box..
   * If the duplicates have different severity levels, you should ==keep the one with the highest severity== as the _original_. But you can downgrade the severity of the original or the duplicates.
   * For each group of duplicates, all duplicates should point to one _original_ i.e., no multiple levels of duplicates, and no cyclical duplication relationships.
   * If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the `type.*` and `severity.*` from the _original_.
 <p/>
 
-* **Apply exactly one of these labels** (if missing, we assign: `response.Accepted`)
+* **Apply one of these labels** (if missing, we assign: `response.Accepted`)
 
 <div class="indented">
 <box>
@@ -211,7 +236,7 @@ Duplicate of #67
 </div>
 
 
-* **Apply exactly one of these labels** (if missing, we assign: `type.FunctionalityBug`)
+* **Apply one of these labels** (if missing, we assign: `type.FunctionalityBug`)
 
 <div class="indented" id="type-labels">
 <box>
@@ -229,12 +254,30 @@ Duplicate of #67
 <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
+* **If you need teaching team's inputs when deciding on a bug** e.g., if you are not sure if the UML notation is correct, post in the [forum]({{ forum_link }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).
+
+<div class="indented-level2" id="additionalGuidelinesForBugTriaging">
+
+<box type="info" header="**Some additional guidelines for bug triaging:**">
+
+* **Broken links in UG/DG**: Severity can be low or medium depending on how many such cases and how much inconvenience they cause to the reader.
+* **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
+    If the same problem is reported for multiple diagrams, can be flagged as duplicates.<br>
+    Omit optional notations is not a bug as long it doesn't hinder understanding.
+* **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
+* **How to prove that something is 'not in scope'**: The following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
+  * The UG specifies it as not supported or coming in a future version.
+  * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
+* **If a missing feature is essential for the app to be reasonably useful**, its omission can be considered a _feature flaw_ even if it can be proven as _not in scope_ as given in the previous point.
+</box>
+</div>
+
 * **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.**
   * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
-  * It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never review it), provided the bug should have been reasonably apparent to a reviewer. For example, if someone put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.
+  * It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never reviewed it), provided the bug should have been reasonably apparent to a reviewer. For example, if someone put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.
 <p/>
 
-* As far as possible, **choose the correct `type.*`, `severity.*`, and assignees even for bugs you are not accepting or for bugs that are marked as duplicates**. Reason: your _non-acceptance_  or duplication status may be rejected in a later phase, in which case we need to grade it as an accepted/non-duplicate bug.
+* As far as possible, ==**choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting or marking as duplicates**==. Reason: your _non-acceptance_  or duplication status may be rejected in a later phase, in which case we need to grade it as an accepted/non-duplicate bug.
 
 * **Justify your response.** For all of the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be double-checked by the teaching team in later phases. ==<span class="text-danger">Indiscriminate/unreasonable dev/tester responses, if deemed as a case of trying to _game the system_, will be penalized.</span>==
   * downgrading severity
@@ -247,13 +290,18 @@ Duplicate of #67
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
 
-* In this phase you will get to state whether you agree or disagree with the dev response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving team, you can record your objections and the reason for the objection.
+* In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving dev team, you can record your objections and the reason for the objection.
   * not accepted
   * severity downgraded
   * bug type changed
-* As before, consider carefully before you object to a team's response. ==<span class="text-danger">If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
+* As before, consider carefully before you object to a dev team's response. ==<span class="text-danger">If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
+* You can also refer to the below guidelines:
+
+{{ embed_topic("tp-deliverables-pe.mbdf#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", 2, indent=2) }}
+
+
 * This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.
-* **Deadline: Reading week Thursday 2359**
+* **Deadline: Reading week Tuesday 2359** (i.e., within 3 days)
 * Procedure:
 
 <div class="indented-level2">
@@ -261,9 +309,12 @@ Duplicate of #67
 <tabs>
 <tab header="Using CATcher">
 
-* When the phase has been announced as open, login to CATcher as usual (profile: `CS2103/T PE`).
-* For the issues listed, go to the details, and read the team's response.
-* If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
+* When the phase has been announced as open, login to CATcher as usual (profile: `{{ module }}/T PE`).
+* For each issues listed in the `Issues Pending Responses` section:,
+  * Go to the details, and read the dev team's response.
+  * If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
+  * If you are fine with the team's changes, click `Save` without any other changes upon which the issue will move to the `Issue Responded` section.
+* Note that only bugs that require your response will be shown by CATcher. **Bugs already accepted by the team will not appear in CATcher** as there is nothing for you to do about them.
 
 </tab>
 <tab header="Not using CATcher">
@@ -272,6 +323,7 @@ Duplicate of #67
 <markdown>
 <include src="tp-deliverables-pe.mbdf#warning-use-catcher" />
 
+<!--
 * When the phase has been announced as open, go to your `pe` repo.
 * For the issues listed, go to the details, and read the bot's comment containing the team's response.
 * If you disagree with any of the items listed in that comment, tick on the `[ ] I disagree` tick box. ==Edit the comment (do not add a new comment)== to replace the `[replace this with your reason]` with your reasoning. Here is an example:<br>
@@ -285,6 +337,7 @@ Team chose ['response.IssueUnclear']
 **Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.
 ```
 </div>
+-->
 </tab>
 </tabs>
 </div>
