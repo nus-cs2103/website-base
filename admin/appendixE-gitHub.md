@@ -21,7 +21,7 @@ Create a personal GitHub account if you don't have one yet.
    </panel>
 3. ==You are discouraged from changing your GitHub username during the semester/exam/grading period== as it can cause our auto-grading scripts to miss your GitHub activities. If you do change your GitHub username during that period, please let us know immediately.
 
-<modal large title="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
+<modal large header="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
   <include src="tp-deliverables-website.mbdf#profile-photo"/>
 </modal>
 
@@ -103,10 +103,10 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 
 {{ icon_important_big_red }} **Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy %%(in Admin: Appendix B)%%</trigger>**, in particular, ==how to give credit when you reuse code from the Internet or classmates==:
 
-<modal large title="Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username" id="modal:appE-gitUsername">
+<modal large header="Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username" id="modal:appE-gitUsername">
   <include src="tools.md#git-username"/>
 </modal>
-<modal large title="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" id="modal:appE-reusePolicy">
+<modal large header="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" id="modal:appE-reusePolicy">
   <include src="appendixB-policies.md#policy-reuse"/>
 </modal>
 
@@ -126,7 +126,7 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 * After merging a PR, close the corresponding issue.<br>
   {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
 
-<modal large title="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
+<modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
   <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
@@ -147,7 +147,7 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 
 * Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs.
 
-<modal title="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
+<modal header="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
   <include src="tp-expectations.md#testing-expectations"/>
 </modal>
 </div>

@@ -147,11 +147,11 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
 
 </box>
 
-<modal large title="Admin {{ icon_embedding }} Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">
+<modal large header="Admin {{ icon_embedding }} Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">
   <include src="reposenseAuthorAnnotation.md"/>
 </modal>
 
-<modal large title="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
+<modal large header="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
   <include src="tp-deliverables.md#tp-deliverables-ppp"/>
 </modal>
 

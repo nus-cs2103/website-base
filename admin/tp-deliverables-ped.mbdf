@@ -6,7 +6,7 @@
 
 **When, where**: uses a 40 minute slot at the start of week 11 lecture
 
-<modal large title="Admin {{ icon_embedding }} Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
+<modal large header="Admin {{ icon_embedding }} Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
   <include src="tp-deliverables.md#tp-deliverables-practicalexam"/>
 </modal>
 
@@ -117,7 +117,7 @@
 </box>
 </div>
 
-<modal large title="Admin {{ icon_embedding }} Project →" id="modal:v1.3-ppp">
+<modal large header="Admin {{ icon_embedding }} Project →" id="modal:v1.3-ppp">
   <include src="tp-deliverables.md#tp-deliverables-ppp"/>
 </modal>
 

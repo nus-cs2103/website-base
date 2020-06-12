@@ -43,7 +43,7 @@
   * **Generalize the problem.** "How to write tasks to a text file using Java" is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) "How to write to a file using Java".
   * **Remember to thank those you try to help, and close the issue** after the issue has been resolved.
 
-<modal large title="Rubber Duck Debugging" id="modal:appendixHelp-rubberDuckDebugging">
+<modal large header="Rubber Duck Debugging" id="modal:appendixHelp-rubberDuckDebugging">
 
 <img src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"/><br/>
 

@@ -87,7 +87,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 1. functionality bugs in your work found by others during the [Practical Exam (PE)]({{baseUrl}}/admin/tp-deliverables.html#deliverable-practical-exam)
 1. your test code %%(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)%%
 
-<modal large title="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations">
+<modal large header="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations">
   <include src="tp-expectations.md#testing-expectations"/>
 </modal>
 

@@ -19,7 +19,7 @@ At the end of the project each student is required to submit a _Project Portfoli
     * Evidence of helping others %%e.g. responses you posted in our forum, bugs you reported in other team's products%%,
     * Evidence of technical leadership %%e.g. sharing useful information in the forum%%
 
-<modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks">
+<modal large header="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks">
   <include src="tp-expectations.md#team-tasks"/>
 </modal>
 

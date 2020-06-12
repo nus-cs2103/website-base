@@ -382,7 +382,7 @@ pageNav: 2
 <img src="{{ duke_website }}/Ui.png" height="750" style="max-width: 100%"  onerror="this.src='images/placeholder-small.png';" /><p/>
 
 
-<popover id="pop:{{ username }}" title="{{ student_name }}" placement="top">
+<popover id="pop:{{ username }}" header="{{ student_name }}" placement="top">
   <div slot="content">
 
 <img style="border-radius: 8px;" src="https://{{ semester | lower }}-{{ student_team }}.github.io/main/images/{{ username | lower }}.png" width="200" onerror="this.src='images/placeholder-small.png';" />

@@ -32,7 +32,7 @@
 * **Resize diagrams** so that the text size in the diagram matches the the text size of the main text of the diagram. See <trigger trigger="click" for="modal:ipWeek10-diagramSizeNegative">example</trigger>.
 
 
-<modal large title="UML Diagrams: Negative Examples " id="modal:ipWeek10-umlExamples">
+<modal large header="UML Diagrams: Negative Examples " id="modal:ipWeek10-umlExamples">
 
   These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
   <img src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750" /><br>
@@ -50,22 +50,22 @@
 
 </modal>
 
-<modal large title="Diagram resizing: a negative example" id="modal:ipWeek10-diagramSizeNegative">
+<modal large header="Diagram resizing: a negative example" id="modal:ipWeek10-diagramSizeNegative">
 
 In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br> 
 <img src="images/diagramSizeNegativeExample.png" width="200"/><br>
 It will look more 'polished' if the two text sizes match.
 </modal>
 
-<modal large title="AB3 - Class Diagram of the Logic Component" id="modal:ipWeek10-logicClassDiagram">
+<modal large header="AB3 - Class Diagram of the Logic Component" id="modal:ipWeek10-logicClassDiagram">
   <img src="{{ ab3_website }}/images/LogicClassDiagram.png" width="900"/>
 </modal>
 
-<modal large title="AB3 - Sequence Diagram for the `delete` command" id="modal:ipWeek10-deleteSd">
+<modal large header="AB3 - Sequence Diagram for the `delete` command" id="modal:ipWeek10-deleteSd">
   <img src="{{ ab3_website }}/images/DeleteSequenceDiagram.png" width="900"/>
 </modal>
 
-<modal large title="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd">
+<modal large header="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd">
   <img src="{{ ab3_website }}/images/ArchitectureSequenceDiagram.png"/>
 </modal>
 </span>
