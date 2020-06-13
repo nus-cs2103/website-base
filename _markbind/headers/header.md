@@ -44,7 +44,7 @@
   </dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
-      <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right ></searchbar>
+      <searchbar placeholder="Search" algolia menu-align-right></searchbar>
     </form>
   </li>
 </navbar>
