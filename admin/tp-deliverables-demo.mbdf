@@ -1,15 +1,18 @@
-<box type="important" light >
 
-Due to the COVID-19 situation, this deliverable has been changed as follows:
-* **Screen-record a demo** of all the product features, in a reasonable order.
-* **Including an audio explanation is strongly encouraged** (not compulsory) -- alternatively, you can switch between slides and the app to give additional explanations. Annotations and other enhancements to the video are optional (those will not earn any extra marks).
-* All members taking part in the demo video is encouraged but not compulsory.
+* **Record a demo** of all the product features, in a reasonable order.
+  * You may choose to screen record each feature and tie it up (see "Tools" below for options), OR
+  * Schedule + record a zoom meeting within the team, where you share your screens and do the demo.
+* **The quality of the demo will not affect marks** as long as it serves the purpose (i.e., demonstrates the product features). Hence, don't waste too much time on creating the video.
+* **Audio explanations** are strongly encouraged (but not compulsory) -- alternatively, you can switch between slides and the app to give additional explanations.
+* **Annotations and other enhancements** to the video are optional (those will not earn any extra marks).
+* **All members taking part** in the demo video is encouraged but not compulsory.
 * **File name:** `[TEAM_ID][product Name].mp4`  %%e.g.[{{ module }}T-W09-1][Contacts Plus].mp4%% (other video formats are acceptable but use a format that works on all major OS'es).
 * **File size:** Recommended to keep below 200Mb. You can use a low resolution as long as the video is in usable quality.
 * **Submission:** Submit to LumiNUS (different folder).
 * **Deadline:** Monday 13th April 23.59 (i.e., 2 days after the main deadline)
-* Also refer to info given below.
-</box>
+* **Suggested tools:**
+  * Ink2Go: You can use this to record your screen and annotate if necessary. [Here](https://wiki.nus.edu.sg/display/cit/Ink2go+Instructions+for+Students) are some instructions from NUS CIT to help you get started.
+  * [Handbrake](https://handbrake.fr/): A free/open-source tool to help convert videos to MP4.
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Duration</span>
 
