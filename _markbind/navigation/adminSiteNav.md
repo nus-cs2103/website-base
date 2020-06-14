@@ -10,7 +10,7 @@
 {% if topic.level == 1%} 
 * [{{ title }}]({{ baseUrl }}/admin/{{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}
 {% elif topic.level == 2 %}
-  * <small>[{{ title }}]({{ baseUrl }}/admin/{{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}</small>
+  * [<small>{{ title }}</small>]({{ baseUrl }}/admin/{{ topic.link }}) {{ show_stars_in_nav(topic.priority) }}
 {% elif topic.level == 0 %}
 * {{ title }} :expanded:
 {% elif topic.level == -1 %}
