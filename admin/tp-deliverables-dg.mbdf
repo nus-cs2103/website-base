@@ -1,3 +1,5 @@
+* The main content you add should be in the `docs/DeveloperGuide.md` file (for ease of tracking by grading scripts).<br>
+  If you use PlantUML diagrams, commit the diagrams as `.puml` files in the `docs/diagrams` folder.
 * **Should match the {{ final_version }} implementation**.
 * **Optionally, can include proposed implementations of future features.**
 * {{ icon_important_big_red }} **Include an appendix named _Instructions for Manual Testing_**, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.
@@ -14,7 +16,7 @@
 <span id="dgTips">
 
 * **Aim to showcase your documentation skills.** The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond {{ final_version }} (hypothetically).<br>
-  For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ ab3_website }}/DeveloperGuide.html#proposed-undo-redo-feature).
+  For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ ab3_website }}/DeveloperGuide.html#proposed-undoredo-feature).
 * **Use multiple UML diagram types.** Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.
 * **Keep diagrams simple.** The aim is to make diagrams ==_comprehensible_, not necessarily _comprehensive_==. Ways to simplify diagrams:
   * **Omit less important details**. Examples:

@@ -27,7 +27,7 @@ week3: [
   {id: 'add_increments', suffix: '', increments:  [
     {id: 'A-MoreOOP', title: 'Use More OOP'},
     {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'},
-    {id: 'A-JUnit', title: 'Add JUnit Tess'},
+    {id: 'A-JUnit', title: 'Add JUnit Tests'},
     {id: 'A-Jar', title: 'Create a JAR File'}
   ]},
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [
@@ -54,7 +54,7 @@ week5: [
     {id: 'A-Streams', title: 'Use Streams', tag: 'optional'}
   ]},
   {id: 'add_increments', suffix: '', increments:  [
-    {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
+    {id: 'A-CI', title: 'Set up CI', tag: 'optional'}
   ]},
   {id: 'add_an_extension'}
 ],
@@ -156,7 +156,6 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
     {{ icon_tip }} If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/duke/issues` e.g., `https://github.com/johnDoe/duke/issues`
 1. Clone the fork onto your computer.
 1. Set up the project in your IDE as explained in [the README file]({{ module_org }}/duke/blob/master/README.md).<br>
-   {{ icon_tip }} If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning by following [the Gradle tutorial]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md).
 </span>
 {#====================================================================================================================#}
 <span id="heading_finish_leftover_tasks">Do any leftover iP tasks from the previous week</span>
@@ -188,28 +187,29 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 {#====================================================================================================================#}
 <span id="heading_review_two_prs">Review some peer PRs</span>
 <span id="desc_review_two_prs">
+
+* **Learn _how_ you should review PRs in this task**:
+  * If you are new to GitHub PRs, see [GitHub help on how to review PRs](https://help.github.com/en/articles/about-pull-request-reviews).
+  * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
+  * Additional guidelines:
+    * Comment on coding standard violations.
+    * At the end of the review, we recommend you to choose `Comment` (i.e., not `Approve` or `Request changes`)
 * **Review two PRs** created by your classmates. PRs can be found [here]({{ module_org }}/duke/pulls).
   * The allocation of which PRs to review will be specified in [this page]({{team_IDs_page}}) (you will be notified when the allocation is ready).
   * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
-  * If the student you have been allocated to review has not created a PR by Monday, you can review another PR of your choice.
-
-
-We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
-</box>
-
-* Read up the following guidelines:
-
-{{ embed_topic("appendixE-gitHub.md#pr-review-guidelines", "Admin " + icon_embedding + " **Using GitHub → Guidelines for Reviewing PRs**", "3", indent="2", status="expanded") }}
-
-* Additional guidelines:
-  * Comment on coding standard violations.
-  * At the end of the review, we recommend you to choose `Comment` (i.e., not `Approve` or `Request changes`)
+  * If the student you have been allocated to review has not created a PR yet, you can review another PR of your choice.
 
 </div>
 
-* {{ icon_tip }} **Use the iP Code Dashboard to view others' code**: You can now easily view [iP code written by classmates](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard), using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+<div class="indented">
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent="2") }}
+<box type="tip" light>
+
+**Use the iP Code Dashboard to view others' code**: You can now easily view [iP code written by classmates](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard), using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1") }}
+</box>
+</div>
 </span>
 {#====================================================================================================================#}
 
@@ -236,8 +236,8 @@ This activity is worth 2 participation points!
 1. **Locate the User Guide** of the app by following the link provided.
 1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
-   {{ icon_tip }} If double-clicking the jar file doesn't work, use the `java -jar {file_name}` command to open it.<br>
-   {{ icon_important_big_red }} Make sure you are using Java 11 to run the jar file (use `java -version` command to confirm).
+   {{ icon_important_big_red }} Make sure you are using Java 11 to run the jar file (use `java -version` command to confirm).<br>
+   {{ icon_tip }} If double-clicking the jar file doesn't work, use the `java -jar {file_name}` command to open it.
 1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
 1. **Submit your evaluation** using the survey.
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
@@ -250,9 +250,9 @@ This activity is worth 2 participation points!
 {{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
 </span>
 {#====================================================================================================================#}
-<span id="heading_generate_new_jar">Generate a new jar file {{ icon_extra | safe}}</span>
+<span id="heading_generate_new_jar">Generate a new jar file</span>
 <span id="desc_generate_new_jar">
-* We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [Gradle tutorial provided]({{ module_org }}/duke/blob/master/tutorials/gradleTutorial.md#shadow) (see the `shadowJar` task).
+* We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.
 </span>
 {#====================================================================================================================#}
 <span id="extra_A-Assertion">
@@ -265,7 +265,7 @@ This activity is worth 2 participation points!
 1. sync your local clone with the fork
 </span>
 {#====================================================================================================================#}
-<span id="extra_A-Travis">
+<span id="extra_A-CI">
 
 * We recommend that ==at least one member== of the team attempt the following.
 </span>

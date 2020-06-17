@@ -10,7 +10,7 @@
 <img src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"/><br>
 </span>
 
-**Keep in mind that instructors don't have ready solutions to all technical problems**. Unlike tutorial questions for which instructors have model solutions, given the complexity of industry tools we use (Gradle, Travis, Git, ...) and the rapid pace they are updated, instructors don't have ready solutions to most technical problems you face in this module. The only realistic way to solve those problems at a large scale is crowd-sourcing i.e., someone else who faced a similar problem might know how to fix it.
+**Keep in mind that instructors don't have ready solutions to all technical problems**. Unlike tutorial questions for which instructors have model solutions, given the complexity of industry tools we use (Gradle, GitHub, Git, ...) and the rapid pace they are updated, instructors don't have ready solutions to most technical problems you face in this module. The only realistic way to solve those problems at a large scale is crowd-sourcing i.e., someone else who faced a similar problem might know how to fix it.
 
 
 <span class="text-danger"><big>{{ icon_dislike }} **What not to do:**</big></span> 

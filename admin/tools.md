@@ -45,7 +45,7 @@ You are ==_required to_ use Git==. Other revision control software are not allow
 
 <div id="git-username">
 
-**Set Git `user.name`**: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to ==set your Git `user.name` in all computers you use== to a sensible string that uniquely identifies you. For example, ==you can set it to your GitHub username or your full name==. If this user name is not set properly or if you use multiple user names for Git, our tools might miss some of your work and as a result you might not get credit for some of your work.
+**Set Git `user.name`**: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to ==set your Git `user.name` in all computers you use== to a sensible string that uniquely identifies you. For example, ==you can set it to your GitHub username or your full name==. If this user name is not set properly or if you use multiple usernames for Git, our grading scripts might miss some of your work.
 
 After installing Git in a computer, you can set the Git username as follows:
 1. Open a command window that can run Git commands (e.g., Git bash window)
@@ -83,7 +83,7 @@ You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for 
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 * Install the IDE in your computer. You may use the Intellij community edition (free) or the ultimate edition (free for students).
-* If you have an older version of the IDE, we recommend updating to the latest version (i.e., 2019 edition).
+* If you have an older version of the IDE, we recommend updating to the latest version.
 </box>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->

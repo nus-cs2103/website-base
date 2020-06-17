@@ -4,7 +4,7 @@
 #### {{ thumb(1) }} Discuss iP progress
 
 Quickly update the tutor about your iP progress:
-* Has at least one team member managed to set up Travis?
+* Has everyone managed to set up CI?
 * Has everyone completed `Level-10` (i.e., the GUI) and `A-Gradle`? Any GUIs that went beyond the JavaFx tutorial?
 * Anyone has iP increments overdue more than one week?
 

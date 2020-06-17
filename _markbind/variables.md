@@ -22,7 +22,7 @@
 
 <span id="module_website">{{ module_gh_pages }}/website</span>
 
-<span id="ab3_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3</span>
+<span id="ab3_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</span>
 
 <span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQt_VkIgajiPIkdLzgqLTBkYf6UoYhAEMkgDns7S3eWfsx7x2EsI0wix6RLHooaYbETWkTuGnqGP-5s/pub?embedded=true</span>
 
@@ -102,6 +102,8 @@
 <span id="icon_x_red"><span style="color:red">{{ icon_x | safe }}</span></span>
 <span id="bad"><font color="red"><md>**{{ icon_dislike | safe }} Bad**</md></font></span>
 <span id="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></span>
+<variable name="pros"><span class="text-success">**pros:**</span></variable>
+<variable name="cons"><span class="text-danger">**cons:**</span></variable>
 
 <span id="icon_repo"><md>:fas-code-branch:</md></span>
 

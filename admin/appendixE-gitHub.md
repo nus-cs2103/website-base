@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, show_as_rounded_tab with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("appendixE-gitHub") %}
@@ -9,7 +9,7 @@
 <div id="githubAccount">
 
 Create a personal GitHub account if you don't have one yet. 
-1. You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts. 
+1. You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts e.g., in job applications.
 2. Strongly recommended: Complete your GitHub profile. In particular,  
    * Specify your full name. 
    * Upload a profile photo that matches <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.
@@ -31,22 +31,8 @@ Create a personal GitHub account if you don't have one yet.
 
 <div id="pr-review-guidelines">
 
-<box type="success">
+Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
 
-We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
-</box>
-
-* If you are new to GitHub PRs, see [GitHub help on how to review PRs](https://help.github.com/en/articles/about-pull-request-reviews).
-* Read the blog post [**10 tips for reviewing code you don’t like**](https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/) - by David Lloyd (a Red Hat developer). In particular, follow the tip about phrasing objections as questions.
-* Rather than give one overall comment for the entire PR, add specific comments at relevant places of the code.
-* Feel free to ask for more info from the author, to help you understand the code/design. For example, you can ask why the author chose to write the code in a specific way.
-* Feel free to compliment the author when appropriate %%e.g., _hey, I like how clean this bit of code is_ :+1:%%
-* You can also suggest alternatives for the author to consider. Feel free to refer back to your own PR if you think a comparison would benefit the author. ==You are very welcome to offer to help the author with the project== (in your PR review, or outside of it) if you think the author needs such help i.e., as an informal mentor. Such mentoring will help both the author and you to become stronger programmers.
-* You can use Markdown (specifically, [GitHub-Flavored Markdown](https://guides.github.com/features/mastering-markdown/)) in your comments.
-
-**Guidelines for authors**:
-* Don't get into arguments with reviewers. If you disagree with the reviewer, you can explain your own view in a non-confrontational way without trying to prove your way is better.
-* Thank reviewers for their inputs.
 </div>
 
 <div id="organization-setup">
@@ -70,28 +56,34 @@ After receiving your team ID, one team member should do the following steps:
 
 ### <div class="text-white bg-dark p-1">Repo Setup</div>
 
-Only one team member:
+****({{ icon_individual }}/%%{{ icon_team }}%%) Only one team member:****
 
-1. **Fork** [Address Book - Level 3 (AB3)]({{module_org}}/addressbook-level3) to your team org.
-1. ==**Rename** the forked repo as `main`==. This repo (let's call it the _team repo_) is to be used as the repo for your project.
-1. ==Ensure the issue tracker of your team repo is enabled.== %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.%%
-1. Ensure your team members have the desired level of access to your team repo.
-1. [**Enable Travis CI for the team repo**]({{ ab3_website }}/UsingTravis.html#setting-up-travis-ci).
-1. [**Set up _auto-publishing_ of docs**]({{ ab3_website }}/UsingTravis.html#enabling-auto-publishing-of-documentation). When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/main` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/main/`. This also requires you to [enable the _GitHub Pages_ feature of your team repo and configure it to serve the website from the `gh-pages` branch](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).
-1. **create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level3]({{module_org}}/addressbook-level3)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[CS2103T-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
+1. **Fork** the [{{module_org}}/tp]({{module_org}}/tp) repo to your team org.
+   * This repo (let's call it the _team repo_) is to be used as the repo for your project.
+   * <span class="text-danger">Do not rename this repo</span>  to anything else.
+1. **Enable the issue tracker**. %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.%%
+1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
+   Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
+1. **Set up the project website**<br>
+   Follow instructions in the [_Documentation guide_ page]({{ ab3_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/tp` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/tp`.
+1. **create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tp]({{module_org}}/tp)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[CS2103T-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
+   **When filling the PR description**, ==fill the details exactly as specified in the text box== %%(Reason: The PR description is used by grading scripts)%%.
 
-All team members:
+****({{ icon_individual }}, {{ icon_individual }}, {{ icon_individual }}, ...) Every team member:****
 
-1. **Watch** the `main` repo (created above) i.e., go to the repo and click on the `watch` button to subscribe to activities of the repo
-1. **Fork** the `main` repo to your personal GitHub account.
+1. **Watch** the `tp` repo (created above) i.e., go to the repo and click on the `watch` button to subscribe to activities of the repo
+1. **Fork** the `tp` repo to your personal GitHub account.
 1. **Clone** the fork to your computer.
-1. **Set up** the developer environment in your computer.<br>
-   Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).
+1. **Set up** the developer environment in your computer as explained in the [_Setting up and getting started_ page]({{ ab3_website }}/SettingUp.html) of AB3 developer guide.
 
-Note that some of our bot scripts depend on the following folder paths. Please do not alter those paths in your project.
-* `/src/main`  
-* `/src/test`  
-* `/docs`
+
+<box type="wrong" seamless>
+
+**Do not alter these paths** in your project as our grading scripts depend on them.
+* `src/main`
+* `src/test`
+* `docs`
+</box>
 
 </div>
 
@@ -116,11 +108,11 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 * **Create issues to represent project tasks** so that they can be tracked using the issue tracker features.
 * **Create a PR when you implement a project task** that updates the code.<br>
   {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.<br>
-  {{ icon_pro_tip }} `LGTM` is common abbreviation you can use in the review comments to mean `Looks Good To Merge`.
 * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
-  * After [setting up Netlify]({{ ab3_website }}/UsingNetlify.html), you can use _Netlify PR Preview_ to preview changes to documentation files, if the PR contains updates to documentation. To see the preview, click on the `Details` link in front of the Netlify status reported (refer screenshot below).<br>
-  <img src="{{ baseUrl }}/admin/images/gitHubPrStatus.png" width="700"/>
-* **Do not merge PRs failing <tooltip content="Continuous Integration e.g., Travis">CI</tooltip>.** After [setting up Travis]({{ ab3_website }}/UsingTravis.html#setting-up-travis-ci), the CI status of a PR is reported at the bottom of the PR page. The screenshot below shows the status of a PR that is passing all CI checks.
+  * Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html).<br>
+    {{ icon_pro_tip }} `LGTM` is common abbreviation you can use in the review comments to mean `Looks Good To Merge`.
+* **Do not merge PRs failing <tooltip content="Continuous Integration e.g., GitHub Actions">CI</tooltip>.** The CI status of a PR is reported at the bottom of the {{ show_as_rounded_tab(":octicon-comment-discussion: conversation")}} tab of the PR page. Here's an example:<br>
+  ![](images/gitHubPrStatus.png)
   * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.<br>
   {{ icon_pro_tip }} You can use GitHub's [_protected branches_](https://help.github.com/en/articles/about-protected-branches) feature to prevent CI-failing PRs from being merged.
 * After merging a PR, close the corresponding issue.<br>
@@ -135,7 +127,7 @@ Note that some of our bot scripts depend on the following folder paths. Please d
 
 **After completing v1.1, you can reduce process rigor** to suit your team's pace. Here are some examples:
 
-* **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br>
+* **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain.<br>
   It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
   There is no direct penalty for removing tests. Also note <trigger trigger="click" for="modal:appEworkflow-testingExpectations">our expectation on test code</trigger>.
 
@@ -252,7 +244,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 ==Given below are the conditions to satisfy for a milestone to be considered properly managed==:
 
-**Planning a Milestone**:<br>
+**Planning a Milestone** (to do within the first week of the iteration):<br>
 
 * **Issues assigned to the milestone, team members assigned to issues**: Used [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones. Ensured issues are assigned to team members. %%Note that you can change the milestone plan along the way as necessary.%%
 
@@ -263,15 +255,13 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
   * **A working product tagged** with the correct tag (e.g. `v1.2`) and is pushed to the main repo<br>
     or a **product _release_ done on GitHub**. A product release is optional for v1.2 but required from from {{ penultimate_version }}. Click [here](https://github.com/se-edu/addressbook-level3/releases/) to see an example release.
 
-  * **All tests passing** on Travis for the version tagged/released.
+  * **CI passing** for the version tagged/released.
 
   * **Milestone updated to match the product** i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.<br>
     <img src="{{baseUrl}}/admin/images/assigningIssuesToMilestones.png" width="700"/>
 
   * **Milestone closed.**<br>
     <img src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
-
-  * **If necessary, future milestones are revised** based on what you experienced in the current milestone %%e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation%%.
 
 </div>
 

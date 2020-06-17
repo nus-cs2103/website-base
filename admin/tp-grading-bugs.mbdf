@@ -117,9 +117,8 @@ These are considered _functionality bugs_:<br>
 
 * ==Of <tooltip content="_Developer Testing_ component, based on the bugs found in your code">3A</tooltip> and <tooltip content="_System/Acceptance Testing_ component, based on the bugs found in others' code">3B</tooltip> above, the one you do better will be given a 70% weight and the other a 30% weight== so that your total score is driven by your strengths rather than weaknesses.
 * Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.
-* The penalty/credit for a bug varies based on,
-  * The severity of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
-  * The type of the bug:  `type.FunctionalityBug` > `type.DocumentationBug` > `type.FeatureFlaw`
+* The penalty/credit for a bug varies based on the severity of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
+* The type of the bug:  the three types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components.
 * The penalty for a bug is divided equally among assignees.
 * Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.
 * <tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.

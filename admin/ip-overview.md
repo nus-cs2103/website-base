@@ -13,6 +13,7 @@ The objectives of the individual project (iP) is to learn/refresh the basics of,
 * OOP
 * IDEs
 * Git and GitHub
+* Project automation tools
 * Code quality
 
 All skills you will learn in the iP will be useful in the team project (tP). Furthermore, some of the iP code can be adapted for the tP.

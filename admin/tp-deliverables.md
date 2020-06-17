@@ -12,7 +12,7 @@ Here is a list of main deliverables of the project; their details are given in t
   * [User Guide](#deliverable-user-guide-ug)
   * [Developer Guide](#deliverable-developer-guide-dg)
   * [Product Website](#deliverable-product-website)
-  * [Project Portfolio Page (PPP)](#deliverable-tp-portfolio-page-ppp)
+  * [Project Portfolio Page (PPP)](#deliverable-project-portfolio-page-ppp)
 * [Product Demo](#deliverable-demo)
 * [Practical Exam Dry Run (PE-D)](#deliverable-practical-exam-dry-run-pe-d)
 * [Practical Exam (PE)](#deliverable-practical-exam-pe)

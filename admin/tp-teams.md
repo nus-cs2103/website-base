@@ -44,8 +44,9 @@
 #### Team Communications
 
 * **Use English** for all team communications, both spoken and written.
-* **We recommend at least one 1-2 hour ==face-to-face== project meeting per week**, in addition to any online meetings. %%Reason: you need to know how to run both types of project meetings%%. The project meeting time can be used to discuss project related things, but also, can be used as a time for team members to work on the project tasks individually (having all members in the same place will facilitate easier collaboration and more peer-learning).
-* **Fix a weekly 1-2 hour time slot and a venue for project meetings** after the team has been finalized (latest by week 3 tutorial). ==All members are expected to attend weekly project meetings== (not doing so could lower the peer evaluation ratings you receive, which in turn will be factored into your grade).<br>
+* **We recommend at least one 1-2 hour ==synchronous online== project meeting per week**, in addition to any asynchronous communicating. %%Reason: Having all members available at the same time will facilitate easier collaboration and more peer-learning%%.
+<!--* **We recommend at least one 1-2 hour ==face-to-face== project meeting per week**, in addition to any online meetings. %%Reason: you need to know how to run both types of project meetings%%. The project meeting time can be used to discuss project related things, but also, can be used as a time for team members to work on the project tasks individually (having all members in the same place will facilitate easier collaboration and more peer-learning).-->
+* **Fix a weekly 1-2 hour time slot ~~and a venue~~ for project meetings** after the team has been finalized (latest by week 3 tutorial). ==All members are expected to attend weekly project meetings== (not doing so could lower the peer evaluation ratings you receive, which in turn will be factored into your grade).<br>
   {{ icon_tip }} The best time to have the weekly project meeting is, after the previous week's lecture but before the deadline for weekly tasks.
 </div>
 

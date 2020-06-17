@@ -39,17 +39,27 @@ This product is meant for users who can type fast, and prefer typing over mouse/
 {{ embed_topic("tp-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Contstraints → Recommendation-CLI-First", "2", indent="1") }}
 <p/>
 
-**You may evolve/morph the <tooltip content="AddressBook-Level3">AB3</tooltip> any direction you wish.** For example, an app to manage one of these: 
-* Contact details
-* Bookmarks of websites
-* Tasks/Schedule
-* Location info
-* Thing to memorize i.e. flash cards, trivia
-* Forum posts, news feeds, Social media feeds
-* Online projects or issue trackers that the user is interested in
-* Emails, possibly from different accounts
-* Multiple types of related things %%e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
-* ...
+* **Direction 1: Evolve** <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app.
+  * Some examples:
+    * Manage more entity types related to contacts %%e.g. Tasks allocated to contacts%%
+    * Contact managing optimized for a specific type of user %%e.g. a sales person managing client contacts%%
+  * {{ pros }} less changes to existing code at the start of the project (i.e., progress will be smoother at the start), can result in a more mature product with deeper features as the product functionality will be moving forward from the start
+  * {{ cons }} less flexibility in product design, less differentiation with other team's projects
+* **Direction 2: Morph** AB3 any direction you wish.
+  * For example, an app to manage one of these:
+    * Bookmarks of websites
+    * Tasks/Schedule
+    * Location info
+    * Thing to memorize i.e. flash cards, trivia
+    * Forum posts, news feeds, Social media feeds
+    * Online projects or issue trackers that the user is interested in
+    * Emails, possibly from different accounts
+    * Multiple types of related things %%e.g. restaurants and reviews for those places%%
+    * ...
+  * {{ pros }} more flexibility in the project direction, more room to differentiate from other teams' projects
+  * {{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base
+
+==Weigh the pros/cons and choose the one that suits you.==
 </span>
 
 ### <div class="text-white bg-dark p-1">Target User & Value Proposition</div>
@@ -81,7 +91,7 @@ You are expected to:
 
 ### <div class="text-white bg-danger p-1">Functionality Expectations</div>
 
-**The expected level of _functionality_ from a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Some examples meeting that criterion:
+**The expected level of _functionality_ to be added by a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Some examples meeting that criterion:
 * Example 1: A fictional contact management app optimized for a specific target user group:
   * Existing AB3 features are optimized to the new target user group.
   * Person objects are enhanced to contain more details.
@@ -89,6 +99,8 @@ You are expected to:
 * Example 2: a FooBar app that keeps track of two different types of entities _Foo_ entities and _Bar_ entities.
   * Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.
   * In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a 4-5 FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.
+
+==You will get full marks for implementation effort== if you meet the expectation stated above. There are no extra marks for exceeding that bar. You are better off spending that effort in improving other aspects of the project.
 
 <box>
 
@@ -99,7 +111,7 @@ You are expected to:
 
 <box type="important">
 
-Note that we have reduced the tP functionality expectations for this semester by about 40-50% compared to the previous semester, in order to reduce your workload. ==Adding more functionality than the expected level will not increase your marks==. You are better off spending that effort in improving other aspects of the project.
+One semester ago, we reduced the tP functionality expectations by about 40-50% compared to the previous semesters, in order to reduce your workload. Keep that in mind in case you receive advice about project from seniors who did this module more than one semester ago.
 </box>
 </span>
 <span id="teamExpectations">
@@ -189,7 +201,7 @@ Here is a non-exhaustive list of team-tasks:
    1. Work related to renaming the product
    1. Work related to changing the product icon
    1. Morphing the product into a different product
-1. Setting up the GitHub, Travis, AppVeyor, etc.
+1. Setting up the GitHub org/repo
 1. Maintaining the issue tracker
 1. Release management
 1. Updating user/developer docs that are not specific to a feature %%e.g. documenting the target user profile%%

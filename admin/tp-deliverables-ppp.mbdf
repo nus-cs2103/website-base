@@ -3,13 +3,13 @@ At the end of the project each student is required to submit a _Project Portfoli
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Objectives</span>
 
 * For you to use %%(e.g. in your resume)%% as a well-documented data point of your SE experience
-* For evaluators to use as a data point to evaluate your project contributions
+* For evaluators to use as a data point for evaluating your project contributions
 
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Sections to include</span>
 
 * **Overview**: A short overview of your product to provide some context to the reader. The opening 1-2 sentences may be reused by all team members. If your product overview extends beyond 1-2 sentences, the remainder should be written by yourself.
 * **Summary of Contributions** --Suggested items to include:
-  * **Code contributed**: Give a link to your code on [tP Code Dashboard]({{ tp_dashboard }}). The link is available in the [Project List Page]({{baseUrl}}/admin/projectList.html) -- linked to the :fas-code: icon under your photo.
+  * **Code contributed**: Give a link to your code on [tP Code Dashboard]({{ tp_dashboard }}). The link is available in the [Project List Page]({{baseUrl}}/admin/projectList.html) -- linked to the %%:fas-code:%% icon under your photo.
   * **Enhancements implemented:** A summary of the enhancements you implemented. 
   * **Contributions to documentation:** Which sections did you contribute to the UG?
   * **Contributions to the DG:** Which sections did you contribute to the DG? Which UML diagrams did you add/updated?
@@ -33,8 +33,6 @@ At the end of the project each student is required to submit a _Project Portfoli
 * **[Optional] Contributions to the User Guide (Extracts)**: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
 %%The purpose of allowing you to include _proposed_ features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.%%
 * **[Optional] Contributions to the Developer Guide (Extracts)**: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.
-
-* [Optional] If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded).
 
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Format</span>
 
