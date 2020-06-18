@@ -22,7 +22,7 @@
     <li><a href="{{announcements_link}}" target="_blank" class="dropdown-item"><md>:glyphicon-bullhorn: Announcements</md></a></li>
     <li><a href="{{files_link}}" target="_blank" class="dropdown-item"><md>:fas-file-upload: File Submissions</md></a></li>
     <li><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
-    <li tags="cs2113"><a href="{{repl_link}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} `repl.it` link</md></a></li>
+    <li tags="m--cs2113"><a href="{{repl_link}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} `repl.it` link</md></a></li>
     <li><a href="{{java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li><a href="{{ baseUrl }}/admin/forum-activities-dashboard.html" class="dropdown-item"><md>:fas-trophy: Forum Activities Dashboard</md></a></li>
     <li><a href="{{participation_marks_page}}" class="dropdown-item text-success"><md>:fas-trophy: Participation Dashboard</md></a></li>
@@ -35,7 +35,7 @@
     <hr>
     <md>**&nbsp;Team Project (tP):**</md>
     <li><a href="{{baseUrl}}/admin/tp-expectations.html" class="dropdown-item"><md>{{ icon_project }} Team Project Info</md></a></li>
-    <li tags="cs2103"><a href="{{module_org}}/addressbook-level3" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Addressbook-level3</md></a></li>
+    <li tags="m--cs2103"><a href="{{module_org}}/addressbook-level3" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Addressbook-level3</md></a></li>
     <li><a href="{{baseUrl}}/admin/projectList.html" class="dropdown-item"><md>:glyphicon-list-alt: Team List</md></a></li>
     <li><a href="{{ tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>
     <li><a href="{{baseUrl}}/admin/projectList.html" class="dropdown-item"><md>:fas-th-list: tP Showcase</md></a></li>

@@ -52,7 +52,7 @@
   "plugins": ["filterTags"],
   "pluginsContext": {
    "filterTags" : {
-     "tags": []
+      "tags": ["-m--*", "m--cs2103"]
    }
  }
 }
