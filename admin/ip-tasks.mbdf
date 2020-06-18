@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
-{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, thumb, timing_badge with context %}
 
 {% set ip_schedule = {
 week2: [
@@ -143,9 +143,12 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="2") }}
 </span>
 {#====================================================================================================================#}
+<span tags="m--cs2113" id="extra_Level-0">
+<include src="ip-tasks.mbdf#commit" />
+</span>
 <span id="extra_Level-1">
 <include src="ip-tasks.mbdf#order" />
-<include src="ip-tasks.mbdf#commit" />
+{% if module == "CS2103" %}<include src="ip-tasks.mbdf#commit" />{% endif %}
 <include src="ip-tasks.mbdf#tag-push" />
 </span>
 {#====================================================================================================================#}
@@ -165,16 +168,81 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 {#====================================================================================================================#}
 <span id="heading_create_pr_to_upstream">Create a PR to the upstream repo</span>
 <span id="desc_create_pr_to_upstream">
-* Create a pull request (PR) from the `master` branch of your fork to the upstream repo.
-  * PR name: `[{Your name}] Duke Increments` e.g., `[John Doe] Duke Increments` %%If you are reluctant to give full name, you may give the first half of your name only%%
+* Create a <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from the `master` branch of your fork to the upstream repo. Here are the steps:
+  * Go to your Duke fork on GitHub
+  * Click on the {{ button("**New pull request**", button_style="light") }} button in that page.
+  * In the next page, click on the green {{ button("**:octicon-git-pull-request: Create pull request**", button_style="success") }} button.
+  * Set the PR name as `[{Your name}] iP` e.g., `[John Doe] iP` %%If you are reluctant to give full name, you may give the first half of your name only%%.<br>
+   You may leave the description as empty.
+  * Click the {{ button("**Create pull request**", button_style="success") }} button to create the PR.
+  * As an additional precaution, you can go to the [upstream Duke repo]({{ module_org }}/duke/pulls) to double-check that your PR is in the list of PRs.
+
+<div class="indented-level2">
+
+<box type="tip" light>
+
+The PR will update automatically to reflect your latest code every time you push code to your fork.
+</box>
+</div>
+
+<modal large header="Pull Request (PR)" id="modal:ipTasks-createPr">
+
+_Pull Requests_ is a mechanism for offering code to a repository e.g., a bug fix or a new feature. PRs allow developers to review, discuss, and refine proposed code changes before incorporating (i.e., _merging_) the new code to the repository.
+
+Resources:
+* [GitHub Help page on PRs](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+</modal>
 </span>
 {#====================================================================================================================#}
+<span tags="m--cs2113" id="extra_Level-5">
+
+* Use git branches in your work, as explained below:
+  * Do the increment Level-5 as a separate branch named `branch-Level-5`. You are recommended to have multiple commits in that branch.
+  * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
+  * Push the branch to your fork so that the bot can detect it. As before, push the tag as well.
+  * {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
+</span>
+<span tags="m--cs2113" id="extra_A-Packages">
+
+* Recommended: if you are new to git, do this as a separate branch too (for additional practice), similar to how you did `Level-5` (branch name `branch-A-Packages`).
+</span>
+<span tags="m--cs2113" id="extra_Level-6">
+
+* Practice using parallel git branches, as explained below:
+  1. First, do Level-6 in a branch named `branch-Level-6`, but do not merge it.
+  1. Then, go back to the `master` branch and implement Level-7 in a separate branch named `branch-Level-7`.
+  1. Now, go back to the `master` branch and merge the two branches one after the other.<br>
+     If there are merge conflicts, you'll have to resolve them first.
+  1. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.
+* As before,
+ {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.<br>
+ {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
+ {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
+</span>
+<span tags="m--cs2113" id="extra_A-Jar">
+
+* In case this increment does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already).
+* Upload the jar file to your fork as explained in the panel below. ==You can ignore the point about using Gradle==.
+</span>
 <span id="extra_Level-7">
 
 * Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
  {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
+</span>
+<span tags="m--cs2113" id="extra_Level-8">
+
+* Practice using parallel git branches _and_ PRs, as explained below:
+  1. First, do each increment as a parallel branch (i.e., `branch-Level-8`, `branch-Level-9`, `branch-A-JavaDoc`), but do not merge any.
+  1. Then, push each branch to your fork, and create a PR within your fork (i.e., from the increment branch to the `master` branch).
+  1. Now, let's merge one of the PRs and update the remaining PRs accordingly, as given below:
+     1. Merge one of the PRs on GitHub e.g., Level-8. Remember to choose the `Create merge commit` option when merging.
+     1. Pull the updated `master` branch from your fork to your Computer.
+     1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
+     1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
+     1. As before, tag the merge commit in the master branch and push the tag to your fork.
+  1. Merge the remaining PRs using a procedure similar to the above.
 </span>
 <span id="extra_A-MoreOOP">
 
@@ -185,9 +253,10 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 * As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 </span>
 {#====================================================================================================================#}
-<span id="heading_review_two_prs">Review some peer PRs</span>
+<span id="heading_review_two_prs">{% if module == "CS2103" %}Review some peer PRs{% else %}Get ready to review PRs{% endif %}</span>
 <span id="desc_review_two_prs">
 
+{% if module == "CS2103" %}
 * **Learn _how_ you should review PRs in this task**:
   * If you are new to GitHub PRs, see [GitHub help on how to review PRs](https://help.github.com/en/articles/about-pull-request-reviews).
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
@@ -198,10 +267,14 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
   * The allocation of which PRs to review will be specified in [this page]({{team_IDs_page}}) (you will be notified when the allocation is ready).
   * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
   * If the student you have been allocated to review has not created a PR yet, you can review another PR of your choice.
+{% elseif module == "CS2113" %}
+* **Do the following to prepare for the PR review exercise** you will be doing in the coming tutorial.  for that exercise.
+  * If you are new to GitHub PRs, see [GitHub help on how to review PRs](https://help.github.com/en/articles/about-pull-request-reviews).
+  * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
+{% endif %}
 
-</div>
 
-<div class="indented">
+<div class="indented-level2">
 
 <box type="tip" light>
 
@@ -220,7 +293,7 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 
 <box type="warning">
 
-This activity is worth 2 participation points!
+This activity is considered for iP grading.
 </box>
 <p/>
 <panel header="Allocation for iP peer evaluation" minimized >
@@ -281,11 +354,15 @@ This activity is worth 2 participation points!
 {#====================================================================================================================#}
 <span id="heading_set_up_website">Set up a product website</span>
 <span id="desc_set_up_website">
+
+<span  tags="m--cs2103">
+
 * **Add a representative screenshot** of the product to the `docs` folder.
   * ==The file name should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
   * Ideally, the product name is visible in the screenshot e.g., in the title bar of the Window
 
 {{ embed_topic("tp-deliverables-website.mbdf#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
+</span>
 
 * **Add a brief User Guide (UG)**
 
@@ -295,12 +372,14 @@ This activity is worth 2 participation points!
 </div>
 <p/>
 
+<span  tags="m--cs2103">
 * {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%%.
+</span>
 </span>
 {#====================================================================================================================#}
 <span id="heading_release_product">Release the product</span>
 <span id="desc_release_product">
-* **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the project is very simple.
+* **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the project is very simple. The jar file should be ==cross-platform and should work in a computer that has Java 11==.
 * **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
   1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.

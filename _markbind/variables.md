@@ -136,3 +136,11 @@
 
 <variable name="date_final_submission">2020-08-10</variable>
 <variable name="format_normal">dddd, MMM Do</variable>
+
+<variable name="marks_ip">20</variable>
+<variable name="marks_tp">45</variable>
+<variable name="marks_participation">5</variable>
+<variable name="marks_exam">30</variable>
+<variable name="marks_exam_essay">0</variable>
+<variable name="marks_exam_mcq">30</variable>
+<variable name="mcq_count">100</variable>

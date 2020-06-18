@@ -12,7 +12,7 @@ Instructions below are from the previous semester. Will be updated closer to the
 </box>
 
 
-* The final exam will be as per the normal exam schedule, and will count for 30% of the final grade.
+* The final exam will be as per the normal exam schedule, and will count for {{ marks_exam }}% of the final grade.
 * The exam will be done online. Tools used: LumiNUS, Zoom, Microsoft Teams.
 
 ### Early preparations
@@ -37,7 +37,7 @@ As per NUS requirements, your Zoom video feed is recorded by us and will be shar
 * **Set up MS-Teams**: Follow the [_Microsoft Teams_ instructions provided by NUS](https://wiki.nus.edu.sg/display/THES/Before+exams+-+Install+and+log+in+to+Microsoft+Teams). We'll be using MS-Teams as a backup in case of Zoom fails.
 
 
-### ==~~15~~ 30== minutes before the exam
+### 30 minutes before the exam
 
 * Aim to join the Zoom waiting room around 12.30pm.
 * Ensure your computer and the phone (if applicable) are charged and within reach of a power supply.
@@ -111,8 +111,8 @@ Choose the incorrect statement.
 There is no midterm.
 
 The final exam has two parts: 
-* Part 1: MCQ questions (1 hour, 20 marks) 
-* Part 2: Essay questions (1 hour, 20 marks)
+* Part 1: MCQ questions (1 hour, {{ marks_mcq }} marks)
+* Part 2: Essay questions (1 hour, {{ marks_essay }} marks)
 
 Both papers will be given to you at the start but you need to **answer Part 1 first** (i.e. MCQ paper). It will be **collected 1 hour after the exam start time** (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.
 
@@ -125,7 +125,7 @@ Given the fast pace required by the paper, the large class size, and the need to
 
 ## Final Exam: Part 1 (MCQ)
 
-Each MCQ question gives you a statement to evaluate. 
+Each MCQ question gives you a statement to evaluate.
 
 <box>
 
@@ -141,7 +141,7 @@ Unless stated otherwise, the meaning of answer options are<br>
 **B**: Disagree. If the question has multiple statements, ++disagree with at least one of them++<br>
 **C**, **D**, **E**: Not used
 
-Number of questions: 100
+Number of questions: {{ mcq_count }}
 
 <div class="full-mode">
 
@@ -191,7 +191,7 @@ Some questions have tags e.g., the question below has a tag  **`JAVA`**. These *
 <img src="{{baseUrl}}/admin/images/contextTag.png" /><br>
 
 **The exam paper is open-book**: you may bring any printed or written materials to the exam in hard copy format.
-However, given the fast pace required by Part 1, you will not have time left to refer notes during that part of the exam. 
+However, given the fast pace required by Part 1, you will not have time left to refer notes during that part of the exam.
 
 {{ icon_tip }} **Mark the OCR form as you go**, rather than planning to transfer your answers to the OCR form near the end. %%Reason: Given there are 100 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.%%
 
@@ -209,7 +209,6 @@ You will be given a practice exam paper to familiarize yourself with this slight
 
 Yes, **you may use pencils** when answering part 2.
 
-</div>
 
 
 -->

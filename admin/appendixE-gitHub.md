@@ -61,13 +61,13 @@ After receiving your team ID, one team member should do the following steps:
 
 ### <div class="text-white bg-dark p-1">tP Team Repo Setup</div>
 
+****({{ icon_individual }}/%%{{ icon_team }}%%) Only one team member:****
+
 <box tags="m--cs2113" light type="important">
 
 The tP project template given to you is a variation of the Duke repo you used for the iP, but ==with some important differences==. Please follow instructions carefully, rather than follow what you remember from the iP.
 
 </box>
-
-****({{ icon_individual }}/%%{{ icon_team }}%%) Only one team member:****
 
 1. **Fork** the [{{module_org}}/tP]({{module_org}}/tP) repo to your team org.
    * This repo (let's call it the _team repo_) is to be used as the repo for your project.
@@ -213,7 +213,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 </span>
 
-* Create following milestones : `v1.0`, `v1.1`, `v1.2`, `{{ penultimate_version }}`, `{{ final_version }}`,
+* Create following milestones : <span tags="m--cs2103">`v1.0`, `v1.1`, </span>`{{ first_version }}`, `{{ penultimate_version }}`, `{{ final_version }}`
 
 * You may configure other project settings as you wish. e.g. more labels, more milestones
 
@@ -236,8 +236,6 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 * **Assign the `type.*` and `priority.*` labels to those issues.**
 
 * **Formalize the project plan** by assigning relevant issues to the corresponding milestone.
-
-<big>**From milestone v1.2:**</big>
 
 * **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked.%%e.g.%% 
   * A typical task should be able to done by one person, in a few hours.
