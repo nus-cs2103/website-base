@@ -57,6 +57,21 @@ More info about setting Git username is [here](https://help.github.com/articles/
 </box>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
+<div tags="m--cs2113" id="repl">
+
+#### <div class="text-white bg-dark p-1">Tool Used: Repl.it (for Coding Exercises)</div>
+
+* We'll be using `Repl.it` for coding exercises (compulsory).
+
+<box>
+
+<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+
+* {{ icon_important_big_red }} Create an account on https://repl.it.
+* ==Make sure you set your _first name_ in your `repl.it` user profile to be exactly the same as your GitHub username== (so that our grading scripts can trace your `repl.it` submissions). The _last name_ field is not used by the scripts (i.e., you can set it to any value).
+* Join the `repl.it` classroom `cs2113-{{ period }}` using this link [{{ repl_link }}]({{ repl_link }}).
+</box>
+</div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="communication">
 
 #### <div class="text-white bg-dark p-1">Tools Used: for Communication</div>

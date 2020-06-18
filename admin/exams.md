@@ -110,7 +110,7 @@ Choose the incorrect statement.
 <!--
 There is no midterm.
 
-The final exam has two parts: 
+The final exam has two parts:
 * Part 1: MCQ questions (1 hour, {{ marks_mcq }} marks)
 * Part 2: Essay questions (1 hour, {{ marks_essay }} marks)
 
@@ -122,6 +122,7 @@ Given the fast pace required by the paper, the large class size, and the need to
 * If you have a doubt/query about a question ,or would like to make an assumption about a question, or would like to report a potential error in the exam paper, write down your doubt/query/assumption in the space provided for it at the end of the exam paper.
 * Those doubts/queries/assumptions (if justified) will be taken into account when grading.
 </box>
+
 
 ## Final Exam: Part 1 (MCQ)
 
@@ -143,7 +144,7 @@ Unless stated otherwise, the meaning of answer options are<br>
 
 Number of questions: {{ mcq_count }}
 
-<div class="full-mode">
+<div tags="m--cs2103">
 
 Note that you have **slightly more than ½ minute for each question**, which means you need to go through the questions fairly quickly.
 </div>
@@ -175,7 +176,7 @@ Some questions will use ==highlighting== to draw your attention to a specific pa
 <box>
 
 {{ icon_example }} Consider the statement below:
-  
+
 > Technique ABC ==can== be used to generate more test cases.
 
 The word ==can== is highlighted because the decision you need to make is whether the ABC _can or cannot_ be used to generate more test cases; the decision is not whether ABC can be used to generate _more or better_ test cases.

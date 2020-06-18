@@ -3,6 +3,8 @@
 {% call show_admin_page("moduleExpectations") %} 
 <div id="main">
 
+<span tags="m--cs2103">
+
 ### Prior Knowledge: Java and OOP
 
 This module requires you to write Java code almost every week, starting from the very first week. If your Java skills are rusty, do brush up your Java programming skills.
@@ -10,6 +12,7 @@ This module requires you to write Java code almost every week, starting from the
 In particular, you may want to **have a look at the new Java 8 features** such as _streams_, _lambdas_, _Optionals_, that may not have been covered in previous Java modules.
 
 CS2103 students: ==This module assumes a reasonable prior knowledge of Java and OOP== because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching to CS2113 (Software Engineering & Object-Oriented Programming) instead.
+</span>
 
 ### Workload
 
@@ -33,7 +36,9 @@ As 60% of this module is based on CA, it can appear to be _heavy_. However, **it
 * **Three-stars topics** {{ three_stars }} can get you up to an **A**.
 * **Four-stars topics** {{ four_stars }} can push you beyond the limits of the module, and help you get into a level above those who merely limit themselves to the topics of the module. They ==are not examinable==.
 
+<span tags="m--cs2103">
 * Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }} are relevant topics you are expected to have learned in prerequisite modules. They are given for reference, but ==are examinable==. The number of stars indicates the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.
+</span>
 
 **Star ratings for other things** e.g., admin info sections:
 
