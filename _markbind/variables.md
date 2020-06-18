@@ -133,3 +133,6 @@
 <span id="prereq_four_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
 
 <span id="hr_double"><hr style="border-top: 3px double #c5c5c5;"></span>
+
+<variable name="date_final_submission">2020-08-10</variable>
+<variable name="format_normal">dddd, MMM Do</variable>

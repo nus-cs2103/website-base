@@ -37,9 +37,14 @@ Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-educat
 
 <div id="organization-setup">
 
-### <div class="text-white bg-dark p-1">Organization Setup</div>
+### <div class="text-white bg-dark p-1">tP Team Organization Setup</div>
 
-{{ icon_important_big_red }} Please follow the organization/repo name format precisely because we use scripts to download your code or else our scripts will not be able to detect your work.
+
+<box light type="important">
+
+Please follow the organization/repo name format precisely because we use scripts to download your code or else our scripts will not be able to detect your work.
+
+</box>
 
 After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
@@ -54,7 +59,13 @@ After receiving your team ID, one team member should do the following steps:
 
 <div id="repo-setup">
 
-### <div class="text-white bg-dark p-1">Repo Setup</div>
+### <div class="text-white bg-dark p-1">tP Team Repo Setup</div>
+
+<box tags="m--cs2113" light type="important">
+
+The tP project template given to you is a variation of the Duke repo you used for the iP, but ==with some important differences==. Please follow instructions carefully, rather than follow what you remember from the iP.
+
+</box>
 
 ****({{ icon_individual }}/%%{{ icon_team }}%%) Only one team member:****
 
@@ -65,8 +76,14 @@ After receiving your team ID, one team member should do the following steps:
 1. **Enable GitHub Actions**: Go to the {{ show_as_rounded_tab(':fas-play-circle: Actions') }} tab and enable workflows by clicking the {{ button('I understand my workflows ...', button_style="success") }} button. That will enable the GitHub Actions that come with the project template.
 1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
    Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
+{% if module == "CS2103" %}
 1. **Set up the project website**<br>
    Follow instructions in the [_Documentation guide_ page]({{ ab3_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/tp` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/tp`.
+{% elseif module == "CS2113" %}
+1. **Enable GitHub Pages**: Go to the {{ show_as_rounded_tab(':octicon-gear: Settings') }} tab and enable `GitHub Pages` for the `master branch /docs folder` (similar to how you did it in the iP).<br>
+   Remember to choose a theme too by clicking the {{ button('**Choose a theme**') }} button (that will create a commit in your repo that is needed in a later step.<br>
+   After a few minutes, confirm your tP website is available in the corresponding `github.io` URL.
+{% endif %}
 1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tp]({{module_org}}/tp)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ module }}-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
    **When filling the PR description**, ==fill the details exactly as specified in the text box== %%(Reason: The PR description is used by grading scripts)%%.
 
@@ -76,8 +93,8 @@ After receiving your team ID, one team member should do the following steps:
 1. **Fork** the `tP` repo to your personal GitHub account.<br>
    <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
-1. **Set up** the developer environment in your computer as explained in the [_Setting up and getting started_ page]({{ ab3_website }}/SettingUp.html) of AB3 developer guide.
-
+1. **Set up** the developer environment in your computer by following the
+   <span tags="m--cs2103">[_Setting up and getting started_ page]({{ ab3_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113">the [README]({{module_org}}/tP) carefully as the ==steps are different from the iP==.</span>
 
 <box type="wrong" seamless>
 
@@ -91,7 +108,7 @@ After receiving your team ID, one team member should do the following steps:
 
 <div id="workflow">
 
-### <div class="text-white bg-dark p-1">Workflow</div>
+### <div class="text-white bg-dark p-1">tP Workflow</div>
 
 <div id="workflow-before-v11">
 
@@ -104,9 +121,14 @@ After receiving your team ID, one team member should do the following steps:
   <include src="appendixB-policies.md#policy-reuse"/>
 </modal>
 
-
-**Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger> in your project up to v1.1.** In particular,
-
+**Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project at least until {{ first_version }}.
+* {{ icon_tip }} **Protect the `master` branch**: You can use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs. We suggest the following:
+  * Go the the {{ show_as_rounded_tab(':octicon-gear: settings') }} of your team repo.
+  * Click on the `Branches` option on the navigation menu on the left.
+  * Click the {{ button('**Add rule**') }} button. In the _Branch protection rule_ page,
+    * Specify the _Branch name pattern_ to be `master`
+    * Tick the option `Require status checks to pass before merging` to ensure that code has to pass CI before then can be merged to the `master` branch
+    * If you think all PRs should be reviewed before they are merged, also tick the `Require pull request reviews before merging` option.
 * **Create issues to represent project tasks** so that they can be tracked using the issue tracker features.
 * **Create a PR when you implement a project task** that updates the code.<br>
   {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.<br>
@@ -119,6 +141,9 @@ After receiving your team ID, one team member should do the following steps:
   {{ icon_pro_tip }} You can use GitHub's [_protected branches_](https://help.github.com/en/articles/about-protected-branches) feature to prevent CI-failing PRs from being merged.
 * After merging a PR, close the corresponding issue.<br>
   {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
+{% if module == "CS2113" %}
+* **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
+{% endif %}
 
 <modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
   <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -127,7 +152,7 @@ After receiving your team ID, one team member should do the following steps:
 </div>
 <div id="workflow-after-v11">
 
-**After following the given workflow for at least one iteration, you can reduce process rigor** to suit your team's pace. Here are some examples:
+**After following the given workflow for at least <tooltip content="i.e., until {{ first_version }}">one iteration</tooltip>, you can reduce process rigor** to suit your team's pace. Here are some examples:
 
 * **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain.<br>
   It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
@@ -136,10 +161,6 @@ After receiving your team ID, one team member should do the following steps:
 * **Reduce automated checks**: You can also reduce the rigor of checkstyle checks to expedite PR processing.
 
 * **Switch to a lighter workflow**: While _forking workflow_ is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. However, we still recommend that you use PR reviews, at least for PRs affecting others' features.
-
-**You can also increase the rigor/safety of your workflow** in the following ways:
-
-* Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs.
 
 <modal header="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
   <include src="tp-expectations.md#testing-expectations"/>
@@ -151,9 +172,9 @@ After receiving your team ID, one team member should do the following steps:
 
 <div id="issue-tracker-setup">
 
-### <div class="text-white bg-dark p-1">Issue Tracker Setup</div>
+### <div class="text-white bg-dark p-1">tP Issue Tracker Setup</div>
 
-We recommend you configure the issue tracker of the `main` repo as follows:
+We recommend you configure the issue tracker of the tP team repo as follows:
 
 * Delete existing labels and add the following labels.<br>
   {{ icon_tip }} **Issue type** labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.
@@ -167,12 +188,6 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 * `type.Task` (or `type.Chore`) : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
 * `type.Bug` : A bug
 
-</box>
-
-<box>
-
-**Status** labels:
-* `status.Ongoing` : The issue is currently being worked on. note: remove this label before closing an issue.
 </box>
 
 <box>
@@ -206,17 +221,17 @@ We recommend you configure the issue tracker of the `main` repo as follows:
 
 <div id="tp-schedule-tracking">
 
-### <div class="text-white bg-dark p-1">Project Schedule Tracking</div>
+### <div class="text-white bg-dark p-1">tP Project Schedule Tracking</div>
 
 In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking _all_ noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current status of the project. You can also use GitHub's [Projects feature](https://www.youtube.com/watch?v=C6MGKHkNtxU) to manage the project, but keep it linked to the issue tracker as much as you can.
 
 #### Using Issues:
 
-<big>**During the initial stages**</big> (latest by the start of v1.2):
+* **Record each of the user stories you plan to deliver as an issue in the issue tracker.** e.g.,
 
-* **Record each of the user stories you plan to deliver as an issue in the issue tracker.** 
-    %%e.g.%% `Title: As a user I can add a deadline`  
-    `Description: ... so that I can keep track of my deadlines`
+  title | `As a user I can add a deadline`
+  ------|---------------------------------
+  Description | `... so that I can keep track of my deadlines`
 
 * **Assign the `type.*` and `priority.*` labels to those issues.**
 
@@ -254,8 +269,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 **Wrapping up a Milestone**:<br>
 
-  * **A working product tagged** with the correct tag (e.g. `v1.2`) and is pushed to the main repo<br>
-    or a **product _release_ done on GitHub**. A product release is optional for v1.2 but required from from {{ penultimate_version }}. Click [here](https://github.com/se-edu/addressbook-level3/releases/) to see an example release.
+  * **A working product tagged** with the correct tag (e.g. `{{ penultimate_version }}`) and is pushed to the main repo or a **product _release_ done on GitHub** ([example](https://github.com/se-edu/addressbook-level3/releases/)).
 
   * **CI passing** for the version tagged/released.
 

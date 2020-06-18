@@ -70,6 +70,9 @@ week13: [
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="2") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "2", indent="2") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="2") }}
+<span tags="m--cs2113">
+{{ embed_topic("tools.md#repl", "Admin " + icon_embedding + " **Tools - repl.it**", "2", indent="2") }}
+</span>
 </span>
 {#====================================================================================================================#}
 <span id="heading_submit_pre_module_survey">Submit the pre-module survey</span>
@@ -104,6 +107,21 @@ week13: [
 * **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
 </span>
 {#====================================================================================================================#}
+<span id="heading_submit_first_repl_exercises">Submit coding exercises on repl.it</span>
+<span id="desc_submit_first_repl_exercises">
+
+* Submit the coding exercises allocated for the current week. Most exercises are auto-graded. Keep trying until the system accepts your code as the correct solution.
+* If you encounter problems, post in the [forum]({{ forum_link }}).
+
+{{ embed_topic("tools.md#repl", "Admin " + icon_embedding + " **Tools - repl.it**", "2", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_repl_exercises">Submit coding exercises on repl.it</span>
+<span id="desc_submit_repl_exercises">
+
+* As before, submit the coding exercises allocated for the current week, and any pending exercises from previous weeks.
+</span>
+{#====================================================================================================================#}
 <span id="heading_get_connect_with_comm_channels">Subscribe to the module forum</span>
 <span id="desc_get_connect_with_comm_channels">
 
@@ -115,7 +133,7 @@ week13: [
 <span id="heading_submit_post_lecture_quiz">Submit post-lecture quiz</span>
 <span id="desc_submit_post_lecture_quiz">
 
-* **Post-lecture quiz**: As usual, read weekly topics allocated for this week and submit the post-lecture quiz by the midnight before the lecture.
+* **Post-lecture quiz**: Read weekly topics allocated for this week and submit the post-lecture quiz before the following lecture.
 </span>
 {#====================================================================================================================#}
 <span id="heading_form_teams">[{{ module }} students only] Form teams during the tutorial</span>
@@ -139,10 +157,10 @@ week13: [
 {{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "3", indent="2", type="primary") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_submit_midterm_feedback_for_the_module">[optional] Submit mid-term feedback for the module</span>
+<span id="heading_submit_midterm_feedback_for_the_module">[optional] Submit mid-term feedback to tutors</span>
 <span id="desc_submit_midterm_feedback_for_the_module">
 
-* **An anonymous survey to submit feedback about the teaching team** will open on LumiNUS around Monday. You will receive an email when it opens. Please take a few minutes to give feedback to your tutors.
+* **An anonymous survey to submit feedback about tutors** will open on LumiNUS by Monday. Please take a few minutes to give feedback to your tutors.
 </span>
 {#====================================================================================================================#}
 <span id="heading_submit_midterm_peer_evaluations">Submit Midterm Peer Evaluations on TEAMMATES</span>
@@ -156,7 +174,7 @@ week13: [
 <span id="heading_submit_final_peer_evaluations">Submit Final Peer Evaluation on TEAMMATES</span>
 <span id="desc_submit_final_peer_evaluations">
 
-* Submission will open on Tuesday morning (after the final submission deadline).
+* Submission will open on the day after the final submission ({{ date_final_submission | date(format_normal, 1)}}).
 
 {{ embed_topic("peerEvaluations.md#finalPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Final Peer Evaluation", "1", indent="2", status="expanded") }}
 </span>
