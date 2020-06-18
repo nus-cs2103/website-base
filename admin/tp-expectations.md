@@ -197,11 +197,11 @@ _Team-tasks_ are the tasks that _someone_ in the team has to do. Marks allocated
 
 Here is a non-exhaustive list of team-tasks:
 
+1. Setting up the GitHub team org/repo
 1. Necessary general code enhancements e.g.,
    1. Work related to renaming the product
    1. Work related to changing the product icon
    1. Morphing the product into a different product
-1. Setting up the GitHub org/repo
 1. Maintaining the issue tracker
 1. Release management
 1. Updating user/developer docs that are not specific to a feature %%e.g. documenting the target user profile%%

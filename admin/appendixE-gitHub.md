@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_as_rounded_tab with context %}
+{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, step, thumb, timing_badge with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("appendixE-gitHub") %}
@@ -58,21 +58,23 @@ After receiving your team ID, one team member should do the following steps:
 
 ****({{ icon_individual }}/%%{{ icon_team }}%%) Only one team member:****
 
-1. **Fork** the [{{module_org}}/tp]({{module_org}}/tp) repo to your team org.
+1. **Fork** the [{{module_org}}/tP]({{module_org}}/tP) repo to your team org.
    * This repo (let's call it the _team repo_) is to be used as the repo for your project.
-   * <span class="text-danger">Do not rename this repo</span>  to anything else.
-1. **Enable the issue tracker**. %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.%%
+   * <span id="do-not-rename">{{ icon_important_big_red }} Please do not rename the fork %%Reason: our grading scripts rely on the repo name.%%</span>
+1. **Enable the issue tracker**.
+1. **Enable GitHub Actions**: Go to the {{ show_as_rounded_tab(':fas-play-circle: Actions') }} tab and enable workflows by clicking the {{ button('I understand my workflows ...', button_style="success") }} button. That will enable the GitHub Actions that come with the project template.
 1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
    Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
 1. **Set up the project website**<br>
    Follow instructions in the [_Documentation guide_ page]({{ ab3_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/tp` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/tp`.
-1. **create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tp]({{module_org}}/tp)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[CS2103T-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
+1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tp]({{module_org}}/tp)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ module }}-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
    **When filling the PR description**, ==fill the details exactly as specified in the text box== %%(Reason: The PR description is used by grading scripts)%%.
 
 ****({{ icon_individual }}, {{ icon_individual }}, {{ icon_individual }}, ...) Every team member:****
 
-1. **Watch** the `tp` repo (created above) i.e., go to the repo and click on the `watch` button to subscribe to activities of the repo
-1. **Fork** the `tp` repo to your personal GitHub account.
+1. **Watch** the `tP` repo (created above) i.e., go to the repo and click on the {{ button(':octicon-eye: Watch :octicon-triangle-down:') }} button to subscribe to activities of the repo.
+1. **Fork** the `tP` repo to your personal GitHub account.<br>
+   <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
 1. **Set up** the developer environment in your computer as explained in the [_Setting up and getting started_ page]({{ ab3_website }}/SettingUp.html) of AB3 developer guide.
 
@@ -80,8 +82,8 @@ After receiving your team ID, one team member should do the following steps:
 <box type="wrong" seamless>
 
 **Do not alter these paths** in your project as our grading scripts depend on them.
-* `src/main`
-* `src/test`
+* `src/main/java`
+* `src/test/java`
 * `docs`
 </box>
 
@@ -125,7 +127,7 @@ After receiving your team ID, one team member should do the following steps:
 </div>
 <div id="workflow-after-v11">
 
-**After completing v1.1, you can reduce process rigor** to suit your team's pace. Here are some examples:
+**After following the given workflow for at least one iteration, you can reduce process rigor** to suit your team's pace. Here are some examples:
 
 * **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain.<br>
   It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>

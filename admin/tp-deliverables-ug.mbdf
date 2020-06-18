@@ -1,5 +1,13 @@
 {% from "common/macros.njk" import embed_topic with context %}
 
+<box>
+
+{{ icon_info }} **In UG/DG, using hierarchical section numbering and figure numbering is optional** (reason: it's not easy to do in MarkDown), but make sure it does not inconvenience the reader (e.g., use section/figure title and/or hyperlinks to point to the section/figure being referred to). Examples:
+
+>In the section [_Implementation_]() given above ...
+
+</box>
+
 * The main content you add should be in the `docs/UserGuide.md` file (for ease of tracking by grading scripts).
 * **Should cover all {{ final_version }} features**.<br>
   **Ensure those descriptions match the product precisely**, as it will be used by peer testers (==inaccuracies will be considered bugs==).

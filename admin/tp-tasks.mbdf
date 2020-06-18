@@ -274,7 +274,8 @@ Given below are some guidance on the recommended progress at this point of the p
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ future_version }}.
   * We recommend that you follow the existing [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
   * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
-  * Do try to come up with concrete command syntax for the CLI commands that you will deliver at the end of the semester.
+  * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ first_version }}.
+  * Include only features that will be delivered in {{ first_version }}.
   * Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%.
   * {{ icon_important_big_red }} **Submission**: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ module }}T-W09-1.pdf`, and upload to LumiNUS.<br><br>
 
@@ -416,8 +417,6 @@ How is that better?
 * You get multiple shots at project planning. Each try can learn from the previous tries. Hence, more learning.
 * As each iteration produces a working product, you always have a working product, which reduces the risk overrunning the final deadline.
 
-What about the UG draft we did earlier? Doesn't that 'fix' the {{ final_version }} target? Not necessarily. Consider UG draft as just a general direction. You can update it as necessary as the project evolves.
-
 </box>
 
 </div>
@@ -554,8 +553,13 @@ In addition,
     * Alternatives considered.
   * **Diagramming tools**:
     * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).<br>
-      You may use any other tool (e.g., PowerPoint) too. But if you do, ==choose a tool that allows incremental updates== to diagrams %%(reason: because diagrams need to be updated multiple times as the product evolves)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.
+    * You may use any other tool too (e.g., PowerPoint) too. But if you do, note the following:<br>
+      ==Choose a diagramming tool that allows incremental updates== to diagrams %%(reason: because diagrams need to be updated multiple times as the product evolves)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.
 
+    * {{ icon_info }} Can IDE-generated UML diagrams be used in project submissions? Not a good idea. Given are three reasons each of which can be reported by evaluators as 'bugs' in your diagrams, costing you marks:
+      * They often don't follow the standard UML notation (e.g., they add extra icons).
+      * They tend to include _every_ little detail whereas we want to limit UML diagrams to important details only, to improve readability.
+      * Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code. e.g., differentiating between multiplicities `0..1` vs `1`, composition vs aggregation
 <div class="indented-level2">
 
 <panel type="success" expanded>
@@ -740,7 +744,7 @@ Not applicable this semester
 {{ embed_topic("tp-deliverables.md#tp-deliverables-sourcecode", "Admin " + icon_embedding + " tP → Deliverables → Source Code", "3", indent="2") }}
 
 
-* {{ icon_team }} **User Guide**: Convert the pdf and upload to LumiNUS.<br>
+* {{ icon_team }} **User Guide**: Convert to pdf and upload to LumiNUS.<br>
   File name: `[TEAM_ID][product Name]UG.pdf`  %%e.g.[{{ module }}T-W09-1][Contacts Plus]UG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
