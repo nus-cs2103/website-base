@@ -134,11 +134,21 @@
 
 <span id="hr_double"><hr style="border-top: 3px double #c5c5c5;"></span>
 
-<variable name="date_final_submission">2020-08-10</variable>
+<variable name="date_semester_start">2020-08-10</variable>
+<variable name="date_first_lecture">2020-08-14</variable>
+<variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
+<variable name="date_final_submission">2020-11-09</variable>
 <variable name="format_normal">dddd, MMM Do</variable>
 
 <variable name="marks_ip">20</variable>
 <variable name="marks_tp">45</variable>
+<variable name="marks_tp_design">5</variable>
+<variable name="marks_tp_documentation">10</variable>
+<variable name="marks_tp_implementation">10</variable>
+<variable name="marks_tp_pm">10</variable>
+<variable name="marks_tp_pm_individual">5</variable>
+<variable name="marks_tp_pm_team">5</variable>
+<variable name="marks_tp_qa">10</variable>
 <variable name="marks_participation">5</variable>
 <variable name="marks_exam">30</variable>
 <variable name="marks_exam_essay">0</variable>

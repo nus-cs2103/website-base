@@ -6,14 +6,14 @@
 
 Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. Given below is the marking scheme.
 
-**Total**: 45 marks ({{ icon_individual }} 35 individual marks + {{ icon_team }} 10 team marks)
+**Total**: {{ marks_tp }} marks ({{ icon_individual }} 35 individual marks + {{ icon_team }} 10 team marks)
 
 See the sections below for details of how we assess each aspect.
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-productDesign">
 
-#### <div class="bg-warning p-1">1. Project Grading: Product Design %%[{{ icon_team }}/{{ icon_individual }} 5 marks]%%</div>
+#### <div class="bg-warning p-1">1. Project Grading: Product Design %%[{{ icon_team }}/{{ icon_individual }} {{ marks_tp_design }} marks]%%</div>
 
 **Evaluates:** how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user
 
@@ -25,6 +25,11 @@ See the sections below for details of how we assess each aspect.
 
 In addition, feature flaws reported in the PE will be considered when grading this aspect.
 
+<box tags="m--cs2113" type="tip">
+
+Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, ==the bar you need to reach to get full 5 marks will be quite low==. For example, the `Medium` level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of _excessive_ 'feature flaw' bugs will affect the score.
+</box>
+
 <box>
 <include src="tp-grading-bugs.mbdf#featureFlaws" />
 </box>
@@ -32,7 +37,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">2. Project Grading: Implementation %%[{{ icon_individual }} 10 marks]%%</div>
+#### <div class="bg-warning p-1">2. Project Grading: Implementation %%[{{ icon_individual }} {{ marks_tp_implementation }} marks]%%</div>
 
 **<big>2A. Code quality</big>**
 
@@ -47,8 +52,8 @@ In addition, feature flaws reported in the PE will be considered when grading th
 * At least some evidence of these (see [here]({{baseUrl}}/se-book-adapted/chapters/errorHandling.html) for more info)
   * logging
   * exceptions
-  * assertions
-  * defensive coding
+  * assertions{% if module == "CS2103" %}
+  * defensive coding{% endif %}
 
 * No [coding standard]({{java_coding_standard}}) violations %%e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
 
@@ -66,6 +71,8 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Method:**
 
+<div tags="m--cs2103">
+
 * Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
 
 {{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Questions used for Implementation Effort==", "3", indent="2") }}
@@ -73,10 +80,21 @@ In addition, feature flaws reported in the PE will be considered when grading th
 * Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
 {{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
+</div>
+<div tags="m--cs2113">
+
+* This is evaluated by peers who tested your product, and tutors.
+
+{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Question used for Implementation Effort==", "3", indent="2") }}
+
+* The score could be further moderated by this question answered by team members.
+
+{{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
+</div>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_individual }} 10 marks]%%</div>
+#### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_individual }} {{ marks_tp_qa }} marks]%%</div>
 
 
 <big>**3A. Developer Testing:**</big>
@@ -109,7 +127,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-documentation">
 
-#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_individual }} 10 marks]%%</div>
+#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
 
 **Evaluates:** your contribution to project documents
 
@@ -141,7 +159,7 @@ In addition, feature flaws reported in the PE will be considered when grading th
 </div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">5. Project Grading: Project Management %%[{{ icon_team }} 5 + {{ icon_individual }} 5 = 10 marks]%%</div>
+#### <div class="bg-warning p-1">5. Project Grading: Project Management %%[{{ icon_team }} {{ marks_tp_pm_team }} + {{ icon_individual }} {{ marks_tp_pm_individual }} = {{ marks_tp_pm }} marks]%%</div>
 
 <div id="project-management-grading"> 
 
@@ -153,14 +171,23 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Grading criteria:**
 
-* Milestones ==need to be reached the midnight before of the tutorial== for it to be counted as achieved. ==To get a good grade for this aspect, achieve at least 60% of the recommended milestone progress.==
+* Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%%
+
+<div tags="m--cs2103">
+
+* Milestones ==reached on time (i.e., the midnight before of the tutorial)== (to get a good grade for this aspect, achieve at least 60% of the recommended milestone progress).
 * Good use of GitHub milestones
 * Good use of GitHub release mechanism
 * Good version control, based on the repo
 * Reasonable attempt to use the forking workflow
 * Good task definition, assignment and tracking, based on the issue tracker
 * Good use of buffers %%(opposite: everything at the last minute)%%
-* Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%%
+</div>
+<div tags="m--cs2113">
+
+* No <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at {{ first_version }} and {{ penultimate_version }}.
+* Good attempt to use of at least _some_ Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)
+</div>
 
 
 <big>**5B. Team-tasks:**</big>
@@ -171,8 +198,9 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 **Based on:** peer evaluations, tutor observations
 
-**Grading criteria:** To earn full marks, you should have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.
-
+**Grading criteria:** Do these to earn full marks.
+* Do close to a fair share of the team tasks (you can earn bonus marks by doing more than your fair share).
+* Merge code in at least four of weeks 7, 8, 9, 10, 11, 12
 
 </div>
 

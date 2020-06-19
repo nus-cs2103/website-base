@@ -19,7 +19,7 @@ week5: [
 week6: [
   {id: 'set_up_project_repo'},
   {id: 'get_familiar_with_the_code_base'},
-  {id: 'conceptualize_v2'},
+  {id: 'conceptualize_v1'},
   {id: 'draft_the_ug'},
   {id: 'refine_product_design'}
 ],
@@ -194,7 +194,7 @@ Given below are some guidance on the recommended progress at this point of the p
 </modal>
 
 <div class="indented-level3">
-<box>
+<box tags="m--cs2103">
 
 {{ icon_tip }} Recommended: **You can use GitHub issue tracker to manage user stories**, but for that you need to set up your team's GitHub organization, team repo, and its issue tracker first. Instructions for doing those steps are in the panel below.
 
@@ -223,15 +223,18 @@ Given below are some guidance on the recommended progress at this point of the p
 <span id="heading_prioritize_user_stories">{{ icon_team }} Prioritize the user stories</span>
 <span id="desc_prioritize_user_stories">
 
-  <img class="indented-level2" src="{{baseUrl}}/admin/images/userstories.png" width="400px">
+**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as v1.0. We try to make it small because you will have only two weeks to implement v1.0 and coding as a team is a lot harder than writing code alone.
+* If the product _can_ be of some use without a given user story, that user story should be left out of v1.0, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
+* Don't worry about v2.0. You can design v2.0 after v1.0 done.
+* Don't worry about v1.0 being 'too small'. You can always add more features to v1.0 if you finish it ahead of schedule.
+* If possible, narrow the scope of v1.0 further e.g., narrower target user, a smaller value proposition
 
-* Suggested workflow:
-  * Take one user story at a time and get team member opinions about it.
-  * Based on the team consensus, put the story (i.e. the piece of paper) onto one of these three piles:
-    * `Must-Have` : The product will be practically useless to the target user without this feature.
-    * `Nice-To-Have` : The target user can benefit from this user story significantly but you are not certain if you'll have time to implement it.
-    * `Not-Useful` : No significant benefit to the target user, or does not fit into the product vision.
-  * %%If you are using physical paper to record user stories: After all stories have been put in the above three piles, you can make a record of which stories are in the three piles.%%
+Suggested workflow:
+* **First stage** [10 minutes]:
+  * Divide the user stories among team members.
+  * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed for v1.0_.
+* **Second stage** [10 minutes]:
+  * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 </span>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
@@ -261,18 +264,22 @@ Given below are some guidance on the recommended progress at this point of the p
 {{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_conceptualize_v2">{{ icon_team }} Conceptualize {{ future_version }}</span>
-<span id="desc_conceptualize_v2">
+<span id="heading_conceptualize_v1">{{ icon_team }} Conceptualize {{ first_version }}</span>
+<span id="desc_conceptualize_v1">
 
-* Based on your user story categorization in the previous week, given module requirements/constraints for the project, and the current state of the product, select which user stories you are likely to include in {{ future_version }}.
-* Conceptualize the product in terms of how it will look like at {{ future_version }}.
+* Based on your user story selected previously, conceptualize the product in terms of how it will look like at {{ first_version }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.
+
+<modal large header="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
+  <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ug">{{ icon_individual }} Draft the UG</span>
 <span id="desc_draft_the_ug">
 
-* Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ future_version }}.
-  * We recommend that you follow the existing [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
+* Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ first_version }}.
+  * We recommend that you follow the [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
   * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ first_version }}.
   * Include only features that will be delivered in {{ first_version }}.
@@ -353,7 +360,7 @@ Update the following pages in your project repo:
 <span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
 <span id="desc_update_the_ug">
 
-* Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in {{ future_version }}' ([example]({{ ab3_website }}/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code)).<br>
+* Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ tp_dashboard }}).
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
@@ -408,9 +415,9 @@ Update the following pages in your project repo:
 
 Intuitively, you might thing the right thing to do is to decide what features will be in {{ final_version }} and then plan the intermediate versions based on that. But that's not what we are going to do.
 
-Huh? Why? You don't have enough experience to reliably estimate effort each feature will need, and hence, any such long range plan is likely to be inaccurate.
+Why? You don't have enough experience to reliably estimate effort each feature will need, and hence, any such long range plan is likely to be inaccurate.
 
-Instead, what we will do is to ==assume the current iteration is the last iteration==, plan that iteration accordingly, and try to follow that plan as best as you can. After the iteration is over, plan the next iteration as if it's the last iteration. But that time, factor in the experience from the previous iteration to do a better job of planning.
+Instead, what we will do is to ==assume the current iteration is the last iteration==, plan that iteration accordingly, and try to follow that plan as best as we can. After the iteration is over, we plan the next iteration as if _it's_ the last iteration. But that time, factor in the experience from the previous iteration to do a better job of planning.
 
 How is that better?
 * Shorter plans have a better chance of succeeding.
@@ -421,7 +428,7 @@ How is that better?
 
 </div>
 
-* {{ icon_team }} **Plan the next iteration**. As per the project planning approach described in the box above, decide what functionalities should be in the product if you had only two weeks to implement it.
+* {{ icon_team }} **Plan the next iteration**. As per the project planning approach described in the box above, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ first_version }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
   * ==Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)== even if the functionalities are not polished (polishing can be done in a later iteration).
   * "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet i.e., go _breadth-first iterative_ not _depth-first iterative_.
@@ -435,6 +442,38 @@ How is that better?
 <span id="desc_start_implementing_the_next_version">
 
 * If you have time, start implementing v1.2.
+</span>
+{#====================================================================================================================#}
+<span id="heading_start_implementing_v1">{{ icon_individual }} Start implementing {{ first_version }}</span>
+<span id="desc_start_implementing_v1">
+
+<div class="indented-level2">
+
+<box>
+
+{{ icon_tip }} **You may <tooltip content="i.e., copy-paste, not clone/fork">re-purpose/adopt</tooltip> code** from any of the below to be used in your tP, provided you give credit to the source (and do not claim such code as yours).
+* The iP code of any of your team members, or of any other person in the module.
+* Code from [AddressBook-Level2](https://se-education.org/addressbook-level2/) or any code used in module activities e.g., personbook
+
+</box>
+</div>
+
+* Start implementing v1.0, by adding code in small steps, while working in parallel.
+
+* As you are expected to follow breadth-first iterative approach, almost ==all code additions to the `master` branch should take the product from a working version to a slightly better working version==.
+  * {{ bad }} Let's add all data classes first %%reason: this is the depth-first approach%%
+  * {{ bad }} Let's finish the part of the code that saves and loads data first %%reason: this is the depth-first approach%%
+  * {{ good }} Let's add code to support simple todo tasks first (i.e., read, delete, save, load)
+
+* Recommended approach for planning the next week of the tP:
+  * First, decide how the product will look in one week. It can be really simple, but should be functional.
+  * Then, decide what implementation work needs to be done to get there.
+  * Divide up that work among yourselves and start doing those work items using the forking workflow.
+
+* See the panel below for our recommendations on the project workflow.
+
+{{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="2") }}
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_ensure_you_know_tp_expectations">%%{{ icon_individual }} Ensure you know tP expectations%%</span>
@@ -474,6 +513,16 @@ How is that better?
 </div>
 </span>
 {#====================================================================================================================#}
+<span id="heading_use_github_to_manage_milestones">{{ icon_team }} Use GitHub to manage milestones</span>
+<span id="desc_use_github_to_manage_milestones">
+
+* We ==recommend== using the GitHub issue tracker and its _milestones_ feature to manage your project milestones, as explained in the following panels.
+
+{{ embed_topic("appendixE-gitHub.md#issue-tracker-setup", "Admin " + icon_embedding + " Appendix E(extract): **Setting up the issue tracker**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
+
+</span>
+{#====================================================================================================================#}
 <span id="heading_add_another_increment_to_your_feature">{{ icon_individual }} Add another increment to your feature</span>
 <span id="desc_add_another_increment_to_your_feature">
 
@@ -483,10 +532,35 @@ How is that better?
  If an enhancement is too big to complete in one milestone, try to deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first.
 </span>
 {#====================================================================================================================#}
-<span id="heading_deliver_an_intermediate_version_of_your_enhancement">{{ icon_team }} Deliver an intermediate version of the new features</span>
+<span id="heading_add_junit_tests">{{ icon_individual }} Add some JUnit Tests</span>
+<span id="desc_add_junit_tests">
+
+* We recommend that each person adds some JUnit tests to test their tP code.
+
+* Some examples from [AddressBook-Level2](https://github.com/se-edu/addressbook-level2):
+  * <tooltip content="Software Under Test">SUT</tooltip>[`seedu.addressbook.common.Utils.java`](https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/common/Utils.java)<br>
+    Tests: [`seedu.addressbook.common.UtilsTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/common/UtilsTest.java)<br>
+    {{ icon_info }} Note how **the test class is in the same package as the SUT** (although in a different folder). Advantage: the test class has access to all non-private members of the SUT, including _package private_ members.
+  * SUT: [`seedu.addressbook.parser.Parser.java`](https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/parser/Parser.java)<br>
+    Tests: [`seedu.addressbook.parser.ParserTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/parser/ParserTest.java)<br>
+    {{ icon_info }} Note how some of the test methods follow a different naming convention e.g., `parse_emptyInput_returnsIncorrect()`. Cross-check the coding standard to confirm if this naming convention is allowed.
+  * SUT: [`seedu.addressbook.data.AddressBook.java`](https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/data/AddressBook.java)<br>
+    Tests: [`seedu.addressbook.data.AddressBookTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java)
+</span>
+{#====================================================================================================================#}
+<span id="heading_deliver_an_intermediate_version_of_your_enhancement">{{ icon_team }} Deliver {{ first_version }}</span>
 <span id="desc_deliver_an_intermediate_version_of_your_enhancement">
 
-* The feature should be merged and user visible, although simpler than the version you intend to deliver at {{ final_version }}.
+* The feature should be merged and user visible. The product must be working although the functionality is basic.
+</span>
+{#====================================================================================================================#}
+<span id="heading_deliver_v1">{{ icon_team }} Deliver {{ first_version }}</span>
+<span id="desc_deliver_v1">
+
+* When the {{ first_version }} is ready, do a release on GitHub. Remember to upload the jar file as well.
+* Wrap up the milestone on GitHub.
+
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_v12">{{ icon_team }} Wrap up milestone</span>
@@ -501,12 +575,12 @@ How is that better?
 
 </span>
 {#====================================================================================================================#}
-<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo</span>
+<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ first_version }}</span>
 <span id="desc_do_an_informal_demo">
 
 <div id="demo">
 
-* **Do an informal demo** of the new features during the tutorial. ==To save time, we recommend that one member demos all new features, using the commit tagged as `v1.2` in the `master` branch== %%i.e. only features included in the current release should be demoed%%.
+* **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the commit tagged as `v1.2` in the `master` branch %%i.e. only features included in the current release should be demoed%%.
 </div>
 </span>
 {#====================================================================================================================#}
@@ -522,9 +596,9 @@ Furthermore, the next iteration will be shorter than usual and there'll be a lot
 As you did in the previous iteration,
 * **Plan the next iteration** (steps are given below as a reminder):
   * {{ icon_team }} Decide which enhancements will be added to the product in this iteration, assuming this is the last iteration
-  * {{ icon_team }} Divide the work among team members
-  * {{ icon_individual }} Reflect the above plan in the issue tracker
-  * {{ icon_individual }} Split your work into at least two increments
+  * {{ icon_team }} Divide the work among team members.
+  * {{ icon_individual }} Reflect the above plan in the issue tracker.
+  * {{ icon_individual }} Split your work into at least two increments.
 * **Start implementing** the features as per the plan made above.
 * **Track the progress** using GitHub issue tracker, milestones, labels, etc.
 
@@ -532,6 +606,24 @@ In addition,
 * **Maintain the defensiveness of the code**: Remember to use assertions, exceptions, and logging in your code, as well as other defensive programming measures when appropriate.<br>
   {{ icon_important_big_red }} Remember to [enable assertions in your IDEA run configurations](https://se-education.org/guides/tutorials/intellijUsefulSettings.html) and [in the gradle file](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).
 * {{ icon_tip }} Recommend: **Each PR should also update the relevant parts of documentation and tests**. That way, your documentation/testing work will not pile up towards the end.
+</span>
+{#====================================================================================================================#}
+<span id="heading_make_code_more_defensive">{{ icon_individual }} Make the code more defensive</span>
+<span id="desc_make_code_more_defensive">
+
+* **Improve the defensiveness of the code**: We recommend you add assertions, exceptions, and logging to your code.<br>
+  {{ icon_important_big_red }} Remember to enable assertions in your,
+  * [IDEA run configurations](https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea) -- if your Intellij is set not to use Gradle when running the project)
+  * [the `build.gradle` file](https://stackoverflow.com/questions/48396274/how-to-enable-assertions-in-the-gradle-run-task) -- if you use Gradle to run the project, or if your Intellij is using Gradle to run the project
+</span>
+{#====================================================================================================================#}
+<span id="heading_start_v2">{{ icon_individual }} Start implementing v2.0</span>
+<span id="desc_start_v2">
+
+# Replace this?
+
+* **Revise your v2.0 plan** if necessary, based on your experience from v1.0. At this stage, don't allocate any features to v2.1. Let's keep that as a buffer, in case you were not able to finish v2.0 in time.
+* **Start evolving v1.0 towards v2.0**, moving the product forward in small steps from one working version to another, while working in parallel.
 </span>
 {#====================================================================================================================#}
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update DG with design details</span>
@@ -551,15 +643,6 @@ In addition,
     * How the feature is implemented (or is going to be implemented).
     * Why it is implemented that way.
     * Alternatives considered.
-  * **Diagramming tools**:
-    * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).<br>
-    * You may use any other tool too (e.g., PowerPoint) too. But if you do, note the following:<br>
-      ==Choose a diagramming tool that allows incremental updates== to diagrams %%(reason: because diagrams need to be updated multiple times as the product evolves)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams in future.
-
-    * {{ icon_info }} Can IDE-generated UML diagrams be used in project submissions? Not a good idea. Given are three reasons each of which can be reported by evaluators as 'bugs' in your diagrams, costing you marks:
-      * They often don't follow the standard UML notation (e.g., they add extra icons).
-      * They tend to include _every_ little detail whereas we want to limit UML diagrams to important details only, to improve readability.
-      * Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code. e.g., differentiating between multiplicities `0..1` vs `1`, composition vs aggregation
 <div class="indented-level2">
 
 <panel type="success" expanded>
@@ -605,19 +688,42 @@ In addition,
 </span>
 {#====================================================================================================================#}
 <span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>
-<span id="desc_update_user_docs">
+<div id="desc_update_user_docs">
 
 * {{ icon_important_big_red }} {{ penultimate_version }} user guide should be updated to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
-  * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in {{ future_version }}`%%.
+  * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
+
+<div tags="m--cs2103">
 
 * **Landing page (`docs/index.md`)**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.
 
 <modal large header="Admin → Project Deliverables → Website" id="modal:v13-tipsForProductScreenshot">
   <include src="tp-deliverables-website.mbdf#tips-for-product-screenshot"/>
 </modal>
+</div>
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
+
+</div>
+{#====================================================================================================================#}
+<span id="heading_add_sd_to_dg">{{ icon_individual }} Add sequence diagrams to the developer guide</span>
+<span id="desc_add_sd_to_dg">
+
+* Add sequence diagrams to enhance your DG wherever they can be useful. Note that diagrams you add in this week will receive feedback while diagrams added later will not.
 </span>
 {#====================================================================================================================#}
+<span id="heading_deliver_v2">{{ icon_individual }} Deliver {{ penultimate_version }}</span>
+<span id="desc_deliver_v2">
+* As before, do a release on GitHub and upload the {{ penultimate_version }} jar file. <span class="text-danger">Do this before the deadline as PE testers will start downloading jar files ahead of time.</span>
+* ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
+
+{{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Contstraints → Constraint-Java-Version", "2", indent="2") }}
+
+* Wrap up the milestone on GitHub.
+</span>
+{#====================================================================================================================#}
+
 <span id="heading_release_as_a_jar_file">{{ icon_team }} Release as a jar file</span>
 <span id="desc_release_as_a_jar_file">
 
@@ -660,7 +766,7 @@ In addition,
 <span id="desc_draft_the_ppp">
 
 * **Create the first version of your _Project Portfolio Page (PPP)_**.<br>
-  Reason: ==Each member needs to create a PPP== to describe your contribution to the project. Creating a PPP takes a significant effort; it is ==too risky to leave it to the last week of the project==. 
+  Reason: ==Each member needs to create a PPP== to describe your contribution to the project.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="2") }}
 </span>
@@ -687,7 +793,7 @@ Not applicable this semester
 
 * {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct.
 
-{{ embed_topic("tp-tasks.mbdf#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-v1.3 → Making the Code RepoSense-Compatible", "1", indent="2") }}
+{{ embed_topic("tp-tasks.mbdf#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + final_version + " → Making the Code RepoSense-Compatible", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
 <span id="heading_do_final_tweaks">{{ icon_individual }} Do final tweaks to the feature</span>
@@ -699,7 +805,7 @@ Not applicable this semester
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
 <span id="desc_submit_final_deliverables">
 
-* **Deadline** for all {{ final_version }} submissions is Week 13 Monday 23.59 unless stated otherwise.<br>
+* **Deadline** for all {{ final_version }} submissions is **{{ date_final_submission | date(format_normal)}} 2359** unless stated otherwise.<br>
 * Submit to LumiNUS folder we have set up, not to your project space.<br>
   {{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.
 * {{ icon_important_big_red }} **Penalty for late submission:**<br>
@@ -733,7 +839,7 @@ Not applicable this semester
 
 * {{ icon_team }} **Product**:
   * Do a release on GitHub, tagged as `{{ final_version }}`.
-  * Upload the jar file to LumiNUS. <br>
+  * Upload the jar file to LumiNUS.<br>
     File name: `[team ID][product name].jar` %%e.g. [{{ module }}T-W09-1][ContactsPlus].jar%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
@@ -764,9 +870,16 @@ Not applicable this semester
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "3", indent="2") }}
 
 
-* {{ icon_team }} **Product Website**: Update (e.g., `README` page, `Ui.png`, `AboutUs`) on GitHub. Ensure the website is auto-published.
+* {{ icon_team }} **Product Website**: Update website (home page,<span tags="m--cs2103"> `Ui.png`,</span> `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "3", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_demo_video">{{ icon_team }} Submit demo video</span>
+<span id="desc_submit_demo_video">
+
+# Replace?
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_final_milesone">{{ icon_team }} Wrap up the milestone</span>

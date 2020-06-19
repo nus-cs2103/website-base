@@ -58,7 +58,7 @@ These are considered _functionality bugs_:<br>
 <include src="tp-grading-bugs.mbdf#ugBugs" />
 </panel>
 
-<span id="architectureDiagramBugs">
+<span tags="m--cs2103" id="architectureDiagramBugs">
 
 :fas-bug: Architecture:
 * Symbols used are not intuitive
@@ -87,7 +87,7 @@ These are considered _functionality bugs_:<br>
 * Benefit does not match the function
 * Important user stories missing
 </span>
-<span id="useCaseBugs">
+<span tags="m--cs2103" id="useCaseBugs">
 
 :fas-bug: Problems in Use Cases. Examples:
 * Incorrect step numbering
