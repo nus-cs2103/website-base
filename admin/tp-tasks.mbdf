@@ -607,15 +607,6 @@ In addition,
   * [the `build.gradle` file](https://stackoverflow.com/questions/48396274/how-to-enable-assertions-in-the-gradle-run-task) -- if you use Gradle to run the project, or if your Intellij is using Gradle to run the project
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_v2">{{ icon_individual }} Start implementing v2.0</span>
-<span id="desc_start_v2">
-
-# Replace this?
-
-* **Revise your v2.0 plan** if necessary, based on your experience from v1.0. At this stage, don't allocate any features to v2.1. Let's keep that as a buffer, in case you were not able to finish v2.0 in time.
-* **Start evolving v1.0 towards v2.0**, moving the product forward in small steps from one working version to another, while working in parallel.
-</span>
-{#====================================================================================================================#}
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
 <span id="desc_update_dg_with_design_details">
 
@@ -864,13 +855,6 @@ Not applicable this semester
 * {{ icon_team }} **Product Website**: Update website (home page,<span tags="m--cs2103"> `Ui.png`,</span> `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "3", indent="2") }}
-</span>
-{#====================================================================================================================#}
-<span id="heading_submit_demo_video">{{ icon_team }} Submit demo video</span>
-<span id="desc_submit_demo_video">
-
-# Replace?
-
 </span>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_final_milesone">{{ icon_team }} Wrap up the milestone</span>
