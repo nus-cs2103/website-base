@@ -7,7 +7,7 @@
 **To receive full {{ marks_participation}} marks allocated for participation, meet the criteria {{ thumb("A", "info") }}, {{ thumb("B", "info") }}, and {{ thumb("C", "info") }}.**
 
 **{{ thumb("A", "info") }} Earned at least half of weekly participation points in at least 10 weeks.**
-<span tags="m--cs2103">
+<div tags="m--cs2103">
 
   * In-lecture quiz:
     * Answered at least 80% of the questions correctly: 2 points
@@ -17,9 +17,8 @@
     * Answered 60-80% questions correctly: 2 points
     * Answered 40-60% questions correctly: 1 point
   * Missing compulsory administrative requirements %%e.g., forgot to submit peer evaluations%%: -2 for each miss
-</span>
-
-<span tags="m--cs2113">
+</div>
+<div tags="m--cs2113">
 
   * Programming exercise (if any):
     * Submitted correct solutions at least 75% of the exercises: 3 points
@@ -30,7 +29,7 @@
     * Answered 50-74% questions correctly: 2 points
     * Answered less than 50% questions correctly but answered more than 50% of the questions: 1 point
   * Compulsory administrative tasks %%e.g., submitting peer evaluations%%: 2 for each task
-</span>
+</div>
 
 <div class="indented">
 

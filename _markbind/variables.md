@@ -144,3 +144,7 @@
 <variable name="marks_exam_essay">0</variable>
 <variable name="marks_exam_mcq">30</variable>
 <variable name="mcq_count">100</variable>
+
+<variable name="ug_pages_per_person">1</variable>
+<variable name="dg_pages_per_person">3</variable>
+<variable name="uml_diagrams_per_person">2 types of</variable>

@@ -8,6 +8,11 @@
 
 </box>
 
+<div tags="m--cs2113">
+
+* **Follow the [AddressBook-Level3 (AB3) UG]({{ ab3_website }}/UserGuide.html) structure**.
+</div>
+
 * The main content you add should be in the `docs/UserGuide.md` file (for ease of tracking by grading scripts).
 * **Should cover all {{ final_version }} features**.<br>
   **Ensure those descriptions match the product precisely**, as it will be used by peer testers (==inaccuracies will be considered bugs==).

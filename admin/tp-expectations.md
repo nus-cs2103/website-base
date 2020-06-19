@@ -12,9 +12,18 @@ The high-level learning outcome of the team project (tP):
 
 <box> {{ icon_outcome }} Can contribute production quality SE work to a small/medium software project </box>
 
+<div tags="m--cs2103">
+
 Accordingly, the tP is structured to resemble an intermediate stage of a non-trivial real-life brownfield software project in which you will,
  1. conceptualize and implement enhancements to a given product, and,
  1. have it ready to be continued by future developers
+</div>
+<div tags="m--cs2113">
+
+Accordingly, the tP is structured to resemble an early stage of a small software project in which you will,
+ 1. conceptualize and implement a product, and,
+ 1. have it ready to be continued by future developers
+</div>
 
 The focus of the tP is to learn the following aspects:
 * ~~coding~~
@@ -28,25 +37,25 @@ The focus of the tP is to learn the following aspects:
 
 ### <div class="text-white bg-dark p-1">Direction</div>
 
+<div tags="m--cs2103">
+
 The tP uses a generic application called [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) (from https://se-education.org) as the starting point.
 
 <img src="https://github.com/se-edu/addressbook-level3/raw/master/docs/images/Ui.png" width="600"/>
 <p/>
 
-This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, ==Command Line Interface (CLI) is the primary mode of input.== 
+</div>
+
+You may develop any product provided it is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, ==Command Line Interface (CLI) is the primary mode of input.==
 
 {{ embed_topic("tp-constraints.md#Constraint-Typing-Preferred", "Admin " + icon_embedding + " tP Contstraints → Constraint-Typing-Preferred", "2", indent="1") }}
 {{ embed_topic("tp-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Contstraints → Recommendation-CLI-First", "2", indent="1") }}
 <p/>
 
-* **Direction 1: Evolve** <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app.
-  * Some examples:
-    * Manage more entity types related to contacts %%e.g. Tasks allocated to contacts%%
-    * Contact managing optimized for a specific type of user %%e.g. a sales person managing client contacts%%
-  * {{ pros }} less changes to existing code at the start of the project (i.e., progress will be smoother at the start), can result in a more mature product with deeper features as the product functionality will be moving forward from the start
-  * {{ cons }} less flexibility in product design, less differentiation with other team's projects
-* **Direction 2: Morph** AB3 any direction you wish.
-  * For example, an app to manage one of these:
+<div id="examples" hidden>
+
+  For example, an app to manage one of these:{% if module == "CS2113" %}
+    * Contact details{% endif %}
     * Bookmarks of websites
     * Tasks/Schedule
     * Location info
@@ -54,13 +63,46 @@ This product is meant for users who can type fast, and prefer typing over mouse/
     * Forum posts, news feeds, Social media feeds
     * Online projects or issue trackers that the user is interested in
     * Emails, possibly from different accounts
-    * Multiple types of related things %%e.g. restaurants and reviews for those places%%
+    * Multiple types of related things %%e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
     * ...
-  * {{ pros }} more flexibility in the project direction, more room to differentiate from other teams' projects
-  * {{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base
+</div>
+
+<div tags="m--cs2103">
+
+* **Direction 1: Evolve** <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app.
+  * Some examples:
+    * Manage more entity types related to contacts %%e.g. Tasks allocated to contacts%%
+    * Contact managing optimized for a specific type of user %%e.g. a sales person managing client contacts%%
+
+<div class="indented-level2">
+
+* {{ pros }} less changes to existing code at the start of the project (i.e., progress will be smoother at the start), can result in a more mature product with deeper features as the product functionality will be moving forward from the start
+* {{ cons }} less flexibility in product design, less differentiation with other team's projects
+</div>
+
+* **Direction 2: Morph** AB3 any direction you wish.
+  * <include src="tp-expectations.md#examples" trim inline />
+
+<div class="indented-level2">
+
+* {{ pros }} more flexibility in the project direction, more room to differentiate from other teams' projects
+* {{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base
+</div>
 
 ==Weigh the pros/cons and choose the one that suits you.==
+</div>
+<div tags="m--cs2113">
+
+* <include src="tp-expectations.md#examples" trim inline />
+</div>
 </span>
+
+<div tags="m--cs2113">
+
+==You are strongly discouraged from developing a GUI application== as it can increase the workload unnecessarily.
+{{ embed_topic("tp-constraints.md#Recommendation-No-GUI", "Admin " + icon_embedding + " tP Contstraints → Recommendation-No-GUI", "2", indent="1") }}
+</div>
+
 
 ### <div class="text-white bg-dark p-1">Target User & Value Proposition</div>
 
@@ -91,6 +133,8 @@ You are expected to:
 
 ### <div class="text-white bg-danger p-1">Functionality Expectations</div>
 
+<div tags="m--cs2103">
+
 **The expected level of _functionality_ to be added by a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Some examples meeting that criterion:
 * Example 1: A fictional contact management app optimized for a specific target user group:
   * Existing AB3 features are optimized to the new target user group.
@@ -99,19 +143,30 @@ You are expected to:
 * Example 2: a FooBar app that keeps track of two different types of entities _Foo_ entities and _Bar_ entities.
   * Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.
   * In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a 4-5 FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.
+</div>
+<div tags="m--cs2113">
+
+**The expected level of _functionality_ from a team is roughly ==what you can achieve if each member contribute about the same amount of functional code as required by a <tooltip content="i.e., if all requirements were met at the _minimal_ level specified">typical iP</tooltip>==**.
+</div>
 
 ==You will get full marks for implementation effort== if you meet the expectation stated above. There are no extra marks for exceeding that bar. You are better off spending that effort in improving other aspects of the project.
 
-<box>
+<box tags="m--cs2103">
 
 {{ icon_tip }} If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
   * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)
   * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
 </box>
 
-<box type="important">
+<box type="important" light>
 
 One semester ago, we reduced the tP functionality expectations by about 40-50% compared to the previous semesters, in order to reduce your workload. Keep that in mind in case you receive advice about project from seniors who did this module more than one semester ago.
+
+<div tags="m--cs2113">
+
+In fact, here is the grading criterion for the individual project effort:
+{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Evaluating the  Implementation Effort==", "3") }}
+</div>
 </box>
 </span>
 <span id="teamExpectations">
@@ -135,9 +190,11 @@ One semester ago, we reduced the tP functionality expectations by about 40-50% c
 * <span class="badge badge-info">Expectation</span> <span class="text-info">**Contribute to the functional code of the product.**</span>
   * User-visible features are preferred, but it is not a strict requirement.:
   * **The enhancement(s) should fit with the rest of the software** (and the target user profile) and should have the consent of the team members. %%You will lose marks if you go 'rogue' and add things that don't fit with the product.%%
-  * Given below are some examples:
 
-<div class="indented-level4">
+<div tags="m--cs2103" class="indented-level4">
+
+Some examples:
+
 <panel type="seamless" header="Example enhancements" minimized >
 
   * Add a new feature %%e.g. add the ability to view statistics%%
@@ -152,17 +209,20 @@ One semester ago, we reduced the tP functionality expectations by about 40-50% c
 
 * **Tip: Do _all_ the work related to your enhancement yourself.** %%Reason:If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%
 
+<div tags="m--cs2103">
+
 * **Tip: Divide the components of the product among team members**. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
+</div>
 
 
 #### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Documentation</span>
 
 * **Objective:** showcase your ability to write both _user-facing documentation_ and _developer-facing documentation_.
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added.The minimum requirement is given below. %%(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)%%
-  * UG: at least 1 page
-  * DG: at least 3 pages
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added. The minimum requirement is given below. %%(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)%%
+  * UG: {{ dg_pages_per_person }} or more pages
+  * DG: {{ dg_pages_per_person }} or more pages
 * **Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements**, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations. 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Use at least 2 types of UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Use at least {{ uml_diagrams_per_person }} UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.
 
 #### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Testing</span>
 
@@ -198,10 +258,11 @@ _Team-tasks_ are the tasks that _someone_ in the team has to do. Marks allocated
 Here is a non-exhaustive list of team-tasks:
 
 1. Setting up the GitHub team org/repo
-1. Necessary general code enhancements e.g.,
+1. Necessary general code enhancements{% if module == "CS2103" %} e.g.,
    1. Work related to renaming the product
    1. Work related to changing the product icon
-   1. Morphing the product into a different product
+   1. Morphing the product into a different product{% endif %}
+1. Setting up tools e.g., GitHub, Gradle
 1. Maintaining the issue tracker
 1. Release management
 1. Updating user/developer docs that are not specific to a feature %%e.g. documenting the target user profile%%
@@ -233,7 +294,15 @@ This is a non-exhaustive list; you may define additional roles.
 * _Integration_: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.
 * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
 * _[Tool ABC] expert_: %%e.g. Intellij expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
+
+<div tags="m--cs2103">
+
 * _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in {{ penultimate_version }}-{{ final_version }}.
+</div>
+<div tags="m--cs2113">
+
+* _In charge of[Area XYZ]_ of the code: %%e.g. In charge of the code that deals with storage, etc.%% If you are in charge of an area, you are expected to know that area well, and review changes done to that code.
+</div>
 </panel><p/>
 
 {{ icon_tip }} Ensure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but **for each aspect there should be one person who is unequivocally the person responsible for it**. %%Reason: when _everyone is responsible for everything_, no one is.%%

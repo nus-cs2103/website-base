@@ -1,5 +1,14 @@
+When setting up your team repo, you would be configuring **the GitHub Pages feature to publish your documentation** as a website.
+
 #### <span class="badge badge-info">Website</span> <span class="text-info">Home page</span>
-  * ==Ensure the `Ui.png` matches the current product==
+
+* Update to match your product.
+
+
+#### <span class="badge badge-info">Website</span> <span class="text-info">`Ui.png`</span>
+
+* ==Ensure the `Ui.png` matches the current product==
+
 <div class="indented-level3" id="tips-for-product-screenshot">
 
 <box>
@@ -56,6 +65,11 @@ Reason: screenshot not cropped cleanly (contains extra background details)
 </div>
 
 #### <span class="badge badge-info">Website</span> <span class="text-info">AboutUs Page</span>
+
+<div tags="m--cs2113">
+
+==**This deliverable is optional.**==
+</div>
 
 * **Use a suitable profile photo.**
 <div id="profile-photo" class="indented-level2">
