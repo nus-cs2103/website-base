@@ -27,6 +27,8 @@ Create a personal GitHub account if you don't have one yet.
 
 </div>
 
+<!-- ==================================================================================================== -->
+
 ### <div class="text-white bg-dark p-1">Guidelines for Reviewing PRs</div>
 
 <div id="pr-review-guidelines">
@@ -34,6 +36,8 @@ Create a personal GitHub account if you don't have one yet.
 Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
 
 </div>
+
+<!-- ==================================================================================================== -->
 
 <div id="organization-setup">
 
@@ -57,6 +61,8 @@ After receiving your team ID, one team member should do the following steps:
 
 </div>
 
+<!-- ==================================================================================================== -->
+
 <div id="repo-setup">
 
 ### <div class="text-white bg-dark p-1">tP Team Repo Setup</div>
@@ -74,8 +80,6 @@ The tP project template given to you is a variation of the Duke repo you used fo
    * <span id="do-not-rename">{{ icon_important_big_red }} Please do not rename the fork %%Reason: our grading scripts rely on the repo name.%%</span>
 1. **Enable the issue tracker**.
 1. **Enable GitHub Actions**: Go to the {{ show_as_rounded_tab(':fas-play-circle: Actions') }} tab and enable workflows by clicking the {{ button('I understand my workflows ...', button_style="success") }} button. That will enable the GitHub Actions that come with the project template.
-1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
-   Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
 {% if module == "CS2103" %}
 1. **Set up the project website**<br>
    Follow instructions in the [_Documentation guide_ page]({{ ab3_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/tp` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/tp`.
@@ -84,6 +88,8 @@ The tP project template given to you is a variation of the Duke repo you used fo
    Remember to choose a theme too by clicking the {{ button('**Choose a theme**') }} button (that will create a commit in your repo that is needed in a later step.<br>
    After a few minutes, confirm your tP website is available in the corresponding `github.io` URL.
 {% endif %}
+1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
+   Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
 1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tp]({{module_org}}/tp)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ module }}-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
    **When filling the PR description**, ==fill the details exactly as specified in the text box== %%(Reason: The PR description is used by grading scripts)%%.
 
@@ -105,6 +111,8 @@ The tP project template given to you is a variation of the Duke repo you used fo
 </box>
 
 </div>
+
+<!-- ==================================================================================================== -->
 
 <div id="workflow">
 
@@ -135,11 +143,15 @@ The tP project template given to you is a variation of the Duke repo you used fo
 * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
   * Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html).<br>
     {{ icon_pro_tip }} `LGTM` is common abbreviation you can use in the review comments to mean `Looks Good To Merge`.
+* **Go breadth-first iterative:** As you are expected to follow breadth-first iterative approach, almost ==all code additions to the `master` branch should take the product from a working version to a slightly better working version==.
+  * {{ bad }} Let's add all data classes first %%reason: this is the depth-first approach%%
+  * {{ bad }} Let's finish the part of the code that saves and loads data first %%reason: this is the depth-first approach%%
+  * {{ good }} Let's add code to support simple todo tasks first (i.e., read, delete, save, load)
 * **Do not merge PRs failing <tooltip content="Continuous Integration e.g., GitHub Actions">CI</tooltip>.** The CI status of a PR is reported at the bottom of the {{ show_as_rounded_tab(":octicon-comment-discussion: conversation")}} tab of the PR page. Here's an example:<br>
   ![](images/gitHubPrStatus.png)
   * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.<br>
   {{ icon_pro_tip }} You can use GitHub's [_protected branches_](https://help.github.com/en/articles/about-protected-branches) feature to prevent CI-failing PRs from being merged.
-* After merging a PR, close the corresponding issue.<br>
+* **After merging a PR**, close the corresponding issue.<br>
   {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
 {% if module == "CS2113" %}
 * **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
@@ -169,6 +181,8 @@ The tP project template given to you is a variation of the Duke repo you used fo
 
 
 </div>
+
+<!-- ==================================================================================================== -->
 
 <div id="issue-tracker-setup">
 
@@ -225,6 +239,8 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking _all_ noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current status of the project. You can also use GitHub's [Projects feature](https://www.youtube.com/watch?v=C6MGKHkNtxU) to manage the project, but keep it linked to the issue tracker as much as you can.
 
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
 #### Using Issues:
 
 * **Record each of the user stories you plan to deliver as an issue in the issue tracker.** e.g.,
@@ -252,6 +268,8 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
     * Omit redundant details. In some cases, the issue title is enough to describe the task. In that case, no need to repeat it in the issue description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough. Similarly, labels such as `priority` can be omitted if you think they don't help you.<br><br>
 
 * **Assign tasks (i.e., issues) to the corresponding team members using the `assignees` field.** ==Normally, there should be some ongoing tasks and some pending tasks against each team member at any point==.
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
 
 <div id="using-milestones">
 

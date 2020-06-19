@@ -220,7 +220,7 @@ Given below are some guidance on the recommended progress at this point of the p
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_prioritize_user_stories">{{ icon_team }} Prioritize the user stories</span>
+<span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ first_version }}</span>
 <span id="desc_prioritize_user_stories">
 
 **The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as v1.0. We try to make it small because you will have only two weeks to implement v1.0 and coding as a team is a lot harder than writing code alone.
@@ -430,6 +430,7 @@ How is that better?
 
 * {{ icon_team }} **Plan the next iteration**. As per the project planning approach described in the box above, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ first_version }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
   * ==Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)== even if the functionalities are not polished (polishing can be done in a later iteration).
+  * If possible, break the iteration into two increments i.e., aim to produce an even simpler but working version after one week.
   * "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet i.e., go _breadth-first iterative_ not _depth-first iterative_.
 * {{ icon_team }} **Divide the work** (i.e., the work required to produce that version) among the team members.
@@ -458,17 +459,7 @@ How is that better?
 </box>
 </div>
 
-* Start implementing v1.0, by adding code in small steps, while working in parallel.
-
-* As you are expected to follow breadth-first iterative approach, almost ==all code additions to the `master` branch should take the product from a working version to a slightly better working version==.
-  * {{ bad }} Let's add all data classes first %%reason: this is the depth-first approach%%
-  * {{ bad }} Let's finish the part of the code that saves and loads data first %%reason: this is the depth-first approach%%
-  * {{ good }} Let's add code to support simple todo tasks first (i.e., read, delete, save, load)
-
-* Recommended approach for planning the next week of the tP:
-  * First, decide how the product will look in one week. It can be really simple, but should be functional.
-  * Then, decide what implementation work needs to be done to get there.
-  * Divide up that work among yourselves and start doing those work items using the forking workflow.
+* Start implementing {{ first_version }}, by adding code in small steps, while working in parallel, aiming to produce a VERY simple working version after one week, and a bit more functional version at the end of iteration (i.e., after two weeks).
 
 * See the panel below for our recommendations on the project workflow.
 
@@ -523,13 +514,12 @@ How is that better?
 
 </span>
 {#====================================================================================================================#}
-<span id="heading_add_another_increment_to_your_feature">{{ icon_individual }} Add another increment to your feature</span>
+<span id="heading_add_another_increment_to_your_feature">{{ icon_individual }} Add the first functionality increment</span>
 <span id="desc_add_another_increment_to_your_feature">
 
-* Add an increment to your feature, aiming to deliver a ==user-visible== version of your feature by v1.2 %%i.e., simpler than the feature intended for {{ final_version }}, but still usable by the user%%.
+* Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ first_version }} at the end of this iteration (i.e., in two weeks).
 
-* {{ icon_important_big_red }} **From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ penultimate_version }}, {{ final_version }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
- If an enhancement is too big to complete in one milestone, try to deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first.
+* {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ penultimate_version }}, {{ final_version }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
 </span>
 {#====================================================================================================================#}
 <span id="heading_add_junit_tests">{{ icon_individual }} Add some JUnit Tests</span>
@@ -595,12 +585,12 @@ Furthermore, the next iteration will be shorter than usual and there'll be a lot
 </box>
 As you did in the previous iteration,
 * **Plan the next iteration** (steps are given below as a reminder):
-  * {{ icon_team }} Decide which enhancements will be added to the product in this iteration, assuming this is the last iteration
+  * {{ icon_team }} Decide which enhancements will be added to the product in this iteration, assuming this is the last iteration.
+  * {{ icon_team }} If possible, split that into two incremental versions.
   * {{ icon_team }} Divide the work among team members.
   * {{ icon_individual }} Reflect the above plan in the issue tracker.
-  * {{ icon_individual }} Split your work into at least two increments.
-* **Start implementing** the features as per the plan made above.
-* **Track the progress** using GitHub issue tracker, milestones, labels, etc.
+* {{ icon_individual }} **Start implementing** the features as per the plan made above.
+* {{ icon_team }} **Track the progress** using GitHub issue tracker, milestones, labels, etc.
 
 In addition,
 * **Maintain the defensiveness of the code**: Remember to use assertions, exceptions, and logging in your code, as well as other defensive programming measures when appropriate.<br>
@@ -626,7 +616,7 @@ In addition,
 * **Start evolving v1.0 towards v2.0**, moving the product forward in small steps from one working version to another, while working in parallel.
 </span>
 {#====================================================================================================================#}
-<span id="heading_update_dg_with_design_details">{{ icon_individual }} Update DG with design details</span>
+<span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
 <span id="desc_update_dg_with_design_details">
 
 <div class="indented">
@@ -638,7 +628,8 @@ In addition,
 
 * **Update the Developer Guide** as follows:
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
-    Expected length: 1+ page per person
+    Expected length: 1+ page per person{% if module == "CS2113" %}
+  * Describing the design at a multiple-levels (e.g., first, describe at _architecture-level_, then describe at _component-level_) is optional. It is also acceptable to have one _Design & Implementation_ section in which you describe the entire thing at the class- and object-level.{% endif %}
   * The description can contain things such as,
     * How the feature is implemented (or is going to be implemented).
     * Why it is implemented that way.
@@ -659,7 +650,7 @@ In addition,
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_do_a_release">{{ icon_team }} Do a release</span>
+<span id="heading_do_a_release">{{ icon_team }} Do a dry run of a release</span>
 <span id="desc_do_a_release">
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ penultimate_version }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
@@ -681,7 +672,7 @@ In addition,
 </span>
 </span>
 {#====================================================================================================================#}
-<span id="heading_deliver_the_feature">{{ icon_individual }} Deliver the feature</span>
+<span id="heading_deliver_the_feature">{{ icon_individual }} Deliver {{ penultimate_version }}</span>
 <span id="desc_deliver_the_feature">
 
 * Deliver the featured that you planned for {{ penultimate_version }}.
