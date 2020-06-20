@@ -8,38 +8,8 @@ pageNav: 1
 
 {% import "common/topics.njk" as topics with context %}
 {% from "admin/admin-tasks.mbdf" import show_weekly_admin_tasks with context %}
+{% from "common/macros.njk" import get_week_start_date with context %}
 
-<!--
-    {num: "1", day:"Aug 12"},
-    {num: "2", day:"Aug 19"},
-    {num: "3", day:"Aug 26"},
-    {num: "4", day:"Sep 2"},
-    {num: "5", day: "Sep 9" },
-    {num: "6", day: "Sep 16" },
-    {num: "7", day: "Sep 30" },
-    {num: "8", day: "Oct 7" },
-    {num: "9", day: "Oct 14" },
-    {num: "10", day: "Oct 21" },
-    {num: "11", day: "Oct 28" },
-    {num: "12", day: "Nov 4" },
-    {num: "13", day: "Nov 11" }
--->
-
-{% set weeks = [
-    {num: "1", day:"Jan 13"},
-    {num: "2", day:"Jan 20"},
-    {num: "3", day:"Jan 27"},
-    {num: "4", day:"Feb 3"},
-    {num: "5", day: "Feb 10" },
-    {num: "6", day: "Feb 17" },
-    {num: "7", day: "Mar 2" },
-    {num: "8", day: "Mar 9" },
-    {num: "9", day: "Mar 16" },
-    {num: "10", day: "Mar 23" },
-    {num: "11", day: "Mar 30" },
-    {num: "12", day: "Apr 6" },
-    {num: "13", day: "Apr 13" }
-] %}
 
 {#
 -1: site not ready, lands in the module intro page
@@ -529,7 +499,6 @@ pageNav: 1
 
 {% macro show_week_pagetop(week_num, category) %}
 
-{% set week = weeks[week_num - 1] %}
 
 {% set categories = {
   notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
@@ -540,7 +509,7 @@ pageNav: 1
 } %}
 
 <frontmatter>
-title: "Week {{ week.num }} - {{ categories[category].name }}"
+title: "Week {{ week_num }} - {{ categories[category].name }}"
 header: header.md
 footer: footer.md
 head: scheduleHead.md
@@ -564,7 +533,7 @@ pageNav: {{ categories[category].pagenav }}
 
 <p/>
 
-# Week {{ week.num }} <small><small>%%[{{ week.day }}]%% - {{ categories[category].name }}</small></small>
+# Week {{ week_num }} <small><small>%%[{{ get_week_start_date(week_num | int, format_normal) }}]%% - {{ categories[category].name }}</small></small>
 
 {% endmacro %}
 

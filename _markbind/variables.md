@@ -14,6 +14,7 @@
 <span id="pr_review_mapping">https://docs.google.com/spreadsheets/d/e/2PACX-1vRWi6lYGxlvJF-O--ndWa5PU7LKREcoKLAUJ8QRNtBy-9TYkg2MnNPy_KrdO7zH9fbaVZ455nDnNpPd/pubhtml?gid=0&single=true</span>
 <span id="files_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
 <span id="announcements_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
+<span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
 <span id="first_version">v1.2</span>
 <span id="penultimate_version">v1.3</span>
 <span id="final_version">v1.4</span>
@@ -23,7 +24,7 @@
 <variable name="date_first_lecture">2020-08-14</variable>
 <variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
 <variable name="date_final_submission">2020-11-09</variable>
-<variable name="format_normal">dddd, MMM Do</variable>
+<variable name="format_normal">ddd, MMM Do</variable>
 
 <variable name="marks_ip">20</variable>
 <variable name="marks_tp">45</variable>
@@ -60,7 +61,6 @@
 <span id="forum_link">{{ module_org | safe }}/forum/issues</span>
 <span id="admin_link"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span>
 <span id="schedule_link"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></span>
-<span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
 <span id="ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</span>
 <span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard</span>
 

@@ -1,4 +1,6 @@
-{% from "schedule/index.md" import weeks, current_week with context %}
+{% from "schedule/index.md" import current_week with context %}
+{% from "common/macros.njk" import get_week_start_date with context %}
+
 <header class="header-fixed">
 {% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is not ready yet! The updated version will be available soon.**</md></div >
@@ -9,8 +11,8 @@
 <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-{{ module_color }}">{{ module_pair }} <small>{{ period }}</small></span></a>
   <dropdown header="**Schedule**" class="nav-link">
   <li><a href="{{baseUrl}}/schedule/timeline.html" class="dropdown-item"><md>**Full Timeline**</md></a></li>
-{% for week in weeks %}
-<li><a href="{{ baseUrl }}/schedule/week{{ week.num }}/index.html" class="dropdown-item"> <md>**Week {{ week.num }}** [{{ week.day }}] {% if current_week == week.num %} :fas-arrow-circle-left:{% endif %}</md></a></li>
+{% for week in range(1, 14) %}
+<li><a href="{{ baseUrl }}/schedule/week{{ week }}/index.html" class="dropdown-item"> <md>**Week {{ week }}** [{{ get_week_start_date(week | int, format_normal) }}] {% if current_week == week.num %} :fas-arrow-circle-left:{% endif %}</md></a></li>
 {% endfor %}
   </dropdown>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>

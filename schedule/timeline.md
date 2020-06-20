@@ -7,7 +7,8 @@ pageNav: 3
 </frontmatter>
 
 {% import "common/topics.njk" as topics with context %}
-{% from "schedule/index.md" import all_topics, weeks with context %}
+{% from "common/macros.njk" import get_week_start_date with context %}
+{% from "schedule/index.md" import all_topics with context %}
 
 <div class="website-content">
 
@@ -25,9 +26,10 @@ pageNav: 3
 
 {% macro show_link(week_num, icon, page) -%}<small><small><a href="week{{ week_num }}/{{ page }}" class="badge badge-light mr-1">%%{{ icon }}%%</a></small></small>{%- endmacro %}
 
-{% for week_num in range(1, 14) %}
 
-### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ weeks[week_num-1].day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_project, "project.html") }}{{ show_link(week_num, icon_tutorial, "tutorial.html") }}{{ show_link(week_num, icon_info, "admin.html") }}
+{% for week_num in range(1, 14) %}
+{% set start_day = get_week_start_date(week_num, format_normal) %}
+### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ start_day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_project, "project.html") }}{{ show_link(week_num, icon_tutorial, "tutorial.html") }}{{ show_link(week_num, icon_info, "admin.html") }}
 
 <include src="week{{ week_num }}/index.md#summary" optional />
 {% endfor %}
