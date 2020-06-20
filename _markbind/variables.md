@@ -1,15 +1,50 @@
+<!-- ===========================  primary module configuration ============================================= -->
+
 <span id="module">CS2103</span>
-
 <span id="module_pair">CS2103/T</span>
-
 <span id="module_name">Software Engineering</span>
+<span id="module_color">success</span>
 
 <span id="S">2</span>
-<span id="semester">AY1920S{{ S }}</span>
+<span id="semester">AY2021S{{ S }}</span>
+<span id="period">2020 Aug-Dec</span>
 
-<span id="period">2020 Jan-Apr</span>
+<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</span>
+<span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true</span>
+<span id="pr_review_mapping">https://docs.google.com/spreadsheets/d/e/2PACX-1vRWi6lYGxlvJF-O--ndWa5PU7LKREcoKLAUJ8QRNtBy-9TYkg2MnNPy_KrdO7zH9fbaVZ455nDnNpPd/pubhtml?gid=0&single=true</span>
+<span id="files_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
+<span id="announcements_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
+<span id="first_version">v1.2</span>
+<span id="penultimate_version">v1.3</span>
+<span id="final_version">v1.4</span>
+<span id="future_version">v2.0</span>
 
-<span id="module_color">success</span>
+<variable name="date_semester_start">2020-08-10</variable>
+<variable name="date_first_lecture">2020-08-14</variable>
+<variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
+<variable name="date_final_submission">2020-11-09</variable>
+<variable name="format_normal">dddd, MMM Do</variable>
+
+<variable name="marks_ip">20</variable>
+<variable name="marks_tp">45</variable>
+<variable name="marks_tp_design">5</variable>
+<variable name="marks_tp_documentation">10</variable>
+<variable name="marks_tp_implementation">10</variable>
+<variable name="marks_tp_pm">10</variable>
+<variable name="marks_tp_pm_individual">5</variable>
+<variable name="marks_tp_pm_team">5</variable>
+<variable name="marks_tp_qa">10</variable>
+<variable name="marks_participation">5</variable>
+<variable name="marks_exam">30</variable>
+<variable name="marks_exam_essay">0</variable>
+<variable name="marks_exam_mcq">30</variable>
+<variable name="mcq_count">100</variable>
+
+<variable name="ug_pages_per_person">1</variable>
+<variable name="dg_pages_per_person">3</variable>
+<variable name="uml_diagrams_per_person">2 types of</variable>
+
+<!-- ===========================  secondary module configuration =========================================== -->
 
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 
@@ -17,46 +52,19 @@
 <span name="MT"><span class="badge badge-warning">{{ module }}T</span></span>
 
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
-
 <span id="module_gh_pages">https://nus-{{ module | lower }}-{{ semester }}.github.io</span>
-
 <span id="module_website">{{ module_gh_pages }}/website</span>
-
 <span id="ab3_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</span>
-
-<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQt_VkIgajiPIkdLzgqLTBkYf6UoYhAEMkgDns7S3eWfsx7x2EsI0wix6RLHooaYbETWkTuGnqGP-5s/pub?embedded=true</span>
-
-<span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true</span>
-
-<span id="participation_marks_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml</span>
-
-<span id="files_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
-
-<span id="announcements_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
-
+<span id="participation_marks_page">www.comp.nus.edu.sg/~cs2103</span>
 <span id="bugs_link">{{ module_org | safe }}/forum/issues</span>
-
 <span id="forum_link">{{ module_org | safe }}/forum/issues</span>
-
 <span id="admin_link"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span>
-
 <span id="schedule_link"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></span>
-
 <span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
-
 <span id="ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</span>
 <span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard</span>
 
-<span id="first_version">v1.2</span>
-<span id="penultimate_version">v1.3</span>
-<span id="final_version">v1.4</span>
-<span id="future_version">v2.0</span>
-
-<span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
-
-<span id="dashed_line"><hr style="border-top: dashed 1px; border-color:grey" /></span>
-
-<span id="dotted_line"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></span>
+<!-- ===========================  icons ================================================= -->
 
 <span id="icon_announcement"><md>:fas-bell:</md></span>
 <span id="icon_book"><md>:fas-book:</md></span>
@@ -104,57 +112,24 @@
 <span id="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></span>
 <variable name="pros"><span class="text-success">**pros:**</span></variable>
 <variable name="cons"><span class="text-danger">**cons:**</span></variable>
-
 <span id="icon_repo"><md>:fas-code-branch:</md></span>
 
-
-<span id="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></span>
-
 <span id="s"><md>:glyphicon-star:</md></span>
-
 <span id="star"><span class='glyphicon glyphicon-star' aria-hidden='true'></span></span>
-
 <span id="one_star"><span class='badge badge-pill badge-light text-danger'>{{ star | safe }} </span></span>
-
 <span id="prereq_no_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }}</span></span>
-
 <span id="prereq_one_star"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }} </span></span>
-
 <span id="two_stars"><span class='badge badge-pill badge-light text-warning'>{{ star | safe }}{{ star | safe }} </span></span>
-
 <span id="prereq_two_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }} </span></span>
-
 <span id="three_stars"><span class='badge badge-pill badge-light text-primary'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
-
 <span id="prereq_three_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
-
 <span id="four_stars"><span class='badge badge-pill badge-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}: OPTIONAL</span></span>
-
 <span id="prereq_four_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
-
 <span id="hr_double"><hr style="border-top: 3px double #c5c5c5;"></span>
 
-<variable name="date_semester_start">2020-08-10</variable>
-<variable name="date_first_lecture">2020-08-14</variable>
-<variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
-<variable name="date_final_submission">2020-11-09</variable>
-<variable name="format_normal">dddd, MMM Do</variable>
+<!-- ===========================  misc aliases =========================================== -->
 
-<variable name="marks_ip">20</variable>
-<variable name="marks_tp">45</variable>
-<variable name="marks_tp_design">5</variable>
-<variable name="marks_tp_documentation">10</variable>
-<variable name="marks_tp_implementation">10</variable>
-<variable name="marks_tp_pm">10</variable>
-<variable name="marks_tp_pm_individual">5</variable>
-<variable name="marks_tp_pm_team">5</variable>
-<variable name="marks_tp_qa">10</variable>
-<variable name="marks_participation">5</variable>
-<variable name="marks_exam">30</variable>
-<variable name="marks_exam_essay">0</variable>
-<variable name="marks_exam_mcq">30</variable>
-<variable name="mcq_count">100</variable>
-
-<variable name="ug_pages_per_person">1</variable>
-<variable name="dg_pages_per_person">3</variable>
-<variable name="uml_diagrams_per_person">2 types of</variable>
+<span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
+<span id="dashed_line"><hr style="border-top: dashed 1px; border-color:grey" /></span>
+<span id="dotted_line"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></span>
+<span id="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></span>
