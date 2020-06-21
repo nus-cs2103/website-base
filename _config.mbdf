@@ -1,5 +1,7 @@
 {% set m = "cs2103" %}
 
+{% from "_module-" + m + "/textbookTopics.mbdf" import textbook_topics as _textbook_topics %}
+{% set textbook_topics = _textbook_topics %}
 {% from "_module-" + m + "/weeklyTextbookTopics.mbdf" import weekly_textbook_topics as _weekly_textbook_topics %}
 {% set weekly_textbook_topics = _weekly_textbook_topics %}
 {% from "_module-" + m + "/weeklyAdminTasks.mbdf" import weekly_admin_tasks as _weekly_admin_tasks %}
