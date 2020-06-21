@@ -4,3 +4,5 @@
 {% set weekly_textbook_topics = _weekly_textbook_topics %}
 {% from "_module-" + m + "/weeklyAdminTasks.md" import weekly_admin_tasks as _weekly_admin_tasks %}
 {% set weekly_admin_tasks = _weekly_admin_tasks %}
+{% from "_module-" + m + "/weeklyAdminTopics.md" import weekly_admin_topics as _weekly_admin_topics %}
+{% set weekly_admin_topics = _weekly_admin_topics %}
