@@ -8,3 +8,5 @@
 {% set weekly_admin_topics = _weekly_admin_topics %}
 {% from "_module-" + m + "/weeklyIpTasks.md" import weekly_ip_tasks as _weekly_ip_tasks %}
 {% set weekly_ip_tasks = _weekly_ip_tasks %}
+{% from "_module-" + m + "/weeklyTpTasks.md" import weekly_tp_tasks as _weekly_tp_tasks %}
+{% set weekly_tp_tasks = _weekly_tp_tasks %}
