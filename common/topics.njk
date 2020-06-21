@@ -49,12 +49,12 @@
 {%- macro make_anchor(text) %}{{ text | trim | replace(".", "-") }}{% endmacro -%}
 {%- macro slugify(text) %}{{ text | replace(' ', '-') | replace(':', '')  | replace('/', '-') | replace(',', '')  | replace("'", "") }}{% endmacro -%}
 {%- macro commentary(span_id) %}
-<include src="commentary.mbdf#{{ span_id }}" optional />
+<include src="commentary-{{ module | lower }}.mbdf#{{ span_id }}" optional />
 {% endmacro -%}
 {%- macro followup(span_id) %}
 <p/>
 <div class="indented">
-<include src="commentary.mbdf#followup-{{ span_id }}" optional />
+<include src="commentary-{{ module | lower }}.mbdf#followup-{{ span_id }}" optional />
 </div>
 {% endmacro -%}
 
