@@ -1,4 +1,5 @@
 {% from "common/macros.njk" import show_stars with context %}
+{% from "_config.mbdf" import weekly_tp_themes with context %}
 
 {% macro show_admin_pagetop_for_topic(topics, topic) %}
 <frontmatter>
@@ -98,17 +99,17 @@ pageNav: 4
     {level: 2, id: "tp-expectations", title: "tP (team project): Expectations", link: "tp-expectations.html", priority: 2},
     {level: 2, id: "tp-constraints", title: "tP: Constraints", link: "tp-constraints.html", priority: 2},
     {level: 2, id: "tp-teams", title: "tP: Forming Teams", link: "tp-teams.html", priority: 2},
-    {level: 2, id: "tp-w3", title: "tP: Kickoff [week 3]", link: "tp-w3.html", priority: 2},
-    {level: 2, id: "tp-w4", title: "tP: Inception [week 4]", link: "tp-w4.html", priority: 3},
-    {level: 2, id: "tp-w5", title: "tP: v1.0 [week 5]", link: "tp-w5.html", priority: 2},
-    {level: 2, id: "tp-w6", title: "tP: mid-v1.1 [week 6]", link: "tp-w6.html", priority: 2},
-    {level: 2, id: "tp-w7", title: "tP: v1.1 [week 7]", link: "tp-w7.html", priority: 2},
-    {level: 2, id: "tp-w8", title: "tP: mid-v1.2 [week 8]", link: "tp-w8.html", priority: 3},
-    {level: 2, id: "tp-w9", title: "tP: v1.2 [week 9]", link: "tp-w9.html", priority: 2},
-    {level: 2, id: "tp-w10", title: "tP: mid-" + penultimate_version + " [week 10]", link: "tp-w10.html", priority: 2},
-    {level: 2, id: "tp-w11", title: "tP: " + penultimate_version + " [week 11]", link: "tp-w11.html", priority: 2},
-    {level: 2, id: "tp-w12", title: "tP: mid-" + final_version + " [week 12]", link: "tp-w12.html", priority: 3},
-    {level: 2, id: "tp-w13", title: "tP: " + final_version + " [week 13]", link: "tp-w13.html", priority: 2},
+    {level: 2, id: "tp-w3", title: weekly_tp_themes.w3, link: "tp-w3.html", priority: 2},
+    {level: 2, id: "tp-w4", title: weekly_tp_themes.w4, link: "tp-w4.html", priority: 3},
+    {level: 2, id: "tp-w5", title: weekly_tp_themes.w5, link: "tp-w5.html", priority: 2},
+    {level: 2, id: "tp-w6", title: weekly_tp_themes.w6, link: "tp-w6.html", priority: 2},
+    {level: 2, id: "tp-w7", title: weekly_tp_themes.w7, link: "tp-w7.html", priority: 2},
+    {level: 2, id: "tp-w8", title: weekly_tp_themes.w8, link: "tp-w8.html", priority: 3},
+    {level: 2, id: "tp-w9", title: weekly_tp_themes.w9, link: "tp-w9.html", priority: 2},
+    {level: 2, id: "tp-w10", title: weekly_tp_themes.w10, link: "tp-w10.html", priority: 2},
+    {level: 2, id: "tp-w11", title: weekly_tp_themes.w11, link: "tp-w11.html", priority: 2},
+    {level: 2, id: "tp-w12", title: weekly_tp_themes.w12, link: "tp-w12.html", priority: 3},
+    {level: 2, id: "tp-w13", title: weekly_tp_themes.w13, link: "tp-w13.html", priority: 2},
     {level: 2, id: "tp-deliverables", title: "tP: Deliverables", link: "tp-deliverables.html", priority: 2},
     {level: 2, id: "tp-grading", title: "tP: Grading", link: "tp-grading.html", priority: 2},
     {level: 2, id: "tp-supervision", title: "tP: Supervision", link: "tp-supervision.html", priority: 2},

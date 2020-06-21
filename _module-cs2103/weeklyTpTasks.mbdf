@@ -66,3 +66,17 @@ week13: [
   {id: 'attend_the_PE', deadline: 'during the lecture'}
 ]
 } %}
+
+{% set weekly_tp_themes = {
+  w3: "tP: Kickoff [week 3]",
+  w4: "tP: Inception [week 4]",
+  w5: "tP: v1.0 [week 5]",
+  w6: "tP: mid-v1.1 [week 6]",
+  w7: "tP: v1.1 [week 7]",
+  w8: "tP: mid-v1.2 [week 8]",
+  w9: "tP: v1.2 [week 9]",
+  w10: "tP: mid-v1.3 [week 10]",
+  w11: "tP: v1.3 [week 11]",
+  w12: "tP: mid-1.4 [week 12]",
+  w13: "tP: v1.4 [week 13]"
+} %}

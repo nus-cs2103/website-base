@@ -10,3 +10,6 @@
 {% set weekly_ip_tasks = _weekly_ip_tasks %}
 {% from "_module-" + m + "/weeklyTpTasks.mbdf" import weekly_tp_tasks as _weekly_tp_tasks %}
 {% set weekly_tp_tasks = _weekly_tp_tasks %}
+{% from "_module-" + m + "/weeklyTpTasks.mbdf" import weekly_tp_tasks as _weekly_tp_tasks, weekly_tp_themes as _weekly_tp_themes %}
+{% set weekly_tp_tasks = _weekly_tp_tasks %}
+{% set weekly_tp_themes = _weekly_tp_themes %}
