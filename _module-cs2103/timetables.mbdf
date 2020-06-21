@@ -1,3 +1,13 @@
+<span id="lectures-s1">
+{{ module }}   | LT19             | **1600**-1800
+{{ module }}/T | LT19             | **1600**-1800
+</span>
+
+<span id="lectures-s2">
+{{ module }}/T | ICube Auditorium | **1400**-1600
+</span>
+
+<span id="tutorials-s1">
 {{ MT | safe }} | COM1-0210 (SR 10) | **W**ed  **11**:00 | ~~%%G01%%~~ | **`CS2103T-W11`**| Damith, Yuan Chuan
 {{ MT | safe }} | COM1-0210 (SR 10) | **W**ed  **12**:00 | ~~%%G02%%~~ | **`CS2103T-W12`**| Joanne, Andrew
 {{ MT | safe }} | COM1-0210 (SR 10) | **W**ed  **13**:00 | ~~%%G03%%~~ | **`CS2103T-W13`**| Jacob, Benjamin
@@ -18,3 +28,10 @@
 {{ MT | safe }} | COM1-0210 (SR 10) | **F**ri  **12**:00 | ~~%%G08%%~~ | **`CS2103T-F12`**| Ayush, Yash
 {{ MT | safe }} | COM1-0210 (SR 10) | **F**ri  **13**:00 | ~~%%G07%%~~ | **`CS2103T-F13`**| LongBin, Yash
 {{ MT | safe }} | COM1-0210 (SR 10) | **F**ri  **14**:00 | ~~%%G09%%~~ | **`CS2103T-F14`**| Alfred, Yash
+</span>
+
+<span id="tutorials-s2">
+{{ MT | safe }} | x | - | - | - | -
+{{ MT | safe }} | y | - | - | - | -
+{{ M | safe }} | z | - | - | - | -
+</span>

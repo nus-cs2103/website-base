@@ -9,7 +9,7 @@
 
 Module                 | Venue    | Time
 ---------------------- | -------- | ----
-{{ lectures | trim }}
+<include src="../_module-{{ module | lower }}/timetables.mbdf#lectures-s{{ S }}" inline trim />
 
 Lectures start on time sharp and end around 15 minutes before official end time.
 

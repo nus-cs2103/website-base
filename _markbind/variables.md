@@ -5,7 +5,7 @@
 <span id="module_name">Software Engineering</span>
 <span id="module_color">success</span>
 
-<span id="S">2</span>
+<span id="S">1</span>
 <span id="semester">AY2021S{{ S }}</span>
 <span id="period">2020 Aug-Dec</span>
 
@@ -45,10 +45,6 @@
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
-<variable name="lectures">
-{{ module }}   | LT19             | **1600**-1800
-{{ module }}/T | LT19             | **1600**-1800
-</variable>
 
 <!-- ===========================  secondary module configuration =========================================== -->
 
