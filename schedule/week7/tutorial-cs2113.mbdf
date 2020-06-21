@@ -1,0 +1,78 @@
+{% from "common/macros.njk" import embed_topic, step, thumb, show_as_tab, timing_badge with context %}
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+By the end of this tutorial, we want to confirm that you are able to apply Git and GitHub techniques you learned so far to **follow a systematic workflow when updating the code**.
+
+</variable>
+</include>
+<p/>
+
+#### {{ thumb(1) }} Set up tP org/repo
+
+* Set up the team org, team fork, individual forks as described below.
+
+{{ embed_topic("../../admin/appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E(extract): **Organization setup**", "1", indent="2") }}
+{{ embed_topic("../../admin/appendixE-gitHub.md#repo-setup", "Admin " + icon_embedding + " Appendix E(extract): **Repo setup**", "1", indent="2") }}
+
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+After this activity, verify that you know,
+* how to run the code in your IDE
+* how to run I/O redirection tests
+* how to verify compliance with the coding standard automatically using Gradle
+
+</variable>
+</include>
+<p/>
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Before you start the next activity, ensure that you know <tooltip content="covered in this week's topics">how the _forking workflow_ works</tooltip>.
+
+</variable>
+</include>
+<p/>
+
+#### {{ thumb(2) }} Update the code using the forking workflow
+
+* Use the recommended workflow to do some simple updates to the code base while working in parallel (e.g., each person can add their details to the `docs/AboutUs.md` page).
+
+{{ embed_topic("../../admin/appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="2") }}
+
+<div class="indented">
+
+First, forking workflow requires you to pull from the team repo and push to your own fork. To be able to do the former, you need to **add the team repo as a _remote_ of your clone**.
+* In SourceTree, choose `Repository` → `Repository Settings...`
+* In the `Repository Settings` dialog,
+  * click the `Add` button
+  * add a new remote with the _Remote name_ `upstream` (can be anything, but `upstream` is a common choice) and _URL / Path_ pointing to the team repo<br>
+    e.g., `https://github.com/{{ semester }}-{{ module }}-M14-2/tp.git` (==note the `.git` at the end==)
+
+Here are the steps to update the code using the forking workflow:
+* {{ step(1) }} Decide which update each person will do.
+* {{ step(2) }} Each person,
+  *  {{ step('2.a') }} create a branch (e.g., `johnDoe-AboutUs`) in their local repo.
+  *  {{ step('2.b') }} do the change in the branch.
+  *  {{ step('2.c') }} push the branch to their own fork.
+  *  {{ step('2.d') }} create a PR from their branch in the fork to the `master` branch of the team repo.
+* {{ step(3) }} Work as a team to merge one PR at a time.<br>
+  If a PR cannot be merged due to conflicts, resolve conflicts as you go (PR conflict resolution was covered in the week 6 lecture activity).
+* {{ step(4) }} Everyone sync their local repo and the fork with the team repo
+</div>
+ 
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+The workflow you followed above is very safe but has a high-overhead. You may simplify your workflow (at your own risk) after following the above workflow for a while.
+
+</variable>
+</include>
+<p/>
+
+#### {{ thumb(3) }} Brief the tutor about your tP plan for the next week
+
+* Let the tutor know how you plan to do the tP in a <tooltip content="this term was explained in this week's topics">_breadth-first iterative_</tooltip> manner in the coming week.

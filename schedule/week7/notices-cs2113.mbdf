@@ -1,0 +1,9 @@
+{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
+<panel type="info" header="**eLearning instructions**">
+
+* Read the topics in the [{{ show_as_tab("Topics", ":fas-book:") }}]({{ baseUrl }}/schedule/week7/topics.html) tab; we have added some extra commentary to guide you through them.
+* There is no in-lecture activity for this week.
+* There are no repl exercises this week, and hereafter.
+* This week's post-lecture quiz covers the [full _code quality_ chapter]({{ baseUrl }}/se-book-adapted/chapters/codeQuality.html), as we have now covered all parts of it.
+</panel>
+<p/>

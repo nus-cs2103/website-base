@@ -1,0 +1,14 @@
+{% from "schedule/index.md" import show_project_summary with context %}
+
+{{ show_project_summary(ip_file="ip-w8.md", tp_file="tp-w8.md") }}
+
+## iP
+
+<include src="../../admin/ip-w8.md#body" />
+
+<br>
+{{ hr_double }}
+
+## tP: mid-v1.0
+
+<include src="../../admin/tp-w8.md#body" />

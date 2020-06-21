@@ -1,0 +1,40 @@
+{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
+<panel type="info" header="**eLearning instructions**">
+
+As this week is done in eLearning mode, please follow the instructions below in the given sequence.
+
+#### <span class="text-info">Git and GitHub Topics</span>
+
+This week, we build on our knowledge of git branching and GitHub PRs to learn how to use them when the code is updated in parallel multiple branches. Do the following activity %%(in-lieu of the usual in-lecture activity)%% to learn the relevant ==techniques which you will need for the iP this week==. ==The activity can earn you lecture participation points too.== <span class="text-danger">The deadline is **next Tuesday midnight**.</span>
+
+<panel type="success" header="Activity - please do it if you are not a Git expert">
+
+<include src="activity.mbdf"/>
+</panel>
+<p/>
+
+#### <span class="text-info">Java Topics [[W6.1 - W6.6]({{ baseUrl }}/schedule/week6/topics.html#W6-1)]</span>
+
+* Read the Java topics scheduled for this week.
+* Do the corresponding exercises on Repl.
+
+#### <span class="text-info">Requirements [[W6.7 - W6.9]({{ baseUrl }}/schedule/week6/topics.html#W6-7)]</span>
+
+* Read the following textbook chapters in full (some bits of it were covered in previous weeks).
+  * [Requirements]({{ baseUrl }}/se-book-adapted/chapters/requirements.html)
+  * [Gathering Requirements]({{ baseUrl }}/se-book-adapted/chapters/gatheringRequirements.html)
+  * [Specifying Requirements]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html)
+* Submit the three post-lecture quizzes (to be released on LumiNUS), one for each chapter.
+
+#### <span class="text-info">IDEs [[W6.10]({{ baseUrl }}/schedule/week6/topics.html#W6-10)]</span>
+* Read the relevant topics scheduled for this week.
+* Although the following video appears in an optional section, we recommend you to ==watch it before the next tutorial== as you will be asked to demo debugging in an IDE during the tutorial. If you use a different IDE, learn how to debug in it from other resources.
+
+  @[youtube](1bCgzjatcr4)
+
+#### <span class="text-info">Code Quality [[W6.12]({{ baseUrl }}/schedule/week6/topics.html#W6-12)]</span>
+
+* Read the relevant topics scheduled for this week.
+
+</panel>
+<p/>

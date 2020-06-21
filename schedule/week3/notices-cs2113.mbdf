@@ -1,0 +1,15 @@
+{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
+
+<box type="info" dismissible>
+
+This URL will be needed during lecture activities: {{ module_org }}/lender
+</box>
+<box type="warning" dismissible>
+
+* We start tutorials this week. The [tutorial time table]({{ module_website }}/admin/tutorials.html#tutorial-timetable) is on the module website.
+</box>
+<box dismissible>
+
+Reminder:
+<include src="../timeline.md#warnings" />
+</box>

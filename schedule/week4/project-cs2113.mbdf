@@ -1,0 +1,24 @@
+{% from "schedule/index.md" import show_project_summary with context %}
+{% from "common/macros.njk" import embed_topic with context %}
+
+{{ show_project_summary(ip_file="ip-w4.md", tp_file="tp-w4.md") }}
+
+## iP
+
+<include src="../../admin/ip-w4.md#body" />
+
+<br>
+{{ hr_double }}
+
+## tP: Inception
+
+<box>
+
+{{ icon_important_big_red }} Timely completion of the weekly tP tasks can improve the _project management_ component of your tP grade.
+
+{{ embed_topic("../../admin/tp-grading.md#project-management-grading", "Admin " + icon_embedding + " tP → Grading → Project Management", "3", indent="1") }}
+
+
+</box>
+
+<include src="../../admin/tp-w4.md#body" />

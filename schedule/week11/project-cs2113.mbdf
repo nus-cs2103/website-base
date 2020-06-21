@@ -1,0 +1,18 @@
+{% from "schedule/index.md" import show_project_summary with context %}
+
+{{ show_project_summary(tp_file="tp-w11.md", milestone="v2.0") }}
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+==This week, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening in this week).
+
+To take advantage of the above, try to make your {{ penultimate_version }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ final_version }}).
+
+</variable>
+</include>
+<p/>
+
+## tP: {{ penultimate_version }}
+
+<include src="../../admin/tp-w11.md#body" />

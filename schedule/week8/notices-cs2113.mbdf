@@ -1,0 +1,10 @@
+{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+* Read the weekly topics and ==try to do the post-lecture quiz before your tutorial== as the knowledge from the quiz will be needed to complete the tutorial activities.
+
+</variable>
+</include>
+<p/>

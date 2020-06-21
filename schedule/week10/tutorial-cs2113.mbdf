@@ -1,0 +1,90 @@
+{% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**We are moving tutorials to fully-online mode** from this week.
+* **Tutorial submissions will be counted for weekly participation**, as an additional incentive to do tutorial activities. A submission deemed by the instructors as a _reasonable attempt_ (irrespective of the correctness) will be eligible to be counted for participation.
+* **Submission deadline: ==11.59am of the following Wednesday==** (same as quizzes).
+* **If you encounter problems while doing tutorial tasks**,
+  * you can post in the [forum]({{ forum_link }}) as usual.
+  * you can also ==**ask in our [:fab-gitter: Gitter chat](https://gitter.im/nus-{{ module | lower }}-{{ semester }}/community)**==. %%We chose Gitter because you can login to Gitter using your GitHub account.%%<br>
+   {{ icon_tip }} Use Gitter for questions that can be answered immediately. For things that might need a longer discussion period (e.g., technical issues), post in the forum instead.
+* **We recommend that you do the tutorial activity during your actual tutorial time** as both the forum and the Gitter channel will be closely watched by your tutor during that period (i.e., you'll get faster responses). But it is not a hard rule; it is fine as long as you finish the activities by the deadline.
+* **You are welcome (even encouraged) to discuss activities/answers with others, but the answers you submit must be your own**.
+* **==Use [the file `A________-Tutorial-10.docx`](files//A________-Tutorial-10.docx) as the template==** for your submission. Do follow the submission instructions in that file closely or else our scripts will not be able to detect your submission.<br>
+ **Upload your submission to the matching folder on LumiNUS**.
+
+</variable>
+</include>
+<p/>
+
+#### {{ thumb(1) }} Smoke-test CATcher
+<div class="indented-level2">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+* **This activity is <span class="text-danger">compulsory</span>.** Please do it before the deadline. Submission to LumiNUS not required as we'll using a script to check compliance.
+
+</variable>
+</include>
+</div>
+<p/>
+
+<include src="tutorial-cs2103.mbdf#catcher-alpha" />
+
+
+#### {{ thumb(2) }} Demo test coverage
+<div class="indented-level2">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+* Measure test coverage in your own IDE. Take a screenshot showing test coverage details such as lines covered, lines not covered, percentage of coverage for different files etc. Include that screenshot in your submission. An example is given below:<br>
+ <pic src="images/CoverageReportExample.png" ></pic>
+
+</variable>
+</include>
+</div>
+<p/>
+
+* Demo how you measure test coverage of the tP, in your own IDE.
+
+
+#### {{ thumb(3) }} Exercise: interpret a sequence diagram
+<div class="indented-level2">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+* Include your answer to the following question in the submission file.
+
+</variable>
+</include>
+</div>
+<p/>
+
+<div class="indented-level2">
+
+<include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" />
+<p/>
+</div>
+
+
+#### {{ thumb(4) }} Exercise: draw a sequence diagram
+<div class="indented-level2">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+* **_Hand-draw_ on _paper_** your answer to the following question %%(reason: to practice answering similar questions in the exam)%%, take a photo (or scan it), and include that image in your submission.<br>
+  {{ icon_tip }} There are mobile apps ([example](https://apps.apple.com/sg/app/evernote-scannable/id883338188)) that can take a photo of a document and and convert it to a high-quality scan.<br>
+  {{ icon_tip }} We have provided a video of drawing a sequence diagram to match code. Also look at the hint provided at the end of the question.
+
+</variable>
+</include>
+</div>
+<p/>
+
+<div class="indented-level2">
+
+<include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-drawPrintQuoteSd.md" />
+<p/>
+</div>

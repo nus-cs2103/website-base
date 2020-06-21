@@ -1,0 +1,82 @@
+<span id="Java-JavaFX">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**JavaFX is not required for this module** as we strongly discourage you from creating a GUI app. If you are still interest to learn JavaFX, you can refer to the JavaFX tutorial in the [Duke repo you used for the iP]({{ module_org }}/duke#tutorials) (reason: the tutorials in the section below are outdated).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="Documentation-Tools">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**You'll need to add JavaDoc comments to the iP code this week. When adding a user guide to the iP, you'll need to use Markdown.** Both those topics are covered below, briefly.
+
+%%FYI, AsciiDoc is a more powerful (but also more complicated) replacement for Markdown. You don't need it for this module.%%
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="Code-Quality-Code-Comments">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**This is the final installment of the _code quality_ topics.** As you are learning about JavaDoc comments this week, you can also learn these guidelines to write better code comments.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="SDLC-Process-Models-Basics">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**As you will be starting the tP soon, this is a good time to learn about 'processes' used for software projects.** FYI, you are required to use a _breadth-first iterative_ process for the tP. Read the topics below to learn what that means.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="Continuous-Integration-Deployment">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Modern software projects, and your tP, make heavy use of build/CI/CD tools** The topics below give you an overview of those tools, to prepare you to start using them yourself.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="RCS-Workflows">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Next, you will learn a workflow called the 'Forking Flow'**, which combines the various Git and GitHub techniques you have been learning over the past few weeks. It is also the workflow you will use in the tP.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="gitAndGithub-forkingWorkflow">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+==The activity in the section below can be skipped== as you will be doing a similar activity in a coming tutorial.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="revisionControl-drcsVsCrcs">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Git is considered a DRCS**. Read the topic below to learn what that means and how it differs from the alternative.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="revisionControl-featureBranchFlow">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**These are two workflows that are riskier (but simpler) than the forking flow**. After following the forking flow for a while, you may switch to one of these, but at your own risk.
+</variable>
+</include>
+</span>

@@ -1,0 +1,19 @@
+{% from "schedule/index.md" import show_project_summary with context %}
+
+{{ show_project_summary(tp_file="tp-w10.md") }}
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Some things to note as you start the v2.0 iteration:
+* **Set moderate targets for functionality.** Adding more functionality than needed will not earn you more marks but can expose you to higher risk of bugs.<br>
+  **Focus on improving the process and the quality** instead.
+* **Move in small steps, and keep the product working at each step.** If it breaks, you will only have to examine the latest change for the cause of the breakage.
+
+</variable>
+</include>
+
+
+## tP: mid-{{ penultimate_version }}
+
+<include src="../../admin/tp-w10.md#body" />

@@ -1,0 +1,111 @@
+<span id="Developer-Testing">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**This week, you will start using JUnit to write automated Java tests for your tP**, in addition to using the I/O redirection test (as you did in the iP).
+
+First, let us learn such testing fits into an aspect called _developer testing_ of the testing landscape.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="testing-testAutomation-usingTestDrivers">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**The sections below gives an overview of _test automation_**, something used heavily in developer testing.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="cppToJava-junit-basic">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Now, let us learn about JUnit, a tool used for automated testing.** JUnit is a third-party tool (not included in the JDK) but your tP project is already configured to use JUnit, with the help of Gradle. That means the video tutorial given at the end of the section is mostly not applicable to you, unless you are interested to learn how to set up a non-Gradle project for JUnit.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="followup-cppToJava-junit-basic">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+Quoting from tP instructions:
+<blockquote>
+
+<include src="../../admin/tp-tasks.mbdf#desc_add_junit_tests" />
+</blockquote>
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="Writing-Developer-Documents">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**You will be writing some developer documentation as well in the tP**, unlike the iP in which you only wrote some user documentation. To prepare you for that, given below is a brief introduction to developer documentation.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="Design-Models">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+One important objective of developer documentation is to explain the design and the implementation of the software, which usually uses diagrams as _models_ of the design being described.
+
+**Let's learn what models are, and how they are useful even beyond mere documentation.** 
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="Class-Object-Diagrams-Basics">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+This module covers only two types of diagrams: class/object diagrams (CD/OD) -- which model a _structural_ aspect of an OOP design, and sequence diagrams (SD) -- which model a _behavioral_ aspect. This week, let's learn the basic CD/OD notation.
+
+We recommend you ==try the relevant post-lecture quizzes as you read each sections== below. In these quizzes, you will  be able to see the answers immediately after completing the quiz.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="modeling-modelingStructures-objectDiagrams">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Object diagrams complements class diagrams** and therefore covered together with class diagrams.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="Project-Mgt-Scheduling-and-Tracking">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+As you are now doing the tP, it is a good time to learn **some very basic (almost common sense) techniques that can help in scheduling and tracking your tP**.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="projectPlanning-ganttCharts">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+GANTT Charts and PERT charts are popular tools in the project management domain but they are rarely useful in small software projects. Hence, they are not included in {{ module }} syllabus but it is **useful to know at least their names and how they look like**.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="teamwork-teamStructures">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+This topic is included in the syllabus just **to let you know that teams can be structured in different ways**.
+
+Which of them is closest to the structure of your team?
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->

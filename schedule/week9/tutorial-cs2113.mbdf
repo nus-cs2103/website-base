@@ -1,0 +1,66 @@
+{% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
+
+#### {{ thumb(1) }} Demo v1.0
+
+<div class="indented-level2">
+
+{{ embed_topic("../../admin/tp-tasks.mbdf#desc_do_an_informal_demo", "Admin " + icon_embedding + " tP v1.0: Demo", "3") }}
+</div>
+
+
+#### {{ thumb(2) }} Demo an assertion failure
+
+* Temporarily edit the tP code to cause an assertion failure. Demo the assertion failure by running the app.<br>
+  For example, you can add the following assertion at the start of the `main` method and then run `gradlew run`.
+  ```java{.no-line-numbers highlight-lines="3" heading="your main class"}
+  ...
+  public static void main(String[] args){
+      assert false : "dummy assertion set to fail";
+      ...
+  }
+  ```
+
+
+#### {{ thumb(3) }} Exercise: interpret an intermediate level CD
+
+* {{ timing_badge("10 minutes", "info") }} With the tutor's guidance, interpret the following class diagram, focusing on the new CD notations that you learned this week.
+
+<div class="indented-level2">
+
+<include src="../../book/modeling/modelingStructures/classDiagramsIntermediate/q-explainClassDiagramNotation.md" />
+<p/>
+</div>
+
+* Some questions you can try to answer:
+  1. What does this mean? <img src="images/extract-interface.png" />
+  1. What does this mean? <img src="images/extract-inheritance.png" />
+  1. Of the above two, why the lines in one are dashed?
+  1. What does this mean? <img src="images/extract-dependence.png" />
+  1. What's the difference (w.r. t. what it means) between the above and a normal association?
+  1. What does this mean? <img src="images/extract-composition.png" />
+  1. What's difference if the diamond is empty?
+  1. Can a `PR` object exist without any `Commit` objects attached to it?
+  1. Can a `Commit` object exist without a corresponding `PR` object?
+  1. A `Student` can belong to how many teams?<img src="images/extract-team.png" />
+  1. A `Team` can have how many `Student` objects?
+
+
+#### {{ thumb(4) }} Exercise: draw an intermediate level CD
+
+<div class="indented">
+
+{{ icon_info }} Question adapted from past exam paper.
+</div>
+
+* **Divide into two sub-teams** as you did in the previous week.
+* {{ timing_badge("10 minutes", "info") }} **Each sub-team do the part (a)** of the following exercise, by drawing the answer on the whiteboard. Use the following layout:<br>
+  <img src="../week8/images/classLayout.png" width="600"/>
+
+<div class="indented-level2">
+
+<include src="../../book/modeling/modelingStructures/classDiagramsIntermediate/q-drawClassDiagramForItemEtc.md" />
+<p/>
+</div>
+
+* {{ timing_badge("10 minutes", "info") }} **Compare answers with those from other sub-teams**. With the tutor's guidance, self-evaluate the answers.
+* {{ timing_badge("5+5=10 minutes", "info") }} **Do part (b)** in the same manner.

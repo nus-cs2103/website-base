@@ -1,0 +1,123 @@
+{% from "common/topics.njk" import slugify with context %}
+
+<span id="{{ slugify('Boundary Value Analysis') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Last week, we learned about _equivalence partitions_, a heuristic for improving E&E of testing. This week, let us learn another heuristic that builds on top of equivalence partitioning.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Boundary Value Analysis') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Here is another technique that can improve the quality of test cases.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testCaseDesign-boundaryValueAnalysis-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=357faa3a-c24a-4ff5-ac10-ab8e00baf4f5).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testCaseDesign-boundaryValueAnalysis-how">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=0edaf584-6ba5-4b05-8f98-ab8e00bfc897).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Combining Multiple Test Inputs') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+The number of test cases can increase when a the SUT takes multiple inputs. Let's have a brief peek into how we can deal with such situations.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Other QA Techniques') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Testing is not the same as Quality Assurance. What else can be done for QA?
+
+</variable>
+</include>
+</span>
+
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="qualityAssurance-introduction-validationVsVerification">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=fbc72848-4d08-4615-8919-ab9200baa7bf).
+
+</variable>
+</include>
+</span>
+
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="qualityAssurance-codeReviews-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=e43e6509-74e2-4a5c-9f3d-ab9200c552f6).
+
+</variable>
+</include>
+</span>
+
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="qualityAssurance-staticAnalysis-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=a44af2d0-85a7-4183-8330-ab9200cfe405).
+
+</variable>
+</include>
+</span>
+
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="qualityAssurance-formalVerification-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=7b805aba-bb87-41a3-abb6-ab9200d68637).
+
+</variable>
+</include>
+</span>
+
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('SDLC Process Models: XP/Scrum') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+In [a previous week](../week7/topics.html), you learned about _sequential_ and _iterative_ ways of doing a software.
+Now, let us take a quick look at a couple of well-known processes used in the industry, both of which fall into a category called _agile processes_.
+</variable>
+</include>
+</span>

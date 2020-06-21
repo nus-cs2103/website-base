@@ -1,0 +1,13 @@
+{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
+
+<box dismissible>
+
+{{ icon_important_big_red }} We strongly recommend you to **have a team project meeting _before_ the tutorial**. Do the following during the meeting:
+* **Finish the tP tasks allocated for the week.** For example, if you don't have a preliminary project idea by this week's tutorial (as per the tP schedule), the tutor will not be able to give feedback on it.
+  * Note that the timeliness of tP tasks (i.e., the deadline is the midnight before the tutorial) is graded under the _project management_ component of the tP. 
+  * Keep notes of the meeting, and update project documents -- the tutor will ask for those during the tutorial.
+* **Help each other finish iP tasks.** Tasks allocated to this week are especially troublesome and some peer help can be very useful.
+* **Dealing with technical problems**:  
+
+{{ embed_topic("../../admin/appendixD-help.md", "Admin " + icon_embedding + " Appendix D: How to Get Help", "4", indent="2") }}
+</box>

@@ -1,0 +1,8 @@
+<include src="notices-cs2103.mbdf" />
+
+<box type="tip">
+
+* **Our first lecture** will be on week 1 Wednesday (Jan 15th).
+* **Our tutorials** start on week 3.
+* **[{{ module }}T Students]**: Of the many weekly sessions that appear under {{ module }}T, only two actually belong to {{ module }}T. Those are, the lecture on Wednesday 1200-1400, and the 1-hour tutorial slot on Monday or Tuesday. The other two 2-hour slots belong to the CS2101 module.
+</box>

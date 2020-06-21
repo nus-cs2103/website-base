@@ -1,0 +1,99 @@
+{% from "common/topics.njk" import slugify with context %}
+
+<span id="{{ slugify('Sequence Diagrams: Basics') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Good news: this will the the last installment of UML notations.<br>
+Bad news: we are going to cover an entire new diagram type in one go (reason: to give you more time to use them in project documentation).
+
+**Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, CD/OD's that you learned in the past two weeks model _structural_ aspects.
+
+:fas-video: The video lecture for this topic is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=7e2690b7-69c5-4f24-8db1-ab8400962a6a).
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ 'followup-' + slugify('Sequence Diagrams: Intermediate-Level') }}">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+After you have learned how to interpret sequence diagrams, you can watch this: 
+
+:fas-video: A video lecture showing how to draw a sequence diagram to match code is given [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=5816a49a-2f87-4e02-9aba-ab8400c41831).
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Design Patterns') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Last week, we learned:
+* Three basic design quality aspects: abstraction, coupling, cohesion
+* Two design principles that aims to improve those aspects: SRP, SoC. There are many more principles but we covered only two (to reduce workload) just to give you a taste only.
+
+**This week, we cover _design patterns_, a concept that builds upon the above**. Again, we limit to only two of them, for similar reasons.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="designPatterns-introduction-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+First, let's learn what _design patterns_ are, in general.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Singleton pattern') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Given next are **two simple design patterns**: _singleton_ and _facade_.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="followup-designPatterns-facade-what">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+To learn more design patterns, you can refer to [https://se-education.org/se-book/designPatterns/](https://se-education.org/se-book/designPatterns/)
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Testing: Test Coverage') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Previously, you learned how to write JUnit tests. **How do you know which parts of the code is being tested by your tests? That's where _test coverage_ comes in.**
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="followup-testing-testCoverage-how">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+Learn how to measure test coverage in your tP. You will be asked to demo that in the coming tutorial.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->

@@ -1,0 +1,56 @@
+{% from "common/macros.njk" import thumb, show_as_tab with context %}
+
+#### {{ thumb(1) }} Demo debugging in an IDE
+
+<box light type="success" add-class="ml-4" icon=":fas-lightbulb:">
+
+**Suggested pre-tutorial preparations**:
+* Clone the [{{ module_org }}/personbook]({{ module_org }}/personbook) repo to your Computer (no need to fork first).
+* Set it up in your IDE.
+* Use the IDE debugging to step through the code to understand how the code works. For example, you can try to find answers to these questions:
+  * How to add a new `find` command to locate persons by name?
+  * What's the purpose of the variable `PersonBook#lastShownList`? Is it really needed?
+
+<panel type="seamless" header="FYI, here's a relevant video used in the textbook">
+
+@[youtube](1bCgzjatcr4)
+
+</panel>
+
+</box>
+
+<div class="indented">
+
+During the tutorial, **demo your ability to do debugging using an IDE** by performing the following tasks:
+
+1. Set a breakpoint in the following method of the `Main` class.
+   ```java
+   /** Reads the user command and executes it, until the user issues the exit command.  */
+   private void runCommandLoopUntilExitCommand() {
+       Command command;
+       do {
+           String userCommandText = ui.getUserCommand();
+           command = new Parser().parseCommand(userCommandText);
+           CommandResult result = executeCommand(command);
+           personBook.setLastShownList(result.getRelevantPersons());
+           ui.showResultToUser(result);
+   
+       } while (!ExitCommand.isExit(command));
+   }
+   ```
+1. Show how to set a conditional breakpoint so that execution pauses when the user types in the command `list`.
+1. Use the debugger to step through the code while explaining how the code works. Start from the `main` method.
+1. Explain your answer to the following question:
+   >What's the purpose of the variable `PersonBook#lastShownList`? Is it really needed?
+</div>
+
+
+#### {{ thumb(2) }} Demo iP using the jar file
+
+* Copy your iP jar file to an empty folder.
+* Do a quick demo of it to the tutor.
+
+
+#### {{ thumb(3) }} Show your tP UG draft
+
+* Show to the tutor your UG draft that you uploaded to LumiNUS.

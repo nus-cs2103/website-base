@@ -1,0 +1,42 @@
+{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+
+#### {{ thumb(0) }} **[{{ module }} students only] Form teams**
+
+* Form teams, under the guidance of the tutor. See the panel below for _team forming constrains_ and other related info.<br>
+
+{{ embed_topic("../../admin/tp-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "2", indent="2") }}
+
+
+#### {{ thumb(1) }} **Register the team** {{ timing_badge("before leaving the tutorial") }}
+
+* Get your team ID from the tutor. ==Each student must submit your team ID== via the LumiNUS `Class Groups` page -- for us to know which team you joined. Note the team ID follows a specific format.
+
+{{ embed_topic("../../admin/tp-teams.md#teamIdFormat", "Admin " + icon_embedding + " **Teams → Team ID Format**", "2", indent="2") }}
+
+
+#### {{ thumb(2) }} **Introduce yourselves**
+
+* Introduce yourself to the tutor and the members of your team and the _partner_ team (i.e., the other team under your tutor)
+
+
+#### {{ thumb(3) }} **Fix a weekly project meeting time**
+
+* If you haven't done so already, set up a weekly project meeting time/venue (and communication channels) with your team members.
+
+{{ embed_topic("../../admin/tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="2") }}
+
+
+#### {{ thumb(4) }} **Help team members troubleshoot iP problems**
+
+* Do a quick demo of your iP to the tutor.
+* If anyone is facing problems in the iP, work together to solve them.
+
+
+#### {{ thumb(5) }} **Find coding standard violations** {{ icon_extra }}
+
+* Do the following exercise, if you have time.
+<div class="indented-level2">
+
+Identify coding standard violations in the following code:<br>
+<img src="images/findViloations.png" />
+</div>

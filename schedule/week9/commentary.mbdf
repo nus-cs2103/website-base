@@ -1,0 +1,91 @@
+{% from "common/topics.njk" import slugify with context %}
+
+<span id="{{ slugify('Class Diagrams: Intermediate-Level') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**This week, let us learn the remaining class diagram notations**.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Design Principles') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+As you are still in the early stage of the tP, **this is a good time to learn some design principles that you can try to apply as you evolve the tP design**.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('designFundamentals-abstraction-what') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Let's start by learning **the three most fundamental design qualities** upon which all other design principles are built.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Some other principles') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Given next are **two design principles that we can apply when designing OOP systems**.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="followup-principles-separationOfConcernsPrinciple">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+As you may have realized already, the two principles given above are somewhat similar, one is specific to OOP and applied at class level while the other is not specific to OOP and can be applied at any level.
+
+To learn more principles, you can go to [https://se-education.org/se-book/principles/](https://se-education.org/se-book/principles/).
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Logging') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Given next are **two techniques that help you locate problems in the code**.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Testing: Intermediate Techniques') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+We started writing JUnit testing in the last week. The topics below helps you push a bit further in the same direction.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Testing: Intermediate Techniques') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+We started writing JUnit testing in the last week. The topics below helps you push a bit further in the same direction.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->

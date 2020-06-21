@@ -1,0 +1,11 @@
+{% from "schedule/index.md" import show_project_summary with context %}
+
+{{ show_project_summary(ip_file="ip-w3.md", tp_file="tp-w3.md") }}
+
+## iP
+
+<include src="../../admin/ip-w3.md#body" />
+
+## tP: Kickoff
+
+<include src="../../admin/tp-w3.md#body" />

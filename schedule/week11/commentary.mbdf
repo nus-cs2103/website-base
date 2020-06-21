@@ -1,0 +1,134 @@
+{% from "common/topics.njk" import slugify with context %}
+
+<span id="{{ slugify('Architecture') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**While _architecture_ is not of high importance to a small project such as the tP, it is good to know a little bit about it** in case you are thrown into a larger project in future.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="designApproaches-multilevelDesign-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**First, let us learn about multi-level design**, a pre-cursor to learning about architecture.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="architecture-introduction-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Now that we know about multi-level design, let us learn about architecture, which is a special case of multi-level design. We also cover _architecture diagrams_ here.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Architectural Styles') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Remember _design patterns_? The _architectural styles_ covered below are like 'design patterns' at architecture level. As before, we only cover two of them just to give you a taste of the topic while keeping the workload low.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Types of Testing') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+As we approach the last part of the tP, we'll be spending more time learning about software testing. This week, we start off with an overview of different _types_ of software testing.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testing-dependencyInjection-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+_Dependency Injection_ is a technique closely related to stubs. It is not in the syllabus but is given below in case some of you would like to know more about it.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Test Case Design') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Last week, we learned how to measure test _coverage_. This week, we look into how to increase coverage with the least number of test cases.
+
+First, we take a look at test case design in general, different approaches to test case design, and few different categorization of test cases.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testCaseDesign-introduction-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**What is _test case design_, and why should we care?**
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=bd513fd6-8ccb-4bb3-8467-ab8d009a8de0).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testCaseDesign-introduction-blackVsGlass">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**How much information about the code is being used when designing test cases?**
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=8221a124-fe08-4c48-8a72-ab8d00aa53d3).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Equivalence Partitioning') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Our syllabus includes two specific techniques for improving test case design. This week, we cover one of them: _equivalence partitioning_.
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testCaseDesign-equivalencePartitions-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=59a122d2-7170-4aea-9888-ab8d00b850ed).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testCaseDesign-equivalencePartitions-basic">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=83001c05-69fb-4322-b571-ab8d00cd4337).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->

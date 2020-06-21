@@ -1,0 +1,92 @@
+{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, step, thumb, timing_badge with context %}
+
+#### {{ thumb(1) }} **Discuss tP progress**
+
+* Show your collaborative project doc(s) to the tutor.
+* Share the project direction (i.e., user profile, value proposition) you have decided upon.
+* Give feedback to the other team. Some examples:
+  * Suppose you belong to the proposed target user group; do you find the value proposition attractive?
+  * Do you foresee any potential violation of the project constraints?
+
+#### {{ thumb(2) }} **Review Peer iP PRs**
+
+<div class="indented-level2">
+<box type="important">
+
+* The quality of the work you will do in this tutorial task will be considered for your iP grade.
+* This task is applicable even if you have been exempted from the iP.
+</box>
+
+**Review a PR** created by your classmates by following the steps given below. Note that you are expected to have read the following guidelines as given in this week's iP tasks:
+
+{{ embed_topic("../../admin/appendixE-gitHub.md#pr-review-guidelines", "Admin " + icon_embedding + " **Using GitHub → Guidelines for Reviewing PRs**", "3", indent="1") }}
+</div>
+
+* {{ step(1) }} **Form sub-groups** of 2 (preferred) or 3 (if unavoidable) members. %%You can form sub-groups between tP teams that are under the same tutor.%%
+* {{ step(2) }} **Open the PR allocated to you**, as given in the panel below.
+<div class="indented-level2">
+
+<panel header="iP PR review allocation" minimized >
+{% from "_config.mbdf" import ip_review_allocation with context %}
+Team       | Reviewer | PR to review
+-----------|----------|--------------{% for line in ip_review_allocation  %}
+{{ line[0] }} | {{ line[1] }} | [{{ line[2] }}]({{ module_org }}/duke/pulls/{{ line[2] }}){% endfor %}
+</panel>
+<p/>
+
+{{ icon_info }} If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can choose another PR that is allocated to another student in your own tutorial ++but not in your sub-team++.
+<p/>
+<box type="tip" light>
+
+Tip for future reference: GitHub allows you to filter PRs/Issues using various criteria such as `author:AuthorUsername` ([example](https://github.com/reposense/RepoSense/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Afzdy1914+) -- see the `filters` text box in the target page).
+
+Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
+<img src="../../admin/images/filterPrsUsingLabels.png" />
+</box>
+</div>
+
+* {{ step(3) }} **Review the code for [coding standard]({{ java_coding_standard }}) compliance**. You can view the code in the PR by clicking on the {{ show_as_rounded_tab('Files changed') }} tab. When you find a possible coding standard violation, do the following:
+  1. **Show it to your review partner(s) to confirm** it is indeed a violation. You can seek tutor's opinion if you are not sure.
+  1. **Add a comment** to communicate your finding with the author.<br>
+     * Hover over the offending line of code and click on the {{ button('**+**', 'primary') }} that appears to start the comment.
+     * Write your comment ({{ icon_tip }} You can use [GFMD](https://guides.github.com/features/mastering-markdown/) syntax in your comment)<br>
+       e.g., `Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:`<br>
+       > Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:<br>
+
+       e.g., <br>
+       > Also consider alternative names such as `doX` or `putX` here, which might be more in line with the coding standard.
+     * As illustrated in the examples above, ==phrasing comments as questions or using words such as 'consider'== (instead of `You should do X` or `Change this to X`) is recommended to reflect that you are a peer, not a superior. 
+     * When you are done writing the comment, click on the {{ button('**Start a review**', 'success') }} (not the {{ button('**Add single comment**') }} button)
+
+* {{ step(4) }} **Review the code for code quality** best practices you have learned so far. When you find a potential opportunity to improve the code quality, confirm with your review partners (and the tutor, if needed) and add a comment as before. Some code quality issues you can check for (not an exhaustive list):
+  * Methods that are too long
+  * Code nested too deeply
+  * Not enough SLAP
+  * Names that can be improved
+  * Logic hard to understand
+
+<div class="indented-level2">
+
+<box type="tip" light>
+
+==As this is a _peer_ review of PRs,== you are not expected to always know better than the PR author. Feel free to,
+* Compliment the author if you learned a better way of implementing something by reviewing the PR. e.g., `This way of doing X seems much cleaner that the way I did. Nice :+1:`
+* Ask the author for more info. e.g., `I find this use of class X interesting? May I know why you did it this way instead of ...?`
+</box>
+</div>
+
+* {{ step(5) }} **Finish the review**. When it is time to end the tutorial, finish the review as follows:
+  1. Click on the {{ button('**Finish your review**', 'success') }} at the top of the page.
+  1. Choose the `Comment` option (not `Approve` or `Request changes`).
+  1. In the comment box, mention your review partners e.g., `Also took part in this review @JonhDoe`. You can also give an overall comment about the code e.g.,
+     ```
+     Overall, we found your code easy to read for the most part except a few places
+     where the nesting was too deep. Hope our comments help you improve the code further.
+     All the best for your iP :-)
+     [Also took part in this review: @JonhDoe]
+     ```
+  1. Click on the {{ button('**Submit review**', 'success') }} button to finish the review.
+
+* {{ step(6) }} **[After the tutorial] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in the guidelines below, do not get into arguments with PR reviewers/authors.
+
+{{ embed_topic("../../admin/appendixE-gitHub.md#pr-review-guidelines", "Admin " + icon_embedding + " **Using GitHub → Guidelines for Reviewing PRs**", "3", indent="2") }}

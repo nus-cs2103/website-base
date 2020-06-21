@@ -1,0 +1,49 @@
+{% from "common/macros.njk" import thumb, show_as_tab, timing_badge with context %}
+
+#### {{ thumb(1) }} Demo JUnit tests
+
+* Demo running of JUnit test of your tP
+
+
+#### {{ thumb(2) }} Exercise: interpret a class diagram
+
+* Do the following exercise as directed by the tutor.
+
+
+<div class="indented-level2">
+
+<include src="../../book/modeling/modelingStructures/classDiagramsBasic/q-essay-explainClassDiagram.md" />
+<p/>
+</div>
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+<pic src="images/DrawingOnWhiteboard.png" add-class="float-right mr-2 ml-2">
+
+<small>[Image source: [this article](https://www.deekit.com/7-reasons-why-engineers-are-the-whiteboard-artists/)]</small>
+</pic>
+**_Hand-drawing_ diagrams on a white-board and on paper is an important practical skill** %%(e.g., for technical interviews, project discussions)%%. It's possible that the diagrams you draw in your first few attempts to look amateurish, messy, and hard to read, and the drawing itself will take a long time. With more practice, you will be able to draw such diagrams quicker %%(e.g., draw as you explain verbally your design)%%, with less need for corrections, and the diagrams will look more _professional_ too. 
+
+That is why we have structured these tutorials to get everyone to practice this skill so that **your first few (not so good) diagram drawing experiences happen in the tutorial, not in an interview or during your internship.**
+</variable>
+</include>
+<p/>
+
+#### {{ thumb(3) }} Exercise: draw an object diagram
+
+* Split into sub-teams of 2-3 persons and draw the following exercise on the white board.
+<div class="indented-level2">
+
+<include src="../../book/uml/classDiagrams/combine/basic/q-essay-objectDiagramsForClassDiagram.md" />
+<p/>
+</div>
+
+
+#### {{ thumb(4) }} Exercise: draw a class diagram
+
+<div class="indented-level2">
+
+<include src="../../book/modeling/modelingStructures/classDiagramsBasic/q-essay-drawClassDiagramForBoxEtc.md" />
+<p/>
+</div>

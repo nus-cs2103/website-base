@@ -1,0 +1,70 @@
+{% set weekly_tp_tasks = {
+week3: [
+  {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'}
+],
+week4: [
+  {id: 'start_weekly_meetings'},
+  {id: 'decide_project_direction'},
+  {id: 'start_project_notes', deadline: 'before the tutorial'}
+],
+week5: [
+  {id: 'brainstorm_user_stories', deadline: 'before the tutorial'},
+  {id: 'prioritize_user_stories', deadline: 'during the tutorial', deadline_type: "info"}
+],
+week6: [
+  {id: 'conceptualize_v1'},
+  {id: 'draft_the_ug', deadline: 'midnight before the tutorial'},
+  {id: 'refine_product_design'}
+],
+week7: [
+  {id: 'set_up_project_repo', deadline: 'during the tutorial', deadline_type: "info"},
+  {id: 'plan_the_next_iteration'}
+],
+week8: [
+  {id: 'ensure_you_know_tp_expectations'},
+  {id: 'start_implementing_v1'},
+  {id: 'use_github_to_manage_milestones'},
+  {id: 'add_junit_tests'}
+],
+week9: [
+  {id: 'make_code_more_defensive'},
+  {id: 'deliver_v1', deadline: 'midnight before the tutorial'},
+  {id: 'do_an_informal_demo', deadline: 'during the tutorial', deadline_type: "info"}
+],
+week10: [
+  {id: 'start_on_the_full_version'},
+  {id: 'update_dg_with_design_details', deadline: 'IMPORTANT'},
+  {id: 'make_code_reposense_compatible'}
+],
+week11: [
+  {id: 'update_user_docs'},
+  {id: 'add_sd_to_dg'},
+  {id: 'deliver_v2', deadline: 'midnight before the tutorial'},
+  {id: 'attend_the_PED', deadline: 'During the lecture'}
+],
+week12: [
+  {id: 'tweak_product_as_per_PED'},
+  {id: 'draft_the_ppp'},
+  {id: 'double_check_reposense_compatibility'}
+],
+week13: [
+  {id: 'submit_final_deliverables', deadline: 'by Saturday 11th Apr 23.59'},
+  {id: 'demo_the_product', deadline: 'by Monday 13th Apr 23.59'},
+  {id: 'prepare_for_PE', deadline: 'before the lecture', deadline_type: "info"},
+  {id: 'attend_the_PE', deadline: 'during the lecture'}
+]
+} %}
+
+{% set weekly_tp_themes = {
+  w3: "tP: Kickoff [week 3]",
+  w4: "tP: Inception [week 4]",
+  w5: "tP: User Stories [week 5]",
+  w6: "tP: Conceptualize V1.0 [week 6]",
+  w7: "tP: Plan v1.0 [week 7]",
+  w8: "tP: mid-v1.0 [week 8]",
+  w9: "tP: v1.0 [week 9]",
+  w10: "tP: mid-v1.1 [week 10]",
+  w11: "tP: v1.1 [week 11]",
+  w12: "tP: mid-1.2 [week 12]",
+  w13: "tP: v1.2 [week 13]"
+} %}
