@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
-{% from "data-" + (module | lower) + "/studentData.njk" import team_review_allocation with context %}
+{% from "_config.mbdf" import team_review_allocation with context %}
 
 #### {{ thumb(1) }} Exercise on Requirements: PR Tracker
 
