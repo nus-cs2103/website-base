@@ -8,7 +8,6 @@ pageNav: 3
 
 {% import "common/topics.njk" as topics with context %}
 {% from "common/macros.njk" import get_week_start_date with context %}
-{% from "schedule/index.md" import all_topics with context %}
 
 <div class="website-content">
 
