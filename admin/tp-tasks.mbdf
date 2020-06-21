@@ -1,7 +1,7 @@
 {% from "common/admin.njk" import show_admin_page with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 {% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
-{% from "_config.md" import weekly_tp_tasks  with context %}
+{% from "_config.mbdf" import weekly_tp_tasks  with context %}
 
 {#====================================================================================================================
  # CS2103 Weekly Intros

@@ -9,7 +9,7 @@ pageNav: 1
 {% import "common/topics.njk" as topics with context %}
 {% from "admin/admin-tasks.mbdf" import show_weekly_admin_tasks with context %}
 {% from "common/macros.njk" import get_week_start_date with context %}
-{% from "_config.md" import weekly_textbook_topics with context %}
+{% from "_config.mbdf" import weekly_textbook_topics with context %}
 
 {#
 -1: site not ready, lands in the module intro page
