@@ -45,6 +45,11 @@
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
+<variable name="lectures">
+{{ module }}   | LT19             | **1600**-1800
+{{ module }}/T | LT19             | **1600**-1800
+</variable>
+
 <!-- ===========================  secondary module configuration =========================================== -->
 
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>

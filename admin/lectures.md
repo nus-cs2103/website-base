@@ -7,18 +7,9 @@
 
 **Timing/venue**:
 
-{% set sem1_lectures %}
-{{ module }}   | LT19             | **1200**-1400
-{{ module }}T  | ICube Auditorium | **1600**-1800
-{% endset %}
-{% set sem2_lectures %}
-{{ module }}/T | ICube Auditorium | **1400**-1600
-{% endset %}
-{% set lectures = (sem1_lectures | trim) if S == "1" else (sem2_lectures | trim) %}
-
-Module   | Venue            | Time
----------------------- | -------- | ---------------- |---------------
-{{ lectures }}
+Module                 | Venue    | Time
+---------------------- | -------- | ----
+{{ lectures | trim }}
 
 Lectures start on time sharp and end around 15 minutes before official end time.
 
