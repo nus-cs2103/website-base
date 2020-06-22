@@ -1,29 +1,29 @@
 <!-- ===========================  primary module configuration ============================================= -->
 
-<variable name="module">CS2103</variable>
+<variable name="module">CS2113</variable>
 <variable name="module_pair">{{ module }}/T</variable>
-<variable name="module_name">Software Engineering</variable>
-<variable name="module_color">success</variable>
+<variable name="module_name">Software Engineering & Object-Oriented Programming</variable>
+<variable name="module_color">primary</variable>
 
 <variable name="S">1</variable>
-<variable name="semester">AY2021S{{ S }}</variable>
-<variable name="period">2020 Aug-Dec</variable>
+<variable name="semester">AY2223S{{ S }}</variable>
+<variable name="period">2022 Aug-Nov</variable>
 <variable name="current_week">-1</variable>
 
-<variable name="algolia">no</variable>
+<variable name="algolia">yes</variable>
 
-<variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
-<variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
+<variable name="luminus_module_id">2e5b00f7-280a-4a0e-9c01-c491f5e3c2d5</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQ3yMfxtxatSX5XxWnZparVJN9UkEOu504YHyShketpCzdqQth4JDcwQwhWvOBi-XH8-gkdgMgGpg1t/pub?embedded=true</variable>
+<variable name="url_coursemology_classroom">https://coursemology.org/courses/2179</variable>
 <variable name="url_ms_teams_class">x</variable>
 
-<variable name="date_w1_start">2022-01-10</variable>
+<variable name="date_w1_start">2022-08-08</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
 <variable name="recess_after_week">7</variable>
 <variable name="time_lecture_start">1600</variable>
 <variable name="time_lecture_end">1800</variable>
-<variable name="time_t_lecture_start">1200</variable>
-<variable name="time_t_lecture_end">1400</variable>
+<variable name="time_t_lecture_start">1600</variable>
+<variable name="time_t_lecture_end">1800</variable>
 
 <variable name="ip_name">iP</variable>
 <variable name="ip_repo_name">ip</variable>
@@ -32,19 +32,19 @@
 
 <variable name="tp_first_week">3</variable>
 <variable name="version_practice">v1.1</variable>
-<variable name="version_first">v1.2</variable>
-<variable name="version_penultimate">v1.3</variable>
-<variable name="version_final">v1.4</variable>
-<variable name="version_future">v2.0</variable>
+<variable name="version_first">v1.0</variable>
+<variable name="version_penultimate">v2.0</variable>
+<variable name="version_final">v2.1</variable>
+<variable name="version_future">v3.0</variable>
 <variable name="example_team_id">{{ module }}-T09-2</variable>
 
 <variable name="ug_pages_per_person">1</variable>
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
-<variable name="marks_ip">30</variable>
-<variable name="marks_ip_implementation">15</variable>
-<variable name="marks_ip_pm">10</variable>
+<variable name="marks_ip">20</variable>
+<variable name="marks_ip_implementation">10</variable>
+<variable name="marks_ip_pm">5</variable>
 <variable name="marks_ip_documentation">5</variable>
 <variable name="marks_tp">45</variable>
 <variable name="marks_tp_design">5</variable>
@@ -54,8 +54,8 @@
 <variable name="marks_tp_pm_individual">5</variable>
 <variable name="marks_tp_pm_team">5</variable>
 <variable name="marks_tp_qa">10</variable>
-<variable name="marks_tp_individual">35</variable>
-<variable name="marks_tp_team">10</variable>
+<variable name="marks_tp_individual">40</variable>
+<variable name="marks_tp_team">5</variable>
 <variable name="marks_participation">5</variable>
 <variable name="marks_exam">30</variable>
 <variable name="marks_exam_essay">0</variable>
@@ -113,6 +113,7 @@
 <variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/{{ tp_repo_name }}</variable>
+<variable name="url_ab3_fork_website_ab3">{{ url_module_gihub_io | safe }}/addressbook-level3</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
 <variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/{{ "intermediate" if cs2103 or tic4002 else "basic"}}.html</variable>
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>

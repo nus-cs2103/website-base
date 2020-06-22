@@ -20,8 +20,7 @@ skinparam backgroundcolor transparent
   + QA: <b><color:red>{{ marks_tp_qa }}</color></b> marks
   + Project Management: <b><color:red>{{ marks_tp_pm }}</color></b> marks{% if not (tic4001 or tic4002)%}
  + Exam: <b><color:red>{{ marks_exam }}</color></b> marks
-  + Part I (MCQ): <b><color:red>{{ marks_exam_mcq }}</color></b> marks
-  + --Part II (Essay):-- <b><color:red>{{ marks_exam_essay }}</color></b> --marks-- {% endif %}
+ + MCQ + Essay : <b><color:red>{{ marks_exam_mcq }}</color></b> marks {% endif %}
 @endwbs
 </puml>
 
