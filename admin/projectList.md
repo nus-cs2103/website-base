@@ -1,22 +1,26 @@
-{% from "admin/ip-showcase.md" import tutorials, students with context %}
+{% from "_module-" + module + "/studentData.mbdf" import students, tutorials with context %}
 
 <frontmatter>
-title: "Project List"
+title: "tP Teams List"
 header: header.md
 footer: footer.md
 head: scheduleHead.md
 pageNav: 2
 </frontmatter>
 
-# tP Showcase
+# tP Teams
 
 {% macro get_team_start(team_id, team_org, team_repo, team_website) %}
 <div class="container">
 <div class="row">
 <div class="col border">
 
-### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/addressbook-level3/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> [<img src="https://travis-ci.org/{{ team_org }}/main.svg?branch=master" alt="Build Status">](https://travis-ci.org/{{ team_org }}/main)
+### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/tp/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> [<img src="{{ team_repo }}/workflows/Java%20CI/badge.svg">]({{ team_repo }}/actions)
+
+<span tags="m--cs2103">
+
 <img src="{{ team_website }}/images/Ui.png" width="750" onerror="this.src='images/placeholder-large.png';" /><p/>
+</span>
 </div>
 </div>
 <div class="row">
@@ -34,12 +38,12 @@ pageNav: 2
 <div class="col text-center border">
 
 **{{ name }}**<br>
-<img src="{{ team_website }}/images/{{ username | lower }}.png" width="120"  onerror="this.src='images/placeholder-small.png';"/><br>[:fas-file-powerpoint:]({{ team_website }}/team/{{ username | lower }}.html) [:fas-code:](https://nus-{{ module }}-{{ current_semester }}.github.io/tp-dashboard/#=undefined&search={{ username | lower }}) [:fas-code-branch:]({{ team_repo }}/pulls?q=is%3Apr+author%3A{{ username }})
+<sup>[`{{ username }}`](https://github.com/{{ username }})</sup><br>
+<img style="border-radius: 8px;" src="{{ team_website }}/images/{{ username | lower }}.png" width="120"  onerror="this.src='https://github.com/{{ username }}.png';"/><br>[:fas-file-powerpoint:]({{ team_website }}/team/{{ username | lower }}.html) [:fas-code:](https://nus-{{ module }}-{{ semester }}.github.io/tp-dashboard/#breakdown=true&search={{ username | lower }}) [:fas-code-branch:]({{ team_repo }}/pulls?q=is%3Apr+author%3A{{ username }})
 </div>
 {% endmacro %}
 
 
-{% set current_semester = "AY1920S1" %}
 {% set panel_contents = "" %}
 {% set team_contents = "" %}
 {% set current_team = "" %}
@@ -51,9 +55,9 @@ pageNav: 2
     {% set student_tutorial = student_team.slice(0, -2) %}
     {% set student_name = student[0] %}
     {% set student_username = student[2] %}
-    {% set team_org = current_semester + '-' + student_team %}
-    {% set team_website = "https://" + team_org + ".github.io/main" %}
-    {% set team_repo = "https://github.com/" + team_org + "/main" %}
+    {% set team_org = semester + '-' + student_team %}
+    {% set team_website = "https://" + team_org + ".github.io/tp" %}
+    {% set team_repo = "https://github.com/" + team_org + "/tp" %}
 
     {% if student_tutorial == tutorial %}
       {% if current_team != student_team %}
