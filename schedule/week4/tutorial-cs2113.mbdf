@@ -27,9 +27,9 @@
 <div class="indented-level2">
 
 <panel header="iP PR review allocation" minimized >
-{% from "_module-" + module + "/studentData.mbdf" import ip_review_allocation with context %}
+{% from "_module-" + module + "/studentData.mbdf" import ip_pr_review_allocation with context %}
 Team       | Reviewer | PR to review
------------|----------|--------------{% for line in ip_review_allocation  %}
+-----------|----------|--------------{% for line in ip_pr_review_allocation  %}
 {{ line[0] }} | {{ line[1] }} | [{{ line[2] }}]({{ module_org }}/duke/pulls/{{ line[2] }}){% endfor %}
 </panel>
 <p/>
