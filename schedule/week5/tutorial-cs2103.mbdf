@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import thumb, show_as_tab with context %}
-{% from "_config.mbdf" import team_review_allocation with context %}
+{% from "_module-" + module + "/studentData.mbdf" import team_review_allocation with context %}
 
 #### {{ thumb(1) }} Discuss iP progress
 

@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import button, embed_topic, thumb, timing_badge with context %}
-{% from "_config.mbdf" import weekly_ip_tasks with context %}
+{% from "_module-" + module + "/weeklyIpTasks.mbdf" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
  # Common text segments

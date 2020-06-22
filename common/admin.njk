@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import show_stars with context %}
-{% from "_config.mbdf" import weekly_tp_themes with context %}
+{% from "_module-" + module + "/weeklyTpTasks.mbdf" import weekly_tp_themes with context %}
 
 {% macro show_admin_pagetop_for_topic(topics, topic) %}
 <frontmatter>
