@@ -1,7 +1,6 @@
 <!-- ===========================  primary module configuration ============================================= -->
 
 <span id="module">CS2103</span>
-<span id="module_pair">CS2103/T</span>
 <span id="module_name">Software Engineering</span>
 <span id="module_color">success</span>
 
@@ -10,11 +9,12 @@
 <span id="period">2020 Aug-Dec</span>
 
 <span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</span>
-<span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true</span>
+
 <span id="pr_review_mapping">https://docs.google.com/spreadsheets/d/e/2PACX-1vRWi6lYGxlvJF-O--ndWa5PU7LKREcoKLAUJ8QRNtBy-9TYkg2MnNPy_KrdO7zH9fbaVZ455nDnNpPd/pubhtml?gid=0&single=true</span>
 <span id="files_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
 <span id="announcements_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
 <span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
+
 <span id="first_version">v1.2</span>
 <span id="penultimate_version">v1.3</span>
 <span id="final_version">v1.4</span>
@@ -48,6 +48,7 @@
 
 <!-- ===========================  secondary module configuration =========================================== -->
 
+<span id="module_pair">{{ module }}/T</span>
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 
 <span name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></span>
@@ -56,6 +57,7 @@
 <span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
 <span id="module_gh_pages">https://nus-{{ module | lower }}-{{ semester }}.github.io</span>
 <span id="module_website">{{ module_gh_pages }}/website</span>
+<span id="link_team_list">{{baseUrl}}/admin/teamList.html</span>
 <span id="ab3_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</span>
 <span id="participation_marks_page">www.comp.nus.edu.sg/~cs2103</span>
 <span id="bugs_link">{{ module_org | safe }}/forum/issues</span>

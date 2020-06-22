@@ -275,8 +275,8 @@ Update the following pages in your project repo:
 * **README.md** page: Update it to match your project.
 
   * Add a UI mockup of your intended final product.
-    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example](projectList.html)), yours should not look out of place.%%<br>
-    {{ icon_tip }} If you did the above update correctly, UI mock up and profile photos should appear in your project website and this [**Project List Page**](projectList.html).
+    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ link_team_list }})), yours should not look out of place.%%<br>
+    {{ icon_tip }} If you did the above update correctly, UI mock up and profile photos should appear in your project website and this [**Project List Page**]({{ link_team_list }}).
 
   * Update all contents to match your own project.
 
