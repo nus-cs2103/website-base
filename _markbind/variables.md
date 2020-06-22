@@ -15,16 +15,22 @@
 <span id="announcements_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
 <span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
 
+<variable name="date_semester_start">2020-08-10</variable>
+<variable name="date_first_lecture">2020-08-14</variable>
+<variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
+<variable name="format_normal">ddd, MMM Do</variable>
+
+<variable name="ip_repo_name">ip</variable>
+
 <span id="first_version">v1.2</span>
 <span id="penultimate_version">v1.3</span>
 <span id="final_version">v1.4</span>
 <span id="future_version">v2.0</span>
 
-<variable name="date_semester_start">2020-08-10</variable>
-<variable name="date_first_lecture">2020-08-14</variable>
-<variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
 <variable name="date_final_submission">2020-11-09</variable>
-<variable name="format_normal">ddd, MMM Do</variable>
+<variable name="ug_pages_per_person">1</variable>
+<variable name="dg_pages_per_person">3</variable>
+<variable name="uml_diagrams_per_person">2 types of</variable>
 
 <variable name="marks_ip">20</variable>
 <variable name="marks_tp">45</variable>
@@ -40,10 +46,6 @@
 <variable name="marks_exam_essay">0</variable>
 <variable name="marks_exam_mcq">30</variable>
 <variable name="mcq_count">100</variable>
-
-<variable name="ug_pages_per_person">1</variable>
-<variable name="dg_pages_per_person">3</variable>
-<variable name="uml_diagrams_per_person">2 types of</variable>
 
 
 <!-- ===========================  secondary module configuration =========================================== -->

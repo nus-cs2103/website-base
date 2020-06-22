@@ -31,7 +31,7 @@
     <hr>
     <md>**&nbsp;Individual Project (iP):**</md>
     <li><a href="{{baseUrl}}/admin/ip-overview.html" class="dropdown-item"><md>{{ icon_project }} Individual Project Info</md></a></li>
-    <li><a href="{{module_org}}/duke" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke Upstream Repo</md></a></li>
+    <li><a href="{{module_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} iP Upstream Repo</md></a></li>
     <li><a href="{{ ip_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: iP Code Dashboard</md></a></li>
     <li><a href="{{ baseUrl }}/admin/ip-progress-dashboard.html" class="dropdown-item"><md>:fas-trophy: iP Progress Dashboard</md></a></li>
     <hr>

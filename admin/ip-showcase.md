@@ -376,9 +376,9 @@ pageNav: 2
 {% endif %}
 {% set student_name = student[0] %}
 {% set username = student[2] %}
-{% set duke_website = "https://" + username + ".github.io/duke" %}
-{% set duke_repo = "https://github.com/" + username + "/duke" %}
-#### {{ student_name }} ([<span class="text-monospace">@{{ username }}</span>](https://github.com/{{ username }})) <small>[:fas-home:]({{ duke_website }}) [:fab-github:]({{ duke_repo }}) [:fas-download:]({{ duke_repo }}/releases) [:fas-code:](https://nus-cs2103-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors&search={{ username }}&sortWithin=title&since=2019-08-16&timeframe=commit&mergegroup=false&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2Fduke%5Bmaster%5D) [:fas-code-branch:](https://github.com/nus-cs2103-{{ semester }}/duke/pulls/{{ username }}) <trigger for="pop:{{ username }}"><span class="text-primary">:fas-user:</span></trigger></small>
+{% set duke_website = "https://" + username + ".github.io/" + ip_repo_name %}
+{% set duke_repo = "https://github.com/" + username + "/" + ip_repo_name %}
+#### {{ student_name }} ([<span class="text-monospace">@{{ username }}</span>](https://github.com/{{ username }})) <small>[:fas-home:]({{ duke_website }}) [:fab-github:]({{ duke_repo }}) [:fas-download:]({{ duke_repo }}/releases) [:fas-code:](https://nus-cs2103-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors&search={{ username }}&sortWithin=title&since=2019-08-16&timeframe=commit&mergegroup=false&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2F{{ ip_repo_name }}%5Bmaster%5D) [:fas-code-branch:](https://github.com/nus-cs2103-{{ semester }}/{{ ip_repo_name }}/pulls/{{ username }}) <trigger for="pop:{{ username }}"><span class="text-primary">:fas-user:</span></trigger></small>
 <img src="{{ duke_website }}/Ui.png" height="750" style="max-width: 100%"  onerror="this.src='images/placeholder-small.png';" /><p/>
 
 

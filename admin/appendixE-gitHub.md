@@ -71,7 +71,7 @@ After receiving your team ID, one team member should do the following steps:
 
 <box tags="m--cs2113" light type="important">
 
-The tP project template given to you is a variation of the Duke repo you used for the iP, but ==with some important differences==. Please follow instructions carefully, rather than follow what you remember from the iP.
+The tP project template given to you is a variation of the iP repo you used for the iP, but ==with some important differences==. Please follow instructions carefully, rather than follow what you remember from the iP.
 
 </box>
 
