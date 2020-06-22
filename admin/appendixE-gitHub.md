@@ -75,7 +75,7 @@ The tP project template given to you is a variation of the iP repo you used for 
 
 </box>
 
-1. **Fork** the [{{module_org}}/tP]({{module_org}}/tP) repo to your team org.
+1. **Fork** the [{{module_org}}/tp]({{module_org}}/tp) repo to your team org.
    * This repo (let's call it the _team repo_) is to be used as the repo for your project.
    * <span id="do-not-rename">{{ icon_important_big_red }} Please do not rename the fork %%Reason: our grading scripts rely on the repo name.%%</span>
 1. **Enable the issue tracker**.
@@ -91,7 +91,9 @@ The tP project template given to you is a variation of the iP repo you used for 
 1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
    Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
 1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tp]({{module_org}}/tp)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ module }}-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
-   **When filling the PR description**, ==fill the details exactly as specified in the text box== %%(Reason: The PR description is used by grading scripts)%%.
+   Please fill in these details as specified because they are used by our grading scripts.
+   * **PR subject: the name of your product** e.g., `InsureList`
+   * **Description: a 1-2 sentence overview** (plain text only, no formatting or links) of your project indicating the target user and the value proposition e.g., `InsureList helps insurance agents manage detail of their clients. It is optimized for CLI users so that frequent tasks can be done faster by typing in commands.`
 
 ****({{ icon_individual }}, {{ icon_individual }}, {{ icon_individual }}, ...) Every team member:****
 
@@ -100,7 +102,7 @@ The tP project template given to you is a variation of the iP repo you used for 
    <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
 1. **Set up** the developer environment in your computer by following the
-   <span tags="m--cs2103">[_Setting up and getting started_ page]({{ ab3_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113">the [README]({{module_org}}/tP) carefully as the ==steps are different from the iP==.</span>
+   <span tags="m--cs2103">[_Setting up and getting started_ page]({{ ab3_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113">the [README]({{module_org}}/tp) carefully as the ==steps are different from the iP==.</span>
 
 <box type="wrong" seamless>
 

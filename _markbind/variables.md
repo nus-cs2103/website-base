@@ -67,7 +67,7 @@
 <span id="admin_link"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span>
 <span id="schedule_link"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></span>
 <span id="ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</span>
-<span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard</span>
+<span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard/#breakdown=true</span>
 
 <!-- ===========================  icons ================================================= -->
 
