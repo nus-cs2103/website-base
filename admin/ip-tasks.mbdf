@@ -228,8 +228,18 @@ This activity is considered for iP grading.
 <p/>
 <panel header="Allocation for iP peer evaluation" minimized >
 
-{% from "admin/ip-peer-review-allocation.njk" import show_allocation_table with context %}
-{{ show_allocation_table() }}
+{% from "_module-" + module + "/studentData.mbdf" import ip_final_peer_evaluation_allocation as allocation %}
+
+{% macro get_links(username) -%}
+[[JAR](https://github.com/{{ username }}/duke/releases)][[User Guide](https://{{ username }}.github.io/duke)][[Code](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#search={{ username }}&sort=groupTitle&sortWithin=title&since=2020-01-13&timeframe=commit&mergegroup=false&groupSelect=groupByRepos&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2Fduke%5Bmaster%5D)]
+{%- endmacro  %}
+
+Your username | 1st iP to evaluate | 2nd iP to evaluate
+--------------|--------------------|------------------
+{% for allocation in allocations  -%}
+{{ allocation[0] }} | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }}
+{% endfor %}
+
 </panel>
 <p/>
 </div>
