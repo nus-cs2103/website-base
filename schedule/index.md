@@ -159,7 +159,11 @@ Admin info relevant to the week will appear in this tab.
 </box>
 {% endif %}
 
+{% if module in ["TIC2002", "TE3201"] %}
 <include src="admin-{{ module | lower }}.mbdf" optional />
+{% else %}
+{{ show_weekly_admin_tasks(week_num) }}
+{% endif %}
 </div>
 {% endmacro %}
 
@@ -175,6 +179,36 @@ Topics allocated to the week will appear in this tab.
 </box>
 {% endif %}
 {{ topics.show_week_schedule(week_num, weekly_textbook_topics) }}
+</div>
+{% endmacro %}
+
+
+{% macro show_week_tutorial_page(week_num) %}
+<div class="website-content">
+{{ show_week_pagetop(week_num, "tutorial") }}
+
+{% if week_num == "1" %}
+<box type="info" dismissible>
+
+Information relevant to the week's tutorial will appear in this tab.
+</box>
+{% endif %}
+<include src="tutorial-{{ module | lower }}.mbdf" optional />
+</div>
+{% endmacro %}
+
+
+{% macro show_week_project_page(week_num) %}
+<div class="website-content">
+{{ show_week_pagetop(week_num, "project") }}
+
+{% if week_num == "1" %}
+<box type="info" dismissible>
+
+Project-related information relevant to the week will appear in this tab.
+</box>
+{% endif %}
+<include src="project-{{ module | lower }}.mbdf" optional />
 </div>
 {% endmacro %}
 
