@@ -1,4 +1,4 @@
-{% if module == "TIC2002" %}
+{% if module in ["TIC2002", "TE3201"] %}
 
 <include src="index-{{ module | lower }}.md" />
 

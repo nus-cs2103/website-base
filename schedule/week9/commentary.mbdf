@@ -1,0 +1,54 @@
+{% from "common/topics.njk" import slugify with context %}
+
+<span id="{{ slugify('UML Class Diagrams: Basics') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+This week, **we start learning a UML diagram called _Class Diagrams_.**
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=c9727e98-4bb6-4de3-b3ec-ab81009c3af2).
+
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('UML Object Diagrams') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**As we learn about class diagrams, we should also learn about _object diagrams_** as they complement each other.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="uml-notes-notes">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**UML has a way to add additional notes to any UML diagram**, as shown below.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="followup-uml-notes-constraints">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+After learning the UML notations above, you can attempt the exercise in the following video:
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=dab3bb0f-c0cd-40af-8e39-ab88005aa195).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('SDLC Process Models') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Given below is a brief introduction to the some _processes_ (i.e., approaches for running the project) by software projects. As you are not required to follow these in your project, we only aim to get an awareness of these processes in this module.
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=a1bfa255-292f-4ee6-8e65-ab8200837d82).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->

@@ -16,8 +16,12 @@ mark {
     color: #980000;
 }
 
-.alt-python {
+.alt-java {
     display: none;
+}
+
+.alt-python {
+    display: block;
 }
 
 .flat {

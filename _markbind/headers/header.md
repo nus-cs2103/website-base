@@ -24,7 +24,7 @@
     <li><a href="{{announcements_link}}" target="_blank" class="dropdown-item"><md>:glyphicon-bullhorn: Announcements</md></a></li>
     <li><a href="{{files_link}}" target="_blank" class="dropdown-item"><md>:fas-file-upload: File Submissions</md></a></li>
     <li><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
-    <li tags="m--cs2113 m--tic2002"><a href="{{repl_link}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} `repl.it` link</md></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="{{repl_link}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} `repl.it` link</md></a></li>
     <li><a href="{{java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li><a href="{{ baseUrl }}/admin/forum-activities-dashboard.html" class="dropdown-item"><md>:fas-trophy: Forum Activities Dashboard</md></a></li>
     <li><a href="{{participation_marks_page}}" class="dropdown-item text-success"><md>:fas-trophy: Participation Dashboard</md></a></li>

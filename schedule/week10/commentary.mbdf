@@ -1,0 +1,45 @@
+{% from "common/topics.njk" import slugify with context %}
+
+<span id="{{ slugify('OOP and UML Class/Object Diagrams: Inheritance') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Let's learn the important OOP concept of _inheritance_** this week, together with how to show it in UML class diagrams.
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=1c82c417-5378-4b7c-84c0-ab88009b476b).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('UML Class/Object Diagrams: Composition, Aggregation, Dependencies') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Next, we cover some additional class/object diagram notations** used to show different types of relationships in class/object diagrams.
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=b29faf7d-b575-4ad9-a43b-ab880073e127).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="followup-uml-classDiagrams-dependencies-what">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+After learning the UML syntax in the section above, you can try this worked example:<br>
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=7a17fb5c-3b1f-4315-8d0e-ab8e00d2cbe9).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('Types of Testing') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Let's also have a brief look at various types of testing** that is done in software projects, as you will be learning how to do one of them using Python in this week too.
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=f978d66a-214b-487d-8731-ab880081c9ef).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->

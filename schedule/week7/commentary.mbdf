@@ -1,0 +1,100 @@
+{% from "common/topics.njk" import slugify with context %}
+
+<span id="{{ slugify('Automated Testing of Text UIs') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+As your program gets bigger, manual testing becomes a hassle. However, not testing the code sufficiently and often enough can cause the program to have bugs without you realizing it.
+
+**Let us learn some concepts related to automating the tasks of testing.**
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="testing-introduction-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**First, let us learn some terminology related to software testing**.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="testing-testingTypes-regressionTesting-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Next, we learn about a type of testing that is used often by developers**.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="testing-testAutomation-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+From the above, you realized the need for test automation. **Next, we learn what exactly is _test automation_**.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="testing-testAutomation-testingTextUis">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Given below is a simple technique that you can use to semi-automate the testing of CLI apps** such as Monty, if you are running it in your computer (not on repl.it).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="followup-testing-testAutomation-testingTextUis">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+You are not required to use the above technique in your project but using it can help you cut down the time spent on testing your code.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('Integration Approaches') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+In bigger software projects, the code is divided into multiple parts, sometimes, written by different developers. That means at some point we have to put those parts together, which is called _integration_.
+
+**Given below is an introduction to different integration approaches.**
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('Code Quality') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+It is not enough that the code works; it should be of good quality. In particular, the code should be easy to understand and modify by other developers.
+
+**Given below are some guidelines you can use to improve the code quality.** Learn them and ==try to follow at least some of them in your project coding==.
+
+Note: some of the guidelines refer to _classes_. Although we have touched on what OOP is, we still haven't learned to write Python classes. Therefore, you can skip those guidelines and come back to them after we have covered Python classes in a later week.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('Refactoring') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+When the code quality gets bad, the remedy is to apply refactoring. Let's learn what that is.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="followup-refactoring-when">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+As you do the project, try to refactor your code when you think the quality of the code is getting bad.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->

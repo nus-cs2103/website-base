@@ -1,0 +1,26 @@
+<span id="IDEs-Basic-Features">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**IDEs are code editors used by programmers.** Read the following sections to learn what IDEs are and what they can do.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="followup-IDEs-Basic-Features">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+You are already familiar with repl.it, which can be considered an _online IDE_ with limited functionality. Now it it time for you to try a proper IDE. More about that will be covered under Python topics.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="Project-Mgt-Scheduling-and-Tracking">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Next, we cover some basic (almost common sense) guidelines to follow managing a software project (applies to other types of projects too). While these are not strictly necessary for the module project, knowing them can help you communicate better with software project teams.
+</variable>
+</include>
+</span>

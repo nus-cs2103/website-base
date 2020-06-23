@@ -1,0 +1,137 @@
+{% from "common/topics.njk" import slugify with context %}
+
+<span id="{{ slugify('Test Case Design') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Previously, you learned how to write Python unit tests. This week, let's learn about how to design better test cases.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="testCaseDesign-introduction-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**What is _test case design_, and why should we care?**
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=bd513fd6-8ccb-4bb3-8467-ab8d009a8de0).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="testCaseDesign-introduction-blackVsGlass">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**How much information about the code is being used when designing test cases?**
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=8221a124-fe08-4c48-8a72-ab8d00aa53d3).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('Equivalence Partitioning') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Next, let us look at a technique that can improve the quality of test cases.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="testCaseDesign-equivalencePartitions-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=59a122d2-7170-4aea-9888-ab8d00b850ed).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testCaseDesign-equivalencePartitions-basic">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=83001c05-69fb-4322-b571-ab8d00cd4337).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Boundary Value Analysis') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Here is another technique that can improve the quality of test cases.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testCaseDesign-boundaryValueAnalysis-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=357faa3a-c24a-4ff5-ac10-ab8e00baf4f5).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="testCaseDesign-boundaryValueAnalysis-how">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=0edaf584-6ba5-4b05-8f98-ab8e00bfc8975).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="{{ slugify('Other QA Techniques') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Testing is not the same as Quality Assurance. What else can be done for QA?
+
+</variable>
+</include>
+</span>
+
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="qualityAssurance-codeReviews-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=e43e6509-74e2-4a5c-9f3d-ab9200c552f6).
+
+</variable>
+</include>
+</span>
+
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="qualityAssurance-staticAnalysis-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=a44af2d0-85a7-4183-8330-ab9200cfe405).
+
+</variable>
+</include>
+</span>
+
+<!-- ---------------------------------------------------------------------------- -->
+
+<span id="qualityAssurance-formalVerification-what">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+:fas-video: The relevant video is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=7b805aba-bb87-41a3-abb6-ab9200d68637).
+
+</variable>
+</include>
+</span>

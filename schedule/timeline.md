@@ -13,7 +13,7 @@ pageNav: 3
 
 # Summary of the Module Timeline
 
-<box type="warning" dismissible>
+<box tags="m--cs2103 m--cs2113 m--tic2002" type="warning" dismissible>
 <span id="warnings">
 
 * Please try to **follow instructions closely**. If you deviate, our grading scripts will not be able to detect your work.
@@ -36,11 +36,20 @@ pageNav: 3
 </div>
 <div tags="m--tic2002">
 
-### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ weeks[week_num-1].day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_todo, "admin-" + (module | lower) + ".html") }}
+### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ start_day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_todo, "admin-" + (module | lower) + ".html") }}
 
 </div>
+<div tags="m--te3201">
+
+### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ start_day }}</small></small></a>
+
+</div>
+<div class="indented-level2">
 
 <include src="week{{ week_num }}/index.md#summary" optional />
+</div>
+{{ hr_double }}
+
 {% endfor %}
 
 </div>

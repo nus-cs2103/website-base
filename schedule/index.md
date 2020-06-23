@@ -29,6 +29,13 @@ pageNav: 1
     topics: {name: "Topics", file: "topics", icon: icon_book, pagenav: 3},
     admin: {name: "Tasks", file: "admin-" + (module | lower), icon: icon_todo, pagenav: 4}
   } %}
+{% elseif module == "TE3201" %}
+  {% set categories = {
+    notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 1},
+    topics_py: {name: "Programming Topics", file: "topics-py", icon: ":fas-code:", pagenav: 4},
+    topics: {name: "SE Topics", file: "topics", icon: icon_book, pagenav: 3},
+    admin: {name: "Tasks", file: "admin", icon: ":fas-tasks:", pagenav: 4}
+  } %}
 {% else %}
   {% set categories = {
     notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
@@ -55,7 +62,7 @@ pageNav: {{ categories[category].pagenav }}
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
 {% for c,v in categories %}
   {%- set is_active = " active" if categories[category] == v else "" -%}
-  <li class="page-item{{ is_active }}"><a class="page-link" href="{{v.file}}.html">{{ v.icon }} {{v.name}}</a></li>
+  <li class="page-item{{ is_active }}"><a class="page-link" href="{{v.file}}.html"><md>{{ v.icon }}</md> {{v.name}}</a></li>
 </li>
 {% endfor %}
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item{{ next_status }}"><a class="page-link" href="../week{{ (week_num + 1) }}/"><md>**Next Week** :glyphicon-chevron-right:</md></a></li>
@@ -74,20 +81,38 @@ pageNav: {{ categories[category].pagenav }}
 <span id="summary">
 <div class="container">
   <div class="row">
-  <div class="col-sm border-right border-bottom">
+  <div class="col-sm" style="border-right: 1px dotted lightgrey">
 
+#### <a href="topics-py.html" class="badge badge-light">:fas-code: Programming Topics</a>
+<include src="../programming-topics.mbdf#week{{ week_num  }}-toc" optional />
+
+  </div>
+  <div class="col-sm">
+
+{% if module == "TE3201" %}
+#### <a href="topics.html" class="badge badge-light">{{ icon_book }} SE Topics</a>
 {{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
+{% else %}
+{{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
+{% endif %}
 
 <panel type="seamless" header="%%Full ToC%%">
   <include src="topics.md#toc" optional />
 </panel>
 
   </div>
-  <div class="col-sm border-bottom">
+  </div>
+  <div class="row" style="border-top: 1px dotted lightgrey">
+  <div class="col-sm">
 
+{% if module == "TE3201" %}
+#### <a href="admin.html" class="badge badge-light mt-2">:fas-tasks: Tasks</a>
+<include src="admin-{{ module | lower }}.mbdf#summary" optional/>
+{% else %}
 {% if module == "TIC2002" %}**Tasks:**{% else %}**Admin:**{% endif %}
 <include src="admin.md#summary" optional/>
 <include src="project-{{ module | lower }}.mbdf#summary" optional/>
+{% endif %}
 
   </div>
   </div>
@@ -134,7 +159,7 @@ Admin info relevant to the week will appear in this tab.
 </box>
 {% endif %}
 
-{{ show_weekly_admin_tasks(week_num) }}
+<include src="admin-{{ module | lower }}.mbdf" optional />
 </div>
 {% endmacro %}
 
@@ -146,8 +171,7 @@ Admin info relevant to the week will appear in this tab.
 {% if week_num == "1" %}
 <box type="info" dismissible>
 
-* Topics allocated to the week will appear in this tab.
-* If the lecture is in the 2nd half of the week (i.e., Wednesday 12 noon or later), the lecture in week `N` will cover topics allocated to the week `N+1` e.g., **Lecture 1 will cover Week 2 topics**, and so on.
+Topics allocated to the week will appear in this tab.
 </box>
 {% endif %}
 {{ topics.show_week_schedule(week_num, weekly_textbook_topics) }}
@@ -155,32 +179,17 @@ Admin info relevant to the week will appear in this tab.
 {% endmacro %}
 
 
-{% macro show_week_tutorial_page(week_num) %}
+{% macro show_programming_topics_page(week_num) %}
 <div class="website-content">
-{{ show_week_pagetop(week_num, "tutorial") }}
+{{ show_week_pagetop(week_num, "topics_py") }}
 
 {% if week_num == "1" %}
 <box type="info" dismissible>
 
-Information relevant to the week's tutorial will appear in this tab.
+Programming topics allocated to the week will appear in this tab.
 </box>
 {% endif %}
-<include src="tutorial-{{ module | lower }}.mbdf" optional />
-</div>
-{% endmacro %}
-
-
-{% macro show_week_project_page(week_num) %}
-<div class="website-content">
-{{ show_week_pagetop(week_num, "project") }}
-
-{% if week_num == "1" %}
-<box type="info" dismissible>
-
-Project-related information relevant to the week will appear in this tab.
-</box>
-{% endif %}
-<include src="project-{{ module | lower }}.mbdf" optional />
+<include src="../programming-topics.mbdf#week{{ week_num }}" optional />
 </div>
 {% endmacro %}
 

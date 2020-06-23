@@ -1,0 +1,411 @@
+<frontmatter>
+title: "Admin Info"
+header: header.md
+footer: footer.md
+head: adminHead.md
+pageNav: 2
+</frontmatter>
+
+<div class="website-content" id="main">
+
+# **TE3201 Software Engineering**
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Module overview
+<div class="indented" id="module-info">
+
+<img src="{{baseUrl}}/images/growingPlant.png" width="700">
+
+_TIC2002 Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects.
+</div>
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Using this module website
+
+<div class="indented" id="website-info">
+<include src="usingThisWebsite.md#main" />
+</div>
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Instructors
+<div class="indented">
+
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+
+![Damith]({{ baseUrl }}/admin/images/damith.png)
+    </div>
+    <div class="col">
+
+**Damith Chatura RAJAPAKSE**<br>
+Associate Professor, NUS School of Computing<br>
+PhD, Software Engineering, NUS, 2002-2006<br>
+BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
+%%:fas-envelope:%% <span id="prof-email">`damith`[at]`comp.nus.edu.sg`</span><br>
+%%:fas-map-marker-alt:%% COM2-02-57<br>
+%%:fas-phone-square:%% 651 64359<br>
+%%:fas-home:%% https://www.comp.nus.edu.sg/~damithch
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Lectures
+<div class="indented" id="lectures-info">
+
+%%:far-clock:%% Tuesdays 1800-2130<br>
+%%:fas-map-marker-alt:%% Venue E3-06-15<br>
+
+:far-frown: **Lectures will not be webcast** as the venue does not have a webcast facility. ==Please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture.
+
+The rough break-down of a typical lecture:
+* 1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics.
+* 1830-1900: Doing exercises related to previous week topics.
+* 1900-2000: SE topics for the current week.
+* 2000-2100: Programming topics for the current week. Those who are already familiar with programming and not interested in learning Python can leave early.
+* 2100-2130: You can stay back and do exercises for the current week. Approach prof for help as needed.
+
+
+**{{ icon_slides }} Lecture slides will be uploaded to LumiNUS after the lecture**, usually by midnight of the same day. **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.
+
+{{ icon_tip }} If slides are not in LumiNUS by the expected times, please feel free to ping the lecturer.
+
+
+</div>
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Tutorials
+
+There is no formal tutorial. Instead, tutorial-like activities are integrated into the lecture.
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Textbook
+
+**Software Engineering Textbook**:
+
+A customized **online text book** is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.
+* Full version is [here]({{baseUrl}}/se-book-adapted/index.html): The relevant sections are embedded under the corresponding week in the [schedule page]({{baseUrl}}/schedule/index.html).
+* {{ icon_print }} Printable version is [here]({{baseUrl}}/se-book-adapted/print.html). ==You are encouraged to use the online full version when possible== (instead of the printable version or the PDF version), as it has more content %%videos, exercises, etc.%%
+
+**Programming Textbook**:
+
+[An additional **guide on programming basics**]({{baseUrl}}/programming/index.html) is provided for you to get started or programming. The topics in that textbook are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Programming Language
+
+This module uses Python programming language to teach you programming basics required for software engineering. However, Python is not examinable.
+
+**Install [Python (the latest 3.x version)](https://www.python.org/downloads/)** in your computer.
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Programming Exercises
+<span id="exercises-info">
+
+In some weeks, there will be some programming exercises for you to submit (on `Repl.it`). You should do the exercises as you learn the topics.
+
+<box type="warning">
+
+**Learn the topic first before trying the exercises**. While these are exercises provided to self-test your knowledge, the more important thing is to read and understand the topic content. Furthermore, not all topics are tested by exercises.
+</box>
+</span>
+
+# Project
+
+<div  id="project-info">
+
+* The project is to be done **individually**.
+* The project based on a [generic project called Monty](../programming/chapters/monty.html).
+* In the project, you will build a small chatbot, **using Python** (if you wish to use a different programming language, please ask for permission first).
+* The project is to be done in small increments. You will be given a schedule of what increments to be done in each week.
+* Some project increments will be common to all students, while some will vary from student to student (to be announced near to the date). That means your final product will be unique in terms of total features, but some features will be common to other students in the class.
+* Constraints:
+  1. You should not use relational/SQL databases e.g., MySQL
+  1. The software should work in a Windows computer that has Python 3. If your software needs other software to be installed (e.g., third-party libraries), please get prof's permission first.
+</div>
+
+<panel header="### Weekly Project Increments">
+{% for i in range(1, 14) %}
+
+#### <span class="badge badge-dark">Week {{ i }}:</span>
+<include src="../schedule/week{{ i }}/admin-te3201.mbdf#week{{ i }}-project" />
+<hr>
+{%-endfor %}
+</panel>
+<p/>
+
+<div id="final-submission-info">
+
+### Week 13: Final Submission
+
+**Submission Deadline**: Sunday of week 13 (Apr 19th). ==Submissions later than the deadline are liable to a late submission penalty==, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., `-1` per day).
+* **The deadline for seeking feedback on the project report draft**: week 13 lecture. 
+  * Preferred mode of feedback: ~~in-person (reason: it is hard to give written feedback on diagrams)~~ via email
+  * Such feedback will be limited to high-level comments only (reason: the report is graded).
+
+**Deliverables**:
+1. **Source code** of the working program: zip (not rar) the code and submit to LumiNUS<br>name:
+   File name: `{YourName}.zip` e.g., `JunHao.zip`
+1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in LumiNUS).<br>
+   Submission: Upload to LumiNUS. The file name should be your name e.g., `JunHao.docx`
+1. **Demo video**:
+   * Record a demo video showcasing the features of your product.
+   * Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).
+   * Recommended length 7 minutes, max length 10 minutes).
+   * Audio narration is optional if the demo can be understood without the audio.
+   * Ensure the video is in a format that can be played by any computer.
+   * Submission: Name the file with your name (to match the zip and the report file) and upload to LumiNUS.
+
+</div>
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Policies
+
+<span id="deadlines-info">
+
+### Deadlines
+* Deadline for weekly tasks:
+  * **If a specific deadline is given**, adhere to that.
+  * **If no specific deadline is given**, 
+    * Soft deadline: try to complete tasks allocated to a week by Tuesday 6.00pm of the following week (i.e., before the next lecture).
+    * Hard deadline: In case you fail to meet the soft deadline, there will be no penalty if a task is done within one week after the soft deadline.
+</span>
+
+<span id="plagiarism-info">
+
+### Plagiarism
+* You may view/discuss others' work or get help from others. However, <span class="text-danger"> ==the work you submit should be your own==. In case of similar submissions, marks will be divided among those submissions</span> e.g., if your submission scored 8/10 and there is another submission that is similar to your work (beyond co-incidental similarity), each submission will get 4 marks.
+</span>
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+# Tools
+<div class="indented">
+<div id="repl-info">
+
+### `repl.it`
+
+* We'll be using `Repl.it` for coding exercises (compulsory).
+* {{ icon_important_big_red }} Create an account on https://repl.it. 
+* ==Make sure you set your display name in your `repl.it` user profile to match your real name== (so that the prof can trace your `repl.it` submissions to you). 
+* Join the `repl.it` classroom `tic2002-{{ period }}` using this link [{{ repl_link }}]({{ repl_link }}).
+
+</div>
+<div id="intellij-info">
+
+### PyCharm
+
+* PyCharm is the recommended Python editor. While using PyCharm is optional, there will be no help/instructions given for other editors.
+
+* In the initial weeks, `repl.it` online editor is good enough for writing Python code. As your project code gets bigger in later weeks, you can consider installing [PyCharm](https://www.jetbrains.com/pycharm/download) on your computer. You may use the Community Edition (free) or the Professional Edition (free for students).
+</div>
+</div>
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+
+# Getting Help
+<span id="help-info">
+
+If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks
+* you can post in the [module forum]({{ forum_link }})
+* email prof at <include src="index-{{ module | lower }}.md#prof-email" inline trim/>
+* ask for prof's help during the following week’s tutorial hour
+
+</span>
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+<span id="assessment-info">
+
+# Assessment
+
+* **10%: Participation** -- To get full marks, submit weekly programming exercises and weekly project increments <trigger trigger="click" for="modal:adminInfo-deadlineInfo">on time</trigger>.
+* **30%: Project**
+  * 10%: Documentation
+  * 20%: Functionality, code
+* **60%: Final Exam**
+ 
+
+<modal large header="The Policy on Deadlines" id="modal:adminInfo-deadlineInfo">
+  <include src="index-{{ module | lower }}.md#deadlines-info"/>
+</modal>
+
+</span>
+
+<!-- .......................................................................................... --> {{ dotted_line }}
+
+
+# Exam
+
+* The final exam will be on **Wed 29th April, 1-3pm** (as per normal exam schedule).
+* The exam will be done online. Tools used: LumiNUS, Zoom, Microsoft Teams.
+
+### Early preparations
+
+* **Set up Zoom**: Follow the [Zoom exam instructions provided by NUS](https://wiki.nus.edu.sg/display/THES/Proctoring+with+Zoom) (note the requirement for ==SSO login==).
+  * **Update the name of your Zoom profile to match the exact name on your student card, ==including whether the family name is give first or last==** (reason: we need to manually locate your name in the attendance list, which is sorted by your name in LumiNUS). You will not be admitted to the Zoom meeting if you do not comply with the requirement.
+  * **Note the requirements for camera placement**: Your Zoom video feed need to capture your upper body and the work area, including the computer screen (==as explained in [this example](https://www.youtube.com/watch?v=BoeXRLfpYv4)==). That means **the built-in camera of your computer is not suitable** for this purpose. Use either a separate web cam (attached to your Computer) or use Zoom through your smart phone. If neither of those options are available to you, let the prof know ASAP (deadline: April 24).
+
+<div class="indented-level2">
+
+<box type="important">
+
+You will not be allowed into the Zoom meeting unless your Zoom name complies with the above requirement.<br>
+Your exam submission will not be accepted if your Zoom video feed does not comply with the above requirement.
+</box>
+<box type="warning">
+
+As per NUS requirements, your Zoom video feed is recorded by us and will be shared with NUS administration. If you do not consent to that, please let us know ASAP (deadline: April 24) so that we can put you in touch with the NUS administration to sort it out.
+</box>
+</div>
+
+* **Set up MS-Teams**: Follow the [_Microsoft Teams_ instructions provided by NUS](https://wiki.nus.edu.sg/display/THES/Before+exams+-+Install+and+log+in+to+Microsoft+Teams). We'll be using MS-Teams as a backup in case of Zoom fails.
+
+
+### 15 minutes before the exam
+
+* Ensure your computer and the phone (if applicable) are charged and within reach of a power supply.
+* In your computer, close all other apps and browser tabs other than the ones permitted to be use for the exam. Remember to exit other background apps that starts automatically such as telegram.
+* Launch MS-Teams, login to it, and close the app without exiting (which makes it run in the background).
+* Login to LumiNUS. The password to open the quiz will be broadcast via Zoom (audio announcement plus chat message) by the invigilator later.
+* Launch Zoom, login, ensure profile name and camera complies with our requirements, and join the meeting. Wait for the invigilator to take you into the meeting.
+* **Do not use more than one Zoom device at a time.**
+  * If it is inconvenient to use the Zoom device for PM'ing the invigilator %%(e.g., if you are using Zoom through a smart phone mounted on a stand)%%, use MS-Teams (via your computer) to PM the invigilator.
+  * But, if you use a phone as your primary Zoom device but it not convenient to use it for audio %%(e.g., its speaker volume not high enough)%%,<br>
+    1. Get our permission to use the PC as a second Zoom device.
+    1. Install Zoom in the PC.
+    1. Use the PC for audio only (i.e., switch off the video) and the phone of video only.
+    1. Name your Zoom profile name in the PC as `[PC] Your Name as in Student Card` e.g., `[PC] John Doe`
+* Once you are inside the Zoom meeting, wait patiently until all students have been admitted and the exam is ready to start. **This wait could be as long as 30 minutes.**
+
+### During the exam
+
+* **Keep both the video and speaker switched-on (but microphone muted)** in your Zoom during the entire exam.
+* Do not use MS-Teams during the exam unless the invigilator uses to contact you, you need to contact the invigilator, or you need to contact CIT for tech help.
+* **Stay in the video frame for the entire exam duration**, except during the toilet break.
+* **Do not to use virtual backgrounds in Zoom**. Do not use pre-recorded videos as your video feed.
+* As the exam is open-book, you can refer to any printed/written materials or use the computer to read any PDF/word documents that are in your computer. You may also access the online version of the textbook in the module website but ==strongly encouraged to use the PDF or printed version of the textbook instead==.<br>
+  **Do not visit any other websites, use any other apps, or online search engines during the exam.**
+* **Remain in the video frame until the invigilator ends the exam**, even after you have submitted the quiz. Do not use the computer or other communication devices (not even Kindle) during that period (suggestion: have something in hard-copy form to ready to read during this time e.g., printed lecture notes of another module).
+* **Do not communicate with any person other than the invigilator** during the exam, as per normal exam rules.
+* **When the invigilator asks you to do a _face check_**, turn your face towards the camera, move closer to the camera, remove face mask (if any), and hold the pose until the invigilator tells you to go back to your working position.
+
+### Troubleshooting exam problems
+
+* **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
+* **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), contact the invigilator using Zoom chat or MS-Teams.
+* **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.
+
+
+### Format
+
+* The exam will be given as quizzes in LumiNUS.<br>
+  For the ease of administration, the exam is split into two equal size quizzes: part 1, part 2.<br>
+* Each quiz,
+  * consists of 15 regular MCQ questions (plus one easy bonus question, and one dummy question to give comments)
+  * is to be done in 35 minutes (2 minutes per question + 5 extra minutes)
+* All 30 questions have the same the weight and each question is expected to take a similar amount of time (around 2 minutes).
+* The questions will be presented in random order.
+* You are not allowed to go back to previous questions.
+* You are required to give a justification for your answer. The question will specify what should be included in the justification.<br>
+  ==**Answers without the correct justification will not earn full marks.**== However, we'll give full marks up to two correct answers (per 15 questions) that do not have justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
+* Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
+<div class="indented-level2">
+
+<panel haader="A sample question" expanded >
+
+Choose the incorrect statement.
+
+<span class="text-info">[Justification: why is it incorrect?]</span>
+- ( ) a. Software engineering projects always use OOP.
+- ( ) b. Some software engineering projects can be large and complex.
+- ( ) c. Some software engineering projects can go on for many years.
+
+</panel>
+<p/>
+</div>
+
+* {{ icon_tip }} Almost all questions will ask you to choose the INCORRECT statement and justify why it is incorrect.
+
+
+<!--
+
+There is no midterm.
+
+The final exam has two parts: 
+* Part 1: MCQ questions (1 hour, 30 marks) 
+* Part 2: Essay questions (1 hour, 30 marks)
+
+Both papers will be given to you at the start but you need to **answer Part 1 first** (i.e. MCQ paper). It will be **collected 1 hour after the exam start time** (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.
+
+<box type="success">
+
+You will be given a practice exam paper to familiarize yourself with the exam format.
+</box>
+
+## Final Exam: Part 1 (MCQ)
+
+**Question format:** Each MCQ question gives you a statement to evaluate. 
+
+<tip-box> 
+
+{{ icon_example }} An example statement
+
+>Testing is a Q&A activity
+
+</tip-box>
+
+The meaning of answer options are<br>
+**`A`**: `Agree`. If the question has multiple statements, ++agree with all of them++.<br>
+**`B`**: `Disagree`. If the question has multiple statements, ++disagree with at least one of them++<br>
+**`C`**, **`D`**, **`E`**: Not used
+
+**Number of questions: 50**
+
+**You will not be allowed to clarify doubts about questions (in Part 1)** by talking to invigilators. This is to be fair to all students as the the part 1 is fast-paced and each question has only two possible answers.
+* If a question is not clear, you can circle the question number and write your doubt in the exam paper, near the unclear question.
+* If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.
+
+**Questions in Part 1 are confidential.** You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.
+
+Some questions have tags e.g., the question below has a tag  **`JAVA`**. These **tags provide additional context about the question**. In the example below, the tag indicates that the code given in the question is Java code.
+
+**There is no negative marking.** Therefore, you are recommended to answer all 50 questions. Even random answers are better than no answer.<br>
+  First 25 correct answers will earn 0.2 marks each. Each correct answer from that point will earn 1 mark each. If you answer all questions correctly, you get 30 marks i.e., `0.2x25 + 1.0x25`.
+
+**Bring the correct type of pencils** (i.e., B1) for marking the OCR form. If you use pens or the wrong type of pencil to mark the OCR form, the machine cannot read your answers.
+
+**You are recommended to fill up the OCR form as you go**, rather than wait to fill all answers in the OCR form at the end. However, only answers marked in the OCR form will be counted for grading.
+
+
+<img src="{{baseUrl}}/admin/images/contextTag.png" /><br>
+
+**The paper is open-book**: you may bring any printed or written materials to the exam in hard copy format. However, electronic devices (including smart watches) are not allowed.
+
+{{ icon_tip }} **Mark the OCR form as you go**, rather than planning to transfer your answers to the OCR form near the end. %%&nbsp;Reason: Given there are 50 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.%%
+
+{{ icon_tip }} **Write the answer in the exam paper as well** as marking it in the OCR form. %%&nbsp;Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.%%
+
+{{ icon_tip }} We have tried to **avoid deliberately misleading/tricky questions**. If a question seems to take a very long time to figure out, you are probably over-thinking it.
+
+
+## Final Exam: Part 2 (Essay)
+
+Unlike in part 1, **you can ask invigilators for clarifications** if you found a question to be unclear in part 2.
+
+Yes, **you may use pencils** when answering part 2.
+
+-->
+
+</div>

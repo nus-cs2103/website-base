@@ -107,6 +107,7 @@
 <span id="icon_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb:</span></span>
 <span id="icon_tick_green"><span style="color:green">{{ icon_tick | safe }}</span></span>
 <span id="icon_todo"><md>:glyphicon-check:</md></span>
+<span id="icon_try">:fas-laptop:</span>
 <span id="icon_tutorial"><md>:fas-chalkboard-teacher:</md></span>
 <span id="icon_slides"><md>:far-images:</md></span>
 <span id="icon_video"><md>:glyphicon-facetime-video:</md></span>
