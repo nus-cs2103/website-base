@@ -13,7 +13,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/index-tic2002.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "week13Admin-finalSubmission", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "week13Admin-finalSubmission", "1") }}
 </div>
 
 {{ thumb(1) }} Attend the module recap and exam briefing {{ timing_badge("during lecture", "secondary") }}

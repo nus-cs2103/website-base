@@ -17,7 +17,7 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/index-tic2002.md#git-info", "Admin " + icon_embedding + " Tools → Git, SourceTree", "week2Admin-git", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#git-info", "Admin " + icon_embedding + " Tools → Git, SourceTree", "week2Admin-git", "1") }}
 </div>
 
 {{ thumb(2) }} Submit weekly exercises

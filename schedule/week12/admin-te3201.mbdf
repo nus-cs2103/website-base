@@ -18,6 +18,6 @@
 
 * ==Note that you can get prof's feedback for your project report before the final submission==. See the panel below for more details.
 
-{{ embed_topic("../../admin/index-te3201.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "1", indent="2") }}
 
 </span>

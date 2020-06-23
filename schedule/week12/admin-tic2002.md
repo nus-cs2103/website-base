@@ -18,5 +18,5 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/index-tic2002.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "week12Admin-finalSubmission", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "week12Admin-finalSubmission", "1") }}
 </div>

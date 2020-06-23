@@ -21,8 +21,8 @@ Tasks you need to do in the week will appear in this tab.
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/index-tic2002.md#module-info", "Admin " + icon_embedding + " About the module", "week1Admin-java", "1") }}
-{{ embed_topic("../../admin/index-tic2002.md#website-info", "Admin " + icon_embedding + " Using the website", "week1Admin-java", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#module-info", "Admin " + icon_embedding + " About the module", "week1Admin-java", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#website-info", "Admin " + icon_embedding + " Using the website", "week1Admin-java", "1") }}
 </div>
 
 
@@ -32,7 +32,7 @@ Tasks you need to do in the week will appear in this tab.
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/index-tic2002.md#java", "Admin " + icon_embedding + " Programming Language", "week1Admin-java", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#java", "Admin " + icon_embedding + " Programming Language", "week1Admin-java", "1") }}
 </div>
 
 {{ thumb(2) }} Create a GitHub account
@@ -41,7 +41,7 @@ Tasks you need to do in the week will appear in this tab.
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/index-tic2002.md#github-info", "Admin " + icon_embedding + " Tools → GitHub", "week1Admin-github", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#github-info", "Admin " + icon_embedding + " Tools → GitHub", "week1Admin-github", "1") }}
 </div>
 
 {{ thumb(3) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
@@ -53,7 +53,7 @@ Tasks you need to do in the week will appear in this tab.
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/index-tic2002.md#lectures-info", "Admin " + icon_embedding + " Lectures", "week1Admin-lectures", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#lectures-info", "Admin " + icon_embedding + " Lectures", "week1Admin-lectures", "1") }}
 </div>
 
 
@@ -63,7 +63,7 @@ Tasks you need to do in the week will appear in this tab.
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/index-tic2002.md#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "week1Admin-exercises", "1") }}
-{{ embed_topic("../../admin/index-tic2002.md#repl-info", "Admin " + icon_embedding + " Tools → `repl.it`", "week1Admin-repl", "1") }}
-{{ embed_topic("../../admin/index-tic2002.md#help-info", "Admin " + icon_embedding + " Getting Help", "week1Admin-help", "2") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "week1Admin-exercises", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#repl-info", "Admin " + icon_embedding + " Tools → `repl.it`", "week1Admin-repl", "1") }}
+{{ embed_topic("../../admin/index-tic2002.mbdf#help-info", "Admin " + icon_embedding + " Getting Help", "week1Admin-help", "2") }}
 </div>

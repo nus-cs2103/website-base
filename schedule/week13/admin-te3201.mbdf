@@ -9,5 +9,5 @@
 
 #### {{ thumb(1) }} Submit the project
 
-{{ embed_topic("../../admin/index-te3201.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "1", indent="2") }}
 </span>

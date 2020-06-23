@@ -12,8 +12,8 @@
 
 #### {{ thumb(1) }} Learn about the module and the website
 
-{{ embed_topic("../../admin/index-te3201.md#module-info", "Admin " + icon_embedding + " About the module", "1", indent="2") }}
-{{ embed_topic("../../admin/index-te3201.md#website-info", "Admin " + icon_embedding + " Using the website", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#module-info", "Admin " + icon_embedding + " About the module", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#website-info", "Admin " + icon_embedding + " Using the website", "1", indent="2") }}
 
 
 #### {{ thumb(2) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
@@ -25,16 +25,16 @@
 
 * The lecture will start at 6.30pm.
 
-{{ embed_topic("../../admin/index-te3201.md#lectures-info", "Admin " + icon_embedding + " Lectures", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#lectures-info", "Admin " + icon_embedding + " Lectures", "1", indent="2") }}
 
 
 #### {{ thumb(4) }} Submit weekly exercises
 
 * As you learn the weekly topics, submit Week 1 programming exercise on `repl.it`. See the panel below for more info. More instructions about this will be provided during the lecture.
 
-{{ embed_topic("../../admin/index-te3201.md#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "1", indent="2") }}
-{{ embed_topic("../../admin/index-te3201.md#repl-info", "Admin " + icon_embedding + " Tools → `repl.it`", "1", indent="2") }}
-{{ embed_topic("../../admin/index-te3201.md#help-info", "Admin " + icon_embedding + " Getting Help", "2", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#repl-info", "Admin " + icon_embedding + " Tools → `repl.it`", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#help-info", "Admin " + icon_embedding + " Getting Help", "2", indent="2") }}
 
 
 #### {{ thumb(5) }} Submit weekly project increments
@@ -47,12 +47,12 @@
 
 * Learn about the project:
 
-{{ embed_topic("../../admin/index-te3201.md#project-info", "Admin " + icon_embedding + " Project", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#project-info", "Admin " + icon_embedding + " Project", "1", indent="2") }}
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Monty - Overview**" var-fragment="monty.mbdf#intro" />
 <p/>
 
 * Note how the project can affect participation marks:
-{{ embed_topic("../../admin/index-te3201.md#assessment-info", "Admin " + icon_embedding + " Assessment", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#assessment-info", "Admin " + icon_embedding + " Assessment", "1", indent="2") }}
 
 <span id="week1-project">
 
