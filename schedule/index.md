@@ -23,14 +23,21 @@ pageNav: 1
 
 {% macro show_week_pagetop(week_num, category) %}
 
-
-{% set categories = {
-  notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
-  topics: {name: "Topics", file: "topics", icon: icon_book, pagenav: 3},
-  project: {name: "Project", file: "project", icon: icon_project, pagenav: 4},
-  tutorial: {name: "Tutorial", file: "tutorial", icon: icon_tutorial, pagenav: 4},
-  admin: {name: "Admin Info", file: "admin", icon: icon_info, pagenav: 4}
-} %}
+{% if module == "TIC2002" %}
+  {% set categories = {
+    notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
+    topics: {name: "Topics", file: "topics", icon: icon_book, pagenav: 3},
+    admin: {name: "Tasks", file: "admin-" + (module | lower), icon: icon_todo, pagenav: 4}
+  } %}
+{% else %}
+  {% set categories = {
+    notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
+    topics: {name: "Topics", file: "topics", icon: icon_book, pagenav: 3},
+    project: {name: "Project", file: "project", icon: icon_project, pagenav: 4},
+    tutorial: {name: "Tutorial", file: "tutorial", icon: icon_tutorial, pagenav: 4},
+    admin: {name: "Admin Info", file: "admin", icon: icon_info, pagenav: 4}
+  } %}
+{% endif %}
 
 <frontmatter>
 title: "Week {{ week_num }} - {{ categories[category].name }}"
@@ -78,7 +85,7 @@ pageNav: {{ categories[category].pagenav }}
   </div>
   <div class="col-sm border-bottom">
 
-**Admin:**
+{% if module == "TIC2002" %}**Tasks:**{% else %}**Admin:**{% endif %}
 <include src="admin.md#summary" optional/>
 <include src="project-{{ module | lower }}.mbdf#summary" optional/>
 

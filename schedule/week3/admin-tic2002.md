@@ -1,0 +1,61 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{% from "common/macros.njk" import embed_topic, show_as_tab, thumb, timing_badge with context %}
+{% from "common/admin.njk" import show_admin_summary with context %}
+
+{{ show_week_pagetop(3, "admin") }}
+
+{% call show_admin_summary() %}
+1. Install Intellij IDEA {{ timing_badge("before the lecture") }}
+1. Setup Duke project on your computer {{ timing_badge("during/after the lecture", "info") }}
+1. Submit weekly exercises
+1. Implement project increments `Level-1`, `Level-2`
+{% endcall %}
+
+
+{% call show_admin_summary() %}
+
+{% endcall %}
+
+{{ thumb(1) }} Intellij IDEA {{ timing_badge("before the lecture", "secondary") }}
+
+* See the panel below:
+
+<div class="indented-level2">
+
+{{ embed_topic("../../admin/index-tic2002.md#intellij-info", "Admin " + icon_embedding + " Tools → Intellij IDEA", "week2Admin-intellij", "3") }}
+</div>
+
+{{ thumb(2) }} Setup Duke project on your computer {{ timing_badge("during/after the lecture", "secondary") }}
+
+0. Learn about the Duke project
+
+<div class="indented-level2">
+{{ embed_topic("../../admin/index-tic2002.md#project-info", "Admin " + icon_embedding + " Project", "week1Admin-java", "1") }}
+</div>
+<div class="indented">
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**Duke - Overview**" var-fragment="text.md#intro" />
+</div>
+
+<br>
+
+1. Fork [{{ module_org }}/duke]({{ module_org }}/duke).
+1. Clone the fork onto your computer.
+1. Set up the project in your IDE as explained in [the README file]({{ module_org }}/duke). ==Follow the `Setting up` section only. Do not do the tutorials.==
+
+{{ thumb(3) }} Submit weekly exercises
+
+* As usual, submit weekly programming exercise.
+
+{{ thumb(4) }} Implement Duke increments `Level-1`, `Level-2`
+
+* Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> in the given order.
+   * Commit code at important points. ==Minimally, commit after completing each increment==.
+   * After completing each increment,
+     * Optionally, **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
+     * **`git push`** the code to your fork
+
+<div class="indented-level2">
+
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-1`: Greet, Echo, Exit**" var-fragment="text.md#Level-1" />
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-2`: Add, List**" var-fragment="text.md#Level-2" />
+</div>

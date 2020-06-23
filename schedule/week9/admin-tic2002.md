@@ -1,0 +1,19 @@
+{% from "schedule/index.md" import show_week_pagetop with context%}
+{% from "common/macros.njk" import embed_topic, show_as_tab, thumb, timing_badge with context %}
+{% from "common/admin.njk" import show_admin_summary with context %}
+
+{{ show_week_pagetop(9, "admin") }}
+
+{% call show_admin_summary() %}
+1. Implement increments `Level-8`,  `A-JavaDoc`, `A-Gradle` <span class="badge badge-pill badge-secondary">optional</span>, `A-JUnit`
+{% endcall %}
+
+{{ thumb(1) }} Implement increments `Level-8`,  `A-JavaDoc`, `A-Gradle` <span class="badge badge-pill badge-secondary">optional</span>, `A-JUnit`
+
+<div class="indented">
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-8`: Dates and Times**" var-fragment="text.md#Level-8" />
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JavaDoc`: JavaDoc**" var-fragment="extensions.mbdf#A-JavaDoc" />
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Gradle`: Gradle**" var-tag="optional" var-fragment="extensions.mbdf#A-Gradle" />
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JUnit`: JUnit Testing**" var-fragment="extensions.mbdf#A-JUnit" />
+
+</div>

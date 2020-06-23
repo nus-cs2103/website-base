@@ -1,0 +1,244 @@
+<frontmatter>
+title: "Admin Info"
+header: header.md
+footer: footer.md
+head: adminHead.md
+pageNav: 2
+</frontmatter>
+
+<div class="website-content">
+
+# **TIC2002 Admin Info**
+
+{{ dotted_line }}
+
+# Module overview
+<div class="indented" id="module-info">
+
+<img src="{{baseUrl}}/images/growingPlant.png" width="700">
+
+_TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects, and as such, it is **a first step towards preparing you to work in bigger SE projects**, which will be done in later modules.
+</div>
+
+{{ dotted_line }}
+
+# Using this module website
+
+<div class="indented" id="website-info">
+<include src="usingThisWebsite.md#main" />
+</div>
+
+{{ dotted_line }}
+
+# Instructors
+
+<div class="indented">
+
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+
+![Damith]({{ baseUrl }}/admin/images/damith.png)
+    </div>
+    <div class="col">
+
+**Damith Chatura RAJAPAKSE**<br>
+Associate Professor, NUS School of Computing<br>
+PhD, Software Engineering, NUS, 2002-2006<br>
+BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
+%%:fas-envelope:%% <span id="prof-email">`damith`[at]`comp.nus.edu.sg`</span><br>
+%%:fas-map-marker-alt:%% COM2-02-57<br>
+%%:fas-phone-square:%% 651 64359<br>
+%%:fas-home:%% https://www.comp.nus.edu.sg/~damithch
+    </div>
+  </div>
+</div>
+
+</div>
+
+{{ dotted_line }}
+
+# Lectures
+<div class="indented" id="lectures-info">
+
+%%:far-clock:%% Tuesdays 7.30-9.30pm<br>
+%%:fas-map-marker-alt:%% SR2 (COM1-02-04)<br>
+
+{{ far_frown }} **Lectures will not be webcast** as the venue does not have a webcast facility. ==Please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture.
+
+**Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Use the textbook (not slides) as your main reference. Slides will be uploaded to LumiNUS _after_ the lecture, usually by Wednesday.<br>
+  {{ icon_tip }} If slides are not in LumiNUS by the expected times, please feel free to ping the lecturer.
+
+</div>
+
+{{ dotted_line }}
+
+# Tutorials
+<div class="indented">
+
+%%:far-clock:%% Tuesdays 6.30-7.30pm<br>
+%%:fas-map-marker-alt:%% SR2 (COM1-02-04)<br>
+</div>
+
+{{ dotted_line }}
+
+# Textbook
+<div class="indented">
+
+<include src="textbooks.md#main" />
+
+</div>
+
+{{ dotted_line }}
+
+# Programming language
+<div class="indented" id="java">
+
+This module uses Java. It assumes you are familiar with C++ basics and provides lessons to help you transition from C++ to Java.
+
+{{ icon_important_big_red }} Install [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html) in your computer.
+
+</div>
+
+{{ dotted_line }}
+
+# Programming Exercises
+<span id="exercises-info">
+
+In some weeks, there will be some programming exercises for you to submit (on `Repl.it`). You should do the exercises as you learn the topics. ==Focus on learning the topic rather than finishing the exercises==. While these are exercises provided to self-test your knowledge, the more important thing is to read and understand the topic content. Furthermore, not all topics are tested by exercise.
+</span>
+
+{{ dotted_line }}
+
+# Project
+<div class="indented">
+
+<div  id="project-info">
+
+* The project is to be done **individually**.
+* The project based on a [generic project called Duke](../se-book-adapted/projectDuke/index.html).
+* In the project, you will build a small chatbot, using Java.
+* The project is to be done in small increments. You will be given a schedule of what increments to be done in each week.
+* Some weekly increments will be common to all students, while some will vary from student to student. That means your final product will be unique in terms of total features, but some features will be common to other students in the class.
+</div>
+
+<div id="final-submission-info">
+
+### Week 13: Final Submission
+
+**Deadline**:
+* Soft deadline: ~~Monday~~ Tuesday of week 13<br>
+  Hard deadline: Sunday of week 13
+
+* What's the difference between the soft deadline and the hard deadline? You can get prof's feedback on a draft of the project report up to the soft deadline. Note that feedback on project report draft needs to be in-person (reason: it is hard to give written feedback on diagrams) and can be high-level feedback only (reason: the report is graded).
+
+* Submissions later than the hard deadline are liable to a late submission penalty, to be fair to those who submitted on time.
+
+**Deliverables**:
+1. **Source code** of the working program: push to your GitHub repo
+1. **Product**: Submit the JAR file, name: `{YourName}.jar` e.g., `JunHao.jar`
+1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template give (template file available in LumiNUS).<br>
+   Submission: Upload to LumiNUS. The file name should be your name e.g., `JunHao.docx`
+1. **Demo video**:
+   * Record a demo video showcasing the features of your product.
+   * Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).
+   * Recommended length 7 minutes, max length 10 minutes).
+   * Audio narration is optional if the demo can be understood without the audio.
+   * Ensure the video is in a format that can be played by any computer.
+   * Submission: Name the file with your name (to match the jar and the report file) and upload to LumiNUS.
+
+</div>
+</div>
+
+{{ dotted_line }}
+
+# Policies
+
+<span id="deadlines-info">
+
+### Deadlines
+* Deadline for weekly tasks:
+  * **If a specific deadline is given**, adhere to that.
+  * **If no specific deadline is given**, try to complete tasks allocated to a week by Tuesday 6.30pm of the following week (i.e., before the next lecture). In case you fail to meet that deadline, you should still do those tasks as soon as possible. There will be no penalty if a task is done within one week after the deadline.
+</span>
+
+{{ dotted_line }}
+
+# Tools
+<div class="indented">
+<div id="git-info">
+
+### Git, SourceTree
+
+We'll be using Git as our revision control tool (compulsory).
+
+{{ icon_important_big_red }} If you are not familiar with Git already, install [SourceTree](https://www.sourcetreeapp.com/) (a GUI for Git, but also contains Git) on your computer.
+</div>
+<div id="github-info">
+
+### GitHub
+
+We'll be using GitHub for code hosting (compulsory).
+
+{{ icon_important_big_red }} Create a free GitHub account if you don't have one already.
+</div>
+<div id="repl-info">
+
+### `repl.it`
+
+We'll be using `Repl.it` for coding exercises (compulsory).
+
+* {{ icon_important_big_red }} Create an account on https://repl.it. 
+* Make sure you set your name correctly in your `repl.it` user profile (so that the prof can trace your `repl.it` submissions to you). 
+* Join the `repl.it` classroom `tic2002-2019` using the link [{{ repl_link }}]({{ repl_link }}).
+
+</div>
+<div id="intellij-info">
+
+### Intellij IDEA
+
+We'll be using Intellij IDE for programming. While using Intellij is not compulsory, there will be no help/instructions given for other IDEs.
+
+{{ icon_info }} Install [Intellij](https://www.jetbrains.com/idea/) on your computer. You may use the Community Edition (free) or the Ultimate Edition (free for students).
+</div>
+</div>
+
+{{ dotted_line }}
+
+# Assessment
+<div class="indented">
+
+**40% : CA**
+* 10%: Participation -- To get full marks, complete weekly tasks for at least 10 weeks.
+* 30%: Project
+  * 20%: Features, code
+  * 10%: Documentation
+
+**60% : Final Exam**
+
+</div>
+
+{{ dotted_line }}
+
+# Getting Help
+
+<span id="help-info">
+
+If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks
+* you can post in the [module forum]({{ forum_link }})
+* email prof at <include src="index-{{ module | lower }}.md#prof-email" inline trim/>
+* ask for prof's help during next week’s tutorial hour
+
+</span>
+
+{{ dotted_line }}
+
+# Exam
+<div class="indented">
+
+<include src="exams.md#main" />
+
+</div>
+
+
+</div>

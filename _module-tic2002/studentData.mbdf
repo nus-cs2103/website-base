@@ -1,0 +1,19 @@
+{% set tutorials = [
+  "CS2113T-M16",
+  "CS2113T-T12",
+  "CS2113T-T13",
+  "CS2113-T14",
+  "CS2113-T15"
+] %}
+
+{% set students = [
+
+] %}
+
+{% set team_review_allocation = [
+
+] %}
+
+{% set ip_final_peer_evaluation_allocation = [
+
+] %}

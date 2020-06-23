@@ -28,7 +28,17 @@ pageNav: 3
 
 {% for week_num in range(1, 14) %}
 {% set start_day = get_week_start_date(week_num, format_normal) %}
+
+<div tags="m--cs2103 m--cs2113">
+
 ### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ start_day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_project, "project.html") }}{{ show_link(week_num, icon_tutorial, "tutorial.html") }}{{ show_link(week_num, icon_info, "admin.html") }}
+
+</div>
+<div tags="m--tic2002">
+
+### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ weeks[week_num-1].day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_todo, "admin-" + (module | lower) + ".html") }}
+
+</div>
 
 <include src="week{{ week_num }}/index.md#summary" optional />
 {% endfor %}
