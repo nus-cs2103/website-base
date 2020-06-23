@@ -1,34 +1,35 @@
 <!-- ===========================  primary module configuration ============================================= -->
 
-<variable name="module">CS2103</variable>
-<variable name="module_pair">{{ module }}/T</variable>
-<variable name="module_name">Software Engineering</variable>
-<variable name="module_color">success</variable>
+<variable name="module">TIC2002</variable>
+<variable name="module_pair">{{ module }}</variable>
+<variable name="module_name">Introduction to Software Engineering</variable>
+<variable name="module_color">danger</variable>
 
 <variable name="S">1</variable>
-<variable name="semester">AY2021S{{ S }}</variable>
-<variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="semester">AY2223S{{ S }}</variable>
+<variable name="period">2022 Aug-Nov</variable>
+<variable name="current_week">15</variable>
 
 <variable name="algolia">no</variable>
 
-<variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
-<variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="luminus_module_id">115d3d94-d2d7-463f-9e69-1677497c6951</variable>
+<variable name="url_instructors">n/a</variable>
 
-<variable name="date_w1_start">2022-01-10</variable>
-<variable name="day_first_tutorial">Wednesday</variable>
-<variable name="recess_after_week">7</variable>
-<variable name="time_lecture_start">1600</variable>
-<variable name="time_lecture_end">1800</variable>
-<variable name="time_t_lecture_start">1200</variable>
-<variable name="time_t_lecture_end">1400</variable>
+<variable name="url_coursemology_classroom">https://coursemology.org/courses/2344</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3azpljxJAz4lugEgVtIJZ1He17vHTDHTkE91iIEZssD4s1%40thread.tacv2/conversations?groupId=9156f9a6-a53e-41f0-be56-07323820d0d1&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
-<variable name="ip_name">iP</variable>
-<variable name="ip_repo_name">ip</variable>
-<variable name="ip_first_week">2</variable>
-<variable name="ip_last_week">8</variable>
+<variable name="date_w1_start">2022-08-08</variable>
+<variable name="day_first_tutorial">Tuesday</variable>
+<variable name="recess_after_week">6</variable>
+<variable name="time_lecture_start">1830</variable>
+<variable name="time_lecture_end">2130</variable>
+<variable name="time_t_lecture_start">n/a</variable>
+<variable name="time_t_lecture_end">n/a</variable>
+
+<variable name="ip_name">project</variable>
+<variable name="ip_repo_name">duke</variable>
+<variable name="ip_first_week">3</variable>
+<variable name="ip_last_week">13</variable>
 
 <variable name="tp_first_week">3</variable>
 <variable name="version_practice">v1.1</variable>
@@ -43,9 +44,9 @@
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
 <variable name="marks_ip">30</variable>
-<variable name="marks_ip_implementation">15</variable>
+<variable name="marks_ip_implementation">20</variable>
 <variable name="marks_ip_pm">10</variable>
-<variable name="marks_ip_documentation">5</variable>
+<variable name="marks_ip_documentation">10</variable>
 <variable name="marks_tp">45</variable>
 <variable name="marks_tp_design">5</variable>
 <variable name="marks_tp_documentation">10</variable>
@@ -56,12 +57,12 @@
 <variable name="marks_tp_qa">10</variable>
 <variable name="marks_tp_individual">35</variable>
 <variable name="marks_tp_team">10</variable>
-<variable name="marks_participation">5</variable>
-<variable name="marks_exam">30</variable>
+<variable name="marks_participation">10</variable>
+<variable name="marks_exam">60</variable>
 <variable name="marks_exam_essay">0</variable>
 <variable name="marks_exam_mcq">30</variable>
 <variable name="marks_ca">70</variable>
-<variable name="mcq_count">100</variable>
+<variable name="mcq_count">30</variable>
 
 
 <!-- ===========================  secondary variables =========================================== -->
@@ -84,10 +85,10 @@
 
 <variable name="format_normal">ddd, MMM Do</variable>
 <variable name="format_full_day">dddd</variable>
-<variable name="date_first_lecture">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
+<variable name="date_first_lecture">{{ date_w1_start | date("YYYY-MM-DD", 2) }}</variable>
 <variable name="day_lecture">{{ date_first_lecture | date(format_full_day) }}</variable>
-<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 91) }}</variable>
-<variable name="date_w2_start">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
+<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 97) }}</variable>
+<variable name="date_w2_start">{{ date_w1_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w4_start">{{ date_w3_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w5_start">{{ date_w4_start | date("YYYY-MM-DD", 7) }}</variable>
@@ -101,7 +102,7 @@
 <variable name="date_w13_start">{{ date_w12_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w14_start">{{ date_w13_start | date("YYYY-MM-DD", 7) }}</variable>
 
-<variable name="module_org">nus-{{ module | lower }}-{{ period if tic2002 or tee3201 else semester }}</variable>
+<variable name="module_org">nus-{{ module | lower }}-{{ period if tee3201 else semester }}</variable>
 <variable name="url_module_org">https://github.com/{{ module_org }}</variable>
 <variable name="url_module_gihub_io">https://{{ module_org | lower }}.github.io</variable>
 
@@ -110,7 +111,7 @@
 <variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_dashboards">{{ url_module_gihub_io | safe }}/dashboards</variable>
 <variable name="url_files">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/files</variable>
-<variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_forum">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/forum</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/{{ tp_repo_name }}</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
