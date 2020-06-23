@@ -1,6 +1,7 @@
 {
   "baseUrl": "/website",
-  "titlePrefix": "CS2103/T Website",
+  "titlePrefix": "CS2103/T",
+  "timeZone": "Asia/Singapore",
   "ignore": [
     "_site/*",
     ".idea/*",
