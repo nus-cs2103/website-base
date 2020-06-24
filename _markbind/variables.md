@@ -1,6 +1,7 @@
 <!-- ===========================  primary module configuration ============================================= -->
 
 <span id="module">CS2103</span>
+<span id="module_pair">{{ module }}/T</span>
 <span id="module_name">Software Engineering</span>
 <span id="module_color">success</span>
 
@@ -50,7 +51,6 @@
 
 <!-- ===========================  secondary module configuration =========================================== -->
 
-<span id="module_pair">{{ module }}/T</span>
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 
 <span name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></span>
