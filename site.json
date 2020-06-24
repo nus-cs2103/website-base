@@ -48,22 +48,12 @@
       "searchable": "no"
     }
   ],
-  "enableSearch": false,
+  "enableSearch": true,
   "headingIndexingLevel": 5,
-  "plugins": ["filterTags", "algolia", "googleAnalytics"],
+  "plugins": ["filterTags"],
   "pluginsContext": {
-    "filterTags" : {
-      "tags": ["m--cs2103"]
-    },
-    "algolia": {
-      "apiKey": "0b1e4ae12d54a6114a4c5d131a850c2b",
-      "indexName": "nus-cs2103-ay1920s1",
-      "algoliaOptions": { "hitsPerPage": 10 },
-      "facetFilters": [["tags:admin", "tags:se-book-adapted", "tags:schedule"]],
-      "debug": false
-    },
-    "googleAnalytics": {
-       "trackingID": "UA-122519234-1"
-    }
-  }
+   "filterTags" : {
+      "tags": ["-m--*", "m--cs2103"]
+   }
+ }
 }
