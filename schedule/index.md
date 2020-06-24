@@ -78,6 +78,34 @@ pageNav: {{ categories[category].pagenav }}
 
 {% macro show_week_summary(week_num) %}
 
+{% if module == "TIC2002" %}
+<span id="summary">
+<div class="container">
+  <div class="row">
+  <div class="col-sm border-right border-bottom">
+
+<md>**{{ icon_book }} Topics Summary:**</md>
+
+{{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
+
+<panel type="seamless" header="%%Full ToC%%">
+  <include src="topics.md#toc" optional />
+</panel>
+
+  </div>
+  <div class="col-sm border-bottom">
+
+<md>**{{ icon_todo }} Tasks Summary:**</md>
+<include src="admin-{{ module | lower }}.md#summary" optional/>
+
+  </div>
+  </div>
+</div>
+</span>
+<br>
+
+{% elseif module == "TE3201" %} {#--------------------------------------------------------------------------------#}
+
 <span id="summary">
 <div class="container">
   <div class="row">
@@ -89,12 +117,8 @@ pageNav: {{ categories[category].pagenav }}
   </div>
   <div class="col-sm">
 
-{% if module == "TE3201" %}
 #### <a href="topics.html" class="badge badge-light">{{ icon_book }} SE Topics</a>
 {{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
-{% else %}
-{{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
-{% endif %}
 
 <panel type="seamless" header="%%Full ToC%%">
   <include src="topics.md#toc" optional />
@@ -105,21 +129,42 @@ pageNav: {{ categories[category].pagenav }}
   <div class="row" style="border-top: 1px dotted lightgrey">
   <div class="col-sm">
 
-{% if module == "TE3201" %}
 #### <a href="admin.html" class="badge badge-light mt-2">:fas-tasks: Tasks</a>
 <include src="admin-{{ module | lower }}.mbdf#summary" optional/>
-{% else %}
-{% if module == "TIC2002" %}**Tasks:**{% else %}**Admin:**{% endif %}
+  </div>
+  </div>
+</div>
+</span>
+<br>
+
+{% else %} {#---------------------------------------------------------------------------------------#}
+
+<span id="summary">
+<div class="container">
+  <div class="row">
+  <div class="col-sm border-right border-bottom">
+
+{{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
+
+<panel type="seamless" header="%%Full ToC%%">
+  <include src="topics.md#toc" optional />
+</panel>
+
+  </div>
+  <div class="col-sm border-bottom">
+
+**Admin:**
 <include src="admin.md#summary" optional/>
 <include src="project-{{ module | lower }}.mbdf#summary" optional/>
-{% endif %}
 
   </div>
   </div>
 </div>
 </span>
 <br>
+{% endif %}
 {% endmacro %}
+
 
 {% macro show_project_summary(ip_file=false, tp_file=false, milestone=false) %}
 <div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
