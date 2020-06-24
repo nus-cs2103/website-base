@@ -1,18 +1,18 @@
 <!-- ===========================  primary module configuration ============================================= -->
 
-<span id="module">CS2103</span>
-<span id="module_pair">{{ module }}/T</span>
-<span id="module_name">Software Engineering</span>
-<span id="module_color">success</span>
+<variable name="module">CS2103</variable>
+<variable name="module_pair">{{ module }}/T</variable>
+<variable name="module_name">Software Engineering</variable>
+<variable name="module_color">success</variable>
 
-<span id="S">1</span>
-<span id="semester">AY2021S{{ S }}</span>
-<span id="period">2020 Aug-Dec</span>
+<variable name="S">1</variable>
+<variable name="semester">AY2021S{{ S }}</variable>
+<variable name="period">2020 Aug-Dec</variable>
 
-<span id="url_announcements">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
-<span id="url_files">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
-<span id="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</span>
-<span id="url_java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
+<variable name="url_announcements">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</variable>
+<variable name="url_files">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
+<variable name="url_java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</variable>
 
 <variable name="date_semester_start">2020-08-10</variable>
 <variable name="date_first_lecture">2020-08-14</variable>
@@ -21,10 +21,10 @@
 
 <variable name="ip_repo_name">ip</variable>
 
-<span id="version_first">v1.2</span>
-<span id="version_penultimate">v1.3</span>
-<span id="version_final">v1.4</span>
-<span id="version_future">v2.0</span>
+<variable name="version_first">v1.2</variable>
+<variable name="version_penultimate">v1.3</variable>
+<variable name="version_final">v1.4</variable>
+<variable name="version_future">v2.0</variable>
 
 <variable name="date_final_submission">2020-11-09</variable>
 <variable name="ug_pages_per_person">1</variable>
@@ -49,90 +49,90 @@
 
 <!-- ===========================  secondary module configuration =========================================== -->
 
-<variable id="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
-<variable id="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
-<variable id="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
-<variable id="url_ab3_fork_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</variable>
-<variable id="url_ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
-<variable id="url_module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</variable>
-<variable id="url_module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</variable>
-<variable id="url_participation_dashboard">www.comp.nus.edu.sg/~cs2103</variable>
-<variable id="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
-<variable id="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
-<variable id="url_tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard/#breakdown=true</variable>
+<variable name="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
+<variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_ab3_fork_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</variable>
+<variable name="url_ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
+<variable name="url_module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</variable>
+<variable name="url_module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</variable>
+<variable name="url_participation_dashboard">www.comp.nus.edu.sg/~cs2103</variable>
+<variable name="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
+<variable name="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
+<variable name="url_tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard/#breakdown=true</variable>
 
 <!-- ===========================  icons ================================================= -->
 
-<span id="icon_announcement"><md>:fas-bell:</md></span>
-<span id="icon_book"><md>:fas-book:</md></span>
-<span id="icon_calendar"><md>:fas-calendar-alt:</md></span>
-<span id="icon_deadline"><md>:fas-clock:</md></span>
-<span id="icon_dislike"><md>:fas-thumbs-down:</md></span>
-<span id="icon_example"><md>:fas-cube:</md></span>
-<span id="icon_embedding"><md>:glyphicon-log-in:</md></span>
-<span id="icon_exercise"><md>:fas-dumbbell:</md></span>
-<span id="icon_extra"><span class='badge badge-pill badge-secondary'><md>:fas-plus: extra</md></span></span>
-<span id="icon_evidence"><md>:fas-briefcase:</md></span>
-<span id="icon_info"><md>:fas-info-circle:</md></span>
-<span id="icon_individual"><md>:fas-user:</md></span>
-<span id="icon_lecture"><md>:glyphicon-blackboard:</md></span>
-<span id="icon_like"><md>:fas-thumbs-up:</md></span>
-<span id="icon_linux"><md>:fab-linux:</md></span>
-<span id="icon_important_big_red"><font color="red"><big>:glyphicon-exclamation-sign:</big></font></span>
-<span id="icon_important"><md>:glyphicon-exclamation-sign:</md></span>
-<span id="icon_new_window"><md>:glyphicon-new-window:</md></span>
-<span id="icon_outcome"><md>:fas-trophy:</md></span>
-<span id="icon_output"><md>:fas-arrow-down:</md></span>
-<span id="icon_output_right"><md>:fas-arrow-right:</md></span>
-<span id="icon_print"><md>:glyphicon-print:</md></span>
-<span id="icon_prereq"><md>:glyphicon-education:</md></span>
-<span id="icon_preview"><md>:glyphicon-eye-open:</md></span>
-<span id="icon_pro_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb: PRO TIP</span></span>
-<span id="icon_project"><md>:fas-drafting-compass:</md></span>
-<span id="icon_Q"><md>:glyphicon-question-sign:</md></span>
-<span id="icon_Q_A">{{ icon_Q | safe }}:glyphicon-ok-sign:</span>
-<span id="icon_repo"><md>:fas-code-branch:</md></span>
-<span id="icon_resource"><md>:fas-paperclip:</md></span>
-<span id="icon_team"><md>:fas-users:</md></span>
-<span id="icon_terminal"><smal><span class="badge badge-secondary">&gt;_</span></smal></span>
-<span id="icon_text"><md>:far-file-alt:</md></span>
-<span id="icon_tick"><md>:fas-check:</md></span>
-<span id="icon_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb:</span></span>
-<span id="icon_tick_green"><span style="color:green">{{ icon_tick | safe }}</span></span>
-<span id="icon_todo"><md>:glyphicon-check:</md></span>
-<span id="icon_try">:fas-laptop:</span>
-<span id="icon_tutorial"><md>:fas-chalkboard-teacher:</md></span>
-<span id="icon_slides"><md>:far-images:</md></span>
-<span id="icon_video"><md>:glyphicon-facetime-video:</md></span>
-<span id="icon_windows"><md>:fab-windows:</md></span>
-<span id="icon_x"><md>:fas-times:</md></span>
-<span id="icon_x_red"><span style="color:red">{{ icon_x | safe }}</span></span>
+<variable name="icon_announcement"><md>:fas-bell:</md></variable>
+<variable name="icon_book"><md>:fas-book:</md></variable>
+<variable name="icon_calendar"><md>:fas-calendar-alt:</md></variable>
+<variable name="icon_deadline"><md>:fas-clock:</md></variable>
+<variable name="icon_dislike"><md>:fas-thumbs-down:</md></variable>
+<variable name="icon_example"><md>:fas-cube:</md></variable>
+<variable name="icon_embedding"><md>:glyphicon-log-in:</md></variable>
+<variable name="icon_exercise"><md>:fas-dumbbell:</md></variable>
+<variable name="icon_extra"><span class='badge badge-pill badge-secondary'><md>:fas-plus: extra</md></span></variable>
+<variable name="icon_evidence"><md>:fas-briefcase:</md></variable>
+<variable name="icon_info"><md>:fas-info-circle:</md></variable>
+<variable name="icon_individual"><md>:fas-user:</md></variable>
+<variable name="icon_lecture"><md>:glyphicon-blackboard:</md></variable>
+<variable name="icon_like"><md>:fas-thumbs-up:</md></variable>
+<variable name="icon_linux"><md>:fab-linux:</md></variable>
+<variable name="icon_important_big_red"><font color="red"><big>:glyphicon-exclamation-sign:</big></font></variable>
+<variable name="icon_important"><md>:glyphicon-exclamation-sign:</md></variable>
+<variable name="icon_new_window"><md>:glyphicon-new-window:</md></variable>
+<variable name="icon_outcome"><md>:fas-trophy:</md></variable>
+<variable name="icon_output"><md>:fas-arrow-down:</md></variable>
+<variable name="icon_output_right"><md>:fas-arrow-right:</md></variable>
+<variable name="icon_print"><md>:glyphicon-print:</md></variable>
+<variable name="icon_prereq"><md>:glyphicon-education:</md></variable>
+<variable name="icon_preview"><md>:glyphicon-eye-open:</md></variable>
+<variable name="icon_pro_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb: PRO TIP</span></variable>
+<variable name="icon_project"><md>:fas-drafting-compass:</md></variable>
+<variable name="icon_Q"><md>:glyphicon-question-sign:</md></variable>
+<variable name="icon_Q_A">{{ icon_Q | safe }}:glyphicon-ok-sign:</variable>
+<variable name="icon_repo"><md>:fas-code-branch:</md></variable>
+<variable name="icon_resource"><md>:fas-paperclip:</md></variable>
+<variable name="icon_team"><md>:fas-users:</md></variable>
+<variable name="icon_terminal"><smal><span class="badge badge-secondary">&gt;_</span></smal></variable>
+<variable name="icon_text"><md>:far-file-alt:</md></variable>
+<variable name="icon_tick"><md>:fas-check:</md></variable>
+<variable name="icon_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb:</span></variable>
+<variable name="icon_tick_green"><span style="color:green">{{ icon_tick | safe }}</span></variable>
+<variable name="icon_todo"><md>:glyphicon-check:</md></variable>
+<variable name="icon_try">:fas-laptop:</variable>
+<variable name="icon_tutorial"><md>:fas-chalkboard-teacher:</md></variable>
+<variable name="icon_slides"><md>:far-images:</md></variable>
+<variable name="icon_video"><md>:glyphicon-facetime-video:</md></variable>
+<variable name="icon_windows"><md>:fab-windows:</md></variable>
+<variable name="icon_x"><md>:fas-times:</md></variable>
+<variable name="icon_x_red"><span style="color:red">{{ icon_x | safe }}</span></variable>
 
-<span id="bad"><font color="red"><md>**{{ icon_dislike | safe }} Bad**</md></font></span>
-<span id="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></span>
+<variable name="bad"><font color="red"><md>**{{ icon_dislike | safe }} Bad**</md></font></variable>
+<variable name="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></variable>
 <variable name="pros"><span class="text-success">**pros:**</span></variable>
 <variable name="cons"><span class="text-danger">**cons:**</span></variable>
-<span id="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></span>
+<variable name="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></variable>
 
-<span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
-<span name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></span>
-<span name="MT"><span class="badge badge-warning">{{ module }}T</span></span>
+<variable name="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></variable>
+<variable name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></variable>
+<variable name="MT"><span class="badge badge-warning">{{ module }}T</span></variable>
 
-<span id="s"><md>:glyphicon-star:</md></span>
-<span id="star"><span class='glyphicon glyphicon-star' aria-hidden='true'></span></span>
-<span id="one_star"><span class='badge badge-pill badge-light text-danger'>{{ star | safe }} </span></span>
-<span id="prereq_no_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }}</span></span>
-<span id="prereq_one_star"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }} </span></span>
-<span id="two_stars"><span class='badge badge-pill badge-light text-warning'>{{ star | safe }}{{ star | safe }} </span></span>
-<span id="prereq_two_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }} </span></span>
-<span id="three_stars"><span class='badge badge-pill badge-light text-primary'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
-<span id="prereq_three_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
-<span id="four_stars"><span class='badge badge-pill badge-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}: OPTIONAL</span></span>
-<span id="prereq_four_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
+<variable name="s"><md>:glyphicon-star:</md></variable>
+<variable name="star"><span class='glyphicon glyphicon-star' aria-hidden='true'></span></variable>
+<variable name="one_star"><span class='badge badge-pill badge-light text-danger'>{{ star | safe }} </span></variable>
+<variable name="prereq_no_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }}</span></variable>
+<variable name="prereq_one_star"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }} </span></variable>
+<variable name="two_stars"><span class='badge badge-pill badge-light text-warning'>{{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="prereq_two_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="three_stars"><span class='badge badge-pill badge-light text-primary'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="prereq_three_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="four_stars"><span class='badge badge-pill badge-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}: OPTIONAL</span></variable>
+<variable name="prereq_four_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
 
 <!-- ===========================  misc aliases =========================================== -->
 
-<span id="line_dashed"><hr style="border-top: dashed 1px; border-color:grey" /></span>
-<span id="line_dotted"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></span>
-<span id="line_double"><hr style="border-top: 3px double #c5c5c5;"></span>
-<span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
+<variable name="line_dashed"><hr style="border-top: dashed 1px; border-color:grey" /></variable>
+<variable name="line_dotted"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></variable>
+<variable name="line_double"><hr style="border-top: 3px double #c5c5c5;"></variable>
+<variable name="pagebreak"><p style="page-break-after: always;">&nbsp;</p></variable>
