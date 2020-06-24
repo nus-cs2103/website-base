@@ -4,6 +4,14 @@
 {% call show_admin_page("weeklySchedule") %}
 <div id="main">
 
+<box type="info">
+
+<span id="week-definition">
+
+**Each {{ module_pair }} week starts with the lecture** on the date given in the timeline below and end just before the following week's lecture. The only exception is week 1, which starts on the Monday of the first week of the semester.
+</span>
+</box>
+
 {{ icon_calendar }} **[{{ day_lecture }} (previous week)]**<br>
 
 * Attend the lecture to, 

@@ -13,12 +13,23 @@ pageNav: 3
 
 # Summary of the Module Timeline
 
-<box tags="m--cs2103 m--cs2113 m--tic2002" type="warning" dismissible>
+<box type="warning" dismissible>
 <span id="warnings">
 
+* <include src="../admin/weeklySchedule.md#week-definition" inline trim />
+
+<div tags="m--cs2103 m--cs2113 m--tic2002">
+
 * Please try to **follow instructions closely**. If you deviate, our grading scripts will not be able to detect your work.
+</div>
+<div tags="m--cs2103 m--cs2113">
+
 * The deadline to complete tasks allocated to the week is the **<tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>**, unless stated otherwise. Our scripts that detect your work run at midnight and only the work that's done by midnight will be eligible for marks (for cases where the task is graded).
-* You may have to **go through the weekly topics<span tags="m--cs2113"> (and do the weekly programming exercises)</span> before attempting weekly project tasks** as the knowledge from those topics may be needed to complete the project tasks.
+</div>
+<div tags="m--cs2103 m--cs2113 m--tic2002">
+
+* You may have to **go through the weekly topics (and do the weekly programming exercises/activities, if any) before attempting weekly project tasks** as the knowledge from those topics may be needed to complete the project tasks.
+</div>
 
 </span>
 </box>

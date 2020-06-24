@@ -27,7 +27,7 @@ pageNav: 1
   {% set categories = {
     notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
     topics: {name: "Topics", file: "topics", icon: icon_book, pagenav: 3},
-    admin: {name: "Tasks", file: "admin-" + (module | lower), icon: icon_todo, pagenav: 4}
+    admin: {name: "Tasks", file: "admin", icon: icon_todo, pagenav: 4}
   } %}
 {% elseif module == "TE3201" %}
   {% set categories = {
@@ -82,7 +82,7 @@ pageNav: {{ categories[category].pagenav }}
 <span id="summary">
 <div class="container">
   <div class="row">
-  <div class="col-sm border-right border-bottom">
+  <div class="col-sm border-right">
 
 <md>**{{ icon_book }} Topics Summary:**</md>
 
@@ -93,10 +93,10 @@ pageNav: {{ categories[category].pagenav }}
 </panel>
 
   </div>
-  <div class="col-sm border-bottom">
+  <div class="col-sm">
 
 <md>**{{ icon_todo }} Tasks Summary:**</md>
-<include src="admin-{{ module | lower }}.md#summary" optional/>
+<include src="admin-{{ module | lower }}.mbdf#summary" optional/>
 
   </div>
   </div>
