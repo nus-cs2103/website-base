@@ -220,7 +220,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 
 If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks
 * you can post in the [module forum]({{ forum_link }})
-* email prof at <include src="index-{{ module | lower }}.md#prof-email" inline trim/>
+* email prof at <include src="index-{{ module | lower }}.mbdf#prof-email" inline trim/>
 * ask for prof's help during the following week’s tutorial hour
 
 </span>
@@ -238,7 +238,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
  
 
 <modal large header="The Policy on Deadlines" id="modal:adminInfo-deadlineInfo">
-  <include src="index-{{ module | lower }}.md#deadlines-info"/>
+  <include src="index-{{ module | lower }}.mbdf#deadlines-info"/>
 </modal>
 
 </span>
