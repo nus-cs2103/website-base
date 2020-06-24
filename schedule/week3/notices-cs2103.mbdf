@@ -2,7 +2,7 @@
 
 <box type="warning" dismissible>
 
-* We start tutorials this week. The [tutorial time table]({{ module_website }}/admin/tutorials.html#tutorial-timetable) is on the module website.
+* We start tutorials this week. The [tutorial time table]({{ url_module_website }}/admin/tutorials.html#tutorial-timetable) is on the module website.
 </box>
 <box dismissible>
 

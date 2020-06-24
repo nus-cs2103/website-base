@@ -85,7 +85,7 @@ In addition, you can receive bonus marks in the following ways. Bonus marks can 
 
 <panel type="info" header="##### Where to find your participation marks progress" expanded no-close no-switch >
 
-**Your participation progress can be tracked in [this page]({{ participation_marks_page }})** from week 3 onward.
+**Your participation progress can be tracked in [this page]({{ url_participation_dashboard }})** from week 3 onward.
 </panel>
 
 </div>

@@ -196,7 +196,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 </span>
 
 <!--
-* Go to the [dev-response issue tracker]({{ module_org }}/pe-dev-response)
+* Go to the [dev-response issue tracker]({{ url_module_org }}/pe-dev-response)
 * Use `tutorial.*` and `team.*` labels to filter bug reports your team received.
 * **Do not edit the subject or the description.** Your response (if any) should be added as a comment.
 * Add a comment using the following exact template.
@@ -271,7 +271,7 @@ Duplicate of #67
 <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
-* **If you need teaching team's inputs when deciding on a bug** e.g., if you are not sure if the UML notation is correct, post in the [forum]({{ forum_link }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).
+* **If you need teaching team's inputs when deciding on a bug** e.g., if you are not sure if the UML notation is correct, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).
 
 <div class="indented-level2" id="additionalGuidelinesForBugTriaging">
 

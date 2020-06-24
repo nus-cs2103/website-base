@@ -9,7 +9,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 * **Overview**: A short overview of your product to provide some context to the reader. The opening 1-2 sentences may be reused by all team members. If your product overview extends beyond 1-2 sentences, the remainder should be written by yourself.
 * **Summary of Contributions** --Suggested items to include:
-  * **Code contributed**: Give a link to your code on [tP Code Dashboard]({{ tp_dashboard }}). The link is available in the [Project List Page]({{ link_team_list }}) -- linked to the %%:fas-code:%% icon under your photo.
+  * **Code contributed**: Give a link to your code on [tP Code Dashboard]({{ url_tp_dashboard }}). The link is available in the [Project List Page]({{ url_team_list }}) -- linked to the %%:fas-code:%% icon under your photo.
   * **Enhancements implemented:** A summary of the enhancements you implemented. 
   * **Contributions to documentation:** Which sections did you contribute to the UG?
   * **Contributions to the DG:** Which sections did you contribute to the DG? Which UML diagrams did you add/updated?
@@ -37,7 +37,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Format</span>
 
 * File name (i.e., in the repo): `docs/team/githbub_username_in_lower_case.md` e.g., `docs/team/goodcoder123.md`
-* {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ ab3_website }}/team/johndoe.html)
+* {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ url_ab3_fork_website }}/team/johndoe.html)
 
 <div class="indented-level2">
 

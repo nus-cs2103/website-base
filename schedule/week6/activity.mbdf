@@ -15,7 +15,7 @@ To keep things simple, we use a simple repo that uses two files `food.txt` and `
 First, let us set up the repo and checkout the branches.
 </box>
 
-* {{ step('1.a') }} **Fork the {{ module_org }}/shop-inventory** to your Github account.
+* {{ step('1.a') }} **Fork the {{ url_module_org }}/shop-inventory** to your Github account.
 
 * {{ step('1.b') }} **Clone it to your computer.** ==No need to set it up in your IDE because it is not a Java project.==
 

@@ -25,7 +25,7 @@ Quickly update the tutor about your iP progress:
    </panel>
    <p/>
 
-1. **Locate PRs from that team**: Go to the [list of iP PRs]({{ module_org }}/{{ ip_repo_name }}/pulls). Locate the PRs (you can filter using `tutorial.*` and `team.*` labels).
+1. **Locate PRs from that team**: Go to the [list of iP PRs]({{ url_module_org }}/{{ ip_repo_name }}/pulls). Locate the PRs (you can filter using `tutorial.*` and `team.*` labels).
    <img src="../../admin/images/filterPrsUsingLabels.png" />
 1. **Pick a PR to review**, giving priority to ==PRs with fewer comments==.
 1. **Discuss abstraction aspect of the code**: Go through the code, and discuss the ==abstraction (SLAP, arrow-head style code, too-long methods, too-deep nesting)== aspect of the PR<br/>

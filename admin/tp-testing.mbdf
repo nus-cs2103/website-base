@@ -1,6 +1,6 @@
 <div id="testingPreparations">
 
-* Ensure that you have accepted the invitation to join the GitHub org used by the module. Go to [{{ module_org }}]({{ module_org }}) to accept the invitation.
+* Ensure that you have accepted the invitation to join the GitHub org used by the module. Go to [{{ url_module_org }}]({{ url_module_org }}) to accept the invitation.
 
 * Ensure you have access to a **computer that is able to run module projects** %%e.g. has the right Java version%%.
 

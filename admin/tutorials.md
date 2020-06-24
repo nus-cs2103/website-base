@@ -59,7 +59,7 @@ Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)
 
 **Timing/venue:**
 
-* Please refer to the {{ schedule_link }} for further details on each tutorial.
+* Please refer to the {{ url_schedule }} for further details on each tutorial.
 * You are expected to arrive on time. ==Punctuality is considered for participation marks.==
 * You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is dismissed.
 * ==Vacate the table 5 minutes before the hour== so that the next group can start on time.

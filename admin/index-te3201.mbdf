@@ -219,7 +219,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 <span id="help-info">
 
 If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks
-* you can post in the [module forum]({{ forum_link }})
+* you can post in the [module forum]({{ url_forum }})
 * email prof at <include src="index-{{ module | lower }}.mbdf#prof-email" inline trim/>
 * ask for prof's help during the following week’s tutorial hour
 

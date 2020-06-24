@@ -7,7 +7,7 @@
 * **Tutorial submissions will be counted for weekly participation**, as an additional incentive to do tutorial activities. A submission deemed by the instructors as a _reasonable attempt_ (irrespective of the correctness) will be eligible to be counted for participation.
 * **Submission deadline: ==11.59am of the following Wednesday==** (same as quizzes).
 * **If you encounter problems while doing tutorial tasks**,
-  * you can post in the [forum]({{ forum_link }}) as usual.
+  * you can post in the [forum]({{ url_forum }}) as usual.
   * you can also ==**ask in our [:fab-gitter: Gitter chat](https://gitter.im/nus-{{ module | lower }}-{{ semester }}/community)**==. %%We chose Gitter because you can login to Gitter using your GitHub account.%%<br>
    {{ icon_tip }} Use Gitter for questions that can be answered immediately. For things that might need a longer discussion period (e.g., technical issues), post in the forum instead.
 * **We recommend that you do the tutorial activity during your actual tutorial time** as both the forum and the Gitter channel will be closely watched by your tutor during that period (i.e., you'll get faster responses). But it is not a hard rule; it is fine as long as you finish the activities by the deadline.

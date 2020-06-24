@@ -182,11 +182,11 @@ Suggested workflow:
 <span id="desc_get_familiar_with_the_code_base">
 
 * Do the following tutorials to get familiar with the codebase
-  * [Tutorial 1 - Tracing a Command Execution Path]({{ ab3_website }}/tutorials/TracingCode.html)
-  * [Tutorial 2 - Removing a field from an entity]({{ ab3_website }}/tutorials/RemovingFields.html)
+  * [Tutorial 1 - Tracing a Command Execution Path]({{ url_ab3_fork_website }}/tutorials/TracingCode.html)
+  * [Tutorial 2 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)
     * If you are an experienced programmer, you can remove a different field than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-removing-field` and push to your fork.
-  * [Tutorial 3 - Adding a new Command]({{ ab3_website }}/tutorials/AddRemark.html)
+  * [Tutorial 3 - Adding a new Command]({{ url_ab3_fork_website }}/tutorials/AddRemark.html)
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. 
 * ==Ideally, you should do the above tutorials by week 6== (i.e., midnight before the tutorial), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
@@ -211,7 +211,7 @@ Suggested workflow:
 <span id="desc_draft_the_ug">
 
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ version_first }}.
-  * We recommend that you follow the [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
+  * We recommend that you follow the [AB3 User Guide]({{ url_ab3_fork_website }}/UserGuide.html) in terms of structure and format.
   * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ version_first }}.
   * Include only features that will be delivered in {{ version_first }}.
@@ -275,8 +275,8 @@ Update the following pages in your project repo:
 * **README.md** page: Update it to match your project.
 
   * Add a UI mockup of your intended final product.
-    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ link_team_list }})), yours should not look out of place.%%<br>
-    {{ icon_tip }} If you did the above update correctly, UI mock up and profile photos should appear in your project website and this [**Project List Page**]({{ link_team_list }}).
+    Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
+    {{ icon_tip }} If you did the above update correctly, UI mock up and profile photos should appear in your project website and this [**Project List Page**]({{ url_team_list }}).
 
   * Update all contents to match your own project.
 
@@ -293,7 +293,7 @@ Update the following pages in your project repo:
 <span id="desc_update_the_ug">
 
 * Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
-  As <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ tp_dashboard }}).
+  As <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
   <include src="tp-tasks.mbdf#divideDocs"/>
@@ -304,7 +304,7 @@ Update the following pages in your project repo:
 <span id="desc_update_dg_user_stories_etc">
 
 * Update the following in the DG, based on your project notes from the previous weeks.<br>
-  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ ab3_website }}/DeveloperGuide.html#product-scope).
+  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ url_ab3_fork_website }}/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
   * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
@@ -576,7 +576,7 @@ In addition,
 <span id="heading_do_a_release">{{ icon_team }} Do a dry run of a release</span>
 <span id="desc_do_a_release">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 </span>
 {#====================================================================================================================#}
 <span id="heading_make_code_reposense_compatible">{{ icon_individual }} Make the code RepoSense-compatible</span>
@@ -585,7 +585,7 @@ In addition,
 <span id="midV13-repoSenseCompatible">
 
 * **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code it attributes to you is indeed the code written by you**, as explained below:
-  * Go to the [tp Code Dashboard]({{ tp_dashboard }}). Click on the `</>` icon against your name and verify that the ==lines attributed to you (i.e., lines marked as green)== reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
+  * Go to the [tp Code Dashboard]({{ url_tp_dashboard }}). Click on the `</>` icon against your name and verify that the ==lines attributed to you (i.e., lines marked as green)== reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/greenLines.png" width="600">
   <p/>
 
@@ -641,7 +641,7 @@ In addition,
 <span id="heading_release_as_a_jar_file">{{ icon_team }} Release as a jar file</span>
 <span id="desc_release_as_a_jar_file">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). Do some manual tests to ensure the jar file works.
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do some manual tests to ensure the jar file works.
 </span>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_v13">{{ icon_team }} Wrap up {{ version_penultimate }}</span>

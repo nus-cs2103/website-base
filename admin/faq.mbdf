@@ -1,9 +1,9 @@
 <div id="admin-faq-whereIsEverything">
 
-<p class="lead">The {{ schedule_link }} presents all you need to know in chronological order while the other pages have some of the same content organized by topic.
+<p class="lead">The {{ url_schedule }} presents all you need to know in chronological order while the other pages have some of the same content organized by topic.
 </p>
 
-The <span class="font-weight-bold">{{ schedule_link }}</span> is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the <span class="font-weight-bold">{{ admin_link }}</span> and the [**Textbook page**]({{baseUrl}}/se-book-adapted/index.html) -- which you are welcome to read in those respective pages -- the same content is also embedded in the relevant weeks of the Schedule page. Embedded extracts usually appear in expandable panels and can be identified by the symbol {{ icon_embedding }} in the panel title.
+The <span class="font-weight-bold">{{ url_schedule }}</span> is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the <span class="font-weight-bold">{{ url_admin }}</span> and the [**Textbook page**]({{baseUrl}}/se-book-adapted/index.html) -- which you are welcome to read in those respective pages -- the same content is also embedded in the relevant weeks of the Schedule page. Embedded extracts usually appear in expandable panels and can be identified by the symbol {{ icon_embedding }} in the panel title.
 
 </div>
 
@@ -34,7 +34,7 @@ In {{ module_pair }}, A+ is not given simply based on the final score. To get an
 * score enough to get an A
 * be considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
 * be considered helpful by peers (based on peer evaluations and tutor observations)
-  * In particular, you are encouraged to be active on the [forum]({{forum_link}}) and give your inputs to ongoing discussions so that other students can benefit from your relatively higher expertise that makes you deserve an A+.
+  * In particular, you are encouraged to be active on the [forum]({{url_forum}}) and give your inputs to ongoing discussions so that other students can benefit from your relatively higher expertise that makes you deserve an A+.
   * Whenever you can, go out of your way to review PRs created by other team members.
 
 </div>

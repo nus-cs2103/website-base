@@ -88,7 +88,7 @@ The use of third-party frameworks/libraries is allowed but only if they,
 and is subjected to prior approval by the teaching team.<br> 
 %%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the module.%%
 
-Please ==post in the [forum]({{module_org}}/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>
+Please ==post in the [forum]({{url_module_org}}/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>
 %%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
 {%- endcall  %}
 
@@ -136,7 +136,7 @@ Also keep in mind:
 
 <box type="warning">
 
-If you are not sure if your product complies with a certain constraint/recommendation, please seek clarification by posting in the [forum]({{module_org}}/forum/issues) (preferred) or emailing the supervisor.
+If you are not sure if your product complies with a certain constraint/recommendation, please seek clarification by posting in the [forum]({{url_module_org}}/forum/issues) (preferred) or emailing the supervisor.
 </box>
 
 </div>

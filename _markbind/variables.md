@@ -49,23 +49,17 @@
 
 <!-- ===========================  secondary module configuration =========================================== -->
 
-<span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
-
-<span name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></span>
-<span name="MT"><span class="badge badge-warning">{{ module }}T</span></span>
-
-<span id="module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</span>
-<span id="module_gh_pages">https://nus-{{ module | lower }}-{{ semester }}.github.io</span>
-<span id="module_website">{{ module_gh_pages }}/website</span>
-<span id="link_team_list">{{baseUrl}}/admin/teamList.html</span>
-<span id="ab3_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</span>
-<span id="participation_marks_page">www.comp.nus.edu.sg/~cs2103</span>
-<span id="bugs_link">{{ module_org | safe }}/forum/issues</span>
-<span id="forum_link">{{ module_org | safe }}/forum/issues</span>
-<span id="admin_link"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span>
-<span id="schedule_link"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></span>
-<span id="ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</span>
-<span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard/#breakdown=true</span>
+<variable id="url_module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</variable>
+<variable id="url_module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</variable>
+<variable id="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
+<variable id="url_ab3_fork_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</variable>
+<variable id="url_participation_dashboard">www.comp.nus.edu.sg/~cs2103</variable>
+<variable id="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
+<variable id="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
+<variable id="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
+<variable id="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
+<variable id="url_ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
+<variable id="url_tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard/#breakdown=true</variable>
 
 <!-- ===========================  icons ================================================= -->
 
@@ -117,6 +111,10 @@
 <variable name="pros"><span class="text-success">**pros:**</span></variable>
 <variable name="cons"><span class="text-danger">**cons:**</span></variable>
 <span id="icon_repo"><md>:fas-code-branch:</md></span>
+
+<span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
+<span name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></span>
+<span name="MT"><span class="badge badge-warning">{{ module }}T</span></span>
 
 <span id="s"><md>:glyphicon-star:</md></span>
 <span id="star"><span class='glyphicon glyphicon-star' aria-hidden='true'></span></span>

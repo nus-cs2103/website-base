@@ -2,7 +2,7 @@
 <include src="commentary-box.md" boilerplate>
 <variable name="commentary_body">
 
-**JavaFX is not required for this module** as we strongly discourage you from creating a GUI app. If you are still interest to learn JavaFX, you can refer to the JavaFX tutorial in the [repo you used for the iP]({{ module_org }}/{{ ip_repo_name }}#tutorials) (reason: the tutorials in the section below are outdated).
+**JavaFX is not required for this module** as we strongly discourage you from creating a GUI app. If you are still interest to learn JavaFX, you can refer to the JavaFX tutorial in the [repo you used for the iP]({{ url_module_org }}/{{ ip_repo_name }}#tutorials) (reason: the tutorials in the section below are outdated).
 </variable>
 </include>
 </span>

@@ -63,7 +63,7 @@
 <span id="desc_submit_first_repl_exercises">
 
 * Submit the coding exercises allocated for the current week. Most exercises are auto-graded. Keep trying until the system accepts your code as the correct solution.
-* If you encounter problems, post in the [forum]({{ forum_link }}).
+* If you encounter problems, post in the [forum]({{ url_forum }}).
 
 {{ embed_topic("tools.md#repl", "Admin " + icon_embedding + " **Tools - repl.it**", "2", indent="2") }}
 </span>

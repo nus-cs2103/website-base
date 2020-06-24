@@ -5,7 +5,7 @@
 <box light type="success" add-class="ml-4" icon=":fas-lightbulb:">
 
 **Suggested pre-tutorial preparations**:
-* Clone the [{{ module_org }}/personbook]({{ module_org }}/personbook) repo to your Computer (no need to fork first).
+* Clone the [{{ url_module_org }}/personbook]({{ url_module_org }}/personbook) repo to your Computer (no need to fork first).
 * Set it up in your IDE.
 * Use the IDE debugging to step through the code to understand how the code works. For example, you can try to find answers to these questions:
   * How to add a new `find` command to locate persons by name?

@@ -21,18 +21,18 @@ We will be using a tool called [RepoSense](http://reposense.org) to make it **ea
 <div class="indented-level2">
 <box>
 
-**For simple cases** such as the following, you can create a PR to update our config files [here]({{ module_org }}/tp-dashboard/tree/master/configs). The meaning of the config files are given in the [RepoSense user guide](https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#customize-using-csv-config-files).
+**For simple cases** such as the following, you can create a PR to update our config files [here]({{ url_module_org }}/tp-dashboard/tree/master/configs). The meaning of the config files are given in the [RepoSense user guide](https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#customize-using-csv-config-files).
   * missing some commits due to using multiple git `user.name`s
   * some commits/files need to be omitted from the analysis
 
-For more complicated needs, follow the instructions below this box. If you are not sure which option to use, please post in the [forum]({{ forum_link }}) to ask.
+For more complicated needs, follow the instructions below this box. If you are not sure which option to use, please post in the [forum]({{ url_forum }}) to ask.
 </box>
 </div>
 
   * Install RepoSense (see the [Getting Started](https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#getting-started) section of the RepoSense User Guide)
   * Use the two methods described in the RepoSense User Guide section [Configuring a Repo to Provide Additional Data to RepoSense](https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md#configuring-a-repo-to-provide-additional-data-to-reposense) to provide additional data to the authorship analysis to make it more accurate.
    * If you add a `config.json` file to your repo (as specified by one of the two methods),
-     * **Please use the exact partial name from [here]({{ module_org }}/tp-dashboard/blob/master/configs/author-config.csv)** as the display name.<br>
+     * **Please use the exact partial name from [here]({{ url_module_org }}/tp-dashboard/blob/master/configs/author-config.csv)** as the display name.<br>
        e.g., `"displayName": "{{ module }}-T11-4 ABDUL ... JAVID",`
      * If your commits have multiple author names, specify all of them<br>
        e.g., `"authorNames": ["theMyth", "theLegend", "The Gary"]`
@@ -47,7 +47,7 @@ For more complicated needs, follow the instructions below this box. If you are n
 
   * After you are satisfied with the new results (i.e., results produced by running RepoSense locally), push the `config.json` file you added and/or the annotated code to your repo. We'll use that information the next time we run RepoSense (we run it at least once a week).
   * If you choose to annotate code, minimize annotating code chunks smaller than a method. We do not grade code snippets too small to be read meaningfully.
-  * If you encounter any problem when doing the above or if you have questions, please post in the [forum]({{ forum_link }}).
+  * If you encounter any problem when doing the above or if you have questions, please post in the [forum]({{ url_forum }}).
 
 ==**We recommend you ensure your code is RepoSense-compatible by {{ version_penultimate }}**==
 

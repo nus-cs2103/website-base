@@ -4,7 +4,7 @@
 <include src="commentary-box.md" boilerplate>
 <variable name="commentary_body">
 
-* This week's activity is ==to be done during the tutorial slot itself==, during which the tutor will be monitoring the [forum]({{ forum_link }}) / [:fab-gitter: Gitter chat](https://gitter.im/nus-cs2113-AY1920S2/community) and the PRs being reviewed.
+* This week's activity is ==to be done during the tutorial slot itself==, during which the tutor will be monitoring the [forum]({{ url_forum }}) / [:fab-gitter: Gitter chat](https://gitter.im/nus-cs2113-AY1920S2/community) and the PRs being reviewed.
 * Please ==read all instructions first==, before you start the activity.
 
 </variable>

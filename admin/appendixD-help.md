@@ -28,7 +28,7 @@
   Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.    
   <img src="{{baseUrl}}/admin/images/how to google it.png" width="460" height="268"/>
 
-* **Ask in the [module forum]({{ forum_link }})**: 
+* **Ask in the [module forum]({{ url_forum }})**: 
   * **Give full details of the problem** Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.
     * Include full error message, screenshots, code snippets, stack traces, etc.<br>
     * If the problem is code-related, push the current state of the code to a branch in your fork and give the link to the branch. That gives a chance for someone to reproduce the state of your project in their computer.
