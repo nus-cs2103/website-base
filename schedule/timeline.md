@@ -20,15 +20,15 @@ pageNav: 3
 
 <div tags="m--cs2103 m--cs2113 m--tic2002">
 
-* Please try to **follow instructions closely**. If you deviate, our grading scripts will not be able to detect your work.
+* **Follow instructions closely**. If you deviate, our grading scripts will not be able to detect your work.
 </div>
 <div tags="m--cs2103 m--cs2113">
 
-* The deadline to complete tasks allocated to the week is the **<tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>**, unless stated otherwise. Our scripts that detect your work run at midnight and only the work that's done by midnight will be eligible for marks (for cases where the task is graded).
+* **The deadline to complete tasks allocated to the week** is the <tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>, unless stated otherwise. Our scripts that detect your work run at midnight and only the work that's done by midnight will be eligible for marks (for cases where the task is graded).
 </div>
 <div tags="m--cs2103 m--cs2113 m--tic2002">
 
-* You may have to **go through the weekly topics (and do the weekly programming exercises/activities, if any) before attempting weekly project tasks** as the knowledge from those topics may be needed to complete the project tasks.
+* **Before attempting weekly project tasks,** go through the weekly topics (and do the weekly programming exercises/activities, if any) as the knowledge from those topics may be needed to complete the project tasks.
 </div>
 
 </span>

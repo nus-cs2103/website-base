@@ -142,7 +142,7 @@ pageNav: {{ categories[category].pagenav }}
 <span id="summary">
 <div class="container">
   <div class="row">
-  <div class="col-sm border-right border-bottom">
+  <div class="col-sm border-right">
 
 {{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
 
@@ -151,7 +151,7 @@ pageNav: {{ categories[category].pagenav }}
 </panel>
 
   </div>
-  <div class="col-sm border-bottom">
+  <div class="col-sm">
 
 **Admin:**
 <include src="admin.md#summary" optional/>
