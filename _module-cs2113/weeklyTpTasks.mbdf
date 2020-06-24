@@ -61,10 +61,10 @@ week13: [
   w5: "tP: User Stories [week 5]",
   w6: "tP: Conceptualize V1.0 [week 6]",
   w7: "tP: Plan v1.0 [week 7]",
-  w8: "tP: mid-" + first_version + " [week 8]",
-  w9: "tP: " + first_version + " [week 9]",
-  w10: "tP: mid-" + penultimate_version + " [week 10]",
-  w11: "tP: " + penultimate_version + " [week 11]",
-  w12: "tP: mid-" + final_version + " [week 12]",
-  w13: "tP: " + final_version + " [week 13]"
+  w8: "tP: mid-" + version_first + " [week 8]",
+  w9: "tP: " + version_first + " [week 9]",
+  w10: "tP: mid-" + version_penultimate + " [week 10]",
+  w11: "tP: " + version_penultimate + " [week 11]",
+  w12: "tP: mid-" + version_final + " [week 12]",
+  w13: "tP: " + version_final + " [week 13]"
 } %}

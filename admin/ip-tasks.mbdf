@@ -339,8 +339,8 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 * Update the User Guide, if necessary
 </span>
 {#====================================================================================================================#}
-<span id="heading_submit_final_version">Submit the final version</span>
-<span id="desc_submit_final_version">
+<span id="heading_submit_version_final">Submit the final version</span>
+<span id="desc_submit_version_final">
 * Submission is to be done via GitHub releases. If there were any changes to the code since the last release, do a new release.
 * {{ icon_important_big_red }} The jar file should be ==cross-platform and should work in a computer that has Java 11==.
 

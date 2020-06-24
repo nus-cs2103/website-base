@@ -297,7 +297,7 @@ This is a non-exhaustive list; you may define additional roles.
 
 <div tags="m--cs2103">
 
-* _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in {{ penultimate_version }}-{{ final_version }}.
+* _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in {{ version_penultimate }}-{{ version_final }}.
 </div>
 <div tags="m--cs2113">
 

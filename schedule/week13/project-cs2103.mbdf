@@ -1,7 +1,7 @@
 {% from "schedule/index.md" import show_project_summary with context %}
 
-{{ show_project_summary(tp_file="tp-w13.md", milestone=final_version) }}
+{{ show_project_summary(tp_file="tp-w13.md", milestone=version_final) }}
 
-## tP: {{ final_version }}
+## tP: {{ version_final }}
 
 <include src="../../admin/tp-w13.md#body" />

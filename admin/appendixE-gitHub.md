@@ -131,7 +131,7 @@ The tP project template given to you is a variation of the iP repo you used for 
   <include src="appendixB-policies.md#policy-reuse"/>
 </modal>
 
-**Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project at least until {{ first_version }}.
+**Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project at least until {{ version_first }}.
 * {{ icon_tip }} **Protect the `master` branch**: You can use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs. We suggest the following:
   * Go the the {{ show_as_rounded_tab(':octicon-gear: settings') }} of your team repo.
   * Click on the `Branches` option on the navigation menu on the left.
@@ -166,7 +166,7 @@ The tP project template given to you is a variation of the iP repo you used for 
 </div>
 <div id="workflow-after-v11">
 
-**After following the given workflow for at least <tooltip content="i.e., until {{ first_version }}">one iteration</tooltip>, you can reduce process rigor** to suit your team's pace. Here are some examples:
+**After following the given workflow for at least <tooltip content="i.e., until {{ version_first }}">one iteration</tooltip>, you can reduce process rigor** to suit your team's pace. Here are some examples:
 
 * **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain.<br>
   It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
@@ -229,7 +229,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 </span>
 
-* Create following milestones : <span tags="m--cs2103">`v1.0`, `v1.1`, </span>`{{ first_version }}`, `{{ penultimate_version }}`, `{{ final_version }}`
+* Create following milestones : <span tags="m--cs2103">`v1.0`, `v1.1`, </span>`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}`
 
 * You may configure other project settings as you wish. e.g. more labels, more milestones
 
@@ -258,7 +258,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 * **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked.%%e.g.%% 
   * A typical task should be able to done by one person, in a few hours.
     * %%{{ icon_dislike }} Bad (reasons: not a one-person task, not small enough): `Write the Developer Guide`%%
-    * %%{{ icon_like }} Good: `Update class diagram in the Developer Guide for {{ final_version }}`%%
+    * %%{{ icon_like }} Good: `Update class diagram in the Developer Guide for {{ version_final }}`%%
 
   * There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. %%eg.,%%
     * %%{{ icon_dislike }} Bad:`Implementing parser ` (reason: too big).%%
@@ -287,7 +287,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 **Wrapping up a Milestone**:<br>
 
-  * **A working product tagged** with the correct tag (e.g. `{{ penultimate_version }}`) and is pushed to the main repo or a **product _release_ done on GitHub** ([example](https://github.com/se-edu/addressbook-level3/releases/)).
+  * **A working product tagged** with the correct tag (e.g. `{{ version_penultimate }}`) and is pushed to the main repo or a **product _release_ done on GitHub** ([example](https://github.com/se-edu/addressbook-level3/releases/)).
 
   * **CI passing** for the version tagged/released.
 

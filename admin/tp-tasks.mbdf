@@ -46,7 +46,7 @@ Given below are some guidance on the recommended progress at this point of the p
 
 <box dismissible>
 
-{{ icon_tip }} when setting the {{ final_version }} deadline in GitHub milestones, remember that the {{ final_version }} submission deadline is Week 13 Monday for _everyone_ (does not vary by tutorial day). Set your own deadline accordingly, or else our grading scripts will flag it as an 'unsuitable' deadline.
+{{ icon_tip }} when setting the {{ version_final }} deadline in GitHub milestones, remember that the {{ version_final }} submission deadline is Week 13 Monday for _everyone_ (does not vary by tutorial day). Set your own deadline accordingly, or else our grading scripts will flag it as an 'unsuitable' deadline.
 </box>
 
 <box background-color="white" border-color="red">
@@ -152,7 +152,7 @@ Given below are some guidance on the recommended progress at this point of the p
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ first_version }}</span>
+<span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ version_first }}</span>
 <span id="desc_prioritize_user_stories">
 
 **The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as v1.0. We try to make it small because you will have only two weeks to implement v1.0 and coding as a team is a lot harder than writing code alone.
@@ -196,10 +196,10 @@ Suggested workflow:
 {{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_conceptualize_v1">{{ icon_team }} Conceptualize {{ first_version }}</span>
+<span id="heading_conceptualize_v1">{{ icon_team }} Conceptualize {{ version_first }}</span>
 <span id="desc_conceptualize_v1">
 
-* Based on your user story selected previously, conceptualize the product in terms of how it will look like at {{ first_version }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.
+* Based on your user story selected previously, conceptualize the product in terms of how it will look like at {{ version_first }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
   <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -210,11 +210,11 @@ Suggested workflow:
 <span id="heading_draft_the_ug">{{ icon_individual }} Draft the UG</span>
 <span id="desc_draft_the_ug">
 
-* Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ first_version }}.
+* Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ version_first }}.
   * We recommend that you follow the [AB3 User Guide]({{ ab3_website }}/UserGuide.html) in terms of structure and format.
   * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
-  * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ first_version }}.
-  * Include only features that will be delivered in {{ first_version }}.
+  * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ version_first }}.
+  * Include only features that will be delivered in {{ version_first }}.
   * Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%.
   * {{ icon_important_big_red }} **Submission**: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ module }}T-W09-1.pdf`, and upload to LumiNUS.<br><br>
 
@@ -345,7 +345,7 @@ Update the following pages in your project repo:
 
 ##### <span class="text-success">Project planning, but with a twist</span>
 
-Intuitively, you might thing the right thing to do is to decide what features will be in {{ final_version }} and then plan the intermediate versions based on that. But that's not what we are going to do.
+Intuitively, you might thing the right thing to do is to decide what features will be in {{ version_final }} and then plan the intermediate versions based on that. But that's not what we are going to do.
 
 Why? You don't have enough experience to reliably estimate effort each feature will need, and hence, any such long range plan is likely to be inaccurate.
 
@@ -360,7 +360,7 @@ How is that better?
 
 </div>
 
-* {{ icon_team }} **Plan the next iteration**. As per the project planning approach described in the box above, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ first_version }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
+* {{ icon_team }} **Plan the next iteration**. As per the project planning approach described in the box above, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
   * ==Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)== even if the functionalities are not polished (polishing can be done in a later iteration).
   * If possible, break the iteration into two increments i.e., aim to produce an even simpler but working version after one week.
   * "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
@@ -377,7 +377,7 @@ How is that better?
 * If you have time, start implementing v1.2.
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_implementing_v1">{{ icon_individual }} Start implementing {{ first_version }}</span>
+<span id="heading_start_implementing_v1">{{ icon_individual }} Start implementing {{ version_first }}</span>
 <span id="desc_start_implementing_v1">
 
 <div class="indented-level2">
@@ -391,7 +391,7 @@ How is that better?
 </box>
 </div>
 
-* Start implementing {{ first_version }}, by adding code in small steps, while working in parallel, aiming to produce a VERY simple working version after one week, and a bit more functional version at the end of iteration (i.e., after two weeks).
+* Start implementing {{ version_first }}, by adding code in small steps, while working in parallel, aiming to produce a VERY simple working version after one week, and a bit more functional version at the end of iteration (i.e., after two weeks).
 
 * See the panel below for our recommendations on the project workflow.
 
@@ -449,9 +449,9 @@ How is that better?
 <span id="heading_add_another_increment_to_your_feature">{{ icon_individual }} Add the first functionality increment</span>
 <span id="desc_add_another_increment_to_your_feature">
 
-* Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ first_version }} at the end of this iteration (i.e., in two weeks).
+* Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).
 
-* {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ penultimate_version }}, {{ final_version }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
+* {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
 </span>
 {#====================================================================================================================#}
 <span id="heading_add_junit_tests">{{ icon_individual }} Add some JUnit Tests</span>
@@ -470,16 +470,16 @@ How is that better?
     Tests: [`seedu.addressbook.data.AddressBookTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java)
 </span>
 {#====================================================================================================================#}
-<span id="heading_deliver_an_intermediate_version_of_your_enhancement">{{ icon_team }} Deliver {{ first_version }}</span>
+<span id="heading_deliver_an_intermediate_version_of_your_enhancement">{{ icon_team }} Deliver {{ version_first }}</span>
 <span id="desc_deliver_an_intermediate_version_of_your_enhancement">
 
 * The feature should be merged and user visible. The product must be working although the functionality is basic.
 </span>
 {#====================================================================================================================#}
-<span id="heading_deliver_v1">{{ icon_team }} Deliver {{ first_version }}</span>
+<span id="heading_deliver_v1">{{ icon_team }} Deliver {{ version_first }}</span>
 <span id="desc_deliver_v1">
 
-* When the {{ first_version }} is ready, do a release on GitHub. Remember to upload the jar file as well.
+* When the {{ version_first }} is ready, do a release on GitHub. Remember to upload the jar file as well.
 * Wrap up the milestone on GitHub.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
@@ -497,7 +497,7 @@ How is that better?
 
 </span>
 {#====================================================================================================================#}
-<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ first_version }}</span>
+<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_first }}</span>
 <span id="desc_do_an_informal_demo">
 
 <div id="demo">
@@ -511,7 +511,7 @@ How is that better?
 
 <box type="tip" light>
 
-The version you deliver in this iteration (i.e., {{ penultimate_version }}) will be subjected a peer testing (aka [PE Dry Run](tp-deliverables.html#deliverable-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs). Hence, it is in your interest to ==finish implementing all your <tooltip content="features you want to include in your final version (i.e., {{ final_version }})">final features</tooltip> in this iteration itself== so that you can get them tested for _free_. You can use the final iteration for fixing the bugs found by peer testers.
+The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-deliverables.html#deliverable-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs). Hence, it is in your interest to ==finish implementing all your <tooltip content="features you want to include in your final version (i.e., {{ version_final }})">final features</tooltip> in this iteration itself== so that you can get them tested for _free_. You can use the final iteration for fixing the bugs found by peer testers.
 
 Furthermore, the next iteration will be shorter than usual and there'll be a lot of additional things to do during that iteration e.g., polishing up documentation. All the more reason to try and get all the implementation work done in this iteration itself.
 </box>
@@ -545,7 +545,7 @@ In addition,
 <div class="indented">
 <box>
 
-{{ icon_important_big_red }} Do a sincere job on this task because this is your only chance to get feedback on the DG before it is graded at {{ final_version }}.
+{{ icon_important_big_red }} Do a sincere job on this task because this is your only chance to get feedback on the DG before it is graded at {{ version_final }}.
 </box>
 </div>
 
@@ -576,7 +576,7 @@ In addition,
 <span id="heading_do_a_release">{{ icon_team }} Do a dry run of a release</span>
 <span id="desc_do_a_release">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ penultimate_version }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 </span>
 {#====================================================================================================================#}
 <span id="heading_make_code_reposense_compatible">{{ icon_individual }} Make the code RepoSense-compatible</span>
@@ -595,16 +595,16 @@ In addition,
 </span>
 </span>
 {#====================================================================================================================#}
-<span id="heading_deliver_the_feature">{{ icon_individual }} Deliver {{ penultimate_version }}</span>
+<span id="heading_deliver_the_feature">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
 <span id="desc_deliver_the_feature">
 
-* Deliver the featured that you planned for {{ penultimate_version }}.
+* Deliver the featured that you planned for {{ version_penultimate }}.
 </span>
 {#====================================================================================================================#}
 <span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>
 <div id="desc_update_user_docs">
 
-* {{ icon_important_big_red }} {{ penultimate_version }} user guide should be updated to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
+* {{ icon_important_big_red }} {{ version_penultimate }} user guide should be updated to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
   * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 
@@ -627,9 +627,9 @@ In addition,
 * Add sequence diagrams to enhance your DG wherever they can be useful. Note that diagrams you add in this week will receive feedback while diagrams added later will not.
 </span>
 {#====================================================================================================================#}
-<span id="heading_deliver_v2">{{ icon_individual }} Deliver {{ penultimate_version }}</span>
+<span id="heading_deliver_v2">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
 <span id="desc_deliver_v2">
-* As before, do a release on GitHub and upload the {{ penultimate_version }} jar file. <span class="text-danger">Do this before the deadline as PE testers will start downloading jar files ahead of time.</span>
+* As before, do a release on GitHub and upload the {{ version_penultimate }} jar file. <span class="text-danger">Do this before the deadline as PE testers will start downloading jar files ahead of time.</span>
 * ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
 
 {{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Contstraints → Constraint-Java-Version", "2", indent="2") }}
@@ -644,7 +644,7 @@ In addition,
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ ab3_website }}/DevOps.html#making-a-release). Do some manual tests to ensure the jar file works.
 </span>
 {#====================================================================================================================#}
-<span id="heading_wrap_up_v13">{{ icon_team }} Wrap up {{ penultimate_version }}</span>
+<span id="heading_wrap_up_v13">{{ icon_team }} Wrap up {{ version_penultimate }}</span>
 <span id="desc_wrap_up_v13">
 
 * as before
@@ -665,7 +665,7 @@ In addition,
 
 {{ embed_topic("tp-deliverables-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
 
-* **Freeze features** around this time. Ensure the current product have all the features you intend to release at {{ final_version }}. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
+* **Freeze features** around this time. Ensure the current product have all the features you intend to release at {{ version_final }}. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
 * **Update documentation** to match the product.
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 
@@ -693,7 +693,7 @@ Not applicable this semester
 </div>
 
 <!--
-* You will do a product demo during the tutorial to serve as a rehearsal for the final project demo at {{ final_version }}
+* You will do a product demo during the tutorial to serve as a rehearsal for the final project demo at {{ version_final }}
   * ==**Follow final demo instructions** (given in the panel below)== as much as possible .
   * **Cover all features**, not just the ones added in the recent iteration.
   * **Make it a 'well prepared' demo** i.e., know in advance exactly what you'll do in the demo.
@@ -707,7 +707,7 @@ Not applicable this semester
 
 * {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct.
 
-{{ embed_topic("tp-tasks.mbdf#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + final_version + " → Making the Code RepoSense-Compatible", "1", indent="2") }}
+{{ embed_topic("tp-tasks.mbdf#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + version_final + " → Making the Code RepoSense-Compatible", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
 <span id="heading_do_final_tweaks">{{ icon_individual }} Do final tweaks to the feature</span>
@@ -719,7 +719,7 @@ Not applicable this semester
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
 <span id="desc_submit_final_deliverables">
 
-* **Deadline** for all {{ final_version }} submissions is **{{ date_final_submission | date(format_normal)}} 2359** unless stated otherwise.<br>
+* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 2359** unless stated otherwise.<br>
 * Submit to LumiNUS folder we have set up, not to your project space.<br>
   {{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.
 * {{ icon_important_big_red }} **Penalty for late submission:**<br>
@@ -752,7 +752,7 @@ Not applicable this semester
 </div>
 
 * {{ icon_team }} **Product**:
-  * Do a release on GitHub, tagged as `{{ final_version }}`.
+  * Do a release on GitHub, tagged as `{{ version_final }}`.
   * Upload the jar file to LumiNUS.<br>
     File name: `[team ID][product name].jar` %%e.g. [{{ module }}T-W09-1][ContactsPlus].jar%%
 

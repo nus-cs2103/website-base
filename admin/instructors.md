@@ -3,7 +3,7 @@
 {% call show_admin_page("instructors") %}
 <div id="main">
 
-<iframe src="{{ instructors_page }}" width="800" height="1000" ></iframe>
+<iframe src="{{ url_instructors }}" width="800" height="1000" ></iframe>
 
 **Dev Team**:
 

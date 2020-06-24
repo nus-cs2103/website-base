@@ -9,12 +9,10 @@
 <span id="semester">AY2021S{{ S }}</span>
 <span id="period">2020 Aug-Dec</span>
 
-<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</span>
-
-<span id="pr_review_mapping">https://docs.google.com/spreadsheets/d/e/2PACX-1vRWi6lYGxlvJF-O--ndWa5PU7LKREcoKLAUJ8QRNtBy-9TYkg2MnNPy_KrdO7zH9fbaVZ455nDnNpPd/pubhtml?gid=0&single=true</span>
-<span id="files_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
-<span id="announcements_link">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
-<span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
+<span id="url_announcements">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
+<span id="url_files">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
+<span id="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</span>
+<span id="url_java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
 
 <variable name="date_semester_start">2020-08-10</variable>
 <variable name="date_first_lecture">2020-08-14</variable>
@@ -23,10 +21,10 @@
 
 <variable name="ip_repo_name">ip</variable>
 
-<span id="first_version">v1.2</span>
-<span id="penultimate_version">v1.3</span>
-<span id="final_version">v1.4</span>
-<span id="future_version">v2.0</span>
+<span id="version_first">v1.2</span>
+<span id="version_penultimate">v1.3</span>
+<span id="version_final">v1.4</span>
+<span id="version_future">v2.0</span>
 
 <variable name="date_final_submission">2020-11-09</variable>
 <variable name="ug_pages_per_person">1</variable>

@@ -55,7 +55,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
   * assertions{% if module == "CS2103" %}
   * defensive coding{% endif %}
 
-* No [coding standard]({{java_coding_standard}}) violations %%e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
+* No [coding standard]({{url_java_coding_standard}}) violations %%e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
 
 * [SLAP]({{baseUrl}}/se-book-adapted/chapters/codeQuality.html#slap-hard) is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.
 
@@ -185,7 +185,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 </div>
 <div tags="m--cs2113">
 
-* No <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at {{ first_version }} and {{ penultimate_version }}.
+* No <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at {{ version_first }} and {{ version_penultimate }}.
 * Good attempt to use of at least _some_ Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)
 </div>
 

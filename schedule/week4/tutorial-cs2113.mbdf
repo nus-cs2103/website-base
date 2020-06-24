@@ -45,7 +45,7 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 </box>
 </div>
 
-* {{ step(3) }} **Review the code for [coding standard]({{ java_coding_standard }}) compliance**. You can view the code in the PR by clicking on the {{ show_as_rounded_tab('Files changed') }} tab. When you find a possible coding standard violation, do the following:
+* {{ step(3) }} **Review the code for [coding standard]({{ url_java_coding_standard }}) compliance**. You can view the code in the PR by clicking on the {{ show_as_rounded_tab('Files changed') }} tab. When you find a possible coding standard violation, do the following:
   1. **Show it to your review partner(s) to confirm** it is indeed a violation. You can seek tutor's opinion if you are not sure.
   1. **Add a comment** to communicate your finding with the author.<br>
      * Hover over the offending line of code and click on the {{ button('**+**', 'primary') }} that appears to start the comment.

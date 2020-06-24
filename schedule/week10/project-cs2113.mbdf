@@ -14,6 +14,6 @@ Some things to note as you start the v2.0 iteration:
 </include>
 
 
-## tP: mid-{{ penultimate_version }}
+## tP: mid-{{ version_penultimate }}
 
 <include src="../../admin/tp-w10.md#body" />

@@ -7,12 +7,12 @@
 
 ==This week, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening in this week).
 
-To take advantage of the above, try to make your {{ penultimate_version }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ final_version }}).
+To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).
 
 </variable>
 </include>
 <p/>
 
-## tP: {{ penultimate_version }}
+## tP: {{ version_penultimate }}
 
 <include src="../../admin/tp-w11.md#body" />

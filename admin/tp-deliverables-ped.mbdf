@@ -2,7 +2,7 @@
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span>
 
-**What**: The {{ penultimate_version }} is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ final_version }}</trigger>.
+**What**: The {{ version_penultimate }} is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
 **When, where**: uses a 40 minute slot at the start of week 11 lecture slot (to be done online).
 
@@ -11,7 +11,7 @@
 </modal>
 
 {{ icon_important_big_red }} **Grading**: The PE dry run ==affects your grade in the following ways==.
-* If the product you are allocated to test in the Practical Exam (at {{ final_version }}) had a very low bug count if you scored low in the PE, we will consider your performance in PE dry run as well when calculating the PE marks.
+* If the product you are allocated to test in the Practical Exam (at {{ version_final }}) had a very low bug count if you scored low in the PE, we will consider your performance in PE dry run as well when calculating the PE marks.
 * PE dry run will help you practice for the actual PE.
 * Taking part in the PE dry run will earn you participation points.
 * There is ==no penalty for bugs reported== in your product. Every bug you find is a win-win for you and the team whose product you are testing.
@@ -36,12 +36,12 @@
 * Get the jar file to be tested:
 
 <tabs active="1">
-<tab header="~~PE Dry Run (at **{{ penultimate_version }}**)~~">
+<tab header="~~PE Dry Run (at **{{ version_penultimate }}**)~~">
 
 * Download the jar file from the team's releases page, if you haven't done this already.
 
 </tab>
-<tab header="PE (at **{{ final_version }}**)">
+<tab header="PE (at **{{ version_final }}**)">
 
 * Download the zip file from the given location, if you haven't done that already.
 * Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix `_inner.zip`.
@@ -60,13 +60,13 @@
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
 
 <tabs active="1">
-<tab header="~~PE Dry Run (at **{{ penultimate_version }}**)~~">
+<tab header="~~PE Dry Run (at **{{ version_penultimate }}**)~~">
 
 * Test the product ==based on the User Guide== available from their GitHub website `https://{team-id}.github.io/tp/UserGuide.html`.
 * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
 
 </tab>
-<tab header="PE (at **{{ final_version }}**)">
+<tab header="PE (at **{{ version_final }}**)">
 
 * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
 * As before, do both ==system testing and acceptance testing== but give priority to system testing as system-testing bugs can earn you more credit.
@@ -78,7 +78,7 @@
 ###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
 
 <tabs active="1">
-<tab header="~~PE Dry Run (at **{{ penultimate_version }}**)~~">
+<tab header="~~PE Dry Run (at **{{ version_penultimate }}**)~~">
 
 * You may report functionality bugs, UG bugs, and feature flaws.
 <div class="indented-level2">
@@ -92,7 +92,7 @@
   {{ icon_tip }} Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
 
 </tab>
-<tab header="PE (at **{{ final_version }}**)">
+<tab header="PE (at **{{ version_final }}**)">
 
 * Report functionality bugs:
 
@@ -165,7 +165,7 @@
 <span id="after-ped">
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span>
-* We'll transfer the relevant bug reports to your repo within a day after the session is over. Once you have received the bug reports for your product, you can decide whether you will act on reported issues before the final submission {{ final_version }}. For some issues, the correct decision could be to reject or postpone to a version beyond {{ final_version }}.
+* We'll transfer the relevant bug reports to your repo within a day after the session is over. Once you have received the bug reports for your product, you can decide whether you will act on reported issues before the final submission {{ version_final }}. For some issues, the correct decision could be to reject or postpone to a version beyond {{ version_final }}.
 * If you have received bug reports that don't seem to be about your project, do let us know ASAP (email the prof).
 * You can navigate to the original bug report (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the original bug reporter.
   * {{ icon_tip }} Do not argue with the bug reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and discontinue to discussion.

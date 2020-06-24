@@ -1,6 +1,6 @@
 * The main content you add should be in the `docs/DeveloperGuide.md` file (for ease of tracking by grading scripts).<br>
   If you use PlantUML diagrams, commit the diagrams as `.puml` files in the `docs/diagrams` folder.
-* **Should match the {{ final_version }} implementation**.
+* **Should match the {{ version_final }} implementation**.
 
 <div tags="m--cs2113">
 
@@ -33,7 +33,7 @@
 
 <span id="dgTips">
 
-* **Aim to showcase your documentation skills.** The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond {{ final_version }} (hypothetically).<br>
+* **Aim to showcase your documentation skills.** The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond {{ version_final }} (hypothetically).<br>
   For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ ab3_website }}/DeveloperGuide.html#proposed-undoredo-feature).
 * **Diagramming tools**:
   * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).<br>

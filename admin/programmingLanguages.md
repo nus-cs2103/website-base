@@ -33,7 +33,7 @@ We require you to use **Java 11** (the Oracle version or the OpenJDK version) fo
 
 #### Java coding standard
     
-This module follows the ==[this Java coding standard]({{java_coding_standard}})==.
+This module follows the ==[this Java coding standard]({{url_java_coding_standard}})==.
 
 ==**You are required to follow basic guidelines**== (those marked as :star:) in the module projects. Intermediate and advanced guidelines are optional.
 

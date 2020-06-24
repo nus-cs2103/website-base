@@ -12,9 +12,9 @@
 <p/>
 
 <!--
-#### ~~{{ thumb(1) }} Demo {{ penultimate_version }}~~
+#### ~~{{ thumb(1) }} Demo {{ version_penultimate }}~~
 
-* ~~One member is to do a quick demo of your `{{ penultimate_version }}` ==using the jar file==. Make sure the jar file is ==in an empty folder== before you start. Others can help to confirm the jar file works on other OS'es.~~<br>
+* ~~One member is to do a quick demo of your `{{ version_penultimate }}` ==using the jar file==. Make sure the jar file is ==in an empty folder== before you start. Others can help to confirm the jar file works on other OS'es.~~<br>
  <span class="text-info">This activity has been discarded, but the tip given below is still valid.</span>
 
 <div class="indented-level2">

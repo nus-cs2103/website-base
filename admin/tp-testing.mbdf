@@ -32,12 +32,12 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 * **<span class="text-danger">Download the product to be tested</span>**.
 
 <tabs active="1" add-class="ml-4">
-<tab header="~~PE Dry Run (at **{{ penultimate_version }}**)~~">
+<tab header="~~PE Dry Run (at **{{ version_penultimate }}**)~~">
 
 * After you have been notified which team to test (likely to be in the morning of PE-D day), download the jar file from the team's releases page.
 
 </tab>
-<tab header="PE (at **{{ final_version }}**)">
+<tab header="PE (at **{{ version_final }}**)">
 
 * After you have been notified of the download location, download the zip file that bears your name.
 
