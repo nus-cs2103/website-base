@@ -15,7 +15,7 @@ pageNav: 4
 </div>
 <div id="main">
 
-<include src="../thirdparty/text.md" />{{ hr_double }}
+<include src="../thirdparty/text.md" />{{ line_double }}
 
 </div>
 </div>

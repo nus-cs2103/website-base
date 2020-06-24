@@ -22,10 +22,10 @@ pageNav: 4
 
 # Functions
 
-<include src="../functions-def/text.md" />{{ hr_double }}
-<include src="../functions-parameters/text.md" />{{ hr_double }}
-<include src="../functions-return/text.md" />{{ hr_double }}
-<include src="../functions-scope/text.md" />{{ hr_double }}
+<include src="../functions-def/text.md" />{{ line_double }}
+<include src="../functions-parameters/text.md" />{{ line_double }}
+<include src="../functions-return/text.md" />{{ line_double }}
+<include src="../functions-scope/text.md" />{{ line_double }}
 
 </div>
 </div>

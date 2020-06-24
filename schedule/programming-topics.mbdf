@@ -16,18 +16,18 @@
 
 ## **Expressions, Data Types, Variables**
 
-<include src="../programming/programs/text.md" />{{ hr_double }}
-<include src="../programming/environment/text.md" />{{ hr_double }}
-<include src="../programming/shell/text.md" />{{ hr_double }}
-<include src="../programming/operators/text.md" />{{ hr_double }}
-<include src="../programming/types/text.md" />{{ hr_double }}
-<include src="../programming/variables/text.md" />{{ hr_double }}
+<include src="../programming/programs/text.md" />{{ line_double }}
+<include src="../programming/environment/text.md" />{{ line_double }}
+<include src="../programming/shell/text.md" />{{ line_double }}
+<include src="../programming/operators/text.md" />{{ line_double }}
+<include src="../programming/types/text.md" />{{ line_double }}
+<include src="../programming/variables/text.md" />{{ line_double }}
 
 ## **Python Programs**
 
-<include src="../programming/scripts/text.md" />{{ hr_double }}
-<include src="../programming/comments/text.md" />{{ hr_double }}
-<include src="../programming/usingFunctions/text.md" />{{ hr_double }}
+<include src="../programming/scripts/text.md" />{{ line_double }}
+<include src="../programming/comments/text.md" />{{ line_double }}
+<include src="../programming/usingFunctions/text.md" />{{ line_double }}
 </div>
 
 <div id="week2">
@@ -45,12 +45,12 @@
 
 ## **Program Flow Control**
 
-<include src="../programming/booleans/text.md" />{{ hr_double }}
-<include src="../programming/if/text.md" />{{ hr_double }}
-<include src="../programming/while/text.md" />{{ hr_double }}
-<include src="../programming/for/text.md" />{{ hr_double }}
-<include src="../programming/import/text.md" />{{ hr_double }}
-<include src="../programming/exit/text.md" />{{ hr_double }}
+<include src="../programming/booleans/text.md" />{{ line_double }}
+<include src="../programming/if/text.md" />{{ line_double }}
+<include src="../programming/while/text.md" />{{ line_double }}
+<include src="../programming/for/text.md" />{{ line_double }}
+<include src="../programming/import/text.md" />{{ line_double }}
+<include src="../programming/exit/text.md" />{{ line_double }}
 
 </div>
 <div id="week3">
@@ -65,10 +65,10 @@
 
 ## **Functions**
 
-<include src="../programming/functions-def/text.md" />{{ hr_double }}
-<include src="../programming/functions-parameters/text.md" />{{ hr_double }}
-<include src="../programming/functions-return/text.md" />{{ hr_double }}
-<include src="../programming/functions-scope/text.md" />{{ hr_double }}
+<include src="../programming/functions-def/text.md" />{{ line_double }}
+<include src="../programming/functions-parameters/text.md" />{{ line_double }}
+<include src="../programming/functions-return/text.md" />{{ line_double }}
+<include src="../programming/functions-scope/text.md" />{{ line_double }}
 </div>
 
 <div id="week4">
@@ -84,11 +84,11 @@
 
 ## **Lists**
 
-<include src="../programming/lists-intro/text.md" />{{ hr_double }}
-<include src="../programming/objectReferences/text.md" />{{ hr_double }}
-<include src="../programming/lists-workingWith/text.md" />{{ hr_double }}
-<include src="../programming/methods/text.md" />{{ hr_double }}
-<include src="../programming/lists-methods/text.md" />{{ hr_double }}
+<include src="../programming/lists-intro/text.md" />{{ line_double }}
+<include src="../programming/objectReferences/text.md" />{{ line_double }}
+<include src="../programming/lists-workingWith/text.md" />{{ line_double }}
+<include src="../programming/methods/text.md" />{{ line_double }}
+<include src="../programming/lists-methods/text.md" />{{ line_double }}
 </div>
 <div id="week5">
 <div id="week5-toc">
@@ -106,16 +106,16 @@
 
 ## **Error Handling**
 
-<include src="../programming/errors-intro/text.md" />{{ hr_double }}
-<include src="../programming/errors-syntax/text.md" />{{ hr_double }}
-<include src="../programming/errors-exceptions-handling/text.md" />{{ hr_double }}
-<include src="../programming/errors-exceptions-raising/text.md" />{{ hr_double }}
+<include src="../programming/errors-intro/text.md" />{{ line_double }}
+<include src="../programming/errors-syntax/text.md" />{{ line_double }}
+<include src="../programming/errors-exceptions-handling/text.md" />{{ line_double }}
+<include src="../programming/errors-exceptions-raising/text.md" />{{ line_double }}
 
 ## **Strings**
 
-<include src="../programming/strings-literals/text.md" />{{ hr_double }}
-<include src="../programming/strings-workingWith/text.md" />{{ hr_double }}
-<include src="../programming/strings-methods/text.md" />{{ hr_double }}
+<include src="../programming/strings-literals/text.md" />{{ line_double }}
+<include src="../programming/strings-workingWith/text.md" />{{ line_double }}
+<include src="../programming/strings-methods/text.md" />{{ line_double }}
 
 </div>
 <div id="week6">
@@ -138,7 +138,7 @@ Most programs need to read from, and write to, files in the hard disk. The topic
 
 ## **Files**
 
-<include src="../programming/files-paths/text.md" />{{ hr_double }}
+<include src="../programming/files-paths/text.md" />{{ line_double }}
 <include src="../programming/files-reading/text.md" />{{ hr_double }}
 <include src="../programming/files-writing/text.md" />{{ hr_double }}
 <include src="../programming/files-csv/text.md" />{{ hr_double }}

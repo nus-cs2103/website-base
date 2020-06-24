@@ -7,7 +7,7 @@
 <include src="../../admin/ip-w5.md#body" />
 
 <br>
-{{ hr_double }}
+{{ line_double }}
 
 ## tP: v1.0
 

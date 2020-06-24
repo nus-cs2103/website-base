@@ -59,7 +59,7 @@ pageNav: 3
 
 <include src="week{{ week_num }}/index.md#summary" optional />
 </div>
-{{ hr_double }}
+{{ line_double }}
 
 {% endfor %}
 

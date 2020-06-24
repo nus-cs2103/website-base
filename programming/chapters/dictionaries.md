@@ -22,9 +22,9 @@ pageNav: 4
 
 # Dictionaries
 
-<include src="../dictionaries-intro/text.md" />{{ hr_double }}
-<include src="../dictionaries-workingWith/text.md" />{{ hr_double }}
-<include src="../dictionaries-nested/text.md" />{{ hr_double }}
+<include src="../dictionaries-intro/text.md" />{{ line_double }}
+<include src="../dictionaries-workingWith/text.md" />{{ line_double }}
+<include src="../dictionaries-nested/text.md" />{{ line_double }}
 
 </div>
 </div>

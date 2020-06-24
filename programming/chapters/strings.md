@@ -21,9 +21,9 @@ pageNav: 4
 
 # Strings
 
-<include src="../strings-literals/text.md" />{{ hr_double }}
-<include src="../strings-workingWith/text.md" />{{ hr_double }}
-<include src="../strings-methods/text.md" />{{ hr_double }}
+<include src="../strings-literals/text.md" />{{ line_double }}
+<include src="../strings-workingWith/text.md" />{{ line_double }}
+<include src="../strings-methods/text.md" />{{ line_double }}
 
 </div>
 </div>

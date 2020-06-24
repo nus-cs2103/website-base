@@ -24,12 +24,12 @@ pageNav: 4
 
 # Program Flow Control
 
-<include src="../booleans/text.md" />{{ hr_double }}
-<include src="../if/text.md" />{{ hr_double }}
-<include src="../while/text.md" />{{ hr_double }}
-<include src="../for/text.md" />{{ hr_double }}
-<include src="../import/text.md" />{{ hr_double }}
-<include src="../exit/text.md" />{{ hr_double }}
+<include src="../booleans/text.md" />{{ line_double }}
+<include src="../if/text.md" />{{ line_double }}
+<include src="../while/text.md" />{{ line_double }}
+<include src="../for/text.md" />{{ line_double }}
+<include src="../import/text.md" />{{ line_double }}
+<include src="../exit/text.md" />{{ line_double }}
 
 </div>
 </div>

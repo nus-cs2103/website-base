@@ -23,11 +23,11 @@ pageNav: 4
 
 # Lists
 
-<include src="../lists-intro/text.md" />{{ hr_double }}
-<include src="../objectReferences/text.md" />{{ hr_double }}
-<include src="../lists-workingWith/text.md" />{{ hr_double }}
-<include src="../methods/text.md" />{{ hr_double }}
-<include src="../lists-methods/text.md" />{{ hr_double }}
+<include src="../lists-intro/text.md" />{{ line_double }}
+<include src="../objectReferences/text.md" />{{ line_double }}
+<include src="../lists-workingWith/text.md" />{{ line_double }}
+<include src="../methods/text.md" />{{ line_double }}
+<include src="../lists-methods/text.md" />{{ line_double }}
 
 </div>
 </div>

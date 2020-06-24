@@ -23,10 +23,10 @@ pageNav: 4
 
 # Files
 
-<include src="../files-paths/text.md" />{{ hr_double }}
-<include src="../files-reading/text.md" />{{ hr_double }}
-<include src="../files-writing/text.md" />{{ hr_double }}
-<include src="../files-csv/text.md" />{{ hr_double }}
+<include src="../files-paths/text.md" />{{ line_double }}
+<include src="../files-reading/text.md" />{{ line_double }}
+<include src="../files-writing/text.md" />{{ line_double }}
+<include src="../files-csv/text.md" />{{ line_double }}
 
 </div>
 </div>

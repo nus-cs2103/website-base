@@ -20,7 +20,7 @@ pageNav: 4
 
 # GUIs
 
-<include src="../gui/text.md" />{{ hr_double }}
+<include src="../gui/text.md" />{{ line_double }}
 
 </div>
 </div>

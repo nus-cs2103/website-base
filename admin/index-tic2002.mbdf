@@ -10,7 +10,7 @@ pageNav: 2
 
 # **TIC2002 Admin Info**
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Module overview
 <div class="indented" id="module-info">
@@ -20,7 +20,7 @@ pageNav: 2
 _TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects, and as such, it is **a first step towards preparing you to work in bigger SE projects**, which will be done in later modules.
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Using this module website
 
@@ -28,7 +28,7 @@ _TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balanc
 <include src="usingThisWebsite.md#main" />
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Instructors
 
@@ -56,7 +56,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Lectures
 <div class="indented" id="lectures-info">
@@ -71,7 +71,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Tutorials
 <div class="indented">
@@ -80,7 +80,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 %%:fas-map-marker-alt:%% SR2 (COM1-02-04)<br>
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Textbook
 <div class="indented">
@@ -89,7 +89,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Programming language
 <div class="indented" id="java">
@@ -100,7 +100,7 @@ This module uses Java. It assumes you are familiar with C++ basics and provides 
 
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Programming Exercises
 <span id="exercises-info">
@@ -108,7 +108,7 @@ This module uses Java. It assumes you are familiar with C++ basics and provides 
 In some weeks, there will be some programming exercises for you to submit (on `Repl.it`). You should do the exercises as you learn the topics. ==Focus on learning the topic rather than finishing the exercises==. While these are exercises provided to self-test your knowledge, the more important thing is to read and understand the topic content. Furthermore, not all topics are tested by exercise.
 </span>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Project
 <div class="indented">
@@ -150,7 +150,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 </div>
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Policies
 
@@ -162,7 +162,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
   * **If no specific deadline is given**, try to complete tasks allocated to a week by Tuesday 6.30pm of the following week (i.e., before the next lecture). In case you fail to meet that deadline, you should still do those tasks as soon as possible. There will be no penalty if a task is done within one week after the deadline.
 </span>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Tools
 <div class="indented">
@@ -203,7 +203,7 @@ We'll be using Intellij IDE for programming. While using Intellij is not compuls
 </div>
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Assessment
 <div class="indented">
@@ -218,7 +218,7 @@ We'll be using Intellij IDE for programming. While using Intellij is not compuls
 
 </div>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Getting Help
 
@@ -231,7 +231,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 
 </span>
 
-{{ dotted_line }}
+{{ line_dotted }}
 
 # Exam
 <div class="indented">

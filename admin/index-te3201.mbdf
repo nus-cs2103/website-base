@@ -10,7 +10,7 @@ pageNav: 2
 
 # **TE3201 Software Engineering**
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Module overview
 <div class="indented" id="module-info">
@@ -20,7 +20,7 @@ pageNav: 2
 _TIC2002 Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects.
 </div>
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Using this module website
 
@@ -28,7 +28,7 @@ _TIC2002 Software Engineering_ contains roughly a **50-50 balance of theory and 
 <include src="usingThisWebsite.md#main" />
 </div>
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Instructors
 <div class="indented">
@@ -55,7 +55,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 
 </div>
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Lectures
 <div class="indented" id="lectures-info">
@@ -80,13 +80,13 @@ The rough break-down of a typical lecture:
 
 </div>
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Tutorials
 
 There is no formal tutorial. Instead, tutorial-like activities are integrated into the lecture.
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Textbook
 
@@ -100,7 +100,7 @@ A customized **online text book** is used for this module. Topic coverage may no
 
 [An additional **guide on programming basics**]({{baseUrl}}/programming/index.html) is provided for you to get started or programming. The topics in that textbook are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Programming Language
 
@@ -108,7 +108,7 @@ This module uses Python programming language to teach you programming basics req
 
 **Install [Python (the latest 3.x version)](https://www.python.org/downloads/)** in your computer.
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Programming Exercises
 <span id="exercises-info">
@@ -169,7 +169,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 
 </div>
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Policies
 
@@ -189,7 +189,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 * You may view/discuss others' work or get help from others. However, <span class="text-danger"> ==the work you submit should be your own==. In case of similar submissions, marks will be divided among those submissions</span> e.g., if your submission scored 8/10 and there is another submission that is similar to your work (beyond co-incidental similarity), each submission will get 4 marks.
 </span>
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 # Tools
 <div class="indented">
@@ -212,7 +212,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 * In the initial weeks, `repl.it` online editor is good enough for writing Python code. As your project code gets bigger in later weeks, you can consider installing [PyCharm](https://www.jetbrains.com/pycharm/download) on your computer. You may use the Community Edition (free) or the Professional Edition (free for students).
 </div>
 </div>
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 
 # Getting Help
@@ -224,7 +224,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 * ask for prof's help during the following week’s tutorial hour
 
 </span>
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 <span id="assessment-info">
 
@@ -243,7 +243,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 
 </span>
 
-<!-- .......................................................................................... --> {{ dotted_line }}
+<!-- .......................................................................................... --> {{ line_dotted }}
 
 
 # Exam

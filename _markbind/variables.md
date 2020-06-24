@@ -49,16 +49,16 @@
 
 <!-- ===========================  secondary module configuration =========================================== -->
 
-<variable id="url_module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</variable>
-<variable id="url_module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</variable>
-<variable id="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
-<variable id="url_ab3_fork_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</variable>
-<variable id="url_participation_dashboard">www.comp.nus.edu.sg/~cs2103</variable>
+<variable id="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
 <variable id="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
 <variable id="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
-<variable id="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
-<variable id="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
+<variable id="url_ab3_fork_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</variable>
 <variable id="url_ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
+<variable id="url_module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</variable>
+<variable id="url_module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</variable>
+<variable id="url_participation_dashboard">www.comp.nus.edu.sg/~cs2103</variable>
+<variable id="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
+<variable id="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
 <variable id="url_tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard/#breakdown=true</variable>
 
 <!-- ===========================  icons ================================================= -->
@@ -91,6 +91,7 @@
 <span id="icon_project"><md>:fas-drafting-compass:</md></span>
 <span id="icon_Q"><md>:glyphicon-question-sign:</md></span>
 <span id="icon_Q_A">{{ icon_Q | safe }}:glyphicon-ok-sign:</span>
+<span id="icon_repo"><md>:fas-code-branch:</md></span>
 <span id="icon_resource"><md>:fas-paperclip:</md></span>
 <span id="icon_team"><md>:fas-users:</md></span>
 <span id="icon_terminal"><smal><span class="badge badge-secondary">&gt;_</span></smal></span>
@@ -106,11 +107,12 @@
 <span id="icon_windows"><md>:fab-windows:</md></span>
 <span id="icon_x"><md>:fas-times:</md></span>
 <span id="icon_x_red"><span style="color:red">{{ icon_x | safe }}</span></span>
+
 <span id="bad"><font color="red"><md>**{{ icon_dislike | safe }} Bad**</md></font></span>
 <span id="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></span>
 <variable name="pros"><span class="text-success">**pros:**</span></variable>
 <variable name="cons"><span class="text-danger">**cons:**</span></variable>
-<span id="icon_repo"><md>:fas-code-branch:</md></span>
+<span id="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></span>
 
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 <span name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></span>
@@ -127,11 +129,10 @@
 <span id="prereq_three_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
 <span id="four_stars"><span class='badge badge-pill badge-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}: OPTIONAL</span></span>
 <span id="prereq_four_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></span>
-<span id="hr_double"><hr style="border-top: 3px double #c5c5c5;"></span>
 
 <!-- ===========================  misc aliases =========================================== -->
 
+<span id="line_dashed"><hr style="border-top: dashed 1px; border-color:grey" /></span>
+<span id="line_dotted"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></span>
+<span id="line_double"><hr style="border-top: 3px double #c5c5c5;"></span>
 <span id="pagebreak"><p style="page-break-after: always;">&nbsp;</p></span>
-<span id="dashed_line"><hr style="border-top: dashed 1px; border-color:grey" /></span>
-<span id="dotted_line"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></span>
-<span id="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></span>

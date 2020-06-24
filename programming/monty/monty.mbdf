@@ -106,7 +106,7 @@ print('>>> Hello, my name is Monty')
 ```
 </panel>
 </div>
-{{ hr_double }}
+{{ line_double }}
 <div id="monty2">
 
 ### <span class="badge badge-primary">Level 2</span> <span class="text-primary">Recognize Known Commands</span>
@@ -158,7 +158,7 @@ print('>>> Bye!')
 </panel>
 
 </div>
-{{ hr_double }}
+{{ line_double }}
 <div id="monty3">
 
 ### <span class="badge badge-primary">Level 3</span> <span class="text-primary">Use Functions</span>
@@ -215,7 +215,7 @@ main()
 </panel>
 
 </div>
-{{ hr_double }}
+{{ line_double }}
 <div id="monty4">
 
 ### <span class="badge badge-primary">Level 4</span> <span class="text-primary">Collect Tasks in Memory</span>
@@ -331,7 +331,7 @@ main()
 </panel>
 
 </div>
-{{ hr_double }}
+{{ line_double }}
 
 <div id="monty5">
 
@@ -481,7 +481,7 @@ main()
 </panel>
 
 </div>
-{{ hr_double }}
+{{ line_double }}
 
 <div id="monty6">
 
@@ -586,7 +586,7 @@ def print_greeting():
 </panel>
 
 </div>
-{{ hr_double }}
+{{ line_double }}
 <div id="monty7">
 
 ### <span class="badge badge-primary">Level 7</span> <span class="text-primary">Save Tasks to Disk</span>
@@ -758,7 +758,7 @@ Given below are some more features you can consider adding at this point (it is 
 
 </div>
 
-{{ hr_double }}
+{{ line_double }}
 
 <div id="monty8">
 
@@ -847,7 +847,7 @@ elif  ...
 
 </div>
 
-{{ hr_double }}
+{{ line_double }}
 
 <div id="monty9">
 
@@ -909,7 +909,7 @@ def save_data(filename, items_to_save):
 
 </div>
 
-{{ hr_double }}
+{{ line_double }}
 
 <div id="monty10">
 
@@ -1050,7 +1050,7 @@ class ToDo:
 
 </div>
 
-{{ hr_double }}
+{{ line_double }}
 
 <div id="monty11">
 
@@ -1060,7 +1060,7 @@ Enhance the [Monty Level 10 code]({{ baseUrl }}/programming/chapters/monty.html#
 
 </div>
 
-{{ hr_double }}
+{{ line_double }}
 
 <div id="monty12">
 
@@ -1118,7 +1118,7 @@ Note:
 
 </div>
 
-{{ hr_double }}
+{{ line_double }}
 
 <div id="monty13">
 
@@ -1128,7 +1128,7 @@ Add some unit tests to [Monty Level 12 code]({{ baseUrl }}/programming/chapters/
 
 </div>
 
-{{ hr_double }}
+{{ line_double }}
 
 <div id="monty14">
 

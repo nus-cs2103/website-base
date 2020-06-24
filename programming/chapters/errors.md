@@ -22,7 +22,7 @@ pageNav: 4
 
 # Error Handling
 
-<include src="../errors-intro/text.md" />{{ hr_double }}
+<include src="../errors-intro/text.md" />{{ line_double }}
 <include src="../errors-syntax/text.md" />{{ hr_double }}
 <include src="../errors-exceptions-handling/text.md" />{{ hr_double }}
 <include src="../errors-exceptions-raising/text.md" />{{ hr_double }}

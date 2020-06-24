@@ -15,7 +15,7 @@ pageNav: 4
 </div>
 <div id="main">
 
-<include src="../unittesting/text.md" />{{ hr_double }}
+<include src="../unittesting/text.md" />{{ line_double }}
 
 </div>
 </div>

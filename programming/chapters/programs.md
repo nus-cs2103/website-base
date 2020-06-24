@@ -21,9 +21,9 @@ pageNav: 4
 
 # Python Programs
 
-<include src="../scripts/text.md" />{{ hr_double }}
-<include src="../comments/text.md" />{{ hr_double }}
-<include src="../usingFunctions/text.md" />{{ hr_double }}
+<include src="../scripts/text.md" />{{ line_double }}
+<include src="../comments/text.md" />{{ line_double }}
+<include src="../usingFunctions/text.md" />{{ line_double }}
 
 </div>
 </div>

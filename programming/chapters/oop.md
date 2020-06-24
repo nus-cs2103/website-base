@@ -23,10 +23,10 @@ pageNav: 4
 
 # Object-Oriented Programming
 
-<include src="../oop-classes/text.md" />{{ hr_double }}
-<include src="../oop-classLevelMembers/text.md" />{{ hr_double }}
-<include src="../oop-visibility/text.md" />{{ hr_double }}
-<include src="../oop-inheritance/text.md" />{{ hr_double }}
+<include src="../oop-classes/text.md" />{{ line_double }}
+<include src="../oop-classLevelMembers/text.md" />{{ line_double }}
+<include src="../oop-visibility/text.md" />{{ line_double }}
+<include src="../oop-inheritance/text.md" />{{ line_double }}
 
 </div>
 </div>

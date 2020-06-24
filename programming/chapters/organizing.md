@@ -15,7 +15,7 @@ pageNav: 4
 </div>
 <div id="main">
 
-<include src="../organizing/text.md" />{{ hr_double }}
+<include src="../organizing/text.md" />{{ line_double }}
 
 </div>
 </div>
