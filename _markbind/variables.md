@@ -12,7 +12,8 @@
 <variable name="url_announcements">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</variable>
 <variable name="url_files">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</variable>
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
-<variable name="url_java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</variable>
+<variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/intermediate.html</variable>
+<variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
 
 <variable name="date_semester_start">2020-08-10</variable>
 <variable name="date_first_lecture">2020-08-14</variable>
@@ -112,6 +113,8 @@
 <variable name="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></variable>
 <variable name="pros"><span class="text-success">**pros:**</span></variable>
 <variable name="cons"><span class="text-danger">**cons:**</span></variable>
+<variable name="required"><span class="badge badge-pill badge-danger">REQUIRED</span></variable>
+<variable name="optional"><span class="badge badge-pill badge-success">OPTIONAL</span></variable>
 <variable name="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></variable>
 
 <variable name="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></variable>

@@ -23,6 +23,7 @@ week2: [
 week3: [
   {topic_id: "tutorials"},
   {topic_id: "peerEvaluations"},
+  {topic_id: "standardsAndConventions"},
   {topic_id: "tp-supervision"},
   {policy_id: "policy-teamSize"}],
 week4: [
