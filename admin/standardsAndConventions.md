@@ -19,7 +19,7 @@ Given below are the standards and conventions to follow in this module.
 
 ##### Java
 
-* Follow the ==_basic_ rules== in the [SE-EDU Java coding standard](https://se-education.org/guides/conventions/java/basic.html).
+* {{ required }} Follow the ==_basic_ rules== in the [SE-EDU Java coding standard](https://se-education.org/guides/conventions/java/basic.html).
 * {{ optional }} Follow [intermediate and advanced rules](https://se-education.org/guides/conventions/java/index.html).
 
 </span>
