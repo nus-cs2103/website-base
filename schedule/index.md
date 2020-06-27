@@ -18,7 +18,6 @@ pageNav: 1
 15: site no longer used, lands in the module intro page
 1..13: site is active, lands in the week's schedule page
 #}
-{% set current_week = "-1" %}
 
 
 {% macro show_week_pagetop(week_num, category) %}

@@ -1,4 +1,3 @@
-{% from "schedule/index.md" import current_week with context %}
 {% from "common/macros.njk" import get_week_start_date with context %}
 
 <header fixed>

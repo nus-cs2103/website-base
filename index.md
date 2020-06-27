@@ -1,4 +1,3 @@
-{% from "schedule/index.md" import current_week with context %}
 {% if current_week in ["-1", "0", "14", "15"] %}
 <div id="website-content">
 

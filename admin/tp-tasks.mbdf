@@ -822,7 +822,7 @@ Not applicable this semester
 <p/>
 <panel type="primary" header="Admin → Deliverables → **PE-D/PE Preparation**" minimized>
 
-<include src="tp-testing.mbdf#testingPreparations" />
+<include src="tp-testing.mbdf#testingPreparations" var-pe_active_tab="1"/>
 </panel>
 </div>
 </span>

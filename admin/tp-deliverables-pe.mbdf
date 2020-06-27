@@ -28,7 +28,7 @@
 
 <panel type="primary" header="PE-D Preparation" minimized>
 
-<include src="tp-testing.mbdf#testingPreparations" />
+<include src="tp-testing.mbdf#testingPreparations" var-pe_active_tab="1"/>
 </panel>
 </div>
 <p/>
@@ -63,11 +63,10 @@
 
 ##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
 
-* **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
+**Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
 
-<div class="indented-level2">
-<include src="tp-deliverables-ped.mbdf#tp-deliverables-pe-testing-intructions" />
-</div>
+<include src="tp-deliverables-ped.mbdf#tp-deliverables-pe-testing-instructions" var-pe_active_tab="1"/>
+
 
 ##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
 
@@ -335,6 +334,7 @@ Duplicate of #67
 
 </tab>
 <tab header="Not using CATcher">
+
 <div class="indented-less">
 
 <markdown>

@@ -8,6 +8,7 @@
 <variable name="S">1</variable>
 <variable name="semester">AY2021S{{ S }}</variable>
 <variable name="period">2020 Aug-Dec</variable>
+<variable name="current_week">-1</variable>
 
 <variable name="url_announcements">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</variable>
 <variable name="url_files">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</variable>

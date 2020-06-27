@@ -22,11 +22,16 @@
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Preparation</span>
 
-<include src="tp-testing.mbdf#testingPreparations" />
+<include src="tp-testing.mbdf#testingPreparations" var-pe_active_tab="0"/>
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">During the session</span>
 
-<div id="tp-deliverables-pe-testing-intructions">
+**Test the product and report bugs** as described below.
+
+<variable name="pe_active_tab">0</variable>
+
+<div id="tp-deliverables-pe-testing-instructions">
+
 <box>
 
 ##### <div class="text-white bg-secondary p-1">**Testing instructions for PE and PE-D**</div>
@@ -35,8 +40,8 @@
 
 * Get the jar file to be tested:
 
-<tabs active="1">
-<tab header="~~PE Dry Run (at **{{ version_penultimate }}**)~~">
+<tabs active="{{ pe_active_tab }}">
+<tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
 * Download the jar file from the team's releases page, if you haven't done this already.
 
@@ -59,8 +64,8 @@
 
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
 
-<tabs active="1">
-<tab header="~~PE Dry Run (at **{{ version_penultimate }}**)~~">
+<tabs active="{{ pe_active_tab }}">
+<tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
 * Test the product ==based on the User Guide== available from their GitHub website `https://{team-id}.github.io/tp/UserGuide.html`.
 * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
@@ -77,8 +82,8 @@
 
 ###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
 
-<tabs active="1">
-<tab header="~~PE Dry Run (at **{{ version_penultimate }}**)~~">
+<tabs active="{{ pe_active_tab }}">
+<tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
 * You may report functionality bugs, UG bugs, and feature flaws.
 <div class="indented-level2">
