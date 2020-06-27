@@ -13,8 +13,9 @@ By the end of this tutorial, we want to confirm that you are able to apply Git a
 
 * Set up the team org, team fork, individual forks as described below.
 
-{{ embed_topic("../../admin/appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E(extract): **Organization setup**", "1", indent="2") }}
-{{ embed_topic("../../admin/appendixE-gitHub.md#repo-setup", "Admin " + icon_embedding + " Appendix E(extract): **Repo setup**", "1", indent="2") }}
+{{ embed_topic("../../admin/appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **Organization Setup**", "1", indent="2") }}
+{{ embed_topic("../../admin/appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="2") }}
+{{ embed_topic("../../admin/appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="2") }}
 
 <include src="followup-box.md" boilerplate>
 <variable name="commentary_body">

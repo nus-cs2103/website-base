@@ -63,7 +63,7 @@ After receiving your team ID, one team member should do the following steps:
 
 <!-- ==================================================================================================== -->
 
-<div id="repo-setup">
+<div id="tp-team-repo-setup">
 
 ### <div class="text-white bg-dark p-1">tP Team Repo Setup</div>
 
@@ -95,6 +95,63 @@ The tP project template given to you is a variation of the iP repo you used for 
    * **PR subject: the name of your product** e.g., `InsureList`
    * **Description: a 1-2 sentence overview** (plain text only, no formatting or links) of your project indicating the target user and the value proposition e.g., `InsureList helps insurance agents manage detail of their clients. It is optimized for CLI users so that frequent tasks can be done faster by typing in commands.`
 
+</div>
+<!-- ==================================================================================================== -->
+
+<div id="issue-tracker-setup">
+
+### <div class="text-white bg-dark p-1">tP Issue Tracker Setup</div>
+
+We recommend you configure the issue tracker of the tP team repo as follows:
+
+* Delete existing labels and add the following labels.<br>
+  {{ icon_tip }} **Issue type** labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.
+
+<box>
+
+**Issue type** labels:
+* `type.Epic` : A big feature which can be broken down into smaller stories e.g. search
+* `type.Story` : A user story
+* `type.Enhancement`: An enhancement to an existing story
+* `type.Task` (or `type.Chore`) : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
+* `type.Bug` : A bug
+
+</box>
+
+<box>
+
+**Priority** labels:
+* `priority.High` : Must do
+* `priority.Medium` : Nice to have
+* `priority.Low` : Unlikely to do
+
+</box>
+
+<span id="bug-severity">
+
+<box>
+
+**Bug Severity** labels:
+* `severity.VeryLow` : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.
+* `severity.Low` : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.
+* `severity.Medium` : A flaw that causes occasional inconvenience to some users but they can continue to use the product.
+* `severity.High` : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.
+
+</box>
+
+</span>
+
+* Create following milestones : <span tags="m--cs2103">`v1.0`, `v1.1`, </span>`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}`
+
+* You may configure other project settings as you wish. e.g. more labels, more milestones
+
+</div>
+
+<!-- ==================================================================================================== -->
+<div id="tp-individual-fork-setup">
+
+### <div class="text-white bg-dark p-1">tP Individual Fork Setup</div>
+
 ****({{ icon_individual }}, {{ icon_individual }}, {{ icon_individual }}, ...) Every team member:****
 
 1. **Watch** the `tP` repo (created above) i.e., go to the repo and click on the {{ button(':octicon-eye: Watch :octicon-triangle-down:') }} button to subscribe to activities of the repo.
@@ -113,7 +170,6 @@ The tP project template given to you is a variation of the iP repo you used for 
 </box>
 
 </div>
-
 <!-- ==================================================================================================== -->
 
 <div id="workflow">
@@ -186,55 +242,6 @@ The tP project template given to you is a variation of the iP repo you used for 
 
 <!-- ==================================================================================================== -->
 
-<div id="issue-tracker-setup">
-
-### <div class="text-white bg-dark p-1">tP Issue Tracker Setup</div>
-
-We recommend you configure the issue tracker of the tP team repo as follows:
-
-* Delete existing labels and add the following labels.<br>
-  {{ icon_tip }} **Issue type** labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.
-
-<box>
-
-**Issue type** labels:
-* `type.Epic` : A big feature which can be broken down into smaller stories e.g. search
-* `type.Story` : A user story
-* `type.Enhancement`: An enhancement to an existing story
-* `type.Task` (or `type.Chore`) : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
-* `type.Bug` : A bug
-
-</box>
-
-<box>
-
-**Priority** labels:
-* `priority.High` : Must do
-* `priority.Medium` : Nice to have
-* `priority.Low` : Unlikely to do
-
-</box>
-
-<span id="bug-severity">
-
-<box>
-
-**Bug Severity** labels:
-* `severity.VeryLow` : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.
-* `severity.Low` : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.
-* `severity.Medium` : A flaw that causes occasional inconvenience to some users but they can continue to use the product.
-* `severity.High` : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.
-
-</box>
-
-</span>
-
-* Create following milestones : <span tags="m--cs2103">`v1.0`, `v1.1`, </span>`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}`
-
-* You may configure other project settings as you wish. e.g. more labels, more milestones
-
-</div>
-
 <div id="tp-schedule-tracking">
 
 ### <div class="text-white bg-dark p-1">tP Project Schedule Tracking</div>
@@ -247,9 +254,10 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * **Record each of the user stories you plan to deliver as an issue in the issue tracker.** e.g.,
 
-  title | `As a user I can add a deadline`
-  ------|---------------------------------
-  Description | `... so that I can keep track of my deadlines`
+<div class="indented-level2">
+
+<include src="..\book\specifyingRequirements\userStories\usage\tools.md#user-stories-in-issue-tracker" />
+</div>
 
 * **Assign the `type.*` and `priority.*` labels to those issues.**
 

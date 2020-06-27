@@ -102,11 +102,16 @@ Given below are some guidance on the recommended progress at this point of the p
 
   <img class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px">
 
-* Get together with your team members and <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> **&nbsp;for the the product**.
-  * At this stage, aim to have more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.%%
-  * Refer <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories →  Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.
-  * You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
-  * Note that ==you should not 'evaluate' the value of user stories while doing the above==. %%Reason: an important aspect of brainstorming is not judging the ideas generated.%%
+<div class="indented-level1">
+
+Get together with your team members and <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> **&nbsp;for the the product**.
+
+* **How many?** Aim to collect more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.%%
+* **Follow** [**the _recipe for brainstorming user stories_** in the textbook → Specifying Requirements → UserStories →  Usage]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html#a-recipe-for-brainstorming-user-stories).
+
+* **How to record?**<br>
+  Keep records of intermediate steps (e.g., persona, scenarios) in your collaborative project document started in the previous week.<br>
+  You can ~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~ use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).
 
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
@@ -121,34 +126,19 @@ Given below are some guidance on the recommended progress at this point of the p
   <include src="../book/specifyingRequirements/userStories/usage/tools.md"/>
 </modal>
 
-<modal large header="Textbook {{ icon_embedding }} Specifying Requirements → UserStories →  Usage → (section) Tips" id="modal:v10-userstoryusagetips">
-  <include src="../book/specifyingRequirements/userStories/usage/text.md#usageTips"/>
-</modal>
 
-<div class="indented-level3">
-<box tags="m--cs2103">
+<div tags="m--cs2103" class="indented-level2">
 
-{{ icon_tip }} Recommended: **You can use GitHub issue tracker to manage user stories**, but for that you need to set up your team's GitHub organization, team repo, and its issue tracker first. Instructions for doing those steps are in the panel below.
+{{ icon_tip }} **If you choose to use the GitHub issue tracker to manage user stories**, you need to set up your team's GitHub organization, team repo, and its issue tracker first. Instructions for doing those steps are in the panel below.
 
 <panel header="%%Admin {{ icon_embedding }} Appendix E: GitHub (extract)%%">
   <include src="appendixE-gitHub.md#organization-setup"/>
-  <include src="appendixE-gitHub.md#repo-setup"/>
+  <include src="appendixE-gitHub.md#tp-team-repo-setup"/>
   <include src="appendixE-gitHub.md#issue-tracker-setup"/>
-  <include src="appendixE-gitHub.md#tp-schedule-tracking"/>
 </panel>
 
-</box>
+</div>
 
-<panel header="{{ icon_example }} User Story examples (from a different product)" minimized>
-<span class="text-monospace">
-
-* As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.
-* As a user I can find upcoming tasks, so that I can decide what needs to be done soon.
-* As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.
-* As a new user I can view more information about a particular command, so that I can learn how to use various commands.
-* As an advanced user I can use shorter versions of a command, so that type a command faster.
-</span>
-</panel>
 </div>
 </span>
 {#====================================================================================================================#}
@@ -172,10 +162,11 @@ Suggested workflow:
 <span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
 <span id="desc_set_up_project_repo">
 
-* Set up the team org and the team repo as explained below:
+* Set up the team org, the team repo, and individual forks as explained below:
 
-{{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E(extract): **Organization setup**", "1", indent="2") }}
-{{ embed_topic("appendixE-gitHub.md#repo-setup", "Admin " + icon_embedding + " Appendix E(extract): **Repo setup**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Organization Setup**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
 <span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the code base</span>
