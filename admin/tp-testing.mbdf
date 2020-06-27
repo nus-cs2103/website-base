@@ -10,10 +10,15 @@
 
 <panel header="If not using CATcher" minimized>
 
+<div id="not-using-catcher-warning">
+
 <box type="warning">
 
 Issues created for PE-D and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are **<span class="text-danger">not allowed to use the GitHub interface for PE-D and PE activities, unless you have obtained  our permission first</span>**.
+
 </box>
+
+</div>
 
 * Create a public repo in your GitHub account with the following name:
   * PE Dry Run: `ped`

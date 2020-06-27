@@ -132,6 +132,8 @@
 <tab header="Not using CATcher">
 <div class="indented-less">
 
+<include src="tp-testing.mbdf#not-using-catcher-warning" />
+
 <markdown>
 * Post bug reports in the following repo you created earlier:
   * PE Dry Run: `ped`
