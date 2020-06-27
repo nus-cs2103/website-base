@@ -1,7 +1,7 @@
 {% from "schedule/index.md" import current_week with context %}
 {% from "common/macros.njk" import get_week_start_date with context %}
 
-<header class="header-fixed">
+<header fixed>
 {% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is not ready yet! The updated version will be available soon.**</md></div >
 {% elif current_week == "15" %}
