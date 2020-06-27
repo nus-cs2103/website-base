@@ -10,6 +10,7 @@ pageNav: 1
 {% from "admin/admin-tasks.mbdf" import show_weekly_admin_tasks with context %}
 {% from "common/macros.njk" import get_week_start_date with context %}
 {% from "_module-" + module + "/weeklyTextbookTopics.mbdf" import weekly_textbook_topics with context %}
+{% from "_module-" + module + "/weeklyTpTasks.mbdf" import weekly_tp_themes with context %}
 
 {#
 -1: site not ready, lands in the module intro page
@@ -165,22 +166,6 @@ pageNav: {{ categories[category].pagenav }}
 {% endmacro %}
 
 
-{% macro show_project_summary(ip_file=false, tp_file=false, milestone=false) %}
-<div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
-
-{% if ip_file %}
-**iP:**
-<include src="../../admin/{{ ip_file }}#summary" />
-{% endif %}
-{% if tp_file %}
-**tP:** {% if milestone %}<span class="border rounded text-success border-success pr-1 pl-1">:fas-tag: **{{ milestone }}**</span>{% endif %}
-<include src="../../admin/{{ tp_file }}#summary" />
-{% endif %}
-</div>
-
-{% endmacro %}
-
-
 {% macro show_week_index_page(week_num) %}
 <div class="website-content">
 {{ show_week_pagetop(week_num, "notices") }}
@@ -242,20 +227,56 @@ Information relevant to the week's tutorial will appear in this tab.
 {% endmacro %}
 
 
+{% macro show_week_project_page_details(week_num) %}
+
+{% set ip = week_num <= (ip_last_week | int) and week_num >= (ip_first_week | int) %}
+{% set tp = week_num >= (tp_first_week | int) %}
+{% if tp %}
+  {% set theme = weekly_tp_themes["w" + week_num] %}
+{% endif %}
+
+<div id="summary" class="lead border-left ml-3 mb-3 pl-2" style="color: purple;">
+
+{% if ip %}
+**iP:**
+<include src="../../admin/{{ "ip-w" + week_num + ".md" }}#summary" />
+{% endif %}
+{% if tp %}
+**tP:** {% if theme.milestone %}<span class="border rounded text-success border-success pr-1 pl-1">:fas-tag: **{{ theme.milestone }}**</span>{% endif %}
+<include src="../../admin/{{ "tp-w" + week_num + ".md" }}#summary" />
+{% endif %}
+</div>
+
+{% if ip %}
+
+<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">iP [week {{ week_num }}]</h2>
+
+<include src="../../admin/ip-w{{ week_num }}.md#body" />
+
+{% endif %}
+{% if tp %}
+
+<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">{{ theme.name }}</h2>
+
+<include src="../../admin/tp-w{{ week_num }}.md#body" />
+{% endif %}
+{% if not ip and not tp %}
+**There are no project activities allocated for this week.**
+{% endif %}
+{% endmacro %}
+
+
 {% macro show_week_project_page(week_num) %}
-<div class="website-content">
 {{ show_week_pagetop(week_num, "project") }}
 
-{% if week_num == "1" %}
+{% if week_num == 1 %}
 <box type="info" dismissible>
 
 Project-related information relevant to the week will appear in this tab.
 </box>
 {% endif %}
-<include src="project-{{ module | lower }}.mbdf" optional />
-</div>
+{{ show_week_project_page_details(week_num) }}
 {% endmacro %}
-
 
 {% macro show_programming_topics_page(week_num) %}
 <div class="website-content">

@@ -1,7 +1,0 @@
-{% from "schedule/index.md" import show_project_summary with context %}
-
-{{ show_project_summary(tp_file="tp-w11.md", milestone=version_penultimate) }}
-
-## tP: {{ version_penultimate }}
-
-<include src="../../admin/tp-w11.md#body" />
