@@ -21,7 +21,7 @@ See the sections below for details of how we assess each aspect.
 * tutors (based on product demo and user guide)
 * peers from other teams (based on peer testing and user guide)
 
-{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-featureFit-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Product Design==", "3") }}
+{{ embed_topic("tp-pe.mbdf#projectGrading-featureFit-instructions", "Admin " + icon_embedding + " tP → PE → ==Grading Instructions for Product Design==", "3") }}
 
 In addition, feature flaws reported in the PE will be considered when grading this aspect.
 
@@ -75,7 +75,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 * Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
 
-{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Questions used for Implementation Effort==", "3", indent="2") }}
+{{ embed_topic("tp-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP → PE → ==Questions used for Implementation Effort==", "3", indent="2") }}
 
 * Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
@@ -85,7 +85,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 * This is evaluated by peers who tested your product, and tutors.
 
-{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Question used for Implementation Effort==", "3", indent="2") }}
+{{ embed_topic("tp-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP → PE → ==Question used for Implementation Effort==", "3", indent="2") }}
 
 * The score could be further moderated by this question answered by team members.
 
@@ -102,7 +102,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 **Evaluates:** How well you tested your own feature
 
 **Based on:**
-1. functionality bugs in your work found by others during the [Practical Exam (PE)]({{baseUrl}}/admin/tp-deliverables.html#deliverable-practical-exam)
+1. functionality bugs in your work found by others during the [Practical Exam (PE)]({{baseUrl}}/admin/tp-pe.html#tp-practical-exam)
 1. your test code %%(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)%%
 
 <modal large header="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations">
@@ -135,8 +135,8 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 * Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.
 
-{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-userGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for User Guide==", "3", indent="2") }}
-{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-devGuide-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Grading Instructions for Developer Guide==", "3", indent="2") }}
+{{ embed_topic("tp-pe.mbdf#projectGrading-userGuide-instructions", "Admin " + icon_embedding + " tP → PE → ==Grading Instructions for User Guide==", "3", indent="2") }}
+{{ embed_topic("tp-pe.mbdf#projectGrading-devGuide-instructions", "Admin " + icon_embedding + " tP → PE → ==Grading Instructions for Developer Guide==", "3", indent="2") }}
 
 * Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 

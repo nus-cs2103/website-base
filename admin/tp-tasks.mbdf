@@ -548,7 +548,7 @@ How is that better?
 
 <box type="tip" light>
 
-The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-deliverables.html#deliverable-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs). Hence, it is in your interest to ==finish implementing all your <tooltip content="features you want to include in your final version (i.e., {{ version_final }})">final features</tooltip> in this iteration itself== so that you can get them tested for _free_. You can use the final iteration for fixing the bugs found by peer testers.
+The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs). Hence, it is in your interest to ==finish implementing all your <tooltip content="features you want to include in your final version (i.e., {{ version_final }})">final features</tooltip> in this iteration itself== so that you can get them tested for _free_. You can use the final iteration for fixing the bugs found by peer testers.
 
 Furthermore, the next iteration will be shorter than usual and there'll be a lot of additional things to do during that iteration e.g., polishing up documentation. All the more reason to try and get all the implementation work done in this iteration itself.
 </box>
@@ -692,7 +692,7 @@ In addition,
 
 * =={{ icon_important_big_red }} See info in the panel below:==
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="2") }}
+{{ embed_topic("tp-pe.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
 <span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Tweak the product as per peer-testing results</span>
@@ -700,7 +700,7 @@ In addition,
 
 * Learn the procedure for dealing with PED bugs you received:
 
-{{ embed_topic("tp-deliverables-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
+{{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
 
 * **Freeze features** around this time. Ensure the current product have all the features you intend to release at {{ version_final }}. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
 * **Update documentation** to match the product.
@@ -861,12 +861,12 @@ Not applicable this semester
 
 <div class="indented-level2">
 
-<panel type="primary" header="Admin → Deliverables → **PE Overview**" minimized>
+<panel type="primary" header="Admin → tP → **PE Overview**" minimized>
 
-<include src="tp-deliverables-pe.mbdf#pe-overview" />
+<include src="tp-pe.mbdf#pe-overview" />
 </panel>
 <p/>
-<panel type="primary" header="Admin → Deliverables → **PE-D/PE Preparation**" minimized>
+<panel type="primary" header="Admin → tP → **PE-D/PE Preparation**" minimized>
 
 <include src="tp-testing.mbdf#testingPreparations" var-pe_active_tab="1"/>
 </panel>
@@ -878,7 +878,7 @@ Not applicable this semester
 
 * Attend the practical test, to be done during the lecture.
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-practicalexam", "Admin " + icon_embedding + " tP → Deliverables → Practical Exam", "3", indent="2") }}
+{{ embed_topic("tp-pe.md#tp-practicalexam", "Admin " + icon_embedding + " tP → Practical Exam", "3", indent="2") }}
 </span>
 {#====================================================================================================================#}
 

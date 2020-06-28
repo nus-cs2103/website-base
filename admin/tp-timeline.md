@@ -117,7 +117,7 @@ The first half of the tP is light because you will be doing the iP in parallel d
 
 #### {{ badge("W13")}} Evaluation
 
-* The final submission is subjected to a intensive peer testing (in a so called [_practical exam_](tp-deliverables.html#deliverable-practical-exam-pe)).
+* The final submission is subjected to a intensive peer testing (in a so called [_practical exam_](tp-pe.html#tp-practical-exam-pe)).
 * You will get credit for finding bugs in others' deliverables and penalized for bugs found in your deliverables.
 
 </div>

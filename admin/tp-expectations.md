@@ -165,7 +165,7 @@ One semester ago, we reduced the tP functionality expectations by about 40-50% c
 <div tags="m--cs2113">
 
 In fact, here is the grading criterion for the individual project effort:
-{{ embed_topic("tp-deliverables-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP Deliverables → PE → ==Evaluating the  Implementation Effort==", "3") }}
+{{ embed_topic("tp-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP → PE → ==Evaluating the  Implementation Effort==", "3") }}
 </div>
 </box>
 </span>

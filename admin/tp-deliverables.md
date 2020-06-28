@@ -14,8 +14,6 @@ Here is a list of main deliverables of the project; their details are given in t
   * [Product Website](#deliverable-product-website)
   * [Project Portfolio Page (PPP)](#deliverable-project-portfolio-page-ppp)
 * [Product Demo](#deliverable-demo)
-* [Practical Exam Dry Run (PE-D)](#deliverable-practical-exam-dry-run-pe-d)
-* [Practical Exam (PE)](#deliverable-practical-exam-pe)
 
 
 ### <div class="text-white bg-info p-1">Deliverable: Executable</div>
@@ -51,16 +49,6 @@ Here is a list of main deliverables of the project; their details are given in t
 ### <div class="text-white bg-info p-1">Deliverable: Demo</div>
 <span id="tp-deliverables-demo">
 <include src="tp-deliverables-demo.mbdf" />
-</span>
-
-### <div class="text-white bg-primary p-1">Deliverable: Practical Exam Dry Run (PE-D)</div>
-<span id="tp-deliverables-practicalexam-dry-run">
-<include src="tp-deliverables-ped.mbdf" />
-</span>
-
-### <div class="text-white bg-success p-1">Deliverable: Practical Exam (PE)</div>
-<span id="tp-deliverables-practicalexam">
-<include src="tp-deliverables-pe.mbdf" />
 </span>
 
 </div>

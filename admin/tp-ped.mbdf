@@ -6,8 +6,8 @@
 
 **When, where**: uses a 40 minute slot at the start of week 11 lecture slot (to be done online).
 
-<modal large header="Admin {{ icon_embedding }} Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
-  <include src="tp-deliverables.md#tp-deliverables-practicalexam"/>
+<modal large header="Admin {{ icon_embedding }} tP → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
+  <include src="tp-pe.md#tp-practicalexam"/>
 </modal>
 
 {{ icon_important_big_red }} **Grading**: The PE dry run ==affects your grade in the following ways==.
@@ -30,7 +30,7 @@
 
 <variable name="pe_active_tab">0</variable>
 
-<div id="tp-deliverables-pe-testing-instructions">
+<div id="tp-pe-testing-instructions">
 
 <box>
 
@@ -159,7 +159,7 @@
 
 * Assign exactly one `type.*` label to the issue.
 <div class="indented-level2">
-<include src="tp-deliverables-pe.mbdf#type-labels" />
+<include src="tp-pe.mbdf#type-labels" />
 </div>
 
 </box>
