@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import get_date with context %}
+
 {% set weekly_ip_tasks = {
 week2: [
   {id: 'learn_about_the_project'},

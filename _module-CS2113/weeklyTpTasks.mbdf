@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import get_date with context %}
+
 {% set weekly_tp_tasks = {
 week3: [
   {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'}

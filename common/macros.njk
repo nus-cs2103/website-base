@@ -128,3 +128,5 @@
   {{ date_first_lecture | date(format, (week_num - (2 if week_num < 7 else 1)) * 7 + shift)}}
   {% endif %}
 {% endmacro %}
+
+{% macro get_date(base, displacement, time="2359", format=format_normal) %}{{ (base | date(format, displacement)) + " " + time}}{% endmacro %}

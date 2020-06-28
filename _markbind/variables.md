@@ -17,9 +17,8 @@
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
 
 <variable name="date_semester_start">2020-08-10</variable>
+<variable name="date_w2_start">2020-08-14</variable>
 <variable name="date_first_lecture">2020-08-14</variable>
-<variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
-<variable name="format_normal">ddd, MMM Do</variable>
 
 <variable name="ip_repo_name">ip</variable>
 <variable name="ip_first_week">2</variable>
@@ -54,6 +53,21 @@
 
 
 <!-- ===========================  secondary module configuration =========================================== -->
+
+<variable name="format_normal">ddd, MMM Do</variable>
+<variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
+<variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w4_start">{{ date_w3_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w5_start">{{ date_w4_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w6_start">{{ date_w5_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w7_start">{{ date_w6_start | date("YYYY-MM-DD", 14) }}</variable>
+<variable name="date_w8_start">{{ date_w7_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w9_start">{{ date_w8_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w10_start">{{ date_w9_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w11_start">{{ date_w10_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w12_start">{{ date_w11_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w13_start">{{ date_w12_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w14_start">{{ date_w13_start | date("YYYY-MM-DD", 7) }}</variable>
 
 <variable name="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
 <variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
