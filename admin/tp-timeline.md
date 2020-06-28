@@ -75,12 +75,13 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 #### {{ badge("Week 7")}} {{ weekly_tp_themes.w7.name }}
 
 * Ensure development environment is set up.
+
 * Plan the next iteration i.e., decide who will do which parts by when.
-</div>
 
 <div tags="m--cs2103">
 
 * Do a trial iteration ({{ version_trial }} to get used to the workflow. In this iteration, only some documents will be updated.
+</div>
 </div>
 
 The first half of the tP is light because you will be doing the iP in parallel during that time.
@@ -94,7 +95,7 @@ The first half of the tP is light because you will be doing the iP in parallel d
 #### {{ badge("&nbsp;W8&nbsp;")}} {{ badge("&nbsp;W9&nbsp;")}} Iteration 1 → {{ version_first }}
 
 * This is the first proper iteration.
-* Aim to deliver an MVP version of the product.
+* Aim to deliver an <tooltip content="Minimum Viable Product">MVP</tooltip> version of the product.
 
 
 #### {{ badge("W10")}} {{ badge("W11")}} Iteration 2 → {{ version_penultimate }}
