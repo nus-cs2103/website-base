@@ -229,8 +229,8 @@ Suggested workflow:
 {{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_conceptualize_v1">{{ icon_team }} Conceptualize {{ version_first }}</span>
-<span id="desc_conceptualize_v1">
+<span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize {{ version_first }}</span>
+<span id="desc_conceptualize_first_version">
 
 * Based on your user story selected previously, conceptualize the product in terms of how it will look like at {{ version_first }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.
 
@@ -366,8 +366,8 @@ Update the following pages in your project repo:
 
 </span>
 {#====================================================================================================================#}
-<span id="heading_wrap_up_v11">{{ icon_team }} Wrap up v1.1</span>
-<span id="desc_wrap_up_v11">
+<span id="heading_wrap_up_trial_version">{{ icon_team }} Wrap up {{ version_trial }}</span>
+<span id="desc_wrap_up_trial_version">
 
 * After all changes that _can_ be merged before the milestone deadline have been merged, use `git tag` feature to tag the current version with the milestone `v1.1` and push the tag to the team repo.
 </span>
@@ -413,8 +413,8 @@ How is that better?
 * If you have time, start implementing v1.2.
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_implementing_v1">{{ icon_individual }} Start implementing {{ version_first }}</span>
-<span id="desc_start_implementing_v1">
+<span id="heading_start_implementing_first_version">{{ icon_individual }} Start implementing {{ version_first }}</span>
+<span id="desc_start_implementing_first_version">
 
 <div class="indented-level2">
 
@@ -482,8 +482,8 @@ How is that better?
 
 </span>
 {#====================================================================================================================#}
-<span id="heading_add_another_increment_to_your_feature">{{ icon_individual }} Add the first functionality increment</span>
-<span id="desc_add_another_increment_to_your_feature">
+<span id="heading_add_first_functionality_increment">{{ icon_individual }} Add the first functionality increment</span>
+<span id="desc_add_first_functionality_increment">
 
 * Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).
 
@@ -506,30 +506,31 @@ How is that better?
     Tests: [`seedu.addressbook.data.AddressBookTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java)
 </span>
 {#====================================================================================================================#}
-<span id="heading_deliver_an_intermediate_version_of_your_enhancement">{{ icon_team }} Deliver {{ version_first }}</span>
-<span id="desc_deliver_an_intermediate_version_of_your_enhancement">
+<span id="heading_deliver_first_version">{{ icon_team }} Deliver {{ version_first }}</span>
+<span id="desc_deliver_first_version">
 
-* The feature should be merged and user visible. The product must be working although the functionality is basic.
-</span>
-{#====================================================================================================================#}
-<span id="heading_deliver_v1">{{ icon_team }} Deliver {{ version_first }}</span>
-<span id="desc_deliver_v1">
+<div tags="m--cs2103">
+
+* The product must be working although the functionality is basic.
+
+</div>
+<div tags="m--cs2113">
 
 * When the {{ version_first }} is ready, do a release on GitHub. Remember to upload the jar file as well.
 * Wrap up the milestone on GitHub.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
+</div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_wrap_up_v12">{{ icon_team }} Wrap up milestone</span>
-<span id="desc_wrap_up_v12">
+<span id="heading_wrap_up_first_version">{{ icon_team }} Wrap up {{ version_first }}</span>
+<span id="desc_wrap_up_first_version">
 
-* {{ icon_team }} **Manage the milestone** v1.2 as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin {{ icon_embedding }} Appendix E: GitHub: Project Schedule Tracking]</trigger>.
-* **Wrap up the milestone** using a git tag `v1.2`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, reassign them to a future milestone.
+* {{ icon_team }} **Manage the milestone** {{ version_first }} as explained in the panel below.
 
-<modal large header="Appendix E: Using GitHub →" id="modal:v12-projectTracking">
-  <include src="appendixE-gitHub.md#tp-schedule-tracking"/>
-</modal>
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
+
+* **Wrap up the milestone** using a git tag `{{ version_first }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, reassign them to a future milestone.
 
 </span>
 {#====================================================================================================================#}
@@ -542,8 +543,8 @@ How is that better?
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_on_the_full_version">{{ icon_individual }} Start the next iteration</span>
-<span id="desc_start_on_the_full_version">
+<span id="heading_start_on_the_penultimate_version">{{ icon_individual }} Start the next iteration</span>
+<span id="desc_start_on_the_penultimate_version">
 
 <box type="tip" light>
 
@@ -663,8 +664,8 @@ In addition,
 * Add sequence diagrams to enhance your DG wherever they can be useful. Note that diagrams you add in this week will receive feedback while diagrams added later will not.
 </span>
 {#====================================================================================================================#}
-<span id="heading_deliver_v2">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
-<span id="desc_deliver_v2">
+<span id="heading_deliver_penultimate_version">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
+<span id="desc_deliver_penultimate_version">
 * As before, do a release on GitHub and upload the {{ version_penultimate }} jar file. <span class="text-danger">Do this before the deadline as PE testers will start downloading jar files ahead of time.</span>
 * ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
 
@@ -680,8 +681,8 @@ In addition,
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do some manual tests to ensure the jar file works.
 </span>
 {#====================================================================================================================#}
-<span id="heading_wrap_up_v13">{{ icon_team }} Wrap up {{ version_penultimate }}</span>
-<span id="desc_wrap_up_v13">
+<span id="heading_wrap_up_penultimate_version">{{ icon_team }} Wrap up {{ version_penultimate }}</span>
+<span id="desc_wrap_up_penultimate_version">
 
 * as before
 </span>
