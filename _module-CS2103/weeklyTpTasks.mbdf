@@ -68,15 +68,15 @@ week13: [
 } %}
 
 {% set weekly_tp_themes = {
-  w3: {name: "tP week 3: Kickoff"},
-  w4: {name: "tP week 4: Set direction"},
-  w5: {name: "tP week 5: Collect user stories"},
-  w6: {name: "tP week 6: Conceptualize the product"},
-  w7: {name: "tP week 7: Trial iteration", milestone: version_trial},
-  w8: {name: "tP week 8: mid-" + version_first},
-  w9: {name: "tP week 9: " + version_first, milestone: version_first},
-  w10: {name: "tP week 10: mid-" + version_penultimate},
-  w11: {name: "tP week 11: " + version_penultimate, milestone: version_penultimate},
-  w12: {name: "tP week 12: mid-" + version_final},
-  w13: {name: "tP week 13: " + version_final, milestone: version_final}
+  w3: {name: "Kickoff"},
+  w4: {name: "Set direction"},
+  w5: {name: "Gather requirements"},
+  w6: {name: "Conceptualize the product"},
+  w7: {name: "Get ready for iterations", milestone: version_trial},
+  w8: {name: "mid-" + version_first},
+  w9: {name: version_first, milestone: version_first},
+  w10: {name: "mid-" + version_penultimate},
+  w11: {name: version_penultimate, milestone: version_penultimate},
+  w12: {name: "mid-" + version_final},
+  w13: {name: version_final, milestone: version_final}
 } %}

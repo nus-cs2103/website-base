@@ -249,14 +249,14 @@ Information relevant to the week's tutorial will appear in this tab.
 
 {% if ip %}
 
-<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">iP [week {{ week_num }}]</h2>
+<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">iP</h2>
 
 <include src="../../admin/ip-w{{ week_num }}.md#body" />
 
 {% endif %}
 {% if tp %}
 
-<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">{{ theme.name }}</h2>
+<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">tP: {{ theme.name }}</h2>
 
 <include src="../../admin/tp-w{{ week_num }}.md#body" />
 {% endif %}
