@@ -59,6 +59,7 @@
 <variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_ab3_fork_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</variable>
+<variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
 <variable name="url_ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
 <variable name="url_module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</variable>
 <variable name="url_module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</variable>

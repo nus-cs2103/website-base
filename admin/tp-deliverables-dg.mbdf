@@ -89,14 +89,14 @@ It will look more 'polished' if the two text sizes match.
 </modal>
 
 <modal large header="AB3 - Class Diagram of the Logic Component" id="modal:ipWeek10-logicClassDiagram">
-  <img src="https://se-education.org/addressbook-level3/images/LogicClassDiagram.png" width="900"/>
+  <img src="{{ url_ab3_upstream_website }}/images/LogicClassDiagram.png" width="900"/>
 </modal>
 
 <modal large header="AB3 - Sequence Diagram for the `delete` command" id="modal:ipWeek10-deleteSd">
-  <img src="https://se-education.org/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"/>
+  <img src="{{ url_ab3_upstream_website }}/images/DeleteSequenceDiagram.png" width="900"/>
 </modal>
 
 <modal large header="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd">
-  <img src="https://se-education.org/addressbook-level3/images/ArchitectureSequenceDiagram.png"/>
+  <img src="{{ url_ab3_upstream_website }}/images/ArchitectureSequenceDiagram.png"/>
 </modal>
 </span>

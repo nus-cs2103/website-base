@@ -103,7 +103,7 @@ Evaluate based on the User Guide and the actual product behavior.
 
 <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,**<br>
 Evaluate based on fit-for-purpose, from the perspective of a target user.
-For reference, the AB3 UG is [here](https://se-education.org/addressbook-level3/UserGuide.html).<br>
+For reference, the AB3 UG is [here]({{ url_ab3_upstream_website }}/UserGuide.html).<br>
 
 - ( )  Significantly lower
 - ( )  Slightly lower
@@ -116,7 +116,7 @@ For reference, the AB3 UG is [here](https://se-education.org/addressbook-level3/
 
 <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Compared to AB3, the overall quality of the DG you evaluated is,**<br>
 Evaluate based on fit-for-purpose from the perspective of a new team member trying to understand the product's internal design by reading the DG.
-For reference, the AB3 DG is [here](https://se-education.org/addressbook-level3/DeveloperGuide.html).<br>
+For reference, the AB3 DG is [here]({{ url_ab3_upstream_website }}/DeveloperGuide.html).<br>
 
 - ( )  Significantly lower
 - ( )  Slightly lower
