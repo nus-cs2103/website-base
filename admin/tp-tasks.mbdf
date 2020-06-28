@@ -16,9 +16,9 @@ Given below are some guidance on the recommended progress at this point of the p
 
 <box dismissible>
 
-{{ icon_individual }} indicates an individual milestone %%(i.e., each team member has to do their part of the milestone, graded individually)%% while {{ icon_team }} indicates a team milestone %%(some or all members may do the work; graded for the whole team)%%.
+{{ icon_individual }} indicates an individual task %%(i.e., each team member has to do the task, graded individually)%% while {{ icon_team }} indicates a team task %%(some or all members may do the work; graded for the whole team)%%.
 
-{{ icon_important_big_red }} **Milestone progress is graded**. Be reminded that reaching individual and team milestones are considered for <trigger trigger="click" for="modal:w06Intro-projectMgtGrading">grading the _project management_ component</trigger> of your project grade.
+{{ icon_important_big_red }} **tP tasks progress is graded**. Be reminded that completing individual and team tasks are considered for grading the _project management_ component of your project grade.
 
 {{ embed_topic("tp-grading.md#project-management-grading", "Admin " + icon_embedding + " tP → Grading → Project Management", "3", indent="1") }}
 
@@ -366,10 +366,14 @@ Update the following pages in your project repo:
 
 </span>
 {#====================================================================================================================#}
-<span id="heading_wrap_up_trial_version">{{ icon_team }} Wrap up {{ version_trial }}</span>
-<span id="desc_wrap_up_trial_version">
+<span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration</span>
+<span id="desc_do_a_practice_iteration">
 
-* After all changes that _can_ be merged before the milestone deadline have been merged, use `git tag` feature to tag the current version with the milestone `v1.1` and push the tag to the team repo.
+* To get some practice of doing project iterations, do this week's tP work as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
+
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
+
+* Don't forget to 'wrap up' the milestone at the end of this week (as explained in the panel above), after the work is done.
 </span>
 {#====================================================================================================================#}
 <span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration</span>

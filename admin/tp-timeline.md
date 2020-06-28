@@ -80,7 +80,7 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 <div tags="m--cs2103">
 
-* Do a trial iteration ({{ version_trial }} to get used to the workflow. In this iteration, only some documents will be updated.
+* Do a _practice_ iteration ({{ version_practice }} to get used to the workflow. In this iteration, only some documents will be updated.
 </div>
 </div>
 
