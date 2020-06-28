@@ -315,12 +315,13 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 <p/>
 
 <span  tags="m--cs2103">
+
 * {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%%.
 </span>
 </span>
 {#====================================================================================================================#}
-<span id="heading_release_product">Release the product</span>
-<span id="desc_release_product">
+<span id="heading_submit_the_final_version">Submit the final version</span>
+<span id="desc_submit_the_final_version">
 * **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the project is very simple. The jar file should be ==cross-platform and should work in a computer that has Java 11==.
 * **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
@@ -334,24 +335,11 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 <p/>
 </span>
 {#====================================================================================================================#}
-<span id="heading_do_final_cleanups">Do any final clean-ups</span>
-<span id="desc_do_final_cleanups">
-* Finish leftover increments from the previous weeks, if any
-* Do any code cleanups, if necessary
-* Update the User Guide, if necessary
-</span>
-{#====================================================================================================================#}
-<span id="heading_submit_version_final">Submit the final version</span>
-<span id="desc_submit_version_final">
-* Submission is to be done via GitHub releases. If there were any changes to the code since the last release, do a new release.
-* {{ icon_important_big_red }} The jar file should be ==cross-platform and should work in a computer that has Java 11==.
-
+<span id="heading_get_more_out_of_the_ip">[Optional] Get more out of the iP</span>
+<span id="desc_get_more_out_of_the_ip">
 <div class="indented">
-<panel minimized >
-<div slot="header" class="card-title">
 
-{{ icon_tip }} **Getting more out of the iP**
-</div>
+Now that you have submitted the iP, here are some optional things you can do to get even more out of the iP, if not right now, sometime in the future.
 
 **If you wish to cite the iP in your resume**, you can do more to make it look more impressive to a potential employer. These improvements are not considered for grading and can be done after the semester is over. Some ideas:
 * **Improve the GUI**: Make the UI look nicer, unique, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
@@ -360,9 +348,10 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 * **Add more features.**
 
 On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other modules, pet projects).
-</panel>
+
 
 </div>
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_add_an_extension">Add an extension</span>

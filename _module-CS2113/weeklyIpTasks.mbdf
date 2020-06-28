@@ -52,7 +52,7 @@ week7: [
     {id: 'A-JavaDoc', title: 'JavaDoc'}
   ]},
   {id: 'set_up_website'},
-  {id: 'release_product', deadline: 'by Monday (March 2) 1200'}
+  {id: 'submit_the_final_version', deadline: 'by Monday (March 2) 1200'}
 ],
 week8: [
   {id: 'evaluate_peer_ips', deadline: 'before next week lecture'}

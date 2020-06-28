@@ -58,11 +58,10 @@ week5: [
 week6: [
   {id: 'finalize_features'},
   {id: 'set_up_website'},
-  {id: 'release_product'}
+  {id: 'submit_the_final_version', deadline: 'by Friday 2359'}
 ],
 week7: [
-  {id: 'do_final_cleanups'},
-  {id: 'submit_version_final', deadline: 'by Monday 2359'}
+  {id: 'get_more_out_of_the_ip'}
 ],
 week8: [
   {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
