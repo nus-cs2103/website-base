@@ -76,6 +76,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 #### <div class="text-white bg-dark p-1">Tools Used: for Communication</div>
 
+##### :fas-comment: Forum (for longer-running discussions)
 * **The preferred channels for module-related communication is the `forum` on GitHub** ==[{{url_forum}}]({{url_forum}})== (not the LumiNUS forum)
 * When communicating with instructors, use the forum. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the forum is not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy%%.
 * You are encouraged to help others in the forum (e.g., share tips, help with technical problems). ==We consider such sharing when giving out `A+` grades and when recruiting tutors.==
@@ -85,6 +86,18 @@ More info about setting Git username is [here](https://help.github.com/articles/
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
 We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
+</box>
+
+##### :fab-gitter: Gitter (for quick chats)
+
+* The module Gitter channel is [{{ url_gitter }}](urt_gitter).
+* We opted to use Gitter because it is GitHub-friendly (you can use your GitHub account to access Gitter).
+* ==Do not use Gitter for technical help requests==. Such requests can lead to long-running discussions which are better suited for the forum.
+
+<box>
+
+<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
+* You are recommended to install the Gitter mobile app (search for it in your mobile phone's app store).
 </box>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->

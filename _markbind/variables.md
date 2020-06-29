@@ -69,18 +69,22 @@
 <variable name="date_w13_start">{{ date_w12_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w14_start">{{ date_w13_start | date("YYYY-MM-DD", 7) }}</variable>
 
+<variable name="module_org">nus-{{ module | lower }}-{{ semester }}</variable>
+<variable name="url_module_org">https://github.com/{{ module_org }}</variable>
+<variable name="url_module_gihub_io">https://{{ module_org | lower }}.github.io</variable>
+
 <variable name="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
 <variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_gitter">https://gitter.im/{{ module_org }}/community</variable>
 <variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
-<variable name="url_ab3_fork_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp</variable>
+<variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/tp</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
-<variable name="url_ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
-<variable name="url_module_org">https://github.com/nus-{{ module | lower }}-{{ semester }}</variable>
-<variable name="url_module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/website</variable>
+<variable name="url_ip_dashboard">{{ url_module_gihub_io | safe }}/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
+<variable name="url_module_website">{{ url_module_gihub_io | safe }}/website</variable>
 <variable name="url_participation_dashboard">www.comp.nus.edu.sg/~cs2103</variable>
 <variable name="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
 <variable name="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
-<variable name="url_tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard/#breakdown=true</variable>
+<variable name="url_tp_dashboard">{{ url_module_gihub_io | safe }}/tp-dashboard/#breakdown=true</variable>
 
 <!-- ===========================  icons ================================================= -->
 
