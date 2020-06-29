@@ -1,6 +1,5 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
-
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
 <!--
 #### {{ thumb(1) }} Demo rehearsal
@@ -11,16 +10,11 @@
 {{ embed_topic("../../admin/tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → Deliverables → **Demo**", "3") }}
 </div>
 -->
-
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 **There is no formal tutorial in this week**.
 
 Attempt this question by yourself. The model answer will be released later.
-
-</variable>
-</include>
+{% endcall %}
 <p/>
 
 #### {{ thumb(1) }} Exercise: test case design

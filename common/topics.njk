@@ -239,3 +239,37 @@
 
 {{ show_week_schedule_main(week_num, entries, path_displacement) }}
 {% endmacro %}
+
+
+{% macro topic_preamble(topic, indent)%}
+{% if indent %}<div class="indented-level{{ indent }}">{% endif %}
+{% if topic %}<span id="{{ slugify(topic) }}">{% endif %}
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+{{ caller() }}
+</variable>
+</include>
+{% if topic %}</span>{% endif %}
+{% if indent %}</div>{% endif %}
+{% endmacro %}
+
+
+{% macro topic_followup(topic)%}
+{% if indent %}<div class="indented-level{{ indent }}">{% endif %}
+{% if topic %}<span id="{{ "followup-" + slugify(topic) }}">{% endif %}
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+{{ caller() }}
+</variable>
+</include>
+{% if topic %}</span>{% endif %}
+{% if indent %}</div>{% endif %}
+{% endmacro %}
+
+
+{% macro panopto(id, desc="The relevant video is")%}
+:fas-video: {{ desc }} [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id={{ id }}).
+{% endmacro %}
+

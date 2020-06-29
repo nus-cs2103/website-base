@@ -423,6 +423,7 @@ On a somewhat related note, you can also **create similar product websites for y
 <div id="body">
 
 <include src="{{ tasks_file }}#{{ module | lower }}-week{{ week_num }}-intro" optional/>
+<p/>
 
 {{ show_xp_steps(steps, tasks_file) }}
 

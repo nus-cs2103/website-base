@@ -1,3 +1,5 @@
+{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+
 <div id="week1">
 <div id="week1-toc">
 
@@ -129,12 +131,10 @@
 * [**Using an IDE**]({{ baseUrl }}/programming/chapters/ide.html#appendix-b-using-an-ide)
 </div>
 
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 Most programs need to read from, and write to, files in the hard disk. The topics below cover the Python basics of file reading/writing.
-</variable>
-</include>
+{% endcall %}
+
 
 ## **Files**
 
@@ -143,14 +143,11 @@ Most programs need to read from, and write to, files in the hard disk. The topic
 <include src="../programming/files-writing/text.md" />{{ hr_double }}
 <include src="../programming/files-csv/text.md" />{{ hr_double }}
 
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 You are already familiar with repl.it, which can be considered an _online IDE_ with limited features. It is now time to learn a non-online IDE which often can do more things than an online IDE.
 
 **We recommend you use an IDE for your project work from now on**, but you can continue to use repl.it for weekly exercises. The topics below describe two possible options: IDLE (lighter, simpler) and PyCharm (heavier, more powerful).
-</variable>
-</include>
+{% endcall %}
 
 <include src="../programming/ide/text.md" />{{ hr_double }}
 
@@ -164,12 +161,9 @@ You are already familiar with repl.it, which can be considered an _online IDE_ w
   * [Nested Dictionaries]({{ baseUrl }}/programming/chapters/dictionaries.html#nested-dictionaries)
 </div>
 
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 So far, we have learned how to use Python lists to store sequences of objects. This week we move onto another slightly more complex data structure called _dictionary_ which can store a collection of key-value pairs.
-</variable>
-</include>
+{% endcall %}
 
 ## **Dictionaries**
 
@@ -188,31 +182,27 @@ So far, we have learned how to use Python lists to store sequences of objects. T
 * [**Installing 3rd Party Modules**]({{ baseUrl }}/programming/chapters/thirdparty.html#appendix-a-installing-3rd-party-modules)
 </div>
 
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 So far, we have been using simple objects provided by Python (e.g., str, int, bool) and putting them into lists, dictionaries (which are objects themselves), and combinations of the two (e.g., a list of dictionaries) to arrange our data.
 
 **It is now time to learn how to define our own classes** so that we can create objects that match our needs e.g., to use `Task` objects to represent a task in Monty, instead of using a list such as `["read book", True]`{.python}.
 
 ==Before reading the section below which explains how to write Python classes, read the SE topic [OOP: Basics]({{ baseUrl }}/book/oop/classes/what/index.html) get a general idea about classes.==
 
-:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=c24f1e47-7974-4b75-bf5e-ab7a00a201fd).
-</variable>
-</include>
+{{ panopto("c24f1e47-7974-4b75-bf5e-ab7a00a201fd") }}
+{% endcall %}
+
 
 ## **Object-Oriented Programming**
 
 <include src="../programming/oop-classes/text.md" />{{ hr_double }}
 
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 **Next, let's learn how to install and use third-party libraries** so that you can use even more functionality than those Python provides by default.
 
-:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=e579523f-89cb-4e39-a315-ab7a00a8bc8b).
-</variable>
-</include>
+{{ panopto("e579523f-89cb-4e39-a315-ab7a00a8bc8b") }}
+{% endcall %}
+
 
 <include src="../programming/thirdparty/text.md" />{{ hr_double }}
 
@@ -226,38 +216,31 @@ So far, we have been using simple objects provided by Python (e.g., str, int, bo
 * [**Organizing Python Code**]({{ baseUrl }}/programming/chapters/organizing.html#appendix-c-organizing-python-code)
 </div>
 
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 **This week, we continue to learn more about Python classes.** Let's start with _class-level_ variables and methods.
 
-:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=37c74051-6261-4d0b-a517-ab8100a9c87d).
-</variable>
-</include>
+{{ panopto("37c74051-6261-4d0b-a517-ab8100a9c87d") }}
+{% endcall %}
+
 
 ## **Object-Oriented Programming**
 
 <include src="../programming/oop-classLevelMembers/text.md" />{{ hr_double }}
 
-
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 Next, let us learn to to control access to variables and methods of an object.
-</variable>
-</include>
+{% endcall %}
+
 
 <include src="../programming/oop-visibility/text.md" />{{ hr_double }}
 
 
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 As your project code gets bigger, it becomes cumbersome to have all code in one file. **Let's learn how to organize Python code into files and folders.**
 
-:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=bb9cc539-a07b-4d66-ad2b-ab82009e5eed).
-</variable>
-</include>
+{{ panopto("bb9cc539-a07b-4d66-ad2b-ab82009e5eed") }}
+{% endcall %}
+
 
 <include src="../programming/organizing/text.md" />{{ hr_double }}
 </div>
@@ -271,25 +254,21 @@ As your project code gets bigger, it becomes cumbersome to have all code in one 
 
 ## **Object-Oriented Programming**
 
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 As you learn about the OOP inheritance concept (under this week's SE topics), let us also learn how to use inheritance in Python.
 
-:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=1c82c417-5378-4b7c-84c0-ab88009b476b).
+{{ panopto("1c82c417-5378-4b7c-84c0-ab88009b476b") }}
+{% endcall %}
 
-</variable>
-</include>
 <include src="../programming/oop-inheritance/text.md" />{{ hr_double }}
 
-<include src="commentary-box.md" boilerplate>
-<variable name="commentary_body">
-
+{% call topic_preamble() %}
 Let us learn how to automate the testing of Python code using unit tests (one of the testing types you learned under this week's SE topics).
 
-:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=3c10dfe4-413a-449d-aec8-ab8800aa5ffc).
-</variable>
-</include>
+{{ panopto("3c10dfe4-413a-449d-aec8-ab8800aa5ffc") }}
+{% endcall %}
+
+
 <include src="../programming/unittesting/text.md" />{{ hr_double }}
 </div>
 <div id="week11">
@@ -314,10 +293,3 @@ Let us learn how to automate the testing of Python code using unit tests (one of
 <span class="indented">~None~</span>
 </div>
 </div>
-
-
-
-
-
-
-
