@@ -1567,8 +1567,8 @@
               {name: "optionalPaths", heading: "Optional Paths", priority: "3"},
               {name: "parallelPaths", heading: "Parallel Paths", priority: "3"},
               {name: "referenceFrames", heading: "Reference Frames", priority: "3"},
-              {name: "minimalNotation", heading: "Minimal Notation", priority: "3"},
-              {name: "staticMethods", heading: "Calls to Static Methods", priority: "3"}
+              {name: "staticMethods", heading: "Calls to Static Methods", priority: "3"},
+              {name: "minimalNotation", heading: "Minimal Notation", priority: "3"}
             ]
           }
         ]
@@ -1665,19 +1665,22 @@
           {
             name: "",
             level_three_topics: [
-              {name: "init", heading: "Init", priority: "1"},
-              {name: "commit", heading: "Commit", priority: "1"},
-              {name: "ignore", heading: "Ignore", priority: "2"},
-              {name: "tag", heading: "Tag", priority: "3"},
-              {name: "checkout", heading: "Checkout", priority: "2"},
-              {name: "stash", heading: "Stash", priority: "4"},
-              {name: "clone", heading: "Clone", priority: "1"},
-              {name: "pull", heading: "Pull", priority: "1"},
-              {name: "push", heading: "Push", priority: "1"},
-              {name: "branch", heading: "Branch", priority: "2"},
-              {name: "mergeConflicts", heading: "Merge Conflicts", priority: "2"},
-              {name: "createPRs", heading: "Create PRs", priority: "1"},
-              {name: "managePRs", heading: "Manage PRs", priority: "2"},
+              {name: "init", heading: "`init`: Getting started", priority: "1"},
+              {name: "commit", heading: "`commit`: Saving changes to history", priority: "1"},
+              {name: "ignore", heading: "Omitting files from revision control", priority: "2"},
+              {name: "tag", heading: "`tag`: Naming commits", priority: "3"},
+              {name: "diff", heading: "`diff`: Comparing revisions", priority: "2"},
+              {name: "checkout", heading: "`checkout`: Retrieving a specific revision", priority: "2"},
+              {name: "stash", heading: "`stash`: Shelving changes temporarily", priority: "4"},
+              {name: "clone", heading: "`clone`: Copying a repo", priority: "1"},
+              {name: "pull", heading: "`pull`, `fetch`: Downloading data other repos", priority: "1"},
+              {name: "fork", heading: "Fork: Creating a remote copy", priority: "1"},
+              {name: "push", heading: "`push`: Uploading data other repos", priority: "1"},
+              {name: "branch", heading: "`branch`: Doing multiple parallel changes", priority: "2"},
+              {name: "mergeConflicts", heading: "Dealing with merge conflicts", priority: "2"},
+              {name: "createPRs", heading: "Creating PRs", priority: "1"},
+              {name: "reviewPRs", heading: "Reviewing PRs", priority: "2"},
+              {name: "managePRs", heading: "Merging PRs", priority: "2"},
               {name: "forkingWorkflow", heading: "Forking Workflow", priority: "3"}
             ]
           }

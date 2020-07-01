@@ -109,9 +109,10 @@
 <variable name="icon_outcome"><md>:fas-trophy:</md></variable>
 <variable name="icon_output"><md>:fas-arrow-down:</md></variable>
 <variable name="icon_output_right"><md>:fas-arrow-right:</md></variable>
-<variable name="icon_print"><md>:glyphicon-print:</md></variable>
+<variable name="icon_pr"><md>:octicon-git-pull-request:</md></variable>
 <variable name="icon_prereq"><md>:glyphicon-education:</md></variable>
 <variable name="icon_preview"><md>:glyphicon-eye-open:</md></variable>
+<variable name="icon_print"><md>:glyphicon-print:</md></variable>
 <variable name="icon_pro_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb: PRO TIP</span></variable>
 <variable name="icon_project"><md>:fas-drafting-compass:</md></variable>
 <variable name="icon_Q"><md>:glyphicon-question-sign:</md></variable>
