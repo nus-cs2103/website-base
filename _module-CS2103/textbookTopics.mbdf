@@ -1240,7 +1240,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "4"},
+              {name: "what", heading: "What", priority: "3"},
               {name: "how", heading: "How", priority: "4"}
             ]
           }
@@ -1371,7 +1371,7 @@
               {name: "milestones", heading: "Milestones", priority: "2"},
               {name: "buffers", heading: "Buffers", priority: "3"},
               {name: "issueTrackers", heading: "Issue Trackers", priority: "2"},
-              {name: "ganttCharts", heading: "GANTT Charts", priority: "4"},
+              {name: "ganttCharts", heading: "GANTT Charts", priority: "3"},
               {name: "pertCharts", heading: "PERT Charts", priority: "4"}
             ]
           }
