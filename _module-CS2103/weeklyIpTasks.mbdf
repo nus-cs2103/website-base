@@ -49,7 +49,6 @@ week5: [
   {id: 'add_increments', suffix: ' as PRs', increments:  [
     {id: 'A-Assertions', title: 'Use Assertions'},
     {id: 'A-CodeQuality', title: 'Improve Code Quality'},
-    {id: 'A-BetterGui', title: 'Better GUI', tag: 'optional'},
     {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
     {id: 'A-Streams', title: 'Use Streams', tag: 'optional'}
   ]},
@@ -59,6 +58,9 @@ week5: [
   {id: 'add_an_extension'}
 ],
 week6: [
+  {id: 'add_increments', suffix: ' as PRs', increments:  [
+    {id: 'A-BetterGui', title: 'Better GUI', tag: 'optional'}
+  ]},
   {id: 'finalize_features'},
   {id: 'set_up_website'},
   {id: 'submit_the_final_version', deadline: 'by Friday 2359'}
