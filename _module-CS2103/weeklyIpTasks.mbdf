@@ -49,6 +49,7 @@ week5: [
   {id: 'add_increments', suffix: ' as PRs', increments:  [
     {id: 'A-Assertions', title: 'Use Assertions'},
     {id: 'A-CodeQuality', title: 'Improve Code Quality'},
+    {id: 'A-BetterGui', title: 'Better GUI', tag: 'optional'},
     {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
     {id: 'A-Streams', title: 'Use Streams', tag: 'optional'}
   ]},
