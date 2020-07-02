@@ -1,6 +1,4 @@
 {% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
 
-<box type="warning" dismissable>
-
-<include src="../timeline.md#warnings" />
-</box>
+{{ embed_topic("../../admin/weeklySchedule.md#before-attempting-tasks", "Admin " + icon_embedding + " Weekly Schedule → Extract", "3", status="expanded") }}
+<p/>

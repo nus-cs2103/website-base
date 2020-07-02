@@ -10,7 +10,10 @@
 <span id="heading_submit_pre_lecture_quiz">Submit pre-lecture quiz</span>
 <span id="desc_submit_pre_lecture_quiz">
 
-* **Read prerequisite  [{{ show_as_tab('Topics', icon_book) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Lecture 1 - Pre-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
+* **Read prerequisite  [{{ show_as_tab('Topics', icon_book) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Lecture 1 - Pre-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics. Ideally, finish the quiz before the first lecture, latest by the given deadline. The quiz is counted for participation (in place of week 1 post-lecture quiz).
+
+{{ embed_topic("participation.md#main", "Admin " + icon_embedding + " **Participation**", "2", indent="2") }}
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_set_up_tools">Set up the tools</span>
@@ -22,6 +25,7 @@
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="2") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "2", indent="2") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="2") }}
+{{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "2", indent="2") }}
 <span tags="m--cs2113">
 {{ embed_topic("tools.md#repl", "Admin " + icon_embedding + " **Tools - repl.it**", "2", indent="2") }}
 </span>

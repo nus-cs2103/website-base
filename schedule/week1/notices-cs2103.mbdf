@@ -1,4 +1,5 @@
 {% from "common/macros.njk" import embed_topic, timing_badge, show_as_tab with context %}
+{% from "common/topics.njk" import topic_followup, topic_preamble with context %}
 
 <box type="info" dismissible>
 
@@ -6,6 +7,8 @@ A summary of the week, and announcements relevant to that week, will appear in t
 
 A **[full timeline](../timeline.html)** is available too.
 </box>
+<p/>
 
+**While you wait for the first lecture**, have a look at the all the tabs (i.e., Topics, Project, Tutorials, Admin info) above. You need to do that every week from now on. Some of them contains ==things for you to do before the lecture==.
 
-
+<p/>

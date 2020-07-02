@@ -41,7 +41,7 @@ You are ==_required to_ use Git==. Other revision control software are not allow
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
 **Install Git and a Git GUI client** on your computer.<br>
-  {{ icon_tip }} SourceTree comes with bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot.
+  {{ icon_tip }} SourceTree comes with bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot. If you are already comfortable using Git command line, you need not install/use a GUI client.
 
 <div id="git-username">
 
@@ -97,7 +97,8 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 <box>
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
-* You are recommended to install the Gitter mobile app (search for it in your mobile phone's app store).
+* Join [{{ url_gitter }}](urt_gitter).
+* Recommended: Install the Gitter mobile app (search for it in your mobile phone's app store).
 </box>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->

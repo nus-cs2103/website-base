@@ -1683,7 +1683,7 @@
               {name: "clone", heading: "`clone`: Copying a repo", priority: "3"},
               {name: "pull", heading: "`pull`, `fetch`: Downloading data other repos", priority: "3"},
               {name: "fork", heading: "Fork: Creating a remote copy", priority: "3"},
-              {name: "push", heading: "`push`: Uploading data other repos", priority: "3"},
+              {name: "push", heading: "`push`: Uploading data to other repos", priority: "3"},
               {name: "branch", heading: "`branch`: Doing multiple parallel changes", priority: "3"},
               {name: "mergeConflicts", heading: "Dealing with merge conflicts", priority: "4"},
               {name: "createPRs", heading: "Creating PRs", priority: "4"},

@@ -5,7 +5,6 @@ week1: [
   {topic_id: "programmingLanguages"},
   {topic_id: "textbooks"},
   {topic_id: "gradeBreakdown"},
-  {topic_id: "participation"},
   {faq_id: "admin-faq-tVsNonT"},
   {faq_id: "admin-faq-highWorkload"},
   {faq_id: "admin-faq-aPlus"}],

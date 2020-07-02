@@ -35,7 +35,14 @@ We require you to use **Java 11** (the Oracle version or the OpenJDK version) fo
     
 This module follows the ==[this Java coding standard]({{url_java_coding_standard}})==.
 
+<div tags="m--cs2113">
+
 ==**You are required to follow basic guidelines**== (those marked as :star:) in the module projects. Intermediate and advanced guidelines are optional.
+</div>
+<div tags="m--cs2103">
+
+==**You are required to follow basic and intermediate guidelines**== (those marked as :star: and :star::star:) in the module projects. Advanced guidelines are optional.
+</div>
 
 </div>
 

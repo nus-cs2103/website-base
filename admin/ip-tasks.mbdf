@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
-{% from "common/macros.njk" import button, embed_topic, thumb, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, get_date, thumb, timing_badge with context %}
 {% from "_module-" + module + "/weeklyIpTasks.mbdf" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
@@ -42,6 +42,17 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 
 <include src="ip-tasks.mbdf#volatile-requirements" />
 <include src="ip-tasks.mbdf#no-jumping-ahead" />
+
+<box>
+
+**:fas-clock: Deadline:**
+
+Note the typical deadline weekly project tasks:
+{{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1") }}
+<p/>
+
+But ==as there are no tutorials this week, you all have until {{ get_date(date_w2_start, 6) }}== to finish this week's iP tasks.
+</box>
 </span>
 
 {#====================================================================================================================#}
