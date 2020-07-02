@@ -116,6 +116,7 @@
 <variable name="icon_pro_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb: PRO TIP</span></variable>
 <variable name="icon_project"><md>:fas-drafting-compass:</md></variable>
 <variable name="icon_Q"><md>:glyphicon-question-sign:</md></variable>
+<variable name="icon_green_Q"><thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/></variable>
 <variable name="icon_Q_A">{{ icon_Q | safe }}:glyphicon-ok-sign:</variable>
 <variable name="icon_repo"><md>:fas-code-branch:</md></variable>
 <variable name="icon_resource"><md>:fas-paperclip:</md></variable>

@@ -13,7 +13,7 @@
 <div id="questions">
 <div id="teamMemberEvaluation-ug">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the User Guide is,**
+{{ icon_green_Q }} **The team members' contribution to the User Guide is,**
 
 <span id="equalShareScale">
 <panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer">
@@ -30,25 +30,25 @@
 <p/>
 <div id="teamMemberEvaluation-dg">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the Developer Guide is,**
+{{ icon_green_Q }} **The team members' contribution to the Developer Guide is,**
 <include src="peerEvaluations-midterm.mbdf#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-teamTasks">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the team-based tasks is,**
+{{ icon_green_Q }} **The team members' contribution to the team-based tasks is,**
 <include src="peerEvaluations-midterm.mbdf#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-implementation">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,**
+{{ icon_green_Q }} **The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,**
 <include src="peerEvaluations-midterm.mbdf#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-conduct">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The team members' conduct in the project and during tutorials,**
+{{ icon_green_Q }} **The team members' conduct in the project and during tutorials,**
 
 * Evaluated based on the following criteria, on a scale `Poor`/`Below Average`/`Average`/`Good`/`Excellent`:
 <div class="indented-level2">
@@ -73,7 +73,7 @@
 <p/>
 <div id="teamMemberEvaluation-competency">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **The competency of the team member demonstrated in the project and during the tutorials,**
+{{ icon_green_Q }} **The competency of the team member demonstrated in the project and during the tutorials,**
 
 * Considered only for bonus marks, A+ grades, and tutor recruitment
 * Evaluated based on the following criteria, on a scale `Poor`/`Below Average`/`Average`/`Good`/`Excellent`:
@@ -89,10 +89,10 @@
 </box>
 </div>
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **[Optional] Any ANONYMOUS feedback you want to give the classmates you reviewed above?**
+{{ icon_green_Q }} **[Optional] Any ANONYMOUS feedback you want to give the classmates you reviewed above?**
 <p/>
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **[Optional] Any CONFIDENTIAL comments about any team members?**
+{{ icon_green_Q }} **[Optional] Any CONFIDENTIAL comments about any team members?**
 <p/>
 </div>
 </div>

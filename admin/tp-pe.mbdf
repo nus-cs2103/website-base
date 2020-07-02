@@ -88,7 +88,7 @@
 
 <div id="projectGrading-featureFit-instructions">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Quality of the product design,**<br>
+{{ icon_green_Q }} **Quality of the product design,**<br>
 Evaluate based on the User Guide and the actual product behavior.
 
  Criterion | Unable to judge | Low | Medium | High
@@ -101,7 +101,7 @@ Evaluate based on the User Guide and the actual product behavior.
 <p/>
 <div id="projectGrading-userGuide-instructions">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,**<br>
+{{ icon_green_Q }} **Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,**<br>
 Evaluate based on fit-for-purpose, from the perspective of a target user.
 For reference, the AB3 UG is [here]({{ url_ab3_upstream_website }}/UserGuide.html).<br>
 
@@ -114,7 +114,7 @@ For reference, the AB3 UG is [here]({{ url_ab3_upstream_website }}/UserGuide.htm
 <p/>
 <div id="projectGrading-devGuide-instructions">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Compared to AB3, the overall quality of the DG you evaluated is,**<br>
+{{ icon_green_Q }} **Compared to AB3, the overall quality of the DG you evaluated is,**<br>
 Evaluate based on fit-for-purpose from the perspective of a new team member trying to understand the product's internal design by reading the DG.
 For reference, the AB3 DG is [here]({{ url_ab3_upstream_website }}/DeveloperGuide.html).<br>
 
@@ -129,14 +129,14 @@ For reference, the AB3 DG is [here]({{ url_ab3_upstream_website }}/DeveloperGuid
 
 <div tags="m--cs2103">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **If the implementation effort required to create AB3 from scratch is 10, the estimated implementation effort of this team is,** [`0`..`20`] e.g., if you give `8`, that means the team's effort is about 80% of that spent on creating AB3. We expect most typical teams to score near to `10`.
+{{ icon_green_Q }} **If the implementation effort required to create AB3 from scratch is 10, the estimated implementation effort of this team is,** [`0`..`20`] e.g., if you give `8`, that means the team's effort is about 80% of that spent on creating AB3. We expect most typical teams to score near to `10`.
 * Do read the DG appendix named `Effort`, if any.
 * ==Consider implementation work only (i.e., exclude testing, documentation, project management etc.)==
 * Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
 </div>
 <div tags="m--cs2113">
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **[For each member] The functional code contributed by the person is,**<br>
+{{ icon_green_Q }} **[For each member] The functional code contributed by the person is,**<br>
 ==Consider implementation work only (i.e., exclude testing, documentation, project management etc.)==<br>
 The _typical iP_ refers to an iP where all the requirements are met at the minimal expectations given.<br>
 Use the person's PPP and RepoSense page to evaluate the effort.
@@ -149,7 +149,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 </div>
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **[Optional] Concerns or any noteworthy observations about the product you evaluated**
+{{ icon_green_Q }} **[Optional] Concerns or any noteworthy observations about the product you evaluated**
 
 </box>
 </div>

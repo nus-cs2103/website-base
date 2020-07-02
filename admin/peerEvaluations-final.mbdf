@@ -12,7 +12,7 @@
 
 <box>
 
-<thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/> **Do you agree with the contributions claimed by team members, as stated in their PPP?**
+{{ icon_green_Q }} **Do you agree with the contributions claimed by team members, as stated in their PPP?**
 <p/>
 
 </box>
