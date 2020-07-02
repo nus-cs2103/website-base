@@ -93,10 +93,10 @@ Evaluate based on the User Guide and the actual product behavior.
 
  Criterion | Unable to judge | Low | Medium | High
 -----------|-----------------|-----|--------|-----
-`target user` | not specified | | | clearly specified and narrowed down appropriately
-`value proposition`| not specified | The value to target user is low. App is not worth using | Some small group of target users might find the app worth using | Most of the target users are likely to find the app worth using
-`optimized for target user` | | Not enough focus for CLI users | Mostly CLI-based, but cumbersome to use most of the time | feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI
-`feature-fit` | | Many of the features don't fit with others | Most features fit together but a few may be possible misfits | all features fit together to for a cohesive whole
+`target user` | Not specified | | | Clearly specified and narrowed down appropriately
+`value proposition`| Not specified | The value to target user is low. App is not worth using | Some small group of target users might find the app worth using | Most of the target users are likely to find the app worth using
+`optimized for target user` | | Not enough focus for CLI users | Mostly CLI-based, but cumbersome to use most of the time | Feels like a fast typist can be more productive with the app, compared to an equivalent GUI app without a CLI
+`feature-fit` | | Many of the features don't fit with others | Most features fit together but a few may be possible misfits | All features fit together to for a cohesive whole
 </div>
 <p/>
 <div id="projectGrading-userGuide-instructions">
