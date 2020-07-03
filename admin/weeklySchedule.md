@@ -4,15 +4,18 @@
 {% call show_admin_page("weeklySchedule") %}
 <div id="main">
 
-### This module's weeks and deadlines
-
 <div id="week-definition">
 
-* **Each {{ module_pair }} week starts with the lecture** and end just before the following week's lecture. The only exception is week 1, which starts on the Monday of the first week of the semester. <div tags="m--cs2103 m--cs2113">As our lecture is on {{ day_lecture }}, =={{ module_pair }} week starts a few days earlier than the normal NUS academic week==. For example, {{ module_pair }} week 2 starts on the {{ day_lecture }} of NUS week 1.</div>
+### {{ module_pair }} week vs normal academic week
+
+**Each {{ module_pair }} week starts with the lecture** and end just before the following week's lecture. The only exception is week 1, which starts on the Monday of the first week of the semester. <div tags="m--cs2103 m--cs2113">As our lecture is on {{ day_lecture }}, =={{ module_pair }} week starts a few days earlier than the normal NUS academic week==. For example, {{ module_pair }} week 2 starts on the {{ day_lecture }} of NUS week 1.</div>
 </div>
+<p/>
 <div tags="m--cs2103 m--cs2113" id="deadline-definition">
 
-* **The deadline to complete tasks allocated to the week** is the <tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>, unless stated otherwise. Our scripts that detect your work run at midnight and only the work that's done by midnight will be eligible for marks (for cases where the task is graded).
+### Deadline for weekly tasks
+
+**The deadline to complete tasks allocated to the week** is the <tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>, unless stated otherwise. Our scripts that detect your work run at midnight and only the work that's done by midnight will be eligible for marks (for cases where the task is graded).
 </div>
 
 

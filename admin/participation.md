@@ -6,17 +6,21 @@
 
 **To receive full {{ marks_participation}} marks allocated for participation, meet the criteria {{ thumb("A", "info") }}, {{ thumb("B", "info") }}, and {{ thumb("C", "info") }}.**
 
-**{{ thumb("A", "info") }} Earned at least half of weekly participation points in at least 10 weeks.**
+****{{ thumb("A", "info") }} Earned at least half of weekly participation points in at least 10 weeks.****
 <div tags="m--cs2103">
 
-  * In-lecture quiz:
-    * Answered at least 80% of the questions correctly: 2 points
-    * Answered 40-80% questions correctly: 1 point
-  * Post-lecture quiz:
-    * Answered at least 80% of the questions correctly: 3 points
-    * Answered 60-80% questions correctly: 2 points
-    * Answered 40-60% questions correctly: 1 point
-  * Missing compulsory administrative requirements %%e.g., forgot to submit peer evaluations%%: -2 for each miss
+  * Weekly quiz(es):
+    * Quizzes open around the lecture time and stay open until the next lecture starts. In some weeks, there will be two quizzes %%(because two smaller quiz is easier for you to manage than one big quiz)%%.
+    * For grading quizzes, we look for these two conditions:
+      * submitted **__early__** i.e., within four days of the lecture i.e., by the following Monday
+      * answered **__correctly__** i.e., least 80% of the answers are correct
+    * You earn:
+      * 3 points if you satisfy both conditions.
+      * 2 points if only one of the conditions is satisfied.
+      * 1 point if submitted but both conditions are not satisfied.
+  * Other weekly activities:
+    * There could be other activities related to the lecture, tutorial, or the administration of the module.
+    * Refer the activity description for evaluation criteria.
 </div>
 <div tags="m--cs2113">
 
@@ -33,10 +37,6 @@
 
 <div class="indented">
 
-<span tags="m--cs2103">
-
-{{ icon_info }} As the lecture on Week `N` covers topics for Week `N+1`, the Lecture `N`'s in-lecture and post-lecture quiz points are counted for Week `N+1`
-</span>
 <span tags="m--cs2113">
 
 {{ icon_info }} Lecture in week `N`:
@@ -45,19 +45,21 @@
 </span>
 </div>
 
-**{{ thumb("B", "info") }} Received good peer evaluations**
+****{{ thumb("B", "info") }} Received good peer evaluations****
 
 <div class="indented">
 
-{{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-conduct", "Admin " + icon_embedding + " Peer Evaluations → Criteria (Conduct)", "3") }}
-{{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-competency", "Admin " + icon_embedding + " Peer Evaluations → Criteria (Competency)", "3") }}
-
 * -1 for each _professional conduct_ criterion in which you score below average (based on the average of ratings received).
+{{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-conduct", "Admin " + icon_embedding + " Peer Evaluations → Criteria (Conduct)", "3", indent=2) }}
+
+
 * No penalty for scoring low on _competency criteria_.
+{{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-competency", "Admin " + icon_embedding + " Peer Evaluations → Criteria (Competency)", "3", indent=2) }}
+
 
 </div>
 
-**{{ thumb("C", "info") }} Tutorial attendance/participation not too low**
+****{{ thumb("C", "info") }} Tutorial attendance/participation not too low****
 
 <div class="indented">
 
@@ -67,9 +69,7 @@ Low attendance/participation can affect participation marks directly (i.e., atte
 <panel type="info" header="**+ Bonus Marks**" expanded no-close no-switch >
 
 In addition, you can receive bonus marks in the following ways. Bonus marks can be used to top up your participation marks ==but only if your marks from the above falls below {{ marks_participation }}==.
-* [For lecture participation] Received at least half of the points for lecture activities in at least 10 lectures: 1 mark
-  * In-lecture quizzes (using pollev.com): scoring is similar to the post-lecture quizzes
-  * Other in-lecture activities: scoring is case-by-case basis
+* [For lecture participation] Participated in lecture activities (e.g., in lecture polls/quizzes) in at least 10 lectures: 1 mark
 * [For perfect peer ratings] Received good ratings for all 10 peer evaluations criteria: 1 mark
 * [For helping classmates] Was very helpful to classmates %%e.g., multiple helpful posts in forum%%: 1 mark
 
