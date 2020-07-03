@@ -1,0 +1,59 @@
+{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+{% from "common/macros.njk" import embed_topic with context %}
+
+
+{% call topic_preamble("SE: Intro") %}
+
+Given this is a first course in SE, tradition demands that we start by defining the subject. However, we are not going to spend a lot of time going through definitions. Instead, we look at an extract from the very first chapter of a very famous SE book, with the aim of providing some inspiration but also an appreciation of the challenges involved.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+
+{% call topic_preamble("IDEs: Basic Features") %}
+
+Next, we touch on IDEs, just enough for you to get started using the IDE for the individual project (iP).
+
+In case you are puzzled by the sudden change of topic, note the following:
+
+{{ embed_topic("../../admin/moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
+<p/>
+
+{% endcall %}
+
+<!-- ---------------------------------------------------------------------------- -->
+
+{% call topic_preamble("Automated Testing of Text UIs") %}
+
+As you start adding features to your iP iteratively, you'll need a way to detect cases where the new code added breaks the existing code. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).
+
+This also means we are not switching focus from the _implementation_ aspect to the _testing_ aspect of SE.
+
+{% endcall %}
+
+<!-- ---------------------------------------------------------------------------- -->
+
+{% call topic_preamble("RCS: Revision History") %}
+
+As you are adding code to the iP in rapid succession, another thing you'll need is a way to keep track of all the changes you do. The tool we are going to use for that is called Git, and we need to learn Git basics super quickly.
+
+Let's jump in and learn how to get started using Git in your own computer.
+
+{% endcall %}
+
+<!-- ---------------------------------------------------------------------------- -->
+
+{% call topic_preamble("RCS: Remote Repos") %}
+
+Having learned how to use Git in your own computer, we want you to learn a just a bit about using Git to work with remote code repositories too. Yes it's a bit too much to take in one week but we want you to start use Git in your iP from the very beginning.
+
+{% endcall %}
+
+<!-- ---------------------------------------------------------------------------- -->
+
+{% call topic_followup("RCS: Remote Repos") %}
+
+Congrats! You've made it to the end of this week's topics. It feels like a lot right now but now that we got an early start, this stuff will be second nature to you by the time you are done with the semester. :-)
+
+{% endcall %}
+
+<!-- ---------------------------------------------------------------------------- -->

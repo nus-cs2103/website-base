@@ -6,14 +6,14 @@
 
 **To receive full {{ marks_participation}} marks allocated for participation, meet the criteria {{ thumb("A", "info") }}, {{ thumb("B", "info") }}, and {{ thumb("C", "info") }}.**
 
-****{{ thumb("A", "info") }} Earned at least half of weekly participation points in at least 10 weeks.****
+****{{ thumb("A", "info") }} Earned more than half of weekly participation points in at least 10 weeks.****
 <div tags="m--cs2103">
 
   * Weekly quiz(es):
     * Quizzes open around the lecture time and stay open until the next lecture starts. In some weeks, there will be two quizzes %%(because two smaller quiz is easier for you to manage than one big quiz)%%.
-    * For grading quizzes, we look for these two conditions:
-      * submitted **__early__** i.e., within four days of the lecture i.e., by the following Monday
-      * answered **__correctly__** i.e., least 80% of the answers are correct
+    * When awarding participation points for quizzes, we look for two conditions:
+      * Condition 1: submitted **__early__** i.e., within four days of the lecture i.e., lecture day + three more days %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
+      * Condition 2: answered **__correctly__** i.e., least 70% of the answers are correct %%(reason: to discourage random answers)%%
     * You earn:
       * 3 points if you satisfy both conditions.
       * 2 points if only one of the conditions is satisfied.

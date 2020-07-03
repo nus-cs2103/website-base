@@ -81,7 +81,7 @@
 <span id="heading_get_connect_with_comm_channels">Subscribe to the module forum</span>
 <span id="desc_get_connect_with_comm_channels">
 
-* Follow the 'Preparation' instructions of the following panel, to get connected with the module forum.
+* If you haven't done so already, follow the 'Preparation' instructions of the following panel, to get connected with the communication channels used by the module.
 
 {{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "3", indent="2") }}
 </span>

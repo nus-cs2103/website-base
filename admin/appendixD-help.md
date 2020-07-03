@@ -16,7 +16,7 @@
 <span class="text-danger"><big>{{ icon_dislike }} **What not to do:**</big></span> 
 
 * <span class="text-danger">**Send a help request to an instructor**:</span> When faced with a technical problem or a doubt about a concept, don't fire off an email lecturer/tutor immediately, unless it is something only the lecturer/tutor is supposed to know.<br>
-* <span class="text-danger">**Request to meet the instructor to solve the problem**:</span> That can only work if the person is supposed to know how to solve all technical problems, which is not the case.
+* <span class="text-danger">**Request to meet the instructor to solve the problem**:</span> That can only work if the person is supposed to know how to solve all technical problems, which is almost never the case.
 
 <span class="text-success"><big>{{ icon_like }} **What to do:**</big></span>
 
@@ -26,12 +26,12 @@
 
 * **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).  
   Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.    
-  <img src="{{baseUrl}}/admin/images/how to google it.png" width="460" height="268"/>
+  <img src="{{baseUrl}}/admin/images/how to google it.png" width="690"/>
 
 * **Ask in the [module forum]({{ url_forum }})**: 
   * **Give full details of the problem** Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.
     * Include full error message, screenshots, code snippets, stack traces, etc.<br>
-    * If the problem is code-related, push the current state of the code to a branch in your fork and give the link to the branch. That gives a chance for someone to reproduce the state of your project in their computer.
+    * If the problem is code-related, share the code if possible (e.g., push the current state of the code to a branch in your fork and give the link to the branch). That gives a chance for someone to reproduce the state of your project in their computer.
   * **Avoid addressing the question to one person** (e.g., the prof), unless really necessary. Doing so will discourage others from answering that question.
   * **Isolate the problem.** "My code doesn't work" isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about <trigger trigger="click" for="modal:appendixHelp-rubberDuckDebugging">Rubber Duck Debugging</trigger>?).
     
@@ -58,7 +58,7 @@ _Rubber duck debugging_ is an informal term used in software engineering to ref
     
     <box>
     
-    {{ icon_tip }} Know what these stand for: **RTFM**, **STFW**, **GIYF**
+    {{ icon_tip }} Know what these stand for: **RTFM**, **STFW**, **GIYF**, **LMGTFY**
     
     </box>
     

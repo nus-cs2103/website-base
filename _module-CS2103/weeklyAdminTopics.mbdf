@@ -2,7 +2,6 @@
 week1: [
   {faq_id: "admin-faq-whereIsEverything"},
   {topic_id: "tp-teams"},
-  {topic_id: "programmingLanguages"},
   {topic_id: "textbooks"},
   {topic_id: "gradeBreakdown"},
   {faq_id: "admin-faq-tVsNonT"},

@@ -110,7 +110,7 @@ Preference to do things you like or things you are good at
 
 <td colspan="1" rowspan="1">
 
-Ability to buckle down and deliver on important things that you don't necessarily like or aren't good at
+Ability to buckle down and deliver on important things that you don't necessarily like or are good at
 
 </td>
 

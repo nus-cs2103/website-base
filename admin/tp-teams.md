@@ -10,7 +10,7 @@
 
 #### When to form teams
 * {{ module }}T: Your team will be formed by the CS2101 side.
-* {{ module }}: Your team will be formed at the _start_ of the week 3 tutorial. Please try to arrive on time for that tutorial; if you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
+* {{ module }}: Your team will be formed at the _start_ of the week 3 tutorial. Please try to be present at the start of that tutorial; if you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
 
 #### Team size
 

@@ -10,9 +10,28 @@
 
 <p class="lead"><md>{{ module_pair }} is an introductory Software Engineering module. It has **a 50-50 balance of basic SE theory knowledge and practical skills** that you need to gain before industry internships or <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics. It is also one of the rare SE modules that includes a <tooltip content="i.e., working in an existing project">**brown-field** project</tooltip>, in addition to a <tooltip content="i.e., a project that is started from scratch">**green-field** project</tooltip>.</md></p>
 
+
 * **On the theory side,** this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
 
 * **The practice side,** you will first ramp up your technical skills by doing a small individual project (green-field) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brown-field) in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 KLoC) generic product -- and enhance it into a better product or evolve it into a different product.
+
+<div id="meaning-of-iterative-topics">
+
+<box>
+
+****What does mean to 'follow an iterative approach in covering topics'?****
+
+**It means, we cover a little bit of <tooltip content="i.e., requirements, design, testing, project management, ...">all SE aspects</tooltip> at first and then iteratively go deeper into them later**, revisiting each aspect many time over the course of the semester. In contrast, a _sequential_ approach would have covered one SE aspect before moving to the next (e.g., teach the _requirements_ aspect completely before moving to the _design_ aspect).
+
+**This way of 'jumping around' topics feels chaotic but consider the benefits**:
+* It allows you to start doing SE projects early, and iteratively too. That is, you can start with a small project from the very start and make it bigger progressively, learning from earlier mistakes, and getting multiple chances improve on previous attempts.
+* Important SE aspects such as testing can be practiced from the very beginning. If we followed a sequential approach, you an only learn it near the end of the semester.
+* Lower risk of missing out some SE aspects altogether. For example, suppose your schedule got heavier in the second half of the semester and you could barely follow the module during that half. You still go away with the basic knowledge of _all_ SE aspects rather than knowing some aspects fully and missing some other aspects altogether.
+
+**To help you cope with the non-sequential progression of topics,** this module website contains two versions of the topics. In the [Schedule page](../schedule/index.html), you'll find the topics organized into the order we cover them in each week. In the [Textbook page](../se-book-adapted/index.html), you'll find the topics in their natural sequential order. This format is suitable for exam reference.
+</box>
+
+</div>
 
 Given below is a summary of what the module covers and does not cover.
 
