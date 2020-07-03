@@ -135,6 +135,14 @@
 <variable name="icon_x"><md>:fas-times:</md></variable>
 <variable name="icon_x_red"><span style="color:red">{{ icon_x | safe }}</span></variable>
 
+<variable name="icon_tab_admin_info">{{ icon_info | safe }}</variable>
+<variable name="icon_tab_project">{{ icon_project | safe }}</variable>
+<variable name="icon_tab_programming_topics"><md>:fas-code:</md></variable>
+<variable name="icon_tab_tasks">{{ icon_todo | safe }}</variable>
+<variable name="icon_tab_topics">{{ icon_book | safe }}</variable>
+<variable name="icon_tab_tutorial">{{ icon_tutorial | safe }}</variable>
+<variable name="icon_tab_summary">{{ icon_announcement | safe }}</variable>
+
 <variable name="bad"><font color="red"><md>**{{ icon_dislike | safe }} Bad**</md></font></variable>
 <variable name="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></variable>
 <variable name="pros"><span class="text-success">**pros:**</span></variable>

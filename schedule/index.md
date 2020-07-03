@@ -25,24 +25,24 @@ pageNav: 1
 
 {% if module == "TIC2002" %}
   {% set categories = {
-    notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
-    topics: {name: "Topics", file: "topics", icon: icon_book, pagenav: 3},
-    admin: {name: "Tasks", file: "admin", icon: icon_todo, pagenav: 4}
+    notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 4},
+    topics: {name: "Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
+    admin: {name: "Tasks", file: "admin", icon: icon_tab_tasks, pagenav: 4}
   } %}
 {% elseif module == "TE3201" %}
   {% set categories = {
-    notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 1},
-    topics_py: {name: "Programming Topics", file: "topics-py", icon: ":fas-code:", pagenav: 4},
-    topics: {name: "SE Topics", file: "topics", icon: icon_book, pagenav: 3},
-    admin: {name: "Tasks", file: "admin", icon: ":fas-tasks:", pagenav: 4}
+    notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 1},
+    topics_py: {name: "Programming Topics", file: "topics-py", icon: icon_tab_programming_topics, pagenav: 4},
+    topics: {name: "SE Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
+    admin: {name: "Tasks", file: "admin", icon: icon_tab_tasks, pagenav: 4}
   } %}
 {% else %}
   {% set categories = {
-    notices: {name: "Summary", file: "index", icon: icon_announcement, pagenav: 4},
-    topics: {name: "Topics", file: "topics", icon: icon_book, pagenav: 3},
-    project: {name: "Project", file: "project", icon: icon_project, pagenav: 4},
-    tutorial: {name: "Tutorial", file: "tutorial", icon: icon_tutorial, pagenav: 4},
-    admin: {name: "Admin Info", file: "admin", icon: icon_info, pagenav: 4}
+    notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 4},
+    admin: {name: "Admin Info", file: "admin", icon: icon_tab_admin_info, pagenav: 4},
+    topics: {name: "Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
+    project: {name: "Project", file: "project", icon: icon_tab_project, pagenav: 4},
+    tutorial: {name: "Tutorial", file: "tutorial", icon: icon_tab_tutorial, pagenav: 4}
   } %}
 {% endif %}
 

@@ -13,7 +13,7 @@ pageNav: 3
 
 # Summary of the Module Timeline
 
-{{ embed_topic("../admin/weeklySchedule.md#week-definition", "Admin " + icon_embedding + " Weekly schedule → The " + module_pair + " week", "1") }}
+{{ embed_topic("../admin/weeklySchedule.md#week-definition", "Admin " + icon_embedding + " Weekly schedule → The " + module_pair + " week vs normal academic week", "1") }}
 <p/>
 {{ embed_topic("../admin/weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → Deadline for weekly tasks", "1") }}
 
