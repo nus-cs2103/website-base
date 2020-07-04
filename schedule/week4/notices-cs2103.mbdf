@@ -7,8 +7,7 @@
   * Note that the timeliness of tP tasks (i.e., the deadline is the midnight before the tutorial) is graded under the _project management_ component of the tP. 
   * Keep notes of the meeting, and update project documents -- the tutor will ask for those during the tutorial.
 * **Help each other finish iP tasks.** Tasks allocated to this week are especially troublesome and some peer help can be very useful.
-* **If you can, do the post-lecture quiz together**; while the deadline for the quiz is Thursday midnight, doing it before the tutorial will help you identify unclear areas, which you can then clarify during the tutorial.
-* **Dealing with technical problems**:  
+* **Dealing with technical problems**:
 
-{{ embed_topic("../../admin/appendixD-help.md", "Admin " + icon_embedding + " Appendix D: How to Get Help", "4", indent="2") }}
+{{ embed_topic("../../admin/appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="2") }}
 </box>

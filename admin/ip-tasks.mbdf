@@ -64,6 +64,12 @@ Note the typical deadline weekly project tasks:
 
 But ==as there are no tutorials this week, you have until {{ get_date(date_w2_start, 6) }}== to finish this week's iP tasks.
 </box>
+<span id="cs2103-week3-intro">
+
+**:fas-clock: Reminder about the deadline for the weekly project tasks:**
+{{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent=1) }}
+<p/>
+
 </span>
 
 {#====================================================================================================================#}
@@ -115,20 +121,19 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 {#====================================================================================================================#}
 <span id="heading_create_pr_to_upstream">Create a PR to the upstream repo</span>
 <span id="desc_create_pr_to_upstream">
-* Create a <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from the `master` branch of your fork to the upstream repo. Here are the steps:
-  * Go to your {{ ip_repo_name }} fork on GitHub
-  * Click on the {{ button("**New pull request**", button_style="light") }} button in that page.
-  * In the next page, click on the green {{ button("**:octicon-git-pull-request: Create pull request**", button_style="success") }} button.
+* Create a <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from your fork to the upstream repo. Note the following:
+  * Creat the PR from the `master` branch of your fork to the `master` branch of the upstream repo ({{ url_module_org }}/{{ ip_repo_name }})
   * Set the PR name as `[{Your name}] iP` e.g., `[John Doe] iP` %%If you are reluctant to give full name, you may give the first half of your name only%%.<br>
    You may leave the description as empty.
-  * Click the {{ button("**Create pull request**", button_style="success") }} button to create the PR.
-  * As an additional precaution, you can go to the [upstream {{ ip_repo_name }} repo]({{ url_module_org }}/{{ ip_repo_name }}/pulls) to double-check that your PR is in the list of PRs.
+  * Steps for creating a PR is given in this textbook topic (steps 5 onwards):
+
+{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=4) }}
 
 <div class="indented-level2">
 
-<box type="tip" light>
+<box type="info" light>
 
-The PR will update automatically to reflect your latest code every time you push code to your fork.
+The PR will update automatically to reflect your latest code every time you push code to your fork. As a result, it provides a convenient way for us to access the current state of all your iP code from one location.
 </box>
 </div>
 
