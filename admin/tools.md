@@ -133,11 +133,7 @@ We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation s
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 When the first feedback session is opne on TEAMMATES, you will receive an eamil from TEAMMATES. There is nothing for you to do until then.
 
-When you do receive that email, TEAMMATES will allow you to access it without using a Google login. However, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. %%Reason: {{ module_pair }} is a big class. This profile helps us to remember you better, even after the module is over.%%
-
-<modal header="%%Admin {{ icon_embedding }} Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto">
-  <include src="tp-deliverables-website.mbdf#profile-photo" />
-</modal>
+When you do receive that email, it will contain a unique link that you can use to access TEAMMATES without logging in first. Logging in to TEAMMATES using a Google account is optional (but doing so will allow you to see all your TEAMMATES sessions in one page).
 </box>
 </div>
 

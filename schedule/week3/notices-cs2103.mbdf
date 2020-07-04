@@ -4,8 +4,3 @@
 
 * We start tutorials this week. The [tutorial time table]({{ url_module_website }}/admin/tutorials.html#tutorial-timetable) is on the module website.
 </box>
-<box dismissible>
-
-Reminder about this warning from the previous week:
-<include src="../timeline.md#warnings" />
-</box>

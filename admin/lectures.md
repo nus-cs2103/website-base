@@ -11,6 +11,8 @@ Module                 | Venue    | Time
 ---------------------- | -------- | ----
 <include src="../_module-{{ module | lower }}/timetables.mbdf#lectures-s{{ S }}" inline trim />
 
+Lectures will be done using Zoom. More information coming soon.
+
 Lectures start on time sharp and end around 15 minutes before official end time.
 
 **Attendance**: Attendance for the ==first lecture is compulsory==.

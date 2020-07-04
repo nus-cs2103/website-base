@@ -3,6 +3,8 @@
 {% call show_admin_page("moduleOverview") %} 
 <div id="main">
 
+<include src="weeklySchedule.md#fully-online" />
+
 <span tags="m--cs2103">
 <big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big>
 
@@ -22,6 +24,8 @@
 ****What does mean to 'follow an iterative approach in covering topics'?****
 
 **It means, we cover a little bit of <tooltip content="i.e., requirements, design, testing, project management, ...">all SE aspects</tooltip> at first and then iteratively go deeper into them later**, revisiting each aspect many time over the course of the semester. In contrast, a _sequential_ approach would have covered one SE aspect before moving to the next (e.g., teach the _requirements_ aspect completely before moving to the _design_ aspect).
+
+**The choice of which topics are covered each week is driven by the project** i.e., we give priority to topics that you'll need to apply soon in the project that you will be doing in parallel.
 
 **This way of 'jumping around' topics feels chaotic but consider the benefits**:
 * It allows you to start doing SE projects early, and iteratively too. That is, you can start with a small project from the very start and make it bigger progressively, learning from earlier mistakes, and getting multiple chances improve on previous attempts.

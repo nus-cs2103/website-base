@@ -4,6 +4,15 @@
 {% call show_admin_page("weeklySchedule") %}
 <div id="main">
 
+<div id="fully-online">
+
+<div class="bg-info text-white p-2 rounded">
+
+This module will be **fully-online** this semester. There is no need for on-campus presence.
+</div>
+<p/>
+</div>
+
 <div id="week-definition">
 
 ### {{ module_pair }} week vs normal academic week

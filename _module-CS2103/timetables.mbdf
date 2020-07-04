@@ -1,6 +1,6 @@
 <span id="lectures-s1">
-{{ module }}   | LT19             | **1600**-1800
-{{ module }}/T | LT19             | **1600**-1800
+{{ module }}   | ~~LT19~~            | **1200**-1400
+{{ module }}/T | ~~LT19~~            | **1600**-1800
 </span>
 
 <span id="lectures-s2">

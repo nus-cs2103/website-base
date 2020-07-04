@@ -54,7 +54,9 @@
 <span id="desc_attend_the_first_lecture">
 
 * Attend the Week 1 lecture (Week 1 lecture is ==**compulsory**==).
-* Bring your computer to the lecture. Some lecture activities will need it.
+
+{{ embed_topic("lectures.md#main", "Admin " + icon_embedding + " **Lectures**", "1", indent="2") }}
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_submit_first_post_lecture_quiz">Submit post-lecture quiz</span>
@@ -78,7 +80,7 @@
 * As before, submit the coding exercises allocated for the current week, and any pending exercises from previous weeks.
 </span>
 {#====================================================================================================================#}
-<span id="heading_get_connect_with_comm_channels">Subscribe to the module forum</span>
+<span id="heading_get_connect_with_comm_channels">Get connected to our communication channels</span>
 <span id="desc_get_connect_with_comm_channels">
 
 * If you haven't done so already, follow the 'Preparation' instructions of the following panel, to get connected with the communication channels used by the module.

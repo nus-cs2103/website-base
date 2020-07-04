@@ -11,7 +11,7 @@ Given below are the standards and conventions to follow in this module.
 ##### Java
 
 * {{ required }} Follow the ==_basic_ and _intermediate_ rules== in the [SE-EDU Java coding standard](https://se-education.org/guides/conventions/java/intermediate.html).
-* {{ optional }} follow [advanced rules](https://se-education.org/guides/conventions/java/index.html).
+* {{ optional }} Follow [advanced rules](https://se-education.org/guides/conventions/java/index.html).
 
 </span>
 

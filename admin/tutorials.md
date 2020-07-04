@@ -24,6 +24,10 @@ Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)
 <panel type="seamless" header="### Tutorial Structure" expanded >
 <div id="tutorialStructure">
 
+**The mode**
+
+Tutorials will be conducted using Zoom. More info coming soon.
+
 **What happens during the tutorial**:
 
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
@@ -38,6 +42,8 @@ Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)
 <br/>
 
 **The role of our tutors** is different from tutors in other modules.
+
+* **Not a source of admin information**: Given the humongous amount of admin info contained in this module and the fact that it is constantly evolving, tutors may not be aware of the recent subtle changes to the admin information. To safeguard you from receiving incorrect admin info, tutors are prohibited from answering admin queries. If you have an admin query, please post in the [forum]({{ url_forum }}) (or email the prof at `{{ module | lower }}@comp.nus.edu.sg` but only if the question is not appropriate for the forum).
 
 * **No direct tech help**: Tutors are prohibited from giving direct technical help, other than to give you some general direction to finding a solution. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
 
@@ -60,9 +66,13 @@ Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)
 **Timing/venue:**
 
 * Please refer to the {{ url_schedule }} for further details on each tutorial.
-* You are expected to arrive on time. ==Punctuality is considered for participation marks.==
+* You are expected to be present on time. ==Punctuality is considered for participation marks.==
+
+<!--
 * You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is dismissed.
 * ==Vacate the table 5 minutes before the hour== so that the next group can start on time.
+-->
+
 * In the past, many students have requested to increase the tutorial duration because a mere hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to make the best of the one hour available by coming well prepared and starting on time. Note that ==the better prepared you are, the higher the chance of completing e all activities allocated to a tutorial== within time.
 
 **Grading:**
