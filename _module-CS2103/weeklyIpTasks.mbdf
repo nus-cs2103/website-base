@@ -36,7 +36,7 @@ week3: [
   ]}
 ],
 week4: [
-  {id: 'review_two_prs'},
+  {id: 'review_two_prs', graded: true},
   {id: 'add_increments', suffix: ' as parallel branches', increments:  [
     {id: 'A-Gradle', title: 'Use Gradle'},
     {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
@@ -69,6 +69,6 @@ week7: [
   {id: 'get_more_out_of_the_ip'}
 ],
 week8: [
-  {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
+  {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359', graded: true}
 ]
 } %}

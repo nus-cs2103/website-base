@@ -400,11 +400,12 @@ On a somewhat related note, you can also **create similar product websites for y
 {% macro get_xp_step_heading(step, tasks_file, is_summary=false) -%}
 {% set deadline_type = step.deadline_type if step.deadline_type else 'danger' %}
 {% set deadline_badge = timing_badge(step.deadline, deadline_type if is_summary else 'secondary') if step.deadline else ''  %}
+{% set grading_badge = (' ' + icon_graded) if step.graded else ''  %}
 {% if step.id == 'add_increments' %}
 {% set prefix = "Add Increment" + ("" if (step.increments | length) == 1 else "s") %}
 {{ prefix }}{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
 {% else %}
-<include src="{{ tasks_file }}#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
+<include src="{{ tasks_file }}#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}{{ grading_badge }}
 {% endif %}
 {%- endmacro %}
 {#====================================================================================================================#}

@@ -98,6 +98,7 @@
 <variable name="icon_exercise"><md>:fas-dumbbell:</md></variable>
 <variable name="icon_extra"><span class='badge badge-pill badge-secondary'><md>:fas-plus: extra</md></span></variable>
 <variable name="icon_evidence"><md>:fas-briefcase:</md></variable>
+<variable name="icon_graded"><span class="text-info"><tooltip content="counted for participation marks">:fab-product-hunt:</tooltip></span></variable>
 <variable name="icon_info"><md>:fas-info-circle:</md></variable>
 <variable name="icon_individual"><md>:fas-user:</md></variable>
 <variable name="icon_lecture"><md>:glyphicon-blackboard:</md></variable>
