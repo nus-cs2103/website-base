@@ -1,24 +1,6 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
 
-{% call topic_preamble("Java") %}
-
-Let's start by going through some Java topics that is relevant to the iP. You can skim through or skip topics that you are familiar with already.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Coding Standards") %}
-
-As you know, one of the objectives of the iP is to raise the quality of your code. We'll be learning about various ways to improve the code quality in the next few weeks, starting with coding standards.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Developer Testing") %}
-
-As promised last week, let's learn some more sophisticated ways of testing.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("RCS: Branching") %}
 
 Let's learn a few more Git technique this week. Although these are really not needed for the iP, the iP requires you to use them anyway, to give you more time to practice them before they are really needed in the tP.
@@ -28,6 +10,25 @@ Let's learn a few more Git technique this week. Although these are really not ne
 {% call topic_preamble("RCS: Creating Pull Requests") %}
 
 As the last topic for this week, let's learn how to create a pull request on GitHub; you need to create one for your iP this week.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Java") %}
+
+Let's start by going through some Java topics that is relevant to the iP. You can skim through or skip topics that you are familiar with already.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+
+{% call topic_preamble("Coding Standards") %}
+
+As you know, one of the objectives of the iP is to raise the quality of your code. We'll be learning about various ways to improve the code quality in the next few weeks, starting with coding standards.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Developer Testing") %}
+
+As promised last week, let's learn some more sophisticated ways of testing.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

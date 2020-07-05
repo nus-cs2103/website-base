@@ -7,8 +7,8 @@ week3: [
 ],
 week4: [
   {id: 'start_weekly_meetings'},
-  {id: 'decide_project_direction'},
-  {id: 'start_project_notes', deadline: 'before the tutorial'}
+  {id: 'start_project_notes', deadline: 'before the tutorial'},
+  {id: 'decide_project_direction', deadline: 'before the tutorial'}
 ],
 week5: [
   {id: 'brainstorm_user_stories', deadline: 'before the tutorial'},

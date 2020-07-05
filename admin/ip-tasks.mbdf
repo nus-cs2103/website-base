@@ -146,19 +146,23 @@ Resources:
 </modal>
 </span>
 {#====================================================================================================================#}
-<span tags="m--cs2113" id="extra_Level-5">
-
+<span id="extra_Level-5">
+<span tags="m--cs2113">>
 * Use git branches in your work, as explained below:
   * Do the increment Level-5 as a separate branch named `branch-Level-5`. You are recommended to have multiple commits in that branch.
   * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
   * Push the branch to your fork so that the bot can detect it. As before, push the tag as well.
   * {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
 </span>
-<span tags="m--cs2113" id="extra_A-Packages">
+</span>
+<span id="extra_A-Packages">
+<span tags="m--cs2113">
 
 * Recommended: if you are new to git, do this as a separate branch too (for additional practice), similar to how you did `Level-5` (branch name `branch-A-Packages`).
 </span>
-<span tags="m--cs2113" id="extra_Level-6">
+</span>
+<span id="extra_Level-6">
+<span tags="m--cs2113">
 
 * Practice using parallel git branches, as explained below:
   1. First, do Level-6 in a branch named `branch-Level-6`, but do not merge it.
@@ -171,10 +175,13 @@ Resources:
  {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
 </span>
-<span tags="m--cs2113" id="extra_A-Jar">
+</span>
+<span id="extra_A-Jar">
+<span tags="m--cs2113">
 
 * In case this increment does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already).
 * Upload the jar file to your fork as explained in the panel below. ==You can ignore the point about using Gradle==.
+</span>
 </span>
 <span id="extra_Level-7">
 
@@ -183,18 +190,29 @@ Resources:
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
 </span>
-<span tags="m--cs2113" id="extra_Level-8">
+<span id="extra_Level-8">
+<span tags="m--cs2113" id="as-parallel-prs">
+
+* Note how to merge PRs:
+
+{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=2) }}
 
 * Practice using parallel git branches _and_ PRs, as explained below:
-  1. First, do each increment as a parallel branch (i.e., `branch-Level-8`, `branch-Level-9`, `branch-A-JavaDoc`), but do not merge any.
-  1. Then, push each branch to your fork, and create a PR within your fork (i.e., from the increment branch to the `master` branch).
-  1. Now, let's merge one of the PRs and update the remaining PRs accordingly, as given below:
-     1. Merge one of the PRs on GitHub e.g., Level-8. Remember to choose the `Create merge commit` option when merging.
-     1. Pull the updated `master` branch from your fork to your Computer.
-     1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
-     1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
-     1. As before, tag the merge commit in the master branch and push the tag to your fork.
-  1. Merge the remaining PRs using a procedure similar to the above.
+1. First, do each increment as a parallel branch (i.e., `branch-Level-8`, `branch-Level-9`, `branch-A-JavaDoc`), but do not merge any.
+1. Then, push each branch to your fork, and create a PR within your fork (i.e., from the increment branch to the `master` branch).
+1. Now, let's merge one of the PRs and update the remaining PRs accordingly, as given below:
+   1. Merge one of the PRs on GitHub e.g., Level-8. Remember to choose the `Create merge commit` option when merging.
+   1. Pull the updated `master` branch from your fork to your Computer.
+   1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
+   1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
+   1. As before, tag the merge commit in the master branch and push the tag to your fork.
+1. Merge the remaining PRs using a procedure similar to the above.
+</span>
+</span>
+<span id="extra_A-Assertions">
+<span tags="m--cs2103">
+<include src="ip-tasks.mbdf#as-parallel-prs" />
+</span>
 </span>
 <span id="extra_A-MoreOOP">
 
@@ -212,18 +230,22 @@ Resources:
 
 {% if module == "CS2103" %}
 * **Learn _how_ you should review PRs in this task**:
-  * If you are new to GitHub PRs, see [GitHub help on how to review PRs](https://help.github.com/en/articles/about-pull-request-reviews).
+{{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
+
+* **Note these additional guidelines**:
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
-  * Additional guidelines:
-    * Comment on coding standard violations.
-    * At the end of the review, we recommend you to choose `Comment` (i.e., not `Approve` or `Request changes`)
+  * Comment on coding standard violations in particular.
+  * At the end of the review, choose `Comment` (i.e., not `Approve` or `Request changes`)
 * **Review two PRs** created by your classmates. PRs can be found [here]({{ url_module_org }}/{{ ip_repo_name }}/pulls).
   * The allocation of which PRs to review will be specified in [this page]({{team_IDs_page}}) (you will be notified when the allocation is ready).
   * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
   * If the student you have been allocated to review has not created a PR yet, you can review another PR of your choice.
 {% elseif module == "CS2113" %}
 * **Do the following to prepare for the PR review exercise** you will be doing in the coming tutorial.  for that exercise.
-  * If you are new to GitHub PRs, see [GitHub help on how to review PRs](https://help.github.com/en/articles/about-pull-request-reviews).
+  * Learn how to review PRs:
+
+{{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
+
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
 {% endif %}
 
@@ -232,7 +254,7 @@ Resources:
 
 <box type="tip" light>
 
-**Use the iP Code Dashboard to view others' code**: You can now easily view [iP code written by classmates](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard), using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+**You can use the iP Code Dashboard to view others' code**: You can now easily view [iP code written by classmates](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard), using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1") }}
 </box>
@@ -289,7 +311,8 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {#====================================================================================================================#}
 <span id="heading_generate_new_jar">Generate a new jar file</span>
 <span id="desc_generate_new_jar">
-* We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.
+* We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
+  If the `.jar` file is smaller than 10Mb, most likely JavaFX libraries are not inside it.
 </span>
 {#====================================================================================================================#}
 <span id="extra_A-Assertion">

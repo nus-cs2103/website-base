@@ -37,7 +37,7 @@ Next up are two techniques that can be used to improve code quality. You need to
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("RCS: Managing Pull Requests") %}
 
-In the tP, you will be using pull request heavily, and you'll have to manage them yourselves. Let's start learning the ropes now itself to get ready for tP. Besides, you'll be doing some PR reviews in the iP too.
+Being able to work with PRs is an essential skill. To get started on that, let's learn how to review PRs properly. Besides, you'll be doing some PR reviews in the iP this week.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

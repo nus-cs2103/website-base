@@ -1,0 +1,10 @@
+{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+
+
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("RCS: Managing Pull Requests") %}
+
+In the tP, you will be using pull request heavily, and you'll have to manage them yourselves. Let's start learning the ropes now itself to get ready for tP.
+
+{% endcall %}
+

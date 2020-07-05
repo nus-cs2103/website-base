@@ -10,8 +10,6 @@
  #====================================================================================================================#}
 <span id="cs2103-week4-intro">
 
-Given below are some guidance on the recommended progress at this point of the project
-
 </span>
 {#====================================================================================================================#}
 <span id="cs2103-week6-intro">
@@ -76,7 +74,7 @@ Given below are some guidance on the recommended progress at this point of the p
 <span id="cs2113-week10-intro">
 
 {% call topic_preamble() %}
-Some things to note as you start the v2.0 iteration:
+Some things to note as you start the {{ version_penultimate }} iteration:
 * **Set moderate targets for functionality.** Adding more functionality than needed will not earn you more marks but can expose you to higher risk of bugs.<br>
   **Focus on improving the process and the quality** instead.
 * **Move in small steps, and keep the product working at each step.** If it breaks, you will only have to examine the latest change for the cause of the breakage.
@@ -125,12 +123,16 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 {{ embed_topic("tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3", indent="2") }}
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3", indent="2") }}
 
+* <span class="text-danger">**Submission**:</span> Submit your product name, target user profile, the value proposition, and the public link to your collaborative project notes via TEAMMATES. You'll receive an email from TEAMMATES with the submission link. Only one member needs to submit on behalf of the team. All members can view/update the submission.
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_start_project_notes">{{ icon_team }} Start a collaborative doc to take project notes</span>
 <span id="desc_start_project_notes">
 
-* Keep project notes in easy-to-use collaborative docs such as GoogleDocs/sheets. Document the decisions taken above in one of those docs. ==This document will be checked by the tutor at the next tutorial.==
+* Keep project notes in easy-to-use collaborative docs such as GoogleDocs/sheets. This document will be checked by the tutor at various points.<br>
+  Remember to choose a tool that ==allow public _view_ access== (not write access) e.g., GoogleDoc can be shared via a public link.
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_brainstorm_user_stories">{{ icon_team }} Brainstorm user stories</span>
@@ -148,7 +150,6 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
 * **How to record?**<br>
   Keep records of intermediate steps (e.g., persona, scenarios) in your collaborative project document started in the previous week.<br>
   You can ~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~ use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).
-
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
   <include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -181,16 +182,16 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
 <span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ version_first }}</span>
 <span id="desc_prioritize_user_stories">
 
-**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as v1.0. We try to make it small because you will have only two weeks to implement v1.0 and coding as a team is a lot harder than writing code alone.
-* If the product _can_ be of some use without a given user story, that user story should be left out of v1.0, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
-* Don't worry about v2.0. You can design v2.0 after v1.0 done.
-* Don't worry about v1.0 being 'too small'. You can always add more features to v1.0 if you finish it ahead of schedule.
-* If possible, narrow the scope of v1.0 further e.g., narrower target user, a smaller value proposition
+**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}. We try to make it small because you will have only two weeks to implement {{ version_first }} and coding as a team is a lot harder than writing code alone.
+* If the product _can_ be of some use without a given user story, that user story should be left out of {{ version_first }}, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
+* Don't worry about {{ version_penultimate  }}. You can design {{ version_penultimate }} after {{ version_first }} done.
+* Don't worry about {{ version_first }} being 'too small'. You can always add more features to {{ version_first }} if you finish it ahead of schedule.
+* If possible, narrow the scope of {{ version_first }} further e.g., narrower target user, a smaller value proposition.
 
 Suggested workflow:
 * **First stage** [10 minutes]:
   * Divide the user stories among team members.
-  * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed for v1.0_.
+  * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed for {{ version_first }}_.
 * **Second stage** [10 minutes]:
   * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 </span>

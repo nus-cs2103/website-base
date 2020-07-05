@@ -9,32 +9,9 @@ Given this is a first course in SE, tradition demands that we start by defining 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 
-{% call topic_preamble("IDEs: Basic Features") %}
-
-This week, you are starting your individual project (iP). As you are likely to be using an IDE for it, let's learn at least enough about IDEs to get you started using one.
-
-:thinking: In case you are puzzled by the sudden change of topic, note the following:
-
-{{ embed_topic("../../admin/moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
-<p/>
-
-{% endcall %}
-
-<!-- ---------------------------------------------------------------------------- -->
-
-{% call topic_preamble("Automated Testing of Text UIs") %}
-
-As you start adding features to your iP iteratively, you'll need a way to detect if the new code breaks the existing code. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).
-
-This also means we are not switching focus from the _implementation_ aspect to the _testing_ aspect of SE.
-
-{% endcall %}
-
-<!-- ---------------------------------------------------------------------------- -->
-
 {% call topic_preamble("RCS: Revision History") %}
 
-As you are adding code to the iP in rapid succession, another thing you'll need is a way to keep track of all the changes you do. The tool we are going to use for that is called Git, and we need to learn Git basics super quickly.
+This week, you are starting your individual project (iP). As you are adding code to the iP in rapid succession, you'll need a way to keep track of all the changes you do. The tool we are going to use for that is called Git, and we need to learn Git basics pretty quickly.
 
 Let's jump in and learn how to get started using Git in your own computer. Yes, we are now switching our focus to the _project management_ aspect of SE.
 
@@ -52,7 +29,7 @@ First, let's learn a bit about _tracking the change history of a project_ in gen
 
 {% call topic_preamble("gitAndGithub-init") %}
 
-Now that we know what RCS is in general, we can now try to do that ourselves using a specific tool i.e., Git.
+Now that we know what RCS is in general, we can try to practice it ourselves using a specific tool i.e., Git.
 
 The following section gives a specific scenario that includes the steps of initializing a Git repository.
 
@@ -78,7 +55,30 @@ Having learned how to use Git in your own computer, let's also learn a bit about
 
 <!-- ---------------------------------------------------------------------------- -->
 
-{% call topic_followup("RCS: Remote Repos") %}
+{% call topic_preamble("IDEs: Basic Features") %}
+
+ As you are likely to be using an IDE for the iP, let's learn at least enough about IDEs to get you started using one.
+
+:thinking: In case you are puzzled by the sudden change of topic, note the following:
+
+{{ embed_topic("../../admin/moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
+<p/>
+
+{% endcall %}
+
+<!-- ---------------------------------------------------------------------------- -->
+
+{% call topic_preamble("Automated Testing of Text UIs") %}
+
+As you start adding features to your iP iteratively, you'll need a way to detect if the new code breaks the existing code. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).
+
+This also means we are not switching focus from the _implementation_ aspect to the _testing_ aspect of SE.
+
+{% endcall %}
+
+<!-- ---------------------------------------------------------------------------- -->
+
+{% call topic_followup("testing-testAutomation-testingTextUis") %}
 
 Congrats! You've made it to the end of this week's topics. It feels like a lot right now but now that we got an early start, this stuff will be second nature to you by the time you are done with the semester. :-)
 
