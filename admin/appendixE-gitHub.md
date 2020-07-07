@@ -46,9 +46,11 @@ Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-educat
 
 <box light type="important">
 
-Please follow the organization/repo name format precisely because we use scripts to download your code or else our scripts will not be able to detect your work.
+Please follow the organization/repo name format precisely or else our grading scripts will not be able to detect your work.
 
 </box>
+
+****({{ icon_individual }}/%%{{ icon_team }}%%) Only one team member:****
 
 After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
@@ -79,7 +81,7 @@ The tP project template given to you is a variation of the iP repo you used for 
    * This repo (let's call it the _team repo_) is to be used as the repo for your project.
    * <span id="do-not-rename">{{ icon_important_big_red }} Please do not rename the fork %%Reason: our grading scripts rely on the repo name.%%</span>
 1. **Enable the issue tracker**.
-1. **Enable GitHub Actions**: Go to the {{ show_as_rounded_tab(':fas-play-circle: Actions') }} tab and enable workflows by clicking the {{ button('I understand my workflows ...', button_style="success") }} button. That will enable the GitHub Actions that come with the project template.
+1. **Enable GitHub Actions**: Go to the {{ show_as_rounded_tab(':fas-play-circle: Actions') }} tab and enable workflows by clicking the {{ button('I understand my workflows ...', button_style="success") }} button. That will enable the GitHub Actions that are already included in the repo you forked.
 {% if module == "CS2103" %}
 1. **Set up the project website**<br>
    Follow instructions in the [_Documentation guide_ page]({{ url_ab3_fork_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/tp` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/tp`.
@@ -193,8 +195,8 @@ We recommend you configure the issue tracker of the tP team repo as follows:
   * Click on the `Branches` option on the navigation menu on the left.
   * Click the {{ button('**Add rule**') }} button. In the _Branch protection rule_ page,
     * Specify the _Branch name pattern_ to be `master`
-    * Tick the option `Require status checks to pass before merging` to ensure that code has to pass CI before then can be merged to the `master` branch
-    * If you think all PRs should be reviewed before they are merged, also tick the `Require pull request reviews before merging` option.
+    * Tick the option `Require status checks to pass before merging` to ensure that a branch has to pass CI before it can be merged into the `master` branch
+    * If you think all PRs should be reviewed by someone other than the PR author before they are merged, also tick the `Require pull request reviews before merging` option.
 * **Create issues to represent project tasks** so that they can be tracked using the issue tracker features.
 * **Create a PR when you implement a project task** that updates the code.<br>
   {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.<br>
@@ -222,7 +224,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 </div>
 <div id="workflow-after-v11">
 
-**After following the given workflow for at least <tooltip content="i.e., until {{ version_first }}">one iteration</tooltip>, you can reduce process rigor** to suit your team's pace. Here are some examples:
+**After following the given workflow for at least <tooltip content="i.e., until the end of {{ version_first }}">one iteration</tooltip>, you can reduce process rigor** to suit your team's pace. Here are some examples:
 
 * **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain.<br>
   It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>

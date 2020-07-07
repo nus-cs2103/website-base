@@ -34,7 +34,6 @@ week5: [
   {policy_id: "policy-responseTime"},
   {faq_id: "admin-faq-beanCounting"}],
 week6: [
-  {topic_id: "exams"},
   {topic_id: "appendixF-teamworkIssues"},
   {faq_id: "admin-faq-manySubmissions"},
   {faq_id: "admin-faq-cs2101Differences"}],
@@ -42,7 +41,8 @@ week7: [],
 week8: [],
 week9: [],
 week10: [],
-week11: [],
+week11: [
+  {topic_id: "exams"}],
 week12: [],
 week13: []
 }%}

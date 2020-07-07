@@ -58,12 +58,12 @@ week5: [
   {id: 'add_an_extension'}
 ],
 week6: [
-  {id: 'add_increments', suffix: ' as PRs', increments:  [
+  {id: 'add_increments', increments:  [
     {id: 'A-BetterGui', title: 'Better GUI', tag: 'optional'}
   ]},
   {id: 'finalize_features'},
   {id: 'set_up_website'},
-  {id: 'submit_the_final_version', deadline: 'by Friday 2359'}
+  {id: 'submit_the_final_version', deadline: get_date(date_w6_start, 7)}
 ],
 week7: [
   {id: 'get_more_out_of_the_ip'}

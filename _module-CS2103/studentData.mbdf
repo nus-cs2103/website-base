@@ -228,3 +228,12 @@
 ["yuxianglim", "JosephLimWeiJie", "thanhduc2000"],
 ["zi-hui", "wangqinNick", "HAOYUN49"]
 ] %}
+
+{% set ip_pr_slap_review_allocation = [
+["thanhduc2000", "lowjiayee", "wangqinNick"],
+["trishaangelica", "DeetoMok", "SibingWu"],
+["wangqinNick", "yantingsanity", "brandoncjh"],
+["yantingsanity", "yuxianglim", "andy-aw-why"],
+["yuxianglim", "JosephLimWeiJie", "thanhduc2000"],
+["zi-hui", "wangqinNick", "HAOYUN49"]
+]%}

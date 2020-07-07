@@ -367,7 +367,8 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {#====================================================================================================================#}
 <span id="heading_submit_the_final_version">Submit the final version</span>
 <span id="desc_submit_the_final_version">
-* **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the project is very simple. The jar file should be ==cross-platform and should work in a computer that has Java 11==.
+* {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
+* **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the product is very simple %%(e.g., no GUI or 3rd party libraries).%% The jar file should be ==cross-platform and should work in a computer that has Java 11==.
 * **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
   1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.

@@ -19,7 +19,7 @@
 
 
 {% macro project_gantt_pre(g) %}
-<puml>
+<puml name="tpGanttChart-preIterations.png">
 @startgantt
 [{{ g.w3 }}] lasts 1 days
 then [{{ g.w4 }}] lasts 1 days and starts 6 days after [{{ g.w3 }}]'s end
@@ -31,7 +31,7 @@ then [{{ g.w7 }}] lasts 4 days and starts 4 days after [{{ g.w6 }}]'s end
 {% endmacro %}
 
 {% macro project_gantt_iterations(g) %}
-<puml>
+<puml name="tpGanttChart-iterations.png">
 @startgantt
 [{{ g.iter1 }}] lasts 14 days
 [{{ version_first }}] happens at [{{ g.iter1 }}]'s end

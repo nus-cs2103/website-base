@@ -842,21 +842,6 @@
               {name: "what", heading: "What", priority: "2"},
               {name: "how", heading: "How", priority: "3"}
             ]
-          },
-          {
-            name: "markdown",
-            priority: "3",
-            level_three_topics: [
-              {name: "what", heading: "What", priority: "3"},
-              {name: "how", heading: "How", priority: "3"}
-            ]
-          },
-          {
-            name: "asciiDoc",
-            priority: "4",
-            level_three_topics: [
-              {name: "what", heading: "What", priority: "4"}
-            ]
           }
         ]
       }

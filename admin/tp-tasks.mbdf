@@ -18,11 +18,11 @@
 
 {{ icon_individual }} indicates an individual task %%(i.e., each team member has to do the task, graded individually)%% while {{ icon_team }} indicates a team task %%(some or all members may do the work; graded for the whole team)%%.
 
-{{ icon_important_big_red }} **tP tasks progress is graded**. Be reminded that completing individual and team tasks are considered for grading the _project management_ component of your project grade.
+{{ icon_important_big_red }} **tP tasks progress is graded**. Completing individual and team tasks are considered for grading the _project management_ component of your project grade.
 
 {{ embed_topic("tp-grading.md#project-management-grading", "Admin " + icon_embedding + " tP → Grading → Project Management", "3", indent="1") }}
 
-{{ icon_important_big_red }} **Most aspects project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. We prefer not to spend admin resources processing requests for partial credit for work that did not follow the instructions precisely, unless the progress was not detected due to a bug in the script.
+{{ icon_important_big_red }} **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. We prefer not to waste admin resources processing requests for partial credit for work that did not follow the instructions precisely, unless the progress was not detected due to a bug in the script.
 
 <span id="milestoneCumulative">
 
@@ -209,6 +209,7 @@ Suggested workflow:
 <span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the code base</span>
 <span id="desc_get_familiar_with_the_code_base">
 
+* ==Ideally, you should do this task in this week== (i.e., midnight before the week 6 tutorial), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
 * Do the following tutorials to get familiar with the codebase
   * [Tutorial 1 - Tracing a Command Execution Path]({{ url_ab3_fork_website }}/tutorials/TracingCode.html)
   * [Tutorial 2 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)
@@ -216,10 +217,9 @@ Suggested workflow:
     * Submission: Do your changes in a branch named `tutorial-removing-field` and push to your fork.
   * [Tutorial 3 - Adding a new Command]({{ url_ab3_fork_website }}/tutorials/AddRemark.html)
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
-    * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. 
-* ==Ideally, you should do the above tutorials by week 6== (i.e., midnight before the tutorial), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
+    * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo.
 * The PRs created for tutorials need not be merged, unless the changes are actually in line with your project idea.
-* For reference, given below is the workflow you should follow use to merge code in your tP:
+* For reference, given below is the workflow you should follow when merging code in your tP:
 
 {{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="2") }}
 </span>
