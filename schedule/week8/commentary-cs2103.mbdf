@@ -1,0 +1,37 @@
+{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("[Revisiting] Drawing Class/Object Diagrams") %}
+
+<span class="float-right pl-2 pr-2">
+
+<img src="../../admin/images/drawingDiagrams.png" width="212" /><br>
+<sub>[[image source](https://www.cs.auckland.ac.nz/~john-g/papers/hcc2003_1.pdf)]</sub>
+</span>
+
+In an earlier week you learned how to interpret class diagrams and object diagrams. Let's go back to that topic but this time let's learn how to draw those diagrams to match code. You'll need to draw class/object diagrams when you document the design of your tP.
+
+But note that in the tP you'll be using diagramming tools to draw the diagram, here, we focus on hand drawing. The reason is, we also want you to be able ==to quickly hand-draw UML diagrams== to aid discussions (e.g., draw a diagram on a whiteboard while explaining a design decision to colleagues.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("[Revisiting] Drawing Sequence Diagrams") %}
+
+As with the previous topic, let's also learn to hand-draw sequence diagrams.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Testing: Types") %}
+
+You've already been doing some testing in your iP and tP. It turns out there are many ways to categorize testing. Let's learn some of the more common categorizations of testing.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Testing: Intermediate Concepts") %}
+
+One of the primary goals of a software engineer is to avoid bugs. You certainly don't want to be the person responsible for causing a major bug that caused heavy damages to some party. That's why we need to focus heavily on testing -- one of the main defences against bugs.
+
+The next few sections cover some intermediate level testing topics that you are very likely to encounter in software engineering.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->

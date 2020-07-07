@@ -33,7 +33,7 @@ week7: [
 ],
 week8: [
   {id: 'submit_post_lecture_quiz', graded: true},
-  {id: 'submit_midterm_peer_evaluations', deadline: "by Sunday", graded: true}
+  {id: 'submit_midterm_peer_evaluations', deadline: get_date(date_w8_start, 9), graded: true}
 ],
 week9: [
   {id: 'submit_post_lecture_quiz', graded: true}

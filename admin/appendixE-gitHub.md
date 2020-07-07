@@ -143,7 +143,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 </span>
 
-* Create following milestones : <span tags="m--cs2103">`v1.0`, `v1.1`, </span>`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}`
+* Create following milestones : <span tags="m--cs2103">`v1.1`, </span>`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}`
 
 * You may configure other project settings as you wish. e.g. more labels, more milestones
 
@@ -287,7 +287,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 #### Using Milestones:
 
-==Given below are the conditions to satisfy for a milestone to be considered properly managed==:
+==Given below are the conditions to satisfy for a milestone to be considered _properly managed_==:
 
 **Planning a Milestone** (to do within the first week of the iteration):<br>
 

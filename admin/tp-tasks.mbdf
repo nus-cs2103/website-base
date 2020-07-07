@@ -303,7 +303,7 @@ Update the following pages in your project repo:
   <include src="tp-expectations.md#roles"/>
 </modal>
 
-* **README.md** page: Update it to match your project.
+* **README** page: Update it to match your project.
 
   * Add a UI mockup of your intended final product.
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
@@ -334,6 +334,7 @@ Update the following pages in your project repo:
 <span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs, use cases</span>
 <span id="desc_update_dg_user_stories_etc">
 
+* {{ icon_important_big_red }} Do a sincere job in this task as the DG will be reviewed during this week's tutorial.
 * Update the following in the DG, based on your project notes from the previous weeks.<br>
   {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ url_ab3_fork_website }}/DeveloperGuide.html#product-scope).
 
@@ -387,16 +388,16 @@ Why? You don't have enough experience to reliably estimate effort each feature w
 Instead, what we will do is to ==assume the current iteration is the last iteration==, plan that iteration accordingly, and try to follow that plan as best as we can. After the iteration is over, we plan the next iteration as if _it's_ the last iteration. But that time, factor in the experience from the previous iteration to do a better job of planning.
 
 How is that better?
-* Shorter plans have a better chance of succeeding.
-* You get multiple shots at project planning. Each try can learn from the previous tries. Hence, more learning.
-* As each iteration produces a working product, you always have a working product, which reduces the risk overrunning the final deadline.
+* Shorter-term plans have a better chance of being accurate and doable.
+* You get multiple clean shots at project planning. Each try can learn from the previous tries. Hence, more learning.
+* As each iteration produces a working product, you always have a working product, which reduces the risk overshooting the final deadline.
 
 </box>
 
 </div>
 
 * {{ icon_team }} **Plan the next iteration**. As per the project planning approach described in the box above, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
-  * ==Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)== even if the functionalities are not polished (polishing can be done in a later iteration).
+  * ==Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
   * If possible, break the iteration into two increments i.e., aim to produce an even simpler but working version after one week.
   * "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet i.e., go _breadth-first iterative_ not _depth-first iterative_.

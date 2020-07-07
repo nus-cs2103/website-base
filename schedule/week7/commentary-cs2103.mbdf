@@ -1,0 +1,54 @@
+{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+
+
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Requirements: Use Cases") %}
+
+Last week, you learned a number of techniques for specifying requirements. There's one more left, which we'll cover this week.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Design: High-Level View") %}
+
+In the tP, you start with a code base that already has a certain design. The next few topics look at how one can come up with such a design.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_followup("design-introduction-what") %}
+
+Now that you know there are two kinds of 'design', also note that this module focuses more on the internal design rather than the external design.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Design: Fundamentals") %}
+
+As you start changing the tP code, you'll have to make design decisions e.g., decide between multiple design alternatives. Let us learn three fundamental design concepts that you can use in those decisions.
+
+It is extremely important for you to know these three because **they are like the DNA of every higher-level design concept**.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("IDEs: Advanced Features") %}
+
+In case you are the type who want to become a 'power user' of IDEs (it's not a bad idea, given the IDE is like the primary tool of a software engineer), given below are some more things you can do with IDEs.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Integration Approaches") %}
+
+As you start adding new code to the tP, let's also become aware of various approaches in integrating new code to a product.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Project Mgt: Scheduling and Tracking") %}
+
+Coordinating a team project is not easy. Give below are some tools and techniques that are often used in planning, scheduling, and tracking projects.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Project Mgt: Workflows") %}
+
+Continuing on the same theme, given below are more practices used in managing projects, particularly related to the revision control aspect.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->

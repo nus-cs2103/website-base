@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_as_tab, thumb with context %}
+{% from "common/macros.njk" import embed_topic, show_as_tab, thumb, timing_badge with context %}
 {% from "_module-" + module + "/studentData.mbdf" import ip_pr_slap_review_allocation as allocations with context %}
 
 #### {{ thumb(1) }} Discuss iP progress
@@ -31,13 +31,13 @@ Quickly update the tutor about your iP progress:
    </panel>
    <p/>
 
-1. **[10 minutes] Find potential _abstraction_ problems**: Go through the code in the dif view (i.e., the <span class="tab">:octicon-diff: Files changed</span> tab), and and find potential ==abstraction problems (weak SLAP, arrow-head style code, too-long methods, too-deep nesting)== <br/>
+1. {{ timing_badge("10 minutes", "info") }} **Find potential _abstraction_ problems**: Go through the code in the dif view (i.e., the <span class="tab">:octicon-diff: Files changed</span> tab), and and find potential ==abstraction problems (weak SLAP, arrow-head style code, too-long methods, too-deep nesting)== <br/>
    {{ icon_tip }} To identify long methods or deep nesting, zoom out and scroll through the entire PR code to do a visual inspection (no need to read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction.If you are unsure about a case, you can also rope the tutor in to the discussion.
    * If you can't find at least one example, you can try the fallback option provided, and failing that, another random iP PR.
    * You can also select borderline cases.
    * **Paste screenshots of problematic code** in the shared online document provided (in the section of the document allocated to you).
 
-1. **[10 minutes] Discussion**: The tutor will lead a short discussion to go through the problematic code you found.
+1. {{ timing_badge("10 minutes", "info") }} **Discussion**: The tutor will lead a short discussion to go through the problematic code you found.
 
 1. {{ icon_tip }} **After the tutorial**, you can apply the insights gained from this activity to **improve the code quality of your own iP**, if necessary.
 

@@ -211,7 +211,7 @@ Some examples:
 
 <div tags="m--cs2103">
 
-* **Tip: Divide the components of the product among team members**. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
+* **Tip: Divide the components of the product among team members**. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components to fit their features, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
 </div>
 
 
@@ -219,7 +219,7 @@ Some examples:
 
 * **Objective:** showcase your ability to write both _user-facing documentation_ and _developer-facing documentation_.
 * <span class="badge badge-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added. The minimum requirement is given below. %%(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)%%
-  * UG: {{ dg_pages_per_person }} or more pages
+  * UG: {{ ug_pages_per_person }} or more pages
   * DG: {{ dg_pages_per_person }} or more pages
 * **Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements**, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations. 
 * <span class="badge badge-info">Expectation</span> <span class="text-info">**Use at least {{ uml_diagrams_per_person }} UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.
@@ -243,13 +243,13 @@ There is no requirement for a minimum coverage level. Note that in a production 
 
 #### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Teamwork</span>
 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Do a fair share of the _team-tasks_**.</span>
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Do an equal share of the _team-tasks_**.</span>
 
 <div id="team-tasks" class="indented-level2">
 
 <box>
 
-_Team-tasks_ are the tasks that _someone_ in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
+_Team-tasks_ are the tasks that _someone_ in the team has to do.
 
 <panel type="seamless" header="{{ icon_example }} Examples of team-tasks">
 
@@ -273,7 +273,7 @@ Here is a non-exhaustive list of team-tasks:
 </box>
 </div>
 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Assume a fair share of project roles and responsibilities**.</span>
+* <span class="badge badge-info">Expectation</span> <span class="text-info">**Carry an equal share of project roles and responsibilities**.</span>
 
 <div class="indented-level2">
 

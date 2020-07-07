@@ -69,6 +69,6 @@ week7: [
   {id: 'get_more_out_of_the_ip'}
 ],
 week8: [
-  {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359', graded: true}
+  {id: 'evaluate_peer_ips', deadline: get_date(date_w8_start, 8), graded: true}
 ]
 } %}

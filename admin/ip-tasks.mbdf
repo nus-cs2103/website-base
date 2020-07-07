@@ -385,15 +385,13 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 <span id="desc_get_more_out_of_the_ip">
 <div class="indented">
 
-Now that you have submitted the iP, here are some optional things you can do to get even more out of the iP, if not right now, sometime in the future.
-
 **If you wish to cite the iP in your resume**, you can do more to make it look more impressive to a potential employer. These improvements are not considered for grading and can be done after the semester is over. Some ideas:
 * **Improve the GUI**: Make the UI look nicer, unique, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
 * **Add a demo** video or an animated gif to your user guide to show how the app works.
 * **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge badge-light badge-pill text-monospace">**</>**</span>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
 * **Add more features.**
 
-On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other modules, pet projects).
+{{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other modules, pet projects).
 
 
 </div>
