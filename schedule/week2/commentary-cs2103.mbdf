@@ -9,6 +9,16 @@ Given this is a first course in SE, tradition demands that we start by defining 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 
+{% call topic_preamble("SDLC Process Models") %}
+
+Broadly speaking, there are two approaches to doing a software project. Those two approaches are also highly relevant to the way this module is run, and how it is different from most SE modules elsewhere.
+
+Let's learn about those two approaches early so that we can better understand how this module works.
+
+{% endcall %}
+
+<!-- ---------------------------------------------------------------------------- -->
+
 {% call topic_preamble("RCS: Revision History") %}
 
 This week, you are starting your individual project (iP). As you are adding code to the iP in rapid succession, you'll need a way to keep track of all the changes you do. The tool we are going to use for that is called Git, and we need to learn Git basics pretty quickly.

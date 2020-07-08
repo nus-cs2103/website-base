@@ -234,6 +234,8 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 * **Switch to a lighter workflow**: While _forking workflow_ is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. However, we still recommend that you use PR reviews, at least for PRs affecting others' features.
 
+* If you are unsure if a certain adjustment is allowed, you can check with the teaching team first.
+
 <modal header="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
   <include src="tp-expectations.md#testing-expectations"/>
 </modal>

@@ -1,0 +1,55 @@
+{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("OO Domain Models") %}
+
+Previously, you learned about class and object diagrams. Let's touch on another variant of class diagrams that complements the first two. The good news is that it is simply a subset of the notation that you already know.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Activity Diagrams") %}
+
+Activity diagrams is the last UML diagram type you'll be learning in this module, and probably the easiest and most intuitive of the lot. You've heard about 'flow charts', right? Well, this is the UML equivalent of that.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Conceptualizing a Design") %}
+
+A few weeks ago, you learned how to interpret UML diagrams. More recently, you learned how to draw diagrams to match code. There's a third use of models: as an aid for coming up with a design _before_ the code is written.
+
+While this module doesn't ask you to come up with detailed designs before writing code (i.e., our approach leans closer to the _agile_ design rather than the _full design upfront_ approach), this third use of models come in handy at times. Let's learn a bit about that too.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Archtecture Diagrams") %}
+
+You've already encountered architecture diagrams in your tP. Pretty soon, you might have to update that diagram to match your new product. Given below are just a brief note about drawing architecture diagrams.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Design principles") %}
+
+Remember you learned about <tooltip content="Abstraction, Coupling, Cohesion">the three things</tooltip> that are 'like the DNA' of design concepts. It's time to move to the next level and learn some design _principles_ that build upon those three. Given below are two new principles and three that you should have at least touched upon in previous modules.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("principles-interfaceSegregationPrinciple") %}
+
+If you liked the principles covered above, given below are a few more widely used principles that are optional in this module (they were moved to the optional topics in order to reduce the module workload).
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("[Revisiting] SDLC Process Models") %}
+
+Remember these three topics that we covered early in the module?
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("SDLC Process Models (continued)") %}
+
+Let's continue that thread to learn about some SDLC process models that are commonly used in the industry.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Writing Developer Documents") %}
+
+As you will be updating the design details in your tP DG, here are some guidelines to help you with that.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->

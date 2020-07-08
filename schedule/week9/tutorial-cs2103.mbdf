@@ -7,29 +7,24 @@
 {{ embed_topic("../../admin/tp-tasks.mbdf#desc_do_an_informal_demo", "Admin " + icon_embedding + " tP v1.2: Demo", "3") }}
 </div>
 
-#### {{ thumb(2) }} Do a Postmortem of v1.2
+#### {{ thumb(3) }} Exercise: OODMs
 
-* Share with the tutor your opinion on **how v1.2 went**, and your **plans to improve the process** (not the product) in {{ version_penultimate }}, individually and as a team.
+* {{ timing_badge("10 minutes", "info") }} Do the following question. As before, you should _hand-draw_ the diagram.<br>
+  %%{{ icon_tip }} You can use the _association class_ notation in the answer.%%
 
-#### {{ thumb(3) }} Exercise: OODMs, Activity Diagrams
+<div class="indented-level2">
 
-<div class="indented">
-
-**3A.** {{ timing_badge("10-12 minutes", "info") }} Divide into two sub-teams and do the following questions on the whiteboard.<br>
-
-<div class="indented">
-
-**Sub-team 1:** %%{{ icon_tip }} You can use the _association class_ notation in the answer.%%
 <include src="../../book/modeling/modelingStructures/objectOrientedDomainModels/q-courseDomainModel.md" />
-<p/>
+</div>
 
-**Sub-team 2:**
+* Paste a scan/photo of your answer in the online document.
+* {{ timing_badge("10 minutes", "info") }} Discuss the answers, as guided by the tutor.
+
+#### {{ thumb(3) }} Exercise: Activity Diagrams
+
+* Do the following question in a similar manner to the previous question.
+
+<div class="indented-level2">
+
 <include src="../../book/modeling/modelingBehaviors/activityDiagrams/q-modelWorkflowOfBurgerShop.md" />
-<p/>
 </div>
-
-**3B.** {{ timing_badge("5 minutes", "info") }} Familiarize yourself with the question the other sub-team worked on.
-
-**3C.** [Group activity] Review the other sub-team's answer.
-</div>
-

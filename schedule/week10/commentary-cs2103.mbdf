@@ -1,0 +1,38 @@
+{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Design Patterns") %}
+
+You learned about <tooltip content="i.e., abstraction, coupling, cohesion">the three basic design concepts</tooltip>, and then moved onto <tooltip content="i.e., SRP, LSP, OCP, SoC etc.">design principles</tooltip>. This week, we move to another type of design concepts that build on top of the other two.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("designPatterns-singleton-what") %}
+
+Now that you know what _design pattern_ is, let's learn a few example design patterns.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_followup("Design Patterns") %}
+
+A couple of more design patterns will be covered next week.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Defensive Programming") %}
+
+You already know some techniques (e.g., exceptions, assertions) to make the code more resilient to errors. Given next is an overarching approach to coding that aims to push further in that direction.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Test Cases: Intro") %}
+
+If testing is a gun you used to kill bugs, test cases are the bullets. Let's learn more about designing test cases, starting with a high-level view of test cases.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Test Cases: Equivalence Partitioning") %}
+
+Next, a heuristic used for improving the quality of test cases.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Test Cases: Boundary Value Analysis") %}
+
+OK, the equivalence partitioning technique helps us divide the possible test cases into partitions, but which test cases should we pick from each partition? The next heuristic addressed that problem.
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
