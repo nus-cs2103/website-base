@@ -259,8 +259,8 @@ Duplicate of #67
 
 **Type** labels:
 * `type.FunctionalityBug`: A functionality does not work as specified/expected.
-* `type.FeatureFlaw`: Some functionality missing from a feature delivered in {{ version_final }} in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of {{ version_final }} features. These issues are counted against the 'depth and completeness' of the feature.
-* `type.DocumentationBug`: A flaw in the documentation that can potentially affect the user %%e.g., a missing step, a wrong instruction, typos that affect users%%
+* `type.FeatureFlaw`: Some functionality missing from a feature delivered in {{ version_final }} in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of {{ version_final }} features. These issues are counted against the _product design_ aspect of the project.
+* `type.DocumentationBug`: A flaw in the documentation %%e.g., a missing step, a wrong instruction, typos%%
 </box>
 </div>
 

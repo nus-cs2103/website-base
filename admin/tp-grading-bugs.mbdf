@@ -37,7 +37,7 @@ These are considered _functionality bugs_:<br>
 </span>
 <span id="neatnessBugs">
 
-:fas-bug: Neatness/Correctness:
+:fas-bug: Neatness/correctness:
 * looks messy
 * not well-formatted
 * broken links, other inaccuracies, typos, etc.

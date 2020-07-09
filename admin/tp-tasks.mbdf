@@ -643,7 +643,7 @@ In addition,
 <span id="heading_deliver_the_feature">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
 <span id="desc_deliver_the_feature">
 
-* Deliver the featured that you planned for {{ version_penultimate }}.
+* Deliver the features that you planned for {{ version_penultimate }}.
 </span>
 {#====================================================================================================================#}
 <span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>
