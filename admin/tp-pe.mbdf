@@ -158,7 +158,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 This phase is for you to respond to the bug reports you received.
 
-Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Saturday midnight** (i.e., within 3 days). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
+Duration: The review period will start around 1 day after the PE (exact time to be announced) and will ==last for 3 days==. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
@@ -230,8 +230,7 @@ Duplicate of #67
 
 * **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know ASAP.
 * **If the bug is reported multiple times**,
-  * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the :fas-check-square: `A Duplicate of` tick box..
-  * If the duplicates have different severity levels, you should ==keep the one with the highest severity== as the _original_. But you can downgrade the severity of the original or the duplicates.
+  * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the :fas-check-square: `A Duplicate of` tick box.
   * For each group of duplicates, all duplicates should point to one _original_ i.e., no multiple levels of duplicates, and no cyclical duplication relationships.
   * If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the `type.*` and `severity.*` from the _original_.
 <p/>
@@ -279,7 +278,7 @@ Duplicate of #67
 * **Broken links in UG/DG**: Severity can be low or medium depending on how many such cases and how much inconvenience they cause to the reader.
 * **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
     If the same problem is reported for multiple diagrams, can be flagged as duplicates.<br>
-    Omit optional notations is not a bug as long it doesn't hinder understanding.
+    Omitting optional notations is not a bug as long it doesn't hinder understanding.
 * **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
 * **How to prove that something is 'not in scope'**: The following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
   * The UG specifies it as not supported or coming in a future version.
@@ -290,7 +289,6 @@ Duplicate of #67
 
 * **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.**
   * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
-  * It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never reviewed it), provided the bug should have been reasonably apparent to a reviewer. For example, if someone put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.
 <p/>
 
 * As far as possible, ==**choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting or marking as duplicates**==. Reason: your _non-acceptance_  or duplication status may be rejected in a later phase, in which case we need to grade it as an accepted/non-duplicate bug.
@@ -363,4 +361,4 @@ Team chose ['response.IssueUnclear']
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
 
 * In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome.
-* In the unlikely we need your inputs, the tutor will contact you.
+* In the unlikely case we need your inputs, the tutor will contact you.

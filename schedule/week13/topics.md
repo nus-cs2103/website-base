@@ -2,10 +2,7 @@
 
 {{ show_week_topics_page(13) }}
 
-<div class="indented-level2">
+<div tags=m--cs2113" class="indented-level2">
 
-**No more topics left!**<br>
-
-<img src="https://pics.esmemes.com/well-thats-done-what-should-i-do-next-a-cats-8399900.png" /><br>
-<small>%%[image source: esmemes.com]%%</small>
+<include src="../week12/topics.md#cats-work-never-done" />
 </div>

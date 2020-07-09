@@ -80,6 +80,8 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 * Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.
 
 {{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
+
+* Baseline: If your team received a value higher than `10` in step 1 and the team agrees that you did roughly an equal share of implementation work, you should receive full marks for effort.
 </div>
 <div tags="m--cs2113">
 

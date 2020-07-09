@@ -46,7 +46,7 @@
 
 <box dismissible>
 
-{{ icon_tip }} when setting the {{ version_final }} deadline in GitHub milestones, remember that the {{ version_final }} submission deadline is Week 13 Monday for _everyone_ (does not vary by tutorial day). Set your own deadline accordingly, or else our grading scripts will flag it as an 'unsuitable' deadline.
+{{ icon_tip }} when setting the {{ version_final }} deadline in GitHub milestones, remember that the {{ version_final }} submission deadline is Week 13 Monday for _everyone_ (does not vary by tutorial day). Set your own milestone deadline accordingly, or else our grading scripts will flag it as an 'unsuitable' deadline.
 </box>
 
 <box background-color="white" border-color="red">
@@ -706,11 +706,11 @@ In addition,
 <span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Tweak the product as per peer-testing results</span>
 <span id="desc_tweak_product_as_per_PED">
 
-* Learn the procedure for dealing with PED bugs you received:
+* Follow the procedure for dealing with PED bugs you received:
 
 {{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
 
-* **Freeze features** around this time. Ensure the current product have all the features you intend to release at {{ version_final }}. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
+* **Freeze features** around this time. Ensure the current product have all the features you intend to release at {{ version_final }}. Doing major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
 * **Update documentation** to match the product.
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 

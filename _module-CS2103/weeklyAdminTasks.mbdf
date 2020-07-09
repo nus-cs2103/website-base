@@ -47,6 +47,6 @@ week11: [
 week12: [
 ],
 week13: [
-  {id: 'submit_final_peer_evaluations', deadline: "by Thursday 2359"}
+  {id: 'submit_final_peer_evaluations', deadline: get_date(date_w13_start, 6), graded: true}
 ]
 } %}

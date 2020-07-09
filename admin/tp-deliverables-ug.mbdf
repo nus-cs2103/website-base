@@ -2,7 +2,7 @@
 
 <box>
 
-{{ icon_info }} **In UG/DG, using hierarchical section numbering and figure numbering is optional** (reason: it's not easy to do in MarkDown), but make sure it does not inconvenience the reader (e.g., use section/figure title and/or hyperlinks to point to the section/figure being referred to). Examples:
+{{ icon_info }} **In UG/DG, using hierarchical section numbering and figure numbering is optional** (reason: it's not easy to do in Markdown), but make sure it does not inconvenience the reader (e.g., use section/figure title and/or hyperlinks to point to the section/figure being referred to). Examples:
 
 >In the section [_Implementation_]() given above ...
 
