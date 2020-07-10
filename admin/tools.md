@@ -7,14 +7,14 @@
 
 <img src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px"><br>
 
-#### <div class="text-white bg-dark p-1">Tool Used: Learning Management System</div>
+#### <div class="text-white bg-dark p-1">Tool: Learning Management System</div>
 
 This module website is the main source of information for the module. In addition, we use LumiNUS for some things %%(e.g., webcasts, announcements, file submissions, grade book, ...)%%.
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="github">
 
-#### <div class="text-white bg-dark p-1">Tool Used: GitHub (for Code Hosting)</div>
+#### <div class="text-white bg-dark p-1">Tool: GitHub (for Code Hosting)</div>
 
 You are ==_required to_ use GitHub== as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). 
 
@@ -32,7 +32,7 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="rcs">
 
-#### <div class="text-white bg-dark p-1">Tool Used: Git (for Revision Control)</div>
+#### <div class="text-white bg-dark p-1">Tool: Git (for Revision Control)</div>
 
 You are ==_required to_ use Git==. Other revision control software are not allowed. The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com/), but you may use any other, or none.
 
@@ -59,7 +59,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div tags="m--cs2113" id="repl">
 
-#### <div class="text-white bg-dark p-1">Tool Used: Repl.it (for Coding Exercises)</div>
+#### <div class="text-white bg-dark p-1">Tool: Repl.it (for Coding Exercises)</div>
 
 * We'll be using `Repl.it` for coding exercises (compulsory).
 
@@ -104,7 +104,7 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="ide">
 
-#### <div class="text-white bg-dark p-1">Tool Used: Intellij IDE</div>
+#### <div class="text-white bg-dark p-1">Tool: Intellij IDE</div>
 
 You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for module-related programming work. While the use of Intellij is not compulsory, note that module materials are optimized for Intellij. Use other IDEs at your own risk. 
 
@@ -118,13 +118,13 @@ You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="reposense">
 
-#### <div class="text-white bg-dark p-1">Tool Used: RepoSense (for Analyzing Code Authorship)</div>
+#### <div class="text-white bg-dark p-1">Tool: RepoSense (for Analyzing Code Authorship)</div>
 
 <include src="tools-reposense.mbdf" />
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="teammates">
 
-#### <div class="text-white bg-dark p-1">Tool Used: TEAMMATES (for Peer Evaluations/Feedback)</div>
+#### <div class="text-white bg-dark p-1">Tool: TEAMMATES (for Peer Evaluations/Feedback)</div>
 
 We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation system. %%TEAMMATES is a project run by NUS SoC students and used by over 0.5 million users from over 1000 universities.%%
 

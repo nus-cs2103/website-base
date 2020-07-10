@@ -64,6 +64,7 @@ Note the typical deadline weekly project tasks:
 
 But ==as there are no tutorials this week, you have until {{ get_date(date_w2_start, 6) }}== to finish this week's iP tasks.
 </box>
+</span>
 <span id="cs2103-week3-intro">
 
 **:fas-clock: Reminder about the deadline for the weekly project tasks:**
@@ -134,7 +135,9 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 <box type="info" light>
 
 The PR will update automatically to reflect your latest code every time you push code to your fork. As a result, it provides a convenient way for us to access the current state of all your iP code from one location.
+
 </box>
+
 </div>
 
 <modal large header="Pull Request (PR)" id="modal:ipTasks-createPr">
@@ -185,10 +188,13 @@ Resources:
 </span>
 <span id="extra_Level-7">
 
+<p/>
+
 * Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement Level 8 in a separate branch named `branch-Level-8`. Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
  {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
+
 </span>
 <span id="extra_Level-8">
 <span tags="m--cs2113" id="as-parallel-prs">

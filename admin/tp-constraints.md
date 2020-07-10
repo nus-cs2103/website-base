@@ -23,8 +23,8 @@
 <span tags="m--cs2103">
 
 {% call show_constraint("Constraint-Brownfield") -%}
-The final product should be a result of evolving/enhancing/morphing the given code base. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. one feature/component at a time%%<br/>
-%%**Reason:** To ensure your code has a decent quality level from the start.%%
+The final product should be a result of evolving/enhancing/morphing the given code base. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. done in small steps, each producing a working product%%<br/>
+%%**Reason:** To simulate a brownfield project.%%
 {%- endcall  %}
 </span>
 
@@ -39,7 +39,7 @@ The product should be for a single user i.e. (not a multi-user product).<br>
 {%- endcall  %}
 
 {% call show_constraint("Constraint-Incremental") -%}
-The product needs to be developed incrementally over the project duration. While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected. For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester.<br>
+The product needs to be developed in a breadth-first incremental manner over the project duration. While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected. For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester.<br>
 %%**Reasons**: 1. To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.%%
 {%- endcall  %}
 
@@ -61,7 +61,7 @@ The software should follow the Object-oriented paradigm primarily (but you are a
 {%- endcall  %}
 
 {% call show_constraint("Constraint-Platform-Independent") -%}
-The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries and OS-specific features.<br/>
+The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, deliberately avoid using OS-dependent libraries and OS-specific features.<br/>
 %%**Reason:** Peer testers should be able to use any of these platforms.%%
 {%- endcall  %}
 
@@ -115,7 +115,7 @@ Avoid implementing hard-to-test (both for manual testing as well as automated te
 Here are some examples of features that are hard-to-test:
 * Features that depend heavily on remote APIs: Those APIs can block your access if they mistake your automated tests as a bot attack. Some remote APIs require setting up accounts, keys, login etc, that will irritate the testers of your product and give a low rating to the testability of your work.
 * Audio-related features: The peer testing of your product is done under exam conditions where it is not appropriate to play audio.
-* Features that require creating user accounts.
+* Features that require creating user accounts, login, logout etc.
 {%- endcall %}
 
 <span tags="m--cs2113">

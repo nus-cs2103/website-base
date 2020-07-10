@@ -33,11 +33,11 @@ Tutorials will be conducted using Zoom. More info coming soon.
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
 * The tutor will _facilitate_ tutorial activities, observe your progress, and give feedback. If you are facing difficulties with a weekly activity, the tutor can direct you to get help from another student in the tutorial.
 
+<!--
 * Please ==bring your laptop to tutorials.== You'll need it for tutorial tasks.
 
-<div class="indented-level2">
-{{ embed_topic("appendixC-faq.md#admin-faq-noLaptop", "Admin " + icon_embedding + " Appendix C(FAQ): What if I don't carry around a laptop?", "4") }}
-</div>
+{{ embed_topic("appendixC-faq.md#admin-faq-noLaptop", "Admin " + icon_embedding + " Appendix C(FAQ): What if I don't carry around a laptop?", "4", indent=2) }}
+-->
 
 <br/>
 
@@ -53,7 +53,7 @@ Tutorials will be conducted using Zoom. More info coming soon.
 
 <br/>
 
-* **No ‘teaching’**: Tutors are prohibited from “teaching” concepts that are covered in lectures or other learning resources given to you as self-learning is a vital part of the module. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. Of course tutors can help you clarify doubts under the right circumstances.
+* **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' on concepts that are covered in lectures or other learning resources given to you as self-learning is a vital part of the module. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. Of course tutors can help you clarify doubts under the right circumstances.
 
 <div class="indented-level2">
 {{ embed_topic("appendixD-help.md#questions-for-tutros", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable for tutor", "2") }}
@@ -61,7 +61,7 @@ Tutorials will be conducted using Zoom. More info coming soon.
 
 <br/>
 
-* **No leading from the front**: Tutors are not expected to lead your project effort. They will not tell you how to do project tasks or when to do project tasks. You have to figure those out yourselves. But tutors will give you feedback on how you are doing (or have done) project tasks so that you can improve further.   
+* **No leading from the front**: Tutors are not expected to lead your project effort. They will not tell you how or when to do project tasks. You have to figure those out yourselves. But tutors will give you feedback on how you are doing project tasks so that you can improve further.
 
 **Timing/venue:**
 

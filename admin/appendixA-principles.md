@@ -138,7 +138,7 @@ Ability to deliver in a way that shows how well you delivered (i.e. visibility o
 
 **We learn together, NOT compete against each other.**
 
-You are not in a competition. Our grading is not forced on a bell curve.
+You are not in a competition. Our ==grading is not forced on a bell curve==.
 
 Learn from each other. That is why we open-source your submissions.
 

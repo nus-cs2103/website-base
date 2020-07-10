@@ -201,7 +201,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 **Based on:** peer evaluations, tutor observations
 
 **Grading criteria:** Do these to earn full marks.
-* Do close to a fair share of the team tasks (you can earn bonus marks by doing more than your fair share).
+* Do close to an equal share of the team tasks (you can earn bonus marks by doing more than an equal share).
 * Merge code in at least four of weeks 7, 8, 9, 10, 11, 12
 
 </div>

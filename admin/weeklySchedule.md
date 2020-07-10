@@ -30,7 +30,7 @@ This module will be **fully-online** this semester. There is no need for on-camp
 
 ### The typical weekly cycle
 
-{{ icon_calendar }} **[{{ day_lecture }} (previous week)]**<br>
+{{ icon_calendar }} **[Lecture day({{ day_lecture }})]**<br>
 
 * Attend the lecture to, 
   * see a recap of the preceding week's topics
