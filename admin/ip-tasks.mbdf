@@ -72,6 +72,33 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 <p/>
 
 </span>
+{#====================================================================================================================
+ # CS2113 Weekly Intros
+ #====================================================================================================================#}
+<span id="cs2113-week2-intro">
+
+<include src="ip-tasks.mbdf#volatile-requirements" />
+<include src="ip-tasks.mbdf#no-jumping-ahead" />
+<include src="ip-tasks.mbdf#follow-instructions" />
+
+<box dismissible>
+
+**:fas-clock: Deadline:**
+
+Note the typical deadline weekly project tasks:
+{{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1") }}
+<p/>
+
+But ==as there are no tutorials this week, you have until {{ get_date(date_w2_start, 6) }}== to finish this week's iP tasks.
+</box>
+</span>
+<span id="cs2113-week3-intro">
+
+**:fas-clock: Reminder about the deadline for the weekly project tasks:**
+{{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent=1) }}
+<p/>
+
+</span>
 
 {#====================================================================================================================#}
 {# Steps
