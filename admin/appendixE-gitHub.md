@@ -71,7 +71,7 @@ After receiving your team ID, one team member should do the following steps:
 
 ****({{ icon_individual }}/%%{{ icon_team }}%%) Only one team member:****
 
-<box tags="m--cs2113" light type="important">
+<box tags="m--cs2113 m--tic4001" light type="important">
 
 The tP project template given to you is a variation of the iP repo you used for the iP, but ==with some important differences==. Please follow instructions carefully, rather than follow what you remember from the iP.
 
@@ -85,7 +85,7 @@ The tP project template given to you is a variation of the iP repo you used for 
 {% if module == "CS2103" %}
 1. **Set up the project website**<br>
    Follow instructions in the [_Documentation guide_ page]({{ url_ab3_fork_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/tp` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/tp`.
-{% elseif module == "CS2113" %}
+{% elseif module == "CS2113" or module == "TIC4001"%}
 1. **Enable GitHub Pages**: Go to the {{ show_as_rounded_tab(':octicon-gear: Settings') }} tab and enable `GitHub Pages` for the `master branch /docs folder` (similar to how you did it in the iP).<br>
    Remember to choose a theme too by clicking the {{ button('**Choose a theme**') }} button (that will create a commit in your repo that is needed in a later step.<br>
    After a few minutes, confirm your tP website is available in the corresponding `github.io` URL.
@@ -161,7 +161,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
    <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
 1. **Set up** the developer environment in your computer by following the
-   <span tags="m--cs2103">[_Setting up and getting started_ page]({{ url_ab3_fork_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113">the [README]({{url_module_org}}/tp) carefully as the ==steps are different from the iP==.</span>
+   <span tags="m--cs2103">[_Setting up and getting started_ page]({{ url_ab3_fork_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113 m--tic4001">the [README]({{url_module_org}}/tp) carefully as the ==steps are different from the iP==.</span>
 
 <box type="wrong" seamless>
 
@@ -213,7 +213,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
   {{ icon_pro_tip }} You can use GitHub's [_protected branches_](https://help.github.com/en/articles/about-protected-branches) feature to prevent CI-failing PRs from being merged.
 * **After merging a PR**, close the corresponding issue.<br>
   {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
-{% if module == "CS2113" %}
+{% if module == "CS2113" or module == "TIC4001" %}
 * **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
 {% endif %}
 

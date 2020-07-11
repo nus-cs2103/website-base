@@ -18,7 +18,7 @@ Accordingly, the tP is structured to resemble an intermediate stage of a non-tri
  1. conceptualize and implement enhancements to a given product, and,
  1. have it ready to be continued by future developers
 </div>
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 Accordingly, the tP is structured to resemble an early stage of a small software project in which you will,
  1. conceptualize and implement a product, and,
@@ -54,7 +54,7 @@ You may develop any product provided it is meant for users who can type fast, an
 
 <div id="examples" hidden>
 
-  For example, an app to manage one of these:{% if module == "CS2113" %}
+  For example, an app to manage one of these:{% if module == "CS2113" or module == "TIC4001" %}
     * Contact details{% endif %}
     * Bookmarks of websites
     * Tasks/Schedule
@@ -91,13 +91,13 @@ You may develop any product provided it is meant for users who can type fast, an
 
 ==Weigh the pros/cons and choose the one that suits you.==
 </div>
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 * <include src="tp-expectations.md#examples" trim inline />
 </div>
 </span>
 
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 ==You are strongly discouraged from developing a GUI application== as it can increase the workload unnecessarily.
 {{ embed_topic("tp-constraints.md#Recommendation-No-GUI", "Admin " + icon_embedding + " tP Contstraints → Recommendation-No-GUI", "2", indent="1") }}
@@ -144,7 +144,7 @@ You are expected to:
   * Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.
   * In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a 4-5 FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.
 </div>
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 **The expected level of _functionality_ from a team is roughly ==what you can achieve if each member contribute about the same amount of functional code as required by a <tooltip content="i.e., if all requirements were met at the _minimal_ level specified">typical iP</tooltip>==**.
 </div>
@@ -162,7 +162,7 @@ You are expected to:
 
 One semester ago, we reduced the tP functionality expectations by about 40-50% compared to the previous semesters, in order to reduce your workload. Keep that in mind in case you receive advice about project from seniors who did this module more than one semester ago.
 
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 In fact, here is the grading criterion for the individual project effort:
 {{ embed_topic("tp-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP → PE → ==Evaluating the  Implementation Effort==", "3") }}
@@ -299,7 +299,7 @@ This is a non-exhaustive list; you may define additional roles.
 
 * _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in {{ version_penultimate }}-{{ version_final }}.
 </div>
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 * _In charge of[Area XYZ]_ of the code: %%e.g. In charge of the code that deals with storage, etc.%% If you are in charge of an area, you are expected to know that area well, and review changes done to that code.
 </div>

@@ -25,7 +25,7 @@ See the sections below for details of how we assess each aspect.
 
 In addition, feature flaws reported in the PE will be considered when grading this aspect.
 
-<box tags="m--cs2113" type="tip">
+<box tags="m--cs2113 m--tic4001" type="tip">
 
 Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, ==the bar you need to reach to get full 5 marks will be quite low==. For example, the `Medium` level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of _excessive_ 'feature flaw' bugs will affect the score.
 </box>
@@ -83,7 +83,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 * Baseline: If your team received a value higher than `10` in step 1 and the team agrees that you did roughly an equal share of implementation work, you should receive full marks for effort.
 </div>
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 * This is evaluated by peers who tested your product, and tutors.
 
@@ -185,7 +185,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 * Good task definition, assignment and tracking, based on the issue tracker
 * Good use of buffers %%(opposite: everything at the last minute)%%
 </div>
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 * No <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at {{ version_first }} and {{ version_penultimate }}.
 * Good attempt to use of at least _some_ Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)

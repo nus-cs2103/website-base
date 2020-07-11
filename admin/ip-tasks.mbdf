@@ -121,7 +121,7 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span tags="m--cs2113" id="extra_Level-0">
+<span tags="m--cs2113 m--tic4001" id="extra_Level-0">
 <include src="ip-tasks.mbdf#commit" />
 </span>
 <span id="extra_Level-1">
@@ -177,7 +177,7 @@ Resources:
 </span>
 {#====================================================================================================================#}
 <span id="extra_Level-5">
-<span tags="m--cs2113">>
+<span tags="m--cs2113 m--tic4001">>
 * Use git branches in your work, as explained below:
   * Do the increment Level-5 as a separate branch named `branch-Level-5`. You are recommended to have multiple commits in that branch.
   * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
@@ -186,7 +186,7 @@ Resources:
 </span>
 </span>
 <span id="extra_A-Packages">
-<span tags="m--cs2113">
+<span tags="m--cs2113 m--tic4001">
 
 * Recommended: if you are new to git, do this as a separate branch too (for additional practice), similar to how you did `Level-5` (branch name `branch-A-Packages`).
 </span>
@@ -221,7 +221,7 @@ Resources:
 </span>
 </span>
 <span id="extra_A-Jar">
-<span tags="m--cs2113">
+<span tags="m--cs2113 m--tic4001">
 
 * In case this increment does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already).
 * Upload the jar file to your fork as explained in the panel below. ==You can ignore the point about using Gradle==.

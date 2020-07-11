@@ -134,7 +134,7 @@ For reference, the AB3 DG is [here]({{ url_ab3_upstream_website }}/DeveloperGuid
 * ==Consider implementation work only (i.e., exclude testing, documentation, project management etc.)==
 * Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
 </div>
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 {{ icon_green_Q }} **[For each member] The functional code contributed by the person is,**<br>
 ==Consider implementation work only (i.e., exclude testing, documentation, project management etc.)==<br>

@@ -513,7 +513,7 @@ How is that better?
 * The product must be working although the functionality is basic.
 
 </div>
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 * When the {{ version_first }} is ready, do a release on GitHub. Remember to upload the jar file as well.
 * Wrap up the milestone on GitHub.
@@ -596,7 +596,7 @@ In addition,
 
 * **Update the Developer Guide** as follows:
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
-    Expected length: 1+ page per person{% if module == "CS2113" %}
+    Expected length: 1+ page per person{% if module == "CS2113" or module == "TIC4001" %}
   * Describing the design at a multiple-levels (e.g., first, describe at _architecture-level_, then describe at _component-level_) is optional. It is also acceptable to have one _Design & Implementation_ section in which you describe the entire thing at the class- and object-level.{% endif %}
   * The description can contain things such as,
     * How the feature is implemented (or is going to be implemented).

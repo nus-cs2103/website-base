@@ -17,14 +17,21 @@ This module will be **fully-online** this semester. There is no need for on-camp
 
 ### {{ module_pair }} week vs normal academic week
 
-**Each {{ module_pair }} week starts with the lecture** and end just before the following week's lecture. The only exception is week 1, which starts on the Monday of the first week of the semester. <div tags="m--cs2103 m--cs2113">As our lecture is on {{ day_lecture }}, =={{ module_pair }} week starts a few days earlier than the normal NUS academic week==. For example, {{ module_pair }} week 2 starts on the {{ day_lecture }} of NUS week 1.</div>
+**Each {{ module_pair }} week starts with the lecture** and end just before the following week's lecture. The only exception is week 1, which starts on the Monday of the first week of the semester. <div tags="m--cs2103 m--cs2113 m--tic4001">As our lecture is on {{ day_lecture }}, =={{ module_pair }} week starts a few days earlier than the normal NUS academic week==. For example, {{ module_pair }} week 2 starts on the {{ day_lecture }} of NUS week 1.</div>
 </div>
 <p/>
 <div tags="m--cs2103 m--cs2113" id="deadline-definition">
 
 ### Deadline for weekly tasks
 
+<div tags="m--cs2103 m--cs2113">
+
 **The deadline to complete tasks allocated to the week** is the <tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>, unless stated otherwise. Our scripts that detect your work run at midnight and only the work that's done by midnight will be eligible for marks (for cases where the task is graded).
+</div>
+<div tags="m--tic4001">
+
+**The deadline to complete tasks allocated to the week** is the midnight before the following lecture.
+</div>
 </div>
 
 
@@ -49,7 +56,7 @@ This module will be **fully-online** this semester. There is no need for on-camp
  * ==Do project tasks== %%(e.g., attend weekly project meeting, finish weekly deliverables)%%
  * If you don't have time to learn all topics assigned to the week, use the star rating system to decide which ones to do first.
 
-<div tags="m--cs2103 m--cs2113 m--tic2002">
+<div tags="m--cs2103 m--cs2113 m--tic4001 m--tic2002">
 <box type="warning">
 
 <span id="before-attempting-tasks">

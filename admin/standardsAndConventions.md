@@ -15,7 +15,7 @@ Given below are the standards and conventions to follow in this module.
 
 </span>
 
-<span tags="m--cs2113 m--tic2002">
+<span tags="m--cs2113 m--tic4001 m--tic2002">
 
 ##### Java
 
@@ -23,7 +23,7 @@ Given below are the standards and conventions to follow in this module.
 * {{ optional }} Follow [intermediate and advanced rules](https://se-education.org/guides/conventions/java/index.html).
 
 </span>
-<span tags="m--cs2103 m--cs2113">
+<span tags="m--cs2103 m--cs2113 m--tic4001">
 
 ##### Git
 
@@ -31,14 +31,14 @@ Given below are the standards and conventions to follow in this module.
 * {{ optional }} Follow conventions for the commit message body.
 
 </span>
-<span tags="m--cs2103 m--cs2113">
+<span tags="m--cs2103 m--cs2113 m--tic4001">
 
 ##### Markdown
 
 * {{ optional }}  Follow [Markdown style guide at SE-EDU](https://se-education.org/guides/conventions/markdown.html).
 
 </span>
-<span tags="m--cs2103 m--cs2113">
+<span tags="m--cs2103 m--cs2113 m--tic4001">
 
 ##### Documentation
 

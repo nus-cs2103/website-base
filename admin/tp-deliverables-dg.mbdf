@@ -2,7 +2,7 @@
   If you use PlantUML diagrams, commit the diagrams as `.puml` files in the `docs/diagrams` folder.
 * **Should match the {{ version_final }} implementation**.
 
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 * **Follow the [AddressBook-Level3 (AB3) DG]({{ url_ab3_fork_website }}/DeveloperGuide.html) structure**. Sections to include in your DG:
   * Design: similar to AB3 DG except,

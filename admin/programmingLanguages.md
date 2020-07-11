@@ -35,7 +35,7 @@ We require you to use **Java 11** (the Oracle version or the OpenJDK version) fo
     
 Some module activities will require you to follow [this Java coding standard]({{url_java_coding_standard}}).
 
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--tic4001">
 
 **Follow ==basic== guidelines** (those marked as :star:) in those cases; intermediate and advanced guidelines are optional.
 </div>
