@@ -1,0 +1,34 @@
+{% set weekly_admin_topics = {
+week1: [
+  {faq_id: "admin-faq-whereIsEverything"},
+  {topic_id: "tp-teams"},
+  {topic_id: "textbooks"},
+  {topic_id: "gradeBreakdown"},
+  {topic_id: "participation"}],
+week2: [
+  {policy_id: "policy-plagiarism"},
+  {policy_id: "policy-reuse"},
+  {policy_id: "policy-outsiderHelp"},
+  {policy_id: "policy-followingInstructions"},
+  {policy_id: "policy-techHelp"},
+  {faq_id: "admin-faq-selfStudy"}],
+week3: [
+  {topic_id: "peerEvaluations"},
+  {topic_id: "standardsAndConventions"},
+  {topic_id: "tp-supervision"},
+  {policy_id: "policy-teamSize"}],
+week4: [
+  {policy_id: "policy-publishingSubmissions"}],
+week5: [
+  {topic_id: "tp-grading"},
+  {policy_id: "policy-workDistribution"}],
+week6: [
+  {topic_id: "appendixF-teamworkIssues"}],
+week7: [],
+week8: [],
+week9: [],
+week10: [],
+week11: [],
+week12: [],
+week13: []
+}%}

@@ -4,7 +4,7 @@
 <div id="main">
 
 <include src="weeklySchedule.md#fully-online" />
-
+<!-- =============================================================================== -->
 <span tags="m--cs2103">
 <big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big>
 
@@ -52,7 +52,9 @@ Testing | <tooltip content="e.g., automated unit/integration/system testing">bas
 Applications domains | Cross-platform desktop applications | Web programming, Mobile programming, Database programming
 
 <br>
+<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
 </span>
+<!-- =============================================================================== -->
 <span tags="m--cs2113">
 
 <big><p class="lead text-secondary">An iterative introduction to Software Engineering...</p></big>
@@ -64,9 +66,15 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 * **The theory side** of this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
 
 * **On the practice side**, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project in which you will build another small <tooltip content="Comman Line Interface">CLI</tooltip> app while working as a team.
-</span>
 
 <panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
+</span>
+<!-- =============================================================================== -->
+<span tags="m--tic4001">
+Module overview goes here
+</span>
+
+
 
 </div>
 

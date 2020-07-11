@@ -26,7 +26,7 @@ pageNav: 3
 {% for week_num in range(1, 14) %}
 {% set start_day = get_week_start_date(week_num, format_normal) %}
 
-<div tags="m--cs2103 m--cs2113">
+<div tags="m--cs2103 m--cs2113 m--tic4001">
 
 ### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ start_day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_project, "project.html") }}{{ show_link(week_num, icon_tutorial, "tutorial.html") }}{{ show_link(week_num, icon_info, "admin.html") }}
 

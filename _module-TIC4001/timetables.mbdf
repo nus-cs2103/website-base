@@ -1,0 +1,26 @@
+<span id="lectures-s1">
+{{ module }}   | LT19             | **1600**-1800
+{{ module }}/T | LT19             | **1600**-1800
+</span>
+
+<span id="lectures-s2">
+{{ module }}/T | ICube Auditorium | **1400**-1600
+</span>
+
+<span id="tutorials-s1">
+{{ MT | safe }} | x | - | - | - | -
+{{ MT | safe }} | y | - | - | - | -
+{{ M | safe }} | z | - | - | - | -
+</span>
+
+<span id="tutorials-s2">
+{{ MT | safe }} | COM1-B103[^1] | **M**on  **16**:00 | ~~%%LC03%%~~ | **`CS2113T-M16`**| Damith
+{{ MT | safe }} | ~~COM1-B103~~  | ~~**M**on  **17**:00~~ | ~~%%LC04%%~~ | ~~**`CS2113T-M17`**~~| ~~TBD~~
+ | | | | |
+{{ MT | safe }} | COM1-B103 | **T**ue  **12**:00 | ~~%%LC01%%~~ | **`CS2113T-T12`**| Ryan, Wei Xiang
+{{ MT | safe }} | COM1-B103 | **T**ue  **13**:00 | ~~%%LC02%%~~ | **`CS2113T-T13`**| Tejas, Wei Xiang
+{{ M | safe }}  | COM1-B103 | **T**ue  **14**:00 | ~~%%T01%%~~  | **`CS2113-T14`** | Glen, Rachel
+{{ M | safe }}  | COM1-B103 | **T**ue  **15**:00 | ~~%%T02%%~~  | **`CS2113-T15`** | Jerry, Manaswini
+
+[^1]: COM1-B103 is also known as the _Active Learning Lab_
+</span>
