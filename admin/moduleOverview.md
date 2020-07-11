@@ -71,7 +71,7 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 </span>
 <!-- =============================================================================== -->
 <span tags="m--tic4001">
-Module overview goes here
+Module overview goes here {to be elaborated}
 </span>
 
 

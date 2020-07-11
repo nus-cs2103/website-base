@@ -20,7 +20,7 @@ This module will be **fully-online** this semester. There is no need for on-camp
 **Each {{ module_pair }} week starts with the lecture** and end just before the following week's lecture. The only exception is week 1, which starts on the Monday of the first week of the semester. <div tags="m--cs2103 m--cs2113 m--tic4001">As our lecture is on {{ day_lecture }}, =={{ module_pair }} week starts a few days earlier than the normal NUS academic week==. For example, {{ module_pair }} week 2 starts on the {{ day_lecture }} of NUS week 1.</div>
 </div>
 <p/>
-<div tags="m--cs2103 m--cs2113" id="deadline-definition">
+<div tags="m--cs2103 m--cs2113 m--tic4001" id="deadline-definition">
 
 ### Deadline for weekly tasks
 
@@ -34,10 +34,11 @@ This module will be **fully-online** this semester. There is no need for on-camp
 </div>
 </div>
 
+<div tags="m--cs2103 m--cs2113">
 
 ### The typical weekly cycle
 
-{{ icon_calendar }} **[Lecture day({{ day_lecture }})]**<br>
+{{ icon_calendar }} **[Lecture day ({{ day_lecture }})]**<br>
 
 * Attend the lecture to, 
   * see a recap of the preceding week's topics
@@ -56,7 +57,7 @@ This module will be **fully-online** this semester. There is no need for on-camp
  * ==Do project tasks== %%(e.g., attend weekly project meeting, finish weekly deliverables)%%
  * If you don't have time to learn all topics assigned to the week, use the star rating system to decide which ones to do first.
 
-<div tags="m--cs2103 m--cs2113 m--tic4001 m--tic2002">
+<div tags="m--cs2103 m--cs2113 m--tic2002">
 <box type="warning">
 
 <span id="before-attempting-tasks">
@@ -82,6 +83,7 @@ This module will be **fully-online** this semester. There is no need for on-camp
 
 * Downtime (or catch-up with missed tasks)
 
+</div>
 
 </div>
 

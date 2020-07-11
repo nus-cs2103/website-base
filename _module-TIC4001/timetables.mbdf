@@ -1,26 +1,12 @@
 <span id="lectures-s1">
-{{ module }}   | LT19             | **1600**-1800
-{{ module }}/T | LT19             | **1600**-1800
+
+As this is a 100% project module, the lecture+tutorial slot will be repurposed as follows.
+
+* {{ day_lecture }} 6.00pm-9.30pm
+  * 6-7pm: No formal activities. Work with team members and consult instructors if you need help with the previous week's tasks.
+  * 7-7.30pm: Weekly briefing.
+  * 7-30-9.30pm: Do the lecture activities (if any) or work with team members to do weekly project activities. The tutor will observe or get involved in your team's work as necessary. You may approach instructors for help during this period.
 </span>
 
 <span id="lectures-s2">
-{{ module }}/T | ICube Auditorium | **1400**-1600
-</span>
-
-<span id="tutorials-s1">
-{{ MT | safe }} | x | - | - | - | -
-{{ MT | safe }} | y | - | - | - | -
-{{ M | safe }} | z | - | - | - | -
-</span>
-
-<span id="tutorials-s2">
-{{ MT | safe }} | COM1-B103[^1] | **M**on  **16**:00 | ~~%%LC03%%~~ | **`CS2113T-M16`**| Damith
-{{ MT | safe }} | ~~COM1-B103~~  | ~~**M**on  **17**:00~~ | ~~%%LC04%%~~ | ~~**`CS2113T-M17`**~~| ~~TBD~~
- | | | | |
-{{ MT | safe }} | COM1-B103 | **T**ue  **12**:00 | ~~%%LC01%%~~ | **`CS2113T-T12`**| Ryan, Wei Xiang
-{{ MT | safe }} | COM1-B103 | **T**ue  **13**:00 | ~~%%LC02%%~~ | **`CS2113T-T13`**| Tejas, Wei Xiang
-{{ M | safe }}  | COM1-B103 | **T**ue  **14**:00 | ~~%%T01%%~~  | **`CS2113-T14`** | Glen, Rachel
-{{ M | safe }}  | COM1-B103 | **T**ue  **15**:00 | ~~%%T02%%~~  | **`CS2113-T15`** | Jerry, Manaswini
-
-[^1]: COM1-B103 is also known as the _Active Learning Lab_
 </span>

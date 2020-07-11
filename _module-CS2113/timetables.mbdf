@@ -1,9 +1,13 @@
 <span id="lectures-s1">
+ Module                 | Venue    | Time
+---------------------- | -------- | ----
 {{ module }}   | LT19             | **1600**-1800
 {{ module }}/T | LT19             | **1600**-1800
 </span>
 
 <span id="lectures-s2">
+ Module                 | Venue    | Time
+---------------------- | -------- | ----
 {{ module }}/T | ICube Auditorium | **1400**-1600
 </span>
 
