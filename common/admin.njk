@@ -80,8 +80,7 @@ pageNav: 4
   {level: 1, id: "moduleExpectations", title: "Module Expectations", link: "moduleExpectations.html", priority: 2},
   {level: 0, id: "moduleStructure", title: "Module Structure"},
     {level: 2, id: "weeklySchedule", title: "Weekly Schedule", link: "weeklySchedule.html", priority: 3},
-    {level: 2, id: "lectures", title: "Lectures", link: "lectures.html", priority: 3},
-    {level: 2, id: "tutorials", title: "Tutorials", link: "tutorials.html", priority: 2},
+    {level: 2, id: "lectures", title: "Lectures/Tutorials", link: "lectures.html", priority: 3},
   {level: 1, id: "instructors", title: "Instructors", link: "instructors.html", priority: 4},
   {level: 1, id: "textbooks", title: "Textbooks", link: "textbooks.html", priority: 2},
   {level: 1, id: "programmingLanguages", title: "Programming Language", link: "programmingLanguages.html", priority: 2},
@@ -94,7 +93,6 @@ pageNav: 4
     {level: 2, id: "ip-w5", title: "iP: Week 5", link: "ip-w5.html", priority: 2},
     {level: 2, id: "ip-w6", title: "iP: Week 6", link: "ip-w6.html", priority: 1},
     {level: 2, id: "ip-w7", title: "iP: Week 7", link: "ip-w7.html", priority: (4 if module == "CS2103" else 1)},
-    {level: 2, id: "ip-w8", title: "iP: Week 8", link: "ip-w8.html", priority: 1},
     {level: 2, id: "ip-grading", title: "iP: Grading", link: "ip-grading.html", priority: 2},
   {level: -1, id: "project", title: "Team Project (tP)"},
     {level: 2, id: "tp-expectations", title: "tP (team project): Expectations", link: "tp-expectations.html", priority: 2},
@@ -113,12 +111,10 @@ pageNav: 4
     {level: 2, id: "tp-w12", title: "tP week 12: " + weekly_tp_themes.w12.name, link: "tp-w12.html", priority: 3},
     {level: 2, id: "tp-w13", title: "tP week 13: " + weekly_tp_themes.w13.name, link: "tp-w13.html", priority: 2},
     {level: 2, id: "tp-deliverables", title: "tP: Deliverables", link: "tp-deliverables.html", priority: 2},
-    {level: 2, id: "tp-pe", title: "tP: Practical Exam", link: "tp-pe.html", priority: 2},
     {level: 2, id: "tp-grading", title: "tP: Grading", link: "tp-grading.html", priority: 2},
     {level: 2, id: "tp-supervision", title: "tP: Supervision", link: "tp-supervision.html", priority: 2},
   {level: 1, id: "peerEvaluations", title: "Peer Evaluations", link: "peerEvaluations.html", priority: 2},
   {level: 1, id: "tools", title: "Tools", link: "tools.html", priority: 3},
-  {level: 1, id: "exams", title: "Exams", link: "exams.html", priority: 2},
   {level: 1, id: "participation", title: "Participation Marks", link: "participation.html", priority: 2},
   {level: 1, id: "gradeBreakdown", title: "Grade Breakdown", link: "gradeBreakdown.html", priority: 2},
   {level: 0, id: "appendices", title: "Appendices"},
@@ -132,18 +128,9 @@ pageNav: 4
 
 {% set faqs = [
   {id: "admin-faq-whereIsEverything", title: "Where is everything?", priority: 1},
-  {id: "admin-faq-tVsNonT", title: "What are the differences between " + module + "T and " + module + "?", priority: 4},
-  {id: "admin-faq-highWorkload", title: "Why the workload is so high?", priority: 4},
-  {id: "admin-faq-aPlus", title: "What are the extra requirements to get an A+?", priority: 3},
-  {id: "admin-faq-beanCounting", title: "Why so much bean counting?", priority: 4},
-  {id: "admin-faq-separateWebsite", title: "Why use a separate website instead of LumiNUS?", priority: 4},
-  {id: "admin-faq-slideFormat", title: "Why slides are not detailed?", priority: 4},
   {id: "admin-faq-selfStudy", title: "Why so much self-study?", priority: 4},
-  {id: "admin-faq-noLaptop", title: "What if I don’t carry around a laptop?", priority: 4},
   {id: "admin-faq-narrowScope", title: "Why very narrow project scope?", priority: 4},
-  {id: "admin-faq-favoriteTool", title: "Why can't I use my favorite tool/framework/language etc.?", priority: 4},
-  {id: "admin-faq-manySubmissions", title: "Why so many submissions?", priority: 4},
-  {id: "admin-faq-cs2101Differences", title: "Why submission requirements differ between " + module + "T and CS2101?", priority: 4}
+  {id: "admin-faq-manySubmissions", title: "Why so many submissions?", priority: 4}
 ]%}
 
 {% set policies = [
