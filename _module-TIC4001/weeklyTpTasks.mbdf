@@ -2,7 +2,7 @@
 
 {% set weekly_tp_tasks = {
 week3: [
-  {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'}
+  {id: 'set_up_meeting_time', deadline: 'by the end of the lecture'}
 ],
 week4: [
   {id: 'start_weekly_meetings'},
@@ -31,7 +31,7 @@ week8: [
 week9: [
   {id: 'make_code_more_defensive'},
   {id: 'deliver_first_version', deadline: 'midnight before next lecture'},
-  {id: 'do_an_informal_demo', deadline: 'during the tutorial', deadline_type: "info"}
+  {id: 'do_an_informal_demo', deadline: 'during the lecture', deadline_type: "info"}
 ],
 week10: [
   {id: 'start_on_the_penultimate_version'},
@@ -41,19 +41,15 @@ week10: [
 week11: [
   {id: 'update_user_docs'},
   {id: 'add_sd_to_dg'},
-  {id: 'deliver_penultimate_version', deadline: 'midnight before next lecture'},
-  {id: 'attend_the_PED', deadline: 'During the lecture'}
+  {id: 'deliver_penultimate_version', deadline: 'midnight before next lecture'}
 ],
 week12: [
-  {id: 'tweak_product_as_per_PED'},
   {id: 'draft_the_ppp'},
   {id: 'double_check_reposense_compatibility'}
 ],
 week13: [
-  {id: 'submit_final_deliverables', deadline: 'by Saturday 11th Apr 23.59'},
-  {id: 'demo_the_product', deadline: 'by Monday 13th Apr 23.59'},
-  {id: 'prepare_for_PE', deadline: 'before the lecture', deadline_type: "info"},
-  {id: 'attend_the_PE', deadline: 'during the lecture'}
+  {id: 'submit_final_deliverables', deadline: get_date(date_w13_start, 10)},
+  {id: 'demo_the_product', deadline: get_date(date_w13_start, 12)}
 ]
 } %}
 

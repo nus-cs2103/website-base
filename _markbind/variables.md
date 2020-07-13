@@ -49,6 +49,8 @@
 <variable name="marks_tp_pm_individual">5</variable>
 <variable name="marks_tp_pm_team">5</variable>
 <variable name="marks_tp_qa">10</variable>
+<variable name="marks_tp_individual">35</variable>
+<variable name="marks_tp_team">10</variable>
 <variable name="marks_participation">5</variable>
 <variable name="marks_exam">30</variable>
 <variable name="marks_exam_essay">0</variable>

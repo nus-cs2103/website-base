@@ -4,9 +4,12 @@
 {% call show_admin_page("tp-grading") %}
 <div id="main">
 
-Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. Given below is the marking scheme.
+<div tags="m--cs2113 m--cs2103">
 
-**Total**: {{ marks_tp }} marks ({{ icon_individual }} 35 individual marks + {{ icon_team }} 10 team marks)
+Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. Given below is the marking scheme.
+</div>
+
+**Total**: {{ marks_tp }} marks ({{ icon_individual }} {{ marks_tp_individual }} individual marks + {{ icon_team }} {{ marks_tp_team }} team marks)
 
 See the sections below for details of how we assess each aspect.
 
@@ -16,6 +19,8 @@ See the sections below for details of how we assess each aspect.
 #### <div class="bg-warning p-1">1. Project Grading: Product Design %%[{{ icon_team }}/{{ icon_individual }} {{ marks_tp_design }} marks]%%</div>
 
 **Evaluates:** how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user
+
+<div tags="m--cs2113 m--cs2103">
 
 **Evaluated by:**
 * tutors (based on product demo and user guide)
@@ -27,12 +32,19 @@ In addition, feature flaws reported in the PE will be considered when grading th
 
 <box tags="m--cs2113 m--tic4001" type="tip">
 
-Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, ==the bar you need to reach to get full 5 marks will be quite low==. For example, the `Medium` level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of _excessive_ 'feature flaw' bugs will affect the score.
+Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, ==the bar you need to reach to get full marks will be quite low==. For example, the `Medium` level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of _excessive_ 'feature flaw' bugs will affect the score.
 </box>
 
 <box>
 <include src="tp-grading-bugs.mbdf#featureFlaws" />
 </box>
+</div>
+<div tags="m--tic4001">
+
+**Evaluated by** tutors
+
+**Based on** the product features.
+</div>
 </div>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
@@ -83,7 +95,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 * Baseline: If your team received a value higher than `10` in step 1 and the team agrees that you did roughly an equal share of implementation work, you should receive full marks for effort.
 </div>
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 * This is evaluated by peers who tested your product, and tutors.
 
@@ -93,11 +105,19 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 {{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
 </div>
+<div tags="m--tic4001">
+
+* This is evaluated by tutors.
+* The score could be further moderated by this question answered by team members.
+
+{{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
+</div>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
 #### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_individual }} {{ marks_tp_qa }} marks]%%</div>
 
+<div tags="m--cs2113 m--cs2103">
 
 <big>**3A. Developer Testing:**</big>
 
@@ -125,11 +145,19 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 <box>
 <include src="tp-grading-bugs.mbdf#bugCalculationNotes" />
 </box>
+</div>
+<div tags="m--tic4001">
 
+**Evaluated by** tutors.
+
+**Based on** the robustness of your product, and the quality of test cases.
+</div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-documentation">
 
 #### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
+
+<div tags="m--cs2113 m--cs2103">
 
 **Evaluates:** your contribution to project documents
 
@@ -157,7 +185,13 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 <include src="tp-grading-bugs.mbdf#dgBugs" />
 </box>
 </div>
+</div>
+<div tags="m--tic4001">
 
+**Evaluated by** tutors
+
+**Based on** the quality of your UG and DG.
+</div>
 </div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
@@ -187,7 +221,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 </div>
 <div tags="m--cs2113 m--tic4001">
 
-* No <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at {{ version_first }} and {{ version_penultimate }}.
+* No <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at {{ version_first }}, {{ version_penultimate }}, and {{ version_final }} milestone deadlines.
 * Good attempt to use of at least _some_ Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)
 </div>
 

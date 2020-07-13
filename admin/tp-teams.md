@@ -12,7 +12,7 @@
 
 {% set session = "lecture" if module == "TIC4001" else "tutorial" %}
 {% if module != "TIC4001" %}* {{ module }}T: Your team will be formed by the CS2101 side.{% endif %}
-* {{ module }}: Your team will be formed at the _start_ of the week 3 {{ session }}. Please try to be present at the start of that {{ session }}; if you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
+* {{ (module + ":") if module != "TIC4001" else "" }} Team forming will be done at the _start_ of the week 3 {{ session }}. If you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
 
 #### Team size
 
@@ -21,7 +21,7 @@
 #### Team composition
 
 {% if module == "TIC4001" %}
-* **If can either form teams yourselves or let us put you in teams.**
+* **You can either form teams yourselves or let us put you in teams.**
 {% else %}
 * We allow some freedom in choosing team members, subject to these constraints:
   * **All team members should be in the same tutorial.** ==Delay forming teams until your place in a tutorial is confirmed.== We do not allow changing tutorials to team up with your preferred team mates.

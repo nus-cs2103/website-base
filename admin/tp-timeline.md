@@ -13,7 +13,7 @@
   w7: weekly_tp_themes.w7.name,
   iter1: "Iteration 1 (W8-W9)",
   iter2: "Iteration 2 (W10-W11)",
-  iter3: "Iteration 3 (W12)"
+  iter3: "Iteration 3 " + ("(W12-W13)" if module == "TIC4001" else "(W12)")
 }%}
 
 
@@ -37,7 +37,7 @@ then [{{ g.w7 }}] lasts 4 days and starts 4 days after [{{ g.w6 }}]'s end
 [{{ version_first }}] happens at [{{ g.iter1 }}]'s end
 then [{{ g.iter2 }}] lasts 14 days
 [{{ version_penultimate }}] happens at [{{ g.iter2 }}]'s end
-then [{{ g.iter3 }}] lasts 7 days
+then [{{ g.iter3 }}] lasts {{ "14" if module == "TIC4001" else "7" }} days
 [{{ version_final }}] happens at [{{ g.iter3 }}]'s end
 @endgantt
 </puml>
@@ -100,20 +100,34 @@ The first half of the tP is light because you will be doing the iP in parallel d
 
 #### {{ badge("W10")}} {{ badge("W11")}} Iteration 2 → {{ version_penultimate }}
 
+<div tags="m--cs2113 m--cs2103">
+
 * This version will be tested by peers and you will receive the bug reports without any penalty.
 * Aim to **deliver all <tooltip content="i.e., all features you plan to deliver in this project at the end of the semester">target features</tooltip>** so that you can get them tested for free.
+</div>
+<div tags="m--tic4001">
+
+* Aim to **deliver almost all <tooltip content="i.e., all features you plan to deliver in this project at the end of the semester">target features</tooltip>** because there will be additional documentation work to be done in the next iteration.
+</div>
 
 
-#### {{ badge("W12")}} Iteration 3 → {{ version_final }}
+#### {{ badge("W12")}} {{ badge("W13") if module == "TIC4001" else "" }} Iteration 3 → {{ version_final }}
 
+<div tags="m--cs2113 m--cs2103">
 * This iteration is <span class="text-danger">shorter</span> (slightly more than one week).
 * Plan to use this **for bug fixing and polishing up documentation**.
+</div>
+<div tags="m--tic4001">
+
+* Do final fine tuning to features.
+* Add documentation.
+</div>
 
 </div>
 
-**The final submission** will be in week early week 13. [Deliverables](tp-deliverables.html) include an executable jar file, a product website (containing both user and developer documentation), a demo video, among other things.
+**The final submission** will be at the {{ "end" if module == "TIC4001" else "start" }} of week 13. [Deliverables](tp-deliverables.html) include an executable jar file, a product website (containing both user and developer documentation), a demo video, among other things.
 
-<div class="indented-level2">
+<div class="indented-level2" tags="m--cs2113 m--cs2103">
 
 #### {{ badge("W13")}} Evaluation
 

@@ -35,6 +35,22 @@
   * Compulsory administrative tasks %%e.g., submitting peer evaluations%%: 2 for each task
 </div>
 
+<div tags="m--tic4001">
+
+  * Weekly quiz(es):
+    * Quizzes open around the lecture time and stay open until the next lecture starts.
+    * When awarding participation points for quizzes, we look for two conditions:
+      * Condition 1: submitted **__early__** i.e., within four days of the lecture i.e., lecture day + three more days %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
+      * Condition 2: answered **__correctly__** i.e., least 70% of the answers are correct %%(reason: to discourage random answers)%%
+    * You earn:
+      * 3 points if you satisfy both conditions.
+      * 2 points if only one of the conditions is satisfied.
+      * 1 point if submitted but both conditions are not satisfied.
+  * Other weekly activities:
+    * There could be other activities related to the lecture, or the administration of the module.
+    * Refer the activity description for evaluation criteria.
+</div>
+
 <div class="indented">
 
 <span tags="m--cs2113">
@@ -76,12 +92,13 @@ In addition, you can receive bonus marks in the following ways. Bonus marks can 
 </panel>
 <p/>
 
-
+{% if marks_participation == "5" %}
 {{ thumb("Examples:", "secondary") }}
 
 * Alicia earned 1/2, 3/5, ++2/5++, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 4/5, 5/5 in the first 12 weeks. As she received at least half of the points in 11 of the weeks, she gets 5 participation marks. Bonus marks are not applicable as she has full marks already.
 * Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he participated in 10 lectures, and hence get a bonus mark to make it 5/5.
 * Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.
+{% endif %}
 
 <panel type="info" header="##### Where to find your participation marks progress" expanded no-close no-switch >
 

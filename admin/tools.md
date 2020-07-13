@@ -131,7 +131,7 @@ We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation s
 <box>
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
-When the first feedback session is opne on TEAMMATES, you will receive an eamil from TEAMMATES. There is nothing for you to do until then.
+When the first feedback session is open on TEAMMATES, you will receive an eamil from TEAMMATES. There is nothing for you to do until then.
 
 When you do receive that email, it will contain a unique link that you can use to access TEAMMATES without logging in first. Logging in to TEAMMATES using a Google account is optional (but doing so will allow you to see all your TEAMMATES sessions in one page).
 </box>

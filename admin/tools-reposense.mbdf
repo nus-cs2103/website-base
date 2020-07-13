@@ -30,7 +30,7 @@ We will be using a tool called [RepoSense](http://reposense.org) to make it **ea
 </panel>
 </div>
 
-* For neither of the above two works, please please post in the [forum]({{ url_forum }}) or concat us via `{{ module | lower }}@comp.nus.edu.sg` so that we can advise you what to do.
+* For neither of the above two works, please please post in the [forum]({{ url_forum }}) or contact us via `{{ module | lower }}@comp.nus.edu.sg` so that we can advise you what to do.
 
 
 ==**We recommend you ensure your code is RepoSense-compatible by {{ version_penultimate }}**==

@@ -54,7 +54,7 @@ Please follow the organization/repo name format precisely or else our grading sc
 
 After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
-  * **Organization name** ==(all UPPER CASE) : `{{ semester }}-TEAM_ID`==. e.g.  `{{ semester }}-{{ module }}T-W12-1`, `{{ semester }}-{{ module }}-F09-3`
+  * **Organization name** ==(all UPPER CASE) : `{{ semester }}-TEAM_ID`==. e.g.  {% if module != "TIC4001" %}`{{ semester }}-{{ module }}T-W12-1`,{% endif %} `{{ semester }}-{{ example_team_id }}`
   * Plan:  Open Source ($0/month) 
   * This organization belongs to: My personal account
 * Add members to the organization:
