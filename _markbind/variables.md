@@ -31,6 +31,7 @@
 <variable name="version_penultimate">v1.3</variable>
 <variable name="version_final">v1.4</variable>
 <variable name="version_future">v2.0</variable>
+<variable name="example_team_id">{{ module }}-T09-2</variable>
 
 <variable name="date_final_submission">2020-11-09</variable>
 <variable name="ug_pages_per_person">1</variable>
