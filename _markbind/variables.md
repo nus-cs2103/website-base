@@ -8,12 +8,12 @@
 <variable name="S">1</variable>
 <variable name="semester">AY2021S{{ S }}</variable>
 <variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="current_week">15</variable>
 
 <variable name="algolia">yes</variable>
 
-<variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
+<variable name="luminus_module_id">5aee78b3-3927-432e-85a5-27be5f6a00fd</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vR7NmKu1dSMXzpQToHbuaCQTFj-vn-zfZenM2p9ppbTcOizTB8mRmMIazA4FObQKq73cnev-i05ERVe/pub?embedded=true</variable>
 <variable name="url_repl_classroom">https://repl.it/classroom/invite/szXDJN4</variable>
 
 <variable name="date_w1_start">2020-08-10</variable>
@@ -21,10 +21,10 @@
 <variable name="date_first_lecture">2020-08-14</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
 <variable name="recess_after_week">7</variable>
-<variable name="time_lecture_start">1600</variable>
-<variable name="time_lecture_end">1800</variable>
-<variable name="time_t_lecture_start">1200</variable>
-<variable name="time_t_lecture_end">1400</variable>
+<variable name="time_lecture_start">1200</variable>
+<variable name="time_lecture_end">1400</variable>
+<variable name="time_t_lecture_start">1600</variable>
+<variable name="time_t_lecture_end">1800</variable>
 
 <variable name="ip_name">iP</variable>
 <variable name="ip_repo_name">ip</variable>
@@ -44,9 +44,9 @@
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
-<variable name="marks_ip">30</variable>
-<variable name="marks_ip_implementation">15</variable>
-<variable name="marks_ip_pm">10</variable>
+<variable name="marks_ip">20</variable>
+<variable name="marks_ip_implementation">10</variable>
+<variable name="marks_ip_pm">5</variable>
 <variable name="marks_ip_documentation">5</variable>
 <variable name="marks_tp">45</variable>
 <variable name="marks_tp_design">5</variable>
