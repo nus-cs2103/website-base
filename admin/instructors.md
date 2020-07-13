@@ -8,24 +8,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="images/damith.png" width="150" class="rounded"/>
-    </div>
-    <div class="col">
-
-**Damith Chatura RAJAPAKSE**<br>
-Associate Professor, NUS School of Computing<br>
-PhD, Software Engineering, NUS, 2002-2006<br>
-BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
-%%:fas-envelope:%% <span id="prof-email">`damith`[at]`comp.nus.edu.sg`</span><br>
-%%:fas-map-marker-alt:%% COM2-02-57<br>
-%%:fas-phone-square:%% 651 64359<br>
-%%:fas-home:%% https://www.comp.nus.edu.sg/~damithch
-    </div>
-  </div>
-  <div class="row pt-4 border-top border-bottom">
-    <div class="col-3">
-
-<img src="images/boyd.png" width="150" class="rounded"/>
+<img src="images/boyd.png" width="150" class="mt-1 rounded"/>
     </div>
     <div class="col">
 
@@ -38,6 +21,23 @@ B.Sc. (Victoria University of Wellington, New Zealand)<br>
 %%:fas-map-marker-alt:%% COM2-03-26<br>
 %%:fas-phone-square:%% 660 17900<br>
 %%:fas-home:%% https://www.comp.nus.edu.sg/cs/bio/boyd/
+    </div>
+  </div>
+  <div class="row pt-4 border-top border-bottom">
+    <div class="col-3">
+
+<img src="images/damith.png" width="150" class="mt-1 rounded"/>
+    </div>
+    <div class="col">
+
+**Damith Chatura RAJAPAKSE**<br>
+Associate Professor, NUS School of Computing<br>
+PhD, Software Engineering, NUS, 2002-2006<br>
+BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
+%%:fas-envelope:%% <span id="prof-email">`damith`[at]`comp.nus.edu.sg`</span><br>
+%%:fas-map-marker-alt:%% COM2-02-57<br>
+%%:fas-phone-square:%% 651 64359<br>
+%%:fas-home:%% https://www.comp.nus.edu.sg/~damithch
     </div>
   </div>
 </div>

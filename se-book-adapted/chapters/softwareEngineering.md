@@ -1,3 +1,4 @@
+{% if module != "TIC4001" %}
 <frontmatter>
 {% import "se-book-adapted/config.njk" as config with context %}
 {% import "se-book-adapted/chapters/chapter.njk" as chapter_template with context %}
@@ -6,3 +7,4 @@
 </frontmatter>
 
 {{ chapter_template.show_chapter(chapter) }}
+{% endif %}

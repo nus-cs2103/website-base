@@ -24,10 +24,10 @@ week3: [
 week4: [
   {id: 'review_two_prs', graded: true, deadline: 'during lecture'},
   {id: 'add_increments', suffix: ' as branches', increments: [
+    {id: 'Level-5', title: 'Handle Errors'},
     {id: 'A-CodeQuality', title: 'Improve Code Quality'},
     {id: 'A-AbstractClasses', title: 'Use Abstract Classes'},
-    {id: 'A-Packages', title: 'Organize into Packages'},
-    {id: 'Level-5', title: 'Handle Errors'}
+    {id: 'A-Packages', title: 'Organize into Packages'}
   ]}
 ],
 week5: [
@@ -54,6 +54,6 @@ week6: [
 ],
 week7: [
   {id: 'set_up_website'},
-  {id: 'submit_the_final_version', deadline: get_date(date_w7_start, 3)}
+  {id: 'submit_the_final_version', deadline: get_date(date_w7_start, 10)}
 ]
 } %}

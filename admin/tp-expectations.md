@@ -121,7 +121,7 @@ You are expected to:
 
 * **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the the user's life easier?
 * **Optimize the product to the chosen target users** i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). 
-  * Example 1: If the product targets {{ module_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to navigate to a student's project on GitHub%% 
+  * Example 1: If the product targets {{ module_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to see a link to a student's project on GitHub%%
   * Example 2: If your app manages contacts, you can optimize its features based on,
     * the profession of the target user %%e.g. doctors, salesmen, teachers, etc.%%
     * the nature/scale of contacts %%e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)%%
@@ -160,8 +160,11 @@ You are expected to:
 
 <box type="important" light>
 
+<div tags="m--cs2103 m--cs2113">
+
 One semester ago, we reduced the tP functionality expectations by about 40-50% compared to the previous semesters, in order to reduce your workload. Keep that in mind in case you receive advice about project from seniors who did this module more than one semester ago.
 
+</div>
 <div tags="m--cs2113 m--tic4001">
 
 In fact, here is the grading criterion for the individual project effort:

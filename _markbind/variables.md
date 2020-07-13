@@ -19,6 +19,7 @@
 <variable name="date_semester_start">2020-08-10</variable>
 <variable name="date_w2_start">2020-08-14</variable>
 <variable name="date_first_lecture">2020-08-14</variable>
+<variable name="recess_after_week">7</variable>
 
 <variable name="ip_repo_name">ip</variable>
 <variable name="ip_first_week">2</variable>
@@ -36,7 +37,10 @@
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
-<variable name="marks_ip">20</variable>
+<variable name="marks_ip">30</variable>
+<variable name="marks_ip_implementation">15</variable>
+<variable name="marks_ip_pm">10</variable>
+<variable name="marks_ip_documentation">5</variable>
 <variable name="marks_tp">45</variable>
 <variable name="marks_tp_design">5</variable>
 <variable name="marks_tp_documentation">10</variable>
@@ -54,14 +58,17 @@
 
 <!-- ===========================  secondary module configuration =========================================== -->
 
+<variable name="w6_days">{{ 14 if recess_after_week == "6" else 7 }}</variable>
+<variable name="w7_days">{{ 14 if recess_after_week == "7" else 7 }}</variable>
+
 <variable name="format_normal">ddd, MMM Do</variable>
 <variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
 <variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w4_start">{{ date_w3_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w5_start">{{ date_w4_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w6_start">{{ date_w5_start | date("YYYY-MM-DD", 7) }}</variable>
-<variable name="date_w7_start">{{ date_w6_start | date("YYYY-MM-DD", 14) }}</variable>
-<variable name="date_w8_start">{{ date_w7_start | date("YYYY-MM-DD", 7) }}</variable>
+<variable name="date_w7_start">{{ date_w6_start | date("YYYY-MM-DD", (w6_days | int)) }}</variable>
+<variable name="date_w8_start">{{ date_w7_start | date("YYYY-MM-DD", (w7_days | int)) }}</variable>
 <variable name="date_w9_start">{{ date_w8_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w10_start">{{ date_w9_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w11_start">{{ date_w10_start | date("YYYY-MM-DD", 7) }}</variable>

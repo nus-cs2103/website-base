@@ -177,9 +177,10 @@ Resources:
 </span>
 {#====================================================================================================================#}
 <span id="extra_Level-5">
-<span tags="m--cs2113 m--tic4001">>
-* Use git branches in your work, as explained below:
-  * Do the increment Level-5 as a separate branch named `branch-Level-5`. You are recommended to have multiple commits in that branch.
+<span tags="m--cs2113 m--tic4001">
+
+* Do each increment as a Git branch. Here is an example:
+  * Start a branch named `branch-{increment ID}` (e.g. `branch-Level-5`). You are recommended to have multiple commits in that branch. Follow the branch naming convention exactly or else our gradings scripts might miss your branch.
   * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
   * Push the branch to your fork so that the bot can detect it. As before, push the tag as well.
   * {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
@@ -211,7 +212,10 @@ Resources:
 * Create a new branch `branch-Level-6`.
 * Implement the increment in the new branch.
 * Push the branch to your fork.
-* Create a PR in your fork, from the new branch to the `master` branch.
+* Create a PR in your fork, from the new branch to the `master` branch.  Steps for creating a PR is given in this textbook topic (steps 5 onwards):
+
+{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
+
 * Merge the PR using GitHub. Note how to merge PRs:
 
 {{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=2) }}
@@ -247,7 +251,7 @@ Resources:
 * Practice using parallel git branches _and_ PRs, as explained below:
 1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
 1. Then, push each branch to your fork, and create a PR within your fork (i.e., from the increment branch to the `master` branch).
-1. Now, let's merge one of the PRs and update the remaining PRs accordingly, as given below:
+1. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
    1. Merge one of the PRs on GitHub e.g., Level-8. Remember to choose the `Create merge commit` option when merging.
    1. Pull the updated `master` branch from your fork to your Computer.
    1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
@@ -264,7 +268,6 @@ Resources:
 <span id="extra_A-MoreOOP">
 
 * As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).
-* From this point onward, commit code at important points. ==Minimally, commit after completing each increment==.
 
 </span>
 <span id="extra_A-JavaDoc">
@@ -414,7 +417,9 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {#====================================================================================================================#}
 <span id="heading_submit_the_final_version">Submit the final version</span>
 <span id="desc_submit_the_final_version">
+{% if module != "TIC4001" %}
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
+{% endif %}
 * **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the product is very simple %%(e.g., no GUI or 3rd party libraries).%% The jar file should be ==cross-platform and should work in a computer that has Java 11==.
 * **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
