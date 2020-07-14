@@ -1,0 +1,9 @@
+{% from "common/macros.njk" import get_date with context %}
+
+#### Lecture on {{ get_date(date_w13_start, time="") }}
+
+* This lecture will be used mainly to give you feedback about the DG draft
+
+#### Lecture on {{ get_date(date_w13_start, 7, time="") }}
+
+* No formal lecture but instructors are available for consultation. Use this slot to work on the project.
