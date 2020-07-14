@@ -56,10 +56,21 @@
 <variable name="marks_exam">30</variable>
 <variable name="marks_exam_essay">0</variable>
 <variable name="marks_exam_mcq">30</variable>
+<variable name="marks_ca">70</variable>
 <variable name="mcq_count">100</variable>
 
 
-<!-- ===========================  secondary module configuration =========================================== -->
+<!-- ===========================  secondary variables =========================================== -->
+
+<variable name="cs2103">{{ "Y" if module == "CS2103" }}</variable>
+<variable name="cs2113">{{ "Y" if module == "CS2113" }}</variable>
+<variable name="tic2002">{{ "Y" if module == "TIC2002" }}</variable>
+<variable name="tic4001">{{ "Y" if module == "TIC4001" }}</variable>
+<variable name="te3201">{{ "Y" if module == "TE3201" }}</variable>
+<variable name="has_t">{{ "Y" if cs2103 or cs2113 }}</variable>
+<variable name="has_pe">{{ "Y" if cs2103 or cs2113 }}</variable>
+<variable name="session_name">{{ "lecture" if tic4001 else "tutorial" }}</variable>
+<variable name="Session_name">{{ "Lecture" if tic4001 else "Tutorial" }}</variable>
 
 <variable name="w6_days">{{ 14 if recess_after_week == "6" else 7 }}</variable>
 <variable name="w7_days">{{ 14 if recess_after_week == "7" else 7 }}</variable>
@@ -110,7 +121,6 @@
 <variable name="icon_evidence"><md>:fas-briefcase:</md></variable>
 <variable name="icon_graded"><span class="text-info"><tooltip content="counted for participation">:fab-product-hunt:</tooltip></span></variable>
 <variable name="icon_info"><md>:fas-info-circle:</md></variable>
-<variable name="icon_individual"><md>:fas-user:</md></variable>
 <variable name="icon_lecture"><md>:glyphicon-blackboard:</md></variable>
 <variable name="icon_like"><md>:fas-thumbs-up:</md></variable>
 <variable name="icon_linux"><md>:fab-linux:</md></variable>
@@ -131,7 +141,6 @@
 <variable name="icon_Q_A">{{ icon_Q | safe }}:glyphicon-ok-sign:</variable>
 <variable name="icon_repo"><md>:fas-code-branch:</md></variable>
 <variable name="icon_resource"><md>:fas-paperclip:</md></variable>
-<variable name="icon_team"><md>:fas-users:</md></variable>
 <variable name="icon_terminal"><smal><span class="badge badge-secondary">&gt;_</span></smal></variable>
 <variable name="icon_text"><md>:far-file-alt:</md></variable>
 <variable name="icon_tick"><md>:fas-check:</md></variable>
@@ -153,6 +162,10 @@
 <variable name="icon_tab_topics">{{ icon_book | safe }}</variable>
 <variable name="icon_tab_tutorial">{{ icon_tutorial | safe }}</variable>
 <variable name="icon_tab_summary">{{ icon_announcement | safe }}</variable>
+
+<variable name="icon_individual"><md>:fas-user:</md></variable>
+<variable name="icon_team"><md>:fas-users:</md></variable>
+<variable name="icon_both">{{ icon_individual }}/{{ icon_team }}</variable>
 
 <variable name="bad"><font color="red"><md>**{{ icon_dislike | safe }} Bad**</md></font></variable>
 <variable name="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></variable>

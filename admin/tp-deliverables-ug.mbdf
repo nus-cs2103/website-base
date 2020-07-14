@@ -15,7 +15,7 @@
 
 * The main content you add should be in the `docs/UserGuide.md` file (for ease of tracking by grading scripts).
 * **Should cover all {{ version_final }} features**.<br>
-  **Ensure those descriptions match the product precisely**, as it will be used by peer testers (==inaccuracies will be considered bugs==).
+  **Ensure those descriptions match the product precisely**, as it will be used by {{ "peer" if has_pe }} testers (==inaccuracies will be considered bugs==).
 * **Optionally, can also cover future features**. Mark those as `Coming soon`.
 * Also note the following constraint:
 

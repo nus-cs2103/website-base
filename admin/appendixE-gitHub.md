@@ -54,7 +54,7 @@ Please follow the organization/repo name format precisely or else our grading sc
 
 After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
-  * **Organization name** ==(all UPPER CASE) : `{{ semester }}-TEAM_ID`==. e.g.  {% if module != "TIC4001" %}`{{ semester }}-{{ module }}T-W12-1`,{% endif %} `{{ semester }}-{{ example_team_id }}`
+  * **Organization name** ==(all UPPER CASE) : `{{ semester }}-TEAM_ID`==. e.g.  {% if has_t %}`{{ semester }}-{{ module }}T-W12-1`,{% endif %} `{{ semester }}-{{ example_team_id }}`
   * Plan:  Open Source ($0/month) 
   * This organization belongs to: My personal account
 * Add members to the organization:
@@ -82,7 +82,7 @@ The tP project template given to you is a variation of the iP repo you used for 
    * <span id="do-not-rename">{{ icon_important_big_red }} Please do not rename the fork %%Reason: our grading scripts rely on the repo name.%%</span>
 1. **Enable the issue tracker**.
 1. **Enable GitHub Actions**: Go to the {{ show_as_rounded_tab(':fas-play-circle: Actions') }} tab and enable workflows by clicking the {{ button('I understand my workflows ...', button_style="success") }} button. That will enable the GitHub Actions that are already included in the repo you forked.
-{% if module == "CS2103" %}
+{% if cs2103 %}
 1. **Set up the project website**<br>
    Follow instructions in the [_Documentation guide_ page]({{ url_ab3_fork_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/tp` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/tp`.
 {% elseif module == "CS2113" or module == "TIC4001"%}

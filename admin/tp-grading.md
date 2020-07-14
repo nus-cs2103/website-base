@@ -9,14 +9,14 @@
 Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. Given below is the marking scheme.
 </div>
 
-**Total**: {{ marks_tp }} marks ({{ icon_individual }} {{ marks_tp_individual }} individual marks + {{ icon_team }} {{ marks_tp_team }} team marks)
+****Total****: {{ marks_tp }} marks ({{ icon_individual }} {{ marks_tp_individual }} individual marks + {{ icon_team }} {{ marks_tp_team }} team marks)
 
 See the sections below for details of how we assess each aspect.
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-productDesign">
 
-#### <div class="bg-warning p-1">1. Project Grading: Product Design %%[{{ icon_team }}/{{ icon_individual }} {{ marks_tp_design }} marks]%%</div>
+#### <div class="bg-warning p-1">1. Project Grading: Product Design %%[{{ icon_team if module == "TIC4001" else icon_both }} {{ marks_tp_design }} marks]%%</div>
 
 **Evaluates:** how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user
 
@@ -64,7 +64,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 * At least some evidence of these (see [here]({{baseUrl}}/se-book-adapted/chapters/errorHandling.html) for more info)
   * logging
   * exceptions
-  * assertions{% if module == "CS2103" %}
+  * assertions{% if cs2103 %}
   * defensive coding{% endif %}
 
 * No [coding standard]({{url_java_coding_standard}}) violations %%e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
@@ -115,7 +115,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_individual }} {{ marks_tp_qa }} marks]%%</div>
+#### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_both if module == "TIC4001" else icon_individual }} {{ marks_tp_qa }} marks]%%</div>
 
 <div tags="m--cs2113 m--cs2103">
 
@@ -150,12 +150,14 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 **Evaluated by** tutors.
 
-**Based on** the robustness of your product, and the quality of test cases.
+**Based on**,
+* {{ icon_team }} the robustness of your product
+* {{ icon_individual }} the quality of test cases
 </div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-documentation">
 
-#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
+#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_both if module == "TIC4001" else icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
 
 <div tags="m--cs2113 m--cs2103">
 
@@ -190,7 +192,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 **Evaluated by** tutors
 
-**Based on** the quality of your UG and DG.
+**Based on** the quality of your UG and DG, adjusted based on your individual contribution to the UG/DG.
 </div>
 </div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->

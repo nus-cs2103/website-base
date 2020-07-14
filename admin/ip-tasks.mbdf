@@ -126,7 +126,7 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 </span>
 <span id="extra_Level-1">
 <include src="ip-tasks.mbdf#order" />
-{% if module == "CS2103" %}<include src="ip-tasks.mbdf#commit" />{% endif %}
+{% if cs2103 %}<include src="ip-tasks.mbdf#commit" />{% endif %}
 <include src="ip-tasks.mbdf#tag-push" />
 </span>
 {#====================================================================================================================#}
@@ -275,10 +275,10 @@ Resources:
 * As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 </span>
 {#====================================================================================================================#}
-<span id="heading_review_two_prs">{% if module == "CS2103" or module == "TIC4001" %}Review some peer PRs{% else %}Get ready to review PRs{% endif %}</span>
+<span id="heading_review_two_prs">{% if cs2103 or tic4001 %}Review some peer PRs{% else %}Get ready to review PRs{% endif %}</span>
 <span id="desc_review_two_prs">
 
-{% if module == "CS2103" or module == "TIC4001" %}
+{% if cs2103 or tic4001 %}
 * **Learn _how_ you should review PRs in this task**:
 {{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
 
@@ -417,7 +417,7 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {#====================================================================================================================#}
 <span id="heading_submit_the_final_version">Submit the final version</span>
 <span id="desc_submit_the_final_version">
-{% if module != "TIC4001" %}
+{% if not tic4001 %}
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
 * **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the product is very simple %%(e.g., no GUI or 3rd party libraries).%% The jar file should be ==cross-platform and should work in a computer that has Java 11==.

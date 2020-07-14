@@ -65,13 +65,27 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 * **The theory side** of this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
 
-* **On the practice side**, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project in which you will build another small <tooltip content="Comman Line Interface">CLI</tooltip> app while working as a team.
+* **On the practice side**, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project in which you will build another small <tooltip content="Command Line Interface">CLI</tooltip> app while working as a team.
 
 <panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
 </span>
 <!-- =============================================================================== -->
 <span tags="m--tic4001">
-Module overview goes here {to be elaborated}
+
+<big><p class="lead text-secondary">A Software Engineering practicum module focusing on <tooltip content="projects starting from scratch, as opposed to projects starting from an existing code base">greenfield</tooltip> team projects...</p></big>
+
+<img src="{{baseUrl}}/images/growingPlant.png" width="650">
+
+
+<p class="lead"><md>{{ module }} builds on <tooltip content="Introduction to Software Engineering">TIC2002</tooltip> to strengthen your practical SE skills. The focus will be on getting some hands on practice in various tools, techniques, and processes used in a systematic SE project.</md></p>
+
+* **On the theory side, this module relies mostly on the theory covered in TIC2002, but it will also cover some new topics** to help you with the project. As before, this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
+
+* **The practice side, you will first ramp up your technical skills by doing a small individual project** (green-field) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). This project is similar to the project you did in TIC2002 but will be done at a higher level of rigor.<br>
+  **Then, you will move to a team project** (also greenfield) in which you will build another small <tooltip content="Command Line Interface">CLI</tooltip> app while working as a team.
+
+**At the end of this module** you are expected to be ready for <tooltip content="Software Engineering Practicum II">TIC4002</tooltip> in which you'll tackle a <tooltip content="starting with an existing code base">brownfield</tooltip> team project somewhat larger than the project you did in this module.
+
 </span>
 
 

@@ -2,7 +2,7 @@
 
 {% call show_admin_page("instructors") %}
 <div id="main">
-{% if module == "TIC4001" %}
+{% if tic4001 %}
 
 <div class="container">
   <div class="row bt-2">

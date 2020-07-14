@@ -11,7 +11,7 @@
 #### When to form teams
 
 {% set session = "lecture" if module == "TIC4001" else "tutorial" %}
-{% if module != "TIC4001" %}* {{ module }}T: Your team will be formed by the CS2101 side.{% endif %}
+{% if has_t %}* {{ module }}T: Your team will be formed by the CS2101 side.{% endif %}
 * {{ (module + ":") if module != "TIC4001" else "" }} Team forming will be done at the _start_ of the week 3 {{ session }}. If you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
 
 #### Team size
@@ -20,7 +20,7 @@
 
 #### Team composition
 
-{% if module == "TIC4001" %}
+{% if tic4001 %}
 * **You can either form teams yourselves or let us put you in teams.**
 {% else %}
 * We allow some freedom in choosing team members, subject to these constraints:
@@ -38,7 +38,7 @@
 
 * **To be given to you after forming teams.**
 
-{% if module != "TIC4001" %}
+{% if not tic4001 %}
 * **Has the form `TUTORIAL_ID-TEAM_NUMBER`** e.g, `{{ module }}-W14-2` means you are in tutorial `{{ module }}-W14` (i.e., in module `{{ module }}`, on `Wednesday`, at `1400-1500`), team `2`.
 
 <div class="indented-level2">

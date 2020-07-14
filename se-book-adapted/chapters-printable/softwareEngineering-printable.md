@@ -1,4 +1,4 @@
-{% if module != "TIC4001" %}
+{% if not tic4001 %}
 <frontmatter>
 {% import "se-book-adapted/config.njk" as config with context %}
 {% import "se-book-adapted/chapters-printable/chapter-printable.njk" as chapter_template with context %}
