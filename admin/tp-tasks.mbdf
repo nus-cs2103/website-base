@@ -182,7 +182,29 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
 <span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ version_first }}</span>
 <span id="desc_prioritize_user_stories">
 
-**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}. We try to make it small because you will have only two weeks to implement {{ version_first }} and coding as a team is a lot harder than writing code alone.
+<div class="indented">
+
+<box type="success" light>
+
+##### <span class="text-success">Project planning, but with a twist</span>
+
+Intuitively, you might think the right thing to do is to decide what features will be in {{ version_final }} and then plan the intermediate versions based on that. But that's not what we are going to do.
+
+Why? You don't have enough experience to reliably estimate effort each feature will need, and hence, any such long range plan is likely to be inaccurate.
+
+Instead, what we will do is to ==assume the current iteration is the last iteration==, plan that iteration accordingly, and try to follow that plan as best as we can. After the iteration is over, we plan the next iteration as if _it's_ the last iteration. But that time, factor in the experience from the previous iteration to do a better job of planning.
+
+How is that better?
+* Shorter-term plans have a better chance of being accurate and doable.
+* You get multiple clean shots at project planning. Each try can learn from the previous tries. Hence, more learning.
+* As each iteration produces a working product, you always have a working product, which reduces the risk overshooting the final deadline.
+
+</box>
+
+**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.
+
+</div>
+
 * If the product _can_ be of some use without a given user story, that user story should be left out of {{ version_first }}, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
 * Don't worry about {{ version_penultimate  }}. You can design {{ version_penultimate }} after {{ version_first }} done.
 * Don't worry about {{ version_first }} being 'too small'. You can always add more features to {{ version_first }} if you finish it ahead of schedule.
@@ -227,7 +249,8 @@ Suggested workflow:
 <span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize {{ version_first }}</span>
 <span id="desc_conceptualize_first_version">
 
-* Based on your user story selected previously, conceptualize the product in terms of how it will look like at {{ version_first }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.
+* Based on your user story selected previously, conceptualize the product in terms of how it will look like at {{ version_first }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.<br>
+  You can note down the feature list in your online project notes document.
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
   <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -240,7 +263,7 @@ Suggested workflow:
 
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ version_first }}.
   * We recommend that you follow the [AB3 User Guide]({{ url_ab3_fork_website }}/UserGuide.html) in terms of structure and format.
-  * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
+  * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in Markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ version_first }}.
   * Include only features that will be delivered in {{ version_first }}.
   * Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%.
@@ -376,23 +399,6 @@ Update the following pages in your project repo:
 <span id="desc_plan_the_next_iteration">
 
 <div class="indented-level2">
-
-<box type="success" light>
-
-##### <span class="text-success">Project planning, but with a twist</span>
-
-Intuitively, you might thing the right thing to do is to decide what features will be in {{ version_final }} and then plan the intermediate versions based on that. But that's not what we are going to do.
-
-Why? You don't have enough experience to reliably estimate effort each feature will need, and hence, any such long range plan is likely to be inaccurate.
-
-Instead, what we will do is to ==assume the current iteration is the last iteration==, plan that iteration accordingly, and try to follow that plan as best as we can. After the iteration is over, we plan the next iteration as if _it's_ the last iteration. But that time, factor in the experience from the previous iteration to do a better job of planning.
-
-How is that better?
-* Shorter-term plans have a better chance of being accurate and doable.
-* You get multiple clean shots at project planning. Each try can learn from the previous tries. Hence, more learning.
-* As each iteration produces a working product, you always have a working product, which reduces the risk overshooting the final deadline.
-
-</box>
 
 </div>
 
@@ -798,7 +804,7 @@ Not applicable this semester
 </div>
 
 <div class="indented-level2" id="tip-how-to-convert-to-pdf">
-<box type="important" light>
+<box type="important" seamless>
 
 **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
 

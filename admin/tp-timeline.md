@@ -114,6 +114,7 @@ The first half of the tP is light because you will be doing the iP in parallel d
 #### {{ badge("W12")}} {{ badge("W13") if module == "TIC4001" else "" }} Iteration 3 → {{ version_final }}
 
 <div tags="m--cs2113 m--cs2103">
+
 * This iteration is <span class="text-danger">shorter</span> (slightly more than one week).
 * Plan to use this **for bug fixing and polishing up documentation**.
 </div>

@@ -7,9 +7,9 @@
 **To receive full {{ marks_participation}} marks allocated for participation, meet the criteria {{ thumb("A", "info") }}, {{ thumb("B", "info") }}, and {{ thumb("C", "info") }}.**
 
 ****{{ thumb("A", "info") }} Earned more than half of weekly participation points in at least 10 weeks.****
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--cs2113">
 
-  * Weekly quiz(es):
+  * Weekly quiz(es), if any:
     * Quizzes open around the lecture time and stay open until the next lecture starts. In some weeks, there will be two quizzes %%(because two smaller quiz is easier for you to manage than one big quiz)%%.
     * When awarding participation points for quizzes, we look for two conditions:
       * Condition 1: submitted **__early__** i.e., within four days of the lecture i.e., lecture day + three more days %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
@@ -17,22 +17,16 @@
     * You earn:
       * 3 points if you satisfy both conditions.
       * 2 points if only one of the conditions is satisfied.
-      * 1 point if submitted but both conditions are not satisfied.
+      * 1 point if submitted but both conditions are not satisfied.{% if cs2113 %}
+  * Weekly programming exercise (if any):
+    * 3 points if you submitted correct solutions for at least 75% of the exercises
+    * 2 points if you submitted correct solutions for 50-74% of the exercises
+    * 1 point if you submitted correct solutions for 25-49% of the exercises{% endif %}
+  * TEAMMATES peer evaluation sessions: 2 points per session
   * Other weekly activities:
     * There could be other activities related to the lecture, tutorial, or the administration of the module.
     * Refer the activity description for evaluation criteria.
-</div>
-<div tags="m--cs2113">
-
-  * Programming exercise (if any):
-    * Submitted correct solutions at least 75% of the exercises: 3 points
-    * Submitted correct solutions to 50-74% of the exercises: 2 points
-    * Submitted correct solutions to 25-49% of the exercises: 1 point
-  * Post-lecture quiz (if any):
-    * Answered at least 75% of the questions correctly: 3 points
-    * Answered 50-74% questions correctly: 2 points
-    * Answered less than 50% questions correctly but answered more than 50% of the questions: 1 point
-  * Compulsory administrative tasks %%e.g., submitting peer evaluations%%: 2 for each task
+    * Each activity earns 2 points unless specified otherwise.
 </div>
 
 <div tags="m--tic4001">

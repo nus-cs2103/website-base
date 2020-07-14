@@ -24,9 +24,9 @@ At the end of the project each student is required to submit a _Project Portfoli
 </modal>
 
 <div class="indented-level2">
-<box border-left-color="darkcyan">
+<box type="tip" seamless>
 
-{{ icon_tip }} Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention things that will earn you a fair score %%e.g., explain how deep the enhancement is, why it is _complete_, how hard it was to implement etc.%%.
+Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention things that will earn you a fair score %%e.g., explain how deep the enhancement is, why it is _complete_, how hard it was to implement etc.%%.
 </box>
 </div>
 

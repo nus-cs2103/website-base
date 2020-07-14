@@ -16,7 +16,7 @@ See the sections below for details of how we assess each aspect.
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-productDesign">
 
-#### <div class="bg-warning p-1">1. Project Grading: Product Design %%[{{ icon_team if module == "TIC4001" else icon_both }} {{ marks_tp_design }} marks]%%</div>
+#### <div class="bg-warning p-1">1. Project Grading: Product Design %%[{{ icon_team if module == "TIC4001" else icon_individual }} {{ marks_tp_design }} marks]%%</div>
 
 **Evaluates:** how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user
 
