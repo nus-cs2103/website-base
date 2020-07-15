@@ -1,0 +1,45 @@
+{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="form-teams">
+
+* Form teams, under the guidance of the tutor. See the panel below for _team forming constrains_ and other related info.<br>
+
+{{ embed_topic("tp-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "2", indent="2") }}
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="register-the-team">
+
+* Get your team ID from the tutor. ==Each student must submit your team ID== via the LumiNUS `Class Groups` page -- for us to know which team you joined. Note the team ID follows a specific format.
+
+{{ embed_topic("tp-teams.md#teamIdFormat", "Admin " + icon_embedding + " **Teams → Team ID Format**", "2", indent="2") }}
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="introduce-yourselves">
+
+* Introduce yourself to the tutor and the members of your team and the _partner_ team (i.e., the other team under your tutor)
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="decide-meeting-time">
+
+* If you haven't done so already, do the following tP task.
+
+{{ embed_topic("tp-tasks.mbdf#desc_set_up_meeting_time", "Admin " + icon_embedding + " **tP → Set up a meeting time**", "2", indent="2") }}
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="exercise-coding-standard-violations">
+
+* Do the following exercise, if you have time.
+<div class="indented-level2">
+
+<include src="..\book\codeQuality\followStandard\basic\q-listViolations.md" />
+</div>
+<p/>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="help-troubleshoot-ip">
+
+<!-- * Do a quick demo of your iP to the tutor. -->
+* Now that you are in a team, it's time to build up the team spirit. For starters, you can start helping each other with module tasks. e.g., if anyone is facing problems in the iP, you can work together to solve them.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->

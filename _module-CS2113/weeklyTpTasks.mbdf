@@ -52,7 +52,7 @@ week12: [
 week13: [
   {id: 'submit_final_deliverables', deadline: get_date(date_w13_start, 3)},
   {id: 'demo_the_product', deadline: get_date(date_w13_start, 5)},
-  {id: 'prepare_for_PE', deadline: 'before the lecture on ' + get_date(date_w13_start, 7, time=""), deadline_type: "info"},
+  {id: 'prepare_for_PE'},
   {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 7, time="")}
 ]
 } %}

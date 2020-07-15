@@ -48,7 +48,7 @@
 
 
 {%- macro make_anchor(text) %}{{ text | trim | replace(".", "-") }}{% endmacro -%}
-{%- macro slugify(text) %}{{ text | replace(r/[\s\/]/g, '-') | replace(r/[\(\)%:,&'\[\]]/g, '') }}{% endmacro -%}
+{%- macro slugify(text) %}{{ text | lower | replace(r/[\s\/]/g, '-') | replace(r/[\(\)%:,&'\[\]\+]/g, '') }}{% endmacro -%}
 {%- macro commentary(span_id) %}
 <include src="commentary-{{ module | lower }}.mbdf#{{ span_id }}" optional />
 {% endmacro -%}
@@ -247,13 +247,13 @@
 {% endmacro %}
 
 
-{% macro topic_preamble(topic, indent)%}
+{% macro topic_preamble(topic, indent, reuse=true, id=false)%}
 {% if indent %}<div class="indented-level{{ indent }}">{% endif %}
 {% if topic %}<span id="{{ slugify(topic) }}">{% endif %}
 <include src="commentary-box.md" boilerplate>
 <variable name="commentary_body">
 
-{{ caller() }}
+{% if reuse %}<include src="../../admin/common-commentary.mbdf#{{ id if id else slugify(topic) }}" />{% else %}{{ caller() }}{% endif %}
 </variable>
 </include>
 {% if topic %}</span>{% endif %}

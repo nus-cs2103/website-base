@@ -1,6 +1,3 @@
 {% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
 
-<box type="warning" dismissible>
-
-We start tutorials this week. The [tutorial time table]({{ url_module_website }}/admin/tutorials.html#tutorial-timetable) is on the module website.
-</box>
+<include src="../../admin/common-notices.mbdf#tutorial-start" />

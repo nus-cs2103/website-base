@@ -33,3 +33,11 @@ This week, ==there are things for you to do before the upcoming lecture== (refer
 </box>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="tutorial-start">
+
+<box type="warning" dismissible>
+
+We start tutorials this week. The [tutorial time table]({{ url_module_website }}/admin/tutorials.html#tutorial-timetable) is on the module website.
+</box>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->

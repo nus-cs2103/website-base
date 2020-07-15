@@ -67,6 +67,8 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 * **On the practice side**, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project in which you will build another small <tooltip content="Command Line Interface">CLI</tooltip> app while working as a team.
 
+<include src="moduleOverview.md#meaning-of-iterative-topics" />
+
 <panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
 </span>
 <!-- =============================================================================== -->

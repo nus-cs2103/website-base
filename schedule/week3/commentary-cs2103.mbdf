@@ -9,7 +9,7 @@ Let's learn a few more Git technique this week. Although these are really not ne
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("RCS: Creating Pull Requests") %}
 
-As the last topic for this week, let's learn how to create a pull request on GitHub; you need to create one for your iP this week.
+Let's learn how to create a pull request on GitHub; you need to create one for your iP this week.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
@@ -19,12 +19,7 @@ Let's start by going through some Java topics that is relevant to the iP. You ca
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-
-{% call topic_preamble("Coding Standards") %}
-
-As you know, one of the objectives of the iP is to raise the quality of your code. We'll be learning about various ways to improve the code quality in the next few weeks, starting with coding standards.
-
-{% endcall %}
+{{ topic_preamble("Code Quality: Coding Standards") }}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Developer Testing") %}
 

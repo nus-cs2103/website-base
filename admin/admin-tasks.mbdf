@@ -104,6 +104,7 @@
 <span id="desc_accept_github_invitations">
 
 * We will be adding you all to {{ module | lower }}-{{ semester }} github org. **Please accept the invitation sent by GitHub** as you need to be a member of the org for some of the future module activities. If you did not receive the invitation link, you can use the link [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation).
+* Worth `2` participation points
 </span>
 {#====================================================================================================================#}
 <span id="heading_practice_peer_evaluations_on_TEAMMATES">Practice peer evaluation on TEAMMATES</span>

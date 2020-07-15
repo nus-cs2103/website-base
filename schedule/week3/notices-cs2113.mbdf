@@ -4,8 +4,4 @@
 
 This URL will be needed during lecture activities: {{ url_module_org }}/lender
 </box>
-<box type="warning" dismissible>
-
-* We start tutorials this week. The [tutorial time table]({{ url_module_website }}/admin/tutorials.html#tutorial-timetable) is on the module website.
-</box>
-
+<include src="../../admin/common-notices.mbdf#tutorial-start" />

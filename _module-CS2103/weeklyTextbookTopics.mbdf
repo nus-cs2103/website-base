@@ -97,7 +97,7 @@
       {location: ["cppToJava", "misc", "fileAccess"]},
       {location: ["cppToJava", "misc", "packages"]},
       {location: ["cppToJava", "misc",  "jar"]},
-    {heading: "Coding Standards"},
+    {heading: "Code Quality: Coding Standards"},
       {location: ["codeQuality", "introduction", "basic"]},
       {location: ["codeQuality", "followStandard", "introduction"]},
   {name: "Testing"},
@@ -479,3 +479,5 @@
 {week: "12"},
 {week: "13"}
 ]%}
+
+{% set weeks_with_no_topics = ["12", "13"] %}

@@ -1,0 +1,172 @@
+{% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+{% from "common/macros.njk" import embed_topic with context %}
+<!-- ==================================================================================================== -->
+                                         Software Engineering
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("SE: Intro") }}">
+Given this is a first course in SE, tradition demands that we start by defining the subject. However, we are not going to spend a lot of time going through definitions of SE. Instead, let's look at an extract from the very first chapter of a very famous SE book, with the aim of providing some inspiration but also an appreciation of the challenges ahead.
+</div>
+<!-- ==================================================================================================== -->
+                                             OOP
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("OOP: Classes and Objects") }}">
+As you know, OOP is a core part of this module. Let's start learning the OOP paradigm this week.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("oop-objects-abstraction") }}">
+**OOP is built upon four core concepts.** The firs two are:
+1. _abstraction_
+1. _encapsulation_
+1. ...
+1. ...
+
+They are explained in the sections below.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("OOP, Java: Class-Level Members") }}">
+You learned that objects can have members (methods, attributes). Well, there is something called _class-level_ members too. Let's learn what they are, how they differ from the former, and how to implement them in Java.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Useful Classes") }}">
+While you _can_ (and will be) defining your own classes, Java comes with a whole bunch of built-in classes that you can use right-away. Let's learn about some of the most useful such built-in classes next.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("OOP + Java: Inheritance") }}">
+Now that you know the basics about classes and objects, let's move to the next level. The sections below explain the third core concept of OOP (called _inheritance_) and how to use that in Java.
+1. abstraction  {{ icon_tick }}
+1. encapsulation  {{ icon_tick }}
+1. **_inheritance_**
+1. ...
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("OOP + Java: Polymorphism") }}">
+Inheritance is even more powerful when combined with _polymorphism_ (which also happens to be the fourth core concept of OOP), explained in the sections below.
+1. abstraction {{ icon_tick }}
+1. encapsulation {{ icon_tick }}
+1. inheritance {{ icon_tick }}
+1. **_polymorphism_**
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("OOP + Java: Enumerations") }}">
+An _enumeration_ is something in between a primitive (e.g., `int`) and a class (e.g., `Person`). Let's learn about enumerations next.
+</div>
+<!-- ==================================================================================================== -->
+                                             C++ to Java
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("Java: Intro") }}">
+Next, let's get started learning Java. First, a bit about the language itself.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: HelloWorld") }}">
+As with any language, the first step is to install the language in your computer. After that, you write a simple HelloWorld program, and get it running.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Data Types") }}">
+Now that you know how to write the simplest of Java programs, you can move onto learning about basic language concepts, starting with data types.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Control Flow") }}">
+Next up is learning how to control the flow of a Java program. From this point onwards, you should submit the given _Key Exercises_ on repl.it website.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Objects") }}">
+Now that you know what _objects_ are, let's see how they are used in Java, which happens to be an OOP language.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Classes") }}">
+Having seen how to use objects in Java, the next step is learn how to define new _kinds_ of objects (aka _classes_) in Java.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Constants") }}">
+You already know how to define variables in Java code; do you know how to define constants?
+</div>
+<!-- ==================================================================================================== -->
+                                           Revision Control
+<!-- ==================================================================================================== -->
+<div id="rcs-intro">
+This week, you are starting your individual project (iP). As you are adding code to the iP in rapid succession, you'll need a way to keep track of all the changes you do. The tool we are going to use for that is called Git, and we need to learn Git basics pretty quickly.
+
+Let's jump in and learn how to get started using Git in your own computer. Yes, we are now switching our focus to the _project management_ aspect of SE.
+
+<span tags="m--cs2113">
+
+:thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
+
+{{ embed_topic("moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
+<p/></span>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("revisionControl-what") }}">
+First, let's learn a bit about _tracking the change history of a project_ in general, at a higher level.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("gitAndGithub-init") }}">
+Now that we know what RCS is in general, we can try to practice it ourselves using a specific tool i.e., Git.
+
+The following section gives a specific scenario that includes the steps of initializing a Git repository.
+
+**If you are new to Git**, you are highly recommended to ==follow those steps in your own computer== to get some hands-on practice as you learn Git usage.
+</div>
+<!-- ---------------------------------------------------------------------------- -->
+<div id="{{ slugify("revisionControl-savingHistory") }}">
+For the next few sections, the drill is the same: first learn the high-level explanation of a revision control concept, and then follow the given scenarios yourself to learn how to apply that concept using Git.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="rcs-remote-repos">
+Having learned how to use Git in your own computer, let's also learn a bit about working with remote code repositories too. Yes it's a bit too much to take in one week but we want you to start using Git in your iP from the very beginning.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("RCS: Using History") }}">
+Last week, you learned how to save revision history in your local repository, in the form of _commits_. Next, let us use how to make use of that history.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("RCS: Pull, Push") }}">
+Last week, you learned how to fork and clone a remote repository. Let's now learn how to transfer revision history date to and from a remote repository.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("RCS: Creating Pull Requests") }}">
+Let's learn how to create a pull request (PRs) on GitHub; you need to create one for your iP this week.
+
+<span tags="m--cs2113">
+Follow that with learning how to review PRs as you'll be doing that too later in this week.
+</span>
+</div>
+<!-- ==================================================================================================== -->
+                                     IDEs
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("IDEs: Basic Features") }}">
+ As you are likely to be using an IDE for the iP, let's learn at least enough about IDEs to get you started using one.
+
+:thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
+
+{{ embed_topic("../../admin/moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
+<p/>
+</div>
+<!-- ==================================================================================================== -->
+                                     Code Quality
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("Code Quality: Coding Standards") }}">
+As you know, one of the objectives of the iP is to raise the quality of your code. We'll be learning about various ways to improve the code quality in the next few weeks, starting with coding standards.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Code Quality: Naming") }}">
+Previously, you learned about coding standards as a way to improve code quality. The next topic along that theme covers guidelines for naming things in code.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Code Quality: Readability") }}">
+Continuing our theme on _code quality_, given below is another aspect of it: _readability_
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Code Quality: Refactoring") }}">
+Knowing code-quality guidelines is useful for sure, but how do we improve the code quality of existing code in a systematic and safe way? That's where the next topic comes in.
+</div>
+<!-- ==================================================================================================== -->
+                                    Testing
+<!-- ==================================================================================================== -->
+
+<div id="{{ slugify("Automated Testing of Text UIs") }}">
+As you start adding features to your iP iteratively, you'll need **a way to detect if the new code breaks the existing code**. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).
+
+<span tags="m--cs2103">This also means we are not switching focus from the _implementation_ aspect to the _testing_ aspect of SE.</span>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
