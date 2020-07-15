@@ -1,0 +1,35 @@
+{% from "common/macros.njk" import embed_topic, get_date, show_as_tab, timing_badge with context %}
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="fully-online">
+
+<div class="bg-info text-white p-2 rounded">
+
+This module will be **fully-online** this semester. There is no need for on-campus presence.
+</div>
+<p/>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="about-summary-tab">
+
+<box type="info" dismissible>
+
+A summary of the week, and announcements relevant to that week, will appear in this [{{ show_as_tab('Summary', icon_tab_summary) }}](index.html) tab.
+
+**In each week**, go through all the tabs for that week (i.e., [{{ show_as_tab('Topics', icon_tab_topics) }}](topics.html), [{{ show_as_tab('Project', icon_tab_project) }}](project.html), ...) given at the top of this page and follow the instructions in them. FYI, a **[full timeline](../timeline.html)** is available too.
+
+This week, ==there are things for you to do before the upcoming lecture== (refer the above tabs for details).
+
+</box>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="semester-start">
+
+<box type="tip">
+
+* **Our first lecture** will be on {{ get_date(date_first_lecture, time="") }}.
+* **Our tutorials** start on week 3.
+* **[{{ module }}T Students]**: Of the many weekly sessions that appear under {{ module }}T, only two actually belong to {{ module }}T. Those are, the lecture on {{ day_lecture }} {{ time_t_lecture_start }}-{{ time_t_lecture_end }}, and the 1-hour tutorial slot. The other two 2-hour slots belong to the CS2101 module.
+</box>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->

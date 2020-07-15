@@ -1,15 +1,3 @@
-{% from "common/macros.njk" import embed_topic, timing_badge, show_as_tab with context %}
-{% from "common/topics.njk" import topic_followup, topic_preamble with context %}
-
-<box type="info" dismissible>
-
-A summary of the week, and announcements relevant to that week, will appear in this [{{ show_as_tab('Summary', icon_tab_summary) }}](index.html) tab.
-
-**In each week**, go through all the tabs for that week (i.e., [{{ show_as_tab('Topics', icon_tab_topics) }}](topics.html), [{{ show_as_tab('Project', icon_tab_project) }}](project.html), ...) given at the top of this page and follow the instructions in them. FYI, a **[full timeline](../timeline.html)** is available too.
-
-This week, ==there are things for you to do before the upcoming lecture== (refer the above tabs for details).
-
-</box>
-<p/>
-<include src="../../admin/weeklySchedule.md#fully-online" />
-<p/>
+<include src="../../admin/common-notices.mbdf#about-summary-tab" />
+<include src="../../admin/common-notices.mbdf#fully-online" />
+<include src="../../admin/common-notices.mbdf#semester-start" />

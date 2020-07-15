@@ -373,3 +373,5 @@
       {location: ["uml", "sequenceDiagrams", "referenceFrames"]},
 {week: "13"}
 ]%}
+
+{% set weeks_with_no_topics = ["1", "13"] %}

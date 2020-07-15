@@ -20,6 +20,10 @@
 <variable name="date_w2_start">2020-08-14</variable>
 <variable name="date_first_lecture">2020-08-14</variable>
 <variable name="recess_after_week">7</variable>
+<variable name="time_lecture_start">1600</variable>
+<variable name="time_lecture_end">1800</variable>
+<variable name="time_t_lecture_start">1200</variable>
+<variable name="time_t_lecture_end">1400</variable>
 
 <variable name="ip_repo_name">ip</variable>
 <variable name="ip_first_week">2</variable>

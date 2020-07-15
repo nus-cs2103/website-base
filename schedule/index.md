@@ -9,7 +9,7 @@ pageNav: 1
 {% import "common/topics.njk" as topics with context %}
 {% from "admin/admin-tasks.mbdf" import show_weekly_admin_tasks with context %}
 {% from "common/macros.njk" import get_week_start_date with context %}
-{% from "_module-" + module + "/weeklyTextbookTopics.mbdf" import weekly_textbook_topics with context %}
+{% from "_module-" + module + "/weeklyTextbookTopics.mbdf" import weekly_textbook_topics, weeks_with_no_topics with context %}
 {% from "_module-" + module + "/weeklyTpTasks.mbdf" import weekly_tp_themes with context %}
 
 {#
@@ -152,13 +152,16 @@ pageNav: {{ categories[category].pagenav }}
   <div class="row">
   <div class="col-sm border-right">
 
+**Topics:**
+{% if week_num + "" in weeks_with_no_topics %}
+* %%No topic allocated to this week.%%
+{% else %}
 {{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
-
-<span class="text-white">...</span>
 
 <panel type="seamless" header="%%Full ToC%%">
   <include src="topics.md#toc" optional />
 </panel>
+{% endif %}
 
   </div>
   <div class="col-sm">

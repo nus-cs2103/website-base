@@ -409,3 +409,5 @@
       {location: ["processModels", "exampleProcessModels", "xp"], evidence: "project.md#relate_process"},
 {week: "13"}
 ]%}
+
+{% set weeks_with_no_topics = ["1", "13"] %}

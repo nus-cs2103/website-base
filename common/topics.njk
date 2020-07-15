@@ -1,5 +1,6 @@
 {% import "se-book-adapted/config.njk" as config with context %}
 {% from "common/macros.njk" import  show_stars, show_priority_style with context %}
+{% from "_module-" + module + "/weeklyTextbookTopics.mbdf" import weeks_with_no_topics with context %}
 
 
 {% macro get_start_index_untrimmed(filter_property, filter_value, entries) -%}
@@ -228,6 +229,10 @@
 
 
 {% macro show_week_schedule(week_num, entries, path_displacement="") %}
+{% if week_num + "" in weeks_with_no_topics %}
+
+%%No topics assigned to this week.%%
+{% else %}
 <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
 <span id="toc">
 
@@ -238,6 +243,7 @@
 <hr style="border: 1px dotted #cccccc;" />
 
 {{ show_week_schedule_main(week_num, entries, path_displacement) }}
+{% endif %}
 {% endmacro %}
 
 

@@ -341,3 +341,5 @@
       {location: ["qualityAssurance", "formalVerification", "what"], omit_evidence: true},
 {week: "13"}
 ]%}
+
+{% set weeks_with_no_topics = ["13"] %}
