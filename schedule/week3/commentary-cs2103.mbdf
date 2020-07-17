@@ -1,17 +1,9 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
 
-{% call topic_preamble("RCS: Branching") %}
+{{ topic_preamble("RCS: Branching") }}
+{{ topic_preamble("RCS: Creating Pull Requests") }}
 
-Let's learn a few more Git technique this week. Although these are really not needed for the iP, the iP requires you to use them anyway, to give you more time to practice them before they are really needed in the tP.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("RCS: Creating Pull Requests") %}
-
-Let's learn how to create a pull request on GitHub; you need to create one for your iP this week.
-
-{% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Java") %}
 

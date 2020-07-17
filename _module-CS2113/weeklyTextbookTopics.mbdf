@@ -167,7 +167,7 @@
       {subheading: "Feature Lists"},
         {location: ["specifyingRequirements", "featureList", "what"]},
   {name: "Project Management"},
-    {heading: "RCS: Branching, Pull Requests"},
+    {heading: "RCS: Branching"},
       {location: ["revisionControl", "branching"]},
       {location: ["gitAndGithub", "branch"]},
 {week: "6"},

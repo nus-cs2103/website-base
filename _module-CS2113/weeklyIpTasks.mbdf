@@ -28,6 +28,7 @@ week4: [
   {id: 'review_two_prs', deadline: 'before the tutorial'}
 ],
 week5: [
+  {id: 'learn_from_others'},
   {id: 'add_increments', suffix: ' as a branch', increments:  [
     {id: 'Level-5', title: 'Handle Errors'}
   ]},

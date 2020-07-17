@@ -2,63 +2,41 @@
 
 #### {{ thumb(1) }} **Discuss tP progress**
 
-* Show your collaborative project doc(s) to the tutor.
-* Share the project direction (i.e., user profile, value proposition) you have decided upon.
-* Give feedback to the other team. Some examples:
-  * Suppose you belong to the proposed target user group; do you find the value proposition attractive?
-  * Do you foresee any potential violation of the project constraints?
+<include src="../../admin/common-tutorial.mbdf#share-project-direction" />
 
-#### {{ thumb(2) }} **Review Peer iP PRs**
+#### {{ thumb(2) }} **Review Peer iP PRs** {{ icon_graded }}
 
 <div class="indented-level2">
 <box type="important">
 
 * The quality of the work you will do in this tutorial task will be considered for your iP grade.
 * This task is applicable even if you have been exempted from the iP.
+* This activity is worth `3` participation points
 </box>
 
-**Review a PR** created by your classmates by following the steps given below. Note that you are expected to have read the following guidelines as given in this week's iP tasks:
+Note that you are expected to have done the following (as given in this week's iP tasks):
 
-{{ embed_topic("../../admin/appendixE-gitHub.md#pr-review-guidelines", "Admin " + icon_embedding + " **Using GitHub → Guidelines for Reviewing PRs**", "3", indent="1") }}
+{{ embed_topic("../../admin/ip-tasks.mbdf#desc_review_two_prs", "Admin " + icon_embedding + " iP → **Getting gready for PR reviews**", "3", indent="1") }}
 </div>
 
-* {{ step(1) }} **Form sub-groups** of 2 (preferred) or 3 (if unavoidable) members. %%You can form sub-groups between tP teams that are under the same tutor.%%
-* {{ step(2) }} **Open the PR allocated to you**, as given in the panel below.
+<!--
+* {{ step(0) }} **Form sub-groups** of 2 (preferred) or 3 (if unavoidable) members. %%You can form sub-groups between tP teams that are under the same tutor.%% -->
+
+* {{ step(1) }} **Open the PR allocated to you**, as given in the panel below.
 <div class="indented-level2">
 
-<panel header="iP PR review allocation" minimized >
-{% from "_module-" + module + "/studentData.mbdf" import ip_pr_review_allocation with context %}
-Team       | Reviewer | PR to review
------------|----------|--------------{% for line in ip_pr_review_allocation  %}
-{{ line[0] }} | {{ line[1] }} | [{{ line[2] }}]({{ url_module_org }}/{{ ip_repo_name }}/pulls/{{ line[2] }}){% endfor %}
-</panel>
-<p/>
-
-{{ icon_info }} If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can choose another PR that is allocated to another student in your own tutorial ++but not in your sub-team++.
-<p/>
-<box type="tip" light>
-
-Tip for future reference: GitHub allows you to filter PRs/Issues using various criteria such as `author:AuthorUsername` ([example](https://github.com/reposense/RepoSense/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Afzdy1914+) -- see the `filters` text box in the target page).
-
-Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
-<img src="../../admin/images/filterPrsUsingLabels.png" />
-</box>
+<include src="../../admin/common-tutorial.mbdf#show-ip-peer-review-allocation" />
 </div>
 
-* {{ step(3) }} **Review the code for [coding standard]({{ url_java_coding_standard }}) compliance**. You can view the code in the PR by clicking on the {{ show_as_rounded_tab('Files changed') }} tab. When you find a possible coding standard violation, do the following:
-  1. **Show it to your review partner(s) to confirm** it is indeed a violation. You can seek tutor's opinion if you are not sure.
-  1. **Add a comment** to communicate your finding with the author.<br>
-     * Hover over the offending line of code and click on the {{ button('**+**', 'primary') }} that appears to start the comment.
-     * Write your comment ({{ icon_tip }} You can use [GFMD](https://guides.github.com/features/mastering-markdown/) syntax in your comment)<br>
-       e.g., `Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:`<br>
-       > Shouldn't this be **in a new line**, as per our _coding standard_? :thinking:<br>
+* {{ step(3) }} **Review the code in the PR** for [coding standard]({{ url_java_coding_standard }}) compliance, but note the following:
+  * After adding the first review comment, take a screenshot of the comment and paste in the _shared workspace_ document. This will help the tutor confirm that you are on the right track.
+  * Do not submit the full review yet. After you cannot find any more coding standard violations, move to the {{ step(4) }}
+  * For reference, PR reviewing steps are given in the panel below:
 
-       e.g., <br>
-       > Also consider alternative names such as `doX` or `putX` here, which might be more in line with the coding standard.
-     * As illustrated in the examples above, ==phrasing comments as questions or using words such as 'consider'== (instead of `You should do X` or `Change this to X`) is recommended to reflect that you are a peer, not a superior. 
-     * When you are done writing the comment, click on the {{ button('**Start a review**', 'success') }} (not the {{ button('**Add single comment**') }} button)
+{{ embed_topic("../../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=4) }}
 
-* {{ step(4) }} **Review the code for code quality** best practices you have learned so far. When you find a potential opportunity to improve the code quality, confirm with your review partners (and the tutor, if needed) and add a comment as before. Some code quality issues you can check for (not an exhaustive list):
+
+* {{ step(4) }} **Review the code for code quality** best practices you have learned so far. When you find a potential opportunity to improve the code quality, add a comment as before. Some code quality issues you can check for (not an exhaustive list):
   * Methods that are too long
   * Code nested too deeply
   * Not enough SLAP
@@ -75,18 +53,8 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 </box>
 </div>
 
-* {{ step(5) }} **Finish the review**. When it is time to end the tutorial, finish the review as follows:
-  1. Click on the {{ button('**Finish your review**', 'success') }} at the top of the page.
-  1. Choose the `Comment` option (not `Approve` or `Request changes`).
-  1. In the comment box, mention your review partners e.g., `Also took part in this review @JonhDoe`. You can also give an overall comment about the code e.g.,
-     ```
-     Overall, we found your code easy to read for the most part except a few places
-     where the nesting was too deep. Hope our comments help you improve the code further.
-     All the best for your iP :-)
-     [Also took part in this review: @JonhDoe]
-     ```
-  1. Click on the {{ button('**Submit review**', 'success') }} button to finish the review.
+* {{ step(5) }} **Finish the review**. When it is time to end the tutorial, finish the review as per step 5 in the panel below but choose the `Comment` option (not `Approve` or `Request changes` option):
 
-* {{ step(6) }} **[After the tutorial] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in the guidelines below, do not get into arguments with PR reviewers/authors.
+{{ embed_topic("../../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=4) }}
 
-{{ embed_topic("../../admin/appendixE-gitHub.md#pr-review-guidelines", "Admin " + icon_embedding + " **Using GitHub → Guidelines for Reviewing PRs**", "3", indent="2") }}
+* {{ step(6) }} **[After the tutorial] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in [these guidelines](https://se-education.org/guides/guidelines/PRs-reviewing.html), do not get into arguments with PR reviewers/authors.

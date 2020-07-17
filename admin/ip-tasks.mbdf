@@ -286,10 +286,12 @@ Resources:
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
   * Comment on coding standard violations in particular.
   * At the end of the review, choose `Comment` (i.e., not `Approve` or `Request changes`)
-* **Review two PRs** created by your classmates. PRs can be found [here]({{ url_module_org }}/{{ ip_repo_name }}/pulls).
-  * The allocation of which PRs to review will be specified in [this page]({{team_IDs_page}}) (you will be notified when the allocation is ready).
-  * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
-  * If the student you have been allocated to review has not created a PR yet, you can review another PR of your choice.
+* **Review two PRs** created by your classmates. The review allocation is given in the panel below.
+<div class="indented-level2">
+
+<include src="common-tutorial.mbdf#show-ip-peer-review-allocation" />
+</div>
+
 {% elseif cs2113 %}
 * **Do the following to prepare for the PR review exercise** you will be doing in the coming tutorial.
   * Learn how to review PRs:
@@ -298,17 +300,16 @@ Resources:
 
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
 {% endif %}
+</span>
+{#====================================================================================================================#}
 
-* Note the following too.
-<div class="indented-level2">
+<span id="heading_learn_from_others">Learn from others (optional)</span>
+<span id="desc_learn_from_others">
 
-<box type="tip" light>
+* **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
 
-**You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent=2) }}
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1") }}
-</box>
-</div>
 </span>
 {#====================================================================================================================#}
 

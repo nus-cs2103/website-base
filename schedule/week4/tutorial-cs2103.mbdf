@@ -7,11 +7,7 @@
 
 #### {{ thumb(2) }} **Discuss tP progress**
 
-* Show your collaborative project doc(s) to the tutor.
-* Share the project direction, user profile, value proposition you have decided upon.
-* Give feedback to the other team. Some examples:
-  * Suppose you belong to the proposed target user group; do you find the value proposition attractive?
-  * Do you foresee any potential violation of the project constraints?
+<include src="../../admin/common-tutorial.mbdf#share-project-direction" />
 
 #### {{ thumb(3) }} **Discuss weekly topics**
 

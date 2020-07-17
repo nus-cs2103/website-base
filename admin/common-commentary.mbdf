@@ -7,6 +7,12 @@
 Given this is a first course in SE, tradition demands that we start by defining the subject. However, we are not going to spend a lot of time going through definitions of SE. Instead, let's look at an extract from the very first chapter of a very famous SE book, with the aim of providing some inspiration but also an appreciation of the challenges ahead.
 </div>
 <!-- ==================================================================================================== -->
+                                             Requirements
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("Specifying Requirements [quick peek ahead]") }}">
+This week, you will be dealing with the _requirements_ aspect of the tP. While there isn't time in this week to learn that topic fully, let's learn a couple the techniques you'll be using to deal with requirements of your tP this week: _user stories_ and _feature lists_.
+</div>
+<!-- ==================================================================================================== -->
                                              OOP
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("OOP: Classes and Objects") }}">
@@ -50,6 +56,14 @@ Inheritance is even more powerful when combined with _polymorphism_ (which also 
 <div id="{{ slugify("OOP + Java: Enumerations") }}">
 An _enumeration_ is something in between a primitive (e.g., `int`) and a class (e.g., `Person`). Let's learn about enumerations next.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("OOP + Java: Abstract Classes") }}">
+It is time to move on to some intermediate level OOP concepts. Next, let's learn about _abstract classes_ and how they are implemented in Java.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("OOP + Java: Interfaces") }}">
+From abstract classes, we move to another related OOP concept _interfaces_, and how they are implemented in Java.
+</div>
 <!-- ==================================================================================================== -->
                                              C++ to Java
 <!-- ==================================================================================================== -->
@@ -79,6 +93,18 @@ Having seen how to use objects in Java, the next step is learn how to define new
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Constants") }}">
 You already know how to define variables in Java code; do you know how to define constants?
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Casting") }}">
+As you have learned the Java basic topics already, it is time to move to intermediate level topics. This week, we cover several such topics, starting with the one given below.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Packages") }}">
+As you add more and more Java classes to your project, keeping all those classes in the same directory becomes untenable. The solution is covered in the next topic.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Access Modifiers") }}">
+As the size of your Java code base grows, every class being able to access every member of every other class can be problematic. Hence, there should be a way to control the access to our Java classes and their members. The solution is given in the topic below.
 </div>
 <!-- ==================================================================================================== -->
                                            Revision Control
@@ -131,6 +157,10 @@ Let's learn how to create a pull request (PRs) on GitHub; you need to create one
 Follow that with learning how to review PRs as you'll be doing that too later in this week.
 </span>
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("RCS: Branching") }}">
+Let's learn about a few more Git techniques, starting with branching. Although these techniques are not really needed for the iP, we force you to use them in the iP so that you have more time to practice them before they are really needed in the tP.
+</div>
 <!-- ==================================================================================================== -->
                                      IDEs
 <!-- ==================================================================================================== -->
@@ -159,6 +189,12 @@ Continuing our theme on _code quality_, given below is another aspect of it: _re
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Code Quality: Refactoring") }}">
 Knowing code-quality guidelines is useful for sure, but how do we improve the code quality of existing code in a systematic and safe way? That's where the next topic comes in.
+</div>
+<!-- ==================================================================================================== -->
+                                    Error Handling
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("Error Handling: Exceptions") }}">
+So far, your iP may have assumed a 'perfect world' e.g., user input is always in the expected format. To make the product ready for the not-so-perfect real world, the code should be able to handle error conditions. Let's learn how to do that.
 </div>
 <!-- ==================================================================================================== -->
                                     Testing

@@ -45,6 +45,6 @@ Quickly update the tutor about your iP progress:
 #### {{ thumb(3) }} Prioritize tP user stories
 
 * Show your list of tP user stories to the tutor %%(for progress tracking)%%.
-* If you haven't done so already, prioritize tP user stories as explained in the [{{ show_as_tab('Project', icon_project) }}](project.html#2-prioritize-the-user-stories-before-or-during-the-tutorial).
+* If you haven't done so already, prioritize tP user stories as explained in the panel below.
 
 {{ embed_topic("../../admin/tp-tasks.mbdf#desc_prioritize_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Choose user stories for " + version_first + "**", "2", indent="2") }}

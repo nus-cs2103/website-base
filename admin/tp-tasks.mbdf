@@ -186,7 +186,7 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
 
 <box type="success" light>
 
-##### <span class="text-success">Project planning, but with a twist</span>
+##### <span class="text-success">Project planning, with a twist</span>
 
 Intuitively, you might think the right thing to do is to decide what features will be in {{ version_final }} and then plan the intermediate versions based on that. But that's not what we are going to do.
 
