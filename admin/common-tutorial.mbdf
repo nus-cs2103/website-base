@@ -52,18 +52,18 @@
   * Do you foresee any potential violation of the project constraints?
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="show-ip-peer-review-allocation">
 
 {% macro get_pr_link(username) -%}[{{ username }}]({{ url_module_org }}/{{ ip_repo_name }}/pulls/{{ username }}){%- endmacro %}
+<div id="show-ip-peer-review-allocation-1">
 <panel header="iP PR review allocation" minimized >
 {% from "_module-" + module + "/studentData.mbdf" import ip_pr_review_allocation with context %}
-Tutorial | Reviewer | PR to review | Backup PR to review
----------|----------|--------------|---------------------{% for line in ip_pr_review_allocation  %}
+Tutorial | Reviewer | First PR to review | Backup PR to review
+---------|----------|--------------------|---------------------{% for line in ip_pr_review_allocation  %}
 {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | {{ get_pr_link(line[3]) }}{% endfor %}
 </panel>
 <p/>
 
-{{ icon_info }} If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the _Backup PR to review_ provided in the allocation table. Failing both, review another PR from another student in your own tutorial ++but not in your team++.
+{{ icon_info }} If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the _Backup PR to review_ provided in the allocation table. Failing both, review another PR allocated to another student in your own tutorial ++but not in your team++.
 <p/>
 
 <box type="tip" light>
@@ -73,5 +73,18 @@ Tip for future reference: GitHub allows you to filter PRs/Issues using various c
 Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 <img src="images/filterPrsUsingLabels.png" />
 </box>
+</div>
+<div id="show-ip-peer-review-allocation-2">
+<panel header="iP PR review allocation" minimized >
+{% from "_module-" + module + "/studentData.mbdf" import ip_pr_review_allocation with context %}
+Tutorial | Reviewer | Second PR to review | Backup PR to review
+---------|----------|---------------------|---------------------{% for line in ip_pr_review_allocation  %}
+{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | {{ get_pr_link(line[5]) }}{% endfor %}
+</panel>
+<p/>
+
+{{ icon_info }} If the allocated PR is not suitable, use the same strategy as before to find an alternative PR to review.
+<p/>
+
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

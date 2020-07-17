@@ -3,7 +3,7 @@
 #### {{ thumb(1) }} Choose tP user stories for v1.0
 
 * Show your list of tP user stories to the tutor %%(for progress tracking)%%.
-* Choose user stories for v1.0 as explained below.
+* Choose user stories for {{ version_first }} as explained below.
 
 <div class="indented-level2">
 

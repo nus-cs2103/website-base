@@ -1,16 +1,16 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
-{% call topic_preamble("Developer Testing") %}
+{% call topic_preamble("Developer Testing", reuse=false) %}
 **This week, you will start using JUnit to write automated Java tests for your tP**, in addition to using the I/O redirection test (as you did in the iP).
 
 First, let us learn such testing fits into an aspect called _developer testing_ of the testing landscape.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("testing-testAutomation-usingTestDrivers") %}
+{% call topic_preamble("testing-testAutomation-usingTestDrivers", reuse=false) %}
 **The sections below gives an overview of _test automation_**, something used heavily in developer testing.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("cppToJava-junit-basic") %}
+{% call topic_preamble("cppToJava-junit-basic", reuse=false) %}
 **Now, let us learn about JUnit, a tool used for automated testing.** JUnit is a third-party tool (not included in the JDK) but your tP project is already configured to use JUnit, with the help of Gradle. That means the video tutorial given at the end of the section is mostly not applicable to you, unless you are interested to learn how to set up a non-Gradle project for JUnit.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
@@ -22,35 +22,35 @@ Quoting from tP instructions:
 </blockquote>
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Writing Developer Documents") %}
+{% call topic_preamble("Writing Developer Documents", reuse=false) %}
 **You will be writing some developer documentation as well in the tP**, unlike the iP in which you only wrote some user documentation. To prepare you for that, given below is a brief introduction to developer documentation.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Design: Models") %}
+{% call topic_preamble("Design: Models", reuse=false) %}
 One important objective of developer documentation is to explain the design and the implementation of the software, which usually uses diagrams as _models_ of the design being described.
 
 **Let's learn what models are, and how they are useful even beyond mere documentation.**
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Class/Object Diagrams: Basics") %}
+{% call topic_preamble("Class/Object Diagrams: Basics", reuse=false) %}
 This module covers only two types of diagrams: class/object diagrams (CD/OD) -- which model a _structural_ aspect of an OOP design, and sequence diagrams (SD) -- which model a _behavioral_ aspect. This week, let's learn the basic CD/OD notation.
 
 We recommend you ==try the relevant post-lecture quizzes as you read each sections== below. In these quizzes, you will  be able to see the answers immediately after completing the quiz.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("modeling-modelingStructures-objectDiagrams") %}
+{% call topic_preamble("modeling-modelingStructures-objectDiagrams", reuse=false) %}
 **Object diagrams complements class diagrams** and therefore covered together with class diagrams.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Project Mgt: Scheduling and Tracking") %}
+{% call topic_preamble("Project Mgt: Scheduling and Tracking", reuse=false) %}
 As you are now doing the tP, it is a good time to learn **some very basic (almost common sense) techniques that can help in scheduling and tracking your tP**.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("projectPlanning-ganttCharts") %}
+{% call topic_preamble("projectPlanning-ganttCharts", reuse=false) %}
 GANTT Charts and PERT charts are popular tools in the project management domain but they are rarely useful in small software projects. Hence, they are not included in {{ module }} syllabus but it is **useful to know at least their names and how they look like**.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("teamwork-teamStructures") %}
+{% call topic_preamble("teamwork-teamStructures", reuse=false) %}
 This topic is included in the syllabus just **to let you know that teams can be structured in different ways**.
 
 Which of them is closest to the structure of your team?

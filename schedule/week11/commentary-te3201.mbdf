@@ -1,57 +1,57 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
-{% call topic_preamble("Test Case Design") %}
+{% call topic_preamble("Test Case Design", reuse=false) %}
 Previously, you learned how to write Python unit tests. This week, let's learn about how to design better test cases.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("testCaseDesign-introduction-what") %}
+{% call topic_preamble("testCaseDesign-introduction-what", reuse=false) %}
 **What is _test case design_, and why should we care?**
 
 {{ panopto("bd513fd6-8ccb-4bb3-8467-ab8d009a8de0") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("testCaseDesign-introduction-blackVsGlass") %}
+{% call topic_preamble("testCaseDesign-introduction-blackVsGlass", reuse=false) %}
 **How much information about the code is being used when designing test cases?**
 
 {{ panopto("8221a124-fe08-4c48-8a72-ab8d00aa53d3") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Equivalence Partitioning") %}
+{% call topic_preamble("Equivalence Partitioning", reuse=false) %}
 Next, let us look at a technique that can improve the quality of test cases.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("testCaseDesign-equivalencePartitions-what") %}
+{% call topic_preamble("testCaseDesign-equivalencePartitions-what", reuse=false) %}
 {{ panopto("59a122d2-7170-4aea-9888-ab8d00b850ed") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("testCaseDesign-equivalencePartitions-basic") %}
+{% call topic_preamble("testCaseDesign-equivalencePartitions-basic", reuse=false) %}
 {{ panopto("83001c05-69fb-4322-b571-ab8d00cd4337") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Boundary Value Analysis") %}
+{% call topic_preamble("Boundary Value Analysis", reuse=false) %}
 Here is another technique that can improve the quality of test cases.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("testCaseDesign-boundaryValueAnalysis-what") %}
+{% call topic_preamble("testCaseDesign-boundaryValueAnalysis-what", reuse=false) %}
 {{ panopto("357faa3a-c24a-4ff5-ac10-ab8e00baf4f5") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("testCaseDesign-boundaryValueAnalysis-how") %}
+{% call topic_preamble("testCaseDesign-boundaryValueAnalysis-how", reuse=false) %}
 {{ panopto("0edaf584-6ba5-4b05-8f98-ab8e00bfc8975") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Other QA Techniques") %}
+{% call topic_preamble("Other QA Techniques", reuse=false) %}
 Testing is not the same as Quality Assurance. What else can be done for QA?
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("qualityAssurance-codeReviews-what") %}
+{% call topic_preamble("qualityAssurance-codeReviews-what", reuse=false) %}
 {{ panopto("e43e6509-74e2-4a5c-9f3d-ab9200c552f6") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("qualityAssurance-staticAnalysis-what") %}
+{% call topic_preamble("qualityAssurance-staticAnalysis-what", reuse=false) %}
 {{ panopto("a44af2d0-85a7-4183-8330-ab9200cfe405") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("qualityAssurance-formalVerification-what") %}
+{% call topic_preamble("qualityAssurance-formalVerification-what", reuse=false) %}
 {{ panopto("7b805aba-bb87-41a3-abb6-ab9200d68637") }}
 {% endcall %}

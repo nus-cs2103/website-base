@@ -1,16 +1,16 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
-{% call topic_preamble("UML Class Diagrams: Basics") %}
+{% call topic_preamble("UML Class Diagrams: Basics", reuse=false) %}
 This week, **we start learning a UML diagram called _Class Diagrams_.**
 
 {{ panopto("c9727e98-4bb6-4de3-b3ec-ab81009c3af2") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("UML Object Diagrams") %}
+{% call topic_preamble("UML Object Diagrams", reuse=false) %}
 **As we learn about class diagrams, we should also learn about _object diagrams_** as they complement each other.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("uml-notes-notes") %}
+{% call topic_preamble("uml-notes-notes", reuse=false) %}
 **UML has a way to add additional notes to any UML diagram**, as shown below.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
@@ -20,7 +20,7 @@ After learning the UML notations above, you can attempt the exercise in the foll
 {{ panopto("dab3bb0f-c0cd-40af-8e39-ab88005aa195") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("SDLC Process Models") %}
+{% call topic_preamble("SDLC Process Models", reuse=false) %}
 Given below is a brief introduction to the some _processes_ (i.e., approaches for running the project) by software projects. As you are not required to follow these in your project, we only aim to get an awareness of these processes in this module.
 
 {{ panopto("a1bfa255-292f-4ee6-8e65-ab8200837d82") }}

@@ -83,10 +83,13 @@
   ['ANDY..YANG', 'CS2113T-T13-3', 'andy-aw-why']
 ] %}
 
+{# format: [team, reviewer, reviewee1, backup1, reviewee2, backup2]
+From the same tutorial. One for coding standard review, one for code quality.
+ #}
 {% set ip_pr_review_allocation = [
- ['CS2113-T15-2', 'E0309556', 'alwayshuizhen', 'abc'],
- ['CS2113-T15-2', 'Keith-JK', 'yantingsanity', 'def'],
- ['CS2113-T15-2', 'jichngan', 'jinfayap', 'xyz']
+ ['CS2113-T15-2', 'E0309556', 'r11', 'b11', 'r12', 'b12'],
+ ['CS2113-T15-2', 'Keith-JK', 'r21', 'b21', 'r22', 'b22'],
+ ['CS2113-T15-2', 'jichngan', 'r31', 'b31', 'r32', 'b32']
 ]%}
 
 {% set team_review_allocation = [

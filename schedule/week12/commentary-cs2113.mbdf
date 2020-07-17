@@ -1,42 +1,42 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
-{% call topic_preamble("Boundary Value Analysis") %}
+{% call topic_preamble("Boundary Value Analysis", reuse=false) %}
 Last week, we learned about _equivalence partitions_, a heuristic for improving E&E of testing. This week, let us learn another heuristic that builds on top of equivalence partitioning.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("testCaseDesign-boundaryValueAnalysis-what") %}
+{% call topic_preamble("testCaseDesign-boundaryValueAnalysis-what", reuse=false) %}
 {{ panopto("357faa3a-c24a-4ff5-ac10-ab8e00baf4f5") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("testCaseDesign-boundaryValueAnalysis-how") %}
+{% call topic_preamble("testCaseDesign-boundaryValueAnalysis-how", reuse=false) %}
 {{ panopto("0edaf584-6ba5-4b05-8f98-ab8e00bfc897") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Combining Multiple Test Inputs") %}
+{% call topic_preamble("Combining Multiple Test Inputs", reuse=false) %}
 The number of test cases can increase when a the SUT takes multiple inputs. Let's have a brief peek into how we can deal with such situations.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Other QA Techniques") %}
+{% call topic_preamble("Other QA Techniques", reuse=false) %}
 Testing is not the same as Quality Assurance. What else can be done for QA?
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("qualityAssurance-introduction-validationVsVerification") %}
+{% call topic_preamble("qualityAssurance-introduction-validationVsVerification", reuse=false) %}
 {{ panopto("fbc72848-4d08-4615-8919-ab9200baa7bf") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("qualityAssurance-codeReviews-what") %}
+{% call topic_preamble("qualityAssurance-codeReviews-what", reuse=false) %}
 {{ panopto("e43e6509-74e2-4a5c-9f3d-ab9200c552f6") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("qualityAssurance-staticAnalysis-what") %}
+{% call topic_preamble("qualityAssurance-staticAnalysis-what", reuse=false) %}
 {{ panopto("a44af2d0-85a7-4183-8330-ab9200cfe405") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("qualityAssurance-formalVerification-what") %}
+{% call topic_preamble("qualityAssurance-formalVerification-what", reuse=false) %}
 {{ panopto("7b805aba-bb87-41a3-abb6-ab9200d68637") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("SDLC Process Models: XP/Scrum") %}
+{% call topic_preamble("SDLC Process Models: XP/Scrum", reuse=false) %}
 In [a previous week](../week7/topics.html), you learned about _sequential_ and _iterative_ ways of doing a software.
 Now, let us take a quick look at a couple of well-known processes used in the industry, both of which fall into a category called _agile processes_.
 {% endcall %}

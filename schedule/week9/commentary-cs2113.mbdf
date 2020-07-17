@@ -1,22 +1,22 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
-{% call topic_preamble("Class Diagrams: Intermediate-Level") %}
+{% call topic_preamble("Class Diagrams: Intermediate-Level", reuse=false) %}
 **This week, let us learn the remaining class diagram notations**.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Logging") %}
+{% call topic_preamble("Logging", reuse=false) %}
 Given next are **two techniques that help you locate problems in the code**.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Design Principles") %}
+{% call topic_preamble("Design Principles", reuse=false) %}
 As you are still in the early stage of the tP, **this is a good time to learn some design principles that you can try to apply as you evolve the tP design**.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("designFundamentals-abstraction-what") %}
+{% call topic_preamble("designFundamentals-abstraction-what", reuse=false) %}
 Let's start by learning **the three most fundamental design qualities** upon which all other design principles are built.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Some other principles") %}
+{% call topic_preamble("Some other principles", reuse=false) %}
 Given next are **two design principles that we can apply when designing OOP systems**.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
@@ -26,7 +26,7 @@ As you may have realized already, the two principles given above are somewhat si
 To learn more principles, you can go to [https://se-education.org/se-book/principles/](https://se-education.org/se-book/principles/).
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Testing: Intermediate Techniques") %}
+{% call topic_preamble("Testing: Intermediate Techniques", reuse=false) %}
 We started writing JUnit testing in the last week. The topics below helps you push a bit further in the same direction.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

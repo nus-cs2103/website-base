@@ -106,6 +106,28 @@ As you add more and more Java classes to your project, keeping all those classes
 <div id="{{ slugify("Java: Access Modifiers") }}">
 As the size of your Java code base grows, every class being able to access every member of every other class can be problematic. Hence, there should be a way to control the access to our Java classes and their members. The solution is given in the topic below.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Generics") }}">
+As usual, we cover a few more Java topics that are relevant to the iP this week. We start with topics related to data structures that you can use to work with collections of objects, as you'll need to be able to manage a collection of task objects in your iP.
+
+But first, let's learn a programming technique called _generics_ (similar to C++ _templates_) often used in such data structures.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Collections") }}">
+Next, we learn about some built-in data structures that can be used to manage a collection of objects.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: File Access") }}">
+Another thing you need to do in the iP this week is reading from and writing to files. Let's learn how to do that next.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: JAR files") }}">
+This week, you'll be packaging your iP as a single executable file. The next topic covers how to do that.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Varargs") }}">
+While the next two topics are optional, we recommend that you ==have a quick look anyway==, just so that you know their existence at least.
+</div>
 <!-- ==================================================================================================== -->
                                            Revision Control
 <!-- ==================================================================================================== -->

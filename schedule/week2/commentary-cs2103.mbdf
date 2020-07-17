@@ -6,7 +6,7 @@
 
 <!-- ---------------------------------------------------------------------------- -->
 
-{% call topic_preamble("SDLC Process Models") %}
+{% call topic_preamble("SDLC Process Models", reuse=false) %}
 
 Broadly speaking, there are two approaches to doing a software project. Those two approaches are also highly relevant to the way this module is run, and how it is different from most SE modules elsewhere.
 
@@ -24,7 +24,7 @@ Let's learn about those two approaches early so that we can better understand ho
 {{ topic_preamble("Automated Testing of Text UIs") }}
 <!-- ---------------------------------------------------------------------------- -->
 
-{% call topic_followup("testing-testAutomation-testingTextUis") %}
+{% call topic_followup("testing-testAutomation-testingTextUis", reuse=false) %}
 
 Congrats! You've made it to the end of this week's topics. It feels like a lot right now but now that we got an early start, this stuff will be second nature to you by the time you are done with the semester. :-)
 

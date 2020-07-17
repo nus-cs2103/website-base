@@ -6,55 +6,20 @@
 
 #### {{ thumb(2) }} **Review Peer iP PRs** {{ icon_graded }}
 
-<div class="indented-level2">
+<div class="indented">
 <box type="important">
 
 * The quality of the work you will do in this tutorial task will be considered for your iP grade.
 * This task is applicable even if you have been exempted from the iP.
 * This activity is worth `3` participation points
 </box>
-
-Note that you are expected to have done the following (as given in this week's iP tasks):
-
-{{ embed_topic("../../admin/ip-tasks.mbdf#desc_review_two_prs", "Admin " + icon_embedding + " iP → **Getting gready for PR reviews**", "3", indent="1") }}
 </div>
 
 <!--
 * {{ step(0) }} **Form sub-groups** of 2 (preferred) or 3 (if unavoidable) members. %%You can form sub-groups between tP teams that are under the same tutor.%% -->
 
-* {{ step(1) }} **Open the PR allocated to you**, as given in the panel below.
-<div class="indented-level2">
-
-<include src="../../admin/common-tutorial.mbdf#show-ip-peer-review-allocation" />
-</div>
-
-* {{ step(3) }} **Review the code in the PR** for [coding standard]({{ url_java_coding_standard }}) compliance, but note the following:
+* **Do the following iP task** but not the following:
   * After adding the first review comment, take a screenshot of the comment and paste in the _shared workspace_ document. This will help the tutor confirm that you are on the right track.
-  * Do not submit the full review yet. After you cannot find any more coding standard violations, move to the {{ step(4) }}
-  * For reference, PR reviewing steps are given in the panel below:
+  * Do {{ step(3) }} only after the tutorial is over.
 
-{{ embed_topic("../../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=4) }}
-
-
-* {{ step(4) }} **Review the code for code quality** best practices you have learned so far. When you find a potential opportunity to improve the code quality, add a comment as before. Some code quality issues you can check for (not an exhaustive list):
-  * Methods that are too long
-  * Code nested too deeply
-  * Not enough SLAP
-  * Names that can be improved
-  * Logic hard to understand
-
-<div class="indented-level2">
-
-<box type="tip" light>
-
-==As this is a _peer_ review of PRs,== you are not expected to always know better than the PR author. Feel free to,
-* Compliment the author if you learned a better way of implementing something by reviewing the PR. e.g., `This way of doing X seems much cleaner that the way I did. Nice :+1:`
-* Ask the author for more info. e.g., `I find this use of class X interesting? May I know why you did it this way instead of ...?`
-</box>
-</div>
-
-* {{ step(5) }} **Finish the review**. When it is time to end the tutorial, finish the review as per step 5 in the panel below but choose the `Comment` option (not `Approve` or `Request changes` option):
-
-{{ embed_topic("../../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=4) }}
-
-* {{ step(6) }} **[After the tutorial] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in [these guidelines](https://se-education.org/guides/guidelines/PRs-reviewing.html), do not get into arguments with PR reviewers/authors.
+{{ embed_topic("../../admin/ip-tasks.mbdf#desc_review_two_prs", "Admin " + icon_embedding + " iP → **Getting gready for PR reviews**", "3", indent="2") }}

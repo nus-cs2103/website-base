@@ -25,7 +25,8 @@ week4: [
     {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: 'optional'},
     {id: 'A-CodeQuality', title: 'Improve Code Quality'}
   ]},
-  {id: 'review_two_prs', deadline: 'before the tutorial'}
+  {id: 'prepare_for_pr_reviews', deadline: 'before the tutorial'},
+  {id: 'review_two_prs', deadline: 'during the tutorial'}
 ],
 week5: [
   {id: 'learn_from_others'},

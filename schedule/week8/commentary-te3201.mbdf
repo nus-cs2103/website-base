@@ -1,15 +1,15 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
-{% call topic_preamble("OOP: Basics") %}
+{% call topic_preamble("OOP: Basics", reuse=false) %}
 **Given below is a general OOP concept of _classes_**, as you will be writing Python classes this week.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Reuse: APIs, Frameworks, Libraries, Platforms") %}
+{% call topic_preamble("Reuse: APIs, Frameworks, Libraries, Platforms", reuse=false) %}
 **Next, let us learn about various means of reuse**, as you will be learning about installing third-party Python libraries this week.
 
 {{ panopto("e47e8dfe-2550-41a6-9566-ab7a0095e5e7") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Cloud Computing") %}
+{% call topic_preamble("Cloud Computing", reuse=false) %}
 **A brief introduction to cloud computing is given below** as it is too a means of reuse in some sense. Given _cloud computing_ is a popular concept today, it may be useful for you to know a little bit about it.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

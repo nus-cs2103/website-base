@@ -5,7 +5,7 @@
 {{ topic_preamble("RCS: Creating Pull Requests") }}
 
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Java") %}
+{% call topic_preamble("Java", reuse=false) %}
 
 Let's start by going through some Java topics that is relevant to the iP. You can skim through or skip topics that you are familiar with already.
 
@@ -13,7 +13,7 @@ Let's start by going through some Java topics that is relevant to the iP. You ca
 <!-- ---------------------------------------------------------------------------- -->
 {{ topic_preamble("Code Quality: Coding Standards") }}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Developer Testing") %}
+{% call topic_preamble("Developer Testing", reuse=false) %}
 
 As promised last week, let's learn some more sophisticated ways of testing.
 

@@ -1,22 +1,22 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("More Design Patterns") %}
+{% call topic_preamble("More Design Patterns", reuse=false) %}
 
 Last week, you learned about design patterns, and a few example design patterns. Let's continue that journey this week.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("designPatterns-modelViewController-what") %}
+{% call topic_preamble("designPatterns-modelViewController-what", reuse=false) %}
 
 First, let's learn two more widely-cited design patterns.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("designPatterns-more-otherDesignPatterns") %}
+{% call topic_preamble("designPatterns-more-otherDesignPatterns", reuse=false) %}
 
 Given below are a few more topics that continue the theme of design patterns, but have been made optional to reduce the module workload.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Architectural Styles") %}
+{% call topic_preamble("Architectural Styles", reuse=false) %}
 
 The next topic is like 'design patterns at architecture level'. In fact, the MVC pattern you saw earlier come close to this category too.
 {% endcall %}
@@ -26,29 +26,29 @@ The next topic is like 'design patterns at architecture level'. In fact, the MVC
 As with design patterns, we covered only a few architecture styles. Although you didn't have to design an architecture in the tP, knowing the existence of these styles might come in handy in your future projects.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Test Cases: Combining Multiple Inputs") %}
+{% call topic_preamble("Test Cases: Combining Multiple Inputs", reuse=false) %}
 
 Last week, you learned <tooltip content="Equivalence Partitioning, Boundary Value Analysis">two heuristics</tooltip> that can improve the test case quality. Given below is another such heuristic applicable when a test has multiple inputs.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Other QA Techniques") %}
+{% call topic_preamble("Other QA Techniques", reuse=false) %}
 
 Testing is the first thing that comes to mind when you hear 'Quality Assurance' but there are other QA techniques that can complement testing. Let's take a brief look at those next.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Reuse") %}
+{% call topic_preamble("Reuse", reuse=false) %}
 
 Do you know the difference between a _library_ and a _framework_?
 
 Programmers often reuse code in various ways. The next few topics aim to clarify the difference between several forms reusable software comes in.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Cloud Computing") %}
+{% call topic_preamble("Cloud Computing", reuse=false) %}
 
 While not examinable, the next few sections explain some basic cloud computing concepts that are relevant to software engineers.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Other UML Models") %}
+{% call topic_preamble("Other UML Models", reuse=false) %}
 
 To complete the picture about UML, given below are a peek into the other types of UML diagrams. The first two are the ones most likely to be useful in your future work.
 {% endcall %}
