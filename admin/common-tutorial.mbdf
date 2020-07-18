@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, step, thumb, timing_badge with context %}
 
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="form-teams">
@@ -86,5 +86,167 @@ Tutorial | Reviewer | Second PR to review | Backup PR to review
 {{ icon_info }} If the allocated PR is not suitable, use the same strategy as before to find an alternative PR to review.
 <p/>
 
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="demo-debugging-using-personbook">
+
+<box light type="success" add-class="ml-4" icon=":fas-lightbulb:">
+
+**Suggested pre-tutorial preparations**:
+* Clone the [{{ url_module_org }}/personbook]({{ url_module_org }}/personbook) repo to your Computer (no need to fork first).
+* Set it up in your IDE.
+* Use the IDE debugging to step through the code to understand how the code works. For example, you can try to find answers to these questions:
+  * How to add a new `find` command to locate persons by name?
+  * What's the purpose of the variable `PersonBook#lastShownList`? Is it really needed?
+
+<panel type="seamless" header="FYI, here's a relevant video used in the textbook">
+
+@[youtube](1bCgzjatcr4)
+
+</panel>
+
+</box>
+
+<div class="indented">
+
+During the tutorial, **demo your ability to do debugging using an IDE** by performing the following tasks:
+
+1. Set a breakpoint in the following method of the `Main` class.
+   ```java
+   /** Reads the user command and executes it, until the user issues the exit command.  */
+   private void runCommandLoopUntilExitCommand() {
+       Command command;
+       do {
+           String userCommandText = ui.getUserCommand();
+           command = new Parser().parseCommand(userCommandText);
+           CommandResult result = executeCommand(command);
+           personBook.setLastShownList(result.getRelevantPersons());
+           ui.showResultToUser(result);
+
+       } while (!ExitCommand.isExit(command));
+   }
+   ```
+1. Use the debugger to step through the code while explaining how the code works. Start from the `main` method.
+1. Suppose the code behaves incorrectly when using the `list` command after adding two persons. Show how to set a conditional breakpoint so that execution pauses when the user types in the command `list` but doesn't pause for other commands.<br>
+   {{ icon_tip }} You need to set what is known as a _conditional breakpoint_.
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="demo-ip-using-jar">
+
+* Copy your iP jar file to an empty folder.
+* Launch the jar file using the command prompt and type a command.
+* Take a screenshot and paste in the tutorial workspace.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="setup-tp-org-repo">
+
+* To be done in Zoom breakout rooms (per team).
+* Set up the team org, team fork, individual forks as described below:
+
+{{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **Organization Setup**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="2") }}
+
+* **[Each person] Verify that you know how to do the following** by performing each on hour computer and posting a screenshot in the tutorial workspace:
+  * run the code in your IDE
+  * run I/O redirection tests
+  * verify compliance with the coding standard automatically using Gradle
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="update-code-using-forking-workflow">
+<div class="indented">
+
+**In this activity you will be using the forking workflow to do some simple updates to the code base** while working in parallel. The objective is to ensure you know how to follow the expected working in the tP. The steps are given below:
+
+**First, ensure that you know how the _forking workflow_ works.**
+
+{{ embed_topic("../book/revisionControl/forkingWorkflow/text.md#body", "Textbook " + icon_embedding + " Revision Control → **Forking Workflow**", "1", indent=2) }}
+
+**Next, add the `upstream` as a remote**: The forking workflow requires you to pull from the team repo and push to your own fork. To be able to do the former, you need to **add the team repo as a _remote_ of your clone**. Follow the instructions in the panel below to add a new remote with the _Remote name_ `upstream` (can be anything, but `upstream` is a common choice) and _URL / Path_ pointing to the team repo<br>
+    e.g., `https://github.com/{{ semester }}-{{ example_team_id }}/tp.git` (==note the `.git` at the end==)
+
+{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git & GitHub → Pull → [extract] **Working with multiple remotes**", "2", indent=2) }}
+
+**Now, follow these steps to update the code using the forking workflow** e.g., each person can add their details to the `docs/AboutUs.md` page:
+* {{ step(1) }} Decide which update each person will do.
+* {{ step(2) }} Each person,
+  *  {{ step('2.a') }} create a branch (e.g., `johnDoe-AboutUs`) in their local repo.
+  *  {{ step('2.b') }} do the change in the branch.
+  *  {{ step('2.c') }} push the branch to their own fork.
+  *  {{ step('2.d') }} create a PR from their branch in the fork to the `master` branch of the team repo.
+* {{ step(3) }} Work as a team to merge one PR at a time.
+  * If a PR cannot be merged due to conflicts, resolve conflicts as you go (PR conflict resolution was covered in the week 6 lecture activity).
+  * <span class="text-danger">Do not send PRs from team repo to individual repos</span> as that goes against the forking workflow. PRs should only go from forks to the team repo.
+  * For reference, PR merging instructions are in the following textbook section:
+
+{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=4) }}
+
+* {{ step(4) }} Everyone sync their local repo and the fork with the team repo (see the last paragraph in the panel above)
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="demo-junit-tests">
+
+* Run JUnit test of your tP.
+* Take a screenshot of the results and post in the tutorial workspace.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="interpret-person-class-diagram">
+
+* Do the following exercise as directed by the tutor.
+
+<div class="indented-level2">
+
+<include src="../book/modeling/modelingStructures/classDiagramsBasic/q-essay-explainClassDiagram.md" />
+<p/>
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="hand-drawing-diagrams">
+<box type="info">
+
+<pic src="images/drawingDiagrams.png" add-class="float-right mr-2 ml-2">
+
+<small>[Image source: [this article](https://www.deekit.com/7-reasons-why-engineers-are-the-whiteboard-artists/)]</small>
+</pic>
+**_Hand-drawing_ diagrams on a white-board and on paper is an important practical skill** %%(e.g., for technical interviews, project discussions)%%. It's possible that the diagrams you draw in your first few attempts to look amateurish, messy, and hard to read, and the drawing itself will take a long time. With more practice, you will be able to draw such diagrams quicker %%(e.g., draw as you explain verbally your design)%%, with less need for corrections, and the diagrams will look more _professional_ too.
+
+That is why we have structured these tutorials to get everyone to practice this skill so that **your first few (not so good) diagram drawing experiences happen in the tutorial, not in an interview or during your internship.**
+
+Note the following:
+* Draw ==on paper or on a whiteboard or use a free-hand drawing software== (e.g., Bamboo paper). If latter, do not use UML software or predefined shapes.
+* For the same reason, don't use rulers.
+* When the tutor asks you to, take a screenshot or a photo of the drawing and post in the tutorial workspace.
+</box>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="draw-person-guardian-object-diagram">
+
+<!--* Split into sub-teams of 2-3 persons and draw the following exercise on the white board. -->
+<div class="indented-level2">
+
+<include src="common-tutorial.mbdf#hand-drawing-diagrams" />
+</div>
+
+* **Do the following exercise** while noting the info in the box above.
+
+<div class="indented-level2">
+
+<include src="../book/uml/classDiagrams/combine/basic/q-essay-objectDiagramsForClassDiagram.md" />
+<p/>
+</div>
+
+* **Discuss answers** as guided by the tutor.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="draw-box-etc-class-diagram">
+
+* Do the following similar to the earlier exercise.
+<div class="indented-level2">
+
+<include src="../book/modeling/modelingStructures/classDiagramsBasic/q-essay-drawClassDiagramForBoxEtc.md" />
+<p/>
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

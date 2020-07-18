@@ -289,6 +289,11 @@ Resources:
 <span id="heading_review_two_prs">Review some peer PRs</span>
 <span id="desc_review_two_prs">
 
+<box type="info" add-class="ml-4">
+
+This task is worth `2x2=4` participtaion points.
+</box>
+
 * **Learn _how_ you should review PRs in this task**:
 {{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
 
@@ -335,9 +340,9 @@ Resources:
 
 <div class="indented-level2">
 
-<box type="warning">
+<box type="info">
 
-This activity is considered for iP grading.
+This activity is worth `2x2=4` participation points.
 </box>
 <p/>
 <panel header="Allocation for iP peer evaluation" minimized >

@@ -10,7 +10,7 @@
 {{ embed_topic("../../admin/tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → Deliverables → **Demo**", "3") }}
 </div>
 -->
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 **There is no formal tutorial in this week**.
 
 Attempt this question by yourself. The model answer will be released later.

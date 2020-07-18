@@ -49,7 +49,7 @@
     {heading: "SE: Intro"},
       {location: ["softwareEngineering", "introduction", "prosAndCons"]},
   {name: "Project Management"},
-    {heading: "SDLC Process Models"},
+    {heading: "SDLC Process Models: Basics"},
       {location: ["processModels", "introduction", "what"]},
       {location: ["processModels", "introduction", "sequentialModels"]},
       {location: ["processModels", "introduction", "iterativeModels"]},

@@ -73,7 +73,7 @@
 {#====================================================================================================================#}
 <span id="cs2113-week10-intro">
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 Some things to note as you start the {{ version_penultimate }} iteration:
 * **Set moderate targets for functionality.** Adding more functionality than needed will not earn you more marks but can expose you to higher risk of bugs.<br>
   **Focus on improving the process and the quality** instead.
@@ -84,7 +84,7 @@ Some things to note as you start the {{ version_penultimate }} iteration:
 {#====================================================================================================================#}
 <span id="cs2113-week11-intro">
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 ==This week, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening in this week).
 
 To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).
@@ -402,7 +402,7 @@ Update the following pages in your project repo:
 
 </div>
 
-* {{ icon_team }} **Plan the next iteration**. As per the project planning approach described in the box above, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
+* {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
   * ==Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
   * If possible, break the iteration into two increments i.e., aim to produce an even simpler but working version after one week.
   * "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>

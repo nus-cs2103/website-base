@@ -1,7 +1,7 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 **We are moving tutorials to fully-online mode** from this week.
 * **Tutorial submissions will be counted for weekly participation**, as an additional incentive to do tutorial activities. A submission deemed by the instructors as a _reasonable attempt_ (irrespective of the correctness) will be eligible to be counted for participation.
 * **Submission deadline: ==11.59am of the following Wednesday==** (same as quizzes).

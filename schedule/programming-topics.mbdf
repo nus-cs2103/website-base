@@ -131,7 +131,7 @@
 * [**Using an IDE**]({{ baseUrl }}/programming/chapters/ide.html#appendix-b-using-an-ide)
 </div>
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 Most programs need to read from, and write to, files in the hard disk. The topics below cover the Python basics of file reading/writing.
 {% endcall %}
 
@@ -143,7 +143,7 @@ Most programs need to read from, and write to, files in the hard disk. The topic
 <include src="../programming/files-writing/text.md" />{{ hr_double }}
 <include src="../programming/files-csv/text.md" />{{ hr_double }}
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 You are already familiar with repl.it, which can be considered an _online IDE_ with limited features. It is now time to learn a non-online IDE which often can do more things than an online IDE.
 
 **We recommend you use an IDE for your project work from now on**, but you can continue to use repl.it for weekly exercises. The topics below describe two possible options: IDLE (lighter, simpler) and PyCharm (heavier, more powerful).
@@ -161,7 +161,7 @@ You are already familiar with repl.it, which can be considered an _online IDE_ w
   * [Nested Dictionaries]({{ baseUrl }}/programming/chapters/dictionaries.html#nested-dictionaries)
 </div>
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 So far, we have learned how to use Python lists to store sequences of objects. This week we move onto another slightly more complex data structure called _dictionary_ which can store a collection of key-value pairs.
 {% endcall %}
 
@@ -182,7 +182,7 @@ So far, we have learned how to use Python lists to store sequences of objects. T
 * [**Installing 3rd Party Modules**]({{ baseUrl }}/programming/chapters/thirdparty.html#appendix-a-installing-3rd-party-modules)
 </div>
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 So far, we have been using simple objects provided by Python (e.g., str, int, bool) and putting them into lists, dictionaries (which are objects themselves), and combinations of the two (e.g., a list of dictionaries) to arrange our data.
 
 **It is now time to learn how to define our own classes** so that we can create objects that match our needs e.g., to use `Task` objects to represent a task in Monty, instead of using a list such as `["read book", True]`{.python}.
@@ -197,7 +197,7 @@ So far, we have been using simple objects provided by Python (e.g., str, int, bo
 
 <include src="../programming/oop-classes/text.md" />{{ hr_double }}
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 **Next, let's learn how to install and use third-party libraries** so that you can use even more functionality than those Python provides by default.
 
 {{ panopto("e579523f-89cb-4e39-a315-ab7a00a8bc8b") }}
@@ -216,7 +216,7 @@ So far, we have been using simple objects provided by Python (e.g., str, int, bo
 * [**Organizing Python Code**]({{ baseUrl }}/programming/chapters/organizing.html#appendix-c-organizing-python-code)
 </div>
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 **This week, we continue to learn more about Python classes.** Let's start with _class-level_ variables and methods.
 
 {{ panopto("37c74051-6261-4d0b-a517-ab8100a9c87d") }}
@@ -227,7 +227,7 @@ So far, we have been using simple objects provided by Python (e.g., str, int, bo
 
 <include src="../programming/oop-classLevelMembers/text.md" />{{ hr_double }}
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 Next, let us learn to to control access to variables and methods of an object.
 {% endcall %}
 
@@ -235,7 +235,7 @@ Next, let us learn to to control access to variables and methods of an object.
 <include src="../programming/oop-visibility/text.md" />{{ hr_double }}
 
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 As your project code gets bigger, it becomes cumbersome to have all code in one file. **Let's learn how to organize Python code into files and folders.**
 
 {{ panopto("bb9cc539-a07b-4d66-ad2b-ab82009e5eed") }}
@@ -254,7 +254,7 @@ As your project code gets bigger, it becomes cumbersome to have all code in one 
 
 ## **Object-Oriented Programming**
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 As you learn about the OOP inheritance concept (under this week's SE topics), let us also learn how to use inheritance in Python.
 
 {{ panopto("1c82c417-5378-4b7c-84c0-ab88009b476b") }}
@@ -262,7 +262,7 @@ As you learn about the OOP inheritance concept (under this week's SE topics), le
 
 <include src="../programming/oop-inheritance/text.md" />{{ hr_double }}
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 Let us learn how to automate the testing of Python code using unit tests (one of the testing types you learned under this week's SE topics).
 
 {{ panopto("3c10dfe4-413a-449d-aec8-ab8800aa5ffc") }}

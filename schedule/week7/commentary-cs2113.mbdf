@@ -1,39 +1,12 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
-{% call topic_preamble("Java: JavaFX", reuse=false) %}
-**JavaFX is not required for this module** as we strongly discourage you from creating a GUI app. If you are still interest to learn JavaFX, you can refer to the JavaFX tutorial in the [repo you used for the iP]({{ url_module_org }}/{{ ip_repo_name }}#tutorials) (reason: the tutorials in the section below are outdated).
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Documentation Tools", reuse=false) %}
-**You'll need to add JavaDoc comments to the iP code this week. When adding a user guide to the iP, you'll need to use Markdown.** Both those topics are covered below, briefly.
-
-%%FYI, AsciiDoc is a more powerful (but also more complicated) replacement for Markdown. You don't need it for this module.%%
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Code Quality: Code Comments", reuse=false) %}
-**This is the final installment of the _code quality_ topics.** As you are learning about JavaDoc comments this week, you can also learn these guidelines to write better code comments.
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("SDLC Process Models: Basics", reuse=false) %}
-**As you will be starting the tP soon, this is a good time to learn about 'processes' used for software projects.** FYI, you are required to use a _breadth-first iterative_ process for the tP. Read the topics below to learn what that means.
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Continuous Integration/Deployment", reuse=false) %}
-**Modern software projects, and your tP, make heavy use of build/CI/CD tools** The topics below give you an overview of those tools, to prepare you to start using them yourself.
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("RCS: Workflows", reuse=false) %}
-**Next, you will learn a workflow called the 'Forking Flow'**, which combines the various Git and GitHub techniques you have been learning over the past few weeks. It is also the workflow you will use in the tP.
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("gitAndGithub-forkingWorkflow", reuse=false) %}
-==The activity in the section below can be skipped== as you will be doing a similar activity in a coming tutorial.
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("revisionControl-drcsVsCrcs", reuse=false) %}
-**Git is considered a DRCS**. Read the topic below to learn what that means and how it differs from the alternative.
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("revisionControl-featureBranchFlow", reuse=false) %}
-**These are two workflows that are riskier (but simpler) than the forking flow**. After following the forking flow for a while, you may switch to one of these, but at your own risk.
-{% endcall %}
+{{ topic_preamble("Java: Varargs") }}
+{{ topic_preamble("Java: JavaFX") }}
+{{ topic_preamble("documentation-tools-javaDoc-what") }}
+{{ topic_preamble("Code Quality: Code Comments") }}
+{{ topic_preamble("Continuous Integration/Deployment") }}
+{{ topic_preamble("RCS: Merging PRs") }}
+{{ topic_preamble("RCS: Workflows") }}
+{{ topic_preamble("gitAndGithub-forkingWorkflow") }}
+{{ topic_preamble("revisionControl-drcsVsCrcs") }}
+{{ topic_preamble("revisionControl-featureBranchFlow") }}

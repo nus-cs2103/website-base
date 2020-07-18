@@ -8,17 +8,8 @@ As you will be dealing with requirements aspects of the tP soon, it's a good tim
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Requirements: Gathering", reuse=false) %}
-
-Next, a quick look at techniques used for _gathering_ requirements.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Requirements: Specifying", reuse=false) %}
-
-As you may have noticed in the section about prototyping, some techniques can be used for both gathering and specifying requirements. The two things often go hand-in-hand any way. For example, you gather some requirements, specify them in some form, and show them to stakeholders to get feedback.
-
-{% endcall %}
+{{ topic_preamble("Requirements: Gathering") }}
+{{ topic_preamble("Requirements: Specifying") }}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Refactoring", reuse=false) %}
 

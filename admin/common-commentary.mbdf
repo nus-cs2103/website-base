@@ -12,6 +12,26 @@ Given this is a first course in SE, tradition demands that we start by defining 
 <div id="{{ slugify("Specifying Requirements [quick peek ahead]") }}">
 This week, you will be dealing with the _requirements_ aspect of the tP. While there isn't time in this week to learn that topic fully, let's learn a couple the techniques you'll be using to deal with requirements of your tP this week: _user stories_ and _feature lists_.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Requirements: Intro") }}">
+Last week, we had a quick peek at the _requirements_ aspect. Let's study the topic properly this week, starting with an introduction to the topic.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Requirements: Gathering") }}">
+Next, a quick look at techniques used for _gathering_ requirements. They are mostly common-sense but let's go through them for completeness' sake anyway.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Requirements: Specifying") }}">
+<div id="{{ slugify("Requirements: Specifying [continued from last week]") }}">
+As you may have noticed in the section about prototyping, some techniques can be used for both gathering and specifying requirements. The two things often go hand-in-hand any way. For example, you gather some requirements, specify them in some form, and show them to stakeholders to get feedback.
+
+Now, let's look at other techniques used for specifying requirements.<span tags="m--cs2113">Of course, you've seen two of them already.</span>
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("specifyingRequirements-useCases-introduction") }}">
+The technique of _use cases_ (don't confuse with _user stories_) covered below is another widely used technique. However, we only cover it briefly (i.e., you'll learn _what_ it is but not _how_ to use it) to lower to module workload.
+</div>
 <!-- ==================================================================================================== -->
                                              OOP
 <!-- ==================================================================================================== -->
@@ -126,7 +146,15 @@ This week, you'll be packaging your iP as a single executable file. The next top
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Varargs") }}">
-While the next two topics are optional, we recommend that you ==have a quick look anyway==, just so that you know their existence at least.
+While the next few topics are optional, we recommend that you ==have a quick look anyway==, just so that you know their existence at least.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: JavaFX") }}">
+**JavaFX is not required for this module** as we strongly discourage you from creating a GUI app. If you are still interest to learn JavaFX, you can refer to the JavaFX tutorial in the [repo you used for the iP]({{ url_module_org }}/{{ ip_repo_name }}#tutorials) (reason: the tutorials in the section below are outdated).
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("cppToJava-junit-basic") }}">
+**Now, let us learn about JUnit, a tool used for automated testing.** JUnit is a third-party tool (not included in the JDK) but your tP project is already configured to use JUnit, with the help of Gradle. That means the video tutorial given at the end of the section is mostly not applicable to you, unless you are interested to learn how to set up a non-Gradle project for JUnit.
 </div>
 <!-- ==================================================================================================== -->
                                            Revision Control
@@ -180,8 +208,33 @@ Follow that with learning how to review PRs as you'll be doing that too later in
 </span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("RCS: Merging PRs") }}">
+Let's learn how to merge a PR on GitHub; you need to do that in the tP later, and you'll be practicing PR merging in the iP this week.
+
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Branching") }}">
 Let's learn about a few more Git techniques, starting with branching. Although these techniques are not really needed for the iP, we force you to use them in the iP so that you have more time to practice them before they are really needed in the tP.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("RCS: Merge Conflicts") }}">
+When working with Git, sooner or later you will face a problem called _merge conflict_. Let's learn how to deal with them.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("RCS: Workflows") }}">
+**Next, you will learn a workflow called the 'Forking Flow'**, which combines the various Git and GitHub techniques you have been learning over the past few weeks. It is also the workflow you will use in the tP.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("gitAndGithub-forkingWorkflow") }}">
+==The activity in the section below can be skipped== as you will be doing a similar activity in a coming tutorial.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("revisionControl-drcsVsCrcs") }}">
+**Git is considered a DRCS**. Read the topic below to learn what that means and how it differs from the alternative.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("revisionControl-featureBranchFlow") }}">
+**These are two workflows that are riskier (but simpler) than the forking flow**. After following the forking flow for a while, you may switch to one of these, but at your own risk.
 </div>
 <!-- ==================================================================================================== -->
                                      IDEs
@@ -192,6 +245,11 @@ Let's learn about a few more Git techniques, starting with branching. Although t
 :thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
 
 {{ embed_topic("../../admin/moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
+<p/>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("IDEs: Intermediate Features") }}">
+Now that you know how to use IDE basic features, it's worth looking at even more ways of leveraging their power. In particular, ==the _debugging_ feature can be indispensable== at times.
 <p/>
 </div>
 <!-- ==================================================================================================== -->
@@ -212,6 +270,14 @@ Continuing our theme on _code quality_, given below is another aspect of it: _re
 <div id="{{ slugify("Code Quality: Refactoring") }}">
 Knowing code-quality guidelines is useful for sure, but how do we improve the code quality of existing code in a systematic and safe way? That's where the next topic comes in.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Code Quality: Unsafe Practices") }}">
+Another step in our journey to improve code quality: Let's learn some legit but _unsafe_ practices we should avoid.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Code Quality: Code Comments") }}">
+**This is the final installment of the _code quality_ topics.** As you are learning about JavaDoc comments this week, you can also learn these guidelines to write better code comments.
+</div>
 <!-- ==================================================================================================== -->
                                     Error Handling
 <!-- ==================================================================================================== -->
@@ -221,10 +287,75 @@ So far, your iP may have assumed a 'perfect world' e.g., user input is always in
 <!-- ==================================================================================================== -->
                                     Testing
 <!-- ==================================================================================================== -->
-
 <div id="{{ slugify("Automated Testing of Text UIs") }}">
 As you start adding features to your iP iteratively, you'll need **a way to detect if the new code breaks the existing code**. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).
 
 <span tags="m--cs2103">This also means we are not switching focus from the _implementation_ aspect to the _testing_ aspect of SE.</span>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Developer Testing") }}">
+**This week, you will start using JUnit to write automated Java tests for your tP**, in addition to using the I/O redirection test (as you did in the iP).
+
+First, let us learn such testing fits into an aspect called _developer testing_ of the testing landscape.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("testing-testAutomation-usingTestDrivers") }}">
+**The sections below gives an overview of _test automation_**, something used heavily in developer testing.
+</div>
+<!-- ==================================================================================================== -->
+                                    Project Mgt
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("SDLC Process Models: Basics") }}">
+Broadly speaking, there are two approaches to doing a software project. Those two approaches are also highly relevant to the way this module is run, and how it is different from most SE modules elsewhere.
+
+Let's learn about those two approaches early so that we can better understand how this module works.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Project Mgt: Scheduling and Tracking") }}">
+As you are now doing the tP, it is a good time to learn **some very basic (almost common sense) techniques that can help in scheduling and tracking your tP**.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("projectPlanning-ganttCharts") }}">
+GANTT Charts and PERT charts are popular tools in the project management domain but they are rarely useful in small software projects. Hence, they are not included in {{ module }} syllabus but it is **useful to know at least their names and how they look like**.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("teamwork-teamStructures") }}">
+This topic is included in the syllabus just **to let you know that teams can be structured in different ways**.
+
+Which of them is closest to the structure of your team?
+</div>
+<!-- ==================================================================================================== -->
+                                    Documentation
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("documentation-tools-javaDoc-what") }}">
+**You'll need to add JavaDoc comments to the iP code this week.** Let's learn how to do that.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Writing Developer Documents") }}">
+**You will be writing some developer documentation as well in the tP**, unlike the iP in which you only wrote some user documentation. To prepare you for that, given below is a brief introduction to developer documentation.
+</div>
+<!-- ==================================================================================================== -->
+                                    Integration
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("Continuous Integration/Deployment") }}">
+**Modern software projects, and your tP, make heavy use of build/CI/CD tools** The topics below give you an overview of those tools, to prepare you to start using them yourself.
+</div>
+<!-- ==================================================================================================== -->
+                                    Models/UML
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("Design: Models") }}">
+One important objective of developer documentation is to explain the design and the implementation of the software, which usually uses diagrams as _models_ of the design being described.
+
+**Let's learn what models are, and how they are useful even beyond mere documentation.**
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Class/Object Diagrams: Basics") }}">
+This module covers only two types of diagrams: class/object diagrams (CD/OD) -- which model a _structural_ aspect of an OOP design, and sequence diagrams (SD) -- which model a _behavioral_ aspect. This week, let's learn the basic CD/OD notation.
+
+We recommend you ==try the relevant post-lecture quizzes as you read each sections== below. In these quizzes, you will  be able to see the answers immediately after completing the quiz.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("modeling-modelingStructures-objectDiagrams") }}">
+**Object diagrams complements class diagrams** and therefore covered together with class diagrams.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

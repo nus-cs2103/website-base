@@ -17,9 +17,12 @@
 * {{ timing_badge("5+5=10 minutes", "info") }} **Do part (b)** in the same manner.
 -->
 
+<div class="indented-level2">
+
+<include src="../../admin/common-tutorial.mbdf#hand-drawing-diagrams" />
+</div>
+
 * {{ timing_badge("15 minutes", "info") }} **Each student do the part (a)** of the following exercise, by hand-drawing the answer.
-  * Our aim is to be able to draw UML diagrams quickly in a discussion setting. Hence, draw ==on paper or on a whiteboard or use a free-hand drawing software== (e.g., Bamboo paper). If latter, do not use UML software or predefined shapes.
-  * For the same reason, don't use rulers.
   * Use the following layout:<br>
   <img src="images/classLayout.png" width="600"/>
 
