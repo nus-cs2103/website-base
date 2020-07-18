@@ -19,6 +19,7 @@
 <variable name="date_semester_start">2020-08-10</variable>
 <variable name="date_w2_start">2020-08-14</variable>
 <variable name="date_first_lecture">2020-08-14</variable>
+<variable name="day_first_tutorial">Wednesday</variable>
 <variable name="recess_after_week">7</variable>
 <variable name="time_lecture_start">1600</variable>
 <variable name="time_lecture_end">1800</variable>

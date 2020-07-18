@@ -136,7 +136,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 
 * Copy your iP jar file to an empty folder.
 * Launch the jar file using the command prompt and type a command.
-* Take a screenshot and paste in the tutorial workspace.
+* Take a screenshot and paste in the _tutorial workspace_ document.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="setup-tp-org-repo">
@@ -148,7 +148,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 {{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="2") }}
 {{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="2") }}
 
-* **[Each person] Verify that you know how to do the following** by performing each on hour computer and posting a screenshot in the tutorial workspace:
+* **[Each person] Verify that you know how to do the following** by performing each on hour computer and posting a screenshot in the _tutorial workspace_ document:
   * run the code in your IDE
   * run I/O redirection tests
   * verify compliance with the coding standard automatically using Gradle
@@ -189,7 +189,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 <div id="demo-junit-tests">
 
 * Run JUnit test of your tP.
-* Take a screenshot of the results and post in the tutorial workspace.
+* Take a screenshot of the results and post in the _tutorial workspace_ document.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="interpret-person-class-diagram">
@@ -217,7 +217,8 @@ That is why we have structured these tutorials to get everyone to practice this 
 Note the following:
 * Draw ==on paper or on a whiteboard or use a free-hand drawing software== (e.g., Bamboo paper). If latter, do not use UML software or predefined shapes.
 * For the same reason, don't use rulers.
-* When the tutor asks you to, take a screenshot or a photo of the drawing and post in the tutorial workspace.
+* When the tutor asks you to, take a screenshot or a photo of the drawing and post in the _tutorial workspace_ document.
+* {{ icon_tip }} There are mobile apps ([example](https://apps.apple.com/sg/app/evernote-scannable/id883338188)) that can take a photo of a document and and convert it to a high-quality scan.
 </box>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -250,3 +251,119 @@ Note the following:
 </div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="demo-assertion-failure">
+
+* Temporarily edit the tP code to cause an assertion failure. Demo the assertion failure by running the app.<br>
+  For example, you can add the following assertion at the start of the `main` method and then run `gradlew run`.
+  ```java{.no-line-numbers highlight-lines="3" heading="your main class"}
+  ...
+  public static void main(String[] args){
+      assert false : "dummy assertion set to fail";
+      ...
+  }
+  ```
+* Post a screenshot of the assertion failure in the _tutorial workspace_ document.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="interpret-module-cd">
+
+* {{ timing_badge("10 minutes", "info") }} With the tutor's guidance, interpret the following class diagram, focusing on the new CD notations that you learned this week.
+
+<div class="indented-level2">
+
+<include src="../book/modeling/modelingStructures/classDiagramsIntermediate/q-explainClassDiagramNotation.md" />
+<p/>
+</div>
+
+* Some questions you can try to answer:
+  1. What does this mean? <img src="images/interpret-module-cd/extract-interface.png" />
+  1. What does this mean? <img src="images/interpret-module-cd/extract-inheritance.png" />
+  1. Of the above two, why the lines in one are dashed?
+  1. What does this mean? <img src="images/interpret-module-cd/extract-dependence.png" />
+  1. What's the difference (w.r. t. what it means) between the above and a normal association?
+  1. What does this mean? <img src="images/interpret-module-cd/extract-composition.png" />
+  1. What's the difference if the diamond is empty?
+  1. Can a `PR` object exist without any `Commit` objects attached to it?
+  1. Can a `Commit` object exist without a corresponding `PR` object?
+  1. A `Student` can belong to how many teams?<img src="images/interpret-module-cd/extract-team.png" />
+  1. A `Team` can have how many `Student` objects?
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="draw-stock-cd">
+
+<!--
+* **Divide into two sub-teams** as you did in the previous week.
+* {{ timing_badge("10 minutes", "info") }} **Each sub-team do the part (a)** of the following exercise, by drawing the answer on the whiteboard. Use the following layout:<br>
+  <img src="images/classLayout.png" width="600"/>
+
+<div class="indented-level2">
+
+<include src="../../book/modeling/modelingStructures/classDiagramsIntermediate/q-drawClassDiagramForItemEtc.md" />
+</div>
+<p/>
+
+* {{ timing_badge("5 minutes", "info") }} **Compare answers with those from other sub-teams**. With the tutor's guidance, self-evaluate the answers.
+* {{ timing_badge("5+5=10 minutes", "info") }} **Do part (b)** in the same manner.
+-->
+
+<div class="indented-level2" tags="m--cs2103">
+
+<include src="common-tutorial.mbdf#hand-drawing-diagrams" />
+</div>
+<div class="indented">
+
+{{ icon_info }} Question adapted from past exam paper.
+</div>
+
+* {{ timing_badge("15 minutes", "info") }} **Each student do the part (a)** of the following exercise, by ==hand-drawing== the answer.
+  * Use the following layout:<br>
+  <img src="images/draw-stock-cd/classLayout.png" width="600"/>
+
+<div class="indented-level2">
+
+<include src="../book/modeling/modelingStructures/classDiagramsIntermediate/q-drawClassDiagramForItemEtc.md" />
+<p/>
+
+* Paste the diagram (take a photo if you drew on paper) in the _tutorial workspace_ document.
+* {{ timing_badge("10 minutes", "info") }} **Discuss answers** as guided by the tutor.
+* {{ timing_badge("10+5=15 minutes", "info") }} **Do part (b)** in the same manner.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="demo-test-coverage">
+
+* Measure test coverage in your own IDE. Take a screenshot showing test coverage details such as lines covered, lines not covered, percentage of coverage for different files etc.
+* Post a screenshot in the _tutorial workspace_ document. An example is given below:<br>
+ <pic src="images/demo-test-coverage/CoverageReportExample.png" ></pic>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="interpret-parserfactory-sd">
+
+* Do the following exercise, as guided by the tutor.
+<div class="indented-level2">
+
+<include src="../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" />
+<p/>
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="draw-quote-sd">
+
+* Do following exercise. Remember to hand-draw the diagram and post a scan/photo in the _tutorial workspace_ after you ar done.
+
+<div class="indented-level2">
+
+<include src="../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-drawPrintQuoteSd.md" />
+<p/>
+</div>
+
+* Discuss answers, as guided by the tutor.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="review_others_dg">
+
+<box type="info">
+Do the following tP task.
+</box>
+
+<include src="tp-tasks.mbdf#desc_review_others_dg" />
+</div>

@@ -1,13 +1,7 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
-{% call topic_preamble("Sequence Diagrams: Basics", reuse=false) %}
-Good news: this will the the last installment of UML notations.<br>
-Bad news: we are going to cover an entire new diagram type in one go (reason: to give you more time to use them in project documentation).
+{{ topic_preamble("Sequence Diagrams: Basics") }}
 
-**Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, CD/OD's that you learned in the past two weeks model _structural_ aspects.
-
-{{ panopto("7e2690b7-69c5-4f24-8db1-ab8400962a6a", "The video lecture for this topic is") }}
-{% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_followup("Sequence Diagrams: Intermediate-Level") %}
 After you have learned how to interpret sequence diagrams, you can watch this:
@@ -15,31 +9,15 @@ After you have learned how to interpret sequence diagrams, you can watch this:
 {{ panopto("5816a49a-2f87-4e02-9aba-ab8400c41831", "A video lecture showing how to draw a sequence diagram to match code is given") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Design Patterns", reuse=false) %}
-Last week, we learned:
-* Three basic design quality aspects: abstraction, coupling, cohesion
-* Two design principles that aims to improve those aspects: SRP, SoC. There are many more principles but we covered only two (to reduce workload) just to give you a taste only.
+{{ topic_preamble("Design Patterns") }}
+{{ topic_preamble("designPatterns-introduction-what") }}
+{{ topic_preamble("Singleton pattern") }}
 
-**This week, we cover _design patterns_, a concept that builds upon the above**. Again, we limit to only two of them, for similar reasons.
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("designPatterns-introduction-what", reuse=false) %}
-First, let's learn what _design patterns_ are, in general.
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Singleton pattern", reuse=false) %}
-Given next are **two simple design patterns**: _singleton_ and _facade_.
-{% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_followup("designPatterns-facade-what") %}
 To learn more design patterns, you can refer to [https://se-education.org/se-book/designPatterns/](https://se-education.org/se-book/designPatterns/)
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Testing: Test Coverage", reuse=false) %}
-Previously, you learned how to write JUnit tests. **How do you know which parts of the code is being tested by your tests? That's where _test coverage_ comes in.**
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("testing-testCoverage-how") %}
-Learn how to measure test coverage in your tP. You will be asked to demo that in the coming tutorial.
-{% endcall %}
+{{ topic_preamble("Testing: Test Coverage") }}
+{{ topic_preamble("testing-testCoverage-how") }}
 <!-- ---------------------------------------------------------------------------- -->

@@ -320,7 +320,7 @@
       {subheading: "Cohesion"},
         {location: ["designFundamentals", "cohesion", "what"]},
         {location: ["designFundamentals", "cohesion", "how"]},
-      {subheading: "Some other principles"},
+      {subheading: "Some Principles"},
         {location: ["principles", "singleResponsibilityPrinciple"]},
         {location: ["principles", "separationOfConcernsPrinciple"]},
   {name: "Quality Assurance"},

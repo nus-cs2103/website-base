@@ -31,17 +31,19 @@ week8: [
 week9: [
   {id: 'make_code_more_defensive'},
   {id: 'deliver_first_version', deadline: 'midnight before the tutorial'},
-  {id: 'do_an_informal_demo', deadline: 'during the tutorial', deadline_type: "info"}
+  {id: 'do_an_informal_demo', deadline: 'before the tutorial', deadline_type: "info"}
 ],
 week10: [
   {id: 'start_on_the_penultimate_version'},
   {id: 'update_dg_with_design_details', deadline: 'IMPORTANT'},
+  {id: 'smoke_test_catcher', deadline: 'IMPORTANT', graded: true},
   {id: 'make_code_reposense_compatible'}
 ],
 week11: [
   {id: 'update_user_docs'},
-  {id: 'add_sd_to_dg'},
-  {id: 'deliver_penultimate_version', deadline: 'midnight before the tutorial'}
+  {id: 'add_sd_to_dg', deadline: 'recommended: before ' + day_first_tutorial + ' midnight', deadline_type: 'info'},
+  {id: 'deliver_penultimate_version', deadline: 'midnight before the tutorial'},
+  {id: 'review_others_dg', deadline: 'during the tutorial', graded: true}
 ],
 week12: [
   {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w12_start, time="")},

@@ -1,7 +1,8 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, thumb, timing_badge with context %}
 {% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
 {% from "_module-" + module + "/weeklyTpTasks.mbdf" import weekly_tp_tasks  with context %}
+{% from "_module-" + module + "/studentData.mbdf" import tp_dg_review_allocation with context %}
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
 
@@ -544,7 +545,9 @@ Update the following pages in your project repo:
 
 <div id="demo">
 
-* **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the commit tagged as `v1.2` in the `master` branch %%i.e. only features included in the current release should be demoed%%.
+<!-- * **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the commit tagged as `{{ version_first }}` in the `master` branch %%i.e. only features included in the current release should be demoed%%.-->
+* As we don't have in-class tutorials this semester, do the following in lieu of a live demo:<br>
+  [one member] Run your app using the version tagged `{{ version_first }}`. Take screenshots of each available feature in action. Add those screenshots to your product notes document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.
 </div>
 </span>
 {#====================================================================================================================#}
@@ -656,6 +659,46 @@ In addition,
 </span>
 </span>
 {#====================================================================================================================#}
+<span id="heading_smoke_test_catcher">{{ icon_individual }} Smoke-test CATcher</span>
+<span id="desc_smoke_test_catcher">
+
+* **This activity is <span class="text-danger">compulsory</span> and counts for `3` participation points.** Please do it before the deadline.
+<div class="indented-level2">
+
+<box dismissible>
+
+%%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE this semester.%%
+</box>
+
+This week, we would like you to smoke-test the CATcher app **to ensure it can run in your computer**.
+<p/>
+
+<panel type="info" header="**The steps for smoke-testing CATcher:**" minimized>
+
+1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
+1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
+   {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.<br>
+   {{ icon_info }} If you encounter other problems at the app launch, refer to the [Notes on using the CATcher Desktop App](https://github.com/CATcher-org/CATcher/blob/master/usage-notes.md).
+1. **Login**: Choose the _session_ `{{ module }}/T Alpha Test`, and submit.
+   <img src="images/catcherLogin.png" />
+1. In the next screen, submit your GitHub credentials directly or choose to the `Use GitHub login interface` to login to CATcher using your GitHub account.<br>
+   If the app asks for public repo access permissions, grant it (just go with the default settings).
+1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
+1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
+   {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
+   {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
+   {{ icon_info }} The `severity` and `type` labels are compulsory.
+1. {{ icon_important_big_red }} **Being able to run CATcher is important for the PE** -- if you are unable to run it, please follow up via the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues) until you resolve the issue ASAP.
+1. **Do NOT delete the `alpha` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
+
+
+</panel>
+<p/>
+
+</div>
+
+</span>
+{#====================================================================================================================#}
 <span id="heading_deliver_the_feature">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
 <span id="desc_deliver_the_feature">
 
@@ -686,6 +729,7 @@ In addition,
 <span id="desc_add_sd_to_dg">
 
 * Add sequence diagrams to enhance your DG wherever they can be useful. Note that diagrams you add in this week will receive feedback while diagrams added later will not.
+* {{ icon_tip }} Try to do this before {{ day_first_tutorial }} so that the added sequence diagrams can get peer feedback via the DG peer review that will happen during this week's tutorial.
 </span>
 {#====================================================================================================================#}
 <span id="heading_deliver_penultimate_version">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
@@ -709,6 +753,99 @@ In addition,
 <span id="desc_wrap_up_penultimate_version">
 
 * as before
+</span>
+{#====================================================================================================================#}
+<span id="heading_review_others_dg">{{ icon_individual }} Review others' DG</span>
+<span id="desc_review_others_dg">
+
+<!--
+* ~~**Divide into two sub-teams**, ensuring that each team has at least one member who is good with UML.~~<br>
+  <span class="text-info">This activity is to be done individually.</span>
+-->
+
+* To be done during the tutorial. Please don't do this task before the tutorial as others need time to update their DGs.
+* ==Read _all_ instructions== before you start the activity.
+* **Find the team choices you have been allocated to review**, as given in the panel below.
+
+{% macro get_review_allocation_for_team(reviewing_team) -%}
+{%- set reviewed_team = "" -%}
+{% for allocation in team_review_allocation  -%}
+{% if allocation[0] == reviewing_team %}{% set reviewed_team %}{{ allocation[1] }}{% endset %}{% endif %}
+{%- endfor %}{{ reviewed_team }}
+{%- endmacro %}
+
+{% macro get_pr_link(team_id) -%}
+<a href="https://github.com/nus-{{ module | lower}}-{{ semester }}/tp/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge badge-primary">PR</a>
+{%- endmacro  %}
+
+{% macro get_dg_link(team_id) -%}
+<a href="https://{{ semester }}-{{ team_id | lower}}.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a>
+{%- endmacro  %}
+
+{% macro get_links(team_id) -%}
+`{{ team_id }}`  {{ get_dg_link(team_id) }} {{ get_pr_link(team_id) }}
+{%- endmacro  %}
+
+<div class="indented-level2">
+
+<panel header="Allocation for DG review" >
+
+Your GitHub  | First choice | Second choice | Third choice
+-------------|--------------|---------------|-------------
+{% for allocation in tp_dg_review_allocation  %}`{{ allocation[0] }}` | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }} | {{ get_links(allocation[3]) }}
+{% endfor %}
+</panel>
+</div>
+
+* **Decide which of the given team(s) to review**:
+  * Open the <span class="badge badge-primary">DG</span> link of the team allocated as 'First choice'.
+  * Confirm that the DG has significant updates, to the diagrams in particular. If it doesn't, you can try the DG of the 'Second choice' team, and failing that, 'Third choice' team.
+  * If neither _one_ of the three has enough updates but collectively they have enough updates, you can also review all of them.
+  * Failing all above, you can pick any other team(s) to review.
+  * Try to give at least 4 comments in total.
+  * If the PR already has reviews, you can give your own input of the existing review comments too.
+
+* **Go to the <span class="badge badge-primary">PR</span>** of the team(s) you have chosen to review.
+* **Review the `Design` and the `Implementation` sections w.r.t possible DG bugs** (given further down); add your observations as comments.<br>
+
+<div class="indented-level2">
+
+<box>
+
+* In the PR, add _review comments_ (i.e., in the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab) in the corresponding place of the code.
+  * In this case, choose the {{ button('Start a review', button_style="success") }} option rather than {{ button('Add single comment') }} option.
+* But ==if the 'files changed' tab is too laggy, you can add a normal comment instead== in the {{ show_as_rounded_tab(':octicon-comment-discussion: conversation') }} tab.<br>
+  * In this case, enter each observation as a separate comment %%(reason: our bot will count the number of comments you have given to determine if you qualify for participation points)%%
+* As you know, it is better to phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).<br>
+  Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams. An example given below:<br>
+  <img src="images/ReviewCommentExample.png">
+* The understanding you gain from this exercise can indirectly determine how well you do in your own project. Note that your comments will be reviewed by a tutor later.
+<!--
+* Do not finalize the review at this stage. Just keep adding comments.
+* <span class="text-success">**The understanding you gain from this exercise can indirectly determine how well you do in your own project.**</span> ==If you have even the slightest doubt about your observations in this exercise, please discuss it with the tutor== to ensure you have the right understanding of the criteria used.
+-->
+</box>
+
+<box border-left-color="green">
+
+##### <span class="text-success">DG - Possible Bugs</span>
+{{ icon_important_big_red }} Pay attention to these as they are same as the final evaluation criteria of the DG.<br>
+
+{{ embed_topic("tp-grading-bugs.mbdf#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
+{{ embed_topic("tp-grading-bugs.mbdf#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
+
+Also see:
+{{ embed_topic("tp-deliverables-dg.mbdf#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="1", status="expanded", type="success") }}
+
+</box>
+
+</div>
+
+<!--
+* **Discuss your comments/observations/doubts with the tutor** and other team members to confirm the comments you entered are correct.
+* **Update your review comments if necessary**, based on the discussion you just had. After that, you can submit the review.<br>
+-->
+* **After the tutorial**, if you are unsure about a concern raised by a reviewer, you can post in the [forum]({{ url_forum }}) to seek the opinion of the teaching team.
 </span>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>
