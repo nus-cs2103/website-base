@@ -3,6 +3,15 @@
 {% from "_module-" + module + "/weeklyTextbookTopics.mbdf" import weeks_with_no_topics with context %}
 
 
+{% macro panopto(id, desc="")%}
+<panel type="seamless">
+  <div slot="header"><span class="badge badge-pill badge-danger"><big>{{ icon_video }} Video</big></span> {{ desc }}</div>
+<iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id={{ id }}&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+</panel>
+<p/>
+{% endmacro %}
+
+
 {% macro get_start_index_untrimmed(filter_property, filter_value, entries) -%}
 {% set start = "-1" %}
 {% for entry in entries %}
@@ -91,6 +100,7 @@
 
 ####  <small><span class="font-weight-bold text-muted"><include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline trim /></span></small> **<include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline />**
 </span>
+  {{ panopto(unit.panopto) if unit.panopto }}
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
 {{ followup(slugify(full_path)) }}
@@ -173,6 +183,7 @@
 
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" expanded >
 <span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
+{{ panopto(params.topic.panopto) if params.topic.panopto }}
 <div class="indented-level1">
 {% for entry in entries  %}
   {% if entry.location %}
@@ -180,6 +191,7 @@
     {% set letter_index = letter_index + 1 %}
   {% elseif entry.subheading %}
 {{  show_subheading(entry.subheading) }}
+{{ panopto(entry.panopto) if entry.panopto }}
   {% endif %}
 {% endfor %}
 </div>
@@ -273,9 +285,3 @@
 {% if topic %}</span>{% endif %}
 {% if indent %}</div>{% endif %}
 {% endmacro %}
-
-
-{% macro panopto(id, desc="The relevant video is")%}
-:fas-video: {{ desc }} [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id={{ id }}).
-{% endmacro %}
-

@@ -335,38 +335,18 @@ First, we take a look at test case design in general, different approaches to te
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("testCaseDesign-introduction-what") }}" >
 **What is _test case design_, and why should we care?**
-
-{{ panopto("bd513fd6-8ccb-4bb3-8467-ab8d009a8de0") }}
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("testCaseDesign-introduction-blackVsGlass") }}" >
 **How much information about the code is being used when designing test cases?**
-
-{{ panopto("8221a124-fe08-4c48-8a72-ab8d00aa53d3") }}
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Equivalence Partitioning") }}" >
 Our syllabus includes two specific techniques for improving test case design. This week, we cover one of them: _equivalence partitioning_.
 </div>
-<!-- ---------------------------------------------------------------------------- -->
-<div id="{{ slugify("testCaseDesign-equivalencePartitions-what") }}" >
-{{ panopto("59a122d2-7170-4aea-9888-ab8d00b850ed") }}
-</div>
-<!-- ---------------------------------------------------------------------------- -->
-<div id="{{ slugify("testCaseDesign-equivalencePartitions-basic") }}" >
-{{ panopto("83001c05-69fb-4322-b571-ab8d00cd4337") }}
-</div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Boundary Value Analysis") }}" >
 Last week, we learned about _equivalence partitions_, a heuristic for improving E&E of testing. This week, let us learn another heuristic that builds on top of equivalence partitioning.
-</div>
-<!-- ---------------------------------------------------------------------------- -->
-<div id="{{ slugify("testCaseDesign-boundaryValueAnalysis-what") }}" >
-{{ panopto("357faa3a-c24a-4ff5-ac10-ab8e00baf4f5") }}
-</div>
-<!-- ---------------------------------------------------------------------------- -->
-<div id="{{ slugify("testCaseDesign-boundaryValueAnalysis-how") }}" >
-{{ panopto("0edaf584-6ba5-4b05-8f98-ab8e00bfc897") }}
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Combining Multiple Test Inputs") }}" >
@@ -375,22 +355,6 @@ The number of test cases can increase when a the SUT takes multiple inputs. Let'
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Other QA Techniques") }}" >
 Testing is not the same as Quality Assurance. What else can be done for QA?
-</div>
-<!-- ---------------------------------------------------------------------------- -->
-<div id="{{ slugify("qualityAssurance-introduction-validationVsVerification") }}" >
-{{ panopto("fbc72848-4d08-4615-8919-ab9200baa7bf") }}
-</div>
-<!-- ---------------------------------------------------------------------------- -->
-<div id="{{ slugify("qualityAssurance-codeReviews-what") }}" >
-{{ panopto("e43e6509-74e2-4a5c-9f3d-ab9200c552f6") }}
-</div>
-<!-- ---------------------------------------------------------------------------- -->
-<div id="{{ slugify("qualityAssurance-staticAnalysis-what") }}" >
-{{ panopto("a44af2d0-85a7-4183-8330-ab9200cfe405") }}
-</div>
-<!-- ---------------------------------------------------------------------------- -->
-<div id="{{ slugify("qualityAssurance-formalVerification-what") }}" >
-{{ panopto("7b805aba-bb87-41a3-abb6-ab9200d68637") }}
 </div>
 <!-- ==================================================================================================== -->
                                     Project Mgt
@@ -463,8 +427,6 @@ Good news: this will the the last installment of UML notations.<br>
 Bad news: we are going to cover an entire new diagram type in one go (reason: to give you more time to use them in project documentation).
 
 **Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, CD/OD's that you learned in the past two weeks model _structural_ aspects.
-
-{{ panopto("7e2690b7-69c5-4f24-8db1-ab8400962a6a", "The video lecture for this topic is") }}
 </div>
 <!-- ==================================================================================================== -->
                                    Design

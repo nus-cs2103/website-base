@@ -10,5 +10,3 @@
 {{ topic_preamble("testCaseDesign-introduction-what") }}
 {{ topic_preamble("testCaseDesign-introduction-blackVsGlass") }}
 {{ topic_preamble("Equivalence Partitioning") }}
-{{ topic_preamble("testCaseDesign-equivalencePartitions-what") }}
-{{ topic_preamble("testCaseDesign-equivalencePartitions-basic") }}
