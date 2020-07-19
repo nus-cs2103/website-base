@@ -1,14 +1,1 @@
-<!--
-<box type="info">
-
-This tutorial is used for tP project demos. Demo instructions are repeated below for your easy reference.
-</box>
-
-<include src="../../admin/tp-tasks.mbdf#demo-instructions" />
--->
-
-<box type="info">
-
-No tutorial this week. **Take a break** and prepare for the last burst of tP activities coming up soon.
-
-</box>
+<include src="../../admin/common-tutorials.mbdf#no-tutorial-take-a-break" />

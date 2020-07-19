@@ -2,7 +2,7 @@
 
 #### {{ thumb(1) }} **Discuss tP progress**
 
-<include src="../../admin/common-tutorial.mbdf#share-project-direction" />
+<include src="../../admin/common-tutorials.mbdf#share-project-direction" />
 
 #### {{ thumb(2) }} **Review Peer iP PRs** {{ icon_graded }}
 

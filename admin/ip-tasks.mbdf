@@ -308,7 +308,7 @@ This task is worth `2x2=4` participtaion points.
 
 <div class="indented-level4">
 
-<include src="common-tutorial.mbdf#show-ip-peer-review-allocation-1" />
+<include src="common-tutorials.mbdf#show-ip-peer-review-allocation-1" />
 </div>
 
 * {{ step(2) }} **Do the second PR review** as follows.
@@ -317,7 +317,7 @@ This task is worth `2x2=4` participtaion points.
 
 <div class="indented-level4">
 
-<include src="common-tutorial.mbdf#show-ip-peer-review-allocation-2" />
+<include src="common-tutorials.mbdf#show-ip-peer-review-allocation-2" />
 </div>
 
 * {{ step(3) }} **[When you receive reviews for your own PR] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in [these guidelines](https://se-education.org/guides/guidelines/PRs-reviewing.html), do not get into arguments with PR reviewers/authors.

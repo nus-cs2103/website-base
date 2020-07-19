@@ -2,7 +2,7 @@
 
 #### {{ thumb(1) }} Exercise: draw a class diagram and an object diagram
 
-<include src="../../admin/common-tutorial.mbdf#draw-stock-cd" />
+<include src="../../admin/common-tutorials.mbdf#draw-stock-cd" />
 
 
 #### {{ thumb(2) }} Exercise: draw a sequence diagram

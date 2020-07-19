@@ -2,30 +2,30 @@
 
 #### {{ thumb(1) }} **Introduce yourselves**
 
-<include src="../../admin/common-tutorial.mbdf#introduce-yourselves" />
+<include src="../../admin/common-tutorials.mbdf#introduce-yourselves" />
 
 
 #### {{ thumb(2) }} **[{{ module }} students only] Form teams**
 
-<include src="../../admin/common-tutorial.mbdf#form-teams" />
+<include src="../../admin/common-tutorials.mbdf#form-teams" />
 
 
 #### {{ thumb(3) }} **Register the team** {{ timing_badge("before leaving the tutorial") }}
 
-<include src="../../admin/common-tutorial.mbdf#register-the-team" />
+<include src="../../admin/common-tutorials.mbdf#register-the-team" />
 
 
 #### {{ thumb(4) }} **Find coding standard violations** {{ icon_extra }}
 
-<include src="../../admin/common-tutorial.mbdf#exercise-coding-standard-violations" />
+<include src="../../admin/common-tutorials.mbdf#exercise-coding-standard-violations" />
 
 
 #### {{ thumb(5) }} **Decide a weekly project meeting time**
 
-<include src="../../admin/common-tutorial.mbdf#decide-meeting-time" />
+<include src="../../admin/common-tutorials.mbdf#decide-meeting-time" />
 
 
 #### {{ thumb(6) }} **Help team members troubleshoot iP problems**
 
-<include src="../../admin/common-tutorial.mbdf#help-troubleshoot-ip" />
+<include src="../../admin/common-tutorials.mbdf#help-troubleshoot-ip" />
 

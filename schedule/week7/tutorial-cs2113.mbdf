@@ -8,11 +8,11 @@ By the end of this tutorial, we want to confirm that you are able to apply Git a
 
 #### {{ thumb(1) }} Set up tP org/repo
 
-<include src="../../admin/common-tutorial.mbdf#setup-tp-org-repo" />
+<include src="../../admin/common-tutorials.mbdf#setup-tp-org-repo" />
 
 #### {{ thumb(2) }} Update the code using the forking workflow
 
-<include src="../../admin/common-tutorial.mbdf#update-code-using-forking-workflow" />
+<include src="../../admin/common-tutorials.mbdf#update-code-using-forking-workflow" />
 
 {% call topic_followup() %}
 The workflow you followed above is very safe but has a high-overhead. You may simplify your workflow (at your own risk) after following the above workflow for a while.

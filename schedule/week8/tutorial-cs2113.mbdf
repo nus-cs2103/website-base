@@ -4,14 +4,14 @@
 
 #### {{ thumb(1) }} Exercise: interpret a class diagram
 
-<include src="../../admin/common-tutorial.mbdf#interpret-person-class-diagram" />
+<include src="../../admin/common-tutorials.mbdf#interpret-person-class-diagram" />
 
 
 #### {{ thumb(2) }} Exercise: draw an object diagram
 
-<include src="../../admin/common-tutorial.mbdf#draw-person-guardian-object-diagram" />
+<include src="../../admin/common-tutorials.mbdf#draw-person-guardian-object-diagram" />
 
 
 #### {{ thumb(3) }} Exercise: draw a class diagram
 
-<include src="../../admin/common-tutorial.mbdf#draw-box-etc-class-diagram" />
+<include src="../../admin/common-tutorials.mbdf#draw-box-etc-class-diagram" />

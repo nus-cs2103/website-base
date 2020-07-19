@@ -11,7 +11,7 @@
 </div>
 -->
 {% call topic_preamble(reuse=false) %}
-**There is no formal tutorial in this week**.
+**There is no formal tutorial in this week**. Use the tutorial slot for project work.
 
 Attempt this question by yourself. The model answer will be released later.
 {% endcall %}
@@ -19,9 +19,4 @@ Attempt this question by yourself. The model answer will be released later.
 
 #### {{ thumb(1) }} Exercise: test case design
 
-* ~~Divide into two sub-teams and do the following exercises on the white board.~~
-
-<div class="indented-level2">
-  <include src="../../book/testCaseDesign/summary/exercises/q-essay-dayParameter.md" />
-</div>
-<br>
+<include src="../../admin/common-tutorials.mbdf#design-test-cases-isvalidday" />

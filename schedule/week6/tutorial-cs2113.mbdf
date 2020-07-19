@@ -2,12 +2,12 @@
 
 #### {{ thumb(1) }} Demo debugging in an IDE
 
-<include src="../../admin/common-tutorial.mbdf#demo-debugging-using-personbook" />
+<include src="../../admin/common-tutorials.mbdf#demo-debugging-using-personbook" />
 
 
 #### {{ thumb(2) }} Demo iP using the jar file
 
-<include src="../../admin/common-tutorial.mbdf#demo-ip-using-jar" />
+<include src="../../admin/common-tutorials.mbdf#demo-ip-using-jar" />
 
 
 #### {{ thumb(3) }} Receive feedback on the tP UG draft

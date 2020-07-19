@@ -227,7 +227,7 @@ Note the following:
 <!--* Split into sub-teams of 2-3 persons and draw the following exercise on the white board. -->
 <div class="indented-level2">
 
-<include src="common-tutorial.mbdf#hand-drawing-diagrams" />
+<include src="common-tutorials.mbdf#hand-drawing-diagrams" />
 </div>
 
 * **Do the following exercise** while noting the info in the box above.
@@ -308,7 +308,7 @@ Note the following:
 
 <div class="indented-level2" tags="m--cs2103">
 
-<include src="common-tutorial.mbdf#hand-drawing-diagrams" />
+<include src="common-tutorials.mbdf#hand-drawing-diagrams" />
 </div>
 <div class="indented">
 
@@ -366,4 +366,31 @@ Do the following tP task.
 </box>
 
 <include src="tp-tasks.mbdf#desc_review_others_dg" />
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="design-test-cases-isvalidday">
+
+* ~~Divide into two sub-teams and do the following exercises on the white board.~~
+
+<div class="indented-level2">
+  <include src="../book/testCaseDesign/summary/exercises/q-essay-dayParameter.md" />
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="no-tutorial-take-a-break">
+
+<box type="info">
+
+No tutorial this week. **Take a break** and prepare for the last burst of tP activities coming up soon.
+
+</box>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="tp-project-demo">
+
+<box type="info">
+
+This tutorial is used for tP project demos. Demo instructions are repeated below for your easy reference.
+</box>
+
+<include src="tp-tasks.mbdf#demo-instructions" />
 </div>
