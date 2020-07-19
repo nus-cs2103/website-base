@@ -101,16 +101,20 @@
 
 <variable name="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
 <variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_dashboards">{{ url_module_gihub_io | safe }}/dashboards</variable>
 <variable name="url_gitter">https://gitter.im/{{ module_org }}/community</variable>
 <variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_forum_activities_dashboard">{{ url_dashboards }}/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/tp</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
 <variable name="url_ip_dashboard">{{ url_module_gihub_io | safe }}/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
+<variable name="url_ip_progress_dashboard">{{ url_dashboards }}/ip-progress.html</variable>
 <variable name="url_module_website">{{ url_module_gihub_io | safe }}/website</variable>
-<variable name="url_participation_dashboard">www.comp.nus.edu.sg/~cs2103</variable>
+<variable name="url_participation_dashboard">{{ url_dashboards }}/participation.html</variable>
 <variable name="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
 <variable name="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
 <variable name="url_tp_dashboard">{{ url_module_gihub_io | safe }}/tp-dashboard/#breakdown=true</variable>
+<variable name="url_tp_progress_dashboard">{{ url_dashboards }}/tp-progress.html</variable>
 
 <!-- ===========================  icons ================================================= -->
 

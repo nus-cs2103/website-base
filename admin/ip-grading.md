@@ -24,7 +24,7 @@
 
 <box type="tip" light>
 
-You can monitor your iP progress (as detected by our scripts) in the [iP Progress Dashboard](ip-progress-dashboard.html) page.
+You can monitor your iP progress (as detected by our scripts) in the [iP Progress Dashboard]({{ url_ip_progress_dashboard }}) page.
 </box>
 
 </div>
