@@ -123,7 +123,7 @@
 
 {% macro get_week_start_date_untrimmed(week_num, format, shift) %}
   {% if week_num == 1 %}
-  {{ date_semester_start | date(format, shift) }}
+  {{ date_w1_start | date(format, shift) }}
   {% else %}
   {{ date_first_lecture | date(format, (week_num - (2 if week_num <= recess_after_week else 1)) * 7 + shift)}}
   {% endif %}

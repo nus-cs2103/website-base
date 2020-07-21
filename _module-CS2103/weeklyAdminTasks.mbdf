@@ -2,9 +2,9 @@
 
 {% set weekly_admin_tasks = {
 week1: [
-  {id: 'submit_pre_lecture_quiz', deadline: get_date(date_semester_start, 7), graded: true},
+  {id: 'submit_pre_lecture_quiz', deadline: get_date(date_w1_start, 7), graded: true},
   {id: 'set_up_tools', deadline: "before the lecture"},
-  {id: 'submit_pre_module_survey', deadline: get_date(date_semester_start, 4), graded: true},
+  {id: 'submit_pre_module_survey', deadline: get_date(date_w1_start, 4), graded: true},
   {id: 'learn_about_the_module'},
   {id: 'attend_the_first_lecture'}
 ],

@@ -17,7 +17,7 @@
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
 <variable name="url_repl_classroom">https://repl.it/classroom/invite/szXDJN4</variable>
 
-<variable name="date_semester_start">2020-08-10</variable>
+<variable name="date_w1_start">2020-08-10</variable>
 <variable name="date_w2_start">2020-08-14</variable>
 <variable name="date_first_lecture">2020-08-14</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
