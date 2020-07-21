@@ -97,7 +97,7 @@
 <variable name="date_w13_start">{{ date_w12_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w14_start">{{ date_w13_start | date("YYYY-MM-DD", 7) }}</variable>
 
-<variable name="module_org">nus-{{ module | lower }}-{{ semester }}</variable>
+<variable name="module_org">nus-{{ module | lower }}-{{ period if tic2002 or te3201 else semester }}</variable>
 <variable name="url_module_org">https://github.com/{{ module_org }}</variable>
 <variable name="url_module_gihub_io">https://{{ module_org | lower }}.github.io</variable>
 

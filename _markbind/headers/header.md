@@ -19,13 +19,13 @@
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
   <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
   <dropdown header="**Links**" class="nav-link">
-    <li><a href="{{url_bugs}}" target="_blank" class="dropdown-item"><md>:fas-bug: Report Bugs</md></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="{{url_bugs}}" target="_blank" class="dropdown-item"><md>:fas-bug: Report Bugs</md></a></li>
     <li><a href="{{url_forum}}" target="_blank" class="dropdown-item"><md>:fas-comment: Forum</md></a></li>
-    <li><a href="{{url_gitter}}" target="_blank" class="dropdown-item"><md>:fab-gitter: Gitter (Chat)</md></a></li>
-    <li><a href="{{ baseUrl }}/admin/instructors.html" class="dropdown-item"><md>:fas-user-tie: Instructors</md></a></li>
+    <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="{{url_gitter}}" target="_blank" class="dropdown-item"><md>:fab-gitter: Gitter (Chat)</md></a></li>
+    <li><a href="{{ baseUrl }}/admin/{{ "index.html#instructors" if tic2002 or tic4001 or te3201 else "instructors.html" }}" class="dropdown-item"><md>:fas-user-tie: Instructors</md></a></li>
     <li><a href="{{url_announcements}}" target="_blank" class="dropdown-item"><md>:glyphicon-bullhorn: Announcements</md></a></li>
-    <li><a href="{{url_files}}" target="_blank" class="dropdown-item"><md>:fas-file-upload: File Submissions</md></a></li>
-    <li><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
+    <li><a href="{{url_files}}" target="_blank" class="dropdown-item"><md>:fas-file-upload: Files</md></a></li>
+    <li tags="m--cs2113 m--cs2103"><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
     <li tags="m--cs2113 m--tic2002 m--te3201"><a href="{{repl_link}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} `repl.it` link</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
