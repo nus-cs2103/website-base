@@ -15,37 +15,37 @@ Tasks you need to do in the week will appear in this tab.
 1. Submit weekly exercises
 {% endcall %}
 
-{{ thumb(0) }} Learn about the module and the website
+#### {{ thumb(0) }} Learn about the module and the website
 
 {{ embed_topic("../../admin/index-tic2002.mbdf#module-info", "Admin " + icon_embedding + " About the module", "week1Admin-java", "2") }}
 {{ embed_topic("../../admin/index-tic2002.mbdf#website-info", "Admin " + icon_embedding + " Using the website", "week1Admin-java", "2") }}
 
 
-{{ thumb(1) }} Install Java {{ timing_badge("before the lecture", "secondary") }}
+#### {{ thumb(1) }} Install Java {{ timing_badge("before the lecture", "secondary") }}
 
 * See the panel below:
 
 {{ embed_topic("../../admin/index-tic2002.mbdf#java", "Admin " + icon_embedding + " Programming Language", "week1Admin-java", "2") }}
 
 
-{{ thumb(2) }} Create a GitHub account
+#### {{ thumb(2) }} Create a GitHub account
 
 * See the panel below:
 
 {{ embed_topic("../../admin/index-tic2002.mbdf#github-info", "Admin " + icon_embedding + " Tools → GitHub", "week1Admin-github", "2") }}
 
 
-{{ thumb(3) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
+#### {{ thumb(3) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
 
 * Submit the pre-module survey, available on LumiNUS
 
-{{ thumb(4) }} Attend the lecture
+#### {{ thumb(4) }} Attend the lecture
 * There is no tutorial in this week. The lecture will start at 7.30pm.
 
 {{ embed_topic("../../admin/index-tic2002.mbdf#lectures-info", "Admin " + icon_embedding + " Lectures", "week1Admin-lectures", "2") }}
 
 
-{{ thumb(5) }} Submit weekly exercises
+#### {{ thumb(5) }} Submit weekly exercises
 
 * As you learn the weekly topics, submit Week 1 programming exercise on `repl.it`. See the panel below for more info. More instructions about this will be provided during the lecture.
 

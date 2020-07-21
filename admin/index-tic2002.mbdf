@@ -6,11 +6,15 @@ head: adminHead.md
 pageNav: 2
 </frontmatter>
 
+{% from "common/macros.njk" import get_date with context %}
+
 <div class="website-content">
 
-# **TIC2002 Admin Info**
+# **{{ module }} {{ module_name }}**
 
-{{ line_dotted }}
+<include src="common-notices.mbdf#fully-online" />
+
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Module overview
 <div class="indented" id="module-info">
@@ -20,7 +24,7 @@ pageNav: 2
 _TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects, and as such, it is **a first step towards preparing you to work in bigger SE projects**, which will be done in later modules.
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Using this module website
 
@@ -28,7 +32,7 @@ _TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balanc
 <include src="usingThisWebsite.md#main" />
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Instructors
 
@@ -38,49 +42,44 @@ _TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balanc
   <div class="row">
     <div class="col-3">
 
-![Damith]({{ baseUrl }}/admin/images/damith.png)
+<img src="{{ baseUrl }}/admin/images/damith.png" width="175" class="rounded mt-1">
     </div>
     <div class="col">
 
-**Damith Chatura RAJAPAKSE**<br>
-Associate Professor, NUS School of Computing<br>
-PhD, Software Engineering, NUS, 2002-2006<br>
-BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
-%%:fas-envelope:%% <span id="prof-email">`damith`[at]`comp.nus.edu.sg`</span><br>
-%%:fas-map-marker-alt:%% COM2-02-57<br>
-%%:fas-phone-square:%% 651 64359<br>
-%%:fas-home:%% https://www.comp.nus.edu.sg/~damithch
+<include src="instructor-damith.mbdf" />
     </div>
   </div>
 </div>
 
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Lectures
 <div class="indented" id="lectures-info">
 
 %%:far-clock:%% Tuesdays 7.30-9.30pm<br>
-%%:fas-map-marker-alt:%% SR2 (COM1-02-04)<br>
+%%:fas-map-marker-alt:%% ~~SR2 (COM1-02-04)~~ Online<br>
 
-{{ far_frown }} **Lectures will not be webcast** as the venue does not have a webcast facility. ==Please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture.
+<!-- :far-frown: **Lectures will not be webcast** as the venue does not have a webcast facility. ==Please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture. -->
+
+**Lectures will be done Zoom**. You are encouraged to attend the Zoom session as there will be in-lecture activities. A lecture recording will be made available in case you can't attend the Zoom session.
 
 **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Use the textbook (not slides) as your main reference. Slides will be uploaded to LumiNUS _after_ the lecture, usually by Wednesday.<br>
   {{ icon_tip }} If slides are not in LumiNUS by the expected times, please feel free to ping the lecturer.
 
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Tutorials
 <div class="indented">
 
-%%:far-clock:%% Tuesdays 6.30-7.30pm<br>
-%%:fas-map-marker-alt:%% SR2 (COM1-02-04)<br>
+%%:far-clock:%% Tuesdays 6.30-7.30pm. Tutorials start from week 2. No tutorial in week 1.<br>
+%%:fas-map-marker-alt:%% ~~SR2 (COM1-02-04)~~ Online<br>
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Textbook
 <div class="indented">
@@ -89,7 +88,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Programming language
 <div class="indented" id="java">
@@ -100,15 +99,17 @@ This module uses Java. It assumes you are familiar with C++ basics and provides 
 
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
-# Programming Exercises
-<span id="exercises-info">
+# Programming exercises
+<div id="exercises-info" class="indented">
 
 In some weeks, there will be some programming exercises for you to submit (on `Repl.it`). You should do the exercises as you learn the topics. ==Focus on learning the topic rather than finishing the exercises==. While these are exercises provided to self-test your knowledge, the more important thing is to read and understand the topic content. Furthermore, not all topics are tested by exercise.
-</span>
 
-{{ line_dotted }}
+{{ icon_important_big_red }} Programming exercises are graded for participation.
+</div>
+
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Project
 <div class="indented">
@@ -120,19 +121,29 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 * In the project, you will build a small chatbot, using Java.
 * The project is to be done in small increments. You will be given a schedule of what increments to be done in each week.
 * Some weekly increments will be common to all students, while some will vary from student to student. That means your final product will be unique in terms of total features, but some features will be common to other students in the class.
+
 </div>
 
+Weekly project increments are given in the panels below:
+<div class="indented">
+{% for i in range(3, 14) %}
+<panel header="**Week {{ i }}**">
+<include src="../schedule/week{{ i }}/admin-tic2002.mbdf#project" />
+</panel>
+{% endfor %}
+</div>
+<p/>
 <div id="final-submission-info">
 
-### Week 13: Final Submission
+### Week 13: Final submission
 
 **Deadline**:
-* Soft deadline: ~~Monday~~ Tuesday of week 13<br>
-  Hard deadline: Sunday of week 13
+* Soft deadline: {{ get_date(date_w13_start, format=format_normal) }} (Monday of week 13)<br>
+  Hard deadline: {{ get_date(date_w13_start, 6, format=format_normal) }} (Sunday of week 13)
 
-* What's the difference between the soft deadline and the hard deadline? You can get prof's feedback on a draft of the project report up to the soft deadline. Note that feedback on project report draft needs to be in-person (reason: it is hard to give written feedback on diagrams) and can be high-level feedback only (reason: the report is graded).
+* What's the difference between the soft deadline and the hard deadline? You can get prof's feedback on a draft of the project report up to the soft deadline. Note that feedback on project report draft will be high-level feedback only (reason: the report is graded).
 
-* Submissions later than the hard deadline are liable to a late submission penalty, to be fair to those who submitted on time.
+* Submissions later than the hard deadline are liable to a late submission penalty, to be fair to those who submitted on time. But given you are part-time students, late submission penalty will be more lenient than otherwise (e.g., `-1 per day`) and will be on a case-by-case basis.
 
 **Deliverables**:
 1. **Source code** of the working program: push to your GitHub repo
@@ -142,7 +153,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 1. **Demo video**:
    * Record a demo video showcasing the features of your product.
    * Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).
-   * Recommended length 7 minutes, max length 10 minutes).
+   * Recommended length 7 minutes, max length 10 minutes.
    * Audio narration is optional if the demo can be understood without the audio.
    * Ensure the video is in a format that can be played by any computer.
    * Submission: Name the file with your name (to match the jar and the report file) and upload to LumiNUS.
@@ -150,7 +161,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 </div>
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Policies
 
@@ -159,10 +170,10 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 ### Deadlines
 * Deadline for weekly tasks:
   * **If a specific deadline is given**, adhere to that.
-  * **If no specific deadline is given**, try to complete tasks allocated to a week by Tuesday 6.30pm of the following week (i.e., before the next lecture). In case you fail to meet that deadline, you should still do those tasks as soon as possible. There will be no penalty if a task is done within one week after the deadline.
+  * **If no specific deadline is given**, try to complete tasks allocated to a week by Tuesday 6.30pm of the following week (i.e., before the next lecture). In case you fail to meet that deadline, you should still do those tasks as soon as possible. There will be no penalty if a task is done within a _grace period_ of one week after the deadline.
 </span>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Tools
 <div class="indented">
@@ -189,8 +200,8 @@ We'll be using GitHub for code hosting (compulsory).
 We'll be using `Repl.it` for coding exercises (compulsory).
 
 * {{ icon_important_big_red }} Create an account on https://repl.it. 
-* Make sure you set your name correctly in your `repl.it` user profile (so that the prof can trace your `repl.it` submissions to you). 
-* Join the `repl.it` classroom `tic2002-2019` using the link [{{ repl_link }}]({{ repl_link }}).
+* In your `repl.it` user profile set the _first name_ to match your GitHub username exactly (so that the prof can trace your `repl.it` submissions to you). No restrictions on the last name.
+* Join the `repl.it` classroom `tic2002-{{ period }}` using the link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).
 
 </div>
 <div id="intellij-info">
@@ -203,35 +214,35 @@ We'll be using Intellij IDE for programming. While using Intellij is not compuls
 </div>
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Assessment
 <div class="indented">
 
-**40% : CA**
-* 10%: Participation -- To get full marks, complete weekly tasks for at least 10 weeks.
-* 30%: Project
-  * 20%: Features, code
-  * 10%: Documentation
+**{{ 100 - (marks_exam | int) }}% : CA**
+* {{ marks_participation }}%: Participation -- To get full marks, complete weekly tasks <tooltip content="done before the deadline + grace period (if any)">on time</tooltip> in at least 10 weeks.
+* {{ marks_ip }}%: Project
+  * {{ marks_ip_implementation }}%: Features, code
+  * {{ marks_ip_documentation }}%: Documentation
 
-**60% : Final Exam**
+**{{ marks_exam }}% : Final Exam**
 
 </div>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
-# Getting Help
+# Getting help
 
 <span id="help-info">
 
-If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks
-* you can post in the [module forum]({{ url_forum }})
-* email prof at <include src="index-{{ module | lower }}.mbdf#prof-email" inline trim/>
+If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, you can
+* post in the [module forum]({{ url_forum }})
 * ask for prof's help during next week’s tutorial hour
+* email prof at `{{ module | lower }}`[at]`comp.nus.edu.sg`
 
 </span>
 
-{{ line_dotted }}
+{{ line_dotted }}<!-- ................................................................................... -->
 
 # Exam
 <div class="indented">

@@ -4,37 +4,35 @@
 
 {% call show_admin_summary() %}
 1. Submit weekly exercises
+
+{{ icon_project }} **Project:**
 1. Create a Pull Request {{ timing_badge("during/after the lecture", "info") }}
 1. Implement project increments `Level-3`, `A-TextUiTesting` <span class="badge badge-pill badge-secondary">optional</span>
 {% endcall %}
 
-{{ thumb(1) }} Submit weekly exercises
+#### {{ thumb(1) }} Submit weekly exercises
 
 * As usual.
 
-{{ thumb(2) }} Create a Pull Request {{ timing_badge("during/after the lecture", "secondary") }}
+<!-- ==================================================================================================== -->
+{{ heading_project }}
 
-* After pushing some code to your fork, create a pull request (PR) from your fork to [{{ url_module_org }}/duke]({{ url_module_org }}/duke)
-  * PR name should be your name (you may leave out the family name if you wish)
-  * PR description can be left blank
-  * [GitHub's help page about creating PRs](https://help.github.com/en/articles/creating-a-pull-request)
+<div id="project">
 
-* After creating the Pull Request (PR), go to its description (it contains a list of items similar to the below) and tick the items you have completed already.
+#### {{ thumb(1) }} Create a Pull Request {{ timing_badge("during/after the lecture", "secondary") }}
 
-<div class="indented-level2">
-<box>
+* **Create a pull request (PR)** from your fork to [{{ url_module_org }}/duke]({{ url_module_org }}/duke)
+  * To be done only after you have pushed some code to your fork.
+  * PR name should be your name (you may leave out the family name if you wish).
+  * PR description can be left blank.
+  * [GitHub's help page about creating PRs](https://help.github.com/en/articles/creating-a-pull-request).
 
-- [x] `Level-1`
-- [x] `Level-2`
-- [ ] `Level-3`
-- [ ] `Level-4`<br>
-...
-</box>
-</div>
+{{ embed_topic("../../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
+<!-- ------------------------------------------------------------------------------------------------------ -->
 
-{{ thumb(3) }} Implement project increments `Level-3`, `A-TextUiTesting` <span class="badge badge-pill badge-secondary">optional</span>
+#### {{ thumb(2) }} Implement project increments `Level-3`, `A-TextUiTesting` <span class="badge badge-pill badge-secondary">optional</span>
 
-* As before, implement increments, commit at regular intervals, and push to your fork. Your PR will update automatically to reflect the new commits.
+* **As before, implement these increments** while committing at regular intervals, and tag + push to your fork when an increment is done. Your PR will update automatically to reflect the new commits. ==Follow the same procedure for future Duke increments too.==
 
 <div class="indented">
 
@@ -42,18 +40,4 @@
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-TextUiTesting`: Text UI Testing**" var-tag="optional" var-fragment="extensions.mbdf#A-TextUiTesting" />
 
 </div>
-
-* After pushing the code to your fork, go to your PR and tick the corresponding items.
-  * You should self-report your progress in this manner in future weeks too.
-  * Optional items are not in the list.
-
-<div class="indented-level2">
-<box>
-
-- [x] `Level-1`
-- [x] `Level-2`
-- [x] `Level-3`
-- [ ] `Level-4`<br>
-...
-</box>
 </div>

@@ -15,6 +15,7 @@
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
 <variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/intermediate.html</variable>
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
+<variable name="url_repl_classroom">https://repl.it/classroom/invite/szXDJN4</variable>
 
 <variable name="date_semester_start">2020-08-10</variable>
 <variable name="date_w2_start">2020-08-14</variable>
@@ -187,6 +188,8 @@
 <variable name="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></variable>
 <variable name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></variable>
 <variable name="MT"><span class="badge badge-warning">{{ module }}T</span></variable>
+
+<variable name="heading_project"><h3 class="bg-dark text-white p-2 mb-4 mt-4">{{ icon_project }} Project</h3></variable>
 
 <variable name="s"><md>:glyphicon-star:</md></variable>
 <variable name="star"><span class='glyphicon glyphicon-star' aria-hidden='true'></span></variable>

@@ -12,10 +12,15 @@ pageNav: 3
 <div class="website-content">
 
 # Summary of the Module Timeline
+<div tags="m--cs2103 m--cs2113 m--tic4001">
 
 {{ embed_topic("../admin/weeklySchedule.md#week-definition", "Admin " + icon_embedding + " Weekly schedule → The " + module_pair + " week vs normal academic week", "1") }}
 <p/>
 {{ embed_topic("../admin/weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → Deadline for weekly tasks", "1") }}
+</div>
+<div tags="m--tic2002">
+{{ embed_topic("../admin/index-tic2002.mbdf#deadlines-info", "Admin " + icon_embedding + " Policies → **Deadlines**", "dummy") }}
+</div>
 
 <p/>
 <hr>

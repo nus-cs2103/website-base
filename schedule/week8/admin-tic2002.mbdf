@@ -3,10 +3,15 @@
 
 
 {% call show_admin_summary() %}
+{{ icon_project }} **Project:**
 1. Implement increments `Level-7`, `A-MoreOOP`, `A-Packages`
 {% endcall %}
 
-{{ thumb(1) }}  Implement increments `Level-7`, `A-MoreOOP`, `A-Packages`
+<!-- ==================================================================================================== -->
+{{ heading_project }}
+<div id="project">
+
+#### {{ thumb(1) }}  Implement increments `Level-7`, `A-MoreOOP`, `A-Packages`
 
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-7`: Save**" var-fragment="text.md#Level-7" />
@@ -14,4 +19,5 @@
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Packages`: Java Packages**" var-fragment="extensions.mbdf#A-Packages" />
 
 
+</div>
 </div>

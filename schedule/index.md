@@ -91,7 +91,9 @@ pageNav: {{ categories[category].pagenav }}
 <div class="container">
   <div class="row">
   <div class="col-sm border-right">
-
+{% if week_num + "" in weeks_with_no_topics %}
+* %%No topic allocated to this week.%%
+{% else %}
 <md>**{{ icon_book }} Topics Summary:**</md>
 
 {{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
@@ -99,7 +101,7 @@ pageNav: {{ categories[category].pagenav }}
 <panel type="seamless" header="%%Full ToC%%">
   <include src="topics.md#toc" optional />
 </panel>
-
+{% endif %}
   </div>
   <div class="col-sm">
 

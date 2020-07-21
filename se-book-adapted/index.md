@@ -44,7 +44,7 @@ siteNav: se-book-adapted-sitenav.md
 **Supplementary**</big>
 
   {{ show_chapter("dummy", config.chapters.cppToJava) }}
-
+{% if not te3201 %}* [Project Duke](projectDuke/index.html){% endif %}
 * [Combined Exercises](common/exercises.html)
 * [List of Definitions](common/definitions.html)
 

@@ -4,15 +4,23 @@
 
 {% call show_admin_summary() %}
 1. Submit weekly exercises
+
+{{ icon_project }} **Project:**
 1. Implement increment `Level-5`
 {% endcall %}
 
-{{ thumb(1) }} Submit weekly exercises
+#### {{ thumb(1) }} Submit weekly exercises
 
 * As usual.
 
-{{ thumb(2) }} Implement increment `Level-5`
+<!-- ==================================================================================================== -->
+{{ heading_project }}
+<div id="project">
+
+
+#### {{ thumb(2) }} Implement increment `Level-5`
 
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-5`: Handle Errors**" var-fragment="text.md#Level-5" />
+</div>
 </div>

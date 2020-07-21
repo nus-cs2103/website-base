@@ -3,9 +3,14 @@
 
 
 {% call show_admin_summary() %}
+{{ icon_project }} **Project:**
 1. Add individual feature 1
 1. Implement increments `Level-9`, `A-CodingStandard`, `A-CodeQuality`, `A-Libraries` <span class="badge badge-pill badge-secondary">optional</span>
 {% endcall %}
+
+<!-- ==================================================================================================== -->
+{{ heading_project }}
+<div id="project">
 
 #### {{ thumb(1) }} Add individual feature 1
 
@@ -39,7 +44,7 @@ digit | option 1                             | option 2                         
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-CodingStandard`: Coding Standard**" var-fragment="extensions.mbdf#A-CodingStandard" />
 <div class="indented-level4">
 
-↳ The coding standard to follow is given [here](../../coding-standards/java/basic.html) -- also given under the `Links` menu at the top of the module website.
+↳ The coding standard to follow is given [here]({{ url_java_coding_standard }}) -- also given under the `Links` menu at the top of the module website.
 </div>
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-CodeQuality`: Increase Code Quality**" var-fragment="extensions.mbdf#A-CodeQuality" />
 <div class="indented-level4">
@@ -47,4 +52,5 @@ digit | option 1                             | option 2                         
 ↳ The code quality guidelines to follow are given [here](../../se-book-adapted/chapters/codeQuality.html).
 </div>
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Libraries`: Libraries**" var-tag="optional" var-fragment="extensions.mbdf#A-Libraries" />
+</div>
 </div>

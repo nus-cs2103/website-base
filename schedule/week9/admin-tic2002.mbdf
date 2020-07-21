@@ -3,10 +3,15 @@
 
 
 {% call show_admin_summary() %}
+{{ icon_project }} **Project:**
 1. Implement increments `Level-8`,  `A-JavaDoc`, `A-Gradle` <span class="badge badge-pill badge-secondary">optional</span>, `A-JUnit`
 {% endcall %}
 
-{{ thumb(1) }} Implement increments `Level-8`,  `A-JavaDoc`, `A-Gradle` <span class="badge badge-pill badge-secondary">optional</span>, `A-JUnit`
+<!-- ==================================================================================================== -->
+{{ heading_project }}
+<div id="project">
+
+#### {{ thumb(1) }} Implement increments `Level-8`,  `A-JavaDoc`, `A-Gradle` <span class="badge badge-pill badge-secondary">optional</span>, `A-JUnit`
 
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-8`: Dates and Times**" var-fragment="text.md#Level-8" />
@@ -14,4 +19,5 @@
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Gradle`: Gradle**" var-tag="optional" var-fragment="extensions.mbdf#A-Gradle" />
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JUnit`: JUnit Testing**" var-fragment="extensions.mbdf#A-JUnit" />
 
+</div>
 </div>

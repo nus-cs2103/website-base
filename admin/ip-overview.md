@@ -34,7 +34,7 @@
 
 **The iP is based on the generic project called [_Project Duke_](../se-book-adapted/projectDuke/index.html)**, the overview of which is given below.
 
-<include src="dukeFragment.md" boilerplate var-header="**Duke - Overview**" var-fragment="text.md#intro" />
+<include src="dukeFragment.md" boilerplate var-header="**Overview**" var-fragment="text.md#intro" />
 <br>
 
 **The iP is to be done over the first half of the semester**.
