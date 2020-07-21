@@ -198,7 +198,7 @@ We'll be using GitHub for code hosting (compulsory).
 We'll be using `Repl.it` for coding exercises (compulsory).
 
 * {{ icon_important_big_red }} Create an account on https://repl.it. 
-* In your `repl.it` user profile set the _first name_ to match your GitHub username exactly (so that the prof can trace your `repl.it` submissions to you). No restrictions on the last name.
+* In your `repl.it` ==user profile set the _first name_ to match your GitHub username exactly== (so that the prof can trace your `repl.it` submissions to you). No restrictions on the last name.
 * Join the `repl.it` classroom `tic2002-{{ period }}` using the link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).
 
 </div>

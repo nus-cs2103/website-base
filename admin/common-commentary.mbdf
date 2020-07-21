@@ -35,8 +35,10 @@ The technique of _use cases_ (don't confuse with _user stories_) covered below i
 <!-- ==================================================================================================== -->
                                              OOP
 <!-- ==================================================================================================== -->
+<div id="{{ slugify("OOP: Intro") }}">
 <div id="{{ slugify("OOP: Classes and Objects") }}">
 As you know, OOP is a core part of this module. Let's start learning the OOP paradigm this week.
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("oop-objects-abstraction") }}">
@@ -160,15 +162,22 @@ While the next few topics are optional, we recommend that you ==have a quick loo
                                            Revision Control
 <!-- ==================================================================================================== -->
 <div id="rcs-intro">
+<span tags="m--cs2103">
 This week, you are starting your individual project (iP). As you are adding code to the iP in rapid succession, you'll need a way to keep track of all the changes you do. The tool we are going to use for that is called Git, and we need to learn Git basics pretty quickly.
 
 Let's jump in and learn how to get started using Git in your own computer. Yes, we are now switching our focus to the _project management_ aspect of SE.
-
+</span>
 <span tags="m--cs2113">
 
 :thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
 
 {{ embed_topic("moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
+<p/></span>
+<span tags="m--tic2002">
+You are going to start your project pretty soon. As you are adding feature increments to your project, you'll need a way to keep track of all those changes too. The tool we are going to use for that is called Git.
+
+Let's jump in and learn how to get started using Git in your own computer.
+
 <p/></span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -189,11 +198,11 @@ For the next few sections, the drill is the same: first learn the high-level exp
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="rcs-remote-repos">
-Having learned how to use Git in your own computer, let's also learn a bit about working with remote code repositories too. Yes it's a bit too much to take in one week but we want you to start using Git in your iP from the very beginning.
+Having learned how to use Git in your own computer, let's also learn a bit about working with remote code repositories too. <span tags="m--cs2103 m--cs2113">Yes it's a bit too much to take in one week but we want you to start using Git in your iP from the very beginning.</span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Using History") }}">
-Last week, you learned how to save revision history in your local repository, in the form of _commits_. Next, let us use how to make use of that history.
+Previously, you learned how to _save_ revision history in your local repository, in the form of _commits_. Next, let us use how to make use of that history.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Pull, Push") }}">
@@ -240,12 +249,13 @@ When working with Git, sooner or later you will face a problem called _merge con
                                      IDEs
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("IDEs: Basic Features") }}">
- As you are likely to be using an IDE for the iP, let's learn at least enough about IDEs to get you started using one.
+ As you are likely to be using an IDE for the {{ ip_name }}, let's learn at least enough about IDEs to get you started using one.
 
-:thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
+<div tags="m--cs2103">:thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
 
 {{ embed_topic("moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
 <p/>
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("IDEs: Intermediate Features") }}">

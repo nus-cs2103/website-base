@@ -27,6 +27,7 @@
 <variable name="time_t_lecture_start">1200</variable>
 <variable name="time_t_lecture_end">1400</variable>
 
+<variable name="ip_name">iP</variable>
 <variable name="ip_repo_name">ip</variable>
 <variable name="ip_first_week">2</variable>
 <variable name="ip_last_week">8</variable>
