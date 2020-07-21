@@ -3,7 +3,6 @@
 {% call show_admin_page("moduleOverview") %} 
 <div id="main">
 
-<include src="common-notices.mbdf#fully-online" />
 <!-- =============================================================================== -->
 <span tags="m--cs2103">
 <big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big>

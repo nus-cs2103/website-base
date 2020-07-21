@@ -4,8 +4,6 @@
 {% call show_admin_page("weeklySchedule") %}
 <div id="main">
 
-<include src="common-notices.mbdf#fully-online" />
-<p/>
 </div>
 
 <div id="week-definition">

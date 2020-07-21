@@ -1,15 +1,6 @@
 {% from "common/macros.njk" import embed_topic, get_date, show_as_tab, timing_badge with context %}
 
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="fully-online">
-
-<div class="bg-info text-white p-2 rounded">
-
-This module will be **fully-online** this semester. There is no need for on-campus presence.
-</div>
-<p/>
-</div>
-<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="about-summary-tab">
 
 <box type="info" dismissible>

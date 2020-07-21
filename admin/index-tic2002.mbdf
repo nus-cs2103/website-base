@@ -12,8 +12,6 @@ pageNav: 2
 
 # **{{ module }} {{ module_name }}**
 
-<include src="common-notices.mbdf#fully-online" />
-
 {{ line_dotted }}<!-- ................................................................................... -->
 
 # Module overview
