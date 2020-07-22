@@ -22,14 +22,14 @@
     <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="{{url_bugs}}" target="_blank" class="dropdown-item"><md>:fas-bug: Report Bugs</md></a></li>
     <li><a href="{{url_forum}}" target="_blank" class="dropdown-item"><md>:fas-comment: Forum</md></a></li>
     <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="{{url_gitter}}" target="_blank" class="dropdown-item"><md>:fab-gitter: Gitter (Chat)</md></a></li>
-    <li><a href="{{ baseUrl }}/admin/{{ "index.html#instructors" if tic2002 or tic4001 or te3201 else "instructors.html" }}" class="dropdown-item"><md>:fas-user-tie: Instructors</md></a></li>
+    <li><a href="{{ baseUrl }}/admin/{{ "index.html#instructors" if tic2002 or te3201 else "instructors.html" }}" class="dropdown-item"><md>:fas-user-tie: Instructors</md></a></li>
     <li><a href="{{url_announcements}}" target="_blank" class="dropdown-item"><md>:glyphicon-bullhorn: Announcements</md></a></li>
     <li><a href="{{url_files}}" target="_blank" class="dropdown-item"><md>:fas-file-upload: Files</md></a></li>
     <li tags="m--cs2113 m--cs2103"><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
     <li tags="m--cs2113 m--tic2002 m--te3201"><a href="{{repl_link}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} `repl.it` link</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
-    <li><a href="{{ url_forum_activities_dashboard }}" class="dropdown-item"><md>:fas-trophy: Forum Activities Dashboard</md></a></li>
+    <li tags="m--cs2103 m--cs2113"><a href="{{ url_forum_activities_dashboard }}" class="dropdown-item"><md>:fas-trophy: Forum Activities Dashboard</md></a></li>
     <li><a href="{{url_participation_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-trophy: Participation Dashboard</md></a></li>
     <hr>
     <md>**&nbsp;Individual Project (iP):**</md>
