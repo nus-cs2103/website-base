@@ -4,7 +4,7 @@
 {% call show_admin_page("appendixE-gitHub") %}
 <div id="main">
 
-### <div class="text-white bg-dark p-1">Creating a GitHub Account</div>
+## Creating a GitHub Account
 
 <div id="githubAccount">
 
@@ -29,7 +29,7 @@ Create a personal GitHub account if you don't have one yet.
 
 <!-- ==================================================================================================== -->
 
-### <div class="text-white bg-dark p-1">Guidelines for Reviewing PRs</div>
+## Guidelines for Reviewing PRs
 
 <div id="pr-review-guidelines">
 
@@ -41,10 +41,10 @@ Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-educat
 
 <div id="organization-setup">
 
-### <div class="text-white bg-dark p-1">tP Team Organization Setup</div>
+## tP Team Organization Setup
 
 
-<box light type="important">
+<box type="important" seamless>
 
 Please follow the organization/repo name format precisely or else our grading scripts will not be able to detect your work.
 
@@ -67,11 +67,11 @@ After receiving your team ID, one team member should do the following steps:
 
 <div id="tp-team-repo-setup">
 
-### <div class="text-white bg-dark p-1">tP Team Repo Setup</div>
+## tP Team Repo Setup
 
 ****({{ icon_individual }}/%%{{ icon_team }}%%) Only one team member:****
 
-<box tags="m--cs2113 m--tic4001" light type="important">
+<box tags="m--cs2113 m--tic4001" seamless type="important">
 
 The tP project template given to you is a variation of the iP repo you used for the iP, but ==with some important differences==. Please follow instructions carefully, rather than follow what you remember from the iP.
 
@@ -102,7 +102,7 @@ The tP project template given to you is a variation of the iP repo you used for 
 
 <div id="issue-tracker-setup">
 
-### <div class="text-white bg-dark p-1">tP Issue Tracker Setup</div>
+## tP Issue Tracker Setup
 
 We recommend you configure the issue tracker of the tP team repo as follows:
 
@@ -152,7 +152,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 <!-- ==================================================================================================== -->
 <div id="tp-individual-fork-setup">
 
-### <div class="text-white bg-dark p-1">tP Individual Fork Setup</div>
+## tP Individual Fork Setup
 
 ****({{ icon_individual }}, {{ icon_individual }}, {{ icon_individual }}, ...) Every team member:****
 
@@ -176,7 +176,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 <div id="workflow">
 
-### <div class="text-white bg-dark p-1">tP Workflow</div>
+## tP Workflow
 
 <div id="workflow-before-v11">
 
@@ -248,7 +248,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 <div id="tp-schedule-tracking">
 
-### <div class="text-white bg-dark p-1">tP Project Schedule Tracking</div>
+## tP Project Schedule Tracking
 
 In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking _all_ noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect the current status of the project. You can also use GitHub's [Projects feature](https://www.youtube.com/watch?v=C6MGKHkNtxU) to manage the project, but keep it linked to the issue tracker as much as you can.
 

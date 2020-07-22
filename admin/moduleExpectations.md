@@ -3,9 +3,11 @@
 {% call show_admin_page("moduleExpectations") %} 
 <div id="main">
 
+<p class="lead">Here are some important expectations of the module from you.</p>
+
 <span tags="m--cs2103">
 
-### Prior Knowledge: Java and OOP
+## Prior Knowledge: Java and OOP
 
 This module requires you to write Java code almost every week, starting from the very first week. If your Java skills are rusty, do brush up your Java programming skills.
 
@@ -14,7 +16,7 @@ In particular, you may want to **have a look at the new Java 8 features** such a
 CS2103 students: ==This module assumes a reasonable prior knowledge of Java and OOP== because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching to CS2113 (Software Engineering & Object-Oriented Programming) instead.
 </span>
 
-### Workload
+## Workload
 
 As {{ marks_ca }}% of this module is based on CA, it can appear to be _heavy_. However, **it is not expected that you will spend more time on this module than its <tooltip content="e.g., if this module is core for you, it should not take more time than other core modules at the same level in your program">peer modules</tooltip>**.
 * Note that the **module contains more things than a typical students can do**, in order to provide enough things for even the strongest students to learn as much as they wish to. 

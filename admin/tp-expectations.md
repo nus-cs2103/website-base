@@ -6,7 +6,9 @@
 
 <span class="keyword d-none">project expectations</span>
 
-### <div class="text-white bg-dark p-1">Outcomes</div>
+<!-- ==================================================================================================== -->
+
+## Outcomes
 
 The high-level learning outcome of the team project (tP):
 
@@ -35,7 +37,9 @@ The focus of the tP is to learn the following aspects:
 
 <span id="tp-direction">
 
-### <div class="text-white bg-dark p-1">Direction</div>
+<!-- ==================================================================================================== -->
+
+## Direction
 
 <div tags="m--cs2103">
 
@@ -103,8 +107,9 @@ You may develop any product provided it is meant for users who can type fast, an
 {{ embed_topic("tp-constraints.md#Recommendation-No-GUI", "Admin " + icon_embedding + " tP Contstraints → Recommendation-No-GUI", "2", indent="1") }}
 </div>
 
+<!-- ==================================================================================================== -->
 
-### <div class="text-white bg-dark p-1">Target User & Value Proposition</div>
+## Target User & Value Proposition
 
 You are expected to:
 * **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
@@ -131,7 +136,9 @@ You are expected to:
 
 <span id="functionalityExpectations">
 
-### <div class="text-white bg-danger p-1">Functionality Expectations</div>
+<!-- ==================================================================================================== -->
+
+<h2 class="text-white bg-danger p-1">Functionality Expectations</h2>
 
 <div tags="m--cs2103">
 
@@ -158,7 +165,7 @@ You are expected to:
   * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
 </box>
 
-<box type="important" light>
+<box type="important" seamless>
 
 <div tags="m--cs2103 m--cs2113">
 
@@ -174,7 +181,9 @@ In fact, here is the grading criterion for the individual project effort:
 </span>
 <span id="teamExpectations">
 
-### <div class="text-white bg-success p-1">{{ icon_team }} Team Expectations</div>
+<!-- ==================================================================================================== -->
+
+<h2 class="text-white bg-success p-1">{{ icon_team }} Team Expectations</h2>
 
 * <span class="badge badge-success">Expectation</span> <span class="text-success">**Preserve _product integrity_**</span> i.e. ensure,
   1. features fit together to form a cohesive product,
@@ -186,7 +195,9 @@ In fact, here is the grading criterion for the individual project effort:
 
 <span id="individualExpectations">
 
-### <div class="text-white bg-info p-1">{{ icon_individual }} Individual Expectations</div>
+<!-- ==================================================================================================== -->
+
+<h2 class="text-white bg-info p-1">{{ icon_individual }} Individual Expectations</h2>
 
 #### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Implementation</span>
 

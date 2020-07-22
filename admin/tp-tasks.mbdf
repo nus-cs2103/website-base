@@ -185,7 +185,7 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
 
 <div class="indented">
 
-<box type="success" light>
+<box type="success" seamless>
 
 ##### <span class="text-success">Project planning, with a twist</span>
 
@@ -562,7 +562,7 @@ Update the following pages in your project repo:
 <span id="desc_start_on_the_penultimate_version">
 <div class="indented">
 
-<box type="tip" light>
+<box type="tip" seamless>
 
 <div tags="m--cs2113 m--cs2103">
 
