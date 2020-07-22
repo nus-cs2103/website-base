@@ -29,12 +29,12 @@ pageNav: 4
 
 
 {% macro show_previous(topic)-%}
-<span class="float-left algolia-no-index"><b-btn variant="light" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>:far-arrow-alt-circle-left: {{ topic.title }}</md></b-btn></span>
+<span class="float-left algolia-no-index"><b-btn variant="light" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>:far-arrow-alt-circle-left: {{ topic.alt if topic.alt else topic.title }}</md></b-btn></span>
 {%- endmacro %}
 
 
 {% macro show_next(topic)-%}
-<span class="float-right algolia-no-index"><b-btn variant="light" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>{{ topic.title }} :far-arrow-alt-circle-right:</md></b-btn></span>
+<span class="float-right algolia-no-index"><b-btn variant="light" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>{{ topic.alt if topic.alt else topic.title }} :far-arrow-alt-circle-right:</md></b-btn></span>
 {%- endmacro %}
 
 
@@ -75,7 +75,7 @@ pageNav: 4
 {% endmacro %}
 
 {% set topics = [
-  {level: 1, id: "moduleOverview", title: module_pair + " " + module_name, link: "moduleOverview.html", priority: 4},
+  {level: 1, id: "moduleOverview", title: module_pair + ": " + module_name, link: "moduleOverview.html", alt: "Module Overview"},
   {level: 1, id: "usingThisWebsite", title: "Using this Website", link: "usingThisWebsite.html", highlight: "true", priority: 1},
   {level: 1, id: "moduleExpectations", title: "Module Expectations", link: "moduleExpectations.html", priority: 2},
   {level: 0, id: "moduleStructure", title: "Module Structure"},
@@ -165,7 +165,7 @@ pageNav: 4
 {% for topic in topics  %}
 {% if topic.id == current_topic_id %}
 {% set hashes = "#" %}
-<markdown>{{ hashes }} {{ topic.title }} <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) }} {% for tag in topic.tags %}<span class="badge badge-pill badge-light ">#{{ tag }}</span> {% endfor %}</span></markdown>
+<markdown>{{ hashes }} {{ topic.title }} <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) if topic.priority }} {% for tag in topic.tags %}<span class="badge badge-pill badge-light ">#{{ tag }}</span> {% endfor %}</span></markdown>
 {% endif %}
 {% endfor %}
 {%- endmacro %}
