@@ -4,7 +4,7 @@
 <div id="main">
 
 
-## Final Exam
+<p class="lead">There is no midterm exam. Information about the final exam is given below.</p>
 
 <box type="important">
 
@@ -15,7 +15,7 @@ Instructions below are from the previous semester. Will be updated closer to the
 * The final exam will be as per the normal exam schedule, and will count for {{ marks_exam }}% of the final grade.
 * The exam will be done online. Tools used: LumiNUS, Zoom, Microsoft Teams.
 
-### Early preparations
+## Early preparations
 
 * **Set up Zoom**: Follow the [Zoom exam instructions provided by NUS](https://wiki.nus.edu.sg/display/THES/Proctoring+with+Zoom) (note the requirement for ==SSO login==).
   * **Update the name of your Zoom profile to match the exact name on your student card, ==including whether the family name is give first or last==** (reason: we need to manually locate your name in the attendance list, which is sorted by your name in LumiNUS). You will not be admitted to the Zoom meeting if you do not comply with the requirement.
@@ -37,7 +37,7 @@ As per NUS requirements, your Zoom video feed is recorded by us and will be shar
 * **Set up MS-Teams**: Follow the [_Microsoft Teams_ instructions provided by NUS](https://wiki.nus.edu.sg/display/THES/Before+exams+-+Install+and+log+in+to+Microsoft+Teams). We'll be using MS-Teams as a backup in case of Zoom fails.
 
 
-### 30 minutes before the exam
+## 30 minutes before the exam
 
 * Aim to join the Zoom waiting room around 12.30pm.
 * Ensure your computer and the phone (if applicable) are charged and within reach of a power supply.
@@ -56,7 +56,7 @@ As per NUS requirements, your Zoom video feed is recorded by us and will be shar
 * Once you are inside the Zoom meeting, wait patiently until all students have been admitted and the exam is ready to start. **This wait could be as long as 30-45 minutes.**
 * Note that ==the quiz will not appear on LumiNUS until a few minutes before we release the password==.
 
-### During the exam
+## During the exam
 
 * **Keep both the video and speaker switched-on (but microphone muted)** in your Zoom during the entire exam.
 * Do not use MS-Teams during the exam unless the invigilator uses to contact you, you need to contact the invigilator, or you need to contact CIT for tech help.
@@ -68,14 +68,14 @@ As per NUS requirements, your Zoom video feed is recorded by us and will be shar
 * **Do not communicate with any person other than the invigilator** during the exam, as per normal exam rules.
 * **When the invigilator asks you to do a _face check_**, turn your face towards the camera, move closer to the camera, remove face mask (if any), and hold the pose until the invigilator tells you to go back to your working position.
 
-### Troubleshooting exam problems
+## Troubleshooting exam problems
 
 * **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 * **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), contact the invigilator using Zoom chat or MS-Teams.
 * **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.
 
 
-### Format
+## Format
 
 * The exam will be given as quizzes in LumiNUS.<br>
   For the ease of administration, the exam is split into two equal size quizzes: part 1, part 2.<br>
