@@ -92,6 +92,11 @@ From the same tutorial. One for coding standard review, one for code quality.
  ['CS2113-T15-2', 'jichngan', 'r31', 'b31', 'r32', 'b32']
 ]%}
 
+{% set tp_dg_review_allocation = [
+  ['A11riseforme', 'CS2113-T14-3', 'CS2113-T15-4', 'CS2113-T15-1'],
+  ['A11riseforme', 'CS2113-T14-3', 'CS2113-T15-4', 'CS2113-T15-1']
+] %}
+
 {% set team_review_allocation = [
 ["CS2103T-W11-1", "CS2103T-W13-1", "CS2103T-W13-3"],
 ["CS2103T-W11-2", "CS2103T-W13-2", "CS2103T-W13-4"],
