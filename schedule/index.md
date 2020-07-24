@@ -222,6 +222,7 @@ Admin info relevant to the week will appear in this tab.
 Topics allocated to the week will appear in this tab.
 </box>
 {% endif %}
+<include src="topics.md#notices" optional />
 {{ topics.show_week_schedule(week_num, weekly_textbook_topics) }}
 </div>
 {% endmacro %}

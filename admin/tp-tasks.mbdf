@@ -404,12 +404,11 @@ Update the following pages in your project repo:
 </div>
 
 * {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
-  * ==Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
-  * If possible, break the iteration into two increments i.e., aim to produce an even simpler but working version after one week.
-  * "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
+  * ==**Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)**== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
+  * **If possible, break the iteration into two _increments_** i.e., aim to produce an even simpler but working version after one week.
+  * **Avoid depth-first implementations**: "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet i.e., go _breadth-first iterative_ not _depth-first iterative_.
-* {{ icon_team }} **Divide the work** (i.e., the work required to produce that version) among the team members.
-* {{ icon_individual }} **Divide the work assigned to you into at least two increments** i.e., have at least one task to do in each of the coming two weeks.
+* {{ icon_team }} **Divide the work among the team members** i.e., the work required for the current iteration.
 * {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a place holder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_first }}`%%<br>
   Optionally, you can define a `mid-{{ version_first }}` milestone to keep track of things to be done within the first half of the milestone.
 </span>
@@ -429,7 +428,7 @@ Update the following pages in your project repo:
 
 {{ icon_tip }} **You may <tooltip content="i.e., copy-paste, not clone/fork">re-purpose/adopt</tooltip> code** from any of the below to be used in your tP, provided you give credit to the source (and do not claim such code as yours).
 * The iP code of any of your team members, or of any other person in the module.
-* Code from [AddressBook-Level2](https://se-education.org/addressbook-level2/) or any code used in module activities e.g., personbook
+* Code from [AddressBook-Level2](https://se-education.org/addressbook-level2/) or any code used in module activities {{ "e.g., personbook" if not tic4001 }}
 
 </box>
 </div>
@@ -921,8 +920,8 @@ Not applicable this semester
 * {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}<br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
-  Penalty for delays beyond 24 hours is determined on a case by case basis.
-  * Even a one-second delay is considered late, irrespective of the reason.
+  Penalty for delays beyond 24 hours is determined on a case by case basis.{% if not tic4001 %}
+  * Even a one-second delay is considered late, irrespective of the reason.{% endif %}
   * For submissions done via LumiNUS, the submission time is the timestamp shown by LumiNUS.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
   * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.

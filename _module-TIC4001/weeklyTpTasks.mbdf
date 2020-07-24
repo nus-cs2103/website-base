@@ -48,8 +48,8 @@ week12: [
   {id: 'double_check_reposense_compatibility'}
 ],
 week13: [
-  {id: 'submit_final_deliverables', deadline: get_date(date_w13_start, 10)},
-  {id: 'demo_the_product', deadline: get_date(date_w13_start, 12)}
+  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission)},
+  {id: 'demo_the_product', deadline: get_date(date_final_submission, 2)}
 ]
 } %}
 

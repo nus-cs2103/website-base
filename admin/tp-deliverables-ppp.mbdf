@@ -51,8 +51,8 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 Content | Recommended | Hard Limit
 ------- | ---------- | ----------
 Overview + Summary of contributions | 0.5-1 | 2
-[Optional] Contributions to the User Guide | 1-3
-[Optional] Contributions to the Developer Guide | 3-6
+[Optional] Contributions to the User Guide | {{ ug_pages_per_person }}
+[Optional] Contributions to the Developer Guide | {{ dg_pages_per_person }}
 </div>
 
 * The ==page limits given above are _after_ converting to PDF format==. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.

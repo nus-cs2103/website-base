@@ -10,10 +10,8 @@
 <variable name="period">2020 Aug-Dec</variable>
 <variable name="current_week">-1</variable>
 
-<variable name="url_announcements">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</variable>
-<variable name="url_files">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</variable>
+<variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
-<variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
 <variable name="url_repl_classroom">https://repl.it/classroom/invite/szXDJN4</variable>
 
 <variable name="date_w1_start">2020-08-10</variable>
@@ -102,14 +100,17 @@
 <variable name="url_module_gihub_io">https://{{ module_org | lower }}.github.io</variable>
 
 <variable name="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
+<variable name="url_announcements">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/announcements/active</variable>
 <variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_dashboards">{{ url_module_gihub_io | safe }}/dashboards</variable>
+<variable name="url_files">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/files</variable>
 <variable name="url_gitter">https://gitter.im/{{ module_org }}/community</variable>
 <variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/tp</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
 <variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/{{ "intermediate" if cs2103 else "basic"}}.html</variable>
+<variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
 <variable name="url_ip_dashboard">{{ url_module_gihub_io | safe }}/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
 <variable name="url_ip_progress_dashboard">{{ url_dashboards }}/contents/ip-progress.html</variable>
 <variable name="url_module_website">{{ url_module_gihub_io | safe }}/website</variable>

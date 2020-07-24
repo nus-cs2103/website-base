@@ -47,7 +47,7 @@
 {{ embed_topic("tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial IDs", "3") }}
 </div>
 {% else %}
-* **Has the form `TUTORIAL_ID-TEAM_NUMBER`** e.g, `{{ module }}-F18-2` which means you are in module `{{ module }}` session `Friday` at `1800`, team `2`.
+* **Has the form `{MODULE_CODE}-{TEAM_NUMBER}`** e.g, `{{ module }}-2` means you are in team `2`.
 {% endif %}
 
 </div>

@@ -446,8 +446,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "format", heading: "Format", priority: "2"}
+              {name: "what", heading: "What", priority: "0:2"},
+              {name: "format", heading: "Format", priority: "0:2"}
             ]
           }
         ]
@@ -458,8 +458,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "implementation", heading: "Implementation", priority: "2"},
+              {name: "what", heading: "What", priority: "0:2"},
+              {name: "implementation", heading: "Implementation", priority: "0:2"},
               {name: "evaluation", heading: "Evaluation", priority: "3"}
             ]
           }
@@ -483,7 +483,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
+              {name: "what", heading: "What", priority: "0:3"}
             ]
           }
         ]
@@ -1699,7 +1699,7 @@
               {name: "interfaceSegregationPrinciple", heading: "Interface Segregation Principle", priority: "-1"},
               {name: "dependencyInversionPrinciple", heading: "Dependency Inversion Principle", priority: "-1"},
               {name: "solidPrinciples", heading: "SOLID Principles", priority: "-1"},
-              {name: "separationOfConcernsPrinciple", heading: "Separation of Concerns Principle", priority: "2"},
+              {name: "separationOfConcernsPrinciple", heading: "Separation of Concerns Principle", priority: "0:2"},
               {name: "lawOfDemeter", heading: "Law of Demeter", priority: "-1"},
               {name: "yagniPrinciple", heading: "YAGNI Principle", priority: "-1"},
               {name: "dryPrinciple", heading: "DRY Principle", priority: "-1"},
