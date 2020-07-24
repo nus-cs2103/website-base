@@ -13,7 +13,6 @@
 <variable name="url_announcements">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</variable>
 <variable name="url_files">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</variable>
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
-<variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/intermediate.html</variable>
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
 <variable name="url_repl_classroom">https://repl.it/classroom/invite/szXDJN4</variable>
 
@@ -83,7 +82,8 @@
 <variable name="w7_days">{{ 14 if recess_after_week == "7" else 7 }}</variable>
 
 <variable name="format_normal">ddd, MMM Do</variable>
-<variable name="day_lecture">{{ date_first_lecture | date("dddd") }}</variable>
+<variable name="format_full_day">dddd</variable>
+<variable name="day_lecture">{{ date_first_lecture | date(format_full_day) }}</variable>
 <variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w4_start">{{ date_w3_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w5_start">{{ date_w4_start | date("YYYY-MM-DD", 7) }}</variable>
@@ -109,6 +109,7 @@
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/tp</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
+<variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/{{ "intermediate" if cs2103 else "basic"}}.html</variable>
 <variable name="url_ip_dashboard">{{ url_module_gihub_io | safe }}/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
 <variable name="url_ip_progress_dashboard">{{ url_dashboards }}/contents/ip-progress.html</variable>
 <variable name="url_module_website">{{ url_module_gihub_io | safe }}/website</variable>

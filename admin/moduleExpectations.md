@@ -5,8 +5,14 @@
 
 <p class="lead">Here are some important expectations of the module from you.</p>
 
-<span tags="m--cs2103">
+<span tags="m--tic4001">
 
+## Prior Knowledge: SE basics
+
+This module requires most of the topics you learned in TIC2002. Not to worry if you are not confident of those topics; we'll provide a reference to relevant TIC2002 to help you brush up those topics.
+
+</span>
+<span tags="m--cs2103">
 ## Prior Knowledge: Java and OOP
 
 This module requires you to write Java code almost every week, starting from the very first week. If your Java skills are rusty, do brush up your Java programming skills.
@@ -36,7 +42,7 @@ As {{ marks_ca }}% of this module is based on CA, it can appear to be _heavy_. H
 * **One-star topics** {{ one_star }} are essential to keep up with the module. We recommend you to ==learn these topics if you want to pass the module== (i.e. up to a **C** grade).
 * **Two-stars topics** {{ two_stars }} can get you up to a **B+**.
 * **Three-stars topics** {{ three_stars }} can get you up to an **A{{ "/A+**" if module == "TIC4001" else "**"}}.
-* **Four-stars topics** {{ four_stars }} can push you beyond the limits of the module, and help you get into a level above those who merely limit themselves to the topics of the module. They ==are not examinable==.
+* **Four-stars topics** {{ four_stars }} can push you beyond the limits of the module, and help you get into a level above those who merely limit themselves to the topics of the module. They ==are not <popover content="_examinable_ here means _can affect the grade_ during evaluation of various components, not necessarily limited to the final exam (if any)">examinable</popover>==.
 
 <span tags="m--cs2103 m--tic2002 m--tic4001">
 

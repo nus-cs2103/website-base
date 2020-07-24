@@ -7,7 +7,7 @@
 
 A summary of the week, and announcements relevant to that week, will appear in this [{{ show_as_tab('Summary', icon_tab_summary) }}](index.html) tab.
 
-**In each week**, go through all the tabs for that week (i.e., [{{ show_as_tab('Topics', icon_tab_topics) }}](topics.html), [{{ show_as_tab('Project', icon_tab_project) }}](project.html), ...) given at the top of this page and follow the instructions in them. FYI, a **[full timeline](../timeline.html)** is available too.
+**In each week**, go through all the tabs for that week (i.e., [{{ show_as_tab('Topics', icon_tab_topics) }}](topics.html), [{{ show_as_tab('Admin Info', icon_tab_admin_info) }}](admin.html), ...) given at the top of this page and follow the instructions in them. FYI, a **[full timeline](../schedule/timeline.html)** is available too.
 
 This week, ==there are things for you to do before the upcoming lecture== (refer the above tabs for details).
 

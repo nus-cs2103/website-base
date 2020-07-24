@@ -22,7 +22,7 @@
 **Documentation [`{{ marks_ip_documentation }}` marks]**: To get full marks, you should achieve,
 * The product web site and the user guide is reasonable
 
-<box type="tip" light>
+<box type="tip" seamless>
 
 You can monitor your iP progress (as detected by our scripts) in the [iP Progress Dashboard]({{ url_ip_progress_dashboard }}) page.
 </box>

@@ -31,19 +31,6 @@ The exam expects you to know Java to the extent that you should be familiar with
 We require you to use **Java 11** (the Oracle version or the OpenJDK version) for all module work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
 </box>
 
-#### Java coding standard
-    
-Some module activities will require you to follow [this Java coding standard]({{url_java_coding_standard}}).
-
-<div tags="m--cs2113 m--tic4001">
-
-**Follow ==basic== guidelines** (those marked as :star:) in those cases; intermediate and advanced guidelines are optional.
-</div>
-<div tags="m--cs2103">
-
-**Follow ==basic and intermediate== guidelines** (those marked as :star: and :star::star:) in those cases; advanced guidelines are optional.
-</div>
-
 </div>
 
 {% endcall %}

@@ -1,0 +1,1 @@
+Our first lecture will be on {{ date_first_lecture | date (format_normal)}} **7.30pm-9.30pm**

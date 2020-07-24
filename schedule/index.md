@@ -234,7 +234,7 @@ Topics allocated to the week will appear in this tab.
 {% if week_num == "1" %}
 <box type="info" dismissible>
 
-Information relevant to the week's tutorial will appear in this tab.
+Information relevant to the week's {{ "lecture" if tic4001 else "tutorial" }} will appear in this tab.
 </box>
 {% endif %}
 <include src="tutorial-{{ module | lower }}.mbdf" optional />

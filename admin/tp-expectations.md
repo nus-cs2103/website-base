@@ -165,14 +165,14 @@ You are expected to:
   * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
 </box>
 
-<box type="important" seamless>
+<box type="important" tags="m--cs2103 m--cs2113" seamless>
 
 <div tags="m--cs2103 m--cs2113">
 
 One semester ago, we reduced the tP functionality expectations by about 40-50% compared to the previous semesters, in order to reduce your workload. Keep that in mind in case you receive advice about project from seniors who did this module more than one semester ago.
 
 </div>
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 In fact, here is the grading criterion for the individual project effort:
 {{ embed_topic("tp-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP → PE → ==Evaluating the  Implementation Effort==", "3") }}
@@ -189,7 +189,7 @@ In fact, here is the grading criterion for the individual project effort:
   1. features fit together to form a cohesive product,
   1. documentation follows a consistent style and presents a cohesive picture to the reader, and
   1. final project demo presents a cohesive picture to the audience.
-* <span class="badge badge-success">Expectation</span> <span class="text-success">**Maintain product quality**</span> i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
+* <span class="badge badge-success">Expectation</span> <span class="text-success">**Maintain product quality**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--cs2113">Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
 * <span class="badge badge-success">Expectation</span> <span class="text-success">**Manage the project**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
 </span>
 

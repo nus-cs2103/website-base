@@ -153,7 +153,7 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
   * Creat the PR from the `master` branch of your fork to the `master` branch of the upstream repo ({{ url_module_org }}/{{ ip_repo_name }})
   * Set the PR name as `[{Your name}] iP` e.g., `[John Doe] iP` %%If you are reluctant to give full name, you may give the first half of your name only%%.<br>
    You may leave the description as empty.
-  * Steps for creating a PR is given in this textbook topic (steps 5 onwards):
+  * Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
 
 {{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=4) }}
 
@@ -212,7 +212,7 @@ Resources:
 * Create a new branch `branch-Level-6`.
 * Implement the increment in the new branch.
 * Push the branch to your fork.
-* Create a PR in your fork, from the new branch to the `master` branch.  Steps for creating a PR is given in this textbook topic (steps 5 onwards):
+* Create a PR in your fork, from the new branch to the `master` branch.  Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
 
 {{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
 
@@ -228,7 +228,7 @@ Resources:
 <span tags="m--cs2113 m--tic4001">
 
 * In case this increment does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already).
-* Upload the jar file to your fork as explained in the panel below. ==You can ignore the point about using Gradle==.
+* Upload the jar file to your fork as explained in the panel below.
 </span>
 </span>
 <span id="extra_Level-7">
@@ -244,11 +244,11 @@ Resources:
 <span id="extra_Level-8">
 <span tags="m--cs2113 m--tic4001" id="as-parallel-prs">
 
-* Note how to merge PRs:
+* **Note how to merge PRs**:
 
 {{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=2) }}
 
-* Practice using parallel git branches _and_ PRs, as explained below:
+* **Practice using parallel git branches _and_ PRs**, as explained below:
 1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
 1. Then, push each branch to your fork, and create a PR within your fork (i.e., from the increment branch to the `master` branch).
 1. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
@@ -443,8 +443,8 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {% if not tic4001 %}
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
-* **Create a new jar file** using Gradle. Creating jar file using Intellij is not recommended unless the product is very simple %%(e.g., no GUI or 3rd party libraries).%% The jar file should be ==cross-platform and should work in a computer that has Java 11==.
-* **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: it will be used to grade your iP)%%.<br>
+* **Create a new jar file** using Intellij (unless you have added a GUI or using third-party libraries in which case you should [use Gradle](https://se-education.org/guides/tutorials/gradle.html) to create the jar file). The jar file should be ==cross-platform and should work in a computer that has Java 11==.
+* **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
   1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.
 * **Create a new release on GitHub** (e.g., `v0.2`) and upload the jar file.

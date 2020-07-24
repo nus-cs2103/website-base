@@ -43,19 +43,14 @@ B.Sc. (Victoria University of Wellington, New Zealand)<br>
 
 **Dev Team**:
 
-This module is supported by a number of software tools developed by our students. Here are some of them whose work is directly relevant to the module for this semester:
+This module is supported by a number of software tools developed by our students:
 
-* Daryl Tan
-* Evangelos Sigalas
-* James Pang Mun Wai
-* Jin Minjia
-* Koh Jun Wei
-* Lee Jin Yao
-* Lum Ka Fai Jeffry
-* Prithivi Raj s/o Siva Kumar
-* Ronak Lakhotia
-* Tan Wang Leng
-* Yip Seng Yeun (Alfred)
+* [**CATcher** dev team](https://github.com/CATcher-org/CATcher#current-dev-team)
+* [**MarkBind** dev team](https://markbind.org/about.html)
+* [**PowerPointLabs** dev team](https://www.comp.nus.edu.sg/~pptlabs/contact.html)
+* [**RepoSense** dev team](https://reposense.org/about.html)
+* [**SE-EDU** dev team](https://se-education.org/docs/team.html)
+* [**TEAMMATES** dev team](http://teammatesv4.appspot.com/about.jsp)
 
 </div>
 
