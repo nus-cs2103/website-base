@@ -150,7 +150,7 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 <span id="heading_create_pr_to_upstream">Create a PR to the upstream repo</span>
 <span id="desc_create_pr_to_upstream">
 * Create a <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from your fork to the upstream repo. Note the following:
-  * Creat the PR from the `master` branch of your fork to the `master` branch of the upstream repo ({{ url_module_org }}/{{ ip_repo_name }})
+  * Create the PR from the `master` branch of your fork to the `master` branch of the upstream repo ({{ url_module_org }}/{{ ip_repo_name }})
   * Set the PR name as `[{Your name}] iP` e.g., `[John Doe] iP` %%If you are reluctant to give full name, you may give the first half of your name only%%.<br>
    You may leave the description as empty.
   * Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
@@ -312,7 +312,7 @@ This task is worth `2x2=4` participtaion points.
 </div>
 
 * {{ step(2) }} **Do the second PR review** as follows.
-  * Comment on ==other code quality guidelines== (see the <span tags="m--cs2103">section _Naming_</span><span tags="m--cs2113">sections on _Naming_ and _Readability_</span> in [this textbook chapter](../se-book-adapted/chapters/codeQuality.html)) you have learned so far. It's optional to comment on coding standard violations in this PR review.
+  * Comment on ==other code quality guidelines== (see the <span tags="m--cs2103">section _Naming_</span><span tags="m--cs2113 m--tic4001">sections on _Naming_ and _Readability_</span> in [this textbook chapter](../se-book-adapted/chapters/codeQuality.html)) you have learned so far. It's optional to comment on coding standard violations in this PR review.
   * The review allocation is given in the panel below.
 
 <div class="indented-level4">

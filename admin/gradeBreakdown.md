@@ -4,7 +4,7 @@
 {% call show_admin_page("gradeBreakdown") %}
 <div id="main">
 
-<puml>
+<puml name="gradeBreakdown.png">
 @startwbs
 skinparam backgroundcolor transparent
 + <b><color:red>100</color></b> marks
