@@ -251,7 +251,9 @@ When working with Git, sooner or later you will face a problem called _merge con
 <div id="{{ slugify("IDEs: Basic Features") }}">
  As you are likely to be using an IDE for the {{ ip_name }}, let's learn at least enough about IDEs to get you started using one.
 
-<div tags="m--cs2103">:thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
+<div tags="m--cs2103">
+
+:thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
 
 {{ embed_topic("moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
 <p/>
