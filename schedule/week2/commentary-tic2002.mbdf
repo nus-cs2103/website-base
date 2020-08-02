@@ -4,6 +4,7 @@
 {{ topic_preamble("oop-objects-abstraction") }}
 {{ topic_preamble("Java: Objects") }}
 {{ topic_preamble("Java: Classes") }}
+{{ topic_preamble("OOP: Class-level members") }}
 {{ topic_preamble("RCS: Saving History", id="rcs-intro") }}
 {{ topic_preamble("revisionControl-what") }}
 {{ topic_preamble("gitAndGithub-init") }}

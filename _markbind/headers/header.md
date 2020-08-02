@@ -26,7 +26,7 @@
     <li><a href="{{url_announcements}}" target="_blank" class="dropdown-item"><md>:glyphicon-bullhorn: Announcements</md></a></li>
     <li><a href="{{url_files}}" target="_blank" class="dropdown-item"><md>:fas-file-upload: Files</md></a></li>
     <li tags="m--cs2113 m--cs2103"><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
-    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="{{repl_link}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} `repl.it` link</md></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="{{url_repl_classroom}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} `repl.it` link</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
     <li tags="m--cs2103 m--cs2113"><a href="{{ url_forum_activities_dashboard }}" class="dropdown-item"><md>:fas-trophy: Forum Activities Dashboard</md></a></li>

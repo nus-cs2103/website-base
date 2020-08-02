@@ -95,6 +95,8 @@ Next, let's get started learning Java. First, a bit about the language itself.
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: HelloWorld") }}">
 As with any language, the first step is to install the language in your computer. After that, you write a simple HelloWorld program, and get it running.
+
+Java 11 can be downloaded from [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Data Types") }}">
@@ -111,6 +113,10 @@ Now that you know what _objects_ are, let's see how they are used in Java, which
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Classes") }}">
 Having seen how to use objects in Java, the next step is learn how to define new _kinds_ of objects (aka _classes_) in Java.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("OOP: Class-level members") }}">
+Now that we know about classes, let's learn what _class-level members_ are and how to use them in Java.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Constants") }}">
