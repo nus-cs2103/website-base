@@ -4,7 +4,7 @@
 {% call show_admin_summary() %}
 1. Install Java {{ timing_badge("before the lecture") }}
 1. Create a GitHub account
-1. Submit the pre-module survey  {{ timing_badge("by " + get_date(date_w1_start, 5)) }}
+1. Submit the pre-module survey  {{ timing_badge("by " + get_date(date_w1_start, 4)) }}
 1. Attend the lecture
 1. Submit weekly exercises
 {% endcall %}
@@ -29,7 +29,7 @@
 {{ embed_topic("../../admin/index-tic2002.mbdf#github-info", "Admin " + icon_embedding + " Tools → GitHub", "week1Admin-github", "2") }}
 
 
-#### {{ thumb(3) }} Submit the pre-module survey  {{ timing_badge("by " + get_date(date_w1_start, 5), "secondary") }}
+#### {{ thumb(3) }} Submit the pre-module survey  {{ timing_badge("by " + get_date(date_w1_start, 4), "secondary") }}
 
 * Submit the pre-module survey, available on LumiNUS
 

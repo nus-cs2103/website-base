@@ -102,10 +102,14 @@ Java 11 can be downloaded from [here](https://www.oracle.com/java/technologies/j
 <div id="{{ slugify("cppToJava-gettingStarted-running") }}">
 <span tags="m--tic2002">
 
-At the end of this section, there is an exercise (_[Key Exercise] ByeWorld_) that you need to submit on repl.it. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on repl.
+At the end of the next section, there is an exercise (_[Key Exercise] ByeWorld_) that you need to submit on repl.it. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on repl.
 
-{{ embed_topic("index-tic2002.mbdf#repl-info", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
+{{ embed_topic("index-tic2002.mbdf#repl-info", "Admin " + icon_embedding + " Tools → Repl.it", "3") }}
 <p/>
+
+The process of submitting exercises to repl is explained in this video:
+
+{{ panopto("5e45eb04-317d-4ff2-83fb-ac0d01085120") }}
 
 </span>
 </div>
