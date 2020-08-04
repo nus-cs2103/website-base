@@ -10,7 +10,7 @@
 <span id="heading_submit_pre_lecture_quiz">Submit pre-lecture quiz</span>
 <span id="desc_submit_pre_lecture_quiz">
 
-* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Lecture 1 - Pre-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics. Ideally, finish the quiz before the first lecture, latest by the given deadline. The quiz is counted for participation (in place of week 1 post-lecture quiz).
+* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz`** (on LumiNUS) to test your knowledge of those topics. Ideally, finish the quiz before the first lecture, latest by the given deadline. The quiz is counted for participation.
 
 {{ embed_topic("participation.md#main", "Admin " + icon_embedding + " **Participation**", "2", indent="2") }}
 
