@@ -7,6 +7,7 @@ pageNav: 2
 </frontmatter>
 
 {% from "common/macros.njk" import get_date with context %}
+{% from "common/topics.njk" import panopto with context %}
 
 <div class="website-content">
 
@@ -61,10 +62,9 @@ _TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balanc
 
 <!-- :far-frown: **Lectures will not be webcast** as the venue does not have a webcast facility. ==Please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture. -->
 
-**Lectures will be done Zoom**. You are encouraged to attend the Zoom session as there will be in-lecture activities. A lecture recording will be made available in case you can't attend the Zoom session.
+**Lectures will be done via Zoom**. You are encouraged to attend the Zoom session as there will be in-lecture activities. A lecture recording will be made available in case you can't attend the Zoom session.
 
-**Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Use the textbook (not slides) as your main reference. Slides will be uploaded to LumiNUS _after_ the lecture, usually by Wednesday.<br>
-  {{ icon_tip }} If slides are not in LumiNUS by the expected times, please feel free to ping the lecturer.
+**Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Use the textbook (not slides) as your main reference. Slides can be uploaded to LumiNUS if requested, _after_ the lecture.<br>
 
 </div>
 
@@ -200,6 +200,10 @@ We'll be using `Repl.it` for coding exercises (compulsory).
 * {{ icon_important_big_red }} Create an account on https://repl.it. 
 * In your `repl.it` ==user profile set the _first name_ to match your GitHub username exactly== (so that the prof can trace your `repl.it` submissions to you). No restrictions on the last name.
 * Join the `repl.it` classroom `tic2002-{{ period }}` using the link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).
+
+The process of submitting exercises to repl is explained in this video:
+
+{{ panopto("5e45eb04-317d-4ff2-83fb-ac0d01085120") }}
 
 </div>
 <div id="intellij-info">
