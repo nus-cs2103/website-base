@@ -17,11 +17,11 @@ mark {
 }
 
 .alt-java {
-    display: none;
+    display: block;
 }
 
 .alt-python {
-    display: block;
+    display: none;
 }
 
 .flat {
