@@ -23,7 +23,15 @@
 Lectures start on time sharp and end around 15 minutes before official end time.
 </div>
 
-<div id="tip-about-lecture-videos">
+****Mode****:
+* Will be done using Zoom. More information coming soon.
+
+<div tags="m--cs2103 m--tic4001">
+
+* Some topics come with pre-recorded lecture videos.
+</div>
+
+<div id="tip-about-lecture-videos" class="indented">
 
 <box type="tip" seamless>
 
@@ -33,9 +41,6 @@ Lectures start on time sharp and end around 15 minutes before official end time.
 * Lecture videos require NUSNET login.
 </box>
 </div>
-
-****Mode****:
-* Will be done using Zoom. More information coming soon.
 
 
 ****Attendance****: Attendance for the ==first lecture is compulsory==.
