@@ -93,7 +93,7 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 ##### :fab-gitter: Gitter %%(for quick chats)%%
 
-* The module Gitter channel is [{{ url_gitter }}](urt_gitter).
+* The module Gitter channel is [{{ url_gitter }}]({{ url_gitter }}).
 * We opted to use Gitter because it is GitHub-friendly %%(you can use your GitHub account to access Gitter)%% and programmer-friendly %%(e.g., supports code syntax highlighting)%%.
 * ==Do not use Gitter for technical help requests==. Such requests can lead to long-running discussions which are better suited for the forum.
 
