@@ -23,6 +23,17 @@
 Lectures start on time sharp and end around 15 minutes before official end time.
 </div>
 
+<div id="tip-about-lecture-videos">
+
+<box type="tip" seamless>
+
+##### Tips for watching lecture videos
+
+* ==You can watch video lectures at faster speeds== (`x1.25` or even `x1.5`) to save time.
+* Lecture videos require NUSNET login.
+</box>
+</div>
+
 ****Mode****:
 * Will be done using Zoom. More information coming soon.
 

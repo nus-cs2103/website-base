@@ -97,6 +97,14 @@ Next, let's get started learning Java. First, a bit about the language itself.
 As with any language, the first step is to install the language in your computer. After that, you write a simple HelloWorld program, and get it running.
 
 Java 11 can be downloaded from [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+
+<div tags="m--tic2002">
+
+Note that this topic (and many other topics) come with a pre-recorded lecture video.
+
+{{ embed_topic("lectures.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Lectures → Extract", "3", status="expanded") }}
+<p/>
+
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("cppToJava-gettingStarted-running") }}">
@@ -208,6 +216,15 @@ Now that we know what RCS is in general, we can try to practice it ourselves usi
 The following section gives a specific scenario that includes the steps of initializing a Git repository.
 
 **If you are new to Git**, you are highly recommended to ==follow those steps in your own computer== to get some hands-on practice as you learn Git usage.
+
+<div tags="m--cs2103">
+
+Note that this topic (and many other topics) come with a pre-recorded lecture video.
+
+{{ embed_topic("lectures.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Lectures → Extract", "3", status="expanded") }}
+<p/>
+
+</div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("revisionControl-savingHistory") }}">
