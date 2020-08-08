@@ -1732,7 +1732,7 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What is Java?", priority: "3"},
-              {name: "how", heading: "How Java Works", priority: "4"},
+              {name: "how", heading: "How Java Works", priority: "3"},
               {name: "editions", heading: "Java Editions", priority: "4"}
             ]
           }
