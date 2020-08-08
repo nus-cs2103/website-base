@@ -201,7 +201,7 @@ We'll be using `Repl.it` for coding exercises (compulsory).
 * In your `repl.it` ==user profile set the _first name_ to match your GitHub username exactly== (so that the prof can trace your `repl.it` submissions to you). No restrictions on the last name.
 * Join the `repl.it` classroom `tic2002-{{ period }}` using the link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).
 
-The process of submitting exercises to repl is explained in this video:
+The process of submitting exercises to repl is explained in this video (requires NUSNET login):
 
 {{ panopto("5e45eb04-317d-4ff2-83fb-ac0d01085120") }}
 
