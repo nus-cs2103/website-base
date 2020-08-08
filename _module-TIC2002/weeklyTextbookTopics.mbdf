@@ -9,7 +9,7 @@
       {location: ["cppToJava", "javaWorld", "what"]},
       {location: ["cppToJava", "javaWorld", "how"], panopto: "eb1fbc9c-25bf-4f71-aa2e-ac0700d2eab6"},
       {location: ["cppToJava", "javaWorld", "editions"]},
-    {heading: "Java: HelloWorld", panopto: "5e45eb04-317d-4ff2-83fb-ac0d01085120"},
+    {heading: "Java: HelloWorld", panopto: "2272aac8-8865-4f83-8c18-ac0c00bec829"},
       {location: ["cppToJava", "gettingStarted", "installation"]},
       {location: ["cppToJava", "gettingStarted", "helloWorld"]},
       {location: ["cppToJava", "gettingStarted", "compiling"]},
