@@ -62,7 +62,14 @@ _TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balanc
 
 <!-- :far-frown: **Lectures will not be webcast** as the venue does not have a webcast facility. ==Please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture. -->
 
-**Lectures will be done via Zoom**. You are encouraged to attend the Zoom session as there will be in-lecture activities. A lecture recording will be made available in case you can't attend the Zoom session.
+**Lectures will be done via Zoom**. You are encouraged to attend the Zoom session as there will be in-lecture activities. A lecture recording will be made available in case you can't attend the Zoom session. The live portion of the lecture will be short (~30 minutes).
+
+**In-lecture consultations**: After the live portion of the lecture is over, the remainder of the lecture time is used as follows:
+* Open up Microsoft Teams app and go to the `TIC2002_{{ period }}` ([link](https://teams.microsoft.com/l/team/19%3ac95cd77a96724ccd9d6041e5b97a7b21%40thread.tacv2/conversations?groupId=cb153fe2-896a-43be-b3e9-abb013bd3ab6&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)) team in there.
+* Go through the week's lecture topics in the module website. Do suggested activities/exercises in there (if any).
+* If you encounter any problems while doing the above or have a question, do the following:
+  * If the question is is potentially relevant to others in the class, post your question in the chat room of the `TIC2002_{{ period }}` MS Team.
+  * Otherwise search for prof's name (`Damith Chatura RAJAPAKSE`) in MS Teams and send a private chat message. Prof with contact you back.
 
 **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Use the textbook (not slides) as your main reference. Slides can be uploaded to LumiNUS if requested, _after_ the lecture.<br>
 
@@ -75,6 +82,8 @@ _TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balanc
 
 %%:far-clock:%% Tuesdays 6.30-7.30pm. Tutorials start from week 2. No tutorial in week 1.<br>
 %%:fas-map-marker-alt:%% ~~SR2 (COM1-02-04)~~ Online<br>
+
+**In most weeks, the tutorial time is used for consultations** -- you can use that time to get prof's help if you encountered problems while doing the previous week's tasks. The procedure to get help is similar to [_in-lecture consultations_](#lectures) (i.e., via MS Teams app).
 </div>
 
 {{ line_dotted }}<!-- ................................................................................... -->
@@ -175,6 +184,17 @@ Weekly project increments are given in the panels below:
 
 # Tools
 <div class="indented">
+
+### Zoom
+
+Install Zoom in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Proctoring+with+Zoom). Remember to login using your NUSNET account. 
+
+### Microsoft Teams (MST)
+
+Install MST in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to login using your NUSNET account.
+
+The MST team used for the class is `TIC2002_{{ period }}` ([link](https://teams.microsoft.com/l/team/19%3ac95cd77a96724ccd9d6041e5b97a7b21%40thread.tacv2/conversations?groupId=cb153fe2-896a-43be-b3e9-abb013bd3ab6&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)).
+
 <div id="git-info">
 
 ### Git, SourceTree

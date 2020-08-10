@@ -4,4 +4,5 @@ _site/
 *.iml
 _markbind/logs/
 pullall.sh
+pullallmods.sh
 pushall.sh
