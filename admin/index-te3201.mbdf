@@ -200,7 +200,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 * We'll be using `Repl.it` for coding exercises (compulsory).
 * {{ icon_important_big_red }} Create an account on https://repl.it. 
 * ==Make sure you set your display name in your `repl.it` user profile to match your real name== (so that the prof can trace your `repl.it` submissions to you). 
-* Join the `repl.it` classroom `tic2002-{{ period }}` using this link [{{ repl_link }}]({{ repl_link }}).
+* Join the `repl.it` classroom `tic2002-{{ period }}` using this link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).
 
 </div>
 <div id="intellij-info">

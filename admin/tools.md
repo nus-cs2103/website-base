@@ -69,7 +69,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 * {{ icon_important_big_red }} Create an account on https://repl.it.
 * ==Make sure you set your _first name_ in your `repl.it` user profile to be exactly the same as your GitHub username== (so that our grading scripts can trace your `repl.it` submissions). The _last name_ field is not used by the scripts (i.e., you can set it to any value).
-* Join the `repl.it` classroom `cs2113-{{ period }}` using this link [{{ repl_link }}]({{ repl_link }}).
+* Join the `repl.it` classroom `cs2113-{{ period }}` using this link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).
 </box>
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="communication">
