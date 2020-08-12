@@ -12,6 +12,33 @@
 This module website is the main source of information for the module. In addition, we use LumiNUS for some things %%(e.g., webcasts, announcements, file submissions, grade book, ...)%%.
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
+
+## Tool: Zoom (for Lectures)
+
+Install Zoom in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Proctoring+with+Zoom). Remember to login using your NUSNET account.
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
+<div tags="m--cs2103 m--tic4001">
+
+## Tool: MS Teams (for In-Lecture Consultations)
+
+Install MST in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to login using your NUSNET account.
+
+The MST team(s) used for the class (the _code_ to join these teams will be given out during the lecture):
+
+<div tags="m--cs2103">
+
+* for the 12-2pm lecture: [{{ module }}_{{ semester }}_12pm_lecture](https://teams.microsoft.com/l/team/19%3a3630fa4497fd4145ba91ba53751139f5%40thread.tacv2/conversations?groupId=9c5f3186-78dc-41e1-a1bf-9523bb4542e2&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)
+* for the 4-6pm lecture: [{{ module }}_{{ semester }}_4pm_lecture](https://teams.microsoft.com/l/team/19%3ab3526d60b0384e2683473b9cf00056d2%40thread.tacv2/conversations?groupId=3d2993a3-8b88-4fdd-b8d3-e7018470a874&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)
+
+</div>
+<div tags="m--tic4001">
+
+* for in-lecture consultations: [{{ module }}_{{ period }}](https://teams.microsoft.com/l/team/19%3a7aa4058bcf1e4dd996c4aec2d56bd7e6%40thread.tacv2/conversations?groupId=f0f17fb9-5f2f-4f16-be96-546326a04067&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)
+</div>
+</div>
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="github">
 
 ## Tool: GitHub (for code hosting)

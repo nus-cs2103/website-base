@@ -13,9 +13,13 @@
 
 **The lecture+tutorial slot ({{ day_lecture }} 6.30pm-9.30pm) will be repurposed** as follows, due to this being a 100% project module:
 
-* **6.30-7pm**: No formal activities. Work with team members and consult instructors if you need help with the previous week's tasks.
+* **6.30-7pm**: No formal activities. Work with team members and consult instructors (using the MS Teams app) if you need help with the previous week's tasks.
 * **7-7.30pm**: Weekly briefing.
-* **7-30-9.30pm**: Do the lecture activities (if any) or work with team members to do weekly project activities. The tutor will observe or get involved in your team's work as necessary. You may approach instructors for help during this period.
+* **7-30-9.30pm**:
+  * Do the lecture activities (if any) or work with team members to do weekly project activities.
+  * The tutor will observe or get involved in your team's work as necessary.
+  * You may approach instructors (using the MS Teams app) for help during this period.
+  * From week 3, we'll be scheduling team meetings during this period, for the team supervisor to discuss the team project progress with you.
 </div>
 
 <div tags="m--cs2103 m--cs2113">
