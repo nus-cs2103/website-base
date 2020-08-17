@@ -42,7 +42,7 @@
       {location: ["cppToJava", "classes", "gettersAndSetters"]},
   {name: "OOP + Java"},
     {heading: "OOP: Class-level members"},
-      {location: ["oop", "classes", "classLevelMembers"], panopto: "5bf09b86-6ec7-4b9b-82cf-ac0c00dbbb13"},
+      {location: ["oop", "classes", "classLevelMembers"], panopto: "02da6f70-2dd8-4093-867e-ac1a00d47ad9"},
       {location: ["cppToJava", "classes", "classLevelMembers"], panopto: "73060fc7-4c2d-4a03-bb8e-ac0e00c9a8fe"},
   {name: "Revision Control"},
     {heading: "RCS: Saving History"},
