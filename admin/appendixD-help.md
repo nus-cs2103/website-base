@@ -30,6 +30,9 @@
 
 * **Ask in the [module forum]({{ url_forum }})**: 
   * **Give full details of the problem** Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.
+    * Give a meaningful title to the post. Be as specific as you can.<br>
+      {{ bad }} `testing problem`<br>
+      {{ good }} `runtest.bat fails with ClassNotFound error`
     * Include full error message, screenshots, code snippets, stack traces, etc.<br>
     * If the problem is code-related, share the code if possible (e.g., push the current state of the code to a branch in your fork and give the link to the branch). That gives a chance for someone to reproduce the state of your project in their computer.
   * **Avoid addressing the question to one person** (e.g., the prof), unless really necessary. Doing so will discourage others from answering that question.
@@ -42,6 +45,8 @@
 
   * **Generalize the problem.** "How to write tasks to a text file using Java" is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) "How to write to a file using Java".
   * **Remember to thank those you try to help, and close the issue** after the issue has been resolved.
+  * **Share the solution**. If you eventually managed to solve the problem on your own, share the solution in the thread for the benefit of others, and give closure to those who tried to help you. Don't leave the thread hanging or close it with something like `Never mind. I figured it out`.
+  * **Don't _hijack_ other threads**: It is OK to chime in if you have the same problem as the <tooltip content="Original Poster">OP</tooltip> but don't ask a different (even if somewhat related) question in someone else's thread. That prevents the OP from closing the thread after the original question has been resolved. Instead, post your question as a separate thread.
 
 <modal large header="Rubber Duck Debugging" id="modal:appendixHelp-rubberDuckDebugging">
 
