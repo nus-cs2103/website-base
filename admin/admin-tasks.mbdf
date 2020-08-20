@@ -100,6 +100,12 @@
 * See the [{{ show_as_tab("Tutorial", icon_tutorial) }}](../schedule/week3/tutorial.html) tab for more info.
 </span>
 {#====================================================================================================================#}
+<span id="heading_form_teams_non_t">Form teams during the tutorial</span>
+<span id="desc_form_teams_non_t">
+
+* The teaching team will guide the team forming.
+</span>
+{#====================================================================================================================#}
 <span id="heading_accept_github_invitations">Accept GitHub invitation from the module organization</span>
 <span id="desc_accept_github_invitations">
 

@@ -36,7 +36,7 @@
     <li><a href="{{baseUrl}}/admin/ip-overview.html" class="dropdown-item"><md>{{ icon_project }} Individual Project Info</md></a></li>
     <li><a href="{{url_module_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} iP Upstream Repo</md></a></li>
     <li><a href="{{ url_ip_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: iP Code Dashboard</md></a></li>
-    <li><a href="{{ url_ip_progress_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-trophy: iP Progress Dashboard</md></a></li>
+    <li><a href="{{ url_ip_progress_dashboard }}" target="_blank" class="dropdown-item text-success"><md>:fas-trophy: iP Progress Dashboard</md></a></li>
     <hr>
     <md>**&nbsp;Team Project (tP):**</md>
     <li><a href="{{baseUrl}}/admin/tp-expectations.html" class="dropdown-item"><md>{{ icon_project }} Team Project Info</md></a></li>

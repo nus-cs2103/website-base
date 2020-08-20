@@ -13,7 +13,7 @@ week2: [
 ],
 week3: [
   {id: 'submit_post_lecture_quiz', deadline: "before the next lecture"},
-  {id: 'form_teams'}
+  {id: 'form_teams_non_t'}
 ],
 week4: [
   {id: 'submit_post_lecture_quiz'},
