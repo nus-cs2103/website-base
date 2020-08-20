@@ -273,6 +273,7 @@ Resources:
 <span id="extra_A-JavaDoc">
 
 * As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+* The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
 </span>
 {#====================================================================================================================#}
 <span id="heading_prepare_for_pr_reviews">Get ready to review PRs</span>
