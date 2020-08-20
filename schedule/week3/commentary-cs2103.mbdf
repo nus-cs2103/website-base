@@ -12,6 +12,7 @@ Let's start by going through some Java topics that is relevant to the iP. You ca
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {{ topic_preamble("Code Quality: Coding Standards") }}
+{{ topic_preamble("codeQuality-introduction-basic") }}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Developer Testing", reuse=false) %}
 

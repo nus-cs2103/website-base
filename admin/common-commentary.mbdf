@@ -307,6 +307,12 @@ Now that you know how to use IDE basic features, it's worth looking at even more
 <div id="{{ slugify("Code Quality: Coding Standards") }}">
 As you know, one of the objectives of the iP is to raise the quality of your code. We'll be learning about various ways to improve the code quality in the next few weeks, starting with coding standards.
 </div>
+
+<div id="{{ slugify("codeQuality-introduction-basic") }}">
+<div tags="m--cs2103">
+
+==Please watch the lecture video given below as it has some extra points not given in the text version.==</div>
+</div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Code Quality: Naming") }}">
 Previously, you learned about coding standards as a way to improve code quality. The next topic along that theme covers guidelines for naming things in code.
