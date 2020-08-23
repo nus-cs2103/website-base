@@ -1,31 +1,27 @@
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
+
+#### {{ thumb(0) }} **[{{ module }} students only] Form teams**
+
+<include src="../../admin/common-tutorials.mbdf#form-teams" />
+
+
 #### {{ thumb(1) }} **Introduce yourselves**
 
 <include src="../../admin/common-tutorials.mbdf#introduce-yourselves" />
 
 
-#### {{ thumb(2) }} **[{{ module }} students only] Form teams**
-
-<include src="../../admin/common-tutorials.mbdf#form-teams" />
-
-
-#### {{ thumb(3) }} **Register the team** {{ timing_badge("before leaving the tutorial") }}
-
-<include src="../../admin/common-tutorials.mbdf#register-the-team" />
-
-
-#### {{ thumb(4) }} **Find coding standard violations** {{ icon_extra }}
+#### {{ thumb(2) }} **Find coding standard violations** {{ icon_extra }}
 
 <include src="../../admin/common-tutorials.mbdf#exercise-coding-standard-violations" />
 
 
-#### {{ thumb(5) }} **Decide a weekly project meeting time**
+#### {{ thumb(3) }} **Decide a weekly project meeting time**
 
 <include src="../../admin/common-tutorials.mbdf#decide-meeting-time" />
 
 
-#### {{ thumb(6) }} **Help team members troubleshoot iP problems**
+#### {{ thumb(4) }} **Help team members troubleshoot iP problems**
 
 <include src="../../admin/common-tutorials.mbdf#help-troubleshoot-ip" />
 
