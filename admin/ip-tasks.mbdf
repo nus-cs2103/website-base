@@ -290,6 +290,14 @@ Resources:
 <span id="heading_review_two_prs">Review some peer PRs</span>
 <span id="desc_review_two_prs">
 
+<div tags="m--cs2103">
+
+<box type="wrong" add-class="ml-4" icon=":fas-hand-paper:" icon-size="2x" seamless>
+
+**Please wait till {{ date_w4_start | date(format_normal, 3) }}** to start this task, to give others a few extra days to create the PR if they haven't done so yet.
+</box>
+</div>
+
 <box type="info" add-class="ml-4">
 
 This task is worth `2x2=4` participtaion points.
