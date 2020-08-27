@@ -22,13 +22,13 @@ week3: [
   ]}
 ],
 week4: [
-  {id: 'review_two_prs', graded: true, deadline: 'during lecture'},
   {id: 'add_increments', suffix: ' as branches', increments: [
     {id: 'Level-5', title: 'Handle Errors'},
     {id: 'A-CodeQuality', title: 'Improve Code Quality'},
     {id: 'A-AbstractClasses', title: 'Use Abstract Classes'},
     {id: 'A-Packages', title: 'Organize into Packages'}
-  ]}
+  ]},
+  {id: 'review_two_prs', graded: true}
 ],
 week5: [
   {id: 'add_increments', suffix: ' as PR', increments:  [

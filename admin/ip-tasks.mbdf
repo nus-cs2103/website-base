@@ -1,4 +1,5 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
+{% from "common/topics.njk" import panopto with context %}
 {% from "common/macros.njk" import button, embed_topic, get_date, step, thumb, timing_badge with context %}
 {% from "_module-" + module + "/weeklyIpTasks.mbdf" import weekly_ip_tasks with context %}
 
@@ -290,7 +291,7 @@ Resources:
 <span id="heading_review_two_prs">Review some peer PRs</span>
 <span id="desc_review_two_prs">
 
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--tic4001">
 
 <box type="wrong" add-class="ml-4" icon=":fas-hand-paper:" icon-size="2x" seamless>
 
@@ -304,6 +305,9 @@ This task is worth `2x2=4` participtaion points.
 </box>
 
 * **Learn _how_ you should review PRs in this task**:
+
+{{ panopto('c001244c-01b5-4471-ab9d-ac1b0098110a') }}
+
 {{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
 
 * {{ step(1) }} **Note these additional guidelines**:
@@ -311,7 +315,7 @@ This task is worth `2x2=4` participtaion points.
   * If the PR has received some review comments already, feel free to confirm/complement/question those comments in your review. Also, look for things the previous reviewers may have missed.
   * At the end of the review, choose `Comment` (i.e., not `Approve` or `Request changes`)
 
-* **Do the first PR review** as follows.
+* {{ step(2) }} **Do the first PR review** as follows.
   * Comment on ==[coding standard]({{ url_java_coding_standard }}) violations only==.
   * The review allocation is given in the panel below.
 
@@ -320,7 +324,7 @@ This task is worth `2x2=4` participtaion points.
 <include src="common-tutorials.mbdf#show-ip-peer-review-allocation-1" />
 </div>
 
-* {{ step(2) }} **Do the second PR review** as follows.
+* {{ step(3) }} **Do the second PR review** as follows.
   * Comment on ==other code quality guidelines== (see the <span tags="m--cs2103">section _Naming_</span><span tags="m--cs2113 m--tic4001">sections on _Naming_ and _Readability_</span> in [this textbook chapter](../se-book-adapted/chapters/codeQuality.html)) you have learned so far. It's optional to comment on coding standard violations in this PR review.
   * The review allocation is given in the panel below.
 
@@ -329,7 +333,7 @@ This task is worth `2x2=4` participtaion points.
 <include src="common-tutorials.mbdf#show-ip-peer-review-allocation-2" />
 </div>
 
-* {{ step(3) }} **[When you receive reviews for your own PR] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in [these guidelines](https://se-education.org/guides/guidelines/PRs-reviewing.html), do not get into arguments with PR reviewers/authors.
+* {{ step(4) }} **[When you receive reviews for your own PR] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in [these guidelines](https://se-education.org/guides/guidelines/PRs-reviewing.html), do not get into arguments with PR reviewers/authors.
 
 </span>
 {#====================================================================================================================#}
