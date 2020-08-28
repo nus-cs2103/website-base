@@ -16,7 +16,6 @@ week3: [
   {id: 'form_teams_non_t'}
 ],
 week4: [
-  {id: 'submit_post_lecture_quiz'},
   {id: 'accept_github_invitations'}
 ],
 week5: [
