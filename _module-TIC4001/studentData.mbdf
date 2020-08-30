@@ -11,7 +11,23 @@
 ] %}
 
 {% set ip_pr_review_allocation = [
-  ['tutorial_id', 'reviewer_github1', 'github2', 'github3', 'github4', 'github5']
+  ['TIC4001-F16', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213', 'binbinhui'],
+  ['TIC4001-F16', 'Yiheng0410', 'pigoliver', 'Impala36', 'e02161618', 'Chenduo1412'],
+  ['TIC4001-F16', 'Chilaiping', 'dgc5213', 'binbinhui', 'Yiheng0410', 'pigoliver'],
+  ['TIC4001-F16', 'e0260222', 'daiweinus', 'adi-kd0021', 'linqing42', 'timmyly7'],
+  ['TIC4001-F16', 'Chenduo1412', 'e0260222', 'daiweinus', 'adi-kd0021', 'linqing42'],
+  ['TIC4001-F16', 'skyventus', 'tototto', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping'],
+  ['TIC4001-F16', 'Impala36', 'e02161618', 'Chenduo1412', 'e0260222', 'daiweinus'],
+  ['TIC4001-F16', 'daiweinus', 'adi-kd0021', 'linqing42', 'timmyly7', 'skyventus'],
+  ['TIC4001-F16', 'dgc5213', 'binbinhui', 'Yiheng0410', 'pigoliver', 'Impala36'],
+  ['TIC4001-F16', 'tototto', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213'],
+  ['TIC4001-F16', 'e02161618', 'Chenduo1412', 'e0260222', 'daiweinus', 'adi-kd0021'],
+  ['TIC4001-F16', 'timmyly7', 'skyventus', 'tototto', 'JanuariusJang', 'ZhengShijieNUS'],
+  ['TIC4001-F16', 'adi-kd0021', 'linqing42', 'timmyly7', 'skyventus', 'tototto'],
+  ['TIC4001-F16', 'binbinhui', 'Yiheng0410', 'pigoliver', 'Impala36', 'e02161618'],
+  ['TIC4001-F16', 'linqing42', 'timmyly7', 'skyventus', 'tototto', 'JanuariusJang'],
+  ['TIC4001-F16', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213', 'binbinhui', 'Yiheng0410'],
+  ['TIC4001-F16', 'pigoliver', 'Impala36', 'e02161618', 'Chenduo1412', 'e0260222']
 ]%}
 
 {% set ip_final_peer_evaluation_allocation = [

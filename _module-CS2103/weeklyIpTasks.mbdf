@@ -38,7 +38,7 @@ week3: [
 week4: [
   {id: 'review_two_prs', graded: true},
   {id: 'learn_from_others'},
-  {id: 'add_increments', suffix: ' as parallel branches', increments:  [
+  {id: 'add_increments', suffix: ' as branches', increments:  [
     {id: 'A-Gradle', title: 'Use Gradle'},
     {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
     {id: 'Level-10', title: 'GUI'},

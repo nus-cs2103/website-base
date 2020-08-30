@@ -3,15 +3,14 @@
 #### {{ thumb(1) }} **Discuss iP progress**
 
 * If you managed to add a GUI to your app, demo it to others.
-* Share iP difficulties encountered. Help each other solve them.
 
 #### {{ thumb(2) }} **Discuss tP progress**
 
 <include src="../../admin/common-tutorials.mbdf#share-project-direction" />
 
-#### {{ thumb(3) }} **Discuss weekly topics**
+#### {{ thumb(3) }} **Interpret class/object diagrams**
 
-* If you have any doubts about the weekly topics, share them with others and get their inputs. You can use the following exercises as part of your discussion.
+* Do the first of the two exercise given below, as directed by the tutor. If there is time left, do the second one as well.
 
 <div class="indented-level2">
 
@@ -20,6 +19,7 @@
 <p/>
 </div>
 
+<!--
 #### {{ thumb(4) }} **Share Git tips** {{ icon_extra }}
 
 * Find out how to do these git tasks and share with others
@@ -29,3 +29,4 @@
   * stash changes
   * squash commits
   * cherrypick commits
+-->
