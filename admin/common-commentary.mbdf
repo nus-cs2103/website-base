@@ -247,7 +247,7 @@ Last week, you learned how to fork and clone a remote repository. Let's now lear
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Creating Pull Requests") }}">
-Let's learn how to create a pull request (PRs) on GitHub; you need to create one for your iP this week.
+Let's learn how to create a pull request (PRs) on GitHub; you need to create one for your project this week.
 
 <span tags="m--cs2113">
 Follow that with learning how to review PRs as you'll be doing that too later in this week.
@@ -347,7 +347,7 @@ Given next are **two techniques that help you locate problems in the code**.
                                     Testing
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("Automated Testing of Text UIs") }}">
-As you start adding features to your iP iteratively, you'll need **a way to detect if the new code breaks the existing code**. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).
+As you start adding features to your project iteratively, you'll need **a way to detect if the new code breaks the existing code**. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).
 
 <span tags="m--cs2103">This also means we are not switching focus from the _implementation_ aspect to the _testing_ aspect of SE.</span>
 </div>
