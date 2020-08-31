@@ -142,7 +142,7 @@ You are expected to:
 
 <div tags="m--cs2103">
 
-**The expected level of _functionality_ to be added by a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Some examples meeting that criterion:
+**The expected level of _functionality_ to be added by a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Furthermore, we expect a team to reach that level if each member puts in an effort equivalent to the effort they put into the iP. Some examples meeting that criterion:
 * Example 1: A fictional contact management app optimized for a specific target user group:
   * Existing AB3 features are optimized to the new target user group.
   * Person objects are enhanced to contain more details.

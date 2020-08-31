@@ -1672,7 +1672,7 @@
               {name: "push", heading: "`push`: Uploading data to other repos", priority: "3"},
               {name: "branch", heading: "`branch`: Doing multiple parallel changes", priority: "3"},
               {name: "mergeConflicts", heading: "Dealing with merge conflicts", priority: "4"},
-              {name: "createPRs", heading: "Creating PRs", priority: "4"},
+              {name: "createPRs", heading: "Creating PRs", priority: "3"},
               {name: "reviewPRs", heading: "Reviewing PRs", priority: "4"},
               {name: "managePRs", heading: "Merging PRs", priority: "4"},
               {name: "forkingWorkflow", heading: "Forking Workflow", priority: "4"}
