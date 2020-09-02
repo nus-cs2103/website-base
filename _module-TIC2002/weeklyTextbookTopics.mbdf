@@ -187,7 +187,7 @@
     {heading: "Java: Access Modifiers"},
       {location: ["cppToJava", "misc", "accessModifiers"]},
     {heading: "Java: JavaDocs"},
-      {location: ["documentation", "tools", "javaDoc", "what"]},
+      {location: ["documentation", "tools", "javaDoc", "what"], panopto: "46becd1e-d2bb-4a4a-ae74-ac0e00cf9d99"},
       {location: ["documentation", "tools", "javaDoc", "how"]},
   {name: "Project Management"},
     {heading: "Git: Branching"},
