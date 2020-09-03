@@ -122,9 +122,15 @@ You are expected to:
 * It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.
 * It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job of implementing that feature.
 </panel>
+
+<panel type="seamless" header="%%How narrow can we make the target market?%%" >
+
+The size of the target market is not a grading criterion. You can make it as narrow as you want. Even a single user target market is fine as long as you can define that single user in a way others can understand (reason: project evaluators need to evaluate the project from the point of view of the target users).
+</panel>
 </div>
 
-* **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the the user's life easier?
+* **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the the user's life easier?<br>
+  You should also define the _scope_ clearly i.e., boundary beyond which the app will not help %%e.g., the app will help to manage tasks within a single project only (no support for multiple projects)%%.
 * **Optimize the product to the chosen target users** i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). 
   * Example 1: If the product targets {{ module_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to see a link to a student's project on GitHub%%
   * Example 2: If your app manages contacts, you can optimize its features based on,
