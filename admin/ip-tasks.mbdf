@@ -490,10 +490,13 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 <span id="desc_add_an_extension">
 
 * Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
+* Recommended to add the extension via a branch (branch name is up to you). Optional to add it via a PR.
+* Add a tag named `BCD-Extension` to the corresponding commit.
 
 <div class="indented-level2">
 
 {{ icon_important_big_red }} Discuss with your team members to ensure that each member picks a different extension.
+
 
 {{ icon_tip }} You may want to pick an extension that is relevant to your tP so that the code can be reused in the tP later.
 </div>
