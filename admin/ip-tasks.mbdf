@@ -251,8 +251,11 @@ Resources:
 
 * **Practice using parallel git branches _and_ PRs**, as explained below:
 1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
-1. Then, push each branch to your fork, and create a PR within your fork (i.e., from the increment branch to the `master` branch).
-1. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
+1. Then, push each branch to your fork, and create a PR ++within your fork++ (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_module_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
+
+{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
+
+3. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
    1. Merge one of the PRs on GitHub e.g., Level-8. Remember to choose the `Create merge commit` option when merging.
    1. Pull the updated `master` branch from your fork to your Computer.
    1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
@@ -398,7 +401,8 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 <span id="heading_generate_new_jar">Generate a new jar file</span>
 <span id="desc_generate_new_jar">
 * We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
-  If the `.jar` file is smaller than 10Mb, most likely JavaFX libraries are not inside it.
+==If the `.jar`  file is smaller than 10Mb==, most likely JavaFX libraries are not inside it.
+* There is no need to create a release in GitHub with this jar file (although you are welcome to).
 </span>
 {#====================================================================================================================#}
 <span id="extra_A-Assertion">
