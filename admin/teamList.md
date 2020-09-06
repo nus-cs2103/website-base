@@ -1,4 +1,4 @@
-{% from "_module-" + module + "/studentData.mbdf" import students, tutorials with context %}
+{% from "_module-" + module + "/studentData.mbdf" import students, tutorials, teams with context %}
 
 <frontmatter>
 title: "tP Teams List"
@@ -10,6 +10,11 @@ pageNav: 2
 
 # tP Teams
 
+<!--
+The full team details page is not available yet. In the meantime ==see [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vS2dnrQeML5iWI4aV01Du7qqZEWrn2FvsyUNM21nTb6Nt67iRvbOJ-RjzddY32fQQZQVWuCyYaIieZC/pubhtml?gid=2018493570&single=true)== for the temporary list.
+
+-->
+
 {% macro get_team_start(team_id, team_org, team_repo, team_website) %}
 <div class="container">
 <div class="row">
@@ -20,6 +25,8 @@ pageNav: 2
 <span tags="m--cs2103">
 
 <img src="{{ team_website }}/images/Ui.png" width="750" onerror="this.src='images/placeholder-large.png';" /><p/>
+
+**Project notes** (internal): {% if teams[team_id] != '' %}see [here]({{ teams[team_id] }}){% else %}N/A{% endif %}
 </span>
 </div>
 </div>
@@ -76,7 +83,7 @@ pageNav: 2
   {% set team_end %} {{ get_team_end() }} {% endset %}
   {% set panel_contents = panel_contents + team_contents + team_end %}
 
-<panel type="seamless" header="## {{ tutorial }}" no-close expanded>
+<panel type="seamless" header="## {{ tutorial }}" no-close>
 {{ panel_contents }}
 </panel>
 

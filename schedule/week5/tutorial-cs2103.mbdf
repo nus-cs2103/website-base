@@ -1,7 +1,7 @@
 {% from "common/macros.njk" import embed_topic, show_as_tab, thumb, timing_badge with context %}
 {% from "_module-" + module + "/studentData.mbdf" import ip_pr_slap_review_allocation as allocations with context %}
 
-#### {{ thumb(1) }} Discuss the code quality of iP PRs
+#### {{ thumb(1) }} Discuss the _abstraction_ aspect of iP PRs
 
 <!--div class="indented">
 
@@ -33,11 +33,26 @@
 1. {{ timing_badge("10 minutes", "info") }} **Discussion**: The tutor will lead a short discussion to go through the problematic code you found.
 
 1. {{ icon_tip }} **After the tutorial**, you can apply the insights gained from this activity to **improve the code quality of your own iP**, if necessary.
+   <box type="info" seamless>
+   You are not required to (but welcome to) post review comments in the PRs you examined.
+   </box>
 
 
 #### {{ thumb(2) }} Prioritize tP user stories
 
-* Show your list of tP user stories to the tutor %%(for progress tracking)%%.
 * If you haven't done so already, prioritize tP user stories as explained in the panel below.
 
 {{ embed_topic("../../admin/tp-tasks.mbdf#desc_prioritize_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Choose user stories for " + version_first + "**", "2", indent="2") }}
+
+
+#### {{ thumb(3) }} <span class="badge badge-secondary">time permitting</span> Create a _feature list_ for {{ version_first }}
+
+* If there is time left, do the following tP task that is scheduled for the following week.
+
+<div class="indented-level2">
+
+<panel header="%%Admin {{ icon_embedding }} **tP → week 6 → Conceptualize {{ version_first }}**%%" expanded >
+
+<include src="../../admin/tp-tasks.mbdf#desc_conceptualize_first_version" />
+</panel>
+</div>
