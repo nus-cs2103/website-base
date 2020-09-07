@@ -94,7 +94,9 @@ Please ==post in the [forum]({{url_module_org}}/forum/issues) your request to us
 
 {% call show_constraint("Constraint-File-Size") -%}
 The file sizes of the deliverables should not exceed the limits given below. <br>
-<div tags="m--cs2113 m--cs2103">%%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue%%:</div>
+<div tags="m--cs2113 m--cs2103">
+
+%%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue%%:</div>
 
 * <span class="text-danger">JAR file: 100Mb</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
 
