@@ -153,6 +153,11 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 
 * **How many user stories?** Aim to collect more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other competing products.%%
 
+* **User stories of what size?** Normally, it is fine to use _epic_-level user stories in the early stages of a project but given this is a small project, you may want to define smaller user stories (i.e., small enough for one person to implement in 1-2 days).
+  * {{ bad }} As a user, I can track my schedule, so that I can know when to do things.<br>
+    %%Reason: too big, as _track_ can involve a lot of things.%%
+  * {{ good }} As a user, I can add a time to a task, so that I can record when a task need to be done.
+  * {{ good }} As a user, I can see the pending task that has the next earliest deadline, so that I can know what I need to do next.
 
 * **How to record?**<br>
   ==Keep records of intermediate steps (e.g., persona, scenarios)== in your collaborative project document started in the previous week.<br>
