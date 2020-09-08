@@ -159,6 +159,8 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
   * {{ good }} As a user, I can add a time to a task, so that I can record when a task need to be done.
   * {{ good }} As a user, I can see the pending task that has the next earliest deadline, so that I can know what I need to do next.
 
+* **What format?**: You may use a sentence format or a table format but do maintain the prescribed three-part structure of a user story. In particular, ==try to include the _benefit_ part in most user stories== as that will come in handy when prioritizing user stories later.
+
 * **How to record?**<br>
   ==Keep records of intermediate steps (e.g., persona, scenarios)== in your collaborative project document started in the previous week.<br>
   You can ~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~ use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).
@@ -168,7 +170,7 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 </modal>
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-userstories">
-  <include src="../book/specifyingRequirements/userStories/introduction/unit-inElsewhere-asFlat.md" boilerplate/>
+  <include src="../book/specifyingRequirements/userStories/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 <modal large header="Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools">
