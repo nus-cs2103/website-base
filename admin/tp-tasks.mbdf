@@ -120,6 +120,14 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 
 * **Decide project direction, target user profile, and problem addressed**: Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:
 
+<div class="indented">
+
+<box type="warning" seamless>
+
+As we are still at the early stages of identifying a problem to solve, do not think of the product (i.e., the _solution_) yet. That is, ==do not discuss the product features, UI, command format, and implementation details, etc.== unless they are pertinent to the decision of the project direction.
+</box>
+</div>
+
 {{ embed_topic("tp-expectations.md#main", "Admin " + icon_embedding + " **tP: Expectations**", "3", indent="2") }}
 {{ embed_topic("tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3", indent="2") }}
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3", indent="2") }}

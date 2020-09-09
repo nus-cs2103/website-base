@@ -1,14 +1,15 @@
 {% set tutorials = [
-  "CS2113T-M16",
-  "CS2113T-T12",
-  "CS2113T-T13",
-  "CS2113-T14",
-  "CS2113-T15"
+
 ] %}
 
 {% set students = [
-  ['GUO ..LIAN', 'CS2113-T14-1', 'g-lilian']
+
 ] %}
+
+{% set teams = {
+
+}%}
+
 
 {% set ip_pr_review_allocation = [
   ['TIC4001-F16', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213', 'binbinhui'],

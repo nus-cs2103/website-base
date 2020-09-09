@@ -204,7 +204,6 @@ Resources:
   1. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.
 * As before,
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.<br>
- {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
 </span>
 <span tags="m--tic4001">
@@ -238,6 +237,7 @@ Resources:
 
 * Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement the other increment in a separate branch named similar to the first (i.e., `branch-{increment ID}`). Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
  {{ icon_important_big_red }} Remember to push the branches to your fork so that the bot can detect them.<br>
+ {{ icon_important_big_red }} Only _merged_ branches are detected by the script. After merging a branch `b1` to the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged to the `master` branch.<br>
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
 
