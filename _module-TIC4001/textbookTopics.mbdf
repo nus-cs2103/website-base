@@ -93,7 +93,7 @@
             name: "",
             level_three_topics: [
               {name: "miscellaneous", heading: "Miscellaneous", priority: "0:3"},
-              {name: "review", heading: "Review", priority: "0:4"}
+              {name: "review", heading: "Review", priority: "0:3"}
             ]
           }
         ]
@@ -1642,8 +1642,8 @@
               {name: "projectSetup", heading: "Project Setup", priority: "0:3"},
               {name: "codeNavigation", heading: "Code Navigation", priority: "0:3"},
               {name: "productivityShortcuts", heading: "Productivity Shortcuts", priority: "0:4"},
-              {name: "debuggingBasic", heading: "Debugging: Basic", priority: "0:4"},
-              {name: "refactoring", heading: "Refactoring", priority: "0:4"}
+              {name: "debuggingBasic", heading: "Debugging: Basic", priority: "3"},
+              {name: "refactoring", heading: "Refactoring", priority: "3"}
             ]
           }
         ]
