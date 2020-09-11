@@ -231,7 +231,8 @@ How is that better?
 
 * If the product _can_ be of some use without a given user story, that user story should be left out of {{ version_first }}, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
 * Don't worry about {{ version_penultimate  }}. You can design {{ version_penultimate }} after {{ version_first }} done.
-* Don't worry about {{ version_first }} being 'too small'. You can always add more features to {{ version_first }} if you finish it ahead of schedule.
+* Don't worry about {{ version_first }} being 'too small'. You can always add more features to {{ version_first }} if you finish it ahead of schedule.<br>
+  {{ icon_tip }} You can also select an additional set of user stories that are _nice-to-have_ in v1.2, to be done but only if there's time left.
 * If possible, narrow the scope of {{ version_first }} further e.g., narrower target user, a smaller value proposition.
 
 Suggested workflow:
