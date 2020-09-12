@@ -142,7 +142,8 @@ As we are still at the early stages of identifying a problem to solve, do not th
 <span id="desc_start_project_notes">
 
 * Keep project notes in easy-to-use collaborative docs (Recommended: use a GoogleDoc). This document will be checked by the tutor at various points.<br>
-  Remember to choose a tool that ==allow public _view_ access== (not write access) e.g., GoogleDoc can be shared via a public link so that the document can be viewed by others.
+  Remember to choose a tool that ==allow public _view_ access== (not write access) e.g., GoogleDoc can be shared via a public link so that the document can be viewed by others. You'll be asked to submit this link to us in the next week.<br>
+  {{ icon_important_big_red }} Make sure all you current and future project notes (if split into in multiple documents) are reachable via links given in this document and are viewable by the public.
 
 </span>
 {#====================================================================================================================#}
@@ -292,7 +293,7 @@ Suggested workflow:
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ version_first }}.
   * Include only features that will be delivered in {{ version_first }}.
   * <span tags="m--cs2103">Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%</span><span tags="m--cs2113 m--tic4001">Consider including examples of expected outputs too</span>.
-  * {{ icon_important_big_red }} **Submission**: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to LumiNUS.<br><br>
+  * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to LumiNUS.<br><br>
 
 <div id="divideDocs" class="indented">
 
