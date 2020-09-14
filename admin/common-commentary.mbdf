@@ -470,7 +470,7 @@ We recommend you ==try the relevant post-lecture quizzes as you read each sectio
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("modeling-modelingStructures-objectDiagrams") }}">
-**Object diagrams complements class diagrams** and therefore covered together with class diagrams.
+**Object diagrams complement class diagrams**, and therefore, they are covered together with class diagrams.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Class Diagrams: Intermediate-Level") }}">

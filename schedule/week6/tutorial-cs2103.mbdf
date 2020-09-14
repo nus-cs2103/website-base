@@ -1,17 +1,17 @@
 {% from "common/macros.njk" import thumb, show_as_tab with context %}
 
-#### {{ thumb(1) }} **Discuss tP progress**
+#### {{ thumb(1) }} **Demo your debugging skills**
 
-* Show your UG draft %%(i.e., a copy of the PDF file you uploaded to LumiNUS)%%. 
-* Go through some product usage scenarios to illustrate how the product will be used. Some examples:
-  * Scenario: the user using it for the first time (e.g., how would the initial data will be loaded?)
-  * Scenario: a typical usage where on a subsequent time
-* Discuss any difficulties you encountered while doing AB3 tutorials.
-* Discuss any difficulties understanding AB3 developer documentation, UML diagrams in particular.
+1. Open your iP or tP code in your IDE.
+1. Set a breakpoint somewhere in the code.
+1. Run the code in debug mode.
+1. When the execution stops at the break point, use the debugger to execute 1-2 more statements.
+1. Take a screenshot of the IDE and paste in the _tutorial workspace_ file.
+1. Optional: Set a <tooltip content="i.e., the execution will stop only if the specified condition is met">_conditional break-point_</tooltip>, take a screenshot of it, and paste it in the same file.
 
-#### {{ thumb(2) }} **Discuss weekly topics**
+#### {{ thumb(2) }} **Sequence diagrams exercise**
 
-* If you have any doubts about the weekly topics, share them with others and get their inputs. You can use the following exercises in your discussion.
+* Do the following two exercises, as guided by the tutor.
 
 <div class="indented-level2">
 
@@ -20,6 +20,4 @@
 <p/>
 </div>
 
-#### {{ thumb(3) }} **Share IDE tips** {{ icon_extra }}
 
-* Share with others any cool IDE tips/tricks you've found e.g., how to set a conditional break-point
