@@ -5,6 +5,7 @@
 {% call show_admin_summary() %}
 1. Install SourceTree {{ timing_badge("before the lecture") }}
 1. Submit weekly exercises
+1. Submit post-lecture quiz
 {% endcall %}
 
 {{ thumb(1) }} Install SourceTree {{ timing_badge("before the lecture", "secondary") }}
