@@ -410,6 +410,16 @@ Update the following pages in your project repo:
 
 </span>
 {#====================================================================================================================#}
+<span id="heading_practice_workflow_with_sample_repo">{{ icon_team }} Practice the workflow with a sample repo</span>
+<span id="desc_practice_workflow_with_sample_repo">
+
+* We recommend that you practice the forking workflow with your team members as described in the textbook section given in the panel below.<br>
+  {{ icon_tip }} You can use your tP GitHub org for this exercise too.
+
+{{ embed_topic("../book/gitAndGithub/forkingWorkflow/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **The forking workflow**", "1", indent=2) }}
+
+</span>
+{#====================================================================================================================#}
 <span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration</span>
 <span id="desc_do_a_practice_iteration">
 

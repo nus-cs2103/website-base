@@ -20,6 +20,7 @@ week6: [
 ],
 week7: [
   {id: 'set_up_project_repo', deadline: 'during the lecture', deadline_type: "info"},
+  {id: 'practice_workflow_with_sample_repo'},
   {id: 'plan_the_next_iteration'}
 ],
 week8: [

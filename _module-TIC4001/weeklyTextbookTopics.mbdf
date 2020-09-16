@@ -250,7 +250,7 @@
       {location: ["integration", "introduction", "what"]},
       {location: ["integration", "buildAutomation", "what"]},
       {location: ["integration", "buildAutomation", "continuousIntegrationDeployment"]},
-    {heading: "RCS: Workflows"},
+    {heading: "Project Mgt: Workflows", panopto: "050c0949-853c-4b7d-b1fb-ac3700d88202"},
       {location: ["revisionControl", "forkingWorkflow"]},
       {location: ["gitAndGithub", "forkingWorkflow"]},
       {location: ["revisionControl", "drcsVsCrcs"]},
