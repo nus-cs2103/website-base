@@ -1,9 +1,17 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 {% from "_module-" + module + "/studentData.mbdf" import team_review_allocation with context %}
 
-#### {{ thumb(1) }} Exercise on Requirements: PR Tracker
+#### {{ thumb(1) }} Review Requirements of a Peer Team
 
-1. **Divide the team into sub-team** A and sub-team B, 2-3 members each.
+* {{ timing_badge("7-8 minutes", "info") }} **Read the DG provided by the tutor and check for the bugs listed below**.
+
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+
+#### {{ thumb(2) }} Exercise on Requirements: PR Tracker
+
 1. {{ timing_badge("7-8 minutes", "info") }} **Write the answers to the following questions** on the online document provided.
 
    <box>
@@ -12,13 +20,10 @@
 
    <span class="text-monospace">Pull Request Tracker (PRT) is a desktop application meant to help CS2103 tutors deal with GitHub PRs more efficiently (compared to the GitHub Web interface). For example, it will help tutors find and review PRs from their _mentees_ easily. It will help the _managers_ of the module (e.g., professor, head TA) to easily keep track of how tutors are dealing with mentee PRs. PRT will communicate with GitHub using the GitHub API.</span>
 
-   **Sub-team A:**
-   * Write 1 must-have and 1 nice-to-have user stories, covering user types `tutor` and `manager`.
-   * Write at least 1 <tooltip content="Non-Functional Requirements">NFRs</tooltip>, related to performance/scalability and/or usability.
-   * Give at least 1 terms worth recording in the glossary.
-
-   **Sub-team B:**
-   * Complete the following use case. Give at least one extension. Note that the tutor should give comments in the order of PR size (i.e., give comments to smaller PRs first). Assume the following use cases exists already: `U1. Sort PRs by a criterion`, `U2. Add comments to a PR`
+   1. Write 1 must-have and 1 nice-to-have user stories, covering user types `tutor` and `manager`.
+   1. Write at least 1 <tooltip content="Non-Functional Requirements">NFRs</tooltip>, related to performance/scalability and/or usability.
+   1. Give at least 1 terms worth recording in the glossary.
+   1. Complete the following use case. Give at least one extension. Note that the tutor should give comments in the order of PR size (i.e., give comments to smaller PRs first). Assume the following use cases exists already: `U1. Sort PRs by a criterion`, `U2. Add comments to a PR`
 
    <div class="indented-level2 text-monospace"><blockquote>
 
@@ -36,65 +41,6 @@
 
 1. {{ timing_badge("7-8 minutes", "info") }} **Discuss the answers** as guided by the tutor.
 
-#### {{ thumb(2) }} Review Requirements of a Peer Team
+#### {{ thumb(3) }} Refine your DG {{ timing_badge("after the tutorial", "secondary") }}
 
-* **Find the team you have been allocated to discuss** in the panel below and click on the link to locate their team PR.
-
-{% macro get_review_allocation_for_team(reviewing_team) -%}
-{%- set reviewed_team = "" -%}
-{% for allocation in team_review_allocation  -%}
-{% if allocation[0] == reviewing_team %}{% set reviewed_team %}{{ allocation[1] }}{% endset %}{% endif %}
-{%- endfor %}{{ reviewed_team }}
-{%- endmacro %}
-
-{% macro get_pr_link(team_id) -%}
-[PR](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls?q=is%3Aopen+is%3Apr+label%3Atutorial.{{ team_id.slice(0, -2) }}+label%3Ateam.{{ team_id.slice(-1) }})
-{%- endmacro  %}
-
-{% macro get_dg_link(team_id) -%}
-[DG](https://{{ semester }}-{{ team_id | lower}}.github.io/main/DeveloperGuide.html)
-{%- endmacro  %}
-
-<div class="indented-level2">
-
-<panel header="Team allocation for PR discussion" minimized >
-
-Team          | Discuss PR of | Backup team to discuss
---------------|---------------|-----------------------
-{% for team in team_review_allocation  %}
-{%- set backup_team %}{{ get_review_allocation_for_team(team[1]) }}{% endset -%}
-{{ team[0] }} | {{ team[1] }}: {{ get_dg_link(team[1]) }} {{ get_pr_link(team[1]) }} | {{ backup_team }}: {{ get_dg_link(backup_team) }} {{ get_pr_link(backup_team) }}
-{% endfor %}
-</panel>
-<p/>
-</div>
-
-* **Open the DG** link given. Check if the team has added at least three out of these four: use cases, user stories, NFRs, glossary terms.<br>
-  %%**If the answer is no**, you can try the _backup_ team (see the third column in the allocation panel). If even the backup team does not match the requirement, choose any random teams having tutorials in the same day and not in the same tutorial as you.%%
-
-* {{ timing_badge("7-8 minutes", "info") }} **Read the following sections in the DG and check for the bugs listed below**. If you notice a bug, take a screenshot, annotate the screenshot if needed, and paste the screenshot in the online document provided. You can also add explanatory notes to the online document if it helps.
-  * All members of the sub-team should do this in parallel.
-  * If you are not sure if something is a bug, add it anyway.
-
-<div class="indented-level2">
-
-**Sub-team A:** Review use cases, w.r.t. the possible bugs are given below.
-
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-
-**Sub-team B**: review user stores, NFRs, glossary, w.r.t. the possible bugs are given below.
-
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-
-</div>
-
-* {{ timing_badge("7-8 minutes", "info") }} **Discuss your comments/observations/doubts** as guided by the tutor, in particular, cases you are not sure of.
-* {{ timing_badge("7-8 minutes", "info") }} **Submit your findings as a PR review:**
-  1. Open the iP PR of the team you reviewed (link provided in the review allocation table you used earlier).
-  1. Add your comments in the corresponding place in the PR as review comments.
-     * The textbook section on how to review PRs is [here](../../book/gitAndGithub/reviewPRs/).
-     * Remember to follow [the guidelines for PR reviews](https://se-education.org/guides/guidelines/PRs-reviewing.html).
-  1. You may divide the work among the sub-team members so that each person has some comments to add.
-  1. {{ icon_tip }} After adding comments, you may want to unsubscribe from the PR to avoid getting GitHub alerts from that PR in the future.
+* After the tutorial, if applicable, refine the relevant sections of your own DG based on what you learned from the tutorial activities.

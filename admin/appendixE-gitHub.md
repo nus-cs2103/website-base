@@ -209,8 +209,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
   * {{ good }} Let's add code to support simple todo tasks first (i.e., read, delete, save, load)
 * **Do not merge PRs failing <tooltip content="Continuous Integration e.g., GitHub Actions">CI</tooltip>.** The CI status of a PR is reported at the bottom of the {{ show_as_rounded_tab(":octicon-comment-discussion: conversation")}} tab of the PR page. Here's an example:<br>
   ![](images/gitHubPrStatus.png)
-  * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.<br>
-  {{ icon_pro_tip }} You can use GitHub's [_protected branches_](https://help.github.com/en/articles/about-protected-branches) feature to prevent CI-failing PRs from being merged.
+  * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.
 * **After merging a PR**, close the corresponding issue.<br>
   {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
 {% if module == "CS2113" or module == "TIC4001" %}
@@ -267,8 +266,8 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * **Formalize the project plan** by assigning relevant issues to the corresponding milestone.
 
-* **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked.%%e.g.%% 
-  * A typical task should be able to done by one person, in a few hours.
+* **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked. 
+  * A typical task should be small enough for one person to do in a few hours. %%eg.,%%
     * %%{{ icon_dislike }} Bad (reasons: not a one-person task, not small enough): `Write the Developer Guide`%%
     * %%{{ icon_like }} Good: `Update class diagram in the Developer Guide for {{ version_final }}`%%
 
