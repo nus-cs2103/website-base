@@ -398,6 +398,14 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
 </span>
 {#====================================================================================================================#}
+<span id="post_Level-10">
+
+<div class="indented-level2">
+
+* Note that you no longer need to keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
+</div>
+</span>
+{#====================================================================================================================#}
 <span id="heading_generate_new_jar">Generate a new jar file</span>
 <span id="desc_generate_new_jar">
 * We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
@@ -538,7 +546,9 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
   {% for i in step.increments %}
     {% set file = 'text.md' if i.id[0] == 'L' else 'extensions.mbdf' %}
     {% set tag = ('var-tag=' + i.tag) if i.tag else '' %}
+<include src="{{ tasks_file }}#pre_{{ i.id }}" optional />
 <include src="dukeFragment.md" boilerplate var-header="**`{{ i.id }}`: {{ i.title }}**" {{ tag }} var-fragment="{{ file }}#{{ i.id }}" />
+<include src="{{ tasks_file }}#post_{{ i.id }}" optional />
   {% endfor %}
 {% else %}
 <include src="{{ tasks_file }}#desc_{{ step.id }}" />
