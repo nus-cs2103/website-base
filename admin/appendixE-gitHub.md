@@ -92,7 +92,7 @@ The tP project template given to you is a variation of the iP repo you used for 
 {% endif %}
 1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
    Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
-1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tp]({{url_module_org}}/tp)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ module }}-T09-2] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
+1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tp]({{url_module_org}}/tp)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ example_team_id }}] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
    Please fill in these details as specified because they are used by our grading scripts.
    * **PR subject: the name of your product** e.g., `InsureList`
    * **Description: a 1-2 sentence overview** (plain text only, no formatting or links) of your project indicating the target user and the value proposition e.g., `InsureList helps insurance agents manage detail of their clients. It is optimized for CLI users so that frequent tasks can be done faster by typing in commands.`
