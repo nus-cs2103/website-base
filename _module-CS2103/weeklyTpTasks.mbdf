@@ -22,7 +22,7 @@ week6: [
   {id: 'get_familiar_with_the_code_base'}
 ],
 week7: [
-  {id: 'do_a_practice_iteration'},
+  {id: 'do_a_practice_iteration', deadline: 'midnight before the tutorial'},
   {id: 'update_website_aboutus_readme'},
   {id: 'update_the_ug'},
   {id: 'update_dg_user_stories_etc'},
@@ -37,7 +37,7 @@ week8: [
 week9: [
   {id: 'deliver_first_version'},
   {id: 'wrap_up_first_version'},
-  {id: 'do_an_informal_demo'}
+  {id: 'do_an_informal_demo', deadline: 'before the tutorial'}
 ],
 week10: [
   {id: 'do_a_postmortem'},

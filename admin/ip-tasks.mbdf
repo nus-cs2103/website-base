@@ -468,11 +468,16 @@ Your username | 1st iP to evaluate | 2nd iP to evaluate
 {% if not tic4001 %}
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
-* **Create a new jar file** using Intellij (unless you have added a GUI or using third-party libraries in which case you should [use Gradle](https://se-education.org/guides/tutorials/gradle.html) to create the jar file). The jar file should be ==cross-platform and should work in a computer that has Java 11==.
+* **Create a new jar file**
+  * Create the JAR file in one of these ways:
+    * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
+    * Else: you can use Intellij.
+  * The JAR file should be ==cross-platform and should work in a computer that has Java 11==.
 * **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
   1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.
-* **Create a new release on GitHub** (e.g., `v0.2`) and upload the jar file.
+* **Create a new release on GitHub** (e.g., `v0.2`) and upload the JAR file.
+  * Recommended to refrain from uploading multiple JAR files as this can cause extra work for the evaluators.
 
 <div class="indented">
 

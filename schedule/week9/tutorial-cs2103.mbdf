@@ -1,13 +1,20 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 
-#### {{ thumb(1) }} Demo v1.2
+#### {{ thumb(0, thumb_style="secondary") }} %%Demo v1.2%%
 
 <div class="indented-level2">
 
+%%The tutor to confirm the following has been done.%%
+
 {{ embed_topic("../../admin/tp-tasks.mbdf#desc_do_an_informal_demo", "Admin " + icon_embedding + " tP v1.2: Demo", "3") }}
 </div>
+<p/>
 
-#### {{ thumb(3) }} Exercise: OODMs
+#### {{ thumb(1) }} Demo measuring code _coverage_
+
+<include src="../../admin/common-tutorials.mbdf#demo-test-coverage" />
+
+#### {{ thumb(2) }} Exercise: OODMs
 
 * {{ timing_badge("10 minutes", "info") }} Do the following question. As before, you should _hand-draw_ the diagram.<br>
   %%{{ icon_tip }} You can use the _association class_ notation in the answer.%%

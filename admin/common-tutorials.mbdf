@@ -222,7 +222,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 </pic>
 **_Hand-drawing_ diagrams on a white-board and on paper is an important practical skill** %%(e.g., for technical interviews, project discussions)%%. It's possible that the diagrams you draw in your first few attempts to look amateurish, messy, and hard to read, and the drawing itself will take a long time. With more practice, you will be able to draw such diagrams quicker %%(e.g., draw as you explain verbally your design)%%, with less need for corrections, and the diagrams will look more _professional_ too.
 
-That is why we have structured these tutorials to get everyone to practice this skill so that **your first few (not so good) diagram drawing experiences happen in the tutorial, not in an interview or during your internship.**
+That is why we have structured these tutorials to get everyone to practice this skill so that **your first few (not-so-good) diagram drawing experiences happen in the tutorial, not in an interview or during your internship.**
 
 Note the following:
 * Draw ==on paper or on a whiteboard or use a free-hand drawing software== (e.g., Bamboo paper). If latter, do not use UML software or predefined shapes.
@@ -337,6 +337,7 @@ Note the following:
 * Paste the diagram (take a photo if you drew on paper) in the _tutorial workspace_ document.
 * {{ timing_badge("10 minutes", "info") }} **Discuss answers** as guided by the tutor.
 * {{ timing_badge("10+5=15 minutes", "info") }} **Do part (b)** in the same manner.
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="demo-test-coverage">

@@ -338,7 +338,7 @@ Update the following pages in your project repo:
 </div>
 
 * **_AboutUs_ page**:
-  This page is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
+  This page (in the `/docs` folder) is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
   * Add your own details. Include a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.
   * Including the the supervisor/lecturer is optional.
   * The filename of the profile photo should be `doc/images/githbub_username_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%. ==If your photo is in jpg format, name the file as `.png` anyway==.
@@ -423,7 +423,7 @@ Update the following pages in your project repo:
 <span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration</span>
 <span id="desc_do_a_practice_iteration">
 
-* To get some practice of doing project iterations, do this week's tP work as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
+* To get some practice of doing project iterations, do this week's tP work (i.e., updates to various documents) as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
 
