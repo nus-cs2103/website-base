@@ -38,7 +38,7 @@ pageNav: 3
 </div>
 <div tags="m--tic2002">
 
-### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ start_day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_todo, "admin-" + (module | lower) + ".html") }}
+### <a href="week{{ week_num }}/" class="badge badge-pill badge-dark"><small>**Week {{ week_num }}** <small>- {{ start_day }}</small></small></a> {{ show_link(week_num, icon_book, "topics.html") }}{{ show_link(week_num, icon_todo, "admin.html") }}
 
 </div>
 <div tags="m--te3201">
