@@ -129,7 +129,7 @@ The size of the target market is not a grading criterion. You can make it as nar
 </panel>
 </div>
 
-* **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the the user's life easier?<br>
+* **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the user's life easier?<br>
   You should also define the _scope_ clearly i.e., boundary beyond which the app will not help %%e.g., the app will help to manage tasks within a single project only (no support for multiple projects)%%.
 * **Optimize the product to the chosen target users** i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). 
   * Example 1: If the product targets {{ module_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to see a link to a student's project on GitHub%%

@@ -40,6 +40,9 @@
 
 <include src="tp-tasks.mbdf#milestoneCumulative" />
 </box>
+
+{{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
+
 </span>
 
 {#====================================================================================================================#}
@@ -447,7 +450,7 @@ Update the following pages in your project repo:
   Optionally, you can define a `mid-{{ version_first }}` milestone to keep track of things to be done within the first half of the milestone.
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_implementing_the_next_version">{{ icon_individual }} start implementing the next version</span>
+<span id="heading_start_implementing_the_next_version">{{ icon_individual }} Start implementing the next version</span>
 <span id="desc_start_implementing_the_next_version">
 
 * If you have time, start implementing v1.2.
