@@ -198,7 +198,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
     * Tick the option `Require status checks to pass before merging` to ensure that a branch has to pass CI before it can be merged into the `master` branch
     * If you think all PRs should be reviewed by someone other than the PR author before they are merged, also tick the `Require pull request reviews before merging` option.
 * **Create issues to represent project tasks** so that they can be tracked using the issue tracker features.
-* **Create a PR when you implement a project task** that updates the code.<br>
+* **Create a PR when you implement a project task** that updates the code. Remember to use a separate branch for each PR.<br>
   {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.<br>
 * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
   * Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html).<br>
@@ -210,14 +210,17 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * **Do not merge PRs failing <tooltip content="Continuous Integration e.g., GitHub Actions">CI</tooltip>.** The CI status of a PR is reported at the bottom of the {{ show_as_rounded_tab(":octicon-comment-discussion: conversation")}} tab of the PR page. Here's an example:<br>
   ![](images/gitHubPrStatus.png)
   * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.
-* **After merging a PR**, close the corresponding issue.<br>
-  {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
+* **After merging a PR**,
+  * close the corresponding issue.<br>
+    {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
+  * sync your repos with the team rep by pulling the latest `master` from the team repo and pushing it to your own fork.
 {% if module == "CS2113" or module == "TIC4001" %}
 * **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
 {% endif %}
 
 <modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
-  <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
+  <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
+  <include src="../book/gitAndGitHub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 </div>
