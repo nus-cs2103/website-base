@@ -84,16 +84,17 @@ These are considered _functionality bugs_:<br>
 :fas-bug: Problems in User Stories. Examples:
 * Incorrect format
 * All three parts are not present
-* Benefit does not match the function
+* The three parts do not match with each other
 * Important user stories missing
 </span>
 <span tags="m--cs2103" id="useCaseBugs">
 
 :fas-bug: Problems in Use Cases. Examples:
-* Incorrect step numbering
-* Missing extensions
-* Unnecessary UI details mentioned
 * Formatting/notational errors
+* Incorrect step numbering
+* Unnecessary UI details mentioned
+* Missing/unnecessary steps
+* Missing extensions
 </span>
 <span id="nfrBugs">
 

@@ -1,24 +1,15 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 {% from "_module-" + module + "/studentData.mbdf" import team_review_allocation with context %}
 
-#### {{ thumb(1) }} Review Requirements of a Peer Team
+#### {{ thumb(1) }} Exercise on Requirements: PR Tracker
 
-* {{ timing_badge("7-8 minutes", "info") }} **Read the DG provided by the tutor and check for the bugs listed below**.
-
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-
-#### {{ thumb(2) }} Exercise on Requirements: PR Tracker
-
-1. {{ timing_badge("7-8 minutes", "info") }} **Write the answers to the following questions** on the online document provided.
+1. {{ timing_badge("10 minutes", "info") }} **Write the answers to the following questions**. You can write your answers in a local document file %%(e.g., a Word doc)%% first; when done, paste a screenshot in the workspace document. %%Writing the answer directly in the workspace document might result in too much lag.%%
 
    <box>
 
    %%{{ icon_info }} Question adapted from a past exam paper.%%
 
-   <span class="text-monospace">Pull Request Tracker (PRT) is a desktop application meant to help CS2103 tutors deal with GitHub PRs more efficiently (compared to the GitHub Web interface). For example, it will help tutors find and review PRs from their _mentees_ easily. It will help the _managers_ of the module (e.g., professor, head TA) to easily keep track of how tutors are dealing with mentee PRs. PRT will communicate with GitHub using the GitHub API.</span>
+   <span class="text-monospace">Pull Request Tracker (PRT) is a desktop application meant to help tutors of a Software Engineering module deal with GitHub PRs more efficiently (compared to the GitHub Web interface). For example, it will help tutors find and review PRs from their _mentees_ easily. It will help the _managers_ of the module (e.g., professor, head TA) to easily keep track of how tutors are dealing with mentee PRs. PRT will communicate with GitHub using the GitHub API.</span>
 
    1. Write 1 must-have and 1 nice-to-have user stories, covering user types `tutor` and `manager`.
    1. Write at least 1 <tooltip content="Non-Functional Requirements">NFRs</tooltip>, related to performance/scalability and/or usability.
@@ -39,8 +30,14 @@
 
    </box>
 
-1. {{ timing_badge("7-8 minutes", "info") }} **Discuss the answers** as guided by the tutor.
+2. **Check a peer answer (provided by the tutor) for the bugs listed below** and discuss, as directed by the tutor.
 
-#### {{ thumb(3) }} Refine your DG {{ timing_badge("after the tutorial", "secondary") }}
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+
+
+#### {{ thumb(2) }} Refine your DG {{ timing_badge("after the tutorial", "secondary") }}
 
 * After the tutorial, if applicable, refine the relevant sections of your own DG based on what you learned from the tutorial activities.
