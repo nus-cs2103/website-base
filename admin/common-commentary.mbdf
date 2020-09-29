@@ -32,6 +32,10 @@ Now, let's look at other techniques used for specifying requirements.<span tags=
 <div id="{{ slugify("specifyingRequirements-useCases-introduction") }}">
 The technique of _use cases_ (don't confuse with _user stories_) covered below is another widely used technique. However, we only cover it briefly (i.e., you'll learn _what_ it is but not _how_ to use it) to lower to module workload.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Requirements: Use Cases") }}">
+Previously, you learned a number of techniques for specifying requirements. There's one more left, which we'll cover this week.
+</div>
 <!-- ==================================================================================================== -->
                                              OOP
 <!-- ==================================================================================================== -->
@@ -168,7 +172,7 @@ Next, we learn about some built-in data structures that can be used to manage a 
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: File Access") }}">
-Another thing you need to do in the iP this week is reading from and writing to files. Let's learn how to do that next.
+Another thing you need to do in your project soon is reading from and writing to files. Let's learn how to do that next.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: JAR files") }}">
@@ -301,6 +305,10 @@ When working with Git, sooner or later you will face a problem called _merge con
 Now that you know how to use IDE basic features, it's worth looking at even more ways of leveraging their power. In particular, ==the _debugging_ feature can be indispensable== at times.
 <p/>
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("IDEs: Advanced Features") }}">
+In case you are the type who want to become a 'power user' of IDEs (it's not a bad idea, given the IDE is like the primary tool of a software engineer), given below are some more things you can do with IDEs.
+</div>
 <!-- ==================================================================================================== -->
                                      Code Quality
 <!-- ==================================================================================================== -->
@@ -366,6 +374,12 @@ First, let us learn such testing fits into an aspect called _developer testing_ 
 We started writing JUnit testing in the last week. The topics below helps you push a bit further in the same direction.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Testing: Intermediate Concepts") }}">
+One of the primary goals of a software engineer is to avoid bugs. You certainly don't want to be the person responsible for causing a major bug that caused heavy damages to some party. That's why we need to focus heavily on testing -- one of the main defences against bugs.
+
+The next few sections cover some intermediate level testing topics that you are very likely to encounter in software engineering.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Testing: Test Coverage") }}">
 Previously, you learned how to write JUnit tests. **How do you know which parts of the code is being tested by your tests? That's where _test coverage_ comes in.**
 </div>
@@ -376,6 +390,10 @@ Learn how to measure test coverage in your tP. You will be asked to demo that in
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Types of Testing") }}" >
 As we approach the last part of the tP, we'll be spending more time learning about software testing. This week, we start off with an overview of different _types_ of software testing.
+</div>
+<!-- ---------------------------------------------------------------------------- -->
+<div id="{{ slugify("Testing: Types") }}" >
+You've already been doing some testing in your project work. It turns out there are many ways to categorize testing. Let's learn some of the more common categorizations of testing.
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("testing-dependencyInjection-what") }}" >
@@ -426,7 +444,7 @@ Now, let us take a quick look at a couple of well-known processes used in the in
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Project Mgt: Scheduling and Tracking") }}">
-As you are now doing the tP, it is a good time to learn **some very basic (almost common sense) techniques that can help in scheduling and tracking your tP**.
+Coordinating a team project is not easy. Given below are some very basic tools and techniques that are often used in planning, scheduling, and tracking projects.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("projectPlanning-ganttCharts") }}">
@@ -437,6 +455,10 @@ GANTT Charts and PERT charts are popular tools in the project management domain 
 This topic is included in the syllabus just **to let you know that teams can be structured in different ways**.
 
 Which of them is closest to the structure of your team?
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Project Mgt: Workflows") }}">
+Continuing on the same theme, given below are more practices used in managing projects, particularly related to the revision control aspect.
 </div>
 <!-- ==================================================================================================== -->
                                     Documentation
@@ -451,6 +473,10 @@ Which of them is closest to the structure of your team?
 <!-- ==================================================================================================== -->
                                     Integration
 <!-- ==================================================================================================== -->
+<div id="{{ slugify("Integration Approaches") }}">
+As you start adding new code to the tP, let's also become aware of various approaches in integrating new code to a product.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Continuous Integration/Deployment") }}">
 **Modern software projects, and your tP, make heavy use of build/CI/CD tools** The topics below give you an overview of those tools, to prepare you to start using them yourself.
 </div>
@@ -464,9 +490,22 @@ One important objective of developer documentation is to explain the design and 
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Class/Object Diagrams: Basics") }}">
+<div tags="m--tic2002">
+
 This module covers only two types of diagrams: class/object diagrams (CD/OD) -- which model a _structural_ aspect of an OOP design, and sequence diagrams (SD) -- which model a _behavioral_ aspect. This week, let's learn the basic CD/OD notation.
 
 We recommend you ==try the relevant post-lecture quizzes as you read each sections== below. In these quizzes, you will  be able to see the answers immediately after completing the quiz.
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Class/Object Diagrams: Intermediate") }}">
+
+Having learned class/object diagrams basics, we can now move on to some intermediate CD/OD notations.
+
+But first, **try this CD/OD drawing example/exercise (solution provided)**.
+
+{{ panopto("88a6d3bc-7bbb-4566-a035-ac4100ce1085", desc="[Example] Box, Item, Lid") }}
+
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("modeling-modelingStructures-objectDiagrams") }}">
@@ -488,6 +527,12 @@ Bad news: we are going to cover an entire new diagram type in one go (reason: to
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("Design Principles") }}">
 As you are still in the early stage of the tP, **this is a good time to learn some design principles that you can try to apply as you evolve the tP design**.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Design: Fundamentals") }}">
+As you do projects, you'll have to make design decisions e.g., decide between multiple design alternatives. Let us learn three fundamental design concepts that you can use in those decisions.
+
+It is extremely important for you to know these three because **they are like the DNA of every higher-level design concept**.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("designFundamentals-abstraction-what") }}">

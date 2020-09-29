@@ -1,12 +1,7 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
 
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Requirements: Use Cases", reuse=false) %}
-
-Last week, you learned a number of techniques for specifying requirements. There's one more left, which we'll cover this week.
-
-{% endcall %}
+{{ topic_preamble("Requirements: Use Cases") }}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Design: High-Level View", reuse=false) %}
 
@@ -20,35 +15,9 @@ Now that you know there are two kinds of 'design', also note that this module fo
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Design: Fundamentals", reuse=false) %}
-
-As you start changing the tP code, you'll have to make design decisions e.g., decide between multiple design alternatives. Let us learn three fundamental design concepts that you can use in those decisions.
-
-It is extremely important for you to know these three because **they are like the DNA of every higher-level design concept**.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("IDEs: Advanced Features", reuse=false) %}
-
-In case you are the type who want to become a 'power user' of IDEs (it's not a bad idea, given the IDE is like the primary tool of a software engineer), given below are some more things you can do with IDEs.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Integration Approaches", reuse=false) %}
-
-As you start adding new code to the tP, let's also become aware of various approaches in integrating new code to a product.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Project Mgt: Scheduling and Tracking", reuse=false) %}
-
-Coordinating a team project is not easy. Give below are some tools and techniques that are often used in planning, scheduling, and tracking projects.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Project Mgt: Workflows", reuse=false) %}
-
-Continuing on the same theme, given below are more practices used in managing projects, particularly related to the revision control aspect.
-
-{% endcall %}
+{{ topic_preamble("Design: Fundamentals") }}
+{{ topic_preamble("IDEs: Advanced Features") }}
+{{ topic_preamble("Integration Approaches") }}
+{{ topic_preamble("Project Mgt: Scheduling and Tracking") }}
+{{ topic_preamble("Project Mgt: Workflows") }}
 <!-- ---------------------------------------------------------------------------- -->
