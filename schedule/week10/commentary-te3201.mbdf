@@ -12,7 +12,7 @@
 {{ panopto("b29faf7d-b575-4ad9-a43b-ab880073e127") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("uml-classDiagrams-dependencies-what") %}
+{% call topic_followup("uml-classDiagrams-dependencies-what", reuse=false) %}
 After learning the UML syntax in the section above, you can try this worked example:<br>
 {{ panopto("7a17fb5c-3b1f-4315-8d0e-ab8e00d2cbe9") }}
 {% endcall %}

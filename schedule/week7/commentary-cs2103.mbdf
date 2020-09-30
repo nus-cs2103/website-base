@@ -2,19 +2,15 @@
 
 
 {{ topic_preamble("Requirements: Use Cases") }}
+{{ topic_followup("Requirements: Use Cases") }}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Design: High-Level View", reuse=false) %}
 
-In the tP, you start with a code base that already has a certain design. The next few topics look at how one can come up with such a design.
+In the tP, you start with a code base that already has a certain design. What if there is no such design for you to starth with? The next few topics look at how one can come up with such a design yourself.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("design-introduction-what") %}
-
-Now that you know there are two kinds of 'design', also note that this module focuses more on the internal design rather than the external design.
-
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
+{{ topic_followup("design-introduction-what") }}
 {{ topic_preamble("Design: Fundamentals") }}
 {{ topic_preamble("IDEs: Advanced Features") }}
 {{ topic_preamble("Integration Approaches") }}

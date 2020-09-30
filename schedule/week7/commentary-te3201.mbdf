@@ -21,7 +21,7 @@ From the above, you realized the need for test automation. **Next, we learn what
 **Given below is a simple technique that you can use to semi-automate the testing of CLI apps** such as Monty, if you are running it in your computer (not on repl.it).
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("testing-testAutomation-testingTextUis") %}
+{% call topic_followup("testing-testAutomation-testingTextUis", reuse=false) %}
 You are not required to use the above technique in your project but using it can help you cut down the time spent on testing your code.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
@@ -43,7 +43,7 @@ Note: some of the guidelines refer to _classes_. Although we have touched on wha
 When the code quality gets bad, the remedy is to apply refactoring. Let's learn what that is.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("refactoring-when") %}
+{% call topic_followup("refactoring-when", reuse=false) %}
 As you do the project, try to refactor your code when you think the quality of the code is getting bad.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

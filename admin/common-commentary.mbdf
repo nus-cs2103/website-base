@@ -36,6 +36,11 @@ The technique of _use cases_ (don't confuse with _user stories_) covered below i
 <div id="{{ slugify("Requirements: Use Cases") }}">
 Previously, you learned a number of techniques for specifying requirements. There's one more left, which we'll cover this week.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("followup Requirements: Use Cases") }}">
+Now that you know all the different ways of specifying requirements, **here is an example that shows how all techniques of specifying requirements can work together**:
+{{ panopto("a8d7db29-d50c-4e8c-8742-ac4400ee8366", desc="Example: TeamFormer") }}
+</div>
 <!-- ==================================================================================================== -->
                                              OOP
 <!-- ==================================================================================================== -->
@@ -525,6 +530,10 @@ Bad news: we are going to cover an entire new diagram type in one go (reason: to
 <!-- ==================================================================================================== -->
                                    Design
 <!-- ==================================================================================================== -->
+<div id="{{ slugify("followup-design-introduction-what") }}">
+Now that you know there are two kinds of 'design', also note that this module focuses more on the internal design rather than the external design.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Design Principles") }}">
 As you are still in the early stage of the tP, **this is a good time to learn some design principles that you can try to apply as you evolve the tP design**.
 </div>

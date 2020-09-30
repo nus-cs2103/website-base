@@ -273,13 +273,13 @@
 {% endmacro %}
 
 
-{% macro topic_followup(topic)%}
+{% macro topic_followup(topic, indent, reuse=true)%}
 {% if indent %}<div class="indented-level{{ indent }}">{% endif %}
 {% if topic %}<span id="{{ "followup-" + slugify(topic) }}">{% endif %}
 <include src="followup-box.md" boilerplate>
 <variable name="commentary_body">
 
-{{ caller() }}
+{% if reuse %}<include src="../../admin/common-commentary.mbdf#followup-{{ id if id else slugify(topic) }}" />{% else %}{{ caller() }}{% endif %}
 </variable>
 </include>
 {% if topic %}</span>{% endif %}

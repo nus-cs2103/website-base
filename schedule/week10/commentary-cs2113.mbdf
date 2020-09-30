@@ -3,7 +3,7 @@
 {{ topic_preamble("Sequence Diagrams: Basics") }}
 
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("Sequence Diagrams: Intermediate-Level") %}
+{% call topic_followup("Sequence Diagrams: Intermediate-Level", reuse=false) %}
 After you have learned how to interpret sequence diagrams, you can watch this:
 
 {{ panopto("5816a49a-2f87-4e02-9aba-ab8400c41831", "A video lecture showing how to draw a sequence diagram to match code is given:") }}
@@ -14,7 +14,7 @@ After you have learned how to interpret sequence diagrams, you can watch this:
 {{ topic_preamble("Singleton pattern") }}
 
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("designPatterns-facade-what") %}
+{% call topic_followup("designPatterns-facade-what", reuse=false) %}
 To learn more design patterns, you can refer to [https://se-education.org/se-book/designPatterns/](https://se-education.org/se-book/designPatterns/)
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

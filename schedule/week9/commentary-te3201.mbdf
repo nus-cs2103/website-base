@@ -14,7 +14,7 @@ This week, **we start learning a UML diagram called _Class Diagrams_.**
 **UML has a way to add additional notes to any UML diagram**, as shown below.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("uml-notes-constraints") %}
+{% call topic_followup("uml-notes-constraints", reuse=false) %}
 After learning the UML notations above, you can attempt the exercise in the following video:
 
 {{ panopto("dab3bb0f-c0cd-40af-8e39-ab88005aa195") }}

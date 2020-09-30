@@ -11,7 +11,7 @@ You learned about <tooltip content="i.e., abstraction, coupling, cohesion">the t
 Now that you know what _design pattern_ is, let's learn a few example design patterns.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("Design Patterns") %}
+{% call topic_followup("Design Patterns", reuse=false) %}
 
 A couple of more design patterns will be covered next week.
 {% endcall %}

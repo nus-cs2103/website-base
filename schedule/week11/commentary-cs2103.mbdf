@@ -21,7 +21,7 @@ Given below are a few more topics that continue the theme of design patterns, bu
 The next topic is like 'design patterns at architecture level'. In fact, the MVC pattern you saw earlier come close to this category too.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("Architectural Styles") %}
+{% call topic_followup("Architectural Styles", reuse=false) %}
 
 As with design patterns, we covered only a few architecture styles. Although you didn't have to design an architecture in the tP, knowing the existence of these styles might come in handy in your future projects.
 {% endcall %}
