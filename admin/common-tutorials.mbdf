@@ -316,27 +316,54 @@ Note the following:
 * {{ timing_badge("5+5=10 minutes", "info") }} **Do part (b)** in the same manner.
 -->
 
-<div class="indented-level2" tags="m--cs2103">
-
-<include src="common-tutorials.mbdf#hand-drawing-diagrams" />
-</div>
 <div class="indented">
 
 {{ icon_info }} Question adapted from past exam paper.
 </div>
 
-* {{ timing_badge("15 minutes", "info") }} **Each student do the part (a)** of the following exercise, by ==hand-drawing== the answer.
-  * Use the following layout:<br>
-  <img src="images/draw-stock-cd/classLayout.png" width="600"/>
+1. {{ timing_badge("before the tutorial", "danger") }} **Each student do the following exercise**, by ==hand-drawing== the answer.<br>
+   Use the following layout:<br>
+   <img src="images/draw-stock-cd/classLayout.png" width="600"/>
 
 <div class="indented-level2">
 
 <include src="../book/modeling/modelingStructures/classDiagramsIntermediate/q-drawClassDiagramForItemEtc.md" />
 <p/>
+</div>
 
-* Paste the diagram (take a photo if you drew on paper) in the _tutorial workspace_ document.
-* {{ timing_badge("10 minutes", "info") }} **Discuss answers** as guided by the tutor.
-* {{ timing_badge("10+5=15 minutes", "info") }} **Do part (b)** in the same manner.
+2. {{ timing_badge("during the tutorial", "info") }}
+   * Paste the diagram (take a photo if you drew on paper) in the _tutorial workspace_ document.
+   * **Discuss answers** as guided by the tutor.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="draw-sd-personlist">
+
+1. {{ timing_badge("before the tutorial", "danger") }} **Do the following exercise** similar to the previous one.
+
+<div class="indented-level2">
+
+<include src="../book/modeling/modelingBehaviors/sequenceDiagramsBasic/q-essay-drawSequenceDiagramForPerson.md" />
+</div>
+<p/>
+
+2. {{ timing_badge("during the tutorial", "info") }}:
+
+<div class="indented">
+
+* As before, paste the diagramin the _tutorial workspace_ document, and take part in the follow up discussion, as guided by the tutor.
+
+* **How would you update the diagram** if the `PersonList` class was updated as follows?
+  ```java
+  class PersonList{
+      void addPerson(Person p){
+          add(p);
+      }
+
+      void add(Person p){
+          //...
+      }
+  }
+  ```
 </div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

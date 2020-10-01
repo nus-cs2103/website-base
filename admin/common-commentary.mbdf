@@ -392,6 +392,10 @@ Previously, you learned how to write JUnit tests. **How do you know which parts 
 <div id="{{ slugify("testing-testCoverage-how") }}">
 Learn how to measure test coverage in your tP. You will be asked to demo that in the coming tutorial.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("followup-testing-tdd-what") }}">
+You are welcome to, but not required to, follow the TDD approach in your project.
+</div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Types of Testing") }}" >
 As we approach the last part of the tP, we'll be spending more time learning about software testing. This week, we start off with an overview of different _types_ of software testing.
@@ -534,14 +538,20 @@ Bad news: we are going to cover an entire new diagram type in one go (reason: to
 Now that you know there are two kinds of 'design', also note that this module focuses more on the internal design rather than the external design.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="{{ slugify("Design Principles") }}">
-As you are still in the early stage of the tP, **this is a good time to learn some design principles that you can try to apply as you evolve the tP design**.
-</div>
-<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Design: Fundamentals") }}">
 As you do projects, you'll have to make design decisions e.g., decide between multiple design alternatives. Let us learn three fundamental design concepts that you can use in those decisions.
 
 It is extremely important for you to know these three because **they are like the DNA of every higher-level design concept**.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Design Principles") }}">
+As you are still in the early stage of the project, **this is a good time to learn some design principles that you can try to apply in the internal design of your product**.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Design Principles: SoC, SRP") }}">
+As you are still in the early stage of the project, **this is a good time to learn some design principles that you can try to apply in the internal design of your product**.
+
+These principles build on top of the design fundamentals you learned earlier (i.e., abstraction, coupling, cohesion).
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("designFundamentals-abstraction-what") }}">

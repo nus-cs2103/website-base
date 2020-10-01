@@ -1,5 +1,7 @@
 {% from "common/macros.njk" import thumb, show_as_tab, timing_badge with context %}
 
+<include src="../../admin/common-tutorials.mbdf#hand-drawing-diagrams" />
+
 #### {{ thumb(1) }} Exercise: draw a class diagram and an object diagram
 
 <include src="../../admin/common-tutorials.mbdf#draw-stock-cd" />
@@ -7,23 +9,4 @@
 
 #### {{ thumb(2) }} Exercise: draw a sequence diagram
 
-* {{ timing_badge("10+5=15 minutes", "info") }} **Do the following exercise** similar to the previous one.
-
-<div class="indented-level2">
-
-<include src="../../book/modeling/modelingBehaviors/sequenceDiagramsBasic/q-essay-drawSequenceDiagramForPerson.md" />
-</div>
-<p/>
-
-* **How would you update the diagram** if the `PersonList` class was updated as follows?
-  ```java
-  class PersonList{
-      void addPerson(Person p){
-          add(p);
-      }
-  
-      void add(Person p){
-          //...
-      }
-  }
-  ```
+<include src="../../admin/common-tutorials.mbdf#draw-sd-personlist" />
