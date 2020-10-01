@@ -100,7 +100,7 @@ These are considered _functionality bugs_:<br>
 
 :fas-bug: Problems in NFRs. Examples:
 * Not really a _Non-Functional_ Requirement
-* Not well-defined (i.e., hard to decide when it has been met)
+* Not scoped clearly (i.e., hard to decide when it has been met)
 * Not reasonably achievable
 * Highly relevant NFRs missing
 </span>

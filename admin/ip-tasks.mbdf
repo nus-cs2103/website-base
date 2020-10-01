@@ -360,26 +360,10 @@ This task is worth `2x2=4` participtaion points.
 
 This activity is worth `2x2=4` participation points.
 </box>
-<p/>
-<panel header="Allocation for iP peer evaluation" minimized >
 
-{% from "_module-" + module + "/studentData.mbdf" import ip_final_peer_evaluation_allocation as allocation %}
-
-{% macro get_links(username) -%}
-[[JAR](https://github.com/{{ username }}/{{ ip_repo_name }}/releases)][[User Guide](https://{{ username }}.github.io/{{ ip_repo_name }})][[Code](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#search={{ username }}&sort=groupTitle&sortWithin=title&since=2020-01-13&timeframe=commit&mergegroup=false&groupSelect=groupByRepos&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2F{{ ip_repo_name }}%5Bmaster%5D)]
-{%- endmacro  %}
-
-Your username | 1st iP to evaluate | 2nd iP to evaluate
---------------|--------------------|------------------
-{% for allocation in allocations  -%}
-{{ allocation[0] }} | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }}
-{% endfor %}
-
-</panel>
-<p/>
 </div>
 
-1. **Find out which iPs are allocated for your evaluation** from the panel above.
+1. **Wait for the email notifying you which iPs are allocated for you to evaluate**. When the email is sent out, it will also be announced via module announcements.
 1. **Download the JAR file** of the first iP by following the link provided.
 1. **Locate the User Guide** of the app by following the link provided.
 1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
