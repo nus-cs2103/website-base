@@ -25,7 +25,8 @@ The full team details page is not available yet. In the meantime ==see [here](ht
 <span tags="m--cs2103">
 
 <img src="{{ team_website }}/images/Ui.png" width="750" onerror="this.src='images/placeholder-large.png';" /><p/>
-
+</span>
+<span tags="m--cs2103 m--tic4001">
 **Project notes** (internal): {% if teams[team_id] != '' %}see [here]({{ teams[team_id] }}){% else %}N/A{% endif %}
 </span>
 </div>
@@ -59,7 +60,7 @@ The full team details page is not available yet. In the meantime ==see [here](ht
   {% for student in students  %}
 
     {% set student_team = student[1] %}
-    {% set student_tutorial = student_team.slice(0, -2) %}
+    {% set student_tutorial = 'TIC4001-F18' if tic4001 else student_team.slice(0, -2) %}
     {% set student_name = student[0] %}
     {% set student_username = student[2] %}
     {% set team_org = semester + '-' + student_team %}
@@ -83,7 +84,7 @@ The full team details page is not available yet. In the meantime ==see [here](ht
   {% set team_end %} {{ get_team_end() }} {% endset %}
   {% set panel_contents = panel_contents + team_contents + team_end %}
 
-<panel type="seamless" header="## {{ tutorial }}" no-close>
+<panel type="seamless" header="## {{ tutorial }}" {{ "expanded" if tic4001 else ""}} no-close>
 {{ panel_contents }}
 </panel>
 
