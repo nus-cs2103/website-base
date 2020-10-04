@@ -189,7 +189,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
   <include src="appendixB-policies.md#policy-reuse"/>
 </modal>
 
-**Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project at least until {{ version_first }}.
+**Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project at least until (and including) {{ version_first }} %%(you may tweak the workflow {{ version_penultimate }} onwards)%%.
 * {{ icon_tip }} **Protect the `master` branch**: You can use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs. We suggest the following:
   * Go the the {{ show_as_rounded_tab(':octicon-gear: settings') }} of your team repo.
   * Click on the `Branches` option on the navigation menu on the left.
