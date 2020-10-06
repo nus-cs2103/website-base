@@ -321,7 +321,7 @@ Note the following:
 {{ icon_info }} Question adapted from past exam paper.
 </div>
 
-1. {{ timing_badge("before the tutorial", "danger") }} **Each student do the following exercise**, by ==hand-drawing== the answer.<br>
+1. {{ timing_badge("before the tutorial", "danger") }} **Do the following exercise**, by ==hand-drawing== the answer.<br>
    Use the following layout:<br>
    <img src="images/draw-stock-cd/classLayout.png" width="600"/>
 
@@ -338,13 +338,30 @@ Note the following:
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="draw-sd-personlist">
 
-1. {{ timing_badge("before the tutorial", "danger") }} **Do the following exercise** similar to the previous one.
+1. {{ timing_badge("before the tutorial", "danger") }}
 
 <div class="indented-level2">
 
+**(a) Do the following exercise** similar to the previous one.
+
 <include src="../book/modeling/modelingBehaviors/sequenceDiagramsBasic/q-essay-drawSequenceDiagramForPerson.md" />
-</div>
 <p/>
+
+**(b) How would you update the diagram** if the `PersonList` class was updated as follows?
+
+```java
+class PersonList{
+    void addPerson(Person p){
+        add(p);
+    }
+
+    void add(Person p){
+        //...
+    }
+}
+```
+</div>
+
 
 2. {{ timing_badge("during the tutorial", "info") }}:
 
@@ -352,18 +369,7 @@ Note the following:
 
 * As before, paste the diagramin the _tutorial workspace_ document, and take part in the follow up discussion, as guided by the tutor.
 
-* **How would you update the diagram** if the `PersonList` class was updated as follows?
-  ```java
-  class PersonList{
-      void addPerson(Person p){
-          add(p);
-      }
 
-      void add(Person p){
-          //...
-      }
-  }
-  ```
 </div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

@@ -3,6 +3,8 @@
 
 
 {% call show_admin_summary() %}
+1. Submit the quiz
+
 {{ icon_project }} **Project:**
 1. Implement increments `Level-8`,  `A-JavaDoc`, `A-Gradle` <span class="badge badge-pill badge-secondary">optional</span>, `A-JUnit`
 {% endcall %}

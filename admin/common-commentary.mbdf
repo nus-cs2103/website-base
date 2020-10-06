@@ -162,6 +162,10 @@ As you have learned the Java basic topics already, it is time to move to interme
 As you add more and more Java classes to your project, keeping all those classes in the same directory becomes untenable. The solution is covered in the next topic.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: JavaDocs") }}">
+As you know, adding comments to the code is a good practice. Let's learn about a specific type of comments that you can use in Java code that can do even more than just explain the code.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Access Modifiers") }}">
 As the size of your Java code base grows, every class being able to access every member of every other class can be problematic. Hence, there should be a way to control the access to our Java classes and their members. The solution is given in the topic below.
 </div>
@@ -453,7 +457,7 @@ Now, let us take a quick look at a couple of well-known processes used in the in
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Project Mgt: Scheduling and Tracking") }}">
-Coordinating a team project is not easy. Given below are some very basic tools and techniques that are often used in planning, scheduling, and tracking projects.
+<span tags="m--cs2103 m--cs2113 m--tic4001">Coordinating a team project is not easy.</span> Given below are some very basic tools and techniques that are often used in planning, scheduling, and tracking projects.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("projectPlanning-ganttCharts") }}">
@@ -545,7 +549,17 @@ It is extremely important for you to know these three because **they are like th
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Design Principles") }}">
+
+<div tags="m--cs2113">
+
 As you are still in the early stage of the project, **this is a good time to learn some design principles that you can try to apply in the internal design of your product**.
+</div>
+<div tags="m--tic2002">
+
+This week, we learn a few **design principles that you can try to apply in your project**.
+</div>
+
+These principles build on top of the design fundamentals you learned earlier (i.e., abstraction, coupling, cohesion).
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Design Principles: SoC, SRP") }}">

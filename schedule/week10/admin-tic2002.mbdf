@@ -3,6 +3,8 @@
 
 
 {% call show_admin_summary() %}
+1. Submit the quiz
+
 {{ icon_project }} **Project:**
 1. Add individual feature 1
 1. Implement increments `Level-9`, `A-CodingStandard`, `A-CodeQuality`, `A-Libraries` <span class="badge badge-pill badge-secondary">optional</span>
