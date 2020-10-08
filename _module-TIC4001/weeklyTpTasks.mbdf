@@ -32,7 +32,7 @@ week8: [
 week9: [
   {id: 'make_code_more_defensive'},
   {id: 'deliver_first_version', deadline: 'midnight before next lecture'},
-  {id: 'do_an_informal_demo', deadline: 'during the lecture', deadline_type: "info"}
+  {id: 'do_an_informal_demo', deadline: 'during the next lecture', deadline_type: "info"}
 ],
 week10: [
   {id: 'start_on_the_penultimate_version'},

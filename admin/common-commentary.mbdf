@@ -358,7 +358,13 @@ So far, your iP may have assumed a 'perfect world' e.g., user input is always in
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Logging") }}">
-Given next are **two techniques that help you locate problems in the code**.
+Given next are **two techniques that help you locate problems in the code**: _logging_, and _assertions_
+</div>
+<!-- ==================================================================================================== -->
+                                    Documentation
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("Writing Developer Documents") }}">
+As you will be updating the design details in your tP DG, here are some guidelines to help you with that.
 </div>
 <!-- ==================================================================================================== -->
                                     Testing
@@ -535,6 +541,28 @@ Bad news: we are going to cover an entire new diagram type in one go (reason: to
 
 **Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, CD/OD's that you learned in the past two weeks model _structural_ aspects.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("OO Domain Models") }}">
+Previously, you learned about class and object diagrams. Let's touch on another variant of class diagrams that complements the first two. The good news is that it is simply a subset of the notation that you already know.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Followup OO Domain Models") }}">
+
+Here is an example that shows the steps of drawing an OODM to match a given problem domain.
+
+{{ panopto("8ee3d654-c865-45fb-ae08-ac4e003584af", desc="OODM for the tasks domain") }}
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Activity Diagrams") }}">
+Activity diagrams is the last UML diagram type you'll be learning in this module, and probably the easiest and most intuitive of the lot. You've heard about 'flow charts', right? Well, this is the UML equivalent of that.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Followup Activity Diagrams") }}">
+
+Here is an example that shows the steps of drawing an activity diagram to match a given workflow.
+
+{{ panopto("d7ac5238-7071-4ded-b0ff-ac4e00358463", desc="Activity diagram for the do-while loop") }}
+</div>
 <!-- ==================================================================================================== -->
                                    Design
 <!-- ==================================================================================================== -->
@@ -568,6 +596,10 @@ As you are still in the early stage of the project, **this is a good time to lea
 These principles build on top of the design fundamentals you learned earlier (i.e., abstraction, coupling, cohesion).
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Design Principles") }}">
+Remember you learned about <tooltip content="Abstraction, Coupling, Cohesion">the three things</tooltip> that are 'like the DNA' of design concepts. It's time to move to the next level and learn some design _principles_ that build upon those three. Given below are two new principles and three that you should have at least touched on in previous modules.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("designFundamentals-abstraction-what") }}">
 Let's start by learning **the three most fundamental design qualities** upon which all other design principles are built.
 </div>
@@ -576,12 +608,18 @@ Let's start by learning **the three most fundamental design qualities** upon whi
 Given next are **two design principles that we can apply when designing OOP systems**. These aim to improve <tooltip content="abstraction, coupling, cohesion">the three design qualities you learned earlier</tooltip>.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("principles-interfaceSegregationPrinciple") }}">
+If you liked the principles covered above, given below are a few more widely used principles most of which are optional in this module (they were moved to the optional topics in order to reduce the module workload).
+
+The only examinable thing is ==the term== _SOLID principles_.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Design Patterns") }}">
 Previously, you learned:
 * Three basic design quality aspects: abstraction, coupling, cohesion
-* Two design principles that aims to improve those aspects: SRP, SoC. There are many more principles but we covered only two (to reduce workload) just to give you a taste only.
+* Two design principles that aims to improve those aspects: SRP, SoC. <span tags="m--cs2113">There are many more principles but we covered only two (to reduce workload) just to give you a taste only.</span>
 
-**This week, we cover _design patterns_, a concept that builds upon the above**. Again, we limit to only two of them, for similar reasons.
+**This week, we cover _design patterns_, a concept that builds upon the above**. <span tags="m--cs2113">Again, we limit to only two of them, for similar reasons.</span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("designPatterns-introduction-what") }}">
@@ -604,6 +642,17 @@ Given next are **two simple design patterns**: _singleton_ and _facade_.
 Now that we know about multi-level design, let us learn about architecture, which is a special case of multi-level design. We also cover _architecture diagrams_ here.
 </div>
 <!-- ---------------------------------------------------------------------------- -->
+<div id="{{ slugify("Architecture Diagrams: Drawing") }}" >
+You've already encountered architecture diagrams in your tP. Pretty soon, you might have to update that diagram to match your new product. Given below are just a brief note about drawing architecture diagrams.
+</div>
+<!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Architectural Styles") }}" >
 Remember _design patterns_? The _architectural styles_ covered below are like 'design patterns' at architecture level. As before, we only cover two of them just to give you a taste of the topic while keeping the workload low.
+</div>
+
+<!-- ---------------------------------------------------------------------------- -->
+<div id="{{ slugify("Conceptualizing a Design") }}" >
+A few weeks ago, you learned how to interpret UML diagrams. More recently, you learned how to draw diagrams to match code. There's a third use of models: as an aid for coming up with a design _before_ the code is written.
+
+While this module doesn't ask you to come up with detailed designs before writing code (i.e., our approach leans closer to the _agile_ design rather than the _full design upfront_ approach), this third use of models come in handy at times. Let's learn a bit about that too.
 </div>

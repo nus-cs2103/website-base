@@ -583,10 +583,16 @@ Update the following pages in your project repo:
 <span id="desc_do_an_informal_demo">
 
 <div id="demo">
+<div tags="m--cs2103 m--cs2113">
 
 <!-- * **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the commit tagged as `{{ version_first }}` in the `master` branch %%i.e. only features included in the current release should be demoed%%.-->
 * As we don't have in-class tutorials this semester, do the following in lieu of a live demo:<br>
-  [one member] Run your app using the version tagged `{{ version_first }}`. Take screenshots of each available feature in action. Add those screenshots to your product notes document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.
+  [one member] Run your app using the version tagged `{{ version_first }}`. Take screenshots of each available feature in action. Add those screenshots to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.
+</div>
+<div tags="m--tic4001">
+
+* During the lecture, do an informal demo of your {{ version_first }} to the profs.
+</div>
 </div>
 </span>
 {#====================================================================================================================#}

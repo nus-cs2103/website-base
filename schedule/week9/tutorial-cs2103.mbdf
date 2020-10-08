@@ -16,7 +16,7 @@
 
 #### {{ thumb(2) }} Exercise: OODMs
 
-* {{ timing_badge("10 minutes", "info") }} Do the following question. As before, you should _hand-draw_ the diagram.<br>
+1. {{ timing_badge("before the tutorial", "danger") }} Do the following question. As before, you should _hand-draw_ the diagram.<br>
   %%{{ icon_tip }} You can use the _association class_ notation in the answer.%%
 
 <div class="indented-level2">
@@ -24,14 +24,17 @@
 <include src="../../book/modeling/modelingStructures/objectOrientedDomainModels/q-courseDomainModel.md" />
 </div>
 
-* Paste a scan/photo of your answer in the online document.
-* {{ timing_badge("10 minutes", "info") }} Discuss the answers, as guided by the tutor.
+2. {{ timing_badge("during the tutorial", "info") }}
+   * Paste a screenshot/scan/photo of your answer in the online document.
+   * Discuss a sample answer, as guided by the tutor.
 
 #### {{ thumb(3) }} Exercise: Activity Diagrams
 
-* Do the following question in a similar manner to the previous question.
+1. {{ timing_badge("before the tutorial", "danger") }} Do the following question, similar to the previous question.
 
 <div class="indented-level2">
 
 <include src="../../book/modeling/modelingBehaviors/activityDiagrams/q-modelWorkflowOfBurgerShop.md" />
 </div>
+
+2. {{ timing_badge("during the tutorial", "info") }}: Post your answer and discuss, similar to the previous question.
