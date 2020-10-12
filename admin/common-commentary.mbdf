@@ -14,7 +14,14 @@ This week, you will be dealing with the _requirements_ aspect of the tP. While t
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Requirements: Intro") }}">
+<div tags="m--cs2103 m--cs2113">
+
 Last week, we had a quick peek at the _requirements_ aspect. Let's study the topic properly this week, starting with an introduction to the topic.
+</div>
+<div tags="m--tic2002">
+
+Let's learn about the _requirements_ aspect of SE projects. Although you have already started your module project (which didn't require heavy work on the requirements aspect), it is good to learn more about this topic, so that you can use it in future projects.
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Requirements: Gathering") }}">
@@ -197,7 +204,7 @@ While the next few topics are optional, we recommend that you ==have a quick loo
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("cppToJava-junit-basic") }}">
-**Now, let us learn about JUnit, a tool used for automated testing.** JUnit is a third-party tool (not included in the JDK) but your tP project is already configured to use JUnit, with the help of Gradle. That means the video tutorial given at the end of the section is mostly not applicable to you, unless you are interested to learn how to set up a non-Gradle project for JUnit.
+**Now, let us learn about JUnit, a tool used for automated testing.** JUnit is a third-party tool (not included in the JDK). <span tags="m--cs2103 m--cs2113">but your tP project is already configured to use JUnit, with the help of Gradle. That means the video tutorial given at the end of the section is mostly not applicable to you, unless you are interested to learn how to set up a non-Gradle project for JUnit.</span>
 </div>
 <!-- ==================================================================================================== -->
                                            Revision Control
@@ -376,9 +383,13 @@ As you start adding features to your project iteratively, you'll need **a way to
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Developer Testing") }}">
-**This week, you will start using JUnit to write automated Java tests for your tP**, in addition to using the I/O redirection test (as you did in the iP).
+**Soon, you will start writing automated Java tests for your project**.
 
 First, let us learn such testing fits into an aspect called _developer testing_ of the testing landscape.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Unit Testing") }}">
+_Unit testing_ is the type of _developer testing_ that is used the most. Let's learn about it next.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("testing-testAutomation-usingTestDrivers") }}">

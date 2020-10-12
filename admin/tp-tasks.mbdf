@@ -577,6 +577,11 @@ Update the following pages in your project repo:
 
 * **Wrap up the milestone** using a git tag `{{ version_first }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, reassign them to a future milestone.
 
+<div tags="m--cs2103">
+
+* Do a release on GitHub. Uploading a JAR file to GitHub is optional.
+</div>
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_first }}</span>
@@ -587,7 +592,7 @@ Update the following pages in your project repo:
 
 <!-- * **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the commit tagged as `{{ version_first }}` in the `master` branch %%i.e. only features included in the current release should be demoed%%.-->
 * As we don't have in-class tutorials this semester, do the following in lieu of a live demo:<br>
-  [one member] Run your app using the version tagged `{{ version_first }}`. Take screenshots of each available feature in action. Add those screenshots to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.
+  [one member] Run your app using the latest released version `{{ version_first }}` <span tags="m--cs2103">(or `{{ version_first }}b`, if applicable)</span>. Take screenshots of each available feature in action. Add those screenshots to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.
 </div>
 <div tags="m--tic4001">
 
