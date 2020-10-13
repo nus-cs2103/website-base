@@ -6,3 +6,4 @@ _markbind/logs/
 pullall.sh
 pullallmods.sh
 pushall.sh
+debug.log
