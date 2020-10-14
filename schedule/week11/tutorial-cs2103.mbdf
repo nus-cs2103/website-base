@@ -1,8 +1,14 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 
-#### {{ thumb(1) }} Demo {{ version_penultimate }}
+#### {{ thumb(0, thumb_style="secondary") }} %%Demo {{ version_penultimate }}%%
 
-* One member is to do a quick demo of your `{{ version_penultimate }}` ==using the jar file==. Make sure the jar file is ==in an empty folder== before you start. Others can help to confirm the jar file works on other OS'es.
+<div class="indented-level2">
+
+%%The tutor to confirm the following has been done.%%
+
+{{ embed_topic("../../admin/tp-tasks.mbdf#desc_demo_penultimate_version", "Admin " + icon_embedding + " tP v1.3: Demo", "3") }}
+</div>
+<p/>
 
 <div class="indented-level2">
 <box type="success" border-left-color="green" icon="">
@@ -20,7 +26,7 @@ You may release a newer version to be used for the PE dry run, but make sure it 
   <include src="../../book/testCaseDesign/combiningTestInputs/mix/q-testCasesForConsumeMethod.md" />
 </div>
 -->
-#### {{ thumb(2) }} Exercise: Equivalence partitions
+#### {{ thumb(2) }} Exercise: Boundary values
 
 * Do the following exercise yourself (e.g., in a word document) and copy-paste the answer in the tutorial submission file.
 
@@ -39,9 +45,3 @@ You may release a newer version to be used for the PE dry run, but make sure it 
   <include src="../../book/testCaseDesign/combiningTestInputs/mix/q-testCasesForConsumeMethod.md" />
 </div>
 <br>
-
-#### {{ thumb(4) }} Exercise: defensive programming
-
-* Do the following, as directed by the tutor:
-  1. Demonstrate an assertion failure using Intellij.
-  1. Give an example of defensive programming from AB3 or your tP.

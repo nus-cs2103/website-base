@@ -1192,7 +1192,7 @@
               {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "0:2"},
               {name: "usingTestDrivers", heading: "Test Automation Using Test Drivers", priority: "0:3"},
               {name: "tools", heading: "Test Automation Tools", priority: "0:3"},
-              {name: "testingGuis", heading: "Automated Testing of GUIs", priority: "0:3"}
+              {name: "testingGuis", heading: "Automated Testing of GUIs", priority: "4"}
             ]
           }
         ]
@@ -1211,27 +1211,27 @@
       },
       {
         name: "dependencyInjection",
-        priority: "0:4",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
-            priority: "0:4",
+            priority: "4",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "0:4"},
-              {name: "how", heading: "How", priority: "0:4"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "how", heading: "How", priority: "4"}
             ]
           }
         ]
       },
       {
         name: "tdd",
-        priority: "0:4",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "0:4"},
-              {name: "how", heading: "How", priority: "-1"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "how", heading: "How", priority: "4"}
             ]
           }
         ]
@@ -1248,9 +1248,9 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "0:3"},
-              {name: "positiveVsNegative", heading: "Positive vs Negative Test Cases", priority: "0:2"},
-              {name: "blackVsGlass", heading: "Black Box vs Glass Box", priority: "0:2"}
+              {name: "what", heading: "What", priority: "3"},
+              {name: "positiveVsNegative", heading: "Positive vs Negative Test Cases", priority: "2"},
+              {name: "blackVsGlass", heading: "Black Box vs Glass Box", priority: "2"}
             ]
           }
         ]
@@ -1301,8 +1301,9 @@
         level_two_topics: [
           {
             name: "",
+            priority: "-1",
             level_three_topics: [
-              {name: "testingUseCases", heading: "Testing Based on Use Cases", priority: "3"}
+              {name: "testingUseCases", heading: "Testing Based on Use Cases", priority: "-1"}
             ]
           }
         ]

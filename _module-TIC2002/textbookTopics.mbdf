@@ -933,7 +933,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           }
         ]
@@ -957,8 +957,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"},
-              {name: "continuousIntegrationDeployment", heading: "Continuous Integration and Continuous Deployment", priority: "2"}
+              {name: "what", heading: "What", priority: "3"},
+              {name: "continuousIntegrationDeployment", heading: "Continuous Integration and Continuous Deployment", priority: "4"}
             ]
           }
         ]

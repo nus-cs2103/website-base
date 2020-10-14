@@ -41,9 +41,5 @@ Being able to work with PRs is an essential skill. To get started on that, let's
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Automating the Build Process", reuse=false) %}
-
-As your project gets bigger and changes become more frequent, it's natural to look for ways to automate the many steps involved in going from the code you write in the editor to an executable product. This is a good time to start learning about that aspect too.
-
-{% endcall %}
+{{ topic_preamble("Automating the build process") }}
 <!-- ---------------------------------------------------------------------------- -->

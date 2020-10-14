@@ -7,4 +7,5 @@
 {{ topic_preamble("Developer Testing") }}
 {{ topic_preamble("Unit Testing") }}
 {{ topic_preamble("cppToJava-junit-basic") }}
+{{ topic_preamble("Automating the build process") }}
 <!-- ---------------------------------------------------------------------------- -->

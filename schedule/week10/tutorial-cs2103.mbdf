@@ -1,119 +1,23 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 
-#### {{ thumb(0) }} Smoke-test CATcher
+#### {{ thumb(1) }} Demonstrate an assertion failure
 
-<span id="catcher-alpha">
-<div class="indented-level2">
+1. Demonstrate an assertion failure using Intellij.
+   1. Modify the code of your tP to deliberately cause an assertion failure<br>
+      e.g., add `assert false: "this line causes an assertion failure";`{.java} to your code.
+   1. Run the code so that the application crashes with an assertion failure.
+   1. Take a screenshot and paste in the tutorial workspace document.
+1. Give an example of defensive programming from AB3 or your tP.
 
-<box dismissible>
+#### {{ thumb(2) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
 
-%%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we would like to use for the PE this semester.%%
-</box>
+* Evaluate the given sample DG extracts, as guided by the tutor.
+* In particular, detect the following DG bugs (they are the same bugs that will be used when evaluating your final DG).
 
-In this tutorial, we would like to smoke-test the CATcher app **to ensure it can run in your computer**.
-<p/>
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs.mbdf#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="2", status="expanded", type="danger") }}
 
-<panel type="info" header="**The steps for smoke-testing CATcher:**" minimized>
+* Also, lookout for places where these tips can be applied.
 
-1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
-1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
-   {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.<br>
-   {{ icon_info }} If you encounter other problems at the app launch, refer to the [Notes on using the CATcher Desktop App](https://github.com/CATcher-org/CATcher/blob/master/usage-notes.md).
-1. **Login**: Choose the _session_ `{{ module }}/T Alpha Test`, and submit.
-   <img src="../../admin/images/catcherLogin.png" />
-1. In the next screen, submit your GitHub credentials directly or choose to the `Use GitHub login interface` to login to CATcher using your GitHub account.<br>
-   If the app asks for public repo access permissions, grant it (just go with the default settings).
-1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
-1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
-   {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
-   {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
-   {{ icon_info }} The `severity` and `type` labels are compulsory.
-1. **Report any problems you encounter** at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
-1. **Do NOT delete the `alpha` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
-
-
-</panel>
-<p/>
-
-{{ icon_important_big_red }} **Being able to run CATcher is important for the PE** -- if you are unable to run it, please follow up via the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues) until you resolve the issue ASAP.
-
-</div>
-</span>
-
-#### {{ thumb(1) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
-
-* **Divide into two sub-teams**, ensuring that each team has at least one member who is good with UML.
-* **Find the team your sub-team have been allocated to discuss** in the panel below and click on the link to locate their team PR.
-
-{% macro get_review_allocation_for_team(reviewing_team) -%}
-{%- set reviewed_team = "" -%}
-{% for allocation in team_review_allocation  -%}
-{% if allocation[0] == reviewing_team %}{% set reviewed_team %}{{ allocation[1] }}{% endset %}{% endif %}
-{%- endfor %}{{ reviewed_team }}
-{%- endmacro %}
-
-{% macro get_pr_link(team_id) -%}
-[PR](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls?q=is%3Aopen+is%3Apr+label%3Atutorial.{{ team_id.slice(0, -2) }}+label%3Ateam.{{ team_id.slice(-1) }})
-{%- endmacro  %}
-
-{% macro get_dg_link(team_id) -%}
-[DG](https://{{ semester }}-{{ team_id | lower}}.github.io/main/DeveloperGuide.html)
-{%- endmacro  %}
-
-{% macro get_links(team_id, backup_team_id) -%}
-{{ team_id }}: {{ get_pr_link(team_id) }} {{ get_dg_link(team_id) }} <small>%%({{ backup_team_id }}: {{ get_pr_link(backup_team_id) }} {{ get_dg_link(backup_team_id) }})%%</small>
-{%- endmacro  %}
-
-<div class="indented-level2">
-
-<panel header="Allocation for DG review" >
-
-Your Team ID  | Sub-team A Reviews <small>%%(backup)%%</small> | Sub-team B Reviews <small>%%(backup)%%</small>
---------------|------------------------------------------------|---------------------------------------
-{% for team in team_review_allocation  %}
-{%- set backup_team1 %}{{ get_review_allocation_for_team(team[1]) }}{% endset -%}
-{%- set backup_team2 %}{{ get_review_allocation_for_team(team[2]) }}{% endset -%}
-{{ team[0] }} | {{ get_links(team[1], backup_team1) }} | {{ get_links(team[2], backup_team2) }} 
-{% endfor %}
-</panel>
-</div>
-
-* **Go to the PR** of the allocated team.
-* **Open the DG of that team in another Browser tab**.
-* **Confirm that the DG has significant updates**, to the diagrams in particular. If it doesn't, you can review the _backup_ team (given within brackets). %%If even the backup team is not suitable, ask the tutor for a suggestion or choose any random teams having tutorials in the same day.%%
-* **Evaluate the `Design` and the `Implementation` sections w.r.t possible DG bugs** (given further down); add your observations as comments.<br>
-
-<div class="indented-level2">
-
-<box>
-
-* To be done collectively with sub-team members.
-* Add _review comments_ in the corresponding place of the code. But ==if the <tooltip content="i.e., the tab named `Files changed`">_diff view_</tooltip> is too laggy, you can use a normal comment==. 
-* Choose the `Start a review` option rather than `Add single comment`.
-* Each person can do their own review, but coordinate with sub-team members to avoid duplicating the same point.
-* Phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).
-* Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams.
-* Do not finalize the review at this stage. Just keep adding comments.
-* <span class="text-success">**The understanding you gain from this exercise can indirectly determine how well you do in your own project.**</span> ==If you have even the slightest doubt about your observations in this exercise, please discuss it with the tutor== to ensure you have the right understanding of the criteria used.
-</box>
-
-<box border-left-color="green">
-
-##### <span class="text-success">DG - Possible Bugs</span> 
-{{ icon_important_big_red }} Pay attention to these as they are same as the final evaluation criteria of the DG.<br>
-
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
-
-Also see:
-{{ embed_topic("../../admin/tp-deliverables-dg.mbdf#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="1", status="expanded", type="success") }}
-
-</box>
-
-</div>
-
-* **Discuss your comments/observations/doubts with the tutor** and other team members to confirm the comments you entered are correct.
-* **Update your review comments if necessary**, based on the discussion you just had. After that, you can submit the review.<br>
-
-
+{{ embed_topic("../../admin/tp-deliverables-dg.mbdf#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="2", status="expanded", type="success") }}

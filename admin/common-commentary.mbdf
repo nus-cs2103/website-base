@@ -367,6 +367,10 @@ So far, your iP may have assumed a 'perfect world' e.g., user input is always in
 <div id="{{ slugify("Logging") }}">
 Given next are **two techniques that help you locate problems in the code**: _logging_, and _assertions_
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Defensive Programming") }}">
+You already know some techniques (e.g., exceptions, assertions) to make the code more resilient to errors. Given next is an overarching approach to coding that aims to push further in that direction.
+</div>
 <!-- ==================================================================================================== -->
                                     Documentation
 <!-- ==================================================================================================== -->
@@ -431,9 +435,11 @@ _Dependency Injection_ is a technique closely related to stubs. It is not in the
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Test Case Design") }}" >
+<div id="{{ slugify("Test Cases: Intro") }}" >
 Previously, we learned how to measure test _coverage_. This week, we look into how to increase coverage with the least number of test cases.
 
 First, we take a look at test case design in general, different approaches to test case design, and few different categorization of test cases.
+</div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("testCaseDesign-introduction-what") }}" >
@@ -445,11 +451,15 @@ First, we take a look at test case design in general, different approaches to te
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Equivalence Partitioning") }}" >
-Our syllabus includes two specific techniques for improving test case design. This week, we cover one of them: _equivalence partitioning_.
+<div id="{{ slugify("Test Cases: Equivalence Partitioning") }}" >
+Next, a heuristic used for improving the quality of test cases.
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Boundary Value Analysis") }}" >
-Last week, we learned about _equivalence partitions_, a heuristic for improving E&E of testing. This week, let us learn another heuristic that builds on top of equivalence partitioning.
+<div id="{{ slugify("Test Cases: Boundary Value Analysis") }}" >
+Previously, you learned about _equivalence partitions_, a heuristic for dividing the possible test cases into partitions. But which test cases should we pick from each partition? Next, let us learn another heuristic which can addresses that problem.
+</div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Combining Multiple Test Inputs") }}" >
@@ -509,6 +519,10 @@ As you start adding new code to the tP, let's also become aware of various appro
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Continuous Integration/Deployment") }}">
 **Modern software projects, and your tP, make heavy use of build/CI/CD tools** The topics below give you an overview of those tools, to prepare you to start using them yourself.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Automating the Build Process") }}">
+As your project gets bigger and changes become more frequent, it's natural to look for ways to automate the many steps involved in going from the code you write in the editor to an executable product. This is a good time to start learning about that aspect too.
 </div>
 <!-- ==================================================================================================== -->
                                     Models/UML
@@ -628,7 +642,7 @@ The only examinable thing is ==the term== _SOLID principles_.
 <div id="{{ slugify("Design Patterns") }}">
 Previously, you learned:
 * Three basic design quality aspects: abstraction, coupling, cohesion
-* Two design principles that aims to improve those aspects: SRP, SoC. <span tags="m--cs2113">There are many more principles but we covered only two (to reduce workload) just to give you a taste only.</span>
+* Some design principles that aims to improve those aspects (e.g., Single Responsibility Principle). <span tags="m--cs2113">There are many more principles but we covered only two (to reduce workload) just to give you a taste only.</span>
 
 **This week, we cover _design patterns_, a concept that builds upon the above**. <span tags="m--cs2113">Again, we limit to only two of them, for similar reasons.</span>
 </div>
@@ -638,7 +652,7 @@ First, let's learn what _design patterns_ are, in general.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Singleton pattern") }}">
-Given next are **two simple design patterns**: _singleton_ and _facade_.
+Now that you know what _design pattern_ is, let's learn a few example design patterns.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Architecture") }}" >

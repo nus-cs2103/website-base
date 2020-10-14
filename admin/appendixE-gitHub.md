@@ -226,7 +226,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 </div>
 <div id="workflow-after-v11">
 
-**After following the given workflow for at least <tooltip content="i.e., until the end of {{ version_first }}">one iteration</tooltip>, you can reduce process rigor** to suit your team's pace. Here are some examples:
+**After following the given workflow for at least <tooltip content="i.e., until the end of {{ version_first }}">one iteration</tooltip>, optionally, you may adjust the process rigor** to suit your team's pace. Here are some examples:
 
 * **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain.<br>
   It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
@@ -234,7 +234,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 * **Reduce automated checks**: You can also reduce the rigor of checkstyle checks to expedite PR processing.
 
-* **Switch to a lighter workflow**: While _forking workflow_ is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. However, we still recommend that you use PR reviews, at least for PRs affecting others' features.
+* **Switch to a lighter workflow**: While _forking workflow_ is the safest (and is recommended), it is also rather heavy. You may switch to a simpler workflow if the forking workflow if you wish. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. Even if you do switch, we still recommend that you use PR reviews, at least for PRs affecting others' features.
 
 * If you are unsure if a certain adjustment is allowed, you can check with the teaching team first.
 

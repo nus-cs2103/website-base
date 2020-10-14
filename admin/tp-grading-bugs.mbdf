@@ -64,7 +64,7 @@ These are considered _functionality bugs_:<br>
 * Symbols used are not intuitive
 * Indiscriminate use of double-headed arrows
 * <tooltip content="e.g., the sequence diagram showing interactions between main components">_architecture-level_</tooltip> diagrams contain lower-level details
-* Description given are not usufficiently high-level
+* Description given are not sufficiently high-level
 </span>
 <span id="umlDiagramBugs">
 
