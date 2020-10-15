@@ -39,8 +39,7 @@ week9: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week10: [
-  {id: 'submit_post_lecture_quiz', graded: true},
-  {id: 'smoke_test_catcher', deadline: 'COMPULSORY', graded: true}
+  {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week11: [
   {id: 'submit_post_lecture_quiz', graded: true}

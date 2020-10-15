@@ -11,7 +11,7 @@
 
 #### {{ thumb(2) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
 
-* Evaluate the given sample DG extracts, as guided by the tutor.
+* Evaluate the sample DG extracts (will be provided by the tutor), as guided by the tutor.
 * In particular, detect the following DG bugs (they are the same bugs that will be used when evaluating your final DG).
 
 {{ embed_topic("../../admin/tp-grading-bugs.mbdf#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}

@@ -43,7 +43,8 @@ week10: [
   {id: 'do_a_postmortem'},
   {id: 'adjust_process_rigor'},
   {id: 'start_on_the_penultimate_version'},
-  {id: 'update_dg_with_design_details', deadline: 'IMPORTANT'},
+  {id: 'update_dg_with_design_details'},
+  {id: 'smoke_test_catcher', deadline: 'COMPULSORY', graded: true},
   {id: 'do_a_release'}
 ],
 week11: [
