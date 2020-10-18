@@ -728,7 +728,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
    {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.<br>
    {{ icon_info }} If you encounter other problems at the app launch, refer to the [Notes on using the CATcher Desktop App](https://github.com/CATcher-org/CATcher/blob/master/docs/usage-notes.md).
 1. **Login**: Choose the _session_ `{{ module }}/T Alpha Test`, and submit.
-   <img src="../../admin/images/catcherLogin.png" />
+   <img src="images/catcherLogin.png" />
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.

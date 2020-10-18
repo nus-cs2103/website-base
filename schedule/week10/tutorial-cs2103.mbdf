@@ -2,14 +2,19 @@
 
 #### {{ thumb(1) }} Demonstrate an assertion failure
 
-1. Demonstrate an assertion failure using Intellij.
-   1. Modify the code of your tP to deliberately cause an assertion failure<br>
-      e.g., add `assert false: "this line causes an assertion failure";`{.java} to your code.
-   1. Run the code so that the application crashes with an assertion failure.
-   1. Take a screenshot and paste in the tutorial workspace document.
-1. Give an example of defensive programming from AB3 or your tP.
+* Demonstrate an assertion failure using Intellij.
+1. Modify the code of your tP to deliberately cause an assertion failure<br>
+e.g., add `assert false: "this line causes an assertion failure";`{.java} to your code.
+1. Run the code so that the application crashes with an assertion failure.
+1. Take a screenshot and paste in the tutorial workspace document.
 
-#### {{ thumb(2) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
+
+#### {{ thumb(2) }} Give examples of defensive programming
+
+* Give an example of defensive programming from AB3 or your tP.
+
+
+#### {{ thumb(3) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
 
 * Evaluate the sample DG extracts (will be provided by the tutor), as guided by the tutor.
 * In particular, detect the following DG bugs (they are the same bugs that will be used when evaluating your final DG).
