@@ -4,7 +4,7 @@
 
 * Demonstrate an assertion failure using Intellij.
 1. Modify the code of your tP to deliberately cause an assertion failure<br>
-e.g., add `assert false: "this line causes an assertion failure";`{.java} to your code.
+   e.g., add `assert false;`{.java} somewhere in your code.
 1. Run the code so that the application crashes with an assertion failure.
 1. Take a screenshot and paste in the tutorial workspace document.
 

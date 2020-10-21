@@ -303,6 +303,18 @@ When working with Git, sooner or later you will face a problem called _merge con
 **These are two workflows that are riskier (but simpler) than the forking flow**. After following the forking flow for a while, you may switch to one of these, but at your own risk.
 </div>
 <!-- ==================================================================================================== -->
+                                     Implementation
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("Reuse") }}">
+Do you know the difference between a _library_ and a _framework_?
+
+Programmers often reuse code in various ways. The next few topics aim to clarify the difference between several forms reusable software comes in.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Cloud Computing") }}">
+While not examinable, the next few sections explain some basic cloud computing concepts that are relevant to software engineers.
+</div>
+<!-- ==================================================================================================== -->
                                      IDEs
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("IDEs: Basic Features") }}">
@@ -328,10 +340,14 @@ In case you are the type who want to become a 'power user' of IDEs (it's not a b
 <!-- ==================================================================================================== -->
                                      Code Quality
 <!-- ==================================================================================================== -->
+<div id="{{ slugify("Code Quality: Guidelines") }}">
+Next, let's learn about some guidelines that can apply to improve the quality of your code.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Code Quality: Coding Standards") }}">
 As you know, one of the objectives of the iP is to raise the quality of your code. We'll be learning about various ways to improve the code quality in the next few weeks, starting with coding standards.
 </div>
-
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("codeQuality-introduction-basic") }}">
 <div tags="m--cs2103">
 
@@ -350,6 +366,10 @@ Continuing our theme on _code quality_, given below is another aspect of it: _re
 Knowing code-quality guidelines is useful for sure, but how do we improve the code quality of existing code in a systematic and safe way? That's where the next topic comes in.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Code Quality: Refactoring (Revisited)") }}">
+The topic of _refactoring_ was covered in an ealier week. We ==repeat the topic below for your convenience== as you'll need to refactor your code when applying the code quality guidelines given above.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Code Quality: Unsafe Practices") }}">
 Another step in our journey to improve code quality: Let's learn some legit but _unsafe_ practices we should avoid.
 </div>
@@ -364,6 +384,10 @@ Another step in our journey to improve code quality: Let's learn some legit but 
 So far, your iP may have assumed a 'perfect world' e.g., user input is always in the expected format. To make the product ready for the not-so-perfect real world, the code should be able to handle error conditions. Let's learn how to do that.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Error Handling: Logging and Assertions") }}">
+Previously, you learned how to use exceptions to handle errors. Here are two more techniques that can help with the error handling aspect of programming.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Logging") }}">
 Given next are **two techniques that help you locate problems in the code**: _logging_, and _assertions_
 </div>
@@ -375,7 +399,7 @@ You already know some techniques (e.g., exceptions, assertions) to make the code
                                     Documentation
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("Writing Developer Documents") }}">
-As you will be updating the design details in your tP DG, here are some guidelines to help you with that.
+As you will be updating documentation of your project soon, here are some guidelines to help you with that.
 </div>
 <!-- ==================================================================================================== -->
                                     Testing
@@ -462,12 +486,14 @@ Previously, you learned about _equivalence partitions_, a heuristic for dividing
 </div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
+<div id="{{ slugify("Test Cases: Combining Multiple Inputs") }}" >
 <div id="{{ slugify("Combining Multiple Test Inputs") }}" >
-The number of test cases can increase when a the SUT takes multiple inputs. Let's have a brief peek into how we can deal with such situations.
+Earlier, you learned <tooltip content="Equivalence Partitioning, Boundary Value Analysis">two heuristics</tooltip> that can improve the test case quality. Even when applying them, the number of test cases can increase when a the SUT takes multiple inputs. Let's see how we can deal with such situations.
+</div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Other QA Techniques") }}" >
-Testing is not the same as Quality Assurance. What else can be done for QA?
+Testing is the first thing that comes to mind when you hear 'Quality Assurance' but there are other QA techniques that can complement testing. Let's first take a step back and take a look at QA in general, followed by a look at some other QA techniques.
 </div>
 <!-- ==================================================================================================== -->
                                     Project Mgt
@@ -540,16 +566,36 @@ This module covers only two types of diagrams: class/object diagrams (CD/OD) -- 
 
 We recommend you ==try the relevant post-lecture quizzes as you read each sections== below. In these quizzes, you will  be able to see the answers immediately after completing the quiz.
 </div>
+<div tags="m--tic4001">
+
+Lets' refresh our memory about Class/Objet Diagrams, starting with the basics.
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Followup Class/Object Diagrams: Basics") }}">
+<div tags="m--tic4001">
+
+Here is a worked examples covering the drawing of class/object diagrams using the basic notations:
+{{ panopto("88a6d3bc-7bbb-4566-a035-ac4100ce1085", desc="[Example] Box, Item, Lid") }}
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Class/Object Diagrams: Intermediate") }}">
 
 Having learned class/object diagrams basics, we can now move on to some intermediate CD/OD notations.
 
+<div tags="m--tic2002">
+
 But first, **try this CD/OD drawing example/exercise (solution provided)**.
 
 {{ panopto("88a6d3bc-7bbb-4566-a035-ac4100ce1085", desc="[Example] Box, Item, Lid") }}
-
+</div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Followup Class/Object Diagrams: Intermediate") }}">
+Now, you can try these worked examples:
+{{ panopto("052aa055-c89f-4dbf-af24-ac4000f175e0", desc="Class/object diagrams (intermediate) - `Action`, `Task`, `History`") }}
+{{ panopto("f4f7e1f2-60a4-4d18-b70a-ac4000f17608", desc="Class/object diagrams (intermediate) - `Person`, `Inbox`, `Message`") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("modeling-modelingStructures-objectDiagrams") }}">
@@ -561,10 +607,22 @@ But first, **try this CD/OD drawing example/exercise (solution provided)**.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Sequence Diagrams: Basics") }}">
+<div tags="m--cs2113">
+
 Good news: this will the the last installment of UML notations.<br>
 Bad news: we are going to cover an entire new diagram type in one go (reason: to give you more time to use them in project documentation).
+</div>
 
-**Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, CD/OD's that you learned in the past two weeks model _structural_ aspects.
+**Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, class/object diagrams that you learned earlier model _structural_ aspects.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Followup Sequence Diagrams: Basics") }}">
+<div tags="m--tic2002">
+
+Now that you know the basic notations for the sequence diagrams, here is a worked example of drawing sequence diagrams (basic notation) to match a code snippet.
+
+{{ panopto("fe9d362e-4e3d-4c30-81ec-ac5a00cf8d95", desc="Sequence diagrams (basic) - `Item` creation") }}
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("OO Domain Models") }}">
@@ -587,6 +645,10 @@ Activity diagrams is the last UML diagram type you'll be learning in this module
 Here is an example that shows the steps of drawing an activity diagram to match a given workflow.
 
 {{ panopto("1cc77229-f9d3-482e-b7e5-ac53003984e5", desc="Activity diagram for the do-while loop") }}
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Other UML Models") }}">
+To complete the picture about UML, given below are a peek into the other types of UML diagrams.
 </div>
 <!-- ==================================================================================================== -->
                                    Design
@@ -655,8 +717,27 @@ First, let's learn what _design patterns_ are, in general.
 Now that you know what _design pattern_ is, let's learn a few example design patterns.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("More Design Patterns") }}">
+Previously, you learned about design patterns, and a some example design patterns. Let's continue that journey this week.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("designPatterns-modelViewController-what") }}">
+First, let's learn two more widely-cited design patterns.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("designPatterns-more-otherDesignPatterns") }}">
+Given below are a few more topics that continue the theme of design patterns, but have been made optional to reduce the module workload.</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Architecture") }}" >
 **While _architecture_ is not of high importance to a small project such as the tP, it is good to know a little bit about it** in case you are thrown into a larger project in future.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Architectural Styles") }}" >
+The next topic is like 'design patterns at architecture level'. In fact, the MVC pattern you saw earlier comes close to this category too.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("followup Architectural Styles") }}" >
+As with design patterns, we covered only a few architecture styles. Although you didn't have to design an architecture in the tP, knowing the existence of these styles might come in handy in your future projects.
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("designApproaches-multilevelDesign-what") }}" >

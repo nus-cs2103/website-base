@@ -7,7 +7,7 @@
 
 {{ icon_project }} **Project:**
 1. Add individual feature 1
-1. Implement increments `Level-9`, `A-CodingStandard`, `A-CodeQuality`, `A-Libraries` <span class="badge badge-pill badge-secondary">optional</span>
+1. Implement increments `Level-9`, `A-CodingStandard`, `A-CodeQuality`
 {% endcall %}
 
 <!-- ==================================================================================================== -->
@@ -40,7 +40,8 @@ digit | option 1                             | option 2                         
 9     | {{ ilink('B-DetectAnomalies') }}     | {{ ilink('C-MassOps') }}            | {{ ilink('B-ViewSchedules') }}
 </div>
 
-#### {{ thumb(2) }} Implement increments `Level-9`, `A-CodingStandard`, `A-CodeQuality`, `A-Libraries` <span class="badge badge-pill badge-secondary">optional</span>
+#### {{ thumb(2) }} Implement increments `Level-9`, `A-CodingStandard`, `A-CodeQuality`
+
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-9`: Find**" var-fragment="text.md#Level-9" />
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-CodingStandard`: Coding Standard**" var-fragment="extensions.mbdf#A-CodingStandard" />
@@ -53,6 +54,5 @@ digit | option 1                             | option 2                         
 
 ↳ The code quality guidelines to follow are given [here](../../se-book-adapted/chapters/codeQuality.html).
 </div>
-<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Libraries`: Libraries**" var-tag="optional" var-fragment="extensions.mbdf#A-Libraries" />
 </div>
 </div>

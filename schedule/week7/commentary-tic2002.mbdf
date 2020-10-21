@@ -4,4 +4,5 @@
 {{ topic_preamble("OOP + Java: Enumerations") }}
 {{ topic_preamble("Java: File Access") }}
 {{ topic_preamble("Class/Object Diagrams: Intermediate") }}
+{{ topic_followup("Class/Object Diagrams: Intermediate") }}
 {{ topic_preamble("Design: Fundamentals") }}

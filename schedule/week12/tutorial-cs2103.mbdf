@@ -2,6 +2,12 @@
 
 {% from "common/macros.njk" import embed_topic with context %}
 
+<box type="info">
+
+**No tutorial this week.** Suggestion: use this time to work on the project with team members.
+</box>
+
+<!--
 #### {{ thumb(1) }} Demo rehearsal
 
 * Do a project demo dry run (as per project demo instructions given below) for your tutor.
@@ -19,3 +25,4 @@
   * XP rules are described at [http://www.extremeprogramming.org/rules.html](http://www.extremeprogramming.org/rules.html)
 
 * Relate those features to your project. %%i.e. are they applicable? are you doing something similar?%%
+-->
