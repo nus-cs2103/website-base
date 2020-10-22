@@ -26,18 +26,16 @@ You may release a newer version to be used for the PE dry run, but make sure it 
   <include src="../../book/testCaseDesign/combiningTestInputs/mix/q-testCasesForConsumeMethod.md" />
 </div>
 -->
-#### {{ thumb(2) }} Exercise: Boundary values
+#### {{ thumb(1) }} Exercise: Equivalence partitions, boundary values
 
-* Do the following exercise yourself (e.g., in a word document) and copy-paste the answer in the tutorial submission file.
+* Do the following exercise as directed by the tutor.
 
 <div class="indented-level2">
   <include src="../../book/testCaseDesign/summary/exercises/q-essay-dayParameter.md" />
 </div>
 <br>
 
-* Discuss the answer, as guided by the tutor.
-
-#### {{ thumb(3) }} Exercise: Equivalence partitions
+#### {{ thumb(2) }} Exercise: Combining multiple test inputs
 
 * Do the following exercise similar to the previous one.
 
@@ -45,3 +43,17 @@ You may release a newer version to be used for the PE dry run, but make sure it 
   <include src="../../book/testCaseDesign/combiningTestInputs/mix/q-testCasesForConsumeMethod.md" />
 </div>
 <br>
+
+#### {{ thumb(3) }} Exercise: Apply design pattern
+
+* Do the following exercise similar to the previous one.
+
+<div class="indented-level2">
+  <include src="../../book/designPatterns/more/combiningDesignPatterns/q-essay-getNotified.md" />
+</div>
+<br>
+
+#### {{ thumb(4) }} Exercise: Patterns in the tP
+
+1. Does AB3 use the _MVC_ pattern?
+1. Does AB3 use the _observer_ pattern?
