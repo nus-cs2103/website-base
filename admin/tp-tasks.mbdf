@@ -732,7 +732,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
-1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
+1. **Use the app (not the GitHub Web interface) to create 1-2 dummy bug reports**. The steps are similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
    {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
    {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
    {{ icon_info }} The `severity` and `type` labels are compulsory.
