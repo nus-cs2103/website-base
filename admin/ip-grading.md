@@ -24,11 +24,11 @@
   * Has some JUnit tests{% endif %}
 
 **Project Management [`{{ marks_ip_pm }}` marks]**: To get full marks, you should achieve,
-* Submit _some_ deliverables in at least 4 out of the 6 iP weeks (i.e., week 2 - week {{ ip_last_week }})
+* Submit _some_ deliverables in at least 4 out of the {{ '5' if cs2103 else '6' }} iP weeks (i.e., week 2 - week {{ '6' if cs2103 else '7' }})
 * Follow other requirements specified (e.g., how to use Git/Github for each increment, do peer reviews) in at least 4 weeks
 
 **Documentation [`{{ marks_ip_documentation }}` marks]**: To get full marks, you should achieve,
-* The product web site and the user guide is reasonable
+* The product web site and the user guide is _reasonable_ (i.e., functional, not hard to read, covers all features, no major formatting errors in the published view).
 
 <box type="tip" seamless>
 

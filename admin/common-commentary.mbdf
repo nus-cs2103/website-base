@@ -488,7 +488,7 @@ Previously, you learned about _equivalence partitions_, a heuristic for dividing
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Test Cases: Combining Multiple Inputs") }}" >
 <div id="{{ slugify("Combining Multiple Test Inputs") }}" >
-Earlier, you learned <tooltip content="Equivalence Partitioning, Boundary Value Analysis">two heuristics</tooltip> that can improve the test case quality. Even when applying them, the number of test cases can increase when a the SUT takes multiple inputs. Let's see how we can deal with such situations.
+Earlier, you learned <tooltip content="Equivalence Partitioning, Boundary Value Analysis">two heuristics</tooltip> that can improve the test case quality. Even when applying them, the number of test cases can increase when the SUT takes multiple inputs. Let's see how we can deal with such situations.
 </div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->

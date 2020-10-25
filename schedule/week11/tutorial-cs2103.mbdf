@@ -56,4 +56,4 @@ You may release a newer version to be used for the PE dry run, but make sure it 
 #### {{ thumb(4) }} Exercise: Patterns in the tP
 
 1. Does AB3 use the _MVC_ pattern?
-1. Does AB3 use the _observer_ pattern?
+1. Does AB3 use the _Observer_ pattern?

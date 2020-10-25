@@ -661,6 +661,18 @@ In addition,
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
 <span id="desc_update_dg_with_design_details">
 
+<div class="indented-level2">
+
+<panel type="info" header="Why the hurry to update documents? Why not wait till the implementation is finalized?" minimized>
+
+* We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
+
+* Wt is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
+
+* It allows receiving early self/peer/instructor feedback.
+</panel>
+</div>
+
 * **Update the Developer Guide** as follows:
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
     Expected length: 1+ page per person{% if module == "CS2113" or module == "TIC4001" %}
