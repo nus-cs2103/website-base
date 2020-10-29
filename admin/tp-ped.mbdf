@@ -26,7 +26,11 @@
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">During the session</span>
 
-**Test the product and report bugs** as described below.
+**Join the zoom session of the regular lecture** (you ==must attend the lecture _officially_ allocated== to you -- you are not allowed to attend an alternative lecture slot this week).
+
+**Use MS Teams (not Zoom) to contact prof** if you need help during the session. Use Zoom chat only if you don't get a response via MS Teams.
+
+**Test the product and report bugs** as described below, when the prof informs you to begin testing.
 
 <variable name="pe_active_tab">0</variable>
 

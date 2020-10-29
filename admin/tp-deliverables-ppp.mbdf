@@ -30,9 +30,8 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 </box>
 </div>
 
-* **[Optional] Contributions to the User Guide (Extracts)**: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
-%%The purpose of allowing you to include _proposed_ features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.%%
-* **[Optional] Contributions to the Developer Guide (Extracts)**: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.
+* **[Optional] Contributions to the Developer Guide (Extracts)**: Reproduce the parts in the Developer Guide that you wrote. Alternatively, you can show the various diagrams you contributed.
+* **[Optional] Contributions to the User Guide (Extracts)**: Reproduce the parts in the User Guide that you wrote.
 
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Format</span>
 

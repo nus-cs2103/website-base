@@ -16,7 +16,8 @@
 * The main content you add should be in the `docs/UserGuide.md` file (for ease of tracking by grading scripts).
 * **Should cover all {{ version_final }} features**.<br>
   **Ensure those descriptions match the product precisely**, as it will be used by {{ "peer" if has_pe }} testers (==inaccuracies will be considered bugs==).
-* **Optionally, can also cover future features**. Mark those as `Coming soon`.
+* **Optionally, can also cover future features**. Mark those as `Coming soon`.{% if not tic4001 %}
 * Also note the following constraint:
 
   {{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Contstraints → Constraint-File-Size", "2", indent="2") }}
+{% endif %}

@@ -192,7 +192,7 @@ Another thing you need to do in your project soon is reading from and writing to
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: JAR files") }}">
-This week, you'll be packaging your iP as a single executable file. The next topic covers how to do that.
+At some point, you want to package your code as a single executable file. The next topic covers how to do that.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Varargs") }}">
@@ -200,7 +200,11 @@ While the next few topics are optional, we recommend that you ==have a quick loo
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: JavaFX") }}">
-**JavaFX is not required for this module** as we strongly discourage you from creating a GUI app. If you are still interest to learn JavaFX, you can refer to the JavaFX tutorial in the [repo you used for the iP]({{ url_module_org }}/{{ ip_repo_name }}#tutorials) (reason: the tutorials in the section below are outdated).
+**JavaFX is not required for this module**<span tags="m--cs2113"> as we strongly discourage you from creating a GUI app</span>. If you are still interest to learn JavaFX, given below is a link to some tutorials.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: Streams") }}">
+**Streams is an advanced Java feature** not required for this module. If you are still interest to learn it, some resources are given below.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("cppToJava-junit-basic") }}">
@@ -612,17 +616,33 @@ Now, you can try these worked examples:
 Good news: this will the the last installment of UML notations.<br>
 Bad news: we are going to cover an entire new diagram type in one go (reason: to give you more time to use them in project documentation).
 </div>
+<div tags="m--tic4001">
+
+As with the class/object diagrams, **let us refresh our memory of the sequence diagrams notations** that you learned in TIC2002.
+</div>
+<div tags="m--cs2103 m--tic2002">
 
 **Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, class/object diagrams that you learned earlier model _structural_ aspects.
 </div>
+</div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Followup Sequence Diagrams: Basics") }}">
-<div tags="m--tic2002">
+<div tags="m--tic2002 m--tic4001">
 
 Now that you know the basic notations for the sequence diagrams, here is a worked example of drawing sequence diagrams (basic notation) to match a code snippet.
 
 {{ panopto("fe9d362e-4e3d-4c30-81ec-ac5a00cf8d95", desc="Sequence diagrams (basic) - `Item` creation") }}
 </div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Sequence Diagrams: Intermediate") }}">
+Earlier, you learned the basic syntax used in sequence diagrams. Now, let's learn some intermediate syntax.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Followup Sequence Diagrams: Intermediate") }}">
+Here is a worked example of drawing sequence diagrams (intermediate notation) to match a code snippet.
+
+{{ panopto("3e47c3c3-60db-4e2f-a15f-ac4100ce10c4", desc="Sequence diagrams (intermediate) - `TaskList#generateTask()`") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("OO Domain Models") }}">
