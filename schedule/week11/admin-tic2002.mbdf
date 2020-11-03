@@ -3,6 +3,8 @@
 
 
 {% call show_admin_summary() %}
+1. Submit the quiz
+
 {{ icon_project }} **Project:**
 1. Improve the individual feature (or add another)
 1. Implement increments `Level-10`<span class="badge badge-pill badge-secondary">optional</span>, `A-Assertions`, `A-Jar`

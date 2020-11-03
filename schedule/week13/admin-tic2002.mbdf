@@ -3,7 +3,6 @@
 
 
 {% call show_admin_summary() %}
-1. Attend the mock review {{ timing_badge("during lecture", "info") }}
 
 {{ icon_project }} **Project:**
 1. Submit the project {{ timing_badge("Monday 2359") }}

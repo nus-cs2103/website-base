@@ -3,6 +3,8 @@
 
 
 {% call show_admin_summary() %}
+1. Submit the quiz
+
 {{ icon_project }} **Project:**
 1. Finish up the project coding
 1. Prepare the final submission

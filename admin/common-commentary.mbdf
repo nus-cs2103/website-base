@@ -496,8 +496,10 @@ Earlier, you learned <tooltip content="Equivalence Partitioning, Boundary Value 
 </div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
+<div id="{{ slugify("Quality Assurance") }}" >
 <div id="{{ slugify("Other QA Techniques") }}" >
 Testing is the first thing that comes to mind when you hear 'Quality Assurance' but there are other QA techniques that can complement testing. Let's first take a step back and take a look at QA in general, followed by a look at some other QA techniques.
+</div>
 </div>
 <!-- ==================================================================================================== -->
                                     Project Mgt
