@@ -600,8 +600,9 @@ But first, **try this CD/OD drawing example/exercise (solution provided)**.
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Followup Class/Object Diagrams: Intermediate") }}">
 Now, you can try these worked examples:
-{{ panopto("052aa055-c89f-4dbf-af24-ac4000f175e0", desc="Class/object diagrams (intermediate) - `Action`, `Task`, `History`") }}
-{{ panopto("f4f7e1f2-60a4-4d18-b70a-ac4000f17608", desc="Class/object diagrams (intermediate) - `Person`, `Inbox`, `Message`") }}
+{{ panopto("052aa055-c89f-4dbf-af24-ac4000f175e0", desc="Drawing class/object diagrams (intermediate) - `Action`, `Task`, `History`") }}
+{{ panopto("f4f7e1f2-60a4-4d18-b70a-ac4000f17608", desc="Drawing class/object diagrams (intermediate) - `Person`, `Inbox`, `Message`") }}
+{{ panopto("e05845ed-8c70-47d9-a4d0-ac6800d58224", desc="Drawing class/object diagrams (intermediate) - `Person`, `Project`, `Task`") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("modeling-modelingStructures-objectDiagrams") }}">
@@ -644,7 +645,8 @@ Earlier, you learned the basic syntax used in sequence diagrams. Now, let's lear
 <div id="{{ slugify("Followup Sequence Diagrams: Intermediate") }}">
 Here is a worked example of drawing sequence diagrams (intermediate notation) to match a code snippet.
 
-{{ panopto("3e47c3c3-60db-4e2f-a15f-ac4100ce10c4", desc="Sequence diagrams (intermediate) - `TaskList#generateTask()`") }}
+{{ panopto("3e47c3c3-60db-4e2f-a15f-ac4100ce10c4", desc="Drawing sequence diagrams (intermediate) - `TaskList#generateTask()`") }}
+{{ panopto("c4856a68-4c30-4f9c-8efa-ac6800d581f2", desc="Drawing sequence diagrams (intermediate) - create `Quote`") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("OO Domain Models") }}">

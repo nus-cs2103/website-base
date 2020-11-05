@@ -118,7 +118,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   //Solution below adapted from https://stackoverflow.com/a/16252290
   {Your implmentation of the reused solution here ...}
   ```
-* If you copy-pasted a non-trivial code block (possibly with minor modifications %%renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags">`@@author` tags</trigger>)<br>
+* If you copy-pasted a non-trivial code block (possibly with minor modifications %%renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags">`@@author` tags</trigger> with the ==`-reused`== suffix)<br>
   Format:
   ```java
   //@@author {yourGithubUsername}-reused

@@ -55,9 +55,10 @@
 
 <box background-color="white" border-color="red">
 
-**Remind yourself of the project grading criteria:**
+**Remind yourself of the project grading criteria and our policy on reuse** (e.g., ==how to give credit for reused code==):
 
 <panel type="seamless" src="tp-grading.md#main" header="%%Admin {{ icon_embedding }} tP → Grading%%" class="embedding" />
+<panel type="seamless" src="appendixB-policies.md#policy-reuse" header="%%Admin {{ icon_embedding }} Policy on reuse%%" class="embedding" />
 </box>
 </span>
 {#====================================================================================================================
@@ -1025,6 +1026,14 @@ Not applicable this semester
 **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
 
 **Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+</box>
+
+<box type="info" seamless>
+
+**The icon {{ icon_team }} indicates team submissions.** Only one person need to submit on behalf of the team but we recommend that ==others help verify the submission is in order== i.e., the responsibility for (and any penalty for problems in) team submissions are best shared by the whole team rather than burden one person with it.
+
+The icon {{ icon_individual }} indicates individual submissions.
+
 </box>
 </div>
 
