@@ -63,7 +63,7 @@
 * Put the downloaded jar file ==in an empty folder==.
 * Open a command window. Run the `java -version` command to ensure you are using Java 11.
 * Launch the jar file ==using the `java -jar` command== (do not use double-clicking).
-* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via Gitter or Zoom chat) to receive a _fallback_ team to test.
+* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via MS Teams, and failing that, via Zoom chat) to receive a _fallback_ team to test.
 
 
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
@@ -108,7 +108,7 @@
 {{ embed_topic("tp-grading-bugs.mbdf#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3", indent="2") }}
 
 
-* Do not post suggestions but if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`.
+* Do not post suggestions but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`.
 {{ embed_topic("tp-grading-bugs.mbdf#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3", indent="2") }}
 
 * You may also report UG bugs.

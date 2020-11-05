@@ -7,7 +7,7 @@
 **Objectives:**
 * The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
 * PE is also ==used to evaluate your manual testing skills, product evaluation skills, effort estimation skills== etc.
-* Note that significant project components are ==not graded solely based on peer ratings==. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
+* Note that significant project components are ==not graded solely based on peer ratings==. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutors' grades with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
 * PE is ==not a means of _pitting you against each other_==. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
 
 **Grading**:
@@ -35,31 +35,23 @@
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
 
-<box type="important" light icon=":fas-exclamation-circle:" icon-size="2x">
+<box type="important" icon=":fas-exclamation-circle:" seamless>
 
-**PE Phase 1 is an 'exam', to be done under exam conditions:**
-* You are not allowed to communicate with others (except the invigilators).
-* You are not allowed to share your work with others.
-* Violators will be reported to the university for disciplinary action.
+**PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.
 
-</box>
-
-<box type="info" light>
-
-**Online channels used for the PE**:
-* ****Gitter****:
-  * Prof will be online in [Gitter](https://gitter.im/nus-{{ module | lower }}-{{ semester }}/community).
-  * ==Direct all your queries to prof as private messages to `@damithc`. <span class="text-danger">Do not use the public chat channel</span> .== If you use the main channel, you might accidentally reveal which team you are testing.
-* ****Zoom****:
-  * There will be a Zoom meeting (details will be announced later) to provide you with audio announcements.
-  * Join it and **keep the speaker** on during the PE session so that you can hear our announcements.
-  * You can use it to chat with the prof (but Gitter is preferred for chatting as it's harder to post screenshots in Zoom chats).
-  * You will not be able to share your screen, share your cam, or talk to us.
-
+* **Proctoring will be done via Zoom.** No admission if the requirements are not met (e.g., display name, camera placement).
+* **Recording the screen is not required.**
+* **Only one screen is allowed.**
+* **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
+* **Use MS Teams (not Zoom) private messages to communicate with the prof.** Fall back on Zoom chat only if you didn't receive a reply via MST.
+* **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
+* **Do not visit any website other than LumiNUS.** In particular, do not visit GitHub. If you need to visit a website, please ask for permission first.
+* **Do not use any other software running** in the background e.g., telegram chat
 
 </box>
 
-* **When, where**: Week 13 lecture slot
+
+* **When, where**: Week 13 lecture slot. Use the same Zoom link used for the regular lecture.
 
 ##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
 
@@ -258,7 +250,7 @@ Duplicate of #67
 
 **Type** labels:
 * `type.FunctionalityBug`: A functionality does not work as specified/expected.
-* `type.FeatureFlaw`: Some functionality missing from a feature delivered in {{ version_final }} in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of {{ version_final }} features. These issues are counted against the _product design_ aspect of the project.
+* `type.FeatureFlaw`: Some functionality missing from a feature delivered in {{ version_final }} in a way that the feature becomes less useful to the intended target user for _normal_ usage. i.e., the feature is not 'complete'. In other words, an acceptance-testing bug that falls within the scope of {{ version_final }} features. These issues are counted against the _product design_ aspect of the project.
 * `type.DocumentationBug`: A flaw in the documentation %%e.g., a missing step, a wrong instruction, typos%%
 </box>
 </div>
