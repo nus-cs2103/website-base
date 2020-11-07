@@ -15,6 +15,7 @@
 1. **Tools: LumiNUS, Zoom, Microsoft Teams (MST), PDF scanner**, PDF reader.
 1. ==**Recording of your PC screen** is not required.==
 1. **Only one computer screen** is allowed.
+1. **Not allowed to take printouts during the exam.**
 1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed.
 1. **The Browser should only be used to access LumiNUS.** Accessing other websites (including the module website) is not allowed.
 1. **Use Microsoft Teams (not Zoom) private messages to communicate with the prof**. Use Zoom PM only if you don't get a response via MST.
