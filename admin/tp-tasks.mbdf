@@ -1011,7 +1011,8 @@ Not applicable this semester
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
   * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%e.g. broken links, outdated diagrams/instructions etc.%%.
 * **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _freeze_ period.
-  * You can update issues/milestones/PRs even during the _freeze_ period.
+  * You can update issues/milestones/PRs even during the _freeze_ period.{% if cs2113 or cs2103 %}
+  * [{{ module }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.{% endif %}
   * You can update the code during the freeze period if the change is related to a late submission approved by us.
   * You can continue to evolve your repo after the freeze period.
 
@@ -1040,7 +1041,7 @@ The icon {{ icon_individual }} indicates individual submissions.
 * {{ icon_team }} **Product**:
   * Do a release on GitHub, tagged as `{{ version_final }}`.
   * Upload the jar file to LumiNUS.<br>
-    File name: `[team ID][product name].jar` %%e.g. [{{ example_team_id }}][ContactsPlus].jar%%
+    File name: `[team ID][product name].jar` %%e.g. [{{ example_team_id }}][Contacts Plus].jar%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
 

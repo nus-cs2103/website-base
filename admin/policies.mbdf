@@ -144,7 +144,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   ```
 <div tags="m--cs2103">
 
-**Giving credit to AB3 code**: If your project started with the AB3 code and your new code follows a design similar to AB3, that doesn't mean you need to credit AB3 -- this is because new code is _expected_ to follow existing code where possible, in the interest of consistency. However, don't take credit for existing AB3 code unless you have modified them substantially.
+**Giving credit to AB3 code**: If your project started with the AB3 code and your new code follows a design similar to AB3, that doesn't mean you need to credit AB3 -- this is because new code is _expected_ to follow existing code where possible, in the interest of consistency. However, don't take credit for existing AB3 code (i.e., ensure such code doesn't appear under your name in the tP code dashboard) unless you have modified them substantially.
 </div>
 </box>
 

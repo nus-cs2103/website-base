@@ -122,7 +122,7 @@ These are considered _functionality bugs_:<br>
 * The three types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components. The penalty/credit can vary based on the bug type. %%Given that you are not told which type has a bigger impact on the grade, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.%%
 * The penalty for a bug is divided equally among assignees.
 * Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.
-* <tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit for the tester and slightly penalty for the developer.
+* <tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit for the tester and slightly higher penalty for the developer.
 * If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means %%(e.g., performance in PE dry run)%% to calculate your marks for system/acceptance testing.
 * Your marks for developer testing depends on the _bug density_ rather than total bug count. Here's an example:
   * `n` bugs found in your feature; it is a big feature consisting of lot of code → 4/5 marks

@@ -45,8 +45,13 @@
 * **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.** Fall back on Zoom chat only if you didn't receive a reply via MST.
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
-* **Do not visit any website other than LumiNUS.** In particular, do not visit GitHub. If you need to visit a website, please ask for permission first.
+* **During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not visit websites and use software other than the following.** In particular, ==do not visit GitHub==. If you need to visit a different website or use another software, please ask for permission first.
+  * Website: LumiNUS
+  * Website: Module website %%(e.g., to look up PE info)%%
+  * Software: CATcher, any text editor, any screen grab software
+  * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
 * **Do not use any other software running** in the background e.g., telegram chat
+* **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
 
 </box>
 
