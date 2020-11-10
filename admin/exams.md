@@ -15,8 +15,9 @@
 1. **Tools: LumiNUS, Zoom, Microsoft Teams (MST), PDF scanner**, PDF reader.
 1. ==**Recording of your PC screen** is not required.==
 1. **Only one computer screen** is allowed.
-1. **Not allowed to take printouts during the exam.**
-1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed.
+1. **Not allowed to user the printer or other devices during the exam.**
+1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
+  You may use any hard copies or written materials too.
 1. **The Browser should only be used to access LumiNUS.** Accessing other websites (including the module website) is not allowed.
 1. **Use Microsoft Teams (not Zoom) private messages to communicate with the prof**. Use Zoom PM only if you don't get a response via MST.
 1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
@@ -42,7 +43,7 @@
   %%Reasons:<br>
   1\. to minimize opportunities for collusion<br>
   2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
-* Duration: 35 minutes (recommended: allocate 2 minutes per question, which gives you a 3 minutes buffer)
+* Duration: **{{ 45 if tic2002 else 35 }} minutes** <span tags="m--cs2103">(recommended: allocate 2 minutes per question, which gives you a 3 minutes buffer)</span>
 * You are required to give a justification for your answer. ==The question will specify what should be included in the justification. **Answers without the correct justification may not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) that do not have justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
 * Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">

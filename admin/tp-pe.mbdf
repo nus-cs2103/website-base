@@ -40,12 +40,16 @@
 **PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.
 
 * **Proctoring will be done via Zoom.** No admission if the requirements are not met (e.g., display name, camera placement).
+* **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true). e.g.,
+  * `[M48] John Doe` (`M18` is the seat number)
+  * `[M48][PC] John Doe` (if using two devices)
+* **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.
 * **Recording the screen is not required.**
 * **Only one screen is allowed.**
 * **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.** Fall back on Zoom chat only if you didn't receive a reply via MST.
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
-* **During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not visit websites and use software other than the following.** In particular, ==do not visit GitHub==. If you need to visit a different website or use another software, please ask for permission first.
+* **During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** In particular, ==do not visit GitHub==. If you need to visit a different website or use another software, please ask for permission first.
   * Website: LumiNUS
   * Website: Module website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab software
@@ -155,7 +159,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 This phase is for you to respond to the bug reports you received.
 
-Duration: The review period will start around 1 day after the PE (exact time to be announced) and will ==last for 3 days==. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
+Duration: The review period will start around 1 day after the PE (exact time to be announced) and will ==last for 2-3 days==. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
@@ -312,7 +316,7 @@ Duplicate of #67
 
 
 * This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.
-* **Deadline: Reading week Tuesday 2359** (i.e., within 3 days)
+* **Deadline: Reading week Thursday 2359** (i.e., within 2 days)
 * Procedure:
 
 <div class="indented-level2">
