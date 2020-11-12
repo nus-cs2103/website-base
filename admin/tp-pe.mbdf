@@ -44,6 +44,7 @@
   * `[M48] John Doe` (`M18` is the seat number)
   * `[M48][PC] John Doe` (if using two devices)
 * **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.
+* **In case of Zoom outage**, we'll fall back on MS Teams (MST). Make sure you have MST running and have joined the matching MST Team `CS2103_AY2021S1_12pm_lecture` or `CS2103_AY2021S1_4pm_lecture`.
 * **Recording the screen is not required.**
 * **Only one screen is allowed.**
 * **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
