@@ -47,6 +47,7 @@
 * **Recording the screen is not required.**
 * **Only one screen is allowed.**
 * **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
+* **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.** Fall back on Zoom chat only if you didn't receive a reply via MST.
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
 * **During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** In particular, ==do not visit GitHub==. If you need to visit a different website or use another software, please ask for permission first.

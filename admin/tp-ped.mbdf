@@ -62,6 +62,8 @@
 
 * Put the downloaded jar file ==in an empty folder==.
 * Open a command window. Run the `java -version` command to ensure you are using Java 11.
+* Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
+  {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
 * Launch the jar file ==using the `java -jar` command== (do not use double-clicking).
 * **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via MS Teams, and failing that, via Zoom chat) to receive a _fallback_ team to test.
 

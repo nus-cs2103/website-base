@@ -98,9 +98,9 @@ The file sizes of the deliverables should not exceed the limits given below. <br
 
 %%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue%%:</div>
 
-* <span class="text-danger">JAR file: 100Mb</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
+* <span class="text-danger">JAR file: 100MB</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
 
-* <span class="text-danger">PDF files: 15Mb/file</span> (Not following [the recommended method of converting to PDF format](https://se-education.org/guides/tutorials/savingPdf.html) can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).
+* <span class="text-danger">PDF files: 15MB/file</span> (Not following [the recommended method of converting to PDF format](https://se-education.org/guides/tutorials/savingPdf.html) can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).
 {%- endcall  %}
 
 -----------------------------------------------------------------------------------------------------------------------
