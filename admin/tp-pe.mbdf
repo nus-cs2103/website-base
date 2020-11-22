@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, get_date with context %}
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Overview</span>
 
@@ -44,7 +44,7 @@
   * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true)==. e.g.,
     * `[M48] John Doe` (`M18` is the seat number)
     * `[M48][PC] John Doe` (for the PC, if using a phone as well)
-  * **Set you camera** so that _all_ the following are visible:
+  * **Set your camera** so that _all_ the following are visible:
     * your head (side view)
     * the computer screen
     * the work area (i.e., the table top)<br>
@@ -166,9 +166,11 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
 
+==**Deadline:** {{ get_date(date_w13_start, 11) }}==
+
 This phase is for you to respond to the bug reports you received.
 
-Duration: The review period will start around 1 day after the PE (exact time to be announced) and will ==last for 2-3 days==. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
+Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last for 2-3 days. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
@@ -188,7 +190,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 </box>
 * Launch CATcher, and login to the profile `{{ module }}/T PE`. It will show all the bugs assigned to your team, divided into three sections:
   1. `Issues Pending Responses` - Issues that your team has not processed yet.
-  1. `Issues Responded` - Your job is to get all issues to the second category.
+  1. `Issues Responded` - Your job is to get all issues to this category.
   1. `Faulty Issues` - e.g., Bugs marked as duplicates of each other, or causing circular _duplicate_ relationships. Fix the problem given so that no issues remain in this category.
 * Respond to the bug reports shown.
 </tab>
@@ -253,7 +255,7 @@ Duplicate of #67
 **Response** Labels:
 * `response.Accepted`: You accept it as a bug.
 * `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in {{ version_final }}%%.
-* `response.Rejected`: What tester treated as a bug is in fact the expected behavior.  You can reject bugs that you inherited from AB3.
+* `response.Rejected`: What tester treated as a bug is in fact the expected behavior, or the tester was mistaken in some other way.
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
 
@@ -279,7 +281,7 @@ Duplicate of #67
 <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
-* **If you need teaching team's inputs when deciding on a bug** e.g., if you are not sure if the UML notation is correct, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).
+* **If you need the teaching team's inputs when deciding on a bug** %%(e.g., if you are not sure if the UML notation is correct)%%, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).
 
 <div class="indented-level2" id="additionalGuidelinesForBugTriaging">
 
@@ -294,6 +296,9 @@ Duplicate of #67
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
 * **If a missing feature is essential for the app to be reasonably useful**, its omission can be considered a _feature flaw_ even if it can be proven as _not in scope_ as given in the previous point.
+* **If a bug report contains multiple bugs** (i.e., despite instructions to the contrary, a tester included multiple bugs in a single bug report), you have to choose one bug and ignore the others. If there are valid bugs, choose from valid bugs. Among the choices available, choose the one with the highest severity (in your opinion). In your response, mention which bug you chose.
+* **How to decide the severity of bugs related to _missing requirements_** (e.g., missing user stories)? Depends on the potential damage the omission can cause. Keep in mind that not documenting a requirement increases the risk of it not getting implemented in a timely manner (i.e., future developers will not know that feature needs to be implemented).
+* **You can reject bugs that you <tooltip content="i.e., the current behavior is same as AB3 and you had no reason to change it because the feature applies similarly to your new product">inherited</tooltip> from AB3.**
 </box>
 </div>
 
@@ -312,20 +317,35 @@ Duplicate of #67
 <p/>
 </box>
 
+* You can also refer to the below guidelines:
+
+{{ embed_topic("tp-grading-bugs.mbdf#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
+
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
+
+**Start:** Within 1 day after Phase 2 ends.<br>
+
+<div class="indented">
+
+{{ icon_important_big_red }} While you are waiting for Phase 3 to start, comments will be added to the bug reports in your `/pe` repo, to indicate the response each received from the receiving team. <span class="text-danger">Please do not edit any of those comments or reply to them via the GitHub interface.</span> Doing so can invalidate them, in which case the grading script will assume that you agree with the dev team's response. Instead, wait till the start of the Phase 3 is announced, after which you should use CATcher to respond.
+</div>
+
+==**Deadline:** {{ get_date(date_w13_start, 14) }}==
 
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving dev team, you can record your objections and the reason for the objection.
   * not accepted
   * severity downgraded
   * bug type changed
 * As before, consider carefully before you object to a dev team's response. ==<span class="text-danger">If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
+* If you disagree with the team's decision but would like to revise your own initial type/severity/response as well, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%%.
 * You can also refer to the below guidelines:
 
 {{ embed_topic("tp-pe.mbdf#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", 2, indent=2) }}
 
+{{ embed_topic("tp-grading-bugs.mbdf#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
+
 
 * This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.
-* **Deadline: Reading week Thursday 2359** (i.e., within 2 days)
 * Procedure:
 
 <div class="indented-level2">
@@ -333,12 +353,13 @@ Duplicate of #67
 <tabs>
 <tab header="Using CATcher">
 
-* When the phase has been announced as open, login to CATcher as usual (profile: `{{ module }}/T PE`).
+* When the phase has been announced as open, login to CATcher as usual (profile: `{{ module }}/T PE`).<br>
+  {{ icon_info }} You may use [the latest version of CATcher](https://github.com/CATcher-org/CATcher/releases) or the [Web version of CATcher](http://catcher-org.github.io/webapp).
 * For each issues listed in the `Issues Pending Responses` section:,
   * Go to the details, and read the dev team's response.
   * If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
   * If you are fine with the team's changes, click `Save` without any other changes upon which the issue will move to the `Issue Responded` section.
-* Note that only bugs that require your response will be shown by CATcher. **Bugs already accepted by the team will not appear in CATcher** as there is nothing for you to do about them.
+* Note that only bugs that require your response will be shown by CATcher. **Bugs already accepted _as reported_ by the team will not appear in CATcher** as there is nothing for you to do about them.
 
 </tab>
 <tab header="Not using CATcher">

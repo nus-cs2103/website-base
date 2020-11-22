@@ -139,6 +139,8 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * `severity.Medium` : A flaw that causes occasional inconvenience to some users but they can continue to use the product.
 * `severity.High` : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.
 
+{{ icon_info }} When applying for documentation bugs, replace _user_ with _reader_.
+
 </box>
 
 </span>
