@@ -292,7 +292,7 @@ Duplicate of #67
     If the same problem is reported for multiple diagrams, can be flagged as duplicates.<br>
     Omitting optional notations is not a bug as long it doesn't hinder understanding.
 * **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
-* **How to prove that something is 'not in scope'**: The following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
+* **How to prove that something is 'not in scope'**: In general, features not-yet-implemented (and hence, not in scope) are the features that have a lower priority that the ones that are implemented already. In addition, the following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
 * **If a missing feature is essential for the app to be reasonably useful**, its omission can be considered a _feature flaw_ even if it can be proven as _not in scope_ as given in the previous point.

@@ -13,6 +13,8 @@
 ## SOP deviations/refinements
 
 1. **Tools: LumiNUS, Zoom, Microsoft Teams (MST), PDF scanner**, PDF reader.
+1. **The webcam view should capture all three** of these: your upper body (side view), the entire screen area of your monitor, the working area of the table. Here is an example:<br>
+  <img src="images/zoomCameraExample.png" width="367"/>
 1. ==**Recording of your PC screen** is not required.==
 1. **Only one computer screen** is allowed.
 1. **Not allowed to use the printer or other devices during the exam.**
