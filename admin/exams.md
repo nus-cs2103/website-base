@@ -20,8 +20,10 @@
 1. **Not allowed to use the printer or other devices during the exam.**
 1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
   You may use any hard copies or written materials too.
-1. **The Browser should only be used to access LumiNUS.** Accessing other websites (including the module website) is not allowed.
-1. **Use Microsoft Teams (not Zoom) private messages to communicate with the prof**. Use Zoom PM only if you don't get a response via MST.
+1. **The Browser should only be used to access LumiNUS.** Accessing other websites (including the module website) is not allowed.<br>
+  It turns out that the textbook PDF file plays better with browsers than PDF viewers. Therefore, ==viewing the textbook PDF in the browser is allowed. But other PDFs should be opened in a PDF viewer==.<br>
+  %%The reason for restricting the use of the browser to view PDF files is that allowing it makes it harder for invigilators to detect students accessing unauthorized websites.%%
+1. **Use Microsoft Teams or Zoom private messages to communicate with the invigilator**.
 1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
 1. **When the invigilator asks you to do an _identity check_**, turn your face towards the camera, move closer to the camera, remove face mask (if any), and hold the pose until the invigilator tells you to go back to your working position.
 
@@ -29,7 +31,9 @@
 
 1. **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), PM the invigilator using MS Teams (failing that, use Zoom chat).
 
-1. **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.
+1. **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.{% if cs2103%}
+
+1. **The zoom link and the invigilator info** will be distributed via LumiNUS gradebook at least 24 hours before the exam.{% endif %}
 
 
 ## Format
@@ -71,18 +75,24 @@ Choose the incorrect statement.
 
 ### Final exam - part 2
 
-* You will be asked to draw some UML diagrams, **to be hand-drawn on paper** (not on a tablet).
+* You will be asked to draw some UML diagrams, **to be hand-drawn on paper** (not on a tablet). You may use pencils if you wish.
 * Duration: 20 minutes
 * The questions will be in an encrypted PDF file that will be given to you in advance. The password will only be given at the start of this section.
-* At the end of the exam, you will be asked to show your diagrams to the camera, and then upload a scanned copy to LumiNUS.
+* At the _end_ of the exam (i.e., after all three parts are over), you will upload a scanned copy to LumiNUS. Do not do any scanning/uploading at this time.
 * These diagrams will not be graded directly. Instead, you will use them when answering part 3 of the exam.<br>
-  However, we will use the diagrams to give some marks should you score low in the corresponding MCQ questions.
+  However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.
 </div>
 
 ### Final exam - part {{ 3 if cs2103 else 2 }}
 
-* Similar to part 1.{% if cs2103 %}
-* Some questions will refer to the UML diagrams that you drew in part 2.{% endif %}
+* Similar to part 1 (e.g., 16 questions, same length).{% if cs2103 %}
+* Some questions will refer to the UML diagrams that you drew in part 2.
+* You may modify your UML diagrams during this time. %%Reminder: diagrams are not graded.%%
+* You may refer the PDF file used in part 2 during this part too.
+* **Show the diagram to the camera** at the end of this part, when the examiner asks you to.
+* Due to the above point, you will have to stay back in Zoom until the full exam is over (==not allowed to leave early==).
+* Due to the above point, you may want to have something to read, in case you finish early. ==You are not allowed to use other gadgets or use the computer to do other things even if you have finished the exam==.
+* After the exam, scan and **upload the diagrams you drew in part 2 onto LumiNUS**, as a single PDF file, **within an hour**. The file name does not matter. {% endif %}
 
 ## Exam briefing, mock exam, practice exam paper
 
