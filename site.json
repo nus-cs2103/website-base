@@ -1,6 +1,9 @@
 {
   "baseUrl": "/website",
   "titlePrefix": "CS2103/T",
+  "style": {
+    "codeTheme": "light"
+  },
   "timeZone": "Asia/Singapore",
   "disableHtmlBeautify": true,
   "ignore": [
