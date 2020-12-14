@@ -10,6 +10,8 @@
 <variable name="period">2020 Aug-Dec</variable>
 <variable name="current_week">-1</variable>
 
+<variable name="algolia">yes</variable>
+
 <variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
 <variable name="url_repl_classroom">https://repl.it/classroom/invite/szXDJN4</variable>
