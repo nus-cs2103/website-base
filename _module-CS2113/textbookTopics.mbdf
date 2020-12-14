@@ -1303,8 +1303,8 @@
             level_three_topics: [
               {name: "why", heading: "Why", priority: "3"},
               {name: "combinationStrategies", heading: "Test Input Combination Strategies", priority: "3"},
-              {name: "heuristicValid", heading: "Heuristic: Each Valid Input at Least Once in a Positive Test Case", priority: "-1"},
-              {name: "heuristicInvalid", heading: "Heuristic: No More Than One Invalid Input In A Test Case", priority: "-1"},
+              {name: "heuristicValid", heading: "Heuristic: Each Valid Input at Least Once in a Positive Test Case", priority: "4"},
+              {name: "heuristicInvalid", heading: "Heuristic: No More Than One Invalid Input In A Test Case", priority: "4"},
               {name: "mix", heading: "Mix", priority: "-1"}
             ]
           }

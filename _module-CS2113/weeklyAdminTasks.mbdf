@@ -3,7 +3,7 @@
 {% set weekly_admin_tasks = {
 week1: [
   {id: 'set_up_tools', deadline: "before the lecture"},
-  {id: 'submit_pre_module_survey', deadline: "by Wednesday 2359"},
+  {id: 'submit_pre_module_survey', deadline: "by Friday 2359"},
   {id: 'learn_about_the_module'},
   {id: 'attend_the_first_lecture'}
 ],
@@ -32,10 +32,10 @@ week7: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week8: [
-  {id: 'submit_post_lecture_quiz', graded: true, deadline: "before the tutorial"}
+  {id: 'submit_post_lecture_quiz', graded: true, deadline: "before the lecture"}
 ],
 week9: [
-  {id: 'submit_post_lecture_quiz', graded: true, deadline: "before the tutorial"},
+  {id: 'submit_post_lecture_quiz', graded: true, deadline: "before the lecture"},
   {id: 'submit_midterm_peer_evaluations', graded: true, deadline: get_date(date_w9_start, 7)}
 ],
 week10: [
