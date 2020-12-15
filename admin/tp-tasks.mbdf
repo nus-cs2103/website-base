@@ -403,6 +403,19 @@ Update the following pages in your project repo:
     Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
   * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth recording.
 
+<box type="tip" seamless>
+
+**The above DG sections should cover the _full requirements_ of the product**, some of which might not get implemented by the end of this semester. Furthermore, these sections will be graded at the final project evaluation, and any bugs in the content can cost you marks at that point. The panel below gives some relevant DG bug examples you can lookout for:
+
+<panel header="Admin {{ icon_embedding }} Tp Grading → Examples of DG Bugs (extract)" minimized>
+
+<include src="tp-grading-bugs.mbdf#userStoryBugs" />
+<include src="tp-grading-bugs.mbdf#useCaseBugs" />
+<include src="tp-grading-bugs.mbdf#nfrBugs" />
+<include src="tp-grading-bugs.mbdf#glossaryBugs" />
+</panel>
+</box>
+
 <modal large header="Textbook {{ icon_embedding }} Specifying Requirements → Use Cases" id="modal:v10-usecases">
   <include src="../book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat.md" boilerplate />
 </modal>
@@ -538,7 +551,9 @@ Update the following pages in your project repo:
 * Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).<br>
   **If you split the iteration into two smaller iterations** of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b` so that the dashboard can track them accurately.
 
-* {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
+* {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%.
+
+* **If you plan to rename the code packages**, you may want to do it around this time. Doing it later can be more difficult, and can cause problems in our code authorship tracking. Also note that renaming pacakges is optional.
 </span>
 {#====================================================================================================================#}
 <span id="heading_add_junit_tests">{{ icon_individual }} Add some JUnit Tests</span>
@@ -647,6 +662,14 @@ In addition,
 * **Maintain the defensiveness of the code**: Remember to use assertions, exceptions, and logging in your code, as well as other defensive programming measures when appropriate.<br>
   {{ icon_important_big_red }} Remember to [enable assertions in your IDEA run configurations](https://se-education.org/guides/tutorials/intellijUsefulSettings.html) and [in the gradle file](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).
 * {{ icon_tip }} Recommend: **Each PR should also update the relevant parts of documentation and tests**. That way, your documentation/testing work will not pile up towards the end.
+
+<div tags="m--cs2103">
+
+<box type="info" seamless>
+
+**Improve upon AB3, design, code, test etc.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is meant to be a realistic example rather than a 'model solution'). Feel free to improve it in any way you see fit. In particular, find and fix any bugs it may have. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.
+</box>
+</div>
 </div>
 </span>
 {#====================================================================================================================#}
@@ -668,7 +691,7 @@ In addition,
 
 * We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
 
-* Wt is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
+* It is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
 
 * It allows receiving early self/peer/instructor feedback.
 </panel>
@@ -1027,13 +1050,16 @@ Not applicable this semester
 **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
 
 **Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+
+**Try the PDF conversion early**. If you do it at the last minute, you may not have time to fix any problems in the generated PDF files (such problems are more common than you think).
 </box>
 
 <box type="info" seamless>
 
-**The icon {{ icon_team }} indicates team submissions.** Only one person need to submit on behalf of the team but we recommend that ==others help verify the submission is in order== i.e., the responsibility for (and any penalty for problems in) team submissions are best shared by the whole team rather than burden one person with it.
+**The icon {{ icon_team }} indicates team submissions.** Only one person need to submit on behalf of the team but we recommend that others help verify the submission is in order <br>
+==We will not accept requests to limit late penalties of team submissions to one person== even if the delay was one person's fault. That is, the responsibility (and the penalty) for team submissions are to be shared by the whole team rather than burden one person with it.
 
-The icon {{ icon_individual }} indicates individual submissions.
+**The icon {{ icon_individual }} indicates individual submissions.** When uploading files to LumiNUS, please ==upload your individual files yourself==. %%Reason: Penalties related to submission time/format are calculated automatically based on the uploader's identity.%%
 
 </box>
 </div>

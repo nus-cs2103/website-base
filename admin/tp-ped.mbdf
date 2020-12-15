@@ -30,6 +30,15 @@
 
 **Use MS Teams (not Zoom) to contact prof** if you need help during the session. Use Zoom chat only if you don't get a response via MS Teams.
 
+<box type="warning" seamless>
+
+****How many bugs to report?****
+
+Report as many bugs as you can find during the given time. Take longer if you need. If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. In that case, all the more reasons to spend more time and find more bugs now.
+
+**The median number of bugs reported in the previous semester's PED was 9.** Someone reporting just a 2-3 bugs is usually a sign of a half-hearted attempt rather than lack of bugs to find. If you really can't find bugs, at least submit suggestions for improvements.
+</box>
+
 **Test the product and report bugs** as described below, when the prof informs you to begin testing.
 
 {% set pe_active_tab="0" %}
@@ -60,7 +69,7 @@
 </tabs>
 <p/>
 
-* Put the downloaded jar file ==in an empty folder==.
+* Put the downloaded jar file ==in an empty folder== in which the app is allowed to create files %%(i.e., do not use write-protected folder)%%.
 * Open a command window. Run the `java -version` command to ensure you are using Java 11.
 * Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.

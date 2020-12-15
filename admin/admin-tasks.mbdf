@@ -128,7 +128,7 @@
 * **An anonymous survey to submit feedback about the module and the teaching team** will open on LumiNUS by Monday. Please take a few minutes to give feedback to your tutors.
 </span>
 {#====================================================================================================================#}
-<span id="heading_submit_midterm_peer_evaluations">Submit Midterm Peer Evaluations on TEAMMATES</span>
+<span id="heading_submit_midterm_peer_evaluations">Submit midterm peer evaluations on TEAMMATES</span>
 <span id="desc_submit_midterm_peer_evaluations">
 
 * **Peer Evaluation Round 1** will open on TEAMMATES. You will receive the submission link soon.
@@ -136,12 +136,20 @@
 {{ embed_topic("peerEvaluations.md#midtermPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation", "1", indent="2", status="expanded") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_submit_final_peer_evaluations">Submit Final Peer Evaluation on TEAMMATES</span>
+<span id="heading_submit_final_peer_evaluations">Submit final peer evaluation on TEAMMATES</span>
 <span id="desc_submit_final_peer_evaluations">
 
 * Submission will open on the day after the final submission ({{ date_final_submission | date(format_normal, 1)}}).
 
 {{ embed_topic("peerEvaluations.md#finalPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Final Peer Evaluation", "1", indent="2", status="expanded") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_reuse_declaration">Submit the declaration about code reuse</span>
+<span id="desc_submit_reuse_declaration">
+
+* Submit the LumiNUS survey to declare that you have followed the proper procedure for reusing/adapting code from elsewhere.
+
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " Policy on reuse", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
 {#====================================================================================================================#}

@@ -92,15 +92,28 @@ Please ==post in the [forum]({{url_module_org}}/forum/issues) your request to us
 %%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
 {%- endcall  %}
 
+{% call show_constraint("Constraint-Single-File") -%}
+Package everything into a single JAR file.<br>
+%%**Reason:** Requiring the users to download more files can cause complications in the final peer testing session.%%
+
+If you are unable to package everything to a JAR file, package the JAR file and other files needed into a single zip file.
+{%- endcall  %}
+
 {% call show_constraint("Constraint-File-Size") -%}
 The file sizes of the deliverables should not exceed the limits given below. <br>
 <div tags="m--cs2113 m--cs2103">
 
 %%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue%%:</div>
 
-* <span class="text-danger">JAR file: 100MB</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
+* <span class="text-danger">Product (i.e., the JAR/ZIP file): 100MB</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
 
-* <span class="text-danger">PDF files: 15MB/file</span> (Not following [the recommended method of converting to PDF format](https://se-education.org/guides/tutorials/savingPdf.html) can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).
+* <span class="text-danger">Documents (i.e., PDF files): 15MB/file</span> (Not following [the recommended method of converting to PDF format](https://se-education.org/guides/tutorials/savingPdf.html) can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).
+{%- endcall  %}
+
+{% call show_constraint("Constraint-PDF-Friendly") -%}
+The DG and UG should be PDF-friendly. Don't use expandable panels, embedded videos, animated GIFs etc. <br>
+
+%%**Reason:** The UG and DG used in the final grading will be in PDF format%%:
 {%- endcall  %}
 
 -----------------------------------------------------------------------------------------------------------------------

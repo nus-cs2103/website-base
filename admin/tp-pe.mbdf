@@ -73,6 +73,13 @@
 
 ##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
 
+<box type="tip" seamless>
+
+**Bonus marks for high accuracy rates!**{.text-success}
+
+You will receive bonus marks if a high percentage (e.g., >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual `type.*` and `severity.*` of the bug match the values you chose initially).
+</box>
+
 **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
 
 <include src="tp-ped.mbdf#tp-pe-testing-instructions" var-pe_active_tab="1"/>
@@ -169,6 +176,13 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 ==**Deadline:** {{ get_date(date_w13_start, 11) }}==
 
 This phase is for you to respond to the bug reports you received.
+
+<box type="tip" seamless>
+
+**Bonus marks for high accuracy rates!**{.text-success}
+
+You will receive bonus marks if a high percentage (e.g., >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual `type.*` and `severity.*` of the bug matches the one you chose).
+</box>
 
 Duration: The review period will start around 1 day after the PE and will last for 2-3 days (exact times will be announced later). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
@@ -289,8 +303,11 @@ Duplicate of #67
 
 * **Broken links in UG/DG**: Severity can be low or medium depending on how many such cases and how much inconvenience they cause to the reader.
 * **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
-    If the same problem is reported for multiple diagrams, can be flagged as duplicates.<br>
-    Omitting optional notations is not a bug as long it doesn't hinder understanding.
+  Omitting optional notations is not a bug as long it doesn't hinder understanding.
+* **What bugs can be considered duplicates?** It is up to the dev team to prove conclusively that a bug is a duplicate. If the proof is not convincing enough, they will be considered as 'not duplicates'. Only the following cases can be considered duplicates:
+  * The exact same bug reported multiple times.
+  * Multiple buggy behaviors that are actually caused by the same defect and cannot be fixed independently.
+  * In diagrams, same error appearing multiple times _in the same diagram_ (e.g., the _same_ notation mistake appearing several times in the _same_ diagram). However, errors across multiple diagrams should not be flagged as duplicates, unless it is the same diagram appearing in multiple places (i.e., the same image file used in multiple places).
 * **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
 * **How to prove that something is 'not in scope'**: In general, features not-yet-implemented (and hence, not in scope) are the features that have a lower priority that the ones that are implemented already. In addition, the following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
   * The UG specifies it as not supported or coming in a future version.
@@ -298,7 +315,7 @@ Duplicate of #67
 * **If a missing feature is essential for the app to be reasonably useful**, its omission can be considered a _feature flaw_ even if it can be proven as _not in scope_ as given in the previous point.
 * **If a bug report contains multiple bugs** (i.e., despite instructions to the contrary, a tester included multiple bugs in a single bug report), you have to choose one bug and ignore the others. If there are valid bugs, choose from valid bugs. Among the choices available, choose the one with the highest severity (in your opinion). In your response, mention which bug you chose.
 * **How to decide the severity of bugs related to _missing requirements_** (e.g., missing user stories)? Depends on the potential damage the omission can cause. Keep in mind that not documenting a requirement increases the risk of it not getting implemented in a timely manner (i.e., future developers will not know that feature needs to be implemented).
-* **You can reject bugs that you <tooltip content="i.e., the current behavior is same as AB3 and you had no reason to change it because the feature applies similarly to your new product">inherited</tooltip> from AB3.**
+* ~~**You can reject bugs that you <tooltip content="i.e., the current behavior is same as AB3 and you had no reason to change it because the feature applies similarly to your new product">inherited</tooltip> from AB3.**~~ Even bugs inherited from AB3 are counted.
 </box>
 </div>
 
@@ -308,7 +325,7 @@ Duplicate of #67
 
 * As far as possible, ==**choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting or marking as duplicates**==. Reason: your _non-acceptance_  or duplication status may be rejected in a later phase, in which case we need to grade it as an accepted/non-duplicate bug.
 
-* **Justify your response.** For all of the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be double-checked by the teaching team in later phases. ==<span class="text-danger">Indiscriminate/unreasonable dev/tester responses, if deemed as a case of trying to _game the system_, will be penalized.</span>==
+* **Justify your response.** For all of the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be double-checked by the teaching team in later phases.
   * downgrading severity
   * non-acceptance of a bug
   * changing the bug type
@@ -336,6 +353,7 @@ Duplicate of #67
   * not accepted
   * severity downgraded
   * bug type changed
+  * bug flagged as duplicate %%(Note that you still get the credit bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to bugs being flagged incorrectly as duplicates because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
 * As before, consider carefully before you object to a dev team's response. ==<span class="text-danger">If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
 * If you disagree with the team's decision but would like to revise your own initial type/severity/response as well, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%%.
 * You can also refer to the below guidelines:
