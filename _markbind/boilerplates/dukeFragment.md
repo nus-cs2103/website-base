@@ -1,9 +1,9 @@
 <div class="indented">
 <div class="indented border">
 <panel type="seamless" {{ status }} no-close>
-<variable name="displacement"></variable>
+{% set displacement="" %}
 <div slot="header"><md>**Duke** %%{{ header }}%% <span class="badge badge-pill badge-secondary">{{ tag }}</span></md></div>
-<variable name="displacement">..</variable>
+{% set displacement=".." %}
 <include src="{{ displacement }}/book/projectDuke/{{ fragment }}" />
 </panel>
 

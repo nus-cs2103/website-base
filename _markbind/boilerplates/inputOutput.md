@@ -1,5 +1,5 @@
-<variable name="align">bottom</variable>
-<variable name="arrow">→</variable>
+{% set align="bottom" %}
+{% set arrow="→" %}
 <table>
 <tr>
   <td valign="top">

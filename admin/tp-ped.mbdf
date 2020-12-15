@@ -32,7 +32,7 @@
 
 **Test the product and report bugs** as described below, when the prof informs you to begin testing.
 
-<variable name="pe_active_tab">0</variable>
+{% set pe_active_tab="0" %}
 
 <div id="tp-pe-testing-instructions">
 
