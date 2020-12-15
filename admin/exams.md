@@ -6,6 +6,14 @@
 
 <p class="lead">There is no midterm exam. Information about the final exam is given below.</p>
 
+{% if (current_week | int) < 11 %}
+<box type="important">
+
+Instructions below are from the previous semester. Will be updated closer to the exam.
+</box>
+{% endif %}
+
+
 * The final exam will be as per the normal exam schedule, and will count for {{ marks_exam }}% of the final grade.
 * The exam will be done online.
 * ==**We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)**==, combined with the deviations/refinements given in the section below. Please read the SOP carefully and ensure you follow all instructions.
@@ -17,6 +25,7 @@
   <img src="images/zoomCameraExample.png" width="367"/>
 1. ==**Recording of your PC screen** is not required.==
 1. **Only one computer screen** is allowed.
+1. **You may not use a second laptop/computer as the web cam.** Use either an external webcam or a mobile phone instead. %%Reason: the screen of that second computer will not be captured in the video feed.%%
 1. **Not allowed to use the printer or other devices during the exam.**
 1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
   You may use any hard copies or written materials too.
@@ -37,6 +46,43 @@
 
 
 ## Format
+<div tags="m--cs2113">
+
+* The exam will be divided into {{ 3 if cs2103 else 2 }} sections.
+* Each section is worth 15 marks. There are no negative marks in the exam.
+* Both sections should be completed in one sitting. **Duration: 1 hour**
+
+
+### Final exam - Section 1
+
+* The first section will contain 30 True/False questions.
+* Questions will appear in random order.
+* You will not be able to go back to previous questions.<br>
+  %%Reasons:<br>
+  1\. to minimize opportunities for collusion<br>
+  2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
+* Recommended duration: 23 minutes (recommended: allocate 40 seconds per question, which gives you a 3 minutes buffer)
+* You are **not required to give a justification** for your answer in this section.
+
+### Final exam - Section 2
+
+* The second section will contain 15 MCQs
+* Questions will appear in random order.
+* You will not be able to go back to previous questions.<br>
+  %%Reasons:<br>
+  1\. to minimize opportunities for collusion<br>
+  2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
+* Recommended duration: 35 minutes (recommended: allocate 2 minutes per question, which gives you a 5 minutes buffer)
+* You **are required to give a justification** for your answer in this section. ==The question will specify what should be included in the justification. **Answers without the correct justification may not earn full marks.**== However, we'll give full marks up to two correct answers that do not have justifications (or that have incorrect justification) %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
+
+## Exam briefing, mock exam, practice exam paper
+
+* There will be an exam briefing in the penultimate lecture. It will include a minimal mock exam, just to help you understand the structure.
+* You will be given a practice exam paper (of proportionally reduced size of the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
+</div>
+<div tags="m--cs2103 m--tic2002 m--te3201">
+
+
 
 * The exam will be divided into {{ 3 if cs2103 else 2 }} parts.
 
@@ -93,6 +139,8 @@ Choose the incorrect statement.
 * Due to the above point, you will have to stay back in Zoom until the full exam is over (==not allowed to leave early==).
 * Due to the above point, you may want to have something to read, in case you finish early. ==You are not allowed to use other gadgets or use the computer to do other things even if you have finished the exam==.
 * After the exam, scan and **upload the diagrams you drew in part 2 onto LumiNUS**, as a single PDF file, **within an hour**. The file name does not matter. {% endif %}
+
+</div>
 
 ## Exam briefing, mock exam, practice exam paper
 

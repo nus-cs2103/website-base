@@ -15,7 +15,7 @@
 
 <div tags="m--cs2113 m--tic4001">
 
-* **Follow the [AddressBook-Level3 (AB3) UG]({{ url_ab3_fork_website }}/UserGuide.html) structure**.
+* **Follow the [AddressBook-Level3 (AB3) UG]({{ url_ab3_upstream_website }}/UserGuide.html) structure**.
 </div>
 
 * The main content you add should be in the `docs/UserGuide.md` file (for ease of tracking by grading scripts).

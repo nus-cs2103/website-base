@@ -211,21 +211,13 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 * Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%%
 
-<div tags="m--cs2103">
-
 * Milestones ==reached on time (i.e., the midnight before of the tutorial)== (to get a good grade for this aspect, achieve at least 60% of the recommended milestone progress).
-* Good use of GitHub milestones
-* Good use of GitHub release mechanism
-* Good version control, based on the repo
-* Reasonable attempt to use the forking workflow
-* Good task definition, assignment and tracking, based on the issue tracker
-* Good use of buffers %%(opposite: everything at the last minute)%%
-</div>
-<div tags="m--cs2113 m--tic4001">
-
-* No <tooltip content="e.g., the product is not working at all by the milestone deadline">major mishaps</tooltip> at {{ version_first }}, {{ version_penultimate }}, and {{ version_final }} milestone deadlines.
-* Good attempt to use of at least _some_ Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)
-</div>
+* Good use of GitHub _milestones_ mechanism.
+* Good use of GitHub _releases_ mechanism.
+* Good version control, based on the repo.
+* Reasonable attempt to use the _forking workflow_ at least for the early part of the project.
+* Good task definition, assignment and tracking, based on the issue tracker.
+* Good use of buffers %%(opposite: everything at the last minute)%%.
 
 
 <big>**5B. Team-tasks:**</big>
