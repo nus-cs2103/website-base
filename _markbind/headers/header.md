@@ -19,7 +19,7 @@
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
   <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
   <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="{{ url_dashboards }}" target="_blank" class="nav-link"><md>**Dashboards**</md></a></li>
-  <dropdown header="**Project Links**" class="nav-link">
+  <dropdown tags="m--cs2103 m--cs2113 m-tic4001" header="**Project Links**" class="nav-link">
     <md>**&nbsp;Individual Project (iP):**</md>
     <li><a href="{{baseUrl}}/admin/ip-overview.html" class="dropdown-item"><md>{{ icon_project }} Individual Project Info</md></a></li>
     <li><a href="{{url_module_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} iP Upstream Repo</md></a></li>{% if (current_week | int) > 1 %}
@@ -35,7 +35,7 @@
     <li><a href="{{ url_tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>
     <li><a href="{{url_tp_progress_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-trophy: tP Progress Dashboard</md></a></li>
   </dropdown>
-  <dropdown header="**Other Links**" class="nav-link">
+  <dropdown header="**{{ "Other " if not tic2002 or te3201 else ""}}Links**" class="nav-link">
     <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="{{url_bugs}}" target="_blank" class="dropdown-item"><md>:fas-bug: Report Bugs</md></a></li>
     <li><a href="{{url_forum}}" target="_blank" class="dropdown-item"><md>:fas-comment: Forum</md></a></li>
     <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="{{url_gitter}}" target="_blank" class="dropdown-item"><md>:fab-gitter: Gitter (Chat)</md></a></li>
@@ -48,6 +48,8 @@
     <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
     <li tags="m--cs2103 m--cs2113"><a href="{{ url_forum_activities_dashboard }}" class="dropdown-item"><md>:fas-trophy: Forum Activities Dashboard</md></a></li>
     <li><a href="{{url_participation_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-trophy: Participation Dashboard</md></a></li>
+    <li tags="m--tic2002"><a href="{{url_ip_dashboard}}" target="_blank" class="dropdown-item"><md>:fas-chart-area: Code Dashboard</md></a></li>
+    <li tags="m--tic2002"><a href="{{url_module_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke repo</md></a></li>
   </dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
