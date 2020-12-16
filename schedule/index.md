@@ -66,14 +66,14 @@ pageNav: {{ categories[category].pagenav }}
 <ul class="pagination mt-2">
 {%- set previous_status = " disabled" if week_num == 1 else "" -%}
 {%- set next_status = " disabled" if week_num == 13 else "" -%}
-<li class="page-item{{ previous_status }}"><a class="page-link" href="../week{{ (week_num - 1) }}/"><md>:glyphicon-chevron-left: **Previous Week**</md></a></li>
+<li class="page-item{{ previous_status }}"><a class="page-link" href="../week{{ 1 if week_num == 1 else (week_num - 1) }}/"><md>:glyphicon-chevron-left: **Previous Week**</md></a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
 {% for c,v in categories %}
   {%- set is_active = " active" if categories[category] == v else "" -%}
   <li class="page-item{{ is_active }}"><a class="page-link" href="{{v.file}}.html"><md>{{ v.icon }}</md> {{v.name}}</a></li>
 </li>
 {% endfor %}
-<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item{{ next_status }}"><a class="page-link" href="../week{{ (week_num + 1) }}/"><md>**Next Week** :glyphicon-chevron-right:</md></a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item{{ next_status }}"><a class="page-link" href="../week{{ 13 if week_num == 13 else (week_num + 1) }}/"><md>**Next Week** :glyphicon-chevron-right:</md></a></li>
 </ul>
 </nav>
 
