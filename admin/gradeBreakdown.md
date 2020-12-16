@@ -18,7 +18,7 @@ skinparam backgroundcolor transparent
   + Implementation: <b><color:red>{{ marks_tp_implementation }}</color></b> marks
   + Documentation: <b><color:red>{{ marks_tp_documentation }}</color></b> marks
   + QA: <b><color:red>{{ marks_tp_qa }}</color></b> marks
-  + Project Management: <b><color:red>{{ marks_tp_pm }}</color></b> marks{% if module != "TIC4001"%}
+  + Project Management: <b><color:red>{{ marks_tp_pm }}</color></b> marks{% if not (tic4001 or tic4002)%}
  + Exam: <b><color:red>{{ marks_exam }}</color></b> marks
   + Part I (MCQ): <b><color:red>{{ marks_exam_mcq }}</color></b> marks
   + --Part II (Essay):-- <b><color:red>{{ marks_exam_essay }}</color></b> --marks-- {% endif %}

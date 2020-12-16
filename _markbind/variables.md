@@ -72,6 +72,7 @@
 <variable name="cs2113">{{ "Y" if module == "CS2113" }}</variable>
 <variable name="tic2002">{{ "Y" if module == "TIC2002" }}</variable>
 <variable name="tic4001">{{ "Y" if module == "TIC4001" }}</variable>
+<variable name="tic4002">{{ "Y" if module == "TIC4002" }}</variable>
 <variable name="te3201">{{ "Y" if module == "TE3201" }}</variable>
 <variable name="has_t">{{ "Y" if cs2103 or cs2113 }}</variable>
 <variable name="has_pe">{{ "Y" if cs2103 or cs2113 }}</variable>

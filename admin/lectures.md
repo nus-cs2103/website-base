@@ -9,7 +9,7 @@
 
 <include src="../_module-{{ module | lower }}/timetables.mbdf#lectures-s{{ S }}" inline />
 
-<div tags="m--tic4001" class="indented">
+<div tags="m--tic4001 m--tic4002" class="indented">
 
 **The lecture+tutorial slot ({{ day_lecture }} 6.30pm-9.30pm) will be repurposed** as follows, due to this being a 100% project module:
 

@@ -2,7 +2,7 @@
 
 {% call show_admin_page("instructors") %}
 <div id="main">
-{% if tic4001 %}
+{% if tic4001 or tic4002 %}
 
 <div class="container">
   <div class="row bt-2">

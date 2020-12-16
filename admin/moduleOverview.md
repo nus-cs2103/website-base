@@ -88,7 +88,22 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 **At the end of this module** you are expected to be ready for <tooltip content="Software Engineering Practicum II">TIC4002</tooltip> in which you'll tackle a <tooltip content="starting with an existing code base">brownfield</tooltip> team project somewhat larger than the project you did in this module.
 
 </span>
+<!-- =============================================================================== -->
+<span tags="m--tic4002">
 
+<big><p class="lead text-secondary">A Software Engineering practicum module focusing on <tooltip content="starting with an existing code base">brownfield</tooltip> team projects...</p></big>
+
+<img src="{{baseUrl}}/images/growingPlant.png" width="650">
+
+
+<p class="lead"><md>{{ module }} builds on <tooltip content="Software Engineering Practicum I">TIC4001</tooltip> to strengthen your practical SE skills. The focus will be on getting some hands on practice in working with an existing code base.</md></p>
+
+* **On the theory side, this module relies mostly on the theory covered in TIC2002 and TIC4001, but it will also cover a small number of new topics** to help you with the project. As before, this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
+
+* **The practice side, you will first continue to ramp up your technical skills by improving on the individual project** that you did in TIC4001.<br>
+  **Then, you will move to a team project** in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 KLoC) generic product -- and enhance it into a better product or evolve it into a different product.
+
+</span>
 
 
 </div>
