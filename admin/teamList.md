@@ -51,7 +51,6 @@ The full team details page is not available yet. In the meantime ==see [here](ht
 </div>
 {% endmacro %}
 
-
 {% set panel_contents = "" %}
 {% set team_contents = "" %}
 {% set current_team = "" %}
@@ -92,3 +91,4 @@ The full team details page is not available yet. In the meantime ==see [here](ht
   {% set team_contents = "" %}
   {% set current_team = "" %}
 {% endfor %}
+
