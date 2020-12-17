@@ -7,7 +7,7 @@
 
 Your tutor will serve as your _project supervisor_ too.
 </div>
-<div tags="m--tic4001">
+<div tags="m--tic4001 m--tic4002">
 
 One of the lecturers will be assigned as your team's tutor (aka project supervisor).
 </div>
@@ -18,7 +18,7 @@ One of the lecturers will be assigned as your team's tutor (aka project supervis
 
 <div tags="m--cs2113 m--cs2103" id="making-project-decisions">
 
-**Note that tutors are not allowed to contribute to graded components of your project work.** For example, if you are faced with a design decision in your project, the tutor is not allowed to make that decision for you.<br>
+**Note that project supervisors are not allowed to contribute to graded components of your project work.** For example, if you are faced with a design decision in your project, the tutor is not allowed to make that decision for you.<br>
  %%Reason: to ensure fairness across teams, and to ensure the work you submit for grading is entirely your own%%
 
 Following from the above, **don't expect the tutor to answer questions that are specific to graded deliverables** (e.g., ask which design alternative is better -- that's a decision you need to make yourself). At best, the tutor can channel the question to the professor. However, you can raise such questions in the module forum where the professor can answer the question in a general way that's not unfair to other teams (and other teams can benefit from the answer as well).

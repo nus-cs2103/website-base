@@ -4,10 +4,8 @@
 {% call show_admin_page("tp-grading") %}
 <div id="main">
 
-<div tags="m--cs2113 m--cs2103">
-
-Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. Given below is the marking scheme.
-</div>
+Note that project grading is ==not competitive (not bell curved)==.<span tags="m--cs2113 m--cs2103">
+{{ module }}T projects will be assessed separately from {{ module }} projects.</span> Given below is the marking scheme.
 
 ****Total****: {{ marks_tp }} marks ({{ icon_individual }} {{ marks_tp_individual }} individual marks + {{ icon_team }} {{ marks_tp_team }} team marks)
 
@@ -20,17 +18,17 @@ See the sections below for details of how we assess each aspect.
 
 **Evaluates:** how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user
 
-<div tags="m--cs2113 m--cs2103">
+<div tags="m--cs2113 m--cs2103 m--tic4002">
 
 **Evaluated by:**
-* tutors (based on product demo and user guide)
+* the teaching team (based on product demo and user guide)
 * peers from other teams (based on peer testing and user guide)
 
 {{ embed_topic("tp-pe.mbdf#projectGrading-featureFit-instructions", "Admin " + icon_embedding + " tP → PE → ==Grading Instructions for Product Design==", "3") }}
 
 In addition, feature flaws reported in the PE will be considered when grading this aspect.
 
-<box tags="m--cs2113 m--tic4001" type="tip">
+<box tags="m--cs2113 m--tic4001 m--tic4002" type="tip">
 
 Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, ==the bar you need to reach to get full marks will be quite low==. For example, the `Medium` level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of _excessive_ 'feature flaw' bugs will affect the score.
 </box>
@@ -41,7 +39,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 </div>
 <div tags="m--tic4001">
 
-**Evaluated by** tutors
+**Evaluated by** the teaching team
 
 **Based on** the product features.
 </div>
@@ -64,7 +62,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 * At least some evidence of these (see [here]({{baseUrl}}/se-book-adapted/chapters/errorHandling.html) for more info)
   * logging
   * exceptions
-  * assertions{% if cs2103 %}
+  * assertions{% if cs2103 or tic4002 %}
   * defensive coding{% endif %}
 
 * No [coding standard]({{url_java_coding_standard}}) violations %%e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
@@ -83,7 +81,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 **Method:**
 
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--tic4002">
 
 * Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
 
@@ -117,7 +115,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 #### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_both if module == "TIC4001" else icon_individual }} {{ marks_tp_qa }} marks]%%</div>
 
-<div tags="m--cs2113 m--cs2103">
+<div tags="m--cs2113 m--cs2103 m--tic4002">
 
 <big>**3A. Developer Testing:**</big>
 
@@ -148,7 +146,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 </div>
 <div tags="m--tic4001">
 
-**Evaluated by** tutors.
+**Evaluated by** the teaching team.
 
 **Based on**,
 * {{ icon_team }} the robustness of your product
@@ -157,9 +155,9 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-documentation">
 
-#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_both if module == "TIC4001" else icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
+#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_both if tic4001 else icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
 
-<div tags="m--cs2113 m--cs2103">
+<div tags="m--cs2113 m--cs2103 m--tic4002">
 
 **Evaluates:** your contribution to project documents
 
@@ -211,7 +209,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 * Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%%
 
-* Milestones ==reached on time (i.e., the midnight before of the tutorial)== (to get a good grade for this aspect, achieve at least 60% of the recommended milestone progress).
+* Milestones ==reached on time (i.e., the midnight before of the {{ "lecture" if tic4002 else "tutorial" }})== (to get a good grade for this aspect, achieve at least 75% of the recommended milestone progress).
 * Good use of GitHub _milestones_ mechanism.
 * Good use of GitHub _releases_ mechanism.
 * Good version control, based on the repo.
@@ -230,7 +228,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 **Grading criteria:** Do these to earn full marks.
 * Do close to an equal share of the team tasks (you can earn bonus marks by doing more than an equal share).
-* Merge code in at least four of weeks 7, 8, 9, 10, 11, 12
+* Merge code in at least {{ "five" if tic4002 else "four" }} of weeks {{ "6, " if tic4002 }}7, 8, 9, 10, 11, 12
 
 </div>
 

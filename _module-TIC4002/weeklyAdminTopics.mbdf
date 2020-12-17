@@ -27,6 +27,7 @@
     {level: 2, id: "tp-timeline", title: "tP: Timeline", link: "tp-timeline.html", priority: 3},
     {level: 2, id: "tp-constraints", title: "tP: Constraints", link: "tp-constraints.html", priority: 2},
     {level: 2, id: "tp-teams", title: "tP: Forming Teams", link: "tp-teams.html", priority: 2},
+    {level: 2, id: "tp-w2", title: "tP week 2: " + weekly_tp_themes.w2.name, link: "tp-w2.html", priority: 2},
     {level: 2, id: "tp-w3", title: "tP week 3: " + weekly_tp_themes.w3.name, link: "tp-w3.html", priority: 2},
     {level: 2, id: "tp-w4", title: "tP week 4: " + weekly_tp_themes.w4.name, link: "tp-w4.html", priority: 3},
     {level: 2, id: "tp-w5", title: "tP week 5: " + weekly_tp_themes.w5.name, link: "tp-w5.html", priority: 2},
