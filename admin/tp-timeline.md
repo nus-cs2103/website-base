@@ -11,9 +11,9 @@
   w5: weekly_tp_themes.w5.name,
   w6: weekly_tp_themes.w6.name,
   w7: weekly_tp_themes.w7.name,
-  iter1: "Iteration 1 (W8-W9)",
-  iter2: "Iteration 2 (W10-W11)",
-  iter3: "Iteration 3 " + ("(W12-W13)" if module == "TIC4001" else "(W12)")
+  iter1: "Iteration 1 " + ("(W7-W8)" if tic4002 else "(W8-W9)"),
+  iter2: "Iteration 2 " + ("(W9-W10)" if tic4002 else "(W10-W11)"),
+  iter3: "Iteration 3 " + ("(W12-W13)" if tic4001 else ( "(W11-W12)" if tic4002 else "(W12)"))
 }%}
 
 
@@ -37,7 +37,7 @@ then [{{ g.w7 }}] lasts 4 days and starts 4 days after [{{ g.w6 }}]'s end
 [{{ version_first }}] happens at [{{ g.iter1 }}]'s end
 then [{{ g.iter2 }}] lasts 14 days
 [{{ version_penultimate }}] happens at [{{ g.iter2 }}]'s end
-then [{{ g.iter3 }}] lasts {{ "14" if module == "TIC4001" else "7" }} days
+then [{{ g.iter3 }}] lasts {{ "14" if tic4001 or tic4002 else "7" }} days
 [{{ version_final }}] happens at [{{ g.iter3 }}]'s end
 @endgantt
 </puml>
@@ -51,28 +51,30 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 {{ project_gantt_pre(g) }}
 
+{% set tfw = (tp_first_week | int) %}
+
 <div class="indented-level2">
 
-#### {{ badge("Week 3")}} {{ weekly_tp_themes.w3.name }}
+#### {{ badge("Week " + tfw)}} {{ weekly_tp_themes.w3.name }}
 
 * Form teams
 * Set weekly meeting times
 
-#### {{ badge("Week 4")}} {{ weekly_tp_themes.w4.name }}
+#### {{ badge("Week " + (tfw + 1))}} {{ weekly_tp_themes.w4.name }}
 
 * Decide on a general direction for the project (i.e., target user profile, and problem addressed)
 
-#### {{ badge("Week 5")}} {{ weekly_tp_themes.w5.name }}
+#### {{ badge("Week " + (tfw + 2))}} {{ weekly_tp_themes.w5.name }}
 
 * Gather requirements in the form of _user stories_.
 * Decide which of them will go into the first version.
 
-#### {{ badge("Week 6")}} {{ weekly_tp_themes.w6.name }}
+#### {{ badge("Week " + (tfw + 3))}} {{ weekly_tp_themes.w6.name }}
 
 * Decide how the product will look like at {{ version_first }}.
 * Record that product concept in the form of a user guide.
 
-#### {{ badge("Week 7")}} {{ weekly_tp_themes.w7.name }}
+#### {{ badge("Week " + (tfw + 4))}} {{ weekly_tp_themes.w7.name }}
 
 * Ensure development environment is set up.
 
@@ -92,13 +94,13 @@ The first half of the tP is light because you will be doing the iP in parallel d
 
 <div class="indented-level2">
 
-#### {{ badge("&nbsp;W8&nbsp;")}} {{ badge("&nbsp;W9&nbsp;")}} Iteration 1 → {{ version_first }}
+#### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iteration 1 → {{ version_first }}
 
 * This is the first proper iteration.
 * Aim to deliver an <tooltip content="Minimum Viable Product">MVP</tooltip> version of the product.
 
 
-#### {{ badge("W10")}} {{ badge("W11")}} Iteration 2 → {{ version_penultimate }}
+#### {{ badge("W" + (tfw + 7))}} {{ badge("W" + (tfw + 8))}} Iteration 2 → {{ version_penultimate }}
 
 <div tags="m--cs2113 m--cs2103">
 
@@ -111,7 +113,7 @@ The first half of the tP is light because you will be doing the iP in parallel d
 </div>
 
 
-#### {{ badge("W12")}} {{ badge("W13") if module == "TIC4001" else "" }} Iteration 3 → {{ version_final }}
+#### {{ badge("W" + (tfw + 9))}} {{ badge("W" + (tfw + 10)) if tic4001 or tic4002 }} Iteration 3 → {{ version_final }}
 
 <div tags="m--cs2113 m--cs2103">
 

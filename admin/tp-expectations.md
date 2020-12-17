@@ -12,9 +12,9 @@
 
 The high-level learning outcome of the team project (tP):
 
-<box> {{ icon_outcome }} Can contribute production quality SE work to a small/medium software project </box>
+<box> {{ icon_outcome }} Can contribute production quality SE work to a small/medium {{ "_brownfield_ " if cs2103 or tic4002 }}software project </box>
 
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--tic4002">
 
 Accordingly, the tP is structured to resemble an intermediate stage of a non-trivial real-life brownfield software project in which you will,
  1. conceptualize and implement enhancements to a given product, and,
@@ -28,12 +28,19 @@ Accordingly, the tP is structured to resemble an early stage of a small software
 </div>
 
 The focus of the tP is to learn the following aspects:
-* ~~coding~~
-* working in a team
-* process/workflow
-* documentation
-* scheduling and tracking project progress, meeting delivery deadline
-* quality assurance
+1. ~~coding~~ %%(taken for granted, not focused on specifically)%%
+1. working in a team
+1. process/workflow
+1. documentation
+1. scheduling and tracking project progress, meeting delivery deadline
+1. quality assurance
+
+<box type="info" tags="m--tic4002" icon=":fas-not-equal:" seamless>
+
+**TIC4001 vs TIC4002**{.text-info}
+
+TIC4002 focuses on aspect 6 in particular, as TIC4001 already covered 2-5 above (but you should improve on the 2-5 in this module as well).
+</box>
 
 <span id="tp-direction">
 
@@ -41,7 +48,7 @@ The focus of the tP is to learn the following aspects:
 
 ## Direction
 
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--tic4002">
 
 The tP uses a generic application called [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) (from https://se-education.org) as the starting point.
 
@@ -71,7 +78,7 @@ You may develop any product provided it is meant for users who can type fast, an
     * ...
 </div>
 
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--tic4002">
 
 * **Direction 1: Evolve** <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app.
   * Some examples:
@@ -106,6 +113,11 @@ You may develop any product provided it is meant for users who can type fast, an
 ==You are strongly discouraged from developing a GUI application== as it can increase the workload unnecessarily.
 {{ embed_topic("tp-constraints.md#Recommendation-No-GUI", "Admin " + icon_embedding + " tP Contstraints → Recommendation-No-GUI", "2", indent="1") }}
 </div>
+
+<box type="info" tags="m--tic4002" seamless>
+
+**You are allowed to reuse the project idea/code from TIC4001**, as long as it fits the TIC4002 requirements/constraints.
+</box>
 
 <!-- ==================================================================================================== -->
 
@@ -146,7 +158,7 @@ The size of the target market is not a grading criterion. You can make it as nar
 
 <h2 class="text-white bg-danger p-1">Functionality Expectations</h2>
 
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--tic4002">
 
 **The expected level of _functionality_ to be added by a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Furthermore, we expect a team to reach that level if each member puts in an effort equivalent to the effort they put into the iP. Some examples meeting that criterion:
 * Example 1: A fictional contact management app optimized for a specific target user group:
@@ -164,7 +176,7 @@ The size of the target market is not a grading criterion. You can make it as nar
 
 ==You will get full marks for implementation effort== if you meet the expectation stated above. There are no extra marks for exceeding that bar. You are better off spending that effort in improving other aspects of the project.
 
-<box tags="m--cs2103">
+<box tags="m--cs2103 m--tic4002">
 
 {{ icon_tip }} If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
   * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)
@@ -195,7 +207,7 @@ In fact, here is the grading criterion for the individual project effort:
   1. features fit together to form a cohesive product,
   1. documentation follows a consistent style and presents a cohesive picture to the reader, and
   1. final project demo presents a cohesive picture to the audience.
-* <span class="badge badge-success">Expectation</span> <span class="text-success">**Maintain product quality**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--cs2113">Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
+* <span class="badge badge-success">Expectation</span> <span class="text-success">**Maintain product quality**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--tic4002 m--cs2113">Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
 * <span class="badge badge-success">Expectation</span> <span class="text-success">**Manage the project**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
 </span>
 
@@ -211,7 +223,7 @@ In fact, here is the grading criterion for the individual project effort:
   * User-visible features are preferred, but it is not a strict requirement.:
   * **The enhancement(s) should fit with the rest of the software** (and the target user profile) and should have the consent of the team members. %%You will lose marks if you go 'rogue' and add things that don't fit with the product.%%
 
-<div tags="m--cs2103" class="indented-level4">
+<div tags="m--cs2103 m--tic4002" class="indented-level4">
 
 Some examples:
 
@@ -229,7 +241,7 @@ Some examples:
 
 * **Tip: Do _all_ the work related to your enhancement yourself.** %%Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%
 
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--tic4002">
 
 * **Tip: Divide the components of the product among team members**. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components to fit their features, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
 </div>
@@ -278,7 +290,7 @@ _Team-tasks_ are the tasks that _someone_ in the team has to do.
 Here is a non-exhaustive list of team-tasks:
 
 1. Setting up the GitHub team org/repo
-1. Necessary general code enhancements{% if cs2103 %} e.g.,
+1. Necessary general code enhancements{% if cs2103 or tic4002 %} e.g.,
    1. Work related to renaming the product
    1. Work related to changing the product icon
    1. Morphing the product into a different product{% endif %}
@@ -315,7 +327,7 @@ This is a non-exhaustive list; you may define additional roles.
 * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
 * _[Tool ABC] expert_: %%e.g. Intellij expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
 
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--tic4002">
 
 * _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in {{ version_penultimate }}-{{ version_final }}.
 </div>

@@ -31,7 +31,7 @@
 <variable name="ip_first_week">2</variable>
 <variable name="ip_last_week">8</variable>
 
-<variable name="tp_first_week">3</variable>
+<variable name="tp_first_week">2</variable>
 <variable name="version_practice">v1.1</variable>
 <variable name="version_first">v1.2</variable>
 <variable name="version_penultimate">v1.3</variable>

@@ -10,18 +10,23 @@
 
 #### When to form teams
 
-{% set session = "lecture" if module == "TIC4001" else "tutorial" %}
+{% set session = "lecture" if tic4001 or tic4002 else "tutorial" %}
 {% if has_t %}* {{ module }}T: Your team will be formed by the CS2101 side.{% endif %}
-* {{ (module + ":") if module != "TIC4001" else "" }} Team forming will be done at the _start_ of the week 3 {{ session }}. If you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
+* {{ (module + ":") if not tic4001 }} Team forming will be done at the _start_ of the week 3 {{ session }}. If you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
 
 #### Team size
 
-* The default ==team size is {{ "four" if module == "TIC4001" else "five"}}==.
+* The default ==team size is {{ "four" if tic4001 or tic4002 else "five"}}==.
 
 #### Team composition
 
 {% if tic4001 %}
 * **You can either form teams yourselves or let us put you in teams.**
+{% elif tic4002 %}
+* There are two options:<br>
+  Option 1: Everyone stays with their TIC4001 team for TIC4002 as well.<br>
+  Option 2: No one is allowed to have their TIC4001 team members in the TIC4002 team.
+* One of the two options will be chosen based on a vote. The selection option will apply to the whole class. A mixture is not possible due to the small class size.
 {% else %}
 * **We allow some freedom in choosing team members**, subject to these constraints:
   * **All team members should be in the same tutorial.** ==Delay forming teams until your place in a tutorial is confirmed.== We do not allow changing tutorials to team up with your preferred team mates.
@@ -39,19 +44,21 @@
 
 * **To be given to you after forming teams.**
 
-{% if not tic4001 %}
+{% if tic4001 %}
+* **Has the form `{MODULE_CODE}-{TEAM_NUMBER}`** e.g, `{{ module }}-2` means you are in team `2`.
+{% elif tic4002 %}
+* **Has the form `TIC4002-F18-TEAM_NUMBER`** e.g, `TIC4002-F18-2` means you are in team `2`. The `TIC4002-F18-` prefix is needed to comply with some tools that we'll be using in the module.
+{% else %}
 * **Has the form `TUTORIAL_ID-TEAM_NUMBER`** e.g, `{{ module }}-W14-2` means you are in tutorial `{{ module }}-W14` (i.e., in module `{{ module }}`, on `Wednesday`, at `1400-1500`), team `2`.
 
 <div class="indented-level2">
 
 {{ embed_topic("tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial IDs", "3") }}
 </div>
-{% else %}
-* **Has the form `{MODULE_CODE}-{TEAM_NUMBER}`** e.g, `{{ module }}-2` means you are in team `2`.
 {% endif %}
 
 </div>
-<div id="teamCommunication">
+<div id="teamCommunication" tags="m--cs2103 m--cs2113">
 
 #### Team Communications
 

@@ -1,27 +1,25 @@
 {% from "common/macros.njk" import get_date with context %}
 
 {% set weekly_tp_tasks = {
-week3: [
-  {id: 'get_familiar_with_ab3'},
-  {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'}
+week2: [
+  {id: 'get_familiar_with_ab3'}
 ],
-week4: [
-  {id: 'start_weekly_meetings'},
+week3: [
   {id: 'start_project_notes', deadline: 'before the tutorial'},
   {id: 'decide_project_direction', deadline: 'before the tutorial'}
 ],
-week5: [
+week4: [
   {id: 'brainstorm_user_stories', deadline: 'before the tutorial'},
   {id: 'prioritize_user_stories', deadline: 'before/during the tutorial'}
 ],
-week6: [
+week5: [
   {id: 'conceptualize_first_version'},
   {id: 'draft_the_ug'},
   {id: 'refine_product_design'},
   {id: 'set_up_project_repo'},
   {id: 'get_familiar_with_the_code_base'}
 ],
-week7: [
+week6: [
   {id: 'do_a_practice_iteration', deadline: 'midnight before the tutorial'},
   {id: 'update_website_aboutus_readme'},
   {id: 'update_the_ug'},
@@ -29,17 +27,17 @@ week7: [
   {id: 'plan_the_next_iteration'},
   {id: 'start_implementing_the_next_version'}
 ],
-week8: [
+week7: [
   {id: 'ensure_you_know_tp_expectations'},
   {id: 'start_proper_milestone_management'},
   {id: 'add_first_functionality_increment'}
 ],
-week9: [
+week8: [
   {id: 'deliver_first_version'},
   {id: 'wrap_up_first_version'},
   {id: 'do_an_informal_demo', deadline: 'before the tutorial'}
 ],
-week10: [
+week9: [
   {id: 'do_a_postmortem'},
   {id: 'adjust_process_rigor'},
   {id: 'start_on_the_penultimate_version'},
@@ -47,7 +45,7 @@ week10: [
   {id: 'smoke_test_catcher', deadline: 'COMPULSORY', graded: true},
   {id: 'do_a_release'}
 ],
-week11: [
+week10: [
   {id: 'deliver_the_feature'},
   {id: 'update_user_docs'},
   {id: 'release_as_a_jar_file'},
@@ -55,15 +53,17 @@ week11: [
   {id: 'wrap_up_penultimate_version'},
   {id: 'demo_penultimate_version', deadline: 'before the tutorial'}
 ],
-week12: [
+week11: [
   {id: 'attend_the_PED', deadline: 'During the lecture', graded: true},
-  {id: 'tweak_product_as_per_PED'},
+  {id: 'tweak_product_as_per_PED'}
+],
+week12: [
   {id: 'draft_the_ppp'},
   {id: 'prepare_for_demo'},
-  {id: 'double_check_reposense_compatibility'}
+  {id: 'double_check_reposense_compatibility'},
+  {id: 'do_final_tweaks'}
 ],
 week13: [
-  {id: 'do_final_tweaks'},
   {id: 'submit_final_deliverables', deadline: get_date(date_final_submission)},
   {id: 'wrap_up_final_milesone', deadline: get_date(date_final_submission, 2)},
   {id: 'demo_the_product', deadline: get_date(date_final_submission, 2)},

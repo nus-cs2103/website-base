@@ -20,7 +20,7 @@
 
 **Your project should comply with the following constraints.** %%**Reason**: to increase comparability among projects and to maximize applicability of module learning outcomes in the project.%%
 
-<span tags="m--cs2103">
+<span tags="m--cs2103 m--tic4002">
 
 {% call show_constraint("Constraint-Brownfield") -%}
 The final product should be a result of evolving/enhancing/morphing the given code base. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. done in small steps, each producing a working product%%<br/>
@@ -96,12 +96,12 @@ Please ==post in the [forum]({{url_module_org}}/forum/issues) your request to us
 Package everything into a single JAR file.<br>
 %%**Reason:** Requiring the users to download more files can cause complications in the final peer testing session.%%
 
-If you are unable to package everything to a JAR file, package the JAR file and other files needed into a single zip file.
+If you are unable to package everything into a JAR file, package the JAR file and other files needed into a single zip file.
 {%- endcall  %}
 
 {% call show_constraint("Constraint-File-Size") -%}
 The file sizes of the deliverables should not exceed the limits given below. <br>
-<div tags="m--cs2113 m--cs2103">
+<div tags="m--cs2113 m--cs2103 m--tic4002">
 
 %%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue%%:</div>
 
@@ -145,7 +145,7 @@ Creating a good Java GUI takes a lot of extra effort, which can easily push the 
 
 {% call show_constraint("Recommendation-CLI-First", recommendation=true) -%}
 Following from the _Constraint-Typing-Preferred_, if the app is optimized for the target user (graded under the _product design_ criterion), ==a user who can type fast should be able to accomplish most tasks faster via CLI, compared to a hypothetical GUI-only version of the app.== %%For example, adding a new entity via the CLI should be faster than entering the same data through a GUI form.%%<br>
-Therefore, the input to the app needs to be primarily CLI. <span tags="m--cs2103">The GUI is used primarily to give visual feedback to the user.</span><span tags="m--cs2113 m--tic4001">If you do implement a GUI, that GUI should primarily be used to give visual feedback to the user.</span> While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br>
+Therefore, the input to the app needs to be primarily CLI. <span tags="m--cs2103 m--tic4002">The GUI is used primarily to give visual feedback to the user.</span><span tags="m--cs2113 m--tic4001">If you do implement a GUI, that GUI should primarily be used to give visual feedback to the user.</span> While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br>
 Also keep in mind:
 * Regular typing is usually faster than using key combinations.
 * <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert users.<br>
