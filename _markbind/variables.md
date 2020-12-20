@@ -1,66 +1,67 @@
 <!-- ===========================  primary module configuration ============================================= -->
 
-<variable name="module">CS2103</variable>
-<variable name="module_pair">{{ module }}/T</variable>
-<variable name="module_name">Software Engineering</variable>
-<variable name="module_color">success</variable>
+<variable name="module">TIC4002</variable>
+<variable name="module_pair">{{ module }}</variable>
+<variable name="module_name">Software Engineering Practicum II</variable>
+<variable name="module_color">info</variable>
 
-<variable name="S">1</variable>
-<variable name="semester">AY2021S{{ S }}</variable>
-<variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="S">2</variable>
+<variable name="semester">AY2122S{{ S }}</variable>
+<variable name="previous_semester">AY2021S2</variable>
+<variable name="period">2022 Jan-May</variable>
+<variable name="current_week">15</variable> <!-- after semester ends, set this to 15 and enable built-in search in site.json -->
 
-<variable name="algolia">no</variable>
+<variable name="algolia">yes</variable>
 
-<variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
+<variable name="luminus_module_id">c3d92216-08d6-42a7-a323-f6cd46f8ef8e</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vR7NmKu1dSMXzpQToHbuaCQTFj-vn-zfZenM2p9ppbTcOizTB8mRmMIazA4FObQKq73cnev-i05ERVe/pub?embedded=true</variable>
 <variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3a_jktTRgGRyxtobFrPBxEflj7uwSa7UuKBdvfoUNAlFo1%40thread.tacv2/conversations?groupId=103e3d04-7e41-42aa-8b0f-53b835af2095&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
 <variable name="date_w1_start">2022-01-10</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
 <variable name="recess_after_week">7</variable>
-<variable name="time_lecture_start">1600</variable>
-<variable name="time_lecture_end">1800</variable>
-<variable name="time_t_lecture_start">1200</variable>
-<variable name="time_t_lecture_end">1400</variable>
+<variable name="time_lecture_start">1400</variable>
+<variable name="time_lecture_end">1600</variable>
+<variable name="time_t_lecture_start">1400</variable>
+<variable name="time_t_lecture_end">1600</variable>
 
 <variable name="ip_name">iP</variable>
 <variable name="ip_repo_name">ip</variable>
 <variable name="ip_first_week">2</variable>
-<variable name="ip_last_week">8</variable>
+<variable name="ip_last_week">6</variable>
 
-<variable name="tp_first_week">3</variable>
+<variable name="tp_first_week">2</variable>
 <variable name="version_practice">v1.1</variable>
 <variable name="version_first">v1.2</variable>
 <variable name="version_penultimate">v1.3</variable>
 <variable name="version_final">v1.4</variable>
 <variable name="version_future">v2.0</variable>
-<variable name="example_team_id">{{ module }}-T09-2</variable>
+<variable name="example_team_id">{{ module }}-F18-2</variable>
 
 <variable name="ug_pages_per_person">1</variable>
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
-<variable name="marks_ip">30</variable>
-<variable name="marks_ip_implementation">15</variable>
-<variable name="marks_ip_pm">10</variable>
+<variable name="marks_ip">20</variable>
+<variable name="marks_ip_implementation">10</variable>
+<variable name="marks_ip_pm">5</variable>
 <variable name="marks_ip_documentation">5</variable>
-<variable name="marks_tp">45</variable>
+<variable name="marks_tp">75</variable>
 <variable name="marks_tp_design">5</variable>
-<variable name="marks_tp_documentation">10</variable>
-<variable name="marks_tp_implementation">10</variable>
-<variable name="marks_tp_pm">10</variable>
-<variable name="marks_tp_pm_individual">5</variable>
+<variable name="marks_tp_documentation">15</variable>
+<variable name="marks_tp_implementation">25</variable>
+<variable name="marks_tp_pm">15</variable>
+<variable name="marks_tp_pm_individual">10</variable>
 <variable name="marks_tp_pm_team">5</variable>
-<variable name="marks_tp_qa">10</variable>
-<variable name="marks_tp_individual">35</variable>
+<variable name="marks_tp_qa">15</variable>
+<variable name="marks_tp_individual">65</variable>
 <variable name="marks_tp_team">10</variable>
 <variable name="marks_participation">5</variable>
-<variable name="marks_exam">30</variable>
+<variable name="marks_exam">0</variable>
 <variable name="marks_exam_essay">0</variable>
 <variable name="marks_exam_mcq">30</variable>
-<variable name="marks_ca">70</variable>
+<variable name="marks_ca">100</variable>
 <variable name="mcq_count">100</variable>
 
 
