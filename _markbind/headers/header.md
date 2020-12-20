@@ -4,7 +4,7 @@
 {% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is not ready yet! The updated version will be available soon.**</md></div >
 {% elseif current_week in ["0", "1"] %}
-<div class="w-100 p-1 bg-success text-center text-white"><md>This module will be **fully online** this semester. There is no need for on-campus presence.</md></div>
+<div tags="m--cs2103 m--cs2113" class="w-100 p-1 bg-success text-center text-white"><md>This module will be **fully online** this semester. There is no need for on-campus presence.</md></div>
 {% elseif current_week == "15" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is from a past semester! The current version will be [here](http://www.comp.nus.edu.sg/~{{ module | lower }}) when the new semester starts.**</md></div>
 {% endif %}
