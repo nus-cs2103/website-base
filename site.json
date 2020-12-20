@@ -1,6 +1,6 @@
 {
   "baseUrl": "/website",
-  "titlePrefix": "CS2103/T",
+  "titlePrefix": "TIC4002",
   "style": {
     "codeTheme": "light",
     "codeLineNumbers": true
@@ -62,20 +62,20 @@
   "plugins": ["filterTags", "algolia", "codeBlockCopyButtons"],
   "pluginsContext": {
     "filterTags" : {
-      "tags": ["m--cs2103"]
+      "tags": ["m--tic4002"]
     },
     "algolia": {
       "apiKey": "3e2fd3c3b12a363309307794dce54969",
       "appId": "3DU4XTBX4T",
       "indexName": "nus-tic-cs",
       "searchParameters": {
-        "facetFilters": [["site:nus-cs2103-ay2223s1.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
+        "facetFilters": [["site:nus-tic4002-ay2223s2.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
       }
     }
   },
     "deploy": {
     "message": "Site Update.",
-    "repo": "https://github.com/nus-cs2103-AY2223S1/website.git",
+    "repo": "https://github.com/nus-tic4002-AY2223S2/website.git",
     "branch": "gh-pages"
   }
 }
