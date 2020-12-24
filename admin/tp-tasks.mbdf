@@ -878,11 +878,11 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 {%- endmacro %}
 
 {% macro get_pr_link(team_id) -%}
-<a href="https://github.com/nus-{{ module | lower}}-{{ semester }}/tp/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge badge-primary">PR</a>
+<a href="https://github.com/nus-{{ module | lower}}-{{ semester }}/{{ tp_repo_name }}/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge badge-primary">PR</a>
 {%- endmacro  %}
 
 {% macro get_dg_link(team_id) -%}
-<a href="https://{{ semester }}-{{ team_id | lower}}.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a>
+<a href="https://{{ semester }}-{{ team_id | lower}}.github.io/{{ tp_repo_name }}/DeveloperGuide.html" class="badge badge-primary">DG</a>
 {%- endmacro  %}
 
 {% macro get_links(team_id) -%}

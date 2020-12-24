@@ -20,7 +20,7 @@ The full team details page is not available yet. In the meantime ==see [here](ht
 <div class="row">
 <div class="col border">
 
-### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/tp/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> [<img src="{{ team_repo }}/workflows/Java%20CI/badge.svg">]({{ team_repo }}/actions)
+### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/{{ tp_repo_name }}/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> [<img src="{{ team_repo }}/workflows/Java%20CI/badge.svg">]({{ team_repo }}/actions)
 
 <span tags="m--cs2103 m--tic4002">
 
@@ -63,8 +63,8 @@ The full team details page is not available yet. In the meantime ==see [here](ht
     {% set student_name = student[0] %}
     {% set student_username = student[2] %}
     {% set team_org = semester + '-' + student_team %}
-    {% set team_website = "https://" + team_org + ".github.io/tp" %}
-    {% set team_repo = "https://github.com/" + team_org + "/tp" %}
+    {% set team_website = "https://" + team_org + ".github.io/" + tp_repo_name %}
+    {% set team_repo = "https://github.com/" + team_org + "/" + tp_repo_name %}
 
     {% if student_tutorial == tutorial %}
       {% if current_team != student_team %}

@@ -77,14 +77,14 @@ The tP project template given to you is a variation of the iP repo you used for 
 
 </box>
 
-1. **Fork** the [{{url_module_org}}/tp]({{url_module_org}}/tp) repo to your team org.
+1. **Fork** the [{{url_module_org}}/{{ tp_repo_name }}]({{url_module_org}}/{{ tp_repo_name }}) repo to your team org.
    * This repo (let's call it the _team repo_) is to be used as the repo for your project.
    * <span id="do-not-rename">{{ icon_important_big_red }} Please do not rename the fork %%Reason: our grading scripts rely on the repo name.%%</span>
 1. **Enable the issue tracker**.
 1. **Enable GitHub Actions**: Go to the {{ show_as_rounded_tab(':fas-play-circle: Actions') }} tab and enable workflows by clicking the {{ button('I understand my workflows ...', button_style="success") }} button. That will enable the GitHub Actions that are already included in the repo you forked.
 {% if cs2103 %}
 1. **Set up the project website**<br>
-   Follow instructions in the [_Documentation guide_ page]({{ url_ab3_fork_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/tp` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/tp`.
+   Follow instructions in the [_Documentation guide_ page]({{ url_ab3_fork_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/{{ tp_repo_name }}` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/{{ tp_repo_name }}`.
 {% elseif module == "CS2113" or module == "TIC4001"%}
 1. **Enable GitHub Pages**: Go to the {{ show_as_rounded_tab(':octicon-gear: Settings') }} tab and enable `GitHub Pages` for the `master branch /docs folder` (similar to how you did it in the iP).<br>
    Remember to choose a theme too by clicking the {{ button('**Choose a theme**') }} button (that will create a commit in your repo that is needed in a later step.<br>
@@ -92,7 +92,7 @@ The tP project template given to you is a variation of the iP repo you used for 
 {% endif %}
 1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
    Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
-1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/tp]({{url_module_org}}/tp)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ example_team_id }}] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
+1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/{{ tp_repo_name }}]({{url_module_org}}/{{ tp_repo_name }})] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ example_team_id }}] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
    Please fill in these details as specified because they are used by our grading scripts.
    * **PR subject: the name of your product** e.g., `InsureList`
    * **Description: a 1-2 sentence overview** (plain text only, no formatting or links) of your project indicating the target user and the value proposition e.g., `InsureList helps insurance agents manage detail of their clients. It is optimized for CLI users so that frequent tasks can be done faster by typing in commands.`
@@ -158,12 +158,12 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 ****({{ icon_individual }}, {{ icon_individual }}, {{ icon_individual }}, ...) Every team member:****
 
-1. **Watch** the `tP` repo (created above) i.e., go to the repo and click on the {{ button(':octicon-eye: Watch :octicon-triangle-down:') }} button to subscribe to activities of the repo.
-1. **Fork** the `tP` repo to your personal GitHub account.<br>
+1. **Watch** the `{{ tp_repo_name }}` repo (created above) i.e., go to the repo and click on the {{ button(':octicon-eye: Watch :octicon-triangle-down:') }} button to subscribe to activities of the repo.
+1. **Fork** the `{{ tp_repo_name }}` repo to your personal GitHub account.<br>
    <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
 1. **Set up** the developer environment in your computer by following the
-   <span tags="m--cs2103 m--tic4002">[_Setting up and getting started_ page]({{ url_ab3_fork_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113 m--tic4001">the [README]({{url_module_org}}/tp) carefully as the ==steps are different from the iP==.</span>
+   <span tags="m--cs2103 m--tic4002">[_Setting up and getting started_ page]({{ url_ab3_fork_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113 m--tic4001">the [README]({{url_module_org}}/{{ tp_repo_name }}) carefully as the ==steps are different from the iP==.</span>
 
 <box type="wrong" seamless>
 

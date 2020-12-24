@@ -80,6 +80,8 @@
 <variable name="session_name">{{ "lecture" if tic4001 else "tutorial" }}</variable>
 <variable name="Session_name">{{ "Lecture" if tic4001 else "Tutorial" }}</variable>
 
+<variable name="tp_repo_name">{{ "tp2" if tic4002 else "tp"}}</variable>
+
 <variable name="w6_days">{{ 14 if recess_after_week == "6" else 7 }}</variable>
 <variable name="w7_days">{{ 14 if recess_after_week == "7" else 7 }}</variable>
 
@@ -111,7 +113,7 @@
 <variable name="url_gitter">https://gitter.im/{{ module_org }}/community</variable>
 <variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
-<variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/tp</variable>
+<variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/{{ tp_repo_name }}</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
 <variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/{{ "intermediate" if cs2103 else "basic"}}.html</variable>
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
