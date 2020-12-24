@@ -748,7 +748,7 @@ While we are on the topic, also note that the architecture of AB3 doesn't suite 
 <span id="heading_smoke_test_catcher">{{ icon_individual }} Smoke-test CATcher</span>
 <span id="desc_smoke_test_catcher">
 
-* **This activity is <span class="text-danger">compulsory</span> and counts for `3` participation points.** Please do it before the deadline.
+* **This activity is <span class="text-danger">compulsory</span> and counts for `3` participation points.** Please do it before the weekly deadline.{% if tic4002 %} This will be counted for next week's participation.{% endif %}
 <div class="indented-level2">
 
 <box dismissible>
