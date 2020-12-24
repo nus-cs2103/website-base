@@ -29,7 +29,7 @@
     * Each activity earns 2 points unless specified otherwise.
 </div>
 
-<div tags="m--tic4001">
+<div tags="m--tic4001 m--tic4002">
 
   * Weekly quiz(es):
     * Quizzes open around the lecture time and stay open until the next lecture starts.
@@ -69,7 +69,7 @@
 
 </div>
 
-****{{ thumb("C", "info") }} Tutorial attendance/participation not too low****
+****{{ thumb("C", "info") }} {{ "Lecture" if tic4002 else "Tutorial" }} attendance/participation not too low****
 
 <div class="indented">
 

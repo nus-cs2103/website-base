@@ -102,12 +102,12 @@ The first half of the tP is light because you will be doing the iP in parallel d
 
 #### {{ badge("W" + (tfw + 7))}} {{ badge("W" + (tfw + 8))}} Iteration 2 → {{ version_penultimate }}
 
-<div tags="m--cs2113 m--cs2103">
+<div tags="m--cs2113 m--cs2103 m--tic4002">
 
 * This version will be tested by peers and you will receive the bug reports without any penalty.
 * Aim to **deliver all <tooltip content="i.e., all features you plan to deliver in this project at the end of the semester">target features</tooltip>** so that you can get them tested for free.
 </div>
-<div tags="m--tic4001">
+<div tags="m--tic4001 m--tic4002">
 
 * Aim to **deliver almost all <tooltip content="i.e., all features you plan to deliver in this project at the end of the semester">target features</tooltip>** because there will be additional documentation work to be done in the next iteration.
 </div>
@@ -120,7 +120,7 @@ The first half of the tP is light because you will be doing the iP in parallel d
 * This iteration is <span class="text-danger">shorter</span> (slightly more than one week).
 * Plan to use this **for bug fixing and polishing up documentation**.
 </div>
-<div tags="m--tic4001">
+<div tags="m--tic4001 m--tic4002">
 
 * Do final fine tuning to features.
 * Add documentation.
@@ -130,7 +130,7 @@ The first half of the tP is light because you will be doing the iP in parallel d
 
 **The final submission** will be at the {{ "end" if module == "TIC4001" else "start" }} of week 13. [Deliverables](tp-deliverables.html) include an executable jar file, a product website (containing both user and developer documentation), a demo video, among other things.
 
-<div class="indented-level2" tags="m--cs2113 m--cs2103">
+<div class="indented-level2" tags="m--cs2113 m--cs2103 m--tic4002">
 
 #### {{ badge("W13")}} Evaluation
 

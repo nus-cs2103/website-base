@@ -18,8 +18,6 @@
     {level: 2, id: "ip-w4", title: "iP: Week 4", link: "ip-w4.html", priority: 2},
     {level: 2, id: "ip-w5", title: "iP: Week 5", link: "ip-w5.html", priority: 2},
     {level: 2, id: "ip-w6", title: "iP: Week 6", link: "ip-w6.html", priority: 1},
-    {level: 2, id: "ip-w7", title: "iP: Week 7", link: "ip-w7.html", priority: (4 if module == "CS2103" else 1)},
-    {level: 2, id: "ip-w8", title: "iP: Week 8", link: "ip-w8.html", priority: 1},
     {level: 2, id: "ip-grading", title: "iP: Grading", link: "ip-grading.html", priority: 2},
   {level: -1, id: "project", title: "Team Project (tP)"},
     {level: 2, id: "tp-expectations", title: "tP (team project): Expectations", link: "tp-expectations.html", priority: 2},
@@ -57,39 +55,22 @@
 
 {% set weekly_admin_topics = {
 week1: [
-  {faq_id: "admin-faq-whereIsEverything"},
   {topic_id: "tp-teams"},
   {topic_id: "textbooks"},
-  {topic_id: "gradeBreakdown"},
-  {faq_id: "admin-faq-tVsNonT"},
-  {faq_id: "admin-faq-highWorkload"},
-  {faq_id: "admin-faq-aPlus"}],
+  {topic_id: "gradeBreakdown"}],
 week2: [
   {policy_id: "policy-plagiarism"},
   {policy_id: "policy-reuse"},
-  {policy_id: "policy-outsiderHelp"},
-  {policy_id: "policy-followingInstructions"},
-  {policy_id: "policy-techHelp"},
-  {topic_id: "appendixA-principles"},
-  {faq_id: "admin-faq-separateWebsite"},
-  {faq_id: "admin-faq-slideFormat"},
-  {faq_id: "admin-faq-selfStudy"},
-  {faq_id: "admin-faq-noLaptop"}],
+  {policy_id: "policy-techHelp"}],
 week3: [
-  {topic_id: "tutorials"},
   {topic_id: "peerEvaluations"},
   {topic_id: "standardsAndConventions"},
   {topic_id: "tp-supervision"},
   {policy_id: "policy-teamSize"}],
-week4: [
-  {faq_id: "admin-faq-narrowScope"},
-  {faq_id: "admin-faq-favoriteTool"},
-  {policy_id: "policy-publishingSubmissions"}],
+week4: [],
 week5: [
   {topic_id: "tp-grading"},
-  {policy_id: "policy-workDistribution"},
-  {policy_id: "policy-responseTime"},
-  {faq_id: "admin-faq-beanCounting"}],
+  {policy_id: "policy-workDistribution"}],
 week6: [
   {topic_id: "appendixF-teamworkIssues"},
   {faq_id: "admin-faq-manySubmissions"},

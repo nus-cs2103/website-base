@@ -5,12 +5,12 @@ week2: [
   {id: 'get_familiar_with_ab3'}
 ],
 week3: [
-  {id: 'start_project_notes', deadline: 'before the tutorial'},
-  {id: 'decide_project_direction', deadline: 'before the tutorial'}
+  {id: 'start_project_notes', deadline: 'before the next lecture'},
+  {id: 'decide_project_direction', deadline: 'before the next lecture'}
 ],
 week4: [
-  {id: 'brainstorm_user_stories', deadline: 'before the tutorial'},
-  {id: 'prioritize_user_stories', deadline: 'before/during the tutorial'}
+  {id: 'brainstorm_user_stories'},
+  {id: 'prioritize_user_stories'}
 ],
 week5: [
   {id: 'conceptualize_first_version'},
@@ -20,7 +20,7 @@ week5: [
   {id: 'get_familiar_with_the_code_base'}
 ],
 week6: [
-  {id: 'do_a_practice_iteration', deadline: 'midnight before the tutorial'},
+  {id: 'do_a_practice_iteration'},
   {id: 'update_website_aboutus_readme'},
   {id: 'update_the_ug'},
   {id: 'update_dg_user_stories_etc'},
@@ -35,7 +35,7 @@ week7: [
 week8: [
   {id: 'deliver_first_version'},
   {id: 'wrap_up_first_version'},
-  {id: 'do_an_informal_demo', deadline: 'before the tutorial'}
+  {id: 'do_an_informal_demo'}
 ],
 week9: [
   {id: 'do_a_postmortem'},
@@ -51,7 +51,7 @@ week10: [
   {id: 'release_as_a_jar_file'},
   {id: 'make_code_reposense_compatible'},
   {id: 'wrap_up_penultimate_version'},
-  {id: 'demo_penultimate_version', deadline: 'before the tutorial'}
+  {id: 'demo_penultimate_version'}
 ],
 week11: [
   {id: 'attend_the_PED', deadline: 'During the lecture', graded: true},

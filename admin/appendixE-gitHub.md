@@ -163,7 +163,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
    <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
 1. **Set up** the developer environment in your computer by following the
-   <span tags="m--cs2103">[_Setting up and getting started_ page]({{ url_ab3_fork_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113 m--tic4001">the [README]({{url_module_org}}/tp) carefully as the ==steps are different from the iP==.</span>
+   <span tags="m--cs2103 m--tic4002">[_Setting up and getting started_ page]({{ url_ab3_fork_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113 m--tic4001">the [README]({{url_module_org}}/tp) carefully as the ==steps are different from the iP==.</span>
 
 <box type="wrong" seamless>
 

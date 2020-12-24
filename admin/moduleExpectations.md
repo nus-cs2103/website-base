@@ -48,7 +48,7 @@ As {{ marks_ca }}% of this module is based on CA (see <trigger trigger="click" f
 * **Three-stars topics** {{ three_stars }} can get you up to an **A{{ "/A+**" if module == "TIC4001" else "**"}}.
 * **Four-stars topics** {{ four_stars }} can push you beyond the limits of the module, and help you get into a level above those who merely limit themselves to the topics of the module. They ==are not <popover content="_examinable_ here means _can affect the grade_ during evaluation of various components, not necessarily limited to the final exam (if any)">examinable</popover>==.
 
-<span tags="m--cs2103 m--tic2002 m--tic4001">
+<span tags="m--cs2103 m--tic2002 m--tic4001 m--tic4002">
 
 * Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }} are relevant topics you are expected to have learned in prerequisite modules. They are given for reference, but ==are examinable==. The number of stars indicates the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.
 </span>

@@ -9,10 +9,13 @@
 <p/>
 
 #### When to form teams
-
+{% if not tic4002 %}
 {% set session = "lecture" if tic4001 or tic4002 else "tutorial" %}
 {% if has_t %}* {{ module }}T: Your team will be formed by the CS2101 side.{% endif %}
 * {{ (module + ":") if not tic4001 }} Team forming will be done at the _start_ of the week 3 {{ session }}. If you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.
+{% else %}
+* Teams forming will be done during the first lecture.
+{% endif %}
 
 #### Team size
 

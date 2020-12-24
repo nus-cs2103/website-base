@@ -127,7 +127,7 @@
 {% set priority = 5 %}
 {% for entry in entries %}
   {% set entry_priority = get_unit_priority(entry) | trim | int %}
-  {% if entry_priority != 0 and entry_priority < priority %}
+  {% if entry_priority not in [0, -1] and entry_priority < priority %}
     {% set priority = entry_priority %}
   {% endif %}
 {% endfor %}

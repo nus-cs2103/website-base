@@ -22,11 +22,11 @@ The full team details page is not available yet. In the meantime ==see [here](ht
 
 ### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/tp/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> [<img src="{{ team_repo }}/workflows/Java%20CI/badge.svg">]({{ team_repo }}/actions)
 
-<span tags="m--cs2103">
+<span tags="m--cs2103 m--tic4002">
 
 <img src="{{ team_website }}/images/Ui.png" width="750" onerror="this.src='images/placeholder-large.png';" /><p/>
 </span>
-<span tags="m--cs2103 m--tic4001">
+<span tags="m--cs2103 m--tic4001 m--tic4002">
 **Project notes** (internal): {% if teams[team_id] != '' %}see [here]({{ teams[team_id] }}){% else %}N/A{% endif %}
 </span>
 </div>

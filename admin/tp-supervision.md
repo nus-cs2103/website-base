@@ -11,21 +11,22 @@ Your tutor will serve as your _project supervisor_ too.
 
 One of the lecturers will be assigned as your team's tutor (aka project supervisor).
 </div>
+<div tags="m--cs2113 m--cs2103">
 
 **The supervisor's main job (in the context of this module) is to observe, facilitate self/peer learning, evaluate, and give feedback.**
 
 {{ Session_name }} time is the main avenue for meeting your supervisor. In addition, you can meet the supervisor at other times, as many times you need, subject to availability in his/her schedule.
+</div>
+<div tags="m--cs2113 m--cs2103 m--tic4002" id="making-project-decisions">
 
-<div tags="m--cs2113 m--cs2103" id="making-project-decisions">
-
-**Note that project supervisors are not allowed to contribute to graded components of your project work.** For example, if you are faced with a design decision in your project, the tutor is not allowed to make that decision for you.<br>
+**Note that {% if tic4002 %}it is not appropriate for instructors{%else%}tutors are not allowed{% endif %} to contribute to graded components of your project work.** For example, if you are faced with a design decision in your project, an instructor will not make that decision for you.<br>
  %%Reason: to ensure fairness across teams, and to ensure the work you submit for grading is entirely your own%%
 
-Following from the above, **don't expect the tutor to answer questions that are specific to graded deliverables** (e.g., ask which design alternative is better -- that's a decision you need to make yourself). At best, the tutor can channel the question to the professor. However, you can raise such questions in the module forum where the professor can answer the question in a general way that's not unfair to other teams (and other teams can benefit from the answer as well).
+Following from the above, **don't expect instructors to answer questions that are specific to graded deliverables** (e.g., ask which design alternative is better -- that's a decision you need to make yourself). <span tags="m--cs2103 m--cs2113">At best, the instructor can channel the question to the professor.</span> However, ==you can still raise such questions in the module forum== where the professor can answer the question in a general way that's not unfair to other teams (and other teams can benefit from the answer as well).
 
 <box type="tip" seamless>
 
-**How to make project decisions** (given your tutor is not going to make them for you)? Here are some tips:
+**How to make project decisions** (given instructors are not going to make them for you)? Here are some tips:
 
 * **Quickly try out the alternatives**. Rather than get into a _analysis-paralysis_ state, quickly prototype the alternatives to figure out which works better.
 * **Go with the team consensus/majority.** As most project components are graded by peers, the majority view within the team is a good approximation of how the result will be judged.

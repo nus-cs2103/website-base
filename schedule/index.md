@@ -23,20 +23,20 @@ pageNav: 1
 
 {% macro show_week_pagetop(week_num, category) %}
 
-{% if module == "TIC2002" %}
+{% if tic2002 %}
   {% set categories = {
     notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 4},
     topics: {name: "Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
     admin: {name: "Tasks", file: "admin", icon: icon_tab_tasks, pagenav: 4}
   } %}
-{% elseif module == "TE3201" %}
+{% elseif te3201 %}
   {% set categories = {
     notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 1},
     topics_py: {name: "Programming Topics", file: "topics-py", icon: icon_tab_programming_topics, pagenav: 4},
     topics: {name: "SE Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
     admin: {name: "Tasks", file: "admin", icon: icon_tab_tasks, pagenav: 4}
   } %}
-{% elseif module == "TIC4001" %}
+{% elseif (tic4001 or tic4002) %}
   {% set categories = {
     notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 4},
     tutorial: {name: "Lecture", file: "tutorial", icon: icon_tab_tutorial, pagenav: 4},
@@ -235,7 +235,7 @@ Topics allocated to the week will appear in this tab.
 {% if week_num == "1" %}
 <box type="info" dismissible>
 
-Information relevant to the week's {{ "lecture" if tic4001 else "tutorial" }} will appear in this tab.
+Information relevant to the week's {{ "lecture" if tic4001 or tic4002 else "tutorial" }} will appear in this tab.
 </box>
 {% endif %}
 <include src="tutorial-{{ module | lower }}.mbdf" optional />

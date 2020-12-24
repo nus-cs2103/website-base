@@ -52,7 +52,7 @@
               {name: "dependencies", heading: "Dependencies", priority: "0:3"},
               {name: "composition", heading: "Composition", priority: "0:3"},
               {name: "aggregation", heading: "Aggregation", priority: "0:3"},
-              {name: "associationClasses", heading: "Association Classes", priority: "-1"}
+              {name: "associationClasses", heading: "Association Classes", priority: "3"}
             ]
           }
         ]
@@ -189,9 +189,9 @@
             name: "",
             level_three_topics: [
               {name: "introduction", heading: "Introduction", priority: "0:2"},
-              {name: "identifying", heading: "Identifying", priority: "0:4"},
-              {name: "details", heading: "Details", priority: "0:4"},
-              {name: "usage", heading: "Usage", priority: "0:4"}
+              {name: "identifying", heading: "Identifying", priority: "3"},
+              {name: "details", heading: "Details", priority: "3"},
+              {name: "usage", heading: "Usage", priority: "3"}
             ]
           }
         ]
@@ -306,7 +306,7 @@
               {name: "classDiagramsBasic", heading: "Class Diagrams (Basics)", priority: "0:1"},
               {name: "addingMoreInfo", heading: "Adding More Info to UML Models", priority: "0:3"},
               {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "0:2"},
-              {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "0:4"},
+              {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "3"},
               {name: "objectDiagrams", heading: "Object Diagrams", priority: "0:1"},
               {name: "objectOrientedDomainModels", heading: "Object Oriented Domain Models", priority: "0:4"},
               {name: "deploymentDiagrams", heading: "Deployment Diagrams", priority: "0:4"},
@@ -458,8 +458,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "0:2"},
-              {name: "implementation", heading: "Implementation", priority: "0:2"},
+              {name: "what", heading: "What", priority: "2"},
+              {name: "implementation", heading: "Implementation", priority: "2"},
               {name: "evaluation", heading: "Evaluation", priority: "3"}
             ]
           }
@@ -483,7 +483,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "0:3"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           }
         ]
@@ -1501,9 +1501,9 @@
           },
           {
             name: "associationClasses",
-            priority: "-1",
+            priority: "3",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "-1"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           },
           {

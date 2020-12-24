@@ -60,7 +60,7 @@ These are considered _functionality bugs_:<br>
 <include src="tp-grading-bugs.mbdf#ugBugs" />
 </panel>
 
-<span tags="m--cs2103" id="architectureDiagramBugs">
+<span tags="m--cs2103 m--tic4002" id="architectureDiagramBugs">
 
 :fas-bug: Architecture:
 * Symbols used are not intuitive
@@ -79,7 +79,7 @@ These are considered _functionality bugs_:<br>
 <span id="codeSnippetBugs">
 
 :fas-bug: Code snippets:
-* Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
+* Excessive use of code e.g., a large chunk of code is cited when a smaller extract would have sufficed.
 </span>
 <span id="userStoryBugs">
 
@@ -89,7 +89,7 @@ These are considered _functionality bugs_:<br>
 * The three parts do not match with each other
 * Important user stories missing
 </span>
-<span tags="m--cs2103" id="useCaseBugs">
+<span tags="m--cs2103 m--tic4002" id="useCaseBugs">
 
 :fas-bug: Problems in Use Cases. Examples:
 * Formatting/notational errors

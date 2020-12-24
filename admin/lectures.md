@@ -30,7 +30,7 @@ Lectures start on time sharp and end around 15 minutes before official end time.
 ****Mode****:
 * Will be done using Zoom. More information coming soon.
 
-<div tags="m--cs2103 m--tic4001">
+<div tags="m--cs2103 m--tic4001 m--tic4002">
 
 * Some topics come with pre-recorded lecture videos.
 </div>

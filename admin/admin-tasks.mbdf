@@ -21,10 +21,19 @@
 
 * Follow the <span class="border pr-1 pl-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions of the following tools.
 
+<box type="info" tags="m--tic4002" seamless>
+
+The tools in the following panels are as the same as what you used in TIC4001.
+</box>
+
 {{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="2") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "2", indent="2") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="2") }}
+<box type="warning" tags="m--tic4002" seamless>
+
+The tools in the following panels differ slightly from TIC4001.
+</box>
 {{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "2", indent="2") }}
 <span tags="m--cs2113">
 {{ embed_topic("tools.md#repl", "Admin " + icon_embedding + " **Tools - repl.it**", "2", indent="2") }}
@@ -43,10 +52,21 @@
 
 * Read the following admin info about the module.
 
+<box type="info" tags="m--tic4002" seamless>
+
+The info in the following panels are as the same as TIC4001.
+</box>
+
 {{ embed_topic("moduleExpectations.md#main", "Admin " + icon_embedding + " **Module expectations and the ==star rating system==**", "1", indent="2", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="2", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="2", type="info") }}
+{% if not (tic4001 or tic4002) %}
 {{ embed_topic("weeklySchedule.md#main", "Admin " + icon_embedding + " **Weekly schedule**", "2", indent="2", type="warning") }}
+{% endif %}
+<box type="warning" tags="m--tic4002" seamless>
+
+The info in the following panels differs from TIC4001.
+</box>
 {{ embed_topic("moduleOverview.md#main", "Admin " + icon_embedding + " **Module overview**", "4", indent="2", type="success") }}
 </span>
 {#====================================================================================================================#}

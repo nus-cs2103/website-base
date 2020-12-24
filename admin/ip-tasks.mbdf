@@ -143,6 +143,12 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 1. Set up the project in your IDE as explained in [the README file]({{ url_module_org }}/{{ ip_repo_name }}/blob/master/README.md).<br>
 </span>
 {#====================================================================================================================#}
+<span id="heading_set_up_project_tic4002">Set up the project in your computer</span>
+<span id="desc_set_up_project_tic4002">
+
+We assume you still have the iP project set up that you used for TIC4001. If not, please set it up as explained in [TIC4001 website](https://nus-tic4001-{{ previous_semester | lower }}.github.io/website/admin/ip-w2.html)
+</span>
+{#====================================================================================================================#}
 <span id="heading_finish_leftover_tasks">Do any leftover iP tasks from the previous week</span>
 <span id="desc_finish_leftover_tasks">
 * Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.
@@ -150,17 +156,21 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 {#====================================================================================================================#}
 <span id="heading_create_pr_to_upstream">Create a PR to the upstream repo</span>
 <span id="desc_create_pr_to_upstream">
+{% if tic4002 %}
+
+* Note that while you will be reusing the same <tooltip content="i.e., the cloned repo in your computer">_local repo_</tooltip> and the same <tooltip content="i.e., the one you forked to your GitHub account last semester">_forked remote repo_</tooltip>, you will be using a new <tooltip content="i.e., the repo you PR to">_upstream repo_</tooltip> we have set up for this semester. As a result, ==you need to create a new PR== from your fork to the new upstream repo, as given below.{% endif %}
 * Create a <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from your fork to the upstream repo. Note the following:
-  * Create the PR from the `master` branch of your fork to the `master` branch of the upstream repo ({{ url_module_org }}/{{ ip_repo_name }})
+  * Create the PR from the `master` branch of your fork to the `master` branch of the upstream repo ({{ url_module_org }}/{{ ip_repo_name }}){% if tic4002 %}==Be careful to choose the new upstream repo to receive the PR.=={% endif %}
   * Set the PR name as `[{Your name}] iP` e.g., `[John Doe] iP` %%If you are reluctant to give full name, you may give the first half of your name only%%.<br>
    You may leave the description as empty.
+  * If you created the PR correctly, it should appear in the list of PRs [here]({{ url_module_org }}/{{ ip_repo_name }}/pulls).
   * Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
 
 {{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=4) }}
 
 <div class="indented-level2">
 
-<box type="info" light>
+<box tags="m--cs2103 m--cs2113 m--tic4001" type="info" seamless>
 
 The PR will update automatically to reflect your latest code every time you push code to your fork. As a result, it provides a convenient way for us to access the current state of all your iP code from one location.
 
@@ -280,6 +290,28 @@ Resources:
 * The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
 </span>
 {#====================================================================================================================#}
+<span id="heading_ensure_tic4001_increments">Ensure TIC4001 iP increments have been done</span>
+<span id="desc_ensure_tic4001_increments">
+
+* Ensure that following increments (that were due in TIC4001) have been done. Improve their implementation, if the current implementation is weak (in your own opinion). %%For example, you can add _more_ JavaDoc comments or JUnit tests even if the current code has them already.%%
+<include src="dukeFragment.md" boilerplate var-header="**`Level1`: Greet, Echo, Exit**" var-fragment="text.md#Level-1" />
+<include src="dukeFragment.md" boilerplate var-header="**`Level2`: Add, List**" var-fragment="text.md#Level-2" />
+<include src="dukeFragment.md" boilerplate var-header="**`Level3`: Mark as Done**" var-fragment="text.md#Level-3" />
+<include src="dukeFragment.md" boilerplate var-header="**`Level4`: ToDo, Event, Deadline**" var-fragment="text.md#Level-4" />
+<include src="dukeFragment.md" boilerplate var-header="**`Level4`: ToDo, Event, Deadline**" var-fragment="text.md#Level-4" />
+<include src="dukeFragment.md" boilerplate var-header="**`Level5`: Handle Errors**" var-fragment="text.md#Level-5" />
+<include src="dukeFragment.md" boilerplate var-header="**`Level6`: Delete**" var-fragment="text.md#Level-6" />
+<include src="dukeFragment.md" boilerplate var-header="**`Level7`: Save**" var-fragment="text.md#Level-7" />
+<include src="dukeFragment.md" boilerplate var-header="**`Level9`: Find**" var-fragment="text.md#Level-9" />
+<br>
+<include src="dukeFragment.md" boilerplate var-header="**`A-AbstractClasses`: Use Abstract Classes**" var-fragment="extensions.mbdf#A-AbstractClasses" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-MoreOOP`: Use more OOP**" var-fragment="extensions.mbdf#A-MoreOOP" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-Packages`: Use Packages**" var-fragment="extensions.mbdf#A-Packages" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-JavaDoc`: Add JavaDoc comments**" var-fragment="extensions.mbdf#A-JavaDoc" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-JUnit`: Add JUnit Tests**" var-fragment="extensions.mbdf#A-JUnit" />
+
+</span>
+{#====================================================================================================================#}
 <span id="heading_prepare_for_pr_reviews">Get ready to review PRs</span>
 <span id="desc_prepare_for_pr_reviews">
 
@@ -377,9 +409,15 @@ This activity is worth `2x2=4` participation points.
 {#====================================================================================================================#}
 <span id="extra_A-Gradle">
 
+{% if tic4002 %}
+* As before, after an increment has been completed, tag the commit using the increment ID (e.g., `A-Gradle` in this case) and push that tag to your fork.
+* You are recommended to do each new increment in a separate branch.
+* If you have done the increment in the previous semester already and the tag has been pushed to the repo, no further action needed.
+{% else %}
 * **Do each enhancement in a separate branch and merge to the `master` branch only when ready** (if you push incomplete features into the `master` branch, it can confuse others reviewing your PR). There is no need to do the increments as _parallel_ branches though %%i.e., you can do one increment and merge that branch before starting on the next one%%.
 <br>
 {{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
+{% endif %}
 </span>
 {#====================================================================================================================#}
 <span id="post_Level-10">
@@ -390,11 +428,11 @@ This activity is worth `2x2=4` participation points.
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_generate_new_jar">Generate a new jar file</span>
+<span id="heading_generate_new_jar">{{ "Release" if tic4002 else "Generate" }} a new JAR file</span>
 <span id="desc_generate_new_jar">
-* We recommend that you re-generate a new jar file again and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
+* We recommend that you generate a new JAR file and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
 ==If the `.jar`  file is smaller than 10MB==, most likely JavaFX libraries are not inside it.
-* There is no need to create a release in GitHub with this jar file (although you are welcome to).
+* {% if tic4001 %}Make a new release on GitHub and upload the JAR file. You may use any appropriate version number for it.{% else %}There is no need to create a release in GitHub with this jar file (although you are welcome to).{% endif %}
 </span>
 {#====================================================================================================================#}
 <span id="extra_A-Assertion">
@@ -424,7 +462,7 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_set_up_website">Set up a product website</span>
 <span id="desc_set_up_website">
 
-<span  tags="m--cs2103">
+<span  tags="m--cs2103 m--tic4002">
 
 * **Add a representative screenshot** of the product to the `docs` folder.
   * ==The file name should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
@@ -449,7 +487,7 @@ This activity is worth `2x2=4` participation points.
 {#====================================================================================================================#}
 <span id="heading_submit_the_final_version">Submit the final version</span>
 <span id="desc_submit_the_final_version">
-{% if not tic4001 %}
+{% if not (tic4001 or tic4002) %}
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
 * **Create a new jar file**
@@ -490,8 +528,8 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_add_an_extension">Add an extension</span>
 <span id="desc_add_an_extension">
 
-* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
-* Recommended to add the extension via a branch (branch name is up to you). Optional to add it via a PR.
+* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`{% if not tic4002 %}
+* Recommended to add the extension via a branch (branch name is up to you). Optional to add it via a PR.{% endif %}
 * Add a tag named `BCD-Extension` to the corresponding commit.
 
 <div class="indented-level2">
@@ -501,6 +539,47 @@ This activity is worth `2x2=4` participation points.
 
 {{ icon_tip }} You may want to pick an extension that is relevant to your tP so that the code can be reused in the tP later.
 </div>
+</span>
+{#====================================================================================================================#}
+<span id="heading_stricter_coding_standard">Apply a stricter coding standard</span>
+<span id="desc_stricter_coding_standard">
+
+<div class="indented">
+
+In TIC4001, you applied only the _basic_ rules of the Java coding standard. TIC4002 raises the bar to ==cover _intermediate_ rules as well==. Update your code to comply with that new bar.
+
+Tag to apply to the commit: `A-StricterCodingStandard`.
+
+See the [Standards/conventions page](standardsAndConventions.md) for more info.
+
+Implementing the following increment (optional) can be help with the above.
+</div>
+
+<include src="dukeFragment.md" boilerplate var-header="**`A-CheckStyle`: Use CheckStyle**" var-fragment="extensions.mbdf#A-CheckStyle" />
+
+</span>
+{#====================================================================================================================#}
+<span id="heading_more_code_quality">Increase code quality even further</span>
+<span id="desc_more_code_quality">
+
+* Increase the code quality by applying the [code quality guidelines covered in the textbook](../se-book-adapted/chapters/codeQuality.html). Even if you have done this previously in TIC4001, have another look to see if the code quality can be improved further.
+* Remember to commit each refactoring separately and give a descriptive commit message (also pay attention to the [Git commit message conventions](standardsAndConventions.md) given).
+* Tag to apply to the commit: `A-HigherCodingQuality`.
+
+</span>
+{#====================================================================================================================#}
+<span id="heading_update_website">Update the website</span>
+<span id="desc_update_website">
+
+* Update the product website to have a have a User Guide and a Developer Guide, similar to (but can be shorter than) what you did for the tP in TIC4001.
+
+</span>
+{#====================================================================================================================#}
+<span id="heading_start_next_week_tasks">Start next week's tasks</span>
+<span id="desc_start_next_week_tasks">
+
+* If you are done with this week's iP tasks, you may also start on next week's iP tasks if you wish.
+
 </span>
 {#====================================================================================================================#}
 
