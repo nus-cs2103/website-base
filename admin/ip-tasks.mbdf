@@ -430,9 +430,9 @@ This activity is worth `2x2=4` participation points.
 {#====================================================================================================================#}
 <span id="heading_generate_new_jar">{{ "Release" if tic4002 else "Generate" }} a new JAR file</span>
 <span id="desc_generate_new_jar">
-* We recommend that you generate a new JAR file and ensure it works. Note that you might have to use Gradle to generate the jar file this time as you need to bundle the JavaFX third-party library into the jar file. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
+* Generate a new JAR file using Gradle %%(Gradle can bundle the JavaFX third-party library into the jar file. If you do not bundle JavaFX with the JAR file, the application will not work in computers that don't have JavaFX installed)%%. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
 ==If the `.jar`  file is smaller than 10MB==, most likely JavaFX libraries are not inside it.
-* {% if tic4001 %}Make a new release on GitHub and upload the JAR file. You may use any appropriate version number for it.{% else %}There is no need to create a release in GitHub with this jar file (although you are welcome to).{% endif %}
+* {% if tic4002 %}Make a new release on GitHub and upload the JAR file. You may use any appropriate version number for it.{% else %}There is no need to create a release in GitHub with this jar file (although you are welcome to).{% endif %}
 </span>
 {#====================================================================================================================#}
 <span id="extra_A-Assertion">
@@ -491,9 +491,9 @@ This activity is worth `2x2=4` participation points.
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
 * **Create a new jar file**
-  * Create the JAR file in one of these ways:
+  * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html).{% else %}in one of these ways:
     * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
-    * Else: you can use Intellij.
+    * Else: you can use Intellij.{% endif %}
   * The JAR file should be ==cross-platform and should work in a computer that has Java 11==.
 * **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
@@ -571,7 +571,10 @@ Implementing the following increment (optional) can be help with the above.
 <span id="heading_update_website">Update the website</span>
 <span id="desc_update_website">
 
-* Update the product website to have a have a User Guide and a Developer Guide, similar to (but can be shorter than) what you did for the tP in TIC4001.
+* Update the product website in the following ways:
+  * Move the **User Guide** to a separate page and update it to match the current version of the product.
+  * Add a **Developer Guide**, similar to (but can be shorter than) what you did for the tP in TIC4001.
+  * Update the **README** page to make it a landing page for your iP website (similar to the TIC4001 tP website).
 
 </span>
 {#====================================================================================================================#}

@@ -220,7 +220,6 @@
       {location: ["testCaseDesign", "introduction", "what"], panopto: "bd513fd6-8ccb-4bb3-8467-ab8d009a8de0"},
       {location: ["testCaseDesign", "introduction", "positiveVsNegative"]},
       {location: ["testCaseDesign", "introduction", "blackVsGlass"], panopto: "8221a124-fe08-4c48-8a72-ab8d00aa53d3"},
-      {location: ["testCaseDesign", "more", "testingUseCases"]},
     {heading: "%%Test Cases: Equivalence Partitioning%%"},
       {location: ["testCaseDesign", "equivalencePartitions", "what"], panopto: "59a122d2-7170-4aea-9888-ab8d00b850ed"},
       {location: ["testCaseDesign", "equivalencePartitions", "basic"], panopto: "83001c05-69fb-4322-b571-ab8d00cd4337"},
@@ -263,6 +262,7 @@
       {subheading: "TDD", panopto: "6c561949-dcbb-40bc-b731-ac4400edca2a"},
         {location: ["testing", "tdd", "what"]},
 {week: "11"},
+{week: "12"},
   {name: "Project Management"},
     {heading: "%%SDLC Process Models%%"},
       {location: ["processModels", "introduction", "what"]},
@@ -279,10 +279,7 @@
     {heading: "Cloud Computing"},
       {location: ["reuse", "cloudComputing", "what"]},
       {location: ["reuse", "cloudComputing", "services"]},
-{week: "12"},
-
-
 {week: "13"}
 ]%}
 
-{% set weeks_with_no_topics = ["12", "13"] %}
+{% set weeks_with_no_topics = ["8", "11", "13"] %}

@@ -26,7 +26,9 @@
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">During the session</span>
 
+{% if cs2103 and S == "1" %}
 **Join the zoom session of the regular lecture** (you ==must attend the lecture _officially_ allocated== to you -- you are not allowed to attend an alternative lecture slot this week).
+{% endif %}
 
 **Use MS Teams (not Zoom) to contact prof** if you need help during the session. Use Zoom chat only if you don't get a response via MS Teams.
 
@@ -69,11 +71,11 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 </tabs>
 <p/>
 
-* Put the downloaded jar file ==in an empty folder== in which the app is allowed to create files %%(i.e., do not use write-protected folder)%%.
+* Put the downloaded jar file ==in an empty folder== in which the app is allowed to create files %%(i.e., do not use a write-protected folder)%%.
 * Open a command window. Run the `java -version` command to ensure you are using Java 11.
 * Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
-* Launch the jar file ==using the `java -jar` command== (do not use double-clicking).<br>
+* Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
   If you are on Windows, use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.
 * **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via MS Teams, and failing that, via Zoom chat) to receive a _fallback_ team to test.
 

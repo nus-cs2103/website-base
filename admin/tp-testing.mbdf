@@ -32,7 +32,7 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 </div>
 
 * **Have a good screen grab tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.
-  * {{ icon_tip }} You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in bug report.
+  * {{ icon_tip }} You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in a bug report.
 
 * **<span class="text-danger">Download the product to be tested</span>**.
 

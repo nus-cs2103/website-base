@@ -667,7 +667,8 @@ In addition,
 
 <box type="info" seamless>
 
-**Improve upon AB3, design, code, test etc.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is meant to be a realistic example rather than a 'model solution'). Feel free to improve it in any way you see fit. In particular, find and fix any bugs it may have. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.
+**Improve upon AB3, design, code, test etc.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). Feel free to improve it in any way you see fit. In particular, find and fix any bugs it may have. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
+While we are on the topic, also note that the architecture of AB3 doesn't suite every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not be tempted to apply AB3 as a template for every other application you come across in the future**.
 </box>
 </div>
 </div>
@@ -1041,7 +1042,7 @@ Not applicable this semester
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
   * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%e.g. broken links, outdated diagrams/instructions etc.%%.
 * **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _freeze_ period.
-  * You can update issues/milestones/PRs even during the _freeze_ period.{% if cs2113 or cs2103 or tic4002 %}
+  * You can update issues/milestones/PRs even during the _freeze_ period.{% if cs2113 or cs2103 %}
   * [{{ module }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.{% endif %}
   * You can update the code during the freeze period if the change is related to a late submission approved by us.
   * You can continue to evolve your repo after the freeze period.
@@ -1051,7 +1052,9 @@ Not applicable this semester
 <big>**Submissions:**</big>
 </div>
 
-<div class="indented-level2" id="tip-how-to-convert-to-pdf">
+<div class="indented">
+<div id="tip-how-to-convert-to-pdf">
+
 <box type="important" seamless>
 
 **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
@@ -1060,6 +1063,7 @@ Not applicable this semester
 
 **Try the PDF conversion early**. If you do it at the last minute, you may not have time to fix any problems in the generated PDF files (such problems are more common than you think).
 </box>
+</div>
 
 <box type="info" seamless>
 

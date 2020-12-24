@@ -1300,8 +1300,9 @@
         level_two_topics: [
           {
             name: "",
+            priority: "-1",
             level_three_topics: [
-              {name: "testingUseCases", heading: "Testing Based on Use Cases", priority: "3"}
+              {name: "testingUseCases", heading: "Testing Based on Use Cases", priority: "-1"}
             ]
           }
         ]

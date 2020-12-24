@@ -57,30 +57,32 @@
 week1: [
   {topic_id: "tp-teams"},
   {topic_id: "textbooks"},
-  {topic_id: "gradeBreakdown"}],
+  {topic_id: "gradeBreakdown"}
+  ],
 week2: [
   {policy_id: "policy-plagiarism"},
   {policy_id: "policy-reuse"},
-  {policy_id: "policy-techHelp"}],
+  {policy_id: "policy-techHelp"}
+  ],
 week3: [
   {topic_id: "peerEvaluations"},
   {topic_id: "standardsAndConventions"},
   {topic_id: "tp-supervision"},
-  {policy_id: "policy-teamSize"}],
+  {policy_id: "policy-teamSize"}
+  ],
 week4: [],
 week5: [
   {topic_id: "tp-grading"},
-  {policy_id: "policy-workDistribution"}],
+  {policy_id: "policy-workDistribution"}
+  ],
 week6: [
-  {topic_id: "appendixF-teamworkIssues"},
-  {faq_id: "admin-faq-manySubmissions"},
-  {faq_id: "admin-faq-cs2101Differences"}],
+  {topic_id: "appendixF-teamworkIssues"}
+  ],
 week7: [],
 week8: [],
 week9: [],
 week10: [],
-week11: [
-  {topic_id: "exams"}],
+week11: [],
 week12: [],
 week13: []
 }%}

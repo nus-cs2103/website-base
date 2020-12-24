@@ -8,7 +8,8 @@
 * The primary objective of the PE is to ==increase the rigor of project grading==. Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
 * PE is also ==used to evaluate your manual testing skills, product evaluation skills, effort estimation skills== etc.
 * Note that significant project components are ==not graded solely based on peer ratings==. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutors' grades with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
-* PE is ==not a means of _pitting you against each other_==. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
+* PE is ==not a means of _getting you to bring down each other_== because _bringing down_ anyone is not the goal; it's just a means of identifying as many bugs as possible. No one _can_ sabotage another person or _inject_ bugs into others' products. All anyone _can_ do is to point out potential problems. If those are false positives, no real harm done.<br>
+  Having said that, _none of us_ likes it when others point out problems of our work. **We just have to learn not to take bug reports personally**. Another important lesson is to learn how to report bugs in a way that doesn't feel like you are _attacking_ or trying to _sabotage_ the dev team.
 
 **Grading**:
 * Your performance in the practical exam will affect your final grade and your peers', as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/tp-grading.html) section.
@@ -77,7 +78,7 @@
 
 **Bonus marks for high accuracy rates!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual `type.*` and `severity.*` of the bug match the values you chose initially).
+You will receive bonus marks if a high percentage (e.g., >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual `type.*` and `severity.*` of the bug match the values you chose initially and the bug is accepted by the team).
 </box>
 
 **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
@@ -181,7 +182,7 @@ This phase is for you to respond to the bug reports you received.
 
 **Bonus marks for high accuracy rates!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual `type.*` and `severity.*` of the bug matches the one you chose).
+You will receive bonus marks if a high percentage (e.g., >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual `type.*`, `severity.*`, and `response.*` of the bug match the ones you chose).
 </box>
 
 Duration: The review period will start around 1 day after the PE and will last for 2-3 days (exact times will be announced later). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
@@ -353,8 +354,7 @@ Duplicate of #67
   * not accepted
   * severity downgraded
   * bug type changed
-  * bug flagged as duplicate %%(Note that you still get the credit bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to bugs being flagged incorrectly as duplicates because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
-* As before, consider carefully before you object to a dev team's response. ==<span class="text-danger">If many of your objections were overruled by the teaching team later</span>==, you will lose marks for not being able to evaluate a bug report properly.
+  * bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to bugs being flagged incorrectly as duplicates because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
 * If you disagree with the team's decision but would like to revise your own initial type/severity/response as well, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%%.
 * You can also refer to the below guidelines:
 

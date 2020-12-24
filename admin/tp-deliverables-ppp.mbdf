@@ -30,8 +30,8 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 </box>
 </div>
 
-* **[Optional] Contributions to the Developer Guide (Extracts)**: Reproduce the parts in the Developer Guide that you wrote. Alternatively, you can show the various diagrams you contributed.
-* **[Optional] Contributions to the User Guide (Extracts)**: Reproduce the parts in the User Guide that you wrote.
+* **{{ optional }} Contributions to the Developer Guide (Extracts)**: Reproduce the parts in the Developer Guide that you wrote. Alternatively, you can show the various diagrams you contributed.
+* **{{ optional }} Contributions to the User Guide (Extracts)**: Reproduce the parts in the User Guide that you wrote.
 
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Format</span>
 

@@ -97,7 +97,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
 </box>
 
-<div tags="x">
+<div tags="m--cs2113">
 
 ##### :fab-gitter: Gitter %%(for quick chats)%%
 
