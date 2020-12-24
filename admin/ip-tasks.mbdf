@@ -640,6 +640,7 @@ Implementing the following increment (optional) can be help with the above.
 {% call show_project_summary_lead()%}
 {% for step in steps %}1. {{ get_xp_step_heading(step, tasks_file, is_summary=true) | trim }}
 {% endfor %}
+{% if (steps | length) == 0 %}&nbsp;%%None assigned for this week%%{% endif %}
 {% endcall %}
 {% endmacro %}
 {#====================================================================================================================#}
