@@ -633,25 +633,23 @@ Update the following pages in your project repo:
 <span id="desc_start_on_the_penultimate_version">
 <div class="indented">
 
-<box type="tip" seamless>
 
-<div tags="m--cs2113 m--cs2103 m--tic4002">
 
-The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs). Hence, it is in your interest to ==finish implementing all your <tooltip content="features you want to include in your final version (i.e., {{ version_final }})">final features</tooltip> in this iteration itself== so that you can get them tested for _free_. You can use the final iteration for fixing the bugs found by peer testers.
+<box type="important" tags="m--cs2113 m--cs2103 m--tic4002" seamless>
 
-Furthermore, the final iteration (i.e., the one after this) will be shorter than usual and there'll be a lot of additional things to do during that iteration e.g., polishing up documentation; all the more reason to try and get all the implementation work done in this iteration itself.
-</div>
-<div tags="m--tic4001">
+==**This iteration is your last chance to add features.** You will not be allowed to add features in the next iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation only.
 
+The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).
+</box>
+<box tags="m--tic4001" type="tip" seamless>
 In the final iteration (i.e., the one after this), you will be doing a lot of additional things e.g., adding documentation.
 Hence, it is in your interest to ==finish implementing all your <tooltip content="features you want to include in your final version (i.e., {{ version_final }})">final features</tooltip> in this iteration itself== so that you can use the final iteration for polishing up the functionalities and adding documentation.
-
-</div>
 </box>
+
 
 As you did in the previous iteration,
 * **Plan the next iteration** (steps are given below as a reminder):
-  * {{ icon_team }} Decide which enhancements will be added to the product in this iteration, if this is the last iteration.
+  * {{ icon_team }} Decide which enhancements will be added to the product in this iteration, assuming this is the last iteration.
   * {{ icon_team }} If possible, split that into two incremental versions.
   * {{ icon_team }} Divide the work among team members.
   * {{ icon_individual }} Reflect the above plan in the issue tracker.

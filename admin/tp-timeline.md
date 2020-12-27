@@ -82,7 +82,7 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 <div tags="m--cs2103">
 
-* Do a _practice_ iteration ({{ version_practice }} to get used to the workflow. In this iteration, only some documents will be updated.
+* Do a _practice_ iteration ({{ version_practice }}) to get used to the workflow. In this iteration, only some documents will be updated.
 </div>
 </div>
 
@@ -118,7 +118,7 @@ The first half of the tP is light because you will be doing the iP in parallel d
 <div tags="m--cs2113 m--cs2103">
 
 * This iteration is <span class="text-danger">shorter</span> (slightly more than one week).
-* Plan to use this **for bug fixing and polishing up documentation**.
+* ==**Adding new features is not allowed** in this iteration.== Use it for bug fixing and polishing up documentation only.
 </div>
 <div tags="m--tic4001 m--tic4002">
 
