@@ -100,7 +100,7 @@ You may develop any product provided it is meant for users who can type fast, an
 * {{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base
 </div>
 
-==Weigh the pros/cons and choose the one that suits you.==
+Weigh the pros/cons and choose the one that suits you. Note that ==**creating a novel/unique/interesting product will NOT earn you extra marks**== in this module. While those qualities are important in real world projects, and we do allow you room to go in those directions in this module, they are not the focus of this module<span tags="m--cs2103">&nbsp;%%(there are other modules such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
 </div>
 <div tags="m--cs2113 m--tic4001">
 
@@ -174,20 +174,14 @@ The size of the target market is not a grading criterion. You can make it as nar
 **The expected level of _functionality_ from a team is roughly ==what you can achieve if each member contributes about the same amount of functional code as required by a <tooltip content="i.e., if all requirements were met at the _minimal_ level specified">typical iP</tooltip>==**.
 </div>
 
-==You will get full marks for implementation effort== if you meet the expectation stated above. There are no extra marks for exceeding that bar. You are better off spending that effort in improving other aspects of the project.
+==You will get full marks for implementation effort== if you meet the expectation stated above. There are no extra marks for exceeding that bar. You are better off spending that effort in improving other aspects of the project. Try to avoid adding more features than necessary, unless you are doing it out of interest. As mentioned elsewhere, a functionality just the right size and of high quality will earn more marks than a functionality bigger (or more difficult, or more interesting/novel) but of lower quality.
 
-<box tags="m--cs2103 m--tic4002">
-
-{{ icon_tip }} If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
-  * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)
-  * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
-</box>
 
 <box type="important" tags="m--cs2103 m--cs2113" seamless>
 
 <div tags="m--cs2103 m--cs2113">
 
-One semester ago, we reduced the tP functionality expectations by about 40-50% compared to the previous semesters, in order to reduce your workload. Keep that in mind in case you receive advice about project from seniors who did this module more than one semester ago.
+In the most recent semester, more than 80% of the students did significantly more work than what was needed to earn full marks for effort. Many of them were likely under the wrong impression that doing more features will earn them more marks. Try to avoid doing the same mistake yourself.
 
 </div>
 <div tags="m--cs2113">
@@ -196,6 +190,14 @@ In fact, here is the grading criterion for the individual project effort:
 {{ embed_topic("tp-pe.mbdf#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP → PE → ==Evaluating the  Implementation Effort==", "3") }}
 </div>
 </box>
+
+<box tags="m--cs2103 m--tic4002">
+
+{{ icon_tip }} If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
+  * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)
+  * [Automated GUI tests](https://se-education.org/addressbook-level4/Testing.html#types-of-tests)
+</box>
+
 </span>
 <span id="teamExpectations">
 
