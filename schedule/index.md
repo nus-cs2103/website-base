@@ -92,7 +92,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="row">
   <div class="col-sm border-right">
 {% if week_num + "" in weeks_with_no_topics %}
-* %%No topic allocated to this week.%%
+* %%No topics allocated to this week.%%
 {% else %}
 <md>**{{ icon_book }} Topics Summary:**</md>
 
@@ -156,7 +156,7 @@ pageNav: {{ categories[category].pagenav }}
 
 **Topics:**
 {% if week_num + "" in weeks_with_no_topics %}
-* %%No topic allocated to this week.%%
+* %%No topics allocated to this week.%%
 {% else %}
 {{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
 

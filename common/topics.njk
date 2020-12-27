@@ -76,7 +76,7 @@
 {% endmacro %}
 
 
-{% macro show_unit(id_prefix, unit, path_displacement="", is_flat=true, is_toc=false) %}
+{% macro show_unit(week_num, id_prefix, unit, path_displacement="", is_flat=true, is_toc=false) %}
 {% set chapter = unit.location[0] %}
 {% set path_as_array = unit.location.slice(1,4) %}
 {% set path = path_as_array.join("/") %}
@@ -100,7 +100,7 @@
 
 ####  <small><span class="font-weight-bold text-muted"><include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline trim /></span></small> **<include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline />**
 </span>
-  {{ panopto(unit.panopto) if unit.panopto }}
+  {{ panopto(unit.panopto) if unit.panopto  and (week_num | int) <= (current_week | int) }}
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
 {{ followup(slugify(full_path)) }}
@@ -167,7 +167,7 @@
 
 {% for entry in entries  %}
   {% if entry.location %}
-{{ show_unit(prefix + letters[letter_index], entry, params.path_displacement, params.is_flat, true) }}
+{{ show_unit(params.week_num, prefix + letters[letter_index], entry, params.path_displacement, params.is_flat, true) }}
     {% set letter_index = letter_index + 1 %}
   {% elseif entry.subheading %}
 &nbsp;&nbsp; **{{ entry.subheading }}**
@@ -183,15 +183,15 @@
 
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" {{ "" if params.topic.collapsed else "expanded" }} >
 <span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
-{{ panopto(params.topic.panopto) if params.topic.panopto }}
+{{ panopto(params.topic.panopto) if params.topic.panopto  and (params.week_num | int) <= (current_week | int) }}
 <div class="indented-level1">
 {% for entry in entries  %}
   {% if entry.location %}
-{{ show_unit(prefix + letters[letter_index], entry, params.path_displacement, params.is_flat) }}
+{{ show_unit(params.week_num, prefix + letters[letter_index], entry, params.path_displacement, params.is_flat) }}
     {% set letter_index = letter_index + 1 %}
   {% elseif entry.subheading %}
 {{  show_subheading(entry.subheading) }}
-{{ panopto(entry.panopto) if entry.panopto }}
+{{ panopto(entry.panopto) if entry.panopto and (params.week_num | int) <= (current_week | int) }}
   {% endif %}
 {% endfor %}
 </div>
