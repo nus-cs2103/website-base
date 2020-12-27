@@ -358,9 +358,9 @@ add return book
 
 list
 >>> List of items:
-     [✗] 1. borrow book
-     [✗] 2. read book
-     [✗] 3. return book
+     [ ] 1. borrow book
+     [ ] 2. read book
+     [ ] 3. return book
 >>> What can I do for you?
 
 done 1
@@ -368,9 +368,9 @@ done 1
 
 list
 >>> List of items:
-     [✓] 1. borrow book
-     [✗] 2. read book
-     [✗] 3. return book
+     [X] 1. borrow book
+     [ ] 2. read book
+     [ ] 3. return book
 >>> What can I do for you?
 
 done abc

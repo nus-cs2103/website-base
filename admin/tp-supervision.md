@@ -19,7 +19,7 @@ One of the lecturers will be assigned as your team's tutor (aka project supervis
 </div>
 <div tags="m--cs2113 m--cs2103 m--tic4002" id="making-project-decisions">
 
-**Note that {% if tic4002 %}it is not appropriate for instructors{%else%}tutors are not allowed{% endif %} to contribute to graded components of your project work.** For example, if you are faced with a design decision in your project, an instructor will not make that decision for you.<br>
+**=={% if tic4002 %}It is not appropriate for instructors{%else%}Tutors are not allowed{% endif %} to contribute to graded components of your project work.==** For example, if you are faced with a design decision in your project, a tutor will not make that decision for you.<br>
  %%Reason: to ensure fairness across teams, and to ensure the work you submit for grading is entirely your own%%
 
 Following from the above, **don't expect instructors to answer questions that are specific to graded deliverables** (e.g., ask which design alternative is better -- that's a decision you need to make yourself). <span tags="m--cs2103 m--cs2113">At best, the instructor can channel the question to the professor.</span> However, ==you can still raise such questions in the module forum== where the professor can answer the question in a general way that's not unfair to other teams (and other teams can benefit from the answer as well).
