@@ -41,6 +41,8 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 **The median number of bugs reported in the previous semester's PED was 9.** Someone reporting just a 2-3 bugs is usually a sign of a half-hearted attempt rather than lack of bugs to find. If you really can't find bugs, at least submit suggestions for improvements.
 </box>
 
+**PE and PE-D are _manual_ testing sessions.** Using test automation tools or scripting is not allowed.
+
 **Test the product and report bugs** as described below, when the prof informs you to begin testing.
 
 {% set pe_active_tab="0" %}

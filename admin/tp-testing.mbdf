@@ -50,6 +50,21 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 </tabs>
 <p/>
 
+<div class="indented">
+
+<box>
+
+****Testing tips****{.text-success}
+
+{% set tip %}<span class="text-success">**:fas-lightbulb:**</span>{% endset %}
+
+{{ tip }} **Use easy-to-remember patterns in test data.** For example, if you use `12345678` as a phone number while testing and it appears as `2345678` somewhere else in the UI, you can easily spot that the first digit has gone missing. But if you used a random number instead, detecting that bug won't be as easy. Similarly, if you use `Alice Bee`, `Benny Lee`, `Charles Pereira` as test data (note how the names start with letters A, B, C), it will be easy to detect if one goes missing, or they appear in the incorrect order.
+
+{{ tip }} **Go wide before you go deep**. Do a light testing of all features first. That will give you a better idea of which features are likely to be more buggy. Spending equal time for all features or testing in the order the features appear in the UG is not always the best approach.
+
+</box>
+</div>
+<p/>
 <!--
 * **Charge your computer** before coming to the session. The testing venue might not have enough charging points.
 -->
