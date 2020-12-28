@@ -633,11 +633,9 @@ Update the following pages in your project repo:
 <span id="desc_start_on_the_penultimate_version">
 <div class="indented">
 
-
-
 <box type="important" tags="m--cs2113 m--cs2103 m--tic4002" seamless>
 
-==**This iteration is your last chance to add features.** You will not be allowed to add features in the next iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation only.
+{% if cs2113 or tic4002 %}==**This iteration is your last chance to add features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features.** You will <span class="text-danger">not be allowed to add features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only.{% endif %}
 
 The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).
 </box>
