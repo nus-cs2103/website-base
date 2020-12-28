@@ -281,6 +281,17 @@ Resources:
 </span>
 <span id="extra_A-MoreOOP">
 
+<box tags="m--cs2103 m--cs2113" type="info" seamless>
+
+****Why more OOP?****{.text-info}
+
+One the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you that **OOP is not a silver bullet or always the right choice**. While it is the most popular and possibly the right choice for majority of situations, it has plenty of detractors and known problems.
+
+**OOP has been chosen as the primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}
+
+**We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
+</box>
+
 * As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).
 
 </span>
