@@ -105,6 +105,9 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 * The score could be further moderated by this question answered by team members.
 
 {{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
+
+Note: Effort put into non-user-visible implementation work (e.g., major refactorings) can also be counted for this component of grading, but it is upto you to describe that work in your PPP so that evaluators can factor those in.
+
 </div>
 <div tags="m--tic4001">
 
