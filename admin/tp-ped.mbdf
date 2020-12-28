@@ -11,7 +11,7 @@
 </modal>
 
 {{ icon_important_big_red }} **Grading**: The PE dry run ==affects your grade in the following ways==.
-* If you scored low in the PE, we will consider your performance in PE dry run as well when calculating the PE marks.
+* If you scored less than half of the marks in the PE, we will consider your performance in PE dry run as well when calculating the PE marks.
 * PE dry run is a way for you to practice for the actual PE.
 * Taking part in the PE dry run will earn you participation points.
 * There is ==no penalty for bugs reported== in your product. Every bug you find is a win-win for you and the team whose product you are testing.
@@ -37,6 +37,8 @@
 ****How many bugs to report?****
 
 Report as many bugs as you can find during the given time. Take longer if you need. If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. In that case, all the more reasons to spend more time and find more bugs now.
+
+**Bug reports marked as `invalid` by the receiving team** later will not count for credit.
 
 **The median number of bugs reported in the previous semester's PED was 9.** Someone reporting just a 2-3 bugs is usually a sign of a half-hearted attempt rather than lack of bugs to find. If you really can't find bugs, at least submit suggestions for improvements.
 </box>
@@ -192,10 +194,11 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 <span id="after-ped">
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span>
-* We'll transfer the relevant bug reports to your repo within a day after the session is over. Once you have received the bug reports for your product, you can decide whether you will act on reported issues before the final submission {{ version_final }}. For some issues, the correct decision could be to reject or postpone to a version beyond {{ version_final }}.
-* If you have received bug reports that don't seem to be about your project, do let us know ASAP (email the prof).
-* You can navigate to the original bug report (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
+* **The relevant bug reports will be transferred to your issue tracker** within a day after the session is over. Once you have received the bug reports for your product, you can decide whether you will act on reported issues before the final submission {{ version_final }}. For some issues, the correct decision could be to reject or postpone to a version beyond {{ version_final }}.
+* **If you have received stray bug reports** (i.e., bug reports that don't seem to be about your project), do let us know ASAP (email the prof).
+* **You can navigate to the original bug report** (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
   * {{ icon_tip }} Do not argue with the tester to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the tester for their view and discontinue to discussion.
+* **==If a bug report received is not useful, add the `invalid` tag to it==** (add that tag if it doesn't exist in your issue tracker). We will not count such bugs when giving credit to testers.
 
 <box type="wrong" seamless>
 
