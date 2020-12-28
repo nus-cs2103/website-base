@@ -963,7 +963,7 @@ Also see:
 
 {{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
 
-* **Freeze features** around this time. Ensure the current product have all the features you intend to release at {{ version_final }}. Doing major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.
+* **Freeze features**. As mentioned earlier, you are {{ "not allowed to add" if cs2103 else "strongly discouraged from adding"}} new features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.
 * **Update documentation** to match the product.
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 
