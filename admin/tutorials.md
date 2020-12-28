@@ -26,12 +26,10 @@ Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)
 
 **The mode**
 
-Tutorials will be conducted using Zoom. More info coming soon.
-
-**What happens during the tutorial**:
-
+* Tutorials will be conducted using Zoom.
+* MS Teams will be used for file sharing.
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
-* The tutor will _facilitate_ tutorial activities, observe your progress, and give feedback. If you are facing difficulties with a weekly activity, the tutor can direct you to get help from another student in the tutorial.
+* The tutor will _facilitate_ tutorial activities, observe your progress, and give feedback.
 
 <!--
 * Please ==bring your laptop to tutorials.== You'll need it for tutorial tasks.
@@ -41,9 +39,16 @@ Tutorials will be conducted using Zoom. More info coming soon.
 
 <br/>
 
+**Slides and tutorial recordings**:
+* Zoom recording of tutorials will be made available to you after the tutorial.
+* <span class="text-danger">Slides used in tutorials will not be distributed to students.</span> You are expected to take notes (or screenshots) during the tutorial as necessary.
+
+
 **The role of our tutors** is different from tutors in other modules.
 
 * **Not a source of admin information**: Given the humongous amount of admin info contained in this module and the fact that it is constantly evolving, tutors may not be aware of the recent subtle changes to the admin information. To safeguard you from receiving incorrect admin info, tutors are prohibited from answering admin queries. If you have an admin query, please post in the [forum]({{ url_forum }}) (or email the prof at `{{ module | lower }}@comp.nus.edu.sg` but only if the question is not appropriate for the forum).
+
+* **No inputs for yet-to-be-graded components**: Tutors are prohibited from giving inputs for components not graded yet. %%Reason: work submitted for grading should be your own.%%
 
 * **No direct tech help**: Tutors are prohibited from giving direct technical help, other than to give you some general direction to finding a solution. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
 
@@ -60,8 +65,6 @@ Tutorials will be conducted using Zoom. More info coming soon.
 </div>
 
 <br/>
-
-* **No leading from the front**: Tutors are not expected to lead your project effort. They will not tell you how or when to do project tasks. You have to figure those out yourselves. But tutors will give you feedback on how you are doing project tasks so that you can improve further.
 
 **Timing/venue:**
 
