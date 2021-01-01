@@ -17,7 +17,7 @@ pageNav: 2
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
-_TIC2002 Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects.
+_TE3201 Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects.
 </div>
 
 <!-- .......................................................................................... --> {{ line_dotted }}
@@ -61,21 +61,19 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 <div class="indented" id="lectures-info">
 
 %%:far-clock:%% Tuesdays 1800-2130<br>
-%%:fas-map-marker-alt:%% Venue E3-06-15<br>
+%%:fas-map-marker-alt:%% Venue E3-06-0809<br>
 
-:far-frown: **Lectures will not be webcast** as the venue does not have a webcast facility. ==Please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture.
+Lectures will be delivered as **a mixture of Zoom sessions and pre-recorded videos**. You may attend lectures from home (via Zoom) or in person. If you are attending lectures in person, ==please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture.
 
 The rough break-down of a typical lecture:
-* 1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics.
-* 1830-1900: Doing exercises related to previous week topics.
-* 1900-2000: SE topics for the current week.
-* 2000-2100: Programming topics for the current week. Those who are already familiar with programming and not interested in learning Python can leave early.
-* 2100-2130: You can stay back and do exercises for the current week. Approach prof for help as needed.
+* 1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics. Use Microsoft Teams if you need to consult the prof during this time.
+* 1830-1900: Do exercises related to previous week topics. Consult prof (via MS Teams) if you encounter problems.
+* 1900-2000: Short Zoom lecture, introducing SE topics for the current week. After that, watch the pre-recorded videos and the textbook sections provided.
+* 2000-2100: Programming topics for the current week. Similar to the above, a short briefing via Zoom followed by self-study using pre-recorded videos and the textbook. Those who are already familiar with programming and not interested in learning Python can skip.
+* 2100-2130: You can stay back and do exercises for the current week. Consult prof (using MS Teams) for help as needed.
 
 
 **{{ icon_slides }} Lecture slides will be uploaded to LumiNUS after the lecture**, usually by midnight of the same day. **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.
-
-{{ icon_tip }} If slides are not in LumiNUS by the expected times, please feel free to ping the lecturer.
 
 
 </div>
@@ -127,7 +125,7 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 
 * The project is to be done **individually**.
 * The project based on a [generic project called Monty](../programming/chapters/monty.html).
-* In the project, you will build a small chatbot, **using Python** (if you wish to use a different programming language, please ask for permission first).
+* In the project, you will build a small chatbot, **using Python**.
 * The project is to be done in small increments. You will be given a schedule of what increments to be done in each week.
 * Some project increments will be common to all students, while some will vary from student to student (to be announced near to the date). That means your final product will be unique in terms of total features, but some features will be common to other students in the class.
 * Constraints:
@@ -198,9 +196,11 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 ### `repl.it`
 
 * We'll be using `Repl.it` for coding exercises (compulsory).
+* More info coming soon ...
+<!--
 * {{ icon_important_big_red }} Create an account on https://repl.it. 
 * ==Make sure you set your display name in your `repl.it` user profile to match your real name== (so that the prof can trace your `repl.it` submissions to you). 
-* Join the `repl.it` classroom `tic2002-{{ period }}` using this link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).
+* Join the `repl.it` classroom `tic2002-{{ period }}` using this link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).-->
 
 </div>
 <div id="intellij-info">
@@ -220,8 +220,9 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 
 If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks
 * you can post in the [module forum]({{ url_forum }})
+* contact the prof using MS Teams
 * email prof at <include src="index-{{ module | lower }}.mbdf#prof-email" inline trim/>
-* ask for prof's help during the following week’s tutorial hour
+* ask for prof's help during the following week’s tutorial hour (using MS Teams)
 
 </span>
 <!-- .......................................................................................... --> {{ line_dotted }}
@@ -248,6 +249,9 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 
 # Exam
 
+Details to be announced ...
+
+<!--
 * The final exam will be on **Wed 29th April, 1-3pm** (as per normal exam schedule).
 * The exam will be done online. Tools used: LumiNUS, Zoom, Microsoft Teams.
 
@@ -338,7 +342,7 @@ Choose the incorrect statement.
 
 * {{ icon_tip }} Almost all questions will ask you to choose the INCORRECT statement and justify why it is incorrect.
 
-
+-->
 <!--
 
 There is no midterm.

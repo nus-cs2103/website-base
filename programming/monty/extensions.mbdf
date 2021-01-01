@@ -1,32 +1,32 @@
-## <div class="text-white bg-info p-1">Extensions: Category B</div>
+## Extensions: Category B
 
 <div id="B-Events">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-Events" var-extStyle="info"
+<include boilerplate src="montyExtensionTitle.md" var-extId="B-Events" var-extStyle="primary"
          var-extHeading="Events"/>
 
 Provide a way for the user to track _events_ (i.e., things with a start time and an end time such as a meeting), in addition to _todo_ and _deadline_ tasks.
 </div><hr>
 <div id="B-DoAfterTasks">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-DoAfterTasks" var-extStyle="info"
+<include boilerplate src="montyExtensionTitle.md" var-extId="B-DoAfterTasks" var-extStyle="primary"
          var-extHeading="'Do after' tasks"/>
 
 Support the managing of tasks that need to be _done_ after a specific time/task %%e.g., return book after the exam is over%%.
 </div><hr>
 <div id="B-DoWithinPeriodTasks">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-DoWithinPeriodTasks" var-extStyle="info"
+<include boilerplate src="montyExtensionTitle.md" var-extId="B-DoWithinPeriodTasks" var-extStyle="primary"
          var-extHeading="'Do within a period' task"/>
 
 Provide support for managing tasks that need to be done within a certain period %%e.g., collect certificate between Jan 15 and 25th%%.
 </div><hr>
 <div id="B-FixedDurationTasks">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-FixedDurationTasks" var-extStyle="info"
+<include boilerplate src="montyExtensionTitle.md" var-extId="B-FixedDurationTasks" var-extStyle="primary"
          var-extHeading="Unscheduled tasks with a fixed duration"/>
 
 Provide support for managing tasks that takes a fixed amount of time but does not have a fixed start/end time %%e.g., reading the sales report (needs 2 hours)%%.
 </div><hr>
 <!-- ======================================================================================================= -->
 
-## <div class="text-white bg-success p-1">Extensions: Category C</div>
+## Extensions: Category C
 
 <div id="C-DetectDuplicates">
 <include boilerplate src="montyExtensionTitle.md" var-extId="C-DetectDuplicates" var-extStyle="success"
@@ -41,7 +41,7 @@ Add the ability to recognize and deal with duplicate items. %%e.g., the same tas
 Provide more flexibility with the data source %%e.g., the ability for the user to specify which file to use as the data source%%.
 </div><hr>
 <div id="C-DateTimes">
-<include boilerplate src="montyExtensionTitle.md" var-extId="C-DateTimes" var-extStyle="info"
+<include boilerplate src="montyExtensionTitle.md" var-extId="C-DateTimes" var-extStyle="success"
          var-extHeading="Meaningful date/times"/>
 
 Make Monty understand the meaning of dates/times attached to a task. e.g., sort deadlines based on their dates/times
@@ -113,7 +113,7 @@ Other ideas:
 * Remove the need for the parts of a command to be in a specific order
 </div><!-- ======================================================================================================= -->
 
-## <div class="text-white bg-danger p-1">Extensions: Category D</div>
+## Extensions: Category D
 
 <div id="D-Contacts">
 <include boilerplate src="montyExtensionTitle.md" var-extId="D-Contacts" var-extStyle="danger"
