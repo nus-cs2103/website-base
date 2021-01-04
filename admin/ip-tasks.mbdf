@@ -458,7 +458,7 @@ This activity is worth `2x2=4` participation points.
 {#====================================================================================================================#}
 <span id="extra_A-CI">
 
-* We recommend that ==at least one member== of the team attempt the following.
+{% if not tic4002 %}* We recommend that ==at least one member== of the team attempt the following.{% endif %}
 </span>
 {#====================================================================================================================#}
 <span id="heading_finalize_features">Finalize the features</span>
@@ -548,7 +548,7 @@ This activity is worth `2x2=4` participation points.
 {{ icon_important_big_red }} Discuss with your team members to ensure that each member picks a different extension.
 
 
-{{ icon_tip }} You may want to pick an extension that is relevant to your tP so that the code can be reused in the tP later.
+{{ icon_tip }} You may want to pick an extension that is relevant to your tP so that the code can be reused in the tP later, if possible.
 </div>
 </span>
 {#====================================================================================================================#}
