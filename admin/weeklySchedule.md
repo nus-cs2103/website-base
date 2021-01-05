@@ -4,8 +4,6 @@
 {% call show_admin_page("weeklySchedule") %}
 <div id="main">
 
-</div>
-
 <div id="week-definition">
 
 ### {{ module_pair }} week vs normal academic week
@@ -55,7 +53,7 @@
 
 <span id="before-attempting-tasks">
 
-**Before attempting weekly project tasks,** go through the weekly topics (and do the weekly programming exercises/activities, if any) as the knowledge from those topics may be needed to complete the project tasks.
+{{ icon_important_big_red }} **Before attempting weekly project tasks,** go through the weekly topics (and do the weekly programming exercises/activities, if any) as the knowledge from those topics may be needed to complete the project tasks.
 </span>
 
 </box>

@@ -97,7 +97,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
 </box>
 
-<div tags="m--cs2113">
+<div tags="m--cs2113 m--cs2103">
 
 ##### :fab-gitter: Gitter %%(for quick chats)%%
 
@@ -115,18 +115,21 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 <div tags="m--cs2103 m--tic4001 m--tic4002">
 
-##### :fas-users-cog: MS Teams %%(for short chats, in-lecture consultations)%%
+##### :fas-users-cog: MS Teams %%(for quick chats, in-lecture consultations)%%
 
 * **Use MS Teams for short chats**.
 * Install MST in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to login using your NUSNET account.
 
-* The MST team(s) used for the class (the _code_ to join these teams will be given out during the lecture):
 
 <div tags="m--cs2103">
+{% if S == "1" %}
+* The MST team(s) used for the class (the _code_ to join these teams will be given out during the lecture):
+  * for the 12-2pm lecture: [{{ module }}_{{ semester }}_12pm_lecture](https://teams.microsoft.com/l/team/19%3a3630fa4497fd4145ba91ba53751139f5%40thread.tacv2/conversations?groupId=9c5f3186-78dc-41e1-a1bf-9523bb4542e2&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)
+  * for the 4-6pm lecture: [{{ module }}_{{ semester }}_4pm_lecture](https://teams.microsoft.com/l/team/19%3ab3526d60b0384e2683473b9cf00056d2%40thread.tacv2/conversations?groupId=3d2993a3-8b88-4fdd-b8d3-e7018470a874&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)
+{% else %}
 
-* for the 12-2pm lecture: [{{ module }}_{{ semester }}_12pm_lecture](https://teams.microsoft.com/l/team/19%3a3630fa4497fd4145ba91ba53751139f5%40thread.tacv2/conversations?groupId=9c5f3186-78dc-41e1-a1bf-9523bb4542e2&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)
-* for the 4-6pm lecture: [{{ module }}_{{ semester }}_4pm_lecture](https://teams.microsoft.com/l/team/19%3ab3526d60b0384e2683473b9cf00056d2%40thread.tacv2/conversations?groupId=3d2993a3-8b88-4fdd-b8d3-e7018470a874&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)
-
+* Join the MS Team [{{ module }}_{{ semester }}](https://teams.microsoft.com/l/team/19%3a6ac468d3601d448a89069f389d42d6f7%40thread.tacv2/conversations?groupId=29cec2b3-fc09-4b75-b6f1-faabdf41dbf4&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82) (the _code_ to join these teams will be given out during the lecture):
+{% endif %}
 </div>
 <div tags="m--tic4001 m--tic4002">
 

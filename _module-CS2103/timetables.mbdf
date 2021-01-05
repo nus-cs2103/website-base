@@ -11,7 +11,7 @@
 <span id="lectures-s2">
  Module                 | Venue    | Time
 ---------------------- | -------- | ----
-{{ module }}/T | ICube Auditorium | **1400**-1600
+{{ module }}/T | ~~ICube Auditorium~~ | **1400**-1600
 </span>
 
 <span id="tutorials-s1">

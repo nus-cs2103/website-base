@@ -2,7 +2,7 @@
 
 <div id="policy-followingInstructions">
 
-When working with others, especially in a large class such as {{ module_pair }},  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated violations of instructions. On the other hand we do understand that humans are liable to make mistakes. That is why we only penalize repeated or frequent mistakes. 
+When working with others, especially in a large class such as {{ module_pair }},  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated non-compliance of instructions. On the other hand, we do understand that we all are liable to make mistakes. That is why we only penalize repeated or frequent mistakes.
 
 </div>
 
@@ -47,7 +47,7 @@ The promptness of a reply is even more important when the email is requesting yo
 
 **Do not expect your tutor to code or debug for you**. We strongly discourage tutors from giving technical help directly to their own teams because we want to train you in troubleshooting tech problems yourselves. Allowing direct tech help from tutors transfers the troubleshooting responsibility to tutors.
 
-**It is ok to ask for help from classmates even for assignments**, even from other teams, as long as you don't copy from others and submit as your own. It doesn't matter who is helping you as long as you are learning from it.
+**It is ok to ask for help from classmates even for assignments**, even from other teams, as long as you don't copy from others and submit as your own. The preferred way for this is to ask in the [forum]({{ url_forum }}) rather than privately, as 1. it gives others an opportunity to benefit as well 2. the teaching team can confirm the accuracy of the help you are receiving.
 
 **We encourage you to give tech help to each other**, but do it in a way that the other person learns from it.
 
@@ -101,7 +101,7 @@ Penalties:
 
 #### Giving credit for reused work
 
-Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module %%i.e., not applicable outside the module (outside the module you should follow the rules specified by your employer and the license of the reused work)%%
+Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module %%i.e., not applicable outside the module (outside the module, you should follow the rules specified by your employer and the license of the reused work)%%
 
 
 If you **used a third party library**: 
@@ -144,7 +144,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   ```
 <div tags="m--cs2103 m--tic4002">
 
-**Giving credit to AB3 code**: If your project started with the AB3 code and your new code follows a design similar to AB3, that doesn't mean you need to credit AB3 -- this is because new code is _expected_ to follow existing code where possible, in the interest of consistency. However, don't take credit for existing AB3 code (i.e., ensure such code doesn't appear under your name in the tP code dashboard) unless you have modified them substantially.
+**Giving credit to AB3 code**: If your project started with the AB3 code and your new code follows a design similar to AB3, that doesn't mean you need to credit AB3 -- this is because a brownfield project is _expected_ to follow existing code where possible, in the interest of consistency. However, don't take credit for existing AB3 code (i.e., ensure such code doesn't appear under your name in the tP code dashboard) unless you have modified that code substantially.
 </div>
 </box>
 
