@@ -16,7 +16,7 @@
 
 Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](instructors.html))
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------
-<include src="../_module-{{ module | lower }}/timetables.mbdf#tutorials-s{{ S }}" inline trim optional />
+<include src="../_module-{{ module }}/timetables.mbdf#tutorials-s{{ S }}" inline trim optional />
 
 </div>
 </panel>

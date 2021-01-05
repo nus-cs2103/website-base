@@ -92,7 +92,7 @@
   {name: "Implementation"},
     {heading: "Code Quality: Coding Standards"},
       {location: ["codeQuality", "introduction", "basic"], panopto: "e2ab97ac-e79c-4555-96cc-ac0e00dc8a73"},
-      {location: ["codeQuality", "followStandard", "introduction"], panopto: "22df01df-0fa0-4b7e-b60f-ac0e00dc8a9f"},
+      {location: ["codeQuality", "followStandard", "introduction"], panopto: "0c8f7805-d88a-4845-a530-aca700c95891"},
   {name: "Revision Control"},
     {heading: "RCS: Pull, Push"},
       {location: ["gitAndGithub", "pull"], panopto: "3dbac71a-f450-47b6-8f4e-ac0900d765fe"},
