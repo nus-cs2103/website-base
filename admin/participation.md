@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, thumb with context %}
+{% from "common/macros.njk" import embed_topic, show_as_tab, thumb with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("participation") %}
@@ -79,7 +79,9 @@ Low attendance/participation can affect participation marks directly (i.e., atte
 <panel type="info" header="**+ Bonus Marks**" expanded no-close no-switch >
 
 In addition, you can receive bonus marks in the following ways. Bonus marks can be used to top up your participation marks ==but only if your marks from the above falls below {{ marks_participation }}==.
-* [For lecture participation] Participated in lecture activities (e.g., in lecture polls/quizzes) in at least 10 lectures: 1 mark
+* [For lecture participation] Participated in lecture activities (e.g., in lecture polls/quizzes) in at least 10 lectures: 1 mark{% if cs2103 %}
+* [For in-video quizzes] Answered in-video quizzes in at least 7 weeks: 1 mark<br>
+  {{ icon_info }} <span id="in-video-quiz-info">Starting from week 3, some pre-recorded lecture videos in the <span class="text-primary">{{ show_as_tab('Topics', icon_tab_topics) }}</span> tab will contain in-video quizzes. Videos containing quizzes are labelled <span class="badge badge-pill badge-danger"><big>{{ icon_video }} Video</big></span> <span class="badge badge-pill badge-warning"><big>Q+</big></span> (instead of the usual <span class="badge badge-pill badge-danger"><big>{{ icon_video }} Video</big></span>)</span>{% endif %}
 * [For perfect peer ratings] Received good ratings for all 10 peer evaluations criteria: 1 mark
 * [For helping classmates] Was very helpful to classmates %%e.g., multiple helpful posts in forum%%: 1 mark
 

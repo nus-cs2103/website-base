@@ -3,9 +3,9 @@
 {% from "_module-" + module + "/weeklyTextbookTopics.mbdf" import weeks_with_no_topics with context %}
 
 
-{% macro panopto(id, desc="")%}
+{% macro panopto(id, desc="", questions="")%}
 <panel type="seamless">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big>{{ icon_video }} Video</big></span> <md>{{ desc }}</md></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big>{{ icon_video }} Video</big></span>{% if questions %} <span class="badge badge-pill badge-warning"><big>Q+</big></span>{% endif %}<md>{{ desc }}</md></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id={{ id }}&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 </panel>
 <p/>
@@ -100,7 +100,7 @@
 
 ####  <small><span class="font-weight-bold text-muted"><include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline trim /></span></small> **<include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline />**
 </span>
-  {{ panopto(unit.panopto) if unit.panopto  and (week_num | int) <= (current_week | int) }}
+  {{ panopto(unit.panopto, questions=unit.questions) if unit.panopto  and (week_num | int) <= (current_week | int) }}
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
 {{ followup(slugify(full_path)) }}
@@ -183,7 +183,7 @@
 
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" {{ "" if params.topic.collapsed else "expanded" }} >
 <span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
-{{ panopto(params.topic.panopto) if params.topic.panopto  and (params.week_num | int) <= (current_week | int) }}
+{{ panopto(params.topic.panopto, questions=unit.questions) if params.topic.panopto  and (params.week_num | int) <= (current_week | int) }}
 <div class="indented-level1">
 {% for entry in entries  %}
   {% if entry.location %}
@@ -191,7 +191,7 @@
     {% set letter_index = letter_index + 1 %}
   {% elseif entry.subheading %}
 {{  show_subheading(entry.subheading) }}
-{{ panopto(entry.panopto) if entry.panopto and (params.week_num | int) <= (current_week | int) }}
+{{ panopto(entry.panopto, questions=entry.questions) if entry.panopto and (params.week_num | int) <= (current_week | int) }}
   {% endif %}
 {% endfor %}
 </div>
