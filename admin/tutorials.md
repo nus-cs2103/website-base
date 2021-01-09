@@ -40,7 +40,7 @@ Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)
 <br/>
 
 **Slides and tutorial recordings**:
-* Zoom recording of tutorials will be made available to you after the tutorial.
+* The Zoom recording of a tutorial will be made available to you after the tutorial.
 * <span class="text-danger">Slides used in tutorials will not be distributed to students.</span> You are expected to take notes (or screenshots) during the tutorial as necessary.
 
 
@@ -58,10 +58,10 @@ Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)
 
 <br/>
 
-* **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' on concepts that are covered in lectures or other learning resources given to you as self-learning is a vital part of the module. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. Of course tutors can help you clarify doubts under the right circumstances.
+* **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' concepts that are covered in lectures or other learning resources given to you %%(reason: self-learning is a vital part of the module)%%. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. Of course tutors can help you clarify doubts under the right circumstances.
 
 <div class="indented-level2">
-{{ embed_topic("appendixD-help.md#questions-for-tutros", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable for tutor", "2") }}
+{{ embed_topic("appendixD-help.md#questions-for-tutros", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable to ask the tutor", "2") }}
 </div>
 
 <br/>
