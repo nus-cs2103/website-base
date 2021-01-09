@@ -2,10 +2,10 @@
 
 Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:
 ```python
-Enter project score:
+Enter project score
 30
 
-Enter exam score:
+Enter exam score
 40
 
 Total: 70
