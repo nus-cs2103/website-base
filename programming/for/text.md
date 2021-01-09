@@ -98,6 +98,8 @@ print('Grand total of non-negative numbers:', str(total))
 
 <include src="exercisePanel.md" boilerplate var-title="Multiplication Table (Extended)" var-file="e-multiplicationTableExtended.md" />
 
+While a range normally starts from `0` and goes until the specified end number, **you _can_ specify a starting number for a `range`** e.g., `range(5, 8)` gives you `5 6 7`.
+
 **Loops can be nested.**
 
 <tip-box> 
