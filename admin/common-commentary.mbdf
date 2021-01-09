@@ -129,9 +129,9 @@ Java 11 can be downloaded from [here](https://www.oracle.com/java/technologies/j
 <div id="{{ slugify("cppToJava-gettingStarted-running") }}">
 <span tags="m--tic2002">
 
-At the end of the next section, there is an exercise (_[Key Exercise] ByeWorld_) that you need to submit on repl.it. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on repl.
+At the end of the next section, there is an exercise (_[Key Exercise] ByeWorld_) that you need to submit on Coursemology. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on repl.
 
-{{ embed_topic("index-tic2002.mbdf#repl-info", "Admin " + icon_embedding + " Tools → Repl.it", "3") }}
+{{ embed_topic("index-tic2002.mbdf#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "3") }}
 <p/>
 
 </span>
@@ -560,7 +560,7 @@ As your project gets bigger and changes become more frequent, it's natural to lo
                                     Models/UML
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("Design: Models") }}">
-One important objective of developer documentation is to explain the design and the implementation of the software, which usually uses diagrams as _models_ of the design being described.
+Software engineers often have to write _developer documentation_ to explain their work to others. One important objective of developer documentation is to explain the design and the implementation of the software, which usually uses diagrams as _models_ of the design being described.
 
 **Let's learn what models are, and how they are useful even beyond mere documentation.**
 </div>
@@ -661,7 +661,7 @@ Here is an example that shows the steps of drawing an OODM to match a given prob
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Activity Diagrams") }}">
-Activity diagrams is the last UML diagram type you'll be learning in this module, and probably the easiest and most intuitive of the lot. You've heard about 'flow charts', right? Well, this is the UML equivalent of that.
+Activity diagrams is the {{ "first" if te3201 else "last" }} UML diagram type you'll be learning in this module, and probably the easiest and most intuitive of the lot. You've heard about 'flow charts', right? Well, this is the UML equivalent of that.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Followup Activity Diagrams") }}">
@@ -679,6 +679,12 @@ To complete the picture about UML, given below are a peek into the other types o
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("followup-design-introduction-what") }}">
 Now that you know there are two kinds of 'design', also note that this module focuses more on the internal design rather than the external design.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Design: Basics") }}">
+While you are learning Python basics, let's also take a look at some other SE topics that we need to cover. In the early weeks, we try to cover SE topics somewhat independent from the programming topics being covered so that if you are slow on the programming side, you can still make progress on the SE side.
+
+**To start, let's look at the _design_ aspect, and _abstraction_** which is a concept most fundamental to the design aspect (and to many other aspects of SE).
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Design: Fundamentals") }}">

@@ -5,7 +5,7 @@
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_followup("IDEs-Basic-Features", reuse=false) %}
-You are already familiar with repl.it, which can be considered an _online IDE_ with limited functionality. Now it it time for you to try a proper IDE. More about that will be covered under Python topics.
+You may be already familiar with repl.it, which can be considered an _online IDE_ with limited functionality. Now it it time for you to try a proper IDE. More about that will be covered under Python topics.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Project Mgt: Scheduling and Tracking", reuse=false) %}

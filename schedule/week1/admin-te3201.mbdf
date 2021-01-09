@@ -30,10 +30,10 @@
 
 #### {{ thumb(4) }} Submit weekly exercises
 
-* As you learn the weekly topics, submit Week 1 programming exercise on `repl.it`. See the panel below for more info. More instructions about this will be provided during the lecture.
+* As you learn the weekly topics, submit Week 1 programming exercise on Coursemology. See the panel below for more info. More instructions about this will be provided during the lecture.
 
 {{ embed_topic("../../admin/index-te3201.mbdf#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "1", indent="2") }}
-{{ embed_topic("../../admin/index-te3201.mbdf#repl-info", "Admin " + icon_embedding + " Tools → `repl.it`", "1", indent="2") }}
+{{ embed_topic("../../admin/index-te3201.mbdf#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "1", indent="2") }}
 {{ embed_topic("../../admin/index-te3201.mbdf#help-info", "Admin " + icon_embedding + " Getting Help", "2", indent="2") }}
 
 
@@ -56,7 +56,7 @@
 
 <span id="week1-project">
 
-* Use the exercise `Week 1 Project Submission` on repl.it to do this week's project task given below.
+* Use the exercise `Week 1 - Project Submission` on Coursemology (under the `Python exercises` section) to do this week's project task given below.
 
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 1. Echo Once**" var-fragment="monty.mbdf#monty1" />
 </span>

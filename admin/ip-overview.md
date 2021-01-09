@@ -34,7 +34,7 @@ As you know, the iP is based on the generic project called [_Project Duke_](../s
 
 **The iP is very similar to the project you did in TIC2002 but** with the following differences:
 * **Faster pace**: You'll need to finish the project within 6 weeks.
-* **Better tools**: You'll be using industry-strength tools more %%e.g., use an IDE instead of repl.it%%
+* **Better tools**: You'll be using industry-strength tools more %%e.g., use an IDE instead of an online editor%%
 * **Higher rigor**: You are expected to follow a more systematic process %%e.g., using Git and GitHub more%%.
 * **Higher bar**: The code quality is expected to be higher and the functionality should be more robust %%e.g., required to follow some code quality guidelines%%.
 

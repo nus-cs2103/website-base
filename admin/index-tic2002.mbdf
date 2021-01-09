@@ -111,7 +111,7 @@ This module uses Java. It assumes you are familiar with C++ basics and provides 
 # Programming exercises
 <div id="exercises-info" class="indented">
 
-In some weeks, there will be some programming exercises for you to submit (on `Repl.it`). You should do the exercises as you learn the topics. ==Focus on learning the topic rather than finishing the exercises==. While these are exercises provided to self-test your knowledge, the more important thing is to read and understand the topic content. Furthermore, not all topics are tested by exercise.
+In some weeks, there will be some programming exercises for you to submit (on Coursemology). You should do the exercises as you learn the topics. ==Focus on learning the topic rather than finishing the exercises==. While these are exercises provided to self-test your knowledge, the more important thing is to read and understand the topic content. Furthermore, not all topics are tested by exercise.
 
 {{ icon_important_big_red }} Programming exercises are graded for participation.
 </div>
@@ -211,19 +211,13 @@ We'll be using GitHub for code hosting (compulsory).
 
 {{ icon_important_big_red }} Create a free GitHub account if you don't have one already.
 </div>
-<div id="repl-info">
+<div id="coursemology-info">
 
-### `repl.it`
+### Coursemology
 
-We'll be using `Repl.it` for coding exercises (compulsory).
+We'll be using Coursemology for coding exercises (compulsory).
 
-* {{ icon_important_big_red }} Create an account on https://repl.it. 
-* In your `repl.it` ==user profile set the _first name_ to match your GitHub username exactly== (so that the prof can trace your `repl.it` submissions to you). No restrictions on the last name.
-* Join the `repl.it` classroom `tic2002-{{ period }}` using the link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).
-
-The process of submitting exercises to repl is explained in this video (requires NUSNET login):
-
-{{ panopto("5e45eb04-317d-4ff2-83fb-ac0d01085120") }}
+* more info coming soon ...
 
 </div>
 <div id="intellij-info">

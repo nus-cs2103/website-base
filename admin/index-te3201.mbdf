@@ -63,7 +63,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 %%:far-clock:%% Tuesdays 1800-2130<br>
 %%:fas-map-marker-alt:%% Venue E3-06-0809<br>
 
-Lectures will be delivered as **a mixture of Zoom sessions and pre-recorded videos**. You may attend lectures from home (via Zoom) or in person. If you are attending lectures in person, ==please bring your laptop to the lecture== as you will need to be using it for the most part of the lecture.
+Lectures will be delivered as **a mixture of Zoom sessions and pre-recorded videos**. You may attend lectures from home (via Zoom) ~~or in person. If you are attending lectures in person, please bring your laptop to the lecture as you will need to be using it for the most part of the lecture.~~ (EDIT: Due to the increased class size this semester, face-to-face lectures will not be possible as a venue large enough is not available; ==the module delivery will be entirely online==).
 
 The rough break-down of a typical lecture:
 * 1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics. Use Microsoft Teams if you need to consult the prof during this time.
@@ -111,7 +111,7 @@ This module uses Python programming language to teach you programming basics req
 # Programming Exercises
 <span id="exercises-info">
 
-In some weeks, there will be some programming exercises for you to submit (on `Repl.it`). You should do the exercises as you learn the topics.
+In some weeks, there will be some programming exercises for you to submit (on Coursemology). You should do the exercises as you learn the topics.
 
 <box type="warning">
 
@@ -191,16 +191,14 @@ In some weeks, there will be some programming exercises for you to submit (on `R
 
 # Tools
 <div class="indented">
-<div id="repl-info">
+<div id="coursemology-info">
 
-### `repl.it`
+### Coursemology
 
-* We'll be using `Repl.it` for coding exercises (compulsory).
-* More info coming soon ...
-<!--
-* {{ icon_important_big_red }} Create an account on https://repl.it. 
-* ==Make sure you set your display name in your `repl.it` user profile to match your real name== (so that the prof can trace your `repl.it` submissions to you). 
-* Join the `repl.it` classroom `tic2002-{{ period }}` using this link [{{ url_repl_classroom }}]({{ url_repl_classroom }}).-->
+* We'll be using [Coursemology](http://coursemology.org/) for coding exercises (compulsory).
+* You'll receive the invitation link near to the first lecture.
+* More info about assignment submission will be given in the first week's lecture.
+
 
 </div>
 <div id="intellij-info">

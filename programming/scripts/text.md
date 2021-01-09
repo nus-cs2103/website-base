@@ -5,7 +5,7 @@ While the interactive shell is good for testing out small code bits, longer Pyth
 Let's create and run a Python program:
 
 <tabs> 
-  <tab header="Using Repl.it (no need to save as a file)">
+  <tab header="Using repl.it (no need to save as a file)">
 
 Press the :fas-play: button to run the code %%&nbsp;(don't worry about the meaning of the code)%%. You can edit the code and run again!
    
@@ -33,7 +33,7 @@ Press the :fas-play: button to run the code %%&nbsp;(don't worry about the meani
   </tab>
 </tabs>
 
-<modal header="{{ icon_video }} Opening IDEL in Windows 10" id="modal:scripts-openIdle">
+<modal large header="{{ icon_video }} Opening IDEL in Windows 10" id="modal:scripts-openIdle">
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe>
 

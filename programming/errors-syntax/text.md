@@ -28,11 +28,11 @@ SyntaxError: invalid syntax
 
 </box>
 
-Some Python editors (e.g., REPL.it) flag syntax errors even before you run the code.
+Some Python editors (e.g., repl.it) flag syntax errors even before you run the code.
 
 <tip-box> 
 
-{{ icon_example }} Note how REPL Python editor points out the syntax error using a red :x: in the _<tooltip content="the column on the extreme left of the editor">gutter</tooltip>_ of the editor.
+{{ icon_example }} Note how replt.it Python editor points out the syntax error using a red :x: in the _<tooltip content="the column on the extreme left of the editor">gutter</tooltip>_ of the editor.
 
 ![]({{baseUrl}}/programming/errors-syntax/images/syntaxErrorInRepl.png =250x)
 

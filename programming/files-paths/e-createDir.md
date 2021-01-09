@@ -53,7 +53,7 @@ check('bar')
 
 ```
 
-{{ icon_output }} output when run in REPL.it
+{{ icon_output }} output when run in repl.it
 
 ```
 /home/runner

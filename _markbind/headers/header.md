@@ -4,7 +4,7 @@
 {% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is not ready yet! The updated version will be available soon.**</md></div >
 {% elseif current_week in ["0", "1"] %}
-<div tags="m--cs2103 m--cs2113" class="w-100 p-1 bg-success text-center text-white"><md>This module will be **fully online** this semester. There is no need for on-campus presence.</md></div>
+<div tags="m--cs2103 m--cs2113 m--te3201" class="w-100 p-1 bg-success text-center text-white"><md>This module will be **fully online** this semester. There is no need for on-campus presence.</md></div>
 {% elseif current_week == "15" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is from a past semester! The current version will be [here](http://www.comp.nus.edu.sg/~{{ module | lower }}) when the new semester starts.**</md></div>
 {% endif %}
@@ -44,7 +44,7 @@
     <li><a href="{{url_files}}" target="_blank" class="dropdown-item"><md>:fas-file-upload: Files (handouts, submissions etc.)</md></a></li>
     <li tags="m--cs2113 m--cs2103"><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
     <li tags="m--tic2002 m--te3201"><a href="{{baseUrl}}/admin/index.html#project" class="dropdown-item"><md>{{ icon_project }} Project Info</md></a></li>
-    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="{{url_repl_classroom}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} `repl.it` link</md></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="{{url_coursemology_classroom}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} Coursemology link</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001 m--tic4002"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
     <li tags="m--cs2103 m--cs2113"><a href="{{ url_forum_activities_dashboard }}" class="dropdown-item"><md>:fas-trophy: Forum Activities Dashboard</md></a></li>

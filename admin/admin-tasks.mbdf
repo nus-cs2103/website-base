@@ -36,7 +36,7 @@ The tools in the following panels differ slightly from TIC4001.
 </box>
 {{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "2", indent="2") }}
 <span tags="m--cs2113">
-{{ embed_topic("tools.md#repl", "Admin " + icon_embedding + " **Tools - repl.it**", "2", indent="2") }}
+{{ embed_topic("tools.md#coursemology", "Admin " + icon_embedding + " **Tools - Coursemology**", "2", indent="2") }}
 </span>
 </span>
 {#====================================================================================================================#}
@@ -85,16 +85,16 @@ The info in the following panels differs from TIC4001.
 * **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
 </span>
 {#====================================================================================================================#}
-<span id="heading_submit_first_repl_exercises">Submit coding exercises on repl.it</span>
+<span id="heading_submit_first_repl_exercises">Submit coding exercises on Coursemology</span>
 <span id="desc_submit_first_repl_exercises">
 
 * Submit the coding exercises allocated for the current week. Most exercises are auto-graded. Keep trying until the system accepts your code as the correct solution.
 * If you encounter problems, post in the [forum]({{ url_forum }}).
 
-{{ embed_topic("tools.md#repl", "Admin " + icon_embedding + " **Tools - repl.it**", "2", indent="2") }}
+{{ embed_topic("tools.md#coursemology", "Admin " + icon_embedding + " **Tools - Coursemology**", "2", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_submit_repl_exercises">Submit coding exercises on repl.it</span>
+<span id="heading_submit_repl_exercises">Submit coding exercises on Coursemology</span>
 <span id="desc_submit_repl_exercises">
 
 * As before, submit the coding exercises allocated for the current week, and any pending exercises from previous weeks.

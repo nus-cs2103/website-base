@@ -146,7 +146,7 @@ Most programs need to read from, and write to, files in the hard disk. The topic
 {% call topic_preamble(reuse=false) %}
 You are already familiar with repl.it, which can be considered an _online IDE_ with limited features. It is now time to learn a non-online IDE which often can do more things than an online IDE.
 
-**We recommend you use an IDE for your project work from now on**, but you can continue to use repl.it for weekly exercises. The topics below describe two possible options: IDLE (lighter, simpler) and PyCharm (heavier, more powerful).
+**We recommend you use an IDE for your project work from now on**. The topics below describe two possible options: IDLE (lighter, simpler) and PyCharm (heavier, more powerful).
 {% endcall %}
 
 <include src="../programming/ide/text.md" />{{ hr_double }}
