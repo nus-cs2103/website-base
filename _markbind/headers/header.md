@@ -45,6 +45,7 @@
     <li tags="m--cs2113 m--cs2103"><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
     <li tags="m--tic2002 m--te3201"><a href="{{baseUrl}}/admin/index.html#project" class="dropdown-item"><md>{{ icon_project }} Project Info</md></a></li>
     <li tags="m--cs2113 m--tic2002 m--te3201"><a href="{{url_coursemology_classroom}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} Coursemology link</md></a></li>
+    <li><a href="{{url_ms_teams_class}}" target="_blank" class="dropdown-item"><md>:fas-users-cog: MS Teams link</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001 m--tic4002"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
     <li tags="m--cs2103 m--cs2113"><a href="{{ url_forum_activities_dashboard }}" class="dropdown-item"><md>:fas-trophy: Forum Activities Dashboard</md></a></li>

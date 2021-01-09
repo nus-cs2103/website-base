@@ -229,7 +229,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 
 # Assessment
 
-* **10%: Participation** -- To get full marks, submit weekly programming exercises and weekly project increments <trigger trigger="click" for="modal:adminInfo-deadlineInfo">on time</trigger>.
+* **10%: Participation** -- To get full marks, submit weekly programming exercises and weekly project increments <trigger trigger="click" for="modal:adminInfo-deadlineInfo">on time</trigger>. In a week that has a quiz, they will be counted for participation as well.
 * **30%: Project**
   * 10%: Documentation
   * 20%: Functionality, code
