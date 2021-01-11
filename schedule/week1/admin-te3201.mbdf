@@ -56,7 +56,7 @@
 
 <span id="week1-project">
 
-* Use the exercise `Week 1 - Project Submission` on Coursemology (under the `Python exercises` section) to do this week's project task given below.
+* Use the exercise `Week1 - Project Submission` on Coursemology (under the `Python exercises` section) to do this week's project task given below.
 
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 1. Echo Once**" var-fragment="monty.mbdf#monty1" />
 </span>

@@ -1,7 +1,7 @@
 ### Working with an Interactive Shell
 
 **Some programming environments provide an _<tooltip content="a tool which allows you to type commands in, and get back output for each command">interactive shell</tooltip>_.** In the python interactive shell you can type in a python _expression_ and get the shell to evaluate the expression.
-```python
+```python{.no-line-numbers}
 >>> 2 + 3
 5
 >>> 2 * 4 * 3

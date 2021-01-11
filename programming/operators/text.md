@@ -14,7 +14,7 @@ Operator | Operation         | Example   | Evaluates to...
 
 When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.
 
-```python
+```python{.no-line-numbers}
 >>> 2 + 4 * 5
 22
 >>> (2 + 4) * 5

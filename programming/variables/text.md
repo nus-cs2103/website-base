@@ -3,7 +3,7 @@
 >**Variables are used to store information to be referenced and manipulated in a computer program.** They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program. <sub>--https://launchschool.com/books/ruby/read/variables (emphasis added)</sub>
 
 The following statement _<tooltip content="creates">declares</tooltip>_ a variable named `v` and _assigns_ it a value `5` (the operator `=` is called the _assignment operator_):
-```python
+```python{.no-line-numbers}
 v = 5
 ``` 
 
@@ -15,17 +15,17 @@ Note that we called `v = 5` a _statement_. **Unlike expressions that evaluates t
 </tip-box>
 
 If you enter the above statement in the interactive shell, it causes the shell to remember the variable name `v` and its value. 
-```python
+```python{.no-line-numbers}
 >>> v = 5
 >>> 
 ```
 Now, you can ask the shell to recall the value by simply typing in the variable name as an expression.
-```python
+```python{.no-line-numbers}
 >>> v
 5
 ```
 You can even use the variable in expressions.
-```python
+```python{.no-line-numbers}
 >>> v * 4
 20
 ```
@@ -34,7 +34,7 @@ You can even use the variable in expressions.
 
 {{ icon_example }} Here are some examples of variables being declared, assigned, and being used:
 
-```python
+```python{.no-line-numbers}
 >>> max_bag_count = 2
 >>> max_bag_count
 2
@@ -54,12 +54,12 @@ You can even use the variable in expressions.
 </tip-box>
 
 **Python variable names (by convention) use lower case letters with `_` separating words.**
-```python
+```python{.no-line-numbers}
 long_variable_name = 56
 ```
 
 **Variable names are case sensitive.** In the example below, you can see how Python prints an error message if you try to access the variable `height` using the name `Height`
-```python
+```python{.no-line-numbers}
 >>> height = 12.0
 
 >>> height
@@ -74,7 +74,7 @@ NameError: name 'Height' is not defined
 
 **Variables can be overwritten**. In the example below, `height` was initially `5` but the value is reassigned later to be `1` more than the previous value.
 
-```python
+```python{.no-line-numbers}
 >>> height = 5
 >>> height
 5
@@ -89,7 +89,7 @@ NameError: name 'Height' is not defined
 <tip-box>
 
 {{ icon_example }} In the example below, the value of variable `height` is assigned to the variable `width`.
-```python
+```python{.no-line-numbers}
 >>> height = 5
 >>> width = height
 >>> width

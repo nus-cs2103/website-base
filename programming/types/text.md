@@ -11,13 +11,13 @@ Type name | Description | Examples
 
 String values are denoted by enclosing them in double quotes or single quotes.
 
-```python
+```python{.no-line-numbers}
 'Hello'
 "What's going on?"
 ```
 
 Some operators can be used on strings as well.
-```python
+```python{.no-line-numbers}
 >>> 'hello'
 'hello'
 

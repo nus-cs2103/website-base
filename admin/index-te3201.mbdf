@@ -60,7 +60,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 </div>
 
 #### Tutors:
-* **CHAN Weizhong**:&nbsp;&nbsp; %%:fas-envelope:%% `e0260222`[at]`u.nus.edu`
+* **CHAN Weizhong**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`e0260222`[at]`u.nus.edu`</span>
 
 </div>
 
@@ -225,11 +225,13 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 # Getting Help
 <span id="help-info">
 
-If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks
-* you can post in the [module forum]({{ url_forum }})
-* contact the prof using MS Teams
-* email prof at <include src="index-{{ module | lower }}.mbdf#prof-email" inline trim/>
-* ask for prof's help during the following week’s tutorial hour (using MS Teams)
+If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, hear are the ways to get help, in the order of preference (most preferred on the top).
+1. **Post in [MS Teams ==channel for the class==](url_ms_teams_class)**, rather than send a private message to the prof/TA. That way, either the prof or the TA can answer and the rest of the class can benefit from the answer.<br>
+   If the question is not relevant to the rest of the class, prof/TA will contact you privately (via MS Teams) for follow up.
+2. **Email `te3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
+3. **Send a private message** to the prof (search for `Damith Chatura Rajapakse`) or to the TA (search for `Chan Weizhong`) via MS Teams.
+4. Email the prof at <include src="index-{{ module | lower }}.mbdf#prof-email" inline trim/> or the TA at <include src="index-{{ module | lower }}.mbdf#ta-email" inline trim/>
+5. You may also post in the [module forum]({{ url_forum }}).
 
 </span>
 <!-- .......................................................................................... --> {{ line_dotted }}
