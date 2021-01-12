@@ -77,9 +77,8 @@ Lectures will be delivered as **a mixture of Zoom sessions and pre-recorded vide
 The rough break-down of a typical lecture:
 * 1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics. Use Microsoft Teams if you need to consult the prof during this time.
 * 1830-1900: Do exercises related to previous week topics. Consult prof (via MS Teams) if you encounter problems.
-* 1900-2000: Short Zoom lecture, introducing SE topics for the current week. After that, watch the pre-recorded videos and the textbook sections provided.
-* 2000-2100: Programming topics for the current week. Similar to the above, a short briefing via Zoom followed by self-study using pre-recorded videos and the textbook. Those who are already familiar with programming and not interested in learning Python can skip.
-* 2100-2130: You can stay back and do exercises for the current week. Consult prof (using MS Teams) for help as needed.
+* 1900-2000: Short Zoom lecture, introducing topics for the current week. After that, watch the pre-recorded videos and the textbook sections provided.
+* 2000-2130: You can stay back and do exercises for the current week. Consult prof/TA (using MS Teams) for help as needed.
 
 
 **{{ icon_slides }} Lecture slides will be uploaded to LumiNUS after the lecture**, usually by midnight of the same day. **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.
