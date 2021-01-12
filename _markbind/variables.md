@@ -1,21 +1,22 @@
 <!-- ===========================  primary module configuration ============================================= -->
 
-<variable name="module">CS2103</variable>
-<variable name="module_pair">{{ module }}/T</variable>
+<variable name="module">TEE3201</variable>
+<variable name="module_pair">{{ module }}</variable>
 <variable name="module_name">Software Engineering</variable>
-<variable name="module_color">success</variable>
+<variable name="module_color">danger</variable>
 
-<variable name="S">1</variable>
-<variable name="semester">AY2021S{{ S }}</variable>
-<variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="S">2</variable>
+<variable name="semester">AY2122S{{ S }}</variable>
+<variable name="period">2022</variable>
+<variable name="current_week">15</variable> <!-- after semester ends, set this to 15 and enable built-in search in site.json -->
 
-<variable name="algolia">no</variable>
+<variable name="algolia">yes</variable>
 
-<variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
+<variable name="luminus_module_id">db3ec846-9e8f-48db-8311-3d8395ece832</variable>
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
-<variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
-<variable name="url_ms_teams_class">x</variable>
+
+<variable name="url_coursemology_classroom">https://coursemology.org/courses/2171</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3aDpdpVTD69BZWWCCZavn_OvKR3flhvqo_e_jXk0KiZjg1%40thread.tacv2/conversations?groupId=58fdd673-4166-41ed-9ccb-980c3e9fdc93&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
 <variable name="date_w1_start">2022-01-10</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
@@ -57,7 +58,7 @@
 <variable name="marks_tp_individual">35</variable>
 <variable name="marks_tp_team">10</variable>
 <variable name="marks_participation">5</variable>
-<variable name="marks_exam">30</variable>
+<variable name="marks_exam">60</variable>
 <variable name="marks_exam_essay">0</variable>
 <variable name="marks_exam_mcq">30</variable>
 <variable name="marks_ca">70</variable>
@@ -84,10 +85,10 @@
 
 <variable name="format_normal">ddd, MMM Do</variable>
 <variable name="format_full_day">dddd</variable>
-<variable name="date_first_lecture">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
+<variable name="date_first_lecture">{{ date_w1_start | date("YYYY-MM-DD", 2) }}</variable>
 <variable name="day_lecture">{{ date_first_lecture | date(format_full_day) }}</variable>
-<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 91) }}</variable>
-<variable name="date_w2_start">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
+<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 97) }}</variable>
+<variable name="date_w2_start">{{ date_w1_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w4_start">{{ date_w3_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w5_start">{{ date_w4_start | date("YYYY-MM-DD", 7) }}</variable>
@@ -110,7 +111,7 @@
 <variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_dashboards">{{ url_module_gihub_io | safe }}/dashboards/</variable>
 <variable name="url_files">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/files</variable>
-<variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_forum">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/forum</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/{{ tp_repo_name }}</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>

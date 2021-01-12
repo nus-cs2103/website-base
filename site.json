@@ -1,6 +1,6 @@
 {
-  "baseUrl": "/website",
-  "titlePrefix": "CS2103/T",
+  "baseUrl": "/2022",
+  "titlePrefix": "TEE3201",
   "style": {
     "codeTheme": "light"
   },
@@ -20,7 +20,8 @@
   "pages": [
     {"src": "index.md",
       "searchable": "no"},
-    {"glob": "admin/*.md"},
+    {"src": "admin/index.md"},
+    {"src": "admin/mid-semester-survey-results.md"},
     {"glob": "schedule/index.md",
       "searchable": "no"},
     {"glob": "schedule/timeline.md",
@@ -29,11 +30,7 @@
       "searchable": "no"},
     {"glob": "schedule/**/index.md",
       "searchable": "no"},
-    {"glob": "schedule/**/project.md",
-      "searchable": "no"},
-    {"glob": "schedule/**/topics.md",
-      "searchable": "no"},
-    {"glob": "schedule/**/tutorial.md",
+    {"glob": "schedule/**/topics*.md",
       "searchable": "no"},
     {"glob": "coding-standards/**/*.mbd"},
     {"glob": "book/about/acknowledgements.md"},
@@ -50,17 +47,37 @@
     },
     {"glob": "book/**/index.md",
       "searchable": "no"
+    },
+    {"glob": "programming/index.md",
+      "searchable": "yes"
+    },
+    {"glob": "programming/chapters/*.md",
+      "searchable": "yes"
     }
   ],
   "intrasiteLinkValidation": {
     "enabled": false
   },
   "enableSearch": true,
-  "headingIndexingLevel": 5,
-  "plugins": ["filterTags"],
+  "plugins": ["algolia","filterTags"],
   "pluginsContext": {
-   "filterTags" : {
-      "tags": ["-m--*", "m--cs2103"]
-   }
- }
+   "filterTags": {
+      "tags": ["m--tee3201"]
+   },
+    "algolia": {
+      "apiKey": "a3fef7e2d9dea07c0fa2d8ed521057aa",
+      "appId": "3DU4XTBX4T",
+      "indexName": "nus-tic-cs",
+      "algoliaOptions": {
+        "hitsPerPage": 10,
+        "facetFilters": [["site:nus-tee3201.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
+      },
+      "debug": false
+    }
+    },
+  "deploy": {
+    "message": "Site Update.",
+    "repo": "https://github.com/nus-tee3201/2022.git",
+    "branch": "gh-pages"
+  }
 }

@@ -157,11 +157,11 @@ mark {
 }
 
 .alt-java {
-    display: block;
+    display: none;
 }
 
 .alt-python {
-    display: none;
+    display: block;
 }
 
 .flat {
