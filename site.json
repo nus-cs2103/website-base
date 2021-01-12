@@ -1,6 +1,6 @@
 {
-  "baseUrl": "/website",
-  "titlePrefix": "CS2103/T",
+  "baseUrl": "/2021",
+  "titlePrefix": "TE3201",
   "style": {
     "codeTheme": "light"
   },
@@ -20,7 +20,7 @@
   "pages": [
     {"src": "index.md",
       "searchable": "no"},
-    {"glob": "admin/*.md"},
+    {"src": "admin/index.md"},
     {"glob": "schedule/index.md",
       "searchable": "no"},
     {"glob": "schedule/timeline.md",
@@ -29,11 +29,7 @@
       "searchable": "no"},
     {"glob": "schedule/**/index.md",
       "searchable": "no"},
-    {"glob": "schedule/**/project.md",
-      "searchable": "no"},
-    {"glob": "schedule/**/topics.md",
-      "searchable": "no"},
-    {"glob": "schedule/**/tutorial.md",
+    {"glob": "schedule/**/topics*.md",
       "searchable": "no"},
     {"glob": "coding-standards/**/*.mbd"},
     {"glob": "book/about/acknowledgements.md"},
@@ -50,14 +46,33 @@
     },
     {"glob": "book/**/index.md",
       "searchable": "no"
+    },
+    {"glob": "programming/index.md",
+      "searchable": "yes"
+    },
+    {"glob": "programming/chapters/*.md",
+      "searchable": "yes"
     }
   ],
-  "enableSearch": true,
-  "headingIndexingLevel": 5,
-  "plugins": ["filterTags"],
+  "enableSearch": false,
+  "plugins": ["algolia","filterTags"],
   "pluginsContext": {
-   "filterTags" : {
-      "tags": ["-m--*", "m--cs2103"]
-   }
- }
+   "filterTags": {
+      "tags": ["m--te3201"]
+   },
+   "algolia": {
+      "apiKey": "29bf21caddc74372e5c75f9a557715ec", 
+      "indexName": "te3201_2019", 
+      "algoliaOptions": {
+        "hitsPerPage": 10,
+        "facetFilters": [["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]]
+      }, 
+      "debug": false 
+    }
+    },
+  "deploy": {
+    "message": "Site Update.",
+    "repo": "https://github.com/nus-te3201/2021.git",
+    "branch": "gh-pages"
+  }
 }

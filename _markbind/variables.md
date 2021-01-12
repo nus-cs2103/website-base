@@ -1,25 +1,25 @@
 <!-- ===========================  primary module configuration ============================================= -->
 
-<variable name="module">CS2103</variable>
-<variable name="module_pair">{{ module }}/T</variable>
+<variable name="module">TE3201</variable>
+<variable name="module_pair">{{ module }}</variable>
 <variable name="module_name">Software Engineering</variable>
-<variable name="module_color">success</variable>
+<variable name="module_color">danger</variable>
 
-<variable name="S">1</variable>
+<variable name="S">2</variable>
 <variable name="semester">AY2021S{{ S }}</variable>
-<variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="period">2021</variable>
+<variable name="current_week">11</variable>
 
 <variable name="algolia">yes</variable>
 
-<variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
+<variable name="luminus_module_id">53fd1c50-a1dd-4e38-8f2c-e47d587e33f4</variable>
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
 <variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3a9d5f234b909b4260911c15146af59ca2%40thread.tacv2/conversations?groupId=ae9c3d69-e239-4d54-9522-6607291d6e18&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
-<variable name="date_w1_start">2020-08-10</variable>
-<variable name="date_w2_start">2020-08-14</variable>
-<variable name="date_first_lecture">2020-08-14</variable>
+<variable name="date_w1_start">2021-01-11</variable>
+<variable name="date_w2_start">2021-01-18</variable>
+<variable name="date_first_lecture">2021-01-12</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
 <variable name="recess_after_week">7</variable>
 <variable name="time_lecture_start">1600</variable>
@@ -111,7 +111,7 @@
 <variable name="url_dashboards">{{ url_module_gihub_io | safe }}/dashboards</variable>
 <variable name="url_files">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/files</variable>
 <variable name="url_gitter">https://gitter.im/{{ module_org }}/community</variable>
-<variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_forum">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/forum</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/{{ tp_repo_name }}</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>

@@ -16,7 +16,10 @@
 <li><a href="{{ baseUrl }}/schedule/week{{ week }}/index.html" class="dropdown-item"> <md>**Week {{ week }}** [{{ get_week_start_date(week | int, format_normal) }}] {% if current_week == week.num %} :fas-arrow-circle-left:{% endif %}</md></a></li>
 {% endfor %}
   </dropdown>
-  <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
+  <dropdown header="**Textbook**" class="nav-link">
+    <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+    <li><a href="{{baseUrl}}/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+  </dropdown>
   <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
   <li tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002"><a href="{{ url_dashboards }}" target="_blank" class="nav-link"><md>**Dashboards**</md></a></li>
   <dropdown tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002" header="**Project Links**" class="nav-link">
