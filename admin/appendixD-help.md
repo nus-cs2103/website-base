@@ -35,7 +35,7 @@
       {{ good }} `runtest.bat fails with ClassNotFound error`
     * Include full error message, screenshots, code snippets, stack traces, etc.<br>
       :fas-lightbulb: Note that it is better to give code in text form rather than as screenshots, to allow others to easily copy-paste the code in their reply.<br>
-      :fas-lightbulb: You can use [GFM](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown) syntax when posting in the forum.
+      :fas-lightbulb: You can use [Markdown, and GFM](https://guides.github.com/features/mastering-markdown/) syntax when posting in the forum.
     * If the problem is code-related, share the full code if possible (e.g., push the current state of the code to a branch in your fork and give the link to the branch). That gives a chance for someone to reproduce the state of your project in their computer. Sharing just a snippet of your choosing might not be enough as the problem may not be where you think it is.
   * **Avoid addressing the question to one person** (e.g., the prof), unless really necessary. Doing so will discourage others from answering that question.
   * **Isolate the problem.** "My code doesn't work" isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about <trigger trigger="click" for="modal:appendixHelp-rubberDuckDebugging">Rubber Duck Debugging</trigger>?).

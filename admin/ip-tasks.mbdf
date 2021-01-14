@@ -141,6 +141,13 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
    {{ icon_tip }} If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues` e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`
 1. Clone the fork onto your computer.
 1. Set up the project in your IDE as explained in [the README file]({{ url_module_org }}/{{ ip_repo_name }}/blob/master/README.md).<br>
+
+<box>
+
+**If you encounter technical problems**, follow the guidelines given below in seeking help:
+
+{{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="2") }}
+</box>
 </span>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_tic4002">Set up the project in your computer</span>
