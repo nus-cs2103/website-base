@@ -183,7 +183,7 @@
 
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" {{ "" if params.topic.collapsed else "expanded" }} >
 <span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
-{{ panopto(params.topic.panopto, questions=unit.questions) if params.topic.panopto  and (params.week_num | int) <= (current_week | int) }}
+{{ panopto(params.topic.panopto, questions=unit.questions) if params.topic.panopto  and (params.week_num | int) <= (current_week | int) + 1 }}
 <div class="indented-level1">
 {% for entry in entries  %}
   {% if entry.location %}
@@ -191,7 +191,7 @@
     {% set letter_index = letter_index + 1 %}
   {% elseif entry.subheading %}
 {{  show_subheading(entry.subheading) }}
-{{ panopto(entry.panopto, questions=entry.questions) if entry.panopto and (params.week_num | int) <= (current_week | int) }}
+{{ panopto(entry.panopto, questions=entry.questions) if entry.panopto and (params.week_num | int) <= (current_week | int) + 1 }}
   {% endif %}
 {% endfor %}
 </div>

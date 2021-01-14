@@ -23,7 +23,7 @@
 
 <box type="info" tags="m--tic4002" seamless>
 
-The tools in the following panels are as the same as what you used in TIC4001.
+The tools in the following panels are the same as what you used in TIC4001.
 </box>
 
 {{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}

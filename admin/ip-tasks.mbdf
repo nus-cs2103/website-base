@@ -153,7 +153,7 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 <span id="heading_set_up_project_tic4002">Set up the project in your computer</span>
 <span id="desc_set_up_project_tic4002">
 
-We assume you still have the iP project set up that you used for TIC4001. If not, please set it up as explained in [TIC4001 website](https://nus-tic4001-{{ previous_semester | lower }}.github.io/website/admin/ip-w2.html)
+* We assume you still have the iP project set up that you used for TIC4001. If not, please set it up as explained in [TIC4001 website](https://nus-tic4001-{{ previous_semester | lower }}.github.io/website/admin/ip-w2.html).
 </span>
 {#====================================================================================================================#}
 <span id="heading_finish_leftover_tasks">Do any leftover iP tasks from the previous week</span>
@@ -164,6 +164,13 @@ We assume you still have the iP project set up that you used for TIC4001. If not
 <span id="heading_create_pr_to_upstream">Create a PR to the upstream repo</span>
 <span id="desc_create_pr_to_upstream">
 {% if tic4002 %}
+
+<box type="tip" seamless>
+
+<span class="text-success">**If you encounter technical problems**</span>, follow the guidelines given below in seeking help:
+
+{{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="2") }}
+</box>
 
 * Note that while you will be reusing the same <tooltip content="i.e., the cloned repo in your computer">_local repo_</tooltip> and the same <tooltip content="i.e., the one you forked to your GitHub account last semester">_forked remote repo_</tooltip>, you will be using a new <tooltip content="i.e., the repo you PR to">_upstream repo_</tooltip> we have set up for this semester. As a result, ==you need to create a new PR== from your fork to the new upstream repo, as given below.{% endif %}
 * Create a <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from your fork to the upstream repo. Note the following:
