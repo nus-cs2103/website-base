@@ -100,7 +100,7 @@
 
 ####  <small><span class="font-weight-bold text-muted"><include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline trim /></span></small> **<include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline />**
 </span>
-  {{ panopto(unit.panopto, questions=unit.questions) if unit.panopto  and (week_num | int) <= (current_week | int) }}
+  {{ panopto(unit.panopto, questions=unit.questions) if unit.panopto  and (week_num | int) <= (current_week | int) + 1 }}
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
 {{ followup(slugify(full_path)) }}
