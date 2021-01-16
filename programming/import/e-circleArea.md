@@ -11,3 +11,10 @@ Write a program to read the radius of a circle (a float number) from the input a
 Enter radius: 4.5
 Area: 63.61725
 ```
+<include src="seeHint.md" boilerplate >
+<span id="hint_body">
+
+To use `math.pi`, you need to `import` the `math` module first.
+
+</span>
+</include>
