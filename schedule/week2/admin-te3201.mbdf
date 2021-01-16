@@ -10,14 +10,18 @@
 
 #### {{ thumb(1) }} Submit weekly exercises
 
-* As usual
+* As usual, submit on coursemology
+
+#### {{ thumb(2) }} Submit quiz
+
+* After learning the [SE topics](topics.md) allocated for this week, submit the quiz on LumiNUS.
 
 
-#### {{ thumb(2) }} Submit weekly project increments
+#### {{ thumb(3) }} Submit weekly project increments
 
 <span id="week2-project">
 
-* Add the following increment to your project. As before (and also in future weeks), copy-paste-submit the updated code via the weekly exercise named `Week N Project Submission` where `N` is the week number %%e.g., submit this week's project code via the Coursemology exercise named `Week2 - Project Submission`%%.
+* Add the following increment to your project. As before (and also in future weeks), copy-paste-submit the updated code via the weekly exercise named `WeekN - Project Submission` where `N` is the week number %%e.g., submit this week's project code via the Coursemology exercise named `Week2 - Project Submission`%%.
 
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 2. Recognize Known Commands**" var-fragment="monty.mbdf#monty2" />
 </span>
