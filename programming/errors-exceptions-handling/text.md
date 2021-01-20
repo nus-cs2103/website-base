@@ -223,7 +223,7 @@ It is also possible to **use `except Exception` to catch any kind of exception**
 
 <box>
 
-{{ icon_example }} The code below handles both `ZeroDivisionError` and `ValueError` in the same `except` clause.
+{{ icon_example }} The code below handles both `ZeroDivisionError` and `ValueError` _and any other exception_ in the same `except` clause.
 
 <include src="inputOutput.md" boilerplate>
 <span id="input">
@@ -247,8 +247,6 @@ Something wrong
 </include>
 
 </box>
-
-<include src="tryYourOwn.md" boilerplate var-program="errors-exceptions-handling" />
 
 :paperclip: **Resources**:
 * [Python built-in exceptions](https://www.tutorialspoint.com/python/standard_exceptions.htm)

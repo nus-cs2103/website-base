@@ -69,6 +69,11 @@ total cows after breeding: 5
 
 </tip-box>
 
+<panel type="seamless" header="%%{{ icon_video }} Global and local scope%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M-CoVBK_bLE?rel=0&showinfo=0&start=0&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel><p/>
+
 <include src="exercisePanel.md" boilerplate var-title="Grader - Add `main` Function" var-file="e-grader-addMainFunction.md" />
 <include src="exercisePanel.md" boilerplate var-title="Grader - Restructure the `main` Function" var-file="e-grader-restructureTheMainFunction.md" />
 <include src="exercisePanel.md" boilerplate var-title="Grader - Analyze Grades in a Loop" var-file="e-grader-analyzeInLoop.md" />

@@ -97,10 +97,6 @@ print(list_of_lists[2][0])
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate >
-  <span id="program">lists-access-using-index</span>
-</include>
-
 </tip-box>
 
 <panel type="seamless" header="%%{{ icon_video }} Accessing an item from a list%%">

@@ -53,8 +53,6 @@ Nice to meet you.
 
 Note how the statements inside the function are not executed unless the method is called.
 
-<include src="tryYourOwn.md" boilerplate var-program="hello-function" />
-
 </tip-box>
 
 The function definition should appear in the code _before_ it is called.

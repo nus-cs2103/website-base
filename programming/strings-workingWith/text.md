@@ -70,6 +70,4 @@ True
 
 </box>
 
-<include src="tryYourOwn.md" boilerplate var-program="strings-workingWith" />
-
 <include src="exercisePanel.md" boilerplate var-title="Has All Characters" var-file="e-hasAllCharacters.md" />

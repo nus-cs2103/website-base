@@ -247,6 +247,4 @@ Price===============
 
 </box>
 
-<include src="tryYourOwn.md" boilerplate var-program="strings-methods" />
-
 <include src="exercisePanel.md" boilerplate var-title="Print Formatted Item" var-file="e-printFormattedItem.md" />

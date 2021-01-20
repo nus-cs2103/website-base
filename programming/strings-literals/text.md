@@ -103,6 +103,3 @@ def remove_head(items):
 </tip-box>
 
 :paperclip: Vist [this page](https://www.python.org/dev/peps/pep-0257/) to learn more about docstrings
-
-<include src="tryYourOwn.md" boilerplate var-program="strings-literals" />
-

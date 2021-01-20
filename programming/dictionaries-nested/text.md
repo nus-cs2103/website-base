@@ -73,8 +73,6 @@ Betsy Sims
 
 </box>
 
-<include src="tryYourOwn.md" boilerplate var-program="dictionaries-nested" />
-
 <include src="exercisePanel.md" boilerplate var-title="Player Stats" var-file="e-playerStats.md" />
 <include src="exercisePanel.md" boilerplate var-title="Grade Report" var-file="e-gradeReport.md" />
 <include src="exercisePanel.md" boilerplate var-title="Inventory Report" var-file="e-inventoryReport.md" />

@@ -78,8 +78,6 @@ hide_ends2 failed: Not enough items
 
 </box>
 
-<include src="tryYourOwn.md" boilerplate var-program="errors-exceptions-raising" />
-
 Here are some commonly used built-in exceptions ([full list](https://docs.python.org/3/library/exceptions.html#concrete-exceptions)) you can raise/handle in your code:
 * `IndexError`: Indicates an index of a sequence (e.g., a list) is out of range.
 * `RuntimeError` : Indicates an error that does not fall under any other category.

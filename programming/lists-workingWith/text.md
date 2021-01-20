@@ -23,8 +23,6 @@ print(spam)
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate var-program="lists-del" />
-
 </tip-box>
 
 <panel type="seamless" header="%%{{ icon_video }} Deleting items from a list%%">
@@ -68,8 +66,6 @@ print(letters[1:-1]) # print from item 1 to 2nd last item
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate var-program="lists-slicing" />
-
 </tip-box>
 
 Note that slicing gives you a _copy_ of a portion of the original list i.e., you get a new list.
@@ -102,8 +98,6 @@ sub list     : ['0a', '1b']
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate var-program="lists-slicing" />
-
 </box>
 
 
@@ -135,8 +129,6 @@ Length is: 2
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
-
 </tip-box>
 
 <include src="exercisePanel.md" boilerplate var-title="Get Mid" var-file="e-getMid.md" />
@@ -163,8 +155,6 @@ print(friends)
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
-
 </tip-box>
 
 **You can use the `*` operator to create a new list by replicating an existing list multiple times.**
@@ -188,8 +178,6 @@ print(walking)
 </span>
 </include>
 
-
-<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
 
 </tip-box>
 
@@ -266,7 +254,6 @@ Do you sell Hamsters?
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
 
 </tip-box>
 
@@ -295,8 +282,6 @@ for i, animal in enumerate(pets):
 </span>
 </include>
 
-
-<include src="tryYourOwn.md" boilerplate var-program="lists-len-plus-star-for" />
 
 </tip-box>
 

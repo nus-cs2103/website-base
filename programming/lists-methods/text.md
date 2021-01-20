@@ -45,8 +45,6 @@ After sorting ['Dogs', 'Hamsters', 'Parrots', 'Rabbits']
 After reverse-sorting ['Rabbits', 'Parrots', 'Hamsters', 'Dogs']
 ```
 
-<include src="tryYourOwn.md" boilerplate var-program="lists-methods" />
-
 </tip-box>
 
 Note how in the example above `sort(reverse=True)` sorts the list in the reverse order. This notation of **`method(parameter_name=argument)` is known as passing a _keyword argument_.** Explanation: Some methods/functions has optional parameters. To specify an argument for such an optional parameter, we have to specify which parameter we are supplying. In the case of `sort(reverse=True)`, we are supplying the boolean argument `True` to the optional parameter named `reverse`.
@@ -80,7 +78,6 @@ for animal in pets:
 </include>
 
 
-<include src="tryYourOwn.md" boilerplate var-program="lists-methods" />
 
 </tip-box>
  
@@ -130,7 +127,6 @@ print(names)
 </span>
 </include>
 
-<include src="tryYourOwn.md" boilerplate var-program="methods-mutating" />
 
 </tip-box>
 

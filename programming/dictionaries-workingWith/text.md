@@ -203,6 +203,4 @@ False
 
 </box>
 
-<include src="tryYourOwn.md" boilerplate var-program="dictionaries-workingWith" />
-
 <include src="exercisePanel.md" boilerplate var-title="Add Bonus" var-file="e-addBonus.md" />

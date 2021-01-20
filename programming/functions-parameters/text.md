@@ -41,11 +41,6 @@ How are you John ?
 </span>
 </include>
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
 
 {{ icon_example }} The code below has a `say_hello` function that takes one parameter and a `repeat_hello` function that takes two parameters. Furthermore, note how one function calls the other.
 
@@ -61,7 +56,13 @@ def repeat_hello(name, times):
 repeat_hello('Penny', 3)
 say_hello('Sheldon')
 ```
-<include src="tryYourOwn.md" boilerplate var-program="hello-given-times" />
+{{ icon_output }}
+```
+Hello Penny
+Hello Penny
+Hello Penny
+Hello Sheldon
+```
 
 <panel type="seamless" header="%%:laughing: See the human version of the above code%%" minimized>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jrzUsHNGZHc?rel=0&showinfo=0&start=0&end=15&version=3" frameborder="0" allowfullscreen></iframe>
