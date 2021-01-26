@@ -84,7 +84,7 @@ If the exception does not match the `except` clause, the program crashes.
 
 <box>
 
-{{ icon_example }} The code below crashes because the actual exception %%(caused by passing a string when an foloating point number is expected)%% does not match the specified exception `ZeroDivisionError`.
+{{ icon_example }} The code below crashes because the actual exception %%(caused by passing a string when an floating point number is expected)%% does not match the specified exception `ZeroDivisionError`.
 
 <include src="inputOutput.md" var-align="top" boilerplate>
 <span id="input">

@@ -19,7 +19,7 @@
 {week: "3"},
   {name: "Requirements"},
     {heading: "Requirements: Intro"},
-      {location: ["requirements", "introduction"], panopto: "88d01602-d48b-44eb-b8d1-ac2900b7398c"},
+      {location: ["requirements", "introduction"]},
       {location: ["requirements", "nonFunctionalRequirements"]},
       {location: ["requirements", "prioritizing"]},
       {location: ["requirements", "quality"]},
