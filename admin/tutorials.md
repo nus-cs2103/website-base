@@ -14,6 +14,12 @@
 
 </box>
 
+<box type="info" tags="m--cs2103">
+
+Zoom links for tutorial sessions will be available in [LumiNUS/Weblinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.
+
+</box>
+
 Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](instructors.html))
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------
 <include src="../_module-{{ module }}/timetables.mbdf#tutorials-s{{ S }}" inline trim optional />
