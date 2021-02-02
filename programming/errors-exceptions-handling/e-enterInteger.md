@@ -3,7 +3,7 @@
 The code below assumes the entered string will always represent an integer. 
 
 ```python
-value = input('Input an integer:')
+value = input('Input an integer: ')
 print('You entered', value)
 ```
 
@@ -31,7 +31,7 @@ You entered 6
 ```python
 while True:
   try:
-    value = int(input('Input an integer:'))
+    value = int(input('Input an integer: '))
     # YOUR CODE HERE! print? break? continue?
   except ValueError:
     # YOUR CODE HERE!

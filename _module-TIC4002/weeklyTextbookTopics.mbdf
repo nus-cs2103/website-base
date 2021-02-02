@@ -7,7 +7,7 @@
       {location: ["integration", "buildAutomation", "what"]},
       {location: ["integration", "buildAutomation", "continuousIntegrationDeployment"]},
   {name: "UML Diagrams"},
-    {heading: "%%Class/Object Diagrams: Basics%%", panopto: "7f6d775e-b598-46a4-aec8-ac1b00d9a85c", collapsed: "yes"},
+    {heading: "%%Class/Object Diagrams: Basics%%", panopto: "03c5a0f1-9354-4d83-8229-acbf00b4b3dc", collapsed: "yes"},
       {location: ["modeling", "modelingStructures", "ooStructures"]},
       {location: ["modeling", "modelingStructures", "classDiagramsBasic"]},
       {location: ["modeling", "modelingStructures", "objectDiagrams"]},

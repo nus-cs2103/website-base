@@ -1,53 +1,54 @@
 {% set tutorials = [
-  "TIC4001-F18"
+  "TIC4002-F18"
 ]%}
 
 {% set students = [
-  ['ZHEN..HENG', 'TIC4001-F18-1', 'Yiheng0410'],
-  ['WANG..QUAN', 'TIC4001-F18-1', 'Impala36'],
-  ['LIN ..NHUI', 'TIC4001-F18-1', 'binbinhui'],
-  ['LIN ..QING', 'TIC4001-F18-1', 'linqing42'],
-  ['CHAN..HONG', 'TIC4001-F18-2', 'e0260222'],
-  ['CHEN.. DUO', 'TIC4001-F18-2', 'Chenduo1412'],
-  ['DAI .. WEI', 'TIC4001-F18-2', 'daiweinus'],
-  ['LIN ..TONG', 'TIC4001-F18-2', 'dgc5213'],
-  ['JANU.. LIM', 'TIC4001-F18-3', 'JanuariusJang'],
-  ['TAY .. WEN', 'TIC4001-F18-3', 'tototto'],
-  ['ZHEN..IJIE', 'TIC4001-F18-3', 'ZhengShijieNUS'],
-  ['HONG..HENG', 'TIC4001-F18-3', 'pigoliver'],
-  ['CHI ..PING', 'TIC4001-F18-4', 'Chilaiping'],
-  ['OLIV..N DA', 'TIC4001-F18-4', 'skyventus'],
-  ['HNGO.. WEN', 'TIC4001-F18-4', 'e0261618'],
-  ['LI Y..I YI', 'TIC4001-F18-4', 'timmyly7'],
-  ['ADI ..KARI', 'TIC4001-F18-4', 'adi-kd0021']
+  ['ZHEN..HENG', 'TIC4002-F18-1', 'Yiheng0410'],
+  ['WANG..QUAN', 'TIC4002-F18-1', 'Impala36'],
+  ['LIN ..NHUI', 'TIC4002-F18-1', 'binbinhui'],
+  ['LIN ..QING', 'TIC4002-F18-1', 'linqing42'],
+  ['CHAN..HONG', 'TIC4002-F18-2', 'e0260222'],
+  ['CHEN.. DUO', 'TIC4002-F18-2', 'Chenduo1412'],
+  ['DAI .. WEI', 'TIC4002-F18-2', 'daiweinus'],
+  ['LIN ..TONG', 'TIC4002-F18-2', 'dgc5213'],
+  ['JANU.. LIM', 'TIC4002-F18-3', 'JanuariusJang'],
+  ['TAY .. WEN', 'TIC4002-F18-3', 'tototto'],
+  ['ZHEN..IJIE', 'TIC4002-F18-3', 'ZhengShijieNUS'],
+  ['HONG..HENG', 'TIC4002-F18-3', 'pigoliver'],
+  ['CHI ..PING', 'TIC4002-F18-4', 'Chilaiping'],
+  ['OLIV..N DA', 'TIC4002-F18-4', 'skyventus'],
+  ['HNGO.. WEN', 'TIC4002-F18-4', 'e0261618'],
+  ['LI Y..I YI', 'TIC4002-F18-4', 'timmyly7'],
+  ['ADI ..KARI', 'TIC4002-F18-4', 'adi-kd0021']
 ]%}
 
 {% set teams = {
- 'TIC4001-F18-1': 'https://docs.google.com/document/d/1Nco1j2pU6RU6wM_pqnVfqr3jzqT2hoP9ZjHZtuIDbkE/edit',
- 'TIC4001-F18-2': 'https://docs.google.com/document/d/1R05eK83tpufSi8Y5yqtcbHF_QYmsd2srJczg4qeoVT4/',
- 'TIC4001-F18-3': 'https://docs.google.com/document/d/1lV2W6EdqnofPQ21SSvqO4qZw9GFapS8wDcJV4CBJ00E/edit?usp=sharing',
- 'TIC4001-F18-4': 'https://docs.google.com/document/d/16SH2Y7osjmfBnzf-B-XKfdR_o8ikJFGM4Sdmc98eDwQ/edit?usp=sharing'
+ 'TIC4002-F18-1': 'https://docs.google.com/document/d/1hmxrZnCHhjnUg0Nso7vZQQJYKmUaImqLW1qNKYGRTD4/edit?usp=sharing',
+ 'TIC4002-F18-2': 'https://docs.google.com/document/d/1_lIC09UZIUg_VqsLnGTikt4RcaX7aW4_f7v3-BRw3ss/edit?usp=sharing',
+ 'TIC4002-F18-3': 'https://docs.google.com/document/d/1M8ILB2N0DFXL5fZr54XValydYs1KlHSbmuFCaUGK7jg/edit?usp=sharing',
+ 'TIC4002-F18-4': 'https://docs.google.com/document/d/1Mdx-4R8RGgsb_R3UGwoAbKkhQ3Ki9noIlgZUylQM2PI/edit?usp=sharing'
 }%}
 
 
+
 {% set ip_pr_review_allocation = [
-  ['TIC4001-F18', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213', 'binbinhui'],
-  ['TIC4001-F18', 'Yiheng0410', 'pigoliver', 'Impala36', 'e02161618', 'Chenduo1412'],
-  ['TIC4001-F18', 'Chilaiping', 'dgc5213', 'binbinhui', 'Yiheng0410', 'pigoliver'],
-  ['TIC4001-F18', 'e0260222', 'daiweinus', 'adi-kd0021', 'linqing42', 'timmyly7'],
-  ['TIC4001-F18', 'Chenduo1412', 'e0260222', 'daiweinus', 'adi-kd0021', 'linqing42'],
-  ['TIC4001-F18', 'skyventus', 'tototto', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping'],
-  ['TIC4001-F18', 'Impala36', 'e02161618', 'Chenduo1412', 'e0260222', 'daiweinus'],
-  ['TIC4001-F18', 'daiweinus', 'adi-kd0021', 'linqing42', 'timmyly7', 'skyventus'],
-  ['TIC4001-F18', 'dgc5213', 'binbinhui', 'Yiheng0410', 'pigoliver', 'Impala36'],
-  ['TIC4001-F18', 'tototto', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213'],
-  ['TIC4001-F18', 'e02161618', 'Chenduo1412', 'e0260222', 'daiweinus', 'adi-kd0021'],
-  ['TIC4001-F18', 'timmyly7', 'skyventus', 'tototto', 'JanuariusJang', 'ZhengShijieNUS'],
-  ['TIC4001-F18', 'adi-kd0021', 'linqing42', 'timmyly7', 'skyventus', 'tototto'],
-  ['TIC4001-F18', 'binbinhui', 'Yiheng0410', 'pigoliver', 'Impala36', 'e02161618'],
-  ['TIC4001-F18', 'linqing42', 'timmyly7', 'skyventus', 'tototto', 'JanuariusJang'],
-  ['TIC4001-F18', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213', 'binbinhui', 'Yiheng0410'],
-  ['TIC4001-F18', 'pigoliver', 'Impala36', 'e02161618', 'Chenduo1412', 'e0260222']
+  ['TIC4002-F18', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213', 'binbinhui'],
+  ['TIC4002-F18', 'Yiheng0410', 'pigoliver', 'Impala36', 'e02161618', 'Chenduo1412'],
+  ['TIC4002-F18', 'Chilaiping', 'dgc5213', 'binbinhui', 'Yiheng0410', 'pigoliver'],
+  ['TIC4002-F18', 'e0260222', 'daiweinus', 'adi-kd0021', 'linqing42', 'timmyly7'],
+  ['TIC4002-F18', 'Chenduo1412', 'e0260222', 'daiweinus', 'adi-kd0021', 'linqing42'],
+  ['TIC4002-F18', 'skyventus', 'tototto', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping'],
+  ['TIC4002-F18', 'Impala36', 'e02161618', 'Chenduo1412', 'e0260222', 'daiweinus'],
+  ['TIC4002-F18', 'daiweinus', 'adi-kd0021', 'linqing42', 'timmyly7', 'skyventus'],
+  ['TIC4002-F18', 'dgc5213', 'binbinhui', 'Yiheng0410', 'pigoliver', 'Impala36'],
+  ['TIC4002-F18', 'tototto', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213'],
+  ['TIC4002-F18', 'e02161618', 'Chenduo1412', 'e0260222', 'daiweinus', 'adi-kd0021'],
+  ['TIC4002-F18', 'timmyly7', 'skyventus', 'tototto', 'JanuariusJang', 'ZhengShijieNUS'],
+  ['TIC4002-F18', 'adi-kd0021', 'linqing42', 'timmyly7', 'skyventus', 'tototto'],
+  ['TIC4002-F18', 'binbinhui', 'Yiheng0410', 'pigoliver', 'Impala36', 'e02161618'],
+  ['TIC4002-F18', 'linqing42', 'timmyly7', 'skyventus', 'tototto', 'JanuariusJang'],
+  ['TIC4002-F18', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213', 'binbinhui', 'Yiheng0410'],
+  ['TIC4002-F18', 'pigoliver', 'Impala36', 'e02161618', 'Chenduo1412', 'e0260222']
 ]%}
 
 {% set ip_final_peer_evaluation_allocation = [] %}

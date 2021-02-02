@@ -3,6 +3,7 @@
 
 {% call show_admin_summary() %}
 1. Submit weekly exercises
+1. Submit the quiz
 1. Submit weekly project increment `Level 4. Collect Tasks in Memory`
 {% endcall %}
 
@@ -12,7 +13,12 @@
 * As usual
 
 
-#### {{ thumb(2) }} Submit weekly project increments
+#### {{ thumb(2) }} Submit weekly exercises
+
+* Submit the quiz
+
+
+#### {{ thumb(3) }} Submit weekly project increments
 
 <span id="week4-project">
 
