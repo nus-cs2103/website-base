@@ -261,7 +261,7 @@ Suggested workflow:
 <span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the code base</span>
 <span id="desc_get_familiar_with_the_code_base">
 
-* ==Ideally, you should do this task in this week== (i.e., midnight before the week 6 tutorial), but you may take an extra week (i.e., by the week 7 tutorial) to finish them without penalty.
+* ==Ideally, you should do this task in this week== {% if tic4002 %}(i.e., before the week 6 lecture), but you may take an extra week (i.e., by the week 7 lecture){% else %}(i.e., midnight before the week 6 tutorial), but you may take an extra week (i.e., by the week 7 tutorial){% endif %} to finish them without penalty.
 * Do the following tutorials to get familiar with the codebase
   * [Tutorial 1 - Tracing a Command Execution Path]({{ url_ab3_fork_website }}/tutorials/TracingCode.html)
   * [Tutorial 2 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)

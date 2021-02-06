@@ -23,7 +23,7 @@ The standard Python installation comes with a basic IDE called IDLE. It can be u
 
 <panel header="{{ icon_video }} Installing and setting up PyCharm" expanded>
 
-@[youtube](0y5XlNeFxNk)
+@[youtube](AUiM1UaRCPc)
 
 </panel>
 

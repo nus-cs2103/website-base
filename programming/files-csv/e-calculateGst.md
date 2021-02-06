@@ -47,7 +47,7 @@ pens, pencils| 5.0|0.35
 </include>
 
 
-<panel type="seamless" header="%%:bulb: Python hints%%">
+Start with the following code:
 
 ```python
 import csv
@@ -97,4 +97,9 @@ process('itemlist1.csv', 'updated_itemlist1.csv')
 process('itemlist2.csv', 'updated_itemlist2.csv')
 ```
 
-</panel>
+`itemlist2.csv`:
+```
+item,price
+bread,1.0
+bananas, 4.0
+```
