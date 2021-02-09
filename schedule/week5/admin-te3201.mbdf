@@ -3,6 +3,7 @@
 
 {% call show_admin_summary() %}
 1. Submit weekly exercises
+1. ~~Submit the quiz~~
 1. Submit weekly project increment `Level 5. Mark Tasks as Done`, `Level 6. Give Help` (optional)
 {% endcall %}
 
@@ -10,6 +11,11 @@
 #### {{ thumb(1) }} Submit weekly exercises
 
 * As usual
+
+
+#### ~~{{ thumb(2) }} Submit the quiz~~
+
+* There is no quiz this week
 
 
 #### {{ thumb(2) }} Submit weekly project increments

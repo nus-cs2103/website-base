@@ -71,7 +71,7 @@ def read_csv_lines(filename):
   Example: If the file file1.csv has the following contents,
   item,price
   book,10.0
-  read_csv_lines('file1.csv') returns [['item', 'price']['book', '10.0']]
+  read_csv_lines('file1.csv') returns [['item', 'price'], ['book', '10.0']]
   
   """
   return [] # REPLACE WITH YOUR CODE
@@ -81,7 +81,7 @@ def write_to_csv_file(lines, filename):
   """Write the given lines (a list of lists) to the CSV file (specified by filename)
   
   Example:
-  write_to_csv_file([['item', 'price', 'GST']['book', '10.0', '0.7']], 'file2.txt')
+  write_to_csv_file([['item', 'price', 'GST'], ['book', '10.0', '0.7']], 'file2.txt')
   
   """
   pass # REPLACE WITH YOUR CODE
