@@ -164,6 +164,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 * **Follow the steps in the recipe mentioned above to arrive at user stories for the the product**, with your team members. <span tags="m--cs2103 m--tic4002">If you didn't attend the lecture, please watch the lecture recording to learn more about this step.</span>
 
+* **User stories for what version?** At this stage, collect user stories to cover at least the final version you hope to deliver at the end of the semester. It is OK to go even beyond that %%(reason: we are simulating a project that will continue even after the semester is over)%%.{% if cs2103 or tic4002 %}<br>
+  Do not omit user stories already covered by the features in AB3 %%i.e., the user story should be recorded even if AB3 already caters for it.%%{% endif %}
+
 * **How many user stories?** Aim to collect more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other competing products.%%
 
 * **User stories of what size?** Normally, it is fine to use _epic_-level user stories in the early stages of a project but given this is a small project, you may want to define smaller user stories (i.e., small enough for one person to implement in 1-2 days).
