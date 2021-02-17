@@ -506,7 +506,7 @@ This activity is worth `2x2=4` participation points.
 
 <span  tags="m--cs2103">
 
-* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%%.
+* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your user name}.github.com/{repo name}/Ui.png` (e.g., `https://johndoe.github.com/ip/Ui.png`).
 </span>
 </span>
 {#====================================================================================================================#}
@@ -598,7 +598,10 @@ Implementing the following increment (optional) can be help with the above.
 
 * Update the product website in the following ways:
   * Move the **User Guide** to a separate page and update it to match the current version of the product.
-  * Add a **Developer Guide**, similar to (but can be shorter than) what you did for the tP in TIC4001.
+  * Add a **Developer Guide**, similar to (but can be shorter) what you did for the tP in TIC4001.
+    * Recommended length 1.5-2.5 pages
+    * Include some class/object/sequence diagrams, user stories, and some non-functional requirements
+    * Optional to include an architecture diagram
   * Update the **README** page to make it a landing page for your iP website (similar to the TIC4001 tP website).
 
 </span>

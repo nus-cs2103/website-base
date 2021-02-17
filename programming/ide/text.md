@@ -26,6 +26,9 @@ The standard Python installation comes with a basic IDE called IDLE. It can be u
 @[youtube](AUiM1UaRCPc)
 
 </panel>
+<p/>
+
+**PyCharm's own documentation on setting up your first project** in PyCharm is given [here](https://www.jetbrains.com/help/pycharm/creating-and-running-your-first-python-project.html).
 
 <include src="exercisePanel.md" boilerplate var-title="Setup a Project in PyCharm" var-file="e-setupPycharmProject.md" />
 
@@ -35,5 +38,7 @@ The standard Python installation comes with a basic IDE called IDLE. It can be u
 
 </panel>
 <p/>
+
+**PyCharm's own documentation on debugging code** in PyCharm is given [here](https://www.jetbrains.com/help/pycharm/debugging-your-first-python-application.html).
 
 <include src="exercisePanel.md" boilerplate var-title="Debug a Project in PyCharm" var-file="e-debugPycharmProject.md" />
