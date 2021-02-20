@@ -487,7 +487,7 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_set_up_website">Set up a product website</span>
 <span id="desc_set_up_website">
 
-<span  tags="m--cs2103 m--tic4002">
+<span  tags="m--cs2103 m--tic4002" id="ip-ui-png">
 
 * **Add a representative screenshot** of the product to the `docs` folder.
   * ==The file name should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
@@ -504,7 +504,7 @@ This activity is worth `2x2=4` participation points.
 </div>
 <p/>
 
-<span  tags="m--cs2103">
+<span  tags="m--cs2103" id="ip-ui-png-test">
 
 * {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your user name}.github.com/{repo name}/Ui.png` (e.g., `https://johndoe.github.com/ip/Ui.png`).
 </span>
@@ -604,6 +604,8 @@ Implementing the following increment (optional) can be help with the above.
     * Optional to include an architecture diagram
   * Update the **README** page to make it a landing page for your iP website (similar to the TIC4001 tP website).
 
+<include src="ip-tasks.mbdf#ip-ui-png"/>
+<include src="ip-tasks.mbdf#ip-ui-png-test"/>
 </span>
 {#====================================================================================================================#}
 <span id="heading_start_next_week_tasks">Start next week's tasks</span>
