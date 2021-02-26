@@ -204,3 +204,4 @@ Sun Tzu
 </box>
 
 <include src="exercisePanel.md" boilerplate var-title="Create `StockItem` Class" var-file="e-createStockItemClass.md" />
+<include src="exercisePanel.md" boilerplate var-title="`StockItem` with Price" var-file="e-stockItemWithPrice.md" />

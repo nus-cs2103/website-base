@@ -855,6 +855,33 @@ elif  ...
 
 Enhance the [Monty Level 8 code]({{ baseUrl }}/programming/chapters/monty.html#monty8) to use classes `ToDo` and `Deadline` (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.
 
+<box header=":fas-lightbulb: A shorthand for `if-else`">
+Consider the following code:
+
+```python
+def get_as_word(status):
+    if status == 1:
+        return 'Yes'
+    else:
+        return 'No'
+```
+
+The same can be written using the following shorthand for `if-else`:
+```python
+def get_as_word(status):
+    return 'Yes' if status == 1 else 'No'
+```
+Two more examples:
+```python
+status_as_word = 'Yes' if status == 1 else 'No'
+print('Yes') if status == 1 else print('No')
+```
+
+Note that this shorthand requires both the `if` part and the `else` part.
+
+</box>
+
+
 <panel header=":fas-battery-quarter: Partial solution" minimized>
 
 Here is the code for an example `ToDo` class:

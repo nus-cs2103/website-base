@@ -2,11 +2,16 @@
 {% from "common/admin.njk" import faqs, policies, show_admin_summary, topics with context %}
 
 {% call show_admin_summary() %}
-1. Monty: Add `Level 14. Add a GUI` or the individual feature.
+1. Submit weekly quiz
+1. Submit weekly project increments: Add `Level 14. Add a GUI` or the individual feature.
 {% endcall %}
 
 
-#### {{ thumb(1) }} Monty: Add `Level 14. Add a GUI` or the individual feature.
+#### {{ thumb(1) }} Submit weekly quiz
+
+* As usual
+
+#### {{ thumb(2) }} Submit weekly project increments
 
 <span id="week11-project">
 

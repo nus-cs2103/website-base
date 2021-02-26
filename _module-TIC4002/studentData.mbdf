@@ -14,7 +14,7 @@
   ['JANU.. LIM', 'TIC4002-F18-3', 'JanuariusJang'],
   ['TAY .. WEN', 'TIC4002-F18-3', 'tototto'],
   ['ZHEN..IJIE', 'TIC4002-F18-3', 'ZhengShijieNUS'],
-  ['HONG..HENG', 'TIC4002-F18-3', 'pigoliver'],
+  ['HONG..HENG', 'TIC4002-F18-3', 'HongJiancheng'],
   ['CHI ..PING', 'TIC4002-F18-4', 'Chilaiping'],
   ['OLIV..N DA', 'TIC4002-F18-4', 'skyventus'],
   ['HNGO.. WEN', 'TIC4002-F18-4', 'e0261618'],
@@ -33,22 +33,22 @@
 
 {% set ip_pr_review_allocation = [
   ['TIC4002-F18', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213', 'binbinhui'],
-  ['TIC4002-F18', 'Yiheng0410', 'pigoliver', 'Impala36', 'e02161618', 'Chenduo1412'],
-  ['TIC4002-F18', 'Chilaiping', 'dgc5213', 'binbinhui', 'Yiheng0410', 'pigoliver'],
+  ['TIC4002-F18', 'Yiheng0410', 'HongJiancheng', 'Impala36', 'e02161618', 'Chenduo1412'],
+  ['TIC4002-F18', 'Chilaiping', 'dgc5213', 'binbinhui', 'Yiheng0410', 'HongJiancheng'],
   ['TIC4002-F18', 'e0260222', 'daiweinus', 'adi-kd0021', 'linqing42', 'timmyly7'],
   ['TIC4002-F18', 'Chenduo1412', 'e0260222', 'daiweinus', 'adi-kd0021', 'linqing42'],
   ['TIC4002-F18', 'skyventus', 'tototto', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping'],
   ['TIC4002-F18', 'Impala36', 'e02161618', 'Chenduo1412', 'e0260222', 'daiweinus'],
   ['TIC4002-F18', 'daiweinus', 'adi-kd0021', 'linqing42', 'timmyly7', 'skyventus'],
-  ['TIC4002-F18', 'dgc5213', 'binbinhui', 'Yiheng0410', 'pigoliver', 'Impala36'],
+  ['TIC4002-F18', 'dgc5213', 'binbinhui', 'Yiheng0410', 'HongJiancheng', 'Impala36'],
   ['TIC4002-F18', 'tototto', 'JanuariusJang', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213'],
   ['TIC4002-F18', 'e02161618', 'Chenduo1412', 'e0260222', 'daiweinus', 'adi-kd0021'],
   ['TIC4002-F18', 'timmyly7', 'skyventus', 'tototto', 'JanuariusJang', 'ZhengShijieNUS'],
   ['TIC4002-F18', 'adi-kd0021', 'linqing42', 'timmyly7', 'skyventus', 'tototto'],
-  ['TIC4002-F18', 'binbinhui', 'Yiheng0410', 'pigoliver', 'Impala36', 'e02161618'],
+  ['TIC4002-F18', 'binbinhui', 'Yiheng0410', 'HongJiancheng', 'Impala36', 'e02161618'],
   ['TIC4002-F18', 'linqing42', 'timmyly7', 'skyventus', 'tototto', 'JanuariusJang'],
   ['TIC4002-F18', 'ZhengShijieNUS', 'Chilaiping', 'dgc5213', 'binbinhui', 'Yiheng0410'],
-  ['TIC4002-F18', 'pigoliver', 'Impala36', 'e02161618', 'Chenduo1412', 'e0260222']
+  ['TIC4002-F18', 'HongJiancheng', 'Impala36', 'e02161618', 'Chenduo1412', 'e0260222']
 ]%}
 
 {% set ip_final_peer_evaluation_allocation = [] %}

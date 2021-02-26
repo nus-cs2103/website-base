@@ -2,7 +2,7 @@
 
 Assume in each inning a player gets to bat a number of times and each hit can score 0, 1, 4, or 6, which are known as _hit sizes_. There is a need to keep track of how many times a player achieved each hit size in an inning.
 
-Note how the `player_stats` dictionary in the code below uses lists which contain dictionaries to store, for each player, how many times the player scored a certain hit size, for each inning. For example, the player `amy` scored hit size of 0 x 0 times; hit size of 1 x 1 times; hit size of 4 x 1 times; hit size of 6 x 0 time in the first inning (which adds up to a score of `0*0 + 1*1 + 4*1 + 6*0 = 10` for her first inning).
+Note how the `player_stats` dictionary in the code below uses lists which contain dictionaries to store, for each player, how many times the player scored a certain hit size, for each inning. For example, the player `amy` scored hit size of 0 x 0 times; hit size of 1 x 1 times; hit size of 4 x 1 times; hit size of 6 x 0 time in the first inning (which adds up to a score of `0*0 + 1*1 + 4*1 + 6*0 = 5` for her first inning).
 
 ```python
 player_stats = {'amy': [{0:0, 1:1, 4:1, 6:0},  # amy's first inning stats

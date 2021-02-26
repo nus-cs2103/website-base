@@ -191,7 +191,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
   <include src="appendixB-policies.md#policy-reuse"/>
 </modal>
 
-**Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project at least until (and including) {{ version_first }} %%(you may tweak the workflow {{ version_penultimate }} onwards)%%.
+* **Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project. Normally, we expect you to follow the forking workflow at least until (and including) {{ version_first }} after which you may tweak the workflow {{ version_penultimate }}. However, after following the forking workflow for 2-3 PRs (per person) in {{ version_first }}, if you are confident that you can follow the forking workflow well, you may switch to the <trigger trigger="click" for="modal:appErecommendedWorkflow-featurebranchworkflow">feature branch workflow</trigger> workflow <tooltip content="i.e., without waiting for the end of {{ version_first }}">earlier</tooltip>.
 * {{ icon_tip }} **Protect the `master` branch**: You can use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs. We suggest the following:
   * Go the the {{ show_as_rounded_tab(':octicon-gear: settings') }} of your team repo.
   * Click on the `Branches` option on the navigation menu on the left.
@@ -225,6 +225,10 @@ We recommend you configure the issue tracker of the tP team repo as follows:
   <include src="../book/gitAndGitHub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
+<modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-featurebranchworkflow">
+  <include src="../book/revisionControl/featureBranchFlow/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
+
 </div>
 <div id="workflow-after-v11">
 
@@ -236,7 +240,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 * **Reduce automated checks**: You can also reduce the rigor of checkstyle checks to expedite PR processing.
 
-* **Switch to a lighter workflow**: While _forking workflow_ is the safest (and is recommended), it is also rather heavy. You may switch to a simpler workflow if the forking workflow if you wish. Refer the textbook to find more about alternative workflows: _branching workflow_, _centralized workflow_. Even if you do switch, we still recommend that you use PR reviews, at least for PRs affecting others' features.
+* **Switch to a lighter workflow**: While _forking workflow_ is the safest (and is recommended), it is also rather heavy. You may switch to a simpler workflow if the forking workflow if you wish. Refer the textbook to find more about alternative workflows: _feature branches workflow_, _centralized workflow_. Even if you do switch, we still recommend that you use PR reviews, at least for PRs affecting others' features.
 
 * If you are unsure if a certain adjustment is allowed, you can check with the teaching team first.
 

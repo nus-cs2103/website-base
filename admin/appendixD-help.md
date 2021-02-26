@@ -80,11 +80,13 @@ _Rubber duck debugging_ is an informal term used in software engineering to ref
 
 * **Ask the lecturer**: Failing all above, you can talk to the lecturer before/after the lecture, or email the lecturer.
 
-<box type="warning">
+<box type="warning" seamless>
 
 {{ icon_tip }} **Some technical problems can take a long time to resolve.** Therefore, plan ahead and schedule your work much earlier than the deadline.
 
 {{ icon_tip }} **Some problems might not get resolved at all**; while waiting for a solution, explore alternatives and workarounds.
+
+{{ icon_tip }} **==If your problem remains unsolved 24 hours after posting in the forum==**, please alert `{{ module | lower }}@comp.nus.edu.sg` so that the teaching team can look into it.
 </box>
 
 <box>
