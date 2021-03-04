@@ -117,13 +117,13 @@
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
 <variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/{{ "intermediate" if cs2103 or tic4002 else "basic"}}.html</variable>
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
-<variable name="url_ip_dashboard">{{ url_module_gihub_io | safe }}/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</variable>
+<variable name="url_ip_dashboard">{{ url_module_gihub_io | safe }}/ip-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=java~md~fxml~sh~bat~gradle~txt</variable>
 <variable name="url_ip_progress_dashboard">{{ url_dashboards }}/contents/ip-progress.html</variable>
 <variable name="url_module_website">{{ url_module_gihub_io | safe }}/website</variable>
 <variable name="url_participation_dashboard">{{ url_dashboards }}/contents/participation.html</variable>
 <variable name="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
 <variable name="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
-<variable name="url_tp_dashboard">{{ url_module_gihub_io | safe }}/tp-dashboard/#breakdown=true</variable>
+<variable name="url_tp_dashboard">{{ url_module_gihub_io | safe }}/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other</variable>
 <variable name="url_tp_progress_dashboard">{{ url_dashboards }}/contents/tp-progress.html</variable>
 
 <!-- ===========================  icons ================================================= -->

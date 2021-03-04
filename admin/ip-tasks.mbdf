@@ -597,8 +597,8 @@ Implementing the following increment (optional) can be help with the above.
 <span id="desc_update_website">
 
 * Update the product website in the following ways:
-  * Move the **User Guide** to a separate page and update it to match the current version of the product.
-  * Add a **Developer Guide**, similar to (but can be shorter) what you did for the tP in TIC4001.
+  * Move the **User Guide** to a separate page (filename: `docs/UserGuide.md`) and update it to match the current version of the product.
+  * Add a **Developer Guide**  (filename: `docs/DeveloperGuide.md`), similar to (but can be shorter) what you did for the tP in TIC4001.
     * Recommended length 1.5-2.5 pages
     * Include some class/object/sequence diagrams, user stories, and some non-functional requirements
     * Optional to include an architecture diagram

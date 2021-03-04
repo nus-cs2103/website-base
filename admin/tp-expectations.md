@@ -213,6 +213,7 @@ In fact, here is the grading criterion for the individual project effort:
 * <span class="badge badge-success">Expectation</span> <span class="text-success">**Manage the project**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
 </span>
 
+</span>
 <span id="individualExpectations">
 
 <!-- ==================================================================================================== -->
