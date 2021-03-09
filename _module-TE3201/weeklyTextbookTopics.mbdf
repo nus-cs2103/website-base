@@ -122,7 +122,7 @@
     {heading: "OOP: Basics"},
       {location: ["oop", "classes", "what"], panopto: "ebc45dbf-a781-436e-a31a-acdb00ad320b"},
   {name: "Implementation"},
-    {heading: "Reuse: APIs, Frameworks, Libraries, Platforms", panopto: "e47e8dfe-2550-41a6-9566-ab7a0095e5e7"},
+    {heading: "Reuse: APIs, Libraries, Frameworks, Platforms", panopto: "e47e8dfe-2550-41a6-9566-ab7a0095e5e7"},
       {subheading: "Reuse"},
         {location: ["reuse", "introduction", "what"]},
         {location: ["reuse", "introduction", "when"]},

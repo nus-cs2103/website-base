@@ -242,7 +242,8 @@ Some examples:
 
 * **Tip: Contribute to all aspects of the project** e.g. write backend code, frontend code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
 
-* **Tip: Do _all_ the work related to your enhancement yourself.** %%Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%
+* **Tip: Do _all_ the work related to your enhancement yourself.** %%Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%<br>
+  In other words, ==we recommend that the work to be divided primarily based on _features_== rather than _components_. The latter has the risk of a team member becoming a _single point of failure_ and you becoming _too reliant_ on other team members %%e.g., what if the person assigned to an important component doesn't deliver on time?%%.
 
 <div tags="m--cs2103 m--tic4002">
 
@@ -332,7 +333,7 @@ This is a non-exhaustive list; you may define additional roles.
 
 <div tags="m--cs2103 m--tic4002">
 
-* _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% If you are in charge of a component, you are expected to know that component well, and review changes done to that component in {{ version_penultimate }}-{{ version_final }}.
+* _In charge of[Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% Note that being _in charge_ of a component doesn't mean you are the only one who should be modifying that component. Rather, you are the one who's expected to, know that component best, review changes done to that component in {{ version_penultimate }}-{{ version_final }}, act as the gate keeper of its quality, help others when they face difficulties while modifying that component etc.
 </div>
 <div tags="m--cs2113 m--tic4001">
 

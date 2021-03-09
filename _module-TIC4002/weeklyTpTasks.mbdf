@@ -42,10 +42,10 @@ week9: [
   {id: 'adjust_process_rigor'},
   {id: 'start_on_the_penultimate_version'},
   {id: 'update_dg_with_design_details'},
-  {id: 'smoke_test_catcher', deadline: 'COMPULSORY', graded: true},
   {id: 'do_a_release'}
 ],
 week10: [
+  {id: 'smoke_test_catcher', deadline: 'During the lecture', graded: true},
   {id: 'deliver_the_feature'},
   {id: 'update_user_docs', deadline: get_date(date_w10_start, 6)},
   {id: 'release_as_a_jar_file', deadline: get_date(date_w10_start, 6)},

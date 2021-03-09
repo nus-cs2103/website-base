@@ -508,7 +508,7 @@ Update the following pages in your project repo:
 * If you haven't done so already, make sure you know individual and team expectations of the tP
 
 {{ embed_topic("tp-expectations.md#functionalityExpectations", "Admin " + icon_embedding + " tP: Functionality Expectations", "3", indent="2") }}
-{{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations", "3", indent="2") }}
+{{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations (and ==guidance on work distribution==)", "3", indent="2") }}
 {{ embed_topic("tp-expectations.md#teamExpectations", "Admin " + icon_embedding + " tP: Team Expectations", "3", indent="2") }}
 </span>
 {#====================================================================================================================#}
@@ -611,7 +611,7 @@ Update the following pages in your project repo:
 
 </span>
 {#====================================================================================================================#}
-<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_first }}</span>
+<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_first }}{{ ' (in the following lecture)' if tic4001 or tic4002 }}</span>
 <span id="desc_do_an_informal_demo">
 
 <div id="demo">
@@ -623,7 +623,7 @@ Update the following pages in your project repo:
 </div>
 <div tags="m--tic4001 m--tic4002">
 
-* During the lecture, do an informal demo of your {{ version_first }} to the profs.
+* During the following lecture, do an informal demo of your {{ version_first }} to the profs.
 </div>
 </div>
 </span>
@@ -826,7 +826,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 </div>
 <div tags="m--tic4001 m--tic4002">
 
-* During the lecture, do an informal demo of your {{ version_penultimate }} to the profs.
+* During the following lecture, do an informal demo of your {{ version_penultimate }} to the profs.
 </div>
 </div>
 </span>

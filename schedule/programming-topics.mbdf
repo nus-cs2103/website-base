@@ -218,8 +218,6 @@ So far, we have been using simple objects provided by Python (e.g., str, int, bo
 
 {% call topic_preamble(reuse=false) %}
 **This week, we continue to learn more about Python classes.** Let's start with _class-level_ variables and methods.
-
-{{ panopto("37c74051-6261-4d0b-a517-ab8100a9c87d") }}
 {% endcall %}
 
 
@@ -234,7 +232,14 @@ Next, let us learn to to control access to variables and methods of an object.
 
 <include src="../programming/oop-visibility/text.md" />{{ hr_double }}
 
+{% call topic_followup(reuse=false) %}
+This video contains an example that covers some of the OOP topics covered so far.
+* The code shown in the video can be found at [https://goo.gl/qW1Qnb](https://goo.gl/qW1Qnb)
+* The last part of the video requires you to know ==UML topics covered in this week== as well.
 
+{{ panopto("37c74051-6261-4d0b-a517-ab8100a9c87d") }}
+{% endcall %}
+<p/>
 {% call topic_preamble(reuse=false) %}
 As your project code gets bigger, it becomes cumbersome to have all code in one file. **Let's learn how to organize Python code into files and folders.**
 

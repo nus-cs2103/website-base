@@ -29,7 +29,7 @@ Notice how the `course.py` imports the `student` module and uses the `student.de
 
 {{ icon_example }} Consider the following two files.
 
-`[project_root]/misc/print_utils/misc.py`:
+`[project_root]/utils/print_utils/misc.py`:
 ```python
 def print_as_list(text):
     print(list(text))
@@ -42,7 +42,7 @@ from utils.print_utils import misc
 misc.print_as_list('Adam')
 ```
 
-Notice how the `import` statement uses a slightly different syntax and uses `.` to indicate directory nesting (i.e., `misc/print_utils` → `misc.print_utils`). In fact, there are [other variations of the `import` syntax](https://docs.python.org/3/tutorial/modules.html).
+Notice how the `import` statement uses a slightly different syntax and uses `.` to indicate directory nesting (i.e., `utils/print_utils` → `utils.print_utils`). In fact, there are [other variations of the `import` syntax](https://docs.python.org/3/tutorial/modules.html).
 
 </box>
 
