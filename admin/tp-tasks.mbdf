@@ -761,12 +761,23 @@ Here are some reasons:
 This week, we would like you to smoke-test the CATcher app **to ensure it can run in your computer**.
 <p/>
 
-<panel type="info" header="**The steps for smoke-testing CATcher:**" minimized>
+<panel type="info" header="**The steps for smoke-testing CATcher:**" expanded>
 
-1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
-1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
-   {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.<br>
-   {{ icon_info }} If you encounter other problems at the app launch, refer to the [Notes on using the CATcher Desktop App](https://github.com/CATcher-org/CATcher/blob/master/docs/usage-notes.md).
+**There are two versions of CATcher:**
+* The Web version - this will be the default option
+* The desktop version - this will be used as a fallback in case we run into any problems with the Web version.
+
+**You need to ==smoke-test both versions==** even if the Web version is working for you. The reason is, the Web version can still fail during the actual PE due to GitHub API restrictions. In that case, you should have the desktop version ready-to-use.
+
+
+##### Step 1: smoke-test the Web version
+
+{% set dot = "." %}
+
+1. **Go to the CATcher Web version** at https://catcher-org.github.io/CATcher/ using ==the same computer (i.e., not a mobile device) that you plan to use for the practical exam==.
+   * Use a common browser such as Chrome, Edge, Firefox, Safari
+   * Allow popups from https://catcher-org.github.io/
+   * If you encounter other problems at the app launch, refer to the [Notes on using CATcher](https://tinyurl.com/catcher-usage).
 1. **Login**: Choose the _session_ `{{ module }}/T Alpha Test`, and submit.
    <img src="images/catcherLogin.png" />
 1. In the next screen, login to CATcher using your GitHub account.<br>
@@ -778,7 +789,15 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
    {{ icon_info }} The `severity` and `type` labels are compulsory.
 1. **Report any problems you encounter** at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
 1. **Do NOT delete the `alpha` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
-1. **Do NOT delete the CATcher executable** you downloaded either; you will need it again.
+
+##### Step 2: smoke-test the Desktop version
+
+1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
+1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
+   {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.<br>
+   {{ icon_info }} If you encounter other problems at the app launch, refer to the [Notes on using CATcher ](https://tinyurl.com/catcher-usage).
+1. Login as before, and add 1-2 new dummy bug reports.
+1. **Do NOT delete the CATcher executable** you downloaded either; you will need it again later.
 
 </panel>
 <p/>
