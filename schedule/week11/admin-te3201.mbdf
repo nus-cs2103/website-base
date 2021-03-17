@@ -3,7 +3,7 @@
 
 {% call show_admin_summary() %}
 1. Submit weekly quiz
-1. Submit weekly project increments: Add `Level 14. Add a GUI` or the individual feature.
+1. Do weekly project increments: Add `Level 14. Add a GUI` or the individual feature.
 {% endcall %}
 
 
@@ -11,7 +11,7 @@
 
 * As usual
 
-#### {{ thumb(2) }} Submit weekly project increments
+#### {{ thumb(2) }} Do weekly project increments
 
 <span id="week11-project">
 
@@ -20,17 +20,17 @@
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 14. Add a GUI**" tag="optional" var-fragment="monty.mbdf#monty14" />
 <p/>
 
-* **Option 2: Add the allocated individual feature.** You will be given which feature to implement around week 10.
+* **Option 2: Add the allocated individual feature.**
   * Note that ==a very minimal implementation of the feature is good enough==.
   * Steps to find the feature you should implement:
-    * First take the last digit of your student number. For example, if your student number is `A0123456H`, the last digit is `6`.
+    * First, take the last digit of your student number. For example, if your student number is `A0123456H`, the last digit is `6`.
     * Then, find the matching row in the table below. That row gives you three options.
     * You may implement any one of the three options. Click on the link to find details of the feature.
     * The expected amount of work for this option is about 1/4 to 1/3 of the amount of code you have written so far in the project.
 
 <div class="indented-level4" id="feature-allocation">
 
-{% macro ilink(increment) %}[`{{ increment }}`](../../programming/chapters/monty.html#{{ increment | lower }}){% endmacro %}
+{% macro ilink(increment) %}[{{ increment }}](../../programming/chapters/monty.html#{{ increment | lower }}){% endmacro %}
 
 digit | option 1                             | option 2                            | option 3
 ------|--------------------------------------|-------------------------------------|-------------------------

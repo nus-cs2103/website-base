@@ -212,6 +212,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * **Do not merge PRs failing <tooltip content="Continuous Integration e.g., GitHub Actions">CI</tooltip>.** The CI status of a PR is reported at the bottom of the {{ show_as_rounded_tab(":octicon-comment-discussion: conversation")}} tab of the PR page. Here's an example:<br>
   ![](images/gitHubPrStatus.png)
   * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.
+* **Avoid rebasing/squashing** when merging PRs. While both are good alternatives to the default behavior of creating a merge commit, rebasing/squashing can affect the timestamp of the commits, which can interfere with the progress tracking that we do for grading purposes %%i.e., the commits can get detected under a week different from the week they were actually done%%.
 * **After merging a PR**,
   * close the corresponding issue.<br>
     {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
@@ -234,13 +235,13 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 **After following the given workflow for at least <tooltip content="i.e., until the end of {{ version_first }}">one iteration</tooltip>, optionally, you may adjust the process rigor** to suit your team's pace. Here are some examples:
 
+* **Switch to a lighter workflow**: While _forking workflow_ is the safest (and is recommended), it is also rather heavy. You may switch to a simpler workflow if the forking workflow if you wish. Refer the textbook to find more about alternative workflows: _feature branches workflow_ (a reasonable alternative, but if you choose this, make sure your master branch is _protected_), _centralized workflow_ (discouraged). Even if you do switch, we still recommend that you use PR reviews, at least for PRs affecting others' features.
+
 * **Reduce automated tests**: Automated tests have benefits, but they can be a pain to write/maintain.<br>
   It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances if tests are slowing you down too much.<br>
   There is no direct penalty for removing tests. Also note <trigger trigger="click" for="modal:appEworkflow-testingExpectations">our expectation on test code</trigger>.
 
 * **Reduce automated checks**: You can also reduce the rigor of checkstyle checks to expedite PR processing.
-
-* **Switch to a lighter workflow**: While _forking workflow_ is the safest (and is recommended), it is also rather heavy. You may switch to a simpler workflow if the forking workflow if you wish. Refer the textbook to find more about alternative workflows: _feature branches workflow_, _centralized workflow_. Even if you do switch, we still recommend that you use PR reviews, at least for PRs affecting others' features.
 
 * If you are unsure if a certain adjustment is allowed, you can check with the teaching team first.
 

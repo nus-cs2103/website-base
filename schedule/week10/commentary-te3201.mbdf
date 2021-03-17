@@ -2,24 +2,19 @@
 
 {% call topic_preamble("OOP and UML Class/Object Diagrams: Inheritance", reuse=false) %}
 **Let's learn the important OOP concept of _inheritance_** this week, together with how to show it in UML class diagrams.
-
-{{ panopto("1c82c417-5378-4b7c-84c0-ab88009b476b") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("UML Class/Object Diagrams: Composition, Aggregation, Dependencies", reuse=false) %}
 **Next, we cover some additional class/object diagram notations** used to show different types of relationships in class/object diagrams.
 
-{{ panopto("b29faf7d-b575-4ad9-a43b-ab880073e127") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_followup("uml-classDiagrams-dependencies-what", reuse=false) %}
 After learning the UML syntax in the section above, you can try this worked example:<br>
-{{ panopto("7a17fb5c-3b1f-4315-8d0e-ab8e00d2cbe9") }}
+{{ panopto("f4f7e1f2-60a4-4d18-b70a-ac4000f17608") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Types of Testing", reuse=false) %}
 **Let's also have a brief look at various types of testing** that is done in software projects, as you will be learning how to do one of them using Python in this week too.
-
-{{ panopto("f978d66a-214b-487d-8731-ab880081c9ef") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

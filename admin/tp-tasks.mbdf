@@ -654,7 +654,7 @@ Hence, it is in your interest to ==finish implementing all your <tooltip content
 As you did in the previous iteration,
 * **Plan the next iteration** (steps are given below as a reminder):
   * {{ icon_team }} Decide which enhancements will be added to the product in this iteration, assuming this is the last iteration.
-  * {{ icon_team }} If possible, split that into two incremental versions.
+  * {{ icon_team }} If possible, split that into two incremental versions `{{ version_penultimate }}` and `{{ version_penultimate }}b`.
   * {{ icon_team }} Divide the work among team members.
   * {{ icon_individual }} Reflect the above plan in the issue tracker.
 * {{ icon_individual }} **Start implementing** the features as per the plan made above.
@@ -692,12 +692,12 @@ While we are on the topic, also note that the architecture of AB3 doesn't suite 
 
 <panel type="info" header="Why the hurry to update documents? Why not wait till the implementation is finalized?" minimized>
 
+Here are some reasons:
 * We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
-
 * It is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
-
 * It allows receiving early self/peer/instructor feedback.
 </panel>
+<p/>
 </div>
 
 * **Update the Developer Guide** as follows:{% if tic4001 %}

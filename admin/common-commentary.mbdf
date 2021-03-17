@@ -735,7 +735,7 @@ The only examinable thing is ==the term== _SOLID principles_.
 <div id="{{ slugify("Design Patterns") }}">
 Previously, you learned:
 * Three basic design quality aspects: abstraction, coupling, cohesion
-* Some design principles that aims to improve those aspects (e.g., Single Responsibility Principle). <span tags="m--cs2113">There are many more principles but we covered only two (to reduce workload) just to give you a taste only.</span>
+* Some design principles (e.g., _Single Responsibility Principle_) that aim to improve those aspects. <span tags="m--cs2113">There are many more principles but we covered only two (to reduce workload) just to give you a taste only.</span>
 
 **This week, we cover _design patterns_, a concept that builds upon the above**. <span tags="m--cs2113">Again, we limit to only two of them, for similar reasons.</span>
 </div>

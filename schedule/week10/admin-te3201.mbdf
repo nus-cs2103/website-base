@@ -4,7 +4,7 @@
 {% call show_admin_summary() %}
 1. Submit weekly quiz
 1. Submit weekly exercises
-1. Submit weekly project increments `Level 11. Use Inheritance`, `Level 12. Use Multiple Code Files`, `Level 13. Add Unit Tests`
+1. Do weekly project increments `Level 12. Use Inheritance`, `Level 13. Add Unit Tests`
 {% endcall %}
 
 
@@ -18,7 +18,9 @@
 * As usual
 
 
-#### {{ thumb(3) }} Submit weekly project increments
+#### {{ thumb(3) }} Do weekly project increments
+
+* As mentioned in the previous week, there is ==no need to submit these project increments on Coursemology this week==.
 
 <span id="week10-project">
 
