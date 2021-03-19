@@ -761,7 +761,7 @@ Here are some reasons:
 This week, we would like you to smoke-test the CATcher app **to ensure it can run in your computer**.
 <p/>
 
-<panel type="info" header="**The steps for smoke-testing CATcher:**" expanded>
+<panel type="info" header="**The steps for smoke-testing CATcher:**" minimized>
 
 **There are two versions of CATcher:**
 * The Web version - this will be the default option
@@ -771,8 +771,6 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 
 
 ##### Step 1: smoke-test the Web version
-
-{% set dot = "." %}
 
 1. **Go to the CATcher Web version** at https://catcher-org.github.io/CATcher/ using ==the same computer (i.e., not a mobile device) that you plan to use for the practical exam==.
    * Use a common browser such as Chrome, Edge, Firefox, Safari

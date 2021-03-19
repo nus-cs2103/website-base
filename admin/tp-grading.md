@@ -234,7 +234,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 
 **Grading criteria:** Do these to earn full marks.
 * Do close to an equal share of the team tasks (you can earn bonus marks by doing more than an equal share).
-* Merge code in at least {{ "five" if tic4002 else "four" }} of weeks {{ "6, " if tic4002 }}7, 8, 9, 10, 11, 12
+* Have your code merged in at least {{ "five" if tic4002 else "four" }} of weeks {{ "6, " if tic4002 }}7, 8, 9, 10, 11, 12
 
 </div>
 
