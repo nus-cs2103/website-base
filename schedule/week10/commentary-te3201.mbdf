@@ -10,7 +10,7 @@
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_followup("uml-classDiagrams-dependencies-what", reuse=false) %}
-After learning the UML syntax in the section above, you can try this worked example:<br>
+After learning the UML syntax in the section above, you can try the worked example given below. It's ==even better if you do the [Week 10 - Quiz (**Part I**)](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/quiz)== (on LumiNUS) before watching the video below:<br>
 {{ panopto("f4f7e1f2-60a4-4d18-b70a-ac4000f17608") }}
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

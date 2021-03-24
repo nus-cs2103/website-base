@@ -1040,10 +1040,12 @@ Not applicable this semester
 {{ embed_topic("tp-tasks.mbdf#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + version_final + " → Making the Code RepoSense-Compatible", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_do_final_tweaks">{{ icon_individual }} Do final tweaks to the feature</span>
+<span id="heading_do_final_tweaks">{{ icon_individual }} Do final polish-ups</span>
 <span id="desc_do_final_tweaks">
 
-* Do the final tweaks to the feature and the documentation. We strongly recommend not to do major changes to the product this close to the submission deadline.
+* Fix any remaining bugs.
+* You may do minor cosmetic enhancements but adding features or doing major changes to features is not allowed at this stage.
+* Improve testing, code quality, and documentation.
 </span>
 {#====================================================================================================================#}
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>

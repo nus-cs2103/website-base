@@ -266,7 +266,7 @@ As your project code gets bigger, it becomes cumbersome to have all code in one 
 ## **Object-Oriented Programming**
 
 {% call topic_preamble(reuse=false) %}
-As you learn about the OOP inheritance concept (under this week's SE topics), let us also learn how to use inheritance in Python.
+{{ icon_important_big_red }} Similar to last week, we strongly ==recommend you to watch all pre-recorded lecture videos== allocated to this week. Furthermore, ==Learn [this week's OOP topic (W10.1)](week10/topics.html) before starting the topic below==, as the two are highly interlinked. The same lecture video is given below for your convenience.
 
 {{ panopto("1c82c417-5378-4b7c-84c0-ab88009b476b") }}
 {% endcall %}
