@@ -160,7 +160,7 @@ The size of the target market is not a grading criterion. You can make it as nar
 
 <div tags="m--cs2103 m--tic4002">
 
-**The expected level of _functionality_ to be added by a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Furthermore, we expect a team to reach that level if each member puts in an effort equivalent to the effort they put into the iP. %%So, if the question is "If our team do x, y, and z, is that enough?", the answer is "Yes, if it requires each member to put in about an iP worth of effort".%% Some examples likely to meet that criterion:
+**The expected level of _functionality_ to be added by a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Furthermore, we expect a team to reach that level **if each member puts in an effort equivalent to the effort they put into the iP**. %%So, if the question is "If our team do x, y, and z, is that enough?", the answer is "Yes, if it requires each member to put in about an iP worth of effort".%% Some examples likely to meet that criterion:
 * Example 1: A fictional contact management app optimized for a specific target user group:
   * Existing AB3 features are optimized to the new target user group.
   * Person objects are enhanced to contain more details.

@@ -979,7 +979,7 @@ Also see:
 {{ embed_topic("tp-pe.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="2") }}
 </span>
 {#====================================================================================================================#}
-<span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Tweak the product as per peer-testing results</span>
+<span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Polish the product as per peer-testing results</span>
 <span id="desc_tweak_product_as_per_PED">
 
 * Follow the procedure for dealing with PED bugs you received:
@@ -987,6 +987,10 @@ Also see:
 {{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
 
 * **Freeze features**. As mentioned earlier, you are {{ "not allowed to add" if cs2103 else "strongly discouraged from adding"}} new features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.
+* **Fix bugs** that were reported during the PE-D. Don't rely on PE-D alone to find bugs. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.
+* **Do more extensive testing yourselves**.{% if cs2103 or tic4002 %}
+  * {{ icon_important_big_red }} **If your software has a GUI that has a large default size**, ensure that it works even in lower-resolution screens (within reasonable limits). %%In the past, there were cases where the GUI opened up bigger than the screen with some important parts not visible, and users were unable to proceed further.%%
+  {% endif %}
 * **Update documentation** to match the product.
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 

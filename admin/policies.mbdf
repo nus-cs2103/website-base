@@ -92,7 +92,7 @@ Penalties:
   * The work has been shared publicly by us or the authors.
   * You clearly give credit to the original author(s).
 * You are allowed to reuse work from external sources, subject to following conditions:
-  * The work comes from a source of 'good standing' (such as an established open source project). This means you cannot reuse code written by an outside 'friend'.
+  * In case of reusing more than a short code snippet (e.g., reusing an entire library or an entire feature), the work comes from a source of 'good standing' (such as an established open source project). This means you cannot reuse a _significant portion_ of codebase written by a friend or a past student. But you may reuse/adapt small code snippets from any source such as stackoverflow.
   * You clearly give credit to the original author. Acknowledge use of third party resources clearly e.g. in the welcome message, splash screen (if any) or under the 'about' menu. If you are open about reuse, you are less likely to get into trouble if you unintentionally reused something copyrighted.
   * You do not violate the license under which the work has been released. Please  **do not use 3rd-party images/audio** in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.
   * ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ url_forum }}). That way, the whole class get to see what libraries are being used by others.

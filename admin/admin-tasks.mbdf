@@ -164,6 +164,13 @@ The info in the following panels differs from TIC4001.
 {{ embed_topic("peerEvaluations.md#finalPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Final Peer Evaluation", "1", indent="2", status="expanded") }}
 </span>
 {#====================================================================================================================#}
+<span id="heading_join_catcher_load_testing">Take part in the CATcher load testing</span>
+<span id="desc_join_catcher_load_testing">
+
+* Attend the live lecture and take part in the CATcher load/stress testing session that will take place during the first 15 minutes of the lecture. More instructions will be provided during the lecture.
+
+</span>
+{#====================================================================================================================#}
 <span id="heading_submit_reuse_declaration">Submit the declaration about code reuse</span>
 <span id="desc_submit_reuse_declaration">
 
