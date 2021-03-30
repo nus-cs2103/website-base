@@ -12,6 +12,13 @@
 {% call topic_followup("uml-classDiagrams-dependencies-what", reuse=false) %}
 After learning the UML syntax in the section above, you can try the worked example given below. It's ==even better if you do the [Week 10 - Quiz (**Part I**)](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/quiz)== (on LumiNUS) before watching the video below:<br>
 {{ panopto("f4f7e1f2-60a4-4d18-b70a-ac4000f17608") }}
+
+After watching the above example, you can try this exercise. The answer will be given during the following lecture.
+
+<panel header="Exercise: Draw class/object diagrams for HouseManager code">
+<include src="exercise-houseManagerUmlDiagrams.mbdf" />
+</panel>
+<p/>
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Types of Testing", reuse=false) %}
