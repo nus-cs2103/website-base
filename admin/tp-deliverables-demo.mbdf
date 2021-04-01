@@ -1,6 +1,6 @@
 
-* **Record a demo** of all the product features, in a reasonable order.
-  * You may choose to screen record each feature and tie it up (see the  "Suggested tools" below for options), OR
+* **Record a demo** of all the product features, in a reasonable order. Some options:
+  * Screen record each feature and tie it up (see the  "Suggested tools" below for tool options).
   * Schedule + record a zoom meeting within the team, where you share your screens and do the demo.
 * **The quality of the demo will not affect marks** as long as it serves the purpose (i.e., demonstrates the product features). Hence, don't waste too much time on creating the video.
 * **Audio explanations** are strongly encouraged{% if not cs2113 %} (but not compulsory) -- alternatively, you can switch between slides and the app to give additional explanations{% endif %}.
@@ -23,7 +23,7 @@
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Target audience</span>
 
-* **Assume you are giving a demo to a higher-level manager of your company**, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed. The actual audience are the evaluators (the team supervisor and another tutor).
+* **Assume you are giving a demo to a higher-level manager of your company**, to brief them on the current capabilities of the product. This is the first time they are seeing the new product you developed. The actual audience are the evaluators (the team supervisor and another tutor).
 
 #### <span class="badge badge-info">Demo</span> <span class="text-info">Scope</span>
 

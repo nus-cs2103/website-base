@@ -869,7 +869,8 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 <span id="heading_release_as_a_jar_file">{{ icon_team }} Release as a jar file</span>
 <span id="desc_release_as_a_jar_file">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do some manual tests to ensure the jar file works.
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Aim to release it by the weekly deadline. Do some manual tests to ensure the jar file works.
+* **Note that you can do an _additional_ JAR release before the PE dry run** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional JAR is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous one %%(reason: it is good to preserver the release history)%% -- testers are expected to take the latest JAR file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`
 </span>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_penultimate_version">{{ icon_team }} Wrap up {{ version_penultimate }}</span>
@@ -982,23 +983,41 @@ Also see:
 <span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Polish the product as per peer-testing results</span>
 <span id="desc_tweak_product_as_per_PED">
 
+<div class="indented-level2" tags="m--cs2103 m--tic4002">
+<box type="warning" seamless>
+
+**Allowed in the {{ version_final }} milestone:**{.text-success}
+
+{{ icon_tick_green }} fixing bugs<br>
+{{ icon_tick_green }} improving documentation<br>
+{{ icon_tick_green }} purely cosmetic enhancements e.g., alignments, style changes<br>
+{{ icon_tick_green }} improving code quality<br>
+{{ icon_tick_green }} improving tests
+
+{{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span> adding features or doing major changes to existing features.
+</box>
+</div>
+
 * Follow the procedure for dealing with PED bugs you received:
 
 {{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
 
-* **Freeze features**. As mentioned earlier, you are {{ "not allowed to add" if cs2103 else "strongly discouraged from adding"}} new features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.
+{% if cs2113 %}* **Freeze features**. As mentioned earlier, you are strongly discouraged from adding new features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.{% endif %}
 * **Fix bugs** that were reported during the PE-D. Don't rely on PE-D alone to find bugs. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.
 * **Do more extensive testing yourselves**.{% if cs2103 or tic4002 %}
   * {{ icon_important_big_red }} **If your software has a GUI that has a large default size**, ensure that it works even in lower-resolution screens (within reasonable limits). %%In the past, there were cases where the GUI opened up bigger than the screen with some important parts not visible, and users were unable to proceed further.%%
   {% endif %}
-* **Update documentation** to match the product.
+* **Update documentation** to match the product. In particular, finalize the content of the DG early and check it thoroughly for bugs (reason: unlike the UG, the DG did not get tested in the PE dry run).
+  {{ embed_topic("tp-grading-bugs.mbdf#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 
-{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → Expectation on testing", "3", indent="2") }}
+{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="2") }}
 
 * **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level.
 
-{{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → Code Quality Tips", "3", indent="2") }}
+{{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="2") }}
+
+* As before, you may split this milestone into smaller iterations if you wish e.g., `{{ version_final }}`, `{{ version_final }}b`, ...
 </span>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ppp">{{ icon_individual }} Draft the PPP</span>
@@ -1045,9 +1064,8 @@ Not applicable this semester
 <span id="heading_do_final_tweaks">{{ icon_individual }} Do final polish-ups</span>
 <span id="desc_do_final_tweaks">
 
-* Fix any remaining bugs.
-* You may do minor cosmetic enhancements but adding features or doing major changes to features is not allowed at this stage.
-* Improve testing, code quality, and documentation.
+* Continue with any remaining bug fixing and test/code-quality/documentation improvements.
+
 </span>
 {#====================================================================================================================#}
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
@@ -1101,7 +1119,7 @@ Not applicable this semester
 </div>
 
 * {{ icon_team }} **Product**:
-  * Do a release on GitHub, tagged as `{{ version_final }}`.
+  * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.
   * Upload the jar file to LumiNUS.<br>
     File name: `[team ID][product name].jar` %%e.g. [{{ example_team_id }}][Contacts Plus].jar%%
 
