@@ -2,7 +2,7 @@
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span>
 
-**What**: The {{ version_penultimate }} is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
+**What**: The latest release of the {{ version_penultimate }} period is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
 **When, where**: uses a 40 minute slot at the start of week 11 lecture slot (to be done online).
 
@@ -64,7 +64,7 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 <tabs active="{{ pe_active_tab }}">
 <tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
-* Download the jar file from the team's releases page, if you haven't done this already.
+* Download the _latest_ JAR file from the team's releases page, if you haven't done this already.
 
 </tab>
 <tab header="PE (at **{{ version_final }}**)">
@@ -171,7 +171,7 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 
 ###### <div class="text-white bg-secondary p-1">e) Bug report format</div>
 
-* Each bug should be a separate issue.
+* Each bug should be a separate issue %%i.e., do not report multiple problems in the same bug report.%%
 * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
 * Use a descriptive title.
 * Give a good description of the bug with ==steps to reproduce, expected, actual, and screenshots==. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.

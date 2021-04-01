@@ -11,8 +11,9 @@
 * **The above two can lead to high-rigor, <tooltip content="based on how well you achieve the objectives of testing, as opposed to indirect measures such as number of test cases">_outcome-based_</tooltip> evaluation of your testing skills**. The alternative is to rely solely on other easy-to-measure metrics %%(e.g., the number of test cases, test coverage, test LoC etc.)%% which we don't think is right, given how important the testing aspect is.
 **The _ultimate_ objective of the PE is not even the higher rigor of grading.** Because of the PE, you will realize that any bugs are very likely to be detected, which means you ==will work extra hard to avoid bugs; and THAT is the real benefit==.
 * **Problem: There is no way we can carry out the above-mentioned** two-part evaluation at a high-level of rigor if using tutors as testers, or using an automated testing script. %%e.g., some tutors might not have the motivation to try hard enough to find bugs, and it will be hard to find tutors willing to spend many hours testing products so near to their own exams.%%<br>
-  **Solution: Get the two parts of the evaluation to power each other** by getting student to test each others' products.
+  **Solution: Get the two parts of the evaluation to feed each other** by getting student to test each others' products.
 * **The fact that you are testing products created by your classmates and objecting to bugs reported by your classmates can makes this a rather 'unpleasant' experience**. You might feel like _being pitted against each other_, or as if _you are forced to bring down each other_. But as you read above, it is a necessary evil for this evaluation to be even possible. Given the actual goal is to get you to create products with very few bugs, we think switching off the 'collaborative learning' mode for just a few days is a price worth paying to achieve that goal. After all, the PE is an evaluation activity (not a _learning activity_) and happens _after_ the regular learning period is over.
+* **You are not taking marks from someone else** -- at least, don't think of it that way. The point of contention is 'is this really a bug?' which is independent of the people involved. Furthermore, the reward for detecting a bug and the penalty for having a bug in your code are calculated independently.
 * **Still, _none of us_ likes it when others point out problems of our work**. Some of us don't even like pointing out problems of others' work. But ==we just have to learn not to take bug reports personally==. Another important lesson is to learn how to report bugs in a way that doesn't feel like you are _attacking_ or trying to _sabotage_ the dev team.
 * **PE also evaluates aspects other than testing** e.g., your product evaluation skills, effort estimation skills etc. When evaluating those aspects in particular, they ==not graded solely based on peer ratings==. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutors' grades with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
 
@@ -54,10 +55,10 @@
     * the work area (i.e., the table top)<br>
     <img src="images/zoomCameraExample.png" width="362"/>
 * **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.
-* **In case of Zoom outage**, we'll fall back on MS Teams (MST). Make sure you have MST running and have joined the matching MST Team `CS2103_AY2021S1_12pm_lecture` or `CS2103_AY2021S1_4pm_lecture`.
+* **In case of Zoom outage**, we'll fall back on MS Teams (MST). Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).
 * **Recording the screen is not required.**
 * **You are allowed to use head/ear phones.**
-* **Only one screen is allowed.**
+* **==Only one screen== is allowed.** If you want to use the secondary monitor, you should switch off the primary monitor. The screen being used should be fully visible in the Zoom camera view.
 * **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
 * **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.** Fall back on Zoom chat only if you didn't receive a reply via MST.
@@ -67,7 +68,7 @@
   * Website: Module website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
-* **Do not use any other software running** in the background e.g., telegram chat
+* **Do not use any other software running** in the background e.g., Telegram chat
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
 
 </box>
@@ -197,6 +198,9 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 **Instructions for Reviewing Bug Reports**
 
 * **Don't freak out if there are lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
+* As mentioned earlier, the penalty for having a specific bug is not the same as the reward for reporting that bug (it's not a _zero-sum_ game). For example, the reward for testers will be higher (because we don't expect the products to have that many bugs after they have gone through so much prior testing) and penalty for a minor bug (e.g., <tooltip content="an indicative value only; the actual value depends on the severity, type, and the number of assignees">-0.15</tooltip>) is unlikely to make a difference in your final grade, especially given that the penalty applies only if you have more than a certain amount of bugs.<br>
+  Accordingly, we hope you'll **accept bug reports graciously** (rather than fight tooth-and-nail to reject _every_ bug report received) if you think the bug is within the ballpark of 'reasonable'.
+
 
 <tabs>
 <tab header="Using CATcher">
@@ -206,7 +210,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 * CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum if you need any guidance with its usage.
 * Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
 </box>
-* Launch CATcher, and login to the profile `{{ module }}/T PE`. It will show all the bugs assigned to your team, divided into three sections:
+* Go to [CATcher Web version](https://catcher-org.github.io/CATcher/) (use the desktop version only if the Web version fails), and login to the profile `{{ module }}/T PE`. It will show all the bugs assigned to your team, divided into three sections:
   1. `Issues Pending Responses` - Issues that your team has not processed yet.
   1. `Issues Responded` - Your job is to get all issues to this category.
   1. `Faulty Issues` - e.g., Bugs marked as duplicates of each other, or causing circular _duplicate_ relationships. Fix the problem given so that no issues remain in this category.
@@ -250,10 +254,9 @@ Duplicate of #67
 * Do not close the bug report after you are done processing it.
 * Use the exact `Duplicate of #123` format to indicate duplicates.
 * There should be exactly one comment per issue. If there are multiple comments, the last one will be taken for processing.
+-->
 </markdown>
 </div>
--->
-
 </tab>
 </tabs>
 <p/>
@@ -313,7 +316,7 @@ Duplicate of #67
   * Multiple buggy behaviors that are actually caused by the same defect and cannot be fixed independently.
   * In diagrams, same error appearing multiple times _in the same diagram_ (e.g., the _same_ notation mistake appearing several times in the _same_ diagram). However, errors across multiple diagrams should not be flagged as duplicates, unless it is the same diagram appearing in multiple places (i.e., the same image file used in multiple places).
 * **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
-* **How to prove that something is 'not in scope'**: In general, features not-yet-implemented (and hence, not in scope) are the features that have a lower priority that the ones that are implemented already. In addition, the following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
+* **How to prove that something is 'not in scope'**: In general, features not-yet-implemented (and hence, not in scope) are the features that have a lower priority than the ones that have been implemented already. In addition, the following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
 * **If a missing feature is essential for the app to be reasonably useful**, its omission can be considered a _feature flaw_ even if it can be proven as _not in scope_ as given in the previous point.
@@ -323,7 +326,7 @@ Duplicate of #67
 </box>
 </div>
 
-* **Decide who should fix the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.**
+* **Decide who should take responsibility for the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.**
   * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
 <p/>
 
@@ -366,7 +369,7 @@ Duplicate of #67
 {{ embed_topic("tp-grading-bugs.mbdf#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
 
 
-* This phase is optional. If you do not respond to a dev response, we'll assume that you agree with it.
+* If you do not respond to a dev response, we'll assume that you agree with it.
 * Procedure:
 
 <div class="indented-level2">
@@ -376,8 +379,8 @@ Duplicate of #67
 
 * When the phase has been announced as open, login to CATcher as usual (profile: `{{ module }}/T PE`).<br>
   {{ icon_info }} You may use [the latest version of CATcher](https://github.com/CATcher-org/CATcher/releases) or the [Web version of CATcher](http://catcher-org.github.io/webapp).
-* For each issues listed in the `Issues Pending Responses` section:,
-  * Go to the details, and read the dev team's response.
+* For each issues listed in the `Issues Pending Responses` section:
+  * Click on it to go to the details, and read the dev team's response.
   * If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
   * If you are fine with the team's changes, click `Save` without any other changes upon which the issue will move to the `Issue Responded` section.
 * Note that only bugs that require your response will be shown by CATcher. **Bugs already accepted _as reported_ by the team will not appear in CATcher** as there is nothing for you to do about them.
@@ -413,4 +416,4 @@ Team chose ['response.IssueUnclear']
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
 
 * In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome.
-* In the unlikely case we need your inputs, the tutor will contact you.
+* In the unlikely case we need your inputs, a tutor will contact you.
