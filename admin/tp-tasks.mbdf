@@ -556,9 +556,9 @@ Update the following pages in your project repo:
 
 * {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%.
 
-* **If you plan to rename the code packages**, you may want to do it around this time. Doing it later can be more difficult, and can cause problems in our code authorship tracking. Also note that renaming packages is optional.
+* ==**If you plan to rename the code packages**==, you may want to do it around this time. Doing it later can be more difficult %%(e.g., it can cause more merge conflicts)%%, and can cause problems in our code authorship tracking. Also note that renaming packages is optional.
 
-* **Note: you are required to follow the forking workflow** for at least the first part of this iteration:
+* **Note: you are required to follow the forking workflow** for at least for the first part of this iteration:
 {{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="2") }}
 </span>
 {#====================================================================================================================#}
@@ -669,7 +669,7 @@ In addition,
 
 <box type="info" seamless>
 
-**Improve upon AB3, design, code, test etc.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). Feel free to improve it in any way you see fit. In particular, find and fix any bugs it may have. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
+**Improve upon AB3, design, code, test etc.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). Feel free to improve it in any way you see fit. In particular, ==find and fix any bugs it has==. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
 While we are on the topic, also note that the architecture of AB3 doesn't suite every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not be tempted to apply AB3 as a template for every other application you come across in the future**.
 </box>
 </div>
@@ -993,8 +993,18 @@ Also see:
 {{ icon_tick_green }} purely cosmetic enhancements e.g., alignments, style changes<br>
 {{ icon_tick_green }} improving code quality<br>
 {{ icon_tick_green }} improving tests
+{{ icon_tick_green }} removing features
 
 {{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span> adding features or doing major changes to existing features.
+
+**The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, {{ version_final }} should not have _any_ features that was not already tested in the PE-D).
+
+**FAQs:**
+* **Q:** Can we add a missing validity check for a user input?<br>
+  **A:** Yes, but only if its absence causes the software to mis-behave (i.e., it's omission can be considered a bug).
+* **Q:** Testers have reported a missing feature (or a feature suggestion). Can we add it?<br>
+  **A:** Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
+   Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line somewhere as there wasn't a lot of time to implement features.
 </box>
 </div>
 

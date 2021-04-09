@@ -21,10 +21,10 @@ Instructions below are from the previous semester. Will be updated closer to the
 ## SOP deviations/refinements
 
 1. **Tools: LumiNUS, Zoom, Microsoft Teams (MST), PDF scanner**, PDF reader.
-1. **The webcam view should capture all three** of these: your upper body (side view), the entire screen area of your monitor, the working area of the table. Here is an example:<br>
+1. **The webcam view should capture all four** of these: your face (side view, ==no mask==), your hands, the working area of the table, and the entire screen area of your active screen. Here is an example:<br>
   <img src="images/zoomCameraExample.png" width="367"/>
 1. ==**Recording of your PC screen** is not required.==
-1. **Only one computer screen** is allowed.
+1. **Only one computer screen** allowed. If you have multiple screens, switch off except one. It is better if you can physically remove unused screens if possible %%e.g., do not keep a switched off tablet on the table%%.
 1. **You may not use a second laptop/computer as the web cam.** Use either an external webcam or a mobile phone instead. %%Reason: the screen of that second computer will not be captured in the video feed.%%
 1. **Not allowed to use the printer or other devices during the exam.**
 1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
@@ -32,9 +32,9 @@ Instructions below are from the previous semester. Will be updated closer to the
 1. **The Browser should only be used to access LumiNUS.** Accessing other websites (including the module website) is not allowed.<br>
   It turns out that the textbook PDF file plays better with browsers than PDF viewers. Therefore, ==viewing the textbook PDF in the browser is allowed. But other PDFs should be opened in a PDF viewer==.<br>
   %%The reason for restricting the use of the browser to view PDF files is that allowing it makes it harder for invigilators to detect students accessing unauthorized websites.%%
-1. **Use Microsoft Teams or Zoom private messages to communicate with the invigilator**.
+1. **Use Zoom private messages to communicate with the invigilator. Use Microsoft Teams to communicate with the prof.** Communicating with others is not allowed, except with NUS IT staff (for tech help).
 1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
-1. **When the invigilator asks you to do an _identity check_**, turn your face towards the camera, move closer to the camera, remove face mask (if any), and hold the pose until the invigilator tells you to go back to your working position.
+1. **When the invigilator asks you to do an _identity check_**, turn your face towards the camera (<span class="text-danger">do not adjust the camera position</span>), move closer to the camera, and hold the pose until the invigilator tells you to go back to your working position.
 
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
@@ -96,7 +96,7 @@ Instructions below are from the previous semester. Will be updated closer to the
   1\. to minimize opportunities for collusion<br>
   2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
 * Duration: **{{ 45 if tic2002 else 35 }} minutes** <span tags="m--cs2103">(recommended: allocate 2 minutes per question, which gives you a 3 minutes buffer)</span>
-* You are required to give a justification for your answer. ==The question will specify what should be included in the justification. **Answers without the correct justification may not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) that do not have justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
+* You are required to give a justification for your answer. ==The question will specify what should be included in the justification. **Answers without the correct justification may not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) with missing/incorrect justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
 * Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
 
@@ -108,6 +108,7 @@ Choose the incorrect statement.
 - ( ) a. Software engineering projects always use OOP.
 - ( ) b. Some software engineering projects can be large and complex.
 - ( ) c. Some software engineering projects can go on for many years.
+- ( ) d. Software projects can involve people who are not software engineers.
 
 </panel>
 <p/>
@@ -133,11 +134,11 @@ Choose the incorrect statement.
 
 * Similar to part 1 (e.g., 16 questions, same length).{% if cs2103 %}
 * Some questions will refer to the UML diagrams that you drew in part 2.
-* You may modify your UML diagrams during this time. %%Reminder: diagrams are not graded.%%
+* You _may_ modify your UML diagrams during this time. %%Reminder: diagrams are not graded.%%
 * You may refer the PDF file used in part 2 during this part too.
 * **Show the diagram to the camera** at the end of this part, when the examiner asks you to.
 * Due to the above point, you will have to stay back in Zoom until the full exam is over (==not allowed to leave early==).
-* Due to the above point, you may want to have something to read, in case you finish early. ==You are not allowed to use other gadgets or use the computer to do other things even if you have finished the exam==.
+* Due to the above point, you may want to have something to read, in case you finish early. ==You are not allowed to use other devices or use the computer to do other things even if you have finished the exam==.
 * After the exam, scan and **upload the diagrams you drew in part 2 onto LumiNUS**, as a single PDF file, **within an hour**. The file name does not matter. {% endif %}
 
 </div>
@@ -145,7 +146,7 @@ Choose the incorrect statement.
 ## Exam briefing, mock exam, practice exam paper
 
 * There will be an exam briefing in the penultimate lecture. It will include a minimal mock exam, just to help you understand the structure.
-* You will be given a practice exam paper (half the size of the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
+* You will be given a practice exam paper (at least half the size of the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
 
 </div>
 
