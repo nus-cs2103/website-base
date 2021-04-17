@@ -155,10 +155,10 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 
 ### Week 13: Final Submission
 
-**Submission Deadline**: Sunday of week 13 (Apr 19th). ==Submissions later than the deadline are liable to a late submission penalty==, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., `-1` per day).
-* **The deadline for seeking feedback on the project report draft**: week 13 lecture. 
-  * Preferred mode of feedback: ~~in-person (reason: it is hard to give written feedback on diagrams)~~ via email
-  * Such feedback will be limited to high-level comments only (reason: the report is graded).
+**Submission Deadline**: Sunday of week 13 ({{ date_w13_start | date("YYYY-MM-DD", 6) }}). ==Submissions later than the deadline are liable to a late submission penalty==, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., `-1` per day).
+* **The deadline for seeking feedback on the project report draft**: ==week 13 lecture ({{ date_w13_start | date("YYYY-MM-DD", 1) }})==.
+  * Preferred mode of feedback: ~~in-person (reason: it is hard to give written feedback on diagrams)~~ via email.
+  * Such feedback will be limited to high-level comments only (reason: the report is graded), and given only once per student.
 
 **Deliverables**:
 1. **Source code** of the working program: zip (not rar) the code and submit to LumiNUS<br>name:
@@ -192,7 +192,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 <span id="plagiarism-info">
 
 ### Plagiarism
-* You may view/discuss others' work or get help from others. However, <span class="text-danger"> ==the work you submit should be your own==. In case of similar submissions, marks will be divided among those submissions</span> e.g., if your submission scored 8/10 and there is another submission that is similar to your work (beyond co-incidental similarity), each submission will get 4 marks.
+* You may view/discuss others' work or get help from others. However, <span class="text-danger"> ==the work you submit should be your own==. In case of similar submissions, marks will be divided among those submissions</span> e.g., if your submission scored 8/10 and there is another submission that is similar to your work (beyond coincidental similarity), each submission will get 4 marks.
 </span>
 
 <!-- .......................................................................................... --> {{ line_dotted }}
@@ -257,61 +257,46 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 
 # Exam
 
-Details to be announced ...
+* The final exam will be on **Wed 5th May, 5-7pm** (as per normal exam schedule).
+* The exam will be done online.
 
-<!--
-* The final exam will be on **Wed 29th April, 1-3pm** (as per normal exam schedule).
-* The exam will be done online. Tools used: LumiNUS, Zoom, Microsoft Teams.
+### procedure/rules
 
-### Early preparations
+1. **Tools: LumiNUS, Zoom, Microsoft Teams (MST), PDF reader.**
+1. **The webcam view should capture all four** of these: your face (side view, ==no mask==), your hands, the working area of the table, and the entire screen area of your active screen. Here is an example:<br>
+  <img src="images/zoomCameraExample.png" width="367"/>
+1. ==**Recording of your PC screen** is not required.==
+1. **Only one computer screen** allowed. If you have multiple screens, switch off except one. It is better if you can physically remove unused screens if possible %%e.g., do not keep a switched off tablet on the table%%.
+1. **You may not use a second laptop/computer as the web cam.** Use either an external webcam or a mobile phone instead. %%Reason: the screen of that second computer will not be captured in the video feed.%%
+1. **Not allowed to use the printer or other devices during the exam.**
+1. **The exam is open-book**.
+1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
+  You may use any hard copies or written materials too.
+1. **The Browser should only be used to access ==LumiNUS and the module website==.** <span class="text-danger">Accessing other websites is not allowed.</span><br>
+1. **Use Microsoft Teams to communicate with the prof.** Communicating with others is not allowed, except with NUS IT staff (for tech help).
+1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
+1. **When the invigilator asks you to do an _identity check_**, turn your face towards the camera (<span class="text-danger">do not adjust the camera position</span>), move closer to the camera, and hold the pose until the invigilator tells you to go back to your working position.
 
-* **Set up Zoom**: Follow the [Zoom exam instructions provided by NUS](https://wiki.nus.edu.sg/display/THES/Proctoring+with+Zoom) (note the requirement for ==SSO login==).
-  * **Update the name of your Zoom profile to match the exact name on your student card, ==including whether the family name is give first or last==** (reason: we need to manually locate your name in the attendance list, which is sorted by your name in LumiNUS). You will not be admitted to the Zoom meeting if you do not comply with the requirement.
-  * **Note the requirements for camera placement**: Your Zoom video feed need to capture your upper body and the work area, including the computer screen (==as explained in [this example](https://www.youtube.com/watch?v=BoeXRLfpYv4)==). That means **the built-in camera of your computer is not suitable** for this purpose. Use either a separate web cam (attached to your Computer) or use Zoom through your smart phone. If neither of those options are available to you, let the prof know ASAP (deadline: April 24).
+1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
-<div class="indented-level2">
+1. **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), PM the invigilator using MS Teams (failing that, use Zoom chat).
 
-<box type="important">
+1. **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.
 
-You will not be allowed into the Zoom meeting unless your Zoom name complies with the above requirement.<br>
-Your exam submission will not be accepted if your Zoom video feed does not comply with the above requirement.
-</box>
-<box type="warning">
+1. **Stay in the video frame for the entire exam duration**, except during the toilet break.
 
-As per NUS requirements, your Zoom video feed is recorded by us and will be shared with NUS administration. If you do not consent to that, please let us know ASAP (deadline: April 24) so that we can put you in touch with the NUS administration to sort it out.
-</box>
-</div>
+1. **Do not to use virtual backgrounds in Zoom**. Do not use pre-recorded videos as your video feed.
 
-* **Set up MS-Teams**: Follow the [_Microsoft Teams_ instructions provided by NUS](https://wiki.nus.edu.sg/display/THES/Before+exams+-+Install+and+log+in+to+Microsoft+Teams). We'll be using MS-Teams as a backup in case of Zoom fails.
+1. **Remain in the video frame until the invigilator ends the exam**, even after you have submitted the quiz. Do not use the computer or other communication devices (not even Kindle) during that period (suggestion: have something in hard-copy form to ready to read during this time e.g., printed lecture notes of another module).
 
-
-### 15 minutes before the exam
+### 30-15 minutes before the exam
 
 * Ensure your computer and the phone (if applicable) are charged and within reach of a power supply.
 * In your computer, close all other apps and browser tabs other than the ones permitted to be use for the exam. Remember to exit other background apps that starts automatically such as telegram.
 * Launch MS-Teams, login to it, and close the app without exiting (which makes it run in the background).
 * Login to LumiNUS. The password to open the quiz will be broadcast via Zoom (audio announcement plus chat message) by the invigilator later.
-* Launch Zoom, login, ensure profile name and camera complies with our requirements, and join the meeting. Wait for the invigilator to take you into the meeting.
-* **Do not use more than one Zoom device at a time.**
-  * If it is inconvenient to use the Zoom device for PM'ing the invigilator %%(e.g., if you are using Zoom through a smart phone mounted on a stand)%%, use MS-Teams (via your computer) to PM the invigilator.
-  * But, if you use a phone as your primary Zoom device but it not convenient to use it for audio %%(e.g., its speaker volume not high enough)%%,<br>
-    1. Get our permission to use the PC as a second Zoom device.
-    1. Install Zoom in the PC.
-    1. Use the PC for audio only (i.e., switch off the video) and the phone of video only.
-    1. Name your Zoom profile name in the PC as `[PC] Your Name as in Student Card` e.g., `[PC] John Doe`
+* Launch Zoom, login, ensure profile name and camera complies with our requirements, and join the meeting (use the ==same Zoom link used for the lectures==). Wait for the invigilator to take you into the meeting.
 * Once you are inside the Zoom meeting, wait patiently until all students have been admitted and the exam is ready to start. **This wait could be as long as 30 minutes.**
-
-### During the exam
-
-* **Keep both the video and speaker switched-on (but microphone muted)** in your Zoom during the entire exam.
-* Do not use MS-Teams during the exam unless the invigilator uses to contact you, you need to contact the invigilator, or you need to contact CIT for tech help.
-* **Stay in the video frame for the entire exam duration**, except during the toilet break.
-* **Do not to use virtual backgrounds in Zoom**. Do not use pre-recorded videos as your video feed.
-* As the exam is open-book, you can refer to any printed/written materials or use the computer to read any PDF/word documents that are in your computer. You may also access the online version of the textbook in the module website.<br>
-  **Do not visit any other websites, use any other apps, or online search engines during the exam.**
-* **Remain in the video frame until the invigilator ends the exam**, even after you have submitted the quiz. Do not use the computer or other communication devices (not even Kindle) during that period (suggestion: have something in hard-copy form to ready to read during this time e.g., printed lecture notes of another module).
-* **Do not communicate with any person other than the invigilator** during the exam, as per normal exam rules.
-* **When the invigilator asks you to do a _face check_**, turn your face towards the camera, move closer to the camera, remove face mask (if any), and hold the pose until the invigilator tells you to go back to your working position.
 
 ### Troubleshooting exam problems
 
@@ -325,13 +310,14 @@ As per NUS requirements, your Zoom video feed is recorded by us and will be shar
 * The exam will be given as quizzes in LumiNUS.<br>
   For the ease of administration, the exam is split into two equal size quizzes: part 1, part 2.<br>
 * Each quiz,
-  * consists of 15 regular MCQ questions (plus one easy bonus question, and one dummy question to give comments)
-  * is to be done in 35 minutes (2 minutes per question + 5 extra minutes)
-* All 30 questions have the same the weight and each question is expected to take a similar amount of time (around 2 minutes).
+  * consists of 15+1=16 regular MCQ questions (plus one one dummy question to give comments).
+  * each question is 2 marks worth, capped at 30 marks i.e., you can get full marks even if you have only 15/16 correct answers.
+  * is to be done in 35 minutes (2 minutes per question + 3 extra minutes)
+* All questions have the same the weight and each question is expected to take a similar amount of time (around 2 minutes).
 * The questions will be presented in random order.
 * You are not allowed to go back to previous questions.
 * You are required to give a justification for your answer. The question will specify what should be included in the justification.<br>
-  ==**Answers without the correct justification will not earn full marks.**== However, we'll give full marks up to two correct answers (per 15 questions) that do not have justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
+  ==**Answers without the correct justification will not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) that do not have justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
 * Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
 
@@ -343,6 +329,7 @@ Choose the incorrect statement.
 - ( ) a. Software engineering projects always use OOP.
 - ( ) b. Some software engineering projects can be large and complex.
 - ( ) c. Some software engineering projects can go on for many years.
+- ( ) d. Software engineering is a lot more than just _programming_.
 
 </panel>
 <p/>
@@ -350,7 +337,12 @@ Choose the incorrect statement.
 
 * {{ icon_tip }} Almost all questions will ask you to choose the INCORRECT statement and justify why it is incorrect.
 
--->
+### Resources
+
+* **A _mock exam_** (containing 2-3 questions) will be given to around week 13. Objective: for you to familiarize with the exam software and format.
+* **A _practice exam_** will be given to you at least one week before the actual exam. Objective: for you to practice timing.<br>
+  It will be at least half as long as the actual exam and the difficulty and format of the questions will be similar to the actual exam.
+* **All past LumiNUS quizzes** will be reopened around the reading week. Objective: for you to self-test your knowledge.
 <!--
 
 There is no midterm.

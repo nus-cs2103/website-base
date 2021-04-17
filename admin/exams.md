@@ -24,14 +24,14 @@ Instructions below are from the previous semester. Will be updated closer to the
 1. **The webcam view should capture all four** of these: your face (side view, ==no mask==), your hands, the working area of the table, and the entire screen area of your active screen. Here is an example:<br>
   <img src="images/zoomCameraExample.png" width="367"/>
 1. ==**Recording of your PC screen** is not required.==
-1. **Only one computer screen** allowed. If you have multiple screens, switch off except one. It is better if you can physically remove unused screens if possible %%e.g., do not keep a switched off tablet on the table%%.
+1. **Only one computer screen** allowed. If you have multiple screens, switch off except one. It is better if you can physically remove unused screens if possible %%e.g., do not keep a switched off tablet on the table%%.<br>
+  You may split the screen though i.e., show module website in one half and the quiz in the other half.
 1. **You may not use a second laptop/computer as the web cam.** Use either an external webcam or a mobile phone instead. %%Reason: the screen of that second computer will not be captured in the video feed.%%
 1. **Not allowed to use the printer or other devices during the exam.**
 1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
   You may use any hard copies or written materials too.
-1. **The Browser should only be used to access LumiNUS.** Accessing other websites (including the module website) is not allowed.<br>
-  It turns out that the textbook PDF file plays better with browsers than PDF viewers. Therefore, ==viewing the textbook PDF in the browser is allowed. But other PDFs should be opened in a PDF viewer==.<br>
-  %%The reason for restricting the use of the browser to view PDF files is that allowing it makes it harder for invigilators to detect students accessing unauthorized websites.%%
+1. **The Browser should only be used to access LumiNUS and the module website.** ==Accessing other websites is not allowed==.<br>
+  Do not use the browser to view PDFs. %%Reason: viewing PDF files in the browser makes it harder for invigilators to detect students accessing unauthorized websites.%%
 1. **Use Zoom private messages to communicate with the invigilator. Use Microsoft Teams to communicate with the prof.** Communicating with others is not allowed, except with NUS IT staff (for tech help).
 1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
 1. **When the invigilator asks you to do an _identity check_**, turn your face towards the camera (<span class="text-danger">do not adjust the camera position</span>), move closer to the camera, and hold the pose until the invigilator tells you to go back to your working position.

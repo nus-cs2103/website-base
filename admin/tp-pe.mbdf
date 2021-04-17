@@ -40,6 +40,8 @@
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
 
+* **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 7, format=format_normal, time="") }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 7pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}
+
 <box type="important" icon=":fas-exclamation-circle:" seamless>
 
 **PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.
@@ -69,13 +71,12 @@
   * Website: Module website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab/recording software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
+  * Software: A text editor %%(to keep track of commands you tried)%%
 * **Do not use any other software running** in the background e.g., Telegram chat.
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
 
 </box>
 
-
-* **When, where**: Last lecture slot of the semester, 7.00-9.30pm.{% if tic4002 %} Use the same Zoom link used for the regular lecture.{% else %} The Zoom link will be given to you closer to the day.{% endif %}
 
 ##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
 
@@ -179,7 +180,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
 
-==**Deadline:** {{ get_date(date_w13_start, 11) }}==
+==**Deadline:** {{ get_date(date_w13_start, 10) }}==
 
 This phase is for you to respond to the bug reports you received.
 
@@ -211,7 +212,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 * CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum if you need any guidance with its usage.
 * Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
 </box>
-* Go to [CATcher Web version](https://catcher-org.github.io/CATcher/) (use the desktop version only if the Web version fails), and login to the profile `{{ module }}/T PE`. It will show all the bugs assigned to your team, divided into three sections:
+* Go to [CATcher Web version](https://catcher-org.github.io/CATcher/) (use the desktop version only if the Web version fails), and login to the profile `{{ module_pair }} PE`. It will show all the bugs assigned to your team, divided into three sections:
   1. `Issues Pending Responses` - Issues that your team has not processed yet.
   1. `Issues Responded` - Your job is to get all issues to this category.
   1. `Faulty Issues` - e.g., Bugs marked as duplicates of each other, or causing circular _duplicate_ relationships. Fix the problem given so that no issues remain in this category.
@@ -285,7 +286,7 @@ Duplicate of #67
 </div>
 
 
-* **Apply one of these labels** (if missing, we assign: `type.FunctionalityBug`)
+* **If you disagree with the original bug type assigned to the bug**, you may change it to the correct type.
 
 <div class="indented" id="type-labels">
 <box>
@@ -309,7 +310,7 @@ Duplicate of #67
 
 <box type="info" header="**Some additional guidelines for bug triaging:**">
 
-* **Broken links in UG/DG**: Severity can be low or medium depending on how many such cases and how much inconvenience they cause to the reader.
+* **Broken links in UG/DG**: Severity can be low or medium depending on how much inconvenience they cause to the reader.
 * **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
   Omitting optional notations is not a bug as long it doesn't hinder understanding.
 * **What bugs can be considered duplicates?** It is up to the dev team to prove conclusively that a bug is a duplicate. If the proof is not convincing enough, they will be considered as 'not duplicates'. Only the following cases can be considered duplicates:
@@ -355,7 +356,7 @@ Duplicate of #67
 {{ icon_important_big_red }} While you are waiting for Phase 3 to start, comments will be added to the bug reports in your `/pe` repo, to indicate the response each received from the receiving team. <span class="text-danger">Please do not edit any of those comments or reply to them via the GitHub interface.</span> Doing so can invalidate them, in which case the grading script will assume that you agree with the dev team's response. Instead, wait till the start of the Phase 3 is announced, after which you should use CATcher to respond.
 </div>
 
-==**Deadline:** {{ get_date(date_w13_start, 14) }}==
+==**Deadline:** {{ get_date(date_w13_start, 13) }}==
 
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving dev team, you can record your objections and the reason for the objection.
   * not accepted
@@ -378,7 +379,7 @@ Duplicate of #67
 <tabs>
 <tab header="Using CATcher">
 
-* When the phase has been announced as open, login to CATcher as usual (profile: `{{ module }}/T PE`).<br>
+* When the phase has been announced as open, login to CATcher as usual (profile: `{{ module_pair }} PE`).<br>
   {{ icon_info }} You may use [the latest version of CATcher](https://github.com/CATcher-org/CATcher/releases) or the [Web version of CATcher](http://catcher-org.github.io/webapp).
 * For each issues listed in the `Issues Pending Responses` section:
   * Click on it to go to the details, and read the dev team's response.
