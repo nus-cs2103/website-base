@@ -28,6 +28,7 @@ Instructions below are from the previous semester. Will be updated closer to the
   You may split the screen though i.e., show module website in one half and the quiz in the other half.
 1. **You may not use a second laptop/computer as the web cam.** Use either an external webcam or a mobile phone instead. %%Reason: the screen of that second computer will not be captured in the video feed.%%
 1. **Not allowed to use the printer or other devices during the exam.**
+1. **You <span class="text-success">may use headphones</span> during the exam.**
 1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
   You may use any hard copies or written materials too.
 1. **The Browser should only be used to access LumiNUS and the module website.** ==Accessing other websites is not allowed==.<br>

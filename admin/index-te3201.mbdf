@@ -161,17 +161,20 @@ In some weeks, there will be some programming exercises for you to submit (on Co
   * Such feedback will be limited to high-level comments only (reason: the report is graded), and given only once per student.
 
 **Deliverables**:
-1. **Source code** of the working program: zip (not rar) the code and submit to LumiNUS<br>name:
-   File name: `{YourName}.zip` e.g., `JunHao.zip`
-1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in LumiNUS).<br>
-   Submission: Upload to LumiNUS. The file name should be your name e.g., `JunHao.docx`
+1. **Code** of the working program: zip (not rar) the code.
+   * Submission: Upload to LumiNUS/files folder named **`final-project-submissions/code`**
+   * File name: `{Your Name}.zip` e.g., `Jun Hao.zip`
+1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in LumiNUS).
+   * Submission: Upload to LumiNUS/files folder named **`final-project-submissions/report`**
+   * File name: `{Your Name}.docx/pdf`  e.g., `Jun Hao.docx`
 1. **Demo video**:
    * Record a demo video showcasing the features of your product.
    * Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).
    * Recommended length 7 minutes, max length 10 minutes.
    * Audio narration is optional if the demo can be understood without the audio.
    * Ensure the video is in a format that can be played by any computer.
-   * Submission: Name the file with your name (to match the zip and the report file) and upload to LumiNUS.
+   * Submission: Upload to LumiNUS/files folder named **`final-project-submissions/demo`**
+   * File name: `{Your Name}.mp4`  e.g., `Jun Hao.mp4`
 
 </div>
 
@@ -266,7 +269,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 1. **The webcam view should capture all four** of these: your face (side view, ==no mask==), your hands, the working area of the table, and the entire screen area of your active screen. Here is an example:<br>
   <img src="images/zoomCameraExample.png" width="367"/>
 1. ==**Recording of your PC screen** is not required.==
-1. **Only one computer screen** allowed. If you have multiple screens, switch off except one. It is better if you can physically remove unused screens if possible %%e.g., do not keep a switched off tablet on the table%%.
+1. **Only one computer screen** allowed. If you have multiple screens, switch off all except one. It is better if you can physically remove unused screens if possible %%e.g., do not keep a switched off tablet on the table%%.
 1. **You may not use a second laptop/computer as the web cam.** Use either an external webcam or a mobile phone instead. %%Reason: the screen of that second computer will not be captured in the video feed.%%
 1. **Not allowed to use the printer or other devices during the exam.**
 1. **The exam is open-book**.
@@ -295,22 +298,15 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 * In your computer, close all other apps and browser tabs other than the ones permitted to be use for the exam. Remember to exit other background apps that starts automatically such as telegram.
 * Launch MS-Teams, login to it, and close the app without exiting (which makes it run in the background).
 * Login to LumiNUS. The password to open the quiz will be broadcast via Zoom (audio announcement plus chat message) by the invigilator later.
-* Launch Zoom, login, ensure profile name and camera complies with our requirements, and join the meeting (use the ==same Zoom link used for the lectures==). Wait for the invigilator to take you into the meeting.
+* Launch Zoom, login, ensure profile name and camera complies with our requirements, and join the meeting (use the ==the Zoom link to use for the exam will be sent to you near to the exam date==). Wait for the invigilator to take you into the meeting.
 * Once you are inside the Zoom meeting, wait patiently until all students have been admitted and the exam is ready to start. **This wait could be as long as 30 minutes.**
-
-### Troubleshooting exam problems
-
-* **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
-* **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), contact the invigilator using Zoom chat or MS-Teams.
-* **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.
-
 
 ### Format
 
 * The exam will be given as quizzes in LumiNUS.<br>
   For the ease of administration, the exam is split into two equal size quizzes: part 1, part 2.<br>
 * Each quiz,
-  * consists of 15+1=16 regular MCQ questions (plus one one dummy question to give comments).
+  * consists of 15+1=16 regular MCQ questions (plus one dummy question to give comments).
   * each question is 2 marks worth, capped at 30 marks i.e., you can get full marks even if you have only 15/16 correct answers.
   * is to be done in 35 minutes (2 minutes per question + 3 extra minutes)
 * All questions have the same the weight and each question is expected to take a similar amount of time (around 2 minutes).
@@ -335,7 +331,6 @@ Choose the incorrect statement.
 <p/>
 </div>
 
-* {{ icon_tip }} Almost all questions will ask you to choose the INCORRECT statement and justify why it is incorrect.
 
 ### Resources
 

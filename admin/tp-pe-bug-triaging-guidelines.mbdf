@@ -1,0 +1,51 @@
+{% from "common/macros.njk" import embed_topic, get_date with context %}
+
+##### General:
+
+* **If a bug report contains multiple bugs** (i.e., despite instructions to the contrary, a tester included multiple bugs in a single bug report), you have to choose one bug and ignore the others. If there are valid bugs, choose from valid bugs. Among the choices available, choose the one with the highest severity (in your opinion). In your response, mention which bug you chose.
+* **What bugs can be considered duplicates?** It is up to the dev team to prove conclusively that a bug is a duplicate. If the proof is not convincing enough, they will be considered as 'not duplicates'. Only the following cases can be considered duplicates:
+  * The exact same bug reported multiple times.
+  * Multiple buggy behaviors that are actually caused by the same defect and cannot be fixed independently.
+  * In diagrams, same error appearing multiple times _in the same diagram_ (e.g., the _same_ notation mistake appearing several times in the _same_ diagram). However, errors across multiple diagrams should not be flagged as duplicates, unless it is the same diagram appearing in multiple places (i.e., the same image file used in multiple places).
+* **How to prove that something is 'not in scope'**: In general, features not-yet-implemented (and hence, not in scope) are the features that have a lower priority than the ones that have been implemented already. In addition, the following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
+  * The UG specifies it as not supported or coming in a future version.
+  * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
+* ~~**You can reject bugs that you <tooltip content="i.e., the current behavior is same as AB3 and you had no reason to change it because the feature applies similarly to your new product">inherited</tooltip> from AB3.**~~ Even bugs inherited from AB3 are counted.
+
+##### Functionality bugs
+
+* **Problems caused by very long input values**: When a user input is unusually long %%e.g., a very long name, a very large number%%, it can cause problems e.g., the UI layout can get messed up, some part of it might get cut off.
+  * These can be considered cosmetic issues (i.e., `severity.VeryLow`) of `type.FunctionalityBug`. Some exceptions are below:
+    * The problems can only happen unless in case of deliberate sabotage %%(e.g., user entered a 30-digit telephone number)%%, in which case it should be considered a bug.
+    * The problem can hinder the user %%(e.g., not seeing the last part of a very long name might not hinder the user but it does hinder the user if only the first few characters of the name is shown)%%, the severity can be `Low` or `Medium`.
+  * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are not longer than 8 digits.
+* **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 or tic4002 %}
+* **Handling manual edits to the data file**: AB3 UG specifies the current level of support for manually editing the data file. At least that level of support should be supported in the new product as well.
+{% endif %}
+
+##### Feature flaws
+
+* **If a missing feature is essential for the app to be reasonably useful**, its omission can be considered a _feature flaw_ even if it can be proven as _not in scope_ as given in an earlier point.<br>
+  Similarly, if the feature is implemented to work in a certain way but it could have been implemented to work in a better way (from the end-user's point of view) without much additional effort, it should be accepted as a `type.FeatureFlaw`, and cannot be categorized as `response.NotInScope`.
+* **Bugs related to duplicate detection**: Duplicate detection (e.g., detecting of two persons in the address book are the same) is not trivial; often, detecting only the exact string/value matches is not enough. For example, `John Doe` and `john  doe` are likely to be the same person. Similarly, extra white space %%(e.g., the user typed an extra space between the two names)%% is unlikely to mean they are two different persons. Typically, it is best if you can give a warning in such _near match_ cases so that the user can make the final decision. <br>
+  Half-baked duplicate detection can qualify as `type.FeatureFlaw` bugs. However, detecting more complex cases of potential duplicates can be considered as `NotInScope` especially if they are hard to implement and expected to be rare.
+* **Overzealous input validation**: It is better to warn rather than to block when inputs are not compliant with the expected format, unless accepting such inputs can hinder the operations of the software. Allowing such flexibility can allow the user to use the software in ways you didn't even anticipate while overzealous rejection of inputs can annoy the user:<br>
+  %%Example 1: While your software allows only one phone number in input values, a user might want to input `1234 5678 (HP) 1111-3333 (Office)` -- blocking that input might not add any value but allowing it does.%%<br>
+  %%Example 2: A user might want to enter an appointment in the past, just for record keeping purposes.%%<br>
+  However, it is fine (and recommended) to show a warning for such inputs to guard against the deviation being a mistake rather than intentional.<br>
+  Overzealous input blocking can be considered a `type.FeatureFlaw` bug.<br>
+  Lack of proper handling (either blocking or warning) for potentially invalid inputs can be considered a `type.FeatureFlaw` bug too.
+* **Specificity of error message**: Error messages can be correct but not specific enough %%(e.g., it says the input is 'invalid' without giving the reason, or gives too many possible reasons without pointing out the specific reason)%%. These cases can be considered `type.FeatureFlaw` unless making it more specific will take a lot more effort, in which case there is a chance to argue it to be `response.NotInScope`.
+* **Unnecessarily complicated (or hard-to-type) command formats** can be considered a `type.FeatureFlaw` as it is expected that the input formats will be optimized to get things done fast. Some examples: using very long keywords when shorter ones do, or making keywords case-sensitive when there is no need for it, using hard to type special characters in the format when it is possible to avoid them.
+
+
+##### Documentation bugs
+* **Broken links**: Severity can be `Low` or `Medium` depending on how much inconvenience they cause to the reader.
+* **Extra white space** introduced by the PDF conversion: Not counted as bugs unless it hinders the reader. Cases such as a diagram being split between pages are considered bugs, because they hinder the reader.
+* **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
+  Omitting optional notations is not a bug as long it doesn't hinder understanding.
+* **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
+* **Severity of bugs related to _missing requirements_** (e.g., missing user stories)? Depends on the potential damage the omission can cause. Keep in mind that not documenting a requirement increases the risk of it not getting implemented in a timely manner (i.e., future developers will not know that feature needs to be implemented).
+* **Unfulfilled NFRs**: If the DG mentions non-functional requirements that are not met by the product, it can be a `severity.Low` `DocumentationBug` if the the NFR was unreasonable in the first place. Otherwise, it can be `type.FeatureFlaw` bug.
+* **Details in the diagram too small**: This is usually a symptom of having too much info in the diagram. A common example is sequence diagrams showing low-level details of multiple components (recommended: A sequence diagram should show internal interactions of at most one component i.e., treat other components as back boxes).<br>
+ While the reader can zoom to see smaller details, this can still be considered a cosmetic issue (i.e., `severity.VeryLow`).
