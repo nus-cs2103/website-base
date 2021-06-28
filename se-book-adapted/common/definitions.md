@@ -1,7 +1,6 @@
 <frontmatter>
 title: "Definitions"
-header: header.md
-siteNav: se-book-adapted-sitenav.md
+layout: textbook.md
 </frontmatter>
 {% import "se-book-adapted/config.njk" as config with context %}
 

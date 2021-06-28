@@ -1,9 +1,5 @@
 <frontmatter>
 title: "iP Showcase"
-header: header.md
-footer: footer.md
-head: scheduleHead.md
-pageNav: 2
 </frontmatter>
 
 # iP Showcase

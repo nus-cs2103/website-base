@@ -1,5 +1,4 @@
-<navigation>
-
+<site-nav>
 * [Expressions, Data Types, Variables]({{ baseUrl }}/programming/chapters/expressions-types-variables.html)
 * [Python Programs]({{ baseUrl }}/programming/chapters/programs.html)
 * [Program Flow Control]({{ baseUrl }}/programming/chapters/flowcontrol.html)
@@ -18,5 +17,4 @@
 * [**C.** Organizing Python Code]({{ baseUrl }}/programming/chapters/organizing.html)
 * [**D.** Unit Testing]({{ baseUrl }}/programming/chapters/unittesting.html)
 * [**E.** The Monty Project]({{ baseUrl }}/programming/chapters/monty.html)
-
-</navigation>
+</site-nav>

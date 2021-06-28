@@ -52,6 +52,9 @@
       "searchable": "no"
     }
   ],
+  "intrasiteLinkValidation": {
+    "enabled": true
+  },
   "enableSearch": true,
   "headingIndexingLevel": 5,
   "plugins": ["filterTags"],

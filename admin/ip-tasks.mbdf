@@ -7,20 +7,20 @@
  # Common text segments
  #====================================================================================================================#}
 
-<span id="order">
+<div id="order">
 
 * Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
-</span>
-<span id="commit">
+</div>
+<div id="commit">
 
 * From this point onward, commit code at important points. ==Minimally, commit after completing each increment==.
-</span>
-<span id="tag-push">
+</div>
+<div id="tag-push">
 
 * From this point onward, after completing each increment,
   * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
   * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
-</span>
+</div>
 <span id="volatile-requirements">
 
 <box type="info" dismissible>
@@ -105,34 +105,36 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 {# Steps
 {#====================================================================================================================#}
 <span id="heading_learn_about_the_project">Learn about the project</span>
-<span id="desc_learn_about_the_project">
+<div id="desc_learn_about_the_project">
+
 * **Read the following two sections**, if you haven't done so already:
 
 {{ embed_topic("ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3", indent="2") }}
 {{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_set_up_prerequisites">Set up prerequisites</span>
-<span id="desc_set_up_prerequisites">
+<div id="desc_set_up_prerequisites">
+
 * **Ensure you have followed the <span class="pr-1 pl-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following module tools:**
 
 {{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="2") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="2") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
-<span tags="m--cs2113 m--tic4001" id="extra_Level-0">
+<div tags="m--cs2113 m--tic4001" id="extra_Level-0">
 <include src="ip-tasks.mbdf#commit" />
-</span>
-<span id="extra_Level-1">
+</div>
+<div id="extra_Level-1">
 <include src="ip-tasks.mbdf#order" />
 {% if cs2103 %}<include src="ip-tasks.mbdf#commit" />{% endif %}
 <include src="ip-tasks.mbdf#tag-push" />
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project in your computer</span>
-<span id="desc_set_up_project">
+<div id="desc_set_up_project">
 
 * Read through this week's topics before starting the project.
 
@@ -148,26 +150,26 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 
 {{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="2") }}
 </box>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_tic4002">Set up the project in your computer</span>
-<span id="desc_set_up_project_tic4002">
+<div id="desc_set_up_project_tic4002">
 
 * We assume you still have the iP project set up that you used for TIC4001. If not, please set it up as explained in [TIC4001 website](https://nus-tic4001-{{ previous_semester | lower }}.github.io/website/admin/ip-w2.html).
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_finish_leftover_tasks">Do any leftover iP tasks from the previous week</span>
-<span id="desc_finish_leftover_tasks">
+<div id="desc_finish_leftover_tasks">
 * Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_create_pr_to_upstream">Create a PR to the upstream repo</span>
-<span id="desc_create_pr_to_upstream">
+<div id="desc_create_pr_to_upstream">
 {% if tic4002 %}
 
 <box type="tip" seamless>
 
-<span class="text-success">**If you encounter technical problems**</span>, follow the guidelines given below in seeking help:
+<div class="text-success">**If you encounter technical problems**</div>, follow the guidelines given below in seeking help:
 
 {{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="2") }}
 </box>
@@ -199,26 +201,26 @@ _Pull Requests_ is a mechanism for offering code to a repository e.g., a bug fix
 Resources:
 * [GitHub Help page on PRs](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 </modal>
-</span>
+</div>
 {#====================================================================================================================#}
-<span id="extra_Level-5">
-<span tags="m--cs2113 m--tic4001">
+<div id="extra_Level-5">
+<div tags="m--cs2113 m--tic4001">
 
 * Do each increment as a Git branch. Here is an example:
   * Start a branch named `branch-{increment ID}` (e.g. `branch-Level-5`). You are recommended to have multiple commits in that branch. Follow the branch naming convention exactly or else our gradings scripts might miss your branch.
   * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
   * Push the branch to your fork so that the bot can detect it. As before, push the tag as well.
   * {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
-</span>
-</span>
-<span id="extra_A-Packages">
-<span tags="m--cs2113 m--tic4001">
+</div>
+</div>
+<div id="extra_A-Packages">
+<div tags="m--cs2113 m--tic4001">
 
 * Recommended: if you are new to git, do this as a separate branch too (for additional practice), similar to how you did `Level-5` (branch name `branch-A-Packages`).
-</span>
-</span>
-<span id="extra_Level-6">
-<span tags="m--cs2113">
+</div>
+</div>
+<div id="extra_Level-6">
+<div tags="m--cs2113">
 
 * Practice using parallel git branches, as explained below:
   1. First, do Level-6 in a branch named `branch-Level-6`, but do not merge it.
@@ -229,8 +231,8 @@ Resources:
 * As before,
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.<br>
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
-</span>
-<span tags="m--tic4001">
+</div>
+<div tags="m--tic4001">
 <p/>
 
 * Create a new branch `branch-Level-6`.
@@ -246,16 +248,16 @@ Resources:
 
 * Pull the `master` branch from the fork to your local repo.
 
-</span>
-</span>
-<span id="extra_A-Jar">
-<span tags="m--cs2113 m--tic4001">
+</div>
+</div>
+<div id="extra_A-Jar">
+<div tags="m--cs2113 m--tic4001">
 
 * In case this increment does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already).
 * Upload the jar file to your fork as explained in the panel below.
-</span>
-</span>
-<span id="extra_Level-7">
+</div>
+</div>
+<div id="extra_Level-7">
 
 <p/>
 
@@ -265,9 +267,9 @@ Resources:
  {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
  {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
 
-</span>
+</div>
 <span id="extra_Level-8">
-<span tags="m--cs2113 m--tic4001" id="as-parallel-prs">
+<div tags="m--cs2113 m--tic4001" id="as-parallel-prs">
 
 * **Note how to merge PRs**:
 
@@ -286,14 +288,14 @@ Resources:
    1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
    1. As before, tag the merge commit in the master branch and push the tag to your fork.
 1. Merge the remaining PRs using a procedure similar to the above.
+</div>
 </span>
-</span>
-<span id="extra_A-Assertions">
-<span tags="m--cs2103">
+<div id="extra_A-Assertions">
+<div tags="m--cs2103">
 <include src="ip-tasks.mbdf#as-parallel-prs" />
-</span>
-</span>
-<span id="extra_A-MoreOOP">
+</div>
+</div>
+<div id="extra_A-MoreOOP">
 
 <box tags="m--cs2103 m--cs2113" type="info" seamless>
 
@@ -308,15 +310,15 @@ One the increments below asks you to push the design more towards the OOP approa
 
 * As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).
 
-</span>
-<span id="extra_A-JavaDoc">
+</div>
+<div id="extra_A-JavaDoc">
 
 * As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 * The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_ensure_tic4001_increments">Ensure TIC4001 iP increments have been done</span>
-<span id="desc_ensure_tic4001_increments">
+<div id="desc_ensure_tic4001_increments">
 
 * Ensure that following increments (that were due in TIC4001) have been done. Improve their implementation, if the current implementation is weak (in your own opinion). %%For example, you can add _more_ JavaDoc comments or JUnit tests even if the current code has them already.%%
 <include src="dukeFragment.md" boilerplate var-header="**`Level1`: Greet, Echo, Exit**" var-fragment="text.md#Level-1" />
@@ -335,10 +337,10 @@ One the increments below asks you to push the design more towards the OOP approa
 <include src="dukeFragment.md" boilerplate var-header="**`A-JavaDoc`: Add JavaDoc comments**" var-fragment="extensions.mbdf#A-JavaDoc" />
 <include src="dukeFragment.md" boilerplate var-header="**`A-JUnit`: Add JUnit Tests**" var-fragment="extensions.mbdf#A-JUnit" />
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_prepare_for_pr_reviews">Get ready to review PRs</span>
-<span id="desc_prepare_for_pr_reviews">
+<div id="desc_prepare_for_pr_reviews">
 
 * **Do the following to prepare for the PR review exercise** you will be doing in the coming tutorial.
   * Learn how to review PRs:
@@ -346,10 +348,10 @@ One the increments below asks you to push the design more towards the OOP approa
 {{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
 
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_review_two_prs">Review some peer PRs</span>
-<span id="desc_review_two_prs">
+<div id="desc_review_two_prs">
 
 <div tags="m--cs2103 m--tic4001">
 
@@ -395,21 +397,21 @@ This task is worth `2x2=4` participtaion points.
 
 * {{ step(4) }} **[When you receive reviews for your own PR] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in [these guidelines](https://se-education.org/guides/guidelines/PRs-reviewing.html), do not get into arguments with PR reviewers/authors.
 
-</span>
+</div>
 {#====================================================================================================================#}
 
 <span id="heading_learn_from_others">Learn from others (optional)</span>
-<span id="desc_learn_from_others">
+<div id="desc_learn_from_others">
 
 * **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent=2) }}
 
-</span>
+</div>
 {#====================================================================================================================#}
 
 <span id="heading_evaluate_peer_ips">Evaluate two peer iPs</span>
-<span id="desc_evaluate_peer_ips">
+<div id="desc_evaluate_peer_ips">
 
 <div class="indented-level2">
 
@@ -430,9 +432,9 @@ This activity is worth `2x2=4` participation points.
 1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
 1. **Submit your evaluation** using the survey.
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
-</span>
+</div>
 {#====================================================================================================================#}
-<span id="extra_A-Gradle">
+<div id="extra_A-Gradle">
 
 {% if tic4002 %}
 * As before, after an increment has been completed, tag the commit using the increment ID (e.g., `A-Gradle` in this case) and push that tag to your fork.
@@ -443,24 +445,25 @@ This activity is worth `2x2=4` participation points.
 <br>
 {{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
 {% endif %}
-</span>
+</div>
 {#====================================================================================================================#}
-<span id="post_Level-10">
+<div id="post_Level-10">
 
 <div class="indented-level2">
 
 * Note that you no longer need to keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_generate_new_jar">{{ "Release" if tic4002 else "Generate" }} a new JAR file</span>
-<span id="desc_generate_new_jar">
+
+<div id="desc_generate_new_jar">
 * Generate a new JAR file using Gradle %%(Gradle can bundle the JavaFX third-party library into the jar file. If you do not bundle JavaFX with the JAR file, the application will not work in computers that don't have JavaFX installed)%%. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
 ==If the `.jar`  file is smaller than 10MB==, most likely JavaFX libraries are not inside it.
 * {% if tic4002 %}Make a new release on GitHub and upload the JAR file. You may use any appropriate version number for it.{% else %}There is no need to create a release in GitHub with this jar file (although you are welcome to).{% endif %}
-</span>
+</div>
 {#====================================================================================================================#}
-<span id="extra_A-Assertion">
+<div id="extra_A-Assertion">
 
 * Add the following increments, doing each in the following manner:
 1. add the extension in a separate branch
@@ -468,33 +471,34 @@ This activity is worth `2x2=4` participation points.
 1. create PR within your fork (i.e., from the new branch, to the `master` branch)
 1. merge the PR; you can try various merge options such as `Squash and Merge`, `Rebase and Merge`
 1. sync your local clone with the fork
-</span>
+</div>
 {#====================================================================================================================#}
-<span id="extra_A-CI">
+<div id="extra_A-CI">
 
 {% if not tic4002 %}* We recommend that ==at least one member== of the team attempt the following.{% endif %}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_finalize_features">Finalize the features</span>
-<span id="desc_finalize_features">
+<div id="desc_finalize_features">
+
 * You may give the product any name, but do not rename the repo.
 * Reminder: you can give the chatbot any personality (there is no need to follow the exact command/response formats given)
 * {{ icon_important_big_red }} Remember to give credit to any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_set_up_website">Set up a product website</span>
-<span id="desc_set_up_website">
+<div id="desc_set_up_website">
 
-<span  tags="m--cs2103 m--tic4002" id="ip-ui-png">
+<div  tags="m--cs2103 m--tic4002" id="ip-ui-png">
 
 * **Add a representative screenshot** of the product to the `docs` folder.
   * ==The file name should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
   * Ideally, the product name is visible in the screenshot e.g., in the title bar of the Window
 
 {{ embed_topic("tp-deliverables-website.mbdf#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
-</span>
+</div>
 
 * **Add a brief User Guide (UG)**
 
@@ -504,14 +508,15 @@ This activity is worth `2x2=4` participation points.
 </div>
 <p/>
 
-<span  tags="m--cs2103" id="ip-ui-png-test">
+<div  tags="m--cs2103" id="ip-ui-png-test">
 
 * {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your user name}.github.com/{repo name}/Ui.png` (e.g., `https://johndoe.github.com/ip/Ui.png`).
-</span>
-</span>
+</div>
+</div>
 {#====================================================================================================================#}
 <span id="heading_submit_the_final_version">Submit the final version</span>
-<span id="desc_submit_the_final_version">
+<div id="desc_submit_the_final_version">
+
 {% if not (tic4001 or tic4002) %}
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
@@ -531,16 +536,16 @@ This activity is worth `2x2=4` participation points.
 <include src="dukeFragment.md" boilerplate var-header="**`A-Release`: Release**" var-fragment="extensions.mbdf#A-Release" />
 </div>
 <p/>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_get_more_out_of_the_ip">[Optional] Get more out of the iP</span>
-<span id="desc_get_more_out_of_the_ip">
+<div id="desc_get_more_out_of_the_ip">
 <div class="indented">
 
 **If you wish to cite the iP in your resume**, you can do more to make it look more impressive to a potential employer. These improvements are not considered for grading and can be done after the semester is over. Some ideas:
 * **Improve the GUI**: Make the UI look nicer, unique, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
 * **Add a demo** video or an animated gif to your user guide to show how the app works.
-* **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge badge-light badge-pill text-monospace">**</>**</span>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
+* **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge badge-light badge-pill text-monospace">**</>**</div>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
 * **Add more features.**
 
 {{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other modules, pet projects).
@@ -551,7 +556,7 @@ This activity is worth `2x2=4` participation points.
 </span>
 {#====================================================================================================================#}
 <span id="heading_add_an_extension">Add an extension</span>
-<span id="desc_add_an_extension">
+<div id="desc_add_an_extension">
 
 * Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`{% if not tic4002 %}
 * Recommended to add the extension via a branch (branch name is up to you). Optional to add it via a PR.{% endif %}
@@ -564,10 +569,10 @@ This activity is worth `2x2=4` participation points.
 
 {{ icon_tip }} You may want to pick an extension that is relevant to your tP so that the code can be reused in the tP later, if possible.
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_stricter_coding_standard">Apply a stricter coding standard</span>
-<span id="desc_stricter_coding_standard">
+<div id="desc_stricter_coding_standard">
 
 <div class="indented">
 
@@ -582,19 +587,19 @@ Implementing the following increment (optional) can be help with the above.
 
 <include src="dukeFragment.md" boilerplate var-header="**`A-CheckStyle`: Use CheckStyle**" var-fragment="extensions.mbdf#A-CheckStyle" />
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_more_code_quality">Increase code quality even further</span>
-<span id="desc_more_code_quality">
+<div id="desc_more_code_quality">
 
 * Increase the code quality by applying the [code quality guidelines covered in the textbook](../se-book-adapted/chapters/codeQuality.html). Even if you have done this previously in TIC4001, have another look to see if the code quality can be improved further.
 * Remember to commit each refactoring separately and give a descriptive commit message (also pay attention to the [Git commit message conventions](standardsAndConventions.md) given).
 * Tag to apply to the commit: `A-HigherCodingQuality`.
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_update_website">Update the website</span>
-<span id="desc_update_website">
+<div id="desc_update_website">
 
 * Update the product website in the following ways:
   * Move the **User Guide** to a separate page (filename: `docs/UserGuide.md`) and update it to match the current version of the product.
@@ -606,14 +611,14 @@ Implementing the following increment (optional) can be help with the above.
 
 <include src="ip-tasks.mbdf#ip-ui-png"/>
 <include src="ip-tasks.mbdf#ip-ui-png-test"/>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_start_next_week_tasks">Start next week's tasks</span>
-<span id="desc_start_next_week_tasks">
+<div id="desc_start_next_week_tasks">
 
 * If you are done with this week's iP tasks, you may also start on next week's iP tasks if you wish.
 
-</span>
+</div>
 {#====================================================================================================================#}
 
 {% macro get_id_list(increments) -%}

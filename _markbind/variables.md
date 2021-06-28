@@ -138,12 +138,12 @@
 <variable name="icon_exercise"><md>:fas-dumbbell:</md></variable>
 <variable name="icon_extra"><span class='badge badge-pill badge-secondary'><md>:fas-plus: extra</md></span></variable>
 <variable name="icon_evidence"><md>:fas-briefcase:</md></variable>
-<variable name="icon_graded"><span class="text-info"><tooltip content="counted for participation">:fab-product-hunt:</tooltip></span></variable>
+<variable name="icon_graded"><span class="text-info"><tooltip content="counted for participation"><md>:fab-product-hunt:</md></tooltip></span></variable>
 <variable name="icon_info"><md>:fas-info-circle:</md></variable>
 <variable name="icon_lecture"><md>:glyphicon-blackboard:</md></variable>
 <variable name="icon_like"><md>:fas-thumbs-up:</md></variable>
 <variable name="icon_linux"><md>:fab-linux:</md></variable>
-<variable name="icon_important_big_red"><font color="red"><big>:glyphicon-exclamation-sign:</big></font></variable>
+<variable name="icon_important_big_red"><span style="color: red"><big><md>:glyphicon-exclamation-sign:</md></big></span></variable>
 <variable name="icon_important"><md>:glyphicon-exclamation-sign:</md></variable>
 <variable name="icon_new_window"><md>:glyphicon-new-window:</md></variable>
 <variable name="icon_outcome"><md>:fas-trophy:</md></variable>
@@ -160,11 +160,11 @@
 <variable name="icon_Q_A">{{ icon_Q | safe }}:glyphicon-ok-sign:</variable>
 <variable name="icon_repo"><md>:fas-code-branch:</md></variable>
 <variable name="icon_resource"><md>:fas-paperclip:</md></variable>
-<variable name="icon_terminal"><smal><span class="badge badge-secondary">&gt;_</span></smal></variable>
+<variable name="icon_terminal"><small><span class="badge badge-secondary">&gt;_</span></small></variable>
 <variable name="icon_text"><md>:far-file-alt:</md></variable>
 <variable name="icon_tick"><md>:fas-check:</md></variable>
 <variable name="icon_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb:</span></variable>
-<variable name="icon_tick_green"><span style="color:green">{{ icon_tick | safe }}</span></variable>
+<variable name="icon_tick_green"><span style="color: green">{{ icon_tick | safe }}</span></variable>
 <variable name="icon_todo"><md>:glyphicon-check:</md></variable>
 <variable name="icon_try">:fas-laptop:</variable>
 <variable name="icon_tutorial"><md>:fas-chalkboard-teacher:</md></variable>
@@ -172,7 +172,7 @@
 <variable name="icon_video"><md>:glyphicon-facetime-video:</md></variable>
 <variable name="icon_windows"><md>:fab-windows:</md></variable>
 <variable name="icon_x"><md>:fas-times:</md></variable>
-<variable name="icon_x_red"><span style="color:red">{{ icon_x | safe }}</span></variable>
+<variable name="icon_x_red"><span style="color: red">{{ icon_x | safe }}</span></variable>
 
 <variable name="icon_tab_admin_info">{{ icon_info | safe }}</variable>
 <variable name="icon_tab_project">{{ icon_project | safe }}</variable>
@@ -186,8 +186,8 @@
 <variable name="icon_team"><md>:fas-users:</md></variable>
 <variable name="icon_both">{{ icon_individual }}/{{ icon_team }}</variable>
 
-<variable name="bad"><font color="red"><md>**{{ icon_dislike | safe }} Bad**</md></font></variable>
-<variable name="good"><font color="green"><md>**{{ icon_like | safe }} Good**</md></font></variable>
+<variable name="bad"><span style="color: red"><md>**:fas-thumbs-down: Bad**</md></span></variable>
+<variable name="good"><span style="color: green"><md>**:fas-thumbs-up: Good**</md></span></variable>
 <variable name="pros"><span class="text-success">**pros:**</span></variable>
 <variable name="cons"><span class="text-danger">**cons:**</span></variable>
 <variable name="required"><span class="badge badge-pill badge-danger">REQUIRED</span></variable>
@@ -218,3 +218,11 @@
 <variable name="line_dotted"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></variable>
 <variable name="line_double"><hr style="border-top: 3px double #c5c5c5;"></variable>
 <variable name="pagebreak"><p style="page-break-after: always;">&nbsp;</p></variable>
+<span id="lecture_table_headers">
+Module                 | Venue    | Time
+---------------------- | -------- | ----
+</span>
+<span id="tutorial_table_headers">
+Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](instructors.html))
+-------|-------|------|------------------------------------------------------------|----------------------------------------|-------
+</span>

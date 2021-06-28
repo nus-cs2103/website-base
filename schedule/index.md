@@ -1,8 +1,5 @@
 <frontmatter>
 title: "Schedule"
-header: header.md
-footer: footer.md
-head: scheduleHead.md
 pageNav: 1
 </frontmatter>
 
@@ -56,9 +53,6 @@ pageNav: 1
 
 <frontmatter>
 title: "Week {{ week_num }} - {{ categories[category].name }}"
-header: header.md
-footer: footer.md
-head: scheduleHead.md
 pageNav: {{ categories[category].pagenav }}
 </frontmatter>
 

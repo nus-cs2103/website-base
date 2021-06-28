@@ -9,11 +9,11 @@
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
-<span id="cs2103-week4-intro">
+<div id="cs2103-week4-intro">
 
-</span>
+</div>
 {#====================================================================================================================#}
-<span id="cs2103-week6-intro">
+<div id="cs2103-week6-intro">
 
 <box dismissible>
 
@@ -30,9 +30,9 @@
 {{ icon_important_big_red }} **Milestone requirements are cumulative**. The recommended progress for the mid-milestone is an implicit requirement for the actual milestone unless a milestone requirement overrides a mid-milestone requirement %%e.g., mid-milestone requires a document to be in a temp format while the actual milestone requires it to be in the proper format%%. Similarly, a requirement for milestone `n` is also an implicit requirement for milestone `n+1` unless `n+1` overrides the `n` requirement. This means ==if you miss some requirement at milestone `n`, you should try to achieve it before milestone `n+1`== or else it could be noted again as a 'missed requirement' at milestone `n+1`.
 </span>
 </box>
-</span>
+</div>
 {#====================================================================================================================#}
-<span id="cs2103-week8-intro">
+<div id="cs2103-week8-intro">
 
 <box>
 
@@ -43,10 +43,10 @@
 
 {{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
 
-</span>
+</div>
 
 {#====================================================================================================================#}
-<span id="cs2103-week12-intro">
+<div id="cs2103-week12-intro">
 
 <box dismissible>
 
@@ -60,11 +60,11 @@
 <panel type="seamless" src="tp-grading.md#main" header="%%Admin {{ icon_embedding }} tP → Grading%%" class="embedding" />
 <panel type="seamless" src="appendixB-policies.md#policy-reuse" header="%%Admin {{ icon_embedding }} Policy on reuse%%" class="embedding" />
 </box>
-</span>
+</div>
 {#====================================================================================================================
  # CS2113 Weekly Intros
  #====================================================================================================================#}
-<span id="cs2113-week4-intro">
+<div id="cs2113-week4-intro">
 
 <box>
 
@@ -74,9 +74,9 @@
 
 
 </box>
-</span>
+</div>
 {#====================================================================================================================#}
-<span id="cs2113-week10-intro">
+<div id="cs2113-week10-intro">
 
 {% call topic_preamble(reuse=false) %}
 Some things to note as you start the {{ version_penultimate }} iteration:
@@ -84,43 +84,43 @@ Some things to note as you start the {{ version_penultimate }} iteration:
   **Focus on improving the process and the quality** instead.
 * **Move in small steps, and keep the product working at each step.** If it breaks, you will only have to examine the latest change for the cause of the breakage.
 {% endcall %}
-</span>
+</div>
 
 {#====================================================================================================================#}
-<span id="cs2113-week11-intro">
+<div id="cs2113-week11-intro">
 
 {% call topic_preamble(reuse=false) %}
 ==This week, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening in this week).
 
 To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).
 {% endcall %}
-</span>
+</div>
 
 {#====================================================================================================================#}
 {# Steps
 {#====================================================================================================================#}
 <span id="heading_get_familiar_with_ab3">{{ icon_individual }} Get familiar with AB3 features</span>
-<span id="desc_get_familiar_with_ab3">
+<div id="desc_get_familiar_with_ab3">
 
 * **Familiarize yourself with AB3**: Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html) and play around with it to familiarize with its current features.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_set_up_meeting_time">{{ icon_team }} Set up a project meeting time</span>
-<span id="desc_set_up_meeting_time">
+<div id="desc_set_up_meeting_time">
 
 * After forming teams, **set up a weekly project meeting time/venue (and communication channels) with your team members**:
 
 {{ embed_topic("tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>
-<span id="desc_start_weekly_meetings">
+<div id="desc_start_weekly_meetings">
 
 * We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, ==it is also acceptable to discuss weekly post-lecture quiz (if any) together with team members as you do the quiz== i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_decide_project_direction">{{ icon_team }} Decide on an overall project direction %%(user profile, problem addressed)%%</span>
-<span id="desc_decide_project_direction">
+<div id="desc_decide_project_direction">
 
 * **Decide project direction, target user profile, and problem addressed**: Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:
 
@@ -140,7 +140,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
   {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.{% endif %}
 
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_start_project_notes">{{ icon_team }} Start a collaborative doc to take project notes</span>
 <span id="desc_start_project_notes">
@@ -152,7 +152,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 </span>
 {#====================================================================================================================#}
 <span id="heading_brainstorm_user_stories">{{ icon_team }} Brainstorm user stories</span>
-<span id="desc_brainstorm_user_stories">
+<div id="desc_brainstorm_user_stories">
 
   <img class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px">
 
@@ -182,15 +182,15 @@ As we are still at the early stages of identifying a problem to solve, do not th
   You can ~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~ use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
-  <include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
+<include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-userstories">
-  <include src="../book/specifyingRequirements/userStories/unit-inElsewhere-asFlat.md" boilerplate/>
+<include src="../book/specifyingRequirements/userStories/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 <modal large header="Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools">
-  <include src="../book/specifyingRequirements/userStories/usage/tools.md"/>
+<include src="../book/specifyingRequirements/userStories/usage/tools.md"/>
 </modal>
 
 
@@ -207,10 +207,10 @@ As we are still at the early stages of identifying a problem to solve, do not th
 </div>
 
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ version_first }}</span>
-<span id="desc_prioritize_user_stories">
+<div id="desc_prioritize_user_stories">
 
 <div class="indented">
 
@@ -249,20 +249,20 @@ Suggested workflow:
   * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed_ for {{ version_first }}.
 * **Second stage**:
   * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
-<span id="desc_set_up_project_repo">
+<div id="desc_set_up_project_repo">
 
 * Set up the team org, the team repo, and individual forks as explained below:
 
 {{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Organization Setup**", "1", indent="2") }}
 {{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="2") }}
 {{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the code base</span>
-<span id="desc_get_familiar_with_the_code_base">
+<div id="desc_get_familiar_with_the_code_base">
 
 * ==Ideally, you should do this task in this week== {% if tic4002 %}(i.e., before the week 6 lecture), but you may take an extra week (i.e., by the week 7 lecture){% else %}(i.e., midnight before the week 6 tutorial), but you may take an extra week (i.e., by the week 7 tutorial){% endif %} to finish them without penalty.
 * Do the following tutorials to get familiar with the codebase
@@ -277,22 +277,22 @@ Suggested workflow:
 * For reference, given below is the workflow you should follow when merging code in your tP:
 
 {{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize {{ version_first }}</span>
-<span id="desc_conceptualize_first_version">
+<div id="desc_conceptualize_first_version">
 
 * Based on your user stories selected previously, conceptualize the product in terms of how it will look like at {{ version_first }} ==in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>==.<br>
   Note down the feature list in your online project notes document.
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
-  <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
+<include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ug">{{ icon_individual }} Draft the UG</span>
-<span id="desc_draft_the_ug">
+<div id="desc_draft_the_ug">
 
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ version_first }}.
   * We recommend that you follow the [AB3 User Guide]({{ url_ab3_upstream_website }}/UserGuide.html) in terms of structure and format.
@@ -314,19 +314,19 @@ Suggested workflow:
    
   </box>
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_refine_product_design">{{ icon_team }} Refine the product design</span>
-<span id="desc_refine_product_design">
+<div id="desc_refine_product_design">
 
 * Review the UG to ensure the features written by each member fit together to form a cohesive product. Note that cohesiveness of the product can affect the grading of the _product design_ aspect.
 
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Product Design==**", "3", indent="2") }}
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_update_website_aboutus_readme">{{ icon_team }} Update project website: `AboutUs`, `README`</span>
-<span id="desc_update_website_aboutus_readme">
+<div id="desc_update_website_aboutus_readme">
 
 <div class="indented-level1">
 
@@ -354,11 +354,11 @@ Update the following pages in your project repo:
   * Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities %%(as explained in Admin {{ icon_embedding }} Project Scope)%%</trigger> later in the project, if necessary.
 
 <modal large header="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:mid-v12-photo">
-  <include src="tp-deliverables-website.mbdf#profile-photo"/>
+<include src="tp-deliverables-website.mbdf#profile-photo"/>
 </modal>
 
 <modal large header="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
-  <include src="tp-expectations.md#roles"/>
+<include src="tp-expectations.md#roles"/>
 </modal>
 
 * **README** page: Update it to match your project.
@@ -376,10 +376,10 @@ Update the following pages in your project repo:
 
 * **Update site-wide settings** as described in the guide [_Using Jekyll for project documentation_ @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html).
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
-<span id="desc_update_the_ug">
+<div id="desc_update_the_ug">
 
 * **Move the draft UG content into the User Guide page** in your repository. Update the content as necessary. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
@@ -387,10 +387,10 @@ Update the following pages in your project repo:
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
   <include src="tp-tasks.mbdf#divideDocs"/>
 </modal>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs{% if not tic4001 %}, use cases{% endif %}</span>
-<span id="desc_update_dg_user_stories_etc">
+<div id="desc_update_dg_user_stories_etc">
 
 <div tags="m--tic4001" class="indented-level2">
 
@@ -420,45 +420,45 @@ Update the following pages in your project repo:
 </box>
 
 <modal large header="Textbook {{ icon_embedding }} Specifying Requirements → Use Cases" id="modal:v10-usecases">
-  <include src="../book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat.md" boilerplate />
+<include src="../book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat.md" boilerplate />
 </modal>
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-nfr">
-  <include src="../book/requirements/nonFunctionalRequirements/unit-inElsewhere-asFlat.md" boilerplate/>
+<include src="../book/requirements/nonFunctionalRequirements/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-glossary">
-  <include src="../book/specifyingRequirements/glossary/what/unit-inElsewhere-asFlat.md" boilerplate/>
+<include src="../book/specifyingRequirements/glossary/what/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-userstories">
-  <include src="../book/specifyingRequirements/userStories/introduction/unit-inElsewhere-asFlat.md" boilerplate/>
+<include src="../book/specifyingRequirements/userStories/introduction/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_practice_workflow_with_sample_repo">{{ icon_team }} Practice the workflow with a sample repo</span>
-<span id="desc_practice_workflow_with_sample_repo">
+<div id="desc_practice_workflow_with_sample_repo">
 
 * We recommend that you practice the forking workflow with your team members as described in the textbook section given in the panel below.<br>
   {{ icon_tip }} You can use your tP GitHub org for this exercise too.
 
 {{ embed_topic("../book/gitAndGithub/forkingWorkflow/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **The forking workflow**", "1", indent=2) }}
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration</span>
-<span id="desc_do_a_practice_iteration">
+<div id="desc_do_a_practice_iteration">
 
 * To get some practice of doing project iterations, do this week's tP work (i.e., updates to various documents) as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
 
 * Don't forget to 'wrap up' the milestone at the end of this week (as explained in the panel above), after the work is done.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration</span>
-<span id="desc_plan_the_next_iteration">
+<div id="desc_plan_the_next_iteration">
 
 <div class="indented-level2">
 
@@ -472,16 +472,16 @@ Update the following pages in your project repo:
 * {{ icon_team }} **Divide the work among the team members** i.e., the work required for the current iteration.
 * {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a place holder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_first }}`%%<br>
   Optionally, you can define a `mid-{{ version_first }}` milestone to keep track of things to be done within the first half of the milestone.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_start_implementing_the_next_version">{{ icon_individual }} Start implementing the next version</span>
-<span id="desc_start_implementing_the_next_version">
+<div id="desc_start_implementing_the_next_version">
 
 * If you have time, start implementing v1.2.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_start_implementing_first_version">{{ icon_individual }} Start implementing {{ version_first }}</span>
-<span id="desc_start_implementing_first_version">
+<div id="desc_start_implementing_first_version">
 
 <div class="indented-level2">
 
@@ -500,7 +500,7 @@ Update the following pages in your project repo:
 
 {{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="2") }}
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_ensure_you_know_tp_expectations">%%{{ icon_individual }} Ensure you know tP expectations%%</span>
 <span id="desc_ensure_you_know_tp_expectations">
@@ -513,16 +513,16 @@ Update the following pages in your project repo:
 </span>
 {#====================================================================================================================#}
 <span id="heading_adjust_process_rigor">{{ icon_team }} Adjust process rigor if necessary</span>
-<span id="desc_adjust_process_rigor">
+<div id="desc_adjust_process_rigor">
 
 * **Adjust process rigor**, as explained in the panel below:
 
 {{ embed_topic("appendixE-gitHub.md#workflow-after-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow (after " + version_first + ")**", "3", indent="2") }}
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_start_proper_milestone_management">{{ icon_team }} Start proper milestone management</span>
-<span id="desc_start_proper_milestone_management">
+<div id="desc_start_proper_milestone_management">
 
 * **Set up the issue tracker** as described in the panel below, if you haven't done so already.
 
@@ -536,20 +536,20 @@ Update the following pages in your project repo:
 
 {{ icon_tip }} **Try to achieve all milestone requirements, but do not fret if you miss a few**.  You will get full marks as long as you achieve about 60% of the milestone requirements on average. Yes, that's a pretty low bar, but we have set it low in order to reduce workload and stress. Ideally, you should achieve close to 80-90%.
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_use_github_to_manage_milestones">{{ icon_team }} Use GitHub to manage milestones</span>
-<span id="desc_use_github_to_manage_milestones">
+<div id="desc_use_github_to_manage_milestones">
 
 * We ==recommend== using the GitHub issue tracker and its _milestones_ feature to manage your project milestones, as explained in the following panels.
 
 {{ embed_topic("appendixE-gitHub.md#issue-tracker-setup", "Admin " + icon_embedding + " Appendix E(extract): **Setting up the issue tracker**", "1", indent="2") }}
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_add_first_functionality_increment">{{ icon_individual }} Add the first functionality increment</span>
-<span id="desc_add_first_functionality_increment">
+<div id="desc_add_first_functionality_increment">
 
 * Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).<br>
   **If you split the iteration into two smaller iterations** of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b` so that the dashboard can track them accurately. %%The reason for naming the earlier milestone as `{{ version_first }}` is so that even if you fail to finish the second one, you can still get credit for reaching `{{ version_first }}` (which is the milestone tracked by grading scripts) -- think of the first iteration as _minimal deliverables for `{{ version_first }}`_ and the second one as _more to do if there is time_.%%
@@ -560,10 +560,10 @@ Update the following pages in your project repo:
 
 * **Note: you are required to follow the forking workflow** for at least for the first part of this iteration:
 {{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_add_junit_tests">{{ icon_individual }} Add some JUnit Tests</span>
-<span id="desc_add_junit_tests">
+<div id="desc_add_junit_tests">
 
 * We recommend that each person adds some JUnit tests to test their tP code.
 
@@ -576,10 +576,10 @@ Update the following pages in your project repo:
     {{ icon_info }} Note how some of the test methods follow a different naming convention e.g., `parse_emptyInput_returnsIncorrect()`. Cross-check the coding standard to confirm if this naming convention is allowed.
   * SUT: [`seedu.addressbook.data.AddressBook.java`](https://github.com/se-edu/addressbook-level2/blob/master/src/seedu/addressbook/data/AddressBook.java)<br>
     Tests: [`seedu.addressbook.data.AddressBookTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java)
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_deliver_first_version">{{ icon_team }} Deliver {{ version_first }}</span>
-<span id="desc_deliver_first_version">
+<div id="desc_deliver_first_version">
 
 <div tags="m--cs2103 m--tic4002">
 
@@ -593,10 +593,10 @@ Update the following pages in your project repo:
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_first_version">{{ icon_team }} Wrap up {{ version_first }}</span>
-<span id="desc_wrap_up_first_version">
+<div id="desc_wrap_up_first_version">
 
 * {{ icon_team }} **Manage the milestone** {{ version_first }} as explained in the panel below.
 
@@ -609,10 +609,10 @@ Update the following pages in your project repo:
 * Do a release on GitHub. Uploading a JAR file to GitHub is optional.
 </div>
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_first }}{{ ' (in the following lecture)' if tic4001 or tic4002 }}</span>
-<span id="desc_do_an_informal_demo">
+<div id="desc_do_an_informal_demo">
 
 <div id="demo">
 <div tags="m--cs2103 m--cs2113">
@@ -626,17 +626,17 @@ Update the following pages in your project repo:
 * During the following lecture, do an informal demo of your {{ version_first }} to the profs.
 </div>
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_do_a_postmortem">{{ icon_team }} Do a postmortem of the previous iteration</span>
-<span id="desc_do_a_postmortem">
+<div id="desc_do_a_postmortem">
 
 * Discuss with the team how the iteration went (i.e., what worked well, what didn't), and your **plans to improve the process** (not the product) in the next iteration.
 * Keep notes about the discussion in your project notes document so that the tutor can check them.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_start_on_the_penultimate_version">{{ icon_individual }} Start the next iteration</span>
-<span id="desc_start_on_the_penultimate_version">
+<div id="desc_start_on_the_penultimate_version">
 <div class="indented">
 
 <box type="important" tags="m--cs2113 m--cs2103 m--tic4002" seamless>
@@ -674,19 +674,19 @@ While we are on the topic, also note that the architecture of AB3 doesn't suite 
 </box>
 </div>
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_make_code_more_defensive">{{ icon_individual }} Make the code more defensive</span>
-<span id="desc_make_code_more_defensive">
+<div id="desc_make_code_more_defensive">
 
 * **Improve the defensiveness of the code**: We recommend you add assertions, exceptions, and logging to your code.<br>
   {{ icon_important_big_red }} Remember to enable assertions in your,
   * [IDEA run configurations](https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea) -- if your Intellij is set not to use Gradle when running the project)
   * [the `build.gradle` file](https://stackoverflow.com/questions/48396274/how-to-enable-assertions-in-the-gradle-run-task) -- if you use Gradle to run the project, or if your Intellij is using Gradle to run the project
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
-<span id="desc_update_dg_with_design_details">
+<div id="desc_update_dg_with_design_details">
 
 <div class="indented-level2" tags="m--cs2103 m--tic4002">
 
@@ -712,29 +712,29 @@ Here are some reasons:
 <div class="indented-level2">
 
 <panel type="success" expanded>
-<span slot="header" class="card-title">
+<div slot="header" class="card-title">
 
 ##### <span class="text-white"> {{ icon_tip }} Admin {{ icon_embedding }} tP Deliverables → DG → Tips</span>
-</span>
-<span id="dgTips">
+</div>
+<div id="dgTips">
 
 <include src="tp-deliverables-dg.mbdf#dgTips" />
-</span>
+</div>
 </panel>
 <p/>
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_do_a_release">{{ icon_team }} Do a trial JAR release</span>
-<span id="desc_do_a_release">
+<div id="desc_do_a_release">
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `{{ version_first }}.1` (or `{{ version_penultimate }}.trial`). ==Ensure that the jar file works as expected in an empty folder and using Java 11==, by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_make_code_reposense_compatible">{{ icon_individual }} Ensure the code RepoSense-compatible</span>
-<span id="desc_make_code_reposense_compatible">
+<div id="desc_make_code_reposense_compatible">
 
-<span id="midV13-repoSenseCompatible">
+<div id="midV13-repoSenseCompatible">
 
 * **Ensure your code is <tooltip content="i.e., RepoSense can detect your code as yours">RepoSense-compatible</tooltip>** and the **code it attributes to you is indeed the code written by you**, as explained below:
   * Go to the [tp Code Dashboard]({{ url_tp_dashboard }}). Click on the `</>` icon against your name and verify that the ==lines attributed to you (i.e., lines marked as green)== reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
@@ -744,11 +744,11 @@ Here are some reasons:
   * More info on how to make the code RepoSense compatible:
 
 {{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="4") }}
-</span>
+</div>
 </span>
 {#====================================================================================================================#}
 <span id="heading_smoke_test_catcher">{{ icon_individual }} Smoke-test CATcher</span>
-<span id="desc_smoke_test_catcher">
+<div id="desc_smoke_test_catcher">
 
 * **This activity is <span class="text-danger">compulsory</span> and counts for `3` participation points.** Please do it before the weekly deadline.
 <div class="indented-level2">
@@ -802,13 +802,13 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 
 </div>
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_deliver_the_feature">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
-<span id="desc_deliver_the_feature">
+<div id="desc_deliver_the_feature">
 
 * Deliver the features that you planned for {{ version_penultimate }}.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>
 <div id="desc_update_user_docs">
@@ -831,7 +831,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 </div>
 {#====================================================================================================================#}
 <span id="heading_demo_penultimate_version">{{ icon_team }} Demo {{ version_penultimate }}</span>
-<span id="desc_demo_penultimate_version">
+<div id="desc_demo_penultimate_version">
 
 <div id="demo">
 <div tags="m--cs2103 m--cs2113">
@@ -846,41 +846,41 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 * During the following lecture, do an informal demo of your {{ version_penultimate }} to the profs.
 </div>
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_add_sd_to_dg">{{ icon_individual }} Add sequence diagrams to the developer guide</span>
-<span id="desc_add_sd_to_dg">
+<div id="desc_add_sd_to_dg">
 
 * Add sequence diagrams to enhance your DG wherever they can be useful. Note that diagrams you add in this week will receive feedback while diagrams added later will not.
 * {{ icon_tip }} Try to do this before {{ day_first_tutorial }} so that the added sequence diagrams can get peer feedback via the DG peer review that will happen during this week's tutorial.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_deliver_penultimate_version">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
-<span id="desc_deliver_penultimate_version">
+<div id="desc_deliver_penultimate_version">
 * As before, do a release on GitHub and upload the {{ version_penultimate }} jar file. <span tags="m--cs2113 m--cs2103 m--tic4002" class="text-danger">Do this before the deadline as PE testers will start downloading jar files ahead of time.</span>
 * ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
 
 {{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Contstraints → Constraint-Java-Version", "2", indent="2") }}
 
 * Wrap up the milestone on GitHub.
-</span>
+</div>
 {#====================================================================================================================#}
 
 <span id="heading_release_as_a_jar_file">{{ icon_team }} Release as a jar file</span>
-<span id="desc_release_as_a_jar_file">
+<div id="desc_release_as_a_jar_file">
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Aim to release it by the weekly deadline. Do some manual tests to ensure the jar file works.
 * **Note that you can do an _additional_ JAR release before the PE dry run** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional JAR is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous one %%(reason: it is good to preserver the release history)%% -- testers are expected to take the latest JAR file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_penultimate_version">{{ icon_team }} Wrap up {{ version_penultimate }}</span>
-<span id="desc_wrap_up_penultimate_version">
+<div id="desc_wrap_up_penultimate_version">
 
 * as before
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_review_others_dg">{{ icon_individual }} Review others' DG</span>
-<span id="desc_review_others_dg">
+<div id="desc_review_others_dg">
 
 <!--
 * ~~**Divide into two sub-teams**, ensuring that each team has at least one member who is good with UML.~~<br>
@@ -970,7 +970,7 @@ Also see:
 * **Update your review comments if necessary**, based on the discussion you just had. After that, you can submit the review.<br>
 -->
 * **After the tutorial**, if you are unsure about a concern raised by a reviewer, you can post in the [forum]({{ url_forum }}) to seek the opinion of the teaching team.
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>
 <span id="desc_attend_the_PED">
@@ -981,7 +981,7 @@ Also see:
 </span>
 {#====================================================================================================================#}
 <span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Polish the product as per peer-testing results</span>
-<span id="desc_tweak_product_as_per_PED">
+<div id="desc_tweak_product_as_per_PED">
 
 <div class="indented-level2" tags="m--cs2103 m--tic4002">
 <box type="warning" seamless>
@@ -1028,19 +1028,19 @@ Also see:
 {{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="2") }}
 
 * As before, you may split this milestone into smaller iterations if you wish e.g., `{{ version_final }}`, `{{ version_final }}b`, ...
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ppp">{{ icon_individual }} Draft the PPP</span>
-<span id="desc_draft_the_ppp">
+<div id="desc_draft_the_ppp">
 
 * **Create the first version of your _Project Portfolio Page (PPP)_**.<br>
   Reason: ==Each member needs to create a PPP== to describe your contribution to the project.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_prepare_for_demo">{{ icon_team }} ~~Prepare for the demo rehearsal~~</span>
-<span id="desc_prepare_for_demo">
+<div id="desc_prepare_for_demo">
 
 <div class="indented-level2">
 Not applicable this semester
@@ -1054,32 +1054,32 @@ Not applicable this semester
 
 \{\{ embed_topic("tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → Final Demo (extract)", "3", indent="2") }}
 -->
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_prepare_final_deliverables">{{ icon_team }} Prepare final deliverables</span>
-<span id="desc_prepare_final_deliverables">
+<div id="desc_prepare_final_deliverables">
 
 * Final deliverables are due early next week. You are advised to start preparing them well in advance of the submission deadline as any deadline overruns can result in penalties.
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_double_check_reposense_compatibility">{{ icon_team }} Double-check RepoSense compatibility</span>
-<span id="desc_double_check_reposense_compatibility">
+<div id="desc_double_check_reposense_compatibility">
 
 * {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct.
 
 {{ embed_topic("tp-tasks.mbdf#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + version_final + " → Making the Code RepoSense-Compatible", "1", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_do_final_tweaks">{{ icon_individual }} Do final polish-ups</span>
-<span id="desc_do_final_tweaks">
+<div id="desc_do_final_tweaks">
 
 * Continue with any remaining bug fixing and test/code-quality/documentation improvements.
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
-<span id="desc_submit_final_deliverables">
+<div id="desc_submit_final_deliverables">
 
 * **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 2359** unless stated otherwise.
 * {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
@@ -1164,18 +1164,18 @@ Not applicable this semester
 * {{ icon_team }} **Product Website**: Update website (home page,<span tags="m--cs2103 m--tic4002"> `Ui.png`,</span> `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "3", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_final_milesone">{{ icon_team }} Wrap up the milestone</span>
-<span id="desc_wrap_up_final_milesone">
+<div id="desc_wrap_up_final_milesone">
 
 * As usual, wrap up the milestone on GitHub. Note that the deadline for this is the same for everyone (i.e., does not depend on your tutorial).
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_demo_the_product">{{ icon_team }} Submit the demo video</span>
-<span id="desc_demo_the_product">
+<div id="desc_demo_the_product">
 
-<span id="demo-instructions" >
+<div id="demo-instructions" >
 
 <div class="indented-level2">
 
@@ -1193,11 +1193,11 @@ Not applicable this semester
   * Any delay in starting the presentation is deducted out of your time allotment %%e.g., if you are scheduled to demo at 11.05-11.23 am (i.e., 18 minutes), you'll have to stop at 11.23 am even if you start at 11.10 am.%%
 * You should bring your own adapter if the display adapters available in your tutorial venue don't work for you.
 -->
-</span>
-</span>
+</div>
+</div>
 {#====================================================================================================================#}
 <span id="heading_prepare_for_PE">{{ icon_individual }} Prepare for the practical exam</span>
-<span id="desc_prepare_for_PE">
+<div id="desc_prepare_for_PE">
 
 <div class="indented-level2">
 
@@ -1211,15 +1211,15 @@ Not applicable this semester
 <include src="tp-testing.mbdf#testingPreparations" var-pe_active_tab="1"/>
 </panel>
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PE">{{ icon_individual }} Attend the practical exam</span>
-<span id="desc_attend_the_PE">
+<div id="desc_attend_the_PE">
 
 * Attend the practical test, to be done during the lecture.
 
 {{ embed_topic("tp-pe.md#tp-practicalexam", "Admin " + icon_embedding + " tP → Practical Exam", "3", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 
 {% macro show_tp_page(week_num) %}

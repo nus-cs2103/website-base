@@ -2,7 +2,7 @@
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Overview</span>
 
-<span id="pe-overview">
+<div id="pe-overview">
 
 * **The upfront objective of the PE is to increase the rigor of project grading.** Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
 * **PE mainly evaluates your testing skills**, done as the following two-parts:
@@ -24,7 +24,7 @@
 
 {{ embed_topic("tp-grading-bugs.mbdf#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "3", indent="4") }}
 
-</span>
+</div>
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Preparation</span>
 
@@ -230,43 +230,14 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 <tab header="Not using CATcher">
 <div class="indented-less">
 
-<markdown>
-<span id="warning-use-catcher">
+<div id="warning-use-catcher">
 
 <box type="wrong">
 
 **You must use CATcher. You are strictly prohibited from editing PE bug reports using the GitHub Web interface** as it can can render bug reports unprocessable by CATcher, sometimes in an irreversible ways, and can affect the entire class. Please contact the prof if you are unable to use CATcher for some reason.
 </box>
-</span>
+</div>
 
-<!--
-* Go to the [dev-response issue tracker]({{ url_module_org }}/pe-dev-response)
-* Use `tutorial.*` and `team.*` labels to filter bug reports your team received.
-* **Do not edit the subject or the description.** Your response (if any) should be added as a comment.
-* Add a comment using the following exact template.
-```markdown
-# Team's Response
-{replace this with your response}
-
-## Duplicate status (if any):
-
-```
-Here is an example:
-```markdown
-# Team's Response
-
-Yes this is a bug. But it is a duplicate.
-* Changed the bug type because this is just a bug in the UG.
-* Lowered the severity because users can still use the feature.
-
-## Duplicate status (if any):
-Duplicate of #67
-```
-* Do not close the bug report after you are done processing it.
-* Use the exact `Duplicate of #123` format to indicate duplicates.
-* There should be exactly one comment per issue. If there are multiple comments, the last one will be taken for processing.
--->
-</markdown>
 </div>
 </tab>
 </tabs>
@@ -391,24 +362,8 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 <div class="indented-less">
 
-<markdown>
 <include src="tp-pe.mbdf#warning-use-catcher" />
-
-<!--
-* When the phase has been announced as open, go to your `pe` repo.
-* For the issues listed, go to the details, and read the bot's comment containing the team's response.
-* If you disagree with any of the items listed in that comment, tick on the `[ ] I disagree` tick box. ==Edit the comment (do not add a new comment)== to replace the `[replace this with your reason]` with your reasoning. Here is an example:<br>
-</markdown>
-
-```
-Team chose ['response.IssueUnclear']
-
-- [x] I disagree
-
-**Reason for disagreement:** I think one can easily reproduce the problem by following the steps I gave.
-```
 </div>
--->
 </tab>
 </tabs>
 </div>

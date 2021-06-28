@@ -7,7 +7,7 @@
 
 ****Timing/venue****:
 
-<include src="../_module-{{ module }}/timetables.mbdf#lectures-s{{ S }}" inline />
+<include src="../_module-{{ module }}/timetables.mbdf#lectures-s{{ S }}" />
 
 <div tags="m--tic4001 m--tic4002" class="indented">
 

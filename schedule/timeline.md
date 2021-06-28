@@ -1,8 +1,5 @@
 <frontmatter>
 title: "Timeline"
-header: header.md
-footer: footer.md
-head: scheduleHead.md
 pageNav: 3
 </frontmatter>
 

@@ -1,7 +1,6 @@
 <frontmatter>
 title: "Project Duke"
-header: header.md
-siteNav: se-book-adapted-sitenav.md
+layout: textbook.md
 pageNav: 4
 </frontmatter>
 

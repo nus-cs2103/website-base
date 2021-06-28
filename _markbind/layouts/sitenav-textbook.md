@@ -1,6 +1,5 @@
-<navigation>
 {% import "se-book-adapted/config.njk" as config with context %}
-
+<site-nav>
 * [Home :glyphicon-home:, printable versions {{ icon_print }}]({{baseUrl}}/se-book-adapted/index.html)
 {% for section in config.topics %}
 * **{{ section.heading }}**
@@ -17,4 +16,4 @@
   * [Combined Exercises]({{ baseUrl }}/se-book-adapted/common/exercises.html)
 {% endif %}
   * [List of Definitions]({{ baseUrl }}/se-book-adapted/common/definitions.html)
-</navigation>
+</site-nav>

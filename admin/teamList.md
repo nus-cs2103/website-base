@@ -2,9 +2,6 @@
 
 <frontmatter>
 title: "tP Teams List"
-header: header.md
-footer: footer.md
-head: scheduleHead.md
 pageNav: 2
 </frontmatter>
 

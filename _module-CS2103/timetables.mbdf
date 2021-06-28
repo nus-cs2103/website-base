@@ -1,6 +1,6 @@
 <span id="lectures-s1">
- Module                 | Venue    | Time
----------------------- | -------- | ----
+
+{{ lecture_table_headers | trim }}
 {{ module }}   | ~~LT19~~            | Friday **1200**-1400
 {{ module }}T | ~~LT19~~            | Friday **1600**-1800
 
@@ -9,12 +9,14 @@
 </span>
 
 <span id="lectures-s2">
- Module                 | Venue    | Time
----------------------- | -------- | ----
+
+{{ lecture_table_headers | trim }}
 {{ module }}/T | ~~ICube Auditorium~~ | **1400**-1600
 </span>
 
 <span id="tutorials-s1">
+
+{{ tutorial_table_headers | trim }}
 {{ MT | safe }} | | **W**ed  **10**:00 | ~~%%LG02%%~~ | **`CS2103T-W10`**|
 {{ MT | safe }} | | **W**ed  **11**:00 | ~~%%LG03%%~~ | **`CS2103T-W11`**|
 {{ MT | safe }} | | **W**ed  **12**:00 | ~~%%LG04%%~~ | **`CS2103T-W12`**|
@@ -42,6 +44,8 @@
 </span>
 
 <span id="tutorials-s2">
+
+{{ tutorial_table_headers | trim }}
 {{ MT | safe }} | | **W**ed  **10**:00 | ~~%%LG01%%~~ | **`CS2103T-W10`**| Damith, Abhiman
 {{ MT | safe }} | | **W**ed  **12**:00 | ~~%%LG02%%~~ | **`CS2103T-W12`**| Aaron, Danny
 {{ MT | safe }} | | **W**ed  **13**:00 | ~~%%LG04%%~~ | **`CS2103T-W13`**| Wilfred, Danny
