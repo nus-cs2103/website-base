@@ -1,9 +1,6 @@
 <frontmatter>
 title: "Programming Basics (with Python)"
-header: header.md
-footer: footer.md
-head: adminHead.md
-siteNav: programming-sitenav.md
+layout: python.md
 </frontmatter>
 
 <div class="website-content" id="main">

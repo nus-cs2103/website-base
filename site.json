@@ -53,7 +53,7 @@
     }
   ],
   "intrasiteLinkValidation": {
-    "enabled": true
+    "enabled": false
   },
   "enableSearch": true,
   "headingIndexingLevel": 5,

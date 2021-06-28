@@ -4,5 +4,5 @@
 </head-bottom>
 
 <include src="header.md" />
-<include src="body.md" var-file="textbook"/>
+<include src="body.md" var-file="textbook" var-title="SE Textbook"/>
 <include src="footer.md" />

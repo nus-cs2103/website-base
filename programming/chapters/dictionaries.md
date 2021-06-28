@@ -1,9 +1,6 @@
 <frontmatter>
 title: "Python Basics: Dictionaries"
-header: header.md
-footer: footer.md
-head: adminHead.md
-siteNav: programming-sitenav.md
+layout: python.md
 pageNav: 4
 </frontmatter>
 
