@@ -1,8 +1,5 @@
 <frontmatter>
 title: "Admin Info"
-header: header.md
-footer: footer.md
-head: adminHead.md
 pageNav: 2
 </frontmatter>
 
