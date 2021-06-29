@@ -63,8 +63,7 @@ You may develop any product provided it is meant for users who can type fast, an
 {{ embed_topic("tp-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Contstraints → Recommendation-CLI-First", "2", indent="1") }}
 <p/>
 
-<div id="examples" hidden>
-
+{% set morph_examples %}
   For example, an app to manage one of these:{% if module == "CS2113" or module == "TIC4001" %}
     * Contact details{% endif %}
     * Bookmarks of websites
@@ -76,7 +75,7 @@ You may develop any product provided it is meant for users who can type fast, an
     * Emails, possibly from different accounts
     * Multiple types of related things %%e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
     * ...
-</div>
+{% endset %}
 
 <div tags="m--cs2103 m--tic4002">
 
@@ -92,7 +91,7 @@ You may develop any product provided it is meant for users who can type fast, an
 </div>
 
 * **Direction 2: Morph** AB3 any direction you wish.
-  * <include src="tp-expectations.md#examples" trim inline />
+  * {{ morph_examples | trim }}
 
 <div class="indented-level2">
 
@@ -104,7 +103,7 @@ Weigh the pros/cons and choose the one that suits you. Note that ==**creating a 
 </div>
 <div tags="m--cs2113 m--tic4001">
 
-* <include src="tp-expectations.md#examples" trim inline />
+* {{ morph_examples | trim }}
 </div>
 </span>
 
