@@ -1,8 +1,8 @@
 <div id="flex-body">
-{% if not (te3201 and file == 'admin')%}
+{% if file %}
 <nav id="site-nav" class="fixed-header-padding">
 <div class="site-nav-top">
-<div class="font-weight-bold mb-2" style="font-size: 1.25rem;">{{ title }}</div>
+<div class="font-weight-bold mb-2" style="font-size: 1.25rem;">{{ sitenav_title }}</div>
 </div>
 <div class="nav-component slim-scroll">
 <include src="sitenav-{{ file }}.md" />

@@ -1,5 +1,6 @@
 <frontmatter>
 title: "Timeline"
+layout: schedule.md
 pageNav: 3
 </frontmatter>
 
