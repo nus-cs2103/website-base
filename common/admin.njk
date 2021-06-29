@@ -17,7 +17,7 @@ pageNav: 4
 
 
 {% macro show_admin_pagetop(topics, current_topic_id) %}
-{% for topic in topics %}
+{% for topic in topics %}
 {% if topic.id == current_topic_id %}
   {{ show_admin_pagetop_for_topic(topics, topic) }}
 {% endif %}
@@ -38,20 +38,20 @@ pageNav: 4
 {# this macro has extra complications in order to avoid a line break between the two spans. Assumes at least two topics. #}
 {% macro show_next_previous(topics, current_topic_id) -%}
 
-{% set linked_topics = [] %}
-{% for topic in topics %}
+{% set linked_topics = [] %}
+{% for topic in topics %}
 {% if topic.level in [1,2] %}
-{% set linked_topics = (linked_topics.push(topic), linked_topics) %}
+{% set linked_topics = (linked_topics.push(topic), linked_topics) %}
 {% endif %}
 {% endfor %}
 
-{% for topic in linked_topics %}
+{% for topic in linked_topics %}
 {% if topic.id == current_topic_id %}
   {% if not loop.first %}
-    {% set  previous_topic = linked_topics[loop.index0 - 1] %}
+    {% set previous_topic = linked_topics[loop.index0 - 1] %}
   {% endif %}
   {% if not loop.last %}
-    {% set  next_topic = linked_topics[loop.index0 + 1] %}
+    {% set next_topic = linked_topics[loop.index0 + 1] %}
   {% endif %}
 {% if loop.first %}
 {{ show_next(next_topic) }}
@@ -71,9 +71,9 @@ pageNav: 4
 </div>
 {% endmacro %}
 
-{% set topics = admin_topics %}
+{% set topics = admin_topics %}
 
-{% set faqs = [
+{% set faqs = [
   {id: "admin-faq-whereIsEverything", title: "Where is everything?", priority: 1},
   {id: "admin-faq-tVsNonT", title: "What are the differences between " + module + "T and " + module + "?", priority: 4},
   {id: "admin-faq-highWorkload", title: "Why the workload is so high?", priority: 4},
@@ -89,7 +89,7 @@ pageNav: 4
   {id: "admin-faq-cs2101Differences", title: "Why submission requirements differ between " + module + "T and CS2101?", priority: 4}
 ]%}
 
-{% set policies = [
+{% set policies = [
   {id: "policy-followingInstructions", title: "Policy on following instructions", priority: 2},
   {id: "policy-teamSize", title: "Policy on grading smaller/larger teams", priority: 4},
   {id: "policy-workDistribution", title: "Policy on project work distribution", priority: 3},
@@ -105,10 +105,10 @@ pageNav: 4
 
 
 {% macro show_title(current_topic_id, topics) -%}
-{% for topic in topics  %}
+{% for topic in topics %}
 {% if topic.id == current_topic_id %}
-{% set hashes = "#" %}
-{{ hashes }} <span class="display-4">{{ topic.title }}</span> <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) if topic.priority }} {% for tag in topic.tags %}<span class="badge badge-pill badge-light ">#{{ tag }}</span> {% endfor %}</span>
+{% set hashes = "#" %}
+{{ hashes }} <span class="display-4">{{ topic.title }}</span> <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) if topic.priority }} {% for tag in topic.tags %}<span class="badge badge-pill badge-light ">#{{ tag }}</span> {% endfor %}</span>
 {% endif %}
 {% endfor %}
 {%- endmacro %}

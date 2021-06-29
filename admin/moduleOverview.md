@@ -4,8 +4,8 @@
 <div id="main">
 
 <!-- =============================================================================== -->
-<span tags="m--cs2103">
-<big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big>
+<div tags="m--cs2103">
+<p class="lead text-secondary"><big>A balanced, iterative, and brown-field introduction to Software Engineering...</big></p>
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
@@ -52,11 +52,11 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 <br>
 <panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
-</span>
+</div>
 <!-- =============================================================================== -->
-<span tags="m--cs2113">
+<div tags="m--cs2113">
 
-<big><p class="lead text-secondary">An iterative introduction to Software Engineering...</p></big>
+<p class="lead text-secondary"><big>An iterative introduction to Software Engineering...</big></p>
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
@@ -69,11 +69,11 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 <include src="moduleOverview.md#meaning-of-iterative-topics" />
 
 <panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
-</span>
+</div>
 <!-- =============================================================================== -->
-<span tags="m--tic4001">
+<div tags="m--tic4001">
 
-<big><p class="lead text-secondary">A Software Engineering practicum module focusing on <tooltip content="projects starting from scratch, as opposed to projects starting from an existing code base">greenfield</tooltip> team projects...</p></big>
+<p class="lead text-secondary"><big>A Software Engineering practicum module focusing on <tooltip content="projects starting from scratch, as opposed to projects starting from an existing code base">greenfield</tooltip> team projects...</big></p>
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="650">
 
@@ -87,11 +87,11 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 **At the end of this module** you are expected to be ready for <tooltip content="Software Engineering Practicum II">TIC4002</tooltip> in which you'll tackle a <tooltip content="starting with an existing code base">brownfield</tooltip> team project somewhat larger than the project you did in this module.
 
-</span>
+</div>
 <!-- =============================================================================== -->
-<span tags="m--tic4002">
+<div tags="m--tic4002">
 
-<big><p class="lead text-secondary">A Software Engineering practicum module focusing on <tooltip content="starting with an existing code base">brownfield</tooltip> team projects...</p></big>
+<p class="lead text-secondary"><big>A Software Engineering practicum module focusing on <tooltip content="starting with an existing code base">brownfield</tooltip> team projects...</big></p>
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="650">
 
@@ -103,7 +103,7 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 * **The practice side, you will first continue to ramp up your technical skills by improving on the individual project** that you did in TIC4001.<br>
   **Then, you will move to a team project** in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 KLoC) generic product -- and enhance it into a better product or evolve it into a different product.
 
-</span>
+</div>
 
 
 </div>
