@@ -39,13 +39,13 @@ pageNav: 1
     notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 4},
     tutorial: {name: "Lecture", file: "tutorial", icon: icon_tab_tutorial, pagenav: 4},
     topics: {name: "Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
-    admin: {name: "Admin Info", file: "admin", icon: icon_tab_admin_info, pagenav: 4},
+    admin: {name: "Admin", file: "admin", icon: icon_tab_admin_info, pagenav: 4},
     project: {name: "Project", file: "project", icon: icon_tab_project, pagenav: 4}
   } %}
 {% else %}
   {% set categories = {
     notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 4},
-    admin: {name: "Admin Info", file: "admin", icon: icon_tab_admin_info, pagenav: 4},
+    admin: {name: "Admin", file: "admin", icon: icon_tab_admin_info, pagenav: 4},
     topics: {name: "Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
     project: {name: "Project", file: "project", icon: icon_tab_project, pagenav: 4},
     tutorial: {name: "Tutorial", file: "tutorial", icon: icon_tab_tutorial, pagenav: 4}
@@ -62,7 +62,7 @@ pageNav: {{ categories[category].pagenav }}
 <ul class="pagination mt-2">
 {%- set previous_status = " disabled" if week_num == 1 else "" -%}
 {%- set next_status = " disabled" if week_num == 13 else "" -%}
-<li class="page-item{{ previous_status }}"><a class="page-link" href="../week{{ 1 if week_num == 1 else (week_num - 1) }}/"><md>:glyphicon-chevron-left: **Previous Week**</md></a></li>
+<li class="page-item{{ previous_status }}"><a class="page-link" href="../week{{ 1 if week_num == 1 else (week_num - 1) }}/"><md>:glyphicon-chevron-left: **Prev. Week**</md></a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
 {% for c,v in categories %}
   {%- set is_active = " active" if categories[category] == v else "" -%}
