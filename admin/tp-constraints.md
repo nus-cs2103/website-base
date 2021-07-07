@@ -148,7 +148,7 @@ Following from the _Constraint-Typing-Preferred_, if the app is optimized for th
 Therefore, the input to the app needs to be primarily CLI. <span tags="m--cs2103 m--tic4002">The GUI is used primarily to give visual feedback to the user.</span><span tags="m--cs2113 m--tic4001">If you do implement a GUI, that GUI should primarily be used to give visual feedback to the user.</span> While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br>
 Also keep in mind:
 * Regular typing is usually faster than using key combinations.
-* <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert users.<br>
+* <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, it is recommended that you also provide a one-shot equivalent for regular/expert users.<br>
 {%- endcall %}
 
 <box type="warning">

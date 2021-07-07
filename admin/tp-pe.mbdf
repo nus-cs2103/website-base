@@ -46,11 +46,17 @@
 
 **PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.
 
-* **Proctoring will be done via Zoom.** No admission if the following requirements are not met.
-  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external web cam for your PC.{% if cs2103 %}
+* **Proctoring will be done via Zoom.** No admission if the following requirements are not met.{% if cs2103 %}
+  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external web cam for your PC.
   * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true)==. e.g.,
     * `[M48] John Doe` (`M18` is the seat number)
-    * `[M48][PC] John Doe` (for the PC, if using a phone as well){% endif %}
+    * `[M48][PC] John Doe` (for the PC, if using a phone as well){% elseif cs2113 %}
+  * You will be ==notified of the zoom session== that you should log in at least 1 day in advance via LumiNUS. ==**Remember: we will NOT use the same zoom session as the lectures**==
+  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external web cam for your PC.
+  * Set your zoom display name to show your actual name as shown on LumiNUS.
+  * **Add `[PC]` in front of the _first name_ of your zoom display name on the pc**.
+    * E.g., `John Doe` (for the zoom session connected via the phone)
+    * `[PC] John Doe` (for the zoom session on PC){% endif %}
   * **Set your camera** so that _all_ the following are visible:
     1. your face (side view, ==no mask==)
     1. your hands
@@ -58,7 +64,7 @@
     1. the computer screen<br>
     <img src="images/zoomCameraExample.png" width="362"/>
 * **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.
-* **In case of Zoom outage**, we'll fall back on MS Teams (MST). Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).
+* **In case of Zoom outage**, we'll fall back on MS Teams (MST).{% if cs2103 %} Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).{% elseif cs2113 %} Make sure you have MST running; proctoring will be done via individual tutorial MST teams that we have been using.{% endif %}
 * **Recording the screen is not required.**
 * **You are allowed to use head/ear phones.**
 * **==Only one screen== is allowed.** If you want to use the secondary monitor, you should switch off the primary monitor. The screen being used should be fully visible in the Zoom camera view.

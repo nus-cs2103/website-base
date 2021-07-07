@@ -3,12 +3,6 @@
 {{ topic_preamble("Sequence Diagrams: Basics") }}
 
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_followup("Sequence Diagrams: Intermediate-Level", reuse=false) %}
-After you have learned how to interpret sequence diagrams, you can watch this:
-
-{{ panopto("5816a49a-2f87-4e02-9aba-ab8400c41831", "A video lecture showing how to draw a sequence diagram to match code is given:") }}
-{% endcall %}
-<!-- ---------------------------------------------------------------------------- -->
 {{ topic_preamble("Design Patterns") }}
 {{ topic_preamble("designPatterns-introduction-what") }}
 {{ topic_preamble("Singleton pattern") }}

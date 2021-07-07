@@ -69,7 +69,7 @@
               {name: "dependencies", heading: "Dependencies", priority: "3"},
               {name: "composition", heading: "Composition", priority: "3"},
               {name: "aggregation", heading: "Aggregation", priority: "3"},
-              {name: "associationClasses", heading: "Association Classes", priority: "-1"}
+              {name: "associationClasses", heading: "Association Classes", priority: "4"}
             ]
           }
         ]
@@ -1015,38 +1015,38 @@
       },
       {
         name: "libraries",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"},
-              {name: "how", heading: "How", priority: "2"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "how", heading: "How", priority: "4"}
             ]
           }
         ]
       },
       {
         name: "frameworks",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "frameworksVsLibraries", heading: "Frameworks vs Libraries", priority: "3"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "frameworksVsLibraries", heading: "Frameworks vs Libraries", priority: "4"}
             ]
           }
         ]
       },
       {
         name: "platforms",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           }
         ]
@@ -1513,9 +1513,9 @@
           },
           {
             name: "associationClasses",
-            priority: "-1",
+            priority: "4",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "-1"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
@@ -1708,7 +1708,7 @@
             level_three_topics: [
               {name: "singleResponsibilityPrinciple", heading: "Single Responsibility Principle", priority: "3"},
               {name: "openClosedPrinciple", heading: "Open-Closed Principle", priority: "-1"},
-              {name: "liskovSubstitutionPrinciple", heading: "Liskov Substitution Principle", priority: "-1"},
+              {name: "liskovSubstitutionPrinciple", heading: "Liskov Substitution Principle", priority: "4"},
               {name: "interfaceSegregationPrinciple", heading: "Interface Segregation Principle", priority: "-1"},
               {name: "dependencyInversionPrinciple", heading: "Dependency Inversion Principle", priority: "-1"},
               {name: "solidPrinciples", heading: "SOLID Principles", priority: "-1"},

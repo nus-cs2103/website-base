@@ -8,9 +8,11 @@ pageNav: 2
 # tP Teams
 
 <!--
-The full team details page is not available yet. In the meantime ==see [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vS2dnrQeML5iWI4aV01Du7qqZEWrn2FvsyUNM21nTb6Nt67iRvbOJ-RjzddY32fQQZQVWuCyYaIieZC/pubhtml?gid=2018493570&single=true)== for the temporary list.
+This page will be populated when you start your tP in Week7
 
+The full team details page is not available yet. In the meantime ==see [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vS2dnrQeML5iWI4aV01Du7qqZEWrn2FvsyUNM21nTb6Nt67iRvbOJ-RjzddY32fQQZQVWuCyYaIieZC/pubhtml?gid=2018493570&single=true)== for the temporary list.
 -->
+
 
 {% macro get_team_start(team_id, team_org, team_repo, team_website) %}
 <div class="container">

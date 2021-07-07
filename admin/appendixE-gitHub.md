@@ -92,9 +92,9 @@ The tP project template given to you is a variation of the iP repo you used for 
 {% endif %}
 1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
    Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
-1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/{{ tp_repo_name }}]({{url_module_org}}/{{ tp_repo_name }})] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ example_team_id }}] Contact List Pro`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
+1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/{{ tp_repo_name }}]({{url_module_org}}/{{ tp_repo_name }})] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ example_team_id }}] InsureList`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
    Please fill in these details as specified because they are used by our grading scripts.
-   * **PR subject: the name of your product** e.g., `InsureList`
+   * **PR subject: the name of your product** e.g., `[{{ example_team_id }}] InsureList`
    * **Description: a 1-2 sentence overview** (plain text only, no formatting or links) of your project indicating the target user and the value proposition e.g., `InsureList helps insurance agents manage detail of their clients. It is optimized for CLI users so that frequent tasks can be done faster by typing in commands.`
 
 </div>
@@ -323,6 +323,69 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
   * **Milestone closed.**<br>
     <pic src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
 
+</div>
+
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<div tags="m--cs2113" id="getting-started-ghclassroom">
+
+## Getting started with GitHub Classroom
+
+* Retrieve the links to a particular assignment from the GitHub Classroom exericses page.
+  {{ embed_topic("githubClassroomInfo.md#ghclassroom-exercises-list" ,"Admin " + icon_embedding + " **GitHub Classroom exercises**", "2", indent="1", status="collapsed") }}
+
+<div id="githubclassroom-registering">
+
+#### Registering in GitHub Classroom
+
+* ==**When you start the assignments, for the first time**== you will be asked to select your identifier to associate your GitHub username to you.<br>
+  <img src="{{baseUrl}}/admin/images/gitHubClassroomInvite.png" width="700"/><br>
+  Find your identifier correctly and click on it. GitHub Classroom will ask you to confirm, click OK. <br>
+  <img src="{{baseUrl}}/admin/images/gitHubClassroomConfirm.png" width="360"/><br>
+     * ==If you missed this step at the first assignment==, GitHub Classroom will ask you to associate your GitHub username to your identifier again when you accept subsequent assignments.
+     * You need to associate the identifier with your GitHub username _only once_; once you have linked the two, nothing needs to be done for future assignments.
+     * Upon linking, we can track your progress, _including the past submissions_.
+    
+</div>
+
+<div id="githubclassroom-accepting-assignment">
+
+#### Accepting an assignment
+
+* Upon opening the assignment, you will be presented with a screen to accept it. <br>
+  <img src="{{baseUrl}}/admin/images/gitHubClassroomAccept.png" width="700"/><br>
+  
+* Click `Accept this assignment`; wait for a moment and refresh the subsequent page.
+
+* Here you will be presented with the link to your assignment repository <br>
+  <img src="{{baseUrl}}/admin/images/gitHubClassroomReady.png" width="700"/><br>
+  
+</div>
+
+<div id="githubclassroom-workingon-assignment">
+
+#### Working on the assignment
+
+* Click on the assignment repository, and you will land in the familiar GitHub repository page.
+
+* Clone the repository to your machine.
+
+* Open the project as a `gradle project` in IntelliJ<br>
+  <img src="{{baseUrl}}/admin/images/importAsGradle.png" width="700"/><br>
+  and select `Open as Project`<br>
+  <img src="{{baseUrl}}/admin/images/openAsProject.png" width="320"/><br>
+  
+* Complete the assignment by adding necessary code/additional files.
+
+* Test using the given `TestMain.java` file under `src/test/java` <br>
+  <img src="{{baseUrl}}/admin/images/clickTestMain.png" width="400"/><br>
+  If `Run 'TestMain'` doesn't appear for you, open the `TestMain.java` file and select Run (from the menubar on top) -> Run<br>
+  You will be asked to select the configuration. Here select the Gradle configuration (the one with an elephant icon)<br>
+  <img src="{{baseUrl}}/admin/images/testMainConfiguration.png" /><br>
+  
+* Once the tests pass, you can commit and push to your assignment repository. That would be a complete submission.
 </div>
 
 </div>
