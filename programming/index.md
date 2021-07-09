@@ -1,6 +1,6 @@
 <frontmatter>
 title: "Programming Basics (with Python)"
-layout: python.md
+layout: python-layout.md
 </frontmatter>
 
 <div class="website-content" id="main">

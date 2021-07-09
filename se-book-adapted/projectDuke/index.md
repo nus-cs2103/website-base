@@ -1,6 +1,6 @@
 <frontmatter>
 title: "Project Duke"
-layout: textbook.md
+layout: textbook-layout.md
 pageNav: 4
 </frontmatter>
 

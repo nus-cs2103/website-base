@@ -1,5 +1,5 @@
 <frontmatter>
-layout: schedule.md
+layout: schedule-layout.md
 title: "Schedule"
 pageNav: 1
 </frontmatter>
@@ -54,7 +54,7 @@ pageNav: 1
 
 <frontmatter>
 title: "Week {{ week_num }} - {{ categories[category].name }}"
-layout: schedule.md
+layout: schedule-layout.md
 pageNav: {{ categories[category].pagenav }}
 </frontmatter>
 
@@ -279,6 +279,7 @@ Information relevant to the week's {{ "lecture" if tic4001 or tic4002 else "tuto
 
 
 {% macro show_week_project_page(week_num) %}
+<div class="website-content">
 {{ show_week_pagetop(week_num, "project") }}
 
 {% if week_num == 1 %}
@@ -301,6 +302,7 @@ Programming topics allocated to the week will appear in this tab.
 </box>
 {% endif %}
 <include src="../programming-topics.mbdf#week{{ week_num }}" optional />
+</div>
 </div>
 {% endmacro %}
 

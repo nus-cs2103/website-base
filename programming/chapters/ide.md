@@ -1,6 +1,6 @@
 <frontmatter>
 title: "Python Basics: Using an IDE"
-layout: python.md
+layout: python-layout.md
 pageNav: 4
 </frontmatter>
 

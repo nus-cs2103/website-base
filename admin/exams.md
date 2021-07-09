@@ -41,7 +41,7 @@ The final exam has two types of questions:
 * You will be given a practice exam paper (smaller than the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
 </div>
 
-<div tags="-m--cs2113">
+<div tags="m--cs2103 m--tic2002">
 
 * The exam will be done online.
 * ==**We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)**==, combined with the deviations/refinements given in the section below. Please read the SOP carefully and ensure you follow all instructions.

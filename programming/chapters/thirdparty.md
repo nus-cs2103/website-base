@@ -1,6 +1,6 @@
 <frontmatter>
 title: "Python Basics: Installing 3rd Party Libraries"
-layout: python.md
+layout: python-layout.md
 pageNav: 4
 </frontmatter>
 

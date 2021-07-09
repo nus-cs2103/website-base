@@ -101,7 +101,7 @@
 {%  if indent != "0" %}<div class="indented-level{{ indent }}">{% endif %}
 <panel type="{{ type }}" header="{{ title | safe }} {{ stars[level] | safe }}" class="embedding" {{ status }} >
 
-<include src="{{ source }}" />
+<include src="{{ source }}" omitFrontmatter />
 </panel>
 {%  if indent != "0" %}</div><p/>{% endif %}
 

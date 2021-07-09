@@ -1,6 +1,6 @@
 <frontmatter>
 title: "Combined Exercises"
-layout: textbook.md
+layout: textbook-layout.md
 </frontmatter>
 {% import "se-book-adapted/config.njk" as config with context %}
 

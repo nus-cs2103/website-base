@@ -22,7 +22,7 @@
 {% macro show_toc() %}
 <frontmatter>
 title: "Textbook"
-layout: textbook.md
+layout: textbook-layout.md
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">

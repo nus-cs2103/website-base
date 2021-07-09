@@ -1,6 +1,6 @@
 <frontmatter>
 title: "Python Basics: Error Handling"
-layout: python.md
+layout: python-layout.md
 pageNav: 4
 </frontmatter>
 

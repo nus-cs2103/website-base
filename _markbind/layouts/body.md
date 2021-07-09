@@ -5,7 +5,7 @@
 <div class="font-weight-bold mb-2" style="font-size: 1.25rem;">{{ sitenav_title }}</div>
 </div>
 <div class="nav-component slim-scroll">
-<include src="sitenav-{{ file }}.md" />
+<include src="{{ file }}-sitenav.md" />
 </div>
 </nav>
 {% endif %}
