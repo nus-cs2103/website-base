@@ -45,7 +45,12 @@
 
 <box type="tip" seamless>
 
-You can monitor your iP progress (as detected by our scripts) in the [iP Progress Dashboard]({{ url_ip_progress_dashboard }}) page.
+**You can monitor your iP progress**{.text-success} (as detected by our scripts) in the [iP Progress Dashboard]({{ url_ip_progress_dashboard }}) page.
+</box>
+
+<box type="info" seamless>
+
+**iP serves mostly a _formative_ role in this module**{.text-info} i.e., it aims to ensure everyone has achieved a basic competency level that is a prerequisite to survive the tP (it does not aim to rank you based on strength or differentiate strong programmers from the rest). Hence, almost everyone is expected to receive close to full marks for the iP. Therefore, iP marks is unlikely to make a significant difference in your final grade.
 </box>
 
 </div>

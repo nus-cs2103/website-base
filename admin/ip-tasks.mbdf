@@ -13,7 +13,8 @@
 </div>
 <div id="commit">
 
-* From this point onward, commit code at important points. ==Minimally, commit after completing each increment==.
+* From this point onward, commit code at important points. ==Minimally, commit after completing each increment==.<br>
+  {{ icon_important_big_red }} Remember not to commit `.class` files and any other file that should not be revision controlled.
 </div>
 <div id="tag-push">
 
@@ -140,7 +141,7 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 
 1. Fork [{{ url_module_org }}/{{ ip_repo_name }}]({{ url_module_org }}/{{ ip_repo_name }}).
 1. ==Enable the issue tracker of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
-   {{ icon_tip }} If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues` e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`
+   {{ icon_tip }} If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`
 1. Clone the fork onto your computer.
 1. Set up the project in your IDE as explained in [the README file]({{ url_module_org }}/{{ ip_repo_name }}/blob/master/README.md).<br>
 
@@ -301,7 +302,7 @@ Resources:
 
 ****Why more OOP?****{.text-info}
 
-One the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you that **OOP is not a silver bullet or always the right choice**. While it is the most popular and possibly the right choice for majority of situations, it has plenty of detractors and known problems.
+One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you that **OOP is not a silver bullet or always the right choice**. While it is the most widely used and possibly the right choice for a variety of situations, it may not work well for other situations, and it has plenty of detractors and known problems.
 
 **OOP has been chosen as the primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}
 
@@ -545,7 +546,7 @@ This activity is worth `2x2=4` participation points.
 **If you wish to cite the iP in your resume**, you can do more to make it look more impressive to a potential employer. These improvements are not considered for grading and can be done after the semester is over. Some ideas:
 * **Improve the GUI**: Make the UI look nicer, unique, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
 * **Add a demo** video or an animated gif to your user guide to show how the app works.
-* **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge badge-light badge-pill text-monospace">**</>**</div>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
+* **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge badge-light badge-pill text-monospace">**&lt;/>**</span>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
 * **Add more features.**
 
 {{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other modules, pet projects).

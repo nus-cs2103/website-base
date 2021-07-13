@@ -83,7 +83,9 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 * Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
 * Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
-  If you are on Windows, use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.
+  {{ icon_info }} If you are on Windows, use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.<br>
+  {{ icon_info }} If the JAR file name has spaces in it, remember to surround it with double quotes.<br>
+  e.g., `java -jar "Name With Spaces.jar"`
 * **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via MS Teams, and failing that, via Zoom chat) to receive a _fallback_ team to test.
 
 

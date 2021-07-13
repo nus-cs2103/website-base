@@ -77,17 +77,18 @@ You may develop any product provided it is meant for users who can type fast, an
     * ...
 {% endset %}
 
-<div tags="m--cs2103 m--tic4002">
+<span tags="m--cs2103 m--tic4002">
 
 * **Direction 1: Evolve** <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app.
   * Some examples:
     * Manage more entity types related to contacts %%e.g. Tasks allocated to contacts%%
     * Contact managing optimized for a specific type of user %%e.g. a sales person managing client contacts%%
+    * Make existing features _really_ strong, worthy of a real product %%e.g., make the commands more natural, make the search feature more powerful, tweak the GUI to be more useful, ...%%
 
 <div class="indented-level2">
 
 * {{ pros }} less changes to existing code at the start of the project (i.e., progress will be smoother at the start), can result in a more mature product with deeper features as the product functionality will be moving forward from the start
-* {{ cons }} less flexibility in product design, less differentiation with other team's projects
+* {{ cons }} less flexibility in product design.
 </div>
 
 * **Direction 2: Morph** AB3 any direction you wish.
@@ -95,12 +96,14 @@ You may develop any product provided it is meant for users who can type fast, an
 
 <div class="indented-level2">
 
-* {{ pros }} more flexibility in the project direction, more room to differentiate from other teams' projects
-* {{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base
+* {{ pros }} more flexibility in the project direction
+* {{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base, morphing is less common in real projects (compared to direction 1)
 </div>
 
-Weigh the pros/cons and choose the one that suits you. Note that ==**creating a novel/unique/interesting product will NOT earn you extra marks**== in this module. While those qualities are important in real world projects, and we do allow you room to go in those directions in this module, they are not the focus of this module<span tags="m--cs2103">&nbsp;%%(there are other modules such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
-</div>
+Weigh the pros/cons and choose the one that suits you. Note that ==**creating a novel/unique/interesting product will NOT earn you extra marks**== in this module. While those qualities are important in real world projects, and we do allow you room to go in those directions in this module, they are not the focus of this module {% if cs2103 %}%%(there are other modules such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
+
+**Our recommendation:**{.text-success} Go with direction 1 unless you have a strong inclination to create a _different_ product. Direction 1 fits both weak and strong programmers, smoother at the start, the risk of schedule overruns is lower (because it can be done in smaller increments all the way, while morphing requires some big changes at the start), and gives you a better chance of reaching a product that is worthy of actual users (as you will not be slowed down by the morphing).
+{% endif %}
 <div tags="m--cs2113 m--tic4001">
 
 * {{ morph_examples | trim }}

@@ -108,6 +108,8 @@ You will receive bonus marks if a high percentage (e.g., >70%) of your bugs are 
 {{ embed_topic("tp-grading-bugs.mbdf#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
 <p/>
 
+* **You may visit the team's project on GitHub during this phase**, for the purpose of verifying the accuracy of documentation %%e.g., to check if a diagram matches the code%%
+
 ##### <span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
 
 * To be submitted via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.

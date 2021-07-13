@@ -13,6 +13,8 @@
 <box>
 
 {{ icon_green_Q }} **Do you agree with the contributions claimed by team members, as stated in their PPP?**
+
+{{ icon_green_Q }} **Rank team members based on their ability/potential to lead a software project team (rank 1 is strongest)**
 <p/>
 
 </box>

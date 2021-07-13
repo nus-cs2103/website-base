@@ -60,6 +60,7 @@ week12: [
   {id: 'tweak_product_as_per_PED'},
   {id: 'draft_the_ppp'},
   {id: 'prepare_for_demo'},
+  {id: 'try_pdf_conversion_early'},
   {id: 'double_check_reposense_compatibility'}
 ],
 week13: [

@@ -59,6 +59,11 @@ After installing Git in a computer, you can set the Git username as follows:
    e.g., `git config --global user.name JohnDoe`
 
 More info about setting Git username is [here](https://help.github.com/articles/setting-your-username-in-git/).
+
+<box type="warning" seamless>
+
+**Caveat against using other Git GUIs**: While we do not _insist_ that you use SourceTree, note that we are unable  to provide any support if you run into any problems while using a different Git GUI.
+</box>
 </div>
 </box>
 
@@ -159,7 +164,12 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 ## Tool: Intellij IDE
 
-You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for module-related programming work. While the use of Intellij is not compulsory, note that module materials are optimized for Intellij. Use other IDEs at your own risk. 
+You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for module-related programming work. While the use of Intellij is not compulsory, note that module materials are optimized for Intellij.
+
+<box type="warning" seamless>
+
+Use other IDEs at your own risk.
+</box>
 
 <box>
 

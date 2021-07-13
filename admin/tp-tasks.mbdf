@@ -552,7 +552,7 @@ Update the following pages in your project repo:
 <div id="desc_add_first_functionality_increment">
 
 * Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).<br>
-  **If you split the iteration into two smaller iterations** of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b` so that the dashboard can track them accurately. %%The reason for naming the earlier milestone as `{{ version_first }}` is so that even if you fail to finish the second one, you can still get credit for reaching `{{ version_first }}` (which is the milestone tracked by grading scripts) -- think of the first iteration as _minimal deliverables for `{{ version_first }}`_ and the second one as _more to do if there is time_.%%
+  **If you split the iteration into two smaller iterations** of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b` so that the dashboard can track them accurately. %%The reason for naming the earlier milestone as `{{ version_first }}` is so that even if you fail to finish the second one, you can still get credit for reaching `{{ version_first }}` (which is the milestone tracked by grading scripts) -- think of the first iteration as _minimal deliverables for `{{ version_first }}`_ and the second one as _more-to-do-if-there-is-time_.%%
 
 * {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%.
 
@@ -641,9 +641,9 @@ Update the following pages in your project repo:
 
 <box type="important" tags="m--cs2113 m--cs2103 m--tic4002" seamless>
 
-{% if cs2113 or tic4002 %}==**This iteration is your last chance to add features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features.** You will <span class="text-danger">not be allowed to add features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only.{% endif %}
+{% if cs2113 or tic4002 %}==**This iteration is your last chance to add features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features.** You will <span class="text-danger">not be allowed to add features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any changes to features done during {{ version_final }} will be penalized.{% endif %}
 
-The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).
+The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the {{ version_final }} later.{% endif %}
 </box>
 <box tags="m--tic4001" type="tip" seamless>
 In the final iteration (i.e., the one after this), you will be doing a lot of additional things e.g., adding documentation.
@@ -1004,7 +1004,7 @@ Also see:
   **A:** Yes, but only if its absence causes the software to mis-behave (i.e., it's omission can be considered a bug).
 * **Q:** Testers have reported a missing feature (or a feature suggestion). Can we add it?<br>
   **A:** Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
-   Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line somewhere as there wasn't a lot of time to implement features.
+   Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
 </box>
 </div>
 
@@ -1071,6 +1071,18 @@ Not applicable this semester
 {{ embed_topic("tp-tasks.mbdf#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + version_final + " → Making the Code RepoSense-Compatible", "1", indent="2") }}
 </div>
 {#====================================================================================================================#}
+<span id="heading_try_pdf_conversion_early">{{ icon_team }} Try PDF conversions early</span>
+<div id="desc_try_pdf_conversion_early">
+
+* Take note of the following project constraint:
+
+{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Contstraints → Constraint-PDF-Friendly", "2", indent="2") }}
+
+* Take note of the following info about the PDF conversion, appearing in next week's project tasks. Particularly, note the suggestion to try PDF conversions early.
+
+{{ embed_topic("tp-tasks.mbdf#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → Caution on PDF conversions", "3", indent="2") }}
+</div>
+{#====================================================================================================================#}
 <span id="heading_do_final_tweaks">{{ icon_individual }} Do final polish-ups</span>
 <div id="desc_do_final_tweaks">
 
@@ -1081,7 +1093,7 @@ Not applicable this semester
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
 <div id="desc_submit_final_deliverables">
 
-* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 2359** unless stated otherwise.
+* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 23:59:00** unless stated otherwise. Note that <span class="text-danger">23:59:01 is considered late</span>, as per the LumiNUS deadline mechanism.
 * {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
@@ -1108,15 +1120,21 @@ Not applicable this semester
 <div class="indented">
 <div id="tip-how-to-convert-to-pdf">
 
-<box type="important" seamless>
+<box id="caution-on-pdf-conversion" type="important" seamless>
 
-**To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
+**Don't take PDF conversion lightly:**{.text-danger} **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
 
 **Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
 
 **Try the PDF conversion early**. If you do it at the last minute, you may not have time to fix any problems in the generated PDF files (such problems are more common than you think).
 </box>
 </div>
+
+<box type="tip" seamless>
+
+**Intangible benefits for early submissions:**{.text-success} Given that using buffers to reduce the risk of deadline overruns is a learning outcome of this module, we strongly encourage setting an internal submission deadline a few hours earlier than the actual deadline. As an incentive, we plan to perform some checks on early submissions and inform you if we found issues with your submission %%(e.g., incorrect file name)%%, thus giving you a chance to fix them before the deadline and avoid a penalty for it.
+
+</box>
 
 <box type="info" seamless>
 
@@ -1131,7 +1149,8 @@ Not applicable this semester
 * {{ icon_team }} **Product**:
   * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.
   * Upload the jar file to LumiNUS.<br>
-    File name: `[team ID][product name].jar` %%e.g. [{{ example_team_id }}][Contacts Plus].jar%%
+    File name: `[team ID][ProductName].jar` %%e.g. [{{ example_team_id }}][ContactsPlus].jar%%<br>
+    {{ icon_important }} Recommended to avoid spaces and special characters in the product name as it can cause problems when running the JAR file using the command line.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
 
@@ -1142,12 +1161,12 @@ Not applicable this semester
 
 
 * {{ icon_team }} **User Guide**: Convert to pdf and upload to LumiNUS.<br>
-  File name: `[TEAM_ID][product Name]UG.pdf`  %%e.g.[{{ example_team_id }}][Contacts Plus]UG.pdf%%
+  File name: `[TEAM_ID][ProductName]UG.pdf`  %%e.g.[{{ example_team_id }}][ContactsPlus]UG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
 
 * {{ icon_team }} **Developer Guide**: submission is similar to the UG<br>
-  File name: `[TEAM_ID][product Name]DG.pdf` %%e.g. [{{ example_team_id }}][Contacts Plus]DG.pdf%%
+  File name: `[TEAM_ID][ProductName]DG.pdf` %%e.g. [{{ example_team_id }}][ContactsPlus]DG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "3", indent="2") }}
 

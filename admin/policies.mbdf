@@ -96,6 +96,10 @@ Penalties:
   * You do not violate the license under which the work has been released. Please  **do not use 3rd-party images/audio** in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.
   * ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ url_forum }}). That way, the whole class get to see what libraries are being used by others.
 
+<box type="important" seamless icon=":fas-exclamation:">
+
+**Automated plagiarism checks ahead!**{.text-danger} From this semester, we'll be using automated plagiarism checks to detect uncredited reuses of content from other CS2103/T tP's i.e., tP's done by other teams in this batch and ==_all_ previous tP's==. These checks will be done _after_ the final submissions. The cases detected will be verified and reported to the university administration for disciplinary action. As you know, NUS enforces a penalty of `F` grade for the entire module (with no option to S/U or withdraw from the module) for plagiarism offenses.
+</box>
 <box>
 
 #### Giving credit for reused work
@@ -131,7 +135,8 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   ```java
   persons = getList()
   //@@author johndoe-reused
-  //Reused from https://stackoverflow.com/a/34646172 with minor modifications
+  //Reused from https://stackoverflow.com/a/34646172
+  // with minor modifications
   Collections.sort(persons, new Comparator<CustomData>() {
       @Override
       public int compare(CustomData lhs, CustomData rhs) {
@@ -145,6 +150,10 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
 
 **Giving credit to AB3 code**: If your project started with the AB3 code and your new code follows a design similar to AB3, that doesn't mean you need to credit AB3 -- this is because a brownfield project is _expected_ to follow existing code where possible, in the interest of consistency. However, don't take credit for existing AB3 code (i.e., ensure such code doesn't appear under your name in the tP code dashboard) unless you have modified that code substantially.
 </div>
+
+**Reuse within the team** %%(e.g., reusing code written by a team member)%% need not be mentioned explicitly. However, you should factor in such reuse when you estimate effort contributed by each team member.
+
+**Reuse of documentation** %%(e.g., reusing a UG/DG section)%% is no different from code reuse. Such reuse should be credited as well.
 </box>
 
 <modal large header="Admin {{ icon_embedding }} Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">

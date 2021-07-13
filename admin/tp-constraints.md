@@ -92,6 +92,22 @@ Please ==post in the [forum]({{url_module_org}}/forum/issues) your request to us
 %%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
 {%- endcall  %}
 
+
+<span tags="m--cs2103 m--tic4002">
+
+{% call show_constraint("Constraint-Screen-Resolution") -%}
+The GUI should _work well_ (i.e., should not cause any resolution-related inconveniences to the user) for,
+* standard screen resolutions 1920x1080 and higher, and,
+* for screen scales 100% and 125%.
+
+In addition, the GUI should be _usable_ (i.e., all functions can be used even if the user experience is not optimal) for,
+* resolutions 1280x720 and higher, and,
+* for screen scales 150%.
+
+
+{%- endcall %}
+</span>
+
 {% call show_constraint("Constraint-Single-File") -%}
 Package everything into a single JAR file.<br>
 %%**Reason:** Requiring the users to download more files can cause complications in the final peer testing session.%%

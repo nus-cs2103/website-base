@@ -25,7 +25,7 @@ week3: [
   ]},
   {id: 'add_increments', suffix: '', increments:  [
     {id: 'A-MoreOOP', title: 'Use More OOP'},
-    {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'},
+    {id: 'A-Packages', title: 'Organize into Packages'},
     {id: 'A-JUnit', title: 'Add JUnit Tests'},
     {id: 'A-Jar', title: 'Create a JAR File'}
   ]},
@@ -50,7 +50,6 @@ week5: [
   {id: 'add_increments', suffix: ' as PRs', increments:  [
     {id: 'A-Assertions', title: 'Use Assertions'},
     {id: 'A-CodeQuality', title: 'Improve Code Quality'},
-    {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
     {id: 'A-Streams', title: 'Use Streams', tag: 'optional'}
   ]},
   {id: 'add_increments', suffix: '', increments:  [
