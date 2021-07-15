@@ -7,9 +7,14 @@
   * The exact same bug reported multiple times.
   * Multiple buggy behaviors that are actually caused by the same defect and cannot be fixed independently.
   * In diagrams, same error appearing multiple times _in the same diagram_ (e.g., the _same_ notation mistake appearing several times in the _same_ diagram). However, errors across multiple diagrams should not be flagged as duplicates, unless it is the same diagram appearing in multiple places (i.e., the same image file used in multiple places).
+
+<div id="how-to-prove-out-of-scope">
+
 * **How to prove that something is 'not in scope'**: In general, features not-yet-implemented (and hence, not in scope) are the features that have a lower priority than the ones that have been implemented already. In addition, the following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
+</div>
+
 * ~~**You can reject bugs that you <tooltip content="i.e., the current behavior is same as AB3 and you had no reason to change it because the feature applies similarly to your new product">inherited</tooltip> from AB3.**~~ Even bugs inherited from AB3 are counted.
 
 ##### Functionality bugs
@@ -22,6 +27,8 @@
 * **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 or tic4002 %}
 * **Handling manual edits to the data file**: AB3 UG specifies the current level of support for manually editing the data file. At least that level of support should be supported in the new product as well.
 {% endif %}
+
+<div id="triaging-feature-flaws">
 
 ##### Feature flaws
 
@@ -37,6 +44,7 @@
   Lack of proper handling (either blocking or warning) for potentially invalid inputs can be considered a `type.FeatureFlaw` bug too.
 * **Specificity of error message**: Error messages can be correct but not specific enough %%(e.g., it says the input is 'invalid' without giving the reason, or gives too many possible reasons without pointing out the specific reason)%%. These cases can be considered `type.FeatureFlaw` unless making it more specific will take a lot more effort, in which case there is a chance to argue it to be `response.NotInScope`.
 * **Unnecessarily complicated (or hard-to-type) command formats** can be considered a `type.FeatureFlaw` as it is expected that the input formats will be optimized to get things done fast. Some examples: using very long keywords when shorter ones do, or making keywords case-sensitive when there is no need for it, using hard to type special characters in the format when it is possible to avoid them.
+</div>
 
 
 ##### Documentation bugs

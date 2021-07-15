@@ -22,14 +22,14 @@
   * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
   * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
 </div>
-<span id="volatile-requirements">
+<div id="volatile-requirements">
 
 <box type="info" dismissible>
 
 The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ url_forum }}) so that we can take necessary actions.
 </box>
-</span>
-<span id="no-jumping-ahead">
+</div>
+<div id="no-jumping-ahead">
 
 <box dismissible>
 
@@ -37,20 +37,20 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 
 Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
 </box>
-</span>
-<span id="follow-instructions">
+</div>
+<div id="follow-instructions">
 
 <box dismissible>
 
 {{ icon_important_big_red }} Please follow instructions carefully. Any deviations can cause our grading scripts to miss your work (and result in you not getting credit for the work).
 
 </box>
-</span>
+</div>
 
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
-<span id="cs2103-week2-intro">
+<div id="cs2103-week2-intro">
 
 <include src="ip-tasks.mbdf#volatile-requirements" />
 <include src="ip-tasks.mbdf#no-jumping-ahead" />
@@ -66,18 +66,18 @@ Note the typical deadline weekly project tasks:
 
 But ==as there are no tutorials this week, you have until {{ get_date(date_w2_start, 6) }}== to finish this week's iP tasks.
 </box>
-</span>
-<span id="cs2103-week3-intro">
+</div>
+<div id="cs2103-week3-intro">
 
 **:fas-clock: Reminder about the deadline for the weekly project tasks:**
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent=1) }}
 <p/>
 
-</span>
+</div>
 {#====================================================================================================================
  # CS2113 Weekly Intros
  #====================================================================================================================#}
-<span id="cs2113-week2-intro">
+<div id="cs2113-week2-intro">
 
 <include src="ip-tasks.mbdf#volatile-requirements" />
 <include src="ip-tasks.mbdf#no-jumping-ahead" />
@@ -93,14 +93,14 @@ Note the typical deadline weekly project tasks:
 
 But ==as there are no tutorials this week, you have until {{ get_date(date_w2_start, 6) }}== to finish this week's iP tasks.
 </box>
-</span>
-<span id="cs2113-week3-intro">
+</div>
+<div id="cs2113-week3-intro">
 
 **:fas-clock: Reminder about the deadline for the weekly project tasks:**
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent=1) }}
 <p/>
 
-</span>
+</div>
 
 {#====================================================================================================================#}
 {# Steps
@@ -126,9 +126,11 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 </div>
 {#====================================================================================================================#}
 <div tags="m--cs2113 m--tic4001" id="extra_Level-0">
+
 <include src="ip-tasks.mbdf#commit" />
 </div>
 <div id="extra_Level-1">
+
 <include src="ip-tasks.mbdf#order" />
 {% if cs2103 %}<include src="ip-tasks.mbdf#commit" />{% endif %}
 <include src="ip-tasks.mbdf#tag-push" />
@@ -161,6 +163,7 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 {#====================================================================================================================#}
 <span id="heading_finish_leftover_tasks">Do any leftover iP tasks from the previous week</span>
 <div id="desc_finish_leftover_tasks">
+
 * Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.
 </div>
 {#====================================================================================================================#}
@@ -293,6 +296,7 @@ Resources:
 </span>
 <div id="extra_A-Assertions">
 <div tags="m--cs2103">
+
 <include src="ip-tasks.mbdf#as-parallel-prs" />
 </div>
 </div>
@@ -457,8 +461,8 @@ This activity is worth `2x2=4` participation points.
 </div>
 {#====================================================================================================================#}
 <span id="heading_generate_new_jar">{{ "Release" if tic4002 else "Generate" }} a new JAR file</span>
-
 <div id="desc_generate_new_jar">
+
 * Generate a new JAR file using Gradle %%(Gradle can bundle the JavaFX third-party library into the jar file. If you do not bundle JavaFX with the JAR file, the application will not work in computers that don't have JavaFX installed)%%. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
 ==If the `.jar`  file is smaller than 10MB==, most likely JavaFX libraries are not inside it.
 * {% if tic4002 %}Make a new release on GitHub and upload the JAR file. You may use any appropriate version number for it.{% else %}There is no need to create a release in GitHub with this jar file (although you are welcome to).{% endif %}
@@ -554,7 +558,7 @@ This activity is worth `2x2=4` participation points.
 
 </div>
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_add_an_extension">Add an extension</span>
 <div id="desc_add_an_extension">

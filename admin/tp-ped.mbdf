@@ -217,9 +217,11 @@ Report as many bugs as you can find during the given time. Take longer if you ne
  However, a product is allowed to have 'known limitations' %%(e.g., a daily expense tracking application meant for students is unable to handle expenses larger than $999)%% as long as they don't degrade the product's use within the intended scope. They will not be penalized.
 </box>
 <box type="info" tags="m--cs2103 m--tic4002" seamless>
+
 **Even bugs inherited from AB3 need to be fixed.** As mentioned in a previous week, even bugs you inherited from AB3 need fixing %%(because "we inherited it from the previous dev team" is not a valid excuse to leave a bug unfixed)%%. If you are unsure if something is such a bug that need fixing, please post in the forum.
 </box>
 <box type="tip" seamless>
+
 **Identify bugs you missed in the PE-D:** Visit the issue tracker of the team you tested and see bugs reported by others who tested the same product. Identify bugs you missed (if any). That knowledge might help you find similar bugs in your own product as well as find more bugs during the PE.
 </box>
 </span>

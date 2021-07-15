@@ -289,6 +289,7 @@ Project-related information relevant to the week will appear in this tab.
 </box>
 {% endif %}
 {{ show_week_project_page_details(week_num) }}
+</div>
 {% endmacro %}
 
 {% macro show_programming_topics_page(week_num) %}

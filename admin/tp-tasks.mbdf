@@ -143,13 +143,13 @@ As we are still at the early stages of identifying a problem to solve, do not th
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_project_notes">{{ icon_team }} Start a collaborative doc to take project notes</span>
-<span id="desc_start_project_notes">
+<div id="desc_start_project_notes">
 
 * Keep project notes in easy-to-use collaborative docs (Recommended: use a GoogleDoc). This document will be checked by the instructors at various points.<br>
   Remember to choose a tool that ==allow public _view_ access== e.g., GoogleDoc can be shared via a public link so that the document can be viewed by others. You'll be asked to submit this link to us in the next week.<br>
   {{ icon_important_big_red }} Make sure all you current and future project notes (if split into in multiple documents) are reachable via links given in this document and are viewable by the public.
 
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_brainstorm_user_stories">{{ icon_team }} Brainstorm user stories</span>
 <div id="desc_brainstorm_user_stories">
@@ -503,14 +503,14 @@ Update the following pages in your project repo:
 </div>
 {#====================================================================================================================#}
 <span id="heading_ensure_you_know_tp_expectations">%%{{ icon_individual }} Ensure you know tP expectations%%</span>
-<span id="desc_ensure_you_know_tp_expectations">
+<div id="desc_ensure_you_know_tp_expectations">
 
 * If you haven't done so already, make sure you know individual and team expectations of the tP
 
 {{ embed_topic("tp-expectations.md#functionalityExpectations", "Admin " + icon_embedding + " tP: Functionality Expectations", "3", indent="2") }}
 {{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations (and ==guidance on work distribution==)", "3", indent="2") }}
 {{ embed_topic("tp-expectations.md#teamExpectations", "Admin " + icon_embedding + " tP: Team Expectations", "3", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_adjust_process_rigor">{{ icon_team }} Adjust process rigor if necessary</span>
 <div id="desc_adjust_process_rigor">
@@ -641,9 +641,22 @@ Update the following pages in your project repo:
 
 <box type="important" tags="m--cs2113 m--cs2103 m--tic4002" seamless>
 
-{% if cs2113 or tic4002 %}==**This iteration is your last chance to add features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features.** You will <span class="text-danger">not be allowed to add features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any changes to features done during {{ version_final }} will be penalized.{% endif %}
+{% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features.** You will <span class="text-danger">not be allowed to add features in the following iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any changes to features done during {{ version_final }} will be penalized.{% endif %}
 
 The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the {{ version_final }} later.{% endif %}
+
+Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks. The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
+
+<panel header="Admin {{ icon_embedding }} Practical Exam → **Guidelines for determining bugs in the final version (excerpts)**" minimized>
+
+...
+
+<include src="tp-pe-bug-triaging-guidelines.mbdf#how-to-prove-out-of-scope" />
+
+...
+<include src="tp-pe-bug-triaging-guidelines.mbdf#triaging-feature-flaws" />
+</panel>
+
 </box>
 <box tags="m--tic4001" type="tip" seamless>
 In the final iteration (i.e., the one after this), you will be doing a lot of additional things e.g., adding documentation.
@@ -973,15 +986,21 @@ Also see:
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>
-<span id="desc_attend_the_PED">
+<div id="desc_attend_the_PED">
 
 * =={{ icon_important_big_red }} See info in the panel below:==
 
 {{ embed_topic("tp-pe.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="2") }}
-</span>
+</div>
 {#====================================================================================================================#}
-<span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Polish the product as per peer-testing results</span>
-<div id="desc_tweak_product_as_per_PED">
+<span id="heading_start_fixing_PED_bugs">{{ icon_individual }} Start fixing PED bugs</span>
+<div id="desc_start_fixing_PED_bugs">
+
+1. **Triage the bugs you received in the PED**, by following the procedure given below:
+
+{{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
+
+2. **Note what is allowed in this milestone**:
 
 <div class="indented-level2" tags="m--cs2103 m--tic4002">
 <box type="warning" seamless>
@@ -1001,22 +1020,39 @@ Also see:
 
 **FAQs:**
 * **Q:** Can we add a missing validity check for a user input?<br>
-  **A:** Yes, but only if its absence causes the software to mis-behave (i.e., it's omission can be considered a bug).
+**A:** Yes, but only if its absence causes the software to mis-behave (i.e., it's omission can be considered a bug).
 * **Q:** Testers have reported a missing feature (or a feature suggestion). Can we add it?<br>
-  **A:** Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
-   Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
+**A:** Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
+Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
 </box>
 </div>
 
-* Follow the procedure for dealing with PED bugs you received:
+{% if cs2113 %}3. **Freeze features**. As mentioned earlier, you are strongly discouraged from adding new features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.{% endif %}
+3. **Start fixing bugs** that you selected to fix in this iteration. Don't rely on PE-D alone to find bugs. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.
 
-{{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
+<box type="info" seamless>
 
-{% if cs2113 %}* **Freeze features**. As mentioned earlier, you are strongly discouraged from adding new features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.{% endif %}
-* **Fix bugs** that were reported during the PE-D. Don't rely on PE-D alone to find bugs. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.
-* **Do more extensive testing yourselves**.{% if cs2103 or tic4002 %}
-  * {{ icon_important_big_red }} **If your software has a GUI that has a large default size**, ensure that it works even in lower-resolution screens (within reasonable limits). %%In the past, there were cases where the GUI opened up bigger than the screen with some important parts not visible, and users were unable to proceed further.%%
-  {% endif %}
+As before, you may split this milestone into smaller iterations if you wish e.g., `{{ version_final }}`, `{{ version_final }}b`, ...
+
+**Expectations at mid-{{ version_final }}** (i.e., by the tutorial date):
+* <span class="text-danger">**Minimal:**</span> all PED bugs have been triaged, bugs to be fixed in the current iteration have been chosen, and assigned to relevant team members.
+* <span class="text-success">**Recommended:**</span> all (or almost all) the PED that you have chosen to fix have been fixed already.
+
+{% if cs2103 %}**On the tutorial day, ==one member should post a message in your team's MS-Teams channel==** %%(i.e., the one inside the MS-Teams used for tutorials)%% stating if PED bug triaging is done, how many bugs were selected as 'must fix' and 'good to fix' in {{ version_final }} and how many of them have been done already. This post will be counted as a team progress deliverable e.g.,
+
+>Our team's mid-{{ version_final }} progress:
+>* PED bug triaging progress: 100%
+>* Must fix: 6 bugs (fixed: 5)
+>* Good to fix: 8 bugs (fixed: 1)
+{% endif %}
+</box>
+</div>
+{#====================================================================================================================#}
+<span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Polish the deliverables</span>
+<div id="desc_tweak_product_as_per_PED">
+
+* **Do more extensive testing yourselves**. The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
+  {{ embed_topic("tp-pe-bug-triaging-guidelines.mbdf", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="2") }}
 * **Update documentation** to match the product. In particular, finalize the content of the DG early and check it thoroughly for bugs (reason: unlike the UG, the DG did not get tested in the PE dry run).
   {{ embed_topic("tp-grading-bugs.mbdf#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
@@ -1027,7 +1063,6 @@ Also see:
 
 {{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="2") }}
 
-* As before, you may split this milestone into smaller iterations if you wish e.g., `{{ version_final }}`, `{{ version_final }}b`, ...
 </div>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ppp">{{ icon_individual }} Draft the PPP</span>

@@ -56,7 +56,8 @@ week11: [
   {id: 'demo_penultimate_version', deadline: 'before the tutorial'}
 ],
 week12: [
-  {id: 'attend_the_PED', deadline: 'During the lecture', graded: true},
+  {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w12_start, time=""), graded: true},
+  {id: 'start_fixing_PED_bugs', deadline: 'Before the tutorial'},
   {id: 'tweak_product_as_per_PED'},
   {id: 'draft_the_ppp'},
   {id: 'prepare_for_demo'},

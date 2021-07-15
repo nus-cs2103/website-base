@@ -53,6 +53,7 @@ week10: [
 ],
 week11: [
   {id: 'attend_the_PED', deadline: 'During the lecture', graded: true},
+  {id: 'start_fixing_PED_bugs', deadline: 'Before the tutorial'},
   {id: 'tweak_product_as_per_PED'}
 ],
 week12: [
