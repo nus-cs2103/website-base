@@ -22,4 +22,29 @@
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JUnit`: JUnit Testing**" var-fragment="extensions.mbdf#A-JUnit" />
 
 </div>
+
+#### {{ thumb(2) }} Merge branches
+
+<div class="indented">
+
+To get a very basis sense of how to use Git in a team project, this exercise simulates a situation where some others are also writing code for your project. Here are the steps.
+
+1. Imagine you are using the GitHub repo {{ url_module_org }}/{{ ip_fork_name }} to collaborate among the team members of your Duke project.
+
+<div class="indented">
+
+<box type="info" seamless>
+
+Although that repo was set up by the teaching team, you could have created one yourself -- all it requires you to do is to create a GitHub organization, create a repository inside it, push your code to it, and add other team members to that GitHub organization.
+
+Alternatively, you could have added the team members as 'collaborators' to your own fork so that they can push code to your fork directly.
+
+</box>
+</div>
+
+2. Now, imagine one of the team members have pushed her new code as a branch named `tweak-readme` to the remote repo. Pull that branch and merge it to your `master` branch.
+1. Suppose another member has pushed another branch `add-details-to-readme` to the same remote repo. Pull that one too and merge it. If there is a merge conflict, resolve it too.
+1. Push your master branch to your fork.
+
+</div>
 </div>
