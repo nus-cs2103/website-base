@@ -355,6 +355,68 @@ One of the increments below asks you to push the design more towards the OOP app
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
 </div>
 {#====================================================================================================================#}
+<span id="heading_use_gfmd_in_pr_description">Use GFMD in the PR description</span>
+<div id="desc_use_gfmd_in_pr_description">
+
+* [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) (and Markdown in general) is useful in many places when using GitHub %%e.g., issue tracker, PR reviews, writing documentation%%. The aim of this task is to ensure that you are sufficiently familiar with the GFMD syntax.
+* Requirements: Update the description of the iP PR you created earlier so that it contains the following GFMD elements:
+  1. a heading
+  1. a bullet list
+  1. a numbered list
+  1. a fenced code block (with syntax highlighting)
+  1. a task list
+  1. an emoji
+  1. a blockquote
+  1. a hyper link
+  1. inline code
+  1. some text formatting: bold, italic, stikethrough etc.
+
+<div class="indented-level2">
+
+<panel header="Here is an example:" expanded no-close no-switch>
+
+##### DukePro
+
+> “Your mind is for having ideas, not holding them.” – David Allen ([source](https://dansilvestre.com/productivity-quotes))
+
+DukePro frees your mind of having to remember things you need to do. It's,
+* text-based
+* easy to learn
+* ~~FAST~~ _SUPER_ FAST to use
+
+All you need to do is,
+1. download it from [here]().
+1. double-click it.
+1. add your tasks.
+1. let it manage your tasks for you :wink:
+
+And it is **FREE**!
+
+Features:
+- [x] Managing tasks
+- [ ] Managing deadlines (coming soon)
+- [ ] Reminders (coming soon)
+
+---
+
+If you Java programmer, you can use it to practice Java too. Here's the `main` method:
+```java{.no-line-numbers}
+public class Main {
+    public static void main(String[] args) {
+        Application.launch(MainApp.class, args);
+    }
+}
+```
+
+</panel>
+</div>
+
+<box type="info" seamless>
+
+If you wish, **you _may_ write the PR description to be very similar to the example** given above -- as the goal here is to demonstrate your mastery of the GFMD syntax (not ad writing skills).
+</box>
+</div>
+{#====================================================================================================================#}
 <span id="heading_review_two_prs">Review some peer PRs</span>
 <div id="desc_review_two_prs">
 
@@ -466,6 +528,16 @@ This activity is worth `2x2=4` participation points.
 * Generate a new JAR file using Gradle %%(Gradle can bundle the JavaFX third-party library into the jar file. If you do not bundle JavaFX with the JAR file, the application will not work in computers that don't have JavaFX installed)%%. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
 ==If the `.jar`  file is smaller than 10MB==, most likely JavaFX libraries are not inside it.
 * {% if tic4002 %}Make a new release on GitHub and upload the JAR file. You may use any appropriate version number for it.{% else %}There is no need to create a release in GitHub with this jar file (although you are welcome to).{% endif %}
+</div>
+{#====================================================================================================================#}
+<span id="heading_write_full_commit_messages">Write some full commit messages</span>
+<div id="desc_write_full_commit_messages">
+
+* While we do not require you to write _full_ commit messages (i.e., including a message body) in the work done in this module, it is still good to learn how to write such commit message. The purpose of this task is to give you some practice in writing such full and well-written commit messages.
+* Requirements:
+  1. Write full commit messages for at least 2-3 commits that you push this week.
+  1. Follow these [_Git conventions for the commit message body_ as specified by @SE-EDU/guides](https://se-education.org/guides/conventions/git.html#commit-message-body) when writing them.
+  1. Tag one of those commits as `A-FullCommitMessage`.
 </div>
 {#====================================================================================================================#}
 <div id="extra_A-Assertion">

@@ -33,10 +33,30 @@
     * Give a meaningful title to the post. Be as specific as you can.<br>
       {{ bad }} `testing problem`<br>
       {{ good }} `runtest.bat fails with ClassNotFound error`
-    * Include full error message, screenshots, code snippets, stack traces, etc.<br>
-      :fas-lightbulb: Note that it is better to give code in text form rather than as screenshots, to allow others to easily copy-paste the code in their reply.<br>
-      :fas-lightbulb: You can use [Markdown, and GFM](https://guides.github.com/features/mastering-markdown/) syntax when posting in the forum.
+    * Include full error message, screenshots, screen recordings, code snippets, stack traces, etc.<br>
+      :fas-lightbulb: You can use [Markdown, and GFMD](https://guides.github.com/features/mastering-markdown/) syntax when posting in the forum.
     * If the problem is code-related, share the full code if possible (e.g., push the current state of the code to a branch in your fork and give the link to the branch). That gives a chance for someone to reproduce the state of your project in their computer. Sharing just a snippet of your choosing might not be enough as the problem may not be where you think it is.
+  * **Avoid showing text as screenshots**: If you want to show some text in your post %%(e.g., a code snippet, an error message)%%, it is better to copy-paste the actual text rather than a _screenshot_ of the text<br>
+    Reason: so that others can easily quote/copy/modify the code in their answers.<br>
+    Remember to use [_fenced code blocks_ feature](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks) so that the code is syntax-highlighted as well.<br>
+    * **not preferred**{.text-danger} (it's a screenshot)<br>
+      <pic src="images/code-screenshot.png"/>
+    * **OK**
+      ```{.no-line-numbers}
+      @Override
+      public void start(Stage primaryStage) {
+          logger.info("Starting AddressBook " + MainApp.VERSION);
+          ui.start(primaryStage);
+      }
+      ```
+    * **better**{.text-success} (it has syntax highlighting too!)
+      ```java{.no-line-numbers}
+      @Override
+      public void start(Stage primaryStage) {
+          logger.info("Starting AddressBook " + MainApp.VERSION);
+          ui.start(primaryStage);
+      }
+      ```
   * **Avoid addressing the question to one person** (e.g., the prof), unless really necessary. Doing so will discourage others from answering that question.
   * **Isolate the problem.** "My code doesn't work" isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about <trigger trigger="click" for="modal:appendixHelp-rubberDuckDebugging">Rubber Duck Debugging</trigger>?).
     

@@ -36,6 +36,7 @@ week3: [
   ]}
 ],
 week4: [
+  {id: 'use_gfmd_in_pr_description'},
   {id: 'review_two_prs', graded: true},
   {id: 'learn_from_others'},
   {id: 'add_increments', suffix: ' as branches', increments:  [
@@ -47,6 +48,7 @@ week4: [
 ],
 week5: [
   {id: 'generate_new_jar'},
+  {id: 'write_full_commit_messages'},
   {id: 'add_increments', suffix: ' as PRs', increments:  [
     {id: 'A-Assertions', title: 'Use Assertions'},
     {id: 'A-CodeQuality', title: 'Improve Code Quality'},
