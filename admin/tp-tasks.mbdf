@@ -758,7 +758,7 @@ Here are some reasons:
 
 {{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="4") }}
 </div>
-</span>
+</div>
 {#====================================================================================================================#}
 <span id="heading_smoke_test_catcher">{{ icon_individual }} Smoke-test CATcher</span>
 <div id="desc_smoke_test_catcher">
@@ -1002,7 +1002,7 @@ Also see:
 
 2. **Note what is allowed in this milestone**:
 
-<div class="indented-level2" tags="m--cs2103 m--tic4002">
+<div class="indented" tags="m--cs2103 m--tic4002">
 <box type="warning" seamless>
 
 **Allowed in the {{ version_final }} milestone:**{.text-success}
@@ -1072,6 +1072,11 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
   Reason: ==Each member needs to create a PPP== to describe your contribution to the project.
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="2") }}
+
+<box type="tip" seamless>
+
+Convert the PPP to a PDF to see if the page-count is within expectations (the PDF version can be longer than what you would expect by looking at the HTML version).
+</box>
 </div>
 {#====================================================================================================================#}
 <span id="heading_prepare_for_demo">{{ icon_team }} ~~Prepare for the demo rehearsal~~</span>

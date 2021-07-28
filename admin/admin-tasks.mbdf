@@ -118,7 +118,7 @@ The info in the following panels differs from TIC4001.
 <span id="heading_submit_post_lecture_quiz">Submit post-lecture quiz</span>
 <div id="desc_submit_post_lecture_quiz">
 
-* **Post-lecture quiz**: Read weekly topics allocated for this week and submit the post-lecture quiz before the following lecture.
+* **Post-lecture quiz**: Read weekly topics allocated for this week and submit the post-lecture quiz before the quiz deadline{% if cs2103 %} %%(noon before the following lecture)%%{% endif %}.
 </div>
 {#====================================================================================================================#}
 <span id="heading_form_teams">[{{ module }} students only] Form teams during the tutorial</span>
@@ -183,7 +183,7 @@ The info in the following panels differs from TIC4001.
 
 * Submit the LumiNUS survey to declare that you have followed the proper procedure for reusing/adapting code from elsewhere.
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " Policy on reuse", "1", indent="2") }}
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " Policy on reuse", "1", indent="2", status="expanded") }}
 </div>
 {#====================================================================================================================#}
 {#====================================================================================================================#}

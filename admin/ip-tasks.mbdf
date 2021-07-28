@@ -308,9 +308,12 @@ Resources:
 
 One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you that **OOP is not a silver bullet or always the right choice**. While it is the most widely used and possibly the right choice for a variety of situations, it may not work well for other situations, and it has plenty of detractors and known problems.
 
-**OOP has been chosen as the primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}
+**OOP has been chosen as the primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
 
 **We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
+
+****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for some cases and not so for other cases. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
+ That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
 </box>
 
 * As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).
@@ -537,7 +540,7 @@ This activity is worth `2x2=4` participation points.
 * Requirements:
   1. Write full commit messages for at least 2-3 commits that you push this week.
   1. Follow these [_Git conventions for the commit message body_ as specified by @SE-EDU/guides](https://se-education.org/guides/conventions/git.html#commit-message-body) when writing them.
-  1. Tag one of those commits as `A-FullCommitMessage`.
+  1. Git tag one of those commits as `A-FullCommitMessage`.
 </div>
 {#====================================================================================================================#}
 <div id="extra_A-Assertion">

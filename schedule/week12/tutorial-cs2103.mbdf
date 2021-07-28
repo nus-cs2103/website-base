@@ -2,10 +2,17 @@
 
 {% from "common/macros.njk" import embed_topic with context %}
 
-<box type="info">
+<box type="info" seamless>
 
 **No tutorial this week.** Suggestion: use this time to work on the project with team members. The tutor will be available on MS Teams during the tutorial slot in case you want to contact him/her.
 </box>
+
+<box type="warning" seamless>
+
+**Remember to post your PED bug triaging progress**, as mentioned in the [Project page](project.md).
+</box>
+
+
 
 <!--
 #### {{ thumb(1) }} Demo rehearsal
