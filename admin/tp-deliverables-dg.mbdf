@@ -16,6 +16,9 @@
   * {{ (optional + " ") if tic4001 }}Appendix E: Instructions for Manual Testing (more details below)
 </div>
 
+* **Ensure the 'Acknowledgements' section is accurate**: It should cite all ideas/code/documentation you reused. If you reused/adapted or even drew inspiration from other projects (including projects by past/current students), mention the extent of reuse and give hyperlinks to the original projects' GitHub page, UG, DG, etc. Examples:
+  * %%The feature Foo was inspired by a similar feature of the past project [TaskPro]() ([UG](), [DG]()), although our implementation is entirely new.%%
+  * %%The feature Bar (including the code) was reused with minimal changes from the same [TaskPro]() project.%%
 * **{{ optional }} You can include proposed implementations of future features.**
 * **{{ icon_important_big_red if not tic4001 else optional }} Include an appendix named _Instructions for Manual Testing_**, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.
   * **Cover all user-testable features**<span tags="m--cs2103 m--tic4002"> but no need to cover existing AB3 features if you did not touch them</span>.
@@ -27,6 +30,7 @@
 * {{ icon_important_big_red }} **We highly recommend adding an appendix named `Effort`** that evaluators can use to estimate the total project effort.
   * Keep it brief (~1 page)
   * Explain the difficulty level, challenges faced, effort required, and achievements of the project.
+  * If a significant part (e.g., more than 5%) of the effort was saved through reuse, mention what you reused and how it affected the effort %%e.g., the feature X is implemented using library Foo -- our work on adapting Foo to our product is contained in class `FooAdapter.java`%%.
   * Use AB3 as a reference point %%e.g., you can explain that while AB3 deals with only one entity type, your project was harder because it deals with multiple entity types%%.
 </div>
 
