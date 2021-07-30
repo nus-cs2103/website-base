@@ -374,7 +374,8 @@ Update the following pages in your project repo:
   * Acknowledge the original source of the code e.g.,<br>
     `This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).`
 
-* **Update site-wide settings** as described in the guide [_Using Jekyll for project documentation_ @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html).
+* **Update site-wide settings** as described in the guide [_Using Jekyll for project documentation_ @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html).<br>
+  {{ icon_tip }} The text `AB-3` is in `docs\_sass\minima\_base.scss` as well (it comes into play when you convert documentation to PDF formats).
 
 </div>
 {#====================================================================================================================#}
