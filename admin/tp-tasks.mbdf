@@ -267,12 +267,14 @@ Suggested workflow:
 * ==Ideally, you should do this task in this week== {% if tic4002 %}(i.e., before the week 6 lecture), but you may take an extra week (i.e., by the week 7 lecture){% else %}(i.e., midnight before the week 6 tutorial), but you may take an extra week (i.e., by the week 7 tutorial){% endif %} to finish them without penalty.
 * Do the following tutorials to get familiar with the codebase
   * [Tutorial 1 - Tracing a Command Execution Path]({{ url_ab3_fork_website }}/tutorials/TracingCode.html)
-  * [Tutorial 2 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)
-    * If you are an experienced programmer, you can remove a different field than the one given in the tutorial.
-    * Submission: Do your changes in a branch named `tutorial-removing-field` and push to your fork.
-  * [Tutorial 3 - Adding a new Command]({{ url_ab3_fork_website }}/tutorials/AddRemark.html)
+    * We recommend that you put in a sincere effort into this tutorial because tracing through the code of an unfamiliar code base is an important skill that you will not be able to learn/practice it later in the project as the code will no longer be 'unfamiliar' to you later.
+    * Submission [optional]: Post an issue in your team's repo with the title `Tutorial: tracing code`. In the description, add a 2-3 screenshots you took while at various points of the tutorial. You may close the issue soon after.
+  * [Tutorial 2 - Adding a new Command]({{ url_ab3_fork_website }}/tutorials/AddRemark.html)
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
-    * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo.
+    * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
+  * [Tutorial 3 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)
+    * This tutorial is optional to do, but **at least read it** through.
+    * Submission: not required.
 * The PRs created for tutorials need not be merged, unless the changes are actually in line with your project idea.
 * For reference, given below is the workflow you should follow when merging code in your tP:
 
