@@ -772,7 +772,7 @@
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"},
               {name: "how", heading: "How", priority: "3"},
-              {name: "when", heading: "When", priority: "4"}
+              {name: "when", heading: "When", priority: "3"}
             ]
           }
         ]
