@@ -50,7 +50,7 @@ This module is supported by a number of software tools developed by our students
 * [**PowerPointLabs** dev team](https://www.comp.nus.edu.sg/~pptlabs/contact.html)
 * [**RepoSense** dev team](https://reposense.org/about.html)
 * [**SE-EDU** dev team](https://se-education.org/docs/team.html)
-* [**TEAMMATES** dev team](http://teammatesv4.appspot.com/about.jsp)
+* [**TEAMMATES** dev team](https://teammatesv4.appspot.com/web/front/about)
 
 </div>
 
