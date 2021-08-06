@@ -12,7 +12,7 @@
   <dropdown header="**Schedule**" class="nav-link">
   <li><a href="{{baseUrl}}/schedule/timeline.html" class="dropdown-item"><md>**Full Timeline**</md></a></li>
 {% for week in range(1, 14) %}
-<li><a href="{{ baseUrl }}/schedule/week{{ week }}/index.html" class="dropdown-item"> <md>**Week {{ week }}** [{{ get_week_start_date(week | int, format_normal) }}] {% if current_week == week.num %} :fas-arrow-circle-left:{% endif %}</md></a></li>
+<li><a href="{{ baseUrl }}/schedule/week{{ week }}/index.html" class="dropdown-item"> <md>**Week {{ week }}** [{{ get_week_start_date(week | int, format_normal) }}] {% if current_week == week %} :fas-arrow-circle-left:{% endif %}</md></a></li>
 {% endfor %}
   </dropdown>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
