@@ -224,6 +224,6 @@ Module                 | Venue    | Time
 ---------------------- | -------- | ----
 </span>
 <span id="tutorial_table_headers">
-Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](instructors.html))
+Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](../admin/instructors.html))
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------
 </span>
