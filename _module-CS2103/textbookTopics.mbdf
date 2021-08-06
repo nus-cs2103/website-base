@@ -323,7 +323,7 @@
               {name: "classDiagramsBasic", heading: "Class Diagrams (Basics)", priority: "1"},
               {name: "addingMoreInfo", heading: "Adding More Info to UML Models", priority: "3"},
               {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "2"},
-              {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "4"},
+              {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "3"},
               {name: "objectDiagrams", heading: "Object Diagrams", priority: "1"},
               {name: "objectOrientedDomainModels", heading: "Object Oriented Domain Models", priority: "3"},
               {name: "deploymentDiagrams", heading: "Deployment Diagrams", priority: "4"},
