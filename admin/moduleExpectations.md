@@ -12,15 +12,16 @@
 This module requires most of the topics you learned in TIC2002. Not to worry if you are not confident of those topics; we'll provide a reference to relevant TIC2002 to help you brush up those topics.
 
 </span>
-<span tags="m--cs2103">
+<div tags="m--cs2103">
+
 ## Prior Knowledge: Java and OOP
 
 This module requires you to write Java code almost every week, starting from the very first week. If your Java skills are rusty, do brush up your Java programming skills.
 
-In particular, you may want to **have a look at the new Java 8 features** such as _streams_, _lambdas_, _Optionals_, that may not have been covered in previous Java modules.
+In particular, you may want to **have a look at the new Java features** such as _streams_, _lambdas_, _Optionals_, that may not have been covered in previous Java modules.
 
 CS2103 students: ==This module assumes a reasonable prior knowledge of Java and OOP== because most students taking this module have taken two Java modules before. If you are totally new to Java, you may be better off switching to CS2113 (Software Engineering & Object-Oriented Programming) instead.
-</span>
+</div>
 
 ## Workload
 
@@ -50,13 +51,21 @@ As {{ marks_ca }}% of this module is based on CA (see <trigger trigger="click" f
 
 <span tags="m--cs2103 m--tic2002 m--tic4001 m--tic4002">
 
-* Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }} are relevant topics you are expected to have learned in prerequisite modules. They are given for reference, but ==are examinable==. The number of stars indicates the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.
+* Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }} are relevant topics you are expected to have learned in prerequisite modules. They are given for reference, but ==are examinable==. The number of stars indicates the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. Four-star pre-requisite topics can be ignored without affecting CAP.
 </span>
 
 **Star ratings for other things** e.g., admin info sections:
 
 * The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. ==Info rated four stars are non-essential and can be ignored== without affecting your ability to follow the module.
 
+</div>
+<div tags="m--cs2103">
+
+#### Rewards for exceeding expectations
+
+This module deliberately avoids giving extra credit for exceeding the expected bars, in order to keep the workload manageable (of course, doing more will have their own rewards in terms of learning).
+
+**If you are a strong programmer wishing to push yourself beyond the expectations set by the module**, you can consider applying for [CS2103R](appendixG-CS2103R.md), to earn an extra 1MC of graded credit.
 </div>
 </div>
 

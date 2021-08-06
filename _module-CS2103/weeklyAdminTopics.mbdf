@@ -53,7 +53,8 @@
     {level: 2, id: "appendixC-faq", title: "Apdx C: FAQ", link: "appendixC-faq.html", priority: 1},
     {level: 2, id: "appendixD-help", title: "Apdx D: Getting Help", link: "appendixD-help.html", priority: 2},
     {level: 2, id: "appendixE-gitHub", title: "Apdx E: Using GitHub", link: "appendixE-gitHub.html", priority: 1},
-    {level: 2, id: "appendixF-teamworkIssues", title: "Apdx F: Handling Team Issues", link: "appendixF-teamworkIssues.html", priority: 4}
+    {level: 2, id: "appendixF-teamworkIssues", title: "Apdx F: Handling Team Issues", link: "appendixF-teamworkIssues.html", priority: 4},
+    {level: 2, id: "appendixG-CS2103R", title: "Apdx G: CS2103R Info", link: "appendixG-CS2103R.html", priority: 4}
 ]%}
 
 {% set weekly_admin_topics = {
