@@ -145,11 +145,11 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 <div tags="m--cs2103">
 
-* **MS Team for this class**: [{{ module_pair }} - {{ semester }}]({{ url_ms_teams_class }})
+* **MS Team for this class**: [{{ module_pair }}-{{ semester }}]({{ url_ms_teams_class }})
 </div>
 <div tags="m--tic4001 m--tic4002">
 
-* for in-lecture consultations: [{{ module }}_{{ period }}]({{ url_ms_teams_class }})
+* for in-lecture consultations: [{{ module }}-{{ period }}]({{ url_ms_teams_class }})
 </div>
 </div>
 
