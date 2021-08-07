@@ -268,7 +268,7 @@ Some examples:
 
 * <span class="badge badge-info">Expectation</span> <span class="text-info">**Write _some_ automated tests**</span> so that we can evaluate your ability to write tests.
 
-<div class="indented">
+<div class="indented-level2">
 
 <box>
 

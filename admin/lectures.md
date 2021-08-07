@@ -14,12 +14,12 @@
 **The lecture+tutorial slot ({{ day_lecture }} 6.30pm-9.30pm) will be repurposed** as follows, due to this being a 100% project module:
 
 * **6.30-7pm**: No formal activities. Work with team members and consult instructors (using the MS Teams app) if you need help with the previous week's tasks.
-* **7-7.30pm**: Weekly briefing.
-* **7-30-9.30pm**:
-  * Do the lecture activities (if any) or work with team members to do weekly project activities.
-  * The tutor will observe or get involved in your team's work as necessary.
+* **7-7.30pm**: Weekly briefing, done via Zoom. The Zoom link can be found in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links).
+* **7.30-9.30pm**:
+  * Do the lecture activities (if any) or weekly project activities.
   * You may approach instructors (using the MS Teams app) for help during this period.
-  * From week 3, we'll be scheduling team meetings during this period, for the team supervisor to discuss the team project progress with you.
+  * After the team project has started, we'll be scheduling team meetings during this period, for the teaching team to discuss the project progress with you.<br>
+    These meetings will be done through MS Teams app. ==If your team prefer face-to-face team meetings instead==, let us know in advance so that the teaching team can meet your team in COM1-02-13 (Video Conference Room) instead.
 </div>
 
 <div tags="m--cs2103 m--cs2113">
@@ -28,7 +28,11 @@ Lectures start on time sharp and end around 15 minutes before official end time.
 </div>
 
 ****Mode****:
-* Will be done using Zoom. More information coming soon.
+{% if cs2103 or cs2113 %}
+* Will be done using Zoom. The Zoom link will be available in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links).
+{% else %}
+* As mentioned above, the lecture briefing will be delivered via Zoom (see [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links) for the Zoom link).
+{% endif %}
 
 <div tags="m--cs2103 m--tic4001 m--tic4002">
 
@@ -50,9 +54,10 @@ Lectures start on time sharp and end around 15 minutes before official end time.
 ****Attendance****: Attendance for the ==first lecture is compulsory==.
 
 ****Handouts****: There are no handouts. All learning materials are organized around topics, are given in Web format, can be found in the [Textbook]({{baseUrl}}/se-book-adapted/index.html) section (organized by topics), and are also embedded in the {{ url_schedule }} (organized in the order they are covered).
+{% if not tic4001 and not tic4002 %}
 
 ****Slides****: Our lecture slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to LumiNUS *after* the lecture.
-
+{% endif %}
 </div>
 
 {% endcall %}

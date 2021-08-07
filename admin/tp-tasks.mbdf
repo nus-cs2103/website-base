@@ -873,6 +873,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 {#====================================================================================================================#}
 <span id="heading_deliver_penultimate_version">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
 <div id="desc_deliver_penultimate_version">
+
 * As before, do a release on GitHub and upload the {{ version_penultimate }} jar file. <span tags="m--cs2113 m--cs2103 m--tic4002" class="text-danger">Do this before the deadline as PE testers will start downloading jar files ahead of time.</span>
 * ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
 
