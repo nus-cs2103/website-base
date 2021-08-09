@@ -144,20 +144,14 @@ Java 11 can be downloaded from [here](https://www.oracle.com/java/technologies/j
 
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="{{ slugify("cppToJava-gettingStarted-running") }}">
-<div tags="m--tic2002">
-
-At the end of the next section, there is an exercise (_[Key Exercise] ByeWorld_) that you need to submit on Coursemology. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on repl.
-
-{{ embed_topic("index-tic2002.mbdf#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "3") }}
-<p/>
-
-</div>
-</div>
-<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Data Types") }}">
 
 Now that you know how to write the simplest of Java programs, you can move onto learning about basic language concepts, starting with data types.
+
+At the end of the next section, there is an exercise (_[Key Exercise] ByeWorld_) that you need to submit on Coursemology. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on Coursemology.
+
+{{ embed_topic("index-tic2002.mbdf#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "3") }}
+<p/>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Control Flow") }}">

@@ -70,12 +70,11 @@ e.g., **Instead of traditional instructor-led tutorials**, the module provides q
 * **[6.30-7.00pm] Pre-lecture consultations:**
   * You can use this time to get prof's help if you encountered problems while doing the previous week's tasks.
   * This session will be online. Communications with the prof is to be done using Microsoft Teams app.
-    * If the question is is potentially relevant to others in the class, post your question in the chat room of the `TIC2002_{{ period }}` ([link](https://teams.microsoft.com/l/team/19%3ac95cd77a96724ccd9d6041e5b97a7b21%40thread.tacv2/conversations?groupId=cb153fe2-896a-43be-b3e9-abb013bd3ab6&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82)) MS Team.
+    * If the question is is potentially relevant to others in the class, post your question in the chat room of the `TIC2002_{{ period }}` ([link]({{ url_ms_teams_class }})) MS Team.
     * Otherwise search for prof's name (`Damith Chatura RAJAPAKSE`) in MS Teams and send a private chat message.
-The procedure to get help is similar to [_in-lecture consultations_](#lectures) (i.e., via MS Teams app)
 * **[7.00-8.00pm] Lecture briefing**:
   * Will be done via Zoom.
-  * You are encouraged to attend the Zoom session as there will be in-lecture activities. But a recording will be made available in case you can't attend the live Zoom session.
+  * You are encouraged to attend the Zoom session as there could be in-lecture activities. But a recording will be made available in case you can't attend the live Zoom session.
 * **[8.00-9.30pm] Post-lecture consultations**:
   * This portion will start as soon as the previous portion  (i.e., the _lecture briefing_ on Zoom) ends.
   * During this time,

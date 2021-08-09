@@ -4,6 +4,5 @@
 {{ topic_preamble("Java: Intro") }}
 {{ topic_preamble("Java: HelloWorld") }}
 {{ topic_preamble("cppToJava-javaWorld-how") }}
-{{ topic_preamble("cppToJava-gettingStarted-running") }}
 {{ topic_preamble("Java: Data Types") }}
 {{ topic_preamble("Java: Control Flow") }}
