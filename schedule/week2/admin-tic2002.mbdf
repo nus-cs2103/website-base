@@ -17,3 +17,7 @@
 {{ thumb(2) }} Submit weekly exercises
 
 * As usual, submit weekly programming exercise.
+
+{{ thumb(3) }} Submit post-lecture quiz
+
+* Submit the post-lecture quiz on LumiNUS.
