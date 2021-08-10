@@ -125,7 +125,7 @@
   {% if week_num == 1 %}
   {{ date_w1_start | date(format, shift) }}
   {% else %}
-  {{ date_first_lecture | date(format, (week_num - (2 if week_num <= recess_after_week else 1)) * 7 + shift)}}
+  {{ date_w2_start | date(format, (week_num - (2 if week_num <= recess_after_week else 1)) * 7 + shift)}}
   {% endif %}
 {% endmacro %}
 
