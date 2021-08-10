@@ -1,12 +1,13 @@
 <span id="lectures-s1">
 
 {{ lecture_table_headers | trim }}
-{{ module }}   | ~~LT19~~            | Friday **1200**-1400
-{{ module }}T | ~~LT19~~            | Friday **1600**-1800
+{{ module }}/T | ~~LT19~~            | Friday **1600**-1800
 
+<!--
 * As the lectures are repeats of each other, ==you may attend any of the two, except in weeks== the lecture is used for the practical exam (PE) or the PE dry run.<br>
- You may want to attend the CS2103 lecture even if you are in CS2103T, given the CS2103 class size is smaller (hence, lower chance of Zoom bandwidth issues).
-* The lecture recording will be made available later during the same day. Only one of the two lecture recordings will be released, as they are both supposed to contain the same content.
+ You may want to attend the CS2103 lecture even if you are in CS2103T, given the CS2103 class size is smaller (hence, lower chance of Zoom bandwidth issues). -->
+
+* The lecture recording will be made available later during the same day. <!-- Only one of the two lecture recordings will be released, as they are both supposed to contain the same content. -->
 </span>
 
 <span id="lectures-s2">
