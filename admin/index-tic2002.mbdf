@@ -276,7 +276,7 @@ We'll be using Intellij IDE for programming. While using Intellij is not compuls
 
 If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, you can
 * post in the [module forum]({{ url_forum }})
-* ask for prof's help during next week’s tutorial hour
+* ask for prof's help via [MS Teams]({{ url_ms_teams_class }})
 * email prof at `{{ module | lower }}`[at]`comp.nus.edu.sg`
 
 </span>
