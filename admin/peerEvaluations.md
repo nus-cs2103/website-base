@@ -33,7 +33,7 @@ This module leverages peer feedback/evaluations in many ways. In particular, we 
 
 ### How peer evaluations are used
 
-* Peer evaluations are rarely used directly to calculate marks. They are fare mostly used to flag cases that need further investigation.
+* Peer evaluations are rarely used directly to calculate marks. They are mostly used to flag cases that need further investigation.
 * Before using peer evaluations in grading, we consider factors such as the following:
   * Is there a consensus among team members? We do not want an extreme input from one team member to unduly affect the outcome. In many cases, we discard the highest and lowest ratings received before calculating the average.
   * Do the other data points (e.g., LoC written, tutor feedback, commit history) corroborates the peer evaluations?

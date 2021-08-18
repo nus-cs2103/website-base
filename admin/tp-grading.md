@@ -209,7 +209,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 
 **Evaluates:** How well you did in project management related aspects of the project, as an individual and as a team
 
-**Based on:** tutor/bot observations of project milestones and GitHub data
+**Based on:** tutor/grading-script observations of project milestones and GitHub data
 
 **Grading criteria:**
 

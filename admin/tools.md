@@ -183,7 +183,7 @@ Use other IDEs at your own risk.
 
 ## Tool: TEAMMATES (for Peer Evaluations)
 
-We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation system. %%TEAMMATES is a project run by NUS SoC students and used by over 0.5 million users from over 1000 universities.%%
+We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation system. %%TEAMMATES is a project run by NUS SoC students and used by over 0.6 million users from over 1000 universities.%%
 
 <box>
 

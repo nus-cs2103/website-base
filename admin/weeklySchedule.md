@@ -17,7 +17,7 @@
 
 <div tags="m--cs2103 m--cs2113">
 
-**The deadline to complete tasks allocated to the week** is the <tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>, unless stated otherwise. Our grading scripts that detect your work run at midnight and only the work that's done by midnight will be eligible for marks (for cases where the task is graded).
+**The deadline to complete tasks allocated to the week** is the <tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>, unless stated otherwise. Our grading scripts that detect your work run at midnight and work done after the deadline might not be eligible for marks in some cases -- that said, we are generous with most interim weekly project deadlines i.e., we'll not penalize you even if you occasionally miss those deadlines, as long as you catch up soon enough (within a few days).
 </div>
 <div tags="m--tic4001 m--tic4002">
 
