@@ -249,8 +249,12 @@ We'll be using Intellij IDE for programming. While using Intellij is not compuls
 <div class="indented">
 
 ****[{{ 100 - (marks_exam | int) }}%] CA****
-* **{{ marks_participation }}%: Participation.**
-  * **[5%]** Weekly quiz(es):
+* **{{ marks_participation }}%: Participation** -- Each week has activities that can earn you participation points.<br>
+  For you to be considered as _participated_ in a particular week, you need to earn at least half of available participation points in that week (e.g., if the eligible activities in a week offer a total of `5` points, you should earn at least `3` points).<br>
+  To earn full {{ marks_participation }}% marks allocated for participation, you should have _participated_ (based on the above criterion) in at least 10 (out of 13) weeks.<br>
+  You can track your participation points through the [Participation Dashboard]({{ url_participation_dashboard }}).<br>
+  Given below are the typical activities that can earn you participation points:
+  * **Weekly quizzes**:
     * When awarding participation points for quizzes, we look for two conditions:
       * Condition 1: submitted **_early_** i.e., before the next lecture
       * Condition 2: answered **_correctly_** i.e., least 70% of the answers are correct %%(reason: to discourage random answers)%%
@@ -258,8 +262,8 @@ We'll be using Intellij IDE for programming. While using Intellij is not compuls
       * 3 points if you satisfy both conditions.
       * 2 points if only one of the conditions is satisfied.
       * 1 point if submitted but both conditions are not satisfied.
-    * To receive full marks (i.e, 5/5) for this component, score at least 2/3 of all available points e.g., if there are 10 quizzes in total, of the available 30 points (i.e., `10x3=30`), score at least 20 (i.e., `30x2/3=20`)
-  * **[5%]** Weekly programming exercise: To receive full marks (i.e, 5/5) for this component, earn at least 80% of the available experience points (XP) allocated for programming exercises.
+  * **Weekly programming exercises**: You can earn `3` points if you complete at least 80% of the exercises allocated for that week.
+  * **Other admin activities**: Other admin activities such as submitting a survey can earn you `2` points, unless the activity specify a different number of points.
 * **[{{ marks_ip }}%] Project**
   * **[{{ marks_ip_implementation }}%]** Features, code
   * **[{{ marks_ip_documentation }}%]** Documentation
