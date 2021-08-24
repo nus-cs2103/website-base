@@ -6,6 +6,11 @@
 
 Given below are the standards and conventions to follow in this module.
 
+<box type="info" seamless>
+
+**When something is not covered by the given standard/convention**, you are free to choose which style you want to follow for that, but try to be consistent with the existing code (if any), and ensure everyone in the team follows the same (if it is a team project).
+</box>
+
 <span tags="m--cs2103 m--tic4002">
 
 ##### Java

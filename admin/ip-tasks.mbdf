@@ -153,6 +153,23 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 
 {{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="2") }}
 </box>
+<box type="info" icon=":fas-question-circle:" light>
+
+#####  **FAQ** about iP increments{.text-info}
+
+* **Q. How are the iP git tags used in grading?**<br>
+  **A.** A git tag is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor that progress declarations.
+* **Q. What if I discovered a bug after I finished an increment?**<br>
+  **A.** Go ahead and fix it in a subsequent commit. There is no need to update the previous commit or move the corresponding tag to the new commit. As we do not test your code at every tag, earlier bugs will not affect your grade as long as they are fixed later. Similarly, feel free to improve the code of previous increments later.
+* **Q. I did multiple increments in the same commit. How to fix?**<br>
+  **A.** You can add the corresponding tags to the same commit.<br>
+  Optionally, if you haven't pushed the commit to the fork yet, you can try to figure out how to split that commit into multiple commits.
+* **Q. My iP increments are not detected by the dashboard because I forgot to push my tags earlier. What now?**<br>
+  **A.** Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
+* **Q. Oh no! I made a mistake in my tag/branch name.**<br>
+  **A.** It's OK; correct it now.
+
+</box>
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_tic4002">Set up the project in your computer</span>
