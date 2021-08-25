@@ -28,6 +28,7 @@ week4: [
     {id: 'A-AbstractClasses', title: 'Use Abstract Classes'},
     {id: 'A-Packages', title: 'Organize into Packages'}
   ]},
+  {id: 'use_gfmd_in_pr_description'},
   {id: 'review_two_prs', graded: true}
 ],
 week5: [
