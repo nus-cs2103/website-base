@@ -31,10 +31,7 @@
 ]%}
 
 {% set teams = {
- 'TIC4001-1': 'https://docs.google.com/document/d/1Nco1j2pU6RU6wM_pqnVfqr3jzqT2hoP9ZjHZtuIDbkE/edit',
- 'TIC4001-2': 'https://docs.google.com/document/d/1R05eK83tpufSi8Y5yqtcbHF_QYmsd2srJczg4qeoVT4/',
- 'TIC4001-3': 'https://docs.google.com/document/d/1lV2W6EdqnofPQ21SSvqO4qZw9GFapS8wDcJV4CBJ00E/edit?usp=sharing',
- 'TIC4001-4': 'https://docs.google.com/document/d/16SH2Y7osjmfBnzf-B-XKfdR_o8ikJFGM4Sdmc98eDwQ/edit?usp=sharing'
+
 }%}
 
 
