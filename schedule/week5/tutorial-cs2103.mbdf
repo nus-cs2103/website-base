@@ -10,7 +10,7 @@
 
 1. **Find the PR you have been allocated to discuss** (expand the the panel below). If the allocated PR is not available or suitable, you can choose the fallback option, and failing that, any random PR.
 
-   <panel header="**PR allocation**">
+   <panel header="**PR allocation**" peek>
 
    {% macro get_links(username) -%}
    [{{ username }}'s PR](https://github.com/{{ module_org }}/{{ ip_repo_name }}/pulls/{{ username }})

@@ -162,7 +162,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
 * **Learn** [**the _recipe for brainstorming user stories_** in the textbook → Specifying Requirements → UserStories →  Usage]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html#a-recipe-for-brainstorming-user-stories).<br>
   Also learn about <trigger trigger="click" for="modal:v10-brainstorming">brainstorming</trigger> and <trigger trigger="click" for="modal:v10-userstories">user stories</trigger>.
 
-* **Follow the steps in the recipe mentioned above to arrive at user stories for the the product**, with your team members. <span tags="m--cs2103 m--tic4002">If you didn't attend the lecture, please watch the lecture recording to learn more about this step.</span>
+* **Follow the steps in the recipe mentioned above to arrive at user stories for the the product**, with your team members.  <span tags="m--cs2103 m--tic4002">If you didn't attend the lecture, please watch the lecture recording to learn more about this step.<br>
+  <span class="text-danger">Not following the recipe mentioned above</span> could result in a different set of user stories than otherwise.
+  </span>
 
 * **User stories for what version?** At this stage, collect user stories to cover at least the final version you hope to deliver at the end of the semester. It is OK to go even beyond that %%(reason: we are simulating a project that will continue even after the semester is over)%%.{% if cs2103 or tic4002 %}<br>
   Do not omit user stories already covered by the features in AB3 %%i.e., the user story should be recorded even if AB3 already caters for it.%%{% endif %}

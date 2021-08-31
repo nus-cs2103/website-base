@@ -22,7 +22,7 @@ week4: [
 ],
 week5: [
   {id: 'submit_post_lecture_quiz', graded: true},
-  {id: 'submit_midterm_feedback_for_the_module', deadline: get_date(date_w5_start, 6), deadline_type: 'info'},
+  {id: 'submit_midterm_feedback_for_the_module', deadline: get_date(date_w5_start, 8), deadline_type: 'info'},
   {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: get_date(date_w5_start, 6), graded: true}
 ],
 week6: [

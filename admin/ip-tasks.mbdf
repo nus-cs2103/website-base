@@ -298,7 +298,7 @@ Resources:
 
 * **Practice using parallel git branches _and_ PRs**, as explained below:
 1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
-1. Then, push each branch to your fork, and create a PR ++within your fork++ (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_module_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
+1. Then, push each branch to your fork, and create a PR !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_module_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
 
 {{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
 
