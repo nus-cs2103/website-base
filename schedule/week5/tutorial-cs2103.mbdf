@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_as_tab, thumb, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, show_as_rounded_tab, show_as_tab, thumb, timing_badge with context %}
 {% from "_module-" + module + "/studentData.mbdf" import ip_pr_slap_review_allocation as allocations with context %}
 
 #### {{ thumb(1) }} Discuss code quality problems of iP PRs
@@ -24,7 +24,7 @@
    </panel>
    <p/>
 
-1. {{ timing_badge("10 minutes", "info") }} **Find given problems**: Go through the code in the diff view (i.e., the <span class="tab">:octicon-diff: Files changed</span> tab), and and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
+1. {{ timing_badge("10 minutes", "info") }} **Find given problems**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab), and and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
   a. weak SLAP<br>
   b. arrow-head style code<br>
   c. too-long methods<br>

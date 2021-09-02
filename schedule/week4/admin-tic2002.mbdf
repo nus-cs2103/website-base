@@ -25,7 +25,8 @@
   * To be done only after you have pushed some code to your fork.
   * PR name should be your name (you may leave out the family name if you wish).
   * PR description can be left blank.
-  * [GitHub's help page about creating PRs](https://help.github.com/en/articles/creating-a-pull-request).
+  * [GitHub's help page about creating PRs](https://help.github.com/en/articles/creating-a-pull-request).{% if tic2002 %}
+  * ==Use Option A== in the step 3 of the instructions in the panel below, as you guys haven't learned about git branching yet.{% endif %}
 
 {{ embed_topic("../../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
 <!-- ------------------------------------------------------------------------------------------------------ -->
