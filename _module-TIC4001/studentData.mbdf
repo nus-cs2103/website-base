@@ -31,7 +31,12 @@
 ]%}
 
 {% set teams = {
-
+  'TIC4001-F18-1': 'https://docs.google.com/document/d/1zP93t0hugEK9PZLXgyvaDO7s47S3vKJ-AV9vpqnwESc/edit',
+  'TIC4001-F18-2': 'https://drive.google.com/drive/folders/1srNwxdrOnpW5NmsZtY74g1U_EhikoWDa?usp=sharing',
+  'TIC4001-F18-3': 'https://docs.google.com/document/d/1VIJ82_uYj_6vg6yAU3R6hSfGvMCJIGGmnv1DLWzPNLA/edit?usp=sharing',
+  'TIC4001-F18-4': 'https://docs.google.com/document/d/1a-puAY3_JbXeCOSezDEM6lB9Pym1i9ccHeSQNfXTF0M/edit?usp=sharing',
+  'TIC4001-F18-5': 'https://nusu.sharepoint.com/:w:/r/sites/Section_2110_10557-Team5/Shared%20Documents/Team%205/TIC4001%20Team%20Project%20Document.docx?d=w0bca7d6eedd34e3f8a14ff8ea5963d65&csf=1&web=1&e=gxyodn',
+  'TIC4001-F18-6': 'https://docs.google.com/document/d/1pgtQHdrhpmTnWoHeCj_Zt1PZf6JGMN1PA0uFNuvyFDs/edit?usp=sharing'
 }%}
 
 

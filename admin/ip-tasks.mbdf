@@ -380,7 +380,7 @@ One of the increments below asks you to push the design more towards the OOP app
 <div id="desc_use_gfmd_in_pr_description">
 
 * [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) (and Markdown in general) is useful in many places when using GitHub %%e.g., issue tracker, PR reviews, writing documentation%%. The aim of this task is to ensure that you are sufficiently familiar with the GFMD syntax.
-* Requirements: Update the description of the iP PR you created earlier so that it contains the following GFMD elements:
+* Requirements: Update <tooltip content="click on the the `...` icon on the top right corner of the previous description and choose `Edit`">(how?)</tooltip> the description of the iP PR you created earlier so that it contains the following GFMD elements:
   1. a heading
   1. a bullet list
   1. a numbered list
@@ -462,11 +462,16 @@ This task is worth `2x2=4` participtaion points.
 
 * {{ step(1) }} **Note these additional guidelines**:
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
+  * Make sure you ==add 'review comments' (not regular comments)== as only those are counted for participation. See step 4 in the panel above to find how to add 'review comments'.
   * If the PR has received some review comments already, feel free to confirm/complement/question those comments in your review. Also, look for things the previous reviewers may have missed.
   * At the end of the review, choose `Comment` (i.e., not `Approve` or `Request changes`)
 
 * {{ step(2) }} **Do the first PR review** as follows.
-  * Comment on ==[coding standard]({{ url_java_coding_standard }}) violations only==.
+  * Give comment on ==[coding standard]({{ url_java_coding_standard }}) related issues only==.<br>
+    Review comments don't always have to be about problems in the code. Other things you can do:
+    * complement the author on not making a common mistake
+    * ask questions
+    * suggest alternatives
   * The review allocation is given in the panel below.
 
 <div class="indented-level4">

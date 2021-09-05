@@ -24,13 +24,13 @@
    </panel>
    <p/>
 
-1. {{ timing_badge("10 minutes", "info") }} **Find given problems**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab), and and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
+1. {{ timing_badge("10 minutes", "info") }} **Find given problems**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab), and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
   a. weak SLAP<br>
   b. arrow-head style code<br>
   c. too-long methods<br>
   d. too-deep nesting<br>
   <br>
-   {{ icon_tip }} To identify long methods or deep nesting, zoom out and scroll through the entire PR code to do a visual inspection (no need to read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction. If you are unsure about a case, you can also rope the tutor in to the discussion.
+   {{ icon_tip }} To identify long methods or deep nesting, zoom out and scroll through the entire PR code to do a visual inspection (no need to read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction.
    * If you can't find at least one example, you can try the fallback option provided, and failing that, another random iP PR.
    * You can also select borderline cases.
    * **Paste screenshots of problematic code** in the shared online document provided (in the section of the document allocated to you).
