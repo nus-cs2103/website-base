@@ -233,7 +233,7 @@ How is that better?
 
 </box>
 
-**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.
+**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.{% if cs2103 or tic4002 %}<br>%%**Why {{ version_first }} and not v1.1?** v1.1 is a mere documentation update only. {{ version_first }} will be the first version that contains functionality changes.%%{% endif %}
 
 {{ icon_important_big_red }} Do not discuss features, UI, command format, or implementation details yet. That would be like _putting the cart before the horse_. At this stage we are simply trying to choose which user needs to fulfill first.
 
@@ -251,6 +251,18 @@ Suggested workflow:
   * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed_ for {{ version_first }}.
 * **Second stage**:
   * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
+
+<box type="info" icon=":fas-question-circle:"seamless>
+
+**FAQs**{.text-info}
+
+**Q:** What if the chosen user stories for {{ version_first }} is not enough to do a meaningful work division among team members?<br>
+**A:** In that case, you can add more user stories until there is enough for a meaningful work distribution.
+
+{% if cs2103 or tic4002 %}**Q:** Should we omit user stories that are already supported by AB3?<br>
+**A:** No, you should still include them. Reason: The existing implementation might still require some work before it fits your product.
+{% endif %}
+</box>
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
@@ -275,7 +287,7 @@ Suggested workflow:
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
   * [Tutorial 3 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)
-    * This tutorial is optional to do, but **at least read it** through.
+    * This tutorial is optional to do, but **at least give it a quick read**.
     * Submission: not required.
 * The PRs created for tutorials need not be merged, unless the changes are actually in line with your project idea.
 * For reference, given below is the workflow you should follow when merging code in your tP:
@@ -1284,6 +1296,13 @@ Not applicable this semester
 * Attend the practical test, to be done during the lecture.
 
 {{ embed_topic("tp-pe.md#tp-practicalexam", "Admin " + icon_embedding + " tP → Practical Exam", "3", indent="2") }}
+</div>
+{#====================================================================================================================#}
+<span id="heading_attend_the_makeup_PE">{{ icon_individual }} %%[if needed] Attend the makeup practical exam%%</span>
+<div id="desc_attend_the_makeup_PE">
+
+* In the very unlikely event that the PE had to be cancelled due to technical issues, attend the makeup PE on this day.
+* Note: This is <span class="text-danger">not an alternative option for students who could not attend the PE</span>, as all students need to do the PE at the same time.
 </div>
 {#====================================================================================================================#}
 

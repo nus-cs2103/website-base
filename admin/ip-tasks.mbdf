@@ -552,7 +552,7 @@ This activity is worth `2x2=4` participation points.
 <div id="desc_generate_new_jar">
 
 * Generate a new JAR file using Gradle %%(Gradle can bundle the JavaFX third-party library into the jar file. If you do not bundle JavaFX with the JAR file, the application will not work in computers that don't have JavaFX installed)%%. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
-==If the `.jar`  file is smaller than 10MB==, most likely JavaFX libraries are not inside it.
+==If the `.jar`  file is smaller than 5MB==, most likely JavaFX libraries are not inside it.
 * {% if tic4002 %}Make a new release on GitHub and upload the JAR file. You may use any appropriate version number for it.{% else %}There is no need to create a release in GitHub with this jar file (although you are welcome to).{% endif %}
 </div>
 {#====================================================================================================================#}
