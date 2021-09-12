@@ -80,15 +80,16 @@ The software should not depend on your own remote server.<br>
 {%- endcall  %}
 
 {% call show_constraint("Constraint-External-Software") -%}
-The use of third-party frameworks/libraries is allowed but only if they,
-* are free, open-source, and have permissive license terms %%(E.g., trial version of libraries that require purchase after N days are not allowed)%%.
-* do not require any installation by the user of your software.
+The use of third-party frameworks/libraries/services is allowed but only if they,
+* are free, open-source (this doesn't apply to services), and have permissive license terms %%(E.g., trial version of libraries that require purchase after N days/uses are not allowed)%%.
+* do not require any installation by the user of your software.<br>
+  In case of services, requiring the user to create an account on a third-party service is strongly discouraged as it can result in your product for 'low testability'.
 * do not violate other constraints.
 
 and is subjected to prior approval by the teaching team.<br> 
 %%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the module.%%
 
-Please ==post in the [forum]({{url_module_org}}/forum/issues) your request to use a third-party libraries== _before_ you start using the library. Once a specific library has been approved for one team, other teams may use it without requesting permission again.<br/>
+Please ==post in the [forum]({{url_module_org}}/forum/issues) your request to use a third-party libraries/services== _before_ you start using the library. Once a specific software has been approved for one team, other teams may use it without requesting permission again.<br/>
 %%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
 {%- endcall  %}
 
