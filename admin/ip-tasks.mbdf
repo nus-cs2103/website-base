@@ -613,7 +613,7 @@ This activity is worth `2x2=4` participation points.
 
 <div  tags="m--cs2103" id="ip-ui-png-test">
 
-* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your user name}.github.com/{repo name}/Ui.png` (e.g., `https://johndoe.github.com/ip/Ui.png`).
+* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your user name}.github.io/{repo name}/Ui.png` (e.g., `https://johndoe.github.io/ip/Ui.png`).
 </div>
 </div>
 {#====================================================================================================================#}

@@ -315,7 +315,7 @@ Suggested workflow:
   * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in Markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ version_first }}.
   * Include only features that will be delivered in {{ version_first }}.
-  * <span tags="m--cs2103 m--tic4002">Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%</span><span tags="m--cs2113 m--tic4001">Consider including examples of expected outputs too</span>.
+  * <span tags="m--cs2103 m--tic4002">Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%</span><span tags="m--cs2113 m--tic4001">Consider including examples of expected outputs too</span>.
   * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to LumiNUS.<br><br>
 
 <div id="divideDocs" class="indented">
@@ -363,7 +363,7 @@ Update the following pages in your project repo:
 * **_AboutUs_ page**:
   This page (in the `/docs` folder) is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
   * Add your own details. Include a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.
-  * Including the the supervisor/lecturer is optional.
+  * There is no need to mention the the tutor/lecturer, but OK to do so too.
   * The filename of the profile photo should be `docs/images/githbub_username_in_lower_case.png`<br>
     ==Note the need for lower case== (<tooltip content="GitHub usernames are not case sensitive, but URLs in GitHub-pages are -- to avoid any mismatches, we have fixed the file name here to be lower case">%%why lowercase?%%</tooltip>) %%e.g. `JohnDoe123` -> `docs/images/johndoe123.png` not `docs/images/JohnDoe123.png`%%.<br>
     ==If your photo is in jpg format, name the file as `.png` anyway==.
@@ -391,7 +391,7 @@ Update the following pages in your project repo:
     `This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).`
 
 * **Update site-wide settings** as described in the guide [_Using Jekyll for project documentation_ @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html).<br>
-  {{ icon_tip }} The text `AB-3` is in `docs\_sass\minima\_base.scss` as well (it comes into play when you convert documentation to PDF formats).
+  {{ icon_tip }} The text `AB-3` in `docs\_sass\minima\_base.scss` needs updating too (it comes into play when you convert documentation to PDF formats).
 
 </div>
 {#====================================================================================================================#}
@@ -483,12 +483,12 @@ Update the following pages in your project repo:
 
 * {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
   * ==**Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)**== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
-  * **If possible, break the iteration into two _increments_** i.e., aim to produce an even simpler but working version after one week.
-  * **Avoid depth-first implementations**: "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
+  * **[Recommended, Optional] Break the iteration into two _increments_** i.e., aim to produce an even simpler but working version after one week.
+  * **Avoid depth-first implementations**: "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of breadth-first iterative process. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet.
 * {{ icon_team }} **Divide the work among the team members** i.e., the work required for the current iteration.
 * {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a place holder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_first }}`%%<br>
-  Optionally, you can define a `mid-{{ version_first }}` milestone to keep track of things to be done within the first half of the milestone.
+  **If you split the iteration into two smaller iterations** of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b` so that the dashboard can track them accurately. %%The reason for naming the earlier milestone as `{{ version_first }}` is so that even if you fail to finish the second one, you can still get credit for reaching `{{ version_first }}` (which is the milestone tracked by grading scripts) -- think of the first iteration as _minimal deliverables for `{{ version_first }}`_ and the second one as containing _do-if-there-is-time_ improvements.%%
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_implementing_the_next_version">{{ icon_individual }} Start implementing the next version</span>
@@ -569,7 +569,7 @@ Update the following pages in your project repo:
 <div id="desc_add_first_functionality_increment">
 
 * Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).<br>
-  **If you split the iteration into two smaller iterations** of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b` so that the dashboard can track them accurately. %%The reason for naming the earlier milestone as `{{ version_first }}` is so that even if you fail to finish the second one, you can still get credit for reaching `{{ version_first }}` (which is the milestone tracked by grading scripts) -- think of the first iteration as _minimal deliverables for `{{ version_first }}`_ and the second one as _more-to-do-if-there-is-time_.%%
+  As mentioned in the last week, if you split the iteration into two smaller increments of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b`.
 
 * {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%.
 
