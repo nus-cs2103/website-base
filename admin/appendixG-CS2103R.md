@@ -15,13 +15,15 @@
 * The workload is expected to be about 50% of your tP effort.
 
 **Timeline**:
-1. `[Weeks 9-10]` Submit a brief proposal (~ 1 page) outlining the proposed change, expected pros/cons.
+1. `[Weeks 9-10]` Submit a brief proposal (~ 1 page):<br>
+   Contents: your name, student number, an outline of the proposed change, expected pros/cons.<br>
+   Submission: Upload a file `CS2103R-YOUR_NAME.pdf` to the corresponding LumiNUS folder.
 1. `[Reading week]` You will be notified if you are accepted for CS2103R. As this is the first time we are offering CS2103R in this manner, the number of slots is likely to be small in this round.
 1. `[Within 4 weeks of the end of the exam period]` submit the implementation and the report. The grade will be given to you soon after.
 1. `[Week 1 of the following semester]` Register for the module, to receive the extra 1MC in the following semester. More info about R modules is given [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=SUW&title=R+Modules) (requires login).
 
 **Grading**:
-1. The grade is typically tied to the grade you earned for CS2103/T, but can vary in some cases if your CS2103R work is substantially better/worse than your CS2103/T performance.
+1. The grade given is typically the same as the grade you earned for CS2103/T, but can be different if your CS2103R work is substantially better/worse than your CS2103/T performance.
 
 </div>
 
