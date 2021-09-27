@@ -23,48 +23,51 @@ When setting up your team repo, you would be configuring **the GitHub Pages feat
 
 <box>
 
-{{ icon_tip }} **Some common sense tips for a good product screenshot**
+{{ icon_tip }} **Some common sense tips for a good product screenshot**{.text-info}
 
-`Ui.png` represents your product in its full glory.
-* Before taking the screenshot, populate the product with data that makes the product look good. For example, if the product is supposed to show profile photos, use real profile photos instead of dummy placeholders.
-* If the product doesn't have nice line wrapping for long inputs/outputs, don't use such inputs/outputs for the screenshot.
-* It should show a state in which the product is well-populated %%i.e., don't leave data panels largely blank%%.
+`Ui.png` should showcase your product !!in its full glory!!.
+* **Populate the product with _realistic_ data** before taking the screenshot. For example,
+  * if the UI is supposed to show profile photos, use real profile photos instead of dummy placeholders.
+  * if the UI shows text, don't use trivial/garbage values such as `test 123` or values a
+  typical user is unlikely to use.
+* **Use data that make the product _look good_** e.g., if the product doesn't have nice line wrapping for long inputs/outputs, don't use such inputs/outputs for the screenshot.
+* **Avoid too many blank areas**. If you show the product in a well-populated state there shouldn't be largely blank areas that could be filled up instead.
 * Choose a state that showcases the main features of the product %%i.e., the login screen is not usually a good choice%%.
-* Take a _clean_ screenshot with a decent resolution. Some screenshot tools can capture a specified window only. If your tool cannot do that, make sure you crop away the extraneous parts captured by the screenshot.
-* Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is in use for real.
+* **Take a _clean_ screenshot with a decent resolution.** Some screenshot tools can capture a specified window only. If your tool cannot do that, make sure you **crop away the extraneous parts** captured by the screenshot.
+* **Avoid annotations** (arrows, callouts, explanatory text etc.); it should look like the product is in use for real.
 
 <panel tags="m--cs2103 m--tic4002" type="seamless" header="Examples" expanded >
 
 <tabs>
-  <tab header=":-1: Not Good">
+<tab header=":-1: Not Good">
 
 Reason: Distracting annotations.
 
-<img src="images/Ui-notGood1.png" width="600" />
+<pic src="images/Ui-notGood1.png" width="600" />
 
 </tab>
-  <tab header=":-1: Not Good">
+<tab header=":-1: Not Good">
 
 Reason: Not enough data. Should have used real profile pictures instead of placeholder images.
 
-<img src="images/Ui-notGood2.png" width="600" />
+<pic src="images/Ui-notGood2.png" width="600" />
 
 </tab>
-  <tab header=":-1: Not Good">
+<tab header=":-1: Not Good">
 
 Reason: screenshot not cropped cleanly (contains extra background details)
 
-<img src="images/Ui-notGood3.png" width="600" />
+<pic src="images/Ui-notGood3.png" width="600" />
 
 </tab>
 <tab header=":+1: Good">
 
-<img src="images/Ui-good1.png" width="600" />
+<pic src="images/Ui-good1.png" width="600" />
 
 </tab>
-  <tab header=":+1: Good">
+<tab header=":+1: Good">
 
-<img src="https://ay1920s2-cs2103-w15-2.github.io/main/images/Ui.png" width="600" />
+<pic src="https://ay1920s2-cs2103-w15-2.github.io/main/images/Ui.png" width="600" />
 
 </tab>
 </tabs>
