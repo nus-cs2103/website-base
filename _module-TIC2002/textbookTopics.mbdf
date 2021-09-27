@@ -206,9 +206,9 @@
             name: "",
             level_three_topics: [
               {name: "introduction", heading: "Introduction", priority: "1"},
-              {name: "identifying", heading: "Identifying", priority: "-1"},
-              {name: "details", heading: "Details", priority: "-1"},
-              {name: "usage", heading: "Usage", priority: "-1"}
+              {name: "identifying", heading: "Identifying", priority: "4"},
+              {name: "details", heading: "Details", priority: "4"},
+              {name: "usage", heading: "Usage", priority: "4"}
             ]
           }
         ]
@@ -310,7 +310,7 @@
             level_three_topics: [
               {name: "what", heading: "What", priority: "2"},
               {name: "how", heading: "How", priority: "3"},
-              {name: "umlModels", heading: "UML Models", priority: "3"}
+              {name: "umlModels", heading: "UML Models", priority: "4"}
             ]
           }
         ]
@@ -325,7 +325,7 @@
               {name: "classDiagramsBasic", heading: "Class Diagrams (Basics)", priority: "2"},
               {name: "addingMoreInfo", heading: "Adding More Info to UML Models", priority: "3"},
               {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "3"},
-              {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "-1"},
+              {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "4"},
               {name: "objectDiagrams", heading: "Object Diagrams", priority: "2"},
               {name: "objectOrientedDomainModels", heading: "Object Oriented Domain Models", priority: "4"},
               {name: "deploymentDiagrams", heading: "Deployment Diagrams", priority: "4"},
@@ -346,8 +346,8 @@
               {name: "activityDiagramsIntermediate", heading: "Activity Diagrams", priority: "4"},
               {name: "sequenceDiagramsBasic", heading: "Sequence Diagrams - Basic", priority: "2"},
               {name: "sequenceDiagramsIntermediate", heading: "Sequence Diagrams - Intermediate", priority: "3"},
-              {name: "sequenceDiagramsAdvanced", heading: "Sequence Diagrams - Advanced", priority: "-1"},
-              {name: "useCaseDiagrams", heading: "Use Case Diagrams", priority: "-1"},
+              {name: "sequenceDiagramsAdvanced", heading: "Sequence Diagrams - Advanced", priority: "4"},
+              {name: "useCaseDiagrams", heading: "Use Case Diagrams", priority: "4"},
               {name: "timingDiagrams", heading: "Timing Diagrams", priority: "4"},
               {name: "interactionOverviewDiagrams", heading: "Interaction Overview Diagrams", priority: "4"},
               {name: "communicationDiagrams", heading: "Communication Diagrams", priority: "4"},
@@ -382,7 +382,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "1"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           }
         ]
@@ -393,8 +393,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "reading", heading: "Reading", priority: "1"},
-              {name: "drawing", heading: "Drawing", priority: "1"}
+              {name: "reading", heading: "Reading", priority: "4"},
+              {name: "drawing", heading: "Drawing", priority: "4"}
             ]
           }
         ]
@@ -405,44 +405,44 @@
           {
             name: "introduction",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
             name: "nTier",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
             name: "clientServer",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
             name: "transactionProcessing",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
             name: "serviceOriented",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
             name: "eventDriven",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
             name: "more",
             level_three_topics: [
               {name: "moreStyles", heading: "More Styles", priority: "4"},
-              {name: "usingStyles", heading: "Using Styles", priority: "3"}
+              {name: "usingStyles", heading: "Using Styles", priority: "4"}
             ]
           }
         ]
@@ -459,8 +459,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "format", heading: "Format", priority: "2"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "format", heading: "Format", priority: "4"}
             ]
           }
         ]
@@ -471,9 +471,9 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "implementation", heading: "Implementation", priority: "2"},
-              {name: "evaluation", heading: "Evaluation", priority: "3"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "implementation", heading: "Implementation", priority: "4"},
+              {name: "evaluation", heading: "Evaluation", priority: "4"}
             ]
           }
         ]
@@ -495,7 +495,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           }
         ]
@@ -506,7 +506,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           }
         ]
@@ -517,7 +517,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           }
         ]
@@ -528,7 +528,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           }
         ]
@@ -560,7 +560,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "Multi-Level Design", priority: "2"}
+              {name: "what", heading: "Multi-Level Design", priority: "4"}
             ]
           }
         ]
@@ -571,7 +571,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "Top-Down and Bottom-Up Design", priority: "3"}
+              {name: "what", heading: "Top-Down and Bottom-Up Design", priority: "4"}
             ]
           }
         ]
@@ -582,7 +582,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "Agile Design", priority: "3"}
+              {name: "what", heading: "Agile Design", priority: "4"}
             ]
           }
         ]
@@ -712,28 +712,28 @@
       },
       {
         name: "avoidShortcuts",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
-              {name: "introduction", heading: "Introduction", priority: "2"}
+              {name: "introduction", heading: "Introduction", priority: "4"}
             ]
           },
           {
             name: "basic",
             level_three_topics: [
-              {name: "useDefaultBranch", heading: "Use the Default Branch", priority: "2"},
-              {name: "dontRecycleVarsOrParams", heading: "Don't Recycle Variables or Parameters", priority: "2"},
-              {name: "avoidEmptyCatchBlocks", heading: "Avoid Empty Catch Blocks", priority: "2"},
-              {name: "deleteDeadCode", heading: "Delete Dead Code", priority: "2"}
+              {name: "useDefaultBranch", heading: "Use the Default Branch", priority: "4"},
+              {name: "dontRecycleVarsOrParams", heading: "Don't Recycle Variables or Parameters", priority: "4"},
+              {name: "avoidEmptyCatchBlocks", heading: "Avoid Empty Catch Blocks", priority: "4"},
+              {name: "deleteDeadCode", heading: "Delete Dead Code", priority: "4"}
             ]
           },
           {
             name: "intermediate",
             level_three_topics: [
-              {name: "minimiseVariableScope", heading: "Minimize Scope of Variables", priority: "3"},
-              {name: "minimiseCodeDuplication", heading: "Minimize Code Duplication", priority: "3"}
+              {name: "minimiseVariableScope", heading: "Minimize Scope of Variables", priority: "4"},
+              {name: "minimiseCodeDuplication", heading: "Minimize Code Duplication", priority: "4"}
             ]
           }
         ]
@@ -794,7 +794,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           }
         ]
@@ -805,23 +805,23 @@
           {
             name: "goTopDown",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "why", heading: "Why", priority: "3"},
-              {name: "how", heading: "How", priority: "2"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "why", heading: "Why", priority: "4"},
+              {name: "how", heading: "How", priority: "4"}
             ]
           },
           {
             name: "aimForComprehensibility",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "how", heading: "How", priority: "3"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "how", heading: "How", priority: "4"}
             ]
           },
           {
             name: "documentMinimally",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "how", heading: "How", priority: "3"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "how", heading: "How", priority: "4"}
             ]
           }
         ]
@@ -895,7 +895,7 @@
       },
       {
         name: "defensiveProgramming",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
@@ -944,8 +944,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "lateVsEarly", heading: "'Late and One Time' vs 'Early and Frequent'", priority: "2"},
-              {name: "bigBangVsIncremental", heading: "Big-Bang vs Incremental Integration", priority: "3"},
+              {name: "lateVsEarly", heading: "'Late and One Time' vs 'Early and Frequent'", priority: "4"},
+              {name: "bigBangVsIncremental", heading: "Big-Bang vs Incremental Integration", priority: "4"},
               {name: "topDownVsBottomUp", heading: "Top-Down vs Bottom-Up Integration", priority: "4"}
             ]
           }
@@ -1042,7 +1042,7 @@
       },
       {
         name: "cloudComputing",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
@@ -1117,7 +1117,7 @@
             name: "",
             level_three_topics: [
               {name: "what", heading: "What", priority: "1"},
-              {name: "testability", heading: "Testability", priority: "-1"}
+              {name: "testability", heading: "Testability", priority: "4"}
             ]
           }
         ]
@@ -1153,9 +1153,9 @@
           },
           {
             name: "dogfooding",
-            priority: "-1",
+            priority: "5",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "-1"}
+              {name: "what", heading: "What", priority: "4"}
             ]
           },
           {
@@ -1197,32 +1197,32 @@
               {name: "testingTextUis", heading: "Automated Testing of CLI Apps", priority: "3"},
               {name: "usingTestDrivers", heading: "Test Automation Using Test Drivers", priority: "3"},
               {name: "tools", heading: "Test Automation Tools", priority: "3"},
-              {name: "testingGuis", heading: "Automated Testing of GUIs", priority: "-1"}
+              {name: "testingGuis", heading: "Automated Testing of GUIs", priority: "4"}
             ]
           }
         ]
       },
       {
         name: "testCoverage",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "how", heading: "How", priority: "3"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "how", heading: "How", priority: "4"}
             ]
           }
         ]
       },
       {
         name: "dependencyInjection",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"},
+              {name: "what", heading: "What", priority: "4"},
               {name: "how", heading: "How", priority: "4"}
             ]
           }
@@ -1230,7 +1230,7 @@
       },
       {
         name: "tdd",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
@@ -1253,9 +1253,9 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "3"},
-              {name: "positiveVsNegative", heading: "Positive vs Negative Test Cases", priority: "2"},
-              {name: "blackVsGlass", heading: "Black Box vs Glass Box", priority: "2"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "positiveVsNegative", heading: "Positive vs Negative Test Cases", priority: "4"},
+              {name: "blackVsGlass", heading: "Black Box vs Glass Box", priority: "4"}
             ]
           }
         ]
@@ -1266,9 +1266,9 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "basic", heading: "Basic", priority: "2"},
-              {name: "intermediate", heading: "Intermediate", priority: "3"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "basic", heading: "Basic", priority: "4"},
+              {name: "intermediate", heading: "Intermediate", priority: "4"}
             ]
           }
         ]
@@ -1279,8 +1279,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "how", heading: "How", priority: "3"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "how", heading: "How", priority: "4"}
             ]
           }
         ]
@@ -1400,10 +1400,10 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "sequentialModels", heading: "Sequential Models", priority: "2"},
-              {name: "iterativeModels", heading: "Iterative Models", priority: "2"},
-              {name: "agileModels", heading: "Agile Models", priority: "3"}
+              {name: "what", heading: "What", priority: "4"},
+              {name: "sequentialModels", heading: "Sequential Models", priority: "4"},
+              {name: "iterativeModels", heading: "Iterative Models", priority: "4"},
+              {name: "agileModels", heading: "Agile Models", priority: "4"}
             ]
           }
         ]
@@ -1414,8 +1414,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "xp", heading: "XP", priority: "3"},
-              {name: "scrum", heading: "Scrum", priority: "3"},
+              {name: "xp", heading: "XP", priority: "4"},
+              {name: "scrum", heading: "Scrum", priority: "4"},
               {name: "unifiedProcess", heading: "Unified Process", priority: "4"}
             ]
           }
@@ -1438,7 +1438,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "recap", heading: "Recap", priority: "3"}
+              {name: "recap", heading: "Recap", priority: "4"}
             ]
           }
         ]
@@ -1582,7 +1582,7 @@
       },
       {
         name: "activityDiagrams",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "introduction",
@@ -1695,15 +1695,15 @@
               {name: "singleResponsibilityPrinciple", heading: "Single Responsibility Principle", priority: "3"},
               {name: "openClosedPrinciple", heading: "Open-Closed Principle", priority: "4"},
               {name: "liskovSubstitutionPrinciple", heading: "Liskov Substitution Principle", priority: "4"},
-              {name: "interfaceSegregationPrinciple", heading: "Interface Segregation Principle", priority: "-1"},
-              {name: "dependencyInversionPrinciple", heading: "Dependency Inversion Principle", priority: "-1"},
-              {name: "solidPrinciples", heading: "SOLID Principles", priority: "-1"},
+              {name: "interfaceSegregationPrinciple", heading: "Interface Segregation Principle", priority: "4"},
+              {name: "dependencyInversionPrinciple", heading: "Dependency Inversion Principle", priority: "4"},
+              {name: "solidPrinciples", heading: "SOLID Principles", priority: "4"},
               {name: "separationOfConcernsPrinciple", heading: "Separation of Concerns Principle", priority: "2"},
               {name: "lawOfDemeter", heading: "Law of Demeter", priority: "4"},
               {name: "yagniPrinciple", heading: "YAGNI Principle", priority: "4"},
               {name: "dryPrinciple", heading: "DRY Principle", priority: "4"},
               {name: "brooksLaw", heading: "Brooks' Law", priority: "4"},
-              {name: "review", heading: "Review", priority: "-1"}
+              {name: "review", heading: "Review", priority: "4"}
             ]
           }
         ]
@@ -1898,7 +1898,7 @@
               {name: "casting", heading: "Casting", priority: "3"},
               {name: "fileAccess", heading: "File Access", priority: "3"},
               {name: "jar", heading: "Using JAR Files", priority: "3"},
-              {name: "varargs", heading: "Varargs ", priority: "-1"},
+              {name: "varargs", heading: "Varargs ", priority: "4"},
               {name: "streams", heading: "Streams", priority: "4"},
               {name: "javaFX", heading: "JavaFX", priority: "4"}
             ]
