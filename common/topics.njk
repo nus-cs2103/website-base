@@ -100,7 +100,7 @@
 
 ####  <small><span class="font-weight-bold text-muted"><include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline trim /></span></small> **<include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline />**
 </span>
-  {{ panopto(unit.panopto, questions=unit.questions) if unit.panopto  and (week_num | int) <= (current_week | int) + 1 }}
+  {{ panopto(unit.panopto, questions=unit.questions) if unit.panopto  and (week_num | int) <= (current_week | int) + 13 }}
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
 {{ followup(slugify(full_path)) }}
@@ -183,7 +183,7 @@
 
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" {{ "" if params.topic.collapsed else "expanded" }} >
 <span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
-{{ panopto(params.topic.panopto, questions=params.topic.questions) if params.topic.panopto  and (params.week_num | int) <= (current_week | int) + 1 }}
+{{ panopto(params.topic.panopto, questions=params.topic.questions) if params.topic.panopto  and (params.week_num | int) <= (current_week | int) + 13 }}
 <div class="indented-level1">
 {% for entry in entries  %}
   {% if entry.location %}
@@ -191,7 +191,7 @@
     {% set letter_index = letter_index + 1 %}
   {% elseif entry.subheading %}
 {{  show_subheading(entry.subheading) }}
-{{ panopto(entry.panopto, questions=entry.questions) if entry.panopto and (params.week_num | int) <= (current_week | int) + 1 }}
+{{ panopto(entry.panopto, questions=entry.questions) if entry.panopto and (params.week_num | int) <= (current_week | int) + 13 }}
   {% endif %}
 {% endfor %}
 </div>
