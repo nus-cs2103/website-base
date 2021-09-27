@@ -21,12 +21,12 @@ of them.
 
 ### Lectures - Mode{.text-info}
 
-%%Option%% | %%Count%% %%(/159)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/165)%% | %%Percentage%%
 -------|-------|-----------
-I prefer face-to-face lectures<br><span class="text-info bg-info">............................</span><span class="text-light bg-light">............................................................................................................................................................................</span> |23 | 14.47%
-I prefer the current combination of pre-recorded videos and lecture briefings<br><span class="text-info bg-info">..............................................................................................................................</span><span class="text-light bg-light">..........................................................................</span> |101 | 63.52%
-I prefer live online lecture (without pre-recorded videos)<br><span class="text-info bg-info">..............</span><span class="text-light bg-light">..........................................................................................................................................................................................</span> |12 | 7.55%
-I'm neutral between these three options<br><span class="text-info bg-info">............................</span><span class="text-light bg-light">............................................................................................................................................................................</span> |23 | 14.47%
+I prefer face-to-face lectures<br><span class="text-info bg-info">..........................</span><span class="text-light bg-light">..............................................................................................................................................................................</span> |23 | 13.94%
+I prefer the current combination of pre-recorded videos and lecture briefings<br><span class="text-info bg-info">..............................................................................................................................</span><span class="text-light bg-light">..........................................................................</span> |105 | 63.64%
+I prefer live online lecture (without pre-recorded videos)<br><span class="text-info bg-info">..............</span><span class="text-light bg-light">..........................................................................................................................................................................................</span> |12 | 7.27%
+I'm neutral between these three options<br><span class="text-info bg-info">..............................</span><span class="text-light bg-light">..........................................................................................................................................................................</span> |25 | 15.15%
 
 
 <div class="indented">
@@ -61,14 +61,14 @@ Hence, our live lectures are online and limited to briefings only, while most co
 
 ### Lectures - pre-recorded videos{.text-info}
 
-%%Option%% | %%Count%% %%(/159)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/163)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">..............................................................</span><span class="text-light bg-light">..........................................................................................................................................</span> |50 | 31.45%
-Good<br><span class="text-info bg-info">..................................................................................................</span><span class="text-light bg-light">......................................................................................................</span> |78 | 49.06%
-Average<br><span class="text-info bg-info">......................</span><span class="text-light bg-light">..................................................................................................................................................................................</span> |18 | 11.32%
+Excellent<br><span class="text-info bg-info">............................................................</span><span class="text-light bg-light">............................................................................................................................................</span> |50 | 30.67%
+Good<br><span class="text-info bg-info">....................................................................................................</span><span class="text-light bg-light">....................................................................................................</span> |82 | 50.31%
+Average<br><span class="text-info bg-info">......................</span><span class="text-light bg-light">..................................................................................................................................................................................</span> |18 | 11.04%
 Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Can't comment. I don't watch them.<br><span class="text-info bg-info">................</span><span class="text-light bg-light">........................................................................................................................................................................................</span> |13 | 8.18%
+Can't comment. I don't watch them.<br><span class="text-info bg-info">..............</span><span class="text-light bg-light">..........................................................................................................................................................................................</span> |13 | 7.98%
 
 
 <div class="indented">
@@ -88,14 +88,14 @@ Nevertheless, I hope to add more and also improve the existing ones in future se
 
 ### Lectures - Zoom briefings{.text-info}
 
-%%Option%% | %%Count%% %%(/159)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/163)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">..............................................</span><span class="text-light bg-light">..........................................................................................................................................................</span> |37 | 23.27%
-Good<br><span class="text-info bg-info">......................................................................................................</span><span class="text-light bg-light">..................................................................................................</span> |82 | 51.57%
-Average<br><span class="text-info bg-info">............................</span><span class="text-light bg-light">............................................................................................................................................................................</span> |23 | 14.47%
-Below average<br><span class="text-info bg-info">....</span><span class="text-light bg-light">....................................................................................................................................................................................................</span> |4 | 2.52%
-Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |2 | 1.26%
-Can't comment. I have stopped attending them.<br><span class="text-info bg-info">............</span><span class="text-light bg-light">............................................................................................................................................................................................</span> |11 | 6.92%
+Excellent<br><span class="text-info bg-info">............................................</span><span class="text-light bg-light">............................................................................................................................................................</span> |37 | 22.7%
+Good<br><span class="text-info bg-info">....................................................................................................</span><span class="text-light bg-light">....................................................................................................</span> |83 | 50.92%
+Average<br><span class="text-info bg-info">..............................</span><span class="text-light bg-light">..........................................................................................................................................................................</span> |25 | 15.34%
+Below average<br><span class="text-info bg-info">....</span><span class="text-light bg-light">....................................................................................................................................................................................................</span> |4 | 2.45%
+Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |2 | 1.23%
+Can't comment. I have stopped attending them.<br><span class="text-info bg-info">..............</span><span class="text-light bg-light">..........................................................................................................................................................................................</span> |12 | 7.36%
 
 
 <div class="indented">
@@ -120,13 +120,13 @@ You can skip lecture briefings if you think they are not useful, or simply speed
 
 ### Tutorials{.text-info}
 
-%%Option%% | %%Count%% %%(/159)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/164)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">..................................................</span><span class="text-light bg-light">......................................................................................................................................................</span> |40 | 25.16%
-Good<br><span class="text-info bg-info">......................................................................................................</span><span class="text-light bg-light">..................................................................................................</span> |82 | 51.57%
-Average<br><span class="text-info bg-info">....................................</span><span class="text-light bg-light">....................................................................................................................................................................</span> |30 | 18.87%
-Below average<br><span class="text-info bg-info">....</span><span class="text-light bg-light">....................................................................................................................................................................................................</span> |4 | 2.52%
-Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |3 | 1.89%
+Excellent<br><span class="text-info bg-info">..................................................</span><span class="text-light bg-light">......................................................................................................................................................</span> |41 | 25.0%
+Good<br><span class="text-info bg-info">......................................................................................................</span><span class="text-light bg-light">..................................................................................................</span> |84 | 51.22%
+Average<br><span class="text-info bg-info">......................................</span><span class="text-light bg-light">..................................................................................................................................................................</span> |32 | 19.51%
+Below average<br><span class="text-info bg-info">....</span><span class="text-light bg-light">....................................................................................................................................................................................................</span> |4 | 2.44%
+Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |3 | 1.83%
 
 
 <div class="indented">
@@ -169,13 +169,13 @@ Admittedly, our tutorials can feel slow, less efficient, or less active. If you 
 
 ### Module website{.text-info}
 
-%%Option%% | %%Count%% %%(/158)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/160)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">........................................................................................................................</span><span class="text-light bg-light">................................................................................</span> |95 | 60.13%
-Good<br><span class="text-info bg-info">................................................................</span><span class="text-light bg-light">........................................................................................................................................</span> |51 | 32.28%
-Average<br><span class="text-info bg-info">..........</span><span class="text-light bg-light">..............................................................................................................................................................................................</span> |9 | 5.7%
-Below average<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |2 | 1.27%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |1 | 0.63%
+Excellent<br><span class="text-info bg-info">........................................................................................................................</span><span class="text-light bg-light">................................................................................</span> |96 | 60.0%
+Good<br><span class="text-info bg-info">................................................................</span><span class="text-light bg-light">........................................................................................................................................</span> |52 | 32.5%
+Average<br><span class="text-info bg-info">..........</span><span class="text-light bg-light">..............................................................................................................................................................................................</span> |9 | 5.62%
+Below average<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |2 | 1.25%
+Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |1 | 0.62%
 
 
 <div class="indented">
@@ -199,11 +199,11 @@ The feedback for the module website is generally positive but some areas to impr
 
 ### The workload{.text-info}
 
-%%Option%% | %%Count%% %%(/159)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/162)%% | %%Percentage%%
 -------|-------|-----------
-Too high. I can't keep up.<br><span class="text-info bg-info">..........................</span><span class="text-light bg-light">..............................................................................................................................................................................</span> |22 | 13.84%
-A bit high, but I can manage.<br><span class="text-info bg-info">..............................................................................................................................................</span><span class="text-light bg-light">..........................................................</span> |113 | 71.07%
-Just right.<br><span class="text-info bg-info">..............................</span><span class="text-light bg-light">..........................................................................................................................................................................</span> |24 | 15.09%
+Too high. I can't keep up.<br><span class="text-info bg-info">..........................</span><span class="text-light bg-light">..............................................................................................................................................................................</span> |22 | 13.58%
+A bit high, but I can manage.<br><span class="text-info bg-info">..............................................................................................................................................</span><span class="text-light bg-light">..........................................................</span> |116 | 71.6%
+Just right.<br><span class="text-info bg-info">............................</span><span class="text-light bg-light">............................................................................................................................................................................</span> |24 | 14.81%
 A bit low. I can manage even if it is to increase a bit more.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Too low.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 
@@ -241,12 +241,12 @@ The most common concern about this module is the workload.
 
 ### The pace of the module{.text-info}
 
-%%Option%% | %%Count%% %%(/159)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/162)%% | %%Percentage%%
 -------|-------|-----------
-Too fast, I can't keep up<br><span class="text-info bg-info">............</span><span class="text-light bg-light">............................................................................................................................................................................................</span> |11 | 6.92%
-A bit fast, but I can manage<br><span class="text-info bg-info">....................................................................................................................</span><span class="text-light bg-light">....................................................................................</span> |93 | 58.49%
-Just right<br><span class="text-info bg-info">................................................................</span><span class="text-light bg-light">........................................................................................................................................</span> |52 | 32.7%
-A bit too slow. I don't mind a slightly faster pace.<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |3 | 1.89%
+Too fast, I can't keep up<br><span class="text-info bg-info">............</span><span class="text-light bg-light">............................................................................................................................................................................................</span> |11 | 6.79%
+A bit fast, but I can manage<br><span class="text-info bg-info">......................................................................................................................</span><span class="text-light bg-light">..................................................................................</span> |96 | 59.26%
+Just right<br><span class="text-info bg-info">................................................................</span><span class="text-light bg-light">........................................................................................................................................</span> |52 | 32.1%
+A bit too slow. I don't mind a slightly faster pace.<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |3 | 1.85%
 Too slow. Please speed up a lot.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 
 
@@ -406,6 +406,13 @@ I think there is a reason that the school week for NUS and every other school in
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<p>Subtitles for lecture recordings would be good</p>
+<p><box type="info" icon=":fas-comment:" light><span class="text-info">I'm sorry if my accent is hard to follow. Apparently, it is hard to follow for auto-captioning tools too :-( Anyway, I'll be releasing both Panopto and Zoom versions of the lecture in future (I believe the Zoom version has captions)
+</span></box></p>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <p>I like how the Prof always tries to put our minds more at ease during the lectures by saying words of encouragement. It honestly helps a little.</p>
 <p><box type="info" icon=":fas-comment:" light><span class="text-info">Glad to hear that :-)
 </span></box></p>
@@ -560,7 +567,7 @@ just imagining it makes my feels like I wanna run away</p>
 <p>For instance, Week 4's tutorial was simply posting screenshots of our Duke program and typing some answers into the chat related to UML diagram interpretations. An alternative way to conduct this tutorial would be to disseminate the instructions on what and where to upload our screenshots, and a Luminus quiz could be set up to ask the same questions and allow students to type submit their textual responses. (same as on Zoom but students would also be able to keep a copy of their responses for revision). </p>
 <p>Another alternative would be to think of ways to allow for more discussion or communication during tutorials, but that would require more thought and planning which might not be ideal at this point in the semester. </p>
 <p>Thank you!</p>
-<p><box type="info" icon=":fas-comment:" light><span class="text-info">Not having a copy of the slides can indeed be irritating, but if all go as intended, you will not need to refer to tutorials slides later. Those learning points covered in tutorials will come up repeatedly during the semester and you are likely to remember them well enough by the exam. <br><br>All lecture are recorded. Instead of attending the lecture, you can wait a few more hours and watch the video, which is not that different from pre-recording the lecture.<br><br>We try to have both chat and verbal interactions during tutorials. See my general comments about tutorials too.
+<p><box type="info" icon=":fas-comment:" light><span class="text-info">Not having a copy of the slides can indeed be irritating, but if all go as intended, you will not need to refer to tutorials slides later. Those learning points covered in tutorials will come up repeatedly during the semester and you are likely to remember them well enough by the exam. <br><br>But when a tutorial contains something worthy of referencing later (e.g., the model answer to a UML diagram drawing exercise), we'll provide you with a copy of it.<br><br>All lecture are recorded. Instead of attending the lecture, you can wait a few more hours and watch the video, which is not that different from pre-recording the lecture.<br><br>We try to have both chat and verbal interactions during tutorials. See my general comments about tutorials too.
 </span></box></p>
 </td>
 </tr>
