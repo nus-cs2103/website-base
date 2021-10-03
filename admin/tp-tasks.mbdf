@@ -509,6 +509,22 @@ Update the following pages in your project repo:
 * Code from [AddressBook-Level2](https://se-education.org/addressbook-level2/) or any code used in module activities {{ "e.g., personbook" if not tic4001 }}
 
 </box>
+
+{% if tic4001 %}<box>
+
+{{ icon_tip }} **Learn how to use Gradle**
+
+* The tP project template given to you is already configured to use Gradle (a build automation and dependency management tool).
+* If you haven't encountered Gradle before, learn more about Gradle from the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html)
+* Some useful Gradle tasks you can try (to familiarize yourself with using Gradle):
+  * `run`: runs the project code
+  * `clean`: deletes files generates from previous runs
+  * `check`: runs the tests
+  * `checkstyleMain`: checks your Java functional code for compliance with _some_ (but not all) rules specified in the coding standard, using a tool called checkstyle
+  * `checkstyleTest`: similar to above, but checks the test code instead
+  * `shadowJar`: creates a JAR file for your project
+* Note that GitHub Actions too is using Gradle to check the code you push to GitHub. Specifically, it runs the `check` task and then it uses the `shadowJar` task to build the JAR file which is then used to do I/O redirection tests (as per the files in your `text-ui-text` folder)
+</box>{% endif %}
 </div>
 
 * Start implementing {{ version_first }}, by adding code in small steps, while working in parallel, aiming to produce a VERY simple working version after one week, and a bit more functional version at the end of iteration (i.e., after two weeks).
