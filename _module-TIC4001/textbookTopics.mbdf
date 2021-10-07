@@ -446,8 +446,8 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "0:2"},
-              {name: "format", heading: "Format", priority: "0:2"}
+              {name: "what", heading: "What", priority: "2"},
+              {name: "format", heading: "Format", priority: "2"}
             ]
           }
         ]
@@ -519,7 +519,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "0:3"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           }
         ]
@@ -1694,7 +1694,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "singleResponsibilityPrinciple", heading: "Single Responsibility Principle", priority: "2"},
+              {name: "singleResponsibilityPrinciple", heading: "Single Responsibility Principle", priority: "0:2"},
               {name: "openClosedPrinciple", heading: "Open-Closed Principle", priority: "3"},
               {name: "liskovSubstitutionPrinciple", heading: "Liskov Substitution Principle", priority: "-1"},
               {name: "interfaceSegregationPrinciple", heading: "Interface Segregation Principle", priority: "-1"},
