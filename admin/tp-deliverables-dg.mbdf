@@ -38,7 +38,7 @@
 
 <span id="dgTips">
 
-* **Aim to showcase your documentation skills.** The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond {{ version_final }} (hypothetically).<br>
+* **Aim to showcase your documentation skills.** The primary objective of the DG is to explain the implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond {{ version_final }} (hypothetically).<br>
   For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ url_ab3_upstream_website }}/DeveloperGuide.html#proposed-undoredo-feature).
 * **Use multiple UML diagram types.** Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.
 * **Diagramming tools**:
