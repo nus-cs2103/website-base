@@ -230,7 +230,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 * Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
 </box>
 
-* Go to [CATcher Web version](https://catcher-org.github.io/CATcher/) (use the desktop version only if the Web version fails), and login to the profile `{{ module_pair }} PE`. It will show all the bugs assigned to your team, divided into three sections:
+* Go to [CATcher Web app](https://catcher-org.github.io/CATcher/), and login to the profile `{{ module_pair }} PE`. It will show all the bugs assigned to your team, divided into three sections:
   1. `Issues Pending Responses` - Issues that your team has not processed yet.
   1. `Issues Responded` - Your job is to get all issues to this category.
   1. `Faulty Issues` - e.g., Bugs marked as duplicates of each other, or causing circular _duplicate_ relationships. Fix the problem given so that no issues remain in this category.

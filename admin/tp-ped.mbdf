@@ -30,7 +30,7 @@
 **Join the zoom session of the regular lecture** (you ==must attend the lecture _officially_ allocated== to you -- you are not allowed to attend an alternative lecture slot this week).
 {% endif %}
 
-**Use ==the [CATcher Web version](https://catcher-org.github.io/CATcher/)==** for reporting bugs. Use the desktop version only if the Web version run into problems.
+**Use ==the [CATcher Web app](https://catcher-org.github.io/CATcher/)==** for reporting bugs.
 
 **Use MS Teams (not Zoom) to contact prof** if you need help during the session. Use Zoom chat only if you don't get a response via MS Teams.
 
@@ -205,7 +205,7 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 * **If you have received stray bug reports** (i.e., bug reports that don't seem to be about your project), do let us know ASAP (email the prof).
 * **You can navigate to the original bug report** (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
   * {{ icon_tip }} Do not argue with the tester to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the tester for their view and discontinue to discussion.
-* ~~**==If a bug report received is not useful _at all_==** (i.e., it looks like the tester submitted some random rubbish to increase the bug count), add the `invalid` label to it (add that label if it doesn't exist in your issue tracker). We will not count such bugs when giving credit to testers.~~ If you receive 'insincere' bug reports that seem like just an attempt to increase the tester's bug count, please let us know.<br>
+* **If you have received 'insincere' bug reports** that seem like just an attempt to increase the tester's bug count, please let us know.<br>
   As for the other bug reports, you can deal with them as you see fit (i.e., triage, apply labels, assign, close etc.).<br>
 * **You may ignore `type/severity.*` labels given by the tester.** They will not affect you or the tester either way -- they were there just for the testers to practice. You may apply your own type/severity labels if you wish.{% if cs2103 or tic4002 %}
 * **If a bug report is simply a feature suggestion**, you can take note of it and close it (to reduce clutter in the issue tracker, and to make it easy for the teaching team to track your progress on dealing with PE-D issues). Similarly, you can close PE-D issues not relevant to {{ version_penultimate }}.{% endif %}
