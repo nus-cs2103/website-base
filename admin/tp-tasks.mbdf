@@ -680,6 +680,10 @@ The version you deliver in this iteration (i.e., {{ version_penultimate }}) will
 
 Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks. The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
 
+<panel header="Admin {{ icon_embedding }} tP → **Grading → Product Design** (excerpt) → Feature Flaws" minimized>
+<include src="tp-grading-bugs.mbdf#featureFlaws" />
+</panel>
+<p/>
 <panel header="Admin {{ icon_embedding }} Practical Exam → **Guidelines for determining bugs in the final version (excerpts)**" minimized>
 
 ...
@@ -692,6 +696,7 @@ Given that you'll have to make important feature decisions in this iteration, it
 
 </box>
 <box tags="m--tic4001" type="tip" seamless>
+
 In the final iteration (i.e., the one after this), you will be doing a lot of additional things e.g., adding documentation.
 Hence, it is in your interest to ==finish implementing all your <tooltip content="features you want to include in your final version (i.e., {{ version_final }})">final features</tooltip> in this iteration itself== so that you can use the final iteration for polishing up the functionalities and adding documentation.
 </box>
@@ -804,7 +809,7 @@ Here are some reasons:
 %%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE this semester.%%
 </box>
 
-This week, we would like you to smoke-test the CATcher app **to ensure it can run in your computer**, by following the steps given in the panel below.
+This week, we would like you to smoke-test the CATcher app **to ensure it can work with your OS, Browser, GitHub account**, by following the steps given in the panel below.
 <p/>
 
 <panel type="info" header="**The steps for smoke-testing CATcher:**" minimized>

@@ -15,10 +15,10 @@
 * Give an example of defensive programming from AB3 or your tP.
 
 
-#### {{ thumb(3) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
+#### {{ thumb(3) }} Review sample <tooltip content="Developer Guide">DG</tooltip> extracts
 
-* Evaluate the sample DG extracts (will be provided by the tutor), as guided by the tutor.
-* In particular, detect the following DG bugs (they are the same bugs that will be used when evaluating your final DG).
+* Evaluate the sample DG extracts in `T10-DG-Extracts.pdf` (in [LumiNUS/Files]({{ url_files }})/Handouts).
+* In particular, detect the following DG bugs (they are the same bugs against which your final DG will be evaluated).
 
 {{ embed_topic("../../admin/tp-grading-bugs.mbdf#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
 {{ embed_topic("../../admin/tp-grading-bugs.mbdf#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}

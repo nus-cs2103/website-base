@@ -42,7 +42,7 @@ week10: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week11: [
-  {id: 'join_catcher_load_testing', graded: true, deadline: "during the lecture", deadline_type: 'danger'},
+  {id: 'join_catcher_load_testing', graded: true, deadline: "during the lecture on " + get_date(date_w11_start, 0, format="MMM Do", time=""), deadline_type: 'danger'},
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week12: [

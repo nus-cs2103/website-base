@@ -4,7 +4,8 @@ These are considered _feature flaws_:<br>
 :fas-bug: The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
 :fas-bug: Hard-to-test features<br>
 :fas-bug: Features that don't fit well with the product<br>
-:fas-bug: Features that are not optimized enough for fast-typists or target users
+:fas-bug: Features that are not optimized enough for fast-typists or target users<br>
+:fas-bug: Violations of given [project constraints](tp-constraints.md)
 </div>
 
 <div id="functionalityBugs">
