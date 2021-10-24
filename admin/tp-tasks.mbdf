@@ -46,6 +46,24 @@
 </div>
 
 {#====================================================================================================================#}
+<div id="cs2103-week11-intro">
+
+<box dismissible>
+
+****{{ icon_tip }} How much is enough to get full marks?**** Not surprisingly, a common question tutors receive around this time of the project is "can you look at our project and tell us if we have done enough to get full marks?". Here's the answer to that question:
+
+**The tP _effort_ is graded primarily based on peer judgements** (tutor judgements are used too). That means you will be judging the effort of another team later, which also means you should be able to make a similar judgement for your own project now. Granted effort estimating is hard for software projects, but it is an essential SE skill, and we must practice it when we can.
+
+**The expected minimum bar to get full marks for _effort_**:
+* For the team: an effort equivalent to the effort required to develop AB3 from scratch
+* For an individual: an effort equivalent to the effort the iP required
+
+If you surpass the above bars (in your own estimation), you should be in a good position to receive full marks for the effort. But keep in mind that there are many other components in the [tP grading](tp-grading.md), not just the effort.
+</box>
+
+</div>
+
+{#====================================================================================================================#}
 <div id="cs2103-week12-intro">
 
 <box dismissible>
@@ -1017,9 +1035,9 @@ Also see:
 <span id="heading_start_fixing_PED_bugs">{{ icon_individual }} Start fixing PED bugs</span>
 <div id="desc_start_fixing_PED_bugs">
 
-1. **Triage the bugs you received in the PED**, by following the procedure given below:
+1. **Triage the bugs you received in the PE-D**, by following the procedure given below:
 
-{{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PED**", "3", indent="2") }}
+{{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="2") }}
 
 2. **Note what is allowed in this milestone**:
 
@@ -1042,8 +1060,8 @@ Also see:
 **FAQs:**
 * **Q:** Can we add a missing validity check for a user input?<br>
 **A:** Yes, but only if its absence causes the software to mis-behave (i.e., it's omission can be considered a bug).
-* **Q:** Testers have reported a missing feature (or a feature suggestion). Can we add it?<br>
-**A:** Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
+* **Q:** Testers have reported missing feature (or suggested feature tweaks). Can we add/tweak those features?<br>
+**A:** No, as that goes against the spirit of having a feature freeze. Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
 Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
 </box>
 </div>
@@ -1056,13 +1074,13 @@ Also note that given there's a feature freeze in {{ version_final }}, some lower
 As before, you may split this milestone into smaller iterations if you wish e.g., `{{ version_final }}`, `{{ version_final }}b`, ...
 
 **Expectations at mid-{{ version_final }}** (i.e., by the tutorial date):
-* <span class="text-danger">**Minimal:**</span> all PED bugs have been triaged, bugs to be fixed in the current iteration have been chosen, and assigned to relevant team members.
-* <span class="text-success">**Recommended:**</span> all (or almost all) the PED that you have chosen to fix have been fixed already.
+* <span class="text-danger">**Minimal:**</span> all PE-D bugs have been triaged, bugs to be fixed in the current iteration have been chosen, and assigned to relevant team members.
+* <span class="text-success">**Recommended:**</span> all (or almost all) the PE-D that you have chosen to fix have been fixed already.
 
-{% if cs2103 %}**On the tutorial day, ==one member should post a message in your team's MS-Teams channel==** %%(i.e., the one inside the MS-Teams used for tutorials)%% stating if PED bug triaging is done, how many bugs were selected as 'must fix' and 'good to fix' in {{ version_final }} and how many of them have been done already. This post will be counted as a team progress deliverable e.g.,
+{% if cs2103 %}**On the tutorial day, ==one member should post a message in your team's MS-Teams channel==** %%(i.e., the one inside the MS-Teams used for tutorials)%% stating if PE-D bug triaging is done, how many bugs were selected as 'must fix' and 'good to fix' in {{ version_final }} and how many of them have been done already. This post will be counted as a team progress deliverable e.g.,
 
 >Our team's mid-{{ version_final }} progress:
->* PED bug triaging progress: 100%
+>* PE-D bug triaging progress: 100%
 >* Must fix: 6 bugs (fixed: 5)
 >* Good to fix: 8 bugs (fixed: 1)
 {% endif %}

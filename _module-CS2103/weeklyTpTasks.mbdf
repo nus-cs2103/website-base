@@ -51,7 +51,6 @@ week11: [
   {id: 'deliver_the_feature'},
   {id: 'update_user_docs'},
   {id: 'release_as_a_jar_file'},
-  {id: 'make_code_reposense_compatible'},
   {id: 'wrap_up_penultimate_version'},
   {id: 'demo_penultimate_version', deadline: 'before the tutorial'}
 ],
@@ -62,7 +61,7 @@ week12: [
   {id: 'draft_the_ppp'},
   {id: 'prepare_for_demo'},
   {id: 'try_pdf_conversion_early'},
-  {id: 'double_check_reposense_compatibility'}
+  {id: 'make_code_reposense_compatible'}
 ],
 week13: [
   {id: 'do_final_tweaks'},

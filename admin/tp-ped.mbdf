@@ -26,11 +26,7 @@
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">During the session</span>
 
-{% if cs2103 and S == "1" %}
-**Join the zoom session of the regular lecture** (you ==must attend the lecture _officially_ allocated== to you -- you are not allowed to attend an alternative lecture slot this week).
-{% endif %}
-
-**Use ==the [CATcher Web app](https://catcher-org.github.io/CATcher/)==** for reporting bugs.
+**Use ==the [CATcher Web app](https://catcher-org.github.io/CATcher/)==** for reporting bugs. More instructions will be given during the PE-D %%e.g., which session to use%%.
 
 **Use MS Teams (not Zoom) to contact prof** if you need help during the session. Use Zoom chat only if you don't get a response via MS Teams.
 
@@ -38,11 +34,11 @@
 
 ****How many bugs to report?****
 
-Report as many bugs as you can find during the given time. Take longer if you need. If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. In that case, all the more reasons to spend more time and find more bugs now.
+Report as many bugs as you can find during the given time. Take longer if you need (unlike the PE, PE-D is not timed strictly). If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. In that case, all the more reasons to spend more time and find more bugs now.
 
-**Bug reports marked as `invalid` by the receiving team** later will not count for credit.
+**Insincere bug reports** will not count for credit %%i.e., don't submit 'fake' bug reports to increase the bug count.%%
 
-**The median number of bugs reported in the previous semester's PED was 9.** Someone reporting just a 2-3 bugs is usually a sign of a half-hearted attempt rather than lack of bugs to find. If you really can't find bugs, at least submit suggestions for improvements.
+**The median number of bugs reported in the previous semester's PE-D was 9.** Someone reporting just a 2-3 bugs is usually a sign of a half-hearted attempt rather than lack of bugs to find. If you really can't find bugs, at least submit suggestions for improvements.
 </box>
 
 **PE and PE-D are _manual_ testing sessions.** Using test automation tools or scripting is not allowed.
@@ -179,7 +175,7 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
 * Use a descriptive title.
 * Give a good description of the bug with ==steps to reproduce, expected, actual, and screenshots==. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.
-* Assign exactly one `severity.*` label to the bug report. Bug report without a severity label are considered `severity.Low` (lower severity bugs earn lower credit)<br>
+* Assign exactly one `severity.*` label to the bug report. Bug reports without a severity label are considered `severity.Low` (lower severity bugs earn lower credit)<br>
 
 <div class="indented-level2">
 <include src="appendixE-gitHub.md#bug-severity" />
