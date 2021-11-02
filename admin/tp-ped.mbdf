@@ -82,7 +82,22 @@ Report as many bugs as you can find during the given time. Take longer if you ne
   {{ icon_info }} If you are on Windows, use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.<br>
   {{ icon_info }} If the JAR file name has spaces in it, remember to surround it with double quotes.<br>
   e.g., `java -jar "Name With Spaces.jar"`
-* **If the product doesn't work at all:** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, contact the invigilator (via MS Teams, and failing that, via Zoom chat) to receive a _fallback_ team to test.
+
+<box type="info">
+
+**++If the product doesn't work at all:++** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, {% if not cs2103 %}contact the invigilator (via MS Teams, and failing that, via Zoom chat) to receive a _fallback_ team to test.{% else %}do the following:
+
+1. **Check the UG** of the team, to see if there are extra things you need to do before launching the JAR.<br>
+   **Confirm that you are using Java 11** and using the `java -jar` command to run the JAR, as explained in points above.
+1. **Contact our head TA** via MS Teams (name: `Kim Hyeongcheol`, NUSNET: `dcskh`) and give him<br>
+(a) **a screenshot** of the error message, and<br>
+(b) **your GitHub** username.
+1. **Wait for him to give you a fallback** team to test.<br>
+   Contact the prof (via MS Teams) if you didn't get a response from Kim within 5 minutes.
+1. **Delete bug reports you submitted for the previous team** (if any), using CATcher.
+1. **You should not go back to testing the previous team** _after_ you've been given a fallback team to test.
+{% endif %}
+</box>
 
 
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
@@ -198,6 +213,32 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span>
 * **The relevant bug reports will be transferred to your issue tracker** within a day after the session is over. Once you have received the bug reports for your product, you can decide whether you will act on reported issues before the final submission {{ version_final }}. For some issues, the correct decision could be to reject or postpone to a version beyond {{ version_final }}.<br>
   Reminder: There is no penalty for any of the bugs you received in the PE-D.
+
+<div class="indented-level2">
+
+<box type="info" seamless icon=":fas-angry:">
+
+****Dealing with "What the h___ the tester was thinking?" type bug reports****{.text-info}
+
+Some bug reports will make you angry because they seem baseless, wrong, offensive etc. It's still possible to get value from such bug reports though:
+* After you got over the initial indignation, dig deeper to see if there's even the slightest possibility that there is a bug. For example, consider this scenario:
+   1. The tester claims a certain command doesn't work.
+   1. All your team members tried the exact same command and it works as advertised. What the h___ the tester is trying to pull here?
+   1. In reality, the error is actually caused by a duplicate entry in the database resulting from a previous command; the tester didn't mention that command in the bug report (because s/he didn't realize the two are connected).
+* The reported bug might be non-existent but the tester's screw up can indicate other areas to improve. For example, the tester reports a missing feature that is clearly mentioned as 'not implemented' in the UG, but perhaps the UG can be improved to make that fact harder to miss?
+* What exactly about the bug report that makes you angry? Remind yourself not to do the same offence when you report bugs yourself in future.
+
+Use the pain of dealing with this kind of bug reports as an opportunity to develop the following mindset:
+
+**(a) The product is _guilty until proven innocent_**: If the bug report has even a _hint_ of something amiss with the product, it's your (not the tester's) responsibility to try and prove if it is really a problem or not. Why? because finding a bug is a win for _you_ -- as you can then fix it and thereby avoid the humiliation of releasing a buggy product.
+
+**(b) A crappy bug report is better than no bug report**: If the bug actually exists, it is better to have _some_ indication about it than none at all. In a real project, a tester that fails to find bugs can cause more harm to your career than a tester who finds bugs but doesn't report them well.
+
+**(c) I _used_ to get angry at bug reports, but not any more**: If you work hard, take pride in the quality of your work, it's no wonder that you get angry when others find faults with your work incorrectly. Aim to move past that phase where you take bug reports personally. The sooner you can tackle any sh*tty bug report calmly and objectively, the sooner you'll rise to the 'professional' software engineer level.
+</box>
+</div>
+
+
 * **If you have received stray bug reports** (i.e., bug reports that don't seem to be about your project), do let us know ASAP (email the prof).
 * **You can navigate to the original bug report** (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
   * {{ icon_tip }} Do not argue with the tester to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the tester for their view and discontinue to discussion.

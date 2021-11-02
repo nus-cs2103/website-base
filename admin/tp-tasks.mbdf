@@ -46,7 +46,7 @@
 </div>
 
 {#====================================================================================================================#}
-<div id="cs2103-week11-intro">
+<div id="cs2103-week10-intro">
 
 <box dismissible>
 
@@ -692,7 +692,7 @@ Update the following pages in your project repo:
 
 <box type="important" tags="m--cs2113 m--cs2103 m--tic4002" seamless>
 
-{% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features.** You will <span class="text-danger">not be allowed to add features in the following iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized.{% endif %}
+{% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add/update features** as there will be a <span class="text-danger">_feature freeze_ enforced in {{ version_final }}</span> .== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized.{% endif %}
 
 The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the {{ version_final }} later.{% endif %}
 
@@ -1053,16 +1053,22 @@ Also see:
 {{ icon_tick_green }} improving tests<br>
 {{ icon_tick_green }} removing features
 
-{{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span> adding features or doing major changes to existing features.
+{{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span> adding/changing features (except bug fixes).
 
 **The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, {{ version_final }} should not have _any_ features that was not already tested in the PE-D).
 
 **FAQs:**
-* **Q:** Can we add a missing validity check for a user input?<br>
+* **Q: Can we add a missing validity check for a user input?**<br>
 **A:** Yes, but only if its absence causes the software to mis-behave (i.e., it's omission can be considered a bug).
-* **Q:** Testers have reported missing feature (or suggested feature tweaks). Can we add/tweak those features?<br>
+* **Q: Can we add/tweak features if testers have reported/suggested them** as possible improvements or feature feature flaws?<br>
 **A:** No, as that goes against the spirit of having a feature freeze. Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
-Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
+ {{ icon_tip }} Some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.<br>
+  {{ icon_tip }} While you are not allowed to fix feature-flaws in this iteration, you can still reduce the penalty they can cost in the PE (if they are reported again in the PE) by reducing their impact on the user (e.g., by clearly specifying limitations of the current implementation in the UG), thereby reducing the severity of the bug.
+* **Q: How to distinguish between a feature tweak (i.e., not allowed) and a bug fix (i.e., allowed)?**<br>
+**A:** A case should satisfy both these conditions for it to be considered a bug fix:<br>
+  (a) The behavior in question is !!stated!! in the UG and the actual behavior !!differs!! from it.<br>
+  (b) The feature is implemented !!fully!!, but behaves incorrectly.<br>
+ {{ icon_important_big_red }} Just putting the behavior in the UG first (without implementing it fully) and implementing it later in {{ version_final }} does not qualify as a bug fix.
 </box>
 </div>
 
@@ -1077,7 +1083,7 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 * <span class="text-danger">**Minimal:**</span> all PE-D bugs have been triaged, bugs to be fixed in the current iteration have been chosen, and assigned to relevant team members.
 * <span class="text-success">**Recommended:**</span> all (or almost all) the PE-D that you have chosen to fix have been fixed already.
 
-{% if cs2103 %}**On the tutorial day, ==one member should post a message in your team's MS-Teams channel==** %%(i.e., the one inside the MS-Teams used for tutorials)%% stating if PE-D bug triaging is done, how many bugs were selected as 'must fix' and 'good to fix' in {{ version_final }} and how many of them have been done already. This post will be counted as a team progress deliverable e.g.,
+{% if cs2103 %}**On the tutorial day, ==one member should post a message in your team's MS-Teams channel==** %%(i.e., the one inside the MS-Teams used for tutorials)%% stating if PE-D bug triaging is done, how many bugs were selected as 'must fix' and 'good to fix' in {{ version_final }} and how many of them have been done already. Remember to ==tag the tutor== in that post. Note that this post will be counted as a team progress deliverable e.g.,
 
 >Our team's mid-{{ version_final }} progress:
 >* PE-D bug triaging progress: 100%
@@ -1098,7 +1104,8 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 
 {{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="2") }}
 
-* **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level.
+* **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level.<br>
+  Refactoring code does not violate a feature freeze (as refactoring doesn't change the behavior). Still, it is not advisable to (but you are allowed to) do _major_ refactorings this close to a major release.
 
 {{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="2") }}
 

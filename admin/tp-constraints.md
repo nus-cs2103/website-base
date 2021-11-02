@@ -117,14 +117,20 @@ If you are unable to package everything into a JAR file, package the JAR file an
 {%- endcall  %}
 
 {% call show_constraint("Constraint-File-Size") -%}
-The file sizes of the deliverables should not exceed the limits given below. <br>
+The file sizes of the deliverables should be reasonable and not exceed the limits given below. <br>
 <div tags="m--cs2113 m--cs2103 m--tic4002">
 
-%%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue%%:</div>
+%%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue. Plus, there is no reason to use space/bandwidth without any benefit.%%</div>
 
 * <span class="text-danger">Product (i.e., the JAR/ZIP file): 100MB</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
 
 * <span class="text-danger">Documents (i.e., PDF files): 15MB/file</span> (Not following [the recommended method of converting to PDF format](https://se-education.org/guides/tutorials/savingPdf.html) can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).
+
+In addition, do ==ensure that the final JAR/PDF files are not bloated unnecessarily==. Such bloat can be considered a bug.
+Some suggestions:
+
+* Check if the the assets (e.g., images, audio, data) included in the JAR files are all strictly necessary and the quality is not unnecessarily high (e.g., images with higher resolution than necessary).
+* Check if the third-party libraries in the JAR file are strictly necessary or whether they have lighter versions that are still enough for your purpose.
 {%- endcall  %}
 
 {% call show_constraint("Constraint-PDF-Friendly") -%}

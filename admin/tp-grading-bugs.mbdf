@@ -121,16 +121,16 @@ These are considered _functionality bugs_:<br>
 ##### Grading bugs found in the PE
 
 * ==Of <tooltip content="_Developer Testing_ component, based on the bugs found in your code">3A</tooltip> and <tooltip content="_System/Acceptance Testing_ component, based on the bugs found in others' code">3B</tooltip> above, the one you do better will be given a 70% weight and the other a 30% weight== so that your total score is driven by your strengths rather than weaknesses.
-* Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.
-* The penalty/credit for a bug varies based on the severity of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
-* The three types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components. The penalty/credit can vary based on the bug type. %%Given that you are not told which type has a bigger impact on the grade, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.%%
-* The penalty for a bug is divided equally among assignees.
-* Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.
-* <tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit for the tester and slightly higher penalty for the developer.
-* If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means %%(e.g., performance in PE dry run)%% to calculate your marks for system/acceptance testing.
-* Your marks for developer testing depends on the _bug density_ rather than total bug count. Here's an example:
+* **Bugs rejected by the dev team**, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.
+* **The penalty/credit for a bug varies based on the severity** of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
+* **The three types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components.** The penalty/credit can vary based on the bug type. %%Given that you are not told which type has a bigger impact on the grade, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.%%
+* **The penalty for a bug is divided equally** among assignees.
+* **Developers are not penalized for duplicate bug reports** they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.
+* **<tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit** for the tester and slightly higher penalty for the developer.
+* **If the team you tested has a low bug count** i.e., total bugs found by _all_ testers is low, we will fall back on other means %%(e.g., performance in PE dry run)%% to calculate your marks for system/acceptance testing.
+* **Your marks for developer testing depends on the _bug density_ rather than total bug count.** Here's an example:
   * `n` bugs found in your feature; it is a big feature consisting of lot of code → 4/5 marks
   * `n` bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks
-* You don't need to find _all_ bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.
-* Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>, if deemed an attempt to _game the system_, will be penalized.
+* **You don't need to find _all_ bugs in the product** to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.
+* **Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>**, if deemed an attempt to _game the system_, will be penalized.
 </div>

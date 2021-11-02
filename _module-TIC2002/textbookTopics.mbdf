@@ -790,6 +790,7 @@
     level_one_topics: [
       {
         name: "introduction",
+        priority: "-1",
         level_two_topics: [
           {
             name: "",
@@ -801,6 +802,7 @@
       },
       {
         name: "guidelines",
+        priority: "4",
         level_two_topics: [
           {
             name: "goTopDown",
@@ -900,11 +902,11 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "compulsoryAssociations", heading: "Enforcing Compulsory Associations", priority: "3"},
+              {name: "what", heading: "What", priority: "4"},
+              {name: "compulsoryAssociations", heading: "Enforcing Compulsory Associations", priority: "4"},
               {name: "1to1Associations", heading: "Enforcing 1-to-1 Associations", priority: "4"},
               {name: "referentialIntegrity", heading: "Enforcing Referential Integrity", priority: "4"},
-              {name: "when", heading: "When", priority: "3"}
+              {name: "when", heading: "When", priority: "4"}
             ]
           }
         ]
@@ -940,6 +942,7 @@
       },
       {
         name: "approaches",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
