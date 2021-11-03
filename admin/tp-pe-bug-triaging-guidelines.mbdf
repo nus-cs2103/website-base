@@ -21,7 +21,7 @@
 
 * **Problems caused by very long input values**: When a user input is unusually long %%e.g., a very long name, a very large number%%, it can cause problems e.g., the UI layout can get messed up, some part of it might get cut off.
   * These can be considered cosmetic issues (i.e., `severity.VeryLow`) of `type.FunctionalityBug`. Some exceptions are below:
-    * The problems can only happen unless in case of deliberate sabotage %%(e.g., user entered a 30-digit telephone number)%%, in which case it should be considered a bug.
+    * The problems can only happen in case of deliberate sabotage %%(e.g., user entered a 30-digit telephone number)%%, in which case it should not be considered a bug.
     * The problem can hinder the user %%(e.g., not seeing the last part of a very long name might not hinder the user but it does hinder the user if only the first few characters of the name is shown)%%, the severity can be `Low` or `Medium`.
   * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are not longer than 8 digits.
 * **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 or tic4002 %}

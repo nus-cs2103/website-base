@@ -153,7 +153,8 @@ Weekly project increments are given in the panels below:
 
 **Deadline**:
 * Soft deadline: {{ get_date(date_w13_start, format=format_normal) }} (Monday of week 13)<br>
-  Hard deadline: {{ get_date(date_w13_start, 6, format=format_normal) }} (Sunday of week 13)
+  Hard deadline: {{ get_date(date_w13_start, 6, format=format_normal) }} (Sunday of week 13)<br>
+  An extra week can be given (upon request) for a small late submission penalty of `-2` marks.
 
 * What's the difference between the soft deadline and the hard deadline? You can get prof's feedback on a draft of the project report up to the soft deadline. Note that feedback on project report draft will be high-level feedback only (reason: the report is graded).
 

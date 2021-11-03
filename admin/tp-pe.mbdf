@@ -38,6 +38,15 @@
 </div>
 <p/>
 
+* In addition, it is recommended that you read the guidelines the dev team will follow when responding to your bug reports later, given in the panel below.
+<div class="indented-level2">
+<panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" minimized>
+
+<include src="tp-pe-bug-triaging-guidelines.mbdf"/>
+</panel>
+</div>
+<p/>
+
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
 
 * **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 7, format=format_normal, time="") }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 7pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}

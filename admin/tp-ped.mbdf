@@ -186,7 +186,9 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 
 ###### <div class="text-white bg-secondary p-1">e) Bug report format</div>
 
-* Each bug should be a separate issue %%i.e., do not report multiple problems in the same bug report.%%
+* Each bug should be a separate issue %%i.e., do not report multiple problems in the same bug report.%%<br>
+  If there are multiple bugs in the same report, the dev team will select only one of the bugs in the report and discard the others.
+* When reporting similar bugs, it is safer to report them as separate bugs because there is no penalty for reporting duplicates while putting multiple bugs in the same report can reduce your bug count (see the previous point). But as submitting multiple bug reports take extra time, if you are quite sure they will be considered as _duplicates_ by the dev team later, you can report them together, to save time.
 * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
 * Use a descriptive title.
 * Give a good description of the bug with ==steps to reproduce, expected, actual, and screenshots==. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.
