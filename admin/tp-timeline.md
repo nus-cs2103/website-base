@@ -118,7 +118,7 @@ The first half of the tP is light because you will be doing the iP in parallel d
 <div tags="m--cs2103 m--cs2113">
 
 * This iteration is <span class="text-danger">shorter</span> (slightly more than one week).
-* ==**Adding new features (or major changes to features) is {{ "not allowed" if cs2103 else "strongly discouraged" }}** in this iteration.== Use it for bug fixing, code quality improvements, improving the tests, and polishing up documentation only.
+* ==**Changes to features are {{ "not allowed" if cs2103 else "strongly discouraged" }}** in this iteration.== Use it for bug fixing, code quality improvements, improving the tests, and polishing up documentation only.
 </div>
 <div tags="m--tic4001">
 

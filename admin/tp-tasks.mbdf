@@ -21,9 +21,9 @@
 {{ icon_tick_green }} improving tests<br>
 {{ icon_tick_green }} removing features
 
-{{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span> adding features or doing major changes to existing features.
+{{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span> adding/changing features.
 
-**The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, {{ version_final }} should not have _any_ features that was not already tested in the PE-D).
+**The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, {{ version_final }} should not have _any_ behaviors that were not already tested in the PE-D).
 
 **FAQs:**
 * **Q:** Can we add a missing validity check for a user input?<br>
@@ -1281,10 +1281,10 @@ Not applicable this semester
 {{ embed_topic("tp-deliverables.md#tp-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "3", indent="2") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_wrap_up_final_milesone">{{ icon_team }} Wrap up the milestone</span>
-<div id="desc_wrap_up_final_milesone">
+<span id="heading_wrap_up_final_milestone">{{ icon_team }} Wrap up the milestone</span>
+<div id="desc_wrap_up_final_milestone">
 
-* As usual, wrap up the milestone on GitHub. Note that the deadline for this is the same for everyone (i.e., does not depend on your tutorial).
+* As usual, wrap up the milestone on GitHub %%i.e., close issues/PRs/milestone (no code changes allowed)%%. Note that the deadline for this is the same for everyone (i.e., does not depend on your tutorial).
 </div>
 {#====================================================================================================================#}
 <span id="heading_demo_the_product">{{ icon_team }} Submit the demo video</span>

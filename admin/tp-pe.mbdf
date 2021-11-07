@@ -209,7 +209,18 @@ This phase is for you to respond to the bug reports you received.
 You will receive bonus marks if a high percentage (e.g., >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual `type.*`, `severity.*`, and `response.*` of the bug match the ones you chose).
 </box>
 
-Duration: The review period will start around 1 day after the PE and will last for 2-3 days (exact times will be announced later). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
+<box type="important" seamless>
+
+**It's not bargaining!**{.text-danger}
+
+When the tester and the dev team cannot reach a consensus, the teaching team will be select either the dev team position or the tester position as the final state of the bug, whichever appear to be closer to being reasonable. <span class="text-danger">The teaching team will not come up with our own position, or choose a middle ground.</span>
+
+Hence, do not be tempted to argue for an unreasonable position in the hope that you'll receive something less than asked but still in your favor e.g., if the tester chose `severity.High` but you think it should be `severity.Medium`, don't argue for `severity.VeryLow` in the hope that the teaching team will decide a middle ground of `severity.Low` or `severity.Medium`. It's more likely that the teaching team will choose the tester's position as yours seems unreasonable.
+
+More importantly, this is not a bargaining between two parties; it's **an attempt to determine the true nature of the bug, and your ability to do so (which is an important skill)**.
+</box>
+
+**Duration:** The review period will start around 1 day after the PE and will last for 2-3 days (exact times will be announced later). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
@@ -218,13 +229,14 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 **Instructions for Reviewing Bug Reports**
 
 * **Don't freak out if there are lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
-* As mentioned earlier, the penalty for having a specific bug is not the same as the reward for reporting that bug (it's not a _zero-sum_ game). For example, the reward for testers will be higher (because we don't expect the products to have that many bugs after they have gone through so much prior testing)
+* **Nit-picking is a good sign**: If you receive a lot of nit-picking type of bugs that make you roll your eyes, it means testers were unable to find more serious bugs. That's a good thing.
+* **Not exactly zero-sum**: As mentioned earlier, the penalty for having a specific bug is not the same as the reward for reporting that bug (it's not a _zero-sum_ game). For example, the reward for testers will be higher (because we don't expect the products to have that many bugs after they have gone through so much prior testing)
 
 <box type="info" seamless>
 
 **Penalty for a minor bug (e.g., <tooltip content="an indicative value only; the actual value depends on the severity, type, and the number of assignees">-0.15</tooltip>) is unlikely to make a difference in your final grade**, especially given that the penalty applies only if you have more than a certain amount of bugs.<br>
 
-For example, in a typical case a developer might assigned 5+ `severity.VeryLow` bugs before the penalty even starts affecting their marks.
+For example, in a typical case a developer might be assigned 5+ `severity.VeryLow` bugs before the penalty even starts affecting their marks.
 
 Accordingly, we hope you'll **accept bug reports graciously** (rather than fight tooth-and-nail to reject _every_ bug report received) if you think the bug is within the ballpark of 'reasonable'. Those minor bugs are really not worth stressing/fighting over.
 </box>

@@ -1,3 +1,12 @@
+
+<box type="info" seamless icon=":fas-question:">
+
+**FAQ: How detailed the DG should be? Do we have to describe every feature/component?**<br>
+**Answer:**
+  1. The DG is primarily meant to help future developers. Therefore, decide based on how the inclusion/exclusion affects that target audience.
+  2. That said, the DG is also used for evaluating your ability to write developer documentation. If the above criterion doesn't result in enough content to showcase those skills, you can judiciously add more content, to describe proposed features, design alternatives, less important features etc.
+</box>
+
 * The main content you add should be in the `docs/DeveloperGuide.md` file (for ease of tracking by grading scripts).<br>
   If you use PlantUML diagrams, commit the diagrams as `.puml` files in the `docs/diagrams` folder.
 * **Should match the {{ version_final }} implementation**.

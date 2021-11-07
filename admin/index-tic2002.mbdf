@@ -152,8 +152,8 @@ Weekly project increments are given in the panels below:
 ### Week 13: Final submission
 
 **Deadline**:
-* Soft deadline: {{ get_date(date_w13_start, format=format_normal) }} (Monday of week 13)<br>
-  Hard deadline: {{ get_date(date_w13_start, 6, format=format_normal) }} (Sunday of week 13)<br>
+* Soft deadline (for the project report): {{ get_date(date_w13_start, format=format_normal) }} (Monday of week 13)<br>
+  Hard deadline (for all submissions): {{ get_date(date_w13_start, 6, format=format_normal) }} (Sunday of week 13)<br>
   An extra week can be given (upon request) for a small late submission penalty of `-2` marks.
 
 * What's the difference between the soft deadline and the hard deadline? You can get prof's feedback on a draft of the project report up to the soft deadline. Note that feedback on project report draft will be high-level feedback only (reason: the report is graded).
@@ -162,7 +162,7 @@ Weekly project increments are given in the panels below:
 
 **Deliverables**:
 1. **Source code** of the working program: push to your GitHub repo
-1. **Product**: Submit the JAR file, name: `{YourName}.jar` e.g., `JunHao.jar`
+1. **Product**: Create a JAR file for the final version of the code and submit to LumiNUS, name: `{YourName}.jar` e.g., `JunHao.jar`
 1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template file given (available in LumiNUS/Files/Handouts).<br>
    Submission: Upload to LumiNUS. The file name should be your name e.g., `JunHao.docx`
 1. **Demo video**:
