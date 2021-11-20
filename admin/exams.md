@@ -67,11 +67,13 @@ The final exam has two types of questions:
 
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
-1. **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), PM the invigilator using MS Teams (failing that, use Zoom chat).
+1. **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), PM the invigilator using Zoom private chat (failing that, MS Teams).
 
 1. **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.{% if cs2103%}
 
 1. **The zoom link and the invigilator info** will be distributed via LumiNUS gradebook at least 24 hours before the exam.{% endif %}
+
+1. **Consent to invigilator un-muting your mic without asking for your permission first** if Zoom asks for your consent for that feature to be enabled. This will allow the invigilator to verify your compliance with 'no communications with others' rule, without disturbing you during the exam. This is an NUS requirement for exams.
 
 ## Format
 <div tags="m--cs2103 m--tic2002 m--te3201">
@@ -88,7 +90,7 @@ The final exam has two types of questions:
   1\. to minimize opportunities for collusion<br>
   2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
 * Duration: **{{ 45 if tic2002 else 35 }} minutes** <span tags="m--cs2103">(recommended: allocate 2 minutes per question, which gives you a 3 minutes buffer)</span>
-* You are required to give a justification for your answer. ==The question will specify what should be included in the justification. **Answers without the correct justification may not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) with missing/incorrect justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
+* You are required to give a justification/rationale for your answer. ==The question will specify what should be included in the justification. **Answers without the correct justification may not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) with missing/incorrect justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
 * Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
 
@@ -132,6 +134,20 @@ Choose the incorrect statement.
 * Due to the above point, you will have to stay back in Zoom until the full exam is over (==not allowed to leave early==).
 * Due to the above point, you may want to have something to read, in case you finish early. ==You are not allowed to use other devices or use the computer to do other things even if you have finished the exam==.
 * After the exam, scan and **upload the diagrams you drew in part 2 onto LumiNUS**, as a single PDF file, **within an hour**. The file name does not matter. {% endif %}
+
+<div tags="m--cs2103">
+
+**{{ icon_info }} Identity checks:** Note that there will be mass identity checks during part 1 and 2.
+
+<div class="indented">
+
+<panel header="Identity check info" minimized>
+
+<include src="tp-pe.mbdf#identity-check-info" />
+</panel>
+
+</div>
+</div>
 
 </div>
 

@@ -187,7 +187,7 @@ The info in the following panels differs from TIC4001.
 <span id="heading_submit_reuse_declaration">Submit the declaration about code reuse</span>
 <div id="desc_submit_reuse_declaration">
 
-* Submit the LumiNUS survey to declare that you have followed the proper procedure for reusing/adapting code from elsewhere.
+* Submit the LumiNUS survey to declare that you have followed the proper procedure for reusing/adapting code from elsewhere. You need to submit this ==even if you did not reuse any code==.
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " Policy on reuse", "1", indent="2", status="expanded") }}
 </div>

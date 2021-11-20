@@ -81,15 +81,15 @@
 * **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.**{% if cs2103%} Zoom sessions are invigilated by tutors, not the prof.{% endif %}
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
-* **During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** ==In particular, do not visit GitHub==. However, you are allowed to visit pages linked in the UG/DG for the purpose of checking if the link is correct. If you need to visit a different website or use another software, please ask for permission first.
+* **During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** If you need to visit a different website or use another software, please ask for permission first.
   * Website: LumiNUS
   * Website: Module website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab/recording software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
   * Software: A text editor %%(to keep track of commands you tried)%%
+* ==**Do not visit GitHub in** <span class="badge badge-success">PE Phase 1 - part I</span>== unless you are going there to download a file the team has provided and is needed for testing. You may visit GitHub during part II and part III.
 * **Do not use any other software running** in the background e.g., Telegram chat.
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
-
 </box>
 
 
@@ -99,29 +99,55 @@
 
 **Bonus marks for high accuracy rates!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual `type.*` and `severity.*` of the bug match the values you chose initially and the bug is accepted by the team).
+You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a substantial bonus if >70%,) of your bugs are _**accepted as reported**_ (i.e., the eventual `type.*` and `severity.*` of the bug match the values you chose initially and the bug is accepted by the team).
+
+Take away: Aim for the _correct_ severity/type etc. rather than the one that gives you most marks, as the former can end up earning you more marks in the end anyway.
 </box>
 
 **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
 
 <include src="tp-ped.mbdf#tp-pe-testing-instructions" var-pe_active_tab="1"/>
 
+=={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
+* Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase
+of the PE.
+* As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower
+priority has a lower risk of being disputed by the dev team, giving you (and the dev team)
+have a better chance of earning bonus marks for accuracy (which will be substantial).<br>
+To make your case stronger, state in the bug report why you think the bug might even qualify for a higher severity, while you actually chose the lower one.
+* In this section, there will be a _mass identity check_
+
+<box type="info" header="**Mass identity check**" seamless id="identity-check-info" tags="m--cs2103">
+
+When the invigilator announces an identity check,
+
+1. remove mask (if any)
+1. turn towards the camera
+1. move closer to the camera (but do not adjust the camera position)
+1. hold that pose until the invigilator has taken a screenshot and asks you to go back to the exam activity.
+
+<span class="text-danger">Please comply quickly</span> as non-compliance can add an unnecessary loss of exam time for everyone. This is expected to take no more than 15 seconds.
+
+**Why do this in the middle of the exam activity?** It seems illogical that this is done in the middle of the exam activity when you are concentrating on the exam. However, doing this at the start can delay the exam start (and affects late arrivals) and doing so at the end affects those who have given time extensions due to special needs. Plus those are the times the invigilators are busiest (as some invigilators are students with zero/low invigilation experience, we don't want to stress them too much either -- their mistakes can potentially affect exam takers badly too.). Doing the identity check in the middle ensures the concentration/time loss is equal to everyone.
+</box>
 
 ##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
 
 * **This slot is for reporting documentation bugs only**. You may report bugs related to the UG and the DG.<br>
   Only the content of the UG/DG PDF files (not the online version) should be considered.
-* **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.
+* **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.<br>
+  Do not report bugs that are not contained within in the UG and DG pdf files (e.g., bugs in the `README.md`).
 
 {{ embed_topic("tp-grading-bugs.mbdf#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
 {{ embed_topic("tp-grading-bugs.mbdf#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
 <p/>
 
-* **You may visit the team's project on GitHub during this phase**, for the purpose of verifying the accuracy of documentation %%e.g., to check if a diagram matches the code%%
+* **You may visit the team's project on GitHub during this portion**, for the purpose of verifying the accuracy of documentation %%e.g., to check if a diagram matches the code%%. You are also allowed to download and open the team's code in a code editor.
 
 ##### <span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
 
 * To be submitted via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.
+* The TEAMMATES email containing the submission link should have reached you the day before the PE. If you didn't receive it by then, you can request it to be resent from [this page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery).
 
 <div class="indented">
 <box>
@@ -206,7 +232,7 @@ This phase is for you to respond to the bug reports you received.
 
 **Bonus marks for high accuracy rates!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual `type.*`, `severity.*`, and `response.*` of the bug match the ones you chose).
+You will receive bonus marks if a high percentage (e.g., some bonus if >60% substantial bonus >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual `type.*`, `severity.*`, and `response.*` of the bug match the ones you chose).
 </box>
 
 <box type="important" seamless>
@@ -286,9 +312,9 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 <box>
 
 **Response** Labels:
-* `response.Accepted`: You accept it as a bug.
+* `response.Accepted`: You accept it as a valid bug.
 * `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in {{ version_final }}%%.
-* `response.Rejected`: What tester treated as a bug is in fact the _expected_ and _correct_ behavior (from the user's point of view), or the tester was mistaken in some other way.
+* `response.Rejected`: What tester treated as a bug is in fact the _expected_ and _correct_ behavior (from the user's point of view), or the tester was mistaken in some other way. %%Note: Disagreement with the bug severity/tpe given by the tester is not a valid reason to reject the bug.%%
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
 
@@ -365,7 +391,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
   * severity downgraded
   * bug type changed
   * bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to bugs being flagged incorrectly as duplicates because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
-* If you disagree with the team's decision but would like to revise your own initial type/severity/response as well, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%%.
+* If you disagree with the team's decision but would like to revise your own initial type/severity as well, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).
 * You can also refer to the below guidelines:
 
 {{ embed_topic("tp-pe.mbdf#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", 2, indent=2) }}

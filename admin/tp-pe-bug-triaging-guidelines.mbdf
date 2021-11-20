@@ -52,6 +52,8 @@
 * **Extra white space** introduced by the PDF conversion: Not counted as bugs unless it hinders the reader. Cases such as a diagram being split between pages are considered bugs, because they hinder the reader.
 * **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
   Omitting optional notations is not a bug as long it doesn't hinder understanding.
+* **Details missing from a diagram**: In a similar vein to the above, omitting details from a diagram is OK if it does not mislead/hinder the reader.<br>
+  Forgetting to include something is not the same as a deliberate decision to omit something in order to simplify the diagram %%e.g., the latter could accompany a note to the reader to mention which/some parts have been omitted, _if_ it is worthwhile for the reader to know the omission.%%
 * **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
 * **Severity of bugs related to _missing requirements_** (e.g., missing user stories)? Depends on the potential damage the omission can cause. Keep in mind that not documenting a requirement increases the risk of it not getting implemented in a timely manner (i.e., future developers will not know that feature needs to be implemented).
 * **Unfulfilled NFRs**: If the DG mentions non-functional requirements that are not met by the product, it can be a `severity.Low` `DocumentationBug` if the the NFR was unreasonable in the first place. Otherwise, it can be `type.FeatureFlaw` bug.

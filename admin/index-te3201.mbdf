@@ -312,7 +312,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 * All questions have the same the weight and each question is expected to take a similar amount of time (around 2 minutes).
 * The questions will be presented in random order.
 * You are not allowed to go back to previous questions.
-* You are required to give a justification for your answer. The question will specify what should be included in the justification.<br>
+* You are required to give a justification/rationale for your answer. The question will specify what should be included in the justification.<br>
   ==**Answers without the correct justification will not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) that do not have justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
 * Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">

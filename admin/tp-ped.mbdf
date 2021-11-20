@@ -68,6 +68,7 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 * Download the zip file from the given location (to be given to you at least a few hours before the PE), if you haven't done that already.
 * Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix `_inner.zip`.
 * Unzip the inner zip file. This will give you the JAR file and other PDF files needed for the PE. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
+  Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%
 
 </tab>
 </tabs>
@@ -75,7 +76,8 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 
 * Put the JAR file ==in an empty folder== in which the app is allowed to create files %%(i.e., do not use a write-protected folder)%%.<br>
   In rare cases, the team could have submitted a ZIP file instead of a JAR file. In that case, unzip that file into the target folder.
-* Open a command window. Run the `java -version` command to ensure you are using Java 11.
+* Open a command window. Run the `java -version` command to ensure you are using Java 11.<br>
+  {{ icon_important_big_red }} Do this again even if you did this before, as your OS might have auto-updated the default Java version to a newer version.
 * Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
 * Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
@@ -203,6 +205,10 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 <include src="tp-pe.mbdf#type-labels" />
 </div>
 
+
+* {{ icon_info }} **If you need to include `<` or `>` symbols in your bug report**, use HTML equivalents for 'less than'
+and 'greater than' instead (i.e., `&lt;` and `&gt;` e.g., `x &lt; y` instead of `x < y`).<br>
+Reason: CATcher and GitHub strips out content wrapped in `<` and `>`, for security reasons.
 </box>
 </div>
 
