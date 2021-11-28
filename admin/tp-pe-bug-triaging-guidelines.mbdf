@@ -3,27 +3,36 @@
 ##### General:
 
 * **If a bug report contains multiple bugs** (i.e., despite instructions to the contrary, a tester included multiple bugs in a single bug report), you have to choose one bug and ignore the others. If there are valid bugs, choose from valid bugs. Among the choices available, choose the one with the highest severity (in your opinion). In your response, mention which bug you chose.
-* **What bugs can be considered duplicates?** It is up to the dev team to prove conclusively that a bug is a duplicate. If the proof is not convincing enough, they will be considered as 'not duplicates'. Only the following cases can be considered duplicates:
-  * The exact same bug reported multiple times.
-  * Multiple buggy behaviors that are actually caused by the same defect and cannot be fixed independently.
-  * In diagrams, same error appearing multiple times _in the same diagram_ (e.g., the _same_ notation mistake appearing several times in the _same_ diagram). However, errors across multiple diagrams should not be flagged as duplicates, unless it is the same diagram appearing in multiple places (i.e., the same image file used in multiple places).
+* **What bugs can be considered duplicates?** It is up to the dev team to prove conclusively that a bug is a duplicate. If the proof is not convincing enough, they will be considered as 'not duplicates'. Only the following cases can be considered duplicates:<br>
+  (a) The exact same bug reported multiple times.<br>
+  (b) Multiple buggy behaviors that are actually caused by the same defect and ==cannot be fixed independently==.<br>
+  <br>
+  In real projects, similar bugs (e.g., the same typo in multiple places) tend to get combined into a single issue/PR; in the PE, we have to keep independently-fixable things as separate bugs, to avoid complications in grading. After all, having the same typo in two places is not exactly the same as having it in only one place.<br>
+  If an independently-fixable yet similar problem appears in more than five distinct places, get our permission to combine them as one bug (in which case we'll require you to increase the severity to match the frequency of the bug).
 
 <div id="how-to-prove-out-of-scope">
 
-* **How to prove that something is 'not in scope'**: In general, features not-yet-implemented (and hence, not in scope) are the features that have a lower priority than the ones that have been implemented already. In addition, the following (at least one) can be used to prove that a feature was left out deliberately because it was _not in scope_:
+* **How to prove that something is `response.NotInScope`**: In general, a flaw (e.g., a missing feature, a sub-optimal design of a feature, a known bug) can be considered `NotInScope` if rectifying it is less important (based on the value/effort considerations) than the work that has been done already (because it is fine to delay lower priority work until future iterations).<br>
+  In addition, the following (at least one) need to be satisfied:
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
 </div>
 
 * ~~**You can reject bugs that you <tooltip content="i.e., the current behavior is same as AB3 and you had no reason to change it because the feature applies similarly to your new product">inherited</tooltip> from AB3.**~~ Even bugs inherited from AB3 are counted.
 
+* **If you can't reproduce the bug based on the _exact_ steps given in the bug report** but there is some indication of 'something wrong' (e.g., the bug report cites a behavior that shouldn't happen under normal use), you are expected to make a _reasonable_ effort to reproduce the bug yourself by experimenting with the information provided in the bug report. Reason: it will go against you if claim that the bug is not reproducible and yet someone else (the tester or a tutor) manages to conclusively prove the existence of the bug in a later phase.
+
 ##### Functionality bugs
 
-* **Problems caused by very long input values**: When a user input is unusually long %%e.g., a very long name, a very large number%%, it can cause problems e.g., the UI layout can get messed up, some part of it might get cut off.
-  * These can be considered cosmetic issues (i.e., `severity.VeryLow`) of `type.FunctionalityBug`. Some exceptions are below:
-    * The problems can only happen in case of deliberate sabotage %%(e.g., user entered a 30-digit telephone number)%%, in which case it should not be considered a bug.
-    * The problem can hinder the user %%(e.g., not seeing the last part of a very long name might not hinder the user but it does hinder the user if only the first few characters of the name is shown)%%, the severity can be `Low` or `Medium`.
+* **Problems caused by _extreme_ user behaviors**:
+  * If the problems can only happen in case of deliberate sabotage %%(e.g., user entered a 30-digit telephone number)%%, in which case it should not be considered a bug.<br>
+However, if such input can be entered by a user mistake, they should not cause harm e.g., such mistakes should not crash the app, corrupt the data, or make it unusable.
+
+* **Problems caused by very long input values**: When a user input is unusually long %%e.g., a very long name, a very large number%%, it can cause problems e.g., the UI layout can get messed up, some part of it might get cut off.<br>
+  * These can be considered cosmetic issues (i.e., `severity.VeryLow`) of `type.FunctionalityBug`.<br>
+  However, if the problem can hinder the user %%(e.g., not seeing the last part of a very long name might not hinder the user but it does hinder the user if only the first few characters of the name is shown)%%, the severity can be `Low` or higher.
   * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are not longer than 8 digits.
+* **Use of symbols in input values**: It is acceptable to disallow certain characters in input values if there is a justification (e.g., because using those symbols in an input value makes the command harder to parse), but they can still be considered `FeatureFlaw` bugs if they cause inconvenience to the user. For example, disallowing `s/o` in a person name because `/` is used as a command delimiter can cause a major problem if the input is expected to match the legal name of the person.
 * **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 or tic4002 %}
 * **Handling manual edits to the data file**: AB3 UG specifies the current level of support for manually editing the data file. At least that level of support should be supported in the new product as well.
 {% endif %}
@@ -32,18 +41,25 @@
 
 ##### Feature flaws
 
-* **If a missing feature is essential for the app to be reasonably useful**, its omission can be considered a _feature flaw_ even if it can be proven as _not in scope_ as given in an earlier point.<br>
-  Similarly, if the feature is implemented to work in a certain way but it could have been implemented to work in a better way (from the end-user's point of view) without much additional effort, it should be accepted as a `type.FeatureFlaw`, and cannot be categorized as `response.NotInScope`.
+* Missing features and problems in how a feature is designed are considered feature flaws i.e., `type.FeatureFlaw`.
+* **Feature flaws can be claimed as `NotInScope`**, if they qualify as per rules explained above, except for these cases:
+  * if fixing the feature flaw is essential for the app to be reasonably useful
+  * if the feature is implemented to work in a certain way but it could have been implemented to work in a better way (from the end-user's point of view) without much additional effort
 * **Bugs related to duplicate detection**: Duplicate detection (e.g., detecting if two persons in the address book are the same) is not trivial; often, detecting only the exact string/value matches is not enough. For example, `John Doe` and `john  doe` are likely to be the same person. Similarly, extra white space %%(e.g., the user typed an extra space between the two names)%% is unlikely to mean they are two different persons. Typically, it is best if you can give a warning in such _near match_ cases so that the user can make the final decision. <br>
-  Half-baked duplicate detection can qualify as `type.FeatureFlaw` bugs. However, detecting more complex cases of potential duplicates can be considered as `NotInScope` especially if they are hard to implement and expected to be rare.
+  Half-baked duplicate detection can qualify as `type.FeatureFlaw`.
+
 * **Overzealous input validation**: It is better to warn rather than to block when inputs are not compliant with the expected format, unless accepting such inputs can hinder the operations of the software. Allowing such flexibility can in turn allow the user to use the software in ways you didn't even anticipate while overzealous rejection of inputs can annoy the user:<br>
   %%Example 1: While your software allows only one phone number in input values, a user might want to input `1234 5678 (HP) 1111-3333 (Office)` -- blocking that input might not add any value but allowing it does.%%<br>
   %%Example 2: A user might want to enter an appointment in the past, just for record keeping purposes.%%<br>
+  Such overzealous input blocking can be considered a `type.FeatureFlaw`.<br>
   However, it is fine (and recommended) to show a warning for such inputs to guard against the deviation being a mistake rather than intentional.<br>
-  Such overzealous input blocking can be considered a `type.FeatureFlaw` bug.<br>
-  Lack of proper handling (either blocking or warning) for potentially invalid inputs can be considered a `type.FeatureFlaw` bug too.
-* **Specificity of error message**: Error messages can be correct but not specific enough %%(e.g., it says the input is 'invalid' without giving the reason, or gives too many possible reasons without pointing out the specific reason)%%. These cases can be considered `type.FeatureFlaw` unless making it more specific will take a lot more effort, in which case there is a chance to argue it to be `response.NotInScope`.
+  Lack of proper handling (either blocking or warning) for potentially invalid inputs can be considered a `type.FeatureFlaw` bug too. Not detecting incorrect flags (e.g., user entered `/t` but it should be `/tag`) is a `FeatureFlaw` too.
+
+* **Specificity of error message**: Error messages can be correct but not specific enough %%(e.g., it says the input is 'invalid' without giving the reason, or gives too many possible reasons without pointing out the specific reason)%%. These cases can be considered `type.FeatureFlaw`.<br>
+  Calling an invalid value a 'format error' and vice versa is a `severity.Low` bug e.g., if a date input is required to be in `YYYY-MM-DD` format, `2021-13-28` is a _format_ error (reason: `MM` should be in `1..12`) but `2021-02-30` is an _invalid_ input (reason: February doesn't have 30 days). However, issuing a 'Invalid date or incorrect format' error message for such a case (i.e., covering both bases) is acceptable if differentiating between the two qualifies for `NotInScope`.
 * **Unnecessarily complicated (or hard-to-type) command formats** can be considered a `type.FeatureFlaw` as it is expected that the input formats will be optimized to get things done fast. Some examples: using very long keywords when shorter ones do, or making keywords case-sensitive when there is no need for it, using hard to type special characters in the format when it is possible to avoid them.
+* **Case sensitivity**: In general, case sensitivity of something should follow the case sensitivity of the real world entity it represents e.g., as person names are not case sensitive in the real world, they shouldn't be case sensitive in the app either. The same applies for search key words. Incorrect case sensitivity can be considered a `FeatureFlaw`.
+
 </div>
 
 
@@ -53,7 +69,8 @@
 * **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
   Omitting optional notations is not a bug as long it doesn't hinder understanding.
 * **Details missing from a diagram**: In a similar vein to the above, omitting details from a diagram is OK if it does not mislead/hinder the reader.<br>
-  Forgetting to include something is not the same as a deliberate decision to omit something in order to simplify the diagram %%e.g., the latter could accompany a note to the reader to mention which/some parts have been omitted, _if_ it is worthwhile for the reader to know the omission.%%
+  Forgetting to include something is not the same as a deliberate decision to omit something in order to simplify the diagram %%e.g., the latter could accompany a note to the reader to mention which/some parts have been omitted, _if_ it is worthwhile for the reader to know the omission.%%<br>
+ While many UML notations are optional, haphazard omissions without a good reason can affects consistency which affects readability e.g., it can be considered a minor bug if a sequence diagram omits an activation bars in some places but not in other places and yet the omission doesn't make the diagram any easier to read.
 * **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
 * **Severity of bugs related to _missing requirements_** (e.g., missing user stories)? Depends on the potential damage the omission can cause. Keep in mind that not documenting a requirement increases the risk of it not getting implemented in a timely manner (i.e., future developers will not know that feature needs to be implemented).
 * **Unfulfilled NFRs**: If the DG mentions non-functional requirements that are not met by the product, it can be a `severity.Low` `DocumentationBug` if the the NFR was unreasonable in the first place. Otherwise, it can be `type.FeatureFlaw` bug.
