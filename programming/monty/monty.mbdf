@@ -338,8 +338,9 @@ main()
 ### <span class="badge badge-info">Level 5</span> <span class="text-info">Mark Tasks as Done</span>
 
 Enhance the [Monty Level 4 code]({{ baseUrl }}/programming/chapters/monty.html#monty4) in the following ways:
-* Add a `done` command so that the user can mark a task as done. e.g., `done 2` marks the task at index 2 as 'done'.
+* Add a `done` command so that the user can mark a task as done. e.g., `done 2` marks the task at index 2 as _done_.
 * Show appropriate error messages if the user gives an invalid index for the `done` command
+* Optionally, implement an `undone` (or `unmark`) command to change the status of a task back to _not done_.
 
 A sample output is given below.
 

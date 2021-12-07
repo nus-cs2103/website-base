@@ -161,6 +161,12 @@ Weekly project increments are given in the panels below:
 * Submissions later than the hard deadline are liable to a late submission penalty, to be fair to those who submitted on time. But given you are part-time students, late submission penalty will be more lenient than otherwise (e.g., `-1 per day`) and will be on a case-by-case basis.
 
 **Deliverables**:
+
+<box type="important" seamless>
+
+Please upload items 2, 3, 4 as three separate files. ==Do not put them into a single zip file==.
+</box>
+
 1. **Source code** of the working program: push to your GitHub repo
 1. **Product**: Create a JAR file for the final version of the code and submit to LumiNUS, name: `{YourName}.jar` e.g., `JunHao.jar`
 1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template file given (available in LumiNUS/Files/Handouts).<br>
