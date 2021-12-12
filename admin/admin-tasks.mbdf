@@ -38,9 +38,9 @@ The tools in the following panels differ slightly from TIC4001.
 <div tags="m--tic2002">
 {{ embed_topic("tools.md#coursemology", "Admin " + icon_embedding + " **Tools - Coursemology**", "2", indent="2") }}
 </div>
-<div tags="m--cs2113">
+<!-- <div tags="m--cs2113">
 {{ embed_topic("tools.md#ghclassroom", "Admin " + icon_embedding + " **Tools - GitHub Classroom**", "2", indent="2") }}
-</div>
+</div> -->
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_pre_module_survey">Submit the pre-module survey</span>
@@ -88,20 +88,17 @@ The info in the following panels differs from TIC4001.
 * **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
 </div>
 {#====================================================================================================================#}
-<span id="heading_submit_first_repl_exercises">Submit coding exercises via {{ "Github Classroom" if cs2113 else "Coursemology"}}</span>
+<span id="heading_submit_first_repl_exercises">Submit coding exercises via Coursemology</span>
 <div id="desc_submit_first_repl_exercises">
 
 * Submit the coding exercises allocated for the current week. Most exercises are auto-graded. Keep trying until the system accepts your code as the correct solution.
 * If you encounter problems, post in the [forum]({{ url_forum }}).
 
-{% if cs2113 %}
-{{ embed_topic("tools.md#ghclassroom", "Admin " + icon_embedding + " **Tools - GitHub Classroom**", "2", indent="2") }}
-{% else %}
 {{ embed_topic("tools.md#coursemology", "Admin " + icon_embedding + " **Tools - Coursemology**", "2", indent="2") }}
-{% endif %}
+
 </div>
 {#====================================================================================================================#}
-<span id="heading_submit_repl_exercises">Submit coding exercises via {{ "Github Classroom" if cs2113 else "Coursemology"}}</span>
+<span id="heading_submit_repl_exercises">Submit coding exercises via Coursemology</span>
 <div id="desc_submit_repl_exercises">
 
 * As before, submit the coding exercises allocated for the current week, and any pending exercises from previous weeks.

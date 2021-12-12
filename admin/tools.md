@@ -69,7 +69,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 
-<div tags="m--tic2002" id="coursemology">
+<div tags="m--cs2113" id="coursemology">
 
 ## Tool: Coursemology (for coding exercises)
 
@@ -79,12 +79,13 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
-* You'll receive the invitation to Coursemology sometime in the early part of Week 1.
+* You'll receive the invitation to Coursemology closer to Week 1 lecture.
 * More information about Coursemology will be given in the first lecture.
 </box>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 
+<!--
 <div tags="m--cs2113" id="ghclassroom">
 
 ## Tool: Github Classrooms (for coding exercises)
@@ -100,6 +101,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 * More information about Github Classrooms will be given in the first lecture.
 </box>
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
+
 <div id="communication">
 
 ## Tools: for communication

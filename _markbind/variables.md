@@ -8,13 +8,13 @@
 <variable name="S">1</variable>
 <variable name="semester">AY2122S{{ S }}</variable>
 <variable name="period">2021 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="current_week">15</variable>
 
 <variable name="algolia">yes</variable>
 
 <variable name="luminus_module_id">dd7206fb-b22d-4a82-9c3b-f761a1f77ac8</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQ3yMfxtxatSX5XxWnZparVJN9UkEOu504YHyShketpCzdqQth4JDcwQwhWvOBi-XH8-gkdgMgGpg1t/pub?embedded=true</variable>
-<variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vTJzuMSvK1roQSsZd2yBcQpy8i1W8Xt7_L00BHnAT_WCiBcTfW97QUyKHNztW0RlYA5cAXvFP5dkGzi/pub?embedded=true</variable>
+<variable name="url_coursemology_classroom">https://coursemology.org/courses/2115</variable>
 <variable name="url_ghclassroom_ex">https://docs.google.com/document/d/e/2PACX-1vRyqtD6Q6FLpcDkvSdKABDl3Jf7aP4KckhlE30V5RG_q0zwA_Ezk16D26C_YClnwcBqOA5MKwfOdNPi/pub?embedded=true</variable>
 <variable name="url_ms_teams_class">x</variable>
 
@@ -41,7 +41,7 @@
 <variable name="version_future">v3.0</variable>
 <variable name="example_team_id">{{ module }}-T09-2</variable>
 
-<variable name="date_final_submission">2020-11-08</variable>
+<variable name="date_final_submission">2021-11-08</variable>
 <variable name="ug_pages_per_person">1</variable>
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
@@ -89,6 +89,7 @@
 <variable name="format_normal">ddd, MMM Do</variable>
 <variable name="format_full_day">dddd</variable>
 <variable name="day_lecture">{{ date_first_lecture | date(format_full_day) }}</variable>
+<variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w4_start">{{ date_w3_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w5_start">{{ date_w4_start | date("YYYY-MM-DD", 7) }}</variable>

@@ -1,3 +1,4 @@
+<!-- 
 {% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, step, thumb, timing_badge with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
@@ -44,3 +45,4 @@ Note: As such the exercises are open until end of Week 6. The suggested deadline
 </div>
 
 {% endcall %}
+-->

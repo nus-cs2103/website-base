@@ -330,6 +330,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 <!-- ------------------------------------------------------------------------------------------------------ -->
 
+<!-- no longer using GH classrooms
 <div tags="m--cs2113" id="getting-started-ghclassroom">
 
 ## Getting started with GitHub Classroom
@@ -390,6 +391,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 </div>
 
 </div>
+-->
 
 </div>
 {% endcall %}

@@ -602,7 +602,7 @@ Let's learn about those two approaches early so that we can better understand ho
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("SDLC Process Models: XP/Scrum") }}" >
 
-In [a previous week](../week7/topics.html), you learned about _sequential_ and _iterative_ ways of doing a software.
+In [a previous week](../schedule/week2/topics.html), you learned about _sequential_ and _iterative_ ways of doing a software.
 Now, let us take a quick look at a couple of well-known processes used in the industry, both of which fall into a category called _agile processes_.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

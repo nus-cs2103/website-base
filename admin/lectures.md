@@ -24,13 +24,14 @@
 
 <div tags="m--cs2103 m--cs2113">
 
-Lectures start on time sharp and end around 15 minutes before official end time.
+Lectures start on time sharp and end around 10 minutes before official end time.
 </div>
 
 ****Mode****:
-* Will be done using Zoom. More information coming soon.
+* Will be done using Zoom. Zoom link to the lecture can be found on LumiNUS.
+* You need to register first before you receive the actual session link.
 
-<div tags="m--cs2103 m--tic4001 m--tic4002">
+<div tags="m--cs2113 m--cs2103 m--tic4001 m--tic4002">
 
 * Some topics come with pre-recorded lecture videos.
 </div>
@@ -42,7 +43,7 @@ Lectures start on time sharp and end around 15 minutes before official end time.
 ##### Tips for watching lecture videos
 
 * ==You can watch video lectures at faster speeds== (`x1.25` or even `x1.5`) to save time.
-* Lecture videos require NUSNET login.
+* Lecture videos are distributed from within LumiNUS -> Multimedia channel.
 </box>
 </div>
 

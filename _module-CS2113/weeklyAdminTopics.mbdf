@@ -12,7 +12,6 @@
   {level: 1, id: "textbooks", title: "Textbooks", link: "textbooks.html", priority: 2},
   {level: 1, id: "programmingLanguages", title: "Programming Language", link: "programmingLanguages.html", priority: 2},
   {level: 1, id: "standardsAndConventions", title: "Standards/Conventions", link: "standardsAndConventions.html", priority: 2},
-  {level: 1, id: "githubClassroomInfo", title: "Java exercises", link: "githubClassroomInfo.html", priority: 2},
   {level: -1, id: "ip", title: "Individual Project (iP)"},
     {level: 2, id: "ip-overview", title: "iP (Individual Project): Overview", link: "ip-overview.html", priority: 2},
     {level: 2, id: "ip-w2", title: "iP: Week 2", link: "ip-w2.html", priority: 2},
