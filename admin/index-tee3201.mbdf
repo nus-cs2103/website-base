@@ -8,7 +8,7 @@ pageNav: 2
 
 <div class="website-content" id="main">
 
-# **TE3201 Software Engineering**
+# **TEE3201 Software Engineering**
 
 <!-- .......................................................................................... --> {{ line_dotted }}
 
@@ -17,7 +17,7 @@ pageNav: 2
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
-_TE3201 Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects.
+_TEE3201 Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects.
 </div>
 
 <!-- .......................................................................................... --> {{ line_dotted }}
@@ -60,7 +60,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 </div>
 
 #### Tutors:
-* **TBD**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`tbd`[at]`u.nus.edu`</span>
+* **Chan Weizhong**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`chan.weizhong`[at]`u.nus.edu`</span>
 
 </div>
 
@@ -145,7 +145,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 {% for i in range(1, 14) %}
 
 #### <span class="badge badge-dark">Week {{ i }}:</span>
-<include src="../schedule/week{{ i }}/admin-te3201.mbdf#week{{ i }}-project" />
+<include src="../schedule/week{{ i }}/admin-tee3201.mbdf#week{{ i }}-project" />
 <hr>
 {%-endfor %}
 </panel>
@@ -230,7 +230,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, hear are the ways to get help, in the order of preference (most preferred on the top).
 1. **Post in [MS Teams ==channel for the class==](url_ms_teams_class)**, rather than send a private message to the prof/TA. That way, either the prof or the TA can answer and the rest of the class can benefit from the answer.<br>
    If the question is not relevant to the rest of the class, prof/TA will contact you privately (via MS Teams) for follow up.
-2. **Email `te3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
+2. **Email `tee3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
 3. **Send a private message** to the prof (search for `Damith Chatura Rajapakse`) or to the TA (search for `Chan Weizhong`) via MS Teams.
 4. Email the prof at <include src="index-{{ module | lower }}.mbdf#prof-email" inline trim/> or the TA at <include src="index-{{ module | lower }}.mbdf#ta-email" inline trim/>
 5. You may also post in the [module forum]({{ url_forum }}).
@@ -260,7 +260,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 
 # Exam
 
-* The final exam will be on **Wed 5th May, 5-7pm** (as per normal exam schedule).
+* The final exam will be on **Wed 6th May, 9-11am** (as per normal exam schedule).
 * The exam will be done online.
 
 ### procedure/rules
@@ -275,7 +275,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 1. **The exam is open-book**.
 1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
   You may use any hard copies or written materials too.
-1. **The Browser should only be used to access ==LumiNUS and the module website==** (including relevant se-education.org pages %%e.g., Java coding standard%%). <span class="text-danger">Accessing other websites is not allowed.</span><br>
+1. **The Browser should only be used to access ==LumiNUS and the module website==**{% if not tee3201 %} (including relevant se-education.org pages %%e.g., Java coding standard%%){% endif %}. <span class="text-danger">Accessing other websites is not allowed.</span><br>
 1. **Use Microsoft Teams to communicate with the prof.** Communicating with others is not allowed, except with NUS IT staff (for tech help).
 1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
 1. **When the invigilator asks you to do an _identity check_**, turn your face towards the camera (<span class="text-danger">do not adjust the camera position</span>), move closer to the camera, and hold the pose until the invigilator tells you to go back to your working position.

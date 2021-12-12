@@ -1,4 +1,4 @@
-{% if module in ["TIC2002", "TE3201"] %}
+{% if module in ["TIC2002", "TEE3201"] %}
 
 <include src="index-{{ module | lower }}.mbdf" />
 

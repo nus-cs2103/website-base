@@ -8,7 +8,7 @@
 {% endfor %}
 {% endfor %}
 * Supplementary
-{% if not te3201 %}
+{% if not tee3201 %}
   * [C++ to Java]({{ baseUrl }}/se-book-adapted/chapters/cppToJava.html)
   * [Project Duke]({{ baseUrl }}/se-book-adapted/projectDuke/index.html)
 {% endif %}

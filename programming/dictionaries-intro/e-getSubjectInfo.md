@@ -6,12 +6,12 @@ Complete the `get_subject_info` function below to return a dictionary such that 
 def get_subject_info(code, name, level, is_core):
   return {} # UPDATE THIS LINE
   
-print(get_subject_info('TE3201', 'Software Engineering', 3, False))
+print(get_subject_info('TEE3201', 'Software Engineering', 3, False))
 print(get_subject_info('CS1101', 'Programming Basics', 1, True))
 ```
 {{ icon_output }}
 ```
-{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
+{'code': 'TEE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
 {'code': 'CS1101', 'name': 'Programming Basics', 'level': 1, 'core?': True}
 ```
 
@@ -21,7 +21,7 @@ print(get_subject_info('CS1101', 'Programming Basics', 1, True))
 def get_subject_info(code, name, level, is_core):
   return {'code': code, ...} 
   
-print(get_subject_info('TE3201', 'Software Engineering', 3, False))
+print(get_subject_info('TEE3201', 'Software Engineering', 3, False))
 ```
 
 </panel>

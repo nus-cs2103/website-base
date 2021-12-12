@@ -19,7 +19,7 @@ class Subject:
     print(self.code, ':', self.name)
     
 print('total subjects:', Subject.total)
-s1 = Subject('TE3201', 'Software Engineering') 
+s1 = Subject('TEE3201', 'Software Engineering')
 print('total subjects:', Subject.total)
 print(Subject.limit_reached(1))
 print(Subject.limit_reached(2))

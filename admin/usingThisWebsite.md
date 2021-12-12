@@ -43,7 +43,7 @@ Printer-friendly version %%(indicated by {{icon_print}} icon)%% have been provid
 
 ### Making this Website Better
 
-This website was generated using the [MarkBind](https://markbind.org/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted {% if te3201 %}[in the forum]({{url_forum}}){% else %}[at the website issue tracker]({{url_module_org}}/website/issues){% endif %}.
+This website was generated using the [MarkBind](https://markbind.org/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted {% if tee3201 %}[in the forum]({{url_forum}}){% else %}[at the website issue tracker]({{url_module_org}}/website/issues){% endif %}.
 
 </div>
 </div>

@@ -763,7 +763,7 @@ Here is an example that shows the steps of drawing an OODM to match a given prob
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Activity Diagrams") }}">
 
-Activity diagrams is the {{ "first" if te3201 else "last" }} UML diagram type you'll be learning in this module, and probably the easiest and most intuitive of the lot. You've heard about 'flow charts', right? Well, this is the UML equivalent of that.
+Activity diagrams is the {{ "first" if tee3201 else "last" }} UML diagram type you'll be learning in this module, and probably the easiest and most intuitive of the lot. You've heard about 'flow charts', right? Well, this is the UML equivalent of that.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Followup Activity Diagrams") }}">

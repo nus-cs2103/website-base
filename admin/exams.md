@@ -76,7 +76,7 @@ The final exam has two types of questions:
 1. **Consent to invigilator un-muting your mic without asking for your permission first** if Zoom asks for your consent for that feature to be enabled. This will allow the invigilator to verify your compliance with 'no communications with others' rule, without disturbing you during the exam. This is an NUS requirement for exams.
 
 ## Format
-<div tags="m--cs2103 m--tic2002 m--te3201">
+<div tags="m--cs2103 m--tic2002 m--tee3201">
 
 * The exam will be divided into {{ 3 if cs2103 else 2 }} parts.
 

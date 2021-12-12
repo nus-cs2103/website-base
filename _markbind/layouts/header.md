@@ -3,7 +3,7 @@
 {% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center d-print-none"><md>**This is a draft version of the website! The final version will be available near the start of the semester.**</md></div >
 {% endif %}{% if current_week in ["-1", "0", "1"] %}
-<div tags="m--cs2103 m--cs2113 m--te3201" class="w-100 p-1 bg-success text-center text-white d-print-none"><md>This module will be **fully online** this semester. There is no need for on-campus presence.</md></div>
+<div tags="m--cs2103 m--cs2113 m--tee3201" class="w-100 p-1 bg-success text-center text-white d-print-none"><md>You can take this module **fully online** this semester, if you are unable to be on-campus.</md></div>
 {% elseif current_week == "15" %}
 <div class="w-100 p-1 bg-warning text-center d-print-none"><md>**This site is from a past semester! The current version will be [here](http://www.comp.nus.edu.sg/~{{ module | lower }}) when the new semester starts.**</md></div>
 {% endif %}
@@ -34,17 +34,17 @@
     <li><a href="{{ url_tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>
     <li><a href="{{url_tp_progress_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-trophy: tP Progress Dashboard</md></a></li>
   </dropdown>
-  <dropdown header="**{{ "Other " if not tic2002 or te3201 else ""}}Links**" class="nav-link">
+  <dropdown header="**{{ "Other " if not tic2002 or tee3201 else ""}}Links**" class="nav-link">
     <li tags="m--cs2113"><a href="{{ baseUrl }}/admin/githubClassroomInfo.html" class="dropdown-item"><md>{{ icon_exercise }} Java exercises </md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002"><a href="{{url_bugs}}" target="_blank" class="dropdown-item"><md>:fas-bug: Report Bugs</md></a></li>
     <li><a href="{{url_forum}}" target="_blank" class="dropdown-item"><md>:fas-comment: Forum</md></a></li>
     <li tags="m--cs2113"><a href="{{url_gitter}}" target="_blank" class="dropdown-item"><md>:fab-gitter: Gitter (Chat)</md></a></li>
-    <li><a href="{{ baseUrl }}/admin/{{ "index.html#instructors" if tic2002 or te3201 else "instructors.html" }}" class="dropdown-item"><md>:fas-user-tie: Instructors</md></a></li>
+    <li><a href="{{ baseUrl }}/admin/{{ "index.html#instructors" if tic2002 or tee3201 else "instructors.html" }}" class="dropdown-item"><md>:fas-user-tie: Instructors</md></a></li>
     <li><a href="{{url_announcements}}" target="_blank" class="dropdown-item"><md>:glyphicon-bullhorn: Announcements</md></a></li>
     <li><a href="{{url_files}}" target="_blank" class="dropdown-item"><md>:fas-file-upload: Files (handouts, submissions etc.)</md></a></li>
     <li tags="m--cs2113 m--cs2103"><a href="{{baseUrl}}/admin/tutorials.html" class="dropdown-item"><md>:glyphicon-calendar: Tutorial Schedule</md></a></li>
-    <li tags="m--tic2002 m--te3201"><a href="{{baseUrl}}/admin/index.html#project" class="dropdown-item"><md>{{ icon_project }} Project Info</md></a></li>
-    <li tags="m--tic2002 m--te3201"><a href="{{url_coursemology_classroom}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} Coursemology link</md></a></li>
+    <li tags="m--tic2002 m--tee3201"><a href="{{baseUrl}}/admin/index.html#project" class="dropdown-item"><md>{{ icon_project }} Project Info</md></a></li>
+    <li tags="m--tic2002 m--tee3201"><a href="{{url_coursemology_classroom}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} Coursemology link</md></a></li>
     {% if not cs2113 %}<li><a href="{{url_ms_teams_class}}" target="_blank" class="dropdown-item"><md>:fas-users-cog: MS Teams link</md></a></li>
     {% endif %}<li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001 m--tic4002"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>

@@ -7,7 +7,7 @@
 {{ icon_example }} This dictionary keeps track of assignments of each subject. Note how the value is a `list` rather than a simple value such as an `int` or a `string`.
 
 ```python
-assignments = {'TE3201': ['do exercises', 'submit project'],
+assignments = {'TEE3201': ['do exercises', 'submit project'],
                'CS2103': [],
                'CS3281': ['do presentation']}
 ```
@@ -21,7 +21,7 @@ print('CS3281 assignments:', assignments['CS3281'])
 assignments['CS3281'].append('study for exams')
 print(assignments['CS3281'])
 
-print('How many things to do in TE3201?', len(assignments['TE3201']))
+print('How many things to do in TEE3201?', len(assignments['TEE3201']))
 
 # calculate total assignments
 total = 0
@@ -33,7 +33,7 @@ print('total tasks to do:', total)
 ```
 CS3281 assignments: ['do presentation']
 ['do presentation', 'study for exams']
-How many things to do in TE3201? 2
+How many things to do in TEE3201? 2
 total tasks to do: 4
 ```
 

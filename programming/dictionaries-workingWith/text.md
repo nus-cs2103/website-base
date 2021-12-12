@@ -33,10 +33,10 @@ one
 <span id="input">
 
 ```python
-grades = {'TE3201': 'A'}
+grades = {'TEE3201': 'A'}
 grades['CS2103'] = 'B'
 print('After adding:',grades)
-grades['TE3201'] = 'A+'
+grades['TEE3201'] = 'A+'
 print('After updating:',grades)
 del grades['CS2103']
 print('After deleting:', grades)
@@ -45,9 +45,9 @@ print('After deleting:', grades)
 <span id="output">
 
 ```
-After adding: {'TE3201': 'A', 'CS2103': 'B'}
-After updating: {'TE3201': 'A+', 'CS2103': 'B'}
-After deleting: {'TE3201': 'A+'}
+After adding: {'TEE3201': 'A', 'CS2103': 'B'}
+After updating: {'TEE3201': 'A+', 'CS2103': 'B'}
+After deleting: {'TEE3201': 'A+'}
 ```
 </span>
 </include>

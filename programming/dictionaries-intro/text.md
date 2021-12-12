@@ -39,7 +39,7 @@ Key | Value
 
 ```python
 friends = {} # empty dictionary
-grades = {'TE3201': 'A'}
+grades = {'TEE3201': 'A'}
 numbers = {1: 'one', 2: 'two', 3: 'three'}
 is_nice = {'jane': False, 'hakim': True, 'ravi': True}
 prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}

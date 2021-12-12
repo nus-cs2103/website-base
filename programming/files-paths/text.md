@@ -81,9 +81,9 @@ C:\photos\vaction
 
 <box>
 
-{{ icon_example }} Assume the current working directory is `C:\modules\te3201` and you created a new folder inside it named `exercises` and put a `ex.txt` file in that folder.
+{{ icon_example }} Assume the current working directory is `C:\modules\tee3201` and you created a new folder inside it named `exercises` and put a `ex.txt` file in that folder.
 
-* Absolute path of the file: `C:\modules\te3201\exercises\ex1.txt`
+* Absolute path of the file: `C:\modules\tee3201\exercises\ex1.txt`
 * Relative path of the file: `exercises\ex1.txt`
 
 </box>
@@ -93,11 +93,11 @@ In a path, you can use the  dot `.` as a shorthand to refer to the current worki
 
 <box>
 
-{{ icon_example }} If the current working directory is `C:\modules\te3201`, you can use any of the following to refer to `C:\modules\te3201\exercises\ex1.txt`.
+{{ icon_example }} If the current working directory is `C:\modules\tee3201`, you can use any of the following to refer to `C:\modules\tee3201\exercises\ex1.txt`.
 * `exercises\ex1.txt`
 * `.\exercises\ex1.txt`
-* `..\te3201\exercises\ex1.txt`
-* `..\..\modules\te3201\exercises\ex1.txt`
+* `..\tee3201\exercises\ex1.txt`
+* `..\..\modules\tee3201\exercises\ex1.txt`
 
 <panel type="seamless" header="%%another example%%">
 
@@ -129,9 +129,9 @@ os.removedirs('ex\\w1')
 <span id="output">
 
 ```
-C:\repos\nus-te3201\sample-code
-C:\repos\nus-te3201\sample-code\ex\w1
-C:\repos\nus-te3201\sample-code\ex
+C:\repos\nus-tee3201\sample-code
+C:\repos\nus-tee3201\sample-code\ex\w1
+C:\repos\nus-tee3201\sample-code\ex
 ```
 </span>
 </include>
@@ -149,7 +149,7 @@ cwd = os.getcwd()
 print(os.path.join(cwd, 'ex', 'w2'))
 ```
 
-If you run it on a Windows computer in the folder `C:\modules\te3201`, it prints `C:\modules\te3201\ex\w2`.<br>
+If you run it on a Windows computer in the folder `C:\modules\tee3201`, it prints `C:\modules\tee3201\ex\w2`.<br>
 If your run it on a OS-X computer in the folder `/Users/john`, it prints `/Users/john/ex/w2`.
 
 </box>

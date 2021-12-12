@@ -27,7 +27,7 @@ pageNav: 1
     topics: {name: "Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
     admin: {name: "Tasks", file: "admin", icon: icon_tab_tasks, pagenav: 4}
   } %}
-{% elseif te3201 %}
+{% elseif tee3201 %}
   {% set categories = {
     notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 1},
     topics_py: {name: "Programming Topics", file: "topics-py", icon: icon_tab_programming_topics, pagenav: 4},
@@ -110,7 +110,7 @@ pageNav: {{ categories[category].pagenav }}
 </span>
 <br>
 
-{% elseif module == "TE3201" %} {#--------------------------------------------------------------------------------#}
+{% elseif module == "TEE3201" %} {#--------------------------------------------------------------------------------#}
 
 <span id="summary">
 <div class="container">
@@ -199,7 +199,7 @@ Admin info relevant to the week will appear in this tab.
 </box>
 {% endif %}
 
-{% if module in ["TIC2002", "TE3201"] %}
+{% if module in ["TIC2002", "TEE3201"] %}
 <include src="admin-{{ module | lower }}.mbdf" optional />
 {% else %}
 {{ show_weekly_admin_tasks(week_num) }}
