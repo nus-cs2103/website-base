@@ -24,17 +24,19 @@
 
 <div tags="m--cs2103 m--cs2113">
 
-Lectures start on time sharp and end around 15 minutes before official end time.
+Lectures start on time sharp and end around 10-15 minutes before official end time.
 </div>
 
 ****Mode****:
 {% if cs2103 or cs2113 %}
-* Will be done using Zoom. The Zoom link will be available in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links).
+* Will be done using Zoom. The Zoom link will be available in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links).{% if cs2113 %}
+* You need to register first before you receive the actual session link.
+{% endif %}
 {% else %}
 * As mentioned above, the lecture briefing will be delivered via Zoom (see [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links) for the Zoom link).
 {% endif %}
 
-<div tags="m--cs2103 m--tic4001 m--tic4002">
+<div tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">
 
 * Some topics come with pre-recorded lecture videos.
 </div>
@@ -45,8 +47,9 @@ Lectures start on time sharp and end around 15 minutes before official end time.
 
 ##### Tips for watching lecture videos
 
-* ==You can watch video lectures at faster speeds== (`x1.25` or even `x1.5`) to save time.
-* Lecture videos require NUSNET login.
+* ==You can watch video lectures at faster speeds== (`x1.25` or even `x1.5`) to save time.{% if cs2113 %}
+* Lecture videos are distributed from within LumiNUS -> Multimedia channel.{% else %}
+* Lecture videos require NUSNET login.{% endif %}
 </box>
 </div>
 

@@ -69,7 +69,7 @@
               {name: "dependencies", heading: "Dependencies", priority: "3"},
               {name: "composition", heading: "Composition", priority: "3"},
               {name: "aggregation", heading: "Aggregation", priority: "3"},
-              {name: "associationClasses", heading: "Association Classes", priority: "4"}
+              {name: "associationClasses", heading: "Association Classes", priority: "3"}
             ]
           }
         ]
@@ -1513,9 +1513,9 @@
           },
           {
             name: "associationClasses",
-            priority: "4",
+            priority: "3",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "4"}
+              {name: "what", heading: "What", priority: "3"}
             ]
           },
           {
@@ -1708,7 +1708,7 @@
             level_three_topics: [
               {name: "singleResponsibilityPrinciple", heading: "Single Responsibility Principle", priority: "3"},
               {name: "openClosedPrinciple", heading: "Open-Closed Principle", priority: "-1"},
-              {name: "liskovSubstitutionPrinciple", heading: "Liskov Substitution Principle", priority: "4"},
+              {name: "liskovSubstitutionPrinciple", heading: "Liskov Substitution Principle", priority: "3"},
               {name: "interfaceSegregationPrinciple", heading: "Interface Segregation Principle", priority: "-1"},
               {name: "dependencyInversionPrinciple", heading: "Dependency Inversion Principle", priority: "-1"},
               {name: "solidPrinciples", heading: "SOLID Principles", priority: "-1"},

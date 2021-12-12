@@ -35,7 +35,7 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Format</span>
 
-* File name (i.e., in the repo): `docs/team/githbub_username_in_lower_case.md` e.g., `docs/team/goodcoder123.md`
+* File name (i.e., in the repo): `docs/team/github_username_in_lower_case.md` e.g., `docs/team/goodcoder123.md`
 * {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ url_ab3_upstream_website }}/team/johndoe.html)
 
 <div class="indented-level2">

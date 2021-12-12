@@ -451,12 +451,12 @@ If you wish, **you _may_ write the PR description to be very similar to the exam
 
 <box type="info" add-class="ml-4">
 
-This task is worth `2x2=4` participtaion points.
+This task is worth `2x2=4` participation points.
 </box>
 
 * **Learn _how_ you should review PRs in this task**:
 
-{{ panopto('c001244c-01b5-4471-ab9d-ac1b0098110a') }}
+{{ '' if cs2113 else panopto('c001244c-01b5-4471-ab9d-ac1b0098110a') }}
 
 {{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
 
