@@ -103,23 +103,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
 </box>
 
-<div tags="m--cs2113">
-
-##### :fab-gitter: Gitter %%(for quick chats)%%
-
-* The module Gitter channel is [{{ url_gitter }}]({{ url_gitter }}).
-* We opted to use Gitter because it is GitHub-friendly %%(you can use your GitHub account to access Gitter)%% and programmer-friendly %%(e.g., supports code syntax highlighting)%%.
-* ==Do not use Gitter for technical help requests==. Such requests can lead to long-running discussions which are better suited for the forum.
-
-<box>
-
-<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
-* Join [{{ url_gitter }}]({{ url_gitter }}).
-* Recommended: Install the Gitter mobile app (search for it in your mobile phone's app store).
-</box>
-</div>
-
-<div tags="m--cs2103 m--tic4001 m--tic4002">
+<div tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">
 
 ##### :fas-users-cog: MS Teams %%(for quick chats, in-lecture consultations)%%
 
@@ -127,7 +111,7 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 * Install MST in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to login using your NUSNET account.
 
 
-<div tags="m--cs2103">
+<div tags="m--cs2103 m--cs2113">
 
 * **MS Team for this class**: [{{ module_pair }}-{{ semester }}]({{ url_ms_teams_class }})
 </div>
