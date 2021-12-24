@@ -17,9 +17,7 @@
 <variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
 <variable name="url_ms_teams_class">x</variable>
 
-<variable name="date_w1_start">2020-08-10</variable>
-<variable name="date_w2_start">2020-08-14</variable>
-<variable name="date_first_lecture">2020-08-14</variable>
+<variable name="date_w1_start">2022-01-10</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
 <variable name="recess_after_week">7</variable>
 <variable name="time_lecture_start">1600</variable>
@@ -40,7 +38,6 @@
 <variable name="version_future">v2.0</variable>
 <variable name="example_team_id">{{ module }}-T09-2</variable>
 
-<variable name="date_final_submission">2020-11-09</variable>
 <variable name="ug_pages_per_person">1</variable>
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
@@ -87,7 +84,10 @@
 
 <variable name="format_normal">ddd, MMM Do</variable>
 <variable name="format_full_day">dddd</variable>
+<variable name="date_first_lecture">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
 <variable name="day_lecture">{{ date_first_lecture | date(format_full_day) }}</variable>
+<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 91) }}</variable>
+<variable name="date_w2_start">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
 <variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w4_start">{{ date_w3_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w5_start">{{ date_w4_start | date("YYYY-MM-DD", 7) }}</variable>
