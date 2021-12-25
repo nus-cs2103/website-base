@@ -250,6 +250,12 @@ Use the pain of dealing with this kind of bug reports as an opportunity to devel
 * **If you have received stray bug reports** (i.e., bug reports that don't seem to be about your project), do let us know ASAP (email the prof).
 * **You can navigate to the original bug report** (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
   * {{ icon_tip }} Do not argue with the tester to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the tester for their view and discontinue to discussion.
+* **Aim to ==do a systematic triaging of issues received==**. Some suggestions:
+  * Close duplicate issues
+  * Use labels (create new labels if necessary) to,
+    * differentiate _bugs_ from the rest (e.g., feature suggestions/flaws).
+    * indicate priority of the bugs that need fixing
+  * Assign each bug to the person who should fix it
 * **If you have received 'insincere' bug reports** that seem like just an attempt to increase the tester's bug count, please let us know.<br>
   As for the other bug reports, you can deal with them as you see fit (i.e., triage, apply labels, assign, close etc.).<br>
 * **You may ignore `type/severity.*` labels given by the tester.** They will not affect you or the tester either way -- they were there just for the testers to practice. You may apply your own type/severity labels if you wish.{% if cs2103 or tic4002 %}
