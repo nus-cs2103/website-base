@@ -37,6 +37,15 @@
 Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
 </box>
 </div>
+<div id="alert-time-sensitive">
+<div class="indented">
+<box type="important" icon=":fas-hourglass-half:" seamless>
+
+<span class="text-danger">**This task is time-sensitive.**</span> If done later than the [deadline](weeklySchedule.html#:~:text=for%20exact%20dates.-,Deadline%20for%20weekly%20tasks,-The%20soft%20deadline), it will not be counted as 'done'.<br>
+  %%Reason: This is 'an early draft'; if done late, it is the 'final version' already.%%
+</box>
+</div>
+</div>
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
@@ -841,6 +850,7 @@ While we are on the topic, also note that the architecture of AB3 doesn't suite 
 {#====================================================================================================================#}
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
 <div id="desc_update_dg_with_design_details">
+<include src="tp-tasks.mbdf#alert-time-sensitive" />
 
 <div class="indented-level2" tags="m--cs2103 m--tic4002">
 
@@ -881,6 +891,7 @@ Here are some reasons:
 {#====================================================================================================================#}
 <span id="heading_do_a_release">{{ icon_team }} Do a trial JAR release</span>
 <div id="desc_do_a_release">
+<include src="tp-tasks.mbdf#alert-time-sensitive" />
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `{{ version_first }}.1` (or `{{ version_penultimate }}.trial`). ==Ensure that the jar file works as expected in an empty folder and using Java 11==, by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 </div>
@@ -948,6 +959,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 {#====================================================================================================================#}
 <span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>
 <div id="desc_update_user_docs">
+<include src="tp-tasks.mbdf#alert-time-sensitive" />
 
 * {{ icon_important_big_red }} Update the {{ version_penultimate }} user guide to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
   * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
@@ -1170,6 +1182,7 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 {#====================================================================================================================#}
 <span id="heading_draft_the_ppp">{{ icon_individual }} Draft the PPP</span>
 <div id="desc_draft_the_ppp">
+<include src="tp-tasks.mbdf#alert-time-sensitive" />
 
 * **Create the first version of your _Project Portfolio Page (PPP)_**.<br>
   Reason: ==Each member needs to create a PPP== to describe your contribution to the project.
