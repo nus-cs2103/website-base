@@ -32,7 +32,7 @@
 * **Q:** Can we tweak the command format?<br>
 **A:** No, as this would be considered changing the design of a feature.
 
-* **Q:** Testers have reported missing feature (or suggested feature tweaks). Can we add/tweak those features?<br>
+* **Q:** Testers have reported missing features or feature flaws (or suggested feature tweaks). Can we add/tweak those features?<br>
 **A:** No, as that goes against the spirit of having a feature freeze. Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
 Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
 </box>
@@ -671,7 +671,7 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 
 <div class="indented">
 
-{{ icon_tip }} **Try to achieve all milestone requirements, but do not fret if you miss a few**.  You will get full marks as long as you achieve about 60% of the milestone requirements on average. Yes, that's a pretty low bar, but we have set it low in order to reduce workload and stress. Ideally, you should achieve close to 80-90%.
+{{ icon_tip }} **Try to achieve all milestone requirements, but do not fret if you miss a few**.  You will get full marks for this aspect as long as you achieve about 75% of the milestone requirements on average. Yes, that's a pretty low bar, but we have set it low in order to reduce workload and stress. Ideally, you should achieve 90-100%.
 </div>
 </div>
 {#====================================================================================================================#}
@@ -688,8 +688,11 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 <span id="heading_add_first_functionality_increment">{{ icon_individual }} Add the first functionality increment</span>
 <div id="desc_add_first_functionality_increment">
 
-* Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).<br>
+* **Add functionality in small steps**, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and `{{ version_first }}` at the end of this iteration (i.e., in two weeks).<br>
   As mentioned in the last week, if you split the iteration into two smaller increments of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b`.
+
+* **{{ icon_important_big_red }} Push as hard as you can afford** in this iteration: While we have kept the expectation bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_first }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
+That said, you should also play it safe by aiming to reach a _smallest possible_ version in `{{ version_first }}` before squeezing in more implementation work into `{{ version_first }}b`.
 
 * {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%.
 
@@ -778,11 +781,11 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 
 <box type="important" tags="m--cs2113 m--cs2103 m--tic4002" seamless>
 
-{% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features** as a <span class="text-danger">feature-freeze will be enforced in the next iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized.{% endif %}
+{% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features** as a <span class="text-danger">feature-freeze will be enforced in the next iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized. In other words, **in terms of product design, treat this iteration as creating the final version of the product**.{% endif %}
 
 The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the {{ version_final }} later.{% endif %}
 
-Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks (you will not be allowed to fix feature flaws while a feature-freeze is enforced). The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
+Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks (<span class="text-danger">you will not be allowed to fix feature flaws while a feature-freeze is enforced</span>). The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
 
 <panel header="Admin {{ icon_embedding }} tP → **Grading → Product Design** (excerpt) → Feature Flaws" minimized>
 <include src="tp-grading-bugs.mbdf#featureFlaws" />
@@ -854,7 +857,7 @@ While we are on the topic, also note that the architecture of AB3 doesn't suite 
 
 <div class="indented-level2" tags="m--cs2103 m--tic4002">
 
-<panel type="info" header="Why the hurry to update documents? Why not wait till the implementation is finalized?" minimized>
+<panel type="info" header="{{ icon_Q }} Why not wait till the end to write documentation?" minimized>
 
 Here are some reasons:
 * We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
@@ -1155,9 +1158,10 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 {% if cs2103 %}**On the tutorial day, ==one member should post a message in your team's MS-Teams channel==** %%(i.e., the one inside the MS-Teams used for tutorials)%% stating if PE-D bug triaging is done, how many bugs were selected as 'must fix' and 'good to fix' in {{ version_final }} and how many of them have been done already. Remember to ==tag the tutor== in that post. Note that this post will be counted as a team progress deliverable e.g.,
 
 >Our team's mid-{{ version_final }} progress:
->* PE-D bug triaging progress: 100%
->* Must fix: 6 bugs (fixed: 5)
->* Good to fix: 8 bugs (fixed: 1)
+>* PE-D issues received: 47
+>* Unique bugs: 14
+>   * Must fix: 6 bugs (fixed: 5)
+>   * Good to fix: 8 bugs (fixed: 1)
 {% endif %}
 </box>
 </div>
