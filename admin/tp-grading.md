@@ -215,12 +215,14 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 
 * Project done iteratively and incrementally %%(opposite: doing most of the work in one big burst)%%
 
-* Milestones ==reached on time (i.e., the midnight before of the {{ "lecture" if tic4002 else "tutorial" }})== (to get a good grade for this aspect, achieve at least 75% of the recommended milestone progress).
-* Good use of GitHub _milestones_ mechanism.
-* Good use of GitHub _releases_ mechanism.
+* Project tasks done on time (to get a good grade for this aspect, finish at least 75% of the tasks by the deadline).
+* Good use of these GitHub mechanisms:
+   * milestones
+   * releases
+   * issue tracker (with good task definition, assignment, and tracking)
+   * PRs, and PR reviews
 * Good version control, based on the repo.
 * Reasonable attempt to use the _forking workflow_ at least for the early part of the project.
-* Good task definition, assignment and tracking, based on the issue tracker.
 * Good use of buffers %%(opposite: everything at the last minute)%%.
 
 
@@ -232,8 +234,8 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 
 **Based on:** peer evaluations, tutor observations
 
-**Grading criteria:** Do these to earn full marks.
-* Do close to an equal share of the team tasks (you can earn bonus marks by doing more than an equal share).
+**Grading criteria:** Do the following to get a good grade for this aspect:
+* Do close to an equal share of the team tasks.
 * Have your code merged in at least {{ "five" if tic4002 else "four" }} of weeks {{ "6, " if tic4002 }}7, 8, 9, 10, 11, 12
 
 </div>

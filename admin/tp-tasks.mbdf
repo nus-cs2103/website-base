@@ -60,6 +60,10 @@ Also note that given there's a feature freeze in {{ version_final }}, some lower
 
 {{ icon_important_big_red }} **Milestone requirements are cumulative**. The recommended progress for the mid-milestone is an implicit requirement for the actual milestone unless a milestone requirement overrides a mid-milestone requirement %%e.g., mid-milestone requires a document to be in a temp format while the actual milestone requires it to be in the proper format%%. Similarly, a requirement for milestone `n` is also an implicit requirement for milestone `n+1` unless `n+1` overrides the `n` requirement. This means ==if you miss some requirement at milestone `n`, you should try to achieve it before milestone `n+1`== or else it could be noted again as a 'missed requirement' at milestone `n+1`.
 </span>
+<span id="prReviewsMatter">
+
+{{ icon_important_big_red }} **PR review comments matter!** Remember to do proper PR reviews throughout the tP, at least for non-trivial changes, as the quality and quantity of PR review comments you have given to peers affect your [tP marks](tp-grading.html) (under the _project management_ aspect).
+</span>
 </box>
 </div>
 {#====================================================================================================================#}
@@ -67,9 +71,10 @@ Also note that given there's a feature freeze in {{ version_final }}, some lower
 
 <box>
 
-**Reminder:**
-
 <include src="tp-tasks.mbdf#milestoneCumulative" />
+
+<include src="tp-tasks.mbdf#prReviewsMatter" />
+
 </box>
 
 {{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
