@@ -80,6 +80,20 @@ Also note that given there's a feature freeze in {{ version_final }}, some lower
 {{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
 
 </div>
+{#====================================================================================================================#}
+<div id="cs2103-week9-intro">
+
+<box>
+
+##### How to define version numbers?{.text-info}
+
+While there are no strict rules on choosing version numbers for a product, **[SemVer](https://semver.org/) is a versioning number style that is well-defined and widely used**. Our tP version numbers (`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}` etc.) do not follow SemVer strictly though.
+
+While on the topic of version numbers, **_milestones_ and _versions_ are not the same thing**. For example, you can have a version release in the middle of a milestone and you can define a milestone that does not release a new version of the product. For convenience, the tP uses them interchangeably (e.g., `{{ version_first }}` is used to mean a version as well as a milestone) because its major milestones coincide with its version releases.
+
+</box>
+
+</div>
 
 {#====================================================================================================================#}
 <div id="cs2103-week10-intro">
