@@ -425,6 +425,16 @@ Suggested workflow:
 
 </box>
 
+<box type="tip" seamless>
+
+**Lookout for these mistakes** which were the most common in previous runs of the module:{.text-success}
+
+1. Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/intermediate.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should) of Java method header comments.
+1. Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject).<br>
+  Caution: This is <span class="text-danger">near-impossible to rectify later</span>, after PR containing the commits have been merged.<br>
+  %%Reason: While Git allows editing past commits, it changes their timestamp, which affects your weekly code contribution stats (which are factored into evaluating the consistency of your coding work over the project duration)%%
+</box>
+
 Update the following pages in your project repo:
 </div>
 
