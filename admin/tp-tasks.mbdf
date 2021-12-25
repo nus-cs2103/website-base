@@ -46,6 +46,17 @@ Also note that given there's a feature freeze in {{ version_final }}, some lower
 </box>
 </div>
 </div>
+<div id="common-mistakes">
+<box type="tip" seamless>
+
+**Lookout for these mistakes** which were the most common in previous runs of the module:{.text-success}
+
+1. Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/{{ "basic" if cs2113 else "intermediate" }}.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should) of Java method header comments.
+1. Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject).<br>
+  Caution: This is <span class="text-danger">near-impossible to rectify later</span>, after PR containing the commits have been merged.<br>
+  %%Reason: While Git allows editing past commits, it changes their timestamp, which affects your weekly code contribution stats (which are factored into evaluating the consistency of your coding work over the project duration)%%
+</box>
+</div>
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
@@ -151,6 +162,18 @@ If you surpass the above bars (in your own estimation), you should be in a good 
 
 
 </box>
+</div>
+{#====================================================================================================================#}
+<div id="cs2113-week9-intro">
+
+<box>
+
+<include src="tp-tasks.mbdf#prReviewsMatter" />
+</box>
+</div>
+{#====================================================================================================================#}
+<div id="cs2113-week8-intro">
+<include src="tp-tasks.mbdf#common-mistakes" />
 </div>
 {#====================================================================================================================#}
 <div id="cs2113-week10-intro">
@@ -434,15 +457,7 @@ Suggested workflow:
 
 </box>
 
-<box type="tip" seamless>
-
-**Lookout for these mistakes** which were the most common in previous runs of the module:{.text-success}
-
-1. Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/intermediate.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should) of Java method header comments.
-1. Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject).<br>
-  Caution: This is <span class="text-danger">near-impossible to rectify later</span>, after PR containing the commits have been merged.<br>
-  %%Reason: While Git allows editing past commits, it changes their timestamp, which affects your weekly code contribution stats (which are factored into evaluating the consistency of your coding work over the project duration)%%
-</box>
+<include src="tp-tasks.mbdf#common-mistakes" />
 
 Update the following pages in your project repo:
 </div>
@@ -779,7 +794,7 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 <div id="desc_start_on_the_penultimate_version">
 <div class="indented">
 
-<box type="important" tags="m--cs2113 m--cs2103 m--tic4002" seamless>
+<box type="important" tags="m--cs2103 m--tic4002" seamless>
 
 {% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features** as a <span class="text-danger">feature-freeze will be enforced in the next iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized. In other words, **in terms of product design, treat this iteration as creating the final version of the product**.{% endif %}
 
