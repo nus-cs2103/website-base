@@ -224,7 +224,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
 
-==**Deadline:** {{ get_date(date_w13_start, 10) }}==
+==**Deadline:** {{ get_date(date_w13_start, 11 if S == 2 else 10) }}==
 
 This phase is for you to respond to the bug reports you received.
 
@@ -304,6 +304,8 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
   * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the :fas-check-square: `A Duplicate of` tick box.
   * For each group of duplicates, all duplicates should point to one _original_ i.e., no multiple levels of duplicates, and no cyclical duplication relationships.
   * If the duplication status is eventually accepted, all duplicates will be assumed to have inherited the `type.*` and `severity.*` from the _original_.
+* **If you cannot reproduce the bug based on the info given by the tester** you are still expected to make a _reasonable attempt_ to go beyond the information provided by the tester to reproduce the bug, if there is clear evidence of something wrong.<br>
+ For example, the screenshot in the bug report clearly shows an error message that should not appear, but you can't reproduce the error message based on the info given by the tester. Perhaps the error was caused by something else the tester did although the tester didn't realize it is connected to the error. In this case, based on the error message, you might be in a better position to figure out the real cause of the error. If you don't, the decision can go against you in a later phase if either the tester or the moderator figures out how to reproduce the error and the moderator decides that it is something you should have been able to figure out yourself.
 <p/>
 
 * **Apply one of these labels** (if missing, we assign: `response.Accepted`)
@@ -425,7 +427,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 </tab>
 </tabs>
 </div>
-
+<p/>
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
 

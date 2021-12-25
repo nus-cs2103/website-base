@@ -27,7 +27,7 @@
 * **Problems caused by _extreme_ user behaviors**:
   * If the problems can only happen in case of deliberate sabotage %%(e.g., user entered a 30-digit telephone number)%%, in which case it should not be considered a bug.<br>
 However, if such input can be entered by a user mistake, they should not cause harm e.g., such mistakes should not crash the app, corrupt the data, or make it unusable.
-
+  * Problems caused by integer overflows -- apply the guideline in the previous point.
 * **Problems caused by very long input values**: When a user input is unusually long %%e.g., a very long name, a very large number%%, it can cause problems e.g., the UI layout can get messed up, some part of it might get cut off.<br>
   * These can be considered cosmetic issues (i.e., `severity.VeryLow`) of `type.FunctionalityBug`.<br>
   However, if the problem can hinder the user %%(e.g., not seeing the last part of a very long name might not hinder the user but it does hinder the user if only the first few characters of the name is shown)%%, the severity can be `Low` or higher.
@@ -71,6 +71,7 @@ However, if such input can be entered by a user mistake, they should not cause h
 * **Details missing from a diagram**: In a similar vein to the above, omitting details from a diagram is OK if it does not mislead/hinder the reader.<br>
   Forgetting to include something is not the same as a deliberate decision to omit something in order to simplify the diagram %%e.g., the latter could accompany a note to the reader to mention which/some parts have been omitted, _if_ it is worthwhile for the reader to know the omission.%%<br>
  While many UML notations are optional, haphazard omissions without a good reason can affects consistency which affects readability e.g., it can be considered a minor bug if a sequence diagram omits an activation bars in some places but not in other places and yet the omission doesn't make the diagram any easier to read.
+* **Nitty-gritty details missing from the UG** is not a bug long as the user is informed of those details using other means such as error messages or in-app help.
 * **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
 * **Severity of bugs related to _missing requirements_** (e.g., missing user stories)? Depends on the potential damage the omission can cause. Keep in mind that not documenting a requirement increases the risk of it not getting implemented in a timely manner (i.e., future developers will not know that feature needs to be implemented).
 * **Unfulfilled NFRs**: If the DG mentions non-functional requirements that are not met by the product, it can be a `severity.Low` `DocumentationBug` if the the NFR was unreasonable in the first place. Otherwise, it can be `type.FeatureFlaw` bug.
