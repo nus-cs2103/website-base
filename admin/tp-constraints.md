@@ -35,6 +35,8 @@ The product should be targeting users who can type fast and prefer typing over o
 
 {% call show_constraint("Constraint-Single-User") -%}
 The product should be for a single user i.e. (not a multi-user product).<br>
+Not allowed: Application running in a shared computer and different people using it at different times.<br>
+Not allowed: The data file created by one user being accessed by another user during regular operations (e.g., through a shared file storage mechanism).<br>
 %%**Reason**: multi-user systems are hard to test, which is unfair for peer testers who will be graded based on the number of bugs they find.%%
 {%- endcall  %}
 
@@ -120,17 +122,18 @@ If you are unable to package everything into a JAR file, package the JAR file an
 The file sizes of the deliverables should be reasonable and not exceed the limits given below. <br>
 <div tags="m--cs2113 m--cs2103 m--tic4002">
 
-%%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue. Plus, there is no reason to use space/bandwidth without any benefit.%%</div>
+%%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue. Plus, there is no reason to use space/bandwidth without a proportional benefit.%%</div>
 
 * <span class="text-danger">Product (i.e., the JAR/ZIP file): 100MB</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
 
 * <span class="text-danger">Documents (i.e., PDF files): 15MB/file</span> (Not following [the recommended method of converting to PDF format](https://se-education.org/guides/tutorials/savingPdf.html) can cause big PDF files. Another cause is using unnecessarily high resolution images for screenshots).
 
-In addition, do ==ensure that the final JAR/PDF files are not bloated unnecessarily==. Such bloat can be considered a bug.
+In addition, do ==ensure that the final JAR/PDF files are not bloated unnecessarily==. Such <span class="text-danger">bloat can be reported as a bug</span>.
 Some suggestions:
 
 * Check if the the assets (e.g., images, audio, data) included in the JAR files are all strictly necessary and the quality is not unnecessarily high (e.g., images with higher resolution than necessary).
 * Check if the third-party libraries in the JAR file are strictly necessary or whether they have lighter versions that are still enough for your purpose.
+* Using [JavaFX WebView](http://tutorials.jenkov.com/javafx/webview.html) allows you to display a Web page within your application but it adds about 70MB to your JAR file. If you decide to use that library, ensure the benefit is worth the increase in size.
 {%- endcall  %}
 
 {% call show_constraint("Constraint-PDF-Friendly") -%}
