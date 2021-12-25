@@ -455,6 +455,23 @@ Update the following pages in your project repo:
 </modal>
 </div>
 {#====================================================================================================================#}
+<span id="heading_add_skeletal_ppp">{{ icon_individual }} Add a skeletal PPP</span>
+<div id="desc_add_skeletal_ppp">
+
+<box type="info" seamless>
+
+At the end of the project, each member needs to create a Project Portfolio Page (PPP) to describe your contribution to the project. Let's create a skeletal version of the PPP now itself so that everyone becomes aware how detailed you need to be abut your individual contributions at the end of the project.
+</box>
+
+* **Create a skeletal version of your _Project Portfolio Page (PPP)_**.
+  * Just the headings are enough. You can write `to be added soon` as placeholders for content.
+  * PDF conversion not required.
+  * Follow the details in the panel below.
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="2") }}
+
+</div>
+{#====================================================================================================================#}
 <span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs{% if not tic4001 %}, use cases{% endif %}</span>
 <div id="desc_update_dg_user_stories_etc">
 
