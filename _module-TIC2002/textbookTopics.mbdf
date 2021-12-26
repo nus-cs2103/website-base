@@ -1403,10 +1403,10 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "4"},
-              {name: "sequentialModels", heading: "Sequential Models", priority: "4"},
-              {name: "iterativeModels", heading: "Iterative Models", priority: "4"},
-              {name: "agileModels", heading: "Agile Models", priority: "4"}
+              {name: "what", heading: "What", priority: "1"},
+              {name: "sequentialModels", heading: "Sequential Models", priority: "2"},
+              {name: "iterativeModels", heading: "Iterative Models", priority: "2"},
+              {name: "agileModels", heading: "Agile Models", priority: "3"}
             ]
           }
         ]

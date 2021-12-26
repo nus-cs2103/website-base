@@ -62,15 +62,15 @@ e.g., **Instead of traditional instructor-led tutorials**, the module provides q
 # Lectures + Tutorials
 <div class="indented" id="lectures-info">
 
-%%:far-clock:%% Tuesdays 6.30-9.30pm<br>
-%%:fas-map-marker-alt:%% Online + (optional: LT19)<br>
+%%:far-clock:%% Wednesdays 6.30-9.30pm<br>
+%%:fas-map-marker-alt:%% Online + (optional: COM1-02-06)<br>
 
 **A TIC2002 lecture + tutorial time is divided into three parts**, as follows:
 
 * **[6.30-7.00pm] Pre-lecture consultations:**
   * You can use this time to get prof's help if you encountered problems while doing the previous week's tasks.
   * This session will be online. Communications with the prof is to be done using Microsoft Teams app.
-    * If the question is is potentially relevant to others in the class, post your question in the chat room of the `TIC2002_{{ period }}` ([link]({{ url_ms_teams_class }})) MS Team.
+    * If the question is is potentially relevant to others in the class, post your question in the chat room of the `TIC2002-{{ period }}` ([link]({{ url_ms_teams_class }})) MS Team.
     * Otherwise search for prof's name (`Damith Chatura RAJAPAKSE`) in MS Teams and send a private chat message.
 * **[7.00-8.00pm] Lecture briefing**:
   * Will be done via Zoom.
@@ -286,7 +286,7 @@ We'll be using Intellij IDE for programming. While using Intellij is not compuls
 <span id="help-info">
 
 If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, you can
-* post in the [module forum]({{ url_forum }})
+* post in the [LumiNUS forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums)
 * ask for prof's help via [MS Teams]({{ url_ms_teams_class }})
 * email prof at `{{ module | lower }}`[at]`comp.nus.edu.sg`
 
