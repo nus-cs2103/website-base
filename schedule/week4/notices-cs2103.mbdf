@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, get_date, show_as_tab, timing_badge with context %}
 
 <box dismissible>
 

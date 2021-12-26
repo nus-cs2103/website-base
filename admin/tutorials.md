@@ -45,7 +45,10 @@ Zoom links for tutorial sessions will be available in [LumiNUS/Weblinks](https:/
 
 **Slides and tutorial recordings**:
 * The Zoom recording of a tutorial will be made available to you after the tutorial.
-* <span class="text-danger">Slides used in tutorials will not be distributed to students.</span> You are expected to take notes (or screenshots) during the tutorial as necessary.
+* <span class="text-danger">Slides used in tutorials will not be distributed to students.</span> You are expected to take notes (or screenshots) during the tutorial as necessary. Reasons:
+  1. Tutorial slides are meant to help the tutor deliver the tutorial, and not meant to be used as reference materials for you to study later). ==When some content is suitable as a reference material, we'll provide you a copy of it.==
+  1. To encourage some level of active engagement with the materials (e.g., taking notes) which is known to increase retention.
+  1. To discourage 'no need to bother now; can look at the slides near the exam' attitude -- because most of the materials covered in tutorials are applicable to the project immediately.
 
 
 **The role of our tutors** is different from tutors in other modules.

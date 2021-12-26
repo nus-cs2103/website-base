@@ -17,13 +17,13 @@
 
 <div tags="m--cs2103 m--cs2113">
 
-**The soft deadline to complete tasks allocated to a week** is the <tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>, unless a specific deadline is given. You are strongly encouraged to finish most weekly task before the soft deadline because some tutorial tasks are done best _after_ weekly task have been completed, for the best learning experience.
+**The soft deadline to complete tasks allocated to a week** is the <tooltip content="e.g., if your tutorial is on Thursday, the deadline is Wednesday 23.59">midnight before your tutorial day</tooltip>, unless a specific deadline is given. You are strongly encouraged to finish most weekly tasks before the soft deadline because some tutorial tasks are done best _after_ weekly tasks have been completed, for the best learning experience.
 
 <span class="text-danger">**The hard deadline** for weekly tasks is the following lecture</span> i.e., do this week's task before the next week's lecture.
 
 **We are not strict with most interim weekly project deadlines** i.e., we'll not penalize you even if you occasionally miss those deadlines, as long as you catch up soon enough (within a few days after the hard deadline).
 
-**It's OK to make occasional mistakes in weekly tasks** (making mistakes is a natural part of learning new things after all). If a weekly task was not accepted as 'done' due to a mistake you made, go ahead and rectify the mistake as soon as you can -- our grading scripts will not penalize such mistakes if they are corrected shortly.
+**It's OK to make occasional mistakes in weekly tasks** (making mistakes is a natural part of learning new things after all). If a weekly task was not accepted as 'done' due to a mistake you made, go ahead and rectify the mistake as soon as you can -- our grading scripts will not penalize such mistakes if they are corrected soon after.
 </div>
 <div tags="m--tic4001 m--tic4002">
 

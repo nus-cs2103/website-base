@@ -33,7 +33,7 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 
 <box dismissible>
 
-{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spread over a longer period**, rather than to be done as a short burst.
+{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and span a longer period**, rather than to be done as a short burst.
 
 Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
 </box>
@@ -64,7 +64,7 @@ Note the typical deadline weekly project tasks:
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1") }}
 <p/>
 
-But ==as there are no tutorials this week, you have until {{ get_date(date_w2_start, 6) }}== to finish this week's iP tasks.
+But ==as there are no tutorials this week, you have until the next lecture== to finish this week's iP tasks.
 </box>
 </div>
 <div id="cs2103-week3-intro">
@@ -91,7 +91,7 @@ Note the typical deadline weekly project tasks:
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1") }}
 <p/>
 
-But ==as there are no tutorials this week, you have until {{ get_date(date_w2_start, 6) }}== to finish this week's iP tasks.
+But ==as there are no tutorials this week, you have until the next lecture== to finish this week's iP tasks.
 </box>
 </div>
 <div id="cs2113-week3-intro">
@@ -158,12 +158,14 @@ But ==as there are no tutorials this week, you have until {{ get_date(date_w2_st
 #####  **FAQ** about iP increments{.text-info}
 
 * **Q. How are the iP git tags used in grading?**<br>
-  **A.** A git tag is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor that progress declarations.
+  **A.** A git tag is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor those progress declarations.
 * **Q. What if I discovered a bug after I finished an increment?**<br>
   **A.** Go ahead and fix it in a subsequent commit. There is no need to update the previous commit or move the corresponding tag to the new commit. As we do not test your code at every tag, earlier bugs will not affect your grade as long as they are fixed later. Similarly, feel free to improve the code of previous increments later.
 * **Q. I did multiple increments in the same commit. How to fix?**<br>
   **A.** You can add the corresponding tags to the same commit.<br>
   Optionally, if you haven't pushed the commit to the fork yet, you can try to figure out how to split that commit into multiple commits.
+* **Q. The requirements of an increment scheduled for this week is already satisfied by the work I did in an earlier week. What now?**<br>
+  **A.** You can add the corresponding tag to the earlier commit (or the latest commit -- it doesn't matter) and push the tag.
 * **Q. My iP increments are not detected by the dashboard because I forgot to push my tags earlier. What now?**<br>
   **A.** Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
 * **Q. Oh no! I made a mistake in my tag/branch name.**<br>
@@ -380,7 +382,7 @@ One of the increments below asks you to push the design more towards the OOP app
 <div id="desc_use_gfmd_in_pr_description">
 
 * [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) (and Markdown in general) is useful in many places when using GitHub %%e.g., issue tracker, PR reviews, writing documentation%%. The aim of this task is to ensure that you are sufficiently familiar with the GFMD syntax.
-* Requirements: Update <tooltip content="click on the the `...` icon on the top right corner of the previous description and choose `Edit`">(how?)</tooltip> the description of the iP PR you created earlier so that it contains the following GFMD elements:
+* Requirements: Update <tooltip content="click on the the `...` icon on the top right corner of the previous description and choose `Edit`">(how?)</tooltip> the description of the iP PR you created earlier (<span class="text-danger">do not add a new comment</span>) so that it contains the following GFMD elements:
   1. a heading
   1. a bullet list
   1. a numbered list
@@ -496,7 +498,7 @@ This task is worth `2x2=4` participation points.
 <span id="heading_learn_from_others">Learn from others (optional)</span>
 <div id="desc_learn_from_others">
 
-* **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu. Click on the <span class="badge badge-light"><md>%%**</>**%%</md></span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+* **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu of this module website. Click on the <span class="badge badge-light">%%**:fas-code:**%%</span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent=2) }}
 
@@ -534,7 +536,7 @@ This activity is worth `2x2=4` participation points.
 * You are recommended to do each new increment in a separate branch.
 * If you have done the increment in the previous semester already and the tag has been pushed to the repo, no further action needed.
 {% else %}
-* **Do each enhancement in a separate branch and merge to the `master` branch only when ready** (if you push incomplete features into the `master` branch, it can confuse others reviewing your PR). There is no need to do the increments as _parallel_ branches though %%i.e., you can do one increment and merge that branch before starting on the next one%%.
+* **Do each enhancement in a separate branch and merge to the `master` branch only when ready** (reason: if you push incomplete features into the `master` branch, it can confuse others reviewing your PR). There is no need to do the increments as _parallel_ branches though %%i.e., you can do one increment and merge that branch before starting on the next one%%.
 <br>
 {{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
 {% endif %}
@@ -663,14 +665,14 @@ This activity is worth `2x2=4` participation points.
 
 * Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`{% if not tic4002 %}
 * Recommended to add the extension via a branch (branch name is up to you). Optional to add it via a PR.{% endif %}
-* Add a tag named `BCD-Extension` to the corresponding commit.
+* Add a ==tag named `BCD-Extension`== to the corresponding commit.
 
 <div class="indented-level2">
 
 {{ icon_important_big_red }} Discuss with your team members to ensure that each member picks a different extension.
 
 
-{{ icon_tip }} You may want to pick an extension that is relevant to your tP so that the code can be reused in the tP later, if possible.
+{{ icon_tip }} You may want to pick an extension that is potentially relevant to your tP so that the code can be reused in the tP later, if possible.
 </div>
 </div>
 {#====================================================================================================================#}

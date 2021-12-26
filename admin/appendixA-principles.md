@@ -5,7 +5,7 @@
 
 These are some of the main principles underlying the module structure.
 
-<box type="important">
+<box type="important" seamless>
 The product is you, NOT what you build.
 </box>
 
