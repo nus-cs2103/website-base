@@ -60,6 +60,7 @@
 Tutorial | Reviewer | First PR to review | Backup PR to review
 ---------|----------|--------------------|---------------------{% for line in ip_pr_review_allocation  %}
 {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | {{ get_pr_link(line[3]) }}{% endfor %}
+{% if not ip_pr_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 <p/>
 
@@ -90,6 +91,7 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 Tutorial | Reviewer | Second PR to review | Backup PR to review
 ---------|----------|---------------------|---------------------{% for line in ip_pr_review_allocation  %}
 {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | {{ get_pr_link(line[5]) }}{% endfor %}
+{% if not ip_pr_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 <p/>
 

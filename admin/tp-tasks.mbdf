@@ -1086,6 +1086,7 @@ Your GitHub  | First choice | Second choice | Third choice
 -------------|--------------|---------------|-------------
 {% for allocation in tp_dg_review_allocation  %}`{{ allocation[0] }}` | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }} | {{ get_links(allocation[3]) }}
 {% endfor %}
+{% if not tp_dg_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 </div>
 

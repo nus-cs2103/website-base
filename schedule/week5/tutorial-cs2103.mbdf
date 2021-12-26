@@ -21,6 +21,7 @@
    {% for allocation in allocations  -%}
    {{ allocation[0] }} | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }}
    {% endfor %}
+   {% if not allocation | length %}Allocation not available yet... {% endif %}
    </panel>
    <p/>
 
