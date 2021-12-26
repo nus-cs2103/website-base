@@ -66,31 +66,25 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 
 <!-- .......................................................................................... --> {{ line_dotted }}
 
-# Lectures
+# Lectures + Tutorials
 <div class="indented" id="lectures-info">
 
 %%:far-clock:%% Tuesdays 1800-2130<br>
-%%:fas-map-marker-alt:%% Venue E3-06-08<br>
+%%:fas-map-marker-alt:%% Venue: online (optional E3-06-08)<br>
 
-Lectures will be delivered as **a mixture of Zoom sessions and pre-recorded videos**. You may attend lectures from home (via Zoom) ~~or in person. If you are attending lectures in person, please bring your laptop to the lecture as you will need to be using it for the most part of the lecture.~~ (EDIT: Due to the increased class size this semester, face-to-face lectures will not be possible as a venue large enough is not available; ==the module delivery will be entirely online==).
+**A TEE3201 lecture + tutorial time is divided into three parts**, as follows:
 
-The rough break-down of a typical lecture:
 * 1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics. Use Microsoft Teams if you need to consult the prof during this time.
 * 1830-1900: Do exercises related to previous week topics. Consult prof (via MS Teams) if you encounter problems.
 * 1900-2000: Short Zoom lecture, introducing topics for the current week. After that, watch the pre-recorded videos and the textbook sections provided.
-* 2000-2130: You can stay back and do exercises for the current week. Consult prof/TA (using MS Teams) for help as needed.
+* 2000-2130: You can stay back and do exercises for the current week. Consult prof/TA (using MS Teams) for help as needed.<br>
+{{ icon_tip }} ==If you prefer face-to-face interactions during this portion==, I can come to meet you f2f in the lecture venue (please let me know in advance).
 
 
 **{{ icon_slides }} Lecture slides will be uploaded to LumiNUS after the lecture**, usually by midnight of the same day. **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.
 
 
 </div>
-
-<!-- .......................................................................................... --> {{ line_dotted }}
-
-# Tutorials
-
-There is no formal tutorial. Instead, tutorial-like activities are integrated into the lecture.
 
 <!-- .......................................................................................... --> {{ line_dotted }}
 
@@ -233,7 +227,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 2. **Email `tee3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
 3. **Send a private message** to the prof (search for `Damith Chatura Rajapakse`) or to the TA (search for `Chan Weizhong`) via MS Teams.
 4. Email the prof at <include src="index-{{ module | lower }}.mbdf#prof-email" inline trim/> or the TA at <include src="index-{{ module | lower }}.mbdf#ta-email" inline trim/>
-5. You may also post in the [module forum]({{ url_forum }}).
+5. You may also post in the [LumiNUS forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
 
 </span>
 <!-- .......................................................................................... --> {{ line_dotted }}
@@ -260,151 +254,10 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 
 # Exam
 
-* The final exam will be on **Wed 6th May, 9-11am** (as per normal exam schedule).
-* The exam will be done online.
+<div class="indented">
 
-### procedure/rules
+<include src="exams.md#main" />
 
-1. **Tools: LumiNUS, Zoom, Microsoft Teams (MST), PDF reader.**
-1. **The webcam view should capture all four** of these: your face (side view, ==no mask==), your hands, the working area of the table, and the entire screen area of your active screen. Here is an example:<br>
-  <img src="images/zoomCameraExample.png" width="367"/>
-1. ==**Recording of your PC screen** is not required.==
-1. **Only one computer screen** allowed. If you have multiple screens, switch off all except one. It is better if you can physically remove unused screens if possible %%e.g., do not keep a switched off tablet on the table%%.
-1. **You may not use a second laptop/computer as the web cam.** Use either an external webcam or a mobile phone instead. %%Reason: the screen of that second computer will not be captured in the video feed.%%
-1. **Not allowed to use the printer or other devices during the exam.**
-1. **The exam is open-book**.
-1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
-  You may use any hard copies or written materials too.
-1. **The Browser should only be used to access ==LumiNUS and the module website==**{% if not tee3201 %} (including relevant se-education.org pages %%e.g., Java coding standard%%){% endif %}. <span class="text-danger">Accessing other websites is not allowed.</span><br>
-1. **Use Microsoft Teams to communicate with the prof.** Communicating with others is not allowed, except with NUS IT staff (for tech help).
-1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
-1. **When the invigilator asks you to do an _identity check_**, turn your face towards the camera (<span class="text-danger">do not adjust the camera position</span>), move closer to the camera, and hold the pose until the invigilator tells you to go back to your working position.
-
-1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
-
-1. **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), PM the invigilator using MS Teams (failing that, use Zoom chat).
-
-1. **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.
-
-1. **Stay in the video frame for the entire exam duration**, except during the toilet break.
-
-1. **Do not to use virtual backgrounds in Zoom**. Do not use pre-recorded videos as your video feed.
-
-1. **Remain in the video frame until the invigilator ends the exam**, even after you have submitted the quiz. Do not use the computer or other communication devices (not even Kindle) during that period (suggestion: have something in hard-copy form to ready to read during this time e.g., printed lecture notes of another module).
-
-### 30-15 minutes before the exam
-
-* Ensure your computer and the phone (if applicable) are charged and within reach of a power supply.
-* In your computer, close all other apps and browser tabs other than the ones permitted to be use for the exam. Remember to exit other background apps that starts automatically such as telegram.
-* Launch MS-Teams, login to it, and close the app without exiting (which makes it run in the background).
-* Login to LumiNUS. The password to open the quiz will be broadcast via Zoom (audio announcement plus chat message) by the invigilator later.
-* Launch Zoom, login, ensure profile name and camera complies with our requirements, and join the meeting (use the ==the Zoom link to use for the exam will be sent to you near to the exam date==). Wait for the invigilator to take you into the meeting.
-* Once you are inside the Zoom meeting, wait patiently until all students have been admitted and the exam is ready to start. **This wait could be as long as 30 minutes.**
-
-### Format
-
-* The exam will be given as quizzes in LumiNUS.<br>
-  For the ease of administration, the exam is split into two equal size quizzes: part 1, part 2.<br>
-* Each quiz,
-  * consists of 15+1=16 regular MCQ questions (plus one dummy question to give comments).
-  * each question is 2 marks worth, capped at 30 marks i.e., you can get full marks even if you have only 15/16 correct answers.
-  * is to be done in 35 minutes (2 minutes per question + 3 extra minutes)
-* All questions have the same the weight and each question is expected to take a similar amount of time (around 2 minutes).
-* The questions will be presented in random order.
-* You are not allowed to go back to previous questions.
-* You are required to give a justification/rationale for your answer. The question will specify what should be included in the justification.<br>
-  ==**Answers without the correct justification will not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) that do not have justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
-* Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
-<div class="indented-level2">
-
-<panel haader="A sample question" expanded >
-
-Choose the incorrect statement.
-
-<span class="text-info">[Justification: why is it incorrect?]</span>
-- ( ) a. Software engineering projects always use OOP.
-- ( ) b. Some software engineering projects can be large and complex.
-- ( ) c. Some software engineering projects can go on for many years.
-- ( ) d. Software engineering is a lot more than just _programming_.
-
-</panel>
-<p/>
 </div>
-
-
-### Resources
-
-* **A _mock exam_** (containing 2-3 questions) will be given to around week 13. Objective: for you to familiarize with the exam software and format.
-* **A _practice exam_** will be given to you at least one week before the actual exam. Objective: for you to practice timing.<br>
-  It will be at least half as long as the actual exam and the difficulty and format of the questions will be similar to the actual exam.
-* **All past LumiNUS quizzes** will be reopened around the reading week. Objective: for you to self-test your knowledge.
-<!--
-
-There is no midterm.
-
-The final exam has two parts: 
-* Part 1: MCQ questions (1 hour, 30 marks) 
-* Part 2: Essay questions (1 hour, 30 marks)
-
-Both papers will be given to you at the start but you need to **answer Part 1 first** (i.e. MCQ paper). It will be **collected 1 hour after the exam start time** (even if arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.
-
-<box type="success">
-
-You will be given a practice exam paper to familiarize yourself with the exam format.
-</box>
-
-## Final Exam: Part 1 (MCQ)
-
-**Question format:** Each MCQ question gives you a statement to evaluate. 
-
-<tip-box> 
-
-{{ icon_example }} An example statement
-
->Testing is a Q&A activity
-
-</tip-box>
-
-The meaning of answer options are<br>
-**`A`**: `Agree`. If the question has multiple statements, ++agree with all of them++.<br>
-**`B`**: `Disagree`. If the question has multiple statements, ++disagree with at least one of them++<br>
-**`C`**, **`D`**, **`E`**: Not used
-
-**Number of questions: 50**
-
-**You will not be allowed to clarify doubts about questions (in Part 1)** by talking to invigilators. This is to be fair to all students as the the part 1 is fast-paced and each question has only two possible answers.
-* If a question is not clear, you can circle the question number and write your doubt in the exam paper, near the unclear question.
-* If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.
-
-**Questions in Part 1 are confidential.** You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.
-
-Some questions have tags e.g., the question below has a tag  **`JAVA`**. These **tags provide additional context about the question**. In the example below, the tag indicates that the code given in the question is Java code.
-
-**There is no negative marking.** Therefore, you are recommended to answer all 50 questions. Even random answers are better than no answer.<br>
-  First 25 correct answers will earn 0.2 marks each. Each correct answer from that point will earn 1 mark each. If you answer all questions correctly, you get 30 marks i.e., `0.2x25 + 1.0x25`.
-
-**Bring the correct type of pencils** (i.e., B1) for marking the OCR form. If you use pens or the wrong type of pencil to mark the OCR form, the machine cannot read your answers.
-
-**You are recommended to fill up the OCR form as you go**, rather than wait to fill all answers in the OCR form at the end. However, only answers marked in the OCR form will be counted for grading.
-
-
-<img src="{{baseUrl}}/admin/images/contextTag.png" /><br>
-
-**The paper is open-book**: you may bring any printed or written materials to the exam in hard copy format. However, electronic devices (including smart watches) are not allowed.
-
-{{ icon_tip }} **Mark the OCR form as you go**, rather than planning to transfer your answers to the OCR form near the end. %%&nbsp;Reason: Given there are 50 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.%%
-
-{{ icon_tip }} **Write the answer in the exam paper as well** as marking it in the OCR form. %%&nbsp;Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.%%
-
-{{ icon_tip }} We have tried to **avoid deliberately misleading/tricky questions**. If a question seems to take a very long time to figure out, you are probably over-thinking it.
-
-
-## Final Exam: Part 2 (Essay)
-
-Unlike in part 1, **you can ask invigilators for clarifications** if you found a question to be unclear in part 2.
-
-Yes, **you may use pencils** when answering part 2.
-
--->
 
 </div>

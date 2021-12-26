@@ -48,7 +48,7 @@ The final exam has two types of questions:
 * You will be given a practice exam paper (smaller than the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
 </div>
 
-<div tags="m--cs2103 m--tic2002">
+<div tags="m--cs2103 m--tic2002 m--tee3201">
 
 * The exam will be done online.
 * ==**We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)**==, combined with the deviations/refinements given in the section below. Please read the SOP carefully and ensure you follow all instructions.
@@ -66,7 +66,7 @@ The final exam has two types of questions:
 1. **You <span class="text-success">may use headphones</span> during the exam.**
 1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
   You may use any hard copies or written materials too.
-1. **The Browser should only be used to access LumiNUS and the module website (including relevant se-education.org pages %%e.g., Java coding standard%%).** ==Accessing other websites is not allowed==.<br>
+1. **The Browser should only be used to access LumiNUS and the module website{% if not tee3201 %} (including relevant se-education.org pages %%e.g., Java coding standard%%){% endif %}.** ==Accessing other websites is not allowed==.<br>
   Do not use the browser to view PDFs. %%Reason: viewing PDF files in the browser makes it harder for invigilators to detect students accessing unauthorized websites.%%
 1. **Use Zoom private messages to communicate with the invigilator. Use Microsoft Teams to communicate with the prof.** Communicating with others is not allowed, except with NUS IT staff (for tech help).
 1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
