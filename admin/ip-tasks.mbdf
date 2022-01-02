@@ -192,7 +192,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 
 <box type="tip" seamless>
 
-<div class="text-success">**If you encounter technical problems**</div>, follow the guidelines given below in seeking help:
+<span class="text-success">**If you encounter technical problems**</span>, follow the guidelines given below in seeking help:
 
 {{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="2") }}
 </box>
