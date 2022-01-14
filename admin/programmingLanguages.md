@@ -36,11 +36,11 @@ We require you to use **Java 11** (the [Oracle version](https://www.oracle.com/j
 
 {% if cs2103 or tic4002 %}
 
-<panel type="danger" header="[IMPORTANT] Advisory for :fab-apple: Mac users" minimized >
+<panel type="danger" header="[IMPORTANT] Advisory for :fab-apple: Mac M1 users" minimized >
 
-This advisory applies to **all M1 Mac users (and those who used Rosetta to get their iP to work)**
+This advisory applies to **all M1 Mac users**
 
-It turns out that you might not be able to run the JAR files produced by some of the classmates due to various incompatibility issues between your environment and theirs, although you may have got your own JAR file to work in your computer. Some of our tutors looked into this problem and found a specific build of OpenJDK that doesn't seem to have these problems. If you are among the affected Mac users, please switch to that version of OpenJDK by following the instructions below.
+It turns out that you might not be able to run the JAR files produced by some of the classmates due to various incompatibility issues between your environment and theirs, although you can still get your own JAR files to work in your computer. Some of our tutors looked into this problem and found a specific build of OpenJDK that doesn't seem to have these problems. If you are among the affected Mac users, please switch to that version of OpenJDK by following the instructions below.
 
 **Instructions:**
 Download and install the Azul build of OpenJDK 11 version found [here](https://www.azul.com/downloads/?version=java-11-lts&os=macos&architecture=arm-64-bit&package=jdk-fx) (scroll to the bottom of the page) -- it supports fat JAR files compiled by all other systems that we have tested.
