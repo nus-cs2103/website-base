@@ -5,7 +5,7 @@ Modify the code a program to,
 * omit squares (i.e. `n*n`). Note how `8 x 8` has been omitted in the example below. Recommended: use a `continue` statement to achieve this.
 * not print rows that has a value higher than 100. Note how the printing stops after `8 x 12 = 96` in the example below. Recommended: use a `break` statement for this.
 
-```python
+```
 Enter a number: 8
 8 x 1 = 8
 8 x 2 = 16

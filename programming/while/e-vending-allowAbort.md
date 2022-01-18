@@ -18,7 +18,7 @@ print('Your balance:', coin_sum - price)
 
 Modify the code so that the user can abort the purchase by entering `0` as the coin value:
 
-```python
+```
 Price: 100
 Enter a coin: 20
 You have entered: 20

@@ -25,7 +25,7 @@ else:
 
 Modify the code so that it accepts coins of value 10, 20, 50, 100 only:
 
-```python
+```
 Price: 100
 Enter a coin: 30
 Coin not recognized

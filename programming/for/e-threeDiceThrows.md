@@ -2,7 +2,7 @@
         
 Write a program to generate all possible results you can get by throwing a <trigger for="pop:exerciseThreeDiceThrows-dice">6-sided dice</trigger> three times. The expected result (partial) is given below.
 
-```python
+```
 1 1 1
 1 1 2
 1 1 3

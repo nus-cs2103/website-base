@@ -4,7 +4,7 @@ Extend the code you wrote for the exercise _Grade Analyzer_ with the following a
 
 If the grade is determined to be `D` ask the user if the grade should be withheld. If the user agrees, show the grade as `NA` instead of `D`.
 
-```python
+```
 Enter project score
 10
 

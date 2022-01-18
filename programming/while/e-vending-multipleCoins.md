@@ -17,7 +17,7 @@ print('Your balance:', coin_value - price)
 
 Modify the code so that it can accumulate coins until there is enough to pay for the product. An example output is given below:
 
-```python
+```
 Price: 100
 Enter a coin: 20
 You have entered: 20

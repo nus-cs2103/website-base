@@ -7,7 +7,7 @@ Write a program to read the radius of a circle (a float number) from the input a
 * You can use `math.pi` as the value of PI.
 * You can use the built-in function `round` to round off a number to a specified number of decimal places. e.g., `round(1.12345, 2)` returns `1.12`
 
-```python
+```
 Enter radius: 4.5
 Area: 63.61725
 ```
