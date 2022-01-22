@@ -66,7 +66,7 @@ print(get_email_body())
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 This is the first line of the email.
 This is the second line.
 This is the third line.

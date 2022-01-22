@@ -23,7 +23,7 @@ for item in items:
   <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
   <td valign="bottom"> 
 
-```
+```{.no-line-numbers}
 The price of Pen is 6
 The price of Pencil is 4
 The price of Cup is 2

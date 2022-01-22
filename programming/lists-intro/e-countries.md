@@ -21,7 +21,7 @@ print(get_countries())
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 [1, 2, 3]
 ['China', 'India', 'Malaysia', 'Singapore', 'Sri Lanka']
 ```

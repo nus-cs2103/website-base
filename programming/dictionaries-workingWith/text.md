@@ -44,7 +44,7 @@ print('After deleting:', grades)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 After adding: {'TEE3201': 'A', 'CS2103': 'B'}
 After updating: {'TEE3201': 'A+', 'CS2103': 'B'}
 After deleting: {'TEE3201': 'A+'}

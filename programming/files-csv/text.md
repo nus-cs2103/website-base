@@ -20,7 +20,7 @@
   <td>&nbsp;→&nbsp;</td>
   <td>
 
-![]({{baseUrl}}/files-csv/images/deliveries.png =250x)
+<img src="images/deliveries.png" />
   </td>
 </tr>
 </table>

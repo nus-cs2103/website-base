@@ -22,7 +22,7 @@ divide(3, 0)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Starting calculation
 50 / 5 = 10.0
 Calculation over!........
@@ -95,7 +95,7 @@ divide2(5, 'abc')
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Starting calculation
 Traceback (most recent call last):
   File "python", line 24, in <module>

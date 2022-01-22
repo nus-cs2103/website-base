@@ -17,7 +17,7 @@ print_card_deck()
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 A of ♣
 2 of ♣
 3 of ♣

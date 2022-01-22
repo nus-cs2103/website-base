@@ -74,9 +74,6 @@ Note that slicing gives you a _copy_ of a portion of the original list i.e., you
 
 {{ icon_example }} In the example below, the first item `0a` of the list `letters` is deleted after taking the first two elements as a sub list. Note how the item `0a` still remains in the sub list after it has been deleted from the original list.
 
-<include src="inputOutput.md" boilerplate>
-<span id="input">
-
 ```python
 letters = ['0a', '1b', '2c', '3d', '4e']
 first_two_letters = letters[:2]
@@ -86,17 +83,13 @@ del letters[0] # delete first element in original list
 print('original list:', letters)
 print('sub list     :', first_two_letters)
 ```
-</span>
-<span id="output">
-
-```
+{{ icon_output }}
+```{.no-line-numbers}
 original list: ['0a', '1b', '2c', '3d', '4e']
 sub list     : ['0a', '1b']
 original list: ['1b', '2c', '3d', '4e']
 sub list     : ['0a', '1b']
 ```
-</span>
-</include>
 
 </box>
 
