@@ -1,9 +1,34 @@
 {% set tutorials = [
-
+ "TIC4002-F18"
 ]%}
 
 {% set students = [
-
+ ['LAM ..CHUN', 'TIC4002-F18-1', 'zcnmashleu95'],
+ ['LEOW.. HUI', 'TIC4002-F18-1', 'IcyNoPeople'],
+ ['SPEN.. HAO', 'TIC4002-F18-1', 'spencernah'],
+ ['WANG..NWEI', 'TIC4002-F18-1', 'e0373972'],
+ ['JOSE..YANG', 'TIC4002-F18-2', 'badfr0g'],
+ ['OEI ..NNAH', 'TIC4002-F18-2', 'hana-oxy'],
+ ['SOH ..AMES', 'TIC4002-F18-2', 'sohwkjames'],
+ ['ZHAN.. YUN', 'TIC4002-F18-2', 'zyjarvis'],
+ ['CHEN..YUAN', 'TIC4002-F18-3', 'chenghuiyuan'],
+ ['LI S..IHAO', 'TIC4002-F18-3', 'l-shihao'],
+ ['LIM ..YONG', 'TIC4002-F18-3', 'jr-mojito'],
+ ['LIM .. YIN', 'TIC4002-F18-3', 'yinyin377'],
+ ['IVAN..BOON', 'TIC4002-F18-4', 'ivanhlb'],
+ ['LIM ..KANG', 'TIC4002-F18-4', 'Opkko'],
+ ['RABA..RROT', 'TIC4002-F18-4', 'badassengineer'],
+ ['TAN ..CHUN', 'TIC4002-F18-4', 'TanChiaChun'],
+ ['ZHUA..MING', 'TIC4002-F18-4', 'yaololo'],
+ ['GWEE..CHAI', 'TIC4002-F18-5', 'gweeyc'],
+ ['LOW ..UANG', 'TIC4002-F18-5', 'lowyanshuang'],
+ ['NG X..N YI', 'TIC4002-F18-5', 'Elxyng'],
+ ['TAN .. HUA', 'TIC4002-F18-5', 'thisisdax'],
+ ['YANG..GENG', 'TIC4002-F18-5', 'YangShuogeng'],
+ ['GIMP..ADAY', 'TIC4002-F18-6', 'Mr-YaRou'],
+ ['KHOR..YONG', 'TIC4002-F18-6', 'KaydenKhor'],
+ ['NIE ..TING', 'TIC4002-F18-6', 'Ruiting1'],
+ ['TAN ..RICK', 'TIC4002-F18-6', 'e0262191']
 ]%}
 
 {% set teams = {

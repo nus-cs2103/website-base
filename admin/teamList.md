@@ -56,6 +56,7 @@ This page will be populated later in the semester ...
 {% set team_contents = "" %}
 {% set current_team = "" %}
 
+{% if teams | length %}
 {% for tutorial in tutorials  %}
   {% for student in students  %}
 
@@ -92,4 +93,4 @@ This page will be populated later in the semester ...
   {% set team_contents = "" %}
   {% set current_team = "" %}
 {% endfor %}
-
+{% endif %}

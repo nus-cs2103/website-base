@@ -8,7 +8,7 @@ title: "iP Showcase"
 
 {% set current_team = "" %}
 {% for tutorial in tutorials %}
-<panel header="## {{ tutorial }}" {{ "expanded" if tic4001 else "" }} no-close>
+<panel header="## {{ tutorial }}" {{ "expanded" if tic4001 or tic4002 else "" }} no-close>
 {% for student in students %}
 {% set student_team = student[1] %}
 {% set student_tutorial = 'TIC4001-F18' if tic4001 else student_team.slice(0, -2) %}
