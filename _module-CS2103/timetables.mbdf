@@ -49,22 +49,22 @@
 <span id="tutorials-s2">
 
 {{ tutorial_table_headers | trim }}
- {{ MT | safe }} | | **W**ed  **09**:00 | ~~%%TG10%%~~ | **`CS2103T-W09`**|
-{{ MT | safe }} | | **W**ed  **11**:00 | ~~%%TG01%%~~ | **`CS2103T-W11`**|
-{{ MT | safe }} | | **W**ed  **12**:00 | ~~%%TG02%%~~ | **`CS2103T-W12`**|
-{{ MT | safe }} | | **W**ed  **13**:00 | ~~%%TG04%%~~ | **`CS2103T-W13`**|
-{{ MT | safe }} | | **W**ed  **14**:00 | ~~%%TG03%%~~ | **`CS2103T-W14`**|
-{{ MT | safe }} | | **W**ed  **15**:00 | ~~%%TG08%%~~ | **`CS2103T-W15`**|
-{{ M | safe }} | | **W**ed  **16**:00 | ~~%%T01%%~~ | **`CS2103-W16`**|
-{{ M | safe }} | | **W**ed  **17**:00 | ~~%%T02%%~~ | **`CS2103-W17`**|
+{{ MT | safe }} | | **W**ed  **09**:00 | ~~%%TG10%%~~ | **`CS2103T-W09`**| Darius, Benedict
+{{ MT | safe }} | | **W**ed  **11**:00 | ~~%%TG01%%~~ | **`CS2103T-W11`**| Yee Hong, Shao Yi
+{{ MT | safe }} | | **W**ed  **12**:00 | ~~%%TG02%%~~ | **`CS2103T-W12`**| Darius, Shao Yi
+{{ MT | safe }} | | **W**ed  **13**:00 | ~~%%TG04%%~~ | **`CS2103T-W13`**| Javier, Ivan
+{{ MT | safe }} | | **W**ed  **14**:00 | ~~%%TG03%%~~ | **`CS2103T-W14`**| Vimuth, Danny
+{{ MT | safe }} | | **W**ed  **15**:00 | ~~%%TG08%%~~ | **`CS2103T-W15`**| Zheng Yong, Danny
+{{ M | safe }} | | **W**ed  **16**:00 | ~~%%T01%%~~ | **`CS2103-W16`**| Joel, Yu Ting
+{{ M | safe }} | | **W**ed  **17**:00 | ~~%%T02%%~~ | **`CS2103-W17`**| Joel, Tan Jin
  | | | | | |
-{{ MT | safe }} | | **T**hu  **09**:00 | ~~%%TG13%%~~ | **`CS2103T-T09`**|
-{{ MT | safe }} | | **T**hu  **11**:00 | ~~%%TG05%%~~ | **`CS2103T-T11`**|
-{{ MT | safe }} | | **T**hu  **12**:00 | ~~%%TG06%%~~ | **`CS2103T-T12`**|
-{{ MT | safe }} | | **T**hu  **13**:00 | ~~%%TG09%%~~ | **`CS2103T-T13`**|
-{{ MT | safe }} | | **T**hu  **17**:00 | ~~%%TG11%%~~ | **`CS2103T-T17`**|
+{{ MT | safe }} | | **T**hu  **09**:00 | ~~%%TG13%%~~ | **`CS2103T-T09`**| Ganesh, Jun Xiong
+{{ MT | safe }} | | **T**hu  **11**:00 | ~~%%TG05%%~~ | **`CS2103T-T11`**| Yongliang, Jun Xiong
+{{ MT | safe }} | | **T**hu  **12**:00 | ~~%%TG06%%~~ | **`CS2103T-T12`**| Ganesh, Huiting
+{{ MT | safe }} | | **T**hu  **13**:00 | ~~%%TG09%%~~ | **`CS2103T-T13`**| Nuwan, Huiting
+{{ MT | safe }} | | **T**hu  **17**:00 | ~~%%TG11%%~~ | **`CS2103T-T17`**| Nuwan, Yong Kang
  | | | | | |
-{{ M | safe }} | | **F**ri  **09**:00 | ~~%%T03%%~~ | **`CS2103-F09`**|
-{{ M | safe }} | | **F**ri  **10**:00 | ~~%%T04%%~~ | **`CS2103-F10`**|
-{{ M | safe }} | | **F**ri  **11**:00 | ~~%%T05%%~~ | **`CS2103-F11`**|
+{{ M | safe }} | | **F**ri  **09**:00 | ~~%%T03%%~~ | **`CS2103-F09`**| Jolyn, Danny
+{{ M | safe }} | | **F**ri  **10**:00 | ~~%%T04%%~~ | **`CS2103-F10`**| Danny
+{{ M | safe }} | | **F**ri  **11**:00 | ~~%%T05%%~~ | **`CS2103-F11`**| Samuel, Danny
 </span>
