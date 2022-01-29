@@ -28,7 +28,7 @@ The exam expects you to know Java to the extent that you should be familiar with
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
-We require you to use **Java 11** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java11) or another alternative suc as the OpenJDK version) for all module work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
+We require you to use **Java 11** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java11) or another alternative such as the OpenJDK version) for all module work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
 
 **If you have Java 8** in your computer, we recommend removing it, to prevent using it unintentionally.
 

@@ -83,7 +83,7 @@ Zoom links for tutorial sessions will be available in [LumiNUS/Weblinks](https:/
 * ==Vacate the table 5 minutes before the hour== so that the next group can start on time.
 -->
 
-* In the past, many students have requested to increase the tutorial duration because a mere hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to make the best of the one hour available by coming well prepared and starting on time. Note that ==the better prepared you are, the higher the chance of completing e all activities allocated to a tutorial== within time.
+* In the past, many students have requested to increase the tutorial duration because a mere hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to make the best of the one hour available by coming well prepared and starting on time. Note that ==the better prepared you are, the higher the chance of completing all activities allocated to a tutorial== within time.
 
 **Grading:**
 
