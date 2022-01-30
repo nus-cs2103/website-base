@@ -58,10 +58,10 @@ say_hello('Sheldon')
 ```
 {{ icon_output }}
 ```
-Hello Penny
-Hello Penny
-Hello Penny
-Hello Sheldon
+Knock knock Penny
+Knock knock Penny
+Knock knock Penny
+Knock knock Sheldon
 ```
 
 <panel type="seamless" header="%%:laughing: See the human version of the above code%%" minimized>
