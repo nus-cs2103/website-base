@@ -108,7 +108,7 @@
 <variable name="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
 <variable name="url_announcements">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/announcements/active</variable>
 <variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
-<variable name="url_dashboards">{{ url_module_gihub_io | safe }}/dashboards</variable>
+<variable name="url_dashboards">{{ url_module_gihub_io | safe }}/dashboards/</variable>
 <variable name="url_files">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/files</variable>
 <variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>

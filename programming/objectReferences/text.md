@@ -2,7 +2,7 @@
 
 **Objects of some Python _types_ are _immutable_.** An immutable object, once created, cannot be modified.
 
-* Some immutable types you have seen already: `int`, `float`, `decimal`, `bool`, `string`
+* Some immutable types you have seen already: `int`, `float`, `decimal`, `bool`, `str`
 * Other immutable types: `complex`, `tuple`, `range`, `frozenset`, `bytes`
 
 
