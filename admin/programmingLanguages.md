@@ -36,14 +36,23 @@ We require you to use **Java 11** (the [Oracle version](https://www.oracle.com/j
 
 {% if cs2103 or tic4002 %}
 
-<panel type="danger" header="[IMPORTANT] Advisory for :fab-apple: Mac M1 users" minimized >
+<panel type="danger" header="[IMPORTANT] Advisory for :fab-apple: Mac M1 users" expanded >
 
-This advisory applies to **all M1 Mac users**
+This advisory applies to **some Mac users**.
 
-It turns out that you might not be able to run the JAR files produced by some of the classmates due to various incompatibility issues between your environment and theirs, although you can still get your own JAR files to work in your computer. Some of our tutors looked into this problem and found a specific build of OpenJDK that doesn't seem to have these problems. If you are among the affected Mac users, please switch to that version of OpenJDK by following the instructions below.
+**The problem:** You might not be able to run the JAR files produced by some of the classmates due to various incompatibility issues between your environment and theirs, although you can still get your own JAR files to work in your computer.
 
-**Instructions:**
-Download and install the Azul build of OpenJDK 11 version found [here](https://www.azul.com/downloads/?version=java-11-lts&os=macos&architecture=arm-64-bit&package=jdk-fx) (scroll to the bottom of the page) -- it supports fat JAR files compiled by all other systems that we have tested.
+**How to find if it applies to you:** If you are a Mac user, here are the steps to check if it applies to you:
+
+1. Download the latest `addressbook.jar` from [here](https://github.com/se-edu/addressbook-level3/releases).
+1. Open a terminal and navigate to the location where you saved the above file.
+1. Check if you are using Java 11 by running the `java -version` command.
+1. Launch the JAR using the `java -jar addressbook.jar` command.
+1. If the text in the GUI appears garbled/unreadable, this advisory applies to you.
+
+**Solution:** Some of our tutors looked into this problem and found a specific build of OpenJDK that doesn't seem to have these problems. If you are among the affected Mac users, please switch to that version of OpenJDK by following the instructions below.
+
+Download and install the Azul build of OpenJDK 11 version found [here](https://www.azul.com/downloads/?version=java-11-lts&os=macos&architecture=arm-64-bit&package=jdk-fx) (scroll to the bottom of the page) -- it supports fat JAR files compiled by all other systems that we have tested. ==Remember to choose the `JDK FX`version (not any other versions)==.
 
 ![image](https://user-images.githubusercontent.com/1673303/133399726-93f98ee4-6efb-4f37-830d-46a72298ab49.png)
 

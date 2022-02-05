@@ -31,7 +31,12 @@
 ]%}
 
 {% set teams = {
-
+ 'TIC4002-F18-1': 'https://docs.google.com/document/d/1KoIdVCrWLe1W-DeJwpmoq28XtcFr0Of4LK4j6nelFCo/edit?usp=sharing',
+ 'TIC4002-F18-2': 'https://drive.google.com/drive/folders/1mjqBHI1RwFcZl8aOoGwbfdbTt0guaXVM?usp=sharing',
+ 'TIC4002-F18-3': 'https://docs.google.com/document/d/1NC96Y2KN7qFkIhVDBuyJVqujKP3mCRSpKo2TGDgscYs/edit?usp=sharing',
+ 'TIC4002-F18-4': 'https://docs.google.com/document/d/1aHjA-U5rwhCmxtsDCqOv18dA8ZD0n4rPlXjRIwCj2h0/edit',
+ 'TIC4002-F18-5': 'https://tinyurl.com/TIC4002tpDraft',
+ 'TIC4002-F18-6': 'https://docs.google.com/document/d/1mqSXed9T2dr5TK27i6giUJMSIerOoXH0juLsWoVjNZc/edit?usp=sharing'
 }%}
 
 {# format: [team, reviewer, reviewee1, backup1, reviewee2, backup2]
