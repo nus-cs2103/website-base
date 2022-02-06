@@ -1,4 +1,4 @@
-{% from "_module-" + module + "/studentData.mbdf" import students, tutorials, teams with context %}
+{% from "_module-" + module + "/studentData.mbdf" import students, tutorials, teams, products, users, values with context %}
 
 <frontmatter>
 title: "tP Teams List"
@@ -21,13 +21,27 @@ This page will be populated later in the semester ...
 <div class="row">
 <div class="col border">
 
-### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/{{ tp_repo_name }}/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> {% if (current_week | int) > 6 %}[<img src="{{ team_repo }}/workflows/Java%20CI/badge.svg">]({{ team_repo }}/actions){% endif %}
+### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/{{ tp_repo_name }}/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> {% if (current_week | int) > 6 %}[<img src="{{ team_repo }}/workflows/Java%20CI/badge.svg">]({{ team_repo }}/actions){% endif %} {{ "[**" + products[team_id] + "]**" if team_id in products else ""}}
 
 <span tags="m--cs2103 m--tic4002">
 
 <img src="{{ team_website }}/images/Ui.png" width="750" onerror="this.src='images/placeholder-large.png';" /><p/>
 </span>
 <span tags="m--cs2103 m--tic4001 m--tic4002">
+**Target user:**
+<div class="indented">
+<blockquote>
+{{ users[team_id] if team_id in users else "[not available yet]" }}
+</blockquote>
+</div>
+
+**Value proposition:**
+<div class="indented">
+<blockquote>
+{{ values[team_id] if team_id in values else "[not available yet]" }}
+</blockquote>
+</div>
+
 **Project notes** (internal): {% if teams[team_id] != '' %}see [here]({{ teams[team_id] }}){% else %}N/A{% endif %}
 </span>
 </div>

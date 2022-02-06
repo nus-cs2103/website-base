@@ -36,7 +36,7 @@ We require you to use **Java 11** (the [Oracle version](https://www.oracle.com/j
 
 {% if cs2103 or tic4002 %}
 
-<panel type="danger" header="[IMPORTANT] Advisory for :fab-apple: Mac M1 users" expanded >
+<panel type="danger" header="[IMPORTANT] Advisory for :fab-apple: Mac users" expanded >
 
 This advisory applies to **some Mac users**.
 

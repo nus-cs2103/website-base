@@ -10,6 +10,18 @@
 
 }%}
 
+{% set products = {
+
+}%}
+
+{% set users = {
+
+}%}
+
+{% set values = {
+
+}%}
+
 {# format: [team, reviewer, reviewee1, backup1, reviewee2, backup2]
 From the same tutorial. One for coding standard review, one for code quality.
  #}
