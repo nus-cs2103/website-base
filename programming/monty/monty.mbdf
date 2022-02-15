@@ -834,7 +834,7 @@ STATUS | INDEX | DESCRIPTION                 | DEADLINE
 
 <panel header=":fas-battery-quarter: Partial solution" minimized>
 
-Here is the code adding a todo item:
+Here is the code for adding a todo item:
 ```python
 
 command_parts = command.strip().split(' ', 1) # split the command into two: first word and the remainder
