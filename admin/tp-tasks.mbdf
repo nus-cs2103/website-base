@@ -379,6 +379,12 @@ Suggested workflow:
 <span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the code base</span>
 <div id="desc_get_familiar_with_the_code_base">
 
+<box type="info" icon=":fas-question:" seamless>
+
+<span class="text-info">**FAQ**: Is this a team task or an individual task?</span><br>
+A: It's an individual task (note the icon {{ icon_individual }} above), to be done by each member, as we want _every_ member to be familiar with the code base.
+</box>
+
 * ==Ideally, you should do this task in this week== {% if tic4002 %}(i.e., before the week 6 lecture), but you may take an extra week (i.e., by the week 7 lecture){% else %}(i.e., midnight before the week 6 tutorial), but you may take an extra week (i.e., by the week 7 tutorial){% endif %} to finish them without penalty.
 * Do the following tutorials to get familiar with the codebase
   * [Tutorial 1 - Tracing a Command Execution Path]({{ url_ab3_fork_website }}/tutorials/TracingCode.html)
@@ -387,6 +393,8 @@ Suggested workflow:
   * [Tutorial 2 - Adding a new Command]({{ url_ab3_fork_website }}/tutorials/AddRemark.html)
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
     * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
+    * FAQ: Do we have to write/update test cases too?<br>
+      A: Not a strict requirement, but given the purpose of this tutorial is to learn the code base, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise you can run into difficulties when you are writing test cases for your own features later.
   * [Tutorial 3 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)
     * This tutorial is optional to do, but **at least give it a quick read**.
     * Submission: not required.
@@ -405,6 +413,12 @@ Suggested workflow:
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
 <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
+
+<box type="info" icon=":fas-question:" seamless>
+
+<span class="text-info">**FAQ**: How many features should we put in {{ version_first }}?</span><br>
+**A:** Aim for the _smallest set of features the product cannot do without_. Even a most basic version of those features is enough. After completing that feature set, you can add more if there is time left.
+</box>
 
 </div>
 {#====================================================================================================================#}

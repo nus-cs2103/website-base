@@ -23,7 +23,7 @@ item|price
 </span>
 </include>
 
-Write a program to calculate GST for each item at 7% and give the value as an additional column. The ouput should be in a new file.
+Write a program to calculate GST for each item at 7% and give the value as an additional column. The output should be in a new file.
 
 <include src="inputOutput.md" var-align="middle" boilerplate>
 <span id="input">
@@ -33,7 +33,7 @@ Write a program to calculate GST for each item at 7% and give the value as an ad
 item,price,GST
 book,10.0,0.7
 bag,50.0,3.5
-"pens, pencils", 5.0,0.35
+"pens, pencils",5.0,0.35
 ```
 </span>
 <span id="output">
@@ -101,5 +101,10 @@ process('itemlist2.csv', 'updated_itemlist2.csv')
 ```
 item,price
 bread,1.0
-bananas, 4.0
+bananas,4.0
 ```
+
+{{ icon_tip }} You can use the built-in function `round` to round floating point numbers to a specific number of decimal places. e.g.,
+
+* `round(1.98, 1)` rounds `1.98` to one decimal place, giving you `2.0`
+* `round(1.234, 2)` gives `1.23` and `round(1.2, 1)` gives `1.2`

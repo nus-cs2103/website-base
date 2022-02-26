@@ -599,7 +599,7 @@ This activity is worth `2x2=4` participation points.
 <div  tags="m--cs2103 m--tic4002" id="ip-ui-png">
 
 * **Add a representative screenshot** of the product to the `docs` folder.
-  * ==The file name should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
+  * ==The file should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
   * Ideally, the product name is visible in the screenshot e.g., in the title bar of the Window
 
 {{ embed_topic("tp-deliverables-website.mbdf#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
@@ -632,7 +632,9 @@ This activity is worth `2x2=4` participation points.
   * The JAR file should be ==cross-platform and should work in a computer that has Java 11==.
 * **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
-  1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.
+  1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
+     {{ icon_tip }} If you don't have ready access to a specific OS, post a link to your JAR in the forum and ask
+     others to help with the smoke testing -- some of them will even appreciate the opportunity to help a classmate.
 * **Create a new release on GitHub** (e.g., `v0.2`) and upload the JAR file.
   * Recommended to refrain from uploading multiple JAR files as this can cause extra work for the evaluators.
 
