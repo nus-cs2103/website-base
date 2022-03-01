@@ -99,7 +99,7 @@ This page will be populated later in the semester ...
   {% set team_end %} {{ get_team_end() }} {% endset %}
   {% set panel_contents = panel_contents + team_contents + team_end %}
 
-<panel type="seamless" header="## {{ tutorial }}" {{ "expanded" if tic4001 else ""}} no-close>
+<panel type="seamless" header="## {{ tutorial }}" {{ "expanded" if tic4001 or tic4002 else ""}} no-close>
 {{ panel_contents }}
 </panel>
 

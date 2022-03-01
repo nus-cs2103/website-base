@@ -718,7 +718,7 @@ Given below are some more features you can consider adding at this point (it is 
   exit
   >>> Bye!
   ```
-* **Add a `pending` command** that can mark a task as pending (i.e., the opposite of the `done` command).
+* **Add a `pending` command** (other possible names: `undone` or `unmark`) that can mark a task as not-done-yet (i.e., the opposite of the `done` command), if you haven't done that already.
   ```
    >>> What can I do for you?
    
