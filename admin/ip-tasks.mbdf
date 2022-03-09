@@ -519,6 +519,11 @@ This activity is worth `2x2=4` participation points.
 
 1. {% if cs2113 %}**The allocation will be in the LumiNUS gradebook**, by Monday 2359.{% else %}**Wait for the email notifying you which iPs are allocated for you to evaluate**. When the email is sent out, it will also be announced via module announcements.{% endif %}
 1. **Download the _latest_ JAR file** of the first iP by following the link provided.
+   <box type="info" icon=":fas-question:" seamless>
+
+   **FAQ**: What if the student has not uploaded a JAR file, or the JAR file doesn't work at all?<br>
+   **A**: When you submit the evaluation (step 7 below), there will be a way to indicate that the JAR was not available, or any other serious issues you faced.
+   </box>
 1. **Locate the User Guide** of the app by following the link provided.
 1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
@@ -527,6 +532,7 @@ This activity is worth `2x2=4` participation points.
 1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
 1. **Submit your evaluation** using the survey.
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
+1. %%**Take note of the effort required for a _typical_ iP**: Now that you have seen two more iPs, you should now be in a better position to estimate how much you need to do for the tP (reason: the expected workload for the tP is that each team member puts in about one _typical_ iP worth of effort).%%
 </div>
 {#====================================================================================================================#}
 <div id="extra_A-Gradle">
