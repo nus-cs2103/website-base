@@ -14,7 +14,7 @@
 
 **Allowed in the {{ version_final }} milestone:**{.text-success}
 
-{{ icon_tick_green }} fixing bugs<br>
+{{ icon_tick_green }} fixing bugs (but not _feature flaws_)<br>
 {{ icon_tick_green }} improving documentation<br>
 {{ icon_tick_green }} purely cosmetic enhancements e.g., alignments, style changes<br>
 {{ icon_tick_green }} improving code quality<br>
@@ -27,7 +27,7 @@
 
 **FAQs:**
 * **Q:** Can we add a missing validity check for a user input?<br>
-**A:** Yes, but only if its absence causes the software to mis-behave (i.e., it's omission can be considered a bug).
+**A:** Yes, but only if its absence causes the software to mis-behave (i.e., it's omission is a bug).
 
 * **Q:** Can we tweak the command format?<br>
 **A:** No, as this would be considered changing the design of a feature.
@@ -817,7 +817,7 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 
 The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the {{ version_final }} later.{% endif %}
 
-Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks (<span class="text-danger">you will not be allowed to fix feature flaws while a feature-freeze is in force</span>). The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
+Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks {% if cs2103 %} (<span class="text-danger">you will not be allowed to fix feature flaws while a feature-freeze is in force</span>).{% endif %} The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
 
 <panel header="Admin {{ icon_embedding }} tP → **Grading → Product Design** (excerpt) → Feature Flaws" minimized>
 <include src="tp-grading-bugs.mbdf#featureFlaws" />
@@ -833,14 +833,14 @@ Given that you'll have to make important feature decisions in this iteration, it
 <include src="tp-pe-bug-triaging-guidelines.mbdf#triaging-feature-flaws" />
 </panel>
 <p/>
-
+{% if cs2103 %}
 The panel below gives some details on the feature-freeze that will be imposed in {{ version_final }}, to prepare you in advance:
 
 <panel header="Admin {{ icon_embedding }} tP → **{{ version_final }} (extract) → More details on the feature freeze**" minimized>
 
 <include src="tp-tasks.mbdf#feature-freeze-details" />
 </panel>
-
+{% endif %}
 </box>
 <box tags="m--tic4001" type="tip" seamless>
 
@@ -931,7 +931,7 @@ Here are some reasons:
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `{{ version_first }}.1` (or `{{ version_penultimate }}.trial`). ==Ensure that the jar file works as expected in an empty folder and using Java 11==, by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 </div>
 {#====================================================================================================================#}
-<span id="heading_make_code_reposense_compatible">{{ icon_individual }} Ensure the code RepoSense-compatible</span>
+<span id="heading_make_code_reposense_compatible">{{ icon_individual }} Ensure the code is RepoSense-compatible</span>
 <div id="desc_make_code_reposense_compatible">
 
 <div id="midV13-repoSenseCompatible">
@@ -1172,8 +1172,8 @@ Also see:
 
 {{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="2") }}
 
-{% if cs2113 %}
-2. **Freeze features**. As mentioned earlier, you are strongly discouraged from adding new features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.{% else %}
+{% if not cs2103 %}
+2. **Freeze features**. As mentioned earlier, you are strongly discouraged from adding/updating features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.{% else %}
 2. **Note what is allowed in this milestone**:
 
 <include src="tp-tasks.mbdf#feature-freeze-details" />{% endif %}

@@ -19,7 +19,19 @@
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-8`: Dates and Times**" var-fragment="text.md#Level-8" />
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JavaDoc`: JavaDoc**" var-fragment="extensions.mbdf#A-JavaDoc" />
+
+<box type="info" seamless>
+
+The `A-Gradle` project increment given below requires basic knowledge of git branching (covered in the previous week).
+</box>
+
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Gradle`: Gradle**" var-fragment="extensions.mbdf#A-Gradle" />
+
+<box type="tip" seamless>
+
+The `A-JUnit` project increment given below can be done using Gradle or without using Gradle. It's easier if you choose to do it using Gradle.
+</box>
+
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JUnit`: JUnit Testing**" var-fragment="extensions.mbdf#A-JUnit" />
 
 </div>

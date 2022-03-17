@@ -52,8 +52,8 @@ week10: [
   {id: 'wrap_up_penultimate_version'}
 ],
 week11: [
-  {id: 'attend_the_PED', deadline: 'During the lecture', graded: true},
-  {id: 'start_fixing_PED_bugs', deadline: 'Before the tutorial'},
+  {id: 'attend_the_PED', deadline: get_date(date_w11_start, 0, '7-8pm'), graded: true},
+  {id: 'start_fixing_PED_bugs'},
   {id: 'tweak_product_as_per_PED'}
 ],
 week12: [

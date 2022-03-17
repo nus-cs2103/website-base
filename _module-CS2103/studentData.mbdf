@@ -543,7 +543,7 @@
  'CS2103T-W14-3': 'This product is specialised in job-seeking opportunities for users who need to manage a large number of companies contacts and interview deadlines. This product will help users to keep track and manage all ongoing internship applications which act both as a contact manager and an event manager in one application.',
  'CS2103T-W15-1': 'Contacts and CVs of job applicants come from many different recruiters and in paper. Recruiters have to sift through 100s of CVs a day to find those for a certain job, and each CV might be missing information which requires admin staff to contact them. Our application helps to organize the contacts by priority, keeps contacts in a centralized workspace, streamlines workflow and increases efficiency of recruiter work.  Scope: Our app will only be used to organize the contacts for recruiter to track.',
  'CS2103T-W15-2': 'Our HustleBook help(s) wealth managers to keep track and be more organised with the clients.',
- 'CS2103T-W15-3': '- group students of the same module/tutorial together. - store their email, telegram, github whenever it’s relevant. - mark their progress on modules with homework by week, from week 3-13. - mark the students who didn’t do their work first, then be able to mark everyone else who did the work.'
+ 'CS2103T-W15-3': 'TACH helps CS Teaching Assistants teaching multiple classes to manage their students in an organized manner. Our sorting feature will allow TAs to view, categorize and get information of all their students at one glance'
 }%}
 
 {# format: [team, reviewer, reviewee1, backup1, reviewee2, backup2]
