@@ -4,9 +4,6 @@ Complete the `get_countries()` function so that it return the list of countries 
 
 {{ icon_tip }} You can follow the example of the `get_numbers()` function given.
 
-<include src="inputOutput.md" boilerplate>
-<span id="input">
-
 ```python
 # sample function
 def get_numbers():
@@ -18,12 +15,9 @@ def get_countries():
 print(get_numbers())
 print(get_countries())
 ```
-</span>
-<span id="output">
+{{ icon_output }}
 
 ```{.no-line-numbers}
 [1, 2, 3]
 ['China', 'India', 'Malaysia', 'Singapore', 'Sri Lanka']
 ```
-</span>
-</include>

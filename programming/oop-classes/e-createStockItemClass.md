@@ -23,7 +23,7 @@ print(b.info())
   <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
   <td valign="bottom"> 
 
-```
+```{.no-line-numbers}
 Item info: Apple
 Apple
 Item info: Bag of Beans

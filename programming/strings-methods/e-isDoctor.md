@@ -29,7 +29,7 @@ print(is_doctor('Miss Dr. B.more'))
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 True
 True
 True

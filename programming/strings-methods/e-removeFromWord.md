@@ -24,7 +24,7 @@ print('>' + remove_from_word('red-hot-lava', '-'))
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 >
 >red-
 >red-hot-

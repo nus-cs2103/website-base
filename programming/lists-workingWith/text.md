@@ -42,7 +42,7 @@ print(spam)
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 letters = ['0a', '1b', '2c', '3d', '4e']
 sublist = letters[0:3]
 print(sublist) # print items 0, 1, 2
@@ -55,7 +55,7 @@ print(letters[1:-1]) # print from item 1 to 2nd last item
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 ['0a', '1b', '2c']
 ['0a', '1b', '2c']
 ['1b', '2c', '3d']
@@ -133,7 +133,7 @@ Length is: 2
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 girls = ['Amy', 'Betsy', 'Clara']
 boys = ['Adam', 'Ben']
 friends = girls + boys
@@ -142,7 +142,7 @@ print(friends)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 ['Amy', 'Betsy', 'Clara', 'Adam', 'Ben']
 ```
 </span>
@@ -157,7 +157,7 @@ print(friends)
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 steps = ['left', 'right']
 walking = steps*3
 print(walking)
@@ -165,7 +165,7 @@ print(walking)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 ['left', 'right', 'left', 'right', 'left', 'right']
 ```
 </span>
@@ -188,7 +188,7 @@ print(walking)
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 valid_responses = ['Yes', 'No', 'Maybe']
 response = ''
 while response not in valid_responses:
@@ -203,7 +203,7 @@ if suggested_drink in current_drinks:
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 What is your response? abc
 What is your response? Yes
 Your response: Yes

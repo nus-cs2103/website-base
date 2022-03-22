@@ -114,7 +114,7 @@ Let's go through the code to see how it works.
       textbox_value = int(textbox.get())
       label.configure(text=str(label_value + textbox_value))
   ```
-  **Creats a function to be called when the button is clicked.** It will increment the value shown in the label by the amount shown in the entry widget.
+  * **Creates a function to be called when the button is clicked.** It will increment the value shown in the label by the amount shown in the entry widget.
   * line %%#20%%: Reads the `text` property of the label widget and converts it to an `int`
   * line %%#21%%: Reads the value of the entry widget and converts it to an `int`
   * line %%#22%%: Sums the two values, converts the sum into a `str`, and sets it as the value of the label widget.<p/>

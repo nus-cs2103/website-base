@@ -44,7 +44,7 @@ print('total cows after breeding:', total_cows) # prints 10
   <td>
   
 {{ icon_output }}
-```
+```{.no-line-numbers}
 total cows before breeding: 5
 breeding cows
 total cows at the end of breeding: 10
@@ -55,7 +55,7 @@ total cows after breeding: 10
   <td>
  
 {{ icon_output }} without the `global total_cows` statement
-```
+```{.no-line-numbers}
 total cows before breeding: 5
 breeding cows
 total cows at the end of breeding: 10

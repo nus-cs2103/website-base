@@ -48,7 +48,7 @@ print(fruits[-2])
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Apple
 Dragon Fruit
 Dragon Fruit
@@ -72,7 +72,7 @@ print(coins)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 [10, 20, 50, 100]
 ```
 </span>
@@ -91,7 +91,7 @@ print(list_of_lists[2][0])
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 0.1
 ```
 </span>

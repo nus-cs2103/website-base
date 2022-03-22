@@ -45,9 +45,6 @@ The Python module `os` contains functions for dealing with files and folders. Fo
 
 {{ icon_example }} This code shows how to print/change current working directory
 
-<include src="inputOutput.md" boilerplate>
-<span id="input">
-
 ```python
 import os
 
@@ -58,16 +55,13 @@ print(os.getcwd()) # print current working dir
 os.chdir(cwd) # change working dir back to original
 print(os.getcwd())
 ```
-</span>
-<span id="output">
+{{ icon_output }}
 
-```
+```{.no-line-numbers}
 C:\photos\vaction
 C:\temp\python
 C:\photos\vaction
 ```
-</span>
-</include>
 
 {{ icon_tip }} Note how the path `'C:\\temp\\python'` uses double slash to <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the `\`. In OS-X or Linux, it can be something like `/user/john/python` (no need for double slash).
 
@@ -112,9 +106,6 @@ You can use `os.makedirs()` function to create folders and `os.removedirs()` to 
 
 {{ icon_example }} Example code showing how to create/delete directories
 
-<include src="inputOutput.md" boilerplate>
-<span id="input">
-
 ```python
 print(os.getcwd())
 os.makedirs('ex\\w1')
@@ -125,16 +116,12 @@ print(os.getcwd())
 os.chdir('..')
 os.removedirs('ex\\w1')
 ```
-</span>
-<span id="output">
-
-```
+{{ icon_output }}
+```{.no-line-numbers}
 C:\repos\nus-tee3201\sample-code
 C:\repos\nus-tee3201\sample-code\ex\w1
 C:\repos\nus-tee3201\sample-code\ex
 ```
-</span>
-</include>
 
 </box>
 

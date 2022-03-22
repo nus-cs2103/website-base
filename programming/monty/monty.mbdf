@@ -816,7 +816,7 @@ STATUS | INDEX | DESCRIPTION                 | DEADLINE
 {{ icon_tip }} here are some tips:
 
 * One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, `T` and `D` is used to indicate todo items and deadline items, respectively.
-  ```python
+  ```python{.no-line-numbers}
   [
    {'type': 'T', 'description': 'borrow book', 'is_done': True},
    {'type': 'T', 'description': 'read book', 'is_done': False},
@@ -825,7 +825,7 @@ STATUS | INDEX | DESCRIPTION                 | DEADLINE
 
   ```
 * The format of the csv file needs to be updated to store extra values too. Here is an example:
-  ```
+  ```{.no-line-numbers}
   T,borrow book,done
   T,read book,pending
   D,return book,pending,Monday
@@ -854,7 +854,8 @@ elif  ...
 
 ### <span class="badge badge-info">Level 9</span> <span class="text-info">Use Classes</span>
 
-Enhance the [Monty Level 8 code]({{ baseUrl }}/programming/chapters/monty.html#monty8) to use classes `ToDo` and `Deadline` (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.
+Enhance the [Monty Level 8 code]({{ baseUrl }}/programming/chapters/monty.html#monty8) to use classes `ToDo` and `Deadline` (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.<br>
+{{ icon_info }} This means you no longer needs to use `dict` objects to represent todo/deadline tasks. That is, your tasks can be kept as a `list` of `ToDo` and `Deadline` objects, instead of a `list` of `dict`objects.
 
 <box header=":fas-lightbulb: A shorthand for `if-else`">
 Consider the following code:
@@ -872,10 +873,11 @@ The same can be written using the following shorthand for `if-else`:
 def get_as_word(status):
     return 'Yes' if status == 1 else 'No'
 ```
-Two more examples:
+A few more examples:
 ```python
 status_as_word = 'Yes' if status == 1 else 'No'
 print('Yes') if status == 1 else print('No')
+print('Yes' if status == 1 else 'No')
 ```
 
 Note that this shorthand requires both the `if` part and the `else` part.

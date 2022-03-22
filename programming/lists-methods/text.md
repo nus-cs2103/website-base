@@ -68,7 +68,7 @@ for animal in pets:
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 {Rabbits}
 {Parrots}
 {Hamsters}
@@ -103,7 +103,7 @@ print(name)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 john doe
 JOHN DOE
 ```
@@ -121,7 +121,7 @@ print(names)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 ['Adam', 'Norm', 'Zoe']
 ```
 </span>

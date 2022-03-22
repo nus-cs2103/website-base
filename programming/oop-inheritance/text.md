@@ -80,7 +80,7 @@ Observe how,
 <include src="inputOutput.md" boilerplate> 
 <span id="input">
 
-```python{highlight-lines="2-4,9-10"}
+```python{.no-line-numbers highlight-lines="2-4,9-10"}
 class Student(Person):
   def __init__(self, name, matric):
     self.name = name
@@ -102,7 +102,7 @@ ben.learn()
 <span id="output">
 
 For reference, there is the `Person` class.
-```python
+```python{.no-line-numbers}
 class Person:
   def __init__(self, name):
     self.name = name
@@ -137,7 +137,7 @@ class Person:
 <span id="input">
 
 Override without reusing parent's method
-```python
+```python{.no-line-numbers}
 class Student(Person):
   def __init__(self, name, matric):
     self.name = name
@@ -147,7 +147,7 @@ class Student(Person):
 <span id="output">
 
 Override but reuse parent's method
-```python{highlight-lines="3"}
+```python{.no-line-numbers highlight-lines="3"}
 class Student(Person):
   def __init__(self, name, matric):
     super().__init__(name) # reuse parent's method
@@ -201,7 +201,7 @@ Book title: Python for Beginners
 <include src="inputOutput.md" var-arrow="" boilerplate> 
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 class Person:
   def __init__(self, name):
     self.name = name
@@ -209,7 +209,7 @@ class Person:
   def print_info(self):
     print('My name is', self.name)
 ```
-```python
+```python{.no-line-numbers}
 class Teacher(Person):
   
   def teach(self):
@@ -222,7 +222,7 @@ class Teacher(Person):
 </span>
 <span id="output">
 
-```python
+```python{.no-line-numbers}
 class Student(Person):
   def __init__(self, name, matric):
     super().__init__(name)
@@ -234,7 +234,7 @@ class Student(Person):
   def print_info(self):
     print(self.name, 'is a student')
 ```
-```python{highlight-lines="1"}
+```python{.no-line-numbers highlight-lines="1"}
 class TeachingAssistant(Teacher, Student):
   
   def grade(self):

@@ -25,7 +25,7 @@ print_formatted_item('pins[new]', 110, w)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 pens.................:  2
 books(old)...........: 50
 pins(new)............:110
@@ -46,7 +46,7 @@ print_formatted_item('pins[new]', 110, w)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 pens............:  2
 books(old)......: 50
 pins(new).......:110

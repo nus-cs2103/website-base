@@ -32,7 +32,7 @@ say_hello()
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Going to call the function ...
 Hello!
 How are you?

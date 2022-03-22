@@ -65,7 +65,7 @@ p.write('It was a dark night ...')
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 writing: It was a dark night ...
 ```
 </span>
@@ -103,7 +103,7 @@ tom = Person('Tom')
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Tom initialized!
 ```
 </span>
@@ -127,7 +127,7 @@ print(x.birthday)
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 12
 01/11/2000
 ```

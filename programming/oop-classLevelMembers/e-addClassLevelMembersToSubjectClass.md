@@ -34,7 +34,7 @@ print(Subject.limit_reached(100))
   <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
   <td valign="bottom"> 
 
-```
+```{.no-line-numbers}
 total subjects: 0
 total subjects: 1
 True

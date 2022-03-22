@@ -19,7 +19,7 @@ print(prices['butter'])
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 <class 'dict'>
 one
 5.0
@@ -29,8 +29,6 @@ one
 
 {{ icon_example }} Examples of adding, updating, and deleting dictionary entries:
 
-<include src="inputOutput.md" boilerplate>
-<span id="input">
 
 ```python
 grades = {'TEE3201': 'A'}
@@ -41,16 +39,13 @@ print('After updating:',grades)
 del grades['CS2103']
 print('After deleting:', grades)
 ```
-</span>
-<span id="output">
+  {{ icon_output }}
 
 ```{.no-line-numbers}
 After adding: {'TEE3201': 'A', 'CS2103': 'B'}
 After updating: {'TEE3201': 'A+', 'CS2103': 'B'}
 After deleting: {'TEE3201': 'A+'}
 ```
-</span>
-</include>
 
 </box>
 
@@ -65,14 +60,14 @@ After deleting: {'TEE3201': 'A+'}
 <include src="inputOutput.md" var-align="top" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 is_nice = {'jane': False, 'hakim': True}
 print(is_nice['santa'])
 ```
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Traceback (most recent call last):
   File "python", line 9, in <module>
 KeyError: 'santa'
@@ -93,7 +88,7 @@ KeyError: 'santa'
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 for k in prices.keys():
   print(k, '->', prices[k])
@@ -101,7 +96,7 @@ for k in prices.keys():
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 bread -> 3.5
 butter -> 5.0
 banana -> 0.15
@@ -112,7 +107,7 @@ banana -> 0.15
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 for v in prices.values():
   print(v)
@@ -120,7 +115,7 @@ for v in prices.values():
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 3.5
 5.0
 0.15
@@ -139,7 +134,7 @@ You can **use the `sorted()` function to sort the keys/values before iterating t
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 for k in sorted(prices.keys()):
   print(k, '->', prices[k])
@@ -147,7 +142,7 @@ for k in sorted(prices.keys()):
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 banana -> 0.15
 bread -> 3.5
 butter -> 5.0
@@ -176,7 +171,7 @@ print('sugar' not in prices.keys())
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 True
 True
 ```
@@ -194,7 +189,7 @@ print(6.0 in prices.values())
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 True
 False
 ```

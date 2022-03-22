@@ -10,7 +10,7 @@
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 def get_body(items):
   if len(items) < 3:
     raise ValueError('Not enough items')
@@ -31,7 +31,7 @@ hide_ends([0, 1, 2, 3, 4])
 <span id="output">
 
 [<a target="_blank" href="https://goo.gl/tsteqe">visualize</a>]<br>
-```
+```{.no-line-numbers}
 Cannot hide ends: Not enough items
 ['_', 1, 2, 3, '_']
 ```
@@ -49,7 +49,7 @@ Cannot hide ends: Not enough items
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 def hide_ends2(items):
   try:
     body = get_body(items)
@@ -69,7 +69,7 @@ except ValueError as e:
 
 [<a target="_blank" href="https://goo.gl/EGkxAW">visualize</a>]<br>
 
-```
+```{.no-line-numbers}
 Cannot hide ends: Not enough items
 hide_ends2 failed: Not enough items
 ```

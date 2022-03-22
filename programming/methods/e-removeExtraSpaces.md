@@ -14,7 +14,7 @@ You may find these built-in string functions useful:
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 def remove_extra_spaces(text):
   return
 
@@ -23,7 +23,7 @@ print('[' + remove_extra_spaces('  aaa bbb   ccc  ') + ']')
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 [aaa bbb ccc]
 ```
 </span>

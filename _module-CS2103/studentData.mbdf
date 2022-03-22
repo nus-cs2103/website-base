@@ -348,7 +348,7 @@
  'CS2103T-W12-2': 'https://docs.google.com/document/d/1bRBvGnpQ_dzA1Eq71C5NiV4KTjLMMvjy5s9nrGRqo7Q/edit?usp=sharing',
  'CS2103T-W12-3': 'https://docs.google.com/document/d/1MWJmlL1UA4BNlP_Ou3LhC32yHcCuKyyWKDrhrmNJBW4/edit?usp=sharing',
  'CS2103T-W12-4': 'https://docs.google.com/document/d/1AlayAtjEboSHDPX56-4PpAeX6krVWEk9PO9TbDTeG2c/edit?usp=sharing',
- 'CS2103T-W13-1': 'https://docs.google.com/document/d/12p1dwhOf6s03j15OOkIr7TIKp3M4A_h314OYYTcos7U/edit?usp=sharing',
+ 'CS2103T-W13-1': 'https://docs.google.com/document/d/141xClv7cfHhWVZ4Wkj1CBd0H6gpFylH0CBX2lHfWoQs/edit?usp=sharing',
  'CS2103T-W13-2': 'https://docs.google.com/document/d/1x4pmvvoE7vAa-iV29jLH9LmoeHSvSJTJjLtipeChGH4',
  'CS2103T-W13-3': 'https://docs.google.com/document/d/1-WYxfrfPSr1gqjRsHPz9LJ1TrjAFBaV-poWY0mZ7mqU/edit?usp=sharing',
  'CS2103T-W13-4': 'https://docs.google.com/document/d/1Pax76W2IuonDKkuTEPlZAmxljk6ngr8_00RfrCKkwPg/edit?usp=sharing',
@@ -447,7 +447,7 @@
  'CS2103T-T11-1': "Our target users would be doctors who need to keep track of their patient's medical information, health status and appointments.",
  'CS2103T-T11-2': 'This product is for real estate agents (not buyers or sellers of the property) who are looking to manage their contacts in an organized manner.',
  'CS2103T-T11-3': 'This product is for CS students to track internship applications they are interested in. Users prefer CLI and have a lot of company applications and their associated tasks to keep track of.',
- 'CS2103T-T11-4': 'HR managers of software companies',
+ 'CS2103T-T11-4': 'HR Managers of companies which offer contractor services which pay based on hours.',
  'CS2103T-T12-1': 'This product is for admin staff and teachers in schools who prefer CLI over GUI to track COVID-19 in school.',
  'CS2103T-T12-2': 'Interior designers who widely uses technology to assist their work.',
  'CS2103T-T12-3': 'This product is for admin IT staff who prefer CLI over GUI and has a lot of student health status to keep track of.',
@@ -509,7 +509,7 @@
  'CS2103T-T11-1': "MedBook is a health monitoring system for healthcare professionals that simplifies tracking a patient’s medical details and scheduling appointments. MedBook delivers a seamless workflow for doctors and healthcare professionals to search for or update patients' medical information, billing and appointments through a simple and easy-to-use platform.   Everything we do hinges on our value proposition – MedBook reduces operational expenses by saving time and provides error-free information about a patient’s health status. On the same note, our p...",
  'CS2103T-T11-2': 'Property agents have problems managing sellers of property, so the interface helps keep track of details (contact number, location of property, filtering properties by price/location et cetera, to facilitate ease when tracking down contacts.',
  'CS2103T-T11-3': 'The app will help users to keep track of the companies he/she is applying for and store relevant notes/tasks/deadlines as well as displaying the companies previous technical interview questions.    The user can also share their notes (specific to companies) with other users via exported txt files.',
- 'CS2103T-T11-4': '- Monitor performance metrics of employees with ease for optimal productivity\u200b (MCs taken, overtime hours, performance ratings by supervisors and/or team members etc.) - HR-related functions like retrieving contact information, hiring, grouping by user type - intern, permanent staff etc. - and department type - Complete mundane tasks faster than GUI-based apps; CLI has autocomplete',
+ 'CS2103T-T11-4': 'Reduces menial labour, simplifies the management of data for the HR manager, reduces mistakes due to human error, helps employees be assured that their hours and pay is registered correctly in the system.',
  'CS2103T-T12-1': "To enable a school's COVID-19 task force to quarantine and identify close contact students quickly. For example, John is from class 4A and is COVID-19 positive, and John's classmates and immediate family would be considered close contact.",
  'CS2103T-T12-2': 'The product organises information about the clients that the designer is working with, giving them a one-stop overview of their current work progress and schedule.',
  'CS2103T-T12-3': 'This is a central repository for covid status updating to ease the facilitation of management of NUS students across different faculties.',
@@ -543,7 +543,7 @@
  'CS2103T-W14-3': 'This product is specialised in job-seeking opportunities for users who need to manage a large number of companies contacts and interview deadlines. This product will help users to keep track and manage all ongoing internship applications which act both as a contact manager and an event manager in one application.',
  'CS2103T-W15-1': 'Contacts and CVs of job applicants come from many different recruiters and in paper. Recruiters have to sift through 100s of CVs a day to find those for a certain job, and each CV might be missing information which requires admin staff to contact them. Our application helps to organize the contacts by priority, keeps contacts in a centralized workspace, streamlines workflow and increases efficiency of recruiter work.  Scope: Our app will only be used to organize the contacts for recruiter to track.',
  'CS2103T-W15-2': 'Our HustleBook help(s) wealth managers to keep track and be more organised with the clients.',
- 'CS2103T-W15-3': 'TACH helps CS Teaching Assistants teaching multiple classes to manage their students in an organized manner. Our sorting feature will allow TAs to view, categorize and get information of all their students at one glance'
+ 'CS2103T-W15-3': 'TACH helps CS Teaching Assistants teaching multiple tutorial groups to manage their students in an organized manner. Our sorting feature will allow TAs to view, categorize and get information of all their students at one glance'
 }%}
 
 {# format: [team, reviewer, reviewee1, backup1, reviewee2, backup2]

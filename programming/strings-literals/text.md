@@ -41,7 +41,7 @@ bye!
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Hi,
 How's life?
 bye!
@@ -50,10 +50,7 @@ bye!
 </span>
 </include>
 
-<include src="inputOutput.md" boilerplate>
-<span id="input">
-
-```python
+```python{.no-line-numbers}
 def get_email_body():
   body = '''This is the first line of the email.
 This is the second line.
@@ -63,8 +60,7 @@ This is the third line.
 
 print(get_email_body())
 ```
-</span>
-<span id="output">
+{{ icon_output }}
 
 ```{.no-line-numbers}
 This is the first line of the email.
@@ -72,8 +68,7 @@ This is the second line.
 This is the third line.
           - bye!
 ```
-</span>
-</include>
+
 
 </box>
 

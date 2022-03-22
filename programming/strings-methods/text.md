@@ -28,7 +28,7 @@ print('Hi there!'.lower())
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 HI THERE!
 hi there!
 ```
@@ -49,7 +49,7 @@ print(' \t\n'.isspace(), 'a b'.isspace())
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 True False
 True False
 True False
@@ -71,7 +71,7 @@ print(s.endswith('!'), s.endswith('?'))
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 True False
 True False
 ```
@@ -101,7 +101,7 @@ print(s.find('Spam'))
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 0
 6
 -1
@@ -122,14 +122,14 @@ print(s.find('Spam'))
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 print(', '.join(['tom', 'dick', 'harry']))
 print('-'.join(['one', 'to', 'one']))
 ```
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 tom, dick, harry
 one-to-one
 ```
@@ -147,7 +147,7 @@ one-to-one
 <include src="inputOutput.md" var-align="middle" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 print('hi, how are you?'.split())
 print('A1\t\tA2\nA3'.split())
 print('''Todo:
@@ -158,7 +158,7 @@ print('1-to-1-talk'.split('-'))
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 ['hi,', 'how', 'are', 'you?']
 ['A1', 'A2', 'A3']
 ['Todo:', '1. eat', '2. sleep']
@@ -179,7 +179,7 @@ print('1-to-1-talk'.split('-'))
 <include src="inputOutput.md" var-align="middle" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 s = '  hello  there!  '
 print('['+ s.strip() + ']')
 print('['+ s.lstrip() + ']') #left side strip
@@ -188,7 +188,7 @@ print('['+ s.rstrip() + ']') #right side strip
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 [hello  there!]
 [hello  there!  ]
 [  hello  there!]
@@ -212,7 +212,7 @@ print('1,2,3,4'.replace(',', '\t'))  # replace comma with a tab
 print('Yup, Yup, I agree'.replace('Yup', 'Yes'))
 ```
 {{ icon_output }}
-```
+```{.no-line-numbers}
 face-to-face
 1	2	3	4
 Yes, Yes, I agree
@@ -229,7 +229,7 @@ Yes, Yes, I agree
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 print('Here:'.rjust(20, '>')) # right-justify
 print('Price'.ljust(20, '=')) # left-justify
 print('Title'.center(16, ':')) # center
@@ -237,7 +237,7 @@ print('Title'.center(16, ':')) # center
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 >>>>>>>>>>>>>>>Here:
 Price===============
 :::::Title::::::

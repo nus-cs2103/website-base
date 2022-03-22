@@ -9,7 +9,7 @@
 <include src="inputOutput.md" var-align="middle" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 def divide(number, divisor):
   print('Starting calculation')
   result = number/divisor
@@ -47,7 +47,7 @@ It is not desirable for programs to 'crash' every time an exception occurs. You 
 <include src="inputOutput.md" var-align="middle" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 def divide2(number, divisor):
   print('Starting calculation')
   try:
@@ -64,7 +64,7 @@ divide2(3, 1.5)
 <span id="output">
 
 [<a target="_blank" href="https://goo.gl/rc8X9h">visualize</a>]<br>
-```
+```{.no-line-numbers}
 Starting calculation
 Cannot divide by zero
 Calculation over!........
@@ -89,7 +89,7 @@ If the exception does not match the `except` clause, the program crashes.
 <include src="inputOutput.md" var-align="top" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 divide2(5, 'abc')
 ```
 </span>
@@ -118,7 +118,7 @@ TypeError: unsupported operand type(s) for /: 'int' and 'str'
 <include src="inputOutput.md" var-align="middle" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 def divide3(number, divisor):
   print('Calculating', number, '/', divisor)
   try:
@@ -136,7 +136,7 @@ divide3(3, 'abc')
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Calculating 3 / 0
 Cannot divide by zero
 Calculation over!........
@@ -160,7 +160,7 @@ Calculation over!........
 <include src="inputOutput.md" var-align="middle" boilerplate>
 <span id="input">
 
-```python
+```python{.no-line-numbers}
 def divide4(number, divisor):
   print('Calculating', number, '/', divisor)
   try:
@@ -176,7 +176,7 @@ divide4(3, 'abc')
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Calculating 3 / 0
 Incorrect inputs
 Calculation over!........
@@ -211,7 +211,7 @@ print(get_head([]))
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 List too short
 ```
 </span>
@@ -240,7 +240,7 @@ print(get_head2(2))
 </span>
 <span id="output">
 
-```
+```{.no-line-numbers}
 Something wrong
 ```
 </span>

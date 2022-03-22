@@ -32,7 +32,7 @@ print(items)
   <td><br><br><br><br><br><br><br><br>&nbsp;→&nbsp;</td>
   <td><br><br><br><br><br><br><br><br><br>
   
-```
+```{.no-line-numbers}
 ['parrot', 'fish', 'dog', 'rock']
 ['rock', 'fish', 'dog', 'parrot']
 [2, 1]
