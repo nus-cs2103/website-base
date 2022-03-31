@@ -49,7 +49,7 @@
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
 
-* **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 7, format=format_normal, time="") }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 7pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}
+* **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 7, format=format_normal, time="") }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 6pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}
 
 <box type="important" icon=":fas-exclamation-circle:" seamless>
 

@@ -991,6 +991,14 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 <div id="desc_deliver_the_feature">
 
 * Deliver the features that you planned for {{ version_penultimate }}.
+
+<box type="info" seamless tags="m--cs2103">
+
+**Have any suggestions to improve AB3?**{.text-info}
+
+Now that you have worked with AB3 codebase for a while, if you have any suggestions on how to improve AB3 (for future batches), feel free to post in the [AB3 upstream issue tracker](https://github.com/se-edu/addressbook-level3/issues).<br>
+  %%Examples: places where the design/code can be simplified, hard to understand parts of the code, tips you can share with future batches, ...%%
+</box>
 </div>
 {#====================================================================================================================#}
 <span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>

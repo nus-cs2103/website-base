@@ -1156,6 +1156,8 @@ Note:
 
 Add some unit tests to [Monty Level 12 code]({{ baseUrl }}/programming/chapters/monty.html#monty12).
 
+Minimum requirement: 2 unit tests, testing two functions/methods
+
 </div>
 
 {{ line_double }}
