@@ -5,7 +5,7 @@
 * **If a bug report contains multiple bugs** (i.e., despite instructions to the contrary, a tester included multiple bugs in a single bug report), you have to choose one bug and ignore the others. If there are valid bugs, choose from valid bugs. Among the choices available, choose the one with the highest severity (in your opinion). In your response, mention which bug you chose.
 * **What bugs can be considered duplicates?** It is up to the dev team to prove conclusively that a bug is a duplicate. If the proof is not convincing enough, they will be considered as 'not duplicates'. Only the following cases can be considered duplicates:<br>
   (a) The exact same bug reported multiple times.<br>
-  (b) Multiple buggy behaviors that are actually caused by the same defect and ==cannot be fixed independently==.<br>
+  (b) Multiple buggy behaviors that are actually caused by the same defect and ==cannot be fixed independently== (i.e., fixing one fixes the others automatically).<br>
   <br>
   In real projects, similar bugs (e.g., the same typo in multiple places) tend to get combined into a single issue/PR; in the PE, we have to keep independently-fixable things as separate bugs, to avoid complications in grading. After all, having the same typo in two places is not exactly the same as having it in only one place.<br>
   If an independently-fixable yet similar problem appears in more than five distinct places, get our permission to combine them as one bug (in which case we'll require you to increase the severity to match the frequency of the bug).

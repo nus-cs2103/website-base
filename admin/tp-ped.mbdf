@@ -165,7 +165,7 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 <tabs>
 <tab header="Using CATcher">
 
-* Launch CATcher, and login to the correct profile:
+* Launch CATcher, and login to the correct profile (when CATcher asks, consent to creating a new repo named `ped`):
   * PE Dry Run: `{{ module_pair }} PE Dry run`
   * PE: `{{ module_pair }} PE`
 * Post bugs using CATcher.
@@ -258,7 +258,8 @@ Use the pain of dealing with this kind of bug reports as an opportunity to devel
   * Assign each bug to the person who should fix it
 * **If you have received 'insincere' bug reports** that seem like just an attempt to increase the tester's bug count, please let us know.<br>
   As for the other bug reports, you can deal with them as you see fit (i.e., triage, apply labels, assign, close etc.).<br>
-* **You may ignore `type/severity.*` labels given by the tester.** They will not affect you or the tester either way -- they were there just for the testers to practice. You may apply your own type/severity labels if you wish.{% if cs2103 or tic4002 %}
+* **You may ignore `type/severity.*` labels given by the tester.** They will not affect you or the tester either way -- they were there just for the testers to practice. You may apply your own type/severity labels if you wish.<br>
+  {{ icon_important_big_red }} In particular, beware of simply following the `type.*` given by the tester; it is your job to decide the correct type of the issue. e.g., What the tester labeled as a _bug_ might actually be a _feature flaw_.{% if cs2103 or tic4002 %}
 * **If a bug report is simply a feature suggestion**, you can take note of it and close it (to reduce clutter in the issue tracker, and to make it easy for the teaching team to track your progress on dealing with PE-D issues). Similarly, you can close PE-D issues not relevant to {{ version_penultimate }}.{% endif %}
 
 

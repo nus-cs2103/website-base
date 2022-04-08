@@ -10,7 +10,12 @@
  # Common fragments
  #====================================================================================================================#}
 <div class="indented" tags="m--cs2103 m--tic4002" id="feature-freeze-details">
+
 <box type="warning" seamless>
+
+**The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, {{ version_final }} should not have _any_ behaviors that were not already tested in the PE-D).
+
+While the info below provides you what to do and what not to do in {{ version_final }} specific cases, the important thing is to understand and ==**follow the spirit of the _feature freeze_** (i.e., do not change features further, correct unintentional errors only)==.
 
 **Allowed in the {{ version_final }} milestone:**{.text-success}
 
@@ -23,7 +28,6 @@
 
 {{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span> adding/changing features.
 
-**The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, {{ version_final }} should not have _any_ behaviors that were not already tested in the PE-D).
 
 **FAQs:**
 * **Q:** Can we add a missing validity check for a user input?<br>
@@ -35,6 +39,18 @@
 * **Q:** Testers have reported missing features or feature flaws (or suggested feature tweaks). Can we add/tweak those features?<br>
 **A:** No, as that goes against the spirit of having a feature freeze. Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
 Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
+
+* **Q:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug. How to proceed?<br>
+**A:** The category chosen by the tester is immaterial. You have to choose the correct category and proceed accordingly.
+
+* **Q:** How to distinguish between bugs and feature modifications?<br>
+**A:** A bug is when the actual behavior differs from the _advertised_ behavior (i.e., the behavior stated in the UG) <span class="text-danger">due to an _error_ in the code</span>.<br>
+ Describing a feature in the UG without implementing it is a UG bug. The remedy is to remove the feature from the UG.<br>
+ If the behavior difference is because some parts of the feature is not implemented yet, the feature is incomplete (i.e., not a bug). The remedy is to remove the feature (if it is not usable in the current form) or update the UG to match the current version of the feature.
+
+* **Q:** What if an issue is related to a behavior not specifically stated in the UG?<br>
+**A:** In that case, we go by the reasonable 'correct' behavior that one expects. For example, the UG might not specify what happens if a user typed an extra space after the first keyword of the command (e.g., `mark[SPACE]1` vs `mark[SPACE][SPACE]1`) in which case the reasonable correct behavior is to ignore the extra space.
+
 </box>
 </div>
 <div id="alert-time-sensitive">
@@ -1230,7 +1246,7 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 <div id="desc_draft_the_ppp">
 <include src="tp-tasks.mbdf#alert-time-sensitive" />
 
-* {% if cs2103 %}**Fill up the skeletal _Project Portfolio Page (PPP)** you created earlier with a draft version of content.{% else %}**Create the first version of your _Project Portfolio Page (PPP)_**.<br>
+* {% if cs2103 %}**Fill up the skeletal _Project Portfolio Page (PPP)_** you created earlier with a draft version of content.{% else %}**Create the first version of your _Project Portfolio Page (PPP)_**.<br>
   Reason: ==Each member needs to create a PPP== to describe your contribution to the project.{% endif %}
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="2") }}
