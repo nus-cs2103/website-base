@@ -156,7 +156,7 @@ Weekly project increments are given in the panels below:
 ### Week 13: Final submission
 
 **Deadline**:
-* Soft deadline (for the project report): {{ get_date(date_w13_start, format=format_normal) }} (Monday of week 13)<br>
+* Soft deadline (for the project report): {{ get_date(date_w13_start, 2, format=format_normal) }} (Wednesday of week 13)<br>
   Hard deadline (for all submissions): {{ get_date(date_w13_start, 6, format=format_normal) }} (Sunday of week 13)<br>
   An extra week can be given (upon request) for a small late submission penalty of `-2` marks.
 

@@ -1370,7 +1370,8 @@ Not applicable this semester
   * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.
   * Upload the jar file to LumiNUS.<br>
     File name: `[team ID][ProductName].jar` %%e.g. [{{ example_team_id }}][ContactsPlus].jar%%<br>
-    {{ icon_important }} Recommended to avoid spaces and special characters in the product name as it can cause problems when running the JAR file using the command line.
+    {{ icon_important }} Recommended to avoid spaces and special characters in the product name as it can cause problems when running the JAR file using the command line.<br>
+    %%{{ icon_info }} This name requirement is for the JAR file you upload to LumiNUS only. You may name the JAR file you upload to GitHub in any reasonable way.%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
 
@@ -1394,7 +1395,7 @@ Not applicable this semester
 * {{ icon_individual }} **Project Portfolio Page (PPP)**:
   * PDF file: submission is similar to the UG<br>
     File name: `[TEAM_ID][Your full Name as Given in LumiNUS]PPP.pdf` %%e.g.[{{ example_team_id }}][Leow Wai Kit, John]PPP.pdf%%<br>
-    {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names) 
+    {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names)
   * HTML version: make available on `github.io`
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "3", indent="2") }}

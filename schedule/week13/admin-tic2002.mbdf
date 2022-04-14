@@ -5,7 +5,7 @@
 {% call show_admin_summary() %}
 
 {{ icon_project }} **Project:**
-1. Submit the project {{ timing_badge("Monday 2359") }}
+1. Submit the project {{ timing_badge("Sunday 2359") }}
 {% endcall %}
 
 #### {{ thumb(1) }} Attend the mock exam {{ timing_badge("during lecture", "secondary") }}
@@ -16,7 +16,7 @@
 {{ heading_project }}
 <div id="project">
 
-#### {{ thumb(1) }} Submit the project {{ timing_badge("Monday 2359", "secondary") }}
+#### {{ thumb(1) }} Submit the project {{ timing_badge("Sunday 2359", "secondary") }}
 
 {{ embed_topic("../../admin/index-tic2002.mbdf#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "week13Admin-finalSubmission", "2") }}
 
