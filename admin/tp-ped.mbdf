@@ -200,6 +200,14 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
+<box type="tip" seamless>
+
+<span class="text-success">**When in doubt, choose the lower severity:**</span> If the severity of a bug seems to be smack in the middle of two severity levels, choose the lower severity.<br>
+Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase of the PE.
+As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower priority has a lower risk of being disputed by the dev team, giving you (and the dev team) a better chance of earning bonus marks for accuracy (which will be substantial).<br>
+To make your case even stronger, state in the bug report why you think the bug might even qualify for a higher severity, while you actually chose the lower one.
+</box>
+
 * Assign exactly one `type.*` label to the issue.
 <div class="indented-level2">
 <include src="tp-pe.mbdf#type-labels" />

@@ -415,7 +415,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
   * Click on it to go to the details, and read the dev team's response.
   * If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
   * If you are fine with the team's changes, click `Save` without any other changes upon which the issue will move to the `Issue Responded` section.
-* Note that ==only bugs that require your response will be shown by CATcher==. Bugs the team accepted _exactly as you reported them_ (i.e., no change to type or severity) will not appear in CATcher as there is nothing for you to do about them.
+* No action is required for the bugs the team accepted _exactly as you reported them_ (i.e., no change to type or severity). They are shown in CATcher for your reference only.
 
 </tab>
 <tab header="Not using CATcher">
