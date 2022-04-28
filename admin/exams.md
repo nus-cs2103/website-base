@@ -144,7 +144,7 @@ Choose the incorrect statement.
 
 <div tags="m--cs2103">
 
-**{{ icon_info }} Identity checks:** Note that there will be mass identity checks during part 1 and 2.
+**{{ icon_info }} Identity checks:** Note that there will be mass identity at the start of the exam.
 
 <div class="indented">
 

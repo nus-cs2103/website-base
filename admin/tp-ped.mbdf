@@ -165,7 +165,7 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 <tabs>
 <tab header="Using CATcher">
 
-* Launch CATcher, and login to the correct profile (when CATcher asks, consent to creating a new repo named `ped`):
+* Launch CATcher, and login to the correct profile (when CATcher asks, consent to creating a new repo):
   * PE Dry Run: `{{ module_pair }} PE Dry run`
   * PE: `{{ module_pair }} PE`
 * Post bugs using CATcher.

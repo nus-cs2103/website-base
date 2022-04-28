@@ -65,7 +65,8 @@ However, if such input can be entered by a user mistake, they should not cause h
 
 ##### Documentation bugs
 * **Broken links**: Severity can be `Low` or `Medium` depending on how much inconvenience they cause to the reader.
-* **Extra white space** introduced by the PDF conversion: Not counted as bugs unless it hinders the reader. Cases such as a diagram being split between pages are considered bugs, because they hinder the reader.
+* **Extra white space** introduced by the PDF conversion: Not counted as bugs unless it hinders the reader. Cases such as a diagram being split between pages are considered bugs, because they hinder the reader.<br>
+  {{ icon_info }} **'Hinder' the reader?** Don't interpret 'hinder' as 'impossible to read'. Even formatting issues such as too much/little padding, font size, alignment, inconsistencies, etc. can 'hinder' the reader in the sense they can slow down the reader or require the reader to put more effort than necessary. Those things that 'need to be fixed' are still bugs but of lower severities (depending on how much they hinder the reader -- most likely `severity.VeryLow` if the issue is purely cosmetic).
 * **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
   Omitting optional notations is not a bug as long it doesn't hinder understanding.
 * **Details missing from a diagram**: In a similar vein to the above, omitting details from a diagram is OK if it does not mislead/hinder the reader.<br>

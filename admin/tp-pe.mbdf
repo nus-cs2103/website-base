@@ -123,12 +123,10 @@ When the invigilator announces an identity check,
 
 1. remove mask (if any)
 1. turn towards the camera
-1. move closer to the camera (but do not adjust the camera position)
+1. move closer to the camera (but do not adjust the camera position) -- no need to show the student card
 1. hold that pose until the invigilator has taken a screenshot and asks you to go back to the exam activity.
 
-<span class="text-danger">Please comply quickly</span> as non-compliance can add an unnecessary loss of exam time for everyone. This is expected to take no more than 15 seconds.
-
-**Why do this in the middle of the exam activity?** It seems illogical that this is done in the middle of the exam activity when you are concentrating on the exam. However, doing this at the start can delay the exam start (and affects late arrivals) and doing so at the end affects those who have given time extensions due to special needs. Plus those are the times the invigilators are busiest (as some invigilators are students with zero/low invigilation experience, we don't want to stress them too much either -- their mistakes can potentially affect exam takers badly too.). Doing the identity check in the middle ensures the concentration/time loss is equal to everyone.
+<span class="text-danger">Please comply quickly</span> as non-compliance can delay the exam for everyone. This is expected to take no more than 15 seconds.
 </box>
 
 ##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
@@ -227,6 +225,15 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 ==**Deadline:** {{ get_date(date_w13_start, 11 if S == 2 else 10) }}==
 
 This phase is for you to respond to the bug reports you received.
+
+<box type="important" >
+
+****This is not a bug; it's fine the way it is!**** Everytime you say that in response to a legitimate bug report, you are saying something about your own standard of work as s software engineer. Don't set that standard too low, which goes totally against what we are trying to achieve in this module.
+
+**:fas-check: Yes, that needs fixing!** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that needs fixing", accept it graciously as a bug, even if you can come up with _some_ argument for it not being a bug. Your professional integrity is more valuable than a measly fraction of a mark that you might lose.
+
+**_Some_ bugs are 'expected'.** Given the short time you had for the tP and your inexperience in SE team projects, this work is not expected to be totally bug free. The grading scheme factors that in already -- i.e., your grade will not suffer if you accept a few bugs in this phase.
+</box>
 
 <box type="tip" seamless>
 
@@ -365,12 +372,18 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 * As far as possible, ==**choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting**==. Reason: your _non-acceptance_  may be rejected in a later phase, in which case we need to grade it as an accepted bug.<br>
   **If a bug's 'duplicate' status was rejected later** %%(i.e., the tester says it is not really a duplicate and the teaching team agrees with the tester)%%, it will inherit the type/severity/assignees from the 'original' bug that it was claimed to be a duplicate of.
 
-* **Justify your response.** For all of the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be double-checked by the teaching team in later phases.
+* **Justify your response.** For all of the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be considered by the teaching team in later phases (when resolving disputed bug reports).<br>
+  {{ icon_important_big_red }} If you don't provide a justification and the tester disagrees with your decision, the teaching team will have no choice but to rule in favor of the tester.
   * downgrading severity
   * non-acceptance of a bug
   * changing the bug type
   * non-obvious duplicate
 
+* **FAQs**:
+  1. **Q**: What if the bug is real but the tester used the wrong label (e.g., used the wrong `type.*`). Can we reject that bug?<br>
+     **A**: A bug is a bug irrespective of the label used. Instead of rejecting, rectify the label.
+  1. **Q**: What if the bug the tester reported is legit but the expected behavior tester suggested is not correct?<br>
+     **A**: You should accept the bug but state that you disagree with the expected/suggested behavior. Reason: the main job of the tester is to detect bugs; suggesting a solution is optional.
 <p/>
 </box>
 
@@ -387,13 +400,24 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 {{ icon_important_big_red }} While you are waiting for Phase 3 to start, comments will be added to the bug reports in your `/pe` repo, to indicate the response each received from the receiving team. <span class="text-danger">Please do not edit any of those comments or reply to them via the GitHub interface.</span> Doing so can invalidate them, in which case the grading script will assume that you agree with the dev team's response. Instead, wait till the start of the Phase 3 is announced, after which you should use CATcher to respond.
 </div>
 
-==**Deadline:** {{ get_date(date_w13_start, 13) }}==
+==**Deadline:** {{ get_date(date_w13_start, 14) }}==
 
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving dev team, you can record your objections and the reason for the objection.
   * not accepted
   * severity downgraded
   * bug type changed
   * bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
+
+<div class="indented-level2">
+<box type="important">
+
+**Don't feel upset if the dev team did not totally agree** with most of the bugs you reported. That is to be expected, given you had very short time to make those bug decisions while the dev team had a lot more time to deliberate about them. Some may have given unreasonable (in your opinion) arguments against your bug reports; not to worry, just give your counter-arguments and leave it to the teaching team to decide (in the next phase) which position is more reasonable.
+
+However, ==if the dev team's argument is not too far from 'reasonable', **it may be better to agree than disagree**==.<br>
+  Reason: an incorrect counter argument at this phase will lower your _accuracy_ more than an incorrect decision made during the testing phase (because you now have more time to think about the bug).
+</box>
+</div>
+
 * **If you would like to revise your own initial type/severity** in response to the team's inputs, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).
 * You can also refer to the below guidelines:
 
@@ -427,6 +451,11 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 </tab>
 </tabs>
 </div>
+
+* **FAQs:**
+  1. **Q.** What if the team rejected my bug report without giving a reason?<br>
+     **A.** You can disagree with the rejection, and the teaching team will rule in your favor in the next phase.
+
 <p/>
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
