@@ -20,7 +20,8 @@ This week, ==there are things for you to do before the upcoming lecture== (refer
 
 * **Our first lecture** will be on {{ get_date(date_first_lecture, time="") }}.
 * **Our tutorials** start on week 3.
-* **[{{ module }}T Students]**: Of the many weekly sessions that appear under {{ module }}T, only two actually belong to {{ module }}T. Those are, the lecture on {{ day_lecture }} {{ time_t_lecture_start }}-{{ time_t_lecture_end }}, and the 1-hour tutorial slot. The other two 2-hour slots belong to the CS2101 module.
+* **[{{ module }}T Students]**: Of the many weekly sessions that appear under {{ module }}T, only two actually belong to {{ module }}T. Those are, the lecture on {{ day_lecture }} {{ time_t_lecture_start }}-{{ time_t_lecture_end }}, and the 1-hour tutorial slot. The other two 2-hour slots belong to the CS2101 module. <br>
+  ==CS2101 tutorials start in Week 1.==
 </box>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

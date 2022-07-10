@@ -8,14 +8,14 @@
 <variable name="S">2</variable>
 <variable name="semester">AY2122S{{ S }}</variable>
 <variable name="period">2022 Jan-Apr</variable>
-<variable name="current_week">-1</variable>
+<variable name="current_week">15</variable>
 
 <variable name="algolia">yes</variable>
 
 <variable name="luminus_module_id">65069791-95b5-4897-a05f-e7d10b630ab4</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQ3yMfxtxatSX5XxWnZparVJN9UkEOu504YHyShketpCzdqQth4JDcwQwhWvOBi-XH8-gkdgMgGpg1t/pub?embedded=true</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQn8-bU31tH0iHIjTnr_0ZJClumHGQQYeGPwVb9FElEJacILvFQVeNgcNmlyTxlBrBx4fyeqpwI_qI2/pub?embedded=true</variable>
 <variable name="url_coursemology_classroom">https://coursemology.org/courses/2179</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3axv6F3d_DR7MT2bVuF7kVSN0kEh1VyBlXiUI8B-pRoTM1%40thread.tacv2/conversations?groupId=fc487699-c4ba-4b0d-a272-2971f1deeede&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
 <variable name="date_w1_start">2022-01-10</variable>
 <variable name="day_first_tutorial">Wednesday</variable>

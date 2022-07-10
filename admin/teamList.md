@@ -56,8 +56,8 @@ This page will be populated later in the semester ...
 {% set team_contents = "" %}
 {% set current_team = "" %}
 
-{% for tutorial in tutorials  %}
-  {% for student in students  %}
+{% for tutorial in tutorials %}
+  {% for student in students %}
 
     {% set student_team = student[1] %}
     {% set student_tutorial = 'TIC4001-F18' if tic4001 else student_team.slice(0, -2) %}

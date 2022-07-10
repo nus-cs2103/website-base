@@ -7,7 +7,7 @@
 <span id="lectures-s2">
 
 {{ lecture_table_headers | trim }}
-{{ module }}/T | ICube Auditorium | **1400**-1600
+{{ module }}/T | ~~LT19~~ Zoom | Friday **1600**-1800
 </span>
 
 <span id="tutorials-s1">
@@ -34,11 +34,10 @@
 <span id="tutorials-s2">
 
 {{ tutorial_table_headers | trim }}
-{{ MT | safe }} | ~~COM1-B103~~ Zoom | **W**ed  **09**:00 | ~~%%LC02%%~~ | **`CS2113T-W09`**| TBD
-{{ M | safe }}  | ~~COM1-B103~~ Zoom | **W**ed  **10**:00 | ~~%%T1%%~~  | **`CS2113-W10`** | TBD
-{{ MT | safe }} | ~~COM1-B103~~ Zoom | **T**hu  **09**:00 | ~~%%LC01%%~~ | **`CS2113T-T09`**| TBD
-{{ M | safe }} | ~~COM1-B103~~ Zoom | **T**hu  **10**:00 | ~~%%T2%%~~ | **`CS2113-T10`**| TBD
-{{ MT | safe }} | ~~COM1-B103~~ Zoom | **F**ri  **08**:00 | ~~%%LC03%%~~ | **`CS2113T-F08`**| TBD
-{{ M | safe }} | ~~COM1-B103~~ Zoom | **F**ri  **10**:00 | ~~%%T3%%~~ | **`CS2113-F10`**| TBD
+{{ MT | safe }} | ~~COM1-B103~~ Zoom | **T**hu  **09**:00 | ~~%%LC01%%~~ | **`CS2113T-T09`**| Akshay; Stephanie
+{{ MT | safe }} | ~~COM1-B103~~ Zoom | **T**hu  **10**:00 | ~~%%LC03%%~~  | **`CS2113-T10`**| Stephanie; Richard
+{{ M | safe }} | ~~COM1-B103~~ Zoom | **T**hu  **11**:00 | ~~%%T1%%~~  | **`CS2113-T11`**| Shivin; Samantha
+{{ M | safe }} | ~~COM1-B103~~ Zoom | **F**ri  **10**:00 | ~~%%T2%%~~ | **`CS2113T-F10`**| Nishanth; Xin Ru
+{{ M | safe }} | ~~COM1-B103~~ Zoom | **F**ri  **10**:00 | ~~%%T3%%~~ | **`CS2113-F12`**| Mingqian; Kelvin
 
 </span>

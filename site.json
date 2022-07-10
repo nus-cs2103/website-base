@@ -63,10 +63,13 @@
       "tags": ["m--cs2113"]
     },
     "algolia": {
-      "apiKey": "3855d3d0d62585efc4f4841564bc73ca",
-      "indexName": "nus-cs2113-ay1920s2",
-      "algoliaOptions": { "hitsPerPage": 10 },
-      "facetFilters": [["tags:admin", "tags:se-book-adapted", "tags:schedule"]],
+      "apiKey": "a3fef7e2d9dea07c0fa2d8ed521057aa",
+      "appId": "3DU4XTBX4T",
+      "indexName": "nus-tic-cs",
+      "algoliaOptions": {
+        "hitsPerPage": 10,
+        "facetFilters": [["site:nus-cs2113-ay2122s2.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
+      },
       "debug": false
     }
   },

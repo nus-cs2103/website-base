@@ -29,7 +29,7 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 ****Mode****:
 {% if cs2103 or cs2113 %}
-* Will be done using Zoom. The Zoom link will be available in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links).{% if cs2113 %}
+* Will be done using Zoom. The Zoom link will be available on [LumiNUS](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/module-description).{% if cs2113 %}
 * You need to register first before you receive the actual session link.
 {% endif %}
 {% else %}
