@@ -20,6 +20,6 @@
 * **Do the following iP task** but note the following:
   * After adding the first review comment, take a screenshot of the comment and paste in the _shared workspace_ document. This will help the tutor confirm that you are on the right track.
   * Provide at least 4-5 review comments
-  * Do {{ step(3) }} only after the tutorial is over.
+  * Do {{ step(4) }} only after the tutorial is over.
 
 {{ embed_topic("../../admin/ip-tasks.mbdf#desc_review_two_prs", "Admin " + icon_embedding + " iP → **Getting gready for PR reviews**", "3", indent="2") }}

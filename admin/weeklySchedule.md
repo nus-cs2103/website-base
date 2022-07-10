@@ -21,7 +21,7 @@
 
 <span class="text-danger">**The hard deadline** for weekly tasks is the following lecture</span> i.e., do this week's task before the next week's lecture.
 
-**We are not strict with most interim weekly project deadlines** i.e., we'll not penalize you even if you occasionally miss those deadlines, as long as you catch up soon enough (within a few days after the hard deadline).
+{% if not cs2113 %}**We are not strict with most interim weekly project deadlines** i.e., we'll not penalize you even if you occasionally miss those deadlines, as long as you catch up soon enough (within a few days after the hard deadline).{% endif %}
 
 **It's OK to make occasional mistakes in weekly tasks** (making mistakes is a natural part of learning new things after all). If a weekly task was not accepted as 'done' due to a mistake you made, go ahead and rectify the mistake as soon as you can -- our grading scripts will not penalize such mistakes if they are corrected soon after.
 </div>
@@ -37,7 +37,7 @@
 
 {{ icon_calendar }} **[Lecture day ({{ day_lecture }})]**<br>
 
-* Attend the lecture to, 
+* Attend the lecture to,
   * see a recap of the preceding week's topics
   * get an introduction to the current week's topics
   * submit the in-lecture quiz/activities (if any)
@@ -47,9 +47,9 @@
 <p/>
 
 {{ icon_calendar }} **[End of lecture - Start of tutorial]**<br>
- 
+
  * Use the relevant learning resources to learn the topics.
- * Self-test your knowledge using exercises given in the learning resources. 
+ * Self-test your knowledge using exercises given in the learning resources.
  * ==Submit the post-lecture quiz/exercises== (if any)
  * ==Do project tasks== %%(e.g., attend weekly project meeting, finish weekly deliverables)%%
  * If you don't have time to learn all topics assigned to the week, use the star rating system to decide which ones to do first.
@@ -68,7 +68,7 @@
 <p/>
 
 {{ icon_calendar }} **[During tutorial]**<br>
- 
+
 * Attend the tutorial to,
   * demonstrate evidence of your learning weekly topics to the tutor
   * learn from peer demos of showing evidence of their own learning
