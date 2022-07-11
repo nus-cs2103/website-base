@@ -1,69 +1,25 @@
 {% set tutorials = [
- "TIC4002-F18"
+
 ]%}
 
 {% set students = [
- ['LAM ..CHUN', 'TIC4002-F18-1', 'zcnmashleu95'],
- ['LEOW.. HUI', 'TIC4002-F18-1', 'IcyNoPeople'],
- ['SPEN.. HAO', 'TIC4002-F18-1', 'spencernah'],
- ['WANG..NWEI', 'TIC4002-F18-1', 'e0373972'],
- ['JOSE..YANG', 'TIC4002-F18-2', 'badfr0g'],
- ['OEI ..NNAH', 'TIC4002-F18-2', 'hana-oxy'],
- ['SOH ..AMES', 'TIC4002-F18-2', 'sohwkjames'],
- ['ZHAN.. YUN', 'TIC4002-F18-2', 'zyjarvis'],
- ['CHEN..YUAN', 'TIC4002-F18-3', 'chenghuiyuan'],
- ['LI S..IHAO', 'TIC4002-F18-3', 'l-shihao'],
- ['LIM ..YONG', 'TIC4002-F18-3', 'jr-mojito'],
- ['LIM .. YIN', 'TIC4002-F18-3', 'yinyin377'],
- ['IVAN..BOON', 'TIC4002-F18-4', 'ivanhlb'],
- ['LIM ..KANG', 'TIC4002-F18-4', 'Opkko'],
- ['TAN ..CHUN', 'TIC4002-F18-4', 'TanChiaChun'],
- ['ZHUA..MING', 'TIC4002-F18-4', 'yaololo'],
- ['GWEE..CHAI', 'TIC4002-F18-5', 'gweeyc'],
- ['LOW ..UANG', 'TIC4002-F18-5', 'lowyanshuang'],
- ['NG X..N YI', 'TIC4002-F18-5', 'Elxyng'],
- ['TAN .. HUA', 'TIC4002-F18-5', 'thisisdax'],
- ['YANG..GENG', 'TIC4002-F18-5', 'YangShuogeng'],
- ['GIMP..ADAY', 'TIC4002-F18-6', 'Mr-YaRou'],
- ['KHOR..YONG', 'TIC4002-F18-6', 'KaydenKhor'],
- ['NIE ..TING', 'TIC4002-F18-6', 'Ruiting1'],
- ['TAN ..RICK', 'TIC4002-F18-6', 'e0262191']
+
 ]%}
 
 {% set teams = {
- 'TIC4002-F18-1': 'https://docs.google.com/document/d/1KoIdVCrWLe1W-DeJwpmoq28XtcFr0Of4LK4j6nelFCo/edit?usp=sharing',
- 'TIC4002-F18-2': 'https://drive.google.com/drive/folders/1mjqBHI1RwFcZl8aOoGwbfdbTt0guaXVM?usp=sharing',
- 'TIC4002-F18-3': 'https://docs.google.com/document/d/1NC96Y2KN7qFkIhVDBuyJVqujKP3mCRSpKo2TGDgscYs/edit?usp=sharing',
- 'TIC4002-F18-4': 'https://docs.google.com/document/d/1aHjA-U5rwhCmxtsDCqOv18dA8ZD0n4rPlXjRIwCj2h0/edit',
- 'TIC4002-F18-5': 'https://tinyurl.com/TIC4002tpDraft',
- 'TIC4002-F18-6': 'https://docs.google.com/document/d/1mqSXed9T2dr5TK27i6giUJMSIerOoXH0juLsWoVjNZc/edit?usp=sharing'
+
 }%}
 
 {% set products = {
- 'TIC4002-F18-1': 'Contacts Address Book (CAB)',
- 'TIC4002-F18-2': 'Student Management System',
- 'TIC4002-F18-3': 'Project BUDDY',
- 'TIC4002-F18-4': 'Contact Manager',
- 'TIC4002-F18-5': 'TeamContact 24/7',
- 'TIC4002-F18-6': 'MyContentPlanner'
+
 }%}
 
 {% set users = {
- 'TIC4002-F18-1': 'Name: Jason Tan Marriage Status: Married Age: 32 years old Occupation: Supplier Hobbies: Sports such as football, tennis and basketball. Traits:  Comfortable with technology. Has multiple contacts ranging from colleagues to external family members   Keeps in contact with his clients, and prefers to categorise them.',
- 'TIC4002-F18-2': 'This product is for users who prefer CLI over GUI and has a lot of students and needs to keep track of their particulars.',
- 'TIC4002-F18-3': 'Karen, 42 year-old As a school teacher managing 25 students in a class and in charge of co-curricular activities, it is a hassle to manage the contacts of students’ and parents’ information. In addition, manage contact details of vendors that are involved in CCA and school events.',
- 'TIC4002-F18-4': 'Working adults who need software that does more than what address book does to better manage their contacts. The user needs better search features, as well as able to perform certain actions as adding to-do tasks for different contacts.',
- 'TIC4002-F18-5': 'This product is for an Software Project Manager on the go, who will use the app to help organize and quickly manage contact information on the fly, on or for a current relatively small to medium size team at work.',
- 'TIC4002-F18-6': "This application is for social media managers who need to track monthly social media content posting schedule so that they won't miss out any days without posting content for their client. Meanwhile, they prefer to use the command line to save the ready-made content link over the GUI and has tons of content to keep track."
+
 }%}
 
 {% set values = {
- 'TIC4002-F18-1': 'Morph:  Better email management (multiple emails) Expansion of information fields of contacts Better categorisation of Contacts (via tags) Evolve:  Better searchability (search based on certain criteria) Provide alternatives for saving the data file (csv) More options in clearing contacts (clear certain fields or contacts selectively)',
- 'TIC4002-F18-2': 'To help teachers better manage student’s information in an organised manner. Able to help the teacher to extract student’s information whenever is needed.',
- 'TIC4002-F18-3': 'BUDDY is a desktop Contacts Management Application for School Teachers. Teachers can enter contact information for a swift search and retrieve desired details within a few keystrokes by CLI like commands. The application also has a GUI that displays contacts info in a beautiful scrolling view.',
- 'TIC4002-F18-4': 'As busy working adults, it is hard to keep track of many things as our social circle grows. Our app will make it easy to handle from contact information to other important data like anniversaries and dates.',
- 'TIC4002-F18-5': 'As a working IT professional, he has a mobile and a small personal laptop with him all the time. And he prefers to use the CLI - for its quick zoom abilities - to track his communication tasks as that is what he interacts with the most throughout his day.',
- 'TIC4002-F18-6': "Better manage client's social media profile. Able to have full oversight and overview of the monthly content schedule. Able to give insightful data from the post-performance. Able to trigger notification while nearing deadline. Both client and social media manager are able to view the planner concurrently."
+
 }%}
 
 {# format: [team, reviewer, reviewee1, backup1, reviewee2, backup2]
