@@ -52,6 +52,7 @@
       "searchable": "no"
     }
   ],
+  "pagesExclude": ["**/*-fragment.md"],
   "intrasiteLinkValidation": {
     "enabled": false
   },

@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import get_week_start_date with context %}
-<header fixed>
+<header sticky>
 {% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center d-print-none"><md>**This is a draft version of the website! The final version will be available near the start of the semester.**</md></div >
 {% endif %}{% if current_week in ["-1", "0", "1"] %}
