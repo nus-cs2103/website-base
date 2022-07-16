@@ -23,7 +23,7 @@ Here is a sample interaction with Monty:
 *      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
 *                                                                                  __/ |  *
 *                                                                                 |___/   *
-******************************************************************************************* 
+*******************************************************************************************
 
 >>> What can I do for you?
 
@@ -32,7 +32,7 @@ help
 ==================================================
 Monty can understand the following commands:
 
-  add DESCRIPTION 
+  add DESCRIPTION
     Adds a task with the DESCRIPTION to the list
     Example: add read book
   done INDEX
@@ -44,7 +44,7 @@ Monty can understand the following commands:
     Shows the help information
   list
     Lists the tasks in the list
--------------------------------------------------- 
+--------------------------------------------------
 
 >>> What can I do for you?
 
@@ -63,7 +63,7 @@ done 1
 list
 >>> Here is the list of tasks:
 ==================================================
-STATUS | INDEX | DESCRIPTION                
+STATUS | INDEX | DESCRIPTION
 --------------------------------------------------
   X    |   1   | read book
   -    |   2   | return book
@@ -77,9 +77,9 @@ STATUS | INDEX | DESCRIPTION
 The project consists of the following _increments_:
 * **Levels**: A series of features, meant to be added to Monty in the given order, although some can be skipped. These have been named `Level 1` to `Level 14` to indicate how each makes the product progressively "level up".
 * **Extensions:**
-  * <big><span class="badge badge-pill badge-primary">Category B</span></big> These are enhancements related to task tracking.
-  * <big><span class="badge badge-pill badge-success">Category C</span></big> These are enhancements, not specifically related to task tracking.
-  * <big><span class="badge badge-pill badge-danger">Category D</span></big> Each of these adds the ability to track another type of entities.
+  * <big><span class="badge rounded-pill bg-primary">Category B</span></big> These are enhancements related to task tracking.
+  * <big><span class="badge rounded-pill bg-success">Category C</span></big> These are enhancements, not specifically related to task tracking.
+  * <big><span class="badge rounded-pill bg-danger">Category D</span></big> Each of these adds the ability to track another type of entities.
 </div>
 
 ## Levels
@@ -504,7 +504,7 @@ A sample output is given below.
 *      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
 *                                                                                  __/ |  *
 *                                                                                 |___/   *
-******************************************************************************************* 
+*******************************************************************************************
 
 >>> What can I do for you?
 
@@ -513,7 +513,7 @@ help
 ==================================================
 Monty can understand the following commands:
 
-  add DESCRIPTION 
+  add DESCRIPTION
     Adds a task to the list
     Example: add read book
   done INDEX
@@ -525,7 +525,7 @@ Monty can understand the following commands:
     Shows the help information
   list
     Lists the tasks in the list
--------------------------------------------------- 
+--------------------------------------------------
 
 >>> What can I do for you?
 
@@ -544,7 +544,7 @@ done 1
 list
 >>> Here is the list of tasks:
 ==================================================
-STATUS | INDEX | DESCRIPTION                
+STATUS | INDEX | DESCRIPTION
 --------------------------------------------------
   X    |   1   | read book
   -    |   2   | return book
@@ -610,14 +610,14 @@ A sample output is given below. Note the following:
 *      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
 *                                                                                  __/ |  *
 *                                                                                 |___/   *
-******************************************************************************************* 
+*******************************************************************************************
 
 >>> What can I do for you?
 
 list
 >>> Here is the list of tasks:
 ==================================================
-STATUS | INDEX | DESCRIPTION                
+STATUS | INDEX | DESCRIPTION
 --------------------------------------------------
   X    |   1   | borrow book
   -    |   2   | read book
@@ -632,7 +632,7 @@ delete 2
 list
 >>> Here is the list of tasks:
 ==================================================
-STATUS | INDEX | DESCRIPTION                
+STATUS | INDEX | DESCRIPTION
 --------------------------------------------------
   X    |   1   | borrow book
   -    |   2   | return book
@@ -662,8 +662,8 @@ STATUS | INDEX | DESCRIPTION
   ```python
    items = []
    DATA_FILE = 'monty7.csv'
-   
-   
+
+
    def main():
        create_file_if_missing(DATA_FILE)
        load_data(DATA_FILE) # load task data from the file
@@ -675,8 +675,8 @@ STATUS | INDEX | DESCRIPTION
                save_data(DATA_FILE, items) # save all tasks in the file
            except Exception as e:
                print('>>> SORRY, I could not perform that command. Problem:', e)
-   
-   
+
+
    main()
   ```
 </box>
@@ -714,33 +714,33 @@ Given below are some more features you can consider adding at this point (it is 
 * **Remove the need for the user to confirm before exiting Monty.** As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
   ```
   >>> What can I do for you?
-  
+
   exit
   >>> Bye!
   ```
 * **Add a `pending` command** (other possible names: `undone` or `unmark`) that can mark a task as not-done-yet (i.e., the opposite of the `done` command), if you haven't done that already.
   ```
    >>> What can I do for you?
-   
+
    list
    >>> Here is the list of tasks:
    ==================================================
-   STATUS | INDEX | DESCRIPTION                
+   STATUS | INDEX | DESCRIPTION
    --------------------------------------------------
      X    |   1   | borrow book
      -    |   2   | read book
      -    |   3   | return book
    --------------------------------------------------
    >>> What can I do for you?
-   
+
    pending 1
    >>> OK, I have marked that item as pending
    >>> What can I do for you?
-   
+
    list
    >>> Here is the list of tasks:
    ==================================================
-   STATUS | INDEX | DESCRIPTION                
+   STATUS | INDEX | DESCRIPTION
    --------------------------------------------------
      -    |   1   | borrow book
      -    |   2   | read book

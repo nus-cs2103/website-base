@@ -658,7 +658,7 @@ This activity is worth `2x2=4` participation points.
 **If you wish to cite the iP in your resume**, you can do more to make it look more impressive to a potential employer. These improvements are not considered for grading and can be done after the semester is over. Some ideas:
 * **Improve the GUI**: Make the UI look nicer, unique, and memorable. You can get inspiration from [what others have done](ip-showcase.html) (but remember to give credit if you reuse any code from them).
 * **Add a demo** video or an animated gif to your user guide to show how the app works.
-* **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge badge-light badge-pill text-monospace">**&lt;/>**</span>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
+* **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge rounded-pill bg-light text-monospace">**&lt;/>**</span>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
 * **Add more features.**
 
 {{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other modules, pet projects).

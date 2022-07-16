@@ -135,7 +135,7 @@
 <variable name="icon_example"><md>:fas-cube:</md></variable>
 <variable name="icon_embedding"><md>:glyphicon-log-in:</md></variable>
 <variable name="icon_exercise"><md>:fas-dumbbell:</md></variable>
-<variable name="icon_extra"><span class='badge badge-pill badge-secondary'><md>:fas-plus: extra</md></span></variable>
+<variable name="icon_extra"><span class='badge rounded-pill bg-secondary'><md>:fas-plus: extra</md></span></variable>
 <variable name="icon_evidence"><md>:fas-briefcase:</md></variable>
 <variable name="icon_graded"><span class="text-info"><tooltip content="counted for participation"><md>:fab-product-hunt:</md></tooltip></span></variable>
 <variable name="icon_info"><md>:fas-info-circle:</md></variable>
@@ -152,7 +152,7 @@
 <variable name="icon_prereq"><md>:glyphicon-education:</md></variable>
 <variable name="icon_preview"><md>:glyphicon-eye-open:</md></variable>
 <variable name="icon_print"><md>:glyphicon-print:</md></variable>
-<variable name="icon_pro_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb: PRO TIP</span></variable>
+<variable name="icon_pro_tip"><span class="badge rounded-pill bg-warning">:fas-lightbulb: PRO TIP</span></variable>
 <variable name="icon_project"><md>:fas-drafting-compass:</md></variable>
 <variable name="icon_Q"><md>:glyphicon-question-sign:</md></variable>
 <variable name="icon_green_Q"><thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/></variable>
@@ -162,7 +162,7 @@
 <variable name="icon_terminal"><small><span class="badge badge-secondary">&gt;_</span></small></variable>
 <variable name="icon_text"><md>:far-file-alt:</md></variable>
 <variable name="icon_tick"><md>:fas-check:</md></variable>
-<variable name="icon_tip"><span class="badge badge-pill badge-warning">:fas-lightbulb:</span></variable>
+<variable name="icon_tip"><span class="badge rounded-pill bg-warning">:fas-lightbulb:</span></variable>
 <variable name="icon_tick_green"><span style="color: green">{{ icon_tick | safe }}</span></variable>
 <variable name="icon_todo"><md>:glyphicon-check:</md></variable>
 <variable name="icon_try">:fas-laptop:</variable>
@@ -189,11 +189,11 @@
 <variable name="good"><span style="color: green"><md>**:fas-thumbs-up: Good**</md></span></variable>
 <variable name="pros"><span class="text-success">**pros:**</span></variable>
 <variable name="cons"><span class="text-danger">**cons:**</span></variable>
-<variable name="required"><span class="badge badge-pill badge-danger">REQUIRED</span></variable>
-<variable name="optional"><span class="badge badge-pill badge-success">OPTIONAL</span></variable>
+<variable name="required"><span class="badge rounded-pill bg-danger">REQUIRED</span></variable>
+<variable name="optional"><span class="badge rounded-pill bg-success">OPTIONAL</span></variable>
 <variable name="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></variable>
 
-<variable name="edition_badge"><small><small><small><span class='badge badge-pill badge-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></variable>
+<variable name="edition_badge"><small><small><small><span class='badge rounded-pill bg-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></variable>
 <variable name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></variable>
 <variable name="MT"><span class="badge badge-warning">{{ module }}T</span></variable>
 
@@ -201,15 +201,15 @@
 
 <variable name="s"><md>:glyphicon-star:</md></variable>
 <variable name="star"><span class='glyphicon glyphicon-star' aria-hidden='true'></span></variable>
-<variable name="one_star"><span class='badge badge-pill badge-light text-danger'>{{ star | safe }} </span></variable>
-<variable name="prereq_no_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }}</span></variable>
-<variable name="prereq_one_star"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }} </span></variable>
-<variable name="two_stars"><span class='badge badge-pill badge-light text-warning'>{{ star | safe }}{{ star | safe }} </span></variable>
-<variable name="prereq_two_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }} </span></variable>
-<variable name="three_stars"><span class='badge badge-pill badge-light text-primary'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
-<variable name="prereq_three_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
-<variable name="four_stars"><span class='badge badge-pill badge-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}: OPTIONAL</span></variable>
-<variable name="prereq_four_stars"><span class='badge badge-pill badge-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="one_star"><span class='badge rounded-pill bg-light text-danger'>{{ star | safe }} </span></variable>
+<variable name="prereq_no_stars"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }}</span></variable>
+<variable name="prereq_one_star"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }} </span></variable>
+<variable name="two_stars"><span class='badge rounded-pill bg-light text-warning'>{{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="prereq_two_stars"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="three_stars"><span class='badge rounded-pill bg-light text-primary'>{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="prereq_three_stars"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
+<variable name="four_stars"><span class='badge rounded-pill bg-success'>{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}: OPTIONAL</span></variable>
+<variable name="prereq_four_stars"><span class='badge rounded-pill bg-secondary'>{{ icon_prereq | safe }}{{ icon_prereq | safe }} : {{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }} </span></variable>
 
 <!-- ===========================  misc aliases =========================================== -->
 

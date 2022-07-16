@@ -109,7 +109,7 @@ pageNav: 4
 {% for topic in topics %}
 {% if topic.id == current_topic_id %}
 {% set hashes = "#" %}
-{{ hashes }} <span class="display-4">{{ topic.title }}</span> <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) if topic.priority }} {% for tag in topic.tags %}<span class="badge badge-pill badge-light ">#{{ tag }}</span> {% endfor %}</span>
+{{ hashes }} <span class="display-4">{{ topic.title }}</span> <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) if topic.priority }} {% for tag in topic.tags %}<span class="badge rounded-pill bg-light ">#{{ tag }}</span> {% endfor %}</span>
 {% endif %}
 {% endfor %}
 {%- endmacro %}

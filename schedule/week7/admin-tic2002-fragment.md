@@ -6,14 +6,14 @@
 1. Submit the quiz
 
 {{ icon_project }} **Project:**
-1. Implement increments `Level-6`, `A-Enums` <span class="badge badge-pill badge-secondary">if-applicable</span>
+1. Implement increments `Level-6`, `A-Enums` <span class="badge rounded-pill bg-secondary">if-applicable</span>
 {% endcall %}
 
 <!-- ==================================================================================================== -->
 {{ heading_project }}
 <div id="project">
 
-#### {{ thumb(1) }} Implement increments `Level-6`, `A-Enums` <span class="badge badge-pill badge-secondary">if-applicable</span>
+#### {{ thumb(1) }} Implement increments `Level-6`, `A-Enums` <span class="badge rounded-pill bg-secondary">if-applicable</span>
 
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-6`: Delete**" var-fragment="text.md#Level-6" />
