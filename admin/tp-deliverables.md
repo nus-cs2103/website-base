@@ -18,37 +18,37 @@ Here is a list of main deliverables of the project; their details are given in t
 
 ### <div class="text-white bg-info p-1">Deliverable: Executable</div>
 <span id="tp-deliverables-executable">
-<include src="tp-deliverables-executable.mbdf" />
+<include src="tp-deliverables-executable-fragment.md" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Source code</div>
 <span id="tp-deliverables-sourcecode">
-<include src="tp-deliverables-sourcecode.mbdf" />
+<include src="tp-deliverables-sourcecode-fragment.md" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: User Guide (UG)</div>
 <span id="tp-deliverables-ug">
-<include src="tp-deliverables-ug.mbdf" />
+<include src="tp-deliverables-ug-fragment.md" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div>
 <span id="tp-deliverables-dg">
-<include src="tp-deliverables-dg.mbdf" />
+<include src="tp-deliverables-dg-fragment.md" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Product Website</div>
 <span id="tp-deliverables-website">
-<include src="tp-deliverables-website.mbdf" />
+<include src="tp-deliverables-website-fragment.md" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Project Portfolio Page (PPP)</div>
 <span id="tp-deliverables-ppp">
-<include src="tp-deliverables-ppp.mbdf" />
+<include src="tp-deliverables-ppp-fragment.md" />
 </span>
 
 ### <div class="text-white bg-info p-1">Deliverable: Demo</div>
 <span id="tp-deliverables-demo">
-<include src="tp-deliverables-demo.mbdf" />
+<include src="tp-deliverables-demo-fragment.md" />
 </span>
 
 </div>

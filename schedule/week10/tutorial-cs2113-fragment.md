@@ -4,14 +4,14 @@
 
 #### {{ thumb(1) }} Demo test coverage
 
-<include src="../../admin/common-tutorials.mbdf#demo-test-coverage" />
+<include src="../../admin/common-tutorials-fragment.md#demo-test-coverage" />
 
 
 #### {{ thumb(2) }} Exercise: interpret a sequence diagram
 
-<include src="../../admin/common-tutorials.mbdf#interpret-parserfactory-sd" />
+<include src="../../admin/common-tutorials-fragment.md#interpret-parserfactory-sd" />
 
 
 #### {{ thumb(3) }} Exercise: draw a sequence diagram
 
-<include src="../../admin/common-tutorials.mbdf#draw-quote-sd" />
+<include src="../../admin/common-tutorials-fragment.md#draw-quote-sd" />

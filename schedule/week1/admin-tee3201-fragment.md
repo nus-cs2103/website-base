@@ -12,8 +12,8 @@
 
 #### {{ thumb(1) }} Learn about the module and the website
 
-{{ embed_topic("../../admin/index-tee3201.mbdf#module-info", "Admin " + icon_embedding + " About the module", "1", indent="2") }}
-{{ embed_topic("../../admin/index-tee3201.mbdf#website-info", "Admin " + icon_embedding + " Using the website", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#module-info", "Admin " + icon_embedding + " About the module", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#website-info", "Admin " + icon_embedding + " Using the website", "1", indent="2") }}
 
 
 #### {{ thumb(2) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
@@ -25,7 +25,7 @@
 
 * The lecture will start at 6.30pm.
 
-{{ embed_topic("../../admin/index-tee3201.mbdf#lectures-info", "Admin " + icon_embedding + " Lectures", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#lectures-info", "Admin " + icon_embedding + " Lectures", "1", indent="2") }}
 
 
 #### {{ thumb(4) }} Submit weekly exercises

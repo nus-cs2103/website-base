@@ -14,15 +14,15 @@ This module leverages peer feedback/evaluations in many ways. In particular, we 
 </div>
 
 <div id="practicePeerEvaluations">
-<include src="peerEvaluations-practice.mbdf" />
+<include src="peerEvaluations-practice-fragment.md" />
 </div>
 
 <div id="midtermPeerEvaluations">
-<include src="peerEvaluations-midterm.mbdf" />
+<include src="peerEvaluations-midterm-fragment.md" />
 </div>
 
 <div id="finalPeerEvaluations">
-<include src="peerEvaluations-final.mbdf" />
+<include src="peerEvaluations-final-fragment.md" />
 </div>
 
 ### Session: `Responses to Peer Evaluations`

@@ -18,14 +18,14 @@
 
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-8`: Dates and Times**" var-fragment="text.md#Level-8" />
-<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JavaDoc`: JavaDoc**" var-fragment="extensions.mbdf#A-JavaDoc" />
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JavaDoc`: JavaDoc**" var-fragment="extensions-fragment.md#A-JavaDoc" />
 
 <box type="info" seamless>
 
 The `A-Gradle` project increment given below requires basic knowledge of git branching (covered in the previous week).
 </box>
 
-<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Gradle`: Gradle**" var-fragment="extensions.mbdf#A-Gradle" />
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Gradle`: Gradle**" var-fragment="extensions-fragment.md#A-Gradle" />
 
 <box type="tip" seamless>
 

@@ -2,25 +2,25 @@
 {% from "common/admin.njk" import faqs, policies, show_admin_summary, topics with context %}
 
 {% call show_admin_summary() %}
+1. Submit weekly quiz
 1. Submit weekly exercises
-1. Submit the quiz
-1. Submit weekly project increment `Level 4. Collect Tasks in Memory`
+1. Submit weekly project increment `Level 9. Use Classes`
 {% endcall %}
 
 
-#### {{ thumb(1) }} Submit weekly exercises
+#### {{ thumb(1) }} Submit weekly quiz
 
 * As usual
 
 
 #### {{ thumb(2) }} Submit weekly exercises
 
-* Submit the quiz
+* As usual
 
 
 #### {{ thumb(3) }} Submit weekly project increments
 
-<span id="week4-project">
+<span id="week8-project">
 
-<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 4. Collect Tasks in Memory**" var-fragment="monty.mbdf#monty4" />
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 9. Use Classes**" var-fragment="monty-fragment.md#monty9" />
 </span>

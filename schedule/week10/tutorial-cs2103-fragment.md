@@ -20,10 +20,10 @@
 * Evaluate the sample DG extracts in `T10-DG-Extracts.pdf` (in [LumiNUS/Files]({{ url_files }})/Handouts).
 * In particular, detect the following DG bugs (they are the same bugs against which your final DG will be evaluated).
 
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs-fragment.md#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs-fragment.md#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs-fragment.md#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="2", status="expanded", type="danger") }}
 
 * Also, lookout for places where these tips can be applied.
 
-{{ embed_topic("../../admin/tp-deliverables-dg.mbdf#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="2", status="expanded", type="success") }}
+{{ embed_topic("../../admin/tp-deliverables-dg-fragment.md#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="2", status="expanded", type="success") }}

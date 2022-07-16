@@ -12,7 +12,7 @@
 
 * See the panel below:
 
-{{ embed_topic("../../admin/index-tic2002.mbdf#git-info", "Admin " + icon_embedding + " Tools → Git, SourceTree", "week2Admin-git", "2") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#git-info", "Admin " + icon_embedding + " Tools → Git, SourceTree", "week2Admin-git", "2") }}
 
 {{ thumb(2) }} Submit weekly exercises
 

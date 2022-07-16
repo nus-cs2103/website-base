@@ -62,11 +62,11 @@
 <div class="indented">
 
 * -1 for each _professional conduct_ criterion in which you score below average (based on the average of ratings received).
-{{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-conduct", "Admin " + icon_embedding + " Peer Evaluations → Criteria (Conduct)", "3", indent=2) }}
+{{ embed_topic("peerEvaluations-midterm-fragment.md#teamMemberEvaluation-conduct", "Admin " + icon_embedding + " Peer Evaluations → Criteria (Conduct)", "3", indent=2) }}
 
 
 * No penalty for scoring low on _competency criteria_.
-{{ embed_topic("peerEvaluations-midterm.mbdf#teamMemberEvaluation-competency", "Admin " + icon_embedding + " Peer Evaluations → Criteria (Competency)", "3", indent=2) }}
+{{ embed_topic("peerEvaluations-midterm-fragment.md#teamMemberEvaluation-competency", "Admin " + icon_embedding + " Peer Evaluations → Criteria (Competency)", "3", indent=2) }}
 
 
 </div>

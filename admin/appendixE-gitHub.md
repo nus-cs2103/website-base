@@ -8,10 +8,10 @@
 
 <div id="githubAccount">
 
-Create a personal GitHub account if you don't have one yet. 
+Create a personal GitHub account if you don't have one yet.
 1. You are advised to choose a sensible GitHub username as you are likely to use it for years to come in professional contexts e.g., in job applications.
-2. Strongly recommended: Complete your GitHub profile. In particular,  
-   * Specify your full name. 
+2. Strongly recommended: Complete your GitHub profile. In particular,
+   * Specify your full name.
    * Upload a profile photo that matches <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.
 
    <panel type="seamless" header="%%Why am I being encouraged to complete my GitHub profile?%%" >
@@ -22,7 +22,7 @@ Create a personal GitHub account if you don't have one yet.
 3. ==You are discouraged from changing your GitHub username during the semester/exam/grading period== as it can cause our auto-grading scripts to miss your GitHub activities. If you do change your GitHub username during that period, please let us know immediately.
 
 <modal large header="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
-  <include src="tp-deliverables-website.mbdf#profile-photo"/>
+  <include src="tp-deliverables-website-fragment.md#profile-photo"/>
 </modal>
 
 </div>

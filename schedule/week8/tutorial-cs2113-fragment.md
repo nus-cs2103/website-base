@@ -4,7 +4,7 @@
 
 #### {{ thumb(1) }} Exercise: interpret a class diagram
 
-<include src="../../admin/common-tutorials.mbdf#interpret-person-class-diagram" />
+<include src="../../admin/common-tutorials-fragment.md#interpret-person-class-diagram" />
 
 
 #### {{ thumb(2) }} Exercise: draw an object diagram

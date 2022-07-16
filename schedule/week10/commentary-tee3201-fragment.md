@@ -16,7 +16,7 @@ After learning the UML syntax in the section above, you can try the worked examp
 After watching the above example, you can try this exercise. The answer will be given during the following lecture.
 
 <panel header="Exercise: Draw class/object diagrams for HouseManager code">
-<include src="exercise-houseManagerUmlDiagrams.mbdf" />
+<include src="exercise-houseManagerUmlDiagrams-fragment.md" />
 </panel>
 <p/>
 {% endcall %}

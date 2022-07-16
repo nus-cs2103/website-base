@@ -9,7 +9,7 @@
 
 <panel header="%%Admin {{ icon_embedding }} **tP → week 5 → Choose user stories for v1.0**%%" expanded >
 
-<include src="../../admin/tp-tasks.mbdf#desc_prioritize_user_stories" />
+<include src="../../admin/tp-tasks-fragment.md#desc_prioritize_user_stories" />
 </panel>
 </div>
 <p/>
@@ -22,7 +22,7 @@
 
 <panel header="%%Admin {{ icon_embedding }} **tP → week 6 → Conceptualize v1.0**%%" expanded >
 
-<include src="../../admin/tp-tasks.mbdf#desc_conceptualize_first_version" />
+<include src="../../admin/tp-tasks-fragment.md#desc_conceptualize_first_version" />
 </panel>
 </div>
 <p/>

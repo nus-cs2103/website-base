@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
-{% from "_module-" + module + "/studentData.mbdf" import team_review_allocation with context %}
+{% from "_module-" + module + "/studentData-fragment.md" import team_review_allocation with context %}
 
 #### {{ thumb(1) }} Exercise on Requirements: PR Tracker
 
@@ -32,10 +32,10 @@
 
 2. **Check a peer answer (provided by the tutor) for the bugs listed below** and discuss, as directed by the tutor.
 
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
-{{ embed_topic("../../admin/tp-grading-bugs.mbdf#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs-fragment.md#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs-fragment.md#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs-fragment.md#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/tp-grading-bugs-fragment.md#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
 
 
 #### {{ thumb(2) }} Refine your DG {{ timing_badge("after the tutorial", "secondary") }}

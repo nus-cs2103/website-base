@@ -4,7 +4,7 @@ title: "iP Showcase"
 
 # iP Showcase
 
-{% from "_module-" + module + "/studentData.mbdf" import students, tutorials with context %}
+{% from "_module-" + module + "/studentData-fragment.md" import students, tutorials with context %}
 
 {% set current_team = "" %}
 {% for tutorial in tutorials %}

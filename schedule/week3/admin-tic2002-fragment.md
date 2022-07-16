@@ -16,7 +16,7 @@
 
 * See the panel below:
 
-{{ embed_topic("../../admin/index-tic2002.mbdf#intellij-info", "Admin " + icon_embedding + " Tools → Intellij IDEA", "week2Admin-intellij", "2") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#intellij-info", "Admin " + icon_embedding + " Tools → Intellij IDEA", "week2Admin-intellij", "2") }}
 
 
 #### {{ thumb(2) }} Submit weekly exercises
@@ -29,7 +29,7 @@
 
 #### {{ thumb(0) }} Learn about the project
 
-{{ embed_topic("../../admin/index-tic2002.mbdf#project-info", "Admin " + icon_embedding + " Project", "week1Admin-java", "2") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#project-info", "Admin " + icon_embedding + " Project", "week1Admin-java", "2") }}
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**Overview**" var-fragment="text.md#intro" />
 </div>

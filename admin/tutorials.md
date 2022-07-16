@@ -20,7 +20,7 @@ Zoom links for tutorial sessions will be available in [LumiNUS/Weblinks](https:/
 
 </box>
 
-<include src="../_module-{{ module }}/timetables.mbdf#tutorials-s{{ S }}" optional />
+<include src="../_module-{{ module }}/timetables-fragment.md#tutorials-s{{ S }}" optional />
 
 </div>
 </panel>

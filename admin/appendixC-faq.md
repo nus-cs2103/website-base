@@ -9,13 +9,13 @@
 * [{{ faq.title }}](#{{ faq.id }}) {{show_stars(faq.priority) }}
 {% endfor %}
 
-{% for faq in faqs %} 
+{% for faq in faqs %}
 <div id="{{ faq.id }}">
 
 ### {{ faq.title }} <small><small>{{show_stars(faq.priority) }}</small></small>
 
 <div class="indented">
-<include src="faq.mbdf#{{ faq.id }}" />
+<include src="faq-fragment.md#{{ faq.id }}" />
 </div>
 
 </div>

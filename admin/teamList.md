@@ -1,4 +1,4 @@
-{% from "_module-" + module + "/studentData.mbdf" import students, tutorials, teams, products, users, values with context %}
+{% from "_module-" + module + "/studentData-fragment.md" import students, tutorials, teams, products, users, values with context %}
 
 <frontmatter>
 title: "tP Teams List"
