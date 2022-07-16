@@ -10,4 +10,4 @@
 </box>
 <p/>
 
-<include src="../../admin/common-notices.mbdf#try-tutorial-task-before" />
+<include src="../../admin/common-notices-fragment.md#try-tutorial-task-before" />

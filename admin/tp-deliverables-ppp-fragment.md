@@ -10,7 +10,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 * **Overview**: A short overview of your product to provide some context to the reader. The opening 1-2 sentences may be reused by all team members. If your product overview extends beyond 1-2 sentences, the remainder should be written by yourself.
 * **Summary of Contributions** --Suggested items to include:
   * **Code contributed**: Give a link to your code on [tP Code Dashboard]({{ url_tp_dashboard }}). The link is available in the [Project List Page]({{ url_team_list }}) -- linked to the %%:fas-code:%% icon under your profile picture.
-  * **Enhancements implemented:** A summary of the enhancements you implemented. 
+  * **Enhancements implemented:** A summary of the enhancements you implemented.
   * **Contributions to the UG:** Which sections did you contribute to the UG?
   * **Contributions to the DG:** Which sections did you contribute to the DG? Which UML diagrams did you add/updated?
   * **Contributions to <trigger trigger="click" for="modal:deliverablesPPP-teamTasks">team-based tasks </trigger>**
@@ -40,7 +40,7 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 
 <div class="indented-level2">
 
-<include src="tp-tasks.mbdf#tip-how-to-convert-to-pdf" />
+<include src="tp-tasks-fragment.md#tip-how-to-convert-to-pdf" />
 </div>
 
 #### <span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span>

@@ -51,7 +51,7 @@ These are considered _functionality bugs_:<br>
 <div id="ugBugs">
 
 **These are considered UG bugs (if they hinder the reader):**<br>
-<include src="tp-grading-bugs.mbdf#generalDocBugs" />
+<include src="tp-grading-bugs-fragment.md#generalDocBugs" />
 </div>
 
 <div id="dgBugs">
@@ -59,7 +59,7 @@ These are considered _functionality bugs_:<br>
 **These are considered DG bugs (if they hinder the reader):**
 
 <panel type="seamless" header="Those given as possible UG bugs ...">
-<include src="tp-grading-bugs.mbdf#ugBugs" />
+<include src="tp-grading-bugs-fragment.md#ugBugs" />
 </panel>
 
 <span tags="m--cs2103 m--tic4002" id="architectureDiagramBugs">

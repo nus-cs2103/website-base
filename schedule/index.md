@@ -5,10 +5,10 @@ pageNav: 1
 </frontmatter>
 
 {% import "common/topics.njk" as topics with context %}
-{% from "admin/admin-tasks.mbdf" import show_weekly_admin_tasks with context %}
+{% from "admin/admin-tasks-fragment.md" import show_weekly_admin_tasks with context %}
 {% from "common/macros.njk" import get_week_start_date with context %}
-{% from "_module-" + module + "/weeklyTextbookTopics.mbdf" import weekly_textbook_topics, weeks_with_no_topics with context %}
-{% from "_module-" + module + "/weeklyTpTasks.mbdf" import weekly_tp_themes with context %}
+{% from "_module-" + module + "/weeklyTextbookTopics-fragment.md" import weekly_textbook_topics, weeks_with_no_topics with context %}
+{% from "_module-" + module + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
 
 {#
 -1: site not ready, lands in the module intro page
@@ -102,7 +102,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="col-sm">
 
 <md>**{{ icon_todo }} Tasks Summary:**</md>
-<include src="admin-{{ module | lower }}.mbdf#summary" optional/>
+<include src="admin-{{ module | lower }}-fragment.md#summary" optional/>
 
   </div>
   </div>
@@ -118,7 +118,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="col-sm" style="border-right: 1px dotted lightgrey">
 
 #### <a href="topics-py.html" class="badge badge-light">:fas-code: Programming Topics</a>
-<include src="../programming-topics.mbdf#week{{ week_num  }}-toc" optional />
+<include src="../programming-topics-fragment.md#week{{ week_num  }}-toc" optional />
 
   </div>
   <div class="col-sm">
@@ -136,7 +136,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="col-sm">
 
 #### <a href="admin.html" class="badge badge-light mt-2">:fas-tasks: Tasks</a>
-<include src="admin-{{ module | lower }}.mbdf#summary" optional/>
+<include src="admin-{{ module | lower }}-fragment.md#summary" optional/>
   </div>
   </div>
 </div>
@@ -181,7 +181,7 @@ pageNav: {{ categories[category].pagenav }}
 <div class="website-content">
 {{ show_week_pagetop(week_num, "notices") }}
 
-<include src="notices-{{ module | lower }}.mbdf" optional />
+<include src="notices-{{ module | lower }}-fragment.md" optional />
 
 {{ show_week_summary(week_num) }}
 </div>
@@ -200,7 +200,7 @@ Admin info relevant to the week will appear in this tab.
 {% endif %}
 
 {% if module in ["TIC2002", "TEE3201"] %}
-<include src="admin-{{ module | lower }}.mbdf" optional />
+<include src="admin-{{ module | lower }}-fragment.md" optional />
 {% else %}
 {{ show_weekly_admin_tasks(week_num) }}
 {% endif %}
@@ -234,7 +234,7 @@ Topics allocated to the week will appear in this tab.
 Information relevant to the week's {{ "lecture" if tic4001 or tic4002 else "tutorial" }} will appear in this tab.
 </box>
 {% endif %}
-<include src="tutorial-{{ module | lower }}.mbdf" optional />
+<include src="tutorial-{{ module | lower }}-fragment.md" optional />
 </div>
 {% endmacro %}
 
@@ -302,7 +302,7 @@ Project-related information relevant to the week will appear in this tab.
 Programming topics allocated to the week will appear in this tab.
 </box>
 {% endif %}
-<include src="../programming-topics.mbdf#week{{ week_num }}" optional />
+<include src="../programming-topics-fragment.md#week{{ week_num }}" optional />
 </div>
 </div>
 {% endmacro %}

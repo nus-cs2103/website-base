@@ -26,7 +26,7 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 * Enable its issue tracker and add the following labels to it (the label names should be precisely as given).
 
 <include src="appendixE-gitHub.md#bug-severity" />
-<include src="tp-pe.mbdf#type-labels" />
+<include src="tp-pe-fragment.md#type-labels" />
 
 </panel><p/>
 </div>

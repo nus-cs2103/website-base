@@ -6,7 +6,7 @@
 
 #### {{ thumb(2) }} **Discuss tP progress**
 
-<include src="../../admin/common-tutorials.mbdf#share-project-direction" />
+<include src="../../admin/common-tutorials-fragment.md#share-project-direction" />
 
 #### {{ thumb(3) }} **Interpret class/object diagrams**
 

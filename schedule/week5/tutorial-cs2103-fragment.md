@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import embed_topic, show_as_rounded_tab, show_as_tab, thumb, timing_badge with context %}
-{% from "_module-" + module + "/studentData.mbdf" import ip_pr_slap_review_allocation as allocations with context %}
+{% from "_module-" + module + "/studentData-fragment.md" import ip_pr_slap_review_allocation as allocations with context %}
 
 #### {{ thumb(1) }} Discuss code quality problems of iP PRs
 
@@ -76,7 +76,7 @@
 
 * If you haven't done so already, prioritize tP user stories as explained in the panel below.
 
-{{ embed_topic("../../admin/tp-tasks.mbdf#desc_prioritize_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Choose user stories for " + version_first + "**", "2", indent="2") }}
+{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_prioritize_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Choose user stories for " + version_first + "**", "2", indent="2") }}
 
 
 #### {{ thumb(4) }} <span class="badge badge-secondary">time permitting</span> Create a _feature list_ for {{ version_first }}
@@ -87,6 +87,6 @@
 
 <panel header="%%Admin {{ icon_embedding }} **tP → week 6 → Conceptualize {{ version_first }}**%%" expanded >
 
-<include src="../../admin/tp-tasks.mbdf#desc_conceptualize_first_version" />
+<include src="../../admin/tp-tasks-fragment.md#desc_conceptualize_first_version" />
 </panel>
 </div>

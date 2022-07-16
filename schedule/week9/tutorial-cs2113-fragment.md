@@ -5,21 +5,21 @@
 
 <div class="indented-level2">
 
-{{ embed_topic("../../admin/tp-tasks.mbdf#desc_do_an_informal_demo", "Admin " + icon_embedding + " tP v1.0: Demo", "3") }}
+{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_do_an_informal_demo", "Admin " + icon_embedding + " tP v1.0: Demo", "3") }}
 </div>
 
 -->
 
 #### {{ thumb(1) }} Demo an assertion failure
 
-<include src="../../admin/common-tutorials.mbdf#demo-assertion-failure" />
+<include src="../../admin/common-tutorials-fragment.md#demo-assertion-failure" />
 
 
 #### {{ thumb(2) }} Exercise: interpret an intermediate level CD
 
-<include src="../../admin/common-tutorials.mbdf#interpret-module-cd" />
+<include src="../../admin/common-tutorials-fragment.md#interpret-module-cd" />
 
 
 #### {{ thumb(3) }} Exercise: draw an intermediate level CD
 
-<include src="../../admin/common-tutorials.mbdf#draw-stock-cd" />
+<include src="../../admin/common-tutorials-fragment.md#draw-stock-cd" />

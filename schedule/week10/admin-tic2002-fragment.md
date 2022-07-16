@@ -44,12 +44,12 @@ digit | option 1                             | option 2                         
 
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-9`: Find**" var-fragment="text.md#Level-9" />
-<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-CodingStandard`: Coding Standard**" var-fragment="extensions.mbdf#A-CodingStandard" />
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-CodingStandard`: Coding Standard**" var-fragment="extensions-fragment.md#A-CodingStandard" />
 <div class="indented-level4">
 
 ↳ The coding standard to follow is given [here]({{ url_java_coding_standard }}) -- also given under the `Links` menu at the top of the module website.
 </div>
-<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-CodeQuality`: Increase Code Quality**" var-fragment="extensions.mbdf#A-CodeQuality" />
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-CodeQuality`: Increase Code Quality**" var-fragment="extensions-fragment.md#A-CodeQuality" />
 <div class="indented-level4">
 
 ↳ The code quality guidelines to follow are given [here](../../se-book-adapted/chapters/codeQuality.html).

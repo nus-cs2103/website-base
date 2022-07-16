@@ -150,7 +150,7 @@ Choose the incorrect statement.
 
 <panel header="Identity check info" minimized>
 
-<include src="tp-pe.mbdf#identity-check-info" />
+<include src="tp-pe-fragment.md#identity-check-info" />
 </panel>
 
 </div>

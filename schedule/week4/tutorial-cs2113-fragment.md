@@ -2,7 +2,7 @@
 
 #### {{ thumb(1) }} **Discuss tP progress**
 
-<include src="../../admin/common-tutorials.mbdf#share-project-direction" />
+<include src="../../admin/common-tutorials-fragment.md#share-project-direction" />
 
 #### {{ thumb(2) }} **Review Peer iP PRs** {{ icon_graded }}
 
@@ -22,4 +22,4 @@
   * Provide at least 4-5 review comments
   * Do {{ step(4) }} only after the tutorial is over.
 
-{{ embed_topic("../../admin/ip-tasks.mbdf#desc_review_two_prs", "Admin " + icon_embedding + " iP → **Getting gready for PR reviews**", "3", indent="2") }}
+{{ embed_topic("../../admin/ip-tasks-fragment.md#desc_review_two_prs", "Admin " + icon_embedding + " iP → **Getting gready for PR reviews**", "3", indent="2") }}

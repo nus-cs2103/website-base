@@ -8,7 +8,7 @@
 Quoting from tP instructions:
 <blockquote>
 
-<include src="../../admin/tp-tasks.mbdf#desc_add_junit_tests" />
+<include src="../../admin/tp-tasks-fragment.md#desc_add_junit_tests" />
 </blockquote>
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

@@ -22,7 +22,7 @@
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Preparation</span>
 
-<include src="tp-testing.mbdf#testingPreparations" var-pe_active_tab="0"/>
+<include src="tp-testing-fragment.md#testingPreparations" var-pe_active_tab="0"/>
 
 #### <span class="badge badge-primary">PE-D</span> <span class="text-primary">During the session</span>
 
@@ -129,9 +129,9 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 * You may report functionality bugs, UG bugs, and feature flaws.
 <div class="indented-level2">
 
-{{ embed_topic("tp-grading-bugs.mbdf#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
-{{ embed_topic("tp-grading-bugs.mbdf#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3") }}
-{{ embed_topic("tp-grading-bugs.mbdf#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
 </div><p/>
 
 * You can also post suggestions on how to improve the product.<br>
@@ -142,14 +142,14 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 
 * Report functionality bugs:
 
-{{ embed_topic("tp-grading-bugs.mbdf#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3", indent="2") }}
 
 
 * Do not post suggestions but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions or/and lacking in a convincing justification as to why the omission of that functionality is problematic.
-{{ embed_topic("tp-grading-bugs.mbdf#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3", indent="2") }}
 
 * You may also report UG bugs.
-{{ embed_topic("tp-grading-bugs.mbdf#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
 
 
 </tab>
@@ -173,7 +173,7 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 <tab header="Not using CATcher">
 <div class="indented-less">
 
-<include src="tp-testing.mbdf#not-using-catcher-warning" />
+<include src="tp-testing-fragment.md#not-using-catcher-warning" />
 
 <markdown>
 * Post bug reports in the following repo you created earlier:
@@ -210,7 +210,7 @@ To make your case even stronger, state in the bug report why you think the bug m
 
 * Assign exactly one `type.*` label to the issue.
 <div class="indented-level2">
-<include src="tp-pe.mbdf#type-labels" />
+<include src="tp-pe-fragment.md#type-labels" />
 </div>
 
 

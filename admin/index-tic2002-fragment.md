@@ -50,7 +50,7 @@ e.g., **Instead of traditional instructor-led tutorials**, the module provides q
     </div>
     <div class="col">
 
-<include src="instructor-damith.mbdf" />
+<include src="instructor-damith-fragment.md" />
     </div>
   </div>
 </div>
@@ -146,7 +146,7 @@ Weekly project increments are given in the panels below:
 <div class="indented">
 {% for i in range(3, 14) %}
 <panel header="**Week {{ i }}**">
-<include src="../schedule/week{{ i }}/admin-tic2002.mbdf#project" />
+<include src="../schedule/week{{ i }}/admin-tic2002-fragment.md#project" />
 </panel>
 {% endfor %}
 </div>

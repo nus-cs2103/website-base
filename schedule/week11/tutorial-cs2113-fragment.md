@@ -18,4 +18,4 @@ You may release a newer version to be used for the PE dry run, but make sure it 
 
 #### {{ thumb(1) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
 
-<include src="../../admin/common-tutorials.mbdf#review_others_dg" />
+<include src="../../admin/common-tutorials-fragment.md#review_others_dg" />

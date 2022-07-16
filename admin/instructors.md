@@ -12,7 +12,7 @@
     </div>
     <div class="col">
 
-<include src="instructor-damith.mbdf" />
+<include src="instructor-damith-fragment.md" />
     </div>
   </div>
   <div class="row pt-4 border-top border-bottom">

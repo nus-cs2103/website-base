@@ -22,7 +22,7 @@
   * As such, we have put in measures to identify and ==penalize insincere/random evaluations==.
   * Also see:
 
-{{ embed_topic("tp-grading-bugs.mbdf#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "3", indent="4") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "3", indent="4") }}
 
 </div>
 
@@ -33,7 +33,7 @@
 
 <panel type="primary" header="PE-D Preparation" minimized>
 
-<include src="tp-testing.mbdf#testingPreparations" var-pe_active_tab="1"/>
+<include src="tp-testing-fragment.md#testingPreparations" var-pe_active_tab="1"/>
 </panel>
 </div>
 <p/>
@@ -42,7 +42,7 @@
 <div class="indented-level2">
 <panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" minimized>
 
-<include src="tp-pe-bug-triaging-guidelines.mbdf"/>
+<include src="tp-pe-bug-triaging-guidelines-fragment.md"/>
 </panel>
 </div>
 <p/>
@@ -106,7 +106,7 @@ Take away: Aim for the _correct_ severity/type etc. rather than the one that giv
 
 **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
 
-<include src="tp-ped.mbdf#tp-pe-testing-instructions" var-pe_active_tab="1"/>
+<include src="tp-ped-fragment.md#tp-pe-testing-instructions" var-pe_active_tab="1"/>
 
 =={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
 * Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase
@@ -136,8 +136,8 @@ When the invigilator announces an identity check,
 * **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.<br>
   Do not report bugs that are not contained within in the UG and DG pdf files (e.g., bugs in the `README.md`).
 
-{{ embed_topic("tp-grading-bugs.mbdf#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
-{{ embed_topic("tp-grading-bugs.mbdf#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
 <p/>
 
 * **You may visit the team's project on GitHub during this portion**, for the purpose of verifying the accuracy of documentation %%e.g., to check if a diagram matches the code%%. You are also allowed to download and open the team's code in a code editor.
@@ -359,7 +359,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 <div class="indented-level2" id="additionalGuidelinesForBugTriaging">
 
 <panel type="info" header="##### Guidelines for bug triaging" expanded>
-<include src="tp-pe-bug-triaging-guidelines.mbdf" />
+<include src="tp-pe-bug-triaging-guidelines-fragment.md" />
 </panel>
 <p/>
 </div>
@@ -389,7 +389,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 * You can also refer to the below guidelines:
 
-{{ embed_topic("tp-grading-bugs.mbdf#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
+{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
 
@@ -421,9 +421,9 @@ However, ==if the dev team's argument is not too far from 'reasonable', **it may
 * **If you would like to revise your own initial type/severity** in response to the team's inputs, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).
 * You can also refer to the below guidelines:
 
-{{ embed_topic("tp-pe.mbdf#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", 2, indent=2) }}
+{{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", 2, indent=2) }}
 
-{{ embed_topic("tp-grading-bugs.mbdf#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
+{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
 
 
 * If you do not respond to a dev response, we'll assume that you agree with it.
@@ -446,7 +446,7 @@ However, ==if the dev team's argument is not too far from 'reasonable', **it may
 
 <div class="indented-less">
 
-<include src="tp-pe.mbdf#warning-use-catcher" />
+<include src="tp-pe-fragment.md#warning-use-catcher" />
 </div>
 </tab>
 </tabs>

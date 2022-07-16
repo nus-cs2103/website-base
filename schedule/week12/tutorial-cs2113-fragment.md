@@ -19,4 +19,4 @@ Attempt this question by yourself. The model answer will be released later.
 
 #### {{ thumb(1) }} Exercise: test case design
 
-<include src="../../admin/common-tutorials.mbdf#design-test-cases-isvalidday" />
+<include src="../../admin/common-tutorials-fragment.md#design-test-cases-isvalidday" />

@@ -1,1 +1,1 @@
-<include src="notices-cs2103.mbdf" />
+<include src="notices-cs2103-fragment.md" />

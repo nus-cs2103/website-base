@@ -9,9 +9,9 @@
 
 #### {{ thumb(2) }} Exercise: draw an object diagram
 
-<include src="../../admin/common-tutorials.mbdf#draw-person-guardian-object-diagram" />
+<include src="../../admin/common-tutorials-fragment.md#draw-person-guardian-object-diagram" />
 
 
 #### {{ thumb(3) }} Exercise: draw a class diagram
 
-<include src="../../admin/common-tutorials.mbdf#draw-box-etc-class-diagram" />
+<include src="../../admin/common-tutorials-fragment.md#draw-box-etc-class-diagram" />

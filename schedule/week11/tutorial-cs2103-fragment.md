@@ -6,7 +6,7 @@
 
 %%The tutor to confirm the following has been done.%%
 
-{{ embed_topic("../../admin/tp-tasks.mbdf#desc_demo_penultimate_version", "Admin " + icon_embedding + " tP v1.3: Demo", "3") }}
+{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_demo_penultimate_version", "Admin " + icon_embedding + " tP v1.3: Demo", "3") }}
 </div>
 <p/>
 

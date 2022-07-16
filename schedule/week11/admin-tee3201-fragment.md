@@ -18,7 +18,7 @@
 * **Option 1:** Add the following project increment.<br>
   {{ icon_info }} This is option is the harder of the two options; it's meant for students who wish to push harder in the project or who wish to learn GUI programming in particular.
 
-<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 14. Add a GUI**" tag="optional" var-fragment="monty.mbdf#monty14" />
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 14. Add a GUI**" tag="optional" var-fragment="monty-fragment.md#monty14" />
 <p/>
 
 * **Option 2: Add the allocated individual feature.**

@@ -22,6 +22,6 @@
 
 <span id="week5-project">
 
-<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 5. Mark Tasks as Done**" var-fragment="monty.mbdf#monty5" />
-<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 6. Give Help**" var-tag="optional" var-fragment="monty.mbdf#monty6" />
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 5. Mark Tasks as Done**" var-fragment="monty-fragment.md#monty5" />
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 6. Give Help**" var-tag="optional" var-fragment="monty-fragment.md#monty6" />
 </span>

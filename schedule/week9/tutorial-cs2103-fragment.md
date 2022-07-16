@@ -6,13 +6,13 @@
 
 %%The tutor to confirm the following has been done.%%
 
-{{ embed_topic("../../admin/tp-tasks.mbdf#desc_do_an_informal_demo", "Admin " + icon_embedding + " tP v1.2: Demo", "3") }}
+{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_do_an_informal_demo", "Admin " + icon_embedding + " tP v1.2: Demo", "3") }}
 </div>
 <p/>
 
 #### {{ thumb(1) }} Demo measuring code _coverage_
 
-<include src="../../admin/common-tutorials.mbdf#demo-test-coverage" />
+<include src="../../admin/common-tutorials-fragment.md#demo-test-coverage" />
 
 #### {{ thumb(2) }} Exercise: OODMs
 

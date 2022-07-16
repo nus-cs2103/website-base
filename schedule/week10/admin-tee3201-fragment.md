@@ -24,6 +24,6 @@
 
 <span id="week10-project">
 
-<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 12. Use Inheritance**" var-fragment="monty.mbdf#monty12" />
-<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 13. Add Unit Tests**" var-fragment="monty.mbdf#monty13" />
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 12. Use Inheritance**" var-fragment="monty-fragment.md#monty12" />
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 13. Add Unit Tests**" var-fragment="monty-fragment.md#monty13" />
 </span>

@@ -150,7 +150,7 @@ Now that you know how to write the simplest of Java programs, you can move onto 
 
 At the end of the next section, there is an exercise (_[Key Exercise] ByeWorld_) that you need to submit on Coursemology. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on Coursemology.
 
-{{ embed_topic("index-tic2002.mbdf#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "3") }}
+{{ embed_topic("index-tic2002-fragment.md#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "3") }}
 <p/>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

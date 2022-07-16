@@ -6,5 +6,5 @@
 * **In this {{  show_as_tab("Summary") }} tab** you can find a summary of the week and announcements relevant to that week.<br>Click on the [{{ show_as_tab("Topics", icon_book) }}](topics.html) and the [{{ show_as_tab("Tasks", icon_todo) }}](admin.html) tabs (shown at the top of this page) to see more details of each category.
 </box>
 
-{{ embed_topic("../../admin/index-tic2002.mbdf#deadlines-info", "Admin " + icon_embedding + " Policies → **Deadlines, Plagiarism**", "dummy", status="expanded") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#deadlines-info", "Admin " + icon_embedding + " Policies → **Deadlines, Plagiarism**", "dummy", status="expanded") }}
 <p/>

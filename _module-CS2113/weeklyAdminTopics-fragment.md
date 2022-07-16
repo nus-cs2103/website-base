@@ -1,4 +1,4 @@
-{% from "_module-" + module + "/weeklyTpTasks.mbdf" import weekly_tp_themes with context %}
+{% from "_module-" + module + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
 
 {% set admin_topics = [
   {level: 1, id: "moduleOverview", title: module_pair + ": " + module_name, link: "moduleOverview.html", alt: "Module Overview"},

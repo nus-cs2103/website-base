@@ -24,7 +24,7 @@
 
 * If you haven't done so already, do the following tP task.
 
-{{ embed_topic("tp-tasks.mbdf#desc_set_up_meeting_time", "Admin " + icon_embedding + " **tP → Set up a meeting time**", "2", indent="2") }}
+{{ embed_topic("tp-tasks-fragment.md#desc_set_up_meeting_time", "Admin " + icon_embedding + " **tP → Set up a meeting time**", "2", indent="2") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="exercise-coding-standard-violations">
@@ -56,7 +56,7 @@
 {% macro get_pr_link(username) -%}[{{ username }}]({{ url_module_org }}/{{ ip_repo_name }}/pulls/{{ username }}){%- endmacro %}
 <div id="show-ip-peer-review-allocation-1">
 <panel header="**iP PR review allocation** (click to expand)" minimized >
-{% from "_module-" + module + "/studentData.mbdf" import ip_pr_review_allocation with context %}
+{% from "_module-" + module + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
 Tutorial | Reviewer | First PR to review | Backup PR to review
 ---------|----------|--------------------|---------------------{% for line in ip_pr_review_allocation  %}
 {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | {{ get_pr_link(line[3]) }}{% endfor %}
@@ -87,7 +87,7 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 </div>
 <div id="show-ip-peer-review-allocation-2">
 <panel header="**iP PR review allocation** (click to expand)" minimized >
-{% from "_module-" + module + "/studentData.mbdf" import ip_pr_review_allocation with context %}
+{% from "_module-" + module + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
 Tutorial | Reviewer | Second PR to review | Backup PR to review
 ---------|----------|---------------------|---------------------{% for line in ip_pr_review_allocation  %}
 {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | {{ get_pr_link(line[5]) }}{% endfor %}
@@ -250,7 +250,7 @@ Note the following:
 <!--* Split into sub-teams of 2-3 persons and draw the following exercise on the white board. -->
 <div class="indented-level2">
 
-<include src="common-tutorials.mbdf#hand-drawing-diagrams" />
+<include src="common-tutorials-fragment.md#hand-drawing-diagrams" />
 </div>
 
 * **Do the following exercise** while noting the info in the box above.
@@ -425,7 +425,7 @@ class PersonList{
 Do the following tP task.
 </box>
 
-<include src="tp-tasks.mbdf#desc_review_others_dg" />
+<include src="tp-tasks-fragment.md#desc_review_others_dg" />
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="design-test-cases-isvalidday">
@@ -452,5 +452,5 @@ No tutorial this week. **Take a break** and prepare for the last burst of tP act
 This tutorial is used for tP project demos. Demo instructions are repeated below for your easy reference.
 </box>
 
-<include src="tp-tasks.mbdf#demo-instructions" />
+<include src="tp-tasks-fragment.md#demo-instructions" />
 </div>

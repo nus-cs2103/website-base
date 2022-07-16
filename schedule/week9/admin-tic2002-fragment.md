@@ -32,7 +32,7 @@ The `A-Gradle` project increment given below requires basic knowledge of git bra
 The `A-JUnit` project increment given below can be done using Gradle or without using Gradle. It's easier if you choose to do it using Gradle.
 </box>
 
-<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JUnit`: JUnit Testing**" var-fragment="extensions.mbdf#A-JUnit" />
+<include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JUnit`: JUnit Testing**" var-fragment="extensions-fragment.md#A-JUnit" />
 
 </div>
 <p/>

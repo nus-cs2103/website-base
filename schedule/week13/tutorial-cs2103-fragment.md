@@ -1,1 +1,1 @@
-<include src="../../admin/common-tutorials.mbdf#no-tutorial-take-a-break" />
+<include src="../../admin/common-tutorials-fragment.md#no-tutorial-take-a-break" />

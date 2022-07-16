@@ -32,9 +32,9 @@
 
 * As you learn the weekly topics, submit Week 1 programming exercise on Coursemology. See the panel below for more info. More instructions about this will be provided during the lecture.
 
-{{ embed_topic("../../admin/index-tee3201.mbdf#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "1", indent="2") }}
-{{ embed_topic("../../admin/index-tee3201.mbdf#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "1", indent="2") }}
-{{ embed_topic("../../admin/index-tee3201.mbdf#help-info", "Admin " + icon_embedding + " Getting Help", "2", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#help-info", "Admin " + icon_embedding + " Getting Help", "2", indent="2") }}
 
 
 #### {{ thumb(5) }} Submit weekly project increments
@@ -47,17 +47,17 @@
 
 * Learn about the project:
 
-{{ embed_topic("../../admin/index-tee3201.mbdf#project-info", "Admin " + icon_embedding + " Project", "1", indent="2") }}
-<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Monty - Overview**" var-fragment="monty.mbdf#intro" />
+{{ embed_topic("../../admin/index-tee3201-fragment.md#project-info", "Admin " + icon_embedding + " Project", "1", indent="2") }}
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Monty - Overview**" var-fragment="monty-fragment.md#intro" />
 <p/>
 
 * Note how the project can affect participation marks:
-{{ embed_topic("../../admin/index-tee3201.mbdf#assessment-info", "Admin " + icon_embedding + " Assessment", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#assessment-info", "Admin " + icon_embedding + " Assessment", "1", indent="2") }}
 
 <span id="week1-project">
 
 * Use the exercise `Week1 - Project Submission` on Coursemology (under the `Python exercises` section) to do this week's project task given below.
 
-<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 1. Echo Once**" var-fragment="monty.mbdf#monty1" />
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 1. Echo Once**" var-fragment="monty-fragment.md#monty1" />
 </span>
 

@@ -3,7 +3,7 @@
 <box seamless type="success" icon=":fab-github:" add-class="lead" icon-size="2x">
 
 **This activity teaches you how to merge parallel git branches**,
-1. first, in your local repo (using git commands), 
+1. first, in your local repo (using git commands),
 1. and then, in a remote repo (using GitHub PRs).
 
 </box>
@@ -197,13 +197,13 @@ So far so good. Next, let's learn how to merge PRs when there are merge conflict
   1. Go to the PR again and note the warning about the conflict does not appear any more.
 
 <modal large header="Step 6.b (for reference)" id="modal:w6activity-6.b">
-  <include src="activity.mbdf#6b"/>
+  <include src="activity-fragment.md#6b"/>
 </modal>
 
 * {{ step(14) }} **Merge the `vendor-ravi` PR** as you merged the previous PR in {{ step('11', step_style='secondary') }}.
 
 <panel header="Step 11 (for reference)" add-class="d-block ml-5" minimized>
-<include src="activity.mbdf#11" />
+<include src="activity-fragment.md#11" />
 </panel>
 <p/>
 

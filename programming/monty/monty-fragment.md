@@ -1286,5 +1286,5 @@ GUI(TaskManager()).start()
 </panel>
 </div>
 
-<include src="extensions.mbdf" />
+<include src="extensions-fragment.md" />
 </div>

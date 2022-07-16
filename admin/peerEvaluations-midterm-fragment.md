@@ -6,7 +6,7 @@
 
 <box>
 
-##### **Important questions included in the evaluation:** 
+##### **Important questions included in the evaluation:**
 
 {{ icon_info }} Some of these questions (e.g., contribution to DG) are omitted from the midterm peer evaluation but are in the final peer evaluation (they are given here for your reference)
 
@@ -31,19 +31,19 @@
 <div id="teamMemberEvaluation-dg">
 
 {{ icon_green_Q }} **The team members' contribution to the Developer Guide is,**
-<include src="peerEvaluations-midterm.mbdf#equalShareScale" />
+<include src="peerEvaluations-midterm-fragment.md#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-teamTasks">
 
 {{ icon_green_Q }} **The team members' contribution to the team-based tasks is,**
-<include src="peerEvaluations-midterm.mbdf#equalShareScale" />
+<include src="peerEvaluations-midterm-fragment.md#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-implementation">
 
 {{ icon_green_Q }} **The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,**
-<include src="peerEvaluations-midterm.mbdf#equalShareScale" />
+<include src="peerEvaluations-midterm-fragment.md#equalShareScale" />
 </div>
 <p/>
 <div id="teamMemberEvaluation-conduct">

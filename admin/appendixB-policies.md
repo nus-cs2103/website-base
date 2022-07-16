@@ -9,13 +9,13 @@
 * [{{ policy.title }}](#{{ policy.id }}) {{show_stars(policy.priority) }}
 {% endfor %}
 
-{% for policy in policies %} 
+{% for policy in policies %}
 <div id="{{ policy.id }}">
 
 ### {{ policy.title }} <small><small>{{show_stars(policy.priority) }}</small></small>
 
 <div class="indented">
-<include src="policies.mbdf#{{ policy.id }}" />
+<include src="policies-fragment.md#{{ policy.id }}" />
 </div>
 
 </div>

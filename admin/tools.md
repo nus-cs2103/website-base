@@ -22,7 +22,7 @@ Install Zoom in your computer. Installation and login instructions are [here](ht
 
 ## Tool: GitHub (for code hosting)
 
-You are ==_required to_ use GitHub== as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). 
+You are ==_required to_ use GitHub== as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.).
 
 <box>
 
@@ -145,7 +145,7 @@ Use other IDEs at your own risk.
 
 ## Tool: RepoSense (for authorship tracking)
 
-<include src="tools-reposense.mbdf" />
+<include src="tools-reposense-fragment.md" />
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="teammates">
 

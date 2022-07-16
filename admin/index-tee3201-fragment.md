@@ -139,7 +139,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 {% for i in range(1, 14) %}
 
 #### <span class="badge badge-dark">Week {{ i }}:</span>
-<include src="../schedule/week{{ i }}/admin-tee3201.mbdf#week{{ i }}-project" />
+<include src="../schedule/week{{ i }}/admin-tee3201-fragment.md#week{{ i }}-project" />
 <hr>
 {%-endfor %}
 </panel>
@@ -181,7 +181,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 ### Deadlines
 * Deadline for weekly tasks:
   * **If a specific deadline is given**, adhere to that.
-  * **If no specific deadline is given**, 
+  * **If no specific deadline is given**,
     * Soft deadline: try to complete tasks allocated to a week before the following lecture.
     * Hard deadline: In case you fail to meet the soft deadline, there will be no penalty if a task is done within one week after the soft deadline.
 </span>
@@ -226,7 +226,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
    If the question is not relevant to the rest of the class, prof/TA will contact you privately (via MS Teams) for follow up.
 2. **Email `tee3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
 3. **Send a private message** to the prof (search for `Damith Chatura Rajapakse`) or to the TA (search for `Chan Weizhong`) via MS Teams.
-4. Email the prof at <include src="index-{{ module | lower }}.mbdf#prof-email" inline trim/> or the TA at <include src="index-{{ module | lower }}.mbdf#ta-email" inline trim/>
+4. Email the prof at <include src="index-{{ module | lower }}-fragment.md#prof-email" inline trim/> or the TA at <include src="index-{{ module | lower }}-fragment.md#ta-email" inline trim/>
 5. You may also post in the [LumiNUS forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
 
 </span>
@@ -241,10 +241,10 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
   * 10%: Documentation
   * 20%: Functionality, code
 * **60%: Final Exam**
- 
+
 
 <modal large header="The Policy on Deadlines" id="modal:adminInfo-deadlineInfo">
-  <include src="index-{{ module | lower }}.mbdf#deadlines-info"/>
+  <include src="index-{{ module | lower }}-fragment.md#deadlines-info"/>
 </modal>
 
 </span>

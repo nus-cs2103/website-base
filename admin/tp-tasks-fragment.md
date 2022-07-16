@@ -1,8 +1,8 @@
 {% from "common/admin.njk" import show_admin_page with context %}
 {% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, thumb, timing_badge with context %}
-{% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
-{% from "_module-" + module + "/weeklyTpTasks.mbdf" import weekly_tp_tasks  with context %}
-{% from "_module-" + module + "/studentData.mbdf" import tp_dg_review_allocation with context %}
+{% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
+{% from "_module-" + module + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
+{% from "_module-" + module + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
 
@@ -108,7 +108,7 @@ Also note that given there's a feature freeze in {{ version_final }}, some lower
 
 **Reminders:**
 
-<include src="tp-tasks.mbdf#prReviewsMatter" />
+<include src="tp-tasks-fragment.md#prReviewsMatter" />
 
 
 {{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3") }}
@@ -187,12 +187,12 @@ If you surpass the above bars (in your own estimation), you should be in a good 
 
 <box>
 
-<include src="tp-tasks.mbdf#prReviewsMatter" />
+<include src="tp-tasks-fragment.md#prReviewsMatter" />
 </box>
 </div>
 {#====================================================================================================================#}
 <div id="cs2113-week8-intro">
-<include src="tp-tasks.mbdf#common-mistakes" />
+<include src="tp-tasks-fragment.md#common-mistakes" />
 </div>
 {#====================================================================================================================#}
 <div id="cs2113-week10-intro">
@@ -490,7 +490,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 
 </box>
 
-<include src="tp-tasks.mbdf#common-mistakes" />
+<include src="tp-tasks-fragment.md#common-mistakes" />
 
 Update the following pages in your project repo:
 </div>
@@ -505,7 +505,7 @@ Update the following pages in your project repo:
   * Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities %%(as explained in Admin {{ icon_embedding }} Project Scope)%%</trigger> later in the project, if necessary.
 
 <modal large header="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:mid-v12-photo">
-<include src="tp-deliverables-website.mbdf#profile-photo"/>
+<include src="tp-deliverables-website-fragment.md#profile-photo"/>
 </modal>
 
 <modal large header="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
@@ -537,7 +537,7 @@ Update the following pages in your project repo:
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
-  <include src="tp-tasks.mbdf#divideDocs"/>
+  <include src="tp-tasks-fragment.md#divideDocs"/>
 </modal>
 </div>
 {#====================================================================================================================#}
@@ -563,7 +563,7 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 
 <div tags="m--tic4001" class="indented-level2">
 
-<include src="tp-tasks.mbdf#divideDocs" />
+<include src="tp-tasks-fragment.md#divideDocs" />
 </div>
 
 * **Add the following to the DG**, based on your project notes from the previous weeks.<br>
@@ -581,10 +581,10 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 
 <panel header="Admin {{ icon_embedding }} Tp Grading → Examples of DG Bugs (extract)" minimized>
 
-<include src="tp-grading-bugs.mbdf#userStoryBugs" />
-<include src="tp-grading-bugs.mbdf#useCaseBugs" />
-<include src="tp-grading-bugs.mbdf#nfrBugs" />
-<include src="tp-grading-bugs.mbdf#glossaryBugs" />
+<include src="tp-grading-bugs-fragment.md#userStoryBugs" />
+<include src="tp-grading-bugs-fragment.md#useCaseBugs" />
+<include src="tp-grading-bugs-fragment.md#nfrBugs" />
+<include src="tp-grading-bugs-fragment.md#glossaryBugs" />
 </panel>
 </box>
 
@@ -836,17 +836,17 @@ The version you deliver in this iteration (i.e., {{ version_penultimate }}) will
 Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks {% if cs2103 %} (<span class="text-danger">you will not be allowed to fix feature flaws while a feature-freeze is in force</span>).{% endif %} The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
 
 <panel header="Admin {{ icon_embedding }} tP → **Grading → Product Design** (excerpt) → Feature Flaws" minimized>
-<include src="tp-grading-bugs.mbdf#featureFlaws" />
+<include src="tp-grading-bugs-fragment.md#featureFlaws" />
 </panel>
 <p/>
 <panel header="Admin {{ icon_embedding }} Practical Exam → **Guidelines for determining bugs in the final version (excerpts)**" minimized>
 
 ...
 
-<include src="tp-pe-bug-triaging-guidelines.mbdf#how-to-prove-out-of-scope" />
+<include src="tp-pe-bug-triaging-guidelines-fragment.md#how-to-prove-out-of-scope" />
 
 ...
-<include src="tp-pe-bug-triaging-guidelines.mbdf#triaging-feature-flaws" />
+<include src="tp-pe-bug-triaging-guidelines-fragment.md#triaging-feature-flaws" />
 </panel>
 <p/>
 {% if cs2103 %}
@@ -854,7 +854,7 @@ The panel below gives some details on the feature-freeze that will be imposed in
 
 <panel header="Admin {{ icon_embedding }} tP → **{{ version_final }} (extract) → More details on the feature freeze**" minimized>
 
-<include src="tp-tasks.mbdf#feature-freeze-details" />
+<include src="tp-tasks-fragment.md#feature-freeze-details" />
 </panel>
 {% endif %}
 </box>
@@ -901,7 +901,7 @@ While we are on the topic, also note that the architecture of AB3 doesn't suite 
 {#====================================================================================================================#}
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
 <div id="desc_update_dg_with_design_details">
-<include src="tp-tasks.mbdf#alert-time-sensitive" />
+<include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
 <div class="indented-level2" tags="m--cs2103 m--tic4002">
 
@@ -933,7 +933,7 @@ Here are some reasons:
 </div>
 <div id="dgTips">
 
-<include src="tp-deliverables-dg.mbdf#dgTips" />
+<include src="tp-deliverables-dg-fragment.md#dgTips" />
 </div>
 </panel>
 <p/>
@@ -942,7 +942,7 @@ Here are some reasons:
 {#====================================================================================================================#}
 <span id="heading_do_a_release">{{ icon_team }} Do a trial JAR release</span>
 <div id="desc_do_a_release">
-<include src="tp-tasks.mbdf#alert-time-sensitive" />
+<include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `{{ version_first }}.1` (or `{{ version_penultimate }}.trial`). ==Ensure that the jar file works as expected in an empty folder and using Java 11==, by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 * {{ icon_tip }} If you want to smoke-test your JAR file on an OS that is not available within your team, you can post a request in the forum to see if anyone else in the class can help you smoke-test it on that OS.
@@ -1019,7 +1019,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 {#====================================================================================================================#}
 <span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>
 <div id="desc_update_user_docs">
-<include src="tp-tasks.mbdf#alert-time-sensitive" />
+<include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
 * {{ icon_important_big_red }} Update the {{ version_penultimate }} user guide to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
   * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
@@ -1030,7 +1030,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 * **Landing page (`docs/index.md`)**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.
 
 <modal large header="Admin → Project Deliverables → Website" id="modal:v13-tipsForProductScreenshot">
-  <include src="tp-deliverables-website.mbdf#tips-for-product-screenshot"/>
+  <include src="tp-deliverables-website-fragment.md#tips-for-product-screenshot"/>
 </modal>
 </div>
 
@@ -1165,11 +1165,11 @@ Your GitHub  | First choice | Second choice | Third choice
 ##### <span class="text-success">DG - Possible Bugs</span>
 {{ icon_important_big_red }} Pay attention to these as they are same as the final evaluation criteria of the DG.<br>
 
-{{ embed_topic("tp-grading-bugs.mbdf#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
-{{ embed_topic("tp-grading-bugs.mbdf#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
 
 Also see:
-{{ embed_topic("tp-deliverables-dg.mbdf#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="1", status="expanded", type="success") }}
+{{ embed_topic("tp-deliverables-dg-fragment.md#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="1", status="expanded", type="success") }}
 
 </box>
 
@@ -1195,13 +1195,13 @@ Also see:
 
 1. **Triage the bugs you received in the PE-D**, by following the procedure given below:
 
-{{ embed_topic("tp-ped.mbdf#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="2") }}
+{{ embed_topic("tp-ped-fragment.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="2") }}
 
 {% if not cs2103 %}
 2. **Freeze features**. As mentioned earlier, you are strongly discouraged from adding/updating features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.{% else %}
 2. **Note what is allowed in this milestone**:
 
-<include src="tp-tasks.mbdf#feature-freeze-details" />{% endif %}
+<include src="tp-tasks-fragment.md#feature-freeze-details" />{% endif %}
 
 3. **Start fixing bugs** that you selected to fix in this iteration. Don't rely on PE-D alone to find bugs. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.
 
@@ -1228,9 +1228,9 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 <div id="desc_tweak_product_as_per_PED">
 
 * **Do more extensive testing yourselves**. The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
-  {{ embed_topic("tp-pe-bug-triaging-guidelines.mbdf", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="2") }}
+  {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="2") }}
 * **Update documentation** to match the product. In particular, finalize the content of the DG early and check it thoroughly for bugs (reason: unlike the UG, the DG did not get tested in the PE dry run).
-  {{ embed_topic("tp-grading-bugs.mbdf#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
+  {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 
 {{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="2") }}
@@ -1244,7 +1244,7 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 {#====================================================================================================================#}
 <span id="heading_draft_the_ppp">{{ icon_individual }} Draft the PPP</span>
 <div id="desc_draft_the_ppp">
-<include src="tp-tasks.mbdf#alert-time-sensitive" />
+<include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
 * {% if cs2103 %}**Fill up the skeletal _Project Portfolio Page (PPP)_** you created earlier with a draft version of content.{% else %}**Create the first version of your _Project Portfolio Page (PPP)_**.<br>
   Reason: ==Each member needs to create a PPP== to describe your contribution to the project.{% endif %}
@@ -1286,7 +1286,7 @@ Not applicable this semester
 
 * {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct.
 
-{{ embed_topic("tp-tasks.mbdf#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + version_final + " → Making the Code RepoSense-Compatible", "1", indent="2") }}
+{{ embed_topic("tp-tasks-fragment.md#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + version_final + " → Making the Code RepoSense-Compatible", "1", indent="2") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_try_pdf_conversion_early">{{ icon_team }} Try PDF conversions early</span>
@@ -1298,7 +1298,7 @@ Not applicable this semester
 
 * Take note of the following info about the PDF conversion, appearing in next week's project tasks. Particularly, note the suggestion to try PDF conversions early.
 
-{{ embed_topic("tp-tasks.mbdf#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → Caution on PDF conversions", "3", indent="2") }}
+{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → Caution on PDF conversions", "3", indent="2") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_do_final_tweaks">{{ icon_individual }} Do final polish-ups</span>
@@ -1443,12 +1443,12 @@ Not applicable this semester
 
 <panel type="primary" header="Admin → tP → **PE Overview**" minimized>
 
-<include src="tp-pe.mbdf#pe-overview" />
+<include src="tp-pe-fragment.md#pe-overview" />
 </panel>
 <p/>
 <panel type="primary" header="Admin → tP → **PE-D/PE Preparation**" minimized>
 
-<include src="tp-testing.mbdf#testingPreparations" var-pe_active_tab="1"/>
+<include src="tp-testing-fragment.md#testingPreparations" var-pe_active_tab="1"/>
 </panel>
 </div>
 </div>
@@ -1470,7 +1470,7 @@ Not applicable this semester
 {#====================================================================================================================#}
 
 {% macro show_tp_page(week_num) %}
-{{ show_xp_page(week_num, weekly_tp_tasks['week' + week_num], 'tp-tasks.mbdf') }}
+{{ show_xp_page(week_num, weekly_tp_tasks['week' + week_num], 'tp-tasks-fragment.md') }}
 {% endmacro %}
 {#====================================================================================================================#}
 

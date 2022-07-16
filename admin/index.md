@@ -1,6 +1,6 @@
 {% if module in ["TIC2002", "TEE3201"] %}
 
-<include src="index-{{ module | lower }}.mbdf" />
+<include src="index-{{ module | lower }}-fragment.md" />
 
 {% else %}
   {% from "common/admin.njk" import show_admin_page with context %}

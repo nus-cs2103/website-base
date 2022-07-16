@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "_module-" + module + "/weeklyTpTasks.mbdf" import weekly_tp_themes with context %}
+{% from "_module-" + module + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
 
 {% call show_admin_page("tp-timeline") %}
 <div id="main">

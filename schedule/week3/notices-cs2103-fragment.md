@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import embed_topic, get_date, show_as_tab, timing_badge with context %}
 
-<include src="../../admin/common-notices.mbdf#tutorial-start" />
+<include src="../../admin/common-notices-fragment.md#tutorial-start" />
 
 <box type="info" header="**In-video quizzes can earn you bonus participation points!**" dismissible >
 

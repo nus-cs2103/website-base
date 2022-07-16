@@ -1,8 +1,8 @@
 {% from "common/admin.njk" import faqs, policies, show_admin_summary, topics with context %}
 {% from "common/macros.njk" import embed_topic, get_date, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
-{% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
-{% from "_module-" + module + "/weeklyAdminTopics.mbdf" import weekly_admin_topics with context %}
-{% from "_module-" + module + "/weeklyAdminTasks.mbdf" import weekly_admin_tasks with context %}
+{% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
+{% from "_module-" + module + "/weeklyAdminTopics-fragment.md" import weekly_admin_topics with context %}
+{% from "_module-" + module + "/weeklyAdminTasks-fragment.md" import weekly_admin_tasks with context %}
 
 <span id="teammates-link-recovery-tip">{{ icon_tip }} If you did not receive the submission link, you can get TEAMMATES to resend the link by going to [TEAMMATES link recovery page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery)
   and entering your NUSNET email address. Remember to check your spam folder as well.</span>
@@ -139,7 +139,7 @@ The info in the following panels differs from TIC4001.
 <div id="desc_practice_peer_evaluations_on_TEAMMATES">
 
 * You should receive the submission link by Monday noon.<br>
-  <include src="admin-tasks.mbdf#teammates-link-recovery-tip" inline />
+  <include src="admin-tasks-fragment.md#teammates-link-recovery-tip" inline />
 
 {{ embed_topic("peerEvaluations.md#intro", "Admin " + icon_embedding + " Peer Evaluations → Introduction", "3", indent="2") }}
 {{ embed_topic("peerEvaluations.md#practicePeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Practice Peer Evaluation", "1", indent="2", status="expanded") }}
@@ -156,7 +156,7 @@ The info in the following panels differs from TIC4001.
 <div id="desc_submit_midterm_peer_evaluations">
 
 * **Peer Evaluation Round 1** will open on TEAMMATES. You will receive the submission link soon.<br>
-  <include src="admin-tasks.mbdf#teammates-link-recovery-tip" inline />
+  <include src="admin-tasks-fragment.md#teammates-link-recovery-tip" inline />
 
 {{ embed_topic("peerEvaluations.md#midtermPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation", "1", indent="2", status="expanded") }}
 </div>
@@ -165,7 +165,7 @@ The info in the following panels differs from TIC4001.
 <div id="desc_submit_final_peer_evaluations">
 
 * Submission will open on the day after the final submission ({{ date_final_submission | date(format_normal, 1)}}).<br>
-  <include src="admin-tasks.mbdf#teammates-link-recovery-tip" inline />
+  <include src="admin-tasks-fragment.md#teammates-link-recovery-tip" inline />
 
 {{ embed_topic("peerEvaluations.md#finalPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Final Peer Evaluation", "1", indent="2", status="expanded") }}
 </div>
@@ -194,7 +194,7 @@ The info in the following panels differs from TIC4001.
 {#====================================================================================================================#}
 
 {% macro show_weekly_admin_tasks(week_num) %}
-{{ show_xp_page(week_num, weekly_admin_tasks['week' + week_num], '../../admin/admin-tasks.mbdf') }}
+{{ show_xp_page(week_num, weekly_admin_tasks['week' + week_num], '../../admin/admin-tasks-fragment.md') }}
 
 {% set admin_topics_to_show = weekly_admin_topics['week' + week_num] %}
 {% if (admin_topics_to_show | length) != 0 %}

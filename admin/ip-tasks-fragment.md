@@ -1,7 +1,7 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/topics.njk" import panopto with context %}
 {% from "common/macros.njk" import button, embed_topic, get_date, step, thumb, timing_badge with context %}
-{% from "_module-" + module + "/weeklyIpTasks.mbdf" import weekly_ip_tasks with context %}
+{% from "_module-" + module + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
  # Common text segments
@@ -52,9 +52,9 @@ Reminder: as per iP grading criteria, _some_ increments need to to be done in ea
  #====================================================================================================================#}
 <div id="cs2103-week2-intro">
 
-<include src="ip-tasks.mbdf#volatile-requirements" />
-<include src="ip-tasks.mbdf#no-jumping-ahead" />
-<include src="ip-tasks.mbdf#follow-instructions" />
+<include src="ip-tasks-fragment.md#volatile-requirements" />
+<include src="ip-tasks-fragment.md#no-jumping-ahead" />
+<include src="ip-tasks-fragment.md#follow-instructions" />
 
 <box dismissible>
 
@@ -79,9 +79,9 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
  #====================================================================================================================#}
 <div id="cs2113-week2-intro">
 
-<include src="ip-tasks.mbdf#volatile-requirements" />
-<include src="ip-tasks.mbdf#no-jumping-ahead" />
-<include src="ip-tasks.mbdf#follow-instructions" />
+<include src="ip-tasks-fragment.md#volatile-requirements" />
+<include src="ip-tasks-fragment.md#no-jumping-ahead" />
+<include src="ip-tasks-fragment.md#follow-instructions" />
 
 <box dismissible>
 
@@ -127,13 +127,13 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 {#====================================================================================================================#}
 <div tags="m--cs2113 m--tic4001" id="extra_Level-0">
 
-<include src="ip-tasks.mbdf#commit" />
+<include src="ip-tasks-fragment.md#commit" />
 </div>
 <div id="extra_Level-1">
 
-<include src="ip-tasks.mbdf#order" />
-{% if cs2103 %}<include src="ip-tasks.mbdf#commit" />{% endif %}
-<include src="ip-tasks.mbdf#tag-push" />
+<include src="ip-tasks-fragment.md#order" />
+{% if cs2103 %}<include src="ip-tasks-fragment.md#commit" />{% endif %}
+<include src="ip-tasks-fragment.md#tag-push" />
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project in your computer</span>
@@ -316,7 +316,7 @@ Resources:
 <div id="extra_A-Assertions">
 <div tags="m--cs2103">
 
-<include src="ip-tasks.mbdf#as-parallel-prs" />
+<include src="ip-tasks-fragment.md#as-parallel-prs" />
 </div>
 </div>
 <div id="extra_A-MoreOOP">
@@ -359,11 +359,11 @@ One of the increments below asks you to push the design more towards the OOP app
 <include src="dukeFragment.md" boilerplate var-header="**`Level7`: Save**" var-fragment="text.md#Level-7" />
 <include src="dukeFragment.md" boilerplate var-header="**`Level9`: Find**" var-fragment="text.md#Level-9" />
 <br>
-<include src="dukeFragment.md" boilerplate var-header="**`A-AbstractClasses`: Use Abstract Classes**" var-fragment="extensions.mbdf#A-AbstractClasses" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-MoreOOP`: Use more OOP**" var-fragment="extensions.mbdf#A-MoreOOP" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-Packages`: Use Packages**" var-fragment="extensions.mbdf#A-Packages" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-JavaDoc`: Add JavaDoc comments**" var-fragment="extensions.mbdf#A-JavaDoc" />
-<include src="dukeFragment.md" boilerplate var-header="**`A-JUnit`: Add JUnit Tests**" var-fragment="extensions.mbdf#A-JUnit" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-AbstractClasses`: Use Abstract Classes**" var-fragment="extensions-fragment.md#A-AbstractClasses" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-MoreOOP`: Use more OOP**" var-fragment="extensions-fragment.md#A-MoreOOP" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-Packages`: Use Packages**" var-fragment="extensions-fragment.md#A-Packages" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-JavaDoc`: Add JavaDoc comments**" var-fragment="extensions-fragment.md#A-JavaDoc" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-JUnit`: Add JUnit Tests**" var-fragment="extensions-fragment.md#A-JUnit" />
 
 </div>
 {#====================================================================================================================#}
@@ -478,7 +478,7 @@ This task is worth `2x2=4` participation points.
 
 <div class="indented-level4">
 
-<include src="common-tutorials.mbdf#show-ip-peer-review-allocation-1" />
+<include src="common-tutorials-fragment.md#show-ip-peer-review-allocation-1" />
 </div>
 
 * {{ step(3) }} **Do the second PR review** as follows.
@@ -487,7 +487,7 @@ This task is worth `2x2=4` participation points.
 
 <div class="indented-level4">
 
-<include src="common-tutorials.mbdf#show-ip-peer-review-allocation-2" />
+<include src="common-tutorials-fragment.md#show-ip-peer-review-allocation-2" />
 </div>
 
 * {{ step(4) }} **[When you receive reviews for your own PR] Respond to comments received**. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in [these guidelines](https://se-education.org/guides/guidelines/PRs-reviewing.html), do not get into arguments with PR reviewers/authors.
@@ -608,14 +608,14 @@ This activity is worth `2x2=4` participation points.
   * ==The file should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
   * Ideally, the product name is visible in the screenshot e.g., in the title bar of the Window
 
-{{ embed_topic("tp-deliverables-website.mbdf#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
+{{ embed_topic("tp-deliverables-website-fragment.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
 </div>
 
 * **Add a brief User Guide (UG)**
 
 <div class="indented">
 
-<include src="dukeFragment.md" boilerplate var-header="**`A-UserGuide`: User Guide**" var-fragment="extensions.mbdf#A-UserGuide" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-UserGuide`: User Guide**" var-fragment="extensions-fragment.md#A-UserGuide" />
 </div>
 <p/>
 
@@ -646,7 +646,7 @@ This activity is worth `2x2=4` participation points.
 
 <div class="indented">
 
-<include src="dukeFragment.md" boilerplate var-header="**`A-Release`: Release**" var-fragment="extensions.mbdf#A-Release" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-Release`: Release**" var-fragment="extensions-fragment.md#A-Release" />
 </div>
 <p/>
 </div>
@@ -698,7 +698,7 @@ See the [Standards/conventions page](standardsAndConventions.md) for more info.
 Implementing the following increment (optional) can be help with the above.
 </div>
 
-<include src="dukeFragment.md" boilerplate var-header="**`A-CheckStyle`: Use CheckStyle**" var-fragment="extensions.mbdf#A-CheckStyle" />
+<include src="dukeFragment.md" boilerplate var-header="**`A-CheckStyle`: Use CheckStyle**" var-fragment="extensions-fragment.md#A-CheckStyle" />
 
 </div>
 {#====================================================================================================================#}
@@ -722,8 +722,8 @@ Implementing the following increment (optional) can be help with the above.
     * Optional to include an architecture diagram
   * Update the **README** page to make it a landing page for your iP website (similar to the TIC4001 tP website).
 
-<include src="ip-tasks.mbdf#ip-ui-png"/>
-<include src="ip-tasks.mbdf#ip-ui-png-test"/>
+<include src="ip-tasks-fragment.md#ip-ui-png"/>
+<include src="ip-tasks-fragment.md#ip-ui-png-test"/>
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_next_week_tasks">Start next week's tasks</span>
@@ -763,7 +763,7 @@ Implementing the following increment (optional) can be help with the above.
 <include src="{{ tasks_file }}#extra_{{ step.increments[0].id }}" optional />
   {% endif %}
   {% for i in step.increments %}
-    {% set file = 'text.md' if i.id[0] == 'L' else 'extensions.mbdf' %}
+    {% set file = 'text.md' if i.id[0] == 'L' else 'extensions-fragment.md' %}
     {% set tag = ('var-tag=' + i.tag) if i.tag else '' %}
 <include src="{{ tasks_file }}#pre_{{ i.id }}" optional />
 <include src="dukeFragment.md" boilerplate var-header="**`{{ i.id }}`: {{ i.title }}**" {{ tag }} var-fragment="{{ file }}#{{ i.id }}" />
@@ -811,7 +811,7 @@ Implementing the following increment (optional) can be help with the above.
 {#====================================================================================================================#}
 
 {% macro show_ip_page(week_num) %}
-{{ show_xp_page(week_num, weekly_ip_tasks['week' + week_num], 'ip-tasks.mbdf') }}
+{{ show_xp_page(week_num, weekly_ip_tasks['week' + week_num], 'ip-tasks-fragment.md') }}
 {% endmacro %}
 {#====================================================================================================================#}
 
