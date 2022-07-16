@@ -62,14 +62,14 @@ pageNav: {{ categories[category].pagenav }}
 <ul class="pagination mt-2">
 {%- set previous_status = " disabled" if week_num == 1 else "" -%}
 {%- set next_status = " disabled" if week_num == 13 else "" -%}
-<li class="page-item{{ previous_status }}"><a class="page-link" href="../week{{ 1 if week_num == 1 else (week_num - 1) }}/"><md>:glyphicon-chevron-left: **Prev. Week**</md></a></li>
+<li class="page-item{{ previous_status }}"><a class="page-link" href="../week{{ 1 if week_num == 1 else (week_num - 1) }}/index.html"><md>:glyphicon-chevron-left: **Prev. Week**</md></a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
 {% for c,v in categories %}
   {%- set is_active = " active" if categories[category] == v else "" -%}
   <li class="page-item{{ is_active }}"><a class="page-link" href="{{v.file}}.html"><md>{{ v.icon }}</md> {{v.name}}</a></li>
 </li>
 {% endfor %}
-<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item{{ next_status }}"><a class="page-link" href="../week{{ 13 if week_num == 13 else (week_num + 1) }}/"><md>**Next Week** :glyphicon-chevron-right:</md></a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item{{ next_status }}"><a class="page-link" href="../week{{ 13 if week_num == 13 else (week_num + 1) }}/index.html"><md>**Next Week** :glyphicon-chevron-right:</md></a></li>
 </ul>
 </nav>
 
@@ -117,13 +117,13 @@ pageNav: {{ categories[category].pagenav }}
   <div class="row">
   <div class="col-sm" style="border-right: 1px dotted lightgrey">
 
-#### <a href="topics-py.html" class="badge badge-light">:fas-code: Programming Topics</a>
+#### <a href="topics-py.html" class="badge bg-light text-dark">:fas-code: Programming Topics</a>
 <include src="../programming-topics-fragment.md#week{{ week_num  }}-toc" optional />
 
   </div>
   <div class="col-sm">
 
-#### <a href="topics.html" class="badge badge-light">{{ icon_book }} SE Topics</a>
+#### <a href="topics.html" class="badge bg-light text-dark">{{ icon_book }} SE Topics</a>
 {{ topics.show_week_schedule_main(week_num, weekly_textbook_topics, "", is_toc=true, is_flat=true) }}
 
 <panel type="seamless" header="%%Full ToC%%">
@@ -135,7 +135,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="row" style="border-top: 1px dotted lightgrey">
   <div class="col-sm">
 
-#### <a href="admin.html" class="badge badge-light mt-2">:fas-tasks: Tasks</a>
+#### <a href="admin.html" class="badge bg-light text-dark mt-2">:fas-tasks: Tasks</a>
 <include src="admin-{{ module | lower }}-fragment.md#summary" optional/>
   </div>
   </div>

@@ -27,12 +27,12 @@ pageNav: 4
 
 
 {% macro show_previous(topic)-%}
-<span class="float-left algolia-no-index"><a class="badge badge-light" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>:far-arrow-alt-circle-left: {{ topic.alt if topic.alt else topic.title }}</md></a></span>
+<span class="float-start algolia-no-index"><a class="badge bg-light text-dark" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>:far-arrow-alt-circle-left: {{ topic.alt if topic.alt else topic.title }}</md></a></span>
 {%- endmacro %}
 
 
 {% macro show_next(topic)-%}
-<span class="float-right algolia-no-index"><a class="badge badge-light" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>{{ topic.alt if topic.alt else topic.title }} :far-arrow-alt-circle-right:</md></a></span>
+<span class="float-end algolia-no-index"><a class="badge bg-light text-dark" href="{{ baseUrl }}/admin/{{ topic.link }}"><md>{{ topic.alt if topic.alt else topic.title }} :far-arrow-alt-circle-right:</md></a></span>
 {%- endmacro %}
 
 
@@ -109,7 +109,7 @@ pageNav: 4
 {% for topic in topics %}
 {% if topic.id == current_topic_id %}
 {% set hashes = "#" %}
-{{ hashes }} <span class="display-4">{{ topic.title }}</span> <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) if topic.priority }} {% for tag in topic.tags %}<span class="badge rounded-pill bg-light ">#{{ tag }}</span> {% endfor %}</span>
+{{ hashes }} <span class="display-4">{{ topic.title }}</span> <span style="font-size:15px" class="text-muted text-light">{{ show_stars(topic.priority) if topic.priority }} {% for tag in topic.tags %}<span class="badge rounded-pill bg-light text-dark ">#{{ tag }}</span> {% endfor %}</span>
 {% endif %}
 {% endfor %}
 {%- endmacro %}

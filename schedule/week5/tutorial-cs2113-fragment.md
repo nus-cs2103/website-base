@@ -14,7 +14,7 @@
 </div>
 <p/>
 
-#### {{ thumb(2) }} <span class="badge badge-secondary">time permitting</span> Create a _feature list_ for v1.0
+#### {{ thumb(2) }} <span class="badge bg-secondary">time permitting</span> Create a _feature list_ for v1.0
 
 * If there is time left, do the following tP task that is scheduled for the following week.
 

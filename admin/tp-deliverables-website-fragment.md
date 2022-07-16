@@ -1,12 +1,12 @@
 When setting up your team repo, you would be configuring **the GitHub Pages feature to publish your documentation** as a website.
 
-#### <span class="badge badge-info">Website</span> <span class="text-info">Home page</span>
+#### <span class="badge bg-info">Website</span> <span class="text-info">Home page</span>
 
 * Update to match your product.
 
 <div tags="m--cs2103 m--cs2113 m--tic4002">
 
-#### <span class="badge badge-info">Website</span> <span class="text-info">`Ui.png`</span>
+#### <span class="badge bg-info">Website</span> <span class="text-info">`Ui.png`</span>
 
 <div tags="m--cs2103 m--tic4002">
 
@@ -79,7 +79,7 @@ Reason: screenshot not cropped cleanly (contains extra background details)
 
 </div>
 
-#### <span class="badge badge-info">Website</span> <span class="text-info">AboutUs Page</span>
+#### <span class="badge bg-info">Website</span> <span class="text-info">AboutUs Page</span>
 
 <div tags="m--cs2113 m--tic4001">
 
@@ -99,10 +99,10 @@ If you are uncomfortable posting your photo due to security reasons, you can pos
 * **Include a link to each person's PPP page.**
 * **Team member names match full names used by LumiNUS.**
 
-#### <span class="badge badge-info">Website</span> <span class="text-info">UG (Web Page)</span>
+#### <span class="badge bg-info">Website</span> <span class="text-info">UG (Web Page)</span>
 
 * Should match the submitted PDF file.
 
-#### <span class="badge badge-info">Website</span> <span class="text-info">DG (Web Page)</span>
+#### <span class="badge bg-info">Website</span> <span class="text-info">DG (Web Page)</span>
 
 * Should match the submitted PDF file.

@@ -138,7 +138,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 <panel header="### Weekly Project Increments">
 {% for i in range(1, 14) %}
 
-#### <span class="badge badge-dark">Week {{ i }}:</span>
+#### <span class="badge bg-dark">Week {{ i }}:</span>
 <include src="../schedule/week{{ i }}/admin-tee3201-fragment.md#week{{ i }}-project" />
 <hr>
 {%-endfor %}

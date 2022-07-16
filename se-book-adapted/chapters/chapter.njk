@@ -10,9 +10,9 @@ pageNav: 4
 {% set title =  "#### " + topic.heading %}
 <panel type="seamless" header="{{ title }}" expanded>
   <div class="indented">
-  <span class="badge badge-light">
+  <span class="badge bg-light text-dark">
   <md>%%{{ show_priority(topic.priority) |safe }}%%</md></span>
-  <span class="badge badge-light"><md>%%<include src="{{ level_location }}/text.md#outcomes" inline />%%</md></span><p/>
+  <span class="badge bg-light text-dark"><md>%%<include src="{{ level_location }}/text.md#outcomes" inline />%%</md></span><p/>
   <include src="{{ level_location }}/text.md#body" />
   <include src="{{ level_location }}/text.md#extras" />
   </div>

@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import embed_topic with context %}
 
-#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span>
+#### <span class="badge bg-primary">PE-D</span> <span class="text-primary">Overview</span>
 
 **What**: The latest release of the {{ version_penultimate }} period is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
@@ -20,11 +20,11 @@
 * **To train you** to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.
 * **To help you improve your product** before the final submission.
 
-#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">Preparation</span>
+#### <span class="badge bg-primary">PE-D</span> <span class="text-primary">Preparation</span>
 
 <include src="tp-testing-fragment.md#testingPreparations" var-pe_active_tab="0"/>
 
-#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">During the session</span>
+#### <span class="badge bg-primary">PE-D</span> <span class="text-primary">During the session</span>
 
 **Use ==the [CATcher Web app](https://catcher-org.github.io/CATcher/)==** for reporting bugs. More instructions will be given during the PE-D %%e.g., which session to use%%.
 
@@ -226,7 +226,7 @@ Reason: CATcher and GitHub strips out content wrapped in `<` and `>`, for securi
 
 <span id="after-ped">
 
-#### <span class="badge badge-primary">PE-D</span> <span class="text-primary">After the session</span>
+#### <span class="badge bg-primary">PE-D</span> <span class="text-primary">After the session</span>
 * **The relevant bug reports will be transferred to your issue tracker** within a day after the session is over. Once you have received the bug reports for your product, you can decide whether you will act on reported issues before the final submission {{ version_final }}. For some issues, the correct decision could be to reject or postpone to a version beyond {{ version_final }}.<br>
   Reminder: There is no penalty for any of the bugs you received in the PE-D.
 

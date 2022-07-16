@@ -5,7 +5,7 @@
 
 {% macro panopto(id, desc="", questions="")%}
 <panel type="seamless">
-  <div slot="header"><span class="badge rounded-pill bg-danger"><big>{{ icon_video }} Video</big></span>{% if questions %} <span class="badge rounded-pill bg-warning"><big>Q+</big></span>{% endif %}<md> {{ desc }}</md></div>
+  <div slot="header"><span class="badge rounded-pill bg-danger"><big>{{ icon_video }} Video</big></span>{% if questions %} <span class="badge rounded-pill bg-warning text-dark"><big>Q+</big></span>{% endif %}<md> {{ desc }}</md></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id={{ id }}&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 684px; height: 513px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 </panel>
 <p/>

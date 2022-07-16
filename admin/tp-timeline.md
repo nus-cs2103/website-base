@@ -43,7 +43,7 @@ then [{{ g.iter3 }}] lasts {{ "14" if tic4001 or tic4002 else "7" }} days
 </puml>
 {% endmacro %}
 
-{% macro badge(text) %}<span class="badge badge-dark">{{ text }}</span>{% endmacro %}
+{% macro badge(text) %}<span class="badge bg-dark">{{ text }}</span>{% endmacro %}
 
 The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 

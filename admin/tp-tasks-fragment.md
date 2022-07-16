@@ -1108,11 +1108,11 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 {%- endmacro %}
 
 {% macro get_pr_link(team_id) -%}
-<a href="https://github.com/nus-{{ module | lower}}-{{ semester }}/{{ tp_repo_name }}/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge badge-primary">PR</a>
+<a href="https://github.com/nus-{{ module | lower}}-{{ semester }}/{{ tp_repo_name }}/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge bg-primary">PR</a>
 {%- endmacro  %}
 
 {% macro get_dg_link(team_id) -%}
-<a href="https://{{ semester }}-{{ team_id | lower}}.github.io/{{ tp_repo_name }}/DeveloperGuide.html" class="badge badge-primary">DG</a>
+<a href="https://{{ semester }}-{{ team_id | lower}}.github.io/{{ tp_repo_name }}/DeveloperGuide.html" class="badge bg-primary">DG</a>
 {%- endmacro  %}
 
 {% macro get_links(team_id) -%}
@@ -1132,14 +1132,14 @@ Your GitHub  | First choice | Second choice | Third choice
 </div>
 
 * **Decide which of the given team(s) to review**:
-  * Open the <span class="badge badge-primary">DG</span> link of the team allocated as 'First choice'.
+  * Open the <span class="badge bg-primary">DG</span> link of the team allocated as 'First choice'.
   * Confirm that the DG has significant updates, to the diagrams in particular. If it doesn't, you can try the DG of the 'Second choice' team, and failing that, 'Third choice' team.
   * If neither _one_ of the three has enough updates but collectively they have enough updates, you can also review all of them.
   * Failing all above, you can pick any other team(s) to review.
   * Try to give at least 4 comments in total.
   * If the PR already has reviews, you can give your own input of the existing review comments too.
 
-* **Go to the <span class="badge badge-primary">PR</span>** of the team(s) you have chosen to review.
+* **Go to the <span class="badge bg-primary">PR</span>** of the team(s) you have chosen to review.
 * **Review the `Design` and the `Implementation` sections w.r.t possible DG bugs** (given further down); add your observations as comments.<br>
 
 <div class="indented-level2">

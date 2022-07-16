@@ -14,7 +14,7 @@ See the sections below for details of how we assess each aspect.
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-productDesign">
 
-#### <div class="bg-warning p-1">1. Project Grading: Product Design %%[{{ icon_team if module == "TIC4001" else icon_individual }} {{ marks_tp_design }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">1. Project Grading: Product Design %%[{{ icon_team if module == "TIC4001" else icon_individual }} {{ marks_tp_design }} marks]%%</div>
 
 **Evaluates:**
 * how well your features _fit together_ to form a cohesive product<br>
@@ -50,7 +50,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">2. Project Grading: Implementation %%[{{ icon_individual }} {{ marks_tp_implementation }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">2. Project Grading: Implementation %%[{{ icon_individual }} {{ marks_tp_implementation }} marks]%%</div>
 
 **<big>2A. Code quality</big>**
 
@@ -119,7 +119,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">3. Project Grading: QA %%[{{ icon_both if module == "TIC4001" else icon_individual }} {{ marks_tp_qa }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">3. Project Grading: QA %%[{{ icon_both if module == "TIC4001" else icon_individual }} {{ marks_tp_qa }} marks]%%</div>
 
 <div tags="m--cs2113 m--cs2103 m--tic4002">
 
@@ -161,7 +161,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-documentation">
 
-#### <div class="bg-warning p-1">4. Project Grading: Documentation %%[{{ icon_both if tic4001 else icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">4. Project Grading: Documentation %%[{{ icon_both if tic4001 else icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
 
 <div tags="m--cs2113 m--cs2103 m--tic4002">
 
@@ -201,7 +201,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 </div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning p-1">5. Project Grading: Project Management %%[{{ icon_team }} {{ marks_tp_pm_team }} + {{ icon_individual }} {{ marks_tp_pm_individual }} = {{ marks_tp_pm }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">5. Project Grading: Project Management %%[{{ icon_team }} {{ marks_tp_pm_team }} + {{ icon_individual }} {{ marks_tp_pm_individual }} = {{ marks_tp_pm }} marks]%%</div>
 
 <div id="project-management-grading">
 

@@ -1,11 +1,11 @@
 {% from "common/macros.njk" import get_week_start_date with context %}
 <header sticky>
 {% if current_week == "-1" %}
-<div class="w-100 p-1 bg-warning text-center d-print-none"><md>**This is a draft version of the website! The final version will be available near the start of the semester.**</md></div >
+<div class="w-100 p-1 bg-warning text-dark text-center d-print-none"><md>**This is a draft version of the website! The final version will be available near the start of the semester.**</md></div >
 {% endif %}{% if current_week in ["-1", "0", "1"] %}
 <div tags="m--cs2103 m--cs2113 m--tee3201 m--tic2002" class="w-100 p-1 bg-success text-center text-white d-print-none"><md>This module will be delivered in _blended learning_ mode (i.e., a mix of online and F2F activities) this semester.</md></div>
 {% elseif current_week == "15" %}
-<div class="w-100 p-1 bg-warning text-center d-print-none"><md>**This site is from a past semester! The current version will be [here](http://www.comp.nus.edu.sg/~{{ module | lower }}) when the new semester starts.**</md></div>
+<div class="w-100 p-1 bg-warning text-dark text-center d-print-none"><md>**This site is from a past semester! The current version will be [here](http://www.comp.nus.edu.sg/~{{ module | lower }}) when the new semester starts.**</md></div>
 {% endif %}
 <navbar placement="top" type="dark">
 <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand"><span class="badge rounded-pill bg-{{ module_color }}">{{ module_pair }} <small>{{ period }}</small></span></a>

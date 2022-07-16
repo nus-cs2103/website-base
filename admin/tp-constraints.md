@@ -1,11 +1,11 @@
 {% from "common/macros.njk" import embed_topic with context %}
 
 {% macro show_constraint(constraint_id, recommendation=false) -%}
-{% set constraint_style = "info" if recommendation else "warning" %}
+{% set constraint_style = "info" if recommendation else "warning text-dark" %}
 {% set constraint_icon = ":far-thumbs-up:" if recommendation else ":fas-ban:" %}
 <div id="{{ constraint_id }}">
 
-#### <span class="badge badge-{{ constraint_style }} text-monospace">{{ constraint_icon }} {{ constraint_id }}</span>
+#### <span class="badge bg-{{ constraint_style }} text-monospace">{{ constraint_icon }} {{ constraint_id }}</span>
 <div class="indented-level2">
 
 {{ caller() }}
@@ -52,7 +52,7 @@ The data should be stored locally and should be in a human editable text file.<b
 
 {% call show_constraint("Constraint-No-DBMS") -%}
 Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data.<br/>
-%%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we 
+%%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we
 need to optimize it for {{ module_pair }}
 module learning outcomes; covering DBMS-related topics will have to be left to database modules or level 3 project modules.%%
 {%- endcall  %}
@@ -88,7 +88,7 @@ The use of third-party frameworks/libraries/services is allowed but only if they
   In case of services, requiring the user to create an account on a third-party service is strongly discouraged as it can result in your product for 'low testability'.
 * do not violate other constraints.
 
-and is subjected to prior approval by the teaching team.<br> 
+and is subjected to prior approval by the teaching team.<br>
 %%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the module.%%
 
 Please ==post in the [forum]({{url_module_org}}/forum/issues) your request to use a third-party libraries/services== _before_ you start using the library. Once a specific software has been approved for one team, other teams may use it without requesting permission again.<br/>

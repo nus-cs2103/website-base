@@ -207,12 +207,12 @@ In fact, here is the grading criterion for the individual project effort:
 
 <h2 class="text-white bg-success p-1">{{ icon_team }} Team Expectations</h2>
 
-* <span class="badge badge-success">Expectation</span> <span class="text-success">**Preserve _product integrity_**</span> i.e. ensure,
+* <span class="badge bg-success">Expectation</span> <span class="text-success">**Preserve _product integrity_**</span> i.e. ensure,
   1. features fit together to form a cohesive product,
   1. documentation follows a consistent style and presents a cohesive picture to the reader, and
   1. final project demo presents a cohesive picture to the audience.
-* <span class="badge badge-success">Expectation</span> <span class="text-success">**Maintain product quality**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--tic4002 m--cs2113">Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
-* <span class="badge badge-success">Expectation</span> <span class="text-success">**Manage the project**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
+* <span class="badge bg-success">Expectation</span> <span class="text-success">**Maintain product quality**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--tic4002 m--cs2113">Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
+* <span class="badge bg-success">Expectation</span> <span class="text-success">**Manage the project**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
 </span>
 
 </span>
@@ -222,9 +222,9 @@ In fact, here is the grading criterion for the individual project effort:
 
 <h2 class="text-white bg-info p-1">{{ icon_individual }} Individual Expectations</h2>
 
-#### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Implementation</span>
+#### <span class="badge bg-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Implementation</span>
 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Contribute to the functional code of the product.**</span>
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Contribute to the functional code of the product.**</span>
   * User-visible features are preferred, but it is not a strict requirement.:
   * **The enhancement(s) should fit with the rest of the software** (and the target user profile) and should have the consent of the team members. %%You will lose marks if you go 'rogue' and add things that don't fit with the product.%%
 
@@ -253,20 +253,20 @@ Some examples:
 </div>
 
 
-#### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Documentation</span>
+#### <span class="badge bg-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Documentation</span>
 
 * **Objective:** showcase your ability to write both _user-facing documentation_ and _developer-facing documentation_.
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added. The minimum requirement is given below. %%(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)%%
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added. The minimum requirement is given below. %%(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)%%
   * UG: {{ ug_pages_per_person }} or more pages
   * DG: {{ dg_pages_per_person }} or more pages
 * **Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements**, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Use at least {{ uml_diagrams_per_person }} UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Use at least {{ uml_diagrams_per_person }} UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.
 
-#### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Testing</span>
+#### <span class="badge bg-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Testing</span>
 
 <div id="testing-expectations">
 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Write _some_ automated tests**</span> so that we can evaluate your ability to write tests.
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Write _some_ automated tests**</span> so that we can evaluate your ability to write tests.
 
 <div class="indented-level2">
 
@@ -279,9 +279,9 @@ There is no requirement for a minimum test coverage level. Note that in a high-e
 
 </div>
 
-#### <span class="badge badge-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Teamwork</span>
+#### <span class="badge bg-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Teamwork</span>
 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Do an equal share of the _team-tasks_**.</span>
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Do an equal share of the _team-tasks_**.</span>
 
 <div id="team-tasks" class="indented-level2">
 
@@ -311,7 +311,7 @@ Here is a non-exhaustive list of team-tasks:
 </box>
 </div>
 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Carry an equal share of project roles and responsibilities**.</span>
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Carry an equal share of project roles and responsibilities**.</span>
 
 <div class="indented-level2">
 
@@ -348,7 +348,7 @@ This is a non-exhaustive list; you may define additional roles.
 </box>
 </div>
 
-* <span class="badge badge-info">Expectation</span> <span class="text-info">**Review each others work**.</span> %%Reason: reviewing skills is a learning outcome, and it is mutually beneficial.%%
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Review each others work**.</span> %%Reason: reviewing skills is a learning outcome, and it is mutually beneficial.%%
 
 </span>
 

@@ -1,11 +1,11 @@
 At the end of the project each student is required to submit a _Project Portfolio Page_.
 
-#### <span class="badge badge-info">PPP</span> <span class="text-info">Objectives</span>
+#### <span class="badge bg-info">PPP</span> <span class="text-info">Objectives</span>
 
 * For you to use %%(e.g. in your resume)%% as a well-documented data point of your SE experience
 * For evaluators to use as a data point for evaluating your project contributions
 
-#### <span class="badge badge-info">PPP</span> <span class="text-info">Sections to include</span>
+#### <span class="badge bg-info">PPP</span> <span class="text-info">Sections to include</span>
 
 * **Overview**: A short overview of your product to provide some context to the reader. The opening 1-2 sentences may be reused by all team members. If your product overview extends beyond 1-2 sentences, the remainder should be written by yourself.
 * **Summary of Contributions** --Suggested items to include:
@@ -33,7 +33,7 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 * **{{ optional }} Contributions to the Developer Guide (Extracts)**: Reproduce the parts in the Developer Guide that you wrote. Alternatively, you can show the various diagrams you contributed.
 * **{{ optional }} Contributions to the User Guide (Extracts)**: Reproduce the parts in the User Guide that you wrote.
 
-#### <span class="badge badge-info">PPP</span> <span class="text-info">Format</span>
+#### <span class="badge bg-info">PPP</span> <span class="text-info">Format</span>
 
 * File name (i.e., in the repo): `docs/team/github_username_in_lower_case.md` e.g., `docs/team/goodcoder123.md`
 * {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ url_ab3_upstream_website }}/team/johndoe.html)
@@ -43,7 +43,7 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 <include src="tp-tasks-fragment.md#tip-how-to-convert-to-pdf" />
 </div>
 
-#### <span class="badge badge-info">PPP</span> <span class="text-info">Page Limit</span>
+#### <span class="badge bg-info">PPP</span> <span class="text-info">Page Limit</span>
 
 <div class="indented-level2">
 

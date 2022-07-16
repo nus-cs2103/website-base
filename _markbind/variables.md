@@ -152,17 +152,17 @@
 <variable name="icon_prereq"><md>:glyphicon-education:</md></variable>
 <variable name="icon_preview"><md>:glyphicon-eye-open:</md></variable>
 <variable name="icon_print"><md>:glyphicon-print:</md></variable>
-<variable name="icon_pro_tip"><span class="badge rounded-pill bg-warning">:fas-lightbulb: PRO TIP</span></variable>
+<variable name="icon_pro_tip"><span class="badge rounded-pill bg-warning text-dark">:fas-lightbulb: PRO TIP</span></variable>
 <variable name="icon_project"><md>:fas-drafting-compass:</md></variable>
 <variable name="icon_Q"><md>:glyphicon-question-sign:</md></variable>
 <variable name="icon_green_Q"><thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/></variable>
 <variable name="icon_Q_A">{{ icon_Q | safe }}:glyphicon-ok-sign:</variable>
 <variable name="icon_repo"><md>:fas-code-branch:</md></variable>
 <variable name="icon_resource"><md>:fas-paperclip:</md></variable>
-<variable name="icon_terminal"><small><span class="badge badge-secondary">&gt;_</span></small></variable>
+<variable name="icon_terminal"><small><span class="badge bg-secondary">&gt;_</span></small></variable>
 <variable name="icon_text"><md>:far-file-alt:</md></variable>
 <variable name="icon_tick"><md>:fas-check:</md></variable>
-<variable name="icon_tip"><span class="badge rounded-pill bg-warning">:fas-lightbulb:</span></variable>
+<variable name="icon_tip"><span class="badge rounded-pill bg-warning text-dark">:fas-lightbulb:</span></variable>
 <variable name="icon_tick_green"><span style="color: green">{{ icon_tick | safe }}</span></variable>
 <variable name="icon_todo"><md>:glyphicon-check:</md></variable>
 <variable name="icon_try">:fas-laptop:</variable>
@@ -194,8 +194,8 @@
 <variable name="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></variable>
 
 <variable name="edition_badge"><small><small><small><span class='badge rounded-pill bg-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></variable>
-<variable name="M"><span class="badge badge-info">&nbsp;{{ module }}&nbsp;</span></variable>
-<variable name="MT"><span class="badge badge-warning">{{ module }}T</span></variable>
+<variable name="M"><span class="badge bg-info">&nbsp;{{ module }}&nbsp;</span></variable>
+<variable name="MT"><span class="badge bg-warning text-dark">{{ module }}T</span></variable>
 
 <variable name="heading_project"><h3 class="bg-dark text-white p-2 mb-4 mt-4">{{ icon_project }} Project</h3></variable>
 

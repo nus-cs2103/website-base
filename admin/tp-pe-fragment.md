@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import embed_topic, get_date with context %}
 
-#### <span class="badge badge-success">PE</span> <span class="text-success">Overview</span>
+#### <span class="badge bg-success">PE</span> <span class="text-success">Overview</span>
 
 <div id="pe-overview">
 
@@ -26,7 +26,7 @@
 
 </div>
 
-#### <span class="badge badge-success">PE</span> <span class="text-success">Preparation</span>
+#### <span class="badge bg-success">PE</span> <span class="text-success">Preparation</span>
 
 * It's similar to,
 <div class="indented-level2">
@@ -47,7 +47,7 @@
 </div>
 <p/>
 
-#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
+#### <span class="badge bg-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
 
 * **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 7, format=format_normal, time="") | trim }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 6pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}
 
@@ -81,19 +81,19 @@
 * **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.**{% if cs2103%} Zoom sessions are invigilated by tutors, not the prof.{% endif %}
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
-* **During the bug reporting periods (i.e., <span class="badge badge-success">PE Phase 1 - part I</span> and <span class="badge badge-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** If you need to visit a different website or use another software, please ask for permission first.
+* **During the bug reporting periods (i.e., <span class="badge bg-success">PE Phase 1 - part I</span> and <span class="badge bg-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** If you need to visit a different website or use another software, please ask for permission first.
   * Website: LumiNUS
   * Website: Module website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab/recording software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
   * Software: A text editor %%(to keep track of commands you tried)%%
-* ==**Do not visit GitHub in** <span class="badge badge-success">PE Phase 1 - part I</span>== unless you are going there to download a file the team has provided and is needed for testing. You may visit GitHub during part II and part III.
+* ==**Do not visit GitHub in** <span class="badge bg-success">PE Phase 1 - part I</span>== unless you are going there to download a file the team has provided and is needed for testing. You may visit GitHub during part II and part III.
 * **Do not use any other software running** in the background e.g., Telegram chat.
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
 </box>
 
 
-##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
+##### <span class="badge bg-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
 
 <box type="tip" seamless>
 
@@ -129,7 +129,7 @@ When the invigilator announces an identity check,
 <span class="text-danger">Please comply quickly</span> as non-compliance can delay the exam for everyone. This is expected to take no more than 15 seconds.
 </box>
 
-##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
+##### <span class="badge bg-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
 
 * **This slot is for reporting documentation bugs only**. You may report bugs related to the UG and the DG.<br>
   Only the content of the UG/DG PDF files (not the online version) should be considered.
@@ -142,7 +142,7 @@ When the invigilator announces an identity check,
 
 * **You may visit the team's project on GitHub during this portion**, for the purpose of verifying the accuracy of documentation %%e.g., to check if a diagram matches the code%%. You are also allowed to download and open the team's code in a code editor.
 
-##### <span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
+##### <span class="badge bg-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
 
 * To be submitted via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.
 * The TEAMMATES email containing the submission link should have reached you the day before the PE. If you didn't receive it by then, you can request it to be resent from [this page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery).
@@ -220,7 +220,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 </box>
 </div>
 
-#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
+#### <span class="badge bg-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
 
 ==**Deadline:** {{ get_date(date_w13_start, 11 if S == 2 else 10) }}==
 
@@ -391,7 +391,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 {{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
 
-#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
+#### <span class="badge bg-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
 
 **Start:** Within 1 day after Phase 2 ends.<br>
 
@@ -458,7 +458,7 @@ However, ==if the dev team's argument is not too far from 'reasonable', **it may
 
 <p/>
 
-#### <span class="badge badge-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
+#### <span class="badge bg-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
 
 * In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome.
 * In the unlikely case we need your inputs, a tutor will contact you.

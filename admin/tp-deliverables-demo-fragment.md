@@ -14,18 +14,18 @@
   * Ink2Go: You can use this to record your screen and annotate if necessary. [Here](https://wiki.nus.edu.sg/display/cit/Ink2go+Instructions+for+Students) are some instructions from NUS CIT to help you get started.
   * [Handbrake](https://handbrake.fr/): A free/open-source tool to help convert videos to MP4.
 
-#### <span class="badge badge-info">Demo</span> <span class="text-info">Duration</span>
+#### <span class="badge bg-info">Demo</span> <span class="text-info">Duration</span>
 
 * **Strictly 18 minutes for a 5-person team, 15 minutes for a 4-person team**, 21 minutes for a 6-person team. Exceeding this limit will be penalized.
 <!--
 * **An additional 5 minutes will be given to set up** i.e., you will be given access to the demo station 5 minutes before your allocated start time.~~
 -->
 
-#### <span class="badge badge-info">Demo</span> <span class="text-info">Target audience</span>
+#### <span class="badge bg-info">Demo</span> <span class="text-info">Target audience</span>
 
 * **Assume you are giving a demo to a higher-level manager of your company**, to brief them on the current capabilities of the product. This is the first time they are seeing the new product you developed. The actual audience are the evaluators (the team supervisor and another tutor).
 
-#### <span class="badge badge-info">Demo</span> <span class="text-info">Scope</span>
+#### <span class="badge bg-info">Demo</span> <span class="text-info">Scope</span>
 
 * ==**Start by giving an overview of the product**== so that the evaluators get a sense of the full picture early. Include the following:
   * **What** is it? %%e.g., FooBar is a product to ensure the user takes frequent standing-breaks while working.%%
@@ -58,7 +58,7 @@ sitting periods, and alerts the user if ...
 * **Present the features in a reasonable order**: Organize the demo to present a cohesive picture of the product as a whole, presented in a logical order.
 * **No need to cover design/implementation details** as the manager is not interested in those details.
 
-#### <span class="badge badge-info">Demo</span> <span class="text-info">Structure</span>
+#### <span class="badge bg-info">Demo</span> <span class="text-info">Structure</span>
 
 * **Demo the product using the same executable** you submitted <!--, on your own laptop, using the TV.-->
 * **Use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name">_realistic_</tooltip> demo data.** %%e.g at least 20 data items%%. Trying to demo a product using just 1-2 sample data creates a bad impression.
@@ -68,7 +68,7 @@ sitting periods, and alerts the user if ...
 * **Dress code**: The level of formality is up to you, but it is recommended that the whole team dress at the same level.
 -->
 
-#### <span class="badge badge-info">Demo</span> <span class="text-info">Tips</span>
+#### <span class="badge bg-info">Demo</span> <span class="text-info">Tips</span>
 
 * **Plan the demo to be in sync with the impression you want to create.** For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.
 
@@ -85,7 +85,7 @@ Note that CS2101 demo requirements may differ. Different context → Different r
 * **No need to introduce next presenter** at the end of your part %%Reason: to save time%%.
 
 
-#### <span class="badge badge-info">Demo</span> <span class="text-info">Special circumstances</span>
+#### <span class="badge bg-info">Demo</span> <span class="text-info">Special circumstances</span>
 
 * **If a significant feature was not merged on time:** inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.
 * **If you are unable to come to the demo due to a valid reason**, submit the evidence of your excuse %%e.g., MC%% to prof. The demo is part of module grading and ==absence without a valid reason== will cause you to lose marks.

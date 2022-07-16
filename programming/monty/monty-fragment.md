@@ -86,7 +86,7 @@ The project consists of the following _increments_:
 
 <div id="monty1">
 
-### <span class="badge badge-info">Level 1</span> <span class="text-info">Echo Once</span>
+### <span class="badge bg-info">Level 1</span> <span class="text-info">Echo Once</span>
 
 Write a Python program to read in one user command and repeat it back to the user. An example output is given below.
 
@@ -109,7 +109,7 @@ print('>>> Hello, my name is Monty')
 {{ line_double }}
 <div id="monty2">
 
-### <span class="badge badge-info">Level 2</span> <span class="text-info">Recognize Known Commands</span>
+### <span class="badge bg-info">Level 2</span> <span class="text-info">Recognize Known Commands</span>
 
 Extend [Monty 1 code]({{ baseUrl }}/programming/chapters/monty.html#monty1) to work as follows:
 * It recognizes the `list` command and responds with a fixed message.
@@ -161,7 +161,7 @@ print('>>> Bye!')
 {{ line_double }}
 <div id="monty3">
 
-### <span class="badge badge-info">Level 3</span> <span class="text-info">Use Functions</span>
+### <span class="badge bg-info">Level 3</span> <span class="text-info">Use Functions</span>
 
 Restructure the [Monty Level 2 code]({{ baseUrl }}/programming/chapters/monty.html#monty2) to fit the following structure, while keeping the behavior same as before.
 
@@ -218,7 +218,7 @@ main()
 {{ line_double }}
 <div id="monty4">
 
-### <span class="badge badge-info">Level 4</span> <span class="text-info">Collect Tasks in Memory</span>
+### <span class="badge bg-info">Level 4</span> <span class="text-info">Collect Tasks in Memory</span>
 
 Enhance the [Monty Level 3 code]({{ baseUrl }}/programming/chapters/monty.html#monty3) to improve the functionality as per the sample output given below.
 
@@ -335,7 +335,7 @@ main()
 
 <div id="monty5">
 
-### <span class="badge badge-info">Level 5</span> <span class="text-info">Mark Tasks as Done</span>
+### <span class="badge bg-info">Level 5</span> <span class="text-info">Mark Tasks as Done</span>
 
 Enhance the [Monty Level 4 code]({{ baseUrl }}/programming/chapters/monty.html#monty4) in the following ways:
 * Add a `done` command so that the user can mark a task as done. e.g., `done 2` marks the task at index 2 as _done_.
@@ -486,7 +486,7 @@ main()
 
 <div id="monty6">
 
-### <span class="badge badge-info">Level 6</span> <span class="text-info">Give Help</span>
+### <span class="badge bg-info">Level 6</span> <span class="text-info">Give Help</span>
 
 Enhance the [Monty Level 5 code]({{ baseUrl }}/programming/chapters/monty.html#monty5) in the following ways:
 * Add a `help` command so that the user can view how to use the app.
@@ -590,7 +590,7 @@ def print_greeting():
 {{ line_double }}
 <div id="monty7">
 
-### <span class="badge badge-info">Level 7</span> <span class="text-info">Save Tasks to Disk</span>
+### <span class="badge bg-info">Level 7</span> <span class="text-info">Save Tasks to Disk</span>
 
 Enhance the [Monty Level 6 code]({{ baseUrl }}/programming/chapters/monty.html#monty6) in the following ways:
 * Monty **saves tasks into a csv file**, and **loads data from the same file at the start**.
@@ -763,7 +763,7 @@ Given below are some more features you can consider adding at this point (it is 
 
 <div id="monty8">
 
-### <span class="badge badge-info">Level 8</span> <span class="text-info">Support Deadlines</span>
+### <span class="badge bg-info">Level 8</span> <span class="text-info">Support Deadlines</span>
 
 Enhance the [Monty Level 7 code]({{ baseUrl }}/programming/chapters/monty.html#monty7) to add support for keeping track of deadlines as well as regular todo tasks
 
@@ -852,7 +852,7 @@ elif  ...
 
 <div id="monty9">
 
-### <span class="badge badge-info">Level 9</span> <span class="text-info">Use Classes</span>
+### <span class="badge bg-info">Level 9</span> <span class="text-info">Use Classes</span>
 
 Enhance the [Monty Level 8 code]({{ baseUrl }}/programming/chapters/monty.html#monty8) to use classes `ToDo` and `Deadline` (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.<br>
 {{ icon_info }} This means you no longer needs to use `dict` objects to represent todo/deadline tasks. That is, your tasks can be kept as a `list` of `ToDo` and `Deadline` objects, instead of a `list` of `dict`objects.
@@ -943,7 +943,7 @@ def save_data(filename, items_to_save):
 
 <div id="monty10">
 
-### <span class="badge badge-info">Level 10</span> <span class="text-info">Use More Classes</span>
+### <span class="badge bg-info">Level 10</span> <span class="text-info">Use More Classes</span>
 
 Enhance the [Monty Level 9 code]({{ baseUrl }}/programming/chapters/monty.html#monty9) to extract the following classes:
 
@@ -1084,7 +1084,7 @@ class ToDo:
 
 <div id="monty11">
 
-### <span class="badge badge-info">Level 11</span> <span class="text-info">Use Multiple Code Files</span>
+### <span class="badge bg-info">Level 11</span> <span class="text-info">Use Multiple Code Files</span>
 
 Enhance the [Monty Level 10 code]({{ baseUrl }}/programming/chapters/monty.html#monty10) to divide the source code into multiple files (e.g., `todo.py`, `deadline.py`, etc.).
 
@@ -1094,7 +1094,7 @@ Enhance the [Monty Level 10 code]({{ baseUrl }}/programming/chapters/monty.html#
 
 <div id="monty12">
 
-### <span class="badge badge-info">Level 12</span> <span class="text-info">Use Inheritance</span>
+### <span class="badge bg-info">Level 12</span> <span class="text-info">Use Inheritance</span>
 
 Enhance the [Monty Level 11 code]({{ baseUrl }}/programming/chapters/monty.html#monty11) to make the `Deadline` class inherit from the `ToDo` class:
 
@@ -1152,7 +1152,7 @@ Note:
 
 <div id="monty13">
 
-### <span class="badge badge-info">Level 13</span> <span class="text-info">Add Unit Tests</span>
+### <span class="badge bg-info">Level 13</span> <span class="text-info">Add Unit Tests</span>
 
 Add some unit tests to [Monty Level 12 code]({{ baseUrl }}/programming/chapters/monty.html#monty12).
 
@@ -1164,7 +1164,7 @@ Minimum requirement: 2 unit tests, testing two functions/methods
 
 <div id="monty14">
 
-### <span class="badge badge-info">Level 14</span> <span class="text-info">Add a GUI</span>
+### <span class="badge bg-info">Level 14</span> <span class="text-info">Add a GUI</span>
 
 Enhance the [Monty Level 13 code]({{ baseUrl }}/programming/chapters/monty.html#monty13) to integrate it with the skeletal GUI given below.
 

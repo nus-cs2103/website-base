@@ -7,7 +7,7 @@ footer: footer.md
 
 {% macro show_level_three(location, topic) %}
 {% set level_location =  location + "/" + topic.name %}
-{% set title =  "#### " + topic.heading + " <span class='badge badge-light'><small><small>" + show_priority(topic.priority) + "</small></small></span>" %}
+{% set title =  "#### " + topic.heading + " <span class='badge bg-light text-dark'><small><small>" + show_priority(topic.priority) + "</small></small></span>" %}
 {{ title }}
 <div class="indented-less">
 <include src="{{ level_location }}/text.md#body" />

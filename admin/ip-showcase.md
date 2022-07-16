@@ -15,7 +15,7 @@ title: "iP Showcase"
 {% if student_tutorial == tutorial %}
 {% if current_team != student_team %}
   {% set current_team = student_team %}
-### <span class="badge badge-secondary">{{ student_team }}</span>
+### <span class="badge bg-secondary">{{ student_team }}</span>
 {% endif %}
 {% set student_name = student[0] %}
 {% set username = student[2] %}
