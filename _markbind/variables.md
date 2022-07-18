@@ -6,24 +6,24 @@
 <variable name="module_color">success</variable>
 
 <variable name="S">1</variable>
-<variable name="semester">AY2021S{{ S }}</variable>
-<variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="semester">AY2223S{{ S }}</variable>
+<variable name="period">2022 Aug-Nov</variable>
+<variable name="current_week">15</variable> <!-- after semester ends, set this to 15 and enable built-in search in site.json -->
 
 <variable name="algolia">no</variable>
 
-<variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
-<variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="luminus_module_id">d5a1546f-b342-4765-a8a4-e740cd253b61</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vSsIOEjT9_XFBVrqiJM04NgjGBlWH450X6WPsbwqT2yHvXv7uhFrFSXAw23MrE9dl1tCWVeOJE96e_s/pub?embedded=true</variable>
+<variable name="url_coursemology_classroom">n/a</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3ahYHxi3RYCZWF2vdhCoGo-zlV5Ax4_YQHLMe5afZ8Tps1%40thread.tacv2/conversations?groupId=b5df0a01-9232-4f0a-9c77-2d8cf8d05656&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
-<variable name="date_w1_start">2022-01-10</variable>
+<variable name="date_w1_start">2022-08-08</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
 <variable name="recess_after_week">7</variable>
 <variable name="time_lecture_start">1600</variable>
 <variable name="time_lecture_end">1800</variable>
-<variable name="time_t_lecture_start">1200</variable>
-<variable name="time_t_lecture_end">1400</variable>
+<variable name="time_t_lecture_start">1600</variable>
+<variable name="time_t_lecture_end">1800</variable>
 
 <variable name="ip_name">iP</variable>
 <variable name="ip_repo_name">ip</variable>
@@ -42,20 +42,20 @@
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
-<variable name="marks_ip">30</variable>
-<variable name="marks_ip_implementation">15</variable>
-<variable name="marks_ip_pm">10</variable>
-<variable name="marks_ip_documentation">5</variable>
-<variable name="marks_tp">45</variable>
+<variable name="marks_ip">15</variable>
+<variable name="marks_ip_implementation">10</variable>
+<variable name="marks_ip_pm">2</variable>
+<variable name="marks_ip_documentation">3</variable>
+<variable name="marks_tp">50</variable>
 <variable name="marks_tp_design">5</variable>
 <variable name="marks_tp_documentation">10</variable>
-<variable name="marks_tp_implementation">10</variable>
+<variable name="marks_tp_implementation">15</variable>
 <variable name="marks_tp_pm">10</variable>
 <variable name="marks_tp_pm_individual">5</variable>
 <variable name="marks_tp_pm_team">5</variable>
 <variable name="marks_tp_qa">10</variable>
-<variable name="marks_tp_individual">35</variable>
-<variable name="marks_tp_team">10</variable>
+<variable name="marks_tp_individual">45</variable>
+<variable name="marks_tp_team">5</variable>
 <variable name="marks_participation">5</variable>
 <variable name="marks_exam">30</variable>
 <variable name="marks_exam_essay">0</variable>
