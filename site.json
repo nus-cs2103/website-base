@@ -52,30 +52,25 @@
       "searchable": "no"
     }
   ],
-  "pagesExclude": ["**/*-fragment.md"],
+  "pagesExclude": ["**/*-fragment.md", "book/_site/**/*.*"],
   "intrasiteLinkValidation": {
     "enabled": false
   },
   "enableSearch": true,
   "headingIndexingLevel": 5,
-  "plugins": ["filterTags"],
+  "plugins": ["filterTags", "googleAnalytics", "algolia"],
   "pluginsContext": {
     "filterTags" : {
       "tags": ["m--cs2103"]
     },
-    "googleAnalytics": {
-       "trackingID": "UA-122519234-1"
+    "algolia": {
+      "apiKey": "3e2fd3c3b12a363309307794dce54969",
+      "appId": "3DU4XTBX4T",
+      "indexName": "nus-tic-cs",
+      "searchParameters": {
+        "facetFilters": [["site:nus-cs2103-ay2223s1.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
+      }
     }
-  },
-  "algolia": {
-    "apiKey": "a3fef7e2d9dea07c0fa2d8ed521057aa",
-    "appId": "3DU4XTBX4T",
-    "indexName": "nus-tic-cs",
-    "algoliaOptions": {
-      "hitsPerPage": 10,
-      "facetFilters": [["site:nus-cs2103-ay2223s1.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
-    },
-    "debug": false
   },
     "deploy": {
     "message": "Site Update.",
