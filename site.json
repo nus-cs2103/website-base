@@ -58,7 +58,7 @@
   },
   "enableSearch": true,
   "headingIndexingLevel": 5,
-  "plugins": ["filterTags", "googleAnalytics", "algolia"],
+  "plugins": ["filterTags", "algolia"],
   "pluginsContext": {
     "filterTags" : {
       "tags": ["m--cs2103"]
