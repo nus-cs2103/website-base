@@ -960,7 +960,7 @@ Here are some reasons:
 
   * More info on how to make the code RepoSense compatible:
 
-{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="4") }}
+{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="3") }}
 </div>
 </div>
 {#====================================================================================================================#}
