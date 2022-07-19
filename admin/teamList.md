@@ -62,7 +62,7 @@ This page will be populated later in the semester ...
 
 **{{ name }}**<br>
 <sup>[`{{ username }}`](https://github.com/{{ username }})</sup><br>
-<img style="border-radius: 8px;" src="{{ team_website }}/images/{{ username | lower }}.png" width="120"  onerror="this.src='images/placeholder-small.png';"/><br>[:fas-file-powerpoint:]({{ team_website }}/team/{{ username | lower }}.html) [:fas-code:](https://nus-{{ module }}-{{ semester }}.github.io/tp-dashboard/?search={{ username | lower }}&breakdown=true) [:fas-code-branch:]({{ team_repo }}/pulls?q=is%3Apr+author%3A{{ username }})
+{% if not cs2113 %}<img style="border-radius: 8px;" src="{{ team_website }}/images/{{ username | lower }}.png" width="120"  onerror="this.src='images/placeholder-small.png';"/><br>{% endif %}[:fas-file-powerpoint:]({{ team_website }}/team/{{ username | lower }}.html) [:fas-code:](https://nus-{{ module }}-{{ semester }}.github.io/tp-dashboard/?search={{ username | lower }}&breakdown=true) [:fas-code-branch:]({{ team_repo }}/pulls?q=is%3Apr+author%3A{{ username }})
 </div>
 {% endmacro %}
 
