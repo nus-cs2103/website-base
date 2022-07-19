@@ -961,6 +961,13 @@ Here are some reasons:
   * More info on how to make the code RepoSense compatible:
 
 {{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="3") }}
+
+<panel type="seamless" header="**FAQ:** What if someone took over a feature from another team member?">
+
+  **A:** In terms of effort distribution, it's up to the team to tell us who did how much. Same goes for assigning bugs. So, it's fine for someone to take over a feature if the team is able to estimate the effort of each member, and they have a consensus on who will be responsible for bugs in that feature.<br>
+ For code authorship, only one person can claim authorship of a line, and that person will be graded for the code quality of that line. By default that will be the last person who edited it (as per Git data) but you can [override that behavior using `@@author` tags](tools.html#tool-reposense-for-authorship-tracking).
+</panel>
+
 </div>
 </div>
 {#====================================================================================================================#}
