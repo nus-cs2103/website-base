@@ -205,7 +205,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
   * If you created the PR correctly, it should appear in the list of PRs [here]({{ url_module_org }}/{{ ip_repo_name }}/pulls).
   * Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
 
-{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=4) }}
+{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
 
 <div class="indented-level2">
 
@@ -335,12 +335,13 @@ One of the increments below asks you to push the design more towards the OOP app
  That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
 </box>
 
-* As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).
+* As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).{% if cs2103 %}
+* {{ icon_important_big_red }} Do `A-Gradle` first, after which use the Gradle option (rather than the Intellij option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.{% endif %}
 
 </div>
 <div id="extra_A-JavaDoc">
 
-* As in the step 1 above, implement these three increments as three parallel branches first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+* As in the step 1 above, implement these three increments ==as three <tooltip content="i.e., start a branch, add some code to it, go back to the master branch (without merging the first branch), and start another branch, and so on">parallel</tooltip> branches== first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 * The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
 * After finishing, assuming you encountered merge conflicts (and some were rather painful to resolve), think of how such conflicts could have been reduced %%(e.g., by changing the order of merging, or minimizing parallel branches when certain type of changes are being done to the code)%%.
 </div>

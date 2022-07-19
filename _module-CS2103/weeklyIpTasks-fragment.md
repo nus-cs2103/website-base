@@ -26,6 +26,7 @@ week3: [
   {id: 'add_increments', suffix: '', increments:  [
     {id: 'A-MoreOOP', title: 'Use More OOP'},
     {id: 'A-Packages', title: 'Organize into Packages'},
+    {id: 'A-Gradle', title: 'Use Gradle'},
     {id: 'A-JUnit', title: 'Add JUnit Tests'},
     {id: 'A-Jar', title: 'Create a JAR File'}
   ]},
@@ -40,7 +41,6 @@ week4: [
   {id: 'review_two_prs', graded: true},
   {id: 'learn_from_others'},
   {id: 'add_increments', suffix: ' as branches', increments:  [
-    {id: 'A-Gradle', title: 'Use Gradle'},
     {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
     {id: 'Level-10', title: 'GUI'},
     {id: 'A-Varargs', title: 'Use Varargs', tag: 'if-applicable'}
