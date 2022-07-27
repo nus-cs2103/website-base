@@ -21,7 +21,7 @@
 <span id="heading_set_up_tools">Set up the tools</span>
 <div id="desc_set_up_tools">
 
-* Follow the <span class="border pr-1 pl-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions of the following tools.
+* Follow the <span class="border pe-1 ps-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions of the following tools.
 
 <box type="info" tags="m--tic4002" seamless>
 

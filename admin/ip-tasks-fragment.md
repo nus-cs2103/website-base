@@ -117,7 +117,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 <span id="heading_set_up_prerequisites">Set up prerequisites</span>
 <div id="desc_set_up_prerequisites">
 
-* **Ensure you have followed the <span class="pr-1 pl-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following module tools:**
+* **Ensure you have followed the <span class="ps-1 pe-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following module tools:**
 
 {{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="2") }}

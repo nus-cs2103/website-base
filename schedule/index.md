@@ -254,7 +254,7 @@ Information relevant to the week's {{ "lecture" if tic4001 or tic4002 else "tuto
 <include src="../../admin/{{ "ip-w" + week_num + ".md" }}#summary" />
 {% endif %}
 {% if tp %}
-**tP:** {% if theme.milestone %}<span class="border rounded text-success border-success pr-1 pl-1">:fas-tag: **{{ theme.milestone }}**</span>{% endif %}
+**tP:** {% if theme.milestone %}<span class="border rounded text-success border-success pe-1 ps-1">:fas-tag: **{{ theme.milestone }}**</span>{% endif %}
 <include src="../../admin/{{ "tp-w" + week_num + ".md" }}#summary" />
 {% endif %}
 </div>
