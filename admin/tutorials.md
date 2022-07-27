@@ -30,7 +30,7 @@ Zoom links for tutorial sessions will be available in [LumiNUS/Weblinks](https:/
 
 **The mode**
 
-* Tutorials will be conducted using Zoom.
+* Tutorials will be conducted using Zoom. Due to the large class size and small tutor:students ratio, we are not able to go back to F2F tutorials at the current SoC venue capacity. We'll revisit this decision when the COM4 building is up.
 * MS Teams will be used for file sharing.
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
 * The tutor will _facilitate_ tutorial activities, observe your progress, and give feedback.
