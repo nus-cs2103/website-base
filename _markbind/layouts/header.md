@@ -54,7 +54,7 @@
   </dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
-      {% if current_week in ["-1", "15"] or algolia == "no" %}<searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right ></searchbar>{% else %}<searchbar placeholder="Search" algolia menu-align-right></searchbar>{% endif %}
+      {% if algolia == "no" %}<searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right ></searchbar>{% else %}<searchbar placeholder="Search" algolia menu-align-right></searchbar>{% endif %}
     </form>
   </li>
 </navbar>
