@@ -222,7 +222,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 <div id="hand-drawing-diagrams">
 <box type="info">
 
-<pic src="images/drawingDiagrams.png" add-class="float-right mr-2 ml-2">
+<pic src="images/drawingDiagrams.png" add-class="float-end me-2 ms-2">
 
 <small>[Image source: [this article](https://medium.com/deekit-central/7-reasons-why-engineers-are-the-whiteboard-artists-c40acff8b0ed)]</small>
 </pic>

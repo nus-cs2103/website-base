@@ -3,7 +3,7 @@
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("[Revisiting] Drawing Class/Object Diagrams - Basics", reuse=false) %}
 
-<span class="float-right pl-2 pr-2">
+<span class="float-end ps-2 pe-2">
 
 <img src="../../admin/images/drawingDiagrams.png" width="212" /><br>
 <sub>[[image source](https://www.cs.auckland.ac.nz/~john-g/papers/hcc2003_1.pdf)]</sub>

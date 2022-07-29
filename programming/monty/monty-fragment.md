@@ -2,7 +2,7 @@
 
 <div class="lead">
 
-<pic add-class="float-left border mr-2 mt-2 p1 bg-white" src="https://upload.wikimedia.org/wikipedia/en/c/cb/Flyingcircus_2.jpg" width="200">
+<pic add-class="float-start border me-2 mt-2 p1 bg-white" src="https://upload.wikimedia.org/wikipedia/en/c/cb/Flyingcircus_2.jpg" width="200">
 
 <small><small>The **Monty Python** Comedy Group,<br> [[credit: Wikipedia](https://en.wikipedia.org/wiki/Monty_Python)]</small></small>
 </pic>
