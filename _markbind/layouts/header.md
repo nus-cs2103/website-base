@@ -1,8 +1,8 @@
 {% from "common/macros.njk" import get_week_start_date with context %}
 {% if current_week == "-1" %}
-<div class="w-100 p-1 bg-warning text-center"><md>**This is a draft version of the website! The final version will be available near the start of the semester.**</md></div>
+<div class="w-100 p-1 bg-warning text-center d-print-none"><md>**This is a draft version of the website! The final version will be available near the start of the semester.**</md></div>
 {% endif %}{% if current_week in ["-1", "0", "1"] %}
-<div class="w-100 p-1 bg-success text-white text-center"><md>This module will be delivered in _blended learning_ mode (i.e., a mix of online and F2F activities) this semester.</md></div>
+<div class="w-100 p-1 bg-success text-white text-center d-print-none"><md>This module will be delivered in _blended learning_ mode (i.e., a mix of online and F2F activities) this semester.</md></div>
 {% elseif current_week == "15" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is from a past semester! The current version will be [here](http://www.comp.nus.edu.sg/~{{ module | lower }}) when the new semester starts.**</md></div>
 </div>
