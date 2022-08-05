@@ -21,7 +21,7 @@ While the info below provides you what to do and what not to do in {{ version_fi
 
 {{ icon_tick_green }} fixing bugs (but not _feature flaws_)<br>
 {{ icon_tick_green }} improving documentation<br>
-{{ icon_tick_green }} purely cosmetic enhancements e.g., alignments, style changes<br>
+{{ icon_tick_green }} ~~purely cosmetic enhancements e.g., alignments, style changes~~ (not allowed from this semester)<br>
 {{ icon_tick_green }} improving code quality<br>
 {{ icon_tick_green }} improving tests<br>
 {{ icon_tick_green }} removing features
