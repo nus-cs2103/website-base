@@ -6,7 +6,27 @@
 {#====================================================================================================================
  # Common text segments
  #====================================================================================================================#}
+<div id="ip-faq">
+<box type="info" icon=":fas-question-circle:" light>
 
+#####  **FAQ** about iP increments{.text-info}
+
+* **Q. How are the iP git tags used in grading?**<br>
+**A.** A git tag is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor those progress declarations.
+* **Q. What if I discovered a bug after I finished an increment?**<br>
+**A.** Go ahead and fix it in a subsequent commit. There is no need to update the previous commit or move the corresponding tag to the new commit. As we do not test your code at every tag, earlier bugs will not affect your grade as long as they are fixed later. Similarly, feel free to improve the code of previous increments later.
+* **Q. I did multiple increments in the same commit. How to fix?**<br>
+**A.** You can add the corresponding tags to the same commit.<br>
+Optionally, if you haven't pushed the commit to the fork yet, you can try to figure out how to split that commit into multiple commits.
+* **Q. The requirements of an increment scheduled for this week is already satisfied by the work I did in an earlier week. What now?**<br>
+**A.** You can add the corresponding tag to the earlier commit (or the latest commit -- it doesn't matter) and push the tag.
+* **Q. My iP increments are not detected by the dashboard because I forgot to push my tags earlier. What now?**<br>
+**A.** Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
+* **Q. Oh no! I made a mistake in my tag/branch name.**<br>
+**A.** It's OK; correct it now.
+
+</box>
+</div>
 <div id="order">
 
 * Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
@@ -21,6 +41,8 @@
 * From this point onward, after completing each increment,
   * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
   * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
+
+<include src="ip-tasks-fragment.md#ip-faq" />
 </div>
 <div id="volatile-requirements">
 
@@ -46,6 +68,7 @@ Reminder: as per iP grading criteria, _some_ increments need to to be done in ea
 
 </box>
 </div>
+
 
 {#====================================================================================================================
  # CS2103 Weekly Intros
@@ -152,25 +175,6 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 **If you encounter technical problems**, follow the guidelines given below in seeking help:
 
 {{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="2") }}
-</box>
-<box type="info" icon=":fas-question-circle:" light>
-
-#####  **FAQ** about iP increments{.text-info}
-
-* **Q. How are the iP git tags used in grading?**<br>
-  **A.** A git tag is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor those progress declarations.
-* **Q. What if I discovered a bug after I finished an increment?**<br>
-  **A.** Go ahead and fix it in a subsequent commit. There is no need to update the previous commit or move the corresponding tag to the new commit. As we do not test your code at every tag, earlier bugs will not affect your grade as long as they are fixed later. Similarly, feel free to improve the code of previous increments later.
-* **Q. I did multiple increments in the same commit. How to fix?**<br>
-  **A.** You can add the corresponding tags to the same commit.<br>
-  Optionally, if you haven't pushed the commit to the fork yet, you can try to figure out how to split that commit into multiple commits.
-* **Q. The requirements of an increment scheduled for this week is already satisfied by the work I did in an earlier week. What now?**<br>
-  **A.** You can add the corresponding tag to the earlier commit (or the latest commit -- it doesn't matter) and push the tag.
-* **Q. My iP increments are not detected by the dashboard because I forgot to push my tags earlier. What now?**<br>
-  **A.** Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
-* **Q. Oh no! I made a mistake in my tag/branch name.**<br>
-  **A.** It's OK; correct it now.
-
 </box>
 </div>
 {#====================================================================================================================#}
