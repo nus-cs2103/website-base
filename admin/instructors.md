@@ -15,24 +15,6 @@
 <include src="instructor-damith-fragment.md" />
     </div>
   </div>
-  <div class="row pt-4 border-top border-bottom">
-    <div class="col-3">
-
-<img src="images/boyd.png" width="150" class="mt-1 rounded"/>
-    </div>
-    <div class="col">
-
-**Boyd ANDERSON** (Co-Lecturer)<br>
-Lecturer, NUS School of Computing<br>
-Ph.D. (National University of Singapore, Singapore)<br>
-M.Sc. (Victoria University of Wellington, New Zealand)<br>
-B.Sc. (Victoria University of Wellington, New Zealand)<br>
-%%:fas-envelope:%% <span id="prof-email">`boyd`[at]`comp.nus.edu.sg`</span><br>
-%%:fas-map-marker-alt:%% COM2-03-26<br>
-%%:fas-phone-square:%% 660 17900<br>
-%%:fas-home:%% https://www.comp.nus.edu.sg/cs/bio/boyd/
-    </div>
-  </div>
 </div>
 
 {% else %}
