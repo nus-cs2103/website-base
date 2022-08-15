@@ -174,7 +174,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 
 **If you encounter technical problems**, follow the guidelines given below in seeking help:
 
-{{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="2") }}
+{{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "2", indent="2") }}
 </box>
 </div>
 {#====================================================================================================================#}
