@@ -230,6 +230,8 @@ The MST team used for the class is `TIC2002-{{ period }}` ([link]({{ url_ms_team
 We'll be using Git as our revision control tool (compulsory).
 
 {{ icon_important_big_red }} If you are not familiar with Git already, install [SourceTree](https://www.sourcetreeapp.com/) (a GUI for Git, but also contains Git) on your computer.
+
+{{ icon_tip }} If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).
 </div>
 <div id="github-info">
 

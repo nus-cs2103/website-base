@@ -62,7 +62,7 @@
      {{ embed_topic("../../book/gitAndGithub/commit/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Committing**", "1", indent=4) }}
      {{ embed_topic("../../book/gitAndGithub/tag/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Tagging**", "1", indent=4) }}
      {{ embed_topic("../../book/gitAndGithub/push/text.md#simple-push", "Textbook " + icon_embedding + " Git & GitHub → **Pushing**", "1", indent=4) }}
-
+  * {{ icon_tip }} If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).
 <div class="indented-level2">
 
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-1`: Greet, Echo, Exit**" var-fragment="text.md#Level-1" />

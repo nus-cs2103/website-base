@@ -40,7 +40,9 @@ Optionally, if you haven't pushed the commit to the fork yet, you can try to fig
 
 * From this point onward, after completing each increment,
   * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
-  * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
+  * **`git push`** the code to your fork<br>
+    {{ icon_tip }} Git doesn't push tags unless you specifically ask it to.<br>
+    {{ icon_tip }} If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).
 
 <include src="ip-tasks-fragment.md#ip-faq" />
 </div>
