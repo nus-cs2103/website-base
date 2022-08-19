@@ -9,6 +9,7 @@
 Answering in-video quizzes can earn you [bonus participation points](../../admin/participation.md).
 </box>
 
+
 {% if S == "2" %}
 <box type="important" dismissible>
 
