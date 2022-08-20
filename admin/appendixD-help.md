@@ -34,7 +34,7 @@
       {{ bad }} `testing problem`<br>
       {{ good }} `runtest.bat fails with ClassNotFound error`
     * Include full error message, screenshots, screen recordings, code snippets, stack traces, etc.<br>
-      :fas-lightbulb: You can use [Markdown, and GFMD](https://guides.github.com/features/mastering-markdown/) syntax when posting in the forum.
+      {{ icon_tip }} Use [GFMD (GitHub-Flavored Markdown)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) syntax writing a post in the GitHub issue tracker (which we use for the forum) to format the text appropriately.
     * If the problem is code-related, share the full code if possible (e.g., push the current state of the code to a branch in your fork and give the link to the branch). That gives a chance for someone to reproduce the state of your project in their computer. Sharing just a snippet of your choosing might not be enough as the problem may not be where you think it is.
   * **Avoid showing text as screenshots**: If you want to show some text in your post %%(e.g., a code snippet, an error message)%%, it is better to copy-paste the actual text rather than a _screenshot_ of the text<br>
     Reason: so that others can easily quote/copy/modify the code in their answers.<br>
