@@ -39,10 +39,12 @@ Optionally, if you haven't pushed the commit to the fork yet, you can try to fig
 <div id="tag-push">
 
 * From this point onward, after completing each increment,
-  * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
-  * **`git push`** the code to your fork<br>
-    {{ icon_tip }} Git doesn't push tags unless you specifically ask it to.<br>
-    {{ icon_tip }} If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).
+  * **`git tag` the commit with the exact increment** ID e.g., `Level-2`, `A-TextUiTesting`
+    <box type="warning" seamless><md>[Git tags](../book/gitAndGithub/tag/) are not the same as [Git commit messages](../book/gitAndGithub/commit/).</md></box>
+  * **`git push` the code to your fork**
+    <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](../book/gitAndGithub/push/).
+    After pushing a tag to your fork, you should be able to see that tag by visiting `https://github.com/YOUR_USER_NAME/REPO_NAME/tags` e.g., https://github.com/se-edu/addressbook-level3/tags</md></box>
+    <box type="tip" seamless><md>If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).</md></box>
 
 <include src="ip-tasks-fragment.md#ip-faq" />
 </div>
@@ -169,7 +171,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 1. Fork [{{ url_module_org }}/{{ ip_repo_name }}]({{ url_module_org }}/{{ ip_repo_name }}).<br>
    {{ icon_important_big_red }} Please keep the fork name as `{{ ip_repo_name }}` or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the module.
 1. ==Enable the issue tracker of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
-   {{ icon_tip }} If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`
+   <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`</md></box>
 1. Clone the fork onto your computer.
 1. Set up the project in your IDE as explained in [the README file]({{ url_module_org }}/{{ ip_repo_name }}/blob/master/README.md).<br>
 

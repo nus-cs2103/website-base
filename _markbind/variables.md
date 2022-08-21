@@ -162,13 +162,14 @@
 <variable name="icon_terminal"><small><span class="badge bg-secondary">&gt;_</span></small></variable>
 <variable name="icon_text"><md>:far-file-alt:</md></variable>
 <variable name="icon_tick"><md>:fas-check:</md></variable>
-<variable name="icon_tip"><span class="badge rounded-pill bg-warning text-dark">:fas-lightbulb:</span></variable>
+<variable name="icon_tip"><span class="badge rounded-pill bg-success text-white">:fas-lightbulb:</span></variable>
 <variable name="icon_tick_green"><span style="color: green">{{ icon_tick | safe }}</span></variable>
 <variable name="icon_todo"><md>:glyphicon-check:</md></variable>
 <variable name="icon_try">:fas-laptop:</variable>
 <variable name="icon_tutorial"><md>:fas-chalkboard-teacher:</md></variable>
 <variable name="icon_slides"><md>:far-images:</md></variable>
 <variable name="icon_video"><md>:glyphicon-facetime-video:</md></variable>
+<variable name="icon_warning"><span class="badge rounded-pill bg-warning text-dark">:fas-exclamation:</span></variable>
 <variable name="icon_windows"><md>:fab-windows:</md></variable>
 <variable name="icon_x"><md>:fas-times:</md></variable>
 <variable name="icon_x_red"><span style="color: red">{{ icon_x | safe }}</span></variable>
