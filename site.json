@@ -2,7 +2,8 @@
   "baseUrl": "/website",
   "titlePrefix": "CS2103/T",
   "style": {
-    "codeTheme": "light"
+    "codeTheme": "light",
+    "codeLineNumbers": true
   },
   "timeZone": "Asia/Singapore",
   "disableHtmlBeautify": true,
@@ -58,7 +59,7 @@
   },
   "enableSearch": true,
   "headingIndexingLevel": 5,
-  "plugins": ["filterTags", "algolia"],
+  "plugins": ["filterTags", "algolia", "codeBlockCopyButtons"],
   "pluginsContext": {
     "filterTags" : {
       "tags": ["m--cs2103"]
