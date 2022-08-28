@@ -1,9 +1,10 @@
 {% set tutorials = [
-
+ "TIC4001-F18"
 ]%}
 
 {% set students = [
-
+ ['RABA..RROT', 'TIC4001-F18-1', 'badassengineer'],
+ ['ROSH..UMAR', 'TIC4001-F18-1', 'roshankumar1991']
 ]%}
 
 {% set teams = {
