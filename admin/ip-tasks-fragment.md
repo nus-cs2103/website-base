@@ -101,6 +101,14 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 <p/>
 
 </div>
+<div id="cs2103-week4-intro">
+
+<box type="info" icon=":fab-apple:" seamless>
+
+**++Mac users:++** Ensure you have followed the advisory given [here](programmingLanguages.md).
+</box>
+
+</div>
 {#====================================================================================================================
  # CS2113 Weekly Intros
  #====================================================================================================================#}
