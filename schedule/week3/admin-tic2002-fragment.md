@@ -39,7 +39,8 @@
 
 #### {{ thumb(1) }} Setup Duke project on your computer {{ timing_badge("during/after the lecture", "secondary") }}
 
-1. **Fork** [{{ url_module_org }}/duke]({{ url_module_org }}/duke). The relevant textbook topic is given below for our reference.
+1. **Fork** [{{ url_module_org }}/duke]({{ url_module_org }}/duke). The relevant textbook topic is given below for your reference.<br>
+   {{ icon_important_big_red }} Please ==retain the repon name `duke`== when forking. If you name your fork as something else, our grading scripts will not be able to find your fork.
 
    {{ embed_topic("../../book/gitAndGithub/fork/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Forking**", "1", indent=2) }}
 

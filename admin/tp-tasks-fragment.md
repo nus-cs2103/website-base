@@ -298,9 +298,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 * **What format?**: You may use a sentence format or a table format but do maintain the prescribed three-part structure of a user story. In particular, ==try to include the _benefit_ part in most user stories== as that will come in handy when prioritizing user stories later.
 
-* **How to record?**<br>
-  ==Keep records of intermediate steps (e.g., persona, scenarios)== in your collaborative project document started in the previous week.<br>
-  You can ~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~ use an online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).
+* **Submission** (to be checked by the tutor later):<br>
+  * Intermediate steps (e.g., persona, scenarios): Keep records these in your collaborative project document started in the previous week.
+  * Brainstormed user stories:  Record them using an <!--~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
 <include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -315,7 +315,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 </modal>
 
 
-<div tags="m--cs2103 m--tic4002" class="indented-level2">
+<div tags="m--cs2103 m--tic4001 m--tic4002" class="indented-level2">
 
 {{ icon_tip }} **If you choose to use the GitHub issue tracker to manage user stories**, you need to set up your team's GitHub organization, team repo, and its issue tracker first. Instructions for doing those steps are in the panel below.
 

@@ -143,7 +143,7 @@ The info in the following panels differs from TIC4001.
 
 {{ embed_topic("peerEvaluations.md#intro", "Admin " + icon_embedding + " Peer Evaluations → Introduction", "3", indent="2") }}
 {{ embed_topic("peerEvaluations.md#practicePeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Practice Peer Evaluation", "1", indent="2", status="expanded") }}
-{{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "3", indent="2", type="primary") }}
+{{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "4", indent="2") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_midterm_feedback_for_the_module">[optional] Submit mid-term feedback for the module</span>

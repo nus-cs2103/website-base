@@ -55,11 +55,11 @@
 
 {% macro get_pr_link(username) -%}[{{ username }}]({{ url_module_org }}/{{ ip_repo_name }}/pulls/{{ username }}){%- endmacro %}
 <div id="show-ip-peer-review-allocation-1">
-<panel header="**iP PR review allocation** (click to expand)" minimized >
+<panel header="**Review allocation for the ==first== PR review** (click to expand)" minimized >
 {% from "_module-" + module + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
 Tutorial | Reviewer | First PR to review | Backup PR to review
 ---------|----------|--------------------|---------------------{% for line in ip_pr_review_allocation  %}
-{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | {{ get_pr_link(line[3]) }}{% endfor %}
+{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | <small>%%backup:%% {{ get_pr_link(line[3]) }}</small>{% endfor %}
 {% if not ip_pr_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 <p/>
@@ -86,11 +86,11 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 
 </div>
 <div id="show-ip-peer-review-allocation-2">
-<panel header="**iP PR review allocation** (click to expand)" minimized >
+<panel header="**Review allocation for the ==second== PR review** (click to expand)" minimized >
 {% from "_module-" + module + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
 Tutorial | Reviewer | Second PR to review | Backup PR to review
 ---------|----------|---------------------|---------------------{% for line in ip_pr_review_allocation  %}
-{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | {{ get_pr_link(line[5]) }}{% endfor %}
+{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | <small>%%backup:%% {{ get_pr_link(line[5]) }}</small>{% endfor %}
 {% if not ip_pr_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 <p/>
