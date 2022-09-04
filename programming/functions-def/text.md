@@ -1,6 +1,6 @@
 ### Writing Functions
 
-**You can write your own functions in Python.** Function are useful when you want to execute a bunch of statements multiple times at different points of a program. 
+**You can write your own functions in Python.** Function are useful when you want to execute a bunch of statements multiple times at different points of a program.
 
 Format:
 ```python
@@ -10,7 +10,7 @@ def function_name():
     ...
 ```
 
-<tip-box> 
+<tip-box>
 
 {{ icon_example }} The code below defines a function named `say_hello` and calls it twice.
 
@@ -56,10 +56,11 @@ Note how the statements inside the function are not executed unless the method i
 </tip-box>
 
 The function definition should appear in the code _before_ it is called.
- 
-<tip-box> 
+
+<tip-box>
 
 <table>
+<tbody>
 <tr>
   <td>
 
@@ -77,7 +78,7 @@ say_hello()
   </td>
   <td>&nbsp;&nbsp;</td>
   <td>
-  
+
 {{ bad }} (this will not work!)
 ```python
 print('starting ...')
@@ -91,6 +92,7 @@ def say_hello():
 ```
   </td>
 </tr>
+</tbody>
 </table>
 
 </tip-box>

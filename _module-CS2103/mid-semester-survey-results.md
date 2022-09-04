@@ -49,10 +49,10 @@ Hence, our live lectures are online and limited to briefings only, while most co
  So, I hope you guys are able to manage even if I don't do live lectures covering all content.<br>
  As for F2F lectures, it is out of the question right now due to COVID rules, and might not be possible
  even after, due to the lack of venues that can support such a big class size :-(
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q3"/>
@@ -76,10 +76,10 @@ Can't comment. I don't watch them.<br><span class="text-info bg-info">..........
 
 Glad to see pre-recorded videos are generally well-received.
 Nevertheless, I hope to add more and also improve the existing ones in future semesters.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q2"/>
@@ -104,7 +104,7 @@ Can't comment. I have stopped attending them.<br><span class="text-info bg-info"
 ==Unlike most modules that use lectures as the 'first step' to learning the module content, our lecture briefings
  serve as a complementary 'top up'==, covering additional examples, motivations behind the topics, commentary on
  how to shape your attitudes related to the subject, anecdotes, etc.
-Hence, you can skip lecture briefings (or simply speed-watch the recording later) if you 
+Hence, you can skip lecture briefings (or simply speed-watch the recording later) if you
  are short of time or if you think they are not useful to you.
  Even the in-lecture quiz questions are 'optional' in the sense they are unlikely to make a
  difference in your final participation marks.<br>
@@ -112,10 +112,10 @@ Hence, you can skip lecture briefings (or simply speed-watch the recording later
  though, as I do not want to employ as a tutor someone who hasn't received the _full view_ of the module
  (I often talk about the goals/rationales of the module during lecture briefings
  -- not examinable but important nevertheless, especially for a future tutor).
-   
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q4"/>
@@ -140,7 +140,7 @@ Admittedly, our tutorials can feel slow, less efficient, or less active. If you 
   that prepare well for the tutorials and actively take part in tutorial discussions, this is indeed the case.
   I hope you still bear with us because ==the tutorial structure (like many other things in this module)
   is intended to _raise the lower bar of the whole class_, which is important when there is a major team project
-  (to reduce the skill gap between team members)==. 
+  (to reduce the skill gap between team members)==.
   * **We start with a 10-minute warm up** to give everyone at least a chance to familiarize with the tutorial tasks
     even if they haven't had time to look at them earlier (we don't want them to be left out totally).
   * **By requiring _everyone_ to respond via private messages**, we aim to get everyone to _think_ about the topic
@@ -151,7 +151,7 @@ Admittedly, our tutorials can feel slow, less efficient, or less active. If you 
     That said, we do want to have some verbal discussions to happen too. That's why we ask you to do the follow up
     discussions verbally.
   * **We monitor tutorial participation** because tutorials are used for ensuring that you all have achieved the desired
-    learning targets for the week. If not, slower students tend to neglect the theory part 
+    learning targets for the week. If not, slower students tend to neglect the theory part
     (in a misguided attempt to save time) and try to brute-force the project work, which wastes even more time,
     and also exacerbates the skill-gap problems in their teams.
   * So, while the number of questions we go through in each tutorial is fewer and the questions are simpler,
@@ -161,10 +161,10 @@ Admittedly, our tutorials can feel slow, less efficient, or less active. If you 
     stronger students getting less out of our tutorials than you are used to get from other modules, I hope
     you'll be generous and take a 'hit' here to allow your classmates to level up. You might even benefit yourself
     from their levelled-up contributions when you work with them in the team project.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q5"/>
@@ -191,10 +191,10 @@ The feedback for the module website is generally positive but some areas to impr
   of information in a way that fits everyone's expectations %%(e.g., some prefer more content to be more 'visual'
   while others prefer minimalistic presentation)%%,
   and I realize that ==it is not easy for you to consume that much of information== either.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q7"/>
@@ -222,10 +222,10 @@ The most common concern about this module is the workload.
     In particular, choose the ‘evolve’ option rather than ‘morph’ option (it’s still not too late to change).
     If you choose the ‘morph’ option, don’t plan to morph it too far away from AB3.<br>
     Reminder: there are no marks allocated for marking the product interesting, unique, cool, etc.<br>
-    Also, keep in mind that it is the quality that will count more than the quantity. 
+    Also, keep in mind that it is the quality that will count more than the quantity.
     In most cases the quantity is graded on an S/U basis (refer to the Week 6 tP briefing for more info).
     Aim to do less but do it really well.
-  * If you don't have time to study all topics, use the 
+  * If you don't have time to study all topics, use the
     [star ratings system](https://nus-cs2103-ay2122s2.github.io/website/admin/moduleExpectations.html#star-rating-system)
     to figure out which topics are higher priority.
   * That said, I know the workload concern is real, and I firmly believe that no module should take more than
@@ -233,10 +233,10 @@ The most common concern about this module is the workload.
     of practice (hence the high workload).<br>
     We've managed to reduce the workload of this module quite bit over the past semesters, and we'll continue to
     do so when we find ways to do that without compromising our learning outcomes.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q6"/>
@@ -260,10 +260,10 @@ Too slow. Please speed up a lot.<br><span class="text-info bg-info"></span><span
 The pace itself seems to be less of a problem compared to the workload.<br>
 Don't worry if you feel like the module is moving too fast; thanks to the iterative approach we use for covering topics,
  you'll get multiple chances to solidify your familiarity of a topic/tool.
-    
+
 </div>
-        
-        
+
+
 
 ---
 
@@ -290,7 +290,7 @@ Also: See [my comment on 'The workload'](#Q7).</markdown>
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>Good to have a clear way to know if the code we write matches what the teaching team wants for iP</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Functionality: the requirements are not strict unless we have stated otherwise. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Functionality: the requirements are not strict unless we have stated otherwise.
 
 Code quality: while  _some_ feedback will be given, we are hoping to train you to evaluate and self-correct code quality by yourself. We are providing you multiple opportunities to do that e.g., PR reviews, peer reviews of final submissions.</markdown>
 </span></box>
@@ -316,7 +316,7 @@ Code quality: while  _some_ feedback will be given, we are hoping to train you t
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>Pretty fast paced</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Unfortunately, yes the pace can be a bit too high at times. Hope you can manage. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Unfortunately, yes the pace can be a bit too high at times. Hope you can manage.
 
 See [my comment on 'The pace of the module'](#Q6).</markdown>
 </span></box>
@@ -467,10 +467,10 @@ But note that the tP GUI is not specifically graded for anything unless you choo
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>The workload is too heavy. 50+ online quiz questions and hundreds of lines of code per week makes me extremely tired. I need to spend 4 to 5 hours reading the online note and completing the quiz and another one to two days writing the IP. The project meeting takes another 2 hours per week. While the zoom lecture almost teaches nothing at all. The amount of workload is heavier than the sum of my other 3 core modules. 
+<markdown>The workload is too heavy. 50+ online quiz questions and hundreds of lines of code per week makes me extremely tired. I need to spend 4 to 5 hours reading the online note and completing the quiz and another one to two days writing the IP. The project meeting takes another 2 hours per week. While the zoom lecture almost teaches nothing at all. The amount of workload is heavier than the sum of my other 3 core modules.
 I would like to suggest reducing the number of quiz questions and cancelling the zoom lecture. And if possible, please provide us with a break.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Indeed, the workload is the biggest complaint. Do take advantage of the flexibility we have provided to reduce the worklaod. For example, the lecture is optional. You can skip it if it pushing you beyond the time you can allocate to this module. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Indeed, the workload is the biggest complaint. Do take advantage of the flexibility we have provided to reduce the worklaod. For example, the lecture is optional. You can skip it if it pushing you beyond the time you can allocate to this module.
 
 See [my comment on 'Lectures - Zoom briefings'](#Q2).
 
@@ -482,7 +482,7 @@ See [my comment on 'The workload'](#Q7).</markdown>
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>I think the module giving allowances in deadline of completing iP weekly tasks has been very reassuring and reduces stress, as I can focus on learning rather than rushing to finish tasks.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-) No need to stress too much about deadlines -- they are mostly there for you to see if you are keep pace or falling behind. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-) No need to stress too much about deadlines -- they are mostly there for you to see if you are keep pace or falling behind.
 
 But do plan to make the tP final submissoin deadline as that one is strict :-p</markdown>
 </span></box>
@@ -506,6 +506,7 @@ Also note that the recommended order is to learn the weekly topics _before_ doin
 </span></box>
 </td>
 </tr>
+</tbody>
 </table>
 
 <br>
@@ -524,7 +525,7 @@ Given below are some general responses to points you guys (and past students) ra
   the project is simply a sandbox to practice using various tools/techniques -- which means we have to wait till we
   had time to learn those tools/techniques before practicing them in the project. To give an example, you could have
   started the project early and used the code itself to understand the current AB3 design -- but because we waited
-  till we learned how to interpret UML diagrams, we now have a chance to practice using UML diagrams to understand 
+  till we learned how to interpret UML diagrams, we now have a chance to practice using UML diagrams to understand
   a new code base.
 * **JavaFX** (and the tech stack) While JavaFX is the de-facto UI technology for Java desktop apps,
   the chances of you using it in future is low, given most Java work tend to be back-end/server-side.
@@ -532,13 +533,13 @@ Given below are some general responses to points you guys (and past students) ra
   knowledge of it.<br>
   At the same time, it is good to get _some_ exposure to a GUI framework too.
   While JavaFX is not the best GUI framework, it has some similarities with GUI frameworks, and knowing it might help
-  you if you had to use one such GUI framework in future. 
+  you if you had to use one such GUI framework in future.
 * **Working on weekends**: I realize that having to work on the weekend is not ideal.
-  In our case it feels even worse because our lecture 
+  In our case it feels even worse because our lecture
   is on Friday and the tasks for the next week are released on Friday as a result. In theory, it is possible to
   not work on weekends nevertheless; but in practice, I can't imagine the typical SoC workload can be done
   without working through at least _some_ part of the weekend. It is one of the sacrifices one has to make to be in
   an in-demand field such as CS, especially if you don't have some programming experience already.<br>
   If it makes you feel better, I can't even remember the last time I did not have to work through the weekend :-(
-    
+
 </panel>

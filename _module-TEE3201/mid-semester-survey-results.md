@@ -42,10 +42,10 @@ Recorded lectures have the advantage of higher-speed viewing, immediate rewind-r
  be a drawback.<br>
 So, it's hard to pick a winner among these options. Hopefully, our current mix of modes is good enough to
  keep everyone reasonably happy :-)
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q2"/>
@@ -67,13 +67,13 @@ Can't comment. I have stopped attending them.<br><span class="text-info bg-info"
 **:fas-comment: My comments:**
 
 
-Good to see that lecture briefings are generally well-received. 
+Good to see that lecture briefings are generally well-received.
 Also keep in mind that they are meant to be 'briefings' only -- as the learning the full content is expected to be
 done at your own pace, using the textbook and the pre-recorded videos.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q3"/>
@@ -96,11 +96,11 @@ Can't comment. I don't watch them.<br><span class="text-info bg-info"></span><sp
 
 
 Good to see that pre-recorded lecture videos are generally well-received.
-I'll continue to improve the existing ones and add more videos. 
-    
+I'll continue to improve the existing ones and add more videos.
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q4"/>
@@ -127,10 +127,10 @@ The feedback for the module website seems to be generally positive but there are
   of information in a way that fits everyone's expectations %%(e.g., some prefer more content to be more 'visual'
   while others prefer minimalistic presentation)%%,
   and I realize that ==it is not easy for you to consume that much of information== either.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q6"/>
@@ -156,17 +156,17 @@ Too low. <br><span class="text-info bg-info"></span><span class="text-light bg-l
   That said, SE modules are usually heavy because learning SE skills needs a lot of practice.<br>
   I try to alleviate the workload problem by keeping deadlines fairly flexible and maintaining a low bar for
   the minimum you need to do to get a decent grade.<br>
-  It's OK to fall behind a bit when you are busy with other things, as long as you don't fall too far behind. 
+  It's OK to fall behind a bit when you are busy with other things, as long as you don't fall too far behind.
 * **If you have room for more work:**
   * Try to do more in the project: The project is open ended are you are encouraged to do as much as you want.
     You can refer to [Monty full description](https://nus-tee3201.github.io/2022/programming/chapters/monty.html) to find
     more things you can do with it.
   * Learn the optional topics: I have added a lot more optional topics to the second half of the semester.
     This means there is more to learn every week, if you have the capacity to do so.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q5"/>
@@ -188,15 +188,15 @@ Too slow. Please speed up a lot.<br><span class="text-info bg-info"></span><span
 
 
 * **If the pace is too fast for you:** Not to worry; thanks to the iterative approach we use for covering topics,
-  you'll get multiple chances to solidify your familiarity of a topic/tool. Do what you can every week and 
+  you'll get multiple chances to solidify your familiarity of a topic/tool. Do what you can every week and
   ==try not to fall too far behind== though.
-* **If the pace is too slow for you:** Also cover the optional topics. 
+* **If the pace is too slow for you:** Also cover the optional topics.
   If that's not enough, drop me a note with which topics/aspects you would like to leann more and I can suggest
   more resources for you.
-    
+
 </div>
-        
-        
+
+
 
 ---
 
@@ -251,6 +251,7 @@ See [my comment on 'The workload'](#Q6). </markdown>
 </span></box>
 </td>
 </tr>
+</tbody>
 </table>
 
 <br>
@@ -273,5 +274,5 @@ Given below are some general responses to points you guys (and past students) ra
   We do not do that in any of our SE modules.
   Instead, we train students to slowly learn how to self-judge your own code.
   In addition, we'll be teaching you some code quality guidelines that you can apply to your code later.
-    
+
 </panel>

@@ -1,7 +1,7 @@
 #### Exercise : Swap Ends
 
 Complete the functions as described below:
-* `swap_ends(item_list)`: swaps the first and the last items of the `item_list`. Note that the function should modify the given `item_list` list, not return a new list.  
+* `swap_ends(item_list)`: swaps the first and the last items of the `item_list`. Note that the function should modify the given `item_list` list, not return a new list.
 
 Notes:
 * You can follow the example of `set_head(item_list, new_head)` function which modifies the given `item_list` by setting its first element to `new_head`.
@@ -9,13 +9,14 @@ Notes:
 * You may assume the list has at least two elements.
 
 <table>
+<tbody>
 <tr>
   <td>
 
 ```python
 def set_head(item_list, new_head):
   item_list[0] = new_head
-  
+
 def swap_ends(item_list):
   pass # REPLACE THIS WITH YOUR CODE
 
@@ -31,7 +32,7 @@ print(items)
   </td>
   <td><br><br><br><br><br><br><br><br>&nbsp;→&nbsp;</td>
   <td><br><br><br><br><br><br><br><br><br>
-  
+
 ```{.no-line-numbers}
 ['parrot', 'fish', 'dog', 'rock']
 ['rock', 'fish', 'dog', 'parrot']
@@ -39,4 +40,5 @@ print(items)
 ```
   </td>
 </tr>
+</tbody>
 </table>

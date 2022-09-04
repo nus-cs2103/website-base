@@ -6,7 +6,8 @@
 
 {{ icon_example }} Here is the content of a simple CSV file %%(click [here](deliveries.csv) to download a copy)%% and how it looks like when opened in Excel.
 
-<table> 
+<table>
+<tbody>
 <tr>
   <td>
 
@@ -23,6 +24,7 @@
 <img src="images/deliveries.png" />
   </td>
 </tr>
+</tbody>
 </table>
 
 </box>
@@ -45,7 +47,7 @@
 {{ icon_example }} The code below shows how to use the `csv` module to read contents of a CSV file named `deliveries.csv`:
 
 ```python
-import csv 
+import csv
 
 deliveries_file = open('deliveries.csv') # open file
 deliveries_reader = csv.reader(deliveries_file) # create a Reader
@@ -65,7 +67,7 @@ As you can see, `Reader` object returns content of a line as a list object with 
 ...
 print(row)
 ...
-``` 
+```
 ... with the following line,
 ```python
 ...
@@ -89,12 +91,12 @@ Note that all values read from a CSV files come as strings. If they are meant to
 {{ icon_example }} In this example the 3rd value of each row is converted to an `int` before adding them up.
 
 ```python
-deliveries_file = open('deliveries.csv') 
-deliveries_reader = csv.reader(deliveries_file) 
+deliveries_file = open('deliveries.csv')
+deliveries_reader = csv.reader(deliveries_file)
 total = 0
 for row in deliveries_reader:
   # convert 3rd cell to an int and add to total
-  total = total + int(row[2]) 
+  total = total + int(row[2])
 
 print('Total quantity delivered:', total)
 deliveries_file.close()

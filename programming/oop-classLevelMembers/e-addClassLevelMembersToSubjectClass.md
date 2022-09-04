@@ -5,19 +5,20 @@ Add the following members to the `Subject` class in the code below so that the c
 * a class-level method `limit_reached(limit)` that returns `True` (type: `bool`) if the `total` is greater than or equal to the specified `limit`.
 
 <table>
+<tbody>
 <tr>
   <td>
 
 ```python
 class Subject:
-  
+
   def __init__(self, code, name):
     self.name = name
     self.code = code
-    
+
   def print_info(self):
     print(self.code, ':', self.name)
-    
+
 print('total subjects:', Subject.total)
 s1 = Subject('TEE3201', 'Software Engineering')
 print('total subjects:', Subject.total)
@@ -32,7 +33,7 @@ print(Subject.limit_reached(100))
 ```
   </td>
   <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom"> 
+  <td valign="bottom">
 
 ```{.no-line-numbers}
 total subjects: 0
@@ -46,23 +47,24 @@ True
 ```
   </td>
 </tr>
+</tbody>
 </table>
 
 <panel type="seamless" header="%%:fas-battery-quarter: Partial solution and hints%%">
 
 ```python
 class Subject:
-  
+
   # ADD `total` attribute here
-  
+
   def __init__(self, code, name):
     self.name = name
     self.code = code
     Subject.total = Subject.total + 1 # Note this line
-    
+
   def print_info(self):
     print(self.code, ':', self.name)
-    
+
   @classmethod
   def limit_reached(cls, limit):
     ... # ADD implementation

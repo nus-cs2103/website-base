@@ -1,6 +1,6 @@
 ### `for` Statements
 
-You can **use a `for` statement, together with the `range()` function, to repeat a code block a pre-determined number of times.** 
+You can **use a `for` statement, together with the `range()` function, to repeat a code block a pre-determined number of times.**
 
 Format:
 ```
@@ -13,9 +13,10 @@ for variable_used_as_index in range(number_of_times_to_repeat) :
 {{ icon_example }} the code below use a `for` loop to iterate three times. Note how the variable `i` is used as an indexing variable and how `i in range(3)` causes `i` to take values `0, 1, 2` over the three iterations.
 
 <table>
+<tbody>
 <tr>
   <td>
-  
+
 ```python
 for i in range(3):
   print(i, 'Knock knock, Penny!')
@@ -23,7 +24,7 @@ for i in range(3):
   </td>
   <td>&nbsp;→&nbsp;</td>
   <td>
-  
+
 ```
 0 Knock knock, Penny!
 1 Knock knock, Penny!
@@ -31,6 +32,7 @@ for i in range(3):
 ```
   </td>
 </tr>
+</tbody>
 </table>
 
 {{ icon_tip }} Note how the above `for` loop is equivalent to the following `while` loop but more concise.
@@ -58,7 +60,7 @@ while i < 3:
 
 **You can use `break` and `continue` in `for` loops as well**, with similar effects as in `while` loops.
 
-<tip-box> 
+<tip-box>
 
 {{ icon_example }} The code below totals the numbers entered by the user. It uses `range(5)` to limit the number of entries to 5. It uses a `break` to exit the loop if user hits <kbd>Enter</kbd> without entering a value. It uses a `continue` statement to skip negative numbers entered by the user.
 
@@ -67,20 +69,20 @@ while i < 3:
 total = 0
 for n in range (5):
   number_as_string = input('Enter a number (press enter to exit):')
-  
+
   # exit if user input is empty
   if number_as_string == '':
     print('Exiting as per user request...')
     break
-    
+
   # convert the input into an integer
   number_as_int = int(number_as_string)
-  
+
   # skip if the number is negative
   if number_as_int < 0 :
     print('Negative number, skipped')
-    continue 
-    
+    continue
+
   # update the total and print the running total
   total = total + number_as_int
   print('Running total:' + str(total))
@@ -102,7 +104,7 @@ While a range normally starts from `0` and goes until the specified end number, 
 
 **Loops can be nested.**
 
-<tip-box> 
+<tip-box>
 
 {{ icon_example }} The code below use two nested `for` loops to print multiplication tables for 2, 3, and 4.
 

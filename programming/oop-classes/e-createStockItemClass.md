@@ -3,14 +3,15 @@
 Define the `StockItem` class missing in the code below so that the code produces the output given on the right.
 
 <table>
+<tbody>
 <tr>
   <td>
 
 ```python
 # ADD StockItem class here
 # It should have an attribute: name
-# It should have a method: info() 
-    
+# It should have a method: info()
+
 a = StockItem('Apple')
 print(a.info())
 print(a.name)
@@ -21,7 +22,7 @@ print(b.info())
 ```
   </td>
   <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom"> 
+  <td valign="bottom">
 
 ```{.no-line-numbers}
 Item info: Apple
@@ -31,16 +32,17 @@ Item info: Bananas
 ```
   </td>
 </tr>
+</tbody>
 </table>
 
 <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
 
 ```python
 class StockItem:
-  
+
   def __init__(self, name):
     self.name = ...
-    
+
   def info(self):
     return ...
 ```

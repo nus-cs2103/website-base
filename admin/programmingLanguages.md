@@ -22,6 +22,7 @@ The exam expects you to know Java to the extent that you should be familiar with
 
 </td>
 </tr>
+</tbody>
 </table>
 
 <box>

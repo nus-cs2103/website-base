@@ -5,11 +5,11 @@ Complete the function given below, to behave as described by its docstring.
 ```python
 def shorten(text):
   """ Return a 10-character version of the string if it is longer.
-  
-  If text is longer than 10 characters, return the first four characters 
+
+  If text is longer than 10 characters, return the first four characters
   followed by '..' followed by the last four characters.
   If text is not longer than 10 characters, return text.
-  
+
   Example:
   shorten('1234567890abcd') returns '1234..abcd'
   """
@@ -18,12 +18,13 @@ def shorten(text):
 ```
 
 Example usage:
-<table> 
+<table>
+<tbody>
 <tr>
   <td>
 
 ```python
-print(shorten('1234'))    
+print(shorten('1234'))
 print(shorten('1234567890'))
 print(shorten('1234567890abcd'))
 ```
@@ -38,6 +39,7 @@ print(shorten('1234567890abcd'))
 ```
   </td>
 </tr>
+</tbody>
 </table>
 
 

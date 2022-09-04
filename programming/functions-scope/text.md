@@ -6,7 +6,7 @@
 
 **A _local scope_ is a scope that applies only during the execution of a function.** A local scope is created whenever a function is called. Parameters and variables that are assigned in the called function are said to exist in that function’s local scope. **A variable that exists in a local scope is called a _local variable_.** When the function returns, the local scope is destroyed, and these variables are forgotten. The next time you call this function, the local variables will not remember the values stored in them from the last time the function was called.
 
-A variable must be in the global scope or the local scope; it cannot be in both. 
+A variable must be in the global scope or the local scope; it cannot be in both.
 
 <sub>%%[Some parts of the above explanation were adapted from [_Automate the Boring Stuff_](https://automatetheboringstuff.com/chapter3/)]%%</sub>
 
@@ -21,7 +21,7 @@ Note the following rules about scope:
 
 **To modify a global variable within a local scope, use the `global` statement on that variable.**
 
-<tip-box> 
+<tip-box>
 
 {{ icon_example }} The `breed_cows` function below can increase the global variable `total_cows` to `10` from the local scope because it has a `global total_cows` statement. If you remove that statement, the last print statement will print `5` instead of `10`
 
@@ -40,9 +40,10 @@ print('total cows after breeding:', total_cows) # prints 10
 ```
 
 <table>
+<tbody>
 <tr>
   <td>
-  
+
 {{ icon_output }}
 ```{.no-line-numbers}
 total cows before breeding: 5
@@ -53,7 +54,7 @@ total cows after breeding: 10
   </td>
   <td>&nbsp;&nbsp;</td>
   <td>
- 
+
 {{ icon_output }} without the `global total_cows` statement
 ```{.no-line-numbers}
 total cows before breeding: 5
@@ -63,6 +64,7 @@ total cows after breeding: 5
 ```
   </td>
 </tr>
+</tbody>
 </table>
 
 <include src="tryYourOwn.md" boilerplate var-program="functions-breedCows" />

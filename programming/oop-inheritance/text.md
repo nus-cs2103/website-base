@@ -12,14 +12,14 @@ class ChildClassName(ParentClassName):
 
 {{ icon_example }} Consider the `Person` class below:
 
-<include src="inputOutput.md" boilerplate> 
+<include src="inputOutput.md" boilerplate>
 <span id="input">
 
 ```python
 class Person:
   def __init__(self, name):
     self.name = name
-    
+
   def print_info(self):
     print('My name is', self.name)
 
@@ -37,12 +37,12 @@ My name is Amy
 
 The `Teacher` class below inherits from the `Person` class given above.
 
-<include src="inputOutput.md" boilerplate> 
+<include src="inputOutput.md" boilerplate>
 <span id="input">
 
 ```python
 class Teacher(Person):
-  
+
   def teach(self):
     print(self.name, 'is teaching')
 
@@ -73,11 +73,11 @@ Observe how,
 
 **A child class can _override_ a method defined in the parent class.** That way, a child object can change a behavior defined in the parent class.
 
-<box> 
+<box>
 
 {{ icon_example }} Note how the `Student` class below overrides the `__init__()` method and the `print_info()` method of the parent class `Person`.
 
-<include src="inputOutput.md" boilerplate> 
+<include src="inputOutput.md" boilerplate>
 <span id="input">
 
 ```python{.no-line-numbers highlight-lines="2-4,9-10"}
@@ -85,10 +85,10 @@ class Student(Person):
   def __init__(self, name, matric):
     self.name = name
     self.matric = matric
-    
+
   def learn(self):
     print(self.name, 'is learning')
-    
+
   def print_info(self):
     print(self.name, 'is a student')
 
@@ -124,7 +124,7 @@ Ben is learning
 
 When overriding methods, you can reuse the parent's definition of the same method using the `super().` prefix.
 
-<box> 
+<box>
 
 ```python
 class Person:
@@ -133,7 +133,7 @@ class Person:
 ```
 {{ icon_example }} Given that `Person` class has the initializer method given above, the following two versions of the `Student` class are equivalent.
 
-<include src="inputOutput.md" var-arrow=" = " boilerplate> 
+<include src="inputOutput.md" var-arrow=" = " boilerplate>
 <span id="input">
 
 Override without reusing parent's method
@@ -162,21 +162,21 @@ class Student(Person):
 
 **Note that all python classes automatically inherits from the built-in class `object`** even if you did not specify it as the parent class. The `object` class has a `__str__()` method that you can ovrride in your classes to customize how the `print` function will print an object of your class.
 
-<box> 
+<box>
 
 {{ icon_example }} The `Book` class below overrides the `__str__()` method so that `Book` objects can be printed in a specific format.
 
-<include src="inputOutput.md" boilerplate> 
+<include src="inputOutput.md" boilerplate>
 <span id="input">
 
 ```python{highlight-lines="5-6,9"}
 class Book:
   def __init__(self, title):
     self.title = title
-    
+
   def __str__(self):
     return 'Book title: ' + self.title
-    
+
 book = Book('Python for Beginners')
 print(book)
 ```
@@ -196,28 +196,28 @@ Book title: Python for Beginners
 
 **A class can inherit from multiple classes.** If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.
 
-<box> 
+<box>
 
-<include src="inputOutput.md" var-arrow="" boilerplate> 
+<include src="inputOutput.md" var-arrow="" boilerplate>
 <span id="input">
 
 ```python{.no-line-numbers}
 class Person:
   def __init__(self, name):
     self.name = name
-    
+
   def print_info(self):
     print('My name is', self.name)
 ```
 ```python{.no-line-numbers}
 class Teacher(Person):
-  
+
   def teach(self):
     print(self.name, 'is teaching')
-    
+
   def print_info(self):
     print(self.name, 'is a teacher')
-    
+
 ```
 </span>
 <span id="output">
@@ -227,16 +227,16 @@ class Student(Person):
   def __init__(self, name, matric):
     super().__init__(name)
     self.matric = matric
-    
+
   def learn(self):
     print(self.name, 'is learning')
-    
+
   def print_info(self):
     print(self.name, 'is a student')
 ```
 ```python{.no-line-numbers highlight-lines="1"}
 class TeachingAssistant(Teacher, Student):
-  
+
   def grade(self):
     print(self.name, 'is grading')
 ```
@@ -246,6 +246,7 @@ class TeachingAssistant(Teacher, Student):
 {{ icon_example }} The `TeachingAssistant` class above inherits from both `Student` class and the `Teacher` class both of which inherit from the `Person` class. That means a `TeachingAssistant` object can use methods from classes `object`, `Person`, `Student`, `Teacher`, and `TeachingAssistant`.
 
 <table>
+<tbody>
   <tr>
   <td>
 
@@ -268,6 +269,7 @@ Elsie is grading
 ```
   </td>
 </tr>
+</tbody>
 </table>
 
 As both `Teacher` and `Student` classes have the `print_info()` method, the method from the `Teacher` class will be used as it comes first in the inheritance order `(Teacher, Student)`; that is why you see `Elsie is a teacher` in the output instead of `Elsie is a student`.

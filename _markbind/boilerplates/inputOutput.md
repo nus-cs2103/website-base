@@ -1,6 +1,7 @@
 {% set align="bottom" %}
 {% set arrow="→" %}
 <table>
+<tbody>
 <tr>
   <td valign="top">
 
@@ -12,4 +13,5 @@
 {{ output | safe }}
   </td>
 </tr>
+</tbody>
 </table>

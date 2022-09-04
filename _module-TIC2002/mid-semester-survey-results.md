@@ -42,10 +42,10 @@ Recorded lectures have the advantage of higher-speed viewing, immediate rewind-r
  be a drawback.<br>
 So, it's hard to pick a winner among these options. Hopefully, our current mix of modes is good enough to
  keep everyone reasonably happy :-)
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q2"/>
@@ -72,10 +72,10 @@ The feedback for the module website is generally positive but some areas to impr
   of information in a way that fits everyone's expectations %%(e.g., some prefer more content to be more 'visual'
   while others prefer minimalistic presentation)%%,
   and I realize that ==it is not easy for you to consume that much of information== either.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q4"/>
@@ -100,17 +100,17 @@ Too low. <br><span class="text-info bg-info"></span><span class="text-light bg-l
   experience, and also if you have a day job too.<br>
   That said, SE modules are usually heavy because learning SE skills needs a lot of practice.<br>
   I try to alleviate the workload problem by keeping deadlines fairly flexible and maintaining a low bar for
-  the minimum you need to do to get a decent grade. 
+  the minimum you need to do to get a decent grade.
 * **If you have room for more work:**
   * Try to do more in the project: The project is open ended are you are encouraged to do as much as you want.
     You can refer to [Duke full description](https://nus-tic2002-2022.github.io/website/se-book-adapted/projectDuke/index.html) to find
     more things you can do with it.
   * Learn the optional topics: I have added a lot more optional topics to the second half of the semester.
     This means there is more to learn every week, if you have the capacity to do so.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q3"/>
@@ -132,15 +132,15 @@ Too slow. Please speed up a lot.<br><span class="text-info bg-info"></span><span
 
 
 * **If the pace is too fast for you:** Not to worry; thanks to the iterative approach we use for covering topics,
-  you'll get multiple chances to solidify your familiarity of a topic/tool. Do what you can every week and 
+  you'll get multiple chances to solidify your familiarity of a topic/tool. Do what you can every week and
   ==try not to fall too far behind== though.
 * **If the pace is too slow for you:** I have add more optional topics to the second half of the semester,
   and made all pre-recorded videos for future lectures available (previously, videos were available upto only
   two weeks into the future). This means you should be able to move faster through the weeks if you wish.
-    
+
 </div>
-        
-        
+
+
 
 ---
 
@@ -184,7 +184,7 @@ Also, the teaching team is highly responsive and proactively keeps track of our 
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>There are a couple of things that we need to do every week. I like to break them down into - 
+<markdown>There are a couple of things that we need to do every week. I like to break them down into -
 1. studying the lecture topics to answer coursemology questions (practical),
 2. studying the lecture topics that are not related to coursemology questions (theory),
 3. working on the individual project.
@@ -243,6 +243,7 @@ As for Intellij, do check out the videos we have provided and let us know if you
 </span></box>
 </td>
 </tr>
+</tbody>
 </table>
 
 <br>
@@ -265,5 +266,5 @@ Given below are some general responses to points you guys (and past students) ra
   We do not do that in any of our SE modules.
   Instead, we train students to slowly learn how to self-judge your own code.
   In addition, we'll be teaching you some code quality guidelines that you can apply to your code later.
-    
+
 </panel>

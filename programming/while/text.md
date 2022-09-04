@@ -12,6 +12,7 @@ while condition :
 {{ icon_example }} the code below prints 'Hello' 3 times (i.e., the loop is executed for 3 iterations), followed by 'Done'.
 
 <table>
+<tbody>
 <tr>
   <td>
 
@@ -25,7 +26,7 @@ print('Done')
   </td>
   <td>&nbsp;→&nbsp;</td>
   <td>
-  
+
 ```
 Hello
 Hello
@@ -38,6 +39,7 @@ Done
 
   </td>
 </tr>
+</tbody>
 </table>
 
 
@@ -74,11 +76,11 @@ while counter < 3:
 </tip-box>
 
 <include src="exercisePanel.md" boilerplate var-title="Vending Machine - Add Loop" var-file="e-vending-oneCoin.md" />
-<include src="exercisePanel.md" boilerplate var-title="Vending Machine - Accept Multiple Coins" var-file="e-vending-multipleCoins.md" />  
+<include src="exercisePanel.md" boilerplate var-title="Vending Machine - Accept Multiple Coins" var-file="e-vending-multipleCoins.md" />
 
 **You can use a `break` statement to break out of a loop.**
 
-<tip-box> 
+<tip-box>
 
 {{ icon_example }} The code below uses the `break` statement to break out of the loop when the password given is `abcd`. Without the `break` statement, the loop will repeat forever because the condition in `while True:` is always `True`.
 
@@ -105,11 +107,11 @@ print('Password correct. You may proceed.')
 
 </panel>
 
-<include src="exercisePanel.md" boilerplate var-title="Vending Machine - Allow Abort" var-file="e-vending-allowAbort.md" /> 
+<include src="exercisePanel.md" boilerplate var-title="Vending Machine - Allow Abort" var-file="e-vending-allowAbort.md" />
 
 **You can use a `continue` statement to skip the remainder of the current iteration** and go back to the `while` condition.
 
-<tip-box> 
+<tip-box>
 
 {{ icon_example }} The code below is for reading three words from the user and printing all three at the end. It uses the `continue` statement to skip the remainder of the iteration if the word entered is too short (i.e., shorter than 4 letters).
 

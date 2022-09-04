@@ -16,16 +16,17 @@ print('Your balance:', coin_value - price)
 {{ icon_tip }} Note how the above code uses `input` function with a string argument e.g., `input('Enter a coin:')` to show the string to the user and read the input from the user at the same time.
 
 <table>
+<tbody>
 <tr>
   <td>
-  
+
 ```python
 name = input('Input a name:')
 ```
   </td>
   <td>&nbsp;→&nbsp;</td>
   <td>
-  
+
 ```
 Input a name: John
 ```
@@ -33,7 +34,7 @@ Input a name: John
 </tr>
 <tr>
   <td>
-  
+
 ```python
 print('Input a name:')
 name = input()
@@ -41,21 +42,23 @@ name = input()
   </td>
   <td>&nbsp;→&nbsp;</td>
   <td>
-  
+
 ```
 Input a name:
 John
 ```
   </td>
 </tr>
+</tbody>
 </table>
 
-{{ icon_tip }} Also note how the above code uses `print()` with two arguments, one an integer and one a string. The `print()` method can take multiple arguments and the arguments can be of different types. Note that the ==output will have a space between each argument==. 
+{{ icon_tip }} Also note how the above code uses `print()` with two arguments, one an integer and one a string. The `print()` method can take multiple arguments and the arguments can be of different types. Note that the ==output will have a space between each argument==.
 
 <table>
+<tbody>
 <tr>
   <td>
-  
+
 ```python
 print('ABC', 3, 4.50)
 print('ABC' + str(3) + str(4.50))
@@ -64,7 +67,7 @@ print('ABC' + ' ' + str(3) + ' ' + str(4.50))
   </td>
   <td>&nbsp;→&nbsp;</td>
   <td>
-  
+
 ```
 
 ABC 3 4.50
@@ -73,6 +76,7 @@ ABC 3 4.50
 ```
   </td>
 </tr>
+</tbody>
 </table>
 
 Example output from the code:
