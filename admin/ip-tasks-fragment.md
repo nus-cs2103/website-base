@@ -217,8 +217,10 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 * Note that while you will be reusing the same <tooltip content="i.e., the cloned repo in your computer">_local repo_</tooltip> and the same <tooltip content="i.e., the one you forked to your GitHub account last semester">_forked remote repo_</tooltip>, you will be using a new <tooltip content="i.e., the repo you PR to">_upstream repo_</tooltip> we have set up for this semester. As a result, ==you need to create a new PR== from your fork to the new upstream repo, as given below.{% endif %}
 * Create a <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from your fork to the upstream repo. Note the following:
   * Create the PR from the `master` branch of your fork to the `master` branch of the upstream repo ({{ url_module_org }}/{{ ip_repo_name }}){% if tic4002 %}==Be careful to choose the new upstream repo to receive the PR.=={% endif %}
-  * Set the PR name as `[{Your name}] iP` e.g., `[John Doe] iP` %%If you are reluctant to give full name, you may give the first half of your name only%%.<br>
-   You may leave the description as empty.
+  * Set the PR name as `[{Your full/partial name or your Github username}] iP`<br>
+    e.g., `[Richard Mathews Chee] iP` or `[Rich ... hee] iP` or `[TheRichMat] iP`<br>
+    %%Note that the PR name will be publicly visible.%%<br>
+    You may leave the description as empty.
   * If you created the PR correctly, it should appear in the list of PRs [here]({{ url_module_org }}/{{ ip_repo_name }}/pulls).
   * Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
 
