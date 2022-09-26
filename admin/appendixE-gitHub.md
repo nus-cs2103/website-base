@@ -283,7 +283,7 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * **Formalize the project plan** by assigning relevant issues to the corresponding milestone.
 
-* **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked. 
+* **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonably sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked. 
   * A typical task should be small enough for one person to do in a few hours. %%eg.,%%
     * %%{{ icon_dislike }} Bad (reasons: not a one-person task, not small enough): `Write the Developer Guide`%%
     * %%{{ icon_like }} Good: `Update class diagram in the Developer Guide for {{ version_final }}`%%

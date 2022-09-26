@@ -102,6 +102,18 @@ Also note that given there's a feature freeze in {{ version_final }}, some lower
 </box>
 </div>
 {#====================================================================================================================#}
+<div id="cs2103-week7-intro">
+
+<box type="tip" icon=":fab-git-alt:" icon-size="3x" seamless>
+
+<br>++**Start using Git via the CLI**++{.text-success .font-monospace}
+
+If you have been using SourceTree (or other GUI) for Git before, we strongly recommend that you ==move towards using the CLI to perform Git tasks== in the second half of the semester. Doing so will strengthen your Git knowledge (because CLI takes you closer to what's actually happening, while GUIs might hide such details).<br>
+But you can continue to use your favorite Git GUI for a more 'visual' view of your repo, side-by-side with the CLI e.g., from SourceTree, you can open a gitbash terminal, run the command in that terminal, and see the result in the GUI.
+</box>
+
+</div>
+{#====================================================================================================================#}
 <div id="cs2103-week8-intro">
 
 <box>

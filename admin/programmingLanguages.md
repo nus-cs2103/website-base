@@ -4,6 +4,7 @@
 <div id="main">
 
 <table class="two-column-content">
+<tbody>
 <tr>
 <td width="160px">
  <img src="{{baseUrl}}/admin/images/JamesGosling.png" width="150px">
