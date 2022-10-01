@@ -32,9 +32,9 @@ I have no strong preference between the three options<br><span class="text-info 
 **:fas-comment: My comments:**
 
 
-Good to note that most are OK with the current mode. Now that we now allow you to attend the lecture F2F if you wish.
+Good to note that most are OK with the current mode. Note that we now allow you to attend the lecture F2F if you wish.
 But we will continue to limit the live lecture to a briefing only, and use pre-recorded videos to complement the
-live lectures, as such a 'blended learning' approach is most suitable for a mixture of part-time and full-time students. 
+live lectures, as such a 'blended learning' approach is suitable for a mixture of part-time and full-time students. 
     
 </div>
         
@@ -132,8 +132,8 @@ Good to see that the pace is mostly manageable for most too.
   covering topics, you'll get multiple chances to solidify your familiarity of a topic/tool.
   Do what you can every week and ==try not to fall too far behind== though.
 * **If the pace is too slow for you:** I have add more optional topics to the second half of the semester,
-  and made all pre-recorded videos for future lectures available (previously, videos were available upto only
-  two weeks into the future). This means you should be able to move faster through the weeks if you wish.
+  and made all pre-recorded videos for future lectures available.
+   This means you should be able to move faster through the weeks if you wish.
     
 </div>
         

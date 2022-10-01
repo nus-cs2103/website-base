@@ -228,9 +228,11 @@ This phase is for you to respond to the bug reports you received.
 
 <box type="important" >
 
-****This is not a bug; it's fine the way it is!**** Everytime you say that in response to a legitimate bug report, you are saying something about your own standard of work as s software engineer. Don't set that standard too low, which goes totally against what we are trying to achieve in this module.
+****This is not a bug; it's fine the way it is!**** Everytime you say that in response to a legitimate bug report, you are saying something about your own standard of work as a software engineer. Don't set that standard too low, which goes totally against what we are trying to achieve in this module.
 
-**:fas-check: Yes, that needs fixing!** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that needs fixing", accept it graciously as a bug, even if you can come up with _some_ argument for it not being a bug. Your professional integrity is more valuable than a measly fraction of a mark that you might lose.
+**:fas-check: Yes, that needs fixing!** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that needs fixing", accept it graciously as a bug, even if you can come up with _some_ argument for it not being a bug. Your professional integrity is more valuable than a measly fraction of a mark that you might lose.<br>
+  Even when you still want to defend the behavior being labelled as problematic, instead of pretending that the behavior was a deliberate choice to begin with, you can say something like,
+  > "Thx for raising this. Indeed it didn't occur to us. But now that we have thought about it, we still feel .."
 
 **_Some_ bugs are 'expected'.** Given the short time you had for the tP and your inexperience in SE team projects, this work is not expected to be totally bug free. The grading scheme factors that in already -- i.e., your grade will not suffer if you accept a few bugs in this phase.
 </box>
@@ -414,7 +416,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 **Don't feel upset if the dev team did not totally agree** with most of the bugs you reported. That is to be expected, given you had very short time to make those bug decisions while the dev team had a lot more time to deliberate about them. Some may have given unreasonable (in your opinion) arguments against your bug reports; not to worry, just give your counter-arguments and leave it to the teaching team to decide (in the next phase) which position is more reasonable.
 
 However, ==if the dev team's argument is not too far from 'reasonable', **it may be better to agree than disagree**==.<br>
-  Reason: an incorrect counter argument at this phase will lower your _accuracy_ more than an incorrect decision made during the testing phase (because you now have more time to think about the bug).
+  Reason: an incorrect counter argument at this phase will lower your _accuracy_ more than an incorrect decision made during the testing phase (because you now have more time to think about the bug) i.e., changing your position after you had more time to think of it and after having seen more information is encouraged, compared to sticking to your initial position 'no matter what'.
 </box>
 </div>
 

@@ -589,7 +589,9 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 
 <box type="tip" seamless>
 
-**The above DG sections should cover the _full requirements_ of the product**, some of which might not get implemented by the end of this semester. Furthermore, these sections will be graded at the final project evaluation, and any bugs in the content can cost you marks at that point. The panel below gives some relevant DG bug examples you can lookout for:
+**The above DG sections should cover the _full requirements_ of the product**, some of which might not even get implemented by the end of this semester i.e., do not limit to just the requirements you intend to implement in the next iteration. Reason: All identified requirements need to be documented for future reference.
+  
+Furthermore, these sections will be graded at the final project evaluation, and any bugs in the content can cost you marks at that point. The panel below gives some relevant DG bug examples you can lookout for:
 
 <panel header="Admin {{ icon_embedding }} Tp Grading → Examples of DG Bugs (extract)" minimized>
 
