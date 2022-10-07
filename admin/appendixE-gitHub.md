@@ -289,8 +289,8 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
     * %%{{ icon_like }} Good: `Update class diagram in the Developer Guide for {{ version_final }}`%%
 
   * There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. %%eg.,%%
-    * %%{{ icon_dislike }} Bad:`Implementing parser ` (reason: too big).%%
-    * %%{{ icon_like }} Good:`Implementing parser support for adding of floating tasks`%%
+    * %%{{ icon_dislike }} Bad:`Implement parser ` (reason: too big).%%
+    * %%{{ icon_like }} Good:`Implement parser support for adding events`%%
 
   * Do not track things taken for granted. %%e.g., `push code to repo` should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.%%
 
