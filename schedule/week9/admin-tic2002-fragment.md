@@ -22,7 +22,14 @@
 
 <box type="info" seamless>
 
-The `A-Gradle` project increment given below requires basic knowledge of git branching (covered in the previous week).
+The `A-Gradle` project increment given below requires you'll need to pull a branch from the [upstream duke repository]({{ url_module_org }}/{{ ip_repo_name }}).<br>
+See the panel below on how to pull a branch from another remote repo, but note,
+
+* the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
+* the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
+* the branch to pull is `add-gradle-support`
+
+   {{ embed_topic("../../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Wroking with multiple remotes**", "2") }}
 </box>
 
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Gradle`: Gradle**" var-fragment="extensions-fragment.md#A-Gradle" />

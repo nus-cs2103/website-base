@@ -50,6 +50,7 @@ The final exam has two types of questions:
 
 <div tags="m--cs2103 m--tic2002 m--tee3201">
 
+* The exam is open-book.
 * The exam will be done online.
 * ==**We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)**==, combined with the deviations/refinements given in the section below. Please read the SOP carefully and ensure you follow all instructions.
 
