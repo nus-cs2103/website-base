@@ -4,7 +4,7 @@
 <div id="main">
 
 
-<p class="lead">There is no midterm exam. Information about the final exam is given below.</p>
+<p class="lead">There is no midterm exam. Information about the final exam (which counts for {{ marks_exam }}% of the final grade) is given below.</p>
 
 {% if (current_week | int) < 11 %}
 <box type="important">
@@ -13,8 +13,6 @@ Instructions below are from the previous semester. Will be updated closer to the
 </box>
 {% endif %}
 
-
-* The final exam will be as per the normal exam schedule, and will count for {{ marks_exam }}% of the final grade.
 
 <div tags="m--cs2113">
 
@@ -50,38 +48,38 @@ The final exam has two types of questions:
 
 <div tags="m--cs2103 m--tic2002 m--tee3201">
 
-* The exam is open-book.
-* The exam will be done online.
-* ==**We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)**==, combined with the deviations/refinements given in the section below. Please read the SOP carefully and ensure you follow all instructions.
+1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office. You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ module }}) as well.
+1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**==, which can connect to the NUS wifi network.<br>
+  Please use these resource if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
+   * [slides](https://wiki.nus.edu.sg/x/daBJCw) (refer to the slides on _On-Campus exam_)
+   * [video](https://wiki.nus.edu.sg/x/tgg_EQ) (refer to the _Examplify Student Briefing_ video)
+   * try a few practice exams provided in the above two
+   * write to NUS CIT (citbox25@nus.edu.sg) if you run into any technical issues.
+   * if you do not have a working laptop for the exam, please contact IT Care itcare@nus.edu.sg directly for a laptop loan (for exam purpose only)
+1. ==**Not required to record the screen**.==
+1. **The exam is open-book.<br>
+   Soft/hard copies of notes and any written notes are allowed.**
+   You may use any hard copies or written materials too.<br>
+   **No Internet access** will be allowed during the exam, as Examplify will be configured to disable Internet access.
+1. **Download the exam (both parts) before you come to the exam**. We'll give you the password for opening the exam paper at the starting time of the exam.
+1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
-## SOP deviations/refinements
+<div class="indented-level2">
+  <panel type="danger" header="**Submitting feedback for a question:**" expanded id="submitting-feedback">
 
-1. **Tools: LumiNUS, Zoom, Microsoft Teams (MST), PDF scanner**, PDF reader.
-1. **The webcam view should capture all four** of these: your face (side view, ==no mask==), your hands, the working area of the table, and the entire screen area of your active screen. Here is an example:<br>
-  <img src="images/zoomCameraExample.png" width="367"/>
-1. ==**Recording of your PC screen** is not required.==
-1. **Only one computer screen** allowed. If you have multiple screens, switch off except one. It is better if you can physically remove unused screens if possible %%e.g., do not keep a switched off tablet on the table%%.<br>
-  You may split the screen though i.e., show module website in one half and the quiz in the other half.
-1. **You may not use a second laptop/computer as the web cam.** Use either an external webcam or a mobile phone instead. %%Reason: the screen of that second computer will not be captured in the video feed.%%
-1. **Not allowed to use the printer or other devices during the exam.**
-1. **You <span class="text-success">may use headphones</span> during the exam.**
-1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
-  You may use any hard copies or written materials too.
-1. **The Browser should only be used to access LumiNUS and the module website{% if not tee3201 %} (including relevant se-education.org pages %%e.g., Java coding standard%%){% endif %}.** ==Accessing other websites is not allowed==.<br>
-  Do not use the browser to view PDFs. %%Reason: viewing PDF files in the browser makes it harder for invigilators to detect students accessing unauthorized websites.%%
-1. **Use Zoom private messages to communicate with the invigilator. Use Microsoft Teams to communicate with the prof.** Communicating with others is not allowed, except with NUS IT staff (for tech help).
-1. **The quiz will not appear on LumiNUS until a few minutes before we release the password**. Wait until we announce that the quiz is available to see.
-1. **When the invigilator asks you to do an _identity check_**, turn your face towards the camera (<span class="text-danger">do not adjust the camera position</span>), move closer to the camera, and hold the pose until the invigilator tells you to go back to your working position.
+  <img src="images/examplify-feedback.png" width="350" />
 
-1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'justification' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
+  1. Click on `TOOL KIT`.
+  2. Click on the `NOTES` tab, if it is not selected already.
+  3. Type in your feedback in the text box.
+  4. ==Tick the `REQUEST FEEDBACK` checkbox.== <span class="text-danger">If you don't, the note will not be saved!!!</span>
 
-1. **If you encounter a serious problem** that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), PM the invigilator using Zoom private chat (failing that, MS Teams).
+  </panel><p/>
+</div>
 
-1. **If your computer crashed/restarted** during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.{% if cs2103%}
 
-1. **The zoom link and the invigilator info** will be distributed via LumiNUS gradebook at least 24 hours before the exam.{% endif %}
+9. **Bring your computer fully charged** (and bring the charger too), although some charging points will be available at the exam venue.
 
-1. **Consent to invigilator un-muting your mic without asking for your permission first** if Zoom asks for your consent for that feature to be enabled. This will allow the invigilator to verify your compliance with 'no communications with others' rule, without disturbing you during the exam. This is an NUS requirement for exams.
 
 ## Format
 <div tags="m--cs2103 m--tic2002 m--tee3201">
@@ -90,35 +88,62 @@ The final exam has two types of questions:
 
 ### Final exam - part 1
 
-* A LumiNUS quiz containing 16 MCQ questions. All questions are estimated to be equal size/difficulty.
+* A quiz containing 16 MCQ questions. All questions are estimated to be equal size/difficulty.
 * You only need to answer 15 questions correctly to get full marks. The extra question is there to cushion you against careless mistakes or misinterpreting a question.
 * Questions will appear in random order.
 * You will not be able to go back to previous questions.<br>
   %%Reasons:<br>
-  1\. to minimize opportunities for collusion<br>
-  2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
+  1\. To minimize opportunities for collusion or over-the-shoulder copying from others.<br>
+  2\. Not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
 * Duration: **{{ 45 if tic2002 else 35 }} minutes** <span tags="m--cs2103">(recommended: allocate 2 minutes per question, which gives you a 3 minutes buffer)</span>
-* You are required to give a justification/rationale for your answer. ==The question will specify what should be included in the justification. **Answers without the correct justification may not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) with missing/incorrect justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.
-* Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
+* Most MCQ question have a short-answer follow up question.
+**Use the 'NOTES' feature of Examplify to answer the follow-up question** (explained above), repeated below for your reference:
+
+<div class="indented">
+<panel type="danger" header="**Answering the follow-up question:**" minimized>
+
+<include src="exams-f2f.md#submitting-feedback" />
+</panel>
+</div><p/>
+
+* Here is an example question. The answer is `a` and the answer to the follow-up question can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
 
-<panel haader="A sample question" expanded >
+<panel header="Sample question 1" expanded >
 
 Choose the incorrect statement.
 
-<span class="text-info">[Justification: why is it incorrect?]</span>
+<span class="text-info">[Follow-up question: Why is it incorrect?]</span>
 - ( ) a. Software engineering projects always use OOP.
 - ( ) b. Some software engineering projects can be large and complex.
 - ( ) c. Some software engineering projects can go on for many years.
 - ( ) d. Software projects can involve people who are not software engineers.
+- ( ) e. Software engineering projects can deliver the end product incrementally.
 
 </panel>
 <p/>
 </div>
 
-* {{ icon_tip }} Almost all questions will ask you to choose the INCORRECT statement and justify why it is incorrect.
+* Here is another example question. Note the ==[**SELECT ALL**]== which tells you that this question can have multiple correoct answers and you need to select all of them i.e., it is a checkbox type question<br>
+The answer is `C`, `D` (answer to teh follow-up question: `A` and `B`).
 
-* There will be a 5-minutes toilet break after this part
+<div class="indented-level2">
+
+<panel header="Sample question 2" expanded >
+
+==[**SELECT ALL**]== Which of these are UML diagrams depicting behavior (as opposed to structure)?.
+
+<span class="text-info">[Follow-up question: Which two are closely related to each other?]</span>
+
+A. Class diagrams.<br>
+B. Object diagrams.<br>
+C. Activity diagrams.<br>
+D. Sequence diagrams.<br>
+E. Gantt charts.
+
+</panel>
+<p/>
+</div>
 
 <div tags="m--cs2103">
 
@@ -127,7 +152,7 @@ Choose the incorrect statement.
 * You will be asked to draw some UML diagrams, **to be hand-drawn on paper** (not on a tablet). You may use pencils if you wish.
 * Duration: 20 minutes
 * The questions will be in an encrypted PDF file that will be given to you in advance. The password will only be given at the start of this section.
-* At the _end_ of the exam (i.e., after all three parts are over), you will upload a scanned copy to LumiNUS. Do not do any scanning/uploading at this time.
+* At the _end_ of the exam (i.e., after all three parts are over), you need to submit the diagrams.
 * These diagrams will not be graded directly. Instead, you will use them when answering part 3 of the exam.<br>
   However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.
 </div>
@@ -138,24 +163,7 @@ Choose the incorrect statement.
 * Some questions will refer to the UML diagrams that you drew in part 2.
 * You _may_ modify your UML diagrams during this time. %%Reminder: diagrams are not graded.%%
 * You may refer the PDF file used in part 2 during this part too.
-* **Show the diagram to the camera** at the end of this part, when the examiner asks you to.
-* Due to the above point, you will have to stay back in Zoom until the full exam is over (==not allowed to leave early==).
-* Due to the above point, you may want to have something to read, in case you finish early. ==You are not allowed to use other devices or use the computer to do other things even if you have finished the exam==.
-* After the exam, scan and **upload the diagrams you drew in part 2 onto LumiNUS**, as a single PDF file, **within an hour**. The file name does not matter. {% endif %}
-
-<div tags="m--cs2103">
-
-**{{ icon_info }} Identity checks:** Note that there will be mass identity at the start of the exam.
-
-<div class="indented">
-
-<panel header="Identity check info" minimized>
-
-<include src="tp-pe-fragment.md#identity-check-info" />
-</panel>
-
-</div>
-</div>
+{% endif %}
 
 </div>
 

@@ -771,7 +771,7 @@
  'CS2103T-W16-4': 'Insurance agents.',
  'CS2103T-W17-1': 'Travelers with a bucket list, who wish to be able to plan their itineraries, bookings, and costs efficiently.',
  'CS2103T-W17-2': 'This product is for students who have trouble budgeting, thus would like to improve on their budgeting by identifying where they are overspending and setting budget goals.',
- 'CS2103T-W17-3': 'NUS Professors who are module coordinators',
+ 'CS2103T-W17-3': 'NUS Teaching Assistants',
  'CS2103T-W17-4': 'CS students who want to keep track of the list of internships that the student has applied to and the status of the application.'
 }%}
 
@@ -866,7 +866,7 @@
  'CS2103T-W16-4': 'Offer client management features specific to the needs of insurance agents (view -> tags to tag the client, user definable tags) Fast shortcuts, like vim, for power users (tab completion, flags eg view -s to sort) Nice GUI for overview of contacts by category Help users with their time management (calendar)',
  'CS2103T-W17-1': 'Users will be able to add locations that they want to visit to their itinerary, and get more information about the places they want to visit, which allows them to efficiently plan their schedule and budget for the trip.',
  'CS2103T-W17-2': 'Empower students with the ability to make sensible financial decisions in their budgeting. Provides an overview of their own expenditures and saving in a graphical manner for easy comprehension by those who do not excel in math',
- 'CS2103T-W17-3': "It is currently tough to keep track of all the students and the tutors for each course, especially for courses such as GEA1000 where there are more than 1000 students. Professors might find the process tedious having to keep track of all the admin issues as navigating school resources such as LumiNUS is a mouse-intensive process. If there are any changes, i.e. a new student was to enter or leave the course mid-semester, it would be tough to update it. The professors might want to assign tasks to students/tutors and keep track of it as well, and we would like AB3 to be able to implement such functions as well. Hence, we want to evolve AB3 such that the fast-typist professors are able to search up the students and tutors in their courses, as well as the tasks assigned to each of them more efficiently.",
+ 'CS2103T-W17-3': "Make it convenient for TAs to execute their teaching duties as this app will help them keep track of their responsibilities, their students' progress and schedules for the ongoing semester. TAs can easily keep track of statistics and identify which students need help.",
  'CS2103T-W17-4': 'Difficulty of keeping track of internship applications currently. As CS students, we to be able to easily keep track of the list of internships we applied to, respectively update the status of the application, find contact information and potentially view our interview dates.'
 }%}
 

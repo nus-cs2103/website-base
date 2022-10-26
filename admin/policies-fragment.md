@@ -21,8 +21,9 @@ As most of the work is graded individually, it is OK to do less or more than equ
 
 <div id="policy-validAbsences">
 
-There is no need to inform us. If you miss a lecture/tutorial for a valid reason, just do your best to catch up. We'll be happy to help if required. An occasional absence or two is not expected to affect your participation marks.   
-Only if you fail to earn full marks for participation we will consider giving an alternative avenue to earn marks missed due to the absences.   
+There is no need to inform us. If you miss a lecture/tutorial/task for a valid reason, just do your best to catch up. An occasional absence or two is not expected to affect your marks, as the marking scheme already has built-in buffers to absorb such occasional absences/lapses.
+
+Let us know only if you fail to earn full marks for participation due to such a reason, in which case we will consider giving an alternative avenue to earn marks missed due to the absences.
 
 </div>
 
@@ -57,7 +58,7 @@ The promptness of a reply is even more important when the email is requesting yo
 
 <div id="policy-publishingSubmissions">
 
-The source code are publicly available and are available for reuse by others without any restrictions.   
+The source code are publicly available and are available for reuse by others without any restrictions. 
 Is publishing submissions unfair to the author? We don't think so. If you were the first to think of something your peers are willing to adopt later, that means you are already ahead of them and they are unlikely to earn more marks by adopting your ideas.
 
 </div>
@@ -73,7 +74,7 @@ If you submit code (or adopt ideas) taken from elsewhere (**you can even reuse e
 
 Detection: 
 
-* Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables. 
+* Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables.
 * As all your work is publicly visible on GitHub, sooner or later somebody will notice the plagiarism.
 
 Penalties:
@@ -107,8 +108,8 @@ Penalties:
 Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module %%i.e., not applicable outside the module (outside the module, you should follow the rules specified by your employer and the license of the reused work)%%
 
 
-If you **used a third party library**: 
-* iP/tP: Mention in the `README` file (under the _Acknowledgements_ section) 
+If you **used a third party library**:
+* iP/tP: Mention in the `README` file (under the _Acknowledgements_ section)
 * tP: Mention in the <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented
 
 

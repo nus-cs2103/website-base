@@ -21,17 +21,18 @@ While the info below provides you what to do and what not to do in {{ version_fi
 
 {{ icon_tick_green }} fixing bugs (but not _feature flaws_)<br>
 {{ icon_tick_green }} improving documentation<br>
-{{ icon_tick_green }} ~~purely cosmetic enhancements e.g., alignments, style changes~~ (not allowed from this semester)<br>
 {{ icon_tick_green }} improving code quality<br>
 {{ icon_tick_green }} improving tests<br>
 {{ icon_tick_green }} removing features
 
-{{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span> adding/changing features.
+{{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span><br>
+{{ icon_x_red }} adding/changing features<br>
+{{ icon_x_red }} any UI changes (even purely cosmetic enhancements e.g., alignments, style changes are not allowed).
 
 
 **FAQs:**
-* **Q:** Can we add a missing validity check for a user input?<br>
-**A:** Yes, but only if its absence causes the software to mis-behave (i.e., it's omission is a bug).
+* **Q:** Can we add a missing validity check for a user input? Can we add more error/exception handling?<br>
+**A:** Yes, but only if its absence causes the software to <tooltip content="crash, or give incorrect results">mis-behav</tooltip>e (i.e., it's omission is a bug).
 
 * **Q:** Can we tweak the command format?<br>
 **A:** No, as this would be considered changing the design of a feature.
@@ -927,6 +928,15 @@ Here are some reasons:
 * It allows receiving early self/peer/instructor feedback.
 </panel>
 <p/>
+</div>
+
+<div class="indented" tags="m--cs2103 m--tic4002">
+<box type="warning" seamless>
+
+You are discouraged from moving sections currently in `DeveloperGuide.md` to additional markdown files. Reasons: 1. You need to submit the DG as a single PDF file at the end of the semester. 2. When checking DG-related tP increments, we only check your contributions to that file.
+
+A similar requirement applies to the `UserGuide.md` too.
+</box>
 </div>
 
 * **Update the Developer Guide** as follows:{% if tic4001 %}

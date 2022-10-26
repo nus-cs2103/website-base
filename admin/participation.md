@@ -98,6 +98,13 @@ In addition, you can receive bonus marks in the following ways. Bonus marks can 
 * Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.
 {% endif %}
 
+****FAQ:****
+
+* **Q: What if I missed a participation task due to a legitimate reason?** (e.g., falling sick, taking part in university event)<br>
+  **A:** See the panel below:
+{{ embed_topic("policies-fragment.md#policy-validAbsences", "Admin " + icon_embedding + " Policies → Absences due to valid reasons", "4", indent=1) }}
+<p/>
+
 <panel type="info" header="##### Where to find your participation marks progress" expanded no-close no-switch >
 
 **Your participation progress can be tracked in [this page]({{ url_participation_dashboard }})** from week 3 onward.
