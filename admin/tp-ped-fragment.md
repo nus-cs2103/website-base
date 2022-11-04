@@ -200,14 +200,6 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
-<box type="tip" seamless>
-
-<span class="text-success">**When in doubt, choose the lower severity:**</span> If the severity of a bug seems to be smack in the middle of two severity levels, choose the lower severity.<br>
-Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase of the PE.
-As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower priority has a lower risk of being disputed by the dev team, giving you (and the dev team) a better chance of earning bonus marks for accuracy (which will be substantial).<br>
-To make your case even stronger, state in the bug report why you think the bug might even qualify for a higher severity, while you actually chose the lower one.
-</box>
-
 * Assign exactly one `type.*` label to the issue.
 <div class="indented-level2">
 <include src="tp-pe-fragment.md#type-labels" />
@@ -259,13 +251,11 @@ Use the pain of dealing with this kind of bug reports as an opportunity to devel
 * **You can navigate to the original bug report** (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
   * {{ icon_tip }} Do not argue with the tester to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the tester for their view and discontinue to discussion.
 * **Aim to ==do a systematic triaging of issues received==**. Some suggestions:
-  * Close duplicate issues
+  * Close duplicate issues.
   * Use labels (create new labels if necessary) to,
     * differentiate _bugs_ from the rest (e.g., feature suggestions/flaws).
-    * indicate priority of the bugs that need fixing
-  * Assign each bug to the person who should fix it
-* **If you have received 'insincere' bug reports** that seem like just an attempt to increase the tester's bug count, please let us know.<br>
-  As for the other bug reports, you can deal with them as you see fit (i.e., triage, apply labels, assign, close etc.).<br>
+    * indicate priority of the bugs that need fixing.
+  * Assign each bug to the person who should fix it.
 * **You may ignore `type/severity.*` labels given by the tester.** They will not affect you or the tester either way -- they were there just for the testers to practice. You may apply your own type/severity labels if you wish.<br>
   {{ icon_important_big_red }} In particular, beware of simply following the `type.*` given by the tester; it is your job to decide the correct type of the issue. e.g., What the tester labeled as a _bug_ might actually be a _feature flaw_.{% if cs2103 or tic4002 %}
 * **If a bug report is simply a feature suggestion**, you can take note of it and close it (to reduce clutter in the issue tracker, and to make it easy for the teaching team to track your progress on dealing with PE-D issues). Similarly, you can close PE-D issues not relevant to {{ version_penultimate }}.{% endif %}

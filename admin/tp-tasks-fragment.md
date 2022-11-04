@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, thumb, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, thumb, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_module-" + module + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_module-" + module + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -13,7 +13,8 @@
 
 <box type="warning" seamless>
 
-**The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, {{ version_final }} should not have _any_ behaviors that were not already tested in the PE-D).
+**The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In other words, avoiding behavior changes unless they are strictly necessary, so that we minimize the possibility of introducing more bugs.<br>
+In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, <span class="text-danger">{{ version_final }} should not have _any_ behaviors that were not already tested in the PE-D</span>).
 
 While the info below provides you what to do and what not to do in {{ version_final }} specific cases, the important thing is to understand and ==**follow the spirit of the _feature freeze_** (i.e., do not change features further, correct unintentional errors only)==.
 
@@ -31,26 +32,50 @@ While the info below provides you what to do and what not to do in {{ version_fi
 
 
 **FAQs:**
-* **Q:** Can we add a missing validity check for a user input? Can we add more error/exception handling?<br>
+
+<panel type="seamless" header="**Q:** Can we add a missing validity check for a user input? Can we add more error/exception handling?" minimal>
+
 **A:** Yes, but only if its absence causes the software to <tooltip content="crash, or give incorrect results">mis-behav</tooltip>e (i.e., it's omission is a bug).
+</panel>
 
-* **Q:** Can we tweak the command format?<br>
+<panel type="seamless" header="**Q:** Can we modify error messages? How about other text shown to the user?" minimal>
+
+**A:** Yes, but only if the current text is incorrect (i.e., a bug). Adding more information or otherwise 'enhancing' the text is not allowed.
+</panel>
+
+<panel type="seamless" header="**Q:** The UI text get truncated (or overflows) for certain inputs (or certain Windows sizes); can we fix them?" minimal>
+
+**A:** Only if the behavior hinders normal usage i.e., not showing the text fully/properly under normal usage can be considered an 'incorrect' behavior, and hence, a bug.<br>
+  However, accommodating 'extreme' inputs (e.g., a person name with 1000 characters) can be considered a nice-to-have feature, to be added in a future version (i.e., lack of it is not a bug).
+</panel>
+
+<panel type="seamless" header="**Q:** Can we tweak the command format?" minimal>
+
 **A:** No, as this would be considered changing the design of a feature.
+</panel>
 
-* **Q:** Testers have reported missing features or feature flaws (or suggested feature tweaks). Can we add/tweak those features?<br>
+<panel type="seamless" header="**Q:** Testers have reported missing features or feature flaws (or suggested feature tweaks). Can we add/tweak those features?" minimal>
+
 **A:** No, as that goes against the spirit of having a feature freeze. Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
 Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
+</panel>
 
-* **Q:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug. How to proceed?<br>
+<panel type="seamless" header="**Q:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug. How to proceed" minimal>
+
 **A:** The category chosen by the tester is immaterial. You have to choose the correct category and proceed accordingly.
+</panel>
 
-* **Q:** How to distinguish between bugs and feature modifications?<br>
+<panel type="seamless" header="**Q:** How to distinguish between bugs and feature modifications?" minimal>
+
 **A:** A bug is when the actual behavior differs from the _advertised_ behavior (i.e., the behavior stated in the UG) <span class="text-danger">due to an _error_ in the code</span>.<br>
- Describing a feature in the UG without implementing it is a UG bug. The remedy is to remove the feature from the UG.<br>
- If the behavior difference is because some parts of the feature is not implemented yet, the feature is incomplete (i.e., not a bug). The remedy is to remove the feature (if it is not usable in the current form) or update the UG to match the current version of the feature.
+Describing a feature in the UG without implementing it is a UG bug. The remedy is to remove the feature from the UG.<br>
+If the behavior difference is because some parts of the feature is not implemented yet, the feature is incomplete (i.e., not a bug). The remedy is to remove the feature (if it is not usable in the current form) or update the UG to match the current version of the feature.
+</panel>
 
-* **Q:** What if an issue is related to a behavior not specifically stated in the UG?<br>
+<panel type="seamless" header="**Q:** What if an issue is related to a behavior not specifically stated in the UG?" minimal>
+
 **A:** In that case, we go by the reasonable 'correct' behavior that one expects. For example, the UG might not specify what happens if a user typed an extra space after the first keyword of the command (e.g., `mark[SPACE]1` vs `mark[SPACE][SPACE]1`) in which case the reasonable correct behavior is to ignore the extra space.
+</panel>
 
 </box>
 </div>
@@ -1224,17 +1249,17 @@ Also see:
 <span id="heading_start_fixing_PED_bugs">{{ icon_individual }} Start fixing PED bugs</span>
 <div id="desc_start_fixing_PED_bugs">
 
-1. **Triage the bugs you received in the PE-D**, by following the procedure given below:
+1. ****Triage the bugs you received in the PE-D****, by following the procedure given below:
 
 {{ embed_topic("tp-ped-fragment.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="2") }}
 
 {% if not cs2103 %}
 2. **Freeze features**. As mentioned earlier, you are strongly discouraged from adding/updating features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.{% else %}
-2. **Note what is allowed in this milestone**:
+2. ****Note what is allowed in this milestone****:
 
 <include src="tp-tasks-fragment.md#feature-freeze-details" />{% endif %}
 
-3. **Start fixing bugs** that you selected to fix in this iteration. Don't rely on PE-D alone to find bugs. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.
+3. ****Start fixing bugs**** that you selected to fix in this iteration. Don't rely on PE-D alone to find bugs. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.
 
 <box type="info" seamless>
 
@@ -1242,17 +1267,58 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 
 **Expectations at mid-{{ version_final }}** (i.e., by the tutorial date):
 * <span class="text-danger">**Minimal:**</span> all PE-D bugs have been triaged, bugs to be fixed in the current iteration have been chosen, and assigned to relevant team members.
-* <span class="text-success">**Recommended:**</span> all (or almost all) the PE-D that you have chosen to fix have been fixed already.
+* <span class="text-success">**Recommended:**</span> all (or almost all) the PE-D bugs that you have chosen to fix have been fixed already.
 
 {% if cs2103 %}**On the tutorial day, ==one member should post a message in your team's MS-Teams channel==** %%(i.e., the one inside the MS-Teams used for tutorials)%% stating if PE-D bug triaging is done, how many bugs were selected as 'must fix' and 'good to fix' in {{ version_final }} and how many of them have been done already. Remember to ==tag the tutor== in that post. Note that this post will be counted as a team progress deliverable e.g.,
 
 >Our team's mid-{{ version_final }} progress:
 >* PE-D issues received: 47
 >* Unique bugs: 14
->   * Must fix: 6 bugs (fixed: 5)
->   * Good to fix: 8 bugs (fixed: 1)
+>   * Not allowed to fix in v1.4: 3
+>   * Must fix: 6 (fixed: 5)
+>   * Good to fix: 4 (fixed: 1)
+>   * Won't fix / invalid: 1
 {% endif %}
 </box>
+
+{% if cs2103 %}4. ****Submit peer evaluations for PE-D testers****: Submit your peer-evaluation of PE-D testers to indicate how well they helped your team.<br>
+   Deadline: {{ timing_badge("by " + get_date(date_w13_start, 4), "danger") }}<br>
+   The submission is to be done via the TEAMMATES system.<br>
+   Only one team member needs to submit on behalf of the team but discuss among team members first.<br>
+   Base the evaluation on the quality/usefulness of the bugs reported as well as the quantity.<br>
+   Here are the two questions you'll need to answer in the evaluation:
+
+<div class="indented-level2">
+<panel type="seamless" header="Q1: Performance of PE-D testers" minimized>
+
+In this context, a good bug report,
+
+* has a descriptive title,
+* has enough details,
+* severity/type labels chosen are not too far off,
+* is written in a non-confrontational tone, and
+* points out a potentially problematic behavior (or a good way to improve the product)
+
+Rate each tester on the following scale:
+
+Poor | Below expectations | Meets expectations | Exceeds expectations
+----|---|---|---
+no bug reports from this tester | just a few bug reports, and none are good | 5 or more bug reports but only1-2 are good | 3-5 good bug reports | more than 5 good bug reports
+</panel>
+<br>
+<panel type="seamless" header="Q2: Rank PE-D testers" minimized>
+
+Rank the PE-D testers based on their performance (five rank 1 to the top performing tester):
+
+`Tester A`: rank __<br>
+`Tester B`: rank __<br>
+...
+
+</panel>
+</div>
+
+
+{% endif %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Polish the deliverables</span>
@@ -1470,26 +1536,21 @@ Not applicable this semester
 <span id="heading_prepare_for_PE">{{ icon_individual }} Prepare for the practical exam</span>
 <div id="desc_prepare_for_PE">
 
-<div class="indented-level2">
+{{ embed_topic("tp-pe-fragment.md#pe-overview", "Admin " + icon_embedding + " tP → **PE Overview**", "3", indent="2", type="primary") }}
 
-<panel type="primary" header="Admin → tP → **PE Overview**" minimized>
-
-<include src="tp-pe-fragment.md#pe-overview" />
-</panel>
 <p/>
-<panel type="primary" header="Admin → tP → **PE-D/PE Preparation**" minimized>
+{{ embed_topic("tp-pe-fragment.md#pe-preparation", "Admin " + icon_embedding + " tP → **PE Preparation**", "3", indent="2", type="primary") }}
 
-<include src="tp-testing-fragment.md#testingPreparations" var-pe_active_tab="1"/>
-</panel>
-</div>
+* After reading the above 2, we ==strongly recommend you read ahead the info given in the item 6 below== as well, to know in advance what will happen during the PE itself.
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PE">{{ icon_individual }} Attend the practical exam</span>
 <div id="desc_attend_the_PE">
 
+* Ensure you read the instructions on **PE Preparation** (given in item 5 above)
 * Attend the practical test, to be done during the lecture.
 
-{{ embed_topic("tp-pe.md#tp-practicalexam", "Admin " + icon_embedding + " tP → Practical Exam", "3", indent="2") }}
+{{ embed_topic("tp-pe-fragment.md#pe-phases", "Admin " + icon_embedding + " tP → **PE Phases**", "3", indent="2", type="primary") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_makeup_PE">{{ icon_individual }} %%[if needed] Attend the makeup practical exam%%</span>

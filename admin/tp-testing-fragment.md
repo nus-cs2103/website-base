@@ -47,7 +47,7 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 </tab>
 <tab header="PE (at **{{ version_final }}**)">
 
-* After you have been notified of the download location, download the zip file that bears your name.
+* After you have been notified of the download location, download the zip file that bears your name. The password required to unzip it will be given to you at the start of the PE.
 
 </tab>
 </tabs>

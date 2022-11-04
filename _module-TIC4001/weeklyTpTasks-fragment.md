@@ -45,7 +45,6 @@ week11: [
 ],
 week12: [
   {id: 'update_dg_with_design_details', deadline: 'IMPORTANT'},
-  {id: 'draft_the_ppp'},
   {id: 'double_check_reposense_compatibility'}
 ],
 week13: [
