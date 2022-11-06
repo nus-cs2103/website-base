@@ -1536,6 +1536,11 @@ Not applicable this semester
 <span id="heading_prepare_for_PE">{{ icon_individual }} Prepare for the practical exam</span>
 <div id="desc_prepare_for_PE">
 
+<div class="indented-level2">
+
+<include src="tp-pe-fragment.md#mode-choice" />
+</div>
+
 {{ embed_topic("tp-pe-fragment.md#pe-overview", "Admin " + icon_embedding + " tP → **PE Overview**", "3", indent="2", type="primary") }}
 
 <p/>

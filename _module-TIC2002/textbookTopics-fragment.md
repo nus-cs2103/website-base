@@ -1256,7 +1256,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "what", heading: "What", priority: "4"},
+              {name: "what", heading: "What", priority: "3"},
               {name: "positiveVsNegative", heading: "Positive vs Negative Test Cases", priority: "4"},
               {name: "blackVsGlass", heading: "Black Box vs Glass Box", priority: "4"}
             ]
@@ -1309,7 +1309,7 @@
           {
             name: "",
             level_three_topics: [
-              {name: "testingUseCases", heading: "Testing Based on Use Cases", priority: "3"}
+              {name: "testingUseCases", heading: "Testing Based on Use Cases", priority: "4"}
             ]
           }
         ]

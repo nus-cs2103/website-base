@@ -1,5 +1,18 @@
 {% from "common/macros.njk" import embed_topic, get_date with context %}
 
+<div id="mode-choice">
+
+<box type="important" light>
+
+<span class="text-danger">****Remote or F2F?****</span> You can choose between the following two modes:
+
+1. **Remote mode**: This is the ==recommended mode==. Proctored via Zoom. You'll need to join the Zoom session from a quiet place (i.e., conducive to an exam) at which you can set up a Zoom device for proctoring.
+1. **F2F mode**: Attend the PE at the lecture venue (iCube auditorium). Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of WiFi speed issues and GitHub throttling issues).
+
+We'll use a LumiNUS survey to collect your preferred mode.
+</box>
+</div>
+
 #### <span class="badge bg-success">PE</span> <span class="text-success">Overview</span>
 
 <div id="pe-overview">
@@ -58,7 +71,8 @@
 
 <box type="important" icon=":fas-exclamation-circle:" seamless>
 
-**PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.
+**PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.<br>
+  Note: **Those opting for the F2F mode can ignore any Zoom-related points** in the instructions below.
 
 * **Proctoring will be done via Zoom.** No admission if the following requirements are not met.{% if cs2103 %}
   * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external web cam for your PC.
