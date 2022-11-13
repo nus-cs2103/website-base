@@ -1156,7 +1156,7 @@
           },
           {
             name: "dogfooding",
-            priority: "5",
+            priority: "4",
             level_three_topics: [
               {name: "what", heading: "What", priority: "4"}
             ]

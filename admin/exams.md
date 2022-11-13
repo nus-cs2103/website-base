@@ -49,8 +49,8 @@ The final exam has two types of questions:
 <div tags="m--cs2103 m--tic2002 m--tee3201">
 
 1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office. You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ module }}) as well.
-1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**==, which can connect to the NUS wifi network.<br>
-  Please use these resource if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
+1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not allowed</span>), which can connect to the NUS wifi network.<br>
+  Please use these resources if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
    * [slides](https://wiki.nus.edu.sg/x/daBJCw) (refer to the slides on _On-Campus exam_)
    * [video](https://wiki.nus.edu.sg/x/tgg_EQ) (refer to the _Examplify Student Briefing_ video)
    * try a few practice exams provided in the above two
@@ -61,24 +61,14 @@ The final exam has two types of questions:
    Soft/hard copies of notes and any written notes are allowed.**
    You may use any hard copies or written materials too.<br>
    **No Internet access** will be allowed during the exam, as Examplify will be configured to disable Internet access.
-1. **Download the exam (both parts) before you come to the exam**. We'll give you the password for opening the exam paper at the starting time of the exam.
+1. **Download all parts of the exam before you come to the exam** ({% if cs2103 %}parts 1 & 3 from Examplify, part 2 PDF file from Luminus{% else %}i.e., parts 1 & 2{% endif %}). We'll give you the password for opening each part at the exam, at the respective starting time of each part.
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
-<div class="indented-level2">
-  <panel type="danger" header="**Submitting feedback for a question:**" expanded id="submitting-feedback">
-
-  <img src="images/examplify-feedback.png" width="350" />
-
-  1. Click on `TOOL KIT`.
-  2. Click on the `NOTES` tab, if it is not selected already.
-  3. Type in your feedback in the text box.
-  4. ==Tick the `REQUEST FEEDBACK` checkbox.== <span class="text-danger">If you don't, the note will not be saved!!!</span>
-
-  </panel><p/>
-</div>
+<include src="exam-doubts-fragment.md" />
 
 
 9. **Bring your computer fully charged** (and bring the charger too), although some charging points will be available at the exam venue.
+10. **You must start the exam within 5 minutes of receiving the password** or else the quiz will close before your allotted time has run out.
 
 
 ## Format
@@ -99,13 +89,10 @@ The final exam has two types of questions:
 * Most MCQ question have a short-answer follow up question.
 **Use the 'NOTES' feature of Examplify to answer the follow-up question** (explained above), repeated below for your reference:
 
-<div class="indented">
-<panel type="danger" header="**Answering the follow-up question:**" minimized>
+<include src="exam-follow-up-questions-fragment.md" />
 
-<include src="exams-f2f.md#submitting-feedback" />
-</panel>
-</div><p/>
-
+* **To get full marks for follow-up questions, you only need to submit at least 75% of them.**<br>
+  %%The bar is set lower than 100% as a cushion against you forgetting to answer a few follow-up questions before moving to the next question.%%
 * Here is an example question. The answer is `a` and the answer to the follow-up question can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
 
@@ -149,9 +136,13 @@ E. Gantt charts.
 
 ### Final exam - part 2
 
-* You will be asked to draw some UML diagrams, **to be hand-drawn on paper** (not on a tablet). You may use pencils if you wish.
+* You will be asked to draw some UML diagrams, **to be hand-drawn on paper** (not on a tablet).<br>
+  You may use pencils if you wish.
 * Duration: 20 minutes
 * The questions will be in an encrypted PDF file that will be given to you in advance. The password will only be given at the start of this section.
+* **Bring the following when you come to the exam:**
+  * **1-2 sheets of A4 size paper**, for drawing diagrams.
+  * Recommended: Something with a hard flat surface (e.g., a hardcover book) to put underneath the papers when drawing the diagrams. This is in case the arm rest of the exam venue chairs doesn't have enough space for both your laptop and drawing work.
 * At the _end_ of the exam (i.e., after all three parts are over), you need to submit the diagrams.
 * These diagrams will not be graded directly. Instead, you will use them when answering part 3 of the exam.<br>
   However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.

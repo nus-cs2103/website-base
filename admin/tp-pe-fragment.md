@@ -91,11 +91,12 @@ We'll use a LumiNUS survey to collect your preferred mode.
     1. the work area (i.e., the table top)
     1. the computer screen<br>
     <img src="images/zoomCameraExample.png" width="362"/>
-* **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.
+* **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.{% if cs2103 %}<br>
+  **If on F2F mode:** Arrive at lecture venue ([ICube Auditorium](https://nusmods.com/venues/I3-AUD)) around 10-15 minutes early. If you haven't been to this venue before, plan ahead as the venue is located away from the main SoC area.{% endif %}
 * **In case of Zoom outage**, we'll fall back on MS Teams (MST).{% if cs2103 %} Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).{% elseif cs2113 %} Make sure you have MST running; proctoring will be done via individual tutorial MST teams that we have been using.{% endif %}
 * **Recording the screen is not required.**
 * **You are allowed to use head/ear phones.** But no talking allowed (unless you are talking to the invigilator) -- so, no talking/singing to your self as this can be mistaken for a rule violation.
-* **==Only one screen== is allowed.** If you want to use the secondary monitor, you should switch off the primary monitor. The screen being used should be fully visible in the Zoom camera view.<br>
+* **==Only one screen== is allowed** (for both remote mode and F2F mode). If you want to use the secondary monitor, you should switch off the primary monitor. The screen being used should be fully visible in the Zoom camera view.<br>
   If using a second device for Zoom proctoring, the screen of that device should only be used for Zoom.
 * **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
 * **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
@@ -103,6 +104,7 @@ We'll use a LumiNUS survey to collect your preferred mode.
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
 * **During the bug reporting periods (i.e., <span class="badge bg-success">PE Phase 1 - part I</span> and <span class="badge bg-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** If you need to visit a different website or use another software, please ask for permission first.
   * Website: LumiNUS
+  * Website/software: MSTeams (only to communicate with the prof of Tech support)
   * Website: Module website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab/recording software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
@@ -319,7 +321,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 
 <box type="wrong">
 
-**You must use CATcher. You are strictly prohibited from editing PE bug reports using the GitHub Web interface** as it can can render bug reports unprocessable by CATcher, sometimes in an irreversible ways, and can affect the entire class. Please contact the prof if you are unable to use CATcher for some reason.
+**You must use CATcher. You are strictly prohibited from editing PE bug reports using the GitHub Web interface** as it can render bug reports unprocessable by CATcher, sometimes in an irreversible ways, and can affect the entire class. Please contact the prof if you are unable to use CATcher for some reason.
 </box>
 </div>
 

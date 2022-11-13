@@ -11,35 +11,25 @@ Instructions below are from the previous semester. Will be updated closer to the
 
 1. The final exam will be **as per the normal exam schedule** (you can check exam time from [NUSMods](https://nusmods.com/modules/)), and will count for **{{ marks_exam }}% of the final grade**.
 1. The exam will be done **face-to-face, but using Examplify**. SCALE is not allowing remote exam this semester except in some special cases.<br>
-  Please use these resource if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
+  Please use these resources if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
    * [slides](https://wiki.nus.edu.sg/x/daBJCw) (refer to the slides on _On-Campus exam_)
    * [video](https://wiki.nus.edu.sg/x/tgg_EQ) (refer to the _Examplify Student Briefing_ video)
    * try a few practice exams provided in the above two
    * write to NUS CIT (citbox25@nus.edu.sg) if you run into any technical issues
 1. You will ==need to **bring your own laptop**==, which can connect to the NUS wifi network.
+   * <span class="text-danger">iPads are not allowed</span> as our exam configuration is not compatible with the iPad Examplify app.
+   * Only one device per person is allowed for the exam.
 1. ==**Recording of your PC screen** is not required.==
-1. **Soft copies of notes: only PDF format is allowed.** Other formats (e.g., MS Word, .txt, html) are not allowed. No limitation on what the PDF file contains or the number of PDF files to be used.<br>
-  You may use any hard copies or written materials too.
-1. **The Browser should only be used to accessthe module website{% if not tee3201 %} (including relevant se-education.org pages %%e.g., Java coding standard%%){% endif %}.** ==Accessing other websites is not allowed==.<br>
-   In case the WiFi is disrupted during the exam, have a soft copy of the textbook, the coding standard, and any other relevant document on your computer too.
+1. **Any soft/hard copies of notes are allowed**, including hand-written notes.
+1. **Internet is not allowed**.<br>
+   You are recommended to have a soft copy of the textbook, the coding standard, and any other relevant document on your exam device.
 1. **Download the exam (both parts) before you come to the exam**. We'll give you the password for opening the exam paper at the starting time of the exam.
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'feedback' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
-<div class="indented-level2">
-  <panel type="danger" header="**Submitting feedback for a question:**" expanded id="submitting-feedback">
-
-  <img src="images/examplify-feedback.png" width="350" />
-
-  1. Click on `TOOL KIT`.
-  2. Click on the `NOTES` tab, if it is not selected already.
-  3. Type in your feedback in the text box.
-  4. ==Tick the `REQUEST FEEDBACK` checkbox.== <span class="text-danger">If you don't, the feedback will not be saved!!!</span>
-
-  </panel><p/>
-</div>
-
+<include src="exam-doubts-fragment.md" />
 
 9. **Bring your computer fully charged** (and bring the charger too), although some charging points will be available at the exam venue.
+10. **You must start the exam within 5 minutes of receiving the password** or else the quiz will close before your allotted time has run out.
 
 ## Format
 
@@ -50,20 +40,17 @@ Instructions below are from the previous semester. Will be updated closer to the
 * This exam contains 16 MCQ questions. All questions are estimated to be equal size/difficulty.
 * You only need to answer 15 questions correctly to get full marks. The extra question is there to cushion you against careless mistakes or misinterpreting a question.
 * Questions will appear in random order.
-* You will not be able to go back to previous questions.<br>
+* **You will not be able to go back to previous questions.**<br>
   %%Reasons:<br>
   1\. to minimize opportunities for collusion<br>
   2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
 * Duration: **45 minutes** (recommended: allocate 2.5 minutes per question, which gives you a 5 minutes buffer)
-* You are required to give a justification/rationale for your answer. ==The question will specify what should be included in the justification. **Answers without the correct justification may not earn full marks.**== However, we'll give full marks up to two correct answers (per 16 questions) with missing/incorrect justifications %%(to cater for cases where you accidentally proceeded to the next question before adding the justification)%%.<br>
-  **Submitting the justification for a question is the same as submitting feedback for a question** (explained above), repeated below for your reference:
+* **Most MCQ question will also have a follow up question.**<br>
+  Answering at least 75% of the follow-up questions can earn you full marks for follow up questions.<br>
+  **Submitting the answer to a fullow up question is done the same as submitting feedback for a question** (explained above), repeated below for your reference:
 
-<div class="indented">
-<panel type="danger" header="**Submitting justification for a question:**" minimized>
+<include src="exam-follow-up-questions-fragment.md" />
 
-<include src="exams-f2f.md#submitting-feedback" />
-</panel>
-</div><p/>
 
 * Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">

@@ -110,7 +110,7 @@
             name: "",
             level_three_topics: [
               {name: "miscellaneous", heading: "Miscellaneous", priority: "3"},
-              {name: "review", heading: "Review", priority: "4"}
+              {name: "review", heading: "Review", priority: "-1"}
             ]
           }
         ]
@@ -323,7 +323,7 @@
               {name: "classDiagramsBasic", heading: "Class Diagrams (Basics)", priority: "1"},
               {name: "addingMoreInfo", heading: "Adding More Info to UML Models", priority: "3"},
               {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "2"},
-              {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "4"},
+              {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "3"},
               {name: "objectDiagrams", heading: "Object Diagrams", priority: "1"},
               {name: "objectOrientedDomainModels", heading: "Object Oriented Domain Models", priority: "4"},
               {name: "deploymentDiagrams", heading: "Deployment Diagrams", priority: "4"},
@@ -575,7 +575,7 @@
       },
       {
         name: "topDownBottomUp",
-        priority: "-1",
+        priority: "4",
         level_two_topics: [
           {
             name: "",
@@ -1303,8 +1303,8 @@
             level_three_topics: [
               {name: "why", heading: "Why", priority: "3"},
               {name: "combinationStrategies", heading: "Test Input Combination Strategies", priority: "3"},
-              {name: "heuristicValid", heading: "Heuristic: Each Valid Input at Least Once in a Positive Test Case", priority: "4"},
-              {name: "heuristicInvalid", heading: "Heuristic: No More Than One Invalid Input In A Test Case", priority: "4"},
+              {name: "heuristicValid", heading: "Heuristic: Each Valid Input at Least Once in a Positive Test Case", priority: "3"},
+              {name: "heuristicInvalid", heading: "Heuristic: No More Than One Invalid Input In A Test Case", priority: "3"},
               {name: "mix", heading: "Mix", priority: "-1"}
             ]
           }
@@ -1707,7 +1707,7 @@
             name: "",
             level_three_topics: [
               {name: "singleResponsibilityPrinciple", heading: "Single Responsibility Principle", priority: "3"},
-              {name: "openClosedPrinciple", heading: "Open-Closed Principle", priority: "-1"},
+              {name: "openClosedPrinciple", heading: "Open-Closed Principle", priority: "3"},
               {name: "liskovSubstitutionPrinciple", heading: "Liskov Substitution Principle", priority: "3"},
               {name: "interfaceSegregationPrinciple", heading: "Interface Segregation Principle", priority: "-1"},
               {name: "dependencyInversionPrinciple", heading: "Dependency Inversion Principle", priority: "-1"},
