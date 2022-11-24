@@ -48,7 +48,7 @@ The final exam has two types of questions:
 
 <div tags="m--cs2103 m--tic2002 m--tee3201">
 
-1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office. You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ module }}) as well.
+1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ module }}) as well.
 1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not allowed</span>), which can connect to the NUS wifi network.<br>
   Please use these resources if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
    * [slides](https://wiki.nus.edu.sg/x/daBJCw) (refer to the slides on _On-Campus exam_)
@@ -57,24 +57,34 @@ The final exam has two types of questions:
    * write to NUS CIT (citbox25@nus.edu.sg) if you run into any technical issues.
    * if you do not have a working laptop for the exam, please contact IT Care itcare@nus.edu.sg directly for a laptop loan (for exam purpose only)
 1. ==**Not required to record the screen**.==
-1. **The exam is open-book.<br>
-   Soft/hard copies of notes and any written notes are allowed.**
-   You may use any hard copies or written materials too.<br>
-   **No Internet access** will be allowed during the exam, as Examplify will be configured to disable Internet access.
+1. **The exam is open-book. Soft/hard copies of documents are allowed**, including written notes.
+1. **No Internet access** will be allowed during the exam. However, you need to be connected to the WiFi (for Examplify to upload your answers).
+   * Examplify will be configured to disable Internet access while you are answering questions on Examplify.
+   * Even when Examplify is not blocking the Internet, you are not to access the Internet.
+   * Exit all non-essential applications (e.g., Telegram) that may be running in the background and connected to the Internet.
+   * <span class="text-danger">You are strongly discouraged from using ~~Do not use~~ Web Browsers</span> to view local files.<br>
+     %%Reason: invigilators will not be able to distinguish viewing local files from visiting online websites, and might have to talk to you (while the exam clock is still running) to verify that you are not accessing external sites%%.
+1. **Use of other software applications** (e.g., note taking applications) during the exam: you should not use any special-purpose application that can,<br>
+   &nbsp;&nbsp;(a) give you an unfair advantage over the other exam takers, or,<br>
+   &nbsp;&nbsp;(b) go against the goal of the exam,<br>
+   even if your action was not explicitly prohibited by the exam rules.
 1. **Download all parts of the exam before you come to the exam** ({% if cs2103 %}parts 1 & 3 from Examplify, part 2 PDF file from Luminus{% else %}i.e., parts 1 & 2{% endif %}). We'll give you the password for opening each part at the exam, at the respective starting time of each part.
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
 <include src="exam-doubts-fragment.md" />
 
 
-9. **Bring your computer fully charged** (and bring the charger too), although some charging points will be available at the exam venue.
-10. **You must start the exam within 5 minutes of receiving the password** or else the quiz will close before your allotted time has run out.
+7. **Bring your computer fully charged** (and bring the charger too), although some charging points will be available at the exam venue.
+   * **FAQ:** My laptop battery is weak. Can I be put in a seat near a charging point?<br>
+     **A**: The standard operation procedure for digital exams: Some venues have charging points within reach of every seat. If that's not the case, you will be moved to another location with a charging point when your laptop power level reaches a low level. Pre-allocating you a seat with a charging point is not feasible, as the number of such requests can easily exceed the number of charging points in the venue.
+1. **You must start the exam within 5 minutes of receiving the password** or else the quiz will close before your allotted time has run out.
 
 
 ## Format
 <div tags="m--cs2103 m--tic2002 m--tee3201">
 
 * The exam will be divided into {{ 3 if cs2103 else 2 }} parts.
+* Although the official duration of the exam is 1.5 hours, note that the actual exam might take up to 2 hours (due to technical issues). So, please don't schedule anything important right after the exam.
 
 ### Final exam - part 1
 
@@ -152,7 +162,10 @@ E. Gantt charts.
 
 * Similar to part 1 (e.g., 16 questions, same length).{% if cs2103 %}
 * Some questions will refer to the UML diagrams that you drew in part 2.
-* You _may_ modify your UML diagrams during this time. %%Reminder: diagrams are not graded.%%
+* <span class="text-danger">After the part 3 password has been released, you are not allowed to update the UML diagrams, _until_ you start the part 3.</span><br>
+  %%Reason: to prevent students delaying the start of part 3 to gain extra drawing time.%%
+* You _may_ modify your UML diagrams _after_ you have started part 3 on Examplify.<br>
+  %%Reminder: diagrams are not graded.%%
 * You may refer the PDF file used in part 2 during this part too.
 {% endif %}
 
@@ -162,6 +175,7 @@ E. Gantt charts.
 
 * There will be an exam briefing in the penultimate lecture. It will include a minimal mock exam, just to help you understand the structure.
 * You will be given a practice exam paper (at least half the size of the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
+* Your score and answers for the mock/practice exams can be retrieved by visiting [https://examsoft.com](https://apac.examsoft.com/GKWeb/login/NUS).
 
 </div>
 

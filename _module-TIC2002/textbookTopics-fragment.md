@@ -1593,17 +1593,17 @@
           {
             name: "introduction",
             level_three_topics: [
-              {name: "what", heading: "Introduction", priority: "1"}
+              {name: "what", heading: "Introduction", priority: "4"}
             ]
           },
           {
             name: "basicNotations",
             level_three_topics: [
-              {name: "linearPaths", heading: "Linear Paths", priority: "2"},
-              {name: "alternatePaths", heading: "Alternate Paths", priority: "2"},
-              {name: "parallelPaths", heading: "Parallel Paths", priority: "2"},
-              {name: "rakes", heading: "Rakes", priority: "3"},
-              {name: "swimlanes", heading: "Swimlanes", priority: "3"}
+              {name: "linearPaths", heading: "Linear Paths", priority: "4"},
+              {name: "alternatePaths", heading: "Alternate Paths", priority: "4"},
+              {name: "parallelPaths", heading: "Parallel Paths", priority: "4"},
+              {name: "rakes", heading: "Rakes", priority: "4"},
+              {name: "swimlanes", heading: "Swimlanes", priority: "4"}
             ]
           }
         ]

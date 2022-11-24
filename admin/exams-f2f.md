@@ -29,6 +29,8 @@ Instructions below are from the previous semester. Will be updated closer to the
 <include src="exam-doubts-fragment.md" />
 
 9. **Bring your computer fully charged** (and bring the charger too), although some charging points will be available at the exam venue.
+   * **FAQ:** My laptop battery is weak. Can I be put in a seat near a charging point?<br>
+   **A**: The standard operation procedure for digital exams: Some venues have charging points within reach of every seat. If that's not the case, you will be moved to another location with a charging point when your laptop power level reaches a low level. Pre-allocating you a seat with a charging point is not feasible, as the number of such requests can easily exceed the number of charging points in the venue.
 10. **You must start the exam within 5 minutes of receiving the password** or else the quiz will close before your allotted time has run out.
 
 ## Format
