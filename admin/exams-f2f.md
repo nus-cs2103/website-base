@@ -9,8 +9,9 @@ Instructions below are from the previous semester. Will be updated closer to the
 {% endif %}
 
 
-1. The final exam will be **as per the normal exam schedule** (you can check exam time from [NUSMods](https://nusmods.com/modules/)), and will count for **{{ marks_exam }}% of the final grade**.
-1. The exam will be done **face-to-face, but using Examplify**. SCALE is not allowing remote exam this semester except in some special cases.<br>
+1. **Weightage:** {{ marks_exam }}% of the final grade.
+1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ module }}).
+1. The exam will be done **face-to-face, but using Examplify**.<br>
   Please use these resources if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
    * [slides](https://wiki.nus.edu.sg/x/daBJCw) (refer to the slides on _On-Campus exam_)
    * [video](https://wiki.nus.edu.sg/x/tgg_EQ) (refer to the _Examplify Student Briefing_ video)
@@ -19,9 +20,9 @@ Instructions below are from the previous semester. Will be updated closer to the
 1. You will ==need to **bring your own laptop**==, which can connect to the NUS wifi network.
    * <span class="text-danger">iPads are not allowed</span> as our exam configuration is not compatible with the iPad Examplify app.
    * Only one device per person is allowed for the exam.
-1. ==**Recording of your PC screen** is not required.==
-1. **Any soft/hard copies of notes are allowed**, including hand-written notes.
-1. **Internet is not allowed**.<br>
+1. ==**No recording of your PC screen** required.==
+1. **Any soft/hard copies of reference materials are allowed**, including hand-written notes.
+1. **Internet is not allowed** (will be blocked by Examplify).<br>
    You are recommended to have a soft copy of the textbook, the coding standard, and any other relevant document on your exam device.
 1. **Download the exam (both parts) before you come to the exam**. We'll give you the password for opening the exam paper at the starting time of the exam.
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'feedback' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
@@ -49,19 +50,19 @@ Instructions below are from the previous semester. Will be updated closer to the
 * Duration: **45 minutes** (recommended: allocate 2.5 minutes per question, which gives you a 5 minutes buffer)
 * **Most MCQ question will also have a follow up question.**<br>
   Answering at least 75% of the follow-up questions can earn you full marks for follow up questions.<br>
-  **Submitting the answer to a fullow up question is done the same as submitting feedback for a question** (explained above), repeated below for your reference:
+  **Submitting the answer to a follow-up question is done the same as submitting feedback for a question** (explained above), repeated below for your reference:
 
 <include src="exam-follow-up-questions-fragment.md" />
 
 
-* Here is an example question. The answer is `a` and the justification can be `OOP is only one of the choices for an SE project`.
+* Here is an example question. The answer is `a` and the answer to the follow-up question can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
 
 <panel haader="A sample question" expanded >
 
 Choose the <span class="text-danger">**incorrect**</span> statement.
 
-<span class="text-info">[Justification: Why is it incorrect?]</span>
+<span class="text-info">[Follow-up question: Why is it incorrect?]</span>
 
 A. Software engineering projects always use OOP.<br>
 B. Some software engineering projects can be large and complex.<br>
