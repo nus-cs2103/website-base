@@ -10,7 +10,7 @@
 
 <box>
 
-{{ icon_important_big_red }} Our tutorial IDs are different from LumiNUS. Format: `{{ module }}T-W09` means a tutorial of `{{ module }}T` module, held on `Wednesday` at `0900`, and so on.
+{{ icon_important_big_red }} Our tutorial IDs are different from LumiNUS. Format: `{{ module }}T-W11` means a tutorial of `{{ module }}T` module, held on `Wednesday` at `1100`, and so on.
 
 </box>
 
@@ -30,7 +30,7 @@ Zoom links for tutorial sessions will be available in [LumiNUS/Weblinks](https:/
 
 **The mode**
 
-* Tutorials will be conducted using Zoom. Due to the large class size and small tutor:students ratio, we are not able to go back to F2F tutorials at the current SoC venue capacity. We'll revisit this decision when the COM4 building is up.
+* Tutorials will be conducted in f2f, on campus. 
 * MS Teams will be used for file sharing.
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
 * The tutor will _facilitate_ tutorial activities, observe your progress, and give feedback.
@@ -39,7 +39,7 @@ Zoom links for tutorial sessions will be available in [LumiNUS/Weblinks](https:/
 * Please ==bring your laptop to tutorials.== You'll need it for tutorial tasks.
 
 {{ embed_topic("appendixC-faq.md#admin-faq-noLaptop", "Admin " + icon_embedding + " Appendix C(FAQ): What if I don't carry around a laptop?", "4", indent=2) }}
--->
+
 
 <br/>
 
@@ -49,7 +49,9 @@ Zoom links for tutorial sessions will be available in [LumiNUS/Weblinks](https:/
   1. Tutorial slides are meant to help the tutor deliver the tutorial, and not meant to be used as reference materials for you to study later). ==When some content is suitable as a reference material, we'll provide you a copy of it.==
   1. To encourage some level of active engagement with the materials (e.g., taking notes) which is known to increase retention.
   1. To discourage 'no need to bother now; can look at the slides near the exam' attitude -- because most of the materials covered in tutorials are applicable to the project immediately.
+-->
 
+<br/>
 
 **The role of our tutors** is different from tutors in other modules.
 
@@ -65,7 +67,7 @@ Zoom links for tutorial sessions will be available in [LumiNUS/Weblinks](https:/
 
 <br/>
 
-* **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' concepts that are covered in lectures or other learning resources given to you %%(reason: self-learning is a vital part of the module)%%. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. Of course tutors can help you clarify doubts under the right circumstances.
+* **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' concepts that are covered in lectures or other learning resources given to you %%(reason: self-learning is a vital part of the module)%%. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. Of course, tutors can help you clarify doubts under the right circumstances.
 
 <div class="indented-level2">
 {{ embed_topic("appendixD-help.md#questions-for-tutros", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable to ask the tutor", "2") }}

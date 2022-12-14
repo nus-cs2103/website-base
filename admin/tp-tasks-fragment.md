@@ -806,8 +806,8 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 <div tags="m--cs2103 m--cs2113">
 
 <!-- * **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the commit tagged as `{{ version_first }}` in the `master` branch %%i.e. only features included in the current release should be demoed%%.-->
-* As we don't have in-class tutorials this semester, do the following in lieu of a live demo:<br>
-  [one member] Run your app using the latest released version `{{ version_first }}` <span tags="m--cs2103 m--tic4002">(or `{{ version_first }}b`, if applicable)</span>. Take screenshots of each available feature in action. Add those screenshots to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.
+* [One member] Run your app using the latest released version `{{ version_first }}` <span tags="m--cs2103 m--tic4002">(or `{{ version_first }}b`, if applicable)</span>. Take screenshots of each available feature in action. Add those screenshots to the shared workspace. 
+* You can also add the screenshots to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`, and reuse them as necessary in the documentation.
 </div>
 <div tags="m--tic4001 m--tic4002">
 

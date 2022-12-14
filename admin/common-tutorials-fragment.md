@@ -157,7 +157,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="setup-tp-org-repo">
 
-* To be done in Zoom breakout rooms (per team).
+* To be done as a team.
 * Set up the team org, team fork, individual forks as described below:
 
 {{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **Organization Setup**", "1", indent="2") }}

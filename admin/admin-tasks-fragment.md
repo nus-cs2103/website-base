@@ -146,10 +146,10 @@ The info in the following panels differs from TIC4001.
 {{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "3", indent="2", type="primary") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_submit_midterm_feedback_for_the_module">[optional] Submit mid-term feedback for the module</span>
+<span id="heading_submit_midterm_feedback_for_the_module">[Anonymous] Submit mid-term feedback for the module</span>
 <div id="desc_submit_midterm_feedback_for_the_module">
 
-* **An anonymous survey to submit feedback about the module and the teaching team** will open on LumiNUS by Monday. Please take a few minutes to give feedback to your tutors.
+* **An anonymous survey to submit feedback about the module and the teaching team** will open on LumiNUS by Monday. Please take a few minutes to give us your feedback.
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_midterm_peer_evaluations">Submit midterm peer evaluations on TEAMMATES</span>

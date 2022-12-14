@@ -400,7 +400,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 {{ icon_important_big_red }} While you are waiting for Phase 3 to start, comments will be added to the bug reports in your `/pe` repo, to indicate the response each received from the receiving team. <span class="text-danger">Please do not edit any of those comments or reply to them via the GitHub interface.</span> Doing so can invalidate them, in which case the grading script will assume that you agree with the dev team's response. Instead, wait till the start of the Phase 3 is announced, after which you should use CATcher to respond.
 </div>
 
-==**Deadline:** {{ get_date(date_w13_start, 14) }}==
+==**Deadline:** {{ get_date(date_w13_start, 13) }}==
 
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving dev team, you can record your objections and the reason for the objection.
   * not accepted

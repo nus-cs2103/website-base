@@ -2,7 +2,7 @@
 {% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center d-print-none"><md>**This is a draft version of the website! The final version will be available near the start of the semester.**</md></div>
 {% endif %}{% if current_week in ["-1", "0", "1"] %}
-<div class="w-100 p-1 bg-success text-white text-center d-print-none"><md>This module will be delivered in _blended learning_ mode (i.e., a mix of online and F2F activities) this semester.</md></div>
+<div class="w-100 p-1 bg-success text-white text-center d-print-none"><md>All the module activities are scheduled to be _in-person_ activities this semester.</md></div>
 {% elseif current_week == "15" %}
 <div class="w-100 p-1 bg-warning text-center"><md>**This site is from a past semester! The current version will be [here](http://www.comp.nus.edu.sg/~{{ module | lower }}) when the new semester starts.**</md></div>
 </div>
@@ -29,11 +29,11 @@
     <hr>
     <md>**&nbsp;Team Project (tP):**</md>
     <li><a href="{{baseUrl}}/admin/tp-expectations.html" class="dropdown-item"><md>{{ icon_project }} Team Project Info</md></a></li>
-    <li tags="m--cs2103 m--cs2113 m--tic4002"><a href="{{url_module_org}}/{{ tp_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} tP Upstream Repo (AB3)</md></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic4002"><a href="{{url_module_org}}/{{ tp_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} tP Upstream Repo </md></a></li>
     <li><a href="{{ url_team_list }}" class="dropdown-item"><md>:glyphicon-list-alt: Team List</md></a></li>
     <li><a href="{{ url_tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>
     <li><a href="{{url_tp_progress_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-trophy: tP Progress Dashboard</md></a></li>
-    <li tags="m--cs2113"><a href="{{url_module_org}}/addressbook-level3" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Reference AB3</md></a></li>
+    <li tags="m--cs2113"><a href="https://github.com/se-edu/addressbook-level3" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Reference AB3</md></a></li>
   </dropdown>
   <dropdown header="**{{ "Other " if not tic2002 or tee3201 else ""}}Links**" class="nav-link">
     <li tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002"><a href="{{url_bugs}}" target="_blank" class="dropdown-item"><md>:fas-bug: Report Bugs</md></a></li>

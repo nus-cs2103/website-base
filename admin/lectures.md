@@ -29,10 +29,7 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 ****Mode****:
 {% if cs2103 or cs2113 %}
-* Will be done using Zoom. The Zoom link will be available in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links). You can attend the live Zoom lecture or watch the recording later. {% if cs2113 %}
-* You need to register first before you receive the actual session link.
-{% endif %}
-* We might switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) around week 3 or so, if the circumstances allow it.
+* Lectures will be conducted on-campus (i.e., F2F) 
 {% else %}
 * As mentioned above, the lecture briefing will be delivered via Zoom (see [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links) for the Zoom link).
 {% endif %}
@@ -60,7 +57,7 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 ****Handouts****: There are no handouts. All learning materials are organized around topics, are given in Web format, can be found in the [Textbook]({{baseUrl}}/se-book-adapted/index.html) section (organized by topics), and are also embedded in the {{ url_schedule }} (organized in the order they are covered).
 {% if not tic4001 and not tic4002 %}
 
-****Slides****: Our lecture slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to LumiNUS *after* the lecture.
+****Slides****: Our lecture slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to LumiNUS ***after*** the lecture.
 {% endif %}
 </div>
 

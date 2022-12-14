@@ -26,7 +26,7 @@ week5: [
 week6: [
   {id: 'submit_coding_exercises', graded: true},
   {id: 'submit_post_lecture_quiz', graded: true, deadline: "before the lecture"},
-  {id: 'submit_midterm_feedback_for_the_module', deadline: get_date(date_w6_start, 8), deadline_type: 'info'}
+  {id: 'submit_midterm_feedback_for_the_module', deadline: get_date(date_w6_start, 15), deadline_type: 'info'}
 ],
 week7: [
   {id: 'submit_post_lecture_quiz', graded: true}
