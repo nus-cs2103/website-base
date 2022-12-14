@@ -28,11 +28,11 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 </div>
 
 ****Mode****:
-{% if cs2103 or cs2113 %}
-* Will be done using Zoom. The Zoom link will be available in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links). You can attend the live Zoom lecture or watch the recording later. {% if cs2113 %}
-* You need to register first before you receive the actual session link.
-{% endif %}
+{% if cs2103 %}
+* Will be done using Zoom. The Zoom link will be available in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links). You can attend the live Zoom lecture or watch the recording later.
 * We might switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) around week 3 or so, if the circumstances allow it.
+{% elseif cs2113 %}
+* Lectures will be conducted on-campus (i.e., F2F)
 {% else %}
 * As mentioned above, the lecture briefing will be delivered via Zoom (see [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links) for the Zoom link).
 {% endif %}

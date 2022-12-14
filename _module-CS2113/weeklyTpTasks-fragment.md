@@ -31,7 +31,7 @@ week8: [
 week9: [
   {id: 'make_code_more_defensive'},
   {id: 'deliver_first_version', deadline: 'midnight before the tutorial'},
-  {id: 'do_an_informal_demo', deadline: 'before the tutorial', deadline_type: "info"}
+  {id: 'do_an_informal_demo', deadline: 'during the tutorial', deadline_type: "info"}
 ],
 week10: [
   {id: 'start_on_the_penultimate_version'},

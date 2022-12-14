@@ -15,13 +15,13 @@ Same lecture content, same assessments, same exam. Separate tutorials, separate 
 
 <div id="admin-faq-highWorkload">
 
-<img src="{{baseUrl}}/admin/images/Why workload heavy.png" width="250" />
+<img tags="m--cs2103" src="{{baseUrl}}/admin/images/Why workload heavy.png" width="250" />
 
 {{ module_pair }} prepares you for many higher-level project modules (CS3216/7, CS3203, CS3281/2, etc.), each requiring a slightly different skill set. It is also the only SE module some of you do before going for industry internships. Therefore, we have to cover many essential SE concepts/skills and also provide enough exercises for you to practice those skills. This is also why we don't have time to go very deep into any of the topics.
 
 Remember, everything you learn here is going to be useful in a SE-related career.
 
-Also, consider this a gradual introduction to 'heavy' modules; most project modules you do after this are going to be much heavier :stuck_out_tongue:  
+Also, consider this a gradual introduction to 'heavy' modules; most project modules you do after this are going to be much heavier :stuck_out_tongue:
 
 ==How to reduce the workload?== You can omit Learning Outcomes rated {{ four_stars }}. Furthermore, control the project workload by using no more than a fixed amount of time weekly on the project (e.g., 1 day).
 
@@ -106,7 +106,7 @@ We have chosen a basic set of tools after considering ease of learning, availabi
 Pedagogical reasons:
 
 * **Sometimes 'good enough', not necessarily the best, tools are a better fit for beginners**: Most bleeding edge, most specialized, or most sophisticated tools are not suitable for a beginner course. After mastering our toolset, you will find it easy to upgrade to such high-end tools by yourself. We do expect you to eventually (after this module) migrate to better tools and, having learned more than one tool, to attain a more general understanding about a family of tools.
-* **We want you to learn to thrive under given conditions**: As a professional Software Engineer, you must learn to be productive in any given tool environment, rather than insist on using your preferred tools. It is usually in small companies doing less important work that you get to chose your own toolset. Bigger companies working on mature products often impose some choices on developers, such as the project management tool, code repository, IDE, language etc. For example, Google used SVN as their revision control software until very recently, long after SVN fell out of popularity among developers. Sometimes this is due to cost reasons (tool licensing cost), and sometimes due to legacy reasons (because the tool is already entrenched in their code base).  
+* **We want you to learn to thrive under given conditions**: As a professional Software Engineer, you must learn to be productive in any given tool environment, rather than insist on using your preferred tools. It is usually in small companies doing less important work that you get to chose your own toolset. Bigger companies working on mature products often impose some choices on developers, such as the project management tool, code repository, IDE, language etc. For example, Google used SVN as their revision control software until very recently, long after SVN fell out of popularity among developers. Sometimes this is due to cost reasons (tool licensing cost), and sometimes due to legacy reasons (because the tool is already entrenched in their code base).
  While programming in school is often a solo sport, programming in the industry is a team sport. As we are training you to become professional software engineers, it is important to get over the psychological hurdle of needing to satisfy individual preferences and get used to making the best of a given environment.
 
 Practical reasons:
