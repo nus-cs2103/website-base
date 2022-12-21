@@ -45,16 +45,13 @@ week9: [
   {id: 'do_a_release'}
 ],
 week10: [
-  {id: 'smoke_test_catcher', deadline: 'During the lecture', graded: true},
   {id: 'deliver_the_feature'},
   {id: 'update_user_docs', deadline: get_date(date_w10_start, 6)},
   {id: 'release_as_a_jar_file', deadline: get_date(date_w10_start, 6)},
   {id: 'wrap_up_penultimate_version'}
 ],
 week11: [
-  {id: 'attend_the_PED', deadline: get_date(date_w11_start, 0, '7-8pm'), graded: true},
-  {id: 'start_fixing_PED_bugs'},
-  {id: 'tweak_product_as_per_PED'}
+  {id: 'alpha_test'}
 ],
 week12: [
   {id: 'draft_the_ppp'},
@@ -65,9 +62,7 @@ week12: [
 week13: [
   {id: 'submit_final_deliverables', deadline: get_date(date_final_submission)},
   {id: 'wrap_up_final_milestone', deadline: get_date(date_final_submission, 2)},
-  {id: 'demo_the_product', deadline: get_date(date_final_submission, 2)},
-  {id: 'prepare_for_PE'},
-  {id: 'attend_the_PE', deadline: "moved to " + get_date(date_w13_start, 8, format=format_normal, time="6-9pm"), deadline_type: 'warning'}
+  {id: 'demo_the_product', deadline: get_date(date_final_submission, 2)}
 ]
 } %}
 

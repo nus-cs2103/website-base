@@ -7,32 +7,25 @@ week1: [
   {id: 'attend_the_first_lecture'}
 ],
 week2: [
-  {id: 'submit_first_post_lecture_quiz', deadline: get_date(date_w2_start, 6), graded: true},
   {id: 'get_connect_with_comm_channels'}
 ],
 week3: [
-  {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week4: [
-  {id: 'accept_github_invitations', graded: true},
-  {id: 'submit_post_lecture_quiz', graded: true}
+  {id: 'accept_github_invitations', graded: true}
 ],
 week5: [
-  {id: 'submit_post_lecture_quiz', graded: true},
   {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: get_date(date_w5_start, 6), graded: true}
 ],
 week6: [
-  {id: 'submit_post_lecture_quiz', graded: true},
   {id: 'submit_midterm_feedback_for_the_module', deadline: get_date(date_w6_start, 6), deadline_type: 'info'}
 ],
 week7: [
-  {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week8: [
   {id: 'submit_midterm_peer_evaluations', deadline: get_date(date_w8_start, 9), graded: true}
 ],
 week9: [
-  {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week10: [],
 week11: [],

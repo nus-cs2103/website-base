@@ -19,7 +19,7 @@
   * Do the lecture activities (if any) or weekly project activities.
   * You may approach instructors (using the MS Teams app) for help during this period.
   * After the team project has started, we'll be scheduling team meetings during this period, for the teaching team to discuss the project progress with you.<br>
-    These meetings will be done through MS Teams app. ==If your team prefer face-to-face team meetings instead==, let us know in advance so that the teaching team can meet your team in COM1-02-13 (Video Conference Room) instead.
+    These meetings will be done through MS Teams app.
 </div>
 
 <div tags="m--cs2103 m--cs2113">

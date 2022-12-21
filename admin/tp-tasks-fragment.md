@@ -1244,6 +1244,12 @@ Also see:
 {{ embed_topic("tp-pe.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="2") }}
 </div>
 {#====================================================================================================================#}
+<span id="heading_alpha_test">{{ icon_individual }} Alpha-test the product</span>
+<div id="desc_alpha_test">
+
+Test the product yourself (test each others' features) using the JAR file, report the bugs in the issue tracker, and fix them in due course.
+</div>
+{#====================================================================================================================#}
 <span id="heading_start_fixing_PED_bugs">{{ icon_individual }} Start fixing PED bugs</span>
 <div id="desc_start_fixing_PED_bugs">
 
