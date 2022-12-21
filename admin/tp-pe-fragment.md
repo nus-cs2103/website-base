@@ -9,7 +9,7 @@
 1. **Remote mode**: This is the ==recommended mode==. Proctored via Zoom. You'll need to join the Zoom session from a quiet place (i.e., conducive to an exam) at which you can set up a Zoom device for proctoring.
 1. **F2F mode**: Attend the PE at the lecture venue (iCube auditorium). Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of WiFi speed issues and GitHub throttling issues).
 
-We'll use a LumiNUS survey to collect your preferred mode.
+We'll use a Canvas survey to collect your preferred mode.
 </box>
 </div>
 
@@ -79,9 +79,9 @@ We'll use a LumiNUS survey to collect your preferred mode.
   * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true)== about 2 days before the PE. e.g.,
     * `[M48] John Doe` (`M18` is the seat number)
     * `[M48][PC] John Doe` (for the PC, if using a phone as well){% elseif cs2113 %}
-  * You will be ==notified of the zoom session== that you should log in at least 1 day in advance via LumiNUS. ==**Remember: we will NOT use the same zoom session as the lectures**==
+  * You will be ==notified of the zoom session== that you should log in at least 1 day in advance via Canvas. ==**Remember: we will NOT use the same zoom session as the lectures**==
   * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external web cam for your PC.
-  * Set your zoom display name to show your actual name as shown on LumiNUS.
+  * Set your zoom display name to show your actual name as shown on Canvas.
   * **Add `[PC]` in front of the _first name_ of your zoom display name on the pc**.
     * E.g., `John Doe` (for the zoom session connected via the phone)
     * `[PC] John Doe` (for the zoom session on PC){% endif %}
@@ -103,7 +103,7 @@ We'll use a LumiNUS survey to collect your preferred mode.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.**{% if cs2103%} Zoom sessions are invigilated by tutors, not the prof.{% endif %}
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
 * **During the bug reporting periods (i.e., <span class="badge bg-success">PE Phase 1 - part I</span> and <span class="badge bg-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** If you need to visit a different website or use another software, please ask for permission first.
-  * Website: LumiNUS
+  * Website: Canvas
   * Website/software: MSTeams (only to communicate with the prof of Tech support)
   * Website: Module website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab/recording software

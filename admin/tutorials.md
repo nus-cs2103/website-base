@@ -10,13 +10,13 @@
 
 <box>
 
-{{ icon_important_big_red }} Our tutorial IDs are different from LumiNUS. Format: `{{ module }}T-W11` means a tutorial of `{{ module }}T` module, held on `Wednesday` at `1100`, and so on.
+{{ icon_important_big_red }} Our tutorial IDs are different from Canvas. Format: `{{ module }}T-W11` means a tutorial of `{{ module }}T` module, held on `Wednesday` at `1100`, and so on.
 
 </box>
 
 <box type="info" tags="m--cs2103" header="Zoom Links & Venue" id="venue-and-links">
 
-**Our tutorials are conducted via Zoom. Zoom links for tutorial sessions** will be available in [LumiNUS/Weblinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.
+**Our tutorials are conducted via Zoom. Zoom links for tutorial sessions** will be available in [Canvas module homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.
 
 **We have set aside a physical venue (COM1-B103), in case you would like to join the Zoom tutorial from there** e.g., your prefer to sit together with your team members, or you can't find a place in SoC conducive to joining a Zoom tutorial. So, you can join our tutorials from COM1-B103 or any other place of your choice.<br>
  For now, the tutor will conduct the tutorial remotely as the physical venue is shared by two parallel tutorials. Meanwhile, we are exploring other alternatives.

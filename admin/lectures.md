@@ -14,7 +14,7 @@
 **The lecture+tutorial slot ({{ day_lecture }} 6.30pm-9.30pm) will be repurposed** as follows, due to this being a 100% project module:
 
 * **6.30-7pm**: No formal activities. Work with team members and consult instructors (using the MS Teams app) if you need help with the previous week's tasks.
-* **7-7.30pm**: Weekly briefing, done via Zoom. The Zoom link can be found in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links).
+* **7-7.30pm**: Weekly briefing, done via Zoom. The Zoom link can be found in [Canvas module homepage]({{ url_canvas_home }}).
 * **7.30-9.30pm**:
   * Do the lecture activities (if any) or weekly project activities.
   * You may approach instructors (using the MS Teams app) for help during this period.
@@ -29,12 +29,12 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 ****Mode****:
 {% if cs2103 %}
-* Will be done using Zoom. The Zoom link will be available in [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links). You can attend the live Zoom lecture or watch the recording later.
+* Will be done using Zoom. The Zoom link will be available in [Canvas module homepage]({{ url_canvas_home }}). You can attend the live Zoom lecture or watch the recording later.
 * We might switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) around week 3 or so, if the circumstances allow it.
 {% elseif cs2113 %}
 * Lectures will be conducted on-campus (i.e., F2F)
 {% else %}
-* As mentioned above, the lecture briefing will be delivered via Zoom (see [LumiNUS WebLinks](https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/details/web-links) for the Zoom link).
+* As mentioned above, the lecture briefing will be delivered via Zoom (see [Canvas module homepage]({{ url_canvas_home }}) for the Zoom link).
 {% endif %}
 
 <div tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">
@@ -49,7 +49,7 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 ##### Tips for watching lecture videos
 
 * ==You can watch video lectures at faster speeds== (`x1.25` or even `x1.5`) to save time.{% if cs2113 %}
-* Lecture videos are distributed from within LumiNUS -> Multimedia channel.{% else %}
+* Lecture videos are distributed via Canvas.{% else %}
 * Lecture videos require NUSNET login.{% endif %}
 </box>
 </div>
@@ -60,7 +60,7 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 ****Handouts****: There are no handouts. All learning materials are organized around topics, are given in Web format, can be found in the [Textbook]({{baseUrl}}/se-book-adapted/index.html) section (organized by topics), and are also embedded in the {{ url_schedule }} (organized in the order they are covered).
 {% if not tic4001 and not tic4002 %}
 
-****Slides****: Our lecture slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to LumiNUS *after* the lecture.
+****Slides****: Our lecture slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to Canvas *after* the lecture.
 {% endif %}
 </div>
 

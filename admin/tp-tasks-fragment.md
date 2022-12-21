@@ -487,7 +487,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ version_first }}.
   * Include only features that will be delivered in {{ version_first }}.
   * <span tags="m--cs2103 m--tic4002">Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%</span><span tags="m--cs2113 m--tic4001">Consider including examples of expected outputs too</span>.
-  * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to LumiNUS.<br><br>
+  * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.<br><br>
 
 <div id="divideDocs" class="indented">
 
@@ -1406,16 +1406,16 @@ Not applicable this semester
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
 <div id="desc_submit_final_deliverables">
 
-* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 23:59:00** unless stated otherwise. Note that <span class="text-danger">23:59:01 is considered late</span>, as per the LumiNUS deadline mechanism.
+* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 23:59:00** unless stated otherwise. Note that <span class="text-danger">23:59:01 is considered late</span>, as per the Canvas deadline mechanism.
 * {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
   Penalty for delays beyond 24 hours is determined on a case by case basis.
   * Even a one-second delay is considered late, irrespective of the reason.
-  * For submissions done via LumiNUS, the submission time is the timestamp shown by LumiNUS.
+  * For submissions done via Canvas, the submission time is the timestamp shown by Canvas.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
   * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.{% endif %}
-* **Submit to LumiNUS folder we have set up**, not to your project space.
+* **Submit via the Canvas assignment we have set up**.
   {% if has_t %}{{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.{% endif %}
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
   * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%e.g. broken links, outdated diagrams/instructions etc.%%.
@@ -1456,17 +1456,15 @@ Not applicable this semester
 **The icon {{ icon_team }} indicates team submissions.** Only one person need to submit on behalf of the team but we recommend that others help verify the submission is in order <br>
 ==We will not accept requests to limit late penalties of team submissions to one person== even if the delay was one person's fault. That is, the responsibility (and the penalty) for team submissions are to be shared by the whole team rather than burden one person with it.
 
-**The icon {{ icon_individual }} indicates individual submissions.** When uploading files to LumiNUS, please ==upload your individual files yourself==. %%Reason: Penalties related to submission time/format are calculated automatically based on the uploader's identity.%%
-
 </box>
 </div>
 
 * {{ icon_team }} **Product**:
   * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.
-  * Upload the jar file to LumiNUS.<br>
+  * Upload the jar file to Canvas.<br>
     File name: `[team ID][ProductName].jar` %%e.g. [{{ example_team_id }}][ContactsPlus].jar%%<br>
     {{ icon_important }} Recommended to avoid spaces and special characters in the product name as it can cause problems when running the JAR file using the command line.<br>
-    %%{{ icon_info }} This name requirement is for the JAR file you upload to LumiNUS only. You may name the JAR file you upload to GitHub in any reasonable way.%%
+    %%{{ icon_info }} This name requirement is for the JAR file you upload to Canvas only. You may name the JAR file you upload to GitHub in any reasonable way.%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
 
@@ -1476,7 +1474,7 @@ Not applicable this semester
 {{ embed_topic("tp-deliverables.md#tp-deliverables-sourcecode", "Admin " + icon_embedding + " tP → Deliverables → Source Code", "3", indent="2") }}
 
 
-* {{ icon_team }} **User Guide**: Convert to pdf and upload to LumiNUS.<br>
+* {{ icon_team }} **User Guide**: Convert to pdf and upload to Canvas.<br>
   File name: `[TEAM_ID][ProductName]UG.pdf`  %%e.g.[{{ example_team_id }}][ContactsPlus]UG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
@@ -1489,7 +1487,7 @@ Not applicable this semester
 
 * {{ icon_individual }} **Project Portfolio Page (PPP)**:
   * PDF file: submission is similar to the UG<br>
-    File name: `[TEAM_ID][Your full Name as Given in LumiNUS]PPP.pdf` %%e.g.[{{ example_team_id }}][Leow Wai Kit, John]PPP.pdf%%<br>
+    File name: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g.[{{ example_team_id }}][Leow Wai Kit, John]PPP.pdf%%<br>
     {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names)
   * HTML version: make available on `github.io`
 

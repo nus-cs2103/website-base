@@ -10,7 +10,7 @@
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="register-the-team">
 
-* Get your team ID from the tutor. ==Each student must submit your team ID== via the LumiNUS `Class Groups` page -- for us to know which team you joined. Note the team ID follows a specific format.
+* Get your team ID from the tutor. ==Each student must submit your team ID== via the Canvas `Class Groups` page -- for us to know which team you joined. Note the team ID follows a specific format.
 
 {{ embed_topic("tp-teams.md#teamIdFormat", "Admin " + icon_embedding + " **Teams → Team ID Format**", "2", indent="2") }}
 </div>
@@ -240,7 +240,7 @@ Note the following:
 
 **[Recommended] Do the following before attempting the tutorial tasks**
 
-1. Do this week's LumiNUS quiz Part I, to self-test your memory of the required UML notation.
+1. Do this week's Canvas quiz Part I, to self-test your memory of the required UML notation.
 1. Watch at least some of the [UML drawing step-by-step example videos](../schedule/week8/topics.html) provided.
 </box>{% endif %}
 </div>

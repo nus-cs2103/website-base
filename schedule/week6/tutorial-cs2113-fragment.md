@@ -12,5 +12,5 @@
 
 #### {{ thumb(3) }} Receive feedback on the tP UG draft
 
-* The tutor will give feedback based on the UG draft that you uploaded to LumiNUS.
+* The tutor will give feedback based on the UG draft that you uploaded to Canvas.
 * The feedback will be limited to the scope of {{ version_first }} i.e., caution you if you seem to overambitious in you {{ version_first }} plan.

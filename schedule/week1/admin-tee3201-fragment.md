@@ -18,7 +18,7 @@
 
 #### {{ thumb(2) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
 
-* Submit the pre-module survey, available on LumiNUS
+* Submit the pre-module survey, available on Canvas
 
 
 #### {{ thumb(3) }} Attend the lecture

@@ -537,7 +537,7 @@ This activity is worth `2x2=4` participation points.
 
 </div>
 
-1. {% if cs2113 %}**The allocation will be in the LumiNUS gradebook**, by Monday 2359.{% else %}**Wait for the email notifying you which iPs are allocated for you to evaluate**. When the email is sent out, it will also be announced via module announcements.{% endif %}
+1. {% if cs2113 %}**The allocation will be sent via email**, by Monday 2359.{% else %}**Wait for the email notifying you which iPs are allocated for you to evaluate**. When the email is sent out, it will also be announced via module announcements.{% endif %}
 1. **Download the _latest_ JAR file** of the first iP by following the link provided.
    <box type="info" icon=":fas-question:" seamless>
 
@@ -545,7 +545,7 @@ This activity is worth `2x2=4` participation points.
    **A**: When you submit the evaluation (step 7 below), there will be a way to indicate that the JAR was not available, or any other serious issues you faced.
    </box>
 1. **Locate the User Guide** of the app by following the link provided.
-1. **Open the LumiNUS survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
+1. **Open the Canvas survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
    {{ icon_important_big_red }} Make sure you are using Java 11 to run the jar file (use `java -version` command to confirm).<br>
    {{ icon_tip }} If double-clicking the jar file doesn't work, use the `java -jar {file_name}` command to open it.

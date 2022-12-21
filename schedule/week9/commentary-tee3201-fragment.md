@@ -11,7 +11,7 @@ This week, **we start learning a UML diagram called _Class Diagrams_.**
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_followup("UML Class and Object Diagrams: Basics", reuse=false) %}
 After learning the UML notations above, do the following in the given order:
-1. **Attempt this week's LumiNUS quiz.** It will help you solidify your knowledge of the UML notation covered so far.
+1. **Attempt this week's Canvas quiz.** It will help you solidify your knowledge of the UML notation covered so far.
 2. **Watch the video given below.**. It contains a step-by-step example of drawing UML diagrams.
 
 {{ panopto("dab3bb0f-c0cd-40af-8e39-ab88005aa195") }}

@@ -14,7 +14,7 @@
 
 #### {{ thumb(2) }} Submit quiz
 
-* After learning the [SE topics](topics.md) allocated for this week, submit the quiz on LumiNUS.
+* After learning the [SE topics](topics.md) allocated for this week, submit the quiz on Canvas.
 
 
 #### {{ thumb(3) }} Submit weekly project increments

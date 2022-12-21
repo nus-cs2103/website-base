@@ -8,7 +8,7 @@
 * **All members taking part** in the demo video is encouraged but not compulsory.
 * **File name:** `[TEAM_ID][product Name].mp4`  %%e.g.[{{ example_team_id }}][ContactsPlus].mp4%% (other video formats are acceptable but use a format that works on all major OS'es).
 * **File size:** Recommended to keep below 200MB. You can use a low resolution as long as the video is in usable quality.
-* **Submission:** Submit to LumiNUS (different folder).
+* **Submission:** Submit to Canvas (via the corresponding assignment).
 * **Deadline:** 2 days after the main deadline
 * **Suggested tools:**
   * Ink2Go: You can use this to record your screen and annotate if necessary. [Here](https://wiki.nus.edu.sg/display/cit/Ink2go+Instructions+for+Students) are some instructions from NUS CIT to help you get started.

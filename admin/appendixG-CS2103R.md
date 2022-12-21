@@ -17,7 +17,7 @@
 **Timeline**:
 1. `[Weeks 9-11]` Submit a brief proposal (~ 1 page):<br>
    Contents: your name, student number, an outline of the proposed change, expected pros/cons.<br>
-   Submission: Upload a file `CS2103R-YOUR_NAME.pdf` to the corresponding LumiNUS folder.
+   Submission: Upload a file `CS2103R-YOUR_NAME.pdf` to the corresponding Canvas folder.
 1. `[Reading week]` You will be notified if you are accepted for CS2103R. As this is the first time we are offering CS2103R in this manner, the number of slots is likely to be small in this round.
 1. `[Within 4 weeks of the end of the exam period]` submit the implementation and the report. The grade will be given to you soon after.
 1. `[Week 1 of the following semester]` Register for the module, to receive the extra 1MC in the following semester. More info about R modules is given [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=SUW&title=R+Modules) (requires login).

@@ -12,7 +12,7 @@
 
 <variable name="algolia">no</variable>
 
-<variable name="luminus_module_id">852a7711-54a0-4103-a2f7-3d877f33a454</variable>
+<variable name="canvas_course_id">36678</variable>
 <variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
 <variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
 <variable name="url_ms_teams_class">x</variable>
@@ -106,10 +106,11 @@
 <variable name="url_module_gihub_io">https://{{ module_org | lower }}.github.io</variable>
 
 <variable name="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
-<variable name="url_announcements">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/announcements/active</variable>
+<variable name="url_announcements">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}/announcements</variable>
 <variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_canvas_home">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}</variable>
 <variable name="url_dashboards">{{ url_module_gihub_io | safe }}/dashboards</variable>
-<variable name="url_files">https://luminus.nus.edu.sg/modules/{{ luminus_module_id }}/files</variable>
+<variable name="url_files">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}/files</variable>
 <variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/{{ tp_repo_name }}</variable>
@@ -120,6 +121,7 @@
 <variable name="url_ip_progress_dashboard">{{ url_dashboards }}/contents/ip-progress.html</variable>
 <variable name="url_module_website">{{ url_module_gihub_io | safe }}/website</variable>
 <variable name="url_participation_dashboard">{{ url_dashboards }}/contents/participation.html</variable>
+<variable name="url_quizzes">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}/quizzes</variable>
 <variable name="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
 <variable name="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
 <variable name="url_tp_dashboard">{{ url_module_gihub_io | safe }}/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other</variable>
@@ -223,6 +225,6 @@ Module                 | Venue    | Time
 ---------------------- | -------- | ----
 </span>
 <span id="tutorial_table_headers">
-Module | Venue | Time | ~~%%Tutorial ID<br>in LumiNUS%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](../admin/instructors.html))
+Module | Venue | Time | ~~%%Tutorial ID<br>in Canvas%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](../admin/instructors.html))
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------
 </span>

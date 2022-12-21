@@ -68,7 +68,7 @@ The final exam has two types of questions:
    &nbsp;&nbsp;(a) give you an unfair advantage over the other exam takers, or,<br>
    &nbsp;&nbsp;(b) go against the goal of the exam,<br>
    even if your action was not explicitly prohibited by the exam rules.
-1. **Download all parts of the exam before you come to the exam** ({% if cs2103 %}parts 1 & 3 from Examplify, part 2 PDF file from Luminus{% else %}i.e., parts 1 & 2{% endif %}). We'll give you the password for opening each part at the exam, at the respective starting time of each part.
+1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2{% if cs2103 %}, 3{% endif %}). We'll give you the password for opening each part at the exam, at the respective starting time of each part.
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
 <include src="exam-doubts-fragment.md" />

@@ -12,7 +12,7 @@
 <span id="heading_submit_pre_lecture_quiz">Submit pre-lecture quiz</span>
 <div id="desc_submit_pre_lecture_quiz">
 
-* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz`** (on LumiNUS) to test your knowledge of those topics. Ideally, finish the quiz before the first lecture, latest by the given deadline. The quiz is counted for participation.
+* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz`** (on Canvas) to test your knowledge of those topics. Ideally, finish the quiz before the first lecture, latest by the given deadline. The quiz is counted for participation.
 
 {{ embed_topic("participation.md#main", "Admin " + icon_embedding + " **Participation**", "2", indent="2") }}
 
@@ -46,7 +46,7 @@ The tools in the following panels differ slightly from TIC4001.
 <div id="desc_submit_pre_module_survey">
 
 * **Submit the pre-module survey ==(compulsory)==**<br>
-  _Pre-Module Survey_ will be available on LumiNUS **Week 1 Monday - Friday 2359**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
+  _Pre-Module Survey_ will be available on Canvas **Week 1 Monday - Friday 2359**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
 </div>
 {#====================================================================================================================#}
 <span id="heading_learn_about_the_module">Learn about the module</span>
@@ -84,7 +84,7 @@ The info in the following panels differs from TIC4001.
 <span id="heading_submit_first_post_lecture_quiz">Submit post-lecture quiz</span>
 <div id="desc_submit_first_post_lecture_quiz">
 
-* **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
+* **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on Canvas) to test your knowledge of those topics.
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_first_coding_exercises">Submit coding exercises via Coursemology</span>
@@ -149,7 +149,7 @@ The info in the following panels differs from TIC4001.
 <span id="heading_submit_midterm_feedback_for_the_module">{% if not cs2113 %}[optional]{% endif %} Submit mid-term feedback for the module</span>
 <div id="desc_submit_midterm_feedback_for_the_module">
 
-* **An anonymous survey to submit feedback about the module and the teaching team** will open on LumiNUS by Monday. Please take a few minutes to give us your feedback.
+* **An anonymous survey to submit feedback about the module and the teaching team** will open on Canvas by Monday. Please take a few minutes to give us your feedback.
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_midterm_peer_evaluations">Submit midterm peer evaluations on TEAMMATES</span>
@@ -173,7 +173,7 @@ The info in the following panels differs from TIC4001.
 <span id="heading_submit_pe_readiness_quiz">Submit the _PE-Readiness Quiz_</span>
 <div id="desc_submit_pe_readiness_quiz">
 
-* Submit this quiz (on LumiNUS) to confirm that you know important details about the PE.
+* Submit this quiz (on Canvas) to confirm that you know important details about the PE.
 </div>
 {#====================================================================================================================#}
 <span id="heading_join_catcher_load_testing">Take part in the CATcher load testing</span>
@@ -186,7 +186,7 @@ The info in the following panels differs from TIC4001.
 <span id="heading_submit_reuse_declaration">Submit the declaration about code reuse</span>
 <div id="desc_submit_reuse_declaration">
 
-* Submit the LumiNUS survey to declare that you have followed the proper procedure for reusing/adapting code from elsewhere. You need to submit this ==even if you did not reuse any code==.
+* Submit the Canvas survey to declare that you have followed the proper procedure for reusing/adapting code from elsewhere. You need to submit this ==even if you did not reuse any code==.
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " Policy on reuse", "1", indent="2", status="expanded") }}
 </div>

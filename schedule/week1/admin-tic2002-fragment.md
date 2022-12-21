@@ -31,7 +31,7 @@
 
 #### {{ thumb(3) }} Submit the pre-module survey  {{ timing_badge("by " + get_date(date_w1_start, 4), "secondary") }}
 
-* Submit the pre-module survey, available on LumiNUS
+* Submit the pre-module survey, available on Canvas
 
 #### {{ thumb(4) }} Attend the lecture
 * There is no tutorial in this week. The lecture will start at 7.30pm.

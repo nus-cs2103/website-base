@@ -17,7 +17,7 @@
 
 #### {{ thumb(3) }} Review sample <tooltip content="Developer Guide">DG</tooltip> extracts
 
-* Evaluate the sample DG extracts in `T10-DG-Extracts.pdf` (in [LumiNUS/Files]({{ url_files }})/Handouts).
+* Evaluate the sample DG extracts in `T10-DG-Extracts.pdf` (in [Canvas/Files]({{ url_files }})/Handouts).
 * In particular, detect the following DG bugs (they are the same bugs against which your final DG will be evaluated).
 
 {{ embed_topic("../../admin/tp-grading-bugs-fragment.md#architectureDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Architecture Section → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}

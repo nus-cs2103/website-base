@@ -91,7 +91,7 @@ Lectures/tutorials will be delivered fully online during the first 1-2 weeks (as
     * do suggested activities/exercises in there (if any)
     * if you encounter any problems while doing the above or have a question, contact the prof using MS-Teams, similar to the _pre-lecture consultations_ explained above.
 
-**Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Use the textbook (not slides) as your main reference. Slides can be uploaded to LumiNUS if requested, _after_ the lecture.<br>
+**Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Use the textbook (not slides) as your main reference. Slides can be uploaded to Canvas if requested, _after_ the lecture.<br>
 
 </div>
 
@@ -176,16 +176,16 @@ Please upload items 2, 3, 4 as three separate files. ==Do not put them into a si
 </box>
 
 1. **Source code** of the working program: push to your GitHub repo
-1. **Product**: Create a JAR file for the final version of the code and submit to LumiNUS, name: `{YourName}.jar` e.g., `JunHao.jar`
-1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template file given (available in LumiNUS/Files/Handouts).<br>
-   Submission: Upload to LumiNUS. The file name should be your name e.g., `JunHao.docx`
+1. **Product**: Create a JAR file for the final version of the code and submit to Canvas, name: `{YourName}.jar` e.g., `JunHao.jar`
+1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template file given (available in Canvas/Files/Handouts).<br>
+   Submission: Upload to Canvas. The file name should be your name e.g., `JunHao.docx`
 1. **Demo video**:
    * Record a demo video showcasing the features of your product.
    * Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).
    * Recommended length 7 minutes, max length 10 minutes.
    * Audio narration is optional if the demo can be understood without the audio.
    * Ensure the video is in a format that can be played by any computer.
-   * Submission: Name the file with your name (to match the jar and the report file) and upload to LumiNUS.
+   * Submission: Name the file with your name (to match the jar and the report file) and upload to Canvas.
 
 </div>
 </div>
@@ -296,7 +296,7 @@ We'll be using Intellij IDE for programming. While using Intellij is not compuls
 <span id="help-info">
 
 If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, you can
-* post in the [LumiNUS forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums)
+* post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums)
 * ask for prof's help via [MS Teams]({{ url_ms_teams_class }})
 * email prof at `{{ module | lower }}`[at]`comp.nus.edu.sg`
 

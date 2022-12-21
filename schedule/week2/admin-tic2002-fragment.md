@@ -20,4 +20,4 @@
 
 {{ thumb(3) }} Submit post-lecture quiz
 
-* Submit the post-lecture quiz on LumiNUS.
+* Submit the post-lecture quiz on Canvas.

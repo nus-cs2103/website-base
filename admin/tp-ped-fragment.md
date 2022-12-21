@@ -66,7 +66,7 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 <tab header="PE (at **{{ version_final }}**)">
 
 * Download the zip file from the given location (to be given to you at least a few hours before the PE), if you haven't done that already.
-* Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix `_inner.zip`.
+* Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via Canvas gradebook). This will give you another zip file with the name suffix `_inner.zip`.
 * Unzip the inner zip file. This will give you the JAR file and other PDF files needed for the PE. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
   Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%
 

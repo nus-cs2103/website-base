@@ -97,7 +97,7 @@ If you are uncomfortable posting your photo due to security reasons, you can pos
 </div>
 
 * **Include a link to each person's PPP page.**
-* **Team member names match full names used by LumiNUS.**
+* **Team member names:** you may use the full name, part of the name, or Github username of the team member.
 
 #### <span class="badge bg-info">Website</span> <span class="text-info">UG (Web Page)</span>
 

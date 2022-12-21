@@ -81,7 +81,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 {{ icon_tip }} ==If you prefer face-to-face interactions during this portion==, I can come to meet you f2f in the lecture venue (please let me know in advance).
 
 
-**{{ icon_slides }} Lecture slides will be uploaded to LumiNUS after the lecture**, usually by midnight of the same day. **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.
+**{{ icon_slides }} Lecture slides will be uploaded to Canvas after the lecture**, usually by midnight of the same day. **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.
 
 
 </div>
@@ -156,10 +156,10 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 
 **Deliverables**:
 1. **Code** of the working program: zip (not rar) the code.
-   * Submission: Upload to LumiNUS/files folder named **`final-project-submissions/code`**
+   * Submission: via Canvas assignments
    * File name: `{Your Name}.zip` e.g., `Jun Hao.zip`
-1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in LumiNUS).
-   * Submission: Upload to LumiNUS/files folder named **`final-project-submissions/report`**
+1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in Canvas).
+   * Submission: via Canvas assignments
    * File name: `{Your Name}.docx/pdf`  e.g., `Jun Hao.docx`
 1. **Demo video**:
    * Record a demo video showcasing the features of your product.
@@ -167,7 +167,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
    * Recommended length 7 minutes, max length 10 minutes.
    * Audio narration is optional if the demo can be understood without the audio.
    * Ensure the video is in a format that can be played by any computer.
-   * Submission: Upload to LumiNUS/files folder named **`final-project-submissions/demo`**
+   * Submission: via Canvas assignments
    * File name: `{Your Name}.mp4`  e.g., `Jun Hao.mp4`
 
 </div>
@@ -227,7 +227,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 2. **Email `tee3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
 3. **Send a private message** to the prof (search for `Damith Chatura Rajapakse`) or to the TA (search for `Chan Weizhong`) via MS Teams.
 4. Email the prof at <include src="index-{{ module | lower }}-fragment.md#prof-email" inline trim/> or the TA at <include src="index-{{ module | lower }}-fragment.md#ta-email" inline trim/>
-5. You may also post in the [LumiNUS forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
+5. You may also post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
 
 </span>
 <!-- .......................................................................................... --> {{ line_dotted }}

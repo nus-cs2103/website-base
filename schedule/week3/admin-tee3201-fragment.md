@@ -15,7 +15,7 @@
 
 #### {{ thumb(2) }} Submit the quiz
 
-* Submit answers to the quiz on LumiNUS
+* Submit answers to the quiz on Canvas
 
 
 #### {{ thumb(3) }} Submit weekly project increments
