@@ -60,7 +60,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 </div>
 
 #### Tutors:
-* **Chan Weizhong**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`chan.weizhong`[at]`u.nus.edu`</span>
+* **Ou Jin Bin (Kelvin)**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`e0902046@`[at]`u.nus.edu`</span>
 
 </div>
 
@@ -176,7 +176,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 
 # Policies
 
-<span id="deadlines-info">
+<div id="deadlines-info">
 
 ### Deadlines
 * Deadline for weekly tasks:
@@ -184,13 +184,22 @@ In some weeks, there will be some programming exercises for you to submit (on Co
   * **If no specific deadline is given**,
     * Soft deadline: try to complete tasks allocated to a week before the following lecture.
     * Hard deadline: In case you fail to meet the soft deadline, there will be no penalty if a task is done within one week after the soft deadline.
-</span>
+</div>
 
-<span id="plagiarism-info">
+<div id="plagiarism-info">
 
 ### Plagiarism
 * You may view/discuss others' work or get help from others. However, <span class="text-danger"> ==the work you submit should be your own==. In case of similar submissions, marks will be divided among those submissions</span> e.g., if your submission scored 8/10 and there is another submission that is similar to your work (beyond coincidental similarity), each submission will get 4 marks.
-</span>
+* If you reuse/adapt code from elsewhere (e.g., from an online site such as stackoverflow), you must cite the source in the code. e.g.,
+  ```python{.no-line-numbers}
+  # Solution below adapted from https://stackoverflow.com/a/16252290
+  {Your implementation of the reused solution here ...}
+  ```
+
+<include src="policies-fragment.md#cite-reuse-immediately" />
+
+<include src="policies-fragment.md#using-tool-generated-code" />
+</div>
 
 <!-- .......................................................................................... --> {{ line_dotted }}
 

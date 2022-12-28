@@ -55,7 +55,7 @@
 
 * Take note of our plagiarism policies
 
-{{ embed_topic("../../admin/index-tic2002-fragment.md#plagiarism-policy", "Admin " + icon_embedding + " Policies -> **Plagiarism**", "1", indent=1, type="danger") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#plagiarism-policy", "Admin " + icon_embedding + " Policies -> **Plagiarism**", "1", indent=2, type="danger") }}
 
 * Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> in the given order.
   * **Commit** code at important points. ==Minimally, commit after completing each increment==.

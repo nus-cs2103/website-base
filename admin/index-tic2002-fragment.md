@@ -210,9 +210,9 @@ Please upload items 2, 3, 4 as three separate files. ==Do not put them into a si
 
 * You are allowed (and even encouraged) to discuss module tasks with others and help (and learn-from) each other. However, the submitted work should be largely your own.
 * If you reuse/adapt code from elsewhere (e.g., from an online site such as stackoverflow), you must cite the source in the code. e.g.,
-   ```{.no-line-numbers}
+   ```java{.no-line-numbers}
    //Solution below adapted from https://stackoverflow.com/a/16252290
-   {Your implmentation of the reused solution here ...}
+   {Your implementation of the reused solution here ...}
    ```
 
 <include src="policies-fragment.md#cite-reuse-immediately" />

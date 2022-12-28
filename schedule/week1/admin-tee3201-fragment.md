@@ -54,6 +54,10 @@
 * Note how the project can affect participation marks:
 {{ embed_topic("../../admin/index-tee3201-fragment.md#assessment-info", "Admin " + icon_embedding + " Assessment", "1", indent="2") }}
 
+* Take note of our plagiarism policies
+
+{{ embed_topic("../../admin/index-tee3201-fragment.md#plagiarism-info", "Admin " + icon_embedding + " Policies -> **Plagiarism**", "1", indent=2, type="danger") }}
+
 <span id="week1-project">
 
 * Use the exercise `Week1 - Project Submission` on Coursemology (under the `Python exercises` section) to do this week's project task given below.
