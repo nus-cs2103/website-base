@@ -53,15 +53,19 @@
 
 #### {{ thumb(2) }} Implement Duke increments `Level-1`, `Level-2`
 
+* Take note of our plagiarism policies
+
+{{ embed_topic("../../admin/index-tic2002-fragment.md#plagiarism-policy", "Admin " + icon_embedding + " Policies -> **Plagiarism**", "1", indent=1, type="danger") }}
+
 * Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> in the given order.
   * **Commit** code at important points. ==Minimally, commit after completing each increment==.
   * After completing each increment,
      * **Tag** the commit with the exact increment ID e.g., `Level-1`, `Level-2`.
      * **Push** the code to your fork.
   * The relevant textbook topics are:
-     {{ embed_topic("../../book/gitAndGithub/commit/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Committing**", "1", indent=4) }}
-     {{ embed_topic("../../book/gitAndGithub/tag/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Tagging**", "1", indent=4) }}
-     {{ embed_topic("../../book/gitAndGithub/push/text.md#simple-push", "Textbook " + icon_embedding + " Git & GitHub → **Pushing**", "1", indent=4) }}
+     {{ embed_topic("../../book/gitAndGithub/commit/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Committing**", "1", indent=2) }}
+     {{ embed_topic("../../book/gitAndGithub/tag/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Tagging**", "1", indent=2) }}
+     {{ embed_topic("../../book/gitAndGithub/push/text.md#simple-push", "Textbook " + icon_embedding + " Git & GitHub → **Pushing**", "1", indent=2) }}
   * {{ icon_tip }} If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).
 <div class="indented-level2">
 

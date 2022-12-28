@@ -57,7 +57,7 @@ e.g., **Instead of traditional instructor-led tutorials**, the module provides q
 
 #### Tutors:
 
-* **Chan Weizhong**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`chan.weizhong`[at]`u.nus.edu`</span>
+* **Richard Dominick**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`dominick`[at]`u.nus.edu`</span>
 
 </div>
 
@@ -176,7 +176,10 @@ Please upload items 2, 3, 4 as three separate files. ==Do not put them into a si
 </box>
 
 1. **Source code** of the working program: push to your GitHub repo
-1. **Product**: Create a JAR file for the final version of the code and submit to Canvas, name: `{YourName}.jar` e.g., `JunHao.jar`
+1. **Product**:<br>
+    i\. Create a JAR file for the final version of the code.<br>
+    ii\. Copy it to an empty folder outside of your project folder, and test it (reason: to ensure the JAR file does not depend on a specific folder location for it to work).<br>
+    iii\. Submit to Canvas, name: `{YourName}.jar` e.g., `JunHao.jar`
 1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template file given (available in Canvas/Files/Handouts).<br>
    Submission: Upload to Canvas. The file name should be your name e.g., `JunHao.docx`
 1. **Demo video**:
@@ -194,17 +197,29 @@ Please upload items 2, 3, 4 as three separate files. ==Do not put them into a si
 
 # Policies
 
-<span id="deadlines-info">
+<div id="deadlines-info">
 
 ### Deadlines
 * Deadline for weekly tasks:
   * **If a specific deadline is given**, adhere to that.
   * **If no specific deadline is given**, try to complete tasks allocated to a week by Tuesday 6.30pm of the following week (i.e., before the next lecture). In case you fail to meet that deadline, you should still do those tasks as soon as possible. There will be no penalty if a task is done within a _grace period_ of one week after the deadline.
 
+<div id="plagiarism-policy">
+
 ### Plagiarism
 
-* You are allowed (and even encouraged) to discuss module tasks with others and help (and learn-from) each other. However, the submitted work should be your own.
-</span>
+* You are allowed (and even encouraged) to discuss module tasks with others and help (and learn-from) each other. However, the submitted work should be largely your own.
+* If you reuse/adapt code from elsewhere (e.g., from an online site such as stackoverflow), you must cite the source in the code. e.g.,
+   ```{.no-line-numbers}
+   //Solution below adapted from https://stackoverflow.com/a/16252290
+   {Your implmentation of the reused solution here ...}
+   ```
+
+<include src="policies-fragment.md#cite-reuse-immediately" />
+
+<include src="policies-fragment.md#using-tool-generated-code" />
+</div>
+</div>
 
 {{ line_dotted }}<!-- ................................................................................... -->
 
