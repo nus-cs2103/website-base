@@ -277,6 +277,15 @@ Hence, do not be tempted to argue for an unreasonable position in the hope that 
 More importantly, this is not a bargaining between two parties; it's **an attempt to determine the true nature of the bug, and your ability to do so (which is an important skill)**.
 </box>
 
+<box type="tip" seamless>
+
+**Favor `response.NotInScope` over `response.Reject`**{.text-success}
+
+If there is even a slightest chance that the change suggested by a bug report is something that you *might* consider doing in a future version of the product, choose `response.NotInScope`. Use `response.Reject` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).
+
+Note that `response.NotInScope` bugs earn the tester a small amount of credit without any causing any penalty for the dev team.
+</box>
+
 **Duration:** The review period will start around 1 day after the PE and will last for 2-3 days (exact times will be announced later). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.

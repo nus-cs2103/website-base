@@ -14,7 +14,7 @@
 <box type="warning" seamless>
 
 **The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In other words, avoiding behavior changes unless they are strictly necessary, so that we minimize the possibility of introducing more bugs.<br>
-In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, <span class="text-danger">{{ version_final }} should not have _any_ behaviors that were not already tested in the PE-D</span>).
+In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, <span class="text-danger">{{ version_final }} should not have _any_ behaviors that were not already tested in the PE-D</span>). Hence, the feature freeze ==comes into effect at the point you released the JAR file that was used for the PE-D==.
 
 While the info below provides you what to do and what not to do in {{ version_final }} specific cases, the important thing is to understand and ==**follow the spirit of the _feature freeze_** (i.e., do not change features further, correct unintentional errors only)==.
 
@@ -292,6 +292,14 @@ As we are still at the early stages of identifying a problem to solve, do not th
 {{ embed_topic("tp-expectations.md#main", "Admin " + icon_embedding + " **tP: Expectations**", "3", indent="2") }}
 {{ embed_topic("tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3", indent="2") }}
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3", indent="2") }}
+
+<div class="indented">
+
+<box type="tip" seamless>
+
+**Pick a CLI-friendly product domain**: Given `Recommendation-CLI-First` and `Constraint-Typing-Preferred` mentioned in the panels above, it makes sense to pick a product domain that is more suitable for CLI interactions i.e., a product that deals with easy-to-type textual data, needs a small number of data fields, and each data field is short. %%For example, a blog editor is an unsuitable product domain because it also deals with non-text data (e.g., images, videos) and some data fields are quite long (i.e., paragraphs of text). Similarly, keeping track of extensive employee records may be an unsuitable domain if there are many data fields per employee.%%
+</box>
+</div>
 
 * <span class="text-danger">**Submission**:</span> Submit your product name, target user profile, the value proposition, and the public link to your collaborative project notes via TEAMMATES. You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 or tic4001 %}<br>
   {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.{% endif %}
@@ -1448,6 +1456,8 @@ Not applicable this semester
 **Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
 
 **Try the PDF conversion early**. If you do it at the last minute, you may not have time to fix any problems in the generated PDF files (such problems are more common than you think).
+
+**Check all sample commands in the UG PDF work**. PDF conversion can introduce extra spaces/line-breaks into the sample commands in the UG. Such problems <span class="text-danger">will be counted as bugs</span>, as users expect to be able to copy-paste sample commands from the UG.
 </box>
 </div>
 

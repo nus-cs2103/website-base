@@ -29,7 +29,7 @@ Optionally, if you haven't pushed the commit to the fork yet, you can try to fig
 </div>
 <div id="order">
 
-* Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
+**Implement the <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> given below ==in the given order==.**
 </div>
 <div id="commit">
 
@@ -46,7 +46,12 @@ Optionally, if you haven't pushed the commit to the fork yet, you can try to fig
     After pushing a tag to your fork, you should be able to see that tag by visiting `https://github.com/YOUR_USER_NAME/REPO_NAME/tags` e.g., https://github.com/se-edu/addressbook-level3/tags</md></box>
     <box type="tip" seamless><md>If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).</md></box>
 
+* Remember to take note of our plagiarism policies, if you haven't done so already:
+
+{{ embed_topic("policies-fragment.md#policy-reuse", "Admin " + icon_embedding + " Policies -> **Reuse**", "1", indent=2, type="danger") }}
+
 <include src="ip-tasks-fragment.md#ip-faq" />
+
 </div>
 <div id="volatile-requirements">
 
@@ -174,21 +179,22 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 <span id="heading_set_up_project">Set up the project in your computer</span>
 <div id="desc_set_up_project">
 
-* Read through this week's topics before starting the project.
-
-1. Fork [{{ url_module_org }}/{{ ip_repo_name }}]({{ url_module_org }}/{{ ip_repo_name }}).<br>
-   {{ icon_important_big_red }} Please keep the fork name as `{{ ip_repo_name }}` or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the module.
-1. ==Enable the issue tracker of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
-   <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`</md></box>
-1. Clone the fork onto your computer.
-1. Set up the project in your IDE as explained in [the README file]({{ url_module_org }}/{{ ip_repo_name }}/blob/master/README.md).<br>
-
 <box>
 
-**If you encounter technical problems**, follow the guidelines given below in seeking help:
+Read through this week's topics before starting the project.<br>
+ **If you encounter technical problems** while doing the iP, follow the guidelines given below:
 
-{{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "2", indent="2") }}
+{{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "2") }}
 </box>
+
+1. **Fork** [{{ url_module_org }}/{{ ip_repo_name }}]({{ url_module_org }}/{{ ip_repo_name }}), while noting the points below:<br>
+   <box type="important" seamless><md>**Keep the fork name as `{{ ip_repo_name }}`** or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the module.</md></box>
+   <box type="tip" seamless><md>**Untick the `[ ] Copy the master branch only` option** so that you get a copy of the full repo.</md></box>
+1. ==**Enable the issue tracker** of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
+   <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`</md></box>
+1. **Clone the fork** onto your computer.
+1. **Set up the project in your IDE** as explained in [the README file]({{ url_module_org }}/{{ ip_repo_name }}/blob/master/README.md), unless you don't wish to use an IDE for the project.<br>
+
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_tic4002">Set up the project in your computer</span>
@@ -355,7 +361,35 @@ One of the increments below asks you to push the design more towards the OOP app
 </box>
 
 * As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).{% if cs2103 %}
-* {{ icon_important_big_red }} Do `A-Gradle` first, after which use the Gradle option (rather than the Intellij option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.{% endif %}
+* {{ icon_important_big_red }} Do `A-Gradle` first, after which use the Gradle option (rather than the Intellij option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.
+
+<div class="indented-level2" id="pulling-branch-from-upstream">
+<panel type="seamless" >
+<span slot="header" class="card-title"><markdown>{{ icon_tip}} **If you fork doesn't have the `add-gradle-support` branch ...**{.text-success}</markdown></span>
+
+If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branched when you forked), here are the Git commands for (one of many ways of) fetching and merging the `add-gradle-support` branch from the upstream repo that you forked from:<br>
+
+1. Add the upstream repo as a remote, and give it the name `upstream`:<br>
+  `git remote add upstream {{ url_module_org }}/{{ ip_repo_name }}.git`
+1. Switch to the `master` branch, if you are not on it already:<br>
+   `git checkout master`
+1. Fetch the `add-gradle-support` from the remote `upstream`:<br>
+   `git fetch upstream add-gradle-support`
+1. Merge the branch:<br>
+   `git merge upstream/add-gradle-support`
+
+Alternatively see the panel below on some general info on how to pull a branch from another remote repo, but note,
+
+* the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
+* the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
+* the branch to pull is `add-gradle-support` (not `master`)
+
+{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Wroking with multiple remotes**", "2") }}
+</panel>
+<p/>
+</div>
+
+{% endif %}
 
 </div>
 <div id="extra_A-JavaDoc">

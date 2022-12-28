@@ -20,23 +20,7 @@
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-8`: Dates and Times**" var-fragment="text.md#Level-8" />
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-JavaDoc`: JavaDoc**" var-fragment="extensions-fragment.md#A-JavaDoc" />
 
-<box type="info" seamless>
-
-The `A-Gradle` project increment given below requires you'll need to pull a branch from the [upstream duke repository]({{ url_module_org }}/{{ ip_repo_name }}).<br>
-See the panel below on how to pull a branch from another remote repo, but note,
-
-* the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
-* the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
-* the branch to pull is `add-gradle-support` (not `master`)
-
-   {{ embed_topic("../../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Wroking with multiple remotes**", "2") }}
-<p/>
-
-{{ icon_tip }} If you are using the Git CLI, here are the commands you need:<br>
-`git remote add upstream1 {{ url_module_org }}/{{ ip_repo_name }}.git`<br>
-`git pull upstream1 add-gradle-support`
-
-</box>
+<include src="../../admin/ip-tasks-fragment.md#pulling-branch-from-upstream" />
 
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-Gradle`: Gradle**" var-fragment="extensions-fragment.md#A-Gradle" />
 

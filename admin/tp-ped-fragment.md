@@ -11,7 +11,8 @@
 </modal>
 
 {{ icon_important_big_red }} **Grading**: The PE dry run ==affects your grade in the following ways==.
-* If you scored less than half of the marks in the PE, we will consider your performance in PE dry run as well when calculating the PE marks. You can earn ==up to 2 bonus marks== in this manner.
+* If you scored less than half of the marks in the PE, we will consider your performance in PE dry run as well when calculating the PE marks. You can earn ==up to 2 bonus marks== in this manner.{% if cs2103 %}<br>
+ Your performance of the PE-D will be graded ==based on the usefulness and the quality of your bug reports==, as evaluated by the receiving team.{% endif %}
 * PE dry run is a way for you to practice for the actual PE.
 * Taking part in the PE dry run will earn you participation points.
 * There is ==no penalty for bugs reported== in your product. Every bug you find is a win-win for you and the team whose product you are testing.
