@@ -3,7 +3,7 @@ layout: textbook-layout.md
 pageNav: 4
 {% endmacro %}
 
-{% macro show_priority(level) %}{% set star = ":glyphicon-star:" %}{% set empty = ":glyphicon-star-empty:" %}{% set prereq = ":glyphicon-education:: " %}{% set stars = {"0:1": prereq + star + empty + empty + empty, "1": "<font color='Crimson'>" + star + "</font>" + empty + empty + empty, "0:2": prereq + star + star + empty + empty, "2": "<font color='DarkOrange'>" + star + star + "</font>" + empty + empty, "0:3": prereq + star + star + star + empty, "3": "<font color='DodgerBlue'>" + star + star + star + "</font>"  + empty, "0:4": prereq + star + star + star + star, "4": "<font color='ForestGreen'>" + star + star + star + star + "</font>" } %}{{stars[level] }}{% endmacro %}
+{% macro show_priority(level) %}{% set star = ":glyphicon-flash:" %}{% set empty = '' %}{% set prereq = ":glyphicon-education:: " %}{% set stars = {"0:1": prereq + star + empty + empty + empty, "1": "<font color='Crimson'>" + star + "</font>" + empty + empty + empty, "0:2": prereq + star + star + empty + empty, "2": "<font color='DarkOrange'>" + star + star + "</font>" + empty + empty, "0:3": prereq + star + star + star + empty, "3": "<font color='DodgerBlue'>" + star + star + star + "</font>"  + empty, "0:4": prereq + star + star + star + star, "4": "<font color='ForestGreen'>" + star + star + star + star + "</font>" } %}{{stars[level] }}{% endmacro %}
 
 {% macro show_level_three(location, topic) %}
 {% set level_location =  location + "/" + topic.name %}

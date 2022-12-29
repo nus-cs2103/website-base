@@ -52,7 +52,7 @@
  * Self-test your knowledge using exercises given in the learning resources.
  * ==Submit the post-lecture quiz/exercises== (if any)
  * ==Do project tasks== %%(e.g., attend weekly project meeting, finish weekly deliverables)%%
- * If you don't have time to learn all topics assigned to the week, use the star rating system to decide which ones to do first.
+ * If you don't have time to learn all topics assigned to the week, use the topic levels system to decide which ones to do first.
 
 <div tags="m--cs2103 m--cs2113 m--tic2002">
 <box type="warning">

@@ -1,7 +1,7 @@
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
-{% call show_admin_page("usingThisWebsite") %} 
+{% call show_admin_page("usingThisWebsite") %}
 <div id="main">
 <div id="essential">
 
@@ -12,9 +12,9 @@
 <include src="../book/about/usage.md#browsers" />
 <include src="../book/about/usage.md#layers"/>
 
-This website ==uses a star rating system== to indicate the priority level of contents.
+This website ==uses a topic levels system== to indicate the priority level of contents.
 
-{{ embed_topic("moduleExpectations.md#starRatingSystem", "Admin " + icon_embedding + " Module Expectations → Star Rating System", "usingThisWebsite-starRatingSystem") }}
+{{ embed_topic("moduleExpectations.md#topicLevels", "Admin " + icon_embedding + " Module Expectations → Topic Levels", "usingThisWebsite-topicLevels") }}
 <p/>
 
 </div>
@@ -24,9 +24,9 @@ This website ==uses a star rating system== to indicate the priority level of con
 
 <div class="indented">
 
-{{ icon_todo }} : tasks to do<br> 
+{{ icon_todo }} : tasks to do<br>
 {{ icon_lecture }} : lecture<br>
-{{ icon_tutorial }} : tutorial<br> 
+{{ icon_tutorial }} : tutorial<br>
 {{ icon_evidence }} : evidence you can use to prove you have achieved a learning outcome<br>
 :alarm_clock: : deadline<br>
 </div>

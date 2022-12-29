@@ -59,7 +59,7 @@ The tools in the following panels differ slightly from TIC4001.
 The info in the following panels are as the same as TIC4001.
 </box>
 
-{{ embed_topic("moduleExpectations.md#main", "Admin " + icon_embedding + " **Module expectations and the ==star rating system==**", "1", indent="2", type="danger") }}
+{{ embed_topic("moduleExpectations.md#main", "Admin " + icon_embedding + " **Module expectations and ==topic levels==**", "1", indent="2", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="2", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="2", type="info") }}
 {% if not (tic4001 or tic4002) %}

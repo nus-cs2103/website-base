@@ -41,7 +41,7 @@ Understandably, a few of you prefer live lectures (F2F or online) -- one advanta
  Besides, no venue available is big enough to accommodate our class size.<br>
 Hence, our live lectures are limited to briefings only, while most content are delivered as text and
  pre-recorded lectures which students can consume at their own pace.<br>
- Nevertheless, ==you can attend lectures F2F if you wish==, as we have now moved to hybrid mode lectures, 
+ Nevertheless, ==you can attend lectures F2F if you wish==, as we have now moved to hybrid mode lectures,
  although we are unlikely to support mid-lecture interactions due to the reason given above.
  While I can still answer some questions at the end of the lecture, the rest needs to be asynchronous
  e.g., via email or the forum.<br>
@@ -49,10 +49,10 @@ Hence, our live lectures are limited to briefings only, while most content are d
  threads while waiting for an answer you raised asynchronously. Also, the topics are not that deep/complex
  -- the chance of getting stuck is lower.<br>
  So, I hope you guys are able to manage even if I don't do live lectures covering all content.<br>
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q3"/>
@@ -76,10 +76,10 @@ Can't comment. I don't watch them.<br><span class="text-info bg-info">..........
 
 Glad to see pre-recorded videos are generally well-received.
 Nevertheless, I hope to add more and also improve the existing ones in future semesters.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q2"/>
@@ -104,7 +104,7 @@ Can't comment. I have stopped attending them.<br><span class="text-info bg-info"
 ==Unlike most modules that use lectures as the _primary_ mechanism for delivering module content, our lecture briefings
  serve as a _complementary_ 'top up'==, covering additional examples, motivations behind the topics, commentary on
  how to shape your attitudes related to the subject, anecdotes, etc.
-Hence, you can skip lecture briefings (or simply speed-watch the recording later) if you 
+Hence, you can skip lecture briefings (or simply speed-watch the recording later) if you
  are short of time or if you think they are not useful to you.
  Even the in-lecture quiz questions are 'optional' in the sense they are unlikely to make a
  difference in your final participation marks.<br>
@@ -112,10 +112,10 @@ Hence, you can skip lecture briefings (or simply speed-watch the recording later
  though, as I do not want to employ as a tutor someone who hasn't received the _full view_ of the module
  (I often talk about the goals/rationales of the module during lecture briefings
  -- not examinable but important nevertheless, especially for a future tutor).
-   
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q4"/>
@@ -137,11 +137,11 @@ I'm neutral between the two options<br><span class="text-info bg-info">.........
 Although the majority is OK with the current mode of tutorials, a notable portion prefers F2F tutorials.
 While the hybrid mode seems like a good compromise, it is not that easy to implement due to logistics issues
 and lack of enough venues. We will be staying with the current mode for this semester, but will look
-for a better alternative in future semesters. 
-    
+for a better alternative in future semesters.
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q5"/>
@@ -166,7 +166,7 @@ Admittedly, our tutorials can feel slow, less efficient, or less active. For stu
   prepare well for the tutorials and actively take part in tutorial discussions, this is indeed the case.
   I hope you still bear with us because ==the tutorial structure (like many other things in this module)
   is intended to _raise the lower bar of the whole class_, which is important when there is a major team project
-  (to reduce the skill gap between team members)==. 
+  (to reduce the skill gap between team members)==.
   * **We start with a 10-minute warm up** to give everyone at least a chance to familiarize with the tutorial tasks
     even if they haven't had time to look at them earlier (we don't want them to be left out entirely).
   * **By requiring _everyone_ to respond via private messages**, we aim to get everyone to _think_ about the topic
@@ -177,7 +177,7 @@ Admittedly, our tutorials can feel slow, less efficient, or less active. For stu
     That said, we do want to have some verbal discussions to happen too. That's why we ask you to do the follow up
     discussions verbally.
   * **We monitor tutorial participation** because tutorials are used for ensuring that you all have achieved the desired
-    learning targets for the week. If not, slower students tend to neglect the theory part 
+    learning targets for the week. If not, slower students tend to neglect the theory part
     (in a misguided attempt to save time) and try to brute-force the project work, which wastes even more time,
     and also exacerbates the skill-gap problems in their teams.
   * So, while the number of questions we go through in each tutorial is fewer and the questions are simpler,
@@ -187,10 +187,10 @@ Admittedly, our tutorials can feel slow, less efficient, or less active. For stu
     stronger students getting less out of our tutorials than you are used to get from other modules, I hope
     you'll be generous and take a 'hit' here to allow your classmates to level up. You might even benefit yourself
     from their levelled-up contributions when you work with them in the team project.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q6"/>
@@ -217,10 +217,10 @@ The feedback for the module website is generally positive but there are still _s
   of information in a way that fits everyone's expectations %%(e.g., some prefer more content to be more 'visual'
   while others prefer minimalistic presentation)%%,
   and I realize that ==it is not easy for you to consume that much of information== either.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q8"/>
@@ -248,21 +248,21 @@ The most common concern about this module is the workload.
     In particular, choose the ‘evolve’ option rather than ‘morph’ option (it’s still not too late to change).
     If you choose the ‘morph’ option, don’t plan to morph it too far away from AB3.<br>
     Reminder: there are no marks allocated for marking the product interesting, unique, cool, etc.<br>
-    Also, keep in mind that it is the quality that will count more than the quantity. 
+    Also, keep in mind that it is the quality that will count more than the quantity.
     In most cases the quantity is graded on an S/U basis (refer to the Week 6 tP briefing for more info).
     Aim to do less but do it really well.
-  * If you don't have time to study all topics, use the 
-    [star ratings system](https://nus-cs2103-ay2223s1.github.io/website/admin/moduleExpectations.html#star-rating-system)
+  * If you don't have time to study all topics, use the
+    [topic levels](https://nus-cs2103-ay2223s1.github.io/website/admin/moduleExpectations.html#topic-levels)
     to figure out which topics are higher priority.
   * That said, I know the workload concern is real, and I firmly believe that no module should take more than
     its fair share of students' time. On the other hand, this module aims to teach you SE skills that take a lot
     of practice (hence the high workload).<br>
     We've managed to reduce the workload of this module quite bit over the past semesters, and we'll continue to
     do so when we find ways to do that without compromising our learning outcomes.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q7"/>
@@ -286,10 +286,10 @@ Too slow. Please speed up a lot.<br><span class="text-info bg-info">..</span><sp
 The pace itself seems to be less of a problem compared to the workload.<br>
 Don't worry if you feel like the module is moving too fast; thanks to the iterative approach we use for covering topics,
  you'll get multiple chances to solidify your familiarity of a topic/tool.
-    
+
 </div>
-        
-        
+
+
 
 ---
 
@@ -346,7 +346,7 @@ Yes, when considered in isolation and when compared to other modules, this is a 
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>I have been coping ok. It would be nicer if the tp team meetings did not have to be on such weird days (sat, sun, mon, tue), some of my tp team members are busy on all 4 days and as a result we had to agree to meet at night on mondays (unpleasant) rather than having a meeting time during the day. I like prof's lectures and and the module's content so far.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you liked the module so far. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you liked the module so far.
 
 Yes, timing of some tasks (e.g., project meetings) can be awkward due to our lecture being scheduled on Friday evenings which puts the schedule of the remaining weekly module tasks somewhat 'out of whack'.</markdown>
 </span></box>
@@ -388,7 +388,7 @@ Yes, timing of some tasks (e.g., project meetings) can be awkward due to our lec
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>Week 8 is likely to be extremely heavy because I need to prepare for other module midterms and coding v1.2 is likely going to hinder my midterm preparation.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good thing we don't have a mid-term for this module, right? :-D 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good thing we don't have a mid-term for this module, right? :-D
 
 Jokes aside, v1.3 is the heavier of the iterations. Nevertheless, the iterative approach allows you to do less in one iteration and make up for it in another -- so, plan accordingly :-)</markdown>
 </span></box>
@@ -445,9 +445,9 @@ Too many weekly tasks to do. Having to do iP, tP, admin matters, quizzes, in add
 
 Lectures don't add much value to the module by giving a brief overview of the week's content. The textbook materials on the course website are well written and comprehensive and do not need to be supplemented by lectures. Hence, lectures should be dropped altogether to give students more time to do the weekly tasks.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yup, the workoad is an issue for quite a number of students (see [my comment on 'The workload'](#Q8)). 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yup, the workoad is an issue for quite a number of students (see [my comment on 'The workload'](#Q8)).
 
-I will see if there are redundant questions that I can trim, when I migrate the quizzes to Canvas next semester. 
+I will see if there are redundant questions that I can trim, when I migrate the quizzes to Canvas next semester.
 
 Um, you can skip lectures if you don't have time for it or if they don't add value to you.</markdown>
 </span></box>
@@ -489,7 +489,7 @@ Um, you can skip lectures if you don't have time for it or if they don't add val
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>I still find the workload of this module a lot higher than other modules I'm taking. As a result, most of my week is spent on this mod rather than others as this is the only way I can manage so that my work doesn't pile up. Not sure how sustainable this is as the semester goes.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It's true that the workload is heavier in this module. If you managed to cope so far, I expect you can do so for the remainder as well. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It's true that the workload is heavier in this module. If you managed to cope so far, I expect you can do so for the remainder as well.
 
 Also see [my comment on 'The workload'](#Q8).</markdown>
 </span></box>
@@ -499,7 +499,7 @@ Also see [my comment on 'The workload'](#Q8).</markdown>
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>Sometimes I get really overwhelmed with the workload as you need to do increments of the iP and tP each week. Currently I am still managing well, but I am afraid I might fall behind in the subsequent weeks. </markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It's true that the workload is heavier in this module. If you managed to cope so far, I expect you can do so for the remainder as well. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It's true that the workload is heavier in this module. If you managed to cope so far, I expect you can do so for the remainder as well.
 
 Also see [my comment on 'The workload'](#Q8).</markdown>
 </span></box>

@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page with context %}
 
-{% call show_admin_page("moduleOverview") %} 
+{% call show_admin_page("moduleOverview") %}
 <div id="main">
 
 <!-- =============================================================================== -->
