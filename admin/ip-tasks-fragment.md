@@ -360,7 +360,7 @@ One of the increments below asks you to push the design more towards the OOP app
  That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
 </box>
 
-* As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).{% if cs2103 %}
+* As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).{% if cs2103 or tic2002 %}
 * {{ icon_important_big_red }} Do `A-Gradle` first, after which use the Gradle option (rather than the Intellij option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.
 
 <div class="indented-level2" id="pulling-branch-from-upstream">
