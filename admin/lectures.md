@@ -30,7 +30,7 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 ****Mode****:
 {% if cs2103 %}
 * Will be done using Zoom. The Zoom link will be available in [Canvas module homepage]({{ url_canvas_home }}). You can attend the live Zoom lecture or watch the recording later.
-* We might switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) around week 3 or so, if the circumstances allow it.
+* We expect to switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) around week 3 or so, if the circumstances allow it.
 {% elseif cs2113 %}
 * Lectures will be conducted on-campus (i.e., F2F)
 {% else %}
@@ -62,6 +62,14 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 ****Slides****: Our lecture slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to Canvas *after* the lecture.
 {% endif %}
+
+<box type="info"  header="A caveat about your expectations from the lecture" tags="m--cs2103" light>
+
+In a traditional course, the lecture is the _primary_ means of content delivery. However, {{ module_pair }} is delivered in the _blended learning_ mode, and hence, the contents are delivered primarily via the online textbook and pre-recorded videos that you can consume at your own pace. ==The lecture is only a _complementary_ component== that aims to,
+* recap the past week, clarify common doubts
+* give a preview of the next week, motivate you to tackle the weekly tasks coming up
+* provide context to various 'moving parts' of the module and keep you anchored to the 'big picture'
+</box>
 </div>
 
 {% endcall %}

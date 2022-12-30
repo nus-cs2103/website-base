@@ -12,7 +12,7 @@
 <include src="../book/about/usage.md#browsers" />
 <include src="../book/about/usage.md#layers"/>
 
-This website ==uses a topic levels system== to indicate the priority level of contents.
+This website ==uses a _topic levels_ system== to indicate the progression of contents from basic/relevant topics to advanced/less-relevant topics.
 
 {{ embed_topic("moduleExpectations.md#topicLevels", "Admin " + icon_embedding + " Module Expectations → Topic Levels", "usingThisWebsite-topicLevels") }}
 <p/>
@@ -27,8 +27,7 @@ This website ==uses a topic levels system== to indicate the priority level of co
 {{ icon_todo }} : tasks to do<br>
 {{ icon_lecture }} : lecture<br>
 {{ icon_tutorial }} : tutorial<br>
-{{ icon_evidence }} : evidence you can use to prove you have achieved a learning outcome<br>
-:alarm_clock: : deadline<br>
+{{ icon_deadline }} : deadline<br>
 </div>
 
 ### Searching for keywords

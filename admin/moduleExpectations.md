@@ -40,7 +40,7 @@ As {{ marks_ca }}% of this module is based on CA (see <trigger trigger="click" f
 
 <div class="indented">
 
-<p class="lead"><md>We use a topic levels system to indicate the importance of module components. **Start with things that are rated level-1 and progress to topics at higher levels.** Things rated level-4 are optional.</md></p>
+<p class="lead"><md>We use a topic levels system to indicate the progression of module components. **Start with things that are rated level-1 and progress to topics at higher levels.** Things rated level-4 are optional.</md></p>
 
 **Levels for lesson topics** (and textbook sections):
 
@@ -51,7 +51,7 @@ As {{ marks_ca }}% of this module is based on CA (see <trigger trigger="click" f
 
 <span tags="m--cs2103 m--tic2002 m--tic4001 m--tic4002">
 
-* Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }} are relevant topics you are expected to have learned in prerequisite modules. They are given for reference, but ==are examinable==. The number of {{ star }} indicates the progression of topics, similar to the topic levels system above i.e., level-1 prerequisite topics are the most basic and the most important. level-4 pre-requisite topics can be ignored without affecting CAP.
+* Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }} are relevant topics you are expected to have learned in prerequisite modules. They are given for reference, but ==are examinable==. The number of {{ star }} indicates the progression of prerequisite topics, similar to the topic levels system above i.e., level-1 prerequisite topics are the most basic and the most important. level-4 pre-requisite topics can be ignored without affecting CAP.
 </span>
 
 **Topic levels for other things** e.g., admin info sections:

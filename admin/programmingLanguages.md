@@ -62,9 +62,9 @@ Recommended: Remove the other versions of OpenJDK so that you do not accidentall
 
 After installation, the command `java --version` should give the following output:
 ```{.no-line-numbers}
-openjdk 11.0.12 2021-07-20 LTS
-OpenJDK Runtime Environment Zulu11.50+19-CA (build 11.0.12+7-LTS)
-OpenJDK 64-Bit Server VM Zulu11.50+19-CA (build 11.0.12+7-LTS, mixed mode)
+openjdk 11.0.__ ____-__-__ LTS
+OpenJDK Runtime Environment Zulu11.50+19-CA (build 11.0.__+_-LTS)
+OpenJDK 64-Bit Server VM Zulu11.__+__-CA (build 11.0.__+_-LTS, mixed mode)
 ```
 
 And `whereis java` should output `/usr/bin/java`

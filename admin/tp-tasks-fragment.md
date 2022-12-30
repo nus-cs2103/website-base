@@ -119,7 +119,7 @@ If the behavior difference is because some parts of the feature is not implement
 
 <span id="milestoneCumulative">
 
-{{ icon_important_big_red }} **Milestone requirements are cumulative**. The recommended progress for the mid-milestone is an implicit requirement for the actual milestone unless a milestone requirement overrides a mid-milestone requirement %%e.g., mid-milestone requires a document to be in a temp format while the actual milestone requires it to be in the proper format%%. Similarly, a requirement for milestone `n` is also an implicit requirement for milestone `n+1` unless `n+1` overrides the `n` requirement. This means ==if you miss some requirement at milestone `n`, you should try to achieve it before milestone `n+1`== or else it could be noted again as a 'missed requirement' at milestone `n+1`.
+{{ icon_important_big_red }} **Milestone requirements are cumulative**. The recommended progress for the mid-milestone is an implicit requirement for the actual milestone unless a milestone requirement overrides a mid-milestone requirement %%e.g., mid-milestone requires a document to be in a temp format while the actual milestone requires it to be in the proper format%%.
 </span>
 <span id="prReviewsMatter">
 
@@ -1463,7 +1463,7 @@ Not applicable this semester
 
 <box type="tip" seamless>
 
-**Intangible benefits for early submissions:**{.text-success} Given that using buffers to reduce the risk of deadline overruns is a learning outcome of this module, we strongly encourage setting an internal submission deadline a few hours earlier than the actual deadline. As an incentive, we plan to perform some checks on early submissions and inform you if we found issues with your submission %%(e.g., incorrect file name)%%, thus giving you a chance to fix them before the deadline and avoid a penalty for it.
+**Side benefits for early submissions:**{.text-success} Given that using buffers to reduce the risk of deadline overruns is a learning outcome of this module, we strongly encourage setting an internal submission deadline a few hours earlier than the actual deadline. As an incentive, we plan to perform some checks on early submissions and inform you if we found issues with your submission %%(e.g., incorrect file name)%%, thus giving you a chance to fix them before the deadline and avoid a penalty for it.
 
 </box>
 

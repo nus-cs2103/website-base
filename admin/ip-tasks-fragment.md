@@ -11,20 +11,31 @@
 
 #####  **FAQ** about iP increments{.text-info}
 
-* **Q. How are the iP git tags used in grading?**<br>
+<panel type="seamless" header="**Q.** How are the iP git tags used in grading?">
+
 **A.** A git tag is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor those progress declarations.
-* **Q. What if I discovered a bug after I finished an increment?**<br>
+</panel>
+<panel type="seamless" header="**Q.** What if I discovered a bug after I finished an increment?">
+
 **A.** Go ahead and fix it in a subsequent commit. There is no need to update the previous commit or move the corresponding tag to the new commit. As we do not test your code at every tag, earlier bugs will not affect your grade as long as they are fixed later. Similarly, feel free to improve the code of previous increments later.
-* **Q. I did multiple increments in the same commit. How to fix?**<br>
+</panel>
+<panel type="seamless" header="**Q.** I did multiple increments in the same commit. How to fix?">
+
 **A.** You can add the corresponding tags to the same commit.<br>
 Optionally, if you haven't pushed the commit to the fork yet, you can try to figure out how to split that commit into multiple commits.
-* **Q. The requirements of an increment scheduled for this week is already satisfied by the work I did in an earlier week. What now?**<br>
-**A.** You can add the corresponding tag to the earlier commit (or the latest commit -- it doesn't matter) and push the tag.
-* **Q. My iP increments are not detected by the dashboard because I forgot to push my tags earlier. What now?**<br>
-**A.** Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
-* **Q. Oh no! I made a mistake in my tag/branch name.**<br>
-**A.** It's OK; correct it now.
+</panel>
+<panel type="seamless" header="**Q.** The requirements of an increment scheduled for this week is already satisfied by the work I did in an earlier week. What now?">
 
+**A.** You can add the corresponding tag to the earlier commit (or the latest commit -- it doesn't matter) and push the tag.
+</panel>
+<panel type="seamless" header="**Q.** My iP increments are not detected by the dashboard because I forgot to push my tags earlier. What now?">
+
+**A.** Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
+</panel>
+<panel type="seamless" header="**Q.** Oh no! I made a mistake in my tag/branch name.">
+
+**A.** It's OK; correct it now.
+</panel>
 </box>
 </div>
 <div id="order">
@@ -350,14 +361,14 @@ Resources:
 
 ****Why more OOP?****{.text-info}
 
-One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you that **OOP is not a silver bullet or always the right choice**. While it is the most widely used and possibly the right choice for a variety of situations, it may not work well for other situations, and it has plenty of detractors and known problems.
+One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
 
-**OOP has been chosen as the primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
+****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
+That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
+
+**OOP is primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
 
 **We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
-
-****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for some cases and not so for other cases. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
- That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
 </box>
 
 * As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).{% if cs2103 or tic2002 %}

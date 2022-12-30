@@ -18,8 +18,10 @@
 
 **Our tutorials are conducted via Zoom. Zoom links for tutorial sessions** will be available in [Canvas module homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.
 
-**We have set aside a physical venue (COM1-B103), in case you would like to join the Zoom tutorial from there** e.g., your prefer to sit together with your team members, or you can't find a place in SoC conducive to joining a Zoom tutorial. So, you can join our tutorials from COM1-B103 or any other place of your choice.<br>
- For now, the tutor will conduct the tutorial remotely as the physical venue is shared by two parallel tutorials. Meanwhile, we are exploring other alternatives.
+<!--**We have set aside a physical venue (COM1-B103), in case you would like to join the Zoom tutorial from there** e.g., your prefer to sit together with your team members, or you can't find a place in SoC conducive to joining a Zoom tutorial. So, you can join our tutorials from COM1-B103 or any other place of your choice.<br>
+ For now, the tutor will conduct the tutorial remotely as the physical venue is shared by two parallel tutorials. Meanwhile, we are exploring other alternatives.-->
+
+**More info about the tutorial format** (e.g., F2F vs online) will be provided near to the first tutorial. Hint: most likely to be F2F.
 
 </box>
 
@@ -34,7 +36,7 @@
 **The mode**
 
 {% if cs2113 %}* Tutorials will be conducted in f2f, on campus.
-{% else %}* Tutorials will be conducted using Zoom. Due to the large class size and small tutor:students ratio, we are not able to go back to F2F tutorials at the current SoC venue capacity. We'll revisit this decision when the COM4 building is up.{% endif %}
+{% else %}* Tutorials are most likely to be F2F, to be confirmed near to the first tutorial.{% endif %}
 * MS Teams will be used for file sharing.
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
 * The tutor will _facilitate_ tutorial activities, observe your progress, and give feedback.
@@ -61,7 +63,7 @@
 
 * **Not a source of admin information**: Given the humongous amount of admin info contained in this module and the fact that it is constantly evolving, tutors may not be aware of the recent subtle changes to the admin information. To safeguard you from receiving incorrect admin info, tutors are prohibited from answering admin queries. If you have an admin query, please post in the [forum]({{ url_forum }}) (or email the prof at `{{ module | lower }}@comp.nus.edu.sg` but only if the question is not appropriate for the forum).
 
-* **No inputs for yet-to-be-graded components**: Tutors are prohibited from giving inputs for components not graded yet. %%Reason: work submitted for grading should be your own.%%
+* **No feedback/help for yet-to-be-graded components**: Tutors are prohibited from giving inputs for components not graded yet. %%Reason: work submitted for grading should be your own.%%
 
 * **No direct tech help**: Tutors are prohibited from giving direct technical help, other than to give you some general direction to finding a solution. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
 

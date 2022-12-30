@@ -5,16 +5,16 @@
 
 <!-- =============================================================================== -->
 <div tags="m--cs2103">
-<p class="lead text-secondary"><big>A balanced, iterative, and brown-field introduction to Software Engineering...</big></p>
+<p class="lead text-secondary"><big>A balanced, iterative, and brownfield introduction to Software Engineering...</big></p>
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
-<p class="lead"><md>{{ module_pair }} is an introductory Software Engineering module. It has **a 50-50 balance of basic SE theory knowledge and practical skills** that you need to gain before industry internships or <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics. It is also one of the rare SE modules that includes a <tooltip content="i.e., working in an existing project">**brown-field** project</tooltip>, in addition to a <tooltip content="i.e., a project that is started from scratch">**green-field** project</tooltip>.</md></p>
+<p class="lead"><md>{{ module_pair }} is an introductory Software Engineering module. It has **a 50-50 balance of basic SE theory knowledge and practical skills** that you need to gain before industry internships or <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics. It is also one of the rare SE modules that includes a <tooltip content="i.e., working in an existing project">**brownfield** project</tooltip>, in addition to a <tooltip content="i.e., a project that is started from scratch">**greenfield** project</tooltip>.</md></p>
 
 
 * **On the theory side,** this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
 
-* **The practice side,** you will first ramp up your technical skills by doing a small individual project (green-field) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brown-field) in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 KLoC) generic product -- and enhance it into a better product or evolve it into a different product.
+* **The practice side,** you will first ramp up your technical skills by doing a small individual project (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brownfield) in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 KLoC) generic product -- and enhance it into a better product or evolve it into a different product.
 
 <div id="meaning-of-iterative-topics">
 
@@ -27,8 +27,8 @@
 **The choice of which topics are covered each week is driven by the project** i.e., we give priority to topics that you'll need to apply soon in the project that you will be doing in parallel.
 
 **This way of 'jumping around' topics feels chaotic but consider the benefits**:
-* It allows you to start doing SE projects early, and iteratively too. That is, you can start with a small project from the very start and make it bigger progressively, learning from earlier mistakes, and getting multiple chances improve on previous attempts.
-* Important SE aspects such as testing can be practiced from the very beginning. If we followed a sequential approach, you an only learn it near the end of the semester.
+* It allows you to start doing SE projects early, and do it iteratively too. That is, you can start with a small project from the very start and make it bigger progressively, learning from earlier mistakes, and getting multiple chances improve on previous attempts.
+* Important SE aspects such as testing can be practiced from the very beginning. If we followed a sequential approach, you can only learn it near the end of the semester.
 * Lower risk of missing out some SE aspects altogether. For example, suppose your schedule got heavier in the second half of the semester and you could barely follow the module during that half. You still go away with the basic knowledge of _all_ SE aspects rather than knowing some aspects fully and missing some other aspects altogether.
 
 **To help you cope with the non-sequential progression of topics,** this module website contains two versions of the topics. In the [Schedule page](../schedule/index.html), you'll find the topics organized into the order we cover them in each week. In the [Textbook page](../se-book-adapted/index.html), you'll find the topics in their natural sequential order. This format is suitable for exam reference.
@@ -82,7 +82,7 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 * **On the theory side, this module relies mostly on the theory covered in TIC2002, but it will also cover some new topics** to help you with the project. As before, this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
 
-* **The practice side, you will first ramp up your technical skills by doing a small individual project** (green-field) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). This project is similar to the project you did in TIC2002 but will be done faster and at a higher level of rigor.<br>
+* **The practice side, you will first ramp up your technical skills by doing a small individual project** (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). This project is similar to the project you did in TIC2002 but will be done faster and at a higher level of rigor.<br>
   **Then, you will move to a team project** (also greenfield) in which you will build another small <tooltip content="Command Line Interface">CLI</tooltip> app while working as a team.
 
 **At the end of this module** you are expected to be ready for <tooltip content="Software Engineering Practicum II">TIC4002</tooltip> in which you'll tackle a <tooltip content="starting with an existing code base">brownfield</tooltip> team project somewhat larger than the project you did in this module.

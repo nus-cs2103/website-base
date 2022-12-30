@@ -70,7 +70,7 @@ week13: [
   {id: 'wrap_up_final_milestone', deadline: get_date(date_final_submission, 2)},
   {id: 'demo_the_product', deadline: get_date(date_final_submission, 2)},
   {id: 'prepare_for_PE'},
-  {id: 'attend_the_PE', deadline: get_date(date_w13_start, 7, format=format_normal, time="1600-1800"), deadline_type: 'warning'},
+  {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 7, format=format_normal, time=""), deadline_type: 'warning'},
   {id: 'attend_the_makeup_PE', deadline: get_date(date_w13_start, 9, format=format_normal, time="1400-1600"), deadline_type: 'secondary'}
 ]
 } %}
