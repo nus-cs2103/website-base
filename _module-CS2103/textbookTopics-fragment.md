@@ -632,7 +632,7 @@
         ]
       },
       {
-        name: "maximiseReadability",
+        name: "maximizeReadability",
         level_two_topics: [
           {
             name: "",
@@ -676,7 +676,7 @@
             level_three_topics: [
               {name: "introduction", heading: "Introduction", priority: "2"},
               {name: "basic", heading: "Basic", priority: "3"},
-              {name: "intermediate", heading: "Intermediate", priority: "4"}
+              {name: "intermediate", heading: "Intermediate", priority: "3"}
             ]
           }
         ]

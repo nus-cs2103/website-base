@@ -69,6 +69,8 @@ In a traditional course, the lecture is the _primary_ means of content delivery.
 * recap the past week, clarify common doubts
 * give a preview of the next week, motivate you to tackle the weekly tasks coming up
 * provide context to various 'moving parts' of the module and keep you anchored to the 'big picture'
+
+Given that lectures are complementary, you can speed-watch the recording to save time (instead of attending the live lecture) or skip them altogether (if you are already saturated by the rest of the course activities).
 </box>
 </div>
 

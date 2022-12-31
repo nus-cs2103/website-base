@@ -633,7 +633,7 @@
         ]
       },
       {
-        name: "maximiseReadability",
+        name: "maximizeReadability",
         level_two_topics: [
           {
             name: "",
