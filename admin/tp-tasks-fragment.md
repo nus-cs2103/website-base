@@ -1456,8 +1456,6 @@ Not applicable this semester
 **Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
 
 **Try the PDF conversion early**. If you do it at the last minute, you may not have time to fix any problems in the generated PDF files (such problems are more common than you think).
-
-**Check all sample commands in the UG PDF work**. PDF conversion can introduce extra spaces/line-breaks into the sample commands in the UG. Such problems <span class="text-danger">will be counted as bugs</span>, as users expect to be able to copy-paste sample commands from the UG.
 </box>
 </div>
 

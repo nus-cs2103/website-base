@@ -16,6 +16,11 @@
   In addition, the following (at least one) need to be satisfied:
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
+
+<div class="indented-level1">
+
+{{ icon_info }} If a bug qualifies for `response.NotInScope`, the dev team will not be penalized, but the bug reporter will earn a small amount of credit for reporting it.
+</div>
 </div>
 
 * ~~**You can reject bugs that you <tooltip content="i.e., the current behavior is same as AB3 and you had no reason to change it because the feature applies similarly to your new product">inherited</tooltip> from AB3.**~~ Even bugs inherited from AB3 are counted.
