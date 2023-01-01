@@ -70,15 +70,13 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 <div class="indented" id="lectures-info">
 
 %%:far-clock:%% Tuesdays 1800-2130<br>
-%%:fas-map-marker-alt:%% Venue: online (optional E3-06-08)<br>
+%%:fas-map-marker-alt:%% Venue: online (optional E4-04-02)<br>
 
 **A TEE3201 lecture + tutorial time is divided into three parts**, as follows:
 
-* 1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics. Use Microsoft Teams if you need to consult the prof during this time.
-* 1830-1900: Do exercises related to previous week topics. Consult prof (via MS Teams) if you encounter problems.
+* 1800-1900: Do exercises related to previous week topics. Consult prof (via MS Teams) if you encounter problems.
 * 1900-2000: Short Zoom lecture, introducing topics for the current week. After that, watch the pre-recorded videos and the textbook sections provided.
-* 2000-2130: You can stay back and do exercises for the current week. Consult prof/TA (using MS Teams) for help as needed.<br>
-{{ icon_tip }} ==If you prefer face-to-face interactions during this portion==, I can come to meet you f2f in the lecture venue (please let me know in advance).
+* 2000-2130: You can stay back and do exercises for the current week. Consult prof/TA (F2F or using MS Teams) for help as needed.<br>
 
 
 **{{ icon_slides }} Lecture slides will be uploaded to Canvas after the lecture**, usually by midnight of the same day. **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.
@@ -234,7 +232,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 1. **Post in [MS Teams ==channel for the class==]({{ url_ms_teams_class }})**, rather than send a private message to the prof/TA. That way, either the prof or the TA can answer and the rest of the class can benefit from the answer.<br>
    If the question is not relevant to the rest of the class, prof/TA will contact you privately (via MS Teams) for follow up.
 2. **Email `tee3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
-3. **Send a private message** to the prof (search for `Damith Chatura Rajapakse`) or to the TA (search for `Chan Weizhong`) via MS Teams.
+3. **Send a private message** to the prof (search for `Damith Chatura Rajapakse`) or to the TA (search for `Ou Jin Bin`) via MS Teams.
 4. Email the prof at <include src="index-{{ module | lower }}-fragment.md#prof-email" inline trim/> or the TA at <include src="index-{{ module | lower }}-fragment.md#ta-email" inline trim/>
 5. You may also post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
 

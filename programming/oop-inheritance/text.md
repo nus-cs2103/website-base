@@ -75,33 +75,10 @@ Observe how,
 
 <box>
 
-{{ icon_example }} Note how the `Student` class below overrides the `__init__()` method and the `print_info()` method of the parent class `Person`.
+{{ icon_example }} Note how the `Student` class below overrides the `print_info()` method of the parent class `Person`.
 
 <include src="inputOutput.md" boilerplate>
 <span id="input">
-
-```python{.no-line-numbers highlight-lines="2-4,9-10"}
-class Student(Person):
-  def __init__(self, name, matric):
-    self.name = name
-    self.matric = matric
-
-  def learn(self):
-    print(self.name, 'is learning')
-
-  def print_info(self):
-    print(self.name, 'is a student')
-
-adam = Person('Adam')
-adam.print_info()
-ben = Student('Ben', 'A12345')
-ben.print_info()
-ben.learn()
-```
-</span>
-<span id="output">
-
-For reference, there is the `Person` class.
 ```python{.no-line-numbers}
 class Person:
   def __init__(self, name):
@@ -110,12 +87,28 @@ class Person:
   def print_info(self):
     print(self.name, 'is a person')
 ```
-<br><br>
+
+```python{.no-line-numbers}
+adam = Person('Adam')
+adam.print_info()
+ben = Student('Ben')
+ben.print_info()
+```
+</span>
+<span id="output">
+
+```python{.no-line-numbers highlight-lines="2-4"}
+class Student(Person):
+
+  def print_info(self):
+    print(self.name, 'is a student')
+```
+
+<br><br><br>
 
 ```{.no-line-numbers}
 Adam is a person
 Ben is a student
-Ben is learning
 ```
 </span>
 </include>
@@ -133,28 +126,21 @@ class Person:
 ```
 {{ icon_example }} Given that `Person` class has the initializer method given above, the following two versions of the `Student` class are equivalent.
 
-<include src="inputOutput.md" var-arrow=" = " boilerplate>
-<span id="input">
-
-Override without reusing parent's method
+(a) Override without reusing parent's method
 ```python{.no-line-numbers}
 class Student(Person):
   def __init__(self, name, matric):
     self.name = name
     self.matric = matric
 ```
-</span>
-<span id="output">
 
-Override but reuse parent's method
+(b) Override but reuse parent's method (preferred)
 ```python{.no-line-numbers highlight-lines="3"}
 class Student(Person):
   def __init__(self, name, matric):
     super().__init__(name) # reuse parent's method
     self.matric = matric
 ```
-</span>
-</include>
 
 </box>
 
