@@ -66,13 +66,8 @@ e.g., **Instead of traditional instructor-led tutorials**, the module provides q
 # Lectures + Tutorials
 <div class="indented" id="lectures-info">
 
-<box type="info" seamless>
-
-Lectures/tutorials will be delivered fully online during the first 1-2 weeks (as explained below). We can consider switching to the hybrid mode after that, if circumstances permit.
-</box>
-
 %%:far-clock:%% Tuesdays 6.30-9.30pm<br>
-%%:fas-map-marker-alt:%% Online<br>
+%%:fas-map-marker-alt:%% COM1-0207<br>
 
 **A TIC2002 lecture + tutorial time is divided into three parts**, as follows:
 
@@ -82,7 +77,7 @@ Lectures/tutorials will be delivered fully online during the first 1-2 weeks (as
     * If the question is is potentially relevant to others in the class, post your question in the chat room of the `TIC2002-{{ period }}` ([link]({{ url_ms_teams_class }})) MS Team.
     * Otherwise search for prof's name (`Damith Chatura RAJAPAKSE`) in MS Teams and send a private chat message.
 * **[7.00-8.00pm] Lecture briefing**:
-  * Will be done via Zoom.
+  * Will be done in Hybrid mode (i.e., you can attend F2F, or join via Zoom).
   * You are encouraged to attend the Zoom session. But a recording will be made available in case you can't attend the live Zoom session.
 * **[8.00-9.30pm] Post-lecture consultations**:
   * This portion will start as soon as the previous portion  (i.e., the _lecture briefing_ on Zoom) ends.
