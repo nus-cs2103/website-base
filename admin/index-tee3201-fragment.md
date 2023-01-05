@@ -60,7 +60,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 </div>
 
 #### Tutors:
-* **Ou Jin Bin (Kelvin)**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`e0902046@`[at]`u.nus.edu`</span>
+* **Ou Jin Bin (Kelvin)**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`e0902046`[at]`u.nus.edu`</span>
 
 </div>
 

@@ -395,7 +395,7 @@ Alternatively see the panel below on some general info on how to pull a branch f
 * the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
 * the branch to pull is `add-gradle-support` (not `master`)
 
-{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Wroking with multiple remotes**", "2") }}
+{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2") }}
 </panel>
 <p/>
 </div>
