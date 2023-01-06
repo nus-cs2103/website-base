@@ -16,12 +16,12 @@
 
 <box type="info" tags="m--cs2103" header="Zoom Links & Venue" id="venue-and-links">
 
-**Our tutorials are conducted via Zoom. Zoom links for tutorial sessions** will be available in [Canvas module homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.
+**The first few tutorials will be conducted via Zoom. Zoom links for tutorial sessions** will be available in [Canvas module homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.
 
 <!--**We have set aside a physical venue (COM1-B103), in case you would like to join the Zoom tutorial from there** e.g., your prefer to sit together with your team members, or you can't find a place in SoC conducive to joining a Zoom tutorial. So, you can join our tutorials from COM1-B103 or any other place of your choice.<br>
  For now, the tutor will conduct the tutorial remotely as the physical venue is shared by two parallel tutorials. Meanwhile, we are exploring other alternatives.-->
 
-**More info about the tutorial format** (e.g., F2F vs online) will be provided near to the first tutorial. Hint: most likely to be F2F.
+**The subsequent tutorials will be conducted in F2F mode**. More info will be provided later.
 
 </box>
 

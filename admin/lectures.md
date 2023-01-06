@@ -29,8 +29,8 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 ****Mode****:
 {% if cs2103 %}
-* Will be done using Zoom. The Zoom link will be available in [Canvas module homepage]({{ url_canvas_home }}). You can attend the live Zoom lecture or watch the recording later.
-* We expect to switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) around week 3 or so, if the circumstances allow it.
+* The first lecture will be done using Zoom. The Zoom link will be available in [Canvas module homepage]({{ url_canvas_home }}). You can attend the live Zoom lecture or watch the recording later.
+* We expect to switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) from the 2nd lecture onwards, if the circumstances allow it.
 {% elseif cs2113 %}
 * Lectures will be conducted on-campus (i.e., F2F)
 {% else %}
@@ -57,7 +57,7 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 ****Attendance****: Attendance for the ==first lecture is compulsory== (i.e., attend online or watch the recording).
 
-****Handouts****: There are no handouts. All learning materials are organized around topics, are given in Web format, can be found in the [Textbook]({{baseUrl}}/se-book-adapted/index.html) section (organized by topics), and are also embedded in the {{ url_schedule }} (organized in the order they are covered).
+****Handouts****: There are no lecture handouts. All learning materials are organized around topics, are given in Web format, can be found in the [Textbook]({{baseUrl}}/se-book-adapted/index.html) section (organized by topics), and are also embedded in the {{ url_schedule }} (organized in the order they are covered).
 {% if not tic4001 and not tic4002 %}
 
 ****Slides****: Our lecture slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for lecture delivery. Slides will be uploaded to Canvas *after* the lecture.
@@ -65,10 +65,13 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 <box type="info"  header="A caveat about your expectations from the lecture" tags="m--cs2103" light>
 
-In a traditional course, the lecture is the _primary_ means of content delivery. However, {{ module_pair }} is delivered in the _blended learning_ mode, and hence, the contents are delivered primarily via the online textbook and pre-recorded videos that you can consume at your own pace. ==The lecture is only a _complementary_ component== that aims to,
-* recap the past week, clarify common doubts
-* give a preview of the next week, motivate you to tackle the weekly tasks coming up
-* provide context to various 'moving parts' of the module and keep you anchored to the 'big picture'
+In a traditional course, the lecture is the _primary_ means of content delivery. However, {{ module_pair }} is delivered in the _blended learning_ mode, and hence, the contents are delivered primarily via the online textbook and pre-recorded videos that you can consume at your own pace.
+
+Hence, ==the lecture is only a _complementary_ component== that aims to,
+* **recap** the past week, clarify common doubts
+* **preview** the next week
+* **motivate** you to tackle the weekly tasks coming up
+* **contextualize** various 'moving parts' of the module and keep you anchored to the 'big picture'
 
 Given that lectures are complementary, you can speed-watch the recording to save time (instead of attending the live lecture) or skip them altogether (if you are already saturated by the rest of the course activities).
 </box>
