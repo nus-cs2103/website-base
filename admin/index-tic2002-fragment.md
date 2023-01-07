@@ -77,14 +77,13 @@ e.g., **Instead of traditional instructor-led tutorials**, the module provides q
     * If the question is is potentially relevant to others in the class, post your question in the chat room of the `TIC2002-{{ period }}` ([link]({{ url_ms_teams_class }})) MS Team.
     * Otherwise search for prof's name (`Damith Chatura RAJAPAKSE`) in MS Teams and send a private chat message.
 * **[7.00-8.00pm] Lecture briefing**:
-  * Will be done in Hybrid mode (i.e., you can attend F2F, or join via Zoom).
-  * You are encouraged to attend the Zoom session. But a recording will be made available in case you can't attend the live Zoom session.
+  * Will be done in Hybrid mode (i.e., you can attend F2F, or join via Zoom, or watch the recording later).
 * **[8.00-9.30pm] Post-lecture consultations**:
-  * This portion will start as soon as the previous portion  (i.e., the _lecture briefing_ on Zoom) ends.
+  * This portion will start as soon as the previous portion  (i.e., the _lecture briefing_) ends.
   * During this time,
     * go through the week's lecture topics in the module website
     * do suggested activities/exercises in there (if any)
-    * if you encounter any problems while doing the above or have a question, contact the prof using MS-Teams, similar to the _pre-lecture consultations_ explained above.
+    * if you encounter any problems while doing the above or have a question, contact the prof/TA using MS-Teams or F2F.
 
 **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead. Use the textbook (not slides) as your main reference. Slides can be uploaded to Canvas if requested, _after_ the lecture.<br>
 

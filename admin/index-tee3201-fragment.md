@@ -70,13 +70,14 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 <div class="indented" id="lectures-info">
 
 %%:far-clock:%% Tuesdays 1800-2130<br>
-%%:fas-map-marker-alt:%% Venue: online (optional E4-04-02)<br>
+%%:fas-map-marker-alt:%% Venue: E4-04-02<br>
 
 **A TEE3201 lecture + tutorial time is divided into three parts**, as follows:
 
 * 1800-1900: Do exercises related to previous week topics. Consult prof (via MS Teams) if you encounter problems.
-* 1900-2000: Short Zoom lecture, introducing topics for the current week. After that, watch the pre-recorded videos and the textbook sections provided.
-* 2000-2130: You can stay back and do exercises for the current week. Consult prof/TA (F2F or using MS Teams) for help as needed.<br>
+* 1900-2000: Short lecture/briefing, introducing topics for the current week.<br>
+  Delivered in ==hybrid mode (i.e., you can attend F2F, join via Zoom, or watch the recording later)==. After that, watch the pre-recorded videos and follow the textbook sections provided.
+* 2000-2130: Optionally, you can stay back and do exercises for the current week. Consult prof/TA (F2F or using MS Teams) for help, as needed.<br>
 
 
 **{{ icon_slides }} Lecture slides will be uploaded to Canvas after the lecture**, usually by midnight of the same day. **Lecture slides are not suitable to be used as reference materials** as they have been <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.
