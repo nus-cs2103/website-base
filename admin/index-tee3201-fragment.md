@@ -97,13 +97,13 @@ A customized **online text book** is used for this module. Topic coverage may no
 
 **Programming Textbook**:
 
-[An additional **guide on programming basics**]({{baseUrl}}/programming/index.html) is provided for you to get started or programming. The topics in that textbook are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.
+[An additional **guide on programming basics**]({{baseUrl}}/programming/index.html) is provided for you to get started or programming. The topics in that textbook are to help you do the programming part of the project. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.
 
 <!-- .......................................................................................... --> {{ line_dotted }}
 
 # Programming Language
 
-This module uses Python programming language to teach you programming basics required for software engineering. However, Python is not examinable.
+This module uses Python programming language to teach you programming basics required for software engineering. <span class="text-danger">A basic knowledge of Python is expected in the final exam, to the extent it was used in the weekly exercises and the project.</span> For example, some questions might use Python code snippets as part of the question.
 
 **Install [Python (the latest 3.x version)](https://www.python.org/downloads/)** in your computer.
 
@@ -230,12 +230,11 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 <span id="help-info">
 
 If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, here are the ways to get help, in the order of preference (most preferred on the top).
-1. **Post in [MS Teams ==channel for the class==]({{ url_ms_teams_class }})**, rather than send a private message to the prof/TA. That way, either the prof or the TA can answer and the rest of the class can benefit from the answer.<br>
-   If the question is not relevant to the rest of the class, prof/TA will contact you privately (via MS Teams) for follow up.
-2. **Email `tee3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
-3. **Send a private message** to the prof (search for `Damith Chatura Rajapakse`) or to the TA (search for `Ou Jin Bin`) via MS Teams.
-4. Email the prof at <include src="index-{{ module | lower }}-fragment.md#prof-email" inline trim/> or the TA at <include src="index-{{ module | lower }}-fragment.md#ta-email" inline trim/>
-5. You may also post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
+1. **[Preferred] Post in [MS Teams ==channel for the class==]({{ url_ms_teams_class }})**:
+   * If there is any chance that the question can be relevant to other classmates, post in the `General` channel.
+   * Otherwise, post in the `YOUR_NAME - Help Channel` private channel we have created for each of you.
+1. **Email `tee3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
+1. You may also post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
 
 </span>
 <!-- .......................................................................................... --> {{ line_dotted }}
