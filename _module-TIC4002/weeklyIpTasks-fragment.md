@@ -4,7 +4,6 @@
 week2: [
   {id: 'learn_about_the_project'},
   {id: 'set_up_project_tic4002'},
-  {id: 'create_pr_to_upstream'},
   {id: 'ensure_tic4001_increments'},
   {id: 'add_increments', increments:  [
     {id: 'A-Gradle', title: 'Use Gradle'}
