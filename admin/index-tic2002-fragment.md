@@ -304,10 +304,12 @@ We'll be using Intellij IDE for programming. While using Intellij is not compuls
 
 <span id="help-info">
 
-If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, you can
-* post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums)
-* ask for prof's help via [MS Teams]({{ url_ms_teams_class }})
-* email prof at `{{ module | lower }}`[at]`comp.nus.edu.sg`
+If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, here are the options to seek help:
+1. **[Preferred] Post in [MS Teams ==channel for the class==]({{ url_ms_teams_class }})**:
+   * If there is any chance that the question can be relevant to other classmates, post in the `General` channel.
+   * Otherwise, post in the `YOUR_NAME - Help Channel` private channel we have created for each of you.
+1. **Email `tic2002@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
+1. You may also post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
 
 </span>
 

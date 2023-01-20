@@ -3,14 +3,16 @@
 
 {{ topic_preamble("RCS: Branching") }}
 {{ topic_preamble("RCS: Creating Pull Requests") }}
+{{ topic_preamble("Automating the Build Process") }}
 
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Java", reuse=false) %}
+{% call topic_preamble("Java: JavaDoc, file I/O, packages, JARs", reuse=false) %}
 
-Let's start by going through some Java topics that is relevant to the iP. You can skim through or skip topics that you are familiar with already.
+Next, we have a few more Java topics that you need as you move from a 'programming exercise' mode to a 'production code' mode.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
+
 {{ topic_preamble("Code Quality: Coding Standards") }}
 {{ topic_preamble("codeQuality-introduction-basic") }}
 <!-- ---------------------------------------------------------------------------- -->

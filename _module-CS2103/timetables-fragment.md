@@ -68,7 +68,6 @@ The lecture recording will be made available later during the same day.
 {{ MT | safe }} | COM1-0210 | **T**hu  **15**:00 | ~~%%G04%%~~ | **`CS2103T-T15`**|
 {{ MT | safe }} | COM1-0210 | **T**hu  **17**:00 | ~~%%G17%%~~ | **`CS2103T-T17`**|
  | | | | | |
-{{ M | safe }} | COM1-0210 | **F**ri  **09**:00 | ~~%%03%%~~ | **`CS2103-F09`**|
 {{ M | safe }} | COM1-0210 | **F**ri  **10**:00 | ~~%%04%%~~ | **`CS2103-F10`**|
 {{ M | safe }} | COM1-0210 | **F**ri  **11**:00 | ~~%%05%%~~ | **`CS2103-F11`**|
 {{ MT | safe }} | COM1-0210 | **F**ri  **12**:00 | ~~%%G09%%~~ | **`CS2103T-F12`**|

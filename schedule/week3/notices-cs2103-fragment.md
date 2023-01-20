@@ -2,11 +2,11 @@
 
 <include src="../../admin/common-notices-fragment.md#tutorial-start" />
 
-<box type="info" header="**In-video quizzes can earn you bonus participation points!**" dismissible >
+<box type="info" header="**In-video quizzes can earn you bonus participation marks!**" dismissible >
 
 <include src="../../admin/participation.md#in-video-quiz-info" />
 
-Answering in-video quizzes can earn you [bonus participation points](../../admin/participation.md).
+Answering in-video quizzes can earn you [bonus participation marks](../../admin/participation.md).
 </box>
 
 {% if S == "2" %}

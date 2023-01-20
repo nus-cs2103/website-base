@@ -60,10 +60,10 @@ Download and install the Azul build of OpenJDK 11 version found [here](https://w
 
 Recommended: Remove the other versions of OpenJDK so that you do not accidentally launch the JAR using the wrong version (this [video](https://www.youtube.com/watch?v=wwV_L3lKYYw) shows how)
 
-After installation, the command `java --version` should give the following output:
+After installation, the command `java --version` should give an output similar to the below:
 ```{.no-line-numbers}
 openjdk 11.0.__ ____-__-__ LTS
-OpenJDK Runtime Environment Zulu11.50+19-CA (build 11.0.__+_-LTS)
+OpenJDK Runtime Environment Zulu11.__+__-CA (build 11.0.__+_-LTS)
 OpenJDK 64-Bit Server VM Zulu11.__+__-CA (build 11.0.__+_-LTS, mixed mode)
 ```
 

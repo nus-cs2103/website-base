@@ -50,7 +50,7 @@ Optionally, if you haven't pushed the commit to the fork yet, you can try to fig
 <div id="tag-push">
 
 * From this point onward, after completing each increment,
-  * **`git tag` the commit with the exact increment** ID e.g., `Level-2`, `A-TextUiTesting`
+  * **`git tag` the commit with the exact increment ID** e.g., `Level-2`, `A-TextUiTesting`
     <box type="warning" seamless><md>[Git tags](../book/gitAndGithub/tag/) are not the same as [Git commit messages](../book/gitAndGithub/commit/).</md></box>
   * **`git push` the code to your fork**
     <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](../book/gitAndGithub/push/).

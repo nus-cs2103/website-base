@@ -18,11 +18,11 @@ This week, ==there are things for you to do before the upcoming lecture== (refer
 
 <box type="tip">
 
-* **Our first lecture** will be on {{ get_date(date_first_lecture, time="") }}.
+* **Our first lecture** will be on {{ get_date(date_first_lecture, time="") }}. It will be fully online. Subsequent lectures will be hybrid.
 * **Our tutorials** start on week 3.
 * **[{{ module }}T Students]**: Of the many weekly sessions that appear under {{ module }}T, only two actually belong to {{ module }}T. Those are, the lecture on {{ day_lecture }} {{ time_t_lecture_start }}-{{ time_t_lecture_end }}, and the 1-hour tutorial slot. The other two 2-hour slots belong to the CS2101 module.<br>
   ==CS2101 tutorials start in week 1==.
-</box>
+</box><p/>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="tutorial-start">
