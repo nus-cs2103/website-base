@@ -16,7 +16,8 @@
 
 <box type="info" tags="m--cs2103" header="Zoom Links & Venue" id="venue-and-links">
 
-**The first few tutorials will be conducted via Zoom. Zoom links for tutorial sessions** will be available in [Canvas module homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.
+**The first few tutorials will be conducted via Zoom. Zoom links for tutorial sessions** will be available in [Canvas module homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.<br>
+  You may use the tutorial venue to join the Zoom session if you wish.
 
 <!--**We have set aside a physical venue (COM1-B103), in case you would like to join the Zoom tutorial from there** e.g., your prefer to sit together with your team members, or you can't find a place in SoC conducive to joining a Zoom tutorial. So, you can join our tutorials from COM1-B103 or any other place of your choice.<br>
  For now, the tutor will conduct the tutorial remotely as the physical venue is shared by two parallel tutorials. Meanwhile, we are exploring other alternatives.-->
@@ -35,11 +36,11 @@
 
 **The mode**
 
-{% if cs2113 %}* Tutorials will be conducted in f2f, on campus.
-{% else %}* Tutorials are most likely to be F2F, to be confirmed near to the first tutorial.{% endif %}
-* MS Teams will be used for file sharing.
+{% if cs2113 %}* Tutorials will be conducted in f2f, on campus.{% else %}
+* The initial few tutorials will be through Zoom; the rest will be F2F.{% endif %}
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
-* The tutor will _facilitate_ tutorial activities, observe your progress, and give feedback.
+* Zoom will be used (even during F2F tutorials) for projecting slides and collecting chat responses.
+* MS Teams will be used for file sharing.
 
 <!--
 * Please ==bring your laptop to tutorials.== You'll need it for tutorial tasks.
