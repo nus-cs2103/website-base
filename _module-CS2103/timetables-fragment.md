@@ -50,7 +50,7 @@ The lecture recording will be made available later during the same day.
 <span id="tutorials-s2">
 
 {{ tutorial_table_headers | trim }}
- {{ MT | safe }} | COM1-0210 | **W**ed  **09**:00 | ~~%%G07%%~~ | **`CS2103T-W09`**| Elton, Lester
+ {{ MT | safe }} | COM1-0210 | **W**ed  **09**:00 | ~~%%G07%%~~ | **`CS2103T-W09`**| Elton, Taufiq
 {{ MT | safe }} | COM1-0210 | **W**ed  **10**:00 | ~~%%G13%%~~ | **`CS2103T-W10`**| Zhongfu, Parth
 {{ MT | safe }} | COM1-0210 | **W**ed  **11**:00 | ~~%%G06%%~~ | **`CS2103T-W11`**| Javier, Kevin Foong
 {{ MT | safe }} | COM1-0210 | **W**ed  **12**:00 | ~~%%G08%%~~ | **`CS2103T-W12`**| Danny, Kevin Foong
