@@ -267,7 +267,7 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 
 * After forming teams, **set up a weekly project meeting time/venue (and communication channels) with your team members**:
 
-{{ embed_topic("tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="2") }}
+{{ embed_topic("tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>

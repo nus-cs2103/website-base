@@ -89,7 +89,6 @@ Reminder: as per iP grading criteria, _some_ increments need to to be done in ea
 </box>
 </div>
 
-
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
@@ -125,6 +124,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 </box>
 
 </div>
+
 {#====================================================================================================================
  # CS2113 Weekly Intros
  #====================================================================================================================#}
@@ -151,6 +151,252 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent=1) }}
 <p/>
 
+</div>
+
+{#====================================================================================================================
+ # Pre/Post info
+ #====================================================================================================================#}
+<div id="extra_Level-5">
+<div tags="m--cs2113 m--tic4001">
+
+* Do each increment as a Git branch. Here is an example:
+  * Start a branch named `branch-{increment ID}` (e.g. `branch-Level-5`). You are recommended to have multiple commits in that branch. Follow the branch naming convention exactly or else our gradings scripts might miss your branch.
+  * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
+  * Push the branch to your fork so that the grading script can detect it. As before, push the tag as well.
+  * {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="extra_A-Packages">
+<div tags="m--cs2113 m--tic4001">
+
+* Recommended: if you are new to git, do this as a separate branch too (for additional practice), similar to how you did `Level-5` (branch name `branch-A-Packages`).
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="extra_Level-6">
+<div tags="m--cs2113">
+
+* Practice using parallel git branches, as explained below:
+  1. First, do Level-6 in a branch named `branch-Level-6`, but do not merge it.
+  1. Then, go back to the `master` branch and implement Level-7 in a separate branch named `branch-Level-7`.
+  1. Now, go back to the `master` branch and merge the two branches one after the other.<br>
+     If there are merge conflicts, you'll have to resolve them first.
+  1. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.
+* As before,
+ {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.<br>
+ {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
+</div>
+<div tags="m--tic4001">
+<p/>
+
+* Create a new branch `branch-Level-6`.
+* Implement the increment in the new branch.
+* Push the branch to your fork.
+* Create a PR in your fork, from the new branch to the `master` branch.  Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
+
+{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
+
+* Merge the PR using GitHub. Note how to merge PRs:
+
+{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=2) }}
+
+* Pull the `master` branch from the fork to your local repo.
+
+</div>
+
+</div>
+{#====================================================================================================================#}
+<div id="pre_A-Jar">
+<div tags="m--cs2103 m--cs2113 m--tic4001">
+<p/>
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="post_A-Jar">
+<div tags="m--cs2103 m--cs2113 m--tic4001" class="indented-level2">
+
+Note the following when you do the `A-Jar` increment given above:
+* <span class="text-danger">Do not commit the JAR file.</span> We don't normally commit generated binary files into the repository.
+* If it does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already). Otherwise tag the latest commit as usual. In both cases, push the tag to the fork.
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="pre_Level-7">
+<div tags="m--cs2103">
+
+* Do Level 7 in a branch named `branch-Level-7`. Here are the steps:
+  1. Start a branch `branch-Level-7`.
+  1. Implement Level 7 while committing to that branch at appropriate points,
+  1. Merge the branch back to the master branch (remember to create a merge commit i.e., ==no fast-forward==).
+  1. Tag the merge commit in the `master` branch.
+  1. Push the `master` branch, push the `branch-Level-7`, and push the tag, to your fork.<br>
+     {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
+     {{ icon_important_big_red }} Only _merged_ branches are detected by the script. After merging a branch `b1` to the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged to the `master` branch.
+
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="pre_Level-8">
+<div tags="m--cs2103">
+<p/>
+
+* Do Level 8 similar to the above, using a branch `branch-Level-8`.
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="extra_Level-8">
+<div tags="m--cs2113 m--tic4001" id="as-parallel-prs">
+
+* **Note how to merge PRs**:
+
+{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=1) }}
+
+* **Practice using parallel git branches _and_ PRs**, as explained below:
+1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
+1. Then, push each branch to your fork, and create a PR !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_module_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
+
+{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=1) }}
+
+3. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
+   1. Merge one of the PRs on GitHub. Remember to choose the `Create merge commit` option when merging.
+   1. The above step will cause the `master` branch of your local repo to fall behind that of your fork. Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the the updated `master` branch from your fork e.g.,
+      ```{.no-line-numbers}
+      git checkout master
+      git pull origin master
+      ```
+   1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
+   1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
+   1. As before, tag the merge commit in the master branch and push the tag to your fork.
+1. Merge the remaining PRs using a procedure similar to the above.
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="extra_A-CheckStyle">
+
+<div tags="m--cs2103">
+
+* Do each increment as a separate branch, similar to [how you did Level 7]({{baseUrl}}/schedule/week3/project.html#3-add-increments-as-branches-level-7-level-8) before.
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="extra_A-Assertions">
+<div tags="m--cs2103">
+
+<include src="ip-tasks-fragment.md#as-parallel-prs" />
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="extra_A-MoreOOP">
+
+{% if cs2103 %}
+* While not required, you are encouraged to use separate branches for each increment.
+  <br>Reason: that way, the `master` branch will always stay in a 'unbroken' state as the work-in-progress will be in a separate branch till such work is ready to be merged.{% endif %}
+* As before, commit, tag, and push, after each increment.
+</div>
+{#====================================================================================================================#}
+<div id="extra_A-JavaDoc">
+
+* Implement these three increments ==as three <tooltip content="i.e., start a branch, add some code to it, go back to the master branch (without merging the first branch), and start another branch, and so on">parallel</tooltip> branches== first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+* The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
+* After finishing, assuming you encountered merge conflicts (and some were rather painful to resolve), think of how such conflicts could have been reduced %%(e.g., by changing the order of merging, or minimizing parallel branches when certain type of changes are being done to the code)%%.
+</div>
+{#====================================================================================================================#}
+<div id="pre_A-Gradle">
+<div tags="m--cs2103 m--tic2002">
+<p/>
+
+* {{ icon_important_big_red }} Do the following increments in the given order because after doing `A-Gradle` you can use the Gradle option (rather than the Intellij option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.
+
+<div class="indented-level2" id="pulling-branch-from-upstream">
+<panel type="seamless" >
+<span slot="header" class="card-title"><markdown>{{ icon_tip}} **If your fork doesn't have the `add-gradle-support` branch ...**{.text-success}</markdown></span>
+
+If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branches when you forked), here are the Git commands for (one of many ways of) fetching and merging the `add-gradle-support` branch from the upstream repo that you forked from:<br>
+
+1. Add the upstream repo as a remote, and give it the name `upstream`:<br>
+`git remote add upstream {{ url_module_org }}/{{ ip_repo_name }}.git`
+1. Switch to the `master` branch, if you are not on it already:<br>
+`git checkout master`
+1. Fetch the `add-gradle-support` from the remote `upstream`:<br>
+`git fetch upstream add-gradle-support`
+1. Merge the branch:<br>
+`git merge upstream/add-gradle-support`
+
+Alternatively see the panel below on some general info on how to pull a branch from another remote repo, but note,
+
+* the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
+* the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
+* the branch to pull is `add-gradle-support` (not `master`)
+
+{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2") }}
+</panel>
+<p/>
+</div>
+
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="post_A-MoreOOP">
+
+<div tags="m--cs2103 m--cs2113" class="indented-level2">
+
+<panel type="seamless">
+<span slot="header" class="card-title text-info"><markdown>{{ icon_info }} **Why more OOP?**</markdown></span>
+
+One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
+
+****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
+That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
+
+**OOP is primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
+
+**We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
+</panel>
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="extra_A-Gradle">
+
+{% if tic4002 %}
+* As before, after an increment has been completed, tag the commit using the increment ID (e.g., `A-Gradle` in this case) and push that tag to your fork.
+* You are recommended to do each new increment in a separate branch.
+* If you have done the increment in the previous semester already and the tag has been pushed to the repo, no further action needed.
+{% else %}
+* **Do each enhancement in a separate branch and merge to the `master` branch only when ready** (reason: if you push incomplete features into the `master` branch, it can confuse others reviewing your PR). There is no need to do the increments as _parallel_ branches though %%i.e., you can do one increment and merge that branch before starting on the next one%%.
+<br>
+{{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
+{% endif %}
+</div>
+{#====================================================================================================================#}
+<div id="post_Level-10">
+
+<div class="indented-level2">
+
+* Note that you no longer need to keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="extra_A-Assertion">
+
+* Add the following increments, doing each in the following manner:
+1. add the extension in a separate branch
+1. push the branch to your fork
+1. create PR within your fork (i.e., from the new branch, to the `master` branch)
+1. merge the PR; you can try various merge options such as `Squash and Merge`, `Rebase and Merge`
+1. sync your local clone with the fork
+</div>
+{#====================================================================================================================#}
+<div id="extra_A-CI">
+
+{% if not tic4002 %}* We recommend that ==at least one member== of the team attempt the following.{% endif %}
+</div>
+{#====================================================================================================================#}
+<div id="pre_A-BetterGui">
+<div tags="m--cs2103">
+
+* As before, we recommend (but not require) that each increment is done as a separate branch and merged to the `master` branch when ready fully done.
+</div>
 </div>
 
 {#====================================================================================================================#}
@@ -260,145 +506,6 @@ _Pull Requests_ is a mechanism for offering code to a repository e.g., a bug fix
 Resources:
 * [GitHub Help page on PRs](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 </modal>
-</div>
-{#====================================================================================================================#}
-<div id="extra_Level-5">
-<div tags="m--cs2113 m--tic4001">
-
-* Do each increment as a Git branch. Here is an example:
-  * Start a branch named `branch-{increment ID}` (e.g. `branch-Level-5`). You are recommended to have multiple commits in that branch. Follow the branch naming convention exactly or else our gradings scripts might miss your branch.
-  * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
-  * Push the branch to your fork so that the grading script can detect it. As before, push the tag as well.
-  * {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-Packages">
-<div tags="m--cs2113 m--tic4001">
-
-* Recommended: if you are new to git, do this as a separate branch too (for additional practice), similar to how you did `Level-5` (branch name `branch-A-Packages`).
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="extra_Level-6">
-<div tags="m--cs2113">
-
-* Practice using parallel git branches, as explained below:
-  1. First, do Level-6 in a branch named `branch-Level-6`, but do not merge it.
-  1. Then, go back to the `master` branch and implement Level-7 in a separate branch named `branch-Level-7`.
-  1. Now, go back to the `master` branch and merge the two branches one after the other.<br>
-     If there are merge conflicts, you'll have to resolve them first.
-  1. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.
-* As before,
- {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.<br>
- {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
-</div>
-<div tags="m--tic4001">
-<p/>
-
-* Create a new branch `branch-Level-6`.
-* Implement the increment in the new branch.
-* Push the branch to your fork.
-* Create a PR in your fork, from the new branch to the `master` branch.  Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
-
-{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
-
-* Merge the PR using GitHub. Note how to merge PRs:
-
-{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=2) }}
-
-* Pull the `master` branch from the fork to your local repo.
-
-</div>
-
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-Jar">
-<div tags="m--cs2113 m--tic4001">
-
-* In case this increment does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already).
-* Upload the jar file to your fork as explained in the panel below.
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="pre_Level-7">
-<div tags="m--cs2103">
-
-* Do Level 7 in a branch named `branch-Level-7`. Here are the steps:
-  1. Start a branch `branch-Level-7`.
-  1. Implement Level 7 while committing to that branch at appropriate points,
-  1. Merge the branch back to the master branch (remember to create a merge commit i.e., ==no fast-forward==).
-  1. Tag the merge commit in the `master` branch.
-  1. Push the `master` branch, push the `branch-Level-7`, and push the tag, to your fork.<br>
-     {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
-     {{ icon_important_big_red }} Only _merged_ branches are detected by the script. After merging a branch `b1` to the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged to the `master` branch.
-
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="pre_Level-8">
-<div tags="m--cs2103">
-<p/>
-
-* Do Level 8 similar to the above, using a branch `branch-Level-8`.
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="extra_Level-8">
-<div tags="m--cs2113 m--tic4001" id="as-parallel-prs">
-
-* **Note how to merge PRs**:
-
-{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=1) }}
-
-* **Practice using parallel git branches _and_ PRs**, as explained below:
-1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
-1. Then, push each branch to your fork, and create a PR !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_module_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
-
-{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=1) }}
-
-3. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
-   1. Merge one of the PRs on GitHub. Remember to choose the `Create merge commit` option when merging.
-   1. The above step will cause the `master` branch of your local repo to fall behind that of your fork. Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the the updated `master` branch from your fork e.g.,
-      ```{.no-line-numbers}
-      git checkout master
-      git pull origin master
-      ```
-   1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
-   1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
-   1. As before, tag the merge commit in the master branch and push the tag to your fork.
-1. Merge the remaining PRs using a procedure similar to the above.
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-CheckStyle">
-
-<div tags="m--cs2103">
-
-* Do each increment as a separate branch, similar to [how you did Level 7]({{baseUrl}}/schedule/week3/project.html#3-add-increments-as-branches-level-7-level-8) before.
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-Assertions">
-<div tags="m--cs2103">
-
-<include src="ip-tasks-fragment.md#as-parallel-prs" />
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-MoreOOP">
-
-{% if cs2103 %}
-* While not required, you are encouraged to use separate branches for each increment.
-  <br>Reason: that way, the `master` branch will always stay in a 'unbroken' state as the work-in-progress will be in a separate branch till such work is ready to be released.{% endif %}
-* As before, commit, tag, and push, after each increment.
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-JavaDoc">
-
-* Implement these three increments ==as three <tooltip content="i.e., start a branch, add some code to it, go back to the master branch (without merging the first branch), and start another branch, and so on">parallel</tooltip> branches== first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
-* The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
-* After finishing, assuming you encountered merge conflicts (and some were rather painful to resolve), think of how such conflicts could have been reduced %%(e.g., by changing the order of merging, or minimizing parallel branches when certain type of changes are being done to the code)%%.
 </div>
 {#====================================================================================================================#}
 <span id="heading_ensure_tic4001_increments">Ensure TIC4001 iP increments have been done</span>
@@ -589,81 +696,6 @@ This activity is worth `2x2=4` participation points.
 1. %%**Take note of the effort required for a _typical_ iP**: Now that you have seen two more iPs, you should now be in a better position to estimate how much you need to do for the tP (reason: the expected workload for the tP is that each team member puts in about one _typical_ iP worth of effort).%%
 </div>
 {#====================================================================================================================#}
-<div id="pre_A-Gradle">
-
-<div tags="m--cs2103 m--tic2002">
-
-* {{ icon_important_big_red }} Do the following increments in the given order because after doing `A-Gradle` you can use the Gradle option (rather than the Intellij option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.
-
-<div class="indented-level2" id="pulling-branch-from-upstream">
-<panel type="seamless" >
-<span slot="header" class="card-title"><markdown>{{ icon_tip}} **If your fork doesn't have the `add-gradle-support` branch ...**{.text-success}</markdown></span>
-
-If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branches when you forked), here are the Git commands for (one of many ways of) fetching and merging the `add-gradle-support` branch from the upstream repo that you forked from:<br>
-
-1. Add the upstream repo as a remote, and give it the name `upstream`:<br>
-`git remote add upstream {{ url_module_org }}/{{ ip_repo_name }}.git`
-1. Switch to the `master` branch, if you are not on it already:<br>
-`git checkout master`
-1. Fetch the `add-gradle-support` from the remote `upstream`:<br>
-`git fetch upstream add-gradle-support`
-1. Merge the branch:<br>
-`git merge upstream/add-gradle-support`
-
-Alternatively see the panel below on some general info on how to pull a branch from another remote repo, but note,
-
-* the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
-* the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
-* the branch to pull is `add-gradle-support` (not `master`)
-
-{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2") }}
-</panel>
-<p/>
-</div>
-
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="post_A-MoreOOP">
-
-<div tags="m--cs2103 m--cs2113" class="indented-level2">
-
-<panel type="seamless">
-<span slot="header" class="card-title text-info"><markdown>{{ icon_info }} **Why more OOP?**</markdown></span>
-
-One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
-
-****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
-That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
-
-**OOP is primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
-
-**We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
-</panel>
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-Gradle">
-
-{% if tic4002 %}
-* As before, after an increment has been completed, tag the commit using the increment ID (e.g., `A-Gradle` in this case) and push that tag to your fork.
-* You are recommended to do each new increment in a separate branch.
-* If you have done the increment in the previous semester already and the tag has been pushed to the repo, no further action needed.
-{% else %}
-* **Do each enhancement in a separate branch and merge to the `master` branch only when ready** (reason: if you push incomplete features into the `master` branch, it can confuse others reviewing your PR). There is no need to do the increments as _parallel_ branches though %%i.e., you can do one increment and merge that branch before starting on the next one%%.
-<br>
-{{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
-{% endif %}
-</div>
-{#====================================================================================================================#}
-<div id="post_Level-10">
-
-<div class="indented-level2">
-
-* Note that you no longer need to keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
-</div>
-</div>
-{#====================================================================================================================#}
 <span id="heading_generate_new_jar">{{ "Release" if tic4002 else "Generate" }} a new JAR file</span>
 <div id="desc_generate_new_jar">
 
@@ -680,21 +712,6 @@ That said, it is also preferable to use one paradigm as the primary approach and
   1. Write full commit messages for at least 2-3 commits that you push this week.
   1. Follow these [_Git conventions for the commit message body_ as specified by @SE-EDU/guides](https://se-education.org/guides/conventions/git.html#commit-message-body) when writing them.
   1. Git tag one of those commits as `A-FullCommitMessage`.
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-Assertion">
-
-* Add the following increments, doing each in the following manner:
-1. add the extension in a separate branch
-1. push the branch to your fork
-1. create PR within your fork (i.e., from the new branch, to the `master` branch)
-1. merge the PR; you can try various merge options such as `Squash and Merge`, `Rebase and Merge`
-1. sync your local clone with the fork
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-CI">
-
-{% if not tic4002 %}* We recommend that ==at least one member== of the team attempt the following.{% endif %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_finalize_features">Finalize the features</span>
