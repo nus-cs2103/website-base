@@ -272,12 +272,14 @@ Resources:
   * {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.
 </div>
 </div>
+{#====================================================================================================================#}
 <div id="extra_A-Packages">
 <div tags="m--cs2113 m--tic4001">
 
 * Recommended: if you are new to git, do this as a separate branch too (for additional practice), similar to how you did `Level-5` (branch name `branch-A-Packages`).
 </div>
 </div>
+{#====================================================================================================================#}
 <div id="extra_Level-6">
 <div tags="m--cs2113">
 
@@ -308,7 +310,9 @@ Resources:
 * Pull the `master` branch from the fork to your local repo.
 
 </div>
+
 </div>
+{#====================================================================================================================#}
 <div id="extra_A-Jar">
 <div tags="m--cs2113 m--tic4001">
 
@@ -316,96 +320,83 @@ Resources:
 * Upload the jar file to your fork as explained in the panel below.
 </div>
 </div>
-<div id="extra_Level-7">
+{#====================================================================================================================#}
+<div id="pre_Level-7">
+<div tags="m--cs2103">
 
-<p/>
-
-* Do Level 7 in a branch named `branch-Level-7`. Without merging that branch, go back to the `master` branch and implement the other increment in a separate branch named similar to the first (i.e., `branch-{increment ID}`). Now, go back to the `master` branch and merge the two branches one after the other. As before, tag the commit (in the `master` branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
- {{ icon_important_big_red }} Remember to push the branches to your fork so that the grading script can detect them.<br>
- {{ icon_important_big_red }} Only _merged_ branches are detected by the script. After merging a branch `b1` to the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged to the `master` branch.<br>
- {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
- {{ icon_tip }} Merge without a _fast-forward_ so that git creates a separate commit for the merge.
+* Do Level 7 in a branch named `branch-Level-7`. Here are the steps:
+  1. Start a branch `branch-Level-7`.
+  1. Implement Level 7 while committing to that branch at appropriate points,
+  1. Merge the branch back to the master branch (remember to create a merge commit i.e., ==no fast-forward==).
+  1. Tag the merge commit in the `master` branch.
+  1. Push the `master` branch, push the `branch-Level-7`, and push the tag, to your fork.<br>
+     {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
+     {{ icon_important_big_red }} Only _merged_ branches are detected by the script. After merging a branch `b1` to the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged to the `master` branch.
 
 </div>
-<span id="extra_Level-8">
+</div>
+{#====================================================================================================================#}
+<div id="pre_Level-8">
+<div tags="m--cs2103">
+<p/>
+
+* Do Level 8 similar to the above, using a branch `branch-Level-8`.
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="extra_Level-8">
 <div tags="m--cs2113 m--tic4001" id="as-parallel-prs">
 
 * **Note how to merge PRs**:
 
-{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=2) }}
+{{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=1) }}
 
 * **Practice using parallel git branches _and_ PRs**, as explained below:
 1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
 1. Then, push each branch to your fork, and create a PR !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_module_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
 
-{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
+{{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=1) }}
 
 3. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
-   1. Merge one of the PRs on GitHub e.g., Level-8. Remember to choose the `Create merge commit` option when merging.
-   1. Pull the updated `master` branch from your fork to your Computer.
+   1. Merge one of the PRs on GitHub. Remember to choose the `Create merge commit` option when merging.
+   1. The above step will cause the `master` branch of your local repo to fall behind that of your fork. Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the the updated `master` branch from your fork e.g.,
+      ```{.no-line-numbers}
+      git checkout master
+      git pull origin master
+      ```
    1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
    1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
    1. As before, tag the merge commit in the master branch and push the tag to your fork.
 1. Merge the remaining PRs using a procedure similar to the above.
 </div>
-</span>
+</div>
+{#====================================================================================================================#}
+<div id="extra_A-CheckStyle">
+
+<div tags="m--cs2103">
+
+* Do each increment as a separate branch, similar to [how you did Level 7]({{baseUrl}}/schedule/week3/project.html#3-add-increments-as-branches-level-7-level-8) before.
+</div>
+</div>
+{#====================================================================================================================#}
 <div id="extra_A-Assertions">
 <div tags="m--cs2103">
 
 <include src="ip-tasks-fragment.md#as-parallel-prs" />
 </div>
 </div>
+{#====================================================================================================================#}
 <div id="extra_A-MoreOOP">
 
-<box tags="m--cs2103 m--cs2113" type="info" seamless>
-
-****Why more OOP?****{.text-info}
-
-One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
-
-****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
-That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
-
-**OOP is primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
-
-**We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
-</box>
-
-* As in the previous week, commit, tag, and push, as you do the following increments in the `master` branch (no need to use separate branches).{% if cs2103 or tic2002 %}
-* {{ icon_important_big_red }} Do `A-Gradle` first, after which use the Gradle option (rather than the Intellij option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.
-
-<div class="indented-level2" id="pulling-branch-from-upstream">
-<panel type="seamless" >
-<span slot="header" class="card-title"><markdown>{{ icon_tip}} **If you fork doesn't have the `add-gradle-support` branch ...**{.text-success}</markdown></span>
-
-If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branched when you forked), here are the Git commands for (one of many ways of) fetching and merging the `add-gradle-support` branch from the upstream repo that you forked from:<br>
-
-1. Add the upstream repo as a remote, and give it the name `upstream`:<br>
-  `git remote add upstream {{ url_module_org }}/{{ ip_repo_name }}.git`
-1. Switch to the `master` branch, if you are not on it already:<br>
-   `git checkout master`
-1. Fetch the `add-gradle-support` from the remote `upstream`:<br>
-   `git fetch upstream add-gradle-support`
-1. Merge the branch:<br>
-   `git merge upstream/add-gradle-support`
-
-Alternatively see the panel below on some general info on how to pull a branch from another remote repo, but note,
-
-* the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
-* the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
-* the branch to pull is `add-gradle-support` (not `master`)
-
-{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2") }}
-</panel>
-<p/>
+{% if cs2103 %}
+* While not required, you are encouraged to use separate branches for each increment.
+  <br>Reason: that way, the `master` branch will always stay in a 'unbroken' state as the work-in-progress will be in a separate branch till such work is ready to be released.{% endif %}
+* As before, commit, tag, and push, after each increment.
 </div>
-
-{% endif %}
-
-</div>
+{#====================================================================================================================#}
 <div id="extra_A-JavaDoc">
 
-* As in the step 1 above, implement these three increments ==as three <tooltip content="i.e., start a branch, add some code to it, go back to the master branch (without merging the first branch), and start another branch, and so on">parallel</tooltip> branches== first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+* Implement these three increments ==as three <tooltip content="i.e., start a branch, add some code to it, go back to the master branch (without merging the first branch), and start another branch, and so on">parallel</tooltip> branches== first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 * The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
 * After finishing, assuming you encountered merge conflicts (and some were rather painful to resolve), think of how such conflicts could have been reduced %%(e.g., by changing the order of merging, or minimizing parallel branches when certain type of changes are being done to the code)%%.
 </div>
@@ -559,7 +550,6 @@ This task is worth `2x2=4` participation points.
 
 </div>
 {#====================================================================================================================#}
-
 <span id="heading_learn_from_others">Learn from others (optional)</span>
 <div id="desc_learn_from_others">
 
@@ -569,7 +559,6 @@ This task is worth `2x2=4` participation points.
 
 </div>
 {#====================================================================================================================#}
-
 <span id="heading_evaluate_peer_ips">Evaluate two peer iPs</span>
 <div id="desc_evaluate_peer_ips">
 
@@ -598,6 +587,60 @@ This activity is worth `2x2=4` participation points.
 1. **Submit your evaluation** using the survey.
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
 1. %%**Take note of the effort required for a _typical_ iP**: Now that you have seen two more iPs, you should now be in a better position to estimate how much you need to do for the tP (reason: the expected workload for the tP is that each team member puts in about one _typical_ iP worth of effort).%%
+</div>
+{#====================================================================================================================#}
+<div id="pre_A-Gradle">
+
+<div tags="m--cs2103 m--tic2002">
+
+* {{ icon_important_big_red }} Do the following increments in the given order because after doing `A-Gradle` you can use the Gradle option (rather than the Intellij option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.
+
+<div class="indented-level2" id="pulling-branch-from-upstream">
+<panel type="seamless" >
+<span slot="header" class="card-title"><markdown>{{ icon_tip}} **If your fork doesn't have the `add-gradle-support` branch ...**{.text-success}</markdown></span>
+
+If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branches when you forked), here are the Git commands for (one of many ways of) fetching and merging the `add-gradle-support` branch from the upstream repo that you forked from:<br>
+
+1. Add the upstream repo as a remote, and give it the name `upstream`:<br>
+`git remote add upstream {{ url_module_org }}/{{ ip_repo_name }}.git`
+1. Switch to the `master` branch, if you are not on it already:<br>
+`git checkout master`
+1. Fetch the `add-gradle-support` from the remote `upstream`:<br>
+`git fetch upstream add-gradle-support`
+1. Merge the branch:<br>
+`git merge upstream/add-gradle-support`
+
+Alternatively see the panel below on some general info on how to pull a branch from another remote repo, but note,
+
+* the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
+* the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
+* the branch to pull is `add-gradle-support` (not `master`)
+
+{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2") }}
+</panel>
+<p/>
+</div>
+
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="post_A-MoreOOP">
+
+<div tags="m--cs2103 m--cs2113" class="indented-level2">
+
+<panel type="seamless">
+<span slot="header" class="card-title text-info"><markdown>{{ icon_info }} **Why more OOP?**</markdown></span>
+
+One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
+
+****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
+That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
+
+**OOP is primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
+
+**We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
+</panel>
+</div>
 </div>
 {#====================================================================================================================#}
 <div id="extra_A-Gradle">
@@ -661,7 +704,7 @@ This activity is worth `2x2=4` participation points.
 * Reminder: you can give the chatbot any personality (there is no need to follow the exact command/response formats given)
 * {{ icon_important_big_red }} Remember to give credit to any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent="2") }}
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_website">Set up a product website</span>

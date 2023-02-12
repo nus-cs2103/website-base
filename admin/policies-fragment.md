@@ -201,5 +201,6 @@ In general, you are **not allowed to involve outsiders** in your project excep
 
 Learning to honor deadlines is a learning outcome of this module. Therefore, **we do not normally extend module deadlines** to accommodate those who missed the deadline, unless there are some extraordinary circumstances.
 
+{% if cs2103 %}However, weekly project deliverables without specific deadlines are flexible. You will not be penalized for missing them if you catch up within a few days.{% endif %}
 </div>
 

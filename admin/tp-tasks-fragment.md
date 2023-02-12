@@ -465,7 +465,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 * The PRs created for tutorials need not be merged, unless the changes are actually in line with your project idea.
 * For reference, given below is the workflow you should follow when merging code in your tP:
 
-{{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize {{ version_first }}</span>

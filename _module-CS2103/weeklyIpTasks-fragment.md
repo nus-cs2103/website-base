@@ -19,7 +19,7 @@ week2: [
 week3: [
   {id: 'finish_leftover_tasks'},
   {id: 'create_pr_to_upstream'},
-  {id: 'add_increments', suffix: ' as parallel branches', increments:  [
+  {id: 'add_increments', suffix: ' as branches', increments:  [
     {id: 'Level-7', title: 'Save'},
     {id: 'Level-8', title: 'Dates and Times'}
   ]},
