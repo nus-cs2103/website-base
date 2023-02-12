@@ -284,7 +284,6 @@ Note the following when you do the `A-Jar` increment given above:
 </div>
 {#====================================================================================================================#}
 <div id="pre_A-CheckStyle">
-
 <div tags="m--cs2103">
 
 * Do each increment as a separate branch, similar to [how you did Level 7]({{baseUrl}}/schedule/week3/project.html#3-add-increments-as-branches-level-7-level-8) before.
@@ -325,10 +324,12 @@ That said, it is also preferable to use one paradigm as the primary approach and
 </div>
 {#====================================================================================================================#}
 <div id="pre_A-JavaDoc">
+<div tags="m--cs2103">
 
 * Implement these three increments ==as three <tooltip content="i.e., start a branch, add some code to it, go back to the master branch (without merging the first branch), and start another branch, and so on">parallel</tooltip> branches== first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 * The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
 * After finishing, assuming you encountered merge conflicts (and some were rather painful to resolve), think of how such conflicts could have been reduced %%(e.g., by changing the order of merging, or minimizing parallel branches when certain type of changes are being done to the code)%%.
+</div>
 </div>
 {#====================================================================================================================#}
 <div id="pre_A-Gradle">
@@ -376,7 +377,7 @@ Alternatively see the panel below on some general info on how to pull a branch f
 {#====================================================================================================================#}
 <div id="pre_A-CI">
 
-{% if not tic4002 %}* We recommend that ==at least one member== of the team attempt the following.{% endif %}
+* We recommend that ==at least one member== of the team attempt the following.
 </div>
 {#====================================================================================================================#}
 <div id="pre_A-BetterGui">
