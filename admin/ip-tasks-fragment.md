@@ -156,7 +156,21 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 {#====================================================================================================================
  # Pre/Post info
  #====================================================================================================================#}
-<div id="extra_Level-5">
+<div id="pre_Level-0">
+<div tags="m--cs2113 m--tic4001">
+
+<include src="ip-tasks-fragment.md#commit" />
+</div>
+</div>
+{#====================================================================================================================#}
+<div id="pre_Level-1">
+
+<include src="ip-tasks-fragment.md#order" />
+{% if cs2103 %}<include src="ip-tasks-fragment.md#commit" />{% endif %}
+<include src="ip-tasks-fragment.md#tag-push" />
+</div>
+{#====================================================================================================================#}
+<div id="pre_Level-5">
 <div tags="m--cs2113 m--tic4001">
 
 * Do each increment as a Git branch. Here is an example:
@@ -167,14 +181,14 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 </div>
 </div>
 {#====================================================================================================================#}
-<div id="extra_A-Packages">
+<div id="pre_A-Packages">
 <div tags="m--cs2113 m--tic4001">
 
 * Recommended: if you are new to git, do this as a separate branch too (for additional practice), similar to how you did `Level-5` (branch name `branch-A-Packages`).
 </div>
 </div>
 {#====================================================================================================================#}
-<div id="extra_Level-6">
+<div id="pre_Level-6">
 <div tags="m--cs2113">
 
 * Practice using parallel git branches, as explained below:
@@ -212,7 +226,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 <p/>
 </div>
 </div>
-{#====================================================================================================================#}
+{#-------------------------------------------------------------------#}
 <div id="post_A-Jar">
 <div tags="m--cs2103 m--cs2113 m--tic4001" class="indented-level2">
 
@@ -243,9 +257,6 @@ Note the following when you do the `A-Jar` increment given above:
 
 * Do Level 8 similar to the above, using a branch `branch-Level-8`.
 </div>
-</div>
-{#====================================================================================================================#}
-<div id="extra_Level-8">
 <div tags="m--cs2113 m--tic4001" id="as-parallel-prs">
 
 * **Note how to merge PRs**:
@@ -272,7 +283,7 @@ Note the following when you do the `A-Jar` increment given above:
 </div>
 </div>
 {#====================================================================================================================#}
-<div id="extra_A-CheckStyle">
+<div id="pre_A-CheckStyle">
 
 <div tags="m--cs2103">
 
@@ -280,22 +291,40 @@ Note the following when you do the `A-Jar` increment given above:
 </div>
 </div>
 {#====================================================================================================================#}
-<div id="extra_A-Assertions">
+<div id="pre_A-Assertions">
 <div tags="m--cs2103">
 
 <include src="ip-tasks-fragment.md#as-parallel-prs" />
 </div>
 </div>
 {#====================================================================================================================#}
-<div id="extra_A-MoreOOP">
+<div id="pre_A-MoreOOP">
 
 {% if cs2103 %}
 * While not required, you are encouraged to use separate branches for each increment.
   <br>Reason: that way, the `master` branch will always stay in a 'unbroken' state as the work-in-progress will be in a separate branch till such work is ready to be merged.{% endif %}
 * As before, commit, tag, and push, after each increment.
 </div>
+{#-------------------------------------------------------------------#}
+<div id="post_A-MoreOOP">
+<div tags="m--cs2103 m--cs2113" class="indented-level2">
+
+<panel type="seamless">
+<span slot="header" class="card-title text-info"><markdown>{{ icon_info }} **Why more OOP?**</markdown></span>
+
+One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
+
+****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
+That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
+
+**OOP is primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
+
+**We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
+</panel>
+</div>
+</div>
 {#====================================================================================================================#}
-<div id="extra_A-JavaDoc">
+<div id="pre_A-JavaDoc">
 
 * Implement these three increments ==as three <tooltip content="i.e., start a branch, add some code to it, go back to the master branch (without merging the first branch), and start another branch, and so on">parallel</tooltip> branches== first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
 * The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
@@ -337,38 +366,6 @@ Alternatively see the panel below on some general info on how to pull a branch f
 </div>
 </div>
 {#====================================================================================================================#}
-<div id="post_A-MoreOOP">
-
-<div tags="m--cs2103 m--cs2113" class="indented-level2">
-
-<panel type="seamless">
-<span slot="header" class="card-title text-info"><markdown>{{ icon_info }} **Why more OOP?**</markdown></span>
-
-One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
-
-****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
-That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
-
-**OOP is primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
-
-**We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
-</panel>
-</div>
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-Gradle">
-
-{% if tic4002 %}
-* As before, after an increment has been completed, tag the commit using the increment ID (e.g., `A-Gradle` in this case) and push that tag to your fork.
-* You are recommended to do each new increment in a separate branch.
-* If you have done the increment in the previous semester already and the tag has been pushed to the repo, no further action needed.
-{% else %}
-* **Do each enhancement in a separate branch and merge to the `master` branch only when ready** (reason: if you push incomplete features into the `master` branch, it can confuse others reviewing your PR). There is no need to do the increments as _parallel_ branches though %%i.e., you can do one increment and merge that branch before starting on the next one%%.
-<br>
-{{ icon_tip }} If you have completed any of them in previous weeks, just add the corresponding tag (no need to create a branch).
-{% endif %}
-</div>
-{#====================================================================================================================#}
 <div id="post_Level-10">
 
 <div class="indented-level2">
@@ -377,17 +374,7 @@ That said, it is also preferable to use one paradigm as the primary approach and
 </div>
 </div>
 {#====================================================================================================================#}
-<div id="extra_A-Assertion">
-
-* Add the following increments, doing each in the following manner:
-1. add the extension in a separate branch
-1. push the branch to your fork
-1. create PR within your fork (i.e., from the new branch, to the `master` branch)
-1. merge the PR; you can try various merge options such as `Squash and Merge`, `Rebase and Merge`
-1. sync your local clone with the fork
-</div>
-{#====================================================================================================================#}
-<div id="extra_A-CI">
+<div id="pre_A-CI">
 
 {% if not tic4002 %}* We recommend that ==at least one member== of the team attempt the following.{% endif %}
 </div>
@@ -420,17 +407,6 @@ That said, it is also preferable to use one paradigm as the primary approach and
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="2") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="2") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="2") }}
-</div>
-{#====================================================================================================================#}
-<div tags="m--cs2113 m--tic4001" id="extra_Level-0">
-
-<include src="ip-tasks-fragment.md#commit" />
-</div>
-<div id="extra_Level-1">
-
-<include src="ip-tasks-fragment.md#order" />
-{% if cs2103 %}<include src="ip-tasks-fragment.md#commit" />{% endif %}
-<include src="ip-tasks-fragment.md#tag-push" />
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project in your computer</span>
