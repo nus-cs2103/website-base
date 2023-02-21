@@ -14,16 +14,27 @@
 
 </box>
 
-<box type="info" tags="m--cs2103" header="Zoom Links & Venue" id="venue-and-links">
+<box type="info" tags="m--cs2103" header="****Zoom Links & Venue****" id="venue-and-links" icon=":fas-info-circle:">
 
-**The first few tutorials will be conducted via Zoom. Zoom links for tutorial sessions** will be available in [Canvas module homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.<br>
+**The first few tutorials will be conducted via Zoom.**
+
+* Zoom links for tutorial sessions will be available in [Canvas module homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.<br>
   You may use the tutorial venue to join the Zoom session if you wish.
 
-<!--**We have set aside a physical venue (COM1-B103), in case you would like to join the Zoom tutorial from there** e.g., your prefer to sit together with your team members, or you can't find a place in SoC conducive to joining a Zoom tutorial. So, you can join our tutorials from COM1-B103 or any other place of your choice.<br>
- For now, the tutor will conduct the tutorial remotely as the physical venue is shared by two parallel tutorials. Meanwhile, we are exploring other alternatives.-->
+**The subsequent tutorials will be conducted in F2F mode**. Note the following about F2F tutorials:
 
-**The subsequent tutorials will be conducted in F2F mode**. More info will be provided later.
-
+* The venue is given in the table below.
+* We will be using Zoom in F2F tutorials as well (same Zoom link as before), as it's needed for,<br>
+  (a) screen-sharing the slides,<br>
+  (b) collecting answers via PM or polls,<br>
+  (c) recording the tutorial for your future reference.
+* As before, some parts of the tutorial are to be done individually while some parts will involve discussions.<br>
+  Please help to keep the noise level low (as there are two parallel tutorials in the same venue),<br>
+  (a) by limiting conversations to parts that the tutor directs you to have a discussion,<br>
+  (b) and not speaking too loudly during those discussions.
+* Are you allowed to attend the tutorial via Zoom instead?  By default, no.<br>
+  Reason: it goes against the purpose of F2F tutorials (i.e., to get the whole team to meet physically) and the NUS directive to move all small classes to F2F mode.<br>
+  However, you can request (by emailing `{{ module | lower }}@comp.nus.edu.sg`) to attend the tutorial of a specific week via Zoom, if you have a valid reason (e.g., MC, taking part in an NUS-related event).
 </box>
 
 <include src="../_module-{{ module }}/timetables-fragment.md#tutorials-s{{ S }}" optional />

@@ -522,7 +522,7 @@ Resources:
 <div id="desc_use_gfmd_in_pr_description">
 
 * [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) (and Markdown in general) is useful in many places when using GitHub %%e.g., issue tracker, PR reviews, writing documentation%%. The aim of this task is to ensure that you are sufficiently familiar with the GFMD syntax.
-* Requirements: Update <tooltip content="click on the the `...` icon on the top right corner of the previous description and choose `Edit`">(how?)</tooltip> the description of the iP PR you created earlier (<span class="text-danger">do not add a new comment</span>) so that it contains the following GFMD elements:
+* Requirements: Update  the description of the [iP ==PR==]({{ url_module_org }}/ip/pulls) <tooltip content="click on the the `...` icon on the top right corner of the previous description and choose `Edit`">(how?)</tooltip> you created earlier (<span class="text-danger">do not add a new comment</span>) so that it contains the following GFMD elements:
   1. a heading
   1. a bullet list
   1. a numbered list
