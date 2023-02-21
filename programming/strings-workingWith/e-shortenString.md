@@ -21,23 +21,23 @@ Example usage:
 <table>
 <tbody>
 <tr>
-  <td>
+<td>
 
 ```python
 print(shorten('1234'))
 print(shorten('1234567890'))
 print(shorten('1234567890abcd'))
 ```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
+</td>
+<td><br>&nbsp;→&nbsp;</td>
+<td><br>
 
 ```
 1234
 1234567890
 1234..abcd
 ```
-  </td>
+</td>
 </tr>
 </tbody>
 </table>
