@@ -26,6 +26,8 @@ ben : B A
 charlie : F
 ```
 
+The program should be able to accept any name (but you can assume each name is only one word e.g., `Jane` but not `Jane Doe`), not just the three names mentioned in the example above.
+
 <panel type="seamless" header="%%:bulb: Python hints%%">
 
 * use a dictionary of this format to store grades:
@@ -34,7 +36,6 @@ charlie : F
    'ben': ['B', 'A'],
    'charlie': ['F']}
   ```
-* The program should be able to accept any name (but you can assume each name is only one word e.g., `Jane` but not `Jane Doe`), not just the three names mentioned in the example above.
 * The string method `split()` can be useful to break the user entry into name and grade.<br>
   As you know,`'aaa bbb ccc'.split()` evaluates to a list `['aaa', 'bbb', 'ccc']`
 * The string method `join()` can be useful when printing grades.<br>

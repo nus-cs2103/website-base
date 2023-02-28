@@ -217,9 +217,10 @@ We recommend you configure the issue tracker of the tP team repo as follows:
   * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.
 * **Avoid rebasing/squashing** when merging PRs. While both are good alternatives to the default behavior of creating a merge commit, rebasing/squashing can affect the timestamp of the commits, which can interfere with the progress tracking that we do for grading purposes %%i.e., the commits can get detected under a week different from the week they were actually done%%.
 * **After merging a PR**,
-  * close the corresponding issue.<br>
+  * **close the corresponding issue**.<br>
     {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
-  * sync your repos with the team rep by pulling the latest `master` from the team repo and pushing it to your own fork.
+  * **sync your repos with the team repo** by pulling the latest `master` from the team repo and pushing it to your own fork.
+  * **don't delete the branch used by the PR**. While it is common practice to delete a branch after merging it, we require you to keep those branches in the team repo so that our scripts can confirm that you used branches when adding changes.
 {% if module == "CS2113" or module == "TIC4001" %}
 * **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
 {% endif %}

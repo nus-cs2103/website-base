@@ -73,7 +73,7 @@ total................:110
 * Width of the number column is 3. Numbers should be right-justified.
 
 
-<panel type="seamless" header="%%:bulb: (Python) Partial solution%%">
+<panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
 
 This exercise requires string formatting methods you learned in an earlier lesson.
 
