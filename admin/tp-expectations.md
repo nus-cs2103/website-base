@@ -216,7 +216,7 @@ In fact, here is the grading criterion for the individual project effort:
 </span>
 
 </span>
-<span id="individualExpectations">
+<div id="individualExpectations">
 
 <!-- ==================================================================================================== -->
 
@@ -350,7 +350,7 @@ This is a non-exhaustive list; you may define additional roles.
 
 * <span class="badge bg-info">Expectation</span> <span class="text-info">**Review each others work**.</span> %%Reason: reviewing skills is a learning outcome, and it is mutually beneficial.%%
 
-</span>
+</div>
 
 </div>
 

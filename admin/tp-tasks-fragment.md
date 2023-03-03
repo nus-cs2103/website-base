@@ -491,9 +491,12 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ version_first }}.
   * We recommend that you follow the [AB3 User Guide]({{ url_ab3_upstream_website }}/UserGuide.html) in terms of structure and format.
-  * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in Markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
-  * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ version_first }}.
-  * Include only features that will be delivered in {{ version_first }}.
+  * As this is a draft only and the final version will be in a different format altogether %%(i.e., in Markdown format)%%, don't waste time in formatting, copy editing etc. You can also limit this to just the 'Features' section only and omit the other sections.<br>
+  While the UG draft need not be 'polished', it should be detailed enough to tell the user how to use the product features in concern.
+  * IMPORTANT:
+    * Specify the precise/full command syntax for the CLI commands that you will deliver at {{ version_first }}.
+      i.e., we want you to know exactly what you plan to deliver at {{ version_first }} -- while it is fine to change this plan later, it is still important to have a plan first.
+    * Include all features that will be available in {{ version_first }}. There is no need to include features that will be delivered beyond {{ version_first }}.
   * <span tags="m--cs2103 m--tic4002">Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%</span><span tags="m--cs2113 m--tic4001">Consider including examples of expected outputs too</span>.
   * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.<br><br>
 
@@ -506,7 +509,11 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
   %%Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.%%
 
   {{ embed_topic("tp-grading.md#criteria-documentation", "Admin " + icon_embedding + " **tP: Grading → ==Documentation==**", "3") }}
-   
+  <p/>
+
+  If you are not sure what we mean by 'enhancements/features each person would be adding' mentioned above, see the panel below for our recommendation on how to divide the tP work:
+  {{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP:  Individual Expectations on Implementation", "2") }}
+
   </box>
 </div>
 </div>
