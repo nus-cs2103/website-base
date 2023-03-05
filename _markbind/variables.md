@@ -129,6 +129,7 @@
 
 <!-- ===========================  icons ================================================= -->
 
+<variable name="icon_alert"><span class="badge rounded-pill bg-danger text-light">:fas-exclamation: ALERT</span></variable>
 <variable name="icon_announcement"><md>:fas-bell:</md></variable>
 <variable name="icon_book"><md>:fas-book:</md></variable>
 <variable name="icon_calendar"><md>:fas-calendar-alt:</md></variable>
@@ -154,7 +155,7 @@
 <variable name="icon_prereq"><md>:glyphicon-education:</md></variable>
 <variable name="icon_preview"><md>:glyphicon-eye-open:</md></variable>
 <variable name="icon_print"><md>:glyphicon-print:</md></variable>
-<variable name="icon_pro_tip"><span class="badge rounded-pill bg-warning text-dark">:fas-lightbulb: PRO TIP</span></variable>
+<variable name="icon_pro_tip"><span class="badge rounded-pill bg-success text-light">:fas-lightbulb: PRO TIP</span></variable>
 <variable name="icon_project"><md>:fas-drafting-compass:</md></variable>
 <variable name="icon_Q"><md>:glyphicon-question-sign:</md></variable>
 <variable name="icon_green_Q"><thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"/></variable>

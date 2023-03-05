@@ -202,7 +202,8 @@ We recommend you configure the issue tracker of the tP team repo as follows:
     * Tick the option `Require status checks to pass before merging` to ensure that a branch has to pass CI before it can be merged into the `master` branch
     * If you think all PRs should be reviewed by someone other than the PR author before they are merged, also tick the `Require pull request reviews before merging` option.
 * **Create issues to represent project tasks** so that they can be tracked using the issue tracker features.
-* **Create a PR when you implement a project task** that updates the code. ==Remember to use a separate branch for each PR.==<br>
+* **Create a PR when you implement a project task** that updates the code.<br>
+  =={{ icon_alert }} Don't forget to do each PR in a separate branch, as that is an essential part of the forking workflow.==<br>
   {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.<br>
 * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
   * Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html).<br>
