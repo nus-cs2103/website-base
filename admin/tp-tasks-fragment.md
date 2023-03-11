@@ -162,7 +162,8 @@ But you can continue to use your favorite Git GUI for a more 'visual' view of yo
 
 While there is no universal set of rules on choosing version numbers for a product, there is a convention named **[SemVer](https://semver.org/) that is well-defined and widely used**. Our tP version numbers (`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}` etc.) do not follow SemVer strictly though.
 
-While on the topic of version numbers, **_milestones_ and _versions_ are not the same thing**. For example, you can have a version release in the middle of a milestone and you can define a milestone that does not release a new version of the product. For convenience, the tP uses them interchangeably (e.g., `{{ version_first }}` is used to mean a version as well as a milestone) because its major milestones coincide with its version releases.
+While on the topic of version numbers, **_milestones_ and _versions_ are not the same thing**. For example, you can have a version release in the middle of a milestone and you can define a milestone that does not release a new version of the product. For convenience, the tP uses them interchangeably (e.g., `{{ version_first }}` is used to mean a version as well as a milestone) because its major milestones coincide with its version releases.<br>
+In a similar vein, we use the version number to refer to the iteration as well, although they are not the same thing. So, when we say _iteration `{{ version_first }}`_, we mean _the iteration that ends in the milestone `{{ version_first }}`_ (that also happens to deliver the product version `{{ version_first }}`)
 
 </box>
 <box type="tip" seamless>
@@ -843,9 +844,9 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 
 * {{ icon_team }} **Manage the milestone** {{ version_first }} as explained in the panel below.
 
-{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 
-* **Wrap up the milestone** using a git tag `{{ version_first }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, reassign them to a future milestone.
+* **Wrap up the milestone** using a git tag `{{ version_first }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, you can reassign them to a future milestone, provided they are not _essential_ for the `{{ version_first }}` (i.e., the you can still get a 'working product' without them).
 
 <div tags="m--cs2103 m--tic4002">
 
@@ -880,7 +881,7 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 <div id="desc_start_on_the_penultimate_version">
 <div class="indented">
 
-<box type="important" tags="m--cs2103 m--tic4002" seamless>
+<box type="important" tags="m--cs2103" seamless>
 
 {% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features** as a <span class="text-danger">feature-freeze will be enforced in the next iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized. In other words, **in terms of product design, treat this iteration as creating the final version of the product**.{% endif %}
 

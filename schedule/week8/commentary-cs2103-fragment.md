@@ -27,5 +27,5 @@ The relevant UML topics are repeated further down in this page, for reference. I
 <!-- ---------------------------------------------------------------------------- -->
 {{ topic_preamble("Testing: Types") }}
 {{ topic_preamble("Testing: Intermediate Concepts") }}
-{{ topic_followup("testing-tdd-what") }}
+{{ topic_followup("testing-tdd-how") }}
 <!-- ---------------------------------------------------------------------------- -->

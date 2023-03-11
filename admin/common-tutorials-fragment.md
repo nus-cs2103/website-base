@@ -390,7 +390,7 @@ class PersonList{
 
 * Measure test coverage in your own IDE. Take a screenshot showing test coverage details such as lines covered, lines not covered, percentage of coverage for different files etc.
 
-{{ embed_topic("../book/testing/testCoverage/text.md#body", "Textbook " + icon_embedding + " Testing → **Test Coverage**", "3", indent=2) }}
+{{ embed_topic("../book/testing/testCoverage/text.md#body", "Textbook " + icon_embedding + " Testing → **Test Coverage**", "3", indent=1) }}
 
 * Post a screenshot in the _tutorial workspace_ document. An example is given below:<br>
  <pic src="images/demo-test-coverage/CoverageReportExample.png" ></pic>

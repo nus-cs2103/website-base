@@ -261,6 +261,7 @@
         {location: ["testing", "testCoverage", "how"]},
       {subheading: "TDD", panopto: "6c561949-dcbb-40bc-b731-ac4400edca2a"},
         {location: ["testing", "tdd", "what"]},
+        {location: ["testing", "tdd", "how"]},
 {week: "11"},
 {week: "12"},
   {name: "Project Management"},

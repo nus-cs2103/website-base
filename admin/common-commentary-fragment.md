@@ -518,7 +518,7 @@ Previously, you learned how to write JUnit tests. **How do you know which parts 
 Learn how to measure test coverage in your tP. You will be asked to demo that in the coming tutorial.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="{{ slugify("followup-testing-tdd-what") }}">
+<div id="{{ slugify("followup-testing-tdd-how") }}">
 
 You are welcome to, but not required to, follow the TDD approach in your project.
 </div>

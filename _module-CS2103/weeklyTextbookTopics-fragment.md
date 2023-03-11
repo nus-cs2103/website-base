@@ -331,6 +331,7 @@
         {location: ["testing", "testCoverage", "how"]},
       {subheading: "TDD", panopto: "6c561949-dcbb-40bc-b731-ac4400edca2a"},
         {location: ["testing", "tdd", "what"]},
+        {location: ["testing", "tdd", "how"]},
 {week: "9"},
     {name: "Modeling"},
       {heading: "OO Domain Models", panopto: "c52e6f24-e009-4a00-a593-ac4500f2d575", questions:"y"},

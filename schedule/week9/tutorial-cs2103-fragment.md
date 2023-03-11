@@ -31,9 +31,10 @@
 <include src="../../book/uml/classDiagrams/associationClasses/container-inParent-asPanel.md" boilerplate />
 </modal>
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 <include src="../../book/modeling/modelingStructures/objectOrientedDomainModels/q-courseDomainModel.md" />
+<p/>
 </div>
 
 2. {{ timing_badge("during the tutorial", "info") }}
@@ -44,9 +45,10 @@
 
 1. {{ timing_badge("before the tutorial", "danger") }} Do the following question, similar to the previous question.
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 <include src="../../book/modeling/modelingBehaviors/activityDiagrams/q-modelWorkflowOfBurgerShop.md" />
+<p/>
 </div>
 
 2. {{ timing_badge("during the tutorial", "info") }} Post your answer and discuss, similar to the previous question.
