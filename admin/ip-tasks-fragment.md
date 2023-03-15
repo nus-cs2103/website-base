@@ -660,13 +660,15 @@ This activity is worth `2x2=4` participation points.
    <box type="info" icon=":fas-question:" seamless>
 
    **FAQ**: What if the student has not uploaded a JAR file, or the JAR file doesn't work at all?<br>
-   **A**: When you submit the evaluation (step 7 below), there will be a way to indicate that the JAR was not available, or any other serious issues you faced.
+   **A**: When you submit the evaluation (step 8 below), there will be a way to indicate that the JAR was not available, or any other serious issues you faced.
    </box>
 1. **Locate the User Guide** of the app by following the link provided.
 1. **Open the Canvas survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
+1. **Run the jar file** in the following manner:
+   1. Put the jar file in an empty folder, to prevent data files created by other jar files you tested earlier from interfering with the current jar file.
+   1. {{ icon_important_big_red }} Run the `java -version` command to confirm you are using Java 11.
+   1. Run the jar file using the `java -jar {file_name}` command (rather than double-clicking) in the same terminal.
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
-   {{ icon_important_big_red }} Make sure you are using Java 11 to run the jar file (use `java -version` command to confirm).<br>
-   {{ icon_tip }} If double-clicking the jar file doesn't work, use the `java -jar {file_name}` command to open it.
 1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
 1. **Submit your evaluation** using the survey.
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
