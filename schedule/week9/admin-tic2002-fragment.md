@@ -55,9 +55,19 @@ Alternatively, you could have added the team members as 'collaborators' to your 
 </box>
 </div>
 
-2. Now, imagine one of the team members have pushed her new code as a branch named `tweak-readme` to the remote repo. Pull that branch and merge it to your `master` branch.
-   * See the panel below on how to pull a branch from another remote.
-   * In this case, the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git`, and the repo to pull _to_ is your local repo used for the project.
+2. Now, imagine one of the team members have pushed her new code as a branch named `tweak-readme` to the remote repo (we have added such a branch to that repo already). Fetch that branch and merge it to your `master` branch.
+   * Here are the steps for doing that, using the Git command line.
+     1. Add the upstream repo as a remote, and give it the name `upstream`:<br>
+     `git remote add upstream {{ url_module_org }}/{{ ip_repo_name }}.git`
+     1. Switch to the `master` branch, if you are not on it already:<br>
+     `git checkout master`
+     1. Fetch the `tweak-readme` from the remote `upstream`:<br>
+     `git fetch upstream tweak-readme`
+     1. Merge the branch (the `--no-ff` tells git not to use a _fast-forward_ merge):<br>
+     `git merge --no-ff upstream/tweak-readme`
+
+   * Alternatively see the panel see the panel below on how to pull a branch from another remote.<br>
+     In this case, the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git`, and the repo to pull _to_ is your local repo used for the project.
 
 {{ embed_topic("../../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2", indent="2") }}
 

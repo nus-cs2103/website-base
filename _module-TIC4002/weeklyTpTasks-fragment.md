@@ -45,8 +45,6 @@ week9: [
 ],
 week10: [
   {id: 'deliver_the_feature'},
-  {id: 'update_user_docs', deadline: get_date(date_w10_start, 6)},
-  {id: 'release_as_a_jar_file', deadline: get_date(date_w10_start, 6)},
   {id: 'wrap_up_penultimate_version'}
 ],
 week11: [
