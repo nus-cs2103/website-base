@@ -316,8 +316,15 @@ As we are still at the early stages of identifying a problem to solve, do not th
 </box>
 </div>
 
-* <span class="text-danger">**Submission**:</span> Submit your product name, target user profile, the value proposition, and the public link to your collaborative project notes via TEAMMATES. You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 or tic4001 %}<br>
-  {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.{% endif %}
+* <span class="text-danger">**Submission**:</span> Submit via TEAMMATES.
+  * Details to submit:
+    1. **Product name** (plain text only) %%e.g., ClientContactsPro%%
+    1. **Target user** profile (plain text only) %%e.g., freelance event photographers%%
+    1. **Value proposition** (plain text only) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%
+    1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
+  * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 or tic4001 %}<br>
+  * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.
+  {% endif %}
 
 
 </div>

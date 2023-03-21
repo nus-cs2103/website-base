@@ -148,20 +148,18 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 
 ### Week 13: Final Submission
 
-**Submission Deadline**: Sunday of week 13 ({{ date_w13_start | date("YYYY-MM-DD", 6) }}). ==Submissions later than the deadline are liable to a late submission penalty==, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., `-1` per day).
-* **The deadline for seeking feedback on the project report draft**: ==week 13 lecture ({{ date_w13_start | date("YYYY-MM-DD", 1) }})==.
-  * Preferred mode of feedback: ~~in-person (reason: it is hard to give written feedback on diagrams)~~ via email.
-  * Such feedback will be limited to high-level comments only (reason: the report is graded), and given only once per student.
+**Submission Deadline**: Sunday of week 13 (<span class="text-danger">{{ date_w13_start | date("YYYY-MM-DD", 6) }}</span>). ==Submissions later than the deadline are liable to a late submission penalty==, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., `-1` per day).
 
 **Deliverables**:
 1. **Code** of the working program: zip (not rar) the code.
    * Submission: via Canvas assignments
    * File name: `{Your Name}.zip` e.g., `Jun Hao.zip`
-1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in Canvas).
+1. **Project report**: a single .docx or a pdf file that ==follows the template given== (template file will be available in Canvas).
    * Submission: via Canvas assignments
    * File name: `{Your Name}.docx/pdf`  e.g., `Jun Hao.docx`
+   * Optionally, you can get feedback on an early project report draft by emailing it to the prof <span class="text-danger">no later than {{ date_w13_start | date("YYYY-MM-DD", 1) }}</span> (i.e., week 13 Tuesday). Note that such feedback will be limited to high-level comments only (reason: the report is graded), and given only once per student.
 1. **Demo video**:
-   * Record a demo video showcasing the features of your product.
+   * Record a demo video showcasing the features of your product. You can use any screen recording software for this. One simple way is to start a Zoom meeting and record the meeting while screen-sharing your demo.
    * Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).
    * Recommended length 7 minutes, max length 10 minutes.
    * Audio narration is optional if the demo can be understood without the audio.

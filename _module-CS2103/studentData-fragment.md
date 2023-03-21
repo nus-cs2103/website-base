@@ -427,7 +427,7 @@
  'CS2103T-T15-2': 'https://docs.google.com/document/d/1E8gBC-ZyA_Ago9wOsZo1w3eGQJI9WgGA_yRWSRWu5QU/edit?usp=sharing',
  'CS2103T-T15-3': 'https://docs.google.com/document/d/12yoa-YDbYwsvo2d5qxbd3e4AxIqUHXqTPZeVQd_BRas/edit?usp=sharing',
  'CS2103T-T15-4': 'https://docs.google.com/document/d/1XkhlfmdBPm69-12JWtZVt0baEwk5I08tFUhSGmAatm0/edit?usp=sharing',
- 'CS2103T-T17-1': 'https://docs.google.com/document/d/1wboEOhU0WibFm-MT-0ctlVW9M2g1VCTW0QNSK5QnsaY/edit?usp=sharing',
+ 'CS2103T-T17-1': 'https://drive.google.com/drive/folders/1Nj5tK97bIskNY422CnjzxDNSgjkAtYpf',
  'CS2103T-T17-2': 'https://drive.google.com/drive/folders/1QZRBs_T4fpJKNn_ApFv5NGcHserk8cpW',
  'CS2103T-T17-3': 'https://docs.google.com/document/d/1D01tQd9XerNd7bQprz0WXd6BVmcBu9phB8Ju7WDg-ts/edit',
  'CS2103T-T17-4': 'https://docs.google.com/document/d/1SKZt5__jKFv3l1Zu2YpQm-VNddbT2NYJlIxam2Zethk/edit?usp=sharing',
@@ -455,7 +455,7 @@
  'CS2103T-W14-2': 'https://docs.google.com/document/d/1G-PAEi4RygTlqN1Neng5fWd47e5Xp0gHRt7cZ4aZo2g/edit?usp=sharing',
  'CS2103T-W14-3': 'https://docs.google.com/document/d/1lOkeQ3VEE97LVzWCeSmyr_y-nplnX12Q_iyQ5fq-Qg8/edit?usp=sharing',
  'CS2103T-W14-4': 'https://drive.google.com/drive/folders/1O3xw4FLJM027aFc3FJ9vph9gCx2IiAPN?usp=sharing',
- 'CS2103T-W15-1': 'https://docs.google.com/document/d/19nAg_LENRTdMaXKCsfO9YIQFdy0oAXmrJsTE2EtOAc4/edit?usp=sharing',
+ 'CS2103T-W15-1': 'https://drive.google.com/drive/folders/1Nj5tK97bIskNY422CnjzxDNSgjkAtYpf',
  'CS2103T-W15-2': 'https://docs.google.com/document/d/1QxMnp9t9iRjGRUj5dP-ZKklkxyaLjQoxTUSkHSzRlMQ/edit?usp=sharing',
  'CS2103T-W15-3': 'https://docs.google.com/document/d/1dZGZv5pFhItGfuW1kXbspKcqaUsliFx0jWo4-A3wV4o/edit',
  'CS2103T-W15-4': 'https://docs.google.com/document/d/1oTImPw8YzdwAiibDNad3mGNTSiGAhnt38MqMAEJxh3U/edit?usp=sharing'
@@ -613,8 +613,8 @@
  'CS2103T-W14-2': 'NUS Students who have needs help finding friends in school through various available means possible.',
  'CS2103T-W14-3': 'Recruiters',
  'CS2103T-W14-4': 'Hiring Managers',
- 'CS2103T-W15-1': 'The target users for this application are tech-savvy small home-based bakery business owners who are less than 40 years old and are receptive to using digital platforms. They own E-commerce businesses that utilize social media platforms or their own websites to sell their products and lack the manpower and time to track logistics. Moreover, they have fewer than five employees and less than 200 customers per month. Additionally, they restock from suppliers seasonally and have a need to manage a significant number of contacts. These users prefer desktop apps over other types and can type fast, while also being reasonably comfortable using CLI apps.',
- 'CS2103T-W15-2': '- Tech-savvy small home-based bakery business owners - <40y.o — receptive to using digital platforms - E-commerce businesses: - Use social media platforms / their own websites (that does not track supplier/customer information) to sell their        products - Lacking manpower/time to track logistics - <5 employees - <200 customers per month - Restocks from suppliers seasonally',
+ 'CS2103T-W15-1': 'The target users for this application are tech-savvy small home-based bakery business owners who are less than 40 years old and are receptive to using digital platforms. They own E-commerce businesses that utilize social media platforms or their own websites to sell their products and lack the manpower and time to track logistics. Moreover, they have fewer than five employees and less than 200 customers per month. Additionally, they restock from suppliers seasonally and have a need to manage ...',
+ 'CS2103T-W15-2': '- Tech-savvy small home-based bakery business owners - <40y.o — receptive to using digital platforms - E-commerce businesses:     - Use social media platforms / their own websites (that does not track supplier/customer information) to sell their        products - Lacking manpower/time to track logistics - <5 employees - <200 customers per month - Restocks from suppliers seasonally',
  'CS2103T-W15-3': 'This product is for students and instructors with project work that have many deliverables to keep track of.',
  'CS2103T-W15-4': 'This product is for Computer Science Undergraduates who prefer CLI over GUI and have many internship applications to keep track of.'
 }%}

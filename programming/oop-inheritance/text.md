@@ -185,7 +185,7 @@ Book title: Python for Beginners
 <box>
 
 <include src="inputOutput.md" var-arrow="" boilerplate>
-<span id="input">
+<div id="input">
 
 ```python{.no-line-numbers}
 class Person:
@@ -205,8 +205,8 @@ class Teacher(Person):
     print(self.name, 'is a teacher')
 
 ```
-</span>
-<span id="output">
+</div>
+<div id="output">
 
 ```python{.no-line-numbers}
 class Student(Person):
@@ -226,15 +226,15 @@ class TeachingAssistant(Teacher, Student):
   def grade(self):
     print(self.name, 'is grading')
 ```
-</span>
+</div>
 </include>
 
 {{ icon_example }} The `TeachingAssistant` class above inherits from both `Student` class and the `Teacher` class both of which inherit from the `Person` class. That means a `TeachingAssistant` object can use methods from classes `object`, `Person`, `Student`, `Teacher`, and `TeachingAssistant`.
 
 <table>
 <tbody>
-  <tr>
-  <td>
+<tr>
+<td>
 
 ```python
 elsie = TeachingAssistant('Elsie', 'A223344')
@@ -243,9 +243,9 @@ elsie.teach()
 elsie.learn()
 elsie.grade()
 ```
-  </td>
-  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-  <td valign="bottom">
+</td>
+<td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+<td valign="bottom">
 
 ```{.no-line-numbers}
 Elsie is a teacher
@@ -253,7 +253,7 @@ Elsie is teaching
 Elsie is learning
 Elsie is grading
 ```
-  </td>
+</td>
 </tr>
 </tbody>
 </table>

@@ -153,31 +153,30 @@ Weekly project increments are given in the panels below:
 
 ### Week 13: Final submission
 
-**Deadline**:
-* Soft deadline (for the project report): {{ get_date(date_w13_start, 2, format=format_normal) }} (Wednesday of week 13)<br>
-  Hard deadline (for all submissions): {{ get_date(date_w13_start, 6, format=format_normal) }} (Sunday of week 13)<br>
-  An extra week can be given (upon request) for a small late submission penalty of `-2` marks.
+**Deadline**: <span class="text-danger">{{ get_date(date_w13_start, 6, format=format_normal) }}</span> (Sunday of week 13)
 
-* What's the difference between the soft deadline and the hard deadline? You can get prof's feedback on a draft of the project report up to the soft deadline. Note that feedback on project report draft will be high-level feedback only (reason: the report is graded). To receive feedback, email a draft of the report to the prof before the soft deadline.
-
+* An extra week can be given (upon request) for a small late submission penalty of `-2` marks.
 * Submissions later than the hard deadline are liable to a late submission penalty, to be fair to those who submitted on time. But given you are part-time students, late submission penalty will be more lenient than otherwise (e.g., `-1 per day`) and will be on a case-by-case basis.
 
-**Deliverables**:
+
+****Deliverables****:
 
 <box type="important" seamless>
 
-Please upload items 2, 3, 4 as three separate files. ==Do not put them into a single zip file==.
+Please upload items 2, 3, 4 as three separate files, using the three Canvas assignments provided. ==Do not put them into a single zip file==.
 </box>
 
-1. **Source code** of the working program: push to your GitHub repo
+1. **Source code** of the working program: push to your GitHub repo.
 1. **Product**:<br>
     i\. Create a JAR file for the final version of the code.<br>
     ii\. Copy it to an empty folder outside of your project folder, and test it (reason: to ensure the JAR file does not depend on a specific folder location for it to work).<br>
     iii\. Submit to Canvas, name: `{YourName}.jar` e.g., `JunHao.jar`
-1. **Documentation**: a single .docx (preferred) or a pdf file that follows the template file given (available in Canvas/Files/Handouts).<br>
-   Submission: Upload to Canvas. The file name should be your name e.g., `JunHao.docx`
+1. **Project report**: a single .docx (preferred) or a pdf file that ==follows the template file given== (available in Canvas/Files/Handouts).
+   * Submission: Upload to Canvas. The file name should be your name e.g., `JunHao.docx`
+   * [Optional] Feedback for an early draft of the project report:  Optionally, you can get prof's feedback on an early draft of the project report if you email a draft of the report to the prof <span class="text-danger">no later than {{ get_date(date_w13_start, 2, format=format_normal) }}</span> (Wednesday of week 13). Note that feedback on project report draft will be high-level feedback only (reason: the report is graded).
 1. **Demo video**:
-   * Record a demo video showcasing the features of your product.
+   * Record a demo video showcasing the features of your product.<br>
+     You can use any screen recording software for this. One simple way is to start a Zoom meeting and record the meeting while screen-sharing your demo.
    * Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).
    * Recommended length 7 minutes, max length 10 minutes.
    * Audio narration is optional if the demo can be understood without the audio.
