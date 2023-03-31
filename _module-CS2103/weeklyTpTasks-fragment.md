@@ -60,7 +60,6 @@ week12: [
   {id: 'start_fixing_PED_bugs', deadline: 'Before the tutorial'},
   {id: 'tweak_product_as_per_PED'},
   {id: 'draft_the_ppp'},
-  {id: 'prepare_for_demo'},
   {id: 'try_pdf_conversion_early'},
   {id: 'make_code_reposense_compatible'}
 ],

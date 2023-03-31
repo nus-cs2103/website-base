@@ -4,7 +4,7 @@
 
 <box type="info" seamless>
 
-**No tutorial this week.** Suggestion: use this time to work on the project with team members. The tutor will be available on MS Teams during the tutorial slot in case you want to contact him/her.
+**No tutorial this week.** Suggestion: use this time to work on the project with team members.
 </box>
 
 <box type="warning" seamless>

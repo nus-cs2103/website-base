@@ -216,6 +216,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * **Do not merge PRs failing <tooltip content="Continuous Integration e.g., GitHub Actions">CI</tooltip>.** The CI status of a PR is reported at the bottom of the {{ show_as_rounded_tab(":octicon-comment-discussion: conversation")}} tab of the PR page. Here's an example:<br>
   ![](images/gitHubPrStatus.png)
   * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push the a fix to the PR.
+  * An exception to this guideline is when the failure is confirmed to be due to something you can afford to ignore %%e.g., when CI fails due to a drop in code coverage but the code section that is causing the coverage drop is not practical to be covered by automated tests%%.
 * **Avoid rebasing/squashing** when merging PRs. While both are good alternatives to the default behavior of creating a merge commit, rebasing/squashing can affect the timestamp of the commits, which can interfere with the progress tracking that we do for grading purposes %%i.e., the commits can get detected under a week different from the week they were actually done%%.
 * **After merging a PR**,
   * **close the corresponding issue**.<br>

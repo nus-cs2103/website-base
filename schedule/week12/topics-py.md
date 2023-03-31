@@ -4,6 +4,6 @@
 
 <div class="indented-level2">
 
-<img src="https://pics.esmemes.com/well-thats-done-what-should-i-do-next-a-cats-8399900.png" /><br>
+<img src="../../images/cat.jpg" /><br>
 <small>%%[image source: esmemes.com]%%</small>
 </div>

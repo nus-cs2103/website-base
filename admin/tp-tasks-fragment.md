@@ -16,7 +16,7 @@
 **The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In other words, avoiding behavior changes unless they are strictly necessary, so that we minimize the possibility of introducing more bugs.<br>
 In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, <span class="text-danger">{{ version_final }} should not have _any_ behaviors that were not already tested in the PE-D</span>). Hence, the feature freeze ==comes into effect at the point you released the JAR file that was used for the PE-D==.
 
-While the info below provides you what to do and what not to do in {{ version_final }} specific cases, the important thing is to understand and ==**follow the spirit of the _feature freeze_** (i.e., do not change features further, correct unintentional errors only)==.
+While the info below provides you what to do and what not to do in {{ version_final }} specific cases, the important thing is to understand and ==**follow the spirit of the _feature freeze_** (i.e., do not change features further; correct unintentional errors only)==.
 
 **Allowed in the {{ version_final }} milestone:**{.text-success}
 
@@ -60,7 +60,7 @@ While the info below provides you what to do and what not to do in {{ version_fi
 Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
 </panel>
 
-<panel type="seamless" header="**Q:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug. How to proceed" minimal>
+<panel type="seamless" header="**Q:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug. How to proceed?" minimal>
 
 **A:** The category chosen by the tester is immaterial. You have to choose the correct category and proceed accordingly.
 </panel>
@@ -882,7 +882,7 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 <div id="demo">
 <div tags="m--cs2103 m--cs2113">
 
-* [one member] Run your app using the latest released version `{{ version_first }}` <span tags="m--cs2103 m--tic4002">(or `{{ version_first }}b`, if applicable)</span>. {% if cs2113 %}Take screenshots of each available feature in action. Add those screenshots to the shared workspace.<br>You can also add the screenshots to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`, and reuse them as necessary in the documentation.{% else %}Take screenshots of each available feature in action. Add those screenshots to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.{% endif %}
+* [one member] Run your app using the latest released version `{{ version_first }}` <span tags="m--cs2103 m--tic4002">(or `{{ version_first }}b`, if applicable)</span>. {% if cs2113 %}Take screenshots of each available feature in action. Add those screenshots to the shared workspace.<br>You can also add the screenshots to your _project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`, and reuse them as necessary in the documentation.{% else %}Take screenshots of each available feature in action. Add those screenshots to your _project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.{% endif %}
 </div>
 <div tags="m--tic4001 m--tic4002">
 
@@ -1044,7 +1044,7 @@ A similar requirement applies to the `UserGuide.md` too.
 
   * More info on how to make the code RepoSense compatible:
 
-{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="3") }}
+{{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="2") }}
 
 <panel type="seamless" header="**FAQ:** What if someone took over a feature from another team member?">
 
@@ -1113,7 +1113,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
 * {{ icon_important_big_red }} Update the {{ version_penultimate }} user guide to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
-  * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
+  * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.{% else %}Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.{% endif %}
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 
 <div tags="m--cs2103 m--tic4002">
@@ -1138,7 +1138,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 * [one member] As was done in `{{ version_first }}`,
   * Run your application using the ==JAR file== that you released for `{{ version_penultimate }}`.
   * Take screenshots of each available feature in action (or screen-record a demo -- need not be polished).
-  * Add those screenshots (or upload the demo video somewhere and give the link) to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_penultimate }} features demo`.
+  * Add those screenshots (or upload the demo video somewhere and give the link) to your _project notes_ document with an appropriate heading e.g., `{{ version_penultimate }} features demo`.
 </div>
 <div tags="m--tic4001 m--tic4002">
 
@@ -1169,8 +1169,14 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <span id="heading_release_as_a_jar_file">{{ icon_team }} Release as a jar file</span>
 <div id="desc_release_as_a_jar_file">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Aim to release it by the weekly deadline. Do some manual tests to ensure the jar file works.
-* **Note that you can do an _additional_ JAR release before the PE dry run** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional JAR is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous one %%(reason: it is good to preserver the release history)%% -- testers are expected to take the latest JAR file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Aim to release it by the usual soft deadline (i.e., midnight before your tutorial). Do some manual tests to ensure the jar file works.
+* **You can do an _additional_ JAR release before the [PE dry run (PE-D)](tp-pe.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional JAR is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous one %%(reason: it is good to preserver the release history)%% -- testers are expected to take the latest JAR file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
+  Waiting till Friday 10am to release the `{{ version_penultimate }}` JAR file is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.{% if cs2103 %}
+* **The <trigger trigger="click" for="modal:v13-jar-desc">_feature freeze_</trigger> will apply at the point you released the JAR file that was used in the PE-D** i.e., the features submitted in the final `{{ version_final }}` two weeks later should be the same as the features tested during PE-D, which is the rationale for the feature freeze anyway.{% endif %}
+
+<modal large header="" id="modal:v13-jar-desc">
+<include src="tp-tasks-fragment.md#feature-freeze-details"/>
+</modal>
 </div>
 {#====================================================================================================================#}
 <span id="heading_wrap_up_penultimate_version">{{ icon_team }} Wrap up {{ version_penultimate }}</span>
@@ -1278,7 +1284,7 @@ Also see:
 
 * =={{ icon_important_big_red }} See info in the panel below:==
 
-{{ embed_topic("tp-pe.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="2") }}
+{{ embed_topic("tp-pe.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_alpha_test">{{ icon_individual }} Alpha-test the product</span>
@@ -1292,7 +1298,7 @@ Test the product yourself (test each others' features) using the JAR file, repor
 
 1. ****Triage the bugs you received in the PE-D****, by following the procedure given below:
 
-{{ embed_topic("tp-ped-fragment.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="2") }}
+{{ embed_topic("tp-ped-fragment.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="1") }}
 
 {% if not cs2103 %}
 2. **Freeze features**. As mentioned earlier, you are strongly discouraged from adding/updating features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.{% else %}
@@ -1345,6 +1351,7 @@ Rate each tester on the following scale:
 Poor | Below expectations | Meets expectations | Exceeds expectations
 ----|---|---|---
 no bug reports from this tester | just a few bug reports, and none are good | 5 or more bug reports but only1-2 are good | 3-5 good bug reports | more than 5 good bug reports
+
 </panel>
 <br>
 <panel type="seamless" header="Q2: Rank PE-D testers" minimized>
@@ -1355,7 +1362,9 @@ Rank the PE-D testers based on their performance (five rank 1 to the top perform
 `Tester B`: rank __<br>
 ...
 
-</panel>
+</panel><p/>
+
+Tester ID mapping (i.e., who is Tester A, Tester B, etc.) will be sent to you via email within 1 day after the PE-D.
 </div>
 
 
@@ -1366,17 +1375,17 @@ Rank the PE-D testers based on their performance (five rank 1 to the top perform
 <div id="desc_tweak_product_as_per_PED">
 
 * **Do more extensive testing yourselves**. The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
-  {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="2") }}
+  {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
 * **Update documentation** to match the product. In particular, finalize the content of the DG early and check it thoroughly for bugs (reason: unlike the UG, the DG did not get tested in the PE dry run).
-  {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
+  {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 
-{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="2") }}
+{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="1") }}
 
 * **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level.<br>
   Refactoring code does not violate a feature freeze (as refactoring doesn't change the behavior). Still, it is not advisable to (but you are allowed to) do _major_ refactorings this close to a major release.
 
-{{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="2") }}
+{{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="1") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1387,7 +1396,7 @@ Rank the PE-D testers based on their performance (five rank 1 to the top perform
 * {% if cs2103 %}**Fill up the skeletal _Project Portfolio Page (PPP)_** you created earlier with a draft version of content.{% else %}**Create the first version of your _Project Portfolio Page (PPP)_**.<br>
   Reason: ==Each member needs to create a PPP== to describe your contribution to the project.{% endif %}
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="2") }}
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="1") }}
 
 <box type="tip" seamless>
 
@@ -1424,7 +1433,7 @@ Not applicable this semester
 
 * {{ icon_important_big_red }} Once again, double-check to ensure the code attributed to you by RepoSense is correct.
 
-{{ embed_topic("tp-tasks-fragment.md#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + version_final + " → Making the Code RepoSense-Compatible", "1", indent="2") }}
+{{ embed_topic("tp-tasks-fragment.md#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → mid-" + version_final + " → Making the Code RepoSense-Compatible", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_try_pdf_conversion_early">{{ icon_team }} Try PDF conversions early</span>
@@ -1432,11 +1441,11 @@ Not applicable this semester
 
 * Take note of the following project constraint:
 
-{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Contstraints → Constraint-PDF-Friendly", "2", indent="2") }}
+{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Contstraints → Constraint-PDF-Friendly", "2", indent="1") }}
 
 * Take note of the following info about the PDF conversion, appearing in next week's project tasks. Particularly, note the suggestion to try PDF conversions early.
 
-{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → Caution on PDF conversions", "3", indent="2") }}
+{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → Caution on PDF conversions", "3", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_do_final_tweaks">{{ icon_individual }} Do final polish-ups</span>

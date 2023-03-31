@@ -4,15 +4,16 @@
 
 **What**: The latest release of the {{ version_penultimate }} period is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
-**When, where**: uses a 40 minute slot at the start of week 11 lecture slot (to be done online).
+**When, where**: uses a 40 minute slot at the start of week 11 lecture slot.
+{% if cs2103 %}It will be conducted via Zoom. If you can't find another suitable location to join the Zoom meeting, you may do so from the lecture venue.{% endif%}
 
 <modal large header="Admin {{ icon_embedding }} tP → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
   <include src="tp-pe.md#tp-practicalexam"/>
 </modal>
 
 {{ icon_important_big_red }} **Grading**: The PE dry run ==affects your grade in the following ways==.
-* If you scored less than half of the marks in the PE, we will consider your performance in PE dry run as well when calculating the PE marks. You can earn ==up to 2 bonus marks== in this manner.{% if cs2103 %}<br>
- Your performance of the PE-D will be graded ==based on the usefulness and the quality of your bug reports==, as evaluated by the receiving team.{% endif %}
+* You can earn ==up to 2 bonus marks== for your performance in the PE-D.{% if cs2103 %}<br>
+ Graded ==based on the usefulness and the quality of your bug reports==, as evaluated by the receiving team.{% endif %}
 * PE dry run is a way for you to practice for the actual PE.
 * Taking part in the PE dry run will earn you participation points.
 * There is ==no penalty for bugs reported== in your product. Every bug you find is a win-win for you and the team whose product you are testing.
@@ -37,9 +38,27 @@
 
 Report as many bugs as you can find during the given time. Take longer if you need (unlike the PE, PE-D is not timed strictly). If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. In that case, all the more reasons to spend more time and find more bugs now.
 
+{% if cs2113 %}
 **Insincere bug reports** will not count for credit %%i.e., don't submit 'fake' bug reports to increase the bug count.%%
 
 **The median number of bugs reported in the previous semester's PE-D was 9.** Someone reporting just a 2-3 bugs is usually a sign of a half-hearted attempt rather than lack of bugs to find. If you really can't find bugs, at least submit suggestions for improvements.
+
+{% elseif cs2103 %}
+Evaluation rubric:
+
+* Meets expectations: 3-5 good bug reports
+* Exceeds expectations: more than 5 good bug reports
+
+A _good_ bug report,
+
+[a] has a descriptive title,<br>
+[b] has enough details,<br>
+[c] severity/type labels chosen are not too far off,<br>
+[d] is written in a non-confrontational tone, and<br>
+[e] points out a potentially problematic behavior (or a good way to improve the product)
+
+As you can't be sure which of your bug reports will be considered as _good_ (criterion [e] in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total. The **median bug reports count in the last round was 9**.
+{% endif %}
 </box>
 
 **PE and PE-D are _manual_ testing sessions.** Using test automation tools or scripting is not allowed.
@@ -82,9 +101,10 @@ Report as many bugs as you can find during the given time. Take longer if you ne
 * Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
 * Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
-  {{ icon_info }} If you are on Windows, use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.<br>
   {{ icon_info }} If the JAR file name has spaces in it, remember to surround it with double quotes.<br>
-  e.g., `java -jar "Name With Spaces.jar"`
+  e.g., `java -jar "Name With Spaces.jar"`<br>
+  {{ icon_info }} Windows users: use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.{% if cs2103 %}<br>
+  {{ icon_info }} Linux users: If the JAR fails with an error labelled `Gdk-CRITICAL` (happens in Wayland display servers), try running it using `GDK_BACKEND=x11 java -jar jar_file_name.jar` command instead.{% endif %}
 
 <box type="info">
 
@@ -229,7 +249,7 @@ Reason: CATcher and GitHub strips out content wrapped in `<` and `>`, for securi
 
 ****Dealing with "What the h___ the tester was thinking?" type bug reports****{.text-info}
 
-Some bug reports will make you angry because they seem baseless, wrong, offensive etc. It's still possible to get value from such bug reports though:
+Some bug reports will make you angry because they seem baseless, wrong, rude etc. It's still possible to get value from such bug reports though:
 * After you got over the initial indignation, dig deeper to see if there's even the slightest possibility that there is a bug. For example, consider this scenario:
    1. The tester claims a certain command doesn't work.
    1. All your team members tried the exact same command and it works as advertised. What the h___ the tester is trying to pull here?
@@ -239,7 +259,7 @@ Some bug reports will make you angry because they seem baseless, wrong, offensiv
 
 Use the pain of dealing with this kind of bug reports as an opportunity to develop the following mindset:
 
-**(a) The product is _guilty until proven innocent_**: If the bug report has even a _hint_ of something amiss with the product, it's your (not the tester's) responsibility to try and prove if it is really a problem or not. Why? because finding a bug is a win for _you_ -- as you can then fix it and thereby avoid the humiliation of releasing a buggy product.
+**(a) The product is _guilty until proven innocent_**: If the bug report has even a _hint_ of something amiss with the product, it's your (not the tester's) responsibility to try and prove if it is really a problem or not. Why? because finding a bug is a win for _you_ -- as you can then fix it and thereby avoid the embarrassment of releasing a buggy product.
 
 **(b) A crappy bug report is better than no bug report**: If the bug actually exists, it is better to have _some_ indication about it than none at all. In a real project, a tester that fails to find bugs can cause more harm to your career than a tester who finds bugs but doesn't report them well.
 

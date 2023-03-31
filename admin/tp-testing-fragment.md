@@ -6,7 +6,7 @@
 
 * **Ensure you can run [CATcher](https://catcher-org.github.io/CATcher/)** on your computer. You should have done this when you smoke-tested CATcher earlier in the semester.
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 <panel header="If not using CATcher" minimized>
 
