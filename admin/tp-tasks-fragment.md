@@ -30,52 +30,80 @@ While the info below provides you what to do and what not to do in {{ version_fi
 {{ icon_x_red }} adding/changing features<br>
 {{ icon_x_red }} any UI changes (even purely cosmetic enhancements e.g., alignments, style changes are not allowed).
 
+**Using 'Planned Enhancements' DG section to counter known feature flaws:** Given you are not allowed to fix feature flaws in {{ version_final }}, we allow you to optionally add a section named `Appendix: Planned Enhancements` to the end of the DG, containing an itemized list of fixes you propose to add in the near future, to counter known feature flaws.
 
-**FAQs:**
+* This section may contain up to `team_size x 2` enhancements %%e.g., a 5-person team can have up to 10 enhancements%%.
+* Each enhancement should be specific, describing the feature flaw it addresses and how exactly the feature will be changed, providing sample UIs/inputs/outputs if applicable. e.g.,
+  > 1. The current error message for a failed contact deletion `Operation failed!` is too general. We plan to make the error message also mention which action failed and the reason for the failure: `The contact Amy Lee could not be deleted as it is referenced by another contact Ben Chua`.
+* Each enhancement should be a tweak to an existing feature, and should not be a new feature altogether.
+* `type.FeatureFlaw` bug reports matching an item in this section will not be penalized for the team, and testers will not earn credit for reporting them either. However, testers can report `type.FeatureFlaw` bugs on the enhancements listed in this section, if they think the planned feature tweak itself is flawed/inadequate.
 
-<panel type="seamless" header="**Q:** Can we add a missing validity check for a user input? Can we add more error/exception handling?" minimal>
 
-**A:** Yes, but only if its absence causes the software to <tooltip content="crash, or give incorrect results">mis-behav</tooltip>e (i.e., it's omission is a bug).
+**FAQs on what is allowed during the feature freeze:**
+
+<panel type="seamless" header="**Q1:** How to differentiate between bugs and feature changes?" minimal>
+
+**A:** A bug in this context is when the actual behavior differs from the _advertised_ behavior (i.e., the behavior stated in the UG) <span class="text-danger">due to an _error_ in the code</span>.<br>
+If will be considered a feature change (i.e., not allowed to do) if,
+
+* the current behavior is not strictly 'incorrect' but 'can be better'.
+* the current behavior inconveniences the user but there is a way to work around it.
 </panel>
 
-<panel type="seamless" header="**Q:** Can we modify error messages? How about other text shown to the user?" minimal>
+<panel type="seamless" header="**Q2:** Will we be penalized for feature flaws not fixed during the feature freeze?" minimal>
 
-**A:** Yes, but only if the current text is incorrect (i.e., a bug). Adding more information or otherwise 'enhancing' the text is not allowed.
+**A:** Feature flaws will not be penalized In the following cases:
+
+* If the feature flaw will be fixed by an item you listed in the _Planned enhancements_ DG section (as mentioned above).
+* After the feature flaw is reported during the PE, you successfully argued it as 'not in scope' (i.e., fixing that flaw is of lower priority than the work done already, and hence it is justifiable to be postponed to a future version). Reporters of such bugs will earn partial credit.
+
+In addition, you can mitigate the impact of feature flaws and thus lower its severity by tweaking the UG (e.g., explain the feature better, clearly state the limitations and guide users to work around those limitations)
 </panel>
 
-<panel type="seamless" header="**Q:** The UI text get truncated (or overflows) for certain inputs (or certain Windows sizes); can we fix them?" minimal>
+<panel type="seamless" header="**Q3:** What if an issue is related to a behavior not specifically stated in the UG?" minimal>
 
-**A:** Only if the behavior hinders normal usage i.e., not showing the text fully/properly under normal usage can be considered an 'incorrect' behavior, and hence, a bug.<br>
-  However, accommodating 'extreme' inputs (e.g., a person name with 1000 characters) can be considered a nice-to-have feature, to be added in a future version (i.e., lack of it is not a bug).
+**A:** In that case, we go by the reasonable 'correct' behavior that one expects. For example, the UG might not specify what happens if a user typed an extra space after the first keyword of the command (e.g., `mark[SPACE]1` vs `mark[SPACE][SPACE]1`) in which case the reasonable correct behavior is to ignore the extra space.
 </panel>
 
-<panel type="seamless" header="**Q:** Can we tweak the command format?" minimal>
+<panel type="seamless" header="**Q4:** What if a feature is mentioned in the UG but not available fully in the product?" minimal>
+
+**A:** Describing a feature in the UG without implementing it is a UG bug. The remedy is to remove the feature from the UG.<br>
+If the behavior difference is because some parts of the feature is not implemented yet, the feature is incomplete (i.e., not a bug). The remedy is to remove the feature (if it is not usable in the current form) or update the UG to match the current version of the feature.
+</panel>
+
+<panel type="seamless" header="**Q5:** Can we tweak validity checks for a user input, or error/exception handling?" minimal>
+
+**A:** Only if the current behavior causes the software to <tooltip content="crash, or give incorrect results">misbehave</tooltip> or make it unusable for typical users.
+</panel>
+
+<panel type="seamless" header="**Q6:** Can we tweak error/help messages (or other text shown to the user)?" minimal>
+
+**A:** Only if the current text is incorrect (i.e., a bug). Adding more information or otherwise 'enhancing' the text is not allowed.
+</panel>
+
+<panel type="seamless" header="**Q7:** Can we tweak case-sensitivity of a feature?" minimal>
+
+**A:** If the case-sensitivity of a feature does not follow the real world, it is considered a feature flaw (i.e, the design of the feature is not optimal). The best you can do in {{ version_final }} is to document this behavior clearly in the UG.<br>
+An exception is when the UG clearly states the case sensitivity but the actual feature implementation doesn't follow it, in which case it is a bug and can be fixed.
+</panel>
+
+<panel type="seamless" header="**Q8:** The UI text get truncated (or overflows) for certain inputs (or certain Windows sizes); can we fix them?" minimal>
+
+**A:** Only if the behavior hinders normal usage i.e., the user not being able to see the full text in _any way_ can be considered an 'incorrect' behavior, and hence, a bug. If the user is able to see the full text by resizing the Window or using another view provided by the app, it is not a bug.<br>
+  Also, accommodating 'extreme' inputs (e.g., a person name with 1000 characters) can be considered a nice-to-have feature, to be added in a future version (i.e., lack of it is not a bug).
+</panel>
+
+<panel type="seamless" header="**Q9:** Can we tweak the command format?" minimal>
 
 **A:** No, as this would be considered changing the design of a feature.
 </panel>
 
-<panel type="seamless" header="**Q:** Testers have reported missing features or feature flaws (or suggested feature tweaks). Can we add/tweak those features?" minimal>
 
-**A:** No, as that goes against the spirit of having a feature freeze. Most teams receive such suggestions from testers as we allow feature suggestions in PE-D (but they are not allowed in the PE). You can use those suggestions when you envision future versions of the product (i.e., beyond {{ version_final }} -- to improve your product design skills. But for now, focus on fixing bugs, and perfecting other aspects such as testing, documentation, code quality.<br>
-Also note that given there's a feature freeze in {{ version_final }}, some lower-priority features can be argued as out-of-scope if there were other higher priority features that took up the available time in previous versions. Every team has to draw the line _somewhere_ as there wasn't a lot of time to implement features.
+<panel type="seamless" header="**Q10:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug (or vice versa). How to proceed?" minimal>
+
+**A:** The category chosen by the tester is immaterial. You have to choose the correct category and proceed accordingly. Do not fix feature flaws even if the tester categorized them as bugs.
 </panel>
 
-<panel type="seamless" header="**Q:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug. How to proceed?" minimal>
-
-**A:** The category chosen by the tester is immaterial. You have to choose the correct category and proceed accordingly.
-</panel>
-
-<panel type="seamless" header="**Q:** How to distinguish between bugs and feature modifications?" minimal>
-
-**A:** A bug is when the actual behavior differs from the _advertised_ behavior (i.e., the behavior stated in the UG) <span class="text-danger">due to an _error_ in the code</span>.<br>
-Describing a feature in the UG without implementing it is a UG bug. The remedy is to remove the feature from the UG.<br>
-If the behavior difference is because some parts of the feature is not implemented yet, the feature is incomplete (i.e., not a bug). The remedy is to remove the feature (if it is not usable in the current form) or update the UG to match the current version of the feature.
-</panel>
-
-<panel type="seamless" header="**Q:** What if an issue is related to a behavior not specifically stated in the UG?" minimal>
-
-**A:** In that case, we go by the reasonable 'correct' behavior that one expects. For example, the UG might not specify what happens if a user typed an extra space after the first keyword of the command (e.g., `mark[SPACE]1` vs `mark[SPACE][SPACE]1`) in which case the reasonable correct behavior is to ignore the extra space.
-</panel>
 
 </box>
 </div>

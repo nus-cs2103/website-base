@@ -134,7 +134,9 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 </tab>
 <tab header="PE (at **{{ version_final }}**)">
 
-* Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.
+* Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.{% if cs2103 %}
+* The DG appendix named _Planned Enhancements_ (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are known and should not be reported as bugs. However, you can report `type.FeatureFlaws` bugs if you think these enhancements themselves are flawed/inadequate.
+{% endif %}
 * As before, do both ==_system testing_ and _acceptance testing_== but give priority to system testing as those bugs can earn you more credit.
 * {{ icon_tip }} Be careful when copying commands from the UG (PDF version) to the software as some PDF viewers can affect the pasted text. If that happens, you might want to open the UG in a different PDF viewer.
 

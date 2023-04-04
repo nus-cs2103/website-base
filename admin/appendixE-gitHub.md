@@ -229,7 +229,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 <modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
   <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
-  <include src="../book/gitAndGitHub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
+  <include src="../book/gitAndGithub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 <modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-featurebranchworkflow">

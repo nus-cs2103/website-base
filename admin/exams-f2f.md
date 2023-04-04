@@ -48,12 +48,7 @@ Instructions below are from the previous semester. Will be updated closer to the
   1\. to minimize opportunities for collusion<br>
   2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
 * Duration: **45 minutes** (recommended: allocate 2.5 minutes per question, which gives you a 5 minutes buffer)
-* **Most MCQ question will also have a follow up question.**<br>
-  Answering at least 75% of the follow-up questions can earn you full marks for follow up questions.<br>
-  **Submitting the answer to a follow-up question is done the same as submitting feedback for a question** (explained above), repeated below for your reference:
-
-<include src="exam-follow-up-questions-fragment.md" />
-
+* **Most MCQ question will also have a follow up question requiring a short answer.**
 
 * Here is an example question. The answer is `a` and the answer to the follow-up question can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
@@ -62,27 +57,24 @@ Instructions below are from the previous semester. Will be updated closer to the
 
 Choose the <span class="text-danger">**incorrect**</span> statement.
 
-<span class="text-info">[Follow-up question: Why is it incorrect?]</span>
-
 A. Software engineering projects always use OOP.<br>
 B. Some software engineering projects can be large and complex.<br>
 C. Some software engineering projects can go on for many years.<br>
 D. Software projects can involve people who are not software engineers.
 
+Why is it incorrect? _____
 </panel>
 <p/>
 </div>
 
 * Here is another example question. Note the ==[**SELECT ALL**]== which tells you that this question can have multiple correoct answers and you need to select all of them i.e., it is a checkbox type question<br>
-  The answer is `A`, `B`, `C` (and the rationale is `A` and `B`).
+  The answer is `A`, `B`, `C`.
 
 <div class="indented-level2">
 
 <panel haader="A sample question" expanded >
 
 ==[**SELECT ALL**]== Which are UML diagrams covered in the module?.
-
-<span class="text-info">[Justification: Which two are closely related to each other?]</span>
 
 A. Class diagrams.<br>
 B. Object diagrams.<br>

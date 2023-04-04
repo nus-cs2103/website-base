@@ -97,12 +97,6 @@ The final exam has two types of questions:
   2\. Not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
 * Duration: **{{ 45 if tic2002 else 35 }} minutes** <span tags="m--cs2103">(recommended: allocate 2 minutes per question, which gives you a 3 minutes buffer)</span>
 * Most MCQ question have a short-answer follow up question.
-**Use the 'NOTES' feature of Examplify to answer the follow-up question** (explained above), repeated below for your reference:
-
-<include src="exam-follow-up-questions-fragment.md" />
-
-* **To get full marks for follow-up questions, you only need to submit at least 75% of them.**<br>
-  %%The bar is set lower than 100% as a cushion against you forgetting to answer a few follow-up questions before moving to the next question.%%
 * Here is an example question. The answer is `a` and the answer to the follow-up question can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
 
@@ -110,27 +104,26 @@ The final exam has two types of questions:
 
 Choose the incorrect statement.
 
-<span class="text-info">[Follow-up question: Why is it incorrect?]</span>
 - ( ) a. Software engineering projects always use OOP.
 - ( ) b. Some software engineering projects can be large and complex.
 - ( ) c. Some software engineering projects can go on for many years.
 - ( ) d. Software projects can involve people who are not software engineers.
 - ( ) e. Software engineering projects can deliver the end product incrementally.
 
+Follow-up question: Why is it incorrect? ______
+
 </panel>
 <p/>
 </div>
 
 * Here is another example question. Note the ==[**SELECT ALL**]== which tells you that this question can have multiple correoct answers and you need to select all of them i.e., it is a checkbox type question<br>
-The answer is `C`, `D` (answer to teh follow-up question: `A` and `B`).
+The answer is `C`, `D`.
 
 <div class="indented-level2">
 
 <panel header="Sample question 2" expanded >
 
 ==[**SELECT ALL**]== Which of these are UML diagrams depicting behavior (as opposed to structure)?.
-
-<span class="text-info">[Follow-up question: Which two are closely related to each other?]</span>
 
 A. Class diagrams.<br>
 B. Object diagrams.<br>
@@ -153,6 +146,7 @@ E. Gantt charts.
 * **Bring the following when you come to the exam:**
   * **1-2 sheets of A4 size paper**, for drawing diagrams.
   * Recommended: Something with a hard flat surface (e.g., a hardcover book) to put underneath the papers when drawing the diagrams. This is in case the arm rest of the exam venue chairs doesn't have enough space for both your laptop and drawing work.
+* You are not allowed to use IDEs or software that can generate diagrams from code.
 * At the _end_ of the exam (i.e., after all three parts are over), you need to submit the diagrams.
 * These diagrams will not be graded directly. Instead, you will use them when answering part 3 of the exam.<br>
   However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.
@@ -175,7 +169,7 @@ E. Gantt charts.
 
 * There will be an exam briefing in the penultimate lecture. It will include a minimal mock exam, just to help you understand the structure.
 * You will be given a practice exam paper (at least half the size of the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
-* Your score and answers for the mock/practice exams can be retrieved by visiting [https://examsoft.com](https://apac.examsoft.com/GKWeb/login/NUS).
+* Answers for the mock/practice exams will be released on Canvas/handouts.
 
 </div>
 
