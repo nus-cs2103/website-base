@@ -1,6 +1,6 @@
 {
   "baseUrl": "/website",
-  "titlePrefix": "CS2103/T",
+  "titlePrefix": "TIC2002",
   "style": {
     "codeTheme": "light",
     "codeLineNumbers": true
@@ -21,7 +21,9 @@
   "pages": [
     {"src": "index.md",
       "searchable": "no"},
-    {"glob": "admin/*.md"},
+    {"glob": "admin/index.md"},
+    {"glob": "admin/mid-semester-survey-results.md",
+      "searchable":  "no"},
     {"glob": "schedule/index.md",
       "searchable": "no"},
     {"glob": "schedule/timeline.md",
@@ -30,13 +32,8 @@
       "searchable": "no"},
     {"glob": "schedule/**/index.md",
       "searchable": "no"},
-    {"glob": "schedule/**/project.md",
-      "searchable": "no"},
     {"glob": "schedule/**/topics.md",
       "searchable": "no"},
-    {"glob": "schedule/**/tutorial.md",
-      "searchable": "no"},
-    {"glob": "coding-standards/**/*.mbd"},
     {"glob": "book/about/acknowledgements.md"},
     {"glob": "se-book-adapted/index.md"},
     {"glob": "se-book-adapted/chapters/*.md"},
@@ -65,20 +62,20 @@
   "plugins": ["filterTags", "algolia", "codeBlockCopyButtons"],
   "pluginsContext": {
     "filterTags" : {
-      "tags": ["m--cs2103"]
+      "tags": ["m--tic2002"]
     },
     "algolia": {
       "apiKey": "3e2fd3c3b12a363309307794dce54969",
       "appId": "3DU4XTBX4T",
       "indexName": "nus-tic-cs",
       "searchParameters": {
-        "facetFilters": [["site:nus-cs2103-ay2223s1.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
+        "facetFilters": [["site:nus-tic2002-ay2324s1.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
       }
     }
   },
     "deploy": {
     "message": "Site Update.",
-    "repo": "https://github.com/nus-cs2103-AY2223S1/website.git",
+    "repo": "https://github.com/nus-tic2002-AY2324S1/website.git",
     "branch": "gh-pages"
   }
 }
