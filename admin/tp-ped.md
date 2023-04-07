@@ -4,9 +4,9 @@
 {% call show_admin_page("tp-pe") %}
 <div id="main">
 
-### <div class="text-white bg-success p-1">tP: Practical Exam (PE)</div>
-<div id="tp-practicalexam">
-<include src="tp-pe-fragment.md" />
+### <div class="text-white bg-primary p-1">tP: Practical Exam Dry Run (PE-D)</div>
+<div id="tp-practicalexam-dry-run">
+<include src="tp-ped-fragment.md" />
 </div>
 
 </div>

@@ -33,7 +33,6 @@
   * **How** does it help? Give an overview of how the product's features help to solve the target problem for the target user
 
 <div class="indented-level2">
-<box>
 
 Here is an example:
 ```{.no-line-numbers}
@@ -46,7 +45,6 @@ command to record the start of the sitting time, ... The app shows the length of
 sitting periods, and alerts the user if ...
 ...
 ```
-</box>
 </div>
 
 * There is no need to introduce team members or explain who did what. %%Reason: to save time.%%

@@ -34,13 +34,22 @@
   * **No need to give a long list of test cases** including all possible variations. It is upto the tester to come up with those variations.
   * Information in this appendix should _complement_ the UG. ==Minimize repeating information that are already mentioned in the UG.==
   * **Inaccurate instructions will be considered bugs**.
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
-* {{ icon_important_big_red }} **We highly recommend adding an appendix named `Effort`** that evaluators can use to estimate the total project effort.
+* {{ icon_important_big_red }} **We highly recommend adding an appendix named _Appendix: Effort_** that evaluators can use to estimate the total project effort.
   * Keep it brief (~1 page)
   * Explain the difficulty level, challenges faced, effort required, and achievements of the project.
   * If a significant part (e.g., more than 5%) of the effort was saved through reuse, mention what you reused and how it affected the effort %%e.g., the feature X is implemented using library Foo -- our work on adapting Foo to our product is contained in class `FooAdapter.java`%%.
   * Use AB3 as a reference point %%e.g., you can explain that while AB3 deals with only one entity type, your project was harder because it deals with multiple entity types%%.
+</div>
+<div tags="m--cs2103" id="planned-enhancements-info">
+
+* {{ icon_important_big_red }} **We highly recommend adding an appendix named _Planned Enhancements_**, listing fixes you propose to add in the near future, to counter known feature flaws.
+  * This section may contain up to `team_size x 2` enhancements %%e.g., a 5-person team can have up to 10 enhancements%%.
+  * Each enhancement should be specific, describing the feature flaw it addresses and how exactly the feature will be changed, providing sample UIs/inputs/outputs if applicable. e.g.,
+    > 1. The current error message for a failed contact deletion `Operation failed!` is too general. We plan to make the error message also mention which action failed and the reason for the failure: `The contact Amy Lee could not be deleted as it is referenced by another contact Ben Chua`.
+  * Each enhancement should be a tweak to an existing feature, and should not be a new feature altogether.
+  * `type.FeatureFlaw` bug reports matching an item in this section ==will not be penalized== for the team, and testers will not earn credit for reporting them either. However, testers can report `type.FeatureFlaw` bugs on the enhancements listed in this section, if they think the planned feature tweak itself is flawed/inadequate.
 </div>
 
 ##### DG Tips
@@ -63,7 +72,7 @@
   Ways to simplify diagrams:
   * **Omit less important details**. Examples:
     * a class diagram can omit minor utility classes, private/unimportant members; some less-important associations can be shown as attributes instead.
-    * a sequence diagram can omit less important interactions, self-calls. 
+    * a sequence diagram can omit less important interactions, self-calls.
   * **Omit repetitive details** e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete `*Command` classes using a placeholder `XYZCommand`).
   * **Limit the scope of a diagram.** Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it.<span tags="m--cs2103 m--tic4002"> In particular, avoid showing lower-level details of multiple components in the same diagram unless strictly necessary e.g., note how the <trigger trigger="click" for="modal:ipWeek10-deleteSd">this sequence diagram</trigger> shows only the detailed interactions within the Logic component i.e., does not show detailed interactions within the model component.</span>
   * **Break diagrams into smaller fragments** when possible.
@@ -97,7 +106,7 @@
 
 <modal large header="Diagram resizing: a negative example" id="modal:ipWeek10-diagramSizeNegative">
 
-In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br> 
+In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br>
 <img src="images/diagramSizeNegativeExample.png" width="200"/><br>
 It will look more 'polished' if the two text sizes match.
 </modal>

@@ -30,14 +30,9 @@ While the info below provides you what to do and what not to do in {{ version_fi
 {{ icon_x_red }} adding/changing features<br>
 {{ icon_x_red }} any UI changes (even purely cosmetic enhancements e.g., alignments, style changes are not allowed).
 
-**Using 'Planned Enhancements' DG section to counter known feature flaws:** Given you are not allowed to fix feature flaws in {{ version_final }}, we allow you to optionally add a section named `Appendix: Planned Enhancements` to the end of the DG, containing an itemized list of fixes you propose to add in the near future, to counter known feature flaws.
+**Using 'Planned Enhancements' DG section to counter known feature flaws:** Given you are not allowed to fix feature flaws in {{ version_final }}, we allow you to optionally add a section named `Appendix: Planned Enhancements` to the end of the DG. More details in the panel below:
 
-* This section may contain up to `team_size x 2` enhancements %%e.g., a 5-person team can have up to 10 enhancements%%.
-* Each enhancement should be specific, describing the feature flaw it addresses and how exactly the feature will be changed, providing sample UIs/inputs/outputs if applicable. e.g.,
-  > 1. The current error message for a failed contact deletion `Operation failed!` is too general. We plan to make the error message also mention which action failed and the reason for the failure: `The contact Amy Lee could not be deleted as it is referenced by another contact Ben Chua`.
-* Each enhancement should be a tweak to an existing feature, and should not be a new feature altogether.
-* `type.FeatureFlaw` bug reports matching an item in this section will not be penalized for the team, and testers will not earn credit for reporting them either. However, testers can report `type.FeatureFlaw` bugs on the enhancements listed in this section, if they think the planned feature tweak itself is flawed/inadequate.
-
+{{ embed_topic("tp-deliverables-dg-fragment.md#planned-enhancements-info", "Admin " + icon_embedding + " tP → Deliverables → DG (extract): Planned Enhancements", "3", indent="1") }}
 
 **FAQs on what is allowed during the feature freeze:**
 
@@ -52,7 +47,7 @@ If will be considered a feature change (i.e., not allowed to do) if,
 
 <panel type="seamless" header="**Q2:** Will we be penalized for feature flaws not fixed during the feature freeze?" minimal>
 
-**A:** Feature flaws will not be penalized In the following cases:
+**A:** Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some feature flaws as this stage is natural. Hence, feature flaws will not be penalized In the following cases:
 
 * If the feature flaw will be fixed by an item you listed in the _Planned enhancements_ DG section (as mentioned above).
 * After the feature flaw is reported during the PE, you successfully argued it as 'not in scope' (i.e., fixing that flaw is of lower priority than the work done already, and hence it is justifiable to be postponed to a future version). Reporters of such bugs will earn partial credit.
@@ -1312,7 +1307,7 @@ Also see:
 
 * =={{ icon_important_big_red }} See info in the panel below:==
 
-{{ embed_topic("tp-pe.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="1") }}
+{{ embed_topic("tp-ped.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_alpha_test">{{ icon_individual }} Alpha-test the product</span>
@@ -1494,11 +1489,11 @@ Not applicable this semester
   * Even a one-second delay is considered late, irrespective of the reason.
   * For submissions done via Canvas, the submission time is the timestamp shown by Canvas.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
-  * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.{% endif %}
+  * The whole team is penalized for problems in team submissions %%e.g., a -1 penalty for a team submission will be a -1 penalty for each team member%%.<br>
+    Only the respective student is penalized for problems in individual submissions.{% endif %}
 * **Submit via the Canvas assignment we have set up**.
   {% if has_t %}{{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.{% endif %}
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
-  * For pdf submissions, ensure the file is usable and hyperlinks in the file are correct. Problems in documents are considered bugs too %%e.g. broken links, outdated diagrams/instructions etc.%%.
 * **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.
   * You can update issues/milestones/PRs even during the _code-freeze_ period.{% if cs2113 or cs2103 %}
   * [{{ module }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a code-freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.{% endif %}
@@ -1519,6 +1514,8 @@ Not applicable this semester
 
 **The PDF versions of the UG/DG/PPP should be _usable_** by the target readers, even if not as neat/optimized as the Web versions. For example, margins and page breaks need not be optimized but they should not hinder the reader either. Assume some will occasionally choose the PDF version over the Web version %%e.g, for printing, offline viewing, annotating etc.%%
 
+**PE uses the PDF versions of UG/DG, not the Web version!**{.text-danger} Any problems in those PDF files (e.g., broken links, messed up formatting) can be reported as bugs.
+
 **Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
 
 **Try the PDF conversion early**. If you do it at the last minute, you may not have time to fix any problems in the generated PDF files (such problems are more common than you think).
@@ -1527,14 +1524,14 @@ Not applicable this semester
 
 <box type="tip" seamless>
 
-**Side benefits for early submissions:**{.text-success} Given that using buffers to reduce the risk of deadline overruns is a learning outcome of this module, we strongly encourage setting an internal submission deadline a few hours earlier than the actual deadline. As an incentive, we plan to perform some checks on early submissions and inform you if we found issues with your submission %%(e.g., incorrect file name)%%, thus giving you a chance to fix them before the deadline and avoid a penalty for it.
+**Side benefits for early submissions:**{.text-success} Given that _using buffers to reduce the risk of deadline overruns_ is a learning outcome of this module, we strongly encourage setting an internal submission deadline a few hours earlier than the actual deadline. As an incentive, we plan to perform some checks on early submissions and inform you if we found issues with your submission %%(e.g., incorrect file name/format)%%, thus giving you a chance to fix them before the deadline and avoid a penalty for it.
 
 </box>
 
 <box type="info" seamless>
 
 **The icon {{ icon_team }} indicates team submissions.** Only one person need to submit on behalf of the team but we recommend that others help verify the submission is in order <br>
-==We will not accept requests to limit late penalties of team submissions to one person== even if the delay was one person's fault. That is, the responsibility (and the penalty) for team submissions are to be shared by the whole team rather than burden one person with it.
+==We will not entertain requests to limit late penalties of team submissions to one person== even if the delay was one person's fault. That is, the responsibility (and the penalty) for team submissions are to be shared by the whole team rather than burden one person with it.
 
 </box>
 </div>
@@ -1612,15 +1609,10 @@ Not applicable this semester
 <span id="heading_prepare_for_PE">{{ icon_individual }} Prepare for the practical exam</span>
 <div id="desc_prepare_for_PE">
 
-<div class="indented-level2">
-
-<include src="tp-pe-fragment.md#mode-choice" />
-</div>
-
-{{ embed_topic("tp-pe-fragment.md#pe-overview", "Admin " + icon_embedding + " tP → **PE Overview**", "3", indent="2", type="primary") }}
+{{ embed_topic("tp-pe-fragment.md#pe-overview", "Admin " + icon_embedding + " tP → **PE Overview**", "3", indent="2", type="success") }}
 
 <p/>
-{{ embed_topic("tp-pe-fragment.md#pe-preparation", "Admin " + icon_embedding + " tP → **PE Preparation**", "3", indent="2", type="primary") }}
+{{ embed_topic("tp-pe-fragment.md#pe-preparation", "Admin " + icon_embedding + " tP → **PE Preparation, Restrictions**", "3", indent="2", type="success") }}
 
 * After reading the above 2, we ==strongly recommend you read ahead the info given in the item 6 below== as well, to know in advance what will happen during the PE itself.
 </div>
@@ -1631,7 +1623,7 @@ Not applicable this semester
 * Ensure you read the instructions on **PE Preparation** (given in item 5 above)
 * Attend the practical test, to be done during the lecture.
 
-{{ embed_topic("tp-pe-fragment.md#pe-phases", "Admin " + icon_embedding + " tP → **PE Phases**", "3", indent="2", type="primary") }}
+{{ embed_topic("tp-pe-fragment.md#pe-phases", "Admin " + icon_embedding + " tP → **PE Phases**", "3", indent="1", type="success") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_makeup_PE">{{ icon_individual }} %%[if needed] Attend the makeup practical exam%%</span>

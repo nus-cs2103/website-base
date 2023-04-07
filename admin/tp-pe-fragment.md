@@ -1,21 +1,12 @@
 {% from "common/macros.njk" import embed_topic, get_date with context %}
 
-<div id="mode-choice">
-
-<box type="important" light>
-
-<span class="text-danger">****Remote or F2F?****</span> You can choose between the following two modes:
-
-1. **Remote mode**: This is the ==recommended mode==. Proctored via Zoom. You'll need to join the Zoom session from a quiet place (i.e., conducive to an exam) at which you can set up a Zoom device for proctoring.
-1. **F2F mode**: Attend the PE at the lecture venue (iCube auditorium). Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of WiFi speed issues and GitHub throttling issues).
-
-We'll use a Canvas survey to collect your preferred mode.
-</box>
-</div>
-
 #### <span class="badge bg-success">PE</span> <span class="text-success">Overview</span>
 
 <div id="pe-overview">
+
+* **PE is not entirely a pleasant experience, but is an essential component** that aims to increase the quality of the tP work, and the rigor of tP grading.
+<div class="indented-level1">
+<panel header="more details on the motivation and objectives..." minimized>
 
 * **The upfront objective of the PE is to increase the rigor of project grading.** Assessing most aspects of the project involves an element subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
 * **PE mainly evaluates your testing skills**, done as the following two-parts:
@@ -29,6 +20,17 @@ We'll use a Canvas survey to collect your preferred mode.
 * **You are not taking marks from someone else** -- at least, don't think of it that way. The point of contention is 'is this really a bug?' which is independent of the people involved. Furthermore, the reward for detecting a bug and the penalty for having a bug in your code are calculated independently.
 * **Still, _none of us_ likes it when others point out problems of our work**. Some of us don't even like pointing out problems of others' work. But ==we just have to learn not to take bug reports personally==. Another important intended outcome is to be able to report bugs in a way that doesn't feel like you are _attacking_ or trying to _sabotage_ the dev team.
 * **PE also evaluates aspects other than testing** e.g., your product evaluation skills, effort estimation skills etc. When evaluating those aspects in particular, they are ==not graded solely based on peer ratings==. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutors' grades with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
+</panel><p/>
+</div>
+
+* **The PE is divided into four phases**:
+  * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D. Done during week 13 lecture, and further divided into parts I, II, and III.</span>
+    * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to report bugs in the product
+    * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to report bugs in the UG and DG only
+    * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
+  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sat-Tue after PE </span>
+  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Wed-Thu after PE</span>
+  * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
 
 * **Grading**:
   * Your performance in the practical exam will affect your final grade and your peers', as explained in [_Admin: Project Grading_]({{ baseUrl }}/admin/tp-grading.html) section.
@@ -39,39 +41,19 @@ We'll use a Canvas survey to collect your preferred mode.
 
 </div>
 
+------------------------------------------------------------------------------------ {.thick-2 .border-success}
+
 <div id="pe-preparation">
 
-#### <span class="badge bg-success">PE</span> <span class="text-success">Preparation</span>
+#### <span class="badge bg-success">PE</span> <span class="text-success">Preparation, Restrictions</span>
 
-* It's similar to,
-<div class="indented-level2">
-
-<panel type="primary" header="PE-D Preparation" minimized>
-
-<include src="tp-testing-fragment.md#testingPreparations" var-pe_active_tab="1"/>
-</panel>
-</div>
-<p/>
-
-* In addition, it is recommended that you read the guidelines the dev team will follow when responding to your bug reports later, given in the panel below.
-<div class="indented-level2">
-<panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" minimized>
-
-<include src="tp-pe-bug-triaging-guidelines-fragment.md"/>
-</panel>
-</div>
-<p/>
-
-</div>
-<div id="pe-phases">
-
-#### <span class="badge bg-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
+* **Mode: you can choose between remote or F2F** (we'll use a Canvas survey to collect your preferred mode):
+  * **Remote mode**: This is the ==recommended mode==. Proctored via Zoom. You'll need to join the Zoom session from a quiet place (i.e., conducive to an exam) at which you can set up a Zoom device for proctoring.
+  * **F2F mode**: Attend the PE at the lecture venue (iCube auditorium). Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of WiFi speed issues and GitHub throttling issues).
 
 * **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 7, format=format_normal, time="") | trim }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 6pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}
 
-<box type="important" icon=":fas-exclamation-circle:" seamless>
-
-**PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.<br>
+* **PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.<br>
   Note: **Those opting for the F2F mode can ignore any Zoom-related points** in the instructions below.
 
 * **Proctoring will be done via Zoom.** No admission if the following requirements are not met.{% if cs2103 %}
@@ -102,6 +84,16 @@ We'll use a Canvas survey to collect your preferred mode.
 * **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.**{% if cs2103%} Zoom sessions are invigilated by tutors, not the prof.{% endif %}
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
+* **Bug reporting will be done using CATcher**, similar to,
+<div class="indented-level1">
+
+<panel type="primary" header="PE-D Preparation" minimized>
+
+<include src="tp-testing-fragment.md#testingPreparations" var-pe_active_tab="1"/>
+</panel>
+</div>
+<p/>
+
 * **During the bug reporting periods (i.e., <span class="badge bg-success">PE Phase 1 - part I</span> and <span class="badge bg-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** If you need to visit a different website or use another software, please ask for permission first.
   * Website: Canvas
   * Website/software: MSTeams (only to communicate with the prof of Tech support)
@@ -112,8 +104,25 @@ We'll use a Canvas survey to collect your preferred mode.
 * ==**Do not visit GitHub in** <span class="badge bg-success">PE Phase 1 - part I</span>== unless you are going there to download a file the team has provided and is needed for testing. You may visit GitHub during part II and part III.
 * **Do not use any other software running** in the background e.g., Telegram chat.
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
-</box>
+* **Recommended to read the guidelines the dev team will follow when responding to your bug reports later**, given in the panel below. This will help decide what kind of bugs to report.
+<div class="indented-level1">
+<panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" minimized>
 
+<include src="tp-pe-bug-triaging-guidelines-fragment.md"/>
+</panel>
+</div>
+<p/>
+</div>
+
+------------------------------------------------------------------------------------ {.thick-2 .border-success}
+
+<div id="pe-phases">
+
+#### <span class="badge bg-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
+
+<include src="tp-pe-fragment.md#pe-p1-desc" inline /><p/>
+
+-------------------------------------------------------------------------{.border-success}
 
 ##### <span class="badge bg-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
 
@@ -151,6 +160,8 @@ When the invigilator announces an identity check,
 <span class="text-danger">Please comply quickly</span> as non-compliance can delay the exam for everyone. This is expected to take no more than 15 seconds.
 </box>
 
+-------------------------------------------------------------------------{.border-success}
+
 ##### <span class="badge bg-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
 
 * **This slot is for reporting documentation bugs only**. You may report bugs related to the UG and the DG.<br>
@@ -164,15 +175,15 @@ When the invigilator announces an identity check,
 
 * **You may visit the team's project on GitHub during this portion**, for the purpose of verifying the accuracy of documentation %%e.g., to check if a diagram matches the code%%. You are also allowed to download and open the team's code in a code editor.
 
+-------------------------------------------------------------------------{.border-success}
+
 ##### <span class="badge bg-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
 
 * To be submitted via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.
 * The TEAMMATES email containing the submission link should have reached you the day before the PE. If you didn't receive it by then, you can request it to be resent from [this page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery).
 
 <div class="indented">
-<box>
-
-##### **Important questions included in the evaluation:**
+<panel header="##### Important questions included in the evaluation" peek>
 
 <div id="projectGrading-featureFit-instructions">
 
@@ -239,14 +250,17 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 {{ icon_green_Q }} **[Optional] Concerns or any noteworthy observations about the product you evaluated**
 
-</box>
+</panel>
+<p/>
 </div>
+
+------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
 #### <span class="badge bg-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
 
-==**Deadline:** {{ get_date(date_w13_start, 11 if S == 2 else 10) }}==
+<include src="tp-pe-fragment.md#pe-p2-desc" inline /><p/>
 
-This phase is for you to respond to the bug reports you received.
+==**Deadline:** {{ get_date(date_w13_start, 11 if S == 2 else 10) }}==
 
 <box type="important" >
 
@@ -389,9 +403,9 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 * **If you need the teaching team's inputs when deciding on a bug** %%(e.g., if you are not sure if the UML notation is correct)%%, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).
 
-<div class="indented-level2" id="additionalGuidelinesForBugTriaging">
+<div class="indented-level1" id="additionalGuidelinesForBugTriaging">
 
-<panel type="info" header="##### Guidelines for bug triaging" expanded>
+<panel type="info" header="##### Guidelines for bug triaging" peek>
 <include src="tp-pe-bug-triaging-guidelines-fragment.md" />
 </panel>
 <p/>
@@ -422,9 +436,13 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 * You can also refer to the below guidelines:
 
-{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
+{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=1) }}
+
+------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
 #### <span class="badge bg-success">PE</span> <span class="text-success">Phase 3: Tester Response</span>
+
+<include src="tp-pe-fragment.md#pe-p3-desc" inline /><p/>
 
 **Start:** Within 1 day after Phase 2 ends.<br>
 
@@ -454,9 +472,9 @@ However, ==if the dev team's argument is not too far from 'reasonable', **it may
 * **If you would like to revise your own initial type/severity** in response to the team's inputs, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).
 * You can also refer to the below guidelines:
 
-{{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", 2, indent=2) }}
+{{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", 2, indent=1) }}
 
-{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=2) }}
+{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=1) }}
 
 
 * If you do not respond to a dev response, we'll assume that you agree with it.
@@ -491,9 +509,10 @@ However, ==if the dev team's argument is not too far from 'reasonable', **it may
 
 <p/>
 
+------------------------------------------------------------------------------------ {.thick-2 .border-success}
+
 #### <span class="badge bg-success">PE</span> <span class="text-success">Phase 4: Tutor Moderation</span>
 
-* In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome.
-* In the unlikely case we need your inputs, a tutor will contact you.
+<include src="tp-pe-fragment.md#pe-p4-desc" inline />
 
 </div>
