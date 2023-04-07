@@ -1,6 +1,6 @@
-### CS2103 Website
+### TIC2002 Website
 
-[Live Website (redirected)](http://www.comp.nus.edu.sg/~cs2103)
+[Live Website (redirected)](http://www.comp.nus.edu.sg/~tic2002)
 
 ## Setting up
 
