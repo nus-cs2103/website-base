@@ -38,20 +38,12 @@
 {% endif %}
 {% endfor %}
   </dropdown>
-  <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
-  <dropdown header="**Admin Info**" class="nav-link">
-{{ get_admin_menu_items() }}
+  <dropdown header="**Textbook**" class="nav-link">
+    <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+    <li><a href="{{baseUrl}}/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
   </dropdown>
-  <dropdown tags="m--cs2103 m--cs2113" header="**Dashboards**" class="nav-link">
-  <li><a href="{{ url_participation_dashboard }}" class="dropdown-item text-success" target="_blank"><md>:fas-trophy: **Participation** dashboard</md></a></li>
-  <li><a href="{{ url_course_gihub_io }}/dashboards/contents/forum-activities.html" class="dropdown-item" target="_blank"><md>:octicon-comment: **Forum** Dashboard</md></a></li>
-  <hr>
-  <md>**&nbsp;iP dashboards:**</md>
-  {{ ip_dashboard_links() }}
-  <hr>
-  <md>**&nbsp;tP dashboards:**</md>
-  {{ tp_dashboard_links() }}
-  </dropdown>
+  <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
+  <li tags="m--cs2103 m--cs2113"><a href="{{ url_dashboards }}" target="_blank" class="nav-link" highlight-on="none"><md>**Dashboards**</md></a></li>
   <dropdown tags="m--cs2103 m--cs2113" header="**Project Links**" class="nav-link">
     <md>**&nbsp;Individual Project (iP):**</md>
     <li><a href="{{baseUrl}}/admin/ip-overview.html" class="dropdown-item"><md>{{ icon_project }} Individual Project Info</md></a></li>
@@ -79,8 +71,6 @@
     {% endif %}{% if cs2103 %}<li><a href="{{ baseUrl }}/git-trail/index.html" class="dropdown-item"><md>:fas-route: Git Learning Trail</md></a></li>
     {% endif %}<li tags="m--cs2103 m--cs2113 m--tic2002"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
-    <li tags="m--tic2002"><a href="{{url_ip_dashboard}}" target="_blank" class="dropdown-item"><md>:fas-chart-area: Code Dashboard</md></a></li>
-    <li tags="m--tic2002"><a href="{{url_course_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke repo</md></a></li>
   </dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
