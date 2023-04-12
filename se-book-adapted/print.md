@@ -3,6 +3,7 @@ title: "Software Engineering for Self-Directed Learners [Printable Version for {
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
+<link rel="stylesheet" href="{{baseUrl}}/se-book-adapted/css/tee3201.css">
 <link rel="stylesheet" href="{{baseUrl}}/book/css/print.css">
 
 <div class="website-content">
