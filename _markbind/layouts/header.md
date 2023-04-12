@@ -38,6 +38,7 @@
 {% endif %}
 {% endfor %}
   </dropdown>
+<<<<<<< HEAD
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
 {% if tic2002 %}
   <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
@@ -55,7 +56,12 @@
   <hr>
   <md>**&nbsp;tP dashboards:**</md>
   {{ tp_dashboard_links() }}
+  <dropdown header="**Textbook**" class="nav-link">
+    <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+    <li><a href="{{baseUrl}}/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
   </dropdown>
+  <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
+  <li tags="m--cs2103 m--cs2113"><a href="{{ url_dashboards }}" target="_blank" class="nav-link" highlight-on="none"><md>**Dashboards**</md></a></li>
   <dropdown tags="m--cs2103 m--cs2113" header="**Project Links**" class="nav-link">
     <md>**&nbsp;Individual Project (iP):**</md>
     <li><a href="{{baseUrl}}/admin/ip-overview.html" class="dropdown-item"><md>{{ icon_project }} Individual Project Info</md></a></li>
@@ -85,10 +91,6 @@
     {% endif %}<li tags="m--tic2002"><a href="{{ url_participation_dashboard }}" class="dropdown-item text-success" target="_blank"><md>:fas-trophy: **Participation** dashboard</md></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
-    <li tags="m--cs2103"><a href="{{ baseUrl }}/admin/uml-reference-sheet.md" target="_blank" class="dropdown-item"><md>:fas-diagram-project: UML Reference Sheet</md></a></li>
-    <li tags="m--cs2103"><a href="{{ baseUrl }}/admin/exam-reference-sheet.md" target="_blank" class="dropdown-item"><md>:fas-file-lines: Exam Reference Sheet</md></a></li>
-    <li tags="m--tic2002"><a href="{{url_ip_dashboard}}" target="_blank" class="dropdown-item"><md>:fas-chart-area: Code Dashboard</md></a></li>
-    <li tags="m--tic2002"><a href="{{url_course_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke repo</md></a></li>
   </dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
