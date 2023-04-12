@@ -4,13 +4,11 @@
 
 {% set topics = [
   {heading: "Software Engineering", chapters: [chapters.softwareEngineering]},
-  {heading: "Programming Paradigms", chapters: [chapters.oop]},
   {heading: "Requirements", chapters: [chapters.requirements, chapters.gatheringRequirements, chapters.specifyingRequirements]},
-  {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.architecture, chapters.designPatterns, chapters.designApproaches]},
-  {heading: "Implementation", chapters: [chapters.ides, chapters.codeQuality, chapters.refactoring, chapters.documentation, chapters.errorHandling, chapters.integration, chapters.reuse]},
-  {heading: "Quality Assurance", chapters: [chapters.qualityAssurance, chapters.testing, chapters.testCaseDesign]},
-  {heading: "Project Management", chapters: [chapters.processModels, chapters.projectPlanning, chapters.teamwork]},
-  {heading: "Principles", chapters: [chapters.principles]}
+  {heading: "Design", chapters: [chapters.design, chapters.designFundamentals, chapters.modeling, chapters.oop]},
+  {heading: "Implementation", chapters: [ chapters.errorHandling, chapters.ides, chapters.integration, chapters.codeQuality, chapters.refactoring, chapters.reuse, chapters.documentation]},
+  {heading: "Quality Assurance", chapters: [chapters.testing, chapters.testCaseDesign, chapters.qualityAssurance]},
+  {heading: "Project Management", chapters: [chapters.projectPlanning, chapters.teamwork, chapters.processModels]}
   ]
 %}
 
@@ -36,10 +34,7 @@
 
 {% set combinedExercises = [
   "chooseCorrectStatementAboutRequirements",
-  "correctStatementAboutClassObjectSequenceDiagrams",
-  "usefulModelToDescribeWorkflow",
-  "oddStatementOnProjMgtTools",
-  "correctStatementAboutPrinciplesAndPatterns"
+  "usefulModelToDescribeWorkflow"
 ] %}
 
 
