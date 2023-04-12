@@ -480,7 +480,7 @@
  'CS2103-W17-4': 'AutoM8',
  'CS2103T-F12-1': 'Docédex',
  'CS2103T-F12-2': 'CoDoc',
- 'CS2103T-F12-3': 'Address Book Neo',
+ 'CS2103T-F12-3': 'NeoBook',
  'CS2103T-F12-4': 'Ultron',
  'CS2103T-T09-1': 'PowerConnect',
  'CS2103T-T09-2': 'Where Got Time',

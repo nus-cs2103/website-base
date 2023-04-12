@@ -86,9 +86,12 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 <tab header="PE (at **{{ version_final }}**)">
 
 * Download the zip file from the given location (to be given to you at least a few hours before the PE), if you haven't done that already.
-* Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via Canvas gradebook). This will give you another zip file with the name suffix `_inner.zip`.
-* Unzip the inner zip file. This will give you the JAR file and other PDF files needed for the PE. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
+* The file is zipped using a two-part password.
+  * We will email you the second part in advance, via email (it's unique to each student). Keep it safe, and have it ready at the start of the PE.
+  * At the start of the PE, we'll give you the first part of the password (common to the whole class). Use combined password to unzip the file, which should give you another zip file with the name suffix `_inner.zip`.
+  * Unzip that second zip file normally (no password required). That will give you a folder containing the JAR file to test and other PDF files needed for the PE. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
   Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%
+  * You can try above steps using the [this sample zip file](files/JohnDoe.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).
 
 </tab>
 </tabs>
@@ -101,8 +104,8 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 * Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
 * Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
-  {{ icon_info }} If the JAR file name has spaces in it, remember to surround it with double quotes.<br>
-  e.g., `java -jar "Name With Spaces.jar"`<br>
+  {{ icon_info }} We strongly recommend surrounding the jar filename with double quotes, in case special characters in the filename causes the `java -jar` command to break.<br>
+  e.g., `java -jar "[{{ module }}-F18-1][Task Pro].jar"`<br>
   {{ icon_info }} Windows users: use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.{% if cs2103 %}<br>
   {{ icon_info }} Linux users: If the JAR fails with an error labelled `Gdk-CRITICAL` (happens in Wayland display servers), try running it using `GDK_BACKEND=x11 java -jar jar_file_name.jar` command instead.{% endif %}
 
@@ -135,7 +138,9 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 <tab header="PE (at **{{ version_final }}**)">
 
 * Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.{% if cs2103 %}
-* The DG appendix named _Planned Enhancements_ (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are known and should not be reported as bugs. However, you can report `type.FeatureFlaws` bugs if you think these enhancements themselves are flawed/inadequate.
+* The DG appendix named _Planned Enhancements_ (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
+  However, you can report `type.FeatureFlaws` bugs if you think these enhancements themselves are flawed/inadequate.<br/>
+  You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.
 {% endif %}
 * As before, do both ==_system testing_ and _acceptance testing_== but give priority to system testing as those bugs can earn you more credit.
 * {{ icon_tip }} Be careful when copying commands from the UG (PDF version) to the software as some PDF viewers can affect the pasted text. If that happens, you might want to open the UG in a different PDF viewer.

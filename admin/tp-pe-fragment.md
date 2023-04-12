@@ -48,8 +48,10 @@
 #### <span class="badge bg-success">PE</span> <span class="text-success">Preparation, Restrictions</span>
 
 * **Mode: you can choose between remote or F2F** (we'll use a Canvas survey to collect your preferred mode):
-  * **Remote mode**: This is the ==recommended mode==. Proctored via Zoom. You'll need to join the Zoom session from a quiet place (i.e., conducive to an exam) at which you can set up a Zoom device for proctoring.
-  * **F2F mode**: Attend the PE at the lecture venue (iCube auditorium). Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of WiFi speed issues and GitHub throttling issues).
+  * **Remote mode**: This is the ==recommended mode==. Proctored via Zoom. You'll need to join the Zoom session from a quiet place (i.e., conducive to an exam) at which you can set up a Zoom device for proctoring.<br>
+    Choose this mode only if you are able to comply with the Zoom proctoring requirements given further down.
+  * **F2F mode**: Attend the PE at the lecture venue (iCube auditorium).<br>
+    Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of WiFi speed issues and GitHub throttling issues).
 
 * **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 7, format=format_normal, time="") | trim }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 6pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}
 
@@ -77,7 +79,7 @@
   **If on F2F mode:** Arrive at lecture venue ([ICube Auditorium](https://nusmods.com/venues/I3-AUD)) around 10-15 minutes early. If you haven't been to this venue before, plan ahead as the venue is located away from the main SoC area.{% endif %}
 * **In case of Zoom outage**, we'll fall back on MS Teams (MST).{% if cs2103 %} Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).{% elseif cs2113 %} Make sure you have MST running; proctoring will be done via individual tutorial MST teams that we have been using.{% endif %}
 * **Recording the screen is not required.**
-* **You are allowed to use head/ear phones.** But no talking allowed (unless you are talking to the invigilator) -- so, no talking/singing to your self as this can be mistaken for a rule violation.
+* **You are allowed to use head/ear phones.** But no talking allowed (unless you are talking to the invigilator) -- so, no talking/singing to yourself as this can be mistaken for a rule violation.
 * **==Only one screen== is allowed** (for both remote mode and F2F mode). If you want to use the secondary monitor, you should switch off the primary monitor. The screen being used should be fully visible in the Zoom camera view.<br>
   If using a second device for Zoom proctoring, the screen of that device should only be used for Zoom.
 * **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.

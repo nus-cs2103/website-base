@@ -20,7 +20,7 @@ While the info below provides you what to do and what not to do in {{ version_fi
 
 **Allowed in the {{ version_final }} milestone:**{.text-success}
 
-{{ icon_tick_green }} fixing bugs (but not _feature flaws_)<br>
+{{ icon_tick_green }} fixing bugs (but not _feature flaws_) -- we use a very restrictive definition of 'bugs' for the feature freeze; to avoid violating the feature freeze unintentionally, be sure to check the FAQs below before you do any fixes/tweaks.<br>
 {{ icon_tick_green }} improving documentation<br>
 {{ icon_tick_green }} improving code quality<br>
 {{ icon_tick_green }} improving tests<br>
@@ -68,7 +68,7 @@ If the behavior difference is because some parts of the feature is not implement
 
 <panel type="seamless" header="**Q5:** Can we tweak validity checks for a user input, or error/exception handling?" minimal>
 
-**A:** Only if the current behavior causes the software to <tooltip content="crash, or give incorrect results">misbehave</tooltip> or make it unusable for typical users.
+**A:** Only if the current behavior causes the software to crash, to give incorrect results, or make it unusable for typical users.
 </panel>
 
 <panel type="seamless" header="**Q6:** Can we tweak error/help messages (or other text shown to the user)?" minimal>
@@ -82,7 +82,7 @@ If the behavior difference is because some parts of the feature is not implement
 An exception is when the UG clearly states the case sensitivity but the actual feature implementation doesn't follow it, in which case it is a bug and can be fixed.
 </panel>
 
-<panel type="seamless" header="**Q8:** The UI text get truncated (or overflows) for certain inputs (or certain Windows sizes); can we fix them?" minimal>
+<panel type="seamless" header="**Q8:** A UI text gets truncated (or overflows) for certain inputs (or certain Windows sizes); can we fix them?" minimal>
 
 **A:** Only if the behavior hinders normal usage i.e., the user not being able to see the full text in _any way_ can be considered an 'incorrect' behavior, and hence, a bug. If the user is able to see the full text by resizing the Window or using another view provided by the app, it is not a bug.<br>
   Also, accommodating 'extreme' inputs (e.g., a person name with 1000 characters) can be considered a nice-to-have feature, to be added in a future version (i.e., lack of it is not a bug).
