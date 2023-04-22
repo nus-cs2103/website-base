@@ -176,7 +176,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 * Do not post suggestions but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions or/and lacking in a convincing justification as to why the omission of that functionality is problematic.
 {{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3", indent="2") }}
 
-* You may also report UG bugs.
+* You may also report documentation bugs (UG bugs in particular) but keep in mind that there is another time (i.e., part II) set aside for reporting documentation bugs too.
 {{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
 
 

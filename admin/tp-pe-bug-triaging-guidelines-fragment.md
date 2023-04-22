@@ -19,11 +19,13 @@
 
 <div class="indented-level1">
 
-{{ icon_info }} If a bug qualifies for `response.NotInScope`, the dev team will not be penalized, but the bug reporter will earn a small amount of credit for reporting it.
+{{ icon_info }} If a bug qualifies for `response.NotInScope`, the dev team will not be penalized, but the bug reporter will earn a small amount of credit for reporting it.{% if cs2103 %}
+
+{{ icon_info }} If a bug matches an enhancement listed in the 'Appendix: Planned Enhancements' of the DG, that bug can be rejected (the tester should not have reported it at all).{% endif %}
 </div>
 </div>
 
-* ~~**You can reject bugs that you <tooltip content="i.e., the current behavior is same as AB3 and you had no reason to change it because the feature applies similarly to your new product">inherited</tooltip> from AB3.**~~ Even bugs inherited from AB3 are counted.
+* **Even bugs inherited from AB3 are counted**. As the current development team, you are responsible for all bugs in the product, irrespective of when it was created.
 
 * **If you can't reproduce the bug based on the _exact_ steps given in the bug report** but there is some indication of 'something wrong' (e.g., the bug report cites a behavior that shouldn't happen under normal use), you are expected to make a _reasonable_ effort to reproduce the bug yourself by experimenting with the information provided in the bug report. Reason: it will go against you if claim that the bug is not reproducible and yet someone else (the tester or a tutor) manages to conclusively prove the existence of the bug in a later phase.
 
@@ -36,7 +38,7 @@ However, if such input can be entered by a user mistake, they should not cause h
 * **Problems caused by very long input values**: When a user input is unusually long %%e.g., a very long name, a very large number%%, it can cause problems e.g., the UI layout can get messed up, some part of it might get cut off.<br>
   * These can be considered cosmetic issues (i.e., `severity.VeryLow`) of `type.FunctionalityBug`.<br>
   However, if the problem can hinder the user %%(e.g., not seeing the last part of a very long name might not hinder the user but it does hinder the user if only the first few characters of the name is shown)%%, the severity can be `Low` or higher.
-  * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are not longer than 8 digits.
+  * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are _guaranteed_ to be not than 8 digits.
 * **Use of symbols in input values**: It is acceptable to disallow certain characters in input values if there is a justification (e.g., because using those symbols in an input value makes the command harder to parse), but they can still be considered `FeatureFlaw` bugs if they cause inconvenience to the user. For example, disallowing `s/o` in a person name because `/` is used as a command delimiter can cause a major problem if the input is expected to match the legal name of the person.
 * **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 or tic4002 %}
 * **Handling manual edits to the data file**: AB3 UG specifies the current level of support for manually editing the data file. At least that level of support should be supported in the new product as well.
@@ -83,4 +85,4 @@ However, if such input can be entered by a user mistake, they should not cause h
 * **Unfulfilled NFRs**: If the DG mentions non-functional requirements that are not met by the product, it can be a `severity.Low` `DocumentationBug` if the the NFR was unreasonable in the first place. Otherwise, it can be `type.FeatureFlaw` bug.
 * **Details in the diagram too small**: This is usually a symptom of having too much info in the diagram. A common example is sequence diagrams showing low-level details of multiple components (recommended: A sequence diagram should show internal interactions of at most one component i.e., treat other components as back boxes).<br>
  While the reader can zoom to see smaller details, this can still be considered a cosmetic issue (i.e., `severity.VeryLow`).
-* **Tester misunderstandings can be caused by inadequate documentation** Some bug reports that arose for the tester misunderstanding something could be due to a flaw in the documentation e.g., something was not explained clearly enough in the document.
+* **Tester misunderstandings can be caused by inadequate documentation** Some bug reports that arose from a tester misunderstanding something could be due to a flaw in the documentation e.g., something was not explained clearly enough in the document.

@@ -25,11 +25,11 @@
 
 * **The PE is divided into four phases**:
   * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D. Done during week 13 lecture, and further divided into parts I, II, and III.</span>
-    * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to report bugs in the product
+    * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to report bugs in the product (but can report documentation bugs too)
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to report bugs in the UG and DG only
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
-  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sat-Tue after PE </span>
-  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Wed-Thu after PE</span>
+  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sat-Mon after PE </span>
+  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Tue-Thu after PE</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
 
 * **Grading**:
@@ -262,11 +262,11 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 <include src="tp-pe-fragment.md#pe-p2-desc" inline /><p/>
 
-==**Deadline:** {{ get_date(date_w13_start, 11 if S == 2 else 10) }}==
+==**Deadline:** {{ get_date(date_w13_start, 10 if S == 2 else 10) }}==
 
 <box type="important" >
 
-****This is not a bug; it's fine the way it is!**** Everytime you say that in response to a legitimate bug report, you are saying something about your own standard of work as a software engineer. Don't set that standard too low, which goes totally against what we are trying to achieve in this module.
+****This is not a bug; it's fine the way it is!**** Every time you say that in response to a legitimate bug report, you are saying something about your own standard of work as a software engineer. Don't set that standard too low, which goes totally against what we are trying to achieve in this module.
 
 **:fas-check: Yes, that needs fixing!** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that needs fixing", accept it graciously as a bug, even if you can come up with _some_ argument for it not being a bug. Your professional integrity is more valuable than a measly fraction of a mark that you might lose.<br>
   Even when you still want to defend the behavior being labelled as problematic, instead of pretending that the behavior was a deliberate choice to begin with, you can say something like,
@@ -279,14 +279,14 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 **Bonus marks for high accuracy rates!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., some bonus if >60% substantial bonus >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual `type.*`, `severity.*`, and `response.*` of the bug match the ones you chose).
+You will receive bonus marks if a high percentage (e.g., some bonus if >60% substantial bonus if >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual `type.*`, `severity.*`, and `response.*` of the bug match the ones you chose).
 </box>
 
 <box type="important" seamless>
 
 **It's not bargaining!**{.text-danger}
 
-When the tester and the dev team cannot reach a consensus, the teaching team will be select either the dev team position or the tester position as the final state of the bug, whichever appear to be closer to being reasonable. <span class="text-danger">The teaching team will not come up with our own position, or choose a middle ground.</span>
+When the tester and the dev team cannot reach a consensus, the teaching team will select either the dev team position or the tester position as the final state of the bug, whichever appear to be closer to being reasonable. <span class="text-danger">The teaching team will not come up with our own position, or choose a middle ground.</span>
 
 Hence, do not be tempted to argue for an unreasonable position in the hope that you'll receive something less than asked but still in your favor e.g., if the tester chose `severity.High` but you think it should be `severity.Medium`, don't argue for `severity.VeryLow` in the hope that the teaching team will decide a middle ground of `severity.Low` or `severity.Medium`. It's more likely that the teaching team will choose the tester's position as yours seems unreasonable.
 
@@ -297,9 +297,10 @@ More importantly, this is not a bargaining between two parties; it's **an attemp
 
 **Favor `response.NotInScope` over `response.Reject`**{.text-success}
 
-If there is even a slightest chance that the change suggested by a bug report is something that you *might* consider doing in a future version of the product, choose `response.NotInScope`. Use `response.Reject` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).
+If there is even a slightest chance that the change suggested by a bug report is something that you *might* consider doing in a future version of the product, choose `response.NotInScope`.<br/>
+ Choose `response.Reject` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).
 
-Note that `response.NotInScope` bugs earn a small amount of credit for the tester without any penalty for the dev team.
+Note that `response.NotInScope` bugs earn a small amount of credit for the tester without any penalty for the dev team, unless there is a high number of such issues for a team.
 </box>
 
 **Duration:** The review period will start around 1 day after the PE and will last for 2-3 days (exact times will be announced later). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
@@ -371,7 +372,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 
 **Response** Labels:
 * `response.Accepted`: You accept it as a valid bug.
-* `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in {{ version_final }}%%.
+* `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in {{ version_final }} or lower priority than the work already doen in {{ version_final }}%%.
 * `response.Rejected`: What tester treated as a bug is in fact the _expected_ and _correct_ behavior (from the user's point of view), or the tester was mistaken in some other way. %%Note: Disagreement with the bug severity/type given by the tester is not a valid reason to reject the bug.%%
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
@@ -403,7 +404,8 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
-* **If you need the teaching team's inputs when deciding on a bug** %%(e.g., if you are not sure if the UML notation is correct)%%, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).
+* **If you need the teaching team's inputs when deciding on a bug** %%(e.g., if you are not sure if the UML notation is correct)%%, post in the [forum]({{ url_forum }}). Remember to ==quote the issue number shown in CATcher== (it appears at the end of the issue title).<br/>
+  Keep in mind that the bug triaging accuracy affects your marks, and therefore, the teaching team prefers not to dictate a specific response, type, or severity for a particular bug report (i.e., that decision should be yours). Nevertheless, we can provide some general comments relevant to the issue at hand. Additionally, we encourage other students to chime in with their opinions, as such discussions have learning value.
 
 <div class="indented-level1" id="additionalGuidelinesForBugTriaging">
 
@@ -438,7 +440,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 * You can also refer to the below guidelines:
 
-{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=1) }}
+{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", indent=1) }}
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
@@ -474,9 +476,9 @@ However, ==if the dev team's argument is not too far from 'reasonable', **it may
 * **If you would like to revise your own initial type/severity** in response to the team's inputs, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).
 * You can also refer to the below guidelines:
 
-{{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", 2, indent=1) }}
+{{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", indent=1) }}
 
-{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", 2, indent=1) }}
+{{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", indent=1) }}
 
 
 * If you do not respond to a dev response, we'll assume that you agree with it.
