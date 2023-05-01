@@ -166,6 +166,9 @@ In some weeks, there will be some programming exercises for you to submit (on Co
    * Ensure the video is in a format that can be played by any computer.
    * Submission: via Canvas assignments
    * File name: `{Your Name}.mp4`  e.g., `Jun Hao.mp4`
+1. **Code Reuse Declaration**:
+   * Submit this survey (on Canvas) to declare your level of code reuse in the project.
+   * This is compulsory. You <span class="text-danger">must submit this even if you did not reuse</span> any code.
 
 </div>
 

@@ -182,7 +182,9 @@ Please upload items 2, 3, 4 as three separate files, using the three Canvas assi
    * Audio narration is optional if the demo can be understood without the audio.
    * Ensure the video is in a format that can be played by any computer.
    * Submission: Name the file with your name (to match the jar and the report file) and upload to Canvas.
-
+1. **Code Reuse Declaration**:
+   * Submit this survey (on Canvas) to declare your level of code reuse in the project.
+   * This is compulsory. You <span class="text-danger">must submit this even if you did not reuse</span> any code.
 </div>
 </div>
 
