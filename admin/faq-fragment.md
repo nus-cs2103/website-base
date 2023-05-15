@@ -9,7 +9,7 @@ The <span class="font-weight-bold">{{ url_schedule }}</span> is ==_the_ one page
 
 <div id="admin-faq-tVsNonT">
 
-Same lecture content, same assessments, same exam. Separate tutorials, separate project grading. Unless specified otherwise, whatever is stated for one module applies to the other.
+Same lecture content, same assessments, same exam. Separate tutorials, separate grading. Unless specified otherwise, whatever is stated for one module applies to the other.
 
 </div>
 

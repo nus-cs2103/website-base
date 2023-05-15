@@ -12,11 +12,11 @@
 This module website is the main source of information for the module. In addition, we use Canvas for some things %%(e.g., announcements, file submissions, grade book, ...)%%.
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
-
+{% if not cs2113 %}
 ## Tool: Zoom (for Lectures)
 
 Install Zoom in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Proctoring+with+Zoom). Remember to login using your NUSNET account.
-
+{% endif %}
 <!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="github">
 
