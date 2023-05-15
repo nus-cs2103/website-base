@@ -26,7 +26,7 @@
 </box>
 
 <include src="../_module-{{ module }}/timetables-fragment.md#tutorials-s{{ S }}" optional />
-
+** Take note of the tutorial id of the second tutorial session on Thursday @ 15:00
 </div>
 </panel>
 

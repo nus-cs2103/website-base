@@ -7,7 +7,7 @@
 <span id="lectures-s2">
 
 {{ lecture_table_headers | trim }}
-{{ module }}/T | ICube Auditorium | **1400**-1600
+{{ module }}/T | ICube Auditorium | **1600**-1800
 </span>
 
 <span id="tutorials-s1">
@@ -34,20 +34,24 @@
 <span id="tutorials-s2">
 
 {{ tutorial_table_headers | trim }}
+{{ M | safe }} | COM1-0201 | **W**ed  **12**:00 | ~~%%03%%~~ | **`CS2113-W12`**| Akshay, Ngiap Hin 
+{{ M | safe }} | COM1-0201 | **W**ed  **13**:00 | ~~%%04%%~~ | **`CS2113-W13`**| Chin Han, Duc Thanh
+{{ M | safe }} | COM1-0201 | **W**ed  **15**:00 | ~~%%05%%~~ | **`CS2113-W15`**| Yuheng, Kai Wen
+ | | | | | |
+{{ MT | safe }} | COM1-0201 | **T**hu  **09**:00 | ~~%%C01%%~~ | **`CS2113T-T09`**| Akshay, Vishruti
+{{ M | safe }} | COM1-0201 | **T**hu  **11**:00 | ~~%%06%%~~ | **`CS2113-T11`**| Ramana, Wira
+{{ M | safe }} | COM1-0201 | **T**hu  **12**:00 | ~~%%07%%~~ | **`CS2113-T12`**| Aditi, Qian Hui
+{{ M | safe }} | COM1-0201 | **T**hu  **13**:00 | ~~%%08%%~~ | **`CS2113-T13`**| Chin Tian, Chuan Kai
+{{ M | safe }} | COM1-0201 | **T**hu  **15**:00 | ~~%%09%%~~ | **`CS2113-T15`**| Mathan, Thin Hong
+{{ M | safe }} | COM1-0201 | **T**hu  15:00 | ~~%%14%%~~ | **`CS2113-T14`** **| Siyuan, Chee Heng
+ | | | | | |
+{{ M | safe }} | COM1-0201 | **F**ri  **10**:00 | ~~%%10%%~~ | **`CS2113-F10`**| Wamika, Theodore
+{{ M | safe }} | COM1-0201 | **F**ri  **13**:00 | ~~%%11%%~~ | **`CS2113-F13`**| Javier, Hao Yi
+
+</span>
+
+<!-- unmounted tutorials
 {{ M | safe }} | COM1-0201 | **W**ed  **10**:00 | ~~%%01%%~~ | **`CS2113-W10`**|
 {{ M | safe }} | COM1-0201 | **W**ed  **11**:00 | ~~%%02%%~~ | **`CS2113-W11`**|
-{{ M | safe }} | COM1-0201 | **W**ed  **12**:00 | ~~%%03%%~~ | **`CS2113-W12`**|
-{{ M | safe }} | COM1-0201 | **W**ed  **13**:00 | ~~%%04%%~~ | **`CS2113-W13`**|
-{{ M | safe }} | COM1-0201 | **W**ed  **15**:00 | ~~%%05%%~~ | **`CS2113-W15`**|
- | | | | | |
-{{ MT | safe }} | COM1-0201 | **T**hu  **09**:00 | ~~%%C01%%~~ | **`CS2113T-T09`**|
-{{ M | safe }} | COM1-0201 | **T**hu  **11**:00 | ~~%%06%%~~ | **`CS2113-T11`**|
-{{ M | safe }} | COM1-0201 | **T**hu  **12**:00 | ~~%%07%%~~ | **`CS2113-T12`**|
-{{ M | safe }} | COM1-0201 | **T**hu  **13**:00 | ~~%%08%%~~ | **`CS2113-T13`**|
-{{ M | safe }} | COM1-0201 | **T**hu  **15**:00 | ~~%%09%%~~ | **`CS2113-T15`**|
- | | | | | |
-{{ M | safe }} | COM1-0201 | **F**ri  **10**:00 | ~~%%10%%~~ | **`CS2113-F10`**|
-{{ M | safe }} | COM1-0201 | **F**ri  **11**:00 | ~~%%11%%~~ | **`CS2113-F11`**|
 {{ M | safe }} | COM1-0201 | **F**ri  **12**:00 | ~~%%12%%~~ | **`CS2113-F12`**|
-{{ M | safe }} | COM1-0201 | **F**ri  **13**:00 | ~~%%13%%~~ | **`CS2113-F13`**|
-</span>
+-->

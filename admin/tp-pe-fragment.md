@@ -244,7 +244,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 #### <span class="badge bg-success">PE</span> <span class="text-success">Phase 2: Developer Response</span>
 
-==**Deadline:** {{ get_date(date_w13_start, 11 if S == 2 else 10) }}==
+==**Deadline:** {{ get_date(date_w13_start, 10 if S == 2 else 10) }}==
 
 This phase is for you to respond to the bug reports you received.
 

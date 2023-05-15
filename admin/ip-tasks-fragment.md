@@ -199,7 +199,7 @@ Read through this week's topics before starting the project.<br>
 </box>
 
 1. **Fork** [{{ url_module_org }}/{{ ip_repo_name }}]({{ url_module_org }}/{{ ip_repo_name }}), while noting the points below:<br>
-   <box type="important" seamless><md>**Keep the fork name as `{{ ip_repo_name }}`** or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the module.</md></box>
+   <box type="important" seamless><md>**==Keep the fork name== as `{{ ip_repo_name }}`** or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the module.</md></box>
    <box type="tip" seamless><md>**Untick the `[ ] Copy the master branch only` option** so that you get a copy of the full repo.</md></box>
 1. ==**Enable the issue tracker** of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
    <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`</md></box>

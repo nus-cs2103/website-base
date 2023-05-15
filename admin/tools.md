@@ -13,9 +13,13 @@ This module website is the main source of information for the module. In additio
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
 
+<!--  No zoom in cs2113/t
+
 ## Tool: Zoom (for Lectures)
 
 Install Zoom in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Proctoring+with+Zoom). Remember to login using your NUSNET account.
+
+-->
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="github">

@@ -135,11 +135,12 @@ The info in the following panels differs from TIC4001.
 * Worth `2` participation points
 </div>
 {#====================================================================================================================#}
-<span id="heading_practice_peer_evaluations_on_TEAMMATES">Practice peer evaluation on TEAMMATES</span>
+<span id="heading_practice_peer_evaluations_on_TEAMMATES">Prelim peer evaluation on TEAMMATES</span>
 <div id="desc_practice_peer_evaluations_on_TEAMMATES">
 
 * You should receive the submission link by Monday noon.<br>
   <include src="admin-tasks-fragment.md#teammates-link-recovery-tip" inline />
+* This peer evaluation is not used for grading; however, submitting the evaluation counts towards your participation marks.
 
 {{ embed_topic("peerEvaluations.md#intro", "Admin " + icon_embedding + " Peer Evaluations → Introduction", "3", indent="2") }}
 {{ embed_topic("peerEvaluations.md#practicePeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Practice Peer Evaluation", "1", indent="2", status="expanded") }}
