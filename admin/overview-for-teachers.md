@@ -13,7 +13,7 @@ pageNav: 2
  From our side, we treat both groups of students the same way.
 </box>
 
-**Workload:** 4MC (i.e., workload of 10 hours/week)
+**Workload:** 4 Units (i.e., workload of 10 hours/week)
 
 **Class size:** (CS2103T: `400` + CS2103: `62` = `462`)
 

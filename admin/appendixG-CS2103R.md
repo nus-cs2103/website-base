@@ -3,9 +3,9 @@
 {% call show_admin_page("appendixG-CS2103R") %}
 <div id="main">
 
-**CS2103R is an 'R module'** (R stands for Research) that students can take to earn an extra 1 MC (and can also be used to fulfill requirements of the Turing program). The 1MC is graded (not S/U).
+**CS2103R is an 'R module'** (R stands for Research) that students can take to earn an extra 1 Unit of credit (and can also be used to fulfill requirements of the Turing program). The 1MC is graded (not S/U).
 
-**It is meant for strong programmers who would like to push themselves beyond the achievement bars set by CS2103/T**, keeping in mind that the regular 4MC module deliberately does not give extra credit for exceeding expectations (reason: to keep the workload manageable for the majority of students). CS2103R is an opportunity to work around that limitation, and get extra 1MC by doing some extra work.
+**It is meant for strong programmers who would like to push themselves beyond the achievement bars set by CS2103/T**, keeping in mind that the regular 4-Units module deliberately does not give extra credit for exceeding expectations (reason: to keep the workload manageable for the majority of students). CS2103R is an opportunity to work around that limitation, and get extra 1MC by doing some extra work.
 
 ****Deliverables****:
 * **Option A**: Propose and implement an enhancement to the [AB3 base project](https://se-education.org/addressbook-level3/).
@@ -24,7 +24,7 @@
    Submission: Upload a file `CS2103R-YOUR_NAME.pdf` to the corresponding Canvas assignment.
 1. `[Reading week]` You will be notified if you are accepted for CS2103R. As this is the first time we are offering CS2103R in this manner, the number of slots is likely to be small in this round.
 1. `[Within 4 weeks of the end of the exam period]` submit the implementation and the report. The grade will be given to you soon after.
-1. `[Week 1 of the following semester]` Register for the module, to receive the extra 1MC in the following semester. More info about R modules is given [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=SUW&title=R+Modules) (requires login).
+1. `[Week 1 of the following semester]` Register for the module, to receive the extra 1 Unit in the following semester. More info about R modules is given [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=SUW&title=R+Modules) (requires login).
 
 ****Grading****:
 1. The grade given is typically the same as the grade you earned for CS2103/T, but can be different if your CS2103R work is substantially better/worse than your CS2103/T performance.
