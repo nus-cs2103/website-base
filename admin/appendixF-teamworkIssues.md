@@ -5,13 +5,13 @@
 
 If your team is facing difficulties due to differences in skill/motivation/availability among team members,
 
-* **First, do not expect everyone to have the same skill/motivation level as you.** It is fine if someone wants to do less and have low expectations from the module. That doesn't mean that person is a bad person. Everyone is entitled to have their own priorities.
+* **First, do not expect everyone to have the same skill/motivation level as you.** It is fine if someone wants to do less and have low expectations from the course. That doesn't mean that person is a bad person. Everyone is entitled to have their own priorities.
 
 * **Second, don't give up.** It is unfortunate that your team ended up in this situation, but you can turn it into a good learning opportunity. You don't get an opportunity to save a sinking team every day :-)
 
 * **Third, if you care about your grade and willing to work for it, you need to take initiative** to turn the situation around or else the whole team is going to suffer. Don't hesitate to take charge if the situation calls for it. By doing so, you'll be doing a favor for your team. Be professional, kind, and courteous to the team members, but also be firm and assertive. It is your grade that is at stake. Don't worry about making a bad situation worse. You won't know until you try.
 
-* **Finally, don't feel angry or 'wronged'.** Teamwork problems are not uncommon in this module and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what others did. It's not your responsibility to get others to contribute. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing their best too, although their best may be lower than yours.
+* **Finally, don't feel angry or 'wronged'.** Teamwork problems are not uncommon in this course and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what others did. It's not your responsibility to get others to contribute. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing their best too, although their best may be lower than yours.
 
 Given below are some suggestions you can adopt if the project work is not going smooth due to team issues. Note that the below measures can result in some team members doing more work than others and earning better project grades than others. It is still better than sinking the whole team together.
 

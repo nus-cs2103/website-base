@@ -40,7 +40,7 @@
 <div id="help-troubleshoot-ip">
 
 <!-- * Do a quick demo of your iP to the tutor. -->
-* Now that you are in a team, it's time to build up the team spirit. For starters, you can start helping each other with module tasks. e.g., if anyone is facing problems in the iP, you can work together to solve them.
+* Now that you are in a team, it's time to build up the team spirit. For starters, you can start helping each other with course tasks. e.g., if anyone is facing problems in the iP, you can work together to solve them.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="share-project-direction">
@@ -53,10 +53,10 @@
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 
-{% macro get_pr_link(username) -%}[{{ username }}]({{ url_module_org }}/{{ ip_repo_name }}/pulls/{{ username }}){%- endmacro %}
+{% macro get_pr_link(username) -%}[{{ username }}]({{ url_course_org }}/{{ ip_repo_name }}/pulls/{{ username }}){%- endmacro %}
 <div id="show-ip-peer-review-allocation-1">
 <panel header="**Review allocation for the ==first== PR review** (click to expand)" minimized >
-{% from "_module-" + module + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
+{% from "_course-" + course + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
 Tutorial | Reviewer | First PR to review | Backup PR to review
 ---------|----------|--------------------|---------------------{% for line in ip_pr_review_allocation  %}
 {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | <small>%%backup:%% {{ get_pr_link(line[3]) }}</small>{% endfor %}
@@ -87,7 +87,7 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 </div>
 <div id="show-ip-peer-review-allocation-2">
 <panel header="**Review allocation for the ==second== PR review** (click to expand)" minimized >
-{% from "_module-" + module + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
+{% from "_course-" + course + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
 Tutorial | Reviewer | Second PR to review | Backup PR to review
 ---------|----------|---------------------|---------------------{% for line in ip_pr_review_allocation  %}
 {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | <small>%%backup:%% {{ get_pr_link(line[5]) }}</small>{% endfor %}
@@ -105,7 +105,7 @@ Tutorial | Reviewer | Second PR to review | Backup PR to review
 <box light type="success" add-class="ml-4" icon=":fas-lightbulb:">
 
 **Suggested pre-tutorial preparations**:
-* Clone the [{{ url_module_org }}/personbook]({{ url_module_org }}/personbook) repo to your Computer (no need to fork first).
+* Clone the [{{ url_course_org }}/personbook]({{ url_course_org }}/personbook) repo to your Computer (no need to fork first).
 * Set it up in your IDE.
 * Use the IDE debugging to step through the code to understand how the code works. For example, you can try to find answers to these questions:
   * How to add a new `find` command to locate persons by name?
@@ -288,7 +288,7 @@ Note the following:
 * Post a screenshot of the assertion failure in the _tutorial workspace_ document.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="interpret-module-cd">
+<div id="interpret-course-cd">
 
 * {{ timing_badge("10 minutes", "info") }} With the tutor's guidance, interpret the following class diagram, focusing on the new CD notations that you learned this week.
 
@@ -299,16 +299,16 @@ Note the following:
 </div>
 
 * Some questions you can try to answer:
-  1. What does this mean? <img src="images/interpret-module-cd/extract-interface.png" />
-  1. What does this mean? <img src="images/interpret-module-cd/extract-inheritance.png" />
+  1. What does this mean? <img src="images/interpret-course-cd/extract-interface.png" />
+  1. What does this mean? <img src="images/interpret-course-cd/extract-inheritance.png" />
   1. Of the above two, why the lines in one are dashed?
-  1. What does this mean? <img src="images/interpret-module-cd/extract-dependence.png" />
+  1. What does this mean? <img src="images/interpret-course-cd/extract-dependence.png" />
   1. What's the difference (w.r. t. what it means) between the above and a normal association?
-  1. What does this mean? <img src="images/interpret-module-cd/extract-composition.png" />
+  1. What does this mean? <img src="images/interpret-course-cd/extract-composition.png" />
   1. What's the difference if the diamond is empty?
   1. Can a `PR` object exist without any `Commit` objects attached to it?
   1. Can a `Commit` object exist without a corresponding `PR` object?
-  1. A `Student` can belong to how many teams?<img src="images/interpret-module-cd/extract-team.png" />
+  1. A `Student` can belong to how many teams?<img src="images/interpret-course-cd/extract-team.png" />
   1. A `Team` can have how many `Student` objects?
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

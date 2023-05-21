@@ -9,5 +9,5 @@ You may be already familiar with repl.it, which can be considered an _online IDE
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Project Mgt: Scheduling and Tracking", reuse=false) %}
-Next, we cover some basic (almost common sense) guidelines to follow managing a software project (applies to other types of projects too). While these are not strictly necessary for the module project, knowing them can help you communicate better with software project teams.
+Next, we cover some basic (almost common sense) guidelines to follow managing a software project (applies to other types of projects too). While these are not strictly necessary for the course project, knowing them can help you communicate better with software project teams.
 {% endcall %}

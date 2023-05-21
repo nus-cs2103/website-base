@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page with context %}
 
-{% call show_admin_page("moduleOverview") %}
+{% call show_admin_page("courseOverview") %}
 <div id="main">
 
 <!-- =============================================================================== -->
@@ -9,10 +9,10 @@
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
-<p class="lead"><md>{{ module_pair }} is an introductory Software Engineering module. It has **a 50-50 balance of basic SE theory knowledge and practical skills** that you need to gain before industry internships or <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics. It is also one of the rare SE modules that includes a <tooltip content="i.e., working in an existing project">**brownfield** project</tooltip>, in addition to a <tooltip content="i.e., a project that is started from scratch">**greenfield** project</tooltip>.</md></p>
+<p class="lead"><md>{{ course_pair }} is an introductory Software Engineering course. It has **a 50-50 balance of basic SE theory knowledge and practical skills** that you need to gain before industry internships or <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project courses</tooltip>. The course follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics. It is also one of the rare SE courses that includes a <tooltip content="i.e., working in an existing project">**brownfield** project</tooltip>, in addition to a <tooltip content="i.e., a project that is started from scratch">**greenfield** project</tooltip>.</md></p>
 
 
-* **On the theory side,** this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
+* **On the theory side,** this course is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 
 * **The practice side,** you will first ramp up your technical skills by doing a small individual project (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brownfield) in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 KLoC) generic product -- and enhance it into a better product or evolve it into a different product.
 
@@ -29,14 +29,14 @@
 **This way of 'jumping around' topics feels chaotic but consider the benefits**:
 * It allows you to start doing SE projects early, and do it iteratively too. That is, you can start with a small project from the very start and make it bigger progressively, learning from earlier mistakes, and getting multiple chances improve on previous attempts.
 * Important SE aspects such as testing can be practiced from the very beginning. If we followed a sequential approach, you can only learn it near the end of the semester.
-* Lower risk of missing out some SE aspects altogether. For example, suppose your schedule got heavier in the second half of the semester and you could barely follow the module during that half. You still go away with the basic knowledge of _all_ SE aspects rather than knowing some aspects fully and missing some other aspects altogether.
+* Lower risk of missing out some SE aspects altogether. For example, suppose your schedule got heavier in the second half of the semester and you could barely follow the course during that half. You still go away with the basic knowledge of _all_ SE aspects rather than knowing some aspects fully and missing some other aspects altogether.
 
-**To help you cope with the non-sequential progression of topics,** this module website contains two versions of the topics. In the [Schedule page](../schedule/index.html), you'll find the topics organized into the order we cover them in each week. In the [Textbook page](../se-book-adapted/index.html), you'll find the topics in their natural sequential order. This format is suitable for exam reference.
+**To help you cope with the non-sequential progression of topics,** this course website contains two versions of the topics. In the [Schedule page](../schedule/index.html), you'll find the topics organized into the order we cover them in each week. In the [Textbook page](../se-book-adapted/index.html), you'll find the topics in their natural sequential order. This format is suitable for exam reference.
 </box>
 
 </div>
 
-Given below is a summary of what the module covers and does not cover.
+Given below is a summary of what the course covers and does not cover.
 
 Topic | {{ icon_tick_green }} Covered | {{ icon_x_red }} Not covered
 ------|---------|------------
@@ -51,7 +51,7 @@ Testing | <tooltip content="e.g., automated unit/integration/system testing">bas
 Applications domains | Cross-platform desktop applications | Web programming, Mobile programming, Database programming
 
 <br>
-<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
+<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ course }} and {{ course }}T?**" class="embedding" minimized />
 </div>
 <!-- =============================================================================== -->
 <div tags="m--cs2113">
@@ -60,45 +60,45 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
-<p class="lead"><md>{{ module_pair }} is an introductory Software Engineering module covering **a balance of basic SE theory and practical skills** needed to work in a project that has a software component. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics. The module also introduces you to the Java programming language, the OOP paradigm, and some basic UML models.</md></p>
+<p class="lead"><md>{{ course_pair }} is an introductory Software Engineering course covering **a balance of basic SE theory and practical skills** needed to work in a project that has a software component. The course follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics. The course also introduces you to the Java programming language, the OOP paradigm, and some basic UML models.</md></p>
 
-* **The theory side** of this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
+* **The theory side** of this course is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 
 * **On the practice side**, you will first ramp up your technical skills by doing a small individual project in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project in which you will build another small <tooltip content="Command Line Interface">CLI</tooltip> app while working as a team.
 
-<include src="moduleOverview.md#meaning-of-iterative-topics" />
+<include src="courseOverview.md#meaning-of-iterative-topics" />
 
-<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ module }} and {{ module }}T?**" class="embedding" minimized />
+<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ course }} and {{ course }}T?**" class="embedding" minimized />
 </div>
 <!-- =============================================================================== -->
 <div tags="m--tic4001">
 
-<p class="lead text-secondary"><big>A Software Engineering practicum module focusing on <tooltip content="projects starting from scratch, as opposed to projects starting from an existing code base">greenfield</tooltip> team projects...</big></p>
+<p class="lead text-secondary"><big>A Software Engineering practicum course focusing on <tooltip content="projects starting from scratch, as opposed to projects starting from an existing code base">greenfield</tooltip> team projects...</big></p>
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="650">
 
 
-<p class="lead"><md>{{ module }} builds on <tooltip content="Introduction to Software Engineering">TIC2002</tooltip> (and <tooltip content="Software Requirements Analysis and Design">TIC3001</tooltip>) to strengthen your practical SE skills. The focus will be on getting some hands on practice in various tools, techniques, and processes used in a systematic SE project.</md></p>
+<p class="lead"><md>{{ course }} builds on <tooltip content="Introduction to Software Engineering">TIC2002</tooltip> (and <tooltip content="Software Requirements Analysis and Design">TIC3001</tooltip>) to strengthen your practical SE skills. The focus will be on getting some hands on practice in various tools, techniques, and processes used in a systematic SE project.</md></p>
 
-* **On the theory side, this module relies mostly on the theory covered in TIC2002, but it will also cover some new topics** to help you with the project. As before, this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
+* **On the theory side, this course relies mostly on the theory covered in TIC2002, but it will also cover some new topics** to help you with the project. As before, this course is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 
 * **The practice side, you will first ramp up your technical skills by doing a small individual project** (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). This project is similar to the project you did in TIC2002 but will be done faster and at a higher level of rigor.<br>
   **Then, you will move to a team project** (also greenfield) in which you will build another small <tooltip content="Command Line Interface">CLI</tooltip> app while working as a team.
 
-**At the end of this module** you are expected to be ready for <tooltip content="Software Engineering Practicum II">TIC4002</tooltip> in which you'll tackle a <tooltip content="starting with an existing code base">brownfield</tooltip> team project somewhat larger than the project you did in this module.
+**At the end of this course** you are expected to be ready for <tooltip content="Software Engineering Practicum II">TIC4002</tooltip> in which you'll tackle a <tooltip content="starting with an existing code base">brownfield</tooltip> team project somewhat larger than the project you did in this course.
 
 </div>
 <!-- =============================================================================== -->
 <div tags="m--tic4002">
 
-<p class="lead text-secondary"><big>A Software Engineering practicum module focusing on <tooltip content="starting with an existing code base">brownfield</tooltip> team projects...</big></p>
+<p class="lead text-secondary"><big>A Software Engineering practicum course focusing on <tooltip content="starting with an existing code base">brownfield</tooltip> team projects...</big></p>
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="650">
 
 
-<p class="lead"><md>{{ module }} builds on <tooltip content="Software Engineering Practicum I">TIC4001</tooltip> to strengthen your practical SE skills. The focus will be on getting some hands on practice in working with an existing code base.</md></p>
+<p class="lead"><md>{{ course }} builds on <tooltip content="Software Engineering Practicum I">TIC4001</tooltip> to strengthen your practical SE skills. The focus will be on getting some hands on practice in working with an existing code base.</md></p>
 
-* **On the theory side, this module relies mostly on the theory covered in TIC2002 and TIC4001, but it will also cover a small number of new topics** to help you with the project. As before, this module is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this module website.
+* **On the theory side, this course relies mostly on the theory covered in TIC2002 and TIC4001, but it will also cover a small number of new topics** to help you with the project. As before, this course is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 
 * **The practice side, you will first continue to ramp up your technical skills by improving on the individual project** that you did in TIC4001.<br>
   **Then, you will move to a team project** in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 KLoC) generic product -- and enhance it into a better product or evolve it into a different product.

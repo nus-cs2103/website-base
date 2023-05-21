@@ -86,5 +86,5 @@ Note that CS2101 demo requirements may differ. Different context → Different r
 #### <span class="badge bg-info">Demo</span> <span class="text-info">Special circumstances</span>
 
 * **If a significant feature was not merged on time:** inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.
-* **If you are unable to come to the demo due to a valid reason**, submit the evidence of your excuse %%e.g., MC%% to prof. The demo is part of module grading and ==absence without a valid reason== will cause you to lose marks.
+* **If you are unable to come to the demo due to a valid reason**, submit the evidence of your excuse %%e.g., MC%% to prof. The demo is part of course grading and ==absence without a valid reason== will cause you to lose marks.
 -->

@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Software Engineering for Self-Directed Learners [Printable Version for {{ module_pair }}]"
+title: "Software Engineering for Self-Directed Learners [Printable Version for {{ course_pair }}]"
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">

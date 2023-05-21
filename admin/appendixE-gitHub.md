@@ -16,7 +16,7 @@ Create a personal GitHub account if you don't have one yet.
 
    <panel type="seamless" header="%%Why am I being encouraged to complete my GitHub profile?%%" >
 
-   The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just for the module.
+   The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the course is over or create a separate GitHub account just for the course.
 
    </panel>
 3. ==You are discouraged from changing your GitHub username during the semester/exam/grading period== as it can cause our auto-grading scripts to miss your GitHub activities. If you do change your GitHub username during that period, please let us know immediately.
@@ -54,7 +54,7 @@ Please follow the organization/repo name format precisely or else our grading sc
 
 After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
-  * **Organization name** ==(all UPPER CASE) :`{{ semester }}-TEAM_ID`==. e.g. {% if has_t %}`{{ semester }}-{{ module }}T-W12-1`,{% endif %} `{{ semester }}-{{ example_team_id }}`
+  * **Organization name** ==(all UPPER CASE) :`{{ semester }}-TEAM_ID`==. e.g. {% if has_t %}`{{ semester }}-{{ course }}T-W12-1`,{% endif %} `{{ semester }}-{{ example_team_id }}`
   * Plan: Open Source ($0/month)
   * This organization belongs to: My personal account
 * Add members to the organization:
@@ -77,7 +77,7 @@ The tP project template given to you is a variation of the iP repo you used for 
 
 </box>
 
-1. **Fork** the [{{url_module_org}}/{{ tp_repo_name }}]({{url_module_org}}/{{ tp_repo_name }}) repo to your team org.
+1. **Fork** the [{{url_course_org}}/{{ tp_repo_name }}]({{url_course_org}}/{{ tp_repo_name }}) repo to your team org.
    * This repo (let's call it the _team repo_) is to be used as the repo for your project.
    * <span id="do-not-rename">{{ icon_important_big_red }} Please do not rename the fork %%Reason: our grading scripts rely on the repo name.%%</span>
 1. **Enable the issue tracker**.
@@ -85,15 +85,15 @@ The tP project template given to you is a variation of the iP repo you used for 
    **Set up codecov**, as explained in the [DevOps guide]({{ url_ab3_fork_website }}/DevOps.html).{% endif %}
 {% if cs2103 %}
 1. **Set up the project website**<br>
-   Follow instructions in the [_Documentation guide_ page]({{ url_ab3_fork_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/{{ tp_repo_name }}` e.g., `https://{{ semester | lower }}-{{ module | lower }}-w13-1.github.io/{{ tp_repo_name }}`.
-{% elseif module == "CS2113" or module == "TIC4001"%}
+   Follow instructions in the [_Documentation guide_ page]({{ url_ab3_fork_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/{{ tp_repo_name }}` e.g., `https://{{ semester | lower }}-{{ course | lower }}-w13-1.github.io/{{ tp_repo_name }}`.
+{% elseif course == "CS2113" or course == "TIC4001"%}
 1. **Enable GitHub Pages**: Go to the {{ show_as_rounded_tab(':octicon-gear: Settings') }} tab and enable `GitHub Pages` for the `master branch /docs folder` (similar to how you did it in the iP).<br>
    Remember to choose a theme too by clicking the {{ button('**Choose a theme**') }} button (that will create a commit in your repo that is needed in a later step.<br>
    After a few minutes, confirm your tP website is available in the corresponding `github.io` URL.
 {% endif %}
 1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
    Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
-1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/{{ tp_repo_name }}]({{url_module_org}}/{{ tp_repo_name }})] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ example_team_id }}] InsureList`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
+1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ course | lower }}-{{ semester }}/{{ tp_repo_name }}]({{url_course_org}}/{{ tp_repo_name }})] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ example_team_id }}] InsureList`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
    Please fill in these details as specified because they are used by our grading scripts.
    * **PR subject: the name of your product** e.g., `[{{ example_team_id }}] InsureList`
    * **Description: a 1-2 sentence overview** (plain text only, no formatting or links) of your project indicating the target user and the value proposition e.g., `InsureList helps insurance agents manage detail of their clients. It is optimized for CLI users so that frequent tasks can be done faster by typing in commands.`
@@ -165,7 +165,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
    <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
 1. **Set up** the developer environment in your computer by following the
-   <span tags="m--cs2103 m--tic4002">[_Setting up and getting started_ page]({{ url_ab3_fork_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113 m--tic4001">the [README]({{url_module_org}}/{{ tp_repo_name }}) carefully as the ==steps are different from the iP==.</span>
+   <span tags="m--cs2103 m--tic4002">[_Setting up and getting started_ page]({{ url_ab3_fork_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113 m--tic4001">the [README]({{url_course_org}}/{{ tp_repo_name }}) carefully as the ==steps are different from the iP==.</span>
 
 <box type="wrong" seamless>
 
@@ -223,7 +223,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
     {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
   * **sync your repos with the team repo** by pulling the latest `master` from the team repo and pushing it to your own fork.
   * **don't delete the branch used by the PR**. While it is common practice to delete a branch after merging it, we require you to keep those branches in the team repo so that our scripts can confirm that you used branches when adding changes.
-{% if module == "CS2113" or module == "TIC4001" %}
+{% if course == "CS2113" or course == "TIC4001" %}
 * **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
 {% endif %}
 

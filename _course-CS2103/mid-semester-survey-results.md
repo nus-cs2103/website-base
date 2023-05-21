@@ -4,7 +4,7 @@
 </h1>
 
 <p class="lead">
-Given below are the summary results of your ratings on various aspects of the module and my general comments on some
+Given below are the summary results of your ratings on various aspects of the course and my general comments on some
 of them.
 </p>
 
@@ -37,11 +37,11 @@ One advantage of live lectures (F2F or online) is that
  you can ask questions immediately if something is unclear.<br>
 ==On-the-spot Q&A doesn't scale up to very large classes==, unfortunately --
  even if your question is relevant to half the class, it becomes a disruption to
- hundreds of other students, especially so for a module like ours
+ hundreds of other students, especially so for a course like ours
  in which the students' learning speed can vary a lot.<br>
 Hence, our live lectures are limited to briefings only, while most content are delivered as text and
  pre-recorded lectures which students can consume at their own pace.<br>
- Nevertheless, ==you can attend lectures F2F if you wish==, as we have now moved to hybrid mode lectures, 
+ Nevertheless, ==you can attend lectures F2F if you wish==, as we have now moved to hybrid mode lectures,
  although we are unlikely to support mid-lecture interactions due to the reason given above.
  While the lecturer can still answer some questions at the end of the lecture, the rest needs to be asynchronous
  e.g., via email or the forum.<br>
@@ -49,10 +49,10 @@ Hence, our live lectures are limited to briefings only, while most content are d
  threads while waiting for an answer you raised asynchronously. Also, the topics are not that deep/complex
  -- the chance of getting stuck is lower.<br>
  So, I hope you guys are able to manage even if we don't do live lectures covering all content.<br>
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q4"/>
@@ -76,10 +76,10 @@ Can't comment. I don't watch them.<br><span class="text-info bg-info">..........
 
 Glad to see pre-recorded videos are generally well-received.
 Nevertheless, I hope to add more and also improve the existing ones in future semesters.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q2|Q3"/>
@@ -101,21 +101,21 @@ Can't comment. I have stopped attending them.<br><span class="text-info bg-info"
 **:fas-comment: My comments:**
 
 
-==Unlike most modules that use lectures as the _primary_ mechanism for delivering module content, our lecture briefings
+==Unlike most courses that use lectures as the _primary_ mechanism for delivering course content, our lecture briefings
  serve as a _complementary_ 'top up'==, covering additional examples, motivations behind the topics, commentary on
  how to shape your attitudes related to the subject, anecdotes, etc.
-Hence, you can skip lecture briefings (or simply speed-watch the recording later) if you 
+Hence, you can skip lecture briefings (or simply speed-watch the recording later) if you
  are short of time or if you think they are not useful to you.
  Even the in-lecture quiz questions are 'optional' in the sense they are unlikely to make a
  difference in your final participation marks.<br>
  :fas-exclamation: Note: Totally ignoring the lecture briefings will exclude you from future CS2103/T tutor positions
- though, as I do not want to employ as a tutor someone who hasn't received the _full view_ of the module
- (I often talk about the goals/rationales of the module during lecture briefings
+ though, as I do not want to employ as a tutor someone who hasn't received the _full view_ of the course
+ (I often talk about the goals/rationales of the course during lecture briefings
  -- not examinable but important nevertheless, especially for a future tutor).
-   
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q5"/>
@@ -138,13 +138,13 @@ Although the majority is OK with online tutorials, we have now moved to F2F mode
 policy. Although online tutorials seem like a more 'efficient' mode (e.g., no need for travel), I expect physically
 meeting with team members often will have some intangible benefits for you in the long run.<br>
 We still use Zoom out of necessity (e.g., to share slides, to collect answers), and to get the best of
- both modes (e.g., to have a recording of the tutorial).<br> 
+ both modes (e.g., to have a recording of the tutorial).<br>
 Based on the experience so far, there are some areas to improve (e.g., interference caused by parallel tutorials)
  and we'll try to address them in the coming weeks, as best as we can.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q6"/>
@@ -167,9 +167,9 @@ Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light"
 
 Admittedly, our tutorials can feel slow, less efficient, or less active. For students who otherwise
   prepare well for the tutorials and actively take part in tutorial discussions, this is indeed the case.
-  I hope you still bear with us because ==the tutorial structure (like many other things in this module)
+  I hope you still bear with us because ==the tutorial structure (like many other things in this course)
   is intended to _raise the lower bar of the whole class_, which is important when there is a major team project
-  (to reduce the skill gap between team members)==. 
+  (to reduce the skill gap between team members)==.
   * **We start with a 10-minute warm up** to give everyone at least a chance to familiarize with the tutorial tasks
     even if they haven't had time to look at them earlier (we don't want them to be left out entirely).
   * **By requiring _everyone_ to respond via private messages**, we aim to get everyone to _think_ about the topic
@@ -180,25 +180,25 @@ Admittedly, our tutorials can feel slow, less efficient, or less active. For stu
     That said, we do want to have some verbal discussions to happen too. That's why we ask you to do the follow up
     discussions verbally.
   * **We monitor tutorial participation** because tutorials are used for ensuring that you all have achieved the desired
-    learning targets for the week. If not, slower students tend to neglect the theory part 
+    learning targets for the week. If not, slower students tend to neglect the theory part
     (in a misguided attempt to save time) and try to brute-force the project work, which wastes even more time,
     and also exacerbates the skill-gap problems in their teams.
   * So, while the number of questions we go through in each tutorial is fewer and the questions are simpler,
     _getting everyone to answer almost every question on the spot_ (this is different from answering a quiz _at your own
     convenience_, which we already do anyway) has ==a higher total learning gain for the entire class==.<br>
     So, if you are one of the
-    stronger students getting less out of our tutorials than you are used to get from other modules, I hope
+    stronger students getting less out of our tutorials than you are used to get from other courses, I hope
     you'll be generous and take a 'hit' here to allow your classmates to level up. You might even benefit yourself
     from their levelled-up contributions when you work with them in the team project.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q7"/>
 
-### Module website{.text-info}
+### Course website{.text-info}
 
 %%Option%% | %%Count%% %%(/101)%% | %%Percentage%%
 -------|-------|-----------
@@ -214,16 +214,16 @@ Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-ligh
 **:fas-comment: My comments:**
 
 
-The feedback for the module website is generally positive but there are still _some_ areas to improve further.
+The feedback for the course website is generally positive but there are still _some_ areas to improve further.
   Thanks for your feedback on those. I will continue to try and improve the website whenever I can.<br>
   In the meantime, I thank you for your patience with the website -- it's not easy to disseminate that much
   of information in a way that fits everyone's expectations %%(e.g., some prefer more content to be more 'visual'
   while others prefer minimalistic presentation)%%,
   and we realize that ==it is not easy for you to consume that much of information== either.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q9"/>
@@ -244,34 +244,34 @@ Too low.<br><span class="text-info bg-info"></span><span class="text-light bg-li
 **:fas-comment: My comments:**
 
 
-The most common concern about this module is the workload.
+The most common concern about this course is the workload.
   I’m afraid it is not going to get any lower in the second half :-(.
   Some suggestions:
   * If you struggled with the iP workload, don’t be too ambitious with the tP.
     In particular, choose the ‘evolve’ option rather than ‘morph’ option (it’s still not too late to change).
     If you choose the ‘morph’ option, don’t plan to morph it too far away from AB3.<br>
     Reminder: there are no marks allocated for marking the product interesting, unique, cool, etc.<br>
-    Also, keep in mind that it is the quality that will count more than the quantity. 
+    Also, keep in mind that it is the quality that will count more than the quantity.
     In most cases the quantity is graded on an S/U basis (refer to the tP briefing that we did just before
     the recess break for more info).
     Aim to do less but do it really well.
-  * If you don't have time to study all topics, use the 
-    [topic levels system](https://nus-cs2103-ay2223s2.github.io/website/admin/moduleExpectations.html#topic-levels)
+  * If you don't have time to study all topics, use the
+    [topic levels system](https://nus-cs2103-ay2223s2.github.io/website/admin/courseExpectations.html#topic-levels)
     to figure out which topics are higher priority.
-  * That said, we know the workload concern is real, and we firmly believe that no module should take more than
-    its fair share of students' time. On the other hand, this module aims to teach you SE skills that take a lot
+  * That said, we know the workload concern is real, and we firmly believe that no course should take more than
+    its fair share of students' time. On the other hand, this course aims to teach you SE skills that take a lot
     of practice (hence the high workload).<br>
-    We've managed to reduce the workload of this module quite bit over the past semesters, and we'll continue to
+    We've managed to reduce the workload of this course quite bit over the past semesters, and we'll continue to
     do so when we find ways to do that without compromising our learning outcomes.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q8"/>
 
-### The pace of the module{.text-info}
+### The pace of the course{.text-info}
 
 %%Option%% | %%Count%% %%(/100)%% | %%Percentage%%
 -------|-------|-----------
@@ -288,12 +288,12 @@ Too slow. Please speed up a lot.<br><span class="text-info bg-info"></span><span
 
 
 The pace itself seems to be less of a problem compared to the workload.<br>
-Don't worry if you feel like the module is moving too fast; thanks to the iterative approach we use for covering topics,
+Don't worry if you feel like the course is moving too fast; thanks to the iterative approach we use for covering topics,
  you'll get multiple chances to solidify your familiarity of a topic/tool.
-    
+
 </div>
-        
-        
+
+
 
 ---
 
@@ -304,7 +304,7 @@ Also note my **general response given at the bottom of this document**.</md></p>
 
 <table style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<th style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">Any other feedback about the module?</th>
+<th style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">Any other feedback about the course?</th>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
@@ -326,7 +326,7 @@ Given that, i still prefer having zoom tutorials.</markdown>
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>Thanks for giving deadline relaxations.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Deadlines are mostly there for you to self-monitor if you are keeping pace. They also serve you as opportunities to practice the skill of delivering on time, as that is an important learning outcome of the module.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Deadlines are mostly there for you to self-monitor if you are keeping pace. They also serve you as opportunities to practice the skill of delivering on time, as that is an important learning outcome of the course.</markdown>
 </span></box>
 </td>
 </tr>
@@ -358,7 +358,7 @@ That said, there's a good chance that you'll remember this 'gotcha' about pullin
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>The module is fine. My only complaint is that JavaFx is outdated and should really be changed to something more relevant in recent times like Swing. https://stackoverflow.com/questions/7358775/java-gui-frameworks-what-to-choose-swing-swt-awt-swingx-jgoodies-javafx </markdown>
+<markdown>The course is fine. My only complaint is that JavaFx is outdated and should really be changed to something more relevant in recent times like Swing. https://stackoverflow.com/questions/7358775/java-gui-frameworks-what-to-choose-swing-swt-awt-swingx-jgoodies-javafx </markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>JavaFX, while not very new, is the latest and the flagship GUI technology for Java desktop applications. It was created as a replacement for older technologies such as Swing and AWT. The S/O post you cited was written at a time JavaFX was still new and not yet established itself as the successor of the other technologies mentioned. Also, some of [my general responses](#general) are related to your comments.</markdown>
 </span></box>
@@ -398,7 +398,7 @@ That said, there's a good chance that you'll remember this 'gotcha' about pullin
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Overall I am enjoying the module as it has amplified my interest in Software Engineering. Credits go to the wonderful Professors and Wen Quan. 
+<markdown>Overall I am enjoying the course as it has amplified my interest in Software Engineering. Credits go to the wonderful Professors and Wen Quan.
 
 Maybe there could be a more in-depth tutorial for JavaFX. Personally I don't feel I was able to learn enough about JavaFX to operate and work with it on my own, after just going through the provided tutorial content. </markdown>
 
@@ -420,11 +420,11 @@ I agree that JavaFX is an area we lack learning resources for. Normally we can l
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>It's... really a lot, to the point my other modules and sleep are suffering. It feels like everything is important to do, if not necessary. I appreciate the warnings given at the start of sem, and I have no suggestions on how to improve it. 
+<markdown>It's... really a lot, to the point my other courses and sleep are suffering. It feels like everything is important to do, if not necessary. I appreciate the warnings given at the start of sem, and I have no suggestions on how to improve it.
 
-That being said, I'm enjoying this module a lot. The iP has been really fun and fulfilling.</markdown>
+That being said, I'm enjoying this course a lot. The iP has been really fun and fulfilling.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you are enjoying the module. Yes, the workload can be stressful at times. Hope you can manage. See [my comment on 'The workload'](#Q9).</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you are enjoying the course. Yes, the workload can be stressful at times. Hope you can manage. See [my comment on 'The workload'](#Q9).</markdown>
 </span></box>
 </td>
 </tr>
@@ -438,7 +438,7 @@ That being said, I'm enjoying this module a lot. The iP has been really fun and 
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>week 4 of the iP onwards was a bit hard to manage 
+<markdown>week 4 of the iP onwards was a bit hard to manage
 
 For tP I'm having some issues with my group mate not being helpful </markdown>
 
@@ -450,7 +450,7 @@ Some of [my general responses](#general) are related to your comments.</markdown
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Very well planned out module</markdown>
+<markdown>Very well planned out course</markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
 </span></box>
@@ -466,13 +466,13 @@ Some of [my general responses](#general) are related to your comments.</markdown
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Whilst I understand that it is an attempt to simulate how a project would progress in the industry, I feel that it would be better to first have the students to do clean code and explain how the code would develop. I feel that I spend too much time on refactoring or redoing my code just to fit the new requirements, or not being able to find a spot to place the new requirements that are not optional. 
+<markdown>Whilst I understand that it is an attempt to simulate how a project would progress in the industry, I feel that it would be better to first have the students to do clean code and explain how the code would develop. I feel that I spend too much time on refactoring or redoing my code just to fit the new requirements, or not being able to find a spot to place the new requirements that are not optional.
 
-I am grateful however, that this module is a little more flexible (i.e. week 5 can still be working on week 3 items), since CS2109's first few weeks is very code intensive, I found it very difficult to balance between refactoring and redoing code, and answering CS2109 problem sets. 
+I am grateful however, that this course is a little more flexible (i.e. week 5 can still be working on week 3 items), since CS2109's first few weeks is very code intensive, I found it very difficult to balance between refactoring and redoing code, and answering CS2109 problem sets.
 
 I am not very sure what is the point of the physical lecture right now, but perhaps it is because I came from a polytechnic background, and I know roughly what to expect from the industry and working with people. </markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>I suspect the 'clean code' approach you are referring to is what one would do in the waterfall SDLC i.e., come up with a design for the full product upfront, rather than evolving the design organically over time (as we are doing now). For students who don't have prior programming experience however, it is not realistic to come up with such a design upfront. Our hope is that all those refactoring difficulties that you face along the way will result in 'lessons learned' that will eventually make you better prepared to come up with such a clean design upfront. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>I suspect the 'clean code' approach you are referring to is what one would do in the waterfall SDLC i.e., come up with a design for the full product upfront, rather than evolving the design organically over time (as we are doing now). For students who don't have prior programming experience however, it is not realistic to come up with such a design upfront. Our hope is that all those refactoring difficulties that you face along the way will result in 'lessons learned' that will eventually make you better prepared to come up with such a clean design upfront.
 
 Glad to hear you are coping well with doing both CS2109S and CS2103/T at the same time.
 
@@ -482,13 +482,13 @@ Physical lectures are optional: they are for those who like to sit together with
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>The website is very detailed and I highly appreciate the effort. Seriously, in terms of quality of content, I would say this module is one of the best in NUS CS.
+<markdown>The website is very detailed and I highly appreciate the effort. Seriously, in terms of quality of content, I would say this course is one of the best in NUS CS.
 
- 
 
-However, I would like to suggest less "nesting" for the website. It is not uncommon to have to open drop-down menus 3-4 levels deep. It quickly becomes confusing which layer I am currently on. While I appreciate the effort, it may counter-intuitively make the website harder to comprehend. 
 
- 
+However, I would like to suggest less "nesting" for the website. It is not uncommon to have to open drop-down menus 3-4 levels deep. It quickly becomes confusing which layer I am currently on. While I appreciate the effort, it may counter-intuitively make the website harder to comprehend.
+
+
 
  </markdown>
 
@@ -500,23 +500,23 @@ Yes, the 'nesting' approach is not a good fit for everyone. Some of [my general 
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>The module website is very cluttered with sometimes irrelevant information and its hard to focus on the actual important stuff. Also the mobile version of the website does not display long images well, this was very apparent in the UML section where there were loads of diagrams.</markdown>
+<markdown>The course website is very cluttered with sometimes irrelevant information and its hard to focus on the actual important stuff. Also the mobile version of the website does not display long images well, this was very apparent in the UML section where there were loads of diagrams.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, the module is information heavy. So, it is a constant struggle to balance comprehensibility with comprehensiveness. For example, we try to put detalied explanations in collapsed panels so that the reader can get a big-picture view first before drilling down to details. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, the course is information heavy. So, it is a constant struggle to balance comprehensibility with comprehensiveness. For example, we try to put detalied explanations in collapsed panels so that the reader can get a big-picture view first before drilling down to details.
 
-See [my comment on 'Module website'](#Q7).</markdown>
+See [my comment on 'Course website'](#Q7).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>1. I don't like the module website, it's hard for a student to keep track of which are the parts that the student has already done reading, I don't like to navigate here and there. (I would rather have a pdf version of it so that students can annotate and take note on them)
+<markdown>1. I don't like the course website, it's hard for a student to keep track of which are the parts that the student has already done reading, I don't like to navigate here and there. (I would rather have a pdf version of it so that students can annotate and take note on them)
 
 2. I hate watching pre-recorded lecture, then suddenly I have to context switch to reading, then context switch to watching, and repeat. As you may have already known, switching between reading and watching videos modes are "expensive" for human (just like context switch in operating systems)
 
 3. The project task can cause serious workload cascading. If one didn't manage to follow the requirement for a particular week, he/she may be very difficult to follow the subsequent week's deliverables as they are built upon previous week's result. So, I suggest instead of making the deadline weekly, we make them biweekly.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>1. Yes, we realize the current approach may not fit some. See [my comment on 'Module website'](#Q7).
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>1. Yes, we realize the current approach may not fit some. See [my comment on 'Course website'](#Q7).
 
 2. Pre-recorded lectures are complementary. You may skip them if they are not helping you.
 
@@ -528,7 +528,7 @@ See [my comment on 'Module website'](#Q7).</markdown>
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>Is there a reason why we are using Java and JavaFX for learning front end development? I would have thought that using more modern frameworks such as React would be much more applicable to us.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>As we are building a desktop application, we are limited to desktop GUI technologies. JavaFX is the flagship GUI technology for desktop applications. React is for Web applications. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>As we are building a desktop application, we are limited to desktop GUI technologies. JavaFX is the flagship GUI technology for desktop applications. React is for Web applications.
 
 Some of [my general responses](#general) are related to your comments.</markdown>
 </span></box>
@@ -536,9 +536,9 @@ Some of [my general responses](#general) are related to your comments.</markdown
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I really enjoy the course and what it teaches, I just feel that it is very overwhelming at times. It'll be great if some weeks are just there to let us catch up/add additional features if we're free and interested to do so. I think that if I could afford to put more time into the module and feel constant stress, it'll be a lot more enjoyable. Currently, having to redo code in an iterative sense is giving a lot of anxiety because there seems to be so many other things to wrap my mind around and keep track of. I just think that if this module was given more MCs, or was given more time (2 semesters) it'll be a very wonderful learning experience.</markdown>
+<markdown>I really enjoy the course and what it teaches, I just feel that it is very overwhelming at times. It'll be great if some weeks are just there to let us catch up/add additional features if we're free and interested to do so. I think that if I could afford to put more time into the course and feel constant stress, it'll be a lot more enjoyable. Currently, having to redo code in an iterative sense is giving a lot of anxiety because there seems to be so many other things to wrap my mind around and keep track of. I just think that if this course was given more MCs, or was given more time (2 semesters) it'll be a very wonderful learning experience.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you enjoy the module. Yes, the workload is a bummer -- hope you can take advantage of the flexibility to control how much work you put into the module. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you enjoy the course. Yes, the workload is a bummer -- hope you can take advantage of the flexibility to control how much work you put into the course.
 
 See [my comment on 'The workload'](#Q9).</markdown>
 </span></box>
@@ -564,9 +564,9 @@ But the forums mostly addresses the problems I faced so far so overall I would s
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I am enjoying this module a lot. Regarding the workload, I find that the pacing is done well - much of the work is in the first 2 weeks, while other modules don't have that much assignments yet. After week 3 - 4, increments to our codebase slows down slows down significantly as our other modules have more submissions due. I think it is quite fair and I have enjoyed working on my IP so far. 
+<markdown>I am enjoying this course a lot. Regarding the workload, I find that the pacing is done well - much of the work is in the first 2 weeks, while other courses don't have that much assignments yet. After week 3 - 4, increments to our codebase slows down slows down significantly as our other courses have more submissions due. I think it is quite fair and I have enjoyed working on my IP so far.
 
-I appreciate the effort taken to constantly update us through the course website and dashboards, personalised emails and other channels of our progress in the module. I find it is very encouraging to receive such constant feedback about what is done well or could be done better.</markdown>
+I appreciate the effort taken to constantly update us through the course website and dashboards, personalised emails and other channels of our progress in the course. I find it is very encouraging to receive such constant feedback about what is done well or could be done better.</markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear everything is to your liking so far. Hope it remains so for the rest of the semester :-)</markdown>
 </span></box>
@@ -574,15 +574,15 @@ I appreciate the effort taken to constantly update us through the course website
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I do not think the module website is optimized for phone viewing. Contents are usually cut off when viewed on my phone. Also, for videos with quiz attached on phone browser (safari), after completing the quiz, when the continue button is clicked to close the quiz page and back to the video, the quiz tab reopens again (have to find some creative way to close it instead of the continue button if not it is an endless cycle of closing and reopening).
+<markdown>I do not think the course website is optimized for phone viewing. Contents are usually cut off when viewed on my phone. Also, for videos with quiz attached on phone browser (safari), after completing the quiz, when the continue button is clicked to close the quiz page and back to the video, the quiz tab reopens again (have to find some creative way to close it instead of the continue button if not it is an endless cycle of closing and reopening).
 
-Other than that, I appreciate that the profs are working towards bettering the welfare of the students. They are also passionate in what they do and teach, it is obviously manifested in the lectures, website, etc. Good job! I am enjoying this module a lot because of it.</markdown>
+Other than that, I appreciate that the profs are working towards bettering the welfare of the students. They are also passionate in what they do and teach, it is obviously manifested in the lectures, website, etc. Good job! I am enjoying this course a lot because of it.</markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Regarding the mobile friendliness of the website, acknowledged. Some of [my general responses](#general) are related to your comments.
 
 The issue with the in-video quizzes, I'm afraid it's beyond our control, as it's a third-party tool (called Panopto) used by NUS.
 
-Thanks for the kind words about the module :-).</markdown>
+Thanks for the kind words about the course :-).</markdown>
 </span></box>
 </td>
 </tr>
@@ -590,13 +590,13 @@ Thanks for the kind words about the module :-).</markdown>
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>I think it would be more manageable if the theory covered every week is less heavy. There is a lot to read on the website. Also, the quiz on Canvas covers questions that aren't covered during lecture and on the website, and the internet does not give a definite answer to those questions. Would be better if the questions are covered in class or the website itself.
 
-But I think the module is great and the classes are well executed, thank you!</markdown>
+But I think the course is great and the classes are well executed, thank you!</markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, the amount of theory coverd weekly tend to be on the high side, as we try to cover topics early so that you have more time to apply them in the project (it's like trying to cover 13 weeks of theory in about 10 weeks).
 
 Post-lecture quizzes aren't supposed to have questions not covered in the topics of that week. If you encounter any, please let us know.
 
-Thanks for the kind words about the module :-).</markdown>
+Thanks for the kind words about the course :-).</markdown>
 </span></box>
 </td>
 </tr>
@@ -610,7 +610,7 @@ Thanks for the kind words about the module :-).</markdown>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>for Q9 i put too high because while I still can manage at the moment, I think during the crunch weeks post midterms to week 13 it might be too much if the workload is still around the same since many other modules will ramp up their pace then.</markdown>
+<markdown>for Q9 i put too high because while I still can manage at the moment, I think during the crunch weeks post midterms to week 13 it might be too much if the workload is still around the same since many other courses will ramp up their pace then.</markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Your inclination to anticipate future workload and prepare in advance will hold you in good stead when doing SE projects :D</markdown>
 </span></box>
@@ -618,7 +618,7 @@ Thanks for the kind words about the module :-).</markdown>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I am really enjoying the module so far. I am seeing tangible results from my work in terms of having a functional product and having developed important skills such as version control. I am also very appreciative of the detailed one-to-one feedback that was provided by Prof Damith regarding our pre-module survey. I like the way that this module is carried out as personally, I prefer learning at my own pace.</markdown>
+<markdown>I am really enjoying the course so far. I am seeing tangible results from my work in terms of having a functional product and having developed important skills such as version control. I am also very appreciative of the detailed one-to-one feedback that was provided by Prof Damith regarding our pre-course survey. I like the way that this course is carried out as personally, I prefer learning at my own pace.</markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
 </span></box>
@@ -628,7 +628,7 @@ Thanks for the kind words about the module :-).</markdown>
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>Some of the content are already outdated and quite ambiguous. One of them is JavaFX</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Re 'ambigouos', yes, SE content does have an element of subjectiveness. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Re 'ambigouos', yes, SE content does have an element of subjectiveness.
 
 Re 'outdated', JavaFX is not new but it is still the latest desktop GUI technology in the Java world (i.e., not outdated).
 
@@ -638,9 +638,9 @@ Some of [my general responses](#general) are related to your comments.</markdown
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Module load really high, struggling to submit the deliverables every week.</markdown>
+<markdown>Course load really high, struggling to submit the deliverables every week.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Sorry to hear that. Hope you managed to catch up during the recess week. 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Sorry to hear that. Hope you managed to catch up during the recess week.
 
 See [my comment on 'The workload'](#Q9).</markdown>
 </span></box>
@@ -663,7 +663,7 @@ Given below are some general responses to points you guys (and past students) ra
   Hence, it's fine if you are not very comfortable with JavaFX -- the tP/iP can be done without an in-depth
   knowledge of it.<br>
   At the same time, it is good to get _some_ exposure to a GUI framework too.
-  While JavaFX is not the best GUI framework, it has some similarities with other GUI frameworks 
+  While JavaFX is not the best GUI framework, it has some similarities with other GUI frameworks
   (e.g, use of CSS for styling) and knowing it might help you if you had to use one such GUI framework in future.
 * **Audio too soft in pre-recorded videos**: Those videos were recorded in PowerPoint first and then converted to
   videos. It turns out that when converting slides to videos,
@@ -678,8 +678,8 @@ Given below are some general responses to points you guys (and past students) ra
 * **Website structure is not intuitive**: It is understandable that you feel like a website with less 'nesting'
   (i.e., a 'flatter' version) would be easier to use. After all, many other good websites are designed that way.
   But, our website is a 'monster' amount of content with a lot of cross-links, for example, the same content
-  becoming relevant at multiple points of the semester. This is mainly a result of the iterative approach we 
-  follow for the project as well as covering topics. In that sense it is closer to a Java codebase rather than 
+  becoming relevant at multiple points of the semester. This is mainly a result of the iterative approach we
+  follow for the project as well as covering topics. In that sense it is closer to a Java codebase rather than
   a regular website -- imagine trying to read a code base from top to bottom without jumping around!<br>
   At some point in the past, we did an [A/B test](https://hbr.org/2017/06/a-refresher-on-ab-testing#:~:text=What%20Is%20A,100%20years%20old.)
   with a 'flatter' version against a 'nested' version of the website: we made both versions available to students,

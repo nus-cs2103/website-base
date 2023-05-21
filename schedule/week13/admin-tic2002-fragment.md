@@ -10,7 +10,7 @@
 
 #### {{ thumb(1) }} Attend the mock exam {{ timing_badge("during lecture", "secondary") }}
 
-* This week's lecture will give a brief recap of the module and brief you about the exam.
+* This week's lecture will give a brief recap of the course and brief you about the exam.
 
 <!-- ==================================================================================================== -->
 {{ heading_project }}

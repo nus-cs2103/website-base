@@ -1,7 +1,7 @@
 <span id="lectures-s1">
 
 {{ lecture_table_headers | trim }}
-{{ module }}/T | ICube Auditorium | Friday **1600**-1800
+{{ course }}/T | ICube Auditorium | Friday **1600**-1800
 
 * The lecture recording will be made available later during the same day.
 </span>
@@ -9,7 +9,7 @@
 <span id="lectures-s2">
 
 {{ lecture_table_headers | trim }}
-{{ module }}/T | ICube Auditorium | **1400**-1600
+{{ course }}/T | ICube Auditorium | **1400**-1600
 
 The lecture recording will be made available later during the same day.
 </span>

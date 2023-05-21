@@ -21,8 +21,8 @@ Instructions below are from the previous semester. Will be updated closer to the
 * Examplify is set to block internet access during the exam.
 * However, you are allowed to refer to the PDF version of the textbook and your own notes on your laptop.
 * Permitted materials: <br>
-  PDF of the module textbook, lecture slides (allowed format: PPT/PDF), self-created notes (please convert everything to PDF). <br>
-  A printed copy of the module textbook, hand-written notes. <br>
+  PDF of the course textbook, lecture slides (allowed format: PPT/PDF), self-created notes (please convert everything to PDF). <br>
+  A printed copy of the course textbook, hand-written notes. <br>
   No other device other than the laptop you are using to take the exam is allowed; however, NUS-approved calculators are allowed.
 
 ## Exam structure

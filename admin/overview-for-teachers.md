@@ -5,11 +5,11 @@ pageNav: 2
 
 # ++CS2103/T Overview (Teacher's POV)++
 
-**The goal of the module is to prepare students for SE internships** (note: most students do their first internship at the end of their second year, before taking any other SE modules). That includes teaching students **basic SE concepts** as well as giving them enough **practice in tools, techniques, and practices used in the industry**. This is a CS foundation module, which also can be considered as the entry point to the SE focus area, as most other SE modules have this module in the prerequisite chain.
+**The goal of the course is to prepare students for SE internships** (note: most students do their first internship at the end of their second year, before taking any other SE courses). That includes teaching students **basic SE concepts** as well as giving them enough **practice in tools, techniques, and practices used in the industry**. This is a CS foundation course, which also can be considered as the entry point to the SE focus area, as most other SE courses have this course in the prerequisite chain.
 
 <box type="info" seamless>
 
-**CS2103T vs CS2103:** CS2103T students take CS2101 (Effective Communication for Computing Professionals) at the same time so that they can learn communication skills in the context of the SE project they do in CS2103T. CS2103 is for students who have already taken a different communications module (these are mostly cross-faculty students).<br>
+**CS2103T vs CS2103:** CS2103T students take CS2101 (Effective Communication for Computing Professionals) at the same time so that they can learn communication skills in the context of the SE project they do in CS2103T. CS2103 is for students who have already taken a different communications course (these are mostly cross-faculty students).<br>
  From our side, we treat both groups of students the same way.
 </box>
 
@@ -124,7 +124,7 @@ Note that the end product of both projects are not meant to be big, as the proje
 
 ## Participation{.text-info}
 
-[Participation marks](participation.html) are awarded for actively participating in the module activities. To reduce workload stress, students are given full participation marks if they meet a reasonably low bar of participation (e.g., earn at least half the participation points on offer, in at least 10 weeks). Almost all students are expected to earn full marks for this component.
+[Participation marks](participation.html) are awarded for actively participating in the course activities. To reduce workload stress, students are given full participation marks if they meet a reasonably low bar of participation (e.g., earn at least half the participation points on offer, in at least 10 weeks). Almost all students are expected to earn full marks for this component.
 
 Students can track their own participation level using a participation dashboard.  [Here](https://nus-cs2103-ay2122s2.github.io/dashboards//contents/participation.html) is an example (from a previous semester) -- click on the %%{{ icon_info }}%% near the student number to see the details of activities considered.
 
@@ -135,7 +135,7 @@ Note that some examples of online dashboards (like the one above) are from a pre
 
 <box type="info" seamless>
 
-**The use of dashboards brings in an element of _gamification_ to the module**, by framing work as small 'achievements' and making those achievements visible (like a 'leaderboard') to keep students motivated.
+**The use of dashboards brings in an element of _gamification_ to the course**, by framing work as small 'achievements' and making those achievements visible (like a 'leaderboard') to keep students motivated.
 </box>
 
 ---------------------------------{.dotted .border-info}
@@ -223,25 +223,25 @@ abstract class ProgressWatcher implements Watcher{
 </div>
 <p/>
 
-As the module is heavy on the practice side, it does not contain a heavy/deep theory component. Therefore, the **exam assesses whether students can _fluently_ apply a variety of concepts in a real project context**, by requiring students to answer questions at a rapid pace (e.g., 2 minutes per MCQ + Short answer question pair). The exam is open-book.
+As the course is heavy on the practice side, it does not contain a heavy/deep theory component. Therefore, the **exam assesses whether students can _fluently_ apply a variety of concepts in a real project context**, by requiring students to answer questions at a rapid pace (e.g., 2 minutes per MCQ + Short answer question pair). The exam is open-book.
 
 ----------------------------{.thick-1 .border-danger}
 
 # Challenges{.text-danger}
 
-Albeit being academically strong, most our students lack programming experience outside of school modules. Getting them to be ready to work in an actual SE project is a formidable challenge. especially when done at a scale of ~500 students/semester.
-Following from the main goal of the module (i.e., preparing students for internships), there are two key requirements that makes CS2103/T harder to run than a typical first SE module:
+Albeit being academically strong, most our students lack programming experience outside of school courses. Getting them to be ready to work in an actual SE project is a formidable challenge. especially when done at a scale of ~500 students/semester.
+Following from the main goal of the course (i.e., preparing students for internships), there are two key requirements that makes CS2103/T harder to run than a typical first SE course:
 
-1. **The need to train students on the iterative software development process**: While the more common approach is for the first SE module to train students on a _sequential_ (i.e., _waterfall_) process and move to an _iterative_ process in the second SE module, this module needs to train students on the more industry-friendly iterative process from the beginning, as some may go for internships before taking a second SE module.
+1. **The need to train students on the iterative software development process**: While the more common approach is for the first SE course to train students on a _sequential_ (i.e., _waterfall_) process and move to an _iterative_ process in the second SE course, this course needs to train students on the more industry-friendly iterative process from the beginning, as some may go for internships before taking a second SE course.
 2. **The need to train students to work in both greenfield and brownfield projects**: As internships can involve both types of projects, we need to train students for both.
 
 ---------------------------{.dotted .border-danger}
 
 ### Challenge 1: Iterative topic delivery can disorient students.{.text-danger}
 
-When following an iterative process in the project, topic coverage itself needs to be iterative i.e., cover basics of all topics first, and go progressively deeper into all topics (in parallel) as the semester progresses. %%Reason: we cannot spend the first few weeks on the topic of _Requirements_ alone because students need to know about design, implementation, testing, etc. when doing their first iteration of the project%%. However, iterative topic coverage results in each topic being delivered as multiple fragments over many weeks, which can disorient students and make it harder for them to see the 'full picture'. The [module timeline](timeline.html) page shows how the module jumps between multiple topics every week.
+When following an iterative process in the project, topic coverage itself needs to be iterative i.e., cover basics of all topics first, and go progressively deeper into all topics (in parallel) as the semester progresses. %%Reason: we cannot spend the first few weeks on the topic of _Requirements_ alone because students need to know about design, implementation, testing, etc. when doing their first iteration of the project%%. However, iterative topic coverage results in each topic being delivered as multiple fragments over many weeks, which can disorient students and make it harder for them to see the 'full picture'. The [course timeline](timeline.html) page shows how the course jumps between multiple topics every week.
 
-**Solution: A full-fledged module website to guide students through the module contents.** We built a website authoring tool called [MarkBind](https://markbind.org) that we then used to create the module website. MarkBind is able to present the same content in different ways without duplicating content. Here is an example of how this helps with the disorientation caused by the iterative topic delivery:
+**Solution: A full-fledged course website to guide students through the course contents.** We built a website authoring tool called [MarkBind](https://markbind.org) that we then used to create the course website. MarkBind is able to present the same content in different ways without duplicating content. Here is an example of how this helps with the disorientation caused by the iterative topic delivery:
  * The topics covered each week are presented as a separate page (e.g., the [Schedule -> Week 7 -> Topics](../schedule/week7/topics.html) page), with additional commentary (in light green boxes) to guide students through the topics.
  * The same content are presented in their logical order in the [Textbook page](../se-book-adapted/index.html). This can be used when students study for exams at the end of the semester, or when when looking up a topic.
 
@@ -280,7 +280,7 @@ Given the large class size, evaluating the projects fairly, uniformly, and rigor
 
 # Achievements{.text-success}
 
-Given next are some notable achievements of the module.
+Given next are some notable achievements of the course.
 
 ---------------------------{.dotted .border-success}
 
@@ -297,7 +297,7 @@ Their work is (e.g., code committed, pull requested reviewed, issues created, up
 
 ### Achievement 2: Well-received despite many 'unpopular' choices{.text-success}
 
-This module makes numerous 'unpopular' choices, some of which are given below:
+This course makes numerous 'unpopular' choices, some of which are given below:
 
 1. **Our approach: Lectures give only a preview of the topics** and the motivation for learning them.<br>
    Rationale: To encourage self-learning at own pace.<br>
@@ -307,13 +307,13 @@ This module makes numerous 'unpopular' choices, some of which are given below:
    Rationale: To encourage students to go through the textbook instead of relying on slides as the sole source of contents.<br>
    Students prefer: Slides that can be printed and used as study materials.
 
-1. **Our approach: Tutors are not allowed to give technical help.** We require students to resolve technical issues via the [module forum]({{url_forum}}). Forum use is monitored ([example](https://nus-cs2103-ay2223s1.github.io/dashboards/contents/forum-activities.html)) and rewarded.<br>
+1. **Our approach: Tutors are not allowed to give technical help.** We require students to resolve technical issues via the [course forum]({{url_forum}}). Forum use is monitored ([example](https://nus-cs2103-ay2223s1.github.io/dashboards/contents/forum-activities.html)) and rewarded.<br>
    Rationale: To encourage peer support. To wean off students from being too reliant on tutors for solving technical problems.
 
 1. **Our approach: Tutors are not allowed to give specific feedback on students' project work.** Instead, we use alternative means to guide students through the project (e.g., discuss a hypothetical project to figure out common mistakes students make in the project).<br>
    Rationale: To encourage students to make their own project decisions. To avoid tutors influencing the project outcomes.
 
-1. **Our approach: Many deliverables, every week.** This [Summary of the Module Timeline](../schedule/timeline.html) page shows how many project and admin tasks are due in each week. In addition, most weeks have optional in-lecture and in-video quizzes, not forgetting the tutorial tasks ([example](../schedule/week7/tutorial.html)).<br>
+1. **Our approach: Many deliverables, every week.** This [Summary of the Course Timeline](../schedule/timeline.html) page shows how many project and admin tasks are due in each week. In addition, most weeks have optional in-lecture and in-video quizzes, not forgetting the tutorial tasks ([example](../schedule/week7/tutorial.html)).<br>
    Rationale: To ensure students learn and apply the topics in a timely manner, rather than try to do everything near the end of the semester.
 
 1. **Our approach: Require students to use an existing code base** for the team project, and a pre-selected tool stack, and follow a prescribed workflow in the project (e.g., follow a [forking workflow](../book/revisionControl/forkingWorkflow/)).<br>
@@ -324,11 +324,11 @@ This module makes numerous 'unpopular' choices, some of which are given below:
    Rationale: To achieve a higher rigor in testing the quality of student work.<br>
    Students prefer: Teaching team does all the evaluations.
 
-Despite all the above (and more) unpopoular choices, the module continues to receive good student feedback, even in the face of increasing student numbers. Given below is the student feedback rating for CS2103T (semester 1) across recent years.
+Despite all the above (and more) unpopoular choices, the course continues to receive good student feedback, even in the face of increasing student numbers. Given below is the student feedback rating for CS2103T (semester 1) across recent years.
 
 <div class="indented-level2">
 
-Year | Class size | Module rating %%(dept average)%% | Teacher rating %%(dept average)%%
+Year | Class size | Course rating %%(dept average)%% | Teacher rating %%(dept average)%%
 -----|:----------:|:--------------------------------:|:---------:
 2018 |  113       | 3.8 <small>%%(3.8)%%</small>     | 4.1 <small>%%(4.1)%%</small>
 2019 |  117       | 4.0 <small>%%(3.8)%%</small>     | 4.4 <small>%%(4.2)%%</small>
@@ -340,11 +340,11 @@ Year | Class size | Module rating %%(dept average)%% | Teacher rating %%(dept av
 
 ### Achievement 3: Scaled up without losing rigor{.text-success}
 
-While SE modules are notoriously hard to scale, we have done reasonably well in scaling this module to 500 students, without a significant drop in rigor of evaluation (thanks to the practical exam), and without a significant increase in teaching resources (e.g., tutor hours).
+While SE courses are notoriously hard to scale, we have done reasonably well in scaling this course to 500 students, without a significant drop in rigor of evaluation (thanks to the practical exam), and without a significant increase in teaching resources (e.g., tutor hours).
 Strategies used:
 
-1. **Heavy use of automation**: The module uses automation heavily (supported by about 20,000 LoC of Python scripts) e.g., generating dashboards from various sources of data. In addition, the module uses the following EdTech tools that were built by our students primarily to support this module but currently used by other modules as well:
-   * [MarkBind](https://markbind.org): Used to create the module website
+1. **Heavy use of automation**: The course uses automation heavily (supported by about 20,000 LoC of Python scripts) e.g., generating dashboards from various sources of data. In addition, the course uses the following EdTech tools that were built by our students primarily to support this course but currently used by other courses as well:
+   * [MarkBind](https://markbind.org): Used to create the course website
    * [TEAMMATES](https://teammatesv4.appspot.com/): For peer evaluations
    * [RepoSense](https://reposense.org): To generate code dashboards
    * [CATcher](https://catcher-org.github.io): To support the practical exam

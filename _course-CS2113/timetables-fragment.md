@@ -1,13 +1,13 @@
 <span id="lectures-s1">
 
 {{ lecture_table_headers | trim }}
-{{ module }}/T | ~~LT19~~ | Friday **1600**-1800
+{{ course }}/T | ~~LT19~~ | Friday **1600**-1800
 </span>
 
 <span id="lectures-s2">
 
 {{ lecture_table_headers | trim }}
-{{ module }}/T | ICube Auditorium | **1400**-1600
+{{ course }}/T | ICube Auditorium | **1400**-1600
 </span>
 
 <span id="tutorials-s1">

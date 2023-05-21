@@ -12,7 +12,7 @@
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("[Revisiting] SDLC Process Models", reuse=false) %}
 
-Remember these three topics that we covered early in the module?
+Remember these three topics that we covered early in the course?
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

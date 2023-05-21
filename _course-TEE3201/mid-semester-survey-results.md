@@ -4,7 +4,7 @@
 </h1>
 
 <p class="lead">
-Given below are the summary results of your ratings on various aspects of the module and my general comments on some
+Given below are the summary results of your ratings on various aspects of the course and my general comments on some
 of them.
 </p>
 
@@ -34,13 +34,13 @@ Can't comment. I have stopped attending them.<br><span class="text-info bg-info"
 **:fas-comment: My comments:**
 
 
-Good to see that lecture briefings are generally well-received. 
+Good to see that lecture briefings are generally well-received.
 Also keep in mind that they are meant to be 'briefings' only -- as the learning the full content is expected to be
 done at your own pace, using the textbook and the pre-recorded videos.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q2"/>
@@ -63,16 +63,16 @@ Can't comment. I don't watch them.<br><span class="text-info bg-info"></span><sp
 
 
 Good to see that pre-recorded lecture videos are generally well-received.
-I'll continue to improve the existing ones and add more videos. 
-    
+I'll continue to improve the existing ones and add more videos.
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q3"/>
 
-### Module website{.text-info}
+### Course website{.text-info}
 
 %%Option%% | %%Count%% %%(/12)%% | %%Percentage%%
 -------|-------|-----------
@@ -88,16 +88,16 @@ Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light"
 **:fas-comment: My comments:**
 
 
-The feedback for the module website seems to be generally positive but there are areas to improve too.
+The feedback for the course website seems to be generally positive but there are areas to improve too.
   I will continue to try and improve the website whenever I can.<br>
   In the meantime, I thank you for your patience with the website -- it's not easy to disseminate that much
   of information in a way that fits everyone's expectations %%(e.g., some prefer more content to be more 'visual'
   while others prefer minimalistic presentation)%%,
   and I realize that ==it is not easy for you to consume that much of information== either.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q5"/>
@@ -118,26 +118,26 @@ Too low. <br><span class="text-info bg-info"></span><span class="text-light bg-l
 **:fas-comment: My comments:**
 
 
-* **If the workload is too high:** I realize this module can feel heavy, especially if you don't have prior programming
+* **If the workload is too high:** I realize this course can feel heavy, especially if you don't have prior programming
   experience, and also if you have a day job too.<br>
-  That said, SE modules are usually heavy because learning SE skills needs a lot of practice.<br>
+  That said, SE courses are usually heavy because learning SE skills needs a lot of practice.<br>
   I try to alleviate the workload problem by keeping deadlines fairly flexible and maintaining a low bar for
   the minimum you need to do to get a decent grade.<br>
-  It's OK to fall behind a bit when you are busy with other things, as long as you don't fall too far behind. 
+  It's OK to fall behind a bit when you are busy with other things, as long as you don't fall too far behind.
 * **If you have room for more work:**
   * Try to do more in the project: The project is open ended are you are encouraged to do as much as you want.
     You can refer to [Monty full description](https://nus-tee3201.github.io/2023/programming/chapters/monty.html) to find
     more things you can do with it.
   * Learn the optional topics i.e., level 4 topics.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q4"/>
 
-### The pace of the module{.text-info}
+### The pace of the course{.text-info}
 
 %%Option%% | %%Count%% %%(/12)%% | %%Percentage%%
 -------|-------|-----------
@@ -154,16 +154,16 @@ Too slow. Please speed up a lot.<br><span class="text-info bg-info"></span><span
 
 
 * **If the pace is too fast for you:** Not to worry; thanks to the iterative approach we use for covering topics,
-  you'll get multiple chances to solidify your familiarity of a topic/tool. Do what you can every week and 
+  you'll get multiple chances to solidify your familiarity of a topic/tool. Do what you can every week and
   ==try not to fall too far behind== though.
-* **If the pace is too slow for you:** Also cover the optional topics. 
+* **If the pace is too slow for you:** Also cover the optional topics.
   Also, go deeper into the Python topics covered. Python resources are generally easy to find online.
   If that's not enough, drop me a note with which topics/aspects you would like to leann more and I can suggest
   more resources for you.
-    
+
 </div>
-        
-        
+
+
 
 ---
 
@@ -174,7 +174,7 @@ Also note my **general response given at the bottom of this document**.</md></p>
 
 <table style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<th style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">Any other feedback about the module?</th>
+<th style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">Any other feedback about the course?</th>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
@@ -200,7 +200,7 @@ Also note my **general response given at the bottom of this document**.</md></p>
 
 
 
-The theory part of this module is relatively light as the module is not part of a computing degree. If you are interested, you can refer to a bigger version of the textbook at https://se-education.org/se-book/ (while most content in there are general SE, code examples are in Java only).</markdown>
+The theory part of this course is relatively light as the course is not part of a computing degree. If you are interested, you can refer to a bigger version of the textbook at https://se-education.org/se-book/ (while most content in there are general SE, code examples are in Java only).</markdown>
 </span></box>
 </td>
 </tr>
@@ -246,8 +246,8 @@ Given below are some general responses to points you guys (and past students) ra
   In the meantime, you can get more programming practice by doing more in the project.
   You can refer to [Monty full description](https://nus-tee3201.github.io/2023/programming/chapters/monty.html) to find
   more things you can do with it.
-* **Looking for more feedback on code written?**: Unlike lower-level programming modules, giving specific feedback
-  on code written in an SE module takes a lot more expertise/effort, and such feedback is still rather subjective.
-  We do not do that in any of our SE modules.
+* **Looking for more feedback on code written?**: Unlike lower-level programming courses, giving specific feedback
+  on code written in an SE course takes a lot more expertise/effort, and such feedback is still rather subjective.
+  We do not do that in any of our SE courses.
   Instead, we train students to slowly learn how to self-judge your own code.
   In addition, we'll be teaching you some code quality guidelines that you can apply to your code later.

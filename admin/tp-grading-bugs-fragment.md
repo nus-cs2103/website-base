@@ -73,7 +73,7 @@ These are considered _functionality bugs_:<br>
 <span id="umlDiagramBugs">
 
 :fas-bug: UML diagrams:
-* Notation incorrect or not compliant with the notation covered in the module.
+* Notation incorrect or not compliant with the notation covered in the course.
 * Some other type of diagram used when a UML diagram would have worked just as well.
 * The diagram used is not suitable for the purpose it is used.
 * The diagram is too complicated.

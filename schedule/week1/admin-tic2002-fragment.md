@@ -4,14 +4,14 @@
 {% call show_admin_summary() %}
 1. Install Java {{ timing_badge("before the lecture") }}
 1. Create a GitHub account
-1. Submit the pre-module survey  {{ timing_badge("by " + get_date(date_w1_start, 4)) }}
+1. Submit the pre-course survey  {{ timing_badge("by " + get_date(date_w1_start, 4)) }}
 1. Attend the lecture
 1. Submit weekly exercises
 {% endcall %}
 
-#### {{ thumb(0) }} Learn about the module and the website
+#### {{ thumb(0) }} Learn about the course and the website
 
-{{ embed_topic("../../admin/index-tic2002-fragment.md#module-info", "Admin " + icon_embedding + " About the module", "week1Admin-java", "2") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#course-info", "Admin " + icon_embedding + " About the course", "week1Admin-java", "2") }}
 {{ embed_topic("../../admin/index-tic2002-fragment.md#website-info", "Admin " + icon_embedding + " Using the website", "week1Admin-java", "2") }}
 
 
@@ -29,9 +29,9 @@
 {{ embed_topic("../../admin/index-tic2002-fragment.md#github-info", "Admin " + icon_embedding + " Tools → GitHub", "week1Admin-github", "2") }}
 
 
-#### {{ thumb(3) }} Submit the pre-module survey  {{ timing_badge("by " + get_date(date_w1_start, 4), "secondary") }}
+#### {{ thumb(3) }} Submit the pre-course survey  {{ timing_badge("by " + get_date(date_w1_start, 4), "secondary") }}
 
-* Submit the pre-module survey, available on Canvas
+* Submit the pre-course survey, available on Canvas
 
 #### {{ thumb(4) }} Attend the lecture
 * There is no tutorial in this week. The lecture will start at 7.30pm.

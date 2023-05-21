@@ -1,6 +1,6 @@
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "_module-" + module + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
+{% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
 
 {% call show_admin_page("tp-timeline") %}
 <div id="main">
@@ -133,7 +133,7 @@ The first half of the tP is light because you will be doing the iP in parallel d
 
 </div>
 
-**The final submission** will be at the {{ "end" if module == "TIC4001" else "start" }} of week 13. [Deliverables](tp-deliverables.html) include an executable jar file, a product website (containing both user and developer documentation), a demo video, among other things.
+**The final submission** will be at the {{ "end" if course == "TIC4001" else "start" }} of week 13. [Deliverables](tp-deliverables.html) include an executable jar file, a product website (containing both user and developer documentation), a demo video, among other things.
 
 <div class="indented-level2" tags="m--cs2113 m--cs2103 m--tic4002">
 

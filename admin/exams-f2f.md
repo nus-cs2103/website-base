@@ -10,7 +10,7 @@ Instructions below are from the previous semester. Will be updated closer to the
 
 
 1. **Weightage:** {{ marks_exam }}% of the final grade.
-1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ module }}).
+1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ course }}).
 1. The exam will be done **face-to-face, but using Examplify**.<br>
   Please use these resources if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
    * [slides](https://wiki.nus.edu.sg/x/daBJCw) (refer to the slides on _On-Campus exam_)
@@ -74,7 +74,7 @@ Why is it incorrect? _____
 
 <panel haader="A sample question" expanded >
 
-==[**SELECT ALL**]== Which are UML diagrams covered in the module?.
+==[**SELECT ALL**]== Which are UML diagrams covered in the course?.
 
 A. Class diagrams.<br>
 B. Object diagrams.<br>

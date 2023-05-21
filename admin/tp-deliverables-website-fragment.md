@@ -92,7 +92,7 @@ Reason: screenshot not cropped cleanly (contains extra background details)
 The purpose of the profile photo is for the reader to identify you. Therefore, choose a ==recent individual photo showing your face clearly== (i.e., not too small) -- somewhat similar to a passport photo. Given below are some examples of good and bad profile photos.<br>
 <img src="{{baseUrl}}/admin/images/profilephotos.png" style="width: 365.33px">
 
-If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use [a placeholder image](https://en.wikipedia.org/wiki/File:Portrait_placeholder.png) in place of the photo in module-related documents that are publicly visible.
+If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use [a placeholder image](https://en.wikipedia.org/wiki/File:Portrait_placeholder.png) in place of the photo in course-related documents that are publicly visible.
 
 </div>
 

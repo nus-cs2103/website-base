@@ -3,13 +3,13 @@
 {% call show_admin_page("appendixA-principles") %}
 <div id="main">
 
-These are some of the main principles underlying the module structure.
+These are some of the main principles underlying the course structure.
 
 <box type="important" seamless>
 The product is you, NOT what you build.
 </box>
 
-The software product you build is a side effect only. You are the product of this module. This means,
+The software product you build is a side effect only. You are the product of this course. This means,
 
 * We may not take the most efficient route to building the software product. **We take the route that allows you to learn the most**.
 * Building a software product that is unique, creative, and shiny is not our priority (although we try to do a bit of that too). **Learning to take pride in, and discovering the joy of, high quality software engineering work is our priority**.
@@ -148,11 +148,11 @@ Teach each other, even those in other teams. Those who do it well can become tut
 
 We want to train you to do software engineering in a steady and repeatable manner that does not require 'last minute heroics'.
 
-In this module, last minute heroics will not earn you a good project grade, and last minute mugging will not earn you a good exam grade.
+In this course, last minute heroics will not earn you a good project grade, and last minute mugging will not earn you a good exam grade.
 
 **Where you reach at the end matters, NOT what you knew at the beginning.**
 
-When you start the module, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. All marks allocated to intermediate deliverables are within the reach of everyone in the class irrespective of their prior knowledge.
+When you start the course, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. All marks allocated to intermediate deliverables are within the reach of everyone in the class irrespective of their prior knowledge.
 
 </div>
 

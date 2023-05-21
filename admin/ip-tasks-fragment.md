@@ -1,7 +1,7 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/topics.njk" import panopto with context %}
 {% from "common/macros.njk" import button, embed_topic, get_date, step, thumb, timing_badge with context %}
-{% from "_module-" + module + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
+{% from "_course-" + course + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
  # Common text segments
@@ -265,7 +265,7 @@ Note the following when you do the `A-Jar` increment given above:
 
 * **Practice using parallel git branches _and_ PRs**, as explained below:
 1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
-1. Then, push each branch to your fork, and create a PR !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_module_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
+1. Then, push each branch to your fork, and create a PR !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_course_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
 
 {{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=1) }}
 
@@ -313,10 +313,10 @@ Note the following when you do the `A-Jar` increment given above:
 
 One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
 
-****Good OOP != OOP is good****: While the module pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
+****Good OOP != OOP is good****: While the course pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
 That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
 
-**OOP is primary paradigm for this module and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this module. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
+**OOP is primary paradigm for this course and you are expected to try to push it to its limits.** That should give you a first-hand experience of OOP's strengths and weaknesses. Furthermore, OOP (or any other paradigm) will appear worse than it really is if not used correctly, and learning to use it correctly in increasingly larger systems is another objective you can aim for in this course. {% if cs2103 %}As you do the tP later, you'll also realize that while OOP is used for the internal design of its components, the higher-level design is not specifically an OOP one.{% endif %}<br>
 
 **We do not prohibit the use of other paradigms**, however. For example, if you find a place where the _functional_ approach is better, go ahead and use it. As you know, Java supports functional programming to a certain extent. {% if cs2103 %}In fact, the tP code given to you uses small snippets of functional-style code in several places.{% endif %}
 </panel>
@@ -345,7 +345,7 @@ That said, it is also preferable to use one paradigm as the primary approach and
 If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branches when you forked), here are the Git commands for (one of many ways of) fetching and merging the `add-gradle-support` branch from the upstream repo that you forked from:<br>
 
 1. Add the upstream repo as a remote, and give it the name `upstream`:<br>
-`git remote add upstream {{ url_module_org }}/{{ ip_repo_name }}.git`
+`git remote add upstream {{ url_course_org }}/{{ ip_repo_name }}.git`
 1. Switch to the `master` branch, if you are not on it already:<br>
 `git checkout master`
 1. Fetch the `add-gradle-support` from the remote `upstream`:<br>
@@ -355,7 +355,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 
 Alternatively see the panel below on some general info on how to pull a branch from another remote repo, but note,
 
-* the remote to pull _from_ is `{{ url_module_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
+* the remote to pull _from_ is `{{ url_course_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
 * the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
 * the branch to pull is `add-gradle-support` (not `master`)
 
@@ -402,7 +402,7 @@ Alternatively see the panel below on some general info on how to pull a branch f
 <span id="heading_set_up_prerequisites">Set up prerequisites</span>
 <div id="desc_set_up_prerequisites">
 
-* **Ensure you have followed the <span class="ps-1 pe-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following module tools:**
+* **Ensure you have followed the <span class="ps-1 pe-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following course tools:**
 
 {{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="2") }}
@@ -421,13 +421,13 @@ Read through this week's topics before starting the project.<br>
 {{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "2") }}
 </box>
 
-1. **Fork** [{{ url_module_org }}/{{ ip_repo_name }}]({{ url_module_org }}/{{ ip_repo_name }}), while noting the points below:<br>
-   <box type="important" seamless><md>==**Keep the fork name as `{{ ip_repo_name }}`**== or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the module.</md></box>
+1. **Fork** [{{ url_course_org }}/{{ ip_repo_name }}]({{ url_course_org }}/{{ ip_repo_name }}), while noting the points below:<br>
+   <box type="important" seamless><md>==**Keep the fork name as `{{ ip_repo_name }}`**== or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the course.</md></box>
    <box type="tip" seamless><md>**Untick the `[ ] Copy the master branch only` option** so that you get a copy of the full repo.</md></box>
 1. ==**Enable the issue tracker** of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
    <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`</md></box>
 1. **Clone the fork** onto your computer.
-1. **Set up the project in your IDE** as explained in [the README file]({{ url_module_org }}/{{ ip_repo_name }}/blob/master/README.md), unless you don't wish to use an IDE for the project.<br>
+1. **Set up the project in your IDE** as explained in [the README file]({{ url_course_org }}/{{ ip_repo_name }}/blob/master/README.md), unless you don't wish to use an IDE for the project.<br>
 
 </div>
 {#====================================================================================================================#}
@@ -456,12 +456,12 @@ Read through this week's topics before starting the project.<br>
 
 * Note that while you will be reusing the same <tooltip content="i.e., the cloned repo in your computer">_local repo_</tooltip> and the same <tooltip content="i.e., the one you forked to your GitHub account last semester">_forked remote repo_</tooltip>, you will be using a new <tooltip content="i.e., the repo you PR to">_upstream repo_</tooltip> we have set up for this semester. As a result, ==you need to create a new PR== from your fork to the new upstream repo, as given below.{% endif %}
 * Create a <trigger trigger="click" for="modal:ipTasks-createPr">pull request (PR)</trigger> from your fork to the upstream repo. Note the following:
-  * Create the PR from the `master` branch of your fork to the `master` branch of the upstream repo ({{ url_module_org }}/{{ ip_repo_name }}){% if tic4002 %}==Be careful to choose the new upstream repo to receive the PR.=={% endif %}
+  * Create the PR from the `master` branch of your fork to the `master` branch of the upstream repo ({{ url_course_org }}/{{ ip_repo_name }}){% if tic4002 %}==Be careful to choose the new upstream repo to receive the PR.=={% endif %}
   * Set the PR name as `[{Your full/partial name or your Github username}] iP`<br>
     e.g., `[Richard Mathews Chee] iP` or `[Rich ... hee] iP` or `[TheRichMat] iP`<br>
     %%Note that the PR name will be publicly visible.%%<br>
     You may leave the description as empty.
-  * If you created the PR correctly, it should appear in the list of PRs [here]({{ url_module_org }}/{{ ip_repo_name }}/pulls).
+  * If you created the PR correctly, it should appear in the list of PRs [here]({{ url_course_org }}/{{ ip_repo_name }}/pulls).
   * Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
 
 {{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=2) }}
@@ -522,7 +522,7 @@ Resources:
 <div id="desc_use_gfmd_in_pr_description">
 
 * [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) (and Markdown in general) is useful in many places when using GitHub %%e.g., issue tracker, PR reviews, writing documentation%%. The aim of this task is to ensure that you are sufficiently familiar with the GFMD syntax.
-* Requirements: Update  the description of the [iP ==PR==]({{ url_module_org }}/ip/pulls) <tooltip content="click on the the `...` icon on the top right corner of the previous description and choose `Edit`">(how?)</tooltip> you created earlier (<span class="text-danger">do not add a new comment</span>) so that it contains the following GFMD elements:
+* Requirements: Update  the description of the [iP ==PR==]({{ url_course_org }}/ip/pulls) <tooltip content="click on the the `...` icon on the top right corner of the previous description and choose `Edit`">(how?)</tooltip> you created earlier (<span class="text-danger">do not add a new comment</span>) so that it contains the following GFMD elements:
   1. a heading
   1. a bullet list
   1. a numbered list
@@ -637,9 +637,9 @@ This task is worth `2x2=4` participation points.
 <span id="heading_learn_from_others">Learn from others (optional)</span>
 <div id="desc_learn_from_others">
 
-* **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu of this module website. Click on the <span class="badge bg-light text-dark">%%**:fas-code:**%%</span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+* **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu of this course website. Click on the <span class="badge bg-light text-dark">%%**:fas-code:**%%</span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent=2) }}
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent=2) }}
 
 </div>
 {#====================================================================================================================#}
@@ -655,7 +655,7 @@ This activity is worth `2x2=4` participation points.
 
 </div>
 
-1. {% if cs2113 %}**The allocation will be sent via email**, by Monday 2359.{% else %}**Wait for the email notifying you which iPs are allocated for you to evaluate**. When the email is sent out, it will also be announced via module announcements.{% endif %}
+1. {% if cs2113 %}**The allocation will be sent via email**, by Monday 2359.{% else %}**Wait for the email notifying you which iPs are allocated for you to evaluate**. When the email is sent out, it will also be announced via course announcements.{% endif %}
 1. **Download the _latest_ JAR file** of the first iP by following the link provided.
    <box type="info" icon=":fas-question:" seamless>
 
@@ -686,7 +686,7 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_write_full_commit_messages">Write some full commit messages</span>
 <div id="desc_write_full_commit_messages">
 
-* While we do not require you to write _full_ commit messages (i.e., including a message body) in the work done in this module, it is still good to learn how to write such commit message. The purpose of this task is to give you some practice in writing such full and well-written commit messages.
+* While we do not require you to write _full_ commit messages (i.e., including a message body) in the work done in this course, it is still good to learn how to write such commit message. The purpose of this task is to give you some practice in writing such full and well-written commit messages.
 * Requirements:
   1. Write full commit messages for at least 2-3 commits that you push this week.
   1. Follow these [_Git conventions for the commit message body_ as specified by @SE-EDU/guides](https://se-education.org/guides/conventions/git.html#commit-message-body) when writing them.
@@ -700,7 +700,7 @@ This activity is worth `2x2=4` participation points.
 * Reminder: you can give the chatbot any personality (there is no need to follow the exact command/response formats given)
 * {{ icon_important_big_red }} Remember to give credit to any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Module Policies → Policy on Reuse**", "1", indent="1") }}
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_website">Set up a product website</span>
@@ -765,7 +765,7 @@ This activity is worth `2x2=4` participation points.
 * **Improve code quality**: iP is the right size to cite as an example of your code quality. You can use the RepoSense link (<span class="badge rounded-pill bg-light text-dark text-monospace">**&lt;/>**</span>) in the [iP showcase page](ip-showcase.html) to point to your iP code.
 * **Add more features.**
 
-{{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other modules, pet projects).
+{{ icon_tip }} On a somewhat related note, you can also **create similar product websites for your other projects** (projects from other courses, pet projects).
 
 
 </div>
@@ -904,7 +904,7 @@ Implementing the following increment (optional) can be help with the above.
 
 <div id="body">
 
-<include src="{{ tasks_file }}#{{ module | lower }}-week{{ week_num }}-intro" optional/>
+<include src="{{ tasks_file }}#{{ course | lower }}-week{{ week_num }}-intro" optional/>
 <p/>
 
 {{ show_xp_steps(steps, tasks_file) }}

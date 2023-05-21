@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import show_stars with context %}
-{% from "_module-" + module + "/weeklyAdminTopics-fragment.md" import admin_topics with context %}
+{% from "_course-" + course + "/weeklyAdminTopics-fragment.md" import admin_topics with context %}
 
 
 {% macro show_admin_pagetop_for_topic(topics, topic) %}
@@ -76,7 +76,7 @@ pageNav: 4
 
 {% set faqs = [
   {id: "admin-faq-whereIsEverything", title: "Where is everything?", priority: 1},
-  {id: "admin-faq-tVsNonT", title: "What are the differences between " + module + "T and " + module + "?", priority: 4},
+  {id: "admin-faq-tVsNonT", title: "What are the differences between " + course + "T and " + course + "?", priority: 4},
   {id: "admin-faq-highWorkload", title: "Why the workload is so high?", priority: 4},
   {id: "admin-faq-aPlus", title: "What are the extra requirements to get an A+?", priority: 3},
   {id: "admin-faq-beanCounting", title: "Why so much bean counting?", priority: 4},
@@ -87,7 +87,7 @@ pageNav: 4
   {id: "admin-faq-narrowScope", title: "Why very narrow project scope?", priority: 4},
   {id: "admin-faq-favoriteTool", title: "Why can't I use my favorite tool/framework/language etc.?", priority: 4},
   {id: "admin-faq-manySubmissions", title: "Why so many submissions?", priority: 4},
-  {id: "admin-faq-cs2101Differences", title: "Why submission requirements differ between " + module + "T and CS2101?", priority: 4}
+  {id: "admin-faq-cs2101Differences", title: "Why submission requirements differ between " + course + "T and CS2101?", priority: 4}
 ]%}
 
 {% set policies = [

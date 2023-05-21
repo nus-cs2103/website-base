@@ -12,6 +12,6 @@
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("SDLC Process Models", reuse=false) %}
-Given below is a brief introduction to the some _processes_ (i.e., approaches for running the project) by software projects. As you are not required to follow these in your project, we only aim to get an awareness of these processes in this module.
+Given below is a brief introduction to the some _processes_ (i.e., approaches for running the project) by software projects. As you are not required to follow these in your project, we only aim to get an awareness of these processes in this course.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

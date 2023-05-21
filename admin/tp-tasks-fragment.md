@@ -1,8 +1,8 @@
 {% from "common/admin.njk" import show_admin_page with context %}
 {% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, thumb, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
-{% from "_module-" + module + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
-{% from "_module-" + module + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
+{% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
+{% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
 
@@ -113,7 +113,7 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 <div id="common-mistakes">
 <box type="tip" seamless>
 
-**Lookout for these mistakes** which were the most common in previous runs of the module:{.text-success}
+**Lookout for these mistakes** which were the most common in previous runs of the course:{.text-success}
 
 1. Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/{{ "basic" if cs2113 else "intermediate" }}.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should) of Java method header comments.
 1. Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject).<br>
@@ -196,7 +196,7 @@ In a similar vein, we use the version number to refer to the iteration as well, 
 </box>
 <box type="info" seamless>
 
-<span class="text-info">**Shocked by iP to tP transition?**</span> Around this time you will realize how the speed you can implement things in the tP is significantly slower compared to the iP. As discouraging as this might feel, there are several ways this can contribute towards the learning outcomes of this module, and it is not expected to affect your tP grade either.
+<span class="text-info">**Shocked by iP to tP transition?**</span> Around this time you will realize how the speed you can implement things in the tP is significantly slower compared to the iP. As discouraging as this might feel, there are several ways this can contribute towards the learning outcomes of this course, and it is not expected to affect your tP grade either.
 
 <panel type="seamless" header="More on this ...">
 
@@ -204,7 +204,7 @@ In a similar vein, we use the version number to refer to the iteration as well, 
 1. **The speed varies from project to project**, and naturally, is slowest at the start when you are very new to the project. Even so if you are new to working with legacy code. On the positive side, the iterative approach we use gives us room to adjust targets based on the actual speed you can deliver in the tP code base.
 1. **The slowness of progress can be partly due to design flaws** of the current code base (i.e., the design makes code changes harder than necessary). Keep a lookout for such cases, and if you can think of design tweaks that makes the code easier to change, go ahead and try them out. Such work can earn credit too.
 
-Finally, we don't expect each of you to put into the tP more _effort_ than you put into the iP (i.e., as the progress in the tP is expected to be slower, it is not necessarily write as much code or implement as many features as you did in the iP). Keep in mind the tP had been done by thousands of students before, and we are well aware that the amount of new features that you can deliver in the tP is not much. So, the slow progress will not affect your tP grade, as that is already factored into the grading. **What is needed is for you to recalibrate your own tP expectations/plans to match the reality of the tP environment** -- such recalibration is a learning outcome of the module too.
+Finally, we don't expect each of you to put into the tP more _effort_ than you put into the iP (i.e., as the progress in the tP is expected to be slower, it is not necessarily write as much code or implement as many features as you did in the iP). Keep in mind the tP had been done by thousands of students before, and we are well aware that the amount of new features that you can deliver in the tP is not much. So, the slow progress will not affect your tP grade, as that is already factored into the grading. **What is needed is for you to recalibrate your own tP expectations/plans to match the reality of the tP environment** -- such recalibration is a learning outcome of the course too.
 </panel>
 </box>
 
@@ -594,7 +594,7 @@ Update the following pages in your project repo:
 </div>
 
 * **_AboutUs_ page**:
-  This page (in the `/docs` folder) is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
+  This page (in the `/docs` folder) is used for course admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
   * Add your own details. Include a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.
   * There is no need to mention the the tutor/lecturer, but OK to do so too.
   * The filename of the profile photo should be `docs/images/github_username_in_lower_case.png`<br>
@@ -757,8 +757,8 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 <box>
 
 {{ icon_tip }} **You may <tooltip content="i.e., copy-paste, not clone/fork">re-purpose/adopt</tooltip> code** from any of the below to be used in your tP, provided you give credit to the source (and do not claim such code as yours).
-* The iP code of any of your team members, or of any other person in the module.
-* Code from [AddressBook-Level2](https://se-education.org/addressbook-level2/) or any code used in module activities {{ "e.g., personbook" if not tic4001 }}
+* The iP code of any of your team members, or of any other person in the course.
+* Code from [AddressBook-Level2](https://se-education.org/addressbook-level2/) or any code used in course activities {{ "e.g., personbook" if not tic4001 }}
 
 </box>
 
@@ -842,7 +842,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 * **{{ icon_important_big_red }} Push as hard as you can afford to** in this iteration: While we have kept the expectations bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_first }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
 That said, you should also play it safe by aiming to reach a _smallest possible_ version in `{{ version_first }}` before squeezing in more implementation work into `{{ version_first }}b`.
 
-* {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(reason)</popover>%%.
+* {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this course because incremental delivery, among other things, improves the _visibility_ of your work.">(reason)</popover>%%.
 
 * ==**If you plan to rename the Java packages**==, you may want to do it around this time. Doing it later can be more difficult %%(e.g., it can cause more merge conflicts)%%, and can cause problems in our code authorship tracking. Also note that renaming packages is optional.
 
@@ -1025,7 +1025,7 @@ A similar requirement applies to the `UserGuide.md` too.
 * **Update the Developer Guide** as follows:{% if tic4001 %}
   * You can take some inspiration from the [DG of the AB3 (se-edu/addressbook-level 3) project]({{ url_ab3_fork_website }}/DeveloperGuide.html).{% endif %}
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
-    Expected length: 1+ page per person{% if module == "CS2113" or module == "TIC4001" %}
+    Expected length: 1+ page per person{% if course == "CS2113" or course == "TIC4001" %}
   * Describing the design at a multiple-levels (e.g., first, describe at _architecture-level_, then describe at _component-level_) is optional. It is also acceptable to have one _Design & Implementation_ section in which you describe the entire thing at the class- and object-level.{% endif %}
   * The description can contain things such as,
     * How the feature is implemented (or is going to be implemented).
@@ -1098,7 +1098,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
    * Use a common browser such as Chrome, Edge, Firefox, Safari
    * Allow popups from https://catcher-org.github.io/
    * If you encounter other problems at the app launch, refer to the [Notes on using CATcher](https://catcher-org.github.io/ug/) -- look for information related to the Web app (not the desktop app).
-1. **Login**: Choose the _session_ `{{ module_pair }} Alpha Test`, and submit.
+1. **Login**: Choose the _session_ `{{ course_pair }} Alpha Test`, and submit.
    <img src="images/catcherLogin.png" />
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
@@ -1228,7 +1228,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 {%- endmacro %}
 
 {% macro get_pr_link(team_id) -%}
-<a href="https://github.com/nus-{{ module | lower}}-{{ semester }}/{{ tp_repo_name }}/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge bg-primary">PR</a>
+<a href="https://github.com/nus-{{ course | lower}}-{{ semester }}/{{ tp_repo_name }}/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge bg-primary">PR</a>
 {%- endmacro  %}
 
 {% macro get_dg_link(team_id) -%}
@@ -1492,11 +1492,11 @@ Not applicable this semester
   * The whole team is penalized for problems in team submissions %%e.g., a -1 penalty for a team submission will be a -1 penalty for each team member%%.<br>
     Only the respective student is penalized for problems in individual submissions.{% endif %}
 * **Submit via the Canvas assignment we have set up**.
-  {% if has_t %}{{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.{% endif %}
+  {% if has_t %}{{ course | lower }}T students: documents should be submitted to both courses. It's not enough to submit to CS2101 side only.{% endif %}
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
 * **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.
   * You can update issues/milestones/PRs even during the _code-freeze_ period.{% if cs2113 or cs2103 %}
-  * [{{ module }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a code-freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.{% endif %}
+  * [{{ course }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a code-freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.{% endif %}
   * You can update the code during the code-freeze period if the change is related to a late submission approved by us.
   * You can continue to evolve your repo after the code-freeze period.
 
@@ -1524,7 +1524,7 @@ Not applicable this semester
 
 <box type="tip" seamless>
 
-**Side benefits for early submissions:**{.text-success} Given that _using buffers to reduce the risk of deadline overruns_ is a learning outcome of this module, we strongly encourage setting an internal submission deadline a few hours earlier than the actual deadline. As an incentive, we plan to perform some checks on early submissions and inform you if we found issues with your submission %%(e.g., incorrect file name/format)%%, thus giving you a chance to fix them before the deadline and avoid a penalty for it.
+**Side benefits for early submissions:**{.text-success} Given that _using buffers to reduce the risk of deadline overruns_ is a learning outcome of this course, we strongly encourage setting an internal submission deadline a few hours earlier than the actual deadline. As an incentive, we plan to perform some checks on early submissions and inform you if we found issues with your submission %%(e.g., incorrect file name/format)%%, thus giving you a chance to fix them before the deadline and avoid a penalty for it.
 
 </box>
 

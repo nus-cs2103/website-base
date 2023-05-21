@@ -1,10 +1,10 @@
-{% from "_module-" + module + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
+{% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
 
-{% set admin_topics = [
-  {level: 1, id: "moduleOverview", title: module_pair + ": " + module_name, link: "moduleOverview.html", alt: "Module Overview"},
+{% set admin_topics = [
+  {level: 1, id: "courseOverview", title: course_pair + ": " + course_name, link: "courseOverview.html", alt: "Course Overview"},
   {level: 1, id: "usingThisWebsite", title: "Using this Website", link: "usingThisWebsite.html", highlight: "true", priority: 1},
-  {level: 1, id: "moduleExpectations", title: "Module Expectations", link: "moduleExpectations.html", priority: 2},
-  {level: 0, id: "moduleStructure", title: "Module Structure"},
+  {level: 1, id: "courseExpectations", title: "Course Expectations", link: "courseExpectations.html", priority: 2},
+  {level: 0, id: "courseStructure", title: "Course Structure"},
     {level: 2, id: "weeklySchedule", title: "Weekly Schedule", link: "weeklySchedule.html", priority: 3},
     {level: 2, id: "lectures", title: "Lectures", link: "lectures.html", priority: 3},
     {level: 2, id: "tutorials", title: "Tutorials", link: "tutorials.html", priority: 2},
@@ -19,7 +19,7 @@
     {level: 2, id: "ip-w4", title: "iP: Week 4", link: "ip-w4.html", priority: 2},
     {level: 2, id: "ip-w5", title: "iP: Week 5", link: "ip-w5.html", priority: 2},
     {level: 2, id: "ip-w6", title: "iP: Week 6", link: "ip-w6.html", priority: 1},
-    {level: 2, id: "ip-w7", title: "iP: Week 7", link: "ip-w7.html", priority: (4 if module == "CS2103" else 1)},
+    {level: 2, id: "ip-w7", title: "iP: Week 7", link: "ip-w7.html", priority: (4 if course == "CS2103" else 1)},
     {level: 2, id: "ip-w8", title: "iP: Week 8", link: "ip-w8.html", priority: 1},
     {level: 2, id: "ip-grading", title: "iP: Grading", link: "ip-grading.html", priority: 2},
   {level: -1, id: "project", title: "Team Project (tP)"},
@@ -39,7 +39,6 @@
     {level: 2, id: "tp-w12", title: "tP week 12: " + weekly_tp_themes.w12.name, link: "tp-w12.html", priority: 3},
     {level: 2, id: "tp-w13", title: "tP week 13: " + weekly_tp_themes.w13.name, link: "tp-w13.html", priority: 2},
     {level: 2, id: "tp-deliverables", title: "tP: Deliverables", link: "tp-deliverables.html", priority: 2},
-    {level: 2, id: "tp-ped", title: "tP: Practical Exam Dry Run", link: "tp-ped.html", priority: 2},
     {level: 2, id: "tp-pe", title: "tP: Practical Exam", link: "tp-pe.html", priority: 2},
     {level: 2, id: "tp-grading", title: "tP: Grading", link: "tp-grading.html", priority: 2},
     {level: 2, id: "tp-supervision", title: "tP: Supervision", link: "tp-supervision.html", priority: 2},
@@ -49,13 +48,12 @@
   {level: 1, id: "participation", title: "Participation Marks", link: "participation.html", priority: 2},
   {level: 1, id: "gradeBreakdown", title: "Grade Breakdown", link: "gradeBreakdown.html", priority: 2},
   {level: 0, id: "appendices", title: "Appendices"},
-    {level: 2, id: "appendixA-principles", title: "Apdx A: Module Principles", link: "appendixA-principles.html", priority: 4},
-    {level: 2, id: "appendixB-policies", title: "Apdx B: Module Policies", link: "appendixB-policies.html", priority: 1},
+    {level: 2, id: "appendixA-principles", title: "Apdx A: Course Principles", link: "appendixA-principles.html", priority: 4},
+    {level: 2, id: "appendixB-policies", title: "Apdx B: Course Policies", link: "appendixB-policies.html", priority: 1},
     {level: 2, id: "appendixC-faq", title: "Apdx C: FAQ", link: "appendixC-faq.html", priority: 1},
     {level: 2, id: "appendixD-help", title: "Apdx D: Getting Help", link: "appendixD-help.html", priority: 2},
     {level: 2, id: "appendixE-gitHub", title: "Apdx E: Using GitHub", link: "appendixE-gitHub.html", priority: 1},
-    {level: 2, id: "appendixF-teamworkIssues", title: "Apdx F: Handling Team Issues", link: "appendixF-teamworkIssues.html", priority: 4},
-    {level: 2, id: "appendixG-CS2103R", title: "Apdx G: CS2103R Info", link: "appendixG-CS2103R.html", priority: 4}
+    {level: 2, id: "appendixF-teamworkIssues", title: "Apdx F: Handling Team Issues", link: "appendixF-teamworkIssues.html", priority: 4}
 ]%}
 
 {% set weekly_admin_topics = {
@@ -64,6 +62,7 @@ week1: [
   {topic_id: "tp-teams"},
   {topic_id: "textbooks"},
   {topic_id: "gradeBreakdown"},
+  {topic_id: "participation"},
   {faq_id: "admin-faq-tVsNonT"},
   {faq_id: "admin-faq-highWorkload"},
   {faq_id: "admin-faq-aPlus"}],
@@ -94,6 +93,7 @@ week5: [
   {policy_id: "policy-responseTime"},
   {faq_id: "admin-faq-beanCounting"}],
 week6: [
+  {topic_id: "exams"},
   {topic_id: "appendixF-teamworkIssues"},
   {faq_id: "admin-faq-manySubmissions"},
   {faq_id: "admin-faq-cs2101Differences"}],
@@ -101,8 +101,7 @@ week7: [],
 week8: [],
 week9: [],
 week10: [],
-week11: [
-  {topic_id: "exams"}],
+week11: [],
 week12: [],
 week13: []
 }%}

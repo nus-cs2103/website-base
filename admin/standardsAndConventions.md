@@ -4,7 +4,7 @@
 {% call show_admin_page("standardsAndConventions") %}
 <div id="main">
 
-Given below are the standards and conventions to follow in this module.
+Given below are the standards and conventions to follow in this course.
 
 <box type="info" seamless>
 

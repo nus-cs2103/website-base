@@ -5,7 +5,7 @@
 <div id="main">
 
 Note that project grading is ==not competitive (not bell curved)==.<span tags="m--cs2113 m--cs2103">
-{{ module }}T projects will be assessed separately from {{ module }} projects.</span> Given below is the marking scheme.
+{{ course }}T projects will be assessed separately from {{ course }} projects.</span> Given below is the marking scheme.
 
 ****Total****: {{ marks_tp }} marks ({{ icon_individual }} {{ marks_tp_individual }} individual marks + {{ icon_team }} {{ marks_tp_team }} team marks)
 
@@ -14,7 +14,7 @@ See the sections below for details of how we assess each aspect.
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-productDesign">
 
-#### <div class="bg-warning text-dark p-1">1. Project Grading: Product Design %%[{{ icon_team if module == "TIC4001" else icon_individual }} {{ marks_tp_design }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">1. Project Grading: Product Design %%[{{ icon_team if course == "TIC4001" else icon_individual }} {{ marks_tp_design }} marks]%%</div>
 
 **Evaluates:**
 * how well your features _fit together_ to form a cohesive product<br>
@@ -74,7 +74,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 * No noticeable code duplications %%i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place%%, especially in test code.
 
-* Evidence of applying [code quality guidelines covered in the module](../book/codeQuality/).
+* Evidence of applying [code quality guidelines covered in the course](../book/codeQuality/).
 
 </span>
 
@@ -119,7 +119,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning text-dark p-1">3. Project Grading: QA %%[{{ icon_both if module == "TIC4001" else icon_individual }} {{ marks_tp_qa }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">3. Project Grading: QA %%[{{ icon_both if course == "TIC4001" else icon_individual }} {{ marks_tp_qa }} marks]%%</div>
 
 <div tags="m--cs2113 m--cs2103 m--tic4002">
 

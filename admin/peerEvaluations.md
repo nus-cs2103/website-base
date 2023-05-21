@@ -6,7 +6,7 @@
 
 <div id="intro">
 
-This module leverages peer feedback/evaluations in many ways. In particular, we do several rounds of peer evaluations using TEAMMATES.
+This course leverages peer feedback/evaluations in many ways. In particular, we do several rounds of peer evaluations using TEAMMATES.
 
 {{ embed_topic("tools.md#teammates", "Admin " + icon_embedding + " Tools → TEAMMATES", "3", indent="1") }}
 
@@ -40,7 +40,7 @@ This module leverages peer feedback/evaluations in many ways. In particular, we 
 
 ### Guidelines for giving peer feedback
 
-Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. Half-hearted/trivial feedback will not earn participation marks.
+Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this course. Half-hearted/trivial feedback will not earn participation marks.
 
 Here are some things to keep in mind:
 

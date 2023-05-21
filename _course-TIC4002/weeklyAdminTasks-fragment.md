@@ -3,7 +3,7 @@
 {% set weekly_admin_tasks = {
 week1: [
   {id: 'set_up_tools', deadline: "before the lecture"},
-  {id: 'learn_about_the_module'},
+  {id: 'learn_about_the_course'},
   {id: 'attend_the_first_lecture'}
 ],
 week2: [

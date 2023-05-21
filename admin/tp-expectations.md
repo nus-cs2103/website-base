@@ -39,7 +39,7 @@ The focus of the tP is to learn the following aspects:
 
 **TIC4001 vs TIC4002**{.text-info}
 
-TIC4002 focuses on aspect 6 in particular, as TIC4001 already covered 2-5 above (but you should improve on the 2-5 in this module as well).
+TIC4002 focuses on aspect 6 in particular, as TIC4001 already covered 2-5 above (but you should improve on the 2-5 in this course as well).
 </box>
 
 <span id="tp-direction">
@@ -64,7 +64,7 @@ You may develop any product provided it is meant for users who can type fast, an
 <p/>
 
 {% set morph_examples %}
-  For example, an app to manage one of these:{% if module == "CS2113" or module == "TIC4001" %}
+  For example, an app to manage one of these:{% if course == "CS2113" or course == "TIC4001" %}
     * Contact details{% endif %}
     * Bookmarks of websites
     * Tasks/Schedule
@@ -100,7 +100,7 @@ You may develop any product provided it is meant for users who can type fast, an
 * {{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base, morphing is less common in real projects (compared to direction 1)
 </div>
 
-Weigh the pros/cons and choose the one that suits you. Note that ==**creating a novel/unique/interesting product will NOT earn you extra marks**== in this module. While those qualities are important in real world projects, and we do allow you room to go in those directions in this module, they are not the focus of this module {% if cs2103 %}%%(there are other modules such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
+Weigh the pros/cons and choose the one that suits you. Note that ==**creating a novel/unique/interesting product will NOT earn you extra marks**== in this course. While those qualities are important in real world projects, and we do allow you room to go in those directions in this course, they are not the focus of this course {% if cs2103 %}%%(there are other courses such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
 
 **Our recommendation:**{.text-success} Go with direction 1 unless you have a strong inclination to create a _different_ product. Direction 1 fits both weak and strong programmers, smoother at the start, the risk of schedule overruns is lower (because it can be done in smaller increments all the way, while morphing requires some big changes at the start), and gives you a better chance of reaching a product that is worthy of actual users (as you will not be slowed down by the morphing).
 {% endif %}
@@ -126,7 +126,7 @@ Weigh the pros/cons and choose the one that suits you. Note that ==**creating a 
 ## Target User & Value Proposition
 
 You are expected to:
-* **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ module_pair }} instructors.%%<br><br>
+* **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ course_pair }} instructors.%%<br><br>
  {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/tp-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing over mouse actions%%.
 
 <div class="indented-level2">
@@ -146,7 +146,7 @@ The size of the target market is not a grading criterion. You can make it as nar
 * **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the user's life easier?<br>
   You should also define the _scope_ clearly i.e., boundary beyond which the app will not help %%e.g., the app will help to manage tasks within a single project only (no support for multiple projects)%%.
 * **Optimize the product to the chosen target users** i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them).
-  * Example 1: If the product targets {{ module_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to see a link to a student's project on GitHub%%
+  * Example 1: If the product targets {{ course_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to see a link to a student's project on GitHub%%
   * Example 2: If your app manages contacts, you can optimize its features based on,
     * the profession of the target user %%e.g. doctors, salesmen, teachers, etc.%%
     * the nature/scale of contacts %%e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)%%

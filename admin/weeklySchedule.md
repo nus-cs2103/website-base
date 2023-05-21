@@ -6,9 +6,9 @@
 
 <div id="week-definition">
 
-### {{ module_pair }} week vs normal academic week
+### {{ course_pair }} week vs normal academic week
 
-**Each {{ module_pair }} week starts with the lecture** and ends just before the following week's lecture. The only exception is week 1, which starts on the Monday of the first week of the semester. <div tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">As our lecture is on {{ day_lecture }}, =={{ module_pair }} week starts a few days earlier than the normal NUS academic week==. For example, {{ module_pair }} week 2 starts on the {{ day_lecture }} of NUS week 1. See the [full timeline](../schedule/timeline.html) for exact dates.</div>
+**Each {{ course_pair }} week starts with the lecture** and ends just before the following week's lecture. The only exception is week 1, which starts on the Monday of the first week of the semester. <div tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">As our lecture is on {{ day_lecture }}, =={{ course_pair }} week starts a few days earlier than the normal NUS academic week==. For example, {{ course_pair }} week 2 starts on the {{ day_lecture }} of NUS week 1. See the [full timeline](../schedule/timeline.html) for exact dates.</div>
 </div>
 <p/>
 <div tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002" id="deadline-definition">

@@ -4,8 +4,8 @@
 week1: [
   {id: 'submit_pre_lecture_quiz', deadline: get_date(date_w1_start, 7), graded: true},
   {id: 'set_up_tools', deadline: "before the lecture"},
-  {id: 'submit_pre_module_survey', deadline: get_date(date_w1_start, 4), graded: true},
-  {id: 'learn_about_the_module'},
+  {id: 'submit_pre_course_survey', deadline: get_date(date_w1_start, 4), graded: true},
+  {id: 'learn_about_the_course'},
   {id: 'attend_the_first_lecture'}
 ],
 week2: [
@@ -22,7 +22,7 @@ week4: [
 ],
 week5: [
   {id: 'submit_post_lecture_quiz', graded: true},
-  {id: 'submit_midterm_feedback_for_the_module', deadline: get_date(date_w5_start, 8), deadline_type: 'info'},
+  {id: 'submit_midterm_feedback_for_the_course', deadline: get_date(date_w5_start, 8), deadline_type: 'info'},
   {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: get_date(date_w5_start, 6), graded: true}
 ],
 week6: [

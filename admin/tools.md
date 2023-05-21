@@ -9,7 +9,7 @@
 
 ## Tool: Learning Management System
 
-This module website is the main source of information for the module. In addition, we use Canvas for some things %%(e.g., announcements, file submissions, grade book, ...)%%.
+This course website is the main source of information for the course. In addition, we use Canvas for some things %%(e.g., announcements, file submissions, grade book, ...)%%.
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
 {% if not cs2113 %}
@@ -89,7 +89,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 ## Tools: for communication
 
 ##### :fas-comment: Forum %%(for longer-running discussions)%%
-* **The preferred channels for module-related communication is the `forum` on GitHub** ==[{{url_forum}}]({{url_forum}})== (not the Canvas forum)
+* **The preferred channels for course-related communication is the `forum` on GitHub** ==[{{url_forum}}]({{url_forum}})== (not the Canvas forum)
 * When communicating with instructors, use the forum. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the forum is not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof{{ "s" if tic4001 }} can monitor information you receive for accuracy%%.
 <div tags="m--cs2103 m--cs2113 m--tic4002">
 
@@ -113,11 +113,11 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 <div tags="m--cs2103 m--cs2113">
 
-* **MS Team for this class**: [{{ module_pair }}-{{ semester }}]({{ url_ms_teams_class }})
+* **MS Team for this class**: [{{ course_pair }}-{{ semester }}]({{ url_ms_teams_class }})
 </div>
 <div tags="m--tic4001 m--tic4002">
 
-* for in-lecture consultations: [{{ module }}-{{ period }}]({{ url_ms_teams_class }})
+* for in-lecture consultations: [{{ course }}-{{ period }}]({{ url_ms_teams_class }})
 </div>
 </div>
 
@@ -126,7 +126,7 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 ## Tool: Intellij IDE
 
-You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for module-related programming work. While the use of Intellij is not compulsory, note that module materials are optimized for Intellij.
+You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for course-related programming work. While the use of Intellij is not compulsory, note that course materials are optimized for Intellij.
 
 <box type="warning" seamless>
 

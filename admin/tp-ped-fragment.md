@@ -105,7 +105,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
 * Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
   {{ icon_info }} We strongly recommend surrounding the jar filename with double quotes, in case special characters in the filename causes the `java -jar` command to break.<br>
-  e.g., `java -jar "[{{ module }}-F18-1][Task Pro].jar"`<br>
+  e.g., `java -jar "[{{ course }}-F18-1][Task Pro].jar"`<br>
   {{ icon_info }} Windows users: use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.{% if cs2103 %}<br>
   {{ icon_info }} Linux users: If the JAR fails with an error labelled `Gdk-CRITICAL` (happens in Wayland display servers), try running it using `GDK_BACKEND=x11 java -jar jar_file_name.jar` command instead.{% endif %}
 
@@ -194,8 +194,8 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 <tab header="Using CATcher">
 
 * Launch CATcher, and login to the correct profile (when CATcher asks, consent to creating a new repo):
-  * PE Dry Run: `{{ module_pair }} PE Dry run`
-  * PE: `{{ module_pair }} PE`
+  * PE Dry Run: `{{ course_pair }} PE Dry run`
+  * PE: `{{ course_pair }} PE`
 * Post bugs using CATcher.
 </tab>
 <tab header="Not using CATcher">

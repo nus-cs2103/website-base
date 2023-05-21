@@ -7,14 +7,14 @@
 
 ****Timing/venue****:
 
-<include src="../_module-{{ module }}/timetables-fragment.md#lectures-s{{ S }}" />
+<include src="../_course-{{ course }}/timetables-fragment.md#lectures-s{{ S }}" />
 
 <div tags="m--tic4001 m--tic4002" class="indented">
 
-**The lecture+tutorial slot ({{ day_lecture }} 6.30pm-9.30pm) will be repurposed** as follows, due to this being a 100% project module:
+**The lecture+tutorial slot ({{ day_lecture }} 6.30pm-9.30pm) will be repurposed** as follows, due to this being a 100% project course:
 
 * **6.30-7pm**: No formal activities. Work with team members and consult instructors (using the MS Teams app) if you need help with the previous week's tasks.
-* **7-7.30pm**: Weekly briefing, done via Zoom. The Zoom link can be found in [Canvas module homepage]({{ url_canvas_home }}).
+* **7-7.30pm**: Weekly briefing, done via Zoom. The Zoom link can be found in [Canvas course homepage]({{ url_canvas_home }}).
 * **7.30-9.30pm**:
   * Do the lecture activities (if any) or weekly project activities.
   * You may approach instructors (using the MS Teams app) for help during this period.
@@ -29,12 +29,12 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 ****Mode****:
 {% if cs2103 %}
-* The first lecture will be done using Zoom. The Zoom link will be available in [Canvas module homepage]({{ url_canvas_home }}). You can attend the live Zoom lecture or watch the recording later.
+* The first lecture will be done using Zoom. The Zoom link will be available in [Canvas course homepage]({{ url_canvas_home }}). You can attend the live Zoom lecture or watch the recording later.
 * We expect to switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) from the 2nd lecture onwards, if the circumstances allow it.
 {% elseif cs2113 %}
 * Lectures will be conducted on-campus (i.e., F2F)
 {% else %}
-* As mentioned above, the lecture briefing will be delivered via Zoom (see [Canvas module homepage]({{ url_canvas_home }}) for the Zoom link).
+* As mentioned above, the lecture briefing will be delivered via Zoom (see [Canvas course homepage]({{ url_canvas_home }}) for the Zoom link).
 {% endif %}
 
 <div tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">
@@ -65,13 +65,13 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 <box type="info"  header="A caveat about your expectations from the lecture" tags="m--cs2103" light>
 
-In a traditional course, the lecture is the _primary_ means of content delivery. However, {{ module_pair }} is delivered in the _blended learning_ mode, and hence, the contents are delivered primarily via the online textbook and pre-recorded videos that you can consume at your own pace.
+In a traditional course, the lecture is the _primary_ means of content delivery. However, {{ course_pair }} is delivered in the _blended learning_ mode, and hence, the contents are delivered primarily via the online textbook and pre-recorded videos that you can consume at your own pace.
 
 Hence, ==the lecture is only a _complementary_ component== that aims to,
 * **recap** the past week, clarify common doubts
 * **preview** the next week
 * **motivate** you to tackle the weekly tasks coming up
-* **contextualize** various 'moving parts' of the module and keep you anchored to the 'big picture'
+* **contextualize** various 'moving parts' of the course and keep you anchored to the 'big picture'
 
 Given that lectures are complementary, you can speed-watch the recording to save time (instead of attending the live lecture) or skip them altogether (if you are already saturated by the rest of the course activities).
 </box>

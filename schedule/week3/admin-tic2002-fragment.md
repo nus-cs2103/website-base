@@ -39,7 +39,7 @@
 
 #### {{ thumb(1) }} Setup Duke project on your computer {{ timing_badge("during/after the lecture", "secondary") }}
 
-1. **Fork** [{{ url_module_org }}/duke]({{ url_module_org }}/duke). The relevant textbook topic is given below for your reference.<br>
+1. **Fork** [{{ url_course_org }}/duke]({{ url_course_org }}/duke). The relevant textbook topic is given below for your reference.<br>
    {{ icon_important_big_red }} Please ==retain the repo name `duke`== when forking. If you name your fork as something else, our grading scripts will not be able to find your fork.<br>
    {{ embed_topic("../../book/gitAndGithub/fork/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Forking**", "1", indent=2) }}
 
@@ -47,7 +47,7 @@
 
    {{ embed_topic("../../book/gitAndGithub/clone/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Cloning**", "1", indent=2) }}
 
-3. **Set up** the project in your IDE as explained in [the README file]({{ url_module_org }}/duke).
+3. **Set up** the project in your IDE as explained in [the README file]({{ url_course_org }}/duke).
 
 <!-- ------------------------------------------------------------------------------------------------------ -->
 

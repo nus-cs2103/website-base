@@ -2,23 +2,23 @@
 {% from "common/admin.njk" import faqs, policies, show_admin_summary, topics with context %}
 
 {% call show_admin_summary() %}
-1. Learn about the module and the website
-1. Submit the pre-module survey {{ timing_badge("by Saturday 2359") }}
+1. Learn about the course and the website
+1. Submit the pre-course survey {{ timing_badge("by Saturday 2359") }}
 1. Attend the lecture
 1. Submit weekly exercises
 1. Submit weekly project increment `Monty Level 1. Echo Once`
 {% endcall %}
 
 
-#### {{ thumb(1) }} Learn about the module and the website
+#### {{ thumb(1) }} Learn about the course and the website
 
-{{ embed_topic("../../admin/index-tee3201-fragment.md#module-info", "Admin " + icon_embedding + " About the module", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#course-info", "Admin " + icon_embedding + " About the course", "1", indent="2") }}
 {{ embed_topic("../../admin/index-tee3201-fragment.md#website-info", "Admin " + icon_embedding + " Using the website", "1", indent="2") }}
 
 
-#### {{ thumb(2) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
+#### {{ thumb(2) }} Submit the pre-course survey  {{ timing_badge("by Saturday 2359", "secondary") }}
 
-* Submit the pre-module survey, available on Canvas
+* Submit the pre-course survey, available on Canvas
 
 
 #### {{ thumb(3) }} Attend the lecture

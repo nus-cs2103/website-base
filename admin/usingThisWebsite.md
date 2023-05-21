@@ -5,7 +5,7 @@
 <div id="main">
 <div id="essential">
 
-{{ icon_important_big_red }} The {{ url_schedule }} is your main source of information for {{ module_pair }}. You will need to refer to it weekly. For an overview of the full schedule, refer to the [Full Timeline](../schedule/timeline.html) page.
+{{ icon_important_big_red }} The {{ url_schedule }} is your main source of information for {{ course_pair }}. You will need to refer to it weekly. For an overview of the full schedule, refer to the [Full Timeline](../schedule/timeline.html) page.
 
 {{ icon_info }} More details for the upcoming weeks will be added as the weeks progress. In general, ==information given for more than 1 week into the future should be treated as _tentative_==.
 
@@ -14,7 +14,7 @@
 
 This website ==uses a _topic levels_ system== to indicate the progression of contents from basic/relevant topics to advanced/less-relevant topics.
 
-{{ embed_topic("moduleExpectations.md#topicLevels", "Admin " + icon_embedding + " Module Expectations → Topic Levels", "usingThisWebsite-topicLevels") }}
+{{ embed_topic("courseExpectations.md#topicLevels", "Admin " + icon_embedding + " Course Expectations → Topic Levels", "usingThisWebsite-topicLevels") }}
 <p/>
 
 </div>
@@ -42,7 +42,7 @@ Printer-friendly version %%(indicated by {{icon_print}} icon)%% have been provid
 
 ### Making this Website Better
 
-This website was generated using the [MarkBind](https://markbind.org/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted {% if tee3201 %}[in the forum]({{url_forum}}){% else %}[at the website issue tracker]({{url_module_org}}/website/issues){% endif %}.
+This website was generated using the [MarkBind](https://markbind.org/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted {% if tee3201 %}[in the forum]({{url_forum}}){% else %}[at the website issue tracker]({{url_course_org}}/website/issues){% endif %}.
 
 </div>
 </div>

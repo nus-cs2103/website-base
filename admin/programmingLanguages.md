@@ -11,14 +11,14 @@
 </td>
 <td>
 
-==**The main language** used in this module is Java==. You should use
+==**The main language** used in this course is Java==. You should use
 Java for all programming activities, the project, and exam answers.
 
 <span tags="m--cs2103">
 
-The module doesn’t “teach” Java. We assume you already know Java basics.
-We expect you to learn on your own any Java constructs not covered in your previous modules.
-The exam expects you to know Java to the extent that you should be familiar with it as a result of using it in the module exercises/projects.
+The course doesn’t “teach” Java. We assume you already know Java basics.
+We expect you to learn on your own any Java constructs not covered in your previous courses.
+The exam expects you to know Java to the extent that you should be familiar with it as a result of using it in the course exercises/projects.
 </span>
 
 </td>
@@ -30,7 +30,7 @@ The exam expects you to know Java to the extent that you should be familiar with
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
-We require you to use **Java 11** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java11) or another alternative such as the OpenJDK version) for all module work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
+We require you to use **Java 11** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java11) or another alternative such as the OpenJDK version) for all course work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
 
 **If you have Java 8** in your computer, we recommend removing it, to prevent using it unintentionally.
 

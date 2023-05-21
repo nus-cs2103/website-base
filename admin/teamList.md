@@ -1,4 +1,4 @@
-{% from "_module-" + module + "/studentData-fragment.md" import students, tutorials, teams, products, users, values with context %}
+{% from "_course-" + course + "/studentData-fragment.md" import students, tutorials, teams, products, users, values with context %}
 
 <frontmatter>
 title: "tP Teams List"
@@ -21,7 +21,7 @@ This page will be populated later in the semester ...
 <div class="row">
 <div class="col border">
 
-### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ module | lower }}-{{ semester }}/{{ tp_repo_name }}/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> {% if (current_week | int) > 6 %}[<img src="{{ team_repo }}/workflows/Java%20CI/badge.svg">]({{ team_repo }}/actions){% endif %} {{ "[**" + products[team_id] + "]**" if team_id in products else ""}}
+### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ course | lower }}-{{ semester }}/{{ tp_repo_name }}/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> {% if (current_week | int) > 6 %}[<img src="{{ team_repo }}/workflows/Java%20CI/badge.svg">]({{ team_repo }}/actions){% endif %} {{ "[**" + products[team_id] + "]**" if team_id in products else ""}}
 
 <span tags="m--cs2103 m--tic4002">
 
@@ -62,7 +62,7 @@ This page will be populated later in the semester ...
 
 **{{ name }}**<br>
 <sup>[`{{ username }}`](https://github.com/{{ username }})</sup><br>
-{% if not cs2113 %}<img style="border-radius: 8px;" src="{{ team_website }}/images/{{ username | lower }}.png" width="120"  onerror="this.src='images/placeholder-small.png';"/><br>{% endif %}[:fas-file-powerpoint:]({{ team_website }}/team/{{ username | lower }}.html) [:fas-code:](https://nus-{{ module }}-{{ semester }}.github.io/tp-dashboard/?search={{ username | lower }}&breakdown=true) [:fas-code-branch:]({{ team_repo }}/pulls?q=is%3Apr+author%3A{{ username }})
+{% if not cs2113 %}<img style="border-radius: 8px;" src="{{ team_website }}/images/{{ username | lower }}.png" width="120"  onerror="this.src='images/placeholder-small.png';"/><br>{% endif %}[:fas-file-powerpoint:]({{ team_website }}/team/{{ username | lower }}.html) [:fas-code:](https://nus-{{ course }}-{{ semester }}.github.io/tp-dashboard/?search={{ username | lower }}&breakdown=true) [:fas-code-branch:]({{ team_repo }}/pulls?q=is%3Apr+author%3A{{ username }})
 </div>
 {% endmacro %}
 

@@ -1,6 +1,6 @@
 {% import "se-book-adapted/config.njk" as config with context %}
 {% from "common/macros.njk" import  show_stars, show_priority_style with context %}
-{% from "_module-" + module + "/weeklyTextbookTopics-fragment.md" import weeks_with_no_topics with context %}
+{% from "_course-" + course + "/weeklyTextbookTopics-fragment.md" import weeks_with_no_topics with context %}
 
 
 {% macro panopto(id, desc="", questions="")%}
@@ -59,12 +59,12 @@
 {%- macro make_anchor(text) %}{{ text | trim | replace(".", "-") }}{% endmacro -%}
 {%- macro slugify(text) %}{{ text | lower | replace(r/[\s\/]/g, '-') | replace(r/[\(\)%:,&'\[\]\+]/g, '') }}{% endmacro -%}
 {%- macro commentary(span_id) %}
-<include src="commentary-{{ module | lower }}-fragment.md#{{ span_id }}" optional />
+<include src="commentary-{{ course | lower }}-fragment.md#{{ span_id }}" optional />
 {% endmacro -%}
 {%- macro followup(span_id) %}
 <p/>
 <div class="indented">
-<include src="commentary-{{ module | lower }}-fragment.md#followup-{{ span_id }}" optional />
+<include src="commentary-{{ course | lower }}-fragment.md#followup-{{ span_id }}" optional />
 </div>
 {% endmacro -%}
 

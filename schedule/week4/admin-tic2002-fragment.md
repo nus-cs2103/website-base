@@ -21,7 +21,7 @@
 
 #### {{ thumb(1) }} Create a Pull Request {{ timing_badge("during/after the lecture", "secondary") }}
 
-* **Create a pull request (PR)** from your fork to [{{ url_module_org }}/duke]({{ url_module_org }}/duke)
+* **Create a pull request (PR)** from your fork to [{{ url_course_org }}/duke]({{ url_course_org }}/duke)
   * To be done only after you have pushed some code to your fork.
   * PR name should be your name (you may leave out the family name if you wish).
   * PR description can be left blank.

@@ -7,14 +7,14 @@ pageNav: 1
 {% import "common/topics.njk" as topics with context %}
 {% from "admin/admin-tasks-fragment.md" import show_weekly_admin_tasks with context %}
 {% from "common/macros.njk" import get_week_start_date with context %}
-{% from "_module-" + module + "/weeklyTextbookTopics-fragment.md" import weekly_textbook_topics, weeks_with_no_topics with context %}
-{% from "_module-" + module + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
+{% from "_course-" + course + "/weeklyTextbookTopics-fragment.md" import weekly_textbook_topics, weeks_with_no_topics with context %}
+{% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
 
 {#
--1: site not ready, lands in the module intro page
-0: site ready but semester hasn't started, lands in the module intro page
-14: exam period, lands in the module intro page
-15: site no longer used, lands in the module intro page
+-1: site not ready, lands in the course intro page
+0: site ready but semester hasn't started, lands in the course intro page
+14: exam period, lands in the course intro page
+15: site no longer used, lands in the course intro page
 1..13: site is active, lands in the week's schedule page
 #}
 
@@ -82,7 +82,7 @@ pageNav: {{ categories[category].pagenav }}
 
 {% macro show_week_summary(week_num) %}
 
-{% if module == "TIC2002" %}
+{% if course == "TIC2002" %}
 <span id="summary">
 <div class="container">
   <div class="row">
@@ -102,7 +102,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="col-sm">
 
 <md>**{{ icon_todo }} Tasks Summary:**</md>
-<include src="admin-{{ module | lower }}-fragment.md#summary" optional/>
+<include src="admin-{{ course | lower }}-fragment.md#summary" optional/>
 
   </div>
   </div>
@@ -110,7 +110,7 @@ pageNav: {{ categories[category].pagenav }}
 </span>
 <br>
 
-{% elseif module == "TEE3201" %} {#--------------------------------------------------------------------------------#}
+{% elseif course == "TEE3201" %} {#--------------------------------------------------------------------------------#}
 
 <span id="summary">
 <div class="container">
@@ -136,7 +136,7 @@ pageNav: {{ categories[category].pagenav }}
   <div class="col-sm">
 
 #### <a href="admin.html" class="badge bg-light text-dark mt-2">:fas-tasks: Tasks</a>
-<include src="admin-{{ module | lower }}-fragment.md#summary" optional/>
+<include src="admin-{{ course | lower }}-fragment.md#summary" optional/>
   </div>
   </div>
 </div>
@@ -181,7 +181,7 @@ pageNav: {{ categories[category].pagenav }}
 <div class="website-content">
 {{ show_week_pagetop(week_num, "notices") }}
 
-<include src="notices-{{ module | lower }}-fragment.md" optional />
+<include src="notices-{{ course | lower }}-fragment.md" optional />
 
 {{ show_week_summary(week_num) }}
 </div>
@@ -199,8 +199,8 @@ Admin info relevant to the week will appear in this tab.
 </box>
 {% endif %}
 
-{% if module in ["TIC2002", "TEE3201"] %}
-<include src="admin-{{ module | lower }}-fragment.md" optional />
+{% if course in ["TIC2002", "TEE3201"] %}
+<include src="admin-{{ course | lower }}-fragment.md" optional />
 {% else %}
 {{ show_weekly_admin_tasks(week_num) }}
 {% endif %}
@@ -234,7 +234,7 @@ Topics allocated to the week will appear in this tab.
 Information relevant to the week's {{ "lecture" if tic4001 or tic4002 else "tutorial" }} will appear in this tab.
 </box>
 {% endif %}
-<include src="tutorial-{{ module | lower }}-fragment.md" optional />
+<include src="tutorial-{{ course | lower }}-fragment.md" optional />
 </div>
 {% endmacro %}
 

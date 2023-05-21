@@ -13,7 +13,7 @@
   1. **You will be given a chance to find bugs in a different software.** Furthermore, you will be given an opportunity to ~~defend your bug reports against any possible objections~~ interact with the developers (anonymously) to refine the bug report further %%e.g., correct the severity level if the level you chose initially was incorrect%%. If you report possible bugs that turn out to be actual bugs, you earn marks (provided the product actually had bugs in the first place).
   2. **Your product will be subjected to a rigorous testing** and you will be given a chance to point out any inaccuracies in the bugs reported. You will lose marks for any bugs that turned out to be real bugs, but only if your work has more bugs than a certain bar.
 * **The above two can lead to high-rigor, <tooltip content="based on how well you achieve the objectives of testing, as opposed to indirect measures such as number of test cases">_outcome-based_</tooltip> evaluation of your testing skills**. The alternative is to rely solely on other easy-to-measure metrics %%(e.g., the number of test cases, test coverage, test LoC etc.)%% which we don't think as good representations of your actual testing skills.
-**The _ultimate_ objective of the PE is not even the higher rigor of grading.** Because of the PE, you will realize that any bugs are very likely to be detected, which means you will work extra hard to avoid bugs; and THAT is the real benefit. Ultimately, <span class="text-success">**what we want is for you to internalize a higher standard for testing and a lower tolerance for bugs in your own code**</span> -- something that can have a longer-lasting impact on your future careers, beyond the mere module grade.
+**The _ultimate_ objective of the PE is not even the higher rigor of grading.** Because of the PE, you will realize that any bugs are very likely to be detected, which means you will work extra hard to avoid bugs; and THAT is the real benefit. Ultimately, <span class="text-success">**what we want is for you to internalize a higher standard for testing and a lower tolerance for bugs in your own code**</span> -- something that can have a longer-lasting impact on your future careers, beyond the mere course grade.
 * **Problem: There is no way we can carry out the above-mentioned** two-part evaluation at a high-level of rigor if using tutors as testers, or using an automated testing script. %%e.g., some tutors might not have the motivation to try hard enough to find bugs, and it will be hard to find tutors willing to spend many hours testing products so near to their own exams.%%<br>
   **Solution: Get the two parts of the evaluation to feed each other** by getting student to test each others' products.
 * **The fact that you are testing products created by your classmates and objecting to bugs reported by your classmates can makes this a rather 'unpleasant' experience**. You might feel like _being pitted against each other_, or as if _you are forced to bring down each other_. But as you read above, it is a necessary evil for this evaluation to be even possible. Given the actual goal is to get you to create products with very few bugs, we think switching off the 'collaborative learning' mode for just a few days is a price worth paying to achieve that goal. After all, the PE is an evaluation activity (not a _learning activity_) and happens _after_ the regular learning period is over.
@@ -99,7 +99,7 @@
 * **During the bug reporting periods (i.e., <span class="badge bg-success">PE Phase 1 - part I</span> and <span class="badge bg-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** If you need to visit a different website or use another software, please ask for permission first.
   * Website: Canvas
   * Website/software: MSTeams (only to communicate with the prof of Tech support)
-  * Website: Module website %%(e.g., to look up PE info)%%
+  * Website: Course website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab/recording software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
   * Software: A text editor %%(to keep track of commands you tried)%%
@@ -266,7 +266,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 <box type="important" >
 
-****This is not a bug; it's fine the way it is!**** Every time you say that in response to a legitimate bug report, you are saying something about your own standard of work as a software engineer. Don't set that standard too low, which goes totally against what we are trying to achieve in this module.
+****This is not a bug; it's fine the way it is!**** Every time you say that in response to a legitimate bug report, you are saying something about your own standard of work as a software engineer. Don't set that standard too low, which goes totally against what we are trying to achieve in this course.
 
 **:fas-check: Yes, that needs fixing!** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that needs fixing", accept it graciously as a bug, even if you can come up with _some_ argument for it not being a bug. Your professional integrity is more valuable than a measly fraction of a mark that you might lose.<br>
   Even when you still want to defend the behavior being labelled as problematic, instead of pretending that the behavior was a deliberate choice to begin with, you can say something like,
@@ -334,7 +334,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 * Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
 </box>
 
-* Go to [CATcher Web app](https://catcher-org.github.io/CATcher/), and login to the profile `{{ module_pair }} PE`. It will show all the bugs assigned to your team, divided into three sections:
+* Go to [CATcher Web app](https://catcher-org.github.io/CATcher/), and login to the profile `{{ course_pair }} PE`. It will show all the bugs assigned to your team, divided into three sections:
   1. `Issues Pending Responses` - Issues that your team has not processed yet.
   1. `Issues Responded` - Your job is to get all issues to this category.
   1. `Faulty Issues` - e.g., Bugs marked as duplicates of each other, or causing circular _duplicate_ relationships. Fix the problem given so that no issues remain in this category.
@@ -489,7 +489,7 @@ However, ==if the dev team's argument is not too far from 'reasonable', **it may
 <tabs>
 <tab header="Using CATcher">
 
-* When the phase has been announced as open, login to [CATcher](https://catcher-org.github.io/CATcher) as usual (profile: `{{ module_pair }} PE`).
+* When the phase has been announced as open, login to [CATcher](https://catcher-org.github.io/CATcher) as usual (profile: `{{ course_pair }} PE`).
 * For each issues listed in the `Issues Pending Responses` section:
   * Click on it to go to the details, and read the dev team's response.
   * If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.

@@ -18,7 +18,7 @@
 {% call show_admin_page("tp-constraints") %}
 <div id="main">
 
-**Your project should comply with the following constraints.** %%**Reason**: to increase comparability among projects and to maximize applicability of module learning outcomes in the project.%%
+**Your project should comply with the following constraints.** %%**Reason**: to increase comparability among projects and to maximize applicability of course learning outcomes in the project.%%
 
 <span tags="m--cs2103 m--tic4002">
 
@@ -53,8 +53,8 @@ The data should be stored locally and should be in a human editable text file.<b
 {% call show_constraint("Constraint-No-DBMS") -%}
 Do not use a <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data.<br/>
 %%**Reason:** Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we
-need to optimize it for {{ module_pair }}
-module learning outcomes; covering DBMS-related topics will have to be left to database modules or level 3 project modules.%%
+need to optimize it for {{ course_pair }}
+course learning outcomes; covering DBMS-related topics will have to be left to database courses or level 3 project courses.%%
 {%- endcall  %}
 
 {% call show_constraint("Constraint-OO") -%}
@@ -89,9 +89,9 @@ The use of third-party frameworks/libraries/services is allowed but only if they
 * do not violate other constraints.
 
 and is subjected to prior approval by the teaching team.<br>
-%%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the module.%%
+%%**Reason:** We will not allow third-party software that can interfere with the learning objectives of the course.%%
 
-Please ==post in the [forum]({{url_module_org}}/forum/issues) your request to use a third-party libraries/services== _before_ you start using the library. Once a specific software has been approved for one team, other teams may use it without requesting permission again.<br/>
+Please ==post in the [forum]({{url_course_org}}/forum/issues) your request to use a third-party libraries/services== _before_ you start using the library. Once a specific software has been approved for one team, other teams may use it without requesting permission again.<br/>
 %%**Reason:** The whole class should know which external software are used by others so that they can do the same if they wish to.%%
 {%- endcall  %}
 
@@ -149,7 +149,7 @@ The DG and UG should be PDF-friendly. Don't use expandable panels, embedded vide
 {% call show_constraint("Recommendation-Minimal-Network", recommendation=true) -%}
 It is OK to use a reliable public API %%e.g., Google search%% but we recommend that you have a fallback mechanism (e.g., able to load data using a data file if the network is down).<br>
   %%**Reason:** During the mass peer-testing session, the network access can be intermittent due to high load. If your feature cannot be tested due to lack of Internet, that will have to be counted as a major bug, to be fair to those whose app is being tested and bugs found being penalized.%%<br>
-  ==If you use NUS data== (e.g., scrape data from an NUS website), please work with [NUS IT](https://nusit.nus.edu.sg/contact/) directly to get their approval first. Even well-intentioned use of NUS data without approval can get you into serious trouble (has happened before). The teaching team will not be able to get approval for you as the use of NUS data is not a module requirement.
+  ==If you use NUS data== (e.g., scrape data from an NUS website), please work with [NUS IT](https://nusit.nus.edu.sg/contact/) directly to get their approval first. Even well-intentioned use of NUS data without approval can get you into serious trouble (has happened before). The teaching team will not be able to get approval for you as the use of NUS data is not a course requirement.
 {%- endcall %}
 
 {% call show_constraint("Recommendation-Testability", recommendation=true) -%}
@@ -164,7 +164,7 @@ Here are some examples of features that are hard-to-test:
 <span tags="m--cs2113 m--tic4001">
 
 {% call show_constraint("Recommendation-No-GUI", recommendation=true) -%}
-Creating a good Java GUI takes a lot of extra effort, which can easily push the tP effort beyond the expected range. In addition, good GUI design is not a learning outcome of this module. Therefore, you are strongly discouraged from creating a GUI application. Choose the GUI path only if you are willing to take the extra workload on top of the module's normal load.
+Creating a good Java GUI takes a lot of extra effort, which can easily push the tP effort beyond the expected range. In addition, good GUI design is not a learning outcome of this course. Therefore, you are strongly discouraged from creating a GUI application. Choose the GUI path only if you are willing to take the extra workload on top of the course's normal load.
 {%- endcall %}
 </span>
 
@@ -179,7 +179,7 @@ Also keep in mind:
 
 <box type="warning">
 
-If you are not sure if your product complies with a certain constraint/recommendation, please seek clarification by posting in the [forum]({{url_module_org}}/forum/issues) (preferred) or emailing the supervisor.
+If you are not sure if your product complies with a certain constraint/recommendation, please seek clarification by posting in the [forum]({{url_course_org}}/forum/issues) (preferred) or emailing the supervisor.
 </box>
 
 </div>

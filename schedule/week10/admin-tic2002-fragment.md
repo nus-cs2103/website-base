@@ -47,7 +47,7 @@ digit | option 1                             | option 2                         
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-CodingStandard`: Coding Standard**" var-fragment="extensions-fragment.md#A-CodingStandard" />
 <div class="indented-level4">
 
-↳ The coding standard to follow is given [here]({{ url_java_coding_standard }}) -- also given under the `Links` menu at the top of the module website.
+↳ The coding standard to follow is given [here]({{ url_java_coding_standard }}) -- also given under the `Links` menu at the top of the course website.
 </div>
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`A-CodeQuality`: Increase Code Quality**" var-fragment="extensions-fragment.md#A-CodeQuality" />
 <div class="indented-level4">

@@ -4,20 +4,20 @@ A file has a _filename_ and a _path_. **The _path_ specifies the location of a f
 
 <box>
 
-<tabs> 
+<tabs>
   <tab header="Windows">
 
 {{ icon_example }} File `C:\photos\2018\home.jpg`
 
 * Filename: `home.jpg`
 * Path: `C:\photos\2018` (Windows uses the back slash `\` as the _separator_ symbol in paths )
-* Folders in the path (`C:` is called the _root folder_): 
+* Folders in the path (`C:` is called the _root folder_):
   ```
   C: {root}
     └── photos
          └── 2018
   ```
-  
+
 {{ icon_important_big_red }} Windows file names and paths are not case sensitive: `C:\photos\2018\home.jpg` is same as `C:\PHOTOS\2018\HOME.JPG`.
   </tab>
   <tab header="OS-X/Linux">
@@ -26,7 +26,7 @@ A file has a _filename_ and a _path_. **The _path_ specifies the location of a f
 
 * Filename: `home.jpg`
 * Path: `/Users/john` (OS-X/Linux uses the forward slash `/` as the _separator_ symbol in paths )
-* Folders in the path (the `/` at the start of the path is considered the _root folder_): 
+* Folders in the path (the `/` at the start of the path is considered the _root folder_):
   ```
   / {root}
       └── Users
@@ -41,7 +41,7 @@ A file has a _filename_ and a _path_. **The _path_ specifies the location of a f
 
 The Python module `os` contains functions for dealing with files and folders. For example, you can use `os.getcwd()` to get the <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and `os.chdir()` to change the working directory to a different location.
 
-<tip-box> 
+<tip-box>
 
 {{ icon_example }} This code shows how to print/change current working directory
 
@@ -75,23 +75,23 @@ C:\photos\vaction
 
 <box>
 
-{{ icon_example }} Assume the current working directory is `C:\modules\tee3201` and you created a new folder inside it named `exercises` and put a `ex.txt` file in that folder.
+{{ icon_example }} Assume the current working directory is `C:\courses\tee3201` and you created a new folder inside it named `exercises` and put a `ex.txt` file in that folder.
 
-* Absolute path of the file: `C:\modules\tee3201\exercises\ex1.txt`
+* Absolute path of the file: `C:\courses\tee3201\exercises\ex1.txt`
 * Relative path of the file: `exercises\ex1.txt`
 
 </box>
 
-In a path, you can use the  dot `.` as a shorthand to refer to the current working directory. Similarly, `..` can be used to refer to the parent directory. 
+In a path, you can use the  dot `.` as a shorthand to refer to the current working directory. Similarly, `..` can be used to refer to the parent directory.
 
 
 <box>
 
-{{ icon_example }} If the current working directory is `C:\modules\tee3201`, you can use any of the following to refer to `C:\modules\tee3201\exercises\ex1.txt`.
+{{ icon_example }} If the current working directory is `C:\courses\tee3201`, you can use any of the following to refer to `C:\courses\tee3201\exercises\ex1.txt`.
 * `exercises\ex1.txt`
 * `.\exercises\ex1.txt`
 * `..\tee3201\exercises\ex1.txt`
-* `..\..\modules\tee3201\exercises\ex1.txt`
+* `..\..\courses\tee3201\exercises\ex1.txt`
 
 <panel type="seamless" header="%%another example%%">
 
@@ -136,7 +136,7 @@ cwd = os.getcwd()
 print(os.path.join(cwd, 'ex', 'w2'))
 ```
 
-If you run it on a Windows computer in the folder `C:\modules\tee3201`, it prints `C:\modules\tee3201\ex\w2`.<br>
+If you run it on a Windows computer in the folder `C:\courses\tee3201`, it prints `C:\courses\tee3201\ex\w2`.<br>
 If your run it on a OS-X computer in the folder `/Users/john`, it prints `/Users/john/ex/w2`.
 
 </box>

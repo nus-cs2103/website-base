@@ -17,7 +17,7 @@
 
 #### {{ thumb(2) }} Exercise: interpret an intermediate level CD
 
-<include src="../../admin/common-tutorials-fragment.md#interpret-module-cd" />
+<include src="../../admin/common-tutorials-fragment.md#interpret-course-cd" />
 
 
 #### {{ thumb(3) }} Exercise: draw an intermediate level CD

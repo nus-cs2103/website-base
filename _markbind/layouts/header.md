@@ -2,14 +2,14 @@
 {% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center d-print-none"><md>**This is a draft version of the website! The final version will be available near the start of the semester.**</md></div>
 {% endif %}{% if current_week in ["-1", "0", "1"] %}
-<div class="w-100 p-1 bg-success text-white text-center d-print-none"><md>{% if cs2113 %}All the module activities are scheduled to be _in-person_ activities this semester.{% else %}This module will be delivered in _blended learning_ mode (i.e., a mix of online and F2F activities) this semester.{% endif %}</md></div>
+<div class="w-100 p-1 bg-success text-white text-center d-print-none"><md>{% if cs2113 %}All the course activities are scheduled to be _in-person_ activities this semester.{% else %}This course will be delivered in _blended learning_ mode (i.e., a mix of online and F2F activities) this semester.{% endif %}</md></div>
 {% elseif current_week == "15" %}
-<div class="w-100 p-1 bg-warning text-center"><md>**This site is from a past semester! The current version will be [here](http://www.comp.nus.edu.sg/~{{ module | lower }}) when the new semester starts.**</md></div>
+<div class="w-100 p-1 bg-warning text-center"><md>**This site is from a past semester! The current version will be [here](http://www.comp.nus.edu.sg/~{{ course | lower }}) when the new semester starts.**</md></div>
 </div>
 {% endif %}
 <header sticky>
 <navbar placement="top" type="dark">
-<a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand"><span class="badge rounded-pill bg-{{ module_color }}">{{ module_pair }} <small>{{ period }}</small></span></a>
+<a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand"><span class="badge rounded-pill bg-{{ course_color }}">{{ course_pair }} <small>{{ period }}</small></span></a>
   <dropdown header="**Schedule**" class="nav-link">
   <li><a href="{{baseUrl}}/schedule/timeline.html" class="dropdown-item"><md>**Full Timeline**</md></a></li>
 {% for week in range(1, 14) %}
@@ -22,14 +22,14 @@
   <dropdown tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002" header="**Project Links**" class="nav-link">
     <md>**&nbsp;Individual Project (iP):**</md>
     <li><a href="{{baseUrl}}/admin/ip-overview.html" class="dropdown-item"><md>{{ icon_project }} Individual Project Info</md></a></li>
-    <li><a href="{{url_module_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} iP Upstream Repo</md></a></li>{% if (current_week | int) > 1 %}
+    <li><a href="{{url_course_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} iP Upstream Repo</md></a></li>{% if (current_week | int) > 1 %}
     <li tags="m--cs2103 m--tic4001 m--tic4002"><a href="{{baseUrl}}/admin/ip-showcase.html" class="dropdown-item"><md>:glyphicon-list-alt: iP Showcase</md></a></li>{% endif %}
     <li><a href="{{ url_ip_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: iP Code Dashboard</md></a></li>
     <li><a href="{{ url_ip_progress_dashboard }}" target="_blank" class="dropdown-item text-success"><md>:fas-trophy: iP Progress Dashboard</md></a></li>
     <hr>
     <md>**&nbsp;Team Project (tP):**</md>
     <li><a href="{{baseUrl}}/admin/tp-expectations.html" class="dropdown-item"><md>{{ icon_project }} Team Project Info</md></a></li>
-    <li tags="m--cs2103 m--cs2113 m--tic4002"><a href="{{url_module_org}}/{{ tp_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} tP Upstream Repo {% if not cs2113 %}(AB3){% endif %}</md></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic4002"><a href="{{url_course_org}}/{{ tp_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} tP Upstream Repo {% if not cs2113 %}(AB3){% endif %}</md></a></li>
     <li><a href="{{ url_team_list }}" class="dropdown-item"><md>:glyphicon-list-alt: Team List</md></a></li>
     <li><a href="{{ url_tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>
     <li><a href="{{url_tp_progress_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-trophy: tP Progress Dashboard</md></a></li>
@@ -50,7 +50,7 @@
     <li tags="m--cs2103 m--cs2113"><a href="{{ url_forum_activities_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-trophy: Forum Activities Dashboard</md></a></li>
     <li><a href="{{url_participation_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-trophy: Participation Dashboard</md></a></li>
     <li tags="m--tic2002"><a href="{{url_ip_dashboard}}" target="_blank" class="dropdown-item"><md>:fas-chart-area: Code Dashboard</md></a></li>
-    <li tags="m--tic2002"><a href="{{url_module_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke repo</md></a></li>
+    <li tags="m--tic2002"><a href="{{url_course_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke repo</md></a></li>
   </dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">

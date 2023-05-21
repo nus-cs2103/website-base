@@ -10,7 +10,7 @@
 
 <box>
 
-{{ icon_important_big_red }} Our tutorial IDs are different from Canvas. Format: `{{ module }}T-W11` means a tutorial of `{{ module }}T` module, held on `Wednesday` at `1100`, and so on.
+{{ icon_important_big_red }} Our tutorial IDs are different from Canvas. Format: `{{ course }}T-W11` means a tutorial of `{{ course }}T` course, held on `Wednesday` at `1100`, and so on.
 
 </box>
 
@@ -18,7 +18,7 @@
 
 **The first few tutorials will be conducted via Zoom.**
 
-* Zoom links for tutorial sessions will be available in [Canvas module homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.<br>
+* Zoom links for tutorial sessions will be available in [Canvas course homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.<br>
   You may use the tutorial venue to join the Zoom session if you wish.
 
 **The subsequent tutorials will be conducted in F2F mode**. Note the following about F2F tutorials:
@@ -34,10 +34,10 @@
   (b) and not speaking too loudly during those discussions.
 * Are you allowed to attend the tutorial via Zoom instead?  By default, no.<br>
   Reason: it goes against the purpose of F2F tutorials (i.e., to get the whole team to meet physically) and the NUS directive to move all small classes to F2F mode.<br>
-  However, you can request (by emailing `{{ module | lower }}@comp.nus.edu.sg`) to attend the tutorial of a specific week via Zoom, if you have a valid reason (e.g., MC, taking part in an NUS-related event).
+  However, you can request (by emailing `{{ course | lower }}@comp.nus.edu.sg`) to attend the tutorial of a specific week via Zoom, if you have a valid reason (e.g., MC, taking part in an NUS-related event).
 </box>
 
-<include src="../_module-{{ module }}/timetables-fragment.md#tutorials-s{{ S }}" optional />
+<include src="../_course-{{ course }}/timetables-fragment.md#tutorials-s{{ S }}" optional />
 
 </div>
 </panel>
@@ -71,19 +71,19 @@
 </div>
 
 
-**The role of our tutors** is different from tutors in other modules.
+**The role of our tutors** is different from tutors in other courses.
 
-* **Not a source of admin information**: Given the humongous amount of admin info contained in this module and the fact that it is constantly evolving, tutors may not be aware of the recent subtle changes to the admin information. To safeguard you from receiving incorrect admin info, tutors are prohibited from answering admin queries. If you have an admin query, please post in the [forum]({{ url_forum }}) (or email the prof at `{{ module | lower }}@comp.nus.edu.sg` but only if the question is not appropriate for the forum).
+* **Not a source of admin information**: Given the humongous amount of admin info contained in this course and the fact that it is constantly evolving, tutors may not be aware of the recent subtle changes to the admin information. To safeguard you from receiving incorrect admin info, tutors are prohibited from answering admin queries. If you have an admin query, please post in the [forum]({{ url_forum }}) (or email the prof at `{{ course | lower }}@comp.nus.edu.sg` but only if the question is not appropriate for the forum).
 
 * **No feedback/help for yet-to-be-graded components**: Tutors are prohibited from giving inputs for components not graded yet. %%Reason: work submitted for grading should be your own.%%
 
 * **No direct tech help**: Tutors are prohibited from giving direct technical help, other than to give you some general direction to finding a solution. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
 
-{{ embed_topic("appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + module_pair, "2", indent="1") }}
+{{ embed_topic("appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + course_pair, "2", indent="1") }}
 
 <br/>
 
-* **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' concepts that are covered in lectures or other learning resources given to you %%(reason: self-learning is a vital part of the module)%%. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. But tutors can help you clarify doubts under the right circumstances, as described in the panel below.
+* **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' concepts that are covered in lectures or other learning resources given to you %%(reason: self-learning is a vital part of the course)%%. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. But tutors can help you clarify doubts under the right circumstances, as described in the panel below.
 
 {{ embed_topic("appendixD-help.md#questions-for-tutros", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable to ask the tutor", "2", indent="1") }}
 

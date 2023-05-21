@@ -25,7 +25,7 @@
     * 1 point if you submitted correct solutions for 25-49% of the exercises{% endif %}
   * TEAMMATES peer evaluation sessions: 2 points per session
   * Other weekly activities:
-    * There could be other activities related to the lecture, tutorial, or the administration of the module.
+    * There could be other activities related to the lecture, tutorial, or the administration of the course.
     * Refer the activity description for evaluation criteria.
     * Each activity earns 2 points unless specified otherwise.
 </div>
@@ -43,7 +43,7 @@
       * 2 points if only one of the conditions is satisfied.
       * 1 point if submitted but both conditions are not satisfied.
   * Other weekly activities:
-    * There could be other activities related to the lecture, or the administration of the module.
+    * There could be other activities related to the lecture, or the administration of the course.
     * Refer the activity description for evaluation criteria.
 </div>
 

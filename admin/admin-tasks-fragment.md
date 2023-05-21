@@ -1,8 +1,8 @@
 {% from "common/admin.njk" import faqs, policies, show_admin_summary, topics with context %}
 {% from "common/macros.njk" import embed_topic, get_date, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
-{% from "_module-" + module + "/weeklyAdminTopics-fragment.md" import weekly_admin_topics with context %}
-{% from "_module-" + module + "/weeklyAdminTasks-fragment.md" import weekly_admin_tasks with context %}
+{% from "_course-" + course + "/weeklyAdminTopics-fragment.md" import weekly_admin_topics with context %}
+{% from "_course-" + course + "/weeklyAdminTasks-fragment.md" import weekly_admin_tasks with context %}
 
 <span id="teammates-link-recovery-tip">{{ icon_tip }} If you did not receive the submission link, you can get TEAMMATES to resend the link by going to [TEAMMATES link recovery page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery)
   and entering your NUSNET email address. Remember to check your spam folder as well.</span>
@@ -42,24 +42,24 @@ The tools in the following panels differ slightly from TIC4001.
 </div>
 </div>
 {#====================================================================================================================#}
-<span id="heading_submit_pre_module_survey">Submit the pre-module survey</span>
-<div id="desc_submit_pre_module_survey">
+<span id="heading_submit_pre_course_survey">Submit the pre-course survey</span>
+<div id="desc_submit_pre_course_survey">
 
-* **Submit the pre-module survey ==(compulsory)==**<br>
-  _Pre-Module Survey_ will be available on Canvas **Week 1 Monday - Friday 2359**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
+* **Submit the pre-course survey ==(compulsory)==**<br>
+  _Pre-Course Survey_ will be available on Canvas **Week 1 Monday - Friday 2359**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
 </div>
 {#====================================================================================================================#}
-<span id="heading_learn_about_the_module">Learn about the module</span>
-<div id="desc_learn_about_the_module">
+<span id="heading_learn_about_the_course">Learn about the course</span>
+<div id="desc_learn_about_the_course">
 
-* Read the following admin info about the module.
+* Read the following admin info about the course.
 
 <box type="info" tags="m--tic4002" seamless>
 
 The info in the following panels are as the same as TIC4001.
 </box>
 
-{{ embed_topic("moduleExpectations.md#main", "Admin " + icon_embedding + " **Module expectations and ==topic levels==**", "1", indent="2", type="danger") }}
+{{ embed_topic("courseExpectations.md#main", "Admin " + icon_embedding + " **Course expectations and ==topic levels==**", "1", indent="2", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="2", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="2", type="info") }}
 {% if not (tic4001 or tic4002) %}
@@ -69,7 +69,7 @@ The info in the following panels are as the same as TIC4001.
 
 The info in the following panels differs from TIC4001.
 </box>
-{{ embed_topic("moduleOverview.md#main", "Admin " + icon_embedding + " **Module overview**", "4", indent="2", type="success") }}
+{{ embed_topic("courseOverview.md#main", "Admin " + icon_embedding + " **Course overview**", "4", indent="2", type="success") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_first_lecture">Attend the first lecture</span>
@@ -105,7 +105,7 @@ The info in the following panels differs from TIC4001.
 <span id="heading_get_connect_with_comm_channels">Get connected to our communication channels</span>
 <div id="desc_get_connect_with_comm_channels">
 
-* If you haven't done so already, follow the 'Preparation' instructions of the following panel, to get connected with the communication channels used by the module.
+* If you haven't done so already, follow the 'Preparation' instructions of the following panel, to get connected with the communication channels used by the course.
 
 {{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "3", indent="2") }}
 </div>
@@ -116,7 +116,7 @@ The info in the following panels differs from TIC4001.
 * **Post-lecture quiz**: Read weekly topics allocated for this week and submit the post-lecture quiz before the quiz deadline{% if cs2103 %} %%(i.e., before the following lecture)%%{% endif %}.
 </div>
 {#====================================================================================================================#}
-<span id="heading_form_teams">[{{ module }} students only] Form teams during the tutorial</span>
+<span id="heading_form_teams">[{{ course }} students only] Form teams during the tutorial</span>
 <div id="desc_form_teams">
 
 * See the [{{ show_as_tab("Tutorial", icon_tutorial) }}](../schedule/week3/tutorial.html) tab for more info.
@@ -128,10 +128,10 @@ The info in the following panels differs from TIC4001.
 * The teaching team will guide the team forming.
 </div>
 {#====================================================================================================================#}
-<span id="heading_accept_github_invitations">Accept GitHub invitation from the module organization</span>
+<span id="heading_accept_github_invitations">Accept GitHub invitation from the course organization</span>
 <div id="desc_accept_github_invitations">
 
-* We will be adding you all to {{ module | lower }}-{{ semester }} github org. **Please accept the invitation sent by GitHub** as you need to be a member of the org for some of the future module activities. If you did not receive the invitation link, you can use the link [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation).
+* We will be adding you all to {{ course | lower }}-{{ semester }} github org. **Please accept the invitation sent by GitHub** as you need to be a member of the org for some of the future course activities. If you did not receive the invitation link, you can use the link [https://github.com/orgs/nus-{{ course | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ course | lower }}-{{ semester }}/invitation).
 * Worth `2` participation points
 </div>
 {#====================================================================================================================#}
@@ -143,13 +143,13 @@ The info in the following panels differs from TIC4001.
 
 {{ embed_topic("peerEvaluations.md#intro", "Admin " + icon_embedding + " Peer Evaluations → Introduction", "3", indent="2") }}
 {{ embed_topic("peerEvaluations.md#practicePeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Prelim Peer Evaluation", "1", indent="2", status="expanded") }}
-{{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "4", indent="2") }}
+{{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Course Policies → Policy on Deadline Extensions**", "4", indent="2") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_submit_midterm_feedback_for_the_module">{% if not cs2113 %}[optional]{% endif %} Submit mid-term feedback for the module</span>
-<div id="desc_submit_midterm_feedback_for_the_module">
+<span id="heading_submit_midterm_feedback_for_the_course">{% if not cs2113 %}[optional]{% endif %} Submit mid-term feedback for the course</span>
+<div id="desc_submit_midterm_feedback_for_the_course">
 
-* **An anonymous survey to submit feedback about the module and the teaching team** will open on Canvas by Monday. Please take a few minutes to give us your feedback.
+* **An anonymous survey to submit feedback about the course and the teaching team** will open on Canvas by Monday. Please take a few minutes to give us your feedback.
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_midterm_peer_evaluations">Submit midterm peer evaluations on TEAMMATES</span>

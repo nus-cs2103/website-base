@@ -4,7 +4,7 @@
 </h1>
 
 <p class="lead">
-Given below are the summary results of your ratings on various aspects of the module and my general comments on some
+Given below are the summary results of your ratings on various aspects of the course and my general comments on some
 of them.
 </p>
 
@@ -34,13 +34,13 @@ Can't comment. I have stopped attending them.<br><span class="text-info bg-info"
 **:fas-comment: My comments:**
 
 
-Good to see that lecture briefings are generally well-received. 
+Good to see that lecture briefings are generally well-received.
 Also keep in mind that they are meant to be 'briefings' only -- as the learning the full content is expected to be
 done at your own pace, using the textbook and the pre-recorded videos.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q2"/>
@@ -63,16 +63,16 @@ Can't comment. I don't watch them.<br><span class="text-info bg-info">..........
 
 
 Good to see that pre-recorded lecture videos are generally well-received.
-I'll continue to improve the existing ones and add more videos. 
-    
+I'll continue to improve the existing ones and add more videos.
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q3"/>
 
-### Module website{.text-info}
+### Course website{.text-info}
 
 %%Option%% | %%Count%% %%(/7)%% | %%Percentage%%
 -------|-------|-----------
@@ -88,16 +88,16 @@ Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light"
 **:fas-comment: My comments:**
 
 
-The feedback for the module website is generally positive but I'm sure there are areas to improve.
+The feedback for the course website is generally positive but I'm sure there are areas to improve.
   I will continue to try and improve the website whenever I can.<br>
   In the meantime, I thank you for your patience with the website -- it's not easy to disseminate that much
   of information in a way that fits everyone's expectations %%(e.g., some prefer more content to be more 'visual'
   while others prefer minimalistic presentation)%%,
   and we realize that ==it is not easy for you to consume that much of information== either.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q5"/>
@@ -120,27 +120,27 @@ Too low. <br><span class="text-info bg-info"></span><span class="text-light bg-l
 
 Good to see that the workload is mostly manageable for most.
 
-* **If the workload is higher than you can manage:** I realize this module can feel heavy, 
+* **If the workload is higher than you can manage:** I realize this course can feel heavy,
   especially if you don't have prior programming
   experience, and also if you have a day job too.<br>
-  That said, SE modules are usually heavy because learning SE skills needs a lot of practice.<br>
+  That said, SE courses are usually heavy because learning SE skills needs a lot of practice.<br>
   I try to alleviate the workload problem by keeping deadlines fairly flexible and maintaining a low bar for
-  the minimum you need to do to get a decent grade. 
+  the minimum you need to do to get a decent grade.
 * **If you have room for more work:**
   * Try to do more in the project: The project is open ended are you are encouraged to do as much as you want.
     You can refer to [Duke full description](https://nus-tic2002-ay2223s2.github.io/website/se-book-adapted/projectDuke/index.html) to find
     more things you can do with it.
   * Learn the optional topics: I have added a lot more optional topics to the second half of the semester.
     This means there is more to learn every week, if you have the capacity to do so.
-    
+
 </div>
-        
-        
+
+
 ---
 
 <a id="Q4"/>
 
-### The pace of the module{.text-info}
+### The pace of the course{.text-info}
 
 %%Option%% | %%Count%% %%(/7)%% | %%Percentage%%
 -------|-------|-----------
@@ -163,10 +163,10 @@ Good to see that the pace is mostly manageable for most too.
 * **If the pace is too slow for you:** I have add more optional topics to the second half of the semester,
   and made all pre-recorded videos for future lectures available.
    This means you should be able to move faster through the weeks if you wish.
-    
+
 </div>
-        
-        
+
+
 
 ---
 
@@ -177,7 +177,7 @@ Also note my **general response given at the bottom of this document**.</md></p>
 
 <table style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<th style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">Any other feedback about the module?</th>
+<th style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">Any other feedback about the course?</th>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
@@ -193,7 +193,7 @@ No other problems</markdown>
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>A lot of knowledge to gain and learn. </markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes. Given this is your only 'formal' SE module, try to learn as much from it as you can.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes. Given this is your only 'formal' SE course, try to learn as much from it as you can.</markdown>
 </span></box>
 </td>
 </tr>

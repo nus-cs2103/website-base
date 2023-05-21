@@ -1,9 +1,9 @@
-<!-- ===========================  primary module configuration ============================================= -->
+<!-- ===========================  primary course configuration ============================================= -->
 
-<variable name="module">CS2103</variable>
-<variable name="module_pair">{{ module }}/T</variable>
-<variable name="module_name">Software Engineering</variable>
-<variable name="module_color">success</variable>
+<variable name="course">CS2103</variable>
+<variable name="course_pair">{{ course }}/T</variable>
+<variable name="course_name">Software Engineering</variable>
+<variable name="course_color">success</variable>
 
 <variable name="S">1</variable>
 <variable name="semester">AY2021S{{ S }}</variable>
@@ -36,7 +36,7 @@
 <variable name="version_penultimate">v1.3</variable>
 <variable name="version_final">v1.4</variable>
 <variable name="version_future">v2.0</variable>
-<variable name="example_team_id">{{ module }}-T09-2</variable>
+<variable name="example_team_id">{{ course }}-T09-2</variable>
 
 <variable name="ug_pages_per_person">1</variable>
 <variable name="dg_pages_per_person">3</variable>
@@ -66,12 +66,12 @@
 
 <!-- ===========================  secondary variables =========================================== -->
 
-<variable name="cs2103">{{ "Y" if module == "CS2103" }}</variable>
-<variable name="cs2113">{{ "Y" if module == "CS2113" }}</variable>
-<variable name="tic2002">{{ "Y" if module == "TIC2002" }}</variable>
-<variable name="tic4001">{{ "Y" if module == "TIC4001" }}</variable>
-<variable name="tic4002">{{ "Y" if module == "TIC4002" }}</variable>
-<variable name="tee3201">{{ "Y" if module == "TEE3201" }}</variable>
+<variable name="cs2103">{{ "Y" if course == "CS2103" }}</variable>
+<variable name="cs2113">{{ "Y" if course == "CS2113" }}</variable>
+<variable name="tic2002">{{ "Y" if course == "TIC2002" }}</variable>
+<variable name="tic4001">{{ "Y" if course == "TIC4001" }}</variable>
+<variable name="tic4002">{{ "Y" if course == "TIC4002" }}</variable>
+<variable name="tee3201">{{ "Y" if course == "TEE3201" }}</variable>
 <variable name="has_t">{{ "Y" if cs2103 or cs2113 }}</variable>
 <variable name="has_pe">{{ "Y" if cs2103 or cs2113 }}</variable>
 <variable name="session_name">{{ "lecture" if tic4001 else "tutorial" }}</variable>
@@ -101,30 +101,30 @@
 <variable name="date_w13_start">{{ date_w12_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w14_start">{{ date_w13_start | date("YYYY-MM-DD", 7) }}</variable>
 
-<variable name="module_org">nus-{{ module | lower }}-{{ period if tic2002 or tee3201 else semester }}</variable>
-<variable name="url_module_org">https://github.com/{{ module_org }}</variable>
-<variable name="url_module_gihub_io">https://{{ module_org | lower }}.github.io</variable>
+<variable name="course_org">nus-{{ course | lower }}-{{ period if tic2002 or tee3201 else semester }}</variable>
+<variable name="url_course_org">https://github.com/{{ course_org }}</variable>
+<variable name="url_course_gihub_io">https://{{ course_org | lower }}.github.io</variable>
 
 <variable name="url_admin"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></variable>
 <variable name="url_announcements">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}/announcements</variable>
-<variable name="url_bugs">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_bugs">{{ url_course_org | safe }}/forum/issues</variable>
 <variable name="url_canvas_home">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}</variable>
-<variable name="url_dashboards">{{ url_module_gihub_io | safe }}/dashboards</variable>
+<variable name="url_dashboards">{{ url_course_gihub_io | safe }}/dashboards</variable>
 <variable name="url_files">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}/files</variable>
-<variable name="url_forum">{{ url_module_org | safe }}/forum/issues</variable>
+<variable name="url_forum">{{ url_course_org | safe }}/forum/issues</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
-<variable name="url_ab3_fork_website">{{ url_module_gihub_io | safe }}/{{ tp_repo_name }}</variable>
+<variable name="url_ab3_fork_website">{{ url_course_gihub_io | safe }}/{{ tp_repo_name }}</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
 <variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/{{ "intermediate" if cs2103 or tic4002 else "basic"}}.html</variable>
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
-<variable name="url_ip_dashboard">{{ url_module_gihub_io | safe }}/ip-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=java~md~fxml~sh~bat~gradle~txt</variable>
+<variable name="url_ip_dashboard">{{ url_course_gihub_io | safe }}/ip-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=java~md~fxml~sh~bat~gradle~txt</variable>
 <variable name="url_ip_progress_dashboard">{{ url_dashboards }}/contents/ip-progress.html</variable>
-<variable name="url_module_website">{{ url_module_gihub_io | safe }}/website</variable>
+<variable name="url_course_website">{{ url_course_gihub_io | safe }}/website</variable>
 <variable name="url_participation_dashboard">{{ url_dashboards }}/contents/participation.html</variable>
 <variable name="url_quizzes">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}/quizzes</variable>
 <variable name="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
 <variable name="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
-<variable name="url_tp_dashboard">{{ url_module_gihub_io | safe }}/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other</variable>
+<variable name="url_tp_dashboard">{{ url_course_gihub_io | safe }}/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other</variable>
 <variable name="url_tp_progress_dashboard">{{ url_dashboards }}/contents/tp-progress.html</variable>
 
 <!-- ===========================  icons ================================================= -->
@@ -197,9 +197,9 @@
 <variable name="optional"><span class="badge rounded-pill bg-success">OPTIONAL</span></variable>
 <variable name="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></variable>
 
-<variable name="edition_badge"><small><small><small><span class='badge rounded-pill bg-{{ module_color }}'>{{ module_pair }} edition - {{ period }}</span></small></small></small></variable>
-<variable name="M"><span class="badge bg-info">&nbsp;{{ module }}&nbsp;</span></variable>
-<variable name="MT"><span class="badge bg-warning text-dark">{{ module }}T</span></variable>
+<variable name="edition_badge"><small><small><small><span class='badge rounded-pill bg-{{ course_color }}'>{{ course_pair }} edition - {{ period }}</span></small></small></small></variable>
+<variable name="M"><span class="badge bg-info">&nbsp;{{ course }}&nbsp;</span></variable>
+<variable name="MT"><span class="badge bg-warning text-dark">{{ course }}T</span></variable>
 
 <variable name="heading_project"><h3 class="bg-dark text-white p-2 mb-4 mt-4">{{ icon_project }} Project</h3></variable>
 
@@ -222,10 +222,10 @@
 <variable name="line_double"><hr style="border-top: 3px double #c5c5c5;"></variable>
 <variable name="pagebreak"><p style="page-break-after: always;">&nbsp;</p></variable>
 <span id="lecture_table_headers">
-Module                 | Venue    | Time
+Course                 | Venue    | Time
 ---------------------- | -------- | ----
 </span>
 <span id="tutorial_table_headers">
-Module | Venue | Time | ~~%%Tutorial ID<br>in Canvas%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](../admin/instructors.html))
+Course | Venue | Time | ~~%%Tutorial ID<br>in Canvas%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](../admin/instructors.html))
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------
 </span>

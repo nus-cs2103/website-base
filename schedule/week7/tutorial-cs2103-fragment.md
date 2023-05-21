@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
-{% from "_module-" + module + "/studentData-fragment.md" import team_review_allocation with context %}
+{% from "_course-" + course + "/studentData-fragment.md" import team_review_allocation with context %}
 
 #### {{ thumb(1) }} Exercise on Requirements: PR Tracker
 
@@ -9,7 +9,7 @@
 
    %%{{ icon_info }} Question adapted from a past exam paper.%%
 
-   <span class="text-monospace">Pull Request Tracker (PRT) is a desktop application meant to help tutors of a Software Engineering module deal with GitHub PRs more efficiently (compared to the GitHub Web interface). For example, it will help tutors find and review PRs from their _mentees_ easily. It will help the _managers_ of the module (e.g., professor, head TA) to easily keep track of how tutors are dealing with mentee PRs. PRT will communicate with GitHub using the GitHub API.</span>
+   <span class="text-monospace">Pull Request Tracker (PRT) is a desktop application meant to help tutors of a Software Engineering course deal with GitHub PRs more efficiently (compared to the GitHub Web interface). For example, it will help tutors find and review PRs from their _mentees_ easily. It will help the _managers_ of the course (e.g., professor, head TA) to easily keep track of how tutors are dealing with mentee PRs. PRT will communicate with GitHub using the GitHub API.</span>
 
    1. Write 1 must-have and 1 nice-to-have user stories, covering user types `tutor` and `manager`.
    1. Write at least 1 <tooltip content="Non-Functional Requirements">NFRs</tooltip>, related to performance/scalability and/or usability.

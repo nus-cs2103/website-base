@@ -22,7 +22,7 @@ Last week, we had a quick peek at the _requirements_ aspect. Let's study the top
 </div>
 <div tags="m--tic2002">
 
-Let's learn about the _requirements_ aspect of SE projects. Although you have already started your module project (which didn't require heavy work on the requirements aspect), it is good to learn more about this topic, so that you can use it in future projects.
+Let's learn about the _requirements_ aspect of SE projects. Although you have already started your course project (which didn't require heavy work on the requirements aspect), it is good to learn more about this topic, so that you can use it in future projects.
 </div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -42,7 +42,7 @@ Now, let's look at other techniques used for specifying requirements.<span tags=
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("specifyingRequirements-useCases-introduction") }}">
 
-The technique of _use cases_ (don't confuse with _user stories_) covered below is another widely used technique. However, we only cover it briefly (i.e., you'll learn _what_ it is but not _how_ to use it) to lower to module workload.
+The technique of _use cases_ (don't confuse with _user stories_) covered below is another widely used technique. However, we only cover it briefly (i.e., you'll learn _what_ it is but not _how_ to use it) to lower to course workload.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Requirements: Use Cases") }}">
@@ -61,7 +61,7 @@ Now that you know all the different ways of specifying requirements, **here is a
 <div id="{{ slugify("OOP: Intro") }}">
 <div id="{{ slugify("OOP: Classes and Objects") }}">
 
-As you know, OOP is a core part of this module. Let's start learning the OOP paradigm this week.
+As you know, OOP is a core part of this course. Let's start learning the OOP paradigm this week.
 </div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -228,12 +228,12 @@ While the next few topics are optional, we recommend that you ==have a quick loo
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: JavaFX") }}">
 
-**JavaFX is not required for this module**<span tags="m--cs2113"> as we strongly discourage you from creating a GUI app</span>. If you are still interest to learn JavaFX, given below is a link to some tutorials.
+**JavaFX is not required for this course**<span tags="m--cs2113"> as we strongly discourage you from creating a GUI app</span>. If you are still interest to learn JavaFX, given below is a link to some tutorials.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Streams") }}">
 
-**Streams is an advanced Java feature** not required for this module. If you are still interest to learn it, some resources are given below.
+**Streams is an advanced Java feature** not required for this course. If you are still interest to learn it, some resources are given below.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("cppToJava-junit-basic") }}">
@@ -254,7 +254,7 @@ Let's jump in and learn how to get started using Git in your own computer. Yes, 
 
 :thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
 
-{{ embed_topic("moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
+{{ embed_topic("courseOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Course Overview → Extract", "3") }}
 <p/></div>
 <div tags="m--tic2002">
 
@@ -377,7 +377,7 @@ As you are likely to be using an IDE for the {{ ip_name }}, let's learn at least
 
 :thinking: In case you are puzzled by the sudden change of topic, it's because we take an iterative approach to covering topics, as explained in the panel below:
 
-{{ embed_topic("moduleOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Module Overview → Extract", "3") }}
+{{ embed_topic("courseOverview.md#meaning-of-iterative-topics", "Admin " + icon_embedding + " Course Overview → Extract", "3") }}
 <p/>
 </div>
 </div>
@@ -589,9 +589,9 @@ Testing is the first thing that comes to mind when you hear 'Quality Assurance' 
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("SDLC Process Models: Basics") }}">
 
-Broadly speaking, there are two approaches to doing a software project. Those two approaches are also highly relevant to the way this module is run, and how it is different from most SE modules elsewhere.
+Broadly speaking, there are two approaches to doing a software project. Those two approaches are also highly relevant to the way this course is run, and how it is different from most SE courses elsewhere.
 
-Let's learn about those two approaches early so that we can better understand how this module works.
+Let's learn about those two approaches early so that we can better understand how this course works.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("SDLC Process Models: XP/Scrum") }}" >
@@ -607,7 +607,7 @@ Now, let us take a quick look at a couple of well-known processes used in the in
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("projectPlanning-ganttCharts") }}">
 
-GANTT Charts and PERT charts are popular tools in the project management domain but they are rarely useful in small software projects. Hence, they are not included in {{ module }} syllabus but it is **useful to know at least their names and how they look like**.
+GANTT Charts and PERT charts are popular tools in the project management domain but they are rarely useful in small software projects. Hence, they are not included in {{ course }} syllabus but it is **useful to know at least their names and how they look like**.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("teamwork-teamStructures") }}">
@@ -663,7 +663,7 @@ Software engineers often have to write _developer documentation_ to explain thei
 <div id="{{ slugify("Class/Object Diagrams: Basics") }}">
 <div tags="m--tic2002">
 
-This module covers only two types of diagrams: class/object diagrams (CD/OD) -- which model a _structural_ aspect of an OOP design, and sequence diagrams (SD) -- which model a _behavioral_ aspect. This week, let's learn the basic CD/OD notation.
+This course covers only two types of diagrams: class/object diagrams (CD/OD) -- which model a _structural_ aspect of an OOP design, and sequence diagrams (SD) -- which model a _behavioral_ aspect. This week, let's learn the basic CD/OD notation.
 
 We recommend you ==try the relevant post-lecture quizzes as you read each sections== below. In these quizzes, you will  be able to see the answers immediately after completing the quiz.
 </div>
@@ -763,7 +763,7 @@ Here is an example that shows the steps of drawing an OODM to match a given prob
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Activity Diagrams") }}">
 
-Activity diagrams is the {{ "first" if tee3201 else "last" }} UML diagram type you'll be learning in this module, and probably the easiest and most intuitive of the lot. You've heard about 'flow charts', right? Well, this is the UML equivalent of that.
+Activity diagrams is the {{ "first" if tee3201 else "last" }} UML diagram type you'll be learning in this course, and probably the easiest and most intuitive of the lot. You've heard about 'flow charts', right? Well, this is the UML equivalent of that.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Followup Activity Diagrams") }}">
@@ -783,7 +783,7 @@ To complete the picture about UML, given below are a peek into the other types o
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("followup-design-introduction-what") }}">
 
-Now that you know there are two kinds of 'design', also note that this module focuses more on the internal design rather than the external design.
+Now that you know there are two kinds of 'design', also note that this course focuses more on the internal design rather than the external design.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Design: Basics") }}">
@@ -822,7 +822,7 @@ These principles build on top of the design fundamentals you learned earlier (i.
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Design Principles") }}">
 
-Remember you learned about <tooltip content="Abstraction, Coupling, Cohesion">the three things</tooltip> that are 'like the DNA' of design concepts. It's time to move to the next level and learn some design _principles_ that build upon those three. Given below are two new principles and three that you should have at least touched on in previous modules.
+Remember you learned about <tooltip content="Abstraction, Coupling, Cohesion">the three things</tooltip> that are 'like the DNA' of design concepts. It's time to move to the next level and learn some design _principles_ that build upon those three. Given below are two new principles and three that you should have at least touched on in previous courses.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("designFundamentals-abstraction-what") }}">
@@ -837,7 +837,7 @@ Given next are **two design principles that we can apply when designing OOP syst
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("principles-interfaceSegregationPrinciple") }}">
 
-If you liked the principles covered above, given below are a few more widely used principles most of which are optional in this module (they were moved to the optional topics in order to reduce the module workload).
+If you liked the principles covered above, given below are a few more widely used principles most of which are optional in this course (they were moved to the optional topics in order to reduce the course workload).
 
 The only examinable thing is ==the term== _SOLID principles_.
 </div>
@@ -873,7 +873,7 @@ First, let's learn two more widely-cited design patterns.
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("designPatterns-more-otherDesignPatterns") }}">
 
-Given below are a few more topics that continue the theme of design patterns, but have been made optional to reduce the module workload.</div>
+Given below are a few more topics that continue the theme of design patterns, but have been made optional to reduce the course workload.</div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Architecture") }}" >
 
@@ -915,5 +915,5 @@ Remember _design patterns_? The _architectural styles_ covered below are like 'd
 
 A few weeks ago, you learned how to interpret UML diagrams. More recently, you learned how to draw diagrams to match code. There's a third use of models: as an aid for coming up with a design _before_ the code is written.
 
-While this module doesn't ask you to come up with detailed designs before writing code (i.e., our approach leans closer to the _agile_ design rather than the _full design upfront_ approach), this third use of models come in handy at times. Let's learn a bit about that too.
+While this course doesn't ask you to come up with detailed designs before writing code (i.e., our approach leans closer to the _agile_ design rather than the _full design upfront_ approach), this third use of models come in handy at times. Let's learn a bit about that too.
 </div>

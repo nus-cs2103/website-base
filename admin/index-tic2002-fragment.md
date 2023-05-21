@@ -8,29 +8,29 @@ pageNav: 2
 
 <div class="website-content">
 
-# **{{ module }} {{ module_name }}**
+# **{{ course }} {{ course_name }}**
 
 {{ line_dotted }}<!-- ................................................................................... -->
 
-# Module overview
-<div class="indented" id="module-info">
+# Course overview
+<div class="indented" id="course-info">
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
-_TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects, and as such, it is **a first step towards preparing you to work in bigger SE projects**, which will be done in later modules.
+_TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects, and as such, it is **a first step towards preparing you to work in bigger SE projects**, which will be done in later courses.
 
 <box type="tip" seamless>
 
-**This module is optimized for SCALE students**{.text-success} so that you can _learn at your own pace_ even if you are not a full-time student: the need to attend lectures/tutorials at fixed times is low, deadlines are more flexible than usual, and the on-campus presence is optional.
+**This course is optimized for SCALE students**{.text-success} so that you can _learn at your own pace_ even if you are not a full-time student: the need to attend lectures/tutorials at fixed times is low, deadlines are more flexible than usual, and the on-campus presence is optional.
 
-e.g., **Instead of traditional instructor-led tutorials**, the module provides quizzes and other activities that you can do at your own time to self-test your knowledge. The instructor can be consulted if you need help with any of them.
+e.g., **Instead of traditional instructor-led tutorials**, the course provides quizzes and other activities that you can do at your own time to self-test your knowledge. The instructor can be consulted if you need help with any of them.
 
 </box>
 </div>
 
 {{ line_dotted }}<!-- ................................................................................... -->
 
-# Using this module website
+# Using this course website
 
 <div class="indented" id="website-info">
 <include src="usingThisWebsite.md#main" />
@@ -81,7 +81,7 @@ e.g., **Instead of traditional instructor-led tutorials**, the module provides q
 * **[8.00-9.30pm] Post-lecture consultations**:
   * This portion will start as soon as the previous portion  (i.e., the _lecture briefing_) ends.
   * During this time,
-    * go through the week's lecture topics in the module website
+    * go through the week's lecture topics in the course website
     * do suggested activities/exercises in there (if any)
     * if you encounter any problems while doing the above or have a question, contact the prof/TA using MS-Teams or F2F.
 
@@ -103,7 +103,7 @@ e.g., **Instead of traditional instructor-led tutorials**, the module provides q
 # Programming language
 <div class="indented" id="java">
 
-This module uses Java. It assumes you are familiar with C++ basics and provides lessons to help you transition from C++ to Java.
+This course uses Java. It assumes you are familiar with C++ basics and provides lessons to help you transition from C++ to Java.
 
 {{ icon_important_big_red }} Install [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html) on your computer. Using other versions of Java is highly discouraged.
 
@@ -203,7 +203,7 @@ Please upload items 2, 3, 4 as three separate files, using the three Canvas assi
 
 ### Plagiarism
 
-* You are allowed (and even encouraged) to discuss module tasks with others and help (and learn-from) each other. However, the submitted work should be largely your own.
+* You are allowed (and even encouraged) to discuss course tasks with others and help (and learn-from) each other. However, the submitted work should be largely your own.
 * If you reuse/adapt code from elsewhere (e.g., from an online site such as stackoverflow), you must cite the source in the code. e.g.,
    ```java{.no-line-numbers}
    //Solution below adapted from https://stackoverflow.com/a/16252290

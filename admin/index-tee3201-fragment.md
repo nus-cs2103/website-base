@@ -12,8 +12,8 @@ pageNav: 2
 
 <!-- .......................................................................................... --> {{ line_dotted }}
 
-# Module overview
-<div class="indented" id="module-info">
+# Course overview
+<div class="indented" id="course-info">
 
 <img src="{{baseUrl}}/images/growingPlant.png" width="700">
 
@@ -22,7 +22,7 @@ _TEE3201 Software Engineering_ contains roughly a **50-50 balance of theory and 
 
 <!-- .......................................................................................... --> {{ line_dotted }}
 
-# Using this module website
+# Using this course website
 
 <div class="indented" id="website-info">
 <include src="usingThisWebsite.md#main" />
@@ -91,19 +91,19 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 
 **Software Engineering Textbook**:
 
-A customized **online text book** is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.
+A customized **online text book** is used for this course. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.
 * Full version is [here]({{baseUrl}}/se-book-adapted/index.html): The relevant sections are embedded under the corresponding week in the [schedule page]({{baseUrl}}/schedule/index.html).
 * {{ icon_print }} Printable version is [here]({{baseUrl}}/se-book-adapted/print.html). ==You are encouraged to use the online full version when possible== (instead of the printable version or the PDF version), as it has more content %%videos, exercises, etc.%%
 
 **Programming Textbook**:
 
-[An additional **guide on programming basics**]({{baseUrl}}/programming/index.html) is provided for you to get started or programming. The topics in that textbook are to help you do the programming part of the project. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.
+[An additional **guide on programming basics**]({{baseUrl}}/programming/index.html) is provided for you to get started or programming. The topics in that textbook are to help you do the programming part of the project. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this course.
 
 <!-- .......................................................................................... --> {{ line_dotted }}
 
 # Programming Language
 
-This module uses Python programming language to teach you programming basics required for software engineering. <span class="text-danger">A basic knowledge of Python is expected in the final exam, to the extent it was used in the weekly exercises and the project.</span> For example, some questions might use Python code snippets as part of the question.
+This course uses Python programming language to teach you programming basics required for software engineering. <span class="text-danger">A basic knowledge of Python is expected in the final exam, to the extent it was used in the weekly exercises and the project.</span> For example, some questions might use Python code snippets as part of the question.
 
 **Install [Python (the latest 3.x version)](https://www.python.org/downloads/)** in your computer.
 
@@ -252,7 +252,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 
 
 <modal large header="The Policy on Deadlines" id="modal:adminInfo-deadlineInfo">
-  <include src="index-{{ module | lower }}-fragment.md#deadlines-info"/>
+  <include src="index-{{ course | lower }}-fragment.md#deadlines-info"/>
 </modal>
 
 </span>

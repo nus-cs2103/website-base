@@ -29,7 +29,7 @@ skinparam backgroundcolor transparent
 <p/>
 {{ embed_topic("tp-grading.md#main", "Admin " + icon_embedding + " Team Project (tP) Grading", "3") }}
 <p/>
-{{ embed_topic("exams.md#main", "Admin " + icon_embedding + " Exams", "3") if module not in ["TIC4001", "TIC4002"] else "" }}
+{{ embed_topic("exams.md#main", "Admin " + icon_embedding + " Exams", "3") if course not in ["TIC4001", "TIC4002"] else "" }}
 
 </div>
 

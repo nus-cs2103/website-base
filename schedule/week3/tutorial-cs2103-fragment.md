@@ -1,7 +1,7 @@
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
 
-#### {{ thumb(0) }} **[{{ module }} students only] Form teams**
+#### {{ thumb(0) }} **[{{ course }} students only] Form teams**
 
 <include src="../../admin/common-tutorials-fragment.md#form-teams" />
 

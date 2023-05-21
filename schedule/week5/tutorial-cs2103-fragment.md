@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import embed_topic, show_as_rounded_tab, show_as_tab, thumb, timing_badge with context %}
-{% from "_module-" + module + "/studentData-fragment.md" import ip_pr_slap_review_allocation as allocations with context %}
+{% from "_course-" + course + "/studentData-fragment.md" import ip_pr_slap_review_allocation as allocations with context %}
 
 #### {{ thumb(1) }} Discuss code quality problems of iP PRs
 
@@ -13,7 +13,7 @@
    <panel header="**PR allocation**" peek>
 
    {% macro get_links(username) -%}
-   [{{ username }}'s PR](https://github.com/{{ module_org }}/{{ ip_repo_name }}/pulls/{{ username }})
+   [{{ username }}'s PR](https://github.com/{{ course_org }}/{{ ip_repo_name }}/pulls/{{ username }})
    {%- endmacro  %}
 
    Your username | PR to review       | Fallback PR to review

@@ -1,8 +1,8 @@
 <div id="testingPreparations">
 
-* Ensure that you have accepted the invitation to join the GitHub org used by the module. Go to [{{ url_module_org }}]({{ url_module_org }}) to accept the invitation.
+* Ensure that you have accepted the invitation to join the GitHub org used by the course. Go to [{{ url_course_org }}]({{ url_course_org }}) to accept the invitation.
 
-* Ensure you have access to a **computer that is able to run module projects** %%e.g. has the right Java version%%.
+* Ensure you have access to a **computer that is able to run course projects** %%e.g. has the right Java version%%.
 
 * **Ensure you can run [CATcher](https://catcher-org.github.io/CATcher/)** on your computer. You should have done this when you smoke-tested CATcher earlier in the semester.
 

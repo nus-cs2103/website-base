@@ -1,4 +1,4 @@
-**Damith Chatura RAJAPAKSE** (Module Coordinator)<br>
+**Damith Chatura RAJAPAKSE** (Course Coordinator)<br>
 Associate Professor, NUS School of Computing<br>
 PhD, Software Engineering, NUS, 2002-2006<br>
 BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>

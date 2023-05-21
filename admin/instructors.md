@@ -25,7 +25,7 @@
 
 **Dev Team**:
 
-This module is supported by a number of software tools developed by our students:
+This course is supported by a number of software tools developed by our students:
 
 * [**CATcher** dev team](https://github.com/CATcher-org/CATcher#current-dev-team)
 * [**MarkBind** dev team](https://markbind.org/about.html)
