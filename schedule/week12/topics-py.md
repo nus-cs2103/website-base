@@ -4,6 +4,6 @@
 
 <div class="indented-level2">
 
-<img src="../../images/cat.jpg" /><br>
+<pic src="../../images/cat.jpg"></pic><br>
 <small>%%[image source: esmemes.com]%%</small>
 </div>

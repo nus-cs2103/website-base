@@ -52,7 +52,7 @@ TIC4002 focuses on aspect 6 in particular, as TIC4001 already covered 2-5 above 
 
 The tP uses a generic application called [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) (from https://se-education.org) as the starting point.
 
-<img src="https://github.com/se-edu/addressbook-level3/raw/master/docs/images/Ui.png" width="600"/>
+<pic src="https://github.com/se-edu/addressbook-level3/raw/master/docs/images/Ui.png" width="600"></pic>
 <p/>
 
 </div>

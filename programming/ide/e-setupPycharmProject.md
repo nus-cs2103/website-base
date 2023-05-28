@@ -13,17 +13,17 @@
    Here is an example:
    ```python
    greeting = 'hello'
-   
-   
+
+
    def print_greeting(name):
        message = greeting + ' ' + name
        print(message)
-   
-   
+
+
    print_greeting('john')
    print_greeting('jane')
    ```
 1. To run the code, Right-click on project name and choose `Run 'filename'`.<br>
-   <img src="images/runCode.png" width="500"/>
+   <pic src="images/runCode.png" width="500"></pic>
 1. The output will appear in the panel at the bottom of the IDE.<br>
    ![]({{ baseUrl }}/programming/ide/images/seeOutput.png)

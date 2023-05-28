@@ -5,7 +5,7 @@
 {% call show_admin_page("tools") %}
 <div id="main">
 
-<img src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px"><br>
+<pic src="{{baseUrl}}/admin/images/toolsList.png" style="width: 700px"></pic><br>
 
 ## Tool: Learning Management System
 

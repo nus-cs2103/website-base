@@ -7,7 +7,7 @@
 
 <span class="float-end">
 
-<img src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"/><br>
+<pic src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"></pic><br>
 </span>
 
 **Keep in mind that instructors don't have ready solutions to all technical problems**. Unlike tutorial questions for which instructors have model solutions, given the complexity of industry tools we use (Gradle, GitHub, Git, ...) and the rapid pace they are updated, instructors don't have ready solutions to most technical problems you face in this course. The only realistic way to solve those problems at a large scale is crowd-sourcing i.e., someone else who faced a similar problem might know how to fix it.
@@ -72,7 +72,7 @@
 
 <modal large header="Rubber Duck Debugging" id="modal:appendixHelp-rubberDuckDebugging">
 
-<img src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"/><br/>
+<pic src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"></pic><br/>
 
 _Rubber duck debugging_ is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book _The Pragmatic Programmer_ in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.
 

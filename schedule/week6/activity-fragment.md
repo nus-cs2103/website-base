@@ -20,7 +20,7 @@ First, let us set up the repo and checkout the branches.
 * {{ step('1.b') }} **Clone it to your computer.** ==No need to set it up in your IDE because it is not a Java project.==
 
 * {{ step('1.c') }} **Note how the remote repo has 4 branches** in addition to the `master` branch. If you can't see the branches, make sure you have ticked the `Show Remote Branches` box %%(shown in the top center of the screenshot below)%%.<br>
-  <img src="images/after-cloning.png" /><br>
+  <pic src="images/after-cloning.png"></pic><br>
   Now you are in the `master` branch. Open the `food.txt` file to check its contents.
 
 * {{ step(2) }} **Checkout the `employee-john` branch** by double-clicking it.
@@ -38,7 +38,7 @@ Now, you should be in the `employee-john` branch. This also means now you have a
 
 * {{ step(3) }} **Checkout the other three branches** one at a time to get local copies of them too.<br>
 **After that, go back to the `master` branch.** The revision graph should look this this now:<br>
-<img src="images/checkout-master-again.png" />
+<pic src="images/checkout-master-again.png"></pic>
 
 <box type="success" icon=":fas-map-signs:" icon-size="2x">
 
@@ -55,7 +55,7 @@ Next, let us merge the branch created by John.
 </panel>
 <p/>
 The revision graph should look like this now:<br>
-<img src="images/after-merging-branch-employee-john.png" />
+<pic src="images/after-merging-branch-employee-john.png"></pic>
 </div>
 
 * {{ step('5.a') }} **Undo the merge**: To learn how to undo a merge, let's undo the merge we did just now.
@@ -72,7 +72,7 @@ The revision graph should look like this now:<br>
 <p/>
 
 * {{ step('5.b') }} That was just to practice undoing of a merge. Let's merge the `employee-john` again by re-doing the {{ step('4', step_style='secondary') }} again. The revision tree should look like this again:<br>
-  <img src="images/after-merging-branch-employee-john.png" />
+  <pic src="images/after-merging-branch-employee-john.png"></pic>
 
 <box type="success" icon=":fas-map-signs:" icon-size="2x">
 
@@ -81,7 +81,7 @@ Now that you know how to merge a branch, and undo a merge, let's try to merge Am
 
 
 * {{ step('6.a') }} **Merge the `employee-amy` branch to the `master` branch**, similar to the previous step. Note how git reports a `merge conflict` halfway into the merge, with a dialog like this:<br>
-  <img src="images/merge-conflict-dialog.png" /><br>
+  <pic src="images/merge-conflict-dialog.png"></pic><br>
   Close the dialog.
 
 <span id="6b">
@@ -141,15 +141,15 @@ But first, let's learn how to create PRs using branches, within the same remote 
 </box>
 
 * {{ step(7) }} **Push the `master` branch to the fork**, to upload the new merge commits to the fork.<br>
-  <img src="images/push-master.png" />
+  <pic src="images/push-master.png"></pic>
 
 * {{ step(8) }} **Create a PR within your own fork, from the `vendor-ravi` branch to the `master` branch**:
   1. Go to your fork on Github and click on the {{ button('New pull request') }} button.<br><br>
-    <img src="images/new-pull-request.png" />
+    <pic src="images/new-pull-request.png"></pic>
   1. By default, GitHub tries to create a PR from your fork to the upstream repo. Change the base repo to your own fork instead.<br>
      <pic src="images/choose-fork-as-base.png">
   1. Set the `compare` field to the `vendor-ravi` branch.<br>
-     <img src="images/choose-vendor-ravi.png" />
+     <pic src="images/choose-vendor-ravi.png"></pic>
   1. Complete the PR creation by filling in appropriate info as directed by GitHub.<br>
      <pic src="images/create-pr-for-vendor-ravi.png" class="border" />
   1. Observe how you have one PR in your own fork now.<br>
@@ -187,7 +187,7 @@ So far so good. Next, let's learn how to merge PRs when there are merge conflict
 </box>
 
 * {{ step(12) }} **Observe the other PR is now showing conflicts**: If you go to the `vendor-ravi` PR, it will show something like this at the bottom, indicating that the code in that branch has a conflict with the `master` branch (caused by the other PR we merged just now).<br>
-  <img src="images/pr-shows-conflict.png">
+  <pic src="images/pr-shows-conflict.png"></pic>
 
 * {{ step(13) }} **Resolve the conflict**. Note that GitHub gives a {{ button('Resolve conflicts') }} button that provides a way to resolve conflicts on the Web UI itself. However, that method is more suited for simple conflicts. In this activity, let's use the method that works for even more complicated conflicts.
   1. As the merging the PRs on GitHub updates the `master` branch on the fork only, pull the `master` branch from your fork to your repo to get the latest `master` branch onto your Computer.
@@ -208,7 +208,7 @@ So far so good. Next, let's learn how to merge PRs when there are merge conflict
 <p/>
 
 * {{ step(15) }} **Sync your local repo with the latest `master`** by pulling the `master` branch from your fork. After that, your revision graph should look like this:<br>
-  <img src="images/after-pulling-updated-master.png">
+  <pic src="images/after-pulling-updated-master.png"></pic>
 
 <box type="success" icon=":fas-map-signs:" icon-size="2x">
 

@@ -3,7 +3,7 @@
 {% call show_admin_page("lectures") %}
 <div id="main">
 
-<img src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%">
+<pic src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%"></pic>
 
 ****Timing/venue****:
 

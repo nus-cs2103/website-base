@@ -7,7 +7,7 @@
 <tbody>
 <tr>
 <td width="160px">
- <img src="{{baseUrl}}/admin/images/JamesGosling.png" width="150px">
+ <pic src="{{baseUrl}}/admin/images/JamesGosling.png" width="150px"></pic>
 </td>
 <td>
 

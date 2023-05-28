@@ -11,7 +11,7 @@ A variable must be in the global scope or the local scope; it cannot be in both.
 <sub>%%[Some parts of the above explanation were adapted from [_Automate the Boring Stuff_](https://automatetheboringstuff.com/chapter3/)]%%</sub>
 
 Consider the code given below %%(apparently, from a program related to a farm)%%. The global scope and the local scope of each function indicated by shaded areas.<br>
-<img src="{{baseUrl}}/programming/functions-scope/images/scopeAsShadedAreas.png" width="500" />
+<pic src="{{baseUrl}}/programming/functions-scope/images/scopeAsShadedAreas.png" width="500"></pic>
 
 Note the following rules about scope:
 * Rule 1: **Local scopes can read global variables** e.g., `raise_chicken` function can access the global variable `total_chickens` (see line 6).

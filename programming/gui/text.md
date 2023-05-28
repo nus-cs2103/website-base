@@ -11,7 +11,7 @@ Writing _Graphical User Interfaces (GUIs)_ is relatively more complicated than w
 
 Here is the code for the simplest GUI:
 
-<include src="inputOutput.md" boilerplate> 
+<include src="inputOutput.md" boilerplate>
 <span id="input">
 
 ```python
@@ -30,7 +30,7 @@ window.mainloop()
 </span>
 <span id="output">
 
-<img src="images/helloworld.png" />
+<pic src="images/helloworld.png"></pic>
 </span>
 </include>
 
@@ -38,14 +38,14 @@ window.mainloop()
 
 **A GUI typically contains <tooltip content="elements on a GUI such as buttons, labels, text boxes are called _widgets_">_widgets_</tooltip>.** The example GUI below not only has some widgets but also has some dynamic behavior i.e., clicking the button increments the displayed number by the amount in the text box.
 
-<include src="inputOutput.md" boilerplate> 
+<include src="inputOutput.md" boilerplate>
 <span id="input">
 
-<img src="images/increment1.png" />
+<pic src="images/increment1.png"></pic>
 </span>
 <span id="output">
 
-<img src="images/increment2.png" />
+<pic src="images/increment2.png"></pic>
 </span>
 </include>
 

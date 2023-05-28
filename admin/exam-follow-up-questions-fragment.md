@@ -1,7 +1,7 @@
 <div class="indented">
 <panel type="danger" header="**Answering follow-up questions:**" minimized>
 
-<img src="images/examplify-feedback.png" width="350" />
+<pic src="images/examplify-feedback.png" width="350"></pic>
 
 1. Click on `TOOL KIT`.
 2. Click on the `NOTES` tab, if it is not selected already.

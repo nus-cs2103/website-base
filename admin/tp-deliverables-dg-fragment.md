@@ -89,37 +89,37 @@
 <modal large header="UML Diagrams: Negative Examples " id="modal:ipWeek10-umlExamples">
 
   These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
-  <img src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750" /><br>
-  <img src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750" />
+  <pic src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750"></pic><br>
+  <pic src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></pic>
 
   <hr>
   This class diagram seems to have too many classes:
-  <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/ModelClassDiagram.png" width="750" />
+  <pic src="https://cs2103-ay1819s1-f10-1.github.io/main/images/ModelClassDiagram.png" width="750"></pic>
 
   <hr>
   These sequence diagrams are bordering on 'too complicated':
-  <img src="https://cs2103-ay1819s1-w13-1.github.io/main/images/TagCommandSequenceDiagram.png" width="750" />
+  <pic src="https://cs2103-ay1819s1-w13-1.github.io/main/images/TagCommandSequenceDiagram.png" width="750"></pic>
   <p/>
-  <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750" />
+  <pic src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750"></pic>
 
 </modal>
 
 <modal large header="Diagram resizing: a negative example" id="modal:ipWeek10-diagramSizeNegative">
 
 In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br>
-<img src="images/diagramSizeNegativeExample.png" width="200"/><br>
+<pic src="images/diagramSizeNegativeExample.png" width="200"></pic><br>
 It will look more 'polished' if the two text sizes match.
 </modal>
 
 <modal large header="AB3 - Class Diagram of the Logic Component" id="modal:ipWeek10-logicClassDiagram">
-  <img src="{{ url_ab3_upstream_website }}/images/LogicClassDiagram.png" width="900"/>
+  <pic src="{{ url_ab3_upstream_website }}/images/LogicClassDiagram.png" width="900"></pic>
 </modal>
 
 <modal large header="AB3 - Sequence Diagram for the `delete` command" id="modal:ipWeek10-deleteSd">
-  <img src="{{ url_ab3_upstream_website }}/images/DeleteSequenceDiagram.png" width="900"/>
+  <pic src="{{ url_ab3_upstream_website }}/images/DeleteSequenceDiagram.png" width="900"></pic>
 </modal>
 
 <modal large header="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd">
-  <img src="{{ url_ab3_upstream_website }}/images/ArchitectureSequenceDiagram.png"/>
+  <pic src="{{ url_ab3_upstream_website }}/images/ArchitectureSequenceDiagram.png"></pic>
 </modal>
 </span>

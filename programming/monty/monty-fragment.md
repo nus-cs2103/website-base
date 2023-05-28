@@ -1174,8 +1174,8 @@ Notes about the given version of the GUI:
 * It only supports an `add` command and a `help` command.
 
 Here are some screenshots of the GUI:<br>
-<img src="images/gui-start.png" /><p/>
-<img src="images/gui-later.png" />
+<pic src="images/gui-start.png"></pic><p/>
+<pic src="images/gui-later.png"></pic>
 
 <panel type="seamless" header="Skeletal GUI code">
 

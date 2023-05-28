@@ -21,7 +21,7 @@
   <td>&nbsp;→&nbsp;</td>
   <td>
 
-<img src="images/deliveries.png" />
+<pic src="images/deliveries.png"></pic>
   </td>
 </tr>
 </tbody>

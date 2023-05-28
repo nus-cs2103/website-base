@@ -22,7 +22,7 @@ title: "iP Showcase"
 {% set duke_website = "https://" + username + ".github.io/" + ip_repo_name %}
 {% set duke_repo = "https://github.com/" + username + "/" + ip_repo_name %}
 #### {{ student_name }} ([<span class="text-monospace">@{{ username }}</span>](https://github.com/{{ username }})) <small>[:fas-home:]({{ duke_website }}) [:fab-github:]({{ duke_repo }}) [:fas-download:]({{ duke_repo }}/releases) [:fas-code:](https://nus-{{ course | lower }}-{{ semester | lower }}.github.io/ip-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=false&tabOpen=true&tabType=authorship&tabAuthor={{ username }}&tabRepo={{ username }}%2Fip%5Bmaster%5D&authorshipIsMergeGroup=false&authorshipFileTypes=java~md~fxml~gradle~txt&authorshipIsBinaryFileTypeChecked=false) [:fas-code-branch:](https://github.com/nus-{{ course | lower }}-{{ semester }}/{{ ip_repo_name }}/pulls/{{ username }}) [:fas-comment:](https://github.com/{{ username }}/{{ ip_repo_name }}/issues/new) </small>
-<img tags="m--cs2103 m--tic4002" src="{{ duke_website }}/Ui.png" height="750" style="max-width: 100%"  onerror="this.src='images/placeholder-small.png';" /><p/>
+<pic tags="m--cs2103 m--tic4002" src="{{ duke_website }}/Ui.png" height="750" style="max-width: 100%"  onerror="this.src='images/placeholder-small.png';"></pic><p/>
 
 <hr>
 {% endif %}

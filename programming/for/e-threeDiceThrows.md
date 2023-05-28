@@ -1,5 +1,5 @@
 #### Exercise - Three Dice Throws
-        
+
 Write a program to generate all possible results you can get by throwing a <trigger for="pop:exerciseThreeDiceThrows-dice">6-sided dice</trigger> three times. The expected result (partial) is given below.
 
 ```
@@ -17,7 +17,7 @@ Write a program to generate all possible results you can get by throwing a <trig
 <popover id="pop:exerciseThreeDiceThrows-dice" header="" placement="top">
   <div slot="content">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200" /><br>
+<pic src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"></pic><br>
 <sub>source: wikipedia</sub>
 
   </div>

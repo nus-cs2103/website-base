@@ -15,7 +15,7 @@ pageNav: 2
 # Course overview
 <div class="indented" id="course-info">
 
-<img src="{{baseUrl}}/images/growingPlant.png" width="700">
+<pic src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
 
 _TEE3201 Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects.
 </div>

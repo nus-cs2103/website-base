@@ -10,7 +10,7 @@ pip --version
 
 After that, to install a third-party module (or _packages_ as they are sometimes called), you can run the `pip install {packagename}` command.
 
-<tip-box> 
+<tip-box>
 
 {{ icon_example }} The example below shows how to install the `colorama` module that allows you to colorize text printed out to the console.
 
@@ -36,11 +36,11 @@ print(colorama.Style.RESET_ALL + ' Back to normal now')
 ```
 {{ icon_output }}<br>
 
-<img src="{{baseUrl}}/programming/thirdparty/images/coloramaOutput.png" /></p>
+<pic src="{{baseUrl}}/programming/thirdparty/images/coloramaOutput.png"></pic></p>
 
 </tip-box>
 
-<tip-box> 
+<tip-box>
 
 **{{ icon_tip }} Some useful third-party modules:**
   * [`colorama`](https://pypi.python.org/pypi/colorama): For colorizing text printed in the console
