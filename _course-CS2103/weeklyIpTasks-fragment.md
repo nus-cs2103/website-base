@@ -6,7 +6,8 @@ week2: [
   {id: 'set_up_prerequisites'},
   {id: 'set_up_project'},
   {id: 'add_increments', suffix: ' while committing frequently', deadline: get_date(date_w2_start, 6), increments: [
-    {id: 'Level-1', title: 'Greet, Echo, Exit'},
+    {id: 'Level-0', title: 'Rename, Greet, Exit'},
+    {id: 'Level-1', title: 'Echo'},
     {id: 'Level-2', title: 'Add, List'},
     {id: 'Level-3', title: 'Mark as Done'},
     {id: 'Level-4', title: 'ToDo, Event, Deadline'},

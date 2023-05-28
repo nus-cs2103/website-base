@@ -59,7 +59,7 @@ Optionally, if you haven't pushed the commit to the fork yet, you can try to fig
 
 * Remember to take note of our plagiarism policies, if you haven't done so already:
 
-{{ embed_topic("policies-fragment.md#policy-reuse", "Admin " + icon_embedding + " Policies -> **Reuse**", "1", indent=2, type="danger") }}
+{{ embed_topic("policies-fragment.md#policy-reuse", "Admin " + icon_embedding + " Policies -> **Reuse**", "1", indent=1, type="danger") }}
 
 <include src="ip-tasks-fragment.md#ip-faq" />
 
@@ -77,7 +77,7 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 
 {{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and span a longer period**, rather than to be done as a short burst.
 
-Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
+Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks. That is, clumping all the iP work into a short burst of work will not earn you full marks.
 </box>
 </div>
 <div id="follow-instructions">
@@ -163,7 +163,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 </div>
 </div>
 {#====================================================================================================================#}
-<div id="pre_Level-1">
+<div id="pre_Level-0">
 
 <include src="ip-tasks-fragment.md#order" />
 {% if cs2103 %}<include src="ip-tasks-fragment.md#commit" />{% endif %}
@@ -395,8 +395,8 @@ Alternatively see the panel below on some general info on how to pull a branch f
 
 * **Read the following two sections**, if you haven't done so already:
 
-{{ embed_topic("ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3", indent="2") }}
-{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="2") }}
+{{ embed_topic("ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3", indent="1") }}
+{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_prerequisites">Set up prerequisites</span>
@@ -404,10 +404,10 @@ Alternatively see the panel below on some general info on how to pull a branch f
 
 * **Ensure you have followed the <span class="ps-1 pe-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following course tools:**
 
-{{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
-{{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="2") }}
-{{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="2") }}
-{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="2") }}
+{{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
+{{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="1") }}
+{{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="1") }}
+{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project in your computer</span>
@@ -735,18 +735,20 @@ This activity is worth `2x2=4` participation points.
 {% if not (tic4001 or tic4002) %}
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
-* **Create a new jar file**
-  * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html).{% else %}in one of these ways:
-    * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
-    * Else: you can use Intellij.{% endif %}
-  * The JAR file should be ==cross-platform and should work in a computer that has Java 11==.
-* **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
-  1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
-  1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
+1. **Double-check to confirm your iP meets the criteria for for full marks**:
+  {{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
+2. **Create a new jar file**
+   * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html).{% else %}in one of these ways:
+     * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
+     * Else: you can use Intellij.{% endif %}
+   * The JAR file should be ==cross-platform and should work in a computer that has Java 11==.
+3. **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
+   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
+   1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
      {{ icon_tip }} If you don't have ready access to a specific OS, post a link to your JAR in the forum and ask
      others to help with the smoke testing -- some of them will even appreciate the opportunity to help a classmate.
-* **Create a new release on GitHub** (e.g., `v0.2`) and upload the JAR file.
-  * Recommended to refrain from uploading multiple JAR files as this can cause extra work for the evaluators.
+4. **Create a new release on GitHub** (e.g., `v0.2`) and upload the JAR file.
+   * Recommended to refrain from uploading multiple JAR files as this can cause extra work for the evaluators.
 
 <div class="indented">
 

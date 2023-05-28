@@ -6,13 +6,13 @@ week2: [
   {id: 'set_up_prerequisites'},
   {id: 'set_up_project'},
   {id: 'add_increments', suffix: '', increments: [
-    {id: 'Level-0', title: 'Greet'}
+    {id: 'Level-0', title: 'Rename, Greet, Exit'}
   ]}
 ],
 week3: [
   {id: 'finish_leftover_tasks'},
   {id: 'add_increments', suffix: ' (+ commit, tag, push)', increments: [
-    {id: 'Level-1', title: 'Greet, Echo, Exit'},
+    {id: 'Level-1', title: 'Echo'},
     {id: 'Level-2', title: 'Add, List'},
     {id: 'Level-3', title: 'Mark as Done'},
     {id: 'A-CodingStandard', title: 'Follow the Coding Standard'}
