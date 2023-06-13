@@ -343,7 +343,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
   * Details to submit:
     1. **Product name** (plain text only) %%e.g., ClientContactsPro%%
     1. **Target user** profile (plain text only) %%e.g., freelance event photographers%%
-    1. **Value proposition** (plain text only) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%
+    1. **Value proposition** (plain text paragraph, <span class="text-danger">no more than 50 words</span>) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%
     1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
   * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 or tic4001 %}<br>
   * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.
@@ -1493,7 +1493,8 @@ Not applicable this semester
     Only the respective student is penalized for problems in individual submissions.{% endif %}
 * **Submit via the Canvas assignment we have set up**.
   {% if has_t %}{{ course | lower }}T students: documents should be submitted to both courses. It's not enough to submit to CS2101 side only.{% endif %}
-* {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
+* {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.<br>
+  Canvas might automatically add a file name suffix (e.g., `*-1.pdf`, `*-2.pdf`, ...) if you upload a file multiple times. You can safely ignore that suffix.
 * **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.
   * You can update issues/milestones/PRs even during the _code-freeze_ period.{% if cs2113 or cs2103 %}
   * [{{ course }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a code-freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.{% endif %}
@@ -1516,7 +1517,11 @@ Not applicable this semester
 
 **PE uses the PDF versions of UG/DG, not the Web version!**{.text-danger} Any problems in those PDF files (e.g., broken links, messed up formatting) can be reported as bugs.
 
-**Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+**Ensure hyperlinks in the pdf files work**. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+
+**PDF files should**,
+  * **be paginated** at a reasonable page size (e.g., A4). %%Reason: single-page PDF files don't work well in some PDF viewers, and not suitable for printing either.
+  * **allow copying text** so that readers can copy text from them %%(e.g., copy and example command from the UG)%%.
 
 **Try the PDF conversion early**. If you do it at the last minute, you may not have time to fix any problems in the generated PDF files (such problems are more common than you think).
 </box>
@@ -1525,6 +1530,12 @@ Not applicable this semester
 <box type="tip" seamless>
 
 **Side benefits for early submissions:**{.text-success} Given that _using buffers to reduce the risk of deadline overruns_ is a learning outcome of this course, we strongly encourage setting an internal submission deadline a few hours earlier than the actual deadline. As an incentive, we plan to perform some checks on early submissions and inform you if we found issues with your submission %%(e.g., incorrect file name/format)%%, thus giving you a chance to fix them before the deadline and avoid a penalty for it.
+
+</box>
+
+<box type="tip" seamless>
+
+**You may use automated tools to improve documentation:**{.text-success} e.g., tools such as Grammarly may be used to improve the writing quality and find grammar errors.
 
 </box>
 
@@ -1540,7 +1551,7 @@ Not applicable this semester
   * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.
   * Upload the jar file to Canvas.<br>
     File name: `[team ID][ProductName].jar` %%e.g. [{{ example_team_id }}][ContactsPlus].jar%%<br>
-    {{ icon_important }} Recommended to avoid spaces and special characters in the product name as it can cause problems when running the JAR file using the command line.<br>
+    {{ icon_important }} Recommended to <span class="text-danger">avoid spaces and special characters in the product name</span> as it can cause problems when running the JAR file using the command line.<br>
     %%{{ icon_info }} This name requirement is for the JAR file you upload to Canvas only. You may name the JAR file you upload to GitHub in any reasonable way.%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}

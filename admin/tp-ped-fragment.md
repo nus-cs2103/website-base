@@ -137,13 +137,15 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 </tab>
 <tab header="PE (at **{{ version_final }}**)">
 
-* Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide==. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.{% if cs2103 %}
-* The DG appendix named _Planned Enhancements_ (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
+* **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide== PDF files.** The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.<br>
+ **If the provided UG/DG PDF files have serious issues** (e.g., some parts seem to be missing), ask prof for permission to use the Web versions of UG/DG instead.{% if cs2103 %}
+* **The DG appendix named _Planned Enhancements_** (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
   However, you can report `type.FeatureFlaws` bugs if you think these enhancements themselves are flawed/inadequate.<br/>
   You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.
 {% endif %}
-* As before, do both ==_system testing_ and _acceptance testing_== but give priority to system testing as those bugs can earn you more credit.
-* {{ icon_tip }} Be careful when copying commands from the UG (PDF version) to the software as some PDF viewers can affect the pasted text. If that happens, you might want to open the UG in a different PDF viewer.
+* **You may do both _system testing_ and _acceptance testing_**.
+* {{ icon_tip }} **Be careful when copying commands from the UG** (PDF version) to the software as some PDF viewers can affect the pasted text. If that happens, you might want to open the UG in a different PDF viewer.<br>
+  If the command you copied spans multiple lines, check to ensure the line break did not mess up the copied command.
 
 </tab>
 </tabs>

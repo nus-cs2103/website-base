@@ -3,6 +3,7 @@
 ##### General:
 
 * **If a bug report contains multiple bugs** (i.e., despite instructions to the contrary, a tester included multiple bugs in a single bug report), you have to choose one bug and ignore the others. If there are valid bugs, choose from valid bugs. Among the choices available, choose the one with the highest severity (in your opinion). In your response, mention which bug you chose.
+* **If a bug report has broken image links**, check with the prof instead of rejecting them outright using the missing image as an excuse -- the missing image may be due to a technical problem of CATcher.
 * **What bugs can be considered duplicates?** It is up to the dev team to prove conclusively that a bug is a duplicate. If the proof is not convincing enough, they will be considered as 'not duplicates'. Only the following cases can be considered duplicates:<br>
   (a) The exact same bug reported multiple times.<br>
   (b) Multiple buggy behaviors that are actually caused by the same defect and ==cannot be fixed independently== (i.e., fixing one fixes the others automatically).<br>
@@ -80,7 +81,8 @@ However, if such input can be entered by a user mistake, they should not cause h
   Forgetting to include something is not the same as a deliberate decision to omit something in order to simplify the diagram %%e.g., the latter could accompany a note to the reader to mention which/some parts have been omitted, _if_ it is worthwhile for the reader to know the omission.%%<br>
  While many UML notations are optional, haphazard omissions without a good reason can affects consistency which affects readability e.g., it can be considered a minor bug if a sequence diagram omits an activation bars in some places but not in other places and yet the omission doesn't make the diagram any easier to read.
 * **Nitty-gritty details missing from the UG** is not a bug long as the user is informed of those details using other means such as error messages or in-app help.
-* **Minor typos and grammar errors**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
+* **Minor typos**: These are still considered as `severity.VeryLow` `type.DocumentationBug` bugs (even if it is in the actual UI) which carry a very tiny penalty.
+* **Minor grammar errors**: You may categorize them as `severity.VeryLow` `type.DocumentationBug` `response.NotInScope` bugs for grammar errors that don't hinder the reader.
 * **Severity of bugs related to _missing requirements_** (e.g., missing user stories)? Depends on the potential damage the omission can cause. Keep in mind that not documenting a requirement increases the risk of it not getting implemented in a timely manner (i.e., future developers will not know that feature needs to be implemented).
 * **Unfulfilled NFRs**: If the DG mentions non-functional requirements that are not met by the product, it can be a `severity.Low` `DocumentationBug` if the the NFR was unreasonable in the first place. Otherwise, it can be `type.FeatureFlaw` bug.
 * **Details in the diagram too small**: This is usually a symptom of having too much info in the diagram. A common example is sequence diagrams showing low-level details of multiple components (recommended: A sequence diagram should show internal interactions of at most one component i.e., treat other components as back boxes).<br>

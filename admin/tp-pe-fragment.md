@@ -177,6 +177,8 @@ When the invigilator announces an identity check,
 
 * **You may visit the team's project on GitHub during this portion**, for the purpose of verifying the accuracy of documentation %%e.g., to check if a diagram matches the code%%. You are also allowed to download and open the team's code in a code editor.
 
+* **You _may_ report grammar issues** as bugs but note that minor grammar issues that don't hinder the reader are allowed to be categorized as `response.NotInScope` (by the receiving team) -- such bugs earn only small amount or credit for the tester (hence, do not waste time reporting too many minor grammar errors).
+
 -------------------------------------------------------------------------{.border-success}
 
 ##### <span class="badge bg-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
