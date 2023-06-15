@@ -242,10 +242,6 @@ Reason: CATcher and GitHub strips out content wrapped in `<` and `>`, for securi
 </box>
 </div>
 
-<modal large header="Admin {{ icon_embedding }} Project →" id="modal:v1.3-ppp">
-  <include src="tp-deliverables.md#tp-deliverables-ppp"/>
-</modal>
-
 <span id="after-ped">
 
 #### <span class="badge bg-primary">PE-D</span> <span class="text-primary">After the session</span>
