@@ -15,8 +15,7 @@ week5: [
 ],
 week6: [
   {id: 'conceptualize_first_version'},
-  {id: 'draft_the_ug', deadline: 'midnight before the tutorial'},
-  {id: 'refine_product_design'}
+  {id: 'draft_the_ug', deadline: 'midnight before the tutorial'}
 ],
 week7: [
   {id: 'set_up_project_repo', deadline: 'during the tutorial', deadline_type: "info"},

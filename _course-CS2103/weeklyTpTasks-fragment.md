@@ -17,7 +17,6 @@ week5: [
 week6: [
   {id: 'conceptualize_first_version'},
   {id: 'draft_the_ug'},
-  {id: 'refine_product_design'},
   {id: 'set_up_project_repo'},
   {id: 'get_familiar_with_the_code_base'}
 ],

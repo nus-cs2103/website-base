@@ -132,7 +132,8 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 
 <box dismissible>
 
-{{ icon_individual }} indicates an individual task %%(i.e., each team member has to do the task, graded individually)%% while {{ icon_team }} indicates a team task %%(some or all members may do the work; graded for the whole team)%%.
+{{ icon_individual }} **indicates an individual task** %%(i.e., each team member has to do the task, graded individually)%%<br>
+{{ icon_team }} **indicates a team task** %%(some or all members may do the work; graded for the whole team)%%.
 
 {{ icon_important_big_red }} **tP tasks progress is graded**. Completing individual and team tasks are considered for grading the _project management_ component of your project grade.
 
@@ -140,14 +141,22 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 
 {{ icon_important_big_red }} **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. We prefer not to waste admin resources processing requests for partial credit for work that did not follow the instructions precisely, unless the progress was not detected due to a bug in the script.
 
-<span id="milestoneCumulative">
-
-{{ icon_important_big_red }} **Milestone requirements are cumulative**. The recommended progress for the mid-milestone is an implicit requirement for the actual milestone unless a milestone requirement overrides a mid-milestone requirement %%e.g., mid-milestone requires a document to be in a temp format while the actual milestone requires it to be in the proper format%%.
-</span>
-<span id="prReviewsMatter">
-
 {{ icon_important_big_red }} **PR review comments matter!** Remember to do proper PR reviews throughout the tP, at least for non-trivial changes, as the quality and quantity of PR review comments you have given to peers affect your [tP marks](tp-grading.html) (under the _project management_ aspect).
 </span>
+</box>
+
+<box type="tip" icon=":fas-route:" icon-size="3x" seamless>
+
+****Iterative means no detailed plans, right?****{.text-success}
+
+**Iterative projects typically do not start with a very detailed plan for the _final_ product**, because an iterative project accepts that the project requirements can change along the way and hence it is futile to create detailed plans of the final product at the very start.
+
+However, it does not mean we simply keep adding features without any plan and whatever we have at the end is the final product. Instead,
+
+1. **we should have a clear overall direction** (e.g., target user, value proposition), and,
+1. **we should start each iteration with a clear, detailed, and precise plan of the intended outcome of _that_ iteration**.
+
+**Even the plan of the current iteration can change as the iteration progresses** (e.g., if we realize we underestimated the effort required for that iteration), but that would be a case of 'changing the current iteration plan', not a case of 'making it up as we go'.
 </box>
 </div>
 {#====================================================================================================================#}
@@ -531,8 +540,10 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_draft_the_ug">{{ icon_individual }} Draft the UG</span>
+<span id="heading_draft_the_ug">{{ icon_team }} Draft the UG</span>
 <div id="desc_draft_the_ug">
+<include src="tp-tasks-fragment.md#alert-time-sensitive" />
+<div tags="m--cs2113">
 
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ version_first }}.
   * We recommend that you follow the [AB3 User Guide]({{ url_ab3_upstream_website }}/UserGuide.html) in terms of structure and format.
@@ -542,11 +553,36 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
     * Specify the precise/full command syntax for the CLI commands that you will deliver at {{ version_first }}.
       i.e., we want you to know exactly what you plan to deliver at {{ version_first }} -- while it is fine to change this plan later, it is still important to have a plan first.
     * Include all features that will be available in {{ version_first }}. There is no need to include features that will be delivered beyond {{ version_first }}.
-  * <span tags="m--cs2103 m--tic4002">Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%</span><span tags="m--cs2113 m--tic4001">Consider including examples of expected outputs too</span>.
-  * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.<br><br>
+  * Consider including examples of expected outputs too.
+  * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.
 
+</div>
+<div tags="m--cs2103">
+
+This deliverable links back to the following point made earlier:
+>We should start each iteration with a clear, detailed, and precise plan of the intended outcome of that iteration.
+
+* **Collate into a document the _complete_ detailed description of the intended behavior of the product at `{{ version_first }}`.**
+  * For convenience, let us call it a 'User Guide draft', although it is not meant to resemble [the final form of the UG]({{ url_ab3_upstream_website }}/UserGuide.html)).
+  * Use a medium that is convenient for collaboration (e.g., a GoogleDoc).
+  * The content need not be polished. Don't waste time in formatting, copy editing etc.
+* **For each feature, specify the following:**
+  * What it does
+  * The precise command format
+  * example commands %%(to show how the command is used)%%
+  * acceptable values for each parameter %%e.g., if a command takes a person name as a parameter, what inputs are accepted as valid person names?%%
+  * precise expected outputs when the command succeeds %%e.g., changes in the GUI, messages shown to the user%%
+  * precise expected outputs when the command fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
+  * Relevant UI mock-ups %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%
+* **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.
+* While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect.
+
+{{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Product Design==**", "3", indent="2") }}
+
+* {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.
+</div>
+<br>
 <div id="divideDocs" class="indented">
-
   <box>
 
   {{ icon_tip }} Recommended: **Divide <tooltip content="i.e., work related to the User Guide and the Developer Guide">documentation work</tooltip> among team members equally; preferably based on enhancements/features each person would be adding** %%e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%.
@@ -566,7 +602,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 <span id="heading_refine_product_design">{{ icon_team }} Refine the product design</span>
 <div id="desc_refine_product_design">
 
-* Review the UG to ensure the features written by each member fit together to form a cohesive product. Note that cohesiveness of the product can affect the grading of the _product design_ aspect.
+* Review the UG draft to ensure the features written by each member fit together to form a cohesive product. Note that cohesiveness of the product can affect the grading of the _product design_ aspect.
 
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Product Design==**", "3", indent="2") }}
 

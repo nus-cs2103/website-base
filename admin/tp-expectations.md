@@ -228,11 +228,9 @@ In fact, here is the grading criterion for the individual project effort:
   * User-visible features are preferred, but it is not a strict requirement.:
   * **The enhancement(s) should fit with the rest of the software** (and the target user profile) and should have the consent of the team members. %%You will lose marks if you go 'rogue' and add things that don't fit with the product.%%
 
-<div tags="m--cs2103 m--tic4002" class="indented-level4">
+<div tags="m--cs2103 m--tic4002" class="indented-level2">
 
-Some examples:
-
-<panel type="seamless" header="Example enhancements" minimized >
+<panel type="seamless" header="Some example enhancements" >
 
   * Add a new feature %%e.g. add the ability to view statistics%%
   * Enhance an existing features in a major way %%e.g. make the command syntax more user friendly and closer to natural language%%
