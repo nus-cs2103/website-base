@@ -43,7 +43,13 @@
 
 {% macro show_admin_section_to_read(heading, priority, source, is_flat=false) %}
 {% set panel_title %} Admin {{ icon_embedding | safe }} {{ heading }} {{ show_stars(priority) }}{% endset %}
-<panel  type="{{ panel_type }}" minimized >
+{% set popup_url = "" %}
+{% set status = 'minimized' %}
+{% if '#main' in source or '#' not in source %}
+  {% set popup_url %}popup-url="{{ source | replace(".md", ".html") }}"{% endset %}
+  {% set status = 'collapsed' %}
+{% endif %}
+<panel  type="{{ panel_type }}" {{ popup_url }} {{ status }} >
 <span slot="header" class="card-title">{{ panel_title | safe }}</span>
 <include src="{{ source }}" />
 </panel><p/>
@@ -96,10 +102,16 @@
 </div>
 {% endmacro %}
 
-{% macro embed_topic(source, title, level="0", indent="0", status="minimized", type="") %}
+{% macro embed_topic(source, title, level="0", indent="0", status="", type="") %}
 {% set stars = {"0": "", "1": s, "2": s+s, "3": s+s+s, "4": s+s+s+s} %}
 {%  if indent != "0" %}<div class="indented-level{{ indent }}">{% endif %}
-<panel type="{{ type }}" header="{{ title | safe }} {{ stars[level] | safe }}" class="embedding" {{ status }} >
+{% set popup_url = "" %}
+{% if '#main' in source or '#' not in source %}
+{% set popup_url %}popup-url="{{ source | replace(".md", ".html") }}"{% endset %}
+  {% if not status %}{% set status = 'collapsed'%}{% endif %}
+{% endif %}
+{% if not status %}{% set status = 'minimized'%}{% endif %}
+<panel type="{{ type }}" header="{{ title | safe }} {{ stars[level] | safe }}" {{ popup_url }} class="embedding" {{ status }} >
 
 <include src="{{ source }}" omitFrontmatter />
 </panel>
