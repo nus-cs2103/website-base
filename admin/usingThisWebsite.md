@@ -12,7 +12,7 @@
 <include src="../book/about/usage.md#browsers" />
 <include src="../book/about/usage.md#layers"/>
 
-This website ==uses a _topic levels_ system== to indicate the progression of contents from basic/relevant topics to advanced/less-relevant topics.
+This website ==uses a _topic levels_ system== to indicate the progression of contents from basic/relevant topics to advanced/less-relevant topics. Open the panel below to see more details of that system.
 
 {{ embed_topic("courseExpectations.md#topicLevels", "Admin " + icon_embedding + " Course Expectations → Topic Levels", "usingThisWebsite-topicLevels") }}
 <p/>

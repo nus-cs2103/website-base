@@ -124,16 +124,18 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
-<div id="cs2103-week4-intro">
+<div id="cs2103-week3-intro">
+<box dismissible>
 
+{{ icon_individual }} **indicates an individual task** %%(i.e., each team member has to do the task, graded individually)%%<br>
+{{ icon_team }} **indicates a team task** %%(some or all members may do the work; graded for the whole team)%%.
+
+</box>
 </div>
 {#====================================================================================================================#}
 <div id="cs2103-week6-intro">
 
 <box dismissible>
-
-{{ icon_individual }} **indicates an individual task** %%(i.e., each team member has to do the task, graded individually)%%<br>
-{{ icon_team }} **indicates a team task** %%(some or all members may do the work; graded for the whole team)%%.
 
 {{ icon_important_big_red }} **tP tasks progress is graded**. Completing individual and team tasks are considered for grading the _project management_ component of your project grade.
 

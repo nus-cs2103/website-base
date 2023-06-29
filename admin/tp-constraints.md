@@ -30,7 +30,7 @@ The final product should be a result of evolving/enhancing/morphing the given co
 
 {% call show_constraint("Constraint-Typing-Preferred") -%}
 The product should be targeting users who can type fast and prefer typing over other means of input.<br>
-%%**Reason**: to increase comparability of products, and to make feature evaluation easier for peer evaluators.%%
+%%**Reason**: by enforcing some similarity among target users of the projects, we hope to make the projects more comparable with each other.%%
 {%- endcall  %}
 
 {% call show_constraint("Constraint-Single-User") -%}
@@ -170,7 +170,7 @@ Creating a good Java GUI takes a lot of extra effort, which can easily push the 
 
 
 {% call show_constraint("Recommendation-CLI-First", recommendation=true) -%}
-Following from the _Constraint-Typing-Preferred_, if the app is optimized for the target user (graded under the _product design_ criterion), ==a user who can type fast should be able to accomplish most tasks faster via CLI, compared to a hypothetical GUI-only version of the app.== %%For example, adding a new entity via the CLI should be faster than entering the same data through a GUI form.%%<br>
+Following from the _Constraint-Typing-Preferred_, if the app is optimized for the target user (graded under the _product design_ criterion), ==a user who can type fast should be able to accomplish most tasks faster via a command line interface (CLI), compared to a hypothetical GUI-only version of the app.== %%For example, adding a new entity via the CLI should be faster than entering the same data through a GUI form.%%<br>
 Therefore, the input to the app needs to be primarily CLI. <span tags="m--cs2103 m--tic4002">The GUI is used primarily to give visual feedback to the user. This does not mean the app need to have a text UI (CLI is not the same as text UI) or it needs to work in a command console -- it simply means the input to the app should be a text command, which can even be entered using a GUI (similar to how AB3 does it).</span><span tags="m--cs2113 m--tic4001">If you do implement a GUI, that GUI should primarily be used to give visual feedback to the user.</span> While we don't prohibit non-CLI inputs (e.g., clicking of a button), note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br>
 Also keep in mind:
 * Regular typing is usually faster than using key combinations.

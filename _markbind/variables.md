@@ -191,8 +191,8 @@
 
 <variable name="bad"><span style="color: red"><md>**:fas-thumbs-down: Bad**</md></span></variable>
 <variable name="good"><span style="color: green"><md>**:fas-thumbs-up: Good**</md></span></variable>
-<variable name="pros"><span class="text-success">**pros:**</span></variable>
-<variable name="cons"><span class="text-danger">**cons:**</span></variable>
+<variable name="pros"><span class="text-success">**:fas-thumbs-up: pros:**</span></variable>
+<variable name="cons"><span class="text-danger">**:fas-thumbs-down: cons:**</span></variable>
 <variable name="required"><span class="badge rounded-pill bg-danger">REQUIRED</span></variable>
 <variable name="optional"><span class="badge rounded-pill bg-success">OPTIONAL</span></variable>
 <variable name="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></variable>
