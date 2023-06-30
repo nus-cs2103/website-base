@@ -3,7 +3,7 @@
 
 **FAQ: How detailed the DG should be? Do we have to describe every feature/component?**<br>
 **Answer:**
-  1. The DG is primarily meant to help future developers. Therefore, decide based on how the inclusion/exclusion affects that target audience.
+  1. The DG is primarily meant to help current/future developers. Therefore, decide based on how the inclusion/exclusion affects that target audience (you belong to the target audience too!).
   2. That said, the DG is also used for evaluating your ability to write developer documentation. If the above criterion doesn't result in enough content to showcase those skills, you can judiciously add more content, to describe proposed features, design alternatives, less important features etc.
 </box>
 

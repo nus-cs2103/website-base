@@ -157,7 +157,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 <tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
 * You may report functionality bugs, UG bugs, and feature flaws.
-<div class="indented-level2">
+<div class="indented-level1">
 
 {{ embed_topic("tp-grading-bugs-fragment.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
 {{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3") }}
@@ -172,14 +172,14 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 
 * Report functionality bugs:
 
-{{ embed_topic("tp-grading-bugs-fragment.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3", indent="1") }}
 
 
 * Do not post suggestions but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions or/and lacking in a convincing justification as to why the omission of that functionality is problematic.
-{{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3", indent="1") }}
 
 * You may also report documentation bugs (UG bugs in particular) but keep in mind that there is another time (i.e., part II) set aside for reporting documentation bugs too.
-{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="1") }}
 
 
 </tab>
@@ -190,7 +190,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 ###### <div class="text-white bg-secondary p-1">d) How to report bugs</div>
 
 * {{ icon_important_big_red }} **Post bugs as you find them** %%(i.e., do not wait to post all bugs at the end)%% because <span class="text-danger">bug reports created/modified after the allocated time will not count.</span>
-<div class="indented-level2">
+<div class="indented-level1">
 
 <tabs>
 <tab header="Using CATcher">
@@ -226,12 +226,12 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 * Give a good description of the bug with ==steps to reproduce, expected, actual, and screenshots==. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.
 * Assign exactly one `severity.*` label to the bug report. Bug reports without a severity label are considered `severity.Low` (lower severity bugs earn lower credit)<br>
 
-<div class="indented-level2">
+<div class="indented-level1">
 <include src="appendixE-gitHub.md#bug-severity" />
 </div>
 
 * Assign exactly one `type.*` label to the issue.
-<div class="indented-level2">
+<div class="indented-level1">
 <include src="tp-pe-fragment.md#type-labels" />
 </div>
 
@@ -248,7 +248,7 @@ Reason: CATcher and GitHub strips out content wrapped in `<` and `>`, for securi
 * **The relevant bug reports will be transferred to your issue tracker** within a day after the session is over. Once you have received the bug reports for your product, you can decide whether you will act on reported issues before the final submission {{ version_final }}. For some issues, the correct decision could be to reject or postpone to a version beyond {{ version_final }}.<br>
   Reminder: There is no penalty for any of the bugs you received in the PE-D.
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 <box type="info" seamless icon=":fas-angry:">
 

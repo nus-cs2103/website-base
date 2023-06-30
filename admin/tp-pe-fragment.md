@@ -171,8 +171,8 @@ When the invigilator announces an identity check,
 * **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.<br>
   Do not report bugs that are not contained within in the UG and DG pdf files (e.g., bugs in the `README.md`).
 
-{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="2") }}
-{{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="2") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="1") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}
 <p/>
 
 * **You may visit the team's project on GitHub during this portion**, for the purpose of verifying the accuracy of documentation %%e.g., to check if a diagram matches the code%%. You are also allowed to download and open the team's code in a code editor.
@@ -398,6 +398,8 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
   Features that work as specified by the UG but _should have been designed to work differently_ (from the end-user's point of view) fall in this category too.
 * `type.DocumentationBug`: A flaw in the documentation %%e.g., a missing step, a wrong instruction, typos%%
 </box>
+
+**If a bug fits multiple types _equally_ well**, the team is free to choose the one they think the best match, but keep the type chosen by the tester if it is one of the types that fits the bug equally well.
 </div>
 
 * **If you disagree with the original severity assigned to the bug**, you may change it to the correct level.
@@ -482,6 +484,19 @@ However, ==if the dev team's argument is not too far from 'reasonable', **it may
 
 {{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", indent=1) }}
 
+* If the dev team disagreed with an aspect (i.e., type/severity) and you now agree with the dev team's position, it will not affect your accuracy rating. Here are some examples (for the `severity.*`):
+
+{% set up %}<span class="text-success">:fas-arrow-up:</span>{% endset %}
+{% set down %}<span class="text-danger">:fas-arrow-down:</span>{% endset %}
+<div class="indented-level1">
+
+Tester choice | Dev choice | Tester choice | Teacher choice | Dev accuracy  | Tester accuracy
+----------|-----------------|---------------|---------------------|--------------------|--------------------
+`High`    | agreed          |               |                     | {{ up }}           | {{ up }}
+`High`    | `Low`           | agreed        |                     | {{ up }}           | no effect
+`High`    | `Low`           | disagreed     | `High`              | {{ down }}         | {{ up }}
+`High`    | `Low`           | disagreed     | `Low `              | {{ up }}           | {{ down }}
+</div>
 
 * If you do not respond to a dev response, we'll assume that you agree with it.
 * Procedure:

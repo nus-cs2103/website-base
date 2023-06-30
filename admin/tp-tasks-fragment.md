@@ -142,14 +142,13 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 {{ embed_topic("tp-grading.md#project-management-grading", "Admin " + icon_embedding + " tP → Grading → Project Management", "3", indent="1") }}
 
 {{ icon_important_big_red }} **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. We prefer not to waste admin resources processing requests for partial credit for work that did not follow the instructions precisely, unless the progress was not detected due to a bug in the script.
-
-{{ icon_important_big_red }} **PR review comments matter!** Remember to do proper PR reviews throughout the tP, at least for non-trivial changes, as the quality and quantity of PR review comments you have given to peers affect your [tP marks](tp-grading.html) (under the _project management_ aspect).
-</span>
 </box>
 
 <box type="tip" icon=":fas-route:" icon-size="3x" seamless>
 
-****Iterative means no detailed plans, right?****{.text-success}
+****Iterative means no need for detailed plans, right?****{.text-success}
+
+Continuing from the points raised in the 'Sidebar: Project planning, with a twist' last week ...
 
 **Iterative projects typically do not start with a very detailed plan for the _final_ product**, because an iterative project accepts that the project requirements can change along the way and hence it is futile to create detailed plans of the final product at the very start.
 
@@ -158,7 +157,7 @@ However, it does not mean we simply keep adding features without any plan and wh
 1. **we should have a clear overall direction** (e.g., target user, value proposition), and,
 1. **we should start each iteration with a clear, detailed, and precise plan of the intended outcome of _that_ iteration**.
 
-**Even the plan of the current iteration can change as the iteration progresses** (e.g., if we realize we underestimated the effort required for that iteration), but that would be a case of 'changing the current iteration plan', not a case of 'making it up as we go'.
+**The plan of the current iteration _can_ change as the iteration progresses** (e.g., if we realize we underestimated the effort required for that iteration), but that would be a case of 'changing the current iteration plan', not a case of 'making it up as we go'.
 </box>
 </div>
 {#====================================================================================================================#}
@@ -172,13 +171,20 @@ If you have been using SourceTree (or other GUI) for Git before, we strongly rec
 But you can continue to use your favorite Git GUI for a more 'visual' view of your repo, side-by-side with the CLI e.g., from SourceTree, you can open a gitbash terminal, run the command in that terminal, and see the result in the GUI.
 </box>
 
+<box dismissible id="prReviewsMatter">
+
+{{ icon_important_big_red }} **PR review comments matter!** Remember to do proper PR reviews throughout the tP, at least for non-trivial changes, as the quality and quantity of PR review comments you have given to peers affect your [tP marks](tp-grading.html) (under the _project management_ aspect).
+</box>
+
 </div>
 {#====================================================================================================================#}
 <div id="cs2103-week8-intro">
+<box type="info" seamless>
 
+**Improve upon AB3, design, code, test etc.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). Feel free to improve it in any way you see fit. In particular, ==find and fix any bugs it has==. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
+While we are on the topic, also note that the architecture of AB3 doesn't suite every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not be tempted to apply AB3 as a template for every other application you come across in the future**.
+</box>
 <box>
-
-**Reminders:**
 
 <include src="tp-tasks-fragment.md#prReviewsMatter" />
 
@@ -442,9 +448,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 <div class="indented">
 
-<box type="success" seamless>
+<box type="tip" icon=":fas-route:" icon-size="3x" seamless>
 
-##### <span class="text-success">Project planning, with a twist</span>
+##### <span class="text-success">Sidebar: Project planning, with a twist</span>
 
 Intuitively, you might think the right thing to do is to decide what features will be in {{ version_final }} and then plan the intermediate versions based on that. But that's not what we are going to do.
 
@@ -567,7 +573,9 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 <div tags="m--cs2103">
 
 This deliverable links back to the following point made earlier:
->We should start each iteration with a clear, detailed, and precise plan of the intended outcome of that iteration.
+
+> 1. ...
+> 2. we should start each iteration with a clear, detailed, and precise plan of the intended outcome of that iteration.
 
 * **Collate into a document the _complete_ detailed description of the intended behavior of the product at `{{ version_first }}`.**
   * For convenience, let us call it a 'User Guide draft', although it is not meant to resemble [the final form of the UG]({{ url_ab3_upstream_website }}/UserGuide.html)).
@@ -582,11 +590,15 @@ This deliverable links back to the following point made earlier:
   * precise expected outputs when the command fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
   * Relevant UI mock-ups %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%
 * **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.
-* While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect.
+* While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to pee-review feature details written by other team members and refine the overall product design together.
 
-{{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Product Design==**", "3", indent="2") }}
+{{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Product Design==**", "3", indent="1") }}
 
 * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.
+* **Grading criteria**: to be considered 'done', the UG draft should meet all the following criteria:
+  * Covers all features in the smallest set of features the product cannot do without.
+  * Contains all details mentioned above for each of those features
+  * Details seem well thought out (i.e., not a half-hearted attempt to satisfy the expected level of details)
 </div>
 <br>
 <div id="divideDocs" class="indented">
@@ -674,7 +686,7 @@ Update the following pages in your project repo:
 <span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
 <div id="desc_update_the_ug">
 
-* **Move the draft UG content into the User Guide page** in your repository. Update the content as necessary. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
+* **Move the draft UG content into the User Guide page** in your repository. Update the content/structure/formatting as necessary, to match the final form of the UG. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
@@ -835,9 +847,9 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 * If you haven't done so already, make sure you know individual and team expectations of the tP
 
-{{ embed_topic("tp-expectations.md#functionalityExpectations", "Admin " + icon_embedding + " tP: Functionality Expectations", "3", indent="2") }}
-{{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations (and ==guidance on work distribution==)", "3", indent="2") }}
-{{ embed_topic("tp-expectations.md#teamExpectations", "Admin " + icon_embedding + " tP: Team Expectations", "3", indent="2") }}
+{{ embed_topic("tp-expectations.md#functionalityExpectations", "Admin " + icon_embedding + " tP: Functionality Expectations", "3", indent="1") }}
+{{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations (and ==guidance on work distribution==)", "3", indent="1") }}
+{{ embed_topic("tp-expectations.md#teamExpectations", "Admin " + icon_embedding + " tP: Team Expectations", "3", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_adjust_process_rigor">{{ icon_team }} Adjust process rigor if necessary</span>
@@ -845,7 +857,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 * **Adjust process rigor**, as explained in the panel below:
 
-{{ embed_topic("appendixE-gitHub.md#workflow-after-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow (after " + version_first + ")**", "3", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#workflow-after-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow (after " + version_first + ")**", "3", indent="1") }}
 
 </div>
 {#====================================================================================================================#}
@@ -854,11 +866,11 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 * **Set up the issue tracker** as described in the panel below, if you haven't done so already.
 
-{{ embed_topic("appendixE-gitHub.md#issue-tracker-setup", "Admin " + icon_embedding + " Appendix E(extract): **Setting up the issue tracker**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#issue-tracker-setup", "Admin " + icon_embedding + " Appendix E(extract): **Setting up the issue tracker**", "1", indent="1") }}
 
 * **Start proper schedule tracking and milestone management** as explained in the panel below.
 
-{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 
 <div class="indented">
 
@@ -890,7 +902,7 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 * ==**If you plan to rename the Java packages**==, you may want to do it around this time. Doing it later can be more difficult %%(e.g., it can cause more merge conflicts)%%, and can cause problems in our code authorship tracking. Also note that renaming packages is optional.
 
 * **Note: you are required to follow the forking workflow** for at least for the first part of this iteration:
-{{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_add_junit_tests">{{ icon_individual }} Add some JUnit Tests</span>
@@ -991,7 +1003,7 @@ Given that you'll have to make important feature decisions in this iteration, it
 </panel>
 <p/>
 {% if cs2103 %}
-The panel below gives some details on the feature-freeze that will be imposed in {{ version_final }}, to prepare you in advance:
+During the feature freeze, you will not be allowed to tweak even things such as error messages. The panel below gives some details on the feature-freeze that will be imposed in {{ version_final }}, to prepare you in advance:
 
 <panel header="Admin {{ icon_embedding }} tP → **{{ version_final }} (extract) → More details on the feature freeze**" minimized>
 
@@ -1004,7 +1016,6 @@ The panel below gives some details on the feature-freeze that will be imposed in
 In the final iteration (i.e., the one after this), you will be doing a lot of additional things e.g., adding documentation.
 Hence, it is in your interest to ==finish implementing all your <tooltip content="features you want to include in your final version (i.e., {{ version_final }})">final features</tooltip> in this iteration itself== so that you can use the final iteration for polishing up the functionalities and adding documentation.
 </box>
-
 
 As you did in the previous iteration,
 * **Plan the next iteration** (steps are given below as a reminder):
@@ -1020,14 +1031,6 @@ In addition,
   {{ icon_important_big_red }} Remember to [enable assertions in your IDEA run configurations](https://se-education.org/guides/tutorials/intellijUsefulSettings.html) and [in the gradle file](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).
 * {{ icon_tip }} Recommend: **Each PR should also update the relevant parts of documentation and tests**. That way, your documentation/testing work will not pile up towards the end.
 
-<div tags="m--cs2103 m--tic4002">
-
-<box type="info" seamless>
-
-**Improve upon AB3, design, code, test etc.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). Feel free to improve it in any way you see fit. In particular, ==find and fix any bugs it has==. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
-While we are on the topic, also note that the architecture of AB3 doesn't suite every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not be tempted to apply AB3 as a template for every other application you come across in the future**.
-</box>
-</div>
 </div>
 </div>
 {#====================================================================================================================#}
@@ -1044,17 +1047,6 @@ While we are on the topic, also note that the architecture of AB3 doesn't suite 
 <div id="desc_update_dg_with_design_details">
 <include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
-<div class="indented-level2" tags="m--cs2103 m--tic4002">
-
-<panel type="info" header="{{ icon_Q }} Why not wait till the end to write documentation?" minimized>
-
-Here are some reasons:
-* We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
-* It is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
-* It allows receiving early self/peer/instructor feedback.
-</panel>
-<p/>
-</div>
 
 <div class="indented" tags="m--cs2103 m--tic4002">
 <box type="warning" seamless>
@@ -1063,6 +1055,17 @@ You are discouraged from moving sections currently in `DeveloperGuide.md` to add
 
 A similar requirement applies to the `UserGuide.md` too.
 </box>
+</div>
+<div class="indented-level2" tags="m--cs2103 m--tic4002">
+
+<panel type="seamless" header="{{ icon_Q }} FAQ: Why not wait till the end to write documentation?">
+
+Here are some reasons:
+* We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
+* It is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
+* It allows receiving early self/peer/instructor feedback.
+</panel>
+<p/>
 </div>
 
 * **Update the Developer Guide** as follows:{% if tic4001 %}
@@ -1179,7 +1182,8 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
 * {{ icon_important_big_red }} Update the {{ version_penultimate }} user guide to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
-  * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.{% else %}Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.{% endif %}
+  * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.<br>
+  Alternatively, clearly{% else %}Clearly{% endif %} indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 
 <div tags="m--cs2103 m--tic4002">
@@ -1191,7 +1195,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 </modal>
 </div>
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="1") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1419,7 +1423,6 @@ Poor | Below expectations | Meets expectations | Exceeds expectations
 no bug reports from this tester | just a few bug reports, and none are good | 5 or more bug reports but only1-2 are good | 3-5 good bug reports | more than 5 good bug reports
 
 </panel>
-<br>
 <panel type="seamless" header="Q2: Rank PE-D testers" minimized>
 
 Rank the PE-D testers based on their performance (five rank 1 to the top performing tester):
