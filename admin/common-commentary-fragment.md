@@ -248,7 +248,7 @@ While the next few topics are optional, we recommend that you ==have a quick loo
 
 This week, you are starting your individual project (iP). As you are adding code to the iP in rapid succession, you'll need a way to keep track of all the changes you do. The tool we are going to use for that is called Git, and we need to learn Git basics pretty quickly.
 
-Let's jump in and learn how to get started using Git in your own computer. Yes, we are now switching our focus to the _project management_ aspect of SE.
+Let's jump in and learn how to get started using Git in your own computer.
 </div>
 <div tags="m--cs2113">
 
@@ -266,6 +266,7 @@ Let's jump in and learn how to get started using Git in your own computer.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("revisionControl-what") }}">
+
 First, let's learn a bit about _tracking the change history of a project_ in general, at a higher level.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -294,7 +295,7 @@ For the next few sections, the drill is the same: first learn the high-level exp
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="rcs-remote-repos">
 
-Having learned how to use Git in your own computer, let's also learn a bit about working with remote code repositories too. <span tags="m--cs2103 m--cs2113">Yes it's a bit too much to take in one week but we want you to start using Git in your iP from the very beginning.</span>
+Having learned how to use Git in your own computer, let's also learn a bit about working with remote repositories too. <span tags="m--cs2103 m--cs2113">Yes it's a bit too much to take in one week but we want you to start using Git in your iP from the very beginning.</span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Using History") }}">
@@ -588,6 +589,8 @@ Testing is the first thing that comes to mind when you hear 'Quality Assurance' 
                                     Project Mgt
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("SDLC Process Models: Basics") }}">
+
+Now, let's switch our focus to the _project management_ aspect of SE.
 
 Broadly speaking, there are two approaches to doing a software project. Those two approaches are also highly relevant to the way this course is run, and how it is different from most SE courses elsewhere.
 

@@ -738,7 +738,7 @@ This activity is worth `2x2=4` participation points.
 1. **Double-check to confirm your iP meets the criteria for for full marks**:
   {{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 2. **Create a new jar file**
-   * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html).{% else %}in one of these ways:
+   * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20Intellij%20IDEA)).{% else %}in one of these ways:
      * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
      * Else: you can use Intellij.{% endif %}
    * The JAR file should be ==cross-platform and should work in a computer that has Java 11==.

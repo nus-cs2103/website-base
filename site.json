@@ -51,6 +51,9 @@
     },
     {"glob": "book/**/index.md",
       "searchable": "no"
+    },
+    {"glob": "git-trail/*.md",
+      "searchable": "no"
     }
   ],
   "pagesExclude": ["**/*-fragment.md", "book/_site/**/*.*"],

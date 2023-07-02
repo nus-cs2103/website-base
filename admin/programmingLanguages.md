@@ -58,6 +58,8 @@ Download and install the Azul build of OpenJDK 11 version found [here](https://w
 
 ![image](https://user-images.githubusercontent.com/1673303/133399726-93f98ee4-6efb-4f37-830d-46a72298ab49.png)
 
+{{ icon_tip }} You can use https://sdkman.io to install Java e.g., `sdk install java 11.0.19.fx-zulu`
+
 Recommended: Remove the other versions of OpenJDK so that you do not accidentally launch the JAR using the wrong version (this [video](https://www.youtube.com/watch?v=wwV_L3lKYYw) shows how)
 
 After installation, the command `java --version` should give an output similar to the below:
