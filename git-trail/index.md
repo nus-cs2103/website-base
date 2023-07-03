@@ -10,7 +10,7 @@ pageNav: 4
 <panel type="seamless" expanded>
 <div slot="header" class="card-title">
 
-## {{ title }}
+## <span class="text-success">{{ title }}</span>
 </div>
 
 <div class="indented-level1">
@@ -22,11 +22,11 @@ pageNav: 4
 </panel>
 {% endmacro %}
 
-{% macro divider(text) %}# <div class="text-white bg-success p-1">{{ text }}</div>{% endmacro %}
+{% macro divider(text) %}# <div class="text-white bg-success p-1"><span class="text-light">:fas-map-marker-alt:</span> {{ text }}</div>{% endmacro %}
 
 <div class="website-content" id="main">
 
-# ++Git Learning Trail++
+# :fas-route: ++Git Learning Trail++{.text-success}
 
 <p class="lead"><md>This learning trail for those who are new to Git and would like to learn it in advance to prepare for the course.<br>
 These topics are covered during the [regular course schedule](../schedule/timeline.html) and in the [course textbook](../se-book-adapted/index.html) as well. So, <mark>doing this in advance is optional</mark>, but doing so can reduce your workload during the regular semester.</md></p>
@@ -84,6 +84,7 @@ These topics are covered during the [regular course schedule](../schedule/timeli
 
 {{ show_trail_unit("revisionControl/branching", "RCS: Branching", "c1688fb0-ff95-462c-a736-ac0e00c93e04") }}
 {{ show_trail_unit("gitAndGithub/branch", "Git: `branch`, `merge`", "2580eb90-e6c1-42ab-9b5b-ac0e00c93de0") }}
-{{ show_trail_unit("gitAndGithub/mergeConflicts", "Git: Resolving merge conflicts", "6de3f8b2-af7b-403a-a34f-ac0e00c97328") }}
+{{ show_trail_unit("gitAndGithub/mergeConflicts", "Git: Merge Conflicts", "6de3f8b2-af7b-403a-a34f-ac0e00c97328") }}
+{{ show_trail_unit("gitAndGithub/remoteBranches", "Git: Remote Branches") }}
 
 </div>

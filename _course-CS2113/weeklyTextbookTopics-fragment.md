@@ -175,6 +175,7 @@
     {heading: "RCS: Branching"},
       {location: ["revisionControl", "branching"]},
       {location: ["gitAndGithub", "branch"]},
+      {location: ["gitAndGithub", "remoteBranches"]},
 {week: "6"},
   {name: "Java"},
     {heading: "Java: Generics"},

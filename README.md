@@ -19,10 +19,10 @@
    1. Post an issue in the [se-edu/se-book issue tracker](https://github.com/se-edu/se-book/issues) to request for the change
    1. After the change has been done, pull the sub-module, and commit the changes to sub-module reference (when you pull a sub-module, Git automatically updates the submodule reference which is seen as a change in the enclosing repo).
       ```
-      cd book
-      git pull origin master
-      cd ..
-      git commit -am "sync with book"
+      $ cd book
+      $ git pull origin master
+      $ cd ..
+      $ git commit -am "sync with book"
       ```
    1. Deploy the website to make the updated book content visible to students
 

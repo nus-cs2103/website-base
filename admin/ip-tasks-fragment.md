@@ -273,8 +273,8 @@ Note the following when you do the `A-Jar` increment given above:
    1. Merge one of the PRs on GitHub. Remember to choose the `Create merge commit` option when merging.
    1. The above step will cause the `master` branch of your local repo to fall behind that of your fork. Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the the updated `master` branch from your fork e.g.,
       ```{.no-line-numbers}
-      git checkout master
-      git pull origin master
+      $ git checkout master
+      $ git pull origin master
       ```
    1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
    1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.

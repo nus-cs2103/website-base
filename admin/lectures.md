@@ -48,7 +48,7 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 ##### Tips for watching lecture videos
 
-* ==You are recommended to watch <span class="badge rounded-pill bg-danger">++{{ icon_video }} Video++</span>'s provided at faster speeds== (`x1.25` or even `x1.5`) to save time.{% if cs2113 %}
+* ==You are recommended to watch <span class="badge rounded-pill bg-danger">++{{ icon_video }} Videos++</span> provided at faster speeds== (`x1.25` or even `x1.5`) to save time.{% if cs2113 %}
 * Lecture videos are distributed via Canvas.{% else %}
 * You'll need to use your NUSNET login to access them.{% endif %}
 </box>

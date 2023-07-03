@@ -231,6 +231,7 @@
       {location: ["revisionControl", "branching"], panopto: "c1688fb0-ff95-462c-a736-ac0e00c93e04"},
       {location: ["gitAndGithub", "branch"], panopto: "2580eb90-e6c1-42ab-9b5b-ac0e00c93de0"},
       {location: ["gitAndGithub", "mergeConflicts"], panopto: "6de3f8b2-af7b-403a-a34f-ac0e00c97328"},
+      {location: ["gitAndGithub", "remoteBranches"]},
     {heading: "Project Mgt: Scheduling and Tracking", panopto: "e4bdedb1-34a1-4da1-9b57-ac390047588e"},
       {location: ["projectPlanning", "milestones"]},
       {location: ["projectPlanning", "buffers"]},

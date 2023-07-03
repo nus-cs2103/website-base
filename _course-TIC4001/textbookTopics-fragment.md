@@ -1674,6 +1674,7 @@
               {name: "push", heading: "`push`: Uploading data to other repos", priority: "0:1"},
               {name: "branch", heading: "`branch`: Doing multiple parallel changes", priority: "0:2"},
               {name: "mergeConflicts", heading: "Dealing with merge conflicts", priority: "2"},
+              {name: "remoteBranches", heading: "Remote branches", priority: "2"},
               {name: "createPRs", heading: "Creating PRs", priority: "1"},
               {name: "reviewPRs", heading: "Reviewing PRs", priority: "2"},
               {name: "managePRs", heading: "Merging PRs", priority: "2"},
