@@ -16,7 +16,7 @@
 <span class="text-danger"><big>{{ icon_dislike }} **What not to do:**</big></span>
 
 * <span class="text-danger">**Send a help request to an instructor**:</span> When faced with a technical problem or a doubt about a concept, don't fire off an email lecturer/tutor immediately, unless it is something only the lecturer/tutor is supposed to know.<br>
-* <span class="text-danger">**Request to meet the instructor to solve the problem**:</span> That can only work if the person is supposed to know how to solve all technical problems, which is almost never the case.
+* <span class="text-danger">**Request to meet the instructor to solve the problem**:</span> That can only work if the person is supposed to know how to solve all technical problems, which is often not the case.
 
 <span class="text-success"><big>{{ icon_like }} **What to do:**</big></span>
 
@@ -93,20 +93,20 @@ _Rubber duck debugging_ is an informal term used in software engineering to ref
 
 * **Raise your question during a tutorial**. Some questions can be discussed with the tutor and tutorial-mates.
   What kind of questions are suitable to discuss with the tutor? Consider these two questions you might want to ask a tutor:
-  * {{ good }} *This is how I understood/applied coupling. Is that correct?* - Such questions are welcome. %%**Reason**:This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.%%
+  * {{ good }} *This is how I understood coupling. Is that correct?* - Such questions are welcome. %%**Reason**: This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.%%
   * {{ bad }} *What is coupling?* - Such questions are discouraged. %%**Reason**: This question implies you haven’t done what you could to learn the topic in concern.%%
 
 </span>
 
 * **Ask the lecturer**: Failing all above, you can talk to the lecturer before/after the lecture, or email the lecturer.
 
-<box type="warning" seamless>
+<box type="tip" seamless>
 
-{{ icon_tip }} **Some technical problems can take a long time to resolve.** Therefore, plan ahead and schedule your work much earlier than the deadline.
+**Some technical problems can take a long time to resolve.** Therefore, plan ahead and schedule your work much earlier than the deadline.
 
-{{ icon_tip }} **Some problems might not get resolved at all**; while waiting for a solution, explore alternatives and workarounds.
+**Some problems might not get resolved at all**; while waiting for a solution, explore alternatives and workarounds.
 
-{{ icon_tip }} **==If your problem remains unsolved 24 hours after posting in the forum==**, please alert `{{ course | lower }}@comp.nus.edu.sg` so that the teaching team can look into it.
+**==If your problem remains unsolved 24 hours after posting in the forum==**, please alert `{{ course | lower }}@comp.nus.edu.sg` so that the teaching team can look into it.
 </box>
 
 <box>

@@ -30,7 +30,7 @@ The tools in the following panels are the same as what you used in TIC4001.
 
 {{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="2") }}
-{{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "2", indent="2") }}
+{{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - Git**", "2", indent="2") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="2") }}
 <box type="warning" tags="m--tic4002" seamless>
 

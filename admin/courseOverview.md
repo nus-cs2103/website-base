@@ -14,7 +14,7 @@
 
 * **On the theory side,** this course is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 
-* **The practice side,** you will first ramp up your technical skills by doing a small individual project (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brownfield) in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 KLoC) generic product -- and enhance it into a better product or evolve it into a different product.
+* **The practice side,** you will first ramp up your technical skills by doing a small individual project (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brownfield) in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 <tooltip content="LoC = Lines of Code">KLoC</tooltip>) generic product -- and enhance it into a better product or evolve it in a direction that you choose.
 
 <div id="meaning-of-iterative-topics">
 
@@ -22,16 +22,19 @@
 
 ****What does mean to 'follow an iterative approach in covering topics'?****
 
-**It means, we cover a little bit of <tooltip content="i.e., requirements, design, testing, project management, ...">all SE aspects</tooltip> at first and then iteratively go deeper into them later**, revisiting each aspect many time over the course of the semester. In contrast, a _sequential_ approach would have covered one SE aspect before moving to the next (e.g., teach the _requirements_ aspect completely before moving to the _design_ aspect).
+**It means, we cover a little bit of <tooltip content="i.e., requirements, design, testing, project management, ...">all SE aspects</tooltip> at first and then iteratively go deeper into them later**, revisiting each aspect many times over the course of the semester. In contrast, a _sequential_ approach would have covered one SE aspect before moving to the next (e.g., teach the _requirements_ aspect completely before moving to the _design_ aspect).<br>
 
-**The choice of which topics are covered each week is driven by the project** i.e., we give priority to topics that you'll need to apply soon in the project that you will be doing in parallel.
+**In each week, we cover topics that are most relevant to the project tasks** that you are expected to do around that time.
 
 **This way of 'jumping around' topics feels chaotic but consider the benefits**:
 * It allows you to start doing SE projects early, and do it iteratively too. That is, you can start with a small project from the very start and make it bigger progressively, learning from earlier mistakes, and getting multiple chances improve on previous attempts.
 * Important SE aspects such as testing can be practiced from the very beginning. If we followed a sequential approach, you can only learn it near the end of the semester.
-* Lower risk of missing out some SE aspects altogether. For example, suppose your schedule got heavier in the second half of the semester and you could barely follow the course during that half. You still go away with the basic knowledge of _all_ SE aspects rather than knowing some aspects fully and missing some other aspects altogether.
+* It lowers the risk of missing out some SE aspects altogether. For example, suppose your schedule got heavier in the second half of the semester, and you could barely follow the course during that half. You still go away with the basic knowledge of _all_ SE aspects rather than knowing some aspects fully and missing some other aspects altogether.
 
-**To help you cope with the non-sequential progression of topics,** this course website contains two versions of the topics. In the [Schedule page](../schedule/index.html), you'll find the topics organized into the order we cover them in each week. In the [Textbook page](../se-book-adapted/index.html), you'll find the topics in their natural sequential order. This format is suitable for exam reference.
+**To help you cope with the non-sequential progression of topics,** this course website contains two versions of the topics.
+
+1. In the [Schedule page](../schedule/index.html), you'll find the topics organized into the order we cover them in each week.
+1. In the [Textbook page](../se-book-adapted/index.html), you'll find the topics in their natural sequential order. This format is suitable for exam reference.
 </box>
 
 </div>

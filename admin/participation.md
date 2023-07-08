@@ -4,10 +4,12 @@
 {% call show_admin_page("participation") %}
 <div id="main">
 
-**To receive full {{ marks_participation}} marks allocated for participation, meet the criteria {{ thumb("A", "info") }}, {{ thumb("B", "info") }}, and {{ thumb("C", "info") }}.**
+**To receive full {{ marks_participation}} marks allocated for participation, meet all three criteria {{ thumb("A", "info") }}, {{ thumb("B", "info") }}, and {{ thumb("C", "info") }}.**
 
 ****{{ thumb("A", "info") }} Earned more than half of weekly participation points in at least 10 weeks.****
 <div tags="m--cs2103 m--cs2113">
+
+Some ways you can earn weekly participation points:
 
   * Weekly quiz(es), if any:
     * Quizzes open around the lecture time and stay open until the next lecture starts. In some weeks, there will be two quizzes %%(because two smaller quiz is easier for you to manage than one big quiz)%%.
@@ -71,7 +73,7 @@
 
 </div>
 
-****{{ thumb("C", "info") }} {{ "Lecture" if tic4002 else "Tutorial" }} attendance/participation not too low****
+****{{ thumb("C", "info") }} Sufficient {{ "lecture" if tic4002 else "tutorial" }} attendance/participation****
 
 <div class="indented">
 

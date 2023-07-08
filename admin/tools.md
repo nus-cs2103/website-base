@@ -22,7 +22,7 @@ Install Zoom in your computer. Installation and login instructions are [here](ht
 
 ## Tool: GitHub (for code hosting)
 
-You are ==_required to_ use GitHub== as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.).
+**You are _required to_ use GitHub** as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.).
 
 <box>
 
@@ -40,7 +40,7 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 
 ## Tool: Git (for revision control)
 
-You are ==_required to_ use Git==. Other revision control software are not allowed. The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com/), but you may use any other, or none.
+**You are _required to_ use Git.** The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com/), but you may use any other, or none.
 
 <box>
 
@@ -54,8 +54,8 @@ You are ==_required to_ use Git==. Other revision control software are not allow
 **Set Git `user.name`**: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to ==set your Git `user.name` in all computers you use== to a sensible string that uniquely identifies you. For example, ==you can set it to your GitHub username or your full name==. If this user name is not set properly or if you use multiple usernames for Git, our grading scripts might miss some of your work.
 
 After installing Git in a computer, you can set the Git username as follows:
-1. Open a command window that can run Git commands (e.g., Git bash window)
-2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME` (omit the `--global` flag to limit the setting to the current repo only)<br>
+1. Open a terminal that can run Git commands (e.g., a [Git Bash](https://www.atlassian.com/git/tutorials/git-bash) window, which comes with SourceTree)
+2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME`<br>
    e.g., `git config --global user.name JohnDoe`
 
 More info about setting Git username is [here](https://help.github.com/articles/setting-your-username-in-git/).
@@ -130,7 +130,7 @@ You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for 
 
 <box type="warning" seamless>
 
-Use other IDEs at your own risk.
+Use other IDEs at your own risk. If you run into problems while using them, we won't be able to help you.
 </box>
 
 <box>

@@ -31,11 +31,11 @@ Also, consider this a gradual introduction to 'heavy' courses; most project cour
 
 In {{ course_pair }}, A+ is not given simply based on the final score. To get an A+ you should,
 
-* score enough to get an A
-* be considered technically competent by peers and tutor (based on peer evaluations and tutor observations)
-* be considered helpful by peers (based on peer evaluations and tutor observations)
+* score enough to be close to the higher end of the `A` grade band.
+* be considered technically competent by peers and tutor (based on peer evaluations and tutor observations).
+* be considered helpful by peers (based on peer evaluations and tutor observations).
   * In particular, you are encouraged to be active on the [forum]({{url_forum}}) and give your inputs to ongoing discussions so that other students can benefit from your relatively higher expertise that makes you deserve an A+.
-  * Whenever you can, go out of your way to review PRs created by other team members.
+  * Whenever you can, go out of your way to review pull requests created by other team members.
 
 </div>
 

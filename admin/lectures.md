@@ -5,9 +5,7 @@
 
 <pic src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%"></pic>
 
-****Timing/venue****:
-
-<include src="../_course-{{ course }}/timetables-fragment.md#lectures-s{{ S }}" />
+****Timing/venue****: <include src="../_course-{{ course }}/timetables-fragment.md#lectures-s{{ S }}" inline/>
 
 <div tags="m--tic4001 m--tic4002" class="indented">
 
@@ -24,13 +22,14 @@
 
 <div tags="m--cs2103 m--cs2113">
 
-Lectures start on time sharp and end around 10-15 minutes before official end time.
+* The lecture recording will be made available later during the same day.
+* Lectures start on time sharp and end around 10-15 minutes before official end time.
 </div>
 
 ****Mode****:
 {% if cs2103 %}
 * The first lecture will be done using Zoom. The Zoom link will be available in [Canvas course homepage]({{ url_canvas_home }}). You can attend the live Zoom lecture or watch the recording later.
-* We expect to switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) from the 2nd lecture onwards, if the circumstances allow it.
+* We expect to switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) from the 2nd lecture onwards.
 {% elseif cs2113 %}
 * Lectures will be conducted on-campus (i.e., F2F)
 {% else %}
@@ -65,7 +64,7 @@ Lectures start on time sharp and end around 10-15 minutes before official end ti
 
 <box type="info"  header="A caveat about your expectations from the lecture" tags="m--cs2103" light>
 
-In a traditional course, the lecture is the _primary_ means of content delivery. However, {{ course_pair }} is delivered in the _blended learning_ mode, and hence, the contents are delivered primarily via the online textbook and pre-recorded videos that you can consume at your own pace.
+In a traditional course, the lecture is the _primary_ means of content delivery. However, {{ course_pair }} is delivered in the _blended learning_ mode, and accordingly, the contents are delivered primarily via the online textbook and pre-recorded videos that you can consume at your own pace.
 
 Hence, ==the lecture is only a _complementary_ component== that aims to,
 * **recap** the past week, clarify common doubts
@@ -73,7 +72,7 @@ Hence, ==the lecture is only a _complementary_ component== that aims to,
 * **motivate** you to tackle the weekly tasks coming up
 * **contextualize** various 'moving parts' of the course and keep you anchored to the 'big picture'
 
-Given that lectures are complementary, you can speed-watch the recording to save time (instead of attending the live lecture) or skip them altogether (if you are already saturated by the rest of the course activities).
+Given that lectures are complementary, you are free to speed-watch the recording to save time (instead of attending the live lecture) or skip them altogether (if you are already saturated by the rest of the course activities). That said, live attendance (F2F or via Zoom) is recommended as it makes it easier to follow the same schedule every week.
 </box>
 </div>
 

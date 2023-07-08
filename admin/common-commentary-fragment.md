@@ -5,7 +5,7 @@
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("SE: Intro") }}">
 
-Given this is a first course in SE, tradition demands that we start by defining the subject. However, we are not going to spend a lot of time going through definitions of SE. Instead, let's look at an extract from the very first chapter of a very famous SE book, with the aim of providing some inspiration but also an appreciation of the challenges ahead.
+Given this is a first course in SE, tradition demands that we start by defining the subject. However, let's not spend a lot of time going through lengthy/formal definitions of SE. Instead, let's look at an extract from the very first chapter of a very famous SE book, with the aim of providing some inspiration, but also an appreciation of the challenges ahead.
 </div>
 <!-- ==================================================================================================== -->
                                              Requirements

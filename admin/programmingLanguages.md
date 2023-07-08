@@ -11,7 +11,7 @@
 </td>
 <td>
 
-==**The main language** used in this course is Java==. You should use
+**The main language used in this course is Java**. You should use
 Java for all programming activities, the project, and exam answers.
 
 <span tags="m--cs2103">
@@ -34,7 +34,7 @@ We require you to use **Java 11** (the [Oracle version](https://www.oracle.com/j
 
 **If you have Java 8** in your computer, we recommend removing it, to prevent using it unintentionally.
 
-**Why not move to Java 17?**: Yes, we are aware that Java 17 is a more recent LTS version of Java. We hope to move to it soon, but not this semester.
+**Why not move to Java 17?**: While we are aware that Java 17 is a more recent LTS version of Java, we are sticking with Java 11 which is still the most used version of Java in production systems. We plan to move to Java 17 in a future semester when its adoption is sufficiently high.
 
 {% if cs2103 or tic4002 %}
 

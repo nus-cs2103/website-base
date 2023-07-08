@@ -54,7 +54,7 @@ As you know, the iP is based on the generic project called [_Project Duke_](../s
 
 **The iP is to be done over the first half of the semester**.
 
-<box type="warning">
+<box type="warning" seamless>
 
 * **Volatile requirements ahead!**: Some requirements will only be released later (or could be changed along the way), to simulate how requirements of a project may not be available at the start or stay the same during the project.
 * **Requirements may differ between students!**: Note that some requirements that are to be released later could be different from one student to another.
