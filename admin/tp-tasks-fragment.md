@@ -167,8 +167,8 @@ However, it does not mean we simply keep adding features without any plan and wh
 
 <br>++**Start using Git via the CLI**++{.text-success .font-monospace}
 
-If you have been using SourceTree (or other GUI) for Git before, we strongly recommend that you ==move towards using the CLI to perform Git tasks== in the second half of the semester. Doing so will strengthen your Git knowledge (because CLI takes you closer to what's actually happening, while GUIs might hide such details).<br>
-But you can continue to use your favorite Git GUI for a more 'visual' view of your repo, side-by-side with the CLI e.g., from SourceTree, you can open a gitbash terminal, run the command in that terminal, and see the result in the GUI.
+If you have been using Sourcetree (or other GUI) for Git before, we strongly recommend that you ==move towards using the CLI to perform Git tasks== in the second half of the semester. Doing so will strengthen your Git knowledge (because CLI takes you closer to what's actually happening, while GUIs might hide such details).<br>
+But you can continue to use your favorite Git GUI for a more 'visual' view of your repo, side-by-side with the CLI e.g., from Sourcetree, you can open a gitbash terminal, run the command in that terminal, and see the result in the GUI.
 </box>
 
 <box dismissible id="prReviewsMatter">

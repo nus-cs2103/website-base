@@ -40,21 +40,21 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 
 ## Tool: Git (for revision control)
 
-**You are _required to_ use Git.** The recommended GUI client for Git is [SourceTree](https://www.sourcetreeapp.com/), but you may use any other, or none.
+**You are _required to_ use Git.** The recommended GUI client for Git is [Sourcetree](https://www.sourcetreeapp.com/), but you may use any other, or none.
 
 <box>
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
 **Install Git and a Git GUI client** on your computer.<br>
-  {{ icon_tip }} SourceTree comes bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot. If you are already comfortable using Git command line, you need not install/use a GUI client.
+  {{ icon_tip }} Sourcetree comes bundled with Git i.e., if you install Sourcetree, you get both Git and a GUI client in one shot. If you are already comfortable using Git command line, you need not install/use a GUI client.
 
 <div id="git-username">
 
 **Set Git `user.name`**: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to ==set your Git `user.name` in all computers you use== to a sensible string that uniquely identifies you. For example, ==you can set it to your GitHub username or your full name==. If this user name is not set properly or if you use multiple usernames for Git, our grading scripts might miss some of your work.
 
 After installing Git in a computer, you can set the Git username as follows:
-1. Open a terminal that can run Git commands (e.g., a [Git Bash](https://www.atlassian.com/git/tutorials/git-bash) window, which comes with SourceTree)
+1. Open a terminal that can run Git commands (e.g., a [Git Bash](https://www.atlassian.com/git/tutorials/git-bash) window, which comes with Sourcetree)
 2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME`<br>
    e.g., `git config --global user.name JohnDoe`
 
@@ -62,7 +62,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 <box type="warning" seamless>
 
-**Caveat against using other Git GUIs**: While we do not _insist_ that you use SourceTree, note that we are unable  to provide any support if you run into any problems while using a different Git GUI.
+**Caveat against using other Git GUIs**: While we do not _insist_ that you use Sourcetree, note that we are unable  to provide any support if you run into any problems while using a different Git GUI.
 </box>
 </div>
 </box>
@@ -151,7 +151,7 @@ Use other IDEs at your own risk. If you run into problems while using them, we w
 
 ## Tool: TEAMMATES (for Peer Evaluations)
 
-We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation system. %%TEAMMATES is a project run by NUS SoC students and used by over 0.6 million users from over 1000 universities.%%
+We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation system. %%TEAMMATES is a project run by NUS SoC students and used by over a million users from over 1500 universities.%%
 
 <box>
 

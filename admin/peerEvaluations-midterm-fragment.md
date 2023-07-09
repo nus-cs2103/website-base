@@ -51,7 +51,7 @@
 {{ icon_green_Q }} **The team members' conduct in the project and during tutorials,**
 
 * Evaluated based on the following criteria, on a scale `Poor`/`Below Average`/`Average`/`Good`/`Excellent`:
-<div class="indented-level2">
+<div class="indented-level1">
 
 <box background-color="white" border-color="grey" border-left-color="#28a745">
 
@@ -77,7 +77,7 @@
 
 * Considered only for bonus marks, A+ grades, and tutor recruitment
 * Evaluated based on the following criteria, on a scale `Poor`/`Below Average`/`Average`/`Good`/`Excellent`:
-<div class="indented-level2">
+<div class="indented-level1">
 
 
 <box background-color="white" border-color="grey" border-left-color="#28a745">

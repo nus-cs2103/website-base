@@ -6,7 +6,7 @@
 * This peer evaluation is compulsory. Not only it will count for weekly participation, ==those who don't submit will not get a chance to rebut peer evaluations received==.
 * This session includes all questions from the Midterm Peer Evaluation:
 
-{{ embed_topic("peerEvaluations-midterm-fragment.md#questions", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation Questions", "1", indent="2") }}
+{{ embed_topic("peerEvaluations-midterm-fragment.md#questions", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation Questions", "1", indent="1") }}
 
 * In addition, it contains these additional questions:
 

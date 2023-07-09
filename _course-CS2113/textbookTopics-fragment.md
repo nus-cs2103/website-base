@@ -1895,7 +1895,7 @@
             name: "",
             level_three_topics: [
               {name: "basic", heading: "JUnit: Basic", priority: "2"},
-              {name: "intermediate", heading: "JUnit: Intermediate", priority: "3"}
+              {name: "intermediate", heading: "JUnit: Intermediate", priority: "4"}
             ]
           }
         ]

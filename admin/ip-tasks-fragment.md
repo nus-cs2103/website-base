@@ -13,11 +13,11 @@
 
 <panel type="seamless" header="**Q.** How are the iP git tags used in grading?">
 
-**A.** A git tag is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor those progress declarations.
+**A.** Adding a git tag in the iP is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor those progress declarations.
 </panel>
 <panel type="seamless" header="**Q.** What if I discovered a bug after I finished an increment?">
 
-**A.** Go ahead and fix it in a subsequent commit. There is no need to update the previous commit or move the corresponding tag to the new commit. As we do not test your code at every tag, earlier bugs will not affect your grade as long as they are fixed later. Similarly, feel free to improve the code of previous increments later.
+**A.** Go ahead and fix it in a subsequent commit. There is no need to update the previous commit or move the corresponding tag to the new commit. As we do not test your code at every tag, earlier bugs will not affect your grade as long as they are fixed eventually. Similarly, feel free to improve the code of previous increments later.
 </panel>
 <panel type="seamless" header="**Q.** I did multiple increments in the same commit. How to fix?">
 
@@ -55,13 +55,11 @@ Optionally, if you haven't pushed the commit to the fork yet, you can try to fig
   * **`git push` the code to your fork**
     <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](../book/gitAndGithub/push/).
     After pushing a tag to your fork, you should be able to see that tag by visiting `https://github.com/YOUR_USER_NAME/REPO_NAME/tags` e.g., https://github.com/se-edu/addressbook-level3/tags</md></box>
-    <box type="tip" seamless><md>If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).</md></box>
+    <box type="tip" seamless><md>If you encounter issues connecting Sourcetree with your GitHub account, refer to this [Sourcetree Tutorial](https://se-education.org/guides/tutorials/sourcetree.html).</md></box>
 
 * Remember to take note of our plagiarism policies, if you haven't done so already:
 
 {{ embed_topic("policies-fragment.md#policy-reuse", "Admin " + icon_embedding + " Policies -> **Reuse**", "1", indent=1, type="danger") }}
-
-<include src="ip-tasks-fragment.md#ip-faq" />
 
 </div>
 <div id="volatile-requirements">
@@ -157,17 +155,27 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
  # Pre/Post info
  #====================================================================================================================#}
 <div id="pre_Level-0">
-<div tags="m--cs2113 m--tic4001">
-
+<div tags="m--cs2113">
 <include src="ip-tasks-fragment.md#commit" />
 </div>
-</div>
-{#====================================================================================================================#}
-<div id="pre_Level-0">
+<div tags="m--cs2103">
 
 <include src="ip-tasks-fragment.md#order" />
-{% if cs2103 %}<include src="ip-tasks-fragment.md#commit" />{% endif %}
+<box type="important" light>
+
+#####  Keep in mind ...{.text-danger}
+
+<include src="ip-tasks-fragment.md#commit" />
 <include src="ip-tasks-fragment.md#tag-push" />
+</box>
+</div>
+</div>
+
+<div id="post_A-Enums">
+<div tags="m--cs2103">
+<p/>
+<include src="ip-tasks-fragment.md#ip-faq" />
+</div>
 </div>
 {#====================================================================================================================#}
 <div id="pre_Level-5">
@@ -230,9 +238,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 <div id="post_A-Jar">
 <div tags="m--cs2103 m--cs2113 m--tic4001" class="indented-level2">
 
-Note the following when you do the `A-Jar` increment given above:
-* <span class="text-danger">Do not commit the JAR file.</span> We don't normally commit generated binary files into the repository.
-* If it does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already). Otherwise tag the latest commit as usual. In both cases, push the tag to the fork.
+Note that if `A-Jar` increment does not require any code changes, you may tag the commit at which this was achieved as `A-Jar` (even if that commit has another tag already). Otherwise, tag the latest commit as usual. In both cases, push the tag to the fork.
 </div>
 </div>
 {#====================================================================================================================#}
@@ -243,7 +249,7 @@ Note the following when you do the `A-Jar` increment given above:
   1. Start a branch `branch-Level-7`.
   1. Implement Level 7 while committing to that branch at appropriate points,
   1. Merge the branch back to the master branch (remember to create a merge commit i.e., ==no fast-forward==).
-  1. Tag the merge commit in the `master` branch.
+  1. Git tag the merge commit in the `master` branch as usual (i.e., add the tag `Level-7`).
   1. Push the `master` branch, push the `branch-Level-7`, and push the tag, to your fork.<br>
      {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
      {{ icon_important_big_red }} Only _merged_ branches are detected by the script. After merging a branch `b1` to the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged to the `master` branch.
@@ -311,7 +317,7 @@ Note the following when you do the `A-Jar` increment given above:
 <panel type="seamless">
 <span slot="header" class="card-title text-info"><markdown>{{ icon_info }} **Why more OOP?**</markdown></span>
 
-One of the increments below asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
+One of the iP increments asks you to push the design more towards the OOP approach. This is a good point to remind you the following points:
 
 ****Good OOP != OOP is good****: While the course pushes you to use _good OOP_, do not interpret it as a message of _OOP is good_; it's good for many situations but not so for some other situations. The best is usually a combination of approaches. Hence, you are encouraged to get better at other paradigms, the _functional_ paradigm in particular which has been rising in popularity in some areas such as big data, AI, parallel systems.<br>
 That said, it is also preferable to use one paradigm as the primary approach and fallback on others only when the primary paradigm is clearly sub-optimal. Reason: mixing everything in equal measures might make the system even harder to understand.
@@ -342,24 +348,21 @@ That said, it is also preferable to use one paradigm as the primary approach and
 <panel type="seamless" >
 <span slot="header" class="card-title"><markdown>{{ icon_tip}} **If your fork doesn't have the `add-gradle-support` branch ...**{.text-success}</markdown></span>
 
-If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branches when you forked), here are the Git commands for (one of many ways of) fetching and merging the `add-gradle-support` branch from the upstream repo that you forked from:<br>
+If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branches when you forked), here are the steps for fetching the `add-gradle-support` branch from the upstream repo:<br>
 
-1. Add the upstream repo as a remote, and give it the name `upstream`:<br>
-`git remote add upstream {{ url_course_org }}/{{ ip_repo_name }}.git`
-1. Switch to the `master` branch, if you are not on it already:<br>
-`git checkout master`
-1. Fetch the `add-gradle-support` from the remote `upstream`:<br>
-`git fetch upstream add-gradle-support`
-1. Merge the branch:<br>
-`git merge upstream/add-gradle-support`
+1. Add the upstream repo `{{ url_course_org }}/{{ ip_repo_name }}.git` as a remote, and give it the name `upstream`.<br>
+   General instructions for adding a remote to your repo can be found in the panel below:
 
-Alternatively see the panel below on some general info on how to pull a branch from another remote repo, but note,
+   {{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2", indent="1") }}
 
-* the remote to pull _from_ is `{{ url_course_org }}/{{ ip_repo_name }}.git` (not `https://github.com/se-edu/samplerepo-things-2.git`)
-* the repo to pull _to_ is your local repo used for the project (not `samplerepo-things`)
-* the branch to pull is `add-gradle-support` (not `master`)
+2. fetch the `add-gradle-support` from the remote `upstream`.<br>
+   General instructions for fetching a new branch from a remote can be found in the panel below:
 
-{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2") }}
+   {{ embed_topic("../book/gitAndGithub/remoteBranches/text.md#pulling-a-new-branch", "Textbook " + icon_embedding + " Git&Github → **Remote branches** (extract)", "2", indent="1") }}
+
+
+
+
 </panel>
 <p/>
 </div>
@@ -418,7 +421,7 @@ Alternatively see the panel below on some general info on how to pull a branch f
 Read through this week's topics before starting the project.<br>
  **If you encounter technical problems** while doing the iP, follow the guidelines given below:
 
-{{ embed_topic("appendixD-help.md", "Admin " + icon_embedding + " Appendix D: Getting Help", "2") }}
+{{ embed_topic("appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: Getting Help", "2") }}
 </box>
 
 1. **Fork** [{{ url_course_org }}/{{ ip_repo_name }}]({{ url_course_org }}/{{ ip_repo_name }}), while noting the points below:<br>
@@ -427,7 +430,7 @@ Read through this week's topics before starting the project.<br>
 1. ==**Enable the issue tracker** of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
    <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`</md></box>
 1. **Clone the fork** onto your computer.
-1. **Set up the project in your IDE** as explained in [the README file]({{ url_course_org }}/{{ ip_repo_name }}/blob/master/README.md), unless you don't wish to use an IDE for the project.<br>
+1. **Set up the project in your IDE** as explained in [the README file]({{ url_course_org }}/{{ ip_repo_name }}/blob/master/README.md), if you plan to use an IDE for the project.
 
 </div>
 {#====================================================================================================================#}

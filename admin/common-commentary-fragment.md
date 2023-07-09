@@ -240,6 +240,11 @@ While the next few topics are optional, we recommend that you ==have a quick loo
 
 **Now, let us learn about JUnit, a tool used for automated testing.** JUnit is a third-party tool (not included in the JDK). <span tags="m--cs2103 m--cs2113">but your tP project is already configured to use JUnit, with the help of Gradle. That means the video tutorial given at the end of the section is mostly not applicable to you, unless you are interested to learn how to set up a non-Gradle project for JUnit.</span>
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("cppToJava-junit-intermediate") }}">
+
+While the JUnit concepts mentioned in the topic below are not strictly needed for the course projects, it is good to be aware of them so that you try some of them when applicable.
+</div>
 <!-- ==================================================================================================== -->
                                            Revision Control
 <!-- ==================================================================================================== -->
@@ -326,7 +331,7 @@ Let's learn how to merge a PR on GitHub; you need to do that in the tP later, an
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Branching") }}">
 
-Let's learn about a few more Git techniques, starting with branching. Although these techniques are not really needed for the iP, we force you to use them in the iP so that you have more time to practice them before they are really needed in the tP.
+Let's learn about a few more Git techniques, starting with branching. Although these techniques are not really needed for the iP, we reuire you to use them in the iP so that you have more time to practice them before they are really needed in the tP.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Merge Conflicts") }}">
