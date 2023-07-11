@@ -133,6 +133,7 @@
       {location: ["uml", "classDiagrams", "associationsAsAttributes", "what"]},
       {location: ["modeling", "modelingStructures", "classDiagramsIntermediate"]},
       {location: ["oop", "associations", "associationClasses"]},
+      {location: ["uml", "classDiagrams", "associationClasses", "what"]},
   {name: "Implementation"},
     {heading: "Java: JavaFX"},
       {location: ["cppToJava", "misc", "javaFX"]},

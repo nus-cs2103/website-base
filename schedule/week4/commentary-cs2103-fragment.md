@@ -11,7 +11,7 @@ Let's start getting ready for that today. First, let's go through a high-level e
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Class/Object Diagrams: Basics", reuse=false) %}
 
-Now that we have a high-level understanding of the role played by models, let's start learning some UML models, starting with UML _class diagrams_ (and _object diagrams_ which are like a distant cousin of class diagrams).
+Now that we have a high-level understanding of the role played by models, let's start learning some UML models, starting with UML _class diagrams_ (and _object diagrams_ which are like a close cousin of class diagrams).
 
 ==Note that we are learning to _interpret_ these models only==, not _draw_ them (that would come later), or _design_ them. Hence, we will be going through these topics fairly rapidly.
 
@@ -29,13 +29,19 @@ While we are on the topic of Java, also take note of this is a lesser-known Java
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Code reviews", reuse=false) %}
+{% call topic_preamble("Code Quality: Naming", reuse=false) %}
+
+Last week, we started learning about code quality. Let's continue on that, but learning a few other aspects of code quality.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("Static Analysis", reuse=false) %}
 
 Next up are two techniques that can be used to improve code quality. You need to learn them as you will be encountering both in your iP soon.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("RCS: Managing Pull Requests", reuse=false) %}
+{% call topic_preamble("RCS: Managing Pull Requests I", reuse=false) %}
 
 Being able to work with PRs is an essential skill. To get started on that, let's learn how to review PRs properly. Besides, you'll be doing some PR reviews in the iP this week.
 
