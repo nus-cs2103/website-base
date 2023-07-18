@@ -221,11 +221,11 @@
 <variable name="line_dotted"><hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted"></variable>
 <variable name="line_double"><hr style="border-top: 3px double #c5c5c5;"></variable>
 <variable name="pagebreak"><p style="page-break-after: always;">&nbsp;</p></variable>
-<span id="lecture_table_headers">
+<variable id="lecture_table_headers">
 Course                 | Venue    | Time
 ---------------------- | -------- | ----
-</span>
-<span id="tutorial_table_headers">
+</variable>
+<variable id="tutorial_table_headers">
 Course | Venue | Time | ~~%%Tutorial ID<br>in Canvas%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](../admin/instructors.html))
 -------|-------|------|------------------------------------------------------------|----------------------------------------|-------
-</span>
+</variable>
