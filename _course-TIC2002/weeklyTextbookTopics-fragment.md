@@ -145,7 +145,6 @@
     {heading: "Class/Object Diagrams: Basics", panopto: "03c5a0f1-9354-4d83-8229-acbf00b4b3dc"},
       {location: ["modeling", "modelingStructures", "ooStructures"]},
       {location: ["modeling", "modelingStructures", "classDiagramsBasic"]},
-      {location: ["uml", "classDiagrams", "associationsAsAttributes", "what"]},
       {location: ["modeling", "modelingStructures", "objectDiagrams"]},
       {location: ["uml", "miscellaneous", "objectVsClassDiagrams"]},
 {week: "7"},

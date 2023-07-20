@@ -130,7 +130,6 @@
     {heading: "Class Diagrams: Intermediate-Level", panopto: "9e6f5f1a-5596-498e-86f6-ac1b00e43a38", questions:"y"},
       {location: ["uml", "notes", "notes"]},
       {location: ["uml", "notes", "constraints"]},
-      {location: ["uml", "classDiagrams", "associationsAsAttributes", "what"]},
       {location: ["modeling", "modelingStructures", "classDiagramsIntermediate"]},
       {location: ["oop", "associations", "associationClasses"]},
       {location: ["uml", "classDiagrams", "associationClasses", "what"]},

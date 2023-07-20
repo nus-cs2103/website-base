@@ -13,7 +13,7 @@ layout: textbook-layout.md
 Here are some exercises that combine multiple topics.
 
 {% for exercise in config.combinedExercises %}
-  <include src="../../book/combined/exercises/{{ exercise }}.md" />
+<include src="../../book/combined/exercises/{{ exercise }}.md" />
 {% endfor %}
 
 </div>

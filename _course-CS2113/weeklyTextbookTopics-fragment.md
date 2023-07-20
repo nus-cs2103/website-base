@@ -287,7 +287,6 @@
       {location: ["modeling", "modelingStructures", "classDiagramsBasic"]},
       {location: ["modeling", "modelingStructures", "objectDiagrams"]},
       {location: ["uml", "miscellaneous", "objectVsClassDiagrams"]},
-      {location: ["uml", "classDiagrams", "associationsAsAttributes", "what"]},
       {location: ["uml", "notes", "notes"]},
       {subheading: "Association Classes"},
         {location: ["oop", "associations", "associationClasses"]},
