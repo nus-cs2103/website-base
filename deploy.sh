@@ -1,3 +1,3 @@
 set -x
 markbind build
-markbind deploy
+markbind -n deploy

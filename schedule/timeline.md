@@ -17,7 +17,7 @@ pageNav: 3
 {{ embed_topic("../admin/weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → Deadline for weekly tasks", "1") }}
 </div>
 <div tags="m--tic2002">
-{{ embed_topic("../admin/index-tic2002-fragment.md#deadlines-info", "Admin " + icon_embedding + " Policies → **Deadlines**", "dummy") }}
+{{ embed_topic("../admin/index-tic2002-fragment.md#deadlines-info", "Admin " + icon_embedding + " Policies → **Deadlines, Plagiarism**", "dummy") }}
 </div>
 
 <p/>
