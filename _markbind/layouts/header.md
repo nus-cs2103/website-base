@@ -18,7 +18,7 @@
   </dropdown>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
   <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
-  <li tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002"><a href="{{ url_dashboards }}" target="_blank" class="nav-link"><md>**Dashboards**</md></a></li>
+  <li tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002"><a href="{{ url_dashboards }}" target="_blank" class="nav-link" highlight-on="none"><md>**Dashboards**</md></a></li>
   <dropdown tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002" header="**Project Links**" class="nav-link">
     <md>**&nbsp;Individual Project (iP):**</md>
     <li><a href="{{baseUrl}}/admin/ip-overview.html" class="dropdown-item"><md>{{ icon_project }} Individual Project Info</md></a></li>
