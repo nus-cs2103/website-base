@@ -54,7 +54,7 @@
 {% else %}
 * **Has the form `TUTORIAL_ID-TEAM_NUMBER`** e.g, `{{ course }}-W14-2` means you are in tutorial `{{ course }}-W14` (i.e., in course `{{ course }}`, on `Wednesday`, at `1400-1500`), team `2`.
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 {{ embed_topic("tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial IDs", "3") }}
 </div>

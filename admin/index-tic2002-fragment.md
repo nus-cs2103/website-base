@@ -67,7 +67,7 @@ e.g., **Instead of traditional instructor-led tutorials**, the course provides q
 <div class="indented" id="lectures-info">
 
 %%:far-clock:%% Tuesdays 6.30-9.30pm<br>
-%%:fas-map-marker-alt:%% COM1-0207<br>
+%%:fas-map-marker-alt:%% COM1-0210<br>
 
 **A TIC2002 lecture + tutorial time is divided into three parts**, as follows:
 

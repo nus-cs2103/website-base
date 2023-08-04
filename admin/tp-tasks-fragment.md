@@ -144,7 +144,7 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 {{ icon_important_big_red }} **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. We prefer not to waste admin resources processing requests for partial credit for work that did not follow the instructions precisely, unless the progress was not detected due to a bug in the script.
 </box>
 
-<box type="tip" icon=":fas-route:" icon-size="3x" seamless>
+<box type="tip" icon=":fas-chart-gantt:" icon-size="3x" seamless>
 
 ****Iterative means no need for detailed plans, right?****{.text-success}
 
