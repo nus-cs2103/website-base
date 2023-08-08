@@ -398,8 +398,8 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 
 * **Read the following two sections**, if you haven't done so already:
 
-{{ embed_topic("ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3", indent="1") }}
-{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
+{{ embed_topic(baseUrl+"/admin/ip-overview.md#main", "Admin " + icon_embedding + " **iP - Overview**", "3", indent="1") }}
+{{ embed_topic(baseUrl+"/admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_prerequisites">Set up prerequisites</span>
@@ -407,7 +407,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 
 * **Ensure you have followed the <span class="ps-1 pe-1" style="color:purple; border: 0.5px solid lightgrey">:fas-hard-hat: Preparation</span> sections of the following course tools:**
 
-{{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
+{{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="1") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="1") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="1") }}
@@ -421,7 +421,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 Read through this week's topics before starting the project.<br>
  **If you encounter technical problems** while doing the iP, follow the guidelines given below:
 
-{{ embed_topic("appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: Getting Help", "2") }}
+{{ embed_topic(baseUrl+"/admin/appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: Getting Help", "2") }}
 </box>
 
 1. **Fork** [{{ url_course_org }}/{{ ip_repo_name }}]({{ url_course_org }}/{{ ip_repo_name }}), while noting the points below:<br>
@@ -739,7 +739,7 @@ This activity is worth `2x2=4` participation points.
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
 1. **Double-check to confirm your iP meets the criteria for for full marks**:
-  {{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
+  {{ embed_topic(baseUrl+"/admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 2. **Create a new jar file**
    * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20Intellij%20IDEA)).{% else %}in one of these ways:
      * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).

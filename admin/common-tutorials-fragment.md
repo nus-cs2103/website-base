@@ -5,7 +5,7 @@
 
 * Form teams, under the guidance of the tutor. See the panel below for _team forming constrains_ and other related info.<br>
 
-{{ embed_topic("tp-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "2", indent="2") }}
+{{ embed_topic(baseUrl+"/admin/tp-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "2", indent="2") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="register-the-team">

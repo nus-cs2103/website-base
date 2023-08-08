@@ -46,7 +46,7 @@
 {% set popup_url = "" %}
 {% set status = 'minimized' %}
 {% if '#main' in source or '#' not in source %}
-  {% set popup_url %}popup-url="{{ source | replace(".md", ".html") }}"{% endset %}
+  {% set popup_url %}popup-url="{{ baseUrl }}/{{ source | replace(".md", ".html") | replace("#main", "") }}"{% endset %}
   {% set status = 'collapsed' %}
 {% endif %}
 <panel  type="{{ panel_type }}" {{ popup_url }} {{ status }} >
@@ -107,7 +107,7 @@
 {%  if indent != "0" %}<div class="indented-level{{ indent }}">{% endif %}
 {% set popup_url = "" %}
 {% if '#main' in source or '#' not in source %}
-{% set popup_url %}popup-url="{{ source | replace(".md", ".html") }}"{% endset %}
+{% set popup_url %}popup-url="{{ source | replace(".md", ".html") | replace("#main", "") }}"{% endset %}
   {% if not status %}{% set status = 'collapsed'%}{% endif %}
 {% endif %}
 {% if not status %}{% set status = 'minimized'%}{% endif %}

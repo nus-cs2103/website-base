@@ -53,7 +53,7 @@ The promptness of a reply is even more important when the email is requesting yo
 
 <span class="flat">%%Related: [[Admin: Appendix D: Getting Help](#admin-appendixD-help-anchor)]%%</span>
 
-{{ embed_topic("appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + course_pair, "3") }}
+{{ embed_topic(baseUrl+"/admin/appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + course_pair, "3") }}
 
 </div>
 

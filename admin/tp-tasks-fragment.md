@@ -349,8 +349,8 @@ As we are still at the early stages of identifying a problem to solve, do not th
 <include src="../book/about/usage.md#tip-about-popup-url" />
 </box>
 
-{{ embed_topic("tp-expectations.md#main", "Admin " + icon_embedding + " **tP: Expectations**", "3", indent="2") }}
-{{ embed_topic("tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3", indent="2") }}
+{{ embed_topic(baseUrl+"/admin/tp-expectations.md#main", "Admin " + icon_embedding + " **tP: Expectations**", "3", indent="2") }}
+{{ embed_topic(baseUrl+"/admin/tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3", indent="2") }}
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3", indent="2") }}
 
 <div class="indented">

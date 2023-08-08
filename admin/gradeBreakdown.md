@@ -23,13 +23,13 @@ skinparam backgroundcolor transparent
 @endwbs
 </puml>
 
-{{ embed_topic("participation.md#main", "Admin " + icon_embedding + " Participation Marks", "3") }}
+{{ embed_topic(baseUrl+"/admin/participation.md#main", "Admin " + icon_embedding + " Participation Marks", "3") }}
 <p/>
-{{ embed_topic("ip-grading.md#main", "Admin " + icon_embedding + " Individual Project (iP) Grading", "3") }}
+{{ embed_topic(baseUrl+"/admin/ip-grading.md#main", "Admin " + icon_embedding + " Individual Project (iP) Grading", "3") }}
 <p/>
-{{ embed_topic("tp-grading.md#main", "Admin " + icon_embedding + " Team Project (tP) Grading", "3") }}
+{{ embed_topic(baseUrl+"/admin/tp-grading.md#main", "Admin " + icon_embedding + " Team Project (tP) Grading", "3") }}
 <p/>
-{{ embed_topic("exams.md#main", "Admin " + icon_embedding + " Exams", "3") if course not in ["TIC4001", "TIC4002"] else "" }}
+{{ embed_topic(baseUrl+"/admin/exams.md#main", "Admin " + icon_embedding + " Exams", "3") if course not in ["TIC4001", "TIC4002"] else "" }}
 
 </div>
 

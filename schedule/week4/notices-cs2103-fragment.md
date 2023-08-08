@@ -10,5 +10,5 @@ Do the following during the meeting:
 
 On a separate note, our guidelines on dealing with technical problems:
 
-{{ embed_topic("../../admin/appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="0") }}
+{{ embed_topic(baseUrl+"/admin//appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: Getting Help", "4", indent="0") }}
 </box>

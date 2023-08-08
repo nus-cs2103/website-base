@@ -28,7 +28,7 @@ pageNav: 4
 
 # :fas-route: ++Git Learning Trail++{.text-success}
 
-<p class="lead"><md>This learning trail for those who are new to Git and would like to learn it in advance to prepare for the course.<br>
+<p class="lead"><md>This learning trail is for those who are new to Git and would like to learn it in advance to prepare for the course.<br>
 These topics are covered during the [regular course schedule](../schedule/timeline.html) and in the [course textbook](../se-book-adapted/index.html) as well. So, <mark>doing this in advance is optional</mark>, but doing so can reduce your workload during the regular semester.</md></p>
 
 <box>

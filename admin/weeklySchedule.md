@@ -45,7 +45,7 @@
   * get an introduction to the current week's topics
   * submit the in-lecture quiz/activities (if any)
 
-{{ embed_topic("lectures.md#main", "Admin " + icon_embedding + " Lectures", "3", indent=2) }}
+{{ embed_topic(baseUrl+"/admin/lectures.md#main", "Admin " + icon_embedding + " Lectures", "3", indent=2) }}
 
 <p/>
 
@@ -76,7 +76,7 @@
   * demonstrate evidence of your learning weekly topics to the tutor
   * learn from peer demos of showing evidence of their own learning
 
-{{ embed_topic("tutorials.md#main", "Admin " + icon_embedding + " Tutorials", "2", indent=2) }}
+{{ embed_topic(baseUrl+"/admin/tutorials.md#main", "Admin " + icon_embedding + " Tutorials", "2", indent=2) }}
 <p/>
 
 {{ icon_calendar }} **[End of tutorial - Start of lecture]**<br>

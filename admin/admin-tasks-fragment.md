@@ -14,7 +14,7 @@
 
 * **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz`** (on Canvas) to test your knowledge of those topics. Ideally, finish the quiz before the first lecture, latest by the given deadline. The quiz is counted for participation.
 
-{{ embed_topic("participation.md#main", "Admin " + icon_embedding + " **Participation**", "2", indent="2") }}
+{{ embed_topic(baseUrl+"/admin/participation.md#main", "Admin " + icon_embedding + " **Participation**", "2", indent="2") }}
 
 </div>
 {#====================================================================================================================#}
@@ -28,7 +28,7 @@
 The tools in the following panels are the same as what you used in TIC4001.
 </box>
 
-{{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
+{{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="2") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - Git**", "2", indent="2") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="2") }}
@@ -59,17 +59,17 @@ The tools in the following panels differ slightly from TIC4001.
 The info in the following panels are as the same as TIC4001.
 </box>
 
-{{ embed_topic("courseExpectations.md#main", "Admin " + icon_embedding + " **Course expectations and ==topic levels==**", "1", indent="2", type="danger") }}
+{{ embed_topic(baseUrl+"/admin/courseExpectations.md#main", "Admin " + icon_embedding + " **Course expectations and ==topic levels==**", "1", indent="2", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="2", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="2", type="info") }}
 {% if not (tic4001 or tic4002) %}
-{{ embed_topic("weeklySchedule.md#main", "Admin " + icon_embedding + " **Weekly schedule**", "2", indent="2", type="warning") }}
+{{ embed_topic(baseUrl+"/admin/weeklySchedule.md#main", "Admin " + icon_embedding + " **Weekly schedule**", "2", indent="2", type="warning") }}
 {% endif %}
 <box type="warning" tags="m--tic4002" seamless>
 
 The info in the following panels differs from TIC4001.
 </box>
-{{ embed_topic("courseOverview.md#main", "Admin " + icon_embedding + " **Course overview**", "4", indent="2", type="success") }}
+{{ embed_topic(baseUrl+"/admin/courseOverview.md#main", "Admin " + icon_embedding + " **Course overview**", "4", indent="2", type="success") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_first_lecture">Attend the first lecture</span>
@@ -77,7 +77,15 @@ The info in the following panels differs from TIC4001.
 
 * Attend the first lecture on {{ get_date(date_first_lecture, time='') }}(==**compulsory**==).
 
-{{ embed_topic("lectures.md#main", "Admin " + icon_embedding + " **Lectures**", "1", indent="2") }}
+{{ embed_topic(baseUrl+"/admin/lectures.md#main", "Admin " + icon_embedding + " **Lectures**", "1", indent="2") }}
+
+</div>
+{#====================================================================================================================#}
+<span id="heading_follow_the_git_learning_trail">[Optional] Follow the Git learning trail</span>
+<div id="desc_follow_the_git_learning_trail">
+
+* If you have time to spare while waiting for the semester to start, and would like to get a headstart on learning Git and GitHub (used a lot in this course), you are welcome to follow the [Git Learning Trail]({{ baseUrl }}/git-trail.html).<br>
+  Doing so is totally optional, as the same content will be covered during the subsequent weeks as well.
 
 </div>
 {#====================================================================================================================#}
