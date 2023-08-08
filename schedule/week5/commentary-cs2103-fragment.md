@@ -4,7 +4,7 @@
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Requirements: Intro", reuse=false) %}
 
-As you will be dealing with requirements aspects of the tP soon, it's a good time to learn a bit about techniques and tools used for managing requirements. Let's start with a higher-level introduction first.
+As you will be dealing with the _requirements_ aspects of the tP soon, this is a good time to learn a bit about tools and techniques used for managing requirements. Let's start with a higher-level introduction first.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
@@ -19,7 +19,7 @@ We've already started learning ways to improve the code quality e.g., following 
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Code Quality", reuse=false) %}
 
-Next, we switch our focus to the aspect of code quality, and learn a few more guidelines you can apply to improve the quality of your code.
+Next, we switch our focus to the topic of _code quality_, and learn a few more guidelines you can apply to improve the quality of your code.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

@@ -46,7 +46,7 @@
 {% set popup_url = "" %}
 {% set status = 'minimized' %}
 {% if '#main' in source or '#' not in source %}
-  {% set popup_url %}popup-url="{{ baseUrl }}/{{ source | replace(".md", ".html") | replace("#main", "") }}"{% endset %}
+  {% set popup_url %}popup-url="{{ source | replace(".md", ".html") | replace("#main", "") }}"{% endset %}
   {% set status = 'collapsed' %}
 {% endif %}
 <panel  type="{{ panel_type }}" {{ popup_url }} {{ status }} >
@@ -60,7 +60,7 @@
 {% for topic in topics %}
 {% if topic.id == id_of_topic_to_show %}
 {% set panel_title =  topic.title + ((" [" + div_title + "]") if div_title != "") %}
-{{ show_admin_section_to_read(panel_title, topic.priority, "../../admin/" + topic.id + ".md#" + div_to_show, is_flat) }}
+{{ show_admin_section_to_read(panel_title, topic.priority, baseUrl + "/admin/" + topic.id + ".md#" + div_to_show, is_flat) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
@@ -69,7 +69,7 @@
 {% macro show_admin_faq(faqs, id_of_faq_to_show, is_flat=false) %}
 {% for faq in faqs %}
 {% if faq.id == id_of_faq_to_show %}
-{{ show_admin_section_to_read("Apdx C (FAQs) → " + faq.title, faq.priority, "../../admin/appendixC-faq.md/#" + faq.id, is_flat ) }}
+{{ show_admin_section_to_read("Apdx C (FAQs) → " + faq.title, faq.priority, baseUrl + "/admin/appendixC-faq.md/#" + faq.id, is_flat ) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
@@ -78,7 +78,7 @@
 {% macro show_admin_policy(policies, id_of_policy_to_show, is_flat=false) %}
 {% for policy in policies %}
 {% if policy.id == id_of_policy_to_show %}
-{{ show_admin_section_to_read("Apdx B (Policies) → " + policy.title, policy.priority, "../../admin/appendixB-policies.md/#" + policy.id, is_flat ) }}
+{{ show_admin_section_to_read("Apdx B (Policies) → " + policy.title, policy.priority, baseUrl + "/admin/appendixB-policies.md/#" + policy.id, is_flat ) }}
 {% endif %}
 {% endfor %}
 {% endmacro %}
