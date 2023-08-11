@@ -69,7 +69,11 @@ e.g., **Instead of traditional instructor-led tutorials**, the course provides q
 %%:far-clock:%% Tuesdays 6.30-9.30pm<br>
 %%:fas-map-marker-alt:%% COM1-0210<br>
 
-**A TIC2002 lecture + tutorial time is divided into three parts**, as follows:
+**==The first lecture will be in F2F mode==, and will start at 7pm.**
+
+**Subsequent lecture + tutorial time is divided into three parts, as given below and will be in hybrid mode.**<br>
+You can continue to attend them using F2F mode but those who show good progress in weekly tasks will have the option to join live via Zoom,
+ or watch the recording later.
 
 * **[6.30-7.00pm] Pre-lecture consultations:**
   * You can use this time to get prof's help if you encountered problems while doing the previous week's tasks.
@@ -319,7 +323,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 # Exam
 <div class="indented">
 
-<include src="exams-f2f.md" />
+<include src="exam-pen-and-paper.md" />
 
 </div>
 
