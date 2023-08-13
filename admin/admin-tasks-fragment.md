@@ -84,7 +84,7 @@ The info in the following panels differs from TIC4001.
 <span id="heading_follow_the_git_learning_trail">[Optional] Follow the Git learning trail</span>
 <div id="desc_follow_the_git_learning_trail">
 
-* If you have time to spare while waiting for the semester to start, and would like to get a headstart on learning Git and GitHub (used a lot in this course), you are welcome to follow the [Git Learning Trail]({{ baseUrl }}/git-trail.html).<br>
+* If you have time to spare while waiting for the semester to start, and would like to get a headstart on learning Git and GitHub (used a lot in this course), you are welcome to follow the [Git Learning Trail]({{ baseUrl }}/git-trail/index.html).<br>
   Doing so is totally optional, as the same content will be covered during the subsequent weeks as well.
 
 </div>
