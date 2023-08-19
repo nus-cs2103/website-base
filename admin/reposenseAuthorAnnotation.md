@@ -69,7 +69,7 @@ The `//@@author` tag should indicates the beginning of the code you wrote. The c
 * **If you wrote a significant amount of code that was not used in the final product**,
   * Create a folder called `{project root}/unused`
   * Move unused files (or copies of files containing unused code) to that folder
-  * use `//@@author {yourGithubUsername}-unused` to mark unused code in those files (note the suffix `unused`)
+  * use `//@@author {yourGitHubUsername}-unused` to mark unused code in those files (note the suffix `unused`)
   e.g.
   ```
   //@@author johndoe-unused
@@ -78,7 +78,7 @@ The `//@@author` tag should indicates the beginning of the code you wrote. The c
   ```
   Please put a comment in the code to explain why it was not used.
 
-* **If you reused code from elsewhere,** mark such code as `//@@author {yourGithubUsername}-reused` (note the suffix `reused`)
+* **If you reused code from elsewhere,** mark such code as `//@@author {yourGitHubUsername}-reused` (note the suffix `reused`)
   e.g.
   ```
   //@@author johndoe-reused

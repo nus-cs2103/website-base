@@ -3,7 +3,7 @@
 
 
 {% call show_admin_summary() %}
-1. Install Intellij IDEA {{ timing_badge("before the lecture") }}
+1. Install IntelliJ IDEA {{ timing_badge("before the lecture") }}
 1. Submit weekly exercises
 
 {{ icon_project }} **Project:**
@@ -12,11 +12,11 @@
 {% endcall %}
 
 
-#### {{ thumb(1) }} Install Intellij IDEA {{ timing_badge("before the lecture", "secondary") }}
+#### {{ thumb(1) }} Install IntelliJ IDEA {{ timing_badge("before the lecture", "secondary") }}
 
 * See the panel below:
 
-{{ embed_topic("../../admin/index-tic2002-fragment.md#intellij-info", "Admin " + icon_embedding + " Tools → Intellij IDEA", "week2Admin-intellij", "2") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#intellij-info", "Admin " + icon_embedding + " Tools → IntelliJ IDEA", "week2Admin-intellij", "2") }}
 
 
 #### {{ thumb(2) }} Submit weekly exercises

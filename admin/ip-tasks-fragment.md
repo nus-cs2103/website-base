@@ -342,7 +342,7 @@ That said, it is also preferable to use one paradigm as the primary approach and
 <div tags="m--cs2103 m--tic2002">
 <p/>
 
-* {{ icon_important_big_red }} Do the following increments in the given order because after doing `A-Gradle` you can use the Gradle option (rather than the Intellij option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.
+* {{ icon_important_big_red }} Do the following increments in the given order because after doing `A-Gradle` you can use the Gradle option (rather than the IntelliJ option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.
 
 <div class="indented-level2" id="pulling-branch-from-upstream">
 <panel type="seamless" >
@@ -410,7 +410,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 {{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="1") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="1") }}
-{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **Intellij IDEA**", "2", indent="1") }}
+{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **IntelliJ IDEA**", "2", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project in your computer</span>
@@ -741,9 +741,9 @@ This activity is worth `2x2=4` participation points.
 1. **Double-check to confirm your iP meets the criteria for for full marks**:
   {{ embed_topic(baseUrl+"/admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 2. **Create a new jar file**
-   * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20Intellij%20IDEA)).{% else %}in one of these ways:
+   * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20IntelliJ%20IDEA)).{% else %}in one of these ways:
      * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
-     * Else: you can use Intellij.{% endif %}
+     * Else: you can use IntelliJ.{% endif %}
    * The JAR file should be ==cross-platform and should work in a computer that has Java 11==.
 3. **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
    1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.

@@ -334,7 +334,7 @@ This is a non-exhaustive list; you may define additional roles.
 * _Deliverables and deadlines_: Ensure project deliverables are done on time and in the right format.
 * _Integration_: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.
 * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
-* _[Tool ABC] expert_: %%e.g. Intellij expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
+* _[Tool ABC] expert_: %%e.g. IntelliJ expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
 
 <div tags="m--cs2103 m--tic4002">
 

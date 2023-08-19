@@ -2,7 +2,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/likeabowx.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/likeabowx.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -21,14 +21,14 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/ckcherry23.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/ckcherry23.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
 ### 2. Charisma
 
 **Charisma Kausar**<br>
-%%:fas-envelope:%% charisma.kausar@gmail.com<br>
+%%:fas-envelope:%% charisma.kausar@u.nus.edu<br>
 %%:fab-github:%% [@ckcherry23](https://github.com/ckcherry23)
     </div>
   </div>
@@ -40,7 +40,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/clarence-chew.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/clarence-chew.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -59,7 +59,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/conradlew.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/conradlew.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -78,7 +78,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/takufunkai.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/takufunkai.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -97,7 +97,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/florentianayuwono.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/florentianayuwono.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -116,7 +116,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/guanzhou03.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/guanzhou03.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -135,7 +135,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/jbkim1999.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/jbkim1999.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -154,7 +154,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/jamesyeap.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/jamesyeap.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -173,7 +173,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/javiier-pzk.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/javiier-pzk.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -192,7 +192,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/jetlfj.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/jetlfj.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -211,7 +211,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/beebeeoii.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/beebeeoii.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -230,7 +230,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/seetohjinwei.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/seetohjinwei.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -249,7 +249,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/jnjy.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/jnjy.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -268,7 +268,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/kevin9foong.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/kevin9foong.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -287,7 +287,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/euph00.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/euph00.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -306,7 +306,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/marcuschj.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/marcuschj.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -325,7 +325,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/melissaharijanto.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/melissaharijanto.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -344,7 +344,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/angnobel.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/angnobel.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -363,7 +363,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/punpun1643.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/punpun1643.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -382,7 +382,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/parth-io.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/parth-io.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -401,7 +401,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/py0000.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/py0000.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -420,7 +420,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/extrashotlatte.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/extrashotlatte.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -439,7 +439,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/arpspoofing.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/arpspoofing.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -458,7 +458,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/riccqi.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/riccqi.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -477,7 +477,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/rui-han-crh.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/rui-han-crh.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -496,7 +496,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/pangrwa.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/pangrwa.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -515,7 +515,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/snss231.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/snss231.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -534,7 +534,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/sikai00.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/sikai00.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -553,7 +553,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/thikhinab.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/thikhinab.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -572,7 +572,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/vietanh1010.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/vietanh1010.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -591,7 +591,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/wz2k.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/wz2k.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -610,7 +610,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/gohyongjing.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/gohyongjing.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -629,7 +629,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/chia-yh.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/chia-yh.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -648,7 +648,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/tyw2811.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/tyw2811.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -667,7 +667,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/kyueran.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/kyueran.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
@@ -686,7 +686,7 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-nus-cs2103-ay2324s1.github.io/tutor-photos/zrei.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/zrei.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 

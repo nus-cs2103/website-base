@@ -2,8 +2,8 @@
 
 #### {{ thumb(1) }} Demonstrate an assertion failure
 
-* Demonstrate an assertion failure using Intellij.
-1. Java assertions are not enabled by default. [Check if you have enabled assertions in Intellij settings](https://se-education.org/guides/tutorials/intellijUsefulSettings.html).
+* Demonstrate an assertion failure using IntelliJ.
+1. Java assertions are not enabled by default. [Check if you have enabled assertions in IntelliJ settings](https://se-education.org/guides/tutorials/intellijUsefulSettings.html).
 1. Modify the code of your tP to deliberately cause an assertion failure<br>
    e.g., add `assert false;`{.java} somewhere in your code.
 1. Run the code so that the application crashes with an assertion failure.

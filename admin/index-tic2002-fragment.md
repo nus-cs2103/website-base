@@ -266,11 +266,11 @@ We'll be using Coursemology for coding exercises (compulsory).
 </div>
 <div id="intellij-info">
 
-### Intellij IDEA
+### IntelliJ IDEA
 
-We'll be using Intellij IDE for programming. While using Intellij is not compulsory, there will be no help/instructions given for other IDEs.
+We'll be using IntelliJ IDEA for programming. While using IntelliJ is not compulsory, there will be no help/instructions given for other IDEs.
 
-{{ icon_info }} Install [Intellij](https://www.jetbrains.com/idea/) on your computer. You may use the Community Edition (free) or the Ultimate Edition (free for students).
+{{ icon_info }} Install [IntelliJ](https://www.jetbrains.com/idea/) on your computer. You may use the Community Edition (free) or the Ultimate Edition (free for students).
 </div>
 </div>
 

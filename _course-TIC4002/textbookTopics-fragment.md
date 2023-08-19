@@ -1624,7 +1624,7 @@
   },
   intellij : {
     name: "intellij",
-    heading: "Intellij IDEA",
+    heading: "IntelliJ IDEA",
     priority: "0:4",
     level_one_topics: [
       {

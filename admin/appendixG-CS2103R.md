@@ -14,7 +14,7 @@
   * The enhancement should be accompanied by a report explaining its rationale, implementation, pros and cons.
   * The proposed enhancement is unlikely (although not impossible) to be incorporated to the actual AB3, as this is more of an opportunity to showcase your SE skills rather than a way to perfect AB3 (using a 'perfect' code base for the tP may not fit the learning goals of this course after all).
 * **Option B**: A deliverable that would results in a non-trivial quality-of-life improvement to CS2103/T students and/or instructors even if it doesn't directly involve AB3, provided it also showcases your SE skills beyond what is normally covered in the course. For example, some kind of automation that reduces the manual work for students or instructors.
-* **Option C**: An exploration of how AI tools (e.g., ChatGPT, Github Copilot, Codex, etc.) can be used in the iP and the tP by students and instructors. For example, how students can use a tool to save time in doing hte project. Even better if you also reflect on how the use of the tool affects various aspects (learning outcomes, fairness of grading, plagiarism concerns etc.) of the course.
+* **Option C**: An exploration of how AI tools (e.g., ChatGPT, GitHub Copilot, Codex, etc.) can be used in the iP and the tP by students and instructors. For example, how students can use a tool to save time in doing hte project. Even better if you also reflect on how the use of the tool affects various aspects (learning outcomes, fairness of grading, plagiarism concerns etc.) of the course.
 
 ****Workload**** is expected to be about 50% of your tP effort.
 

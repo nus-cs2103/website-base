@@ -124,9 +124,9 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="ide">
 
-## Tool: Intellij IDE
+## Tool: IntelliJ IDE
 
-You are recommended to use [Intellij IDEA](https://www.jetbrains.com/idea/) for course-related programming work. While the use of Intellij is not compulsory, note that course materials are optimized for Intellij.
+You are recommended to use [IntelliJ IDEA](https://www.jetbrains.com/idea/) for course-related programming work. While the use of IntelliJ is not compulsory, note that course materials are optimized for IntelliJ.
 
 <box type="warning" seamless>
 
@@ -136,7 +136,7 @@ Use other IDEs at your own risk. If you run into problems while using them, we w
 <box>
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
-* Install the IDE in your computer. You may use the Intellij community edition (free) or the ultimate edition (free for students).
+* Install the IDE in your computer. You may use the IntelliJ community edition (free) or the ultimate edition (free for students).
 * If you have an older version of the IDE, we recommend updating to the latest version.
 </box>
 

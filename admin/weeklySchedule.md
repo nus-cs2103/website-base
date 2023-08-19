@@ -62,7 +62,7 @@
 
 <span id="before-attempting-tasks">
 
-{{ icon_important_big_red }} **Before attempting weekly project tasks,** go through the weekly topics (and do the weekly programming exercises/activities, if any) as the knowledge from those topics may be needed to complete the project tasks.
+{{ icon_important_big_red }} **Before attempting weekly project tasks,** go through the weekly topics{% if not cs2103 %} (and do the weekly programming exercises/activities, if any){% endif %} as the knowledge from those topics may be needed to complete the project tasks.
 </span>
 
 </box>

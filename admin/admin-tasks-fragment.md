@@ -92,7 +92,8 @@ The info in the following panels differs from TIC4001.
 <span id="heading_submit_first_post_lecture_quiz">Submit post-lecture quiz</span>
 <div id="desc_submit_first_post_lecture_quiz">
 
-* **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on Canvas) to test your knowledge of those topics.
+* **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on Canvas) to test your knowledge of those topics.<br>
+  Weekly quizzes are counted for [participation]({{ baseUrl }}/admin/participation.html).
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_first_coding_exercises">Submit coding exercises via Coursemology</span>

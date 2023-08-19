@@ -1039,8 +1039,8 @@ In addition,
 
 * **Improve the defensiveness of the code**: We recommend you add assertions, exceptions, and logging to your code.<br>
   {{ icon_important_big_red }} Remember to enable assertions in your,
-  * [IDEA run configurations](https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea) -- if your Intellij is set not to use Gradle when running the project)
-  * [the `build.gradle` file](https://stackoverflow.com/questions/48396274/how-to-enable-assertions-in-the-gradle-run-task) -- if you use Gradle to run the project, or if your Intellij is using Gradle to run the project
+  * [IDEA run configurations](https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea) -- if your IntelliJ is set not to use Gradle when running the project)
+  * [the `build.gradle` file](https://stackoverflow.com/questions/48396274/how-to-enable-assertions-in-the-gradle-run-task) -- if you use Gradle to run the project, or if your IntelliJ is using Gradle to run the project
 </div>
 {#====================================================================================================================#}
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>

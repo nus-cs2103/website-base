@@ -41,7 +41,7 @@ That is, you either get full marks, or less than half the marks.
 ##### :fas-trophy: Project Management [`{{ marks_ip_pm }}` marks]{.text-info}
 
 * **Submitted _some_ deliverables** in at least 4 out of the {{ '5' if cs2103 else '6' }} iP weeks (i.e., week 2 - week {{ '6' if cs2103 else '7' }})
-* **Followed other requirements specified** (e.g., how to use Git/Github for each increment, do peer reviews) in at least 4 weeks
+* **Followed other requirements specified** (e.g., how to use Git/GitHub for each increment, do peer reviews) in at least 4 weeks
 </box>
 <box>
 
@@ -57,7 +57,7 @@ The product Website and the user guide:
 
 **Project Management [`{{ marks_ip_pm }}` marks]**: To get full marks, you should achieve,
 * Submit _some_ deliverables in at least 3 out of the 5 iP weeks (i.e., week 2 - week 6)
-* Follow other requirements specified (e.g., how to use Git/Github for each increment) in at least 4 weeks
+* Follow other requirements specified (e.g., how to use Git/GitHub for each increment) in at least 4 weeks
 
 **Documentation [`{{ marks_ip_documentation }}` marks]**: To get full marks, you should achieve the following.
 * The user guide: not hard to read, covers all features, no major formatting errors in the published view.
