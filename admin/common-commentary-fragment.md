@@ -331,7 +331,7 @@ Let's learn how to merge a PR on GitHub; you need to do that in the tP later, an
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Branching") }}">
 
-Let's learn about a few more Git techniques, starting with branching. Although these techniques are not really needed for the iP, we reuire you to use them in the iP so that you have more time to practice them before they are really needed in the tP.
+Let's learn about a few more Git techniques, starting with branching. Although these techniques are not really needed for the iP, we require you to use them in the iP so that you have more time to practice them before they are really needed in the tP.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Merge Conflicts") }}">
@@ -414,7 +414,15 @@ As you know, one of the objectives of the iP is to raise the quality of your cod
 <div id="{{ slugify("codeQuality-introduction-basic") }}">
 <div tags="m--cs2103">
 
-==Please watch the lecture video given below as it has some extra points not given in the text version.==</div>
+<box type="info" header="In-video quizzes" seamless>
+
+The <span class="badge rounded-pill bg-warning text-dark"><big>Q+</big></span> icon indicates that the video has an in-video quiz. Submitting the in-video quiz can earn you bonus [participation marks]({{ baseUrl }}/admin/participation.html).<br>
+
+In-video quizzes are in only a small number of lecture videos that are more important than the rest. They are a very light way to engage you with the video a bit more than just passively watching.
+</box>
+
+==Please watch the lecture video given below as it has some extra points not given in the text version.==
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Code Quality: Naming") }}">

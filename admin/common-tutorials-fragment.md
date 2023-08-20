@@ -5,7 +5,7 @@
 
 * Form teams, under the guidance of the tutor. See the panel below for _team forming constrains_ and other related info.<br>
 
-{{ embed_topic(baseUrl+"/admin/tp-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "2", indent="2") }}
+{{ embed_topic(baseUrl+"/admin/tp-teams.md#main", "Admin " + icon_embedding + " **Teams → Team Forming Constraints**", "2", indent="1") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="register-the-team">
@@ -24,13 +24,13 @@
 
 * If you haven't done so already, do the following tP task.
 
-{{ embed_topic("tp-tasks-fragment.md#desc_set_up_meeting_time", "Admin " + icon_embedding + " **tP → Set up a meeting time**", "2", indent="2") }}
+{{ embed_topic("tp-tasks-fragment.md#desc_set_up_meeting_time", "Admin " + icon_embedding + " **tP → Set up a meeting time**", "2", indent="1") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="exercise-coding-standard-violations">
 
 * Do the following exercise, if you have time.
-<div class="indented-level2">
+<div class="indented">
 
 <include src="..\book\codeQuality\followStandard\basic\q-listViolations.md" />
 </div>
