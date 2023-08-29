@@ -342,7 +342,7 @@ That said, it is also preferable to use one paradigm as the primary approach and
 <div tags="m--cs2103 m--tic2002">
 <p/>
 
-* {{ icon_important_big_red }} Do the following increments in the given order because after doing `A-Gradle` you can use the Gradle option (rather than the IntelliJ option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.
+* Do the following increments in the given order because after doing `A-Gradle` you can use the Gradle option (rather than the IntelliJ option) when doing `A-JUnit` and `A-JAR` as they are easier to do using Gradle.{ icon="glyphicon-exclamation-sign" i-class="text-danger" i-size="25px"}
 
 <div class="indented-level2" id="pulling-branch-from-upstream">
 <panel type="seamless" >

@@ -95,7 +95,8 @@ Penalties:
 * You are allowed to reuse code from external sources, subject to following conditions:
   * You clearly give credit to the original author/source.
   * You do not violate the license under which the work has been released. Please  **do not use 3rd-party images/audio** in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.
-* ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ url_forum }}). That way, the whole class get to see what libraries are being used by others.
+* ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ url_forum }}). That way, the whole class get to see what libraries are being used by others.<br>
+  Note that once a 3rd party library has been approved for one student/team, it can be used freely by others without asking for approval again.
 
 <div id="cite-reuse-immediately">
 <box type="important" seamless icon=":fas-exclamation:">
