@@ -372,7 +372,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 {#====================================================================================================================#}
 <div id="post_Level-10">
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 * Note that you no longer need to keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
 </div>
@@ -603,7 +603,7 @@ This task is worth `2x2=4` participation points.
 
 {{ '' if cs2113 else panopto('c001244c-01b5-4471-ab9d-ac1b0098110a') }}
 
-{{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=2) }}
+{{ embed_topic("../book/gitAndGithub/reviewPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Reviewing PRs**", "1", indent=1) }}
 
 * {{ step(1) }} **Note these additional guidelines**:
   * Read the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html). You are ==expected to follow all of them==.
@@ -619,7 +619,7 @@ This task is worth `2x2=4` participation points.
     * suggest alternatives
   * The review allocation is given in the panel below.
 
-<div class="indented-level4">
+<div class="indented-level2">
 
 <include src="common-tutorials-fragment.md#show-ip-peer-review-allocation-1" />
 </div>
@@ -628,7 +628,7 @@ This task is worth `2x2=4` participation points.
   * Comment on ==other code quality guidelines== (see the <span tags="m--cs2103">section _Naming_</span><span tags="m--cs2113 m--tic4001">sections on _Naming_ and _Readability_</span> in [this textbook chapter](../se-book-adapted/chapters/codeQuality.html)) you have learned so far. It's optional to comment on coding standard violations in this PR review.
   * The review allocation is given in the panel below.
 
-<div class="indented-level4">
+<div class="indented-level2">
 
 <include src="common-tutorials-fragment.md#show-ip-peer-review-allocation-2" />
 </div>
@@ -640,9 +640,17 @@ This task is worth `2x2=4` participation points.
 <span id="heading_learn_from_others">Learn from others (optional)</span>
 <div id="desc_learn_from_others">
 
-* **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu of this course website. Click on the <span class="badge bg-light text-dark">%%**:fas-code:**%%</span>&nbsp;icon corresponding to a student name to see the code written by that person. We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. 
+* **You can use the [iP Code Dashboard]({{ url_ip_dashboard }}) to view others' iP code**, using the `Links → iP Code Dashboard` item in the top navigation menu of this course website.We encourage you to read others’ code and learn from them. If you adopt solutions from others (also encouraged), please follow our reuse policy. <br>
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent=2) }}
+
+<box type="tip" seamless>
+
+Click on the <span class="badge bg-light text-dark">%%**:fas-code:**%%</span>&nbsp;icon corresponding to a student name to see the code written by that person.
+
+Similarly, click on the <span class="badge bg-light text-dark">%%**:fas-list:**%%</span>&nbsp;icon to see a list of tags (and commits) -- this way, you can find which increments have been done by a particular student.
+</box>
+
+{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent=1) }}
 
 </div>
 {#====================================================================================================================#}

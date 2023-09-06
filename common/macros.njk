@@ -87,7 +87,7 @@
 {% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show, is_flat=false) %}
 
 #### {{ thumb("+") }} Other info relevant to this week:
-<div class="indented-level2">
+<div class="indented-level1">
 {% for section in sections_to_show %}
 {% if section.topic_id %}
   {% set div_to_show = section.div if section.div else "main"  %}
