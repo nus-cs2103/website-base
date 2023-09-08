@@ -206,7 +206,7 @@ In general, you are **not allowed to involve outsiders** in your project excep
 
 <div id="policy-deadlineExtensions">
 
-Learning to honor deadlines is a learning outcome of this course. Therefore, **we do not normally extend course deadlines** to accommodate those who missed the deadline, unless there are some extraordinary circumstances.
+The ability to meet deadlines is a learning outcome of this course. Therefore, **we do not normally extend course deadlines** to accommodate those who missed the deadline, unless there are some extraordinary circumstances.
 
 {% if cs2103 %}However, weekly project deliverables without specific deadlines are flexible. You will not be penalized for missing them if you catch up within a few days.{% endif %}
 </div>

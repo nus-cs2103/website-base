@@ -154,9 +154,13 @@ The info in the following panels differs from TIC4001.
 * You should receive the submission link by Monday noon.<br>
   <include src="admin-tasks-fragment.md#teammates-link-recovery-tip" inline />
 
-{{ embed_topic("peerEvaluations.md#intro", "Admin " + icon_embedding + " Peer Evaluations → Introduction", "3", indent="2") }}
-{{ embed_topic("peerEvaluations.md#practicePeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Prelim Peer Evaluation", "1", indent="2", status="expanded") }}
-{{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Course Policies → Policy on Deadline Extensions**", "4", indent="2") }}
+<div class="indented-level1">
+
+<span class="text-danger">{{ icon_important_big_red }} The deadline for this task is strict</span>, unlike the deadline for other weekly project work.
+</div>
+{{ embed_topic("peerEvaluations.md#intro", "Admin " + icon_embedding + " Peer Evaluations → Introduction", "3", indent="1") }}
+{{ embed_topic("peerEvaluations.md#practicePeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Prelim Peer Evaluation", "1", indent="1", status="expanded") }}
+{{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Course Policies → Policy on Deadline Extensions**", "4", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_midterm_feedback_for_the_course">{% if not cs2113 %}[optional]{% endif %} Submit mid-term feedback for the course</span>

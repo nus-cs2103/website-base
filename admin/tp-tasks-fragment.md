@@ -353,6 +353,11 @@ As we are still at the early stages of identifying a problem to solve, do not th
 {{ embed_topic(baseUrl+"/admin/tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3", indent="2") }}
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3", indent="2") }}
 
+<box type="warning" seamless>
+
+**Pick the _morph_ option at your own risk**: As mentioned elsewhere, morph option (i.e., aiming to build an application that manages _anything other than contacts_) is the harder option, especially at the start of tP coding (morphing is an extensive change that needs to be done very early in the project, and quickly). Choose it only if your team has at least one strong programmer who is willing to invest extra effort to create a 'different' application.
+</box>
+
 <box type="tip" seamless>
 
 **Pick a CLI-friendly product domain**: Given `Recommendation-CLI-First` and `Constraint-Typing-Preferred` mentioned in the panels above, it makes sense to pick a product domain that is more suitable for CLI interactions i.e., a product that deals with easy-to-type textual data, needs a small number of data fields, and each data field is short. %%For example, a blog editor is an unsuitable product domain because it also deals with non-text data (e.g., images, videos) and some data fields are quite long (i.e., paragraphs of text). Similarly, keeping track of extensive employee records may be an unsuitable domain if there are many data fields per employee.%%
@@ -363,7 +368,8 @@ As we are still at the early stages of identifying a problem to solve, do not th
   * Details to submit:
     1. **Product name** (plain text only) %%e.g., ClientContactsPro%%
     1. **Target user** profile (plain text only) %%e.g., freelance event photographers%%
-    1. **Value proposition** (plain text paragraph, <span class="text-danger">no more than 50 words</span>) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%
+    1. **Value proposition** i.e., what problem does the product solve? (plain text paragraph, <span class="text-danger">no more than 50 words</span>) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%<br>
+       This is ==not a list of features== -- you should not think about exact features yet.
     1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
   * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 or tic4001 %}<br>
   * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.
@@ -390,9 +396,12 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 
 * **Learn** [**the _recipe for brainstorming user stories_** in the textbook → Specifying Requirements → UserStories →  Usage]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html#a-recipe-for-brainstorming-user-stories).<br>
-  Also learn about <trigger trigger="click" for="modal:v10-brainstorming">brainstorming</trigger> and <trigger trigger="click" for="modal:v10-userstories">user stories</trigger>.
+  Also learn about <trigger trigger="click" for="modal:v10-brainstorming">brainstorming</trigger> and <trigger trigger="click" for="modal:v10-userstories">user stories</trigger>.<br>
+  We recommend you view the following video, as it has some additional commentary on the recipe to be used:
 
-* **Follow the steps in the recipe mentioned above to arrive at user stories for the the product**, with your team members.  <span tags="m--cs2103 m--tic4002">If you didn't attend the lecture, please watch the lecture recording to learn more about this step.<br>
+{{ panopto("c0612db9-3cf1-4bab-a066-b07501387c0f", desc="Additional commentary on the recipe to be used") }}
+
+* **Follow the steps in the recipe mentioned above to arrive at user stories for the product**, with your team members.  <span tags="m--cs2103 m--tic4002">If you didn't attend the lecture, please watch the lecture recording to learn more about this step.<br>
   <span class="text-danger">Not following the recipe mentioned above</span> could result in a different set of user stories than otherwise.
   </span>
 

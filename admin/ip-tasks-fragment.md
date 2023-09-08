@@ -370,11 +370,20 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 </div>
 </div>
 {#====================================================================================================================#}
+<div id="pre_Level-10">
+
+<div class="indented-level1">
+<br>
+
+<span class="text-danger">**:fab-apple: Attention Mac users**</span>! If you are not using the exact JDK distribution specified by our advisory for Mac users in [this page](programmingLanguages.md), you are likely to run into problems while doing `Level-10`.
+</div>
+</div>
+{#====================================================================================================================#}
 <div id="post_Level-10">
 
 <div class="indented-level1">
 
-* Note that you no longer need to keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
+{{ icon_info }}  Note that you no longer need to keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
 </div>
 </div>
 {#====================================================================================================================#}
