@@ -5,7 +5,7 @@
 
 <span class="float-end ps-2 pe-2">
 
-<pic src="../../admin/images/drawingDiagrams.png" width="212"></pic><br>
+<pic eager src="../../admin/images/drawingDiagrams.png" width="212"></pic><br>
 <sub>[[image source](https://www.cs.auckland.ac.nz/~john-g/papers/hcc2003_1.pdf)]</sub>
 </span>
 

@@ -25,7 +25,7 @@ pageNav: 2
 
 Here is the grade breakdown:
 
-<pic src="gradeBreakdown.png" />
+<pic eager src="gradeBreakdown.png" />
 
 -----------------------{.dotted .border-info}
 
@@ -63,19 +63,19 @@ The lecture is shorter (about 1 hour), and is used for a 'briefing' only, consis
 <tabs active="1">
  <tab header="minimal">
 
--><pic src="https://zawedcvg.github.io/ip/Ui.png"></pic><-
+-><pic eager src="https://zawedcvg.github.io/ip/Ui.png"></pic><-
  </tab>
  <tab header="typical">
 
--><pic src="https://shurvirarora.github.io/ip/Ui.png" width="350"></pic><-
+-><pic eager src="https://shurvirarora.github.io/ip/Ui.png" width="350"></pic><-
  </tab>
  <tab header="good">
 
--><pic src="https://rui-han-crh.github.io/ip/Ui.png" width="800"></pic><-
+-><pic eager src="https://rui-han-crh.github.io/ip/Ui.png" width="800"></pic><-
  </tab>
  <tab header="very good">
 
--><pic src="https://chloeelim.github.io/ip/Ui.png" width="800"></pic><-
+-><pic eager src="https://chloeelim.github.io/ip/Ui.png" width="800"></pic><-
  </tab>
 </tabs>
 
@@ -88,10 +88,10 @@ The lecture is shorter (about 1 hour), and is used for a 'briefing' only, consis
 **This is a <tooltip content="starting with a legacy code base">brownfield</tooltip> iterative project.** Students start with an existing Java desktop application [Address Book application](https://se-education.org/addressbook-level3/) and evolve/morph it into another product.
 
 In the first half of the semester, students lay the groundwork for the team project, while doing the individual project:<br>
-<pic src="tpGanttChart-preIterations.png" width="800"></pic>
+<pic eager src="tpGanttChart-preIterations.png" width="800"></pic>
 
 In the second half of the semester, students build the product in three iterations:<br>
-<pic src="tpGanttChart-iterations.png" width="800"></pic>
+<pic eager src="tpGanttChart-iterations.png" width="800"></pic>
 
 * The project description starts from [this page](tp-expectations.html).
 * Final versions of previous semester's tPs are in [this page](https://nus-cs2103-ay2122s2.github.io/website/admin/teamList.html). A few examples are given below:
@@ -100,15 +100,15 @@ In the second half of the semester, students build the product in three iteratio
 <tabs>
  <tab header="Example 1">
 
-  -><pic src="https://ay2122s2-cs2103t-w14-1.github.io/tp/images/Ui.png"></pic><-
+  -><pic eager src="https://ay2122s2-cs2103t-w14-1.github.io/tp/images/Ui.png"></pic><-
  </tab>
  <tab header="Example 2">
 
-  -><pic src="https://ay2122s2-cs2103t-t11-4.github.io/tp/images/Ui.png"></pic><-
+  -><pic eager src="https://ay2122s2-cs2103t-t11-4.github.io/tp/images/Ui.png"></pic><-
  </tab>
  <tab header="Example 3">
 
-  -><pic src="https://ay2122s2-cs2103-f11-3.github.io/tp/images/Ui.png"></pic><-
+  -><pic eager src="https://ay2122s2-cs2103-f11-3.github.io/tp/images/Ui.png"></pic><-
  </tab>
 </tabs>
 
@@ -186,7 +186,7 @@ abstract class ProgressWatcher implements Watcher{
 
 **Model answer:**
 
-<pic src="images/sample-uml-drawing-question-answer.png"></pic><p/>
+<pic eager src="images/sample-uml-drawing-question-answer.png"></pic><p/>
 
 **Explanation:** The purpose of this type of questions is to check if the students can document their code using UML diagrams. Typically, the exam has one question on a UML structure diagram (such as the above question) and another focusing on a behavior diagram (e.g., a UML sequence diagram)
 </panel>

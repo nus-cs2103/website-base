@@ -1,8 +1,8 @@
-<pic src="https://reposense.org/images/reposenseOverview.png" />
+<pic eager src="https://reposense.org/images/reposenseOverview.png" />
 
 We will be using a tool called [RepoSense](http://reposense.org) to make it **easier for you to see (and learn from) code written by others**, and to help us see who wrote which part of the code.
 
-<pic src="https://reposense.org/images/report-features.png" alt="RepoSense report screenshot">
+<pic eager src="https://reposense.org/images/report-features.png" alt="RepoSense report screenshot">
   <sub>Figure: RepoSense Report Features</sub>
 </pic>
 

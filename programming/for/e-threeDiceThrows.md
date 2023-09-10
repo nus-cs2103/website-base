@@ -17,7 +17,7 @@ Write a program to generate all possible results you can get by throwing a <trig
 <popover id="pop:exerciseThreeDiceThrows-dice" header="" placement="top">
   <div slot="content">
 
-<pic src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"></pic><br>
+<pic eager src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"></pic><br>
 <sub>source: wikipedia</sub>
 
   </div>

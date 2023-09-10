@@ -4,7 +4,7 @@
 {% call show_admin_page("tp-teams") %}
 <div id="main">
 
-<pic src="{{baseUrl}}/admin/images/team.png" width="300px"></pic><br>
+<pic eager src="{{baseUrl}}/admin/images/team.png" width="300px"></pic><br>
 <small>%%[Picture: The team that was at the top of early Google]%%</small>
 <p/>
 

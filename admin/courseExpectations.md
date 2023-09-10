@@ -31,7 +31,7 @@ As {{ marks_ca }}% of this course is based on CA (see <trigger trigger="click" f
 * We have provided a _topic levels_ to guide you when prioritizing which things to do.
 
 <modal large header="Grade breakdown" id="modal:expectations-gradeBreakdown">
-  <pic src="gradeBreakdown.png" no-validation />
+  <pic eager src="gradeBreakdown.png" no-validation />
 </modal>
 
 <div id="topicLevels">

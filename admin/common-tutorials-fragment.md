@@ -78,7 +78,7 @@ Tutorial | Reviewer | First PR to review | Backup PR to review
 Tip for future reference: GitHub allows you to filter PRs/Issues using various criteria such as `author:AuthorUsername` ([example](https://github.com/reposense/RepoSense/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Afzdy1914+) -- see the `filters` text box in the target page).
 
 Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
-<pic src="images/filterPrsUsingLabels.png"></pic>
+<pic eager src="images/filterPrsUsingLabels.png"></pic>
 </box>
 
 :fas-question-circle: FAQ: How many comments should I add? Answer: Depends on the code being reviewed but we expect most PRs would warrant at least 4-5 comments. If the PR is huge, you can stop when you think you've put in a fair amount of time on the job (~15 minutes) and added enough comments for the PR author to receive some value.
@@ -222,7 +222,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 <div id="hand-drawing-diagrams">
 <box type="info">
 
-<pic src="images/drawingDiagrams.png" add-class="float-end me-2 ms-2">
+<pic eager src="images/drawingDiagrams.png" add-class="float-end me-2 ms-2">
 
 <small>[Image source: [this article](https://medium.com/deekit-central/7-reasons-why-engineers-are-the-whiteboard-artists-c40acff8b0ed)]</small>
 </pic>
@@ -299,16 +299,16 @@ Note the following:
 </div>
 
 * Some questions you can try to answer:
-  1. What does this mean? <pic src="images/interpret-course-cd/extract-interface.png"></pic>
-  1. What does this mean? <pic src="images/interpret-course-cd/extract-inheritance.png"></pic>
+  1. What does this mean? <pic eager src="images/interpret-course-cd/extract-interface.png"></pic>
+  1. What does this mean? <pic eager src="images/interpret-course-cd/extract-inheritance.png"></pic>
   1. Of the above two, why the lines in one are dashed?
-  1. What does this mean? <pic src="images/interpret-course-cd/extract-dependence.png"></pic>
+  1. What does this mean? <pic eager src="images/interpret-course-cd/extract-dependence.png"></pic>
   1. What's the difference (w.r. t. what it means) between the above and a normal association?
-  1. What does this mean? <pic src="images/interpret-course-cd/extract-composition.png"></pic>
+  1. What does this mean? <pic eager src="images/interpret-course-cd/extract-composition.png"></pic>
   1. What's the difference if the diamond is empty?
   1. Can a `PR` object exist without any `Commit` objects attached to it?
   1. Can a `Commit` object exist without a corresponding `PR` object?
-  1. A `Student` can belong to how many teams?<pic src="images/interpret-course-cd/extract-team.png"></pic>
+  1. A `Student` can belong to how many teams?<pic eager src="images/interpret-course-cd/extract-team.png"></pic>
   1. A `Team` can have how many `Student` objects?
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -317,7 +317,7 @@ Note the following:
 <!--
 * **Divide into two sub-teams** as you did in the previous week.
 * {{ timing_badge("10 minutes", "info") }} **Each sub-team do the part (a)** of the following exercise, by drawing the answer on the whiteboard. Use the following layout:<br>
-  <pic src="images/classLayout.png" width="600"></pic>
+  <pic eager src="images/classLayout.png" width="600"></pic>
 
 <div class="indented-level2">
 
@@ -336,7 +336,7 @@ Note the following:
 
 1. {{ timing_badge("before the tutorial", "danger") }} **Do the following exercise**, by ==hand-drawing== the answer.<br>
    Use the following layout:<br>
-   <pic src="images/draw-stock-cd/classLayout.png" width="600"></pic>
+   <pic eager src="images/draw-stock-cd/classLayout.png" width="600"></pic>
 
 <div class="indented-level2">
 
@@ -393,7 +393,7 @@ class PersonList{
 {{ embed_topic("../book/testing/testCoverage/text.md#body", "Textbook " + icon_embedding + " Testing → **Test Coverage**", "3", indent=1) }}
 
 * Post a screenshot in the _tutorial workspace_ document. An example is given below:<br>
- <pic src="images/demo-test-coverage/CoverageReportExample.png" ></pic>
+ <pic eager src="images/demo-test-coverage/CoverageReportExample.png" ></pic>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="interpret-parserfactory-sd">

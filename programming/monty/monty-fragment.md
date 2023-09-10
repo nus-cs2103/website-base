@@ -2,7 +2,7 @@
 
 <div class="lead">
 
-<pic add-class="float-start border me-2 mt-2 p1 bg-white" src="https://upload.wikimedia.org/wikipedia/en/c/cb/Flyingcircus_2.jpg" width="200">
+<pic eager add-class="float-start border me-2 mt-2 p1 bg-white" src="https://upload.wikimedia.org/wikipedia/en/c/cb/Flyingcircus_2.jpg" width="200">
 
 <small><small>The **Monty Python** Comedy Group,<br> [[credit: Wikipedia](https://en.wikipedia.org/wiki/Monty_Python)]</small></small>
 </pic>
@@ -1174,8 +1174,8 @@ Notes about the given version of the GUI:
 * It only supports an `add` command and a `help` command.
 
 Here are some screenshots of the GUI:<br>
-<pic src="images/gui-start.png"></pic><p/>
-<pic src="images/gui-later.png"></pic>
+<pic eager src="images/gui-start.png"></pic><p/>
+<pic eager src="images/gui-later.png"></pic>
 
 <panel type="seamless" header="Skeletal GUI code">
 

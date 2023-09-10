@@ -390,7 +390,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 <span id="heading_brainstorm_user_stories">{{ icon_team }} Brainstorm user stories</span>
 <div id="desc_brainstorm_user_stories">
 
-  <pic class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px"></pic>
+  <pic eager class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px"></pic>
 
 <div class="indented-level1">
 
@@ -1152,7 +1152,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
    * Allow popups from https://catcher-org.github.io/
    * If you encounter other problems at the app launch, refer to the [Notes on using CATcher](https://catcher-org.github.io/ug/) -- look for information related to the Web app (not the desktop app).
 1. **Login**: Choose the _session_ `{{ course_pair }} Alpha Test`, and submit.
-   <pic src="images/catcherLogin.png"></pic>
+   <pic eager src="images/catcherLogin.png"></pic>
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
@@ -1326,7 +1326,7 @@ Your GitHub  | First choice | Second choice | Third choice
   * In this case, enter each observation as a separate comment %%(reason: our bot will count the number of comments you have given to determine if you qualify for participation points)%%
 * As you know, it is better to phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).<br>
   Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams. An example given below:<br>
-  <pic src="images/ReviewCommentExample.png"></pic>
+  <pic eager src="images/ReviewCommentExample.png"></pic>
 * The understanding you gain from this exercise can indirectly determine how well you do in your own project. Note that your comments will be reviewed by a tutor later.
 <!--
 * Do not finalize the review at this stage. Just keep adding comments.
@@ -1653,7 +1653,7 @@ Not applicable this semester
 
 <div class="indented-level2">
 
-<pic src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px"><p></pic>
+<pic eager src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px"><p></pic>
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → Deliverables → Demo", "3") }}
 <p/>

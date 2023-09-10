@@ -3,7 +3,7 @@
 {% call show_admin_page("lectures") %}
 <div id="main">
 
-<pic src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%"></pic>
+<pic eager src="{{baseUrl}}/admin/images/Lecture photo.png" width="100%"></pic>
 
 ****Timing/venue****: <include src="../_course-{{ course }}/timetables-fragment.md#lectures-s{{ S }}" inline/>
 

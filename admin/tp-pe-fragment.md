@@ -74,7 +74,7 @@
     1. your hands
     1. the work area (i.e., the table top)
     1. the computer screen<br>
-    <pic src="images/zoomCameraExample.png" width="362"></pic>
+    <pic eager src="images/zoomCameraExample.png" width="362"></pic>
 * **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.{% if cs2103 %}<br>
   **If on F2F mode:** Arrive at lecture venue ([ICube Auditorium](https://nusmods.com/venues/I3-AUD)) around 10-15 minutes early. If you haven't been to this venue before, plan ahead as the venue is located away from the main SoC area.{% endif %}
 * **In case of Zoom outage**, we'll fall back on MS Teams (MST).{% if cs2103 %} Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).{% elseif cs2113 %} Make sure you have MST running; proctoring will be done via individual tutorial MST teams that we have been using.{% endif %}

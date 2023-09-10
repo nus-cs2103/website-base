@@ -24,6 +24,6 @@
    print_greeting('jane')
    ```
 1. To run the code, Right-click on project name and choose `Run 'filename'`.<br>
-   <pic src="images/runCode.png" width="500"></pic>
+   <pic eager src="images/runCode.png" width="500"></pic>
 1. The output will appear in the panel at the bottom of the IDE.<br>
    ![]({{ baseUrl }}/programming/ide/images/seeOutput.png)

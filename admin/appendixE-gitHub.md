@@ -323,10 +323,10 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
   * **CI passing** for the version tagged/released.
 
   * **Milestone updated to match the product** i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.<br>
-    <pic src="{{baseUrl}}/admin/images/assigningIssuesToMilestones.png" width="700"/>
+    <pic eager src="{{baseUrl}}/admin/images/assigningIssuesToMilestones.png" width="700"/>
 
   * **Milestone closed.**<br>
-    <pic src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
+    <pic eager src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
 
 </div>
 

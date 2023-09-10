@@ -21,7 +21,7 @@
   <td>&nbsp;→&nbsp;</td>
   <td>
 
-<pic src="images/deliveries.png"></pic>
+<pic eager src="images/deliveries.png"></pic>
   </td>
 </tr>
 </tbody>

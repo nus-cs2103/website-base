@@ -43,31 +43,31 @@ When setting up your team repo, you would be configuring **the GitHub Pages feat
 
 Reason: Distracting annotations.
 
-<pic src="images/Ui-notGood1.png" width="600" />
+<pic eager src="images/Ui-notGood1.png" width="600" />
 
 </tab>
 <tab header=":-1: Not Good">
 
 Reason: Not enough data. Should have used real profile pictures instead of placeholder images.
 
-<pic src="images/Ui-notGood2.png" width="600" />
+<pic eager src="images/Ui-notGood2.png" width="600" />
 
 </tab>
 <tab header=":-1: Not Good">
 
 Reason: screenshot not cropped cleanly (contains extra background details)
 
-<pic src="images/Ui-notGood3.png" width="600" />
+<pic eager src="images/Ui-notGood3.png" width="600" />
 
 </tab>
 <tab header=":+1: Good">
 
-<pic src="images/Ui-good1.png" width="600" />
+<pic eager src="images/Ui-good1.png" width="600" />
 
 </tab>
 <tab header=":+1: Good">
 
-<pic src="https://ay1920s2-cs2103-w15-2.github.io/main/images/Ui.png" width="600" />
+<pic eager src="https://ay1920s2-cs2103-w15-2.github.io/main/images/Ui.png" width="600" />
 
 </tab>
 </tabs>
@@ -90,7 +90,7 @@ Reason: screenshot not cropped cleanly (contains extra background details)
 <div id="profile-photo" class="indented-level2">
 
 The purpose of the profile photo is for the reader to identify you. Therefore, choose a ==recent individual photo showing your face clearly== (i.e., not too small) -- somewhat similar to a passport photo. Given below are some examples of good and bad profile photos.<br>
-<pic src="{{baseUrl}}/admin/images/profilephotos.png" style="width: 365.33px"></pic>
+<pic eager src="{{baseUrl}}/admin/images/profilephotos.png" style="width: 365.33px"></pic>
 
 If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use [a placeholder image](https://en.wikipedia.org/wiki/File:Portrait_placeholder.png) in place of the photo in course-related documents that are publicly visible.
 

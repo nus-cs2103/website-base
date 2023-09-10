@@ -10,7 +10,7 @@
 
 <span class="float-end">
 
-<pic src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"></pic><br>
+<pic eager src="{{baseUrl}}/admin/images/the good reasons to get home early.png" width="300"></pic><br>
 </span>
 
 **Keep in mind that instructors don't have ready solutions to all technical problems**. Unlike tutorial questions for which instructors have model solutions, given the complexity of industry tools we use (Gradle, GitHub, Git, ...) and the rapid pace they are updated, instructors don't have ready solutions to most technical problems you face in this course. The only realistic way to solve those problems at a large scale is crowdsourcing i.e., someone else who faced a similar problem might know how to fix it.
@@ -30,7 +30,7 @@
 
 * **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).
   Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.  
-  <pic src="{{baseUrl}}/admin/images/how to google it.png" width="600"/>
+  <pic eager src="{{baseUrl}}/admin/images/how to google it.png" width="600"/>
 
 * **Ask AI** tools such as ChatGPT. If the question is not too specific to the course, AI tools such as ChatGPT might be able to give you a solution. It will help you hone your prompt engineering skills, and also, keep abreast with the current capabilities of such tools.
 
@@ -46,7 +46,7 @@
     Reason: so that others can easily quote/copy/modify the code in their answers.<br>
     Remember to use [_fenced code blocks_ feature](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks) so that the code is syntax-highlighted as well.<br>
     * **not preferred**{.text-danger} (it's a screenshot)<br>
-      <pic src="images/code-screenshot.png"/>
+      <pic eager src="images/code-screenshot.png"/>
     * **OK**
       ```{.no-line-numbers}
       @Override
@@ -78,7 +78,7 @@
 
 <modal large header="Rubber Duck Debugging" id="modal:appendixHelp-rubberDuckDebugging">
 
-<pic src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"></pic><br/>
+<pic eager src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"></pic><br/>
 
 _Rubber duck debugging_ is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book _The Pragmatic Programmer_ in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.
 

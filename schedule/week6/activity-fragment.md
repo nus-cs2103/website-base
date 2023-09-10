@@ -20,7 +20,7 @@ First, let us set up the repo and checkout the branches.
 * {{ step('1.b') }} **Clone it to your computer.** ==No need to set it up in your IDE because it is not a Java project.==
 
 * {{ step('1.c') }} **Note how the remote repo has 4 branches** in addition to the `master` branch. If you can't see the branches, make sure you have ticked the `Show Remote Branches` box %%(shown in the top center of the screenshot below)%%.<br>
-  <pic src="images/after-cloning.png"></pic><br>
+  <pic eager src="images/after-cloning.png"></pic><br>
   Now you are in the `master` branch. Open the `food.txt` file to check its contents.
 
 * {{ step(2) }} **Checkout the `employee-john` branch** by double-clicking it.
@@ -28,17 +28,17 @@ First, let us set up the repo and checkout the branches.
 <div class="indented-level2">
 <panel type="light" header=":fas-play-circle: See an animation of this step" minimized >
 <p/>
-<pic src="images/checkout-branch.gif"/>
+<pic eager src="images/checkout-branch.gif"/>
 </panel>
 
 Now, you should be in the `employee-john` branch. This also means now you have a local branch named `employee-john` which has the exact content of the remote branch `origin/employee-john` and it is <tooltip content="i.e., git knows that this branch is meant to be a copy of the corresponding remote branch">'tracking' the corresponding remote branch</tooltip>. This is how the revision graph should look like now:
 <br>
-<pic src="images/after-checking-out-branch.png" width="682"/>
+<pic eager src="images/after-checking-out-branch.png" width="682"/>
 </div>
 
 * {{ step(3) }} **Checkout the other three branches** one at a time to get local copies of them too.<br>
 **After that, go back to the `master` branch.** The revision graph should look this this now:<br>
-<pic src="images/checkout-master-again.png"></pic>
+<pic eager src="images/checkout-master-again.png"></pic>
 
 <box type="success" icon=":fas-map-signs:" icon-size="2x">
 
@@ -51,11 +51,11 @@ Next, let us merge the branch created by John.
 
 <panel type="light" header=":fas-play-circle: See an animation of this step" minimized >
 
-<pic src="images/merging-branch-employee-john.gif" />
+<pic eager src="images/merging-branch-employee-john.gif" />
 </panel>
 <p/>
 The revision graph should look like this now:<br>
-<pic src="images/after-merging-branch-employee-john.png"></pic>
+<pic eager src="images/after-merging-branch-employee-john.png"></pic>
 </div>
 
 * {{ step('5.a') }} **Undo the merge**: To learn how to undo a merge, let's undo the merge we did just now.
@@ -67,12 +67,12 @@ The revision graph should look like this now:<br>
 
 <panel type="light" header=":fas-play-circle: See an animation of this step" add-class="d-block pl-5" minimized >
 
-<pic src="images/undo-merge.gif" />
+<pic eager src="images/undo-merge.gif" />
 </panel>
 <p/>
 
 * {{ step('5.b') }} That was just to practice undoing of a merge. Let's merge the `employee-john` again by re-doing the {{ step('4', step_style='secondary') }} again. The revision tree should look like this again:<br>
-  <pic src="images/after-merging-branch-employee-john.png"></pic>
+  <pic eager src="images/after-merging-branch-employee-john.png"></pic>
 
 <box type="success" icon=":fas-map-signs:" icon-size="2x">
 
@@ -81,7 +81,7 @@ Now that you know how to merge a branch, and undo a merge, let's try to merge Am
 
 
 * {{ step('6.a') }} **Merge the `employee-amy` branch to the `master` branch**, similar to the previous step. Note how git reports a `merge conflict` halfway into the merge, with a dialog like this:<br>
-  <pic src="images/merge-conflict-dialog.png"></pic><br>
+  <pic eager src="images/merge-conflict-dialog.png"></pic><br>
   Close the dialog.
 
 <span id="6b">
@@ -123,7 +123,7 @@ Now that you know how to merge a branch, and undo a merge, let's try to merge Am
 
 <panel type="light" header=":fas-play-circle: See an animation of this step" minimized >
 
-<pic src="images/commit-after-deconflicting.gif" />
+<pic eager src="images/commit-after-deconflicting.gif" />
 </panel>
 <p/>
 </div>
@@ -141,27 +141,27 @@ But first, let's learn how to create PRs using branches, within the same remote 
 </box>
 
 * {{ step(7) }} **Push the `master` branch to the fork**, to upload the new merge commits to the fork.<br>
-  <pic src="images/push-master.png"></pic>
+  <pic eager src="images/push-master.png"></pic>
 
 * {{ step(8) }} **Create a PR within your own fork, from the `vendor-ravi` branch to the `master` branch**:
   1. Go to your fork on Github and click on the {{ button('New pull request') }} button.<br><br>
-    <pic src="images/new-pull-request.png"></pic>
+    <pic eager src="images/new-pull-request.png"></pic>
   1. By default, GitHub tries to create a PR from your fork to the upstream repo. Change the base repo to your own fork instead.<br>
-     <pic src="images/choose-fork-as-base.png">
+     <pic eager src="images/choose-fork-as-base.png">
   1. Set the `compare` field to the `vendor-ravi` branch.<br>
-     <pic src="images/choose-vendor-ravi.png"></pic>
+     <pic eager src="images/choose-vendor-ravi.png"></pic>
   1. Complete the PR creation by filling in appropriate info as directed by GitHub.<br>
-     <pic src="images/create-pr-for-vendor-ravi.png" class="border" />
+     <pic eager src="images/create-pr-for-vendor-ravi.png" class="border" />
   1. Observe how you have one PR in your own fork now.<br>
-     <pic src="images/after-creating-pr-for-vendor-ravi.png" />
+     <pic eager src="images/after-creating-pr-for-vendor-ravi.png" />
 
 * {{ step(9) }} **Create another PR for the `vendor-musa` branch**. As you did in the previous step, create another PR to the `master` branch from the `vendor-musa` branch.
 
 * {{ step(10) }} **Update the PR of `vendor-musa` with reviews and new commits**, to simulate PRs going through a review process.
   1. Add a review to the PR. Here is an example<br>
-     <pic src="images/review-pr.png">
+     <pic eager src="images/review-pr.png">
   1. In your local repo, switch to the `vendor-musa` branch, add a line at the end of the `stationary.txt` and commit it. This is to simulate a developer updating a PR based on review comments.<br>
-     <pic src="images/add-commit-to-vendor-musa.png">
+     <pic eager src="images/add-commit-to-vendor-musa.png">
   1. Push the `vendor-musa` to your fork %%to upload the new commit to the fork.%%
   1. Go to the corresponding PR and observe how the PR has updated itself to reflect the new commit you pushed.
 
@@ -173,11 +173,11 @@ The next step is to learn how to merge PRs, thereby merging the corresponding br
 
 * {{ step(11) }} **Merge the PR**. Use the GitHub UI to merge the PR you updated in the previous step %%(i.e., the one for the `vendor-musa` branch)%%.
   1. Click on the {{ button('Merge pull requset', button_style="success") }} button (at the bottom of the {{ show_as_rounded_tab('conversation') }} tab)<br>
-     <pic src="images/click-merge-button.png" />
+     <pic eager src="images/click-merge-button.png" />
   1. Click {{ button('Confirm merge', button_style="success") }} in the next step.<br>
-     <pic src="images/confirm-merge.png" />
+     <pic eager src="images/confirm-merge.png" />
   1. You should see something like this after the merge is complete:<br>
-     <pic src="images/pr-merged.png" /><br>
+     <pic eager src="images/pr-merged.png" /><br>
      Do not click the {{ button('Delete branch') }} button as our scripts will look for the branch in your fork.
 </span>
 
@@ -187,7 +187,7 @@ So far so good. Next, let's learn how to merge PRs when there are merge conflict
 </box>
 
 * {{ step(12) }} **Observe the other PR is now showing conflicts**: If you go to the `vendor-ravi` PR, it will show something like this at the bottom, indicating that the code in that branch has a conflict with the `master` branch (caused by the other PR we merged just now).<br>
-  <pic src="images/pr-shows-conflict.png"></pic>
+  <pic eager src="images/pr-shows-conflict.png"></pic>
 
 * {{ step(13) }} **Resolve the conflict**. Note that GitHub gives a {{ button('Resolve conflicts') }} button that provides a way to resolve conflicts on the Web UI itself. However, that method is more suited for simple conflicts. In this activity, let's use the method that works for even more complicated conflicts.
   1. As the merging the PRs on GitHub updates the `master` branch on the fork only, pull the `master` branch from your fork to your repo to get the latest `master` branch onto your Computer.
@@ -208,7 +208,7 @@ So far so good. Next, let's learn how to merge PRs when there are merge conflict
 <p/>
 
 * {{ step(15) }} **Sync your local repo with the latest `master`** by pulling the `master` branch from your fork. After that, your revision graph should look like this:<br>
-  <pic src="images/after-pulling-updated-master.png"></pic>
+  <pic eager src="images/after-pulling-updated-master.png"></pic>
 
 <box type="success" icon=":fas-map-signs:" icon-size="2x">
 

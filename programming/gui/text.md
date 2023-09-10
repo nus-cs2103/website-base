@@ -30,7 +30,7 @@ window.mainloop()
 </span>
 <span id="output">
 
-<pic src="images/helloworld.png"></pic>
+<pic eager src="images/helloworld.png"></pic>
 </span>
 </include>
 
@@ -41,11 +41,11 @@ window.mainloop()
 <include src="inputOutput.md" boilerplate>
 <span id="input">
 
-<pic src="images/increment1.png"></pic>
+<pic eager src="images/increment1.png"></pic>
 </span>
 <span id="output">
 
-<pic src="images/increment2.png"></pic>
+<pic eager src="images/increment2.png"></pic>
 </span>
 </include>
 

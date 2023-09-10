@@ -7,7 +7,7 @@
 <div tags="m--cs2103">
 <p class="lead text-secondary"><big>A balanced, iterative, and brownfield introduction to Software Engineering...</big></p>
 
-<pic src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
+<pic eager src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
 
 <p class="lead"><md>{{ course_pair }} is an introductory Software Engineering course. It has **a 50-50 balance of basic SE theory knowledge and practical skills** that you need to gain before industry internships or <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project courses</tooltip>. The course follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics. It is also one of the rare SE courses that includes a <tooltip content="i.e., working in an existing project">**brownfield** project</tooltip>, in addition to a <tooltip content="i.e., a project that is started from scratch">**greenfield** project</tooltip>.</md></p>
 
@@ -61,7 +61,7 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 <p class="lead text-secondary"><big>An iterative introduction to Software Engineering...</big></p>
 
-<pic src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
+<pic eager src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
 
 <p class="lead"><md>{{ course_pair }} is an introductory Software Engineering course covering **a balance of basic SE theory and practical skills** needed to work in a project that has a software component. The course follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially">**iterative approach**</tooltip> to covering topics. The course also introduces you to the Java programming language, the OOP paradigm, and some basic UML models.</md></p>
 
@@ -78,7 +78,7 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 <p class="lead text-secondary"><big>A Software Engineering practicum course focusing on <tooltip content="projects starting from scratch, as opposed to projects starting from an existing code base">greenfield</tooltip> team projects...</big></p>
 
-<pic src="{{baseUrl}}/images/growingPlant.png" width="650"></pic>
+<pic eager src="{{baseUrl}}/images/growingPlant.png" width="650"></pic>
 
 
 <p class="lead"><md>{{ course }} builds on <tooltip content="Introduction to Software Engineering">TIC2002</tooltip> (and <tooltip content="Software Requirements Analysis and Design">TIC3001</tooltip>) to strengthen your practical SE skills. The focus will be on getting some hands on practice in various tools, techniques, and processes used in a systematic SE project.</md></p>
@@ -96,7 +96,7 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 <p class="lead text-secondary"><big>A Software Engineering practicum course focusing on <tooltip content="starting with an existing code base">brownfield</tooltip> team projects...</big></p>
 
-<pic src="{{baseUrl}}/images/growingPlant.png" width="650"></pic>
+<pic eager src="{{baseUrl}}/images/growingPlant.png" width="650"></pic>
 
 
 <p class="lead"><md>{{ course }} builds on <tooltip content="Software Engineering Practicum I">TIC4001</tooltip> to strengthen your practical SE skills. The focus will be on getting some hands on practice in working with an existing code base.</md></p>

@@ -36,7 +36,7 @@ print(colorama.Style.RESET_ALL + ' Back to normal now')
 ```
 {{ icon_output }}<br>
 
-<pic src="{{baseUrl}}/programming/thirdparty/images/coloramaOutput.png"></pic></p>
+<pic eager src="{{baseUrl}}/programming/thirdparty/images/coloramaOutput.png"></pic></p>
 
 </tip-box>
 

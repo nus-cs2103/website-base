@@ -4,7 +4,7 @@
 
 * **==[before the lecture]== Do the following exercise** (you may hand-draw or use a drawing software e.g. PowerPoint, draw.io).<br>
    Use the following layout:<br>
-   <pic src="../../admin/images/draw-stock-cd/classLayout.png" width="600"></pic>
+   <pic eager src="../../admin/images/draw-stock-cd/classLayout.png" width="600"></pic>
 
 <div class="indented-level2">
 

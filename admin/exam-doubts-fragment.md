@@ -1,7 +1,7 @@
 <div class="indented">
 <panel type="danger" header="**Submitting doubts/assumptions/feedback for a question:**" expanded>
 
-<pic src="images/examplify-feedback.png" width="350"></pic>
+<pic eager src="images/examplify-feedback.png" width="350"></pic>
 
 1. Click on `TOOL KIT`.
 2. Click on the `NOTES` tab, if it is not selected already.
