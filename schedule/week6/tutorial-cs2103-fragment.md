@@ -13,7 +13,7 @@
 
 * Do the following two exercises, as guided by the tutor.
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsBasic/q-explainMachineSequenceDiagram.md" />
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" />

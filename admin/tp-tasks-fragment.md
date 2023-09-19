@@ -420,7 +420,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 * **Submission** (to be checked by the tutor later):<br>
   * Intermediate steps (e.g., persona, scenarios): Keep records these in your collaborative project document started in the previous week.
-  * Brainstormed user stories:  Record them using an <!--~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).
+  * Brainstormed user stories:  Record them using an <!--~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
+  {{ icon_tip }} If you are not sure which tool to use for this, go for an online spreadsheet (e.g., Google Sheets) -- they are easy to edit, share, color, and more importantly, sort/filter.<br>
+  {{ icon_info }} If you put the user stories in a location other than your main collaborative project notes document (i.e., the one given [here](teamList.html)), ensure that location is viewable by the public, and the main document has a link to that location. Otherwise, the tutor will not be able to see your list of user stories.
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
 <include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -472,7 +474,7 @@ How is that better?
 
 </box>
 
-**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.{% if cs2103 or tic4002 %}<br>%%**Why {{ version_first }} and not v1.1?** v1.1 is a mere documentation update only. {{ version_first }} will be the first version that contains functionality changes.%%{% endif %}
+**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration i.e., <span class="text-danger">NOT what you _can_ or _want to_ do in {{ version_first }}, but what you _must_ do in {{ version_first }}</span>. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.{% if cs2103 or tic4002 %}<br>%%**Why {{ version_first }} and not v1.1?** v1.1 is a mere documentation update only. {{ version_first }} will be the first version that contains functionality changes.%%{% endif %}
 
 {{ icon_important_big_red }} Do not discuss features, UI, command format, or implementation details yet. That would be like _putting the cart before the horse_. At this stage we are simply trying to choose which user needs to fulfill first.
 
@@ -496,7 +498,10 @@ Suggested workflow:
 **FAQs**{.text-info}
 
 **Q:** What if the chosen user stories for {{ version_first }} is not enough to do a meaningful work division among team members?<br>
-**A:** In that case, you can add more user stories until there is enough for a meaningful work distribution.
+**A:** In that case, at a later stage, you can add more user stories until there is enough for a meaningful work distribution. But at this point focus on selecting the smallest sub-set of _must_have_ user stories only.
+
+**Q:** Should we start implementing {{ version_first }} now?<br>
+**A:** Not at all. That is scheduled several weeks later. For now, just figure out the minimal feature set required for the product. We'll let you know when it is time to start working on {{ version_first }}.
 
 {% if cs2103 or tic4002 %}**Q:** Should we omit user stories that are already supported by AB3?<br>
 **A:** No, you should still include them. Reason: The existing implementation might still require some work before it fits your product.
@@ -509,9 +514,9 @@ Suggested workflow:
 
 * Set up the team org, the team repo, and individual forks as explained below:
 
-{{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Organization Setup**", "1", indent="2") }}
-{{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="2") }}
-{{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Organization Setup**", "1", indent="1") }}
+{{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="1") }}
+{{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the code base</span>
@@ -528,9 +533,9 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
   * [Tutorial 1 - Tracing a Command Execution Path]({{ url_ab3_fork_website }}/tutorials/TracingCode.html)
     * We recommend that you put in a sincere effort into this tutorial because tracing through the code of an unfamiliar code base is an important skill that you will not be able to learn/practice it later in the project as the code will no longer be 'unfamiliar' to you later.
     * Submission [optional]: Post an issue in your team's repo with the title `Tutorial: tracing code`. In the description, add a 2-3 screenshots you took while at various points of the tutorial. You may close the issue soon after.
-  * [Tutorial 2 - Adding a new Command]({{ url_ab3_fork_website }}/tutorials/AddRemark.html)
+  * **[Tutorial 2 - Adding a new Command]({{ url_ab3_fork_website }}/tutorials/AddRemark.html)**
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
-    * Submission: Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
+    * **Submission:** Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
     * FAQ: Do we have to write/update test cases too?<br>
       A: Not a strict requirement, but given the purpose of this tutorial is to learn the code base, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise you can run into difficulties when you are writing test cases for your own features later.
   * [Tutorial 3 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)
@@ -579,6 +584,8 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 </div>
 <div tags="m--cs2103">
 
+**Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next Lecture), but give the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w7_start, 2) }}) to submit this.
+
 This deliverable links back to the following point made earlier:
 
 > 1. ...
@@ -588,13 +595,16 @@ This deliverable links back to the following point made earlier:
   * For convenience, let us call it a 'User Guide draft', although it is not meant to resemble [the final form of the UG]({{ url_ab3_upstream_website }}/UserGuide.html)).
   * Use a medium that is convenient for collaboration (e.g., a GoogleDoc).
   * The content need not be polished. Don't waste time in formatting, copy editing etc.
+  * You may limit this UG draft to only a description of the features %%i.e., omit sections such as Quick Start, FAQ, Known Issues,  Command summary%%
 * **For each feature, specify the following:**
   * What it does
   * The precise command format
-  * example commands %%(to show how the command is used)%%
-  * acceptable values for each parameter %%e.g., if a command takes a person name as a parameter, what inputs are accepted as valid person names?%%
-  * precise expected outputs when the command succeeds %%e.g., changes in the GUI, messages shown to the user%%
-  * precise expected outputs when the command fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
+  * Example commands %%(to show how the command is used)%%
+  * Acceptable values for each parameter %%e.g., if a command takes a person name as a parameter, what inputs are accepted as valid person names?%%
+  * Precise expected outputs when the command succeeds %%e.g., changes in the GUI, messages shown to the user%%
+  * Precise expected outputs when the command fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%<br>
+    FAQ: Is it normal to include such details in a UG?<br>
+    Answer: No. Consider this as an 'internal draft' version of the eventual UG. These extra details can be omitted when we transfer this content to the real UG later.
   * Relevant UI mock-ups %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%
 * **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.
 * While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to pee-review feature details written by other team members and refine the overall product design together.

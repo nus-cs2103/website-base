@@ -76,7 +76,7 @@
 
 * If you haven't done so already, prioritize tP user stories as explained in the panel below.
 
-{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_prioritize_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Choose user stories for " + version_first + "**", "2", indent="2") }}
+{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_prioritize_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Choose user stories for " + version_first + "**", "2", indent="1") }}
 
 
 #### {{ thumb(4) }} <span class="badge bg-secondary">time permitting</span> Create a _feature list_ for {{ version_first }}

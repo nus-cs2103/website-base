@@ -85,13 +85,52 @@ The tP project template given to you is a variation of the iP repo you used for 
    **Set up codecov**, as explained in the [DevOps guide]({{ url_ab3_fork_website }}/DevOps.html).{% endif %}
 {% if cs2103 %}
 1. **Set up the project website**<br>
-   Follow instructions in the [_Documentation guide_ page]({{ url_ab3_fork_website }}/Documentation.html) of AB3 developer guide. When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/{{ tp_repo_name }}` e.g., `https://{{ semester | lower }}-{{ course | lower }}-w13-1.github.io/{{ tp_repo_name }}`.
+   There are two options for the project website: [Jekyll](https://jekyllrb.com/), [MarkBind](https://markbind.org). You can choose either one. More info are given in the panels below:
+
+<div class="indented-level2">
+
+<panel header="##### Jekyll" expanded>
+
+**Pros:**
+* Widely used (one of the most popular static site generator tools)
+* Built-in support by GitHub
+
+**Cons:**
+* More optimized for blogs (but can be used for normal websites as well)
+* Local installation is more troublesome (requires Ruby)
+
+Example AB3 website using Jekyll: [here](https://se-education.org/addressbook-level3/)
+
+**How to set up:** Follow instructions in the [_Documentation guide_ page]({{ url_ab3_fork_website }}/Documentation.html) of AB3 developer guide.
+</panel>
+
+<panel header="##### MarkBind" expanded>
+
+**Pros:**
+* Optimized for creating course/project websites -- also used by CS2103/T website<br>
+  e.g., Built-in support for PlantUML, and many other features useful for project documentation
+* Easier to set up locally (and JavaScript based, rather than Ruby)
+
+**Cons:**
+* Home-grown, small user base
+
+Example AB3 website using MarkBind: [here](https://damithc.github.io/ab3-markbind/)
+
+**How to set up:**
+1. Merge the given `switch-docs-to-markbind` branch to the `master` branch.
+1. After that, follow instructions in the [this se-edu/guide](https://se-education.org/guides/tutorials/markbind-forked-sites.html).
+</panel>
+<p/>
+
+{{ icon_tip }} When set up correctly, your project website should be available via the URL  `https://{{ semester | lower }}-{team-id}.github.io/{{ tp_repo_name }}`<br>
+ e.g., `https://{{ semester | lower }}-{{ course | lower }}-w13-1.github.io/{{ tp_repo_name }}`.
+</div>
 {% elseif course == "CS2113" or course == "TIC4001"%}
 1. **Enable GitHub Pages**: Go to the {{ show_as_rounded_tab(':octicon-gear: Settings') }} tab and enable `GitHub Pages` for the `master branch /docs folder` (similar to how you did it in the iP).<br>
    Remember to choose a theme too by clicking the {{ button('**Choose a theme**') }} button (that will create a commit in your repo that is needed in a later step.<br>
    After a few minutes, confirm your tP website is available in the corresponding `github.io` URL.
 {% endif %}
-1. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
+5. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
    Recommended: Give _admin access_ to 1-2 members and _write access_ to others.
 1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ course | lower }}-{{ semester }}/{{ tp_repo_name }}]({{url_course_org}}/{{ tp_repo_name }})] `master` branch. PR name: `[Team ID] Product Name` e.g., `[{{ example_team_id }}] InsureList`. %%As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%%<br>
    Please fill in these details as specified because they are used by our grading scripts.
