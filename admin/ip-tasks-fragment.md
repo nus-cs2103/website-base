@@ -686,12 +686,14 @@ This activity is worth `2x2=4` participation points.
 1. **Open the Canvas survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Run the jar file** in the following manner:
    1. Put the jar file in an empty folder, to prevent data files created by other jar files you tested earlier from interfering with the current jar file.
-   1. {{ icon_important_big_red }} Run the `java -version` command to confirm you are using Java 11.
+   1. {{ icon_important_big_red }} Run the `java -version` command to confirm you are using Java 11.{% if cs2103 %}<br>
+      :fab-apple: Mac user, confirm you are using the exact Java distribution we have prescribed [here](programmingLanguages.md).{% endif %}
    1. Run the jar file using the `java -jar {file_name}` command (rather than double-clicking) in the same terminal.
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
 1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
 1. **Submit your evaluation** using the survey.
-1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).
+1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).<br>
+   If _both_ iPs crash or fail severely in a similar fashion, the problem may be on your side. Please contact the teaching team to ask how to proceed.
 1. %%**Take note of the effort required for a _typical_ iP**: Now that you have seen two more iPs, you should now be in a better position to estimate how much you need to do for the tP (reason: the expected workload for the tP is that each team member puts in about one _typical_ iP worth of effort).%%
 </div>
 {#====================================================================================================================#}

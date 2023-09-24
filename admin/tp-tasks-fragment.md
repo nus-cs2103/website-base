@@ -117,7 +117,7 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 
 1. Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/{{ "basic" if cs2113 else "intermediate" }}.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should) of Java method header comments.
 1. Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject).<br>
-  Caution: This is <span class="text-danger">near-impossible to rectify later</span>, after PR containing the commits have been merged.<br>
+  Caution: This is <span class="text-danger">very hard to rectify later</span>, after PR containing the commits have been merged.<br>
   %%Reason: While Git allows editing past commits, it changes their timestamp, which affects your weekly code contribution stats (which are factored into evaluating the consistency of your coding work over the project duration)%%
 </box>
 </div>
@@ -373,6 +373,8 @@ As we are still at the early stages of identifying a problem to solve, do not th
     1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
   * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 or tic4001 %}<br>
   * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.
+  * FAQ: Can we change these values later?<br>
+    Answer: Yes. If the submission deadline is not over yet, use the same link to update the submission. If the submission deadline is over, email the updated name, target user, value proposition to `{{ course | lower }}@comp.nus.edu.sg`.
   {% endif %}
 
 
@@ -668,7 +670,7 @@ Update the following pages in your project repo:
 * **_AboutUs_ page**:
   This page (in the `/docs` folder) is used for course admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
   * Add your own details. Include a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.
-  * There is no need to mention the the tutor/lecturer, but OK to do so too.
+  * There is no need to mention the tutor/lecturer, but OK to do so too.
   * The filename of the profile photo should be `docs/images/github_username_in_lower_case.png`<br>
     ==Note the need for lower case== (<tooltip content="GitHub usernames are not case sensitive, but URLs in GitHub-pages are -- to avoid any mismatches, we have fixed the file name here to be lower case">%%why lowercase?%%</tooltip>) %%e.g. `JohnDoe123` -> `docs/images/johndoe123.png` not `docs/images/JohnDoe123.png`%%.<br>
     ==If your photo is in jpg format, name the file as `.png` anyway==.
@@ -703,7 +705,8 @@ Update the following pages in your project repo:
 <span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
 <div id="desc_update_the_ug">
 
-* **Move the draft UG content into the User Guide page** in your repository. Update the content/structure/formatting as necessary, to match the final form of the UG. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
+* **Move the draft UG content into the User Guide page** in your repository. Update the content/structure/formatting as necessary, to match the final form of the UG. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>{% if cs2103 %}
+  Remember to omit nitty gritty details in the previous 'internal' UG Draft if they are not appropriate for the actual UG.<br>{% endif %}
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
@@ -716,7 +719,7 @@ Update the following pages in your project repo:
 
 <box type="info" seamless>
 
-At the end of the project, each member needs to create a Project Portfolio Page (PPP) to describe your contribution to the project. Let's create a skeletal version of the PPP now itself so that everyone becomes aware how detailed you need to be abut your individual contributions at the end of the project.
+At the end of the project, each member needs to create a Project Portfolio Page (PPP) to describe your contribution to the project. Let's create a skeletal version of the PPP now itself so that everyone becomes aware how detailed you need to be about your individual contributions at the end of the project.
 </box>
 
 * **Create a skeletal version of your _Project Portfolio Page (PPP)_**.
@@ -793,7 +796,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 * To get some practice of doing project iterations, do this week's tP work (i.e., updates to various documents) as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
 
-{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 
 * Don't forget to 'wrap up' the milestone at the end of this week (as explained in the panel above), after the work is done.
 </div>

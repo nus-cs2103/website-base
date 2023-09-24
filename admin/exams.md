@@ -48,7 +48,7 @@ The final exam has two types of questions:
 
 <div tags="m--cs2103 m--tic2002 m--tee3201">
 
-1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ module }}) as well.
+1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ course }}) as well.
 1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not allowed</span>), which can connect to the NUS wifi network.<br>
   Please use these resources if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
    * [slides](https://wiki.nus.edu.sg/x/daBJCw) (refer to the slides on _On-Campus exam_)
