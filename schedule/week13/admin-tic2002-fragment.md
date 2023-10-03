@@ -18,6 +18,6 @@
 
 #### {{ thumb(1) }} Submit the project {{ timing_badge("Sunday 2359", "secondary") }}
 
-{{ embed_topic("../../admin/index-tic2002-fragment.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "week13Admin-finalSubmission", "2") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "week13Admin-finalSubmission", "1") }}
 
 </div>

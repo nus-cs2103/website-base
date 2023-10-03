@@ -16,7 +16,7 @@
 
 * See the panel below:
 
-{{ embed_topic("../../admin/index-tic2002-fragment.md#intellij-info", "Admin " + icon_embedding + " Tools → IntelliJ IDEA", "week2Admin-intellij", "2") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#intellij-info", "Admin " + icon_embedding + " Tools → IntelliJ IDEA", "week2Admin-intellij", "1") }}
 
 
 #### {{ thumb(2) }} Submit weekly exercises
@@ -29,7 +29,7 @@
 
 #### {{ thumb(0) }} Learn about the project
 
-{{ embed_topic("../../admin/index-tic2002-fragment.md#project-info", "Admin " + icon_embedding + " Project", "week1Admin-java", "2") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#project-info", "Admin " + icon_embedding + " Project", "week1Admin-java", "1") }}
 <div class="indented">
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**Overview**" var-fragment="text.md#intro" />
 </div>
@@ -41,11 +41,11 @@
 
 1. **Fork** [{{ url_course_org }}/duke]({{ url_course_org }}/duke). The relevant textbook topic is given below for your reference.<br>
    {{ icon_important_big_red }} Please ==retain the repo name `duke`== when forking. If you name your fork as something else, our grading scripts will not be able to find your fork.<br>
-   {{ embed_topic("../../book/gitAndGithub/fork/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Forking**", "1", indent=2) }}
+   {{ embed_topic("../../book/gitAndGithub/fork/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Forking**", "1", indent=1) }}
 
 2. **Clone** the fork onto your computer.
 
-   {{ embed_topic("../../book/gitAndGithub/clone/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Cloning**", "1", indent=2) }}
+   {{ embed_topic("../../book/gitAndGithub/clone/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Cloning**", "1", indent=1) }}
 
 3. **Set up** the project in your IDE as explained in [the README file]({{ url_course_org }}/duke).
 
@@ -55,7 +55,7 @@
 
 * Take note of our plagiarism policies
 
-{{ embed_topic("../../admin/index-tic2002-fragment.md#plagiarism-policy", "Admin " + icon_embedding + " Policies -> **Plagiarism**", "1", indent=2, type="danger") }}
+{{ embed_topic("../../admin/index-tic2002-fragment.md#plagiarism-policy", "Admin " + icon_embedding + " Policies -> **Plagiarism**", "1", indent=1, type="danger") }}
 
 * Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> in the given order.
   * **Commit** code at important points. ==Minimally, commit after completing each increment==.
@@ -67,7 +67,7 @@
      {{ embed_topic("../../book/gitAndGithub/tag/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Tagging**", "1", indent=2) }}
      {{ embed_topic("../../book/gitAndGithub/push/text.md#simple-push", "Textbook " + icon_embedding + " Git & GitHub → **Pushing**", "1", indent=2) }}
   * {{ icon_tip }} If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).
-<div class="indented-level2">
+<div class="indented-level1">
 
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-0`: Rename, Greet, Exit**" var-fragment="text.md#Level-0" />
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-1`: Echo**" var-fragment="text.md#Level-1" />

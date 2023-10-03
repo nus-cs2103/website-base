@@ -1,4 +1,3 @@
-<div class="indented">
 <div class="indented border">
 <panel type="seamless" {{ status }} no-close>
 {% set displacement="" %}
@@ -7,5 +6,4 @@
 <include src="{{ displacement }}/book/projectDuke/{{ fragment }}" />
 </panel>
 
-</div>
 </div>

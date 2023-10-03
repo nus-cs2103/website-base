@@ -260,8 +260,12 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * **After merging a PR**,
   * **close the corresponding issue**.<br>
     {{ icon_pro_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
-  * **sync your repos with the team repo** by pulling the latest `master` from the team repo and pushing it to your own fork.
-  * **don't delete the branch used by the PR**. While it is common practice to delete a branch after merging it, we require you to keep those branches in the team repo so that our scripts can confirm that you used branches when adding changes.
+  * **sync your individual repos/forks with the team repo** as follows:
+    * Pull the latest `master` from the team repo, and push it to your own fork.
+    * If there are any unmerged branches in your local repo, for each of them,<br>
+      merge `master` branch to it, and push the updated branch to your fork.<br>
+      %%{{ icon_info }} Another way to sync a branch with the `master` branch is to rebase it. But we discourse that approach as it will change the timestamp of your branch commits, affecting how our grading scripts track your work.%%
+  * <span class="text-danger">**don't delete the branch used by the PR**.</span> While it is common practice to delete a branch after merging it, we require you to keep those branches in the team repo so that our scripts can confirm that you used branches when adding changes.
 {% if course == "CS2113" or course == "TIC4001" %}
 * **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
 {% endif %}

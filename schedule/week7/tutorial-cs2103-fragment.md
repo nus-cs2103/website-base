@@ -40,4 +40,5 @@
 
 #### {{ thumb(2) }} Refine your DG {{ timing_badge("after the tutorial", "secondary") }}
 
-* After the tutorial, if applicable, refine the relevant sections of your own DG based on what you learned from the tutorial activities.
+* After the tutorial, if applicable, refine the relevant sections of your own DG based on what you learned from the tutorial activities.<br>
+  Note: Ideally, you should have completed iteration `{{ version_practice }}` already. In that case, this DG refinement can be done as part of a subsequent iteration (e.g., `{{ version_first }}`)

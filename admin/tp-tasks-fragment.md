@@ -111,9 +111,9 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 </div>
 </div>
 <div id="common-mistakes">
-<box type="tip" seamless>
+<box type="warning" seamless>
 
-**Lookout for these mistakes** which were the most common in previous runs of the course:{.text-success}
+<span class="text-warning">**Lookout for these mistakes**</span> which were the most common in previous runs of the course:
 
 1. Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/{{ "basic" if cs2113 else "intermediate" }}.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should) of Java method header comments.
 1. Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject).<br>
@@ -602,14 +602,21 @@ This deliverable links back to the following point made earlier:
   * What it does
   * The precise command format
   * Example commands %%(to show how the command is used)%%
-  * Acceptable values for each parameter %%e.g., if a command takes a person name as a parameter, what inputs are accepted as valid person names?%%
+  * Acceptable values for each parameter %%e.g., if a command takes a person name as a parameter, what inputs are accepted as valid person names?%%<br>
+    * It's not enough to state 'valid name'; you need to specify what rules will be used to determine if the input is a valid name.
+    * Yes, making these decisions is not easy -- and that's why we want you to think about them now rather than later. Feel free to discuss in the forum these validation rules.
   * Precise expected outputs when the command succeeds %%e.g., changes in the GUI, messages shown to the user%%
-  * Precise expected outputs when the command fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%<br>
-    FAQ: Is it normal to include such details in a UG?<br>
-    Answer: No. Consider this as an 'internal draft' version of the eventual UG. These extra details can be omitted when we transfer this content to the real UG later.
+  * Precise expected outputs when the command fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
   * Relevant UI mock-ups %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%
+
+<box type="info" seamless>
+
+FAQ: Is it normal to include this level of details in a UG?<br>
+Answer: No. Consider this as an 'internal draft' version of the eventual UG. These extra details can be omitted when we transfer this content to the real UG later.
+</box>
+
 * **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.
-* While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to pee-review feature details written by other team members and refine the overall product design together.
+* **Ensure feature-fit**: While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to pee-review feature details written by other team members and refine the overall product design together.
 
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Product Design==**", "3", indent="1") }}
 
@@ -656,16 +663,29 @@ This deliverable links back to the following point made earlier:
 **Recommended procedure for updating docs**:{.text-info}
 
 1. Divide among yourselves who will update which parts of the document(s).
-1. Update the team repo by following the recommended workflow.
+1. Update the team repo by following the workflow given below:
 
 {{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3") }}
 
 </box>
 
+<box type="tip" seamless>
+
+**How to go about editing documentation files?**{.text-success}<br>
+e.g., How to preview changes locally before committing/pushing?
+
+Guidance on documentation can be found in the relevant section of the Developer Guide of your team project website that you set up earlier. Given below is a shortcut, for your convenience:
+
+* If your project is using **Jekyll** for documentation, refer [this Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=github.io/myrepo-,Updating%20documents,-Jekyll%20uses%20kramdown).
+* If your project is using **Markbind** for documentation, refer [this MarkBind Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/markbind-forked-sites.html#:~:text=latest%20%2D%2Dsave%2Ddev-,Updating%20documents,-MarkBind%20is%20a).
+
+</box>
+
 <include src="tp-tasks-fragment.md#common-mistakes" />
 
-Update the following pages in your project repo:
 </div>
+
+****A: Update the following pages in your project repo:****
 
 * **_AboutUs_ page**:
   This page (in the `/docs` folder) is used for course admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
@@ -688,7 +708,9 @@ Update the following pages in your project repo:
 
   * Add a UI mockup of your intended final product.
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
-    {{ icon_tip }} If you did the above update correctly, UI mock up and profile photos should appear in your project website and this [**Project List Page**]({{ url_team_list }}).
+    {{ icon_tip }} If you did the above update correctly, UI mock up and profile photos should appear in your project website and this [**Project List Page**]({{ url_team_list }}).<br>
+    {{ info }} The UI mock up can be a hand-drawn sketch or created using a tool such as PowerPoint, PlantUML, Figma, etc. <br>
+    {{ icon_Q }} Can the AB-3 screenshot used for this? Only in the unlikely case that your {{ version_first }} UI looks exactly the same as AB-3.
 
   * Update all contents to match your own project.
 
@@ -697,8 +719,13 @@ Update the following pages in your project repo:
   * Acknowledge the original source of the code e.g.,<br>
     `This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).`
 
-* **Update site-wide settings** as described in the guide [_Using Jekyll for project documentation_ @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html).<br>
-  {{ icon_tip }} The text `AB-3` in `docs\_sass\minima\_base.scss` needs updating too (it comes into play when you convert documentation to PDF formats).
+****B: Also update site-wide settings****, as necessary:
+
+* You need to update the `AB-3` in the top navigation bar of your project website (it's in `docs\_sass\minima\_base.scss` if using Jekyll, and in `docs\_markbind\layouts\default.md` if using MarkBind).<br>
+
+* More info on updating site-wide settings such as the above:
+  * If using Jekyll: follow [the Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=the%20final%20outcome.-,Site%2Dwide%20settings,-Typically%2C%20the%20_config).<br>
+  * If using MarkBind: follow [the MarkBind Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/markbind-forked-sites.html#:~:text=edit%20source%20files.-,Site%2Dwide%20settings,-The%20markbind/tweaking).<br>
 
 </div>
 {#====================================================================================================================#}
@@ -706,7 +733,7 @@ Update the following pages in your project repo:
 <div id="desc_update_the_ug">
 
 * **Move the draft UG content into the User Guide page** in your repository. Update the content/structure/formatting as necessary, to match the final form of the UG. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>{% if cs2103 %}
-  Remember to omit nitty gritty details in the previous 'internal' UG Draft if they are not appropriate for the actual UG.<br>{% endif %}
+  Remember to omit nitty-gritty details in the previous 'internal' UG Draft if they are not appropriate for the actual UG.<br>{% endif %}
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
@@ -748,7 +775,7 @@ At the end of the project, each member needs to create a Project Portfolio Page 
     Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
   * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth recording.
 
-<box type="tip" seamless>
+<box type="info" seamless>
 
 **The above DG sections should cover the _full requirements_ of the product**, some of which might not even get implemented by the end of this semester i.e., do not limit to just the requirements you intend to implement in the next iteration. Reason: All identified requirements need to be documented for future reference.
 
@@ -794,10 +821,18 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 <span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration</span>
 <div id="desc_do_a_practice_iteration">
 
-* To get some practice of doing project iterations, do this week's tP work (i.e., updates to various documents) as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
+
+* To get some practice of doing project iterations, do this week's tP work (which is just updates to various documents, no changes to functionality) to reach the milestone `{{ version_practice }}`. The panel below explains how to use GitHub to do a project iteration.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 
+
+<box type="tip" seamless>
+
+Strongly recommended to do this as a team activity (preferably F2F, or else connected via Zoom/MST), at least until everyone has merged a few PRs for this iteration. That will help you proceed faster (e.g., a PR can be reviewed immediately after it has been created) and will also make it easy for you to help each other w.r.t. to the workflow matters.
+</box>
+
+* The documentation updates to be done in this iteration are described in the tP tasks in the sections below.
 * Don't forget to 'wrap up' the milestone at the end of this week (as explained in the panel above), after the work is done.
 </div>
 {#====================================================================================================================#}

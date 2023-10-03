@@ -37,6 +37,7 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 
 * File name (i.e., in the repo): `docs/team/github_username_in_lower_case.md` e.g., `docs/team/goodcoder123.md`
 * {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ url_ab3_upstream_website }}/team/johndoe.html)
+* For the final submission of the PPP (at the end of the tP), you need to save your PPP as a PDF file. Therefore, ensure the PDF version of the PPP looks OK at least a few days before the final submission.
 
 <div class="indented-level2">
 
