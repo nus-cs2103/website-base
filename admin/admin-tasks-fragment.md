@@ -172,7 +172,7 @@ The info in the following panels differs from TIC4001.
 <span id="heading_submit_midterm_peer_evaluations">Submit midterm peer evaluations on TEAMMATES</span>
 <div id="desc_submit_midterm_peer_evaluations">
 
-* **Peer Evaluation Round 1** will open on TEAMMATES. You will receive the submission link soon.<br>
+* **Midterm Peer Evaluation** will open on TEAMMATES. You will receive the submission link by {{ get_date(date_w8_start, 1, time='10:00') }}.<br>
   <include src="admin-tasks-fragment.md#teammates-link-recovery-tip" inline />
 
 {{ embed_topic("peerEvaluations.md#midtermPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation", "1", indent="2", status="expanded") }}

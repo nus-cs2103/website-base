@@ -226,12 +226,12 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 
 <small>[Image source: [this article](https://medium.com/deekit-central/7-reasons-why-engineers-are-the-whiteboard-artists-c40acff8b0ed)]</small>
 </pic>
-**_Hand-drawing_ diagrams on a white-board and on paper is an important practical skill** %%(e.g., for technical interviews, project discussions)%%. It's possible that the diagrams you draw in your first few attempts to look amateurish, messy, and hard to read, and the drawing itself will take a long time. With more practice, you will be able to draw such diagrams quicker %%(e.g., draw as you explain verbally your design)%%, with less need for corrections, and the diagrams will look more _professional_ too.
+**_Hand-drawing_ diagrams on a white-board and on paper is an important practical skill** %%(e.g., for technical interviews, project discussions)%%. It's possible that the diagrams first few UML hand drawing attempts to feel laborious/slow, and the result look amateurish/ messy/hard-to-read. With more practice, you will be able to draw such diagrams quicker %%(e.g., draw as you explain verbally your design)%%, with less need for corrections, and the diagrams will look more _professional_ too.
 
-That is why we have structured these tutorials to get everyone to practice this skill so that **your first few (not-so-good) diagram drawing experiences happen in the tutorial, not in an interview or during your internship.**
+That is why we have structured these tutorials to get everyone to practice this skill so that **your first few (not-so-good) diagram drawing attempts to happen in the course, rather than in an interview or during your internship.**
 
 Note the following:
-* Draw ==on paper or on a whiteboard or use a free-hand drawing software== (e.g., Bamboo paper). If latter, do not use UML software or predefined shapes.
+* Draw ==on paper or on a whiteboard or use a free-hand drawing software== (e.g., Bamboo Paper). If latter, do not use UML software or predefined shapes.
 * For the same reason, don't use rulers.
 * When the tutor asks you to, take a screenshot or a photo of the drawing and post in the _tutorial workspace_ document.
 * {{ icon_tip }} There are mobile apps ([example](https://apps.apple.com/sg/app/evernote-scannable/id883338188)) that can take a photo of a document and and convert it to a high-quality scan.

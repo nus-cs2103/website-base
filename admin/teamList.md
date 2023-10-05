@@ -1,4 +1,4 @@
-{% from "_course-" + course + "/studentData-fragment.md" import students, tutorials, teams, products, users, values with context %}
+{% from "_course-" + course + "/studentData-fragment.md" import students, tutorials, teams, org_replacements, products, users, values with context %}
 
 <frontmatter>
 title: "tP Teams List"
@@ -79,6 +79,9 @@ This page will be populated later in the semester ...
     {% set student_name = student[0] %}
     {% set student_username = student[2] %}
     {% set team_org = semester + '-' + student_team %}
+    {% if team_org in org_replacements %}
+      {% set team_org = org_replacements[team_org] %}
+    {% endif %}
     {% set team_website = "https://" + team_org + ".github.io/" + tp_repo_name %}
     {% set team_repo = "https://github.com/" + team_org + "/" + tp_repo_name %}
 

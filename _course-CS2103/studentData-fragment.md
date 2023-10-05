@@ -246,11 +246,11 @@
   ['LIN ..IANG', 'CS2103T-T12-4', 'Clin-lyx'],
   ['LOW ..RREN', 'CS2103T-T12-4', 'Darren159'],
   ['RYAN..XIAN', 'CS2103T-T12-4', 'ryanongwx'],
-  ['ANDR..RONG', 'CS2103T-T13-0', 'rocketninja7'],
-  ['HUAN..HONG', 'CS2103T-T13-0', 'yyyaohhh'],
-  ['KYLE..CHAN', 'CS2103T-T13-0', 'xCOLOURx'],
-  ['TYE ..QUES', 'CS2103T-T13-0', 'marquestye'],
-  ['WONG..KEAN', 'CS2103T-T13-0', 'ji-just-ji'],
+  ['ANDR..RONG', 'CS2103T-T13-1', 'rocketninja7'],
+  ['HUAN..HONG', 'CS2103T-T13-1', 'yyyaohhh'],
+  ['KYLE..CHAN', 'CS2103T-T13-1', 'xCOLOURx'],
+  ['TYE ..QUES', 'CS2103T-T13-1', 'marquestye'],
+  ['WONG..KEAN', 'CS2103T-T13-1', 'ji-just-ji'],
   ['FONG..LVIN', 'CS2103T-T13-2', 'lordidiot'],
   ['LIM ..XIAN', 'CS2103T-T13-2', 'limjunxian1'],
   ['NGUY.. HAO', 'CS2103T-T13-2', 'VN-Hao'],
@@ -506,6 +506,11 @@
   ['TAN .. SEN', 'CS2103T-W17-4', 'GSgiansen'],
   ['ZHEN..NSON', 'CS2103T-W17-4', 'winson8222']
 ]%}
+
+{% set org_replacements = {
+  'AY2324S1-CS2103T-T13-1': 'AY2324S1-CS2103T-T13-0',
+  'AY2324S1-CS2103T-F08-4': 'AY2324S1-CS2103T-F08-0'
+}%}
 
 {% set teams = {
  'CS2103-F13-1': 'https://docs.google.com/document/d/1FmxgciqtWc33g0CEoBdHj0HKD7t8Z9z4M4Nd2Ior-Lw/edit?usp=sharing',

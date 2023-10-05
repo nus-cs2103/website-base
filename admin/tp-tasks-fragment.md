@@ -181,15 +181,13 @@ But you can continue to use your favorite Git GUI for a more 'visual' view of yo
 <div id="cs2103-week8-intro">
 <box type="info" seamless>
 
-**Improve upon AB3, design, code, test etc.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). Feel free to improve it in any way you see fit. In particular, ==find and fix any bugs it has==. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
-While we are on the topic, also note that the architecture of AB3 doesn't suite every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not be tempted to apply AB3 as a template for every other application you come across in the future**.
+**Feel free to improve AB3 in any way you see fit.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). In particular, ==find and fix any bugs it has==. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
+While we are on the topic, also note that the architecture of AB3 doesn't suite every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not try to apply AB3 as a template for _every_ other project you encounter in the future**.
 </box>
 <box>
 
 <include src="tp-tasks-fragment.md#prReviewsMatter" />
 
-
-{{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3") }}
 </box>
 
 </div>
@@ -710,7 +708,7 @@ Guidance on documentation can be found in the relevant section of the Developer 
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
     {{ icon_tip }} If you did the above update correctly, UI mock up and profile photos should appear in your project website and this [**Project List Page**]({{ url_team_list }}).<br>
     {{ info }} The UI mock up can be a hand-drawn sketch or created using a tool such as PowerPoint, PlantUML, Figma, etc. <br>
-    {{ icon_Q }} Can the AB-3 screenshot used for this? Only in the unlikely case that your {{ version_first }} UI looks exactly the same as AB-3.
+    {{ icon_Q }} Can the AB3 screenshot used for this? Only in the unlikely case that your {{ version_first }} UI looks exactly the same as AB3.
 
   * Update all contents to match your own project.
 
@@ -905,6 +903,7 @@ Strongly recommended to do this as a team activity (preferably F2F, or else conn
 {{ embed_topic("tp-expectations.md#functionalityExpectations", "Admin " + icon_embedding + " tP: Functionality Expectations", "3", indent="1") }}
 {{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations (and ==guidance on work distribution==)", "3", indent="1") }}
 {{ embed_topic("tp-expectations.md#teamExpectations", "Admin " + icon_embedding + " tP: Team Expectations", "3", indent="1") }}
+{{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_adjust_process_rigor">{{ icon_team }} Adjust process rigor if necessary</span>
