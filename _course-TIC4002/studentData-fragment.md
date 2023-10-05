@@ -9,6 +9,10 @@
  ['ROSH..UMAR', 'TIC4002-F16-1', 'roshankumar1991']
 ]%}
 
+{% set org_replacements = {
+
+}%}
+
 {% set teams = {
 
 }%}
