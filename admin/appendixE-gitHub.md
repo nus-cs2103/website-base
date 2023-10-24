@@ -242,7 +242,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
     * If you think all PRs should be reviewed by someone other than the PR author before they are merged, also tick the `Require pull request reviews before merging` option.
 * **Create issues to represent project tasks** so that they can be tracked using the issue tracker features.
 * **Create a PR when you implement a project task** that updates the code.<br>
-  =={{ icon_alert }} Don't forget to do each PR in a separate branch, as that is an essential part of the forking workflow.==<br>
+  =={{ icon_alert }} Don't forget to send each PR from a separate branch, as that is an essential part of the forking workflow.==<br>
   {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.<br>
 * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
   * Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html).<br>
@@ -285,7 +285,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 **After following the given workflow for at least <tooltip content="i.e., until the end of {{ version_first }}">one iteration</tooltip>, optionally, you may adjust the process rigor** to suit your team's pace. Here are some examples:
 
 * **Switch to a lighter workflow**:
-  * While _forking workflow_ is the safest (and is recommended), it is also rather heavy. You may switch to a simpler workflow if the forking workflow if you wish. Refer the textbook to find more about [alternative workflows](../se-book-adapted/chapters/revisionControl.html):
+  * While _forking workflow_ is the safest (and is recommended), it is also rather heavy. You may switch to a simpler workflow if you wish. Refer the textbook to find more about [alternative workflows](../se-book-adapted/chapters/revisionControl.html):
     * The _feature branches_ workflow: a reasonable alternative, but if you choose this, make sure your master branch is _protected_ and most members have write access only (i.e., no admin access)
     * The _centralized workflow_: discouraged.
   * Even if you do switch, we still recommend that you use PR reviews, at least for PRs affecting others' features.

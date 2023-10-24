@@ -13,7 +13,7 @@
 
 <div id="how-to-prove-out-of-scope">
 
-* **How to prove that something is `response.NotInScope`**: In general, a flaw (e.g., a missing feature, a sub-optimal design of a feature, a known bug) can be considered `NotInScope` if rectifying it is less important (based on the value/effort considerations) than the work that has been done already (because it is fine to delay lower priority work until future iterations).<br>
+* **How to prove that something is `response.NotInScope`**: In general, a flaw (e.g., a missing feature, a suboptimal design of a feature, a known bug) can be considered `NotInScope` if rectifying it is less important (based on the value/effort considerations) than the work that has been done already (because it is fine to delay lower priority work until future iterations).<br>
   In addition, the following (at least one) need to be satisfied:
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
@@ -64,9 +64,9 @@ However, if such input can be entered by a user mistake, they should not cause h
   Lack of proper handling (either blocking or warning) for potentially invalid inputs can be considered a `type.FeatureFlaw` bug too. Not detecting easy-to-detect incorrect flags (e.g., user entered `/t` but it should be `/tag`) is a `FeatureFlaw` too.
 
 * **Specificity of error message**: Error messages can be correct but not specific enough %%(e.g., it says the input is 'invalid' without giving the reason, or gives too many possible reasons without pointing out the specific reason)%%. These cases can be considered `type.FeatureFlaw`.<br>
-  Calling an invalid value a 'format error' and vice versa is a `severity.Low` bug e.g., if a date input is required to be in `YYYY-MM-DD` format, `2021-13-28` is a _format_ error (reason: `MM` should be in `1..12`) but `2021-02-30` is an _invalid_ input (reason: February doesn't have 30 days). However, issuing a 'Invalid date or incorrect format' error message for such a case (i.e., covering both bases) is acceptable if differentiating between the two qualifies for `NotInScope`.
-* **Unnecessarily complicated (or hard-to-type) command formats** can be considered a `type.FeatureFlaw` as it is expected that the input formats will be optimized to get things done fast. Some examples: using very long keywords when shorter ones do, or making keywords case-sensitive when there is no need for it, using hard to type special characters in the format when it is possible to avoid them.
-* **Case sensitivity**: In general, case sensitivity of something should follow the case sensitivity of the real world entity it represents e.g., as person names are not case sensitive in the real world, they shouldn't be case sensitive in the app either. The same applies for search key words. Incorrect case sensitivity can be considered a `FeatureFlaw`.
+  Calling an invalid value a 'format error' and vice versa is a `severity.Low` bug e.g., if a date input is required to be in `YYYY-MM-DD` format, `2021-13-28` is a _format_ error (reason: `MM` should be in `1..12`) but `2021-02-30` is an _invalid_ input (reason: February doesn't have 30 days). However, issuing a 'Invalid date or incorrect format' error message for such a case (i.e., covering both bases) is acceptable if differentiating between the two qualifies as `NotInScope`.
+* **Unnecessarily complicated (or hard-to-type) command formats** can be considered a `type.FeatureFlaw` as it is expected that the input formats will be optimized to get things done fast. Some examples: using very long keywords when shorter ones do, or making keywords case-sensitive when there is no need for it, using hard-to-type special characters in the format when it is possible to avoid them.
+* **Case sensitivity**: In general, case sensitivity of something should follow the case sensitivity of the real world entity it represents e.g., as person names are not case-sensitive in the real world, they shouldn't be case-sensitive in the app either. The same applies for search keywords. Incorrect case sensitivity can be considered a `FeatureFlaw`.
 
 </div>
 

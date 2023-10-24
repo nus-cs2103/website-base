@@ -581,7 +581,7 @@ Next, a heuristic used for improving the quality of test cases.
 <div id="{{ slugify("Boundary Value Analysis") }}" >
 <div id="{{ slugify("Test Cases: Boundary Value Analysis") }}" >
 
-Previously, you learned about _equivalence partitions_, a heuristic for dividing the possible test cases into partitions. But which test cases should we pick from each partition? Next, let us learn another heuristic which can addresses that problem.
+Previously, you learned about _equivalence partitions_, a heuristic for dividing the possible test cases into partitions. But which test cases should we pick from each partition? Next, let us learn another heuristic which can help us answer that question.
 </div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->

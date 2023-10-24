@@ -56,7 +56,7 @@
 
 <span id="dgTips">
 
-* **Aim to showcase your documentation skills.** The primary objective of the DG is to explain the implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond {{ version_final }} (hypothetically).<br>
+* **Aim to showcase your documentation skills.** The primary objective of the DG is to explain the design/implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond {{ version_final }} (hypothetically).<br>
   For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ url_ab3_upstream_website }}/DeveloperGuide.html#proposed-undoredo-feature).
 * **Use multiple UML diagram types.** Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.
 * **Diagramming tools**:
@@ -67,7 +67,7 @@
   * {{ icon_info }} Can <tooltip content="i.e., automatically reverse engineered from the Java code">IDE-generated</tooltip> UML diagrams be used in project submissions? Not a good idea. Given below are three reasons each of which can be reported by evaluators as 'bugs' in your diagrams, costing you marks:
     * They often don't follow the standard UML notation (e.g., they add extra icons).
     * They tend to include _every_ little detail whereas we want to limit UML diagrams to important details only, to improve readability.
-    * Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code. e.g., differentiating between multiplicities `0..1` vs `1`, composition vs aggregation
+    * Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code %%e.g., differentiating between multiplicities `0..1` vs `1`, composition vs aggregation%%.
 * **Keep diagrams simple.** The aim is to make diagrams ==_comprehensible_, not necessarily _comprehensive_==.<br>
   Ways to simplify diagrams:
   * **Omit less important details**. Examples:
@@ -93,11 +93,11 @@
   <pic eager src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></pic>
 
   <hr>
-  This class diagram seems to have too many classes:
+  This class diagram seems to have too many classes:<br>
   <pic eager src="https://cs2103-ay1819s1-f10-1.github.io/main/images/ModelClassDiagram.png" width="750"></pic>
 
   <hr>
-  These sequence diagrams are bordering on 'too complicated':
+  These sequence diagrams are bordering on 'too complicated':<br>
   <pic eager src="https://cs2103-ay1819s1-w13-1.github.io/main/images/TagCommandSequenceDiagram.png" width="750"></pic>
   <p/>
   <pic eager src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750"></pic>

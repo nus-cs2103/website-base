@@ -14,7 +14,7 @@
 <box type="warning" seamless>
 
 **The goal of freezing features in the pre-release iteration** is to subject the features to at least one round of intensive non-dev testing before they are released to the users. In other words, avoiding behavior changes unless they are strictly necessary, so that we minimize the possibility of introducing more bugs.<br>
-In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, <span class="text-danger">{{ version_final }} should not have _any_ behaviors that were not already tested in the PE-D</span>). Hence, the feature freeze ==comes into effect at the point you released the JAR file that was used for the PE-D==.
+In a real project, minor or critical changes might be allowed even near a deadline -- but here, we do not allow _any_ feature changes because it can start us on a slippery slope and many "is this change allowed?" queries. Therefore, <span class="text-danger">{{ version_final }} should not have _any_ behaviors that were not already tested in the <tooltip content="PE Dry run">PE-D</tooltip></span>). Hence, the feature freeze ==comes into effect at the point you released the JAR file that was used for the PE-D==.
 
 While the info below provides you what to do and what not to do in {{ version_final }} specific cases, the important thing is to understand and ==**follow the spirit of the _feature freeze_** (i.e., do not change features further; correct unintentional errors only)==.
 
@@ -47,7 +47,7 @@ If will be considered a feature change (i.e., not allowed to do) if,
 
 <panel type="seamless" header="**Q2:** Will we be penalized for feature flaws not fixed during the feature freeze?" minimal>
 
-**A:** Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some feature flaws as this stage is natural. Hence, feature flaws will not be penalized In the following cases:
+**A:** Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some feature flaws as this stage is natural. Accordingly, feature flaws will not be penalized In the following cases:
 
 * If the feature flaw will be fixed by an item you listed in the _Planned enhancements_ DG section (as mentioned above).
 * After the feature flaw is reported during the PE, you successfully argued it as 'not in scope' (i.e., fixing that flaw is of lower priority than the work done already, and hence it is justifiable to be postponed to a future version). Reporters of such bugs will earn partial credit.
@@ -204,6 +204,12 @@ While on the topic of version numbers, **_milestones_ and _versions_ are not the
 In a similar vein, we use the version number to refer to the iteration as well, although they are not the same thing. So, when we say _iteration `{{ version_first }}`_, we mean _the iteration that ends in the milestone `{{ version_first }}`_ (that also happens to deliver the product version `{{ version_first }}`)
 
 </box>
+<box type="info" seamless icon=":fas-question:">
+
+**FAQ:** When is the {{ version_first }} deadline?{.text-info}
+
+Answer: The usual deadline for weekly project tasks apply %%i.e., try to do by midnight before the tutorial, latest by the lecture.%%
+</box>
 <box type="tip" seamless>
 
 <span class="text-success">**Using parallel PRs yet?**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%
@@ -232,7 +238,7 @@ Finally, we don't expect each of you to put into the tP more _effort_ than you p
 
 ****{{ icon_tip }} How much is enough to get full marks?**** Not surprisingly, a common question tutors receive around this time of the project is "can you look at our project and tell us if we have done enough to get full marks?". Here's the answer to that question:
 
-**The tP _effort_ is graded primarily based on peer judgements** (tutor judgements are used too). That means you will be judging the effort of another team later, which also means you should be able to make a similar judgement for your own project now. Granted effort estimating is hard for software projects, but it is an essential SE skill, and we must practice it when we can.
+**The tP _effort_ is graded primarily based on peer judgements** (tutor judgements are used too). That means you will be judging the effort of another team later, which also means you should be able to make a similar judgement for your own project now. While we understand effort estimating is hard for software projects, it is an essential SE skill, and we must practice it when we can.
 
 **The expected minimum bar to get full marks for _effort_**:
 * For the team: an effort equivalent to the effort required to develop AB3 from scratch
@@ -831,7 +837,8 @@ Strongly recommended to do this as a team activity (preferably F2F, or else conn
 </box>
 
 * The documentation updates to be done in this iteration are described in the tP tasks in the sections below.
-* Don't forget to 'wrap up' the milestone at the end of this week (as explained in the panel above), after the work is done.
+* Don't forget to 'wrap up' the milestone (as explained in the panel above), after the work is done.
+* Ideally, this should be done by the midnight before the tutorial, but failing that, before the next lecture, as usual.
 </div>
 {#====================================================================================================================#}
 <span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration</span>
@@ -843,12 +850,26 @@ Strongly recommended to do this as a team activity (preferably F2F, or else conn
 
 * {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
   * ==**Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)**== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
-  * **[Recommended, Optional] Break the iteration into two _increments_** i.e., aim to produce an even simpler but working version after one week.
   * **Avoid depth-first implementations**: "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of breadth-first iterative process. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet.
+  * **[Recommended, Optional] Break the iteration into two _mini_ iterations** as follows:
+
+<div class="indented-level2" id="mini-iterations-panel">
+<panel type="info" header="Splitting `{{ version_first }}` into two **_mini_ iterations**" expanded>
+
+* `{{ version_first }}`: the first working version of your product, to be delivered by the mid-milestone (i.e., in about one week). As this is an internal milestone, the exact deadline is upto your team.
+* `{{ version_first }}b`: an even more functional version of the product, to be delivered by the end of the full iteration (i.e., in two weeks)
+
+This goal of this 'optimization' is to reduce the risk of an <tooltip content="i.e., you have no working version of the product by the time you reach the iteration deadline.">iteration deadline _overrun_</tooltip>. As a side benefit, it also gives you more opportunities to practice iteration planning.
+
+The reason for naming the earlier milestone as `{{ version_first }}` is so that even if you fail to finish the second one, you can still get credit for reaching `{{ version_first }}` (which is the milestone tracked by grading scripts) -- think of the first iteration as _minimal deliverables for `{{ version_first }}`_ and the second one as containing _do-if-there-is-time_ improvements.
+
+Each mini iteration should deliver a working product, not just do half of the tasks planned for the full iteration. Otherwise, it defeats the purpose of this optimization.
+</panel>
+</div>
+
 * {{ icon_team }} **Divide the work among the team members** i.e., the work required for the current iteration.
-* {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a place holder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_first }}`%%<br>
-  **If you split the iteration into two smaller iterations** of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b` so that the dashboard can track them accurately. %%The reason for naming the earlier milestone as `{{ version_first }}` is so that even if you fail to finish the second one, you can still get credit for reaching `{{ version_first }}` (which is the milestone tracked by grading scripts) -- think of the first iteration as _minimal deliverables for `{{ version_first }}`_ and the second one as containing _do-if-there-is-time_ improvements.%%
+* {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a placeholder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_first }}`%%
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_implementing_the_next_version">{{ icon_individual }} Start implementing the next version</span>
@@ -945,11 +966,13 @@ Strongly recommended to do this as a team activity (preferably F2F, or else conn
 <span id="heading_add_first_functionality_increment">{{ icon_individual }} Add the first functionality increment</span>
 <div id="desc_add_first_functionality_increment">
 
-* **Add functionality in small steps**, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and `{{ version_first }}` at the end of this iteration (i.e., in two weeks).<br>
-  As mentioned in the last week, if you split the iteration into two smaller increments of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b`.
+* **Ensure you are aware of the instructions for planning this iteration**, given as part of previous week's tP instructions, and also repeated in the panel below for your convenience:
 
-* **{{ icon_important_big_red }} Push as hard as you can afford to** in this iteration: While we have kept the expectations bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_first }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
-That said, you should also play it safe by aiming to reach a _smallest possible_ version in `{{ version_first }}` before squeezing in more implementation work into `{{ version_first }}b`.
+{{ embed_topic("tp-tasks-fragment.md#desc_plan_the_next_iteration", "%%**[Repeated from last week]**%% Admin " + icon_embedding + " tP: Week 7: Plan the next iteration", "1", status="expanded", indent="1") }}
+
+* **{{ icon_important_big_red }} Iteration deadline: midnight before week 9 tutorial** (i.e., in about 1.5 weeks). Do your best to have a demo-able product by the midnight before the following week's tutorial (i.e., the soft deadline for weekly tP tasks). That way, the period between that deadline and the lecture (i.e., soft deadline for weekly tP tasks) can be used as a buffer in case you overrun the soft deadline.
+* **Push as hard as you can afford to** in this iteration: While we have kept the expectations bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_first }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
+At the same time, we recommend you should also play it safe by aiming to reach a _smallest possible_ version early and squeeze more in only if there is time left.
 
 * {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this course because incremental delivery, among other things, improves the _visibility_ of your work.">(reason)</popover>%%.
 
@@ -1014,7 +1037,7 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 <div id="demo">
 <div tags="m--cs2103 m--cs2113">
 
-* [one member] Run your app using the latest released version `{{ version_first }}` <span tags="m--cs2103 m--tic4002">(or `{{ version_first }}b`, if applicable)</span>. {% if cs2113 %}Take screenshots of each available feature in action. Add those screenshots to the shared workspace.<br>You can also add the screenshots to your _project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`, and reuse them as necessary in the documentation.{% else %}Take screenshots of each available feature in action. Add those screenshots to your _project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.{% endif %}
+* Run your app using the latest released version `{{ version_first }}` <span tags="m--cs2103 m--tic4002">(or `{{ version_first }}b`, if applicable)</span>. {% if cs2113 %}Take screenshots of each available feature in action. Add those screenshots to the shared workspace.<br>You can also add the screenshots to your _project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`, and reuse them as necessary in the documentation.{% else %}<br>Take screenshots of ==each updated feature in action== (if the feature is not obvious from the screenshot, you can annotate the screenshot to draw attention to where the feature appears in the screenshot).<br>Add those screenshots to your _project notes_ document (the same document specified in [this page](teamList.md)) with an appropriate heading e.g., `{{ version_first }} features demo`.<br> Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.{% endif %}
 </div>
 <div tags="m--tic4001 m--tic4002">
 
@@ -1027,7 +1050,7 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 <div id="desc_do_a_postmortem">
 
 * Discuss with the team how the iteration went (i.e., what worked well, what didn't), and your **plans to improve the process** (not the product) in the next iteration.
-* Keep notes about the discussion in your project notes document so that the tutor can check them.
+* Keep notes about the discussion in your shared _project notes document_ so that the tutor can check them later.
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_on_the_penultimate_version">{{ icon_individual }} Start the next iteration</span>
@@ -1036,9 +1059,9 @@ That said, you should also play it safe by aiming to reach a _smallest possible_
 
 <box type="important" tags="m--cs2103" seamless>
 
-{% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features** as a <span class="text-danger">feature-freeze will be enforced in the next iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized. In other words, **in terms of product design, treat this iteration as creating the final version of the product**.{% endif %}
+{% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features** as <span class="text-danger">a strict feature-freeze will be enforced in the next iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized. In other words, **in terms of product design and implementation, treat this iteration as creating the final version of the product**.{% endif %}
 
-The version you deliver in this iteration (i.e., {{ version_penultimate }}) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the {{ version_final }} later.{% endif %}
+The version you deliver in this iteration (i.e., `{{ version_penultimate }}`) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the feature freeze later.{% endif %}
 
 Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks {% if cs2103 %} (<span class="text-danger">you will not be allowed to fix feature flaws while a feature-freeze is in force</span>).{% endif %} The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
 

@@ -6,7 +6,7 @@
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_followup("Design Patterns", reuse=false) %}
 
-A couple of more design patterns will be covered next week.
+A few more design patterns will be covered next week.
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {{ topic_preamble("Defensive Programming") }}
