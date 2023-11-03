@@ -106,7 +106,7 @@
 {% set stars = {"0": "", "1": s, "2": s+s, "3": s+s+s, "4": s+s+s+s} %}
 {%  if indent != "0" %}<div class="indented-level{{ indent }}">{% endif %}
 {% set popup_url = "" %}
-{% if '#main' in source or '#' not in source %}
+{% if ('#main' in source or '#' not in source) and ('fragment.md' not in source) %}
 {% set popup_url %}popup-url="{{ source | replace(".md", ".html") | replace("#main", "") }}"{% endset %}
   {% if not status %}{% set status = 'collapsed'%}{% endif %}
 {% endif %}

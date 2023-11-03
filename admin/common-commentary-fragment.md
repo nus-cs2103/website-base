@@ -754,7 +754,7 @@ Now that you know the basic notations for the sequence diagrams, here is a worke
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Sequence Diagrams: Intermediate") }}">
 
-Earlier, you learned the basic syntax used in sequence diagrams. Now, let's learn some intermediate syntax.
+Earlier, you learned the basic notation used in sequence diagrams. Now, let's learn some intermediate notation.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Followup Sequence Diagrams: Intermediate") }}">

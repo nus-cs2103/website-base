@@ -11,26 +11,18 @@
 <p/>
 
 <div class="indented-level2">
-<box type="success" border-left-color="green" icon="">
+<box type="success" border-left-color="green">
 
 You may release a newer version to be used for the PE dry run, but make sure it is released <span class="text-danger">by {{ day_lecture }} 10am</span>.
 </box>
 </div>
 
 
-<!--
-#### {{ thumb(2) }} Exercise: test case design
-* Divide into two sub-teams and do the following exercises on the white board. Both sub-teams should do both exercises.
-<div class="indented-level2">
-  <include src="../../book/testCaseDesign/summary/exercises/q-essay-dayParameter.md" />
-  <include src="../../book/testCaseDesign/combiningTestInputs/mix/q-testCasesForConsumeMethod.md" />
-</div>
--->
 #### {{ thumb(1) }} Exercise: Equivalence partitions, boundary values
 
 * Do the following exercise as directed by the tutor.
 
-<div class="indented-level2">
+<div class="indented">
   <include src="../../book/testCaseDesign/summary/exercises/q-essay-dayParameter.md" />
 </div>
 <br>
@@ -39,7 +31,7 @@ You may release a newer version to be used for the PE dry run, but make sure it 
 
 * Do the following exercise similar to the previous one.
 
-<div class="indented-level2">
+<div class="indented">
   <include src="../../book/testCaseDesign/combiningTestInputs/mix/q-testCasesForConsumeMethod.md" />
 </div>
 <br>
@@ -48,7 +40,7 @@ You may release a newer version to be used for the PE dry run, but make sure it 
 
 * Do the following exercise similar to the previous one.
 
-<div class="indented-level2">
+<div class="indented">
   <include src="../../book/designPatterns/more/combiningDesignPatterns/q-essay-getNotified.md" />
 </div>
 <br>

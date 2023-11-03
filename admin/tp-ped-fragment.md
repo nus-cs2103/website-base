@@ -49,13 +49,17 @@ Evaluation rubric:
 * Meets expectations: 3-5 good bug reports
 * Exceeds expectations: more than 5 good bug reports
 
-A _good_ bug report,
+For reference, here are what we consider as qualities of a good bug report:
+<box>
+<div id="bug-report-quality-criteria">
 
-[a] has a descriptive title,<br>
-[b] has enough details,<br>
-[c] severity/type labels chosen are not too far off,<br>
-[d] is written in a non-confrontational tone, and<br>
-[e] points out a potentially problematic behavior (or a good way to improve the product)
+* has a descriptive title { icon="fas-check" i-class="text-success"}
+* has enough details e.g., ==steps to reproduce, expected, actual, and screenshots==.
+* severity/type labels chosen are not too far off
+* is written in a non-confrontational tone
+* points out a potentially problematic behavior (or a good way to improve the product)
+</div>
+</box>
 
 As you can't be sure which of your bug reports will be considered as _good_ (criterion [e] in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total. The **median bug reports count in the last round was 9**.
 {% endif %}
@@ -218,12 +222,21 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 
 ###### <div class="text-white bg-secondary p-1">e) Bug report format</div>
 
+
 * Each bug should be a separate issue %%i.e., do not report multiple problems in the same bug report.%%<br>
   If there are multiple bugs in the same report, the dev team will select only one of the bugs in the report and discard the others.
 * When reporting similar bugs, it is safer to report them as separate bugs because there is no penalty for reporting duplicates while putting multiple bugs in the same report can reduce your bug count (see the previous point). But as submitting multiple bug reports take extra time, if you are quite sure they will be considered as _duplicates_ by the dev team later, you can report them together, to save time.
-* Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
-* Use a descriptive title.
-* Give a good description of the bug with ==steps to reproduce, expected, actual, and screenshots==. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.
+* Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.<br>
+  Remember to give enough details for the receiving team to reproduce the bug. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.
+
+<div class="indented-level1">
+<panel type="seamless" header="Reminder: Qualities of a good bug report" minimized>
+
+<include src="tp-ped-fragment.md#bug-report-quality-criteria" />
+</panel>
+</div>
+<p/>
+
 * Assign exactly one `severity.*` label to the bug report. Bug reports without a severity label are considered `severity.Low` (lower severity bugs earn lower credit)<br>
 
 <div class="indented-level1">
@@ -284,7 +297,7 @@ Use the pain of dealing with this kind of bug reports as an opportunity to devel
   * Assign each bug to the person who should fix it.
 * **You may ignore `type/severity.*` labels given by the tester.** They will not affect you or the tester either way -- they were there just for the testers to practice. You may apply your own type/severity labels if you wish.<br>
   {{ icon_important_big_red }} In particular, beware of simply following the `type.*` given by the tester; it is your job to decide the correct type of the issue. e.g., What the tester labeled as a _bug_ might actually be a _feature flaw_.{% if cs2103 or tic4002 %}
-* **If a bug report is simply a feature suggestion**, you can take note of it and close it (to reduce clutter in the issue tracker, and to make it easy for the teaching team to track your progress on dealing with PE-D issues). Similarly, you can close PE-D issues not relevant to {{ version_penultimate }}.{% endif %}
+* **If a bug report is simply a feature suggestion**, you can take note of it and close it (to reduce clutter in the issue tracker, and to make it easy for the teaching team to track your progress on dealing with PE-D issues). Similarly, you can close PE-D issues not relevant to {{ version_final }}.{% endif %}
 
 
 <box type="wrong" seamless>

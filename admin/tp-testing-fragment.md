@@ -4,7 +4,7 @@
 
 * Ensure you have access to a **computer that is able to run course projects** %%e.g. has the right Java version%%.
 
-* **Ensure you can run [CATcher](https://catcher-org.github.io/CATcher/)** on your computer. You should have done this when you smoke-tested CATcher earlier in the semester.
+* **Ensure you can use [CATcher](https://catcher-org.github.io/CATcher/)** on your computer. You should have done this when you smoke-tested CATcher earlier in the semester.
 
 <div class="indented-level1">
 

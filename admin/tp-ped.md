@@ -1,7 +1,7 @@
 {% from "common/macros.njk" import embed_topic with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
-{% call show_admin_page("tp-pe") %}
+{% call show_admin_page("tp-ped") %}
 <div id="main">
 
 ### <div class="text-white bg-primary p-1">tP: Practical Exam Dry Run (PE-D)</div>

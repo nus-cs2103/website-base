@@ -95,8 +95,9 @@ Penalties:
 * You are allowed to reuse code from external sources, subject to following conditions:
   * You clearly give credit to the original author/source.
   * You do not violate the license under which the work has been released. Please  **do not use 3rd-party images/audio** in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.
-* ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ url_forum }}). That way, the whole class get to see what libraries are being used by others.<br>
-  Note that once a 3rd party library has been approved for one student/team, it can be used freely by others without asking for approval again.
+* ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ url_forum }}). That way, the whole class get to see what libraries are being used by others.
+  * Our approval is given based on compliance with the course. Compliance with the license of the reused software is entirely your responsibility. While we don't anticipate such a case, any liability from improper reuse of a third-party library is to be borne by the person who reused it (i.e., not NUS).
+  * Once a 3rd party library has been approved for one student/team, it can be used freely by others without asking for approval again.
 
 <div id="cite-reuse-immediately">
 <box type="important" seamless icon=":fas-exclamation:">
@@ -155,7 +156,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   ```
 * If you copy-pasted a non-trivial code block (possibly with minor modifications %%renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags">`@@author` tags</trigger> with the ==`-reused`== suffix)<br>
   Format:
-  ```java
+  ```java{highlight-lines="1['@@author'],6['@@author']"}
   //@@author {yourGithubUsername}-reused
   //{Info about the source...}
 
@@ -164,7 +165,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   //@@author
   ```
   {{ icon_example }} Example of reusing a code snippet (with minor modifications):
-  ```java
+  ```java{highlight-lines="2['@@author'],11['@@author']"}
   persons = getList()
   //@@author johndoe-reused
   //Reused from https://stackoverflow.com/a/34646172

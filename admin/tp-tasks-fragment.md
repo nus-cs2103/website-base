@@ -23,7 +23,7 @@ While the info below provides you what to do and what not to do in {{ version_fi
 {{ icon_tick_green }} fixing bugs (but not _feature flaws_) -- we use a very restrictive definition of 'bugs' for the feature freeze; to avoid violating the feature freeze unintentionally, be sure to check the FAQs below before you do any fixes/tweaks.<br>
 {{ icon_tick_green }} improving documentation<br>
 {{ icon_tick_green }} improving code quality<br>
-{{ icon_tick_green }} improving tests<br>
+{{ icon_tick_green }} improving the testing aspect<br>
 {{ icon_tick_green }} removing features
 
 {{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span><br>
@@ -47,7 +47,7 @@ If will be considered a feature change (i.e., not allowed to do) if,
 
 <panel type="seamless" header="**Q2:** Will we be penalized for feature flaws not fixed during the feature freeze?" minimal>
 
-**A:** Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some feature flaws as this stage is natural. Accordingly, feature flaws will not be penalized In the following cases:
+**A:** Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some feature flaws at this stage is natural. Accordingly, feature flaws will not be penalized In the following cases:
 
 * If the feature flaw will be fixed by an item you listed in the _Planned enhancements_ DG section (as mentioned above).
 * After the feature flaw is reported during the PE, you successfully argued it as 'not in scope' (i.e., fixing that flaw is of lower priority than the work done already, and hence it is justifiable to be postponed to a future version). Reporters of such bugs will earn partial credit.
@@ -254,7 +254,7 @@ If you surpass the above bars (in your own estimation), you should be in a good 
 
 <box dismissible>
 
-{{ icon_tip }} when setting the {{ version_final }} deadline in GitHub milestones, remember that the {{ version_final }} submission deadline is Week 13 Monday for _everyone_ (does not vary by tutorial day). Set your own milestone deadline accordingly, or else our grading scripts will flag it as an 'unsuitable' deadline.
+{{ icon_tip }} when setting the {{ version_final }} deadline in GitHub milestones, remember that the {{ version_final }} submission deadline is early in Week 13 for _everyone_ (does not vary by tutorial day). Set your own milestone deadline accordingly, or else our grading scripts will flag it as an 'unsuitable' deadline.
 </box>
 
 <box background-color="white" border-color="red">
@@ -1226,7 +1226,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
-1. **Use the app (not the GitHub Web interface) to create 1-2 dummy bug reports**. The steps are similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
+1. **Use the app (not the GitHub Web interface) to create 1-2 <tooltip content="i.e., bug reports containing some random content">dummy bug reports</tooltip>**. The steps are similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
    {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
    {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
    {{ icon_info }} The `severity` and `type` labels are compulsory.
@@ -1235,8 +1235,12 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 
 </panel>
 <p/>
-
 </div>
+
+{% if cs2103 %}
+* **[Heads up] Load-testing CATcher will be done during the upcoming lecture** ({{ get_date(date_w11_start, 0, time="") }}), during the first 15 minutes of lecture. This is ==different from smoke-testing== you did above, and this will count for participation separately.<br>
+  Therefore, remember to ==attend the live lecture (via Zoom or F2F) at least for the first 15 minutes== (this activity cannot be done any other time).
+{% endif %}
 
 </div>
 {#====================================================================================================================#}
@@ -1258,21 +1262,21 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <div id="desc_update_user_docs">
 <include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
-* {{ icon_important_big_red }} Update the {{ version_penultimate }} user guide to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
+* {{ icon_important_big_red }} **Update the {{ version_penultimate }} User Guide** to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
   * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.<br>
   Alternatively, clearly{% else %}Clearly{% endif %} indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="1") }}
 <div tags="m--cs2103 m--tic4002">
 
 * **Landing page (`docs/index.md`)**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.
 
-<modal large header="Admin → Project Deliverables → Website" id="modal:v13-tipsForProductScreenshot">
+<modal large header="Admin → Project Deliverables → Website -> Tips for Product Screenshots" id="modal:v13-tipsForProductScreenshot">
   <include src="tp-deliverables-website-fragment.md#tips-for-product-screenshot"/>
 </modal>
 </div>
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="1") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1282,7 +1286,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <div id="demo">
 <div tags="m--cs2103 m--cs2113">
 
-* [one member] As was done in `{{ version_first }}`,
+* As was done in `{{ version_first }}`,
   * Run your application using the ==JAR file== that you released for `{{ version_penultimate }}`.
   * Take screenshots of each available feature in action (or screen-record a demo -- need not be polished).
   * Add those screenshots (or upload the demo video somewhere and give the link) to your _project notes_ document with an appropriate heading e.g., `{{ version_penultimate }} features demo`.
@@ -1317,7 +1321,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <div id="desc_release_as_a_jar_file">
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Aim to release it by the usual soft deadline (i.e., midnight before your tutorial). Do some manual tests to ensure the jar file works.
-* **You can do an _additional_ JAR release before the [PE dry run (PE-D)](tp-pe.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional JAR is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous one %%(reason: it is good to preserver the release history)%% -- testers are expected to take the latest JAR file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
+* **You can do an _additional_ JAR release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional JAR is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous one %%(reason: it is good to preserver the release history)%% -- testers are expected to take the latest JAR file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
   Waiting till Friday 10am to release the `{{ version_penultimate }}` JAR file is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.{% if cs2103 %}
 * **The <trigger trigger="click" for="modal:v13-jar-desc">_feature freeze_</trigger> will apply at the point you released the JAR file that was used in the PE-D** i.e., the features submitted in the final `{{ version_final }}` two weeks later should be the same as the features tested during PE-D, which is the rationale for the feature freeze anyway.{% endif %}
 
@@ -1424,6 +1428,14 @@ Also see:
 * **Update your review comments if necessary**, based on the discussion you just had. After that, you can submit the review.<br>
 -->
 * **After the tutorial**, if you are unsure about a concern raised by a reviewer, you can post in the [forum]({{ url_forum }}) to seek the opinion of the teaching team.
+</div>
+{#====================================================================================================================#}
+<span id="heading_get_ready_for_the_PED">{{ icon_individual }} Get ready for the practical exam dry run</span>
+<div id="desc_get_ready_for_the_PED">
+
+* The practical exam dry run (PE-D) will be held in the coming lecture. It is ==graded==. See the panel below for more info.
+
+{{ embed_topic("tp-ped.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>
@@ -1588,6 +1600,7 @@ Not applicable this semester
 * Take note of the following project constraint:
 
 {{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Contstraints → Constraint-PDF-Friendly", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Contstraints → Constraint-File-Size", "2", indent="1") }}
 
 * Take note of the following info about the PDF conversion, appearing in next week's project tasks. Particularly, note the suggestion to try PDF conversions early.
 

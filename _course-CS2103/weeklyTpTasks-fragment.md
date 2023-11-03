@@ -52,7 +52,8 @@ week11: [
   {id: 'update_user_docs'},
   {id: 'release_as_a_jar_file'},
   {id: 'wrap_up_penultimate_version'},
-  {id: 'demo_penultimate_version', deadline: 'before the tutorial'}
+  {id: 'demo_penultimate_version', deadline: 'before the tutorial'},
+  {id: 'get_ready_for_the_PED', deadline: 'before next lecture'}
 ],
 week12: [
   {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w12_start, time=""), graded: true},
