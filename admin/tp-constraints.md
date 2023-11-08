@@ -48,6 +48,14 @@ The product needs to be developed in a breadth-first incremental manner over the
 {% call show_constraint("Constraint-Human-Editable-File") -%}
 The data should be stored locally and should be in a human editable text file.<br/>
 %%**Reason:** To allow advanced users to manipulate the data by editing the data file.%%
+
+<panel type="seamless" header="FAQ: Is it OK to encrypt the data file?">
+
+Generally, not recommended. It can be allowed only if the application provides an easy way to decrypt the file, and encrypt it again after editing it manually.
+
+Followup question: What if the data in the file is confidential, and therefore, it is risky to leave it in plaintext format?<br>
+While this is a valid concern, you can assume/require that the app is used in a secure environment in which data are protected by default e.g., a personal computer already password protected.
+</panel>
 {%- endcall  %}
 
 {% call show_constraint("Constraint-No-DBMS") -%}

@@ -106,6 +106,7 @@
 * ==**Do not visit GitHub in** <span class="badge bg-success">PE Phase 1 - part I</span>== unless you are going there to download a file the team has provided and is needed for testing. You may visit GitHub during part II and part III.
 * **Do not use any other software running** in the background e.g., Telegram chat.
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
+* **You may use any digital/physical notes** during the PE %%e.g., a list of things to check%%.
 * **Recommended to read the guidelines the dev team will follow when responding to your bug reports later**, given in the panel below. This will help decide what kind of bugs to report.
 <div class="indented-level1">
 <panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" minimized>
@@ -146,7 +147,7 @@ Take away: Aim for the _correct_ severity/type etc. rather than the one that giv
 of the PE.
 * As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower
 priority has a lower risk of being disputed by the dev team, giving you (and the dev team)
-have a better chance of earning bonus marks for accuracy (which will be substantial).<br>
+a better chance of earning bonus marks for accuracy (which will be substantial).<br>
 To make your case stronger, state in the bug report why you think the bug might even qualify for a higher severity, while you actually chose the lower one.
 * In this section, there will be a _mass identity check_
 
@@ -413,7 +414,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 <div class="indented-level1" id="additionalGuidelinesForBugTriaging">
 
-<panel type="info" header="##### Guidelines for bug triaging" peek>
+<panel type="info" header="##### Guidelines for bug triaging" expanded>
 <include src="tp-pe-bug-triaging-guidelines-fragment.md" />
 </panel>
 <p/>
@@ -473,7 +474,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 **Don't feel upset if the dev team did not totally agree** with most of the bugs you reported. That is to be expected, given you had very short time to make those bug decisions while the dev team had a lot more time to deliberate about them. Some may have given unreasonable (in your opinion) arguments against your bug reports; not to worry, just give your counter-arguments and leave it to the teaching team to decide (in the next phase) which position is more reasonable.
 
 However, ==if the dev team's argument is not too far from 'reasonable', **it may be better to agree than disagree**==.<br>
-  Reason: an incorrect counter argument at this phase will lower your _accuracy_ more than an incorrect decision made during the testing phase (because you now have more time to think about the bug) i.e., changing your position after you had more time to think of it and after having seen more information is encouraged, compared to sticking to your initial position 'no matter what'.
+  Reason: an incorrect counterargument at this phase will lower your _accuracy_ more than an incorrect decision made during the testing phase (because you now have more time to think about the bug) i.e., changing your position after you had more time to think of it and after having seen more information is encouraged, compared to sticking to your initial position 'no matter what'.
 </box>
 </div>
 
@@ -507,7 +508,7 @@ Tester choice | Dev choice | Tester choice | Teacher choice | Dev accuracy  | Te
 <tab header="Using CATcher">
 
 * When the phase has been announced as open, login to [CATcher](https://catcher-org.github.io/CATcher) as usual (profile: `{{ course_pair }} PE`).
-* For each issues listed in the `Issues Pending Responses` section:
+* For each issue listed in the `Issues Pending Responses` section:
   * Click on it to go to the details, and read the dev team's response.
   * If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
   * If you are fine with the team's changes, click `Save` without any other changes upon which the issue will move to the `Issue Responded` section.

@@ -94,9 +94,9 @@ The final exam has two types of questions:
 * You will not be able to go back to previous questions.<br>
   %%Reasons:<br>
   1\. To minimize opportunities for collusion or over-the-shoulder copying from others.<br>
-  2\. Not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
+  2\. Not unreasonable for the materials tested, nature of the questions, and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
 * Duration: **{{ 45 if tic2002 else 35 }} minutes** <span tags="m--cs2103">(recommended: allocate 2 minutes per question, which gives you a 3 minutes buffer)</span>
-* Most MCQ question have a short-answer follow up question.
+* Most MCQ question have a short-answer follow-up question.
 * Here is an example question. The answer is `a` and the answer to the follow-up question can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
 
@@ -168,7 +168,7 @@ E. Gantt charts.
 ## Exam briefing, mock exam, practice exam paper
 
 * There will be an exam briefing in the penultimate lecture. It will include a minimal mock exam, just to help you understand the structure.
-* You will be given a practice exam paper (same size as the actual exam paper) to help you practice timing. That practice paper will be released at least one week before the exam.
+* You will be given a practice exam paper (same size and difficulty as the actual exam paper) to help you practice timing. That practice paper will be released at least one week before the exam.
 * Answers for the mock/practice exams will be released on Canvas/handouts.
 
 </div>

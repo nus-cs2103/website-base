@@ -110,8 +110,8 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 * Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
   {{ icon_info }} We strongly recommend surrounding the jar filename with double quotes, in case special characters in the filename causes the `java -jar` command to break.<br>
   e.g., `java -jar "[{{ course }}-F18-1][Task Pro].jar"`<br>
-  {{ icon_info }} Windows users: use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.{% if cs2103 %}<br>
-  {{ icon_info }} Linux users: If the JAR fails with an error labelled `Gdk-CRITICAL` (happens in Wayland display servers), try running it using `GDK_BACKEND=x11 java -jar jar_file_name.jar` command instead.{% endif %}
+  :fab-windows: Windows users: use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.{% if cs2103 %}<br>
+  :fab-linux: Linux users: If the JAR fails with an error labelled `Gdk-CRITICAL` (happens in Wayland display servers), try running it using `GDK_BACKEND=x11 java -jar jar_file_name.jar` command instead.{% endif %}
 
 <box type="info">
 
@@ -148,7 +148,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
   You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.
 {% endif %}
 * **You may do both _system testing_ and _acceptance testing_**.
-* {{ icon_tip }} **Be careful when copying commands from the UG** (PDF version) to the software as some PDF viewers can affect the pasted text. If that happens, you might want to open the UG in a different PDF viewer.<br>
+* {{ icon_tip }} **Be careful when copying commands from the UG** (PDF version) to the app as some PDF viewers can affect the pasted text. If that happens, you might want to open the UG in a different PDF viewer.<br>
   If the command you copied spans multiple lines, check to ensure the line break did not mess up the copied command.
 
 </tab>
@@ -179,7 +179,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
 {{ embed_topic("tp-grading-bugs-fragment.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3", indent="1") }}
 
 
-* Do not post suggestions but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions or/and lacking in a convincing justification as to why the omission of that functionality is problematic.
+* Do not post suggestions but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions or/and lacking in a convincing justification as to why the omission or the current design of that functionality is problematic.
 {{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3", indent="1") }}
 
 * You may also report documentation bugs (UG bugs in particular) but keep in mind that there is another time (i.e., part II) set aside for reporting documentation bugs too.

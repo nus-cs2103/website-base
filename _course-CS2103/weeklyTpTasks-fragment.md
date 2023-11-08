@@ -65,9 +65,9 @@ week12: [
 ],
 week13: [
   {id: 'do_final_tweaks'},
-  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, 1, time="13:00")},
-  {id: 'demo_the_product', deadline: get_date(date_final_submission, 2)},
-  {id: 'wrap_up_final_milestone', deadline: get_date(date_final_submission, 2)},
+  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
+  {id: 'demo_the_product', deadline: get_date(date_final_submission, 2 if time_final_submission == "23:59" else 1)},
+  {id: 'wrap_up_final_milestone', deadline: get_date(date_final_submission, 2 if time_final_submission == "23:59" else 1)},
   {id: 'prepare_for_PE'},
   {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 7, format=format_normal, time=""), deadline_type: 'warning'},
   {id: 'attend_the_makeup_PE', deadline: get_date(date_w13_start, 9, format=format_normal, time="1400-1600"), deadline_type: 'secondary'}

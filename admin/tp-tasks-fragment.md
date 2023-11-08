@@ -20,21 +20,27 @@ While the info below provides you what to do and what not to do in {{ version_fi
 
 **Allowed in the {{ version_final }} milestone:**{.text-success}
 
-{{ icon_tick_green }} fixing bugs (but not _feature flaws_) -- we use a very restrictive definition of 'bugs' for the feature freeze; to avoid violating the feature freeze unintentionally, be sure to check the FAQs below before you do any fixes/tweaks.<br>
-{{ icon_tick_green }} improving documentation<br>
-{{ icon_tick_green }} improving code quality<br>
-{{ icon_tick_green }} improving the testing aspect<br>
-{{ icon_tick_green }} removing features
+* fixing bugs (but not _feature flaws_) -- we use a very restrictive definition of 'bugs' for the feature freeze; to avoid violating the feature freeze unintentionally, be sure to check the FAQs below before you do any fixes/tweaks.{icon="fas-check" i-class="text-success"}
+* improving documentation
+* improving code quality
+* improving the testing aspect
+* removing features %%(i.e., removing an entire feature or a part of a feature)%%
 
-{{ icon_x_red }} <span class="text-danger">**Not allowed in {{ version_final }}:**</span><br>
-{{ icon_x_red }} adding/changing features<br>
-{{ icon_x_red }} any UI changes (even purely cosmetic enhancements e.g., alignments, style changes are not allowed).
+**Not allowed in {{ version_final }}:**{.text-danger}
+
+* adding/changing features (even minor behavior enhancements/tweaks){icon="fas-times" i-class="text-danger"}
+* any UI enhancements (even purely cosmetic enhancements e.g., alignments, style changes are not allowed)
 
 **Using 'Planned Enhancements' DG section to counter known feature flaws:** Given you are not allowed to fix feature flaws in {{ version_final }}, we allow you to optionally add a section named `Appendix: Planned Enhancements` to the end of the DG. More details in the panel below:
 
 {{ embed_topic("tp-deliverables-dg-fragment.md#planned-enhancements-info", "Admin " + icon_embedding + " tP → Deliverables → DG (extract): Planned Enhancements", "3", indent="1") }}
 
 **FAQs on what is allowed during the feature freeze:**
+
+<panel type="seamless" header="**Q0:** What's the ==penalty for violating the feature freeze==?" minimal>
+
+**A:** This will be case by case (depending on the severity), but an indicative/minimum penalty is `-1` per member, per violation. i.e., if there is only one violation that is not severe, each member will lose 1 mark.
+</panel>
 
 <panel type="seamless" header="**Q1:** How to differentiate between bugs and feature changes?" minimal>
 
@@ -1484,6 +1490,8 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 >   * Must fix: 6 (fixed: 5)
 >   * Good to fix: 4 (fixed: 1)
 >   * Won't fix / invalid: 1
+
+{{ icon_important_big_red }} **If you have `0` for the category `Not allowed to fix in v1.4`** when doing the above, we urge you to take another harder look at constraints imposed by the feature freeze, to confirm you are not violating the feature freeze inadvertently (which can cost you marks later). It is common for _some_ of the PE-D bug reports to be related to enhancements rather than bugs that are allowed to be fixed in v1.4. Therefore, it is 'unusual' to have 0 bugs for that category.
 {% endif %}
 </box>
 
@@ -1521,8 +1529,12 @@ Rank the PE-D testers based on their performance (five rank 1 to the top perform
 ...
 
 </panel><p/>
+</div>
 
-Tester ID mapping (i.e., who is Tester A, Tester B, etc.) will be sent to you via email within 1 day after the PE-D.
+<div class="indented-level1">
+
+PE-D bug titles will be prefixed with tester ID e.g., (`[PE-D][Tester A] UG does not load`) to make it easy for you to <tooltip content="using GitHub issue tracker's filters/search box">filter</tooltip> bugs reported by each tester.<br>
+Furthermore, tester ID mapping (i.e., who is Tester A, Tester B, etc.) will be sent to you via email within 1 day after the PE-D.
 </div>
 
 
@@ -1617,7 +1629,7 @@ Not applicable this semester
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
 <div id="desc_submit_final_deliverables">
 
-* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 23:59:00** unless stated otherwise. Note that <span class="text-danger">23:59:01 is considered late</span>, as per the Canvas deadline mechanism.
+* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} {{ time_final_submission }}:00** unless stated otherwise. Note that <span class="text-danger">{{ time_final_submission }}:01 is considered late</span>, as per the Canvas deadline mechanism.
 * {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
@@ -1628,7 +1640,7 @@ Not applicable this semester
   * The whole team is penalized for problems in team submissions %%e.g., a -1 penalty for a team submission will be a -1 penalty for each team member%%.<br>
     Only the respective student is penalized for problems in individual submissions.{% endif %}
 * **Submit via the Canvas assignment we have set up**.
-  {% if has_t %}{{ course | lower }}T students: documents should be submitted to both courses. It's not enough to submit to CS2101 side only.{% endif %}
+  {% if has_t %}{{ course}}T students: documents should be submitted to both courses. It's not enough to submit to CS2101 side only.{% endif %}
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.<br>
   Canvas might automatically add a file name suffix (e.g., `*-1.pdf`, `*-2.pdf`, ...) if you upload a file multiple times. You can safely ignore that suffix.
 * **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.
@@ -1656,8 +1668,8 @@ Not applicable this semester
 **Ensure hyperlinks in the pdf files work**. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
 
 **PDF files should**,
-  * **be paginated** at a reasonable page size (e.g., A4). %%Reason: single-page PDF files don't work well in some PDF viewers, and not suitable for printing either.
-  * **allow copying text** so that readers can copy text from them %%(e.g., copy and example command from the UG)%%.
+  * **be paginated** at a reasonable page size (e.g., A4). %%Reason: single-page PDF files don't work well in some PDF viewers, and not suitable for printing either.%%
+  * **allow copying text** so that readers can copy text from them %%(e.g., copy an example command from the UG)%%.
 
 **Try the PDF conversion early**. If you do it at the last minute, you may not have time to fix any problems in the generated PDF files (such problems are more common than you think).
 </box>
@@ -1677,13 +1689,13 @@ Not applicable this semester
 
 <box type="info" seamless>
 
-**The icon {{ icon_team }} indicates team submissions.** Only one person need to submit on behalf of the team but we recommend that others help verify the submission is in order <br>
+**The icon {{ icon_team }} indicates team submissions.** Only one person need to submit on behalf of the team but we recommend that others help verify the submission is in order.<br>
 ==We will not entertain requests to limit late penalties of team submissions to one person== even if the delay was one person's fault. That is, the responsibility (and the penalty) for team submissions are to be shared by the whole team rather than burden one person with it.
 
 </box>
 </div>
 
-* {{ icon_team }} **Product**:
+* **Product**:{icon="fas-users"}
   * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.
   * Upload the jar file to Canvas.<br>
     File name: `[team ID][ProductName].jar` %%e.g. [{{ example_team_id }}][ContactsPlus].jar%%<br>
@@ -1693,23 +1705,25 @@ Not applicable this semester
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
 
 
-* {{ icon_team }} **Source Code**: Push the code to GitHub and tag with the version number. Source code (==please ensure the code reported by RepoSense as yours is correct;== any updates to RepoSense config files or `@@author` annotations after the deadline will be considered a late submission). Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually.
+* **Source Code**: Push the code to GitHub and tag with the version number. Source code (==please ensure the code reported by RepoSense as yours is correct;== any updates to RepoSense config files or `@@author` annotations after the deadline will be considered a late submission). Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually.{icon="fas-users"}
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-sourcecode", "Admin " + icon_embedding + " tP → Deliverables → Source Code", "3", indent="2") }}
 
 
-* {{ icon_team }} **User Guide**: Convert to pdf and upload to Canvas.<br>
-  File name: `[TEAM_ID][ProductName]UG.pdf`  %%e.g.[{{ example_team_id }}][ContactsPlus]UG.pdf%%
+* **User Guide**:{icon="fas-users"}
+  * Convert to pdf and upload to Canvas.
+  * File name: `[TEAM_ID][ProductName]UG.pdf`  %%e.g.[{{ example_team_id }}][ContactsPlus]UG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
 
-* {{ icon_team }} **Developer Guide**: submission is similar to the UG<br>
-  File name: `[TEAM_ID][ProductName]DG.pdf` %%e.g. [{{ example_team_id }}][ContactsPlus]DG.pdf%%
+* **Developer Guide**:{icon="fas-users"}
+  * submission is similar to the UG
+  * File name: `[TEAM_ID][ProductName]DG.pdf` %%e.g. [{{ example_team_id }}][ContactsPlus]DG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "3", indent="2") }}
 
 
-* {{ icon_individual }} **Project Portfolio Page (PPP)**:
+* **Project Portfolio Page (PPP)**:{icon="fas-user"}
   * PDF file: submission is similar to the UG<br>
     File name: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g.[{{ example_team_id }}][Leow Wai Kit, John]PPP.pdf%%<br>
     {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names)
@@ -1718,7 +1732,7 @@ Not applicable this semester
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "3", indent="2") }}
 
 
-* {{ icon_team }} **Product Website**: Update website (home page,<span tags="m--cs2103 m--tic4002"> `Ui.png`,</span> `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.
+* **Product Website**: Update website (home page,<span tags="m--cs2103 m--tic4002"> `Ui.png`,</span> `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.{icon="fas-users"}
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "3", indent="2") }}
 </div>

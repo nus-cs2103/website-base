@@ -46,9 +46,9 @@ Instructions below are from the previous semester. Will be updated closer to the
 * **You will not be able to go back to previous questions.**<br>
   %%Reasons:<br>
   1\. to minimize opportunities for collusion<br>
-  2\. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
+  2\. not unreasonable for the materials tested, nature of the questions, and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
 * Duration: **45 minutes** (recommended: allocate 2.5 minutes per question, which gives you a 5 minutes buffer)
-* **Most MCQ question will also have a follow up question requiring a short answer.**
+* **Most MCQ question will also have a follow-up question requiring a short answer.**
 
 * Here is an example question. The answer is `a` and the answer to the follow-up question can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
