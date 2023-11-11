@@ -47,24 +47,31 @@
 
 #### <span class="badge bg-success">PE</span> <span class="text-success">Preparation, Restrictions</span>
 
+<div id="pe-mode-info">
+
 * **Mode: you can choose between remote or F2F** (we'll use a Canvas survey to collect your preferred mode):
   * **Remote mode**: This is the ==recommended mode==. Proctored via Zoom. You'll need to join the Zoom session from a quiet place (i.e., conducive to an exam) at which you can set up a Zoom device for proctoring.<br>
     Choose this mode only if you are able to comply with the Zoom proctoring requirements given further down.
   * **F2F mode**: Attend the PE at the lecture venue (iCube auditorium).<br>
-    Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of WiFi speed issues and GitHub throttling issues).
+    Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of Wi-Fi speed issues and GitHub throttling issues).
+</div>
+
+* **Those opting for the F2F mode can ignore any Zoom-related points** in the instructions below.
 
 * **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 7, format=format_normal, time="") | trim }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 6pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}
 
-* **PE Phase 1 will conducted under exam conditions. ==We will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.<br>
-  Note: **Those opting for the F2F mode can ignore any Zoom-related points** in the instructions below.
+* **PE Phase 1 will be conducted under exam conditions. For the remote mode, ==we will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.<br>
 
-* **Proctoring will be done via Zoom.** No admission if the following requirements are not met.{% if cs2103 %}
-  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external web cam for your PC.
+
+<div id="pe-proctoring-info">
+
+* **Remote mode proctoring will be done via Zoom.** No admission if the following requirements are not met.{% if cs2103 %}
+  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external webcam for your PC.
   * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true)== about 2 days before the PE. e.g.,
     * `[M48] John Doe` (`M18` is the seat number)
     * `[M48][PC] John Doe` (for the PC, if using a phone as well){% elseif cs2113 %}
   * You will be ==notified of the zoom session== that you should log in at least 1 day in advance via Canvas. ==**Remember: we will NOT use the same zoom session as the lectures**==
-  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external web cam for your PC.
+  * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external webcam for your PC.
   * Set your zoom display name to show your actual name as shown on Canvas.
   * **Add `[PC]` in front of the _first name_ of your zoom display name on the pc**.
     * E.g., `John Doe` (for the zoom session connected via the phone)
@@ -75,6 +82,9 @@
     1. the work area (i.e., the table top)
     1. the computer screen<br>
     <pic eager src="images/zoomCameraExample.png" width="362"></pic>
+
+</div>
+
 * **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.{% if cs2103 %}<br>
   **If on F2F mode:** Arrive at lecture venue ([ICube Auditorium](https://nusmods.com/venues/I3-AUD)) around 10-15 minutes early. If you haven't been to this venue before, plan ahead as the venue is located away from the main SoC area.{% endif %}
 * **In case of Zoom outage**, we'll fall back on MS Teams (MST).{% if cs2103 %} Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).{% elseif cs2113 %} Make sure you have MST running; proctoring will be done via individual tutorial MST teams that we have been using.{% endif %}

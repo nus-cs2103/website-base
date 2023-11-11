@@ -205,7 +205,44 @@ The info in the following panels differs from TIC4001.
 
 * Submit the Canvas survey to declare that you have followed the proper procedure for reusing/adapting code from elsewhere. You need to submit this ==even if you did not reuse any code==.
 
-{{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " Policy on reuse", "1", indent="2", status="expanded") }}
+<div class="indented-level1">
+<panel header="{{ "Admin " + icon_embedding + " Policy on reuse" }}" peek>
+<include src="appendixB-policies.md#policy-reuse" />
+</panel>
+</div>
+
+</div>
+{#====================================================================================================================#}
+<span id="heading_submit_pe_mode_selection">Submit the PE mode selection</span>
+<div id="desc_submit_pe_mode_selection">
+
+* Submit the Canvas survey to declare which mode (i.e., remote or F2F) you intend to use for the PE. The panel below has some information you can use to make the decision.<br>
+  Please consider carefully before choosing, and stick to the selected mode afterward --
+it will be <span class="text-danger">difficult to change your PE mode after the deadline</span> given above.
+
+<div class="indented-level1">
+<panel header="{{ "Admin " + icon_embedding + " tP → PE → Extract (PE modes)" }}" peek>
+<include src="tp-pe-fragment.md#pe-mode-info" />
+
+...
+
+<include src="tp-pe-fragment.md#pe-proctoring-info" />
+</panel>
+</div>
+
+</div>
+{#====================================================================================================================#}
+<span id="heading_submit_feedback_for_tutors">Submit feedback for tutors</span>
+<div id="desc_submit_feedback_for_tutors">
+
+* [Not urgent] **A gentle reminder to submit feedback for your tutor** via the semester-end
+ student feedback exercise, if you can spare a few minutes.<br>
+  They will be disappointed if only a few students cared enough to give feedback.<br>
+* **Please ==don't rate the 'other' tutor==** appearing in the submission form but didn't tutor you.
+  That is another tutor teaching in the same time slot as yours.<br>
+  In particular, don't give a `Neutral` ratings to that 'unknown' tutor as it can affect their
+  performance evaluation.
+
 </div>
 {#====================================================================================================================#}
 {#====================================================================================================================#}

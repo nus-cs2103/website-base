@@ -9,13 +9,13 @@ Your tutor will serve as your _project supervisor_ too.
 </div>
 <div tags="m--tic4001 m--tic4002">
 
-One of the lecturers will be assigned as your team's tutor (aka project supervisor).
+One of the lecturers will be assigned as your team's tutor.
 </div>
 <div tags="m--cs2113 m--cs2103">
 
-**The supervisor's main job (in the context of this course) is to observe, facilitate self/peer learning, evaluate, and give feedback.**
+**The tutor's main job (in the context of this course project) is to observe, facilitate self/peer learning, evaluate, and give feedback.**
 
-{{ Session_name }} time is the main avenue for meeting your supervisor. In addition, you can meet the supervisor at other times, as many times you need, subject to availability in his/her schedule.
+{{ Session_name }} time is the main avenue for meeting your tutor. In addition, you can meet the tutor at other times, as many times you need, subject to availability in his/her schedule.
 </div>
 <div tags="m--cs2113 m--cs2103 m--tic4002" id="making-project-decisions">
 

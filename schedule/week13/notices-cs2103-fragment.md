@@ -2,7 +2,7 @@
 
 <box type="tip" seamless icon=":fas-link:">
 
-**Quick Links:** [Practical Exam info](../../admin/tp-pe.html#tp-practical-exam-pe) | [Final exam info](../../admin/exams.html)
+**Quick Links:** [Practical Exam info](../../admin/tp-pe.html) | [Final exam info](../../admin/exams.html)
 </box>
 
 <box type="info">

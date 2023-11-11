@@ -49,6 +49,8 @@ If will be considered a feature change (i.e., not allowed to do) if,
 
 * the current behavior is not strictly 'incorrect' but 'can be better'.
 * the current behavior inconveniences the user but there is a way to work around it.
+
+If the current behavior differs from the UG but the current behavior is not strictly incorrect, update the UG to match the current behavior (in the interest of minimizing code changes). However, an exception can be made if the behavior in the UG (but is not working in the app) was already implemented in {{ version_penultimate }} (i.e., there is code that is specifically written for the behavior in concern) but it is not working due to a bug in that specific code. When fixing such a case, clearly describe in the PR description where the existing implementation is (you can point to a commit, a code segment, or a past PR) and why it wasn't working.
 </panel>
 
 <panel type="seamless" header="**Q2:** Will we be penalized for feature flaws not fixed during the feature freeze?" minimal>
@@ -74,7 +76,15 @@ If the behavior difference is because some parts of the feature is not implement
 
 <panel type="seamless" header="**Q5:** Can we tweak validity checks for a user input, or error/exception handling?" minimal>
 
-**A:** Only if the current behavior causes the software to crash, to give incorrect results, or make it unusable for typical users.
+**A:**
+
+  * Can be allowed only if the current behavior causes the software to _misbehave_ (i.e., crash, give incorrect results, or make it unusable for typical users).
+  * Accepting seemingly 'unsuitable' values for an input (e.g., accepting numbers for a person name, empty value as a parameter):<br>
+    This is not considered 'incorrect' (giving more freedom to the user is not necessarily incorrect) unless those unsuitable values causes the application to misbehave.
+  * Validity checks on edits to the data file:<br>
+    As per AB3 UG (which states the current level of support for editing the data file manually), only valid edits will be supported. If the file is invalid, the app will start with an empty file (not crash). You may rectify only if the current level of support doesn't meet that bar. Furthermore, you may state in the UG that certain incorrect edits to the datafile can result in unexpected behaviors, and caution users to edit the file only if they know what they are doing.
+  * Handling extraneous inputs (e.g., extra parameters, repeated parameters etc.) in commands:<br>
+    The command 'forgiving' these extraneous inputs (i.e., giving an output same as or similar to if those inputs are not present) is not incorrect. You can mention in the UG that such inputs will be ignored. AB3 already does a similar thing for some commands. Any special handling of such inputs can be left as a future enhancement.
 </panel>
 
 <panel type="seamless" header="**Q6:** Can we tweak error/help messages (or other text shown to the user)?" minimal>
@@ -99,10 +109,21 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 **A:** No, as this would be considered changing the design of a feature.
 </panel>
 
+<panel type="seamless" header="**Q10:** What if the UI is inconsistent with the actual state of the data?" minimal>
 
-<panel type="seamless" header="**Q10:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug (or vice versa). How to proceed?" minimal>
+e.g., the UI continues to show it after an item was deleted in the most recent command
+
+**A:** Yes, this can be fixed as the UI is showing 'incorrect' data.
+</panel>
+
+<panel type="seamless" header="**Q11:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug (or vice versa). How to proceed?" minimal>
 
 **A:** The category chosen by the tester is immaterial. You have to choose the correct category and proceed accordingly. Do not fix feature flaws even if the tester categorized them as bugs.
+</panel>
+
+<panel type="seamless" header="**Q12:** We already merged a change a PR that violates the feature freeze. Now what?" minimal>
+
+**A:** No penalty if you revert the change for the final submission. You can use [GitHub's _Revert PR_ feature](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) for this. Failing that, you'll need to reverse the merge commit of the offending PR manually.
 </panel>
 
 
@@ -1659,9 +1680,9 @@ Not applicable this semester
 
 <box id="caution-on-pdf-conversion" type="important" seamless>
 
-**Don't take PDF conversion lightly:**{.text-danger} **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
+**Don't take PDF conversion lightly:**{.text-danger} **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques  or not following the settings suggested in the given technique can result in issues== such as missing background colors, poor quality resolution , unnecessarily large files (the last two can be considered as bugs).
 
-**The PDF versions of the UG/DG/PPP should be _usable_** by the target readers, even if not as neat/optimized as the Web versions. For example, margins and page breaks need not be optimized but they should not hinder the reader either. Assume some will occasionally choose the PDF version over the Web version %%e.g, for printing, offline viewing, annotating etc.%%
+**The PDF versions of the UG/DG/PPP should be _usable_** by the target readers, even if not as neat/optimized as the Web versions. For example, margins and page breaks need not be optimized, but they should not hinder the reader either. Assume some will occasionally choose the PDF version over the Web version %%e.g, for printing, offline viewing, annotating etc.%%
 
 **PE uses the PDF versions of UG/DG, not the Web version!**{.text-danger} Any problems in those PDF files (e.g., broken links, messed up formatting) can be reported as bugs.
 

@@ -47,7 +47,9 @@ week11: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week12: [
-  {id: 'submit_reuse_declaration', deadline: "COMPULSORY | " + get_date(date_w13_start, 4), deadline_type: 'danger', graded: true}
+  {id: 'submit_reuse_declaration', deadline: "COMPULSORY | " + get_date(date_w13_start, 4), deadline_type: 'danger', graded: true},
+  {id: 'submit_pe_mode_selection', deadline: "COMPULSORY | " + get_date(date_w13_start, 1), deadline_type: 'danger'},
+  {id: 'submit_feedback_for_tutors'}
 ],
 week13: [
   {id: 'submit_final_peer_evaluations', deadline: get_date(date_w13_start, 6), graded: true},

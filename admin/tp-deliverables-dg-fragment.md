@@ -50,6 +50,19 @@
     > 1. The current error message for a failed contact deletion `Operation failed!` is too general. We plan to make the error message also mention which action failed and the reason for the failure: `The contact Amy Lee could not be deleted as it is referenced by another contact Ben Chua`.
   * Each enhancement should be a tweak to an existing feature, and should not be a new feature altogether.
   * `type.FeatureFlaw` bug reports matching an item in this section ==will not be penalized== for the team, and testers will not earn credit for reporting them either. However, testers can report `type.FeatureFlaw` bugs on the enhancements listed in this section, if they think the planned feature tweak itself is flawed/inadequate.
+  * FAQ: Enhancement X and Y are very similar. Can we count them as one?<br>
+    Answer: Only if adding one automatically adds the other. If one can be added without the other, they are counted as two enhancements.
+</div>
+<div tags="m--cs2103">
+
+* **What to do with other dev docs** linked from the DG e.g., [_Setting up and getting started_ guide](https://se-education.org/addressbook-level3/SettingUp.html)?
+  * They are not part of the tP deliverables, and are not graded.
+  * You are welcome to (but not required to) update them. If you do, the work can be counted as a tP contribution.
+  * The normal course of action is to just leave them be. It's fine if they are outdated and doesn't match with your current product anymore.
+  * But best not to delete them altogether, as that can result in broken links in your DG page.
+ * **The _Appendix: Requirements_ section** should be updated as follows:
+   * Requirements implemented in the current version: make sure requirements match the way they are actually been implemented (e.g., use case steps).
+   * Requirements yet to be implements: keep these as well, as this is an ongoing project and these are meant to be implemented in future iterations.
 </div>
 
 ##### DG Tips

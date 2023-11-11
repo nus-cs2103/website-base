@@ -23,7 +23,7 @@
 
 #### <span class="badge bg-info">Demo</span> <span class="text-info">Target audience</span>
 
-* **Assume you are giving a demo to a higher-level manager of your company**, to brief them on the current capabilities of the product. This is the first time they are seeing the new product you developed. The actual audience are the evaluators (the team supervisor and another tutor).
+* **Assume you are giving a demo to a higher-level manager of your company**, to brief them on the current capabilities of the product. This is the first time they are seeing the new product you developed. The actual audience are the evaluators (two tutors).
 
 #### <span class="badge bg-info">Demo</span> <span class="text-info">Scope</span>
 

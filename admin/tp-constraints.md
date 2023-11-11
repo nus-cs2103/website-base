@@ -187,7 +187,7 @@ Also keep in mind:
 
 <box type="warning">
 
-If you are not sure if your product complies with a certain constraint/recommendation, please seek clarification by posting in the [forum]({{url_course_org}}/forum/issues) (preferred) or emailing the supervisor.
+If you are not sure if your product complies with a certain constraint/recommendation, please seek clarification by posting in the [forum]({{url_course_org}}/forum/issues) (preferred) or email prof.
 </box>
 
 </div>
