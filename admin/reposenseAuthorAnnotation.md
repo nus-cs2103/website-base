@@ -3,7 +3,7 @@
 * Mark your code with a `//@@author {yourGithubUsername}`. Note the double `@`.<br>
 The `//@@author` tag should indicates the beginning of the code you wrote. The code up to the next `//@@author` tag or the end of the file (whichever comes first) will be considered as was written by that author.
   Here is a sample code file:
-  ```
+  ```{highlight-lines="1,4,6"}
   //@@author johndoe
   method 1 ...
   method 2 ...
@@ -15,7 +15,7 @@ The `//@@author` tag should indicates the beginning of the code you wrote. The c
 
 * **If you don't know who wrote the code segment below yours**, you may put an empty `//@@author` (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
   Here is a sample code with an empty `author` tag:
-  ```
+  ```{highlight-lines="2,5"}
   method 0 ...
   //@@author johndoe
   method 1 ...
@@ -26,8 +26,8 @@ The `//@@author` tag should indicates the beginning of the code you wrote. The c
   ```
 
 * **The author tag syntax varies based on file type** e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
-  Here is an example code from an xml/fxml file.
-   ```
+  Here is an example code from an xml/fxml file. This format works for Markdown/MarkBind files as well.
+   ```{highlight-lines="1"}
    <!-- @@author sereneWong -->
    <textbox>
      <label>...</label>
@@ -37,15 +37,15 @@ The `//@@author` tag should indicates the beginning of the code you wrote. The c
    ```
 
 *  **Do not put the `//@@author` inside java header comments**.<br>
-   :-1:{{ icon_output }}
-   ```
+   {{ bad }}
+   ```{highlight-lines="3"}
    /**
      * Returns true if ...
      * @@author johndoe
      */
    ```
-   :+1:{{ icon_output }}
-   ```
+   {{ good }}
+   ```{highlight-lines="1"}
    //@@author johndoe
    /**
      * Returns true if ...
@@ -71,7 +71,7 @@ The `//@@author` tag should indicates the beginning of the code you wrote. The c
   * Move unused files (or copies of files containing unused code) to that folder
   * use `//@@author {yourGitHubUsername}-unused` to mark unused code in those files (note the suffix `unused`)
   e.g.
-  ```
+  ```{highlight-lines="1"}
   //@@author johndoe-unused
   method 1 ...
   method 2 ...
@@ -80,7 +80,7 @@ The `//@@author` tag should indicates the beginning of the code you wrote. The c
 
 * **If you reused code from elsewhere,** mark such code as `//@@author {yourGitHubUsername}-reused` (note the suffix `reused`)
   e.g.
-  ```
+  ```{highlight-lines="1"}
   //@@author johndoe-reused
   method 1 ...
   method 2 ...

@@ -30,6 +30,7 @@ While the info below provides you what to do and what not to do in {{ version_fi
 
 * adding/changing features (even minor behavior enhancements/tweaks){icon="fas-times" i-class="text-danger"}
 * any UI enhancements (even purely cosmetic enhancements e.g., alignments, style changes are not allowed)
+* updates to data files bundled with the JAR file (as they control the behavior of the app)
 
 **Using 'Planned Enhancements' DG section to counter known feature flaws:** Given you are not allowed to fix feature flaws in {{ version_final }}, we allow you to optionally add a section named `Appendix: Planned Enhancements` to the end of the DG. More details in the panel below:
 
@@ -78,7 +79,7 @@ If the behavior difference is because some parts of the feature is not implement
 
 **A:**
 
-  * Can be allowed only if the current behavior causes the software to _misbehave_ (i.e., crash, give incorrect results, or make it unusable for typical users).
+  * Can be allowed only if the current behavior causes the software to _misbehave_ (i.e., crash, give incorrect results, store inconsistent data, or make it unusable for typical users).
   * Accepting seemingly 'unsuitable' values for an input (e.g., accepting numbers for a person name, empty value as a parameter):<br>
     This is not considered 'incorrect' (giving more freedom to the user is not necessarily incorrect) unless those unsuitable values causes the application to misbehave.
   * Validity checks on edits to the data file:<br>
@@ -89,7 +90,10 @@ If the behavior difference is because some parts of the feature is not implement
 
 <panel type="seamless" header="**Q6:** Can we tweak error/help messages (or other text shown to the user)?" minimal>
 
-**A:** Only if the current text is incorrect (i.e., a bug). Adding more information or otherwise 'enhancing' the text is not allowed.
+**A:** Only if the current text is incorrect (i.e., a bug). Adding more information or otherwise 'enhancing' the text is not allowed. Other points to note,
+
+  * **Spelling errors and grammar errors** in the UI (or docs) can be fixed, as they are errors by definition.
+  * **If a user action <tooltip content="i.e., does not perform the action user requested but does not also give any indication that the action was not performed">fails silently</tooltip>**, it can be fixed to inform the user of the problem.
 </panel>
 
 <panel type="seamless" header="**Q7:** Can we tweak case-sensitivity of a feature?" minimal>
@@ -1651,7 +1655,7 @@ Not applicable this semester
 <div id="desc_submit_final_deliverables">
 
 * **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} {{ time_final_submission }}:00** unless stated otherwise. Note that <span class="text-danger">{{ time_final_submission }}:01 is considered late</span>, as per the Canvas deadline mechanism.
-* {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
+* {{ icon_important_big_red }} **Penalty for late submission** (per file): {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
   Penalty for delays beyond 24 hours is determined on a case by case basis.

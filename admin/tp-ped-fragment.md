@@ -95,7 +95,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (cri
   * At the start of the PE, we'll give you the first part of the password (common to the whole class). Use combined password to unzip the file, which should give you another zip file with the name suffix `_inner.zip`.
   * Unzip that second zip file normally (no password required). That will give you a folder containing the JAR file to test and other PDF files needed for the PE. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
   Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%
-  * You can try above steps using the [this sample zip file](files/JohnDoe.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).
+  * You can try above steps using the [this sample zip file](files/{{ course | lower }}/JohnDoe.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).
 
 </tab>
 </tabs>

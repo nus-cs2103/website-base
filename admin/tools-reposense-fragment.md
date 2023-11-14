@@ -20,7 +20,7 @@ We will be using a tool called [RepoSense](http://reposense.org) to make it **ea
   * **Reason 2:** The actual authorship does not match the authorship determined by git blame/log e.g., another student touched your code after you wrote it, and Git log attributed the code to that student instead.<br>
     **Remedy:** You can add `@@author` annotations as explained in the panel below:
 
-<div class="indented-level2">
+<div class="indented">
 <panel header="Adding `@@author` tags to indicate authorship">
   <include src="reposenseAuthorAnnotation.md" />
 </panel>

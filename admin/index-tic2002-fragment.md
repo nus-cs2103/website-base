@@ -173,11 +173,11 @@ Please upload items 2, 3, 4 as three separate files, using the three Canvas assi
 1. **Source code** of the working program: push to your GitHub repo.
 1. **Product**:<br>
     i\. Create a JAR file for the final version of the code.<br>
-    ii\. Copy it to an empty folder outside of your project folder, and test it (reason: to ensure the JAR file does not depend on a specific folder location for it to work).<br>
+    ii\. Copy it to an empty folder outside your project folder, and test it (reason: to ensure the JAR file does not depend on a specific folder location for it to work).<br>
     iii\. Submit to Canvas, name: `{YourName}.jar` e.g., `JunHao.jar`
 1. **Project report**: a single .docx (preferred) or a pdf file that ==follows the template file given== (available in Canvas/Files/Handouts).
    * Submission: Upload to Canvas. The file name should be your name e.g., `JunHao.docx`
-   * [Optional] Feedback for an early draft of the project report:  Optionally, you can get prof's feedback on an early draft of the project report if you email a draft of the report to the prof <span class="text-danger">no later than {{ get_date(date_w13_start, 2, format=format_normal) }}</span> (Wednesday of week 13). Note that feedback on project report draft will be high-level feedback only (reason: the report is graded).
+   * [Optional] Feedback for an early draft of the project report:  Optionally, you can get prof's feedback on an early draft of the project report if you email a draft of the report to the prof <span class="text-danger">no later than {{ get_date(date_w13_start, 2, format=format_normal) }}</span> (Wednesday of week 13). Note that feedback on project report draft will be high-level feedback only, and will be given only once (reason: the report is graded).
 1. **Demo video**:
    * Record a demo video showcasing the features of your product.<br>
      You can use any screen recording software for this. One simple way is to start a Zoom meeting and record the meeting while screen-sharing your demo.
