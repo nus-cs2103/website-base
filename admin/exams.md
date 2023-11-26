@@ -58,23 +58,55 @@ The final exam has two types of questions:
    * if you do not have a working laptop for the exam, please contact IT Care itcare@nus.edu.sg directly for a laptop loan (for exam purpose only)
 1. ==**Not required to record the screen**.==
 1. **The exam is open-book. Soft/hard copies of documents are allowed**, including written notes.
-1. **No Internet access** will be allowed during the exam. However, you need to be connected to the WiFi (for Examplify to upload your answers).
+1. ==**No Internet access**== will be allowed during the exam. However, you need to be connected to the WiFi (for Examplify to upload your answers).
    * Examplify will be configured to disable Internet access while you are answering questions on Examplify.
    * Even when Examplify is not blocking the Internet, you are not to access the Internet.
    * Exit all non-essential applications (e.g., Telegram) that may be running in the background and connected to the Internet.
    * <span class="text-danger">You are strongly discouraged from using ~~Do not use~~ Web Browsers</span> to view local files.<br>
      %%Reason: invigilators will not be able to distinguish viewing local files from visiting online websites, and might have to talk to you (while the exam clock is still running) to verify that you are not accessing external sites%%.
-1. **Use of other software applications** (e.g., note taking applications) during the exam: you should not use any special-purpose application that can,<br>
+1. **The course website will not be accessible** during the exam, as there is no Internet access.
+   * Recommended: Use the PDF files (e.g., textbook, coding standard) provided in Canvas which cover the examinable part of the course website.
+   * If you _really_ want to access the course website, one option is to run a local copy of it in your computer. The setup instructions are given in the panel below. Caveats: the search feature of the local course website will only search headings, as the third-party search service used by the course website will not be available due to lack of Internet.
+
+<div class="indented-level2">
+<panel type="seamless" header="Setting up a local copy of the course website in your computer">
+
+1. If you do not have MarkBind in your computer, install it, as explained [here](https://se-education.org/guides/tutorials/markbind-forked-sites.html#installing-markbind)
+1. Get the website code as follows:
+   1. Clone the course website repo https://github.com/{{ course_org }}/website<br>
+      e.g., <code>git clone https://github.com/{{ course_org }}/website.git</code>
+   1. Navigate to the repo folder (e.g., `cd website`), and run the following git command to download the textbook repo used as a submodule of the website repo.<br>
+      `git submodule update --init --recursive`
+   1. Switch to the `cs2103` branch.<br>
+      e.g., `git checkout cs2103`
+1. To get the website to generate search results locally, update the following two files as follows:
+   1. In `[base folder]\site.json`:<br>
+      from `"enableSearch": false,`<br>
+      to `"enableSearch": true,`
+   1. In `[base folder]\_markbind\variables.md`:<br>
+      from `<variable name="algolia">yes</variable>`<br>
+      to `<variable name="algolia">no</variable>`
+1. Start the site using the command `markbind serve`<br>
+   When the website is ready (it can take a few minutes), the terminal will tell you the URL you should use to access it e.g., `http://127.0.0.1:8080`.
+1. To stop the website, force-terminate the above command<br>
+   e.g., <kbd>Ctrl</kbd>+<kbd>C</kbd> on Windows
+
+Next time you want to use the local copy of the website, navigate to the source folder, and run the `markbind serve` command again.
+</panel>
+</div>
+
+7. **Use of other software applications** (e.g., note taking applications) during the exam: you should not use any special-purpose application that can,<br>
    &nbsp;&nbsp;(a) give you an unfair advantage over the other exam takers, or,<br>
    &nbsp;&nbsp;(b) go against the goal of the exam,<br>
    even if your action was not explicitly prohibited by the exam rules.
-1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2{% if cs2103 %}, 3{% endif %}). We'll give you the password for opening each part at the exam, at the respective starting time of each part.
-1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
+1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2{% if cs2103 %}, 3{% endif %}). We'll give you the password for opening each part at the exam, at the respective starting time of each part.<br>
+  You will be notified when they are ready for download (typically, around 24 hours before the exam start time).
+1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== %%(reason: at an exam of this scale, it is not practical to clarify such doubts on-the-spot on a timely manner)%%. We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
 <include src="exam-doubts-fragment.md" />
 
 
-7. **Bring your computer fully charged** (and bring the charger too), although some charging points will be available at the exam venue.
+7. **Bring your computer fully charged**, although some charging points will be available at the exam venue (so, bring the charger too).
    * **FAQ:** My laptop battery is weak. Can I be put in a seat near a charging point?<br>
      **A**: The standard operation procedure for digital exams: Some venues have charging points within reach of every seat. If that's not the case, you will be moved to another location with a charging point when your laptop power level reaches a low level. Pre-allocating you a seat with a charging point is not feasible, as the number of such requests can easily exceed the number of charging points in the venue.
 1. **You must start the exam within 5 minutes of receiving the password** or else the quiz will close before your allotted time has run out.
@@ -93,7 +125,7 @@ The final exam has two types of questions:
 * Questions will appear in random order.
 * You will not be able to go back to previous questions.<br>
   %%Reasons:<br>
-  1\. To minimize opportunities for collusion or over-the-shoulder copying from others.<br>
+  1\. To minimize opportunities for collusion or over-the-shoulder copying from others (the risk of the latter is higher in this type of exam due to the upright exam device screens being easily visible to other exam takers).<br>
   2\. Not unreasonable for the materials tested, nature of the questions, and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
 * Duration: **{{ 45 if tic2002 else 35 }} minutes** <span tags="m--cs2103">(recommended: allocate 2 minutes per question, which gives you a 3 minutes buffer)</span>
 * Most MCQ question have a short-answer follow-up question.
@@ -116,7 +148,7 @@ Why is it incorrect? ______
 <p/>
 </div>
 
-* Here is another example question. Note the ==[**SELECT ALL**]== which tells you that this question can have multiple correoct answers and you need to select all of them i.e., it is a checkbox type question<br>
+* Here is another example question. Note the ==[**SELECT ALL**]== at the sart of the qusetion text, which tells you that this question can have multiple correct answers, and you need to select all of them i.e., it is a checkbox type question<br>
 The answer is `C`, `D`.
 
 <div class="indented-level2">
@@ -145,11 +177,12 @@ E. Gantt charts.
 * The questions will be in an encrypted PDF file that will be given to you in advance. The password will only be given at the start of this section.
 * **Bring the following when you come to the exam:**
   * **1-2 sheets of A4 size paper**, for drawing diagrams.
-  * Recommended: Something with a hard flat surface (e.g., a hardcover book) to put underneath the papers when drawing the diagrams. This is in case the arm rest of the exam venue chairs doesn't have enough space for both your laptop and drawing work.
+  * Recommended: Something with a hard flat surface (e.g., a hardcover book) to put underneath the papers when drawing the diagrams. This is in case the arm rest of the exam venue chairs (or the area of the table) doesn't have enough space for both your laptop and drawing work.
 * You are not allowed to use IDEs or software that can generate diagrams from code.
 * At the _end_ of the exam (i.e., after all three parts are over), you need to submit the diagrams.
 * These diagrams will not be graded directly. Instead, you will use them when answering part 3 of the exam.<br>
-  However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.
+  However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.<br>
+  For that purpose, the papers will be collected at the end of the full exam (i.e., after part 3 is over).
 </div>
 
 ### Final exam - part {{ 3 if cs2103 else 2 }}

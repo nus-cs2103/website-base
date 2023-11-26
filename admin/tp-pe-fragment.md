@@ -68,8 +68,8 @@
 * **Remote mode proctoring will be done via Zoom.** No admission if the following requirements are not met.{% if cs2103 %}
   * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external webcam for your PC.
   * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true)== about 2 days before the PE. e.g.,
-    * `[M48] John Doe` (`M18` is the seat number)
-    * `[M48][PC] John Doe` (for the PC, if using a phone as well){% elseif cs2113 %}
+    * `[M18] John Doe` (`M18` is the seat number)
+    * `[M18][PC] John Doe` (for the PC, if using a phone as well){% elseif cs2113 %}
   * You will be ==notified of the zoom session== that you should log in at least 1 day in advance via Canvas. ==**Remember: we will NOT use the same zoom session as the lectures**==
   * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external webcam for your PC.
   * Set your zoom display name to show your actual name as shown on Canvas.
@@ -472,7 +472,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 
 ==**Deadline:** {{ get_date(date_w13_start, 13) }}==
 
-* In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the receiving dev team, you can record your objections and the reason for the objection.
+* In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the dev team, you can record your objections and the reason for the objection.
   * not accepted
   * severity downgraded
   * bug type changed
@@ -489,19 +489,19 @@ However, ==if the dev team's argument is not too far from 'reasonable', **it may
 </div>
 
 * **If you would like to revise your own initial type/severity** in response to the team's inputs, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).
-* You can also refer to the below guidelines:
+* You can also refer to the below guidelines, mentioned during the previous phase as well:
 
 {{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", indent=1) }}
 
 {{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", indent=1) }}
 
-* If the dev team disagreed with an aspect (i.e., type/severity) and you now agree with the dev team's position, it will not affect your accuracy rating. Here are some examples (for the `severity.*`):
+* If the dev team disagreed with an aspect (i.e., type/severity/<tooltip content="i.e., accept vs not accept">validity</tooltip>) and you now agree with the dev team's position, it will not hurt your accuracy rating. Here are some examples (for the `severity.*`):
 
 {% set up %}<span class="text-success">:fas-arrow-up:</span>{% endset %}
 {% set down %}<span class="text-danger">:fas-arrow-down:</span>{% endset %}
 <div class="indented-level1">
 
-Tester choice | Dev choice | Tester choice | Teacher choice | Dev accuracy  | Tester accuracy
+Tester choice | Dev choice | Tester reaction | Teacher decision | Dev accuracy  | Tester accuracy
 ----------|-----------------|---------------|---------------------|--------------------|--------------------
 `High`    | agreed          |               |                     | {{ up }}           | {{ up }}
 `High`    | `Low`           | agreed        |                     | {{ up }}           | no effect

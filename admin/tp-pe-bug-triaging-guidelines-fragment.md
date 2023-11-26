@@ -28,7 +28,6 @@
 
 * **Even bugs inherited from AB3 are counted**. As the current development team, you are responsible for all bugs in the product, irrespective of when it was created.
 
-* **If you can't reproduce the bug based on the _exact_ steps given in the bug report** but there is some indication of 'something wrong' (e.g., the bug report cites a behavior that shouldn't happen under normal use), you are expected to make a _reasonable_ effort to reproduce the bug yourself by experimenting with the information provided in the bug report. Reason: it will go against you if claim that the bug is not reproducible and yet someone else (the tester or a tutor) manages to conclusively prove the existence of the bug in a later phase.
 
 ##### Functionality bugs
 
@@ -72,11 +71,13 @@ However, if such input can be entered by a user mistake, they should not cause h
 
 
 ##### Documentation bugs
-* **Broken links**: Severity can be `Low` or `Medium` depending on how much inconvenience they cause to the reader.
+* **Broken/incorrect links**: Severity can be `Low` or `Medium` depending on how much inconvenience they cause to the reader.
 * **Extra white space** introduced by the PDF conversion: Not counted as bugs unless it hinders the reader. Cases such as a diagram being split between pages are considered bugs, because they hinder the reader.<br>
   {{ icon_info }} **'Hinder' the reader?** Don't interpret 'hinder' as 'impossible to read'. Even formatting issues such as too much/little padding, font size, alignment, inconsistencies, etc. can 'hinder' the reader in the sense they can slow down the reader or require the reader to put more effort than necessary. Those things that 'need to be fixed' are still bugs but of lower severities (depending on how much they hinder the reader -- most likely `severity.VeryLow` if the issue is purely cosmetic).
 * **UML notation variations** caused by the diagramming tool: Can be rejected if not contradicting the standard notation (as given by the textbook) i.e., extra decorations that are not misleading.<br>
   Omitting optional notations is not a bug as long it doesn't hinder understanding.
+* **UML notation errors** %%(e.g., using dashed line where a solid line should be used)%%:<br>
+  When deciding the severity, consider how much the notation error hinders the reader, but also keep in mind that notation errors hurt the credibility of the diagram (i.e., if even the notation is incorrect, how much can be trust this diagram :thinking:?). The latter pushes up the severity further than otherwise.
 * **Details missing from a diagram**: In a similar vein to the above, omitting details from a diagram is OK if it does not mislead/hinder the reader.<br>
   Forgetting to include something is not the same as a deliberate decision to omit something in order to simplify the diagram %%e.g., the latter could accompany a note to the reader to mention which/some parts have been omitted, _if_ it is worthwhile for the reader to know the omission.%%<br>
  While many UML notations are optional, haphazard omissions without a good reason can affect consistency which affects readability e.g., it can be considered a minor bug if a sequence diagram omits an activation bars in some places but not in other places and yet the omission doesn't make the diagram any easier to read.
