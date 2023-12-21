@@ -52,7 +52,7 @@ week12: [
   {id: 'double_check_reposense_compatibility'}
 ],
 week13: [
-  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, 1, time="13:00")},
+  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, 0, time="13:00")},
   {id: 'demo_the_product', deadline: get_date(date_final_submission, 2)},
   {id: 'prepare_for_PE'},
   {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 7, time="")}

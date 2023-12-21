@@ -59,6 +59,6 @@ week7: [
   {id: 'submit_the_final_version', deadline:  get_date(date_w7_start, 14)}
 ],
 week8: [
-  {id: 'evaluate_peer_ips', deadline: 'before next week lecture', graded: true}
+  {id: 'evaluate_peer_ips', deadline: 'before Sat 23:59', graded: true}
 ]
 } %}

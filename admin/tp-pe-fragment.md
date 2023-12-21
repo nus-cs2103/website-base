@@ -50,7 +50,7 @@
 * **Mode: you can choose between remote or F2F** (we'll use a Canvas survey to collect your preferred mode):
   * **Remote mode**: This is the ==recommended mode==. Proctored via Zoom. You'll need to join the Zoom session from a quiet place (i.e., conducive to an exam) at which you can set up a Zoom device for proctoring.<br>
     Choose this mode only if you are able to comply with the Zoom proctoring requirements given further down.
-  * **F2F mode**: Attend the PE at the lecture venue (iCube auditorium).<br>
+  * **F2F mode**: Attend the PE at the lecture venue.<br>
     Choose only if you are unable to use the remote mode (reason: higher the number of F2F attendees, higher the risk of WiFi speed issues and GitHub throttling issues).
 
 * **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 7, format=format_normal, time="") | trim }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 6pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}

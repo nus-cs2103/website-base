@@ -1,4 +1,4 @@
-<span id="lectures-s1"> ~~LT19~~ | Friday **1600**-1800</span>
+<span id="lectures-s1"> LT19 | Friday **1600**-1800</span>
 <span id="lectures-s2">ICube Auditorium | **1400**-1600</span>
 
 <span id="tutorials-s1">
@@ -6,12 +6,11 @@
 {{ tutorial_table_headers | trim }}
 {{ MT | safe }} | COM1-0210 | **W**ed  **11**:00 | ~~%%C01%%~~ | **`CS2113T-W11`**|
 {{ M | safe }} | COM1-0210 | **W**ed  **12**:00 | ~~%%1%%~~ | **`CS2113-W12`**|
-{{ M | safe }} | COM1-0210 | **W**ed  **13**:00 | ~~%%2%%~~ | **`CS2113-W13`**|
  | | | | | |
 {{ M | safe }} | I3-0340 | **T**hu  **17**:00 | ~~%%3%%~~ | **`CS2113-T17`**|
-{{ M | safe }} | COM1-0207 | **T**hu  **17**:00 | ~~%%5%%~~ | **`CS2113-T17`**|
+{{ M | safe }} | I3-0337 | **T**hu  **17**:00 | ~~%%5%%~~ | **`CS2113-T18*`**|
  | | | | | |
-{{ M | safe }} | I3-0337 | **F**ri  **11**:00 | ~~%%4%%~~ | **`CS2113-F11`**|
+{{ M | safe }} | COM1-0210 | **F**ri  **11**:00 | ~~%%4%%~~ | **`CS2113-F11`**|
 </span>
 
 <span id="tutorials-s2">

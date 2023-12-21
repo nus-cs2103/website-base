@@ -8,14 +8,14 @@
 <variable name="S">1</variable>
 <variable name="semester">AY2324S{{ S }}</variable>
 <variable name="period">2023 Aug-Nov</variable>
-<variable name="current_week">-1</variable>
+<variable name="current_week">15</variable>
 
 <variable name="algolia">yes</variable>
 
 <variable name="canvas_course_id">45721</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQ3yMfxtxatSX5XxWnZparVJN9UkEOu504YHyShketpCzdqQth4JDcwQwhWvOBi-XH8-gkdgMgGpg1t/pub?embedded=true</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQhmHJJh3q8k7UnR7a12oNu9K9Psz19Hd-Kr5NbkIBxh8Komcn8H9hJCgelPCg2jOm8ozVGhc8mnSKc/pub?embedded=true</variable>
 <variable name="url_coursemology_classroom">https://coursemology.org/courses/2622</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3a35BXXgVTI7FPtFpuMRNE3_QziQM9QZzg143v7lp7VcY1%40thread.tacv2/conversations?groupId=7292ac27-7437-4330-9401-dc866c2ef103&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
 <variable name="date_w1_start">2023-08-14</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
@@ -86,7 +86,7 @@
 <variable name="format_full_day">dddd</variable>
 <variable name="date_first_lecture">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
 <variable name="day_lecture">{{ date_first_lecture | date(format_full_day) }}</variable>
-<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 91) }}</variable>
+<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 92) }}</variable>
 <variable name="date_w2_start">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
 <variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w4_start">{{ date_w3_start | date("YYYY-MM-DD", 7) }}</variable>

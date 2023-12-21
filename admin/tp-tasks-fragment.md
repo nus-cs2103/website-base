@@ -1527,7 +1527,7 @@ Not applicable this semester
 <span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
 <div id="desc_submit_final_deliverables">
 
-* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 23:59:00** unless stated otherwise. Note that <span class="text-danger">23:59:01 is considered late</span>, as per the Canvas deadline mechanism.
+* **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 13:00:00** unless stated otherwise. Note that <span class="text-danger">13:00:01 is considered late</span>, as per the Canvas deadline mechanism.
 * {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>

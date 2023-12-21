@@ -40,6 +40,9 @@
 <include src="../_course-{{ course }}/timetables-fragment.md#tutorials-s{{ S }}" optional />
 
 </div>
+
+**Note: Tutorial ID for Group 5 (Thursday at 5 PM, venue: I3-0337) doesn't follow the standard convention**
+
 </panel>
 
 <panel type="seamless" header="### Tutorial Structure" expanded >
@@ -50,7 +53,7 @@
 {% if cs2113 %}* Tutorials will be conducted in f2f, on campus.{% else %}
 * The initial few tutorials will be through Zoom; the rest will be F2F.{% endif %}
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
-* Zoom will be used (even during F2F tutorials) for projecting slides and collecting chat responses.
+* Zoom will be used (even during F2F tutorials) for projecting slides and (occasionally) collecting chat responses.
 * MS Teams will be used for file sharing.
 
 <!--
