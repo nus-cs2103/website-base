@@ -47,10 +47,10 @@
 
 **The mode**
 
-{% if cs2113 %}* Tutorials will be conducted in f2f, on campus.{% else %}
+{% if cs2113 %}* Tutorials will be conducted in F2F, on campus.{% else %}
 * The initial few tutorials will be through Zoom; the rest will be F2F.{% endif %}
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
-* Zoom will be used (even during F2F tutorials) for projecting slides and collecting chat responses.
+* Zoom will be used (even during F2F tutorials) for projecting slides and {% if cs2113 %}(occasionally) {% endif %}collecting chat responses.
 * MS Teams will be used for file sharing.
 
 <!--

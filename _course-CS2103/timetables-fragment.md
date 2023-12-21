@@ -1,5 +1,5 @@
-<span id="lectures-s1">ICube Auditorium | Friday **1600**-1800</span>
-<span id="lectures-s2">ICube Auditorium | **1400**-1600</span>
+<span id="lectures-s1">{{ lecture_venue }} | Friday **1600**-1800</span>
+<span id="lectures-s2">{{ lecture_venue }} | **1400**-1600</span>
 
 <span id="tutorials-s1">
 
