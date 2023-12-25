@@ -1,5 +1,5 @@
-<span id="lectures-s1">{{ lecture_venue }} | Friday **1600**-1800</span>
-<span id="lectures-s2">{{ lecture_venue }} | Friday **1600**-1800</span>
+<span id="lectures-s1">{{ lecture_venue }} | Friday **{{ time_lecture_start }}**-{{ time_lecture_end }}</span>
+<span id="lectures-s2">{{ lecture_venue }} | Friday **{{ time_lecture_start }}**-{{ time_lecture_end }}</span>
 
 <span id="tutorials-s1">
 
