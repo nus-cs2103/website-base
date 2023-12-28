@@ -4,11 +4,11 @@
 
 **What**: The latest release of the {{ version_penultimate }} period is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
-**When, where**: uses a 40 minute slot at the start of week 11 lecture slot.
+**When, where**: uses a 40-minutes slot at the start of week 11 lecture slot.
 {% if cs2103 %}It will be conducted via Zoom. If you can't find another suitable location to join the Zoom meeting, you may do so from the lecture venue.{% endif%}
 
 <modal large header="Admin {{ icon_embedding }} tP → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
-  <include src="tp-pe.md#tp-practicalexam"/>
+<include src="tp-pe.md#tp-practicalexam"/>
 </modal>
 
 {{ icon_important_big_red }} **Grading**: The PE dry run ==affects your grade in the following ways==.
@@ -38,6 +38,18 @@
 
 Report as many bugs as you can find during the given time. Take longer if you need (unlike the PE, PE-D is not timed strictly). If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. In that case, all the more reasons to spend more time and find more bugs now.
 
+For reference, here are what we consider as qualities of a good bug report:
+<box>
+<div id="bug-report-quality-criteria">
+
+* has a descriptive title {icon="fas-check" i-class="text-success"}
+* has enough details e.g., ==steps to reproduce, expected, actual, and screenshots==.
+* severity/type labels chosen are not too far off
+* is written in a non-confrontational tone
+* points out a potentially problematic behavior (or a good way to improve the product)
+</div>
+</box>
+
 {% if cs2113 %}
 **Insincere bug reports** will not count for credit %%i.e., don't submit 'fake' bug reports to increase the bug count.%%
 
@@ -48,18 +60,6 @@ Evaluation rubric:
 
 * Meets expectations: 3-5 good bug reports
 * Exceeds expectations: more than 5 good bug reports
-
-For reference, here are what we consider as qualities of a good bug report:
-<box>
-<div id="bug-report-quality-criteria">
-
-* has a descriptive title { icon="fas-check" i-class="text-success"}
-* has enough details e.g., ==steps to reproduce, expected, actual, and screenshots==.
-* severity/type labels chosen are not too far off
-* is written in a non-confrontational tone
-* points out a potentially problematic behavior (or a good way to improve the product)
-</div>
-</box>
 
 As you can't be sure which of your bug reports will be considered as _good_ (criterion [e] in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total. The **median bug reports count in the last round was 9**.
 {% endif %}
