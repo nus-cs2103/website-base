@@ -53,10 +53,10 @@ week11: [
   {id: 'release_as_a_jar_file'},
   {id: 'wrap_up_penultimate_version'},
   {id: 'demo_penultimate_version', deadline: 'before the tutorial'},
-  {id: 'get_ready_for_the_PED', deadline: 'before next lecture'}
+  {id: 'get_ready_for_the_PED', deadline: 'before next weekly briefing'}
 ],
 week12: [
-  {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w12_start, time=""), graded: true},
+  {id: 'attend_the_PED', deadline: 'During the weekly briefing on ' + get_date(date_w12_start, time=""), graded: true},
   {id: 'start_fixing_PED_bugs', deadline: 'Before the tutorial'},
   {id: 'tweak_product_as_per_PED'},
   {id: 'draft_the_ppp'},
@@ -69,7 +69,7 @@ week13: [
   {id: 'demo_the_product', deadline: get_date(date_final_submission, 2 if time_final_submission == "23:59" else 1)},
   {id: 'wrap_up_final_milestone', deadline: get_date(date_final_submission, 2 if time_final_submission == "23:59" else 1)},
   {id: 'prepare_for_PE'},
-  {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 7, format=format_normal, time=""), deadline_type: 'warning'},
+  {id: 'attend_the_PE', deadline: 'during the weekly briefing on ' + get_date(date_w13_start, 7, format=format_normal, time=""), deadline_type: 'warning'},
   {id: 'attend_the_makeup_PE', deadline: get_date(date_w13_start, 9, format=format_normal, time="1400-1600"), deadline_type: 'secondary'}
 ]
 } %}

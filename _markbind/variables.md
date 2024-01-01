@@ -64,6 +64,9 @@
 <variable name="marks_ca">70</variable>
 <variable name="mcq_count">100</variable>
 
+<variable name="lecture_name_upper">Lecture</variable>
+<variable name="lecture_name">{{ lecture_name_upper | lower }}</variable>
+<variable name="lecture_name_short">{{ lecture_name }}</variable>
 
 <!-- ===========================  secondary variables =========================================== -->
 

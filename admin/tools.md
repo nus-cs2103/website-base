@@ -13,7 +13,7 @@ This course website is the main source of information for the course. In additio
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
 {% if not cs2113 %}
-## Tool: Zoom (for Lectures)
+## Tool: Zoom (for {{ lecture_name }}s)
 
 Install Zoom in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Proctoring+with+Zoom). Remember to login using your NUSNET account.
 {% endif %}
@@ -105,19 +105,15 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 <div tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">
 
-##### :fas-users-cog: MS Teams %%(for quick chats, in-lecture consultations)%%
+##### :fas-users-cog: MS Teams %%({% if cs2103 %}for tutorials, {% endif %}as a backup if Zoom chat fails, for practical exam)%%
 
-* **Use MS Teams for short chats**.
-* Install MST in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to login using your NUSNET account.
+* **MS Teams is used in our tutorials**.<br>
+  Install MST in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to login using your NUSNET account.
 
 
 <div tags="m--cs2103 m--cs2113">
 
 * **MS Team for this class**: [{{ course_pair }}-{{ semester }}]({{ url_ms_teams_class }})
-</div>
-<div tags="m--tic4001 m--tic4002">
-
-* for in-lecture consultations: [{{ course }}-{{ period }}]({{ url_ms_teams_class }})
 </div>
 </div>
 

@@ -104,7 +104,7 @@ Note the typical deadline weekly project tasks:
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1") }}
 <p/>
 
-But ==as there are no tutorials this week, you have until the next lecture== to finish this week's iP tasks.
+As per the above, ==you have until the next {{ lecture_name }}== to finish this week's iP tasks, but if you fail to do so, we won't penalize you if you can catch up within one more week after that deadline.
 </box>
 </div>
 <div id="cs2103-week3-intro">

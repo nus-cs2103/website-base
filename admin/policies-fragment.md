@@ -1,7 +1,7 @@
 {% from "common/macros.njk" import embed_topic with context %}
 <div id="policy-followingInstructions">
 
-When working with others, especially in a large class such as {{ course_pair }},  it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated non-compliance of instructions. On the other hand, we do understand that we all are liable to make mistakes. That is why we only penalize repeated or frequent mistakes.
+When working with others, especially in a large class such as {{ course_pair }}, it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated non-compliance of instructions. On the other hand, we do understand that we all are liable to make mistakes. That is why we only penalize repeated or frequent mistakes.
 
 </div>
 
@@ -21,7 +21,7 @@ As most of the work is graded individually, it is OK to do less or more than equ
 
 <div id="policy-validAbsences">
 
-There is no need to inform us. If you miss a lecture/tutorial/task for a valid reason, just do your best to catch up. An occasional absence or two is not expected to affect your marks, as the marking scheme already has built-in buffers to absorb such occasional absences/lapses.
+There is no need to inform us. If you miss a {{ lecture_name_short }}/tutorial/task for a valid reason, just do your best to catch up. An occasional absence or two is not expected to affect your marks, as the marking scheme already has built-in buffers to absorb such occasional absences/lapses.
 
 Let us know only if you fail to earn full marks for participation due to such a reason, in which case we will consider giving an alternative avenue to earn marks missed due to the absences.
 
@@ -29,13 +29,13 @@ Let us know only if you fail to earn full marks for participation due to such a 
 
 <div id="policy-responseTime">
 
-**Normally, the prof will respond within 24 hours** if it was an email sent to the prof or a forum post directed at the prof. If you don't get a response within that time, **please feel free to remind the prof**. It is likely that the prof did not notice your post or the email got stuck somewhere.
+**Normally, the prof will respond within 24 hours** if it was an email sent to the prof or a forum post directed at the prof. If you don't get a response within that time, **please feel free to remind the prof**. It is likely that the prof did not notice your post or the email got stuck somewhere.
 
-Similarly we expect you to check email regularly and respond to emails written to you personally (not mass email) promptly.
+Similarly, we expect you to check email regularly and respond to emails written to you personally (not mass email) promptly.
 
 <panel header="Email etiquette: ALWAYS respond to direct emails" expanded>
 
-Not responding to a personal email is a major breach of professional etiquette (and general civility). Imagine how pissed off you would be if you met the prof along the corridor, said 'Hi prof, good morning' and the prof walked away without saying anything back. Not responding to a personal email is just as bad. Always take a few seconds to at least acknowledge such emails.  It doesn't take long to type "Noted. Thanks" and hit 'send'.
+Not responding to a personal email is a major breach of professional etiquette (and general civility). Imagine how pissed off you would be if you met the prof along the corridor, said 'Hi prof, good morning' and the prof walked away without saying anything back. Not responding to a personal email is just as bad. Always take a few seconds to at least acknowledge such emails. It doesn't take long to type "Noted. Thanks" and hit 'send'.
 
 The promptness of a reply is even more important when the email is requesting you for something that you cannot provide. Imagine you wrote to the prof requesting a reference letter and the prof did not respond at all because he/she did not want to give you one; You'll be quite frustrated because you wouldn't know whether to look for another prof or wait longer for a response. Saying 'No' is fine and in fact a necessary part of professional life; but saying nothing is not acceptable. If you didn't reply, the sender will not even know whether you received the email.
 
@@ -66,14 +66,14 @@ Is publishing submissions unfair to the author? We don't think so. If you were t
 
 <div id="policy-plagiarism">
 
-**We encourage sharing, but you should share with everyone in the class**, not just a selected group. That is,
+**We encourage sharing, but you should share with everyone in the class**, not just a selected group. That is,
 
 * You are not allowed to share individual assignments with classmates directly.
 * You are not allowed to share project-related things with other teams directly.
 
 If you submit code (or adopt ideas) taken from elsewhere (**you can even reuse each other's work**), you need to comply with our reuse policy.
 
-Detection: 
+Detection:
 
 * Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables.
 * As all your work is publicly visible on GitHub, sooner or later somebody will notice the plagiarism.
@@ -87,15 +87,15 @@ Penalties:
 
 <div id="policy-reuse">
 
-**Reuse is encouraged. However, note that reuse has its own costs** (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for _reusing_ work done by others.
+**Reuse is encouraged. However, note that reuse has its own costs** (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for _reusing_ work done by others.
 
 * You are allowed to reuse work from your classmates or past students, subject to following conditions:
   * The work has been shared publicly by us or the authors.
   * You clearly give credit to the original author(s).
 * You are allowed to reuse code from external sources, subject to following conditions:
   * You clearly give credit to the original author/source.
-  * You do not violate the license under which the work has been released. Please  **do not use 3rd-party images/audio** in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.
-* ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ url_forum }}). That way, the whole class get to see what libraries are being used by others.
+  * You do not violate the license under which the work has been released. Please **do not use 3rd-party images/audio** in your software unless they have been specifically released to be used freely. Just because you found it in the Internet does not mean it is free for reuse.
+* ==Always get permission from us before you reuse== third-party libraries. Please post your 'request to use 3rd party library' in our [forum]({{ url_forum }}). That way, the whole class get to see what libraries are being used by others.
   * Our approval is given based on compliance with the course. Compliance with the license of the reused software is entirely your responsibility. While we don't anticipate such a case, any liability from improper reuse of a third-party library is to be borne by the person who reused it (i.e., not NUS).
   * Once a 3rd party library has been approved for one student/team, it can be used freely by others without asking for approval again.
 
@@ -191,18 +191,18 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
 </box>
 
 <modal large header="Admin {{ icon_embedding }} Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">
-  <include src="reposenseAuthorAnnotation.md"/>
+  <include src="reposenseAuthorAnnotation.md"/>
 </modal>
 
 <modal large header="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
-  <include src="tp-deliverables.md#tp-deliverables-ppp"/>
+  <include src="tp-deliverables.md#tp-deliverables-ppp"/>
 </modal>
 
 </div>
 
 <div id="policy-outsiderHelp">
 
-In general, you are **not allowed to involve outsiders** in your project except your team members and the teaching team. However, It is OK to give your product to others for the purpose of getting voluntary user feedback. It is also OK to learn from others as long as they don't do your project work themselves.
+In general, you are **not allowed to involve outsiders** in your project except your team members and the teaching team. However, It is OK to give your product to others for the purpose of getting voluntary user feedback. It is also OK to learn from others as long as they don't do your project work themselves.
 
 </div>
 

@@ -9,7 +9,7 @@ The <span class="font-weight-bold">{{ url_schedule }}</span> is ==_the_ one page
 
 <div id="admin-faq-tVsNonT">
 
-Same lecture content, same assessments, same exam. Separate tutorials, separate grading. Unless specified otherwise, whatever is stated for one course applies to the other.
+Same content, same assessments, same exam. Separate tutorials, separate grading. Unless specified otherwise, whatever is stated for one course applies to the other.
 
 </div>
 
@@ -63,7 +63,7 @@ On a related note, keep in mind that 'hunting and gathering' of relevant informa
 
 <pic eager src="{{baseUrl}}/admin/images/slides not detailed enough.png" width="733" height="221"/>
 
-Slides are not meant to be documents to print and study for exams. Their purpose is to support the lecture delivery and keep you engaged during the lecture. That's why our slides are less detailed and more visual.
+Slides are not meant to be documents to print and study for exams. Their purpose is to support the {{ lecture_name_short }} delivery and keep you engaged during the {{ lecture_name_short }}. That's why our slides are less detailed and more visual.
 
 </div>
 
@@ -71,7 +71,7 @@ Slides are not meant to be documents to print and study for exams. Their purpose
 
 <pic eager src="{{baseUrl}}/admin/images/so much self study.png" width="763" height="307"/>
 
-Self-study is a critical survival skill in SE industry. Lectures will show you the way, but absorbing content is to be done at your own pace, by yourself. In this course, we still tell you what content to study and also pass most of the content to you. After you graduate, you have to decide what to study and find your own content too.
+Self-study is a critical survival skill in SE industry. In our case, {{ lecture_name }}s will show you the way, but absorbing content is to be done at your own pace, by yourself. In this course, we still tell you what content to study and also pass most of the content to you. After you graduate, you have to decide what to study and find your own content too.
 
 </div>
 

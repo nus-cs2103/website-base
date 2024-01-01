@@ -104,7 +104,7 @@ _Rubber duck debugging_ is an informal term used in software engineering to ref
 
 </span>
 
-* **Ask the lecturer**: Failing all above, you can talk to the lecturer before/after the lecture, or email the lecturer.{{ positive_icon }}
+* **Ask the lecturer**: Failing all above, you can talk to the lecturer before/after the {{ lecture_name }}, or email the lecturer.{{ positive_icon }}
 
 <box type="tip" seamless>
 

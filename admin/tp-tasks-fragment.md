@@ -231,7 +231,7 @@ While we are on the topic, also note that the architecture of AB3 doesn't suite 
 
 While there is no universal set of rules on choosing version numbers for a product, there is a convention named **[SemVer](https://semver.org/) that is well-defined and widely used**. Our tP version numbers (`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}` etc.) do not follow SemVer strictly though.
 
-While on the topic of version numbers, **_milestones_ and _versions_ are not the same thing**. For example, you can have a version release in the middle of a milestone and you can define a milestone that does not release a new version of the product. For convenience, the tP uses them interchangeably (e.g., `{{ version_first }}` is used to mean a version as well as a milestone) because its major milestones coincide with its version releases.<br>
+While on the topic of version numbers, **_milestones_ and _versions_ are not the same thing**. For example, you can have a version released in the middle of a milestone, and you can define a milestone that does not release a new version of the product. For convenience, the tP uses them interchangeably (e.g., `{{ version_first }}` is used to mean a version as well as a milestone) because its major milestones coincide with its version releases.<br>
 In a similar vein, we use the version number to refer to the iteration as well, although they are not the same thing. So, when we say _iteration `{{ version_first }}`_, we mean _the iteration that ends in the milestone `{{ version_first }}`_ (that also happens to deliver the product version `{{ version_first }}`)
 
 </box>
@@ -239,7 +239,8 @@ In a similar vein, we use the version number to refer to the iteration as well, 
 
 **FAQ:** When is the {{ version_first }} deadline?{.text-info}
 
-Answer: The usual deadline for weekly project tasks apply %%i.e., try to do by midnight before the tutorial, latest by the lecture.%%
+Answer: The usual deadline for weekly project tasks apply %%i.e., try to do by midnight before the tutorial, latest by the
+{{ lecture_name }}.%%
 </box>
 <box type="tip" seamless>
 
@@ -363,7 +364,7 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 <span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>
 <div id="desc_start_weekly_meetings">
 
-* We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, ==it is also acceptable to discuss weekly post-lecture quiz (if any) together with team members as you do the quiz== i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.
+* We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, ==it is also acceptable to discuss weekly Canvas quiz (if any) together with team members as you do the quiz== i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.
 </div>
 {#====================================================================================================================#}
 <span id="heading_decide_project_direction">{{ icon_team }} Decide on an overall project direction %%(user profile, problem addressed)%%</span>
@@ -438,8 +439,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 {{ panopto("c0612db9-3cf1-4bab-a066-b07501387c0f", desc="Additional commentary on the recipe to be used") }}
 
-* **Follow the steps in the recipe mentioned above to arrive at user stories for the product**, with your team members.  <span tags="m--cs2103 m--tic4002">If you didn't attend the lecture, please watch the lecture recording to learn more about this step.<br>
-  <span class="text-danger">Not following the recipe mentioned above</span> could result in a different set of user stories than otherwise.
+* **Follow the steps in the recipe mentioned above to arrive at user stories for the product**, with your team members.  <span tags="m--cs2103"><span class="text-danger">Not following the recipe mentioned above</span> could result in a different set of user stories than otherwise.
   </span>
 
 * **User stories for what version?** At this stage, collect user stories to cover at least the final version you hope to deliver at the end of the semester. It is OK to go even beyond that %%(reason: we are simulating a project that will continue even after the semester is over)%%.{% if cs2103 or tic4002 %}<br>
@@ -621,7 +621,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 </div>
 <div tags="m--cs2103">
 
-**Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next Lecture), but give the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w7_start, 2) }}) to submit this.
+**Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next {{ lecture_name }}), but give the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w7_start, 2) }}) to submit this.
 
 This deliverable links back to the following point made earlier:
 
@@ -869,7 +869,7 @@ Strongly recommended to do this as a team activity (preferably F2F, or else conn
 
 * The documentation updates to be done in this iteration are described in the tP tasks in the sections below.
 * Don't forget to 'wrap up' the milestone (as explained in the panel above), after the work is done.
-* Ideally, this should be done by the midnight before the tutorial, but failing that, before the next lecture, as usual.
+* Ideally, this should be done by the midnight before the tutorial, but failing that, before the next {{ lecture_name }}, as usual.
 </div>
 {#====================================================================================================================#}
 <span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration</span>
@@ -1001,7 +1001,8 @@ Each mini iteration should deliver a working product, not just do half of the ta
 
 {{ embed_topic("tp-tasks-fragment.md#desc_plan_the_next_iteration", "%%**[Repeated from last week]**%% Admin " + icon_embedding + " tP: Week 7: Plan the next iteration", "1", status="expanded", indent="1") }}
 
-* **{{ icon_important_big_red }} Iteration deadline: midnight before week 9 tutorial** (i.e., in about 1.5 weeks). Do your best to have a demo-able product by the midnight before the following week's tutorial (i.e., the soft deadline for weekly tP tasks). That way, the period between that deadline and the lecture (i.e., soft deadline for weekly tP tasks) can be used as a buffer in case you overrun the soft deadline.
+* **{{ icon_important_big_red }} Iteration deadline: midnight before week 9 tutorial** (i.e., in about 1.5 weeks). Do your best to have a demo-able product by the midnight before the following week's tutorial (i.e., the soft deadline for weekly tP tasks). That way, the period between that deadline and the
+{{ lecture_name }} (i.e., soft deadline for weekly tP tasks) can be used as a buffer in case you overrun the soft deadline.
 * **Push as hard as you can afford to** in this iteration: While we have kept the expectations bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_first }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
 At the same time, we recommend you should also play it safe by aiming to reach a _smallest possible_ version early and squeeze more in only if there is time left.
 
@@ -1269,8 +1270,9 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 </div>
 
 {% if cs2103 %}
-* **[Heads up] Load-testing CATcher will be done during the upcoming lecture** ({{ get_date(date_w11_start, 0, time="") }}), during the first 15 minutes of lecture. This is ==different from smoke-testing== you did above, and this will count for participation separately.<br>
-  Therefore, remember to ==attend the live lecture (via Zoom or F2F) at least for the first 15 minutes== (this activity cannot be done any other time).
+* **[Heads up] Load-testing CATcher will be done during the upcoming {{ lecture_name }}** ({{ get_date(date_w11_start, 0, time="") }}), during the first 15 minutes of
+{{ lecture_name_short }}. This is ==different from smoke-testing== you did above, and this will count for participation separately.<br>
+  Therefore, remember to ==attend the {{ lecture_name_short }} (via Zoom or F2F) at least for the first 15 minutes== (this activity cannot be done any other time).
 {% endif %}
 
 </div>
@@ -1464,7 +1466,7 @@ Also see:
 <span id="heading_get_ready_for_the_PED">{{ icon_individual }} Get ready for the practical exam dry run</span>
 <div id="desc_get_ready_for_the_PED">
 
-* The practical exam dry run (PE-D) will be held in the coming lecture. It is ==graded==. See the panel below for more info.
+* The practical exam dry run (PE-D) will be held in the coming {{ lecture_name }}. It is ==graded==. See the panel below for more info.
 
 {{ embed_topic("tp-ped.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="1") }}
 </div>
@@ -1807,7 +1809,7 @@ Not applicable this semester
 <div id="desc_attend_the_PE">
 
 * Ensure you read the instructions on **PE Preparation** (given in item 5 above)
-* Attend the practical test, to be done during the lecture.
+* Attend the practical test, to be done during the {{ lecture_name }}.
 
 {{ embed_topic("tp-pe-fragment.md#pe-phases", "Admin " + icon_embedding + " tP → **PE Phases**", "3", indent="1", type="success") }}
 </div>

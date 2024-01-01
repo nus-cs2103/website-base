@@ -12,10 +12,10 @@
 Some ways you can earn weekly participation points:
 
   * Weekly quiz(es), if any:
-    * Quizzes open around the lecture time and stay open until the next lecture starts. In some weeks, there will be two quizzes %%(because two smaller quiz is easier for you to manage than one big quiz)%%.
+    * Quizzes open around the {{ lecture_name }} time and stay open until the next {{ lecture_name_short }} starts. In some weeks, there will be two quizzes %%(because two smaller quiz is easier for you to manage than one big quiz)%%.
     * If multiple attempts are allowed, we take the _best_ attempt, not the _latest_ attempt.
     * When awarding participation points for quizzes, we look for two conditions:
-      * Condition 1: submitted **__early__** i.e., within four days of the lecture i.e., lecture day (Friday) + three more days -> Monday %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
+      * Condition 1: submitted **__early__** i.e., within four days of the {{ lecture_name_short }} i.e., {{ lecture_name_short }} day (Friday) + three more days -> Monday %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
       * Condition 2: answered **__correctly__** i.e., least 70% of the answers are correct %%(reason: to discourage random answers)%%
     * You earn:
       * 3 points if you satisfy both conditions.
@@ -27,26 +27,9 @@ Some ways you can earn weekly participation points:
     * 1 point if you submitted correct solutions for 25-49% of the exercises{% endif %}
   * TEAMMATES peer evaluation sessions: 2 points per session
   * Other weekly activities:
-    * There could be other activities related to the lecture, tutorial, or the administration of the course.
+    * There could be other activities related to the {{ lecture_name_short }}, tutorial, or the administration of the course.
     * Refer the activity description for evaluation criteria.
     * Each activity earns 2 points unless specified otherwise.
-</div>
-
-<div tags="m--tic4001 m--tic4002">
-
-  * Weekly quiz(es):
-    * Quizzes open around the lecture time and stay open until the next lecture starts.
-    * If multiple attempts are allowed, we take the _best_ attempt, not the _latest_ attempt.
-    * When awarding participation points for quizzes, we look for two conditions:
-      * Condition 1: submitted **__early__** i.e., within four days of the lecture i.e., lecture day + three more days %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
-      * Condition 2: answered **__correctly__** i.e., least 70% of the answers are correct %%(reason: to discourage random answers)%%
-    * You earn:
-      * 3 points if you satisfy both conditions.
-      * 2 points if only one of the conditions is satisfied.
-      * 1 point if submitted but both conditions are not satisfied.
-  * Other weekly activities:
-    * There could be other activities related to the lecture, or the administration of the course.
-    * Refer the activity description for evaluation criteria.
 </div>
 
 <div class="indented">
@@ -73,7 +56,7 @@ Some ways you can earn weekly participation points:
 
 </div>
 
-****{{ thumb("C", "info") }} Sufficient {{ "lecture" if tic4002 else "tutorial" }} attendance/participation****
+****{{ thumb("C", "info") }} Sufficient {{ "tutorial" }} attendance/participation****
 
 <div class="indented">
 
@@ -83,9 +66,9 @@ Low attendance/participation can affect participation marks directly (i.e., atte
 <panel type="info" header="**+ Bonus Marks**" expanded no-close no-switch >
 
 In addition, you can receive bonus marks in the following ways. Bonus marks can be used to top up your participation marks ==but only if your marks from the above falls below {{ marks_participation }}==.
-* [For lecture participation] Participated in lecture activities (e.g., in lecture polls/quizzes) in at least {% if cs2113 %}8{% else %}10{% endif %} lectures: 1 mark{% if cs2103 %}
+* [For {{ lecture_name_short }} participation] Participated in {{ lecture_name_short }} activities (e.g., in polls/quizzes done during the {{ lecture_name_short }}) in at least {% if cs2113 %}8{% else %}10{% endif %} {{ lecture_name_short }}s: 1 mark{% if cs2103 %}
 * [For in-video quizzes] Answered in-video quizzes in at least 7 weeks: 1 mark<br>
-  {{ icon_info }} <span id="in-video-quiz-info">Starting from week 3, some pre-recorded lecture videos in the <span class="text-primary">{{ show_as_tab('Topics', icon_tab_topics) }}</span> tab will contain in-video quizzes. Videos containing quizzes are labelled <span class="badge rounded-pill bg-danger"><big>{{ icon_video }} Video</big></span> <span class="badge rounded-pill bg-warning text-dark"><big>Q+</big></span> (instead of the usual <span class="badge rounded-pill bg-danger"><big>{{ icon_video }} Video</big></span>)</span>{% endif %}
+  {{ icon_info }} <span id="in-video-quiz-info">Starting from week 3, some pre-recorded videos in the <span class="text-primary">{{ show_as_tab('Topics', icon_tab_topics) }}</span> tab will contain in-video quizzes. Videos containing quizzes are labelled <span class="badge rounded-pill bg-danger"><big>{{ icon_video }} Video</big></span> <span class="badge rounded-pill bg-warning text-dark"><big>Q+</big></span> (instead of the usual <span class="badge rounded-pill bg-danger"><big>{{ icon_video }} Video</big></span>)</span>{% endif %}
 * [For perfect peer ratings] Received good ratings for all 10 peer evaluations criteria: 1 mark
 * [For helping classmates] Was very helpful to classmates %%e.g., multiple helpful posts in forum%%: 1 mark
 
@@ -96,7 +79,7 @@ In addition, you can receive bonus marks in the following ways. Bonus marks can 
 {{ thumb("Examples:", "secondary") }}
 
 * Alicia earned 1/2, 3/5, !!2/5!!, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 4/5, 5/5 in the first 12 weeks. As she received at least half of the points in 11 of the weeks, she gets 5 participation marks. Bonus marks are not applicable as she has full marks already.
-* Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he participated in 10 lectures, and hence get a bonus mark to make it 5/5.
+* Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he participated in 10 {{ lecture_name_short }}s, and hence get a bonus mark to make it 5/5.
 * Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.
 {% endif %}
 

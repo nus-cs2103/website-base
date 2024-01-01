@@ -25,7 +25,7 @@ This website ==uses a _topic levels_ system== to indicate the progression of con
 <div class="indented">
 
 {{ icon_todo }} : tasks to do<br>
-{{ icon_lecture }} : lecture<br>
+{{ icon_lecture }} : lecture/briefing<br>
 {{ icon_tutorial }} : tutorial<br>
 {{ icon_deadline }} : deadline<br>
 </div>
@@ -38,7 +38,9 @@ Use the search box in the top navigation bar to search for keywords in the websi
 
 ### Printing Textbook Content
 
-Printer-friendly version %%(indicated by {{icon_print}} icon)%% have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.
+A PDF version of the full textbook (<tooltip content="i.e., contains examinable topics only">optimized for exam reference</tooltip>) will be provided at the start of the semester.
+
+In addition, printer-friendly version %%(indicated by {{icon_print}} icon)%% have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.
 
 ### Making this Website Better
 

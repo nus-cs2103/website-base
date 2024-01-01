@@ -4,7 +4,7 @@
 
 **What**: The latest release of the {{ version_penultimate }} period is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
-**When, where**: uses a 40-minutes slot at the start of week 11 lecture slot.
+**When, where**: uses a 40-minutes slot at the start of week 11 {{ lecture_name }} slot.
 {% if cs2103 %}It will be conducted via Zoom. If you can't find another suitable location to join the Zoom meeting, you may do so from the lecture venue.{% endif%}
 
 <modal large header="Admin {{ icon_embedding }} tP → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">

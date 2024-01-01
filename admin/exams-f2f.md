@@ -67,7 +67,7 @@ Why is it incorrect? _____
 <p/>
 </div>
 
-* Here is another example question. Note the ==[**SELECT ALL**]== which tells you that this question can have multiple correoct answers and you need to select all of them i.e., it is a checkbox type question<br>
+* Here is another example question. Note the ==[**SELECT ALL**]== which tells you that this question can have multiple correct answers and you need to select all of them i.e., it is a checkbox type question<br>
   The answer is `A`, `B`, `C`.
 
 <div class="indented-level2">
@@ -93,5 +93,5 @@ D. Gantt charts.
 
 ## Exam briefing, mock exam, practice exam paper
 
-* There will be an exam briefing in the penultimate lecture. It will include a minimal mock exam, just to help you understand the structure.
+* There will be an exam briefing in the penultimate {{ lecture_name }}. It will include a minimal mock exam, just to help you understand the structure.
 * You will be given a practice exam paper (at least half the size of the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.

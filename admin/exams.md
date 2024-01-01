@@ -200,7 +200,7 @@ E. Gantt charts.
 
 ## Exam briefing, mock exam, practice exam paper
 
-* There will be an exam briefing in the penultimate lecture. It will include a minimal mock exam, just to help you understand the structure.
+* There will be an exam briefing in the penultimate {{ lecture_name }}. It will include a minimal mock exam, just to help you understand the structure.
 * You will be given a practice exam paper (same size and difficulty as the actual exam paper) to help you practice timing. That practice paper will be released at least one week before the exam.
 * Answers for the mock/practice exams will be released on Canvas/handouts.
 

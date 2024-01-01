@@ -1,12 +1,12 @@
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
 
-{% set admin_topics = [
+{% set admin_topics = [
   {level: 1, id: "courseOverview", title: course_pair + ": " + course_name, link: "courseOverview.html", alt: "Course Overview"},
   {level: 1, id: "usingThisWebsite", title: "Using this Website", link: "usingThisWebsite.html", highlight: "true", priority: 1},
   {level: 1, id: "courseExpectations", title: "Course Expectations", link: "courseExpectations.html", priority: 2},
   {level: 0, id: "courseStructure", title: "Course Structure"},
     {level: 2, id: "weeklySchedule", title: "Weekly Schedule", link: "weeklySchedule.html", priority: 3},
-    {level: 2, id: "lectures", title: "Lectures", link: "lectures.html", priority: 3},
+    {level: 2, id: "lectures", title: "Weekly Briefings", link: "lectures.html", priority: 3},
     {level: 2, id: "tutorials", title: "Tutorials", link: "tutorials.html", priority: 2},
   {level: 1, id: "instructors", title: "Instructors", link: "instructors.html", priority: 4},
   {level: 1, id: "textbooks", title: "Textbooks", link: "textbooks.html", priority: 2},
