@@ -768,8 +768,9 @@ This activity is worth `2x2=4` participation points.
 3. **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
    1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
    1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
-     {{ icon_tip }} If you don't have ready access to a specific OS, post a link to your JAR in the forum and ask
-     others to help with the smoke testing -- some of them will even appreciate the opportunity to help a classmate.
+      {{ icon_tip }} If you don't have ready access to a specific OS, post a link to your JAR in the forum and ask
+     others to help with the smoke testing -- some of them will even appreciate the opportunity to help a classmate.<br>
+     {{ icon_info }} Note that concepts you encounter while doing course project tasks (e.g., _smoke testing_) are in the [scope of the final exam](exams.html#:~:text=you%20are%20expected%20to%20be%20aware%20of%20SE%2Drelated%20things%20(i.e.%2C%20tools%2C%20techniques%2C%20concepts)%20encountered%20while%20dong%20the%20iP%20and%20the%20tP).
 4. **Create a new release on GitHub** (e.g., `v0.2`) and upload the JAR file.
    * Recommended to refrain from uploading multiple JAR files as this can cause extra work for the evaluators.
 
