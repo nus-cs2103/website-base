@@ -3,7 +3,7 @@
 {% set weekly_admin_tasks = {
 week1: [
   {id: 'submit_pre_lecture_quiz', deadline: get_date(date_w1_start, 7), graded: true},
-  {id: 'set_up_tools', deadline: "before the lecture"},
+  {id: 'set_up_tools', deadline: "before the weekly briefing"},
   {id: 'submit_pre_course_survey', deadline: get_date(date_w1_start, 4), graded: true},
   {id: 'learn_about_the_course'},
   {id: 'follow_the_git_learning_trail'},
@@ -43,7 +43,7 @@ week10: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week11: [
-  {id: 'join_catcher_load_testing', graded: true, deadline: "during the lecture on " + get_date(date_w11_start, 0, format="MMM Do", time=""), deadline_type: 'danger'},
+  {id: 'join_catcher_load_testing', graded: true, deadline: "during the briefing on " + get_date(date_w11_start, 0, format="MMM Do", time=""), deadline_type: 'danger'},
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week12: [

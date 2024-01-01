@@ -9,10 +9,11 @@
 {#====================================================================================================================#}
 {# Tasks
 {#====================================================================================================================#}
-<span id="heading_submit_pre_lecture_quiz">Submit pre-lecture quiz</span>
+<span id="heading_submit_pre_lecture_quiz">Submit prereq topics quiz</span>
 <div id="desc_submit_pre_lecture_quiz">
 
-* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz`** (on Canvas) to test your knowledge of those topics. Ideally, finish the quiz before the first lecture, latest by the given deadline. The quiz is counted for participation.
+* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz`** (on Canvas) to test your knowledge of those topics. Ideally, finish the quiz before the first
+{{ lecture_name }}, latest by the given deadline. The quiz is counted for participation.
 
 {{ embed_topic(baseUrl+"/admin/participation.md#main", "Admin " + icon_embedding + " **Participation**", "2", indent="1") }}
 
@@ -76,12 +77,12 @@ The info in the following panels differs from TIC4001.
 {{ embed_topic(baseUrl+"/admin/courseOverview.md#main", "Admin " + icon_embedding + " **Course overview**", "4", indent="1", type="success") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_attend_the_first_lecture">Attend the first lecture</span>
+<span id="heading_attend_the_first_lecture">Attend the first {{ lecture_name }}</span>
 <div id="desc_attend_the_first_lecture">
 
-* Attend the first lecture on {{ get_date(date_first_lecture, time='') }}(==**compulsory**==).
+* Attend the first {{ lecture_name }} on {{ get_date(date_first_lecture, time='') }}(==**compulsory**==).
 
-{{ embed_topic(baseUrl+"/admin/lectures.md#main", "Admin " + icon_embedding + " **Lectures**", "1", indent="1") }}
+{{ embed_topic(baseUrl+"/admin/lectures.md#main", "Admin " + icon_embedding + " **" + lecture_name_upper + "s**", "1", indent="1") }}
 
 </div>
 {#====================================================================================================================#}
@@ -93,11 +94,20 @@ The info in the following panels differs from TIC4001.
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_submit_first_post_lecture_quiz">Submit post-lecture quiz</span>
+<span id="heading_submit_first_post_lecture_quiz">Submit weekly quiz</span>
 <div id="desc_submit_first_post_lecture_quiz">
 
-* **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on Canvas) to test your knowledge of those topics.<br>
+* **Read weekly topics** allocated for this week. **Submit the `Weekly Quiz`** (on Canvas) to test your knowledge of those topics.<br>
   Weekly quizzes are counted for [participation]({{ baseUrl }}/admin/participation.html).
+
+<box type="info" icon=":fas-question-circle:" seamless>
+
+**FAQ: When can we see the quiz answers?**{.text-info}
+
+In most quizzes, answers will be released within a day after the quiz deadline.
+
+On a related note, if you are not confident about the answer you've selected for a question, ==you are welcome to discuss it in the [forum]({{ url_forum }}), even if the submission deadline is not over yet== (but one question per thread please).
+</box>
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_first_coding_exercises">Submit coding exercises via Coursemology</span>
@@ -123,10 +133,11 @@ The info in the following panels differs from TIC4001.
 {{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "3", indent="2") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_submit_post_lecture_quiz">Submit post-lecture quiz</span>
+<span id="heading_submit_post_lecture_quiz">Submit weekly quiz</span>
 <div id="desc_submit_post_lecture_quiz">
 
-* **Post-lecture quiz**: Read weekly topics allocated for this week and submit the post-lecture quiz before the quiz deadline{% if cs2103 %} %%(i.e., before the following lecture)%%{% endif %}.
+* **Weekly quiz**: Read weekly topics allocated for this week and submit the weekly quiz before the quiz deadline{% if cs2103 %} %%(i.e., before the following
+{{ lecture_name }})%%{% endif %}.
 </div>
 {#====================================================================================================================#}
 <span id="heading_form_teams">[{{ course }} students only] Form teams during the tutorial</span>
@@ -196,7 +207,8 @@ The info in the following panels differs from TIC4001.
 <span id="heading_join_catcher_load_testing">Take part in the CATcher load testing</span>
 <div id="desc_join_catcher_load_testing">
 
-* Attend the live lecture and take part in the CATcher load/stress testing session that will take place during the first 15 minutes of the lecture. More instructions will be provided during the lecture.
+* Attend the live {{ lecture_name }} and take part in the CATcher load/stress testing session that will take place during the first 15 minutes of the
+{{ lecture_name_short }}. More instructions will be provided during the {{ lecture_name_short }}.
 
 </div>
 {#====================================================================================================================#}

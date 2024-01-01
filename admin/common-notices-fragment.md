@@ -9,7 +9,7 @@ A summary of the week, and announcements relevant to that week, will appear in t
 
 **In each week**, go through all the tabs for that week (i.e., <span class="text-primary">{{ show_as_tab('Topics', icon_tab_topics) }}</span>, <span class="text-primary">{{ show_as_tab('Admin Info', icon_tab_admin_info) }}</span>, ...) given at the top of this page and follow the instructions in them. FYI, a **[full timeline](../schedule/timeline.html)** is available too.
 
-This week, ==there are things for you to do before the upcoming lecture== (refer the above tabs for details).
+This week, ==there are things for you to do before the upcoming {{ lecture_name }}== (refer the above tabs for details).
 
 </box>
 </div>
@@ -18,9 +18,9 @@ This week, ==there are things for you to do before the upcoming lecture== (refer
 
 <box type="tip">
 
-* **Our first lecture** will be on {{ get_date(date_first_lecture, time="") }}.{% if cs2103 %} It will be fully online. Subsequent lectures will be hybrid.{% endif %}
+* **Our first {{ lecture_name }}** will be on {{ get_date(date_first_lecture, time="") }}.{% if cs2103 %} It will be fully online. Subsequent {{ lecture_name_short }}s will be hybrid.{% endif %}
 * **Our tutorials** start on week 3.
-* **[{{ course }}T Students]**: Of the many weekly sessions that appear under {{ course }}T, only two actually belong to {{ course }}T. Those are, the lecture on {{ day_lecture }} {{ time_t_lecture_start }}-{{ time_t_lecture_end }}, and the 1-hour tutorial slot. The other two 2-hour slots belong to the CS2101 course.<br>
+* **[{{ course }}T Students]**: Of the many weekly sessions that appear under {{ course }}T, only two actually belong to {{ course }}T. Those are, the lecture slot on {{ day_lecture }} {{ time_t_lecture_start }}-{{ time_t_lecture_end }}, and the 1-hour tutorial slot. The other two 2-hour slots belong to the CS2101 course.<br>
   ==CS2101 tutorials start in week 1==.
 </box><p/>
 </div>
@@ -29,7 +29,7 @@ This week, ==there are things for you to do before the upcoming lecture== (refer
 
 <box type="warning" dismissible>
 
-We start tutorials this week. The [tutorial time table]({{ url_course_website }}/admin/tutorials.html#tutorial-timetable) is on the course website.
+We start tutorials this week. The [tutorial timetable]({{ url_course_website }}/admin/tutorials.html#tutorial-timetable) is on the course website.
 </box>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -37,7 +37,7 @@ We start tutorials this week. The [tutorial time table]({{ url_course_website }}
 
 <box type="info">
 
-You are encouraged to ==try this week's tutorial questions _before_ the actual tutorial==. Otherwise we might not have enough time to finish all the questions during the tutorial hour.
+You are encouraged to ==try this week's tutorial questions _before_ the actual tutorial==. Otherwise, we might not have enough time to finish all the questions during the tutorial hour.
 </box>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

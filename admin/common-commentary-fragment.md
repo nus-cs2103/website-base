@@ -130,7 +130,7 @@ Next, let's get started learning Java. First, a bit about the language itself.
 
 Note that this topic (and many other topics) come with a pre-recorded lecture video.
 
-{{ embed_topic("lectures.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Lectures → Extract", "3", status="expanded") }}
+{{ embed_topic("textbooks.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Lectures → Extract", "3", status="expanded") }}
 <p/>
 
 </div>
@@ -285,9 +285,9 @@ The following section gives a specific scenario that includes the steps of initi
 
 <div tags="m--cs2103">
 
-Note that this topic (and many other topics) come with a pre-recorded lecture video.
+Note that this topic (and many other topics) come with a pre-recorded video.
 
-{{ embed_topic("lectures.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Lectures → Extract", "3", status="expanded") }}
+{{ embed_topic("textbooks.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Textbooks → Extract", "3", status="expanded") }}
 <p/>
 
 </div>
@@ -418,10 +418,10 @@ As you know, one of the objectives of the iP is to raise the quality of your cod
 
 The <span class="badge rounded-pill bg-warning text-dark"><big>Q+</big></span> icon indicates that the video has an in-video quiz. Submitting the in-video quiz can earn you bonus [participation marks]({{ baseUrl }}/admin/participation.html).<br>
 
-In-video quizzes are in only a small number of lecture videos that are more important than the rest. They are a very light way to engage you with the video a bit more than just passively watching.
+In-video quizzes are in only a small number of pre-recorded videos that are more important than the rest. They are a very light way to engage you with the video a bit more than just passively watching.
 </box>
 
-==Please watch the lecture video given below as it has some extra points not given in the text version.==
+==Please watch the video given below as it has some extra points not given in the text version.==
 </div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

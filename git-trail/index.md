@@ -51,7 +51,7 @@ These topics are covered during the [regular course schedule](../schedule/timeli
 {{ divider("Phase 1: Recording Revision History") }}
 
 <p class="lead">In this phase, you'll start using Git to practice recording revision histories in your own computer.</p>
-{{ embed_topic("../admin/lectures.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Lectures → Extract", "", status="expanded") }}
+{{ embed_topic("../admin/textbooks.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Lectures → Extract", "", status="expanded") }}
 
 {{ show_trail_unit("gitAndGithub/init", "Git:`init`", "b5ca72a1-8366-4971-a523-ac090090f68b") }}
 {{ show_trail_unit("revisionControl/savingHistory", "RCS: Saving History") }}

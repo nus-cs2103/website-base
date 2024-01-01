@@ -51,7 +51,7 @@ As {{ marks_ca }}% of this course is based on CA (see <trigger trigger="click" f
 
 <span tags="m--cs2103 m--tic2002 m--tic4001 m--tic4002">
 
-* Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }} are relevant topics you are expected to have learned in prerequisite courses. They are given for reference, but ==are examinable==. The number of {{ star }} indicates the progression of prerequisite topics, similar to the topic levels system above i.e., level-1 prerequisite topics are the most basic and the most important. level-4 pre-requisite topics can be ignored without affecting GPA.
+* Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }} are relevant topics you are expected to have learned in prerequisite courses. They are given for reference, but ==are examinable==. The number of {{ star }} indicates the progression of prerequisite topics, similar to the topic levels system above i.e., level-1 prerequisite topics are the most basic and the most important. level-4 prerequisite topics can be ignored without affecting GPA.
 </span>
 
 **Topic levels for other things** e.g., admin info sections:

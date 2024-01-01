@@ -2,7 +2,7 @@
 
 {% call topic_preamble("OOP: Classes & Objects", reuse=false) %}
 
-Given below are some OOP and Java ==topics you are expected to know already== (indicated by the icon %%{{ icon_prereq }}{{ icon_prereq }}%%). As we have a few days before the first lecture, use that time to go through these topics and self-test your knowledge via the _pre-lecture quiz_ on Canvas.
+Given below are some OOP and Java ==topics you are expected to know already== (indicated by the icon %%{{ icon_prereq }}{{ icon_prereq }}%%). As we have a few days before the first {{ lecture_name }}, use that time to go through these topics and self-test your knowledge via the _prereq topics quiz_ on Canvas.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
