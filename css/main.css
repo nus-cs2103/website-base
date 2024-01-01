@@ -192,6 +192,10 @@ mark {
     display: none;
 }
 
+.print-only {
+    display: none;
+}
+
 .indented-less {
     padding-left: 10px;
 }

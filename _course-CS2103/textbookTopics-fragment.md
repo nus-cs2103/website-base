@@ -344,7 +344,7 @@
               {name: "activityDiagramsIntermediate", heading: "Activity Diagrams - Intermediate", priority: "3"},
               {name: "sequenceDiagramsBasic", heading: "Sequence Diagrams - Basic", priority: "2"},
               {name: "sequenceDiagramsIntermediate", heading: "Sequence Diagrams - Intermediate", priority: "3"},
-              {name: "sequenceDiagramsAdvanced", heading: "Sequence Diagrams - Advanced", priority: "-1"},
+              {name: "sequenceDiagramsAdvanced", heading: "Sequence Diagrams - Advanced", priority: "3"},
               {name: "useCaseDiagrams", heading: "Use Case Diagrams", priority: "3"},
               {name: "timingDiagrams", heading: "Timing Diagrams", priority: "4"},
               {name: "interactionOverviewDiagrams", heading: "Interaction Overview Diagrams", priority: "4"},
