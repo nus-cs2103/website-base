@@ -77,13 +77,30 @@ The final product is to be targeted at users who can type fast, and prefer typin
     * ...
 {% endset %}
 
-<span tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
-<span class="badge rounded-pill bg-dark text-light">++++Direction 1: Evolve++++</span> Evolve <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app.
-  * Some examples:
-    * Manage more entity types related to contacts %%e.g. Tasks allocated to contacts%%
-    * Contact managing optimized for a specific type of user %%e.g. a sales person managing client contacts%%
-    * Make existing features _really_ strong, worthy of a real product %%e.g., make the commands more natural, make the search feature more powerful, tweak the GUI to be more useful, ...%%
+<span class="badge rounded-pill bg-dark text-light">++++Direction 1: Evolve++++</span> Evolve <tooltip content="AddressBook-Level3">AB3</tooltip> into a more powerful or more optimized contact management app. Some examples:
+
+* Contact managing optimized for a specific type of user. e.g.,
+  * a sales person managing client contacts (can be further optimized for the product/service type e.g., insurance, loans, real estate, etc.)
+  * a teacher/tutor managing students (can be further optimized to a specific course or type of teaching)
+  * a secretary of an organization managing member details
+  * an event organizer managing participants
+* Manage more entity types related to contacts %%e.g. Tasks allocated to contacts, loans given, grades, etc.%%
+* Introduce relationships between contacts e.g., members of a team
+* Make existing general features _really_ strong, worthy of a real product e.g.,
+  * make the commands more natural, easier to type/remember, allow aliases, etc.
+  * make the search feature more powerful (e.g, fuzzy search)
+  * tweak the GUI to be more useful (e.g., highlight the contact added/edited
+  * provide GUI alternatives to CLI commands where appropriate)
+* Add more general features e.g.,
+  * import/export data from other formats
+  * archive old data
+  * more help: guided tours, tool tips, tip of the day etc.
+  * stats, analytics, visualizations
+  * undo/redo
+  * result preview (i.e., show what would happen if the current command is executed)
+* Internal improvements e.g., refactor the current design/implementation to make it better in some way
 
 <div class="indented-level1">
 
@@ -91,24 +108,23 @@ The final product is to be targeted at users who can type fast, and prefer typin
 {{ cons }} less flexibility in product design.
 </div>
 
-<span class="badge rounded-pill bg-dark text-light">++++Direction 2: Morph++++</span> Morph AB3 in any direction you wish.
-  * {{ morph_examples | trim }}
+~~<span class="badge rounded-pill bg-dark text-light">++++Direction 2: Morph++++</span> Morph AB3 in any direction you wish.~~
 
+==**This direction is <span class="text-danger">no longer allowed</span>, as it has been observed to increase tP workload**== beyond what students anticipate when making this choice (e.g., 40-50% more work than strictly needed by the tP). Besides, it is less brownfield than direction 1.
 <div class="indented-level1">
 
-{{ pros }} more flexibility in the project direction.<br><br>
-{{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base, morphing is less common in real projects (compared to direction 1).
+~~{{ pros }} more flexibility in the project direction.<br><br>
+{{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base, morphing is less common in real projects (compared to direction 1).~~
 </div>
 
-Weigh the pros/cons and choose the one that suits you. Note that ==**creating a novel/unique/interesting product will NOT earn you extra marks**== in this course. While those qualities are important in real world projects, and we do allow you room to go in those directions in this course, they are not the focus of this course {% if cs2103 %}%%(there are other courses such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
+~~Weigh the pros/cons and choose the one that suits you. Note that **creating a novel/unique/interesting product will NOT earn you extra marks** in this course. While those qualities are important in real world projects, and we do allow you room to go in those directions in this course, they are not the focus of this course {% if cs2103 %}%%(there are other courses such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.~~
 
-**Our recommendation:**{.text-success} Go with direction 1 unless you have a strong inclination to create a _different_ product. Direction 1 fits both weak and strong programmers, smoother at the start, has a lower risk of schedule overruns (because it can be done in smaller increments all the way, while morphing requires some big changes at the start), and gives you a better chance of reaching a product that is worthy of actual users (as you will not be slowed down by the morphing).
 {% endif %}
 <div tags="m--cs2113 m--tic4001">
 
 * {{ morph_examples | trim }}
 </div>
-</span>
+</div>
 
 <div tags="m--cs2113 m--tic4001">
 
@@ -126,8 +142,8 @@ Weigh the pros/cons and choose the one that suits you. Note that ==**creating a 
 ## Target User & Value Proposition
 
 You are expected to:
-* **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example of progressively narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → {{ course_pair }} instructors.%%<br><br>
- {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/tp-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing over mouse actions%%.
+* **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example of progressively narrowing down target user: anybody → teachers → university teachers → tech-savvy university teachers → {{ course_pair }} instructors.%%<br><br>
+ {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/tp-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing to mouse actions%%.
 
 <div class="indented-level2">
 
@@ -144,7 +160,7 @@ The size of the target market is not a grading criterion. You can make it as nar
 </div>
 
 * **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the user's life easier?<br>
-  You should also define the _scope_ clearly i.e., boundary beyond which the app will not help %%e.g., the app will help to manage tasks within a single project only (no support for multiple projects)%%.
+  You should also define the _scope_ clearly i.e., boundary beyond which the app will not help %%e.g., the app will manage contact details of a small number of JC-level students (i.e., no support for managing large number of students, primary students, or adult students)%%.
 * **Optimize the product to the chosen target users** i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them).
   * Example 1: If the product targets {{ course_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to see a link to a student's project on GitHub%%
   * Example 2: If your app manages contacts, you can optimize its features based on,
@@ -160,23 +176,25 @@ The size of the target market is not a grading criterion. You can make it as nar
 
 <h2 class="text-white bg-danger p-1">Functionality Expectations</h2>
 
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
-**The expected level of _functionality_ to be added by a 5-person team is roughly the ==equivalent effort taken to create AB3 _functionality_==**. Furthermore, we expect a team to reach that level **if each member puts in an effort equivalent to the effort they put into the iP**. Some examples likely to meet that criterion:
-* Example 1: A fictional contact management app optimized for a specific target user group:
-  * Existing AB3 features are optimized to the new target user group.
-  * Person objects are enhanced to contain more details.
-  * There are a 4-5 new functionality that are specific to the target user group.
-* Example 2: a FooBar app that keeps track of two different types of entities _Foo_ entities and _Bar_ entities.
-  * Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.
-  * In addition to <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a 4-5 FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.
+**The expected level of _functionality_ is what you could achieve if each member puts in an effort equivalent to half of the effort they put into the iP**. Furthermore, we estimate that this will equate to **about 300-400 lines of functional code** (excluding testing and documentation) per person.
+
+<box type="important" seamless>
+
+  In case you happen to look at tP's of past batches in order to gauge the required effort, note that the above reflects a ==drastically lower bar from previous semesters==. For reference, the bar given to previous batches was 'same as iP effort' (not half), and the median LoC of functional code written by a student was about 850 LoC.
+</box>
 
 <panel type="seamless" header="%%FAQ: If our team implement features x, y, and z, is that enough?%%" >
 
-Yes, if it requires each member to put in about an iP worth of effort.
+Yes, if it requires each member to put in about a half an iP worth of effort.
+</panel>
+<panel type="seamless" header="%%FAQ: Is it a must to write at least 300 LoC?%%" >
+
+No. It is possible for 100 LoC to take more effort than 300 LoC, depending on the context. So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the equivalent effort).
 </panel>
 </div>
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 **The expected level of _functionality_ from a team is roughly ==what you can achieve if each member contributes about the same amount of functional code as required by a <tooltip content="i.e., if all requirements were met at the _minimal_ level specified">typical iP</tooltip>==**.
 </div>
@@ -184,21 +202,15 @@ Yes, if it requires each member to put in about an iP worth of effort.
 ==You will get full marks for implementation effort== if you meet the expectation stated above. There are no extra marks for exceeding that bar. You are better off spending that effort in improving other aspects of the project. Try to avoid adding more features than necessary, unless you are doing it out of interest. As mentioned elsewhere, a functionality just the right size and of high quality will earn more marks than a functionality that is bigger (or more difficult, or more interesting/novel) but of lower quality.
 
 
-<box type="important" tags="m--cs2103 m--cs2113" seamless>
-
-<div tags="m--cs2103 m--cs2113">
+<box type="important" tags="m--cs2113" seamless>
 
 In the most recent semester, more than 80% of the students did significantly more work than what was needed to earn full marks for effort. Many of them were likely under the wrong impression that doing more features will earn them more marks. Try to avoid doing the same mistake yourself.
 
-</div>
-<div tags="m--cs2113">
-
 In fact, here is the grading criterion for the individual project effort:
 {{ embed_topic("tp-pe-fragment.md#projectGrading-effort-instructions", "Admin " + icon_embedding + " tP → PE → ==Evaluating the  Implementation Effort==", "3") }}
-</div>
 </box>
 
-<box tags="m--cs2103 m--tic4002">
+<box tags="m--cs2103">
 
 {{ icon_tip }} If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 (not AB3) in order to reduce the effort required.
   * [Undo/redo](https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature)

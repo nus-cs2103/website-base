@@ -389,14 +389,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
 {{ embed_topic(baseUrl+"/admin/tp-constraints.md#main", "Admin " + icon_embedding + " **tP: Constraints**", "3", indent="2") }}
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Criteria Used for Grading the Product Design==**", "3", indent="2") }}
 
-<box type="warning" seamless>
-
-**Pick the _morph_ option at your own risk**: As mentioned elsewhere, morph option (i.e., aiming to build an application that manages _anything other than contacts_) is the harder option, especially at the start of tP coding (morphing is an extensive change that needs to be done very early in the project, and quickly). Choose it only if your team has at least one strong programmer who is willing to invest extra effort to create a 'different' application.
-</box>
-
 <box type="tip" seamless>
 
-**Pick a CLI-friendly product domain**: Given `Recommendation-CLI-First` and `Constraint-Typing-Preferred` mentioned in the panels above, it makes sense to pick a product domain that is more suitable for CLI interactions i.e., a product that deals with easy-to-type textual data, needs a small number of data fields, and each data field is short. %%For example, a blog editor is an unsuitable product domain because it also deals with non-text data (e.g., images, videos) and some data fields are quite long (i.e., paragraphs of text). Similarly, keeping track of extensive employee records may be an unsuitable domain if there are many data fields per employee.%%
+**Pick a CLI-friendly product domain**: Given `Recommendation-CLI-First` and `Constraint-Typing-Preferred` mentioned in the panels above, it makes sense to pick a product domain that is more suitable for CLI interactions i.e., a product that deals with easy-to-type textual data, needs a small number of data fields, and each data field is short. %%For example, {% if cs2113 %}a blog editor is an unsuitable product domain because it also deals with non-text data (e.g., images, videos) and some data fields are quite long (i.e., paragraphs of text). Similarly,{% endif %} keeping track of extensive employee records may be an unsuitable domain if there are many data fields per employee.%%
 </box>
 
 
