@@ -1,3 +1,7 @@
+{% if cs2103 %}==**To reduce workload, this deliverable <span class="text-danger">has been removed from tP requirements</span> this semester.**==
+
+<panel type="secondary" header="Details ... (no longer applicable)" peek>
+{% endif %}
 
 * **Record a demo** of all the product features, in a reasonable order. Some options:
   * Screen record each feature and tie it up (see the  "Suggested tools" below for tool options).
@@ -88,3 +92,7 @@ Note that CS2101 demo requirements may differ. Different context → Different r
 * **If a significant feature was not merged on time:** inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.
 * **If you are unable to come to the demo due to a valid reason**, submit the evidence of your excuse %%e.g., MC%% to prof. The demo is part of course grading and ==absence without a valid reason== will cause you to lose marks.
 -->
+
+{% if cs2103 %}
+</panel>
+{% endif %}

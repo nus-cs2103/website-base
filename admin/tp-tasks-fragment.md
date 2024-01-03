@@ -1772,7 +1772,7 @@ Not applicable this semester
 * As usual, wrap up the milestone on GitHub %%i.e., close issues/PRs/milestone (no code changes allowed)%%. Note that the deadline for this is the same for everyone (i.e., does not depend on your tutorial).
 </div>
 {#====================================================================================================================#}
-<span id="heading_demo_the_product">{{ icon_team }} Submit the demo video</span>
+<span id="heading_demo_the_product">{{ icon_team }}~~Submit the demo video~~{% if cs2103 %}{% else %}Submit the demo video{% endif %}</span>
 <div id="desc_demo_the_product">
 
 <div id="demo-instructions" >
@@ -1781,7 +1781,7 @@ Not applicable this semester
 
 <pic eager src="{{baseUrl}}/admin/images/v05demo.png" style="width: 250px"><p></pic>
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → Deliverables → Demo", "3") }}
+{{ embed_topic("tp-deliverables.md#tp-deliverables-demo", "Admin " + icon_embedding + " tP → Deliverables → Demo", "3", status=("peek" if cs2103 else "minimized")) }}
 <p/>
 </div>
 
