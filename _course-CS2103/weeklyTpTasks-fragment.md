@@ -24,7 +24,6 @@ week7: [
   {id: 'do_a_practice_iteration', deadline: 'midnight before the tutorial'},
   {id: 'update_website_aboutus_readme'},
   {id: 'update_the_ug'},
-  {id: 'add_skeletal_ppp'},
   {id: 'update_dg_user_stories_etc'},
   {id: 'plan_the_next_iteration'},
   {id: 'start_implementing_the_next_version'}

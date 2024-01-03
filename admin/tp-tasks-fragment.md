@@ -1586,19 +1586,20 @@ Furthermore, tester ID mapping (i.e., who is Tester A, Tester B, etc.) will be s
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_draft_the_ppp">{{ icon_individual }} Draft the PPP</span>
+<span id="heading_draft_the_ppp">{{ icon_individual }} {% if cs2103 %}[Optional] {% endif %}Draft the PPP</span>
 <div id="desc_draft_the_ppp">
-<include src="tp-tasks-fragment.md#alert-time-sensitive" />
+{% if cs2113 %}<include src="tp-tasks-fragment.md#alert-time-sensitive" />{% endif %}
 
-* {% if cs2103 %}**Fill up the skeletal _Project Portfolio Page (PPP)_** you created earlier with a draft version of content.{% else %}**Create the first version of your _Project Portfolio Page (PPP)_**.<br>
-  Reason: ==Each member needs to create a PPP== to describe your contribution to the project.{% endif %}
+* **Create the first version of your _Project Portfolio Page (PPP)_**{% if cs2103 %} if you opt to submit a PPP -- the panel below to learn when you should opt to submit it.{% endif %}.{% if cs2113 %}==Each member needs to create a PPP== to describe your contribution to the project.{% endif %}
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="1") }}
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "2", indent="1", status="peek") }}
+{% if cs2113 %}
 
 <box type="tip" seamless>
 
 Convert the PPP to a PDF to see if the page-count is within expectations (the PDF version can be longer than what you would expect by looking at the HTML version).
 </box>
+{% endif %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_prepare_for_demo">{{ icon_team }} ~~Prepare for the demo rehearsal~~</span>
@@ -1686,9 +1687,9 @@ Not applicable this semester
 
 <box id="caution-on-pdf-conversion" type="important" seamless>
 
-**Don't take PDF conversion lightly:**{.text-danger} **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques  or not following the settings suggested in the given technique can result in issues== such as missing background colors, poor quality resolution , unnecessarily large files (the last two can be considered as bugs).
+**Don't take PDF conversion lightly:**{.text-danger} **To convert the UG/DG{% if cs2113 %}/PPP{% endif %} into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques  or not following the settings suggested in the given technique can result in issues== such as missing background colors, poor quality resolution , unnecessarily large files (the last two can be considered as bugs).
 
-**The PDF versions of the UG/DG/PPP should be _usable_** by the target readers, even if not as neat/optimized as the Web versions. For example, margins and page breaks need not be optimized, but they should not hinder the reader either. Assume some will occasionally choose the PDF version over the Web version %%e.g, for printing, offline viewing, annotating etc.%%
+**The PDF versions of the UG/DG{% if cs2113 %}/PPP{% endif %} should be _usable_** by the target readers, even if not as neat/optimized as the Web versions. For example, margins and page breaks need not be optimized, but they should not hinder the reader either. Assume some will occasionally choose the PDF version over the Web version %%e.g, for printing, offline viewing, annotating etc.%%
 
 **PE uses the PDF versions of UG/DG, not the Web version!**{.text-danger} Any problems in those PDF files (e.g., broken links, messed up formatting) can be reported as bugs.
 
@@ -1750,13 +1751,14 @@ Not applicable this semester
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → Developer Guide", "3", indent="2") }}
 
 
-* **Project Portfolio Page (PPP)**:{icon="fas-user"}
+* **{% if cs2103 %}[Optional] {% endif %}Project Portfolio Page (PPP)**:{icon="fas-user"}
+  * HTML version: make available on `github.io`{% if cs2113 %}
   * PDF file: submission is similar to the UG<br>
     File name: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g.[{{ example_team_id }}][Leow Wai Kit, John]PPP.pdf%%<br>
-    {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names)
-  * HTML version: make available on `github.io`
+    {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names){% else %}
+  * See the panel below to learn when you should opt for this submission.{% endif %}
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "3", indent="2") }}
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "3", indent="2", status=("peek" if cs2103 else "minimized")) }}
 
 
 * **Product Website**: Update website (home page,<span tags="m--cs2103 m--tic4002"> `Ui.png`,</span> `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.{icon="fas-users"}

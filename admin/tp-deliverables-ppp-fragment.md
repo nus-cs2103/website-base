@@ -1,4 +1,10 @@
+{% if cs2103 %}
+~~At the end of the project each student is required to submit a _Project Portfolio Page_.~~ ==**To reduce workload, this deliverable <span class="text-success">has been made optional</span> this semester.**== You need to submit this only if you think your team members are not fully aware of your contribution to the tP. Also, we will ask you to submit this if  there is a dispute about your contribution level.
+
+<panel type="secondary" header="Details ... (read only if you opted to submit this deliverable)" peek>
+{% else %}
 At the end of the project each student is required to submit a _Project Portfolio Page_.
+{% endif %}
 
 #### <span class="badge bg-info">PPP</span> <span class="text-info">Objectives</span>
 
@@ -37,7 +43,7 @@ Keep in mind that evaluators will use the PPP to estimate your project effort. W
 
 * File name (i.e., in the repo): `docs/team/github_username_in_lower_case.md` e.g., `docs/team/goodcoder123.md`
 * {{ icon_example }} Follow the [example in the AddressBook-Level3]({{ url_ab3_upstream_website }}/team/johndoe.html)
-* For the final submission of the PPP (at the end of the tP), you need to save your PPP as a PDF file. Therefore, ensure the PDF version of the PPP looks OK at least a few days before the final submission.
+{% if cs2113 %}* For the final submission of the PPP (at the end of the tP), you need to save your PPP as a PDF file. Therefore, ensure the PDF version of the PPP looks OK at least a few days before the final submission.
 
 <div class="indented-level2">
 
@@ -56,3 +62,7 @@ Overview + Summary of contributions | 0.5-1 | 2
 </div>
 
 * The ==page limits given above are _after_ converting to PDF format==. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.
+{% else %}* PDF file submission: not required.{% endif %}
+{% if cs2103 %}
+</panel><p/>
+{% endif %}
