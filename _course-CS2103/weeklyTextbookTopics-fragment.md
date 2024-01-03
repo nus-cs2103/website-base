@@ -334,7 +334,7 @@
         {location: ["testing", "tdd", "how"]},
 {week: "9"},
     {name: "Modeling"},
-      {heading: "OO Domain Models", panopto: "c52e6f24-e009-4a00-a593-ac4500f2d575", questions:"y"},
+      {heading: "Conceptual Class Diagrams (aka OODMs)", panopto: "c52e6f24-e009-4a00-a593-ac4500f2d575", questions:"y"},
         {location: ["modeling", "modelingStructures", "objectOrientedDomainModels"]},
       {heading: "Activity Diagrams", panopto: "49336087-f463-4fd2-ad85-ac4500f2d541", questions:"y"},
         {location: ["modeling", "modelingBehaviors", "activityDiagrams"]},
