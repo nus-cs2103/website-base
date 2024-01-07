@@ -35,7 +35,8 @@ week3: [
     {id: 'A-JavaDoc', title: 'JavaDoc'},
     {id: 'A-CodingStandard', title: 'Follow the Coding Standard'},
     {id: 'Level-9', title: 'Find'}
-  ]}
+  ]},
+  {id: 'start_learning_javafx'}
 ],
 week4: [
   {id: 'use_gfmd_in_pr_description'},

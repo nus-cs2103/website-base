@@ -59,7 +59,7 @@ Optionally, if you haven't pushed the commit to the fork yet, you can try to fig
 
 * Remember to take note of our plagiarism policies, if you haven't done so already:
 
-{{ embed_topic("policies-fragment.md#policy-reuse", "Admin " + icon_embedding + " Policies -> **Reuse**", "1", indent=1, type="danger") }}
+{{ embed_topic("policies-fragment.md#policy-reuse", "Admin " + icon_embedding + " Policies → **Reuse**", "1", indent=1, type="danger") }}
 
 </div>
 <div id="volatile-requirements">
@@ -167,6 +167,25 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 
 <include src="ip-tasks-fragment.md#commit" />
 <include src="ip-tasks-fragment.md#tag-push" />
+</box>
+<box type="tip" light>
+
+##### iP feels like 'same same' ...?{.text-success}
+
+**As you do the iP, if you feel like you are not learning enough new stuff** as you've done similar work before (at least on the Java/OOP side), there is an alternative approach you can take to the iP. See the panel below if you are interested.
+
+<panel type="seamless" header="****iP.AI****: an AI-assisted approach to the iP" minimized>
+
+Caveat: this alternative does not earn you extra credit, but it gives you an opportunity to learn more about AI tools related to SE, with the same (or even less) effort.
+
+**Goal**: In the iP.AI approach, your goal is to minimize hand-coding the iP, by getting generative AI tools (such as Co-Pilot) to write the code for you instead. The learning goal is to explore how to increase your coding productivity using AI tools.
+
+**Requirements:**
+
+1. You should follow the normal iP requirements/deadlines, except that you will try to replace handcoding with AI-assisted code generation, where possible. It is still fine to do some of the coding work manually.
+1. You may use any free or commercial AI tools, provided you declare which tool you used (how to declare? see next point).
+1. Add a file named `AI.md` at the root of project folder (same location where `CONTRIBUTING.md` lives). Commit the file. Keep it updated with a record of your use of AI tools (e.g., which tool you used for which increment), and interesting observations (e.g., what worked? what didn't? overall, how much time did it save?). You can update this file periodically (e.g., once a week). It need not be very detailed (e.g., even a 0.5 page is enough).
+</panel>
 </box>
 </div>
 </div>
@@ -375,7 +394,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <div class="indented-level1">
 <br>
 
-<span class="text-danger">**:fab-apple: Attention Mac users**</span>! If you are not using the exact JDK distribution specified by our advisory for Mac users in [this page](programmingLanguages.md), you are likely to run into problems while doing `Level-10`.
+<span class="text-danger">**:fab-apple: Attention Mac users**</span>! If you are not using the ==exact **Azul** JDK distribution== (not any other JDK 11 distributions) specified by our advisory for Mac users in [this page](programmingLanguages.md), you are likely to run into problems while doing `Level-10`.
 </div>
 </div>
 {#====================================================================================================================#}
@@ -517,6 +536,12 @@ Resources:
 <include src="dukeFragment.md" boilerplate var-header="**`A-JavaDoc`: Add JavaDoc comments**" var-fragment="extensions-fragment.md#A-JavaDoc" />
 <include src="dukeFragment.md" boilerplate var-header="**`A-JUnit`: Add JUnit Tests**" var-fragment="extensions-fragment.md#A-JUnit" />
 
+</div>
+{#====================================================================================================================#}
+<span id="heading_start_learning_javafx">[Optional] Get a head start on JavaFX</span>
+<div id="desc_start_learning_javafx">
+
+If you can spare some time, start learning JavaFX by following the [_JavaFX tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/javaFx.html). Doing so will make your life easier in the following week.
 </div>
 {#====================================================================================================================#}
 <span id="heading_prepare_for_pr_reviews">Get ready to review PRs</span>
@@ -721,6 +746,8 @@ This activity is worth `2x2=4` participation points.
 
 * You may give the product any name, but do not rename the repo.
 * Reminder: you can give the chatbot any personality (there is no need to follow the exact command/response formats given)
+* {{ icon_important_big_red }} Ensure that the name of the product name is not `Duke` (as required by [Level-0](../se-book-adapted/projectDuke/index.html#level-0-rename-greet-exit)).{% if cs2103 %}<br>
+   Ensure the correct product name appears everywhere in the UI e.g., titlebar of the GUI.{% endif %}
 * {{ icon_important_big_red }} Remember to give credit to any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent="1") }}
@@ -729,11 +756,14 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_set_up_website">Set up a product website</span>
 <div id="desc_set_up_website">
 
-<div  tags="m--cs2103 m--tic4002" id="ip-ui-png">
+<div  tags="m--cs2103 id="ip-ui-png">
 
 * **Add a representative screenshot** of the product to the `docs` folder.
   * ==The file should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
-  * Ideally, the product name is visible in the screenshot e.g., in the title bar of the Window
+  * `Ui.png` should show the _full_ GUI window (i.e., not just the part containing the chat messages).
+  * `Ui.png` should be a _single_ GUI window (i.e., do not stitch multiple screenshots together).
+  * Ideally, the product name should visible in the screenshot e.g., in the title bar of the Window
+  * Also note the tips given in the panel below:
 
 {{ embed_topic("tp-deliverables-website-fragment.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
 </div>
