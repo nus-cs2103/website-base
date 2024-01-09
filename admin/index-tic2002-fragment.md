@@ -66,8 +66,8 @@ e.g., **Instead of traditional instructor-led tutorials**, the course provides q
 # Lectures + Tutorials
 <div class="indented" id="lectures-info">
 
-%%:far-clock:%% Tuesdays 6.30-9.30pm<br>
-%%:fas-map-marker-alt:%% COM1-0210<br>
+%%:far-clock:%% {{ "Tuesday" if semester == '1' else "Wednesday" }} 6.30-9.30pm<br>
+%%:fas-map-marker-alt:%% COM1-01-08<br>
 
 **==The first lecture will be in F2F mode==, and will start at 7pm.**
 
@@ -78,7 +78,7 @@ You can continue to attend them using F2F mode but those who show good progress 
 * **[6.30-7.00pm] Pre-lecture consultations:**
   * You can use this time to get prof's help if you encountered problems while doing the previous week's tasks.
   * This session will be online. Communications with the prof is to be done using Microsoft Teams app.
-    * If the question is is potentially relevant to others in the class, post your question in the chat room of the `TIC2002-{{ period }}` ([link]({{ url_ms_teams_class }})) MS Team.
+    * If the question is potentially relevant to others in the class, post your question in the chat room of the `TIC2002-{{ period }}` ([link]({{ url_ms_teams_class }})) MS Team.
     * Otherwise search for prof's name (`Damith Chatura RAJAPAKSE`) in MS Teams and send a private chat message.
 * **[7.00-8.00pm] Lecture briefing**:
   * Will be done in Hybrid mode (i.e., you can attend F2F, or join via Zoom, or watch the recording later).

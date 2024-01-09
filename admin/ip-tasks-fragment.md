@@ -756,7 +756,7 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_set_up_website">Set up a product website</span>
 <div id="desc_set_up_website">
 
-<div  tags="m--cs2103 id="ip-ui-png">
+<div  tags="m--cs2103" id="ip-ui-png">
 
 * **Add a representative screenshot** of the product to the `docs` folder.
   * ==The file should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
