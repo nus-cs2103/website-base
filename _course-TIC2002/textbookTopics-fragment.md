@@ -327,7 +327,7 @@
               {name: "classDiagramsIntermediate", heading: "Class Diagrams - Intermediate", priority: "3"},
               {name: "classDiagramsAdvanced", heading: "Class Diagrams - Advanced", priority: "4"},
               {name: "objectDiagrams", heading: "Object Diagrams", priority: "2"},
-              {name: "objectOrientedDomainModels", heading: "Object Oriented Domain Models", priority: "4"},
+              {name: "objectOrientedDomainModels", heading: "Conceptual Class Diagrams (aka OODMs)", priority: "4"},
               {name: "deploymentDiagrams", heading: "Deployment Diagrams", priority: "4"},
               {name: "componentDiagrams", heading: "Component Diagrams", priority: "4"},
               {name: "packageDiagrams", heading: "Package Diagrams", priority: "4"},

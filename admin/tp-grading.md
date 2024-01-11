@@ -28,6 +28,7 @@ See the sections below for details of how we assess each aspect.
 * peers from other teams (based on peer testing and user guide)
 
 {{ embed_topic("tp-pe-fragment.md#projectGrading-featureFit-instructions", "Admin " + icon_embedding + " tP → PE → ==Grading Instructions for Product Design==", "3") }}
+<p/>
 
 In addition, feature flaws reported in the PE will be considered when grading this aspect.
 

@@ -247,6 +247,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
   * Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html).<br>
     {{ icon_pro_tip }} `LGTM` is common abbreviation you can use in the review comments to mean `Looks Good To Me`.
+  * To expedite the PR, you can [request review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review) from specific team members.
   * While waiting for one PR to be merged, you can send more PRs. If you do, remember to use a separate branch for each PR, and try to reduce overlaps between parallel PRs %%(so that each can be reviewed/merged independently from each other)%%.
 * **Go breadth-first iterative:** As you are expected to follow breadth-first iterative approach, almost ==all code additions to the `master` branch should take the product from a working version to a slightly better working version==.
   * {{ bad }} Let's add all data classes first %%reason: this is the depth-first approach%%

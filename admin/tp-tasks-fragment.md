@@ -137,7 +137,7 @@ e.g., the UI continues to show it after an item was deleted in the most recent c
 <div class="indented">
 <box type="important" icon=":fas-hourglass-half:" seamless>
 
-<span class="text-danger">**This task is time-sensitive.**</span> If done later than the [deadline](weeklySchedule.html#:~:text=for%20exact%20dates.-,Deadline%20for%20weekly%20tasks,-The%20soft%20deadline), it will not be counted as 'done' (i.e., no grace period). %%Reason: This is 'an early draft'; if done late, it is the 'final version' already.%%
+<span class="text-danger">**This task is time-sensitive.**</span> If done later than the [deadline](weeklySchedule.html#:~:text=for%20exact%20dates.-,Deadline%20for%20weekly%20tasks,-The%20soft%20deadline), it will not be counted as 'done' (i.e., no grace period). %%Reason: This is 'an early draft'; if done late, it can't count as 'early'.%%
 </box>
 </div>
 </div>
@@ -168,9 +168,12 @@ e.g., the UI continues to show it after an item was deleted in the most recent c
 
 <box dismissible>
 
-{{ icon_important_big_red }} **tP tasks progress is graded**. Completing individual and team tasks are considered for grading the _project management_ component of your project grade.
+{{ icon_important_big_red }} **tP tasks progress is graded**. Completing individual and team tasks are considered for grading the _project management_ component of your project grade. That said, unless a deliverable is marked 'time-sensitive', there is no penalty for missing a deadline provided you catch up with most of them within a few days after the deadline.
 
-{{ embed_topic("tp-grading.md#project-management-grading", "Admin " + icon_embedding + " tP → Grading → Project Management", "3", indent="1") }}
+{{ embed_topic("tp-grading.md#project-management-grading", "Admin " + icon_embedding + " tP → **Grading → Project Management**", "3", indent="1") }}
+
+{{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent="1") }}
+
 
 {{ icon_important_big_red }} **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. We prefer not to waste admin resources processing requests for partial credit for work that did not follow the instructions precisely, unless the progress was not detected due to a bug in the script.
 </box>
@@ -188,7 +191,7 @@ However, it does not mean we simply keep adding features without any plan and wh
 1. **we should have a clear overall direction** (e.g., target user, value proposition), and,
 1. **we should start each iteration with a clear, detailed, and precise plan of the intended outcome of _that_ iteration**.
 
-**The plan of the current iteration _can_ change as the iteration progresses** (e.g., if we realize we underestimated the effort required for that iteration), but that would be a case of 'changing the current iteration plan', not a case of 'making it up as we go'.
+**Even the plan of the current iteration _can_ change as the iteration progresses** (e.g., if we realize we underestimated the effort required for that iteration), but that would be a case of 'changing the current iteration plan', not a case of 'making it up as we go'.
 </box>
 </div>
 {#====================================================================================================================#}
@@ -370,13 +373,13 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 <span id="heading_decide_project_direction">{{ icon_team }} Decide on an overall project direction %%(user profile, problem addressed)%%</span>
 <div id="desc_decide_project_direction">
 
-* **Decide project direction, target user profile, and problem addressed**: Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:
+* **Decide the target user profile, and problem addressed**, as described in the panels below (tip: you can use your first project meeting for this):
 
 <div class="indented">
 
 <box type="warning" seamless>
 
-As we are still at the early stages of identifying a problem to solve, do not think of the product (i.e., the _solution_) yet. That is, ==do not discuss the product features, UI, command format, and implementation details, etc.== unless they are pertinent to the decision of the project direction.
+As we are still at the early stages of identifying a problem to solve, do not think of the product (i.e., the _solution_) yet. That is, ==do not discuss the product features, UI, command format, and implementation details, etc.== unless they are pertinent to the user profile or the problem addressed.
 </box>
 </div>
 
@@ -423,7 +426,12 @@ As we are still at the early stages of identifying a problem to solve, do not th
 <span id="heading_brainstorm_user_stories">{{ icon_team }} Brainstorm user stories</span>
 <div id="desc_brainstorm_user_stories">
 
-  <pic eager class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px"></pic>
+<box type="info" tags="m--cs2103" seamless>
+
+**You can do this step as if the tP is a greenfield project** (i.e., there is no AB3), to get the full experience of this activity. Some of the user stories you come up with may already be implemented in AB3, but that can be sorted out later.
+</box>
+
+<pic eager class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px"></pic>
 
 <div class="indented-level1">
 
@@ -434,7 +442,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 {{ panopto("c0612db9-3cf1-4bab-a066-b07501387c0f", desc="Additional commentary on the recipe to be used") }}
 
-* **Follow the steps in the recipe mentioned above to arrive at user stories for the product**, with your team members.  <span tags="m--cs2103"><span class="text-danger">Not following the recipe mentioned above</span> could result in a different set of user stories than otherwise.
+* **Follow the steps in the recipe mentioned above to arrive at user stories for the product**, with your team members.  <span tags="m--cs2103"><span class="text-danger">If you don't follow the recipe mentioned above</span>, you could end up with a different set of user stories than otherwise.
   </span>
 
 * **User stories for what version?** At this stage, collect user stories to cover at least the final version you hope to deliver at the end of the semester. It is OK to go even beyond that %%(reason: we are simulating a project that will continue even after the semester is over)%%.{% if cs2103 or tic4002 %}<br>
@@ -442,7 +450,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 * **How many user stories?** Aim to collect more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other competing products.%%
 
-* **User stories of what size?** Normally, it is fine to use _epic_-level user stories in the early stages of a project but given this is a small project, you may want to define smaller user stories (i.e., small enough for one person to implement in 1-2 days).
+* **User stories of what size?** Normally, it is fine to use _epic_-level user stories in the early stages of a project but given this is a small project, you may want to eventually break them down to smaller user stories (i.e., small enough for one person to implement in 1-2 days). Some examples (from the iP product domain):
   * {{ bad }} As a user, I can track my schedule, so that I can know when to do things.<br>
     %%Reason: too big, as _track_ can involve a lot of things.%%
   * {{ good }} As a user, I can add a time to a task, so that I can record when a task need to be done.
@@ -508,7 +516,7 @@ How is that better?
 
 **The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration i.e., <span class="text-danger">NOT what you _can_ or _want to_ do in {{ version_first }}, but what you _must_ do in {{ version_first }}</span>. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.{% if cs2103 or tic4002 %}<br>%%**Why {{ version_first }} and not v1.1?** v1.1 is a mere documentation update only. {{ version_first }} will be the first version that contains functionality changes.%%{% endif %}
 
-{{ icon_important_big_red }} Do not discuss features, UI, command format, or implementation details yet. That would be like _putting the cart before the horse_. At this stage we are simply trying to choose which user needs to fulfill first.
+{{ icon_important_big_red }} Do not discuss features, UI, command format, or implementation details yet. That would be like _putting the cart before the horse_. At this stage we are simply trying to choose which _user needs_ to fulfill first.
 
 </div>
 
@@ -597,7 +605,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_draft_the_ug">{{ icon_team }} Draft the UG</span>
+<span id="heading_draft_the_ug">{{ icon_team }} {% if cs2103 %}Draft the feature specification{% else %}Draft the UG{% endif %}</span>
 <div id="desc_draft_the_ug">
 <include src="tp-tasks-fragment.md#alert-time-sensitive" />
 <div tags="m--cs2113">
@@ -616,7 +624,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 </div>
 <div tags="m--cs2103">
 
-**Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next {{ lecture_name }}), but give the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w7_start, 2) }}) to submit this.
+**Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next {{ lecture_name }}), but given the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w7_start, 2) }}) to submit this.
 
 This deliverable links back to the following point made earlier:
 
@@ -624,37 +632,39 @@ This deliverable links back to the following point made earlier:
 > 2. we should start each iteration with a clear, detailed, and precise plan of the intended outcome of that iteration.
 
 * **Collate into a document the _complete_ detailed description of the intended behavior of the product at `{{ version_first }}`.**
-  * For convenience, let us call it a 'User Guide draft', although it is not meant to resemble [the final form of the UG]({{ url_ab3_upstream_website }}/UserGuide.html)).
+  * The intended audience for this document is team members, not end users (i.e., this is not a user guide).
   * Use a medium that is convenient for collaboration (e.g., a GoogleDoc).
   * The content need not be polished. Don't waste time in formatting, copy editing etc.
-  * You may limit this UG draft to only a description of the features %%i.e., omit sections such as Quick Start, FAQ, Known Issues,  Command summary%%
 * **For each feature, specify the following:**
   * What it does
   * The precise command format
   * Example commands %%(to show how the command is used)%%
-  * Acceptable values for each parameter %%e.g., if a command takes a person name as a parameter, what inputs are accepted as valid person names?%%<br>
+  * Acceptable values for each parameter %%e.g.,<br>
+    If a command takes a person name as a parameter, what inputs are accepted as valid person names?<br>
+    Which formats are allowed for dates, times, telephone numbers, etc.?<br>
+    How does extra/leading/trailing spaces affect the value -- for instance is 'John Doe' same as 'John&nbsp;&nbsp;&nbsp;Doe'?<br>
+    How does UPPER/lower case affects values -- is `John Doe` same as `john doe`?<br>
+    What rules are used to determine if two contacts are duplicates?%%<br>
     * It's not enough to state 'valid name'; you need to specify what rules will be used to determine if the input is a valid name.
     * Yes, making these decisions is not easy -- and that's why we want you to think about them now rather than later. Feel free to discuss in the forum these validation rules.
   * Precise expected outputs when the command succeeds %%e.g., changes in the GUI, messages shown to the user%%
   * Precise expected outputs when the command fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
+  * Recommended: Also note down the rationale behind decisions %%e.g., reason behind the rules applied for deciding if a certain input is 'valid'%%
   * Relevant UI mock-ups %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%
-
-<box type="info" seamless>
-
-FAQ: Is it normal to include this level of details in a UG?<br>
-Answer: No. Consider this as an 'internal draft' version of the eventual UG. These extra details can be omitted when we transfer this content to the real UG later.
-</box>
+  * {{ icon_tip }} Recommended: Prioritize above finer aspects of features, for example, as must-have (to implement in {{ version_first }}) and nice-to-have (i.e., to implement in {{ version_first }} only if there is time)<br>
+   %%e.g., you can decide one date format (to accept in user commands) as must-have and two other formats is nice-to-have.%%
 
 * **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.
+
 * **Ensure feature-fit**: While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to pee-review feature details written by other team members and refine the overall product design together.
 
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Product Design==**", "3", indent="1") }}
 
-* {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.
-* **Grading criteria**: to be considered 'done', the UG draft should meet all the following criteria:
+* {{ icon_important_big_red }} **Submission** [one person per team]: Save the file as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.
+* **Grading criteria**: to be considered 'done', the feature spec. should meet all the following criteria:
   * Covers all features in the smallest set of features the product cannot do without.
   * Contains all details mentioned above for each of those features
-  * Details seem well thought out (i.e., not a half-hearted attempt to satisfy the expected level of details)
+  * Details seem well-thought-out (i.e., not a half-hearted attempt to satisfy the expected level of details)
 </div>
 <br>
 <div id="divideDocs" class="indented">
@@ -762,8 +772,9 @@ Guidance on documentation can be found in the relevant section of the Developer 
 <span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
 <div id="desc_update_the_ug">
 
-* **Move the draft UG content into the User Guide page** in your repository. Update the content/structure/formatting as necessary, to match the final form of the UG. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>{% if cs2103 %}
-  Remember to omit nitty-gritty details in the previous 'internal' UG Draft if they are not appropriate for the actual UG.<br>{% endif %}
+* {% if cs2103 %}**Update the UG** in your tP repo. While you can reuse some content from the _feature specification_ that you did earlier, note that UG is intended for end users, and hence the format, level of details, pitching etc. need to match that audience. For example, the UG should not contain all the nitty-gritty details that is in the feature spec.<br>
+  **You can use the current AB3 UG for guidance** on the format/flow/tone/level-of-details etc.
+  {% else %}**Move the draft UG content into the User Guide page** in your repository. Update the content/structure/formatting as necessary, to match the final form of the UG. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).{% endif %}<br>
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
@@ -852,7 +863,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 <div id="desc_do_a_practice_iteration">
 
 
-* To get some practice of doing project iterations, do this week's tP work (which is just updates to various documents, no changes to functionality) to reach the milestone `{{ version_practice }}`. The panel below explains how to use GitHub to do a project iteration.
+* To get some practice of doing project iterations, do this week's tP work (which are just updates to various documents, no changes to functionality) to reach the milestone `{{ version_practice }}`. The panel below explains how to use GitHub to do a project iteration.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 
@@ -1296,9 +1307,15 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="1") }}
-<div tags="m--cs2103 m--tic4002">
 
-* **Landing page (`docs/index.md`)**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.
+* **Save the UG as a PDF file** ==using [this technique](https://se-education.org/guides/tutorials/savingPdf.html) exactly==. You'll need this file later when you create a product release. There is no specific file name convention for this version of the UG, but do use a reasonable file name: e.g., `Contacts-Pro-User-Guide.pdf`.
+
+{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → Caution on PDF conversions", "3", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Contstraints → Constraint-PDF-Friendly", "2", indent="1") }}
+
+<div tags="m--cs2103">
+
+* **Update the _landing page_ (`docs/index.md`)**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.
 
 <modal large header="Admin → Project Deliverables → Website -> Tips for Product Screenshots" id="modal:v13-tipsForProductScreenshot">
   <include src="tp-deliverables-website-fragment.md#tips-for-product-screenshot"/>
@@ -1308,21 +1325,19 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_demo_penultimate_version">{{ icon_team }} Demo {{ version_penultimate }}</span>
+<span id="heading_demo_penultimate_version">~~{{ icon_team }} Demo {{ version_penultimate }}~~</span>
 <div id="desc_demo_penultimate_version">
 
 <div id="demo">
-<div tags="m--cs2103 m--cs2113">
 
-* As was done in `{{ version_first }}`,
-  * Run your application using the ==JAR file== that you released for `{{ version_penultimate }}`.
-  * Take screenshots of each available feature in action (or screen-record a demo -- need not be polished).
-  * Add those screenshots (or upload the demo video somewhere and give the link) to your _project notes_ document with an appropriate heading e.g., `{{ version_penultimate }} features demo`.
-</div>
-<div tags="m--tic4001 m--tic4002">
+{% if cs2103 %}==**To reduce workload, this deliverable <span class="text-danger">has been removed from tP requirements</span> this semester.**=={% endif %}
+<s>
 
-* During the following lecture, do an informal demo of your {{ version_penultimate }} to the profs.
-</div>
+* ~~As was done in `{{ version_first }}`,~~
+  * ~~Run your application using the ==JAR file== that you released for `{{ version_penultimate }}`.~~
+  * ~~Take screenshots of each available feature in action (or screen-record a demo -- need not be polished).~~
+  * ~~Add those screenshots (or upload the demo video somewhere and give the link) to your _project notes_ document with an appropriate heading e.g., `{{ version_penultimate }} features demo`.~~
+</s>
 </div>
 </div>
 {#====================================================================================================================#}
@@ -1336,7 +1351,8 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <span id="heading_deliver_penultimate_version">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
 <div id="desc_deliver_penultimate_version">
 
-* As before, do a release on GitHub and upload the {{ version_penultimate }} jar file. <span tags="m--cs2113 m--cs2103 m--tic4002" class="text-danger">Do this before the deadline as PE testers will start downloading jar files ahead of time.</span>
+* As before, do a release on GitHub and upload ==both the {{ version_penultimate }} JAR file and the UG PDF file== (as two separate files -- do not put them inside a zip file).<br>
+  <span class="text-danger">Do this before the deadline as PE-D testers will start downloading jar files ahead of time.</span>
 * ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
 
 {{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Contstraints → Constraint-Java-Version", "2", indent="2") }}
@@ -1345,12 +1361,13 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 </div>
 {#====================================================================================================================#}
 
-<span id="heading_release_as_a_jar_file">{{ icon_team }} Release as a jar file</span>
+<span id="heading_release_as_a_jar_file">{{ icon_team }} Release {{ version_penultimate }}</span>
 <div id="desc_release_as_a_jar_file">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Aim to release it by the usual soft deadline (i.e., midnight before your tutorial). Do some manual tests to ensure the jar file works.
-* **You can do an _additional_ JAR release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional JAR is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous one %%(reason: it is good to preserver the release history)%% -- testers are expected to take the latest JAR file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
-  Waiting till Friday 10am to release the `{{ version_penultimate }}` JAR file is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.{% if cs2103 %}
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Aim to release it by the usual soft deadline (i.e., midnight before your tutorial). Do some manual tests to ensure the jar file works.<br>
+   Include ==both the JAR file and the UG PDF file (as two separate files)== in the release.
+* **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional release is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous release %%(reason: it is good to preserver the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
+  Waiting till Friday 10am to release the `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.{% if cs2103 %}
 * **The <trigger trigger="click" for="modal:v13-jar-desc">_feature freeze_</trigger> will apply at the point you released the JAR file that was used in the PE-D** i.e., the features submitted in the final `{{ version_final }}` two weeks later should be the same as the features tested during PE-D, which is the rationale for the feature freeze anyway.{% endif %}
 
 <modal large header="" id="modal:v13-jar-desc">

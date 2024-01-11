@@ -110,14 +110,14 @@ The final product is to be targeted at users who can type fast, and prefer typin
 
 ~~<span class="badge rounded-pill bg-dark text-light">++++Direction 2: Morph++++</span> Morph AB3 in any direction you wish.~~
 
-==**This direction is <span class="text-danger">no longer allowed</span>, as it has been observed to increase tP workload**== beyond what students anticipate when making this choice (e.g., 40-50% more work than strictly needed by the tP). Besides, it is less brownfield than direction 1.
+==**This direction is <span class="text-danger">not available this semester</span>, as it has been observed to increase tP workload**== beyond what students anticipate when making this choice (e.g., 40-50% more work than strictly needed by the tP). Besides, it is less brownfield than direction 1.
 <div class="indented-level1">
 
 ~~{{ pros }} more flexibility in the project direction.<br><br>
 {{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base, morphing is less common in real projects (compared to direction 1).~~
 </div>
 
-~~Weigh the pros/cons and choose the one that suits you. Note that **creating a novel/unique/interesting product will NOT earn you extra marks** in this course. While those qualities are important in real world projects, and we do allow you room to go in those directions in this course, they are not the focus of this course {% if cs2103 %}%%(there are other courses such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.~~
+Note that **creating a novel/unique/interesting product will NOT earn you extra marks** in this course. While those qualities are important in real world projects, and we do allow you room to go in those directions in this course, they are not the focus of this course {% if cs2103 %}%%(there are other courses such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
 
 {% endif %}
 <div tags="m--cs2113 m--tic4001">
@@ -142,10 +142,10 @@ The final product is to be targeted at users who can type fast, and prefer typin
 ## Target User & Value Proposition
 
 You are expected to:
-* **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example of progressively narrowing down target user: anybody → teachers → university teachers → tech-savvy university teachers → {{ course_pair }} instructors.%%<br><br>
+* **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example of progressively narrowing down target user: anybody → teachers → university teachers → tech-savvy university teachers → instructors of course CS____.%%<br><br>
  {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/tp-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing to mouse actions%%.
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 <panel type="seamless" header="%%FAQ: Why the need to narrow down the user profile?%%" >
 
@@ -160,8 +160,8 @@ The size of the target market is not a grading criterion. You can make it as nar
 </div>
 
 * **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the user's life easier?<br>
-  You should also define the _scope_ clearly i.e., boundary beyond which the app will not help %%e.g., the app will manage contact details of a small number of JC-level students (i.e., no support for managing large number of students, primary students, or adult students)%%.
-* **Optimize the product to the chosen target users** i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them).
+  You should also define the _scope_ clearly i.e., boundary beyond which the app will not help %%e.g., the app will manage contact details of a small number of JC-level students (which means the there is no support for managing large number of students or primary/adult students, and will only manage contact details -- not other details such as grades)%%.
+* **Aim to optimize the product to the chosen target users** Although you should not decide specific features yet, keep in mind that eventually you should optimize the product for the chosen target user %%i.e., add/tweak features that are especially/only applicable for target users (to make the app especially attractive to them)%%.
   * Example 1: If the product targets {{ course_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to see a link to a student's project on GitHub%%
   * Example 2: If your app manages contacts, you can optimize its features based on,
     * the profession of the target user %%e.g. doctors, salesmen, teachers, etc.%%
@@ -178,7 +178,8 @@ The size of the target market is not a grading criterion. You can make it as nar
 
 <div tags="m--cs2103">
 
-**The expected level of _functionality_ is what you could achieve if each member puts in an effort equivalent to half of the effort they put into the iP**. Furthermore, we estimate that this will equate to **about 300-400 lines of functional code** (excluding testing and documentation) per person.
+**The expected level of _functionality_ is what you could achieve if each member puts in an implementation effort equivalent to ==half of the implementation effort they put into the iP==** (i.e., it is set at half because, even after adding the extra overheads of doing the project as a team, and working with an exising codebase, we don't want the total tP effort of a student to exceed the total effort of iP -- in other words, we don't want the tP to take more effort than the iP).<br>
+Furthermore, we estimate that the above-mentioned bar will equate to **about 300-400 lines of functional code** (excluding testing and documentation) per person.
 
 <box type="important" seamless>
 
@@ -226,9 +227,9 @@ In fact, here is the grading criterion for the individual project effort:
 
 * <span class="badge bg-success">Expectation</span> <span class="text-success">**Produce a _cohesive_ product:**</span> i.e. ensure,
   1. features fit together to form a cohesive product,
-  1. documentation follows a consistent style and presents a cohesive picture to the reader, and
-  1. final project demo presents a cohesive picture to the audience.
-* <span class="badge bg-success">Expectation</span> <span class="text-success">**Maintain product integrity/quality:**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--tic4002 m--cs2113">Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.
+  1. documentation follows a consistent style and presents a cohesive picture to the reader{% if cs2113 %}, and
+  1. final project demo presents a cohesive picture to the audience.{% endif %}
+* <span class="badge bg-success">Expectation</span> <span class="text-success">**Maintain product integrity/quality:**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--tic4002 m--cs2113">
 * <span class="badge bg-success">Expectation</span> <span class="text-success">**Manage the project:**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done properly.
 </span>
 
@@ -271,9 +272,7 @@ In fact, here is the grading criterion for the individual project effort:
 #### <span class="badge bg-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Documentation</span>
 
 * **Objective:** showcase your ability to write both _user-facing documentation_ and _developer-facing documentation_.
-* <span class="badge bg-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added. The minimum requirement is given below. %%(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)%%
-  * UG: {{ ug_pages_per_person }} or more pages
-  * DG: {{ dg_pages_per_person }} or more pages
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added.
 * **Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements**, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.
 * <span class="badge bg-info">Expectation</span> <span class="text-info">**Use at least {{ uml_diagrams_per_person }} UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.
 
@@ -281,14 +280,14 @@ In fact, here is the grading criterion for the individual project effort:
 
 <div id="testing-expectations">
 
-* <span class="badge bg-info">Expectation</span> <span class="text-info">**Write _some_ automated tests**</span> so that we can evaluate your ability to write tests.
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Write _some_ automated tests**</span> so that there is evidence that you _can_ write automated tests.
 
 <div class="indented-level2">
 
 <box>
 
-**:thinking: How much testings is enough?** We expect you to decide. As you learn different types of testing and what they try to achieve, you should decide how much of each type is worth having. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br>
-There is no requirement for a minimum test coverage level. Note that in a high-end production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. ==The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.==
+**:thinking: How much testing is enough?** We expect you to decide. As you learn different types of testing and what they try to achieve, you should decide how much of each type is worth having. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br>
+There is no requirement for a minimum test coverage level. Note that in a high-end production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. ==Caveat: The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.==
 </box>
 </div>
 
