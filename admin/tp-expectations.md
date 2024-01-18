@@ -59,8 +59,8 @@ The tP uses a generic application called [AddressBook-Level3 (AB3)](https://se-e
 
 The final product is to be targeted at users who can type fast, and prefer typing over mouse/voice commands. Therefore, ==typed user commands are the primary mode of input.==
 
-{{ embed_topic("tp-constraints.md#Constraint-Typing-Preferred", "Admin " + icon_embedding + " tP Contstraints → Constraint-Typing-Preferred", "2", indent="1") }}
-{{ embed_topic("tp-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Contstraints → Recommendation-CLI-First", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-Typing-Preferred", "Admin " + icon_embedding + " tP Constraints → Constraint-Typing-Preferred", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Constraints → Recommendation-CLI-First", "2", indent="1") }}
 <p/>
 
 {% set morph_examples %}
@@ -129,7 +129,7 @@ Note that **creating a novel/unique/interesting product will NOT earn you extra 
 <div tags="m--cs2113 m--tic4001">
 
 ==You are strongly discouraged from developing a GUI application== as it can increase the workload unnecessarily.
-{{ embed_topic("tp-constraints.md#Recommendation-No-GUI", "Admin " + icon_embedding + " tP Contstraints → Recommendation-No-GUI", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Recommendation-No-GUI", "Admin " + icon_embedding + " tP Constraints → Recommendation-No-GUI", "2", indent="1") }}
 </div>
 
 <box type="info" tags="m--tic4002" seamless>

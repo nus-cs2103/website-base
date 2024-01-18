@@ -1311,7 +1311,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 * **Save the UG as a PDF file** ==using [this technique](https://se-education.org/guides/tutorials/savingPdf.html) exactly==. You'll need this file later when you create a product release. There is no specific file name convention for this version of the UG, but do use a reasonable file name: e.g., `Contacts-Pro-User-Guide.pdf`.
 
 {{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → Caution on PDF conversions", "3", indent="1") }}
-{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Contstraints → Constraint-PDF-Friendly", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Constraints → Constraint-PDF-Friendly", "2", indent="1") }}
 
 <div tags="m--cs2103">
 
@@ -1355,7 +1355,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
   <span class="text-danger">Do this before the deadline as PE-D testers will start downloading jar files ahead of time.</span>
 * ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
 
-{{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Contstraints → Constraint-Java-Version", "2", indent="2") }}
+{{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Constraints → Constraint-Java-Version", "2", indent="2") }}
 
 * Wrap up the milestone on GitHub.
 </div>
@@ -1651,8 +1651,8 @@ Not applicable this semester
 
 * Take note of the following project constraint:
 
-{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Contstraints → Constraint-PDF-Friendly", "2", indent="1") }}
-{{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Contstraints → Constraint-File-Size", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Constraints → Constraint-PDF-Friendly", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Constraints → Constraint-File-Size", "2", indent="1") }}
 
 * Take note of the following info about the PDF conversion, appearing in next week's project tasks. Particularly, note the suggestion to try PDF conversions early.
 

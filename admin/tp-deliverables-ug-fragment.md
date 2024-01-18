@@ -30,5 +30,5 @@
 
 * Also note the following constraint:
 
-  {{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Contstraints → Constraint-File-Size", "2", indent="1") }}
+  {{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Constraints → Constraint-File-Size", "2", indent="1") }}
 {% endif %}
