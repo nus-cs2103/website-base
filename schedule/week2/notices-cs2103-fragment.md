@@ -10,7 +10,7 @@
 ****1. Welcome to the Course****:{.text-info}
 {{ panopto(desc="1 min", "5503e0be-24bb-4ba2-807f-b0fb01057eb9") }}
 
-<span class="text-info">****2. Course Goals****</span>: How the goals of this course shapes how it is run, and how it should be taken by students.
+<span class="text-info">****2. Course Goals****</span>: How the goals of this course shape the way it is run (possibly different from other courses), and how it should be approached by students.
 {{ panopto(desc="9 mins", "a4d6f92e-b12f-4046-853b-b0fb01058143") }}
 
 <div class="indented-level2">
@@ -34,9 +34,8 @@
 
 #### Week 2 Briefing{.text-info}
 
-After watching the course briefing videos, now you know that we start week 2 earlier than other courses.
-
-So, watch the week 2 briefing video (given below) as well. As this is the first such weekly briefing, **it also covers some general points relevant to all future weeks**.
+Next, watch the week 2 briefing video given below.<br>
+As this is the first such weekly briefing, **it also covers some general points relevant to all future weeks**.
 
 {{ panopto(desc="8 mins", "f8088218-b6d5-4cc5-a933-b0fb01057ec2") }}
 

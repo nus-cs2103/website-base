@@ -176,15 +176,16 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 
 <panel type="seamless" header="****iP.AI****: an AI-assisted approach to the iP" minimized>
 
-Caveat: this alternative does not earn you extra credit, but it gives you an opportunity to learn more about AI tools related to SE, with the same (or even less) effort.
-
 **Goal**: In the iP.AI approach, your goal is to minimize hand-coding the iP, by getting generative AI tools (such as Co-Pilot) to write the code for you instead. The learning goal is to explore how to increase your coding productivity using AI tools.
 
 **Requirements:**
 
 1. You should follow the normal iP requirements/deadlines, except that you will try to replace handcoding with AI-assisted code generation, where possible. It is still fine to do some of the coding work manually.
 1. You may use any free or commercial AI tools, provided you declare which tool you used (how to declare? see next point).
-1. Add a file named `AI.md` at the root of project folder (same location where `CONTRIBUTING.md` lives). Commit the file. Keep it updated with a record of your use of AI tools (e.g., which tool you used for which increment), and interesting observations (e.g., what worked? what didn't? overall, how much time did it save?). You can update this file periodically (e.g., once a week). It need not be very detailed (e.g., even a 0.5 page is enough).
+1. Add a file named `AI.md` at the root of project folder (same location where `CONTRIBUTING.md` lives). Commit the file. Keep it updated with a record of your use of AI tools (e.g., which tool you used for which increment), and interesting observations (e.g., what worked? what didn't? overall, how much time did it save?). You can update this file periodically (e.g., once a week). The content format can be plaintext or Markdown. It need not be very detailed (e.g., even a 0.5 page is enough).
+
+**Caveat:** This alternative does not earn you extra credit, but it gives you an opportunity to learn more about AI tools related to SE, with the same (or even less) effort.<br>
+This alternative is only suitable for those who are already good at hand-coding. Reason: At the current state of the art of AI tools, only those who are already good at hand-coding can use those tools to increase productivity. So, you must become good at hand-coding before you venture into using AI tools for coding.
 </panel>
 </box>
 </div>

@@ -130,7 +130,7 @@ On a related note, if you are not confident about the answer you've selected for
 
 * If you haven't done so already, follow the 'Preparation' instructions of the following panel, to get connected with the communication channels used by the course.
 
-{{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "3", indent="2") }}
+{{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "3", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_post_lecture_quiz">Submit weekly quiz</span>
