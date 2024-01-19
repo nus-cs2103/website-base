@@ -2,30 +2,11 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/likeabowx.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/ckcherry23.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 1. Bryan Ong
-
-**Bryan Ong Weixin**<br>
-%%:fas-envelope:%% e0652526@u.nus.edu<br>
-%%:fab-github:%% [@likeabowx](https://github.com/likeabowx)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/ckcherry23.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 2. Charisma
+### 1. Charisma
 
 **Charisma Kausar**<br>
 %%:fas-envelope:%% charisma.kausar@u.nus.edu<br>
@@ -40,15 +21,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/clarence-chew.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/lamchenghou.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 3. Clarence
+### 2. Cheng Hou
 
-**CLARENCE CHEW XUAN DA**<br>
-%%:fas-envelope:%% e0001583@u.nus.edu<br>
-%%:fab-github:%% [@clarence-chew](https://github.com/clarence-chew)
+**LAM CHENG HOU**<br>
+%%:fas-envelope:%% lamchenghou@u.nus.edu<br>
+%%:fab-github:%% [@lamchenghou](https://github.com/lamchenghou)
     </div>
   </div>
 </div>
@@ -59,15 +40,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/conradlew.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/dangabit.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 4. Conrad
+### 3. Eric
 
-**Lew Kian Loong, Conrad**<br>
-%%:fas-envelope:%% lewklconrad@gmail.com<br>
-%%:fab-github:%% [@ConradLew](https://github.com/ConradLew)
+**GOH KANG YANG ERIC**<br>
+%%:fas-envelope:%% e0726585@u.nus.edu<br>
+%%:fab-github:%% [@Dangabit](https://github.com/Dangabit)
     </div>
   </div>
 </div>
@@ -78,15 +59,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/takufunkai.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/mfjkri.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 5. Ezekiel
+### 4. Fikri
 
-**Ezekiel Toh Fun Kai**<br>
-%%:fas-envelope:%% E0544097@u.nus.edu<br>
-%%:fab-github:%% [@takufunkai](https://github.com/takufunkai)
+**MUHAMMAD FIKRI BIN ABDUL KALAM**<br>
+%%:fas-envelope:%% E0970206@u.nus.edu<br>
+%%:fab-github:%% [@mfjkri](https://github.com/mfjkri)
     </div>
   </div>
 </div>
@@ -97,15 +78,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/florentianayuwono.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/gongg21.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 6. Florentiana
+### 5. Gallen
 
-**Florentiana Yuwono**<br>
-%%:fas-envelope:%% E0851439@u.nus.edu<br>
-%%:fab-github:%% [@florentianayuwono](https://github.com/florentianayuwono)
+**GALLEN ONG KAI BIN**<br>
+%%:fas-envelope:%% gallen.ong@u.nus.edu<br>
+%%:fab-github:%% [@gongg21](https://github.com/gongg21)
     </div>
   </div>
 </div>
@@ -116,15 +97,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/guanzhou03.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/huixuant.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 7. Guanzhou
+### 6. Hui Xuan
 
-**Chen Guanzhou**<br>
-%%:fas-envelope:%% guanzhou03@gmail.com<br>
-%%:fab-github:%% [@guanzhou03](https://github.com/guanzhou03)
+**TAN HUI XUAN**<br>
+%%:fas-envelope:%% e0775523@u.nus.edu<br>
+%%:fab-github:%% [@huixuant](https://github.com/huixuant)
     </div>
   </div>
 </div>
@@ -135,87 +116,11 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/jbkim1999.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/beebeeoii.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 8. JB
-
-**KIM JUNGBAE**<br>
-%%:fas-envelope:%% jungbae.kim@u.nus.edu<br>
-%%:fab-github:%% [@jbkim1999](https://github.com/jbkim1999)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/jamesyeap.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 9. James
-
-**Yeap Yi Sheng James**<br>
-%%:fas-envelope:%% jamesyeap.ys@gmail.com<br>
-%%:fab-github:%% [@jamesyeap](https://github.com/jamesyeap)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/javiier-pzk.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 10. Javier
-
-**Javier Phon Zhee Kai**<br>
-%%:fas-envelope:%% e0543748@u.nus.edu<br>
-%%:fab-github:%% [@Javiier-pzk](https://github.com/Javiier-pzk)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/jetlfj.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 11. Jet
-
-**Lee Fang Jie, Jet**<br>
-%%:fas-envelope:%% e0726397@u.nus.edu<br>
-%%:fab-github:%% [@jetlfj](https://github.com/jetlfj)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/beebeeoii.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 12. Jia Wei
+### 7. Jia Wei
 
 **LEE JIA WEI**<br>
 %%:fas-envelope:%% jiawei.lee@u.nus.edu<br>
@@ -230,15 +135,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/seetohjinwei.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/woojiahao.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 13. Jin Wei
+### 8. Jiahao
 
-**See Toh Jin Wei**<br>
-%%:fas-envelope:%% jinwei@u.nus.edu<br>
-%%:fab-github:%% [@seetohjinwei](https://github.com/seetohjinwei)
+**WOO JIA HAO**<br>
+%%:fas-envelope:%% woojiahao1234@gmail.com<br>
+%%:fab-github:%% [@woojiahao](https://github.com/woojiahao)
     </div>
   </div>
 </div>
@@ -249,15 +154,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/jnjy.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/lamjiufong.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 14. Jin Yuan
+### 9. Jiu Fong
 
-**NG JIN YUAN**<br>
-%%:fas-envelope:%% e0775530@u.nus.edu<br>
-%%:fab-github:%% [@jnjy](https://github.com/jnjy)
+**LAM JIU FONG**<br>
+%%:fas-envelope:%% e0960521@u.nus.edu<br>
+%%:fab-github:%% [@LamJiuFong](https://github.com/LamJiuFong)
     </div>
   </div>
 </div>
@@ -268,11 +173,68 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/kevin9foong.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/jonasongg.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 15. Kevin Foong
+### 10. Jonas
+
+**JONAS ONG SI WEI**<br>
+%%:fas-envelope:%% e0957640@u.nus.edu<br>
+%%:fab-github:%% [@jonasongg](https://github.com/jonasongg)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/teoks0199.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 11. Kai Sheng
+
+**TEO KAI SHENG**<br>
+%%:fas-envelope:%% E0957423@u.nus.edu<br>
+%%:fab-github:%% [@teoks0199](https://github.com/teoks0199)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/kiwibang.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 12. Kerway
+
+**TAN KERWAY**<br>
+%%:fas-envelope:%% e0958186@u.nus.edu<br>
+%%:fab-github:%% [@kiwibang](https://github.com/kiwibang)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/kevin9foong.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 13. Kevin Foong
 
 **Kevin Foong Wei Tong**<br>
 %%:fas-envelope:%% kevinfoong@u.nus.edu<br>
@@ -287,11 +249,68 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/euph00.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/kokrui.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 16. Lin Chieh
+### 14. Kok Rui
+
+**WONG KOK RUI**<br>
+%%:fas-envelope:%% kokrui@u.nus.edu<br>
+%%:fab-github:%% [@kokrui](https://github.com/kokrui)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/xcolourx.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 15. Kyle
+
+**KYLE ZHENG CHING CHAN**<br>
+%%:fas-envelope:%% e0205139@u.nus.edu<br>
+%%:fab-github:%% [@xCOLOURx](https://github.com/xCOLOURx)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/goh-li-ting.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 16. Li Ting
+
+**GOH LI TING**<br>
+%%:fas-envelope:%% gohliting@u.nus.edu<br>
+%%:fab-github:%% [@Goh-Li-Ting](https://github.com/Goh-Li-Ting)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/euph00.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 17. Lin Chieh
 
 **LIN CHIEH**<br>
 %%:fas-envelope:%% e0686120@u.nus.edu<br>
@@ -306,106 +325,11 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/marcuschj.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/py0000.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 17. Marcus Chua
-
-**Chua Hao Jie, Marcus**<br>
-%%:fas-envelope:%% e0543666@u.nus.edu<br>
-%%:fab-github:%% [@marcuschj](https://github.com/marcuschj)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/melissaharijanto.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 18. Melissa
-
-**Melissa Anastasia Harijanto**<br>
-%%:fas-envelope:%% e0851434@u.nus.edu<br>
-%%:fab-github:%% [@melissaharijanto](https://github.com/melissaharijanto)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/angnobel.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 19. Nobel
-
-**Nobel Ang**<br>
-%%:fas-envelope:%% e0564962@u.nus.edu<br>
-%%:fab-github:%% [@angnobel](https://github.com/angnobel)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/punpun1643.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 20. Papat
-
-**Papattarada Apithanangsiri**<br>
-%%:fas-envelope:%% papattarada.a@u.nus.edu<br>
-%%:fab-github:%% [@Punpun1643](https://github.com/Punpun1643)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/parth-io.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 21. Parth
-
-**Gujar Parth Shailesh**<br>
-%%:fas-envelope:%% e0727354@u.nus.edu<br>
-%%:fab-github:%% [@parth-io](https://github.com/parth-io)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/py0000.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 22. Peiyuan
+### 18. Peiyuan
 
 **Lim Peiyuan**<br>
 %%:fas-envelope:%% e0543756@u.nus.edu<br>
@@ -420,15 +344,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/extrashotlatte.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/respirayson.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 23. Qin Yao
+### 19. Rayson
 
-**WONG QIN YAO**<br>
-%%:fas-envelope:%% E0727155@u.nus.edu<br>
-%%:fab-github:%% [@ExtraShotLatte](https://github.com/ExtraShotLatte)
+**YEAP RAYSON**<br>
+%%:fas-envelope:%% rayson.yeap@u.nus.edu<br>
+%%:fab-github:%% [@Respirayson](https://github.com/Respirayson)
     </div>
   </div>
 </div>
@@ -439,11 +363,11 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/arpspoofing.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/arpspoofing.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 24. Reyaaz
+### 20. Reyaaz
 
 **MUHAMMAD REYAAZ BIN ABDUL BASHEER**<br>
 %%:fas-envelope:%% e0544058@u.nus.edu<br>
@@ -458,15 +382,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/riccqi.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/richiehx.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 25. Richard
+### 21. Richie
 
-**Qi Zhi**<br>
-%%:fas-envelope:%% xiaochean@gmail.com<br>
-%%:fab-github:%% [@riccqi](https://github.com/riccqi)
+**RICHIE HSIEH**<br>
+%%:fas-envelope:%% e0957714@u.nus.edu<br>
+%%:fab-github:%% [@richiehx](https://github.com/richiehx)
     </div>
   </div>
 </div>
@@ -477,15 +401,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/rui-han-crh.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/papataco14.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 26. Rui Han
+### 22. Rithik
 
-**Chen Ruihan**<br>
-%%:fas-envelope:%% chen_ruihan@u.nus.edu<br>
-%%:fab-github:%% [@rui-han-crh](https://github.com/rui-han-crh)
+**RAMU RITHIK VIJAY**<br>
+%%:fas-envelope:%% e0969886@u.nus.edu<br>
+%%:fab-github:%% [@papataco14](https://github.com/papataco14)
     </div>
   </div>
 </div>
@@ -496,15 +420,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/pangrwa.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/tayruxin.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 27. Rui Wei
+### 23. Ru Xin
 
-**PANG RUI WEI**<br>
-%%:fas-envelope:%% e0726194@u.nus.edu<br>
-%%:fab-github:%% [@pangrwa](https://github.com/pangrwa)
+**TAY RU XIN**<br>
+%%:fas-envelope:%% E0969556@u.nus.edu <br>
+%%:fab-github:%% [@tayruxin](https://github.com/tayruxin)
     </div>
   </div>
 </div>
@@ -515,11 +439,49 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/snss231.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/originalidk.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 28. Sean
+### 24. Ryan
+
+**RYAN PANG JIN LIANG**<br>
+%%:fas-envelope:%% e0957799@u.nus.edu<br>
+%%:fab-github:%% [@Originalidk](https://github.com/Originalidk)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/santosh3007.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 25. Santosh
+
+**Muthukrishnan Santosh**<br>
+%%:fas-envelope:%% muthukrishnansantosh@gmail.com<br>
+%%:fab-github:%% [@santosh3007](https://github.com/santosh3007)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/snss231.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 26. Sean
 
 **Sean Ng Shan Sheng**<br>
 %%:fas-envelope:%% E0543670@u.nus.edu<br>
@@ -534,15 +496,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/sikai00.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/zhacatomn.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 29. Si Kai
+### 27. Shaun
 
-**Chang Si Kai**<br>
-%%:fas-envelope:%% e0725915@u.nus.edu<br>
-%%:fab-github:%% [@sikai00](https://github.com/sikai00)
+**QUEK JIA ZHI, SHAUN**<br>
+%%:fas-envelope:%% shaunqjz@gmail.com<br>
+%%:fab-github:%% [@zhacatomn](https://github.com/zhacatomn)
     </div>
   </div>
 </div>
@@ -553,15 +515,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/thikhinab.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/tiwkangxu.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 30. Thikhina
+### 28. Tiw
 
-**A H M Thikhina Induwara Weragama Bakmeedeniya**<br>
-%%:fas-envelope:%% e0556767@u.nus.edu<br>
-%%:fab-github:%% [@thikhinab](https://github.com/thikhinab)
+**TIW KANG XU**<br>
+%%:fas-envelope:%% e0960467@u.nus.edu<br>
+%%:fab-github:%% [@TiwKangXu](https://github.com/TiwKangXu)
     </div>
   </div>
 </div>
@@ -572,15 +534,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/vietanh1010.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/waynezsy.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 31. Viet Anh
+### 29. Wayne
 
-**NGUYEN VIET ANH**<br>
-%%:fas-envelope:%% vietanh101003@gmail.com<br>
-%%:fab-github:%% [@VietAnh1010](https://github.com/VietAnh1010)
+**Wayne Zhang Si Yuan**<br>
+%%:fas-envelope:%% e0726154@u.nus.edu<br>
+%%:fab-github:%% [@waynezsy](https://github.com/waynezsy)
     </div>
   </div>
 </div>
@@ -591,11 +553,30 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/wz2k.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/weiennn.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 32. Wei Zhe
+### 30. Wei En
+
+**HUANG WEI'EN**<br>
+%%:fas-envelope:%% E0969543@u.nus.edu<br>
+%%:fab-github:%% [@Weiennn](https://github.com/Weiennn)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/wz2k.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 31. Wei Zhe
 
 **TAN WEI ZHE**<br>
 %%:fas-envelope:%% e0725610@u.nus.edu<br>
@@ -610,11 +591,87 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/gohyongjing.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/wendy0107.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 33. Yong Jing
+### 32. Wen Li
+
+**NG WEN LI**<br>
+%%:fas-envelope:%% e0775082@u.nus.edu<br>
+%%:fab-github:%% [@wendy0107](https://github.com/wendy0107)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/puakii.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 33. Yi Teng
+
+**Tee Yi Teng**<br>
+%%:fas-envelope:%% e0725799@u.nus.edu<br>
+%%:fab-github:%% [@Puakii](https://github.com/Puakii)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/yixiann.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 34. Yi Xian
+
+**Tan Yi Xian**<br>
+%%:fas-envelope:%% tan.yixian@u.nus.edu<br>
+%%:fab-github:%% [@yixiann](https://github.com/yixiann)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/tanyyyming.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 35. Yiming
+
+**TAN YIMING**<br>
+%%:fas-envelope:%% tan.yiming@u.nus.edu<br>
+%%:fab-github:%% [@tanyyyming](https://github.com/tanyyyming)
+    </div>
+  </div>
+</div>
+
+-----------------------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/gohyongjing.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### 36. Yong Jing
 
 **GOH YONG JING**<br>
 %%:fas-envelope:%% e0693145@u.nus.edu<br>
@@ -629,11 +686,11 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/chia-yh.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/chia-yh.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 34. Yu Hong
+### 37. Yu Hong
 
 **CHIA YU HONG**<br>
 %%:fas-envelope:%% chia_yh@u.nus.edu<br>
@@ -648,53 +705,15 @@
   <div class="row bt-2">
     <div class="col-3">
 
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/tyw2811.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+<img src="https://nus-cs2103-ay2324s2.github.io/tutor-photos/kangzongxian.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
 
-### 35. Yuan Wei
+### 38. Zong Xian
 
-**Tan Yuan Wei**<br>
-%%:fas-envelope:%% tanyuanwei@u.nus.edu<br>
-%%:fab-github:%% [@tyw2811](https://github.com/tyw2811)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/kyueran.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 36. Yue Ran
-
-**KANG YUE RAN**<br>
-%%:fas-envelope:%% e0695185@u.nus.edu<br>
-%%:fab-github:%% [@kyueran](https://github.com/kyueran)
-    </div>
-  </div>
-</div>
-
------------------------------------------
-
-<div class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="https://nus-cs2103-ay2324s1.github.io/tutor-photos/zrei.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### 37. Zhe Rui
-
-**LIM ZHE RUI**<br>
-%%:fas-envelope:%% e0773897@u.nus.edu<br>
-%%:fab-github:%% [@zrei](https://github.com/zrei)
+**Kang Zong Xian**<br>
+%%:fas-envelope:%% e0773557@u.nus.edu<br>
+%%:fab-github:%% [@kangzongxian](https://github.com/kangzongxian)
     </div>
   </div>
 </div>
