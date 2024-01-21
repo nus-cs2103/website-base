@@ -54,7 +54,7 @@ As this is the first such weekly briefing, **it also covers some general points 
 
 <box type="tip" seamless>
 
-**Noticed any issues (==even minor typos==) in the course website?** Earn [bonus participation points](../../admin/participation.md)) by reporting them in the [forum]({{ url_forum }}) -- plus it's help us improve the course website too.
+**Noticed any issues (==even minor typos==) in the course website?** Earn [bonus participation points](../../admin/participation.md) by reporting them in the [forum]({{ url_forum }}) -- plus it helps us improve the course website too.
 
 </box>
 <p/>
