@@ -2,7 +2,7 @@
 
 {% set weekly_tp_tasks = {
 week3: [
-  {id: 'get_familiar_with_ab3'},
+  {id: 'get_familiar_with_ab3', deadline: get_date(date_w4_start, 1, time="23:59")},
   {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'}
 ],
 week4: [

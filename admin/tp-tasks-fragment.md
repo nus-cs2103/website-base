@@ -350,13 +350,24 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 {#====================================================================================================================#}
 {# Steps
 {#====================================================================================================================#}
-<span id="heading_get_familiar_with_ab3">{{ icon_individual }} Get familiar with AB3 features</span>
+<span id="heading_get_familiar_with_ab3">{{ icon_individual }} %%Individual Task%%: Explore AB3 features</span>
 <div id="desc_get_familiar_with_ab3">
 
-* **Familiarize yourself with AB3**: Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html) and play around with it to familiarize with its current features.
+* **Objectives:** (1) To get each of you to think of ways to improve AB3 (2) To detect any Java version compatibility issues between your local set up and the expected Java version.
+
+* **Submission:** via [Canvas survey named `tP: AB3 Initial Experience`]({{ url_canvas_home }}/quizzes) by ==<span class="text-danger">{{ get_date(date_w4_start, 1, time="23:59") }}</span>==
+
+* **Steps:**
+    1. Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html).
+    1. Get it running in your computer. Play around with it to familiarize yourself with its current features.
+    1. Add yourself to the list of contacts in AB3 (using the `add ...` command).
+    1. Take a screenshot of the AB3 Window, while it shows your own contact info you added earlier. Save it as a `.png` file.
+    1. Think about how the AB3 user experience can be improved, for example, by tweaking the command format, or the GUI, or the features. Note them down as a list of feature suggestions, as free text (i.e., no specific format).<br>
+       Suggested: Try to come up with at least 5 ways to improve AB3, while also trying to go beyond the simple/obvious ones (i.e., this is a chance to be insightful but also creative).
+    1. Use the Canvas survey mentioned above to submit the screenshot and the feature suggestions.
 </div>
 {#====================================================================================================================#}
-<span id="heading_set_up_meeting_time">{{ icon_team }} Set up a project meeting time</span>
+<span id="heading_set_up_meeting_time">{{ icon_team }} %%Team Task%%: Set up a project meeting time</span>
 <div id="desc_set_up_meeting_time">
 
 * After forming teams, **set up a weekly project meeting time/venue (and communication channels) with your team members**:
@@ -407,7 +418,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
     1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
   * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 or tic4001 %}<br>
   * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.
-  * FAQ: Can we change these values later?<br>
+  * {{ icon_Q }} FAQ: Can we change these values later?<br>
     Answer: Yes. If the submission deadline is not over yet, use the same link to update the submission. If the submission deadline is over, email the updated name, target user, value proposition to `{{ course | lower }}@comp.nus.edu.sg`.
   {% endif %}
 
@@ -646,7 +657,7 @@ This deliverable links back to the following point made earlier:
     How does UPPER/lower case affects values -- is `John Doe` same as `john doe`?<br>
     What rules are used to determine if two contacts are duplicates?%%<br>
     * It's not enough to state 'valid name'; you need to specify what rules will be used to determine if the input is a valid name.
-    * Yes, making these decisions is not easy -- and that's why we want you to think about them now rather than later. Feel free to discuss in the forum these validation rules.
+    * Yes, making these decisions is not easy -- and that's why we want you to think about them now rather than later. Feel free to discuss these validation rules in the forum.
   * Precise expected outputs when the command succeeds %%e.g., changes in the GUI, messages shown to the user%%
   * Precise expected outputs when the command fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
   * Recommended: Also note down the rationale behind decisions %%e.g., reason behind the rules applied for deciding if a certain input is 'valid'%%
@@ -656,7 +667,7 @@ This deliverable links back to the following point made earlier:
 
 * **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.
 
-* **Ensure feature-fit**: While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to pee-review feature details written by other team members and refine the overall product design together.
+* **Ensure feature-fit**: While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to peer-review feature details written by other team members and refine the overall product design together.
 
 {{ embed_topic("tp-grading.md#criteria-productDesign", "Admin " + icon_embedding + " **tP: Grading → ==Product Design==**", "3", indent="1") }}
 
