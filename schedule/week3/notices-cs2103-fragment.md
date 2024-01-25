@@ -1,4 +1,5 @@
 {% from "common/macros.njk" import embed_topic, get_date, show_as_tab, timing_badge with context %}
+{% from "common/topics.njk" import  panopto with context %}
 
 <include src="../../admin/common-notices-fragment.md#tutorial-start" />
 
@@ -19,3 +20,16 @@ Due to the Good Friday holiday, the [team project practical exam](../../admin/tp
 </box>
 -->
 {% endif %}
+
+<panel type="info" header="##### ==[MUST-WATCH]== One More Course Briefing Segment (9 minutes)" expanded >
+
+**One more course briefing segment to watch this week**: The bulk of the course briefing was released as pre-recorded videos last week. There are few more remaining parts which will be released closer to events they cover %%(e.g., the part covering the exam will be released closer to the exam)%%. This week, we cover one more course briefing segment, given below:
+
+****CS2103/T Pitfalls (and how to avoid them)****{.text-info}
+
+{{ panopto(desc="9 mins", "036e3b1c-3cf0-446e-9281-b100012b50da") }}
+
+**The _weekly_ briefing for this week will be done in hybrid mode** -- you can attend it F2F %%(@{{ lecture_venue }} {{ get_date(date_w3_start, 0, format=format_normal, time="from 4pm") }})%%, join via Zoom, watch the recording later, or skip it altogether).<br>
+==**iP Help Session**==: This week's' briefing will be followed by a F2F help session for those who are stuck in the iP due to technical difficulties. To attend that help session, be in {{ lecture_venue }} at least by 4.50pm.
+</panel>
+<p/>

@@ -265,7 +265,7 @@ Note that if `A-Jar` increment does not require any code changes, you may tag th
 <div id="pre_Level-7">
 <div tags="m--cs2103">
 
-* Do Level 7 in a branch named `branch-Level-7`. Here are the steps:
+* **Do Level 7 in a branch named `branch-Level-7`**. Here are the steps:
   1. Start a branch `branch-Level-7`.
   1. Implement Level 7 while committing to that branch at appropriate points,
   1. Merge the branch back to the master branch (remember to create a merge commit i.e., ==no fast-forward==).
@@ -281,7 +281,13 @@ Note that if `A-Jar` increment does not require any code changes, you may tag th
 <div tags="m--cs2103">
 <p/>
 
-* Do Level 8 similar to the above, using a branch `branch-Level-8`.
+<panel type="seamless" header="%%FAQ: Oops, I messed up my branching! Will I be penalized?%%">
+
+  Answer: Not to worry. You are welcome to (but not _required) to) try to rectify it. There is no penalty. Just take note of your mistake and try to avoid it in the future.
+</panel>
+<p/>
+
+* **Do Level 8 similar to the above**, using a branch `branch-Level-8`.
 </div>
 <div tags="m--cs2113 m--tic4001" id="as-parallel-prs">
 

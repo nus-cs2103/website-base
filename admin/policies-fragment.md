@@ -151,7 +151,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
 * If you copy-pasted code from elsewhere but modified it significantly, mention it as a comment<br>
   {{ icon_example }} Example:
   ```java{highlight-lines="1['adapted']"}
-  //Solution below adapted by https://stackoverflow.com/a/16252290
+  //Solution below adapted from https://stackoverflow.com/a/16252290
   {Your implementation of the reused solution here ...}
   ```
 * If you copy-pasted a non-trivial code block (possibly with minor modifications %%renaming, layout changes, changes to comments, etc.%%), also mark the code block as reused code (using <trigger trigger="click" for="modal:reusePolicy-authorTags">`@@author` tags</trigger> with the ==`-reused`== suffix)<br>
