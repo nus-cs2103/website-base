@@ -26,7 +26,7 @@
 
 **It's OK to make occasional mistakes in weekly tasks** (making mistakes is a natural part of learning new things after all). If a weekly task was not accepted as 'done' due to a mistake you made, go ahead and rectify the mistake as soon as you can -- our grading scripts will not penalize such mistakes if they are corrected soon after.
 
-**We wont wait forever though.** Note that for most interim deliverables, we stop checking about one week after the deadline is over. So, work/corrections done more than one week after the deadline might not get noticed at all by our grading scripts, even as late submissions.
+**We won't wait forever though.** Note that for most interim deliverables, we stop checking about one week after the deadline is over. So, work/corrections done more than one week after the deadline might not get noticed at all by our grading scripts, even as late submissions.
 </div>
 <div tags="m--tic4001 m--tic4002">
 

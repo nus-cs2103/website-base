@@ -5,7 +5,7 @@ week2: [
   {id: 'learn_about_the_project'},
   {id: 'set_up_prerequisites'},
   {id: 'set_up_project'},
-  {id: 'add_increments', suffix: ' while committing frequently', deadline: get_date(date_w2_start, 6), increments: [
+  {id: 'add_increments', suffix: ' while committing frequently', deadline: get_date(date_w2_start, 7, time=time_lecture_start), increments: [
     {id: 'Level-0', title: 'Rename, Greet, Exit'},
     {id: 'Level-1', title: 'Echo'},
     {id: 'Level-2', title: 'Add, List'},

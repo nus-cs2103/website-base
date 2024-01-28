@@ -72,7 +72,8 @@
 
   * **Fix a weekly 1-2 hour time slot for project meetings** after the team has been finalized (latest by the end of week 3 {{ session }}). ==All members are expected to attend weekly project meetings== (not doing so could lower the peer evaluation ratings you receive, which in turn will be factored into your grade). You should also fix a venue for the meetings, if you prefer F2F meetings.
   * {{ icon_tip }} **The best time for the weekly project meeting** is the period {{ date_first_lecture | date(format_full_day, 1) }}, {{ date_first_lecture | date(format_full_day, 2) }}, {{ date_first_lecture | date(format_full_day, 3) }}, {{ date_first_lecture | date(format_full_day, 4) }} i.e., soon after the
-{{ lecture_name }} but well ahead of the deadline for weekly tasks. %%Reason: _After_ the {{ lecture_name_short }} → so that you've been briefed about upcoming project tasks; _before_ the deadline → so that you can use the meeting to deal with weekly project tasks.%%
+{{ lecture_name }} but well ahead of the deadline for weekly tasks. %%Reason: _After_ the {{ lecture_name_short }} → so that you've been briefed about upcoming project tasks; _well ahead of_ the deadline → so that you can use the meeting to plan/do weekly project tasks.%%<br>
+    But it's OK to choose a timeslot outside of that recommended period too, if a suitable time cannot be found within that period.
 
 </div>
 

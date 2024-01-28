@@ -241,7 +241,7 @@ The theory part of this course is relatively light as the course is not part of 
 Given below are some general responses to points you guys (and past students) raised multiple times:
 
 
-* **Looking for more programming practice?**: I'm afraid I wont be able to add more exercises this time.
+* **Looking for more programming practice?**: I'm afraid I won't be able to add more exercises this time.
   Will consider adding more optional exercises next semester.
   In the meantime, you can get more programming practice by doing more in the project.
   You can refer to [Monty full description](https://nus-tee3201.github.io/2023/programming/chapters/monty.html) to find

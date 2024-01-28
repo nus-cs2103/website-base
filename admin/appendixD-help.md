@@ -72,7 +72,7 @@
     </box>
 
   * **Generalize the problem.** "How to write tasks to a text file using Java" is too specific to what you are working on. You are more likely to find help if you post a thread called (or search for) "How to write to a file using Java".
-  * **Remember to thank those you try to help, and close the issue** after the issue has been resolved.
+  * **Remember to thank those who try to help, and close the issue** after the issue has been resolved.
   * **Share the solution**. If you eventually managed to solve the problem on your own, share the solution in the thread for the benefit of others, and give closure to those who tried to help you. Don't leave the thread hanging or close it with something like `Never mind. I figured it out`.
   * **Don't _hijack_ other threads**: It is OK to chime in if you have the same problem as the <tooltip content="Original Poster">OP</tooltip> but don't ask a different (even if somewhat related) question in someone else's thread. That prevents the OP from closing the thread after the original question has been resolved. Instead, post your question as a separate thread.
 
