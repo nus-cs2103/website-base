@@ -9,7 +9,7 @@
 ### 1. Charisma
 
 **Charisma Kausar**<br>
-%%:fas-envelope:%% charisma.kausar@u.nus.edu<br>
+%%:fas-envelope:%% `charisma.kausar[at]u.nus.edu`<br>
 %%:fab-github:%% [@ckcherry23](https://github.com/ckcherry23)
     </div>
   </div>
@@ -28,7 +28,7 @@
 ### 2. Cheng Hou
 
 **LAM CHENG HOU**<br>
-%%:fas-envelope:%% lamchenghou@u.nus.edu<br>
+%%:fas-envelope:%% `lamchenghou[at]u.nus.edu`<br>
 %%:fab-github:%% [@lamchenghou](https://github.com/lamchenghou)
     </div>
   </div>
@@ -47,7 +47,7 @@
 ### 3. Eric
 
 **GOH KANG YANG ERIC**<br>
-%%:fas-envelope:%% e0726585@u.nus.edu<br>
+%%:fas-envelope:%% `e0726585[at]u.nus.edu`<br>
 %%:fab-github:%% [@Dangabit](https://github.com/Dangabit)
     </div>
   </div>
@@ -66,7 +66,7 @@
 ### 4. Fikri
 
 **MUHAMMAD FIKRI BIN ABDUL KALAM**<br>
-%%:fas-envelope:%% E0970206@u.nus.edu<br>
+%%:fas-envelope:%% `E0970206[at]u.nus.edu`<br>
 %%:fab-github:%% [@mfjkri](https://github.com/mfjkri)
     </div>
   </div>
@@ -85,7 +85,7 @@
 ### 5. Gallen
 
 **GALLEN ONG KAI BIN**<br>
-%%:fas-envelope:%% gallen.ong@u.nus.edu<br>
+%%:fas-envelope:%% `gallen.ong[at]u.nus.edu`<br>
 %%:fab-github:%% [@gongg21](https://github.com/gongg21)
     </div>
   </div>
@@ -104,7 +104,7 @@
 ### 6. Hui Xuan
 
 **TAN HUI XUAN**<br>
-%%:fas-envelope:%% e0775523@u.nus.edu<br>
+%%:fas-envelope:%% `e0775523[at]u.nus.edu`<br>
 %%:fab-github:%% [@huixuant](https://github.com/huixuant)
     </div>
   </div>
@@ -123,7 +123,7 @@
 ### 7. Jia Wei
 
 **LEE JIA WEI**<br>
-%%:fas-envelope:%% jiawei.lee@u.nus.edu<br>
+%%:fas-envelope:%% `jiawei.lee[at]u.nus.edu`<br>
 %%:fab-github:%% [@Beebeeoii](https://github.com/Beebeeoii)
     </div>
   </div>
@@ -161,7 +161,7 @@
 ### 9. Jiu Fong
 
 **LAM JIU FONG**<br>
-%%:fas-envelope:%% e0960521@u.nus.edu<br>
+%%:fas-envelope:%% `e0960521[at]u.nus.edu`<br>
 %%:fab-github:%% [@LamJiuFong](https://github.com/LamJiuFong)
     </div>
   </div>
@@ -180,7 +180,7 @@
 ### 10. Jonas
 
 **JONAS ONG SI WEI**<br>
-%%:fas-envelope:%% e0957640@u.nus.edu<br>
+%%:fas-envelope:%% `e0957640[at]u.nus.edu`<br>
 %%:fab-github:%% [@jonasongg](https://github.com/jonasongg)
     </div>
   </div>
@@ -199,7 +199,7 @@
 ### 11. Kai Sheng
 
 **TEO KAI SHENG**<br>
-%%:fas-envelope:%% E0957423@u.nus.edu<br>
+%%:fas-envelope:%% `E0957423[at]u.nus.edu`<br>
 %%:fab-github:%% [@teoks0199](https://github.com/teoks0199)
     </div>
   </div>
@@ -218,7 +218,7 @@
 ### 12. Kerway
 
 **TAN KERWAY**<br>
-%%:fas-envelope:%% e0958186@u.nus.edu<br>
+%%:fas-envelope:%% `e0958186[at]u.nus.edu`<br>
 %%:fab-github:%% [@kiwibang](https://github.com/kiwibang)
     </div>
   </div>
@@ -237,7 +237,7 @@
 ### 13. Kevin Foong
 
 **Kevin Foong Wei Tong**<br>
-%%:fas-envelope:%% kevinfoong@u.nus.edu<br>
+%%:fas-envelope:%% `kevinfoong[at]u.nus.edu`<br>
 %%:fab-github:%% [@kevin9foong](https://github.com/kevin9foong)
     </div>
   </div>
@@ -256,7 +256,7 @@
 ### 14. Kok Rui
 
 **WONG KOK RUI**<br>
-%%:fas-envelope:%% kokrui@u.nus.edu<br>
+%%:fas-envelope:%% `kokrui[at]u.nus.edu`<br>
 %%:fab-github:%% [@kokrui](https://github.com/kokrui)
     </div>
   </div>
@@ -275,7 +275,7 @@
 ### 15. Kyle
 
 **KYLE ZHENG CHING CHAN**<br>
-%%:fas-envelope:%% e0205139@u.nus.edu<br>
+%%:fas-envelope:%% `e0205139[at]u.nus.edu`<br>
 %%:fab-github:%% [@xCOLOURx](https://github.com/xCOLOURx)
     </div>
   </div>
@@ -294,7 +294,7 @@
 ### 16. Li Ting
 
 **GOH LI TING**<br>
-%%:fas-envelope:%% gohliting@u.nus.edu<br>
+%%:fas-envelope:%% `gohliting[at]u.nus.edu`<br>
 %%:fab-github:%% [@Goh-Li-Ting](https://github.com/Goh-Li-Ting)
     </div>
   </div>
@@ -313,7 +313,7 @@
 ### 17. Lin Chieh
 
 **LIN CHIEH**<br>
-%%:fas-envelope:%% e0686120@u.nus.edu<br>
+%%:fas-envelope:%% `e0686120[at]u.nus.edu`<br>
 %%:fab-github:%% [@euph00](https://github.com/euph00)
     </div>
   </div>
@@ -332,7 +332,7 @@
 ### 18. Peiyuan
 
 **Lim Peiyuan**<br>
-%%:fas-envelope:%% e0543756@u.nus.edu<br>
+%%:fas-envelope:%% `e0543756[at]u.nus.edu`<br>
 %%:fab-github:%% [@Py0000](https://github.com/Py0000)
     </div>
   </div>
@@ -351,7 +351,7 @@
 ### 19. Rayson
 
 **YEAP RAYSON**<br>
-%%:fas-envelope:%% rayson.yeap@u.nus.edu<br>
+%%:fas-envelope:%% `rayson.yeap[at]u.nus.edu`<br>
 %%:fab-github:%% [@Respirayson](https://github.com/Respirayson)
     </div>
   </div>
@@ -370,7 +370,7 @@
 ### 20. Reyaaz
 
 **MUHAMMAD REYAAZ BIN ABDUL BASHEER**<br>
-%%:fas-envelope:%% e0544058@u.nus.edu<br>
+%%:fas-envelope:%% `e0544058[at]u.nus.edu`<br>
 %%:fab-github:%% [@ARPspoofing](https://github.com/ARPspoofing)
     </div>
   </div>
@@ -389,7 +389,7 @@
 ### 21. Richie
 
 **RICHIE HSIEH**<br>
-%%:fas-envelope:%% e0957714@u.nus.edu<br>
+%%:fas-envelope:%% `e0957714[at]u.nus.edu`<br>
 %%:fab-github:%% [@richiehx](https://github.com/richiehx)
     </div>
   </div>
@@ -408,7 +408,7 @@
 ### 22. Rithik
 
 **RAMU RITHIK VIJAY**<br>
-%%:fas-envelope:%% e0969886@u.nus.edu<br>
+%%:fas-envelope:%% `e0969886[at]u.nus.edu`<br>
 %%:fab-github:%% [@papataco14](https://github.com/papataco14)
     </div>
   </div>
@@ -427,7 +427,7 @@
 ### 23. Ru Xin
 
 **TAY RU XIN**<br>
-%%:fas-envelope:%% E0969556@u.nus.edu <br>
+%%:fas-envelope:%% `E0969556[at]u.nus.edu` <br>
 %%:fab-github:%% [@tayruxin](https://github.com/tayruxin)
     </div>
   </div>
@@ -446,7 +446,7 @@
 ### 24. Ryan
 
 **RYAN PANG JIN LIANG**<br>
-%%:fas-envelope:%% e0957799@u.nus.edu<br>
+%%:fas-envelope:%% `e0957799[at]u.nus.edu`<br>
 %%:fab-github:%% [@Originalidk](https://github.com/Originalidk)
     </div>
   </div>
@@ -484,7 +484,7 @@
 ### 26. Sean
 
 **Sean Ng Shan Sheng**<br>
-%%:fas-envelope:%% E0543670@u.nus.edu<br>
+%%:fas-envelope:%% `E0543670[at]u.nus.edu`<br>
 %%:fab-github:%% [@snss231](https://github.com/snss231)
     </div>
   </div>
@@ -522,7 +522,7 @@
 ### 28. Tiw
 
 **TIW KANG XU**<br>
-%%:fas-envelope:%% e0960467@u.nus.edu<br>
+%%:fas-envelope:%% `e0960467[at]u.nus.edu`<br>
 %%:fab-github:%% [@TiwKangXu](https://github.com/TiwKangXu)
     </div>
   </div>
@@ -541,7 +541,7 @@
 ### 29. Wayne
 
 **Wayne Zhang Si Yuan**<br>
-%%:fas-envelope:%% e0726154@u.nus.edu<br>
+%%:fas-envelope:%% `e0726154[at]u.nus.edu`<br>
 %%:fab-github:%% [@waynezsy](https://github.com/waynezsy)
     </div>
   </div>
@@ -560,7 +560,7 @@
 ### 30. Wei En
 
 **HUANG WEI'EN**<br>
-%%:fas-envelope:%% E0969543@u.nus.edu<br>
+%%:fas-envelope:%% `E0969543[at]u.nus.edu`<br>
 %%:fab-github:%% [@Weiennn](https://github.com/Weiennn)
     </div>
   </div>
@@ -579,7 +579,7 @@
 ### 31. Wei Zhe
 
 **TAN WEI ZHE**<br>
-%%:fas-envelope:%% e0725610@u.nus.edu<br>
+%%:fas-envelope:%% `e0725610[at]u.nus.edu`<br>
 %%:fab-github:%% [@wz2k](https://github.com/wz2k)
     </div>
   </div>
@@ -598,7 +598,7 @@
 ### 32. Wen Li
 
 **NG WEN LI**<br>
-%%:fas-envelope:%% e0775082@u.nus.edu<br>
+%%:fas-envelope:%% `e0775082[at]u.nus.edu`<br>
 %%:fab-github:%% [@wendy0107](https://github.com/wendy0107)
     </div>
   </div>
@@ -617,7 +617,7 @@
 ### 33. Yi Teng
 
 **Tee Yi Teng**<br>
-%%:fas-envelope:%% e0725799@u.nus.edu<br>
+%%:fas-envelope:%% `e0725799[at]u.nus.edu`<br>
 %%:fab-github:%% [@Puakii](https://github.com/Puakii)
     </div>
   </div>
@@ -636,7 +636,7 @@
 ### 34. Yi Xian
 
 **Tan Yi Xian**<br>
-%%:fas-envelope:%% tan.yixian@u.nus.edu<br>
+%%:fas-envelope:%% `tan.yixian[at]u.nus.edu`<br>
 %%:fab-github:%% [@yixiann](https://github.com/yixiann)
     </div>
   </div>
@@ -655,7 +655,7 @@
 ### 35. Yiming
 
 **TAN YIMING**<br>
-%%:fas-envelope:%% tan.yiming@u.nus.edu<br>
+%%:fas-envelope:%% `tan.yiming[at]u.nus.edu`<br>
 %%:fab-github:%% [@tanyyyming](https://github.com/tanyyyming)
     </div>
   </div>
@@ -674,7 +674,7 @@
 ### 36. Yong Jing
 
 **GOH YONG JING**<br>
-%%:fas-envelope:%% e0693145@u.nus.edu<br>
+%%:fas-envelope:%% `e0693145[at]u.nus.edu`<br>
 %%:fab-github:%% [@gohyongjing](https://github.com/gohyongjing)
     </div>
   </div>
@@ -693,7 +693,7 @@
 ### 37. Yu Hong
 
 **CHIA YU HONG**<br>
-%%:fas-envelope:%% chia_yh@u.nus.edu<br>
+%%:fas-envelope:%% `chia_yh[at]u.nus.edu`<br>
 %%:fab-github:%% [@chia-yh](https://github.com/chia-yh)
     </div>
   </div>
@@ -712,7 +712,7 @@
 ### 38. Zong Xian
 
 **Kang Zong Xian**<br>
-%%:fas-envelope:%% e0773557@u.nus.edu<br>
+%%:fas-envelope:%% `e0773557[at]u.nus.edu`<br>
 %%:fab-github:%% [@kangzongxian](https://github.com/kangzongxian)
     </div>
   </div>

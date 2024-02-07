@@ -51,7 +51,7 @@
 
 <!-- ------------------------------------------------------------------------------------------------------ -->
 
-#### {{ thumb(2) }} Implement Duke increments `Level-1`, `Level-2`
+#### {{ thumb(2) }} Implement Duke increments `Level-0`, `Level-1`, `Level-2`
 
 * Take note of our plagiarism policies
 

@@ -62,7 +62,12 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 <box type="warning" seamless>
 
-**Caveat against using other Git GUIs**: While we do not _insist_ that you use Sourcetree, note that we are unable  to provide any support if you run into any problems while using a different Git GUI.
+**Cautions about Git GUIs** (especially if you are new to Git):
+
+* **Using Git GUIs other than Sourcetree** is allowed, but we are unable  to provide support if you run into any problems while using a different Git GUI.
+* **Using Git (or GitHub) features that come with the IDE** is discouraged as it is better to learn Git/GitHub independent of any other tool.
+* **Using clients provided by GitHub** (e.g., _GitHub Desktop_ app) is discouraged as it will make it harder for you to separate Git features from GitHub features.
+* **Long-term use of a Git GUI for _all_ Git usage** is discouraged as well. Once you are over the initial learning curve, it is best to use CLI in tandem with GUI, as each mode has pros and cons. Often, the best is to perform operations using CLI and use a GUI to get a more visual view (e.g., to visually inspect the revision graph).
 </box>
 </div>
 </box>

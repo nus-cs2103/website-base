@@ -1,4 +1,18 @@
 {% from "common/macros.njk" import embed_topic, get_date, show_as_tab, timing_badge with context %}
+{% from "common/topics.njk" import  panopto with context %}
+
+<panel type="info" header="##### ==[MUST-WATCH]== Course Briefing Segment - tP (8 minutes)" expanded >
+
+This week, we cover one more course briefing segment, given below. As with other _course_ briefing segments, it is compulsory to watch.
+
+****tP Briefing (Part 1 -- Getting Started)****{.text-info}
+
+{{ panopto(desc="9 mins", "ecf50649-072a-416b-8382-b10900fd2f81") }}
+
+
+As usual, the _weekly_ briefing will be hybrid mode, and optional to attend/watch.
+</panel>
+<p/>
 
 <box dismissible>
 

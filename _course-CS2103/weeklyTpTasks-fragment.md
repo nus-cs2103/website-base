@@ -3,12 +3,13 @@
 {% set weekly_tp_tasks = {
 week3: [
   {id: 'get_familiar_with_ab3', deadline: get_date(date_w4_start, 1, time="23:59")},
-  {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'}
+  {id: 'set_up_meeting_time', deadline: 'by the end of the tutorial'},
+  {id: 'check_collective_ip_status', deadline: get_date(date_w4_start, 4, time="")}
 ],
 week4: [
   {id: 'start_weekly_meetings'},
   {id: 'start_project_notes', deadline: 'before the tutorial'},
-  {id: 'decide_project_direction', deadline: 'before the tutorial'}
+  {id: 'decide_project_direction', deadline: 'decide by tutorial, submit by Sat'}
 ],
 week5: [
   {id: 'brainstorm_user_stories', deadline: 'before the tutorial'},

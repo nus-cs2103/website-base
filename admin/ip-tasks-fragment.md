@@ -109,6 +109,9 @@ As per the above, ==you have until the next {{ lecture_name }}== to finish this 
 </div>
 <div id="cs2103-week3-intro">
 
+**{{ icon_important_big_red }} You are required to follow the Git standard from this week**, as specified in [this page](standardsAndConventions.html).<br>
+  ==Only _future_ commits need to follow the Git standard.== Editing past commit messages (to make them comply with the Git standard) is discouraged as it changes the commit timestamp, which can alter your iP progress timeline (as seen by progress tracking scripts).
+
 **:fas-clock: Reminder about the deadline for the weekly project tasks:**
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent=1) }}
 <p/>
@@ -283,7 +286,7 @@ Note that if `A-Jar` increment does not require any code changes, you may tag th
 
 <panel type="seamless" header="%%FAQ: Oops, I messed up my branching! Will I be penalized?%%">
 
-  Answer: Not to worry. You are welcome to (but not _required) to) try to rectify it. There is no penalty. Just take note of your mistake and try to avoid it in the future.
+  Answer: Not to worry. You are welcome to (but not _required_ to) try to rectify it. There is no penalty. Just take note of your mistake and try to avoid it in the future.
 </panel>
 <p/>
 
@@ -372,6 +375,15 @@ That said, it is also preferable to use one paradigm as the primary approach and
 
 <div class="indented-level2" id="pulling-branch-from-upstream">
 <panel type="seamless" >
+<span slot="header" class="card-title"><markdown>{{ icon_tip}} **How do I fetch the `add-gradle-support` branch from my fork?**{.text-success}</markdown></span>
+
+General instructions for fetching a new branch from a remote can be found in the panel below:
+
+   {{ embed_topic("../book/gitAndGithub/remoteBranches/text.md#pulling-a-new-branch", "Textbook " + icon_embedding + " Git&Github → **Remote branches** (extract)", "2", status="expanded") }}
+
+</panel>
+
+<panel type="seamless" >
 <span slot="header" class="card-title"><markdown>{{ icon_tip}} **If your fork doesn't have the `add-gradle-support` branch ...**{.text-success}</markdown></span>
 
 If your fork doesn't have the `add-gradle-support` branch (i.e., you did not copy all the branches when you forked), here are the steps for fetching the `add-gradle-support` branch from the upstream repo:<br>
@@ -385,10 +397,6 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
    General instructions for fetching a new branch from a remote can be found in the panel below:
 
    {{ embed_topic("../book/gitAndGithub/remoteBranches/text.md#pulling-a-new-branch", "Textbook " + icon_embedding + " Git&Github → **Remote branches** (extract)", "2", indent="1") }}
-
-
-
-
 </panel>
 <p/>
 </div>
@@ -606,7 +614,7 @@ Features:
 
 ---
 
-If you Java programmer, you can use it to practice Java too. Here's the `main` method:
+If you are a Java programmer, you can use it to practice Java too. Here's the `main` method:
 ```java{.no-line-numbers}
 public class Main {
     public static void main(String[] args) {
@@ -666,7 +674,7 @@ This task is worth `2x2=4` participation points.
 </div>
 
 * {{ step(3) }} **Do the second PR review** as follows.
-  * Comment on ==other code quality guidelines== (see the <span tags="m--cs2103">section _Naming_</span><span tags="m--cs2113 m--tic4001">sections on _Naming_ and _Readability_</span> in [this textbook chapter](../se-book-adapted/chapters/codeQuality.html)) you have learned so far. It's optional to comment on coding standard violations in this PR review.
+  * Comment on ==other code quality guidelines== <span tags="m--cs2103">(see the section [_Code Quality: Naming_]({{ baseUrl }}/schedule/week4/topics.html#w4-6-code-quality-naming))</span><span tags="m--cs2113">(see the sections on _Naming_ and _Readability_ in [this textbook chapter](../se-book-adapted/chapters/codeQuality.html))</span> you have learned so far. It's optional to comment on coding standard violations in this PR review.
   * The review allocation is given in the panel below.
 
 <div class="indented-level2">

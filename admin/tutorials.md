@@ -16,12 +16,16 @@
 
 <box type="info" tags="m--cs2103" header="****Zoom Links & Venue****" id="venue-and-links" icon=":fas-info-circle:">
 
-**The first few tutorials will be conducted via Zoom.**
+**The first two tutorials (i.e., weeks 3 and 4) will be conducted fully online (via Zoom).**
 
 * Zoom links for tutorial sessions will be available in [Canvas course homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.<br>
-  You may use the tutorial venue to join the Zoom session if you wish.
+* You may use the tutorial venue (given in the table below) to join the Zoom session if you wish, but if you do,
+    * please keep noise level low, as there will be other students doing the same.
+    * while you may sit together with team members, you should ==participate in the tutorial _individually_== e.g., do not project one person's screen to the TV, or discuss answers with others unless the tutor prompts you to.
+    * if you face Wi-Fi connectivity issues, try connecting to SSID `eduroam` (you need to use your full NUSNET email address and password `e____@u.nus.edu/*****` to login).
 
-**The subsequent tutorials will be conducted in F2F mode**. Note the following about F2F tutorials:
+**The subsequent tutorials will be conducted in F2F mode**. {% if (current_week | int) <= 4 %}More info coming soon ...{% else %}Note the following about F2F tutorials:
+
 
 * The venue is given in the table below.
 * We will be using Zoom in F2F tutorials as well (same Zoom link as before), as it's needed for,<br>
@@ -35,6 +39,7 @@
 * Are you allowed to attend the tutorial via Zoom instead?  By default, no.<br>
   Reason: it goes against the purpose of F2F tutorials (i.e., to get the whole team to meet physically) and the NUS directive to move all small classes to F2F mode.<br>
   However, you can request (by emailing `{{ course | lower }}@comp.nus.edu.sg`) to attend the tutorial of a specific week via Zoom, if you have a valid reason (e.g., MC, taking part in an NUS-related event).
+* If you face Wi-Fi connectivity issues, try connecting to SSID `eduroam` (you need to use your full NUSNET email address and password `e____@u.nus.edu/*****` to login).{% endif %}
 </box>
 
 <include src="../_course-{{ course }}/timetables-fragment.md#tutorials-s{{ S }}" optional />
@@ -104,6 +109,13 @@
 **Grading:**
 
 * Your conduct in tutorials will be evaluated by team members and the tutor which can affect your participation marks.
+
+**FAQ:**
+
+* Q: What if I can't attend due to a valid reason (e.g., MC)?<br>
+  A: The following course policy applies.
+
+{{ embed_topic("policies-fragment.md#policy-validAbsences", "Admin " + icon_embedding + " Policies → Absences due to valid reasons", "4", indent=1) }}
 
 </div>
 </panel>

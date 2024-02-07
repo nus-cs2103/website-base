@@ -86,7 +86,8 @@ The final product is to be targeted at users who can type fast, and prefer typin
   * a teacher/tutor managing students (can be further optimized to a specific course or type of teaching)
   * a secretary of an organization managing member details
   * an event organizer managing participants
-* Manage more entity types related to contacts %%e.g. Tasks allocated to contacts, loans given, grades, etc.%%
+* Manage more entity types related to contacts %%e.g. Tasks allocated to contacts, loans given, grades, etc.%%<br>
+  Note: the contacts should still remain the primary focus, even if there are other things being managed e.g., an address book app that is optimized for a user who lends out money to those contacts (not a loan management app).
 * Introduce relationships between contacts e.g., members of a team
 * Make existing general features _really_ strong, worthy of a real product e.g.,
   * make the commands more natural, easier to type/remember, allow aliases, etc.

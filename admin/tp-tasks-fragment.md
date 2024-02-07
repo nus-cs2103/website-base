@@ -383,16 +383,25 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 {{ embed_topic("tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="1") }}
 </div>
 {#====================================================================================================================#}
+<span id="heading_check_collective_ip_status">{{ icon_team }} %%Team Task%%: Check up on team's collective iP status</span>
+<div id="desc_check_collective_ip_status">
+
+* Check with all team members if any of them needs help doing the iP, and source within the team to provide the needed help as much as you can %%e.g., offer to sit with them while they do the iP so that you can try to help when needed.%%<br>
+  **Submission:** After completing this task (i.e., after asking all team members if they need help for the iP, and coming up with a plan to help those who asked for help), please ==inform your tutor== so that we can track the status of this team task. We don't need to know who asked for help though e.g., `One member is slightly behind and one significantly behind. We plan to have a code-together session on Sunday so that we can help them if they encounter problems.`
+
+<box type="tip" seamless>Mentorship within the team is highly-encouraged and rewarded. Besides, it is in your interest to help team members level up before the tP coding begins, and also, a good early opportunity to build team spirit.</box>
+</div>
+{#====================================================================================================================#}
 <span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>
 <div id="desc_start_weekly_meetings">
 
 * We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, ==it is also acceptable to discuss weekly Canvas quiz (if any) together with team members as you do the quiz== i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.
 </div>
 {#====================================================================================================================#}
-<span id="heading_decide_project_direction">{{ icon_team }} Decide on an overall project direction %%(user profile, problem addressed)%%</span>
+<span id="heading_decide_project_direction">{{ icon_team }} Decide on an overall project direction %%(user profile, value proposition)%%</span>
 <div id="desc_decide_project_direction">
 
-* **Decide the target user profile, and problem addressed**, as described in the panels below (tip: you can use your first project meeting for this):
+* **Decide the target user profile, and value proposition**, as described in the panels below (tip: you can use your first project meeting for this):
 
 <div class="indented">
 
@@ -436,9 +445,9 @@ As we are still at the early stages of identifying a problem to solve, do not th
 <span id="heading_start_project_notes">{{ icon_team }} Start a collaborative doc to take project notes</span>
 <div id="desc_start_project_notes">
 
-* Keep project notes in easy-to-use collaborative docs (Recommended: use a GoogleDoc). This document will be checked by the instructors at various points.<br>
+* Keep project notes in an easy-to-use collaborative doc (Recommended: use a GoogleDoc). This document will be checked by the instructors at various points.<br>
   Remember to choose a tool that ==allow public _view_ access== e.g., GoogleDoc can be shared via a public link so that the document can be viewed by others. You'll be asked to submit this link to us in the next week.<br>
-  {{ icon_important_big_red }} Make sure all you current and future project notes (if split into in multiple documents) are reachable via links given in this document and are viewable by the public.
+  {{ icon_important_big_red }} Make sure all your current and future project notes (if split into in multiple documents) are reachable via links given in this document and are viewable by the public.
 
 </div>
 {#====================================================================================================================#}

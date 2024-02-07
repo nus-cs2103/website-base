@@ -39,8 +39,9 @@
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="help-troubleshoot-ip">
 
-<!-- * Do a quick demo of your iP to the tutor. -->
-* Now that you are in a team, it's time to build up the team spirit. For starters, you can start helping each other with course tasks. e.g., if anyone is facing problems in the iP, you can work together to solve them.
+* If there is time, do the following tP task (if there isn't enough time, you can do this later during the week).
+
+{{ embed_topic("tp-tasks-fragment.md#desc_check_collective_ip_status", "Admin " + icon_embedding + " **tP → Check collective iP status**", "2", indent="1") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="share-project-direction">
