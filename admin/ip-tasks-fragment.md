@@ -846,9 +846,10 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_add_an_extension">Add an extension</span>
 <div id="desc_add_an_extension">
 
-* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`{% if not tic4002 %}
-* Recommended to add the extension via a branch (branch name is up to you). Optional to add it via a PR.{% endif %}
-* Add a ==tag named `BCD-Extension`== to the corresponding commit.
+* Add at least one extension of your choice, selected from [category B, C, or D](../se-book-adapted/projectDuke/index.html#extensions-category-b) i.e., pick just one item from one category (i.e., one extension in total, not one from _each_ category) e.g., `B-DoWithinPeriodTasks` or `C-Sort` or `D-Places`
+* Recommended to add the extension via a branch (branch name is up to you). Optional to add it via a PR.
+* Add a ==tag named `BCD-Extension`== to the corresponding commit.<br>
+Irrespective of the exact extension you did, the tag name should be `BCD-Extension`.
 
 <div class="indented-level2">
 

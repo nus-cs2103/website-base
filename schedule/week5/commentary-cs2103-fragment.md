@@ -25,7 +25,7 @@ Next, we switch our focus to the topic of _code quality_, and learn a few more g
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Assertions", reuse=false) %}
 
-Given next are two prerequisite topics that you'll encounter in the tP. They are shown here in case you haven't learned them before you would like to refresh your memory.
+Given next are two prerequisite topics that you'll encounter in the tP. They are shown here in case you haven't learned them before or if you would like to refresh your memory.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

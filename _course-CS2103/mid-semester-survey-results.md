@@ -581,7 +581,7 @@ Next, why I think that it is myopic to generalise the pace is because we are bei
 
 * Fair point about making iP brownfield as well. In fact, this is what we used to do: i.e., take students through AB1, AB2, AB3, AB4, progressively exposing students to code bases of varying degree of OOP and other advanced features. But after a rew rounds of that we found it works well for strong students, it doesn't work well for the rest. So, we introduced the iP as a greenfield project so that students who didn't do well in CS2030/S or did it much earlier has a chance to build up their coding/OOP muscle before they start working in a brownfield project. Also, there is the argument that a student who already learned OOP/Java will not be slowed down that much by the very simple iP feaures scheduled for the first two weeks. 
 
-* The topic of 'requirements' is considered an important part of SE, and an essential part of the software life cycle. You are right that not all SWEs need to work on dealing with user requirements but most will need to understand and communicate about requirements nevertheless, as a product that doesn't meet user requirements properly will fail, no matter how good the code is.</markdown>
+* The topic of 'requirements' is considered an important part of SE, and an essential part of the software lifecycle. You are right that not all SWEs need to work on dealing with user requirements but most will need to understand and communicate about requirements nevertheless, as a product that doesn't meet user requirements properly will fail, no matter how good the code is.</markdown>
 </span></box>
 </td>
 </tr>

@@ -370,7 +370,8 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 
 <div class="indented-level1">
 
-6. Use the Canvas survey mentioned above to submit the screenshot and the feature suggestions.
+6. Use the Canvas survey mentioned above to submit the screenshot and the feature suggestions.<br>
+   Note: The feature suggestions you submit will be shared with the team members later, so that your team can use them when designing the tP product later.
 </div>
 
 </div>
@@ -387,7 +388,7 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 <div id="desc_check_collective_ip_status">
 
 * Check with all team members if any of them needs help doing the iP, and source within the team to provide the needed help as much as you can %%e.g., offer to sit with them while they do the iP so that you can try to help when needed.%%<br>
-  **Submission:** After completing this task (i.e., after asking all team members if they need help for the iP, and coming up with a plan to help those who asked for help), please ==inform your tutor== so that we can track the status of this team task. We don't need to know who asked for help though e.g., `One member is slightly behind and one significantly behind. We plan to have a code-together session on Sunday so that we can help them if they encounter problems.`
+  **Submission:** After completing this task (i.e., after asking all team members if they need help for the iP, and coming up with a plan to help those who asked for help), one member should ==inform your tutor== so that we can track the status of this task. We don't need to know who asked for help though e.g., `One member is slightly behind and one significantly behind. We plan to have a code-together session on Sunday so that we can help them if they encounter problems.`
 
 <box type="tip" seamless>Mentorship within the team is highly-encouraged and rewarded. Besides, it is in your interest to help team members level up before the tP coding begins, and also, a good early opportunity to build team spirit.</box>
 </div>
@@ -429,7 +430,8 @@ As we are still at the early stages of identifying a problem to solve, do not th
 * <span class="text-danger">**Submission**:</span> Submit via TEAMMATES.
   * Details to submit:
     1. **Product name** (plain text only) %%e.g., ClientContactsPro%%
-    1. **Target user** profile (plain text only) %%e.g., freelance event photographers%%
+    1. **Target user** profile (plain text only) %%e.g., freelance event photographers%%<br>
+       This is a general description of the target user, <span class="text-danger">not the 'persona' you defined</span> (the latter serves as a concrete representation of the target user, for your internal use only).
     1. **Value proposition** i.e., what problem does the product solve? (plain text paragraph, <span class="text-danger">no more than 50 words</span>) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%<br>
        This is ==not a list of features== -- you should not think about exact features yet.
     1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
@@ -456,7 +458,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 <box type="info" tags="m--cs2103" seamless>
 
-**You can do this step as if the tP is a greenfield project** (i.e., there is no AB3), to get the full experience of this activity. Some of the user stories you come up with may already be implemented in AB3, but that can be sorted out later.
+**You can do this step as if the tP is a greenfield project** (i.e., as if there is no AB3), to get the full experience of this activity. Some of the user stories you come up with may already be implemented in AB3, but that can be sorted out later.
 </box>
 
 <pic eager class="indented-level2" src="{{baseUrl}}/admin/images/v00.png" width="250px"></pic>
