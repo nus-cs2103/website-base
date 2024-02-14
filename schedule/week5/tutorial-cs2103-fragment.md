@@ -25,19 +25,28 @@
    </panel>
    <p/>
 
-1. {{ timing_badge("10 minutes", "info") }} **Find given problems**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab), and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
-  a. weak SLAP<br>
-  b. nesting problems: arrow-head style code or too-deep nesting<br>
-  c. too-long methods<br>
-  <br>
-   {{ icon_tip }} To identify nesting problems or long methods, zoom out and scroll through the entire PR code to do a visual inspection (no need to read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction.
+1. {{ timing_badge("10 minutes", "info") }} **Find instances of the given code quality problems**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab), and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
+   **a) weak SLAP**<br>
+   **b) nesting problems**: arrow-head style code or too-deep nesting<br>
+   **c) too-long methods**<br>
    * If you can't find at least one example, you can try the fallback option provided, and failing that, another random iP PR.
    * You can also select borderline cases.
-   * **Paste screenshots of problematic code** in the shared online document provided (in the section of the document allocated to you).
+
+   **Paste screenshots of problematic code** in the `.pptx` the tutor will share with you via MSTeams.
+
+   <box>
+
+   {{ icon_tip }} To identify nesting problems or long methods, zoom out and scroll through the entire PR code to do a visual inspection (no need to read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction.
+
+   {{ icon_tip }} If exisiting PR comments are getting in your way, you can hide them using the following option:
+   <pic src="..\..\book\gitAndGithub\reviewPRs\images\hideExistingComments.png" />
+   <include src="..\..\book\gitAndGithub\reviewPRs\text.md#tip-pr-split-view" inline />
+   </box>
+
 
 1. {{ timing_badge("10 minutes", "info") }} **Discussion**: The tutor will lead a short discussion to go through the problematic code you found.
 
-1. {{ icon_tip }} **After the tutorial**, you can apply the insights gained from this activity to **improve the code quality of your own iP**, if necessary.
+1. **After the tutorial**, you can apply the insights gained from this activity to **improve the code quality of your own iP**, if necessary.
    <box type="info" seamless>
    You are not required to (but welcome to) post review comments in the PRs you examined.
    </box>

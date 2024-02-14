@@ -9,9 +9,11 @@
 
 <div tags="m--cs2103">
 
-****This course does not have _lectures_****, as the course is using the _blended learning_ mode. Course content are delivered as an online textbook accompanied by pre-recorded videos, instead of using lectures as the main method of content delivery.
+<p class="lead text-secondary"><em>Weekly briefing</em> are short weekly sessions (>1hr) conducted by the course lecturer(s) to brief you about the upcoming week.</p>
 
-**We still have a lecture slot/venue though**. In most weeks we use if for _weekly briefings_. In some weeks we use it for important events such as the practical exam.
+****This course does not have _lectures_****, as the course is using the _blended learning_ mode. Course content are delivered as an online textbook accompanied by pre-recorded videos, instead of using lectures as the main method of content delivery. We still have a lecture slot/venue though.
+
+**In most weeks we use the lecture slot/venue for _weekly briefings_.** In some weeks we use it for important events such as the practical exam.
 </div>
 
 ****Timing/venue****: <include src="../_course-{{ course }}/timetables-fragment.md#lectures-s{{ S }}" inline/>
@@ -57,4 +59,5 @@
 
 </div>
 
+</div>
 {% endcall %}

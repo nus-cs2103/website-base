@@ -306,12 +306,12 @@ Note that if `A-Jar` increment does not require any code changes, you may tag th
 
 3. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
    1. Merge one of the PRs on GitHub. Remember to choose the `Create merge commit` option when merging.
-   1. The above step will cause the `master` branch of your local repo to fall behind that of your fork. Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the the updated `master` branch from your fork e.g.,
+   1. The above step will cause the `master` branch of your local repo to fall behind that of your fork (<tooltip content="because your remote `master` branch (i.e., `origin/master`) now has a merge commit that the local `master` branch doesn't have. To confirm this, you can run `git fetch` followed by `git status`">why?</tooltip>). Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the updated `master` branch from your fork e.g.,
       ```{.no-line-numbers}
       $ git checkout master
       $ git pull origin master
       ```
-   1. Note how the remaining un-merged branches are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
+   1. Note how the remaining <tooltip content="i.e., branches not merged to the `master` branch yet">un-merged branches</tooltip> are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
    1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
    1. As before, tag the merge commit in the master branch and push the tag to your fork.
 1. Merge the remaining PRs using a procedure similar to the above.
@@ -417,7 +417,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 
 <div class="indented-level1">
 
-{{ icon_info }}  Note that you no longer need to keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
+{{ icon_info }}  Note that you no longer need to (although you are welcome to) keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
 </div>
 </div>
 {#====================================================================================================================#}

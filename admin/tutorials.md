@@ -17,18 +17,19 @@
 <box type="info" tags="m--cs2103" header="****Zoom Links & Venue****" id="venue-and-links" icon=":fas-info-circle:">
 
 **The first two tutorials (i.e., weeks 3 and 4) will be conducted fully online (via Zoom).**
-
+{% if (current_week | int) <= 4 %}
 * Zoom links for tutorial sessions will be available in [Canvas course homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.<br>
 * You may use the tutorial venue (given in the table below) to join the Zoom session if you wish, but if you do,
     * please keep noise level low, as there will be other students doing the same.
     * while you may sit together with team members, you should ==participate in the tutorial _individually_== e.g., do not project one person's screen to the TV, or discuss answers with others unless the tutor prompts you to.
     * if you face Wi-Fi connectivity issues, try connecting to SSID `eduroam` (you need to use your full NUSNET email address and password `e____@u.nus.edu/*****` to login).
+{% endif %}
 
 **The subsequent tutorials will be conducted in F2F mode**. {% if (current_week | int) <= 4 %}More info coming soon ...{% else %}Note the following about F2F tutorials:
 
 
 * The venue is given in the table below.
-* We will be using Zoom in F2F tutorials as well (same Zoom link as before), as it's needed for,<br>
+* We will be using Zoom in F2F tutorials as well (same Zoom link as before, given in [Canvas course homepage]({{ url_canvas_home }})), as it's needed for,<br>
   (a) screen-sharing the slides,<br>
   (b) collecting answers via PM or polls,<br>
   (c) recording the tutorial for your future reference.

@@ -40,7 +40,7 @@ week3: [
 ],
 week4: [
   {id: 'use_gfmd_in_pr_description'},
-  {id: 'review_two_prs', graded: true},
+  {id: 'review_two_prs', graded: true, deadline: get_date(date_w4_start, 7, time=time_lecture_start)},
   {id: 'learn_from_others'},
   {id: 'add_increments', suffix: ' as branches', increments:  [
     {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},

@@ -5,9 +5,7 @@
 
 This week, we cover one more course briefing segment, given below. As with other _course_ briefing segments, it is compulsory to watch.
 
-****tP Briefing (Part 1 -- Getting Started)****{.text-info}
-
-{{ panopto(desc="9 mins", "ecf50649-072a-416b-8382-b10900fd2f81") }}
+<include src="../../admin/courseBriefings.md#course-briefing-w4" />
 
 
 As usual, the _weekly_ briefing will be hybrid mode, and optional to attend/watch.

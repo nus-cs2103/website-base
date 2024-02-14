@@ -491,7 +491,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 * **Submission** (to be checked by the tutor later):<br>
   * Intermediate steps (e.g., persona, scenarios): Keep records these in your collaborative project document started in the previous week.
   * Brainstormed user stories:  Record them using an <!--~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
-  {{ icon_tip }} If you are not sure which tool to use for this, go for an online spreadsheet (e.g., Google Sheets) -- they are easy to edit, share, color, and more importantly, sort/filter.<br>
+  {{ icon_tip }} **Use an online spreadsheet for recording user stories** (e.g., Google Sheets), if you are not sure which tool to use. -- they are easy to edit, share, color, and more importantly, sort/filter.<br>
   {{ icon_info }} If you put the user stories in a location other than your main collaborative project notes document (i.e., the one given [here](teamList.html)), ensure that location is viewable by the public, and the main document has a link to that location. Otherwise, the tutor will not be able to see your list of user stories.
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
@@ -573,8 +573,11 @@ Suggested workflow:
 **Q:** Should we start implementing {{ version_first }} now?<br>
 **A:** Not at all. That is scheduled several weeks later. For now, just figure out the minimal feature set required for the product. We'll let you know when it is time to start working on {{ version_first }}.
 
-{% if cs2103 or tic4002 %}**Q:** Should we omit user stories that are already supported by AB3?<br>
+{% if cs2103 %}**Q:** Should we omit user stories that are already supported by AB3?<br>
 **A:** No, you should still include them. Reason: The existing implementation might still require some work before it fits your product.
+
+**Q:** All the user stories we selected for {{ version_first }} are already supported by AB3. What now?<br>
+**A:** That's fine. It means you can get to {{ version_first }} with very little effort, which is a good thing. Once you've finished {{ version_first }}, if there is time left, you can add more things to it (e.g., {{ version_first }}.1 etc.) at that time.
 {% endif %}
 </box>
 </div>
@@ -598,7 +601,11 @@ Suggested workflow:
 A: It's an individual task (note the icon {{ icon_individual }} above), to be done by each member, as we want _every_ member to be familiar with the code base.
 </box>
 
-* ==Ideally, you should do this task in this week== {% if tic4002 %}(i.e., before the week 6 lecture), but you may take an extra week (i.e., by the week 7 lecture){% else %}(i.e., midnight before the week 6 tutorial), but you may take an extra week (i.e., by the week 7 tutorial){% endif %} to finish them without penalty.
+<box type="info" icon=":fas-clock:" seamless>
+
+==Ideally, you should do this task in this week==, but you may take an extra week (i.e., by week 7) to finish.
+</box>
+
 * Do the following tutorials to get familiar with the codebase
   * [Tutorial 1 - Tracing a Command Execution Path]({{ url_ab3_fork_website }}/tutorials/TracingCode.html)
     * We recommend that you put in a sincere effort into this tutorial because tracing through the code of an unfamiliar code base is an important skill that you will not be able to learn/practice it later in the project as the code will no longer be 'unfamiliar' to you later.
@@ -607,7 +614,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
     * **Submission:** Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
     * FAQ: Do we have to write/update test cases too?<br>
-      A: Not a strict requirement, but given the purpose of this tutorial is to learn the code base, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise you can run into difficulties when you are writing test cases for your own features later.
+      A: Not a strict requirement, but given the purpose of this tutorial is to learn the code base, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise, you can run into difficulties when you are writing test cases for your own features later.
   * [Tutorial 3 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)
     * This tutorial is optional to do, but **at least give it a quick read**.
     * Submission: not required.
