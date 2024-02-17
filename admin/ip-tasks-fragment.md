@@ -306,7 +306,7 @@ Note that if `A-Jar` increment does not require any code changes, you may tag th
 
 3. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
    1. Merge one of the PRs on GitHub. Remember to choose the `Create merge commit` option when merging.
-   1. The above step will cause the `master` branch of your local repo to fall behind that of your fork (<tooltip content="because your remote `master` branch (i.e., `origin/master`) now has a merge commit that the local `master` branch doesn't have. To confirm this, you can run `git fetch` followed by `git status`">why?</tooltip>). Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the updated `master` branch from your fork e.g.,
+1. The above step will cause the `master` branch of your local repo to fall behind that of your fork (<popover content="because your remote `master` branch (i.e., `origin/master`) now has a merge commit that the local `master`">why</popover>). Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the updated `master` branch from your fork e.g.,
       ```{.no-line-numbers}
       $ git checkout master
       $ git pull origin master
