@@ -152,7 +152,7 @@ Why is it incorrect? ______
 <p/>
 </div>
 
-* Here is another example question. Note the ==[**SELECT ALL**]== at the sart of the qusetion text, which tells you that this question can have multiple correct answers, and you need to select all of them i.e., it is a checkbox type question<br>
+* Here is another example question. Note the ==[**SELECT ALL**]== at the start of the question text, which tells you that this question can have multiple correct answers, and you need to select all of them i.e., it is a checkbox type question<br>
 The answer is `C`, `D`.
 
 <div class="indented-level2">

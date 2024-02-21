@@ -66,7 +66,8 @@ week6: [
     {id: 'A-BetterGui', title: 'Better GUI', tag: 'optional'},
     {id: 'A-Personality', title: 'A unique personality', tag: 'optional'},
     {id: 'A-MoreErrorHandling', title: 'More error handling', tag: 'optional'},
-    {id: 'A-MoreTesting', title: 'More testing', tag: 'optional'}
+    {id: 'A-MoreTesting', title: 'More testing', tag: 'optional'},
+    {id: 'A-AiAssisted', title: 'Enhance using AI tools', tag: 'optional'}
   ]},
   {id: 'finalize_features'},
   {id: 'set_up_website'},

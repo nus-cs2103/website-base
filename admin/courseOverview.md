@@ -27,9 +27,9 @@
 **In each week, we cover topics that are most relevant to the project tasks** that you are expected to do around that time.
 
 **This way of 'jumping around' topics feels chaotic but consider the benefits**:
-* It allows you to start doing SE projects early, and do it iteratively too. That is, you can start with a small project from the very start and make it bigger progressively, learning from earlier mistakes, and getting multiple chances improve on previous attempts.
+* It allows you to start doing SE projects early, and do it iteratively too. That is, you can start with a small project from the very start and make it bigger progressively, learning from earlier mistakes, and getting multiple chances to improve on previous attempts.
 * Important SE aspects such as testing can be practiced from the very beginning. If we followed a sequential approach, you can only learn it near the end of the semester.
-* It lowers the risk of missing out some SE aspects altogether. For example, suppose your schedule got heavier in the second half of the semester, and you could barely follow the course during that half. You still go away with the basic knowledge of _all_ SE aspects rather than knowing some aspects fully and missing some other aspects altogether.
+* It lowers the risk of missing out some SE aspects altogether. For example, suppose your schedule got heavier in the second half of the semester, and you could barely keep up with the course during that half. You still go away with the basic knowledge of _all_ SE aspects rather than knowing some aspects deeply while missing some other aspects altogether.
 
 **To help you cope with the non-sequential progression of topics,** this course website contains two versions of the topics.
 

@@ -432,6 +432,12 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 * As before, we recommend (but not require) that each increment is done as a separate branch and merged to the `master` branch when ready fully done.
 </div>
 </div>
+{#====================================================================================================================#}
+<div id="pre_A-AiAssisted">
+{% set ip_ai_link = "[iP.AI route](../schedule/week2/project.html#:~:text=iP.AI%3A%20an%20AI%2Dassisted%20approach%20to%20the%20iP)" %}
+* If you are already following the {{ ip_ai_link }}, you may add the `A-AiAssisted` tag to the latest commit of your repo without any other work.
+* Otherwise (i.e., if you haven't been using AI tools in the iP until now), the increment below is an opportunity for you to use the iP to explore how AI tools can help with programming tasks. If you take it up, in places where you use code that you wrote with the help of AI tools, give some details (e.g., which tool you used how it helped) as a code comment. Alternatively, you can add an `AI.md` file, similar to the {{ ip_ai_link }}.
+</div>
 
 {#====================================================================================================================#}
 {# Steps
