@@ -747,7 +747,7 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_generate_new_jar">{{ "Release" if tic4002 else "Generate" }} a new JAR file</span>
 <div id="desc_generate_new_jar">
 
-* Generate a new JAR file using Gradle %%(Gradle can bundle the JavaFX third-party library into the jar file. If you do not bundle JavaFX with the JAR file, the application will not work in computers that don't have JavaFX installed)%%. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-a-jar-file) to find how.<br>
+* Generate a new JAR file using Gradle %%(Gradle can bundle the JavaFX third-party library into the jar file. If you do not bundle JavaFX with the JAR file, the application will not work in computers that don't have JavaFX installed)%%. Refer to the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html#creating-jar-files) to find how.<br>
 ==If the `.jar`  file is smaller than 5MB==, most likely JavaFX libraries are not inside it.
 * {% if tic4002 %}Make a new release on GitHub and upload the JAR file. You may use any appropriate version number for it.{% else %}There is no need to create a release in GitHub with this jar file (although you are welcome to).{% endif %}
 </div>
@@ -809,7 +809,7 @@ This activity is worth `2x2=4` participation points.
 {% if not (tic4001 or tic4002) %}
 * {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 {% endif %}
-1. **Double-check to confirm your iP meets the criteria for for full marks**:
+1. **Double-check to confirm your iP meets the criteria for full marks**:
   {{ embed_topic(baseUrl+"/admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 2. **Create a new jar file**
    * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20IntelliJ%20IDEA)).{% else %}in one of these ways:

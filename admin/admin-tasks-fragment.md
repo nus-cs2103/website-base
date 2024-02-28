@@ -5,7 +5,7 @@
 {% from "_course-" + course + "/weeklyAdminTasks-fragment.md" import weekly_admin_tasks with context %}
 
 <span id="teammates-link-recovery-tip">{{ icon_tip }} If you did not receive the submission link, you can get TEAMMATES to resend the link by going to [TEAMMATES link recovery page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery)
-  and entering your NUSNET email address. Remember to check your spam folder as well.</span>
+  and entering your NUSNET email address (try the `e______@u.nus.edu` before tyring the 'friendly' email address). Remember to check your spam folder as well.</span>
 {#====================================================================================================================#}
 {# Tasks
 {#====================================================================================================================#}

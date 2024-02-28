@@ -43,7 +43,6 @@
 ['WANG..HUAI', 'CS2103-F08-3', 'JerryWang0000'],
 ['AMAN..IDIN', 'CS2103-F08-4', 'amanzainal'],
 ['JOEL..FENG', 'CS2103-F08-4', 'joelgoh1'],
-['MA Y..IRUI', 'CS2103-F08-4', 'Ma-Yirui'],
 ['YAP .. XIN', 'CS2103-F08-4', 'yap-zong-xin'],
 ['FELI..YUAN', 'CS2103-F09-1', 'felixchanyy'],
 ['LIM ..RATO', 'CS2103-F09-1', 'lokidoki102'],

@@ -22,7 +22,7 @@ week6: [
   {id: 'get_familiar_with_the_code_base'}
 ],
 week7: [
-  {id: 'do_a_practice_iteration', deadline: 'midnight before the tutorial'},
+  {id: 'do_a_practice_iteration', deadline: get_date(date_w7_start, 6, time="23:59")},
   {id: 'update_website_aboutus_readme'},
   {id: 'update_the_ug'},
   {id: 'update_dg_user_stories_etc'},
@@ -35,9 +35,8 @@ week8: [
   {id: 'add_first_functionality_increment'}
 ],
 week9: [
-  {id: 'deliver_first_version'},
-  {id: 'wrap_up_first_version'},
-  {id: 'do_an_informal_demo', deadline: 'before the tutorial'}
+  {id: 'deliver_first_version', deadline: get_date(date_w9_start, 6, time="23:59")},
+  {id: 'start_updating_uml_diagrams'}
 ],
 week10: [
   {id: 'do_a_postmortem'},
@@ -49,11 +48,11 @@ week10: [
 ],
 week11: [
   {id: 'deliver_the_feature'},
-  {id: 'update_user_docs'},
-  {id: 'release_as_a_jar_file'},
+  {id: 'update_user_docs', deadline: get_date(date_w11_start, 6, time="23:59")},
+  {id: 'release_as_a_jar_file', deadline: get_date(date_w11_start, 6, time="23:59")},
   {id: 'wrap_up_penultimate_version'},
-  {id: 'demo_penultimate_version', deadline: 'before the tutorial'},
-  {id: 'get_ready_for_the_PED', deadline: 'before next weekly briefing'}
+  {id: 'demo_penultimate_version'},
+  {id: 'get_ready_for_the_PED'}
 ],
 week12: [
   {id: 'attend_the_PED', deadline: 'During the weekly briefing on ' + get_date(date_w12_start, time=""), graded: true},

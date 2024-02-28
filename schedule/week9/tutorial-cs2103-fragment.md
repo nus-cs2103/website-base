@@ -1,20 +1,10 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 
-#### {{ thumb(0, thumb_style="secondary") }} %%Demo v1.2%%
-
-<div class="indented-level2">
-
-%%The tutor to confirm the following has been done.%%
-
-{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_do_an_informal_demo", "Admin " + icon_embedding + " tP v1.2: Demo", "3") }}
-</div>
-<p/>
-
 #### {{ thumb(1) }} Demo measuring code _coverage_
 
 <include src="../../admin/common-tutorials-fragment.md#demo-test-coverage" />
 
-#### {{ thumb(2) }} Exercise: OODMs
+#### {{ thumb(2) }} Exercise: CCDs
 
 1. {{ timing_badge("before the tutorial", "danger") }} Do the following question. As before, you should ==_freehand-draw_== the diagram.<br>
   %%{{ icon_tip }} You can use the <trigger trigger="click" for="modal:context-target">_association class_ notation</trigger> in the answer.%%
@@ -42,7 +32,7 @@
    * Discuss a sample answer, as guided by the tutor.
 <box type="warning" seamless>
 
-When discussing OODMs, remember to avoid terms such as _design_, _implementation_, _variable_, _method_ as these are terms used in the _solution domain_ whereas an OODM is about the _problem domain_.
+When discussing CCDs, remember to avoid terms such as _design_, _implementation_, _variable_, _method_ as these are terms used in the _solution domain_ whereas an CCD is about the _problem domain_.
 
 * {{ bad }} "we can _design_ it this way"<br>
   {{ good }} "we can model it this way"

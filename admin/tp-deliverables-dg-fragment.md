@@ -85,18 +85,19 @@
   Ways to simplify diagrams:
   * **Omit less important details**. Examples:
     * a class diagram can omit minor utility classes, private/unimportant members; some less-important associations can be shown as attributes instead.
-    * a sequence diagram can omit less important interactions, self-calls.
+    * a sequence diagram can omit less important interactions, self-calls, method parameters, etc.<br>
+      Tip: You can use `...` (e.g., `foo(...)`) to indicate parameters have been omitted.
   * **Omit repetitive details** e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete `*Command` classes using a placeholder `XYZCommand`).
   * **Limit the scope of a diagram.** Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it.<span tags="m--cs2103 m--tic4002"> In particular, avoid showing lower-level details of multiple components in the same diagram unless strictly necessary e.g., note how the <trigger trigger="click" for="modal:ipWeek10-deleteSd">this sequence diagram</trigger> shows only the detailed interactions within the Logic component i.e., does not show detailed interactions within the model component.</span>
   * **Break diagrams into smaller fragments** when possible.
-    * If a component has a lot of classes, consider further dividing into sub-components (e.g., a Parser sub-component inside the Logic component). After that, sub-components can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.
+    * If a component has a lot of classes, consider further dividing into subcomponents (e.g., a Parser subcomponent inside the Logic component). After that, subcomponents can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.
     * You can use `ref` frames to break sequence diagrams to multiple diagrams.{% if cs2103 %} Similarly, `rake`s can be used to divide activity diagrams.
   * **Stay at the highest level of abstraction** possible e.g., note how <trigger trigger="click" for="modal:ipWeek10-archiSd">this sequence diagram</trigger> shows only the interactions between architectural components, abstracting away the interactions that happen inside each component.{% endif %}
   * **Use visual representations** as much as possible. E.g., show associations and navigabilities using lines and arrows connecting classes, rather than adding a variable in one of the classes.
   * For some more examples of what NOT to do, see <trigger trigger="click" for="modal:ipWeek10-umlExamples">here</trigger>.
 * **Integrate diagrams into the description.** Place the diagram close to where it is being described.
-* **Use code snippets sparingly.** The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only. You can also use pseudo code instead of actual programming code.
-* **Resize diagrams** so that the text size in the diagram matches the the text size of the main text of the diagram. See <trigger trigger="click" for="modal:ipWeek10-diagramSizeNegative">example</trigger>.
+* **Use code snippets sparingly.** The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only. You can also use pseudocode instead of actual programming code.
+* **Resize diagrams** so that the text size in the diagram matches the text size of the main text of the diagram. See <trigger trigger="click" for="modal:ipWeek10-diagramSizeNegative">example</trigger>.
 
 
 <modal large header="UML Diagrams: Negative Examples " id="modal:ipWeek10-umlExamples">

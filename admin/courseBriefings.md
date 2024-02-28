@@ -78,10 +78,32 @@
 
 <!-- ==================================================== -->
 
+<panel type="info" header="#### Week 7 Course Briefings" expanded>
+<div id="course-briefing-w7">
+
+<box type="warning" header="Noticed anything odd about the videos below?" seamless>
+
+As you watch the videos below, you might realize that while the voice is 'sort of' like prof's, the accent is certainly different from prof's. This is because in these videos we used an ==AI-driven text-to-speech tool== to create the narrations, as an experiment.
+</box>
+
+****tP Briefing (Part 2a -- v1.1, Workflow)****{.text-info}
+
+
+{{ panopto(desc="9 mins", "3de4b41b-758d-4784-aa26-b11e00f29217") }}
+
+****tP Briefing (Part 2b -- v1.2-v1.4, PE, Grading, Workload)****{.text-info}
+
+{{ panopto(desc="11 mins", "caa70bbc-8869-4f8b-a898-b11f00a3fd5a") }}
+
+</div>
+</panel>
+
+<!-- ==================================================== -->
+
 <panel type="info" header="#### More ..." expanded>
 <div id="course-briefing-w4">
 
-More course briefing videos (covering the remainder of the tP, exam, etc.) will be added in due course.
+More course briefing videos (covering the exam, etc.) will be added in due course.
 
 </div>
 </panel>

@@ -238,13 +238,6 @@ While on the topic of version numbers, **_milestones_ and _versions_ are not the
 In a similar vein, we use the version number to refer to the iteration as well, although they are not the same thing. So, when we say _iteration `{{ version_first }}`_, we mean _the iteration that ends in the milestone `{{ version_first }}`_ (that also happens to deliver the product version `{{ version_first }}`)
 
 </box>
-<box type="info" seamless icon=":fas-question:">
-
-**FAQ:** When is the {{ version_first }} deadline?{.text-info}
-
-Answer: The usual deadline for weekly project tasks apply %%i.e., try to do by midnight before the tutorial, latest by the
-{{ lecture_name }}.%%
-</box>
 <box type="tip" seamless>
 
 <span class="text-success">**Using parallel PRs yet?**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%
@@ -691,7 +684,9 @@ This deliverable links back to the following point made earlier:
   * {{ icon_tip }} Recommended: Prioritize above finer aspects of features, for example, as must-have (to implement in {{ version_first }}) and nice-to-have (i.e., to implement in {{ version_first }} only if there is time)<br>
    %%e.g., you can decide one date format (to accept in user commands) as must-have and two other formats is nice-to-have.%%
 
-* **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.
+* **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.<br>
+  {{ icon_Q }} Should the feature specification include features already in AB3?<br>
+  Yes. <popover content="The AB3 does not have a feature spec covering those features (and the UG does not cover all details of a feature). Furthermore, the current behavior of those feature may not be an exact match for your proposed product.">Why?</popover> But you may copy-paste parts of the UG onto your feature spec if that helps.
 
 * **Ensure feature-fit**: While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to peer-review feature details written by other team members and refine the overall product design together.
 
@@ -896,7 +891,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration</span>
+<span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration (`v1.1`)</span>
 <div id="desc_do_a_practice_iteration">
 
 
@@ -910,12 +905,11 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 Strongly recommended to do this as a team activity (preferably F2F, or else connected via Zoom/MST), at least until everyone has merged a few PRs for this iteration. That will help you proceed faster (e.g., a PR can be reviewed immediately after it has been created) and will also make it easy for you to help each other w.r.t. to the workflow matters.
 </box>
 
-* The documentation updates to be done in this iteration are described in the tP tasks in the sections below.
+* The documentation updates to be done in this iteration are described in the tP tasks in the sections below (i.e., tasks 2, 3, and 4).
 * Don't forget to 'wrap up' the milestone (as explained in the panel above), after the work is done.
-* Ideally, this should be done by the midnight before the tutorial, but failing that, before the next {{ lecture_name }}, as usual.
 </div>
 {#====================================================================================================================#}
-<span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration</span>
+<span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration (`{{ version_first }}`)</span>
 <div id="desc_plan_the_next_iteration">
 
 <div class="indented-level2">
@@ -1073,15 +1067,28 @@ At the same time, we recommend you should also play it safe by aiming to reach a
     Tests: [`seedu.addressbook.data.AddressBookTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java)
 </div>
 {#====================================================================================================================#}
-<span id="heading_deliver_first_version">{{ icon_team }} Deliver {{ version_first }}</span>
+<span id="heading_deliver_first_version">{{ icon_team }} Manage the iteration, and deliver {{ version_first }}</span>
 <div id="desc_deliver_first_version">
 
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
-* The product must be working although the functionality is basic.
+<box type="warning" seamless>
 
+Note that the product you deliver at the end of this iteration must be working although the functionality is basic.
+</box>
+
+* {{ icon_team }} **Manage the iteration** `{{ version_first }}`, and reach the milestone `{{ version_first }}` (which delivers product version `{{ version_first }}`) as explained in the panel below.
+
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
+
+* **Wrap up the iteration/milestone**. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_first }}` (i.e., you can still get a 'working product' without them).
+
+* **Do a release on GitHub**, when the product `{{ version_first }}` is ready. Requirements:
+  * **Write a fairly detailed _Release Note_** in the text field GitHub provides for the description of the release. In particular, describe what has been changed (compared to AB3). This is just an itemized list of _What's New_ -- no need to be as elaborate as a user guide.<br>
+    **Include screenshots** (or screen recordings) of your product in action, featuring the changes you've done.
+  * **Upload the JAR file** as well.
 </div>
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 * When the {{ version_first }} is ready, do a release on GitHub. Remember to upload the jar file as well.
 * Wrap up the milestone on GitHub.
@@ -1093,31 +1100,48 @@ At the same time, we recommend you should also play it safe by aiming to reach a
 <span id="heading_wrap_up_first_version">{{ icon_team }} Wrap up {{ version_first }}</span>
 <div id="desc_wrap_up_first_version">
 
-* {{ icon_team }} **Manage the milestone** {{ version_first }} as explained in the panel below.
-
-{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
-
 * **Wrap up the milestone** using a git tag `{{ version_first }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, you can reassign them to a future milestone, provided they are not _essential_ for the `{{ version_first }}` (i.e., the you can still get a 'working product' without them).
 
-<div tags="m--cs2103 m--tic4002">
+</div>
+{#====================================================================================================================#}
+<span id="heading_start_updating_uml_diagrams">{{ icon_individual }} Start updating UML diagrams in the DG</span>
+<div id="desc_start_updating_uml_diagrams">
 
-* Do a release on GitHub. Uploading a JAR file to GitHub is optional.
+<box type="tip" seamless>
+
+This is a good time to get familiar with the diagramming tools used by the tP.
+</box>
+
+* {{ icon_individual }} **Each member is expected to update at least one UML diagram in the DG**, to match the changes you've done in `{{ version_first }}`. You may do this towards the end of `{{ version_first }}`, or soon after you finish it.
+* Updating the DG text to match the diagrams is optional (it can be done in `{{ version_penultimate }}`).
+* FYI, the panel below has some DG tips, some of which are related to drawing diagrams.
+
+<div class="indented">
+<panel type="light" minimized>
+<div slot="header" class="card-title">
+
+<span> {{ icon_tip }} Admin {{ icon_embedding }} tP Deliverables → DG → Tips</span>
+</div>
+<div id="dgTips">
+
+<include src="tp-deliverables-dg-fragment.md#dgTips" />
+</div>
+</panel>
+<p/>
 </div>
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_first }}{{ ' (in the following lecture)' if tic4001 or tic4002 }}</span>
+<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_first }}</span>
 <div id="desc_do_an_informal_demo">
 
 <div id="demo">
-<div tags="m--cs2103 m--cs2113">
 
-* Run your app using the latest released version `{{ version_first }}` <span tags="m--cs2103 m--tic4002">(or `{{ version_first }}b`, if applicable)</span>. {% if cs2113 %}Take screenshots of each available feature in action. Add those screenshots to the shared workspace.<br>You can also add the screenshots to your _project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`, and reuse them as necessary in the documentation.{% else %}<br>Take screenshots of ==each updated feature in action== (if the feature is not obvious from the screenshot, you can annotate the screenshot to draw attention to where the feature appears in the screenshot).<br>Add those screenshots to your _project notes_ document (the same document specified in [this page](teamList.md)) with an appropriate heading e.g., `{{ version_first }} features demo`.<br> Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.{% endif %}
-</div>
-<div tags="m--tic4001 m--tic4002">
-
-* During the following lecture, do an informal demo of your {{ version_first }} to the profs.
-</div>
+1. **Run your app using the latest released version `{{ version_first }}`** <span tags="m--cs2103">(or `{{ version_first }}b`, if applicable)</span>. {% if cs2113 %}
+1. **Take screenshots** of each available feature in action.
+1. **Add those screenshots to the shared workspace.**<br>You can also add the screenshots to your _project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`, and reuse them as necessary in the documentation.{% else %}
+1. **Take screenshots** of ==each updated feature in action== (if the feature is not obvious from the screenshot, you can annotate the screenshot to draw attention to where the feature appears in the screenshot).
+1. **Add those screenshots to your _project notes_ document** (the same document specified in [this page](teamList.md)) with an appropriate heading e.g., `{{ version_first }} features demo`.<br> Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.{% endif %}
 </div>
 </div>
 {#====================================================================================================================#}

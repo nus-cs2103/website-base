@@ -9,3 +9,9 @@
 * **We have not scheduled any _regular_ course activities during recess week**. But you may be asked to catch up on missed activities in the previous weeks %%e.g., late submissions for the iP%%.
 </box>
 
+<panel type="info" header="##### ==[MUST-WATCH]== Course Briefing Segment - tP (Part 2)" expanded >
+
+<include src="../../admin/courseBriefings.md#course-briefing-w7" />
+
+</panel>
+<p/>
