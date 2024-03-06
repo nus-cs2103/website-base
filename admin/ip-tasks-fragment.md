@@ -741,7 +741,7 @@ This activity is worth `2x2=4` participation points.
 1. **Submit your evaluation** using the survey.
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).<br>
    If _both_ iPs crash or fail severely in a similar fashion, the problem may be on your side. Please contact the teaching team to ask how to proceed.
-1. %%**Take note of the effort required for a _typical_ iP**: After seeing two more iPs, you should now be in a better position to estimate how much you need to do for the tP (reason: the expected workload for the tP is that each team member puts in about one _typical_ iP worth of effort).%%
+1. %%**Take note of the effort required for a _typical_ iP**: After seeing two more iPs, you should now be in a better position to estimate how much you need to do for the tP (reason: the expected workload for the tP is estimated with reference to the effort required for a _typical_ iP).%%
 </div>
 {#====================================================================================================================#}
 <span id="heading_generate_new_jar">{{ "Release" if tic4002 else "Generate" }} a new JAR file</span>
@@ -815,7 +815,10 @@ This activity is worth `2x2=4` participation points.
    * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20IntelliJ%20IDEA)).{% else %}in one of these ways:
      * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
      * Else: you can use IntelliJ.{% endif %}
-   * The JAR file should be ==cross-platform and should work in a computer that has Java 11==.
+   * The JAR file should be ==cross-platform and should work in a computer that has Java 11== (but no other Java version). To avoid version compatibility issues, we strongly recommend the following approach:
+      1. Open a terminal window, and navigate to the root of your project folder.
+      1. Run the `java -version` command to confirm the terminal is using Java 11.
+      1. Run the `./gradlew clean shadowJar` command to create the JAR file.
 3. **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
    1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
    1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>

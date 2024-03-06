@@ -22,7 +22,7 @@ week6: [
   {id: 'get_familiar_with_the_code_base'}
 ],
 week7: [
-  {id: 'do_a_practice_iteration', deadline: get_date(date_w7_start, 6, time="23:59")},
+  {id: 'do_a_practice_iteration', deadline: get_date(date_w7_start, 13, time="23:59")},
   {id: 'update_website_aboutus_readme'},
   {id: 'update_the_ug'},
   {id: 'update_dg_user_stories_etc'},

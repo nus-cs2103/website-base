@@ -142,9 +142,9 @@ e.g., the UI continues to show it after an item was deleted in the most recent c
 </div>
 </div>
 <div id="common-mistakes">
-<box type="warning" seamless>
+<box type="important" seamless>
 
-<span class="text-warning">**Lookout for these mistakes**</span> which were the most common in previous runs of the course:
+<span class="text-danger">**Lookout for these mistakes**</span> which were the most common in previous runs of the course:
 
 1. Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/{{ "basic" if cs2113 else "intermediate" }}.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should) of Java method header comments.
 1. Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject).<br>
@@ -654,35 +654,58 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 </div>
 <div tags="m--cs2103">
 
-**Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next {{ lecture_name }}), but given the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w7_start, 2) }}) to submit this.
+* **Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next {{ lecture_name }}), but given the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w7_start, 2) }}) to submit this.
 
-This deliverable links back to the following point made earlier:
+* **Objective:** This deliverable links back to the following point made earlier:
+  > 1. ...
+  > 2. we should start each iteration with a clear, detailed, and precise plan of the intended outcome of that iteration.
 
-> 1. ...
-> 2. we should start each iteration with a clear, detailed, and precise plan of the intended outcome of that iteration.
+  Furthermore, this deliverable forces you to make some fine-grained product design decisions early, thus giving you a better idea about the complexities that lies ahead, and hence, a better sense of the effort that will be required.
 
-* **Collate into a document the _complete_ detailed description of the intended behavior of the product at `{{ version_first }}`.**
+* **Deliverable: Collate into a document the _complete_ detailed description of the intended behavior of the product at `{{ version_first }}`.**
   * The intended audience for this document is team members, not end users (i.e., this is not a user guide).
   * Use a medium that is convenient for collaboration (e.g., a GoogleDoc).
   * The content need not be polished. Don't waste time in formatting, copy editing etc.
 * **For each feature, specify the following:**
-  * What it does
-  * The precise command format
-  * Example commands %%(to show how the command is used)%%
-  * Acceptable values for each parameter %%e.g.,<br>
-    If a command takes a person name as a parameter, what inputs are accepted as valid person names?<br>
-    Which formats are allowed for dates, times, telephone numbers, etc.?<br>
-    How does extra/leading/trailing spaces affect the value -- for instance is 'John Doe' same as 'John&nbsp;&nbsp;&nbsp;Doe'?<br>
-    How does UPPER/lower case affects values -- is `John Doe` same as `john doe`?<br>
-    What rules are used to determine if two contacts are duplicates?%%<br>
-    * It's not enough to state 'valid name'; you need to specify what rules will be used to determine if the input is a valid name.
-    * Yes, making these decisions is not easy -- and that's why we want you to think about them now rather than later. Feel free to discuss these validation rules in the forum.
-  * Precise expected outputs when the command succeeds %%e.g., changes in the GUI, messages shown to the user%%
-  * Precise expected outputs when the command fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
-  * Recommended: Also note down the rationale behind decisions %%e.g., reason behind the rules applied for deciding if a certain input is 'valid'%%
-  * Relevant UI mock-ups %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%
-  * {{ icon_tip }} Recommended: Prioritize above finer aspects of features, for example, as must-have (to implement in {{ version_first }}) and nice-to-have (i.e., to implement in {{ version_first }} only if there is time)<br>
-   %%e.g., you can decide one date format (to accept in user commands) as must-have and two other formats is nice-to-have.%%
+
+<div class="indented-level1">
+<box>
+
+**Purpose**: What it does
+
+**Command format**: The precise command format of the command.<br>
+Example commands %%(to show how the command is used)%%
+
+**For each parameter**, specify:
+
+* Acceptable values %%e.g., If a command takes a person name as a parameter, what inputs are accepted as valid person names?%% Some example aspect to consider:
+  * Which formats are allowed for dates, times, telephone numbers, etc.?
+  * How does extra/leading/trailing spaces affect the value -- for instance is 'John Doe' same as 'John&nbsp;&nbsp;&nbsp;Doe' (note the multiple spaces in the second name)?
+  * How does UPPER/lower case affects values -- is `John Doe` same as `john doe`?
+  * It's not enough to state 'valid name'; you need to specify what rules will be used to determine if the input is a valid name.
+* Error message if the value is not acceptable
+* Rationale for any the validity rule %%e.g., why only certain characters are allowed for person names?%%
+
+Yes, making these decisions is not easy -- and that's why we want you to think about them now rather than later. Feel free to discuss these validation rules in the forum.
+
+**Outputs**: Precise expected outputs when the command,
+* succeeds %%e.g., changes in the GUI, messages shown to the user%%
+* fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
+
+**Duplicate handling:** What rules are used to determine if two contacts are duplicates? %%e.g., is having the same name enough, or all details need to be the same?%%<br>
+How does the application react to such duplicate entries? Reject or accept? Why?
+
+**Relevant UI mock-ups**, unless the UI will be exatly the same as AB3 %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%
+
+---
+
+{{ icon_tip }} **Recommended: Prioritize above finer aspects of features**, for example, as must-have (to implement in {{ version_first }}) and nice-to-have (i.e., to implement in {{ version_first }} only if there is time)<br>
+   %%e.g., you can decide one date format (to accept in user commands) as must-have and two other formats as nice-to-have.%%
+</box>
+</div>
+
+* **It is OK to make compromises** when making product decisions as every design option has costs and benefits, and sometimes, costs outweigh the benefits.<br>
+For example, it is fine to restrict the person name to a certain length and a character set even if it is theoretically possible for those restrictions to conflict with some real-world person names. But you need to be aware of such conflicts, justify the restriction (e.g., ease of implementation/display), and know how users can work around such a conflict should they encounter it %%(e.g., if you app doesn't allow two contacts to have the same name but the user need to store two contacts which are different people with the same name, what should the user do?)%%.
 
 * **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.<br>
   {{ icon_Q }} Should the feature specification include features already in AB3?<br>
@@ -738,20 +761,19 @@ This deliverable links back to the following point made earlier:
 1. Update the team repo by following the workflow given below:
 
 {{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3") }}
+<p/>
 
-</box>
-
-<box type="tip" seamless>
-
-**How to go about editing documentation files?**{.text-success}<br>
-e.g., How to preview changes locally before committing/pushing?
-
-Guidance on documentation can be found in the relevant section of the Developer Guide of your team project website that you set up earlier. Given below is a shortcut, for your convenience:
+**Guidance on using documentation tools** (e.g., How to preview changes locally before committing/pushing) can be found in the relevant section of the Developer Guide of your team project website that you set up earlier. Given below is a shortcut, for your convenience:
 
 * If your project is using **Jekyll** for documentation, refer [this Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=github.io/myrepo-,Updating%20documents,-Jekyll%20uses%20kramdown).
 * If your project is using **Markbind** for documentation, refer [this MarkBind Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/markbind-forked-sites.html#:~:text=latest%20%2D%2Dsave%2Ddev-,Updating%20documents,-MarkBind%20is%20a).
-
 </box>
+
+<panel type="seamless" header="**FAQ:** When all members are updating the same document, can we create one issue and assign it to all?">
+
+**A:** In the tP (in which our grading scripts track issues assigned to each member), it is better to create separate issues so that each person's work can be tracked separately. For example, suppose everyone is expected to update the User Guide (UG). You can create separate issues based on which part of the UG will be updated by which person e.g., `List-related UG updates` (assigned to John), `Delete-related UG updates` (assigned to Alice), and so on.
+</panel>
+
 
 <include src="tp-tasks-fragment.md#common-mistakes" />
 
@@ -780,7 +802,6 @@ Guidance on documentation can be found in the relevant section of the Developer 
 
   * Add a UI mockup of your intended final product.
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
-    {{ icon_tip }} If you did the above update correctly, UI mock up and profile photos should appear in your project website and this [**Project List Page**]({{ url_team_list }}).<br>
     {{ info }} The UI mock up can be a hand-drawn sketch or created using a tool such as PowerPoint, PlantUML, Figma, etc. <br>
     {{ icon_Q }} Can the AB3 screenshot used for this? Only in the unlikely case that your {{ version_first }} UI looks exactly the same as AB3.
 
@@ -791,9 +812,14 @@ Guidance on documentation can be found in the relevant section of the Developer 
   * Acknowledge the original source of the code e.g.,<br>
     `This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).`
 
+<box type="tip" seamless>
+
+If you did the above updates correctly, your UI mock up and profile photos should appear in your project website and this [**Project List Page**]({{ url_team_list }}).
+</box>
+
 ****B: Also update site-wide settings****, as necessary:
 
-* You need to update the `AB-3` in the top navigation bar of your project website (it's in `docs\_sass\minima\_base.scss` if using Jekyll, and in `docs\_markbind\layouts\default.md` if using MarkBind).<br>
+* You need to update the `AB-3` in the top navigation bar of your project website (it's in `docs\_config.yml` if using Jekyll, and in `docs\_markbind\layouts\default.md` if using MarkBind).<br>
 
 * More info on updating site-wide settings such as the above:
   * If using Jekyll: follow [the Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=the%20final%20outcome.-,Site%2Dwide%20settings,-Typically%2C%20the%20_config).<br>
@@ -801,13 +827,20 @@ Guidance on documentation can be found in the relevant section of the Developer 
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
+<span id="heading_update_the_ug">{{ icon_individual }} %%[Optional] Update the UG%%</span>
 <div id="desc_update_the_ug">
 
-* {% if cs2103 %}**Update the UG** in your tP repo. While you can reuse some content from the _feature specification_ that you did earlier, note that UG is intended for end users, and hence the format, level of details, pitching etc. need to match that audience. For example, the UG should not contain all the nitty-gritty details that is in the feature spec.<br>
-  **You can use the current AB3 UG for guidance** on the format/flow/tone/level-of-details etc.
-  {% else %}**Move the draft UG content into the User Guide page** in your repository. Update the content/structure/formatting as necessary, to match the final form of the UG. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).{% endif %}<br>
-  As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
+<box type="info" seamless>
+
+Doing this task now means you'll have less to do later, but it is OK if you want to delay this until you have implemented the features.
+</box>
+
+* {% if cs2103 %}**Update the UG** in your tP repo. While you can reuse some content from the _feature specification_ that you did earlier, note that UG is intended for end users, and hence the format, level of details, pitching etc. need to match that audience. For example, the UG should not contain all the nitty-gritty details that is in the feature spec.
+* **You can use the current AB3 UG for guidance** on the format/flow/tone/level-of-details etc.
+  {% else %}**Move the draft UG content into the User Guide page** in your repository. Update the content/structure/formatting as necessary, to match the final form of the UG. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).{% endif %}
+* As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we strongly recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
+* **The scope of this update can be `{{ version_first }}`** i.e., only update features that you plan to have in that version.<br>
+  Furthermore, as you haven't implemented `{{ version_first }}` yet, this update will be somewhat speculative. The content may need to be tweaked later if the actual implementation of the feature deviated from the current plan.
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
   <include src="tp-tasks-fragment.md#divideDocs"/>
@@ -839,7 +872,7 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 <include src="tp-tasks-fragment.md#divideDocs" />
 </div>
 
-* **Add the following to the DG**, based on your project notes from the previous weeks.<br>
+* **Add the following to the DG**, based on your project notes from the previous weeks. No need to update other sections, for now.<br>
   {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.{% if not tic4001 %}
@@ -891,22 +924,25 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration (`v1.1`)</span>
+<span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration (`{{ version_practice }}`)</span>
 <div id="desc_do_a_practice_iteration">
 
+<box type="info" seamless>
 
-* To get some practice of doing project iterations, do this week's tP work (which are just updates to various documents, no changes to functionality) to reach the milestone `{{ version_practice }}`. The panel below explains how to use GitHub to do a project iteration.
+**A secondary purpose of this iteration `{{ version_practice }}` is to practice the required workflow** while modifying some documentation files, before you start updating the code in the following iteration.
+ The panel below explains how to use GitHub to do a project iteration.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
+</box>
 
 
 <box type="tip" seamless>
 
-Strongly recommended to do this as a team activity (preferably F2F, or else connected via Zoom/MST), at least until everyone has merged a few PRs for this iteration. That will help you proceed faster (e.g., a PR can be reviewed immediately after it has been created) and will also make it easy for you to help each other w.r.t. to the workflow matters.
+**Strongly recommended to do this as a team activity** (preferably F2F, or else connected via Zoom/MST), at least until everyone has merged a few PRs for this iteration. That will help you proceed faster (e.g., a PR can be reviewed immediately after it has been created) and will also make it easy for you to help each other w.r.t. to the workflow matters.
 </box>
 
-* The documentation updates to be done in this iteration are described in the tP tasks in the sections below (i.e., tasks 2, 3, and 4).
-* Don't forget to 'wrap up' the milestone (as explained in the panel above), after the work is done.
+* **Tasks 2, 3, and 4 (given in subsequent sections) are the documentation updates to be done** in this iteration.
+* **Don't forget to 'wrap up' the milestone** (as explained in the panel above), after the work is done.
 </div>
 {#====================================================================================================================#}
 <span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration (`{{ version_first }}`)</span>
@@ -1038,8 +1074,7 @@ Each mini iteration should deliver a working product, not just do half of the ta
 
 {{ embed_topic("tp-tasks-fragment.md#desc_plan_the_next_iteration", "%%**[Repeated from last week]**%% Admin " + icon_embedding + " tP: Week 7: Plan the next iteration", "1", status="expanded", indent="1") }}
 
-* **{{ icon_important_big_red }} Iteration deadline: midnight before week 9 tutorial** (i.e., in about 1.5 weeks). Do your best to have a demo-able product by the midnight before the following week's tutorial (i.e., the soft deadline for weekly tP tasks). That way, the period between that deadline and the
-{{ lecture_name }} (i.e., soft deadline for weekly tP tasks) can be used as a buffer in case you overrun the soft deadline.
+* **{{ icon_important_big_red }} Iteration deadline: week 9 Thu 23:59** (i.e., in about 2 weeks).
 * **Push as hard as you can afford to** in this iteration: While we have kept the expectations bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_first }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
 At the same time, we recommend you should also play it safe by aiming to reach a _smallest possible_ version early and squeeze more in only if there is time left.
 
@@ -1049,6 +1084,16 @@ At the same time, we recommend you should also play it safe by aiming to reach a
 
 * **Note: you are required to follow the forking workflow** for at least for the first part of this iteration:
 {{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="1") }}
+
+<panel type="seamless" header="**FAQ: Do we have to keep updating tests when we update functional code?**">
+
+There are several options you can choose from:
+
+1. Update/add tests every time you change functional code. This is what normally happens in stable production systems. For example, most OSS projects will not accept a PR that has failing tests or not enough new tests to cover the new functional code.
+2. Disable failing tests temporarily until the code is stable. This is suitable when the functional code is in a highly volatile state (e.g., you are still experimenting with the implementation). The benefit is that you avoid the cost of writing tests for functional code that might change again soon after. Some costs: (a) harder to detect regressions during the period tests are disabled (b) testing work pile up which could distort your estimate of real progress (c) forgetting to enable the tests in time<br>
+  This is still a viable option during some stages of a tP e.g., during the early part of an iteration, or while a PR is still in 'draft' state (i.e., for getting early feedback from the team).
+4. Decide certain tests are not worth the effort to maintain, and delete them permanently. Result: Less test code to maintain but higher risk of undetected regressions.
+</panel>
 </div>
 {#====================================================================================================================#}
 <span id="heading_add_junit_tests">{{ icon_individual }} Add some JUnit Tests</span>

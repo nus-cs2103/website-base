@@ -3,6 +3,7 @@
 
 
 {% call show_admin_summary() %}
+1. Submit weekly exercises
 1. Submit the quiz
 
 {{ icon_project }} **Project:**

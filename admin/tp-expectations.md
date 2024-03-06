@@ -288,7 +288,7 @@ In fact, here is the grading criterion for the individual project effort:
 <box>
 
 **:thinking: How much testing is enough?** We expect you to decide. As you learn different types of testing and what they try to achieve, you should decide how much of each type is worth having. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br>
-There is no requirement for a minimum test coverage level. Note that in a high-end production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. ==Caveat: The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.==
+There is no requirement for a minimum test coverage level. Note that in a high-end production environment you might be required to have high levels of test coverage (e.g., 90%). In this project, it can be less. ==Caveat: The weaker your tests are, the higher the risk of undetected bugs/regressions, which will cost you marks if not detected/fixed before the final submission.==
 </box>
 </div>
 
@@ -335,7 +335,7 @@ Here is a non-exhaustive list of team-tasks:
 
 _Roles_ indicate aspects you are in charge of and responsible for. %%E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.%%
 
-<panel type="seamless" header="{{ icon_example }} Recommended roles and responsibilities">
+<panel type="seamless" header="{{ icon_example }} Example roles and responsibilities">
 
 This is a non-exhaustive list; you may define additional roles.
 
