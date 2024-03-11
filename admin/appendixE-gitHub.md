@@ -22,7 +22,7 @@ Create a personal GitHub account if you don't have one yet.
 3. ==Please do not change your GitHub username during the semester/exam/grading period== as it can cause our auto-grading scripts to miss your GitHub activities. If you change your GitHub username during that period due to an unavoidable reason, please let us know immediately.
 
 <modal large header="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
-  <include src="tp-deliverables-website-fragment.md#profile-photo"/>
+<include src="tp-deliverables-website-fragment.md#profile-photo"/>
 </modal>
 
 </div>
@@ -152,20 +152,20 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 <box>
 
 **Issue type** labels:
-* `type.Epic` : A big feature which can be broken down into smaller stories e.g. search
-* `type.Story` : A user story
+* `type.Epic`: A big feature which can be broken down into smaller stories e.g. search
+* `type.Story`: A user story
 * `type.Enhancement`: An enhancement to an existing story
-* `type.Task` (or `type.Chore`) : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)
-* `type.Bug` : A bug
+* `type.Task` (or `type.Chore`): Something that needs to be done, but not a story, bug, or an epic. %%e.g. Move testing code into a new folder%%
+* `type.Bug`: A bug
 
 </box>
 
 <box>
 
 **Priority** labels:
-* `priority.High` : Must do
-* `priority.Medium` : Nice to have
-* `priority.Low` : Unlikely to do
+* `priority.High`: Must do
+* `priority.Medium`: Nice to have
+* `priority.Low`:Unlikely to do
 
 </box>
 
@@ -177,7 +177,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * `severity.VeryLow` : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.
   ==Only cosmetic problems should have this label==.
 * `severity.Low` : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.
-* `severity.Medium` : A flaw that causes occasional inconvenience to some users but they can continue to use the product.
+* `severity.Medium` : A flaw that causes occasional inconvenience to some users, but they can continue to use the product.
 * `severity.High` : A flaw that affects most users and causes major problems for users. i.e., only problems that make the product ==almost unusable for most users== should have this label.
 
 {{ icon_info }} When applying for documentation bugs, replace _user_ with _reader_.
@@ -186,7 +186,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 </span>
 
-* Create following milestones : <span tags="m--cs2103">`v1.1`, </span>`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}`
+* Create following milestones : <span tags="m--cs2103">`v1.1`,</span>`{{ version_first }}`, `{{ version_penultimate }}`,`{{ version_final }}`
 
 * You may configure other project settings as you wish. e.g. more labels, more milestones
 
@@ -226,10 +226,10 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 {{ icon_important_big_red }} **Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy %%(in Admin: Appendix B)%%</trigger>**, in particular, ==how to give credit when you reuse code from the Internet or classmates==:
 
 <modal large header="Admin {{ icon_embedding }} Appendix E → Setting Git Username to Match GitHub Username" id="modal:appE-gitUsername">
-  <include src="tools.md#git-username"/>
+<include src="tools.md#git-username"/>
 </modal>
 <modal large header="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" id="modal:appE-reusePolicy">
-  <include src="appendixB-policies.md#policy-reuse"/>
+<include src="appendixB-policies.md#policy-reuse"/>
 </modal>
 
 * **Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project. Normally, we expect you to follow the forking workflow at least until (and including) {{ version_first }} after which you may tweak the workflow {{ version_penultimate }}. However, after following the forking workflow for 2-3 PRs (per person) in {{ version_first }}, if you are confident that you can follow the forking workflow well, you may switch to the <trigger trigger="click" for="modal:appErecommendedWorkflow-featurebranchworkflow">feature branch workflow</trigger> workflow <tooltip content="i.e., without waiting for the end of {{ version_first }}">earlier</tooltip>.
@@ -242,7 +242,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
     * If you think all PRs should be reviewed by someone other than the PR author before they are merged, also tick the `Require pull request reviews before merging` option.
 * **Create issues to represent project tasks** so that they can be tracked using the issue tracker features.
 * **Create a PR when you implement a project task** that updates the code.<br>
-  =={{ icon_alert }} Don't forget to send each PR from a separate branch, as that is an essential part of the forking workflow.==<br>
+  =={{ icon_alert }} Don't forget to send each PR from a separate branch of your fork (i.e., not the `master` branch), as that is an essential part of the forking workflow.==<br>
   {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.<br>
 * **Get team members to review PRs.** A workflow without PR reviews is a risky workflow.
   * Follow the [_Best practices for reviewing PRs_ @SE-EDU/guides](https://se-education.org/guides/guidelines/PRs-reviewing.html).<br>
@@ -256,7 +256,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * **Do not merge PRs failing <tooltip content="Continuous Integration e.g., GitHub Actions">CI</tooltip>.** The CI status of a PR is reported at the bottom of the {{ show_as_rounded_tab(":octicon-comment-discussion: conversation")}} tab of the PR page. Here's an example:<br>
   ![](images/gitHubPrStatus.png)
   * **If there is a failure**, you can click on the `Details` link in corresponding line to find out more about the failure. Once you figure out the cause of the failure, push a fix to the PR.
-  * An exception to this guideline is when the failure is confirmed to be due to something you can afford to ignore %%e.g., when CI fails due to a drop in code coverage but the code section that is causing the coverage drop is not practical to be covered by automated tests or you plan to write the relevant tests at a later time%%.
+  * An exception to this guideline is when the failure is confirmed to be due to something you can afford to ignore %%e.g., when CI fails due to a drop in code coverage but the code section that is causing the coverage drop is not practical to be covered by automated tests, or you plan to write the relevant tests at a later time%%.
 * **Avoid rebasing/squashing** when merging PRs. While both are good alternatives to the default behavior of creating a merge commit, rebasing/squashing can affect the timestamp of the commits, which can interfere with the progress tracking that we do for grading purposes %%i.e., the commits can get detected under a week different from the week they were actually done%%.
 * **After merging a PR**,
   * **close the corresponding issue**.<br>
@@ -300,7 +300,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 * If you are unsure if a certain adjustment is allowed, you can check with the teaching team first.
 
 <modal header="Admin {{ icon_embedding }} Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
-  <include src="tp-expectations.md#testing-expectations"/>
+<include src="tp-expectations.md#testing-expectations"/>
 </modal>
 </div>
 
@@ -330,13 +330,13 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 * **Formalize the project plan** by assigning relevant issues to the corresponding milestone.
 
-* **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonably sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked. 
+* **Define project tasks as issues**. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonably sized, standalone tasks.  ==Create issues for each== of those tasks so that they can be tracked.
   * A typical task should be small enough for one person to do in a few hours. %%eg.,%%
-    * %%{{ icon_dislike }} Bad (reasons: not a one-person task, not small enough): `Write the Developer Guide`%%
-    * %%{{ icon_like }} Good: `Update class diagram in the Developer Guide for {{ version_final }}`%%
+    * %%{{ icon_dislike }} Bad (reasons: not a one-person task, not small enough):`Write the Developer Guide`%%
+    * %%{{ icon_like }} Good:`Update class diagram in the Developer Guide for {{ version_final }}`%%
 
-  * There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. %%eg.,%%
-    * %%{{ icon_dislike }} Bad:`Implement parser ` (reason: too big).%%
+  * There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. %%eg.,%%
+    * %%{{ icon_dislike }} Bad:`Implement parser`(reason: too big).%%
     * %%{{ icon_like }} Good:`Implement parser support for adding events`%%
 
   * Do not track things taken for granted. %%e.g., `push code to repo` should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.%%
@@ -354,13 +354,13 @@ In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and 
 
 ==Given below are the conditions to satisfy for a milestone to be considered _properly managed_==:
 
-**Planning a Milestone** (to do within the first week of the iteration):<br>
+****Planning a Milestone**** (to be done within the first week of the iteration):<br>
 
 * **Issues assigned to the milestone, team members assigned to issues**: Used [GitHub milestones](https://help.github.com/articles/about-milestones/) to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones. Ensured issues are assigned to team members. %%Note that you can change the milestone plan along the way as necessary.%%
 
 * **Deadline set for the milestones** (in the GitHub milestone). %%Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.%%
 
-**Wrapping up a Milestone**:<br>
+****Wrapping up a Milestone****:<br>
 
   * **A working product tagged** with the correct tag (e.g. `{{ version_penultimate }}`) and is pushed to the main repo or a **product _release_ done on GitHub** ([example](https://github.com/se-edu/addressbook-level3/releases/)).
 

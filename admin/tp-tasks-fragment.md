@@ -142,14 +142,15 @@ e.g., the UI continues to show it after an item was deleted in the most recent c
 </div>
 </div>
 <div id="common-mistakes">
-<box type="important" seamless>
+<box type="important" seamless icon=":fas-skull:">
 
 <span class="text-danger">**Lookout for these mistakes**</span> which were the most common in previous runs of the course:
 
-1. Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/{{ "basic" if cs2113 else "intermediate" }}.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should) of Java method header comments.
-1. Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject).<br>
+* **Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/{{ "basic" if cs2113 else "intermediate" }}.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should)** of Java method header comments.{ icon="fas-skull" i-class="text-danger" }
+* **Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject)**.<br>
   Caution: This is <span class="text-danger">very hard to rectify later</span>, after PR containing the commits have been merged.<br>
   %%Reason: While Git allows editing past commits, it changes their timestamp, which affects your weekly code contribution stats (which are factored into evaluating the consistency of your coding work over the project duration)%%
+* **Forgetting to do each PR from a separate branch** (i.e., send PR from the `master` branch) of your fork. This error means your PR will not be considered as _following the forking workflow correctly_.
 </box>
 </div>
 {#====================================================================================================================
@@ -819,7 +820,7 @@ If you did the above updates correctly, your UI mock up and profile photos shoul
 
 ****B: Also update site-wide settings****, as necessary:
 
-* You need to update the `AB-3` in the top navigation bar of your project website (it's in `docs\_config.yml` if using Jekyll, and in `docs\_markbind\layouts\default.md` if using MarkBind).<br>
+* You need to update the `AB-3` in the top navigation bar of your project website (it's in `docs\_config.yml` and `docs/_sass/minima/_base.scss` if using Jekyll; in `docs\_markbind\layouts\default.md` if using MarkBind).<br>
 
 * More info on updating site-wide settings such as the above:
   * If using Jekyll: follow [the Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=the%20final%20outcome.-,Site%2Dwide%20settings,-Typically%2C%20the%20_config).<br>
@@ -1129,8 +1130,9 @@ Note that the product you deliver at the end of this iteration must be working a
 * **Wrap up the iteration/milestone**. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_first }}` (i.e., you can still get a 'working product' without them).
 
 * **Do a release on GitHub**, when the product `{{ version_first }}` is ready. Requirements:
-  * **Write a fairly detailed _Release Note_** in the text field GitHub provides for the description of the release. In particular, describe what has been changed (compared to AB3). This is just an itemized list of _What's New_ -- no need to be as elaborate as a user guide.<br>
-    **Include screenshots** (or screen recordings) of your product in action, featuring the changes you've done.
+  * **==Write a fairly detailed _Release Note_==** in the text field GitHub provides for the description of the release. In particular, describe what has been changed (compared to AB3). This is just an itemized list of _What's New_ -- no need to be as elaborate as a user guide.<br>
+    **Include screenshots** (or screen recordings) of your product in action, featuring the changes you've done.<br>
+    {{ icon_important_big_red }} <span class="text-danger">These release notes will be checked by the teaching team</span> to verify (a) that they are written reasonably well, and, (b) that the features mentioned in there show the product has reached the MVP level of functionality.
   * **Upload the JAR file** as well.
 </div>
 <div tags="m--cs2113">

@@ -60,7 +60,7 @@ Some ways you can earn weekly participation points:
 
 <div class="indented">
 
-Low attendance/participation can affect participation marks directly (i.e., attended fewer than 7) or indirectly (i.e., it might result in low peer evaluation ratings).
+Low attendance/participation can affect participation marks directly (i.e., participated in fewer than 7) or indirectly (i.e., it might result in low peer evaluation ratings).
 </div>
 
 <panel type="info" header="**+ Bonus Marks**" expanded no-close no-switch >

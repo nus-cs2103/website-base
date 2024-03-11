@@ -37,9 +37,12 @@
   Please help to keep the noise level low (as there are two parallel tutorials in the same venue),<br>
   (a) by limiting conversations to parts that the tutor directs you to have a discussion,<br>
   (b) and not speaking too loudly during those discussions.
-* Are you allowed to attend the tutorial via Zoom instead?  By default, no.<br>
+* {{ icon_Q }} FAQ: Are you allowed to attend the tutorial via Zoom instead?<br>
+  Answer: By default, no.<br>
   Reason: it goes against the purpose of F2F tutorials (i.e., to get the whole team to meet physically) and the NUS directive to move all small classes to F2F mode.<br>
-  However, you can request (by emailing `{{ course | lower }}@comp.nus.edu.sg`) to attend the tutorial of a specific week via Zoom, if you have a valid reason (e.g., MC, taking part in an NUS-related event).
+  However, you can request (by emailing `{{ course | lower }}@comp.nus.edu.sg`) to attend the tutorial of a specific week via Zoom, if you have a valid reason (e.g., MC, taking part in an NUS-related event).<br>
+  {{ icon_Q }} FAQ: What happens if I join a tutorial via Zoom, without getting permission to do so?<br>
+  There is no penatly, but that tutorial will not count for participation. See [here](participation.html#:~:text=Sufficient%20tutorial%20attendance/participation) for the bar you need to meet for tutorial participation.
 * If you face Wi-Fi connectivity issues, try connecting to SSID `eduroam` (you need to use your full NUSNET email address and password `e____@u.nus.edu/*****` to login).{% endif %}
 </box>
 

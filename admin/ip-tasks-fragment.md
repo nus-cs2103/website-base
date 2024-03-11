@@ -728,7 +728,7 @@ This activity is worth `2x2=4` participation points.
    **FAQ**: What if the student has not uploaded a JAR file, or the JAR file doesn't work at all?<br>
    **A**: When you submit the evaluation (step 8 below), there will be a way to indicate that the JAR was not available, or any other serious issues you faced.
    </box>
-1. **Locate the User Guide** of the app by following the link provided.
+1. **Locate the User Guide** of the app by following the link provided in that email.
 1. **Open the Canvas survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Run the jar file** in the following manner:
    1. Put the jar file in an empty folder, to prevent data files created by other jar files you tested earlier from interfering with the current jar file.
@@ -741,7 +741,7 @@ This activity is worth `2x2=4` participation points.
 1. **Submit your evaluation** using the survey.
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).<br>
    If _both_ iPs crash or fail severely in a similar fashion, the problem may be on your side. Please contact the teaching team to ask how to proceed.
-1. %%**Take note of the effort required for a _typical_ iP**: After seeing two more iPs, you should now be in a better position to estimate how much you need to do for the tP (reason: the expected workload for the tP is estimated with reference to the effort required for a _typical_ iP).%%
+1. %%**Take note of the effort required for a _typical_ iP**: After seeing two more iPs, you should now be in a better position to estimate how much you need to do for the tP (reason: the expected implementation effort for the tP is estimated with reference to the implementation effort required for a _typical_ iP).%%
 </div>
 {#====================================================================================================================#}
 <span id="heading_generate_new_jar">{{ "Release" if tic4002 else "Generate" }} a new JAR file</span>
