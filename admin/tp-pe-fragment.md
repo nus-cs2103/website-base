@@ -215,7 +215,7 @@ Evaluate based on the User Guide and the actual product behavior.
 <p/>
 <div id="projectGrading-userGuide-instructions">
 
-{{ icon_green_Q }} **Compared to AddressBoook-Level3 (AB3), the overall quality of the UG you evaluated is,**<br>
+{{ icon_green_Q }} **Compared to AddressBook-Level3 (AB3), the overall quality of the UG you evaluated is,**<br>
 Evaluate based on fit-for-purpose, from the perspective of a target user.
 For reference, the AB3 UG is [here]({{ url_ab3_upstream_website }}/UserGuide.html).<br>
 

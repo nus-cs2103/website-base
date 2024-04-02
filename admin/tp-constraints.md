@@ -147,7 +147,7 @@ Some suggestions:
 {% call show_constraint("Constraint-PDF-Friendly") -%}
 The DG and UG should be PDF-friendly. Don't use expandable panels, embedded videos, animated GIFs etc. <br>
 
-%%**Reason:** The UG and DG used in the final grading will be in PDF format%%:
+%%**Reason:** The UG and DG used in the final grading will be in PDF format%%
 {%- endcall  %}
 
 -----------------------------------------------------------------------------------------------------------------------

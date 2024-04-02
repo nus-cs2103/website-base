@@ -95,7 +95,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 {{ embed_topic("peerEvaluations-midterm-fragment.md#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
 
-* Baseline: If your team received a value higher than `10` in step 1 and the team agrees that you did roughly an equal share of implementation work, you should receive full marks for effort.
+* Baseline: If your team received a value higher than `5` in step 1 and the team agrees that you did roughly an equal share of implementation work, you should receive full marks for effort.
 </div>
 <div tags="m--cs2113">
 

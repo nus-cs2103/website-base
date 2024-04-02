@@ -56,7 +56,7 @@ If the current behavior differs from the UG but the current behavior is not stri
 
 <panel type="seamless" header="**Q2:** Will we be penalized for feature flaws not fixed during the feature freeze?" minimal>
 
-**A:** Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some feature flaws at this stage is natural. Accordingly, feature flaws will not be penalized In the following cases:
+**A:** Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some feature flaws at this stage is natural. Accordingly, feature flaws will not be penalized in the following cases:
 
 * If the feature flaw will be fixed by an item you listed in the _Planned enhancements_ DG section (as mentioned above).
 * After the feature flaw is reported during the PE, you successfully argued it as 'not in scope' (i.e., fixing that flaw is of lower priority than the work done already, and hence it is justifiable to be postponed to a future version). Reporters of such bugs will earn partial credit.
@@ -198,6 +198,8 @@ However, it does not mean we simply keep adding features without any plan and wh
 {#====================================================================================================================#}
 <div id="cs2103-week7-intro">
 
+<include src="tp-timeline.md#v11-goals" />
+
 <box type="tip" icon=":fab-git-alt:" icon-size="3x" seamless>
 
 <br>++**Start using Git via the CLI**++{.text-success .font-monospace}
@@ -214,10 +216,17 @@ But you can continue to use your favorite Git GUI for a more 'visual' view of yo
 </div>
 {#====================================================================================================================#}
 <div id="cs2103-week8-intro">
+
+As we start working towards {{ version_first }}, keep the following iteration goals in mind:
+<div class="indented">
+
+<include src="tp-timeline.md#v12-goals" />
+</div>
+
 <box type="info" seamless>
 
 **Feel free to improve AB3 in any way you see fit.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). In particular, ==find and fix any bugs it has==. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
-While we are on the topic, also note that the architecture of AB3 doesn't suite every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not try to apply AB3 as a template for _every_ other project you encounter in the future**.
+While we are on the topic, also note that the architecture of AB3 doesn't suit every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not try to apply AB3 as a template for _every_ other project you encounter in the future**.
 </box>
 <box>
 
@@ -263,15 +272,22 @@ Finally, we don't expect each of you to put into the tP more _effort_ than you p
 {#====================================================================================================================#}
 <div id="cs2103-week10-intro">
 
+As we start working towards {{ version_penultimate }}, keep the following iteration goals in mind:
+<div class="indented">
+
+<include src="tp-timeline.md#v13-goals" />
+</div>
 <box dismissible>
 
 ****{{ icon_tip }} How much is enough to get full marks?**** Not surprisingly, a common question tutors receive around this time of the project is "can you look at our project and tell us if we have done enough to get full marks?". Here's the answer to that question:
 
 **The tP _effort_ is graded primarily based on peer judgements** (tutor judgements are used too). That means you will be judging the effort of another team later, which also means you should be able to make a similar judgement for your own project now. While we understand effort estimating is hard for software projects, it is an essential SE skill, and we must practice it when we can.
 
-**The expected minimum bar to get full marks for _effort_**:
-* For the team: an effort equivalent to the effort required to develop AB3 from scratch
-* For an individual: an effort equivalent to the effort the iP required
+**The expected minimum bar to get full marks for _effort_** is given <trigger trigger="click" for="modal:mid13-effortBar"> here</trigger>.
+
+<modal large header="tP -> Expectations -> [Extract] Functionality Expectations" id="modal:mid13-effortBar">
+<include src="tp-expectations.md#functionality-expectations"/>
+</modal>
 
 If you surpass the above bars (in your own estimation), you should be in a good position to receive full marks for the effort. But keep in mind that there are many other components in the [tP grading](tp-grading.md), not just the effort.
 </box>
@@ -280,7 +296,11 @@ If you surpass the above bars (in your own estimation), you should be in a good 
 
 {#====================================================================================================================#}
 <div id="cs2103-week12-intro">
+As we start working towards {{ version_final }}, keep the following iteration goals in mind:
+<div class="indented">
 
+<include src="tp-timeline.md#v14-goals" />
+</div>
 <box dismissible>
 
 {{ icon_tip }} when setting the {{ version_final }} deadline in GitHub milestones, remember that the {{ version_final }} submission deadline is early in Week 13 for _everyone_ (does not vary by tutorial day). Set your own milestone deadline accordingly, or else our grading scripts will flag it as an 'unsuitable' deadline.
@@ -1080,6 +1100,9 @@ Each mini iteration should deliver a working product, not just do half of the ta
 At the same time, we recommend you should also play it safe by aiming to reach a _smallest possible_ version early and squeeze more in only if there is time left.
 
 * {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this course because incremental delivery, among other things, improves the _visibility_ of your work.">(reason)</popover>%%.
+  * {{ icon_Q }} FAQ: Does that mean I have to merge at least one PR every week?<br>
+    A: While that is ideal, it is not a requirement that you merge PRs every week. ==Consistency of contribution is detected based on commit timestamps==, not based on when you merge the code. Don't worry if a certain week is shown in red because the commits in that week have not been merged yet; it will eventually turn green after you merge the code, and the temporary red will not affect the grade.<br>
+      That said, [{{ icon_tip }} aim for small PRs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/best-practices-for-pull-requests#:~:text=pull%20request.%22-,Write%20small%20PRs,-Aim%20to%20create) (and also, small focused commits). A PR that takes more than a week to merge is likely too large, or too-slow in moving forward.<br><br>
 
 * ==**If you plan to rename the Java packages**==, you may want to do it around this time. Doing it later can be more difficult %%(e.g., it can cause more merge conflicts)%%, and can cause problems in our code authorship tracking. Also note that renaming packages is optional.
 
@@ -1207,7 +1230,7 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 
 {% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features** as <span class="text-danger">a strict feature-freeze will be enforced in the next iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized. In other words, **in terms of product design and implementation, treat this iteration as creating the final version of the product**.{% endif %}
 
-The version you deliver in this iteration (i.e., `{{ version_penultimate }}`) will be subjected a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the feature freeze later.{% endif %}
+The version you deliver in this iteration (i.e., `{{ version_penultimate }}`) will be subjected to a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the feature freeze later.{% endif %}
 
 Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks {% if cs2103 %} (<span class="text-danger">you will not be allowed to fix feature flaws while a feature-freeze is in force</span>).{% endif %} The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
 
@@ -1383,7 +1406,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 <p/>
 </div>
 
-{% if cs2103 %}
+{% if cs2103 and semester != 'AY2324S2'%}
 * **[Heads up] Load-testing CATcher will be done during the upcoming {{ lecture_name }}** ({{ get_date(date_w11_start, 0, time="") }}), during the first 15 minutes of
 {{ lecture_name_short }}. This is ==different from smoke-testing== you did above, and this will count for participation separately.<br>
   Therefore, remember to ==attend the {{ lecture_name_short }} (via Zoom or F2F) at least for the first 15 minutes== (this activity cannot be done any other time).
@@ -1472,8 +1495,9 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <span id="heading_release_as_a_jar_file">{{ icon_team }} Release {{ version_penultimate }}</span>
 <div id="desc_release_as_a_jar_file">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Aim to release it by the usual soft deadline (i.e., midnight before your tutorial). Do some manual tests to ensure the jar file works.<br>
-   Include ==both the JAR file and the UG PDF file (as two separate files)== in the release.
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. Do some manual tests to ensure the jar file works.<br>
+   Include ==both the JAR file and the UG PDF file (as two separate files)== in the release.<br>
+  It is optional to write detailed release notes for this version.
 * **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional release is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous release %%(reason: it is good to preserver the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
   Waiting till Friday 10am to release the `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.{% if cs2103 %}
 * **The <trigger trigger="click" for="modal:v13-jar-desc">_feature freeze_</trigger> will apply at the point you released the JAR file that was used in the PE-D** i.e., the features submitted in the final `{{ version_final }}` two weeks later should be the same as the features tested during PE-D, which is the rationale for the feature freeze anyway.{% endif %}
@@ -1807,7 +1831,7 @@ Not applicable this semester
 
 <box id="caution-on-pdf-conversion" type="important" seamless>
 
-**Don't take PDF conversion lightly:**{.text-danger} **To convert the UG/DG{% if cs2113 %}/PPP{% endif %} into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques  or not following the settings suggested in the given technique can result in issues== such as missing background colors, poor quality resolution , unnecessarily large files (the last two can be considered as bugs).
+**Don't take PDF conversion lightly:**{.text-danger} **To convert the UG/DG{% if cs2113 %}/PPP{% endif %} into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques  or not following the settings suggested in the given technique can result in issues== such as missing background colors, poor quality resolution, unnecessarily large files (the last two can be considered as bugs).
 
 **The PDF versions of the UG/DG{% if cs2113 %}/PPP{% endif %} should be _usable_** by the target readers, even if not as neat/optimized as the Web versions. For example, margins and page breaks need not be optimized, but they should not hinder the reader either. Assume some will occasionally choose the PDF version over the Web version %%e.g, for printing, offline viewing, annotating etc.%%
 

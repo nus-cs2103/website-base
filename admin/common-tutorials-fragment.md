@@ -393,7 +393,7 @@ class PersonList{
 
 {{ embed_topic("../book/testing/testCoverage/text.md#body", "Textbook " + icon_embedding + " Testing → **Test Coverage**", "3", indent=1) }}
 
-* Post a screenshot in the _tutorial workspace_ document. An example is given below:<br>
+* When prompted by the tutor, post the screenshot in the _tutorial workspace_ document. An example is given below:<br>
  <pic eager src="images/demo-test-coverage/CoverageReportExample.png" ></pic>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

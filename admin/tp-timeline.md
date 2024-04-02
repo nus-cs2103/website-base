@@ -76,14 +76,19 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 #### {{ badge("Week " + (tfw + 4))}} {{ weekly_tp_themes.w7.name }}
 
-* Ensure development environment is set up.
+<div id="v11-goals" tags="m--cs2103" class="indented">
+<box header="****{{ version_practice }}****" light>
 
-* Plan the next iteration i.e., decide who will do which parts by when.
+* **Product goal**: Update some documents to match the new product direction.{ icon="fas-crosshairs" i-class="text-success" }
+* **Process goal**: Get ready for proper iterations.
+* **Strategy**: Practice the workflow while updating the documents.
 
-<div tags="m--cs2103">
-
-* Do a _practice_ iteration ({{ version_practice }}) to get used to the workflow. In this iteration, only some documents will be updated.
+</box>
 </div>
+
+* Ensure development environment is set up.{% if cs2103 %}
+* Do a _practice_ iteration ({{ version_practice }}) to get used to the workflow. In this iteration, only some documents will be updated.{% endif %}
+* Plan the next iteration i.e., decide who will do which parts by when.
 </div>
 
 The first half of the tP is light because you will be doing the iP in parallel during that time.
@@ -96,11 +101,31 @@ The first half of the tP is light because you will be doing the iP in parallel d
 
 #### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iteration 1 → {{ version_first }}
 
+<div id="v12-goals" tags="m--cs2103" class="indented">
+<box header="****{{ version_first }}****" light>
+
+* **Product goal**: Reach a _minimum viable product (MVP)_.{ icon="fas-crosshairs" i-class="text-success" }
+* **Process goal**: Estimate the quality and quantity of manpower %%i.e., see how much the team can do within an iteration%%.
+* **Strategy**: Define the smallest possible MVP. Reach it as soon as possible. Use the remaining time to see how much more work the team can do, while staying within own workload limitations.
+
+</box>
+</div>
+
 * This is the first proper iteration.
 * Aim to deliver an <tooltip content="Minimum Viable Product">MVP</tooltip> version of the product.
 
 
 #### {{ badge("W" + (tfw + 7))}} {{ badge("W" + (tfw + 8))}} Iteration 2 → {{ version_penultimate }}
+
+<div id="v13-goals" tags="m--cs2103" class="indented">
+<box header="****{{ version_penultimate }}****" light>
+
+* **Product goal**: Reach the _release candidate (RC)_ version.{ icon="fas-crosshairs" i-class="text-success" }
+* **Process goal**: Tweak the product/project plan to match the available time/resources.
+* **Strategy**: Add features based on priority, while maintaining a working product.
+
+</box>
+</div>
 
 <div tags="m--cs2113 m--cs2103 m--tic4002">
 
@@ -114,6 +139,16 @@ The first half of the tP is light because you will be doing the iP in parallel d
 
 
 #### {{ badge("W" + (tfw + 9))}} {{ badge("W" + (tfw + 10)) if tic4001 or tic4002 }} Iteration 3 → {{ version_final }}
+
+<div id="v14-goals" tags="m--cs2103" class="indented">
+<box header="****{{ version_final }}****" light>
+
+* **Product goal**: Stabilize the product for release.{ icon="fas-crosshairs" i-class="text-success" }
+* **Process goal**: Minimize delivery risks %%i.e., risks of bugs in the product, or overshooting the deadline%%.
+* **Strategy**: Limit changes to bug fixes only. Improve tests, documentation, code quality
+
+</box>
+</div>
 
 <div tags="m--cs2103 m--cs2113">
 

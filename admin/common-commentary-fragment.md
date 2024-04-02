@@ -879,7 +879,7 @@ Now that you know what _design pattern_ is, let's learn a few example design pat
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("More Design Patterns") }}">
 
-Previously, you learned about design patterns, and a some example design patterns. Let's continue that journey this week.
+Previously, you learned about design patterns, and some example design patterns. Let's continue that journey this week.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("designPatterns-modelViewController-what") }}">

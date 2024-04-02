@@ -1,22 +1,5 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 
-#### {{ thumb(0, thumb_style="secondary") }} %%Demo {{ version_penultimate }}%%
-
-<div class="indented-level2">
-
-%%The tutor to confirm the following has been done.%%
-
-{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_demo_penultimate_version", "Admin " + icon_embedding + " tP v1.3: Demo", "3") }}
-</div>
-<p/>
-
-<div class="indented-level2">
-<box type="success" border-left-color="green">
-
-You may release a newer version to be used for the PE dry run, but make sure it is released <span class="text-danger">by {{ day_lecture }} 10am</span>.
-</box>
-</div>
-
 
 #### {{ thumb(1) }} Exercise: Equivalence partitions, boundary values
 

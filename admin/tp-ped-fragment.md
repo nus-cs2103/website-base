@@ -12,7 +12,7 @@
 </modal>
 
 {{ icon_important_big_red }} **Grading**: The PE dry run ==affects your grade in the following ways==.
-* You can earn ==up to 2 bonus marks== for your performance in the PE-D.{% if cs2103 %}<br>
+* You can earn ==up to 2 bonus marks== (in your final tP score) for your performance in the PE-D.{% if cs2103 %}<br>
  Graded ==based on the usefulness and the quality of your bug reports==, as evaluated by the receiving team.{% endif %}
 * PE dry run is a way for you to practice for the actual PE.
 * Taking part in the PE dry run will earn you participation points.
@@ -58,14 +58,15 @@ For reference, here are what we consider as qualities of a good bug report:
 {% elseif cs2103 %}
 Evaluation rubric:
 
-* Meets expectations: 3-5 good bug reports
-* Exceeds expectations: more than 5 good bug reports
+* Meets expectations (i.e., good enough to earn **participation points**): 3-5 good bug reports
+* Exceeds expectations (i.e., good enough for **1 bonus mark**): more than 6-8 good bug reports
+* Greatly exceeds expectations (i.e., good enough for **2 bonus marks**): more than 9 or more good bug reports
 
-As you can't be sure which of your bug reports will be considered as _good_ (criterion [e] in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total. The **median bug reports count in the last round was 9**.
+As you can't be sure which of your bug reports will be considered as _good_ (the last criterion in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total if you aim for 1 bonus mark, more if you are aiming for 2 bonus marks. The **median bug reports count in the last round was 9**.
 {% endif %}
 </box>
 
-**PE and PE-D are _manual_ testing sessions.** Using test automation tools or scripting is not allowed.
+**PE and PE-D are _manual_ testing sessions.** Using test automation tools or scripting is not allowed. But you may use such techniques when testing your own product.
 
 **Test the product and report bugs** as described below, when the prof informs you to begin testing.
 
@@ -273,15 +274,15 @@ Some bug reports will make you angry because they seem baseless, wrong, rude etc
    1. All your team members tried the exact same command and it works as advertised. What the h___ the tester is trying to pull here?
    1. In reality, the error is actually caused by a duplicate entry in the database resulting from a previous command; the tester didn't mention that command in the bug report (because s/he didn't realize the two are connected).
 * The reported bug might be non-existent but the tester's screw up can indicate other areas to improve. For example, the tester reports a missing feature that is clearly mentioned as 'not implemented' in the UG, but perhaps the UG can be improved to make that fact harder to miss?
-* What exactly about the bug report that makes you angry? Remind yourself not to do the same offence when you report bugs yourself in future.
+* What exactly about the bug report that makes you angry? Remind yourself not to do the same offence when you report bugs yourself in the future.
 
 Use the pain of dealing with this kind of bug reports as an opportunity to develop the following mindset:
 
-**(a) The product is _guilty until proven innocent_**: If the bug report has even a _hint_ of something amiss with the product, it's your (not the tester's) responsibility to try and prove if it is really a problem or not. Why? because finding a bug is a win for _you_ -- as you can then fix it and thereby avoid the embarrassment of releasing a buggy product.
+* **The product is _guilty until proven innocent_**: If the bug report has even a _hint_ of something amiss with the product, it's your (not the tester's) responsibility to try and prove if it is really a problem or not. Why? because finding a bug is a win for _you_ -- as you can then fix it and thereby avoid the embarrassment of releasing a buggy product.{ text="(a)" t-class="fw-bold" }
 
-**(b) A crappy bug report is better than no bug report**: If the bug actually exists, it is better to have _some_ indication about it than none at all. In a real project, a tester that fails to find bugs can cause more harm to your career than a tester who finds bugs but doesn't report them well.
+* **A crappy bug report is better than no bug report**: If the bug actually exists, it is better to have _some_ indication about it than none at all. In a real project, a tester that fails to find bugs can cause more harm to your career than a tester who finds bugs but doesn't report them well.{ text="(b)" }
 
-**(c) I _used_ to get angry at bug reports, but not any more**: If you work hard, take pride in the quality of your work, it's no wonder that you get angry when others find faults with your work incorrectly. Aim to move past that phase where you take bug reports personally. The sooner you can tackle any sh*tty bug report calmly and objectively, the sooner you'll rise to the 'professional' software engineer level.
+* **I _used_ to get angry at bug reports, but not anymore**: If you work hard, take pride in the quality of your work, it's no wonder that you get angry when others find faults with your work incorrectly. Aim to move past that phase where you take bug reports personally. The sooner you can tackle any sh*tty bug report calmly and objectively, the sooner you'll rise to the 'professional' software engineer level.{ text="(c)" }
 </box>
 </div>
 
@@ -296,7 +297,7 @@ Use the pain of dealing with this kind of bug reports as an opportunity to devel
     * indicate priority of the bugs that need fixing.
   * Assign each bug to the person who should fix it.
 * **You may ignore `type/severity.*` labels given by the tester.** They will not affect you or the tester either way -- they were there just for the testers to practice. You may apply your own type/severity labels if you wish.<br>
-  {{ icon_important_big_red }} In particular, beware of simply following the `type.*` given by the tester; it is your job to decide the correct type of the issue. e.g., What the tester labeled as a _bug_ might actually be a _feature flaw_.{% if cs2103 or tic4002 %}
+  {{ icon_important_big_red }} In particular, beware of simply following the `type.*` given by the tester; it is your job to decide the correct type of the issue. e.g., What the tester labeled as a _bug_ might actually be a _feature flaw_.{% if cs2103 %}
 * **If a bug report is simply a feature suggestion**, you can take note of it and close it (to reduce clutter in the issue tracker, and to make it easy for the teaching team to track your progress on dealing with PE-D issues). Similarly, you can close PE-D issues not relevant to {{ version_final }}.{% endif %}
 
 

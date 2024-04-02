@@ -177,7 +177,7 @@ The size of the target market is not a grading criterion. You can make it as nar
 
 <h2 class="text-white bg-danger p-1">Functionality Expectations</h2>
 
-<div tags="m--cs2103">
+<div tags="m--cs2103" id="functionality-expectations">
 
 **The expected level of _functionality_ is what you could achieve if each member puts in an implementation effort equivalent to ==half of the implementation effort they put into the iP==** (i.e., it is set at half because, even after adding the extra overheads of doing the project as a team, and working with an exising codebase, we don't want the total tP effort of a student to exceed the total effort of iP -- in other words, we don't want the tP to take more effort than the iP).<br>
 Furthermore, we estimate that the above-mentioned bar will equate to **about 300-400 lines of functional code** (excluding testing and documentation) per person.

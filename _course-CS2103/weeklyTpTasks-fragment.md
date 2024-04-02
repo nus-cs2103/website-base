@@ -78,7 +78,7 @@ week13: [
   w4: {name: "Set direction"},
   w5: {name: "Gather requirements"},
   w6: {name: "Conceptualize the product"},
-  w7: {name: "Get ready for iterations", milestone: version_practice},
+  w7: {name: "Do a practice iteration → " + version_practice, milestone: version_practice},
   w8: {name: "mid-" + version_first},
   w9: {name: version_first, milestone: version_first},
   w10: {name: "mid-" + version_penultimate},

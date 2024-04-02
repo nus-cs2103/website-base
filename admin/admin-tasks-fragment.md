@@ -5,7 +5,7 @@
 {% from "_course-" + course + "/weeklyAdminTasks-fragment.md" import weekly_admin_tasks with context %}
 
 <span id="teammates-link-recovery-tip">{{ icon_tip }} If you did not receive the submission link, you can get TEAMMATES to resend the link by going to [TEAMMATES link recovery page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery)
-  and entering your NUSNET email address (try the `e______@u.nus.edu` before tyring the 'friendly' email address). Remember to check your spam folder as well.</span>
+  and entering your NUSNET email address (try the `e______@u.nus.edu` before trying the 'friendly' email address). Remember to check your spam folder as well.</span>
 {#====================================================================================================================#}
 {# Tasks
 {#====================================================================================================================#}
@@ -204,12 +204,14 @@ On a related note, if you are not confident about the answer you've selected for
 * Submit this quiz (on Canvas) to confirm that you know important details about the PE.
 </div>
 {#====================================================================================================================#}
-<span id="heading_join_catcher_load_testing">Take part in the CATcher load testing</span>
+<span id="heading_join_catcher_load_testing">{% if semester == "AY2324S2" %}~~Take part in the CATcher load testing~~{% else %}Take part in the CATcher load testing{% endif %}</span>
 <div id="desc_join_catcher_load_testing">
-
+{% if semester == "AY2324S2" %}
+* This task is not applicable for this semester...
+{% else %}
 * Attend the live {{ lecture_name }} and take part in the CATcher load/stress testing session that will take place during the first 15 minutes of the
 {{ lecture_name_short }}. More instructions will be provided during the {{ lecture_name_short }}.
-
+{% endif %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_reuse_declaration">Submit the declaration about code reuse</span>
