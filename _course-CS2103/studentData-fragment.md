@@ -581,7 +581,7 @@
  'CS2103T-F12-3': 'TutorPro',
  'CS2103T-F12-4': 'HackLink',
  'CS2103T-F13-1': 'TA Pro',
- 'CS2103T-F13-2': 'FAPro',
+ 'CS2103T-F13-2': 'FApro',
  'CS2103T-F13-3': 'MatchMate',
  'CS2103T-F13-4': 'ClassMonitor',
  'CS2103T-F14-1': 'InternHub',

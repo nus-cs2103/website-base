@@ -67,6 +67,7 @@
 
 * **Remote mode proctoring will be done via Zoom.** No admission if the following requirements are not met.{% if cs2103 %}
   * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external webcam for your PC.
+  * {{ icon_tip }} To change the Zoom display name as required by the PE, join the Zoom call, go to the 'Participation' panel, and search for yourself. Then, click on 'More', followed by 'Rename'.
   * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true)== about 2 days before the PE. e.g.,
     * `[M18] John Doe` (`M18` is the seat number)
     * `[M18][PC] John Doe` (for the PC, if using a phone as well){% elseif cs2113 %}
@@ -112,12 +113,13 @@
   * Website: Course website %%(e.g., to look up PE info)%%
   * Software: CATcher, any text editor, any screen grab/recording software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
-  * Software: A text editor %%(to keep track of commands you tried)%%
+  * Software: A text editor or word processing software %%(to keep notes while testing)%%
 * ==**Do not visit GitHub in** <span class="badge bg-success">PE Phase 1 - part I</span>== unless you are going there to download a file the team has provided and is needed for testing. You may visit GitHub during part II and part III.
 * **Do not use any other software running** in the background e.g., Telegram chat.
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
 * **You may use any digital/physical notes** during the PE %%e.g., a list of things to check%%.
 * **Recommended to read the guidelines the dev team will follow when responding to your bug reports later**, given in the panel below. This will help decide what kind of bugs to report.
+* **Bugs reported during the PE should be the result of your own testing**. <span class="text-danger">Reporting bugs found by others as your own will be reported as a case of academic dishonestly</span> (severity is similar to cheating during the final exam).
 <div class="indented-level1">
 <panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" minimized>
 
@@ -247,6 +249,7 @@ For reference, the AB3 DG is [here]({{ url_ab3_upstream_website }}/DeveloperGuid
 * Do read the DG appendix named `Effort`, if any.
 * ==Consider implementation work only (i.e., exclude testing, documentation, project management etc.)==
 * Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
+* Do ==not consider the team size== when deciding this rating. We'll factor in the team size later.
 </div>
 <div tags="m--cs2113 m--tic4001">
 
@@ -264,6 +267,11 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 </div>
 
 {{ icon_green_Q }} **[Optional] Concerns or any noteworthy observations about the product you evaluated**
+
+<div tags="m--cs2103">
+
+{{ icon_green_Q }} **Finally, what did you like about the product you tested?**
+</div>
 
 </panel>
 <p/>

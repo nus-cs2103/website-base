@@ -46,12 +46,20 @@
 
 * {{ icon_important_big_red }} **We highly recommend adding an appendix named _Planned Enhancements_**, listing fixes you propose to add in the near future, to counter known feature flaws.
   * This section may contain up to `team_size x 2` enhancements %%e.g., a 5-person team can have up to 10 enhancements%%.
-  * Each enhancement should be specific, describing the feature flaw it addresses and how exactly the feature will be changed, providing sample UIs/inputs/outputs if applicable. e.g.,
-    > 1. The current error message for a failed contact deletion `Operation failed!` is too general. We plan to make the error message also mention which action failed and the reason for the failure: `The contact Amy Lee could not be deleted as it is referenced by another contact Ben Chua`.
+  * At the start of the section, clearly state the team size. While this information is not useful for a real DG, it will help PE testers easily see if you have exceeded the allowed planned enhancements count.<br>
+    For a similar reason, structure this section as a numbered list, each item in the list describing exactly one planned enhancement.<br>
+    Each enhancement should be specific, describing the feature flaw it addresses and how exactly the feature will be changed, providing sample UIs/inputs/outputs if applicable. e.g.,
+    > ****Planned Enhancements****
+    >
+    > Team size: 5
+    >
+    > 1. **Make 'failed contact deletion' message more specific**: The current error message for a failed contact deletion `Operation failed!` is too general. We plan to make the error message also mention which action failed and the reason for the failure: `The contact Amy Lee could not be deleted as it is referenced by another contact Ben Chua`.
+    > 2. ...
   * Each enhancement should be a tweak to an existing feature, and should not be a new feature altogether.
   * `type.FeatureFlaw` bug reports matching an item in this section ==will not be penalized== for the team, and testers will not earn credit for reporting them either. However, testers can report `type.FeatureFlaw` bugs on the enhancements listed in this section, if they think the planned feature tweak itself is flawed/inadequate.
   * FAQ: Enhancement X and Y are very similar. Can we count them as one?<br>
     Answer: Only if adding one automatically adds the other. If one can be added without the other, they are counted as two enhancements.
+* <span class="text-danger">If the team has exceeded the allowed count in the planned enhancements</span>, only the first N items (where N is `team size x 2`) in that list will have immunity. The rest can be reported as bugs. In addition, exceeding the count can be reported as a separate DG bug.
 </div>
 <div tags="m--cs2103">
 

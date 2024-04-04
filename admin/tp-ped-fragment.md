@@ -12,7 +12,7 @@
 </modal>
 
 {{ icon_important_big_red }} **Grading**: The PE dry run ==affects your grade in the following ways==.
-* You can earn ==up to 2 bonus marks== (in your final tP score) for your performance in the PE-D.{% if cs2103 %}<br>
+* You can earn ==up to 2 marks== (in your final tP score) for your performance in the PE-D.{% if cs2103 %}<br>
  Graded ==based on the usefulness and the quality of your bug reports==, as evaluated by the receiving team.{% endif %}
 * PE dry run is a way for you to practice for the actual PE.
 * Taking part in the PE dry run will earn you participation points.
@@ -59,8 +59,8 @@ For reference, here are what we consider as qualities of a good bug report:
 Evaluation rubric:
 
 * Meets expectations (i.e., good enough to earn **participation points**): 3-5 good bug reports
-* Exceeds expectations (i.e., good enough for **1 bonus mark**): more than 6-8 good bug reports
-* Greatly exceeds expectations (i.e., good enough for **2 bonus marks**): more than 9 or more good bug reports
+* Exceeds expectations (i.e., good enough for **1 mark**): more than 6-8 good bug reports
+* Greatly exceeds expectations (i.e., good enough for **2 marks**): more than 9 or more good bug reports
 
 As you can't be sure which of your bug reports will be considered as _good_ (the last criterion in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total if you aim for 1 bonus mark, more if you are aiming for 2 bonus marks. The **median bug reports count in the last round was 9**.
 {% endif %}
@@ -96,8 +96,8 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
   * At the start of the PE, we'll give you the first part of the password (common to the whole class). Use combined password to unzip the file, which should give you another zip file with the name suffix `_inner.zip`.
   * Unzip that second zip file normally (no password required). That will give you a folder containing the JAR file to test and other PDF files needed for the PE. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
   Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%
-  * You can try above steps using the [this sample zip file](files/{{ course | lower }}/JohnDoe.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).
-
+  * Recommended: Try above steps using the [this sample zip file](https://github.com/nus-cs2103/website-base/files/14849276/JohnDoe.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).<br>
+    Use the JAR file inside it to try the steps given below as well, to confirm your computer's Java environment is as expected and can run PE jar files.
 </tab>
 </tabs>
 <p/>
@@ -194,7 +194,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 
 ###### <div class="text-white bg-secondary p-1">d) How to report bugs</div>
 
-* {{ icon_important_big_red }} **Post bugs as you find them** %%(i.e., do not wait to post all bugs at the end)%% because <span class="text-danger">bug reports created/modified after the allocated time will not count.</span>
+* {{ icon_important_big_red }} **Post bugs as you find them** %%(i.e., do not wait to post all bugs at the end)%% because <span class="text-danger">bug reports created/updated after the allocated time will not count.</span> Even minor updates (such as changing a label) outside the allowed time window will invalidate that bug.
 <div class="indented-level1">
 
 <tabs>
@@ -250,8 +250,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 </div>
 
 
-* {{ icon_info }} **If you need to include `<` or `>` symbols in your bug report**, use HTML equivalents for 'less than'
-and 'greater than' instead (i.e., `&lt;` and `&gt;` e.g., `x &lt; y` instead of `x < y`).<br>
+* {{ icon_info }} **If you need to include `<` or `>` symbols in your bug report**, you can either use `\` to escape them   (i.e., use `\<` and `\>` e.g., `x \< y` instead of `x < y`) or wrap it inside back-ticks.<br>
 Reason: CATcher and GitHub strips out content wrapped in `<` and `>`, for security reasons.
 </box>
 </div>
