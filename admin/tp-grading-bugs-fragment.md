@@ -125,7 +125,7 @@ These are considered _functionality bugs_:<br>
 * **Bugs rejected by the dev team**, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.
 * **The penalty/credit for a bug varies based on the severity** of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
 * **The three bug types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components.** The penalty/credit can vary based on the bug type. %%Given that you are not told which type has a bigger impact on the grade, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.%%
-* **The penalty for a bug is divided equally** among assignees.
+* **The penalty for a bug is divided equally** among <popover content="In the PE, each team get to decide who are the assignees for each bug report they received">assignees</popover>.
 * **Developers are not penalized for duplicate bug reports** they received but the testers earn credit for duplicate bug reports they submitted, provided the duplicates are not submitted by the same tester.
 * **<tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit** for the tester and slightly higher penalty for the developer.
 * **If the team you tested has a low bug count** i.e., total bugs found by _all_ testers is low, we will fall back on other means %%(e.g., performance in PE dry run)%% to calculate your marks for system/acceptance testing.

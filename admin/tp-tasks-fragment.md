@@ -21,9 +21,9 @@ While the info below provides you what to do and what not to do in {{ version_fi
 **Allowed in the {{ version_final }} milestone:**{.text-success}
 
 * fixing bugs (but not _feature flaws_) -- we use a very restrictive definition of 'bugs' for the feature freeze; to avoid violating the feature freeze unintentionally, be sure to check the FAQs below before you do any fixes/tweaks.{icon="fas-check" i-class="text-success"}
-* improving documentation
+* improving documentation %%(e.g., update UG, DG, code comments)%%
 * improving code quality
-* improving the testing aspect
+* improving the testing aspect %%(e.g., add more tests)%%
 * removing features %%(i.e., removing an entire feature or a part of a feature)%%
 
 **Not allowed in {{ version_final }}:**{.text-danger}
@@ -46,7 +46,7 @@ While the info below provides you what to do and what not to do in {{ version_fi
 <panel type="seamless" header="**Q1:** How to differentiate between bugs and feature changes?" minimal>
 
 **A:** A bug in this context is when the actual behavior differs from the _advertised_ behavior (i.e., the behavior stated in the UG) <span class="text-danger">due to an _error_ in the code</span>.<br>
-If will be considered a feature change (i.e., not allowed to do) if,
+It will be considered a feature change (i.e., not allowed to do) if,
 
 * the current behavior is not strictly 'incorrect' but 'can be better'.
 * the current behavior inconveniences the user but there is a way to work around it.
@@ -94,6 +94,7 @@ If the behavior difference is because some parts of the feature is not implement
 
   * **Spelling errors and grammar errors** in the UI (or docs) can be fixed, as they are errors by definition.
   * **If a user action <tooltip content="i.e., does not perform the action user requested but does not also give any indication that the action was not performed">fails silently</tooltip>**, it can be fixed to inform the user of the problem.
+  * **Making user-facing info more specific/informative** (e.g., changing a generic error message `Command format is invalid` into a more specific error message `The parameter p/ in the command is not valid`) is an enhancement i.e., not allowed.
 </panel>
 
 <panel type="seamless" header="**Q7:** Can we tweak case-sensitivity of a feature?" minimal>
@@ -1419,6 +1420,17 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 
 * Deliver the features that you planned for {{ version_penultimate }}.
 
+* In case you didn't pay much attention to this last week, here is another reminder about what you can and can't do during {{ version_final }} _feature _freeze_.
+
+<div class="indented-level1">
+
+<panel header="Admin {{ icon_embedding }} tP → **{{ version_final }} (extract) → More details on the feature freeze**" minimized>
+
+<include src="tp-tasks-fragment.md#feature-freeze-details" />
+</panel>
+</div>
+<p/>
+
 <box type="info" seamless tags="m--cs2103">
 
 **Have any suggestions to improve AB3?**{.text-info}
@@ -1496,7 +1508,9 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <div id="desc_release_as_a_jar_file">
 
 * {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. Do some manual tests to ensure the jar file works.<br>
-   Include ==both the JAR file and the UG PDF file (as two separate files)== in the release.<br>
+   Include ==both the JAR file and the UG PDF file (as two separate files)== in the release.
+   The UG should be uploaded as an 'asset' (similar to the JAR file), not embedded in the release note.
+   Otherwise, our scripts will not be able to detect it.<br>
   It is optional to write detailed release notes for this version.
 * **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional release is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous release %%(reason: it is good to preserver the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
   Waiting till Friday 10am to release the `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.{% if cs2103 %}
@@ -1686,9 +1700,9 @@ In this context, a good bug report,
 
 Rate each tester on the following scale:
 
-Poor | Below expectations | Meets expectations | Exceeds expectations
-----|---|---|---
-no bug reports from this tester | just a few bug reports, and none are good | 5 or more bug reports but only1-2 are good | 3-5 good bug reports | more than 5 good bug reports
+Poor | Below expectations | Meets expectations | Exceeds expectations | Greatly exceeds expectations
+----|---|---|---|---
+no bug reports from this tester | just a few bug reports, and none are good | 3-5 good bug reports | 6-8 good bug reports | 9 or more good bug reports
 
 </panel>
 <panel type="seamless" header="Q2: Rank PE-D testers" minimized>

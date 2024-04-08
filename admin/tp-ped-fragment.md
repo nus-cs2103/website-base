@@ -62,7 +62,7 @@ Evaluation rubric:
 * Exceeds expectations (i.e., good enough for **1 mark**): more than 6-8 good bug reports
 * Greatly exceeds expectations (i.e., good enough for **2 marks**): more than 9 or more good bug reports
 
-As you can't be sure which of your bug reports will be considered as _good_ (the last criterion in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total if you aim for 1 bonus mark, more if you are aiming for 2 bonus marks. The **median bug reports count in the last round was 9**.
+As you can't be sure which of your bug reports will be considered as _good_ (the last criterion in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total if you aim for 1 mark, more if you are aiming for 2 marks. The **median bug reports count in the last round was 9**.
 {% endif %}
 </box>
 
@@ -136,7 +136,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 <tabs active="{{ pe_active_tab }}">
 <tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
-* Test the product ==based on the User Guide== available from their GitHub website `https://{team-id}.github.io/{{ tp_repo_name }}/UserGuide.html`.
+* Test the product ==based on the User Guide (PDF version)== available from their releases page on GitHub.
 * Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
 
 </tab>

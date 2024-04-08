@@ -119,7 +119,7 @@
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
 * **You may use any digital/physical notes** during the PE %%e.g., a list of things to check%%.
 * **Recommended to read the guidelines the dev team will follow when responding to your bug reports later**, given in the panel below. This will help decide what kind of bugs to report.
-* **Bugs reported during the PE should be the result of your own testing**. <span class="text-danger">Reporting bugs found by others as your own will be reported as a case of academic dishonestly</span> (severity is similar to cheating during the final exam).
+* **Bugs reported during the PE should be the result of your own testing**. <span class="text-danger">Reporting bugs found by others as your own will be reported as a case of academic dishonesty</span> (severity is similar to cheating during the final exam).
 <div class="indented-level1">
 <panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" minimized>
 
