@@ -100,13 +100,21 @@ As you watch the videos below, you might realize that while the voice is 'sort o
 
 <!-- ==================================================== -->
 
-<panel type="info" header="#### More ..." expanded>
-<div id="course-briefing-w4">
+<panel type="info" header="#### Week 13 Course Briefings" expanded>
+<div id="course-briefing-w13">
 
-More course briefing videos (covering the exam, etc.) will be added in due course.
+****Final Exam:****{.text-info} This video contains an overview of the final exam structure and resources that you can use to prepare for it.
+
+{{ panopto(desc="12 mins", "2ab962b5-554e-41be-9df3-b14f00fd2cb8") }}
+
+****Course Topics Recap aka the 'Big Picture':****{.text-info} This video explains how course topics fit into a big picture, and as a bonus, ==touches on some exam-like questions== as well.
+
+{{ panopto(desc="19 mins", "e1bf94be-36e3-4ab1-8261-b14f00fd2cc9") }}
 
 </div>
 </panel>
+
+<!-- ==================================================== -->
 
 </div>
 {% endcall %}

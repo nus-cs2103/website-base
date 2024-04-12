@@ -79,12 +79,14 @@ If the behavior difference is because some parts of the feature is not implement
 
 **A:**
 
-  * Can be allowed only if the current behavior causes the software to _misbehave_ (i.e., crash, give incorrect results, store inconsistent data, or make it unusable for typical users).
-  * Accepting seemingly 'unsuitable' values for an input (e.g., accepting numbers for a person name, empty value as a parameter):<br>
+  * **Can be allowed only if the current behavior causes the software to _misbehave_** (i.e., crash, give <popover content="i.e., the result given by the app differs from the result that matches the user input">incorrect results</popover>, store <popover content="i.e., the same data item is stored as different values in multiple places, or the value stored by the app is different from the one given by the user">inconsistent data</popover>, or make it unusable for typical users).
+  * **Accepting seemingly 'unsuitable' values** for an input (e.g., accepting numbers for a person name, empty value as a parameter):<br>
     This is not considered 'incorrect' (giving more freedom to the user is not necessarily incorrect) unless those unsuitable values causes the application to misbehave.
-  * Validity checks on edits to the data file:<br>
+  * **Accepting supposedly invalid values** (e.g., end date is earlier than start date; February 30th) is, while not ideal, not necessarily incorrect either (i.e., adopting a [garbage-in garbage-out](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out) approach to input validation). However, if such data can make other things go haywire (e.g., crash the app, corrupt the data file), accepting them can be considered a bug, and fixed.
+  * **Rejecting valid inputs** is a bug and can be fixed, unless such data is not expected to be used (in normal usage), or if a reasonable workaround exists (e.g., not accepting `s/o` in a person name is a problem but until it is supported, users can be asked to use a workaround such as using `s o` or `son of`).
+  * **Validity checks on edits to the data file**:<br>
     As per AB3 UG (which states the current level of support for editing the data file manually), only valid edits will be supported. If the file is invalid, the app will start with an empty file (not crash). You may rectify only if the current level of support doesn't meet that bar. Furthermore, you may state in the UG that certain incorrect edits to the datafile can result in unexpected behaviors, and caution users to edit the file only if they know what they are doing.
-  * Handling extraneous inputs (e.g., extra parameters, repeated parameters etc.) in commands:<br>
+  * **Handling extraneous inputs** (e.g., extra parameters, repeated parameters etc.) in commands:<br>
     The command 'forgiving' these extraneous inputs (i.e., giving an output same as or similar to if those inputs are not present) is not incorrect. You can mention in the UG that such inputs will be ignored. AB3 already does a similar thing for some commands. Any special handling of such inputs can be left as a future enhancement.
 </panel>
 
@@ -95,6 +97,7 @@ If the behavior difference is because some parts of the feature is not implement
   * **Spelling errors and grammar errors** in the UI (or docs) can be fixed, as they are errors by definition.
   * **If a user action <tooltip content="i.e., does not perform the action user requested but does not also give any indication that the action was not performed">fails silently</tooltip>**, it can be fixed to inform the user of the problem.
   * **Making user-facing info more specific/informative** (e.g., changing a generic error message `Command format is invalid` into a more specific error message `The parameter p/ in the command is not valid`) is an enhancement i.e., not allowed.
+  * **Widening the scope of a message (or making it more general)** is allowed. For example, suppose an error can be caused by a problem in parameters x, y, or z but the error message says `problem in x or y`. In this case the current error message is incomplete and hence you may widen its scope (e.g., `problem in x or y or z`) or make it more general (e.g., `problem in parameters`).
 </panel>
 
 <panel type="seamless" header="**Q7:** Can we tweak case-sensitivity of a feature?" minimal>
@@ -106,7 +109,7 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 <panel type="seamless" header="**Q8:** A UI text gets truncated (or overflows) for certain inputs (or certain Windows sizes); can we fix them?" minimal>
 
 **A:** Only if the behavior hinders normal usage i.e., the user not being able to see the full text in _any way_ can be considered an 'incorrect' behavior, and hence, a bug. If the user is able to see the full text by resizing the Window or using another view provided by the app, it is not a bug.<br>
-  Also, accommodating 'extreme' inputs (e.g., a person name with 1000 characters) can be considered a nice-to-have feature, to be added in a future version (i.e., lack of it is not a bug).
+  Also, accommodating 'extreme' inputs (e.g., a person name with 1000 characters, an index that exceeds the range of `int`) can be considered a nice-to-have feature, to be added in a future version (i.e., lack of it is not a bug).
 </panel>
 
 <panel type="seamless" header="**Q9:** Can we tweak the command format?" minimal>
@@ -118,7 +121,8 @@ An exception is when the UG clearly states the case sensitivity but the actual f
 
 e.g., the UI continues to show it after an item was deleted in the most recent command
 
-**A:** Yes, this can be fixed as the UI is showing 'incorrect' data.
+**A:** Yes, this can be fixed as the UI is showing 'incorrect' data.<br>
+  Alternatively, UI not auto-updating immediately after a command executes can be considered a separate feature that the current version of the app doesn't have yet. In that case, make it clear in the UG and also inform users how to update the UI %%(e.g., by running another command)%%.
 </panel>
 
 <panel type="seamless" header="**Q11:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug (or vice versa). How to proceed?" minimal>
@@ -129,6 +133,21 @@ e.g., the UI continues to show it after an item was deleted in the most recent c
 <panel type="seamless" header="**Q12:** We already merged a change a PR that violates the feature freeze. Now what?" minimal>
 
 **A:** No penalty if you revert the change for the final submission. You can use [GitHub's _Revert PR_ feature](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) for this. Failing that, you'll need to reverse the merge commit of the offending PR manually.
+</panel>
+
+<panel type="seamless" header="**Q13:** How to decide between recording a feature flaw as a 'known issue' (in the UG) and a 'planned enhancement' (in the DG)?" minimal>
+
+**A:**
+
+* UG's 'Known Issues' is a way to caution users about limitations of the app. In terms of grading, informing users of an issue can reduce the severity of the issue, but they are not totally immune from being reported/penalized as bugs.<br>
+  DG's 'Planned Enhancements' are immune from PE bug reporting. It's mostly for PE purposes (i.e., a course-specific item); not something you see often in real DGs.
+* There is no limit to how many known issues you can list in the UG, but listing many will put the product in a negative light.
+* You can list the same item in both, in which case the presentation/details of it can vary between the two too (as the two documents are meant for two different audiences).
+</panel>
+
+<panel type="seamless" header="**Q14:** What if the same bug is reported in the PE?" minimal>
+
+**A:** In the PE, the tester and the dev team are expected to attempt to reach a decision before the teaching team's opinion is factored in. Therefore, our policy is not to judge potential PE issues in advance, so as not to preempt the PE process.
 </panel>
 
 
@@ -450,7 +469,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
     1. **Value proposition** i.e., what problem does the product solve? (plain text paragraph, <span class="text-danger">no more than 50 words</span>) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%<br>
        This is ==not a list of features== -- you should not think about exact features yet.
     1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
-  * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 or tic4001 %}<br>
+  * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 %}<br>
   * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.
   * {{ icon_Q }} FAQ: Can we change these values later?<br>
     Answer: Yes. If the submission deadline is not over yet, use the same link to update the submission. If the submission deadline is over, email the updated name, target user, value proposition to `{{ course | lower }}@comp.nus.edu.sg`.
@@ -490,7 +509,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 * **Follow the steps in the recipe mentioned above to arrive at user stories for the product**, with your team members.  <span tags="m--cs2103"><span class="text-danger">If you don't follow the recipe mentioned above</span>, you could end up with a different set of user stories than otherwise.
   </span>
 
-* **User stories for what version?** At this stage, collect user stories to cover at least the final version you hope to deliver at the end of the semester. It is OK to go even beyond that %%(reason: we are simulating a project that will continue even after the semester is over)%%.{% if cs2103 or tic4002 %}<br>
+* **User stories for what version?** At this stage, collect user stories to cover at least the final version you hope to deliver at the end of the semester. It is OK to go even beyond that %%(reason: we are simulating a project that will continue even after the semester is over)%%.{% if cs2103 %}<br>
   Do not omit user stories already covered by the features in AB3 %%i.e., the user story should be recorded even if AB3 already caters for it.%%{% endif %}
 
 * **How many user stories?** Aim to collect more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other competing products.%%
@@ -559,7 +578,7 @@ How is that better?
 
 </box>
 
-**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration i.e., <span class="text-danger">NOT what you _can_ or _want to_ do in {{ version_first }}, but what you _must_ do in {{ version_first }}</span>. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.{% if cs2103 or tic4002 %}<br>%%**Why {{ version_first }} and not v1.1?** v1.1 is a mere documentation update only. {{ version_first }} will be the first version that contains functionality changes.%%{% endif %}
+**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration i.e., <span class="text-danger">NOT what you _can_ or _want to_ do in {{ version_first }}, but what you _must_ do in {{ version_first }}</span>. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.{% if cs2103 %}<br>%%**Why {{ version_first }} and not v1.1?** v1.1 is a mere documentation update only. {{ version_first }} will be the first version that contains functionality changes.%%{% endif %}
 
 {{ icon_important_big_red }} Do not discuss features, UI, command format, or implementation details yet. That would be like _putting the cart before the horse_. At this stage we are simply trying to choose which _user needs_ to fulfill first.
 
@@ -1816,14 +1835,14 @@ Not applicable this semester
 <div id="desc_submit_final_deliverables">
 
 * **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} {{ time_final_submission }}:00** unless stated otherwise. Note that <span class="text-danger">{{ time_final_submission }}:01 is considered late</span>, as per the Canvas deadline mechanism.
-* {{ icon_important_big_red }} **Penalty for late submission** (per file): {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
+* {{ icon_important_big_red }} **Penalty for late submission** (per file): {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}<br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
   Penalty for delays beyond 24 hours is determined on a case by case basis.
   * Even a one-second delay is considered late, irrespective of the reason.
   * For submissions done via Canvas, the submission time is the timestamp shown by Canvas.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
-  * The whole team is penalized for problems in team submissions %%e.g., a -1 penalty for a team submission will be a -1 penalty for each team member%%.<br>
+  * The whole team is penalized for problems in team submissions %%e.g., a -1 penalty for a team submission will be a -1 penalty for each team member%%.{% if not cs2103 %}<br>
     Only the respective student is penalized for problems in individual submissions.{% endif %}
 * **Submit via the Canvas assignment we have set up**.
   {% if has_t %}{{ course}}T students: documents should be submitted to both courses. It's not enough to submit to CS2101 side only.{% endif %}
@@ -1831,7 +1850,8 @@ Not applicable this semester
   Canvas might automatically add a file name suffix (e.g., `*-1.pdf`, `*-2.pdf`, ...) if you upload a file multiple times. You can safely ignore that suffix.
 * **Do not update the code during the 14 days after the deadline.** Get our permission first if you need to update the code in the repo during that _code-freeze_ period.
   * You can update issues/milestones/PRs even during the _code-freeze_ period.{% if cs2113 or cs2103 %}
-  * [{{ course }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a code-freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.{% endif %}
+  * [{{ course }}T only] You can update the source code of the docs (but not functional/test code) if your CS2101 submission deadline is later than our submission deadline. However, a code-freeze period of 1-2 days is still recommended, so that there is a clear gap between the tP submission and subsequent docs updates.<br>
+   On a related note, there is no need to additional stylistic 'beautifications' to the docs before submitting to CS2101 side. The two teaching teams have agreed that there will be no extra credit for such additional  beautifications.{% endif %}
   * You can update the code during the code-freeze period if the change is related to a late submission approved by us.
   * You can continue to evolve your repo after the code-freeze period.
 
@@ -1851,7 +1871,7 @@ Not applicable this semester
 
 **PE uses the PDF versions of UG/DG, not the Web version!**{.text-danger} Any problems in those PDF files (e.g., broken links, messed up formatting) can be reported as bugs.
 
-**Ensure hyperlinks in the pdf files work**. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+**Ensure hyperlinks in the pdf files work**. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs==. Again, use the conversion technique given above to ensure links in the PDF files work.
 
 **PDF files should**,
   * **be paginated** at a reasonable page size (e.g., A4). %%Reason: single-page PDF files don't work well in some PDF viewers, and not suitable for printing either.%%
@@ -1930,7 +1950,7 @@ Not applicable this semester
 * As usual, wrap up the milestone on GitHub %%i.e., close issues/PRs/milestone (no code changes allowed)%%. Note that the deadline for this is the same for everyone (i.e., does not depend on your tutorial).
 </div>
 {#====================================================================================================================#}
-<span id="heading_demo_the_product">{{ icon_team }}~~Submit the demo video~~{% if cs2103 %}{% else %}Submit the demo video{% endif %}</span>
+<span id="heading_demo_the_product">{{ icon_team }}{% if cs2103 %}~~Submit the demo video~~{% else %}Submit the demo video{% endif %}</span>
 <div id="desc_demo_the_product">
 
 <div id="demo-instructions" >

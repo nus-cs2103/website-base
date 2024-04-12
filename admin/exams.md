@@ -1,4 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/topics.njk" import panopto with context %}
 
 {% call show_admin_page("exams") %}
 <div id="main">
@@ -22,7 +23,7 @@ Instructions below are from the previous semester. Will be updated closer to the
 * However, you are allowed to refer to the PDF version of the textbook and your own notes on your laptop.
 * Permitted materials: <br>
   PDF of the course textbook, lecture slides (allowed format: PPT/PDF), self-created notes (please convert everything to PDF). <br>
-  A printed copy of the course textbook, hand-written notes. <br>
+  A printed copy of the course textbook, handwritten notes. <br>
   No other device other than the laptop you are using to take the exam is allowed; however, NUS-approved calculators are allowed.
 
 ## Exam structure
@@ -46,14 +47,18 @@ The final exam has two types of questions:
 * You will be given a practice exam paper (smaller than the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
 </div>
 
-<div tags="m--cs2103 m--tic2002 m--tee3201">
+<div tags="m--cs2103">
+
+{{ panopto("2ab962b5-554e-41be-9df3-b14f00fd2cb8", desc="[Course Briefing Video] Final Exam (12 minutes)") }}
+
+## Exam admin info to note
 
 1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ course }}) as well.
 1. **Scope:**
    * All topics in the textbook, excluding level 4 topics, are examinable. For your convenience, you can view the examinable portion of the textbook in [this printable view of the textbook](../se-book-adapted/print.html) (same as the PDF version of the textbook provided to you).
    * In addition, you are expected to be aware of SE-related things (i.e., tools, techniques, concepts) encountered while dong the iP and the tP %%e.g., Was testing technique X used in the tP?%%.<br>
      That is, you are expected to strengthen your SE _knowledge_ (not just hands-on skills) as you do the course projects -- in particular, to be able to connect theory to practice.
-1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not allowed</span>), which can connect to the NUS wifi network.<br>
+1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not allowed</span>), which can connect to the NUS Wi-Fi network.<br>
   Please use these resources if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
    * [slides](https://wiki.nus.edu.sg/x/daBJCw) (refer to the slides on _On-Campus exam_)
    * [video](https://wiki.nus.edu.sg/x/tgg_EQ) (refer to the _Examplify Student Briefing_ video)
@@ -116,7 +121,7 @@ Next time you want to use the local copy of the website, navigate to the source 
 1. **You must start the exam within 5 minutes of receiving the password** or else the quiz will close before your allotted time has run out.
 
 
-## Format
+## Structure/format
 <div tags="m--cs2103 m--tic2002 m--tee3201">
 
 * The exam will be divided into {{ 3 if cs2103 else 2 }} parts.
@@ -202,11 +207,50 @@ E. Gantt charts.
 
 </div>
 
-## Exam briefing, mock exam, practice exam paper
+## Exam preparation resources
 
-* There will be an exam briefing in the penultimate {{ lecture_name }}. It will include a minimal mock exam, just to help you understand the structure.
-* You will be given a practice exam paper (same size and difficulty as the actual exam paper) to help you practice timing. That practice paper will be released at least one week before the exam.
-* Answers for the mock/practice exams will be released on Canvas/handouts.
+{% set handouts_link = "[Canvas/files/handouts](" + url_files +"/folder/handouts)" %}
+
+<box type="info" seamless>
+
+The following exam resources will be **available from the start of week 13**.
+</box>
+
+* **The exam briefing video**:
+
+{{ panopto("2ab962b5-554e-41be-9df3-b14f00fd2cb8", desc="[Course Briefing Video] Final Exam (12 minutes)") }}
+
+* **A mock exam** (consisting of just a few questions) is available on Examplify.
+  You can use it to get familiar with the quiz format that will be used for the final exam.
+  Password: `Hello123`<br>
+  Model answers are in {{ handouts_link }}.
+* **A practice exam** of same format/length/difficulty as the actual exam will be available at least one week before the exam.<br>
+  You can use it to practice your timing/pace. Multiple attempts are allowed.
+    * Recommended:
+        * Watch the exam briefing video and finish studying the topics before
+          you attempt the practice exam, to get its full benefit.<br>
+        * Do the mock exam (to get used to the software and question structure) before the practice exam.
+    * Where to find it:
+        * Parts 1, 3 - Available on Examplify. Password: `Hello123`
+        * Part 2 - Available in {{ handouts_link }}.
+    * Model answers are available on {{ handouts_link }}.
+* **Some extra practice questions** for exam part 2 are in
+  {{ handouts_link }} -- look for the file `Additional practice questions for part 2.pdf`
+* **All weekly quizzes** will be reopened on [Canvas Quizzes]({{ url_canvas_home }}/quizzes).
+  You can retake them to self-test your knowledge (note: retaking them will not affect participation marks).
+* **Recordings of all tutorial Zoom sessions** should be available in a file named `Recordings.docx` inside
+  your tutorial group's MS Team (in the 'Files' section). Remind your tutor to update that file if recording
+  links are missing.
+* **Recordings of all weekly briefings** are available on the [Canvas home page]({{ url_canvas_home }}).
+* **The _Topics Overview_ video** given below explains how course topics fit into a big picture, and as a bonus, touches on some exam-like questions as well.
+
+{{ panopto(desc="[Course briefing video] **Topics overview** aka the 'big picture' (19 mins)", "e1bf94be-36e3-4ab1-8261-b14f00fd2cc9") }}
+
+* **PDF files useful for the exam** (given in {{ handouts_link }}):
+  * Full textbook
+  * UML reference sheet
+  * Java coding standard
+  * Topics infographic (shows how the various topics fit into the big picture)
 
 </div>
 

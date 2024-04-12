@@ -36,11 +36,11 @@
 However, if such input can be entered by a user mistake, they should not cause harm e.g., such mistakes should not crash the app, corrupt the data, or make it unusable.
   * Problems caused by integer overflows -- apply the guideline in the previous point.
 * **Problems caused by very long input values**: When a user input is unusually long %%e.g., a very long name, a very large number%%, it can cause problems e.g., the UI layout can get messed up, some part of it might get cut off.<br>
-  * These can be considered cosmetic issues (i.e., `severity.VeryLow`) of `type.FunctionalityBug`.<br>
-  However, if the problem can hinder the user %%(e.g., not seeing the last part of a very long name might not hinder the user but it does hinder the user if only the first few characters of the name is shown)%%, the severity can be `Low` or higher.
+  * These can be considered cosmetic issues (i.e., `severity.VeryLow`) of `type.FunctionalityBug` (or of `type.FeatureFlaw`, depending on the nature of the problem).<br>
+  However, if the problem can hinder the user %%(e.g., not seeing the last part of a very long name might not hinder the user, but it does hinder the user if only the first few characters of the name is shown)%%, the severity can be `Low` or higher.
   * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are _guaranteed_ to be not than 8 digits.
 * **Use of symbols in input values**: It is acceptable to disallow certain characters in input values if there is a justification (e.g., because using those symbols in an input value makes the command harder to parse), but they can still be considered `FeatureFlaw` bugs if they cause inconvenience to the user. For example, disallowing `s/o` in a person name because `/` is used as a command delimiter can cause a major problem if the input is expected to match the legal name of the person.
-* **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 or tic4002 %}
+* **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it is the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 or tic4002 %}
 * **Handling manual edits to the data file**: AB3 UG specifies the current level of support for manually editing the data file. At least that level of support should be supported in the new product as well.
 {% endif %}
 

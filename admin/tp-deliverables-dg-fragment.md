@@ -70,7 +70,7 @@
   * But best not to delete them altogether, as that can result in broken links in your DG page.
  * **The _Appendix: Requirements_ section** should be updated as follows:
    * Requirements implemented in the current version: make sure requirements match the way they are actually been implemented (e.g., use case steps).
-   * Requirements yet to be implements: keep these as well, as this is an ongoing project and these are meant to be implemented in future iterations.
+   * Requirements yet to be implemented: keep these as well, as this is an ongoing project and these are meant to be implemented in future iterations.
 </div>
 
 ##### DG Tips
@@ -94,9 +94,10 @@
   * **Omit less important details**. Examples:
     * a class diagram can omit minor utility classes, private/unimportant members; some less-important associations can be shown as attributes instead.
     * a sequence diagram can omit less important interactions, self-calls, method parameters, etc.<br>
-      Tip: You can use `...` (e.g., `foo(...)`) to indicate parameters have been omitted.
+      Tip: You can use `...` (e.g., `foo(...)`) to indicate parameters have been omitted.<br>
+      Tip: You can use pseudocode instead of exact method calls e.g., `save data in file` instead of `saveData(content, filename)`.
   * **Omit repetitive details** e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete `*Command` classes using a placeholder `XYZCommand`).
-  * **Limit the scope of a diagram.** Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it.<span tags="m--cs2103 m--tic4002"> In particular, avoid showing lower-level details of multiple components in the same diagram unless strictly necessary e.g., note how the <trigger trigger="click" for="modal:ipWeek10-deleteSd">this sequence diagram</trigger> shows only the detailed interactions within the Logic component i.e., does not show detailed interactions within the model component.</span>
+  * **Limit the scope of a diagram.** Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it.<span tags="m--cs2103"> In particular, avoid showing lower-level details of multiple components in the same diagram unless strictly necessary e.g., note how the <trigger trigger="click" for="modal:ipWeek10-deleteSd">this sequence diagram</trigger> shows only the detailed interactions within the Logic component i.e., does not show detailed interactions within the model component.</span>
   * **Break diagrams into smaller fragments** when possible.
     * If a component has a lot of classes, consider further dividing into subcomponents (e.g., a Parser subcomponent inside the Logic component). After that, subcomponents can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.
     * You can use `ref` frames to break sequence diagrams to multiple diagrams.{% if cs2103 %} Similarly, `rake`s can be used to divide activity diagrams.

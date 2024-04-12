@@ -87,6 +87,8 @@ Penalties:
 
 <div id="policy-reuse">
 
+**Scope:** The policies on reuse apply to all project deliverables that are normally expected to be your own work (i.e., code, code comments, documentation, diagrams, images, etc.) unless stated otherwise.
+
 **Reuse is encouraged. However, note that reuse has its own costs** (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by others. Rather, you will be given credit for _reusing_ work done by others.
 
 * You are allowed to reuse work from your classmates or past students, subject to following conditions:
@@ -192,7 +194,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
 
 **Reuse of documentation** %%(e.g., reusing a UG/DG section)%% is no different from code reuse. Such reuse should be credited as well.
 
-**Citing the use of AI-generated code** %%(e.g., using GitHub Copilot while coding)%%:
+**Citing the use of AI-generated/assisted work** %%(e.g., using GitHub Copilot for project work)%%:
 
 * If the use of the tool was localized into a few places %%(e.g., used it to write a few methods/classes only)%%, cite its use in comments near where you used it.
 * If the use was more widespread %%(e.g., used it as an auto-complete tool during most of your coding)%%, cite the usage (i.e., which tool, who used it, the extent of use) in the following location instead (i.e., no need to cite in code comments):

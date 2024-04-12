@@ -12,7 +12,8 @@
 
 <box>
 
-{{ icon_green_Q }} **Do you agree with the contributions claimed by team members, as stated in their PPP?**
+{{ icon_green_Q }} **Do you agree with the contributions claimed by team members, as stated in their PPP?**<br>
+You may omit this question for members who have not submitted the [PPP](tp-deliverables.html#deliverable-project-portfolio-page-ppp).
 
 {{ icon_green_Q }} **Rank team members based on their ability/potential to lead a software project team (rank 1 is strongest)**
 <p/>

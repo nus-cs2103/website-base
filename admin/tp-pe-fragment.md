@@ -9,7 +9,7 @@
 <panel header="more details on the motivation and objectives..." minimized>
 
 * **The upfront objective of the PE is to increase the rigor of project grading.** Assessing most aspects of the project involves an element of subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
-* **PE mainly evaluates your testing skills**, done as the following two-parts:
+* **PE also evaluates your testing skills**, done as the following two-parts:
   1. **You will be given a chance to find bugs in a different software.** Furthermore, you will be given an opportunity to ~~defend your bug reports against any possible objections~~ interact with the developers (anonymously) to refine the bug report further %%e.g., correct the severity level if the level you chose initially was incorrect%%. If you report possible bugs that turn out to be actual bugs, you earn marks (provided the product actually had bugs in the first place).
   2. **Your product will be subjected to a rigorous testing** and you will be given a chance to point out any inaccuracies in the bugs reported. You will lose marks for any bugs that turned out to be real bugs, but only if your work has more bugs than a certain bar.
 * **The above two can lead to high-rigor, <tooltip content="based on how well you achieve the objectives of testing, as opposed to indirect measures such as number of test cases">_outcome-based_</tooltip> evaluation of your testing skills**. The alternative is to rely solely on other easy-to-measure metrics %%(e.g., the number of test cases, test coverage, test LoC etc.)%% which we don't think as good representations of your actual testing skills.
@@ -24,7 +24,7 @@
 </div>
 
 * **The PE is divided into four phases**:
-  * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D. Done during week 13 {{ lecture_name }}, and further divided into parts I, II, and III.</span>
+  * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D. Done during week 13 lecture slot, and further divided into parts I, II, and III.</span>
     * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to report bugs in the product (but can report documentation bugs too)
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to report bugs in the UG and DG only
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
@@ -170,9 +170,9 @@ When the invigilator announces an identity check,
 1. remove mask (if any)
 1. turn towards the camera
 1. move closer to the camera (but do not adjust the camera position) -- no need to show the student card
-1. hold that pose until the invigilator has taken a screenshot and asks you to go back to the exam activity.
+1. hold that pose until the invigilator has taken a screenshot and asks you to go back to the PE activity.
 
-<span class="text-danger">Please comply quickly</span> as non-compliance can delay the exam for everyone. This is expected to take no more than 15 seconds.
+<span class="text-danger">Please comply quickly</span> as non-compliance can delay the PE for everyone. This is expected to take no more than 15 seconds.
 </box>
 
 -------------------------------------------------------------------------{.border-success}
@@ -198,6 +198,7 @@ When the invigilator announces an identity check,
 
 * To be submitted via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.
 * The TEAMMATES email containing the submission link should have reached you the day before the PE. If you didn't receive it by then, you can request it to be resent from [this page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery).
+* **If TEAMMATES submission page is slow/fails to load** (all of you accessing it at the same time is likely to overload the server), wait 3-5 minutes and try again. <span class="text-danger">Do not refresh the page rapidly</span> as that will overload the server even more, and recovery can take even longer.
 
 <div class="indented">
 <panel header="##### Important questions included in the evaluation" peek>

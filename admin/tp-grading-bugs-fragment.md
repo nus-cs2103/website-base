@@ -121,7 +121,7 @@ These are considered _functionality bugs_:<br>
 
 ##### Grading bugs found in the PE
 
-* ==Of the <tooltip content="1. _Developer Testing_ component -- based on the bugs found in your code;<br>2. _System/Acceptance Testing_ component -- based on the bugs found in others' code">two components of testing</tooltip>, the one you do better will be given a 70% weight and the other a 30% weight== so that your total score is driven by your strengths rather than weaknesses.
+* ==Of the <popover content="1. _Developer Testing_ component -- based on the bugs found in your code;<br>2. _System/Acceptance Testing_ component -- based on the bugs found in others' code">two components of testing</popover>, the one you do better will be given a 70% weight and the other a 30% weight== so that your total score is driven by your strengths rather than weaknesses.
 * **Bugs rejected by the dev team**, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.
 * **The penalty/credit for a bug varies based on the severity** of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
 * **The three bug types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components.** The penalty/credit can vary based on the bug type. %%Given that you are not told which type has a bigger impact on the grade, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.%%

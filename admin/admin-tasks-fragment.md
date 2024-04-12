@@ -192,7 +192,7 @@ On a related note, if you are not confident about the answer you've selected for
 <span id="heading_submit_final_peer_evaluations">Submit final peer evaluation on TEAMMATES</span>
 <div id="desc_submit_final_peer_evaluations">
 
-* Submission will open within one day after the final submission (i.e., sometime in {{ date_final_submission | date(format_normal, 1)}}).<br>
+* Submission will open within one day after the tP final submission (i.e., sometime in {{ date_final_submission | date(format_normal, 1)}}).<br>
   <include src="admin-tasks-fragment.md#teammates-link-recovery-tip" inline />
 
 {{ embed_topic("peerEvaluations.md#finalPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Final Peer Evaluation", "1", indent="2", status="expanded") }}
