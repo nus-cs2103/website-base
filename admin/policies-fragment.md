@@ -183,7 +183,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   ```
 <div tags="m--cs2103">
 
-**Giving credit to AB3 code**: If your team project code follows a design similar to AB3, that doesn't mean you need to credit AB3 -- this is because a brownfield project is _expected_ to follow existing code/design where possible, in the interest of consistency. However, don't take credit for existing AB3 code (i.e., ensure such code doesn't appear under your name in the tP code dashboard) unless you have modified that code substantially.
+**Giving credit to AB3 code**: If your team project code follows a design similar to AB3, that doesn't mean you need to credit AB3 -- this is because a brownfield project is _expected_ to follow existing code/design where possible, in the interest of consistency. This type of reuse need not be acknowledged/credited specifically.
 
 **Giving credit to AB4 code**: If you reused any code from [AB4](https://github.com/se-edu/addressbook-level4/), cite it as you would cite reuse from any other external source.
 </div>

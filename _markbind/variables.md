@@ -134,6 +134,13 @@
 
 <!-- ===========================  icons ================================================= -->
 
+<variable id="bullet_checkbox">{ icon="far-square" }</variable>
+<variable id="bullet_checkbox_red">{ icon="far-square" i-class="text-danger" }</variable>
+<variable id="bullet_checkbox_selected">{ icon="fas-square-check" }</variable>
+<variable id="bullet_checkbox_selected_green">{ icon="fas-square-check" i-class="text-success" }</variable>
+<variable id="bullet_tick_green">{ icon="fas-check" i-class="text-success" }</variable>
+<variable id="bullet_x_red">{ icon="fas-times" i-class="text-danger" }</variable>
+
 <variable name="icon_alert"><span class="badge rounded-pill bg-danger text-light">:fas-exclamation: ALERT</span></variable>
 <variable name="icon_announcement"><md>:fas-bell:</md></variable>
 <variable name="icon_book"><md>:fas-book:</md></variable>

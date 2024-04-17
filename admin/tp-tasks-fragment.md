@@ -30,31 +30,32 @@ While the info below provides you what to do and what not to do in {{ version_fi
 
 * adding/changing features (even minor behavior enhancements/tweaks){icon="fas-times" i-class="text-danger"}
 * any UI enhancements (even purely cosmetic enhancements e.g., alignments, style changes are not allowed)
-* updates to data files bundled with the JAR file (as they control the behavior of the app)
+* updates to the contents of data files bundled with the JAR file (as they control the behavior of the app)
 
 **Using 'Planned Enhancements' DG section to counter known feature flaws:** Given you are not allowed to fix feature flaws in {{ version_final }}, we allow you to optionally add a section named `Appendix: Planned Enhancements` to the end of the DG. More details in the panel below:
 
 {{ embed_topic("tp-deliverables-dg-fragment.md#planned-enhancements-info", "Admin " + icon_embedding + " tP → Deliverables → DG (extract): Planned Enhancements", "3", indent="1") }}
 
-**FAQs on what is allowed during the feature freeze:**
+****FAQs on what is allowed during the feature freeze:****
 
-<panel type="seamless" header="**Q0:** What's the ==penalty for violating the feature freeze==?" minimal>
+<panel type="seamless" header="**[Q0]** What's the ==penalty for violating the feature freeze==?" minimal>
 
 **A:** This will be case by case (depending on the severity), but an indicative/minimum penalty is `-1` per member, per violation. i.e., if there is only one violation that is not severe, each member will lose 1 mark.
 </panel>
 
-<panel type="seamless" header="**Q1:** How to differentiate between bugs and feature changes?" minimal>
+<panel type="seamless" header="**[Q1]** How to differentiate between **bugs vs enhancements**?" minimal>
 
 **A:** A bug in this context is when the actual behavior differs from the _advertised_ behavior (i.e., the behavior stated in the UG) <span class="text-danger">due to an _error_ in the code</span>.<br>
 It will be considered a feature change (i.e., not allowed to do) if,
 
 * the current behavior is not strictly 'incorrect' but 'can be better'.
 * the current behavior inconveniences the user but there is a way to work around it.
+* the advertised behavior was not actually implemented (or only partially implemented) in the JAR used for the PE-D.
 
 If the current behavior differs from the UG but the current behavior is not strictly incorrect, update the UG to match the current behavior (in the interest of minimizing code changes). However, an exception can be made if the behavior in the UG (but is not working in the app) was already implemented in {{ version_penultimate }} (i.e., there is code that is specifically written for the behavior in concern) but it is not working due to a bug in that specific code. When fixing such a case, clearly describe in the PR description where the existing implementation is (you can point to a commit, a code segment, or a past PR) and why it wasn't working.
 </panel>
 
-<panel type="seamless" header="**Q2:** Will we be penalized for feature flaws not fixed during the feature freeze?" minimal>
+<panel type="seamless" header="**[Q2]** Will we be **penalized for feature flaws not fixed** during the feature freeze?" minimal>
 
 **A:** Product design is hard, and achieving a very good design takes experience, skill, and multiple iterative refinements. Hence, having some feature flaws at this stage is natural. Accordingly, feature flaws will not be penalized in the following cases:
 
@@ -64,18 +65,18 @@ If the current behavior differs from the UG but the current behavior is not stri
 In addition, you can mitigate the impact of feature flaws and thus lower its severity by tweaking the UG (e.g., explain the feature better, clearly state the limitations and guide users to work around those limitations)
 </panel>
 
-<panel type="seamless" header="**Q3:** What if an issue is related to a behavior not specifically stated in the UG?" minimal>
+<panel type="seamless" header="**[Q3]** What if an issue is related to a **behavior not specifically stated** in the UG?" minimal>
 
 **A:** In that case, we go by the reasonable 'correct' behavior that one expects. For example, the UG might not specify what happens if a user typed an extra space after the first keyword of the command (e.g., `mark[SPACE]1` vs `mark[SPACE][SPACE]1`) in which case the reasonable correct behavior is to ignore the extra space.
 </panel>
 
-<panel type="seamless" header="**Q4:** What if a feature is mentioned in the UG but not available fully in the product?" minimal>
+<panel type="seamless" header="**[Q4]** What if a **feature is mentioned in the UG but not available** fully in the product?" minimal>
 
 **A:** Describing a feature in the UG without implementing it is a UG bug. The remedy is to remove the feature from the UG.<br>
 If the behavior difference is because some parts of the feature is not implemented yet, the feature is incomplete (i.e., not a bug). The remedy is to remove the feature (if it is not usable in the current form) or update the UG to match the current version of the feature.
 </panel>
 
-<panel type="seamless" header="**Q5:** Can we tweak validity checks for a user input, or error/exception handling?" minimal>
+<panel type="seamless" header="**[Q5]** Can we **tweak validity checks** for a user input, or error/exception handling?" minimal>
 
 **A:**
 
@@ -90,52 +91,57 @@ If the behavior difference is because some parts of the feature is not implement
     The command 'forgiving' these extraneous inputs (i.e., giving an output same as or similar to if those inputs are not present) is not incorrect. You can mention in the UG that such inputs will be ignored. AB3 already does a similar thing for some commands. Any special handling of such inputs can be left as a future enhancement.
 </panel>
 
-<panel type="seamless" header="**Q6:** Can we tweak error/help messages (or other text shown to the user)?" minimal>
+<panel type="seamless" header="**[Q6]** Can we **tweak UI text** (i.e., error/help messages or other text shown to the user)?" minimal>
 
 **A:** Only if the current text is incorrect (i.e., a bug). Adding more information or otherwise 'enhancing' the text is not allowed. Other points to note,
 
-  * **Spelling errors and grammar errors** in the UI (or docs) can be fixed, as they are errors by definition.
+  * **Spelling errors and grammar errors** in the UI (or docs) can be fixed, as they are errors by definition.{{ bullet_tick_green }}
+  * **Outdated AB3 terms** (e.g., 'addressbook', 'person') can be updated to a term that matches your application. This applies to the data file name as well.
   * **If a user action <tooltip content="i.e., does not perform the action user requested but does not also give any indication that the action was not performed">fails silently</tooltip>**, it can be fixed to inform the user of the problem.
-  * **Making user-facing info more specific/informative** (e.g., changing a generic error message `Command format is invalid` into a more specific error message `The parameter p/ in the command is not valid`) is an enhancement i.e., not allowed.
   * **Widening the scope of a message (or making it more general)** is allowed. For example, suppose an error can be caused by a problem in parameters x, y, or z but the error message says `problem in x or y`. In this case the current error message is incomplete and hence you may widen its scope (e.g., `problem in x or y or z`) or make it more general (e.g., `problem in parameters`).
+  * **Making user-facing info more specific/informative** (e.g., changing a generic error message `Command format is invalid` into a more specific error message `The parameter p/ in the command is not valid`) is an enhancement i.e., not allowed.{{ bullet_x_red }}
+  * **Merely standardizing text** (e.g., to use the same term everywhere) is an enhancement i.e., not allowed.
 </panel>
 
-<panel type="seamless" header="**Q7:** Can we tweak case-sensitivity of a feature?" minimal>
+<panel type="seamless" header="**[Q7]** Can we **tweak case-sensitivity** of a feature?" minimal>
 
 **A:** If the case-sensitivity of a feature does not follow the real world, it is considered a feature flaw (i.e, the design of the feature is not optimal). The best you can do in {{ version_final }} is to document this behavior clearly in the UG.<br>
 An exception is when the UG clearly states the case sensitivity but the actual feature implementation doesn't follow it, in which case it is a bug and can be fixed.
 </panel>
 
-<panel type="seamless" header="**Q8:** A UI text gets truncated (or overflows) for certain inputs (or certain Windows sizes); can we fix them?" minimal>
+<panel type="seamless" header="**[Q8]** A UI **text gets truncated (or overflows)** for certain inputs (or certain Windows sizes); can we fix them?" minimal>
 
 **A:** Only if the behavior hinders normal usage i.e., the user not being able to see the full text in _any way_ can be considered an 'incorrect' behavior, and hence, a bug. If the user is able to see the full text by resizing the Window or using another view provided by the app, it is not a bug.<br>
   Also, accommodating 'extreme' inputs (e.g., a person name with 1000 characters, an index that exceeds the range of `int`) can be considered a nice-to-have feature, to be added in a future version (i.e., lack of it is not a bug).
 </panel>
 
-<panel type="seamless" header="**Q9:** Can we tweak the command format?" minimal>
+<panel type="seamless" header="**[Q9]** Can we **tweak the command format**?" minimal>
 
 **A:** No, as this would be considered changing the design of a feature.
 </panel>
 
-<panel type="seamless" header="**Q10:** What if the UI is inconsistent with the actual state of the data?" minimal>
+<panel type="seamless" header="**[Q10]** What if the **UI is inconsistent with the data**?" minimal>
 
-e.g., the UI continues to show it after an item was deleted in the most recent command
+e.g., the UI continues to show an item after it was deleted in the most recent command
 
 **A:** Yes, this can be fixed as the UI is showing 'incorrect' data.<br>
   Alternatively, UI not auto-updating immediately after a command executes can be considered a separate feature that the current version of the app doesn't have yet. In that case, make it clear in the UG and also inform users how to update the UI %%(e.g., by running another command)%%.
+
+**[Q10a]** What if after a command is executed the UI doesn't switch to the intended view, or switch to a view not intended?<br>
+**A:** If there is a way for the user to switch to the target view (e.g., by typing another command or clicking somewhere in the UI), this will be considered a 'can be better' situation (i.e., an enhancement, not allowed to fix).
 </panel>
 
-<panel type="seamless" header="**Q11:** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug (or vice versa). How to proceed?" minimal>
+<panel type="seamless" header="**[Q11]** The tester has categorized a PE-D issue as a feature-flaw but we think it is a bug (or vice versa). How to proceed?" minimal>
 
 **A:** The category chosen by the tester is immaterial. You have to choose the correct category and proceed accordingly. Do not fix feature flaws even if the tester categorized them as bugs.
 </panel>
 
-<panel type="seamless" header="**Q12:** We already merged a change a PR that violates the feature freeze. Now what?" minimal>
+<panel type="seamless" header="**[Q12]** We already merged a PR that violates the feature freeze. Now what?" minimal>
 
-**A:** No penalty if you revert the change for the final submission. You can use [GitHub's _Revert PR_ feature](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) for this. Failing that, you'll need to reverse the merge commit of the offending PR manually.
+**A:** No penalty if you revert the change for the final submission. You can use [GitHub's _Revert PR_ feature](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) for this. Failing that, you'll need to reverse the merge commit of the offending PR manually, or at least do another PR to reverse the effect of the previous feature freeze violation.
 </panel>
 
-<panel type="seamless" header="**Q13:** How to decide between recording a feature flaw as a 'known issue' (in the UG) and a 'planned enhancement' (in the DG)?" minimal>
+<panel type="seamless" header="**[Q13]** How to decide between recording a feature flaw as a 'known issue' (in the UG) and a 'planned enhancement' (in the DG)?" minimal>
 
 **A:**
 
@@ -145,7 +151,7 @@ e.g., the UI continues to show it after an item was deleted in the most recent c
 * You can list the same item in both, in which case the presentation/details of it can vary between the two too (as the two documents are meant for two different audiences).
 </panel>
 
-<panel type="seamless" header="**Q14:** What if the same bug is reported in the PE?" minimal>
+<panel type="seamless" header="**[Q14]** What if the same bug is reported in the PE?" minimal>
 
 **A:** In the PE, the tester and the dev team are expected to attempt to reach a decision before the teaching team's opinion is factored in. Therefore, our policy is not to judge potential PE issues in advance, so as not to preempt the PE process.
 </panel>
@@ -1902,7 +1908,9 @@ Not applicable this semester
 </div>
 
 * **Product**:{icon="fas-users"}
-  * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.
+  * Do a release on GitHub, tagged appropriately e.g., `{{ version_final }}` or `{{ version_final }}b`.{% if cs2103 %}<br>
+    Writing detailed release notes is optional.<br>
+    No need to include UG/DG pdf files in the release.{% endif %}
   * Upload the jar file to Canvas.<br>
     File name: `[team ID][ProductName].jar` %%e.g. [{{ example_team_id }}][ContactsPlus].jar%%<br>
     {{ icon_important }} Recommended to <span class="text-danger">avoid spaces and special characters in the product name</span> as it can cause problems when running the JAR file using the command line.<br>

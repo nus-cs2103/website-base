@@ -311,10 +311,9 @@ _Team-tasks_ are the tasks that _someone_ in the team has to do.
 Here is a non-exhaustive list of team-tasks:
 
 1. Setting up the GitHub team org/repo
-1. Necessary general code enhancements{% if cs2103 or tic4002 %} e.g.,
+1. Necessary general code enhancements{% if cs2103 %} e.g.,
    1. Work related to renaming the product
-   1. Work related to changing the product icon
-   1. Morphing the product into a different product{% endif %}
+   1. Work related to changing the product icon{% endif %}
 1. Setting up tools e.g., GitHub, Gradle
 1. Maintaining the issue tracker
 1. Release management

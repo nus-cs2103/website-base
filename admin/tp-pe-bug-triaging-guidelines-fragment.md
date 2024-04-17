@@ -41,7 +41,7 @@ However, if such input can be entered by a user mistake, they should not cause h
   * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are _guaranteed_ to be not than 8 digits.
 * **Use of symbols in input values**: It is acceptable to disallow certain characters in input values if there is a justification (e.g., because using those symbols in an input value makes the command harder to parse), but they can still be considered `FeatureFlaw` bugs if they cause inconvenience to the user. For example, disallowing `s/o` in a person name because `/` is used as a command delimiter can cause a major problem if the input is expected to match the legal name of the person.
 * **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it is the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 or tic4002 %}
-* **Handling manual edits to the data file**: AB3 UG specifies the current level of support for manually editing the data file. At least that level of support should be supported in the new product as well.
+* **Handling manual edits to the data file**: AB3 UG specifies [the current level of support for manually editing the data file](https://se-education.org/addressbook-level3/UserGuide.html#editing-the-data-file) i.e., 'if you edit the file correctly, things will work; but if you edited it wrongly, there's no guarantee that things will work'. At least that level of support should be supported in the new product as well.
 {% endif %}
 
 <div id="triaging-feature-flaws">
