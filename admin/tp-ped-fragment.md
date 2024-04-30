@@ -204,18 +204,28 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
   * PE Dry Run: `{{ course_pair }} PE Dry run`
   * PE: `{{ course_pair }} PE`
 * Post bugs using CATcher.
+* **If you encounter a 'Failed to fetch' error** during CATcher login, try again. If it still fails, try a different network e.g., your mobile phone's hotspot.
+* **If GitHub prompts you to 're-authorize' CATcher** (this happens if GitHub detects a rush of login requests from the same account), just re-authorize as requested.
 </tab>
 <tab header="Not using CATcher">
 <div class="indented-less">
 
 <include src="tp-testing-fragment.md#not-using-catcher-warning" />
+{% set pe_session = 'ped' if (current_week | int) < 11 else 'pe' %}
+{% set pe_session_upper = (pe_session | upper) %}
 
-<markdown>
-* Post bug reports in the following repo you created earlier:
-  * PE Dry Run: `ped`
-  * PE: `pe`
+If you 'warmed up' CATcher for the {{ pe_session_upper }} earlier, you should already have a repo named `{{ pe_session }}` in your GitHub account, created by CATcher during that warming up. If that is not the case, create a repo to post your bug reports as given in the panel below:
+
+<panel header="Creating a repo to post {{ pe_session_upper }} bugs" minimized>
+
+<include src="tp-testing-fragment.md#pe-create-repo" />
+</panel>
+<p/>
+
+* Post bug reports in the `{{ pe_session }}` repo.
 * The whole description of the bug should be in the issue description i.e., ==do not add comments to the issue==.
-</markdown>
+* Choose exactly one `type.*` label and exactly one `*.severity` label.
+
 </div>
 </tab>
 </tabs>

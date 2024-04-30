@@ -50,22 +50,13 @@ The answer should be `A` %%(i.e., Agree)%%.
 As the first statement is true but the second is not, the answer should be `B` %%(i.e., Disagree)%%.
 </box>
 
-Some questions have tags (e.g., <span class="badge bg-secondary text-light">OOP</span>, <span class="badge bg-secondary text-light">JAVA</span>). Those **tags provide additional context about the question**.
-
-<box>
-
-{{ icon_example }} In the example below, the tag indicates that the question is about OOP.
-
->**Q25:** _Objets_ are instances of a _class_. <span class="badge bg-secondary text-light">OOP</span>
-
-</box>
 A small number of questions will provide custom options to choose from.
 
 <box>
 
 {{ icon_example }} In the example below, the tag indicates that the question is about OOP.
 
->**Q26:** The course project was done using the _____ paradigm.<br>
+>**Q25:** The course project was done using the _____ paradigm.<br>
 >[A] Procedural&nbsp;&nbsp;&nbsp;[B] Functional&nbsp;&nbsp;&nbsp; [C] OOP
 
 Answer: `C`
@@ -73,7 +64,8 @@ Answer: `C`
 
 You will be given OCR forms %%(i.e., bubble sheets)%% to indicate your answers for Part 1.
 
-**You have slightly more than 1 minute for each question**, which means you need to go through the questions fairly quickly. You might not have a lot of time left to refer notes frequently during this part of the exam (i.e., you need to be fairly familiar with the content, needing to refer to notes only occasionally).
+**You have slightly more than 1 minute for each question**, which means you need to go through the questions fairly quickly. You might not have a lot of time left to refer notes frequently during this part of the exam (i.e., you need to be fairly familiar with the content, needing to refer to notes only occasionally).<br>
+ That said, based on our past observations, almost all students are able to finish this part of the exam withing the given time fairly comfortably.
 
 {{ icon_tip }} **Mark the OCR form as you go**, rather than planning to transfer your answers to the OCR form near the end. %%Reason: Given there are 100 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.%%
 
@@ -95,3 +87,4 @@ You will be given OCR forms %%(i.e., bubble sheets)%% to indicate your answers f
   * Specify requirements for a given project using various formats covered in the course
   * Review a given piece of Java code to identify areas to improve (e.g., detect coding standard violations)
 * **Yes, you may use pencils** when answering part 2.
+* If you have any queries during this part of the exam, you may ask the invigilator for clarifications.

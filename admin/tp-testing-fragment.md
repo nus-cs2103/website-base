@@ -20,13 +20,17 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 
 </div>
 
-* Create a public repo in your GitHub account with the following name:
-  * PE Dry Run: `ped`
-  * PE: `pe`
+{% set pe_session = 'ped' if (current_week | int) < 11 else 'pe' %}
+{% set pe_session_upper = (pe_session | upper) %}
+
+<div id="pe-create-repo">
+
+* Create a public repo in your GitHub account with the name `{{ pe_session }}`
 * Enable its issue tracker and add the following labels to it (the label names should be precisely as given).
 
 <include src="appendixE-gitHub.md#bug-severity" />
 <include src="tp-pe-fragment.md#type-labels" />
+</div>
 
 </panel><p/>
 </div>

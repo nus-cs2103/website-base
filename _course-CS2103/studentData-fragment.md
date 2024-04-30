@@ -556,7 +556,7 @@
 
 {% set products = {
  'CS2103-F08-1': 'FinCliq',
- 'CS2103-F08-2': 'TherapEase',
+ 'CS2103-F08-2': 'CogniCare',
  'CS2103-F08-3': 'StaffConnect',
  'CS2103-F08-4': 'TutorTrack',
  'CS2103-F09-1': 'EstateEase',
@@ -573,8 +573,8 @@
  'CS2103T-F10-3': 'CLInic',
  'CS2103T-F10-4': 'Match',
  'CS2103T-F11-1': 'nerdTrackerPlus',
- 'CS2103T-F11-2': 'LibraRy BootsHelf',
- 'CS2103T-F11-3': 'TalentTracker',
+ 'CS2103T-F11-2': 'MyBookshelf',
+ 'CS2103T-F11-3': 'Tether',
  'CS2103T-F11-4': 'Dormie',
  'CS2103T-F12-1': 'NetConnect',
  'CS2103T-F12-2': 'PressPlanner',
@@ -589,7 +589,7 @@
  'CS2103T-F14-3': 'TA Toolkit',
  'CS2103T-F14-4': 'Connectify',
  'CS2103T-T08-1': 'ImmuniMate',
- 'CS2103T-T08-2': 'DukeDelivery',
+ 'CS2103T-T08-2': 'Strack.io',
  'CS2103T-T08-3': 'CC.Bot - CareerConnect Bot',
  'CS2103T-T09-1': 'TeachStack',
  'CS2103T-T09-2': 'BookKeeper',
@@ -598,7 +598,7 @@
  'CS2103T-T10-1': 'Avengers Assemble',
  'CS2103T-T10-2': 'RapidTracer',
  'CS2103T-T10-3': 'Eventy',
- 'CS2103T-T11-1': 'Journal for Enthusiasts in Noting Genealogical Association (JENGA)',
+ 'CS2103T-T11-1': 'Gene-nie',
  'CS2103T-T11-2': 'NUSContacts',
  'CS2103T-T11-3': 'EventBook',
  'CS2103T-T11-4': 'TrAcker',
@@ -606,7 +606,7 @@
  'CS2103T-T12-2': 'LookMeUp',
  'CS2103T-T12-3': 'Hi:Re',
  'CS2103T-T12-4': 'PayBack',
- 'CS2103T-T13-1': 'Admin Book',
+ 'CS2103T-T13-1': 'MustVas',
  'CS2103T-T13-2': 'InternBook',
  'CS2103T-T13-3': 'Insura connect',
  'CS2103T-T13-4': 'SweetRewards',
@@ -617,10 +617,10 @@
  'CS2103T-T15-3': 'BandBook',
  'CS2103T-T15-4': 'TaskMasterPro',
  'CS2103T-T16-1': 'EduLink NUS',
- 'CS2103T-T16-2': 'NUSJio',
+ 'CS2103T-T16-2': 'FriendFolio',
  'CS2103T-T16-3': 'GourmetGrid',
  'CS2103T-T16-4': 'TutorTrack',
- 'CS2103T-T17-1': 'TO BE CHANGED LATER',
+ 'CS2103T-T17-1': 'SWEE',
  'CS2103T-T17-2': 'ContactSwift',
  'CS2103T-T17-3': 'FitBook',
  'CS2103T-T17-4': 'BistroBoss',
@@ -646,7 +646,7 @@
  'CS2103T-W13-1': 'LoanGuardPro',
  'CS2103T-W13-2': 'OfficeHarbor',
  'CS2103T-W13-3': 'Rainbow Dragon',
- 'CS2103T-W13-4': 'NUSTracking'
+ 'CS2103T-W13-4': 'TeamTracker'
 }%}
 
 {% set users = {

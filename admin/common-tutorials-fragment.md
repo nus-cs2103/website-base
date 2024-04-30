@@ -381,7 +381,7 @@ class PersonList{
 
 <div class="indented">
 
-* As before, paste the diagram in the _tutorial workspace_ document, and take part in the follow up discussion, as guided by the tutor.
+* As before, paste the diagram in the _tutorial workspace_ document, and take part in the follow-up discussion, as guided by the tutor.
 
 
 </div>

@@ -127,6 +127,16 @@
 </panel>
 </div>
 <p/>
+
+* **[Within 24 hours prior to the PE] Get CATcher 'warmed-up' for the PE**.<br>
+  ==Strongly recommended== to do the following about a day in advance, so that there is enough lead time to sort out any CATcher-related problems _before_ the PE.
+  1. Login to [CATcher](https://catcher-org.github.io/CATcher/),
+while choosing the `{{ course }}/T PE` as the session.
+  1. Allow CATcher to create a repo named `pe`, when asked.
+  1. Create a dummy bug report. Edit it. Delete it.<br>
+     Caution: Do not reuse these dummy bug reports (i.e., by editing them later) to submit real PE bugs.
+     As they were created outside the PE duration, they will be ignored by PE bug processing scripts.
+  1. If you encounter any problems, post in the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
 </div>
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
@@ -196,7 +206,8 @@ When the invigilator announces an identity check,
 
 ##### <span class="badge bg-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
 
-* To be submitted via TEAMMATES. You are recommended to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.
+* To be submitted via TEAMMATES. You are expected to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.<br>
+  **If you have to valid reason to leave the PE early** (e.g., having another exam right after the PE), you may leave after part II has ended and do part III later -- but note that if you fail to submit this by the hard deadline (i.e., end of the day), you will receive an <span class="text-danger">automatic penalty</span>.
 * The TEAMMATES email containing the submission link should have reached you the day before the PE. If you didn't receive it by then, you can request it to be resent from [this page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery).
 * **If TEAMMATES submission page is slow/fails to load** (all of you accessing it at the same time is likely to overload the server), wait 3-5 minutes and try again. <span class="text-danger">Do not refresh the page rapidly</span> as that will overload the server even more, and recovery can take even longer.
 
@@ -288,11 +299,9 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 <box type="important" >
 
-****This is not a bug; it's fine the way it is!**** Every time you say that in response to a legitimate bug report, you are saying something about your own standard of work as a software engineer. Don't set that standard too low, which goes totally against what we are trying to achieve in this course.
-
-**:fas-check: Yes, that needs fixing!** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that needs fixing", accept it graciously as a bug, even if you can come up with _some_ argument for it not being a bug. Your professional integrity is more valuable than a measly fraction of a mark that you might lose.<br>
-  Even when you still want to defend the behavior being labelled as problematic, instead of pretending that the behavior was a deliberate choice to begin with, you can say something like,
-  > "Thx for raising this. Indeed it didn't occur to us. But now that we have thought about it, we still feel .."
+****Yes, that can be better!**** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that can be better!", accept it graciously, even if you can come up with _some_ argument to justify the current behavior. <br>
+  Even when you still want to defend the current behavior, instead of pretending that the behavior was a deliberate choice to begin with, you can say something like,
+  > "Thanks for raising this. Indeed, it didn't occur to us. But now that we have thought about it, we still feel .."
 
 **_Some_ bugs are 'expected'.** Given the short time you had for the tP and your inexperience in SE team projects, this work is not expected to be totally bug free. The grading scheme factors that in already -- i.e., your grade will not suffer if you accept a few bugs in this phase.
 </box>
@@ -317,15 +326,14 @@ More importantly, this is not a bargaining between two parties; it's **an attemp
 
 <box type="tip" seamless>
 
-**Favor `response.NotInScope` over `response.Reject`**{.text-success}
+==**Favor `response.NotInScope` over `response.Reject`**=={.text-success}
 
-If there is even a slightest chance that the change suggested by a bug report is something that you *might* consider doing in a future version of the product, choose `response.NotInScope`.<br/>
- Choose `response.Reject` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).
+If there is even the slightest chance that the change directly suggested (or indirectly hinted at) by a bug report is an improvement that you *might* consider doing in a future version of the product, choose `response.NotInScope`.<br/>
+ Choose `response.Reject` only for bug reports that are clearly incorrect (e.g., the tester misunderstood something).<br>
+Accordingly, it is typical a team to have a lot more `response.NotInScope` bugs and very few `response.Reject` bugs.
 
-Note that `response.NotInScope` bugs earn a small amount of credit for the tester without any penalty for the dev team, unless there is a high number of such issues for a team.
+Note that `response.NotInScope` bugs earn a small amount of credit for the tester without any penalty for the dev team, unless there is an unusually high number of such bugs for a team.
 </box>
-
-**Duration:** The review period will start around 1 day after the PE and will last for 2-3 days (exact times will be announced later). However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
@@ -333,7 +341,7 @@ Bug reviewing is recommended to be done as a team as some of the decisions need 
 
 **Instructions for Reviewing Bug Reports**
 
-* **Don't freak out if there are lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
+* **Don't freak out if there are a lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
 * **Nit-picking is a good sign**: If you receive a lot of nit-picking type of bugs that make you roll your eyes, it means testers were unable to find more serious bugs. That's a good thing.
 * **Not exactly zero-sum**: As mentioned earlier, the penalty for having a specific bug is not the same as the reward for reporting that bug (it's not a _zero-sum_ game). For example, the reward for testers will be higher (because we don't expect the products to have that many bugs after they have gone through so much prior testing)
 
@@ -353,7 +361,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 <box type="info" icon=":fas-hard-hat:">
 
 * CATcher does not come with a UG, but the UI is fairly intuitive (there are tool tips too). Do post in the forum if you need any guidance with its usage.
-* Also note that CATcher hasn't been battle-tested for this phase, in particular, w.r.t. multiple team members editing the same issue concurrently. It is ideal if the team members get together and work through the issues together. If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
+* Tip: If you think others might be editing the same issues at the same time, use the `Sync` button at the top to force-sync your view with the latest data from GitHub.
 </box>
 
 * Go to [CATcher Web app](https://catcher-org.github.io/CATcher/), and login to the profile `{{ course_pair }} PE`. It will show all the bugs assigned to your team, divided into three sections:
@@ -394,7 +402,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 
 **Response** Labels:
 * `response.Accepted`: You accept it as a valid bug.
-* `response.NotInScope`: It is a valid issue but not something the team should be penalized for %%e.g., it was not related to features delivered in {{ version_final }} or lower priority than the work already doen in {{ version_final }}%%.
+* `response.NotInScope`: It is a valid issue, but fixing it is less important than the work done in the current version of the product %%e.g., it was not related to features delivered in {{ version_final }} or lower priority than the work already done in {{ version_final }}%%.
 * `response.Rejected`: What tester treated as a bug is in fact the _expected_ and _correct_ behavior (from the user's point of view), or the tester was mistaken in some other way. %%Note: Disagreement with the bug severity/type given by the tester is not a valid reason to reject the bug.%%
 * `response.CannotReproduce`: You are unable to reproduce the behavior reported in the bug after multiple tries.
 * `response.IssueUnclear`: The issue description is not clear. Don't post comments asking the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymous.
@@ -418,9 +426,9 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
   Features that work as specified by the UG but _should have been designed to work differently_ (from the end-user's point of view) fall in this category too.
 * `type.DocumentationBug`: A flaw in the documentation %%e.g., a missing step, a wrong instruction, typos%%
 </box>
+</div>
 
 **If a bug fits multiple types _equally_ well**, the team is free to choose the one they think the best match, but keep the type chosen by the tester if it is one of the types that fits the bug equally well.
-</div>
 
 * **If you disagree with the original severity assigned to the bug**, you may change it to the correct level.
 
@@ -445,9 +453,9 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 <p/>
 
 * As far as possible, ==**choose the correct `type.*`, `severity.*`, `response.*`, assignees, and duplicate status even for bugs you are not accepting**==. Reason: your _non-acceptance_  may be rejected in a later phase, in which case we need to grade it as an accepted bug.<br>
-  **If a bug's 'duplicate' status was rejected later** %%(i.e., the tester says it is not really a duplicate and the teaching team agrees with the tester)%%, it will inherit the type/severity/assignees from the 'original' bug that it was claimed to be a duplicate of.
+  **If a bug's 'duplicate' status was rejected later** %%(i.e., the tester says it is not really a duplicate and the teaching team agrees with the tester)%%, it will inherit the response/type/severity/assignees from the 'original' bug that it was claimed to be a duplicate of.
 
-* **Justify your response.** For all of the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be considered by the teaching team in later phases (when resolving disputed bug reports).<br>
+* **Justify your response.** For all the following cases, ==you must add a comment justifying your stance==. Testers will get to respond to all those cases and will be considered by the teaching team in later phases (when resolving disputed bug reports).<br>
   {{ icon_important_big_red }} If you don't provide a justification and the tester disagrees with your decision, the teaching team will have no choice but to rule in favor of the tester.
   * downgrading severity
   * non-acceptance of a bug
@@ -546,7 +554,9 @@ Tester choice | Dev choice | Tester reaction | Teacher decision | Dev accuracy  
 
 * **FAQs:**
   1. **Q.** What if the team rejected my bug report without giving a reason?<br>
-     **A.** You can disagree with the rejection, and the teaching team will rule in your favor in the next phase.
+     **A.** You can disagree with the rejection, and the teaching team will likely rule in your favor in the next phase.
+  1. **Q.** Can I add more information about the bug when I object to a dev team's response?<br>
+     **A.** Yes, you may. Given that the dev team did not get to see this addition info when they triaged the bug, the weight such additional info add to your case is lower than if you had that info in the initial bug report. Nevertheless, it can still help your cause, especially if the dev team should have thought about that info on their own, even if they were missing in the initial bug report.
 
 <p/>
 
