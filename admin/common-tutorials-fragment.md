@@ -58,9 +58,11 @@
 <div id="show-ip-peer-review-allocation-1">
 <panel header="**Review allocation for the ==first== PR review** (click to expand)" minimized >
 {% from "_course-" + course + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
+<d-table sortable searchable>
 Tutorial | Reviewer | First PR to review | Backup PR to review
----------|----------|--------------------|---------------------{% for line in ip_pr_review_allocation  %}
+---------|----------|--------------------|---------------------{% for line in ip_pr_review_allocation %}
 {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | <small>%%backup:%% {{ get_pr_link(line[3]) }}</small>{% endfor %}
+</d-table>
 {% if not ip_pr_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 <p/>
@@ -89,9 +91,11 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 <div id="show-ip-peer-review-allocation-2">
 <panel header="**Review allocation for the ==second== PR review** (click to expand)" minimized >
 {% from "_course-" + course + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
+<d-table sortable searchable>
 Tutorial | Reviewer | Second PR to review | Backup PR to review
----------|----------|---------------------|---------------------{% for line in ip_pr_review_allocation  %}
+---------|----------|---------------------|---------------------{% for line in ip_pr_review_allocation %}
 {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | <small>%%backup:%% {{ get_pr_link(line[5]) }}</small>{% endfor %}
+</d-table>
 {% if not ip_pr_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 <p/>

@@ -4,6 +4,14 @@
 {% call show_admin_page("gradeBreakdown") %}
 <div id="main">
 
+<mermaid>
+pie title
+"Participation" : 5
+"Individual Project (iP)" : 15
+"Team Project (tP)" : 50
+"exam" : 30
+</mermaid>
+
 <puml name="gradeBreakdown.png">
 @startwbs
 skinparam backgroundcolor transparent
