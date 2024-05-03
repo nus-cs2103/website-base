@@ -353,6 +353,7 @@ That said, we know the workload concern is real, and we firmly believe that no c
 Also note my **general response given at the bottom of this document**.</md></p>
 
 <table style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<tbody>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <th style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">Any other feedback about the course?</th>
 </tr>
@@ -708,6 +709,7 @@ Also, some of [my general responses](#general) are related to your comments.</ma
 </span></box>
 </td>
 </tr>
+</tbody>
 </table>
 
 <br>

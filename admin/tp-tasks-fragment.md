@@ -274,12 +274,12 @@ While on the topic of version numbers, **_milestones_ and _versions_ are not the
 In a similar vein, we use the version number to refer to the iteration as well, although they are not the same thing. So, when we say _iteration `{{ version_first }}`_, we mean _the iteration that ends in the milestone `{{ version_first }}`_ (that also happens to deliver the product version `{{ version_first }}`)
 
 </box>
-<box type="tip" seamless>
+<box type="tip" icon-size="2x" seamless>
 
 <span class="text-success">**Using parallel PRs yet?**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%
 </box>
 </box>
-<box type="info" seamless>
+<box type="info" icon=":bi-emoji-surprise:" icon-size="2x" seamless>
 
 <span class="text-info">**Shocked by iP to tP transition?**</span> Around this time you will realize how the speed you can implement things in the tP is significantly slower compared to the iP. As discouraging as this might feel, there are several ways this can contribute towards the learning outcomes of this course, and it is not expected to affect your tP grade either.
 

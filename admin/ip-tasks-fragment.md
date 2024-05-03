@@ -311,9 +311,9 @@ Note that if `A-Jar` increment does not require any code changes, you may tag th
       $ git checkout master
       $ git pull origin master
       ```
-   1. Note how the remaining <tooltip content="i.e., branches not merged to the `master` branch yet">un-merged branches</tooltip> are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.
-   1. Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
-   1. As before, tag the merge commit in the master branch and push the tag to your fork.
+   * Note how the remaining <tooltip content="i.e., branches not merged to the `master` branch yet">un-merged branches</tooltip> are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.{ texts="['4.1)','4.2)','4.3)']" }
+   * Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
+   * As before, tag the merge commit in the master branch and push the tag to your fork.
 1. Merge the remaining PRs using a procedure similar to the above.
 </div>
 </div>
@@ -361,7 +361,33 @@ That said, it is also preferable to use one paradigm as the primary approach and
 <div id="pre_A-JavaDoc">
 <div tags="m--cs2103">
 
-* Implement these three increments ==as three <tooltip content="i.e., start a branch, add some code to it, go back to the master branch (without merging the first branch), and start another branch, and so on">parallel</tooltip> branches== first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+* Implement these three increments ==as three <popover content="i.e., start a branch, add some code to it, go back to the master branch (without merging the first branch), and start another branch, and so on">parallel</popover> branches== first (branch names: `branch-A-JavaDoc`, `branch-A-CodingStandard`, `branch-Level-9`), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.
+
+<mermaid>
+{{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
+gitGraph
+commit id: "m1"
+commit id: "m2"
+branch branch-A-JavaDoc
+checkout branch-A-JavaDoc
+commit id: "b1c1"
+commit id: "b1c2"
+checkout master
+branch branch-A-CodingStandard
+checkout branch-A-CodingStandard
+commit id: "b2c1"
+checkout master
+branch branch-A-Level9
+checkout branch-A-Level9
+commit id: "b3c1"
+commit id: "b3c2"
+checkout master
+merge branch-A-JavaDoc tag: "A-JavaDoc"
+merge branch-A-CodingStandard tag: "A-CodingStandard"
+merge branch-A-Level9 tag: "A-Level9"
+commit id: "m6"
+</mermaid>
+
 * The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
 * After finishing, assuming you encountered merge conflicts (and some were rather painful to resolve), think of how such conflicts could have been reduced %%(e.g., by changing the order of merging, or minimizing parallel branches when certain type of changes are being done to the code)%%.
 </div>
@@ -731,11 +757,11 @@ This activity is worth `2x2=4` participation points.
 1. **Locate the User Guide** of the app by following the link provided in that email.
 1. **Open the Canvas survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Run the jar file** in the following manner:
-   1. Put the jar file in an empty folder, to prevent data files created by other jar files you tested earlier from interfering with the current jar file.
-   1. Open a terminal, and navigate to the folder you put the JAR file in.
-   1. {{ icon_important_big_red }} Run the `java -version` command to confirm you are using Java 11.{% if cs2103 %}<br>
+   * Put the jar file in an empty folder, to prevent data files created by other jar files you tested earlier from interfering with the current jar file.{ texts="['5.1','5.2','5.3','5.4']" }
+   * Open a terminal, and navigate to the folder you put the JAR file in.
+   * {{ icon_important_big_red }} Run the `java -version` command to confirm you are using Java 11.{% if cs2103 %}<br>
       :fab-apple: Mac user, confirm you are using the exact Java distribution we have prescribed [here](programmingLanguages.md).{% endif %}
-   1. Run the jar file using the `java -jar {file_name}` command (rather than double-clicking) in the same terminal.
+   * Run the jar file using the `java -jar {file_name}` command (rather than double-clicking) in the same terminal.
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
 1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
 1. **Submit your evaluation** using the survey.
