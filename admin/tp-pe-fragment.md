@@ -185,6 +185,15 @@ When the invigilator announces an identity check,
 <span class="text-danger">Please comply quickly</span> as non-compliance can delay the PE for everyone. This is expected to take no more than 15 seconds.
 </box>
 
+<panel type="seamless" header="%%FAQ: Some students will be testing less/more buggy products than others? Isn't that unfair?%%" >
+
+As each product is tested by 4-5 testers, after all PE bugs have been finalized, we know how 'buggy' each product is. We then use for calculating your PE-related marks. So, the marks are calibrated to match the bugginess of the product you tested.
+</panel>
+<panel type="seamless" header="%%FAQ: What if the product I tested has hardly any bugs?%%" >
+
+If the total bugs found (by _all_ testers) in a product is below a certain level, we compensate those testers by increasing the weightage given to PE-D performance, and their dev-testing results.
+</panel>
+
 -------------------------------------------------------------------------{.border-success}
 
 ##### <span class="badge bg-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
@@ -462,11 +471,19 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
   * changing the bug type
   * non-obvious duplicate
 
-* **FAQs**:
-  1. **Q**: What if the bug is real but the tester used the wrong label (e.g., used the wrong `type.*`). Can we reject that bug?<br>
-     **A**: A bug is a bug irrespective of the label used. Instead of rejecting, rectify the label.
-  1. **Q**: What if the bug the tester reported is legit but the expected behavior tester suggested is not correct?<br>
-     **A**: You should accept the bug but state that you disagree with the expected/suggested behavior. Reason: the main job of the tester is to detect bugs; suggesting a solution is optional.
+
+<panel type="seamless" header="%%FAQ: So, those who write more code will be hit with more bugs? How's that fair?%%" >
+
+Penalty for bugs is applied based on bug _density_, not bug count. For example, if Ann contributed twice as much implementation effort as Tom, and was assigned twice as many bugs as Tom, both will receive similar penalties, as both had similar bug densities.
+</panel>
+<panel type="seamless" header="%%FAQ: What if the bug is real but the tester used the wrong label (e.g., used the wrong `type.*`). Can we reject that bug?%%" >
+
+A bug is a bug irrespective of the label used. Instead of rejecting, rectify the label.
+</panel>
+<panel type="seamless" header="%%FAQ: What if the bug the tester reported is legit but the expected behavior tester suggested is not correct?%%" >
+
+You should accept the bug but state that you disagree with the expected/suggested behavior. Reason: the main job of the tester is to detect bugs; suggesting a solution is optional.
+</panel>
 <p/>
 </box>
 
@@ -552,12 +569,14 @@ Tester choice | Dev choice | Tester reaction | Teacher decision | Dev accuracy  
 </tabs>
 </div>
 
-* **FAQs:**
-  1. **Q.** What if the team rejected my bug report without giving a reason?<br>
-     **A.** You can disagree with the rejection, and the teaching team will likely rule in your favor in the next phase.
-  1. **Q.** Can I add more information about the bug when I object to a dev team's response?<br>
-     **A.** Yes, you may. Given that the dev team did not get to see this addition info when they triaged the bug, the weight such additional info add to your case is lower than if you had that info in the initial bug report. Nevertheless, it can still help your cause, especially if the dev team should have thought about that info on their own, even if they were missing in the initial bug report.
+<panel type="seamless" header="%%FAQ: What if the team rejected my bug report without giving a reason?%%" >
 
+You can disagree with the rejection, and the teaching team will likely rule in your favor in the next phase.
+</panel>
+<panel type="seamless" header="%%FAQ: Can I add more information about the bug when I object to a dev team's response?%%" >
+
+Yes, you may. Given that the dev team did not get to see this addition info when they triaged the bug, the weight such additional info add to your case is lower than if you had that info in the initial bug report. Nevertheless, it can still help your cause, especially if the dev team should have thought about that info on their own, even if they were missing in the initial bug report.
+</panel>
 <p/>
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}

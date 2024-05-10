@@ -180,12 +180,21 @@ The size of the target market is not a grading criterion. You can make it as nar
 <div tags="m--cs2103" id="functionality-expectations">
 
 **The expected level of _functionality_ is what you could achieve if each member puts in an implementation effort equivalent to ==half of the implementation effort they put into the iP==** (i.e., it is set at half because, even after adding the extra overheads of doing the project as a team, and working with an exising codebase, we don't want the total tP effort of a student to exceed the total effort of iP -- in other words, we don't want the tP to take more effort than the iP).<br>
-Furthermore, we estimate that the above-mentioned bar will equate to **about 300-400 lines of functional code** (excluding testing and documentation) per person.
+Furthermore, we estimate that the above-mentioned bar will equate to **writing about 300-400 lines of functional code** (excluding testing and documentation) per person.
 
 <box type="important" seamless>
 
   In case you happen to look at tP's of past batches in order to gauge the required effort, note that the above reflects a ==drastically lower bar from previous semesters==. For reference, the bar given to previous batches was 'same as iP effort' (not half), and the median LoC of functional code written by a student was about 850 LoC.
 </box>
+</div>
+<div tags="m--cs2113">
+
+**The expected level of _functionality_ from a team is roughly ==what you can achieve if each member contributes about the same amount of functional code as required by a <tooltip content="i.e., if all requirements were met at the _minimal_ level specified">typical iP</tooltip>==**.
+</div>
+
+==There are no extra marks for exceeding implementation _effort_ bar== stated above. Hence, _effort_ is graded on mostly an S/U basis) -- it is the _quality_ of the code that really determines the marks for _implementation_ component (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>).  So, you are better off spending more effort in improving other aspects of the project. Try to avoid adding more features than necessary, unless you are doing it out of interest. As mentioned elsewhere, a functionality just the right size and of high quality will earn more marks than a functionality that is bigger (or more difficult, or more interesting/novel) but of lower quality.
+
+<div tags="m--cs2103">
 
 <panel type="seamless" header="%%FAQ: If our team implement features x, y, and z, is that enough?%%" >
 
@@ -195,14 +204,19 @@ Yes, if it requires each member to put in about a half an iP worth of effort.
 
 No. It is possible for 100 LoC to take more effort than 300 LoC, depending on the context. So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the equivalent effort).
 </panel>
+<panel type="seamless" header="%%FAQ: If I write 300 LoC, I get full marks for implementation?%%" >
+
+There is no such guarantee, for two reasons:
+
+1. Your implementation effort is graded based on how much functionality your team produced (based on peer-testers' and tutors' estimates) and how much of that work was contributed by you as an individual member (based on team members' estimates). For example, simply copy-pasting 400+ LoC with only minor modifications is unlikely to meet this bar as it is less than an effort _equivalent_ to writing 300-400 LoC (orhalf of a typical iP effort).
+1. Implementation marks is based on both effort and quality, the latter being the primary driver (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>). So, meeting the effort bar doesn't guarantee full marks for implementation.
+</panel>
+<p/>
 </div>
-<div tags="m--cs2113">
 
-**The expected level of _functionality_ from a team is roughly ==what you can achieve if each member contributes about the same amount of functional code as required by a <tooltip content="i.e., if all requirements were met at the _minimal_ level specified">typical iP</tooltip>==**.
-</div>
-
-==You will get full marks for implementation effort== if you meet the expectation stated above. There are no extra marks for exceeding that bar. You are better off spending that effort in improving other aspects of the project. Try to avoid adding more features than necessary, unless you are doing it out of interest. As mentioned elsewhere, a functionality just the right size and of high quality will earn more marks than a functionality that is bigger (or more difficult, or more interesting/novel) but of lower quality.
-
+<modal large header="tP: Grading [extract] → " id="modal:tPexpectations-implementationGrading">
+  <include src="tp-grading.md#grading-implementation"/>
+</modal>
 
 <box type="important" tags="m--cs2113" seamless>
 

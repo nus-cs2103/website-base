@@ -50,6 +50,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 </div>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
+<div id="grading-implementation">
 
 #### <div class="bg-warning text-dark p-1">2. Project Grading: Implementation %%[{{ icon_individual }} {{ marks_tp_implementation }} marks]%%</div>
 
@@ -83,7 +84,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 **Evaluates:** how much value you contributed to the product
 
-**Method:**
+**Evaluation method:**
 
 <div tags="m--cs2103 m--tic4002">
 
@@ -118,6 +119,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 {{ embed_topic("peerEvaluations-midterm-fragment.md#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
 </div>
 
+</div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
 #### <div class="bg-warning text-dark p-1">3. Project Grading: QA %%[{{ icon_both if course == "TIC4001" else icon_individual }} {{ marks_tp_qa }} marks]%%</div>
