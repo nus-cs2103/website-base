@@ -187,11 +187,15 @@ When the invigilator announces an identity check,
 
 <panel type="seamless" header="%%FAQ: Some students will be testing less/more buggy products than others? Isn't that unfair?%%" >
 
-As each product is tested by 4-5 testers, after all PE bugs have been finalized, we know how 'buggy' each product is. We then use for calculating your PE-related marks. So, the marks are calibrated to match the bugginess of the product you tested.
+As each product is tested by 4-5 testers, after all PE bugs have been finalized, we know how 'buggy' each product is. We then use that information for calculating your PE-related marks. So, the marks are calibrated to match the bugginess of the product you tested.
 </panel>
 <panel type="seamless" header="%%FAQ: What if the product I tested has hardly any bugs?%%" >
 
 If the total bugs found (by _all_ testers) in a product is below a certain level, we compensate those testers by increasing the weightage given to PE-D performance, and their dev-testing results.
+</panel>
+<panel type="seamless" header="%%FAQ: What if the product I tested is very buggy? Am I expected to find all those bugs%%" >
+
+No. Given the PE has only a short time, we don't expect you to find _all_ bugs in the product. To get full marks, you only need to report a certain percentage of the bugs (e.g., half), or a certain quantity of bugs (the quantity also factors in the nature of the bug e.g., severity), whichever is lower.
 </panel>
 
 -------------------------------------------------------------------------{.border-success}

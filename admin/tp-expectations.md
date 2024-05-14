@@ -180,7 +180,7 @@ The size of the target market is not a grading criterion. You can make it as nar
 <div tags="m--cs2103" id="functionality-expectations">
 
 **The expected level of _functionality_ is what you could achieve if each member puts in an implementation effort equivalent to ==half of the implementation effort they put into the iP==** (i.e., it is set at half because, even after adding the extra overheads of doing the project as a team, and working with an exising codebase, we don't want the total tP effort of a student to exceed the total effort of iP -- in other words, we don't want the tP to take more effort than the iP).<br>
-Furthermore, we estimate that the above-mentioned bar will equate to **writing about 300-400 lines of functional code** (excluding testing and documentation) per person.
+Furthermore, we estimate that the above-mentioned bar is roughly equivalent to **writing about 300-400 lines of functional code** (excluding testing and documentation) per person.
 
 <box type="important" seamless>
 
@@ -202,14 +202,14 @@ Yes, if it requires each member to put in about a half an iP worth of effort.
 </panel>
 <panel type="seamless" header="%%FAQ: Is it a must to write at least 300 LoC?%%" >
 
-No. It is possible for 100 LoC to take more effort than 300 LoC, depending on the context. So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the equivalent effort).
+Not necessarily. It depeends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than 300 LoC that implements feature Y, depending on the context. So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the _equivalent_ effort).
 </panel>
-<panel type="seamless" header="%%FAQ: If I write 300 LoC, I get full marks for implementation?%%" >
+<panel type="seamless" header="%%FAQ: Still, if I write 300 LoC, I get full marks for implementation?%%" >
 
 There is no such guarantee, for two reasons:
 
-1. Your implementation effort is graded based on how much functionality your team produced (based on peer-testers' and tutors' estimates) and how much of that work was contributed by you as an individual member (based on team members' estimates). For example, simply copy-pasting 400+ LoC with only minor modifications is unlikely to meet this bar as it is less than an effort _equivalent_ to writing 300-400 LoC (orhalf of a typical iP effort).
-1. Implementation marks is based on both effort and quality, the latter being the primary driver (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>). So, meeting the effort bar doesn't guarantee full marks for implementation.
+1. Your implementation effort is graded based on how much functionality your team produced (based on peer-testers' and tutors' estimates) and how much of that work was contributed by you (based on team members' estimates). For example, simply copy-pasting 400+ LoC with only minor modifications is unlikely to meet this bar as it is less than an effort _equivalent_ to writing a typical 300-400 LoC (or half of a typical iP effort).
+1. Implementation marks are based on both effort and quality, the latter being the primary driver (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>). So, meeting the effort bar doesn't guarantee full marks for implementation.
 </panel>
 <p/>
 </div>
