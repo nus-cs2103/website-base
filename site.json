@@ -68,9 +68,9 @@
       "tags": ["m--cs2103"]
     },
     "algolia": {
-      "apiKey": "3e2fd3c3b12a363309307794dce54969",
+      "apiKey": "772d7386c7a785f7a60fec5a096311ef",
       "appId": "3DU4XTBX4T",
-      "indexName": "nus-tic-cs",
+      "indexName": "nus-tic2002-2020a",
       "searchParameters": {
         "facetFilters": [["site:nus-cs2103-ay2223s1.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
       }
