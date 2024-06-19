@@ -8,14 +8,14 @@
 <variable name="S">2</variable>
 <variable name="semester">AY2324S{{ S }}</variable>
 <variable name="period">2024 Jan-Apr</variable>
-<variable name="current_week">-1</variable>
+<variable name="current_week">15</variable>
 
 <variable name="algolia">yes</variable>
 
 <variable name="canvas_course_id">56116</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQ3yMfxtxatSX5XxWnZparVJN9UkEOu504YHyShketpCzdqQth4JDcwQwhWvOBi-XH8-gkdgMgGpg1t/pub?embedded=true</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vSDVHCsBcq7T43sGixNKhANMV1FUHn8kSfA85Q-kFlIs5wggjXEHj2XJXUZ4WPDoYxD6tSX8kwIgdf7/pub?embedded=true</variable>
 <variable name="url_coursemology_classroom">https://coursemology.org/courses/2710</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3A3QL1AEDhNxiPUcU9ARdzrE3EgSJT7tlpH-_RYAYGsys1%40thread.tacv2/conversations?groupId=bd0727b0-4b3e-4f8d-9291-f12227084d17&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
 <variable name="date_w1_start">2024-01-15</variable>
 <variable name="day_first_tutorial">Wednesday</variable>

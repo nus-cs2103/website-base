@@ -1784,7 +1784,7 @@ Not applicable this semester
 * As usual, wrap up the milestone on GitHub %%i.e., close issues/PRs/milestone (no code changes allowed)%%. Note that the deadline for this is the same for everyone (i.e., does not depend on your tutorial).
 </div>
 {#====================================================================================================================#}
-<span id="heading_demo_the_product">{{ icon_team }}~~Submit the demo video~~{% if cs2103 %}{% else %}Submit the demo video{% endif %}</span>
+<span id="heading_demo_the_product">{{ icon_team }}{% if cs2103 %}~~Submit the demo video~~{% else %}Submit the demo video{% endif %}</span>
 <div id="desc_demo_the_product">
 
 <div id="demo-instructions" >
