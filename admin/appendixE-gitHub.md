@@ -127,7 +127,7 @@ Example AB3 website using MarkBind: [here](https://damithc.github.io/ab3-markbin
 </div>
 {% elseif course == "CS2113" or course == "TIC4001"%}
 1. **Enable GitHub Pages**: Go to the {{ show_as_rounded_tab(':octicon-gear: Settings') }} tab and enable `GitHub Pages` for the `master branch /docs folder` (similar to how you did it in the iP).<br>
-   Remember to choose a theme too by clicking the {{ button('**Choose a theme**') }} button (that will create a commit in your repo that is needed in a later step.<br>
+   Update the `README.md` file to change the title from "Duke project template" to your product name. Commit and push to the master branch. <br>
    After a few minutes, confirm your tP website is available in the corresponding `github.io` URL.
 {% endif %}
 5. **Add members**. Ensure your team members have the desired level of access to your team repo.<br>
