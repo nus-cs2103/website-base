@@ -131,7 +131,7 @@
 * **[Within 24 hours prior to the PE] Get CATcher 'warmed-up' for the PE**.<br>
   ==Strongly recommended== to do the following about a day in advance, so that there is enough lead time to sort out any CATcher-related problems _before_ the PE.
   1. Login to [CATcher](https://catcher-org.github.io/CATcher/),
-while choosing the `{{ course }}/T PE` as the session.
+while choosing the `{{ course_pair }} PE` as the session.
   1. Allow CATcher to create a repo named `pe`, when asked.
   1. Create a dummy bug report. Edit it. Delete it.<br>
      Caution: Do not reuse these dummy bug reports (i.e., by editing them later) to submit real PE bugs.

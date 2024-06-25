@@ -9,7 +9,7 @@
 
 <div tags="m--cs2103">
 
-<p class="lead text-secondary"><em>Weekly briefing</em> are short weekly sessions (>1hr) conducted by the course lecturer(s) to brief you about the upcoming week.</p>
+<p class="lead text-secondary"><em>Weekly briefing</em> are short weekly sessions (>1hr) conducted by the course lecturer(s) to wrap up the current week and brief you about the upcoming week.</p>
 
 ****This course does not have _lectures_****, as the course is using the _blended learning_ mode. Course content are delivered as an online textbook accompanied by pre-recorded videos, instead of using lectures as the main method of content delivery. We still have a lecture slot/venue though.
 
@@ -26,8 +26,8 @@
 
 ****Mode****:
 {% if cs2103 %}
-* The first {{ lecture_name }} will be done using Zoom. The Zoom link will be available in [Canvas course homepage]({{ url_canvas_home }}). You can attend the live Zoom meeting or watch the recording later.
-* We expect to switch to the _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) from the 2nd week onwards.
+* The first {{ lecture_name }} will be released as a pre-recorded video.
+* From week 2, {{ lecture_name }} will be in _hybrid_ mode (i.e., you can attend F2F or via Zoom or watch the recording later) from the 2nd week onwards. The Zoom link will be available in [Canvas course homepage]({{ url_canvas_home }}).
 {% elseif cs2113 %}
 * Lectures will be conducted on-campus (i.e., F2F)
 {% else %}
@@ -43,10 +43,9 @@
 * **motivate** you to tackle the weekly tasks coming up
 * **contextualize** various 'moving parts' of the course and keep you anchored to the 'big picture'
 
-****Slides****: Briefing slides will be uploaded to Canvas *after* the briefing. Note that those slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for briefing delivery.
+****Slides****: Briefing slides will be uploaded to Canvas *after* the briefing. Those slides are not suited for printing or to be used as a reference during the lecture/exams. They are only an aid for briefing delivery.
 
-****Attendance****: Attendance for the ==first weekly briefing is compulsory== (i.e., you may join the Zoom meeting or watch the recording later).<br>
- Subsequent weekly briefings are optional to attend. You are free to speed-watch the recording to save time (instead of joining live) or skip them altogether (if you are already saturated by the rest of the course activities).
+****Attendance****: Weekly briefings are optional to attend/watch. You are free to speed-watch the recording to save time (instead of joining live) or skip them altogether (if you are already saturated by the rest of the course activities).
 
 </div>
 <div tags="m--cs2113">

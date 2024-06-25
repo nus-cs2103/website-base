@@ -6,31 +6,32 @@
 
 **To receive full {{ marks_participation}} marks allocated for participation, meet all three criteria {{ thumb("A", "info") }}, {{ thumb("B", "info") }}, and {{ thumb("C", "info") }}.**
 
-****{{ thumb("A", "info") }} Earned more than half of weekly participation points in at least 10 weeks.****
-<div tags="m--cs2103 m--cs2113">
+****{{ thumb("A", "info") }} Earned more than half of weekly participation points in at least 10 weeks.****{.text-info}
 
-Some ways you can earn weekly participation points:
+* **Ways you can earn weekly participation points:**
 
   * Weekly quiz(es), if any:
     * Quizzes open around the {{ lecture_name }} time and stay open until the next {{ lecture_name_short }} starts. In some weeks, there will be two quizzes %%(because two smaller quiz is easier for you to manage than one big quiz)%%.
     * If multiple attempts are allowed, we take the _best_ attempt, not the _latest_ attempt.
     * When awarding participation points for quizzes, we look for two conditions:
-      * Condition 1: submitted **__early__** i.e., within four days of the {{ lecture_name_short }} i.e., {{ lecture_name_short }} day (Friday) + ~~three~~ four more days -> ~~Monday~~ Tuesday %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
+      * Condition 1: submitted **__early__** i.e., within four days of the {{ lecture_name_short }} i.e., {{ lecture_name_short }} day (Friday) + four more days -> Tuesday %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
       * Condition 2: answered **__correctly__** i.e., least 70% of the answers are correct %%(reason: to discourage random answers)%%
     * You earn:
-      * 3 points if you satisfy both conditions.
-      * 2 points if only one of the conditions is satisfied.
-      * 1 point if submitted but both conditions are not satisfied.{% if cs2113 %}
+      * 3 points if both conditions are satisfied.
+      * 2 points if only one condition is satisfied.
+      * 1 point if submitted but both conditions are unsatisfied.{% if cs2113 %}
   * Weekly programming exercise (if any):
     * 3 points if you submitted correct solutions for at least 75% of the exercises
     * 2 points if you submitted correct solutions for 50-74% of the exercises
     * 1 point if you submitted correct solutions for 25-49% of the exercises{% endif %}
-  * TEAMMATES peer evaluation sessions: 2 points per session
-  * Other weekly activities:
-    * There could be other activities related to the {{ lecture_name_short }}, tutorial, or the administration of the course.
+  * Other activities related to the course (e.g., submitting a survey) can earn participation points too.
+    * Such participation-graded activities can be identified by the icon {{ icon_graded }}.
+    * Each such activity earns 2 points unless specified otherwise.
     * Refer the activity description for evaluation criteria.
-    * Each activity earns 2 points unless specified otherwise.
-</div>
+
+* **If you earn at least half of points on offer in a particular week, you are considered as 'participated' in that week** %%e.g., suppose a particular week has a weekly quiz (worth `3` points) and a peer evaluation submission worth `2` points. You need to earn at least `3` (out of the total `5`) points to be considered as 'participated' in that week%%.
+
+* **To satisfy condition A, you need to participate in at least 10 (out of 13) weeks of the semester.** All 13 weeks of the semester has participation activities.
 
 <div class="indented">
 
@@ -42,11 +43,11 @@ Some ways you can earn weekly participation points:
 </span>
 </div>
 
-****{{ thumb("B", "info") }} Received good peer evaluations****
+****{{ thumb("B", "info") }} Received good peer evaluations****{.text-info}
 
 <div class="indented">
 
-* -1 for each _professional conduct_ criterion in which you score below average (based on the average of ratings received).
+* **-1 for each _professional conduct_ criterion in which you are rated low by team members**. 'Rated low' is receiving multiple `Below Average` or `Poor` ratings.
 {{ embed_topic("peerEvaluations-midterm-fragment.md#teamMemberEvaluation-conduct", "Admin " + icon_embedding + " Peer Evaluations → Criteria (Conduct)", "3", indent=1) }}
 
 
@@ -56,11 +57,11 @@ Some ways you can earn weekly participation points:
 
 </div>
 
-****{{ thumb("C", "info") }} Sufficient {{ "tutorial" }} attendance/participation****
+****{{ thumb("C", "info") }} Sufficient {{ "tutorial" }} attendance/participation****{.text-info}
 
 <div class="indented">
 
-Low attendance/participation can affect participation marks directly (i.e., participated in fewer than 7) or indirectly (i.e., it might result in low peer evaluation ratings).
+* **-1 mark if participated in fewer than 7 tutorials.** To consider as 'participated' in a tutorial, you need to show a sufficient level of participation (just attending is not enough).
 </div>
 
 <panel type="info" header="**+ Bonus Marks**" expanded no-close no-switch >
