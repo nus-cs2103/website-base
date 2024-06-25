@@ -19,7 +19,7 @@ week3: [
   ]}
 ],
 week4: [
-  {id: 'create_pr_to_upstream', deadline: get_date(date_w4_start, 3)},
+  {id: 'create_pr_to_upstream', deadline: get_date(date_w4_start, 0)},
   {id: 'add_increments', suffix: '', increments: [
     {id: 'Level-4', title: 'ToDo, Event, Deadline'},
     {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: 'optional'},
@@ -56,7 +56,7 @@ week7: [
     {id: 'A-JavaDoc', title: 'JavaDoc'}
   ]},
   {id: 'set_up_website'},
-  {id: 'submit_the_final_version', deadline:  get_date(date_w7_start, 14)}
+  {id: 'submit_the_final_version', deadline:  get_date(date_w7_start, 11)}
 ],
 week8: [
   {id: 'evaluate_peer_ips', deadline: 'before Sat 23:59', graded: true}

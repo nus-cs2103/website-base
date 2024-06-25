@@ -183,7 +183,7 @@ On a related note, if you are not confident about the answer you've selected for
 <span id="heading_submit_midterm_peer_evaluations">Submit midterm peer evaluations on TEAMMATES</span>
 <div id="desc_submit_midterm_peer_evaluations">
 
-* **Midterm Peer Evaluation** will open on TEAMMATES. You will receive the submission link by {{ get_date(date_w8_start, 1, time='10:00') }}.<br>
+* **Midterm Peer Evaluation** will open on TEAMMATES. You will receive the submission link by {{ get_date(date_w7_start, 5, time='10:00') }}.<br>
   <include src="admin-tasks-fragment.md#teammates-link-recovery-tip" inline />
 
 {{ embed_topic("peerEvaluations.md#midtermPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation", "1", indent="2", status="expanded") }}

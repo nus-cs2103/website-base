@@ -16,7 +16,7 @@ Answering in-video quizzes can earn you [bonus participation marks](../../admin/
 
 **Heads up: PE rescheduled!**{.text-danger}
 
-Due to the Good Friday holiday, the [team project practical exam](../../admin/tp-pe.html) that we usually do on the last lecture day ({{ get_date(date_w13_start, 7, format=format_normal, time="1400-1600") }}) has been ==rescheduled on the following day (**{{ get_date(date_w13_start, 8, format=format_normal, time="1400-1600") }}**)==. Please keep your calendar clear on that slot.
+Due to the Good Friday holiday, the [team project practical exam](../../admin/tp-pe.html) that we usually do on the last lecture day ({{ get_date(date_w13_start, 4, format=format_normal, time="1400-1600") }}) has been ==rescheduled on the following day (**{{ get_date(date_w13_start, 5, format=format_normal, time="1400-1600") }}**)==. Please keep your calendar clear on that slot.
 </box>
 -->
 {% endif %}
@@ -27,7 +27,7 @@ Due to the Good Friday holiday, the [team project practical exam](../../admin/tp
 
 <include src="../../admin/courseBriefings.md#course-briefing-w3" />
 
-**The _weekly_ briefing for this week will be done in hybrid mode** -- you can attend it F2F %%(@{{ lecture_venue }} {{ get_date(date_w3_start, 0, format=format_normal, time="from 4pm") }})%%, join via Zoom, watch the recording later, or skip it altogether).<br>
+**The _weekly_ briefing for this week will be done in hybrid mode** -- you can attend it F2F %%(@{{ lecture_venue }} {{ get_date(date_w2_start, 4, format=format_normal, time="from 4pm") }})%%, join via Zoom, watch the recording later, or skip it altogether).<br>
 ==**iP Help Session**==: This week's' briefing will be followed by a F2F help session for those who are stuck in the iP due to technical difficulties. To attend that help session, be in {{ lecture_venue }} at least by 4.50pm.
 </panel>
 <p/>

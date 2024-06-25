@@ -10,7 +10,7 @@ week1: [
   {id: 'attend_the_first_lecture'}
 ],
 week2: [
-  {id: 'submit_first_post_lecture_quiz', deadline: get_date(date_w3_start, 0, time=time_lecture_start), graded: true},
+  {id: 'submit_first_post_lecture_quiz', deadline: get_date(date_w2_start, 4, time=time_lecture_start), graded: true},
   {id: 'get_connect_with_comm_channels'}
 ],
 week3: [
@@ -23,8 +23,8 @@ week4: [
 ],
 week5: [
   {id: 'submit_post_lecture_quiz', graded: true},
-  {id: 'submit_midterm_feedback_for_the_course', deadline: get_date(date_w5_start, 8), deadline_type: 'info'},
-  {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: get_date(date_w5_start, 6), graded: true}
+  {id: 'submit_midterm_feedback_for_the_course', deadline: get_date(date_w5_start, 5), deadline_type: 'info'},
+  {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: get_date(date_w5_start, 3), graded: true}
 ],
 week6: [
   {id: 'submit_post_lecture_quiz', graded: true}
@@ -34,7 +34,7 @@ week7: [
 ],
 week8: [
   {id: 'submit_post_lecture_quiz', graded: true},
-  {id: 'submit_midterm_peer_evaluations', deadline: get_date(date_w8_start, 9), graded: true}
+  {id: 'submit_midterm_peer_evaluations', deadline: get_date(date_w8_start, 6), graded: true}
 ],
 week9: [
   {id: 'submit_post_lecture_quiz', graded: true}
@@ -43,16 +43,16 @@ week10: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week11: [
-  {id: 'join_catcher_load_testing', graded: true, deadline: "during the briefing on " + get_date(date_w11_start, 0, format="MMM Do", time=""), deadline_type: 'danger'},
+  {id: 'join_catcher_load_testing', graded: true, deadline: "during the briefing on " + get_date(date_w10_start, 4, format="MMM Do", time=""), deadline_type: 'danger'},
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week12: [
-  {id: 'submit_reuse_declaration', deadline: "COMPULSORY | " + get_date(date_w13_start, 4), deadline_type: 'danger', graded: true},
-  {id: 'submit_pe_mode_selection', deadline: "COMPULSORY | " + get_date(date_w13_start, 1), deadline_type: 'danger'},
+  {id: 'submit_reuse_declaration', deadline: "COMPULSORY | " + get_date(date_w13_start, 1), deadline_type: 'danger', graded: true},
+  {id: 'submit_pe_mode_selection', deadline: "COMPULSORY | " + get_date(date_w12_start, 5), deadline_type: 'danger'},
   {id: 'submit_feedback_for_tutors'}
 ],
 week13: [
-  {id: 'submit_final_peer_evaluations', deadline: get_date(date_w13_start, 6), graded: true},
+  {id: 'submit_final_peer_evaluations', deadline: get_date(date_w13_start, 3), graded: true},
   {id: 'submit_pe_readiness_quiz', deadline: "before the PE", deadline_type: 'danger', graded: true}
 ]
 } %}

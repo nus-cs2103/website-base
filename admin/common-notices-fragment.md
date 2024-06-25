@@ -29,7 +29,7 @@ This week, ==there are things for you to do before the upcoming {{ lecture_name 
 
 <box type="warning" dismissible>
 
-We start tutorials this week, starting from {{ get_date(date_w3_start, 5, time="") }}. The [tutorial timetable]({{ url_course_website }}/admin/tutorials.html#tutorial-timetable) is on the course website. %%There are no tutorials on {{ get_date(date_w3_start, 0, time="") | trim }}.%%
+We start tutorials this week, starting from {{ get_date(date_w3_start, 2, time="") }}. The [tutorial timetable]({{ url_course_website }}/admin/tutorials.html#tutorial-timetable) is on the course website. %%There are no tutorials on {{ get_date(date_w3_start, 0, time="") | trim }}.%%
 </box>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

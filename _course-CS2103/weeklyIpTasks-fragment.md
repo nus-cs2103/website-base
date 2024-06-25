@@ -5,7 +5,7 @@ week2: [
   {id: 'learn_about_the_project'},
   {id: 'set_up_prerequisites'},
   {id: 'set_up_project'},
-  {id: 'add_increments', suffix: ' while committing frequently', deadline: get_date(date_w2_start, 7, time=time_lecture_start), increments: [
+  {id: 'add_increments', suffix: ' while committing frequently', deadline: get_date(date_w2_start, 4, time=time_lecture_start), increments: [
     {id: 'Level-0', title: 'Rename, Greet, Exit'},
     {id: 'Level-1', title: 'Echo'},
     {id: 'Level-2', title: 'Add, List'},
@@ -40,7 +40,7 @@ week3: [
 ],
 week4: [
   {id: 'use_gfmd_in_pr_description'},
-  {id: 'review_two_prs', graded: true, deadline: get_date(date_w4_start, 7, time=time_lecture_start)},
+  {id: 'review_two_prs', graded: true, deadline: get_date(date_w4_start, 4, time=time_lecture_start)},
   {id: 'learn_from_others'},
   {id: 'add_increments', suffix: ' as branches', increments:  [
     {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
@@ -71,12 +71,12 @@ week6: [
   ]},
   {id: 'finalize_features'},
   {id: 'set_up_website'},
-  {id: 'submit_the_final_version', deadline: get_date(date_w6_start, 7)}
+  {id: 'submit_the_final_version', deadline: get_date(date_w6_start, 4)}
 ],
 week7: [
   {id: 'get_more_out_of_the_ip'}
 ],
 week8: [
-  {id: 'evaluate_peer_ips', deadline: get_date(date_w8_start, 8), graded: true}
+  {id: 'evaluate_peer_ips', deadline: get_date(date_w8_start, 5), graded: true}
 ]
 } %}

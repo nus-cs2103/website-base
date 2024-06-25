@@ -55,7 +55,7 @@ week13: [
   {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time_final_submission)},
   {id: 'demo_the_product', deadline: get_date(date_final_submission, 2 if time_final_submission == "23:59" else 1)},
   {id: 'prepare_for_PE'},
-  {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 7, time="")}
+  {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 4, time="")}
 ]
 } %}
 

@@ -395,7 +395,7 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 
 * **Objectives:** (1) To get each of you to think of ways to improve AB3 (2) To detect any Java version compatibility issues between your local set up and the expected Java version.
 
-* **Submission:** via [Canvas survey named `tP: AB3 Initial Experience`]({{ url_canvas_home }}/quizzes) by ==<span class="text-danger">{{ get_date(date_w4_start, 1, time="23:59") }}</span>==
+* **Submission:** via [Canvas survey named `tP: AB3 Initial Experience`]({{ url_canvas_home }}/quizzes) by ==<span class="text-danger">{{ get_date(date_w3_start, 5, time="23:59") }}</span>==
 
 * **Steps:**
     1. Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html).
@@ -701,7 +701,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 </div>
 <div tags="m--cs2103">
 
-* **Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next {{ lecture_name }}), but given the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w7_start, 2) }}) to submit this.
+* **Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next {{ lecture_name }}), but given the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w6_start, 6) }}) to submit this.
 
 * **Objective:** This deliverable links back to the following point made earlier:
   > 1. ...
@@ -1433,7 +1433,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 </div>
 
 {% if cs2103 and semester != 'AY2324S2'%}
-* **[Heads up] Load-testing CATcher will be done during the upcoming {{ lecture_name }}** ({{ get_date(date_w11_start, 0, time="") }}), during the first 15 minutes of
+* **[Heads up] Load-testing CATcher will be done during the upcoming {{ lecture_name }}** ({{ get_date(date_w10_start, 4, time="") }}), during the first 15 minutes of
 {{ lecture_name_short }}. This is ==different from smoke-testing== you did above, and this will count for participation separately.<br>
   Therefore, remember to ==attend the {{ lecture_name_short }} (via Zoom or F2F) at least for the first 15 minutes== (this activity cannot be done any other time).
 {% endif %}
@@ -1706,7 +1706,7 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 </box>
 
 {% if cs2103 %}4. ****Submit peer evaluations for PE-D testers****: Submit your peer-evaluation of PE-D testers to indicate how well they helped your team.<br>
-   Deadline: {{ timing_badge("by " + get_date(date_w13_start, 4), "danger") }}<br>
+   Deadline: {{ timing_badge("by " + get_date(date_w13_start, 1), "danger") }}<br>
    The submission is to be done via the TEAMMATES system.<br>
    Only one team member needs to submit on behalf of the team but discuss among team members first.<br>
    Base the evaluation on the quality/usefulness of the bugs reported as well as the quantity.<br>
