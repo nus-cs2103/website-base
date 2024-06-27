@@ -47,28 +47,23 @@ week10: [
   {id: 'do_a_release'}
 ],
 week11: [
-  {id: 'deliver_the_feature'},
-  {id: 'update_user_docs', deadline: get_date(date_w11_start, 3, time="23:59")},
-  {id: 'release_as_a_jar_file', deadline: get_date(date_w11_start, 3, time="23:59")},
-  {id: 'wrap_up_penultimate_version'},
-  {id: 'demo_penultimate_version'},
-  {id: 'get_ready_for_the_PED'}
+  {id: 'alpha_test_product'},
+  {id: 'fix_alpha_test_bugs'},
+  {id: 'improve_tests_and_code'}
 ],
 week12: [
-  {id: 'attend_the_PED', deadline: 'During the weekly briefing on ' + get_date(date_w12_start, time=""), graded: true},
-  {id: 'start_fixing_PED_bugs', deadline: 'Before the tutorial'},
-  {id: 'tweak_product_as_per_PED'},
-  {id: 'draft_the_ppp'},
-  {id: 'try_pdf_conversion_early'},
-  {id: 'make_code_reposense_compatible'}
+  {id: 'update_ug_dg', deadline: get_date(date_w12_start, 3, time="23:59")},
+  {id: 'release_as_a_jar_file', deadline: get_date(date_w12_start, 3, time="23:59")},
+  {id: 'wrap_up_penultimate_version'},
+  {id: 'get_ready_for_the_PED'},
+  {id: 'attend_the_PED', deadline: get_date(date_w12_start, 4, time="1600-1800"), graded: true}
 ],
 week13: [
-  {id: 'do_final_tweaks'},
+  {id: 'start_fixing_PED_bugs'},
   {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
-  {id: 'demo_the_product', deadline: get_date(date_final_submission, 2 if time_final_submission == "23:59" else 1)},
-  {id: 'wrap_up_final_milestone', deadline: get_date(date_final_submission, 2 if time_final_submission == "23:59" else 1)},
   {id: 'prepare_for_PE'},
-  {id: 'attend_the_PE', deadline: 'during the weekly briefing on ' + get_date(date_w13_start, 4, format=format_normal, time=""), deadline_type: 'warning'},
+  {id: 'make_code_reposense_compatible'},
+  {id: 'attend_the_PE', deadline: get_date(date_w13_start, 4, format=format_normal, time="1600-1800"), deadline_type: 'warning'},
   {id: 'attend_the_makeup_PE', deadline: get_date(date_w13_start, 6, format=format_normal, time="1400-1600"), deadline_type: 'secondary'}
 ]
 } %}
@@ -78,11 +73,11 @@ week13: [
   w4: {name: "Set direction"},
   w5: {name: "Gather requirements"},
   w6: {name: "Conceptualize the product"},
-  w7: {name: "Do a practice iteration → " + version_practice, milestone: version_practice},
-  w8: {name: "mid-" + version_first},
-  w9: {name: version_first, milestone: version_first},
-  w10: {name: "mid-" + version_penultimate},
-  w11: {name: version_penultimate, milestone: version_penultimate},
-  w12: {name: "mid-" + version_final},
-  w13: {name: version_final, milestone: version_final}
+  w7: {name: "Practice iteration", milestone: version_practice},
+  w8: {name: "First feature increment", milestone: version_first},
+  w9: {name: "MVP", milestone: version_mvp},
+  w10: {name: "Alpha version", milestone: version_alpha},
+  w11: {name: "mid-" + version_penultimate},
+  w12: {name: "Release Candidate", milestone: version_penultimate},
+  w13: {name: "Public release", milestone: version_final}
 } %}

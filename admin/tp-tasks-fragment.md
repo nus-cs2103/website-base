@@ -246,7 +246,7 @@ But you can continue to use your favorite Git GUI for a more 'visual' view of yo
 As we start working towards {{ version_first }}, keep the following iteration goals in mind:
 <div class="indented">
 
-<include src="tp-timeline.md#v12-goals" />
+<include src="tp-timeline.md#v13-goals" />
 </div>
 
 <box type="info" seamless>
@@ -301,7 +301,7 @@ Finally, we don't expect each of you to put into the tP more _effort_ than you p
 As we start working towards {{ version_penultimate }}, keep the following iteration goals in mind:
 <div class="indented">
 
-<include src="tp-timeline.md#v13-goals" />
+<include src="tp-timeline.md#v15-goals" />
 </div>
 <box dismissible>
 
@@ -321,16 +321,23 @@ If you surpass the above bars (in your own estimation), you should be in a good 
 </div>
 
 {#====================================================================================================================#}
+<div id="cs2103-week11-intro">
+<box type="info" seamless tags="m--cs2103">
+
+**Have any suggestions to improve AB3?**{.text-info}
+
+Now that you have worked with AB3 codebase for a while, if you have any suggestions on how to improve AB3 (for future batches), feel free to post in the [AB3 upstream issue tracker](https://github.com/se-edu/addressbook-level3/issues).<br>
+%%Examples: places where the design/code can be simplified, hard to understand parts of the code, tips you can share with future batches, ...%%
+</box>
+</div>
+
+{#====================================================================================================================#}
 <div id="cs2103-week12-intro">
 As we start working towards {{ version_final }}, keep the following iteration goals in mind:
 <div class="indented">
 
-<include src="tp-timeline.md#v14-goals" />
+<include src="tp-timeline.md#v16-goals" />
 </div>
-<box dismissible>
-
-{{ icon_tip }} when setting the {{ version_final }} deadline in GitHub milestones, remember that the {{ version_final }} submission deadline is early in Week 13 for _everyone_ (does not vary by tutorial day). Set your own milestone deadline accordingly, or else our grading scripts will flag it as an 'unsuitable' deadline.
-</box>
 
 <box background-color="white" border-color="red">
 
@@ -1440,10 +1447,55 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_deliver_the_feature">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
-<div id="desc_deliver_the_feature">
+<span id="heading_update_ug_dg">{{ icon_individual }} Update UG and DG</span>
+<div id="desc_update_ug_dg">
 
-* Deliver the features that you planned for {{ version_penultimate }}.
+* {{ icon_important_big_red }} **Update the {{ version_penultimate }} User Guide** to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
+  * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.<br>
+  Alternatively, clearly{% else %}Clearly{% endif %} indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
+  * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → **User Guide**", "3", indent="1") }}
+
+
+* **Save the UG as a PDF file** ==using [this technique](https://se-education.org/guides/tutorials/savingPdf.html) exactly==. You'll need this file later when you create a product release. There is no specific file name convention for this version of the UG, but do use a reasonable file name: e.g., `Contacts-Pro-User-Guide.pdf`.
+
+{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → **Caution on PDF conversions**", "3", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Constraints → **Constraint-PDF-Friendly**", "2", indent="1") }}
+{{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Constraints → **Constraint-File-Size**", "2", indent="1") }}
+
+* **Update the {{ version_penultimate }} Developer Guide** similarly.
+
+{{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → **Developer Guide**", "3", indent="1") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}
+
+<div tags="m--cs2103">
+
+* **Update the _landing page_ (`docs/index.md`)**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.
+
+<modal large header="Admin → Project Deliverables → Website -> Tips for Product Screenshots" id="modal:v13-tipsForProductScreenshot">
+ <include src="tp-deliverables-website-fragment.md#tips-for-product-screenshot"/>
+</modal>
+</div>
+
+
+</div>
+{#====================================================================================================================#}
+<span id="heading_alpha_test_product">{{ icon_team }} Alpha-test the product</span>
+<div id="desc_alpha_test_product">
+
+More details to be added ...
+
+The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
+{{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
+
+</div>
+{#====================================================================================================================#}
+<span id="heading_fix_alpha_test_bugs">{{ icon_individual }} Fix alpha-test bugs</span>
+<div id="desc_fix_alpha_test_bugs">
+
+* Fix bugs found in alpha test
+* Fine-tune features, if needed
 
 * In case you didn't pay much attention to this last week, here is another reminder about what you can and can't do during {{ version_final }} _feature _freeze_.
 
@@ -1454,42 +1506,18 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 <include src="tp-tasks-fragment.md#feature-freeze-details" />
 </panel>
 </div>
-<p/>
-
-<box type="info" seamless tags="m--cs2103">
-
-**Have any suggestions to improve AB3?**{.text-info}
-
-Now that you have worked with AB3 codebase for a while, if you have any suggestions on how to improve AB3 (for future batches), feel free to post in the [AB3 upstream issue tracker](https://github.com/se-edu/addressbook-level3/issues).<br>
-  %%Examples: places where the design/code can be simplified, hard to understand parts of the code, tips you can share with future batches, ...%%
-</box>
 </div>
 {#====================================================================================================================#}
-<span id="heading_update_user_docs">{{ icon_individual }} Update user docs</span>
-<div id="desc_update_user_docs">
-<include src="tp-tasks-fragment.md#alert-time-sensitive" />
+<span id="heading_improve_tests_and_code">{{ icon_individual }} [Optional] Improve test coverage and code quality</span>
+<div id="desc_improve_tests_and_code">
 
-* {{ icon_important_big_red }} **Update the {{ version_penultimate }} User Guide** to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
-  * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.<br>
-  Alternatively, clearly{% else %}Clearly{% endif %} indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
-  * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
+* **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="1") }}
+{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="1") }}
 
-* **Save the UG as a PDF file** ==using [this technique](https://se-education.org/guides/tutorials/savingPdf.html) exactly==. You'll need this file later when you create a product release. There is no specific file name convention for this version of the UG, but do use a reasonable file name: e.g., `Contacts-Pro-User-Guide.pdf`.
+* **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level. Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually (based on the code attributed to you by the [tP code dashboard]({{ url_tp_dashboard }})).
 
-{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → Caution on PDF conversions", "3", indent="1") }}
-{{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Constraints → Constraint-PDF-Friendly", "2", indent="1") }}
-
-<div tags="m--cs2103">
-
-* **Update the _landing page_ (`docs/index.md`)**: Update to look like a real product (rather than a project for learning SE) if you haven't done so already. In particular, ==update the `Ui.png` to match the current product (<trigger trigger="click" for="modal:v13-tipsForProductScreenshot">{{ icon_tip }} tips</trigger>)==.
-
-<modal large header="Admin → Project Deliverables → Website -> Tips for Product Screenshots" id="modal:v13-tipsForProductScreenshot">
-  <include src="tp-deliverables-website-fragment.md#tips-for-product-screenshot"/>
-</modal>
-</div>
-
+{{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="1") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1549,7 +1577,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 <span id="heading_wrap_up_penultimate_version">{{ icon_team }} Wrap up {{ version_penultimate }}</span>
 <div id="desc_wrap_up_penultimate_version">
 
-* as before
+* as before %%(i.e., reschedule/close any remaining issues/PRs and close the milestone)%%
 </div>
 {#====================================================================================================================#}
 <span id="heading_review_others_dg">{{ icon_individual }} Review others' DG</span>
@@ -1668,7 +1696,7 @@ Also see:
 Test the product yourself (test each others' features) using the JAR file, report the bugs in the issue tracker, and fix them in due course.
 </div>
 {#====================================================================================================================#}
-<span id="heading_start_fixing_PED_bugs">{{ icon_individual }} Start fixing PED bugs</span>
+<span id="heading_start_fixing_PED_bugs">{{ icon_team }} Fix PE-D bugs</span>
 <div id="desc_start_fixing_PED_bugs">
 
 1. ****Triage the bugs you received in the PE-D****, by following the procedure given below:
@@ -1706,7 +1734,7 @@ As before, you may split this milestone into smaller iterations if you wish e.g.
 </box>
 
 {% if cs2103 %}4. ****Submit peer evaluations for PE-D testers****: Submit your peer-evaluation of PE-D testers to indicate how well they helped your team.<br>
-   Deadline: {{ timing_badge("by " + get_date(date_w13_start, 1), "danger") }}<br>
+   Deadline: {{ timing_badge("by " + get_date(date_w13_start, 2), "danger") }}<br>
    The submission is to be done via the TEAMMATES system.<br>
    Only one team member needs to submit on behalf of the team but discuss among team members first.<br>
    Base the evaluation on the quality/usefulness of the bugs reported as well as the quantity.<br>
@@ -1837,7 +1865,7 @@ Not applicable this semester
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit deliverables</span>
+<span id="heading_submit_final_deliverables">{{ icon_individual }}{{ icon_team }} Submit final deliverables</span>
 <div id="desc_submit_final_deliverables">
 
 * **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} {{ time_final_submission }}:00** unless stated otherwise. Note that <span class="text-danger">{{ time_final_submission }}:01 is considered late</span>, as per the Canvas deadline mechanism.
@@ -1919,9 +1947,9 @@ Not applicable this semester
 {{ embed_topic("tp-deliverables.md#tp-deliverables-executable", "Admin " + icon_embedding + " tP → Deliverables → Executable", "3", indent="2") }}
 
 
-* **Source Code**: Push the code to GitHub and tag with the version number. Source code (==please ensure the code reported by RepoSense as yours is correct;== any updates to RepoSense config files or `@@author` annotations after the deadline will be considered a late submission). Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually.{icon="fas-users"}
+* **Source Code**: Push the code to GitHub and tag with the version number.{icon="fas-users"}
 
-{{ embed_topic("tp-deliverables.md#tp-deliverables-sourcecode", "Admin " + icon_embedding + " tP → Deliverables → Source Code", "3", indent="2") }}
+{{ embed_topic("tp-deliverables.md#tp-deliverables-sourcecode", "Admin " + icon_embedding + " tP → Deliverables → Source Code", "3", indent="1") }}
 
 
 * **User Guide**:{icon="fas-users"}

@@ -39,7 +39,7 @@ week10: [
   {id: 'make_code_reposense_compatible'}
 ],
 week11: [
-  {id: 'update_user_docs'},
+  {id: 'update_ug_dg'},
   {id: 'add_sd_to_dg', deadline: 'recommended: before ' + day_first_tutorial, deadline_type: 'info'},
   {id: 'deliver_penultimate_version', deadline: 'midnight before the tutorial'},
   {id: 'review_others_dg', deadline: 'during the tutorial', graded: true}

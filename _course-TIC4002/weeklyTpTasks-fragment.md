@@ -44,7 +44,6 @@ week9: [
   {id: 'update_dg_with_design_details'}
 ],
 week10: [
-  {id: 'deliver_the_feature'},
   {id: 'wrap_up_penultimate_version'}
 ],
 week11: [

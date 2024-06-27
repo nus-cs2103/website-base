@@ -44,7 +44,8 @@
 </div>
 <div tags="m--cs2103" id="planned-enhancements-info">
 
-* {{ icon_important_big_red }} **We highly recommend adding an appendix named _Planned Enhancements_**, listing fixes you propose to add in the near future, to counter known feature flaws.
+* {{ icon_important_big_red }} **We highly recommend adding an appendix named _Planned Enhancements_**, listing fixes you propose to add in the near future, to counter known feature flaws that you are not allowed to fix in {{ version_final }}.
+  * This can be added _after_ the PE-D is over (and PE-D bug reports have been received).
   * This section may contain up to `team_size x 2` enhancements %%e.g., a 5-person team can have up to 10 enhancements%%.
   * At the start of the section, clearly state the team size. While this information is not useful for a real DG, it will help PE testers easily see if you have exceeded the allowed planned enhancements count.<br>
     For a similar reason, structure this section as a numbered list, each item in the list describing exactly one planned enhancement.<br>

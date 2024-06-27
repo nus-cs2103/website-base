@@ -34,8 +34,10 @@
 <variable name="tp_first_week">3</variable>
 <variable name="version_practice">v1.1</variable>
 <variable name="version_first">v1.2</variable>
-<variable name="version_penultimate">v1.3</variable>
-<variable name="version_final">v1.4</variable>
+<variable name="version_mvp">v1.3</variable>
+<variable name="version_alpha">v1.4</variable>
+<variable name="version_penultimate">v1.5</variable>
+<variable name="version_final">v1.6</variable>
 <variable name="version_future">v2.0</variable>
 <variable name="example_team_id">{{ course }}-T09-2</variable>
 
@@ -90,8 +92,8 @@
 <variable name="format_full_day">dddd</variable>
 <variable name="date_first_lecture">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
 <variable name="day_lecture">{{ date_first_lecture | date(format_full_day) }}</variable>
-<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 91) }}</variable>
-<variable name="time_final_submission">23:59</variable>
+<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 92) }}</variable>
+<variable name="time_final_submission">14:00</variable>
 <variable name="date_w2_start">{{ date_w1_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w4_start">{{ date_w3_start | date("YYYY-MM-DD", 7) }}</variable>
@@ -138,6 +140,7 @@
 <variable id="bullet_checkbox_red">{ icon="far-square" i-class="text-danger" }</variable>
 <variable id="bullet_checkbox_selected">{ icon="fas-square-check" }</variable>
 <variable id="bullet_checkbox_selected_green">{ icon="fas-square-check" i-class="text-success" }</variable>
+<variable id="bullet_target_green">{ icon="fas-crosshairs" i-class="text-success" }</variable>
 <variable id="bullet_tick_green">{ icon="fas-check" i-class="text-success" }</variable>
 <variable id="bullet_x_red">{ icon="fas-times" i-class="text-danger" }</variable>
 
