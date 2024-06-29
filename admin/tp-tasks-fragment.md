@@ -259,10 +259,10 @@ While we are on the topic, also note that the architecture of AB3 doesn't suit e
 
 ##### How to define version numbers?{.text-info}
 
-While there is no universal set of rules on choosing version numbers for a product, there is a convention named **[SemVer](https://semver.org/) that is well-defined and widely used**. Our tP version numbers (`{{ version_first }}`, `{{ version_penultimate }}`, `{{ version_final }}` etc.) do not follow SemVer strictly though.
+While there is no universal set of rules on choosing version numbers for a product, there is a convention named **[SemVer](https://semver.org/) that is well-defined and widely used**. Our tP version numbers (`{{ version_mvp }}`, `{{ version_penultimate }}`, `{{ version_final }}` etc.) do not follow SemVer strictly though.
 
-While on the topic of version numbers, **_milestones_ and _versions_ are not the same thing**. For example, you can have a version released in the middle of a milestone, and you can define a milestone that does not release a new version of the product. For convenience, the tP uses them interchangeably (e.g., `{{ version_first }}` is used to mean a version as well as a milestone) because its major milestones coincide with its version releases.<br>
-In a similar vein, we use the version number to refer to the iteration as well, although they are not the same thing. So, when we say _iteration `{{ version_first }}`_, we mean _the iteration that ends in the milestone `{{ version_first }}`_ (that also happens to deliver the product version `{{ version_first }}`)
+While on the topic of version numbers, **_milestones_ and _versions_ are not the same thing**. For example, you can have a version released in the middle of a milestone, and you can define a milestone that does not release a new version of the product. For convenience, the tP uses them interchangeably (e.g., `{{ version_mvp }}` is used to mean a version as well as a milestone) because its major milestones coincide with its version releases.<br>
+In a similar vein, we use the version number to refer to the iteration as well, although they are not the same thing. So, when we say _iteration `{{ version_mvp }}`_, we mean _the iteration that ends in the milestone `{{ version_mvp }}`_ (that also happens to deliver the product version `{{ version_mvp }}`)
 
 </box>
 <box type="tip" icon-size="2x" seamless>
@@ -559,7 +559,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 </div>
 </div>
 {#====================================================================================================================#}
-<span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ version_first }}</span>
+<span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ version_mvp }}</span>
 <div id="desc_prioritize_user_stories">
 
 <div class="indented">
@@ -581,22 +581,22 @@ How is that better?
 
 </box>
 
-**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration i.e., <span class="text-danger">NOT what you _can_ or _want to_ do in {{ version_first }}, but what you _must_ do in {{ version_first }}</span>. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.{% if cs2103 %}<br>%%**Why {{ version_first }} and not v1.1?** v1.1 is a mere documentation update only. {{ version_first }} will be the first version that contains functionality changes.%%{% endif %}
+**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_mvp }}, to be delivered at the end of the first project iteration i.e., <span class="text-danger">NOT what you _can_ or _want to_ do in {{ version_mvp }}, but what you _must_ do in {{ version_mvp }}</span>. We try to make it small because ==you will have only two weeks to implement {{ version_mvp }}== and coding as a team is a lot harder than writing code alone.{% if cs2103 %}<br>%%**Why {{ version_mvp }} and not v1.1?** v1.1 is a mere documentation update only. {{ version_mvp }} will be the first version that contains functionality changes.%%{% endif %}
 
 {{ icon_important_big_red }} Do not discuss features, UI, command format, or implementation details yet. That would be like _putting the cart before the horse_. At this stage we are simply trying to choose which _user needs_ to fulfill first.
 
 </div>
 
-* If the product _can_ be of some use without a given user story, that user story should be left out of {{ version_first }}, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
-* Don't worry about {{ version_penultimate  }}. You can design {{ version_penultimate }} after {{ version_first }} done.
-* Don't worry about {{ version_first }} being 'too small'. You can always add more features to {{ version_first }} if you finish it ahead of schedule.<br>
+* If the product _can_ be of some use without a given user story, that user story should be left out of {{ version_mvp }}, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
+* Don't worry about {{ version_penultimate  }}. You can design {{ version_penultimate }} after {{ version_mvp }} done.
+* Don't worry about {{ version_mvp }} being 'too small'. You can always add more features to {{ version_mvp }} if you finish it ahead of schedule.<br>
   {{ icon_tip }} You can also select an additional set of user stories that are _nice-to-have_ in v1.2, to be done but only if there's time left.
-* If possible, narrow the scope of {{ version_first }} further e.g., narrower target user, a smaller value proposition.
+* If possible, narrow the scope of {{ version_mvp }} further e.g., narrower target user, a smaller value proposition.
 
 Suggested workflow:
 * **First stage**:
   * Divide the user stories among team members.
-  * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed_ for {{ version_first }}.
+  * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed_ for {{ version_mvp }}.
 * **Second stage**:
   * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 
@@ -604,17 +604,17 @@ Suggested workflow:
 
 **FAQs**{.text-info}
 
-**Q:** What if the chosen user stories for {{ version_first }} is not enough to do a meaningful work division among team members?<br>
+**Q:** What if the chosen user stories for {{ version_mvp }} is not enough to do a meaningful work division among team members?<br>
 **A:** In that case, at a later stage, you can add more user stories until there is enough for a meaningful work distribution. But at this point focus on selecting the smallest sub-set of _must_have_ user stories only.
 
-**Q:** Should we start implementing {{ version_first }} now?<br>
-**A:** Not at all. That is scheduled several weeks later. For now, just figure out the minimal feature set required for the product. We'll let you know when it is time to start working on {{ version_first }}.
+**Q:** Should we start implementing {{ version_mvp }} now?<br>
+**A:** Not at all. That is scheduled several weeks later. For now, just figure out the minimal feature set required for the product. We'll let you know when it is time to start working on {{ version_mvp }}.
 
 {% if cs2103 %}**Q:** Should we omit user stories that are already supported by AB3?<br>
 **A:** No, you should still include them. Reason: The existing implementation might still require some work before it fits your product.
 
-**Q:** All the user stories we selected for {{ version_first }} are already supported by AB3. What now?<br>
-**A:** That's fine. It means you can get to {{ version_first }} with very little effort, which is a good thing. Once you've finished {{ version_first }}, if there is time left, you can add more things to it (e.g., {{ version_first }}.1 etc.) at that time.
+**Q:** All the user stories we selected for {{ version_mvp }} are already supported by AB3. What now?<br>
+**A:** That's fine. It means you can get to {{ version_mvp }} with very little effort, which is a good thing. Once you've finished {{ version_mvp }}, if there is time left, you can add more things to it (e.g., {{ version_mvp }}.1 etc.) at that time.
 {% endif %}
 </box>
 </div>
@@ -661,10 +661,10 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 {{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize {{ version_first }}</span>
+<span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize {{ version_mvp }}</span>
 <div id="desc_conceptualize_first_version">
 
-* Based on your user stories selected previously, conceptualize the product in terms of how it will look like at {{ version_first }} ==in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>==.<br>
+* Based on your user stories selected previously, conceptualize the product in terms of how it will look like at {{ version_mvp }} ==in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>==.<br>
   Note down the feature list in your online project notes document.
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
@@ -673,7 +673,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 
 <box type="info" icon=":fas-question:" seamless>
 
-<span class="text-info">**FAQ**: How many features should we put in {{ version_first }}?</span><br>
+<span class="text-info">**FAQ**: How many features should we put in {{ version_mvp }}?</span><br>
 **A:** Aim for the _smallest set of features the product cannot do without_. Even a most basic version of those features is enough. After completing that feature set, you can add more if there is time left.
 </box>
 
@@ -684,14 +684,14 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 <include src="tp-tasks-fragment.md#alert-time-sensitive" />
 <div tags="m--cs2113">
 
-* Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ version_first }}.
+* Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ version_mvp }}.
   * We recommend that you follow the [AB3 User Guide]({{ url_ab3_upstream_website }}/UserGuide.html) in terms of structure and format.
   * As this is a draft only and the final version will be in a different format altogether %%(i.e., in Markdown format)%%, don't waste time in formatting, copy editing etc. You can also limit this to just the 'Features' section only and omit the other sections.<br>
   While the UG draft need not be 'polished', it should be detailed enough to tell the user how to use the product features in concern.
   * IMPORTANT:
-    * Specify the precise/full command syntax for the CLI commands that you will deliver at {{ version_first }}.
-      i.e., we want you to know exactly what you plan to deliver at {{ version_first }} -- while it is fine to change this plan later, it is still important to have a plan first.
-    * Include all features that will be available in {{ version_first }}. There is no need to include features that will be delivered beyond {{ version_first }}.
+    * Specify the precise/full command syntax for the CLI commands that you will deliver at {{ version_mvp }}.
+      i.e., we want you to know exactly what you plan to deliver at {{ version_mvp }} -- while it is fine to change this plan later, it is still important to have a plan first.
+    * Include all features that will be available in {{ version_mvp }}. There is no need to include features that will be delivered beyond {{ version_mvp }}.
   * Consider including examples of expected outputs too.
   * {{ icon_important_big_red }} **Submission** [one person per team]: Save the draft UG as a PDF file, name it `{team-id}.pdf` e.g., `{{ example_team_id }}.pdf`, and upload to Canvas.
 
@@ -706,7 +706,7 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 
   Furthermore, this deliverable forces you to make some fine-grained product design decisions early, thus giving you a better idea about the complexities that lies ahead, and hence, a better sense of the effort that will be required.
 
-* **Deliverable: Collate into a document the _complete_ detailed description of the intended behavior of the product at `{{ version_first }}`.**
+* **Deliverable: Collate into a document the _complete_ detailed description of the intended behavior of the product at `{{ version_mvp }}`.**
   * The intended audience for this document is team members, not end users (i.e., this is not a user guide).
   * Use a medium that is convenient for collaboration (e.g., a GoogleDoc).
   * The content need not be polished. Don't waste time in formatting, copy editing etc.
@@ -743,7 +743,7 @@ How does the application react to such duplicate entries? Reject or accept? Why?
 
 ---
 
-{{ icon_tip }} **Recommended: Prioritize above finer aspects of features**, for example, as must-have (to implement in {{ version_first }}) and nice-to-have (i.e., to implement in {{ version_first }} only if there is time)<br>
+{{ icon_tip }} **Recommended: Prioritize above finer aspects of features**, for example, as must-have (to implement in {{ version_mvp }}) and nice-to-have (i.e., to implement in {{ version_mvp }} only if there is time)<br>
    %%e.g., you can decide one date format (to accept in user commands) as must-have and two other formats as nice-to-have.%%
 </box>
 </div>
@@ -847,7 +847,7 @@ For example, it is fine to restrict the person name to a certain length and a ch
   * Add a UI mockup of your intended final product.
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
     {{ info }} The UI mock up can be a hand-drawn sketch or created using a tool such as PowerPoint, PlantUML, Figma, etc. <br>
-    {{ icon_Q }} Can the AB3 screenshot used for this? Only in the unlikely case that your {{ version_first }} UI looks exactly the same as AB3.
+    {{ icon_Q }} Can the AB3 screenshot used for this? Only in the unlikely case that your {{ version_mvp }} UI looks exactly the same as AB3.
 
   * Update all contents to match your own project.
 
@@ -883,8 +883,8 @@ Doing this task now means you'll have less to do later, but it is OK if you want
 * **You can use the current AB3 UG for guidance** on the format/flow/tone/level-of-details etc.
   {% else %}**Move the draft UG content into the User Guide page** in your repository. Update the content/structure/formatting as necessary, to match the final form of the UG. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).{% endif %}
 * As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we strongly recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
-* **The scope of this update can be `{{ version_first }}`** i.e., only update features that you plan to have in that version.<br>
-  Furthermore, as you haven't implemented `{{ version_first }}` yet, this update will be somewhat speculative. The content may need to be tweaked later if the actual implementation of the feature deviated from the current plan.
+* **The scope of this update can be `{{ version_mvp }}`** i.e., only update features that you plan to have in that version.<br>
+  Furthermore, as you haven't implemented `{{ version_mvp }}` yet, this update will be somewhat speculative. The content may need to be tweaked later if the actual implementation of the feature deviated from the current plan.
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
   <include src="tp-tasks-fragment.md#divideDocs"/>
@@ -995,19 +995,19 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration (`{{ version_first }}`)</span>
+<span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration (`{{ version_mvp }}`)</span>
 <div id="desc_plan_the_next_iteration">
 
 <div class="indented-level2">
 
 </div>
 
-* {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
+* {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_mvp }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
   * ==**Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)**== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
   * **Avoid depth-first implementations**: "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of breadth-first iterative process. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet.
 * {{ icon_team }} **Divide the work among the team members** i.e., the work required for the current iteration.
-* {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a placeholder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_first }}`%%
+* {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a placeholder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_mvp }}`%%
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_implementing_the_next_version">{{ icon_individual }} Start implementing the next version</span>
@@ -1016,7 +1016,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 * If you have time, start implementing v1.2.
 </div>
 {#====================================================================================================================#}
-<span id="heading_start_implementing_first_version">{{ icon_individual }} Start implementing {{ version_first }}</span>
+<span id="heading_start_implementing_first_version">{{ icon_individual }} Start implementing {{ version_mvp }}</span>
 <div id="desc_start_implementing_first_version">
 
 <div class="indented-level2">
@@ -1046,7 +1046,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 </box>{% endif %}
 </div>
 
-* Start implementing {{ version_first }}, by adding code in small steps, while working in parallel, aiming to produce a VERY simple working version after one week, and a bit more functional version at the end of iteration (i.e., after two weeks).
+* Start implementing {{ version_mvp }}, by adding code in small steps, while working in parallel, aiming to produce a VERY simple working version after one week, and a bit more functional version at the end of iteration (i.e., after two weeks).
 
 * See the panel below for our recommendations on the project workflow.
 
@@ -1070,7 +1070,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 * **Adjust process rigor**, as explained in the panel below:
 
-{{ embed_topic("appendixE-gitHub.md#workflow-after-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow (after " + version_first + ")**", "3", indent="1") }}
+{{ embed_topic("appendixE-gitHub.md#workflow-after-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow (after " + version_mvp + ")**", "3", indent="1") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1108,7 +1108,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 {{ embed_topic("tp-tasks-fragment.md#desc_plan_the_next_iteration", "%%**[Repeated from last week]**%% Admin " + icon_embedding + " tP: Week 7: Plan the next iteration", "1", status="expanded", indent="1") }}
 
-* **Push as hard as you can afford to** in this iteration: While we have kept the expectations bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_first }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
+* **Push as hard as you can afford to** in this iteration: While we have kept the expectations bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_mvp }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
 At the same time, we recommend you should also play it safe by aiming to reach a _smallest possible_ version early and squeeze more in only if there is time left.
 
 * {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this course because incremental delivery, among other things, improves the _visibility_ of your work.">(reason)</popover>%%.
@@ -1148,7 +1148,7 @@ There are several options you can choose from:
     Tests: [`seedu.addressbook.data.AddressBookTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java)
 </div>
 {#====================================================================================================================#}
-<span id="heading_deliver_first_version">{{ icon_team }} Manage the iteration, and deliver {{ version_first if cs2113 else version_mvp }}</span>
+<span id="heading_deliver_first_version">{{ icon_team }} Manage the iteration, and deliver {{ version_mvp if cs2113 else version_mvp }}</span>
 <div id="desc_deliver_first_version">
 
 <div tags="m--cs2103">
@@ -1158,13 +1158,13 @@ There are several options you can choose from:
 Note that the product you deliver at the end of this iteration must be working although the functionality is basic.
 </box>
 
-* {{ icon_team }} **Manage the iteration** `{{ version_first }}`, and reach the milestone `{{ version_first }}` (which delivers product version `{{ version_first }}`) as explained in the panel below.
+* {{ icon_team }} **Manage the iteration** `{{ version_mvp }}`, and reach the milestone `{{ version_mvp }}` (which delivers product version `{{ version_mvp }}`) as explained in the panel below.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 
-* **Wrap up the iteration/milestone**. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_first }}` (i.e., you can still get a 'working product' without them).
+* **Wrap up the iteration/milestone**. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_mvp }}` (i.e., you can still get a 'working product' without them).
 
-* **Do a release on GitHub**, when the product `{{ version_first }}` is ready. Requirements:
+* **Do a release on GitHub**, when the product `{{ version_mvp }}` is ready. Requirements:
   * **==Write a fairly detailed _Release Note_==** in the text field GitHub provides for the description of the release. In particular, describe what has been changed (compared to AB3). This is just an itemized list of _What's New_ -- no need to be as elaborate as a user guide.<br>
     **Include screenshots** (or screen recordings) of your product in action, featuring the changes you've done.<br>
     {{ icon_important_big_red }} <span class="text-danger">These release notes will be checked by the teaching team</span> to verify (a) that they are written reasonably well, and, (b) that the features mentioned in there show the product has reached the MVP level of functionality.
@@ -1172,17 +1172,17 @@ Note that the product you deliver at the end of this iteration must be working a
 </div>
 <div tags="m--cs2113">
 
-* When the {{ version_first }} is ready, do a release on GitHub. Remember to upload the jar file as well.
+* When the {{ version_mvp }} is ready, do a release on GitHub. Remember to upload the jar file as well.
 * Wrap up the milestone on GitHub.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
 </div>
 </div>
 {#====================================================================================================================#}
-<span id="heading_wrap_up_first_version">{{ icon_team }} Wrap up {{ version_first }}</span>
+<span id="heading_wrap_up_first_version">{{ icon_team }} Wrap up {{ version_mvp }}</span>
 <div id="desc_wrap_up_first_version">
 
-* **Wrap up the milestone** using a git tag `{{ version_first }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, you can reassign them to a future milestone, provided they are not _essential_ for the `{{ version_first }}` (i.e., the you can still get a 'working product' without them).
+* **Wrap up the milestone** using a git tag `{{ version_mvp }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, you can reassign them to a future milestone, provided they are not _essential_ for the `{{ version_mvp }}` (i.e., the you can still get a 'working product' without them).
 
 </div>
 {#====================================================================================================================#}
@@ -1194,7 +1194,7 @@ Note that the product you deliver at the end of this iteration must be working a
 This is a good time to get familiar with the diagramming tools used by the tP.
 </box>
 
-* {{ icon_individual }} **Each member is expected to update at least one UML diagram in the DG**, to match the changes you've done in `{{ version_first }}`. You may do this towards the end of `{{ version_first }}`, or soon after you finish it.
+* {{ icon_individual }} **Each member is expected to update at least one UML diagram in the DG**, to match the changes you've done in `{{ version_mvp }}`. You may do this towards the end of `{{ version_mvp }}`, or soon after you finish it.
 * Updating the DG text to match the diagrams is optional (it can be done in `{{ version_penultimate }}`).
 * FYI, the panel below has some DG tips, some of which are related to drawing diagrams.
 
@@ -1214,16 +1214,16 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_first }}</span>
+<span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_mvp }}</span>
 <div id="desc_do_an_informal_demo">
 
 <div id="demo">
 
-1. **Run your app using the latest released version `{{ version_first }}`** <span tags="m--cs2103">(or `{{ version_first }}b`, if applicable)</span>. {% if cs2113 %}
+1. **Run your app using the latest released version `{{ version_mvp }}`** <span tags="m--cs2103">(or `{{ version_mvp }}b`, if applicable)</span>. {% if cs2113 %}
 1. **Take screenshots** of each available feature in action.
-1. **Add those screenshots to the shared workspace.**<br>You can also add the screenshots to your _project notes_ document with an appropriate heading e.g., `{{ version_first }} features demo`, and reuse them as necessary in the documentation.{% else %}
+1. **Add those screenshots to the shared workspace.**<br>You can also add the screenshots to your _project notes_ document with an appropriate heading e.g., `{{ version_mvp }} features demo`, and reuse them as necessary in the documentation.{% else %}
 1. **Take screenshots** of ==each updated feature in action== (if the feature is not obvious from the screenshot, you can annotate the screenshot to draw attention to where the feature appears in the screenshot).
-1. **Add those screenshots to your _project notes_ document** (the same document specified in [this page](teamList.md)) with an appropriate heading e.g., `{{ version_first }} features demo`.<br> Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.{% endif %}
+1. **Add those screenshots to your _project notes_ document** (the same document specified in [this page](teamList.md)) with an appropriate heading e.g., `{{ version_mvp }} features demo`.<br> Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.{% endif %}
 </div>
 </div>
 {#====================================================================================================================#}
@@ -1355,7 +1355,7 @@ Here are some reasons:
 <div id="desc_do_a_release">
 <include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `{{ version_first }}.1` (or `{{ version_penultimate }}.trial`). ==Ensure that the jar file works as expected in an empty folder and using Java 11==, by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `{{ version_mvp }}.1` (or `{{ version_penultimate }}.trial`). ==Ensure that the jar file works as expected in an empty folder and using Java 11==, by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 * {{ icon_tip }} If you want to smoke-test your JAR file on an OS that is not available within your team, you can post a request in the forum to see if anyone else in the class can help you smoke-test it on that OS.
 </div>
 {#====================================================================================================================#}
@@ -1508,7 +1508,7 @@ The panel below contains guidelines your peers will use when determining bugs in
 {% if cs2103 %}==**To reduce workload, this deliverable <span class="text-danger">has been removed from tP requirements</span> this semester.**=={% endif %}
 <s>
 
-* ~~As was done in `{{ version_first }}`,~~
+* ~~As was done in `{{ version_mvp }}`,~~
   * ~~Run your application using the ==JAR file== that you released for `{{ version_penultimate }}`.~~
   * ~~Take screenshots of each available feature in action (or screen-record a demo -- need not be polished).~~
   * ~~Add those screenshots (or upload the demo video somewhere and give the link) to your _project notes_ document with an appropriate heading e.g., `{{ version_penultimate }} features demo`.~~

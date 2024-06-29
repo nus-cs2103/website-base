@@ -1,4 +1,4 @@
 
 * Briefing
-* {{ version_first }} demo
+* {{ version_mvp }} demo
 * Project work

@@ -98,7 +98,7 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 #### {{ badge("Week " + (tfw + 3))}} {{ weekly_tp_themes.w6.name }}
 
-* Decide how the product will look like at {{ version_first }}.{{ bullet_target_green }}
+* Decide how the product will look like at {{ version_mvp }}.{{ bullet_target_green }}
 * Record that product concept in the form of a user guide.
 
 </div>
@@ -117,7 +117,7 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 * Plan the next iteration i.e., decide who will do which parts by when.
 
 
-#### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iteration 1 → {{ version_first }}
+#### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iteration 1 → {{ version_mvp }}
 
 * This is the first proper iteration.{{ bullet_target_green }}
 * Aim to deliver an <tooltip content="Minimum Viable Product">MVP</tooltip> version of the product.

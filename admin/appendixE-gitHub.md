@@ -186,7 +186,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 </span>
 
-* Create following milestones : <span tags="m--cs2103">`v1.1`,</span>`{{ version_first }}`, `{{ version_penultimate }}`,`{{ version_final }}`
+* Create following milestones : `{{ version_mvp }}`, `{{ version_penultimate }}`,`{{ version_final }}`
 
 * You may configure other project settings as you wish. e.g. more labels, more milestones
 
@@ -232,7 +232,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 <include src="appendixB-policies.md#policy-reuse"/>
 </modal>
 
-* **Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project. Normally, we expect you to follow the forking workflow at least until (and including) {{ version_first }} after which you may tweak the workflow {{ version_penultimate }}. However, after following the forking workflow for 2-3 PRs (per person) in {{ version_first }}, if you are confident that you can follow the forking workflow well, you may switch to the <trigger trigger="click" for="modal:appErecommendedWorkflow-featurebranchworkflow">feature branch workflow</trigger> workflow <tooltip content="i.e., without waiting for the end of {{ version_first }}">earlier</tooltip>.
+* **Follow the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger>** in your project. Normally, we expect you to follow the forking workflow at least until (and including) {{ version_mvp }} after which you may tweak the workflow {{ version_penultimate }}. However, after following the forking workflow for 2-3 PRs (per person) in {{ version_mvp }}, if you are confident that you can follow the forking workflow well, you may switch to the <trigger trigger="click" for="modal:appErecommendedWorkflow-featurebranchworkflow">feature branch workflow</trigger> workflow <tooltip content="i.e., without waiting for the end of {{ version_mvp }}">earlier</tooltip>.
 * {{ icon_tip }} **Protect the `master` branch**: You can use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs. We suggest the following:
   * Go the the {{ show_as_rounded_tab(':octicon-gear: settings') }} of your team repo.
   * Click on the `Branches` option on the navigation menu on the left.
@@ -283,7 +283,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 </div>
 <div id="workflow-after-v11">
 
-**After following the given workflow for at least <tooltip content="i.e., until the end of {{ version_first }}">one iteration</tooltip>, optionally, you may adjust the process rigor** to suit your team's pace. Here are some examples:
+**After following the given workflow for at least <tooltip content="i.e., until the end of {{ version_mvp }}">one iteration</tooltip>, optionally, you may adjust the process rigor** to suit your team's pace. Here are some examples:
 
 * **Switch to a lighter workflow**:
   * While _forking workflow_ is the safest (and is recommended), it is also rather heavy. You may switch to a simpler workflow if you wish. Refer the textbook to find more about [alternative workflows](../se-book-adapted/chapters/revisionControl.html):
