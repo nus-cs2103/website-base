@@ -22,9 +22,8 @@ week6: [
   {id: 'get_familiar_with_the_code_base'}
 ],
 week7: [
-  {id: 'do_a_practice_iteration', deadline: get_date(date_w7_start, 10, time="23:59")},
+  {id: 'do_a_practice_iteration', deadline: get_date(date_w7_start, 3, time="23:59")},
   {id: 'update_website_aboutus_readme'},
-  {id: 'update_the_ug'},
   {id: 'update_dg_user_stories_etc'},
   {id: 'plan_the_next_iteration'},
   {id: 'start_implementing_the_next_version'}
@@ -32,7 +31,7 @@ week7: [
 week8: [
   {id: 'ensure_you_know_tp_expectations'},
   {id: 'start_proper_milestone_management'},
-  {id: 'add_first_functionality_increment'}
+  {id: 'add_first_functionality_increment', deadline: get_date(date_w8_start, 3, time="23:59")}
 ],
 week9: [
   {id: 'deliver_first_version', deadline: get_date(date_w9_start, 3, time="23:59")},

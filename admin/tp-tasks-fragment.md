@@ -170,13 +170,14 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 <div id="common-mistakes">
 <box type="important" seamless icon=":fas-skull:">
 
-<span class="text-danger">**Lookout for these mistakes**</span> which were the most common in previous runs of the course:
+<span class="text-danger">****Lookout for these mistakes****</span> which were the most common in previous runs of the course:
 
 * **Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/{{ "basic" if cs2113 else "intermediate" }}.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should)** of Java method header comments.{ icon="fas-skull" i-class="text-danger" }
 * **Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject)**.<br>
   Caution: This is <span class="text-danger">very hard to rectify later</span>, after PR containing the commits have been merged.<br>
   %%Reason: While Git allows editing past commits, it changes their timestamp, which affects your weekly code contribution stats (which are factored into evaluating the consistency of your coding work over the project duration)%%
 * **Forgetting to do each PR from a separate branch** (i.e., send PR from the `master` branch) of your fork. This error means your PR will not be considered as _following the forking workflow correctly_.
+* **Not giving enough PR review comments.** Remember to do proper PR reviews throughout the tP, at least for non-trivial changes, as the quality and quantity of PR review comments you have given to peers affect your [tP marks](tp-grading.html) (under the _project management_ aspect).
 </box>
 </div>
 {#====================================================================================================================
@@ -202,7 +203,7 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent="1") }}
 
 
-{{ icon_important_big_red }} **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. We prefer not to waste admin resources processing requests for partial credit for work that did not follow the instructions precisely, unless the progress was not detected due to a bug in the script.
+{{ icon_important_big_red }} **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. There will be no partial credit for work that did not follow the instructions precisely, but in most cases you can get the work to be counted simply by rectifying the non-compliance.
 </box>
 
 <box type="tip" icon=":fas-chart-gantt:" icon-size="3x" seamless>
@@ -234,35 +235,25 @@ If you have been using Sourcetree (or other GUI) for Git before, we strongly rec
 But you can continue to use your favorite Git GUI for a more 'visual' view of your repo, side-by-side with the CLI e.g., from Sourcetree, you can open a gitbash terminal, run the command in that terminal, and see the result in the GUI.
 </box>
 
-<box dismissible id="prReviewsMatter">
-
-{{ icon_important_big_red }} **PR review comments matter!** Remember to do proper PR reviews throughout the tP, at least for non-trivial changes, as the quality and quantity of PR review comments you have given to peers affect your [tP marks](tp-grading.html) (under the _project management_ aspect).
-</box>
-
 </div>
 {#====================================================================================================================#}
 <div id="cs2103-week8-intro">
 
-As we start working towards {{ version_first }}, keep the following iteration goals in mind:
-<div class="indented">
+<include src="tp-timeline.md#v12-goals" />
 
-<include src="tp-timeline.md#v13-goals" />
-</div>
 
 <box type="info" seamless>
 
 **Feel free to improve AB3 in any way you see fit.**{.text-info} While not very 'buggy', AB3 is not 'perfect' either (it is not meant to be a 'model solution'). In particular, ==find and fix any bugs it has==. If you are not sure if something is a bug or an intended behavior, you can post in the forum to check.<br>
 While we are on the topic, also note that the architecture of AB3 doesn't suit every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not try to apply AB3 as a template for _every_ other project you encounter in the future**.
 </box>
-<box>
-
-<include src="tp-tasks-fragment.md#prReviewsMatter" />
-
-</box>
 
 </div>
 {#====================================================================================================================#}
 <div id="cs2103-week9-intro">
+
+<include src="tp-timeline.md#v13-goals" />
+
 
 <box>
 
@@ -298,10 +289,9 @@ Finally, we don't expect each of you to put into the tP more _effort_ than you p
 {#====================================================================================================================#}
 <div id="cs2103-week10-intro">
 
-As we start working towards {{ version_penultimate }}, keep the following iteration goals in mind:
 <div class="indented">
 
-<include src="tp-timeline.md#v15-goals" />
+<include src="tp-timeline.md#v14-goals" />
 </div>
 <box dismissible>
 
@@ -322,6 +312,9 @@ If you surpass the above bars (in your own estimation), you should be in a good 
 
 {#====================================================================================================================#}
 <div id="cs2103-week11-intro">
+
+<include src="tp-timeline.md#v15-goals" />
+
 <box type="info" seamless tags="m--cs2103">
 
 **Have any suggestions to improve AB3?**{.text-info}
@@ -332,12 +325,9 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 </div>
 
 {#====================================================================================================================#}
-<div id="cs2103-week12-intro">
-As we start working towards {{ version_final }}, keep the following iteration goals in mind:
-<div class="indented">
+<div id="cs2103-week13-intro">
 
 <include src="tp-timeline.md#v16-goals" />
-</div>
 
 <box background-color="white" border-color="red">
 
@@ -366,7 +356,7 @@ As we start working towards {{ version_final }}, keep the following iteration go
 
 <box>
 
-<include src="tp-tasks-fragment.md#prReviewsMatter" />
+{{ icon_important_big_red }} **PR review comments matter!** Remember to do proper PR reviews throughout the tP, at least for non-trivial changes, as the quality and quantity of PR review comments you have given to peers affect your [tP marks](tp-grading.html) (under the _project management_ aspect).
 </box>
 </div>
 {#====================================================================================================================#}
@@ -995,8 +985,14 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 **Strongly recommended to do this as a team activity** (preferably F2F, or else connected via Zoom/MST), at least until everyone has merged a few PRs for this iteration. That will help you proceed faster (e.g., a PR can be reviewed immediately after it has been created) and will also make it easy for you to help each other w.r.t. to the workflow matters.
 </box>
 
-* **Tasks 2, 3, and 4 (given in subsequent sections) are the documentation updates to be done** in this iteration.
+* **Tasks 2 and 3 (given in subsequent sections) are the documentation updates to be done** in this iteration.
 * **Don't forget to 'wrap up' the milestone** (as explained in the panel above), after the work is done.
+
+<panel type="seamless" header="**FAQ:** What's the deadline for tP iterations?">
+
+**A:** The deadline for tP iterations is the `Thursday 23:59` in the week it is due, unless a different date is specified in the instructions of that iteration.
+</panel>
+
 </div>
 {#====================================================================================================================#}
 <span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration (`{{ version_first }}`)</span>
@@ -1010,22 +1006,6 @@ Furthermore, these sections will be graded at the final project evaluation, and 
   * ==**Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)**== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
   * **Avoid depth-first implementations**: "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of breadth-first iterative process. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet.
-  * **[Recommended, Optional] Break the iteration into two _mini_ iterations** as follows:
-
-<div class="indented-level2" id="mini-iterations-panel">
-<panel type="info" header="Splitting `{{ version_first }}` into two **_mini_ iterations**" expanded>
-
-* `{{ version_first }}`: the first working version of your product, to be delivered by the mid-milestone (i.e., in about one week). As this is an internal milestone, the exact deadline is upto your team.
-* `{{ version_first }}b`: an even more functional version of the product, to be delivered by the end of the full iteration (i.e., in two weeks)
-
-This goal of this 'optimization' is to reduce the risk of an <tooltip content="i.e., you have no working version of the product by the time you reach the iteration deadline.">iteration deadline _overrun_</tooltip>. As a side benefit, it also gives you more opportunities to practice iteration planning.
-
-The reason for naming the earlier milestone as `{{ version_first }}` is so that even if you fail to finish the second one, you can still get credit for reaching `{{ version_first }}` (which is the milestone tracked by grading scripts) -- think of the first iteration as _minimal deliverables for `{{ version_first }}`_ and the second one as containing _do-if-there-is-time_ improvements.
-
-Each mini iteration should deliver a working product, not just do half of the tasks planned for the full iteration. Otherwise, it defeats the purpose of this optimization.
-</panel>
-</div>
-
 * {{ icon_team }} **Divide the work among the team members** i.e., the work required for the current iteration.
 * {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a placeholder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_first }}`%%
 </div>
@@ -1128,7 +1108,6 @@ Each mini iteration should deliver a working product, not just do half of the ta
 
 {{ embed_topic("tp-tasks-fragment.md#desc_plan_the_next_iteration", "%%**[Repeated from last week]**%% Admin " + icon_embedding + " tP: Week 7: Plan the next iteration", "1", status="expanded", indent="1") }}
 
-* **{{ icon_important_big_red }} Iteration deadline: week 9 Thu 23:59** (i.e., in about 2 weeks).
 * **Push as hard as you can afford to** in this iteration: While we have kept the expectations bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_first }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
 At the same time, we recommend you should also play it safe by aiming to reach a _smallest possible_ version early and squeeze more in only if there is time left.
 
@@ -1169,7 +1148,7 @@ There are several options you can choose from:
     Tests: [`seedu.addressbook.data.AddressBookTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java)
 </div>
 {#====================================================================================================================#}
-<span id="heading_deliver_first_version">{{ icon_team }} Manage the iteration, and deliver {{ version_first }}</span>
+<span id="heading_deliver_first_version">{{ icon_team }} Manage the iteration, and deliver {{ version_first if cs2113 else version_mvp }}</span>
 <div id="desc_deliver_first_version">
 
 <div tags="m--cs2103">
@@ -1497,7 +1476,7 @@ The panel below contains guidelines your peers will use when determining bugs in
 * Fix bugs found in alpha test
 * Fine-tune features, if needed
 
-* In case you didn't pay much attention to this last week, here is another reminder about what you can and can't do during {{ version_final }} _feature _freeze_.
+* In case you didn't pay much attention to this last week, here is another reminder about what you can and can't do during {{ version_final }} _feature freeze_.
 
 <div class="indented-level1">
 

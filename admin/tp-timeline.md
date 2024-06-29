@@ -182,7 +182,7 @@ Note how the 'Learning outcome' appears _above_ 'Product goal', and how the prod
 
 #### {{ badge("W" + (tfw + 7))}} Iter.4 %%[ --{{ weekly_tp_themes.w10.name }}-- ]%%
 
-<div id="v15-goals" class="indented">
+<div id="v14-goals" class="indented">
 <box header="****{{ version_alpha }}****" light>
 
 * **Learning outcome**: Able to tweak the product/project plan to match the available time/resources.{{ bullet_target_green }}

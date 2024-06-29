@@ -261,14 +261,14 @@ Information relevant to the week's {{ "lecture" if tic4001 or tic4002 else "tuto
 
 {% if ip %}
 
-<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">iP</h2>
+<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">{{ icon_individual }} iP</h2>
 
 <include src="../../admin/ip-w{{ week_num }}.md#body" />
 
 {% endif %}
 {% if tp %}
 
-<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">tP: {{ theme.name }}</h2>
+<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">{{ icon_team }} tP: {{ theme.name }} {% if theme.milestone %}<small><span style="float: right;" class="text-warning p-1"> → <md>{{ theme.milestone }}</md></span></small>{% endif %}</h2>
 
 <include src="../../admin/tp-w{{ week_num }}.md#body" />
 {% endif %}
