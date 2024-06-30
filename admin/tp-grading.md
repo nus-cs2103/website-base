@@ -225,7 +225,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
    * issue tracker (with good task definition, assignment, and tracking)
    * PRs, and PR reviews
 * Good version control, based on the repo.
-* Reasonable attempt to use the _forking workflow_ at least for the early part of the project.
+* Reasonable attempt to use the prescribed workflows.
 * Good use of buffers %%(opposite: everything at the last minute)%%.
 
 
@@ -239,7 +239,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 
 **Grading criteria:** Do the following to get a good grade for this aspect:
 * Do close to an equal share of the team tasks.
-* Have your code merged in at least {{ "five" if tic4002 else "four" }} of weeks {{ "6, " if tic4002 }}7, 8, 9, 10, 11, 12
+* Have commits in four of weeks 7, 8, 9, 10, 11, 12
 
 </div>
 

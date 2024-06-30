@@ -7,7 +7,7 @@
 
 <div class="indented-level2">
 
-<panel header="%%Admin {{ icon_embedding }} **tP → week 5 → Choose user stories for v1.0**%%" expanded >
+<panel header="%%Admin {{ icon_embedding }} **tP → week 5 → Choose user stories for the MVP version**%%" expanded >
 
 <include src="../../admin/tp-tasks-fragment.md#desc_prioritize_user_stories" />
 </panel>

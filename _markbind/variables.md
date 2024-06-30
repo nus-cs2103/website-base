@@ -140,6 +140,7 @@
 <variable id="bullet_checkbox_red">{ icon="far-square" i-class="text-danger" }</variable>
 <variable id="bullet_checkbox_selected">{ icon="fas-square-check" }</variable>
 <variable id="bullet_checkbox_selected_green">{ icon="fas-square-check" i-class="text-success" }</variable>
+<variable id="bullet_important_red">{ icon="fas-circle-exclamation" i-class="text-danger" }</variable>
 <variable id="bullet_target_green">{ icon="fas-crosshairs" i-class="text-success" }</variable>
 <variable id="bullet_tick_green">{ icon="fas-check" i-class="text-success" }</variable>
 <variable id="bullet_x_red">{ icon="fas-times" i-class="text-danger" }</variable>

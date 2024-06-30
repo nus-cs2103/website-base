@@ -63,7 +63,7 @@ week13: [
   w3: {name: "Kickoff"},
   w4: {name: "Set direction"},
   w5: {name: "Gather requirements"},
-  w6: {name: "Conceptualize the product"},
+  w6: {name: "Define the MVP"},
   w7: {name: "Get ready for iterations"},
   w8: {name: "mid-" + version_mvp},
   w9: {name: version_mvp, milestone: version_mvp},

@@ -42,7 +42,7 @@
 
 
 {% macro show_admin_section_to_read(heading, priority, source, is_flat=false) %}
-{% set panel_title %} Admin {{ icon_embedding | safe }} {{ heading }} {{ show_stars(priority) }}{% endset %}
+{% set panel_title %} Admin {{ icon_embedding | safe }} {{ heading }} {{ show_stars(priority) }}{% endset %}
 {% set popup_url = "" %}
 {% set status = 'minimized' %}
 {% if '#main' in source or '#' not in source %}
@@ -59,7 +59,7 @@
 {% macro show_admin_topic(topics, id_of_topic_to_show, div_to_show="main", div_title="", is_flat=false) %}
 {% for topic in topics %}
 {% if topic.id == id_of_topic_to_show %}
-{% set panel_title =  topic.title + ((" [" + div_title + "]") if div_title != "") %}
+{% set panel_title =  topic.title + ((" [" + div_title + "]") if div_title != "") %}
 {{ show_admin_section_to_read(panel_title, topic.priority, baseUrl + "/admin/" + topic.id + ".md#" + div_to_show, is_flat) }}
 {% endif %}
 {% endfor %}
@@ -90,8 +90,8 @@
 <div class="indented-level1">
 {% for section in sections_to_show %}
 {% if section.topic_id %}
-  {% set div_to_show = section.div if section.div else "main"  %}
-  {% set div_title = section.div_title if section.div_title else ""  %}
+  {% set div_to_show = section.div if section.div else "main" %}
+  {% set div_title = section.div_title if section.div_title else "" %}
   {{ show_admin_topic(topics, section.topic_id, div_to_show, div_title, is_flat) }}
 {% elif section.faq_id %}
   {{ show_admin_faq(faqs, section.faq_id, is_flat) }}
@@ -142,3 +142,25 @@
 {% endmacro %}
 
 {% macro get_date(base, displacement, time="2359", format=format_normal) %}{{ (base | date(format, displacement)) + " " + time}}{% endmacro %}
+
+
+{% macro show_tp_week_intro(course_code, week_number)%}
+<div id="{{ course_code }}-week{{ week_number }}-intro">
+<box type="dark" light>
+
+#### {{ thumb('Intro') }} to tP Week {{ week_number }}
+
+{{ caller() }}
+
+</box>
+</div>
+{% endmacro %}
+
+{% macro show_tp_iterations_gantt(image, width, x, y)%}
+<annotate src="{{ image }}" width="{{ width }}">
+<a-point x="{{ x }}%" y="{{ y }}%">
+<span class="badge text-danger"><md>++++:fas-person-walking-dashed-line-arrow-right:++++</md></span>
+</a-point>
+</annotate>
+<p/>
+{% endmacro %}

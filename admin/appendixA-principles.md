@@ -136,7 +136,7 @@ Ability to deliver in a way that shows how well you delivered (i.e. visibility o
 
 </table>
 
-**We learn together, NOT compete against each other.**
+**We learn together, NOT compete against each other.**
 
 You are not in a competition. Our ==grading is not forced on a bell curve==.
 
@@ -144,13 +144,13 @@ Learn from each other. That is why we open-source your submissions.
 
 Teach each other, even those in other teams. Those who do it well can become tutors next time.
 
-**Continuously engage, NOT last minute heroics.**
+**Continuously engage, NOT last minute heroics.**
 
 We want to train you to do software engineering in a steady and repeatable manner that does not require 'last minute heroics'.
 
 In this course, last minute heroics will not earn you a good project grade, and last minute mugging will not earn you a good exam grade.
 
-**Where you reach at the end matters, NOT what you knew at the beginning.**
+**Where you reach at the end matters, NOT what you knew at the beginning.**
 
 When you start the course, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. All marks allocated to intermediate deliverables are within the reach of everyone in the class irrespective of their prior knowledge.
 

@@ -17,7 +17,7 @@ week5: [
 ],
 week6: [
   {id: 'conceptualize_first_version'},
-  {id: 'draft_the_ug'},
+  {id: 'draft_the_ug', deadline: get_date(date_w6_start, 6, time="23:59")},
   {id: 'set_up_project_repo'},
   {id: 'get_familiar_with_the_code_base'}
 ],
@@ -71,7 +71,7 @@ week13: [
   w3: {name: "Kickoff"},
   w4: {name: "Set direction"},
   w5: {name: "Gather requirements"},
-  w6: {name: "Conceptualize the product"},
+  w6: {name: "Define the MVP"},
   w7: {name: "Practice iteration", milestone: version_practice},
   w8: {name: "First feature increment", milestone: version_first},
   w9: {name: "MVP", milestone: version_mvp},

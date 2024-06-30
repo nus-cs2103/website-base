@@ -5,11 +5,11 @@
 {% call show_admin_page("appendixB-policies") %}
 <div id="main">
 
-{% for policy in policies %}
+{% for policy in policies %}
 * [{{ policy.title }}](#{{ policy.id }}) {{show_stars(policy.priority) }}
 {% endfor %}
 
-{% for policy in policies %}
+{% for policy in policies %}
 <div id="{{ policy.id }}">
 
 ### {{ policy.title }} <small><small>{{show_stars(policy.priority) }}</small></small>

@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, thumb, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_tp_week_intro, show_tp_iterations_gantt, thumb, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -163,7 +163,7 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 <div class="indented">
 <box type="important" icon=":fas-hourglass-half:" seamless>
 
-<span class="text-danger">**This task is time-sensitive.**</span> If done later than the [deadline](weeklySchedule.html#:~:text=for%20exact%20dates.-,Deadline%20for%20weekly%20tasks,-The%20soft%20deadline), it will not be counted as 'done' (i.e., no grace period). %%Reason: This is 'an early draft'; if done late, it can't count as 'early'.%%
+<span class="text-danger">**This task is time-sensitive.**</span> If done later than the [deadline](weeklySchedule.html#:~:text=for%20exact%20dates.-,Deadline%20for%20weekly%20tasks,-The%20soft%20deadline), it will not be counted as 'done' (i.e., no grace period).
 </box>
 </div>
 </div>
@@ -183,47 +183,96 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
-<div id="cs2103-week3-intro">
-<box dismissible>
+{% call show_tp_week_intro("cs2103", 3) %}
+
+**This week, we kick off the tP** with a few light individual and team tasks, described in the sections below.
+
+<box type="info" seamless>
 
 {{ icon_individual }} **indicates an individual task** %%(i.e., each team member has to do the task, graded individually)%%<br>
 {{ icon_team }} **indicates a team task** %%(some or all members may do the work; graded for the whole team)%%.
-
 </box>
-</div>
+{% endcall %}
+ {#====================================================================================================================#}
+{% call show_tp_week_intro("cs2103", 4) %}
+
+**This week, the tP focus is on setting a project direction.**
+{% endcall %}
 {#====================================================================================================================#}
-<div id="cs2103-week6-intro">
+{% call show_tp_week_intro("cs2103", 5) %}
 
-<box dismissible>
+++**Connecting the dots so far ...**++{.text-info}
 
-{{ icon_important_big_red }} **tP tasks progress is graded**. Completing individual and team tasks are considered for grading the _project management_ component of your project grade. That said, unless a deliverable is marked 'time-sensitive', there is no penalty for missing a deadline provided you catch up with most of them within a few days after the deadline.
+* **We already know that the tP will be done in breadth-first iterative manner**, each iteration delivering a working version, that will be evolved further by subsequent iterations. At the current stage of the tP, it is time for us to plan those iterations.{ texts="['A.','B.','C.','D.']" t-class="fw-bold text-info" }
+* **Intuitively, it feels like we should decide features of the final version first**, and then, work our way backwards to plan intermediate versions.<br>
+  **But that approach is not practical, due to the difficulty of reliably estimating the effort** each feature will need, _especially because we are not experienced in doing similar projects_. So, any such long-range plan is likely to be highly inaccurate anyway.
+* **Instead, our approach is  to ==assume the current iteration is the last iteration.==**<br>
+  Then, we plan that iteration to deliver the best possible product, based on available time.<br>
+  We plan the iteration accordingly, and can even tweak the plan further along the way, if needed.<br>
+  After the iteration is over, we plan the next iteration as if _it's_ the last iteration. But that time, we can factor in the experience from the previous iteration to do a better job of planning.<br>
+ **How is that better?**
+  * **More practical**: Shorter-term plans have a better chance of being accurate and doable.{{ bullet_tick_green }}
+  * **Planning improves over time**: You get multiple 'clean shots' at project planning. Each try can learn from the previous tries. Hence, more learning.
+  * **Lower risk**: As each iteration produces a working product, you always have a working product, which practically eliminates the risk failing to deliver a working product by the final deadline.
+* **However, it does not mean we simply keep adding features without any plan** and whatever we have at the end is the final product. Instead, there should still set targets, and follow a plan that aims to hit those targets.<br>
+  Thus, we can adopt the following two **P**lanning **S**trategies:
+  <box type="important" id="ps1-and-ps2" seamless>
+
+  * **We should have a clear overall _direction_**.This ensures we can always head in the right direction, even if the final product is defined precisely yet. { icon="" texts="['PS1.', 'PS2.']"  t-class="fw-bold text-danger" }
+  * **An iteration should start by defining a precise target for it**, aligned with the project direction. This ensures we always have a concrete target to aim for.
+  </box>
+
+  Along PS1, we have already defined (in the previous week) the _target user profile_, and the _problem addressed_.<br>
+  Along PS2, we have not done anything yet.
+
+++**What's happening this week:**++{.text-info}
+
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", 800, 52, 62) }}
+
+* The task --{{ thumb("1") }}-- (_Brainstorm user stories_) takes one more step in the direction of PS1 above, by **brainstorming all the capabilities the target user might want the final product to provide**.<br>
+  Note: We are not aiming for a precise design of the final end product. As per B, we don't need such a precise design this early in the project.
+* The task --{{ thumb("2") }}-- (_Choose user stories for the MVP version_) takes the first step in the direction of PS2 above, by **narrowing down the user requirements** to a smaller subset that we can deliver in an earlier iteration.
+
+{% endcall %}
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2103", 6) %}
+
+++**Connecting the dots so far ...**++{.text-info}
+
+Previously, we mentioned the following two project planning strategies:
+<blockquote>
+
+<include src="tp-tasks-fragment.md#ps1-and-ps2" />
+</blockquote>
+
+Last week,
+* to help with PS1, we collected potential user stories for the final product.
+* to help with PS2, we selected a subset of those user stories for an MVP version of the product.
+
+
+++**What's happening this week:**++{.text-info}
+
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", 800, 77, 80) }}
+
+This week, we focus on two fronts:
+
+* **The first front (which aligns with PS2) moves towards defining a precise target for the first version** (i.e., MVP): task --{{ thumb("1") }}-- translates the selected user stories into a _feature list_ and task --{{ thumb("2") }}-- expands that feature lists to a more precise _feature specification_.
+* **On the other front, we prepare to start coding work**. Tasks --{{ thumb("3") }}-- (set up the project repo), and --{{ thumb("4") }}-- (get familiar with the code base) help with that.
+
+
+++**Things to note:**++{.text-info}
+
+* **tP tasks progress is graded**. Completing individual and team tasks are considered for grading the _project management_ component of your project grade. That said, unless a deliverable is marked 'time-sensitive', there is no penalty for missing a deadline provided you catch up with most of them within a few days after the deadline.{{ bullet_important_red }}
 
 {{ embed_topic("tp-grading.md#project-management-grading", "Admin " + icon_embedding + " tP → **Grading → Project Management**", "3", indent="1") }}
 
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent="1") }}
 
+* **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. There will be no partial credit for work that did not follow the instructions precisely, but in most cases you can get the work to be counted simply by rectifying the non-compliance.{{ bullet_important_red }}
 
-{{ icon_important_big_red }} **Most aspects of project progress are tracked using automated scripts.** ==Please follow our instructions closely or else the script will not be able to detect your progress==. There will be no partial credit for work that did not follow the instructions precisely, but in most cases you can get the work to be counted simply by rectifying the non-compliance.
-</box>
-
-<box type="tip" icon=":fas-chart-gantt:" icon-size="3x" seamless>
-
-****Iterative means no need for detailed plans, right?****{.text-success}
-
-Continuing from the points raised in the 'Sidebar: Project planning, with a twist' last week ...
-
-**Iterative projects typically do not start with a very detailed plan for the _final_ product**, because an iterative project accepts that the project requirements can change along the way and hence it is futile to create detailed plans of the final product at the very start.
-
-However, it does not mean we simply keep adding features without any plan and whatever we have at the end is the final product. Instead,
-
-1. **we should have a clear overall direction** (e.g., target user, value proposition), and,
-1. **we should start each iteration with a clear, detailed, and precise plan of the intended outcome of _that_ iteration**.
-
-**Even the plan of the current iteration _can_ change as the iteration progresses** (e.g., if we realize we underestimated the effort required for that iteration), but that would be a case of 'changing the current iteration plan', not a case of 'making it up as we go'.
-</box>
-</div>
+{% endcall %}
 {#====================================================================================================================#}
-<div id="cs2103-week7-intro">
+{% call show_tp_week_intro("cs2103", 7) %}
 
 <include src="tp-timeline.md#v11-goals" />
 
@@ -235,7 +284,7 @@ If you have been using Sourcetree (or other GUI) for Git before, we strongly rec
 But you can continue to use your favorite Git GUI for a more 'visual' view of your repo, side-by-side with the CLI e.g., from Sourcetree, you can open a gitbash terminal, run the command in that terminal, and see the result in the GUI.
 </box>
 
-</div>
+{% endcall %}
 {#====================================================================================================================#}
 <div id="cs2103-week8-intro">
 
@@ -548,7 +597,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 {{ icon_tip }} **If you choose to use the GitHub issue tracker to manage user stories**, you need to set up your team's GitHub organization, team repo, and its issue tracker first. Instructions for doing those steps are in the panel below.
 
-<panel header="%%Admin {{ icon_embedding }} Appendix E: GitHub (extract)%%">
+<panel header="%%Admin {{ icon_embedding }} Appendix E: GitHub (extract)%%" minimized>
   <include src="appendixE-gitHub.md#organization-setup"/>
   <include src="appendixE-gitHub.md#tp-team-repo-setup"/>
   <include src="appendixE-gitHub.md#issue-tracker-setup"/>
@@ -559,62 +608,42 @@ As we are still at the early stages of identifying a problem to solve, do not th
 </div>
 </div>
 {#====================================================================================================================#}
-<span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ version_mvp }}</span>
+<span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for the MVP version</span>
 <div id="desc_prioritize_user_stories">
-
 <div class="indented">
 
-<box type="tip" icon=":fas-route:" icon-size="3x" seamless>
-
-##### <span class="text-success">Sidebar: Project planning, with a twist</span>
-
-Intuitively, you might think the right thing to do is to decide what features will be in {{ version_final }} and then plan the intermediate versions based on that. But that's not what we are going to do.
-
-Why? Given the difficulty of reliably estimating the effort each feature will need, any such long-range plan is likely to be inaccurate.
-
-Instead, what we will do is to ==assume the current iteration is the last iteration==, plan that iteration to deliver the product (based on available time), and try to follow that plan as best as we can. After the iteration is over, we plan the next iteration as if _it's_ the last iteration. But that time, you can factor in the experience from the previous iteration to do a better job of planning.
-
-How is that better?
-* Shorter-term plans have a better chance of being accurate and doable.
-* You get multiple clean shots at project planning. Each try can learn from the previous tries. Hence, more learning.
-* As each iteration produces a working product, you always have a working product, which practically eliminates the risk failing to deliver a working product by the final deadline.
-
-</box>
-
-**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_mvp }}, to be delivered at the end of the first project iteration i.e., <span class="text-danger">NOT what you _can_ or _want to_ do in {{ version_mvp }}, but what you _must_ do in {{ version_mvp }}</span>. We try to make it small because ==you will have only two weeks to implement {{ version_mvp }}== and coding as a team is a lot harder than writing code alone.{% if cs2103 %}<br>%%**Why {{ version_mvp }} and not v1.1?** v1.1 is a mere documentation update only. {{ version_mvp }} will be the first version that contains functionality changes.%%{% endif %}
-
-{{ icon_important_big_red }} Do not discuss features, UI, command format, or implementation details yet. That would be like _putting the cart before the horse_. At this stage we are simply trying to choose which _user needs_ to fulfill first.
-
+**Task: Of the user stories you have collected, select the ones you would put in an <popover content="**Minimum Viable Product**: a version with just enough features to effectively deploy the product, and no more">MVP</popover> version** of the product. The goal here is to come up with the _smallest possible product that is still usable_ so that it can be implemented quickly, and delivered at the end of an earlier iteration
 </div>
 
-* If the product _can_ be of some use without a given user story, that user story should be left out of {{ version_mvp }}, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
-* Don't worry about {{ version_penultimate  }}. You can design {{ version_penultimate }} after {{ version_mvp }} done.
-* Don't worry about {{ version_mvp }} being 'too small'. You can always add more features to {{ version_mvp }} if you finish it ahead of schedule.<br>
-  {{ icon_tip }} You can also select an additional set of user stories that are _nice-to-have_ in v1.2, to be done but only if there's time left.
-* If possible, narrow the scope of {{ version_mvp }} further e.g., narrower target user, a smaller value proposition.
+* **Try to limit the MVP to strictly must-have user stories only** i.e., <span class="text-danger">it's NOT what you _can_ or _want to_ put in the MVP, but what you _must_ have in the MVP</span>. If the product _can_ be of some use without a given user story, that user story should be left out of the MVP version, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
+* {{ icon_important_big_red }} **Do not discuss features, UI, command format, or implementation details** yet. That would be like _putting the cart before the horse_. At this stage we are simply trying to choose which _user needs_ to fulfill first.
+* **Don't worry about subsequent versions or the final version.** You can design them at a later time.
+* **Don't worry about MVP being 'too small'.** You can always add more features to the MVP version if you finish it ahead of schedule.<br>
+  {{ icon_tip }} You can also select an additional set of user stories that are _nice-to-have_ for the MVP, to be done but only if there's time left.
+* **In the interest of keeping the MVP small, you can narrow the scope of MVP further** e.g., narrower target user, a smaller value proposition.
 
-Suggested workflow:
-* **First stage**:
-  * Divide the user stories among team members.
-  * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed_ for {{ version_mvp }}.
-* **Second stage**:
-  * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
+* **Suggested workflow:**
+  1. **First stage**:
+     * Divide the user stories among team members.
+     * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed_ for MVP.
+  1. **Second stage**:
+     * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 
 <box type="info" icon=":fas-question-circle:"seamless>
 
 **FAQs**{.text-info}
 
-**Q:** What if the chosen user stories for {{ version_mvp }} is not enough to do a meaningful work division among team members?<br>
+**Q:** What if the chosen user stories for MVP is not enough to do a meaningful work division among team members?<br>
 **A:** In that case, at a later stage, you can add more user stories until there is enough for a meaningful work distribution. But at this point focus on selecting the smallest sub-set of _must_have_ user stories only.
 
-**Q:** Should we start implementing {{ version_mvp }} now?<br>
-**A:** Not at all. That is scheduled several weeks later. For now, just figure out the minimal feature set required for the product. We'll let you know when it is time to start working on {{ version_mvp }}.
+**Q:** Should we start implementing MVP now?<br>
+**A:** Not at all. That is scheduled several weeks later. For now, just figure out the minimal feature set required for the product. We'll let you know when it is time to start working on the MVP.
 
 {% if cs2103 %}**Q:** Should we omit user stories that are already supported by AB3?<br>
 **A:** No, you should still include them. Reason: The existing implementation might still require some work before it fits your product.
 
-**Q:** All the user stories we selected for {{ version_mvp }} are already supported by AB3. What now?<br>
-**A:** That's fine. It means you can get to {{ version_mvp }} with very little effort, which is a good thing. Once you've finished {{ version_mvp }}, if there is time left, you can add more things to it (e.g., {{ version_mvp }}.1 etc.) at that time.
+**Q:** All the user stories we selected for MVP are already supported by AB3. What now?<br>
+**A:** That's fine. It means you can get to MVP with very little effort, which is a good thing. Once you've finished the MVP, if there is time left, you can add more things to it at that time.
 {% endif %}
 </box>
 </div>
@@ -661,19 +690,22 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 {{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize {{ version_mvp }}</span>
+<span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize the MVP version</span>
 <div id="desc_conceptualize_first_version">
 
-* Based on your user stories selected previously, conceptualize the product in terms of how it will look like at {{ version_mvp }} ==in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>==.<br>
-  Note down the feature list in your online project notes document.
+* ****Task:**** Based on your user stories selected previously, conceptualize the MVP ==in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>==.<br>
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
 <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
+* **Why?**: So far, we have user stories we want to include in the MVP version. But user stories simply tell us user needs. To move towards a product design, we need to design product _features_ of the product can fulfill those user needs.
+
+* **Submission:** Note down the feature list in your online project notes document.
+
 <box type="info" icon=":fas-question:" seamless>
 
-<span class="text-info">**FAQ**: How many features should we put in {{ version_mvp }}?</span><br>
+<span class="text-info">**FAQ**: How many features should we put in the MVP?</span><br>
 **A:** Aim for the _smallest set of features the product cannot do without_. Even a most basic version of those features is enough. After completing that feature set, you can add more if there is time left.
 </box>
 
@@ -700,25 +732,22 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 
 * **Deadline:** Recommended to finish by the regular weekly project deadline (i.e., before the next {{ lecture_name }}), but given the iP final submission is due this week, you may take until Sunday ({{ get_date(date_w6_start, 6) }}) to submit this.
 
-* **Objective:** This deliverable links back to the following point made earlier:
-  > 1. ...
-  > 2. we should start each iteration with a clear, detailed, and precise plan of the intended outcome of that iteration.
+* **Why?** In addition to helping towards PS2, this deliverable forces you to make some fine-grained product design decisions early, thus giving you a better idea about the complexities that lie ahead, and hence, a better sense of the effort that will be required.
 
-  Furthermore, this deliverable forces you to make some fine-grained product design decisions early, thus giving you a better idea about the complexities that lies ahead, and hence, a better sense of the effort that will be required.
-
-* **Deliverable: Collate into a document the _complete_ detailed description of the intended behavior of the product at `{{ version_mvp }}`.**
+* ****Task:**** **Collate into a document the _complete_ detailed description of the intended behavior of the MVP version of the product.**
   * The intended audience for this document is team members, not end users (i.e., this is not a user guide).
   * Use a medium that is convenient for collaboration (e.g., a GoogleDoc).
   * The content need not be polished. Don't waste time in formatting, copy editing etc.
-* **For each feature, specify the following:**
+  * **For each feature, specify the following:**
 
-<div class="indented-level1">
+<div class="indented-level2">
 <box>
 
+**Feature**: Name of the feature %%e.g., Add contact%%<br>
 **Purpose**: What it does
 
 **Command format**: The precise command format of the command.<br>
-Example commands %%(to show how the command is used)%%
+**Example commands**: %%(to show how the command is used)%%
 
 **For each parameter**, specify:
 
@@ -743,7 +772,7 @@ How does the application react to such duplicate entries? Reject or accept? Why?
 
 ---
 
-{{ icon_tip }} **Recommended: Prioritize above finer aspects of features**, for example, as must-have (to implement in {{ version_mvp }}) and nice-to-have (i.e., to implement in {{ version_mvp }} only if there is time)<br>
+{{ icon_tip }} **Recommended: Prioritize above finer aspects of features**, for example, as must-have (to implement in the MVP) and nice-to-have (i.e., to implement in the MVP only if there is time)<br>
    %%e.g., you can decide one date format (to accept in user commands) as must-have and two other formats as nice-to-have.%%
 </box>
 </div>

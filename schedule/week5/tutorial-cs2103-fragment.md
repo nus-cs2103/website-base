@@ -84,7 +84,7 @@
 
 * If you haven't done so already, prioritize tP user stories as explained in the panel below.
 
-{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_prioritize_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Choose user stories for " + version_mvp + "**", "2", indent="1") }}
+{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_prioritize_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Choose user stories for the MVP version**", "2", indent="1") }}
 
 
 #### {{ thumb(4) }} <span class="badge bg-secondary">time permitting</span> Create a _feature list_ for {{ version_mvp }}
@@ -93,7 +93,7 @@
 
 <div class="indented-level2">
 
-<panel header="%%Admin {{ icon_embedding }} **tP → week 6 → Conceptualize {{ version_mvp }}**%%" expanded >
+<panel header="%%Admin {{ icon_embedding }} **tP → week 6 → Conceptualize the MVP version**%%" expanded >
 
 <include src="../../admin/tp-tasks-fragment.md#desc_conceptualize_first_version" />
 </panel>
