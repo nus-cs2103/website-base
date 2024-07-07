@@ -141,12 +141,10 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 #### {{ badge("W" + (tfw + 4))}} Iter.1 %%[ --{{ weekly_tp_themes.w7.name }}-- ]%%
 
 <div id="v11-goals" class="indented">
-<box header="****{{ version_practice }}****" light>
 
-* **Learning outcome**: Able to follow the workflow as a team.{{ bullet_target_green }}
-* **Product goal**: Update some documents to match the new product direction.
-* **Strategy**: Practice the workflow while updating the documents.
-</box>
+* **#g#Learning outcome##**: Able to follow the workflow as a team.{{ bullet_target_green }}
+* **#g#Product goal##**: Update some documents to match the new product direction.
+* **#g#Strategy##**: Practice the workflow while updating the documents.
 </div>
 
 <box type="info" seamless>
@@ -159,13 +157,10 @@ Note how the 'Learning outcome' appears _above_ 'Product goal', and how the prod
 #### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} Iter.2 %%[ --{{ weekly_tp_themes.w8.name }}-- ]%%
 
 <div id="v12-goals" class="indented">
-<box header="****{{ version_first }}****" light>
 
-* **Learning outcome**: Able to update functional code while working in parallel.{{ bullet_target_green }}
-* **Product goal**: Take the first step towards an MVP by delivering at least _some_ functionality changes.
-* **Strategy**: Define the smallest possible MVP. Each member tries to merge at least one PR that moves the product towards that MVP.
-
-</box>
+* **#g#Learning outcome##**: Able to update functional code while working in parallel.{{ bullet_target_green }}
+* **#g#Product goal##**: Take the first step towards an MVP by delivering at least _some_ functionality changes.
+* **#g#Strategy##**: Define the smallest possible MVP. Each member tries to merge at least one PR that moves the product towards that MVP.
 </div>
 
 #### {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iter.3 %%[ --{{ weekly_tp_themes.w9.name }}-- ]%%

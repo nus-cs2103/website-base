@@ -124,6 +124,7 @@
 {% macro step(step_number, step_style="dark") %}<span class="badge bg-{{ step_style }}">Step {{ step_number }}</span>{% endmacro %}
 
 {% macro thumb(text, thumb_style="dark") %}<span class="badge rounded-pill bg-{{ thumb_style }} p-2"><big><big>{{ text }}</big></big></span>{% endmacro %}
+{% macro thumb_small(text, thumb_style="dark") %}<span class="badge rounded-pill bg-{{ thumb_style }} p-1">{{ text }}</span>{% endmacro %}
 
 {% macro timing_badge(text, type="danger") %}<span class="badge bg-{{ type }} {{ 'text-dark' if type in ['warning']}} font-weight-normal"><md>:far-clock: {{ text }}</md></span>{% endmacro %}
 
@@ -146,21 +147,46 @@
 
 {% macro show_tp_week_intro(course_code, week_number)%}
 <div id="{{ course_code }}-week{{ week_number }}-intro">
-<box type="dark" light>
+<div class="border border-success pt-1 ps-2 pb-1 pe-2 border-bottom-0 rounded-top" style="background-color: #e6fff2">
 
-#### {{ thumb('Intro') }} to tP Week {{ week_number }}
+
+#### ****Intro to tP Week {{ week_number }}****
 
 {{ caller() }}
 
-</box>
+</div>
+</div>
+{% endmacro %}
+
+{% macro show_tp_week_outro(course_code, week_number)%}
+<div id="{{ course_code }}-week{{ week_number }}-outro">
+<div class="border border-success pt-2 ps-2 pe-1 border-top-0 rounded-bottom" style="background-color: #e6fff2">
+
+
+#### ****End of tP Week {{ week_number }}****
+
+{{ caller() }}
+
+</div>
 </div>
 {% endmacro %}
 
 {% macro show_tp_iterations_gantt(image, width, x, y)%}
-<annotate src="{{ image }}" width="{{ width }}">
+<annotate src="{{ baseUrl }}/admin/{{ image }}" width="{{ width }}">
 <a-point x="{{ x }}%" y="{{ y }}%">
 <span class="badge text-danger"><md>++++:fas-person-walking-dashed-line-arrow-right:++++</md></span>
 </a-point>
 </annotate>
+<p/>
+{% endmacro %}
+
+{% macro show_faq(heading)%}
+<panel type="seamless">
+<span slot="header" class="card-title"><markdown>{{ faq }} {{ heading }}</markdown></span>
+<box type="secondary" seamless>
+
+{{ caller() }}
+</box>
+</panel>
 <p/>
 {% endmacro %}

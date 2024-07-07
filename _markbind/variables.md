@@ -143,6 +143,7 @@
 <variable id="bullet_important_red">{ icon="fas-circle-exclamation" i-class="text-danger" }</variable>
 <variable id="bullet_target_green">{ icon="fas-crosshairs" i-class="text-success" }</variable>
 <variable id="bullet_tick_green">{ icon="fas-check" i-class="text-success" }</variable>
+<variable id="bullet_tip">{ icon="fas-lightbulb" i-class="badge rounded-pill bg-success text-white my-1" i-size="10px" }</variable>
 <variable id="bullet_x_red">{ icon="fas-times" i-class="text-danger" }</variable>
 
 <variable name="icon_alert"><span class="badge rounded-pill bg-danger text-light">:fas-exclamation: ALERT</span></variable>
@@ -203,12 +204,14 @@
 
 <variable name="icon_individual"><md>:fas-user:</md></variable>
 <variable name="icon_team"><md>:fas-users:</md></variable>
+<variable id="icon_team_rep"><md>:fas-user:%%/:fas-users:%%</md></variable>
 <variable name="icon_both">{{ icon_individual }}/{{ icon_team }}</variable>
 
-<variable name="bad"><span style="color: red"><md>**:fas-thumbs-down: Bad**</md></span></variable>
-<variable name="good"><span style="color: green"><md>**:fas-thumbs-up: Good**</md></span></variable>
-<variable name="pros"><span class="text-success">**:fas-thumbs-up: pros:**</span></variable>
-<variable name="cons"><span class="text-danger">**:fas-thumbs-down: cons:**</span></variable>
+<variable name="faq"><span class="badge rounded-pill bg-info"><md>:far-question: FAQ</md></span></variable>
+<variable name="bad"><span style="color: red"><md>:fas-thumbs-down: Bad</md></span></variable>
+<variable name="good"><span style="color: green"><md>:fas-thumbs-up: Good</md></span></variable>
+<variable name="pros"><span class="text-success">:fas-thumbs-up: pros:</span></variable>
+<variable name="cons"><span class="text-danger">:fas-thumbs-down: cons:</span></variable>
 <variable name="required"><span class="badge rounded-pill bg-danger">REQUIRED</span></variable>
 <variable name="optional"><span class="badge rounded-pill bg-success">OPTIONAL</span></variable>
 <variable name="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></variable>

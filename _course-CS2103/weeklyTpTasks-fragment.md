@@ -25,12 +25,11 @@ week7: [
   {id: 'do_a_practice_iteration', deadline: get_date(date_w7_start, 3, time="23:59")},
   {id: 'update_website_aboutus_readme'},
   {id: 'update_dg_user_stories_etc'},
-  {id: 'plan_the_next_iteration'},
-  {id: 'start_implementing_the_next_version'}
+  {id: 'start_the_next_iteration'}
 ],
 week8: [
-  {id: 'ensure_you_know_tp_expectations'},
-  {id: 'start_proper_milestone_management'},
+  {id: 'divide_mvp_features'},
+  {id: 'rename_packages'},
   {id: 'add_first_functionality_increment', deadline: get_date(date_w8_start, 3, time="23:59")}
 ],
 week9: [
@@ -39,7 +38,6 @@ week9: [
 ],
 week10: [
   {id: 'do_a_postmortem'},
-  {id: 'adjust_process_rigor'},
   {id: 'start_on_the_penultimate_version'},
   {id: 'update_dg_with_design_details'},
   {id: 'smoke_test_catcher', deadline: 'COMPULSORY', graded: true},

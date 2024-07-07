@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_tp_week_intro, show_tp_iterations_gantt, thumb, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -167,17 +167,17 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 </box>
 </div>
 </div>
+
 <div id="common-mistakes">
-<box type="important" seamless icon=":fas-skull:">
+<box type="important" seamless icon=":fas-skull:" icon-size="2x">
 
-<span class="text-danger">****Lookout for these mistakes****</span> which were the most common in previous runs of the course:
+<span class="text-danger">****++Lookout for these mistakes++****</span> which were common in previous runs of the course:
 
-* **Not following the [required phrasing style for the first sentence](https://se-education.org/guides/conventions/java/{{ "basic" if cs2113 else "intermediate" }}.html#:~:text=In%20method%20header%20comments%2C%20the%20first%20sentence%20should)** of Java method header comments.{ icon="fas-skull" i-class="text-danger" }
-* **Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject)**.<br>
-  Caution: This is <span class="text-danger">very hard to rectify later</span>, after PR containing the commits have been merged.<br>
-  %%Reason: While Git allows editing past commits, it changes their timestamp, which affects your weekly code contribution stats (which are factored into evaluating the consistency of your coding work over the project duration)%%
-* **Forgetting to do each PR from a separate branch** (i.e., send PR from the `master` branch) of your fork. This error means your PR will not be considered as _following the forking workflow correctly_.
-* **Not giving enough PR review comments.** Remember to do proper PR reviews throughout the tP, at least for non-trivial changes, as the quality and quantity of PR review comments you have given to peers affect your [tP marks](tp-grading.html) (under the _project management_ aspect).
+<include src="tp-common-fragments.md#error-commit-message-subject" />
+<include src="tp-common-fragments.md#error-header-comment-phrasing" />
+<include src="tp-common-fragments.md#error-pr-from-master" />
+<include src="tp-common-fragments.md#error-low-pr-comments" />
+
 </box>
 </div>
 {#====================================================================================================================
@@ -190,7 +190,8 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 <box type="info" seamless>
 
 {{ icon_individual }} **indicates an individual task** %%(i.e., each team member has to do the task, graded individually)%%<br>
-{{ icon_team }} **indicates a team task** %%(some or all members may do the work; graded for the whole team)%%.
+{{ icon_team }} **indicates a team task** %%(i.e., some or all members may do the work; graded for the whole team)%%.<br>
+{{ icon_team_rep }} **indicates one-person-per-team task** %%(i.e., one member can do the task on behalf of the team, although other members are welcome to pitch in)%%.
 </box>
 {% endcall %}
  {#====================================================================================================================#}
@@ -229,9 +230,9 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 
 {{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", 800, 52, 62) }}
 
-* The task --{{ thumb("1") }}-- (_Brainstorm user stories_) takes one more step in the direction of PS1 above, by **brainstorming all the capabilities the target user might want the final product to provide**.<br>
+* The task {{ thumb_small("1") }} (_Brainstorm user stories_) takes one more step in the direction of PS1 above, by **brainstorming all the capabilities the target user might want the final product to provide**.<br>
   Note: We are not aiming for a precise design of the final end product. As per B, we don't need such a precise design this early in the project.
-* The task --{{ thumb("2") }}-- (_Choose user stories for the MVP version_) takes the first step in the direction of PS2 above, by **narrowing down the user requirements** to a smaller subset that we can deliver in an earlier iteration.
+* The task {{ thumb_small("2") }} (_Choose user stories for the MVP version_) takes the first step in the direction of PS2 above, by **narrowing down the user requirements** to a smaller subset that we can deliver in an earlier iteration.
 
 {% endcall %}
 {#====================================================================================================================#}
@@ -256,8 +257,8 @@ Last week,
 
 This week, we focus on two fronts:
 
-* **The first front (which aligns with PS2) moves towards defining a precise target for the first version** (i.e., MVP): task --{{ thumb("1") }}-- translates the selected user stories into a _feature list_ and task --{{ thumb("2") }}-- expands that feature lists to a more precise _feature specification_.
-* **On the other front, we prepare to start coding work**. Tasks --{{ thumb("3") }}-- (set up the project repo), and --{{ thumb("4") }}-- (get familiar with the code base) help with that.
+* **The first front (which aligns with PS2) moves towards defining a precise target for the first version** (i.e., MVP): task {{ thumb_small("1") }} translates the selected user stories into a _feature list_ and task {{ thumb_small("2") }} expands that feature lists to a more precise _feature specification_.
+* **On the other front, we prepare to start coding work**. Tasks {{ thumb_small("3") }} (set up the project repo), and {{ thumb_small("4") }} (get familiar with the code base) help with that.
 
 
 ++**Things to note:**++{.text-info}
@@ -274,11 +275,40 @@ This week, we focus on two fronts:
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2103", 7) %}
 
+++**What's happening this week:**++{.text-info}
+
+**This week, we do the first tP iteration: {{ version_practice }}.**
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 5, 22) }}
+
+**Each tP iteration focuses on a specific #g#learning outcome##, a corresponding #g#product goal##, and a #g#strategy##** that we'll use to achieve both. The ones for this tP iteration (i.e., {{ version_practice }}) are given below:
+
+<box type="success" icon=":fas-arrow-right:" icon-size="2x" seamless>
+
+**{{ version_practice }}**{.text-success}
 <include src="tp-timeline.md#v11-goals" />
+</box>
 
-<box type="tip" icon=":fab-git-alt:" icon-size="3x" seamless>
 
-<br>++**Start using Git via the CLI**++{.text-success .font-monospace}
+**We consider this iteration a 'practice' iteration**. Reason: As this is the first time your team is working on this codebase, we first focus on learning the workflow that you need to follow as a team. This practice iteration, we limit ourselves to some document updates only (to minimize the risk of breaking the codebase).
+
+Specifically, we start with a workflow practice session (in task {{ thumb_small("1") }}), and proceed to do some further documentation updates in tasks {{ thumb_small("2") }} and {{ thumb_small("3") }}.
+
+++**Things to note:**++{.text-info}
+
+{% call show_faq("What's the deadline for tP iterations?") %}
+The deadline for tP iterations is the `Thursday 23:59` in the week it is due, unless a different date is specified in the instructions of that iteration.
+{% endcall %}
+
+<div id="common-mistakes">
+<include src="tp-common-fragments.md#error-commit-message-subject" />
+<include src="tp-common-fragments.md#error-pr-from-master" />
+</div>
+
+
+<box type="tip" icon=":fab-git-alt:" icon-size="2x" seamless>
+
+++**Start using Git via the CLI**++{.text-success .font-monospace}
 
 If you have been using Sourcetree (or other GUI) for Git before, we strongly recommend that you ==move towards using the CLI to perform Git tasks== in the second half of the semester. Doing so will strengthen your Git knowledge (because CLI takes you closer to what's actually happening, while GUIs might hide such details).<br>
 But you can continue to use your favorite Git GUI for a more 'visual' view of your repo, side-by-side with the CLI e.g., from Sourcetree, you can open a gitbash terminal, run the command in that terminal, and see the result in the GUI.
@@ -286,10 +316,56 @@ But you can continue to use your favorite Git GUI for a more 'visual' view of yo
 
 {% endcall %}
 {#====================================================================================================================#}
-<div id="cs2103-week8-intro">
+{% call show_tp_week_intro("cs2103", 8) %}
 
+++**What's happening this week:**++{.text-info}
+
+Having practiced the workflow in the previous iteration, **this week's iteration {{ version_first }} adds the first functional code changes.**
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 19, 37) }}
+
+
+<box type="success" icon=":fas-arrow-right:" icon-size="2x" seamless>
+
+**{{ version_first }}**{.text-success}
 <include src="tp-timeline.md#v12-goals" />
+</box>
 
+The breadth-first iterative approach requires each intermediate version to be a working version. However, to make things a bit easier for us at the start, **we will not be releasing any new product version at the end of this iteration.** This means you have the freedom to create PRs for small code changes, without the pressure to implement a feature fully in one PR.
+
+++**Things to note:**++{.text-info}
+
+* {{ icon_important_big_red }} **Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy %%(in Admin: Appendix B)%%</trigger>**, in particular, ==how to give credit when you reuse code from the Internet or classmates==:
+<modal large header="Admin {{ icon_embedding }} Appendix B: Policies → Policy on Reuse" id="modal:appE-reusePolicy">
+<include src="appendixB-policies.md#policy-reuse"/>
+</modal>
+
+* **Note the individual and team expectations of the tP**, if you haven't done so already.
+
+{{ embed_topic("tp-expectations.md#functionalityExpectations", "Admin " + icon_embedding + " tP: Functionality Expectations", "3", indent="1") }}
+{{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP: Individual Expectations (and ==guidance on work distribution==)", "3", indent="1") }}
+{{ embed_topic("tp-expectations.md#teamExpectations", "Admin " + icon_embedding + " tP: Team Expectations", "3", indent="1") }}
+{{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
+
+<include src="tp-common-fragments.md#error-header-comment-phrasing" />
+
+
+{% endcall %}
+{#---------------------------------------------------#}
+{% call show_tp_week_outro("cs2103", 8) %}
+<box type="info" icon=":bi-emoji-surprise:" icon-size="2x" seamless>
+
+<span class="text-info">**Shocked by iP to tP transition?**</span> Around this time you will realize how the speed you can implement things in the tP is significantly slower compared to the iP. As discouraging as this might feel, there are several ways this can contribute towards the learning outcomes of this course, and it is not expected to affect your tP grade either.
+
+<panel type="seamless" header="More on this ...">
+
+1. **It is important to realize that working in larger code bases is a much slower affair.** The number of lines an engineer can write per day is often limited to a double-digit value, [even going as low as 20](https://medium.com/modern-stack/how-much-computer-code-has-been-written-c8c03100f459#:~:text=As%20we%20can%20see%2C%20a,in%20a%20given%20working%20year.)).
+1. **The speed varies from project to project**, and naturally, is slowest at the start when you are very new to the project. Even so if you are new to working with legacy code. On the positive side, the iterative approach we use gives us room to adjust targets based on the actual speed you can deliver in the tP code base.
+1. **The slowness of progress can be partly due to design flaws** of the current code base (i.e., the design makes code changes harder than necessary). Keep a lookout for such cases, and if you can think of design tweaks that makes the code easier to change, go ahead and try them out. Such work can earn credit too.
+
+Finally, we don't expect each of you to put into the tP more _effort_ than you put into the iP (i.e., as the progress in the tP is expected to be slower, it is not necessarily write as much code or implement as many features as you did in the iP). Keep in mind the tP had been done by thousands of students before, and we are well aware that the amount of new features that you can deliver in the tP is not much. So, the slow progress will not affect your tP grade, as that is already factored into the grading. **What is needed is for you to recalibrate your own tP expectations/plans to match the reality of the tP environment** -- such recalibration is a learning outcome of the course too.
+</panel>
+</box>
 
 <box type="info" seamless>
 
@@ -297,7 +373,7 @@ But you can continue to use your favorite Git GUI for a more 'visual' view of yo
 While we are on the topic, also note that the architecture of AB3 doesn't suit every kind of application either. As you gain more experience in other application domains, you will learn different types of architectures that you can add to the collection of different architectures that you can consider for future projects. The same goes for the tool chain and the tech stack of AB3. Therefore, **do not try to apply AB3 as a template for _every_ other project you encounter in the future**.
 </box>
 
-</div>
+{% endcall %}
 {#====================================================================================================================#}
 <div id="cs2103-week9-intro">
 
@@ -319,19 +395,7 @@ In a similar vein, we use the version number to refer to the iteration as well, 
 <span class="text-success">**Using parallel PRs yet?**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%
 </box>
 </box>
-<box type="info" icon=":bi-emoji-surprise:" icon-size="2x" seamless>
 
-<span class="text-info">**Shocked by iP to tP transition?**</span> Around this time you will realize how the speed you can implement things in the tP is significantly slower compared to the iP. As discouraging as this might feel, there are several ways this can contribute towards the learning outcomes of this course, and it is not expected to affect your tP grade either.
-
-<panel type="seamless" header="More on this ...">
-
-1. **It is important to realize that working in larger code bases is a much slower affair.** The number of lines an engineer can write per day is often limited to a double-digit value, [even going as low as 20](https://medium.com/modern-stack/how-much-computer-code-has-been-written-c8c03100f459#:~:text=As%20we%20can%20see%2C%20a,in%20a%20given%20working%20year.)).
-1. **The speed varies from project to project**, and naturally, is slowest at the start when you are very new to the project. Even so if you are new to working with legacy code. On the positive side, the iterative approach we use gives us room to adjust targets based on the actual speed you can deliver in the tP code base.
-1. **The slowness of progress can be partly due to design flaws** of the current code base (i.e., the design makes code changes harder than necessary). Keep a lookout for such cases, and if you can think of design tweaks that makes the code easier to change, go ahead and try them out. Such work can earn credit too.
-
-Finally, we don't expect each of you to put into the tP more _effort_ than you put into the iP (i.e., as the progress in the tP is expected to be slower, it is not necessarily write as much code or implement as many features as you did in the iP). Keep in mind the tP had been done by thousands of students before, and we are well aware that the amount of new features that you can deliver in the tP is not much. So, the slow progress will not affect your tP grade, as that is already factored into the grading. **What is needed is for you to recalibrate your own tP expectations/plans to match the reality of the tP environment** -- such recalibration is a learning outcome of the course too.
-</panel>
-</box>
 
 </div>
 
@@ -651,11 +715,14 @@ As we are still at the early stages of identifying a problem to solve, do not th
 <span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
 <div id="desc_set_up_project_repo">
 
-* Set up the team org, the team repo, and individual forks as explained below:
+1. [one member] Set up the team org:
+   {{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Organization Setup**", "1", indent="1") }}
 
-{{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Organization Setup**", "1", indent="1") }}
-{{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="1") }}
-{{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="1") }}
+2. [one member] Set up the team repo:
+   {{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="1") }}
+
+3. [each member] Set up individual forks:
+   {{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the code base</span>
@@ -679,15 +746,11 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
   * **[Tutorial 2 - Adding a new Command]({{ url_ab3_fork_website }}/tutorials/AddRemark.html)**
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
     * **Submission:** Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
-    * FAQ: Do we have to write/update test cases too?<br>
-      A: Not a strict requirement, but given the purpose of this tutorial is to learn the code base, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise, you can run into difficulties when you are writing test cases for your own features later.
+      * FAQ: Do we have to write/update test cases too?<br>
+        A: Not a strict requirement, but given the purpose of this tutorial is to learn the code base, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise, you can run into difficulties when you are writing test cases for your own features later.
   * [Tutorial 3 - Removing a field from an entity]({{ url_ab3_fork_website }}/tutorials/RemovingFields.html)
     * This tutorial is optional to do, but **at least give it a quick read**.
     * Submission: not required.
-* The PRs created for tutorials need not be merged, unless the changes are actually in line with your project idea.
-* For reference, given below is the workflow you should follow when merging code in your tP:
-
-{{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize the MVP version</span>
@@ -821,69 +884,47 @@ For example, it is fine to restrict the person name to a certain length and a ch
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_update_website_aboutus_readme">{{ icon_team }} Update project website: `AboutUs`, `README`</span>
+<span id="heading_update_website_aboutus_readme">{{ icon_team }} Update the project website</span>
 <div id="desc_update_website_aboutus_readme">
 
 <div class="indented-level1">
 
-<box type="info" seamless>
+Now that you have practiced the workflow to be used when updating the tP codebase, you can proceed to updating a few more tP documents, as per tasks ****A**** and ****B**** below.
+
+<box type="info" light>
 
 **Recommended procedure for updating docs**:{.text-info}
 
-1. Divide among yourselves who will update which parts of the document(s).
-1. Update the team repo by following the workflow given below:
+1. Dicide among yourselves who will update which parts of the document(s).<br>
+   All team members are expected to contribute to all aspects of documentation %%(e.g., user docs, developer docs, diagrams)%%
+1. Update the team repo by following the prescribed workflow:
 
-{{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3") }}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **tP project schedule tracking**", "3") }}
 <p/>
 
 **Guidance on using documentation tools** (e.g., How to preview changes locally before committing/pushing) can be found in the relevant section of the Developer Guide of your team project website that you set up earlier. Given below is a shortcut, for your convenience:
 
 * If your project is using **Jekyll** for documentation, refer [this Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=github.io/myrepo-,Updating%20documents,-Jekyll%20uses%20kramdown).
 * If your project is using **Markbind** for documentation, refer [this MarkBind Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/markbind-forked-sites.html#:~:text=latest%20%2D%2Dsave%2Ddev-,Updating%20documents,-MarkBind%20is%20a).
-</box>
 
-<panel type="seamless" header="**FAQ:** When all members are updating the same document, can we create one issue and assign it to all?">
-
+{% call show_faq("When all members are updating the same document, can we create one issue and assign it to all?") %}
 **A:** In the tP (in which our grading scripts track issues assigned to each member), it is better to create separate issues so that each person's work can be tracked separately. For example, suppose everyone is expected to update the User Guide (UG). You can create separate issues based on which part of the UG will be updated by which person e.g., `List-related UG updates` (assigned to John), `Delete-related UG updates` (assigned to Alice), and so on.
-</panel>
-
-
-<include src="tp-tasks-fragment.md#common-mistakes" />
+{% endcall %}
+</box>
 
 </div>
 
-****A: Update the following pages in your project repo:****
 
-* **_AboutUs_ page**:
-  This page (in the `/docs` folder) is used for course admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
-  * Add your own details. Include a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.
-  * There is no need to mention the tutor/lecturer, but OK to do so too.
-  * The filename of the profile photo should be `docs/images/github_username_in_lower_case.png`<br>
-    ==Note the need for lower case== (<tooltip content="GitHub usernames are not case sensitive, but URLs in GitHub-pages are -- to avoid any mismatches, we have fixed the file name here to be lower case">%%why lowercase?%%</tooltip>) %%e.g. `JohnDoe123` -> `docs/images/johndoe123.png` not `docs/images/JohnDoe123.png`%%.<br>
-    ==If your photo is in jpg format, name the file as `.png` anyway==.
-  * Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities %%(as explained in Admin {{ icon_embedding }} Project Scope)%%</trigger> later in the project, if necessary.
+****A: Update README page to match your project:****
 
-<modal large header="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:mid-v12-photo">
-<include src="tp-deliverables-website-fragment.md#profile-photo"/>
-</modal>
-
-<modal large header="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
-<include src="tp-expectations.md#roles"/>
-</modal>
-
-* **README** page: Update it to match your project.
-
-  * Add a UI mockup of your intended final product.
+* Add a UI mockup of your intended final product.
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
     {{ info }} The UI mock up can be a hand-drawn sketch or created using a tool such as PowerPoint, PlantUML, Figma, etc. <br>
-    {{ icon_Q }} Can the AB3 screenshot used for this? Only in the unlikely case that your {{ version_mvp }} UI looks exactly the same as AB3.
-
-  * Update all contents to match your own project.
-
-  * Update the link of the GitHub Actions _build status badge_ (<img src="https://github.com/se-edu/addressbook-level3/workflows/Java%20CI/badge.svg" alt="Build Status">) so that it reflects the build status of your team repo.
-
-  * Acknowledge the original source of the code e.g.,<br>
+    {{ icon_Q }} Can the AB3 screenshot used for this? Only in the unlikely case that your {{ version_mvp }} UI looks exactly the same as AB3.{ texts="['A1.', 'A2.', 'A3.', 'A4.']" }
+* Update the link of the GitHub Actions _build status badge_ (<img src="https://github.com/se-edu/addressbook-level3/workflows/Java%20CI/badge.svg" alt="Build Status">) so that it reflects the build status of your team repo.
+* Acknowledge the original source of the code e.g.,<br>
     `This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).`
+* Update all remaining contents of the page to match your own project.
 
 <box type="tip" seamless>
 
@@ -997,39 +1038,130 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration (`{{ version_practice }}`)</span>
+<span id="heading_do_a_practice_iteration">{{ icon_team }} Do a 'workflow practice' session</span>
 <div id="desc_do_a_practice_iteration">
 
-<box type="info" seamless>
+****Task:**** Do a workflow 'practice' session, to get all team members familiarized with the workflow you need to follow in the tP.
 
-**A secondary purpose of this iteration `{{ version_practice }}` is to practice the required workflow** while modifying some documentation files, before you start updating the code in the following iteration.
- The panel below explains how to use GitHub to do a project iteration.
-
-{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
-</box>
-
+****Why?:****  **_The ability to modify a team-owned codebase in parallel_ is an important learning outcome of this course.** Following a suitable workflow is critical for achieving that. This practice iteration is for you to get used to the workflow that you need to follow in the tP.
 
 <box type="tip" seamless>
 
-**Strongly recommended to do this as a team activity** (preferably F2F, or else connected via Zoom/MST), at least until everyone has merged a few PRs for this iteration. That will help you proceed faster (e.g., a PR can be reviewed immediately after it has been created) and will also make it easy for you to help each other w.r.t. to the workflow matters.
+**Strongly recommended to do this as a team activity** (preferably F2F, or else connected via Zoom/MST). That will help you proceed faster (e.g., a PR can be merged soon after it has been created) and will also make it easy for you to help each other w.r.t. to the workflow matters.
 </box>
 
-* **Tasks 2 and 3 (given in subsequent sections) are the documentation updates to be done** in this iteration.
-* **Don't forget to 'wrap up' the milestone** (as explained in the panel above), after the work is done.
+****Steps:****
 
-<panel type="seamless" header="**FAQ:** What's the deadline for tP iterations?">
+1. [one member] **Set up the issue tracker of your team repo**, if you haven't done so already.<br>
+   In addition, **create a milestone named `{{ version_practice }}` and set an appropriate deadline** (i.e., same as, or earlier than, the iteration deadline)
 
-**A:** The deadline for tP iterations is the `Thursday 23:59` in the week it is due, unless a different date is specified in the instructions of that iteration.
-</panel>
+   {{ embed_topic("appendixE-gitHub.md#issue-tracker-setup", "Admin " + icon_embedding + " Appendix E(extract): **tP Issue Tracker Setup**", "1", indent="1") }}
 
+2. [each member] **Fork and clone the team repo**, if you haven't done so already.
+
+   {{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="1") }}
+
+3. [each member] **Add your photo to repo while ==following the prescribed tP workflow==**. Here are the steps (yes it is a lot of steps for such a small update, but the purpose is to learn the workflow):
+
+<div class="indented-level1">
+
+* Read the 'tP Scheduling and Tracking' overview given below. {text="3.1"}
+  {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking-overview", "Admin " + icon_embedding + " Appendix E(extract): **tP Project Schedule Tracking (Overview)**", "1", indent="1") }}
+* Create an issue to represent the task at hand. For example, `Add Jake's photo`. {text="3.2"}
+  {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking-issues", "Admin " + icon_embedding + " Appendix E(extract): **Using issues to track project tasks**", "1", indent="1") }}
+* Assign the issue to yourself, to indicate you are taking responsibility for it. {text="3.3"}
+  {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking-assignees", "Admin " + icon_embedding + " Appendix E(extract): **Using issue assignees to track task allocation**", "1", indent="1") }}
+* Assign the issue to the milestone `{{ version_practice }}` to indicate this task is due in `{{ version_practice }}`, as given in the panel below. {text="3.4"}
+  {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking-milestones-when", "Admin " + icon_embedding + " Appendix E(extract): **Using milestones to track task scheduling**", "1", indent="1") }}
+* Create a pull request for it, while taking care to ==follow the workflow prescribed in the panel below==. Details of the photo to be added is given below the expandable panel. {text="3.5"}
+  {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking-prs-creating", "Admin " + icon_embedding + " Appendix E(extract): **Using PRs to track task progress -> Creating PRs**", "1", indent="1") }}
+
+<div class="indented-level1">
+<box>
+
+* ##### Adding a photo {icon="https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Portrait_placeholder.png/600px-Portrait_placeholder.png?20210811085635" i-width="100px" i-class="rounded" }
+  * Add a suitable photo of yourself, as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger><br>
+  * The filename of the profile photo should be<br>
+    `docs/images/github_username_in_lower_case.png`<br>
+    Note the need for ==lower case== (<popover content="GitHub usernames are not case sensitive, but URLs in GitHub-pages are -- to avoid any mismatches, we have fixed the file name here to be lower case">%%why lowercase?%%</popover>) %%e.g. `JohnDoe123` -> `docs/images/johndoe123.png` not `docs/images/JohnDoe123.png`%%.<br>
+    If your photo is in jpg format, ==name the file as `.png`== anyway.
+</box>
+</div>
+
+<modal large header="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:mid-v12-photo">
+<include src="tp-deliverables-website-fragment.md#profile-photo"/>
+</modal>
+
+* Get a team member to review the PR. For example, the reviewer can check if,<br>
+  {{ icon_tick }} the file is in the right location,<br>
+  {{ icon_tick }} the file name is as expected<br>
+  {{ icon_tick }} the PR is sent from a fork, and from a separate branch<br>
+  {{ icon_tick }} commits message complies with the Git Conventions. {text="3.6"}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking-prs-reviewing", "Admin " + icon_embedding + " Appendix E(extract): **Using PRs to track task progress -> Reviewing PRs**", "1", indent="1") }}
+
+* Merge the PR. {text="3.7"}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking-prs-merging", "Admin " + icon_embedding + " Appendix E(extract): **Using PRs to track task progress -> Merging PRs**", "1", indent="1") }}
+
+* Good job on merging the first PR into the team repo! {text="3.8"}
+</div>
+
+4. [each member] **Update the AboutUs page ==as parallel PRs==**. In this step, we are going to attempt sending parallel PRs that update the same page, which means there is a potential for merge conflicts (hence, you get to practice resolving merge conflicts in a team project):
+
+<div class="indented-level1">
+
+* Create an issue, and a PR, for the following task, similar to steps 3.2-3.5 above (==do not merge the PR yet==). {text="4.1"}
+
+<div class="indented-level1">
+<box>
+
+****Updating the _AboutUs_ page:****
+
+This page  (in the `/docs` folder) is used for course admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
+
+* Add your own details.
+* There is no need to mention the tutor/lecturer, but OK to do so too.
+* Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities %%(as explained in Admin {{ icon_embedding }} Project Scope)%%</trigger> later in the project, if necessary.
+
+</box>
+</div>
+
+<modal large header="Admin {{ icon_embedding }} Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
+<include src="tp-expectations.md#roles"/>
+</modal>
+
+* #r#Wait until all team members have sent the PR## for the above step.<br>
+  Reviews the PRs while waiting.{text="4.2"}
+
+{% call show_faq("What if a team member has not done this? Can the rest proceed?") %}
+If a team member fails to do this within a reasonable time, try to help that team member with this task, if needed. Failing that, the rest of the team can proceed with the remainder of the task. In the latter case, inform the tutor that you are proceeding with this task without waiting for that team member.
+{% endcall %}
+
+* Merge one of the PRs sent in step 4.1 (e.g., the one that arrived first). If this causes conflicts in other PRs, resolve those conflicts.{text="4.3"}
+* Merge remaining PRs one at a time, while resolving merge conflicts as needed.{text="4.4"}
+* Check the AboutUs page in your teams repo to confirm if the page appears as expected. [Here]({{ url_ab3_upstream_website}}/AboutUs.html) is an example.<br>
+  If something is not right, you might have to create another PR to rectify it.{text="4.4"}
+
+</div>
+
+5. Congrats! You are done with this workflow practice session. It might have felt like a lot of 'jumping through hoops' for very little gain but as you go through the tP, this 'workflow overhead' is expected to feel progressively less 'draggy'. Hopefully, it will be almost second nature to you by the time you finish the tP.
+
+</div>
+{#====================================================================================================================#}
+<span id="heading_divide_mvp_features">{{ icon_team }} Divide MVP features among members</span>
+<div id="desc_divide_mvp_features">
+
+* {{ icon_team }} **Re-confirm MVP feature design**. Recall that you decided on features to include in the MVP version of the product. Revisit that design. Ensure the following (you may refine the MVP feature design if necessary).
+  * It consists of not only<br>
+    **the most essential features** of the target product, but also,<br>
+    **the simplest implementation of those features**.
+  * It will **still be a working product** (i.e., it can be used)<br>
+    %%Reason: As we are following the breadth-first iterative approach, each intermediate version should be a working product.%%
+* {{ icon_team }} **Divide the features among the team members** i.e., who will be implementing which feature.
+  * Reminder: We recommend that the work to be divided primarily based on features/enhancements rather than components.
 </div>
 {#====================================================================================================================#}
 <span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration (`{{ version_mvp }}`)</span>
 <div id="desc_plan_the_next_iteration">
-
-<div class="indented-level2">
-
-</div>
 
 * {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_mvp }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
   * ==**Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)**== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
@@ -1039,10 +1171,10 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 * {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a placeholder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_mvp }}`%%
 </div>
 {#====================================================================================================================#}
-<span id="heading_start_implementing_the_next_version">{{ icon_individual }} Start implementing the next version</span>
-<div id="desc_start_implementing_the_next_version">
+<span id="heading_start_the_next_iteration">{{ icon_individual }} Start the next iteration</span>
+<div id="desc_start_the_next_iteration">
 
-* If you have time, start implementing v1.2.
+* Stronger teams are welcome to stay one week ahead of the tP schedule. So, feel free to move on to next week's tp tasks, and get started on the next iteration (i.e., `{{ version_first }}`).
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_implementing_first_version">{{ icon_individual }} Start implementing {{ version_mvp }}</span>
@@ -1094,15 +1226,6 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 {{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_adjust_process_rigor">{{ icon_team }} Adjust process rigor if necessary</span>
-<div id="desc_adjust_process_rigor">
-
-* **Adjust process rigor**, as explained in the panel below:
-
-{{ embed_topic("appendixE-gitHub.md#workflow-after-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow (after " + version_mvp + ")**", "3", indent="1") }}
-
-</div>
-{#====================================================================================================================#}
 <span id="heading_start_proper_milestone_management">{{ icon_team }} Start proper milestone management</span>
 <div id="desc_start_proper_milestone_management">
 
@@ -1130,35 +1253,66 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 </div>
 {#====================================================================================================================#}
+<span id="heading_rename_packages">%%{{ icon_team_rep }} [Optional] Rename packages/classes%%</span>
+<div id="desc_rename_packages">
+
+* **If you wish to rename AB3 packages/classes** to fit your product, this is the best time to do so (i.e., before starting any functionality changes), as such changes cause widespread changes to the codebase, causing many merge conflicts with any other ongoing PRs.
+* **Renaming packages/classes is optional**. It is fine to keep the existing ones. But if you decide to rename them, do it quickly, and remember to follow the workflow you practiced in the previous week.
+
+</div>
+{#====================================================================================================================#}
 <span id="heading_add_first_functionality_increment">{{ icon_individual }} Add the first functionality increment</span>
 <div id="desc_add_first_functionality_increment">
 
-* **Ensure you are aware of the instructions for planning this iteration**, given as part of previous week's tP instructions, and also repeated in the panel below for your convenience:
 
-{{ embed_topic("tp-tasks-fragment.md#desc_plan_the_next_iteration", "%%**[Repeated from last week]**%% Admin " + icon_embedding + " tP: Week 7: Plan the next iteration", "1", status="expanded", indent="1") }}
+<box type="important" seamless>
 
-* **Push as hard as you can afford to** in this iteration: While we have kept the expectations bar low for this iteration (so as not to overwhelm inexperienced programmers), you are encouraged to push as hard as you can in this iteration. Reason: past students have lamented not doing enough in `{{ version_mvp }}` that left 'too much' to do in `{{ version_penultimate }}` and `{{ version_final }}`.<br>
-At the same time, we recommend you should also play it safe by aiming to reach a _smallest possible_ version early and squeeze more in only if there is time left.
+**Each member is expected to <tooltip content="i.e., merge at least one PR">merge _some_ code</tooltip> in each <tooltip content="{{ version_first }}, {{ version_mvp }}, {{ version_alpha }}, etc."> iteration</tooltip>.**<br>
+  %%Reason: As each iteration focuses on a different learning outcome, it is better for you to take part in each of them fully.%%
 
-* {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this course because incremental delivery, among other things, improves the _visibility_ of your work.">(reason)</popover>%%.
-  * {{ icon_Q }} FAQ: Does that mean I have to merge at least one PR every week?<br>
-    A: While that is ideal, it is not a requirement that you merge PRs every week. ==Consistency of contribution is detected based on commit timestamps==, not based on when you merge the code. Don't worry if a certain week is shown in red because the commits in that week have not been merged yet; it will eventually turn green after you merge the code, and the temporary red will not affect the grade.<br>
-      That said, [{{ icon_tip }} aim for small PRs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/best-practices-for-pull-requests#:~:text=pull%20request.%22-,Write%20small%20PRs,-Aim%20to%20create) (and also, small focused commits). A PR that takes more than a week to merge is likely too large, or too-slow in moving forward.<br><br>
+{% call show_faq("Will I lose marks if I couldn't merge any PRs in an iteration?") %}
 
-* ==**If you plan to rename the Java packages**==, you may want to do it around this time. Doing it later can be more difficult %%(e.g., it can cause more merge conflicts)%%, and can cause problems in our code authorship tracking. Also note that renaming packages is optional.
+As it is the case with other similar tP requirements, there is no penalty for missing this expectation occasionally. But try not to miss it too often.
+{% endcall %}
+</box>
+<box type="tip" seamless>
 
-* **Note: you are required to follow the forking workflow** for at least for the first part of this iteration:
-{{ embed_topic("appendixE-gitHub.md#workflow-before-v11", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="1") }}
+**Prefer smaller PRs**.<br>
+  %%Reason: The **ability to divide work into small yet meaningful PRs** is another intended learning outcome.%%
 
-<panel type="seamless" header="**FAQ: Do we have to keep updating tests when we update functional code?**">
+* For example, suppose you are asked to implement a feature F in the current iteration. Instead of creating one big PR for it, you can start with a smaller PR that implements a very VERY simple version of F, followed by a few more PRs that improve F incrementally.
+* %%{{ icon_resource }} Side reading : [blog post] [Small Pull Requests: 6 reasons why they are the best choice](https://blog.codacy.com/small-pull-requests).%%
+</box>
 
-There are several options you can choose from:
+* {{ icon_individual }} **Select a code change to implement**, as follows:{text="S1." t-class="fw-bold"}
+  * Consider the feature that you have been assigned to implement for the upcoming MVP version of the product (which will be released by the iteration `{{ version_mvp }}`, not by the current iteration `{{ version_first }}`).
+  * Pick a small code change that you'll need to do to implement that feature. This is a small code change contributing towards the feature, not the entire feature itself. %%Examples: add parser support for a new command word, add a field to the person class%%.
+* {{ icon_individual }} **Implement that code change while following the workflow** that you practiced in the previous week. A summary of the steps:{text="S2."}
+    * Create an issue for it. Assign it to yourself. Assign it to milestone `{{ version_first }}`.
+    * Create a PR from a separate branch in your fork. Assign it to `{{ version_first }}`.
+    * Get the PR reviewed.
+    * Get the PR merged. Close the corresponding issue.
+* {{ icon_individual }} **Continue to implement more code changes** (i.e., repeat S1 and S2) to implement more code changes that move you towards your MVP feature(s). You can even create parallel PRs, when implementing code changes with no/low dependency between them.{text="S3."}
+
+{% call show_faq("**Do we have to update tests** when we update functional code?") %}
+
+**For this iteration,** keeping in line with the learning outcome of this iteration, ==try to keep the existing tests (and CI) working==. It is optional to add more tests.
+
+**In general,** there are several options you can choose from:
 
 1. Update/add tests every time you change functional code. This is what normally happens in stable production systems. For example, most OSS projects will not accept a PR that has failing tests or not enough new tests to cover the new functional code.
 2. Disable failing tests temporarily until the code is stable. This is suitable when the functional code is in a highly volatile state (e.g., you are still experimenting with the implementation). The benefit is that you avoid the cost of writing tests for functional code that might change again soon after. Some costs: (a) harder to detect regressions during the period tests are disabled (b) testing work pile up which could distort your estimate of real progress (c) forgetting to enable the tests in time<br>
   This is still a viable option during some stages of a tP e.g., during the early part of an iteration, or while a PR is still in 'draft' state (i.e., for getting early feedback from the team).
 4. Decide certain tests are not worth the effort to maintain, and delete them permanently. Result: Less test code to maintain but higher risk of undetected regressions.
-</panel>
+{% endcall %}
+
+{% call show_faq("**Do we need to update usder/developer guides** to match these code changes?") %}
+
+**In general**, it is better for a PR to update code, tests, and documentation together.
+
+**In this iteration**, it is fine not to update documentation, to keep things simple. We can start updating docs in a later iteration, when the code is more stable.
+{% endcall %}
+
 </div>
 {#====================================================================================================================#}
 <span id="heading_add_junit_tests">{{ icon_individual }} Add some JUnit Tests</span>

@@ -39,7 +39,6 @@ week8: [
 ],
 week9: [
   {id: 'do_a_postmortem'},
-  {id: 'adjust_process_rigor'},
   {id: 'start_on_the_penultimate_version'},
   {id: 'update_dg_with_design_details'}
 ],

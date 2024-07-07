@@ -1016,6 +1016,7 @@ Implementing the following increment (optional) can be help with the above.
 
 {{ show_xp_steps(steps, tasks_file) }}
 
+<include src="{{ tasks_file }}#{{ course | lower }}-week{{ week_num }}-outro" optional/>
 </div>
 </div>
 {% endmacro %}
