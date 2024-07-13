@@ -428,7 +428,7 @@ It is up to the team to decide. However, we discourage unilateral PR merging i.e
 <pic eager src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
 
 * **Update the milestone to match the product** i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.
-* **Do a release** ([example](https://github.com/se-edu/addressbook-level3/releases/)).
+* **Do a release** ([example](https://github.com/se-edu/addressbook-level3/releases/)), if required by the milestone.
 * **Close the milestone.**
 
 </div>

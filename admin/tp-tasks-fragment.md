@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -283,12 +283,7 @@ This week, we focus on two fronts:
 
 **Each tP iteration focuses on a specific #g#learning outcome##, a corresponding #g#product goal##, and a #g#strategy##** that we'll use to achieve both. The ones for this tP iteration (i.e., {{ version_practice }}) are given below:
 
-<box type="success" icon=":fas-arrow-right:" icon-size="2x" seamless>
-
-**{{ version_practice }}**{.text-success}
-<include src="tp-timeline.md#v11-goals" />
-</box>
-
+{{ show_tp_goals(version_practice, "v11-goals") }}
 
 **We consider this iteration a 'practice' iteration**. Reason: As this is the first time your team is working on this codebase, we first focus on learning the workflow that you need to follow as a team. This practice iteration, we limit ourselves to some document updates only (to minimize the risk of breaking the codebase).
 
@@ -323,15 +318,9 @@ But you can continue to use your favorite Git GUI for a more 'visual' view of yo
 Having practiced the workflow in the previous iteration, **this week's iteration {{ version_first }} adds the first functional code changes.**
 
 {{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 19, 37) }}
+{{ show_tp_goals(version_first, "v12-goals") }}
 
-
-<box type="success" icon=":fas-arrow-right:" icon-size="2x" seamless>
-
-**{{ version_first }}**{.text-success}
-<include src="tp-timeline.md#v12-goals" />
-</box>
-
-The breadth-first iterative approach requires each intermediate version to be a working version. However, to make things a bit easier for us at the start, **we will not be releasing any new product version at the end of this iteration.** This means you have the freedom to create PRs for small code changes, without the pressure to implement a feature fully in one PR.
+The _breadth-first iterative_ approach requires each intermediate version to be a working version. However, to make things a bit easier for us (as we are only getting started with the project), **we will not be releasing any new product version at the end of this iteration.** This means you have the freedom to create PRs for small code changes, without the pressure to implement a feature end-to-end within one PR (or even within this iteration).
 
 ++**Things to note:**++{.text-info}
 
@@ -375,40 +364,63 @@ While we are on the topic, also note that the architecture of AB3 doesn't suit e
 
 {% endcall %}
 {#====================================================================================================================#}
-<div id="cs2103-week9-intro">
+{% call show_tp_week_intro("cs2103", 9) %}
 
-<include src="tp-timeline.md#v13-goals" />
+++**What's happening this week:**++{.text-info}
 
+**This week, we deliver the first working version of the product (i.e., the MVP)**, thus finishing what we started in the previous iteration.
 
-<box>
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 32, 52) }}
+{{ show_tp_goals(version_mvp + " (MVP)", "v13-goals") }}
 
-##### How to define version numbers?{.text-info}
+As per the learning outcome of this iteration (given above), our focus is on delivering a product on time. So, %%in task {{ thumb_small("1")}}%%, we start by setting up a plan to reach that goal, and then execute on it %%in task {{ thumb_small("2")}}%% , while making course corrections as we go (if needed).
 
-While there is no universal set of rules on choosing version numbers for a product, there is a convention named **[SemVer](https://semver.org/) that is well-defined and widely used**. Our tP version numbers (`{{ version_mvp }}`, `{{ version_penultimate }}`, `{{ version_final }}` etc.) do not follow SemVer strictly though.
+++**Things to note:**++{.text-info}
 
-While on the topic of version numbers, **_milestones_ and _versions_ are not the same thing**. For example, you can have a version released in the middle of a milestone, and you can define a milestone that does not release a new version of the product. For convenience, the tP uses them interchangeably (e.g., `{{ version_mvp }}` is used to mean a version as well as a milestone) because its major milestones coincide with its version releases.<br>
-In a similar vein, we use the version number to refer to the iteration as well, although they are not the same thing. So, when we say _iteration `{{ version_mvp }}`_, we mean _the iteration that ends in the milestone `{{ version_mvp }}`_ (that also happens to deliver the product version `{{ version_mvp }}`)
+<box type="info" seamless>
 
+**Iteration vs milestone vs version:**{.text-info}
+
+**An _iteration_ can aim to reach zero or more _milestones_, some of which can be the release of a product _version_**.<br>
+ For convenience, the tP uses a version number to refer to all three. For example, when we say _iteration `{{ version_mvp }}`_, we mean _the iteration that ends in the milestone `{{ version_mvp }}` (that also happens to deliver the product version `{{ version_mvp }}`_.
 </box>
-<box type="tip" icon-size="2x" seamless>
 
-<span class="text-success">**Using parallel PRs yet?**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%
+<box type="info" seamless>
+
+**How to define version numbers?**{.text-info}
+
+While there is no universal set of rules on choosing version numbers for a product, **there is a convention named [SemVer](https://semver.org/) that is well-defined and widely used**. Our tP version numbers (`{{ version_mvp }}`, `{{ version_penultimate }}`, `{{ version_final }}` etc.) do not follow SemVer strictly though.
 </box>
-</box>
 
+{% endcall %}
+{#---------------------------------------------------#}
+{% call show_tp_week_outro("cs2103", 9) %}
 
-</div>
+Were you able to deliver on time?
+
+How do initial effort estimations to actual effort?
+{% endcall %}
 
 {#====================================================================================================================#}
-<div id="cs2103-week10-intro">
+{% call show_tp_week_intro("cs2103", 10) %}
 
-<div class="indented">
+++**What's happening this week:**++{.text-info}
 
-<include src="tp-timeline.md#v14-goals" />
-</div>
-<box dismissible>
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 45, 67) }}
+{{ show_tp_goals(version_alpha, "v14-goals") }}
 
-****{{ icon_tip }} How much is enough to get full marks?**** Not surprisingly, a common question tutors receive around this time of the project is "can you look at our project and tell us if we have done enough to get full marks?". Here's the answer to that question:
+**In this iteration learn from past iterations, and aim to better plan and better deliver another functional increment** that would get you very close to the final version in terms of raw functionality.<br>
+We call this the _alpha version_ because **this version is meant to be good enough for <tooltip content="testing done by internal testers">_alpha testing_</tooltip>** of the primary features.
+
+First, %%in task {{ thumb_small("1")}}%% we look back at the previous iteration, to see what we can learn from it.<br>
+Then, %%in {{ thumb_small("2")}}%% we plan features to be implemented in this version, while aiming to reach very close to the final product's feature set.<br>
+Finally, %%in {{ thumb_small("3")}}%% we implement those features to deliver the `{{ version_alpha }}`.
+
+++**Things to note:**++{.text-info}
+
+{% call show_faq("How much code/features is enough to get full marks?") %}
+
+**** Not surprisingly, a common question tutors receive around this time of the project is "can you look at our project and tell us if we have done enough to get full marks?". Here's the answer to that question:
 
 **The tP _effort_ is graded primarily based on peer judgements** (tutor judgements are used too). That means you will be judging the effort of another team later, which also means you should be able to make a similar judgement for your own project now. While we understand effort estimating is hard for software projects, it is an essential SE skill, and we must practice it when we can.
 
@@ -419,37 +431,69 @@ In a similar vein, we use the version number to refer to the iteration as well, 
 </modal>
 
 If you surpass the above bars (in your own estimation), you should be in a good position to receive full marks for the effort. But keep in mind that there are many other components in the [tP grading](tp-grading.md), not just the effort.
-</box>
+{% endcall %}  <!-- faq -->
 
-</div>
-
-{#====================================================================================================================#}
-<div id="cs2103-week11-intro">
-
-<include src="tp-timeline.md#v15-goals" />
-
-<box type="info" seamless tags="m--cs2103">
+{% endcall %}
+{#---------------------------------------------------#}
+{% call show_tp_week_outro("cs2103", 10) %}
 
 **Have any suggestions to improve AB3?**{.text-info}
 
 Now that you have worked with AB3 codebase for a while, if you have any suggestions on how to improve AB3 (for future batches), feel free to post in the [AB3 upstream issue tracker](https://github.com/se-edu/addressbook-level3/issues).<br>
 %%Examples: places where the design/code can be simplified, hard to understand parts of the code, tips you can share with future batches, ...%%
-</box>
-</div>
+
+{% endcall %}
 
 {#====================================================================================================================#}
-<div id="cs2103-week13-intro">
+{% call show_tp_week_intro("cs2103", 11) %}
 
-<include src="tp-timeline.md#v16-goals" />
+++**What's happening this week:**++{.text-info}
 
-<box background-color="white" border-color="red">
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 60, 80) }}
+{{ show_tp_goals(version_penultimate, "v15-goals") }}
+
+**This iteration focuses on applying internal quality control before the product is exposed to outsiders**. %%'Outsiders' here refer to other teams that will be testing your product during the practical exam dry run (PE-D).%%<br>
+In {{ thumb_small("1")}}, you will do an alpha testing of your own product, and record bugs, which can then be fixed during {{ thumb_small("2")}}.<br>
+Keeping in mind that this is your last chance to do _any_ feature enhancements (due to the _feature freeze_ in iteration {{ version_final }}), in task {{ thumb_small("3")}} you will decide which final touches you would want to implement, and proceed to implement them.<br>
+At the same time, the UG and the DG needs to be updated, as given in task {{ thumb_small("4")}}
+
+++**Things to note:**++{.text-info}
+
+<box type="important" light>
+
+**This iteration is normally done in one week, but is spread over two weeks** due to clashes with holidays. So, do the amount of work you would normally do if this was only one week long (i.e., no need to do more work because there is an extra week for this iteration).
+</box>
+
+{% endcall %}
+
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2103", 12) %}
+
+++**What's happening this week:**++{.text-info}
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 75, 80) }}
+
+We are still in iteration `{{ version_penultimate }}`, due to this iteration stretched over two weeks.
+
+{% endcall %}
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2103", 13) %}
+
+++**What's happening this week:**++{.text-info}
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 86, 92) }}
+{{ show_tp_goals(version_final, "v16-goals") }}
+
+++**Things to note:**++{.text-info}
+
+<box type="important" seamless>
 
 **Remind yourself of the project grading criteria and our policy on reuse** (e.g., ==how to give credit for reused code==):
 
 <panel type="seamless" src="tp-grading.md#main" header="%%Admin {{ icon_embedding }} tP → Grading%%" class="embedding" />
 <panel type="seamless" src="appendixB-policies.md#policy-reuse" header="%%Admin {{ icon_embedding }} Policy on reuse%%" class="embedding" />
 </box>
-</div>
+{% endcall %}
 {#====================================================================================================================
  # CS2113 Weekly Intros
  #====================================================================================================================#}
@@ -1171,7 +1215,7 @@ If a team member fails to do this within a reasonable time, try to help that tea
 * {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a placeholder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_mvp }}`%%
 </div>
 {#====================================================================================================================#}
-<span id="heading_start_the_next_iteration">{{ icon_individual }} Start the next iteration</span>
+<span id="heading_start_the_next_iteration">{{ icon_team }} Start the next iteration</span>
 <div id="desc_start_the_next_iteration">
 
 * Stronger teams are welcome to stay one week ahead of the tP schedule. So, feel free to move on to next week's tp tasks, and get started on the next iteration (i.e., `{{ version_first }}`).
@@ -1293,6 +1337,9 @@ As it is the case with other similar tP requirements, there is no penalty for mi
     * Get the PR reviewed.
     * Get the PR merged. Close the corresponding issue.
 * {{ icon_individual }} **Continue to implement more code changes** (i.e., repeat S1 and S2) to implement more code changes that move you towards your MVP feature(s). You can even create parallel PRs, when implementing code changes with no/low dependency between them.{text="S3."}
+* {{ icon_team }} **Wrap up the milestone** When the iteration period is over, do the following:{text="S4."}
+  * Move any pending issues/PRs to the next milestone (i.e., {{ version_mvp }}). %%As we did not plan to release a product version at the end of this iteration, we can freely move any pending work to the next iteration.%%
+  * Close the milestone.
 
 {% call show_faq("**Do we have to update tests** when we update functional code?") %}
 
@@ -1331,27 +1378,38 @@ As it is the case with other similar tP requirements, there is no penalty for mi
     Tests: [`seedu.addressbook.data.AddressBookTest.java`](https://github.com/se-edu/addressbook-level2/blob/master/test/java/seedu/addressbook/data/AddressBookTest.java)
 </div>
 {#====================================================================================================================#}
-<span id="heading_deliver_first_version">{{ icon_team }} Manage the iteration, and deliver {{ version_mvp if cs2113 else version_mvp }}</span>
-<div id="desc_deliver_first_version">
-
-<div tags="m--cs2103">
-
+<span id="heading_plan_the_first_product_release">{{ icon_team }} Plan the first product release (`{{ version_mvp }}`)</span>
+<div id="desc_plan_the_first_product_release">
 <box type="warning" seamless>
 
 Note that the product you deliver at the end of this iteration must be working although the functionality is basic.
 </box>
 
+* Revise MVP design, if necessary.
+* Enumerate the tasks to be done, order, timeline
+* create as issues -> assign member, milestone
+
+</div>
+{#====================================================================================================================#}
+<span id="heading_deliver_first_version">{{ icon_team }} Manage the iteration, and deliver {{ version_mvp }}</span>
+<div id="desc_deliver_first_version">
+
+<div tags="m--cs2103">
+
 * {{ icon_team }} **Manage the iteration** `{{ version_mvp }}`, and reach the milestone `{{ version_mvp }}` (which delivers product version `{{ version_mvp }}`) as explained in the panel below.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 
-* **Wrap up the iteration/milestone**. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_mvp }}` (i.e., you can still get a 'working product' without them).
-
+* {{ icon_team }} **Aim to delivery on time**, as that is linked to our tP learning outcome of this iteration. This means you need to monitor progress, and course-correct as you go.
+  * Revise the MVP design further, if needed. If you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_mvp }}` (i.e., you can still get a 'working product' without them).
+  * <tooltip content="e.g., change scope">Revise</tooltip> or <tooltip content="i.e., reassign to a future milestone">reschedule</tooltip> issues/PR accordingly.
 * **Do a release on GitHub**, when the product `{{ version_mvp }}` is ready. Requirements:
   * **==Write a fairly detailed _Release Note_==** in the text field GitHub provides for the description of the release. In particular, describe what has been changed (compared to AB3). This is just an itemized list of _What's New_ -- no need to be as elaborate as a user guide.<br>
     **Include screenshots** (or screen recordings) of your product in action, featuring the changes you've done.<br>
     {{ icon_important_big_red }} <span class="text-danger">These release notes will be checked by the teaching team</span> to verify (a) that they are written reasonably well, and, (b) that the features mentioned in there show the product has reached the MVP level of functionality.
-  * **Upload the JAR file** as well.
+  * **Upload the JAR file** as well. Instructions for creating a JAR file can be found in [as described in the tP Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release).
+* **Wrap up the milestone** on GitHub, when you are done with this iteration and the MVP has been released.
+
 </div>
 <div tags="m--cs2113">
 
@@ -1365,7 +1423,7 @@ Note that the product you deliver at the end of this iteration must be working a
 <span id="heading_wrap_up_first_version">{{ icon_team }} Wrap up {{ version_mvp }}</span>
 <div id="desc_wrap_up_first_version">
 
-* **Wrap up the milestone** using a git tag `{{ version_mvp }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, you can reassign them to a future milestone, provided they are not _essential_ for the `{{ version_mvp }}` (i.e., the you can still get a 'working product' without them).
+* **Wrap up the milestone** using a git tag `{{ version_mvp }}`. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in time, you can reassign them to a future milestone, provided they are not _essential_ for the `{{ version_mvp }}` (i.e., you can still get a 'working product' without them).
 
 </div>
 {#====================================================================================================================#}
@@ -1377,8 +1435,8 @@ Note that the product you deliver at the end of this iteration must be working a
 This is a good time to get familiar with the diagramming tools used by the tP.
 </box>
 
-* {{ icon_individual }} **Each member is expected to update at least one UML diagram in the DG**, to match the changes you've done in `{{ version_mvp }}`. You may do this towards the end of `{{ version_mvp }}`, or soon after you finish it.
-* Updating the DG text to match the diagrams is optional (it can be done in `{{ version_penultimate }}`).
+* {{ icon_individual }} **Each member is recommended to update at least one UML diagram in the DG**, to match the changes you've done so far `{{ version_alpha }}`. You may do this towards the end of `{{ version_alpha }}`, or soon after you finish it.
+* Updating the DG text to match the diagrams is optional (it can be done later).
 * FYI, the panel below has some DG tips, some of which are related to drawing diagrams.
 
 <div class="indented">
@@ -1394,7 +1452,13 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 </panel>
 <p/>
 </div>
+{% call show_faq("Why not wait till the end to update digarams?") %}
 
+Here are some reasons:
+* We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
+* It is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
+* It allows receiving early self/peer/instructor feedback.
+{% endcall %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_mvp }}</span>
@@ -1414,49 +1478,41 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 <div id="desc_do_a_postmortem">
 
 * Discuss with the team how the iteration went (i.e., what worked well, what didn't), and your **plans to improve the process** (not the product) in the next iteration.
-* Keep notes about the discussion in your shared _project notes document_ so that the tutor can check them later.
+* **Submission:** Keep notes about the discussion in your shared _project notes document_ so that the tutor can check them later.
+</div>
+{#====================================================================================================================#}
+<span id="heading_plan_the_alpha_version">{{ icon_team }} Plan the alpha version (`{{ version_alpha }}`)</span>
+<div id="desc_plan_the_alpha_version">
+
+-- [more details to be added] --
+* What features would you include if you had only one more week?
+* Aim to reach a fully-fledged (albeit unpolished) version of the features
+* Decide the order/timeline, create issues, assign devs
+* Tackle tasks based on priority, while staying breadth-first.
+</div>
+{#====================================================================================================================#}
+<span id="heading_deliver_the_alpha_version">{{ icon_team }} Deliver the alpha version (`{{ version_alpha }}`)</span>
+<div id="desc_deliver_the_alpha_version">
+
+-- [more details to be added] --
+* As before, manage the iteration and release `{{ version_alpha }}`
+* Smaller steps encouraged. Don't be tempted to do the full feature in one PR.
+
+<box>
+
+##### {{ icon_tip }} Three ways to level up your game in this iteration:{.text-success}
+
+
+1. <span class="text-success">**Use parallel PRs:**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%
+1. **Maintain the defensiveness of the code:**{.text-success} Use assertions, exceptions, and logging in your code, as well as other defensive programming measures (refer this week's topic on _defensive programming_ for more details) when appropriate. This will be considered when grading your tP code quality.<br>
+   Remember to [enable assertions in your IDEA run configurations](https://se-education.org/guides/tutorials/intellijUsefulSettings.html) and [in the gradle file](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).
+</box>
+
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_on_the_penultimate_version">{{ icon_individual }} Start the next iteration</span>
 <div id="desc_start_on_the_penultimate_version">
 <div class="indented">
-
-<box type="important" tags="m--cs2103" seamless>
-
-{% if cs2113 or tic4002 %}==**This iteration is your last chance to add/change features.** You are strongly discouraged from adding new features in the following iteration (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is best reserved for bug fixing and documentation work only.{% else %}==**This iteration is your last chance to add features** as <span class="text-danger">a strict feature-freeze will be enforced in the next iteration</span> (i.e., {{ version_final }}).== That iteration (which is shorter than usual) is reserved for bug fixing and documentation work only. Any non-compliance with that restriction will be penalized. In other words, **in terms of product design and implementation, treat this iteration as creating the final version of the product**.{% endif %}
-
-The version you deliver in this iteration (i.e., `{{ version_penultimate }}`) will be subjected to a peer testing (aka [PE Dry Run](tp-pe.html#tp-practical-exam-dry-run-pe-d)) and you will be informed of the bugs they find (no penalty for those bugs).{% if cs2103 %} The same peer testers will be asked to check if you have changed features during the feature freeze later.{% endif %}
-
-Given that you'll have to make important feature decisions in this iteration, it may be useful to know what kind of _feature flaws_ that can cost you marks {% if cs2103 %} (<span class="text-danger">you will not be allowed to fix feature flaws while a feature-freeze is in force</span>).{% endif %} The panel below contains some excerpts from the guidelines your peers will use to determine feature flaws of your product after the final submission.
-
-<panel header="Admin {{ icon_embedding }} tP → **Grading → Product Design** (excerpt) → Feature Flaws" minimized>
-<include src="tp-grading-bugs-fragment.md#featureFlaws" />
-</panel>
-<p/>
-<panel header="Admin {{ icon_embedding }} Practical Exam → **Guidelines for determining bugs in the final version (excerpts)**" minimized>
-
-...
-
-<include src="tp-pe-bug-triaging-guidelines-fragment.md#how-to-prove-out-of-scope" />
-
-...
-<include src="tp-pe-bug-triaging-guidelines-fragment.md#triaging-feature-flaws" />
-</panel>
-<p/>
-{% if cs2103 %}
-During the feature freeze, you will not be allowed to tweak even things such as error messages. The panel below gives some details on the feature-freeze that will be imposed in {{ version_final }}, to prepare you in advance:
-
-<panel header="Admin {{ icon_embedding }} tP → **{{ version_final }} (extract) → More details on the feature freeze**" minimized>
-
-<include src="tp-tasks-fragment.md#feature-freeze-details" />
-</panel>
-{% endif %}
-</box>
-<box tags="m--tic4001" type="tip" seamless>
-
-In the final iteration (i.e., the one after this), you will be doing a lot of additional things e.g., adding documentation.
-Hence, it is in your interest to ==finish implementing all your <tooltip content="features you want to include in your final version (i.e., {{ version_final }})">final features</tooltip> in this iteration itself== so that you can use the final iteration for polishing up the functionalities and adding documentation.
-</box>
 
 As you did in the previous iteration,
 * **Plan the next iteration** (steps are given below as a reminder):
@@ -1488,27 +1544,6 @@ In addition,
 <div id="desc_update_dg_with_design_details">
 <include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
-
-<div class="indented" tags="m--cs2103 m--tic4002">
-<box type="warning" seamless>
-
-You are discouraged from moving sections currently in `DeveloperGuide.md` to additional markdown files. Reasons: 1. You need to submit the DG as a single PDF file at the end of the semester. 2. When checking DG-related tP increments, we only check your contributions to that file.
-
-A similar requirement applies to the `UserGuide.md` too.
-</box>
-</div>
-<div class="indented-level2" tags="m--cs2103 m--tic4002">
-
-<panel type="seamless" header="{{ icon_Q }} FAQ: Why not wait till the end to write documentation?">
-
-Here are some reasons:
-* We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
-* It is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
-* It allows receiving early self/peer/instructor feedback.
-</panel>
-<p/>
-</div>
-
 * **Update the Developer Guide** as follows:{% if tic4001 %}
   * You can take some inspiration from the [DG of the AB3 (se-edu/addressbook-level 3) project]({{ url_ab3_fork_website }}/DeveloperGuide.html).{% endif %}
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
@@ -1534,14 +1569,6 @@ Here are some reasons:
 </div>
 </div>
 {#====================================================================================================================#}
-<span id="heading_do_a_release">{{ icon_team }} Do a trial JAR release</span>
-<div id="desc_do_a_release">
-<include src="tp-tasks-fragment.md#alert-time-sensitive" />
-
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `{{ version_mvp }}.1` (or `{{ version_penultimate }}.trial`). ==Ensure that the jar file works as expected in an empty folder and using Java 11==, by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
-* {{ icon_tip }} If you want to smoke-test your JAR file on an OS that is not available within your team, you can post a request in the forum to see if anyone else in the class can help you smoke-test it on that OS.
-</div>
-{#====================================================================================================================#}
 <span id="heading_make_code_reposense_compatible">{{ icon_individual }} Ensure the code is RepoSense-compatible</span>
 <div id="desc_make_code_reposense_compatible">
 
@@ -1559,7 +1586,7 @@ Here are some reasons:
 <panel type="seamless" header="**FAQ:** What if someone took over a feature from another team member?">
 
   **A:** In terms of effort distribution, it's up to the team to tell us who did how much. Same goes for assigning bugs. So, it's fine for someone to take over a feature if the team is able to estimate the effort of each member, and they have a consensus on who will be responsible for bugs in that feature.<br>
- For code authorship, only one person can claim authorship of a line, and that person will be graded for the code quality of that line. By default that will be the last person who edited it (as per Git data) but you can [override that behavior using `@@author` tags](tools.html#tool-reposense-for-authorship-tracking).
+ For code authorship, only one person can claim authorship of a line, and that person will be graded for the code quality of that line. By default, that will be the last person who edited it (as per Git data) but you can [override that behavior using `@@author` tags](tools.html#tool-reposense-for-authorship-tracking).
 </panel>
 
 </div>
@@ -1585,7 +1612,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
    * Use a common browser such as Chrome, Edge, Firefox, Safari
    * Allow popups from https://catcher-org.github.io/
    * If you encounter other problems at the app launch, refer to the [Notes on using CATcher](https://catcher-org.github.io/ug/) -- look for information related to the Web app (not the desktop app).
-1. **Login**: Choose the _session_ `{{ course_pair }} Alpha Test`, and submit.
+1. **Login**: Choose the _session_ `{{ course_pair }} Smoke Test`, and submit.
    <pic eager src="images/catcherLogin.png"></pic>
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
@@ -1612,7 +1639,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 <span id="heading_update_ug_dg">{{ icon_individual }} Update UG and DG</span>
 <div id="desc_update_ug_dg">
 
-* {{ icon_important_big_red }} **Update the {{ version_penultimate }} User Guide** to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
+* {{ icon_important_big_red }} **Update the User Guide** to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
   * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.<br>
   Alternatively, clearly{% else %}Clearly{% endif %} indicate which features are not implemented yet %%e.g. tag those features with a `Coming soon`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
@@ -1622,14 +1649,29 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 
 * **Save the UG as a PDF file** ==using [this technique](https://se-education.org/guides/tutorials/savingPdf.html) exactly==. You'll need this file later when you create a product release. There is no specific file name convention for this version of the UG, but do use a reasonable file name: e.g., `Contacts-Pro-User-Guide.pdf`.
 
-{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → " + version_final + " → **Caution on PDF conversions**", "3", indent="1") }}
+{{ embed_topic("tp-tasks-fragment.md#caution-on-pdf-conversion", "Admin " + icon_embedding + " tP → **Caution on PDF conversions**", "3", indent="1") }}
 {{ embed_topic("tp-constraints.md#Constraint-PDF-Friendly", "Admin " + icon_embedding + " tP Constraints → **Constraint-PDF-Friendly**", "2", indent="1") }}
 {{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Constraints → **Constraint-File-Size**", "2", indent="1") }}
 
-* **Update the {{ version_penultimate }} Developer Guide** similarly.
+* **Similarly, update the Developer Guide (DG), and save it as PDF file.**
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → **Developer Guide**", "3", indent="1") }}
 {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}
+
+<div class="indented-level1">
+
+<panel type="success" peek >
+<div slot="header" class="card-title">
+
+##### <span class="text-white"> {{ icon_tip }} Admin {{ icon_embedding }} tP Deliverables → DG → Tips</span>
+</div>
+<div id="dgTips">
+
+<include src="tp-deliverables-dg-fragment.md#dgTips" />
+</div>
+</panel>
+<p/>
+</div>
 
 <div tags="m--cs2103">
 
@@ -1646,20 +1688,25 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 <span id="heading_alpha_test_product">{{ icon_team }} Alpha-test the product</span>
 <div id="desc_alpha_test_product">
 
-More details to be added ...
+-- [More details to be added ...] --
+
+* Test based on the JAR file
+* Cross-test, and report bugs
+* Create a label `alpha-bug` and apply it to the bug report, for tracking
+
+If you want to smoke-test your JAR file on an OS that is not available within your team, you can post a request in the forum to see if anyone else in the class can help you smoke-test it on that OS.
 
 The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
 {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_fix_alpha_test_bugs">{{ icon_individual }} Fix alpha-test bugs</span>
+<span id="heading_fix_alpha_test_bugs">{{ icon_individual }} Fix alpha-test bugs, fine-tune features</span>
 <div id="desc_fix_alpha_test_bugs">
 
 * Fix bugs found in alpha test
-* Fine-tune features, if needed
-
-* In case you didn't pay much attention to this last week, here is another reminder about what you can and can't do during {{ version_final }} _feature freeze_.
+* Fine-tune features, if needed.
+  * Here is another reminder about what you can and can't do during {{ version_final }} _feature freeze_.
 
 <div class="indented-level1">
 
@@ -1667,11 +1714,13 @@ The panel below contains guidelines your peers will use when determining bugs in
 
 <include src="tp-tasks-fragment.md#feature-freeze-details" />
 </panel>
+<p/>
 </div>
-</div>
-{#====================================================================================================================#}
-<span id="heading_improve_tests_and_code">{{ icon_individual }} [Optional] Improve test coverage and code quality</span>
-<div id="desc_improve_tests_and_code">
+
+<box>
+
+##### {{ icon_tip }} Ways to level up your game in this iteration:{.text-success}
+
 
 * **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
 
@@ -1680,6 +1729,7 @@ The panel below contains guidelines your peers will use when determining bugs in
 * **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level. Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually (based on the code attributed to you by the [tP code dashboard]({{ url_tp_dashboard }})).
 
 {{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="1") }}
+</box>
 
 </div>
 {#====================================================================================================================#}
@@ -1722,14 +1772,15 @@ The panel below contains guidelines your peers will use when determining bugs in
 <span id="heading_release_as_a_jar_file">{{ icon_team }} Release {{ version_penultimate }}</span>
 <div id="desc_release_as_a_jar_file">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. Do some manual tests to ensure the jar file works.<br>
-   Include ==both the JAR file and the UG PDF file (as two separate files)== in the release.
-   The UG should be uploaded as an 'asset' (similar to the JAR file), not embedded in the release note.
-   Otherwise, our scripts will not be able to detect it.<br>
-  It is optional to write detailed release notes for this version.
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. Do some manual tests to ensure the jar file works. Include the following files in the release (as separate assets):
+  * JAR file
+  * UG (PDF file) -- uploaded as an 'asset' (similar to the JAR file), not embedded in the release note.
+  * DG (PDF file) -- similar to DG
+  * It is optional to write detailed release notes for this version.
 * **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional release is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous release %%(reason: it is good to preserver the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
   Waiting till Friday 10am to release the `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.{% if cs2103 %}
 * **The <trigger trigger="click" for="modal:v13-jar-desc">_feature freeze_</trigger> will apply at the point you released the JAR file that was used in the PE-D** i.e., the features submitted in the final `{{ version_final }}` two weeks later should be the same as the features tested during PE-D, which is the rationale for the feature freeze anyway.{% endif %}
+* As before, wrap up the milestone %%(i.e., reschedule/close any remaining issues/PRs and close the milestone).%%
 
 <modal large header="" id="modal:v13-jar-desc">
 <include src="tp-tasks-fragment.md#feature-freeze-details"/>
@@ -1836,18 +1887,16 @@ Also see:
 * **After the tutorial**, if you are unsure about a concern raised by a reviewer, you can post in the [forum]({{ url_forum }}) to seek the opinion of the teaching team.
 </div>
 {#====================================================================================================================#}
-<span id="heading_get_ready_for_the_PED">{{ icon_individual }} Get ready for the practical exam dry run</span>
-<div id="desc_get_ready_for_the_PED">
+<span id="heading_finish_rc_tasks">Finish any remaining {{ version_penulatimate }} tasks</span>
+<div id="desc_finish_rc_tasks">
 
-* The practical exam dry run (PE-D) will be held in the coming {{ lecture_name }}. It is ==graded==. See the panel below for more info.
-
-{{ embed_topic("tp-ped.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="1") }}
+...
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>
 <div id="desc_attend_the_PED">
 
-* =={{ icon_important_big_red }} See info in the panel below:==
+* The practical exam dry run (PE-D) will be held in the coming {{ lecture_name }}. It is ==graded==. See the panel below for more info.
 
 {{ embed_topic("tp-ped.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="1") }}
 </div>

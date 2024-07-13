@@ -160,43 +160,37 @@ Note how the 'Learning outcome' appears _above_ 'Product goal', and how the prod
 
 * **#g#Learning outcome##**: Able to update functional code while working in parallel.{{ bullet_target_green }}
 * **#g#Product goal##**: Take the first step towards an MVP by delivering at least _some_ functionality changes.
-* **#g#Strategy##**: Define the smallest possible MVP. Each member tries to merge at least one PR that moves the product towards that MVP.
+* **#g#Strategy##**: Define the smallest possible MVP (==!!simplest versions!! of !!_must-have_ features!! only==). Each member tries to merge at least one PR that moves the product towards that MVP.
 </div>
 
 #### {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iter.3 %%[ --{{ weekly_tp_themes.w9.name }}-- ]%%
 
 <div id="v13-goals" class="indented">
-<box header="****{{ version_mvp }}****" light>
 
 * **Learning outcome**: Able to deliver a fully working product, on time.{{ bullet_target_green }}
-* **Product goal**: Reach a <tooltip content="Minimum Viable Product">MVP</tooltip>.
-* **Strategy**: Reach MVP as soon as possible, by implementing the ==simplest versions of _must-have_ features only==. Use the remaining time to move the product further forward, while staying within own workload limitations.
-</box>
+* **Product goal**: Reach the <tooltip content="Minimum Viable Product">MVP</tooltip>.
+* **Strategy**: Decide on a plan to meet the MVP delivery deadline. Reduce risk by aiming for the . Use the remaining time to move the product further forward, while staying within own workload limitations.
 </div>
 
 
 #### {{ badge("W" + (tfw + 7))}} Iter.4 %%[ --{{ weekly_tp_themes.w10.name }}-- ]%%
 
 <div id="v14-goals" class="indented">
-<box header="****{{ version_alpha }}****" light>
 
 * **Learning outcome**: Able to tweak the product/project plan to match the available time/resources.{{ bullet_target_green }}
-* **Product goal**: Implement <popover content="i.e., _almost_ complete implementation of the feature, even if not fully polished">fully-fledged</popover>. versions of _all_ the features intended for final release.
-* **Strategy**: Add features based on priority, while maintaining a working product. It is OK if the features are slightly rough around the edges, as the next iteration can still do minor tweaks to features.
-</box>
+* **Product goal**: Implement <popover content="i.e., _almost_ complete implementation of the feature, even if not fully polished">fully-fledged</popover> versions of _all_ the features intended for final release.
+* **Strategy**: Add features based on priority, while maintaining a working product. It is OK if the features are slightly rough around the edges, as the next iteration can still tweak them features.
 </div>
 
 
 #### {{ badge("W" + (tfw + 8))}} {{ badge("W" + (tfw + 9))}} Iter.5 %%[ --{{ weekly_tp_themes.w12.name }}-- ]%%
 
 <div id="v15-goals" class="indented">
-<box header="****{{ version_penultimate }}****" light>
 
 * **Learning outcome**: Able to apply internal quality control.{{ bullet_target_green }}
 * **Product goal**: Reach the _release candidate (RC)_ version, ready for a public beta testing (i.e., the product quality should be sufficiently high %%e.g., no obvious bugs%%).
 * **Strategy**: Do an <popover content="A full-product testing conducted by internal testers (in this case, project members themselves) acting as target users">alpha test</popover> internally, and refine features as necessary. Improve tests, documentation, code quality.
 
-</box>
 </div>
 
 <box type="info" seamless>
@@ -205,16 +199,13 @@ This version (i.e., {{ version_penultimate }}) will undergo a limited beta testi
 </box>
 
 
-
 #### {{ badge("W" + (tfw + 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w13.name }}-- ]%%
 
 <div id="v16-goals" class="indented">
-<box header="****{{ version_final }}****" light>
 
 * **Learning outcome**: Able to put in final touches while minimizing delivery risks %%i.e., risks of regressions or deadline overruns%%.{{ bullet_target_green }}
 * **Product goal**: Reach the quality necessary for a public release.
 * **Strategy**: Freeze features. Strictly limit changes to bug fixes only.
-</box>
 </div>
 
 <box type="warning" seamless>

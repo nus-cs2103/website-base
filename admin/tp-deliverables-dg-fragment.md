@@ -1,17 +1,14 @@
+{% from "common/macros.njk" import show_faq with context %}
 
-<box type="info" seamless icon=":fas-question:">
-
-**FAQ: How detailed the DG should be? Do we have to describe every feature/component?**<br>
-**Answer:**
-  1. The DG is primarily meant to help current/future developers. Therefore, decide based on how the inclusion/exclusion affects that target audience (you belong to the target audience too!).
-  2. That said, the DG is also used for evaluating your ability to write developer documentation. If the above criterion doesn't result in enough content to showcase those skills, you can judiciously add more content, to describe proposed features, design alternatives, less important features etc.
-</box>
+{% call show_faq("How detailed the DG should be? Do we have to describe every feature/component?") %}
+The DG is primarily meant to help current/future developers. Therefore, decide based on how the inclusion/exclusion affects that target audience (you belong to the target audience too!).
+{% endcall %}
 
 * The main content you add should be in the `docs/DeveloperGuide.md` file (for ease of tracking by grading scripts).<br>
   If you use PlantUML diagrams, commit the diagrams as `.puml` files in the `docs/diagrams` folder.
 * **Should match the {{ version_final }} implementation**.
 
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 * **Follow the [AddressBook-Level3 (AB3) DG]({{ url_ab3_upstream_website }}/DeveloperGuide.html) structure**. Sections to include in your DG:
   * Design: similar to AB3 DG except,
@@ -20,7 +17,7 @@
   * Implementation: similar to AB3 DG
   * Appendix A: Product Scope
   * Appendix B: User Stories
-  * Appendix C: Non Functional Requirements
+  * Appendix C: Non-Functional Requirements
   * Appendix D: Glossary
   * {{ (optional + " ") if tic4001 }}Appendix E: Instructions for Manual Testing (more details below)
 </div>
@@ -81,6 +78,12 @@
 * **Aim to showcase your documentation skills.** The primary objective of the DG is to explain the design/implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond {{ version_final }} (hypothetically).<br>
   For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ url_ab3_upstream_website }}/DeveloperGuide.html#proposed-undoredo-feature).
 * **Use multiple UML diagram types.** Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.
+
+{% call show_faq("Is it enough to update existing UML content/diagrams or must we add new content/diagrams?") %}
+**You are welcome to add new content/diagrams**, but it is not a strict requirement. Consider costs %%(e.g., the effort required to add and maintain new content)%% vs benefits %%(how much the new content helps future developers)%% and decide accordingly.
+**However, everyone is expected to contribute to the DG**, which means you should divide the DG-update work among team members.
+{% endcall %}
+
 * **Diagramming tools**:
   * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).<br>
   * You may use any other tool too (e.g., PowerPoint). But if you do, note the following:

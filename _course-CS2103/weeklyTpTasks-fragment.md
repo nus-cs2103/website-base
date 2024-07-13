@@ -33,26 +33,24 @@ week8: [
   {id: 'add_first_functionality_increment', deadline: get_date(date_w8_start, 3, time="23:59")}
 ],
 week9: [
-  {id: 'deliver_first_version', deadline: get_date(date_w9_start, 3, time="23:59")},
-  {id: 'start_updating_uml_diagrams'}
+  {id: 'plan_the_first_product_release'},
+  {id: 'deliver_first_version', deadline: get_date(date_w9_start, 3, time="23:59")}
 ],
 week10: [
   {id: 'do_a_postmortem'},
-  {id: 'start_on_the_penultimate_version'},
-  {id: 'update_dg_with_design_details'},
+  {id: 'plan_the_alpha_version'},
+  {id: 'deliver_the_alpha_version'},
   {id: 'smoke_test_catcher', deadline: 'COMPULSORY', graded: true},
-  {id: 'do_a_release'}
+  {id: 'start_updating_uml_diagrams'}
 ],
 week11: [
   {id: 'alpha_test_product'},
   {id: 'fix_alpha_test_bugs'},
-  {id: 'improve_tests_and_code'}
+  {id: 'update_ug_dg'},
+  {id: 'release_as_a_jar_file', deadline: get_date(date_w12_start, 3, time="23:59")}
 ],
 week12: [
-  {id: 'update_ug_dg', deadline: get_date(date_w12_start, 3, time="23:59")},
-  {id: 'release_as_a_jar_file', deadline: get_date(date_w12_start, 3, time="23:59")},
-  {id: 'wrap_up_penultimate_version'},
-  {id: 'get_ready_for_the_PED'},
+  {id: 'finish_rc_tasks'},
   {id: 'attend_the_PED', deadline: get_date(date_w12_start, 4, time="1600-1800"), graded: true}
 ],
 week13: [
@@ -74,7 +72,7 @@ week13: [
   w8: {name: "First feature increment", milestone: version_first},
   w9: {name: "MVP", milestone: version_mvp},
   w10: {name: "Alpha version", milestone: version_alpha},
-  w11: {name: "mid-" + version_penultimate},
-  w12: {name: "Release Candidate", milestone: version_penultimate},
+  w11: {name: "Release Candidate (part 1)", milestone: version_penultimate},
+  w12: {name: "Release Candidate (part 2)", milestone: version_penultimate},
   w13: {name: "Public release", milestone: version_final}
 } %}
