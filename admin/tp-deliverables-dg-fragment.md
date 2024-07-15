@@ -27,7 +27,7 @@ The DG is primarily meant to help current/future developers. Therefore, decide b
   * %%The feature Bar (including the code) was reused with minimal changes from the same [TaskPro]() project.%%
 * **{{ optional }} You can include proposed implementations of future features.**
 * **{{ icon_important_big_red if not tic4001 else optional }} Include an appendix named _Instructions for Manual Testing_**, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.
-  * **Cover all user-testable features**<span tags="m--cs2103 m--tic4002"> but no need to cover existing AB3 features if you did not touch them</span>.
+  * **Cover all user-testable features**<span tags="m--cs2103"> but no need to cover existing AB3 features if you did not touch them</span>.
   * **No need to give a long list of test cases** including all possible variations. It is upto the tester to come up with those variations.
   * Information in this appendix should _complement_ the UG. ==Minimize repeating information that are already mentioned in the UG.==
   * **Inaccurate instructions will be considered bugs**.
@@ -73,7 +73,7 @@ The DG is primarily meant to help current/future developers. Therefore, decide b
 
 ##### DG Tips
 
-<span id="dgTips">
+<div id="dgTips">
 
 * **Aim to showcase your documentation skills.** The primary objective of the DG is to explain the design/implementation to a future developer, but a secondary objective is to serve as evidence of your ability to document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond {{ version_final }} (hypothetically).<br>
   For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ url_ab3_upstream_website }}/DeveloperGuide.html#proposed-undoredo-feature).
@@ -149,4 +149,4 @@ It will look more 'polished' if the two text sizes match.
 <modal large header="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd">
   <pic eager src="{{ url_ab3_upstream_website }}/images/ArchitectureSequenceDiagram.png"></pic>
 </modal>
-</span>
+</div>

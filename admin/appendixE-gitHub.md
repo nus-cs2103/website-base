@@ -192,13 +192,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 </div>
 </div>
 
-3. **Create following milestones** :
-{% if cs2103 %}`{{ version_practice }}`{% endif %}
-{% if cs2103 %}`{{ version_first }}`{% endif %}
-`{{ version_mvp }}`
-{% if cs2103 %}`{{ version_alpha }}`{% endif %}
-`{{ version_penultimate }}`
-`{{ version_final }}`
+3. **Create following milestones** : {% if cs2103 %}`{{ version_practice }}`{% endif %} {% if cs2103 %}`{{ version_first }}`{% endif %} `{{ version_mvp }}` {% if cs2103 %}`{{ version_alpha }}`{% endif %} `{{ version_penultimate }}` `{{ version_final }}`
 
 4. You may configure other project settings as you wish. e.g. more labels, more milestones
 
@@ -241,9 +235,9 @@ Tracking need | GitHub tool used
 -----|------------
 {{ thumb_small("a", thumb_style="primary") }} **WHAT** needs to be done? i.e., project tasks | Tasks are posted as **issues** in the GitHub issue tracker.
 {{ thumb_small("b", thumb_style="primary") }} **WHO** should do which task? i.e., tasks assignment | Issues are given **assignees**.
-{{ thumb_small("c", thumb_style="primary") }} **WHEN** is a task to be done? i.e., task scheduling | Issues are assigned to a GitHub **milestones**.
-{{ thumb_small("d", thumb_style="primary") }} **HOW** is a task progressing? | **PRs** are created to match tasks in progress.<br>**Merging** the PR indicates task completion.
-{{ thumb_small("e", thumb_style="primary") }} **HOW** is an iteration progressing? | A GitHub **milestone** is used to track an iteration.<br>A GitHub **release** represents the iteration deliverables.
+{{ thumb_small("c", thumb_style="primary") }} **WHEN** is a task to be done? i.e., task scheduling | Issues are assigned to a GitHub **milestones**, which in turn has a **deadline**.
+{{ thumb_small("d", thumb_style="primary") }} **HOW** is a task progressing? | **PRs** are created to match tasks in progress.<br>**Merging** the PR (and closing of the matching issue) indicates task completion.
+{{ thumb_small("e", thumb_style="primary") }} **HOW** is an iteration progressing? | A GitHub **milestone** is used to track an iteration.<br>A GitHub **release** represents the iteration deliverables.<br>Closing the milestone indicates the completion of the iteration.
 
 <box type="tip" seamless>
 
@@ -266,10 +260,10 @@ The sections below describe a-e in more details.
     * %%{{ bad }}: `Update parser`(reason: not specific enough)%%
     * %%{{ good }}: `Add support for the 'undo' command to the parser`%%
   * **Assign the `type.*` and `priority.*` labels**, if applicable.
-* **Omit redundant details.**
-  * There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough.
-  * If the issue title is enough to describe the task, no need to repeat it in the issue description.
-  * Similarly, labels such as `priority` can be omitted if you think they don't help you.
+  * **Omit redundant details.**
+    * There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough.
+    * If the issue title is enough to describe the task, no need to repeat it in the issue description.
+    * Similarly, labels such as `priority` can be omitted if you think they don't help you.
 * **No need to track things taken for granted.** %%e.g., `push code to repo` (reason: it is taken for granted that the code author will push the code to the repo).%%
 * **Ensure issues are compliant with the breadth-first iterative approach.** That is, ==a code merge to the `master` branch should take the product from a working version to a slightly better working version==.
   * %%{{ bad }}: `Add all data classes` (reason: this is the depth-first approach)%%
@@ -316,7 +310,7 @@ Shared tasks can be split into separate issues. For example, instead of creating
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="tp-schedule-tracking-milestones-when">
 
-#### {{ thumb("c", thumb_style="primary") }} Using milestones to track task scheduling
+#### {{ thumb("c", thumb_style="primary") }} Using milestones for task scheduling
 
 * **Create [GitHub milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones)**, to represent upcoming iterations of your project.
 

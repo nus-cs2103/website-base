@@ -58,11 +58,12 @@ then [{{ g.iter5 }}] lasts 14 days
 then [{{ g.iter6 }}] lasts 3 days
 [{{ version_final }}] happens at [{{ g.iter6 }}]'s end
 {% else %}
-[{{ g.iter1 }}] lasts 14 days
+[prepare, set up] lasts 7 days
+then [{{ g.iter1 }}] lasts 14 days
 [{{ version_first }}] happens at [{{ g.iter1 }}]'s end
-then [{{ g.iter2 }}] lasts 14 days
+then [{{ g.iter2 }}] lasts 21 days
 [{{ version_penultimate }}] happens at [{{ g.iter2 }}]'s end
-then [{{ g.iter3 }}] lasts 7 days
+then [{{ g.iter3 }}] lasts 3 days
 [{{ version_final }}] happens at [{{ g.iter3 }}]'s end
 {% endif %}
 @endgantt
@@ -131,8 +132,8 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 #### {{ badge("W" + (tfw + 9))}} Iteration 3 → {{ version_final }}
 
-* This iteration is <span class="text-danger">shorter</span>.{{ bullet_target_green }}
-* ==**Changes to features are strongly discouraged** in this iteration.== Use it for bug fixing, code quality improvements, improving the tests, and polishing up documentation only.
+* This iteration is <span class="text-danger">very short</span>.{{ bullet_target_green }}
+* ==**Changes to features are strongly discouraged** in this iteration.== Recommended to use it for bug fixing and polishing up documentation only.
 
 </div>
 

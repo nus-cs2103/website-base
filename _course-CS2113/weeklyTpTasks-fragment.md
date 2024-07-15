@@ -24,7 +24,6 @@ week7: [
 week8: [
   {id: 'ensure_you_know_tp_expectations'},
   {id: 'start_implementing_first_version'},
-  {id: 'use_github_to_manage_milestones'},
   {id: 'add_junit_tests'}
 ],
 week9: [
@@ -40,20 +39,16 @@ week10: [
 ],
 week11: [
   {id: 'update_ug_dg'},
-  {id: 'add_sd_to_dg', deadline: 'recommended: before ' + day_first_tutorial, deadline_type: 'info'},
-  {id: 'deliver_penultimate_version', deadline: 'midnight before the tutorial'},
-  {id: 'review_others_dg', deadline: 'during the tutorial', graded: true}
+  {id: 'review_others_dg', deadline: 'during the tutorial', graded: true},
+  {id: 'deliver_penultimate_version', deadline: get_date(date_w12_start, 3, time="23:59")},
+  {id: 'draft_the_ppp'}
 ],
 week12: [
-  {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w12_start, time=""), graded: true},
-  {id: 'start_fixing_PED_bugs', deadline: 'Before the tutorial'},
-  {id: 'tweak_product_as_per_PED'},
-  {id: 'draft_the_ppp'},
-  {id: 'double_check_reposense_compatibility'}
+  {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w12_start, 4, time=""), graded: true}
 ],
 week13: [
-  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time_final_submission)},
-  {id: 'demo_the_product', deadline: get_date(date_final_submission, 2 if time_final_submission == "23:59" else 1)},
+  {id: 'start_fixing_PED_bugs'},
+  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
   {id: 'prepare_for_PE'},
   {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 4, time="")}
 ]
@@ -69,6 +64,6 @@ week13: [
   w9: {name: version_mvp, milestone: version_mvp},
   w10: {name: "mid-" + version_penultimate},
   w11: {name: version_penultimate, milestone: version_penultimate},
-  w12: {name: "mid-" + version_final},
+  w12: {name: "Extra week for " + version_penultimate},
   w13: {name: version_final, milestone: version_final}
 } %}

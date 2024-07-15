@@ -9,7 +9,7 @@
 {#====================================================================================================================
  # Common fragments
  #====================================================================================================================#}
-<div class="indented" tags="m--cs2103 m--tic4002" id="feature-freeze-details">
+<div class="indented" tags="m--cs2103" id="feature-freeze-details">
 
 <box type="warning" seamless>
 
@@ -168,18 +168,29 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 </div>
 </div>
 
-<div id="common-mistakes">
-<box type="important" seamless icon=":fas-skull:" icon-size="2x">
+<div id="stretched-due-to-holiday">
 
-<span class="text-danger">****++Lookout for these mistakes++****</span> which were common in previous runs of the course:
+<box type="important" seamless>
 
-<include src="tp-common-fragments.md#error-commit-message-subject" />
-<include src="tp-common-fragments.md#error-header-comment-phrasing" />
-<include src="tp-common-fragments.md#error-pr-from-master" />
-<include src="tp-common-fragments.md#error-low-pr-comments" />
-
+**This iteration is normally done in {{ "one week" if cs2103 else "two weeks" }}, but is spread over {{ "two" if cs2103 else "three" }} weeks** due to clashes with holidays. So, do the amount of work you would normally do if this was only {{ "one week" if cs2103 else "two weeks" }} long (i.e., no need to do more work because there is an extra week for this iteration).
 </box>
 </div>
+
+<div id="level-up-coverage">
+<box>
+
+**{{ icon_tip }} Ways to level up your game in this stage of the tP:**{.text-success}
+
+* **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
+
+{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="1") }}
+
+* **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level. Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually (based on the code attributed to you by the [tP code dashboard]({{ url_tp_dashboard }})).
+
+{{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="1") }}
+</box>
+</div>
+
 {#====================================================================================================================
  # CS2103 Weekly Intros
  #====================================================================================================================#}
@@ -295,11 +306,8 @@ Specifically, we start with a workflow practice session (in task {{ thumb_small(
 The deadline for tP iterations is the `Thursday 23:59` in the week it is due, unless a different date is specified in the instructions of that iteration.
 {% endcall %}
 
-<div id="common-mistakes">
 <include src="tp-common-fragments.md#error-commit-message-subject" />
 <include src="tp-common-fragments.md#error-pr-from-master" />
-</div>
-
 
 <box type="tip" icon=":fab-git-alt:" icon-size="2x" seamless>
 
@@ -459,10 +467,7 @@ At the same time, the UG and the DG needs to be updated, as given in task {{ thu
 
 ++**Things to note:**++{.text-info}
 
-<box type="important" light>
-
-**This iteration is normally done in one week, but is spread over two weeks** due to clashes with holidays. So, do the amount of work you would normally do if this was only one week long (i.e., no need to do more work because there is an extra week for this iteration).
-</box>
+<include src="tp-tasks-fragment.md#stretched-due-to-holiday" />
 
 {% endcall %}
 
@@ -497,50 +502,103 @@ We are still in iteration `{{ version_penultimate }}`, due to this iteration str
 {#====================================================================================================================
  # CS2113 Weekly Intros
  #====================================================================================================================#}
-<div id="cs2113-week4-intro">
+{% call show_tp_week_intro("cs2113", 3) %}
 
-<box>
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 3, 60) }}
+
+{% endcall %}
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2113", 4) %}
+
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 25, 28) }}
+
+++**Things to note:**++{.text-info}
 
 {{ icon_important_big_red }} Timely completion of the weekly tP tasks can improve the _project management_ component of your tP grade.
-
 {{ embed_topic("tp-grading.md#project-management-grading", "Admin " + icon_embedding + " tP → Grading → Project Management", "3", indent="1") }}
 
-
-</box>
-</div>
+{% endcall %}
 {#====================================================================================================================#}
-<div id="cs2113-week9-intro">
+{% call show_tp_week_intro("cs2113", 5) %}
 
-<box>
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 50, 48) }}
 
-{{ icon_important_big_red }} **PR review comments matter!** Remember to do proper PR reviews throughout the tP, at least for non-trivial changes, as the quality and quantity of PR review comments you have given to peers affect your [tP marks](tp-grading.html) (under the _project management_ aspect).
-</box>
-</div>
+{% endcall %}
 {#====================================================================================================================#}
-<div id="cs2113-week8-intro">
-<include src="tp-tasks-fragment.md#common-mistakes" />
-</div>
-{#====================================================================================================================#}
-<div id="cs2113-week10-intro">
+{% call show_tp_week_intro("cs2113", 6) %}
 
-{% call topic_preamble(reuse=false) %}
-Some things to note as you start the {{ version_penultimate }} iteration:
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 75, 48) }}
+
+{% endcall %}
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2113", 7) %}
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 5, 38) }}
+
+**In this week, we get ready to start tP iterations**, first, by setting up the infrastructure, and then, planning the first iteration.
+
+{% endcall %}
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2113", 8) %}
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 17, 47) }}
+
+++**Things to note:**++{.text-info}
+
+<include src="tp-common-fragments.md#error-commit-message-subject" />
+<include src="tp-common-fragments.md#error-header-comment-phrasing" />
+<include src="tp-common-fragments.md#error-pr-from-master" />
+{% endcall %}
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2113", 9) %}
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 30, 50) }}
+
+++**Things to note:**++{.text-info}
+
+<include src="tp-common-fragments.md#error-low-pr-comments" />
+
+{% endcall %}
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2113", 10) %}
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 43, 70) }}
+
+++**Things to note:**++{.text-info}
+
 * **Set moderate targets for functionality.** Adding more functionality than needed will not earn you more marks but can expose you to higher risk of bugs.<br>
   **Focus on improving the process and the quality** instead.
 * **Move in small steps, and keep the product working at each step.** If it breaks, you will only have to examine the latest change for the cause of the breakage.
-{% endcall %}
-</div>
 
+<include src="tp-tasks-fragment.md#stretched-due-to-holiday" />
+{% endcall %}
 {#====================================================================================================================#}
-<div id="cs2113-week11-intro">
+{% call show_tp_week_intro("cs2113", 11) %}
 
-{% call topic_preamble(reuse=false) %}
-==This week, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening in this week).
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 58, 70) }}
 
-To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).
+++**Things to note:**++{.text-info}
+
+* **Aim to reach the final version in this iteration itself**: ==After this iteration is over, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening at the end of this iteration).<br>
+  To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).
+* **You have two weeks to finish tP tasks listed under this week** due to the extra week added on account of holidays.
+
 {% endcall %}
-</div>
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2113", 12) %}
 
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 73, 70) }}
+
+++**Things to note:**++{.text-info}
+
+Use this week extra week to finish up any leftover work from the previous week.
+{% endcall %}
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2113", 13) %}
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 85, 90) }}
+
+{% endcall %}
 {#====================================================================================================================#}
 {# Steps
 {#====================================================================================================================#}
@@ -598,13 +656,10 @@ To take advantage of the above, try to make your {{ version_penultimate }} (prod
 
 * **Decide the target user profile, and value proposition**, as described in the panels below (tip: you can use your first project meeting for this):
 
-<div class="indented">
-
 <box type="warning" seamless>
 
 As we are still at the early stages of identifying a problem to solve, do not think of the product (i.e., the _solution_) yet. That is, ==do not discuss the product features, UI, command format, and implementation details, etc.== unless they are pertinent to the user profile or the problem addressed.
 </box>
-</div>
 
 <box type="tip" seamless>
 
@@ -701,7 +756,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 </modal>
 
 
-<div tags="m--cs2103 m--tic4001 m--tic4002" class="indented-level2">
+<div tags="m--cs2103" class="indented-level2">
 
 {{ icon_tip }} **If you choose to use the GitHub issue tracker to manage user stories**, you need to set up your team's GitHub organization, team repo, and its issue tracker first. Instructions for doing those steps are in the panel below.
 
@@ -737,35 +792,35 @@ As we are still at the early stages of identifying a problem to solve, do not th
   1. **Second stage**:
      * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 
-<box type="info" icon=":fas-question-circle:"seamless>
+{% call show_faq("What if the chosen user stories for MVP is not enough to do a meaningful work division among team members?") %}
+In that case, at a later stage, you can add more user stories until there is enough for a meaningful work distribution. But at this point focus on selecting the smallest sub-set of _must_have_ user stories only.
+{% endcall %}
+{% call show_faq("Should we start implementing MVP now?") %}
+Not at all. That is scheduled several weeks later. For now, just figure out the minimal feature set required for the product. We'll let you know when it is time to start working on the MVP.
+{% endcall %}
 
-**FAQs**{.text-info}
-
-**Q:** What if the chosen user stories for MVP is not enough to do a meaningful work division among team members?<br>
-**A:** In that case, at a later stage, you can add more user stories until there is enough for a meaningful work distribution. But at this point focus on selecting the smallest sub-set of _must_have_ user stories only.
-
-**Q:** Should we start implementing MVP now?<br>
-**A:** Not at all. That is scheduled several weeks later. For now, just figure out the minimal feature set required for the product. We'll let you know when it is time to start working on the MVP.
-
-{% if cs2103 %}**Q:** Should we omit user stories that are already supported by AB3?<br>
-**A:** No, you should still include them. Reason: The existing implementation might still require some work before it fits your product.
-
-**Q:** All the user stories we selected for MVP are already supported by AB3. What now?<br>
-**A:** That's fine. It means you can get to MVP with very little effort, which is a good thing. Once you've finished the MVP, if there is time left, you can add more things to it at that time.
+{% if cs2103 %}
+{% call show_faq("Should we omit user stories that are already supported by AB3?") %}
+No, you should still include them. Reason: The existing implementation might still require some work before it fits your product.
+{% endcall %}
+{% call show_faq("All the user stories we selected for MVP are already supported by AB3. What now?") %}
+That's fine. It means you can get to MVP with very little effort, which is a good thing. Once you've finished the MVP, if there is time left, you can add more things to it at that time.
+{% endcall %}
 {% endif %}
-</box>
+
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
 <div id="desc_set_up_project_repo">
 
-1. [one member] Set up the team org:
+1. [{{ icon_team_rep }} one member] Set up the team org:
    {{ embed_topic("appendixE-gitHub.md#organization-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Organization Setup**", "1", indent="1") }}
 
-2. [one member] Set up the team repo:
+2. [{{ icon_team_rep }} one member] Set up the team repo (including the issue tracker):
    {{ embed_topic("appendixE-gitHub.md#tp-team-repo-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Team Repo Setup**", "1", indent="1") }}
+   {{ embed_topic("appendixE-gitHub.md#issue-tracker-setup", "Admin " + icon_embedding + " Appendix E(extract): **Setting up the issue tracker**", "1", indent="1") }}
 
-3. [each member] Set up individual forks:
+3. [{{ icon_individual }} each member] Set up individual forks:
    {{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
@@ -810,12 +865,9 @@ A: It's an individual task (note the icon {{ icon_individual }} above), to be do
 
 * **Submission:** Note down the feature list in your online project notes document.
 
-<box type="info" icon=":fas-question:" seamless>
-
-<span class="text-info">**FAQ**: How many features should we put in the MVP?</span><br>
-**A:** Aim for the _smallest set of features the product cannot do without_. Even a most basic version of those features is enough. After completing that feature set, you can add more if there is time left.
-</box>
-
+{% call show_faq("How many features should we put in the MVP?") %}
+Aim for the _smallest set of features the product cannot do without_. Even a most basic version of those features is enough. After completing that feature set, you can add more if there is time left.
+{% endcall %}
 </div>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ug">{{ icon_team }} {% if cs2103 %}Draft the feature specification{% else %}Draft the UG{% endif %}</span>
@@ -1022,7 +1074,7 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs{% if not tic4001 %}, use cases{% endif %}</span>
+<span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs, use cases</span>
 <div id="desc_update_dg_user_stories_etc">
 
 <div tags="m--tic4001" class="indented-level2">
@@ -1033,8 +1085,8 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 * **Add the following to the DG**, based on your project notes from the previous weeks. No need to update other sections, for now.<br>
   {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope).
 
-  * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.{% if not tic4001 %}
-  * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%{% endif %}
+  * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
+  * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
   * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>:
     Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
   * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth recording.
@@ -1207,12 +1259,13 @@ If a team member fails to do this within a reasonable time, try to help that tea
 <span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration (`{{ version_mvp }}`)</span>
 <div id="desc_plan_the_next_iteration">
 
-* {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_mvp }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
+* {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_mvp }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish.
   * ==**Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)**== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
   * **Avoid depth-first implementations**: "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of breadth-first iterative process. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet.
 * {{ icon_team }} **Divide the work among the team members** i.e., the work required for the current iteration.
-* {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a placeholder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_mvp }}`%%
+* {{ icon_individual }} **Reflect the above plan in the issue tracker** by creating and assigning issues to yourself and to the corresponding milestone. The panel below explains the full workflow we prescribe you to follow in the tP.
+  {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_the_next_iteration">{{ icon_team }} Start the next iteration</span>
@@ -1253,9 +1306,9 @@ If a team member fails to do this within a reasonable time, try to help that tea
 
 * Start implementing {{ version_mvp }}, by adding code in small steps, while working in parallel, aiming to produce a VERY simple working version after one week, and a bit more functional version at the end of iteration (i.e., after two weeks).
 
-* See the panel below for our recommendations on the project workflow.
+* See the panel below the project workflow we prescribe for the tP.
 
-{{ embed_topic("appendixE-gitHub.md#workflow", "Admin " + icon_embedding + " Appendix E(extract): **Workflow**", "3", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1416,7 +1469,7 @@ Note that the product you deliver at the end of this iteration must be working a
 * When the {{ version_mvp }} is ready, do a release on GitHub. Remember to upload the jar file as well.
 * Wrap up the milestone on GitHub.
 
-{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 </div>
 </div>
 {#====================================================================================================================#}
@@ -1500,7 +1553,7 @@ Here are some reasons:
 
 <box>
 
-##### {{ icon_tip }} Three ways to level up your game in this iteration:{.text-success}
+##### {{ icon_tip }} Ways to level up your game at this stage of the tP:{.text-success}
 
 
 1. <span class="text-success">**Use parallel PRs:**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%
@@ -1542,10 +1595,13 @@ In addition,
 {#====================================================================================================================#}
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
 <div id="desc_update_dg_with_design_details">
-<include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
-* **Update the Developer Guide** as follows:{% if tic4001 %}
-  * You can take some inspiration from the [DG of the AB3 (se-edu/addressbook-level 3) project]({{ url_ab3_fork_website }}/DeveloperGuide.html).{% endif %}
+<box type="important" seamless>
+
+**Do this before next week Wednesday ({{ get_date(date_w11_start, 2, time="") }})** so that the added sequence diagrams can get peer feedback via the DG peer review that will happen during this week's tutorial. Diagrams you add before the deadline will receive feedback while diagrams added later will not.
+</box>
+
+* **Update the Developer Guide** as follows:
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
     Expected length: 1+ page per person{% if course == "CS2113" or course == "TIC4001" %}
   * Describing the design at a multiple-levels (e.g., first, describe at _architecture-level_, then describe at _component-level_) is optional. It is also acceptable to have one _Design & Implementation_ section in which you describe the entire thing at the class- and object-level.{% endif %}
@@ -1553,9 +1609,10 @@ In addition,
     * How the feature is implemented (or is going to be implemented).
     * Why it is implemented that way.
     * Alternatives considered.
+  * Minimally, add sequence diagrams to enhance your DG wherever they can be useful.
 <div class="indented-level2">
 
-<panel type="success" expanded>
+<panel type="success" peek>
 <div slot="header" class="card-title">
 
 ##### <span class="text-white"> {{ icon_tip }} Admin {{ icon_embedding }} tP Deliverables → DG → Tips</span>
@@ -1583,11 +1640,10 @@ In addition,
 
 {{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="2") }}
 
-<panel type="seamless" header="**FAQ:** What if someone took over a feature from another team member?">
-
-  **A:** In terms of effort distribution, it's up to the team to tell us who did how much. Same goes for assigning bugs. So, it's fine for someone to take over a feature if the team is able to estimate the effort of each member, and they have a consensus on who will be responsible for bugs in that feature.<br>
- For code authorship, only one person can claim authorship of a line, and that person will be graded for the code quality of that line. By default, that will be the last person who edited it (as per Git data) but you can [override that behavior using `@@author` tags](tools.html#tool-reposense-for-authorship-tracking).
-</panel>
+{% call show_faq("What if someone took over a feature from another team member?") %}
+In terms of effort distribution, it's up to the team to tell us who did how much. Same goes for assigning bugs. So, it's fine for someone to take over a feature if the team is able to estimate the effort of each member, and they have a consensus on who will be responsible for bugs in that feature.<br>
+For code authorship, only one person can claim authorship of a line, and that person will be graded for the code quality of that line. By default, that will be the last person who edited it (as per Git data) but you can [override that behavior using `@@author` tags](tools.html#tool-reposense-for-authorship-tracking).
+{% endcall %}
 
 </div>
 </div>
@@ -1616,7 +1672,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
    <pic eager src="images/catcherLogin.png"></pic>
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
-1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
+1. **Let CATcher create a repo named `catcher-smoke-test`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
 1. **Use the app (not the GitHub Web interface) to create 1-2 <tooltip content="i.e., bug reports containing some random content">dummy bug reports</tooltip>**. The steps are similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
    {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
    {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
@@ -1717,19 +1773,7 @@ The panel below contains guidelines your peers will use when determining bugs in
 <p/>
 </div>
 
-<box>
-
-##### {{ icon_tip }} Ways to level up your game in this iteration:{.text-success}
-
-
-* **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
-
-{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="1") }}
-
-* **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level. Note that the quality of the code attributed to you accounts for a significant component of your final score, graded individually (based on the code attributed to you by the [tP code dashboard]({{ url_tp_dashboard }})).
-
-{{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="1") }}
-</box>
+<include src="tp-tasks-fragment.md#level-up-coverage" />
 
 </div>
 {#====================================================================================================================#}
@@ -1759,11 +1803,20 @@ The panel below contains guidelines your peers will use when determining bugs in
 <span id="heading_deliver_penultimate_version">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
 <div id="desc_deliver_penultimate_version">
 
-* As before, do a release on GitHub and upload ==both the {{ version_penultimate }} JAR file and the UG PDF file== (as two separate files -- do not put them inside a zip file).<br>
-  <span class="text-danger">Do this before the deadline as PE-D testers will start downloading jar files ahead of time.</span>
+* **Finish implementing the features** you intend to have in the final version.
+
+<div class="indented-level1">
+
+<include src="tp-tasks-fragment.md#level-up-coverage" />
+</div>
+
+* **Do a release on GitHub and upload the following files**, ==each as a separate asset==. <span class="text-danger">Do this before the deadline as PE-D testers will start downloading these files ahead of time.</span>:
+  1. {{ version_penultimate }} JAR file
+  1. UG PDF file
+  1. DG PDF file
 * ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
 
-{{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Constraints → Constraint-Java-Version", "2", indent="2") }}
+{{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Constraints → Constraint-Java-Version", "2", indent="1") }}
 
 * Wrap up the milestone on GitHub.
 </div>
@@ -1807,7 +1860,7 @@ The panel below contains guidelines your peers will use when determining bugs in
 
 {% macro get_review_allocation_for_team(reviewing_team) -%}
 {%- set reviewed_team = "" -%}
-{% for allocation in team_review_allocation  -%}
+{% for allocation in team_review_allocation -%}
 {% if allocation[0] == reviewing_team %}{% set reviewed_team %}{{ allocation[1] }}{% endset %}{% endif %}
 {%- endfor %}{{ reviewed_team }}
 {%- endmacro %}
@@ -1824,14 +1877,16 @@ The panel below contains guidelines your peers will use when determining bugs in
 `{{ team_id }}`  {{ get_dg_link(team_id) }} {{ get_pr_link(team_id) }}
 {%- endmacro  %}
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 <panel header="Allocation for DG review" >
 
+<d-table sortable searchable>
 Your GitHub  | First choice | Second choice | Third choice
 -------------|--------------|---------------|-------------
-{% for allocation in tp_dg_review_allocation  %}`{{ allocation[0] }}` | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }} | {{ get_links(allocation[3]) }}
+{% for allocation in tp_dg_review_allocation %}`{{ allocation[0] }}` | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }} | {{ get_links(allocation[3]) }}
 {% endfor %}
+</d-table>
 {% if not tp_dg_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 </div>
@@ -1874,7 +1929,7 @@ Your GitHub  | First choice | Second choice | Third choice
 {{ embed_topic("tp-grading-bugs-fragment.md#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
 
 Also see:
-{{ embed_topic("tp-deliverables-dg-fragment.md#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="1", status="expanded", type="success") }}
+{{ embed_topic("tp-deliverables-dg-fragment.md#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="1", status="peek", type="success") }}
 
 </box>
 
@@ -1915,34 +1970,15 @@ Test the product yourself (test each others' features) using the JAR file, repor
 {{ embed_topic("tp-ped-fragment.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="1") }}
 
 {% if not cs2103 %}
-2. **Freeze features**. As mentioned earlier, you are strongly discouraged from adding/updating features in this iteration. The remaining time is to be spent fixing problems discovered late and wrapping up the final release.{% else %}
+2. ****Do your own testing****. Don't rely on PE-D alone to find bugs. The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
+{{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="1") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}{% else %}
 2. ****Note what is allowed in this milestone****:
 
 <include src="tp-tasks-fragment.md#feature-freeze-details" />{% endif %}
 
-3. ****Start fixing bugs**** that you selected to fix in this iteration. Don't rely on PE-D alone to find bugs. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.
-
-<box type="info" seamless>
-
-As before, you may split this milestone into smaller iterations if you wish e.g., `{{ version_final }}`, `{{ version_final }}b`, ...
-
-**Expectations at mid-{{ version_final }}** (i.e., by the tutorial date):
-* <span class="text-danger">**Minimal:**</span> all PE-D bugs have been triaged, bugs to be fixed in the current iteration have been chosen, and assigned to relevant team members.
-* <span class="text-success">**Recommended:**</span> all (or almost all) the PE-D bugs that you have chosen to fix have been fixed already.
-
-{% if cs2103 %}**On the tutorial day, ==one member should post a message in your team's MS-Teams channel==** %%(i.e., the one inside the MS-Teams used for tutorials)%% stating if PE-D bug triaging is done, how many bugs were selected as 'must fix' and 'good to fix' in {{ version_final }} and how many of them have been done already. Remember to ==tag the tutor== in that post. Note that this post will be counted as a team progress deliverable e.g.,
-
->Our team's mid-{{ version_final }} progress:
->* PE-D issues received: 47
->* Unique bugs: 14
->   * Not allowed to fix in v1.4: 3
->   * Must fix: 6 (fixed: 5)
->   * Good to fix: 4 (fixed: 1)
->   * Won't fix / invalid: 1
-
-{{ icon_important_big_red }} **If you have `0` for the category `Not allowed to fix in v1.4`** when doing the above, we urge you to take another harder look at constraints imposed by the feature freeze, to confirm you are not violating the feature freeze inadvertently (which can cost you marks later). It is common for _some_ of the PE-D bug reports to be related to enhancements rather than bugs that are allowed to be fixed in v1.4. Therefore, it is 'unusual' to have 0 bugs for that category.
-{% endif %}
-</box>
+3. ****Fix bugs**** that you deem as important enough to be fixed in {{ version_final }}. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.<br>
 
 {% if cs2103 %}4. ****Submit peer evaluations for PE-D testers****: Submit your peer-evaluation of PE-D testers to indicate how well they helped your team.<br>
    Deadline: {{ timing_badge("by " + get_date(date_w13_start, 2), "danger") }}<br>
@@ -1988,24 +2024,6 @@ Furthermore, tester ID mapping (i.e., who is Tester A, Tester B, etc.) will be s
 
 
 {% endif %}
-</div>
-{#====================================================================================================================#}
-<span id="heading_tweak_product_as_per_PED">{{ icon_individual }} Polish the deliverables</span>
-<div id="desc_tweak_product_as_per_PED">
-
-* **Do more extensive testing yourselves**. The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
-  {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
-* **Update documentation** to match the product. In particular, finalize the content of the DG early and check it thoroughly for bugs (reason: unlike the UG, the DG did not get tested in the PE dry run).
-  {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}
-* **Consider increasing test coverage** by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).
-
-{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="1") }}
-
-* **After you have sufficient code coverage, fix remaining code quality problems** and bring up the quality to your target level.<br>
-  Refactoring code does not violate a feature freeze (as refactoring doesn't change the behavior). Still, it is not advisable to (but you are allowed to) do _major_ refactorings this close to a major release.
-
-{{ embed_topic("tp-grading.md#projectGrading-codeQuality-criteria", "Admin " + icon_embedding + " tP → Grading → **Code Quality Tips**", "3", indent="1") }}
-
 </div>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ppp">{{ icon_individual }} {% if cs2103 %}[Optional] {% endif %}Draft the PPP</span>
@@ -2162,6 +2180,12 @@ Not applicable this semester
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-sourcecode", "Admin " + icon_embedding + " tP → Deliverables → Source Code", "3", indent="1") }}
 
+<box type="info" seamless>
+
+Reminder: double-check to ensure the code attributed to you by RepoSense is correct.
+
+{{ embed_topic("tp-tasks-fragment.md#midV13-repoSenseCompatible", "Admin " + icon_embedding + " tP → Making the Code RepoSense-Compatible", "1") }}
+</box>
 
 * **User Guide**:{icon="fas-users"}
   * Convert to pdf and upload to Canvas.
@@ -2229,13 +2253,13 @@ Not applicable this semester
 <p/>
 {{ embed_topic("tp-pe-fragment.md#pe-preparation", "Admin " + icon_embedding + " tP → **PE Preparation, Restrictions**", "3", indent="2", type="success") }}
 
-* After reading the above 2, we ==strongly recommend you read ahead the info given in the item 6 below== as well, to know in advance what will happen during the PE itself.
+* After reading the above 2, we ==strongly recommend you read ahead the info given in the item {{ thumb_small("6" if cs2103 else "6")}} below== as well, to know in advance what will happen during the PE itself.
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PE">{{ icon_individual }} Attend the practical exam</span>
 <div id="desc_attend_the_PE">
 
-* Ensure you read the instructions on **PE Preparation** (given in item 5 above)
+* Ensure you read the instructions on **PE Preparation** (given in item {{ thumb_small("5" if cs2103 else "5")}} above)
 * Attend the practical test, to be done during the {{ lecture_name }}.
 
 {{ embed_topic("tp-pe-fragment.md#pe-phases", "Admin " + icon_embedding + " tP → **PE Phases**", "3", indent="1", type="success") }}
