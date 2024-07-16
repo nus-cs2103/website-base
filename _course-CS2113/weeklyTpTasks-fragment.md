@@ -15,14 +15,15 @@ week5: [
 ],
 week6: [
   {id: 'conceptualize_first_version'},
-  {id: 'draft_the_ug', deadline: 'midnight before the tutorial'}
+  {id: 'draft_the_ug', deadline: 'midnight before the tutorial'},
+  {id: 'set_up_project_repo', deadline: 'during the tutorial', deadline_type: "info"}
 ],
 week7: [
-  {id: 'set_up_project_repo', deadline: 'during the tutorial', deadline_type: "info"},
-  {id: 'plan_the_next_iteration'}
+  {id: 'ensure_you_know_tp_expectations'},
+  {id: 'plan_the_next_iteration'},
+  {id: 'start_the_next_iteration'}
 ],
 week8: [
-  {id: 'ensure_you_know_tp_expectations'},
   {id: 'start_implementing_first_version'},
   {id: 'add_junit_tests'}
 ],
@@ -44,6 +45,7 @@ week11: [
   {id: 'draft_the_ppp'}
 ],
 week12: [
+{id: 'finish_remaining_tasks'},
   {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w12_start, 4, time=""), graded: true}
 ],
 week13: [
@@ -58,8 +60,8 @@ week13: [
   w3: {name: "Kickoff"},
   w4: {name: "Set direction"},
   w5: {name: "Gather requirements"},
-  w6: {name: "Define the MVP"},
-  w7: {name: "Get ready for iterations"},
+  w6: {name: "Define MVP, set up repo"},
+  w7: {name: "Plan the iteration"},
   w8: {name: "mid-" + version_mvp},
   w9: {name: version_mvp, milestone: version_mvp},
   w10: {name: "mid-" + version_penultimate},

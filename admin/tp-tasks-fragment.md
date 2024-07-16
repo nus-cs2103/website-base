@@ -504,13 +504,13 @@ We are still in iteration `{{ version_penultimate }}`, due to this iteration str
  #====================================================================================================================#}
 {% call show_tp_week_intro("cs2113", 3) %}
 
-{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 3, 60) }}
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 1, 60) }}
 
 {% endcall %}
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2113", 4) %}
 
-{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 25, 28) }}
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 23, 28) }}
 
 ++**Things to note:**++{.text-info}
 
@@ -521,13 +521,13 @@ We are still in iteration `{{ version_penultimate }}`, due to this iteration str
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2113", 5) %}
 
-{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 50, 48) }}
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 44, 48) }}
 
 {% endcall %}
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2113", 6) %}
 
-{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 75, 48) }}
+{{ show_tp_iterations_gantt("tpGanttChart-preIterations.png", "800", 65, 48) }}
 
 {% endcall %}
 {#====================================================================================================================#}
@@ -535,7 +535,7 @@ We are still in iteration `{{ version_penultimate }}`, due to this iteration str
 
 {{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 5, 38) }}
 
-**In this week, we get ready to start tP iterations**, first, by setting up the infrastructure, and then, planning the first iteration.
+**In this week, we get ready to start tP iterations**. We start by planning the first iteration.
 
 {% endcall %}
 {#====================================================================================================================#}
@@ -1271,7 +1271,8 @@ If a team member fails to do this within a reasonable time, try to help that tea
 <span id="heading_start_the_next_iteration">{{ icon_team }} Start the next iteration</span>
 <div id="desc_start_the_next_iteration">
 
-* Stronger teams are welcome to stay one week ahead of the tP schedule. So, feel free to move on to next week's tp tasks, and get started on the next iteration (i.e., `{{ version_first }}`).
+* **Stronger teams are welcome to stay one week ahead of the tP schedule.**{.text-success}
+  So, feel free to move on to next week's tp tasks, and get started on the next iteration (i.e., `{{ version_first }}`).
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_implementing_first_version">{{ icon_individual }} Start implementing {{ version_mvp }}</span>
@@ -1942,10 +1943,10 @@ Also see:
 * **After the tutorial**, if you are unsure about a concern raised by a reviewer, you can post in the [forum]({{ url_forum }}) to seek the opinion of the teaching team.
 </div>
 {#====================================================================================================================#}
-<span id="heading_finish_rc_tasks">Finish any remaining {{ version_penulatimate }} tasks</span>
-<div id="desc_finish_rc_tasks">
+<span id="heading_finish_remaining_tasks">Finish any remaining {{ version_penulatimate }} tasks</span>
+<div id="desc_finish_remaining_tasks">
 
-...
+* Finish any remaining tasks from the previous week.
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>

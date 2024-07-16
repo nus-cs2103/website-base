@@ -6,7 +6,7 @@
 <div id="main">
 
 {% set g = {
-  w3: weekly_tp_themes.w3.name,
+  w3: weekly_tp_themes.w3.name + " (W3)",
   w4: weekly_tp_themes.w4.name,
   w5: weekly_tp_themes.w5.name,
   w6: weekly_tp_themes.w6.name,
@@ -18,14 +18,14 @@
   iter5: "Iteration 5 (W11-W12)",
   iter6: "Iteration 6 (W13)"
 } if cs2103 else {
-  w3: weekly_tp_themes.w3.name,
-  w4: weekly_tp_themes.w4.name,
-  w5: weekly_tp_themes.w5.name,
-  w6: weekly_tp_themes.w6.name,
-  w7: weekly_tp_themes.w7.name,
+  w3: weekly_tp_themes.w3.name + " (W3)",
+  w4: weekly_tp_themes.w4.name + " (W4)",
+  w5: weekly_tp_themes.w5.name + " (W5)",
+  w6: weekly_tp_themes.w6.name + " (W6)",
+  w7: weekly_tp_themes.w7.name + " (W7)",
   iter1: "Iteration 1 (W8-W9)",
-  iter2: "Iteration 2 (W10-W11)",
-  iter3: "Iteration 3 (W12)"
+  iter2: "Iteration 2 (W10-W11)                                      +(extra week)",
+  iter3: "Iteration 3 (W13)"
 }%}
 
 
@@ -58,10 +58,11 @@ then [{{ g.iter5 }}] lasts 14 days
 then [{{ g.iter6 }}] lasts 3 days
 [{{ version_final }}] happens at [{{ g.iter6 }}]'s end
 {% else %}
-[prepare, set up] lasts 7 days
+[Plan iteration 1 (W7)] lasts 7 days
 then [{{ g.iter1 }}] lasts 14 days
 [{{ version_first }}] happens at [{{ g.iter1 }}]'s end
 then [{{ g.iter2 }}] lasts 21 days
+[{{ g.iter2 }}] is 66% completed
 [{{ version_penultimate }}] happens at [{{ g.iter2 }}]'s end
 then [{{ g.iter3 }}] lasts 3 days
 [{{ version_final }}] happens at [{{ g.iter3 }}]'s end
@@ -99,8 +100,9 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 #### {{ badge("Week " + (tfw + 3))}} {{ weekly_tp_themes.w6.name }}
 
-* Decide how the product will look like at {{ version_mvp }}.{{ bullet_target_green }}
+* Decide how the product will look like at {{ version_mvp }}.{{ bullet_target_green }}{% if cs2113 %}
 * Record that product concept in the form of a user guide.
+* Set up the development environment.{% endif %}
 
 </div>
 
@@ -114,8 +116,8 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 #### {{ badge("Week " + (tfw + 4))}} {{ weekly_tp_themes.w7.name }}
 
-* Ensure development environment is set up.{{ bullet_target_green }}
-* Plan the next iteration i.e., decide who will do which parts by when.
+* Plan the next iteration i.e., decide who will do which parts by when.{{ bullet_target_green }}
+* Proceed to start the iteration early, if possible.
 
 
 #### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iteration 1 → {{ version_mvp }}
@@ -124,16 +126,17 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 * Aim to deliver an <tooltip content="Minimum Viable Product">MVP</tooltip> version of the product.
 
 
-#### {{ badge("W" + (tfw + 7))}} {{ badge("W" + (tfw + 8))}} Iteration 2 → {{ version_penultimate }}
+#### {{ badge("W" + (tfw + 7))}} {{ badge("W" + (tfw + 8))}} <span class="badge bg-secondary">W12</span> Iteration 2 → {{ version_penultimate }}
 
-* This version will be tested by peers and you will receive the bug reports without any penalty.{{ bullet_target_green }}
+%%{{ icon_info }} Note: This iteration is given an extra week, to account for the holidays in the middle.%%
+
+* This version will be tested by peers, and you will receive the bug reports without any penalty.{{ bullet_target_green }}
 * Aim to **deliver all <tooltip content="i.e., all features you plan to deliver in this project at the end of the semester">target features</tooltip>** so that you can get them tested for free.
 
+#### {{ badge("W" + (tfw + 10))}} Iteration 3 → {{ version_final }}
 
-#### {{ badge("W" + (tfw + 9))}} Iteration 3 → {{ version_final }}
-
-* This iteration is <span class="text-danger">very short</span>.{{ bullet_target_green }}
-* ==**Changes to features are strongly discouraged** in this iteration.== Recommended to use it for bug fixing and polishing up documentation only.
+* This iteration is <span class="text-danger">very short</span> (just 2-3 days).{{ bullet_target_green }}
+* Recommended to use it only for bug fixing, and wrapping up the final deliverables.
 
 </div>
 

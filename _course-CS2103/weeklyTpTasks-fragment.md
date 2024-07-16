@@ -50,7 +50,7 @@ week11: [
   {id: 'release_as_a_jar_file', deadline: get_date(date_w12_start, 3, time="23:59")}
 ],
 week12: [
-  {id: 'finish_rc_tasks'},
+  {id: 'finish_remaining_tasks'},
   {id: 'attend_the_PED', deadline: get_date(date_w12_start, 4, time="1600-1800"), graded: true}
 ],
 week13: [
