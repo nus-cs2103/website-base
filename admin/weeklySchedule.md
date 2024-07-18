@@ -18,7 +18,7 @@ As our lecture slot (which we use for the weekly briefing) is on {{ day_lecture 
 
 <span class="text-danger">**The deadline** for weekly tasks is {{ day_lecture }} {{ time_lecture_start}}</span> i.e.,the lecture slot start time. Work done after that time (e.g., code committed after {{ day_lecture }} {{ time_lecture_start}}) will be credited for the following week.
 
-{% if not cs2113 %}**We are not strict with weekly project deadlines** i.e., we'll not penalize you even if you occasionally miss those deadlines, as long as you catch up soon enough (within a few days after the deadline). This flexibility does not apply if a task description states a specific deadline.<br>
+{% if not cs2113 %}**It's OK to miss a few weekly project deadlines occasionally** i.e., we'll not penalize you even if you occasionally miss those deadlines, as long as you catch up soon enough (within a few days after the deadline). This flexibility does not apply if a task description states a specific deadline.<br>
 {% endif %}
 
 **It's OK to make occasional mistakes in weekly tasks** (making mistakes is a natural part of learning new things after all). If a weekly task was not accepted as 'done' due to a mistake you made, go ahead and rectify the mistake as soon as you can -- our grading scripts will not penalize such mistakes if they are corrected soon after.

@@ -200,7 +200,7 @@ Yes, if it requires each member to put in about a half an iP worth of effort.
 {% endcall %}
 
 {% call show_faq("Is it a must to write at least 300 LoC?") %}
-Not necessarily. It depeends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than 300 LoC that implements feature Y, depending on the context. So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the _equivalent_ effort).
+Not necessarily. It depends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than 300 LoC that implements feature Y (i.e., it depends on the context). So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the _equivalent_ effort).
 {% endcall %}
 
 {% call show_faq("Still, if I write 300 LoC, I get full marks for implementation?") %}
@@ -287,8 +287,8 @@ In fact, here is the grading criterion for the individual project effort:
 
 * **Objective:** showcase your ability to write both _user-facing documentation_ and _developer-facing documentation_.
 * <span class="badge bg-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added.
-* **Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements**, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.
-* <span class="badge bg-info">Expectation</span> <span class="text-info">**Use at least {{ uml_diagrams_per_person }} UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.
+* **Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements**, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.{% if cs2113 %}
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Use at least {{ uml_diagrams_per_person }} UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.{% endif %}
 
 #### <span class="badge bg-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Testing</span>
 

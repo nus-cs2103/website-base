@@ -68,11 +68,11 @@ week13: [
   w4: {name: "Set direction"},
   w5: {name: "Gather requirements"},
   w6: {name: "Define the MVP"},
-  w7: {name: "Practice iteration", milestone: version_practice},
-  w8: {name: "First feature increment", milestone: version_first},
-  w9: {name: "MVP", milestone: version_mvp},
-  w10: {name: "Alpha version", milestone: version_alpha},
-  w11: {name: "Release Candidate (part 1)", milestone: version_penultimate},
-  w12: {name: "Release Candidate (part 2)", milestone: version_penultimate},
+  w7: {name: "Practice iteration → " + version_practice, milestone: version_practice},
+  w8: {name: "First feature increment → " + version_first, milestone: version_first},
+  w9: {name: "MVP → " + version_mvp, milestone: version_mvp},
+  w10: {name: "Alpha version → " + version_alpha, milestone: version_alpha},
+  w11: {name: "Release candidate → " + version_penultimate, milestone: version_penultimate},
+  w12: {name: "Extra week for " + version_penultimate},
   w13: {name: "Public release", milestone: version_final}
 } %}

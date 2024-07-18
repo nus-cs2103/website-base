@@ -275,7 +275,9 @@ The sections below describe a-e in more details.
 
 In our project, we use _user stories_ to track user requirements. Instead of using a separate tool for tracking requirements, we can use the GitHub issue tracker for this as well.
 
-To do that, record each of the user stories you plan to deliver as an issue in the issue tracker. e.g.,
+To do that, record each user story as an issue in the issue tracker. More details (taken from the textbook) are given below. {% if cs2103 %}It is optional to use the GitHub issue tracker for recording user stories.{% endif %}
+
+----
 
 <include src="..\book\specifyingRequirements\userStories\usage\tools.md#user-stories-in-issue-tracker" />
 
@@ -302,8 +304,8 @@ GitHub Issues does not have a direct way of doing this. However, you can use a t
 * **Assign the issue to a team member** after you've decided who should do the corresponding task.
 
 {% call show_faq("%%**Is it OK to assign multiple members to the same task?**%%") %}
-This is discouraged in the tP, so that task allocations are easier to track.<br>
-Shared tasks can be split into separate issues. For example, instead of creating an issue `Update teams page with own info` and assigning it to all team members (in which case, this issue can't be closed until all members do their part), you can create issues such as `Update teams page with John's info` that can be assigned to individual members.
+This is discouraged in the tP, as it makes task allocations (and accountability) harder to track.<br>
+Instead, shared tasks can be split into separate issues. For example, instead of creating an issue `Update teams page with own info` and assigning it to all team members (in which case, this issue can't be closed until all members do their part), you can create issues such as `Update teams page with John's info` that can be assigned to individual members.
 {% endcall %}
 
 </div>
@@ -382,7 +384,7 @@ This is encouraged, while not a strict rule. Creating an issue indicates 'a task
     * Pull the latest `master` from the team repo, and push it to your own fork.
     * If there are any unmerged branches in your local repo, for each of them,<br>
       merge `master` branch to it, and push the updated branch to your fork.<br>
-      %%{{ icon_info }} Another way to sync a branch with the `master` branch is to rebase it. But we discourse that approach as it will change the timestamp of your branch commits, affecting how our grading scripts track your work.%%
+      %%{{ icon_info }} Another way to sync a branch with the `master` branch is to rebase it. But we discourage that approach as it will change the timestamp of your branch commits, affecting how our grading scripts track your work.%%
   * <span class="text-danger">**don't delete the branch used by the PR**.</span> While it is common practice to delete a branch after merging it, we require you to keep those branches in the team repo so that our scripts can confirm that you used branches when adding changes.
 {% if course == "CS2113" %}
 * **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.

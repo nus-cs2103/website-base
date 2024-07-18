@@ -15,7 +15,7 @@
   iter2: "Iteration 2 (W8)",
   iter3: "Iteration 3 (W9)",
   iter4: "Iteration 4 (W10)",
-  iter5: "Iteration 5 (W11-W12)",
+  iter5: "Iteration 5 (W11)                +(extra week)",
   iter6: "Iteration 6 (W13)"
 } if cs2103 else {
   w3: weekly_tp_themes.w3.name + " (W3)",
@@ -54,6 +54,7 @@ then [{{ g.iter3 }}] lasts 7 days
 then [{{ g.iter4 }}] lasts 7 days
 [{{ version_alpha }}] happens at [{{ g.iter4 }}]'s end
 then [{{ g.iter5 }}] lasts 14 days
+[{{ g.iter5 }}] is 50% completed
 [{{ version_penultimate }}] happens at [{{ g.iter5 }}]'s end
 then [{{ g.iter6 }}] lasts 3 days
 [{{ version_final }}] happens at [{{ g.iter6 }}]'s end
@@ -100,7 +101,7 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 #### {{ badge("Week " + (tfw + 3))}} {{ weekly_tp_themes.w6.name }}
 
-* Decide how the product will look like at {{ version_mvp }}.{{ bullet_target_green }}{% if cs2113 %}
+* Decide how the MVP version of the product will look like (i.e., {{ version_mvp }}).{{ bullet_target_green }}{% if cs2113 %}
 * Record that product concept in the form of a user guide.
 * Set up the development environment.{% endif %}
 
@@ -142,7 +143,7 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 <div tags="m--cs2103" class="indented-level2">
 
-#### {{ badge("W" + (tfw + 4))}} Iter.1 %%[ --{{ weekly_tp_themes.w7.name }}-- ]%%
+#### {{ badge("W" + (tfw + 4))}} Iter.1 %%[ --{{ weekly_tp_themes.w7.name }} → {{ version_practice }}-- ]%%
 
 <div id="v11-goals" class="indented">
 
@@ -151,14 +152,14 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 * **#g#Strategy##**: Practice the workflow while updating the documents.
 </div>
 
-<box type="info" seamless>
+<box id="lo-above-product" type="info" seamless>
 
 **Aim to do 'just enough':**{.text-info}
-Note how the 'Learning outcome' appears _above_ 'Product goal', and how the product goal derives from the learning outcome. Unlike in a real SE project, the product in the tP exists only to help you achieve the learning outcome. Hence, aim to **do 'just enough' on the product front to achieve the intended learning outcome of the iteration** %%(e.g., don't make features bigger necessary)%% so that the tP doesn't add to your workload more than necessary.
+Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span> (together with the <span class="text-success">:fas-crosshairs: **Strategy**</span>) is simply a means to achieve the <span class="text-success">:fas-crosshairs: **Learning outcome**</span>. Unlike in a real SE project, the product in the tP exists only to help you achieve the learning outcome. Hence, aim to **do 'just enough' work on the product to achieve the intended learning outcome of the iteration** %%(e.g., don't make features bigger necessary)%% so that the tP doesn't add to your workload more than necessary.
 </box>
 
 
-#### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} Iter.2 %%[ --{{ weekly_tp_themes.w8.name }}-- ]%%
+#### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} Iter.2 %%[ --{{ weekly_tp_themes.w8.name }} → {{ version_first }}-- ]%%
 
 <div id="v12-goals" class="indented">
 
@@ -167,17 +168,17 @@ Note how the 'Learning outcome' appears _above_ 'Product goal', and how the prod
 * **#g#Strategy##**: Define the smallest possible MVP (==!!simplest versions!! of !!_must-have_ features!! only==). Each member tries to merge at least one PR that moves the product towards that MVP.
 </div>
 
-#### {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iter.3 %%[ --{{ weekly_tp_themes.w9.name }}-- ]%%
+#### {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iter.3 %%[ --{{ weekly_tp_themes.w9.name }} → {{ version_mvp }}-- ]%%
 
 <div id="v13-goals" class="indented">
 
 * **Learning outcome**: Able to deliver a fully working product, on time.{{ bullet_target_green }}
 * **Product goal**: Reach the <tooltip content="Minimum Viable Product">MVP</tooltip>.
-* **Strategy**: Decide on a plan to meet the MVP delivery deadline. Reduce risk by aiming for the . Use the remaining time to move the product further forward, while staying within own workload limitations.
+* **Strategy**: Decide on a plan to meet the MVP delivery deadline. Reduce risk by aiming for the smallest subset of must-have features.
 </div>
 
 
-#### {{ badge("W" + (tfw + 7))}} Iter.4 %%[ --{{ weekly_tp_themes.w10.name }}-- ]%%
+#### {{ badge("W" + (tfw + 7))}} Iter.4 %%[ --{{ weekly_tp_themes.w10.name }} → {{ version_alpha }}-- ]%%
 
 <div id="v14-goals" class="indented">
 
@@ -187,7 +188,9 @@ Note how the 'Learning outcome' appears _above_ 'Product goal', and how the prod
 </div>
 
 
-#### {{ badge("W" + (tfw + 8))}} {{ badge("W" + (tfw + 9))}} Iter.5 %%[ --{{ weekly_tp_themes.w12.name }}-- ]%%
+#### {{ badge("W" + (tfw + 8))}} <span class="badge bg-secondary">W12</span> Iter.5 %%[ --{{ weekly_tp_themes.w11.name }} → {{ version_penultimate }}-- ]%%
+
+--%%{{ icon_info }} This iteration has an extra week, on account of holidays.%%--
 
 <div id="v15-goals" class="indented">
 
@@ -203,7 +206,7 @@ This version (i.e., {{ version_penultimate }}) will undergo a limited beta testi
 </box>
 
 
-#### {{ badge("W" + (tfw + 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w13.name }}-- ]%%
+#### {{ badge("W" + (tfw + 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w13.name }} → {{ version_final }}-- ]%%
 
 <div id="v16-goals" class="indented">
 
@@ -215,7 +218,7 @@ This version (i.e., {{ version_penultimate }}) will undergo a limited beta testi
 <box type="warning" seamless>
 
 * This iteration is <span class="text-danger">very short</span> (just a few days).<br>
-  ==**Even minute/cosmetic changes to features are not allowed** in this iteration== due to the _feature freeze_ enforced.
+  ==**Even minor/cosmetic changes to features are not allowed** in this iteration== due to the _feature freeze_ enforced.
 * This version will be subjected to an intensive peer testing (the so-called [_practical exam_](tp-pe.html#tp-practical-exam-pe)).
   You will get credit for finding bugs in others' tP deliverables and penalized for bugs found in your deliverables.
 </box>
