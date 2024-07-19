@@ -1,5 +1,12 @@
 There is no midterm. The info given below are for the final exam.
 
+{% if (current_week | int) < 11 %}
+<box type="important">
+
+Instructions below are from the previous semester. Will be updated closer to the exam.
+</box>
+{% endif %}
+
 **Mode:** F2F pen-and-paper mode (not digital)
 
 **Weightage:** {{ marks_exam }}% of the final grade
@@ -37,7 +44,7 @@ Unless stated otherwise, the meaning of answer options are<br>
 
 {{ icon_example }} Here is an example:
 
->**Q23:** Java can be used to write OOP code.
+>**Q23:** {{ "Python" if tee3101 else "Java" }} can be used to write OOP code.
 
 The answer should be `A` %%(i.e., Agree)%%.
 </box>

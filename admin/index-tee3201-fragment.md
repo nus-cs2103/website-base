@@ -60,7 +60,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 </div>
 
 #### Tutors:
-* **Ou Jin Bin (Kelvin)**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`e0902046`[at]`u.nus.edu`</span>
+* TBA <!--**Ou Jin Bin (Kelvin)**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`e0902046`[at]`u.nus.edu`</span>-->
 
 </div>
 
@@ -70,7 +70,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 <div class="indented" id="lectures-info">
 
 %%:far-clock:%% Tuesdays 1800-2130<br>
-%%:fas-map-marker-alt:%% Venue: E4-04-02<br>
+%%:fas-map-marker-alt:%% Venue: {{ lecture_venue }}<br>
 
 **A TEE3201 lecture + tutorial time is divided into three parts**, as follows:
 
@@ -264,7 +264,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 
 <div class="indented">
 
-<include src="exams-f2f.md" />
+<include src="exam-pen-and-paper.md" />
 
 </div>
 
