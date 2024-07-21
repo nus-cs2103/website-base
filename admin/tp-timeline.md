@@ -159,7 +159,7 @@ Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span>
 </box>
 
 
-#### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} Iter.2 %%[ --{{ weekly_tp_themes.w8.name }} → {{ version_first }}-- ]%%
+#### {{ badge("&nbsp;W" + (tfw + 5)+ "&nbsp;")}} Iter.2 %%[ --{{ weekly_tp_themes.w8.name }}-- ]%%
 
 <div id="v12-goals" class="indented">
 
@@ -168,7 +168,7 @@ Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span>
 * **#g#Strategy##**: Define the smallest possible MVP (==!!simplest versions!! of !!_must-have_ features!! only==). Each member tries to merge at least one PR that moves the product towards that MVP.
 </div>
 
-#### {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iter.3 %%[ --{{ weekly_tp_themes.w9.name }} → {{ version_mvp }}-- ]%%
+#### {{ badge("&nbsp;W" + (tfw + 6)+ "&nbsp;")}} Iter.3 %%[ --{{ weekly_tp_themes.w9.name }}-- ]%%
 
 <div id="v13-goals" class="indented">
 
@@ -178,7 +178,7 @@ Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span>
 </div>
 
 
-#### {{ badge("W" + (tfw + 7))}} Iter.4 %%[ --{{ weekly_tp_themes.w10.name }} → {{ version_alpha }}-- ]%%
+#### {{ badge("W" + (tfw + 7))}} Iter.4 %%[ --{{ weekly_tp_themes.w10.name }}-- ]%%
 
 <div id="v14-goals" class="indented">
 
@@ -188,7 +188,7 @@ Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span>
 </div>
 
 
-#### {{ badge("W" + (tfw + 8))}} <span class="badge bg-secondary">W12</span> Iter.5 %%[ --{{ weekly_tp_themes.w11.name }} → {{ version_penultimate }}-- ]%%
+#### {{ badge("W" + (tfw + 8))}} <span class="badge bg-secondary">W12</span> Iter.5 %%[ --{{ weekly_tp_themes.w11.name }}-- ]%%
 
 --%%{{ icon_info }} This iteration has an extra week, on account of holidays.%%--
 
@@ -206,7 +206,7 @@ This version (i.e., {{ version_penultimate }}) will undergo a limited beta testi
 </box>
 
 
-#### {{ badge("W" + (tfw + 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w13.name }} → {{ version_final }}-- ]%%
+#### {{ badge("W" + (tfw + 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w13.name }}-- ]%%
 
 <div id="v16-goals" class="indented">
 

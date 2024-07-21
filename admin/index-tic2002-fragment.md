@@ -66,7 +66,7 @@ e.g., **Instead of traditional instructor-led tutorials**, the course provides q
 # Lectures + Tutorials
 <div class="indented" id="lectures-info">
 
-%%:far-clock:%% {{ "Tuesday" if semester == '1' else "Wednesday" }} 6.30-9.30pm<br>
+%%:far-clock:%% {{ "Tuesday" if S == '1' else "Wednesday" }} 6.30-9.30pm<br>
 %%:fas-map-marker-alt:%% COM1-02-08 (SR8)<br>
 
 **==The first lecture will be in F2F mode==, and will start at 7pm.**

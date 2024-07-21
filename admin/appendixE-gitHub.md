@@ -273,9 +273,7 @@ The sections below describe a-e in more details.
 
 ****Using issues to track user stories****{.text-info}
 
-In our project, we use _user stories_ to track user requirements. Instead of using a separate tool for tracking requirements, we can use the GitHub issue tracker for this as well.
-
-To do that, record each user story as an issue in the issue tracker. More details (taken from the textbook) are given below. {% if cs2103 %}It is optional to use the GitHub issue tracker for recording user stories.{% endif %}
+In our project, we use _user stories_ to track user requirements. Instead of using a separate tool for tracking requirements, we can use the GitHub issue tracker for this as well. To do that, record each user story as an issue in the issue tracker. More details (taken from the textbook) are given below. {% if cs2103 %}**It is optional to use the GitHub issue tracker for recording user stories.**{% endif %}
 
 ----
 

@@ -74,5 +74,5 @@ week13: [
   w10: {name: "Alpha version → " + version_alpha, milestone: version_alpha},
   w11: {name: "Release candidate → " + version_penultimate, milestone: version_penultimate},
   w12: {name: "Extra week for " + version_penultimate},
-  w13: {name: "Public release", milestone: version_final}
+  w13: {name: "Public release → " + version_final, milestone: version_final}
 } %}

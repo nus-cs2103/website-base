@@ -1569,6 +1569,15 @@ Here are some reasons:
 
 * Discuss with the team how the iteration went (i.e., what worked well, what didn't), and your **plans to improve the process** (not the product) in the next iteration.
 * **Submission:** Keep notes about the discussion in your shared _project notes document_ so that the tutor can check them later.
+
+<box type="tip" seamless>
+
+**Like to try a new Git workflow?** If you feel you are now comfortable with the forking workflow, and now you would like to practice another one, your team  can choose to follow the <trigger trigger="click" for="modal:postmortemTip-featurebranchworkflow">feature branch workflow</trigger> from now on.
+</box>
+
+<modal large header="TextBook {{ icon_embedding }}" id="modal:postmortemTip-featurebranchworkflow">
+<include src="../book/revisionControl/featureBranchFlow/unit-inElsewhere-asFlat.md" boilerplate/>
+</modal>
 </div>
 {#====================================================================================================================#}
 <span id="heading_plan_the_alpha_version">{{ icon_team }} Plan the alpha version (`{{ version_alpha }}`)</span>
@@ -2003,7 +2012,7 @@ Test the product yourself (test each others' features) using the JAR file, repor
 <span id="heading_start_fixing_PED_bugs">{{ icon_team }} Fix PE-D bugs</span>
 <div id="desc_start_fixing_PED_bugs">
 
-1. ****Triage the bugs you received in the PE-D****, by following the procedure given below:
+1. ****Triage bugs you received in the PE-D****, by following the procedure given below:
 
 {{ embed_topic("tp-ped-fragment.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="1") }}
 

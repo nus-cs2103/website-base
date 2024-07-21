@@ -64,8 +64,6 @@ As {{ marks_ca }}% of this course is based on CA (see <trigger trigger="click" f
 #### Rewards for exceeding expectations
 
 This course deliberately avoids giving extra credit for exceeding the expected bars, in order to keep the workload manageable (of course, doing more will have their own rewards in terms of learning).
-
-**If you are a strong programmer wishing to push yourself beyond the expectations set by the course**, you can consider applying for [CS2103R](appendixG-CS2103R.md), to earn an extra 1 Unit of graded credit.
 </div>
 </div>
 
