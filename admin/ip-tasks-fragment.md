@@ -435,7 +435,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <div class="indented-level1">
 <br>
 
-<span class="text-danger">**:fab-apple: Attention Mac users**</span>! If you are not using the ==exact **Azul** JDK distribution== (not any other JDK 11 distributions) specified by our advisory for Mac users in [this page](programmingLanguages.md), you are likely to run into problems while doing `Level-10`.
+<span class="text-danger">**:fab-apple: Attention Mac users**</span>! If you are not using the ==exact **Azul** JDK distribution== (not any other JDK 17 distributions) specified by our advisory for Mac users in [this page](programmingLanguages.md), you are likely to run into problems while doing `Level-10`.
 </div>
 </div>
 {#====================================================================================================================#}
@@ -759,7 +759,7 @@ This activity is worth `2x2=4` participation points.
 1. **Run the jar file** in the following manner:
    * Put the jar file in an empty folder, to prevent data files created by other jar files you tested earlier from interfering with the current jar file.{ texts="['5.1','5.2','5.3','5.4']" }
    * Open a terminal, and navigate to the folder you put the JAR file in.
-   * {{ icon_important_big_red }} Run the `java -version` command to confirm you are using Java 11.{% if cs2103 %}<br>
+   * {{ icon_important_big_red }} Run the `java -version` command to confirm you are using Java 17.{% if cs2103 %}<br>
       :fab-apple: Mac user, confirm you are using the exact Java distribution we have prescribed [here](programmingLanguages.md).{% endif %}
    * Run the jar file using the `java -jar {file_name}` command (rather than double-clicking) in the same terminal.
 1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
@@ -841,9 +841,9 @@ This activity is worth `2x2=4` participation points.
    * Create the JAR file {% if tic4002 or cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20IntelliJ%20IDEA)).{% else %}in one of these ways:
      * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
      * Else: you can use IntelliJ.{% endif %}
-   * The JAR file should be ==cross-platform and should work in a computer that has Java 11== (but no other Java version). To avoid version compatibility issues, we strongly recommend the following approach:
+   * The JAR file should be ==cross-platform and should work in a computer that has Java 17== (but no other Java version). To avoid version compatibility issues, we strongly recommend the following approach:
       1. Open a terminal window, and navigate to the root of your project folder.
-      1. Run the `java -version` command to confirm the terminal is using Java 11.
+      1. Run the `java -version` command to confirm the terminal is using Java 17.
       1. Run the `./gradlew clean shadowJar` command to create the JAR file.
 3. **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
    1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.

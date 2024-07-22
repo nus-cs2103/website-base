@@ -140,7 +140,7 @@ Note that this topic (and many other topics) come with a pre-recorded lecture vi
 
 As with any language, the first step is to install the language in your computer. After that, you write a simple HelloWorld program, and get it running.
 
-Java 11 can be downloaded from [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+Java 17 can be downloaded from [here](https://www.oracle.com/java/technologies/downloads/#java17).
 
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

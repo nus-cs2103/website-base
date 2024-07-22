@@ -104,7 +104,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 
 * Put the JAR file ==in an empty folder== in which the app is allowed to create files %%(i.e., do not use a write-protected folder)%%.<br>
   In rare cases, the team could have submitted a ZIP file instead of a JAR file. In that case, unzip that file into the target folder.
-* Open a command window. Run the `java -version` command to ensure you are using Java 11.<br>
+* Open a command window. Run the `java -version` command to ensure you are using Java 17.<br>
   {{ icon_important_big_red }} Do this again even if you did this before, as your OS might have auto-updated the default Java version to a newer version.
 * Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
@@ -119,7 +119,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 **++If the product doesn't work at all:++** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, {% if not cs2103 %}contact the invigilator (via MS Teams, and failing that, via Zoom chat) to receive a _fallback_ team to test.{% else %}do the following:
 
 1. **Check the UG** of the team, to see if there are extra things you need to do before launching the JAR.<br>
-   **Confirm that you are using Java 11** and using the `java -jar` command to run the JAR, as explained in points above.
+   **Confirm that you are using Java 17** and using the `java -jar` command to run the JAR, as explained in points above.
 1. **Contact our head TA** via MS Teams (name: `Kim Hyeongcheol`, NUSNET: `dcskh`) and give him<br>
 (a) **a screenshot** of the error message, and<br>
 (b) **your GitHub** username.

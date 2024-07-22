@@ -1861,7 +1861,7 @@ The panel below contains guidelines your peers will use when determining bugs in
   1. {{ version_penultimate }} JAR file
   1. UG PDF file
   1. DG PDF file
-* ==IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.==
+* ==IMPORTANT: ensure your jar file was generated using Java 17 and can work on all major OS'es using JDK 17.==
 
 {{ embed_topic("tp-constraints.md#Constraint-Java-Version", "Admin " + icon_embedding + " tP Constraints → Constraint-Java-Version", "2", indent="1") }}
 

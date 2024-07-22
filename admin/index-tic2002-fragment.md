@@ -109,7 +109,7 @@ You can continue to attend them using F2F mode but those who show good progress 
 
 This course uses Java. It assumes you are familiar with C++ basics and provides lessons to help you transition from C++ to Java.
 
-{{ icon_important_big_red }} Install [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html) on your computer. Using other versions of Java is highly discouraged.
+{{ icon_important_big_red }} Install [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17) on your computer. Using other versions of Java is highly discouraged.
 
 </div>
 

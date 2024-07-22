@@ -30,18 +30,19 @@ The exam expects you to know Java to the extent that you should be familiar with
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
-We require you to use **Java 11** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java11) or another alternative such as the OpenJDK version) for all course work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
+We require you to use **Java 17** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java17) or another alternative such as the OpenJDK version) for all course work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
 
-**If you have Java 8** in your computer, we recommend removing it, to prevent using it unintentionally.
+**If you have Java 8** (a particularly 'sticky' version of Java) in your computer, we recommend removing it, to prevent using it unintentionally.
 
-**Why not move to Java 17?**: While we are aware that Java 17 is a more recent LTS version of Java, we are sticking with Java 11 which is still the most used version of Java in production systems. We plan to move to Java 17 in a future semester when its adoption is sufficiently high.
+**Why not move to Java 21?**: While we are aware that Java 21 is a more recent LTS version of Java, we are sticking with Java 17 for the time being. We plan to move to Java 21 in a future semester when its adoption is sufficiently high.
 
-{% if cs2103 or tic4002 %}
+{% if cs2103 %}
 
 <panel type="danger" header="[IMPORTANT] Advisory for :fab-apple: Mac users" expanded >
 
-This advisory applies to **some Mac users**.
+Mac users should use the specific Azul JDK 17 distribution specified in [this guide](https://se-education.org/guides/tutorials/javaInstallationMac.html).
 
+<!--
 **The problem:** You might not be able to run the JAR files produced by some of the classmates due to various incompatibility issues between your environment and theirs, although you can still get your own JAR files to work in your computer.
 
 **How to find if it applies to you:** If you are a Mac user, here are the steps to check if it applies to you:
@@ -74,8 +75,8 @@ And `whereis java` should output `/usr/bin/java`
 Recommended: Set the `JAVA_HOME`/`JDK_HOME` system variables to point to `/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home`
 
 If you encounter problems while doing the above or need more info, please ask in the forum.
+-->
 </panel>
-
 
 
 {% endif %}
