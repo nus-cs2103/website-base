@@ -58,7 +58,7 @@
 
 * **Those opting for the F2F mode can ignore any Zoom-related points** in the instructions below.
 
-* **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 4, format=format_normal, time="") | trim }}).{% if tic4002 %} Use the same Zoom link used for the regular lecture. Be present at least by 6pm.{% else %} Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.{% endif %}
+* **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 4, format=format_normal, time="") | trim }}). Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.
 
 * **PE Phase 1 will be conducted under exam conditions. For the remote mode, ==we will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.<br>
 
@@ -268,7 +268,7 @@ For reference, the AB3 DG is [here]({{ url_ab3_upstream_website }}/DeveloperGuid
 <p/>
 <div id="projectGrading-effort-instructions">
 
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
 {{ icon_green_Q }} **If the implementation effort required to create AB3 from scratch is 10, the estimated implementation effort of this team is,** [`0`..`20`] e.g., if you give `5`, that means the team's effort is about 50% of that spent on creating AB3. We expect most typical teams to score near to `5`.
 * Do read the DG appendix named `Effort`, if any.
@@ -276,7 +276,7 @@ For reference, the AB3 DG is [here]({{ url_ab3_upstream_website }}/DeveloperGuid
 * Do not give a high value just _to be nice_. ==Your responses will be used to evaluate your effort estimation skills.==
 * Do ==not consider the team size== when deciding this rating. We'll factor in the team size later.
 </div>
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 {{ icon_green_Q }} **[For each member] The functional code contributed by the person is,**<br>
 ==Consider implementation work only (i.e., exclude testing, documentation, project management etc.)==<br>

@@ -618,7 +618,7 @@ Now, let us take a quick look at a couple of well-known processes used in the in
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Project Mgt: Scheduling and Tracking") }}">
 
-<span tags="m--cs2103 m--cs2113 m--tic4001">Coordinating a team project is not easy.</span> Given below are some very basic tools and techniques that are often used in planning, scheduling, and tracking projects.
+<span tags="m--cs2103 m--cs2113">Coordinating a team project is not easy.</span> Given below are some very basic tools and techniques that are often used in planning, scheduling, and tracking projects.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("projectPlanning-ganttCharts") }}">
@@ -683,18 +683,10 @@ This course covers only two types of diagrams: class/object diagrams (CD/OD) -- 
 
 We recommend you ==try the relevant post-lecture quizzes as you read each sections== below. In these quizzes, you will  be able to see the answers immediately after completing the quiz.
 </div>
-<div tags="m--tic4001">
-
-Lets' refresh our memory about Class/Objet Diagrams, starting with the basics.
-</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Followup Class/Object Diagrams: Basics") }}">
-<div tags="m--tic4001">
 
-Here is a worked examples covering the drawing of class/object diagrams using the basic notations:
-{{ panopto("88a6d3bc-7bbb-4566-a035-ac4100ce1085", desc="[Example] Box, Item, Lid") }}
-</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Class/Object Diagrams: Intermediate") }}">
@@ -733,10 +725,6 @@ Now, you can try these worked examples:
 Good news: this will the the last installment of UML notations.<br>
 Bad news: we are going to cover an entire new diagram type in one go (reason: to give you more time to use them in project documentation).
 </div>
-<div tags="m--tic4001">
-
-As with the class/object diagrams, **let us refresh our memory of the sequence diagrams notations** that you learned in TIC2002.
-</div>
 <div tags="m--cs2103 m--tic2002">
 
 **Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, class/object diagrams that you learned earlier model _structural_ aspects.
@@ -744,7 +732,7 @@ As with the class/object diagrams, **let us refresh our memory of the sequence d
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Followup Sequence Diagrams: Basics") }}">
-<div tags="m--tic2002 m--tic4001">
+<div tags="m--tic2002">
 
 Now that you know the basic notations for the sequence diagrams, here is a worked example of drawing sequence diagrams (basic notation) to match a code snippet.
 

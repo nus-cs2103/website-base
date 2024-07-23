@@ -19,14 +19,14 @@ The DG is primarily meant to help current/future developers. Therefore, decide b
   * Appendix B: User Stories
   * Appendix C: Non-Functional Requirements
   * Appendix D: Glossary
-  * {{ (optional + " ") if tic4001 }}Appendix E: Instructions for Manual Testing (more details below)
+  * Appendix E: Instructions for Manual Testing (more details below)
 </div>
 
 * **Ensure the 'Acknowledgements' section is accurate**: It should cite all ideas/code/documentation you reused. If you reused/adapted or even drew inspiration from other projects (including projects by past/current students), mention the extent of reuse and give hyperlinks to the original projects' GitHub page, UG, DG, etc. Examples:
   * %%The feature Foo was inspired by a similar feature of the past project [TaskPro]() ([UG](), [DG]()), although our implementation is entirely new.%%
   * %%The feature Bar (including the code) was reused with minimal changes from the same [TaskPro]() project.%%
 * **{{ optional }} You can include proposed implementations of future features.**
-* **{{ icon_important_big_red if not tic4001 else optional }} Include an appendix named _Instructions for Manual Testing_**, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.
+* **{{ icon_important_big_red }} Include an appendix named _Instructions for Manual Testing_**, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.
   * **Cover all user-testable features**<span tags="m--cs2103"> but no need to cover existing AB3 features if you did not touch them</span>.
   * **No need to give a long list of test cases** including all possible variations. It is upto the tester to come up with those variations.
   * Information in this appendix should _complement_ the UG. ==Minimize repeating information that are already mentioned in the UG.==

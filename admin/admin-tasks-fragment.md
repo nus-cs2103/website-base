@@ -28,19 +28,11 @@
 
 * Follow the <span class="border pe-1 ps-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions of the following tools.
 
-<box type="info" tags="m--tic4002" seamless>
-
-The tools in the following panels are the same as what you used in TIC4001.
-</box>
-
 {{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="1") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - Git**", "2", indent="1") }}
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="1") }}
-<box type="warning" tags="m--tic4002" seamless>
 
-The tools in the following panels differ slightly from TIC4001.
-</box>
 {{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "2", indent="1") }}
 <div tags="m--tic2002">
 {{ embed_topic("tools.md#coursemology", "Admin " + icon_embedding + " **Tools - Coursemology**", "2", indent="1") }}
@@ -59,21 +51,12 @@ The tools in the following panels differ slightly from TIC4001.
 
 * Read the following admin info about the course.
 
-<box type="info" tags="m--tic4002" seamless>
-
-The info in the following panels are as the same as TIC4001.
-</box>
-
 {{ embed_topic(baseUrl+"/admin/courseExpectations.md#main", "Admin " + icon_embedding + " **Course expectations and ==topic levels==**", "1", indent="1", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="1", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="1", type="info") }}
-{% if not (tic4001 or tic4002) %}
 {{ embed_topic(baseUrl+"/admin/weeklySchedule.md#main", "Admin " + icon_embedding + " **Weekly schedule**", "2", indent="1", type="warning") }}
-{% endif %}
-<box type="warning" tags="m--tic4002" seamless>
 
-The info in the following panels differs from TIC4001.
-</box>
+
 {{ embed_topic(baseUrl+"/admin/courseOverview.md#main", "Admin " + icon_embedding + " **Course overview**", "4", indent="1", type="success") }}
 </div>
 {#====================================================================================================================#}

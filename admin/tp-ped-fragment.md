@@ -315,7 +315,7 @@ Use the pain of dealing with this kind of bug reports as an opportunity to devel
 **Note that listing bugs as 'known bugs' in the UG or specifying _unreasonable_ constraints in the UG to make bugs 'out of scope' will not exempt those bugs from the final grading.** That is, PE testers can still earn credit for reporting those bugs and you will still be penalized for them.<br>
  However, a product is allowed to have 'known limitations' %%(e.g., a daily expense tracking application meant for students is unable to handle expenses larger than $999)%% as long as they don't degrade the product's use within the intended scope. They will not be penalized.
 </box>
-<box type="info" tags="m--cs2103 m--tic4002" seamless>
+<box type="info" tags="m--cs2103" seamless>
 
 **Even bugs inherited from AB3 need to be fixed.** As mentioned in a previous week, even bugs you inherited from AB3 need fixing %%(because "we inherited it from the previous dev team" is not a valid excuse to leave a bug unfixed)%%. If you are unsure if something is such a bug that need fixing, please post in the forum.
 </box>

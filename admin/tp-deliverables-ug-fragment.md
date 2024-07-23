@@ -13,7 +13,7 @@
 
 </box>
 
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 * **Follow the [AddressBook-Level3 (AB3) UG]({{ url_ab3_upstream_website }}/UserGuide.html) structure**.
 </div>
@@ -21,7 +21,7 @@
 * The main content you add should be in the `docs/UserGuide.md` file (for ease of tracking by grading scripts).
 * **Should cover all current features**.<br>
   **Ensure those descriptions match the product precisely**, as it will be used by {{ "peer" if has_pe }} testers (==inaccuracies will be considered bugs==).
-* {{ optional }} **You can also cover future features**. Mark those as `Coming soon`.{% if not tic4001 %}
+* {{ optional }} **You can also cover future features**. Mark those as `Coming soon`.
 * **It is not necessary for the UG to contain every nitty-gritty detail** about the product behavior. Some rarely needed information can be omitted from the UG, if the user is expected to know that information already or if the user is kept informed in other ways. %%For example, if a certain invalid input is unlikely to be used anyway, it is fine to not specify it in the UG, as long as the product is able to give an informative error message when that invalid input is used.%%
 * **Beware of overusing screenshots**. While it is good to have screenshots in the UG, note that they are hard to maintain. For example, if a future version changes the GUI slightly, it will require all your screenshots to be updated. Here are some tips:
   * In general, don't use more screenshots than necessary.
@@ -31,4 +31,4 @@
 * Also note the following constraint:
 
   {{ embed_topic("tp-constraints.md#Constraint-File-Size", "Admin " + icon_embedding + " tP Constraints → Constraint-File-Size", "2", indent="1") }}
-{% endif %}
+

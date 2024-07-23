@@ -1095,11 +1095,6 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 <span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs, use cases</span>
 <div id="desc_update_dg_user_stories_etc">
 
-<div tags="m--tic4001" class="indented-level2">
-
-<include src="tp-tasks-fragment.md#divideDocs" />
-</div>
-
 * **Add the following to the DG**, based on your project notes from the previous weeks. No need to update other sections, for now.<br>
   {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope).
 
@@ -1302,25 +1297,10 @@ If a team member fails to do this within a reasonable time, try to help that tea
 
 {{ icon_tip }} **You may <tooltip content="i.e., copy-paste, not clone/fork">re-purpose/adopt</tooltip> code** from any of the below to be used in your tP, provided you give credit to the source (and do not claim such code as yours).
 * The iP code of any of your team members, or of any other person in the course.
-* Code from [AddressBook-Level2](https://se-education.org/addressbook-level2/) or any code used in course activities {{ "e.g., personbook" if not tic4001 }}
+* Code from [AddressBook-Level2](https://se-education.org/addressbook-level2/) or any code used in course activities e.g., personbook
 
 </box>
 
-{% if tic4001 %}<box>
-
-{{ icon_tip }} **Learn how to use Gradle**
-
-* The tP project template given to you is already configured to use Gradle (a build automation and dependency management tool).
-* If you haven't encountered Gradle before, learn more about Gradle from the [_Gradle tutorial_ @SE-EDU/guides](https://se-education.org/guides/tutorials/gradle.html)
-* Some useful Gradle tasks you can try (to familiarize yourself with using Gradle):
-  * `run`: runs the project code
-  * `clean`: deletes files generates from previous runs
-  * `check`: runs the tests
-  * `checkstyleMain`: checks your Java functional code for compliance with _some_ (but not all) rules specified in the coding standard, using a tool called checkstyle
-  * `checkstyleTest`: similar to above, but checks the test code instead
-  * `shadowJar`: creates a JAR file for your project
-* Note that GitHub Actions too is using Gradle to check the code you push to GitHub. Specifically, it runs the `check` task and then it uses the `shadowJar` task to build the JAR file which is then used to do I/O redirection tests (as per the files in your `text-ui-text` folder)
-</box>{% endif %}
 </div>
 
 * Start implementing {{ version_mvp }}, by adding code in small steps, while working in parallel, aiming to produce a VERY simple working version after one week, and a bit more functional version at the end of iteration (i.e., after two weeks).
@@ -1648,7 +1628,7 @@ In addition,
 
 * **Update the Developer Guide** as follows:
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
-    Expected length: 1+ page per person{% if course == "CS2113" or course == "TIC4001" %}
+    Expected length: 1+ page per person{% if cs2113 %}
   * Describing the design at a multiple-levels (e.g., first, describe at _architecture-level_, then describe at _component-level_) is optional. It is also acceptable to have one _Design & Implementation_ section in which you describe the entire thing at the class- and object-level.{% endif %}
   * The description can contain things such as,
     * How the feature is implemented (or is going to be implemented).
@@ -2145,7 +2125,7 @@ Not applicable this semester
 <div id="desc_submit_final_deliverables">
 
 * **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} {{ time_final_submission }}:00** unless stated otherwise. Note that <span class="text-danger">{{ time_final_submission }}:01 is considered late</span>, as per the Canvas deadline mechanism.
-* {{ icon_important_big_red }} **Penalty for late submission** (per file): {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}<br>
+* {{ icon_important_big_red }} **Penalty for late submission** (per file): <br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
   Penalty for delays beyond 24 hours is determined on a case by case basis.
@@ -2257,7 +2237,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ppp", "Admin " + icon_embedding + " tP → Deliverables → Project Portfolio Page", "3", indent="2", status=("peek" if cs2103 else "minimized")) }}
 
 
-* **Product Website**: Update website (home page,<span tags="m--cs2103 m--tic4002"> `Ui.png`,</span> `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.{icon="fas-users"}
+* **Product Website**: Update website (home page,<span tags="m--cs2103"> `Ui.png`,</span> `AboutUs.md` etc.) on GitHub. Ensure the website is auto-published.{icon="fas-users"}
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-website", "Admin " + icon_embedding + " tP → Deliverables → Product Website", "3", indent="2") }}
 </div>

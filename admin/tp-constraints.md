@@ -20,7 +20,7 @@
 
 **Your project should comply with the following constraints.** %%**Reason**: to increase comparability among projects and to maximize applicability of course learning outcomes in the project.%%
 
-<span tags="m--cs2103 m--tic4002">
+<span tags="m--cs2103">
 
 {% call show_constraint("Constraint-Brownfield") -%}
 The final product should be a result of evolving/enhancing/morphing the given code base. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. done in small steps, each producing a working product%%<br/>
@@ -104,7 +104,7 @@ Please ==post in the [forum]({{url_course_org}}/forum/issues) your request to us
 {%- endcall  %}
 
 
-<span tags="m--cs2103 m--tic4002">
+<span tags="m--cs2103">
 
 {% call show_constraint("Constraint-Screen-Resolution") -%}
 The GUI should _work well_ (i.e., should not cause any resolution-related inconveniences to the user) for,
@@ -128,7 +128,7 @@ If you are unable to package everything into a JAR file, package the JAR file an
 
 {% call show_constraint("Constraint-File-Size") -%}
 The file sizes of the deliverables should be reasonable and not exceed the limits given below. <br>
-<div tags="m--cs2113 m--cs2103 m--tic4002">
+<div tags="m--cs2113 m--cs2103">
 
 %%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue. Plus, there is no reason to use space/bandwidth without a proportional benefit.%%</div>
 
@@ -169,7 +169,7 @@ Here are some examples of features that are hard-to-test:
 * Features that require creating user accounts, login, logout etc.
 {%- endcall %}
 
-<span tags="m--cs2113 m--tic4001">
+<span tags="m--cs2113">
 
 {% call show_constraint("Recommendation-No-GUI", recommendation=true) -%}
 Creating a good Java GUI takes a lot of extra effort, which can easily push the tP effort beyond the expected range. In addition, good GUI design is not a learning outcome of this course. Therefore, you are strongly discouraged from creating a GUI application. Choose the GUI path only if you are willing to take the extra workload on top of the course's normal load.
@@ -179,7 +179,7 @@ Creating a good Java GUI takes a lot of extra effort, which can easily push the 
 
 {% call show_constraint("Recommendation-CLI-First", recommendation=true) -%}
 Following from the _Constraint-Typing-Preferred_, if the app is optimized for the target user (graded under the _product design_ criterion), ==a user who can type fast should be able to accomplish most tasks faster via a command line interface (CLI), compared to a hypothetical GUI-only version of the app.== %%For example, adding a new entity via the CLI should be faster than entering the same data through a GUI form.%%<br>
-Therefore, the input to the app needs to be primarily CLI. <span tags="m--cs2103 m--tic4002">The GUI is used primarily to give visual feedback to the user. This does not mean the app need to have a text UI (CLI is not the same as text UI) or it needs to work in a command console -- it simply means the input to the app should be a text command, which can even be entered using a GUI (similar to how AB3 does it).</span><span tags="m--cs2113 m--tic4001">If you do implement a GUI, that GUI should primarily be used to give visual feedback to the user.</span> While we don't prohibit non-CLI inputs (e.g., clicking of a button), note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br>
+Therefore, the input to the app needs to be primarily CLI. <span tags="m--cs2103">The GUI is used primarily to give visual feedback to the user. This does not mean the app need to have a text UI (CLI is not the same as text UI) or it needs to work in a command console -- it simply means the input to the app should be a text command, which can even be entered using a GUI (similar to how AB3 does it).</span><span tags="m--cs2113">If you do implement a GUI, that GUI should primarily be used to give visual feedback to the user.</span> While we don't prohibit non-CLI inputs (e.g., clicking of a button), note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br>
 Also keep in mind:
 * Regular typing is usually faster than using key combinations.
 * <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, it is recommended that you also provide a one-shot equivalent for regular/expert users.<br>

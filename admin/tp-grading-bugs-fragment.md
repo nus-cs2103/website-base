@@ -62,7 +62,7 @@ These are considered _functionality bugs_:<br>
 <include src="tp-grading-bugs-fragment.md#ugBugs" />
 </panel>
 
-<span tags="m--cs2103 m--tic4002" id="architectureDiagramBugs">
+<span tags="m--cs2103" id="architectureDiagramBugs">
 
 :fas-bug: Architecture:
 * Symbols used are not intuitive
@@ -91,7 +91,7 @@ These are considered _functionality bugs_:<br>
 * The three parts do not match with each other
 * Important user stories missing
 </span>
-<span tags="m--cs2103 m--tic4002" id="useCaseBugs">
+<span tags="m--cs2103" id="useCaseBugs">
 
 :fas-bug: Problems in Use Cases. Examples:
 * Important use cases missing %%(a use case is _important_ if it involves a user interaction that is worthy of documenting e.g., it has multiple extensions -- this is not the same as the feature being important)%%

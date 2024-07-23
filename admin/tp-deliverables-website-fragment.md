@@ -4,15 +4,15 @@ When setting up your team repo, you would be configuring **the GitHub Pages feat
 
 * Update to match your product.
 
-<div tags="m--cs2103 m--cs2113 m--tic4002">
+<div tags="m--cs2103 m--cs2113">
 
 #### <span class="badge bg-info">Website</span> <span class="text-info">`Ui.png`</span>
 
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
 * ==Ensure the `Ui.png` matches the current product==
 </div>
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 ==**This deliverable is optional.**==
 
@@ -36,7 +36,7 @@ When setting up your team repo, you would be configuring **the GitHub Pages feat
 * **Take a _clean_ screenshot with a decent resolution.** Some screenshot tools can capture a specified window only. If your tool cannot do that, make sure you **crop away the extraneous parts** captured by the screenshot.
 * **Avoid annotations** (arrows, callouts, explanatory text etc.); it should look like the product is in use for real.
 
-<panel tags="m--cs2103 m--tic4002" type="seamless" header="Examples" expanded >
+<panel tags="m--cs2103" type="seamless" header="Examples" expanded >
 
 <tabs>
 <tab header=":-1: Not Good">
@@ -81,7 +81,7 @@ Reason: screenshot not cropped cleanly (contains extra background details)
 
 #### <span class="badge bg-info">Website</span> <span class="text-info">AboutUs Page</span>
 
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 ==**This deliverable is optional.**==
 </div>

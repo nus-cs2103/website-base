@@ -11,7 +11,7 @@ Given below are the standards and conventions to follow in this course.
 **When something is not covered by the given standard/convention**, you are free to choose which style you want to follow for that, but try to be consistent with the existing code (if any), and ensure everyone in the team follows the same (if it is a team project).
 </box>
 
-<span tags="m--cs2103 m--tic4002">
+<span tags="m--cs2103">
 
 ##### Java
 
@@ -20,7 +20,7 @@ Given below are the standards and conventions to follow in this course.
 
 </span>
 
-<span tags="m--cs2113 m--tic4001 m--tic2002">
+<span tags="m--cs2113 m--tic2002">
 
 ##### Java
 
@@ -28,7 +28,7 @@ Given below are the standards and conventions to follow in this course.
 * {{ optional }} Follow [intermediate and advanced rules](https://se-education.org/guides/conventions/java/index.html).
 
 </span>
-<span tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">
+<span tags="m--cs2103 m--cs2113">
 
 ##### Git
 
@@ -36,14 +36,14 @@ Given below are the standards and conventions to follow in this course.
 * {{ optional }} Follow conventions for the commit message body.
 
 </span>
-<span tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">
+<span tags="m--cs2103 m--cs2113">
 
 ##### Markdown
 
 * {{ optional }}  Follow [Markdown style guide at SE-EDU](https://se-education.org/guides/conventions/markdown.html).
 
 </span>
-<span tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">
+<span tags="m--cs2103 m--cs2113">
 
 ##### Documentation
 

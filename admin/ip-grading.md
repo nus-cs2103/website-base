@@ -35,7 +35,7 @@ That is, you either get full marks, or less than half the marks.
 * **At least some errors are handled using exceptions.**{% if cs2103 %}
 * **At least two methods unit tested well** using JUnit.{% endif %}
 </box>
-<div tags="m--cs2103 m--cs2113 m--tic4001">
+<div tags="m--cs2103 m--cs2113">
 <box>
 
 ##### :fas-trophy: Project Management [`{{ marks_ip_pm }}` marks]{.text-info}
@@ -53,16 +53,6 @@ The product Website and the user guide:
 * **Provides enough guidance** to the user. Covers all non-trivial features.
 * **No major formatting errors** in the published view.
 </box>
-</div>
-<div tags="m--tic4002">
-
-**Project Management [`{{ marks_ip_pm }}` marks]**: To get full marks, you should achieve,
-* Submit _some_ deliverables in at least 3 out of the 5 iP weeks (i.e., week 2 - week 6)
-* Follow other requirements specified (e.g., how to use Git/GitHub for each increment) in at least 4 weeks
-
-**Documentation [`{{ marks_ip_documentation }}` marks]**: To get full marks, you should achieve the following.
-* The user guide: not hard to read, covers all features, no major formatting errors in the published view.
-* The developer guide: Explains the design of the project using appropriate UML diagrams and descriptions.
 </div>
 
 <box type="tip" seamless>

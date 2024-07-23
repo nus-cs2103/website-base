@@ -95,8 +95,8 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 ##### :fas-comment: Forum %%(for longer-running discussions)%%
 * **The preferred channels for course-related communication is the `forum` on GitHub** ==[{{url_forum}}]({{url_forum}})== (not the Canvas forum)
-* When communicating with instructors, use the forum. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the forum is not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof{{ "s" if tic4001 }} can monitor information you receive for accuracy%%.
-<div tags="m--cs2103 m--cs2113 m--tic4002">
+* When communicating with instructors, use the forum. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the forum is not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy%%.
+<div tags="m--cs2103 m--cs2113">
 
 * You are encouraged to help others in the forum (e.g., share tips, help with technical problems). ==We consider such sharing when giving out `A+` grades and when recruiting tutors.==
 </div>
@@ -108,7 +108,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when new issues/comments are posted ![image](https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png)
 </box>
 
-<div tags="m--cs2103 m--cs2113 m--tic4001 m--tic4002">
+<div tags="m--cs2103 m--cs2113">
 
 ##### :fas-users-cog: MS Teams %%({% if cs2103 %}for tutorials, {% endif %}as a backup if Zoom chat fails, for practical exam)%%
 

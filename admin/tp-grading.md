@@ -14,14 +14,14 @@ See the sections below for details of how we assess each aspect.
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-productDesign">
 
-#### <div class="bg-warning text-dark p-1">1. Project Grading: Product Design %%[{{ icon_team if course == "TIC4001" else icon_individual }} {{ marks_tp_design }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">1. Project Grading: Product Design %%[{{ icon_individual }} {{ marks_tp_design }} marks]%%</div>
 
 **Evaluates:**
 * how well your features _fit together_ to form a cohesive product<br>
   (not how many features or how big/novel/interesting/difficult the features are)
 * how well it _matches the target user_
 
-<div tags="m--cs2113 m--cs2103 m--tic4002">
+<div tags="m--cs2113 m--cs2103">
 
 **Evaluated by:**
 * the teaching team (based on product demo and user guide)
@@ -32,7 +32,7 @@ See the sections below for details of how we assess each aspect.
 
 In addition, feature flaws reported in the PE will be considered when grading this aspect.
 
-<box tags="m--cs2113 m--tic4001 m--tic4002" type="tip">
+<box tags="m--cs2113" type="tip">
 
 Note that 'product design' or 'functionality' are not critical learning outcomes of the tP. Therefore, ==the bar you need to reach to get full marks will be quite low==. For example, the `Medium` level in the rubric given in the panel above should be enough to achieve full marks. Similarly, only cases of _excessive_ 'feature flaw' bugs will affect the score.
 </box>
@@ -41,12 +41,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 <include src="tp-grading-bugs-fragment.md#featureFlaws" />
 </box>
 </div>
-<div tags="m--tic4001">
 
-**Evaluated by** the teaching team
-
-**Based on** the product features.
-</div>
 </div>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
@@ -67,7 +62,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 * At least some evidence of these (see [here]({{baseUrl}}/se-book-adapted/chapters/errorHandling.html) for more info)
   * logging
   * exceptions
-  * assertions{% if cs2103 or tic4002 %}
+  * assertions{% if cs2103 %}
   * defensive coding{% endif %}
 
 * No [coding standard]({{url_java_coding_standard}}) violations %%e.g. all boolean variables/methods sounds like booleans%%. Checkstyle can prevent only _some_ coding standard violations; others need to be checked manually.
@@ -86,7 +81,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 **Evaluation method:**
 
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
 * Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.
 
@@ -111,20 +106,13 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 Note: Effort put into non-user-visible implementation work (e.g., major refactorings) can also be counted for this component of grading, but it is upto you to describe that work in your PPP so that evaluators can factor those in.
 
 </div>
-<div tags="m--tic4001">
-
-* This is evaluated by tutors.
-* The score could be further moderated by this question answered by team members.
-
-{{ embed_topic("peerEvaluations-midterm-fragment.md#teamMemberEvaluation-implementation", "Admin " + icon_embedding + " Peer Evaluations → ==Questions used for Evaluating Implementation Effort==", "3", indent="2") }}
-</div>
 
 </div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
-#### <div class="bg-warning text-dark p-1">3. Project Grading: QA %%[{{ icon_both if course == "TIC4001" else icon_individual }} {{ marks_tp_qa }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">3. Project Grading: QA %%[{{ icon_individual }} {{ marks_tp_qa }} marks]%%</div>
 
-<div tags="m--cs2113 m--cs2103 m--tic4002">
+<div tags="m--cs2113 m--cs2103">
 
 <big>**3A. Developer Testing:**</big>
 
@@ -153,20 +141,13 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 <include src="tp-grading-bugs-fragment.md#bugCalculationNotes" />
 </box>
 </div>
-<div tags="m--tic4001">
 
-**Evaluated by** the teaching team.
-
-**Based on**,
-* {{ icon_team }} the robustness of your product
-* {{ icon_individual }} the quality of test cases
-</div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 <div id="criteria-documentation">
 
-#### <div class="bg-warning text-dark p-1">4. Project Grading: Documentation %%[{{ icon_both if tic4001 else icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
+#### <div class="bg-warning text-dark p-1">4. Project Grading: Documentation %%[{{ icon_individual }} {{ marks_tp_documentation }} marks]%%</div>
 
-<div tags="m--cs2113 m--cs2103 m--tic4002">
+<div tags="m--cs2113 m--cs2103">
 
 **Evaluates:** your contribution to project documents
 
@@ -195,12 +176,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 </box>
 </div>
 </div>
-<div tags="m--tic4001">
 
-**Evaluated by** tutors
-
-**Based on** the quality of your UG and DG, adjusted based on your individual contribution to the UG/DG.
-</div>
 </div>
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 

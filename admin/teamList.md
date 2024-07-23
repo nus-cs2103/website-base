@@ -23,11 +23,11 @@ This page will be populated later in the semester ...
 
 ### {{ team_id }} <small>[:fab-github:]({{ team_repo }}) [:fas-home:]({{ team_website }}) [:fas-code-branch:](https://github.com/nus-{{ course | lower }}-{{ semester }}/{{ tp_repo_name }}/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+{{ team_id }}) [:far-comment:]({{ team_repo }}/issues/new)</small> {% if (current_week | int) > 6 %}[<pic eager src="{{ team_repo }}/workflows/Java%20CI/badge.svg"></pic>]({{ team_repo }}/actions){% endif %} {{ "[**" + products[team_id] + "]**" if team_id in products else ""}}
 
-<span tags="m--cs2103 m--tic4002">
+<span tags="m--cs2103">
 
 <img src="{{ team_website }}/images/Ui.png" width="750" onerror="this.src='images/placeholder-large.png';"></img><p/>
 </span>
-<span tags="m--cs2103 m--tic4001 m--tic4002">
+<span tags="m--cs2103">
 **Target user:**
 <div class="indented">
 <blockquote>
@@ -71,11 +71,11 @@ This page will be populated later in the semester ...
 {% set current_team = "" %}
 
 {% if teams | length %}
-{% for tutorial in tutorials %}
-  {% for student in students %}
+{% for tutorial in tutorials%}
+  {% for student in students%}
 
     {% set student_team = student[1] %}
-    {% set student_tutorial = 'TIC4001-F18' if tic4001 else student_team.slice(0, -2) %}
+    {% set student_tutorial = student_team.slice(0, -2) %}
     {% set student_name = student[0] %}
     {% set student_username = student[2] %}
     {% set team_org = semester + '-' + student_team %}
@@ -102,7 +102,7 @@ This page will be populated later in the semester ...
   {% set team_end %} {{ get_team_end() }} {% endset %}
   {% set panel_contents = panel_contents + team_contents + team_end %}
 
-<panel type="seamless" header="## {{ tutorial }}" {{ "expanded" if tic4001 or tic4002 else ""}} no-close>
+<panel type="seamless" header="## {{ tutorial }}" no-close>
 {{ panel_contents }}
 </panel>
 

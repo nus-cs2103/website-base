@@ -46,7 +46,7 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 <tabs active="{{ pe_active_tab }}" add-class="ml-4">
 <tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
-* After you have been notified which team to test (likely to be {{ "during the PE-D session itself" if tic4002 else "in the morning of PE-D day" }}), download the JAR file and the UG PDF file from the team's latest release.
+* After you have been notified which team to test (likely to be in the morning of PE-D day), download the JAR file and the UG PDF file from the team's latest release.
 
 </tab>
 <tab header="PE (at **{{ version_final }}**)">

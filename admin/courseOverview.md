@@ -74,40 +74,6 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 <panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ course }} and {{ course }}T?**" class="embedding" minimized />
 </div>
 <!-- =============================================================================== -->
-<div tags="m--tic4001">
-
-<p class="lead text-secondary"><big>A Software Engineering practicum course focusing on <tooltip content="projects starting from scratch, as opposed to projects starting from an existing code base">greenfield</tooltip> team projects...</big></p>
-
-<pic eager src="{{baseUrl}}/images/growingPlant.png" width="650"></pic>
-
-
-<p class="lead"><md>{{ course }} builds on <tooltip content="Introduction to Software Engineering">TIC2002</tooltip> (and <tooltip content="Software Requirements Analysis and Design">TIC3001</tooltip>) to strengthen your practical SE skills. The focus will be on getting some hands on practice in various tools, techniques, and processes used in a systematic SE project.</md></p>
-
-* **On the theory side, this course relies mostly on the theory covered in TIC2002, but it will also cover some new topics** to help you with the project. As before, this course is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
-
-* **The practice side, you will first ramp up your technical skills by doing a small individual project** (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). This project is similar to the project you did in TIC2002 but will be done faster and at a higher level of rigor.<br>
-  **Then, you will move to a team project** (also greenfield) in which you will build another small <tooltip content="Command Line Interface">CLI</tooltip> app while working as a team.
-
-**At the end of this course** you are expected to be ready for <tooltip content="Software Engineering Practicum II">TIC4002</tooltip> in which you'll tackle a <tooltip content="starting with an existing code base">brownfield</tooltip> team project somewhat larger than the project you did in this course.
-
-</div>
-<!-- =============================================================================== -->
-<div tags="m--tic4002">
-
-<p class="lead text-secondary"><big>A Software Engineering practicum course focusing on <tooltip content="starting with an existing code base">brownfield</tooltip> team projects...</big></p>
-
-<pic eager src="{{baseUrl}}/images/growingPlant.png" width="650"></pic>
-
-
-<p class="lead"><md>{{ course }} builds on <tooltip content="Software Engineering Practicum I">TIC4001</tooltip> to strengthen your practical SE skills. The focus will be on getting some hands on practice in working with an existing code base.</md></p>
-
-* **On the theory side, this course relies mostly on the theory covered in TIC2002 and TIC4001, but it will also cover a small number of new topics** to help you with the project. As before, this course is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
-
-* **The practice side, you will first continue to ramp up your technical skills by improving on the individual project** that you did in TIC4001.<br>
-  **Then, you will move to a team project** in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 KLoC) generic product -- and enhance it into a better product or evolve it into a different product.
-
-</div>
-
 
 </div>
 

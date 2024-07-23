@@ -5,13 +5,6 @@
 
 <p class="lead">Here are some important expectations of the course from you.</p>
 
-<span tags="m--tic4001">
-
-## Prior Knowledge: SE basics
-
-This course requires most of the topics you learned in TIC2002. Not to worry if you are not confident of those topics; we'll provide a reference to relevant TIC2002 to help you brush up those topics.
-
-</span>
 <div tags="m--cs2103">
 
 ## Prior Knowledge: Java and OOP
@@ -46,10 +39,10 @@ As {{ marks_ca }}% of this course is based on CA (see <trigger trigger="click" f
 
 * **Level-1 topics** {{ one_star }} are essential to keep up with the course. We recommend you to ==learn these topics if you want to pass the course== (i.e. up to a **C** grade).
 * **Level-2 topics** {{ two_stars }} can get you up to a **B+**.
-* **Level-3 topics** {{ three_stars }} can get you up to an **A{{ "/A+**" if course == "TIC4001" else "**"}}.
+* **Level-3 topics** {{ three_stars }} can get you up to an **A**.
 * **Level-4 topics** {{ four_stars }} can push you beyond the limits of the course, and help you get into a level above those who merely limit themselves to the topics of the course. They ==are not <popover content="_examinable_ here means _can affect the grade_ during evaluation of various components, not necessarily limited to the final exam (if any)">examinable</popover>==.
 
-<span tags="m--cs2103 m--tic2002 m--tic4001 m--tic4002">
+<span tags="m--cs2103 m--tic2002">
 
 * Topics marked with two {{ icon_prereq }} icons e.g., {{ prereq_one_star }},{{ prereq_two_stars }},{{ prereq_three_stars }} are relevant topics you are expected to have learned in prerequisite courses. They are given for reference, but ==are examinable==. The number of {{ star }} indicates the progression of prerequisite topics, similar to the topic levels system above i.e., level-1 prerequisite topics are the most basic and the most important. level-4 prerequisite topics can be ignored without affecting GPA.
 </span>

@@ -26,8 +26,8 @@ skinparam backgroundcolor transparent
   + Implementation: <b><color:red>{{ marks_tp_implementation }}</color></b> marks
   + Documentation: <b><color:red>{{ marks_tp_documentation }}</color></b> marks
   + QA: <b><color:red>{{ marks_tp_qa }}</color></b> marks
-  + Project Management: <b><color:red>{{ marks_tp_pm }}</color></b> marks{% if not (tic4001 or tic4002)%}
- + Exam: <b><color:red>{{ marks_exam }}</color></b> marks{% endif %}
+  + Project Management: <b><color:red>{{ marks_tp_pm }}</color></b> marks
+ + Exam: <b><color:red>{{ marks_exam }}</color></b> marks
 @endwbs
 </puml>
 
@@ -37,7 +37,7 @@ skinparam backgroundcolor transparent
 <p/>
 {{ embed_topic(baseUrl+"/admin/tp-grading.md#main", "Admin " + icon_embedding + " Team Project (tP) Grading", "3") }}
 <p/>
-{{ embed_topic(baseUrl+"/admin/exams.md#main", "Admin " + icon_embedding + " Exams", "3") if course not in ["TIC4001", "TIC4002"] else "" }}
+{{ embed_topic(baseUrl+"/admin/exams.md#main", "Admin " + icon_embedding + " Exams", "3") }}
 
 </div>
 

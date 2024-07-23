@@ -12,15 +12,15 @@
 
 The high-level learning outcome of the team project (tP):
 
-<box><markdown>{{ icon_outcome }} Can contribute production quality SE work to a small/medium {{ "_brownfield_ " if cs2103 or tic4002 }}software project</markdown></box>
+<box><markdown>{{ icon_outcome }} Can contribute production quality SE work to a small/medium {{ "_brownfield_ " if cs2103 }}software project</markdown></box>
 
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
 Accordingly, the tP is structured to resemble a non-trivial real-life brownfield software project in which you will,
  1. conceptualize and implement enhancements to a given product, and,
  1. have it ready to be continued by future developers
 </div>
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 Accordingly, the tP is structured to resemble an early stage of a small software project in which you will,
  1. conceptualize and implement a product, and,
@@ -35,12 +35,6 @@ The focus of the tP is to learn the following aspects:
 1. scheduling and tracking project progress, meeting delivery deadline
 1. quality assurance
 
-<box type="info" tags="m--tic4002" icon=":fas-not-equal:" seamless>
-
-**TIC4001 vs TIC4002**{.text-info}
-
-TIC4002 focuses on aspect 6 in particular, as TIC4001 already covered 2-5 above (but you should improve on the 2-5 in this course as well).
-</box>
 
 <span id="tp-direction">
 
@@ -48,7 +42,7 @@ TIC4002 focuses on aspect 6 in particular, as TIC4001 already covered 2-5 above 
 
 ## Direction
 
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
 The tP uses a generic application called [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) (from https://se-education.org) as the starting point.
 
@@ -64,7 +58,7 @@ The final product is to be targeted at users who can type fast, and prefer typin
 <p/>
 
 {% set morph_examples %}
-  For example, an app to manage one of these:{% if course == "CS2113" or course == "TIC4001" %}
+  For example, an app to manage one of these:{% if cs2113 %}
     * Contact details{% endif %}
     * Bookmarks of websites
     * Tasks/Schedule
@@ -121,22 +115,17 @@ The final product is to be targeted at users who can type fast, and prefer typin
 Note that **creating a novel/unique/interesting product will NOT earn you extra marks** in this course. While those qualities are important in real world projects, and we do allow you room to go in those directions in this course, they are not the focus of this course {% if cs2103 %}%%(there are other courses such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
 
 {% endif %}
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 * {{ morph_examples | trim }}
 </div>
 </div>
 
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 ==You are strongly discouraged from developing a GUI application== as it can increase the workload unnecessarily.
 {{ embed_topic("tp-constraints.md#Recommendation-No-GUI", "Admin " + icon_embedding + " tP Constraints → Recommendation-No-GUI", "2", indent="1") }}
 </div>
-
-<box type="info" tags="m--tic4002" seamless>
-
-**You are allowed to reuse the project idea/code from TIC4001**, as long as it fits the TIC4002 requirements/constraints.
-</box>
 
 <!-- ==================================================================================================== -->
 
@@ -243,7 +232,7 @@ In fact, here is the grading criterion for the individual project effort:
   1. features fit together to form a cohesive product,
   1. documentation follows a consistent style and presents a cohesive picture to the reader{% if cs2113 %}, and
   1. final project demo presents a cohesive picture to the audience.{% endif %}
-* <span class="badge bg-success">Expectation</span> <span class="text-success">**Maintain product integrity/quality:**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--tic4002 m--cs2113">
+* <span class="badge bg-success">Expectation</span> <span class="text-success">**Maintain product integrity/quality:**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--cs2113">
 * <span class="badge bg-success">Expectation</span> <span class="text-success">**Manage the project:**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done properly.
 </span>
 
@@ -260,7 +249,7 @@ In fact, here is the grading criterion for the individual project effort:
   * User-visible features are preferred, but it is not a strict requirement.:
   * **The enhancement(s) should fit with the rest of the software** (and the target user profile) and should have the consent of the team members. %%You will lose marks if you go 'rogue' and add things that don't fit with the product.%%
 
-<div tags="m--cs2103 m--tic4002" class="indented-level2">
+<div tags="m--cs2103" class="indented-level2">
 
 <panel type="seamless" header="Some example enhancements" >
 
@@ -277,7 +266,7 @@ In fact, here is the grading criterion for the individual project effort:
 * **Tip: Do _all_ the work related to your enhancement yourself.** %%Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%<br>
   In other words, ==we recommend that the work to be divided primarily based on _features/enhancements_== rather than _components_. The latter has the risk of a team member becoming a _single point of failure_ and you becoming _too reliant_ on other team members %%e.g., what if the person assigned to an important component doesn't deliver on time?%%.
 
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
 * **Tip: Divide the components of the product among team members**. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components to fit their features, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
 </div>
@@ -360,11 +349,11 @@ This is a non-exhaustive list; you may define additional roles.
 * _Scheduling and tracking_: In charge of defining, assigning, and tracking project tasks.
 * _[Tool ABC] expert_: %%e.g. IntelliJ expert, Git expert, etc.%% Helps other team member with matters related to the specific tool.
 
-<div tags="m--cs2103 m--tic4002">
+<div tags="m--cs2103">
 
 * _In charge of [Component XYZ]_: %%e.g. In charge of `Model`, `UI`, `Storage`, etc.%% Note that being _in charge_ of a component doesn't mean you are the only one who should be modifying that component. Rather, you are the one who's expected to, know that component best, review changes done to that component in {{ version_penultimate }}-{{ version_final }}, act as the gate keeper of its quality, help others when they face difficulties while modifying that component etc.
 </div>
-<div tags="m--cs2113 m--tic4001">
+<div tags="m--cs2113">
 
 * _In charge of[Area XYZ]_ of the code: %%e.g. In charge of the code that deals with storage, etc.%% If you are in charge of an area, you are expected to know that area well, and review changes done to that code.
 </div>

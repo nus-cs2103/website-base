@@ -75,15 +75,13 @@
 <variable name="cs2103">{{ "Y" if course == "CS2103" }}</variable>
 <variable name="cs2113">{{ "Y" if course == "CS2113" }}</variable>
 <variable name="tic2002">{{ "Y" if course == "TIC2002" }}</variable>
-<variable name="tic4001">{{ "Y" if course == "TIC4001" }}</variable>
-<variable name="tic4002">{{ "Y" if course == "TIC4002" }}</variable>
 <variable name="tee3201">{{ "Y" if course == "TEE3201" }}</variable>
 <variable name="has_t">{{ "Y" if cs2103 or cs2113 }}</variable>
 <variable name="has_pe">{{ "Y" if cs2103 or cs2113 }}</variable>
-<variable name="session_name">{{ "lecture" if tic4001 else "tutorial" }}</variable>
-<variable name="Session_name">{{ "Lecture" if tic4001 else "Tutorial" }}</variable>
+<variable name="session_name">tutorial</variable>
+<variable name="Session_name">Tutorial</variable>
 
-<variable name="tp_repo_name">{{ "tp2" if tic4002 else "tp"}}</variable>
+<variable name="tp_repo_name">tp</variable>
 
 <variable name="w6_days">{{ 14 if recess_after_week == "6" else 7 }}</variable>
 <variable name="w7_days">{{ 14 if recess_after_week == "7" else 7 }}</variable>
@@ -122,7 +120,7 @@
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_course_gihub_io | safe }}/{{ tp_repo_name }}</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
-<variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/{{ "intermediate" if cs2103 or tic4002 else "basic"}}.html</variable>
+<variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/{{ "intermediate" if cs2103 else "basic"}}.html</variable>
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
 <variable name="url_ip_dashboard">{{ url_course_gihub_io | safe }}/ip-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=java~md~fxml~sh~bat~gradle~txt</variable>
 <variable name="url_ip_progress_dashboard">{{ url_dashboards }}/contents/ip-progress.html</variable>

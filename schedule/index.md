@@ -34,14 +34,6 @@ pageNav: 1
     topics: {name: "SE Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
     admin: {name: "Tasks", file: "admin", icon: icon_tab_tasks, pagenav: 4}
   } %}
-{% elseif (tic4001 or tic4002) %}
-  {% set categories = {
-    notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 4},
-    tutorial: {name: "Lecture", file: "tutorial", icon: icon_tab_tutorial, pagenav: 4},
-    topics: {name: "Topics", file: "topics", icon: icon_tab_topics, pagenav: 3},
-    admin: {name: "Admin", file: "admin", icon: icon_tab_admin_info, pagenav: 4},
-    project: {name: "Project", file: "project", icon: icon_tab_project, pagenav: 4}
-  } %}
 {% else %}
   {% set categories = {
     notices: {name: "Summary", file: "index", icon: icon_tab_summary, pagenav: 4},
@@ -231,7 +223,7 @@ Topics allocated to the week will appear in this tab.
 {% if week_num == "1" %}
 <box type="info" dismissible>
 
-Information relevant to the week's {{ "lecture" if tic4001 or tic4002 else "tutorial" }} will appear in this tab.
+Information relevant to the week's tutorial will appear in this tab.
 </box>
 {% endif %}
 <include src="tutorial-{{ course | lower }}-fragment.md" optional />

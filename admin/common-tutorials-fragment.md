@@ -67,10 +67,6 @@ Tutorial | Reviewer | First PR to review | Backup PR to review
 </panel>
 <p/>
 
-<div tags="m--tic4001">
-
-{{ icon_info }} If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the _Backup PR to review_ provided in the allocation table. Failing both, pick a PR at random to review.
-</div>
 <div tags="m--cs2113 m--cs2103">
 
 {{ icon_info }} If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the _Backup PR to review_ provided in the allocation table. Failing both, review another PR allocated to another student in your own tutorial !!but not in your team!!.
