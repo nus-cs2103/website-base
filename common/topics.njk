@@ -14,7 +14,7 @@
 
 {% macro get_start_index_untrimmed(filter_property, filter_value, entries) -%}
 {% set start = "-1" %}
-{% for entry in entries %}
+{% for entry in entries %}
 {% if start == "-1" and entry[filter_property] == filter_value %}
   {% set start = loop.index0 %}
   {{ start }}
@@ -28,7 +28,7 @@
 
 {% macro get_end_index_untrimmed(filter_property, filter_value, start, entries) -%}
 {% set end = "-1" %}
-{% for entry in entries %}
+{% for entry in entries %}
 {% if loop.index0 < start %}
   {# start index not reached, no action required #}
 {% elseif not entry[filter_property] %}
@@ -86,9 +86,9 @@
 {% else %}
   {% set priority = unit.priority %}
 {% endif %}
-{% set panel_decorations = "no-switch" if is_flat else "" %}
-{% set panel_expandable = "false" if is_flat else "true" %}
-{% set expanded = "expanded" if priority != "4" else "" %}
+{% set panel_decorations = "no-switch" if is_flat else "" %}
+{% set panel_expandable = "false" if is_flat else "true" %}
+{% set expanded = "expanded" if priority != "4" else "" %}
 {% if not is_toc %}
 <span id="{{ make_anchor(id_prefix) }}" />
 

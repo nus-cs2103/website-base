@@ -1307,7 +1307,7 @@
               {name: "why", heading: "Why", priority: "2"},
               {name: "combinationStrategies", heading: "Test Input Combination Strategies", priority: "2"},
               {name: "heuristicValid", heading: "Heuristic: Each Valid Input at Least Once in a Positive Test Case", priority: "3"},
-              {name: "heuristicInvalid", heading: "Heuristic: No More Than One Invalid Input In A Test Case", priority: "3"},
+              {name: "heuristicInvalid", heading: "Heuristic: Test Invalid Inputs Individually Before Combining Them", priority: "3"},
               {name: "mix", heading: "Mix", priority: "3"}
             ]
           }
