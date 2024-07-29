@@ -287,14 +287,19 @@ Note that if `A-Jar` increment does not require any code changes, you may tag th
 
 {{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=1) }}
 
+<box type="tip" seamless>
+
+When you are doing the next step, you can run into merge conflicts. In some cases, GitHub will give you a way to resolve those conflicts using the Web interface. While this approach may be good enough for simple merge conflicts, **de-conflicting locally in the standard way is safer** (e.g., you can run tests to confirm the updated code is correct) and more standard (it's a standard Git feature that you can use even when you are not using GitHub for your project).
+</box>
+
 3. Now, merge one of the PRs and update the remaining PRs accordingly, as given below:
-   1. Merge one of the PRs on GitHub. Remember to choose the `Create merge commit` option when merging.
-1. The above step will cause the `master` branch of your local repo to fall behind that of your fork (<popover content="because your remote `master` branch (i.e., `origin/master`) now has a merge commit that the local `master`">why</popover>). Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the updated `master` branch from your fork e.g.,
+   * Merge one of the PRs on GitHub. Remember to choose the `Create merge commit` option when merging.{ texts="['3.1)','3.2)','3.3)','3.4)','3.5)']" }
+   * The above step will cause the `master` branch of your local repo to fall behind that of your fork (<popover content="because your remote `master` branch (i.e., `origin/master`) now has a merge commit that the local `master` does not have yet">why</popover>). Therefore, you need to sync the local `master` with the remote `master` branch. One way to do that is to switch to the local `master` branch and then pull the updated `master` branch from your fork e.g.,
       ```{.no-line-numbers}
       $ git checkout master
       $ git pull origin master
       ```
-   * Note how the remaining <tooltip content="i.e., branches not merged to the `master` branch yet">un-merged branches</tooltip> are no longer in sync with the latest `master`. To rectify, merge the `master` branch to each of them. Resolve merge conflicts, if any.{ texts="['4.1)','4.2)','4.3)']" }
+   * Note how the remaining <tooltip content="i.e., branches not merged to the `master` branch yet">un-merged branches</tooltip> are no longer in sync with the latest `master`. To rectify, merge the `master` branch on to each of them. Resolve merge conflicts, if any.
    * Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
    * As before, tag the merge commit in the master branch and push the tag to your fork.
 1. Merge the remaining PRs using a procedure similar to the above.

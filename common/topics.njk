@@ -3,12 +3,20 @@
 {% from "_course-" + course + "/weeklyTextbookTopics-fragment.md" import weeks_with_no_topics with context %}
 
 
-{% macro panopto(id, desc="", questions="")%}
+{% macro panopto(id, desc="", questions="", start_week="-1")%}
+{% if (start_week | int) > current_week %}
+<div class="indented">
+
+<span class="badge rounded-pill bg-secondary"><big>{{ icon_video }} Video</big></span> %%Video will be released closer to week {{ start_week }} ...%%
+<p/>
+</div>
+{% else %}
 <panel type="seamless">
   <div slot="header"><span class="badge rounded-pill bg-danger"><big>{{ icon_video }} Video</big></span>{% if questions %} <span class="badge rounded-pill bg-warning text-dark"><big>Q+</big></span>{% endif %}<md> {{ desc }}</md></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id={{ id }}&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 684px; height: 513px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 </panel>
 <p/>
+{% endif %}
 {% endmacro %}
 
 
