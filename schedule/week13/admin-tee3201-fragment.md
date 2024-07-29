@@ -1,5 +1,5 @@
 {% from "common/macros.njk" import embed_topic, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
-{% from "common/admin.njk" import faqs, policies, show_admin_summary, topics with context %}
+{% from "common/admin.njk" import policies, show_admin_summary, topics with context %}
 
 {% call show_admin_summary() %}
 1. Submit the project

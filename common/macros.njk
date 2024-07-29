@@ -66,21 +66,23 @@
 {% endmacro %}
 
 
-{% macro show_admin_faq(faqs, id_of_faq_to_show, is_flat=false) %}
-{% for faq in faqs %}
-{% if faq.id == id_of_faq_to_show %}
-{{ show_admin_section_to_read("Apdx C (FAQs) → " + faq.title, faq.priority, baseUrl + "/admin/appendixC-faq.md/#" + faq.id, is_flat ) }}
-{% endif %}
-{% endfor %}
-{% endmacro %}
-
-
 {% macro show_admin_policy(policies, id_of_policy_to_show, is_flat=false) %}
 {% for policy in policies %}
 {% if policy.id == id_of_policy_to_show %}
 {{ show_admin_section_to_read("Apdx B (Policies) → " + policy.title, policy.priority, baseUrl + "/admin/appendixB-policies.md/#" + policy.id, is_flat ) }}
 {% endif %}
 {% endfor %}
+{% endmacro %}
+
+{% macro show_faq2(faq_id, is_main_faq="") %}
+<panel type="seamless" {{ "expanded" if is_main_faq else "" }}>
+<span slot="header" class="card-title"><markdown>{{ "####" if is_main_faq else "" }} {{ faq }} <include src="{{ baseUrl }}/admin/faq-fragment.md#faq-{{ faq_id }}-Q" inline /></markdown></span>
+<box type="secondary" seamless>
+
+<include src="{{ baseUrl }}/admin/faq-fragment.md#faq-{{ faq_id }}-A" />
+</box>
+</panel>
+<p/>
 {% endmacro %}
 
 
@@ -94,7 +96,7 @@
   {% set div_title = section.div_title if section.div_title else "" %}
   {{ show_admin_topic(topics, section.topic_id, div_to_show, div_title, is_flat) }}
 {% elif section.faq_id %}
-  {{ show_admin_faq(faqs, section.faq_id, is_flat) }}
+  {{ show_faq2(section.faq_id) }}
 {% elif section.policy_id %}
   {{ show_admin_policy(policies, section.policy_id, is_flat) }}
 {% endif %}

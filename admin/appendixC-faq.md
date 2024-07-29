@@ -1,25 +1,25 @@
-{% from "common/macros.njk" import  show_stars with context %}
-
-{% from "common/admin.njk" import show_admin_page, faqs with context %}
+{% from "common/macros.njk" import  show_stars, show_faq2 with context %}
+{% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("appendixC-faq") %}
 <div id="main">
 
-{% for faq in faqs %}
-* [{{ faq.title }}](#{{ faq.id }}) {{show_stars(faq.priority) }}
-{% endfor %}
+## FAQs on: General
 
-{% for faq in faqs %}
-<div id="{{ faq.id }}">
+{{ show_faq2("whereIsEverything", "y") }}
+{{ show_faq2("tVsNonT", "y") if cs2103 }}
+{{ show_faq2("aPlus", "y") }}
+{{ show_faq2("beanCounting", "y") }}
+{{ show_faq2("separateWebsite", "y") }}
+{{ show_faq2("slideFormat", "y")  if cs2103 }}
+{{ show_faq2("narrowProjectScope", "y") }}
+{{ show_faq2("favoriteTool", "y") }}
+{{ show_faq2("manySubmissions", "y") }}
+{{ show_faq2("cs2101Difference", "y") if cs2103  }}
 
-### {{ faq.title }} <small><small>{{show_stars(faq.priority) }}</small></small>
+## FAQs on: Participation
 
-<div class="indented">
-<include src="faq-fragment.md#{{ faq.id }}" />
-</div>
-
-</div>
-{% endfor %}
+{{ show_faq2("whenCanWeSeeQuizAnswers", "y") }}
 
 </div>
 

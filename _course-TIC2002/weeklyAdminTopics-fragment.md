@@ -1,4 +1,4 @@
-{% set admin_topics = [
+{% set admin_topics = [
 
 ]%}
 

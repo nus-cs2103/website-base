@@ -60,13 +60,12 @@
 
 {% set weekly_admin_topics = {
 week1: [
-  {faq_id: "admin-faq-whereIsEverything"},
+  {faq_id: "whereIsEverything"},
   {topic_id: "tp-teams"},
   {topic_id: "textbooks"},
   {topic_id: "gradeBreakdown"},
-  {faq_id: "admin-faq-tVsNonT"},
-  {faq_id: "admin-faq-highWorkload"},
-  {faq_id: "admin-faq-aPlus"}],
+  {faq_id: "tVsNonT"},
+  {faq_id: "aPlus"}],
 week2: [
   {policy_id: "policy-plagiarism"},
   {policy_id: "policy-reuse"},
@@ -74,10 +73,8 @@ week2: [
   {policy_id: "policy-followingInstructions"},
   {policy_id: "policy-techHelp"},
   {topic_id: "appendixA-principles"},
-  {faq_id: "admin-faq-separateWebsite"},
-  {faq_id: "admin-faq-slideFormat"},
-  {faq_id: "admin-faq-selfStudy"},
-  {faq_id: "admin-faq-noLaptop"}],
+  {faq_id: "separateWebsite"},
+  {faq_id: "slideFormat"}],
 week3: [
   {topic_id: "tutorials"},
   {topic_id: "peerEvaluations"},
@@ -85,18 +82,18 @@ week3: [
   {topic_id: "tp-supervision"},
   {policy_id: "policy-teamSize"}],
 week4: [
-  {faq_id: "admin-faq-narrowScope"},
-  {faq_id: "admin-faq-favoriteTool"},
+  {faq_id: "narrowProjectScope"},
+  {faq_id: "favoriteTool"},
   {policy_id: "policy-publishingSubmissions"}],
 week5: [
   {topic_id: "tp-grading"},
   {policy_id: "policy-workDistribution"},
   {policy_id: "policy-responseTime"},
-  {faq_id: "admin-faq-beanCounting"}],
+  {faq_id: "beanCounting"}],
 week6: [
   {topic_id: "appendixF-teamworkIssues"},
-  {faq_id: "admin-faq-manySubmissions"},
-  {faq_id: "admin-faq-cs2101Differences"}],
+  {faq_id: "manySubmissions"},
+  {faq_id: "cs2101Difference"}],
 week7: [],
 week8: [],
 week9: [],
