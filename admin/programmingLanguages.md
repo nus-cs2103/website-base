@@ -42,6 +42,8 @@ We require you to use **Java 17** (the [Oracle version](https://www.oracle.com/j
 
 Mac users should use the specific Azul JDK 17 distribution specified in [this guide](https://se-education.org/guides/tutorials/javaInstallationMac.html).
 
+To reiterate, #r#it is not enough that you have Java 17##, it needs to be ==the precise version specified== in the page linked above.
+
 <!--
 **The problem:** You might not be able to run the JAR files produced by some of the classmates due to various incompatibility issues between your environment and theirs, although you can still get your own JAR files to work in your computer.
 

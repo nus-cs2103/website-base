@@ -98,9 +98,10 @@ _Rubber duck debugging_ is an informal term used in software engineering to ref
 <span id="questions-for-tutros">
 
 * **Raise your question during a tutorial**. Some questions can be discussed with the tutor and tutorial-mates.<br>
-  What kind of questions are suitable to discuss with the tutor? Consider these two questions you might want to ask a tutor:{{ positive_icon }}
+  What kind of questions are suitable to discuss with the tutor? Consider these questions you might want to ask a tutor:{{ positive_icon }}
   * {{ good }} *This is how I understood coupling. Is that correct?* - Such questions are welcome. %%**Reason**: This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.%%
-  * {{ bad }} *What is coupling?* - Such questions are discouraged. %%**Reason**: This question implies you haven’t done what you could to learn the topic in concern.%%
+  * {{ bad }} *What is coupling?* - Such questions are discouraged. %%**Reason**: This question implies you haven’t done what you could to learn the topic in concern.%%{% if cs2103 %}
+  * {{ bad }} *How will this be graded?* | *What happens if this submission is late?* %%**Reason**: Tutors are not allowed to answer admin questions.%%{% endif %}
 
 </span>
 

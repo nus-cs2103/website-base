@@ -93,7 +93,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 ## Tools: for communication
 
-##### :fas-comment: Forum %%(for longer-running discussions)%%
+##### :fas-comment: Forum %%(for discussions, asking admin questions, seeking help, etc.)%%
 * **The preferred channels for course-related communication is the `forum` on GitHub** ==[{{url_forum}}]({{url_forum}})== (not the Canvas forum)
 * When communicating with instructors, use the forum. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the forum is not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy%%.
 <div tags="m--cs2103 m--cs2113">
