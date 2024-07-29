@@ -3,7 +3,7 @@
 
 {% call topic_preamble("Design: Models", reuse=false) %}
 
-In the tP, you'll be thrown into a codebase of about 6K <tooltip content="Lines of Code">LoC</tooltip>. It would be hard to understand the design simply by reading the code. That's why the code base comes with a [Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) containing some design models i.e., the diagrams. That means, you should be able to interpret those models by the time you start the tP in a few weeks. :fearful:
+In the tP, you'll be thrown into a codebase of about 6K <tooltip content="Lines of Code">LoC</tooltip>. It would be hard to understand the design simply by reading the code. That's why the codebase comes with a [Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html) containing some design models i.e., the diagrams. That means, you should be able to interpret those models by the time you start the tP in a few weeks. :fearful:
 
 Let's start getting ready for that today. First, let's go through a high-level explanation of _models_.
 

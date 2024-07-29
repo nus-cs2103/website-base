@@ -85,7 +85,7 @@ The lecture is shorter (about 1 hour), and is used for a 'briefing' only, consis
 
 ## Team project (tP){.text-info}
 
-**This is a <tooltip content="starting with a legacy code base">brownfield</tooltip> iterative project.** Students start with an existing Java desktop application [Address Book application](https://se-education.org/addressbook-level3/) and evolve/morph it into another product.
+**This is a <tooltip content="starting with a legacy codebase">brownfield</tooltip> iterative project.** Students start with an existing Java desktop application [Address Book application](https://se-education.org/addressbook-level3/) and evolve/morph it into another product.
 
 In the first half of the semester, students lay the groundwork for the team project, while doing the individual project:<br>
 <pic eager src="tpGanttChart-preIterations.png" width="800"></pic>
@@ -316,7 +316,7 @@ This course makes numerous 'unpopular' choices, some of which are given below:
 1. **Our approach: Many deliverables, every week.** This [Summary of the Course Timeline](../schedule/timeline.html) page shows how many project and admin tasks are due in each week. In addition, most weeks have optional in-lecture and in-video quizzes, not forgetting the tutorial tasks ([example](../schedule/week7/tutorial.html)).<br>
    Rationale: To ensure students learn and apply the topics in a timely manner, rather than try to do everything near the end of the semester.
 
-1. **Our approach: Require students to use an existing code base** for the team project, and a pre-selected tool stack, and follow a prescribed workflow in the project (e.g., follow a [forking workflow](../book/revisionControl/forkingWorkflow/)).<br>
+1. **Our approach: Require students to use an existing codebase** for the team project, and a pre-selected tool stack, and follow a prescribed workflow in the project (e.g., follow a [forking workflow](../book/revisionControl/forkingWorkflow/)).<br>
    Rationale: To train students to work with legacy code, and follow workflows used in the industry.<br>
    Students prefer: Full freedom to build whatever product they want, using their preferred tool stack, using simpler worflows (e.g., everyone commits to  the master branch).
 

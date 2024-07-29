@@ -274,7 +274,7 @@ Last week,
 This week, we focus on two fronts:
 
 * **The first front (which aligns with PS2) moves towards defining a precise target for the first version** (i.e., MVP): task {{ thumb_small("1") }} translates the selected user stories into a _feature list_ and task {{ thumb_small("2") }} expands that feature lists to a more precise _feature specification_.
-* **On the other front, we prepare to start coding work**. Tasks {{ thumb_small("3") }} (_Set up the project repo_), and {{ thumb_small("4") }} (_Get familiar with the code base_) help with that.
+* **On the other front, we prepare to start coding work**. Tasks {{ thumb_small("3") }} (_Set up the project repo_), and {{ thumb_small("4") }} (_Get familiar with the codebase_) help with that.
 
 
 ++**Things to note:**++{.text-info}
@@ -367,9 +367,9 @@ The _breadth-first iterative_ approach requires each intermediate version to be 
 
 <panel type="seamless" header="More on this ...">
 
-1. **It is important to realize that working in larger code bases is a much slower affair.** The number of lines an engineer can write per day is often limited to a double-digit value, [even going as low as 20](https://medium.com/modern-stack/how-much-computer-code-has-been-written-c8c03100f459#:~:text=As%20we%20can%20see%2C%20a,in%20a%20given%20working%20year.)).
-1. **The speed varies from project to project**, and naturally, is slowest at the start when you are very new to the project. Even so if you are new to working with legacy code. On the positive side, the iterative approach we use gives us room to adjust targets based on the actual speed you can deliver in the tP code base.
-1. **The slowness of progress can be partly due to design flaws** of the current code base (i.e., the design makes code changes harder than necessary). Keep a lookout for such cases, and if you can think of design tweaks that makes the code easier to change, go ahead and try them out. Such work can earn credit too.
+1. **It is important to realize that working in larger codebases is a much slower affair.** The number of lines an engineer can write per day is often limited to a double-digit value, [even going as low as 20](https://medium.com/modern-stack/how-much-computer-code-has-been-written-c8c03100f459#:~:text=As%20we%20can%20see%2C%20a,in%20a%20given%20working%20year.)).
+1. **The speed varies from project to project**, and naturally, is slowest at the start when you are very new to the project. Even so if you are new to working with legacy code. On the positive side, the iterative approach we use gives us room to adjust targets based on the actual speed you can deliver in the tP codebase.
+1. **The slowness of progress can be partly due to design flaws** of the current codebase (i.e., the design makes code changes harder than necessary). Keep a lookout for such cases, and if you can think of design tweaks that makes the code easier to change, go ahead and try them out. Such work can earn credit too.
 
 Finally, we don't expect each of you to put into the tP more _effort_ than you put into the iP (i.e., as the progress in the tP is expected to be slower, it is not necessarily write as much code or implement as many features as you did in the iP). Keep in mind the tP had been done by thousands of students before, and we are well aware that the amount of new features that you can deliver in the tP is not much. So, the slow progress will not affect your tP grade, as that is already factored into the grading. **What is needed is for you to recalibrate your own tP expectations/plans to match the reality of the tP environment** -- such recalibration is a learning outcome of the course too.
 </panel>
@@ -844,11 +844,11 @@ That's fine. It means you can get to MVP with very little effort, which is a goo
    {{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="1") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the code base</span>
+<span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the codebase</span>
 <div id="desc_get_familiar_with_the_code_base">
 
 {% call show_faq("Is this a team task or an individual task?") %}
-It's an individual task (note the icon {{ icon_individual }} above), to be done by each member, as we want _every_ member to be familiar with the code base.
+It's an individual task (note the icon {{ icon_individual }} above), to be done by each member, as we want _every_ member to be familiar with the codebase.
 {% endcall %}
 
 <box type="info" icon=":fas-clock:" seamless>
@@ -858,13 +858,13 @@ It's an individual task (note the icon {{ icon_individual }} above), to be done 
 
 * Do the following tutorials to get familiar with the codebase
   * [Tutorial 1 - Tracing a Command Execution Path](https://se-education.org/guides/tutorials/ab3TracingCode.html)
-    * We recommend that you put in a sincere effort into this tutorial because tracing through the code of an unfamiliar code base is an important skill that you will not be able to learn/practice it later in the project as the code will no longer be 'unfamiliar' to you later.
+    * We recommend that you put in a sincere effort into this tutorial because tracing through the code of an unfamiliar codebase is an important skill that you will not be able to learn/practice it later in the project as the code will no longer be 'unfamiliar' to you later.
     * Submission [optional]: Post an issue in your team's repo with the title `Tutorial: tracing code`. In the description, add a 2-3 screenshots you took while at various points of the tutorial. You may close the issue soon after.
   * **[Tutorial 2 - Adding a new Command](https://se-education.org/guides/tutorials/ab3AddRemark.html)**
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
     * **Submission:** Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
       * FAQ: Do we have to write/update test cases too?<br>
-        A: Not a strict requirement, but given the purpose of this tutorial is to learn the code base, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise, you can run into difficulties when you are writing test cases for your own features later.
+        A: Not a strict requirement, but given the purpose of this tutorial is to learn the codebase, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise, you can run into difficulties when you are writing test cases for your own features later.
   * [Tutorial 3 - Removing a field from an entity](https://se-education.org/guides/tutorials/ab3RemovingFields.html)
     * This tutorial is optional to do, but **at least give it a quick read**.
     * Submission: not required.

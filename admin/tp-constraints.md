@@ -23,7 +23,7 @@
 <span tags="m--cs2103">
 
 {% call show_constraint("Constraint-Brownfield") -%}
-The final product should be a result of evolving/enhancing/morphing the given code base. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. done in small steps, each producing a working product%%<br/>
+The final product should be a result of evolving/enhancing/morphing the given codebase. However, you are allowed to replace all existing code with new code, as long as it is done incrementally. %%e.g. done in small steps, each producing a working product%%<br/>
 %%**Reason:** To simulate a brownfield project.%%
 {%- endcall  %}
 </span>
@@ -42,7 +42,7 @@ Not allowed: The data file created by one user being accessed by another user du
 
 {% call show_constraint("Constraint-Incremental") -%}
 The product needs to be developed in a breadth-first incremental manner over the project duration. While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected. For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester.<br>
-%%**Reasons**: 1. To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.%%
+%%**Reasons**: 1. To simulate a real project where you have to work on a codebase over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.%%
 {%- endcall  %}
 
 {% call show_constraint("Constraint-Human-Editable-File") -%}

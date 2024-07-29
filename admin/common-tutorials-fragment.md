@@ -174,7 +174,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 <div id="update-code-using-forking-workflow">
 <div class="indented">
 
-**In this activity you will be using the forking workflow to do some simple updates to the code base** while working in parallel. The objective is to ensure you know how to follow the expected working in the tP. The steps are given below:
+**In this activity you will be using the forking workflow to do some simple updates to the codebase** while working in parallel. The objective is to ensure you know how to follow the expected working in the tP. The steps are given below:
 
 **First, ensure that you know how the _forking workflow_ works.**
 

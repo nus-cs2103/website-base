@@ -196,7 +196,7 @@ As you know, adding comments to the code is a good practice. Let's learn about a
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Access Modifiers") }}">
 
-As the size of your Java code base grows, every class being able to access every member of every other class can be problematic. Hence, there should be a way to control the access to our Java classes and their members. The solution is given in the topic below.
+As the size of your Java codebase grows, every class being able to access every member of every other class can be problematic. Hence, there should be a way to control the access to our Java classes and their members. The solution is given in the topic below.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Generics") }}">

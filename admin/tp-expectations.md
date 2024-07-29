@@ -109,7 +109,7 @@ The final product is to be targeted at users who can type fast, and prefer typin
 <div class="indented-level1">
 
 ~~{{ pros }} more flexibility in the project direction.<br><br>
-{{ cons }} more changes to the existing code at the start while you are still not very familiar with the code base, morphing is less common in real projects (compared to direction 1).~~
+{{ cons }} more changes to the existing code at the start while you are still not very familiar with the codebase, morphing is less common in real projects (compared to direction 1).~~
 </div>
 
 Note that **creating a novel/unique/interesting product will NOT earn you extra marks** in this course. While those qualities are important in real world projects, and we do allow you room to go in those directions in this course, they are not the focus of this course {% if cs2103 %}%%(there are other courses such as CS3216, CS3217 that focus on those aspects)%%. Focus your energy on creating a _solid product at a high quality level_, which actually take a lot more energy than you might realize at first. Go for novelty/uniqueness/interesting etc. only if you have energy to spare and can do so without compromising the quality. For example, a bland feature/product implemented well will score more marks than a novel product that is buggy, even if the novel features were harder to implement.
