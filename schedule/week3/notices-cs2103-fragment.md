@@ -23,7 +23,7 @@ Due to the Good Friday holiday, the [team project practical exam](../../admin/tp
 
 <panel type="info" header="##### ==[MUST-WATCH]== One More Course Briefing Segment (9 minutes)" expanded >
 
-**One more course briefing segment to watch this week**: The bulk of the course briefing was released as pre-recorded videos last week. There are few more remaining parts which will be released closer to events they cover %%(e.g., the part covering the exam will be released closer to the exam)%%. This week, we cover one more course briefing segment, given below:
+**One more course briefing segment to watch this week**: The bulk of the course briefing was released as pre-recorded videos last two weeks. There are few more remaining parts which will be released closer to events they cover %%(e.g., the part covering the exam will be released closer to the exam)%%. This week, we have one more course briefing segment, given below:
 
 <include src="../../admin/courseBriefings.md#course-briefing-w3" />
 

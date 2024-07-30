@@ -73,9 +73,10 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 
 <box dismissible>
 
-{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and span a longer period**, rather than to be done as a short burst.
+{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks, although it is fine to stay ahead of the schedule a bit (but no more than a week ahead).<br>
+Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and span a longer period**, rather than to be done as a short burst.
 
-Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks. That is, clumping all the iP work into a short burst of work will not earn you full marks.
+Reminder: As per iP grading criteria, _some_ increments need to be done in each week. Clumping all the iP work into a short burst of work will not earn you full marks.
 </box>
 </div>
 <div id="follow-instructions">
@@ -479,6 +480,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 <span id="heading_set_up_project">Set up the project in your computer</span>
 <div id="desc_set_up_project">
 
+<div class="indented">
 <box>
 
 Read through this week's topics before starting the project.<br>
@@ -486,6 +488,7 @@ Read through this week's topics before starting the project.<br>
 
 {{ embed_topic(baseUrl+"/admin/appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: Getting Help", "2") }}
 </box>
+</div>
 
 1. **Fork** [{{ url_course_org }}/{{ ip_repo_name }}]({{ url_course_org }}/{{ ip_repo_name }}), while noting the points below:<br>
    <box type="important" seamless><md>==**Keep the fork name as `{{ ip_repo_name }}`**== or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the course.</md></box>

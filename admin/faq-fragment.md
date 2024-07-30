@@ -44,8 +44,6 @@ Related article: [This Is The Personality Trait That Most Often Predicts Success
 <div id="faq-separateWebsite-A">
 
 We have a separate website because some of the course information does not fit into the structure imposed by Canvas.
-
-On a related note, keep in mind that 'hunting and gathering' of relevant information is one of the skills you need to survive 'in the wild'. Do not always expect all relevant materials to appear 'magically' in some kind of 'work bin'.
 </div>
 <!-- =============================================================== -->
 <div id="faq-slideFormat-Q">Why slides are not detailed?</div>
@@ -53,7 +51,7 @@ On a related note, keep in mind that 'hunting and gathering' of relevant informa
 
 <pic eager src="{{baseUrl}}/admin/images/slides not detailed enough.png" width="733" height="221"/>
 
-Slides are not meant to be documents to print and study for exams. Their purpose is to support the {{ lecture_name_short }} delivery and keep you engaged during the {{ lecture_name_short }}. That's why our slides are less detailed and more visual.
+Slides are not meant to be documents to print and study for exams (the textbook is the resource more suitable for exam prep). Their purpose is to support the {{ lecture_name_short }} delivery and keep you engaged during the {{ lecture_name_short }}. That's why our slides are less detailed and more visual.
 </div>
 <!-- =============================================================== -->
 <div id="faq-narrowProjectScope-Q">Why very narrow project scope?</div>

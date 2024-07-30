@@ -16,8 +16,8 @@
 
 <!-- ==================================================== -->
 
-<panel type="info" header="#### Week 2 Course Briefings" expanded>
-<div id="course-briefing-w2">
+<panel type="info" header="#### Week 1 Course Briefings" expanded>
+<div id="course-briefing-w1">
 
 ****1. Welcome to the Course****:{.text-info}
 {{ panopto(desc="1 min", "5503e0be-24bb-4ba2-807f-b0fb01057eb9", start_week="0") }}
@@ -25,26 +25,41 @@
 <span class="text-info">****2. Course Goals****</span>: How the goals of this course shape the way it is run (possibly different from other courses), and how it should be approached by students.
 {{ panopto(desc="9 mins", "a4d6f92e-b12f-4046-853b-b0fb01058143", start_week="0") }}
 
+
+<span class="text-info">****3. Week 1 Overview****</span>: As this is the first weekly briefing, **it also covers some general points relevant to all future weeks**.
+
+{{ panopto(desc="8 mins", "f8088218-b6d5-4cc5-a933-b0fb01057ec2", start_week="0") }}
+</div>
+</panel>
+
+<!-- ==================================================== -->
+
+<panel type="info" header="#### Week 2 Course Briefings" expanded>
+<div id="course-briefing-w2">
+
+This week's briefing videos start with a detour.
+
 <div class="indented-level2">
 
 ---
 
-<span class="text-info">****2.a. Detour: SDLC Basics****</span>: At this point, watch the following video covering the [week 2 topic 'SDLC Process Models Basics'](topics.html#W2-2), as the concepts covered in there are referenced in the rest of the course briefing.
+<span class="text-info">****0. Detour: SDLC Basics****</span>: Watch the following video covering the [week 2 topic 'SDLC Process Models Basics'](topics.html#W2-2), as the concepts covered in there are referenced in the rest of the course briefing.
 {{ panopto(desc="6 mins -- %%Detour: **SDLC Basics**%%", "84a0119c-8f76-46fc-a256-b0f90098e59f", start_week="2") }}
 
 ---
 </div>
 
 
-<span class="text-info">****3. Iterative + Brownfield = ???****</span>: How the iterative and brownfield approach taken by the course impacts your learning experience.
+<span class="text-info">****1. Iterative + Brownfield = ???****</span>: How the iterative and brownfield approach taken by the course impacts your learning experience.
 {{ panopto(desc="6 mins", "e074cbed-2afb-46f6-81bc-b0fb01057eb8", start_week="2") }}
 
-<span class="text-info">****4. Challenges and Solutions****</span>: How to tackle three challenges you'll face in the course, namely, _information overload_, _workload_, and _technical problems_.
+<span class="text-info">****2. Challenges and Solutions****</span>: How to tackle three challenges you'll face in the course, namely, _information overload_, _workload_, and _technical problems_.
 {{ panopto(desc="12 mins", "b98f7669-e5e1-4659-847e-b0fb01057ebc", start_week="2") }}
 
 ---
 
-<span class="text-info">****5. First weekly briefing****</span>: As this is the first such weekly briefing, **it also covers some general points relevant to all future weeks**.
+<span class="text-info">****3. Week 2 Briefing****</span>: This video briefs you on what you need to do in week 2.<br>
+%%Note: While weekly briefings are normally done in hybrid mode, this week's briefing is released as a pre-recorded video, to allow you to get started with week 2 tasks early.%%
 
 {{ panopto(desc="8 mins", "f8088218-b6d5-4cc5-a933-b0fb01057ec2", start_week="2") }}
 </div>

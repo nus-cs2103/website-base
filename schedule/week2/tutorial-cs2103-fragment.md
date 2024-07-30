@@ -1,2 +1,2 @@
 * No tutorials in this week.
-* Should you encounter doubts/problems while doing weekly tasks, please post in the [forum]({{ url_forum }}).
+* Encountered doubts/problems while doing weekly tasks? Please post in the [forum]({{ url_forum }}).

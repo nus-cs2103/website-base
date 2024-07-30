@@ -6,7 +6,7 @@ pageNav: 1
 
 {% import "common/topics.njk" as topics with context %}
 {% from "admin/admin-tasks-fragment.md" import show_weekly_admin_tasks with context %}
-{% from "common/macros.njk" import get_week_start_date with context %}
+{% from "common/macros.njk" import get_week_start_date, show_as_tab with context %}
 {% from "_course-" + course + "/weeklyTextbookTopics-fragment.md" import weekly_textbook_topics, weeks_with_no_topics with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_themes with context %}
 
@@ -185,9 +185,9 @@ pageNav: {{ categories[category].pagenav }}
 {{ show_week_pagetop(week_num, "admin") }}
 
 {% if week_num == "1" %}
-<box type="info" dismissible>
+<box type="info">
 
-Admin info relevant to the week will appear in this tab.
+**This is the <span class="text-primary">{{ show_as_tab('Admin', icon_tab_admin) }}</span> tab** of this week. It contains admin info relevant to this week.
 </box>
 {% endif %}
 
@@ -205,9 +205,9 @@ Admin info relevant to the week will appear in this tab.
 {{ show_week_pagetop(week_num, "topics") }}
 
 {% if week_num == "1" %}
-<box type="info" dismissible>
+<box type="info">
 
-Topics allocated to the week will appear in this tab.
+**This is the <span class="text-primary">{{ show_as_tab('Topics', icon_tab_topics) }}</span> tab** of this week. It contains topics allocated to this week.
 </box>
 {% endif %}
 <include src="topics.md#notices" optional />
@@ -221,9 +221,9 @@ Topics allocated to the week will appear in this tab.
 {{ show_week_pagetop(week_num, "tutorial") }}
 
 {% if week_num == "1" %}
-<box type="info" dismissible>
+<box type="info">
 
-Information relevant to the week's tutorial will appear in this tab.
+**This is the <span class="text-primary">{{ show_as_tab('Tutorial', icon_tab_tutorial) }}</span> tab** of this week. It contains information relevant to the week's tutorial (if any).
 </box>
 {% endif %}
 <include src="tutorial-{{ course | lower }}-fragment.md" optional />
@@ -275,9 +275,9 @@ Information relevant to the week's tutorial will appear in this tab.
 {{ show_week_pagetop(week_num, "project") }}
 
 {% if week_num == 1 %}
-<box type="info" dismissible>
+<box type="info">
 
-Project-related information relevant to the week will appear in this tab.
+**This is the <span class="text-primary">{{ show_as_tab('Project', icon_tab_project) }}</span> tab** of this week. It contains project-related information relevant to this week.
 </box>
 {% endif %}
 {{ show_week_project_page_details(week_num) }}
