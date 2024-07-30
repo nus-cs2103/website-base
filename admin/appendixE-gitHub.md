@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, show_faq, show_faq2, step, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, show_faq, step, thumb, thumb_small, timing_badge with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("appendixE-gitHub") %}
@@ -281,9 +281,9 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
 
 </box>
 
-{{ show_faq2("githubWhoCreatesIssues") }}
-{{ show_faq2("githubIssuesForNonCodingTasks") }}
-{{ show_faq2("githubIssuesSubTasks") }}
+{{ show_faq("githubWhoCreatesIssues") }}
+{{ show_faq("githubIssuesForNonCodingTasks") }}
+{{ show_faq("githubIssuesSubTasks") }}
 
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -293,7 +293,7 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
 
 * **Assign the issue to a team member** after you've decided who should do the corresponding task.
 
-{{ show_faq2("githubMultipleIssueAssignees") }}
+{{ show_faq("githubMultipleIssueAssignees") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="tp-schedule-tracking-milestones-when">
@@ -324,7 +324,7 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
   There is no need to assign the PR to a person. The PR author is considered as the owner of the PR.
 * **While waiting for one PR to be merged, you can send more PRs.** If you do, remember to use a separate branch for each PR, and try to reduce overlaps between parallel PRs %%(so that each can be reviewed/merged independently of each other)%%.
 
-{{ show_faq2("githubIssueForEachPr") }}
+{{ show_faq("githubIssueForEachPr") }}
 
 <modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
   <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -369,7 +369,7 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
 * **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
 {% endif %}
 
-{{ show_faq2("githubWhoMergesPrs") }}
+{{ show_faq("githubWhoMergesPrs") }}
 </div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

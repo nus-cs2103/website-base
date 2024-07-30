@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_faq2, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -312,7 +312,7 @@ Specifically, we start with a workflow practice session (in task {{ thumb_small(
 
 ++**Things to note:**++{.text-info}
 
-{{ show_faq2("tpIterationDeadline") }}
+{{ show_faq("tpIterationDeadline") }}
 
 <include src="tp-common-fragments.md#error-commit-message-subject" />
 <include src="tp-common-fragments.md#error-pr-from-master" />
@@ -436,7 +436,7 @@ Finally, %%in {{ thumb_small("3")}}%% we implement those features to deliver the
 
 ++**Things to note:**++{.text-info}
 
-{{ show_faq2("tpHowMuchToGetFullMarks") }}
+{{ show_faq("tpHowMuchToGetFullMarks") }}
 
 {% endcall %}
 {#---------------------------------------------------#}
@@ -795,10 +795,10 @@ As we are still at the early stages of identifying a problem to solve, do not th
   1. **Second stage**:
      * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 
-{{ show_faq2("tpNotEnoughWorkToDivide") }}
-{{ show_faq2("tpShouldWeStartCoding") }}
-{{ show_faq2("tpOmitStoriesInAb3") if cs2103 }}
-{{ show_faq2("tpAllStoriesInAb3") if cs2103 }}
+{{ show_faq("tpNotEnoughWorkToDivide") }}
+{{ show_faq("tpShouldWeStartCoding") }}
+{{ show_faq("tpOmitStoriesInAb3") if cs2103 }}
+{{ show_faq("tpAllStoriesInAb3") if cs2103 }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
@@ -819,7 +819,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 <span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the codebase</span>
 <div id="desc_get_familiar_with_the_code_base">
 
-{{ show_faq2("tpIndividualOrTeam") }}
+{{ show_faq("tpIndividualOrTeam") }}
 
 <box type="info" icon=":fas-clock:" seamless>
 
@@ -853,7 +853,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 * **Submission:** Note down the feature list in your online project notes document.
 
-{{ call_faq2("tpHowManyFeaturesInMvp") }}
+{{ show_faq("tpHowManyFeaturesInMvp") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ug">{{ icon_team }} {% if cs2103 %}Draft the feature specification{% else %}Draft the UG{% endif %}</span>
@@ -989,7 +989,7 @@ Now that you have practiced the workflow to be used when updating the tP codebas
 * If your project is using **Jekyll** for documentation, refer [this Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=github.io/myrepo-,Updating%20documents,-Jekyll%20uses%20kramdown).
 * If your project is using **Markbind** for documentation, refer [this MarkBind Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/markbind-forked-sites.html#:~:text=latest%20%2D%2Dsave%2Ddev-,Updating%20documents,-MarkBind%20is%20a).
 
-{{ show_faq2("githubIssuesMultipleDocAuthors") }}
+{{ show_faq("githubIssuesMultipleDocAuthors") }}
 </box>
 
 </div>
@@ -1207,7 +1207,7 @@ This page  (in the `/docs` folder) is used for course admin purposes. ==Please f
 * #r#Wait until all team members have sent the PR## for the above step.<br>
   Reviews the PRs while waiting.{text="4.2"}
 
-{{ show_faq2("tpOneMemberNotDone") }}
+{{ show_faq("tpOneMemberNotDone") }}
 
 * Merge one of the PRs sent in step 4.1 (e.g., the one that arrived first). If this causes conflicts in other PRs, resolve those conflicts.{text="4.3"}
 * Merge remaining PRs one at a time, while resolving merge conflicts as needed.{text="4.4"}
@@ -1355,8 +1355,8 @@ This page  (in the `/docs` folder) is used for course admin purposes. ==Please f
   * Move any pending issues/PRs to the next milestone (i.e., {{ version_mvp }}). %%As we did not plan to release a product version at the end of this iteration, we can freely move any pending work to the next iteration.%%
   * Close the milestone.
 
-{{ show_faq2("tpUpdateTestsWithCode") }}
-{{ show_faq2("tpUpdateDocsWithCode") }}
+{{ show_faq("tpUpdateTestsWithCode") }}
+{{ show_faq("tpUpdateDocsWithCode") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1466,7 +1466,7 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 </panel>
 <p/>
 </div>
-{{ show_faq2("tpWhyUpdateDiagramsEarly") }}
+{{ show_faq("tpWhyUpdateDiagramsEarly") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_mvp }}</span>
@@ -1603,7 +1603,7 @@ In addition,
 
 {{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="2") }}
 
-{{ show_faq2("tpFeatureTakeovers") }}
+{{ show_faq("tpFeatureTakeovers") }}
 
 </div>
 </div>

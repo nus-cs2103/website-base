@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import policies, show_admin_summary, topics with context %}
-{% from "common/macros.njk" import embed_topic, get_date, show_admin_sections_to_read, show_as_tab, show_faq2, thumb, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, get_date, show_admin_sections_to_read, show_as_tab, show_faq, thumb, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyAdminTopics-fragment.md" import weekly_admin_topics with context %}
 {% from "_course-" + course + "/weeklyAdminTasks-fragment.md" import weekly_admin_tasks with context %}
@@ -83,7 +83,7 @@
 * **Read weekly topics** allocated for this week. **Submit the `Weekly Quiz`** (on Canvas) to test your knowledge of those topics.<br>
   Weekly quizzes are counted for [participation]({{ baseUrl }}/admin/participation.html).
 
-{{ show_faq2("whenCanWeSeeQuizAnswers") }}
+{{ show_faq("whenCanWeSeeQuizAnswers") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_submit_first_coding_exercises">Submit coding exercises via Coursemology</span>

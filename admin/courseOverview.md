@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import show_faq2 with context %}
+{% from "common/macros.njk" import show_faq with context %}
 
 {% call show_admin_page("courseOverview") %}
 <div id="main">
@@ -55,7 +55,7 @@ Testing | <tooltip content="e.g., automated unit/integration/system testing">bas
 Applications domains | Cross-platform desktop applications | Web programming, Mobile programming, Database programming
 
 <br>
-{{ show_faq2("tVsNonT") }}
+{{ show_faq("tVsNonT") }}
 </div>
 <!-- =============================================================================== -->
 <div tags="m--cs2113">

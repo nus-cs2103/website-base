@@ -1,11 +1,11 @@
-{% from "common/macros.njk" import  show_stars, show_faq2 with context %}
+{% from "common/macros.njk" import  show_stars, show_faq with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("appendixC-faq") %}
 <div id="main">
 
 {% macro show_expanded_faq(faq_id) %}
-{{ show_faq2(faq_id, "y") }}
+{{ show_faq(faq_id, "y") }}
 {% endmacro %}
 
 ## FAQs on: General
@@ -20,9 +20,6 @@
 {{ show_expanded_faq("favoriteTool") }}
 {{ show_expanded_faq("manySubmissions") }}
 {{ show_expanded_faq("cs2101Difference") if cs2103  }}
-
-## FAQs on: Participation
-
 {{ show_expanded_faq("whenCanWeSeeQuizAnswers") }}
 
 ## FAQs on: tP

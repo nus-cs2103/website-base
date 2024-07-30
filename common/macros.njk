@@ -74,7 +74,7 @@
 {% endfor %}
 {% endmacro %}
 
-{% macro show_faq2(faq_id, is_main_faq="") %}
+{% macro show_faq(faq_id, is_main_faq="") %}
 <panel type="seamless" {{ "expanded" if is_main_faq else "" }}>
 <span slot="header" class="card-title"><markdown>{{ "####" if is_main_faq else "" }} {{ faq }} <include src="{{ baseUrl }}/admin/faq-fragment.md#faq-{{ faq_id }}-Q" inline /></markdown></span>
 <box type="secondary" seamless>
@@ -96,7 +96,7 @@
   {% set div_title = section.div_title if section.div_title else "" %}
   {{ show_admin_topic(topics, section.topic_id, div_to_show, div_title, is_flat) }}
 {% elif section.faq_id %}
-  {{ show_faq2(section.faq_id) }}
+  {{ show_faq(section.faq_id) }}
 {% elif section.policy_id %}
   {{ show_admin_policy(policies, section.policy_id, is_flat) }}
 {% endif %}
@@ -179,17 +179,6 @@
 <span class="badge text-danger"><md>++++:fas-person-walking-dashed-line-arrow-right:++++</md></span>
 </a-point>
 </annotate>
-<p/>
-{% endmacro %}
-
-{% macro show_faq(heading)%}
-<panel type="seamless">
-<span slot="header" class="card-title"><markdown>{{ faq }} {{ heading }}</markdown></span>
-<box type="secondary" seamless>
-
-{{ caller() }}
-</box>
-</panel>
 <p/>
 {% endmacro %}
 

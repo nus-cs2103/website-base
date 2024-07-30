@@ -1,6 +1,6 @@
-{% from "common/macros.njk" import show_faq, show_faq2 with context %}
+{% from "common/macros.njk" import show_faq with context %}
 
-{{ show_faq2("dgDetailsLevel") }}
+{{ show_faq("dgDetailsLevel") }}
 
 * The main content you add should be in the `docs/DeveloperGuide.md` file (for ease of tracking by grading scripts).<br>
   If you use PlantUML diagrams, commit the diagrams as `.puml` files in the `docs/diagrams` folder.
@@ -77,7 +77,7 @@
   For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ url_ab3_upstream_website }}/DeveloperGuide.html#proposed-undoredo-feature).
 * **Use multiple UML diagram types.** Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.
 
-{{ show_faq2("dgAddNewUml") if cs2103 }}
+{{ show_faq("dgAddNewUml") if cs2103 }}
 
 * **Diagramming tools**:
   * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).<br>

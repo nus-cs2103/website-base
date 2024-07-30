@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_faq, show_faq2 with context %}
+{% from "common/macros.njk" import embed_topic, show_faq with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("tp-expectations") %}
@@ -185,9 +185,9 @@ Furthermore, we estimate that the above-mentioned bar is roughly equivalent to *
 
 <div tags="m--cs2103">
 
-{{ show_faq2("tpEnoughFeatures") }}
-{{ show_faq2("tpMustWrite300Loc") }}
-{{ show_faq2("tpFullMarksFor300Loc") }}
+{{ show_faq("tpEnoughFeatures") }}
+{{ show_faq("tpMustWrite300Loc") }}
+{{ show_faq("tpFullMarksFor300Loc") }}
 <p/>
 </div>
 
