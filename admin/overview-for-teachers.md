@@ -93,7 +93,7 @@ In the first half of the semester, students lay the groundwork for the team proj
 In the second half of the semester, students build the product in three iterations:<br>
 <pic eager src="tpGanttChart-iterations.png" width="800"></pic>
 
-* The project description starts from [this page](tp-expectations.html).
+* The project description starts from [this page](tp-overview.html).
 * Final versions of previous semester's tPs are in [this page](https://nus-cs2103-ay2122s2.github.io/website/admin/teamList.html). A few examples are given below:
 
 
