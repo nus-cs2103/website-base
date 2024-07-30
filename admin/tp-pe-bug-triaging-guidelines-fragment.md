@@ -87,4 +87,8 @@ However, if such input can be entered by a user mistake, they should not cause h
 * **Unfulfilled NFRs**: If the DG mentions non-functional requirements that are not met by the product, it can be a `severity.Low` `DocumentationBug` if the NFR was unreasonable in the first place. Otherwise, it can be `type.FeatureFlaw` bug.
 * **Details in the diagram too small**: This is usually a symptom of having too much info in the diagram. A common example is sequence diagrams showing low-level details of multiple components (recommended: A sequence diagram should show internal interactions of at most one component i.e., treat other components as black boxes).<br>
  While the reader can zoom to see smaller details, this can still be considered a cosmetic issue (i.e., `severity.VeryLow`).
-* **Tester misunderstandings can be caused by inadequate documentation** Some bug reports that arose from a tester misunderstanding something could be due to a flaw in the documentation e.g., something was not explained clearly enough in the document.
+* **Tester misunderstandings can be caused by inadequate documentation**. Some bug reports that arose from a tester misunderstanding something could be due to a flaw in the documentation e.g., something was not explained clearly enough in the document.
+* **Undocumented features:**
+  * If the said feature is not visible to the user and very unlikely for the user to detect it by accident, we can assume the feature was never meant to be released in the current version, which should be fine.
+  * If the feature is simple, easily discoverable, and intuitive to use, it is fine to be omitted from the UG, especially if the inclusion seems adding noise rather than value.
+  * Other cases point to some issue, either an omission in the UG, or a WIP feature not properly protected/hidden/disabled in the released product.

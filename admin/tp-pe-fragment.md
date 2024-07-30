@@ -25,10 +25,11 @@
 
 * **The PE is divided into four phases**:
   * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D. Done during week 13 lecture slot, and further divided into parts I, II, and III.</span>
-    * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to report bugs in the product (but can report documentation bugs too)
-    * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to report bugs in the UG and DG only
+    * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to focus on reporting bugs in the product (but can report documentation bugs too)
+    * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
-  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sat-Mon after PE </span>
+    * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [half a day] -- For testers to select up to 7 bugs to send to the dev team.
+  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sun-Mon after PE </span>
   * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Tue-Thu after PE</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
 
@@ -202,7 +203,7 @@ No. Given the PE has only a short time, we don't expect you to find _all_ bugs i
 
 ##### <span class="badge bg-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
 
-* **This slot is for reporting documentation bugs only**. You may report bugs related to the UG and the DG.<br>
+* **Use this slot mainly to report documentation bugs** (but you may report product bugs too). You may report bugs related to the UG and the DG.<br>
   Only the content of the UG/DG PDF files (not the online version) should be considered.
 * **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.<br>
   Do not report bugs that are not contained within in the UG and DG pdf files (e.g., bugs in the `README.md`).
@@ -222,7 +223,7 @@ No. Given the PE has only a short time, we don't expect you to find _all_ bugs i
 * To be submitted via TEAMMATES. You are expected to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.<br>
   **If you have to valid reason to leave the PE early** (e.g., having another exam right after the PE), you may leave after part II has ended and do part III later -- but note that if you fail to submit this by the hard deadline (i.e., end of the day), you will receive an <span class="text-danger">automatic penalty</span>.
 * The TEAMMATES email containing the submission link should have reached you the day before the PE. If you didn't receive it by then, you can request it to be resent from [this page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery).
-* **If TEAMMATES submission page is slow/fails to load** (all of you accessing it at the same time is likely to overload the server), wait 3-5 minutes and try again. <span class="text-danger">Do not refresh the page rapidly</span> as that will overload the server even more, and recovery can take even longer.
+* **If TEAMMATES submission page is slow/fails to load** (all of you accessing it at the same time is likely to overload the server), wait 3-5 minutes and try again. <span class="text-danger">Do not refresh the page repeatedly</span> as that will overload the server even more, and recovery can take even longer.
 
 <div class="indented">
 <panel header="##### Important questions included in the evaluation" peek>
@@ -301,6 +302,16 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 </panel>
 <p/>
 </div>
+
+-------------------------------------------------------------------------{.border-success}
+
+##### <span class="badge bg-success">PE Phase 1 - Part IV</span> <span class="text-success">Trimming bugs [~half a day]</span>
+
+* **This segment gives testers a second chance revisit their bug reports, and choose upto 7 bugs that they wish to send to the dev team.** They will be allowed to change bug type/severity too (but will not be allowed to change bug title or the description).<br>
+  Objectives:
+  * Testers can correct their type/severity choices in case they chose incorrectly during the PE due to time pressure.
+  * Testers get a chance to withdraw lower impact (or uncertain) bugs so that there is less work for the dev team during the next phase.
+* **Procedure:** coming soon ...
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
@@ -476,6 +487,10 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
   * non-obvious duplicate
 
 
+<panel type="seamless" header="%%FAQ: Do we need to justify even if we accept the bug _as is_?%%" >
+
+No need to provide a justification if you accept the bug without _any_ changes to it.
+</panel>
 <panel type="seamless" header="%%FAQ: So, those who write more code will be hit with more bugs? How's that fair?%%" >
 
 Penalty for bugs is applied based on bug _density_, not bug count. For example, if Ann contributed twice as much implementation effort as Tom, and was assigned twice as many bugs as Tom, both will receive similar penalties, as both had similar bug densities.

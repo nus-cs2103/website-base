@@ -1,4 +1,28 @@
 {% from "common/macros.njk" import embed_topic with context %}
+<div id="policy-adminQuestions" tags="m--cs2103" >
+
+**All admin questions should be sent to the course email `{{ course | lower }}@comp.nus.edu.sg` or posted in the [forum]({{ url_forum }}).** This way, the person in charge of that admin detail will answer you.
+
+==#r#Do not ask admin questions from tutors##== (in person or via other means) as **tutors are prohibited from answering admin questions**.
+
+Reason: The course has MANY admin details and there are subtle changes from semester to semester. Tutors might not be aware of those changes, increasing the risk that you receive subtly incorrect answers. Besides, it is not fair to expect tutors to know all the admin details, as they should be using their memory for things related to their own courses.
+
+Examples of admin questions:
+
+* What happens if I don't submit by the deadline?
+* How is this graded?
+* Can I use X instead of Y for the project?
+* Where can I find details about [some aspect of the course]?
+
+**Side note: All technical help requests should be posted in the forum (or sent to the course email)** too. Tutors are not allowed to help with them either.
+</div>
+
+<div id="policy-teamSize">
+
+As most of the work is graded individually, team sizes of 4 or 6 are not expected to affect your grade. While managing larger teams is harder, larger teams have more collective know-how, which can cancel each other. We'll give some consideration when grading 3-person teams.
+
+</div>
+
 <div id="policy-followingInstructions">
 
 When working with others, especially in a large class such as {{ course_pair }}, it is very important that you adhere to standards, policies, and instructions imposed on everyone. Not doing so creates unnecessary headaches for everyone and puts your work attitude in a negative light. That is why we penalize repeated non-compliance of instructions. On the other hand, we do understand that we all are liable to make mistakes. That is why we only penalize repeated or frequent mistakes.
@@ -16,7 +40,7 @@ As most of the work is graded individually, team sizes of 4 or 6 are not expecte
 As most of the work is graded individually, it is OK to do less or more than equal share in your project team.
 
 {{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP → Expectations: from each student", "3") }}
-
+<p/>
 </div>
 
 <div id="policy-validAbsences">
@@ -40,6 +64,7 @@ Not responding to a personal email is a major breach of professional etiquette (
 The promptness of a reply is even more important when the email is requesting you for something that you cannot provide. Imagine you wrote to the prof requesting a reference letter and the prof did not respond at all because he/she did not want to give you one; You'll be quite frustrated because you wouldn't know whether to look for another prof or wait longer for a response. Saying 'No' is fine and in fact a necessary part of professional life; but saying nothing is not acceptable. If you didn't reply, the sender will not even know whether you received the email.
 
 </panel>
+<p/>
 
 </div>
 
@@ -54,12 +79,12 @@ The promptness of a reply is even more important when the email is requesting yo
 <span class="flat">%%Related: [[Admin: Appendix D: Getting Help](#admin-appendixD-help-anchor)]%%</span>
 
 {{ embed_topic(baseUrl+"/admin/appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + course_pair, "3") }}
-
+<p/>
 </div>
 
 <div id="policy-publishingSubmissions">
 
-The source code are publicly available and are available for reuse by others without any restrictions. 
+The source code are publicly available and are available for reuse by others without any restrictions.
 Is publishing submissions unfair to the author? We don't think so. If you were the first to think of something your peers are willing to adopt later, that means you are already ahead of them and they are unlikely to earn more marks by adopting your ideas.
 
 </div>

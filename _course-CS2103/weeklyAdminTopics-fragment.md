@@ -77,6 +77,7 @@ week2: [
   {faq_id: "separateWebsite"},
   {faq_id: "slideFormat"}],
 week3: [
+  {policy_id: "policy-adminQuestions"},
   {topic_id: "tutorials"},
   {topic_id: "peerEvaluations"},
   {topic_id: "standardsAndConventions"},
