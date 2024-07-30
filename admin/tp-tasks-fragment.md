@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_faq2, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -312,10 +312,7 @@ Specifically, we start with a workflow practice session (in task {{ thumb_small(
 
 ++**Things to note:**++{.text-info}
 
-{% call show_faq("What's the deadline for tP iterations?") %}
-The deadline for tP iterations is the `Thursday 23:59` in the week it is due, unless a different date is specified in the instructions of that iteration.
-{% endcall %}
-
+{{ show_faq2("tpIterationDeadline") }}
 
 <include src="tp-common-fragments.md#error-commit-message-subject" />
 <include src="tp-common-fragments.md#error-pr-from-master" />
@@ -439,20 +436,7 @@ Finally, %%in {{ thumb_small("3")}}%% we implement those features to deliver the
 
 ++**Things to note:**++{.text-info}
 
-{% call show_faq("How much code/features is enough to get full marks?") %}
-
-Not surprisingly, a common question tutors receive around this time of the project is "can you look at our project and tell us if we have done enough to get full marks?". Here's the answer to that question:
-
-**The tP _effort_ is graded primarily based on peer judgements** (tutor judgements are used too). That means you will be judging the effort of another team later, which also means you should be able to make a similar judgement for your own project now. While we understand effort estimating is hard for software projects, it is an essential SE skill, and we must practice it when we can.
-
-**The expected minimum bar to get full marks for _effort_** is given <trigger trigger="click" for="modal:mid13-effortBar"> here</trigger>.
-
-<modal large header="tP -> Expectations -> [Extract] Functionality Expectations" id="modal:mid13-effortBar">
-<include src="tp-expectations.md#functionality-expectations"/>
-</modal>
-
-If you surpass the above bars (in your own estimation), you should be in a good position to receive full marks for the effort. But keep in mind that there are many other components in the [tP grading](tp-grading.md), not just the effort.
-{% endcall %}  <!-- faq -->
+{{ show_faq2("tpHowMuchToGetFullMarks") }}
 
 {% endcall %}
 {#---------------------------------------------------#}
@@ -811,22 +795,10 @@ As we are still at the early stages of identifying a problem to solve, do not th
   1. **Second stage**:
      * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 
-{% call show_faq("What if the chosen user stories for MVP is not enough to do a meaningful work division among team members?") %}
-In that case, at a later stage, you can add more user stories until there is enough for a meaningful work distribution. But at this point focus on selecting the smallest sub-set of _must_have_ user stories only.
-{% endcall %}
-{% call show_faq("Should we start implementing MVP now?") %}
-Not at all. That is scheduled several weeks later. For now, just figure out the minimal feature set required for the product. We'll let you know when it is time to start working on the MVP.
-{% endcall %}
-
-{% if cs2103 %}
-{% call show_faq("Should we omit user stories that are already supported by AB3?") %}
-No, you should still include them. Reason: The existing implementation might still require some work before it fits your product.
-{% endcall %}
-{% call show_faq("All the user stories we selected for MVP are already supported by AB3. What now?") %}
-That's fine. It means you can get to MVP with very little effort, which is a good thing. Once you've finished the MVP, if there is time left, you can add more things to it at that time.
-{% endcall %}
-{% endif %}
-
+{{ show_faq2("tpNotEnoughWorkToDivide") }}
+{{ show_faq2("tpShouldWeStartCoding") }}
+{{ show_faq2("tpOmitStoriesInAb3") if cs2103 }}
+{{ show_faq2("tpAllStoriesInAb3") if cs2103 }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project_repo">{{ icon_team }} Set up the project repo</span>
@@ -847,9 +819,7 @@ That's fine. It means you can get to MVP with very little effort, which is a goo
 <span id="heading_get_familiar_with_the_code_base">{{ icon_individual }} Get familiar with the codebase</span>
 <div id="desc_get_familiar_with_the_code_base">
 
-{% call show_faq("Is this a team task or an individual task?") %}
-It's an individual task (note the icon {{ icon_individual }} above), to be done by each member, as we want _every_ member to be familiar with the codebase.
-{% endcall %}
+{{ show_faq2("tpIndividualOrTeam") }}
 
 <box type="info" icon=":fas-clock:" seamless>
 
@@ -883,9 +853,7 @@ It's an individual task (note the icon {{ icon_individual }} above), to be done 
 
 * **Submission:** Note down the feature list in your online project notes document.
 
-{% call show_faq("How many features should we put in the MVP?") %}
-Aim for the _smallest set of features the product cannot do without_. Even a most basic version of those features is enough. After completing that feature set, you can add more if there is time left.
-{% endcall %}
+{{ call_faq2("tpHowManyFeaturesInMvp") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_draft_the_ug">{{ icon_team }} {% if cs2103 %}Draft the feature specification{% else %}Draft the UG{% endif %}</span>
@@ -1021,9 +989,7 @@ Now that you have practiced the workflow to be used when updating the tP codebas
 * If your project is using **Jekyll** for documentation, refer [this Jekyll Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/jekyll.html#:~:text=github.io/myrepo-,Updating%20documents,-Jekyll%20uses%20kramdown).
 * If your project is using **Markbind** for documentation, refer [this MarkBind Guide @SE-EDU/guides](https://se-education.org/guides/tutorials/markbind-forked-sites.html#:~:text=latest%20%2D%2Dsave%2Ddev-,Updating%20documents,-MarkBind%20is%20a).
 
-{% call show_faq("When all members are updating the same document, can we create one issue and assign it to all?") %}
-**A:** In the tP (in which our grading scripts track issues assigned to each member), it is better to create separate issues so that each person's work can be tracked separately. For example, suppose everyone is expected to update the User Guide (UG). You can create separate issues based on which part of the UG will be updated by which person e.g., `List-related UG updates` (assigned to John), `Delete-related UG updates` (assigned to Alice), and so on.
-{% endcall %}
+{{ show_faq2("githubIssuesMultipleDocAuthors") }}
 </box>
 
 </div>
@@ -1241,9 +1207,7 @@ This page  (in the `/docs` folder) is used for course admin purposes. ==Please f
 * #r#Wait until all team members have sent the PR## for the above step.<br>
   Reviews the PRs while waiting.{text="4.2"}
 
-{% call show_faq("What if a team member has not done this? Can the rest proceed?") %}
-If a team member fails to do this within a reasonable time, try to help that team member with this task, if needed. Failing that, the rest of the team can proceed with the remainder of the task. In the latter case, inform the tutor that you are proceeding with this task without waiting for that team member.
-{% endcall %}
+{{ show_faq2("tpOneMemberNotDone") }}
 
 * Merge one of the PRs sent in step 4.1 (e.g., the one that arrived first). If this causes conflicts in other PRs, resolve those conflicts.{text="4.3"}
 * Merge remaining PRs one at a time, while resolving merge conflicts as needed.{text="4.4"}
@@ -1360,16 +1324,12 @@ If a team member fails to do this within a reasonable time, try to help that tea
 <span id="heading_add_first_functionality_increment">{{ icon_individual }} Add the first functionality increment</span>
 <div id="desc_add_first_functionality_increment">
 
-
 <box type="important" seamless>
 
 **Each member is expected to <tooltip content="i.e., merge at least one PR">merge _some_ code</tooltip> in each <tooltip content="{{ version_first }}, {{ version_mvp }}, {{ version_alpha }}, etc."> iteration</tooltip>.**<br>
   %%Reason: As each iteration focuses on a different learning outcome, it is better for you to take part in each of them fully.%%
 
-{% call show_faq("Will I lose marks if I couldn't merge any PRs in an iteration?") %}
-
-As it is the case with other similar tP requirements, there is no penalty for missing this expectation occasionally. But try not to miss it too often.
-{% endcall %}
+{{ show_faq("tpNoPrInIteration") }}
 </box>
 <box type="tip" seamless>
 
@@ -1395,24 +1355,8 @@ As it is the case with other similar tP requirements, there is no penalty for mi
   * Move any pending issues/PRs to the next milestone (i.e., {{ version_mvp }}). %%As we did not plan to release a product version at the end of this iteration, we can freely move any pending work to the next iteration.%%
   * Close the milestone.
 
-{% call show_faq("**Do we have to update tests** when we update functional code?") %}
-
-**For this iteration,** keeping in line with the learning outcome of this iteration, ==try to keep the existing tests (and CI) working==. It is optional to add more tests.
-
-**In general,** there are several options you can choose from:
-
-1. Update/add tests every time you change functional code. This is what normally happens in stable production systems. For example, most OSS projects will not accept a PR that has failing tests or not enough new tests to cover the new functional code.
-2. Disable failing tests temporarily until the code is stable. This is suitable when the functional code is in a highly volatile state (e.g., you are still experimenting with the implementation). The benefit is that you avoid the cost of writing tests for functional code that might change again soon after. Some costs: (a) harder to detect regressions during the period tests are disabled (b) testing work pile up which could distort your estimate of real progress (c) forgetting to enable the tests in time<br>
-  This is still a viable option during some stages of a tP e.g., during the early part of an iteration, or while a PR is still in 'draft' state (i.e., for getting early feedback from the team).
-4. Decide certain tests are not worth the effort to maintain, and delete them permanently. Result: Less test code to maintain but higher risk of undetected regressions.
-{% endcall %}
-
-{% call show_faq("**Do we need to update usder/developer guides** to match these code changes?") %}
-
-**In general**, it is better for a PR to update code, tests, and documentation together.
-
-**In this iteration**, it is fine not to update documentation, to keep things simple. We can start updating docs in a later iteration, when the code is more stable.
-{% endcall %}
+{{ show_faq2("tpUpdateTestsWithCode") }}
+{{ show_faq2("tpUpdateDocsWithCode") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1522,13 +1466,7 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 </panel>
 <p/>
 </div>
-{% call show_faq("Why not wait till the end to update digarams?") %}
-
-Here are some reasons:
-* We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
-* It is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
-* It allows receiving early self/peer/instructor feedback.
-{% endcall %}
+{{ show_faq2("tpWhyUpdateDiagramsEarly") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_mvp }}</span>
@@ -1665,10 +1603,7 @@ In addition,
 
 {{ embed_topic("tools.md#reposense", "Admin " + icon_embedding + " Tools → RepoSense", "1", indent="2") }}
 
-{% call show_faq("What if someone took over a feature from another team member?") %}
-In terms of effort distribution, it's up to the team to tell us who did how much. Same goes for assigning bugs. So, it's fine for someone to take over a feature if the team is able to estimate the effort of each member, and they have a consensus on who will be responsible for bugs in that feature.<br>
-For code authorship, only one person can claim authorship of a line, and that person will be graded for the code quality of that line. By default, that will be the last person who edited it (as per Git data) but you can [override that behavior using `@@author` tags](tools.html#tool-reposense-for-authorship-tracking).
-{% endcall %}
+{{ show_faq2("tpFeatureTakeovers") }}
 
 </div>
 </div>

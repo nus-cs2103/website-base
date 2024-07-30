@@ -1,8 +1,6 @@
-{% from "common/macros.njk" import show_faq with context %}
+{% from "common/macros.njk" import show_faq, show_faq2 with context %}
 
-{% call show_faq("How detailed the DG should be? Do we have to describe every feature/component?") %}
-The DG is primarily meant to help current/future developers. Therefore, decide based on how the inclusion/exclusion affects that target audience (you belong to the target audience too!).
-{% endcall %}
+{{ show_faq2("dgDetailsLevel") }}
 
 * The main content you add should be in the `docs/DeveloperGuide.md` file (for ease of tracking by grading scripts).<br>
   If you use PlantUML diagrams, commit the diagrams as `.puml` files in the `docs/diagrams` folder.
@@ -79,10 +77,7 @@ The DG is primarily meant to help current/future developers. Therefore, decide b
   For an example, see [the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide]({{ url_ab3_upstream_website }}/DeveloperGuide.html#proposed-undoredo-feature).
 * **Use multiple UML diagram types.** Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.
 
-{% call show_faq("Is it enough to update existing UML content/diagrams or must we add new content/diagrams?") %}
-**You are welcome to add new content/diagrams**, but it is not a strict requirement. Consider costs %%(e.g., the effort required to add and maintain new content)%% vs benefits %%(how much the new content helps future developers)%% and decide accordingly.
-**However, everyone is expected to contribute to the DG**, which means you should divide the DG-update work among team members.
-{% endcall %}
+{{ show_faq2("dgAddNewUml") if cs2103 }}
 
 * **Diagramming tools**:
   * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).<br>

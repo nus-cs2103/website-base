@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, show_faq, step, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, show_faq, show_faq2, step, thumb, thumb_small, timing_badge with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("appendixE-gitHub") %}
@@ -281,17 +281,9 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
 
 </box>
 
-{% call show_faq("%%**Who should create issues?**%%") %}
-We recommend that (when possible) the person allocated to perform the task should also create (and manage) the issue. This will help everyone practice this aspect of the project, and spread the workload among team members.
-{% endcall %}
-
-{% call show_faq("%%**Can we use issues to track non-coding tasks?** e.g., a submission%%") %}
-Yes ([an example](https://github.com/TEAMMATES/teammates/issues/12976)), although having too many non-coding tasks in the issue tracker can make it cluttered.
-{% endcall %}
-
-{% call show_faq("%%**How do we track 'sub-task' relationships between tasks?**%%") %}
-GitHub Issues does not have a direct way of doing this. However, you can use a task list in the issue description to indicate sub-tasks and corresponding issues/PRs -- ([an example](https://github.com/MarkBind/markbind/issues/1774))
-{% endcall %}
+{{ show_faq2("githubWhoCreatesIssues") }}
+{{ show_faq2("githubIssuesForNonCodingTasks") }}
+{{ show_faq2("githubIssuesSubTasks") }}
 
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -301,11 +293,7 @@ GitHub Issues does not have a direct way of doing this. However, you can use a t
 
 * **Assign the issue to a team member** after you've decided who should do the corresponding task.
 
-{% call show_faq("%%**Is it OK to assign multiple members to the same task?**%%") %}
-This is discouraged in the tP, as it makes task allocations (and accountability) harder to track.<br>
-Instead, shared tasks can be split into separate issues. For example, instead of creating an issue `Update teams page with own info` and assigning it to all team members (in which case, this issue can't be closed until all members do their part), you can create issues such as `Update teams page with John's info` that can be assigned to individual members.
-{% endcall %}
-
+{{ show_faq2("githubMultipleIssueAssignees") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="tp-schedule-tracking-milestones-when">
@@ -336,14 +324,7 @@ Instead, shared tasks can be split into separate issues. For example, instead of
   There is no need to assign the PR to a person. The PR author is considered as the owner of the PR.
 * **While waiting for one PR to be merged, you can send more PRs.** If you do, remember to use a separate branch for each PR, and try to reduce overlaps between parallel PRs %%(so that each can be reviewed/merged independently of each other)%%.
 
-{% call show_faq("%%**Must there be a corresponding issue for each PR?**%%") %}
-This is encouraged, while not a strict rule. Creating an issue indicates 'a task to be done', while a PR is 'a task being done'. These are not the same, and there can be a significant time gap between the two.<br>
- Furthermore, posting an issue in advance allows the team to,
-
-* anticipate a PR is coming
-* discuss more about the task (in the issue thread) e.g., alternatives, priority
-* indicate who will be doing the task (by adding an assignee), when it should be done (by adding it to a milestone)
-{% endcall %}
+{{ show_faq2("githubIssueForEachPr") }}
 
 <modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
   <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -388,10 +369,7 @@ This is encouraged, while not a strict rule. Creating an issue indicates 'a task
 * **As you add functionality, update the `input.txt` and `EXPECTED.txt` as well** so that the functionality you add gets regression tested automatically every time the code is updated from that point onwards.
 {% endif %}
 
-{% call show_faq("%%**Who should merge PRs?** e.g., PR author, reviewer, team lead?%%") %}
-
-It is up to the team to decide. However, we discourage unilateral PR merging i.e., you create and merge PRs without any reviews/oversight from others, unless the PR is trivial changes.
-{% endcall %}
+{{ show_faq2("githubWhoMergesPrs") }}
 </div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->

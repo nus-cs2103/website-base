@@ -62,12 +62,6 @@
 * Zoom will be used (even during F2F tutorials) for projecting slides and {% if cs2113 %}(occasionally) {% endif %}collecting chat responses.
 * MS Teams will be used for file sharing.
 
-<!--
-* Please ==bring your laptop to tutorials.== You'll need it for tutorial tasks.
-
-{{ embed_topic("appendixC-faq.md#admin-faq-noLaptop", "Admin " + icon_embedding + " Appendix C(FAQ): What if I don't carry around a laptop?", "4", indent=2) }}
--->
-
 <br/>
 <div tags="m--cs2103">
 

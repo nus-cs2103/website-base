@@ -1,4 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/macros.njk" import show_faq2 with context %}
 
 {% call show_admin_page("courseOverview") %}
 <div id="main">
@@ -54,7 +55,7 @@ Testing | <tooltip content="e.g., automated unit/integration/system testing">bas
 Applications domains | Cross-platform desktop applications | Web programming, Mobile programming, Database programming
 
 <br>
-<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ course }} and {{ course }}T?**" class="embedding" minimized />
+{{ show_faq2("tVsNonT") }}
 </div>
 <!-- =============================================================================== -->
 <div tags="m--cs2113">
@@ -71,7 +72,6 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 
 <include src="courseOverview.md#meaning-of-iterative-topics" />
 
-<panel src="appendixC-faq.md#admin-faq-tVsNonT" header="Admin {{ icon_embedding }} **FAQ: What are the differences between {{ course }} and {{ course }}T?**" class="embedding" minimized />
 </div>
 <!-- =============================================================================== -->
 

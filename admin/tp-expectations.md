@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_faq with context %}
+{% from "common/macros.njk" import embed_topic, show_faq, show_faq2 with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("tp-expectations") %}
@@ -184,21 +184,10 @@ Furthermore, we estimate that the above-mentioned bar is roughly equivalent to *
 ==There are no extra marks for exceeding implementation _effort_ bar== stated above. Hence, _effort_ is graded on mostly an S/U basis) -- it is the _quality_ of the code that really determines the marks for _implementation_ component (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>).  So, you are better off spending more effort in improving other aspects of the project. Try to avoid adding more features than necessary, unless you are doing it out of interest. As mentioned elsewhere, a functionality just the right size and of high quality will earn more marks than a functionality that is bigger (or more difficult, or more interesting/novel) but of lower quality.
 
 <div tags="m--cs2103">
-{% call show_faq("If our team implement features x, y, and z, is that enough?") %}
-Yes, if it requires each member to put in about a half an iP worth of effort.
-{% endcall %}
 
-{% call show_faq("Is it a must to write at least 300 LoC?") %}
-Not necessarily. It depends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than 300 LoC that implements feature Y (i.e., it depends on the context). So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the _equivalent_ effort).
-{% endcall %}
-
-{% call show_faq("Still, if I write 300 LoC, I get full marks for implementation?") %}
-There is no such guarantee, for two reasons:
-
-1. Your implementation effort is graded based on how much functionality your team produced (based on peer-testers' and tutors' estimates) and how much of that work was contributed by you (based on team members' estimates). For example, simply copy-pasting 400+ LoC with only minor modifications is unlikely to meet this bar as it is less than an effort _equivalent_ to writing a typical 300-400 LoC (or half of a typical iP effort).
-1. Implementation marks are based on both effort and quality, the latter being the primary driver (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>). So, meeting the effort bar doesn't guarantee full marks for implementation.
-{% endcall %}
-
+{{ show_faq2("tpEnoughFeatures") }}
+{{ show_faq2("tpMustWrite300Loc") }}
+{{ show_faq2("tpFullMarksFor300Loc") }}
 <p/>
 </div>
 
