@@ -12,8 +12,6 @@
 This course requires you to write Java code almost every week, starting from the very first week. If your Java skills are rusty, do brush up your Java programming skills.
 
 In particular, you may want to **have a look at the new Java features** such as _streams_, _lambdas_, _Optionals_, that may not have been covered in previous Java courses.
-
-CS2103 students: ==This course assumes a reasonable prior knowledge of Java and OOP== because most students taking this course have taken two Java courses before. If you are totally new to Java, you may be better off switching to CS2113 (Software Engineering & Object-Oriented Programming) instead.
 </div>
 
 ## Workload
@@ -21,7 +19,7 @@ CS2103 students: ==This course assumes a reasonable prior knowledge of Java and 
 As {{ marks_ca }}% of this course is based on CA (see <trigger trigger="click" for="modal:expectations-gradeBreakdown">grade breakdown</trigger>), it can appear to be _heavy_. However, **it is not expected that you will spend more time on this course than its <tooltip content="e.g., if this course is core for you, it should not take more time than other core courses at the same level in your program">peer courses</tooltip>**.
 * Note that the **course contains more things than a typical students can do**, in order to provide enough things for even the strongest students to learn as much as they wish to.
 * This means it is ==perfectly OK if you don't have time to learn everything the course offers==. Control your workload based on time you spend for the course in a week e.g., 1-1.5 days per week.
-* We have provided a _topic levels_ to guide you when prioritizing which things to do.
+* We have provided a _topic levels_ (explained below) to guide you when prioritizing which things to do.
 
 <modal large header="Grade breakdown" id="modal:expectations-gradeBreakdown">
   <pic eager src="gradeBreakdown.png" no-validation />

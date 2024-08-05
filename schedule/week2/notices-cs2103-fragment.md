@@ -15,8 +15,6 @@
 
 <panel type="info" header="##### ==[MUST-WATCH]== Course Briefing + Weekly Briefing Videos" peek >
 
-**The course briefing** is released as videos this time, listed below. Please watch them in the order given. NUSNET login is required to access videos.
-
 <include src="../../admin/courseBriefings.md#course-briefing-w2" />
 
 </panel>

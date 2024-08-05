@@ -2,12 +2,11 @@
 
 {% set weekly_admin_tasks = {
 week1: [
-  {id: 'submit_pre_lecture_quiz', deadline: get_date(date_w1_start, 7), graded: true},
-  {id: 'set_up_tools', deadline: "before the weekly briefing"},
   {id: 'submit_pre_course_survey', deadline: get_date(date_w1_start, 4), graded: true},
   {id: 'learn_about_the_course'},
-  {id: 'follow_the_git_learning_trail'},
-  {id: 'attend_the_first_lecture'}
+  {id: 'submit_pre_lecture_quiz', deadline: get_date(date_w1_start, 7), graded: true},
+  {id: 'set_up_tools', deadline: "by Friday"},
+  {id: 'follow_the_git_learning_trail'}
 ],
 week2: [
   {id: 'submit_first_post_lecture_quiz', deadline: get_date(date_w2_start, 4, time=time_lecture_start), graded: true},

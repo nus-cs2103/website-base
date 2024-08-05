@@ -1,4 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/macros.njk" import show_faq with context %}
 
 {% call show_admin_page("programmingLanguages") %}
 <div id="main">
@@ -33,8 +34,6 @@ The exam expects you to know Java to the extent that you should be familiar with
 We require you to use **Java 17** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java17) or another alternative such as the OpenJDK version) for all course work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
 
 **If you have Java 8** (a particularly 'sticky' version of Java) in your computer, we recommend removing it, to prevent using it unintentionally.
-
-**Why not move to Java 21?**: While we are aware that Java 21 is a more recent LTS version of Java, we are sticking with Java 17 for the time being. We plan to move to Java 21 in a future semester when its adoption is sufficiently high.
 
 {% if cs2103 %}
 
@@ -82,6 +81,8 @@ If you encounter problems while doing the above or need more info, please ask in
 
 
 {% endif %}
+
+{{ show_faq("java21") }}
 </box>
 
 </div>

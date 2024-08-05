@@ -188,6 +188,8 @@ pageNav: {{ categories[category].pagenav }}
 <box type="info">
 
 **This is the <span class="text-primary">{{ show_as_tab('Admin', icon_tab_admin) }}</span> tab** of this week. It contains admin info relevant to this week.
+
+A label with the {{ icon_deadline }} icon indicates the deadline for that task %%(e.g., <span class="badge bg-secondary text-light">{{ icon_deadline }} Friday 2359</span>)%%.
 </box>
 {% endif %}
 

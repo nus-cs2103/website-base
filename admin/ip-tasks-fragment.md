@@ -64,14 +64,14 @@ Optionally, if you haven't pushed the commit to the fork yet, you can try to fig
 </div>
 <div id="volatile-requirements">
 
-<box type="info" dismissible>
+<box type="info">
 
 The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ url_forum }}) so that we can take necessary actions.
 </box>
 </div>
 <div id="no-jumping-ahead">
 
-<box dismissible>
+<box>
 
 {{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks, although it is fine to stay ahead of the schedule a bit (but no more than a week ahead).<br>
 Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and span a longer period**, rather than to be done as a short burst.
@@ -81,7 +81,7 @@ Reminder: As per iP grading criteria, _some_ increments need to be done in each 
 </div>
 <div id="follow-instructions">
 
-<box dismissible>
+<box>
 
 {{ icon_important_big_red }} Please follow instructions carefully. Any deviations can cause our grading scripts to miss your work (and result in you not getting credit for the work).
 
@@ -97,7 +97,7 @@ Reminder: As per iP grading criteria, _some_ increments need to be done in each 
 <include src="ip-tasks-fragment.md#no-jumping-ahead" />
 <include src="ip-tasks-fragment.md#follow-instructions" />
 
-<box dismissible>
+<box>
 
 **:fas-clock: Deadline:**
 

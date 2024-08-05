@@ -47,7 +47,8 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
 **Install Git and a Git GUI client** on your computer.<br>
-  {{ icon_tip }} Sourcetree comes bundled with Git i.e., if you install Sourcetree, you get both Git and a GUI client in one shot. If you are already comfortable using Git command line, you need not install/use a GUI client.
+  **Sourcetree (our recommended Git GUI client)** comes bundled with Git i.e., if you install Sourcetree, you get both Git and a GUI client in one shot ([installation instructions](https://se-education.org/guides/tutorials/sourcetree.html)).<br>
+  If you are already familiar with Git and you prefer to use Git via the command line (i.e., without a GUI), you can [install standalone Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) instead.
 
 <div id="git-username">
 
@@ -127,11 +128,13 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 ## Tool: IntelliJ IDE
 
-You are recommended to use [IntelliJ IDEA](https://www.jetbrains.com/idea/) for course-related programming work. While the use of IntelliJ is not compulsory, note that course materials are optimized for IntelliJ.
+**[IntelliJ IDEA](https://www.jetbrains.com/idea/) is the recommended IDE** for course-related programming work. Using an IDE is strongly recommended but is not compulsory.
 
 <box type="warning" seamless>
 
-Use other IDEs at your own risk. If you run into problems while using them, we won't be able to help you.
+**Use other IDEs at your own risk**, because,<br>
+a) course materials are optimized for IntelliJ, and,
+b) we won't be able to help you if you run into problems while using any other IDE.
 </box>
 
 <box>

@@ -2,10 +2,10 @@
 <div id="faq-whereIsEverything-Q">Where is everything?</div>
 <div id="faq-whereIsEverything-A">
 
-<p class="lead">The {{ url_schedule }} presents all you need to know in chronological order while the other pages have some of the same content organized by topic.
+<p class="lead">The {{ url_schedule }} presents all you need to know in chronological order (for each week) while the other pages have some of the same content organized by topic.
 </p>
 
-The <span class="font-weight-bold">{{ url_schedule }}</span> is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the <span class="font-weight-bold">{{ url_admin }}</span> and the [**Textbook page**]({{baseUrl}}/se-book-adapted/index.html) -- which you are welcome to read in those respective pages -- the same content is also embedded in the relevant weeks of the Schedule page. Embedded extracts usually appear in expandable panels and can be identified by the symbol {{ icon_embedding }} in the panel title.
+The <span class="font-weight-bold">{{ url_schedule }}</span> is ==_the_ one page you need to refer weekly==. Although there is a lot of content in the <span class="font-weight-bold">{{ url_admin }}</span> and the [**Textbook page**]({{baseUrl}}/se-book-adapted/index.html) -- which you are welcome to read in those respective pages -- the same content is also cross-embedded in the corresponding weekly schedule pages. Such cross-embedded extracts usually appear in expandable panels and can be identified by the symbol {{ icon_embedding }} in the panel title.
 
 </div>
 <!-- =============================================================== -->
@@ -107,6 +107,12 @@ In addition, spreading the work across the semester aligns with the <tooltip con
 <pic eager src="{{baseUrl}}/admin/images/Submission requirements differ.png" width="300"/>
 
 {{ course }}T communication requirements are limited to a very narrow scope (i.e., communicate about the product to users and developers). CS2101 aims to teach you technical communication in a much wider context. While you may be able to reuse some of the stuff across the two courses, submission requirements are not intended to be exactly the same.
+</div>
+<!-- =============================================================== -->
+<div id="faq-java21-Q">Why not move to a newer Java version (e.g., 21)?</div>
+<div id="faq-java21-A">
+
+While we are aware that Java 21 is a more recent LTS version of Java, we are sticking with Java 17 for the time being. We plan to move to Java 21 in a future semester when its adoption is sufficiently high.
 </div>
 <!-- ===============================================================
   Participation FAQ

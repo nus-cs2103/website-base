@@ -127,7 +127,7 @@
 <variable name="url_course_website">{{ url_course_gihub_io | safe }}/website</variable>
 <variable name="url_participation_dashboard">{{ url_dashboards }}/contents/participation.html</variable>
 <variable name="url_quizzes">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}/quizzes</variable>
-<variable name="url_schedule"><md>[Schedule page]({{baseUrl}}/schedule/index.html)</md></variable>
+<variable name="url_schedule"><md>[Weekly Schedule Page]({{baseUrl}}/schedule/index.html)</md></variable>
 <variable name="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
 <variable name="url_tp_dashboard">{{ url_course_gihub_io | safe }}/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other</variable>
 <variable name="url_tp_progress_dashboard">{{ url_dashboards }}/contents/tp-progress.html</variable>
@@ -148,7 +148,7 @@
 <variable name="icon_announcement"><md>:fas-bell:</md></variable>
 <variable name="icon_book"><md>:fas-book:</md></variable>
 <variable name="icon_calendar"><md>:fas-calendar-alt:</md></variable>
-<variable name="icon_deadline"><md>:fas-clock:</md></variable>
+<variable name="icon_deadline"><md>:far-clock:</md></variable>
 <variable name="icon_dislike"><md>:fas-thumbs-down:</md></variable>
 <variable name="icon_example"><md>:fas-cube:</md></variable>
 <variable name="icon_embedding"><md>:glyphicon-log-in:</md></variable>

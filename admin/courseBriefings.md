@@ -20,15 +20,15 @@
 <div id="course-briefing-w1">
 
 ****1. Welcome to the Course****:{.text-info}
-{{ panopto(desc="1 min", "5503e0be-24bb-4ba2-807f-b0fb01057eb9", start_week="0") }}
+{{ panopto(desc="1 min", "5503e0be-24bb-4ba2-807f-b0fb01057eb9", start_week="1") }}
 
-<span class="text-info">****2. Course Goals****</span>: How the goals of this course shape the way it is run (possibly different from other courses), and how it should be approached by students.
-{{ panopto(desc="9 mins", "a4d6f92e-b12f-4046-853b-b0fb01058143", start_week="0") }}
+<span class="text-info">****2. Course Goals****</span>: How the goals of this course shape its structure (possibly different from other courses), and how it should be approached by students.
+{{ panopto(desc="9 mins", "a4d6f92e-b12f-4046-853b-b0fb01058143", start_week="1") }}
 
 
 <span class="text-info">****3. Week 1 Overview****</span>: As this is the first weekly briefing, **it also covers some general points relevant to all future weeks**.
 
-{{ panopto(desc="8 mins", "f8088218-b6d5-4cc5-a933-b0fb01057ec2", start_week="0") }}
+{{ panopto(desc="8 mins", "f8088218-b6d5-4cc5-a933-b0fb01057ec2", start_week="1") }}
 </div>
 </panel>
 

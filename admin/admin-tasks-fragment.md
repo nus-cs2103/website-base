@@ -12,21 +12,19 @@
 <span id="heading_submit_pre_lecture_quiz">Submit prereq topics quiz</span>
 <div id="desc_submit_pre_lecture_quiz">
 
-* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz`** (on Canvas) to test your knowledge of those topics. Ideally, finish the quiz before the first
-{{ lecture_name }}, latest by the given deadline. The quiz is counted for participation.
+* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz (aka prereq topics quiz)`** (on Canvas) to demonstrate your knowledge of those topics.<br>
+   **This quiz counts for participation** (as indicated by the {{ icon_graded }} icon above).
+
+{{ show_faq("whenCanWeSeeQuizAnswers") }}
 
 {{ embed_topic(baseUrl+"/admin/participation.md#main", "Admin " + icon_embedding + " **Participation**", "2", indent="1") }}
 
-<box type="tip" seamless>
-
-<include src="../book/about/usage.md#tip-about-popup-url" />
-</box>
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_tools">Set up the tools</span>
 <div id="desc_set_up_tools">
 
-* Follow the <span class="border pe-1 ps-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions of the following tools.
+* Follow the tool <span class="border pe-1 ps-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions given in the following panels.
 
 {{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="1") }}
@@ -42,17 +40,21 @@
 <span id="heading_submit_pre_course_survey">Submit the pre-course survey</span>
 <div id="desc_submit_pre_course_survey">
 
-* **Submit the pre-course survey ==(compulsory)==**<br>
-  _Pre-Course Survey_ will be available on Canvas **Week 1 Monday - Friday 2359**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
+* **Submit the pre-course survey** (==compulsory== because it collects some important information about you e.g., your GitHub username.) -- will be open on Canvas, latest by **Week 1 Monday**.
 </div>
 {#====================================================================================================================#}
 <span id="heading_learn_about_the_course">Learn about the course</span>
 <div id="desc_learn_about_the_course">
 
+<box type="tip" seamless>
+
+<include src="../book/about/usage.md#tip-about-popup-url" />
+</box>
+
 * Read the following admin info about the course.
 
-{{ embed_topic(baseUrl+"/admin/courseExpectations.md#main", "Admin " + icon_embedding + " **Course expectations and ==topic levels==**", "1", indent="1", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="1", type="danger") }}
+{{ embed_topic(baseUrl+"/admin/courseExpectations.md#main", "Admin " + icon_embedding + " **Course expectations and ==topic levels==**", "1", indent="1", type="danger") }}
 {{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="1", type="info") }}
 {{ embed_topic(baseUrl+"/admin/weeklySchedule.md#main", "Admin " + icon_embedding + " **Weekly schedule**", "2", indent="1", type="warning") }}
 

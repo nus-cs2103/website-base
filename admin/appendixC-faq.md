@@ -20,6 +20,7 @@
 {{ show_expanded_faq("favoriteTool") }}
 {{ show_expanded_faq("manySubmissions") }}
 {{ show_expanded_faq("cs2101Difference") if cs2103  }}
+{{ show_expanded_faq("java21")  }}
 {{ show_expanded_faq("whenCanWeSeeQuizAnswers") }}
 
 ## FAQs on: tP
