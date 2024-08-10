@@ -60,7 +60,7 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 </div>
 
 #### Tutors:
-* TBA <!--**Ou Jin Bin (Kelvin)**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`e0902046`[at]`u.nus.edu`</span>-->
+* **Khoo Jin Xiang**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`e0958193`[at]`u.nus.edu`</span>
 
 </div>
 
@@ -69,12 +69,12 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 # Lectures + Tutorials
 <div class="indented" id="lectures-info">
 
-%%:far-clock:%% Tuesdays 1800-2130<br>
+%%:far-clock:%% Wednesdays 1800-2130<br>
 %%:fas-map-marker-alt:%% Venue: {{ lecture_venue }}<br>
 
 **A TEE3201 lecture + tutorial time is divided into three parts**, as follows:
 
-* 1800-1900: Do exercises related to previous week topics. Consult prof (via MS Teams) if you encounter problems.
+* 1800-1900: Do exercises related to previous week topics. Consult prof/tutor (via MS Teams or F2F) if you encounter problems.
 * 1900-2000: Short lecture/briefing, introducing topics for the current week.<br>
   Delivered in ==hybrid mode (i.e., you can attend F2F, join via Zoom, or watch the recording later)==. After that, watch the pre-recorded videos and follow the textbook sections provided.
 * 2000-2130: Optionally, you can stay back and do exercises for the current week. Consult prof/TA (F2F or using MS Teams) for help, as needed.<br>

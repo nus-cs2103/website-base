@@ -30,6 +30,26 @@
   <div class="row bt-2">
     <div class="col-3">
 
+<img src="{{ url_course_gihub_io }}/tutor-photos/adamsmd.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### **Michael** D. Adams
+
+**Co-Lecturer**<br>
+%%:fas-envelope:%% `adamsmd`[at]`nus.edu.sg`<br>
+%%:fas-map-marker-alt:%% COM3‐02‐47<br>
+%%:fab-github:%% [@prabhu-na](https://github.com/adamsmd)
+
+</div>
+</div>
+</div>
+
+-----------------------------
+
+<div class="container">
+  <div class="row bt-2">
+    <div class="col-3">
 
 <img src="{{ url_course_gihub_io }}/tutor-photos/prabhu-na.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
@@ -37,7 +57,7 @@
 
 ### **Prabhu** NATARAJAN
 
-**Lecturer**<br>
+**Co-Lecturer**<br>
 %%:fas-envelope:%% `prabhu`[at]`comp.nus.edu.sg`<br>
 %%:fas-map-marker-alt:%% COM3-02-34 | %%:fas-phone-square:%% 6516 1105<br>
 %%:fab-github:%% [@prabhu-na](https://github.com/prabhu-na)
@@ -54,8 +74,8 @@
 %%:fas-map-marker-alt:%% COM2-03-55 | %%:fas-phone-square:%% 6601 7601<br>
 %%:fab-github:%% [@ganeshniyer](https://github.com/ganeshniyer)
 -->
-    </div>
-  </div>
+</div>
+</div>
 </div>
 
 -----------------------------
@@ -79,7 +99,6 @@
 </div>
 
 -----------------------------
-<!--
 <div class="container">
   <div class="row bt-2">
     <div class="col-3">
@@ -97,7 +116,6 @@
     </div>
   </div>
 </div>
--->
 
 ## Tutors
 

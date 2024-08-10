@@ -11,24 +11,29 @@
 
 **Most course briefing videos are categorized MUST-WATCH** as they contain important information that you need to know to increase your effort-to-gain ratio, and get the best out of this course.
 
-**They are listed below for reference only.** When it is time for you to watch a certain course briefing video, it will appear in the current schedule page of the course website.<br>
-**We track their viewership** and remind when you don't watch them on time.
+**They are listed below for reference only.** When it is time for you to watch a certain course briefing video, it will appear in the current schedule page of the course website.
+
 
 <!-- ==================================================== -->
 
 <panel type="info" header="#### Week 1 Course Briefings" expanded>
 <div id="course-briefing-w1">
+<box seamless>
+
+**{{ icon_graded }} Course briefing video viewing counts for participation.**<br>
+**:fas-closed-captioning: We have added closed captioning support** for course briefing videos.
+</box>
 
 ****1. Welcome to the Course****:{.text-info}
-{{ panopto(desc="1 min", "5503e0be-24bb-4ba2-807f-b0fb01057eb9", start_week="1") }}
+{{ panopto(desc="1 min", "999708f4-bc1d-45bb-85a3-b1c400342f2c", start_week="0") }}
 
 <span class="text-info">****2. Course Goals****</span>: How the goals of this course shape its structure (possibly different from other courses), and how it should be approached by students.
-{{ panopto(desc="9 mins", "a4d6f92e-b12f-4046-853b-b0fb01058143", start_week="1") }}
+{{ panopto(desc="9 mins", "a4d6f92e-b12f-4046-853b-b0fb01058143", start_week="0") }}
 
 
-<span class="text-info">****3. Week 1 Overview****</span>: As this is the first weekly briefing, **it also covers some general points relevant to all future weeks**.
+<span class="text-info">****3. Week 1 Briefing****</span>: As this is the first weekly briefing, **it also covers some general points relevant to all future weeks**.
 
-{{ panopto(desc="8 mins", "f8088218-b6d5-4cc5-a933-b0fb01057ec2", start_week="1") }}
+{{ panopto(desc="4 mins", "267ac3b6-25a9-48cf-b3e3-b1c400f8696c", start_week="0") }}
 </div>
 </panel>
 
@@ -58,7 +63,7 @@ This week's briefing videos start with a detour.
 
 ---
 
-<span class="text-info">****3. Week 2 Briefing****</span>: This video briefs you on what you need to do in week 2.<br>
+<span class="text-info">****3. Week 1-2 Briefing****</span> (Week 1 Recap + Week 2 Preview): This video recaps Week 1 and gives a preview of what you need to do in Week 2.<br>
 %%Note: While weekly briefings are normally done in hybrid mode, this week's briefing is released as a pre-recorded video, to allow you to get started with week 2 tasks early.%%
 
 {{ panopto(desc="8 mins", "f8088218-b6d5-4cc5-a933-b0fb01057ec2", start_week="2") }}

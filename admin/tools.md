@@ -46,13 +46,14 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
-**Install Git and a Git GUI client** on your computer.<br>
-  **Sourcetree (our recommended Git GUI client)** comes bundled with Git i.e., if you install Sourcetree, you get both Git and a GUI client in one shot ([installation instructions](https://se-education.org/guides/tutorials/sourcetree.html)).<br>
-  If you are already familiar with Git and you prefer to use Git via the command line (i.e., without a GUI), you can [install standalone Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) instead.
+**1. Install Git and a Git GUI client** on your computer.
+
+* **Option A [recommended]: install Sourcetree (our recommended Git GUI client)** which comes bundled with Git i.e., if you install Sourcetree, you get both Git and a GUI client in one shot ([installation instructions](https://se-education.org/guides/tutorials/sourcetree.html)).<br>
+* **Option B: Install stand-alone Git**: If you are already familiar with Git and you prefer to use Git via the command line (i.e., without a GUI), you can [install standalone Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) instead.
 
 <div id="git-username">
 
-**Set Git `user.name`**: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to ==set your Git `user.name` in all computers you use== to a sensible string that uniquely identifies you. For example, ==you can set it to your GitHub username or your full name==. If this user name is not set properly or if you use multiple usernames for Git, our grading scripts might miss some of your work.
+**2. Set Git `user.name`**: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to ==set your Git `user.name` in all computers you use== to a sensible string that uniquely identifies you. For example, ==you can set it to your GitHub username or your full name==. If this username is not set properly or if you use multiple usernames for Git, our grading scripts might miss some of your work.
 
 After installing Git in a computer, you can set the Git username as follows:
 1. Open a terminal that can run Git commands (e.g., a [Git Bash](https://www.atlassian.com/git/tutorials/git-bash) window, which comes with Sourcetree)
@@ -133,7 +134,7 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 <box type="warning" seamless>
 
 **Use other IDEs at your own risk**, because,<br>
-a) course materials are optimized for IntelliJ, and,
+a) course materials are optimized for IntelliJ, and,<br>
 b) we won't be able to help you if you run into problems while using any other IDE.
 </box>
 

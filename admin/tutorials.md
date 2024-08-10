@@ -10,7 +10,8 @@
 
 <box>
 
-{{ icon_important_big_red }} Our tutorial IDs are different from Canvas. Format: `{{ course }}{{ "T" if cs2103 }}-W11` means a tutorial of `{{ course }}{{ "T" if cs2103 }}` course, held on `Wednesday` at `1100`, and so on.
+{{ icon_important_big_red }} Our tutorial IDs are different from Canvas. Format: `{{ course }}{{ "T" if cs2103 }}-W11` means a tutorial of `{{ course }}{{ "T" if cs2103 }}` course, held on `Wednesday` at `1100`, and so on.<br>
+If there are parallel slots for the same course code, a suffix of `a` or `b` is added e.g., `{{ course }}{{ "T" if cs2103 }}-W11a`
 
 </box>
 

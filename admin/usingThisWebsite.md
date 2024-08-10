@@ -30,19 +30,19 @@
 {{ icon_deadline }} : deadline<br>
 </div>
 
-### Searching for keywords{.text-white .bg-dark .p-2}
+### Searching for keywords{.text-white .bg-secondary .p-2}
 
 Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting [in the forum]({{url_forum}}) so that we can add the missing keyword to our search index.
 
 <include src="../book/about/usage.md#saving" />
 
-### Printing Textbook Content{.text-white .bg-dark .p-2}
+### Printing Textbook Content{.text-white .bg-secondary .p-2}
 
 A PDF version of the full textbook (<tooltip content="i.e., contains examinable topics only">optimized for exam reference</tooltip>) will be provided at the start of the semester.
 
 In addition, printer-friendly version %%(indicated by {{icon_print}} icon)%% have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.
 
-### Making this Website Better{.text-white .bg-dark .p-2}
+### Making this Website Better{.text-white .bg-secondary .p-2}
 
 This website was generated using the [MarkBind](https://markbind.org/) software developed at NUS. **We welcome bug reports, suggestions, and contributions**, to be submitted [in the forum]({{url_forum}}).
 
