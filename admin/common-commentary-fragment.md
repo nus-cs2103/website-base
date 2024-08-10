@@ -300,7 +300,7 @@ For the next few sections, the drill is the same: first learn the high-level exp
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="rcs-remote-repos">
 
-Having learned how to use Git in your own computer, let's also learn a bit about working with remote repositories too. <span tags="m--cs2103 m--cs2113">Yes it's a bit too much to take in one week but we want you to start using Git in your iP from the very beginning.</span>
+Having learned how to use Git in your own computer, let's also learn a bit about working with remote repositories too. <span tags="m--cs2103 m--cs2113">While it seems like a bit 'too much' to take in one week, but we want you to start using Git in your iP (individual project) from the very beginning.</span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("RCS: Using History") }}">

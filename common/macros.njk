@@ -74,8 +74,8 @@
 {% endfor %}
 {% endmacro %}
 
-{% macro show_faq(faq_id, is_main_faq="") %}
-<panel type="seamless" {{ "expanded" if is_main_faq else "" }}>
+{% macro show_faq(faq_id, is_main_faq="", status="") %}
+<panel type="seamless" {{ "expanded" if is_main_faq else status }}>
 <span slot="header" class="card-title"><markdown>{{ "####" if is_main_faq else "" }} {{ faq }} <include src="{{ baseUrl }}/admin/faq-fragment.md#faq-{{ faq_id }}-Q" inline /></markdown></span>
 <box type="secondary" seamless>
 

@@ -48,7 +48,7 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 
 **1. Install Git and a Git GUI client** on your computer.
 
-* **Option A [recommended]: install Sourcetree (our recommended Git GUI client)** which comes bundled with Git i.e., if you install Sourcetree, you get both Git and a GUI client in one shot ([installation instructions](https://se-education.org/guides/tutorials/sourcetree.html)).<br>
+* **Option A [recommended]: install Sourcetree (our recommended Git GUI)** which comes bundled with Git i.e., if you install Sourcetree, you get both Git and a GUI client in one shot ([installation instructions](https://se-education.org/guides/tutorials/sourcetree.html)).<br>
 * **Option B: Install stand-alone Git**: If you are already familiar with Git and you prefer to use Git via the command line (i.e., without a GUI), you can [install standalone Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) instead.
 
 <div id="git-username">

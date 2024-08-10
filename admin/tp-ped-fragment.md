@@ -1,10 +1,10 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, get_date with context %}
 
 #### <span class="badge bg-primary">PE-D</span> <span class="text-primary">Overview</span>
 
 **What**: The latest release of the {{ version_penultimate }} period is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
-**When, where**: uses a 40-minutes slot at the start of week 11 {{ lecture_name }} slot.
+**When, where**: uses a 40-minutes slot at the start of week {{ ped_week }} ({{ get_date(date_w11_start if ped_week=='11' else date_w12_start, 4, time=time_lecture_start) }}) lecture slot.
 {% if cs2103 %}It will be conducted via Zoom. If you can't find another suitable location to join the Zoom meeting, you may do so from the lecture venue.{% endif%}
 
 <modal large header="Admin {{ icon_embedding }} tP → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">

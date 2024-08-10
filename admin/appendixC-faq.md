@@ -23,6 +23,19 @@
 {{ show_expanded_faq("java21")  }}
 {{ show_expanded_faq("whenCanWeSeeQuizAnswers") }}
 
+## FAQs on: iP
+
+{{ show_expanded_faq("ipHowTagsUsed") }}
+{{ show_expanded_faq("ipBugAfterIncrementDone") }}
+{{ show_expanded_faq("ipMultipleIncrementsInSameCommit") }}
+{{ show_expanded_faq("ipIncrementAlreadyDone") }}
+{{ show_expanded_faq("ipForgotToPushTag") }}
+{{ show_expanded_faq("ipIncorrectTagOrBranch") }}
+
+## FAQs on: Tutorials
+
+{{ show_expanded_faq("tutorialWhatTutorsCanAnswer") }}
+
 ## FAQs on: tP
 
 {{ show_expanded_faq("dgDetailsLevel") }}

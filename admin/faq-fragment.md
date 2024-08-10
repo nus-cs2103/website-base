@@ -115,6 +115,52 @@ In addition, spreading the work across the semester aligns with the <tooltip con
 While we are aware that Java 21 is a more recent LTS version of Java, we are sticking with Java 17 for the time being. We plan to move to Java 21 in a future semester when its adoption is sufficiently high.
 </div>
 <!-- ===============================================================
+  iP
+=============================================================== -->
+<div id="faq-ipHowTagsUsed-Q">How are the iP git tags used in grading?</div>
+<div id="faq-ipHowTagsUsed-A">
+
+Adding a git tag in the iP is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor those progress declarations.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipBugAfterIncrementDone-Q">What if I discovered a bug after I finished an increment?</div>
+<div id="faq-ipBugAfterIncrementDone-A">
+
+Go ahead and fix it in a subsequent commit. There is no need to update the previous commit or move the corresponding tag to the new commit. As we do not test your code at every tag, earlier bugs will not affect your grade as long as they are fixed eventually. Similarly, feel free to improve the code of previous increments later.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipMultipleIncrementsInSameCommit-Q">I did multiple increments in the same commit. How to fix?</div>
+<div id="faq-ipMultipleIncrementsInSameCommit-A">
+
+You can add the corresponding tags to the same commit.<br>
+Optionally, if you haven't pushed the commit to the fork yet, you can try to figure out how to split that commit into multiple commits.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipIncrementAlreadyDone-Q">The requirements of an increment scheduled for this week is already satisfied by the work I did in an earlier week. What now?</div>
+<div id="faq-ipIncrementAlreadyDone-A">
+
+You can add the corresponding tag to the earlier commit (or the latest commit -- it doesn't matter) and push the tag.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipForgotToPushTag-Q">My iP increments are not detected by the dashboard because I forgot to push my tags earlier. What now?</div>
+<div id="faq-ipForgotToPushTag-A">
+
+Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipIncorrectTagOrBranch-Q">Oh no! I made a mistake in my tag/branch name.</div>
+<div id="faq-ipIncorrectTagOrBranch-A">
+
+It's OK; correct it now.
+</div>
+<!-- =============================================================== -->
+<div id="faq-temp-Q"></div>
+<div id="faq-temp-A">
+
+
+</div>
+<!-- =============================================================== -->
+<!-- ===============================================================
   Participation FAQ
 =============================================================== -->
 
@@ -125,6 +171,26 @@ In most quizzes, answers will be released within a day after the quiz deadline.
 
 On a related note, if you are not confident about the answer you've selected for a question, ==you are welcome to discuss it in the [forum]({{ url_forum }}), even if the submission deadline is not over yet== (but one question per thread please).
 
+</div>
+<!-- =============================================================== -->
+
+<!-- ===============================================================
+  Tutorial FAQ
+=============================================================== -->
+<div id="faq-tutorialWhatTutorsCanAnswer-Q">What kind of questions can I ask the tutor?</div>
+<div id="faq-tutorialWhatTutorsCanAnswer-A">
+
+TLDR: In this course, tutor's main job is to deliver tutorials. Hence, tutors can answer questions related to (and arising from) the tutorial delivery. But they are not allowed to answer admin questions. They are not allowed to help with technical issues.
+
+* {{ good }} *I did not understand your explanation of that question. Why did you say "a b c"?*<br>
+  %%**Reason**: This question is a follow-up from a tutorial discussion.%%
+* {{ good }} *This is how I understood coupling. Is that correct?*<br>
+  %%**Reason**: This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.%%
+* {{ bad }} *What is coupling?* - Such questions are discouraged.<br>
+  %%**Reason**: This question implies you haven’t done what you could to learn the topic in concern.%%{% if cs2103 %}
+* {{ bad }} *How will this be graded?* | *What happens if this submission is late?* %%**Reason**: Tutors are not allowed to answer admin questions.%%
+* {{ bad }} *My program crashes with this error; what to do?*<br>
+  %%**Reason**: Tutors are not allowed to help with technical issues (post your issue in the forum instead).%%{% endif %}
 </div>
 <!-- =============================================================== -->
 

@@ -1,4 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/macros.njk" import show_faq with context %}
 
 {% call show_admin_page("appendixD-help") %}
 <div id="main">
@@ -6,7 +7,7 @@
 {% set negative_icon = '{icon="fas-thumbs-down" i-class="text-white badge rounded-pill bg-danger" i-size="12px"}' %}
 {% set positive_icon = '{icon="fas-thumbs-up" i-class="text-white badge rounded-pill bg-success" i-size="12px"}' %}
 
-%%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on course topics too. e.g. what is the difference between _refactoring_ and _rewriting_?%%
+%%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on course topics too. e.g. what is the difference between_refactoring_and_rewriting_?%%
 
 <span class="float-end">
 
@@ -95,13 +96,11 @@ _Rubber duck debugging_ is an informal term used in software engineering to ref
 
     </box>
 
-<span id="questions-for-tutros">
+<span id="questions-for-tutors">
 
-* **Raise your question during a tutorial**. Some questions can be discussed with the tutor and tutorial-mates.<br>
-  What kind of questions are suitable to discuss with the tutor? Consider these questions you might want to ask a tutor:{{ positive_icon }}
-  * {{ good }} *This is how I understood coupling. Is that correct?* - Such questions are welcome. %%**Reason**: This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.%%
-  * {{ bad }} *What is coupling?* - Such questions are discouraged. %%**Reason**: This question implies you haven’t done what you could to learn the topic in concern.%%{% if cs2103 %}
-  * {{ bad }} *How will this be graded?* | *What happens if this submission is late?* %%**Reason**: Tutors are not allowed to answer admin questions.%%{% endif %}
+* **Raise your question during a tutorial**. Some questions can be discussed with the tutor and tutorial-mates.
+
+{{ show_faq("tutorialWhatTutorsCanAnswer", status="expanded") }}
 
 </span>
 

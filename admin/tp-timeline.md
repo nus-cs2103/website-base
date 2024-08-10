@@ -143,7 +143,7 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 
 <div tags="m--cs2103" class="indented-level2">
 
-#### {{ badge("W" + (tfw + 4))}} Iter.1 %%[ --{{ weekly_tp_themes.w7.name }} → {{ version_practice }}-- ]%%
+#### {{ badge("W" + (tfw + 4))}} Iter.1 %%[ --{{ weekly_tp_themes.w7.name }}-- ]%%
 
 <div id="v11-goals" class="indented">
 

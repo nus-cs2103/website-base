@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/topics.njk" import panopto with context %}
-{% from "common/macros.njk" import button, embed_topic, get_date, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, get_date, show_faq, step, thumb, timing_badge with context %}
 {% from "_course-" + course + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
@@ -11,31 +11,13 @@
 
 #####  **FAQ** about iP increments{.text-info}
 
-<panel type="seamless" header="**Q.** How are the iP git tags used in grading?">
+{{ show_faq("ipHowTagsUsed") }}
+{{ show_faq("ipBugAfterIncrementDone") }}
+{{ show_faq("ipMultipleIncrementsInSameCommit") }}
+{{ show_faq("ipIncrementAlreadyDone") }}
+{{ show_faq("ipForgotToPushTag") }}
+{{ show_faq("ipIncorrectTagOrBranch") }}
 
-**A.** Adding a git tag in the iP is a self-declaration that you _think_ you are done with the iP increment. We take your word for it. We don't check the code to see if you have actually done the said increment. Therefore, it is just a mechanism for you to self-declare progress and for us to monitor those progress declarations.
-</panel>
-<panel type="seamless" header="**Q.** What if I discovered a bug after I finished an increment?">
-
-**A.** Go ahead and fix it in a subsequent commit. There is no need to update the previous commit or move the corresponding tag to the new commit. As we do not test your code at every tag, earlier bugs will not affect your grade as long as they are fixed eventually. Similarly, feel free to improve the code of previous increments later.
-</panel>
-<panel type="seamless" header="**Q.** I did multiple increments in the same commit. How to fix?">
-
-**A.** You can add the corresponding tags to the same commit.<br>
-Optionally, if you haven't pushed the commit to the fork yet, you can try to figure out how to split that commit into multiple commits.
-</panel>
-<panel type="seamless" header="**Q.** The requirements of an increment scheduled for this week is already satisfied by the work I did in an earlier week. What now?">
-
-**A.** You can add the corresponding tag to the earlier commit (or the latest commit -- it doesn't matter) and push the tag.
-</panel>
-<panel type="seamless" header="**Q.** My iP increments are not detected by the dashboard because I forgot to push my tags earlier. What now?">
-
-**A.** Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
-</panel>
-<panel type="seamless" header="**Q.** Oh no! I made a mistake in my tag/branch name.">
-
-**A.** It's OK; correct it now.
-</panel>
 </box>
 </div>
 <div id="order">
@@ -105,7 +87,7 @@ Note the typical deadline weekly project tasks:
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1") }}
 <p/>
 
-As per the above, ==you have until the next {{ lecture_name }}== to finish this week's iP tasks, but if you fail to do so, we won't penalize you if you can catch up within one more week after that deadline.
+As per the above, ==you have until the next {{ lecture_name }}== (i.e., Friday {{ time_lecture_start }}) to finish this week's iP tasks, but if you fail to do so, we won't penalize you if you can catch up within one more week after that deadline.
 </box>
 </div>
 <div id="cs2103-week3-intro">
