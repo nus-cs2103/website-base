@@ -233,7 +233,7 @@ When using Zoom, remember to login using the `SSO` option and use your NUSNET ac
 ### Microsoft Teams (MST)
 
 Install MST in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams) (requires login).<br>
-When using MST, remember to login using your NUSNET account.
+When using MST, remember to log in using your NUSNET account.
 
 The MST team used for the class is `TIC2002-{{ period }}` ([link]({{ url_ms_teams_class }})).
 
@@ -243,9 +243,8 @@ The MST team used for the class is `TIC2002-{{ period }}` ([link]({{ url_ms_team
 
 We'll be using Git as our revision control tool (compulsory).
 
-{{ icon_important_big_red }} If you are not familiar with Git already, install [Sourcetree](https://www.sourcetreeapp.com/) (a GUI for Git, but also contains Git) on your computer.
+{{ icon_important_big_red }} If you are not familiar with Git already, install Sourcetree (a GUI for Git, but also contains Git) on your computer. Instructions are [here](https://se-education.org/guides/tutorials/sourcetree.html).
 
-{{ icon_tip }} If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).
 </div>
 <div id="github-info">
 

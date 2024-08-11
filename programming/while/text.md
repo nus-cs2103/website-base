@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import show_trinket with context %}
+
 ### `while` Statements
 
 **Python uses the `while` statement to repeat a code block until a certain condition is true. Such an execution path is also known as a _loop_ and each execution of the code block is called an _iteration_.**
@@ -43,11 +45,7 @@ Done
 </table>
 
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('7aba9e758a') }}
 
 </tip-box>
 
@@ -94,11 +92,7 @@ while True:
 print('Password correct. You may proceed.')
 ```
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/password-loop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('2904a7a8f3') }}
 
 </tip-box>
 
@@ -128,11 +122,7 @@ while count < 3:
 print('Accepted words: ' + accepted_words)
 ```
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/three-words?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('b0830fdf10') }}
 
 </tip-box>
 

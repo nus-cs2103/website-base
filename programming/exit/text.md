@@ -1,6 +1,8 @@
+{% from "common/macros.njk" import show_trinket with context %}
+
 ### Early Termination
 
-At times you may need to terminate a program execution early %%&nbsp;i.e., without reaching the end of the code%%. **You can use the `exit()` function in the `system` module to terminate a program early.**
+At times, you may need to terminate a program execution early %%&nbsp;i.e., without reaching the end of the code%%. **You can use the `exit()` function in the `system` module to terminate a program early.**
  
 
 <tip-box> 
@@ -20,11 +22,7 @@ for i in range(n):
     print(math.factorial(i+1)) # use i+1 because i starts from 0
 ```
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-factorials?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('3e93421dc5') }}
 
 </tip-box>
 

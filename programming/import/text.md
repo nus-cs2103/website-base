@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import show_trinket with context %}
+
 ### Importing Modules
 
 In addition to _built-in_ functions such as `print()`, `input()`, and `len()`, **Python has a set of functions called the _standard library_.** Functions in the standard library are divided into modules. **A _module_ is a python program that contains a related group of functions**. You can think of it as a file containing some python functions.
@@ -37,11 +39,7 @@ for i in range(5):
     print(random.randint(1, 10))
 ```
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/five-randoms?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('667325b09a') }}
 
 </tip-box>
 

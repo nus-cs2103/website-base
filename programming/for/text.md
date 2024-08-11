@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import show_trinket with context %}
+
 ### `for` Statements
 
 You can **use a `for` statement, together with the `range()` function, to repeat a code block a pre-determined number of times.**
@@ -43,11 +45,7 @@ while i < 3:
   i = i + 1
 ```
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/penny-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('c94a1fde63') }}
 
 </tip-box>
 
@@ -90,11 +88,7 @@ for n in range (5):
 print('Grand total of non-negative numbers:', str(total))
 ```
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/addup-positive?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('1e54e714c5') }}
 
 </tip-box>
 
@@ -116,11 +110,7 @@ for i in range(2, 5):
     print(i, 'x', j, '=', i*j)
 ```
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/for-manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('91e82495fc') }}
 
 </tip-box>
 

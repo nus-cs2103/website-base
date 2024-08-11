@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import show_trinket with context %}
+
 ### `if` Statements
 
 Python uses the `if` statement to indicate that some code should only be executed if a certain condition is true.
@@ -120,11 +122,7 @@ elif gender == 'O':
 else:
     print('Unrecognized value')             
 ```
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/gender-if?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('d2f7cf646e') }}
 
 Note that in an `if-elif-else` construct no more than one block (the first one whose condition is true) will be executed.
 

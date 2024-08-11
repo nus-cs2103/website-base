@@ -291,7 +291,7 @@ A label with the {{ icon_deadline }} icon indicates the deadline for that task %
 {{ show_week_pagetop(week_num, "topics_py") }}
 
 {% if week_num == "1" %}
-<box type="info" dismissible>
+<box type="info">
 
 Programming topics allocated to the week will appear in this tab.
 </box>

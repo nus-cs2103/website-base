@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import show_trinket with context %}
+
 ### Using Functions
 
 **A _function_ is like a small program that you can execute from another program. A function has a name. Some functions take inputs** (called _arguments_). The statement to _execute_ (other names: _call_, _invoke_) a function takes the form `function_name(arguments)` %%&nbsp;e.g., `foo(1, 'hello')` calls a function named `foo` with arguments `1` and `'hello'`%% 
@@ -7,7 +9,7 @@ Python comes with many built-in functions you can use right away.
 {{ icon_example }} To print some text, you can use the `print` function which can take one or more arguments:
 
 <tabs> 
-  <tab header="Using the shell">
+ <tab header="Using the shell">
 
 ```python
 >>> print('Hello World')
@@ -17,8 +19,8 @@ Hello World
 Bye my friend
 ```
 
-  </tab>
-  <tab header="Running as a script">
+ </tab>
+ <tab header="Running as a script">
 
 ```python
 print('Hello World')
@@ -30,14 +32,10 @@ Hello World
 Bye my friend
 ```
 
-  </tab>
+ </tab>
 </tabs>
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('1a247feec7') }}
 
 
 **Some functions return a value.**
@@ -59,11 +57,8 @@ My age is 25
 <class 'str'>
 <class 'float'>
 ```
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
 
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/return-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel><p/>
+{{ show_trinket('5e7550be09') }}
 
 {{ icon_example }} `input` function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user ==as a string==. {{ icon_tip }} Note how a call to the `print` without any arguments (i.e. `print()`) prints an empty line.
 
@@ -81,11 +76,7 @@ discounted_price = float(price)*0.5 # convert to float type first
 print('Price after 50% discount is $' + str(discounted_price)) # convert back to string
 ```
 
-<panel type="seamless" header="%%{{ icon_try }} Try your own%%">
-
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-</panel>
+{{ show_trinket('5ba8e3f959') }}
 
 <panel type="seamless" header="%%{{ icon_video }} Explanation of a similar Python program%%">
 

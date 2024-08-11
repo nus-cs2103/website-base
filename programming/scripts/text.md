@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import show_trinket with context %}
+
 ### Scripts (Programs)
 
 While the interactive shell is good for testing out small code bits, longer Python programs (also called _scripts_) are written as text files with the `.py` extension. Python _<tooltip content="the tool that interprets the code and executes it">interpreter</tooltip>_ reads the program and executes statements from top to bottom.
@@ -5,14 +7,14 @@ While the interactive shell is good for testing out small code bits, longer Pyth
 Let's create and run a Python program:
 
 <tabs> 
-  <tab header="Using repl.it (no need to save as a file)">
+ <tab header="Using repl.it (no need to save as a file)">
 
 Press the :fas-play: button to run the code %%&nbsp;(don't worry about the meaning of the code)%%. You can edit the code and run again!
-   
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-   
-  </tab>
-  <tab header="Using IDLE (need to save as a `.py` file)">
+
+{{ show_trinket('2c367d2dce', 'expanded') }}
+
+ </tab>
+ <tab header="Using IDLE (need to save as a `.py` file)">
 
 1. <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.
 1. Choose `File` → `New File`
@@ -30,7 +32,7 @@ Press the :fas-play: button to run the code %%&nbsp;(don't worry about the meani
 
 </panel>
 
-  </tab>
+ </tab>
 </tabs>
 
 <modal large header="{{ icon_video }} Opening IDEL in Windows 10" id="modal:scripts-openIdle">

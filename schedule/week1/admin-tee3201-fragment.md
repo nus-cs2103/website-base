@@ -23,7 +23,7 @@
 
 #### {{ thumb(3) }} Attend the lecture
 
-* The lecture will start at 6.30pm.
+* The lecture will start at 7pm.
 
 {{ embed_topic("../../admin/index-tee3201-fragment.md#lectures-info", "Admin " + icon_embedding + " Lectures", "1", indent="2") }}
 
