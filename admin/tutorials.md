@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, show_as_tab, show_faq with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("tutorials") %}
@@ -48,6 +48,7 @@ If there are parallel slots for the same course code, a suffix of `a` or `b` is 
 </box>
 
 <include src="../_course-{{ course }}/timetables-fragment.md#tutorials-s{{ S }}" optional />
+{% if cs2103 %}<include src="../_course-{{ course }}/timetables-fragment.md#modals" optional />{% endif %}
 
 </div>
 </panel>
@@ -55,7 +56,7 @@ If there are parallel slots for the same course code, a suffix of `a` or `b` is 
 <panel type="seamless" header="### Tutorial Structure" expanded >
 <div id="tutorialStructure">
 
-**The mode**
+##### The mode
 
 {% if cs2113 %}* Tutorials will be conducted in F2F, on campus.{% else %}
 * The initial few tutorials will be through Zoom; the rest will be F2F.{% endif %}
@@ -66,7 +67,8 @@ If there are parallel slots for the same course code, a suffix of `a` or `b` is 
 <br/>
 <div tags="m--cs2103">
 
-**Slides and tutorial recordings**:
+##### Slides and recordings
+
 * The Zoom recording of a tutorial will be made available to you after the tutorial.
 * <span class="text-danger">Slides used in tutorials will not be distributed to students.</span> You are expected to take notes (or screenshots) during the tutorial as necessary. Reasons:
   1. Tutorial slides are meant to help the tutor deliver the tutorial, and not meant to be used as reference materials for you to study later). ==When some content is suitable as a reference material, we'll provide you a copy of it.==
@@ -75,46 +77,44 @@ If there are parallel slots for the same course code, a suffix of `a` or `b` is 
 </div>
 
 
-**The role of our tutors** is different from tutors in other courses.
+##### Tutor's role
 
-* **Not a source of admin information**: Given the humongous amount of admin info contained in this course and the fact that it is constantly evolving, tutors may not be aware of the recent subtle changes to the admin information. To safeguard you from receiving incorrect admin info, tutors are prohibited from answering admin queries. If you have an admin query, please post in the [forum]({{ url_forum }}) (or email the prof at `{{ course | lower }}@comp.nus.edu.sg` but only if the question is not appropriate for the forum).
+The role of our tutor's is different from tutors in other courses.
 
-* **No feedback/help for yet-to-be-graded components**: Tutors are prohibited from giving inputs for components not graded yet. %%Reason: work submitted for grading should be your own.%%
+* **Not a source of admin information**, as per the course policy given below:
+
+{{ embed_topic("policies-fragment.md#policy-adminQuestions", "Admin " + icon_embedding + " Policies → **Policy on admin questions**", "1", indent=1) }}
+
+* **No feedback/help for yet-to-be-graded components**: Tutors are prohibited from giving inputs for components not graded yet, as per the course policy given below:
+
+{{ embed_topic("appendixB-policies.md#policy-feedbackOnProjectWork", "Admin " + icon_embedding + " **Policy on feedback for project work**", indent=1, level=2) }}
 
 * **No direct tech help**: Tutors are prohibited from giving direct technical help, other than to give you some general direction to finding a solution. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
 
-{{ embed_topic(baseUrl+"/admin/appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: How to get Help in " + course_pair, "2", indent="1") }}
+{{ embed_topic(baseUrl+"/admin/appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: **How to get Help** in " + course_pair, "2", indent="1") }}
 
-<br/>
+* **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' concepts that are covered in the learning resources given to you %%(reason: self-learning is a vital part of the course)%%. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. But tutors can help you clarify doubts about topics covered in the tutorial.
 
-* **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' concepts that are covered in the learning resources given to you %%(reason: self-learning is a vital part of the course)%%. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. But tutors can help you clarify doubts under the right circumstances, as described in the panel below.
+{{ show_faq("tutorialWhatTutorsCanAnswer") }}
 
-{{ embed_topic("appendixD-help.md#questions-for-tutors", "Admin " + icon_embedding + " Appendix D (extract): Questions suitable to ask the tutor", "2", indent="1") }}
+##### Timing/venue:
 
-<br/>
-
-**Timing/venue:**
-
-* Please refer to the {{ url_schedule }} for further details on each tutorial.
-* You are expected to be present on time. ==Punctuality is considered for participation marks.==
+* Please refer to the {{ url_schedule }} (click on the {{  show_as_tab("Tutorial", icon_tutorial) }} tab) for further details on each tutorial.
 
 <!--
 * You may leave the class 15 minutes before the hour if you have another class right after. There is no need to wait till the tutor dismisses you. However, inform the tutor (as a courtesy) before leaving if you leave before the class is dismissed.
 * ==Vacate the table 5 minutes before the hour== so that the next group can start on time.
 -->
 
-* In the past, many students have requested to increase the tutorial duration because a mere hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to make the best of the one hour available by coming well prepared and starting on time. Note that ==the better prepared you are, the higher the chance of completing all activities allocated to a tutorial== within time.
+{{ show_faq("tutorialLength") }}
 
-**Grading:**
+##### Grading:
 
-* Your conduct in tutorials will be evaluated by team members and the tutor which can affect your participation marks.
+* Your conduct in tutorials will be evaluated by team members and the tutor which can affect your [Participation marks](participation.md).
+* You are expected to be present on time. ==Punctuality is considered for participation marks.==
 
-**FAQ:**
-
-* Q: What if I can't attend due to a valid reason (e.g., MC)?<br>
-  A: The following course policy applies.
-
-{{ embed_topic("policies-fragment.md#policy-validAbsences", "Admin " + icon_embedding + " Policies → Absences due to valid reasons", "4", indent=1) }}
+{{ show_faq("tutorialWhatIfMissedDueToValidReason") }}
+{{ show_faq("tutorialWhatIfMissedDueToOtherReason") }}
 
 </div>
 </panel>

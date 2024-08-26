@@ -76,7 +76,7 @@ The software should work on the Windows, Linux, and OS-X platforms. Even if you 
 {%- endcall  %}
 
 {% call show_constraint("Constraint-Java-Version") -%}
-The software should work on a computer that has version 11 of Java %%i.e., no other Java version installed%%.
+The software should work on a computer that has version 17 of Java %%i.e., no other Java version installed%%.
 {%- endcall  %}
 
 {% call show_constraint("Constraint-Portable") -%}
@@ -183,6 +183,10 @@ Therefore, the input to the app needs to be primarily CLI. <span tags="m--cs2103
 Also keep in mind:
 * Regular typing is usually faster than using key combinations.
 * <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, it is recommended that you also provide a one-shot equivalent for regular/expert users.<br>
+{%- endcall %}
+
+{% call show_constraint("Recommendation-Realistic", recommendation=true) -%}
+Keeping the target usage of the application 'realistic' can be helpful when making product design decisions later. For example, _a patient tracking app for a big hospital_ is not realistic usage scenario because a big hospital is unlikely to use a small standalone desktop application for that purpose. However, it is more realistic for an independent home-based healthcare worker (e.g., a physical therapist) to use such an app to keep track of his/her patients.
 {%- endcall %}
 
 <box type="warning">

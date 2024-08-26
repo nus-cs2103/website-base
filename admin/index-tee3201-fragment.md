@@ -72,7 +72,10 @@ BSc, Computer Science & Engineering, University of Moratuwa, 1996-2001<br>
 %%:far-clock:%% Wednesdays 1800-2130<br>
 %%:fas-map-marker-alt:%% Venue: {{ lecture_venue }}<br>
 
-**A TEE3201 lecture + tutorial time is divided into three parts**, as follows:
+**==The first lecture will be in F2F mode==, and will start at 7pm.**
+
+**Subsequent lecture + tutorial time is divided into three parts, as given below and will be in hybrid mode.**<br>
+You can continue to attend them using F2F mode but those who show good progress in weekly tasks will have the option to join live via Zoom, or watch the recording later.
 
 * 1800-1900: Do exercises related to previous week topics. Consult prof/tutor (via MS Teams or F2F) if you encounter problems.
 * 1900-2000: Short lecture/briefing, introducing topics for the current week.<br>
@@ -189,7 +192,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 <div id="plagiarism-info">
 
 ### Plagiarism
-* You may view/discuss others' work or get help from others. However, <span class="text-danger"> ==the work you submit should be your own==. In case of similar submissions, marks will be divided among those submissions</span> e.g., if your submission scored 8/10 and there is another submission that is similar to your work (beyond coincidental similarity), each submission will get 4 marks.
+* You may view/discuss others' work or get help from others. However, <span class="text-danger"> ==the work you submit should be your own==. In case of similar submissions, ~~marks will be divided among those submissions~~</span> ~~e.g., if your submission scored 8/10 and there is another submission that is similar to your work (beyond coincidental similarity), each submission will get 4 marks~~ (new policy: NUS requires all plagiarism cases to reported to the university).
 * If you reuse/adapt code from elsewhere (e.g., from an online site such as stackoverflow), you must cite the source in the code. e.g.,
   ```python{.no-line-numbers}
   # Solution below adapted from https://stackoverflow.com/a/16252290
@@ -234,7 +237,8 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 1. **[Preferred] Post in [MS Teams ==channel for the class==]({{ url_ms_teams_class }})**:
    * If there is any chance that the question can be relevant to other classmates, post in the `General` channel.
    * Otherwise, post in the `YOUR_NAME - Help Channel` private channel we have created for each of you.
-1. **Email `tee3201@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
+   * If there is no response from us after 24 hours (in which case it is likely that we didn't get the MS Teams notification), feel free to remind us by emailing `{{ course | lower }}@comp.nus.edu.sg`.
+1. **Email `{{ course | lower }}@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
 1. You may also post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
 
 </span>

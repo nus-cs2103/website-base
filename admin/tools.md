@@ -120,7 +120,7 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 <div tags="m--cs2103 m--cs2113">
 
-* **MS Team for this class**: [{{ course_pair }}-{{ semester }}]({{ url_ms_teams_class }})
+* **MS Team for this class**: [{{ course_pair }}-{{ semester }}]({{ url_ms_teams_class }}) {% if cs2103 %}No need to send 'join requests'. We'll be mass-adding you to this around week 2.{% endif %}
 </div>
 </div>
 

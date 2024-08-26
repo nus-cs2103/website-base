@@ -12,8 +12,8 @@
 
 #### {{ thumb(1) }} Learn about the course and the website
 
-{{ embed_topic("../../admin/index-tee3201-fragment.md#course-info", "Admin " + icon_embedding + " About the course", "1", indent="2") }}
-{{ embed_topic("../../admin/index-tee3201-fragment.md#website-info", "Admin " + icon_embedding + " Using the website", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#course-info", "Admin " + icon_embedding + " About the course", "1", indent="1") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#website-info", "Admin " + icon_embedding + " Using the website", "1", indent="1") }}
 
 
 #### {{ thumb(2) }} Submit the pre-course survey  {{ timing_badge("by Saturday 2359", "secondary") }}
@@ -25,38 +25,36 @@
 
 * The lecture will start at 7pm.
 
-{{ embed_topic("../../admin/index-tee3201-fragment.md#lectures-info", "Admin " + icon_embedding + " Lectures", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#lectures-info", "Admin " + icon_embedding + " Lectures", "1", indent="1") }}
 
 
 #### {{ thumb(4) }} Submit weekly exercises
 
 * As you learn the weekly topics, submit Week 1 programming exercise on Coursemology. See the panel below for more info. More instructions about this will be provided during the lecture.
 
-{{ embed_topic("../../admin/index-tee3201-fragment.md#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "1", indent="2") }}
-{{ embed_topic("../../admin/index-tee3201-fragment.md#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "1", indent="2") }}
-{{ embed_topic("../../admin/index-tee3201-fragment.md#help-info", "Admin " + icon_embedding + " Getting Help", "2", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "1", indent="1") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#coursemology-info", "Admin " + icon_embedding + " Tools → Coursemology", "1", indent="1") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#help-info", "Admin " + icon_embedding + " Getting Help", "2", indent="1") }}
 
 
 #### {{ thumb(5) }} Submit weekly project increments
-<div class="indented-level2">
-<box type="warning">
+<box type="important" seamless>
 
-* Recommended: **Finish weekly programming topics and weekly programming exercises before attempting weekly project increments** as the knowledge from those former may be needed to complete the latter.
+**Finish weekly programming topics and weekly programming exercises _before_ attempting weekly project increments** as the knowledge from those former may be needed to complete the latter.
 </box>
-</div>
 
 * Learn about the project:
 
-{{ embed_topic("../../admin/index-tee3201-fragment.md#project-info", "Admin " + icon_embedding + " Project", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#project-info", "Admin " + icon_embedding + " Project", "1", indent="1") }}
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Monty - Overview**" var-fragment="monty-fragment.md#intro" />
 <p/>
 
 * Note how the project can affect participation marks:
-{{ embed_topic("../../admin/index-tee3201-fragment.md#assessment-info", "Admin " + icon_embedding + " Assessment", "1", indent="2") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#assessment-info", "Admin " + icon_embedding + " Assessment", "1", indent="1") }}
 
 * Take note of our plagiarism policies
 
-{{ embed_topic("../../admin/index-tee3201-fragment.md#plagiarism-info", "Admin " + icon_embedding + " Policies -> **Plagiarism**", "1", indent=2, type="danger") }}
+{{ embed_topic("../../admin/index-tee3201-fragment.md#plagiarism-info", "Admin " + icon_embedding + " Policies -> **Plagiarism**", "1", indent=1, type="danger") }}
 
 <span id="week1-project">
 

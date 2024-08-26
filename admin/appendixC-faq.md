@@ -31,10 +31,14 @@
 {{ show_expanded_faq("ipIncrementAlreadyDone") }}
 {{ show_expanded_faq("ipForgotToPushTag") }}
 {{ show_expanded_faq("ipIncorrectTagOrBranch") }}
+{{ show_expanded_faq("ipOtherDataFormats") }}
 
 ## FAQs on: Tutorials
 
 {{ show_expanded_faq("tutorialWhatTutorsCanAnswer") }}
+{{ show_expanded_faq("tutorialWhatIfMissedDueToValidReason") }}
+{{ show_expanded_faq("tutorialWhatIfMissedDueToOtherReason") }}
+{{ show_expanded_faq("tutorialLength") }}
 
 ## FAQs on: tP
 

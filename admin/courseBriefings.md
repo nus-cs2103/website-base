@@ -20,7 +20,9 @@
 <div id="course-briefing-w1">
 <box seamless>
 
-**{{ icon_graded }} Course briefing video viewing counts for participation.**<br>
+**{{ icon_graded }} Watching course briefing videos counts for participation.**<br>
+When watching a briefing video for the first time, avoid <tooltip content="dragging a slider or timeline bar back and forth">scrubbing</tooltip> or jumping ahead/around in the video timeline, as this can interfere with the video platform's capturing of what part of the video you actually watched. However, watching at faster speeds is fine.
+
 **:fas-closed-captioning: We have added closed captioning support** for course briefing videos.
 </box>
 
@@ -48,25 +50,25 @@ This week's briefing videos start with a detour.
 
 ---
 
-<span class="text-info">****0. Detour: SDLC Basics****</span>: Watch the following video covering the [week 2 topic 'SDLC Process Models Basics'](topics.html#W2-2), as the concepts covered in there are referenced in the rest of the course briefing.
-{{ panopto(desc="6 mins -- %%Detour: **SDLC Basics**%%", "84a0119c-8f76-46fc-a256-b0f90098e59f", start_week="2") }}
+<span class="text-info">****0. Detour: SDLC Basics****</span>: Watch the following video covering the [week 2 topic 'SDLC Process Models Basics']({{ baseUrl }}/schedule/week2/topics.html#W2-2), as the concepts covered in there are referenced in the rest of the course briefing.
+{{ panopto(desc="6 mins -- %%Detour: **SDLC Basics**%%", "84a0119c-8f76-46fc-a256-b0f90098e59f", start_week="1") }}
 
 ---
 </div>
 
 
 <span class="text-info">****1. Iterative + Brownfield = ???****</span>: How the iterative and brownfield approach taken by the course impacts your learning experience.
-{{ panopto(desc="6 mins", "e074cbed-2afb-46f6-81bc-b0fb01057eb8", start_week="2") }}
+{{ panopto(desc="6 mins", "e074cbed-2afb-46f6-81bc-b0fb01057eb8", start_week="1") }}
 
 <span class="text-info">****2. Challenges and Solutions****</span>: How to tackle three challenges you'll face in the course, namely, _information overload_, _workload_, and _technical problems_.
-{{ panopto(desc="12 mins", "b98f7669-e5e1-4659-847e-b0fb01057ebc", start_week="2") }}
+{{ panopto(desc="11 mins", "e23c1d7e-bc39-45ff-98c0-b1cd0079a400", start_week="1") }}
 
 ---
 
-<span class="text-info">****3. Week 1-2 Briefing****</span> (Week 1 Recap + Week 2 Preview): This video recaps Week 1 and gives a preview of what you need to do in Week 2.<br>
+<span class="text-info">****3. Week 1->2 Briefing****</span> (Week 1 Recap + Week 2 Preview): This video recaps Week 1 and gives a preview of what you need to do in Week 2.<br>
 %%Note: While weekly briefings are normally done in hybrid mode, this week's briefing is released as a pre-recorded video, to allow you to get started with week 2 tasks early.%%
 
-{{ panopto(desc="8 mins", "f8088218-b6d5-4cc5-a933-b0fb01057ec2", start_week="2") }}
+{{ panopto(desc="4 mins", "30dad6c2-bc2f-4918-8122-b1cd0043ede5", start_week="1") }}
 </div>
 </panel>
 
@@ -78,7 +80,7 @@ This week's briefing videos start with a detour.
 
 ****CS2103/T Pitfalls (and how to avoid them)****{.text-info}
 
-{{ panopto(desc="9 mins", "036e3b1c-3cf0-446e-9281-b100012b50da", start_week="3") }}
+{{ panopto(desc="9 mins", "036e3b1c-3cf0-446e-9281-b100012b50da", start_week="2") }}
 
 </div>
 </panel>

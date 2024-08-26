@@ -1,4 +1,4 @@
-<div class="indented-level2">
+<div class="indented-level1">
 <panel type="info" {{ status }} no-close >
 {% set displacement="" %}
 <div slot="header" class="text-white">Programming {{ icon_embedding }}&nbsp;&nbsp;<md>{{ header }}</md> <span class="badge rounded-pill bg-warning text-dark">{{ tag }}</span></div>

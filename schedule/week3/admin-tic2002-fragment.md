@@ -53,20 +53,17 @@
 
 #### {{ thumb(2) }} Implement Duke increments `Level-0`, `Level-1`, `Level-2`
 
-* Take note of our plagiarism policies
+<box type="important" light>
 
-{{ embed_topic("../../admin/index-tic2002-fragment.md#plagiarism-policy", "Admin " + icon_embedding + " Policies -> **Plagiarism**", "1", indent=1, type="danger") }}
+#####  Keep in mind ...{.text-danger}
+
+<include src="../../admin/ip-tasks-fragment.md#take-note-of-plagiarism" />
+<include src="../../admin/ip-tasks-fragment.md#commit" />
+<include src="../../admin/ip-tasks-fragment.md#tag-push" />
+</box>
 
 * Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> in the given order.
-  * **Commit** code at important points. ==Minimally, commit after completing each increment==.
-  * After completing each increment,
-     * **Tag** the commit with the exact increment ID e.g., `Level-0`, `Level-1`, `Level-2`.
-     * **Push** the code to your fork.
-  * The relevant textbook topics are:
-     {{ embed_topic("../../book/gitAndGithub/commit/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Committing**", "1", indent=2) }}
-     {{ embed_topic("../../book/gitAndGithub/tag/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Tagging**", "1", indent=2) }}
-     {{ embed_topic("../../book/gitAndGithub/push/text.md#simple-push", "Textbook " + icon_embedding + " Git & GitHub → **Pushing**", "1", indent=2) }}
-  * {{ icon_tip }} If you encounter issues connecting Sourcetree with your GitHub account, refer to these [Sourcetree Tips](https://se-education.org/guides/tutorials/sourcetree.html).
+
 <div class="indented-level1">
 
 <include src="dukeFragment.md" boilerplate var-displacement="../.." var-header="**`Level-0`: Rename, Greet, Exit**" var-fragment="text.md#Level-0" />

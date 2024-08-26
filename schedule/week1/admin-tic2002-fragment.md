@@ -34,7 +34,7 @@
 * Submit the pre-course survey, available on Canvas
 
 #### {{ thumb(4) }} Attend the lecture
-* There is no tutorial in this week. The lecture will start at 7.30pm.
+* There is no tutorial in this week. The lecture will start at 7.00pm.
 
 {{ embed_topic("../../admin/index-tic2002-fragment.md#lectures-info", "Admin " + icon_embedding + " Lectures", "week1Admin-lectures", "1") }}
 

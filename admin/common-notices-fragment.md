@@ -23,6 +23,8 @@
 * {% if cs2103 %}**There is no lecture in week 1**. In lieu of that, we are giving you a series of pre-recorded briefing videos (given in the panel below), so that you can get started early.<br>
   **Our first lecture will be on week 2** ({{ get_date(date_first_lecture, 7, time="1600-1800") }}), delivered in hybrid mode. {% else %}**Our first {{ lecture_name }}** will be on {{ get_date(date_first_lecture, time="") }}. {% endif %}
 * **Our tutorials start on week 3.**
+* **If you are bookmarking the course website in your browser**, bookmark the URL `{{ url_course_website }}` (i.e., the base URL, without pointing to any specific page).<br>
+   Reason: This base URL will take you to the schedule page of the current week automatically.
 * **[{{ course }}T Students]**: Of the many weekly sessions that appear under {{ course }}T, only two actually belong to {{ course }}T. Those are, the lecture slot on {{ day_lecture }} {{ time_t_lecture_start }}-{{ time_t_lecture_end }}, and the 1-hour tutorial slot. The other 3-hour slots belong to the CS2101 course.<br>
   ==All CS2101 sessions start in week 1==.
 </box><p/>

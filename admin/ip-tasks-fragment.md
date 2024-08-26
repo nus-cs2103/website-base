@@ -1,6 +1,6 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/topics.njk" import panopto with context %}
-{% from "common/macros.njk" import button, embed_topic, get_date, show_faq, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_faq, step, thumb, timing_badge with context %}
 {% from "_course-" + course + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
 {#====================================================================================================================
@@ -32,12 +32,29 @@
 <div id="tag-push">
 
 * From this point onward, after completing each increment,
-  * **`git tag` the commit with the exact increment ID** e.g., `Level-2`, `A-TextUiTesting`
+  * **`git tag` the commit that _completed_ the increment with the exact increment ID** e.g., {{ as_tag('Level-2') }}, {{ as_tag('A-TextUiTesting') }}
     <box type="warning" seamless><md>[Git tags](../book/gitAndGithub/tag/) are not the same as [Git commit messages](../book/gitAndGithub/commit/).</md></box>
+    <mermaid>
+    {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
+    gitGraph
+      commit id: "..."
+      commit id: "Rename main class"
+      commit id: "Add greeting" tag: "Level-0"
+      commit id: "Add support for echo"
+      commit id: "Fix bug in echo" tag: "Level-1"
+      commit id: "Add support for list"
+      commit id: "Add support for bye"
+    </mermaid>
   * **`git push` the code to your fork**
     <box type="warning" seamless><md>Git doesn't push tags unless you [specifically ask it to](../book/gitAndGithub/push/).
     After pushing a tag to your fork, you should be able to see that tag by visiting `https://github.com/YOUR_USER_NAME/REPO_NAME/tags` e.g., https://github.com/se-edu/addressbook-level3/tags</md></box>
     <box type="tip" seamless><md>If you encounter issues connecting Sourcetree with your GitHub account, refer to this [Sourcetree Tutorial](https://se-education.org/guides/tutorials/sourcetree.html).</md></box>
+* The relevant textbook topics are:
+   {{ embed_topic("../book/gitAndGithub/commit/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Committing**", "1", indent=1) }}
+   {{ embed_topic("../book/gitAndGithub/tag/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Tagging**", "1", indent=1) }}
+   {{ embed_topic("../book/gitAndGithub/push/text.md#simple-push", "Textbook " + icon_embedding + " Git & GitHub → **Pushing**", "1", indent=1) }}
+</div>
+<div id="take-note-of-plagiarism" >
 
 * Remember to take note of our plagiarism policies, if you haven't done so already:
 
@@ -153,6 +170,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 
 <include src="ip-tasks-fragment.md#commit" />
 <include src="ip-tasks-fragment.md#tag-push" />
+<include src="ip-tasks-fragment.md#take-note-of-plagiarism" />
 </box>
 <box type="tip" light>
 
@@ -234,27 +252,47 @@ Note that if `A-Jar` increment does not require any code changes, you may tag th
 <div id="pre_Level-7">
 <div tags="m--cs2103">
 
+<mermaid>
+{{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
+gitGraph
+commit id: "m1"
+commit id: "m2"
+branch branch-Level-7
+checkout branch-Level-7
+commit id: "b1c1"
+commit id: "b1c2"
+checkout master
+merge branch-Level-7 id: "Merge branch ..." tag: "Level-7"
+branch branch-Level-8
+checkout branch-Level-8
+commit id: "b2c1"
+checkout master
+merge branch-Level-8 id: "Merge branch-Level-8 ..." tag: "Level-8"
+commit id: "m4"
+</mermaid>
+
 * **Do Level 7 in a branch named `branch-Level-7`**. Here are the steps:
   1. Start a branch `branch-Level-7`.
   1. Implement Level 7 while committing to that branch at appropriate points,
-  1. Merge the branch back to the master branch (remember to create a merge commit i.e., ==no fast-forward==).
+  1. Merge the branch back to the `master` branch (remember to create a merge commit i.e., ==no fast-forward==).
   1. Git tag the merge commit in the `master` branch as usual (i.e., add the tag `Level-7`).
-  1. Push the `master` branch, push the `branch-Level-7`, and push the tag, to your fork.<br>
+  1. Push the following three things to your fork:<br>
+     (a) the `master` branch,<br>
+     (b) the `branch-Level-7` branch,<br>
+     (c) the `Level-7` tag.<br>
      {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.<br>
      {{ icon_important_big_red }} Only _merged_ branches are detected by the script. After merging a branch `b1` to the `master` branch, you need to push both the `master` and the `b1` branches to the fork. Pushing the `master` branch does not automatically take the `b1` branch along with it just because it is already merged to the `master` branch.
 
 </div>
 </div>
 {#====================================================================================================================#}
+<div id="post_Level-7">
+{{ show_faq("ipOtherDataFormats") }}
+{{ show_faq("ipMessedUpBranching") }}
+</div>
+{#====================================================================================================================#}
 <div id="pre_Level-8">
 <div tags="m--cs2103">
-<p/>
-
-<panel type="seamless" header="%%FAQ: Oops, I messed up my branching! Will I be penalized?%%">
-
-  Answer: Not to worry. You are welcome to (but not _required_ to) try to rectify it. There is no penalty. Just take note of your mistake and try to avoid it in the future.
-</panel>
-<p/>
 
 * **Do Level 8 similar to the above**, using a branch `branch-Level-8`.
 </div>
@@ -348,14 +386,14 @@ branch branch-A-CodingStandard
 checkout branch-A-CodingStandard
 commit id: "b2c1"
 checkout master
-branch branch-A-Level9
-checkout branch-A-Level9
+branch branch-Level-9
+checkout branch-Level-9
 commit id: "b3c1"
 commit id: "b3c2"
 checkout master
 merge branch-A-JavaDoc tag: "A-JavaDoc"
 merge branch-A-CodingStandard tag: "A-CodingStandard"
-merge branch-A-Level9 tag: "A-Level9"
+merge branch-Level-9 tag: "Level-9"
 commit id: "m6"
 </mermaid>
 

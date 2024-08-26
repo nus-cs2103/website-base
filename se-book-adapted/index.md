@@ -39,12 +39,13 @@ layout: textbook-layout.md
 
 <big>
 
+{% if not tee3201 %}
 **Supplementary**</big>
 
-  {{ show_chapter("dummy", config.chapters.cppToJava) }}
-{% if not tee3201 %}* [Project Duke](projectDuke/index.html){% endif %}
+{{ show_chapter("dummy", config.chapters.cppToJava) }}
+* [Project Duke](projectDuke/index.html)
 * [Combined Exercises](common/exercises.html)
-* [List of Definitions](common/definitions.html)
+* [List of Definitions](common/definitions.html){% endif %}
 
 </div>
 {% endmacro %}

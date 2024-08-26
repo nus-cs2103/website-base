@@ -13,7 +13,7 @@
 **You can earn [bonus participation points](../../admin/participation.md)** by reporting them in the [forum]({{ url_forum }}) -- plus it helps us improve the course website too.<br>
 </box>
 
-<panel type="info" header="##### ==[MUST-WATCH]== Course Briefing + Weekly Briefing Videos" peek >
+<panel type="info" header="##### ==[MUST-WATCH]== Briefing Videos for Week 2" peek >
 
 <include src="../../admin/courseBriefings.md#course-briefing-w2" />
 

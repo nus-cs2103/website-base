@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Admin Info"
+title: "{{ course_pair }} Admin Info"
 pageNav: 2
 </frontmatter>
 
@@ -17,13 +17,19 @@ pageNav: 2
 
 <pic eager src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
 
-_TIC2002 Introduction to Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects, and as such, it is **a first step towards preparing you to work in bigger SE projects**, which will be done in later courses.
+_{{ course_pair }} Introduction to Software Engineering_ contains roughly a **50-50 balance of theory and practice** of SE. It covers the knowledge/skills necessary to do small software projects, and as such, it is **a first step towards preparing you to work in bigger SE projects**, which will be done in later courses.
 
 <box type="tip" seamless>
 
 **This course is optimized for SCALE students**{.text-success} so that you can _learn at your own pace_ even if you are not a full-time student: the need to attend lectures/tutorials at fixed times is low, deadlines are more flexible than usual, and the on-campus presence is optional.
 
 e.g., **Instead of traditional instructor-led tutorials**, the course provides quizzes and other activities that you can do at your own time to self-test your knowledge. The instructor can be consulted if you need help with any of them.
+
+</box>
+
+<box type="info" seamless>
+
+**[Note for TCX3221 students]**{.text-info} Sometimes, TIC2002 course code is used to refer to this course (instead of the longer {{ course_pair }}). **There is no difference between TIC2002 and TCX3221 -- so, whatever is stated for TIC2002 applies to TCX3221 as well**.
 
 </box>
 </div>
@@ -67,13 +73,12 @@ e.g., **Instead of traditional instructor-led tutorials**, the course provides q
 <div class="indented" id="lectures-info">
 
 %%:far-clock:%% {{ "Tuesday" if S == '1' else "Wednesday" }} 6.30-9.30pm<br>
-%%:fas-map-marker-alt:%% COM1-02-08 (SR8)<br>
+%%:fas-map-marker-alt:%% {{ lecture_venue }}<br>
 
 **==The first lecture will be in F2F mode==, and will start at 7pm.**
 
 **Subsequent lecture + tutorial time is divided into three parts, as given below and will be in hybrid mode.**<br>
-You can continue to attend them using F2F mode but those who show good progress in weekly tasks will have the option to join live via Zoom,
- or watch the recording later.
+You can continue to attend them using F2F mode but those who show good progress in weekly tasks will have the option to join live via Zoom, or watch the recording later.
 
 * **[6.30-7.00pm] Pre-lecture consultations:**
   * You can use this time to get prof's help if you encountered problems while doing the previous week's tasks.
@@ -127,6 +132,14 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 </box>
 
 {{ icon_important_big_red }} Programming exercises are graded for participation.
+
+**FAQ: Which code editor to use when doing programming exercises?**<br>
+**Answer:** Here are some options:
+
+* Later in the course, we will be using [Intellij IDEA](https://www.jetbrains.com/idea/) as our code editor. If you are already familiar with using similar editors (e.g., VS Code), you can start using it early. The community edition (free) is good enough for this course.
+* If you are familiar with another code editor that supports Java (e.g., VS Code), you can use that.
+* For the time being, you can use an online code editor such as repl.it (create an account -> sign in -> click on `+ Create Repl` -> choose Java).
+* You can use a simple text editor, compile using `javac` command, and run using `java` command.
 </div>
 
 {{ line_dotted }}<!-- ................................................................................... -->
@@ -312,6 +325,7 @@ If you face difficulties/doubts while learning the weekly topics, doing weekly e
 1. **[Preferred] Post in [MS Teams ==channel for the class==]({{ url_ms_teams_class }})**:
    * If there is any chance that the question can be relevant to other classmates, post in the `General` channel.
    * Otherwise, post in the `YOUR_NAME - Help Channel` private channel we have created for each of you.
+   * If there is no response from us after 24 hours (in which case it is likely that we didn't get the MS Teams notification), feel free to remind us by emailing `tic2002@comp.nus.edu.sg`.
 1. **Email `tic2002@comp.nus.edu.sg`**. These emails will be answered by the prof or forwarded to the TA for follow up.
 1. You may also post in the [Canvas forum]({{ url_forum }}) or [Coursemology forum]({{ url_coursemology_classroom }}/forums).
 

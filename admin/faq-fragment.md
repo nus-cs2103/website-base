@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import embed_topic with context %}
+
 <!-- =============================================================== -->
 <div id="faq-whereIsEverything-Q">Where is everything?</div>
 <div id="faq-whereIsEverything-A">
@@ -154,6 +156,19 @@ Not to worry. Just push the tags now. They will be detected by the dashboard at 
 It's OK; correct it now.
 </div>
 <!-- =============================================================== -->
+<div id="faq-ipOtherDataFormats-Q">Can I use other data formats (e.g., serialized objects) to save tasks?</div>
+<div id="faq-ipOtherDataFormats-A">
+
+Yes, provided it doesn't require the user to install another  software.<br>
+Also note that in the team project, there is a project constraint that requires the data to be saved in a human editable format.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipMessedUpBranching-Q">Oops, I messed up my branching! Will I be penalized?</div>
+<div id="faq-ipMessedUpBranching-A">
+
+Not to worry. You are welcome to (but not _required_ to) try to rectify it. There is no penalty. Just take note of your mistake and try to avoid it in the future.
+</div>
+<!-- =============================================================== -->
 <div id="faq-temp-Q"></div>
 <div id="faq-temp-A">
 
@@ -177,7 +192,7 @@ On a related note, if you are not confident about the answer you've selected for
 <!-- ===============================================================
   Tutorial FAQ
 =============================================================== -->
-<div id="faq-tutorialWhatTutorsCanAnswer-Q">What kind of questions can I ask the tutor?</div>
+<div id="faq-tutorialWhatTutorsCanAnswer-Q">What kind of questions _can_ I ask the tutor?</div>
 <div id="faq-tutorialWhatTutorsCanAnswer-A">
 
 TLDR: In this course, tutor's main job is to deliver tutorials. Hence, tutors can answer questions related to (and arising from) the tutorial delivery. But they are not allowed to answer admin questions. They are not allowed to help with technical issues.
@@ -191,6 +206,29 @@ TLDR: In this course, tutor's main job is to deliver tutorials. Hence, tutors ca
 * {{ bad }} *How will this be graded?* | *What happens if this submission is late?* %%**Reason**: Tutors are not allowed to answer admin questions.%%
 * {{ bad }} *My program crashes with this error; what to do?*<br>
   %%**Reason**: Tutors are not allowed to help with technical issues (post your issue in the forum instead).%%{% endif %}
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialWhatIfMissedDueToValidReason-Q">What if I can't attend a tutorial due to a valid reason (e.g., MC)?</div>
+<div id="faq-tutorialWhatIfMissedDueToValidReason-A">
+
+See the following course policy:
+
+{{ embed_topic("appendixB-policies.md#policy-validAbsences", "Admin " + icon_embedding + " Policy on absences due to valid reasons") }}
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialWhatIfMissedDueToOtherReason-Q">What if I can't attend a tutorial due to another commitment (e.g., interview)?</div>
+<div id="faq-tutorialWhatIfMissedDueToOtherReason-A">
+
+Our tutorial participation bar has enough of a buffer to allow an occasional absence (irrespective of the reason for absence). While we are not able to make special arrangements for absences due to reasons not accepted as valid by NUS (e.g., due to family event, interview, travel delays, overslept etc.), such absences are unlikely to affect your participation marks unless frequent.
+
+* You are welcome to keep your tutor informed of such absences as a courtesy, but it is not a requirement.
+* If you miss a tutorial, do try to catch up as best as you can {% if cs2103 %} e.g., by watching the tutorial recording{% endif %}.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialLength-Q">Can the tutorial be made longer (e.g., 2 hours)?</div>
+<div id="faq-tutorialLength-A">
+
+In the past, many students have requested to increase the tutorial duration because a mere hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to make the best of the one hour available by coming well-prepared and starting on time. Note that ==the better prepared you are, the higher the chance of completing all activities allocated to a tutorial== within time.
 </div>
 <!-- =============================================================== -->
 

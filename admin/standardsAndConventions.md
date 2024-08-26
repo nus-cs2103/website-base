@@ -33,7 +33,7 @@ Given below are the standards and conventions to follow in this course.
 ##### Git
 
 * {{ required }} Follow the Git ==commit message _subject_ conventions== in the [SE-EDU Git conventions](https://se-education.org/guides/conventions/git.html).
-* {{ optional }} Follow conventions for the commit message body.
+* {{ conditional }} Writing a commit message body is optional, but if you do write one, follow at least basic conventions for the commit message body.
 
 </span>
 <span tags="m--cs2103 m--cs2113">

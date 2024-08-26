@@ -490,7 +490,7 @@ As you will be updating documentation of your project soon, here are some guidel
 
 As you start adding features to your project iteratively, you'll need **a way to detect if the new code breaks the existing code**. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).
 
-<span tags="m--cs2103">This also means we are not switching focus from the _implementation_ aspect to the _testing_ aspect of SE.</span>
+<span tags="m--cs2103">This also means we are now switching focus from the _implementation_ aspect to the _testing_ aspect of SE.</span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Developer Testing") }}">

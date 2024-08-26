@@ -13,13 +13,11 @@ Examples of admin questions:
 * How is this graded?
 * Can I use X instead of Y for the project?
 * Where can I find details about [some aspect of the course]?
-
-**Side note: All technical help requests should be posted in the forum (or sent to the course email)** too. Tutors are not allowed to help with them either.
 </div>
 
 <div id="policy-teamSize">
 
-As most of the work is graded individually, team sizes of 4 or 6 are not expected to affect your grade. While managing larger teams is harder, larger teams have more collective know-how, which can cancel each other. We'll give some consideration when grading 3-person teams.
+As most of the work is graded individually, team sizes of 4/5/6 are not expected to affect your grade. For example, while managing larger teams is harder, larger teams have more collective know-how, which can cancel each other. However, we give some special consideration when grading 3-person teams.
 
 </div>
 
@@ -234,6 +232,20 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
 <modal large header="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
   <include src="tp-deliverables.md#tp-deliverables-ppp"/>
 </modal>
+
+</div>
+
+<div id="policy-feedbackOnProjectWork">
+
+**The teaching team will not give ad-hoc feedback on project work connected to a component yet to be graded.** For example, if you were to ask your tutor for feedback on your individual or team project feature design, the tutor is not allowed to give feedback. Similarly, if you are faced with a design decision in your project, a tutor will not make that decision for you.
+
+Reasons:
+
+* to ensure the work you submit for grading is entirely your own
+* to ensure fairness across teams
+
+**You can still use the {{ link_forum }} to seek feedback on a specific aspect of your project** where a professor can answer the question in a general way that's not unfair to other teams (and other teams can benefit from the answer as well).<br>
+**Alternatively, you can send your question to `{{ course_email }}`.**
 
 </div>
 

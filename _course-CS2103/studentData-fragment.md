@@ -1,3 +1,4 @@
+{% set staff = ["Prabhu", "Damith", "Michael", "Anis", "Danny"] %}
 {% set tutors = [
   {name: "BAJAJ ADITYA", nick: "Aditya", nusnet: "e1070584", github: "AdityaB4"},
   {name: "ASHLEY CHANG LE XUAN", nick: "Ashley", nusnet: "e0958221", github: "ashleyclx"},

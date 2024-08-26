@@ -207,7 +207,7 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 
 <box type="tip" seamless>
 
-**Stronger teams are welcome to stay one week ahead of the tP schedule.** However, do not move ahead more than one week, as dong tP in a short burst will interfere with some of its learning outcomes.
+**Stronger teams are welcome to stay one week ahead of the tP schedule.** However, do not move ahead more than one week, as doing tP in a short burst will interfere with some of its learning outcomes.
 </box>
 {% endcall %}
  {#====================================================================================================================#}
@@ -620,8 +620,9 @@ Use this week extra week to finish up any leftover work from the previous week.
     1. Think about how the AB3 user experience can be improved, for example, by tweaking the command format, or the GUI, or the features. Note them down as a list of feature suggestions, as free text (i.e., no specific format).<br>
        Suggested: Try to come up with at least 5 ways to improve AB3, while also trying to go beyond the simple/obvious ones (i.e., this is a chance to be insightful but also creative).<br>
        Also keep the following tP constraints/recommendations in mind when doing this, as improvements that are not aligned with [tP constraints](tp-constraints.html) are unlikely to be useful later.
-       {{ embed_topic("tp-constraints.md#Constraint-Typing-Preferred", "Admin " + icon_embedding + " tP Constraints → Constraint-Typing-Preferred", "2", indent="3") }}
-       {{ embed_topic("tp-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Constraints → Recommendation-CLI-First", "2", indent="3") }}
+       {{ embed_topic("tp-constraints.md#Constraint-Typing-Preferred", "Admin " + icon_embedding + " tP Constraints → Constraint-Typing-Preferred", "2", indent="2") }}
+       {{ embed_topic("tp-constraints.md#Recommendation-CLI-First", "Admin " + icon_embedding + " tP Constraints → Recommendation-CLI-First", "2", indent="2") }}
+       {{ embed_topic("tp-constraints.md#Recommendation-Realistic", "Admin " + icon_embedding + " tP Constraints → Recommendation-Realistic", "2", indent="2") }}
 
 <div class="indented-level1">
 

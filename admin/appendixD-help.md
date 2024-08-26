@@ -65,7 +65,7 @@
       }
       ```
   * **Avoid directing the question to one person** (e.g., the prof), unless really necessary. Doing so will discourage others from answering that question.
-  * **Isolate the problem.** "My code doesn't work" isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about <trigger trigger="click" for="modal:appendixHelp-rubberDuckDebugging">Rubber Duck Debugging</trigger>?).
+  * **Isolate the problem.** "My code doesn't work" isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the bare minimum that is enough to reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about <trigger trigger="click" for="modal:appendixHelp-rubberDuckDebugging">Rubber Duck Debugging</trigger>?).
 
     <box>
 

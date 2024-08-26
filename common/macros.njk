@@ -122,6 +122,7 @@
 {% endmacro %}
 
 {% macro button(text, button_style="light") %}<button type="button" class="btn btn-{{ button_style }} btn-sm {{ 'border' if button_style == 'light' else '' }}">{{ text }}</button>{% endmacro %}
+{% macro as_tag(text, tag_style="secondary") %}<span class="badge bg-{{ tag_style }} text-monospace">{{ text }}</span>{% endmacro %}
 
 {% macro step(step_number, step_style="dark") %}<span class="badge bg-{{ step_style }}">Step {{ step_number }}</span>{% endmacro %}
 

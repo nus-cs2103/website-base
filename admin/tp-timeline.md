@@ -155,7 +155,7 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 <box id="lo-above-product" type="info" seamless>
 
 **Aim to do 'just enough':**{.text-info}
-Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span> (together with the <span class="text-success">:fas-crosshairs: **Strategy**</span>) is simply a means to achieve the <span class="text-success">:fas-crosshairs: **Learning outcome**</span>. Unlike in a real SE project, the product in the tP exists only to help you achieve the learning outcome. Hence, aim to **do 'just enough' work on the product to achieve the intended learning outcome of the iteration** %%(e.g., don't make features bigger necessary)%% so that the tP doesn't add to your workload more than necessary.
+Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span> (together with the <span class="text-success">:fas-crosshairs: **Strategy**</span>) is simply a means to achieve the <span class="text-success">:fas-crosshairs: **Learning outcome**</span>. Unlike in a real SE project, the product in the tP exists only to help you achieve the learning outcome. Hence, aim to **do 'just enough' work on the product to achieve the intended learning outcome of the iteration** %%(e.g., don't make features bigger than necessary)%% so that the tP doesn't add to your workload more than necessary.
 </box>
 
 

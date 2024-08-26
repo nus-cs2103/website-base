@@ -107,6 +107,7 @@
 <variable name="date_w13_start">{{ date_w12_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w14_start">{{ date_w13_start | date("YYYY-MM-DD", 7) }}</variable>
 
+<variable name="course_email">{{ course | lower }}@comp.nus.edu.sg</variable>
 <variable name="course_org">nus-{{ course | lower }}-{{ period if tic2002 or tee3201 else semester }}</variable>
 <variable name="url_course_org">https://github.com/{{ course_org }}</variable>
 <variable name="url_course_gihub_io">https://{{ course_org | lower }}.github.io</variable>
@@ -118,6 +119,7 @@
 <variable name="url_dashboards">{{ url_course_gihub_io | safe }}/dashboards</variable>
 <variable name="url_files">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}/files</variable>
 <variable name="url_forum">{{ url_course_org | safe }}/forum/issues</variable>
+<variable name="link_forum">[course forum]({{ url_forum }})</variable>
 <variable name="url_forum_activities_dashboard">{{ url_dashboards }}/contents/forum-activities.html</variable>
 <variable name="url_ab3_fork_website">{{ url_course_gihub_io | safe }}/{{ tp_repo_name }}</variable>
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
@@ -211,6 +213,7 @@
 <variable name="good"><span style="color: green"><md>:fas-thumbs-up: Good</md></span></variable>
 <variable name="pros"><span class="text-success">:fas-thumbs-up: pros:</span></variable>
 <variable name="cons"><span class="text-danger">:fas-thumbs-down: cons:</span></variable>
+<variable name="conditional"><span class="badge rounded-pill bg-warning text-dark">CONDITIONAL</span></variable>
 <variable name="required"><span class="badge rounded-pill bg-danger">REQUIRED</span></variable>
 <variable name="optional"><span class="badge rounded-pill bg-success">OPTIONAL</span></variable>
 <variable name="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></variable>
@@ -244,6 +247,6 @@ Course                 | Venue    | Time
 ---------------------- | -------- | ----
 </variable>
 <variable id="tutorial_table_headers">
-Course | Venue | Time | ~~%%Tutorial ID<br>in Canvas%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutors<br>([contact details](../admin/instructors.html))
--------|-------|------|------------------------------------------------------------|----------------------------------------|-------
+Course | Venue | Time | ~~%%Tutorial ID<br>in Canvas%%~~<br>==(don't use this!)== | **Our Tutorial ID**<br>==(use this!)== | Tutor<br>of teams 1,2 | Tutor<br>of teams 3,4
+-------|-------|------|------------------------------------------------------------|----------------------------------------|-------|----
 </variable>

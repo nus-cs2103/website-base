@@ -1,4 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/macros.njk" import embed_topic with context %}
 
 {% call show_admin_page("tp-supervision") %}
 <div id="main">
@@ -9,16 +10,13 @@ Your tutor will serve as your _project supervisor_ too.
 </div>
 <div tags="m--cs2113 m--cs2103">
 
-**The tutor's main job (in the context of this course project) is to observe, facilitate self/peer learning, evaluate, and give feedback.**
-
-{{ Session_name }} time is the main avenue for meeting your tutor. In addition, you can meet the tutor at other times, as many times you need, subject to availability in his/her schedule.
+**The tutor's main job (in the context of this course project) is to observe, facilitate self/peer learning, and evaluate.** They will not be telling you how to do the project (such guidance is given in other ways e.g., via the course website), or lead/manage the project for you. So, you are expected to self-manage the project. However, if you are facing difficulties, you are welcome/encouraged to keep the tutor informed, so that s/he can take necessary actions.
 </div>
 <div tags="m--cs2113 m--cs2103" id="making-project-decisions">
 
-**==Tutors are not allowed to contribute to graded components of your project work.==** For example, if you are faced with a design decision in your project, a tutor will not make that decision for you.<br>
- %%Reason: to ensure fairness across teams, and to ensure the work you submit for grading is entirely your own%%
+**==Tutors are not allowed to contribute to graded components of your project work.==** For example, if you are faced with a design decision in your project, a tutor will not make that decision for you. See the panel below for more details.
 
-Following from the above, **don't expect instructors to answer questions that are specific to graded deliverables** (e.g., ask which design alternative is better -- that's a decision you need to make yourself). <span tags="m--cs2103 m--cs2113">At best, the instructor can channel the question to the professor.</span> However, ==you can still raise such questions in the course forum== where the professor can answer the question in a general way that's not unfair to other teams (and other teams can benefit from the answer as well).
+{{ embed_topic("appendixB-policies.md#policy-feedbackOnProjectWork", "Admin " + icon_embedding + " Policy on feedback for project work", indent=1, level=2) }}
 
 <box type="tip" seamless>
 
