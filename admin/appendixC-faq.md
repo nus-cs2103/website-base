@@ -42,6 +42,9 @@
 
 ## FAQs on: tP
 
+{{ show_expanded_faq("tpWhyNarrowTarget") }}
+{{ show_expanded_faq("tpHowNarrowTargetCanBe") }}
+{{ show_expanded_faq("tpChangeDirectionLater") }}
 {{ show_expanded_faq("dgDetailsLevel") }}
 {{ show_expanded_faq("dgAddNewUml") if cs2103 }}
 {{ show_expanded_faq("githubWhoCreatesIssues") }}

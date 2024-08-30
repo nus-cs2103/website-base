@@ -31,7 +31,7 @@ While we are on the topic of Java, also take note of this is a lesser-known Java
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Code Quality: Naming", reuse=false) %}
 
-Last week, we started learning about code quality. Let's continue on that, but learning a few other aspects of code quality.
+Last week, we started learning about code quality. Let's continue on that, and learn a few other aspects of code quality.
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->

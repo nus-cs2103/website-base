@@ -235,10 +235,29 @@ In the past, many students have requested to increase the tutorial duration beca
 <!-- ===============================================================
   tP FAQ
 =============================================================== -->
+<div id="faq-tpWhyNarrowTarget-Q">Why the need to narrow down the user profile?</div>
+<div id="faq-tpWhyNarrowTarget-A">
+
+* It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.
+* It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job of implementing that feature.
+</div>
+=============================================================== -->
+<div id="faq-tpHowNarrowTargetCanBe-Q">How narrow can we make the target market?</div>
+<div id="faq-tpHowNarrowTargetCanBe-A">
+
+The size of the target market is not a grading criterion. You can make it as narrow as you want. Even a single user target market is fine as long as you can define that single user in a way others can understand (reason: project evaluators need to evaluate the project from the point of view of the target users).
+</div>
+=============================================================== -->
 <div id="faq-dgDetailsLevel-Q">How detailed the DG should be? Do we have to describe every feature/component?</div>
 <div id="faq-dgDetailsLevel-A">
 
 The DG is primarily meant to help current/future developers. Therefore, decide based on how the inclusion/exclusion affects that target audience (you belong to the target audience too!).
+</div>
+=============================================================== -->
+<div id="faq-tpChangeDirectionLater-Q">Can we change the target user and value proposition later in the project?</div>
+<div id="faq-tpChangeDirectionLater-A">
+
+Yes. If the submission deadline is not over yet, use the same link to update the submission. If the submission deadline is over, email the updated name, target user, value proposition to `{{ course | lower }}@comp.nus.edu.sg`.
 </div>
 <!-- =============================================================== -->
 <div id="faq-dgAddNewUml-Q">Is it enough to update existing UML content/diagrams or must we add new content/diagrams?</div>

@@ -271,6 +271,11 @@ merge branch-Level-8 id: "Merge branch-Level-8 ..." tag: "Level-8"
 commit id: "m4"
 </mermaid>
 
+<box type="warning" seamless>
+
+If you are new to Git branching, before attempting this iP increment, first learn Git branching from [this week's textbook topics]({{ baseUrl }}/schedule/week3/topics.html). In particular, learn how to merge a branch without fast forwarding.
+</box>
+
 * **Do Level 7 in a branch named `branch-Level-7`**. Here are the steps:
   1. Start a branch `branch-Level-7`.
   1. Implement Level 7 while committing to that branch at appropriate points,
@@ -400,6 +405,14 @@ commit id: "m6"
 * The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
 * After finishing, assuming you encountered merge conflicts (and some were rather painful to resolve), think of how such conflicts could have been reduced %%(e.g., by changing the order of merging, or minimizing parallel branches when certain type of changes are being done to the code)%%.
 </div>
+</div>
+{#====================================================================================================================#}
+<div id="pre_A-CodingStandard">
+
+<box type="tip" seamless>
+
+Relevant SE-EDU guide: [Intellij IDEA: Configuring the code style](https://se-education.org/guides/tutorials/intellijCodeStyle.html)
+</box>
 </div>
 {#====================================================================================================================#}
 <div id="pre_A-Gradle">
@@ -701,7 +714,7 @@ This task is worth `2x2=4` participation points.
 
 Click on the <span class="badge bg-light text-dark">%%**:fas-code:**%%</span>&nbsp;icon corresponding to a student name to see the code written by that person.
 
-Similarly, click on the <span class="badge bg-light text-dark">%%**:fas-list:**%%</span>&nbsp;icon to see a list of tags (and commits) -- this way, you can find which increments have been done by a particular student.
+You can enable the `[ ] show tags` option at the top of the dashboard to see tags in each repo. Similarly, you can click on the <span class="badge bg-light text-dark">%%**:fas-list:**%%</span>&nbsp;icon to see a list of commits in a specific repo.
 </box>
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent=1) }}

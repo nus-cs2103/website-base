@@ -135,16 +135,8 @@ You are expected to:
 
 <div class="indented-level1">
 
-<panel type="seamless" header="%%FAQ: Why the need to narrow down the user profile?%%" >
-
-* It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.
-* It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done a better job of implementing that feature.
-</panel>
-
-<panel type="seamless" header="%%FAQ: How narrow can we make the target market?%%" >
-
-The size of the target market is not a grading criterion. You can make it as narrow as you want. Even a single user target market is fine as long as you can define that single user in a way others can understand (reason: project evaluators need to evaluate the project from the point of view of the target users).
-</panel>
+{{ show_faq("tpWhyNarrowTarget") }}
+{{ show_faq("tpHowNarrowTargetCanBe") }}
 </div>
 
 * **Define a clear _value proposition_** that matches the target user profile i.e., what problem does the product solve? how does it make the user's life easier?<br>

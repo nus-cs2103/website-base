@@ -213,7 +213,8 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
  {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2103", 4) %}
 
-**This week, the tP focus is on setting a project direction.**
+**This week, the tP focus is on setting a project direction** i.e., decide on the type of users your product will target, and the value it will provide for those users (what problem does it solve?)<br>
+**Weekly project meetings, and keeping notes of project details** is two other things we'll start from this week.
 {% endcall %}
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2103", 5) %}
@@ -691,8 +692,8 @@ As we are still at the early stages of identifying a problem to solve, do not th
     1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
   * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 %}<br>
   * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.
-  * {{ icon_Q }} FAQ: Can we change these values later?<br>
-    Answer: Yes. If the submission deadline is not over yet, use the same link to update the submission. If the submission deadline is over, email the updated name, target user, value proposition to `{{ course | lower }}@comp.nus.edu.sg`.
+
+{{ show_faq("tpChangeDirectionLater") }}
   {% endif %}
 
 

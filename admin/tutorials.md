@@ -21,7 +21,7 @@ If there are parallel slots for the same course code, a suffix of `a` or `b` is 
 {% if (current_week | int) <= 4 %}
 * Zoom links for tutorial sessions will be available in [Canvas course homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.<br>
 * You may use the tutorial venue (given in the table below) to join the Zoom session if you wish, but if you do,
-    * please keep noise level low, as there will be other students doing the same.
+    * please keep the noise level low, as there will be other students doing the same.
     * while you may sit together with team members, you should ==participate in the tutorial _individually_== e.g., do not project one person's screen to the TV, or discuss answers with others unless the tutor prompts you to.
     * if you face Wi-Fi connectivity issues, try connecting to SSID `eduroam` (you need to use your full NUSNET email address and password `e____@u.nus.edu/*****` to login).
 {% endif %}
