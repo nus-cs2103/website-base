@@ -16,12 +16,14 @@
    [{{ username }}'s PR](https://github.com/{{ course_org }}/{{ ip_repo_name }}/pulls/{{ username }})
    {%- endmacro  %}
 
+   <d-table sortable searchable>
    Your username | PR to review       | Fallback PR to review
    --------------|--------------------|------------------
-   {% for allocation in allocations  -%}
+   {% for allocation in allocations -%}
    {{ allocation[0] }} | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }}
    {% endfor %}
    {% if not allocation | length %}Allocation not available yet... {% endif %}
+   </d-table>
    </panel>
    <p/>
 

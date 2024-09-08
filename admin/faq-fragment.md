@@ -38,8 +38,6 @@ In {{ course_pair }}, A+ is not given simply based on the final score. To get an
 Sometimes, small things matter in big ways. e.g., all other things being equal, a job may be offered to the candidate who has the neater looking CV although both have the same qualifications. This may be unfair, but that's how the world works. Students forget this harsh reality when they are in the protected environment of the school and tend to get sloppy with their work habits. That is why we reward all positive behavior, even small ones (e.g., following precise submission instructions, arriving on time etc.).
 
 But unlike the real world, we are forgiving. That is why you can still earn full marks for participation even if you miss a few things here and there.
-
-Related article: [This Is The Personality Trait That Most Often Predicts Success](http://www.businessinsider.sg/conscientiousness-predicts-success-2014-4/#.Vewqb_mqpBc) (this is why we reward things like punctuality).
 </div>
 <!-- =============================================================== -->
 <div id="faq-separateWebsite-Q">Why use a separate website instead of Canvas?</div>

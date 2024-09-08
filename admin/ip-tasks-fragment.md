@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
-{% from "common/topics.njk" import panopto with context %}
+{% from "common/topics.njk" import panopto, topic_preamble with context %}
 {% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_faq, step, thumb, timing_badge with context %}
 {% from "_course-" + course + "/weeklyIpTasks-fragment.md" import weekly_ip_tasks with context %}
 
@@ -303,12 +303,52 @@ If you are new to Git branching, before attempting this iP increment, first lear
 </div>
 <div tags="m--cs2113" id="as-parallel-prs">
 
+{% call topic_preamble(reuse=false) %}
+
+As you know, one main goal of the iP is to prepare for you for the tP. The task below is heavy on the 'training for tP' aspect.
+
+In previous iP increments, you learned:
+
+* How to merge branches locally and push to your fork
+* How to create PRs from the `master` branch to an upstream repo
+
+In the following iP task you will learn how to do the following new things, which are relevant to the tP:
+
+* How to merge branches remotely, and pull to your local repo
+* How to create PRs from branches other than `master`
+* How to manage PRs that your repo receive
+* How to work with parallel PRs
+
+Due to the above learning goals, this iP task is a bit complicated. Pay attention and try to achieve all learning goals along the way.
+{% endcall %}
+<br/>
+
 * **Note how to merge PRs**:
 
 {{ embed_topic("../book/gitAndGithub/managePRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Merging PRs**", "1", indent=1) }}
 
 * **Practice using parallel git branches _and_ PRs**, as explained below:
 1. First, do each increment as a parallel branch (follow the branch naming convention you followed earlier `branch-Level-8` etc.), but do not merge any.
+   <mermaid>
+   {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
+   gitGraph
+   commit id: "m1"
+   commit id: "m2"
+   branch branch-A-Assertions
+   checkout branch-A-Assertions
+   commit id: "b1c1"
+   checkout master
+   branch branch-A-CodeQuality
+   checkout branch-A-CodeQuality
+   commit id: "b2c1"
+   checkout master
+   branch branch-A-Streams
+   checkout branch-A-Streams
+   commit id: "b3c1"
+   commit id: "b3c2"
+   checkout master
+   </mermaid>
+
 1. Then, push each branch to your fork, and create a PR !!within your fork!! (i.e., from the increment branch to the `master` branch). ==Be careful not to create a PR to [the upstream repo]({{ url_course_org }}/ip).== %%If you did create such a PR by mistake, no worries, just close it yourself.%%
 
 {{ embed_topic("../book/gitAndGithub/createPRs/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Creating PRs**", "1", indent=1) }}
@@ -325,10 +365,84 @@ When you are doing the next step, you can run into merge conflicts. In some case
       $ git checkout master
       $ git pull origin master
       ```
-   * Note how the remaining <tooltip content="i.e., branches not merged to the `master` branch yet">un-merged branches</tooltip> are no longer in sync with the latest `master`. To rectify, merge the `master` branch on to each of them. Resolve merge conflicts, if any.
-   * Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.
+   Tag the merge commit as usual, and push to the fork.<br>
+   The diagram below shows the current situation, assuming you merged the `A-Assertions` PR first.
+   <mermaid>
+   {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
+   gitGraph
+   commit id: "m1"
+   commit id: "m2"
+   branch branch-A-Assertions
+   checkout branch-A-Assertions
+   commit id: "b1c1"
+   checkout master
+   branch branch-A-CodeQuality
+   checkout branch-A-CodeQuality
+   commit id: "b2c1"
+   checkout master
+   branch branch-A-Streams
+   checkout branch-A-Streams
+   commit id: "b3c1"
+   commit id: "b3c2"
+   checkout master
+   merge branch-A-Assertions tag: "A-Assertions"
+   </mermaid>
+   * Note how the remaining <tooltip content="i.e., branches not merged to the `master` branch yet">un-merged branches</tooltip> are no longer in sync with the latest `master`. To rectify, merge the `master` branch on to each of them. Resolve merge conflicts, if any. The outcome will be something like the below:{ texts="['3.3)']" }
+   <mermaid>
+   {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
+   gitGraph
+   commit id: "m1"
+   commit id: "m2"
+   branch branch-A-Assertions
+   checkout branch-A-Assertions
+   commit id: "b1c1"
+   checkout master
+   branch branch-A-CodeQuality
+   checkout branch-A-CodeQuality
+   commit id: "b2c1"
+   checkout master
+   branch branch-A-Streams
+   checkout branch-A-Streams
+   commit id: "b3c1"
+   commit id: "b3c2"
+   checkout master
+   merge branch-A-Assertions tag: "A-Assertions"
+   checkout branch-A-CodeQuality
+   merge master id: "merge master to ..."
+   checkout branch-A-Streams
+   merge master
+   </mermaid>
+   * Push the updated branches to your fork. The PRs will update automatically to reflect the updated branch.{ texts="['3.4)','3.5)']" }
    * As before, tag the merge commit in the master branch and push the tag to your fork.
-1. Merge the remaining PRs using a procedure similar to the above.
+1. Merge the remaining PRs using a procedure similar to the above. The diagram below shows the situation after merging the `A-CodeQuality` PR and syncing the local `branch-A-Streams` with the updated `master` branch.
+   <mermaid>
+   {{ "%%{init: { 'theme': 'default', 'gitGraph': {'mainBranchName': 'master'}} }%%" }}
+   gitGraph
+   commit id: "m1"
+   commit id: "m2"
+   branch branch-A-Assertions
+   checkout branch-A-Assertions
+   commit id: "b1c1"
+   checkout master
+   branch branch-A-CodeQuality
+   checkout branch-A-CodeQuality
+   commit id: "b2c1"
+   checkout master
+   branch branch-A-Streams
+   checkout branch-A-Streams
+   commit id: "b3c1"
+   commit id: "b3c2"
+   checkout master
+   merge branch-A-Assertions tag: "A-Assertions"
+   checkout branch-A-CodeQuality
+   merge master id: "merge master to ..."
+   checkout branch-A-Streams
+   merge master
+   checkout master
+   merge branch-A-CodeQuality tag: "A-CodeQuality"
+   checkout  branch-A-Streams
+   merge master
+   </mermaid>
 </div>
 </div>
 {#====================================================================================================================#}
@@ -657,7 +771,7 @@ If you wish, **you _may_ write the PR description to be very similar to the exam
 
 <box type="wrong" add-class="ml-4" icon=":fas-hand-paper:" icon-size="2x" seamless>
 
-**Please wait till {{ date_w4_start | date(format_normal, 3) }}** to start this task, to give others a few extra days to create the PR if they haven't done so yet.
+**Please wait till {{ date_w4_start | date(format_normal, 0) }}** to start this task, to give others a few extra days to create the PR if they haven't done so yet.
 </box>
 </div>
 
@@ -681,7 +795,7 @@ This task is worth `2x2=4` participation points.
 * {{ step(2) }} **Do the first PR review** as follows.
   * Give comment on ==[coding standard]({{ url_java_coding_standard }}) related issues only==.<br>
     Review comments don't always have to be about problems in the code. Other things you can do:
-    * complement the author on not making a common mistake
+    * compliment the author on not making a common mistake
     * ask questions
     * suggest alternatives
   * The review allocation is given in the panel below.

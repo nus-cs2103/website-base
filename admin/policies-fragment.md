@@ -43,10 +43,11 @@ As most of the work is graded individually, it is OK to do less or more than equ
 
 <div id="policy-validAbsences">
 
-There is no need to inform us. If you miss a {{ lecture_name_short }}/tutorial/task for a valid reason, just do your best to catch up. An occasional absence or two is not expected to affect your marks, as the marking scheme already has built-in buffers to absorb such occasional absences/lapses.
-
-Let us know only if you fail to earn full marks for participation due to such a reason, in which case we will consider giving an alternative avenue to earn marks missed due to the absences.
-
+* **An occasional absence or two will not affect your marks**, as the marking scheme already has built-in buffers to absorb such occasional absences/lapses. If you miss a {{ lecture_name_short }}/tutorial/task for a valid reason (e.g., MC, LOA, official university event, officially representing NUS in a competition), just do your best to catch up.{texts="['a)', 'b)', 'c)']"}
+* **Let us know only if you failed to earn full marks for participation due to such a reason** (or if you feel you are at risk of not earning full marks), in which case we will consider giving an alternative avenue to earn marks missed due to the absences.<br>
+ Detail of participation marks calculation is [here]({{ baseUrl }}/admin/participation.html).
+* **Normally, there is no need to inform us** (e.g., the tutor) of such absences or the reason, although you are welcome to.<br>
+  **No need to send us your MC** (it is best not to share your health information with others, unless necessary), but keep a copy  of it safely, in case we ask for it later, in relation to (b) given above.
 </div>
 
 <div id="policy-responseTime">

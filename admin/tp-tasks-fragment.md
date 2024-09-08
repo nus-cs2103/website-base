@@ -221,7 +221,7 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 
 ++**Connecting the dots so far ...**++{.text-info}
 
-* **We already know that the tP will be done in breadth-first iterative manner**, each iteration delivering a working version that will be evolved further by subsequent iterations. At the current stage of the tP, it is time for us to plan those iterations.{ texts="['A.','B.','C.','D.']" t-class="fw-bold text-info" }
+* **We already know that the tP will be done in breadth-first iterative manner**, each iteration delivering a working version that will be evolved further by subsequent iterations. Now is a good time for us to plan those iterations.{ texts="['A.','B.','C.','D.']" t-class="fw-bold text-info" }
 * **Intuitively, it feels like we should decide features of the final version first**, and then, work our way backwards to plan intermediate versions.<br>
   **But that approach is not advisable, due to the difficulty of reliably estimating the effort** each feature will need, _especially because we are not experienced in doing similar projects_. So, any such long-range plan is likely to be highly inaccurate anyway.
 * **Instead, our approach is  to ==assume the current iteration is the last iteration.==**<br>
@@ -690,11 +690,10 @@ As we are still at the early stages of identifying a problem to solve, do not th
     1. **Value proposition** i.e., what problem does the product solve? (plain text paragraph, <span class="text-danger">no more than 50 words</span>) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%<br>
        This is ==not a list of features== -- you should not think about exact features yet.
     1. **Link to the project notes document**: This should be an online document/page (not a folder) -- e.g., a GoogleDoc (not a Google Drive location) -- that is publicly accessible. If your project notes are in multiple locations/files, this one document should contain the link to the other documents with guidance on which link is for what.
-  * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 %}<br>
-  * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.
+  * You'll receive an email from TEAMMATES with the submission link. ==Only one member needs to submit== on behalf of the team. All members can view/update the submission.{% if cs2103 %}
+  * {{ icon_info }} Submission link will be sent to you by {{ date_w4_start | date(format_normal, 3) }} %%(reason: we need a few days to set up the submission system _after_ teams have been finalized)%%.<br>{% endif %}{{ icon_info }} If you can't find the submission link, you can go to [TEAMMATES link recovery page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery) and enter your NUSNET email account `e_______@u.nus.edu` to get TEAMMATES to resend the link.
 
-{{ show_faq("tpChangeDirectionLater") }}
-  {% endif %}
+{{ show_faq("tpChangeDirectionLater") if cs2103 }}
 
 
 </div>
@@ -721,7 +720,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 <div class="indented-level1">
 
 
-* **Learn** [**the _recipe for brainstorming user stories_** in the textbook → Specifying Requirements → UserStories →  Usage]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html#a-recipe-for-brainstorming-user-stories).<br>
+* **Learn** [**the _recipe for brainstorming user stories_** in the textbook → Specifying Requirements → User Stories →  Usage]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html#a-recipe-for-brainstorming-user-stories).<br>
   Also learn about <trigger trigger="click" for="modal:v10-brainstorming">brainstorming</trigger> and <trigger trigger="click" for="modal:v10-userstories">user stories</trigger>.<br>
   We recommend you view the following video, as it has some additional commentary on the recipe to be used:
 
@@ -747,7 +746,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
   * Intermediate steps (e.g., persona, scenarios): Keep records these in your collaborative project document started in the previous week.
   * Brainstormed user stories:  Record them using an <!--~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
   {{ icon_tip }} **Use an online spreadsheet for recording user stories** (e.g., Google Sheets), if you are not sure which tool to use. -- they are easy to edit, share, color, and more importantly, sort/filter.<br>
-  {{ icon_info }} If you put the user stories in a location other than your main collaborative project notes document (i.e., the one given [here](teamList.html)), ensure that location is viewable by the public, and the main document has a link to that location. Otherwise, the tutor will not be able to see your list of user stories.
+  {{ icon_info }} If you put the user stories in a page/file other than your main collaborative project notes document (i.e., the one given [here](teamList.html)), ensure that page/file is viewable by the public, and the main document has a link to that page/file. Otherwise, the tutor will not be able to see your list of user stories.
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-brainstorming">
 <include src="../book/gatheringRequirements/brainstorming/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -781,7 +780,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 <div id="desc_prioritize_user_stories">
 <div class="indented">
 
-**Task: Of the user stories you have collected, select the ones you would put in an <popover content="**Minimum Viable Product**: a version with just enough features to effectively deploy the product, and no more">MVP</popover> version** of the product. The goal here is to come up with the _smallest possible product that is still usable_ so that it can be implemented quickly, and delivered at the end of an earlier iteration
+**Task: Of the user stories you have collected, select the ones you would put in an <popover content="**Minimum Viable Product**: a version with just enough features to effectively deploy the product, and no more">MVP</popover> version** of the product. The goal here is to come up with the _smallest possible product that is still usable_ so that it can be implemented quickly, and delivered at the end of an earlier iteration.
 </div>
 
 * **Try to limit the MVP to strictly must-have user stories only** i.e., <span class="text-danger">it's NOT what you _can_ or _want to_ put in the MVP, but what you _must_ have in the MVP</span>. If the product _can_ be of some use without a given user story, that user story should be left out of the MVP version, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.

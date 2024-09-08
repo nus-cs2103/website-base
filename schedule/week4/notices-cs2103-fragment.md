@@ -12,7 +12,7 @@ As usual, the _weekly_ briefing will be hybrid mode, and optional to attend/watc
 </panel>
 <p/>
 
-<box>
+<box dismissible>
 
 {{ icon_important_big_red }} We strongly recommend you to **have a team project meeting _before_ the tutorial**. Keep notes of the meeting, and update project documents -- the tutor will ask for those during the tutorial.
 

@@ -152,7 +152,7 @@
 {{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Course Policies → Policy on Deadline Extensions**", "4", indent="1") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_submit_midterm_feedback_for_the_course">{% if not cs2113 %}[optional]{% endif %} Submit mid-term feedback for the course</span>
+<span id="heading_submit_midterm_feedback_for_the_course">{% if not cs2113 %}[optional]{% endif %} Submit midterm feedback for the course</span>
 <div id="desc_submit_midterm_feedback_for_the_course">
 
 * **An anonymous survey to submit feedback about the course and the teaching team** will open on Canvas by Monday. Please take a few minutes to give us your feedback.

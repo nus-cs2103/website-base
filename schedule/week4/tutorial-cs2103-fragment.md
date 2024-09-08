@@ -4,11 +4,7 @@
 
 * If you managed to add a GUI to your app, demo it to others.
 
-#### {{ thumb(2) }} **Discuss tP progress**
-
-<include src="../../admin/common-tutorials-fragment.md#share-project-direction" />
-
-#### {{ thumb(3) }} **Interpret class/object diagrams**
+#### {{ thumb(2) }} **Interpret class/object diagrams**
 
 * Do the first of the two exercise given below, as directed by the tutor. If there is time left, do the second one as well.
 
