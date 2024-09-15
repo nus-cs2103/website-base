@@ -86,21 +86,21 @@ In fact, here is the grading criterion for the individual project effort:
 <panel type="seamless" header="Some example enhancements" >
 
   * Add a new feature %%e.g. add the ability to view statistics%%
-  * Enhance an existing features in a major way %%e.g. make the command syntax more user friendly and closer to natural language%%
+  * Tweak an existing features %%e.g. make the command syntax more user-friendly and closer to natural language%%
   * A redesign of the GUI %%e.g. make it work like a chat application (note: chat is a form of CLI)%%
   * A redesign of the code %%e.g. Improve the design to improve the code quality.%%
 
 </panel><p/>
 </div>
 
-* **Tip: Contribute to _all_ aspects of the project** e.g. write backend code, frontend code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
+* **Recommended: Contribute to _all_ aspects of the project** e.g. write back-end code, front-end code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
 
-* **Tip: Do _all_ the work related to your enhancement yourself.** %%Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%<br>
+* **Recommended: Do _all_ the work related to your enhancement yourself.** %%Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%<br>
   In other words, ==we recommend that the work to be divided primarily based on _features/enhancements_== rather than _components_. The latter has the risk of a team member becoming a _single point of failure_ and you becoming _too reliant_ on other team members %%e.g., what if the person assigned to an important component doesn't deliver on time?%%.
 
 <div tags="m--cs2103">
 
-* **Tip: Divide the components of the product among team members**. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components to fit their features, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
+* **Recommended: Divide the components of the product among team members**. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is _in charge_ of one or more components. While others will be modifying those components to fit their features, your role as the _in charge_ of a component is to guide others modifying that component %%(reason: you are supposed to be the most knowledgeable about that component)%% and protect that component from degrading %%e.g., you can review others' changes to your component and suggest possible changes%%.
 </div>
 
 
@@ -108,7 +108,7 @@ In fact, here is the grading criterion for the individual project effort:
 
 * **Objective:** showcase your ability to write both _user-facing documentation_ and _developer-facing documentation_.
 * <span class="badge bg-info">Expectation</span> <span class="text-info">**Update the User Guide (UG) and the Developer Guide (DG) parts**</span> that are related to the enhancements you added.
-* **Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements**, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.{% if cs2113 %}
+* **Optional: If the UG/DG updates for your enhancements are not enough to reach the above requirements**, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.{% if cs2113 %}
 * <span class="badge bg-info">Expectation</span> <span class="text-info">**Use at least {{ uml_diagrams_per_person }} UML diagrams in your DG updates**</span> i.e., diagrams you added yourself or those you modified significantly.{% endif %}
 
 #### <span class="badge bg-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Testing</span>

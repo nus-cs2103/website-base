@@ -17,7 +17,6 @@
 {{ show_faq("ipIncrementAlreadyDone") }}
 {{ show_faq("ipForgotToPushTag") }}
 {{ show_faq("ipIncorrectTagOrBranch") }}
-
 </box>
 </div>
 <div id="order">
@@ -294,6 +293,7 @@ If you are new to Git branching, before attempting this iP increment, first lear
 <div id="post_Level-7">
 {{ show_faq("ipOtherDataFormats") }}
 {{ show_faq("ipMessedUpBranching") }}
+{{ show_faq("ipNotDoneInBranch") }}
 </div>
 {#====================================================================================================================#}
 <div id="pre_Level-8">
@@ -301,7 +301,7 @@ If you are new to Git branching, before attempting this iP increment, first lear
 
 * **Do Level 8 similar to the above**, using a branch `branch-Level-8`.
 </div>
-<div tags="m--cs2113" id="as-parallel-prs">
+<div tags="m--cs2113 m--cs2103" id="as-parallel-prs">
 
 {% call topic_preamble(reuse=false) %}
 
@@ -443,6 +443,8 @@ When you are doing the next step, you can run into merge conflicts. In some case
    checkout  branch-A-Streams
    merge master
    </mermaid>
+
+{{ show_faq("ipMessedUpBranching") }}
 </div>
 </div>
 {#====================================================================================================================#}
@@ -597,8 +599,8 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 {#====================================================================================================================#}
 <div id="pre_A-AiAssisted">
 {% set ip_ai_link = "[iP.AI route](../schedule/week2/project.html#:~:text=iP.AI%3A%20an%20AI%2Dassisted%20approach%20to%20the%20iP)" %}
-* If you are already following the {{ ip_ai_link }}, you may add the `A-AiAssisted` tag to the latest commit of your repo without any other work.
-* Otherwise (i.e., if you haven't been using AI tools in the iP until now), the increment below is an opportunity for you to use the iP to explore how AI tools can help with programming tasks. If you take it up, in places where you use code that you wrote with the help of AI tools, give some details (e.g., which tool you used how it helped) as a code comment. Alternatively, you can add an `AI.md` file, similar to the {{ ip_ai_link }}.
+* If you are already following the {{ ip_ai_link }}, you may add the `A-AiAssisted` tag to the latest commit of your repo without needing any further work.
+* Otherwise (i.e., if you haven't been using AI tools in the iP until now), the increment below is an opportunity for you to use the iP to explore how AI tools can help with programming tasks. If you take it up, in places where you use AI-assisted code, give some details (e.g., which tool you used how it helped) as a code comment. Alternatively, you can add an `AI.md` file, similar to the {{ ip_ai_link }}.
 </div>
 
 {#====================================================================================================================#}
@@ -894,8 +896,8 @@ This activity is worth `2x2=4` participation points.
 * You may give the product any name, but do not rename the repo.
 * Reminder: you can give the chatbot any personality (there is no need to follow the exact command/response formats given)
 * {{ icon_important_big_red }} Ensure that the name of the product name is not `Duke` (as required by [Level-0](../se-book-adapted/projectDuke/index.html#level-0-rename-greet-exit)).{% if cs2103 %}<br>
-   Ensure the correct product name appears everywhere in the UI e.g., titlebar of the GUI.{% endif %}
-* {{ icon_important_big_red }} Remember to give credit to any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
+   Ensure the correct product name appears everywhere in the UI e.g., title bar of the GUI.{% endif %}
+* {{ icon_important_big_red }} Remember to give credit for any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent="1") }}
 </div>

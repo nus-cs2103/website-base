@@ -1,6 +1,11 @@
 {% from "common/macros.njk" import embed_topic, show_as_rounded_tab, show_as_tab, thumb, timing_badge with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import ip_pr_slap_review_allocation as allocations with context %}
 
+<box type="info">
+
+The tutorial is held F2F from this week onwards. See [the tutorials page]({{ baseUrl }}/admin/tutorials.html) for more info.
+</box>
+
 #### {{ thumb(1) }} Discuss code quality problems of iP PRs
 
 <!--div class="indented">
@@ -27,7 +32,7 @@
    </panel>
    <p/>
 
-1. {{ timing_badge("10 minutes", "info") }} **Find instances of the given code quality problems**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab), and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
+1. {{ timing_badge("10 minutes", "info") }} **Find instances of the three code quality problems listed below**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab), and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
    **a) weak SLAP**<br>
    **b) nesting problems**: arrow-head style code or too-deep nesting<br>
    **c) too-long methods**<br>
@@ -40,7 +45,7 @@
 
    {{ icon_tip }} To identify nesting problems or long methods, zoom out and scroll through the entire PR code to do a visual inspection (no need to read the code line-by-line). After visually locating a method that looks too long/deep, have a closer look to see it can be improved by using better abstraction.
 
-   {{ icon_tip }} If exisiting PR comments are getting in your way, you can hide them using the following option:
+   {{ icon_tip }} If existing PR comments are getting in your way, you can hide them using the following option:
    <pic src="..\..\book\gitAndGithub\reviewPRs\images\hideExistingComments.png" />
    <include src="..\..\book\gitAndGithub\reviewPRs\text.md#tip-pr-split-view" inline />
    </box>
@@ -77,23 +82,29 @@
 * **Think of the answers to the following questions**. These will be discussed during the tutorial.
   1. Which user stories don’t follow the correct format?
   1. Any of them too big for the tP planning? %%i.e., cannot be implemented by one person within 1-2 days%%
-  1. Which are must-have for v1.2? %%i.e., impossible to use the app without it%%
+  1. Which are must-have features %%i.e., impossible to use the app without it%%
 
 
 
 
 #### {{ thumb(3) }} Prioritize tP user stories
 
-* If you haven't done so already, prioritize tP user stories as explained in the panel below.
+1. If you haven't done so already, brainstorm for user stories.
+
+{{ embed_topic("../../admin/tp-tasks-fragment.md#desc_brainstorm_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Brainstorm user stories**", "2", indent="1") }}
+
+2. If you want to refine your user stories (based on what you learned from the tutorial activity above) that you brainstormed earlier, do that first.
+
+1. If you haven't done so already, prioritize tP user stories as explained in the panel below.
 
 {{ embed_topic("../../admin/tp-tasks-fragment.md#desc_prioritize_user_stories", "Admin " + icon_embedding + " tP → Week 5 → **Choose user stories for the MVP version**", "2", indent="1") }}
 
 
-#### {{ thumb(4) }} <span class="badge bg-secondary">time permitting</span> Create a _feature list_ for {{ version_mvp }}
+#### {{ thumb(4) }} <span class="badge bg-secondary">time permitting</span> Create a _feature list_ for the MVP version
 
 * If there is time left, do the following tP task that is scheduled for the following week.
 
-<div class="indented-level2">
+<div class="indented-level1">
 
 <panel header="%%Admin {{ icon_embedding }} **tP → week 6 → Conceptualize the MVP version**%%" expanded >
 

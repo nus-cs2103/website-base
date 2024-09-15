@@ -748,7 +748,7 @@ Given below are some more features you can consider adding at this point (it is 
    --------------------------------------------------
    >>> What can I do for you?
   ```
-* **Make commands case insensitive and immune to extra leading/trailing spaces**. For example, all these commands should work the same way.
+* **Make commands case-insensitive and immune to extra leading/trailing spaces**. For example, all these commands should work the same way.
   ```
   add read book
   ADD read book

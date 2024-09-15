@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import as_tag, embed_topic with context %}
 
 <!-- =============================================================== -->
 <div id="faq-whereIsEverything-Q">Where is everything?</div>
@@ -154,6 +154,14 @@ Not to worry. Just push the tags now. They will be detected by the dashboard at 
 It's OK; correct it now.
 </div>
 <!-- =============================================================== -->
+<div id="faq-ipNotDoneInBranch-Q">What if I did the increment in the `master` branch, not in `branch-___` as required?</div>
+<div id="faq-ipNotDoneInBranch-A">
+
+It's fine. Be more careful in the future. Your iP marks will not be affected for missing an occasional deliverable such as this one.
+
+If you still want to make that {{ as_tag("branch-___", tag_style="danger") }} item green in the iP dashboard, you can simply create a branch with the required branch name, do some commits in it, and merge it to `master`. The dashboard will accept it as long as it has the right name and merged to the `master` branch.
+</div>
+<!-- =============================================================== -->
 <div id="faq-ipOtherDataFormats-Q">Can I use other data formats (e.g., serialized objects) to save tasks?</div>
 <div id="faq-ipOtherDataFormats-A">
 
@@ -165,6 +173,8 @@ Also note that in the team project, there is a project constraint that requires 
 <div id="faq-ipMessedUpBranching-A">
 
 Not to worry. You are welcome to (but not _required_ to) try to rectify it. There is no penalty. Just take note of your mistake and try to avoid it in the future.
+
+{{ icon_tip }} In addition, you can try to identify the intended learning objective of using branching requirement that you messed up, and try to achieve it on your own. For example, if the iP increment was intended for you to practice parallel branches, you can try to do some other iP code changes as parallel branches so that you replicate a branch graph similar to the one intended by the iP increment.
 </div>
 <!-- =============================================================== -->
 <div id="faq-temp-Q"></div>
@@ -199,9 +209,10 @@ TLDR: In this course, tutor's main job is to deliver tutorials. Hence, tutors ca
   %%**Reason**: This question is a follow-up from a tutorial discussion.%%
 * {{ good }} *This is how I understood coupling. Is that correct?*<br>
   %%**Reason**: This question shows you have put in some effort to learn the topic and seeking further clarification from the tutor.%%
-* {{ bad }} *What is coupling?* - Such questions are discouraged.<br>
-  %%**Reason**: This question implies you haven’t done what you could to learn the topic in concern.%%{% if cs2103 %}
-* {{ bad }} *How will this be graded?* | *What happens if this submission is late?* %%**Reason**: Tutors are not allowed to answer admin questions.%%
+* {{ bad }} *What is coupling?* | *What is SLAP?*<br>
+  %%**Reason**: These are concept covered in the textbook and other resources provided.%%{% if cs2103 %}
+* {{ bad }} *How will this be graded?* | *What happens if this submission is late?*<br>
+  %%**Reason**: Tutors are not allowed to answer admin questions.%%
 * {{ bad }} *My program crashes with this error; what to do?*<br>
   %%**Reason**: Tutors are not allowed to help with technical issues (post your issue in the forum instead).%%{% endif %}
 </div>
@@ -227,6 +238,29 @@ Our tutorial participation bar has enough of a buffer to allow an occasional abs
 <div id="faq-tutorialLength-A">
 
 In the past, many students have requested to increase the tutorial duration because a mere hour is barely enough to get through all the tutorial tasks. Increasing the tutorial time is not possible due to lack of venues and tutors. Instead, let's try to make the best of the one hour available by coming well-prepared and starting on time. Note that ==the better prepared you are, the higher the chance of completing all activities allocated to a tutorial== within time.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialWhyZoomInF2f-Q">WHAT? Why use Zoom when we are already F2F?</div>
+<div id="faq-tutorialWhyZoomInF2f-A">
+
+Zoom is still needed for,<br>
+(a) screen-sharing the slides,<br>
+(b) collecting answers via PM or polls,<br>
+(c) recording the tutorial for your future reference.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialByZoom-Q">Are you allowed to attend the tutorial via Zoom instead?</div>
+<div id="faq-tutorialByZoom-A">
+
+By default, no.<br>
+Reason: it goes against the purpose of F2F tutorials (i.e., to get the whole team to meet physically) and the NUS directive to move all small classes to F2F mode.<br>
+However, you can request (by emailing `{{ course | lower }}@comp.nus.edu.sg`) to attend the tutorial of a specific week via Zoom, if you have a valid reason (e.g., MC, taking part in an NUS-related event).
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialZoomWithoutPermission-Q">What happens if I join a tutorial via Zoom, without getting permission to do so?</div>
+<div id="faq-tutorialZoomWithoutPermission-A">
+
+There is no penalty, but that tutorial will not count for participation. See [here](participation.html#:~:text=Sufficient%20tutorial%20attendance/participation) for the bar you need to meet for tutorial participation.
 </div>
 <!-- =============================================================== -->
 
@@ -380,6 +414,12 @@ That's fine. It means you can get to MVP with very little effort, which is a goo
 <div id="faq-tpIndividualOrTeam-A">
 
 It's an individual task (note the icon {{ icon_individual }} above), to be done by each member, as we want _every_ member to be familiar with the codebase.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tpTestsForTutorial-Q">When doing this tP tutorial, do we have to write/update test cases too?</div>
+<div id="faq-tpTestsForTutorial-A">
+
+Not a strict requirement, but given the purpose of this tutorial is to learn the codebase, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise, you can run into difficulties when you are writing test cases for your own features later.
 </div>
 <!-- =============================================================== -->
 

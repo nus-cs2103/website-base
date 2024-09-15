@@ -31,6 +31,7 @@
 {{ show_expanded_faq("ipIncrementAlreadyDone") }}
 {{ show_expanded_faq("ipForgotToPushTag") }}
 {{ show_expanded_faq("ipIncorrectTagOrBranch") }}
+{{ show_expanded_faq("ipNotDoneInBranch") }}
 {{ show_expanded_faq("ipOtherDataFormats") }}
 
 ## FAQs on: Tutorials

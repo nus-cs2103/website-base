@@ -17,12 +17,12 @@ def get_file_content_as_list(filename):
 
 
 def get_file_stats(contents):
-  """Given a list of lines, return line count and letter count as a dictionary
+  """Given a list of lines, return line count and letter count as a list
   
   Trailing line breaks (if any) are not counted for letter count.
   Spaces, even trailing spaces, are counted for letter count.
   Example:
-  get_stats(['aaa\n', 'bbb']) returns {'lines': 2, 'letters': 6}
+  get_stats(['aaa\n', 'bbb']) returns [2, 6]
   """
   stats = []
   # ADD YOUR CODE HERE
@@ -40,13 +40,13 @@ analyze_file('file2.txt')
 ```
 
 `file1.txt` (2 lines, 22 letters):
-```
+```{highlight-lines="1-2"}
 aaa bbb ccc
 ddd eee fff
 ```
 
 `file2.txt` (4 lines, 10 letters -- note: the ==last line has a trailing space==, which adds up to 10 letters):
-```
+```{highlight-lines="1-4"}
 a
 bb
 ccc

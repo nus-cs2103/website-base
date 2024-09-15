@@ -236,7 +236,7 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
   Thus, we can adopt the following two **P**lanning **S**trategies:
   <box type="important" id="ps1-and-ps2" seamless>
 
-  * **We should have a clear overall _direction_**.This ensures we always head in the right direction, even if the final product is defined precisely yet. { icon="" texts="['PS1.', 'PS2.']"  t-class="fw-bold text-danger" }
+  * **We should have a clear overall _direction_**.This ensures we always head in the right direction, even if the final product is not defined precisely yet. { icon="" texts="['PS1.', 'PS2.']"  t-class="fw-bold text-danger" }
   * **An iteration should start by defining a precise target for it**, aligned with the project direction. This ensures we always have a concrete target to aim for.
   </box>
 
@@ -835,8 +835,12 @@ As we are still at the early stages of identifying a problem to solve, do not th
   * **[Tutorial 2 - Adding a new Command](https://se-education.org/guides/tutorials/ab3AddRemark.html)**
     * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
     * **Submission:** Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
-      * FAQ: Do we have to write/update test cases too?<br>
-        A: Not a strict requirement, but given the purpose of this tutorial is to learn the codebase, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise, you can run into difficulties when you are writing test cases for your own features later.
+
+<div class="indented-level2">
+
+{{ show_faq("tpTestsForTutorial") }}
+</div>
+
   * [Tutorial 3 - Removing a field from an entity](https://se-education.org/guides/tutorials/ab3RemovingFields.html)
     * This tutorial is optional to do, but **at least give it a quick read**.
     * Submission: not required.
@@ -882,7 +886,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 * **Why?** In addition to helping towards PS2, this deliverable forces you to make some fine-grained product design decisions early, thus giving you a better idea about the complexities that lie ahead, and hence, a better sense of the effort that will be required.
 
 * ****Task:**** **Collate into a document the _complete_ detailed description of the intended behavior of the MVP version of the product.**
-  * The intended audience for this document is team members, not end users (i.e., this is not a user guide).
+  * The intended audience for this document is team members, not users (i.e., this is not a user guide).
   * Use a medium that is convenient for collaboration (e.g., a GoogleDoc).
   * The content need not be polished. Don't waste time in formatting, copy editing etc.
   * **For each feature, specify the following:**
@@ -900,7 +904,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 * Acceptable values %%e.g., If a command takes a person name as a parameter, what inputs are accepted as valid person names?%% Some example aspect to consider:
   * Which formats are allowed for dates, times, telephone numbers, etc.?
-  * How does extra/leading/trailing spaces affect the value -- for instance is 'John Doe' same as 'John&nbsp;&nbsp;&nbsp;Doe' (note the multiple spaces in the second name)?
+  * How does extra/leading/trailing spaces affect the value -- for instance is 'John Doe' same as 'John&nbsp;&nbsp;&nbsp;Doe' (note the multiple spaces in the middle of the name)?
   * How does UPPER/lower case affects values -- is `John Doe` same as `john doe`?
   * It's not enough to state 'valid name'; you need to specify what rules will be used to determine if the input is a valid name.
 * Error message if the value is not acceptable
@@ -912,15 +916,15 @@ Yes, making these decisions is not easy -- and that's why we want you to think a
 * succeeds %%e.g., changes in the GUI, messages shown to the user%%
 * fails %%e.g., what are the error messages shown when a specific parameter is invalid, missing, specified multiple times, etc.%%
 
-**Duplicate handling:** What rules are used to determine if two contacts are duplicates? %%e.g., is having the same name enough, or all details need to be the same?%%<br>
+**Duplicate handling:** What rules are used to determine if two contacts are duplicates? %%e.g., is having the same name enough for two contacts to be considered duplicates, or all details need to be the same?%%<br>
 How does the application react to such duplicate entries? Reject or accept? Why?
 
-**Relevant UI mock-ups**, unless the UI will be exatly the same as AB3 %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary)%%
+**Relevant UI mock-ups** (unless the UI will be exactly the same as AB3): %%they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary%%
 
 ---
 
 {{ icon_tip }} **Recommended: Decide priorities of finer aspects of features**, for example, as must-have (to implement in the MVP) and nice-to-have (i.e., to implement in the MVP only if there is time)<br>
-   %%e.g., you can decide one date format (to accept in user commands) as must-have and two other formats as nice-to-have.%%
+   %%e.g., you can decide one date format that is to be supported in user commands as must-have and two other formats as nice-to-have.%%
 </box>
 </div>
 
@@ -945,9 +949,9 @@ For example, it is fine to restrict the person name to a certain length and a ch
 <div id="divideDocs" class="indented">
   <box>
 
-  {{ icon_tip }} Recommended: **Divide <tooltip content="i.e., work related to the User Guide and the Developer Guide">documentation work</tooltip> among team members equally; preferably based on enhancements/features each person would be adding** %%e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%.
+  {{ icon_tip }} Recommended: **Divide <tooltip content="i.e., work related to the User Guide and the Developer Guide">documentation work</tooltip> among team members so that each person does a non-trivial amount of documentation; preferably based on enhancements/features each person would be adding** %%e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide%%.
 
-  %%Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.%%
+  %%Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you wrote.%%
 
   {{ embed_topic("tp-grading.md#criteria-documentation", "Admin " + icon_embedding + " **tP: Grading → Documentation**", "3") }}
   <p/>
