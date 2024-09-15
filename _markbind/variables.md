@@ -19,7 +19,7 @@
 
 <variable name="date_w1_start">2022-01-10</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
-<variable name="recess_after_week">7</variable>
+<variable name="recess_after_week">6</variable>
 <variable name="lecture_venue">LT15</variable>
 <variable name="time_lecture_start">1600</variable>
 <variable name="time_lecture_end">1800</variable>
