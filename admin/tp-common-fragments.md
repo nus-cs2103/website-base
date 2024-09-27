@@ -13,7 +13,7 @@
 
 {% call show_common_error("error-commit-message-subject") %}
 **Not following the [convention for Git commit message subject](https://se-education.org/guides/conventions/git.html#:~:text=Commit%20message%3A%20Subject)**.<br>
-Caution: This is <span class="text-danger">very hard to rectify later</span>, after PR containing the commits have been merged. %%Reason: While Git allows editing past commits, it changes their timestamp, which affects your weekly code contribution stats (which are factored into evaluating the consistency of your coding work over the project duration).%% { icon="fas-skull" i-class="text-danger" }
+Caution: This is <span class="text-danger">very hard to rectify later</span>, after the PR containing the commits have been merged. %%Reason: While Git allows editing past commits, doing so changes their timestamp, which affects your weekly code contribution stats (which are factored into evaluating the consistency of your coding work over the project duration).%% { icon="fas-skull" i-class="text-danger" }
 {% endcall %}
 
 {% call show_common_error("error-pr-from-master") %}

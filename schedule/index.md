@@ -262,7 +262,7 @@ A label with the {{ icon_deadline }} icon indicates the deadline for that task %
 {% endif %}
 {% if tp %}
 
-<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">{{ icon_team }} tP: {{ theme.name }} {% if theme.milestone %}<small><span style="float: right;" class="text-warning p-1"> → <md>{{ theme.milestone }}</md></span></small>{% endif %}</h2>
+<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4">{{ icon_team }} tP: {{ theme.name }} {% if theme.milestone %}<small></small>{% endif %}</h2>
 
 <include src="../../admin/tp-w{{ week_num }}.md#body" />
 {% endif %}

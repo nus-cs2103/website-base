@@ -142,6 +142,8 @@
 <variable id="bullet_checkbox_selected">{ icon="fas-square-check" }</variable>
 <variable id="bullet_checkbox_selected_green">{ icon="fas-square-check" i-class="text-success" }</variable>
 <variable id="bullet_important_red">{ icon="fas-circle-exclamation" i-class="text-danger" }</variable>
+<variable id="bullet_info">{ icon="fas-info-circle" i-class="text-info" }</variable>
+<variable id="bullet_Q">{ icon="glyphicon-question-sign" i-class="text-info" }</variable>
 <variable id="bullet_target_green">{ icon="fas-crosshairs" i-class="text-success" }</variable>
 <variable id="bullet_tick_green">{ icon="fas-check" i-class="text-success" }</variable>
 <variable id="bullet_tip">{ icon="fas-lightbulb" i-class="badge rounded-pill bg-success text-white my-1" i-size="10px" }</variable>

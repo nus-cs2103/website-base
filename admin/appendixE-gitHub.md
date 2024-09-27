@@ -206,7 +206,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 ****({{ icon_individual }}, {{ icon_individual }}, {{ icon_individual }}, ...) Every team member:****
 
 1. **Watch** the `{{ tp_repo_name }}` team repo (created earlier) i.e., go to the repo and click on the {{ button(':octicon-eye: Watch :octicon-triangle-down:') }} button to subscribe to activities of the repo.
-1. **Fork** the `{{ tp_repo_name }}` repo to your personal GitHub account.<br>
+1. **Fork** the `{{ tp_repo_name }}` team repo to your personal GitHub account.<br>
    <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
 1. **Set up** the developer environment in your computer by following the
@@ -322,7 +322,7 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
   * {{ icon_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.
 * **Assign the PR to a milestone.** This allows the PR to become visible under the milestone progress.<br>
   There is no need to assign the PR to a person. The PR author is considered as the owner of the PR.
-* **While waiting for one PR to be merged, you can send more PRs.** If you do, remember to use a separate branch for each PR, and try to reduce overlaps between parallel PRs %%(so that each can be reviewed/merged independently of each other)%%.
+* **While waiting for one PR to be merged, you can send more PRs.** If you do, remember to use a separate branch for each PR, and try to reduce overlaps between parallel PRs %%(so that each can be reviewed/merged independently of the others)%%.
 
 {{ show_faq("githubIssueForEachPr") }}
 

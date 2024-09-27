@@ -46,8 +46,11 @@
 {{ show_expanded_faq("tpWhyNarrowTarget") }}
 {{ show_expanded_faq("tpHowNarrowTargetCanBe") }}
 {{ show_expanded_faq("tpChangeDirectionLater") }}
-{{ show_expanded_faq("dgDetailsLevel") }}
-{{ show_expanded_faq("dgAddNewUml") if cs2103 }}
+{{ show_expanded_faq("tpNotEnoughWorkToDivide") }}
+{{ show_expanded_faq("tpOmitStoriesInAb3") if cs2103 }}
+{{ show_expanded_faq("tpHowManyFeaturesInMvp") }}
+{{ show_expanded_faq("tpAb3FeatureInMvpSpec") if cs2103 }}
+{{ show_expanded_faq("tpIterationDeadline") }}
 {{ show_expanded_faq("githubWhoCreatesIssues") }}
 {{ show_expanded_faq("githubIssuesForNonCodingTasks") }}
 {{ show_expanded_faq("githubIssuesSubTasks") }}
@@ -55,19 +58,18 @@
 {{ show_expanded_faq("githubIssuesMultipleDocAuthors") }}
 {{ show_expanded_faq("githubIssueForEachPr") }}
 {{ show_expanded_faq("githubWhoMergesPrs") }}
+{{ show_expanded_faq("tpMultiStepCmd") }}
+{{ show_expanded_faq("dgDetailsLevel") }}
+{{ show_expanded_faq("dgAddNewUml") if cs2103 }}
 {{ show_expanded_faq("tpHowMuchToGetFullMarks") }}
 {{ show_expanded_faq("tpEnoughFeatures") if cs2103 }}
 {{ show_expanded_faq("tpMustWrite300Loc") if cs2103 }}
 {{ show_expanded_faq("tpFullMarksFor300Loc") if cs2103 }}
-{{ show_expanded_faq("tpIterationDeadline") }}
-{{ show_expanded_faq("tpNotEnoughWorkToDivide") }}
-{{ show_expanded_faq("tpOmitStoriesInAb3") if cs2103 }}
-{{ show_expanded_faq("tpHowManyFeaturesInMvp") }}
-{{ show_expanded_faq("tpNoPrInIteration") if cs2103}}
-{{ show_expanded_faq("tpUpdateTestsWithCode") if cs2103}}
-{{ show_expanded_faq("tpUpdateDocsWithCode") if cs2103}}
-{{ show_expanded_faq("tpWhyUpdateDiagramsEarly")}}
-{{ show_expanded_faq("tpFeatureTakeovers")}}
+{{ show_expanded_faq("tpNoPrInIteration") if cs2103 }}
+{{ show_expanded_faq("tpUpdateTestsWithCode") if cs2103 }}
+{{ show_expanded_faq("tpUpdateDocsWithCode") if cs2103 }}
+{{ show_expanded_faq("tpWhyUpdateDiagramsEarly") }}
+{{ show_expanded_faq("tpFeatureTakeovers") }}
 </div>
 
 {% endcall %}

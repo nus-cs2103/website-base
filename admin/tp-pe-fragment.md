@@ -8,15 +8,15 @@
 <div class="indented-level1">
 <panel header="more details on the motivation and objectives..." minimized>
 
-* **The upfront objective of the PE is to increase the rigor of project grading.** Assessing most aspects of the project involves an element of subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.
+* **The upfront objective of the PE is to increase the rigor of project grading.** Assessing most aspects of the project involves an element of subjectivity. As the project counts for a large percentage of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE to minimize the chance of your project being affected by evaluator-bias.
 * **PE also evaluates your testing skills**, done as the following two-parts:
   1. **You will be given a chance to find bugs in a different software.** Furthermore, you will be given an opportunity to ~~defend your bug reports against any possible objections~~ interact with the developers (anonymously) to refine the bug report further %%e.g., correct the severity level if the level you chose initially was incorrect%%. If you report possible bugs that turn out to be actual bugs, you earn marks (provided the product actually had bugs in the first place).
   2. **Your product will be subjected to a rigorous testing** and you will be given a chance to point out any inaccuracies in the bugs reported. You will lose marks for any bugs that turned out to be real bugs, but only if your work has more bugs than a certain bar.
 * **The above two can lead to high-rigor, <tooltip content="based on how well you achieve the objectives of testing, as opposed to indirect measures such as number of test cases">_outcome-based_</tooltip> evaluation of your testing skills**. The alternative is to rely solely on other easy-to-measure metrics %%(e.g., the number of test cases, test coverage, test LoC etc.)%% which we don't think as good representations of your actual testing skills.
 **The _ultimate_ objective of the PE is not even the higher rigor of grading.** Because of the PE, you will realize that any bugs are very likely to be detected, which means you will work extra hard to avoid bugs; and THAT is the real benefit. Ultimately, <span class="text-success">**what we want is for you to internalize a higher standard for testing and a lower tolerance for bugs in your own code**</span> -- something that can have a longer-lasting impact on your future careers, beyond the mere course grade.
 * **Problem: There is no way we can carry out the above-mentioned** two-part evaluation at a high-level of rigor if using tutors as testers, or using an automated testing script. %%e.g., some tutors might not have the motivation to try hard enough to find bugs, and it will be hard to find tutors willing to spend many hours testing products so near to their own exams.%%<br>
-  **Solution: Get the two parts of the evaluation to feed each other** by getting student to test each others' products.
-* **The fact that you are testing products created by your classmates and objecting to bugs reported by your classmates can makes this a rather 'unpleasant' experience**. You might feel like _being pitted against each other_, or as if _you are forced to bring down each other_. But as you read above, it is a necessary evil for this evaluation to be even possible. Given the actual goal is to get you to create products with very few bugs, we think switching off the 'collaborative learning' mode for just a few days is a price worth paying to achieve that goal. After all, the PE is an evaluation activity (not a _learning activity_) and happens _after_ the regular learning period is over.
+  **Solution: Get the two parts of the evaluation to feed each other** by getting student to test each other's products.
+* **The fact that you are testing products created by your classmates and objecting to bugs reported by your classmates can make this a rather 'unpleasant' experience**. You might feel like _being pitted against each other_, or as if _you are forced to bring down each other_. But as you read above, it is a necessary evil for this evaluation to be even possible. Given the actual goal is to get you to create products with very few bugs, we think switching off the 'collaborative learning' mode for just a few days is a price worth paying to achieve that goal. After all, the PE is an evaluation activity (not a _learning activity_) and happens _after_ the regular learning period is over.
 * **You are not taking marks from someone else** -- at least, don't think of it that way. The point of contention is 'is this really a bug?' which is independent of the people involved. Furthermore, the reward for detecting a bug and the penalty for having a bug in your code are calculated independently.
 * **Still, _none of us_ likes it when others point out problems of our work**. Some of us don't even like pointing out problems of others' work. But ==we just have to learn not to take bug reports personally==. Another important intended outcome is to be able to report bugs in a way that doesn't feel like you are _attacking_ or trying to _sabotage_ the dev team.
 * **PE also evaluates aspects other than testing** e.g., your product evaluation skills, effort estimation skills etc. When evaluating those aspects in particular, they are ==not graded solely based on peer ratings==. Rather, PE data are cross-validated with tutors' grades to identify cases that need further investigation. When peer inputs are used for grading, they are usually combined with tutors' grades with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.
@@ -81,14 +81,14 @@
   * **Set your camera** so that _all_ the following are visible:
     1. your face (side view, ==no mask==)
     1. your hands
-    1. the work area (i.e., the table top)
+    1. the work area (i.e., the tabletop)
     1. the computer screen<br>
     <pic eager src="images/zoomCameraExample.png" width="362"></pic>
 
 </div>
 
-* **Join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time.{% if cs2103 %}<br>
-  **If on F2F mode:** Arrive at lecture venue ({{ lecture_venue }}) around 10-15 minutes early.{% endif %}
+* **Strongly recommended to join the Zoom waiting room ==15-30 minutes before the start time==.** Admitting you to the Zoom session can take some time. You need to be in the meeting and ready to start the PE by 4.05pm{% if cs2103 %}<br>
+  **If on F2F mode:** Strongly recommended to arrive at lecture venue ({{ lecture_venue }}) around 10-15 minutes early. We can allow only 5 minutes (i.e., until 4.05pm) for you to get ready to start the PE.{% endif %}
 * **In case of Zoom outage**, we'll fall back on MS Teams (MST).{% if cs2103 %} Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).{% elseif cs2113 %} Make sure you have MST running; proctoring will be done via individual tutorial MST teams that we have been using.{% endif %}
 * **Recording the screen is not required.**
 * **You are allowed to use head/ear phones.** But no talking allowed (unless you are talking to the invigilator) -- so, no talking/singing to yourself as this can be mistaken for a rule violation.
@@ -156,7 +156,7 @@ while choosing the `{{ course_pair }} PE` as the session.
 
 **Bonus marks for high accuracy rates!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a substantial bonus if >70%,) of your bugs are _**accepted as reported**_ (i.e., the eventual `type.*` and `severity.*` of the bug match the values you chose initially and the bug is accepted by the team).
+You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a substantial bonus if >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual `type.*` and `severity.*` of the bug match the values you chose initially and the bug is accepted by the team).
 
 Take away: Aim for the _correct_ severity/type etc. rather than the one that gives you most marks, as the former can end up earning you more marks in the end anyway.
 </box>
@@ -325,7 +325,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 ****Yes, that can be better!**** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that can be better!", accept it graciously, even if you can come up with _some_ argument to justify the current behavior. <br>
   Even when you still want to defend the current behavior, instead of pretending that the behavior was a deliberate choice to begin with, you can say something like,
-  > "Thanks for raising this. Indeed, it didn't occur to us. But now that we have thought about it, we still feel .."
+  > "Thanks for raising this. Indeed, it didn't occur to us. But now that we have thought about it, we still feel ..."
 
 **_Some_ bugs are 'expected'.** Given the short time you had for the tP and your inexperience in SE team projects, this work is not expected to be totally bug free. The grading scheme factors that in already -- i.e., your grade will not suffer if you accept a few bugs in this phase.
 </box>

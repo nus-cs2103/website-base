@@ -105,17 +105,17 @@ This week's briefing videos start with a detour.
 
 <box type="warning" header="Noticed anything odd about the videos below?" seamless>
 
-As you watch the videos below, you might realize that while the voice is 'sort of' like prof's, the accent is certainly different from prof's. This is because in these videos we used an ==AI-driven text-to-speech tool== to create the narrations, as an experiment.
+In these two videos, we used an ==AI-driven text-to-speech tool== to create some parts of the narrations, as an experiment. See if you can spot which parts are AI-generated and which parts are not.
 </box>
 
 ****tP Briefing (Part 2a -- v1.1, Workflow)****{.text-info}
 
 
-{{ panopto(desc="9 mins", "3de4b41b-758d-4784-aa26-b11e00f29217", start_week="7") }}
+{{ panopto(desc="6 mins", "6369aa21-199d-4cab-b1cc-b1ee00b56107", start_week="6") }}
 
-****tP Briefing (Part 2b -- v1.2-v1.4, PE, Grading, Workload)****{.text-info}
+****tP Briefing (Part 2b -- v1.2-v1.6, PE, Grading, Workload)****{.text-info}
 
-{{ panopto(desc="11 mins", "caa70bbc-8869-4f8b-a898-b11f00a3fd5a", start_week="7") }}
+{{ panopto(desc="6 mins", "b7750694-17a9-42a9-b975-b1ee00ae4e9a", start_week="6") }}
 
 </div>
 </panel>

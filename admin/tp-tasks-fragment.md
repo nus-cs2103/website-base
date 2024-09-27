@@ -307,7 +307,7 @@ This week, we focus on two fronts:
 <include src="tp-timeline.md#lo-above-product" />
 </div>
 
-**We consider this iteration a 'practice' iteration**. Reason: As this is the first time your team is working on this codebase, we first focus on learning the workflow that you need to follow as a team. This practice iteration, we limit ourselves to some document updates only (to minimize the risk of breaking the codebase).
+**We consider this iteration a 'practice' iteration**. Reason: As this is the first time your team is working on this codebase, we first focus on learning the workflow that you need to follow as a team. In this practice iteration, we limit ourselves to some document updates only (to minimize the risk of breaking the codebase).
 
 Specifically, we start with a workflow practice session (in task {{ thumb_small("1") }}), and proceed to do some further documentation updates in tasks {{ thumb_small("2") }} and {{ thumb_small("3") }}.
 
@@ -829,21 +829,35 @@ As we are still at the early stages of identifying a problem to solve, do not th
 </box>
 
 * Do the following tutorials to get familiar with the codebase
-  * [Tutorial 1 - Tracing a Command Execution Path](https://se-education.org/guides/tutorials/ab3TracingCode.html)
-    * We recommend that you put in a sincere effort into this tutorial because tracing through the code of an unfamiliar codebase is an important skill that you will not be able to learn/practice it later in the project as the code will no longer be 'unfamiliar' to you later.
-    * Submission [optional]: Post an issue in your team's repo with the title `Tutorial: tracing code`. In the description, add a 2-3 screenshots you took while at various points of the tutorial. You may close the issue soon after.
-  * **[Tutorial 2 - Adding a new Command](https://se-education.org/guides/tutorials/ab3AddRemark.html)**
-    * If you are an experienced programmer, you can add a different command than the one given in the tutorial.
-    * **Submission:** Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork to your team's repo. You may close the PR soon after.
-
 <div class="indented-level2">
 
-{{ show_faq("tpTestsForTutorial") }}
-</div>
+<panel type="info" header="Tutorial 1 - Tracing a Command Execution Path" expanded>
 
-  * [Tutorial 3 - Removing a field from an entity](https://se-education.org/guides/tutorials/ab3RemovingFields.html)
-    * This tutorial is optional to do, but **at least give it a quick read**.
-    * Submission: not required.
+See [here](https://se-education.org/guides/tutorials/ab3TracingCode.html) for details.
+
+We recommend that you put in a sincere effort into this tutorial because tracing through the code of an unfamiliar codebase is an important skill that you can learn by doing so; you will not be able to learn/practice later in the project as the code will no longer be 'unfamiliar' to you later.
+
+**Submission** [optional]: Post an issue in your team's repo with the title `Tutorial: tracing code`. In the description, add a 2-3 screenshots you took while at various points of the tutorial. You may close the issue soon after.
+</panel>
+<panel type="info" header="Tutorial 2 - Adding a new Command" expanded>
+
+See [here](https://se-education.org/guides/tutorials/ab3AddRemark.html) for details.
+
+If you are an experienced programmer, you can add a different command than the one given in the tutorial.
+
+**Submission:** Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork's `tutorial-adding-command` branch to your team repo's `master` branch. You may close the PR soon after.
+
+{{ show_faq("tpTestsForTutorial") }}
+</panel>
+<panel type="info" header="Tutorial 3 - Removing a field from an entity" expanded>
+
+See [here](https://se-education.org/guides/tutorials/ab3RemovingFields.html) for details.
+
+This tutorial is optional to do, but **at least give it a quick read**.
+
+Submission: not required.
+</panel>
+</div>
 </div>
 {#====================================================================================================================#}
 <span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize the MVP version</span>
@@ -932,8 +946,8 @@ How does the application react to such duplicate entries? Reject or accept? Why?
 For example, it is fine to restrict the person name to a certain length and a character set even if it is theoretically possible for those restrictions to conflict with some rare real-world person names. But you need to be aware of such conflicts, justify the restriction (e.g., ease of implementation/display), and know how users can work around such a conflict should they encounter it %%(e.g., if you app doesn't allow two contacts to have the same name but the user need to store two contacts which are different people with the same name, what should the user do?)%%.
 
 * **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.<br>
-  {{ icon_Q }} Should the feature specification include features already in AB3?<br>
-  Yes (<popover content="AB3 does not have a feature spec covering those features (and the UG does not cover all details of a feature). Furthermore, the current behavior of those feature may not be an exact match for your proposed product.">why?</popover>). But you may copy-paste parts of the UG onto your feature spec if that helps.
+
+{{ show_faq("tpAb3FeatureInMvpSpec") if cs2103 }}
 
 * **Ensure feature-fit**: While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to peer-review feature details written by other team members and refine the overall product design together.
 
@@ -977,13 +991,13 @@ For example, it is fine to restrict the person name to a certain length and a ch
 
 <div class="indented-level1">
 
-Now that you have practiced the workflow to be used when updating the tP codebase, you can proceed to updating a few more tP documents, as per tasks ****A**** and ****B**** below.
+Now that you have learned the tP workflow, you can proceed to updating a few more tP documents, as per tasks ****A**** and ****B**** below, following the same workflow (optional to do parallel PRs though).
 
 <box type="info" light>
 
 **Recommended procedure for updating docs**:{.text-info}
 
-1. Dicide among yourselves who will update which parts of the document(s).<br>
+1. Decide among yourselves who will update which parts of the document(s).<br>
    All team members are expected to contribute to all aspects of documentation %%(e.g., user docs, developer docs, diagrams)%%
 1. Update the team repo by following the prescribed workflow:
 
@@ -1005,8 +1019,8 @@ Now that you have practiced the workflow to be used when updating the tP codebas
 
 * Add a UI mockup of your intended final product.
     Note that the ==image of the UI should be `docs/images/Ui.png`== so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same `height x width` proportions as the original one. %%Reason: when we compile these images from all teams into one page ([example]({{ url_team_list }})), yours should not look out of place.%%<br>
-    {{ info }} The UI mock up can be a hand-drawn sketch or created using a tool such as PowerPoint, PlantUML, Figma, etc. <br>
-    {{ icon_Q }} Can the AB3 screenshot used for this? Only in the unlikely case that your {{ version_mvp }} UI looks exactly the same as AB3.{ texts="['A1.', 'A2.', 'A3.', 'A4.']" }
+    {{ info }} The UI mock up can be a hand-drawn sketch or created using a tool such as PowerPoint, PlantUML, Figma, etc. Don't spend a lot of time on this, as this will eventually be replaced by a screenshot of the actual product.<br>
+    {{ icon_Q }} Can we use an AB3 screenshot for this? Only in the unlikely case that your final product UI is expected to look exactly the same as AB3.{ texts="['A1.', 'A2.', 'A3.', 'A4.']" }
 * Update the link of the GitHub Actions _build status badge_ (<img src="https://github.com/se-edu/addressbook-level3/workflows/Java%20CI/badge.svg" alt="Build Status">) so that it reflects the build status of your team repo.
 * Acknowledge the original source of the code e.g.,<br>
     `This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).`
@@ -1071,7 +1085,7 @@ At the end of the project, each member needs to create a Project Portfolio Page 
   {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
-  * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
+  * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give a few representative use cases (textual form) that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
   * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>:
     Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
   * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth recording.
@@ -1211,11 +1225,12 @@ This page  (in the `/docs` folder) is used for course admin purposes. ==Please f
 </modal>
 
 * #r#Wait until all team members have sent the PR## for the above step.<br>
-  Reviews the PRs while waiting.{text="4.2"}
+  Reviews each other's PRs while waiting.{text="4.2"}
 
 {{ show_faq("tpOneMemberNotDone") }}
 
-* Merge one of the PRs sent in step 4.1 (e.g., the one that arrived first). If this causes conflicts in other PRs, resolve those conflicts.{text="4.3"}
+* Merge one of the PRs sent in step 4.1 (e.g., the one that arrived first). If this causes conflicts in other PRs, resolve those conflicts.<br>
+  {{ icon_tip }} [This week's tP briefing video `tP Briefing video (Part 2a -- v1.1, Workflow)`]({{ baseUrl }}/schedule/week7/index.html) has a section on how to resolve conflicts in PRs.{text="4.3"}
 * Merge remaining PRs one at a time, while resolving merge conflicts as needed.{text="4.4"}
 * Check the AboutUs page in your teams repo to confirm if the page appears as expected. [Here]({{ url_ab3_upstream_website}}/AboutUs.html) is an example.<br>
   If something is not right, you might have to create another PR to rectify it.{text="4.4"}
@@ -1229,6 +1244,11 @@ This page  (in the `/docs` folder) is used for course admin purposes. ==Please f
 <span id="heading_divide_mvp_features">{{ icon_team }} Divide MVP features among members</span>
 <div id="desc_divide_mvp_features">
 
+<box type="info" seamless>
+
+Although MVP version is scheduled to be released in `{{ version_mvp }}` and not in the current iteration `{{ version_first }}`, in this task we refine the MVP features and divide them among the team members, because it is the first product version anyway (i.e., there is nothing earlier that we can aim our plans at).
+</box>
+
 * {{ icon_team }} **Re-confirm MVP feature design**. Recall that you decided on features to include in the MVP version of the product. Revisit that design. Ensure the following (you may refine the MVP feature design if necessary).
   * It consists of not only<br>
     **the most essential features** of the target product, but also,<br>
@@ -1237,6 +1257,24 @@ This page  (in the `/docs` folder) is used for course admin purposes. ==Please f
     %%Reason: As we are following the breadth-first iterative approach, each intermediate version should be a working product.%%
 * {{ icon_team }} **Divide the features among the team members** i.e., who will be implementing which feature.
   * Reminder: We recommend that the work to be divided primarily based on features/enhancements rather than components.
+
+<box>
+
+**{{ icon_tip }} Ways to level up your tP game:**{.text-success}
+
+Consider these feature flaws and implementation bugs that could cost you marks if they remained in the final version. If they are avoided from the start, there is no need to hunt them down and fix them later.<br>
+Tip: Especially note the part on _overzealous input validation, which is a common issue found in tPs.
+
+<panel header="Admin {{ icon_embedding  }} tP: Practical Exam (PE) → Guidelines for bug triaging (extract 1)" peek>
+<include src="tp-pe-bug-triaging-guidelines-fragment.md#triaging-functionality-bugs" />
+</panel>
+<panel header="Admin {{ icon_embedding  }} tP: Practical Exam (PE) → Guidelines for bug triaging (extract 2)" peek>
+<include src="tp-pe-bug-triaging-guidelines-fragment.md#triaging-feature-flaws" />
+</panel>
+
+{{ show_faq("tpMultiStepCmd") }}
+
+</box>
 </div>
 {#====================================================================================================================#}
 <span id="heading_plan_the_next_iteration">{{ icon_team }} Plan the next iteration (`{{ version_mvp }}`)</span>

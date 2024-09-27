@@ -207,6 +207,8 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
   ```
 <div tags="m--cs2103">
 
+**Giving credit for reused images** (and other media assets): Ideally, the source should be credited where the asset appears. For example, if you reused an image in your GUI, you can credit the source where a screenshot of the GUI showing that image appears first in your user guide. In addition, you can also acknowledge the sources in your GitHub project's landing page (e.g., `README.md`)
+
 **Giving credit to AB3 code**: If your team project code follows a design similar to AB3, that doesn't mean you need to credit AB3 -- this is because a brownfield project is _expected_ to follow existing code/design where possible, in the interest of consistency. This type of reuse need not be acknowledged/credited specifically.
 
 **Giving credit to AB4 code**: If you reused any code from [AB4](https://github.com/se-edu/addressbook-level4/), cite it as you would cite reuse from any other external source.

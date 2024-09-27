@@ -581,7 +581,9 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 
 <div class="indented-level1">
 
-{{ icon_info }}  Note that you no longer need to (although you are welcome to) keep the text-based UI after adding a GUI. Similarly, there is no need to use the I/O redirection style automated testing anymore (that technique is suited for text UIs only).
+*  **You no longer need to keep the text-based UI** after adding a GUI (although you are welcome to). Similarly, there is no need to keep the I/O redirection style automated testing added via `A-TextUiTesting`) anymore -- that technique is suited for text UIs only.{{ bullet_info }}
+* **Is the `bye` command still needed**, now that the GUI can be closed in other ways?<br>
+  Yes, we recommend keeping it. Reason: Being able to close the app by typing a command is consistent with the app's CLI-style <tooltip content="i.e., User Experience">UX</tooltip>.{{ bullet_Q }}
 </div>
 </div>
 {#====================================================================================================================#}
@@ -859,12 +861,12 @@ This activity is worth `2x2=4` participation points.
 1. **Locate the User Guide** of the app by following the link provided in that email.
 1. **Open the Canvas survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Run the jar file** in the following manner:
-   * Put the jar file in an empty folder, to prevent data files created by other jar files you tested earlier from interfering with the current jar file.{ texts="['5.1','5.2','5.3','5.4']" }
-   * Open a terminal, and navigate to the folder you put the JAR file in.
-   * {{ icon_important_big_red }} Run the `java -version` command to confirm you are using Java 17.{% if cs2103 %}<br>
+   * Put the jar file in an ==empty folder==, to prevent data files created by other jar files you tested earlier from interfering with the current jar file.{ texts="['5.1','5.2','5.3','5.4']" }
+   * Open a terminal, and ==navigate to the folder== you put the JAR file in (e.g., `cd smoke-test/ip1`) -- reason: data files will be created relative to the folder the terminal is currently in.
+   * {{ icon_important_big_red }} Run the ==`java -version` command== to confirm you are using Java 17.{% if cs2103 %}<br>
       :fab-apple: Mac user, confirm you are using the exact Java distribution we have prescribed [here](programmingLanguages.md).{% endif %}
-   * Run the jar file using the `java -jar {file_name}` command (rather than double-clicking) in the same terminal.
-1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist.<br>
+   * Run the jar file using the ==`java -jar "{file_name}"` command== (rather than double-clicking) in the same terminal.
+1. **Do a light testing of the app** (not more than 10 minutes) to ensure the claimed features actually exist and there are no obvious bugs.<br>
 1. **Do a quick examination of the code** (~ 5 minutes) by following the provided link.
 1. **Submit your evaluation** using the survey.
 1. **Repeat the above steps for the 2nd iP** allocated to you (use the survey `iP Peer Evaluation 2`).<br>
@@ -893,13 +895,16 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_finalize_features">Finalize the features</span>
 <div id="desc_finalize_features">
 
-* You may give the product any name, but do not rename the repo.
-* Reminder: you can give the chatbot any personality (there is no need to follow the exact command/response formats given)
-* {{ icon_important_big_red }} Ensure that the name of the product name is not `Duke` (as required by [Level-0](../se-book-adapted/projectDuke/index.html#level-0-rename-greet-exit)).{% if cs2103 %}<br>
-   Ensure the correct product name appears everywhere in the UI e.g., title bar of the GUI.{% endif %}
-* {{ icon_important_big_red }} Remember to give credit for any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
+* **Ensure the product can handle common errors <tooltip content="should not crash the app or render it unusable; user should be notified of the problem">gracefully</tooltip>**, such as the user making an unintentional error in the command, or the data file not being found in the expected location.
+* {{ icon_important_big_red }} **Ensure that the name of the product name is not `Duke`** (as required by [Level-0](../se-book-adapted/projectDuke/index.html#level-0-rename-greet-exit)){% if cs2103 %}<br>
+   and the name is shown correctly everywhere it appears in the UI e.g., title bar of the GUI{% endif %}.
+  * Reminder: You may give the product any name, but do not rename the repo.
+  * Reminder: You can give the chatbot any personality (there is no need to follow the exact command/response formats given)
+* {{ icon_important_big_red }} **Remember to give credit for any code you reused** or solutions you adopted from others. Reuse without giving credit is plagiarism and **will be reported to the university for disciplinary action**.
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent="1") }}
+
+{{ show_faq("ipMoreCodeQualityFeedback") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_website">Set up a product website</span>
@@ -934,7 +939,6 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_submit_the_final_version">Submit the final version</span>
 <div id="desc_submit_the_final_version">
 
-* {{ icon_deadline }} **Soft deadline**: midnight before the tutorial
 1. **Double-check to confirm your iP meets the criteria for full marks**:
   {{ embed_topic(baseUrl+"/admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 2. **Create a new jar file**
@@ -946,7 +950,8 @@ This activity is worth `2x2=4` participation points.
       1. Run the `java -version` command to confirm the terminal is using Java 17.
       1. Run the `./gradlew clean shadowJar` command to create the JAR file.
 3. **Do the following [_smoke tests_](https://en.wikipedia.org/wiki/Smoke_testing_(software))** to ensure the jar file works %%(reason: a similar flow will be used when grading your iP)%%.<br>
-   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.
+   1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.<br>
+      When running the jar file for smoke testing, instead of double-clicking the jar file, do the following: open a terminal -> navigate to the jar location -> run the `java -jar "JAR_FILE_NAME"` command.
    1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
       {{ icon_tip }} If you don't have ready access to a specific OS, post a link to your JAR in the forum and ask
      others to help with the smoke testing -- some of them will even appreciate the opportunity to help a classmate.<br>

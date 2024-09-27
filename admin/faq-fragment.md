@@ -165,7 +165,7 @@ If you still want to make that {{ as_tag("branch-___", tag_style="danger") }} it
 <div id="faq-ipOtherDataFormats-Q">Can I use other data formats (e.g., serialized objects) to save tasks?</div>
 <div id="faq-ipOtherDataFormats-A">
 
-Yes, provided it doesn't require the user to install another  software.<br>
+Yes, provided it doesn't require the user to install another software.<br>
 Also note that in the team project, there is a project constraint that requires the data to be saved in a human editable format.
 </div>
 <!-- =============================================================== -->
@@ -175,6 +175,17 @@ Also note that in the team project, there is a project constraint that requires 
 Not to worry. You are welcome to (but not _required_ to) try to rectify it. There is no penalty. Just take note of your mistake and try to avoid it in the future.
 
 {{ icon_tip }} In addition, you can try to identify the intended learning objective of using branching requirement that you messed up, and try to achieve it on your own. For example, if the iP increment was intended for you to practice parallel branches, you can try to do some other iP code changes as parallel branches so that you replicate a branch graph similar to the one intended by the iP increment.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipMoreCodeQualityFeedback-Q">Can we get another round of automated code quality feedback?</div>
+<div id="faq-ipMoreCodeQualityFeedback-A">
+
+(a) Evaluating,  and, (b)maintaining your own code quality are !!two!! things we hope you'll learn in this course.
+
+* We do give you some automated feedback on code quality about half-way into the tP, to get you started. From then on you'll need to keep an eye on code quality, and make a judgement call on when to improve (and how much is enough).
+* Later on, during the iP evaluation (which has a peer evaluation), you'll also get to evaluate the code quality and testing level of other iPs. This should serve as more practice.
+
+That said, we'll still give you one more round of further code quality feedback, after the iP is over. That is to help you identify the things you missed yourself, and do an even better job in the tP.
 </div>
 <!-- =============================================================== -->
 <div id="faq-temp-Q"></div>
@@ -342,6 +353,22 @@ This is encouraged, while not a strict rule. Creating an issue indicates 'a task
 It is up to the team to decide. However, we discourage unilateral PR merging i.e., you create and merge PRs without any reviews/oversight from others, unless the PR is trivial changes.
 </div>
 <!-- =============================================================== -->
+<div id="faq-tpMultiStepCmd-Q">Why not allow user to input the command one field at a time?</div>
+<div id="faq-tpMultiStepCmd-A">
+
+While this _multi-step-command_ approach (i.e., giving the user a series of prompts to enter various data elements required to perform an action) has its benefits (e.g., no need to memorize the command format), a deeper look reveals why the _one-shot-command_ approach is better.
+
+Before delving any further, note how leading CLI-centric software such as Git and Linux don't use the multi-step approach either. Why?
+
+The multi-step approach basically results in a 'text-based GUI simulation' that is harder to use than an actual GUI (obviously), whereas a well-designed CLI in an expert's hands can perform tasks faster than an equivalent GUI (which is what we are going for). A person good at typing and remembers the command can type a command faster than a user going through a type-read-type-read sequence required by the multi-step-command. Now imagine user made a mistake in the response to an earlier prompt -- correcting that would take a lot more work.
+
+That being said, multi-step-commands can complement the one-shot-command approach in specific cases e.g.,
+
+* as a crutch for new users to learn the command format
+* to be used for rarely-used tasks or tasks requiring multiple steps (e.g., importing data from a file)
+
+</div>
+<!-- =============================================================== -->
 <div id="faq-tpEnoughFeatures-Q">If our team implement features x, y, and z, is that enough?</div>
 <div id="faq-tpEnoughFeatures-A">
 
@@ -367,7 +394,8 @@ There is no such guarantee, for two reasons:
 <div id="faq-tpIterationDeadline-Q">What's the deadline for tP iterations?</div>
 <div id="faq-tpIterationDeadline-A">
 
-The deadline for tP iterations is the `Thursday 23:59` in the week it is due, unless a different date is specified in the instructions of that iteration.
+The deadline for tP iterations is the `Thursday 23:59` in the week it is due, unless a different date is specified in the instructions of that iteration.<br>
+It is OK %%(i.e., no penalty)%% if you overshoot the deadline in initial iterations. Adjust subsequent iterations so that you can meet the deadline consistently %%(which is an important learning outcome of the tP)%% by the time you reach the end of the tP.
 </div>
 <!-- =============================================================== -->
 <div id="faq-tpHowMuchToGetFullMarks-Q">How much code/features is enough to get full marks?</div>
@@ -427,6 +455,22 @@ Not a strict requirement, but given the purpose of this tutorial is to learn the
 <div id="faq-tpHowManyFeaturesInMvp-A">
 
 Aim for the _smallest set of features the product cannot do without_. Even a most basic version of those features is enough. After completing that feature set, you can add more if there is time left.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpAb3FeatureInMvpSpec-Q">Do we need to include existing AB3 features in the MVP feature spec?</div>
+<div id="faq-tpAb3FeatureInMvpSpec-A">
+
+Yes, even if you don't plan to change them.
+
+Reasons:
+
+* To show that you have examined, understood, and agree with, the current behavior of those features.
+* AB3 does not have a feature spec covering those features (and the UG does not cover all details of a feature).
+
+But you may copy-paste parts of the UG onto your feature spec if that helps.
+Also, you may omit existing AB3 feature that are not _must-have_, and hence, need not be included in the MVP.
+
 </div>
 <!-- =============================================================== -->
 

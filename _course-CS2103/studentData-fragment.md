@@ -32,7 +32,6 @@
   {name: "TIMOTHY PUTRA PRASETIO", nick: "Timothy", nusnet: "e0960320", github: "tim-pipi"},
   {name: "Wayne Zhang Si Yuan", nick: "Wayne", nusnet: "e0726154", github: "waynezsy"},
   {name: "TAN WEI ZHE", nick: "Wei Zhe", nusnet: "e0725610", github: "wz2k"},
-  {name: "NG WEN LI", nick: "Wen Li", nusnet: "e0775082", github: "wendy0107"},
   {name: "WU XIAOYUN", nick: "Xiao Yun", nusnet: "e0702008", github: "wxiaoyun"},
   {name: "NG YAN JIE", nick: "Yan Jie", nusnet: "e0969516", github: "logical-1985516"},
   {name: "Tee Yi Teng", nick: "Yi Teng", nusnet: "e0725799", github: "Puakii"},
@@ -669,7 +668,7 @@
 ]%}
 
 {% set org_replacements = {
-
+    'AY2425S1-CS2103T-F08-1': 'AY2425S1-CS2103T-F08-1a'
 }%}
 
 {% set teams = {
@@ -679,7 +678,7 @@
  'CS2103-F10-1': 'https://docs.google.com/document/d/1C4nZ49QlduXBYTzFtu_DTt-1gqi-RDrIC-jfhInUSRk/edit?usp=sharing',
  'CS2103-F10-2': 'https://docs.google.com/document/d/1Z8T1fEUBexSmQ5XOu-H0NQqsuJgwNjvYGSuWGYpPWQE/edit?usp=sharing',
  'CS2103-F10-3': 'https://docs.google.com/document/d/1EeGK4QJTxPBJMFeEeBwHVqvk93lwqeEUr8LtCIDDeBk',
- 'CS2103-F11-1': 'https://docs.google.com/document/d/173iNEF6egbVOLGqyoM7d2-h1G-U3ypUazlNacIftgY8/edit?usp=sharing',
+ 'CS2103-F11-1': 'https://github.com/AY2425S1-CS2103-F13-1/tp/wiki',
  'CS2103-F11-2': 'https://docs.google.com/document/d/1FqN1gEOUkQg225T_amdpwm85VyLXHTgUws6inysdl1Y/edit',
  'CS2103-F12-1': 'https://drive.google.com/drive/folders/1tUMTjtYdslE0APgtso1N3M9x30g9Dz8Y',
  'CS2103-F12-2': 'https://docs.google.com/document/d/1abBcDGnCER1RR_Wmai2G_S8zSHXi7TnFVgMYTsmcEa4/edit?usp=sharing',
@@ -802,7 +801,7 @@
  'CS2103-F10-1': 'SupplyCentral',
  'CS2103-F10-2': 'SocialBook',
  'CS2103-F10-3': 'BizBook',
- 'CS2103-F11-1': 'TAchy',
+ 'CS2103-F11-1': 'ConcertPhonebook',
  'CS2103-F11-2': 'TutorEase',
  'CS2103-F12-1': 'InSUREance',
  'CS2103-F12-2': 'T_Assistant',
@@ -925,7 +924,7 @@
  'CS2103-F10-1': 'A Business owner managing a small sized company who frequently procures goods from suppliers.',
  'CS2103-F10-2': 'Social worker',
  'CS2103-F10-3': 'Store managers in the Food and Beverage industry who are responsible for managing contacts for Sales and Delivery.',
- 'CS2103-F11-1': 'Tech-savvy Tutors/Tuition Teachers',
+ 'CS2103-F11-1': 'Concert organisers who prefer CLI over GUI and have a lot of contacts to keep track of.',
  'CS2103-F11-2': 'This product is for freelance pre-university home tutors who prefer CLI over GUI and must keep track of many students, student locations and schedules',
  'CS2103-F12-1': 'New Insurance Agents with a preference for typing instead of using point and click. Has many different priority customers with diverse backgrounds and types of insurance. The app should also help the insurance agent keep track of their customers claims and appointments.',
  'CS2103-F12-2': 'This product is for TAs in group project based courses, who prefer CLI over GUI.',
@@ -1048,7 +1047,7 @@
  'CS2103-F10-1': 'One-stop solution for small business owners to keep track of their contracted suppliers, along with any other relevant business information such as purchased goods & services, dates and other potential waybill information.',
  'CS2103-F10-2': 'the address book acts as an easy way to locate/contact families,and keep track of how long it has been since their last visit.',
  'CS2103-F10-3': 'This product aims to streamline and simplify sales and delivery management for Food and Beverage outlets. By providing an organized, easy-to-use platform for managing business contacts, it helps store managers save time and improve efficiency, ensuring smooth coordination between sales and delivery operations.',
- 'CS2103-F11-1': 'Provide a fast CLI for tutors to manage and track students work and submissions. Provides an efficient CLI for tutors to plan and manage classes  Provides some interface for arranging classes',
+ 'CS2103-F11-1': 'Allows concert organisers to add, delete and quickly sift through many contacts, from whom to obtain required resources or fulfil their professional obligations. Contacts have categories, such as band, audience, and staff. It provides an efficient CLI optimised for fast typists, complemented by an interactive GUI for convenience.',
  'CS2103-F11-2': 'Our software enhances tutoring efficiency by simplifying management tasks, reducing scheduling conflicts, and providing a clear overview of classes and finances. It enables seamless tutor coordination with students and parents, improving communication and organization, ultimately leading to a more effective and stress-free educational experience.',
  'CS2103-F12-1': 'Our apps help insurance agents keep track of new and existing clients. This allows them to maximise their reach to their contacts and optimise their profits each month.',
  'CS2103-F12-2': 'Helps to track the following: - Students - Their groups  - Group projects’ progress   - TA will create projects and tasks related to the projects   - Then assign the projects to groups   - Mark the tasks as the groups complete - Identify those who are falling behind',

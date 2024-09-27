@@ -29,6 +29,8 @@
 * **Even bugs inherited from AB3 are counted**. As the current development team, you are responsible for all bugs in the product, irrespective of when it was created.
 
 
+<div id="triaging-functionality-bugs">
+
 ##### Functionality bugs
 
 * **Problems caused by _extreme_ user behaviors**:
@@ -38,12 +40,13 @@ However, if such input can be entered by a user mistake, they should not cause h
 * **Problems caused by very long input values**: When a user input is unusually long %%e.g., a very long name, a very large number%%, it can cause problems e.g., the UI layout can get messed up, some part of it might get cut off.<br>
   * These can be considered cosmetic issues (i.e., `severity.VeryLow`) of `type.FunctionalityBug` (or of `type.FeatureFlaw`, depending on the nature of the problem).<br>
   However, if the problem can hinder the user %%(e.g., not seeing the last part of a very long name might not hinder the user, but it does hinder the user if only the first few characters of the name is shown)%%, the severity can be `Low` or higher.
-  * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are _guaranteed_ to be not than 8 digits.
+  * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are _guaranteed_ to be not more than 8 digits.
 * **Use of symbols in input values**: It is acceptable to disallow certain characters in input values if there is a justification (e.g., because using those symbols in an input value makes the command harder to parse), but they can still be considered `FeatureFlaw` bugs if they cause inconvenience to the user. For example, disallowing `s/o` in a person name because `/` is used as a command delimiter can cause a major problem if the input is expected to match the legal name of the person.
 * **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it is the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 %}
 * **Handling manual edits to the data file**: AB3 UG specifies [the current level of support for manually editing the data file](https://se-education.org/addressbook-level3/UserGuide.html#editing-the-data-file) i.e., 'if you edit the file correctly, things will work; but if you edited it wrongly, there's no guarantee that things will work'. At least that level of support should be supported in the new product as well.
 {% endif %}
 
+</div>
 <div id="triaging-feature-flaws">
 
 ##### Feature flaws
@@ -54,17 +57,19 @@ However, if such input can be entered by a user mistake, they should not cause h
   * if the feature is implemented to work in a certain way but it could have been implemented to work in a better way (from the end-user's point of view) without much additional effort
 * **Bugs related to duplicate detection**: Duplicate detection (e.g., detecting if two persons in the address book are the same) is not trivial; often, detecting only the exact string/value matches is not enough. For example, `John Doe` and `john  doe` are likely to be the same person. Similarly, extra white space %%(e.g., the user typed an extra space between the two names)%% is unlikely to mean they are two different persons. Typically, it is best if you can give a warning in such _near match_ cases so that the user can make the final decision. <br>
   If you app has a duplicate detection feature, make sure its limitations are made clear to the user so that users are not led to believe that duplicates are being detected while many potential duplicate cases go undetected. Otherwise, it can be considered a `type.FeatureFlaw`.
-* **Overzealous input validation**: It is better to warn rather than to block when inputs are not compliant with the expected format, unless accepting such inputs can hinder the operations of the software. Allowing such flexibility can in turn allow the user to use the software in ways you didn't even anticipate while overzealous rejection of inputs can annoy the user:<br>
+* **Overzealous input validation**: This is a common problem in UIs designed by programmers, because programmers tend to define 'valid' in strict data type point of view, whereas it should be defined based on the user's point of view. In general, it is better to warn rather than to block when inputs are not compliant with the expected format, unless accepting such inputs can hinder the operations of the software. Allowing such flexibility can in turn allow the user to use the software in ways you didn't even anticipate while overzealous rejection of inputs can annoy the user:<br>
   %%Example 1: While your software allows only one phone number in input values, a user might want to input `1234 5678 (HP) 1111-3333 (Office)` -- blocking that input might not add any value but allowing it does.%%<br>
-  %%Example 2: A user might want to enter an appointment in the past, just for record keeping purposes.%%<br>
+  %%Example 2: A user might want to enter an appointment/deadline that occurred in the past, just for record keeping purposes (note how Google Calendar doesn't prevent users from creating events in the past -- instead, it shows the event in a lighter color to warn that it is in the past).%%<br>
   Such overzealous input blocking can be considered a `type.FeatureFlaw`.<br>
   However, it is fine (and recommended) to show a warning for such inputs to guard against the deviation being a mistake rather than intentional.<br>
-  Lack of proper handling (either blocking or warning) for potentially invalid inputs can be considered a `type.FeatureFlaw` bug too. Not detecting easy-to-detect incorrect flags (e.g., user entered `/t` but it should be `/tag`) is a `FeatureFlaw` too.
+  At the same time, the lack of proper handling (either blocking or warning) potentially harmful invalid inputs can be considered a `type.FeatureFlaw` bug too.
 * **Specificity of error message**: Error messages can be correct but not specific enough %%(e.g., it says the input is 'invalid' without giving the reason, or gives too many possible reasons without pointing out the specific reason)%%. These cases can be considered `type.FeatureFlaw`.<br>
   Calling an invalid value a 'format error' and vice versa is a `severity.Low` bug e.g., if a date input is required to be in `YYYY-MM-DD` format, `2021-13-28` is a _format_ error (reason: `MM` should be in `1..12`) but `2021-02-30` is an _invalid_ input (reason: February doesn't have 30 days). However, issuing a 'Invalid date or incorrect format' error message for such a case (i.e., covering both bases) is acceptable if differentiating between the two qualifies as `NotInScope`.
 * **Unnecessarily complicated (or hard-to-type) command formats** can be considered a `type.FeatureFlaw` as it is expected that the input formats will be optimized to get things done fast. Some examples: using very long keywords when shorter ones do, or making keywords case-sensitive when there is no need for it, using hard-to-type special characters in the format when it is possible to avoid them.
 * **Case sensitivity**: In general, case sensitivity of something should follow the case sensitivity of the real world entity it represents e.g., as person names are not case-sensitive in the real world, they shouldn't be case-sensitive in the app either. The same applies for search keywords. Incorrect case sensitivity can be considered a `FeatureFlaw`.
-
+* **A features less useful than it can be** a `FeatureFlaw`. Some examples related to search-related features:
+  * If search keywords are case-sensitive, the user needs to remember the exact case of the words she is looking for. A case-insensitive search is usually more useful.
+  * Applying an AND constraint on search keywords means the user will miss out potentially useful search results unless she remembers exactly the words she is looking for. But if an OR constraint is used, the user can retrieve results even if she mis-remembers some of the search terms.
 </div>
 
 
