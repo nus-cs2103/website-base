@@ -13,12 +13,12 @@
 
 <div tags="m--cs2103" id="functionality-expectations">
 
-**The expected level of _functionality_ is what you could achieve if each member puts in about ==50% of the implementation effort they put into the iP==** (i.e., it is set at half because, even after adding the extra overheads of doing the project as a team, and working with an exising codebase, we don't want the tP to take more effort than the iP).<br>
-Furthermore, we estimate that the above-mentioned bar is roughly equivalent to **writing about 300-400 lines of functional code** (excluding testing and documentation) per person.
+**The expected level of _functionality_ is what you could achieve if each member puts in about ==50% of the implementation effort they put into the iP==** (reason for setting it much less than 100%: even after adding the extra overheads of doing the project as a team, and working with an exising codebase, we don't want the tP to take more effort than the iP).<br>
+Furthermore, we estimate that the above-mentioned bar is roughly _equivalent_ to **writing about 300-400 lines of functional code** (excluding testing and documentation) per person.
 
 <box type="important" seamless>
 
-  In case you happen to look at tP's of past batches (2023 and before) in order to gauge the required effort, note that the above reflects a ==drastically lower bar from previous semesters==. For reference, the bar given to previous batches was 'same as iP effort' (not half), and the median LoC of functional code written by a student was about 850 LoC.
+  In case you happen to look at tP's of past batches (2023 and before) in order to gauge the required effort, note that the above reflects a ==drastically lower bar from those semesters==. For reference, the bar given to previous batches was 'same as iP effort' (not half), and the median LoC of functional code written by a student was about 850 LoC.
 </box>
 </div>
 <div tags="m--cs2113">
@@ -26,7 +26,7 @@ Furthermore, we estimate that the above-mentioned bar is roughly equivalent to *
 **The expected level of _functionality_ from a team is roughly ==what you can achieve if each member contributes about the same amount of functional code as required by a <tooltip content="i.e., if all requirements were met at the _minimal_ level specified">typical iP</tooltip>==**.
 </div>
 
-==There are no extra marks for exceeding implementation _effort_ bar== stated above. Hence, _effort_ is graded on mostly an S/U basis) -- it is the _quality_ of the code that really determines the marks for _implementation_ component (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>).  So, you are better off spending more effort in improving other aspects of the project. Try to avoid adding more features than necessary, unless you are doing it out of interest. As mentioned elsewhere, a functionality just the right size and of high quality will earn more marks than a functionality that is bigger (or more difficult, or more interesting/novel) but of lower quality.
+==There are no extra marks for exceeding implementation _effort_ bar== stated above. Hence, _effort_ is graded on mostly an S/U basis) -- it is the _quality_ of the code that really determines the marks for _implementation_ component (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>).  Try to avoid adding more features than necessary, unless you are doing it out of interest; you are better off spending more effort in improving other aspects of the project instead. As mentioned elsewhere, a functionality just the right size and of high quality will earn more marks than a functionality that is bigger (or more difficult, or more interesting/novel) but of lower quality.
 
 <div tags="m--cs2103">
 
@@ -130,7 +130,7 @@ There is no requirement for a minimum test coverage level. Note that in a high-e
 
 #### <span class="badge bg-info">{{ icon_individual }} Individual</span> <span class="text-info">Expectations on Teamwork</span>
 
-* <span class="badge bg-info">Expectation</span> <span class="text-info">**Do an equal share of the _team-tasks_**.</span>
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Do a non-trivial share of the _team-tasks_**.</span>
 
 <div id="team-tasks" class="indented-level2">
 
@@ -159,14 +159,14 @@ Here is a non-exhaustive list of team-tasks:
 </box>
 </div>
 
-* <span class="badge bg-info">Expectation</span> <span class="text-info">**Carry an equal share of project roles and responsibilities**.</span>
+* <span class="badge bg-info">Expectation</span> <span class="text-info">**Carry a non-trivial share of project roles and responsibilities**.</span>
 
 <div class="indented-level2">
 
 <box>
 <span id="roles">
 
-_Roles_ indicate aspects you are in charge of and responsible for. %%E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.%%
+_Roles_ indicate aspects you are in charge of and responsible for. %%E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by whom, ensure the document is in right format, ensure consistency etc.%%
 
 <panel type="seamless" header="{{ icon_example }} Example roles and responsibilities">
 

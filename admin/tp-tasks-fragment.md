@@ -1,5 +1,5 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
+{% from "common/macros.njk" import as_tag, button, embed_topic, get_date, show_as_tab, show_as_rounded_tab, show_faq, show_tp_goals, show_tp_week_intro, show_tp_week_outro, show_tp_iterations_gantt, thumb, thumb_small, timing_badge with context %}
 {% from "admin/ip-tasks-fragment.md" import show_xp_page  with context %}
 {% from "_course-" + course + "/weeklyTpTasks-fragment.md" import weekly_tp_tasks  with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import tp_dg_review_allocation with context %}
@@ -390,7 +390,7 @@ While we are on the topic, also note that the architecture of AB3 doesn't suit e
 {{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 32, 52) }}
 {{ show_tp_goals(version_mvp + " (MVP)", "v13-goals") }}
 
-As per the learning outcome of this iteration (given above), our focus is on delivering a product on time. So, %%in task {{ thumb_small("1")}}%%, we start by setting up a plan to reach that goal, and then execute on it %%in task {{ thumb_small("2")}}%% , while making course corrections as we go (if needed).
+As per the learning outcome of this iteration (given above), our focus is on !!delivering a product on time!!. So, %%in task {{ thumb_small("1")}}%%, we start by setting up a plan to reach that goal, and then execute on it %%in task {{ thumb_small("2")}}%% , while making course corrections as we go (if needed).
 
 ++**Things to note:**++{.text-info}
 
@@ -409,15 +409,21 @@ As per the learning outcome of this iteration (given above), our focus is on del
 While there is no universal set of rules on choosing version numbers for a product, **there is a convention named [SemVer](https://semver.org/) that is well-defined and widely used**. Our tP version numbers (`{{ version_mvp }}`, `{{ version_penultimate }}`, `{{ version_final }}` etc.) do not follow SemVer strictly though.
 </box>
 
+This is your first 'proper' iteration that delivers a product. Ensure you ==remember how you are expected to 'manage' an iteration== (graded), given in the panel below:
+
+{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
+
 {% endcall %}
 {#---------------------------------------------------#}
 {% call show_tp_week_outro("cs2103", 9) %}
 
--- [More details to be added] --
+Phew! Hope your first product release went well, and was on time. If it didn't, not to worry; we have more tries to get it right.
 
-Were you able to deliver on time?
+For now, give some thoughts to the following questions (the answer will be needed for an activity in the next iteration):
 
-How do initial effort estimations compare to actual effort?
+* Were you able to deliver on time? If not, why?
+* How do initial effort estimations compare to actual effort? Took more or less effort than anticipated?
+
 {% endcall %}
 
 {#====================================================================================================================#}
@@ -1262,8 +1268,8 @@ Although MVP version is scheduled to be released in `{{ version_mvp }}` and not 
 
 **{{ icon_tip }} Ways to level up your tP game:**{.text-success}
 
-Consider these feature flaws and implementation bugs that could cost you marks if they remained in the final version. If they are avoided from the start, there is no need to hunt them down and fix them later.<br>
-Tip: Especially note the part on _overzealous input validation, which is a common issue found in tPs.
+Consider the feature flaws and implementation bugs in the panels below that could cost you marks if they remained in the final version %%(these panels are extracts from the final product evaluation instructions given in the practical exam)%%. If they are avoided from the start, there is no need to hunt them down and fix them later.<br>
+Tip: Especially ==note the part on _overzealous input validation_==, which is a common issue found in tPs.
 
 <panel header="Admin {{ icon_embedding  }} tP: Practical Exam (PE) → Guidelines for bug triaging (extract 1)" peek>
 <include src="tp-pe-bug-triaging-guidelines-fragment.md#triaging-functionality-bugs" />
@@ -1361,7 +1367,7 @@ Tip: Especially note the part on _overzealous input validation, which is a commo
 <div id="desc_rename_packages">
 
 * **If you wish to rename AB3 packages/classes** to fit your product, this is the best time to do so (i.e., before starting any functionality changes), as such changes cause widespread changes to the codebase, causing many merge conflicts with any other ongoing PRs.
-* **Renaming packages/classes is optional**. It is fine to keep the existing ones. But if you decide to rename them, do it quickly, and remember to follow the workflow you practiced in the previous week.
+* **Renaming packages/classes is optional**. It is fine to keep the existing ones. But if you decide to rename them, do it quickly, and probably best done by one person in one shot (to minimize merge conflicts).
 
 </div>
 {#====================================================================================================================#}
@@ -1394,7 +1400,7 @@ Tip: Especially note the part on _overzealous input validation, which is a commo
     * Create a PR from a separate branch in your fork. Assign it to `{{ version_first }}`.
     * Get the PR reviewed.
     * Get the PR merged. Close the corresponding issue.
-* {{ icon_individual }} **Continue to implement more code changes** (i.e., repeat S1 and S2) to implement more code changes that move you towards your MVP feature(s). You can even create parallel PRs, when implementing code changes with no/low dependency between them.{text="S3."}
+* {{ icon_individual }} **Continue to implement more code changes** (i.e., repeat S1 and S2) to implement more code changes that move you towards your MVP feature(s). Recommended to create <tooltip content="i.e., while waiting for one PR to be merged, create a new PR to fix another issue">parallel PRs</tooltip>, when implementing code changes with no/low dependency between them.{text="S3."}
 * {{ icon_team }} **Wrap up the milestone** When the iteration period is over, do the following:{text="S4."}
   * Move any pending issues/PRs to the next milestone (i.e., {{ version_mvp }}). %%As we did not plan to release a product version at the end of this iteration, we can freely move any pending work to the next iteration.%%
   * Close the milestone.
@@ -1427,11 +1433,16 @@ Tip: Especially note the part on _overzealous input validation, which is a commo
 Note that the product you deliver at the end of this iteration must be working although the functionality is basic.
 </box>
 
--- [More details to be added] --
-
-* Revise MVP design, if necessary.
-* Enumerate the tasks to be done, order, timeline
-* create as issues -> assign member, milestone
+* **Revise the iteration target, if necessary** e.g., if `{{ version_first }}` iteration felt like your progress is much slower than you anticipated, you can explore if MVP can be trimmed-down even further, to increase your chances of reaching it in time.
+* **Enumerate the plan: decide tasks, order, timeline.**
+  1. Figure out what !!tasks!! needs to be done to reach `{{ version_mvp }}` product version.
+  1. Decide if there is a certain !!order!! in which they need to be done (based on dependencies between them)
+  1. Decide the !!timeline!! on which you need to finish each.
+* **Document the plan: create issues, assign milestone, and members.**
+  1. Create issues to match the tasks you enumerated above.<br>
+     {{ icon_tip }} In the issue description, you can mention when a task needs to be done (e.g., `due: Monday`). Alternatively, you can create a bunch of labels for recording due dates (e.g., {{ as_tag('due:Monday') }})
+  1. Assign them to the milestone `{{ version_mvp }}`.
+  1. Assign each of those issues to the person responsible for doing it.
 
 </div>
 {#====================================================================================================================#}
@@ -1440,9 +1451,6 @@ Note that the product you deliver at the end of this iteration must be working a
 
 <div tags="m--cs2103">
 
-* {{ icon_team }} **Manage the iteration** `{{ version_mvp }}`, and reach the milestone `{{ version_mvp }}` (which delivers product version `{{ version_mvp }}`) as explained in the panel below.
-
-{{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="1") }}
 
 <div id="level-up-ug-updates" class="indented">
 <box>
@@ -1458,6 +1466,7 @@ Note that the product you deliver at the end of this iteration must be working a
 </box>
 </div>
 
+* {{ icon_team }} **Manage the iteration** `{{ version_mvp }}`, and reach the milestone `{{ version_mvp }}` (which delivers product version `{{ version_mvp }}`)
 * {{ icon_team }} **Aim to delivery on time**, as that is linked to our tP learning outcome of this iteration. This means you need to monitor progress, and course-correct as you go.
   * Revise the MVP design further, if needed. If you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_mvp }}` (i.e., you can still get a 'working product' without them).
   * <tooltip content="e.g., change scope">Revise</tooltip> or <tooltip content="i.e., reassign to a future milestone">reschedule</tooltip> issues/PR accordingly.

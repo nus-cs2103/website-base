@@ -51,8 +51,12 @@ However, if such input can be entered by a user mistake, they should not cause h
 
 ##### Feature flaws
 
+<modal large id="modal:bugTriaging-whenOutOfScope">
+<include src="tp-pe-bug-triaging-guidelines-fragment.md#how-to-prove-out-of-scope"/>
+</modal>
+
 * Missing features and problems in how a feature is designed are considered feature flaws i.e., `type.FeatureFlaw`.
-* **Feature flaws can be claimed as `NotInScope`**, if they qualify as per rules explained above, except for these cases:
+* **Feature flaws can be claimed as `NotInScope`**, if they qualify as per <trigger trigger="click" for="modal:bugTriaging-whenOutOfScope">rules explained above</trigger>, except for these cases:
   * if fixing the feature flaw is essential for the app to be reasonably useful
   * if the feature is implemented to work in a certain way but it could have been implemented to work in a better way (from the end-user's point of view) without much additional effort
 * **Bugs related to duplicate detection**: Duplicate detection (e.g., detecting if two persons in the address book are the same) is not trivial; often, detecting only the exact string/value matches is not enough. For example, `John Doe` and `john  doe` are likely to be the same person. Similarly, extra white space %%(e.g., the user typed an extra space between the two names)%% is unlikely to mean they are two different persons. Typically, it is best if you can give a warning in such _near match_ cases so that the user can make the final decision. <br>
@@ -65,11 +69,11 @@ However, if such input can be entered by a user mistake, they should not cause h
   At the same time, the lack of proper handling (either blocking or warning) potentially harmful invalid inputs can be considered a `type.FeatureFlaw` bug too.
 * **Specificity of error message**: Error messages can be correct but not specific enough %%(e.g., it says the input is 'invalid' without giving the reason, or gives too many possible reasons without pointing out the specific reason)%%. These cases can be considered `type.FeatureFlaw`.<br>
   Calling an invalid value a 'format error' and vice versa is a `severity.Low` bug e.g., if a date input is required to be in `YYYY-MM-DD` format, `2021-13-28` is a _format_ error (reason: `MM` should be in `1..12`) but `2021-02-30` is an _invalid_ input (reason: February doesn't have 30 days). However, issuing a 'Invalid date or incorrect format' error message for such a case (i.e., covering both bases) is acceptable if differentiating between the two qualifies as `NotInScope`.
-* **Unnecessarily complicated (or hard-to-type) command formats** can be considered a `type.FeatureFlaw` as it is expected that the input formats will be optimized to get things done fast. Some examples: using very long keywords when shorter ones do, or making keywords case-sensitive when there is no need for it, using hard-to-type special characters in the format when it is possible to avoid them.
+* **Unnecessarily complicated (or hard-to-type) command formats** can be considered a `type.FeatureFlaw` as it is expected that the input formats will be optimized to get things done fast. Some examples: using very long keywords when shorter ones do, or making keywords case-sensitive when there is no need for it, using hard-to-type special characters in the format when it is possible to avoid them. On the other hand, limiting to short but hard-to-remember keywords can be problematic too. A better approach is to support both a short version (easier to type) and a longer (easier to remember) version for a keyword %%(an example from the Git world: flags `--no-verify` and `-n` are equivalent)%%.
 * **Case sensitivity**: In general, case sensitivity of something should follow the case sensitivity of the real world entity it represents e.g., as person names are not case-sensitive in the real world, they shouldn't be case-sensitive in the app either. The same applies for search keywords. Incorrect case sensitivity can be considered a `FeatureFlaw`.
-* **A features less useful than it can be** a `FeatureFlaw`. Some examples related to search-related features:
+* **A features less useful than it can be** is a `FeatureFlaw`. Some examples related to search-related features:
   * If search keywords are case-sensitive, the user needs to remember the exact case of the words she is looking for. A case-insensitive search is usually more useful.
-  * Applying an AND constraint on search keywords means the user will miss out potentially useful search results unless she remembers exactly the words she is looking for. But if an OR constraint is used, the user can retrieve results even if she mis-remembers some of the search terms.
+  * Applying an AND constraint on search keywords means the user will miss out potentially useful search results unless she remembers exactly the words she is looking for. But if an OR constraint is used, the user can retrieve results even if she mis-remembers some of the search terms %%(searching for `Alice` `Richards` can return both `Alice Davidson`, `Alison Richards` one of which is likely to be what the user was looking for)%%.
 </div>
 
 

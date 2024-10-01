@@ -13,6 +13,8 @@ In an earlier week you learned how to interpret class diagrams and object diagra
 
 But note that while in the tP you'll be using diagramming tools to draw the diagram, here, we focus on hand drawing. The reason is, we also want you to be able ==to quickly hand-draw UML diagrams== to aid discussions (e.g., draw a diagram on a whiteboard while explaining a design decision to colleagues).
 
+Heads up: A ==significant portion of the final exam will be based on hand-drawing UML diagrams!==
+
 The relevant UML topics are repeated further down in this page, for reference. In addition, here are some **worked-examples/exercise of drawing class/object/sequence diagrams:**
 
 {{ panopto("88a6d3bc-7bbb-4566-a035-ac4100ce1085", desc="Drawing class/object diagrams (basic) - `Box`, `Item`, `Lid`", questions="yes") }}

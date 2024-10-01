@@ -378,7 +378,7 @@ Yes, if it requires each member to put in about a half an iP worth of effort.
 <div id="faq-tpMustWrite300Loc-Q">Is it a must to write at least 300 LoC?</div>
 <div id="faq-tpMustWrite300Loc-A">
 
-Not necessarily. It depends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than 300 LoC that implements feature Y (i.e., it depends on the context). So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the _equivalent_ effort).
+Not necessarily. It depends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than 300 LoC that implements feature Y (i.e., it depends on the feature). So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the _equivalent_ effort).
 
 </div>
 <!-- =============================================================== -->
@@ -498,12 +498,12 @@ As it is the case with other similar tP requirements, there is no penalty for mi
 <div id="faq-tpUpdateTestsWithCode-Q">Do we have to update tests when we update functional code?</div>
 <div id="faq-tpUpdateTestsWithCode-A">
 
-**In very early iterations,** ==try to keep the existing tests (and CI) working==. It is optional to add more tests.
+**In very early iterations,** ==try to keep the existing tests (and CI) working==. It is OK not to add new tests.
 
 **In general,** there are several options you can choose from:
 
 1. Update/add tests every time you change functional code. This is what normally happens in stable production systems. For example, most OSS projects will not accept a PR that has failing tests or not enough new tests to cover the new functional code.
-2. Disable failing tests temporarily until the code is stable. This is suitable when the functional code is in a highly volatile state (e.g., you are still experimenting with the implementation). The benefit is that you avoid the cost of writing tests for functional code that might change again soon after. Some costs: (a) harder to detect regressions during the period tests are disabled (b) testing work pile up which could distort your estimate of real progress (c) forgetting to enable the tests in time<br>
+2. Disable failing tests temporarily until the code is stable. This is suitable when the functional code is in a highly volatile state (e.g., you are still experimenting with the implementation). The benefit is that you avoid the cost of writing tests for functional code that might change again soon after. Some costs: (a) harder to detect regressions during the period tests are disabled (b) testing debt piles up which could distort your estimate of real progress (c) forgetting to enable the tests in time.<br>
   This is still a viable option during some stages of a tP e.g., during the early part of an iteration, or while a PR is still in 'draft' state (i.e., for getting early feedback from the team).
 4. Decide certain tests are not worth the effort to maintain, and delete them permanently. Result: Less test code to maintain but higher risk of undetected regressions.
 </div>

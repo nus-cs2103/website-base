@@ -1,6 +1,6 @@
 <h1>
-<span class="text-info">TIC2002 Mid-Semester Survey Followup</span>
- <small class="text-muted">[AY2324S2]</small>
+<span class="text-info">TIC2002/TCX3221 Mid-Semester Survey Followup</span>
+ <small class="text-muted">[AY2425S1]</small>
 </h1>
 
 <p class="lead">
@@ -10,8 +10,8 @@ of them.
 
 <box type="info" icon=":fas-chart-pie:" seamless>
 
-**Response rate**: **80%** (12/15) --
-  Thanks to the 12 of you for taking time to respond!<br>
+**Response rate**: **58%** (11/19) --
+  Thanks to the 11 of you for taking time to respond!<br>
 </box>
 
 
@@ -19,14 +19,16 @@ of them.
 
 ### Lectures - Zoom briefings{.text-info}
 
-%%Option%% | %%Count%% %%(/12)%% | %%Percentage%%
+
+%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">....................................................................................</span><span class="text-light bg-light">....................................................................................................................</span> |5 | 41.67%
-Good<br><span class="text-info bg-info">....................................................................................................................</span><span class="text-light bg-light">....................................................................................</span> |7 | 58.33%
+Excellent<br><span class="text-info bg-info">................................................................................................................................</span><span class="text-light bg-light">........................................................................</span> |7 | 63.64%
+Good<br><span class="text-info bg-info">........................................................................</span><span class="text-light bg-light">................................................................................................................................</span> |4 | 36.36%
 Average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Can't comment. I have stopped attending them.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+        
 
 
 <div class="indented">
@@ -47,14 +49,16 @@ done at your own pace, using the textbook and the pre-recorded videos.
 
 ### Lectures - pre-recorded videos{.text-info}
 
-%%Option%% | %%Count%% %%(/12)%% | %%Percentage%%
+
+%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">..................................................................</span><span class="text-light bg-light">......................................................................................................................................</span> |4 | 33.33%
-Good<br><span class="text-info bg-info">......................................................................................................................................</span><span class="text-light bg-light">..................................................................</span> |8 | 66.67%
+Excellent<br><span class="text-info bg-info">..................................................................................................................................................</span><span class="text-light bg-light">......................................................</span> |8 | 72.73%
+Good<br><span class="text-info bg-info">....................................</span><span class="text-light bg-light">....................................................................................................................................................................</span> |2 | 18.18%
 Average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Can't comment. I don't watch them.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Can't comment. I don't watch them.<br><span class="text-info bg-info">..................</span><span class="text-light bg-light">......................................................................................................................................................................................</span> |1 | 9.09%
+        
 
 
 <div class="indented">
@@ -74,13 +78,15 @@ I'll continue to improve the existing ones and add more videos.
 
 ### Course website{.text-info}
 
-%%Option%% | %%Count%% %%(/12)%% | %%Percentage%%
+
+%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">......................................................................................................................................................</span><span class="text-light bg-light">..................................................</span> |9 | 75.0%
-Good<br><span class="text-info bg-info">..................................................</span><span class="text-light bg-light">......................................................................................................................................................</span> |3 | 25.0%
+Excellent<br><span class="text-info bg-info">......................................................................................................................................................................................</span><span class="text-light bg-light">..................</span> |10 | 90.91%
+Good<br><span class="text-info bg-info">..................</span><span class="text-light bg-light">......................................................................................................................................................................................</span> |1 | 9.09%
 Average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+        
 
 
 <div class="indented">
@@ -93,7 +99,9 @@ The feedback for the course website is generally positive but I'm sure there are
   In the meantime, I thank you for your patience with the website -- it's not easy to disseminate that much
   of information in a way that fits everyone's expectations %%(e.g., some prefer more content to be more 'visual'
   while others prefer minimalistic presentation)%%,
-  and we realize that ==it is not easy for you to consume that much of information== either.
+  and we realize that ==it is not easy for you to consume that much of information== either. 
+  If you can't seem to find the information you are looking for in the website, just ask (post in the forum
+   of email tic2002@comp.nus.edu.sg).
     
 </div>
         
@@ -104,13 +112,15 @@ The feedback for the course website is generally positive but I'm sure there are
 
 ### The workload{.text-info}
 
-%%Option%% | %%Count%% %%(/12)%% | %%Percentage%%
+
+%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
 -------|-------|-----------
 Too high. I can't keep up.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-A bit high, but I can manage.<br><span class="text-info bg-info">....................................................................................................................</span><span class="text-light bg-light">....................................................................................</span> |7 | 58.33%
-Just right.<br><span class="text-info bg-info">....................................................................................</span><span class="text-light bg-light">....................................................................................................................</span> |5 | 41.67%
+A bit high, but I can manage.<br><span class="text-info bg-info">........................................................................</span><span class="text-light bg-light">................................................................................................................................</span> |4 | 36.36%
+Just right.<br><span class="text-info bg-info">................................................................................................................................</span><span class="text-light bg-light">........................................................................</span> |7 | 63.64%
 A bit low. I can manage even if it is to increase a bit more.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Too low. <br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+        
 
 
 <div class="indented">
@@ -128,7 +138,7 @@ Good to see that the workload is manageable to all who responded, but I realize 
   the minimum you need to do to get a decent grade. 
 * **If you have room for more work:**
   * Try to do more in the project: The project is open ended are you are encouraged to do as much as you want.
-    You can refer to [Duke full description](https://nus-tic2002-ay2324s2.github.io/website/se-book-adapted/projectDuke/index.html) to find
+    You can refer to [Duke full description](https://nus-tic2002-ay2425s1.github.io/website/se-book-adapted/projectDuke/index.html) to find
     more things you can do with it.
   * Learn the optional topics: I have added a lot more optional topics to the second half of the semester.
     This means there is more to learn every week, if you have the capacity to do so.
@@ -142,13 +152,15 @@ Good to see that the workload is manageable to all who responded, but I realize 
 
 ### The pace of the course{.text-info}
 
-%%Option%% | %%Count%% %%(/12)%% | %%Percentage%%
+
+%%Option%% | %%Count%% %%(/11)%% | %%Percentage%%
 -------|-------|-----------
 Too fast, I can't keep up<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-A bit fast, but I can manage<br><span class="text-info bg-info">......................................................................................................................................</span><span class="text-light bg-light">..................................................................</span> |8 | 66.67%
-Just right<br><span class="text-info bg-info">..................................................................</span><span class="text-light bg-light">......................................................................................................................................</span> |4 | 33.33%
+A bit fast, but I can manage<br><span class="text-info bg-info">......................................................</span><span class="text-light bg-light">..................................................................................................................................................</span> |3 | 27.27%
+Just right<br><span class="text-info bg-info">..................................................................................................................................................</span><span class="text-light bg-light">......................................................</span> |8 | 72.73%
 A bit too slow. I don't mind a slightly faster pace<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
 Too slow. Please speed up a lot<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+        
 
 
 <div class="indented">
@@ -176,50 +188,27 @@ Good to see that the pace is mostly manageable for most too.
 </md></p>
 
 <table style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<tbody>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <th style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">Any other feedback about the course?</th>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>All is good.</markdown>
+<markdown>The course have been great!</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).
-
-
-
-Note: To get faster response through MSTeams, tag me and the tutor when you post in MSTeams help channel. Otherwise MSTeams doesn't alert us.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>For Coursemology exercises, I faced an issue for the past few weeks for questions that had multiple boxes (each box is a block of code, e.g. main for one box, class for another box etc).
-The issue is when I entered a solution for each box, the codes in the each boxes suddenly replaced one another. Like the “main” code, will suddenly go into “class” code etc. I had to copy paste each block of code into its “box”, even for the boxes that was not meant to be edited.</markdown>
+<markdown>I really like the pacing and workload so far, the explanations in lectures are also good for laying a strong foundation in java and OOP. I particularly enjoy reading the textbook on the course website. It was informative and very easy to understand. Thank you for the effort you've put in for this mod!</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Thanks for letting us know. Will convey this to the Coursemology team. It might help if you can send us some screenshots if you encounter this again.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good to hear you liked the textbook and the lecture briefings :-)</markdown>
 </span></box>
 </td>
 </tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>It's tricky to coordinate for progress during CNY/Raya period.
-
-I should trying asking more questions, I feel that my progress has slowed down and I'm trying to catch up. Sometimes I'm not sure what kind of questions to ask.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Sorry to hear about difficulties caused by holiday breaks. In general, we try to keep our deadlines flexible as part-time students encounter various schedule clashes due to their day jobs. If you need more time to complete a task, just let us know. 
-
-If you get stuck not sure what question to ask either, it might help if you attend the lecture F2F and show me or the TA where you are stuck.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>There can be more hints given on how to go about doing the project. Although it is done incrementally (which is helpful), it is a bit difficult to know where to start/how exactly to implement the function for each section.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, it is possible that you feel unsure how to get started on some project increments. If that happens, feel free to ask for a hint via the MSTeams help channel.</markdown>
-</span></box>
-</td>
-</tr>
+</tbody>
 </table>
 
 <br>

@@ -3,7 +3,7 @@
 
 #### {{ thumb(1) }} Exercise on Requirements: PR Tracker
 
-1. {{ timing_badge("10 minutes", "info") }} **Write the answers to the following questions**. You can write your answers in a local document file %%(e.g., a Word doc)%% first; when done, paste a screenshot in the workspace document. %%Writing the answer directly in the workspace document might result in too much lag.%%
+* {{ timing_badge("10 minutes", "info") }} **Write the answers to the following questions**. You can write your answers in a local document file %%(e.g., a Word doc)%% first; when done, paste a screenshot in the workspace document. %%Writing the answer directly in the workspace document might result in too much lag.%% {text="1.1"}
 
    <box>
 
@@ -30,7 +30,7 @@
 
    </box>
 
-2. **Check a peer answer (provided by the tutor) for the bugs listed below** and discuss, as directed by the tutor.
+* **Check a peer answer (provided by the tutor) for the bugs listed below** and discuss, as directed by the tutor. {text="1.2"}
 
 {{ embed_topic("../../admin/tp-grading-bugs-fragment.md#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
 {{ embed_topic("../../admin/tp-grading-bugs-fragment.md#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
