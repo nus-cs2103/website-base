@@ -235,13 +235,13 @@ Note the following:
 * Draw ==on paper or on a whiteboard or use a free-hand drawing software== (e.g., Bamboo Paper). If latter, do not use UML software or predefined shapes.
 * For the same reason, don't use rulers.
 * When the tutor asks you to, take a screenshot or a photo of the drawing and post in the _tutorial workspace_ document.
-* {{ icon_tip }} There are mobile apps ([example](https://apps.apple.com/sg/app/evernote-scannable/id883338188)) that can take a photo of a document and and convert it to a high-quality scan.
+* {{ icon_tip }} There are mobile apps ([example](https://apps.apple.com/sg/app/evernote-scannable/id883338188)) that can take a photo of a document and convert it to a high-quality scan.
 </box>
 {% if cs2103 %}<box type="tip">
 
 **[Recommended] Do the following before attempting the tutorial tasks**
 
-1. Do this week's Canvas quiz Part I, to self-test your memory of the required UML notation.
+1. Do this week's Canvas quiz Part I, to self-test your memory of the required UML notation. You will be able to see the correct answer immediately after submitting answers.
 1. Watch at least some of the [UML drawing step-by-step example videos](../schedule/week8/topics.html) provided.
 </box>{% endif %}
 </div>

@@ -853,16 +853,14 @@ This activity is worth `2x2=4` participation points.
 
 1. {% if cs2113 %}**The allocation will be sent via email**, by Monday 2359.{% else %}**Wait for the email notifying you which iPs are allocated for you to evaluate**. When the email is sent out, it will also be announced via course announcements.{% endif %}
 1. **Download the _latest_ JAR file** of the first iP by following the link provided.
-   <box type="info" icon=":fas-question:" seamless>
-
-   **FAQ**: What if the student has not uploaded a JAR file, or the JAR file doesn't work at all?<br>
-   **A**: When you submit the evaluation (step 8 below), there will be a way to indicate that the JAR was not available, or any other serious issues you faced.
-   </box>
-1. **Locate the User Guide** of the app by following the link provided in that email.
+   {{ show_faq("ipEvaluationNoJar") }}
+3. **Locate the User Guide** of the app by following the link provided in that email.
 1. **Open the Canvas survey** (the one named `iP Peer Evaluation 1`) that you will be using to submit your evaluation and take note of the things you need to evaluate.
 1. **Run the jar file** in the following manner:
-   * Put the jar file in an ==empty folder==, to prevent data files created by other jar files you tested earlier from interfering with the current jar file.{ texts="['5.1','5.2','5.3','5.4']" }
-   * Open a terminal, and ==navigate to the folder== you put the JAR file in (e.g., `cd smoke-test/ip1`) -- reason: data files will be created relative to the folder the terminal is currently in.
+   * Put the jar file in an ==empty folder==<br>
+     %%Reason: prevent data files created by other jar files you tested earlier from interfering with the current jar file.%%{ texts="['5.1','5.2','5.3','5.4']" }
+   * Open a terminal, and ==navigate to the folder== you put the JAR file in (e.g., `cd smoke-test/ip1`)<br>
+     %%Reason: data files will be created relative to the folder the terminal is currently in.%%
    * {{ icon_important_big_red }} Run the ==`java -version` command== to confirm you are using Java 17.{% if cs2103 %}<br>
       :fab-apple: Mac user, confirm you are using the exact Java distribution we have prescribed [here](programmingLanguages.md).{% endif %}
    * Run the jar file using the ==`java -jar "{file_name}"` command== (rather than double-clicking) in the same terminal.

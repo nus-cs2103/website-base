@@ -51,6 +51,7 @@
 {{ show_expanded_faq("tpHowManyFeaturesInMvp") }}
 {{ show_expanded_faq("tpAb3FeatureInMvpSpec") if cs2103 }}
 {{ show_expanded_faq("tpIterationDeadline") }}
+{{ show_expanded_faq("tpMissingIterationDeadlines") }}
 {{ show_expanded_faq("githubWhoCreatesIssues") }}
 {{ show_expanded_faq("githubIssuesForNonCodingTasks") }}
 {{ show_expanded_faq("githubIssuesSubTasks") }}
@@ -62,11 +63,14 @@
 {{ show_expanded_faq("dgDetailsLevel") }}
 {{ show_expanded_faq("dgAddNewUml") if cs2103 }}
 {{ show_expanded_faq("tpHowMuchToGetFullMarks") }}
+{{ show_expanded_faq("tpChangeFeatureSpec") if cs2103 }}
 {{ show_expanded_faq("tpEnoughFeatures") if cs2103 }}
 {{ show_expanded_faq("tpMustWrite300Loc") if cs2103 }}
 {{ show_expanded_faq("tpFullMarksFor300Loc") if cs2103 }}
+{{ show_expanded_faq("tpDivideByComponent") }}
 {{ show_expanded_faq("tpNoPrInIteration") if cs2103 }}
 {{ show_expanded_faq("tpUpdateTestsWithCode") if cs2103 }}
+{{ show_expanded_faq("tpCodecovFails") if cs2103 }}
 {{ show_expanded_faq("tpUpdateDocsWithCode") if cs2103 }}
 {{ show_expanded_faq("tpWhyUpdateDiagramsEarly") }}
 {{ show_expanded_faq("tpFeatureTakeovers") }}

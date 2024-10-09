@@ -96,7 +96,12 @@ In fact, here is the grading criterion for the individual project effort:
 * **Recommended: Contribute to _all_ aspects of the project** e.g. write back-end code, front-end code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
 
 * **Recommended: Do _all_ the work related to your enhancement yourself.** %%Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%<br>
-  In other words, ==we recommend that the work to be divided primarily based on _features/enhancements_== rather than _components_. The latter has the risk of a team member becoming a _single point of failure_ and you becoming _too reliant_ on other team members %%e.g., what if the person assigned to an important component doesn't deliver on time?%%.
+  In other words, ==we recommend that the work to be divided primarily based on _features/enhancements_== rather than _components_. The latter has problems such as the following:<br>
+ (a) Higher risk of a team member becoming a _single point of failure_ %%e.g., what if the person assigned to an important component doesn't deliver on time?%%<br>
+ (b) You become _too reliant_ on other team members %%e.g., a feature can't be delivered until all members have done their part%%<br>
+ (c) Hard to keep tests passing %%i.e., tests break when one component is updated without the others%%<br>
+ (e) Integration become harder/riskier %%i.e., move from _continuous integration_ (safer) towards _big-bang integration_ (riskier)%%<br>
+ (f) Not aligned with breadth-first iterative %%i.e. evolving components separately moves you towards depth-first iterative approach instead%%
 
 <div tags="m--cs2103">
 

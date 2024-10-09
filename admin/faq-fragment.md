@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import as_tag, embed_topic with context %}
+{% from "common/macros.njk" import as_tag, embed_topic, thumb_small with context %}
 
 <!-- =============================================================== -->
 <div id="faq-whereIsEverything-Q">Where is everything?</div>
@@ -186,6 +186,12 @@ Not to worry. You are welcome to (but not _required_ to) try to rectify it. Ther
 * Later on, during the iP evaluation (which has a peer evaluation), you'll also get to evaluate the code quality and testing level of other iPs. This should serve as more practice.
 
 That said, we'll still give you one more round of further code quality feedback, after the iP is over. That is to help you identify the things you missed yourself, and do an even better job in the tP.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipEvaluationNoJar-Q">What if the student has not uploaded a JAR file, or the JAR file doesn't work at all?</div>
+<div id="faq-ipEvaluationNoJar-A">
+
+When you submit the evaluation (step 8 below), there will be a way to indicate that the JAR was not available, or any other serious issues you faced.
 </div>
 <!-- =============================================================== -->
 <div id="faq-temp-Q"></div>
@@ -394,8 +400,19 @@ There is no such guarantee, for two reasons:
 <div id="faq-tpIterationDeadline-Q">What's the deadline for tP iterations?</div>
 <div id="faq-tpIterationDeadline-A">
 
-The deadline for tP iterations is the `Thursday 23:59` in the week it is due, unless a different date is specified in the instructions of that iteration.<br>
+The deadline for tP iterations is the `Thursday 23:59` in the week it is due, unless a different date is specified in the instructions of that iteration.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tpMissingIterationDeadlines-Q">What if we overshoot the deadline for a tP iteration?</div>
+<div id="faq-tpMissingIterationDeadlines-A">
+
 It is OK %%(i.e., no penalty)%% if you overshoot the deadline in initial iterations. Adjust subsequent iterations so that you can meet the deadline consistently %%(which is an important learning outcome of the tP)%% by the time you reach the end of the tP.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tpV11Scope-Q">What should be in `{{ version_practice }}`? Just task {{ thumb_small("1") }} or all three tasks?</div>
+<div id="faq-tpV11Scope-A">
+
+Ideally, all three. But if you can't finish all three by the iteration deadline, you may push some of the task {{ thumb_small("2") }} and {{ thumb_small("3") }} work to the following iteration (i.e., `{{ version_first }}`).
 </div>
 <!-- =============================================================== -->
 <div id="faq-tpHowMuchToGetFullMarks-Q">How much code/features is enough to get full marks?</div>
@@ -418,6 +435,12 @@ If you surpass the above bars (in your own estimation), you should be in a good 
 <div id="faq-tpNotEnoughWorkToDivide-A">
 
 In that case, at a later stage, you can add more user stories until there is enough for a meaningful work distribution. But at this point focus on selecting the smallest sub-set of _must_have_ user stories only.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tpNotEnoughMvpFeaturesToDivide-Q">What if the MVP feature list is smaller than team size? How to divide work?</div>
+<div id="faq-tpNotEnoughMvpFeaturesToDivide-A">
+
+In that case, you can add more features, taking higher priority features from the features not-yet-selected for the MVP.
 </div>
 <!-- =============================================================== -->
 <div id="faq-tpShouldWeStartCoding-Q">Should we start implementing MVP now?</div>
@@ -444,10 +467,57 @@ That's fine. It means you can get to MVP with very little effort, which is a goo
 It's an individual task (note the icon {{ icon_individual }} above), to be done by each member, as we want _every_ member to be familiar with the codebase.
 </div>
 <!-- =============================================================== -->
+<div id="faq-tpCodecovFails-Q">PR CI fails because Codecov reports a drop in code coverage. What to do?</div>
+<div id="faq-tpCodecovFails-A">
+
+In some cases the code edited by the PR is not covered by existing tests, which means Codecov will report it as not adhering to the current coverage targets.
+
+First, find out which area of the code is causing the coverage drop. You can use Codecov or code coverage features of the IDE to do so.
+
+Then you can do the following:
+
+* Ignore those warnings, and merge the PR (a member with admin permissions can merge a CI-failing PR). Suitable for cases such as,
+  * the coverage drop is in code that is not normally covered by automated tests and/or 'not worth the effort to' test automatically (e.g., GUI).
+  * you deem that automated testing of that part of the code can be done at a later time (i.e., not a priority at the current time).
+* Alternatively, update tests until the coverage is raised back to  sufficient level.
+
+Note that Codecov is there to help you manage code coverage -- it is not graded. You may lower the test coverage targets set for Codecov as well.
+
+For reference,
+
+{{ embed_topic("tp-expectations.md#testing-expectations", "Admin " + icon_embedding + " tP → Grading → **Expectation on testing**", "3", indent="1") }}
+</div>
+<!-- =============================================================== -->
+<div id="faq-tpAddChangesInFeatureBranch-Q">Can we PR against a branch other than `master`, and merge that branch to `master` in a later iteration?</div>
+<div id="faq-tpAddChangesInFeatureBranch-A">
+
+While doing PRs against a separate 'feature branch' is not explicitly prohibited, it is discouraged because the longer you keep evolving a feature away from the main code base, the more,
+
+* it brings in elements of a _depth-first iterative_ approach (instead of the intended _breadth-first iterative_ approach). Although technically you are doing multiple features in parallel, they are not synchronized with each other.<br>
+  Note: **The ability to divide implementation work into small breadth-first incremental changes is one of the important intended learning outcomes we are aiming for** -- even more important than the mechanics of following the workflow correctly. Using feature branches is not aligned with this learning outcome.
+* it moves towards [_big-bang integration_]({{ baseUrl }}/book/integration/approaches/bigBangVsIncremental/) (instead of the intended _incremental integration_) and [_late-and-one-time integration_]({{ baseUrl }}/book/integration/approaches/lateVsEarly/) (instead of the intended _early-and-frequent_ integration). Although you feature branch is running CI at each commit, when you integrate feature branches to the `master` branch at a later time, it can result in a 'big bang'.
+
+So, even if you use feature branches,
+
+* do it in moderation (not as the standard practice), only when you feel it is necessary.
+* merge the feature branch to the `master` branch frequently, ==at least once per iteration==.<br>
+  Note that only commits merged to the master branch will be recognized by the grading scripts.
+* keep them synced with the latest `master` branch i.e., merge the `master` branch to the feature branch whenever there are new commits in the `master` branch.
+</div>
+<!-- =============================================================== -->
 <div id="faq-tpTestsForTutorial-Q">When doing this tP tutorial, do we have to write/update test cases too?</div>
 <div id="faq-tpTestsForTutorial-A">
 
 Not a strict requirement, but given the purpose of this tutorial is to learn the codebase, it's ideal if you do. It will familiarize you with the existing testing infrastructure. Otherwise, you can run into difficulties when you are writing test cases for your own features later.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpChangeFeatureSpec-Q">Are we allowed to deviate from the MVP Feature Specification submitted earlier?</div>
+<div id="faq-tpChangeFeatureSpec-A">
+
+Yes, the submitted _MVP Feature Specification_ is not binding (its purpose was to get you to think about feature details early -- we will not be looking at it again). You may change features as needed along the way. Just ensure your changes do not violate [tp constraints]({{ baseUrl }}/admin/tp-constraints.html).
+
+No need to resubmit the Feature Spec either. However, if you change the product name, target user, or the value proposition, (which is allowed too) please email the updated values to `{{ course_email }}`.
 </div>
 <!-- =============================================================== -->
 
@@ -533,6 +603,23 @@ Here are some reasons:
 
 In terms of effort distribution, it's up to the team to tell us who did how much. Same goes for assigning bugs. So, it's fine for someone to take over a feature if the team is able to estimate the effort of each member, and they have a consensus on who will be responsible for bugs in that feature.<br>
 For code authorship, only one person can claim authorship of a line, and that person will be graded for the code quality of that line. By default, that will be the last person who edited it (as per Git data) but you can [override that behavior using `@@author` tags](tools.html#tool-reposense-for-authorship-tracking).
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpHowMuchCodeInV12-Q">How much code changes is 'enough' for this iteration?</div>
+<div id="faq-tpHowMuchCodeInV12-A">
+
+The bar is, each member to merge at least one PR containing functional code changes. The more you do in the current iteration, the less you need to do in future iteration. So, try to do as much as your time/resources allow. But the more important thing in `{{ version_first }}` is to do those changes in small steps, without breaking the codebase.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpDivideByComponent-Q">Is it OK if different members modified different components?</div>
+<div id="faq-tpDivideByComponent-A">
+
+No, we advise against that. Instead, divide the work based on features/enhancements instead of components.
+But you should still allocate different members to be 'in charge of' different components.
+
+
 </div>
 <!-- =============================================================== -->
 

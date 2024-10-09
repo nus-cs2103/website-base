@@ -314,6 +314,8 @@ Specifically, we start with a workflow practice session (in task {{ thumb_small(
 ++**Things to note:**++{.text-info}
 
 {{ show_faq("tpIterationDeadline") }}
+{{ show_faq("tpMissingIterationDeadlines") }}
+{{ show_faq("tpV11Scope") }}
 
 <include src="tp-common-fragments.md#error-commit-message-subject" />
 <include src="tp-common-fragments.md#error-pr-from-master" />
@@ -332,12 +334,12 @@ But you can continue to use your favorite Git GUI for a more 'visual' view of yo
 
 ++**What's happening this week:**++{.text-info}
 
-Having practiced the workflow in the previous iteration, **this week's iteration {{ version_first }} adds the first functional code changes.**
+Having practiced the workflow in the previous iteration, **this week's iteration {{ version_first }} adds the first wave of functional code changes.**
 
 {{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 19, 37) }}
 {{ show_tp_goals(version_first, "v12-goals") }}
 
-The _breadth-first iterative_ approach requires each intermediate version to be a working version. However, to make things a bit easier for us (as we are only getting started with the project), **we will not be releasing any new product version at the end of this iteration.** This means you have the freedom to create PRs for small code changes, without the pressure to implement a feature end-to-end within one PR (or even within this iteration).
+The _breadth-first iterative_ approach requires each intermediate version to be a full working product. However, to make things a bit easier for you (as you are only getting started with the project), **we will not be releasing any new product version at the end of this iteration.** This means you have the freedom to create PRs for small code changes, without the pressure to implement a feature end-to-end within one PR (or even within this iteration).
 
 ++**Things to note:**++{.text-info}
 
@@ -1217,7 +1219,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 ****Updating the _AboutUs_ page:****
 
-This page  (in the `/docs` folder) is used for course admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
+This page  (in the `/docs` folder) is used for course admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work. Similarly, ==do not split the given `.md` files further into multiple files==, as our grading script will check the given files only.
 
 * Add your own details.
 * There is no need to mention the tutor/lecturer, but OK to do so too.
@@ -1252,7 +1254,7 @@ This page  (in the `/docs` folder) is used for course admin purposes. ==Please f
 
 <box type="info" seamless>
 
-Although MVP version is scheduled to be released in `{{ version_mvp }}` and not in the current iteration `{{ version_first }}`, in this task we refine the MVP features and divide them among the team members, because it is the first product version anyway (i.e., there is nothing earlier that we can aim our plans at).
+Although MVP version is scheduled to be released in `{{ version_mvp }}` and not in the current iteration `{{ version_first }}`, in this task we refine the MVP features and divide them among the team members, because MVP is the first full product version anyway (i.e., there is nothing earlier that we can aim our plans at).
 </box>
 
 * {{ icon_team }} **Re-confirm MVP feature design**. Recall that you decided on features to include in the MVP version of the product. Revisit that design. Ensure the following (you may refine the MVP feature design if necessary).
@@ -1262,7 +1264,9 @@ Although MVP version is scheduled to be released in `{{ version_mvp }}` and not 
   * It will **still be a working product** (i.e., it can be used)<br>
     %%Reason: As we are following the breadth-first iterative approach, each intermediate version should be a working product.%%
 * {{ icon_team }} **Divide the features among the team members** i.e., who will be implementing which feature.
-  * Reminder: We recommend that the work to be divided primarily based on features/enhancements rather than components.
+  * Reminder: We recommend that the work to be ==divided primarily based on features/enhancements, not by components==.
+
+{{ show_faq("tpNotEnoughMvpFeaturesToDivide") }}
 
 <box>
 
@@ -1394,7 +1398,8 @@ Tip: Especially ==note the part on _overzealous input validation_==, which is a 
 
 * {{ icon_individual }} **Select a code change to implement**, as follows:{text="S1." t-class="fw-bold"}
   * Consider the feature that you have been assigned to implement for the upcoming MVP version of the product (which will be released by the iteration `{{ version_mvp }}`, not by the current iteration `{{ version_first }}`).
-  * Pick a small code change that you'll need to do to implement that feature. This is a small code change contributing towards the feature, not the entire feature itself. %%Examples: add parser support for a new command word, add a field to the person class%%.
+  * Pick a small code change that you'll need to do to implement that feature. This is a small code change contributing towards the feature, not the entire feature itself. %%Examples: add parser support for a new command word, add a field to the person class%%.<br>
+   This code change should not 'break' the code base though (e.g., it should not refer to a class that you plan to add in a future PR but doesn't exist yet). Ideally, it should not cause any existing tests to break either. That is, the change should take the codebase forward in a meaningful way.
 * {{ icon_individual }} **Implement that code change while following the workflow** that you practiced in the previous week. A summary of the steps:{text="S2."}
     * Create an issue for it. Assign it to yourself. Assign it to milestone `{{ version_first }}`.
     * Create a PR from a separate branch in your fork. Assign it to `{{ version_first }}`.
@@ -1402,11 +1407,17 @@ Tip: Especially ==note the part on _overzealous input validation_==, which is a 
     * Get the PR merged. Close the corresponding issue.
 * {{ icon_individual }} **Continue to implement more code changes** (i.e., repeat S1 and S2) to implement more code changes that move you towards your MVP feature(s). Recommended to create <tooltip content="i.e., while waiting for one PR to be merged, create a new PR to fix another issue">parallel PRs</tooltip>, when implementing code changes with no/low dependency between them.{text="S3."}
 * {{ icon_team }} **Wrap up the milestone** When the iteration period is over, do the following:{text="S4."}
-  * Move any pending issues/PRs to the next milestone (i.e., {{ version_mvp }}). %%As we did not plan to release a product version at the end of this iteration, we can freely move any pending work to the next iteration.%%
+  * Move any pending issues/PRs to the next milestone (i.e., `{{ version_mvp }}`). %%As we did not plan to release a product version at the end of this iteration, we can freely move any pending work to the next iteration.%%
   * Close the milestone.
+  * There is no need to do a product release.
 
-{{ show_faq("tpUpdateTestsWithCode") }}
-{{ show_faq("tpUpdateDocsWithCode") }}
+{{ show_faq("tpHowMuchCodeInV12", is_compact=1) }}
+{{ show_faq("tpMissingIterationDeadlines", is_compact=1) }}
+{{ show_faq("tpUpdateTestsWithCode", is_compact=1) }}
+{{ show_faq("tpCodecovFails", is_compact=1) }}
+{{ show_faq("tpAddChangesInFeatureBranch", is_compact=1) }}
+{{ show_faq("tpUpdateDocsWithCode", is_compact=1) }}
+{{ show_faq("tpChangeFeatureSpec", is_compact=1) }}
 
 </div>
 {#====================================================================================================================#}
@@ -1468,7 +1479,7 @@ Note that the product you deliver at the end of this iteration must be working a
 
 * {{ icon_team }} **Manage the iteration** `{{ version_mvp }}`, and reach the milestone `{{ version_mvp }}` (which delivers product version `{{ version_mvp }}`)
 * {{ icon_team }} **Aim to delivery on time**, as that is linked to our tP learning outcome of this iteration. This means you need to monitor progress, and course-correct as you go.
-  * Revise the MVP design further, if needed. If you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_mvp }}` (i.e., you can still get a 'working product' without them).
+  * Revise the MVP design further, if needed. If you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_mvp }}` %%(i.e., you can still get a 'working product' without them)%%.
   * <tooltip content="e.g., change scope">Revise</tooltip> or <tooltip content="i.e., reassign to a future milestone">reschedule</tooltip> issues/PR accordingly.
 * **Do a release on GitHub**, when the product `{{ version_mvp }}` is ready. Requirements:
   * **==Write a fairly detailed _Release Note_==** in the text field GitHub provides for the description of the release. In particular, describe what has been changed (compared to AB3). This is just an itemized list of _What's New_ -- no need to be as elaborate as a user guide.<br>

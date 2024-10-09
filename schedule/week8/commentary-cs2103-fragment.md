@@ -9,7 +9,7 @@
 <sub>[[image source](https://www.cs.auckland.ac.nz/~john-g/papers/hcc2003_1.pdf)]</sub>
 </span>
 
-In an earlier week you learned how to interpret class diagrams and object diagrams. Let's go back to that topic but this time let's learn how to draw those diagrams to match code. You'll need to draw class/object diagrams when you document the design of your tP.
+In an earlier week you learned how to _interpret_ class diagrams and object diagrams. Let's go back to that topic but this time let's learn how to _draw_ those diagrams to match code. You'll need to draw class/object diagrams when you document the design of your tP.
 
 But note that while in the tP you'll be using diagramming tools to draw the diagram, here, we focus on hand drawing. The reason is, we also want you to be able ==to quickly hand-draw UML diagrams== to aid discussions (e.g., draw a diagram on a whiteboard while explaining a design decision to colleagues).
 
