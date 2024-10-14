@@ -39,10 +39,10 @@ week9: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week10: [
-  {id: 'submit_post_lecture_quiz', graded: true}
+  {id: 'submit_post_lecture_quiz', graded: true},
+  {id: 'join_catcher_load_testing', graded: true, deadline: "during the briefing on " + get_date(date_w10_start, 4, format="MMM Do", time=""), deadline_type: 'danger'}
 ],
 week11: [
-  {id: 'join_catcher_load_testing', graded: true, deadline: "during the briefing on " + get_date(date_w10_start, 4, format="MMM Do", time=""), deadline_type: 'danger'},
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week12: [

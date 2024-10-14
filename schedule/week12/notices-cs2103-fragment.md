@@ -6,9 +6,11 @@ As this week's lecture falls on a public holiday, it will be moved to the day af
 
 </box-->
 
-<box type="info" header="****This week's briefing (and the PE Dry Run)****">
+{% if ped_week == '12' %}
+<box type="info" header="****Next week's briefing (and the PE Dry Run)****">
 
-==Attendance is compulsory== for the {{ lecture_name_short }} on {{ get_date(date_w11_start, 4, time='') }}, as we use that time slot for the Practical Exam Dry Run (<span class="text-danger">graded</span>).
+Heads up! ==Attendance is compulsory== for the weekly briefing coming up on {{ get_date(date_w12_start, 4, time='') }}, as we use that time slot for the [Practical Exam Dry Run](../../admin/tp-ped.md) (<span class="text-danger">graded</span>).
 
 </box>
 <p/>
+{% endif %}
