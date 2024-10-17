@@ -80,14 +80,12 @@
 {{ show_faq("dgAddNewUml") if cs2103 }}
 
 * **Diagramming tools**:
-  * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).<br>
-  * You may use any other tool too (e.g., PowerPoint). But if you do, note the following:
-    * ==Choose a diagramming tool that has some 'source' format that can be version-controlled using git and updated incrementally== %%(reason: because diagrams need to evolve with the code that is already being version controlled using git)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams later.
-    * Use the same diagramming tool for the whole project, except in cases for which there is a _strong_ need to use a different tool due to a shortcoming in the primary diagramming tool. %%Do not use a mix of different tools simply based on personal preferences.%%
-  * {{ icon_info }} Can <tooltip content="i.e., automatically reverse engineered from the Java code">IDE-generated</tooltip> UML diagrams be used in project submissions? Not a good idea. Given below are three reasons each of which can be reported by evaluators as 'bugs' in your diagrams, costing you marks:
-    * They often don't follow the standard UML notation (e.g., they add extra icons).
-    * They tend to include _every_ little detail whereas we want to limit UML diagrams to important details only, to improve readability.
-    * Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code %%e.g., differentiating between multiplicities `0..1` vs `1`, composition vs aggregation%%.
+  * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).
+
+{{ show_faq("tpOtherDiagrammingTool") }}
+{{ show_faq("tpIdeGeneratedDiagrams") }}
+
+
 * **Keep diagrams simple.** The aim is to make diagrams ==_comprehensible_, not necessarily _comprehensive_==.<br>
   Ways to simplify diagrams:
   * **Omit less important details**. Examples:

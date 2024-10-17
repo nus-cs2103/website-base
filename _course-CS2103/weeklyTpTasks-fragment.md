@@ -39,7 +39,7 @@ week9: [
 week10: [
   {id: 'do_a_postmortem'},
   {id: 'plan_the_alpha_version'},
-  {id: 'deliver_the_alpha_version'},
+  {id: 'deliver_the_alpha_version', deadline: get_date(date_w10_start, 3, time="23:59")},
   {id: 'smoke_test_catcher', deadline: 'COMPULSORY', graded: true},
   {id: 'start_updating_uml_diagrams'}
 ],

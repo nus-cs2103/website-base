@@ -184,7 +184,7 @@ Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span>
 
 * **Learning outcome**: Able to tweak the product/project plan to match the available time/resources.{{ bullet_target_green }}
 * **Product goal**: Implement <popover content="i.e., _almost_ complete implementation of the feature, even if not fully polished">fully-fledged</popover> versions of _all_ the features intended for final release.
-* **Strategy**: Add features based on priority, while maintaining a working product. It is OK if the features are slightly rough around the edges, as the next iteration can still tweak them features.
+* **Strategy**: Add features based on priority, while maintaining a working product. It is OK if the features are rough around the edges, as they can be tweaked in the next iteration.
 </div>
 
 

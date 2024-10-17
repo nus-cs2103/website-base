@@ -618,8 +618,63 @@ The bar is, each member to merge at least one PR containing functional code chan
 
 No, we advise against that. Instead, divide the work based on features/enhancements instead of components.
 But you should still allocate different members to be 'in charge of' different components.
+</div>
+<!-- =============================================================== -->
 
+<div id="faq-tpOtherDiagrammingTool-Q">Instead of PlantUML, can I use some other tool?</div>
+<div id="faq-tpOtherDiagrammingTool-A">
 
+Yes, you may use any other tool too (e.g., PowerPoint). But wait; if you do, note the following:
+
+* ==Choose a diagramming tool that has some 'source' format that can be version-controlled using git and updated incrementally== %%(reason: because diagrams need to evolve with the code that is already being version controlled using git)%%. For example, if you use PowerPoint to draw diagrams, also commit the source PowerPoint files so that they can be reused when updating diagrams later.
+* Use the same diagramming tool for the whole project, except in cases for which there is a _strong_ need to use a different tool due to a shortcoming in the primary diagramming tool. %%Do not use a mix of different tools simply based on personal preferences.%%
+
+So far, PlantUML seems to be the best fit for the above requirements.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpIdeGeneratedDiagrams-Q">Can <tooltip content="i.e., automatically reverse engineered from the Java code">IDE-generated</tooltip> UML diagrams be used in project submissions?</div>
+<div id="faq-tpIdeGeneratedDiagrams-A">
+
+Not a good idea. Given below are three reasons each of which can be reported by evaluators as 'bugs' in your diagrams, costing you marks:
+
+* They often don't follow the standard UML notation (e.g., they add extra icons).
+* They tend to include _every_ little detail whereas we want to limit UML diagrams to important details only, to improve readability.
+* Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code %%e.g., differentiating between multiplicities `0..1` vs `1`, composition vs aggregation%%.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpGuiTestAutomation-Q">Should we try to automate GUI testing as well?</div>
+<div id="faq-tpGuiTestAutomation-A">
+
+Automated GUI testing is hard, especially in Desktop apps, especially in CI (because the environment that CI runs doesn't have a display device to show the GUI).
+
+A few years ago, we used [AB4](https://github.com/se-edu/addressbook-level4/) as the starting point of the tP.
+
+* The main difference between AB4 and AB3? AB4 has automated GUI testing. It used the TestFX tool to do so, and ran the test in 'headless' mode in CI (i.e., simulate a display device without an actual display device).
+* The main reason we changed tP to start with AB3 code was that some students found it too hard to maintain those GUI tests.
+
+While we don't require you to automate GUI testing in your tP (i.e., it is fine to do only manual GUI testing), you are welcome to give it a try too, especially if you like a technical challenge.
+
+* Even if you get it working in only some OS'es only, and only in local environment, it is still a useful way to test the GUI quickly.
+* It is possible to run tests selectively, which means you can still run them in environments they work and skip them in other environments.
+
+Feel free to reuse/refer AB4 code too. If you manage to make some headway in this direction, you are encouraged to share it with others via the forum.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpWorksLocallyFailsCi-Q">All tests pass locally, but the same code fails CI in the PR. How come?</div>
+<div id="faq-tpWorksLocallyFailsCi-A">
+
+First, check which OS it is failing in. Some behaviors can be OS-dependent. For example, file paths are case-insensitive in Windows but not in Unix/Mac.
+
+Second, note that PR CI merges does a temporary merge of `master` branch to the PR branch before running tests, to verify if the checks will pass _after_ you merge this PR. So, if the master branch has progressed after you started your PR branch, those new commits can affect the CI result. The remedy is to pull the master branch to your repo, merge it to your PR branch, and run tests again (which should fail as well, but you can now find the reason for the failure and fix it).
+</div>
+
+<div id="faq-tpPrPassCiButFailedAfterMerging-Q">PR passed CI before merging, but fails CI after merging. How come?</div>
+<div id="faq-tpPrPassCiButFailedAfterMerging-A">
+
+It is possible that the `master` branch has received new commits after your PR passed CI the last time. So, if GitHub indicates that your PR is not up-to-date with the latest `master` branch, synchronize your PR branch with the `master` branch (which will run the CI again) before merging it.
 </div>
 <!-- =============================================================== -->
 

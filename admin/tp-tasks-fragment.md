@@ -440,7 +440,7 @@ For now, give some thoughts to the following questions (the answer will be neede
 We call this the _alpha version_ because **this version is meant to be good enough for <tooltip content="testing done by internal testers">_alpha testing_</tooltip>** of the product.
 
 First, %%in task {{ thumb_small("1")}}%% we look back at the previous iteration, to see what we can learn from it.<br>
-Then, %%in {{ thumb_small("2")}}%% we plan features to be implemented in this version, while aiming to reach very close to the final product's feature set.<br>
+Then, %%in {{ thumb_small("2")}}%% we plan features to be implemented in this version, while aiming to come very close to the final product's feature set.<br>
 Finally, %%in {{ thumb_small("3")}}%% we implement those features to deliver the `{{ version_alpha }}`.
 
 ++**Things to note:**++{.text-info}
@@ -453,7 +453,7 @@ Finally, %%in {{ thumb_small("3")}}%% we implement those features to deliver the
 
 **Have any suggestions to improve AB3?**{.text-info}
 
-Now that you have worked with AB3 codebase for a while, if you have any suggestions on how to improve AB3 (for future batches), feel free to post in the [AB3 upstream issue tracker](https://github.com/se-edu/addressbook-level3/issues).<br>
+Now that you have worked with AB3 codebase for a while, if you have any suggestions on how to improve AB3 (for future batches), feel free to post/discuss them in the [forum]({{ url_forum }}).<br>
 %%Examples: places where the design/code can be simplified, hard to understand parts of the code, tips you can share with future batches, ...%%
 
 {% endcall %}
@@ -1488,6 +1488,17 @@ Note that the product you deliver at the end of this iteration must be working a
   * **Upload the JAR file** as well. Instructions for creating a JAR file can be found in [as described in the tP Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release).
 * **Wrap up the milestone** on GitHub, when you are done with this iteration and the MVP has been released.
 
+{{ show_faq("tpGuiTestAutomation", is_compact=1) }}
+{{ show_faq("tpWorksLocallyFailsCi", is_compact=1) }}
+{{ show_faq("tpPrPassCiButFailedAfterMerging") }}
+
+%%Some other relevant FAQs, repeated from last week:%%
+
+{{ show_faq("tpUpdateTestsWithCode", is_compact=1) }}
+{{ show_faq("tpCodecovFails", is_compact=1) }}
+{{ show_faq("tpAddChangesInFeatureBranch", is_compact=1) }}
+{{ show_faq("tpUpdateDocsWithCode", is_compact=1) }}
+{{ show_faq("tpChangeFeatureSpec", is_compact=1) }}
 </div>
 <div tags="m--cs2113">
 
@@ -1513,7 +1524,7 @@ Note that the product you deliver at the end of this iteration must be working a
 This is a good time to get familiar with the diagramming tools used by the tP.
 </box>
 
-* {{ icon_individual }} **Each member is recommended to update at least one UML diagram in the DG**, to match the changes you've done so far `{{ version_alpha }}`. You may do this towards the end of `{{ version_alpha }}`, or soon after you finish it.
+* {{ icon_individual }} **Each member is recommended to update at least one UML diagram in the DG**, to match the changes you've done so far in `{{ version_alpha }}`. You may do this towards the end of `{{ version_alpha }}`, or soon after you finish it.
 * Updating the DG text to match the diagrams is optional (it can be done later).
 * FYI, the panel below has some DG tips, some of which are related to drawing diagrams.
 
@@ -1565,20 +1576,17 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 <span id="heading_plan_the_alpha_version">{{ icon_team }} Plan the alpha version (`{{ version_alpha }}`)</span>
 <div id="desc_plan_the_alpha_version">
 
--- [more details to be added] --
-* What features would you include if you had only one more week?
-* Aim to reach a fully-fledged (albeit unpolished) version of the features
-* Decide the order/timeline, create issues, assign devs
-* Tackle tasks based on priority, while staying breadth-first.
+* **Decide the scope:** Start by deciding what features you would include in the final product !!if you had only one more week to deliver!! them. In this iteration, aim to deliver at least a fully-fledged (albeit not-yet-polished) version of those features.
+* **Plan the iteration**: Decide the order/timeline for those features, record that plan using issues, and assign team members to those issues. Plan tasks based on priority, while staying breadth-first.
 </div>
 {#====================================================================================================================#}
 <span id="heading_deliver_the_alpha_version">{{ icon_team }} Deliver the alpha version (`{{ version_alpha }}`)</span>
 <div id="desc_deliver_the_alpha_version">
 
--- [more details to be added] --
-* As before, manage the iteration and release `{{ version_alpha }}`
-* Smaller steps encouraged. Don't be tempted to do the full feature in one PR.
-
+* **Follow the iteration plan** you devised above,  to deliver the features.<br>
+Resist the temptation to try to deliver each of those features/enhancements in one PR. It is better to deliver a minimal version first, and improve it through subsequent PRs.
+* **Manage the iteration** better than then previous iteration (hopefully), as per what you learned/decided during the `{{ version_mvp }}` postmortem.
+* **Release `{{ version_alpha }}`.** Include a jar file and detailed release notes.
 <box>
 
 ##### {{ icon_tip }} Ways to level up your tP game:{.text-success}
@@ -1680,7 +1688,7 @@ In addition,
 
 <box dismissible>
 
-%%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE this semester.%%
+%%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE this semester. We still use GitHub to record bugs reported in the PE but CATcher acts as a layer between you and GitHub, to ensure the bugs you report meet PE requirements.%%
 </box>
 
 This week, we would like you to smoke-test the CATcher app **to ensure it can work with your OS, Browser, GitHub account**, by following the steps given in the panel below.
@@ -1691,7 +1699,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 1. **Go to the CATcher Web version** at https://catcher-org.github.io/CATcher/ using ==the same computer (i.e., not a mobile device) that you plan to use for the practical exam==.
    * Use a common browser such as Chrome, Edge, Firefox, Safari
    * Allow popups from https://catcher-org.github.io/
-   * If you encounter other problems at the app launch, refer to the [Notes on using CATcher](https://catcher-org.github.io/ug/) -- look for information related to the Web app (not the desktop app).
+   * If you encounter other problems at the app launch, refer to the [Notes on using CATcher](https://catcher-org.github.io/ug/).
 1. **Login**: Choose the _session_ `{{ course_pair }} Smoke Test`, and submit.
    <pic eager src="images/catcherLogin.png"></pic>
 1. In the next screen, login to CATcher using your GitHub account.<br>
@@ -1702,7 +1710,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
    {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
    {{ icon_info }} The `severity` and `type` labels are compulsory.
 1. **Report any problems you encounter** at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
-1. **Do NOT delete the `alpha` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
+1. **Do NOT delete the `catcher-smoke-test` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
 
 </panel>
 <p/>
