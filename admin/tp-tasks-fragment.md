@@ -447,6 +447,13 @@ Finally, %%in {{ thumb_small("3")}}%% we implement those features to deliver the
 
 {{ show_faq("tpHowMuchToGetFullMarks") }}
 
+<box type="warning" header="Heads up: this is a BIG week of the tP!" seamless>
+
+Ideally, the tP work should be distributed equally across all tP works. In practice though, this can be uneven based on your other commitments %%e.g., most did less work in week 7-8 due to midterm exams%%.
+
+==If you were to pick one tP week to push the hardest, this week should be it!== That is because in this iteration you need to implement all features that you plan to include in the final version (but they need not be fully polished).
+</box>
+
 {% endcall %}
 {#---------------------------------------------------#}
 {% call show_tp_week_outro("cs2103", 10) %}
@@ -1576,7 +1583,7 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 <span id="heading_plan_the_alpha_version">{{ icon_team }} Plan the alpha version (`{{ version_alpha }}`)</span>
 <div id="desc_plan_the_alpha_version">
 
-* **Decide the scope:** Start by deciding what features you would include in the final product !!if you had only one more week to deliver!! them. In this iteration, aim to deliver at least a fully-fledged (albeit not-yet-polished) version of those features.
+* **Decide the scope:** Start by deciding what features you would include in the final product !!if you had only one more week to deliver!! them. In this iteration, aim to deliver at least a <popover content="i.e., the feature is working and accessible to users, although it might not handle all the corner cases, and the UI/UX might not be fully polished yet">fully-fledged (albeit not-yet-polished)</popover> version of those features.
 * **Plan the iteration**: Decide the order/timeline for those features, record that plan using issues, and assign team members to those issues. Plan tasks based on priority, while staying breadth-first.
 </div>
 {#====================================================================================================================#}

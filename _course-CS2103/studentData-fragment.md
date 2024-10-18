@@ -978,7 +978,7 @@
  'CS2103T-T09-1': 'This product is for university students majoring in Computer Science, specifically those seeking summer internships. They are typically busy with assignments while applying for summer internships. As a result, they may lose track of key information about companies they have applied for in a constantly increasing list of applications made.',
  'CS2103T-T09-2': 'Our primary target users are Recruiters and HR professionals who are responsible for managing job candidates and employee information.  These users typically work in fast-paced environments where efficient management of candidate and employee data is crucial for streamlining the recruitment process and ensuring organisational growth.',
  'CS2103T-T09-3': "This product is for receptionists at a private clinic who prefer CLI over GUI and have to deal with numerous patients' records and staff particulars while being visually organised.",
- 'CS2103T-T09-4': 'Private tutors or tutors who are employed at a small tuition centre, who may have students studying at different levels.',
+ 'CS2103T-T09-4': 'Private tutors, who may have students studying at different levels.',
  'CS2103T-T10-1': 'Administrative staff at a GP clinic responsible for patient management. They should be apt with technology and trained to be familiar with the software as their primary job.',
  'CS2103T-T10-2': 'This product is for Human Resources (HR) Managers that have a lot of potential candidates with a set of skills looking for a spot in their company.',
  'CS2103T-T10-3': 'Nus CS TAs who are adept and prefer CLI over GUI, and have to keep track of their tutorial students’ contact and progress.',
