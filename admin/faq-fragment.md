@@ -316,6 +316,15 @@ Yes. If the submission deadline is not over yet, use the same link to update the
 **However, everyone is expected to contribute to the DG**, which means you should divide the DG-update work among team members.
 </div>
 <!-- =============================================================== -->
+<div id="faq-noEffectOnUml-Q">What if the features I added doesn't affect UML diagrams?</div>
+<div id="faq-noEffectOnUml-A">
+
+* We expect all students to have _some_ experience working with DG UML diagrams, to verify that you are able to handle similar diagramming tools in the future.
+* If your code changes doesn't require changes to existing UML diagrams,
+  * you can document a 'proposed' feature or a design change that you might do in a future iteration, which gives you an opportunity to add some UML diagrams.
+  * Also take a closer look at the features you added -- not needing changes to UML might (but not always) be a sign that the features you added didn't go deep enough. In the context of the tP, it is better to add one big feature, rather than add many small insignificant features.
+</div>
+<!-- =============================================================== -->
 <div id="faq-githubWhoCreatesIssues-Q">Who should create issues?</div>
 <div id="faq-githubWhoCreatesIssues-A">
 
@@ -668,7 +677,7 @@ Feel free to reuse/refer AB4 code too. If you manage to make some headway in thi
 
 First, check which OS it is failing in. Some behaviors can be OS-dependent. For example, file paths are case-insensitive in Windows but not in Unix/Mac.
 
-Second, note that PR CI merges does a temporary merge of `master` branch to the PR branch before running tests, to verify if the checks will pass _after_ you merge this PR. So, if the master branch has progressed after you started your PR branch, those new commits can affect the CI result. The remedy is to pull the master branch to your repo, merge it to your PR branch, and run tests again (which should fail as well, but you can now find the reason for the failure and fix it).
+Second, note that PR CI does a temporary merge of `master` branch to the PR branch before running tests, to verify if the checks will pass _after_ you merge this PR. So, if the `master` branch has progressed after you started your PR branch, those new commits can affect the CI result. The remedy is to pull the `master` branch to your repo, merge it to your PR branch, and run tests again (which should fail as well, but you can now find the reason for the failure and fix it).
 </div>
 
 <div id="faq-tpPrPassCiButFailedAfterMerging-Q">PR passed CI before merging, but fails CI after merging. How come?</div>

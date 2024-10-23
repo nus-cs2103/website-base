@@ -37,10 +37,10 @@ week9: [
   {id: 'deliver_first_version', deadline: get_date(date_w9_start, 3, time="23:59")}
 ],
 week10: [
-  {id: 'do_a_postmortem'},
+  {id: 'do_a_postmortem', deadline: 'before the tutorial'},
   {id: 'plan_the_alpha_version'},
   {id: 'deliver_the_alpha_version', deadline: get_date(date_w10_start, 3, time="23:59")},
-  {id: 'smoke_test_catcher', deadline: 'COMPULSORY', graded: true},
+  {id: 'smoke_test_catcher', deadline: '[COMPULSORY] ' + get_date(date_w10_start, 4, time="16:00"), graded: true},
   {id: 'start_updating_uml_diagrams'}
 ],
 week11: [

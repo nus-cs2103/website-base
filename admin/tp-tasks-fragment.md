@@ -1583,7 +1583,25 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 <span id="heading_plan_the_alpha_version">{{ icon_team }} Plan the alpha version (`{{ version_alpha }}`)</span>
 <div id="desc_plan_the_alpha_version">
 
-* **Decide the scope:** Start by deciding what features you would include in the final product !!if you had only one more week to deliver!! them. In this iteration, aim to deliver at least a <popover content="i.e., the feature is working and accessible to users, although it might not handle all the corner cases, and the UI/UX might not be fully polished yet">fully-fledged (albeit not-yet-polished)</popover> version of those features.
+<box type="secondary" icon=":fas-quote-left:" seamless>
+
+%%The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.%%
+
+%%<small>--Tom Cargill, Bell Labs</small>%%
+</box>
+
+* **Decide the scope:** Start by deciding what features you would include in the final product !!if you had only one more week to deliver!! them. In this iteration, aim to deliver at least a <popover content="i.e., the feature is working and accessible to users, although it might not handle all the corner cases, and the UI/UX might not be fully polished yet">fully-fledged (albeit not-yet-polished)</popover> version of those features.<br>
+  **:thinking: What's the hurry to add _all_ features right now?** We will be enforcing a strict _feature freeze_ at the end of `{{ version_penultimate }}` (more details in the panel below). Given you also need time to polish the features before the feature freeze starts (during which feature tweaks are not allowed), it makes sense to finish the bulk of the feature implementation in this iteration (`{{ version_alpha }}`), so that you have time to test and polish it in `{{ version_penultimate }}`.
+
+<div class="indented-level1">
+
+<panel header="Admin {{ icon_embedding }} tP → **{{ version_final }} (extract) → More details on the feature freeze**" minimized>
+
+<include src="tp-tasks-fragment.md#feature-freeze-details" />
+</panel>
+<p/>
+</div>
+
 * **Plan the iteration**: Decide the order/timeline for those features, record that plan using issues, and assign team members to those issues. Plan tasks based on priority, while staying breadth-first.
 </div>
 {#====================================================================================================================#}
@@ -1602,6 +1620,17 @@ Resist the temptation to try to deliver each of those features/enhancements in o
 1. **Maintain the defensiveness of the code:**{.text-success} Use assertions, exceptions, and logging in your code, as well as other defensive programming measures (refer this week's topic on _defensive programming_ for more details) when appropriate. This will be considered when grading your tP code quality.<br>
    Remember to [enable assertions in your IDEA run configurations](https://se-education.org/guides/tutorials/intellijUsefulSettings.html) and [in the gradle file](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).
 </box>
+
+{{ show_faq("dgAddNewUml", is_compact=1) }}
+{{ show_faq("noEffectOnUml", is_compact=0) }}
+
+%%Some other relevant FAQs, repeated from last week:%%
+
+{{ show_faq("tpGuiTestAutomation", is_compact=1) }}
+{{ show_faq("tpWorksLocallyFailsCi", is_compact=1) }}
+{{ show_faq("tpPrPassCiButFailedAfterMerging") }}
+{{ show_faq("tpCodecovFails", is_compact=1) }}
+{{ show_faq("tpChangeFeatureSpec", is_compact=1) }}
 
 </div>
 {#====================================================================================================================#}

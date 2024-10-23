@@ -959,7 +959,7 @@
  'CS2103T-F13-2': 'Real estate agents with many clients to manage and require frequent updating and tracking of client information.',
  'CS2103T-F13-3': 'This product is targeted at wedding planners who have many contacts of vendors and clients to keep track of when planning the different weddings.',
  'CS2103T-F13-4': 'Freelance consultants who prefer CLI over GUI and who are managing a large number of clients across various different (and possibly cross-related) industries.',
- 'CS2103T-F14a-1': 'University undergraduates giving private tuition to many students',
+ 'CS2103T-F14a-1': 'Our CLI-based address book empowers undergraduate private tutors to efficiently manage payments and organize schedules. It streamlines tutoring operations and ensures you stay organized. It is optimized for users who prefer CLI.',
  'CS2103T-F14a-2': 'Independent sellers/dropshipping business owners selling on platforms like Carousell, who lack a central platform for dropshipping and delivery order management.',
  'CS2103T-F14a-3': 'Freelance software developers',
  'CS2103T-F14a-4': 'university students and staffs',
