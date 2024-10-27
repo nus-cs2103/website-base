@@ -7,13 +7,6 @@
 **No tutorial this week.** Suggestion: use this time to work on the project with team members.
 </box>
 
-<box type="warning" seamless>
-
-**Remember to post your PE-D bug triaging progress**, as mentioned in the [Project page](project.md).
-</box>
-
-
-
 <!--
 #### {{ thumb(1) }} Demo rehearsal
 

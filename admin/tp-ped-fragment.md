@@ -2,9 +2,9 @@
 
 #### <span class="badge bg-primary">PE-D</span> <span class="text-primary">Overview</span>
 
-**What**: The latest release of the {{ version_penultimate }} period is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
+**What**: The product version released by the {{ version_penultimate }} iteration is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
-**When, where**: uses a 40-minutes slot at the start of week {{ ped_week }} ({{ get_date(date_w11_start if ped_week=='11' else date_w12_start, 4, time=time_lecture_start) }}) lecture slot.
+**When, where**: uses a 60-minutes slot at the start of week {{ (ped_week | int) - 1 }} &rarr; {{ ped_week }} transition point (i.e., {{ get_date(date_w11_start if ped_week=='11' else date_w12_start, 4, time=time_lecture_start) }}) lecture slot.
 {% if cs2103 %}It will be conducted via Zoom. If you can't find another suitable location to join the Zoom meeting, you may do so from the lecture venue.{% endif%}
 
 <modal large header="Admin {{ icon_embedding }} tP → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
@@ -102,17 +102,22 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 </tabs>
 <p/>
 
-* Put the JAR file ==in an empty folder== in which the app is allowed to create files %%(i.e., do not use a write-protected folder)%%.<br>
+<box type="important" id="tp-jar-testing-steps" seamless>
+
+****Steps for testing a tP JAR file**** (please follow closely)
+
+1. Put the JAR file ==in an empty folder== in which the app is allowed to create files %%(i.e., do not use a write-protected folder)%%.<br>
   In rare cases, the team could have submitted a ZIP file instead of a JAR file. In that case, unzip that file into the target folder.
-* Open a command window. Run the `java -version` command to ensure you are using Java 17.<br>
+1. Open a command window. Run the `java -version` command to ensure you are using Java 17.<br>
   {{ icon_important_big_red }} Do this again even if you did this before, as your OS might have auto-updated the default Java version to a newer version.
-* Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
+1. Check the UG to see if there are extra things you need to do before launching the JAR file %%e.g., download another file from somewhere%%<br>
   {{ icon_info }} You may visit the team's _releases_ page on GitHub if they have provided some extra files you need to download.
-* Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
+1. Launch the jar file ==using the `java -jar` command== rather than double-clicking %%(reason: to ensure the jar file is using the same java version that you verified above)%%. Use double-clicking as a last resort.<br>
   {{ icon_info }} We strongly recommend surrounding the jar filename with double quotes, in case special characters in the filename causes the `java -jar` command to break.<br>
   e.g., `java -jar "[{{ course }}-F18-1][Task Pro].jar"`<br>
   :fab-windows: Windows users: use the DOS prompt or the PowerShell (not the WSL terminal) to run the JAR file.{% if cs2103 %}<br>
   :fab-linux: Linux users: If the JAR fails with an error labelled `Gdk-CRITICAL` (happens in Wayland display servers), try running it using `GDK_BACKEND=x11 java -jar jar_file_name.jar` command instead.{% endif %}
+</box>
 
 <box type="info">
 

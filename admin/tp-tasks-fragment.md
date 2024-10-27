@@ -498,7 +498,7 @@ At the same time, the UG and the DG needs to be updated, as given in task {{ thu
 
 {{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 75, 80) }}
 
-We are still in iteration `{{ version_penultimate }}`, due to this iteration stretched over two weeks.
+We are still in iteration `{{ version_penultimate }}`, due to this iteration being stretched over two weeks.
 
 {% endcall %}
 {#====================================================================================================================#}
@@ -1532,6 +1532,8 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 </box>
 
 * {{ icon_individual }} **Each member is recommended to update at least one UML diagram in the DG**, to match the changes you've done so far in `{{ version_alpha }}`. You may do this towards the end of `{{ version_alpha }}`, or soon after you finish it.
+* **Deadline**: This is not part of `{{ version_alpha }}`. So, you can do this even *after* you are done with the `{{ version_alpha }}` release that is due Thursday 23:59.<br>
+  As this is a regular weekly task, the usual deadline applies i.e., Friday {{ time_lecture_start }}, and as usual, if you miss the deadline, catching up within a few days will still turn it green.
 * Updating the DG text to match the diagrams is optional (it can be done later).
 * FYI, the panel below has some DG tips, some of which are related to drawing diagrams.
 
@@ -1611,7 +1613,7 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 * **Follow the iteration plan** you devised above,  to deliver the features.<br>
 Resist the temptation to try to deliver each of those features/enhancements in one PR. It is better to deliver a minimal version first, and improve it through subsequent PRs.
 * **Manage the iteration** better than then previous iteration (hopefully), as per what you learned/decided during the `{{ version_mvp }}` postmortem.
-* **Release `{{ version_alpha }}`.** Include a jar file and detailed release notes.
+* **Release `{{ version_alpha }}`.** Include a jar file and detailed release notes (as before, the release notes should describe _what's-new-since-the-last-release-note_).
 <box>
 
 ##### {{ icon_tip }} Ways to level up your tP game:{.text-success}
@@ -1741,7 +1743,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
 1. **Let CATcher create a repo named `catcher-smoke-test`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
-1. **Use the app (not the GitHub Web interface) to create 1-2 <tooltip content="i.e., bug reports containing some random content">dummy bug reports</tooltip>**. The steps are similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
+1. **Use CATcher (not the GitHub Web/Mobile interface) to create 1-2 <tooltip content="i.e., bug reports containing some random content">dummy bug reports</tooltip>**. The steps are similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
    {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
    {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
    {{ icon_info }} The `severity` and `type` labels are compulsory.
@@ -1782,20 +1784,6 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 {{ embed_topic("tp-deliverables.md#tp-deliverables-dg", "Admin " + icon_embedding + " tP → Deliverables → **Developer Guide**", "3", indent="1") }}
 {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}
 
-<div class="indented-level1">
-
-<panel type="success" peek >
-<div slot="header" class="card-title">
-
-##### <span class="text-white"> {{ icon_tip }} Admin {{ icon_embedding }} tP Deliverables → DG → Tips</span>
-</div>
-<div id="dgTips">
-
-<include src="tp-deliverables-dg-fragment.md#dgTips" />
-</div>
-</panel>
-<p/>
-</div>
 
 <div tags="m--cs2103">
 
@@ -1812,27 +1800,39 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 <span id="heading_alpha_test_product">{{ icon_team }} Alpha-test the product</span>
 <div id="desc_alpha_test_product">
 
--- [More details to be added] --
+1. **Create a label `alpha-bug`** in your issue tracker.
+1. **Plan the alpha test**:
+   * Decide who will be testing which feature. Suggested: Assign two members (exclude the feature author) to test each feature.
+   * Set a deadline (suggested: should be earlier in the iteration, as you need time to fix the reported bugs).
+1. **Start testing** as soon as the `{{ version_alpha }}` jar file is ready.<br>
+   ==Test using the JAR file==.<br>
+   Use the same steps we use in the PE, reproduced in the panel below.
 
-* Test based on the JAR file
-* Cross-test, and report bugs
-* Create a label `alpha-bug` and apply it to the bug report, for tracking
+{{ embed_topic("tp-ped-fragment.md#tp-jar-testing-steps", "Admin " + icon_embedding + " Practical Exam (Extract) → **Steps for testing a tP JAR file**", "1", indent="1", status="expanded") }}
 
-If you want to smoke-test your JAR file on an OS that is not available within your team, you can post a request in the forum to see if anyone else in the class can help you smoke-test it on that OS.
+4. **Report bugs** you found, and ==even suggestions for improvements==.
+   * If in doubt, report anyway.
+   * ==Apply the `alpha-bug` label== to the bug report, as our grading scripts will look for it when assessing your contribution level for this task.
 
-The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place.
+<box type="tip" seamless>
+
+If you want to smoke-test your JAR file on an OS not available within your team, you can post a request in the forum to see if anyone else in the class can help you smoke-test it on that OS.
+</box>
+
+<box type="tip" seamless>
+
+The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place. You may skip the 'General' section.
 {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
+</box>
 
 </div>
 {#====================================================================================================================#}
 <span id="heading_fix_alpha_test_bugs">{{ icon_individual }} Fix alpha-test bugs, fine-tune features</span>
 <div id="desc_fix_alpha_test_bugs">
 
--- [More details to be added] --
-
-* Fix bugs found in alpha test
-* Fine-tune features, if needed.
-  * Here is another reminder about what you can and can't do during {{ version_final }} _feature freeze_.
+* **Fix bugs found** during alpha testing.
+* **Fine-tune features**, if needed. <br>
+  Here is another reminder about what you can and can't do during {{ version_final }} _feature freeze_.
 
 <div class="indented-level1">
 
@@ -1844,6 +1844,8 @@ The panel below contains guidelines your peers will use when determining bugs in
 </div>
 
 <include src="tp-tasks-fragment.md#level-up-coverage" />
+
+{{ show_faq("tpMustWeFixAllBugs") }}
 
 </div>
 {#====================================================================================================================#}
@@ -1895,14 +1897,17 @@ The panel below contains guidelines your peers will use when determining bugs in
 <span id="heading_release_as_a_jar_file">{{ icon_team }} Release {{ version_penultimate }}</span>
 <div id="desc_release_as_a_jar_file">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. Do some manual tests to ensure the jar file works. Include the following files in the release (as separate assets):
-  * JAR file
-  * UG (PDF file) -- uploaded as an 'asset' (similar to the JAR file), not embedded in the release note.
-  * DG (PDF file) -- similar to DG
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). Do the release by the given deadline. <br>
+  ==Do a smoke-test to ensure the jar file works== (if the released jar file is broken, it will be omitted from the PE-D).<br>
+  * Include the following files in the release (as separate assets):
+    1. **JAR** file
+    1. **UG** (PDF file) -- uploaded as an 'asset' (similar to the JAR file), not embedded in the release note.
+    1. **DG** (PDF file) -- similar to the UG
+  * You may choose any suitable filename, but recommended not to have spaces or special characters in the JAR file name.
   * It is optional to write detailed release notes for this version.
-* **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. That additional release is still considered part of {{ version_penultimate }} and therefore, can contain new features. When doing this additional release, do not delete the previous release %%(reason: it is good to preserver the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
+* **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. {% if cs2103 %}That additional release is still considered part of {{ version_penultimate }} and therefore, not subjected to the feature freeze.{% endif %} When doing this additional release, do not delete the previous release %%(reason: it is good to preserver the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
   Waiting till Friday 10am to release the `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.{% if cs2103 %}
-* **The <trigger trigger="click" for="modal:v13-jar-desc">_feature freeze_</trigger> will apply at the point you released the JAR file that was used in the PE-D** i.e., the features submitted in the final `{{ version_final }}` two weeks later should be the same as the features tested during PE-D, which is the rationale for the feature freeze anyway.{% endif %}
+* **The <trigger trigger="click" for="modal:v13-jar-desc">_feature freeze_</trigger> will apply at the point you released the JAR file that was used in the PE-D** i.e., the features submitted in the final `{{ version_final }}` later should be the same as the features tested during PE-D, which is the rationale for the feature freeze anyway.{% endif %}
 * As before, wrap up the milestone %%(i.e., reschedule/close any remaining issues/PRs and close the milestone).%%
 
 <modal large header="" id="modal:v13-jar-desc">

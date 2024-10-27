@@ -35,7 +35,7 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 </panel><p/>
 </div>
 
-* **Have a good screen grab tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.<br>
+* **Have a good screen grab tool** with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in using CATcher.<br>
   {{ icon_tip }} You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in a bug report.
 
 * **[Optional] Have a good screen recording tool** if you plan to use screen recording clips as part of your bug reports. Ensure that your screen recording tool can create small files as CATcher doesn't allow files bigger than 10Mb.<br>

@@ -316,11 +316,11 @@ Yes. If the submission deadline is not over yet, use the same link to update the
 **However, everyone is expected to contribute to the DG**, which means you should divide the DG-update work among team members.
 </div>
 <!-- =============================================================== -->
-<div id="faq-noEffectOnUml-Q">What if the features I added doesn't affect UML diagrams?</div>
+<div id="faq-noEffectOnUml-Q">What if the features I added don't affect UML diagrams?</div>
 <div id="faq-noEffectOnUml-A">
 
 * We expect all students to have _some_ experience working with DG UML diagrams, to verify that you are able to handle similar diagramming tools in the future.
-* If your code changes doesn't require changes to existing UML diagrams,
+* If your code changes don't require updates to existing UML diagrams or adding new diagrams,
   * you can document a 'proposed' feature or a design change that you might do in a future iteration, which gives you an opportunity to add some UML diagrams.
   * Also take a closer look at the features you added -- not needing changes to UML might (but not always) be a sign that the features you added didn't go deep enough. In the context of the tP, it is better to add one big feature, rather than add many small insignificant features.
 </div>
@@ -604,6 +604,26 @@ Here are some reasons:
 * We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
 * It is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
 * It allows receiving early self/peer/instructor feedback.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpMustWeFixAllBugs-Q">Must we fix all bugs reported and all enhancements suggested by testers?</div>
+<div id="faq-tpMustWeFixAllBugs-A">
+
+Not necessarily. Choose based on importance.
+
+In any project, there are always things that can be done 'if there was more time'. If fixing a certain bug has low impact on users, and fixing it is not as important as the work done (or intend to do in the current iteration), you can justify not fixing it with the reason 'not in scope' of the current iteration.
+
+Similarly, a missing feature enhancement can be justified as 'not in scope' if implementing that could have taken resources away from other important project tasks.
+
+Bugs and possible enhancements 'not in scope' will not be penalized.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpCountingSimilarPlannedEnhancements-Q">When listing 'Planned Enhancements' in the DG, if enhancement X and Y are very similar, can we count them as one?</div>
+<div id="faq-tpCountingSimilarPlannedEnhancements-A">
+
+Only if adding one automatically adds the other. If one can be added without the other, they are counted as two enhancements.
 </div>
 <!-- =============================================================== -->
 

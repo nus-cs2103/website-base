@@ -4,7 +4,7 @@
 
 * The main content you add should be in the `docs/DeveloperGuide.md` file (for ease of tracking by grading scripts).<br>
   If you use PlantUML diagrams, commit the diagrams as `.puml` files in the `docs/diagrams` folder.
-* **Should match the {{ version_final }} implementation**.
+* **Should match the latest release of the product**.
 
 <div tags="m--cs2113">
 
@@ -53,8 +53,9 @@
     > 2. ...
   * Each enhancement should be a tweak to an existing feature, and should not be a new feature altogether.
   * `type.FeatureFlaw` bug reports matching an item in this section ==will not be penalized== for the team, and testers will not earn credit for reporting them either. However, testers can report `type.FeatureFlaw` bugs on the enhancements listed in this section, if they think the planned feature tweak itself is flawed/inadequate.
-  * FAQ: Enhancement X and Y are very similar. Can we count them as one?<br>
-    Answer: Only if adding one automatically adds the other. If one can be added without the other, they are counted as two enhancements.
+
+{{ show_faq("tpCountingSimilarPlannedEnhancements") }}
+
 * <span class="text-danger">If the team has exceeded the allowed count in the planned enhancements</span>, only the first N items (where N is `team size x 2`) in that list will have immunity. The rest can be reported as bugs. In addition, exceeding the count can be reported as a separate DG bug.
 </div>
 <div tags="m--cs2103">
@@ -78,6 +79,7 @@
 * **Use multiple UML diagram types.** Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.
 
 {{ show_faq("dgAddNewUml") if cs2103 }}
+{{ show_faq("noEffectOnUml") if cs2103 }}
 
 * **Diagramming tools**:
   * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).

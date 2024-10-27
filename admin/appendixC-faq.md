@@ -62,6 +62,7 @@
 {{ show_expanded_faq("tpMultiStepCmd") }}
 {{ show_expanded_faq("dgDetailsLevel") }}
 {{ show_expanded_faq("dgAddNewUml") if cs2103 }}
+{{ show_expanded_faq("noEffectOnUml") if cs2103 }}
 {{ show_expanded_faq("tpOtherDiagrammingTool") if cs2103 }}
 {{ show_expanded_faq("tpIdeGeneratedDiagrams") }}
 {{ show_expanded_faq("tpHowMuchToGetFullMarks") }}
@@ -74,6 +75,7 @@
 {{ show_expanded_faq("tpUpdateTestsWithCode") if cs2103 }}
 {{ show_expanded_faq("tpCodecovFails") if cs2103 }}
 {{ show_expanded_faq("tpUpdateDocsWithCode") if cs2103 }}
+{{ show_expanded_faq("tpMustWeFixAllBugs") }}
 {{ show_expanded_faq("tpGuiTestAutomation") if cs2103 }}
 {{ show_expanded_faq("tpWhyUpdateDiagramsEarly") }}
 {{ show_expanded_faq("tpFeatureTakeovers") }}

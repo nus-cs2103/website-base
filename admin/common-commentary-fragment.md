@@ -598,6 +598,16 @@ Earlier, you learned <tooltip content="Equivalence Partitioning, Boundary Value 
 Testing is the first thing that comes to mind when you hear 'Quality Assurance' but there are other QA techniques that can complement testing. Let's first take a step back and take a look at QA in general, followed by a look at some other QA techniques.
 </div>
 </div>
+<!-- ---------------------------------------------------------------------------- -->
+<div id="qualityassurance-formalverification-what" >
+
+Previously, you already learned about two 'other' QA methods. This week, we add a third:
+
+- [x] %%Code reviews%%
+- [x] %%Static Analysis%%
+- [ ] **Formal methods**
+
+</div>
 <!-- ==================================================================================================== -->
                                     Project Mgt
 <!-- ==================================================================================================== -->

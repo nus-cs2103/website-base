@@ -19,7 +19,7 @@
 </div>
 <br>
 
-#### {{ thumb(3) }} Exercise: Apply design pattern
+#### {{ thumb(3) }} Exercise: Apply design patterns
 
 * Do the following exercise similar to the previous one.
 

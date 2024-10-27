@@ -873,7 +873,7 @@
  'CS2103T-T13-3': 'PawPatrol',
  'CS2103T-T13-4': 'CareLink',
  'CS2103T-T14-1': 'Prudy',
- 'CS2103T-T14-2': 'UniNet',
+ 'CS2103T-T14-2': 'AdmiNUS',
  'CS2103T-T14-3': 'MATER',
  'CS2103T-T14-4': 'AgentAssist',
  'CS2103T-T15-1': 'TrueRental',
