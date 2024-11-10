@@ -300,7 +300,14 @@ The size of the target market is not a grading criterion. You can make it as nar
 <div id="faq-dgDetailsLevel-Q">How detailed the DG should be? Do we have to describe every feature/component?</div>
 <div id="faq-dgDetailsLevel-A">
 
-The DG is primarily meant to help current/future developers. Therefore, decide based on how the inclusion/exclusion affects that target audience (you belong to the target audience too!).
+The DG is primarily meant to help current/future developers. In general, the DG is expected to provide minimal yet sufficient guidance  for developers, serving them in the following ways:
+
+* It act as a starting point for developers, before they can dive into the code itself %%e.g., by providing an architecture-level overview of the system%%
+* It provides a roadmap to developers %%e.g., pointing out where important information can be found in the code%%
+* It complements the code, providing info/perspectives not specified in the code %%(e.g., rationale for high-level design choices, details of dev ops)%%<br>
+  or not easy to grasp from the code %%(e.g., architecture level view, visual models)%%.
+
+Therefore, decide based on how the inclusion/exclusion affects that target audience (you belong to the target audience too!) in achieving the above objectives.
 </div>
 =============================================================== -->
 <div id="faq-tpChangeDirectionLater-Q">Can we change the target user and value proposition later in the project?</div>
@@ -404,6 +411,12 @@ There is no such guarantee, for two reasons:
 
 1. Your implementation effort is graded based on how much functionality your team produced (based on peer-testers' and tutors' estimates) and how much of that work was contributed by you (based on team members' estimates). For example, simply copy-pasting 400+ LoC with only minor modifications is unlikely to meet this bar as it is less than an effort _equivalent_ to writing a typical 300-400 LoC (or half of a typical iP effort).
 1. Implementation marks are based on both effort and quality, the latter being the primary driver (more info <trigger trigger="click" for="modal:tPexpectations-implementationGrading">here</trigger>). So, meeting the effort bar doesn't guarantee full marks for implementation.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tpIsLocGraded-Q">Is LoC graded in the tP?</div>
+<div id="faq-tpIsLocGraded-A">
+
+LoC is not graded. But if there is a significant mismatch between the LoC numbers and the 'effort' rating a student received, we take a closer look at the case to find out the reason for the mismatch, and revise marks if necessary.
 </div>
 <!-- =============================================================== -->
 <div id="faq-tpIterationDeadline-Q">What's the deadline for tP iterations?</div>
@@ -620,6 +633,16 @@ Bugs and possible enhancements 'not in scope' will not be penalized.
 </div>
 <!-- =============================================================== -->
 
+<div id="faq-tpDgKeepingProposedFeatures-Q">Can we remove 'proposed features' sections in the DG?</div>
+<div id="faq-tpDgKeepingProposedFeatures-A">
+
+Yes, you may remove them, but you are welcome to keep them too (they can be useful if a team member is unable to find any other UML diagram to update).
+
+If you keep them in the DG, update them to match the current version of the product. Otherwise, outdated content can be reported as DG bugs.
+
+</div>
+<!-- =============================================================== -->
+
 <div id="faq-tpCountingSimilarPlannedEnhancements-Q">When listing 'Planned Enhancements' in the DG, if enhancement X and Y are very similar, can we count them as one?</div>
 <div id="faq-tpCountingSimilarPlannedEnhancements-A">
 
@@ -704,6 +727,89 @@ Second, note that PR CI does a temporary merge of `master` branch to the PR bran
 <div id="faq-tpPrPassCiButFailedAfterMerging-A">
 
 It is possible that the `master` branch has received new commits after your PR passed CI the last time. So, if GitHub indicates that your PR is not up-to-date with the latest `master` branch, synchronize your PR branch with the `master` branch (which will run the CI again) before merging it.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpRenameAbReferences-Q">Do we need to change all class/package names that refer to AB3?</div>
+<div id="faq-tpRenameAbReferences-A">
+
+Given your product is supposed to be an address book variant, it is fine to keep using 'AddressBook' in class/package names.<br>
+But remember to change any user-visible mention of AddressBook at places where the user _expects_ to see the name of your product, and will be confused by seeing a different name instead.
+
+Caution: Mass renaming can disrupt authorship tracking. So, it is best to do any mass renaming at earlier stages of the tP (but you are still _allowed_ to rename them even at later stages).
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpPeEndTime-Q">What time does the PE end?</div>
+<div id="faq-tpPeEndTime-A">
+
+If you need to, you should be able to leave the PE after 5.45pm, as the part III of the PE (i.e., the last task to be done during the PE slot) can be done later (but you should before the midnight of the same day).
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpTestingLessBuggyProducts-Q">Some students will be testing less/more buggy products than others? Isn't that unfair?</div>
+<div id="faq-tpTestingLessBuggyProducts-A">
+
+As each product is tested by 4-5 testers, after all PE bugs have been finalized, we know how 'buggy' each product is. We then use that information for calculating your PE-related marks. So, the marks are calibrated to match the bugginess of the product you tested.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpNoBugsInTestedProduct-Q">What if the product I tested has hardly any bugs?</div>
+<div id="faq-tpNoBugsInTestedProduct-A">
+
+If the total bugs found (by _all_ testers) in a product is below a certain level, we compensate those testers by increasing the weightage given to PE-D performance, and their dev-testing results.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpNeedToFindAllBugs-Q">What if the product I tested is very buggy? Am I expected to find all those bugs?</div>
+<div id="faq-tpNeedToFindAllBugs-A">
+
+No. Given the PE has only a short time, we don't expect you to find _all_ bugs in the product. To get full marks, you only need to report a certain percentage of the bugs (e.g., half), or a certain quantity of bugs (the quantity also factors in the nature of the bug e.g., severity), whichever is lower.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpJustifyBugsAcceptedAsIs-Q">Do we need to justify even if we accept the bug _as is_?</div>
+<div id="faq-tpJustifyBugsAcceptedAsIs-A">
+
+No need to provide a justification if you accept the bug without _any_ changes to it.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpMoreCodeMeansHigherPenalty-Q">So, those who write more code will be hit with more bugs? How's that fair?</div>
+<div id="faq-tpMoreCodeMeansHigherPenalty-A">
+
+Penalty for bugs is applied based on bug _density_, not bug count. Here's an example:
+
+* `n` bugs found in Ann's feature; it is a big feature consisting of a lot of code → 4/5 marks
+* `n` bugs found in Jim's feature; it is a small feature with a small amount of code → 1/5 marks
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpRealBugWrongLabel-Q">What if the bug is real but the tester used the wrong label (e.g., used the wrong `type.*`). Can we reject that bug?</div>
+<div id="faq-tpRealBugWrongLabel-A">
+
+A bug is a bug irrespective of the label used. Instead of rejecting, rectify the label.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpCorrectBugIncorrectSuggestion-Q">What if the bug the tester reported is legit but the expected behavior tester suggested is not correct?</div>
+<div id="faq-tpCorrectBugIncorrectSuggestion-A">
+
+You should accept the bug but state that you disagree with the expected/suggested behavior. Reason: the main job of the tester is to detect bugs; suggesting a solution is optional.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpBugRejectedWithReason-Q">What if the team rejected my bug report without giving a reason?</div>
+<div id="faq-tpBugRejectedWithReason-A">
+
+You can disagree with the rejection, and the teaching team will likely rule in your favor in the next phase.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpTesterAddingMoreInfoLater-Q">Can I (i.e., the tester) add more information about the bug when I object to a dev team's response?</div>
+<div id="faq-tpTesterAddingMoreInfoLater-A">
+
+Yes, you may. Given that the dev team did not get to see this addition info when they triaged the bug, the weight such additional info add to your case is lower than if you had that info in the initial bug report. Nevertheless, it can still help your cause, especially if the dev team should have thought about that info on their own, even if they were missing in the initial bug report.
 </div>
 <!-- =============================================================== -->
 

@@ -4,7 +4,7 @@
 
 **What**: The product version released by the {{ version_penultimate }} iteration is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
-**When, where**: uses a 60-minutes slot at the start of week {{ (ped_week | int) - 1 }} &rarr; {{ ped_week }} transition point (i.e., {{ get_date(date_w11_start if ped_week=='11' else date_w12_start, 4, time=time_lecture_start) }}) lecture slot.
+**When, where**: uses a 60-minutes slot at the start of week {{ (ped_week | int) }} &rarr; {{ (ped_week | int) + 1 }} transition point (i.e., {{ get_date(date_w11_start if ped_week=='11' else date_w12_start, 4, time=time_lecture_start) }}) lecture slot.
 {% if cs2103 %}It will be conducted via Zoom. If you can't find another suitable location to join the Zoom meeting, you may do so from the lecture venue.{% endif%}
 
 <modal large header="Admin {{ icon_embedding }} tP → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
@@ -56,7 +56,7 @@ For reference, here are what we consider as qualities of a good bug report:
 **The median number of bugs reported in the previous semester's PE-D was 9.** Someone reporting just a 2-3 bugs is usually a sign of a half-hearted attempt rather than lack of bugs to find. If you really can't find bugs, at least submit suggestions for improvements.
 
 {% elseif cs2103 %}
-Evaluation rubric:
+#r#**Evaluation rubric:**##
 
 * Meets expectations (i.e., good enough to earn **participation points**): 3-5 good bug reports
 * Exceeds expectations (i.e., good enough for **1 mark**): more than 6-8 good bug reports
@@ -129,7 +129,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 (a) **a screenshot** of the error message, and<br>
 (b) **your GitHub** username.
 1. **Wait for him to give you a fallback** team to test.<br>
-   Contact the prof (via MS Teams) if you didn't get a response from Kim within 5 minutes.
+   Contact the prof (via MS Teams) if you didn't get a response from him within 5 minutes.
 1. **Delete bug reports you submitted for the previous team** (if any), using CATcher.
 1. **You should not go back to testing the previous team** _after_ you've been given a fallback team to test.
 {% endif %}
@@ -138,15 +138,6 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
 
-<tabs active="{{ pe_active_tab }}">
-<tab header="PE Dry Run (at **{{ version_penultimate }}**)">
-
-* Test the product ==based on the User Guide (PDF version)== available from their releases page on GitHub.
-* Do ==_system_ testing first== %%i.e., does the product work as specified by the documentation?%%. If there is time left, you can ==do _acceptance_ testing as well== %%i.e., does the product solve the problem it claims to solve?%%.
-
-</tab>
-<tab header="PE (at **{{ version_final }}**)">
-
 * **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide== PDF files.** The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.<br>
  **If the provided UG/DG PDF files have serious issues** (e.g., some parts seem to be missing), ask prof for permission to use the Web versions of UG/DG instead.{% if cs2103 %}
 * **The DG appendix named _Planned Enhancements_** (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
@@ -154,25 +145,25 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
   You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.
 {% endif %}
 * **You may do both _system testing_ and _acceptance testing_**.
+* **Focus on product testing first**, before expanding the focus to reporting documentation bugs.<br>
+  Reason: If there are serious issues with the jar file that makes product testing impossible, you need to find that out quickly (within the first 10 minutes) so that you can switch to a different product to test. If you find yourself in such a situation much later, you will not be able to get the full allotted time for testing.
 * {{ icon_tip }} **Be careful when copying commands from the UG** (PDF version) to the app as some PDF viewers can affect the pasted text. If that happens, you might want to open the UG in a different PDF viewer.<br>
   If the command you copied spans multiple lines, check to ensure the line break did not mess up the copied command.
 
-</tab>
-</tabs>
-<p/>
 
 ###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
 
-<tabs active="{{ pe_active_tab }}">
-<tab header="PE Dry Run (at **{{ version_penultimate }}**)">
-
-* You may report functionality bugs, UG bugs, and feature flaws.
+* You may **report #g#++functionality bugs++, ++feature flaws++, ++UG bugs++, and ++DG bugs++##.**
 <div class="indented-level1">
 
-{{ embed_topic("tp-grading-bugs-fragment.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3") }}
-{{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3") }}
-{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3") }}
+{{ embed_topic("tp-grading-bugs-fragment.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**") }}<br>
+{{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**") }}<br>
+{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**") }}<br>
+{{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**") }}<br>
 </div><p/>
+
+<tabs active="{{ pe_active_tab }}">
+<tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
 * You can also post suggestions on how to improve the product.<br>
   {{ icon_tip }} Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.
@@ -180,17 +171,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 </tab>
 <tab header="PE (at **{{ version_final }}**)">
 
-* Report functionality bugs:
-
-{{ embed_topic("tp-grading-bugs-fragment.md#functionalityBugs", "Admin " + icon_embedding + " tP Grading → **Functionality Bugs**", "3", indent="1") }}
-
-
 * Do not post suggestions but if the product is missing a critical functionality that makes the product less useful to the intended user, it can be reported as a bug of type `Type.FeatureFlaw`. The dev team is allowed to reject bug reports framed as mere suggestions or/and lacking in a convincing justification as to why the omission or the current design of that functionality is problematic.
-{{ embed_topic("tp-grading-bugs-fragment.md#featureFlaws", "Admin " + icon_embedding + " tP Grading → **Feature Flaws**", "3", indent="1") }}
-
-* You may also report documentation bugs (UG bugs in particular) but keep in mind that there is another time (i.e., part II) set aside for reporting documentation bugs too.
-{{ embed_topic("tp-grading-bugs-fragment.md#ugBugs", "Admin " + icon_embedding + " tP Grading → **Possible UG Bugs**", "3", indent="1") }}
-
 
 </tab>
 </tabs>

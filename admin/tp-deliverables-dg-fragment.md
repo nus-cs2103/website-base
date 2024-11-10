@@ -65,6 +65,9 @@
   * You are welcome to (but not required to) update them. If you do, the work can be counted as a tP contribution.
   * The normal course of action is to just leave them be. It's fine if they are outdated and doesn't match with your current product anymore.
   * But best not to delete them altogether, as that can result in broken links in your DG page.
+
+{{ show_faq("tpDgKeepingProposedFeatures") }}
+
  * **The _Appendix: Requirements_ section** should be updated as follows:
    * Requirements implemented in the current version: make sure requirements match the way they are actually been implemented (e.g., use case steps).
    * Requirements yet to be implemented: keep these as well, as this is an ongoing project and these are meant to be implemented in future iterations.
@@ -93,8 +96,10 @@
   * **Omit less important details**. Examples:
     * a class diagram can omit minor utility classes, private/unimportant members; some less-important associations can be shown as attributes instead.
     * a sequence diagram can omit less important interactions, self-calls, method parameters, etc.<br>
-      Tip: You can use `...` (e.g., `foo(...)`) to indicate parameters have been omitted.<br>
-      Tip: You can use pseudocode instead of exact method calls e.g., `save data in file` instead of `saveData(content, filename)`.
+      {{ icon_tip }} You can use `...` (e.g., `foo(...)`) to indicate parameters have been omitted.<br>
+      {{ icon_tip }} You can use pseudocode instead of exact method calls e.g., `save data in file` instead of `saveData(content, filename)`.<br>
+      {{ icon_tip }} Omit intricate details that complicated the diagram unnecessarily they add to the diagram e.g., exception handling (`throw`/`catch`), lambdas, calls to anonymous methods, etc.<br>
+      If you feel they are important to the purpose of the diagram (i.e., omitting them can mislead the reader), you can use a UML note to mention that information (as plain text) in the diagram.
   * **Omit repetitive details** e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete `*Command` classes using a placeholder `XYZCommand`).
   * **Limit the scope of a diagram.** Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it.<span tags="m--cs2103"> In particular, avoid showing lower-level details of multiple components in the same diagram unless strictly necessary e.g., note how the <trigger trigger="click" for="modal:ipWeek10-deleteSd">this sequence diagram</trigger> shows only the detailed interactions within the Logic component i.e., does not show detailed interactions within the model component.</span>
   * **Break diagrams into smaller fragments** when possible.

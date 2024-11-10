@@ -22,7 +22,7 @@ While the info below provides you what to do and what not to do in {{ version_fi
 
 * fixing bugs (but not _feature flaws_) -- we use a very restrictive definition of 'bugs' for the feature freeze; to avoid violating the feature freeze unintentionally, be sure to check the FAQs below before you do any fixes/tweaks.{icon="fas-check" i-class="text-success"}
 * improving documentation %%(e.g., update UG, DG, code comments)%%
-* improving code quality
+* code quality improvements %%(e.g., fixing coding standard violations, adding assertions/logging)-- **we advise against major refactorings** though, as it defeats the purpose of the feature freeze (which aims to minimize the risk of introducing bugs)%%
 * improving the testing aspect %%(e.g., add more tests)%%
 * removing features %%(i.e., removing an entire feature or a part of a feature)%%
 
@@ -44,6 +44,7 @@ While the info below provides you what to do and what not to do in {{ version_fi
 </panel>
 
 <panel type="seamless" header="**[Q1]** How to differentiate between **bugs vs enhancements**?" minimal>
+<div id="bug-vs-enhancement">
 
 **A:** A bug in this context is when the actual behavior differs from the _advertised_ behavior (i.e., the behavior stated in the UG) <span class="text-danger">due to an _error_ in the code</span>.<br>
 It will be considered a feature change (i.e., not allowed to do) if,
@@ -52,7 +53,8 @@ It will be considered a feature change (i.e., not allowed to do) if,
 * the current behavior inconveniences the user but there is a way to work around it.
 * the advertised behavior was not actually implemented (or only partially implemented) in the JAR used for the PE-D.
 
-If the current behavior differs from the UG but the current behavior is not strictly incorrect, update the UG to match the current behavior (in the interest of minimizing code changes). However, an exception can be made if the behavior in the UG (but is not working in the app) was already implemented in {{ version_penultimate }} (i.e., there is code that is specifically written for the behavior in concern) but it is not working due to a bug in that specific code. When fixing such a case, clearly describe in the PR description where the existing implementation is (you can point to a commit, a code segment, or a past PR) and why it wasn't working.
+If the current behavior differs from the UG but the current behavior is not strictly incorrect, update the UG to match the current behavior (in the interest of minimizing code changes). However, an exception can be made if the 'correct' behavior is specified in the UG and was already implemented in {{ version_penultimate }} %%(i.e., there is code that is specifically written for the behavior in concern)%% but it is not working due to a bug in that specific code %%(e.g., calling the correct method but using the wrong parameter)%%. When fixing such a case, clearly describe in the PR description where the existing implementation is (you can point to a commit, a code segment, or a past PR) and why it wasn't working.
+</div>
 </panel>
 
 <panel type="seamless" header="**[Q2]** Will we be **penalized for feature flaws not fixed** during the feature freeze?" minimal>
@@ -151,7 +153,7 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 * You can list the same item in both, in which case the presentation/details of it can vary between the two too (as the two documents are meant for two different audiences).
 </panel>
 
-<panel type="seamless" header="**[Q14]** What if the same bug is reported in the PE?" minimal>
+<panel type="seamless" header="**[Q14]** What if the the current behavior X is reported as a bug in the PE? Will it be considered a bug?" minimal>
 
 **A:** In the PE, the tester and the dev team are expected to attempt to reach a decision before the teaching team's opinion is factored in. Therefore, our policy is not to judge potential PE issues in advance, so as not to preempt the PE process.
 </panel>
@@ -173,6 +175,8 @@ e.g., the UI continues to show an item after it was deleted in the most recent c
 <box type="important" seamless>
 
 **This iteration is normally done in {{ "one week" if cs2103 else "two weeks" }}, but is spread over {{ "two" if cs2103 else "three" }} weeks** due to clashes with holidays. So, do the amount of work you would normally do if this was only {{ "one week" if cs2103 else "two weeks" }} long (i.e., no need to do more work because there is an extra week for this iteration).
+
+**The [tP progress dashboard]({{ url_tp_progress_dashboard }}) will stay in Week 11 for an extra week** (i.e., even when we are in Week 12), to reflect that you can use Week 12 to do Week 11 tP tasks %%i.e., pending Week 11 tasks will not turn red until end of week 12%%.
 </box>
 </div>
 
@@ -1813,6 +1817,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 4. **Report bugs** you found, and ==even suggestions for improvements==.
    * If in doubt, report anyway.
    * ==Apply the `alpha-bug` label== to the bug report, as our grading scripts will look for it when assessing your contribution level for this task.
+   * {{ icon_important_big_red }} For this individual tP tasks to be marked as done, you need to submit at least 5 issues labelled `alpha-bug`.
 
 <box type="tip" seamless>
 
@@ -1823,6 +1828,21 @@ If you want to smoke-test your JAR file on an OS not available within your team,
 
 The panel below contains guidelines your peers will use when determining bugs in the final product -- knowing them might be useful in preventing such bugs in your product in the first place. You may skip the 'General' section.
 {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
+</box>
+
+<box type="tip" header="Some testing tips to get you started (not an exhaustive list)..." seamless>
+
+* If your app references date/time of the computer it is running on (e.g., to calculate time elapsed), test if it can work if the computer date/time is configured to be in different formats -- different computers might use different date formats.
+* Test against all typical user mistakes %%e.g., typing two spaces instead of one%%
+* If sorting is involved, verify the sorting behavior follows real world expectations %%e.g., lexicographical vs alphabetical order%%
+* For all inputs, test: valid and invalid inputs, typical and non-typical inputs
+* User-visible messages:
+  * Are they specific enough? %%e.g., does the error message indicate what exactly is the error and how to rectify it?%%
+  * Are they consistent with the UG?
+* Clean up actions:
+  * If a feature is supposed to clear/delete data, ensure all relevant data are deleted.
+  * If there are multiple windows, ensure all windows are closed when the application exits.
+* Does the application <popover content="good: gives an error message; bad: fails silently, crashes, corrupts data">fail gracefully</popover> when pushed beyond its limits?
 </box>
 
 </div>
@@ -1845,7 +1865,8 @@ The panel below contains guidelines your peers will use when determining bugs in
 
 <include src="tp-tasks-fragment.md#level-up-coverage" />
 
-{{ show_faq("tpMustWeFixAllBugs") }}
+{{ show_faq("tpMustWeFixAllBugs", is_compact="1") }}
+{{ show_faq("tpRenameAbReferences") }}
 
 </div>
 {#====================================================================================================================#}
@@ -2040,6 +2061,35 @@ Test the product yourself (test each others' features) using the JAR file, repor
 <span id="heading_start_fixing_PED_bugs">{{ icon_team }} Fix PE-D bugs</span>
 <div id="desc_start_fixing_PED_bugs">
 
+{% if cs2103 %}
+<box>
+
+****High-level workflow for deciding what to do for each PE-D bug****
+
+1. **Is it something you think you'll never fix** even if you were to continue this project in future?<br>
+   If yes, you can leave it unfixed and reject it if the same is reported in the PE. Caution: If the PE tester disagrees and the teaching team agrees with the tester's justification, the bug might result in a penalty %%(why say '_might_ result ...'? Because only when the bug density exceeds a certain bar that bugs will be penalised)%%.<br>
+   {{ icon_info }} How to decide if a PE bug can be rejected? Refer to <trigger trigger="click" for="modal:pedTriagingWorkflow-peBugTriagingGuidelines">PE Bug Triaging Guidelines</trigger> for details (you may skip the 'General' section).
+1. **Else, is it something you may consider fixing in a future version** but was not important enough to do in {{ version_penultimate }}?<br>
+   If yes, you can expect to categorise it as `NotInScope` if the same is reported in the PE (<trigger trigger="click" for="modal:pedTriagingWorkflow-peNotInScope">eligibility criteria</trigger>).
+1. **Else, it is something you should have fixed in the current version.** Then,<br>
+   * **<trigger trigger="click" for="modal:pedTriagingWorkflow-bugVsEnhancement">does it qualify as bug</trigger>**, as defined in the feature freeze?<br>
+   If yes, you may fix it in this iteration. If left unfixed, it can be reported as a bug in PE, and _might_ result in a penalty eventually.{text="3.a)"}
+   * Else, it is an enhancement that you should have done by {{ version_penultimate }} but overlooked.{text="3.b)"}
+      * As enhancements are not allowed during the feature freeze, you can list it under 'Planned Enhancements' in the DG so that it becomes immune to PE bug reporting.
+      * Alternatively (or in addition), you can also update the UG to mitigate its impact on users (e.g., keep users informed of it).
+</box>
+
+<modal large header="" id="modal:pedTriagingWorkflow-bugVsEnhancement">
+<include src="tp-tasks-fragment.md#bug-vs-enhancement"/>
+</modal>
+<modal large header="" id="modal:pedTriagingWorkflow-peBugTriagingGuidelines">
+<include src="tp-pe-bug-triaging-guidelines-fragment.md"/>
+</modal>
+<modal large header="" id="modal:pedTriagingWorkflow-peNotInScope">
+<include src="tp-pe-bug-triaging-guidelines-fragment.md#how-to-prove-out-of-scope"/>
+</modal>
+{% endif %}
+
 1. ****Triage bugs you received in the PE-D****, by following the procedure given below:
 
 {{ embed_topic("tp-ped-fragment.md#after-ped", "Admin " + icon_embedding + " tP → Deliverables → **After the PE-D**", "3", indent="1") }}
@@ -2054,6 +2104,7 @@ Test the product yourself (test each others' features) using the JAR file, repor
 <include src="tp-tasks-fragment.md#feature-freeze-details" />{% endif %}
 
 3. ****Fix bugs**** that you deem as important enough to be fixed in {{ version_final }}. Also keep in mind that bug fixing can cause regressions which you'll have to catch and fix.<br>
+   **Look for more bugs, and fix them too** (i.e., don't limit to bugs found in the PE-D only).
 
 {% if cs2103 %}4. ****Submit peer evaluations for PE-D testers****: Submit your peer-evaluation of PE-D testers to indicate how well they helped your team.<br>
    Deadline: {{ timing_badge("by " + get_date(date_w13_start, 2), "danger") }}<br>
@@ -2328,7 +2379,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 <p/>
 {{ embed_topic("tp-pe-fragment.md#pe-preparation", "Admin " + icon_embedding + " tP → **PE Preparation, Restrictions**", "3", indent="2", type="success") }}
 
-* After reading the above 2, we ==strongly recommend you read ahead the info given in the item {{ thumb_small("6" if cs2103 else "6")}} below== as well, to know in advance what will happen during the PE itself.
+* After reading the above 2, we ==strongly recommend you read ahead the info given in the item {{ thumb_small("5" if cs2103 else "6")}} below== as well, to know in advance what will happen during the PE itself.
 </div>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PE">{{ icon_individual }} Attend the practical exam</span>

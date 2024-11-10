@@ -10,7 +10,7 @@ Heads up! As the following lecture (not this week's one) falls on a public holid
 
 Due to holidays, **this week's tutorial is released as a pre-recorded video**.
 
-More info coming soon ...
+It is available in the [Tutorial page](tutorial.md).
 
 <!--
 

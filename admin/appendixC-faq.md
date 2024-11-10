@@ -60,16 +60,19 @@
 {{ show_expanded_faq("githubIssueForEachPr") }}
 {{ show_expanded_faq("githubWhoMergesPrs") }}
 {{ show_expanded_faq("tpMultiStepCmd") }}
+{{ show_expanded_faq("tpRenameAbReferences") if cs2103 }}
 {{ show_expanded_faq("dgDetailsLevel") }}
 {{ show_expanded_faq("dgAddNewUml") if cs2103 }}
 {{ show_expanded_faq("noEffectOnUml") if cs2103 }}
 {{ show_expanded_faq("tpOtherDiagrammingTool") if cs2103 }}
 {{ show_expanded_faq("tpIdeGeneratedDiagrams") }}
+{{ show_expanded_faq("tpDgKeepingProposedFeatures") if cs2103}}
 {{ show_expanded_faq("tpHowMuchToGetFullMarks") }}
 {{ show_expanded_faq("tpChangeFeatureSpec") if cs2103 }}
 {{ show_expanded_faq("tpEnoughFeatures") if cs2103 }}
 {{ show_expanded_faq("tpMustWrite300Loc") if cs2103 }}
 {{ show_expanded_faq("tpFullMarksFor300Loc") if cs2103 }}
+{{ show_expanded_faq("tpIsLocGraded") }}
 {{ show_expanded_faq("tpDivideByComponent") }}
 {{ show_expanded_faq("tpNoPrInIteration") if cs2103 }}
 {{ show_expanded_faq("tpUpdateTestsWithCode") if cs2103 }}
@@ -80,10 +83,23 @@
 {{ show_expanded_faq("tpWhyUpdateDiagramsEarly") }}
 {{ show_expanded_faq("tpFeatureTakeovers") }}
 
+### FAQs on: tP PE
+
+{{ show_expanded_faq("tpPeEndTime") }}
+
 ### FAQs on: tP Troubleshooting
 
 {{ show_expanded_faq("tpPrPassCiButFailedAfterMerging") }}
 {{ show_expanded_faq("tpWorksLocallyFailsCi") }}
+{{ show_expanded_faq("tpTestingLessBuggyProducts") }}
+{{ show_expanded_faq("tpNoBugsInTestedProduct") }}
+{{ show_expanded_faq("tpNeedToFindAllBugs") }}
+{{ show_expanded_faq("tpJustifyBugsAcceptedAsIs") }}
+{{ show_expanded_faq("tpMoreCodeMeansHigherPenalty") }}
+{{ show_expanded_faq("tpRealBugWrongLabel") }}
+{{ show_expanded_faq("tpCorrectBugIncorrectSuggestion") }}
+{{ show_expanded_faq("tpTesterAddingMoreInfoLater") }}
+{{ show_expanded_faq("tpBugRejectedWithReason") }}
 
 </div>
 

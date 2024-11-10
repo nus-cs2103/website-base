@@ -127,7 +127,7 @@ In these two videos, we used an ==AI-driven text-to-speech tool== to create some
 
 ****Final Exam:****{.text-info} This video contains an overview of the final exam structure and resources that you can use to prepare for it.
 
-{{ panopto(desc="12 mins", "2ab962b5-554e-41be-9df3-b14f00fd2cb8", start_week="13") }}
+{{ panopto(desc="12 mins", "2ab962b5-554e-41be-9df3-b14f00fd2cb8", start_week="14") }}
 
 ****Course Topics Recap aka the 'Big Picture':****{.text-info} This video explains how course topics fit into a big picture, and as a bonus, ==touches on some exam-like questions== as well.
 

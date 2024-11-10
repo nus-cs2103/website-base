@@ -44,7 +44,7 @@ Unless stated otherwise, the meaning of answer options are<br>
 
 {{ icon_example }} Here is an example:
 
->**Q23:** {{ "Python" if tee3101 else "Java" }} can be used to write OOP code.
+>**Q23:** {{ "Python" if tee3201 else "Java" }} can be used to write OOP code.
 
 The answer should be `A` %%(i.e., Agree)%%.
 </box>
@@ -61,7 +61,7 @@ A small number of questions will provide custom options to choose from.
 
 <box>
 
-{{ icon_example }} In the example below, the tag indicates that the question is about OOP.
+{{ icon_example }} Here is one more example that has specific options to choose from, rather than the default Agree/Disagree.
 
 >**Q25:** The course project was done using the _____ paradigm.<br>
 >[A] Procedural&nbsp;&nbsp;&nbsp;[B] Functional&nbsp;&nbsp;&nbsp; [C] OOP
@@ -74,7 +74,7 @@ You will be given OCR forms %%(i.e., bubble sheets)%% to indicate your answers f
 **You have slightly more than 1 minute for each question**, which means you need to go through the questions fairly quickly. You might not have a lot of time left to refer notes frequently during this part of the exam (i.e., you need to be fairly familiar with the content, needing to refer to notes only occasionally).<br>
  That said, based on our past observations, almost all students are able to finish this part of the exam withing the given time fairly comfortably.
 
-{{ icon_tip }} **Mark the OCR form as you go**, rather than planning to transfer your answers to the OCR form near the end. %%Reason: Given there are 100 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.%%
+{{ icon_tip }} **Mark the OCR form as you go**, rather than planning to transfer your answers to the OCR form near the end. %%Reason: Given there are 50 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.%%
 
 {{ icon_tip }} **Write the answer in the exam paper as well** when marking it in the OCR form. %%Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.%%
 
@@ -92,6 +92,6 @@ You will be given OCR forms %%(i.e., bubble sheets)%% to indicate your answers f
 * Some examples of the nature of questions you can expect:
   * Draw UML diagrams to match the given code/description
   * Specify requirements for a given project using various formats covered in the course
-  * Review a given piece of Java code to identify areas to improve (e.g., detect coding standard violations)
-* **Yes, you may use pencils** when answering part 2.
+  * {% if tic2002 %}Review a given piece of Java code to identify areas to improve (e.g., detect coding standard violations){% else %}Design test cases to test a given function.
+* **Yes, you may use pencils** when answering part 2.{% endif %}
 * If you have any queries during this part of the exam, you may ask the invigilator for clarifications.

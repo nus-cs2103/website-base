@@ -30,9 +30,10 @@ Furthermore, we estimate that the above-mentioned bar is roughly _equivalent_ to
 
 <div tags="m--cs2103">
 
-{{ show_faq("tpEnoughFeatures") }}
-{{ show_faq("tpMustWrite300Loc") }}
-{{ show_faq("tpFullMarksFor300Loc") }}
+{{ show_faq("tpEnoughFeatures", is_compact=1) }}
+{{ show_faq("tpMustWrite300Loc", is_compact=1) }}
+{{ show_faq("tpFullMarksFor300Loc", is_compact=1) }}
+{{ show_faq("tpIsLocGraded") }}
 <p/>
 </div>
 

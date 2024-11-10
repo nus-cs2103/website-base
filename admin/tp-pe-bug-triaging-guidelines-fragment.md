@@ -13,7 +13,7 @@
 
 <div id="how-to-prove-out-of-scope">
 
-* **How to prove that something is `response.NotInScope`**: In general, a flaw (e.g., a missing feature, a suboptimal design of a feature, a known bug) can be considered `NotInScope` if rectifying it is less important (based on the value/effort considerations) than the work that has been done already (because it is fine to delay lower priority work until future iterations).<br>
+* **How to prove that something is `response.NotInScope`**: In general, a flaw (e.g., a missing feature, a suboptimal design of a feature, a known bug) can be considered `NotInScope` if rectifying it is less important than the work that has been done already (because it is fine to delay lower priority work until future iterations) %%i.e., the supposedly 'better' implementation will take more effort than the current implementation, reducing the effort available to spend on other more important tasks%%<br>
   In addition, the following (at least one) need to be satisfied:
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
@@ -43,6 +43,7 @@ However, if it is possible for a user mistake to cause such inputs %%(e.g., the 
   * It is also fine to restrict the size/length of inputs as long as the limits are reasonable. For example, limiting the phone number to 8 digits is not reasonable unless you are targeting users whose telephone numbers are _guaranteed_ to be not more than 8 digits.
 * **Use of symbols in input values**: It is acceptable to disallow certain characters in input values if there is a justification (e.g., because using those symbols in an input value makes the command harder to parse), but they can still be considered `FeatureFlaw` bugs if they cause inconvenience to the user. For example, disallowing `s/o` in a person name because `/` is used as a command delimiter can cause a major problem if the input is expected to match the legal name of the person.
 * **Mismatch between the UG and the feature**: If the feature behavior needs to be changed, it is either a `type.FunctionalityBug` or `type.FeatureFlaw`. But if it is the UG that needs to be updated, it is a `type.DocumentationBug`.{% if cs2103 %}
+* **Issues with the output shown in the terminal**: While the terminal output is not critical to the functioning of the product, it is expected to 'behave' in a reasonably presentable manner e.g., avoid showing misleading or alarming information to the user who happens to glance at the terminal output. Therefore, issues related to the terminal can be classified at comparatively lower severities and might qualify to be `NotInScope`.
 * **Handling manual edits to the data file**: AB3 UG specifies [the current level of support for manually editing the data file](https://se-education.org/addressbook-level3/UserGuide.html#editing-the-data-file) i.e., 'if you edit the file correctly, things will work; but if you edited it wrongly, there's no guarantee that things will work'. At least that level of support should be supported in the new product as well.
 {% endif %}
 

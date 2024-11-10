@@ -173,7 +173,7 @@ Weekly project increments are given in the panels below:
 **Deadline**: <span class="text-danger">{{ get_date(date_w13_start, 6, format=format_normal) }}</span> (Sunday of week 13)
 
 * An extra week can be given (upon request) for a small late submission penalty of `-2` marks.
-* Submissions later than the hard deadline are liable to a late submission penalty, to be fair to those who submitted on time. But given you are part-time students, late submission penalty will be more lenient than otherwise (e.g., `-1 per day`) and will be on a case-by-case basis.
+* Submissions later than the above one-week extra time are liable to a late submission penalty, to be fair to those who submitted on time. But given you are part-time students, late submission penalty will be more lenient than otherwise (e.g., `-1 per day`) and will be on a case-by-case basis.
 
 
 ****Deliverables****:
@@ -200,7 +200,7 @@ Please upload items 2, 3, 4 as three separate files, using the three Canvas assi
    * Ensure the video is in a format that can be played by any computer.
    * Submission: Name the file with your name (to match the jar and the report file) and upload to Canvas.
 1. **Code Reuse Declaration**:
-   * Submit this survey (on Canvas) to declare your level of code reuse in the project.
+   * Submit the 'Code Reuse Declaration' survey (on Canvas) when it opens in week 13, to declare your level of code reuse in the project.
    * This is compulsory. You <span class="text-danger">must submit this even if you did not reuse</span> any code.
 </div>
 </div>

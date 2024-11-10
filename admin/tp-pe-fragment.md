@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, get_date with context %}
+{% from "common/macros.njk" import embed_topic, get_date, show_faq with context %}
 
 #### <span class="badge bg-success">PE</span> <span class="text-success">Overview</span>
 
@@ -24,11 +24,11 @@
 </div>
 
 * **The PE is divided into four phases**:
-  * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D. Done during week 13 lecture slot, and further divided into parts I, II, and III.</span>
+  * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D. This phase is divided further into parts I, II, and III (done during the lecture slot), and part IV (done the day after the PE slot).</span>
     * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to focus on reporting bugs in the product (but can report documentation bugs too)
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
-    * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [half a day] -- For testers to select up to 7 bugs to send to the dev team.
+    * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [~half a day] -- For testers to select up to 7 bugs to send to the dev team.
   * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sun-Mon after PE </span>
   * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Tue-Thu after PE</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
@@ -59,7 +59,9 @@
 
 * **Those opting for the F2F mode can ignore any Zoom-related points** in the instructions below.
 
-* **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 4, format=format_normal, time="") | trim }}). Remember to ==join 15-30 minutes earlier== than usual lecture start time. The Zoom link will be given to you closer to the day.
+* **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 4, format=format_normal, time="") | trim }}).
+
+{{ show_faq("tpPeEndTime") }}
 
 * **PE Phase 1 will be conducted under exam conditions. For the remote mode, ==we will be following the [SoC's E-Exam SOP](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/)==**, combined with the deviations/refinements given below. Any non-compliance will be dealt with similar to a non-compliance in the final exam.<br>
 
@@ -92,7 +94,7 @@
 * **In case of Zoom outage**, we'll fall back on MS Teams (MST).{% if cs2103 %} Make sure you have MST running and have joined the [MST Team for the class]({{ url_ms_teams_class }}).{% elseif cs2113 %} Make sure you have MST running; proctoring will be done via individual tutorial MST teams that we have been using.{% endif %}
 * **Recording the screen is not required.**
 * **You are allowed to use head/ear phones.** But no talking allowed (unless you are talking to the invigilator) -- so, no talking/singing to yourself as this can be mistaken for a rule violation.
-* **==Only one screen== is allowed** (for both remote mode and F2F mode). If you want to use the secondary monitor, you should switch off the primary monitor. The screen being used should be fully visible in the Zoom camera view.<br>
+* **==Only one screen== is allowed** (for both remote mode and F2F mode). If you want to use the secondary monitor, you should switch off (or cover up) the primary monitor. The screen being used should be fully visible in the Zoom camera view.<br>
   If using a second device for Zoom proctoring, the screen of that device should only be used for Zoom.
 * **Do not use the public chat channel to ask questions** from the prof. If you do, you might accidentally reveal which team you are testing.
 * **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
@@ -115,7 +117,7 @@
   * Software: CATcher, any text editor, any screen grab/recording software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
   * Software: A text editor or word processing software %%(to keep notes while testing)%%
-* ==**Do not visit GitHub in** <span class="badge bg-success">PE Phase 1 - part I</span>== unless you are going there to download a file the team has provided and is needed for testing. You may visit GitHub during part II and part III.
+* **Do not visit GitHub** unless you are visiting the team's GitHub page to find an information needed for testing.
 * **Do not use any other software running** in the background e.g., Telegram chat.
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
 * **You may use any digital/physical notes** during the PE %%e.g., a list of things to check%%.
@@ -165,14 +167,8 @@ Take away: Aim for the _correct_ severity/type etc. rather than the one that giv
 
 <include src="tp-ped-fragment.md#tp-pe-testing-instructions" var-pe_active_tab="1"/>
 
-=={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
-* Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase
-of the PE.
-* As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower
-priority has a lower risk of being disputed by the dev team, giving you (and the dev team)
-a better chance of earning bonus marks for accuracy (which will be substantial).<br>
-To make your case stronger, state in the bug report why you think the bug might even qualify for a higher severity, while you actually chose the lower one.
-* In this section, there will be a _mass identity check_
+
+**There will be a _mass identity check_** during this part of the PE:
 
 <box type="info" header="**Mass identity check**" seamless id="identity-check-info" tags="m--cs2103">
 
@@ -186,18 +182,9 @@ When the invigilator announces an identity check,
 <span class="text-danger">Please comply quickly</span> as non-compliance can delay the PE for everyone. This is expected to take no more than 15 seconds.
 </box>
 
-<panel type="seamless" header="%%FAQ: Some students will be testing less/more buggy products than others? Isn't that unfair?%%" >
-
-As each product is tested by 4-5 testers, after all PE bugs have been finalized, we know how 'buggy' each product is. We then use that information for calculating your PE-related marks. So, the marks are calibrated to match the bugginess of the product you tested.
-</panel>
-<panel type="seamless" header="%%FAQ: What if the product I tested has hardly any bugs?%%" >
-
-If the total bugs found (by _all_ testers) in a product is below a certain level, we compensate those testers by increasing the weightage given to PE-D performance, and their dev-testing results.
-</panel>
-<panel type="seamless" header="%%FAQ: What if the product I tested is very buggy? Am I expected to find all those bugs%%" >
-
-No. Given the PE has only a short time, we don't expect you to find _all_ bugs in the product. To get full marks, you only need to report a certain percentage of the bugs (e.g., half), or a certain quantity of bugs (the quantity also factors in the nature of the bug e.g., severity), whichever is lower.
-</panel>
+{{ show_faq("tpTestingLessBuggyProducts", is_compact="1") }}
+{{ show_faq("tpNoBugsInTestedProduct", is_compact="1") }}
+{{ show_faq("tpNeedToFindAllBugs") }}
 
 -------------------------------------------------------------------------{.border-success}
 
@@ -212,8 +199,6 @@ No. Given the PE has only a short time, we don't expect you to find _all_ bugs i
 {{ embed_topic("tp-grading-bugs-fragment.md#dgBugs", "Admin " + icon_embedding + " tP Grading → **Possible DG Bugs**", "3", indent="1") }}
 <p/>
 
-* **You may visit the team's project on GitHub during this portion**, for the purpose of verifying the accuracy of documentation %%e.g., to check if a diagram matches the code%%. You are also allowed to download and open the team's code in a code editor.
-
 * **You _may_ report grammar issues** as bugs but note that minor grammar issues that don't hinder the reader are allowed to be categorized as `response.NotInScope` (by the receiving team) -- such bugs earn only small amount or credit for the tester (hence, do not waste time reporting too many minor grammar errors).
 
 -------------------------------------------------------------------------{.border-success}
@@ -221,7 +206,7 @@ No. Given the PE has only a short time, we don't expect you to find _all_ bugs i
 ##### <span class="badge bg-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
 
 * To be submitted via TEAMMATES. You are expected to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.<br>
-  **If you have to valid reason to leave the PE early** (e.g., having another exam right after the PE), you may leave after part II has ended and do part III later -- but note that if you fail to submit this by the hard deadline (i.e., end of the day), you will receive an <span class="text-danger">automatic penalty</span>.
+  **If you have a valid reason to leave the PE early** (e.g., having another exam right after the PE), you may leave after part II has ended and do part III later -- but note that if you fail to submit this by the hard deadline (i.e., end of the day), you will receive an <span class="text-danger">automatic penalty</span>.
 * The TEAMMATES email containing the submission link should have reached you the day before the PE. If you didn't receive it by then, you can request it to be resent from [this page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery).
 * **If TEAMMATES submission page is slow/fails to load** (all of you accessing it at the same time is likely to overload the server), wait 3-5 minutes and try again. <span class="text-danger">Do not refresh the page repeatedly</span> as that will overload the server even more, and recovery can take even longer.
 
@@ -311,7 +296,14 @@ Use the person's PPP and RepoSense page to evaluate the effort.
   Objectives:
   * Testers can correct their type/severity choices in case they chose incorrectly during the PE due to time pressure.
   * Testers get a chance to withdraw lower impact (or uncertain) bugs so that there is less work for the dev team during the next phase.
+
 * **Procedure:** coming soon ...
+
+
+=={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
+* Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase of the PE.
+* As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower priority has a lower risk of being disputed by the dev team, giving you (and the dev team) a better chance of earning bonus marks for accuracy (which will be substantial).<br>
+  To make your case stronger, state in the bug report why you think the bug might even qualify for a higher severity, while you actually chose the lower one.
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
@@ -323,7 +315,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 <box type="important" >
 
-****Yes, that can be better!**** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that can be better!", accept it graciously, even if you can come up with _some_ argument to justify the current behavior. <br>
+****Yes, that can be better!**** For each bug report you receive, if you think a software engineer who takes pride in their own work would say "yes, that can be better!", accept it graciously, even if you can come up with _some_ BS argument to justify the current behavior. <br>
   Even when you still want to defend the current behavior, instead of pretending that the behavior was a deliberate choice to begin with, you can say something like,
   > "Thanks for raising this. Indeed, it didn't occur to us. But now that we have thought about it, we still feel ..."
 
@@ -471,7 +463,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 <p/>
 </div>
 
-* **Decide who should take responsibility for the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. **If there is no assignee, we will distribute the penalty for that bug (if any) equally among all team members** %%e.g., if the penalty is -0.4 and there are 4 members, each member will be penalized -0.1%%.
+* **Decide who should take responsibility for the bug**. Use the `Assignees` field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. The penalty for the bug (if any) will be divided among the assignees %%e.g., if the penalty is -0.4 and there are 2 assignees, each member will be penalized -0.2%%.
   * If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.
   * It is also fine to not assign a bug to anyone, in which case the penalty will be divided equally among team members.
 <p/>
@@ -486,23 +478,10 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
   * changing the bug type
   * non-obvious duplicate
 
-
-<panel type="seamless" header="%%FAQ: Do we need to justify even if we accept the bug _as is_?%%" >
-
-No need to provide a justification if you accept the bug without _any_ changes to it.
-</panel>
-<panel type="seamless" header="%%FAQ: So, those who write more code will be hit with more bugs? How's that fair?%%" >
-
-Penalty for bugs is applied based on bug _density_, not bug count. For example, if Ann contributed twice as much implementation effort as Tom, and was assigned twice as many bugs as Tom, both will receive similar penalties, as both had similar bug densities.
-</panel>
-<panel type="seamless" header="%%FAQ: What if the bug is real but the tester used the wrong label (e.g., used the wrong `type.*`). Can we reject that bug?%%" >
-
-A bug is a bug irrespective of the label used. Instead of rejecting, rectify the label.
-</panel>
-<panel type="seamless" header="%%FAQ: What if the bug the tester reported is legit but the expected behavior tester suggested is not correct?%%" >
-
-You should accept the bug but state that you disagree with the expected/suggested behavior. Reason: the main job of the tester is to detect bugs; suggesting a solution is optional.
-</panel>
+{{ show_faq("tpJustifyBugsAcceptedAsIs") }}
+{{ show_faq("tpMoreCodeMeansHigherPenalty") }}
+{{ show_faq("tpRealBugWrongLabel") }}
+{{ show_faq("tpCorrectBugIncorrectSuggestion") }}
 <p/>
 </box>
 
@@ -588,14 +567,9 @@ Tester choice | Dev choice | Tester reaction | Teacher decision | Dev accuracy  
 </tabs>
 </div>
 
-<panel type="seamless" header="%%FAQ: What if the team rejected my bug report without giving a reason?%%" >
 
-You can disagree with the rejection, and the teaching team will likely rule in your favor in the next phase.
-</panel>
-<panel type="seamless" header="%%FAQ: Can I add more information about the bug when I object to a dev team's response?%%" >
-
-Yes, you may. Given that the dev team did not get to see this addition info when they triaged the bug, the weight such additional info add to your case is lower than if you had that info in the initial bug report. Nevertheless, it can still help your cause, especially if the dev team should have thought about that info on their own, even if they were missing in the initial bug report.
-</panel>
+{{ show_faq("tpTesterAddingMoreInfoLater") }}
+{{ show_faq("tpBugRejectedWithReason") }}
 <p/>
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}

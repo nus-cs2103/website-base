@@ -151,7 +151,10 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 
 ### Week 13: Final Submission
 
-**Submission Deadline**: Sunday of week 13 (<span class="text-danger">{{ date_w13_start | date("YYYY-MM-DD", 6) }}</span>). ==Submissions later than the deadline are liable to a late submission penalty==, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., `-1` per day).
+**Submission Deadline**: Sunday of week 13 (#r#{{ date_w13_start | date("YYYY-MM-DD", 6) }} 23:59##).
+
+* An extra week can be given (upon request) for a small late submission penalty of `-2` marks.
+* Submissions later than the above one-week extra time are liable to a late submission penalty, to be fair to those who submitted on time. But given you are part-time students, late submission penalty will be more lenient than otherwise (e.g., `-1 per day`) and will be on a case-by-case basis.
 
 **Deliverables**:
 1. **Code** of the working program: zip (not rar) the code.
@@ -160,7 +163,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
 1. **Project report**: a single .docx or a pdf file that ==follows the template given== (template file will be available in Canvas).
    * Submission: via Canvas assignments
    * File name: `{Your Name}.docx/pdf`  e.g., `Jun Hao.docx`
-   * Optionally, you can get feedback on an early project report draft by emailing it to the prof <span class="text-danger">no later than {{ date_w13_start | date("YYYY-MM-DD", 1) }}</span> (i.e., week 13 Tuesday). Note that such feedback will be limited to high-level comments only (reason: the report is graded), and given only once per student.
+   * Optionally, you can get feedback on an early project report draft by emailing it to the prof <span class="text-danger">no later than {{ date_w13_start | date("YYYY-MM-DD", 2) }}</span> (i.e., week 13 Wednesday). Note that such feedback will be limited to high-level comments only (reason: the report is graded), and given only once per student.
 1. **Demo video**:
    * Record a demo video showcasing the features of your product. You can use any screen recording software for this. One simple way is to start a Zoom meeting and record the meeting while screen-sharing your demo.
    * Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).
@@ -170,7 +173,7 @@ In some weeks, there will be some programming exercises for you to submit (on Co
    * Submission: via Canvas assignments
    * File name: `{Your Name}.mp4`  e.g., `Jun Hao.mp4`
 1. **Code Reuse Declaration**:
-   * Submit this survey (on Canvas) to declare your level of code reuse in the project.
+   * Submit the Canvas survey 'Code Reuse Declaration' when it opens in week 13, to declare your level of code reuse in the project.
    * This is compulsory. You <span class="text-danger">must submit this even if you did not reuse</span> any code.
 
 </div>

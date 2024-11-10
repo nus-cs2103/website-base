@@ -1,3 +1,5 @@
+{% from "common/macros.njk" import embed_topic, get_date, show_faq with context %}
+
 <div id="featureFlaws">
 
 These are considered _feature flaws_:<br>
@@ -124,14 +126,14 @@ These are considered _functionality bugs_:<br>
 * ==Of the <popover content="1. _Developer Testing_ component -- based on the bugs found in your code;<br>2. _System/Acceptance Testing_ component -- based on the bugs found in others' code">two components of testing</popover>, the one you do better will be given a 70% weight and the other a 30% weight== so that your total score is driven by your strengths rather than weaknesses.
 * **Bugs rejected by the dev team**, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.
 * **The penalty/credit for a bug varies based on the severity** of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
-* **The three bug types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components.** The penalty/credit can vary based on the bug type. %%Given that you are not told which type has a bigger impact on the grade, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.%%
+* **The three bug types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components.** The penalty/credit can vary slightly based on the bug type, but you may consider them as roughly equivalent. %%So, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.%%
 * **The penalty for a bug is divided equally** among <popover content="In the PE, each team get to decide who are the assignees for each bug report they received">assignees</popover>.
-* **Developers are not penalized for duplicate bug reports** they received but the testers earn credit for duplicate bug reports they submitted, provided the duplicates are not submitted by the same tester.
-* **<tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit** for the tester and slightly higher penalty for the developer.
-* **If the team you tested has a low bug count** i.e., total bugs found by _all_ testers is low, we will fall back on other means %%(e.g., performance in PE dry run)%% to calculate your marks for system/acceptance testing.
-* **Your marks for developer testing depends on the _bug density_ rather than total bug count.** Here's an example:
-  * `n` bugs found in your feature; it is a big feature consisting of a lot of code → 4/5 marks
-  * `n` bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks
-* **You don't need to find _all_ bugs in the product** to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.
+* **Developers are not penalized for duplicate bug reports** they received but the testers earn credit for duplicate bug reports they submitted, provided the duplicates are not submitted by the same tester.<br>
+  However, **<tooltip content="i.e., the same bug reported by many testers">_Obvious_ bugs</tooltip> earn less credit** for the tester and slightly higher penalty for the developer.
 * **Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>**, if deemed an attempt to _game the system_, will be penalized.
+
+{{ show_faq("tpMoreCodeMeansHigherPenalty") }}
+{{ show_faq("tpTestingLessBuggyProducts", is_compact="1") }}
+{{ show_faq("tpNoBugsInTestedProduct", is_compact="1") }}
+{{ show_faq("tpNeedToFindAllBugs") }}
 </div>
