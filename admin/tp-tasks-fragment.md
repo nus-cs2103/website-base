@@ -1830,20 +1830,28 @@ The panel below contains guidelines your peers will use when determining bugs in
 {{ embed_topic("tp-pe-bug-triaging-guidelines-fragment.md", "Admin " + icon_embedding + " Practical Exam → **Guidelines for determining bugs**", "3", indent="1") }}
 </box>
 
-<box type="tip" header="Some testing tips to get you started (not an exhaustive list)..." seamless>
+<panel type="info" header="**Some testing tips** to get you started (not an exhaustive list)..." peek >
 
 * If your app references date/time of the computer it is running on (e.g., to calculate time elapsed), test if it can work if the computer date/time is configured to be in different formats -- different computers might use different date formats.
 * Test against all typical user mistakes %%e.g., typing two spaces instead of one%%
 * If sorting is involved, verify the sorting behavior follows real world expectations %%e.g., lexicographical vs alphabetical order%%
-* For all inputs, test: valid and invalid inputs, typical and non-typical inputs
+* Input validation:
+  * test valid and invalid inputs, typical and non-typical inputs
+  * when a range is involved (e.g., start and end time), test for start-same-as-end and start-later-than-end cases
+  * test command parameters: compulsory parameters missing, optional parameters are not given, parameters are duplicated, unexpected parameters are given, typos in parameter names, parameter names appearing inside the parameter value
 * User-visible messages:
   * Are they specific enough? %%e.g., does the error message indicate what exactly is the error and how to rectify it?%%
   * Are they consistent with the UG?
+  * Are they complete, and accurate?
 * Clean up actions:
   * If a feature is supposed to clear/delete data, ensure all relevant data are deleted.
   * If there are multiple windows, ensure all windows are closed when the application exits.
 * Does the application <popover content="good: gives an error message; bad: fails silently, crashes, corrupts data">fail gracefully</popover> when pushed beyond its limits?
-</box>
+* UI:
+  * Does it work as expected when, used in different resolutions and display scaling settings?
+  * Does it work as expected when, there are many data items, more than the display area can show at a time?
+  * When a command is run, does all parts of the UI updates as expected? e.g., when an item is deleted, does that item disappear from the list of items currently shown?
+</panel>
 
 </div>
 {#====================================================================================================================#}
