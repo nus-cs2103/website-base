@@ -114,9 +114,10 @@
   * Website: Canvas
   * Website/software: MSTeams (only to communicate with the prof of Tech support)
   * Website: Course website %%(e.g., to look up PE info)%%
-  * Software: CATcher, any text editor, any screen grab/recording software
+  * Software: CATcher
+  * Software: any screen grab/recording software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
-  * Software: A text editor or word processing software %%(to keep notes while testing)%%
+  * Software: A text editor or word processing software %%(to keep notes while testing)%% -- use a simple text editor that doesn't have online collaboration features
 * **Do not visit GitHub** unless you are visiting the team's GitHub page to find an information needed for testing.
 * **Do not use any other software running** in the background e.g., Telegram chat.
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
@@ -124,7 +125,7 @@
 * **Recommended to read the guidelines the dev team will follow when responding to your bug reports later**, given in the panel below. This will help decide what kind of bugs to report.
 * **Bugs reported during the PE should be the result of your own testing**. <span class="text-danger">Reporting bugs found by others as your own will be reported as a case of academic dishonesty</span> (severity is similar to cheating during the final exam).
 <div class="indented-level1">
-<panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" minimized>
+<panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" peek>
 
 <include src="tp-pe-bug-triaging-guidelines-fragment.md"/>
 </panel>
@@ -281,7 +282,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 -------------------------------------------------------------------------{.border-success}
 
-#### <span class="badge bg-success">&rarr; PE Phase 1 - Part IV</span> <span class="text-success">Trimming bugs [~half a day]</span>
+#### <span class="badge bg-success">&rarr; PE Phase 1 - Part IV</span> <span class="text-success">Trimming bugs</span>
 
 **This segment gives testers a second chance revisit their bug reports, and choose upto 7 bugs that they wish to send to the dev team.** They will be allowed to change bug type/severity too (but will not be allowed to change bug title or the description).
 
@@ -316,7 +317,7 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
      * **but not bug type** -- for this purpose, consider all bug types as equal. {{ bullet_x_red }}
 1. **Delete the remaining bug reports** using CATcher.
    * What if I deleted a bug that I intended to keep? When you 'delete' a bug using CATcher, the corresponding issue is closed (but not deleted) in GitHub issue tracker. So, the deleting can be reversed by going to GitHub and re-opening that issue.
-   * What if I keep more than 7 bugs? In that case, we'll be taking the 7 bugs with the highest severity. When choosing between two bugs with same severity, we will be taking the bug that was created earlier.
+   * What if I keep more than 7 bugs? In that case, we take the 7 bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 

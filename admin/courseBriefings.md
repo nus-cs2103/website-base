@@ -125,13 +125,19 @@ In these two videos, we used an ==AI-driven text-to-speech tool== to create some
 <panel type="info" header="#### Week 13 Course Briefings" expanded>
 <div id="course-briefing-w13">
 
-****Final Exam:****{.text-info} This video contains an overview of the final exam structure and resources that you can use to prepare for it.
+****Final Exam:****{.text-info} This video is an overview of the final exam structure and resources that you can use to prepare for it.
 
-{{ panopto(desc="12 mins", "2ab962b5-554e-41be-9df3-b14f00fd2cb8", start_week="14") }}
+<div id="exam-briefing-video">
+
+{{ panopto("02efb756-710c-4452-a43f-b22600829566", desc="[Course Briefing Video] Final Exam %%(17 minutes)%%", start_week="13") }}
+</div>
 
 ****Course Topics Recap aka the 'Big Picture':****{.text-info} This video explains how course topics fit into a big picture, and as a bonus, ==touches on some exam-like questions== as well.
 
-{{ panopto(desc="19 mins", "e1bf94be-36e3-4ab1-8261-b14f00fd2cc9", start_week="13") }}
+<div id="topics-video">
+
+{{ panopto(desc="[Course Briefing Video] Topics overview + ==some exam-like questions== %%(19 mins)%%", "e1bf94be-36e3-4ab1-8261-b14f00fd2cc9", start_week="13") }}
+</div>
 
 </div>
 </panel>

@@ -1,5 +1,6 @@
 {% from "common/admin.njk" import show_admin_page with context %}
 {% from "common/topics.njk" import panopto with context %}
+{% from "common/macros.njk" import show_faq with context %}
 
 {% call show_admin_page("exams") %}
 <div id="main">
@@ -48,10 +49,7 @@ The final exam has two types of questions:
 </div>
 
 <div tags="m--cs2103">
-<div id="exam-briefing-video">
-
-{{ panopto("2ab962b5-554e-41be-9df3-b14f00fd2cb8", desc="[Course Briefing Video] Final Exam (12 minutes)", start_week="13") }}
-</div>
+<include src="courseBriefings.md#exam-briefing-video" />
 
 ## Exam admin info to note
 
@@ -175,7 +173,7 @@ E. Gantt charts.
 The following exam resources will be **available from the start of week 13**.
 </box>
 
-<include src="exams.md#exam-briefing-video" />
+<include src="courseBriefings.md#exam-briefing-video" />
 
 
 * **A mock exam** (consisting of just a few questions), via Examplify.
@@ -200,11 +198,14 @@ The following exam resources will be **available from the start of week 13**.
 * **Recordings of all weekly briefings** are available on the [Canvas home page]({{ url_canvas_home }}).
 * **The _Topics Overview_ video** given below explains how course topics fit into a big picture, and as a bonus, touches on some exam-like questions as well.
 
-{{ panopto(desc="[Course briefing video] **Topics overview** aka the 'big picture' (19 mins)", "e1bf94be-36e3-4ab1-8261-b14f00fd2cc9", start_week="13") }}
+<include src="courseBriefings.md#topics-video" />
 
 * **PDF files useful for the exam** (given in {{ handouts_link }}):
   * Exam Reference PDF
   * Topics infographic (shows how the various topics fit into the big picture)
+
+
+{{ show_faq("eMorePastPapersAndAnswers") }}
 
 </div>
 

@@ -101,6 +101,11 @@
 {{ show_expanded_faq("tpTesterAddingMoreInfoLater") }}
 {{ show_expanded_faq("tpBugRejectedWithReason") }}
 
+
+## FAQs on: Exam
+
+{{ show_expanded_faq("eMorePastPapersAndAnswers") }}
+
 </div>
 
 {% endcall %}

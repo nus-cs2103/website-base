@@ -780,8 +780,10 @@ No need to provide a justification if you accept the bug without _any_ changes t
 
 Penalty for bugs is applied based on bug _density_, not bug count. Here's an example:
 
-* `n` bugs found in Ann's feature; it is a big feature consisting of a lot of code → 4/5 marks
-* `n` bugs found in Jim's feature; it is a small feature with a small amount of code → 1/5 marks
+* `n` bugs found in Ann's feature; it is a big feature consisting of a lot of code → marks for dev testing: 4
+* `n` bugs found in Jim's feature; it is a small feature with a small amount of code → marks for dev testing: 1
+
+Although both had the same number of bugs, as Ann's work has a lower bug density than Jim's, she earns more marks for the dev testing aspect.
 </div>
 <!-- =============================================================== -->
 
@@ -820,3 +822,23 @@ Yes, you may. Given that the dev team did not get to see this addition info when
 </div>
 <!-- =============================================================== -->
 
+
+<!-- ===============================================================
+  Exam FAQ
+=============================================================== -->
+
+<!-- =============================================================== -->
+<div id="faq-eMorePastPapersAndAnswers-Q">Can we have more past year papers and model answers?</div>
+<div id="faq-eMorePastPapersAndAnswers-A">
+
+You are welcome to try past exam papers available in the library and post answers in the forum to discuss with others. The teaching team will contribute to those discussions as well, and ensure you reach a reasonable answer.
+
+Caution: The scope of the course and the exam format evolve over time and some past questions may not be exactly in sync with the current semester.
+</div>
+
+<!-- =============================================================== -->
+<div id="faq-efaqid-Q"></div>
+<div id="faq-efaqid-A">
+
+
+</div>

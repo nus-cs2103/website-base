@@ -222,7 +222,7 @@ If you 'warmed up' CATcher for the {{ pe_session_upper }} earlier, you should al
 
 * Each bug should be a separate issue %%i.e., do not report multiple problems in the same bug report.%%<br>
   If there are multiple bugs in the same report, the dev team will select only one of the bugs in the report and discard the others.
-* When reporting similar bugs, it is safer to report them as separate bugs because there is no penalty for reporting duplicates while putting multiple bugs in the same report can reduce your bug count (see the previous point). But as submitting multiple bug reports take extra time, if you are quite sure they will be considered as _duplicates_ by the dev team later, you can report them together, to save time.
+* When reporting similar bugs, it is safer to report them as separate bugs because there is no penalty for reporting duplicates. But as submitting multiple bug reports take extra time, if you are quite sure they will be considered as _duplicates_ by the dev team later, you can report them together, to save time.
 * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.<br>
   Remember to give enough details for the receiving team to reproduce the bug. If the receiving team cannot reproduce the bug, you will not be able to get credit for it.
 

@@ -858,7 +858,7 @@
  'CS2103T-T09-4': 'GOATS - Greatest Online Address-book for Tutoring Students',
  'CS2103T-T10-1': 'MediContact',
  'CS2103T-T10-2': 'StaffSync',
- 'CS2103T-T10-3': 'TASync',
+ 'CS2103T-T10-3': 'ConTActs',
  'CS2103T-T10-4': 'LegacyLink',
  'CS2103T-T11-1': 'BakeBuddy',
  'CS2103T-T11-2': 'KonTActs',
