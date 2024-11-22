@@ -86,6 +86,10 @@
 ### FAQs on: tP PE
 
 {{ show_expanded_faq("tpPeEndTime") }}
+{{ show_expanded_faq("tpTesterAddingMoreInfoLater") }}
+{{ show_expanded_faq("tpBugRejectedWithReason") }}
+{{ show_expanded_faq("tpPeAccuracyForNotInScope") }}
+{{ show_expanded_faq("tpPeNotInScopeSeverity") }}
 
 ### FAQs on: tP Troubleshooting
 

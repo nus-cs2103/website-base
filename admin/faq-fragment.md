@@ -815,6 +815,20 @@ Yes, you may. Given that the dev team did not get to see this addition info when
 </div>
 <!-- =============================================================== -->
 
+<div id="faq-tpPeAccuracyForNotInScope-Q">If the bug I reported is `NotInScope`, how does it affect my accuracy bonus?</div>
+<div id="faq-tpPeAccuracyForNotInScope-A">
+
+A bug that is `type.Accepted` or `type.NotInScope` can boost your accuracy if the `severity.*` you chose matches the eventual `severity.*` of the bug. ~~Same for `type.*`~~ (the `type.*` will not be considered for accuracy).
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpPeNotInScopeSeverity-Q">If a bug is `NotInScope`, does the `severity.*` label still matter?</div>
+<div id="faq-tpPeNotInScopeSeverity-A">
+
+Yes. A higher severity means the enhancement you suggested is of higher value/importance; you earn more credit for doing so.
+</div>
+<!-- =============================================================== -->
+
 <div id="faq-faqid-Q"></div>
 <div id="faq-faqid-A">
 

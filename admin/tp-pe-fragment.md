@@ -29,8 +29,8 @@
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
     * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [~half a day] -- For testers to select up to 7 bugs to send to the dev team.
-  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sun-Mon after PE </span>
-  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Tue-Thu after PE</span>
+  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sunday - Monday period after PE </span>
+  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Tuesday - Thursday period after the PE.</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
 
 * **Grading**:
@@ -296,7 +296,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 **Bonus marks for high accuracy rates!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a substantial bonus if >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual `type.*` and `severity.*` of the bug match the values you chose initially and the bug is accepted by the team).
+You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a substantial bonus if >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual ~~`type.*` and~~ `severity.*` of the bug matches the value you chose initially and the bug is either `response.Accepted` or `response.NotInScope`).
 </box>
 
 ****Procedure:****
@@ -340,7 +340,7 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
 
 **Bonus marks for high accuracy rates!**{.text-success}
 
-You will receive bonus marks if a high percentage (e.g., some bonus if >60% substantial bonus if >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual `type.*`, `severity.*`, and `response.*` of the bug match the ones you chose).
+You will receive bonus marks if a high percentage (e.g., some bonus if >60% substantial bonus if >80%) of bugs are _**accepted as triaged**_ (i.e., the eventual ~~`type.*`,~~ `severity.*`, and `response.*` of the bug match the ones you chose).
 </box>
 
 <box type="important" seamless>
@@ -519,22 +519,23 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 ==**Deadline:** {{ get_date(date_w13_start, 10) }}==
 
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the dev team, you can record your objections and the reason for the objection.
-  * not accepted
-  * severity downgraded
-  * bug type changed
-  * bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
+  * `response.*`: bug not accepted {texts="['(a)', '(b)', '(c)', '(d)']"}
+  * `severity.*`: severity downgraded
+  * `type.*`: but type changed
+  * `duplicate`: bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
+* If CATcher doesn't give you an option to object to (a), (b), (c), or (d) mentioned above, that means there is nothing to object to %%e.g., if there is no option to object to (a), that means the bug was accepted by the team.%%
 
 <div class="indented">
 <box type="important">
 
-**Don't feel upset if the dev team did not totally agree** with most of the bugs you reported. That is to be expected, given you had very short time to make those bug decisions while the dev team had a lot more time to deliberate about them. Some may have given unreasonable (in your opinion) arguments against your bug reports; not to worry, just give your counter-arguments and leave it to the teaching team to decide (in the next phase) which position is more reasonable.
+**Don't get upset if the dev team did not fully agree** with most of the bugs you reported. That is to be expected, given you had a very short time to make those bug decisions while the dev team had a lot more time to deliberate about them. Some may have provided arguments against your bug reports that you consider unreasonable; not to worry, just give your counterarguments and leave it to the teaching team to decide (in the next phase) which position is more reasonable.
 
-However, ==if the dev team's argument is not too far from 'reasonable', **it may be better to agree than disagree**==.<br>
-  Reason: an incorrect counterargument at this phase will lower your _accuracy_ more than an incorrect decision made during the testing phase (because you now have more time to think about the bug) i.e., changing your position after you had more time to think of it and after having seen more information is encouraged, compared to sticking to your initial position 'no matter what'.
+However, ==if the dev team's argument is not too far from 'reasonable', it may be **better to agree than disagree**.==<br> Reason: an incorrect counterargument at this phase will lower your accuracy more than an incorrect decision made during the testing phase, since you now have more time to think about the bug, i.e., changing your position after having more time to consider it and after seeing more information is encouraged, compared to sticking to your initial position 'no matter what'.
 </box>
 </div>
 
-* **If you would like to revise your own initial type/severity** in response to the team's inputs, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).
+* **If you would like to revise your own initial type/severity** in response to the team's inputs, you can state that in your explanation %%e.g., you rated the bug `severity.High` and the team changed it to `severity.Low` but now you think it should be `severity.Medium`%% (do not change the original labels yourself though).<br>
+  Similarly, if the bug was rejected, but you think it should be `NotInScope`, you can disagree with their `response.Reject` and give your reasoning why it should be `NotInScope`.
 * You can also refer to the below guidelines, mentioned during the previous phase as well:
 
 {{ embed_topic("tp-pe-fragment.md#additionalGuidelinesForBugTriaging", "Admin " + icon_embedding + " PE → Phase 2 → Additional Guidelines for Bug Triaging", "pe-additionalGuidelinesForBugTriaging", indent=1) }}
@@ -566,9 +567,10 @@ Tester choice | Dev choice | Tester reaction | Teacher decision | Dev accuracy  
 * When the phase has been announced as open, login to [CATcher](https://catcher-org.github.io/CATcher) as usual (profile: `{{ course_pair }} PE`).
 * For each issue listed in the `Issues Pending Responses` section:
   * Click on it to go to the details, and read the dev team's response.
-  * If you disagree with any of the items listed, tick on the `I disagree` tick box and enter your justification for the disagreement, and click `Save`.
+  * If you disagree with any of the items listed, tick the `I disagree` checkbox and enter your justification for the disagreement, and click `Save`.
   * If you are fine with the team's changes, click `Save` without any other changes upon which the issue will move to the `Issue Responded` section.
-* No action is required for the bugs the team accepted _exactly as you reported them_ (i.e., no change to type or severity). They are shown in CATcher for your reference only.
+* No action is required for the bugs the team accepted _exactly as you reported them_ (i.e., no change to type or severity). They are shown in CATcher for your reference only.<br>
+  No action required for bugs that were not selected to send to the dev team.
 
 </tab>
 <tab header="Not using CATcher">
@@ -582,6 +584,8 @@ Tester choice | Dev choice | Tester reaction | Teacher decision | Dev accuracy  
 </div>
 
 
+{{ show_faq("tpPeAccuracyForNotInScope") }}
+{{ show_faq("tpPeNotInScopeSeverity") }}
 {{ show_faq("tpTesterAddingMoreInfoLater") }}
 {{ show_faq("tpBugRejectedWithReason") }}
 <p/>
