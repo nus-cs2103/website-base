@@ -64,10 +64,22 @@ The final exam has two types of questions:
    * try a few practice exams provided in the above two
    * write to NUS CIT (citbox25@nus.edu.sg) if you run into any technical issues.
    * if you do not have a working laptop for the exam, please contact IT Care itcare@nus.edu.sg directly for a laptop loan (for exam purpose only)
-1. ==**Examplify will use the fully locked-down**== mode during the exam. You will not be able to access Internet or any other applications/files in the computer.
-1. **The exam is open-book. Any written/printed documents are allowed, but hard copies only**.<br>
-   A PDF _Exam Reference_ file containing the full textbook, UML reference sheet, and the coding standard will be available within Examplify. We'll give you a copy of that file in advance %%(so that you can know what exactly is in that file)%%.<br>
-   Yes, Examplify allows you to search in that PDF file.
+1. ==**Examplify will use the ~~%%full%%~~ partial lock-down**== mode during the exam. That is, you will not be able to access Internet.<br>
+   **We aim to simulate a full lock-down** though. That is, you should access only the permitted applications/files in the computer.
+1. **The exam is open-book.**
+   * **Hard copies: Any written/printed documents are allowed**.
+   * **Soft copies: You may use ==only Adobe Acrobat Reader== to view ==only the _Exam Reference_ PDF file==.** #r#No other application or file## should be accessed during the exam. No other PDF software (e.g., Mac Preview, Edge), word processing software (e.g., MS Word), or note-taking software (e.g., Apple notes) are allowed either.
+     * The _Exam Reference_ contains the full textbook, UML reference sheet, and the coding standard will be available in Canvas.
+     * You are ==not allowed to annotate the _Exam Reference_ PDF file==. Use the provided copy as-is.
+
+   <box type="info" seamless>
+
+   The more stringent restrictions on the applications/file access is to simulate the full-lockdown mode that we intended to use for this exam. We had to switch to partial lockdown mode at the last minute due to an Examplify issue.
+
+   Why full-lockdown in the first place? Because of the risk of locally-installed LLMs affecting the integrity of the exam, NUS recommends using full-lockdown mode.
+
+   </box>
+
 1. **Not required to record the screen**.
 1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2{% if cs2103 %}, 3{% endif %}). We'll give you the password for opening each part at the exam, at the respective starting time of each part.<br>
   You will be notified when they are ready for download (typically, around 24 hours before the exam start time).
@@ -159,7 +171,7 @@ E. Gantt charts.
   %%Reason: to prevent students delaying the start of part 3 to gain extra drawing time.%%
 * You _may_ modify your UML diagrams _after_ you have started part 3 on Examplify.<br>
   %%Reminder: diagrams are not graded.%%
-* The _Exam Reference PDF_ file in this part will also include a copy of part 2 questions, in case you want to refer to them again during part 2 %%e.g., to check your diagram against the code given in the question%%.
+* You will be able to view part 2 questions through the Examplify PDF attachment, in case you want to refer to them again during part 3 %%e.g., to check your diagram against the code given in the question%%.
 {% endif %}
 
 </div>

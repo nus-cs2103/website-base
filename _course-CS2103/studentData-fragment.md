@@ -905,7 +905,7 @@
  'CS2103T-W11-3': 'AcademyAssist',
  'CS2103T-W11-4': 'PhysioPal',
  'CS2103T-W12-1': 'BlitzBiz',
- 'CS2103T-W12-2': 'Volunteams',
+ 'CS2103T-W12-2': 'VolunSync',
  'CS2103T-W12-3': 'UniLink',
  'CS2103T-W12-4': 'TalentHub',
  'CS2103T-W13-1': 'Cher',

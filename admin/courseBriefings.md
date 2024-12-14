@@ -129,7 +129,7 @@ In these two videos, we used an ==AI-driven text-to-speech tool== to create some
 
 <div id="exam-briefing-video">
 
-{{ panopto("02efb756-710c-4452-a43f-b22600829566", desc="[Course Briefing Video] Final Exam %%(17 minutes)%%", start_week="13") }}
+{{ panopto("c489b2e5-4b42-4a8e-b7ee-b2300085ab2b", desc="[Course Briefing Video] Final Exam %%(16 minutes)%%", start_week="13") }}
 </div>
 
 ****Course Topics Recap aka the 'Big Picture':****{.text-info} This video explains how course topics fit into a big picture, and as a bonus, ==touches on some exam-like questions== as well.
