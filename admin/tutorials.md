@@ -73,6 +73,14 @@
   1. To discourage 'no need to bother now; can look at the slides near the exam' attitude -- because most of the materials covered in tutorials are applicable to the project immediately.
 </div>
 
+<div tags="m--cs2113">
+
+**Tutorial slides**:
+* <span class="text-danger">Slides used in tutorials will not be distributed to students.</span> You are expected to take notes during the tutorial as necessary. Reasons:
+  1. Tutorial slides are meant to help the tutor deliver the tutorial, and not meant to be used as reference materials for you to study later). ==When some content is suitable as a reference material, we'll provide you a copy of it.==
+  1. To encourage some level of active engagement with the materials (e.g., taking notes) which is known to increase retention.
+  1. To discourage 'no need to bother now; can look at the slides near the exam' attitude -- because most of the materials covered in tutorials are applicable to the project immediately.
+</div>
 
 **The role of our tutors** is different from tutors in other courses.
 

@@ -721,9 +721,6 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 * **Learn** [**the _recipe for brainstorming user stories_** in the textbook → Specifying Requirements → UserStories →  Usage]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html#a-recipe-for-brainstorming-user-stories).<br>
   Also learn about <trigger trigger="click" for="modal:v10-brainstorming">brainstorming</trigger> and <trigger trigger="click" for="modal:v10-userstories">user stories</trigger>.<br>
-  We recommend you view the following video, as it has some additional commentary on the recipe to be used:
-
-{{ panopto("c0612db9-3cf1-4bab-a066-b07501387c0f", desc="Additional commentary on the recipe to be used") }}
 
 * **Follow the steps in the recipe mentioned above to arrive at user stories for the product**, with your team members.  <span tags="m--cs2103"><span class="text-danger">If you don't follow the recipe mentioned above</span>, you could end up with a different set of user stories than otherwise.
   </span>
@@ -1639,7 +1636,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
    {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
    {{ icon_info }} The `severity` and `type` labels are compulsory.
 1. **Report any problems you encounter** at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
-1. **Do NOT delete the `alpha` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
+1. **Do NOT delete the `catcher-smoke-test` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
 
 </panel>
 <p/>
@@ -2228,10 +2225,10 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 {{ embed_topic("tp-pe-fragment.md#pe-phases", "Admin " + icon_embedding + " tP → **PE Phases**", "3", indent="1", type="success") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_attend_the_makeup_PE">{{ icon_individual }} %%[if needed] Attend the makeup practical exam%%</span>
+<span id="heading_attend_the_makeup_PE">{{ icon_individual }} %%[if needed] Attend the backup practical exam%%</span>
 <div id="desc_attend_the_makeup_PE">
 
-* In the very unlikely event that the PE had to be cancelled due to technical issues, attend the makeup PE on this day.
+* In the very unlikely event that the PE had to be cancelled due to technical issues, attend the backup PE on this day.
 * Note: This is <span class="text-danger">not an alternative option for students who could not attend the PE</span>, as all students need to do the PE at the same time.
 </div>
 {#====================================================================================================================#}

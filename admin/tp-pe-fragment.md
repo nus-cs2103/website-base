@@ -307,11 +307,38 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 ##### <span class="badge bg-success">PE Phase 1 - Part IV</span> <span class="text-success">Trimming bugs [~half a day]</span>
 
-* **This segment gives testers a second chance revisit their bug reports, and choose upto 7 bugs that they wish to send to the dev team.** They will be allowed to change bug type/severity too (but will not be allowed to change bug title or the description).<br>
-  Objectives:
-  * Testers can correct their type/severity choices in case they chose incorrectly during the PE due to time pressure.
-  * Testers get a chance to withdraw lower impact (or uncertain) bugs so that there is less work for the dev team during the next phase.
-* **Procedure:** coming soon ...
+* **This segment gives testers a second chance revisit their bug reports, and choose upto 7 bugs that they wish to send to the dev team.** They will be allowed to change bug type/severity too (but will not be allowed to change bug title or the description).
+
+**Objectives:**
+* To give testers a chance to correct their type/severity choices in case they chose incorrectly during the PE due to time pressure.
+* To filter out lower-impact (or low-confidence) bugs so that there is less work for the dev team during the next phase.
+
+**Deadline:** Saturday 23:59
+<box type="tip" seamless>
+
+**Bonus marks for high accuracy rates!**{.text-success}
+
+You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a substantial bonus if >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual `type.*` and `severity.*` of the bug match the values you chose initially and the bug is accepted by the team).
+</box>
+
+****Procedure:****
+1. **Wait for the announcement** declaring this part of the PE to be open -- expected to be Friday night or Saturday morning.
+1. **Open CATcher** as before (i.e., go to [CATcher Web app](https://catcher-org.github.io/CATcher/), and login to the profile `{{ course_pair }} PE`).
+1. **Revise severity and bug type** of your bug reports as you see fit.
+    * {{ icon_important_big_red }} #r#Do not change the title or the description.##<br>
+      What if I updated the title/description by mistake? Not to worry, they will be reverted to the previous version (i.e., as at the end of part II) by our processing script.
+    * =={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
+      * Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase of the PE.
+      * As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower priority has a lower risk of being disputed by the dev team, giving you (and the dev team) a better chance of earning bonus marks for accuracy.
+1. **Decide which bugs should be sent to the dev team**. You may select ==no more than 7==.<br>
+   **Of these bugs, ==the highest scoring 5 bugs will be used for your tP grading==.** %%We allow you to select up to 7 bugs (instead of 5), to reduce your decision-stress (i.e., one or two wrong choices will not affect your marks).%%
+    * **Choose based on,**<br>
+      * **severity** -- %%because higher severity will earn higher marks.%% {{ bullet_tick_green }}
+      * **confidence** level that it is indeed a bug %%-- if the bug is eventually rejected, it will not earn any marks.%%
+      * **but not bug type** -- for this purpose, consider all bug types as equal. {{ bullet_x_red }}
+1. **Delete the remaining bug reports** using CATcher.
+    * What if I deleted a bug that I intended to keep? When you 'delete' a bug using CATcher, the corresponding issue is closed (but not deleted) in GitHub issue tracker. So, the deleting can be reversed by going to GitHub and re-opening that issue.
+    * What if I keep more than 7 bugs? In that case, we'll be taking the 7 bugs with the highest severity. When choosing between two bugs with same severity, we will be taking the bug that was created earlier.
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 

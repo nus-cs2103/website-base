@@ -51,8 +51,10 @@ week12: [
 week13: [
   {id: 'start_fixing_PED_bugs'},
   {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
+  {id: 'demo_the_product'},
   {id: 'prepare_for_PE'},
-  {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 4, time="")}
+  {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w13_start, 4, time="")},
+  {id: 'attend_the_makeup_PE', deadline: get_date(date_w13_start, 6, format=format_normal, time="1400-1600"), deadline_type: 'secondary'}
 ]
 } %}
 

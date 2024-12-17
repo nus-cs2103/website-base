@@ -7,8 +7,8 @@
 <mermaid>
 pie title
 "Participation" : 5
-"Individual Project (iP)" : 15
-"Team Project (tP)" : 50
+"Individual Project (iP)" : 20
+"Team Project (tP)" : 45
 "exam" : 30
 </mermaid>
 

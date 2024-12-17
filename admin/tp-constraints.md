@@ -76,7 +76,7 @@ The software should work on the Windows, Linux, and OS-X platforms. Even if you 
 {%- endcall  %}
 
 {% call show_constraint("Constraint-Java-Version") -%}
-The software should work on a computer that has version 11 of Java %%i.e., no other Java version installed%%.
+The software should work on a computer that has version 17 of Java %%i.e., no other Java version installed%%.
 {%- endcall  %}
 
 {% call show_constraint("Constraint-Portable") -%}

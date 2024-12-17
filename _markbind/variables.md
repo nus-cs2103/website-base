@@ -8,18 +8,18 @@
 <variable name="S">1</variable>
 <variable name="semester">AY2425S{{ S }}</variable>
 <variable name="period">2024 Aug-Nov</variable>
-<variable name="current_week">-1</variable>
+<variable name="current_week">15</variable>
 
 <variable name="algolia">yes</variable>
 
-<variable name="canvas_course_id">x</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQ3yMfxtxatSX5XxWnZparVJN9UkEOu504YHyShketpCzdqQth4JDcwQwhWvOBi-XH8-gkdgMgGpg1t/pub?embedded=true</variable>
-<variable name="url_coursemology_classroom">https://coursemology.org/courses/x</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="canvas_course_id">64949</variable>
+<variable name="url_instructors">https://docs.google.com/document/d/1mGSddeNsTVM0At_05Y7WvyhThth_FYvX_S9VKQcdjAA/pub?embedded=true</variable>
+<variable name="url_coursemology_classroom">https://coursemology.org/courses/2864</variable>
+<variable name="url_ms_teams_class">https://teams.microsoft.com/l/team/19%3AhLFK5LfPKxKIFKF0-85fVj4iCRMMYk_B5pZqwq02KFg1%40thread.tacv2/conversations?groupId=b3635055-9205-487e-ab33-3c6974ba171e&tenantId=5ba5ef5e-3109-4e77-85bd-cfeb0d347e82</variable>
 
 <variable name="date_w1_start">2024-08-12</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
-<variable name="recess_after_week">7</variable>
+<variable name="recess_after_week">6</variable>
 <variable name="lecture_venue">LT16</variable>
 <variable name="time_lecture_start">1600</variable>
 <variable name="time_lecture_end">1800</variable>
