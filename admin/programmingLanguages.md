@@ -31,7 +31,7 @@ The exam expects you to know Java to the extent that you should be familiar with
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 
-We require you to use **Java 17** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java17) or another alternative such as the OpenJDK version) for all course work. It is your duty to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
+We require you to use **Java 17** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java17) or another alternative such as the OpenJDK version) for all course work. It is your responsibility to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
 
 **If you have Java 8** (a particularly 'sticky' version of Java) in your computer, we recommend removing it, to prevent using it unintentionally.
 
@@ -50,7 +50,7 @@ To reiterate, #r#it is not enough that you have Java 17##, it needs to be ==the 
 
 1. Download the latest `addressbook.jar` from [here](https://github.com/se-edu/addressbook-level3/releases).
 1. Open a terminal and navigate to the location where you saved the above file.
-1. Check if you are using Java 11 by running the `java -version` command.
+1. Check if you are using Java 17 by running the `java -version` command.
 1. Launch the JAR using the `java -jar addressbook.jar` command.
 1. If the text in the GUI appears garbled/unreadable, this advisory applies to you.
 

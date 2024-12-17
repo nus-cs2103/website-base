@@ -6,10 +6,10 @@
 
 <mermaid>
 pie title
-"Participation" : 5
-"Individual Project (iP)" : 15
-"Team Project (tP)" : 50
-"exam" : 30
+"Participation" : {{ marks_participation }}
+"Individual Project (iP)" : {{ marks_ip }}
+"Team Project (tP)" : {{ marks_tp }}
+"exam" : {{ marks_exam }}
 </mermaid>
 
 <puml name="gradeBreakdown.png">

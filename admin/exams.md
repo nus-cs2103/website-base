@@ -18,14 +18,12 @@ Instructions below are from the previous semester. Will be updated closer to the
 
 <div tags="m--cs2113">
 
-* The exam is open-book.
-* We will use Examplify for the final exam this time.
-* Examplify is set to block internet access during the exam.
-* However, you are allowed to refer to the PDF version of the textbook and your own notes on your laptop.
-* Permitted materials: <br>
-  PDF of the course textbook, lecture slides (allowed format: PPT/PDF), self-created notes (please convert everything to PDF). <br>
-  A printed copy of the course textbook, handwritten notes. <br>
-  No other device other than the laptop you are using to take the exam is allowed; however, NUS-approved calculators are allowed.
+* We will use Examplify for the final exam.
+* The exam is **closed-book** (i.e., secure exam).
+* However, the course textbook (pdf version) and UML reference sheet will be made available to you via the exam attachment.
+* Permitted materials:<br>
+  1 A4 sized cheat sheet.<br>
+  NUS-approved calculator.
 
 ## Exam structure
 
@@ -44,7 +42,8 @@ The final exam has two types of questions:
 
 ## Exam briefing, mock exam, practice exam paper
 
-* There will be an exam briefing in the penultimate lecture that covers Examplify usage.
+* Please watch the [Examplify briefing video here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=48df9509-7daf-41f4-9ee8-ae22008a7383)
+* [Examplify briefing slides](https://nus.atlassian.net/wiki/spaces/DAstudent/pages/22511667/Examplify+Student+Briefing+Slides); look for In-Person Assessment
 * You will be given a practice exam paper (smaller than the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.
 </div>
 

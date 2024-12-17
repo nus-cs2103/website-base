@@ -1,1 +1,2 @@
-<include src="notices-cs2103-fragment.md" />
+<include src="../../admin/common-notices-fragment.md#about-summary-tab" />
+<include src="../../admin/common-notices-fragment.md#semester-start" />

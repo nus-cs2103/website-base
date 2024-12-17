@@ -740,10 +740,10 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 
 * **Learn** [**the _recipe for brainstorming user stories_** in the textbook → Specifying Requirements → User Stories →  Usage]({{ baseUrl }}/se-book-adapted/chapters/specifyingRequirements.html#a-recipe-for-brainstorming-user-stories).<br>
-  Also learn about <trigger trigger="click" for="modal:v10-brainstorming">brainstorming</trigger> and <trigger trigger="click" for="modal:v10-userstories">user stories</trigger>.<br>
+  Also learn about <trigger trigger="click" for="modal:v10-brainstorming">brainstorming</trigger> and <trigger trigger="click" for="modal:v10-userstories">user stories</trigger>.{% if cs2103 %}<br>
   We recommend you view the following video, as it has some additional commentary on the recipe to be used:
 
-{{ panopto("c0612db9-3cf1-4bab-a066-b07501387c0f", desc="Additional commentary on the recipe to be used") }}
+{{ panopto("c0612db9-3cf1-4bab-a066-b07501387c0f", desc="Additional commentary on the recipe to be used") }}{% endif %}
 
 * **Follow the steps in the recipe mentioned above to arrive at user stories for the product**, with your team members.  <span tags="m--cs2103"><span class="text-danger">If you don't follow the recipe mentioned above</span>, you could end up with a different set of user stories than otherwise.
   </span>
@@ -751,7 +751,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 * **User stories for what version?** At this stage, collect user stories to cover at least the final version you hope to deliver at the end of the semester. It is OK to go even beyond that %%(reason: we are simulating a project that will continue even after the semester is over)%%.{% if cs2103 %}<br>
   Do not omit user stories already covered by the features in AB3 %%i.e., the user story should be recorded even if AB3 already caters for it.%%{% endif %}
 
-* **How many user stories?** Aim to collect more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other competing products.%%
+* **How many user stories?** Aim to collect more user stories than you can deliver in the project. %%Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non-obvious' ones that you think are likely to be missed by other competing products.%%
 
 * **User stories of what size?** Normally, it is fine to use _epic_-level user stories in the early stages of a project but given this is a small project, you may want to eventually break them down to smaller user stories (i.e., small enough for one person to implement in 1-2 days). Some examples (from the iP product domain):
   * {{ bad }} As a user, I can track my schedule, so that I can know when to do things.<br>
