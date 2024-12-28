@@ -23,9 +23,10 @@
 <variable name="lecture_venue">LT15</variable>
 <variable name="time_lecture_start">1600</variable>
 <variable name="time_lecture_end">1800</variable>
-<variable name="time_t_lecture_start">1200</variable>
-<variable name="time_t_lecture_end">1400</variable>
-<variable name="ped_week">12</variable>
+<variable name="time_t_lecture_start">1600</variable>
+<variable name="time_t_lecture_end">1800</variable>
+<variable name="ped_week">11</variable>
+<variable name="pe_week">12</variable>
 
 <variable name="ip_name">iP</variable>
 <variable name="ip_repo_name">ip</variable>
@@ -83,6 +84,10 @@
 <variable name="Session_name">Tutorial</variable>
 
 <variable name="tp_repo_name">tp</variable>
+
+<variable name="pe_schedule_ideal">{{ "yes" if (ped_week == "11" and pe_week == "12") else "" }}</variable>
+<variable name="pe_schedule_late">{{ "yes" if (ped_week == "12" and pe_week == "13") else "" }}</variable>
+<variable name="pe_schedule_stretched">{{ "yes" if (ped_week == "11" and pe_week == "13") else "" }}</variable>
 
 <variable name="w6_days">{{ 14 if recess_after_week == "6" else 7 }}</variable>
 <variable name="w7_days">{{ 14 if recess_after_week == "7" else 7 }}</variable>

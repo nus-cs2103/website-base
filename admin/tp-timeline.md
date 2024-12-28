@@ -15,8 +15,8 @@
   iter2: "Iteration 2 (W8)",
   iter3: "Iteration 3 (W9)",
   iter4: "Iteration 4 (W10)",
-  iter5: "Iteration 5 (W11)                +(extra week)",
-  iter6: "Iteration 6 (W13)"
+  iter5: "Iteration 5 (W11)" if pe_schedule_ideal else "Iteration 5 (W11)                +(extra week)",
+  iter6: "Iteration 6 (W12)" if pe_schedule_ideal else  "Iteration 6 (W13)"
 } if cs2103 else {
   w3: weekly_tp_themes.w3.name + " (W3)",
   w4: weekly_tp_themes.w4.name + " (W4)",
@@ -24,7 +24,7 @@
   w6: weekly_tp_themes.w6.name + " (W6)",
   w7: weekly_tp_themes.w7.name + " (W7)",
   iter1: "Iteration 1 (W8-W9)",
-  iter2: "Iteration 2 (W10-W11)                                      +(extra week)",
+  iter2: "Iteration 2 (W10-W11)" if pe_schedule_ideal else "Iteration 2 (W10-W11)                                      +(extra week)",
   iter3: "Iteration 3 (W13)"
 }%}
 
@@ -44,7 +44,20 @@ then [{{ g.w6 }}] lasts 3 days and starts 5 days after [{{ g.w5 }}]'s end
 {% macro project_gantt_iterations(g) %}
 <puml name="tpGanttChart-iterations.png">
 @startgantt
-{% if cs2103 %}
+{% if cs2103 and pe_schedule_ideal %}
+[{{ g.iter1 }}] lasts 7 days
+[{{ version_practice }}] happens at [{{ g.iter1 }}]'s end
+then [{{ g.iter2 }}] lasts 7 days
+[{{ version_first }}] happens at [{{ g.iter2 }}]'s end
+then [{{ g.iter3 }}] lasts 7 days
+[{{ version_mvp }}] happens at [{{ g.iter3 }}]'s end
+then [{{ g.iter4 }}] lasts 7 days
+[{{ version_alpha }}] happens at [{{ g.iter4 }}]'s end
+then [{{ g.iter5 }}] lasts 7 days
+[{{ version_penultimate }}] happens at [{{ g.iter5 }}]'s end
+then [{{ g.iter6 }}] lasts 3 days
+[{{ version_final }}] happens at [{{ g.iter6 }}]'s end
+{% elseif cs2103 and pe_schedule_late %}
 [{{ g.iter1 }}] lasts 7 days
 [{{ version_practice }}] happens at [{{ g.iter1 }}]'s end
 then [{{ g.iter2 }}] lasts 7 days
@@ -188,9 +201,9 @@ Note how the <span class="text-success">:fas-crosshairs: **Product goal**</span>
 </div>
 
 
-#### {{ badge("W" + (tfw + 8))}} <span class="badge bg-secondary">W12</span> Iter.5 %%[ --{{ weekly_tp_themes.w11.name }}-- ]%%
+#### {{ badge("W" + (tfw + 8))}} {% if pe_shedule_late %}<span class="badge bg-secondary">W12</span>{% endif %} Iter.5 %%[ --{{ weekly_tp_themes.w11.name }}-- ]%%
 
---%%{{ icon_info }} This iteration has an extra week, on account of holidays.%%--
+{% if pe_shedule_late %}--%%{{ icon_info }} This iteration has an extra week, on account of holidays.%%--{% endif %}
 
 <div id="v15-goals" class="indented">
 
@@ -206,7 +219,7 @@ This version (i.e., {{ version_penultimate }}) will undergo a limited beta testi
 </box>
 
 
-#### {{ badge("W" + (tfw + 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w13.name }}-- ]%%
+#### {{ badge("W" + (tfw + 9 if pe_schedule_ideal else 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w13.name }}-- ]%%
 
 <div id="v16-goals" class="indented">
 
