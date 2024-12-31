@@ -16,7 +16,8 @@
   iter3: "Iteration 3 (W9)",
   iter4: "Iteration 4 (W10)",
   iter5: "Iteration 5 (W11)" if pe_schedule_ideal else "Iteration 5 (W11)                +(extra week)",
-  iter6: "Iteration 6 (W12)" if pe_schedule_ideal else  "Iteration 6 (W13)"
+  iter6: "Iteration 6 (W12)" if pe_schedule_ideal else "Iteration 6 (W13)",
+  iter7: "Post-release (W13)" if pe_schedule_ideal else ""
 } if cs2103 else {
   w3: weekly_tp_themes.w3.name + " (W3)",
   w4: weekly_tp_themes.w4.name + " (W4)",
@@ -57,6 +58,8 @@ then [{{ g.iter5 }}] lasts 7 days
 [{{ version_penultimate }}] happens at [{{ g.iter5 }}]'s end
 then [{{ g.iter6 }}] lasts 3 days
 [{{ version_final }}] happens at [{{ g.iter6 }}]'s end
+then [{{ g.iter7 }}] lasts 8 days
+[{{ g.iter7 }}] is 0% completed
 {% elseif cs2103 and pe_schedule_late %}
 [{{ g.iter1 }}] lasts 7 days
 [{{ version_practice }}] happens at [{{ g.iter1 }}]'s end
@@ -219,7 +222,7 @@ This version (i.e., {{ version_penultimate }}) will undergo a limited beta testi
 </box>
 
 
-#### {{ badge("W" + (tfw + 9 if pe_schedule_ideal else 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w13.name }}-- ]%%
+#### {{ badge("W" + (tfw + 9 if pe_schedule_ideal else 10))}} Iter.6 %%[ --{{ weekly_tp_themes.w12.name if pe_schedule_ideal else weekly_tp_themes.w13.name }}-- ]%%
 
 <div id="v16-goals" class="indented">
 

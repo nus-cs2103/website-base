@@ -437,7 +437,7 @@ For now, give some thoughts to the following questions (the answer will be neede
 
 ++**What's happening this week:**++{.text-info}
 
-{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 45, 67) }}
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 48 if pe_schedule_ideal else 45, 67) }}
 {{ show_tp_goals(version_alpha, "v14-goals") }}
 
 **In this iteration, we learn from past iterations, and aim to better plan and better deliver another functional increment** that would get you very very close to the final version in terms of raw functionality.<br>
@@ -474,7 +474,7 @@ Now that you have worked with AB3 codebase for a while, if you have any suggesti
 
 ++**What's happening this week:**++{.text-info}
 
-{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 60, 80) }}
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 65 if pe_schedule_ideal else 80, 80) }}
 {{ show_tp_goals(version_penultimate, "v15-goals") }}
 
 **This iteration focuses on applying internal quality control before the product is exposed to outsiders**. %%'Outsiders' here refer to other teams that will be testing your product during the practical exam dry run (PE-D).%%<br>
@@ -500,18 +500,13 @@ At the same time, the UG and the DG needs to be updated, as given in task {{ thu
 
 ++**What's happening this week:**++{.text-info}
 
-{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 75, 80) }}
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 78 if pe_schedule_ideal else 75, 90 if pe_schedule_ideal else 80) }}
 
-We are still in iteration `{{ version_penultimate }}`, due to this iteration being stretched over two weeks.
-
-{% endcall %}
-{#====================================================================================================================#}
-{% call show_tp_week_intro("cs2103", 13) %}
-
-++**What's happening this week:**++{.text-info}
-
-{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 86, 92) }}
+{% if pe_schedule_ideal %}
 {{ show_tp_goals(version_final, "v16-goals") }}
+{% elseif pe_schedule_late %}
+We are still in iteration `{{ version_penultimate }}`, due to this iteration being stretched over two weeks.
+{% endif %}
 
 ++**Things to note:**++{.text-info}
 
@@ -521,6 +516,16 @@ We are still in iteration `{{ version_penultimate }}`, due to this iteration bei
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " Policy on reuse", "1", indent="1") }}
 </box>
+
+{% endcall %}
+{#====================================================================================================================#}
+{% call show_tp_week_intro("cs2103", 13) %}
+
+++**What's happening this week:**++{.text-info}
+
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 90 if pe_schedule_ideal else 86, 85 if pe_schedule_ideal else 92) }}
+{{ show_tp_goals(version_final, "v16-goals") if pe_schedule_late else '' }}
+
 {% endcall %}
 {#====================================================================================================================
  # CS2113 Weekly Intros
@@ -951,6 +956,8 @@ Yes, making these decisions is not easy -- and that's why we want you to think a
 
 **Duplicate handling:** What rules are used to determine if two contacts are duplicates? %%e.g., is having the same name enough for two contacts to be considered duplicates, or all details need to be the same?%%<br>
 How does the application react to such duplicate entries? Reject or accept? Why?
+
+**Possible errors:** A list of potential errors related to the feature (excluding the ones mentioned above already) %%e.g., editing a contact in a way that it becomes inconsistent with the rest of the data%%, and how the app responds to each error %%e.g., the error message%%.
 
 **Relevant UI mock-ups** (unless the UI will be exactly the same as AB3): %%they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary%%
 
@@ -1758,7 +1765,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 <p/>
 </div>
 
-{% if cs2103 and semester != 'AY2324S2'%}
+{% if cs2103 and catcher_load_testing %}
 * **[Heads up] Load-testing CATcher will be done during the upcoming {{ lecture_name }}** ({{ get_date(date_w10_start, 4, time="") }}), during the first 15 minutes of
 {{ lecture_name_short }}. This is ==different from smoke-testing== you did above, and this will count for participation separately.<br>
   Therefore, remember to ==attend the {{ lecture_name_short }} (via Zoom or F2F) at least for the first 15 minutes== (this activity cannot be done any other time).
@@ -2055,7 +2062,7 @@ Also see:
 <span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>
 <div id="desc_attend_the_PED">
 
-* The practical exam dry run (PE-D) will be held in the coming {{ lecture_name }}. It is ==graded==. See the panel below for more info.
+* The practical exam dry run (PE-D) will be held in this {{ lecture_name }}. It is ==graded==. See the panel below for more info.
 
 {{ embed_topic("tp-ped.md#tp-practicalexam-dry-run", "Admin " + icon_embedding + " tP Deliverables → **Practical Exam - Dry Run**", "1", indent="1") }}
 </div>
@@ -2404,6 +2411,13 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 
 * In the very unlikely event that the PE had to be cancelled due to technical issues, attend the makeup PE on this day.
 * Note: This is <span class="text-danger">not an alternative option for students who could not attend the PE</span>, as all students need to do the PE at the same time.
+</div>
+{#====================================================================================================================#}
+<span id="heading_do_post_release_tasks">{{ icon_team }}/{{ icon_individual }} Attend to post-release tasks</span>
+<div id="desc_do_post_release_tasks">
+
+This is the time to attend to post-release tasks (as `{{ version_final }}` was considered a public release). In the context of our course, this translates to attending to the remaining phases of the PE.
+
 </div>
 {#====================================================================================================================#}
 

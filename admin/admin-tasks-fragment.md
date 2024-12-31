@@ -182,9 +182,9 @@
 * Submit this quiz (on Canvas) to confirm that you know important details about the PE.
 </div>
 {#====================================================================================================================#}
-<span id="heading_join_catcher_load_testing">{% if semester == "AY2324S2" %}~~Take part in the CATcher load testing~~{% else %}Take part in the CATcher load testing{% endif %}</span>
+<span id="heading_join_catcher_load_testing">{% if not catcher_load_testing %}~~Take part in the CATcher load testing~~{% else %}Take part in the CATcher load testing{% endif %}</span>
 <div id="desc_join_catcher_load_testing">
-{% if semester == "AY2324S2" %}
+{% if not catcher_load_testing %}
 * This task is not applicable for this semester...
 {% else %}
 * Attend the live {{ lecture_name }} and take part in the CATcher load/stress testing session that will take place during the first 15 minutes of the

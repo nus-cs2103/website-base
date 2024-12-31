@@ -378,13 +378,13 @@ It is up to the team to decide. However, we discourage unilateral PR merging i.e
 <div id="faq-tpMultiStepCmd-Q">Why not allow user to input the command one field at a time?</div>
 <div id="faq-tpMultiStepCmd-A">
 
-While this _multi-step-command_ approach (i.e., giving the user a series of prompts to enter various data elements required to perform an action) has its benefits (e.g., no need to memorize the command format), a deeper look reveals why the _one-shot-command_ approach is better.
+While this _multistep-command_ approach (i.e., giving the user a series of prompts to enter various data elements required to perform an action) has its benefits (e.g., no need to memorize the command format), a deeper look reveals why the _one-shot-command_ approach is better.
 
-Before delving any further, note how leading CLI-centric software such as Git and Linux don't use the multi-step approach either. Why?
+Before delving any further, note how leading CLI-centric software such as Git and Linux don't use the multistep approach either. Why?
 
-The multi-step approach basically results in a 'text-based GUI simulation' that is harder to use than an actual GUI (obviously), whereas a well-designed CLI in an expert's hands can perform tasks faster than an equivalent GUI (which is what we are going for). A person good at typing and remembers the command can type a command faster than a user going through a type-read-type-read sequence required by the multi-step-command. Now imagine user made a mistake in the response to an earlier prompt -- correcting that would take a lot more work.
+The multistep approach basically results in a 'text-based GUI simulation' that is harder to use than an actual GUI (obviously), whereas a well-designed CLI in an expert's hands can perform tasks faster than an equivalent GUI (which is what we are going for). A person good at typing and remembers the command can type a command faster than a user going through a type-read-type-read sequence required by the multistep-command. Now imagine user made a mistake in the response to an earlier prompt -- correcting that would take a lot more work.
 
-That being said, multi-step-commands can complement the one-shot-command approach in specific cases e.g.,
+That being said, multistep commands can complement the one-shot-command approach in specific cases e.g.,
 
 * as a crutch for new users to learn the command format
 * to be used for rarely-used tasks or tasks requiring multiple steps (e.g., importing data from a file)

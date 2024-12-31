@@ -44,14 +44,22 @@ week10: [
 ],
 week11: [
   {id: 'submit_post_lecture_quiz', graded: true}
+] if pe_schedule_late else [
+  {id: 'submit_post_lecture_quiz', graded: true},
+  {id: 'submit_pe_mode_selection', deadline: "COMPULSORY | " + get_date(date_w11_start, 5), deadline_type: 'danger'}
 ],
 week12: [
   {id: 'submit_reuse_declaration', deadline: "COMPULSORY | " + get_date(date_w13_start, 1), deadline_type: 'danger', graded: true},
   {id: 'submit_pe_mode_selection', deadline: "COMPULSORY | " + get_date(date_w12_start, 5), deadline_type: 'danger'},
   {id: 'submit_feedback_for_tutors'}
+] if pe_schedule_late else [
+  {id: 'submit_reuse_declaration', deadline: "COMPULSORY | " + get_date(date_w13_start, 1), deadline_type: 'danger', graded: true},
+  {id: 'submit_feedback_for_tutors'},
+  {id: 'submit_final_peer_evaluations', deadline: get_date(date_w12_start, 3), graded: true},
+  {id: 'submit_pe_readiness_quiz', deadline: "before the PE", deadline_type: 'danger', graded: true}
 ],
 week13: [
   {id: 'submit_final_peer_evaluations', deadline: get_date(date_w13_start, 3), graded: true},
   {id: 'submit_pe_readiness_quiz', deadline: "before the PE", deadline_type: 'danger', graded: true}
-]
+] if pe_schedule_late else []
 } %}

@@ -27,6 +27,7 @@
 <variable name="time_t_lecture_end">1800</variable>
 <variable name="ped_week">11</variable>
 <variable name="pe_week">12</variable>
+<variable name="catcher_load_testing"></variable> <!-- keep empty if load testing falls on a holiday -->
 
 <variable name="ip_name">iP</variable>
 <variable name="ip_repo_name">ip</variable>
@@ -96,7 +97,7 @@
 <variable name="format_full_day">dddd</variable>
 <variable name="date_first_lecture">{{ date_w1_start | date("YYYY-MM-DD", 4) }}</variable>
 <variable name="day_lecture">{{ date_first_lecture | date(format_full_day) }}</variable>
-<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 92) }}</variable>
+<variable name="date_final_submission">{{ date_w1_start | date("YYYY-MM-DD", 92 if pe_schedule_late else 85) }}</variable>
 <variable name="time_final_submission">14:00</variable>
 <variable name="date_w2_start">{{ date_w1_start | date("YYYY-MM-DD", 7) }}</variable>
 <variable name="date_w3_start">{{ date_w2_start | date("YYYY-MM-DD", 7) }}</variable>
