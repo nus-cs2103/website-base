@@ -41,14 +41,28 @@ week10: [
 week11: [
   {id: 'update_ug_dg'},
   {id: 'review_others_dg', deadline: 'during the tutorial', graded: true},
-  {id: 'deliver_penultimate_version', deadline: get_date(date_w12_start, 3, time="23:59")},
+  {id: 'deliver_penultimate_version', deadline: get_date(date_w11_start, 3, time="23:59")},
+  {id: 'draft_the_ppp'},
+  {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w11_start, 4, time=""), graded: true}
+] if pe_schedule_ideal else [
+  {id: 'update_ug_dg'},
+  {id: 'review_others_dg', deadline: 'during the tutorial', graded: true},
+  {id: 'deliver_penultimate_version', deadline: get_date(date_w11_start, 3, time="23:59")},
   {id: 'draft_the_ppp'}
 ],
 week12: [
-{id: 'finish_remaining_tasks'},
+  {id: 'start_fixing_PED_bugs'},
+  {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
+  {id: 'demo_the_product'},
+  {id: 'prepare_for_PE'},
+  {id: 'attend_the_PE', deadline: 'during the lecture on ' + get_date(date_w12_start, 4, time="")}
+] if pe_schedule_ideal else [
+  {id: 'finish_remaining_tasks'},
   {id: 'attend_the_PED', deadline: 'During the lecture on ' + get_date(date_w12_start, 4, time=""), graded: true}
 ],
 week13: [
+  {id: 'do_post_release_tasks'}
+] if pe_schedule_ideal else [
   {id: 'start_fixing_PED_bugs'},
   {id: 'submit_final_deliverables', deadline: get_date(date_final_submission, time=time_final_submission)},
   {id: 'demo_the_product'},
@@ -59,14 +73,26 @@ week13: [
 
 {% set weekly_tp_themes = {
   w3: {name: "Kickoff"},
-  w4: {name: "Set direction"},
-  w5: {name: "Gather requirements"},
-  w6: {name: "Define MVP, set up repo"},
-  w7: {name: "Plan the iteration"},
+  w4: {name: "Set Direction"},
+  w5: {name: "Gather Requirements"},
+  w6: {name: "Define MVP, Set up Repo"},
+  w7: {name: "Plan the Iteration"},
   w8: {name: "mid-" + version_mvp},
   w9: {name: version_mvp, milestone: version_mvp},
   w10: {name: "mid-" + version_penultimate},
   w11: {name: version_penultimate, milestone: version_penultimate},
-  w12: {name: "Extra week for " + version_penultimate},
+  w12: {name: version_final, milestone: version_final},
+  w13: {name: "Post-Release Tasks"}
+} if pe_schedule_ideal else {
+  w3: {name: "Kickoff"},
+  w4: {name: "Set Direction"},
+  w5: {name: "Gather Requirements"},
+  w6: {name: "Define MVP, Set up Repo"},
+  w7: {name: "Plan the Iteration"},
+  w8: {name: "mid-" + version_mvp},
+  w9: {name: version_mvp, milestone: version_mvp},
+  w10: {name: "mid-" + version_penultimate},
+  w11: {name: version_penultimate, milestone: version_penultimate},
+  w12: {name: "Extra Week for " + version_penultimate},
   w13: {name: version_final, milestone: version_final}
 } %}

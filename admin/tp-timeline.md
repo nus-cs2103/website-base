@@ -26,7 +26,8 @@
   w7: weekly_tp_themes.w7.name + " (W7)",
   iter1: "Iteration 1 (W8-W9)",
   iter2: "Iteration 2 (W10-W11)" if pe_schedule_ideal else "Iteration 2 (W10-W11)                                      +(extra week)",
-  iter3: "Iteration 3 (W13)"
+  iter3: "Iteration 3 (W12)" if pe_schedule_ideal else "Iteration 3 (W13)",
+  iter4: "Post-release (W13)" if pe_schedule_ideal else ""
 }%}
 
 
@@ -74,7 +75,17 @@ then [{{ g.iter5 }}] lasts 14 days
 [{{ version_penultimate }}] happens at [{{ g.iter5 }}]'s end
 then [{{ g.iter6 }}] lasts 3 days
 [{{ version_final }}] happens at [{{ g.iter6 }}]'s end
-{% else %}
+{% elseif cs2113 and pe_schedule_ideal%}
+[Plan iteration 1 (W7)] lasts 7 days
+then [{{ g.iter1 }}] lasts 14 days
+[{{ version_first }}] happens at [{{ g.iter1 }}]'s end
+then [{{ g.iter2 }}] lasts 14 days
+[{{ version_penultimate }}] happens at [{{ g.iter2 }}]'s end
+then [{{ g.iter3 }}] lasts 3 days
+[{{ version_final }}] happens at [{{ g.iter3 }}]'s end
+then [{{ g.iter4 }}] lasts 8 days
+[{{ g.iter4 }}] is 0% completed
+{% elseif cs2113 and pe_schedule_late%}
 [Plan iteration 1 (W7)] lasts 7 days
 then [{{ g.iter1 }}] lasts 14 days
 [{{ version_first }}] happens at [{{ g.iter1 }}]'s end
@@ -143,9 +154,9 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 * Aim to deliver an <tooltip content="Minimum Viable Product">MVP</tooltip> version of the product.
 
 
-#### {{ badge("W" + (tfw + 7))}} {{ badge("W" + (tfw + 8))}} <span class="badge bg-secondary">W12</span> Iteration 2 → {{ version_penultimate }}
+#### {{ badge("W" + (tfw + 7))}} {{ badge("W" + (tfw + 8))}} {% if pe_schedule_late %}<span class="badge bg-secondary">W12</span>{% endif %} Iteration 2 → {{ version_penultimate }}
 
-%%{{ icon_info }} Note: This iteration is given an extra week, to account for the holidays in the middle.%%
+{% if pe_schedule_late %}%%{{ icon_info }} Note: This iteration is given an extra week, to account for the holidays in the middle.%%{% endif %}
 
 * This version will be tested by peers, and you will receive the bug reports without any penalty.{{ bullet_target_green }}
 * Aim to **deliver all <tooltip content="i.e., all features you plan to deliver in this project at the end of the semester">target features</tooltip>** so that you can get them tested for free.

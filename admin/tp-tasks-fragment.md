@@ -590,7 +590,7 @@ We are still in iteration `{{ version_penultimate }}`, due to this iteration bei
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2113", 10) %}
 
-{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 43, 70) }}
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 50 if pe_schedule_ideal else 43, 70) }}
 
 ++**Things to note:**++{.text-info}
 
@@ -603,28 +603,29 @@ We are still in iteration `{{ version_penultimate }}`, due to this iteration bei
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2113", 11) %}
 
-{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 58, 70) }}
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 63 if pe_schedule_ideal else 58, 70) }}
 
 ++**Things to note:**++{.text-info}
 
 * **Aim to reach the final version in this iteration itself**: ==After this iteration is over, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening at the end of this iteration).<br>
-  To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).
-* **You have two weeks to finish tP tasks listed under this week** due to the extra week added on account of holidays.
+  To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).{% if pe_schedule_late %}
+* **You have two weeks to finish tP tasks listed under this week** due to the extra week added on account of holidays.{% endif %}
 
 {% endcall %}
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2113", 12) %}
 
-{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 73, 70) }}
-
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 78 if pe_schedule_ideal else 73, 80 if pe_schedule_ideal else 70) }}
+{% if pe_schedule_late %}
 ++**Things to note:**++{.text-info}
 
 Use this week extra week to finish up any leftover work from the previous week.
+{% endif %}
 {% endcall %}
 {#====================================================================================================================#}
 {% call show_tp_week_intro("cs2113", 13) %}
 
-{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 85, 90) }}
+{{ show_tp_iterations_gantt("tpGanttChart-iterations.png", "", 90 if pe_schedule_ideal else 85, 80 if pe_schedule_ideal else 90) }}
 
 {% endcall %}
 {#====================================================================================================================#}
