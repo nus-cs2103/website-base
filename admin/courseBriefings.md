@@ -21,21 +21,21 @@
 <box seamless>
 
 **{{ icon_graded }} Watching course briefing videos counts for participation.**<br>
-When watching a briefing video for the first time, avoid <tooltip content="dragging a slider or timeline bar back and forth">scrubbing</tooltip> or jumping ahead/around in the video timeline, as this can interfere with the video platform's capturing of what part of the video you actually watched. However, watching at faster speeds is fine.
+When watching a briefing video for the first time, avoid <tooltip content="dragging the slider or timeline bar back and forth">scrubbing</tooltip> or jumping ahead/around in the video timeline, as this can interfere with the video platform's capturing of what part of the video you actually watched. However, watching at faster speeds is fine.
 
 **:fas-closed-captioning: We have added closed captioning support** for course briefing videos.
 </box>
 
 ****1. Welcome to the Course****:{.text-info}
-{{ panopto(desc="1 min", "999708f4-bc1d-45bb-85a3-b1c400342f2c", start_week="0") }}
+{{ panopto(desc="1 min", "999708f4-bc1d-45bb-85a3-b1c400342f2c", start_week="1") }}
 
 <span class="text-info">****2. Course Goals****</span>: How the goals of this course shape its structure (possibly different from other courses), and how it should be approached by students.
-{{ panopto(desc="9 mins", "a4d6f92e-b12f-4046-853b-b0fb01058143", start_week="0") }}
+{{ panopto(desc="9 mins", "a4d6f92e-b12f-4046-853b-b0fb01058143", start_week="1") }}
 
 
 <span class="text-info">****3. Week 1 Briefing****</span>: As this is the first weekly briefing, **it also covers some general points relevant to all future weeks**.
 
-{{ panopto(desc="4 mins", "267ac3b6-25a9-48cf-b3e3-b1c400f8696c", start_week="0") }}
+{{ panopto(desc="4 mins", "267ac3b6-25a9-48cf-b3e3-b1c400f8696c", start_week="1") }}
 </div>
 </panel>
 

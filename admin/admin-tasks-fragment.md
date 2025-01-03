@@ -12,7 +12,7 @@
 <span id="heading_submit_pre_lecture_quiz">Submit prereq topics quiz</span>
 <div id="desc_submit_pre_lecture_quiz">
 
-* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz (aka prereq topics quiz)`** (on Canvas) to demonstrate your knowledge of those topics.<br>
+* **Read prerequisite  [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Week 1 Quiz (aka prereq topics quiz)`** (on Canvas) to demonstrate your grasp of those topics.<br>
    **This quiz counts for participation** (as indicated by the {{ icon_graded }} icon above).
 
 {{ show_faq("whenCanWeSeeQuizAnswers") }}
@@ -40,7 +40,7 @@
 <span id="heading_submit_pre_course_survey">Submit the pre-course survey</span>
 <div id="desc_submit_pre_course_survey">
 
-* **Submit the pre-course survey** (==compulsory== because it collects some important information about you e.g., your GitHub username.) -- will be open on Canvas, latest by **Week 1 Monday**.
+* **Submit the pre-course survey** (==compulsory== because it collects some important information about you e.g., your GitHub username.) -- will be open on Canvas, by Week 1 Monday.
 </div>
 {#====================================================================================================================#}
 <span id="heading_learn_about_the_course">Learn about the course</span>

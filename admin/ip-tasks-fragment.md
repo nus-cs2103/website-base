@@ -64,7 +64,7 @@
 
 <box type="info">
 
-The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ url_forum }}) so that we can take necessary actions.
+The individual project (iP) and the team project (tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ url_forum }}) so that we can take necessary actions.
 </box>
 </div>
 <div id="no-jumping-ahead">
@@ -72,7 +72,7 @@ The iP (and the tP) undergoes changes after each semester. As such, teething iss
 <box>
 
 {{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks, although it is fine to stay ahead of the schedule a bit (but no more than a week ahead).<br>
-Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and span a longer period**, rather than to be done as a short burst.
+Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spanned over a longer period**, rather than to be done as a short burst.
 
 Reminder: As per iP grading criteria, _some_ increments need to be done in each week. Clumping all the iP work into a short burst of work will not earn you full marks.
 </box>

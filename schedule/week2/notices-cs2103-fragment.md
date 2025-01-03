@@ -10,7 +10,7 @@
 <box type="tip" seamless>
 
 **Noticed any issues (==even minor typos==) in the course website (or in resources in [se-edu/guides](https://se-education.org/guides/))?** Have suggestions for improvements, or noticed a part that wasn't clear?<br>
-**You can earn [bonus participation points](../../admin/participation.md)** by reporting them in the [forum]({{ url_forum }}) -- plus it helps us improve the course website too.<br>
+**You can earn [bonus participation points](../../admin/participation.md)** by reporting them in the [forum]({{ url_forum }}).<br>
 </box>
 
 <panel type="info" header="##### ==[MUST-WATCH]== Briefing Videos for Week 2" peek >
