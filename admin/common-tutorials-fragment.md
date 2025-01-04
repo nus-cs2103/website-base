@@ -60,10 +60,11 @@
 {% from "_course-" + course + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
 <d-table sortable searchable>
 Tutorial | Reviewer | First PR to review | Backup PR to review
----------|----------|--------------------|---------------------{% for line in ip_pr_review_allocation %}
-{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | <small>%%backup:%% {{ get_pr_link(line[3]) }}</small>{% endfor %}
+---------|----------|--------------------|---------------------
+{% if not allocation | length %}Allocation ... | ... not ... | .... available yet. {% else %}
+{% for line in ip_pr_review_allocation %}
+{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | <small>%%backup:%% {{ get_pr_link(line[3]) }}</small>{% endfor %}{% endif %}
 </d-table>
-{% if not ip_pr_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 <p/>
 
@@ -89,10 +90,11 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 {% from "_course-" + course + "/studentData-fragment.md" import ip_pr_review_allocation with context %}
 <d-table sortable searchable>
 Tutorial | Reviewer | Second PR to review | Backup PR to review
----------|----------|---------------------|---------------------{% for line in ip_pr_review_allocation %}
-{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | <small>%%backup:%% {{ get_pr_link(line[5]) }}</small>{% endfor %}
+---------|----------|---------------------|---------------------
+{% if not allocation | length %}Allocation ... | ... not ... | .... available yet. {% else %}
+{% for line in ip_pr_review_allocation %}
+{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | <small>%%backup:%% {{ get_pr_link(line[5]) }}</small>{% endfor %}{% endif %}
 </d-table>
-{% if not ip_pr_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 <p/>
 

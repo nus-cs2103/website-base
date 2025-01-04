@@ -1996,10 +1996,10 @@ The panel below contains guidelines your peers will use when determining bugs in
 <d-table sortable searchable>
 Your GitHub  | First choice | Second choice | Third choice
 -------------|--------------|---------------|-------------
+{% if not allocation | length %}Allocation ... | ... not ... | .... available ... | ... yet. {% else %}
 {% for allocation in tp_dg_review_allocation %}`{{ allocation[0] }}` | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }} | {{ get_links(allocation[3]) }}
-{% endfor %}
+{% endfor %}{% endif %}
 </d-table>
-{% if not tp_dg_review_allocation | length %}Allocation not available yet... {% endif %}
 </panel>
 </div>
 

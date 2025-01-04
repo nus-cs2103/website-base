@@ -24,10 +24,10 @@ The tutorial is held F2F from this week onwards. See [the tutorials page]({{ bas
    <d-table sortable searchable>
    Your username | PR to review       | Fallback PR to review
    --------------|--------------------|------------------
+   {% if not allocation | length %}Allocation ... | ... not ... | .... available yet. {% else %}
    {% for allocation in allocations -%}
    {{ allocation[0] }} | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }}
-   {% endfor %}
-   {% if not allocation | length %}Allocation not available yet... {% endif %}
+   {% endfor %}{% endif %}
    </d-table>
    </panel>
    <p/>
