@@ -20,7 +20,7 @@
   </div>
 </div>
 
------------------------------
+<!-- -----------------------------
 
 <div id="Michael" class="container">
   <div class="row bt-2">
@@ -58,7 +58,17 @@
 %%:fas-map-marker-alt:%% COM3-02-34 | %%:fas-phone-square:%% 6516 1105<br>
 %%:fab-github:%% [@prabhu-na](https://github.com/prabhu-na)
 
-<!--
+</div>
+</div>
+</div>
+-->
+-----------------------------
+
+<div id="Ganesh" class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+
 <img src="{{ url_course_gihub_io }}/tutor-photos/ganeshniyer.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
     </div>
     <div class="col">
@@ -69,7 +79,29 @@
 %%:fas-envelope:%% `gni`[at]`nus.edu.sg`<br>
 %%:fas-map-marker-alt:%% COM2-03-55 | %%:fas-phone-square:%% 6601 7601<br>
 %%:fab-github:%% [@ganeshniyer](https://github.com/ganeshniyer)
--->
+
+</div>
+</div>
+</div>
+
+-----------------------------
+
+<div id="Eric" class="container">
+<div class="row bt-2">
+<div class="col-3">
+
+
+<img src="{{ url_course_gihub_io }}/tutor-photos/eric-vader.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+</div>
+<div class="col">
+
+### Han Liang Wee **Eric**
+
+**Lecturer**<br>
+%%:fas-envelope:%% `eric_han`[at]`nus.edu.sg`<br>
+%%:fas-map-marker-alt:%% COM2-03-26 | %%:fas-phone-square:%% 6601 7639<br>
+%%:fab-github:%% [@eric-vader](https://github.com/eric-vader)
+
 </div>
 </div>
 </div>
@@ -95,6 +127,25 @@
 </div>
 
 -----------------------------
+
+<div id="TzerBin" class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="{{ url_course_gihub_io }}/tutor-photos/tzerbin.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### **Tzer Bin**
+
+**TA**<br>
+%%:fas-envelope:%% `dcskh`[at]`nus.edu.sg`<br>
+%%:fab-github:%% [@tzerbin](https://github.com/tzerbin)
+    </div>
+  </div>
+</div>
+
+<!-- -----------------------------
 <div id="Anis" class="container">
   <div class="row bt-2">
     <div class="col-3">
@@ -112,6 +163,7 @@
     </div>
   </div>
 </div>
+-->
 
 ## Tutors
 {% for t in tutors %}

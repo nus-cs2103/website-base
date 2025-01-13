@@ -5,7 +5,7 @@ week1: [
   {id: 'submit_pre_course_survey', deadline: get_date(date_w1_start, 4), graded: true},
   {id: 'learn_about_the_course'},
   {id: 'submit_pre_lecture_quiz', deadline: get_date(date_w1_start, 7), graded: true},
-  {id: 'set_up_tools', deadline: "by Friday"},
+  {id: 'set_up_tools', deadline: get_date(date_w1_start, 4, time="") },
   {id: 'follow_the_git_learning_trail'}
 ],
 week2: [
