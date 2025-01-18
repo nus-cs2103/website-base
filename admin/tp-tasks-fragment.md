@@ -1437,6 +1437,7 @@ Tip: Especially ==note the part on _overzealous input validation_==, which is a 
 {{ show_faq("tpAddChangesInFeatureBranch", is_compact=1) }}
 {{ show_faq("tpUpdateDocsWithCode", is_compact=1) }}
 {{ show_faq("tpChangeFeatureSpec", is_compact=1) }}
+{{ show_faq("tpRationaleForCurrentDesign", is_compact=1) if cs2103 }}
 
 </div>
 {#====================================================================================================================#}
@@ -1507,6 +1508,7 @@ Note that the product you deliver at the end of this iteration must be working a
   * **Upload the JAR file** as well. Instructions for creating a JAR file can be found in [as described in the tP Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release).
 * **Wrap up the milestone** on GitHub, when you are done with this iteration and the MVP has been released.
 
+{{ show_faq("tpPrReviewRigor", is_compact=1) }}
 {{ show_faq("tpGuiTestAutomation", is_compact=1) }}
 {{ show_faq("tpWorksLocallyFailsCi", is_compact=1) }}
 {{ show_faq("tpPrPassCiButFailedAfterMerging") }}

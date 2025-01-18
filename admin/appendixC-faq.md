@@ -65,6 +65,8 @@
 {{ show_expanded_faq("githubIssuesMultipleDocAuthors") }}
 {{ show_expanded_faq("githubIssueForEachPr") }}
 {{ show_expanded_faq("githubWhoMergesPrs") }}
+{{ show_expanded_faq("tpPrReviewRigor") }}
+{{ show_expanded_faq("tpRationaleForCurrentDesign") if cs2103 }}
 {{ show_expanded_faq("tpMultiStepCmd") }}
 {{ show_expanded_faq("tpRenameAbReferences") if cs2103 }}
 {{ show_expanded_faq("dgDetailsLevel") }}

@@ -376,7 +376,9 @@ Yes ([an example](https://github.com/TEAMMATES/teammates/issues/12976)), althoug
 <div id="faq-githubIssuesSubTasks-Q">How do we track 'sub-task' relationships between tasks?</div>
 <div id="faq-githubIssuesSubTasks-A">
 
-GitHub Issues does not have a direct way of doing this. However, you can use a task list in the issue description to indicate sub-tasks and corresponding issues/PRs -- ([an example](https://github.com/MarkBind/markbind/issues/1774))
+~~GitHub Issues does not have a direct way of doing this. However, you can use a task list in the issue description to indicate sub-tasks and corresponding issues/PRs -- ([an example](https://github.com/MarkBind/markbind/issues/1774))~~
+
+You can use [this recently-added GitHub feature](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/adding-sub-issues) to mark an issue as a sub-task of another issue.
 </div>
 <!-- =============================================================== -->
 <div id="faq-githubMultipleIssueAssignees-Q">Is it OK to assign multiple members to the same task?</div>
@@ -403,6 +405,21 @@ This is encouraged, while not a strict rule. Creating an issue indicates 'a task
 It is up to the team to decide. However, we discourage unilateral PR merging i.e., you create and merge PRs without any reviews/oversight from others, unless the PR is trivial changes.
 </div>
 <!-- =============================================================== -->
+<div id="faq-tpPrReviewRigor-Q">How thorough should the PR reviews be?</div>
+<div id="faq-tpPrReviewRigor-A">
+
+**Course admin perspective:** It's up to you. We do not directly enforce any requirement on this. How well you do this can affect your grade indirectly though e.g., if PR reviews are weak, low quality code could get merged, which can in turn affect grading for code quality and bugs in the product. If you 'overdo' PR reviews, you'll waste time/effort and slow down the progress, which can affect marks as well.
+
+**Teaching/learning perspective:** Learning to optimize the _process_ is an intended learning outcome. You can do this iteratively. That is, the team can decide your own policy/process, and tweak it as you go. For example, you can decide to have a minimum of n reviews at rigor level X for each PR. After doing that for a while, you can evaluate how it is working, and tweak if necessary (reduce n or lower X if you feel like it is slowing down the project too much without helping to increase quality that much | increase n or set a higher X if you think the code being merged is below-par quality).
+
+**SE perspective:** This depends on many things, such as target quality (higher target quality requires high rigor PR reviews), availability of reviewers, level of other quality assurance mechanisms in place (e.g., automated checks done on the code, such as Checkstyle). Might even vary based on type of PR (some PRs need closer scrutiny than others).
+
+Should reviewer run the code locally to ensure the code works? This also depends on if (and how well) the work in the PR is covered by automated tests run by the CI.
+
+Most long-running projects in real world will establish their own policies/norms, either written down formally or passed down informally (i.e., new devs follow what current devs do).
+
+</div>
+<!-- =============================================================== -->
 <div id="faq-tpMultiStepCmd-Q">Why not allow user to input the command one field at a time?</div>
 <div id="faq-tpMultiStepCmd-A">
 
@@ -416,6 +433,23 @@ That being said, multistep commands can complement the one-shot-command approach
 
 * as a crutch for new users to learn the command format
 * to be used for rarely-used tasks or tasks requiring multiple steps (e.g., importing data from a file)
+
+</div>
+<!-- =============================================================== -->
+<div id="faq-tpRationaleForCurrentDesign-Q">When refactoring AB3 code, I would like to find the rationale for the current design; how do I do that?</div>
+<div id="faq-tpRationaleForCurrentDesign-A">
+
+First, kudos for wanting to find the rationale before you change the current design. It's a good application of the [Chesterton's Fence Principle](https://fs.blog/chestertons-fence/).
+
+Some options:
+
+1. See if the rationale is documented in the developer documentation or code comments.
+1. Dig into the Git and GitHub history to find if there are any clues there e.g. commit message of the relevant commit, or the discussion in the relevant PR. Git _blame_ feature can help you locate the relevant commit.
+1. Try to speculate the possible motives, get views from other developers.
+1. These days, you can also ask AI tools.
+1. Play it safe and delay the refactoring until you have worked with the code for a while, in case the reason becomes apparent after working with the code for a while.
+1. Tentatively refactor it, to see the effect. Sometimes this helps you discover why the code was in the original form in the first place.
+1. Go ahead and refactor it, but do it in a way it can be easily reverted later e.g., break the refactoring into a series of small/medium stand-alone design changes and do them as separate PRs (or separate commits) so that they can be reverted later, if needed.
 
 </div>
 <!-- =============================================================== -->

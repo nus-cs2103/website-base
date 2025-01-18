@@ -29,7 +29,7 @@ The final product should be a result of evolving/enhancing/morphing the given co
 </span>
 
 {% call show_constraint("Constraint-Typing-Preferred") -%}
-The product should be targeting users who can type fast and prefer typing over other means of input.<br>
+The product should be targeting users who can type fast and prefer typing to other means of input.<br>
 %%**Reason**: by enforcing some similarity among target users of the projects, we hope to make the projects more comparable with each other.%%
 {%- endcall  %}
 
@@ -130,7 +130,7 @@ If you are unable to package everything into a JAR file, package the JAR file an
 The file sizes of the deliverables should be reasonable and not exceed the limits given below. <br>
 <div tags="m--cs2113 m--cs2103">
 
-%%**Reason:** It is hard to download big files during the practical exam due to limited WiFi bandwidth at the venue. Plus, there is no reason to use space/bandwidth without a proportional benefit.%%</div>
+%%**Reason:** It is hard to download big files during the practical exam due to limited Wi-Fi bandwidth at the venue. Plus, there is no reason to use space/bandwidth without a proportional benefit.%%</div>
 
 * <span class="text-danger">Product (i.e., the JAR/ZIP file): 100MB</span> (Some third-party software -- e.g., Stanford NLP library, certain graphics libraries -- can cause you to exceed this limit)
 
@@ -139,9 +139,10 @@ The file sizes of the deliverables should be reasonable and not exceed the limit
 In addition, do ==ensure that the final JAR/PDF files are not bloated unnecessarily==. Such <span class="text-danger">bloat can be reported as a bug</span>.
 Some suggestions:
 
-* Check if the the assets (e.g., images, audio, data) included in the JAR files are all strictly necessary and the quality is not unnecessarily high (e.g., images with higher resolution than necessary).
+* Check if the assets (e.g., images, audio, data) included in the JAR files are all strictly necessary and the quality is not unnecessarily high (e.g., images with higher resolution than necessary).
 * Check if the third-party libraries in the JAR file are strictly necessary or whether they have lighter versions that are still enough for your purpose.
-* Using [JavaFX WebView](http://tutorials.jenkov.com/javafx/webview.html) allows you to display a Web page within your application but it adds about 70MB to your JAR file. If you decide to use that library, ensure the benefit is worth the increase in size.
+
+{{ icon_important_big_red }} **Using [JavaFX WebView](http://tutorials.jenkov.com/javafx/webview.html)** allows you to display a Web page within your application, but it is very likely to cause you to violate this constraint. If you decide to use that library, ensure the benefit is worth the increase in size (in particular, using it just to show an HTML view of the User Guide is not worth the increase in size it causes).
 {%- endcall  %}
 
 {% call show_constraint("Constraint-PDF-Friendly") -%}
@@ -155,7 +156,7 @@ The DG and UG should be PDF-friendly. Don't use expandable panels, embedded vide
 **In addition, you are strongly encouraged to follow these recommendations** as they can help increase your project score.
 
 {% call show_constraint("Recommendation-Minimal-Network", recommendation=true) -%}
-It is OK to use a reliable public API %%e.g., Google search%% but we recommend that you have a fallback mechanism (e.g., able to load data using a data file if the network is down).<br>
+It is OK to use a reliable public API %%e.g., Google Search%%, but we recommend that you have a fallback mechanism (e.g., able to load data using a data file if the network is down).<br>
   %%**Reason:** During the mass peer-testing session, the network access can be intermittent due to high load. If your feature cannot be tested due to lack of Internet, that will have to be counted as a major bug, to be fair to those whose app is being tested and bugs found being penalized.%%<br>
   ==If you use NUS data== (e.g., scrape data from an NUS website), please work with [NUS IT](https://nusit.nus.edu.sg/contact/) directly to get their approval first. Even well-intentioned use of NUS data without approval can get you into serious trouble (has happened before). The teaching team will not be able to get approval for you as the use of NUS data is not a course requirement.
 {%- endcall %}
@@ -164,7 +165,7 @@ It is OK to use a reliable public API %%e.g., Google search%% but we recommend t
 Avoid implementing hard-to-test (both for manual testing as well as automated testing) features or features that make your product hard-to-test.<br>
 %%**Reason**: ==_testability_ is a grading criterion.== If you choose to implement such a feature, you will need to spend an extra effort to reach an acceptable level of testability.%%
 Here are some examples of features that are hard-to-test:
-* Features that depend heavily on remote APIs: Those APIs can block your access if they mistake your automated tests as a bot attack. Some remote APIs require setting up accounts, keys, login etc, that will irritate the testers of your product and give a low rating to the testability of your work.
+* Features that depend heavily on remote APIs: Those APIs can block your access if they mistake your automated tests as a bot attack. Some remote APIs require setting up accounts, keys, login etc., that will irritate the testers of your product and give a low rating to the testability of your work.
 * Audio-related features: The peer testing of your product is done under exam conditions where it is not appropriate to play audio.
 * Features that require creating user accounts, login, logout etc.
 {%- endcall %}
@@ -182,7 +183,7 @@ Following from the _Constraint-Typing-Preferred_, if the app is optimized for th
 Therefore, the input to the app needs to be primarily CLI. <span tags="m--cs2103">The GUI is used primarily to give visual feedback to the user. This does not mean the app need to have a text UI (CLI is not the same as text UI) or it needs to work in a command console -- it simply means the input to the app should be a text command, which can even be entered using a GUI (similar to how AB3 does it).</span><span tags="m--cs2113">If you do implement a GUI, that GUI should primarily be used to give visual feedback to the user.</span> While we don't prohibit non-CLI inputs (e.g., clicking of a button), note that such inputs will reduce the suitability of the product to target users. Therefore, give CLI alternatives to mouse/GUI inputs, if applicable.<br>
 Also keep in mind:
 * Regular typing is usually faster than using key combinations.
-* <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, it is recommended that you also provide a one-shot equivalent for regular/expert users.<br>
+* <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multistep command to help new users, it is recommended that you also provide a one-shot equivalent for regular/expert users.<br>
 {%- endcall %}
 
 {% call show_constraint("Recommendation-Realistic", recommendation=true) -%}
