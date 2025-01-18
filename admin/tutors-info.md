@@ -139,7 +139,7 @@
 ### **Tzer Bin**
 
 **TA**<br>
-%%:fas-envelope:%% `dcskh`[at]`nus.edu.sg`<br>
+%%:fas-envelope:%% `dcsnt`[at]`nus.edu.sg`<br>
 %%:fab-github:%% [@tzerbin](https://github.com/tzerbin)
     </div>
   </div>

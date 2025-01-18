@@ -1,5 +1,7 @@
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
-
+{% if semester=="AY2425S2" %}
+Due to CNY holidays in this week, we'll have a **mass-tutorial, via Zoom, in the first half of the lecture slot on Friday (Jan 31st, 1600-1700)**. More info coming soon...
+{% else %}
 <box>
 
 As this is the first tutorial, given below are general details about our tutorials, in case you did not read that page before:
@@ -31,4 +33,4 @@ As this is the first tutorial, given below are general details about our tutoria
 #### {{ thumb(4) }} **Help team members troubleshoot iP problems**
 
 <include src="../../admin/common-tutorials-fragment.md#help-troubleshoot-ip" />
-
+{% endif %}

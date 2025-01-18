@@ -61,14 +61,14 @@ This week's briefing videos start with a detour.
 {{ panopto(desc="6 mins", "e074cbed-2afb-46f6-81bc-b0fb01057eb8", start_week="1") }}
 
 <span class="text-info">****2. Challenges and Solutions****</span>: How to tackle three challenges you'll face in the course, namely, _information overload_, _workload_, and _technical problems_.
-{{ panopto(desc="11 mins", "e23c1d7e-bc39-45ff-98c0-b1cd0079a400", start_week="1") }}
+{{ panopto(desc="11 mins", "bfea6b66-ecf1-4846-9f13-b26500800818", start_week="1") }}
 
 ---
 
 <span class="text-info">****3. Week 1->2 Briefing****</span> (Week 1 Recap + Week 2 Preview): This video recaps Week 1 and gives a preview of what you need to do in Week 2.<br>
 %%Note: While weekly briefings are normally done in hybrid mode, this week's briefing is released as a pre-recorded video, to allow you to get started with week 2 tasks early.%%
 
-{{ panopto(desc="4 mins", "30dad6c2-bc2f-4918-8122-b1cd0043ede5", start_week="1") }}
+{{ panopto(desc="4 mins", "d7a602f3-c4ce-404a-87b9-b26500a62e03", start_week="1") }}
 </div>
 </panel>
 

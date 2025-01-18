@@ -41,6 +41,12 @@
 {{ show_expanded_faq("tutorialWhatIfMissedDueToOtherReason") }}
 {{ show_expanded_faq("tutorialLength") }}
 
+## FAQs on: UML
+
+{{ show_expanded_faq("umlIsItUsedInIndustry") }}
+{{ show_expanded_faq("umlAreWeOverdoing") }}
+{{ show_expanded_faq("umlWhenNotationNotEnough") }}
+
 ## FAQs on: tP
 
 {{ show_expanded_faq("tpWhyNarrowTarget") }}

@@ -54,6 +54,34 @@ We have a separate website because some of the course information does not fit i
 Slides are not meant to be documents to print and study for exams (the textbook is the resource more suitable for exam prep). Their purpose is to support the {{ lecture_name_short }} delivery and keep you engaged during the {{ lecture_name_short }}. That's why our slides are less detailed and more visual.
 </div>
 <!-- =============================================================== -->
+<div id="faq-umlIsItUsedInIndustry-Q">Is UML even used in the industry? Is there any point learning it?</div>
+<div id="faq-umlIsItUsedInIndustry-A">
+
+**UML is not used very frequently by practitioners.** In particular, most would not bother to draw detailed UML diagrams _before_ (or in parallel to) coding.<br>
+**UML diagrams can still provide practical value in some situations** e.g., when documenting internal design details, when discussing design alternatives. However, even when using UML is beneficial, some may avoid using it due to lack of proficiency. In fact an average programmer is likely ot be able to survive without drawing any UML diagrams, and only occasionally having to interpret UML diagrams drawn by others.
+
+Furthermore, **being able to communicate about code/design without referring to actual code is an essential skill**, as the code is not always available %%(e.g., it may not exist yet or the codebase may be too big for to be used for such communications)%%. While in some cases we can use ad hoc notations (simple boxes, arrows, labels) for such communications, using a standard modeling notation can make such communications universally understood. **UML is the leading general purpose notation used for modelling software design.** It can be used for basic modelling irrespective of the domain of the software project. For more intense modeling needs, we can go for a domain-specific modelling notation %%e.g., Business Process Model and Notation (BPMN)%%.
+
+</div>
+<!-- =============================================================== -->
+<div id="faq-umlAreWeOverdoing-Q">OK, so there is _some_ value in learning UML. But do we have to spend _so much_ time on it?</div>
+<div id="faq-umlAreWeOverdoing-A">
+
+**It is true that we are 'overdoing' UML a bit in this course.** Because UML is not used frequently in the industry (especially, by junior developers), you will not have many chances to learn it 'on the job' in the early part of your career. Hence, **we try to ensure you learn UML well-enough to be able to use it a few years later**, even if you don't get to use it in the interim period.
+</div>
+<!-- =============================================================== -->
+<div id="faq-umlWhenNotationNotEnough-Q">What do we do when the UML notation covered in the course is not enough to model what we want to illustrate?</div>
+<div id="faq-umlWhenNotationNotEnough-A">
+
+Here are some options you can consider:
+
+* **Use the closest matching notation**, and use UML notes to provide the missing information.
+* **Use an alternative means to communicate** %%(e.g., pseudocode, or even actual code)%%, instead of using a UML diagram.
+* **Leave out the complex part from the diagram**, or give a simpler view in the model, if the complex part is not really relevant to the purpose of the diagram (but also mention that the model is a simplified view).
+
+Caution: For course deliverables, it is best not to use UML notations not covered in the course.
+</div>
+<!-- =============================================================== -->
 <div id="faq-narrowProjectScope-Q">Why very narrow project scope?</div>
 <div id="faq-narrowProjectScope-A">
 

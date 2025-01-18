@@ -83,6 +83,8 @@
 
 {{ show_faq("dgAddNewUml") if cs2103 }}
 {{ show_faq("noEffectOnUml") if cs2103 }}
+{{ show_faq("umlWhenNotationNotEnough") }}
+
 
 * **Diagramming tools**:
   * AB3 uses PlantUML (see the guide [_Using PlantUML_ @SE-EDU/guides](https://se-education.org/guides/tutorials/plantUml.html) for more info).

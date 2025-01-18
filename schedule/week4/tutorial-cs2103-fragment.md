@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import thumb with context %}
+{% from "common/macros.njk" import show_faq, thumb with context %}
 
 #### {{ thumb(1) }} **Discuss iP progress**
 
@@ -15,6 +15,8 @@
 <p/>
 </div>
 
+{{ show_faq("umlIsItUsedInIndustry") }}
+{{ show_faq("umlAreWeOverdoing") }}
 <!--
 #### {{ thumb(4) }} **Share Git tips** {{ icon_extra }}
 
