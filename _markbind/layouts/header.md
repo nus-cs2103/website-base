@@ -1,4 +1,5 @@
 {% from "common/macros.njk" import get_week_start_date with context %}
+{% from "common/admin.njk" import get_admin_menu_items with context %}
 {% if current_week == "-1" %}
 <div class="w-100 p-1 bg-warning text-center d-print-none"><md>**This is a draft version of the website! The final version will be available near the start of the semester.**</md></div>
 {% endif %}{% if current_week in ["-1", "0", "1"] %}
@@ -17,7 +18,9 @@
 {% endfor %}
   </dropdown>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
-  <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
+  <dropdown header="**Admin Info**" class="nav-link">
+{{ get_admin_menu_items() }}
+  </dropdown>
   <li tags="m--cs2103 m--cs2113"><a href="{{ url_dashboards }}" target="_blank" class="nav-link" highlight-on="none"><md>**Dashboards**</md></a></li>
   <dropdown tags="m--cs2103 m--cs2113" header="**Project Links**" class="nav-link">
     <md>**&nbsp;Individual Project (iP):**</md>

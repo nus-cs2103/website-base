@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import show_stars with context %}
+{% from "common/macros.njk" import show_stars, show_stars_in_nav with context %}
 {% from "_course-" + course + "/weeklyAdminTopics-fragment.md" import admin_topics with context %}
 
 
@@ -119,4 +119,30 @@ pageNav: 4
 
 {{ caller() }}
 </div>
+{% endmacro %}
+
+
+{% macro get_admin_menu_items() %}
+{% set in_sub_menu = 0 %}
+{% for topic in topics %}
+  {% set title = (topic.alt if topic.alt else topic.title) %}
+  {% if topic.level in [-1, 0] %}
+    {% if in_sub_menu == 1 %}
+</dropdown>
+    {% endif %}
+<dropdown header="**{{ title }}**">
+    {% set in_sub_menu = 1 %}
+  {% elseif topic.level == 1 %}
+    {% if in_sub_menu == 1 %}
+</dropdown>
+      {% set in_sub_menu = 0 %}
+    {% endif %}
+<li><a href="{{ baseUrl }}/admin/{{ topic.link }}" class="dropdown-item"><md>{{ title }} {{ show_stars_in_nav(topic.priority) if topic.priority }}</md></a></li>
+  {% elseif topic.level == 2 %}
+<li><a href="{{ baseUrl }}/admin/{{ topic.link }}" class="dropdown-item"><md><small>{{ title }} {{ show_stars_in_nav(topic.priority) if topic.priority }}</small></md></a></li>
+  {% endif %}
+{% endfor %}
+{% if in_sub_menu == 1 %}
+</dropdown>
+{% endif %}
 {% endmacro %}
