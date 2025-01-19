@@ -3,15 +3,14 @@
 
 {% macro ip_dashboard_links() %}
 <li><a href="{{ url_ip_progress_dashboard }}" target="_blank" class="dropdown-item text-success"><md>:fas-tasks: iP Progress Dashboard</md></a></li>
-<li><a href="{{ url_course_gihub_io }}/dashboards/contents/ip-comments.html" class="dropdown-item"><md>:octicon-comment: iP Comments dashboard</md></a></li>
+<li><a href="{{ url_course_gihub_io }}/dashboards/contents/ip-comments.html" target="_blank" class="dropdown-item"><md>:octicon-comment: iP Comments dashboard</md></a></li>
 <li><a href="{{ url_ip_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: iP Code Dashboard</md></a></li>
 {% endmacro %}
 
 {% macro tp_dashboard_links() %}
 <li><a href="{{url_tp_progress_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-tasks: tP Progress Dashboard</md></a></li>
-<li><a href="{{ url_course_gihub_io }}/dashboards/contents/tp-comments.html" class="dropdown-item"><md>:octicon-comment: tP Comments Dashboard</md></a></li>
+<li><a href="{{ url_course_gihub_io }}/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><md>:octicon-comment: tP Comments Dashboard</md></a></li>
 <li><a href="{{ url_tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>
-
 {% endmacro %}
 
 {% if current_week == "-1" %}
