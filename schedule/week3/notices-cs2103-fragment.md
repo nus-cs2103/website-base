@@ -21,13 +21,14 @@ Due to the Good Friday holiday, the [team project practical exam](../../admin/tp
 -->
 {% endif %}
 
-<panel type="info" header="##### ==[MUST-WATCH]== One More Course Briefing Segment (9 minutes)" expanded >
+<panel type="info" header="##### ==[MUST-WATCH]== Course Briefing Videos" expanded >
 
-**One course briefing video to watch this week**: You watched quite a few course briefing videos over the last two weeks. There are few more remaining parts which will be released closer to events they cover %%(e.g., the part covering the exam will be released closer to the exam)%%. This week, we have one more course briefing video, given below:
+One course briefing video to watch this week, given below:
 
 <include src="../../admin/courseBriefings.md#course-briefing-w3" />
 
 **The _weekly_ briefing for this week will be done in hybrid mode** -- you can attend it F2F %%(@{{ lecture_venue }} {{ get_date(date_w2_start, 4, format=format_normal, time="from 4pm") }})%%, join via Zoom, watch the recording later, or skip it altogether).<br>
-==**iP Help Session**==: This week's' briefing will be followed by a F2F help session for those who are stuck in the iP due to technical difficulties. To attend that help session, be in {{ lecture_venue }} at least by 4.50pm.
+
+==**iP Help Session**==: This week's briefing will be followed by a F2F session to help those who are stuck in the iP due to technical difficulties. To attend that help session, be in {{ lecture_venue }} at least by 4.50pm.
 </panel>
 <p/>

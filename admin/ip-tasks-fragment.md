@@ -647,7 +647,9 @@ Read through this week's topics before starting the project.<br>
 1. ==**Enable the issue tracker** of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
    <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`</md></box>
 1. **Clone the fork** onto your computer.
+   <box type="warning" seamless><md>**Avoid putting Git-controlled files inside cloud-synced (e.g., OneDrive, Dropbox) folders.** Reason: Multiple tools trying to detect/sync changes in the same folder can cause conflicts and unexpected behaviors.<br> If you want to access project files from multiple computers, use Git to do that (rather than cloud syncing tools).</md></box>
 1. **Set up the project in your IDE** as explained in [the README file]({{ url_course_org }}/{{ ip_repo_name }}/blob/master/README.md), if you plan to use an IDE for the project.
+   <box type="tip" seamless><md>**Not willing to lose Vim power?** Vim users worried about losing access to powerful Vim features if you use an IDE for the project: Most IDEs have a Vim plugin (e.g., [IdeaVim plugin](https://github.com/JetBrains/ideavim)) for using Vim features within the IDE i.e, it is possible to access both IDE features and Vim features at the same time!</md></box>
 
 </div>
 {#====================================================================================================================#}
@@ -665,7 +667,7 @@ Read through this week's topics before starting the project.<br>
   * Set the PR name as `[{Your full/partial name or your GitHub username}] iP`<br>
     e.g., `[Richard Mathews Chee] iP` or `[Rich ... hee] iP` or `[TheRichMat] iP`<br>
     %%Note that the PR name will be publicly visible.%%<br>
-    You may leave the description as empty.
+    You may leave the description empty.
   * If you created the PR correctly, it should appear in the list of PRs [here]({{ url_course_org }}/{{ ip_repo_name }}/pulls).
   * Steps for creating a PR is given in this textbook topic (==steps 5 onwards==):
 
@@ -675,7 +677,7 @@ Read through this week's topics before starting the project.<br>
 
 <box tags="m--cs2103 m--cs2113" type="info" seamless>
 
-The PR will update automatically to reflect your latest code every time you push code to your fork. As a result, it provides a convenient way for us to access the current state of all your iP code from one location.
+There is no need to create new PRs every time you update the code in your fork. The PR will update automatically to reflect the latest code of the branch it was sent from (i.e., when you push changes to the `master` branch of your fork).
 </box>
 
 </div>

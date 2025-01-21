@@ -1,6 +1,19 @@
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 {% if semester=="AY2425S2" %}
-Due to CNY holidays in this week, we'll have a **mass-tutorial, via Zoom, in the first half of the lecture slot on Friday (Jan 31st, 1600-1700)**. More info coming soon...
+<box type="info" seamless>
+
+Due to CNY holidays in this week, we'll have a **mass-tutorial, via Zoom, in the first half of the lecture slot on Friday (Jan 31st, 1600-1700)**.
+
+* To join the tutorial, use the Zoom link used for the lecture (given in the [Canvas homepage]({{ url_canvas_home }})).
+* As you know, tutorials count for [participation]({{ url_website }}/admin/participation.html).
+</box>
+
+The tutorial task is given below. You are encouraged to try it in advance, to prepare for the tutorial.
+
+#### {{ thumb(1) }} **Find coding standard violations**
+
+<include src="../../admin/common-tutorials-fragment.md#exercise-coding-standard-violations" />
+
 {% else %}
 <box>
 

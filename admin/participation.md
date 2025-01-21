@@ -14,7 +14,7 @@
     * Quizzes open around the {{ lecture_name }} time and stay open until the next {{ lecture_name_short }} starts. In some weeks, there will be two quizzes %%(because two smaller quiz is easier for you to manage than one big quiz)%%.
     * If multiple attempts are allowed, we take the _best_ attempt, not the _latest_ attempt.
     * When awarding participation points for quizzes, we look for two conditions:
-      * Condition 1: submitted **__early__** i.e., within four days of the {{ lecture_name_short }} i.e., {{ lecture_name_short }} day (Friday) + four more days -> Tuesday %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
+      * Condition 1: submitted **__early__** i.e., within four days of the {{ lecture_name_short }} i.e., {{ lecture_name_short }} day (Friday) + four more days -> Tuesday 23:59 %%(reason: to encourage learning the weekly topics _before_ doing the weekly tasks)%%
       * Condition 2: answered **__correctly__** i.e., least 70% of the answers are correct %%(reason: to discourage random answers)%%
     * You earn:
       * 3 points if both conditions are satisfied.

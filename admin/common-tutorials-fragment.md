@@ -29,7 +29,17 @@
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="exercise-coding-standard-violations">
 
-* Do the following exercise, if you have time.
+<box type="warning" seamless>
+
+Learning goals of this exercise:
+
+1. **Learn to carefully cross-refer the coding standard, and objectively identify rule violations.** This is not a memory test. No guesswork or speculations please.
+1. **To learn not to mix up coding standard violations with other code quality issues.** The exercise asks you to identify coding standard violations only.
+
+So, for each coding standard violation you identify, you should be able to trace it back to a rule in the [Java coding standard](https://se-education.org/guides/conventions/java/{{ 'intermediate' if cs2103 else 'basic'}}.html).
+
+</box>
+
 <div class="indented">
 
 <include src="..\book\codeQuality\followStandard\basic\q-listViolations.md" />

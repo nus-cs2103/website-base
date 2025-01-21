@@ -35,8 +35,8 @@
 {{ get_admin_menu_items() }}
   </dropdown>
   <dropdown tags="m--cs2103 m--cs2113" header="**Dashboards**" class="nav-link">
-  <li><a href="{{ url_participation_dashboard }}" class="dropdown-item"><md>:fas-trophy: **Participation** dashboard</md></a></li>
-  <li><a href="{{ url_course_gihub_io }}/dashboards/contents/forum-activities.html" class="dropdown-item"><md>:octicon-comment: **Forum** Dashboard</md></a></li>
+  <li><a href="{{ url_participation_dashboard }}" class="dropdown-item text-success" target="_blank"><md>:fas-trophy: **Participation** dashboard</md></a></li>
+  <li><a href="{{ url_course_gihub_io }}/dashboards/contents/forum-activities.html" class="dropdown-item" target="_blank"><md>:octicon-comment: **Forum** Dashboard</md></a></li>
   <hr>
   <md>**&nbsp;iP dashboards:**</md>
   {{ ip_dashboard_links() }}

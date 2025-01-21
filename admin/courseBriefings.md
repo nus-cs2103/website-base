@@ -93,7 +93,7 @@ This week's briefing videos start with a detour.
 
 ****tP Briefing (Part 1 -- Getting Started)****{.text-info}
 
-{{ panopto(desc="9 mins", "ecf50649-072a-416b-8382-b10900fd2f81", start_week="3") }}
+{{ panopto(desc="9 mins", "ecf50649-072a-416b-8382-b10900fd2f81", start_week="4") }}
 
 </div>
 </panel>
@@ -111,11 +111,11 @@ In these two videos, we used an ==AI-driven text-to-speech tool== to create some
 ****tP Briefing (Part 2a -- v1.1, Workflow)****{.text-info}
 
 
-{{ panopto(desc="6 mins", "6369aa21-199d-4cab-b1cc-b1ee00b56107", start_week="6") }}
+{{ panopto(desc="6 mins", "6369aa21-199d-4cab-b1cc-b1ee00b56107", start_week="7") }}
 
 ****tP Briefing (Part 2b -- v1.2-v1.6, PE, Grading, Workload)****{.text-info}
 
-{{ panopto(desc="6 mins", "b7750694-17a9-42a9-b975-b1ee00ae4e9a", start_week="6") }}
+{{ panopto(desc="6 mins", "b7750694-17a9-42a9-b975-b1ee00ae4e9a", start_week="7") }}
 
 </div>
 </panel>
