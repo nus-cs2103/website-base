@@ -176,10 +176,11 @@ You can add the corresponding tag to the earlier commit (or the latest commit --
 Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
 </div>
 <!-- =============================================================== -->
-<div id="faq-ipIncorrectTagOrBranch-Q">Oh no! I made a mistake in my tag/branch name.</div>
+<div id="faq-ipIncorrectTagOrBranch-Q">Oh no! used the wrong tag/branch name.</div>
 <div id="faq-ipIncorrectTagOrBranch-A">
 
-It's OK; correct it now.
+It's OK; correct it now.<br>
+If you used the incorrect tag earlier, create and push the correct tag now. You are welcome to (but not required to) delete the previous tag.
 </div>
 <!-- =============================================================== -->
 <div id="faq-ipNotDoneInBranch-Q">What if I did the increment in the `master` branch, not in `branch-___` as required?</div>

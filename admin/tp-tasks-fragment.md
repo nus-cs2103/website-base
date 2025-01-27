@@ -664,6 +664,8 @@ Use this week extra week to finish up any leftover work from the previous week.
 * After forming teams, **set up a weekly project meeting time/venue (and communication channels) with your team members**:
 
 {{ embed_topic("tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="1") }}
+
+* #r#**Submission:**## via Canvas. Submission will open Friday evening, after team forming is complete for all tutorials. We'll let you know when it is open.
 </div>
 {#====================================================================================================================#}
 <span id="heading_check_collective_ip_status">{{ icon_team }} %%Team Task%%: Check up on team's collective iP status</span>
@@ -673,6 +675,8 @@ Use this week extra week to finish up any leftover work from the previous week.
   **Submission:** After completing this task (i.e., after asking all team members if they need help for the iP, and coming up with a plan to help those who asked for help), one member should ==inform your tutor== so that we can track the status of this task. We don't need to know who asked for help though e.g., `One member is slightly behind and one significantly behind. We plan to have a code-together session on Sunday so that we can help them if they encounter problems.`
 
 <box type="tip" seamless>Mentorship within the team is highly-encouraged and rewarded. Besides, it is in your interest to help team members level up before the tP coding begins, and also, a good early opportunity to build team spirit.</box>
+
+* #r#**Submission:**## via Canvas. Submission will open Friday evening, after team forming is complete for all tutorials. We'll let you know when it is open.
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>

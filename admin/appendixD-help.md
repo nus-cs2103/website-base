@@ -21,21 +21,30 @@
 
 * **Send a help request to an instructor**: When faced with a technical problem or a doubt about a concept, don't fire off an email lecturer/tutor immediately, unless it is something only the lecturer/tutor is supposed to know.{{ negative_icon }}
 
-* **Request to meet the instructor to solve the problem**: That can only work if the person is supposed to know how to solve all technical problems, which is often not the case.
+* **Request to meet the instructor to solve the problem**: That can only work if the person is supposed to know how to solve _all_ technical problems, which is often not the case.
 
 ### <span class="text-success"><span class="text-white badge rounded-pill bg-success">{{ icon_like }}</span> **What to do:**</span>
 
 * **Double-check the given instructions**: Often, technical problems arise due to deviations in how you perform a step or a difference in your environment.{{ positive_icon }}
 
-* **Get your team to meet for a weekly work-together session**. When you do course tasks together, it is easy to compare with each other and figure out what deviation is causing the problem. That is, crowd-source your team first.
+* **Get your team to meet for a weekly work-together session**. When you do course tasks together, it is easy to compare with each other and figure out what deviation is causing the problem. That is, crowdsource your team first.
 
-* **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).
-  Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.  
+* **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).
+  Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.<br>
   <pic eager src="{{baseUrl}}/admin/images/how to google it.png" width="600"/>
 
 * **Ask AI** tools such as ChatGPT. If the question is not too specific to the course, AI tools such as ChatGPT might be able to give you a solution. It will help you hone your prompt engineering skills, and also, keep abreast with the current capabilities of such tools.
 
-* **Ask in the [course forum]({{ url_forum }})**: 
+* **Ask in the [course forum]({{ url_forum }})**:
+  <box type="tip" seamless>
+
+  **Some technical problems can take a long time to resolve.** Therefore, plan ahead and schedule your work much earlier than the deadline.
+
+  **Some problems might not get resolved at all**; while waiting for a solution, explore alternatives and workarounds.
+
+  **==If your problem remains unsolved 24 hours after posting in the forum==**, please alert `{{ course | lower }}@comp.nus.edu.sg` so that the teaching team can look into it.
+  </box>
+
   * **Give full details of the problem** Conversations via online forums take time. If you post everything that is relevant to your problem, your chances of getting an answer in the first try is higher. If others have to ask you more questions before they can help you, it will take longer. But this doesn't mean you dump too much information into the thread either.
     * Give a meaningful title to the post. Be as specific as you can.<br>
       {{ bad }} `testing problem`<br>
@@ -81,46 +90,37 @@
 
 <pic eager src="{{baseUrl}}/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"></pic><br/>
 
-_Rubber duck debugging_ is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book _The Pragmatic Programmer_ in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.
+_Rubber duck debugging_ is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book _The Pragmatic Programmer_ in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.
 
-[for more, see [wikipedia entry](https://en.wikipedia.org/wiki/Rubber_duck_debugging)]
+[for more, see [wikipedia entry](https://en.wikipedia.org/wiki/Rubber_duck_debugging)]
 </modal>
 
 
-* **Ask the world** using programming forums such as stackoverflow.{{ positive_icon }} 
-  * PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.
-
+* **Ask the world** using programming forums such as stackoverflow.{{ positive_icon }}
+  * PLEASE search for existing answers before you post your question in those public forums; You don't want to appear as a 'clueless' or 'too lazy to do your research' person in a public forum.
     <box>
 
     {{ icon_tip }} Know what these stand for: **RTFM**, **STFW**, **GIYF**, **LMGTFY**
 
     </box>
 
-<span id="questions-for-tutors">
+  <div id="questions-for-tutors">
 
 * **Raise your question during a tutorial**. Some questions can be discussed with the tutor and tutorial-mates.
 
 {{ show_faq("tutorialWhatTutorsCanAnswer", status="expanded") }}
 
-</span>
+  </div>
 
-* **Ask the lecturer**: You can talk to the lecturer before/after the {{ lecture_name }}, or email the lecturer.{{ positive_icon }}
+* **Ask the lecturer**: If your question/situation does not fit the above options, you can talk to the lecturer before/after the {{ lecture_name }}, or email the lecturer.{{ positive_icon }}
 
-<box type="tip" seamless>
-
-**Some technical problems can take a long time to resolve.** Therefore, plan ahead and schedule your work much earlier than the deadline.
-
-**Some problems might not get resolved at all**; while waiting for a solution, explore alternatives and workarounds.
-
-**==If your problem remains unsolved 24 hours after posting in the forum==**, please alert `{{ course | lower }}@comp.nus.edu.sg` so that the teaching team can look into it.
-</box>
 
 <box>
 
 {{ icon_resource }} Resources
 
-* [lifehacker article]  [Google Tips and Tricks Every Student Should Know](http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671)
-* [Article] [How To Ask Questions The Smart Way](http://catb.org/esr/faqs/smart-questions.html) by Eric Steven Raymond
+* [lifehacker article] [Google Tips and Tricks Every Student Should Know](http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671)
+* [Article] [How To Ask Questions The Smart Way](http://catb.org/esr/faqs/smart-questions.html) by Eric Steven Raymond
 </box>
 
 </div>

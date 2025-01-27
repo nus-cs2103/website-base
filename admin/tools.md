@@ -95,6 +95,12 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 ## Tools: for communication
 
+##### :fas-envelope: Course email %%(for course related queries, etc.)%%
+
+* **Send all course-related emails to `{{ course | lower }}[at]comp.nus.edu.sg`**.{% if cs2103 %}<br>
+  Even if your course code is `CS2103T`, the email to use is `cs2103@...` (i.e., not `cs2103t@...`).
+{% endif %}
+
 ##### :fas-comment: Forum %%(for discussions, asking admin questions, seeking help, etc.)%%
 * **The preferred channels for course-related communication is the `forum` on GitHub** ==[{{url_forum}}]({{url_forum}})== (not the Canvas forum)
 * When communicating with instructors, use the forum. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the forum is not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy%%.
@@ -122,6 +128,14 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 * **MS Team for this class**: [{{ course_pair }}-{{ semester }}]({{ url_ms_teams_class }}) {% if cs2103 %}No need to send 'join requests'. We'll be mass-adding you to this around week 2.{% endif %}
 </div>
+
+<box type="wrong" light icon=":fas-exclamation:">
+
+**#r#All admin questions and technical help requests** should be sent to the course email or posted in the forum##. Tutors are not allowed to respond to admin questions and technical help requests. See the panel below for more details.
+
+{{ embed_topic("policies-fragment.md#policy-adminQuestions", "Admin " + icon_embedding + " Policies → **Policy on admin questions**", "1", indent=0) }}
+
+</box>
 </div>
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->

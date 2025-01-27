@@ -17,6 +17,8 @@
 
 <include src="../../admin/courseBriefings.md#course-briefing-w2" />
 
+<span class="text-secondary">****4. Week 2->3 Briefing****</span> (Week 2 Recap + Week 3 Preview) : this will be done in hybrid mode, on Friday, at the usual lecture venue/slot.
+
 </panel>
 <p/>
 

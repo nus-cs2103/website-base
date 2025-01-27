@@ -103,7 +103,7 @@ Note the typical deadline weekly project tasks:
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1") }}
 <p/>
 
-As per the above, ==you have until the next {{ lecture_name }}== (i.e., Friday {{ time_lecture_start }}) to finish this week's iP tasks, but if you fail to do so, we won't penalize you if you can catch up within one more week after that deadline.
+As per the above, ==you have until the {{ lecture_name }}== at the end of this week (i.e., {{ get_date(date_w2_start, 4, time=time_lecture_start) }}) to finish this week's iP tasks, but if you fail to do so, we won't penalize you if you can catch up within one more week after that deadline.
 </box>
 </div>
 <div id="cs2103-week3-intro">
@@ -185,7 +185,7 @@ But ==as there are no tutorials this week, you have until the next lecture== to 
 
 1. You should follow the normal iP requirements/deadlines, except that you will try to replace handcoding with AI-assisted code generation, where possible. It is still fine to do some of the coding work manually.
 1. You may use any free or commercial AI tools, provided you declare which tool you used (how to declare? see next point).
-1. Add a file named `AI.md` at the root of project folder (same location where `CONTRIBUTING.md` lives). Commit the file. Keep it updated with a record of your use of AI tools (e.g., which tool you used for which increment), and interesting observations (e.g., what worked? what didn't? overall, how much time did it save?). You can update this file periodically (e.g., once a week). The content format can be plaintext or Markdown. It need not be very detailed (e.g., even a 0.5 page is enough).
+1. Add a file named `AI.md` at the root of project folder (same location where `CONTRIBUTORS.md` lives). Commit the file. Keep it updated with a record of your use of AI tools (e.g., which tool you used for which increment), and interesting observations (e.g., what worked? what didn't? overall, how much time did it save?). You can update this file periodically (e.g., once a week). The content format can be plaintext or Markdown. It need not be very detailed (e.g., even a 0.5 page is enough).
 
 **Caveat:** This alternative does not earn you extra credit, but it gives you an opportunity to learn more about AI tools related to SE, with the same (or even less) effort.<br>
 This alternative is only suitable for those who are already good at hand-coding. Reason: At the current state of the art of AI tools, only those who are already good at hand-coding can use those tools to increase productivity. So, you must become good at hand-coding before you venture into using AI tools for coding.
@@ -300,6 +300,7 @@ If you are new to Git branching, before attempting this iP increment, first lear
 <div tags="m--cs2103">
 
 * **Do Level 8 similar to the above**, using a branch `branch-Level-8`.
+</div>
 </div>
 <div tags="m--cs2113 m--cs2103" id="as-parallel-prs">
 
@@ -445,7 +446,6 @@ When you are doing the next step, you can run into merge conflicts. In some case
    </mermaid>
 
 {{ show_faq("ipMessedUpBranching") }}
-</div>
 </div>
 {#====================================================================================================================#}
 <div id="pre_A-CheckStyle">
@@ -645,7 +645,7 @@ Read through this week's topics before starting the project.<br>
    <box type="important" seamless><md>==**Keep the fork name as `{{ ip_repo_name }}`**== or else our grading scripts will not be able to detect it. You can change the fork name to something else after the semester (and the grading) is over e.g., after receiving your grade for the course.</md></box>
    <box type="tip" seamless><md>**Untick the `[ ] Copy the master branch only` option** so that you get a copy of the full repo.</md></box>
 1. ==**Enable the issue tracker** of your fork== (Go to `Settings` of your fork, scroll to the `Features` section, and tick the `Issues` checkbox). %%Reason: at times we post feedback on your issue tracker.%%<br>
-   <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues`</md></box>
+   <box type="tip" seamless><md> If the issue tracker is enabled, you should be able to visit the following URL `https://github.com/{your_user_name}/{{ ip_repo_name }}/issues/new`<br> e.g., `https://github.com/johnDoe/{{ ip_repo_name }}/issues/new`</md></box>
 1. **Clone the fork** onto your computer.
    <box type="warning" seamless><md>**Avoid putting Git-controlled files inside cloud-synced (e.g., OneDrive, Dropbox) folders.** Reason: Multiple tools trying to detect/sync changes in the same folder can cause conflicts and unexpected behaviors.<br> If you want to access project files from multiple computers, use Git to do that (rather than cloud syncing tools).</md></box>
 1. **Set up the project in your IDE** as explained in [the README file]({{ url_course_org }}/{{ ip_repo_name }}/blob/master/README.md), if you plan to use an IDE for the project.
