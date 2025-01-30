@@ -58,9 +58,9 @@ Slides are not meant to be documents to print and study for exams (the textbook 
 <div id="faq-umlIsItUsedInIndustry-A">
 
 **UML is not used very frequently by practitioners.** In particular, most would not bother to draw detailed UML diagrams _before_ (or in parallel to) coding.<br>
-**UML diagrams can still provide practical value in some situations** e.g., when documenting internal design details, when discussing design alternatives. However, even when using UML is beneficial, some may avoid using it due to lack of proficiency. In fact an average programmer is likely ot be able to survive without drawing any UML diagrams, and only occasionally having to interpret UML diagrams drawn by others.
+**UML diagrams can still provide practical value in some situations** e.g., when documenting internal design details, when discussing design alternatives. However, even when using UML is beneficial, some may avoid using it due to lack of proficiency. In fact an average programmer is likely to be able to survive without drawing any UML diagrams, and only occasionally having to interpret UML diagrams drawn by others.
 
-Furthermore, **being able to communicate about code/design without referring to actual code is an essential skill**, as the code is not always available %%(e.g., it may not exist yet or the codebase may be too big for to be used for such communications)%%. While in some cases we can use ad hoc notations (simple boxes, arrows, labels) for such communications, using a standard modeling notation can make such communications universally understood. **UML is the leading general purpose notation used for modelling software design.** It can be used for basic modelling irrespective of the domain of the software project. For more intense modeling needs, we can go for a domain-specific modelling notation %%e.g., Business Process Model and Notation (BPMN)%%.
+Furthermore, **being able to communicate about code/design without referring to actual code is an essential skill**, as the code is not always available %%(e.g., it may not exist yet or the codebase may be too big for to be used for such communications)%%. While in some cases we can use ad hoc notations (simple boxes, arrows, labels) for such communications, using a standard modeling notation can make such communications universally understood. **UML is the leading general-purpose notation used for modelling software design.** It can be used for basic modelling irrespective of the domain of the software project. For more intense modeling needs, we can go for a domain-specific modelling notation %%e.g., Business Process Model and Notation (BPMN)%%.
 
 </div>
 <!-- =============================================================== -->
@@ -204,6 +204,18 @@ Also note that in the team project, there is a project constraint that requires 
 Not to worry. You are welcome to (but not _required_ to) try to rectify it. There is no penalty. Just take note of your mistake and try to avoid it in the future.
 
 {{ icon_tip }} In addition, you can try to identify the intended learning objective of using branching requirement that you messed up, and try to achieve it on your own. For example, if the iP increment was intended for you to practice parallel branches, you can try to do some other iP code changes as parallel branches so that you replicate a branch graph similar to the one intended by the iP increment.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipAspectsNotCoveredByTheStandard-Q">What to do if a certain aspect is not covered by the Java/Git standard?</div>
+<div id="faq-ipAspectsNotCoveredByTheStandard-A">
+
+When something is not covered by the given standard/convention, you are free to choose which style you want to follow for that, but try to be consistent with the existing code (if any), and ensure everyone in the team follows the same (if it is a team project).
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipCheckstyleMismatchWithCodingStandard-Q">What if the given sample Checkstyle config file doesn't match exactly with the Java coding standard?</div>
+<div id="faq-ipCheckstyleMismatchWithCodingStandard-A">
+
+In some areas, the sample Checkstyle rules file ([recommended by the SE-EDU guide](https://se-education.org/guides/tutorials/checkstyle.html)) may be slightly more permissive/restrictive than (but not contradictory to) the given Java coding standard. You are free to tweak the Checkstyle file if you wish. It is fine as long as your code is compliant with the given coding standard.
 </div>
 <!-- =============================================================== -->
 <div id="faq-ipMoreCodeQualityFeedback-Q">Can we get another round of automated code quality feedback?</div>

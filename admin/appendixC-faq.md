@@ -33,6 +33,8 @@
 {{ show_expanded_faq("ipIncorrectTagOrBranch") }}
 {{ show_expanded_faq("ipNotDoneInBranch") }}
 {{ show_expanded_faq("ipOtherDataFormats") }}
+{{ show_expanded_faq("ipAspectsNotCoveredByTheStandard") }}
+{{ show_expanded_faq("ipCheckstyleMismatchWithCodingStandard") }}
 
 ## FAQs on: Tutorials
 

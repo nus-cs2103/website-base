@@ -455,6 +455,13 @@ When you are doing the next step, you can run into merge conflicts. In some case
 </div>
 </div>
 {#====================================================================================================================#}
+<div id="post_A-CheckStyle">
+<div tags="m--cs2103">
+
+{{ show_faq("ipCheckstyleMismatchWithCodingStandard") }}
+</div>
+</div>
+{#====================================================================================================================#}
 <div id="pre_A-Assertions">
 <div tags="m--cs2103">
 
@@ -529,6 +536,11 @@ commit id: "m6"
 
 Relevant SE-EDU guide: [Intellij IDEA: Configuring the code style](https://se-education.org/guides/tutorials/intellijCodeStyle.html)
 </box>
+</div>
+{#====================================================================================================================#}
+<div id="post_A-CodingStandard">
+
+{{ show_faq("ipAspectsNotCoveredByTheStandard") }}
 </div>
 {#====================================================================================================================#}
 <div id="pre_A-Gradle">

@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, show_faq with context %}
 {% from "common/admin.njk" import show_admin_page with context %}
 
 {% call show_admin_page("standardsAndConventions") %}
@@ -6,10 +6,9 @@
 
 Given below are the standards and conventions to follow in this course.
 
-<box type="info" seamless>
 
-**When something is not covered by the given standard/convention**, you are free to choose which style you want to follow for that, but try to be consistent with the existing code (if any), and ensure everyone in the team follows the same (if it is a team project).
-</box>
+{{ show_faq("ipAspectsNotCoveredByTheStandard") }}
+
 
 <span tags="m--cs2103">
 

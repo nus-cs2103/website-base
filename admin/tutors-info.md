@@ -128,7 +128,7 @@
 
 -----------------------------
 
-<div id="TzerBin" class="container">
+<div id="Tzer-Bin" class="container">
   <div class="row bt-2">
     <div class="col-3">
 
