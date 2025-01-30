@@ -239,7 +239,7 @@ This version (i.e., {{ version_penultimate }}) will undergo a limited beta testi
 
 * **Learning outcome**: Able to put in final touches while minimizing delivery risks %%i.e., risks of regressions or deadline overruns%%.{{ bullet_target_green }}
 * **Product goal**: Reach the quality necessary for a public release.
-* **Strategy**: Freeze features. Strictly limit changes to bug fixes only.
+* **Strategy**: Freeze features. Avoid code changes unless strictly necessary.
 </div>
 
 <box type="warning" seamless>
