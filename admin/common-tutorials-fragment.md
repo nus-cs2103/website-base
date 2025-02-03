@@ -71,9 +71,8 @@ So, for each coding standard violation you identify, you should be able to trace
 <d-table sortable searchable>
 Tutorial | Reviewer | First PR to review | Backup PR to review
 ---------|----------|--------------------|---------------------
-{% if not allocation | length %}Allocation ... | ... not ... | .... available yet. {% else %}
-{% for line in ip_pr_review_allocation %}
-{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | <small>%%backup:%% {{ get_pr_link(line[3]) }}</small>{% endfor %}{% endif %}
+{% if not ip_pr_review_allocation | length %}Allocation ... | ... not ... | .... available yet. {% else %}{% for line in ip_pr_review_allocation %} {{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[2]) }} | <small>%%backup:%% {{ get_pr_link(line[3]) }}</small>
+{% endfor %}{% endif %}
 </d-table>
 </panel>
 <p/>
@@ -101,9 +100,8 @@ Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
 <d-table sortable searchable>
 Tutorial | Reviewer | Second PR to review | Backup PR to review
 ---------|----------|---------------------|---------------------
-{% if not allocation | length %}Allocation ... | ... not ... | .... available yet. {% else %}
-{% for line in ip_pr_review_allocation %}
-{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | <small>%%backup:%% {{ get_pr_link(line[5]) }}</small>{% endfor %}{% endif %}
+{% if not ip_pr_review_allocation | length %}Allocation ... | ... not ... | .... available yet. {% else %}{% for line in ip_pr_review_allocation %}{{ line[0] }} | {{ line[1] }} | {{ get_pr_link(line[4]) }} | <small>%%backup:%% {{ get_pr_link(line[5]) }}</small>
+{% endfor %}{% endif %}
 </d-table>
 </panel>
 <p/>
