@@ -648,6 +648,17 @@ Also, you may omit existing AB3 feature that are not _must-have_, and hence, nee
 </div>
 <!-- =============================================================== -->
 
+<div id="faq-tpEncryptDataFile-Q">Is it OK to encrypt the data file?</div>
+<div id="faq-tpEncryptDataFile-A">
+
+  Generally, not recommended. It can be allowed only if the application provides an easy way to decrypt the file, and encrypt it again after editing it manually.
+
+  Followup question: What if the data in the file is confidential, and therefore, it is risky to leave it in plaintext format?<br>
+  While this is a valid concern, you can assume/require that the app is used in a secure environment in which data are protected by default e.g., a personal computer already password protected.
+
+</div>
+<!-- =============================================================== -->
+
 <div id="faq-tpOneMemberNotDone-Q">What if a team member has not done this task? Can the rest proceed?</div>
 <div id="faq-tpOneMemberNotDone-A">
 

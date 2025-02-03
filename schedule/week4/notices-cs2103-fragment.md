@@ -8,7 +8,7 @@ This week, we cover one more course briefing segment, given below. As with other
 <include src="../../admin/courseBriefings.md#course-briefing-w4" />
 
 
-As usual, the _weekly_ briefing will be hybrid mode, and optional to attend/watch.
+As usual, the _weekly_ briefing will be hybrid mode.
 </panel>
 <p/>
 

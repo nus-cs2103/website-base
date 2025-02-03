@@ -57,6 +57,7 @@
 {{ show_expanded_faq("tpNotEnoughWorkToDivide") }}
 {{ show_expanded_faq("tpOmitStoriesInAb3") if cs2103 }}
 {{ show_expanded_faq("tpHowManyFeaturesInMvp") }}
+{{ show_expanded_faq("tpEncryptDataFile") }}
 {{ show_expanded_faq("tpAb3FeatureInMvpSpec") if cs2103 }}
 {{ show_expanded_faq("tpIterationDeadline") }}
 {{ show_expanded_faq("tpMissingIterationDeadlines") }}

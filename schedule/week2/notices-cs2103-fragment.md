@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_as_tab, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, get_date, show_as_tab, timing_badge with context %}
 {% from "common/topics.njk" import  panopto with context %}
 
 <box type="important" seamless>
@@ -16,10 +16,16 @@
 <panel type="info" header="##### ==[MUST-WATCH]== Briefing Videos for Week 2" peek >
 
 <include src="../../admin/courseBriefings.md#course-briefing-w2" />
-
-<span class="text-secondary">****4. Week 2->3 Briefing****</span> (Week 2 Recap + Week 3 Preview) : this will be done in hybrid mode, on Friday, at the usual lecture venue/slot.
-
 </panel>
+<p/>
+<box type="info">
+
+****Week 2->3 Briefing**** (Week 2 Recap + Week 3 Preview) will be done in hybrid mode -- you can attend it F2F %%(@{{ lecture_venue }} {{ get_date(date_w2_start, 4, format=format_normal, time="from 4pm") }})%%, join via Zoom, watch the recording later, or skip it altogether).<br>
+
+==**iP Help Session**== %%({{ get_date(date_w2_start, 4, format=format_normal, time="from 4.50pm") }})%%: This above weekly briefing will be followed by a F2F session to help those who are stuck in the iP due to technical difficulties. To attend that help session, be in {{ lecture_venue }} at least by 4.50pm.
+
+
+</box>
 <p/>
 
 {{ embed_topic("../../admin/weeklySchedule.md#before-attempting-tasks", "Admin " + icon_embedding + " Weekly Schedule → Extract", "3", status="expanded") }}

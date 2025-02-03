@@ -27,8 +27,6 @@ One course briefing video to watch this week, given below:
 
 <include src="../../admin/courseBriefings.md#course-briefing-w3" />
 
-**The _weekly_ briefing for this week will be done in hybrid mode** -- you can attend it F2F %%(@{{ lecture_venue }} {{ get_date(date_w2_start, 4, format=format_normal, time="from 4pm") }})%%, join via Zoom, watch the recording later, or skip it altogether).<br>
-
-==**iP Help Session**==: This week's briefing will be followed by a F2F session to help those who are stuck in the iP due to technical difficulties. To attend that help session, be in {{ lecture_venue }} at least by 4.50pm.
+As usual, the _weekly_ briefing (i.e., Week 3->4 transition, covering a recap of Week 3 and a preview of Week 4) will be in hybrid mode.{% if semester=="AY2425S2" %} But it will start around 5pm, to make room for the mass tutorial that starts at 4pm.{% endif %}
 </panel>
 <p/>

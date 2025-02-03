@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, show_faq with context %}
 
 {% macro show_constraint(constraint_id, recommendation=false) -%}
 {% set constraint_style = "info" if recommendation else "warning text-dark" %}
@@ -49,13 +49,8 @@ The product needs to be developed in a breadth-first incremental manner over the
 The data should be stored locally and should be in a human editable text file.<br/>
 %%**Reason:** To allow advanced users to manipulate the data by editing the data file.%%
 
-<panel type="seamless" header="FAQ: Is it OK to encrypt the data file?">
+{{ show_faq("tpEncryptDataFile") }}
 
-Generally, not recommended. It can be allowed only if the application provides an easy way to decrypt the file, and encrypt it again after editing it manually.
-
-Followup question: What if the data in the file is confidential, and therefore, it is risky to leave it in plaintext format?<br>
-While this is a valid concern, you can assume/require that the app is used in a secure environment in which data are protected by default e.g., a personal computer already password protected.
-</panel>
 {%- endcall  %}
 
 {% call show_constraint("Constraint-No-DBMS") -%}
@@ -184,6 +179,8 @@ Therefore, the input to the app needs to be primarily CLI. <span tags="m--cs2103
 Also keep in mind:
 * Regular typing is usually faster than using key combinations.
 * <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multistep command to help new users, it is recommended that you also provide a one-shot equivalent for regular/expert users.<br>
+
+{{ show_faq('tpMultiStepCmd') }}
 {%- endcall %}
 
 {% call show_constraint("Recommendation-Realistic", recommendation=true) -%}
