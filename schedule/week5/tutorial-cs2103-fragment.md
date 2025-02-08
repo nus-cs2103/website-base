@@ -13,7 +13,7 @@ The tutorial is held F2F from this week onwards. See [the tutorials page]({{ bas
 {{ icon_team }} This activity is to be done as a team. One team member needs to be connected to the TV.
 </div -->
 
-1. **Find the PR you have been allocated to discuss** (expand the the panel below). If the allocated PR is not available or suitable, you can choose the fallback option, and failing that, any random PR.
+1. **Find the PR you have been allocated to discuss** (expand the panel below). If the allocated PR is not available or suitable, you can choose the fallback option, and failing that, any random PR.
 
    <panel header="**PR allocation**" peek>
 
@@ -24,8 +24,7 @@ The tutorial is held F2F from this week onwards. See [the tutorials page]({{ bas
    <d-table sortable searchable>
    Your username | PR to review       | Fallback PR to review
    --------------|--------------------|------------------
-   {% if not allocation | length %}Allocation ... | ... not ... | .... available yet. {% else %}
-   {% for allocation in allocations -%}
+   {% if not allocations | length %}Allocation ... | ... not ... | .... available yet. {% else %}{% for allocation in allocations -%}
    {{ allocation[0] }} | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }}
    {% endfor %}{% endif %}
    </d-table>

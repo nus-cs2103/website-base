@@ -494,6 +494,21 @@ There is no such guarantee, for two reasons:
 LoC is not graded. But if there is a significant mismatch between the LoC numbers and the 'effort' rating a student received, we take a closer look at the case to find out the reason for the mismatch, and revise marks if necessary.
 </div>
 <!-- =============================================================== -->
+<div id="faq-tpUncontactableMembers-Q">What if a member is not contactable?</div>
+<div id="faq-tpUncontactableMembers-A">
+
+It is each member's responsibility to get in touch with the rest of the team. So, you are not obliged to keep chasing such members, beyond a few reasonable attempts.
+
+**Keep such MIA members in the loop** (e.g., keep them copied in all communications) but you can proceed with the project without those members. It is important that you **do not delay the project on account of such members**.<br>
+ When that member decides to resume/start the project work, it is up to her/him to let the team know, and make up for the absent period. The rest of the team is encouraged to **be kind/understanding** and help that member get into the project, but this is not a strict requirement.
+
+**Ensure your peer evaluations of such team members factor in such absences.**
+
+It is advisable to **keep copies of communications** related to such cases (e.g., reminders sent to such members) in case the teaching team asks for evidence.<br>
+It is also advisable to **keep your tutor informed** about such cases.
+
+</div>
+<!-- =============================================================== -->
 <div id="faq-tpIterationDeadline-Q">What's the deadline for tP iterations?</div>
 <div id="faq-tpIterationDeadline-A">
 

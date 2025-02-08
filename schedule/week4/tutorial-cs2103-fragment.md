@@ -1,10 +1,14 @@
 {% from "common/macros.njk" import show_faq, thumb with context %}
 
+{% if semester != "AY2425S2" %}
 #### {{ thumb(1) }} **Discuss iP progress**
 
 * If you managed to add a GUI to your app, demo it to others.
 
 #### {{ thumb(2) }} **Interpret class/object diagrams**
+{% else %}
+#### {{ thumb(1) }} **Interpret class/object diagrams**
+{% endif %}
 
 * Do the first of the two exercise given below, as directed by the tutor. If there is time left, do the second one as well.
 

@@ -592,18 +592,28 @@ Use this week extra week to finish up any leftover work from the previous week.
 
 {{ embed_topic("tp-teams.md#teamCommunication", "Admin " + icon_embedding + " **Teams → Communication**", "2", indent="1") }}
 
-* #r#**Submission:**## via Canvas. Submission will open Friday evening, after team forming is complete for all tutorials. We'll let you know when it is open.
+* #r#**Submission:**## via Canvas. Submission will open Friday evening, after team forming is complete for all tutorials. We'll let you know when it is open.<br>
+  Details to submit:
+  * `Which day of the week, and at what time, your team will hold weekly team meetings?` {texts="['i.', 'ii.', 'iii.', 'iv.', 'v.']"}
+  * `What is the mode (online or F2F)?`
+  * `If F2F, where will you be meeting? If Online, which software will you be using for the meeting?`
+  * `Have all teams explicitly agreed to the above plan? If anyone has not agreed, state who and why (e.g., uncontactable).`
+
+
+{{ show_faq("tpUncontactableMembers") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_check_collective_ip_status">{{ icon_team }} %%Team Task%%: Check up on team's collective iP status</span>
 <div id="desc_check_collective_ip_status">
 
 * Check with all team members if any of them needs help doing the iP, and source within the team to provide the needed help as much as you can %%e.g., offer to sit with them while they do the iP so that you can try to help when needed.%%<br>
-  **Submission:** After completing this task (i.e., after asking all team members if they need help for the iP, and coming up with a plan to help those who asked for help), one member should inform us so that we can track the status of this task. We don't need to know who asked for help though e.g., `One member is slightly behind and one significantly behind. We plan to have a code-together session on Sunday so that we can help them if they encounter problems.`
+
 
 <box type="tip" seamless>Mentorship within the team is highly-encouraged and rewarded. Besides, it is in your interest to help team members level up before the tP coding begins, and also, a good early opportunity to build team spirit.</box>
 
-* #r#**Submission:**## via Canvas. Submission will open Friday evening, after team forming is complete for all tutorials. We'll let you know when it is open.
+* #r#**Submission:**## via Canvas. Submission will open Friday evening, after team forming is complete for all tutorials. We'll let you know when it is open.<br>
+  After completing this task (i.e., after asking all team members if they need help for the iP, and coming up with a plan to help those who asked for help), one member should submit a brief summary of the status of this task.<br>
+   e.g., `One member is slightly behind and one significantly behind. We plan to have a code-together session on Sunday so that we can help them if they encounter problems.`
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_weekly_meetings">{{ icon_team }} Start weekly project meetings</span>

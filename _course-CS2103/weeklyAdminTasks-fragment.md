@@ -22,10 +22,16 @@ week4: [
 ],
 week5: [
   {id: 'submit_post_lecture_quiz', graded: true},
+  {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: get_date(date_w5_start, 3), graded: true}
+] if semester == 'AY2425S2' else [
+  {id: 'submit_post_lecture_quiz', graded: true},
   {id: 'submit_midterm_feedback_for_the_course', deadline: get_date(date_w5_start, 5), deadline_type: 'info'},
   {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: get_date(date_w5_start, 3), graded: true}
 ],
 week6: [
+  {id: 'submit_midterm_feedback_for_the_course', deadline: get_date(date_w6_start, 5), deadline_type: 'info'},
+  {id: 'submit_post_lecture_quiz', graded: true}
+] if semester == 'AY2425S2' else [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week7: [

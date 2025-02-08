@@ -51,6 +51,7 @@
 
 ## FAQs on: tP
 
+{{ show_expanded_faq("tpUncontactableMembers") }}
 {{ show_expanded_faq("tpWhyNarrowTarget") }}
 {{ show_expanded_faq("tpHowNarrowTargetCanBe") }}
 {{ show_expanded_faq("tpChangeDirectionLater") }}

@@ -9,7 +9,7 @@ week3: [
 week4: [
   {id: 'start_weekly_meetings'},
   {id: 'start_project_notes', deadline: 'before the tutorial'},
-  {id: 'decide_project_direction', deadline: 'decide by tutorial, submit by Sat'}
+  {id: 'decide_project_direction', deadline: 'decide by tutorial, submit by: ' + get_date(date_w4_start, 5, time="23:59")}
 ],
 week5: [
   {id: 'brainstorm_user_stories', deadline: 'before the tutorial'},
