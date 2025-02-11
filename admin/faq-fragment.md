@@ -1,6 +1,13 @@
 {% from "common/macros.njk" import as_tag, embed_topic, thumb_small with context %}
 
 <!-- =============================================================== -->
+<div id="faq-howToDecideTooLongOrTooDeepMethods-Q">How to decide if a method is _too long_ (or if the nesting is _too deep_)?</div>
+<div id="faq-howToDecideTooLongOrTooDeepMethods-A">
+
+There are no hard-and-fast rules. While some numbers (e.g., 30 LoC, or 3 levels of nesting) may be mentioned as guidelines, it is always a case-by-case decision. For example, a method with 50 LoC may be considered as not 'too long' if its contents are justified or if the costs of shortening it outweigh the benefits.
+
+</div>
+<!-- =============================================================== -->
 <div id="faq-whereIsEverything-Q">Where is everything?</div>
 <div id="faq-whereIsEverything-A">
 

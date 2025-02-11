@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, show_as_rounded_tab, show_as_tab, thumb, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, show_as_rounded_tab, show_faq, show_as_tab, thumb, timing_badge with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import ip_pr_slap_review_allocation as allocations with context %}
 
 <box type="info">
@@ -32,11 +32,11 @@ The tutorial is held F2F from this week onwards. See [the tutorials page]({{ bas
    <p/>
 
 1. {{ timing_badge("10 minutes", "info") }} **Find instances of the three code quality problems listed below**: Go through the code in the diff view (i.e., the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab), and find instances of following code quality problems <span class="text-danger">(ignore other types of code quality problems)</span><br>
-   **a) weak SLAP**<br>
-   **b) nesting problems**: arrow-head style code or too-deep nesting<br>
+   **a) weak <trigger trigger="click" for="modal:t4-slapDescription">SLAP</trigger>**<br>
+   **b) nesting problems**: _arrow-head style code_ or _too-deep nesting_ %%(<trigger trigger="click" for="modal:t4-arrowVsDeepNesting">what's the difference?</trigger>)%%<br>
    **c) too-long methods**<br>
    * If you can't find at least one example, you can try the fallback option provided, and failing that, another random iP PR.
-   * You can also select borderline cases.
+   * You may select _borderline_ and _possibly_ problematic cases too.
 
    **Paste screenshots of problematic code** in the `.pptx` the tutor will share with you via MSTeams.
 
@@ -49,14 +49,25 @@ The tutorial is held F2F from this week onwards. See [the tutorials page]({{ bas
    <include src="..\..\book\gitAndGithub\reviewPRs\text.md#tip-pr-split-view" inline />
    </box>
 
+{{ show_faq("howToDecideTooLongOrTooDeepMethods") }}
 
-1. {{ timing_badge("10 minutes", "info") }} **Discussion**: The tutor will lead a short discussion to go through the problematic code you found.
+3. {{ timing_badge("10 minutes", "info") }} **Discussion**: The tutor will lead a short discussion to go through the problematic code you found.
 
 1. **After the tutorial**, you can apply the insights gained from this activity to **improve the code quality of your own iP**, if necessary.
    <box type="info" seamless>
    You are not required to (but welcome to) post review comments in the PRs you examined.
    </box>
 
+
+<modal large header="" id="modal:t4-slapDescription">
+  <include src="../../book/codeQuality/maximizeReadability/intermediate/slapHard/unit-inParent-asPanel.md" boilerplate />
+</modal>
+
+<modal large header="" id="modal:t4-arrowVsDeepNesting">
+
+These two often happens together, but it is possible we see an arrowhead shape that is not that deep or deep nesting that is not exactly a clean arrowhead shape e.g.,<br>
+<pic src="../../images/arrowVsDeepNesting.png" />
+</modal>
 
 #### {{ thumb(2) }} User stories exercise
 

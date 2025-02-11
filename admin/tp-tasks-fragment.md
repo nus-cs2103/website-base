@@ -650,7 +650,8 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 * <span class="text-danger">**Submission**:</span> Submit via TEAMMATES.
   * Details to submit:
-    1. **Product name** (plain text only) %%e.g., ClientContactsPro%%
+    1. **Product name** (plain text only) %%e.g., ClientContactsPro%%<br>
+       {{ icon_important_big_red }} Recommended to use **English characters only**. Using special characters, accented characters (e.g., è) etc. might feel 'cute' now, but you will regret it later when you need to involve the product name in submission file names etc.
     1. **Target user** profile (plain text only) %%e.g., freelance event photographers%%<br>
        This is a general description of the target user, <span class="text-danger">not the 'persona' you defined</span> (the latter serves as a concrete representation of the target user, for your internal use only).
     1. **Value proposition** i.e., what problem does the product solve? (plain text paragraph, <span class="text-danger">no more than 50 words</span>) %%e.g., provide fast access to client contact details, optimized for users who prefer a CLI%%<br>
@@ -709,7 +710,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 * **What format?**: You may use a sentence format or a table format but do maintain the prescribed three-part structure of a user story. In particular, ==try to include the _benefit_ part in most user stories== as that will come in handy when prioritizing user stories later.
 
 * **Submission** (to be checked by the tutor later):<br>
-  * Intermediate steps (e.g., persona, scenarios): Keep records these in your collaborative project document started in the previous week.
+  * Intermediate steps (e.g., persona, scenarios): Keep records of these in your collaborative project document started in the previous week.
   * Brainstormed user stories:  Record them using an <!--~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
   {{ icon_tip }} **Use an online spreadsheet for recording user stories** (e.g., Google Sheets), if you are not sure which tool to use. -- they are easy to edit, share, color, and more importantly, sort/filter.<br>
   {{ icon_info }} If you put the user stories in a page/file other than your main collaborative project notes document (i.e., the one given [here](teamList.html)), ensure that page/file is viewable by the public, and the main document has a link to that page/file. Otherwise, the tutor will not be able to see your list of user stories.
