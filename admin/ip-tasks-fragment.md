@@ -916,7 +916,8 @@ This activity is worth `2x2=4` participation points.
 
 {{ embed_topic("appendixB-policies.md#policy-reuse", "Admin " + icon_embedding + " **Course Policies → Policy on Reuse**", "1", indent="1") }}
 
-{{ show_faq("ipMoreCodeQualityFeedback") }}
+{{ show_faq("ipMoreCodeQualityFeedback", is_compact=1) }}
+{{ show_faq("ipIfSubmissionBelowBar") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_website">Set up a product website</span>
@@ -928,7 +929,7 @@ This activity is worth `2x2=4` participation points.
   * ==The file should be in the `docs` folder and named `Ui.png` exactly== (even if the file format is not `png`, name it `png`)
   * `Ui.png` should show the _full_ GUI window (i.e., not just the part containing the chat messages).
   * `Ui.png` should be a _single_ GUI window (i.e., do not stitch multiple screenshots together).
-  * Ideally, the product name should visible in the screenshot e.g., in the title bar of the Window
+  * Ideally, the product name should be visible in the screenshot e.g., in the title bar of the Window
   * Also note the tips given in the panel below:
 
 {{ embed_topic("tp-deliverables-website-fragment.md#tips-for-product-screenshot", "Admin " + icon_embedding + " Team Project (tP) → Tips for Product Screenshots", "3", indent="2") }}
@@ -944,7 +945,7 @@ This activity is worth `2x2=4` participation points.
 
 <div  tags="m--cs2103" id="ip-ui-png-test">
 
-* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your user name}.github.io/{repo name}/Ui.png` (e.g., `https://johndoe.github.io/ip/Ui.png`).
+* {{ icon_tip }} If you added the `Ui.png` correctly and set up the product website correctly, ==you should be able to **see your screenshot in the [iP Showcase](ip-showcase.html) page**== %%(a link to the iP Showcase page is also available in the top navigation menu → Links)%% and you should be able to access the image using the link `https://{your username}.github.io/{repo name}/Ui.png` (e.g., `https://johndoe.github.io/ip/Ui.png`).
 </div>
 </div>
 {#====================================================================================================================#}
@@ -957,7 +958,7 @@ This activity is worth `2x2=4` participation points.
    * Create the JAR file {% if cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20IntelliJ%20IDEA)).{% else %}in one of these ways:
      * If you have added a GUI or using third-party libraries: [use Gradle](https://se-education.org/guides/tutorials/gradle.html).
      * Else: you can use IntelliJ.{% endif %}
-   * The JAR file should be ==cross-platform and should work in a computer that has Java 17== (but no other Java version). To avoid version compatibility issues, we strongly recommend the following approach:
+   * The JAR file should be ==cross-platform and should work in a computer that has Java 17==. To avoid version compatibility issues, we strongly recommend the following approach:
       1. Open a terminal window, and navigate to the root of your project folder.
       1. Run the `java -version` command to confirm the terminal is using Java 17.
       1. Run the `./gradlew clean shadowJar` command to create the JAR file.
@@ -965,8 +966,7 @@ This activity is worth `2x2=4` participation points.
    1. Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.<br>
       When running the jar file for smoke testing, instead of double-clicking the jar file, do the following: open a terminal -> navigate to the jar location -> run the `java -jar "JAR_FILE_NAME"` command.
    1. Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.<br>
-      {{ icon_tip }} If you don't have ready access to a specific OS, post a link to your JAR in the forum and ask
-     others to help with the smoke testing -- some of them will even appreciate the opportunity to help a classmate.<br>
+      {{ icon_tip }} If you don't have ready access to a specific OS, you can ask others' help to smoke-test it by [posting a smoke-testing request in the forum]({{ url_forum }}/new?template=smoke.md) -- some of them will even appreciate the opportunity to help a classmate.<br>
      {{ icon_info }} Note that concepts you encounter while doing course project tasks (e.g., _smoke testing_) are in the [scope of the final exam](exams.html#:~:text=you%20are%20expected%20to%20be%20aware%20of%20SE%2Drelated%20things%20(i.e.%2C%20tools%2C%20techniques%2C%20concepts)%20encountered%20while%20dong%20the%20iP%20and%20the%20tP).
 4. **Create a new release on GitHub** (e.g., `v0.2`) and upload the JAR file.
    * Recommended to refrain from uploading multiple JAR files as this can cause extra work for the evaluators.
@@ -976,6 +976,8 @@ This activity is worth `2x2=4` participation points.
 <include src="dukeFragment.md" boilerplate var-header="**`A-Release`: Release**" var-fragment="extensions-fragment.md#A-Release" />
 </div>
 <p/>
+
+{{ show_faq("ipDeadlineExtensions") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_get_more_out_of_the_ip">[Optional] Get more out of the iP</span>
@@ -1009,7 +1011,9 @@ Irrespective of the exact extension you did, the tag name should be `BCD-Extensi
 
 
 {{ icon_tip }} You may want to pick an extension that is potentially relevant to your tP so that the code can be reused in the tP later, if possible.
+
 </div>
+{{ show_faq("ipMinimumRequirementNotGiven") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_start_next_week_tasks">Start next week's tasks</span>

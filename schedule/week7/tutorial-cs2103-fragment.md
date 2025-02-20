@@ -1,9 +1,9 @@
 {% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
 {% from "_course-" + course + "/studentData-fragment.md" import team_review_allocation with context %}
 
-#### {{ thumb(1) }} Exercise on Requirements: PR Tracker
+#### {{ thumb(1) }} Exercise on Requirements: PR Tracker -- Part I
 
-* {{ timing_badge("10 minutes", "info") }} **Write the answers to the following questions**. You can write your answers in a local document file %%(e.g., a Word doc)%% first; when done, paste a screenshot in the workspace document. %%Writing the answer directly in the workspace document might result in too much lag.%% {text="1.1"}
+* {{ timing_badge("10 minutes", "info") }} **Write the answers to the following questions**. You can write your answers in a local document file %%(e.g., a Word doc)%% first; when done, paste a screenshot in the workspace document. %%Writing the answer directly in the workspace document might result in too much lag.%%
 
    <box>
 
@@ -30,7 +30,9 @@
 
    </box>
 
-* **Check a peer answer (provided by the tutor) for the bugs listed below** and discuss, as directed by the tutor. {text="1.2"}
+#### {{ thumb(2) }} Exercise on Requirements: PR Tracker -- Part 2
+
+* **Review a sample answer (provided by the tutor) for the task 1 above, to identify if it has bugs listed below**, and discuss, as directed by the tutor.
 
 {{ embed_topic("../../admin/tp-grading-bugs-fragment.md#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
 {{ embed_topic("../../admin/tp-grading-bugs-fragment.md#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
@@ -38,7 +40,7 @@
 {{ embed_topic("../../admin/tp-grading-bugs-fragment.md#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
 
 
-#### {{ thumb(2) }} Refine your DG {{ timing_badge("after the tutorial", "secondary") }}
+#### {{ thumb(3) }} Refine your DG {{ timing_badge("after the tutorial", "secondary") }}
 
 * After the tutorial, if applicable, refine the relevant sections of your own DG based on what you learned from the tutorial activities.<br>
   Note: Ideally, you should have completed iteration `{{ version_practice }}` already. In that case, this DG refinement can be done as part of a subsequent iteration (e.g., `{{ version_first }}`)

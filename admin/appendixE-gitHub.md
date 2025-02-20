@@ -265,7 +265,7 @@ The sections below describe a-e in more details.
     * If the issue title is enough to describe the task, no need to repeat it in the issue description.
     * Similarly, labels such as `priority` can be omitted if you think they don't help you.
 * **No need to track things taken for granted.** %%e.g., `push code to repo` (reason: it is taken for granted that the code author will push the code to the repo).%%
-* **Ensure issues are compliant with the breadth-first iterative approach.** That is, ==a code merge to the `master` branch should take the product from a working version to a slightly better working version==.
+* **Ensure issues are compliant with the breadth-first iterative approach.** That is, ==a code merge to the `master` branch should take the product from one working version to another (slightly better) working version==.
   * %%{{ bad }}: `Add all data classes` (reason: this is the depth-first approach)%%
   * %%{{ good }}: `Support adding simple todo tasks`%%
 

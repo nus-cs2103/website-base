@@ -836,7 +836,7 @@ Submission: not required.
 <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
-* **Why?**: So far, we have user stories we want to include in the MVP version. But user stories simply tell us _user needs_. To move towards a product design, we need to design product _features_ of the product can fulfill those user needs.
+* **Why?**: So far, we have user stories we want to include in the MVP version. But user stories simply tell us _user needs_. To move towards a product design, we need to design _features_ of the product that can fulfill those user needs.
 
 * **Submission:** Note down the feature list in your online project notes document.
 
@@ -1111,7 +1111,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
 <box type="tip" seamless>
 
-**Strongly recommended to do this as a team activity** (preferably F2F, or else connected via Zoom/MST). That will help you proceed faster (e.g., a PR can be merged soon after it has been created) and will also make it easy for you to help each other w.r.t. to the workflow matters.
+**Strongly recommended to do this as a team activity** (preferably F2F, or else connected via Zoom/MSTeams). That will help you proceed faster (e.g., a PR can be merged soon after it has been created) and will also make it easy for you to help each other w.r.t. to the workflow matters.
 </box>
 
 ****Steps:****
@@ -1125,7 +1125,7 @@ Furthermore, these sections will be graded at the final project evaluation, and 
 
    {{ embed_topic("appendixE-gitHub.md#tp-individual-fork-setup", "Admin " + icon_embedding + " Appendix E (extract): **tP Individual Fork Setup**", "1", indent="1") }}
 
-3. [each member] **Add your photo to repo while ==following the prescribed tP workflow==**. Here are the steps (yes it is a lot of steps for such a small update, but the purpose is to learn the workflow):
+3. [each member] **Add your photo to repo while ==following the prescribed tP workflow==**. Here are the steps %%(yes it is a lot of steps for such a small update, but the purpose is to learn the workflow)%%:
 
 <div class="indented-level1">
 

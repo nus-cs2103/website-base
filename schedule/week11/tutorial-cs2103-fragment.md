@@ -1,6 +1,7 @@
 {% from "common/macros.njk" import as_tag, embed_topic, get_date, thumb, show_as_tab, timing_badge with context %}
 {% from "common/topics.njk" import panopto with context %}
 
+{% if semester == 'AY2425S1' %}
 <box>
 
 #### Week 11 Tutorial Video
@@ -16,7 +17,7 @@
 
 {{ panopto("0a31323f-762e-466b-aa18-b2170087f030", desc="++Week 11 Tutorial++ (30 minutes)", start_week="11") }}
 </box>
-
+{% endif %}
 
 #### {{ thumb(1) }} Exercise: Equivalence partitions, boundary values
 

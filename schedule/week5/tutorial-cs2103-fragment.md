@@ -58,7 +58,7 @@ The tutorial is held F2F from this week onwards. See [the tutorials page]({{ bas
    You are not required to (but welcome to) post review comments in the PRs you examined.
    </box>
 
-
+{{ show_faq("warmUpTaskRushed") }}
 <modal large header="" id="modal:t4-slapDescription">
   <include src="../../book/codeQuality/maximizeReadability/intermediate/slapHard/unit-inParent-asPanel.md" boilerplate />
 </modal>

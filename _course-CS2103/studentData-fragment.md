@@ -294,7 +294,7 @@
  ['ABIS..ALIM', 'CS2103T-T11-1', 'AbiHalim'],
  ['CHAN..HWAT', 'CS2103T-T11-1', 'shashwatchan'],
  ['SONG..UEXI', 'CS2103T-T11-1', 'YosieSYX'],
- ['STAN..JAJA', 'CS2103T-T11-1', ''],
+ ['STAN..JAJA', 'CS2103T-T11-1', 'unknown-github-SAW'],
  ['VEE .. ZHI', 'CS2103T-T11-1', 'veehz'],
  ['KIMB.. JIA', 'CS2103T-T11-2', 'K1mcheee'],
  ['LIEW..YUAN', 'CS2103T-T11-2', 'shuang26'],
@@ -488,7 +488,7 @@
 
 
 {% set org_replacements = {
-
+    'AY2425S2-CS2103T-T15-1': 'AY2425S2-CS2103T-T15-1a'
 }%}
 
 {% set teams = {
@@ -548,7 +548,7 @@
  'CS2103T-T12-1': 'https://docs.google.com/document/d/1X4kxhIHmPBf6suXBFuxoy7Aitpi1IC7Z4xCOM9Cj6Cw/edit?usp=sharing',
  'CS2103T-T12-2': 'https://docs.google.com/document/d/1iDlrnqMLy0DSerQeCM2WeBavefz8O6SqWH9zRiMWXW8/edit?usp=sharing',
  'CS2103T-T12-3': 'https://docs.google.com/document/d/1OlI1K6zEjweNbuoG7xBQOXKKs-9-jWXrQ8f5GeRVWFA/edit?usp=sharing',
- 'CS2103T-T12-4': 'https://nusu.sharepoint.com/:w:/r/sites/CS2103TTPGroup/Shared%20Documents/General/TP%20Notes.docx?d=w7056ef90cd8e42b99906fe5ad93b74c7&csf=1&web=1&e=254qTV',
+ 'CS2103T-T12-4': 'https://docs.google.com/document/d/1x1no-NkmfFhHSUm12eRC18RsQBRd5QYx0ej4Av8R-6g/edit?usp=sharing',
  'CS2103T-T13-1': 'https://docs.google.com/document/d/18X7DKC23olIgntS8SdSCXq_ISkmlR_D5ZuLp_09qE08/edit?usp=sharing',
  'CS2103T-T13-2': 'https://docs.google.com/document/d/1Zd3AhqWv6xhXOdTFCIJ8joQc9vflP22Mw6yIIHNpEas/edit?usp=sharing',
  'CS2103T-T13-3': 'https://docs.google.com/document/d/1FVrdsuQ_bKcApx8A-cmAAidQ6-H7g7XH3XEfOB44XsM/edit?usp=sharing',
@@ -568,8 +568,8 @@
  'CS2103T-T17-1': 'https://docs.google.com/document/d/1JZo20WL6PSh-An1llPk6G6fq7Kw1XWAdveZtp90lBIk/edit?usp=sharing',
  'CS2103T-T17-2': 'https://docs.google.com/document/d/1LpIjYX6ENTSyBtRn5kh1l6kfZhgAOBxOcxIa6JrOrZY/edit?usp=sharing',
  'CS2103T-T17-3': 'https://docs.google.com/document/d/18L0WPg0abHZ3M975TE9WUMUBScWY2Um-ctaH3A9yifY/edit?usp=sharing',
- 'CS2103T-T17-4': 'https://drive.google.com/drive/folders/15KBsKyrncN-CvUtnl1KvyAiM8fPJG59s?usp=drive_link',
- 'CS2103T-W09-1': 'https://docs.google.com/document/d/1vPMX0vN-L9SwMGWDN94jC-BpWdMj_hFVk9HuXwf9Bqg/edit?usp=sharing',
+ 'CS2103T-T17-4': 'https://docs.google.com/document/d/1W66bfs2ESZ0vLyywJiE0WljP4bLss7D1bZjR3O68FJY/edit?',
+ 'CS2103T-W09-1': 'https://docs.google.com/document/d/1_i66Uvu530nA1kMDW3A53IeExrTLtFvmpuVwNWC0ObY/edit?usp=sharing',
  'CS2103T-W09-2': 'https://docs.google.com/document/d/1OHndH7zbMc4lHM0zyIKROPssjYGGoCEXk61KGxId95E/edit?usp=sharing',
  'CS2103T-W09-3': 'https://docs.google.com/document/d/1dGRXnOwKz5hYzouSDSzXVEQvd7AOOm6H2_FlXsksmZQ/edit?usp=sharing',
  'CS2103T-W09-4': 'https://docs.google.com/document/d/1NPDA-gYFmpeo10BywmvGKDfC1M1ua2P67wTNnKc9xuM/edit?usp=sharing',
@@ -690,7 +690,7 @@
  'CS2103-F10-4': 'Tuition administrators to manage student records, class schedules, payments, and progress tracking for a tuition center or private tutoring service.',
  'CS2103-F15-1': 'The target user is a Teaching Assistant in higher education, managing coursework and assisting professors. They need an efficient, streamlined tool for attendance tracking and administrative tasks, preferring a straightforward command-line interface for its speed and simplicity, allowing them to focus more on teaching and less on administrative overhead.',
  'CS2103-F15-2': 'Independent tutors and coaching professionals who are tech-savvy.',
- 'CS2103-F15-3': 'HR recruiters managing multiple job openings and candidates.',
+ 'CS2103-F15-3': 'HR recruiters looking for a simple and efficient way to track and manage applicant details.',
  'CS2103-F15-4': 'Human Resource (HR) professionals handling high volume recruitment and employee management in medium to large organisations. They handle employee data, including personal details, training, compensation and termination, overseeing audits across all departments. Highly proficient typists, they prefer keyboard-driven workflows over mouse-heavy interfaces to quickly filter, update, and analyze personnel records.',
  'CS2103-W11-1': 'Computer science tutors who need an efficient system to organize student information and track student progres.',
  'CS2103-W11-2': 'Students looking for internships',
@@ -782,7 +782,7 @@
  'CS2103-F10-4': 'TutorProMax simplifies tuition administration by providing an all-in-one solution for managing student and parent details, scheduling lessons, tracking payments, and monitoring student progress. It helps tuition centers and private tutors stay organized, reduce administrative workload, and ensure smooth communication with parents. With its ability to handle multiple locations and emergency contact access, it enhances efficiency and ensures a seamless tutoring experience.',
  'CS2103-F15-1': 'TAskbook is a CLI tool that streamlines communication and administrative tasks for Teaching Assistants by providing fast access to student contact details. TAskbook simplifies communication, reduces manual searching, and ensures organized record-keeping, enabling TAs to quickly retrieve, update, and manage student contacts without navigating cluttered spreadsheets or emails.',
  'CS2103-F15-2': 'Helps tutors organize student contacts and track their progress, reducing administrative work and improving learning outcomes.',
- 'CS2103-F15-3': 'Simplifies the recruitment process by streamlining tasks like tracking candidate details, and matching candidates to job openings, enabling recruiters to save time and improve productivity.',
+ 'CS2103-F15-3': 'RecruitTrackPro streamlines applicant tracking, ensures quick data retrieval, and reduces administrative workload, making recruitment management more efficient.',
  'CS2103-F15-4': 'HR professionals access multiple platforms with cumbersome interfaces to manage high volume data, slowing workflows. Our keyboard-friendly platform streamlines data entry, record filtering and compliance tracking, offering efficient collection and organization of personnel data. It tracks inter-employee relationships and provides follow-up reminders, improving efficiency and accuracy in high-volume HR operations.',
  'CS2103-W11-1': 'Mentorstack helps CS tutors efficiently manage and track student contacts, attendance, participation, progress, and streamlines communication. It simplifies student management across different levels and courses while catering to tech-savvy users who may prefer a command-line interface.',
  'CS2103-W11-2': 'Provide fast access to internship details and progress, optimised for students who are more comfortable using a CLI',

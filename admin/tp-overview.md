@@ -133,6 +133,11 @@ You are expected to:
 * **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example of progressively narrowing down target user: anybody → teachers → university teachers → tech-savvy university teachers → instructors of course CS____.%%<br><br>
  {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/tp-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing to mouse actions%%.
 
+<box type="warning" seamless>
+
+**Narrow down only to the extent you intend to optimize**: The narrowing down the target user should be tied to an intention (and the feasibility) to optimize the application to that 'narrowed down' target user. For example, it doesn't make sense to narrow down the target user to _NUS students_ if the application will not be optimized to NUS students specifically (i.e., the app can be used irrespective of which university the user is from).
+</box>
+
 <div class="indented-level1">
 
 {{ show_faq("tpWhyNarrowTarget") }}

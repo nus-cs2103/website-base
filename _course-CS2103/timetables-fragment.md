@@ -61,7 +61,7 @@
  | | | | | | |
  {{ M | safe }} | COM3-01-20 | **F**ri  **08**:00 | ~~%%01%%~~ | **`CS2103-F08`**| <trigger trigger="click" for="modal:tutorialSchedule-Jet">Jet</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Yan-Jie">Yan Jie</trigger>
  {{ M | safe }} | COM3-01-20 | **F**ri  **09**:00 | ~~%%02%%~~ | **`CS2103-F09`**| <trigger trigger="click" for="modal:tutorialSchedule-Chen-Feng">Chen Feng</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Si-Kai">Si Kai</trigger>
- {{ M | safe }} | ==COM2-02-10== | **F**ri  **10**:00 | ~~%%06%%~~ | **`CS2103-F10`**| <trigger trigger="click" for="modal:tutorialSchedule-Yu-Cong">Yu Cong</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Eric">Eric</trigger>
+ {{ M | safe }} | ==COM1-02-10== (SR10) | **F**ri  **10**:00 | ~~%%06%%~~ | **`CS2103-F10`**| <trigger trigger="click" for="modal:tutorialSchedule-Yu-Cong">Yu Cong</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Eric">Eric</trigger>
  {{ MT | safe }} | COM3-01-20 | **F**ri  **10**:00 | ~~%%G21%%~~ | **`CS2103T-F10`**| <trigger trigger="click" for="modal:tutorialSchedule-Wen-Li">Wen Li</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Jabez">Jabez</trigger>
  {{ MT | safe }} | COM3-01-20 | **F**ri  **11**:00 | ~~%%G19%%~~ | **`CS2103T-F11`**| <trigger trigger="click" for="modal:tutorialSchedule-Wen-Li">Wen Li</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Jonas">Jonas</trigger>
  {{ MT | safe }} | COM3-01-20 | **F**ri  **12**:00 | ~~%%G09%%~~ | **`CS2103T-F12`**| <trigger trigger="click" for="modal:tutorialSchedule-Yu-Cong">Yu Cong</trigger> | <trigger trigger="click" for="modal:tutorialSchedule-Tzer-Bin">Tzer Bin</trigger>

@@ -19,7 +19,8 @@ If there are parallel slots for the same course code, a suffix of `a` or `b` is 
 
 **The first two tutorials (i.e., weeks 3 and 4) will be conducted fully online (via Zoom).**
 {% if (current_week | int) <= 4 %}
-* Zoom links for tutorial sessions will be available in [Canvas course homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.<br>
+* Zoom links for tutorial sessions will be available in [Canvas course homepage]({{ url_canvas_home }}), from week 3 Tuesday %%(i.e., 1 day before the first tutorial of the semester)%%.
+* Zoom tutorials require you to **use a video camera**. Use a device with a camera, or have a second device (e.g., hand phone) to use as a video camera.
 * You may use the tutorial venue (given in the table below) to join the Zoom session if you wish, but if you do,
     * please keep the noise level low, as there will be other students doing the same.
     * while you may sit together with team members, you should ==participate in the tutorial _individually_== e.g., do not project one person's screen to the TV, or discuss answers with others unless the tutor prompts you to.
@@ -32,15 +33,17 @@ If there are parallel slots for the same course code, a suffix of `a` or `b` is 
 * The venue is given in the table below.
 * We will be using Zoom in F2F tutorials as well (same Zoom link as before, given in [Canvas course homepage]({{ url_canvas_home }}))
 
-{{ show_faq("tutorialWhyZoomInF2f") }}
+{{ show_faq("tutorialWhyZoomInF2f", is_compact=1) }}
+{{ show_faq("tutorialWhyF2f") }}
 
 * As before, some parts of the tutorial are to be done individually while some parts will involve discussions.<br>
   Please help to keep the noise level low (as there are two parallel tutorials in the same venue),<br>
   (a) by limiting conversations to parts that the tutor directs you to have a discussion,<br>
   (b) and not speaking too loudly during those discussions.
 
-{{ show_faq("tutorialByZoom") }}
-{{ show_faq("tutorialZoomWithoutPermission") }}
+{{ show_faq("tutorialByZoom", is_compact=1) }}
+{{ show_faq("tutorialZoomWithoutPermission", is_compact=1) }}
+{{ show_faq("tutorialCannotReachInTime") }}
 <panel header="**Facing ==Wi-Fi issues== while in NUS?**" minimized>
 
 Try connecting to SSID `eduroam` (you need to use your full NUSNET email address and password `e____@u.nus.edu/*****` to login).

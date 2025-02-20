@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, thumb, show_as_tab with context %}
+{% from "common/macros.njk" import embed_topic, thumb, show_as_tab, show_faq with context %}
 
 #### {{ thumb(1) }} **Demo your debugging skills**
 
@@ -19,9 +19,11 @@ If you are new to debugging with an IDE, we recommend you **have a look at [[gui
 1. Open your iP or tP code in your IDE.
 1. Set a breakpoint somewhere in the code.
 1. Run the code in debug mode.
-1. When the execution stops at the break point, use the debugger to execute 1-2 more statements.
+1. When the execution stops at the break point, use the debugger to 'step through' 1-2 more statements.
 1. Take a screenshot of the IDE and paste in the _tutorial workspace_ file.
 1. Optional: Set a <tooltip content="i.e., the execution will stop only if the specified condition is met">_conditional break-point_</tooltip>, take a screenshot of it, and paste it in the same file.
+
+{{ show_faq("warmUpTaskRushed") }}
 
 #### {{ thumb(2) }} **Sequence diagrams exercise**
 

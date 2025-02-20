@@ -236,10 +236,40 @@ In some areas, the sample Checkstyle rules file ([recommended by the SE-EDU guid
 That said, we'll still give you one more round of further code quality feedback, after the iP is over. That is to help you identify the things you missed yourself, and do an even better job in the tP.
 </div>
 <!-- =============================================================== -->
+<div id="faq-ipMinimumRequirementNotGiven-Q">What if the minimum requirement for an increment is not specified? How do I decide how much work is enough?</div>
+<div id="faq-ipMinimumRequirementNotGiven-A">
+
+Deciding a feature’s behavior is a product design decision, and this is a good opportunity to practice that aspect of software engineering. So, decide for yourself: as a user of this product, what is the minimally acceptable behavior of this feature?
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipIfSubmissionBelowBar-Q">What if my iP final submission doesn't meet the bar for full marks? Do I get a chance to resubmit?</div>
+<div id="faq-ipIfSubmissionBelowBar-A">
+
+Yes, you will get a chance for resubmission, without any penalty.
+
+That said, a resubmission is likely to be held to a higher bar than the standard bar for iP. So, it is in your interest to ensure your initial iP submission meets the bar for full marks.
+</div>
+<!-- =============================================================== -->
 <div id="faq-ipEvaluationNoJar-Q">What if the student has not uploaded a JAR file, or the JAR file doesn't work at all?</div>
 <div id="faq-ipEvaluationNoJar-A">
 
 When you submit the evaluation (step 8 below), there will be a way to indicate that the JAR was not available, or any other serious issues you faced.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipDeadlineExtensions-Q">How to get a deadline extension for the iP final submission?</div>
+<div id="faq-ipDeadlineExtensions-A">
+
+#r#**There is no need to ask for extensions**## to the iP final submission deadline.
+
+**It is ideal if you finish the iP by original deadline**, but if you could not
+finish it by that deadline, we'll be giving you an automatic 3-day deadline extension.
+Further deadline extensions beyond that might be possible too, provided we see evidence of
+you trying to progress in the previous deadline extension (and not simply postponing work to take advantage of the
+deadline extensions).
+
+* While there will be no penalty for such a deadline extension, keep in mind that the longer you take to finish the iP, the less time you'll have for the tP.
+* To reiterate, the said deadline extension will be given automatically, _after_ the initial deadline is over: ==Please don't send us deadline extension requests in advance.==
+* Caution: Unlike the iP, no free extensions will be available for the **t**P final submission deadline. Even a one-second delay will be considered a _late_ submission and will have to be penalized, as deadline compliance is a learning outcome of the course.
 </div>
 <!-- =============================================================== -->
 <div id="faq-temp-Q"></div>
@@ -282,12 +312,15 @@ TLDR: In this course, tutor's main job is to deliver tutorials. Hence, tutors ca
   %%**Reason**: Tutors are not allowed to help with technical issues (post your issue in the forum instead).%%{% endif %}
 </div>
 <!-- =============================================================== -->
-<div id="faq-tutorialWhatIfMissedDueToValidReason-Q">What if I can't attend a tutorial due to a valid reason (e.g., MC)?</div>
+<div id="faq-tutorialWhatIfMissedDueToValidReason-Q">What if I can't attend (or missed) a tutorial due to a valid reason (e.g., MC)?</div>
 <div id="faq-tutorialWhatIfMissedDueToValidReason-A">
 
 See the following course policy:
 
 {{ embed_topic("appendixB-policies.md#policy-validAbsences", "Admin " + icon_embedding + " Policy on absences due to valid reasons") }}
+<p/>
+
+If you wish to attend a different tutorial timeslot in a specific week, please send your request to the course email (`{{ course_email  }}`).
 </div>
 <!-- =============================================================== -->
 <div id="faq-tutorialWhatIfMissedDueToOtherReason-Q">What if I can't attend a tutorial due to another commitment (e.g., interview)?</div>
@@ -297,6 +330,8 @@ Our tutorial participation bar has enough of a buffer to allow an occasional abs
 
 * You are welcome to keep your tutor informed of such absences as a courtesy, but it is not a requirement.
 * If you miss a tutorial, do try to catch up as best as you can {% if cs2103 %} e.g., by watching the tutorial recording{% endif %}.
+* If you wish to attend a different tutorial timeslot in a specific week, please send your request to the course email (`{{ course_email  }}`).
+
 </div>
 <!-- =============================================================== -->
 <div id="faq-tutorialLength-Q">Can the tutorial be made longer (e.g., 2 hours)?</div>
@@ -326,6 +361,41 @@ However, you can request (by emailing `{{ course | lower }}@comp.nus.edu.sg`) to
 <div id="faq-tutorialZoomWithoutPermission-A">
 
 There is no penalty, but that tutorial will not count for participation. See [here](participation.html#:~:text=Sufficient%20tutorial%20attendance/participation) for the bar you need to meet for tutorial participation.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialWhyF2f-Q">Why we need F2F tutorials? Why not do all tutorials via Zoom?</div>
+<div id="faq-tutorialWhyF2f-A">
+
+There are several reasons:
+
+1. NUS policy requires all small classes to be F2F. Physical interaction with peers is an essential part of the university experience.
+1. While Zoom is more convenient, they are not as effective in achieving some learning outcomes. For example, we are training you for working in team projects, and in technical communications, both of which sometimes need to be done in the F2F mode.
+1. Your physical presence allows the tutor to observe team dynamics better. To give an example, sometimes even a team's seating positions can tell us the level of team cohesion.
+
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialCannotReachInTime-Q">What if I can't reach the F2F venue in time due to a reason beyond my control %%(e.g., previous class ended late)%%?</div>
+<div id="faq-tutorialCannotReachInTime-A">
+
+Note that we do track your arrival time, as late arrivals hinder your ability to participate in the tutorial fully.
+
+If you anticipate a late arrival due to a reason beyond your control (e.g., due to the previous class ending late), here are some strategies to mitigate the impact:
+
+* Prepare for the tutorial tasks in advance, especially the first one. This will allow you to complete the task in time even if you arrive a few minutes late.
+* Join the Zoom meeting while you are on the way to the class.
+
+</div>
+<!-- =============================================================== -->
+<div id="faq-warmUpTaskRushed-Q">When doing tutorial task 1, I couldn't update the workspace file before it was downloaded by the tutor. Will I be penalised?</div>
+<div id="faq-warmUpTaskRushed-A">
+
+Not to worry; there is no penalty.
+
+We download the workspace file at 10-minutes mark to discourage students from continuing task 1 (which is just a warmup activity) even after task 2 has started, thus not getting the full value of task 2 (which is more important than task 1).
+
+We do use the downloaded workspace files to identify students who consistently come prepared for tutorials and do a good job in tutorial tasks (e.g., when selecting tutors), but we do not penalise students based on those workspace files.
+
+If you frequently find yourself being unable to finish task 1 in time, you can consider doing it in advance.
 </div>
 <!-- =============================================================== -->
 

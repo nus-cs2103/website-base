@@ -35,6 +35,9 @@
 {{ show_expanded_faq("ipOtherDataFormats") }}
 {{ show_expanded_faq("ipAspectsNotCoveredByTheStandard") }}
 {{ show_expanded_faq("ipCheckstyleMismatchWithCodingStandard") }}
+{{ show_expanded_faq("ipMinimumRequirementNotGiven") }}
+{{ show_expanded_faq("ipIfSubmissionBelowBar") }}
+{{ show_expanded_faq("ipDeadlineExtensions") }}
 
 ## FAQs on: Tutorials
 
@@ -42,6 +45,9 @@
 {{ show_expanded_faq("tutorialWhatIfMissedDueToValidReason") }}
 {{ show_expanded_faq("tutorialWhatIfMissedDueToOtherReason") }}
 {{ show_expanded_faq("tutorialLength") }}
+{{ show_expanded_faq("tutorialWhyF2f") }}
+{{ show_expanded_faq("tutorialCannotReachInTime") }}
+{{ show_expanded_faq("warmUpTaskRushed") }}
 
 ## FAQs on: UML
 
