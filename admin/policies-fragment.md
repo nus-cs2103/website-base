@@ -1,11 +1,11 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, show_faq with context %}
 <div id="policy-adminQuestions" tags="m--cs2103" >
 
 **All admin questions should be sent to the course email `{{ course | lower }}@comp.nus.edu.sg` or posted in the [forum]({{ url_forum }}).** This way, the person in charge of that admin detail will answer you.
 
 ==#r#Do not ask admin questions from tutors##== (in person or via other means) as **tutors are prohibited from answering admin questions**.
 
-Reason: The course has MANY admin details and there are subtle changes from semester to semester. Tutors might not be aware of those changes, increasing the risk that you receive subtly incorrect answers. Besides, it is not fair to expect tutors to know all the admin details, as they should be using their memory for things related to their own courses.
+{{ show_faq("tutorialWhyTutorsCannotAnswerAdminQuestions") }}
 
 Examples of admin questions:
 
@@ -13,6 +13,7 @@ Examples of admin questions:
 * How is this graded?
 * Can I use X instead of Y for the project?
 * Where can I find details about [some aspect of the course]?
+
 </div>
 
 <div id="policy-teamSize">
@@ -242,10 +243,9 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
 
 **The teaching team will not give ad-hoc feedback on project work connected to a component yet to be graded.** For example, if you were to ask your tutor for feedback on your individual or team project feature design, the tutor is not allowed to give feedback. Similarly, if you are faced with a design decision in your project, a tutor will not make that decision for you.
 
-Reasons:
+{{ show_faq("tutorialWhyTutorsCannotGiveProjectFeedback") }}
+{{ show_faq("tutorialHowToImproveProjectWithoutTutorFeedback") }}
 
-* to ensure the work you submit for grading is entirely your own
-* to ensure fairness across teams
 
 **You can still use the {{ link_forum }} to seek feedback on a specific aspect of your project** where a professor can answer the question in a general way that's not unfair to other teams (and other teams can benefit from the answer as well).<br>
 **Alternatively, you can send your question to `{{ course_email }}`.**

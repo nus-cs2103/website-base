@@ -79,7 +79,7 @@
 <variable name="cs2113">{{ "Y" if course == "CS2113" }}</variable>
 <variable name="tic2002">{{ "Y" if course == "TIC2002" }}</variable>
 <variable name="tee3201">{{ "Y" if course == "TEE3201" }}</variable>
-<variable name="has_t">{{ "Y" if cs2103 or cs2113 }}</variable>
+<variable name="has_t">{{ "Y" if cs2103 }}</variable>
 <variable name="has_pe">{{ "Y" if cs2103 or cs2113 }}</variable>
 <variable name="session_name">tutorial</variable>
 <variable name="Session_name">Tutorial</variable>

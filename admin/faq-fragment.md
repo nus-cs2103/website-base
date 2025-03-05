@@ -67,7 +67,8 @@ Slides are not meant to be documents to print and study for exams (the textbook 
 **UML is not used very frequently by practitioners.** In particular, most would not bother to draw detailed UML diagrams _before_ (or in parallel to) coding.<br>
 **UML diagrams can still provide practical value in some situations** e.g., when documenting internal design details, when discussing design alternatives. However, even when using UML is beneficial, some may avoid using it due to lack of proficiency. In fact an average programmer is likely to be able to survive without drawing any UML diagrams, and only occasionally having to interpret UML diagrams drawn by others.
 
-Furthermore, **being able to communicate about code/design without referring to actual code is an essential skill**, as the code is not always available %%(e.g., it may not exist yet or the codebase may be too big for to be used for such communications)%%. While in some cases we can use ad hoc notations (simple boxes, arrows, labels) for such communications, using a standard modeling notation can make such communications universally understood. **UML is the leading general-purpose notation used for modelling software design.** It can be used for basic modelling irrespective of the domain of the software project. For more intense modeling needs, we can go for a domain-specific modelling notation %%e.g., Business Process Model and Notation (BPMN)%%.
+Furthermore, **being able to communicate about code/design without referring to actual code is an essential skill**, as the code is not always available %%(e.g., it may not exist yet or the codebase may be too big for to be used for such communications)%%. While in some cases we can use ad hoc notations (simple boxes, arrows, labels) for such communications, using a standard modeling notation can make such communications universally understood. **UML is the leading general-purpose notation used for modelling software design.** It can be used for basic modelling irrespective of the domain of the software project. For more intense modeling needs, we can go for a domain-specific modelling notation %%e.g., Business Process Model and Notation (BPMN)%%.<br>
+Besides, **UML is just a tool that we use to learn a more fundamental SE skill: the ability to model code visually**, especially at higher abstraction levels. This skill is necessary to be able to build mental models of large code bases in our head, even if you don't actually draw physical diagrams, UML or otherwise.
 
 </div>
 <!-- =============================================================== -->
@@ -312,6 +313,35 @@ TLDR: In this course, tutor's main job is to deliver tutorials. Hence, tutors ca
   %%**Reason**: Tutors are not allowed to help with technical issues (post your issue in the forum instead).%%{% endif %}
 </div>
 <!-- =============================================================== -->
+<div id="faq-tutorialWhyTutorsCannotAnswerAdminQuestions-Q">Why are tutors not allowed to answer admin questions?</div>
+<div id="faq-tutorialWhyTutorsCannotAnswerAdminQuestions-A">
+
+The course has MANY admin details and there are subtle changes from semester to semester. Tutors might not be aware of those changes, increasing the risk that you receive subtly incorrect answers. Besides, it is not fair to expect tutors to know all the admin details, as they should be using their memory for things related to their own courses.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialWhyTutorsCannotGiveProjectFeedback-Q">Why are tutors not allowed to give feedback on project deliverables?</div>
+<div id="faq-tutorialWhyTutorsCannotGiveProjectFeedback-A">
+
+**Tutors are not allowed to give ad hoc feedback on yet-to-be-graded components** (e.g., iP or tP components, which accounts for a very high percentage of the overall grade),
+
+* **to ensure the work you submit for grading is entirely your own** %%(for the same reasons why you are not allowed to ask invigilators for 'feedback' on your answers while you are answering the final exam paper)%%.
+* **to ensure fairness across teams** %%(because if tutors were allowed to give feedback on their own, it will be impossible to ensure all tutors give the same level of feedback)%%.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialHowToImproveProjectWithoutTutorFeedback-Q">Huh? If tutors are not giving feedback on project deliverables, how can we improve our project work?</div>
+<div id="faq-tutorialHowToImproveProjectWithoutTutorFeedback-A">
+
+It is true that the teaching team will not give _ad hoc_ feedback on yet-to-be-graded project deliverables. **But you will receive systematic feedback at various points of the project**, in a way that ensures all of you receive the same level of feedback about same things.
+
+**More importantly, we aim to develop your <tooltip content="i.e., the ability to make decisions about the quality of one's own work
+   and that of others">_evaluative judgement_ skills</tooltip>** thus reducing your reliance on someone else's feedback to decide how to improve. To this end, we have set up various learning tasks to help you judge your own work. Examples:
+
+* Tutorial tasks that go through a 'sample' project aspect/artifact (e.g., use cases of a sample project) and find problems in it. This way, we can ensure that all of you encounter all the important learning points related to that aspect/artifact, even if some may not be relevant to your own project (which means you wouldn't have encountered them on your own).
+* Peer evaluations of each other's work, within teams and between teams. This gives you a way to exercise your evaluative judgement skills.
+
+
+</div>
+<!-- =============================================================== -->
 <div id="faq-tutorialWhatIfMissedDueToValidReason-Q">What if I can't attend (or missed) a tutorial due to a valid reason (e.g., MC)?</div>
 <div id="faq-tutorialWhatIfMissedDueToValidReason-A">
 
@@ -343,10 +373,14 @@ In the past, many students have requested to increase the tutorial duration beca
 <div id="faq-tutorialWhyZoomInF2f-Q">WHAT? Why use Zoom when we are already F2F?</div>
 <div id="faq-tutorialWhyZoomInF2f-A">
 
-Zoom is still needed for,<br>
-(a) screen-sharing the slides,<br>
-(b) collecting answers via PM or polls,<br>
-(c) recording the tutorial for your future reference.
+Zoom is still needed for the following reasons:
+
+* Screen-sharing the slides. {texts="['(a)', '(b)', '(c)']"}
+* Collecting answers via PM or polls.<br>
+  **Why insist on answering via PM?** This gives everyone a chance to think about the question and come up with their own answer, without being influenced by others' answers, and without being embarrassed for giving the wrong answer. Research has shown that this _attempt_ at answering increases retention of the correct answer received subsequently, irrespective of the correctness of the answer the student initially came up with.<br>
+  As a bonus, this tutorial structure will also give you a good training for the final exam.
+* Recording the tutorial for your future reference.<br>
+  These recordings also help in improving tutorial quality (e.g., profs can review recordings of tutors and give feedback on how to improve).
 </div>
 <!-- =============================================================== -->
 <div id="faq-tutorialByZoom-Q">Are you allowed to attend the tutorial via Zoom instead?</div>
@@ -396,6 +430,14 @@ We download the workspace file at 10-minutes mark to discourage students from co
 We do use the downloaded workspace files to identify students who consistently come prepared for tutorials and do a good job in tutorial tasks (e.g., when selecting tutors), but we do not penalise students based on those workspace files.
 
 If you frequently find yourself being unable to finish task 1 in time, you can consider doing it in advance.
+</div>
+<!-- =============================================================== -->
+<div id="faq-tutorialWhyTutorCannotGiveTechHelp-Q">Why tutors are not allowed to give tech help?</div>
+<div id="faq-tutorialWhyTutorCannotGiveTechHelp-A">
+
+The pedagogical reason: Learning how to solve technical problems, and <tooltip content="e.g., explaining the problem well">seek</tooltip>/give/receive help, **are learning outcomes of this course, and are critical skills for software engineers**. So, we want you to practice those things in this course as much as possible.
+
+A practical reason: Unlike in lower-level programming courses, the technical problem you encounter in this course are varied and dependent on your OS and tool choices. It is not possible for one person (e.g. your tutor) to know how to help with problems related to all OS'es and all tools used by students under his/her care. It is more practical to troubleshoot such problems via the course forum, as that gives you a way to get help from all your peers in the class, the entire teaching team, and a group of past students who have volunteered to help current students solve technical problems. Based on past data, we know that more than 90% of the problems posted in the course forum get resolved within 24 hours. So, **by not allowing you to get tech help from tutors, we are directing you to a more effective way to resolve those issues, while learning valuable skills at the same time**.
 </div>
 <!-- =============================================================== -->
 
@@ -574,16 +616,9 @@ LoC is not graded. But if there is a significant mismatch between the LoC number
 <div id="faq-tpUncontactableMembers-Q">What if a member is not contactable?</div>
 <div id="faq-tpUncontactableMembers-A">
 
-It is each member's responsibility to get in touch with the rest of the team. So, you are not obliged to keep chasing such members, beyond a few reasonable attempts.
+Given below is the relevant section from [Appendix F: Handling Team Issues](appendixF-teamworkIssues.md):
 
-**Keep such MIA members in the loop** (e.g., keep them copied in all communications) but you can proceed with the project without those members. It is important that you **do not delay the project on account of such members**.<br>
- When that member decides to resume/start the project work, it is up to her/him to let the team know, and make up for the absent period. The rest of the team is encouraged to **be kind/understanding** and help that member get into the project, but this is not a strict requirement.
-
-**Ensure your peer evaluations of such team members factor in such absences.**
-
-It is advisable to **keep copies of communications** related to such cases (e.g., reminders sent to such members) in case the teaching team asks for evidence.<br>
-It is also advisable to **keep your tutor informed** about such cases.
-
+<include src="appendixF-teamworkIssues.md#team-problems-mia-member" />
 </div>
 <!-- =============================================================== -->
 <div id="faq-tpIterationDeadline-Q">What's the deadline for tP iterations?</div>
@@ -714,6 +749,13 @@ No need to resubmit the Feature Spec either. However, if you change the product 
 <div id="faq-tpHowManyFeaturesInMvp-A">
 
 Aim for the _smallest set of features the product cannot do without_. Even a most basic version of those features is enough. After completing that feature set, you can add more if there is time left.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpNeedForNewFeatureInMvp-Q">Is it a requirement for the MVP to have 'new' features not currently in AB3?</div>
+<div id="faq-tpNeedForNewFeatureInMvp-A">
+
+No, there is no such need. The MVP features can be same as, or a subset of, AB3 features.
 </div>
 <!-- =============================================================== -->
 

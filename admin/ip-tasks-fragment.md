@@ -952,7 +952,8 @@ This activity is worth `2x2=4` participation points.
 <span id="heading_submit_the_final_version">Submit the final version</span>
 <div id="desc_submit_the_final_version">
 
-1. **Double-check to confirm your iP meets the criteria for full marks**:
+1. **Double-check to confirm your iP meets the criteria for full marks**, as given in the panel below.<br>
+   For example, ensure your {{ as_tag("Git Standard", tag_style="success") }} tag is green in the [iP progress dashboard]({{ url_ip_progress_dashboard }}), as it relates to a condition you need to satisfy to receive full marks.
   {{ embed_topic(baseUrl+"/admin/ip-grading.md#main", "Admin " + icon_embedding + " **iP - Grading**", "1", indent="1") }}
 2. **Create a new jar file**
    * Create the JAR file {% if cs2103%}[using Gradle](https://se-education.org/guides/tutorials/gradle.html) -- this needs to be a [fat JAR file](https://se-education.org/guides/tutorials/jar.html#fat-jar-files:~:text=given%20here.-,Fat%20JAR%20files,-A%20normal%20JAR) (hence, it's best created [using Gradle's shadow plugin](https://se-education.org/guides/tutorials/jar.html#:~:text=Creating-,JAR%20files,With%20Gradle,-With%20IntelliJ%20IDEA)).{% else %}in one of these ways:

@@ -3,45 +3,144 @@
 {% call show_admin_page("appendixF-teamworkIssues") %}
 <div id="main">
 
-If your team is facing difficulties due to differences in skill/motivation/availability among team members,
+**First, some general principles related to handling teamwork issues:**
 
-* **First, do not expect everyone to have the same skill/motivation level as you.** It is fine if someone wants to do less and have low expectations from the course. That doesn't mean that person is a bad person. Everyone is entitled to have their own priorities.
+* **tP is graded almost entirely based on individual work.**{.text-info} Even when a component is evaluated for the entire team (e.g., product design), each member will be given a mark based on that members' contribution to the component, and the quality of that contribution. This also means **your tP grade is determined almost entirely by your own work**, not the work of your team members. Even if all other team members are low-performing, you should still be able to get a good grade without increasing your workload significantly than otherwise, in theory.{texts="['GP1.', 'GP2.', 'GP3.', 'GP4.', 'GP5.', 'GP6.']" t-class="fw-bold text-info"}
+* **Team members are NOT _required_ to do an equal share of work.**{.text-info} Following from GP1, every member can decide how much they want to contribute to the project. This gives students the flexibility to control their tP workload based on their own expectations and motivations.
+* **Managing team issues is a learning outcome.**{.text-info} You are recommended to keep the teaching team informed of any teamwork issues you are facing but keep in mind that solving such issues is part of the 'project management' aspect, which is a tP deliverable. So, the teaching team will refrain from direct interventions except in severe cases.
+* **Be professional, kind, and civil to the team members, even if they are not meeting your expectations.**{.text-info} A below par performances in the tP does not make someone a 'bad person'. In some cases, the person might be fighting other battles that we are unaware of %%(e.g., mental health issues, family problems, financial problems)%%. The best we can do is to be kind and supportive.<br>
+  **Be firm and assertive too**, when you need to. Being civil does not mean you let others walk all over you.
+* **Willful negative behaviors will be graded harshly.**{.text-info} Willful negative behaviors will be graded harshly. Examples: promising things without intending to deliver, sabotaging others' work, not following what the team agreed on (i.e., going 'rogue'), using offensive language when communicating with team members.
 
-* **Second, don't give up.** It is unfortunate that your team ended up in this situation, but you can turn it into a good learning opportunity. You don't get an opportunity to save a sinking team every day :-)
+<box>
 
-* **Third, if you care about your grade and willing to work for it, you need to take initiative** to turn the situation around or else the whole team is going to suffer. Don't hesitate to take charge if the situation calls for it. By doing so, you'll be doing a favor for your team. Be professional, kind, and courteous to the team members, but also be firm and assertive. It is your grade that is at stake. Don't worry about making a bad situation worse. You won't know until you try.
+**A general strategy for adapting the project based on available manpower**
 
-* **Finally, don't feel angry or 'wronged'.** Teamwork problems are not uncommon in this course and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what others did. It's not your responsibility to get others to contribute. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing their best too, although their best may be lower than yours.
+* Ask how much each person is planning to contribute (e.g., how many hours per week can be dedicated to the tP), especially from those who seem to be contributing less. In addition, you can use past conduct to estimate how much you can expect from each person in the future.
+* Get some idea about how much value each person is able to produce. Time doesn't always equal value.
+* Based on the above, estimate how much 'real' manpower you have and adjust your targets accordingly.
+* Stronger programmers in the team can take over the critical parts of the code. Avoid allocating critical tasks to technically-weak or unreliable members.
+* Also note that in real software projects, it is not unusual to have less-than-100% members because some people need to divide their time between multiple projects. Treat this as a similar case and adapt accordingly.
+</box>
 
-Given below are some suggestions you can adopt if the project work is not going smooth due to team issues. Note that the below measures can result in some team members doing more work than others and earning better project grades than others. It is still better than sinking the whole team together.
 
-* **Adjust targets**:
-  * Ask how much each person is planning to contribute (e.g., how many hours per week can be dedicated to the tP), especially from those who seem to be contributing less. In addition, you can use past conduct to estimate how much you can expect from each person in the future.
-  * Get some idea about how value each person is able to produce. Time doesn't always equal value.
-  * Based on the above, estimate how much 'real' manpower you have and and adjust your targets accordingly.
-* **Redistribute the work**:
-  * Stronger programmers in the team can take over the critical parts of the code.
-  * Also note that in real software projects, it is not unusual to have less-than-100% members because some people need to divide their time between multiple projects. Treat this as a similar case and adapt accordingly.
+**Now, some common problems and guidance on how to deal with them:**
 
-* **Enforce stricter integration workflow**: If the problem involves low-quality work, appoint an integrator (typically, the strongest programmer). His/her job is to maintain the integrated version of the code. He/she should not accept any code that breaks the existing product or is not up to the acceptable quality standard. It is up to others to submit acceptable code to the integrator.
+<box type="info" seamless>
 
-**If you have very unreliable or totally disengaged team members** :
+**How to inform the teaching team about a teamwork problem?** Some of the guidelines below ask you to 'inform the teaching team' about the problem. In such cases you can write to the course email `{{ course_email }}` to do so.
+</box>
+ <!-- ============================================================================= -->
+<div id="team-problems-mia-member">
+<panel type="danger" header="**CP1. MIA team member**" expanded>
 
-* Re-allocate to others any mission-critical work allocated to that person so that such team members cannot bring down the entire team.
-* However, do not leave out such team members from project communications. Always keep them in the loop so that they can contribute any time they wish to.
-* If such a member indicates they want to contribute late in the project (by which time you may have redistributed the work to other members), there is no need to disrupt your current plan. Instead, you can suggest (or let the person figure out) ways to contribute without affecting the current project plan. For example, the person can add an additional nice-to-have feature that will not require changes to other features.
-* If such a member offers some code that you believe to be detrimental to the project, you may refuse to merge that code. In that case, that person may contact the teaching team so that the unmerged code can be factored into his/her grading.
-* Furthermore, evaluate them sincerely and fairly during peer evaluations so that they do get the grade their work deserves, no more, no less.
-* Keep the teaching team informed about such members so that it can be factored into your own grading. If appropriate, we'll exclude such team members when calculating your team size, although the team size does not affect most of the tP grade components.
-* Keep copies of your communications with team members, in case we might need to verify exact details of those communications later.
+**Problem:** A team member is MIA from the start, or for an extended period of time.
 
-**If you are a 'low contributor' yourself:**
+**Guidance for the team:** It is not your responsibility to ensure a member keeps in touch with the team or/and keeps pace with the project. So, after one or two attempts to get in touch with the MIA member, proceed with the project without the missing member, but keep that member in the loop (e.g., CC all team communications to that member).
 
-* It goes without saying that the best policy is to keep your team members informed about how much you can contribute, during which periods, (and possibly, the reason for your low contribution).
+Also inform the teaching team about the MIA member.
+
+If the member was previously allocated some future project tasks, redistribute those tasks, and adapt project targets accordingly (i.e., reduce targets because now you are operating with one fewer member).
+
+If the missing member reappears later (by which time you may have redistributed the work to other members), there is no need to disrupt your current plan. Instead, you can suggest (or let the person figure out) ways to contribute without affecting the current project plan. For example, the person can add an additional nice-to-have feature that will not require changes to other features.
+
+----
+
+**Guidance for the member:** If you need to be MIA for a period of time, inform the team when you hope to be back in action. You are welcome to, but not required to, inform the team the reason for the absence (as this may be personal).
+</panel></div><!-- ============================================================================= -->
+<panel type="danger" header="**CP2. Low-performing member**" expanded>
+
+**Problem:** A member is contributing less than others OR a member is available less than others OR a member is less capable than others.
+
+**Guidance for the team:**
+
+Try not to feel angry or 'wronged'. A low performing member cannot bring others' grade down, or necessitate others to pick up their slack. As mentioned above, your grade is based on your individual work. Just do your best for the project and assume everyone else is doing their best too, although their best may be lower than yours.
+
+Once you identified a low-performing member, you will need to adapt your project targets and plans to match this reality that your available manpower resources is less than you anticipated before (see the 'A general strategy for adapting the project based on available manpower' box above).
+
+----
+
+**Guidance for the member:**
+
+* Be sincere about how much you plan to contribute to the project, you availability, your skill level etc. and keep the team informed if circumstances change.
+* ==If you are unable to do a project task (due to lack of time, skill, or other issue), inform the team promptly, rather than keep silent.== It will allow the team to plan around your inability to do the task, rather than waste more time waiting for you to respond/deliver.
 * Promise only what you can do, and do what you promised, on time, and up to the expected quality. Sloppy work or late work is worse than no work.
-* If the team refused to accept your work, you can still earn marks for that code. You are allowed to submit such 'rejected' code for grading.
+
+</panel> <!-- ============================================================================= -->
+<panel type="danger" header="**CP3. Low-quality contributions**" expanded>
+
+**Problem:** A member is producing low quality work.
+
+**Guidance for the team:** This is not as bad as it appears. Our grading scheme is fine-grained enough to penalize only the person who produced the low-quality work. For example, any bug found in the product design, features, and documentation will be assigned to the person responsible for it (the team needs to decide who is responsible), and only those assigned persons will be penalized. That said, you are encouraged to help fix quality problems of each other, for example, by reviewing each other's PRs.
+
+To aid with assigning accountability for poor quality work, assign tasks clearly. For example, when updating a document, assign clearly who should update which part, so that if a problem was found in a specific part, it is clear who is responsible for it.
+
+The team has a right to refuse to merge poor quality work if the quality is bad enough to jeopardize the overall quality of the product (e.g., possibly affect the behavior of other features).
+
+To reduce the risk of members merging code that can break other features, you can enforce a stricter workflow. For example, you can configure GitHub to prevent PRs being merged unless there is an approving review.
+
+----
+
+**Guidance for the member:**
+
+Appreciate when others point out quality problems of your work. They are helping you save marks.
+
+If the team refused to accept your work, you can still earn marks for that code. You are allowed to submit such 'rejected' code for grading.
+
+</panel> <!-- ============================================================================= -->
+<panel type="danger" header="**CP4. Technically-weak members**" expanded>
+
+**Problem:** A team member is not technically strong as the others.
+
+**Guidance for the team:**
+
+* You are encouraged to help this member level up. Mentorship within the team is rewarded and will improve your peer feedback, which are used not only in grading but also in selecting tutors.
+
+----
+
+**Guidance for the member:**
+
+* Be honest about your weak areas. If a task given to you seems beyond your technical skills, let the team know.
+* Ask for help and be receptive to help from members.
+* Volunteer to do more work related to your strong areas.
 
 
+</panel> <!-- ============================================================================= -->
+<panel type="danger" header="**CP5. Work delivered late**" expanded>
+
+**Problem:** A member delivers work late, or too close to the deadline, causing extra work and extra stress on the rest of the team, not to mention the risk of breaking the product due to last-minute changes.
+
+**Guidance for the team:** You have a right to reject last-minute or late work. If you anticipate a member delivering work late, let that person know the cut-off time for the work to be accepted %%(e.g., at least 24 hours before the submission deadline)%%, and any quality bar it needs to meet %%(e.g., should come with tests)%%.
+
+----
+
+**Guidance for the member:**
+
+If the team refused to accept your work, you can still earn marks for that code. You are allowed to submit such 'rejected' code for grading.
+
+</panel> <!-- ============================================================================= -->
+<panel type="danger" header="**CP6. No one is taking charge**" expanded>
+
+**Problem:** The project is not moving forward because no one is taking charge. Everyone seems to be waiting for someone else to take charge.
+
+**Guidance for the team:** There is no choice but some members (at least one) has to take charge. Those who take charge are likely to score more in the 'Project Management' component.
+
+
+</panel> <!-- ============================================================================= -->
+<panel type="danger" header="**CP7. Rude member behaviours**" expanded>
+
+**Problem:** A team member is behaving rudely, using abusive language, raising voice unnecessarily, etc.
+
+**Guidance for the team:**
+
+* Report such behavior to the teaching team, sooner rather than later.
+* Keep evidence e.g., meeting recordings, screenshots of chat messages.
+
+----
+
+**Guidance for the member:** Unprofessional or uncivil behavior will affect your marks, and can lead to disciplinary action.
+
+</panel> <!-- ============================================================================= -->
 </div>
 
 {% endcall %}

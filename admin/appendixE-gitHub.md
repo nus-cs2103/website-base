@@ -316,7 +316,7 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
 
 * **Create a PR when you implement a project task** that updates the code.
   * Use the <trigger trigger="click" for="modal:appErecommendedWorkflow-forkingworkflow">forking workflow</trigger> when creating PRs in early iterations %%(you can switch to the <trigger trigger="click" for="modal:appErecommendedWorkflow-featurebranchworkflow">feature branch workflow</trigger> after completing {{ version_mvp }} if you wish)%%.<br>
-  =={{ icon_alert }} This means each PR should come from a separate branch of your fork (i.e., not the `master` branch), as that is an essential part of the forking workflow.==
+  =={{ icon_alert }} This means each PR should come from a _separate branch_ (i.e., not the `master` branch) of your _own fork_ (not the team repo), as that is an essential part of the forking workflow.==
   * Suggestion: Make the PR title same as the title of the corresponding issue (for easier matching between PRs and issues).
   * {{ icon_tip }} You can use GitHub's [_draft PRs_](https://github.blog/2019-02-14-introducing-draft-pull-requests/) feature to indicate that a PR is not yet ready for merging.
   * {{ icon_tip }} You can use GitHub's [`Fixes #123` trick](https://help.github.com/en/articles/closing-issues-using-keywords) to get the issue to close automatically when the PR is merged.

@@ -42,6 +42,10 @@
 ## FAQs on: Tutorials
 
 {{ show_expanded_faq("tutorialWhatTutorsCanAnswer") }}
+{{ show_expanded_faq("tutorialWhyTutorsCannotAnswerAdminQuestions") }}
+{{ show_expanded_faq("tutorialWhyTutorsCannotGiveProjectFeedback") }}
+{{ show_expanded_faq("tutorialHowToImproveProjectWithoutTutorFeedback") }}
+{{ show_expanded_faq("tutorialWhyTutorCannotGiveTechHelp") }}
 {{ show_expanded_faq("tutorialWhatIfMissedDueToValidReason") }}
 {{ show_expanded_faq("tutorialWhatIfMissedDueToOtherReason") }}
 {{ show_expanded_faq("tutorialLength") }}
@@ -66,6 +70,7 @@
 {{ show_expanded_faq("tpHowManyFeaturesInMvp") }}
 {{ show_expanded_faq("tpEncryptDataFile") }}
 {{ show_expanded_faq("tpAb3FeatureInMvpSpec") if cs2103 }}
+{{ show_expanded_faq("tpNeedForNewFeatureInMvp") if cs2103 }}
 {{ show_expanded_faq("tpIterationDeadline") }}
 {{ show_expanded_faq("tpMissingIterationDeadlines") }}
 {{ show_expanded_faq("githubWhoCreatesIssues") }}

@@ -94,13 +94,16 @@ The role of our tutor's is different from tutors in other courses.
 
 {{ embed_topic("appendixB-policies.md#policy-feedbackOnProjectWork", "Admin " + icon_embedding + " **Policy on feedback for project work**", indent=1, level=2) }}
 
-* **No direct tech help**: Tutors are prohibited from giving direct technical help, other than to give you some general direction to finding a solution. %%Rationale: We want you to learn the vital survival skill of troubleshooting technical problems.%%
+* **No direct tech help**: Tutors are prohibited from giving direct technical help, other than to give you some general direction to finding a solution.
+
+{{ show_faq("tutorialWhyTutorCannotGiveTechHelp") }}
+
 
 {{ embed_topic(baseUrl+"/admin/appendixD-help.md#main", "Admin " + icon_embedding + " Appendix D: **How to get Help** in " + course_pair, "2", indent="1") }}
 
 * **No ‘mini-lectures’**: Tutors are prohibited from 'teaching' concepts that are covered in the learning resources given to you %%(reason: self-learning is a vital part of the course)%%. For example, ==the tutor will not do a mini-lecture at the start of the tutorial==. But tutors can help you clarify doubts about topics covered in the tutorial.
 
-{{ show_faq("tutorialWhatTutorsCanAnswer") }}
+{{ show_faq("tutorialWhatTutorsCanAnswer", is_compact=1) }}
 
 ##### Timing/venue:
 
@@ -118,7 +121,7 @@ The role of our tutor's is different from tutors in other courses.
 * Your conduct in tutorials will be evaluated by team members and the tutor which can affect your [Participation marks](participation.md).
 * You are expected to be present on time. ==Punctuality is considered for participation marks.==
 
-{{ show_faq("tutorialWhatIfMissedDueToValidReason") }}
+{{ show_faq("tutorialWhatIfMissedDueToValidReason", is_compact=1) }}
 {{ show_faq("tutorialWhatIfMissedDueToOtherReason") }}
 
 </div>

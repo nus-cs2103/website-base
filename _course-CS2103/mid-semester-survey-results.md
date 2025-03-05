@@ -1,6 +1,8 @@
+{% from "common/macros.njk" import show_faq with context %}
+
 <h1>
 <span class="text-info">CS2103/T Mid-Semester Survey Followup</span>
- <small class="text-muted">[AY2425S1]</small>
+ <small class="text-muted">[AY2425S2]</small>
 </h1>
 
 <p class="lead">
@@ -10,8 +12,8 @@ of them.
 
 <box type="info" icon=":fas-chart-pie:" seamless>
 
-**Response rate**: **30%** (176/588) --
-  Thanks to the 176 of you for taking time to respond!<br>
+**Response rate**: **30%** (129/427) --
+  Thanks to the 129 of you for taking time to respond!<br>
 </box>
 
 
@@ -20,13 +22,13 @@ of them.
 ### Course Briefings - usefulness{.text-info}
 
 
-%%Option%% | %%Count%% %%(/176)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/127)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">..............................................................................</span><span class="text-light bg-light">..........................................................................................................................</span> |69 | 39.2%
-Good<br><span class="text-info bg-info">..........................................................................................</span><span class="text-light bg-light">..............................................................................................................</span> |80 | 45.45%
-Average<br><span class="text-info bg-info">............................</span><span class="text-light bg-light">............................................................................................................................................................................</span> |24 | 13.64%
-Below average<br><span class="text-info bg-info">....</span><span class="text-light bg-light">....................................................................................................................................................................................................</span> |3 | 1.7%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Excellent<br><span class="text-info bg-info">...................................</span><span class="text-light bg-light">.................................................................</span> |44 | 34.65%
+Good<br><span class="text-info bg-info">..............................................</span><span class="text-light bg-light">......................................................</span> |59 | 46.46%
+Average<br><span class="text-info bg-info">...............</span><span class="text-light bg-light">.....................................................................................</span> |19 | 14.96%
+Below average<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |2 | 1.57%
+Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |3 | 2.36%
         
 
 
@@ -36,7 +38,7 @@ Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light"
 
 
 Good to see most of you found the course briefing videos useful. Previously, course admin info used to be
-covered during weekly briefings, but since last sem we started extracting them out as a separate
+covered during weekly briefings, but since an year ago we started extracting them out as a separate
 category of videos called 'course briefing' videos. 
     
 </div>
@@ -49,13 +51,13 @@ category of videos called 'course briefing' videos.
 ### Course Briefings - quality{.text-info}
 
 
-%%Option%% | %%Count%% %%(/176)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/126)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">................................................................................</span><span class="text-light bg-light">........................................................................................................................</span> |71 | 40.34%
-Good<br><span class="text-info bg-info">..................................................................................................</span><span class="text-light bg-light">......................................................................................................</span> |86 | 48.86%
-Average<br><span class="text-info bg-info">....................</span><span class="text-light bg-light">....................................................................................................................................................................................</span> |17 | 9.66%
-Below average<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |2 | 1.14%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Excellent<br><span class="text-info bg-info">.....................................</span><span class="text-light bg-light">...............................................................</span> |46 | 36.51%
+Good<br><span class="text-info bg-info">...................................................</span><span class="text-light bg-light">.................................................</span> |64 | 50.79%
+Average<br><span class="text-info bg-info">..........</span><span class="text-light bg-light">..........................................................................................</span> |13 | 10.32%
+Below average<br><span class="text-info bg-info">.</span><span class="text-light bg-light">...................................................................................................</span> |1 | 0.79%
+Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |2 | 1.59%
         
 
 
@@ -76,14 +78,14 @@ Similarly, good to see most of you found the quality of course briefing videos t
 ### Weekly briefings - usefulness{.text-info}
 
 
-%%Option%% | %%Count%% %%(/175)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/123)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">..........................................................</span><span class="text-light bg-light">..............................................................................................................................................</span> |50 | 28.57%
-Good<br><span class="text-info bg-info">..................................................................................</span><span class="text-light bg-light">......................................................................................................................</span> |72 | 41.14%
-Average<br><span class="text-info bg-info">......................................</span><span class="text-light bg-light">..................................................................................................................................................................</span> |33 | 18.86%
-Below average<br><span class="text-info bg-info">............</span><span class="text-light bg-light">............................................................................................................................................................................................</span> |10 | 5.71%
-Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |1 | 0.57%
-Can't comment. I don't attend/watch them.<br><span class="text-info bg-info">..........</span><span class="text-light bg-light">..............................................................................................................................................................................................</span> |9 | 5.14%
+Excellent<br><span class="text-info bg-info">........................</span><span class="text-light bg-light">............................................................................</span> |30 | 24.39%
+Good<br><span class="text-info bg-info">.......................................</span><span class="text-light bg-light">.............................................................</span> |48 | 39.02%
+Average<br><span class="text-info bg-info">.........................</span><span class="text-light bg-light">...........................................................................</span> |31 | 25.2%
+Below average<br><span class="text-info bg-info">....</span><span class="text-light bg-light">................................................................................................</span> |5 | 4.07%
+Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |2 | 1.63%
+Can't comment. I don't attend/watch them.<br><span class="text-info bg-info">......</span><span class="text-light bg-light">..............................................................................................</span> |7 | 5.69%
         
 
 
@@ -116,14 +118,14 @@ Hence, you can skip weekly briefings (or simply speed-watch the recording later)
 ### Weekly briefings - quality{.text-info}
 
 
-%%Option%% | %%Count%% %%(/350)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/250)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">............................................................................</span><span class="text-light bg-light">............................................................................................................................</span> |132 | 37.71%
-Good<br><span class="text-info bg-info">............................................................................................</span><span class="text-light bg-light">............................................................................................................</span> |161 | 46.0%
-Average<br><span class="text-info bg-info">..................</span><span class="text-light bg-light">......................................................................................................................................................................................</span> |32 | 9.14%
-Below average<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |4 | 1.14%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Can't comment. I don't attend/watch them.<br><span class="text-info bg-info">............</span><span class="text-light bg-light">............................................................................................................................................................................................</span> |21 | 6.0%
+Excellent<br><span class="text-info bg-info">..................................</span><span class="text-light bg-light">..................................................................</span> |84 | 33.6%
+Good<br><span class="text-info bg-info">............................................</span><span class="text-light bg-light">........................................................</span> |109 | 43.6%
+Average<br><span class="text-info bg-info">.............</span><span class="text-light bg-light">.......................................................................................</span> |33 | 13.2%
+Below average<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |4 | 1.6%
+Poor<br><span class="text-info bg-info">.</span><span class="text-light bg-light">...................................................................................................</span> |3 | 1.2%
+Can't comment. I don't attend/watch them.<br><span class="text-info bg-info">.......</span><span class="text-light bg-light">.............................................................................................</span> |17 | 6.8%
         
 
 
@@ -145,13 +147,13 @@ continue to look for ways to improve them further.
 ### Course website{.text-info}
 
 
-%%Option%% | %%Count%% %%(/173)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/123)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">....................................................................................................................</span><span class="text-light bg-light">....................................................................................</span> |100 | 57.8%
-Good<br><span class="text-info bg-info">....................................................................</span><span class="text-light bg-light">....................................................................................................................................</span> |58 | 33.53%
-Average<br><span class="text-info bg-info">............</span><span class="text-light bg-light">............................................................................................................................................................................................</span> |11 | 6.36%
-Below average<br><span class="text-info bg-info">....</span><span class="text-light bg-light">....................................................................................................................................................................................................</span> |4 | 2.31%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Excellent<br><span class="text-info bg-info">...............................................</span><span class="text-light bg-light">.....................................................</span> |58 | 47.15%
+Good<br><span class="text-info bg-info">..........................................</span><span class="text-light bg-light">..........................................................</span> |52 | 42.28%
+Average<br><span class="text-info bg-info">.........</span><span class="text-light bg-light">...........................................................................................</span> |11 | 8.94%
+Below average<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |2 | 1.63%
+Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
         
 
 
@@ -187,14 +189,14 @@ The feedback for the course website is quite positive but there are still _some_
 ### Pre-recorded topic videos - usefulness{.text-info}
 
 
-%%Option%% | %%Count%% %%(/173)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/121)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">............................................................................................</span><span class="text-light bg-light">............................................................................................................</span> |79 | 45.66%
-Good<br><span class="text-info bg-info">................................................................................</span><span class="text-light bg-light">........................................................................................................................</span> |69 | 39.88%
-Average<br><span class="text-info bg-info">......................</span><span class="text-light bg-light">..................................................................................................................................................................................</span> |19 | 10.98%
-Below average<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |1 | 0.58%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Can't comment. I don't watch them.<br><span class="text-info bg-info">......</span><span class="text-light bg-light">..................................................................................................................................................................................................</span> |5 | 2.89%
+Excellent<br><span class="text-info bg-info">......................................</span><span class="text-light bg-light">..............................................................</span> |46 | 38.02%
+Good<br><span class="text-info bg-info">....................................................</span><span class="text-light bg-light">................................................</span> |63 | 52.07%
+Average<br><span class="text-info bg-info">.....</span><span class="text-light bg-light">...............................................................................................</span> |6 | 4.96%
+Below average<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |3 | 2.48%
+Poor<br><span class="text-info bg-info">.</span><span class="text-light bg-light">...................................................................................................</span> |1 | 0.83%
+Can't comment. I don't watch them.<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |2 | 1.65%
         
 
 
@@ -215,14 +217,14 @@ Glad to see pre-recorded topic videos are generally perceived as useful.
 ### Pre-recorded topic videos - quality{.text-info}
 
 
-%%Option%% | %%Count%% %%(/173)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/122)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">..........................................................................................</span><span class="text-light bg-light">..............................................................................................................</span> |78 | 45.09%
-Good<br><span class="text-info bg-info">..........................................................................................</span><span class="text-light bg-light">..............................................................................................................</span> |78 | 45.09%
-Average<br><span class="text-info bg-info">..............</span><span class="text-light bg-light">..........................................................................................................................................................................................</span> |12 | 6.94%
-Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-Can't comment. I don't watch them.<br><span class="text-info bg-info">......</span><span class="text-light bg-light">..................................................................................................................................................................................................</span> |5 | 2.89%
+Excellent<br><span class="text-info bg-info">.....................................</span><span class="text-light bg-light">...............................................................</span> |45 | 36.89%
+Good<br><span class="text-info bg-info">....................................................</span><span class="text-light bg-light">................................................</span> |63 | 51.64%
+Average<br><span class="text-info bg-info">.........</span><span class="text-light bg-light">...........................................................................................</span> |11 | 9.02%
+Below average<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Poor<br><span class="text-info bg-info">.</span><span class="text-light bg-light">...................................................................................................</span> |1 | 0.82%
+Can't comment. I don't watch them.<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |2 | 1.64%
         
 
 
@@ -243,13 +245,13 @@ Similarly, glad to see the quality of pre-recorded topic videos is satisfactory 
 ### Tutorials quality in general{.text-info}
 
 
-%%Option%% | %%Count%% %%(/173)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/123)%% | %%Percentage%%
 -------|-------|-----------
-Excellent<br><span class="text-info bg-info">........................................................................</span><span class="text-light bg-light">................................................................................................................................</span> |63 | 36.42%
-Good<br><span class="text-info bg-info">............................................................................................</span><span class="text-light bg-light">............................................................................................................</span> |79 | 45.66%
-Average<br><span class="text-info bg-info">................................</span><span class="text-light bg-light">........................................................................................................................................................................</span> |27 | 15.61%
-Below average<br><span class="text-info bg-info">....</span><span class="text-light bg-light">....................................................................................................................................................................................................</span> |4 | 2.31%
-Poor<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Excellent<br><span class="text-info bg-info">.................................</span><span class="text-light bg-light">...................................................................</span> |41 | 33.33%
+Good<br><span class="text-info bg-info">................................................</span><span class="text-light bg-light">....................................................</span> |59 | 47.97%
+Average<br><span class="text-info bg-info">..............</span><span class="text-light bg-light">......................................................................................</span> |17 | 13.82%
+Below average<br><span class="text-info bg-info">....</span><span class="text-light bg-light">................................................................................................</span> |5 | 4.07%
+Poor<br><span class="text-info bg-info">.</span><span class="text-light bg-light">...................................................................................................</span> |1 | 0.81%
         
 
 
@@ -304,13 +306,13 @@ Admittedly, if you are someone who normally prepare well for the tutorials and a
 ### The pace of the course{.text-info}
 
 
-%%Option%% | %%Count%% %%(/173)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/122)%% | %%Percentage%%
 -------|-------|-----------
-Too fast. I can't keep up.<br><span class="text-info bg-info">........................</span><span class="text-light bg-light">................................................................................................................................................................................</span> |20 | 11.56%
-A bit fast, but I can manage.<br><span class="text-info bg-info">..............................................................................................................</span><span class="text-light bg-light">..........................................................................................</span> |96 | 55.49%
-Just right.<br><span class="text-info bg-info">................................................................</span><span class="text-light bg-light">........................................................................................................................................</span> |56 | 32.37%
-A bit too slow. I don't mind a slightly faster pace.<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |1 | 0.58%
-Too slow. Please speed up a lot.<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+Too fast. I can't keep up.<br><span class="text-info bg-info">.........</span><span class="text-light bg-light">...........................................................................................</span> |11 | 9.02%
+A bit fast, but I can manage.<br><span class="text-info bg-info">.........................................................</span><span class="text-light bg-light">...........................................</span> |69 | 56.56%
+Just right.<br><span class="text-info bg-info">..................................</span><span class="text-light bg-light">..................................................................</span> |42 | 34.43%
+A bit too slow. I don't mind a slightly faster pace.<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+Too slow. Please speed up a lot.<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
         
 
 
@@ -323,7 +325,8 @@ The pace seems to be an issue for some of you, although it seems to be manageabl
 **We need to go through topics faster than other courses** because you need to have some time left
  _after_ covering a topic to apply that knowledge into the project. 
  So, we need to finish covering topics about 2 weeks before the tP
- finishes, which means ==compressing 13-weeks worth of topics into about 10 weeks==. 
+ finishes, which means ==compressing 13-weeks worth of topics into about 10 weeks== 
+ (having the lecture on Friday means we also lose most of the week 1 too). 
 Don't worry if you feel like the course is moving too fast; thanks to the iterative approach we use for covering topics,
  you'll get multiple chances to solidify your familiarity of a topic/tool.
     
@@ -337,21 +340,21 @@ Don't worry if you feel like the course is moving too fast; thanks to the iterat
 ### The workload{.text-info}
 
 
-%%Option%% | %%Count%% %%(/173)%% | %%Percentage%%
+%%Option%% | %%Count%% %%(/123)%% | %%Percentage%%
 -------|-------|-----------
-8 Units<br><span class="text-info bg-info">........................</span><span class="text-light bg-light">................................................................................................................................................................................</span> |21 | 12.14%
-7.5 Units<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |1 | 0.58%
-7 Units<br><span class="text-info bg-info">............</span><span class="text-light bg-light">............................................................................................................................................................................................</span> |11 | 6.36%
-6.5 Units<br><span class="text-info bg-info">....</span><span class="text-light bg-light">....................................................................................................................................................................................................</span> |4 | 2.31%
-6 Units<br><span class="text-info bg-info">................................................</span><span class="text-light bg-light">........................................................................................................................................................</span> |41 | 23.7%
-5.5 Units<br><span class="text-info bg-info">............</span><span class="text-light bg-light">............................................................................................................................................................................................</span> |11 | 6.36%
-5 Units<br><span class="text-info bg-info">..................................</span><span class="text-light bg-light">......................................................................................................................................................................</span> |30 | 17.34%
-4.5 Units<br><span class="text-info bg-info">....................</span><span class="text-light bg-light">....................................................................................................................................................................................</span> |18 | 10.4%
-4 Units<br><span class="text-info bg-info">......................................</span><span class="text-light bg-light">..................................................................................................................................................................</span> |33 | 19.08%
-3.5 Units<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |1 | 0.58%
-3 Units<br><span class="text-info bg-info">..</span><span class="text-light bg-light">......................................................................................................................................................................................................</span> |2 | 1.16%
-2.5 Units<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
-2 Units<br><span class="text-info bg-info"></span><span class="text-light bg-light">........................................................................................................................................................................................................</span> |0 | 0.0%
+8 Units<br><span class="text-info bg-info">.............</span><span class="text-light bg-light">.......................................................................................</span> |16 | 13.01%
+7.5 Units<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+7 Units<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |3 | 2.44%
+6.5 Units<br><span class="text-info bg-info">....</span><span class="text-light bg-light">................................................................................................</span> |5 | 4.07%
+6 Units<br><span class="text-info bg-info">.....................</span><span class="text-light bg-light">...............................................................................</span> |26 | 21.14%
+5.5 Units<br><span class="text-info bg-info">......</span><span class="text-light bg-light">..............................................................................................</span> |7 | 5.69%
+5 Units<br><span class="text-info bg-info">.......................</span><span class="text-light bg-light">.............................................................................</span> |28 | 22.76%
+4.5 Units<br><span class="text-info bg-info">........</span><span class="text-light bg-light">............................................................................................</span> |10 | 8.13%
+4 Units<br><span class="text-info bg-info">...................</span><span class="text-light bg-light">.................................................................................</span> |23 | 18.7%
+3.5 Units<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |3 | 2.44%
+3 Units<br><span class="text-info bg-info">.</span><span class="text-light bg-light">...................................................................................................</span> |1 | 0.81%
+2.5 Units<br><span class="text-info bg-info"></span><span class="text-light bg-light">....................................................................................................</span> |0 | 0.0%
+2 Units<br><span class="text-info bg-info">.</span><span class="text-light bg-light">...................................................................................................</span> |1 | 0.81%
         
 
 
@@ -366,25 +369,25 @@ fewer students chose `*.5` options. So, given below is the view if we merge `n` 
 
 %%Option%% | %%Count%% %%(/173)%% | %%Percentage%%
 -------|-------|-----------
-8/8+ Units<br><span class="text-info bg-info">........................</span><span class="text-light bg-light">................................................................................................................................................................................</span> |21 | 12.14%
-7/7.5 Units<br><span class="text-info bg-info">..............</span><span class="text-light bg-light">..........................................................................................................................................................................................</span> |12 | 6.94%
-6/6.5 Units<br><span class="text-info bg-info">....................................................</span><span class="text-light bg-light">....................................................................................................................................................</span> |45 | 26.01%
-5/5.5 Units<br><span class="text-info bg-info">................................................</span><span class="text-light bg-light">........................................................................................................................................................</span> |41 | 23.7%
-4/4.5 Units<br><span class="text-info bg-info">..........................................................</span><span class="text-light bg-light">..............................................................................................................................................</span> |51 | 29.48%
-3/3.5 Units<br><span class="text-info bg-info">....</span><span class="text-light bg-light">....................................................................................................................................................................................................</span> |3 | 1.74%
+8/8+ Units<br><span class="text-info bg-info">............</span><span class="text-light bg-light">........................................................................................</span> |21 | 12.14%
+7/7.5 Units<br><span class="text-info bg-info">.......</span><span class="text-light bg-light">.............................................................................................</span> |12 | 6.94%
+6/6.5 Units<br><span class="text-info bg-info">..........................</span><span class="text-light bg-light">..........................................................................</span> |45 | 26.01%
+5/5.5 Units<br><span class="text-info bg-info">........................</span><span class="text-light bg-light">............................................................................</span> |41 | 23.7%
+4/4.5 Units<br><span class="text-info bg-info">.............................</span><span class="text-light bg-light">.......................................................................</span> |51 | 29.48%
+3/3.5 Units<br><span class="text-info bg-info">..</span><span class="text-light bg-light">..................................................................................................</span> |3 | 1.74%
         
 
 Either way, it is interesting to see peaks around 4, 6, and 8, showing a big variation of how students
 perceive the workload of this course.
 
 **Why some students feel the workload as MUCH higher compared to others?** 
-Here's a recap the possible reasons I mentioned during the Week 2 briefing:
+Here's a recap of the possible reasons for this that I mentioned during the Week 2->3 briefing:
 
 1. **%%Possible reason:%% You are doing more work than others.**<br>
    Response: If this is because you are doing the course more sincerely (e.g., not skipping even optional
-   topics/tasks); if so, it will pay off (i.e., you'll learn more) but you still might want to re-calibrate the time
+   topics/tasks), it will pay off (i.e., you'll learn more) but you still might want to re-calibrate the time
    you spend on this course if you don't have enough time for other courses.<br>
-   If this is because you are unaware of ways to reduce the workload (e.g., omitting optionla topics),
+   If this is because you are unaware of ways to reduce the workload (e.g., omitting optional topics),
    refer to the recommendations given further below.
 1. **%%Possible reason:%% You need more time than others to complete course tasks**
    because you are an inexperienced coder.<br>
@@ -405,7 +408,7 @@ Here's a recap the possible reasons I mentioned during the Week 2 briefing:
     its fair share of students' time. This course aims to teach you SE skills that take a lot
     of practice, which makes the workload feel heavy, especially if you are a beginner coder.<br>
   On our side, ==we have lowered the bar for the tP implementation component by half==
-  last semester, and we have further cut down the tP documentation requirement this semester. 
+  in recent semesters, and we have further cut down the tP documentation requirement recently. 
   Hopefully, it'll make the workload of the second half lighter than in previous rounds.
 
 **Some recommendations for you:**
@@ -417,7 +420,7 @@ Here's a recap the possible reasons I mentioned during the Week 2 briefing:
     ==Plan to add/update tP features in small steps== (each step leading to a usable and slightly better version
     of the feature), so that you can stop any time the workload seems to be exceeding what you are prepared for.
   * If you don't have time to study all topics, use the 
-    [topic levels system](https://nus-cs2103-ay2425s1.github.io/website/admin/courseExpectations.html#topic-levels:~:text=things%20to%20do.-,Topic%20Levels,-We%20use%20a)
+    [topic levels system](https://nus-cs2103-ay2425s2.github.io/website/admin/courseExpectations.html#topic-levels:~:text=things%20to%20do.-,Topic%20Levels,-We%20use%20a)
     to figure out which topics are higher priority.
     
 </div>
@@ -438,7 +441,7 @@ Also note my **general response given at the bottom of this document**.</md></p>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>really appreciate how this course focuses less on the correctness of answers as it lessens the stress of learning all the content. also appreciate how the course gives leeway for students to manage their own workload (non-strict deadlines, extra time to recover if we fall behind). also can evidently tell how passionate the prof is in teaching, thank you prof :)</markdown>
+<markdown>I think I learn a lot. I love this module!</markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
 </span></box>
@@ -446,620 +449,194 @@ Also note my **general response given at the bottom of this document**.</md></p>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I feel i learn best through videos and slides instead of reading, since my reading speed is very slow. It takes me days to read through the topics each week.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, admittedly, the amount of text you need to read every week is high. We'll try to increase the availability of alternative presentation of content such as videos. Try not to neglect the text presentation though, as that's the one you'll be using for the exam i.e., you can't refer videos during the exam.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>workload is too high. also there are so many things to keep track of but it is confusing to find where everything is located.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Both are fair points. See [my comment on 'The workload'](#Q14). If you can't find something in the course website (e.g., via the search box), please ask us and we'll point you to the right location. See [my comment on 'Course website'](#Q6).</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>workload for iP isn't distributed evenly across the weeks. Week 3 was by far the most workload-heavy</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Agreed, week 3 has a hevier load than usual. Some of [my general responses](#general) are related to your comments.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>No complaints. However, I will say the course feels a little easier for experienced coders (frequent users of git etc.) The workload can be really high for absolute beginners.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good observation. It is challenging to design the course to keep the more experienced coders interested/engaged while ensuring the less-experienced also level up without getting overwhelmed. </markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Suggestion: Course should aim for either making the chatbot in CLI or GUI format because transitioning from CLI to GUI seems to be work overload.
-
-Feedback: Really good module as it does not force you to do optional things, its just our wish to do it or not. The more we do the better knowledge we gain! Instructions are well laid for the new things we learn in this module.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad you liked the flexibility of the course.
-
-It is true that evolving from CLI to GUI can appear a lot of work, which would be the case for most students. But the more important questions is, now that you've gone through it, if you were to do it again, would you design the CLI version differently so that adding a GUI is easier? The answer should be 'yes' -- the CLI version _can_ be written in a way that it is easy to swap out the CLI with GUI, or add the GUI while keeping the CLI as well. In software projects, it is always possible to have to implement features that were not aniticipated at the start, and the effort required to implement such features depends on the quality of the design. Not to worry if this doesn't sound convincing. We'll be covering more design-related topics in the coming weeks. 
-
-</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Hope the tp can be less stressful in the future.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Well, it is unlikely to be a LOT easier either, given the tP has the added complication of working as a team and the need to work with a bronfield codebase. But it will not be a LOT harder either, as our approach is to tackle everything in small steps.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>This course takes a lot more time than the usual cs courses, but the content is well-paced and the notes are sufficiently detailed to follow along</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, it is a bit on the heavier side, as project-heavy courses tend to be. Glad to hear you are OK with the pace.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>the website is very verbose</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, it does have a lot of text. See [my comment on 'Course website'](#Q6).</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>It might be 5.5units but it's one of the best courses to learn if goes in depth. Don't skimp on details really, this what we CS graduates need to know minimally. I hate the workload but it means your doing something right.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad you feel that way. No pain, no gain, right? :-)
-
-This positive mindset is a wise choice, as it will make the workload feel lighter than it is. I wish more students adopt such a mindset. :+1:</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>especially the tasks that involve using git/github, perhaps the instructions could be made more explicit and clear, because I believe for most of us like me its the first time we are using git/github.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>That's a fair point. We did some imporvements this time -- for example, all those colorful Git graph visualizations you see were added this semester. We'll continue to do so in future.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Hard to know if I have done the project task correctly</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, this is common feeling among students in this course (you are not alone!). Some of [my general responses](#general) are related to your comments.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Crash coursing stuff for every week is really tiring. I understand it's good but should be paced out better. Maybe can exclude some unnecessary theory portions like UML. </markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It's true that the course seems 'rushed'. One of the complications of a brownfield project is that you need to know a lot already at the early stages. For example, you need to know UML well to understand the developer docs of the project. This is why we need to cover those topics (which seem unnecessary at the time) so that you know them well by the time you start reading AB3 developer documentation (around week 7).</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>My perception on workloads is a bit skewed due to my level 3000 module causing me the least stress while my yearlong module was quite frontloaded.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>I see. Nevertheless, it's good to see you feel this course is not that high (you chose 4.5 in for that question)</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Fun but time consuming, especially with 2101</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad it's fun, but yes, it is on the heavier side. See [my comment on 'The workload'](#Q14).</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>The topic videos help in giving an overview of the content at a high level manner (or rather because I prefer video to reading text). The weekly briefing is interesting because it recaps the concepts with analogies and bring in additional insights. The analogies are helpful.
-
-It is true that the workload for the course is rather high, but, I think it is part and parcel of learning. I don't see how it can be mitigated / have the workload decreased except requiring us to spend the time understanding the content and trying out the tools and code.
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+<markdown>I feel that not being able to ask for help for IP is abit harsh especially when its about like technical difficulties and not really about the coding portion
 
  </markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad you found weely briefings interesting -- wish more feel the same way. They provide the 'glue' to hold the pieces together, and hence, play an important role in learning even if they don't cover lot of examinable materials.
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>We _do_ provide a way for you to get technical help (i.e., the forum), a way that is more effective than asking the tutor/prof directly. That said, we understand some of you may feel 'shy' at first to post help requests in the forum. We go the extra mile to help you overcome that mental barrier (e.g., by tagging a random group of students in threads so that you can get used to taking part in forum activities gradually, and see how others are using the forum to solve technical problems). </markdown>
+</span></box>
+Some relevant FAQs are given below:
 
-It is also good that you understand the necessity of the workload. This positive mindset is a wise choice, as it will make the workload feel lighter than it is. Again, I wish more students adopt such a mindset.</markdown>
+{{ show_faq("tutorialWhyTutorCannotGiveTechHelp", is_compact=1) }}
+
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>Good course for learning SWE principles and gaining practical knowledge and experience but workload for some weeks can be too overwhelming at times. In other words, the workload can be spread more evenly among the weeks.</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you are gaining practical knowledge. Agreed, the workload can feel a bit uneven across weeks at times. The pace a student can go and the heaviness of the workload varies by the student too. We try to make the schedule flexible (e.g., we allow you to stay one week ahead of the schedule and catch up within one week if you fall behind) so that students can adjust their own pace based on their own schedules and strengths. Some of [my general responses](#general) are related to your comments.</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Everything's good. Really enjoyed the module so far. I think this module is really well made and I glad I took this mod. </markdown>
+<markdown>The last week for iP (ie. week 6) feels incredibly rushed with respect to the  quantity of optional tags. It would feel smoother to spread them out over the previous week(s)</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Agreed that week 6 has many optional increments. As you know now, you can do them even later (after the final submission) if you wish.</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>too much readings!!!!!!!!</markdown>
+<markdown>The setting up repo part is quite a lot, the MvP define is necessary but feel like lacking quite a lot examples on what we should do or what are advised to do</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Agreed, there is a lot to read :-( See [my comment on 'Course website'](#Q6).</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Don't worry, we don't expect you to do a 'perfect' job the first time. This course is all about incremental improvements. Instead of following a model answer (there are rarely such 'model answers' in software engineering), we want you to develop skills through experience. For example, when writing the MVP feature spec, you simply try to define the behavior as precisely as you can. We already suggest that you should think about which characters are allowed in person names -- you are then expected to think of cases such as 'John s/o Doe' on your own, without having specifically asked to. If you miss something, you'll discover it along the way (in later weeks), and the experience will help you become less prone to similar mistakes in future projects.<br>
+
+Also, try to distribute the tP work among team members. If you have to do all the repo setup and also worry about the full MVP spec, it can feel like 'too much' work.</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Its generally ok, but the quiz questions are slightly too many.</markdown>
+<markdown>The F2F + Zoom is slightly awkward and seems redundant. I guess undergrads should be competent enough to take charge of their learning and have an answer in their mind for questions, not a fan of the wait for 1 min for everyone to answer in the zoom chat during a F2F tutorial (its fine for a virtual one)
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, in some weeks there are many questions in the quiz, but they are mostly small True/False type question. If we combine them in to multiple-select questions, the question count will reduce 4-5 times but each question will become harder to answer correctly.</markdown>
+ </markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>I agree that to students who take charge of their own learning and come prepared for tutorials, our way of doing tutorials can feel slow. Bear with us though, as it is good to give the rest of the students a chance (for example, those who need a bit longer to come up with the answer) to 'level up' --  less 'blur' team members can translate to  a better tP experience. See [my comment on 'Tutorials quality in general'](#Q9).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>The workload can be rather high. I am taking CS3230 and CS2109S alongside this, so I guess I brought it upon myself. But I do have prior experiences with CVWO and internship, so I guess its tedious but not difficult.</markdown>
+<markdown>Sometimes I find the quiz question slightly vague (could be a skill issue on my part), e.g. I think in week 4 there was a question on there can be associations between persons (0..1) and I interpreted it is >1 association possible. Other than that, I like the bit of humor incorporated in the videos (the edits etc.)</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yup, CS2109S and CS3230 together with CS2103/T will definitely make the workload HIGH :-o  And yes, in comparision, CS2103/T is tedious (rather than difficult) for an experienced coder.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Indeed, some things can be imprecise (open-ended, subjective, open to interpretation etc), in quiz questions, and in SE in general. Where possible, we  try to expose you to these aspects (rather than artificially shield you from it) so that you learn how to deal with it, but not to worry, we don't do that in the final exam.</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>The workload for week 3 is too high, others just right!</markdown>
+<markdown>Make the website UI better </markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Indeed, week 3 has a high workload. Some of [my general responses](#general) are related to your comments.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>See [my comment on 'Course website'](#Q6).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>The topic section of the course website feels congested and cramped</markdown>
+<markdown>A bit too fast but I learnt a lot!</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, it is a bit compact -- we are using the default text formatting of Bootstrap (which is the Web frontend tool used by MarkBind, the tool we use for the website). Also see [my comment on 'Course website'](#Q6).</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you are learning a lot; hope you'll learn to cope with the pace. See [my comment on 'The pace of the course'](#Q13).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Too much to read</markdown>
+<markdown>workload of IP can be lesser to provide time for student to create a better application.</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Agreed, there is a lot to read :-( See [my comment on 'Course website'](#Q6).</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you motivation to create a better application (I wish everybody had that). In the course, we try to leave room for you to create a better applications (e.g., in the iP, we allow you to update the app for a period after the final submission) but our main goal is to maximize learning. Our stance, for both the iP and the tP, is "the product is you (i.e., the student); the software is a byproduct". So, we try to make the product (i.e., you) better by using the iP/tP to teach you as many things as possible, even if it means taking detours and doing the same thing in different ways (e.g., CLI vs GUI).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I have been having a good time with this course, just that I am always a week behind since I am not as proficient in Java. Thankfully, the IP does not have a strict deadline (except for the final submission) and the workload does ease up near the end.   
+<markdown>A major gripe I have up till now about this course is the steep incline in its pace over the initial weeks, where the first few iP increments are very straightforward for students who would all have completed CS2030S and CS2040S, yet they rise in terms of difficulty by Week 3 suddenly to incorporating built automation tools, JavaFX and UML each per week. As this course understandably emphasises breadth-first iterative learning, I earnestly believe it would benefit most of the cohort to already start off with snippets of these core concepts even earlier on starting from Week 1 possibly. This would also help make the learning gradient more manageable, considering its most probable target audience i.e. Year 2 undergraduates are pacing their CS2103T with some other heavy Level 2k courses, particularly CS2109S and CS2106. The lessons have been conducted quite clearly and the passion exuded by the course staff are very evident though. Thanks!</markdown>
 
-Overall, this course LGTM.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good to hear you are managing to stay not-too-far-behind the target. :+1:</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It is a fair point that the pace of this course is slow in the first two weeks. Some of [my general responses](#general) are related to your comments.</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Some weeks are packed with content that is really hard to do and I wish that the iP guides held on to your hand a bit more so as to be able to keep up the weekly tasks.</markdown>
+<markdown>the topic on GUI is very rushed and very heavy. got to admit I looked at the GUI steps ahead of time and my brain just blanked out and i just procrastinated for two weeks cause I didn't want to touch GUI at all. then I talked to one of my classmates and he said it is very crazy at how much is being thrown at us but copying the given code is good enough. so i picked back up and even with that, the amount of stuff entering my brain feels a bit overloaded. Thanks though, if not for the code examples, I probably would not even have completed my IP because GUI is that daunting.
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>To prepare you for the tP, and leave enough time for you to apply the topics to the project, we need to cover topics fast. See [my comment on 'The pace of the course'](#Q13).
+But I also understand that GUI could be probably half a module on it's own, if taught in depth, so for it to be in a week, I think it's great that the course laid down a good foundation that I can read it slowly in my own time to try to understand it along with the extra steps and instructions provided on how to make gui look better.
 
-Yes, some of the guides can benefit from more details. In fact, we did add some more details to them this time around (e.g., JavaFX tutorial).</markdown>
+A complaint might be the more oop task. that one really sucked the life out of me.</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Sorry to hear some iP increments took more time than you expected. Think of it as an investment. If you were to do the iP (or something similar) again, it is likely that A-MoreOOP will take no time at all, because you would have done it in the OOP way from the start. So, the time you invested in the iP will hopefully pay dividends in your future projects. 
+
+Yes, GUI programming (and JavaFX) is not easy, but also is not a core SE topic. So, we can't dedicate a lot of time on it, or expect everyone to learn it in depth (some students prefer to focus on back-end code). If you are pressed for time, you might have to skim it during the iP (e.g., just copy the given code) and come back to it later if you are still interested to learn in better (e.g., if your tP feature is GUI-intensive). </markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I don't really have complaints about the course. I think the material, content, and structure is great. The workload might be a little much, but I guess it is also understandable given what this course is trying to achieve in terms of what to impart students with, which I really appreciate. I'm honestly really glad with the structure and admin side of this course (e.g some hard and some soft deadlines esp for IP) because it gives me the flexibility to catch up. I think it also forces us to manage our time and responsibility well, and gives us good opportunity to not only improve our own technical skills, but our soft-skills and teamwork as well.</markdown>
+<markdown>Too high workload</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you liked the structure and flexibility of the course. Yes, while on the one hand it looks like the course is trying to micromanage students' work schedules (e.g., by specifcying exactly what to do every week),  on the other hand we want students to have some freedom in how closely they follow the given schedule, so that they can learn to adapt their targets/schedules based on ground realities.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>See [my comment on 'The workload'](#Q14).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Content delivery is a bit rushed per week. Would prefer in person lectures instead of self regulated learning. </markdown>
+<markdown>dont understand the point of TAs if they cannot comment on anything</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Fair point. See [my comment on 'The pace of the course'](#Q13). Some of [my general responses](#general) are related to your comments.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Tutors in this course has a narrow job scope, which is to deliver the tutorial. So, you can certainly ask them about the tutorial contents, but they are not allowed to give feedback on things that will be graded later, or admin matters, or give tech help.</markdown>
+</span></box>
+Some relevant FAQs are given below:
+
+{{ show_faq("tutorialWhyTutorCannotGiveTechHelp", is_compact=1) }}
+{{ show_faq("tutorialWhyTutorsCannotAnswerAdminQuestions", is_compact=1) }}
+{{ show_faq("tutorialWhyTutorsCannotGiveProjectFeedback", is_compact=1) }}
+{{ show_faq("tutorialHowToImproveProjectWithoutTutorFeedback", is_compact=1) }}
+
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>Takes quite some time to read through the course content for each week, haha.</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It is true that there is a lot to read. Hope you are managing. 
+
+See [my comment on 'The pace of the course'](#Q13).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I would suggest to have lecture videos going over textbook topics in future sems like cs2030s. Additionally, tutorials can cover more topics because so far each tutorial only covers one specific subtopic.</markdown>
+<markdown>I do not like how submissions are before the weekend, for some of us who have external commitments like internships, we use the weekends to catch up on assignments</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Fair suggestion. Some of [my general responses](#general) are related to your comments.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>This course is a prerequisite for both SIP and ATAP, which means we don't expect students to be doing internships while taking this course, normally. 
+
+Even if you are doing 'unofficial' internships, as we  allow students to catch up with most deadlines without a penalty and stay one week ahead of the schedule, we expect most of you can do those task either in the previous weekend (with proper planning ahead) or the following weekend, even if a deadline is on Friday.</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>tP is too rigid and asks for too much creativity. Difficult to make convincing argument for an address book.
+<markdown>Some of the IP increments required much more work compared to the rest, especially More-OOP required massive amounts of refactoring. Not sure if my method of refactoring were the best but only after everything had been refactored, could i test and make sure its working (could not refactor incrementally). Maybe the course could have taught proper refactoring methods earlier.
 
-Course videos could be made a bit more relevant to course work.
-iP is good.</markdown>
+Overall, weekly requirements for IP are reasonable and manageable. 'Deadlines' for weekly requirements are lenient which gives students flexibility when they can't keep up</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>To be clear, CS2103/T doesn't require you to make a convincing argument about an addressbook. We 'recommend' that you pick a realistic target usage so that it is will be easier to design the features later, but that is neither compulsory nor graded.
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Thanks for raising this issue about A-MoreOOP. The effort required for it is influenced by two factors:<br>
 
-The suggestion about the videos noted. 
+(a) The level of OOP applied already -- given OOP is covered in CS2030/S, we expect the code to be somewhat OOP already. The less OOP it is to begin with, the more effort A-MoreOOP will take.<br>
 
-Good to hear you liked the iP.</markdown>
+(b) The approach taken when doing the increment -- an incremental approach should result in a much lower effort compared to a full-scale rewrite.
+
+
+
+In your case, it is possible either (b) alone, a combination of both (a) and (b), resulted in a higher workload. 
+
+
+
+i) The week 2->3 briefing has a segment on the value of proceeding in small steps (at 46.50 mark), that advises to 'always keep the mashmallow on top'. However, I did not make a spefic reference from that segment to the A-MoreOOP increment due in that week. In future semesters, I should do that.
+
+II) Also, given some students don't watch the briefings, we might have to also mention about this in the A-MoreOOP increment description. 
+
+iii) Finally, it might be useful to remind students to apply OOP along the way, instead of assuming they will anyhow.
+
+
+
+So thanks again for raising this, as your comment will result in a few tweaks to the course in future semesters.</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Workload feels far too high, due to weekly readings + iP + tP, especially on week 3 and week 4</markdown>
+<markdown>iP was very fun.
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yup, the workload around that time is higher than usual. Some of [my general responses](#general) are related to your comments.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>there is too much work. but the not so strict deadlines makes it a bit easy.</markdown>
+I am proud of what I created.
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good to hear the flexibility of deadlines is making things a bit easier than otherwise.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I feel like although it is said that late submissions are still okay as long as we eventually do them, it feels like I have to touch on this module every day, be it reading the long topics, implementing the iP features, or preparing for tutorials. The workload and pace just feel a lot more than a 4 MC mod.</markdown>
+I hope that the 4/5 weekly commits requirement could be laxed.
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It is true that you need to work on this course on most days of the week. We specifically didn't want students to do the course tasks in short bursts once a week, as the value of many SE aspects can only be appreciated when one has to work with a project hundereds of times over an extended period. But we do realize that this can make it harder for you to juggle with multiple courses. So, we try to make the project as small as possible, and deadlines as flexible as possible, so that you can have some windows of time away from this course when  necessary (e.g., near a mid-term exam of another course).
+ </markdown>
 
-See [my comment on 'The workload'](#Q14).</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Nope no major problems. Just that the only feedback I might give would be the last iP submission on using JavaFX, I felt that the explanation part of the using the .fxml files was a bit too abstract. However, I also get why it is abstract because it is a new topic with heavy content with the html like tags and elements. Besides that, everything is going well so far.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-). If you take pride in your SE work, you will do well in your career:+1:
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Agreed about the explanation of the FXML part of the tutorial. We'll see what we can do about it in future rounds. In fact we improved the JavaFX tutorial quite a bit this round, but FXML part is one area that didn't get much attention in this round.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I really appreciate the flexibility in deadlines for iP tasks. Was extremely busy last week so it is nice that I can catch up over the weekend and this week.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good to hear the flexibility of deadlines helped you manage the schedule better.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I would say its a well put together course compared to the past CS mods, but if it could go a little slower will be better.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good to hear you like the structure. Regarding pace, yes it can feel a bit too fast -- we aim to finish topics by week 10 so that there is some time left for you to apply that knowledge in the tP final submission. Also see [my comment on 'The pace of the course'](#Q13).</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I am not a big fan of this kind of hybrid learning mode. It makes me feel like I’m not attending a university, but rather an online course. Perhaps you could teach the concepts in lectures instead of talking only about admin stuffs in f2f lectures. Reading through weekly materials on the website makes my eyes ache.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It is true that some students don't like this mode of delivery. Some of [my general responses](#general) are related to your comments.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>use videos for weekly content. topics are very wordy in the website and some stuff (eg learning of Git) would've been easier to understand using a video demo/explanation</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Noted. We'll try to add more videos.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Just getting used to git commands. The website still seems to be too cluttered with information (massive information dump), but the dropdowns and tabs should still be kept.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Point noted. See [my comment on 'Course website'](#Q6).</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Introduce a greenfield project which is more friendly for beginners like me with no software engineering experience.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, we want to cover both types. Hence the iP is greenfield and the tP is brownfield.</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>I feel that the workload for the course was quite high in the early weeks (weeks 2-3). I spend quite a bit of time on doing the iP tasks that are due on Friday. The worst was spending Monday-Thursday doing just CS2103T content. I believe a large reason was because of the high amount of content per week (take me at least 1+ days to just read through the content in "Topics". That plus the iP tasks have proven to be quite heavy for me. Coming into weeks 4, I feel that the amount of iP tasks have lighten by a significant amount which I think is good since more time is freed up for my other modules.
-
-However, this does not mean I find the module dreadful. I can't deny it feels very tiring to do all the required tasks every week but I am glad that I am learning something each week. The concept of just having to hit the minimal level to get the marks also help to reduce the workload (though there are times I want to do more but lack the time to do so).
-
-The thing I liked the most so far is the support that the teaching team has provided. This comes in the form of responding to forum questions and checking up with the students through emails based on the pre-course survey. In any modules, having a supportive teaching team like this is something I value a lot, not only does it encourage me to approach others more but it also allow me to place more focus on learning rather than grades. This is something that I think has been done well and I hope this will continue in the future as well.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Thanks for the detailed and balanced feedback. Good to hear you liked some aspects of the course. I agree the workload can be an issue. I'm glad you've used the flexibility of the course to 'somewhat' manage the issue of the workload. See [my comment on 'The workload'](#Q14). See [my comment on 'The pace of the course'](#Q13).</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>appreciate how the teaching team is very upfront with how the course is structured and what is expected of us in terms of effort</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
-</span></box>
-</td>
-</tr>
-<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Overall, i think the set-up of the module in terms of content, pedagogy, assessment weightage, methods are all good. However, there is a lack of concrete, specific feedbacks. I understand that alot of things in SWE are not black and white and is up to public consensus as well as following rules like coding standard. I also understand the part about learning through practice. However, it is very hard to improve without knowing what we did well or even better what we did wrong. To better illustrate using an example, for example git-standard, all we get is a green/red tag. Despite maintaining a consistent format (personal opinion of course) the tag some times is green sometimes is red. Which means  am left to guess which I dont think this is a good way to teach? Even if somehow the reason is for asssessment integrity, we should figure out ourselves, this contradicts the pass-fail aspect of iP and it being a way to improve ourselves before tP. I am sure we all can agree it is better to learn from mistakes than correct answers. Providing a coding standrad, quality and whatsoever is learning from correct answer. I do not know what i did wrong when something goes wrong and is left to guess. I think it is not difficult to add in the part where is violates the checking script as a log to feedback to us so we know what is done wrong/can be improved. Maybe the current way to force us to be more attentive to details as real world does not have answers or feedback (though not true as code review will tell us specifically what to do better). I think this current format can be maintained for example the first 4 weeks then for week 5, 6 concrete feedback can be released whenever things like, using the same example, git-standard violation occurs so that we can learn in time to not make the same mistake for tP otherwise, How am i different at week 1 and week 13 beside a few more educated guesses</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Thanks for the detailed and balanced feedback. You make a valid point. Learning by guessing is not a good way to learn. 
-
-
-
-Some comments on the example of the GitStandard: Compared to many other SE aspects, the Git standard is concrete and objective. There are only a handful of rules, as given in https://se-education.org/guides/conventions/git.html : start with a capital letter, use imperative mood, not longer than 72 chars, no fullstop. So, it should not be hard to figure out which of these rules is violated in the last five commits, when the tag truns red. More details of how we appraoch this Git Standard learning outcome (and why we do it that way) is among the general responses at the end of this page.
-
-Looking beyond the example of the Git Standard (which is relatively more objective), many other SE aspects such as code readability (beyond concrete rules in the git/coding standard) are subjective, and the point you raised in general applies even more to such aspects. We wish we can give more specific feedback on such aspects but there are challenges arising from manpower limitations and the need for fairness/uniformity, quality (wrong feedback is worse than no feedback) etc. Still, it is an aspect we want to do better in future. 
-
-In general, if you can't figure out why an item is red, just ask. In fact few other students asked in the forum why their GitStandard item is red and figured out the specifc reason with the help of others, earning forum participation credit in the process as well. 
+Yes, there is a peak of work around that period. Somewhat intentional, so that if  one falls behind, there is still enough time left to catch up before the final submission.
 
 Some of [my general responses](#general) are related to your comments.</markdown>
 </span></box>
@@ -1067,94 +644,301 @@ Some of [my general responses](#general) are related to your comments.</markdown
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>For videos on the website, it would be good if they could be expanded by default so that we don't miss them accidentally.</markdown>
+<markdown>I was sick in the first 2 weeks and hence didn't manage to start on the iP in the second week and haven't been able to catch up ever since then. I think the amount of work we have to do in one week is too much coupled with our other modules and missing just 1 week due to valid reasons causes the work to snowball</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Suggestion noted. We normally try to strike a balance between making them noticeable (e.g., with the red icon) and yet not take too much space (so that those who don't watch videos can easily scroll past them).</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Missing two entire weeks in all your courses at the very beginning is not going to be easy to compensate. Hope you managed to catch up during the recess week. </markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>being able to answer tutorials via zoom chat is actually very useful and helps me participate more</markdown>
+<markdown>NIL. I am enjoying this course a lot!</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).
-
-
-
- https://www.youtube.com/watch?v=aOiq8O5aXKg  :-p</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>instead of having to ask people to form teams. We get groups where there are already preexisting cliques.
+<markdown>I think individually the weekly tasks are manageable, but the quantity can get overwhelming. I am a bit annoyed at the teammates peer feedback since I missed the submission because I didn't realize that the email with the link was in my spam folder and didn't notice it until the deadline was over. 
+Regarding the feature specifications also, I think user stories so far is a good guiding tool for us to generate features, but I think class diagrams could be integrated in the idea generation as well since we learnt it recently?</markdown>
 
- 
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Not to worry, missing one TEAMMATES submission is not going to affect your marks.
 
-What's the point of additional pointless stress like this? It doesn't aid in any meaningful or fun learning, they are already going to face this when they go to work.</markdown>
-
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>I'm not sure if you are asking us to allow or disallow students forming their own teams.
-
-Both extremes have pros and cons so we try to take a middle ground where you _can_ form teams with others but within some constraints, so that in most cases you get to work with some people you know but also with some people you didn't know -- this is usually how it works in real SE projects too, in that a team usually has at least some colleagues (not necessarily 'friends') that you know from earlier but it can also have members you haven't come into contact before.</markdown>
+Some need a longer time to get familiar with UML -- so, we only use it to document the design at a later stage (i.e., we don't use UML diagrams as  blueprints).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Getting cooked by smurfers, my dream of getting A is getting further and further away together with my hopes of getting a Citadel intern</markdown>
+<markdown>The course is very interesting and the projects are worthwhile, but I don’t see the value in having such a large exam component to the course. I think the course would be better with maybe two small exams or tests instead of a large final at the end. Overall, considering the aims of the course, it would help emphasise the importance of the self-learning process and project-oriented nature of the field. </markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>:-o</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Interesting idea to have a mid-term and a final exam. Given that you are hitting the mid-term season right now, I don't know how many will like having one more mid-term to deal with though :-)
+
+More importantly, due to the iterative approach to covering topics, we have touched on many topcis by the halfway point but there wasn't enough time to go deeper into any, and to revisit them multiple times. This means there isn't a lot that can be tested in an exam format at this point of the semester. </markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Much fun and less stressful than I expected. :D</markdown>
+<markdown>Really love the automation, it is easier for us to track our progress</markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-). https://www.youtube.com/watch?v=aOiq8O5aXKg :-p</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>1. Navigating the course website does feel rather confusing and daunting, but only if I am not simply following the tasks week to week.
+<markdown>Even with the admin page, I can't even capture everything happening. I checked through the entire CS2103T website to make sure that I did what I needed to do, yet every week, something was missing. The missing things are not too serious (according to the weekly generated emails), but it just gave the impression that I did not care, when in fact I cared.</markdown>
 
-2. I think the less important information could benefit from having just 1 component, rather than 3 separate components. Or maybe include why there are 3 separate modals for it.
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes, it is possible to miss things occassionally. 
 
-3. I definitely think that some of W3's tasks should be placed with W4 as A-MoreOOP takes a large chunk of time to accomplish as I would imagine many would need to refractor a large amount of their code. In comparison, the workload for W4 is a lot lighter.
+You only need to check the four tabs (Admin|Topics|Project|Tutorial) of the current week, but yes, they have a lot o content that it is possible to miss a few items occassionally. If you did miss a few things, not to worry, our grading scheme is flexible enough to let you earn full marks even if you miss a few things occassionally.</markdown>
+</span></box>
+Some relevant FAQs are given below:
 
-4. Other than that, I am extremely grateful that the teaching team is putting in so much effort into running the module. Thank you so much!</markdown>
+{{ show_faq("whereIsEverything", is_compact=1) }}
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>1. You  are right about the website navigation being easier if you stick to the typical/standard schedule of tasks.
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>I understand the reasons for using zoom during tutorials (to encourage individual participation), but having f2f tutorials yet watching my TA through at a screen seems abit counterintuitive. Why not have all tutorials via zoom instead?</markdown>
 
-2. There are three alternative ways of showing less important info. The one that fits the surrounding context best wil be used.
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>The tutor's camera feed is for recording purposes only -- i.e., you are not really 'expected' to watch the tutor through the camera feed only. That said, yes, you will need to look at the screen some of the time to see the slides being shared or to type answers. </markdown>
+</span></box>
+Some relevant FAQs are given below:
 
-3. True. Some of [my general responses](#general) are related to your comments.
+{{ show_faq("tutorialWhyF2f", is_compact=1) }}
 
-4. You are welcome :-)
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>The workload for iP tasks in week 3 is significantly higher in the rest of the weeks, which is unusual since it is during Chinese New Year, when students visit their families and may not have time.</markdown>
 
-
-
-</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yeah, it is unfortunate a peak in workload coincided with CNY, but we don't have  much leeway in changing the schedule based on holidays, as the timing of holidays vary from semester to semester. For example, we can't push back everything by one week to make room for CNY break because that will cause the practical exam to spill over to the reading week. What we can do is to make the deadlines flexible enough so that students can catch up or move ahead as per their own schedules -- this flexiblity can accomodate not only holidays but also other things such as falling sick, personal emergencies, university events, etc. </markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>There is way too much to read for the weekly topics. It usually takes me about 4-5h just to read them.
+<markdown>I love how organized and accesible the website is in terms of finding all the content material and what we need to do for that given week, it is really helpful. Just a small problem that I experienced is with having the "GIT standard" bubble to turn green, i would appreciate knowing which of my commit messages failed the check and why. Else, love how this course is being taught!</markdown>
 
-The weekly task sometimes take too long to do. For example,  just the week 3 task took me around 15h to do, and this excludes reading the weekly topics, watching the weekly lecture, and doing the weekly quiz. So if you add them all up, the workload for one week exceeds 20h which is more than double of the average workload of a 4mc module.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear you found the website useful.
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Fair points. See [my comment on 'Course website'](#Q6). Also, some of [my general responses](#general) are related to your comments.</markdown>
+Don't worry about 'Git Standard'. If it is red, we'll give you a chance to make it green. For figuring out which commits are not compliant, you only need to check the last five commits. Note that the dashboard is anonymous -- so, we can't point to specific commits.</markdown>
 </span></box>
 </td>
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>IP's requirements can be a bit clearer, sometimes students do not know what is graded and what is not.</markdown>
+<markdown>There is simply too much to learn.
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Yes there may be things that are not clear about grading. When you encounter such a case, just ask, which can also help us identify information gaps in the website and fill them.</markdown>
+Despite the (really good) ways of arranging content, it still feels overwhelming even at week 6.</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Hope you manged to cope with the pace so far (although a bit fast). See [my comment on 'The pace of the course'](#Q13).</markdown>
 </span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>I find the lecture notes really helpful. </markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>Classes feel very stifled despite being physical because everyone is logged into Zoom for this. Having hybrid format for tutorials (only tutorial but physically presence required) feels like overcompensation for something and does not work properly.</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Agreed, the tutorials seems a bit stifling. We are trying to balance a few things here, resulting in some both pros and cons. Hope you can bear with us.</markdown>
+</span></box>
+Some relevant FAQs are given below:
+
+{{ show_faq("tutorialWhyZoomInF2f", is_compact=1) }}
+{{ show_faq("tutorialWhyF2f", is_compact=1) }}
+
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>The workload for week 3 of ip is relatively higher than any other weeks. Maybe this can be spread out better if possible?
+Also hope to have more tutorial regarding the front end part. Cause i don feel like i understand much from the JavaFX tutorial as it is mainly lots of code snippet with not much of explanation. Although it also encourages me to google for more details and stuff. However, i do hope we are given more time to learn about the front end, i understand that one week to learn the front end and implement the GUI is a bit rush, maybe thats why the tutorial for javaFX was designed to be that way?</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Agreed, there is a peak on workload around that time. See [my comment on 'The workload'](#Q14).
+
+Good to note your interest in learning GUI programming more. JavaFX, and GUI programming, are not core SE topics of this course; just incidental to the project. So, we can't dedicate a lot of time on them (that's why part 5 of the tutorial is optional). </markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>Very good admin work, one of the best i have seen so far in SoC. Deadlines are constantly reminded and sent to students (Good feature). Lectures and briefings are manageable as well but high workload comes from the projects. I spent a lot of time on the projects as compared to studying for CS2107/CS2105. However, really appreciate the work everyone is putting in by extending deadline for project,not penalising when we don't meet the deadlines and always giving feedback through email. </markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Thanks for your kind words about the admin side.
+
+Hope you manged to cope with the workload so far (you chose 8 Units as the estimated workload) and it will feel a bit less heavier as you progress. </markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>Very grateful for how well-structured the iP is.
+
+As someone who had worked with JavaFX years ago, I had almost completely forgotten everything about it and found the guide's approach to start from a code-only format instead of employing FXML/SceneBuilder to be a little puzzling. </markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad you felt the iP is well structured :-)
+
+Although not a core SE topic, we cover Java FX from this angle (i.e., go from plain old Java first, and introduce FXML later) to show how things work from gound up, and how FXML is simply a convenient syntax added on top, for controlling plain Java code. This is because in future we hope you go on to _build_ tools like JavaFX yourselves, and not merely stop at _using_ tools like JavaFX.</markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>I am thankful for this course, I feel like I am finally systematically learning many things that my CS friends have known since Y1!</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>I appreciate the extensive work that has gone into maintaining the github pages and keep things organised for us, but a minor feedback is that the lecture recordings should be put there too, so everything is centralised. The feedback emails are useful as well, because I would have otherwise missed some errors since I don't frequently monitor the participation dashboard. 
+
+The structure of the tutorial makes it the most dystopian tutorial I've experienced in four semesters. Telling people to switch to "Audio mode" makes it feel like we are bots, and having us face our own laptops more than people while in person is ironic. There is no actual discussion, or joy in learning. If this were a math course and all that matters is the answer and solution to get there, I can understand. But in a course that's supposed to teach us software engineering, I'm deeply disappointed in this structure. 
+
+ </markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It's a fair point about having everything centralised in the course website. Given the course website is public access, we need to restrict some resources to students enrolled in this course only. Quizzes are one of those things, and weekly briefings also, because they contain references to quiz questions.
+
+Noted your concerns about the tutorial format. You sound like somone who actively take part in tutorials and enjoys doing so. And yes, this format does take away some of that satisfaction away from such students, in an attempt to push students who normally NPC tutorials into engaging more with the tutorial tasks. And yes, our 'engage more with content' comes at a price of 'engage less with each other'. Given the team project we have, we hope you get other chances to engage with each other, especially if you are also taking in CS2101. 
+
+Also see [my comment on 'Tutorials quality in general'](#Q9).</markdown>
+</span></box>
+Some relevant FAQs are given below:
+
+{{ show_faq("tutorialWhyZoomInF2f", is_compact=1) }}
+{{ show_faq("tutorialWhyF2f", is_compact=1) }}
+
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>Would like course to be more about useful stuff like Git and less about reading diagrams</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Git is definitely useful, and is used a LOT in daily SE work. This also means you will inevitably learn it within a few months of an SE internship/job, even if you don't spend a lot of university time to learn it.
+
+There are times when knowing UML can give you an edge but it is not used a lot in the industry on a day-to-day basis, which means you will have less chance of learning it on-the-job. Hence, the need to learn it well now itself so that it takes root among your skills now itself. </markdown>
+</span></box>
+Some relevant FAQs are given below:
+
+{{ show_faq("umlIsItUsedInIndustry", is_compact=1) }}
+{{ show_faq("umlAreWeOverdoing", is_compact=1) }}
+
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>I think the iP increments can be lessen for each week, as it may be too overwhelming for some, especially during the Chinese New Year period on week 3. Other than that, this course has been really enjoyable and I see the usefullness of the things that we are learning which can be applied for our future carreer.</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Good to hear you are enjoying the course so far.
+
+Yeah, it is unfortunate a peak in workload coincided with CNY, but we don't have  much leeway in changing the schedule based on holidays, as the timing of holidays vary from semester to semester. For example, we can't push back everything by one week to make room for CNY break because that will cause the practical exam to spill over to the reading week. </markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>I'd select 10 units for the workload but it's not an option. I've been tracking the time I've spent on every mod in uni since y2s2 (I'm y4s2 now) and most typical 4 MC mods fall within the 70 to 100 hrs mark by the end of the semester, with light mods falling in 50 to 80 hrs. Currently I have logged 87h40m nearing the end of week 5 already for CS2103T. For context, some of my other most intense mods recorded include
+
+* CS2109S (22/23s2) - 165h (I've heard they've nerfed it quite a bit since)
+
+* LAJ2201 (23/24s1) - 145h
+
+* LAJ1201 (22/23s2) - 130h
+
+* CS4234 (23/24s1) - 125h
+
+* CS2107 (22/23s2) - 100h
+
+* CS3231 (24/25s1) - 95h
+
+* *LAJ2202 (23/24s2) - 55h before dropping with W at the end of week 5
+
+so CS2103T is on pace to exceed all my other mods so far.
+
+I'm managing the workload fine now though since I have very little workload in my other mods right now and got a bit of a lead in the iP during CNY, though that lead is almost completely gone now.
+
+The workload is really intense to me and I don't know how others that I ask seem to manage while spending less than half the time I do on the iP . The only optional task I really went out of my way to do was `A-CI`, so it's not that I'm trying to do extra work... 
+
+Maybe I'm approaching SWE the wrong way somehow, or I'm really just not cut out for SWE. I've always been really slow with implementation and struggled a lot back in my 2030s labs a lot. I remember spending 4 hrs on a single function in the InfiniteList lab last time. I don't know how to "get" SWE, I can't get it to click properly.
+
+I do think that the course website is decently well designed aside from being very bloated. I don't see anything wrong with the assignments either aside from the sheer amount and the quizzes possibly being annoying. Unlike with 2030s, working on the iP isn't painful per se, sometimes it feels enjoyable. But it feels really draining thinking about iP almost nonstop in the back of my head and constantly working on it for a month on top of other things.
+
+I'm not really sure where I was going with this I ended up just spilling my train of thought into this textbox</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Sorry to hear the workload feels too high for you. Also, I assume you see (based on the stats given above -- See [my comment on 'The workload'](#Q14)) 10 units is very far from the norm. So, there is something affecting your workload specficially. 
+
+You said you feel like it takes you too long to do SE tasks. Now, taking long is costly in terms of time (glad to hear you can still manage because of lighter loads in other courses) but not necessarily bad, if it is helping you to have a better foundation that will make you a better SWE in future. I don't know the exact cause, but from a handful of similar cases I have seen, a possible cause is looking for one perfect outcome and trying to get their in one shot. The remedy is to learn the art of moving in small incremental steps. I assume you watched the week 2->3 briefing but do take another look at the segment on 'always keeping the marshmallow on top' (at 46.50 mark). Another thing you can do is to  just observe another friend who seem to do SE stuff faster. SE is a craft that is often best learned through observation, espeicially the practical side of it. Buy that friend coffee and get him/her to do a pair programming session with you, in which he/she explain the thought process while coding, so that you can follow along and compare to your own coding practices.</markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>Love the website, makes learning this broad content very accessible and smooth. Best run course I have taken so far</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>Find it hard to put in time to properly learn things and often find myself taking shortcuts in order to keep up due to the very large breadth of this module </markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Do your best to aovid short cuts. As you know, one downside of taking shortcuts is, d on the type of shortcut, you can end up spending more time than you save from the shortcut e.g., not watching briefings and not reading instructions carefully can result in wasted time doing things the wrong way.</markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>It is a good and interesting course, and I love it!!</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Glad to hear that :-).</markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>Workload is too high :(</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Sorry to hear that. Hope it gets easier over time. See [my comment on 'The workload'](#Q14).</markdown>
+</span></box>
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>It would be better if the answers to the canvas quizzes be given so that I can see exactly which questions were answered wrongly and I have some form of record of my answers. I also prefer to check canvas for grade-related issues, just like for other courses. </markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>All quiz answers are released within a day after the submission deadline.</markdown>
+</span></box>
+Some relevant FAQs are given below:
+
+{{ show_faq("separateWebsite", is_compact=1) }}
+
+</td>
+</tr>
+<tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
+<markdown>I would appreciate it if content are grouped together, like theory/GitHub/.. or at least have a tag for easier searchup</markdown>
+
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>The 'shedule' page organizes content chronologically. When you want to access content by topic, you can go to the [Admin page](../admin/courseOverview.html) or the [Textbook](../se-book-adapted/index.html) page.</markdown>
+</span></box>
+Some relevant FAQs are given below:
+
+{{ show_faq("whereIsEverything", is_compact=1) }}
+
 </td>
 </tr>
 </tbody>
@@ -1170,7 +954,19 @@ The weekly task sometimes take too long to do. For example,  just the week 3 tas
 
 Given below are some general responses to points you guys (and past students) raised multiple times:
 
-* **iP workload is too high around week 3-4**: It is true that some increments in week 3 and 4 causes a peak
+* **The course pace is too slow in the first two weeks**: The pace is indeed slow in the first two weeks.
+  Yes, about 80-90% of the students can easily deal with a faster pace in the first two weeks. 
+  We have considered moving more stuff into the first two weeks but so far hesitated because
+  we know (based on hard data -- we monitor student progress through course tasks on a daily basis)
+  that at least 10-20% are 'slow starters' that take about 2-3 weeks to come up to speed.
+  The reasons for this slow start can vary, such as not doing well in previous programming courses, not starting on the course
+  till the first lecture date (which happens to be Friday), the place in the course not confirmed yet,
+  travel/accommodation issues etc. Regardless of the reason, and in spite that this is only 10-20%,
+  we hesitate to leave them behind at the very start, as that can make it harder for them to catch up.
+  So instead, we allow you to stay one week ahead of the schedule so that those who really want to make faster
+  progress can do so.
+  <br>
+  **The course load is too high around week 3-4**: It is true that some increments in week 3 and 4 causes a peak
   of workload during that period. However, increments causing that (e.g., A-Gradle, Level-10) need to be done
   around that time because they are prerequisites for later increments. Also, any peak in workload is better to
   appear around that period i.e., not too early in the semester but not close to the final submission so that
@@ -1203,14 +999,12 @@ Given below are some general responses to points you guys (and past students) ra
      During the iP period, we do the following, to take you towards the target LO level:
      1. First, specify the Git standard and ask students to follow.<br>
         Also, remind about it via a tutorial question.
-     1. After a while, indicate if the student is following if correctly via the dashboard
+     1. After a while, indicate if the student is following it correctly via the dashboard
         (i.e., `GitStandard` is red/green)
      1. At some point, specify what rules are violated
         (done during code quality feedback posted in iP issue tracker;  will be done one more time after the iP is over)
      1. At the end of iP, insist on correct format for the last five commits -- a student cannot earn 
-        full marks for the iP unless this requirement is met (affected students notified already).<br>
-        Note: This step was introduced this semester, in the hope of increasing the success rate of achieving this LO,
-        above the rate 96% that we achieved last semester.
+        full marks for the iP unless this requirement is met (affected students notified already).
 * **Why not have traditional lectures/tutorials?**:
   Yes, we do realize _some_ students prefer our lectures to cover content (the way traditional lectures do). 
   But based on our past surveys, the majority prefers to consume the course content at their own pace.<br>

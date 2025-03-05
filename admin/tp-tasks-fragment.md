@@ -902,7 +902,7 @@ How does the application react to such duplicate entries? Reject or accept? Why?
 
 **Possible errors:** A list of potential errors related to the feature (excluding the ones mentioned above already) %%e.g., editing a contact in a way that it becomes inconsistent with the rest of the data%%, and how the app responds to each error %%e.g., the error message%%.
 
-**Relevant UI mock-ups** (unless the UI will be exactly the same as AB3): %%they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary%%
+**Relevant UI mock-ups** (unless the UI will be exactly the same as AB3, in which case you should use AB3 screenshots in place of UI mock-ups): %%they can be hand-drawn or created using a tool such as PowerPoint, PlantUML, Figma, etc. -- they can be very low-fidelity mock-ups, as they are meant to be temporary%%
 
 ---
 
@@ -916,7 +916,8 @@ For example, it is fine to restrict the person name to a certain length and a ch
 
 * **You are welcome to (but not required to) follow AB3** when defining the behavior of the new features %%e.g., use similar command formats, input validation rules, error message formats%%.<br>
 
-{{ show_faq("tpAb3FeatureInMvpSpec") if cs2103 }}
+{{ show_faq("tpAb3FeatureInMvpSpec", is_compact=1) if cs2103 }}
+{{ show_faq("tpNeedForNewFeatureInMvp") if cs2103 }}
 
 * **Ensure feature-fit**: While doing this, ensure the features written by each member fit together to form a cohesive product, and meet other grading criteria of the _product design_ aspect. This might require several rounds of refinement. You are encouraged to peer-review feature details written by other team members and refine the overall product design together.
 

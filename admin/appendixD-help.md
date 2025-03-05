@@ -23,11 +23,13 @@
 
 * **Request to meet the instructor to solve the problem**: That can only work if the person is supposed to know how to solve _all_ technical problems, which is often not the case.
 
+{{ show_faq("tutorialWhyTutorCannotGiveTechHelp") }}
+
 ### <span class="text-success"><span class="text-white badge rounded-pill bg-success">{{ icon_like }}</span> **What to do:**</span>
 
 * **Double-check the given instructions**: Often, technical problems arise due to deviations in how you perform a step or a difference in your environment.{{ positive_icon }}
 
-* **Get your team to meet for a weekly work-together session**. When you do course tasks together, it is easy to compare with each other and figure out what deviation is causing the problem. That is, crowdsource your team first.
+* **Get your team to meet for a weekly work-together session**. When you do course tasks together, it is easy to compare with each other and figure out what deviation is causing the problem. That is, crowd-source your team first.
 
 * **Search**: It is very likely the answer already exists somewhere in the cyberspace. Almost every programming-related question has been answered in places like [stackoverflow](http://stackoverflow.com/). Don't give an opportunity for someone to ask you to [STFW](http://www.jibble.org/stfw/).
   Pay attention to the error message you encounter. Sometimes it also contains hints as to how to fix the problem. Even if not, a web search on the error message is a good starting point.<br>
