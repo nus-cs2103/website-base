@@ -1063,17 +1063,35 @@ Yes. A higher severity means the enhancement you suggested is of higher value/im
 =============================================================== -->
 
 <!-- =============================================================== -->
-<div id="faq-eMorePastPapersAndAnswers-Q">Can we have more past year papers and model answers?</div>
-<div id="faq-eMorePastPapersAndAnswers-A">
+<div id="faq-examSitNearChargingPoint-Q">My laptop battery is weak. Can I be put in a seat near a charging point?</div>
+<div id="faq-examSitNearChargingPoint-A">
+
+The standard operation procedure for digital exams: Some venues have charging points within reach of every seat. If that's not the case, you will be moved to another location with a charging point when your laptop power level reaches a low level. Pre-allocating you a seat with a charging point is not feasible, as the number of such requests can easily exceed the number of charging points in the venue.
+</div>
+<!-- =============================================================== -->
+<div id="faq-examMorePastPapersAndAnswers-Q">Can we have more past year papers and model answers?</div>
+<div id="faq-examMorePastPapersAndAnswers-A">
 
 You are welcome to try past exam papers available in the library and post answers in the forum to discuss with others. The teaching team will contribute to those discussions as well, and ensure you reach a reasonable answer.
 
 Caution: The scope of the course and the exam format evolve over time and some past questions may not be exactly in sync with the current semester.
 </div>
+<!-- =============================================================== -->
+<div id="faq-examWhyNoBackwardNavigation-Q">WHAT? Why aren't we allowed to go back to previous questions?</div>
+<div id="faq-examWhyNoBackwardNavigation-A">
+
+**Reasons:**
+
+1. **To minimize opportunities for collusion or over-the-shoulder copying** from others (the risk of the latter is higher in this type of exam due to the upright exam device screens being easily visible to other exam takers).<br>
+1. **Not unreasonable for the materials tested, nature of the questions, and the proficiency level expected** -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion, nor will you be able to 'answer the easy questions first and come back to harder questions later'.<br>
+  Note that you are allowed to go back and modify diagrams you drew in part 1, just like in a real life project scenario.
+
+Not to worry; we understand that this restriction can make the exam feel 'harder' than otherwise. We have the following **measures to compensate:**
+
+* **There is a buffer of two extra questions**, to cushion the impact of making a mistake in question, realizing it later, and not being able to go back to fix it. {{ bullet_tick_green }}
+* **There is a buffer of six extra minutes** (on top of the two extra questions), to cushion the impact of needing to spend extra time on a question to ensure the answer is correct before moving to the next question.
+* **The question difficulty is calibrated to match this mode of testing** i.e., the questions are easy enough that can be done one shot in a short time.
+* **Our tutorials prepare you for this mode of testing** (provided you do them sincerely), as our tutorials get you to answer a series of small MCQ-like questions and short-answer questions.
+</div>
 
 <!-- =============================================================== -->
-<div id="faq-efaqid-Q"></div>
-<div id="faq-efaqid-A">
-
-
-</div>

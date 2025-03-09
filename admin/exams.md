@@ -8,7 +8,7 @@
 
 <p class="lead">There is no midterm exam. Information about the final exam (which counts for {{ marks_exam }}% of the final grade) is given below.</p>
 
-{% if (current_week | int) < 11 %}
+{% if (current_week | int) < 8 %}
 <box type="important">
 
 Instructions below are from the previous semester. Will be updated closer to the exam.
@@ -57,60 +57,66 @@ The final exam has two types of questions:
    * All topics in the textbook, excluding level 4 topics (i.e., optional topics), are examinable. For your convenience, you can view the examinable portion of the textbook in [this printable view of the textbook](../se-book-adapted/print.html) (same as the PDF version of the textbook provided to you).
    * In addition, you are expected to be aware of SE-related things (i.e., tools, techniques, concepts) encountered while dong the iP and the tP %%e.g., Was testing technique X used in the tP?%%.<br>
      That is, you are expected to strengthen your SE _knowledge_ (not just hands-on skills) as you do the course projects -- in particular, to be able to connect theory to practice.
-1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not recommended</span>), which can connect to the NUS Wi-Fi network.<br>
+1. **Mode: F2F, using Examplify**. You ==need to **bring your own device**== (<span class="text-danger">iPads not suitable</span>), which can connect to the NUS Wi-Fi network.<br>
   Please use these resources if you haven't used Examplify in the recent past (the behavior may be different from the version you used last semester):
-   * [NUS Guides on Examplify](https://nus.atlassian.net/wiki/spaces/DAstudent/overview)
-   * try a few practice exams provided in the above two
-   * write to NUS CIT (citbox25@nus.edu.sg) if you run into any technical issues.
-   * if you do not have a working laptop for the exam, please contact IT Care itcare@nus.edu.sg directly for a laptop loan (for exam purpose only)
-1. ==**Examplify will use the ~~%%full%%~~ partial lock-down**== mode during the exam. That is, you will not be able to access Internet.<br>
-   **We aim to simulate a full lock-down** though. That is, you should access only the permitted applications/files in the computer.
-1. **The exam is open-book.**
-   * **Hard copies: Any written/printed documents are allowed**.
-   * **Soft copies: You may use ==only Adobe Acrobat Reader== to view ==only the _Exam Reference_ PDF file==.** #r#No other application or file## should be accessed during the exam. No other PDF software (e.g., Mac Preview, Edge), word processing software (e.g., MS Word), or note-taking software (e.g., Apple notes) are allowed either.
-     * The _Exam Reference_ contains the full textbook, UML reference sheet, and the coding standard will be available in Canvas.
-     * You are ==not allowed to annotate the _Exam Reference_ PDF file==. Use the provided copy as-is.
-
-   <box type="info" seamless>
-
-   The more stringent restrictions on the applications/file access is to simulate the full-lockdown mode that we intended to use for this exam. We had to switch to partial lockdown mode at the last minute due to an Examplify issue.
-
-   Why full-lockdown in the first place? Because of the risk of locally-installed LLMs affecting the integrity of the exam, NUS recommends using full-lockdown mode.
-
-   </box>
-
+   * See [NUS Guides on Examplify](https://nus.atlassian.net/wiki/spaces/DAstudent/overview).
+   * Try a few practice exams provided in the above link.
+   * Write to NUS CIT (citbox25@nus.edu.sg) if you run into any technical issues.
+   * If you do not have a working laptop for the exam, please contact IT Care itcare@nus.edu.sg directly for a laptop loan (for exam purpose only).
+1. ==**Examplify will use the full lock-down**== mode during the exam. That is, you will not be able to access Internet.
+   That is, you will not be able to access any applications/files in your computer while you are doing the exam.<br>
+   %%Reason: Because of the risk of locally-installed LLMs affecting the integrity of the exam, NUS recommends using full-lockdown mode.%%
+1. **Consider this as a 'cheat-sheet' exam**, as that is the best match to the nature of the questions in this exam. However, you will have the following additional flexibilities:
+   * **No limit on cheat-sheet page count.** You may bring any number of pages, and use any written/printed documents. %%For example, you may bring a printed copy of the entire textbook.%%
+   * **An _exam reference_ PDF file will be available inside Examplify**, containing the full textbook, UML reference sheet, and the coding standard.
+     * Caveat: Don't plan to refer to this file frequently. The Examplify UI is not optimized for quick opening/searching of big PDF files. So, use it only when your memory or the hard-copy cheat-sheets are not sufficient.
+     * A copy of this file will be provided to you in advance (in Canvas/files/handouts), in case you want to use it during exam preparations.
 1. **Not required to record the screen**.
-1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2{% if cs2103 %}, 3{% endif %}). We'll give you the password for opening each part at the exam, at the respective starting time of each part.<br>
+1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2). We'll give you the password for opening each part at the exam, at the respective starting time of each part.<br>
   You will be notified when they are ready for download (typically, around 24 hours before the exam start time).
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== %%(reason: at an exam of this scale, it is not practical to clarify such doubts on-the-spot on a timely manner)%%. We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
 <include src="exam-doubts-fragment.md" />
 
-
 9. **Bring your computer fully charged**, although some charging points will be available at the exam venue (so, bring the charger too).
-   * **FAQ:** My laptop battery is weak. Can I be put in a seat near a charging point?<br>
-     **A**: The standard operation procedure for digital exams: Some venues have charging points within reach of every seat. If that's not the case, you will be moved to another location with a charging point when your laptop power level reaches a low level. Pre-allocating you a seat with a charging point is not feasible, as the number of such requests can easily exceed the number of charging points in the venue.
+
+{{ show_faq("examSitNearChargingPoint") }}
+
 10. **You must start the exam within 5 minutes of receiving the password**.
 
 
 ## Structure/format
-<div tags="m--cs2103 m--tic2002 m--tee3201">
 
-* The exam will be divided into {{ 3 if cs2103 else 2 }} parts.
+<div tags="m--cs2103">
+
+* The exam will be divided into 2 parts.
 * Although the official duration of the exam is 1.5 hours, note that the actual exam might take up to 2 hours (due to technical issues). So, please don't schedule anything important right after the exam.
 
 ### Final exam - part 1
 
-* A quiz containing 16 MCQ questions. All questions are estimated to be equal size/difficulty.
-* You only need to answer 15 questions correctly to get full marks. The extra question is there to cushion you against careless mistakes or misinterpreting a question.
+* You will be asked to draw some UML diagrams, **to be hand-drawn on paper** (not on a tablet).<br>
+  You may use pencils if you wish.
+* Duration: 20 minutes
+* The questions will be in Examplify.
+* **Bring 1-2 sheets of A4 size papers when you come to the exam:**
+* These diagrams will not be graded directly. Instead, you will use them when answering part 2 of the exam.<br>
+  However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.<br>
+  For that purpose, the papers will be collected at the end of the full exam (i.e., after part 2 is over).
+</div>
+<div tags="m--cs2103">
+
+### Final exam - part 2
+
+* A quiz containing 32 MCQ questions. All questions are estimated to be equal size/difficulty.
+* You only need to answer 30 questions correctly to get full marks. The extra two questions are there to cushion you against careless mistakes or misinterpreting a question.
 * Questions will appear in random order.
-* You will not be able to go back to previous questions.<br>
-  %%Reasons:<br>
-  1\. To minimize opportunities for collusion or over-the-shoulder copying from others (the risk of the latter is higher in this type of exam due to the upright exam device screens being easily visible to other exam takers).<br>
-  2\. Not unreasonable for the materials tested, nature of the questions, and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion%%
-* Duration: **{{ 45 if tic2002 else 35 }} minutes** <span tags="m--cs2103">(recommended: allocate 2 minutes per question, which gives you a 3 minutes buffer)</span>
+* You #r#will not be able to go back to previous questions##.<br>
+
+{{ show_faq("examWhyNoBackwardNavigation") }}
+
+* Duration: **70 minutes** <span tags="m--cs2103">(recommended: allocate 2 minutes per question, which gives you a 6-minute buffer)</span>
 * Most MCQ question have a short-answer follow-up question.
-* Here is an example question. The answer is `a` and the answer to the follow-up question can be `OOP is only one of the choices for an SE project`.
+* Given below is an example question. The answer is `a` and the answer to the follow-up question can be `OOP is only one of the choices for an SE project`.
 <div class="indented-level2">
 
 <panel header="Sample question 1" expanded >
@@ -148,31 +154,6 @@ E. Gantt charts.
 <p/>
 </div>
 
-<div tags="m--cs2103">
-
-### Final exam - part 2
-
-* You will be asked to draw some UML diagrams, **to be hand-drawn on paper** (not on a tablet).<br>
-  You may use pencils if you wish.
-* Duration: 20 minutes
-* The questions will be in Examplify.
-* **Bring 1-2 sheets of A4 size papers when you come to the exam:**
-* These diagrams will not be graded directly. Instead, you will use them when answering part 3 of the exam.<br>
-  However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.<br>
-  For that purpose, the papers will be collected at the end of the full exam (i.e., after part 3 is over).
-</div>
-
-### Final exam - part {{ 3 if cs2103 else 2 }}
-
-* Similar to part 1 (e.g., 16 questions, same length).{% if cs2103 %}
-* Some questions will refer to the UML diagrams that you drew in part 2.
-* <span class="text-danger">After the part 3 password has been released, you are not allowed to update the UML diagrams, _until_ you start the part 3.</span><br>
-  %%Reason: to prevent students delaying the start of part 3 to gain extra drawing time.%%
-* You _may_ modify your UML diagrams _after_ you have started part 3 on Examplify.<br>
-  %%Reminder: diagrams are not graded.%%
-* You will be able to view part 2 questions through the Examplify PDF attachment, in case you want to refer to them again during part 3 %%e.g., to check your diagram against the code given in the question%%.
-{% endif %}
-
 </div>
 
 ## Exam preparation resources
@@ -199,8 +180,8 @@ The following exam resources will be **available from the start of week 13**.
         * Do the mock exam (to get used to the software and question structure) before the practice exam.
     * Where to find it: on Examplify. Password: `Hello123`
     * Model answers are available on {{ handouts_link }}.
-* **Some extra practice questions** for exam part 2 are in
-  {{ handouts_link }} -- look for the file `Additional practice questions for part 2.pdf`
+* **Some extra practice questions** for exam part 1 are in
+  {{ handouts_link }} -- look for the file `Additional practice questions for part 1.pdf`
 * **All weekly quizzes** will be reopened on [Canvas Quizzes]({{ url_canvas_home }}/quizzes).
   You can retake them to self-test your knowledge (note: retaking them will not affect participation marks).
 * **Recordings of all tutorial Zoom sessions** should be available in a file named `Recordings.docx` inside
@@ -215,8 +196,7 @@ The following exam resources will be **available from the start of week 13**.
   * Exam Reference PDF
   * Topics infographic (shows how the various topics fit into the big picture)
 
-
-{{ show_faq("eMorePastPapersAndAnswers") }}
+{{ show_faq("examMorePastPapersAndAnswers") }}
 
 </div>
 

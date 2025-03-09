@@ -131,7 +131,9 @@
 
 ## FAQs on: Exam
 
-{{ show_expanded_faq("eMorePastPapersAndAnswers") }}
+{{ show_expanded_faq("examMorePastPapersAndAnswers") }}
+{{ show_expanded_faq("examSitNearChargingPoint") }}
+{{ show_expanded_faq("examWhyNoBackwardNavigation") }}
 
 </div>
 
