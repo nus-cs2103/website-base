@@ -28,6 +28,12 @@
   <li><a href="{{baseUrl}}/schedule/timeline.html" class="dropdown-item"><md>**Full Timeline**</md></a></li>
 {% for week in range(1, 14) %}
 <li><a href="{{ baseUrl }}/schedule/week{{ week }}/index.html" class="dropdown-item"> <md>**Week {{ week }}** [{{ get_week_start_date(week | int, format_normal) }}] {% if current_week == week %} :fas-arrow-circle-left:{% endif %}</md></a></li>
+{% if current_week == week %}
+<li><a href="{{ baseUrl }}/schedule/week{{ week }}/admin.html" class="dropdown-item">&nbsp;&nbsp;├ Week {{ week }}: {{ icon_tab_admin_info }} <md> **Admin**</md></a></li>
+<li><a href="{{ baseUrl }}/schedule/week{{ week }}/topics.html" class="dropdown-item">&nbsp;&nbsp;├ Week {{ week }}: {{ icon_tab_topics }} <md> **Topics**</md></a></li>
+<li><a href="{{ baseUrl }}/schedule/week{{ week }}/project.html" class="dropdown-item">&nbsp;&nbsp;├ Week {{ week }}: {{ icon_project }} <md> **Project**</md></a></li>
+<li><a href="{{ baseUrl }}/schedule/week{{ week }}/tutorial.html" class="dropdown-item">&nbsp;&nbsp;└ Week {{ week }}: {{ icon_tab_tutorial }} <md> **Tutorial**</md></a></li>
+{% endif %}
 {% endfor %}
   </dropdown>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
