@@ -593,7 +593,9 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 
 <div class="indented-level1">
 
-*  **You no longer need to keep the text-based UI** after adding a GUI (although you are welcome to). Similarly, there is no need to keep the I/O redirection style automated testing added via `A-TextUiTesting`) anymore -- that technique is suited for text UIs only.{{ bullet_info }}
+* **Follow the sample [build.gradle given in JavaFX tutorial](https://se-education.org/guides/tutorials/javaFxPart1.html#setting-up-java-fx)** closely, instead of following suggestions from AI tools.<br>
+  %%Reason: As there are different ways of achieving this, following AI tools' advice can result in a 'Frankenstein' solution (i.e., a mixture of different approaches) that might work on your computer but might not work in other OS'es.%% {{ bullet_important_red }}
+* **You no longer need to keep the text-based UI** after adding a GUI (although you are welcome to). Similarly, there is no need to keep the I/O redirection style automated testing added via `A-TextUiTesting`) anymore -- that technique is suited for text UIs only.{{ bullet_info }}
 * **Is the `bye` command still needed**, now that the GUI can be closed in other ways?<br>
   Yes, we recommend keeping it. Reason: Being able to close the app by typing a command is consistent with the app's CLI-style <tooltip content="i.e., User Experience">UX</tooltip>.{{ bullet_Q }}
 </div>

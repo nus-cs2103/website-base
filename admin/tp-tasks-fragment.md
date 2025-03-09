@@ -812,7 +812,7 @@ See [here](https://se-education.org/guides/tutorials/ab3AddRemark.html) for deta
 
 If you are an experienced programmer, you can add a different command than the one given in the tutorial.
 
-**Submission:** Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork's `tutorial-adding-command` branch to your team repo's `master` branch. You may close the PR soon after.
+**Submission:** Do your changes in a branch named `tutorial-adding-command`, push to your fork, and create a PR from your fork's `tutorial-adding-command` branch to your team repo's `master` branch. You may close the PR soon after (i.e., no need to merge the PR).
 
 {{ show_faq("tpTestsForTutorial") }}
 </panel>
@@ -1056,15 +1056,15 @@ At the end of the project, each member needs to create a Project Portfolio Page 
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.
   * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give a few representative use cases (textual form) that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%
-  * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>:
-    Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.
+  * <trigger trigger="click" for="modal:v10-nfr">**Non-functional requirements**</trigger>: List whichever NFRs you think are reasonable for your product %%e.g. performance requirements, usability requirements, scalability requirements, etc.%%<br>
+    {{ icon_tip }} Some of the given [project constraints](tp-constraints.md) can be framed as NFRs (e.g. `Constraint-Portable`) while others are purely for pedagogical/course-admin purposes (e.g., `Constraint-Incremental`).
   * <trigger trigger="click" for="modal:v10-glossary">**Glossary**</trigger>: Define terms that are worth recording.
 
 <box type="info" seamless>
 
 **The above DG sections should cover the _full requirements_ of the product**, some of which might not even get implemented by the end of this semester i.e., do not limit to just the requirements you intend to implement in the next iteration. Reason: All identified requirements need to be documented for future reference.
 
-Furthermore, these sections will be graded at the final project evaluation, and any bugs in the content can cost you marks at that point. The panel below gives some relevant DG bug examples you can lookout for:
+Furthermore, these sections will be graded at the final project evaluation, and any bugs in the content can cost you marks at that point. The panel below gives some relevant DG bug examples you can look out for:
 
 <panel header="Admin {{ icon_embedding }} Tp Grading → Examples of DG Bugs (extract)" minimized>
 

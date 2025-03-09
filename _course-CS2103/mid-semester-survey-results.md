@@ -38,7 +38,7 @@ Poor<br><span class="text-info bg-info">..</span><span class="text-light bg-ligh
 
 
 Good to see most of you found the course briefing videos useful. Previously, course admin info used to be
-covered during weekly briefings, but since an year ago we started extracting them out as a separate
+covered during weekly briefings, but since a year ago we started extracting them out as a separate
 category of videos called 'course briefing' videos. 
     
 </div>
@@ -897,7 +897,7 @@ You said you feel like it takes you too long to do SE tasks. Now, taking long is
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <markdown>Find it hard to put in time to properly learn things and often find myself taking shortcuts in order to keep up due to the very large breadth of this module </markdown>
 
-<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Do your best to aovid short cuts. As you know, one downside of taking shortcuts is, d on the type of shortcut, you can end up spending more time than you save from the shortcut e.g., not watching briefings and not reading instructions carefully can result in wasted time doing things the wrong way.</markdown>
+<box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Do your best to aovid short cuts. As you know, one downside of taking shortcuts is, depending on the type of shortcut, you can end up spending more time than you save from the shortcut e.g., not watching briefings and not reading instructions carefully can result in wasted time doing things the wrong way.</markdown>
 </span></box>
 </td>
 </tr>

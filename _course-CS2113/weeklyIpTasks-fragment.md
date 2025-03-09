@@ -56,9 +56,9 @@ week7: [
     {id: 'A-JavaDoc', title: 'JavaDoc'}
   ]},
   {id: 'set_up_website'},
-  {id: 'submit_the_final_version', deadline:  get_date(date_w7_start, 11)}
+  {id: 'submit_the_final_version', deadline:  get_date(date_w7_start, 4)}
 ],
 week8: [
-  {id: 'evaluate_peer_ips', deadline: get_date(date_w7_start, 18), graded: true}
+  {id: 'evaluate_peer_ips', deadline: get_date(date_w7_start, 11), graded: true}
 ]
 } %}
