@@ -28,12 +28,6 @@ When working with others, especially in a large class such as {{ course_pair }},
 
 </div>
 
-<div id="policy-teamSize">
-
-As most of the work is graded individually, team sizes of 4 or 6 are not expected to affect your grade. While managing larger teams is harder, larger teams have more collective know-how, which can cancel each other. We'll give some consideration when grading 3-person teams.
-
-</div>
-
 <div id="policy-workDistribution">
 
 As most of the work is graded individually, it is OK to do less or more than equal share in your project team.

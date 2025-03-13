@@ -1,7 +1,14 @@
 {% from "common/admin.njk" import show_admin_page with context %}
+{% from "common/macros.njk" import embed_topic with context %}
+
 
 {% call show_admin_page("appendixF-teamworkIssues") %}
+<frontmatter>
+pageNav: 5
+</frontmatter>
 <div id="main">
+
+## In general ...
 
 **First, some general principles related to handling teamwork issues:**
 
@@ -23,6 +30,7 @@
 * Also note that in real software projects, it is not unusual to have less-than-100% members because some people need to divide their time between multiple projects. Treat this as a similar case and adapt accordingly.
 </box>
 
+## More specifically ...
 
 **Now, some common problems and guidance on how to deal with them:**
 
@@ -32,7 +40,7 @@
 </box>
  <!-- ============================================================================= -->
 <div id="team-problems-mia-member">
-<panel type="danger" header="**CP1. MIA team member**" expanded>
+<panel type="danger" header="##### CP1. MIA team member" expanded>
 
 **Problem:** A team member is MIA from the start, or for an extended period of time.
 
@@ -48,7 +56,7 @@ If the missing member reappears later (by which time you may have redistributed 
 
 **Guidance for the member:** If you need to be MIA for a period of time, inform the team when you hope to be back in action. You are welcome to, but not required to, inform the team the reason for the absence (as this may be personal).
 </panel></div><!-- ============================================================================= -->
-<panel type="danger" header="**CP2. Low-performing member**" expanded>
+<panel type="danger" header="##### CP2. Low-performing member" expanded>
 
 **Problem:** A member is contributing less than others OR a member is available less than others OR a member is less capable than others.
 
@@ -67,7 +75,7 @@ Once you identified a low-performing member, you will need to adapt your project
 * Promise only what you can do, and do what you promised, on time, and up to the expected quality. Sloppy work or late work is worse than no work.
 
 </panel> <!-- ============================================================================= -->
-<panel type="danger" header="**CP3. Low-quality contributions**" expanded>
+<panel type="danger" header="##### CP3. Low-quality contributions" expanded>
 
 **Problem:** A member is producing low quality work.
 
@@ -88,7 +96,7 @@ Appreciate when others point out quality problems of your work. They are helping
 If the team refused to accept your work, you can still earn marks for that code. You are allowed to submit such 'rejected' code for grading.
 
 </panel> <!-- ============================================================================= -->
-<panel type="danger" header="**CP4. Technically-weak members**" expanded>
+<panel type="danger" header="##### CP4. Technically-weak members" expanded>
 
 **Problem:** A team member is not technically strong as the others.
 
@@ -106,7 +114,7 @@ If the team refused to accept your work, you can still earn marks for that code.
 
 
 </panel> <!-- ============================================================================= -->
-<panel type="danger" header="**CP5. Work delivered late**" expanded>
+<panel type="danger" header="##### CP5. Work delivered late" expanded>
 
 **Problem:** A member delivers work late, or too close to the deadline, causing extra work and extra stress on the rest of the team, not to mention the risk of breaking the product due to last-minute changes.
 
@@ -119,7 +127,7 @@ If the team refused to accept your work, you can still earn marks for that code.
 If the team refused to accept your work, you can still earn marks for that code. You are allowed to submit such 'rejected' code for grading.
 
 </panel> <!-- ============================================================================= -->
-<panel type="danger" header="**CP6. No one is taking charge**" expanded>
+<panel type="danger" header="##### CP6. No one is taking charge" expanded>
 
 **Problem:** The project is not moving forward because no one is taking charge. Everyone seems to be waiting for someone else to take charge.
 
@@ -127,7 +135,7 @@ If the team refused to accept your work, you can still earn marks for that code.
 
 
 </panel> <!-- ============================================================================= -->
-<panel type="danger" header="**CP7. Rude member behaviours**" expanded>
+<panel type="danger" header="##### CP7. Rude member behaviours" expanded>
 
 **Problem:** A team member is behaving rudely, using abusive language, raising voice unnecessarily, etc.
 
@@ -139,6 +147,32 @@ If the team refused to accept your work, you can still earn marks for that code.
 ----
 
 **Guidance for the member:** Unprofessional or uncivil behavior will affect your marks, and can lead to disciplinary action.
+
+</panel> <!-- ============================================================================= -->
+<panel type="danger" header="##### CP8. A member drops the course halfway into the project" expanded>
+
+**Problem:** A team member drops the course halfway into the project.
+
+**Guidance for the team:** Losing team members (or new members being added) in the middle of a project is not ideal but also not uncommon in a real project. So, consider this as a valuable learning opportunity. That said, if the change causes a significant disruption, we will take that into account when grading.
+
+Suggested steps:
+
+* Adjust project targets accordingly (e.g., cut down targets).
+* Redistribute any essential work assigned to that member. New assignees can cut down on less-important work that were previously assigned to them, to make room for this additional work.
+* If that member has done some work already, you have two options:
+  * Some of you take over and continue that work: In this case, you (i.e., the new assignee) should not take credit for work done by the previous assignee (but you can take credit for additional work that you did _after_ taking over). However, someone in the team still needs to take responsibility for any bugs in that work (i.e., you cannot blame bugs on someone who is no longer part of the team -- the current team is responsible for the quality of the _entire_ product).
+  * Remove the work done by the outgoing member: In that case, the person(s) doing the removal can take credit for the extra effort required for removing the work.
+
+----
+
+**Guidance for the member:** If you anticipate that you might have to drop the course later, keep the team informed about this possibility, and try to avoid taking on must-do tasks. Inform the team immediately when the decision to drop/continue is confirmed.
+
+</panel> <!-- ============================================================================= -->
+<panel type="danger" header="##### CP9. The team size is smaller/larger than the team size" expanded>
+
+Refer the following policy:
+
+{{ embed_topic(baseUrl+"/admin/policies-fragment.md#policy-teamSize", "Admin " + icon_embedding + " Polices:  **Policy on grading smaller/larger teams**", "2", indent="0") }}
 
 </panel> <!-- ============================================================================= -->
 </div>

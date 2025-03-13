@@ -6,6 +6,7 @@ Heads up! As the following lecture (not this week's one) falls on a public holid
 ==Attendance is compulsory==, as the lecture slot is also used for the Practical Exam Dry Run (<span class="text-danger">graded</span>).
 
 </box-->
+{% if semester == 'AY2425S1' %}
 <box type="important" light>
 
 Due to holidays, **this week's tutorial is released as a pre-recorded video**.
@@ -25,8 +26,10 @@ What you need to do:
 **:fas-clock: Period to watch the video** (to be ==counted for tutorial participation==): {{ get_date(date_w10_start, 1, time="")}} -- <span class="text-danger">{{ get_date(date_w10_start, 7, time="23:59")}}</span>
 -->
 </box>
+{% endif %}
+
 {% if ped_week == '11' %}
-<box type="info" header="****Next week's briefing (and the PE Dry Run)****">
+<box type="info" header="****This Friday's briefing (and the PE Dry Run)****">
 
 Heads up! ==Attendance is compulsory== for the weekly briefing coming up on {{ get_date(date_w11_start, 4, time='') }}, as we use that time slot for the [Practical Exam Dry Run](../../admin/tp-ped.md) (<span class="text-danger">graded</span>).
 
