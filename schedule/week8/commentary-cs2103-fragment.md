@@ -1,4 +1,5 @@
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
+{% from "common/macros.njk" import show_faq with context %}
 
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("[Revisiting] Drawing Class/Object Diagrams - Basics", reuse=false) %}
@@ -24,6 +25,13 @@ The relevant UML topics are repeated further down in this page, for reference. I
 {{ panopto("fe9d362e-4e3d-4c30-81ec-ac5a00cf8d95", desc="Drawing sequence diagrams (basic) - `Item` creation") }}
 {{ panopto("3e47c3c3-60db-4e2f-a15f-ac4100ce10c4", desc="Drawing sequence diagrams (intermediate) - `TaskList#generateTask()`") }}
 {{ panopto("c4856a68-4c30-4f9c-8efa-ac6800d581f2", desc="Drawing sequence diagrams (intermediate) - create `Quote`") }}
+
+
+**:thinking: So, UML diagrams should match the code _exactly_ ...?**{.text-info} Not exactly. If that was the case, we could have auto-generated the diagrams from the code.<br>
+In the context of this course, we draw UML diagrams to document (or discuss) the design that was (or will be) implemented. Therefore, the **UML diagram should aim to represent the _intended_ design, rather than show a literal translation of the code**. %%For example, an instance level variable in the code can hold `null` or one object, which seems like a multiplicity of `0..1`. However, in the actual design, it could have been intended as a multiplicity of `1`, and if so, the UML diagram should show a multiplicity of `1`.%%
+
+{{ show_faq("umlWhyNoCorrespondenceBetweenUmlAndCode") }}
+{{ show_faq("umlHowToFindIntendedDesignFromCode") }}
 {% endcall %}
 
 <!-- ---------------------------------------------------------------------------- -->

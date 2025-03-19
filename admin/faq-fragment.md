@@ -91,6 +91,24 @@ Here are some options you can consider:
 Caution: For course deliverables, it is best not to use UML notations not covered in the course.
 </div>
 <!-- =============================================================== -->
+<div id="faq-umlWhyNoCorrespondenceBetweenUmlAndCode-Q">Why can't the code and the UML correspond to each other _exactly_, in both directions?</div>
+<div id="faq-umlWhyNoCorrespondenceBetweenUmlAndCode-A">
+
+There are several reasons:
+
+* Some design concepts do not have direct translations to a mechanism in the programming language %%e.g., most programming languages do not have a direct way to implement a bidirectional association%%.
+* Some programming language constructs might not have corresponding UML constructs %%e.g., lambdas%%
+* Some implementations can choose to deviate from the intended design due to other valid reasons such as performance, code clarity, convenience etc.
+</div>
+<!-- =============================================================== -->
+<div id="faq-umlHowToFindIntendedDesignFromCode-Q">When drawing UML diagrams from the code, how to find the 'intended' design from the code?</div>
+<div id="faq-umlHowToFindIntendedDesignFromCode-A">
+
+In a real project, in most cases, the person drawing the diagram is likely to be the same person who wrote the code, which means that person is likely to know the intended design already. If this is not the case, one can try to approximate the intended design based on one's own domain knowledge, consulting domain experts, from other sources such as project documentation (and code comments).
+
+In an exam question, the missing info will be provided as part of the question, _if_ it is relevant to the expected answer.
+</div>
+<!-- =============================================================== -->
 <div id="faq-narrowProjectScope-Q">Why very narrow project scope?</div>
 <div id="faq-narrowProjectScope-A">
 
@@ -481,13 +499,13 @@ Yes. If the submission deadline is not over yet, use the same link to update the
 <div id="faq-dgAddNewUml-A">
 
 **You are welcome to add new content/diagrams**, but it is not a strict requirement. Consider costs %%(e.g., the effort required to add and maintain new content)%% vs benefits %%(how much the new content helps future developers)%% and decide accordingly.
-**However, everyone is expected to contribute to the DG**, which means you should divide the DG-update work among team members.
+**However, everyone is expected to contribute to the DG (and contribute to UML diagram updates)**, which means you should divide the DG-update work among team members.
 </div>
 <!-- =============================================================== -->
 <div id="faq-noEffectOnUml-Q">What if the features I added don't affect UML diagrams?</div>
 <div id="faq-noEffectOnUml-A">
 
-* We expect all students to have _some_ experience working with DG UML diagrams, to verify that you are able to handle similar diagramming tools in the future.
+* **We expect all students to have _some_ experience working with DG UML diagrams**, to verify that you are able to handle similar diagramming tools in the future.
 * If your code changes don't require updates to existing UML diagrams or adding new diagrams,
   * you can document a 'proposed' feature or a design change that you might do in a future iteration, which gives you an opportunity to add some UML diagrams.
   * Also take a closer look at the features you added -- not needing changes to UML might (but not always) be a sign that the features you added didn't go deep enough. In the context of the tP, it is better to add one big feature, rather than add many small insignificant features.
@@ -914,6 +932,15 @@ Not a good idea. Given below are three reasons each of which can be reported by 
 * They often don't follow the standard UML notation (e.g., they add extra icons).
 * They tend to include _every_ little detail whereas we want to limit UML diagrams to important details only, to improve readability.
 * Diagrams reverse-engineered by an IDE might not represent the actual design as some design concepts cannot be deterministically identified from the code %%e.g., differentiating between multiplicities `0..1` vs `1`, composition vs aggregation%%.
+</div>
+<!-- =============================================================== -->
+
+<div id="faq-tpLowMidtermPeerEvaluations-Q">What if I don't agree with the tP peer evaluations I received for the midterm peer evaluation?</div>
+<div id="faq-tpLowMidtermPeerEvaluations-A">
+
+This round is for your info only (i.e., no direct impact on grades). After the final tP peer evaluation session (which is done at the end of the semester, and can affect the tP grading) results are published, you will get a chance to submit your objections if you don't agree with the evaluations you received.
+
+{{ icon_tip }}eceiving 'lower than expected' feedback early is a good thing; it shows in which areas your team members are less-happy about your contribution/conduct, while there is still time to take corrective actions. It is much worse when team members give good ratings about aspects they are unhappy about, just to avoid conflict, and hold back the negative feedback until the project is over -- in such cases you will be taken by surprise (hey! I thought everything was fine!!) with no time left to rectify the problem.
 </div>
 <!-- =============================================================== -->
 

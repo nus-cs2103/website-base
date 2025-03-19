@@ -108,7 +108,7 @@
   * **Break diagrams into smaller fragments** when possible.
     * If a component has a lot of classes, consider further dividing into subcomponents (e.g., a Parser subcomponent inside the Logic component). After that, subcomponents can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.
     * You can use `ref` frames to break sequence diagrams to multiple diagrams.{% if cs2103 %} Similarly, `rake`s can be used to divide activity diagrams.
-  * **Stay at the highest level of abstraction** possible e.g., note how <trigger trigger="click" for="modal:ipWeek10-archiSd">this sequence diagram</trigger> shows only the interactions between architectural components, abstracting away the interactions that happen inside each component.{% endif %}
+  * **Stay at higher levels of abstraction** e.g., note how <trigger trigger="click" for="modal:ipWeek10-archiSd">this sequence diagram</trigger> shows only the interactions between architectural components, abstracting away the interactions that happen inside each component.{% endif %}
   * **Use visual representations** as much as possible. E.g., show associations and navigabilities using lines and arrows connecting classes, rather than adding a variable in one of the classes.
   * For some more examples of what NOT to do, see <trigger trigger="click" for="modal:ipWeek10-umlExamples">here</trigger>.
 * **Integrate diagrams into the description.** Place the diagram close to where it is being described.
@@ -118,7 +118,7 @@
 
 <modal large header="UML Diagrams: Negative Examples " id="modal:ipWeek10-umlExamples">
 
-  These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
+  These class diagrams seem to have lots of member details, which can get outdated pretty quickly:<br>
   <pic eager src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750"></pic><br>
   <pic eager src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></pic>
 

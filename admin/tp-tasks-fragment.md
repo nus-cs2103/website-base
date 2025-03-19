@@ -14,10 +14,10 @@
 <box type="warning" seamless>
 
 **The goal of freezing features in the pre-release iteration is to minimize latent bugs** by avoiding behavior changes unless they are strictly necessary, so that we minimize the possibility of introducing more bugs.<br>
-In a real project, minor or critical changes might be allowed even near a deadline -- but in the tP, it is hard to enforce such a rule objectively. Instead, we enforce a quantitative limit that is easier to enforce: <span class="text-danger">**No more than 10% of the functional code is allowed to be changed during the iteration {{ version_final }}**</span>. Finer details of this limit is given below:
+In a real project, minor or critical changes might be allowed even near a deadline -- but in the tP, it is hard to enforce such a rule objectively. Instead, we enforce a quantitative limit that is easier to enforce: <span class="text-danger">**no more than 10% of the functional code is allowed to be changed during the iteration {{ version_final }}**</span>. Finer details of this limit are given below:
 
 * **The feature freeze ==starts at 10am on the PE-D day==.** Any code updated after that deadlines is counted against the feature freeze.
-* **The limit applies per member**. That is, we compare the amount of code attributed to each member (as per the tP code dashboard) against the portion of that code that was changed during the feature freeze. Any penalty for violating the feature freeze will be applied to that member only.
+* **The limit is applied per member**. That is, we compare the amount of code attributed to each member (as per the tP code dashboard) against the portion of that code that was changed during the feature freeze. Any penalty for violating the feature freeze will be applied to that member only.
 * **The penalty for violating the feature freeze will be case-by-case basis**, but not smaller than `-2`.
 * **The limit applies to functional code only** i.e., changes to files inside the `src\main\java` folder. The feature freeze doesn't apply to test code, documentation, or non-code files (e.g., images).<br>
   There is no limit on the nature of changes you can do to functional code, but we **strongly recommend to choose based on,**<br>
@@ -1441,7 +1441,7 @@ Note that the product you deliver at the end of this iteration must be working a
 </div>
 
 * {{ icon_team }} **Manage the iteration** `{{ version_mvp }}`, and reach the milestone `{{ version_mvp }}` (which delivers product version `{{ version_mvp }}`)
-* {{ icon_team }} **Aim to delivery on time**, as that is linked to our tP learning outcome of this iteration. This means you need to monitor progress, and course-correct as you go.
+* {{ icon_team }} **Aim to deliver on time**, as that is linked to our tP learning outcome of this iteration. This means you need to monitor progress, and course-correct as you go.
   * Revise the MVP design further, if needed. If you think some of the ongoing work intended for the current iteration may not finish in time, you can reassign them to a future iteration, provided they are not _essential_ for the `{{ version_mvp }}` %%(i.e., you can still get a 'working product' without them)%%.
   * <tooltip content="e.g., change scope">Revise</tooltip> or <tooltip content="i.e., reassign to a future milestone">reschedule</tooltip> issues/PR accordingly.
 * **Do a release on GitHub**, when the product `{{ version_mvp }}` is ready. Requirements:
@@ -1507,7 +1507,10 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 </panel>
 <p/>
 </div>
-{{ show_faq("tpWhyUpdateDiagramsEarly") }}
+{{ show_faq("tpWhyUpdateDiagramsEarly", is_compact=1) }}
+{{ show_faq("dgAddNewUml", is_compact=1) }}
+{{ show_faq("noEffectOnUml", is_compact=0) }}
+
 </div>
 {#====================================================================================================================#}
 <span id="heading_do_an_informal_demo">{{ icon_team }} Do an informal demo of {{ version_mvp }}</span>
@@ -1550,7 +1553,7 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 </box>
 
 * **Decide the scope:** Start by deciding what features you would include in the final product !!if you had only one more week to deliver!! them. In this iteration, aim to deliver at least a <popover content="i.e., the feature is working and accessible to users, although it might not handle all the corner cases, and the UI/UX might not be fully polished yet">fully-fledged (albeit not-yet-polished)</popover> version of those features.<br>
-  **:thinking: What's the hurry to add _all_ features right now?** We will be enforcing a strict _feature freeze_ at the end of `{{ version_penultimate }}` (more details in the panel below). Given you also need time to polish the features before the feature freeze starts (during which feature tweaks are not allowed), it makes sense to finish the bulk of the feature implementation in this iteration (`{{ version_alpha }}`), so that you have time to test and polish it in `{{ version_penultimate }}`.
+  **:thinking: What's the hurry to add _all_ features right now?** We will be enforcing a strict _feature freeze_ at the end of `{{ version_penultimate }}` (more details in the panel below). Given you also need time to polish the features before the feature freeze starts (during which code changes will be severely restricted), it makes sense to finish the bulk of the feature implementation in this iteration (`{{ version_alpha }}`), so that you have time to test and polish it in `{{ version_penultimate }}`.
 
 <div class="indented-level1">
 
@@ -1569,21 +1572,19 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 
 * **Follow the iteration plan** you devised above,  to deliver the features.<br>
 Resist the temptation to try to deliver each of those features/enhancements in one PR. It is better to deliver a minimal version first, and improve it through subsequent PRs.
-* **Manage the iteration** better than then previous iteration (hopefully), as per what you learned/decided during the `{{ version_mvp }}` postmortem.
+* **Manage the iteration** better than the previous iteration (hopefully), as per what you learned/decided during the `{{ version_mvp }}` postmortem.
 * **Release `{{ version_alpha }}`.** Include a jar file and detailed release notes (as before, the release notes should describe _what's-new-since-the-last-release-note_).
 <box>
 
 ##### {{ icon_tip }} Ways to level up your tP game:{.text-success}
 
-1. <span class="text-success">**Use parallel PRs:**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%
+1. <span class="text-success">**Use parallel PRs:**</span> We encourage you to try sending parallel PRs (i.e., send another PR while the previous PR you sent is waiting to be merged) if you haven't done that yet. %%Reason: It's important to learn how to do that, because in most real projects it is common to have multiple open PRs from the same author.%%<br>
+   {{ icon_important_big_red }} We require each student to have parallel PRs at least once during the tP %%so that we can confirm you are able to handle parallel PRs%%.
 1. **Maintain the defensiveness of the code:**{.text-success} Use assertions, exceptions, and logging in your code, as well as other defensive programming measures (refer this week's topic on _defensive programming_ for more details) when appropriate. This will be considered when grading your tP code quality.<br>
    Remember to [enable assertions in your IDEA run configurations](https://se-education.org/guides/tutorials/intellijUsefulSettings.html) and [in the gradle file](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).
 </box>
 
-{{ show_faq("dgAddNewUml", is_compact=1) }}
-{{ show_faq("noEffectOnUml", is_compact=0) }}
-
-%%Some other relevant FAQs, repeated from last week:%%
+%%Some relevant FAQs, repeated from last week:%%
 
 {{ show_faq("tpGuiTestAutomation", is_compact=1) }}
 {{ show_faq("tpWorksLocallyFailsCi", is_compact=1) }}
@@ -1683,13 +1684,13 @@ In addition,
 
 <box dismissible>
 
-%%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE this semester. We still use GitHub to record bugs reported in the PE but CATcher acts as a layer between you and GitHub, to ensure the bugs you report meet PE requirements.%%
+%%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. At the beginning, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE. We still use GitHub to record bugs reported in the PE but CATcher acts as a layer between you and GitHub, to ensure the bugs you report meet PE requirements.%%
 </box>
 
 This week, we would like you to smoke-test the CATcher app **to ensure it can work with your OS, Browser, GitHub account**, by following the steps given in the panel below.
 <p/>
 
-<panel type="info" header="**Steps for smoke-testing CATcher:**" minimized>
+<panel type="info" header="**Steps for smoke-testing CATcher:**" peek>
 
 1. **Go to the CATcher Web version** at https://catcher-org.github.io/CATcher/ using ==the same computer (i.e., not a mobile device) that you plan to use for the practical exam==.
    * Use a common browser such as Chrome, Edge, Firefox, Safari
@@ -1704,7 +1705,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
    {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
    {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
    {{ icon_info }} The `severity` and `type` labels are compulsory.
-1. **Report any problems you encounter** at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
+1. **If you encounter any problems while using CATcher**, report them at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
 1. **Do NOT delete the `catcher-smoke-test` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
 
 </panel>

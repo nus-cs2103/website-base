@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import embed_topic, step, thumb, timing_badge with context %}
+{% from "common/macros.njk" import embed_topic, show_faq, step, thumb, timing_badge with context %}
 
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="form-teams">

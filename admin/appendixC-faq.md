@@ -58,6 +58,8 @@
 {{ show_expanded_faq("umlIsItUsedInIndustry") }}
 {{ show_expanded_faq("umlAreWeOverdoing") }}
 {{ show_expanded_faq("umlWhenNotationNotEnough") }}
+{{ show_expanded_faq("umlWhyNoCorrespondenceBetweenUmlAndCode") }}
+{{ show_expanded_faq("umlHowToFindIntendedDesignFromCode") }}
 
 ## FAQs on: tP
 
@@ -84,6 +86,7 @@
 {{ show_expanded_faq("tpRationaleForCurrentDesign") if cs2103 }}
 {{ show_expanded_faq("tpMultiStepCmd") }}
 {{ show_expanded_faq("tpRenameAbReferences") if cs2103 }}
+{{ show_expanded_faq("tpLowMidtermPeerEvaluations") }}
 {{ show_expanded_faq("dgDetailsLevel") }}
 {{ show_expanded_faq("dgAddNewUml") if cs2103 }}
 {{ show_expanded_faq("noEffectOnUml") if cs2103 }}

@@ -1,8 +1,10 @@
-{% from "common/macros.njk" import embed_topic with context %}
+{% from "common/macros.njk" import embed_topic, show_faq with context %}
 
 ### Session: `Midterm Peer Evaluation`
 
-* Held about two weeks into the tP coding phase
+* **This peer evaluation is mostly 'for your information only'** -- i.e., for you to receive an early indication of what your team thinks about your work. Any low ratings received in this session will not affect your marks, provided they do not remain low in the final peer evaluation.
+* Held about two weeks into the tP coding phase.
+
 
 <box>
 
@@ -98,3 +100,4 @@
 </div>
 </box>
 <p/>
+{{ show_faq("tpLowMidtermPeerEvaluations") }}

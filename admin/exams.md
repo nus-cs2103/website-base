@@ -52,6 +52,8 @@ The final exam has two types of questions:
 
 ## Exam admin info to note
 
+
+
 1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ course }}) as well.
 1. **Scope:**
    * All topics in the textbook, excluding level 4 topics (i.e., optional topics), are examinable. For your convenience, you can view the examinable portion of the textbook in [this printable view of the textbook](../se-book-adapted/print.html) (same as the PDF version of the textbook provided to you).
@@ -71,7 +73,23 @@ The final exam has two types of questions:
    * **An _exam reference_ PDF file will be available inside Examplify**, containing the full textbook, UML reference sheet, and the coding standard.
      * Caveat: Don't plan to refer to this file frequently. The Examplify UI is not optimized for quick opening/searching of big PDF files. So, use it only when your memory or the hard-copy cheat-sheets are not sufficient.
      * A copy of this file will be provided to you in advance (in Canvas/files/handouts), in case you want to use it during exam preparations.
-1. **Not required to record the screen**.
+1. **==You need to check the exam-compatibility of your device early==** (as given in the panel below) -- even if you have used Examplify for other exams before, as the Examplify behaviour varies based on the specific exam configuration -- and work with NUS CIT to resolve any issues you encounter.<br>
+   Issues encountered by past students include problems in viewing and searching the _exam reference_ PDF file inside Examplify.
+
+<div class="indented-level1">
+
+<panel type="info" header="**How to check compatibility of your device**" expanded>
+
+* **Ensure you have Examplify installed**{.text-info} in your exam device. {texts="['i.', 'ii.', 'iii.', 'iv.', 'v.']" t-class="fw-bold text-info"}
+* **Ensure you have Adobe Acrobat Reader installed**{.text-info} in your exam device, as Examplify will be using that software to open PDF files.
+* **Download the mock exam**{.text-info} we have provided. It has only three dummy questions, for you to get familiar with the exam mode.
+* **Do the mock exam**{.text-info} (password: `Hello123`).<br>
+  **Confirm you are able to open/resize/navigate/search the PDF file**{.text-info} we have provided as an attachment inside Examplify (this file can be accessed via the `EXAM CONTROLS` menu in the Examplify UI).
+</panel>
+<p/>
+</div>
+
+7. **Not required to record the screen**.
 1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2). We'll give you the password for opening each part at the exam, at the respective starting time of each part.<br>
   You will be notified when they are ready for download (typically, around 24 hours before the exam start time).
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== %%(reason: at an exam of this scale, it is not practical to clarify such doubts on-the-spot on a timely manner)%%. We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
