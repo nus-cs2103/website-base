@@ -16,7 +16,7 @@ pageNav: 5
 * **Team members are NOT _required_ to do an equal share of work.**{.text-info} Following from GP1, every member can decide how much they want to contribute to the project. This gives students the flexibility to control their tP workload based on their own expectations and motivations.
 * **Managing team issues is a learning outcome.**{.text-info} You are recommended to keep the teaching team informed of any teamwork issues you are facing but keep in mind that solving such issues is part of the 'project management' aspect, which is a tP deliverable. So, the teaching team will refrain from direct interventions except in severe cases.
 * **Be professional, kind, and civil to the team members, even if they are not meeting your expectations.**{.text-info} A below par performances in the tP does not make someone a 'bad person'. In some cases, the person might be fighting other battles that we are unaware of %%(e.g., mental health issues, family problems, financial problems)%%. The best we can do is to be kind and supportive.<br>
-  **Be firm and assertive too**, when you need to. Being civil does not mean you let others walk all over you.
+**Be firm and assertive too**, when you need to. Being civil does not mean you let others walk all over you.
 * **Willful negative behaviors will be graded harshly.**{.text-info} Willful negative behaviors will be graded harshly. Examples: promising things without intending to deliver, sabotaging others' work, not following what the team agreed on (i.e., going 'rogue'), using offensive language when communicating with team members.
 
 <box>
@@ -38,7 +38,7 @@ pageNav: 5
 
 **How to inform the teaching team about a teamwork problem?** Some of the guidelines below ask you to 'inform the teaching team' about the problem. In such cases you can write to the course email `{{ course_email }}` to do so.
 </box>
- <!-- ============================================================================= -->
+<!-- ============================================================================= -->
 <div id="team-problems-mia-member">
 <panel type="danger" header="##### CP1. MIA team member" expanded>
 
@@ -127,12 +127,27 @@ If the team refused to accept your work, you can still earn marks for that code.
 If the team refused to accept your work, you can still earn marks for that code. You are allowed to submit such 'rejected' code for grading.
 
 </panel> <!-- ============================================================================= -->
-<panel type="danger" header="##### CP6. No one is taking charge" expanded>
+<panel type="danger" header="##### CP6a. No one is taking charge" expanded>
 
 **Problem:** The project is not moving forward because no one is taking charge. Everyone seems to be waiting for someone else to take charge.
 
 **Guidance for the team:** There is no choice but some members (at least one) has to take charge. Those who take charge are likely to score more in the 'Project Management' component.
 
+
+</panel><!-- ============================================================================= -->
+<panel type="danger" header="##### CP6b. Most team members are too slow/quiet" expanded>
+
+**Problem:** All (or most) members miss deadlines, and do not contribute enough to discussions, causing the project to fall behind.
+
+**Guidance for the team:**
+
+* If you feel your team is in this situation, one thing you should do is to communicate this concern to others. You can do that without specifically pointing fingers or causing unpleasantness %%e.g., posting a message in your group message channel "Team, I think our tP is falling behind :-( Can we pick up the pace and be more active (e.g., review PRs faster)?"%%
+* Try to evolve the product in an _incremental_ and _iterative_ fashion, and make the implementation tasks as less interdependent as possible. This way, when you get close to an iteration deadline, you can move any incomplete work (e.g., work-in-progress PRs) to the next iteration, and deliver the completed work as the next version of the product.<br>
+  Note that ==the team is not obliged to delay the iteration wrap-up until _all_ team members have completed the work they promised== for the iteration. You are free to move any incomplete work into a future iteration.
+* You can reduce the risk by dividing the work in a way that more reliable/active members are assigned more important parts of the work while less reliable or slow members are given optional/less-critical parts of the work.
+* Setting deadlines, and 'arrowing' specific members, can help too. Examples:
+  * When you submit a PR, request reviews from specific people, and also indicate a deadline e.g., `@abc and @def: if you have any comments about this PR, please submit by {date}.`
+  * Set deadlines for completing critical tasks (e.g., features that other features depend on) with the understanding that others will need to takeover those features if not done on time.
 
 </panel> <!-- ============================================================================= -->
 <panel type="danger" header="##### CP7. Rude member behaviours" expanded>
@@ -160,8 +175,8 @@ Suggested steps:
 * Adjust project targets accordingly (e.g., cut down targets).
 * Redistribute any essential work assigned to that member. New assignees can cut down on less-important work that were previously assigned to them, to make room for this additional work.
 * If that member has done some work already, you have two options:
-  * Some of you take over and continue that work: In this case, you (i.e., the new assignee) should not take credit for work done by the previous assignee (but you can take credit for additional work that you did _after_ taking over). However, someone in the team still needs to take responsibility for any bugs in that work (i.e., you cannot blame bugs on someone who is no longer part of the team -- the current team is responsible for the quality of the _entire_ product).
-  * Remove the work done by the outgoing member: In that case, the person(s) doing the removal can take credit for the extra effort required for removing the work.
+* Some of you take over and continue that work: In this case, you (i.e., the new assignee) should not take credit for work done by the previous assignee (but you can take credit for additional work that you did _after_ taking over). However, someone in the team still needs to take responsibility for any bugs in that work (i.e., you cannot blame bugs on someone who is no longer part of the team -- the current team is responsible for the quality of the _entire_ product).
+* Remove the work done by the outgoing member: In that case, the person(s) doing the removal can take credit for the extra effort required for removing the work.
 
 ----
 

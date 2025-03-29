@@ -97,6 +97,7 @@
 {{ show_expanded_faq("tpChangeFeatureSpec") if cs2103 }}
 {{ show_expanded_faq("tpEnoughFeatures") if cs2103 }}
 {{ show_expanded_faq("tpMustWrite300Loc") if cs2103 }}
+{{ show_expanded_faq("tpIsBlankLinesCounted") if cs2103 }}
 {{ show_expanded_faq("tpFullMarksFor300Loc") if cs2103 }}
 {{ show_expanded_faq("tpIsLocGraded") }}
 {{ show_expanded_faq("tpDivideByComponent") }}

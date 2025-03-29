@@ -13,8 +13,8 @@
 
 <div tags="m--cs2103" id="functionality-expectations">
 
-**The expected level of _functionality_ is what you could achieve if each member puts in about ==50% of the implementation effort they put into the iP==** (reason for setting it much less than 100%: even after adding the extra overheads of doing the project as a team, and working with an exising codebase, we don't want the tP to take more effort than the iP).<br>
-Furthermore, we estimate that the above-mentioned bar is roughly _equivalent_ to **writing about 300-400 lines of functional code** (excluding testing and documentation) per person.
+**The expected level of _functionality_ is what you could achieve if each member puts in about ==50% of the implementation effort they put into the iP==** (reason for setting it much less than 100%: even after adding the extra overheads of doing the project as a team, and working with an exising codebase, we don't want the tP to take more effort than the iP). This is the primary measure we will use when grading your tP implementation effort.<br>
+Furthermore, we estimate that the above-mentioned bar is roughly _equivalent_ to **writing about 300-400 lines of functional code** (excluding testing and documentation) per person. This is a secondary ballpark measure you can keep an eye on, in conjunction with the primary measure mentioned above.
 
 <box type="important" seamless>
 
@@ -32,6 +32,7 @@ Furthermore, we estimate that the above-mentioned bar is roughly _equivalent_ to
 
 {{ show_faq("tpEnoughFeatures", is_compact=1) }}
 {{ show_faq("tpMustWrite300Loc", is_compact=1) }}
+{{ show_faq("tpIsBlankLinesCounted", is_compact=1) }}
 {{ show_faq("tpFullMarksFor300Loc", is_compact=1) }}
 {{ show_faq("tpIsLocGraded") }}
 <p/>

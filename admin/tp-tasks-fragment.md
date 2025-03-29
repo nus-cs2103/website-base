@@ -68,12 +68,18 @@ In addition, you can mitigate the impact of such bugs and thus lower its severit
 
 </panel>
 
-<panel type="seamless" header="**[Q7]** We already merged a PR that violates the feature freeze. Now what?" minimal>
+<panel type="seamless" header="**[Q7]** Can we **add entirely new features** during the feature freeze?" minimal>
+
+**A:** This is strongly discouraged as it goes against the spirit of the feature freeze. That said, we enforce the code freeze based only on the _amount_ of code changed, not the _nature_ of the code change.
+
+</panel>
+
+<panel type="seamless" header="**[Q8]** We already merged a PR that violates the feature freeze. Now what?" minimal>
 
 **A:** No penalty if you revert the change for the final submission. You can use [GitHub's _Revert PR_ feature](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) for this. Failing that, you'll need to reverse the merge commit of the offending PR manually, or at least do another PR to reverse the effect of the previous feature freeze violation.
 </panel>
 
-<panel type="seamless" header="**[Q8]** How to decide between recording a feature flaw as a 'known issue' (in the UG) and a 'planned enhancement' (in the DG)?" minimal>
+<panel type="seamless" header="**[Q9]** How to decide between recording a feature flaw as a 'known issue' (in the UG) and a 'planned enhancement' (in the DG)?" minimal>
 
 **A:**
 
@@ -1557,7 +1563,7 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 
 <div class="indented-level1">
 
-<panel header="Admin {{ icon_embedding }} tP → **{{ version_final }} (extract) → More details on the feature freeze**" minimized>
+<panel header="Admin {{ icon_embedding }} tP → **{{ version_final }} (extract) → More details on the feature freeze**" peek>
 
 <include src="tp-tasks-fragment.md#feature-freeze-details" />
 </panel>
@@ -1889,8 +1895,7 @@ The panel below contains guidelines your peers will use when determining bugs in
   * You may choose any suitable filename, but recommended not to have spaces or special characters in the JAR file name.
   * It is optional to write detailed release notes for this version.
 * **You can do an _additional_ release before the [PE dry run (PE-D)](tp-ped.html)** if you wish, as long as you do it <span class="text-danger">before 10 am Friday</span>. {% if cs2103 %}That additional release is still considered part of {{ version_penultimate }} and therefore, not subjected to the feature freeze.{% endif %} When doing this additional release, do not delete the previous release %%(reason: it is good to preserver the release history)%% -- testers are expected to test the latest release file anyway. You may use any suitable version number for this JAR file e.g., `{{ version_penultimate }}.1`.<br>
-  Waiting till Friday 10am to release the `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.{% if cs2103 %}
-* **The <trigger trigger="click" for="modal:v13-jar-desc">_feature freeze_</trigger> will apply at the point you released the JAR file that was used in the PE-D** i.e., the features submitted in the final `{{ version_final }}` later should be the same as the features tested during PE-D, which is the rationale for the feature freeze anyway.{% endif %}
+  Waiting till Friday 10am to release the `{{ version_penultimate }}` is strongly discouraged because if you miss that deadline, your team will not be able to benefit from the PE-D at all. It is better to have an earlier release to fall back on in case that happens.
 * As before, wrap up the milestone %%(i.e., reschedule/close any remaining issues/PRs and close the milestone).%%
 
 <modal large header="" id="modal:v13-jar-desc">
@@ -1906,11 +1911,6 @@ The panel below contains guidelines your peers will use when determining bugs in
 {#====================================================================================================================#}
 <span id="heading_review_others_dg">{{ icon_individual }} Review others' DG</span>
 <div id="desc_review_others_dg">
-
-<!--
-* ~~**Divide into two sub-teams**, ensuring that each team has at least one member who is good with UML.~~<br>
-  <span class="text-info">This activity is to be done individually.</span>
--->
 
 * To be done during the tutorial. Please don't do this task before the tutorial as others need time to update their DGs.
 * ==Read _all_ instructions== before you start the activity.

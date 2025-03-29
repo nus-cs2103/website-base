@@ -521,7 +521,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the dev team, you can record your objections and the reason for the objection.
   * `response.*`: bug not accepted {texts="['(a)', '(b)', '(c)', '(d)']"}
   * `severity.*`: severity downgraded
-  * `type.*`: but type changed
+  * `type.*`: bug type changed
   * `duplicate`: bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
 * If CATcher doesn't give you an option to object to (a), (b), (c), or (d) mentioned above, that means there is nothing to object to %%e.g., if there is no option to object to (a), that means the bug was accepted by the team.%%
 

@@ -5,19 +5,15 @@
 
 Due to holidays, **this week's tutorial is released as a pre-recorded video**.
 
-More details coming soon ...
-<!--
-
 {{ panopto("6c3474d0-0e20-4416-ad74-b13c0138d3a6", desc="Week 10 - Tutorial") }}
 
 What you need to do:
 
-1. Have a look at the three tutorial tasks given below in this page. It's best if you attempt them first, before you start watching the video.
-1. Watch the video, and do the tasks as the video instructs you %%(e.g., answer in-video questions, post screenshots in workspace file)%%.
+1. Have a look at the three tutorial tasks given below in this page. It is best if you attempt them first, before you start watching the video.
+1. Watch the video, and do the tasks as the video instructs you %%(e.g., answer in-video questions, post screenshots in the workspace file)%%.
 1. If you have doubts or questions, post in your tutorials MSTeam channel (and tag the tutor), or post in the course forum.
 
-**:fas-clock: Period to watch the video** (to be ==counted for tutorial participation==): {{ get_date(date_w10_start, 1, time="")}} -- <span class="text-danger">{{ get_date(date_w10_start, 7, time="23:59")}}</span>
--->
+**:fas-clock: Period to watch the video** (to be ==counted for tutorial participation==): {{ get_date(date_w10_start, -2, time="")}} -- <span class="text-danger">{{ get_date(date_w10_start, 8, time="23:59")}}</span>
 </box>
 {% endif %}
 

@@ -607,13 +607,22 @@ Some options:
 <div id="faq-tpEnoughFeatures-Q">If our team implement features x, y, and z, is that enough?</div>
 <div id="faq-tpEnoughFeatures-A">
 
-Yes, if it requires each member to put in about a half an iP worth of effort.
+Yes, if it requires each member to put in an implementation effort that is about 50% of the implementation effort you put into the iP.
 </div>
 <!-- =============================================================== -->
 <div id="faq-tpMustWrite300Loc-Q">Is it a must to write at least 300 LoC?</div>
 <div id="faq-tpMustWrite300Loc-A">
 
-Not necessarily. It depends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than 300 LoC that implements feature Y (i.e., it depends on the feature). So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the _equivalent_ effort).
+Note that 300 LoC is neither a target, nor a cap, nor a definitive measure. In fact, LoC is not a very reliable measure of effort. So, it is just a secondary indicator you can refer to. The primary indicator you should keep an eye on is if your tP implementation effort, which is expected to be around 50% of the iP implementation effort.
+
+So, the answer is, "not necessarily". It depends on the effort required, which in turn depends on what the code does. It is quite possible for 100 LoC that implements feature X to take more effort than 300 LoC that implements feature Y (i.e., it depends on the feature). So, we measure the effort, not LoC (LoC figure given is just a rough estimate of the _equivalent_ effort).
+
+</div>
+<!-- =============================================================== -->
+<div id="faq-tpIsBlankLinesCounted-Q">300 LoC is with or without blank lines?</div>
+<div id="faq-tpIsBlankLinesCounted-A">
+
+It does not matter. Peg your implementation effort to about 50% of the implementation effort of the iP. Let the LoC number fall where it may. We grade based on the effort, not the LoC count. The given LoC number is just a secondary indicator only.
 
 </div>
 <!-- =============================================================== -->
