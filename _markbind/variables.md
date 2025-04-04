@@ -43,6 +43,7 @@
 <variable name="version_final">v1.6</variable>
 <variable name="version_future">v2.0</variable>
 <variable name="example_team_id">{{ course }}-T09-2</variable>
+<variable name="tp_pe_bug_count">6</variable>
 
 <variable name="ug_pages_per_person">1</variable>
 <variable name="dg_pages_per_person">3</variable>

@@ -28,7 +28,7 @@
     * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to focus on reporting bugs in the product (but can report documentation bugs too)
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
-    * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [~half a day] -- For testers to select up to 7 bugs to send to the dev team.
+    * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [~half a day] -- For testers to select up to {{ tp_pe_bug_count }} bugs to send to the dev team.
   * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sunday - Monday period after PE </span>
   * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Tuesday - Thursday period after the PE.</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
@@ -39,6 +39,27 @@
   * Also see:
 
 {{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "3", indent="2") }}
+
+<panel type="secondary" header="Recent tweaks to the PE" peek>
+
+FYI, given below are some of the recent tweaks we have done to the PE, to reduce the stress and the workload of the PE.
+
+1. **PE phase 1 is done on Week 12 Friday**. Phases 2-4 done over Week 13.
+   * %%Previous (i.e., the state before the tweak): Phase 1 done on Week 13 Friday, and phases 2-4 done over the Reading Week.%%
+   * Rationale for the tweak: To avoid spilling PE phases into the Reading Week.
+1. **Testers are given about 0.5-1 day to update type/severity of bugs** after the PE (but subject/body cannot be changed).
+   * Rationale for the tweak: To reduce the stress of having to choose the correct severity/type during the PE period itself.
+   * %%Previous (i.e., the state before the tweak): Any change to the bug after the PE deadline invalidated the bug report.%%
+1. **Testers should choose upto {{ tp_pe_bug_count }} bugs to be sent to the dev team.**
+   * Rationale: To reduce the workload of the dev team.
+   * %%Previous: All reported bugs are sent to the dev team, requiring the dev team to process many trivial/shot-in-the-dark bug reports.%%
+1. **Testers can report any type of bugs during the entire PE period.**
+   * %%Previous: The last 30-minutes was dedicated to reporting document bugs only.%%
+   * Rationale: To allow more flexibility e.g., to update a bug reported in the earlier part of the PE.
+1. **Bug type can be changed at dev team's discretion.**
+   * %%Previous: The tester and the dev team had to agree on the bug type.%%
+   * Rationale: To reduce the number of things testers and the dev teams have to agree on (less work).
+</panel>
 
 </div>
 
@@ -284,7 +305,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 #### <span class="badge bg-success">&rarr; PE Phase 1 - Part IV</span> <span class="text-success">Trimming bugs</span>
 
-**This segment gives testers a second chance revisit their bug reports, and choose upto 7 bugs that they wish to send to the dev team.** They will be allowed to change bug type/severity too (but will not be allowed to change bug title or the description).
+**This segment gives testers a second chance revisit their bug reports, and choose upto {{ tp_pe_bug_count }} bugs that they wish to send to the dev team.** They will be allowed to change bug type/severity too (but will not be allowed to change bug title or the description).
 
 **Objectives:**
   * To give testers a chance to correct their type/severity choices in case they chose incorrectly during the PE due to time pressure.
@@ -309,15 +330,15 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
    * =={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
      * Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase of the PE.
      * As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower priority has a lower risk of being disputed by the dev team, giving you (and the dev team) a better chance of earning bonus marks for accuracy.
-1. **Decide which bugs should be sent to the dev team**. You may select ==no more than 7==.<br>
-   **Of these bugs, ==the highest scoring 5 bugs will be used for your tP grading==.** %%We allow you to select up to 7 bugs (instead of 5), to reduce your decision-stress (i.e., one or two wrong choices will not affect your marks).%%
+1. **Decide which bugs should be sent to the dev team**. You may select ==no more than {{ tp_pe_bug_count }}==.<br>
+   **Of these bugs, ==the highest scoring 5 bugs will be used for your tP grading==.** %%We allow you to select up to {{ tp_pe_bug_count }} bugs (instead of 5), to reduce your decision-stress (i.e., it provides a safety margin against wrong choices).%%
    * **Choose based on,**<br>
      * **severity** -- %%because higher severity will earn higher marks.%% {{ bullet_tick_green }}
      * **confidence** level that it is indeed a bug %%-- if the bug is eventually rejected, it will not earn any marks.%%
      * **but not bug type** -- for this purpose, consider all bug types as equal. {{ bullet_x_red }}
 1. **Delete the remaining bug reports** using CATcher.
    * What if I deleted a bug that I intended to keep? When you 'delete' a bug using CATcher, the corresponding issue is closed (but not deleted) in GitHub issue tracker. So, the deleting can be reversed by going to GitHub and re-opening that issue.
-   * What if I keep more than 7 bugs? In that case, we take the 7 bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
+   * What if I keep more than {{ tp_pe_bug_count }} bugs? In that case, we take the {{ tp_pe_bug_count }} bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 

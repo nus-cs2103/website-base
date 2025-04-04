@@ -36,7 +36,7 @@
 
 ****How many bugs to report?****
 
-Report as many bugs as you can find during the given time. Take longer if you need (unlike the PE, PE-D is not timed strictly). If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. In that case, all the more reasons to spend more time and find more bugs now.
+Report as many bugs as you can find during the given time. You can take a bit longer if you wish to (unlike the PE, PE-D is not timed strictly -- you will be allowed to continue reporting PE-D bugs for at least an extra 30-40 minutes after the 'official' PE-D end time, if you wish to get a bit more out of the PED). If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. In that case, all the more reasons to spend more time and find more bugs now.
 
 For reference, here are what we consider as qualities of a good bug report:
 <box>
@@ -85,7 +85,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 <tabs active="{{ pe_active_tab }}">
 <tab header="PE Dry Run (at **{{ version_penultimate }}**)">
 
-* Download the _latest_ JAR file from the team's releases page, if you haven't done this already.
+* Download the _latest_ `.jar` file and UG/DG `.pdf` files from the team's releases page, if you haven't done this already.
 
 </tab>
 <tab header="PE (at **{{ version_final }}**)">
@@ -180,7 +180,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 
 ###### <div class="text-white bg-secondary p-1">d) How to report bugs</div>
 
-* {{ icon_important_big_red }} **Post bugs as you find them** %%(i.e., do not wait to post all bugs at the end)%% because <span class="text-danger">bug reports created/updated after the allocated time will not count.</span> Even minor updates (such as changing a label) outside the allowed time window will invalidate that bug.
+* {{ icon_important_big_red }} **Post bugs as you find them** %%(i.e., do not wait to post all bugs at the end)%% because <span class="text-danger">bug reports created/updated after the allocated time will not count.</span>
 <div class="indented-level1">
 
 <tabs>
@@ -284,7 +284,7 @@ Use the pain of dealing with this kind of bug reports as an opportunity to devel
 
 * **If you have received stray bug reports** (i.e., bug reports that don't seem to be about your project), do let us know ASAP (email the prof).
 * **You can navigate to the original bug report** (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
-  * {{ icon_tip }} Do not argue with the tester to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the tester for their view and discontinue to discussion.
+  * {{ icon_tip }} Do not argue with the tester to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the tester for their view and discontinue the discussion.
 * **Aim to ==do a systematic triaging of issues received==**. Some suggestions:
   * Close duplicate issues.
   * Use labels (create new labels if necessary) to,

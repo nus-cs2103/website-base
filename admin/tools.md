@@ -181,6 +181,33 @@ When you do receive that email, it will contain a unique link that you can use t
 </box>
 </div>
 
+</div><!-- ----------------------------------------------------------------------------------------------------- -->
+{% if ((current_week | int) >= 7) %}<div id="watcher">
+
+## Tool: WATcher (for monitoring tP work distribution)
+
+You can use WATcher to see **a dashboard view of the tP work distribution** (e.g., number of issues/PRs done by each member). It can also help you **easily spot workflow oversights** (e.g., issues/PRs not assigned to a person/milestone).
+
+**Steps to use:**
+
+1. Go to the [tP teams list page](teamList.md). Locate your team, and click the #b#:fas-w:## icon for your team.
+1. When prompted, choose to access `public repos only` and login using your GitHub account.<br>
+   <pic src="images/WATcher-authorization.png" width="400" />
+1. After the login is complete, you will be able to see the WATcher dashboard showing the `Currently active` milestone of your tP.<br>
+   <pic src="images/WATcher-dashboard.png" width="800" /><br>
+   This view shows issues/PRs relevant to the most recent/current milestone, each column showing issues/PRs assigned to a specific team member.<br>
+   {{ icon_tip }} This view also helps you spot oversights. e.g., it indicates ongoing issues/PRs not assigned to any milestone as #r#:octicon-milestone: ???##.
+1. You can switch the view from `Currently active` to `Contributions` to view all issues/PRs contributed by each member for the entire project.
+1. The filters at the top of the dashboard can be used to tweak the view further.<br>
+   {{ icon_tip }} The page URL changes to match the view, which means you can share/bookmark the current view using the current URL of your Browser.
+
+<box type="warning" light>
+
+WATcher is a tool created by past students, and #r#still in early preview state##.<br>
+**Bugs/queries/suggestions**, please post in the [WATcher issue tracker](https://github.com/CATcher-org/WATcher/issues).
+</box>
+</div>{% endif %}<!-- ----------------------------------------------------------------------------------------------------- -->
+
 </div>
 
 {% endcall %}
