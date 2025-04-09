@@ -27,6 +27,7 @@
 <variable name="time_t_lecture_end">1800</variable>
 <variable name="ped_week">11</variable>
 <variable name="pe_week">12</variable>
+<variable name="show_feature_freeze_dashboards">yes</variable>
 <variable name="catcher_load_testing"></variable> <!-- keep empty if load testing falls on a holiday -->
 
 <variable name="ip_name">iP</variable>
@@ -139,7 +140,10 @@
 <variable name="url_quizzes">https://canvas.nus.edu.sg/courses/{{ canvas_course_id }}/quizzes</variable>
 <variable name="url_schedule"><md>[Weekly Schedule Page]({{baseUrl}}/schedule/index.html)</md></variable>
 <variable name="url_team_list">{{baseUrl}}/admin/teamList.html</variable>
-<variable name="url_tp_dashboard">{{ url_course_gihub_io | safe }}/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=docs~functional-code~test-code~other</variable>
+<variable name="url_tp_dashboard_base">{{ url_course_gihub_io | safe }}/tp-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true</variable>
+<variable name="url_tp_dashboard">{{ url_tp_dashboard_base }}&checkedFileTypes=docs~functional-code~test-code~other</variable>
+<variable name="url_tp_dashboard_fc_only">{{ url_tp_dashboard_base }}&checkedFileTypes=functional-code</variable>
+<variable name="url_tp_feature_freeze_dashboard">{{ url_tp_dashboard_fc_only | replace ("/tp-dashboard/", "/tp-feature-freeze-dashboard/") }}</variable>
 <variable name="url_tp_progress_dashboard">{{ url_dashboards }}/contents/tp-progress.html</variable>
 
 <!-- ===========================  icons ================================================= -->

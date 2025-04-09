@@ -10,7 +10,9 @@
 {% macro tp_dashboard_links() %}
 <li><a href="{{url_tp_progress_dashboard}}" target="_blank" class="dropdown-item text-success"><md>:fas-tasks: tP Progress Dashboard</md></a></li>
 <li><a href="{{ url_course_gihub_io }}/dashboards/contents/tp-comments.html" target="_blank" class="dropdown-item"><md>:octicon-comment: tP Comments Dashboard</md></a></li>
-<li><a href="{{ url_tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>
+<li><a href="{{ url_tp_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard</md></a></li>{% if show_feature_freeze_dashboards %}
+<li><a href="{{ url_tp_dashboard_fc_only }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard (Functional Code Only)</md></a></li>
+<li><a href="{{ url_tp_feature_freeze_dashboard }}" target="_blank" class="dropdown-item"><md>:fas-chart-area: tP Code Dashboard (Feature Freeze Period Only)</md></a></li>{% endif %}
 {% endmacro %}
 
 {% if current_week == "-1" %}

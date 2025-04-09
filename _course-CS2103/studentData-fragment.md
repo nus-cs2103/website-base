@@ -680,7 +680,7 @@
  'CS2103-F08-4': 'Tutors managing student information and course-related details.',
  'CS2103-F09-1': 'Travel agents managing group and individual trips, who need to keep track of customer preferences and trip logistics.',
  'CS2103-F09-2': 'Private home tutors providing one-on-one sessions for primary to junior college students across all subjects.',
- 'CS2103-F09-3': 'Admin staff, businessmen, event organisers. These users often handle a large volume of contact details (sometimes handwritten) and need a streamlined way to add, organise, and export contacts for communication purposes, like creating WhatsApp groups or email lists. These are the people who would use such a keyboard-based program to create contacts at speed, compared to typical users who would just add them to their phone contacts.',
+ 'CS2103-F09-3': 'Tech-savy fast-typing event organisers',
  'CS2103-F09-4': "This app is designed for team managers, leaders, and student leaders who need an efficient way to track and manage their team members' progress and status in an offline, single-user environment.",
  'CS2103-F10-1': 'Our product is intended for Freelance Artists who manage many clients of different needs and requests.',
  'CS2103-F10-2': 'Young fresh sales people like new undergraduate/graduate FAs',

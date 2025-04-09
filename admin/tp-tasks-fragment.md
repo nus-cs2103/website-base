@@ -14,13 +14,16 @@
 <box type="warning" seamless>
 
 **The goal of freezing features in the pre-release iteration is to minimize latent bugs** by avoiding behavior changes unless they are strictly necessary, so that we minimize the possibility of introducing more bugs.<br>
-In a real project, minor or critical changes might be allowed even near a deadline -- but in the tP, it is hard to enforce such a rule objectively. Instead, we enforce a quantitative limit that is easier to enforce: <span class="text-danger">**no more than 10% of the functional code is allowed to be changed during the iteration {{ version_final }}**</span>. Finer details of this limit are given below:
+In a real project, minor or critical changes might be allowed even near a deadline -- but in the tP, it is hard to enforce such a rule objectively. Instead, we enforce a quantitative limit that is easier to enforce: <span class="text-danger">**no more than 10% or 50 LoC (whichever is higher) of the functional code is allowed to be changed during the iteration {{ version_final }}**</span>.<br>
+Finer details of this limit are given below (**also see [Q0] and [Q1]** given under FAQs):
 
 * **The feature freeze ==starts at 10am on the PE-D day==.** Any code updated after that deadlines is counted against the feature freeze.
 * **The limit is applied per member**. That is, we compare the amount of code attributed to each member (as per the tP code dashboard) against the portion of that code that was changed during the feature freeze. Any penalty for violating the feature freeze will be applied to that member only.
+* **The limit applies to functional code only** i.e., changes to files inside the `src\main` folder and sub-folders. The feature freeze doesn't apply to test code, documentation, or non-code files (e.g., images).
+* **The calculation is based on the [tP code dashboard]({{ url_tp_dashboard }})**, as 'of the total functional LoC attributed to you at the end of `{{ version_final }}`, what percentage was edited by you during the feature freeze?'.
 * **The penalty for violating the feature freeze will be case-by-case basis**, but not smaller than `-2`.
-* **The limit applies to functional code only** i.e., changes to files inside the `src\main\java` folder. The feature freeze doesn't apply to test code, documentation, or non-code files (e.g., images).<br>
-  There is no limit on the nature of changes you can do to functional code, but we **strongly recommend to choose based on,**<br>
+* **We will allow 2% a margin-of-error on top of the 10%** -- so, you will not be penalised if you exceed 10% by a tiny bit (i.e., up to 12%).
+* **There is no limit on the nature of changes you can do** to functional code, but we **strongly recommend to choose based on,**<br>
   a) the **priority** (i.e., how important the change is), and,<br>
   b) the **risk** (i.e., the risk of the change introducing new bugs).
 
@@ -28,14 +31,38 @@ In a real project, minor or critical changes might be allowed even near a deadli
 
 {{ embed_topic("tp-deliverables-dg-fragment.md#planned-enhancements-info", "Admin " + icon_embedding + " tP → Deliverables → DG (extract): Planned Enhancements", "3", indent="1") }}
 
-****FAQs on what is allowed during the feature freeze:****
+****FAQs on the feature freeze:****
 
-<panel type="seamless" header="**[Q1]** How do we **calculate how much code we can change**?" minimal>
+<panel type="seamless" header="**==[Q0]==** **How exactly is the LoC limit calculated**?" minimal>
 
-**A:** Before doing any changes, refer to the [tP code dashboard]({{ url_tp_dashboard }}) to find out how many LoC are attributed to you. After that, you can estimate how many lines you can change during the feature freeze. Aim to stay below 7-8% so that even if you overshoot a bit, you are still within 10%.
+**A:** The calculation is based on your LoC at the end of the `{{ version_final }}`, not the current LoC.
+
+Example: Suppose you currently have `600 LoC` under your name. At the end of the `{{ version_final }}` you ended up with,
+
+* `650 LoC` %%(you added some code, and edited some other code)%%:<br>
+  → Of that `650 LoC`, you could have added/edited up to `650 * 10% = 65 LoC` during the feature freeze.
+* `550 LoC` %%(lower than you started with because you deleted some code)%%:<br>
+  → Of that `550 LoC`, you could have added/edited up to `550 * 10% = 55 LoC` during the feature freeze.
+* `400 LoC` %%(because you deleted a lot of code)%%:<br>
+  → `400 * 10% = 40 LoC` is less than `50 LoC`. You could have added/edited up to `50 Loc` of that `400 LoC`.
+
+So, **deleting lines does not count as a change** (only editing and adding are counted as changes) but deleting lines reduces the number of LoC attributed to you, and hence, reduces the number of lines you can change during the feature freeze.
 </panel>
 
-<panel type="seamless" header="**[Q2]** Suppose fixing a bug will violate the code freeze but not fixing it can incur a penalty during the PE. How do we decide **which option is less costly**?" minimal>
+<panel type="seamless" header="**==[Q1]==** How can a student **calculate/track how much code s/he can change**?" minimal>
+
+**A:** Keep in mind that the calculation is based on your LoC at the end of the `{{ version_final }}`, not the current LoC (the current LoC can still provide a rough estimate). You may use the following two code dashboards to find the current functional code LoC attributed to you:
+
+* [**tP Code Dashboard (Functional Code Only)**]({{ url_tp_dashboard_fc_only }}) -- this is the normal tP code dashboard, but configured to show functional code changes only.
+* [**tP Code Dashboard (Feature Freeze Period Only)**]({{ url_tp_feature_freeze_dashboard }}) -- this shows changes to functional code during the feature freeze period only.<br>
+  Caveat: This dashboard shows code changes from Week 11 Saturday onwards, not from Friday 10am %%(reason: RepoSense does not support setting the start to a specific time)%%. So, it will not show code changes you did in the Friday 10am to midnight. If you did some code changes during that period, you need to factor that in manually.
+
+The above two dashboard links are also available in the top navigation menu of the course website (see under `Project Links`).
+
+Both code dashboards are currently set to auto-update every three hours.
+</panel>
+
+<panel type="seamless" header="**[Q2]** Suppose fixing a bug will violate the feature freeze but not fixing it can incur a penalty during the PE. How do we decide **which option is less costly**?" minimal>
 
 **A:** No single bug can incur a penalty of more than `-2`, which is the minimum penalty for violating the feature freeze.
 
@@ -70,7 +97,7 @@ In addition, you can mitigate the impact of such bugs and thus lower its severit
 
 <panel type="seamless" header="**[Q7]** Can we **add entirely new features** during the feature freeze?" minimal>
 
-**A:** This is strongly discouraged as it goes against the spirit of the feature freeze. That said, we enforce the code freeze based only on the _amount_ of code changed, not the _nature_ of the code change.
+**A:** This is strongly discouraged as it goes against the spirit of the feature freeze. That said, we enforce the feature freeze based only on the _amount_ of code changed, not the _nature_ of the code change.
 
 </panel>
 
@@ -1590,7 +1617,9 @@ Resist the temptation to try to deliver each of those features/enhancements in o
    Remember to [enable assertions in your IDEA run configurations](https://se-education.org/guides/tutorials/intellijUsefulSettings.html) and [in the gradle file](https://se-education.org/guides/tutorials/gradle.html#enabling-assertions).
 </box>
 
-%%Some relevant FAQs, repeated from last week:%%
+{{ show_faq("tpFeatureDesignChoice", is_compact=0) }}
+
+%%Some other relevant FAQs, repeated from last week:%%
 
 {{ show_faq("tpGuiTestAutomation", is_compact=1) }}
 {{ show_faq("tpWorksLocallyFailsCi", is_compact=1) }}
@@ -1728,6 +1757,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can wo
 {#====================================================================================================================#}
 <span id="heading_update_ug_dg">{{ icon_individual }} Update UG and DG</span>
 <div id="desc_update_ug_dg">
+<include src="tp-tasks-fragment.md#alert-time-sensitive" />
 
 * {{ icon_important_big_red }} **Update the User Guide** to match the current version of the product. %%Reason: testers will need to refer to the UG during the practical exam dry run%%.
   * {% if cs2103 %}Remove mentions of any features not implemented yet, if any. As you are not allowed to change features during the iteration {{ version_final }}, there is no point keeping those in the UG.<br>
@@ -2047,11 +2077,13 @@ Test the product yourself (test each others' features) using the JAR file, repor
 1. **Is it something you think you'll never fix** even if you were to continue this project in future?<br>
    If yes, you can leave it unfixed and reject it if the same is reported in the PE. Caution: If the PE tester disagrees and the teaching team agrees with the tester's justification, the bug might result in a penalty %%(why say '_might_ result ...'? Because only when the bug density exceeds a certain bar that bugs will be penalised)%%.<br>
    {{ icon_info }} How to decide if a PE bug can be rejected? Refer to <trigger trigger="click" for="modal:pedTriagingWorkflow-peBugTriagingGuidelines">PE Bug Triaging Guidelines</trigger> for details (you may skip the 'General' section).
-1. **Else, is it something you may consider fixing in a future version** but was not important enough to do in {{ version_penultimate }}?<br>
+1. **Else, is it something you may consider fixing in a future version** but was not important enough to have done in {{ version_penultimate }}?<br>
    If yes, you can expect to categorise it as `NotInScope` if the same is reported in the PE (<trigger trigger="click" for="modal:pedTriagingWorkflow-peNotInScope">eligibility criteria</trigger>).
 1. **Else, it is something you should have fixed in the current version.**
    * You may fix it in this iteration. If left unfixed, it can be reported as a bug in PE, and _might_ result in a penalty eventually.{text="3.a)"}
    * Alternatively, you can list it under 'Planned Enhancements' in the DG so that it becomes immune to PE bug reporting. In addition, you can also update the UG to mitigate its impact on users (e.g., keep users informed of it).{text="3.b)"}
+
+{{ show_faq("tpFeatureDesignChoice") }}
 </box>
 
 <modal large header="" id="modal:pedTriagingWorkflow-peBugTriagingGuidelines">
@@ -2271,7 +2303,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 
 * **User Guide**:{icon="fas-users"}
   * Convert to pdf and upload to Canvas.
-  * File name: `[TEAM_ID][ProductName]UG.pdf`  %%e.g.[{{ example_team_id }}][ContactsPlus]UG.pdf%%
+  * File name: `[TEAM_ID][ProductName]UG.pdf`  %%e.g., [{{ example_team_id }}][ContactsPlus]UG.pdf%%
 
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
 
@@ -2285,7 +2317,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 * **{% if cs2103 %}[Optional] {% endif %}Project Portfolio Page (PPP)**:{icon="fas-user"}
   * HTML version: make available on `github.io`{% if cs2113 %}
   * PDF file: submission is similar to the UG<br>
-    File name: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g.[{{ example_team_id }}][Leow Wai Kit, John]PPP.pdf%%<br>
+    File name: `[TEAM_ID][Your full Name as Given in Canvas]PPP.pdf` %%e.g., [{{ example_team_id }}][Leow Wai Kit, John]PPP.pdf%%<br>
     {{ icon_info }} Use `-` in place of `/` if your name has it e.g., `Ravi s/o Veegan` → `Ravi s-o Veegan` (reason: Windows does not allow `/` in file names){% else %}
   * See the panel below to learn when you should opt for this submission.{% endif %}
 

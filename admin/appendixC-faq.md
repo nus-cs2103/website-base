@@ -109,6 +109,12 @@
 {{ show_expanded_faq("tpGuiTestAutomation") if cs2103 }}
 {{ show_expanded_faq("tpWhyUpdateDiagramsEarly") }}
 {{ show_expanded_faq("tpFeatureTakeovers") }}
+{{ show_expanded_faq("tpFeatureDesignChoice") }}
+
+### FAQs on: tP Troubleshooting
+
+{{ show_expanded_faq("tpPrPassCiButFailedAfterMerging") }}
+{{ show_expanded_faq("tpWorksLocallyFailsCi") }}
 
 ### FAQs on: tP PE
 
@@ -117,11 +123,6 @@
 {{ show_expanded_faq("tpBugRejectedWithReason") }}
 {{ show_expanded_faq("tpPeAccuracyForNotInScope") }}
 {{ show_expanded_faq("tpPeNotInScopeSeverity") }}
-
-### FAQs on: tP Troubleshooting
-
-{{ show_expanded_faq("tpPrPassCiButFailedAfterMerging") }}
-{{ show_expanded_faq("tpWorksLocallyFailsCi") }}
 {{ show_expanded_faq("tpTestingLessBuggyProducts") }}
 {{ show_expanded_faq("tpNoBugsInTestedProduct") }}
 {{ show_expanded_faq("tpNeedToFindAllBugs") }}

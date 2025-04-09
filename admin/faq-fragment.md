@@ -906,6 +906,29 @@ For code authorship, only one person can claim authorship of a line, and that pe
 </div>
 <!-- =============================================================== -->
 
+<div id="faq-tpFeatureDesignChoice-Q">How to choose between feature design choices?</div>
+<div id="faq-tpFeatureDesignChoice-A">
+
+Product design is hard (harder than programming). Feature design choices %%(e.g., to support sorting or not support sorting, sort descending or ascending, which sort order should be default, etc.)%% are subjective and is case-by-case.
+
+General guidance: Choose by considering<br>
+ **[A] what is best for the user** (specifically, with reference to the target user profile you chose for the product), but also factor in<br>
+ **[B] what is _possible_ within your resources** (e.g., time, manpower, expertise) -- what is 'ideal' may not be practical.
+
+**Implications for the practical exam (PE):**
+
+<div class="indented-level1">
+
+Keeping in mind that during the PE testers can file bug reports against design choices, whatever choice you make, be prepared to justify your choice (based in [A] and [B] above) in case a tester filed a bug report objecting to the current design.
+
+Given these justifications are subjective, if both the developer's justification and the tester's justification seems to be equally valid, we will rule in favor of the developer (i.e., no penalty for the developer).
+
+However, if the dev team went with an inferior choice while another superior choice could have been taken using roughly the same amount of resources, the current design choice is flawed. %%For example, if 'sorting items in ascending order by default' is clearly the better choice, but the dev team chose descending order to be the default, assuming implementing either order takes roughly the same amount of resources, the dev team's design choice is flawed.%%
+
+</div>
+</div>
+<!-- =============================================================== -->
+
 <div id="faq-tpHowMuchCodeInV12-Q">How much code changes is 'enough' for this iteration?</div>
 <div id="faq-tpHowMuchCodeInV12-A">
 
@@ -1000,7 +1023,7 @@ Caution: Mass renaming can disrupt authorship tracking. So, it is best to do any
 <div id="faq-tpPeEndTime-Q">What time does the PE end?</div>
 <div id="faq-tpPeEndTime-A">
 
-If you need to, you should be able to leave the PE after 5.45pm, as the part III of the PE (i.e., the last task to be done during the PE slot) can be done later (but you should before the midnight of the same day).
+If you need to, you should be able to leave the PE after 5.45pm, as the part III of the PE (i.e., the last task to be done during the PE slot) can be done later (but you should complete part III before the midnight of the same day).
 </div>
 <!-- =============================================================== -->
 
