@@ -29,8 +29,8 @@
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
     * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [~half a day] -- For testers to select up to {{ tp_pe_bug_count }} bugs to send to the dev team.
-  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sunday - Monday period after PE </span>
-  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Tuesday - Thursday period after the PE.</span>
+  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sunday - Tuesday period after PE </span>
+  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Wednesday - Friday period after the PE.</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
 
 * **Grading**:
@@ -121,10 +121,10 @@ FYI, given below are some of the recent tweaks we have done to the PE, to reduce
 * **Do not use more than one CATcher instance** at the same time. Our grading scripts will red-flag you if you use multiple CATcher instances in parallel.
 * **Use MS Teams (not Zoom) private messages to communicate with the prof.**{% if cs2103%} Zoom sessions are invigilated by tutors, not the prof.{% endif %}
 * **Do not view video Zoom feeds of others** while the testing is ongoing. Keep the video view minimized.
-* **Bug reporting will be done using CATcher**, similar to,
+* **Bug reporting will be done using CATcher**, similar to PE-D, ==except how you download the files to be tested (you need to #r#do this in advance##)==. See the panel below to learn how:
 <div class="indented-level1">
 
-<panel type="primary" header="PE-D Preparation" minimized>
+<panel type="primary" header="PE Preparation" expanded>
 
 <include src="tp-testing-fragment.md#testingPreparations" var-pe_active_tab="1"/>
 </panel>
@@ -139,7 +139,9 @@ FYI, given below are some of the recent tweaks we have done to the PE, to reduce
   * Software: any screen grab/recording software
   * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
   * Software: A text editor or word processing software %%(to keep notes while testing)%% -- use a simple text editor that doesn't have online collaboration features
-* **Do not visit GitHub** unless you are visiting the team's GitHub page to find an information needed for testing.
+  * Software: An IDE or a code editor, to examine the code of the team
+* **Do not visit GitHub**. If you need to visit the team's GitHub page to find an information needed for testing, get the invigilator's permission first.<br>
+  To check if DG diagrams match the code, you can use the source files contained in the `[TEAM_ID]source.zip` file provided.
 * **Do not use any other software running** in the background e.g., Telegram chat.
 * **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
 * **You may use any digital/physical notes** during the PE %%e.g., a list of things to check%%.
@@ -162,6 +164,10 @@ while choosing the `{{ course_pair }} PE` as the session.
      Caution: Do not reuse these dummy bug reports (i.e., by editing them later) to submit real PE bugs.
      As they were created outside the PE duration, they will be ignored by PE bug processing scripts.
   1. If you encounter any problems, post in the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
+  1. If you have not downloaded the PE files to test, do so now. Details given below:
+
+{{ embed_topic(baseUrl+"/admin/tp-testing-fragment.md#zip-download-unzip-info", "Repeating... " + icon_embedding + " Downloading and unzipping JAR/PDF files you will test in the PE", indent=2) }}
+
 </div>
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
@@ -337,7 +343,7 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
      * **confidence** level that it is indeed a bug %%-- if the bug is eventually rejected, it will not earn any marks.%%
      * **but not bug type** -- for this purpose, consider all bug types as equal. {{ bullet_x_red }}
 1. **Delete the remaining bug reports** using CATcher.
-   * What if I deleted a bug that I intended to keep? When you 'delete' a bug using CATcher, the corresponding issue is closed (but not deleted) in GitHub issue tracker. So, the deleting can be reversed by going to GitHub and re-opening that issue.
+   * What if I deleted a bug that I intended to keep? CATcher allows you to 'undelete' an issue.
    * What if I keep more than {{ tp_pe_bug_count }} bugs? In that case, we take the {{ tp_pe_bug_count }} bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
@@ -346,7 +352,7 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
 
 <include src="tp-pe-fragment.md#pe-p2-desc" inline /><p/>
 
-==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 7 if S == 2 else 7) }}==
+==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 8 if S == 2 else 8) }}==
 
 <box type="important" >
 
@@ -537,7 +543,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 {{ icon_important_big_red }} While you are waiting for Phase 3 to start, comments will be added to the bug reports in your `/pe` repo, to indicate the response each received from the receiving team. <span class="text-danger">Please do not edit any of those comments or reply to them via the GitHub interface.</span> Doing so can invalidate them, in which case the grading script will assume that you agree with the dev team's response. Instead, wait till the start of the Phase 3 is announced, after which you should use CATcher to respond.
 </div>
 
-==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 10) }}==
+==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 11) }}==
 
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the dev team, you can record your objections and the reason for the objection.
   * `response.*`: bug not accepted {texts="['(a)', '(b)', '(c)', '(d)']"}

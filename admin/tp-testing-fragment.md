@@ -51,7 +51,19 @@ Issues created for PE-D and PE need to be in a precise format for our grading sc
 </tab>
 <tab header="PE (at **{{ version_final }}**)">
 
-* After you have been notified of the download location, download the zip file that bears your name. The password required to unzip it will be given to you at the start of the PE.
+<div id="zip-download-unzip-info" >
+<box type="info" header="++Downloading and unzipping JAR/PDF files you will test in the PE++" icon=":fas-download:">
+
+The files you need for the PE (i.e., `.jar` file, UG and DG `.pdf` files, and the source code) will be **given to you as an encrypted zip file**. Here are the two steps involved in using it.
+
+1. **Downloading the zip file**: After we inform you the details (via email), go to the download location (a Dropbox folder), and download the zip file bearing your partial student number (e.g., `A---0000X.zip`).
+   * The **dropbox password needed to download this** file is `{{ course | lower }}`.
+   * ==You must download this file in advance.== Trying to download it during the PE can cause Dropbox to block you due to 'too many attempts'.
+1. **Unzipping the zip file**: You will **need a second two-part password** to unzip this file. That password has two parts.
+   * The second part will be unique to each student, and will be given in the same email mentioned above.
+   * The first part of the password (common to all) will only be given at the start of the PE, by your PE invigilator.
+</box>
+</div>
 
 </tab>
 </tabs>

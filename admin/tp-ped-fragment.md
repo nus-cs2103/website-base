@@ -95,8 +95,9 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
   * We will email you the second part in advance, via email (it's unique to each student). Keep it safe, and have it ready at the start of the PE.
   * At the start of the PE, we'll give you the first part of the password (common to the whole class). Use combined password to unzip the file, which should give you another zip file with the name suffix `_inner.zip`.
   * Unzip that second zip file normally (no password required). That will give you a folder containing the JAR file to test and other PDF files needed for the PE. ==Warning: do not run the JAR file while it is still inside the zip file==.<br>
-  Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%
-  * Recommended: Try above steps using the [this sample zip file](https://github.com/nus-cs2103/website-base/files/14849276/JohnDoe.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).<br>
+  Ignore the `padding_file` found among the extracted files. %%Its only purpose is to mask the true size of the JAR file so that someone cannot guess which team they will be testing based on the zip file size.%%<br>
+    :fab-apple: Some macOS versions will automatically unzip the inner zip file after you unzip the outer zip file using the password.
+  * {{ icon_tip }} Strongly recommended: Try above steps using the [this sample zip file](https://github.com/nus-cs2103/website-base/files/14849276/JohnDoe.zip) if you wish (first part of the password: `password1-`, second part: `password2` i.e., you should use `password1-password2` to unzip it).<br>
     Use the JAR file inside it to try the steps given below as well, to confirm your computer's Java environment is as expected and can run PE jar files.
 </tab>
 </tabs>
@@ -149,6 +150,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
   Reason: If there are serious issues with the jar file that makes product testing impossible, you need to find that out quickly (within the first 10 minutes) so that you can switch to a different product to test. If you find yourself in such a situation much later, you will not be able to get the full allotted time for testing.
 * {{ icon_tip }} **Be careful when copying commands from the UG** (PDF version) to the app as some PDF viewers can affect the pasted text. If that happens, you might want to open the UG in a different PDF viewer.<br>
   If the command you copied spans multiple lines, check to ensure the line break did not mess up the copied command.
+* **You may use the provided `source-code.zip` file to examine the source code** of the app (e.g., to check the accuracy of the diagrams in the DG). But you should not use the source code to run the application (use the `.jar` file instead).
 
 
 ###### <div class="text-white bg-secondary p-1">c) What bugs to report?</div>
@@ -282,7 +284,7 @@ Use the pain of dealing with this kind of bug reports as an opportunity to devel
 </div>
 
 
-* **If you have received stray bug reports** (i.e., bug reports that don't seem to be about your project), do let us know ASAP (email the prof).
+* **If you have received stray bug reports** (i.e., bug reports that seems to be about a different project), do let us know ASAP (email the prof).
 * **You can navigate to the original bug report** (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
   * {{ icon_tip }} Do not argue with the tester to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the tester for their view and discontinue the discussion.
 * **Aim to ==do a systematic triaging of issues received==**. Some suggestions:
