@@ -2379,7 +2379,7 @@ Reminder: double-check to ensure the code attributed to you by RepoSense is corr
 {{ embed_topic("tp-pe-fragment.md#pe-phases", "Admin " + icon_embedding + " tP → **PE Phases**", "3", indent="1", type="success") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_attend_the_makeup_PE">{{ icon_individual }} %%[if needed] Attend the makeup practical exam%%</span>
+<span id="heading_attend_the_makeup_PE">{{ icon_individual }} %%[if needed] Attend the re-scheduled practical exam%%</span>
 <div id="desc_attend_the_makeup_PE">
 
 * In the very unlikely event that the PE had to be cancelled due to technical issues, attend the makeup PE on this day.

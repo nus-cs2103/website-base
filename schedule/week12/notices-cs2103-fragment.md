@@ -14,3 +14,9 @@ Heads up! ==Attendance is compulsory== for the weekly briefing coming up on {{ g
 </box>
 <p/>
 {% endif %}
+{% if pe_week == '12' %}
+<box type="tip" seamless icon=":fas-link:">
+
+**Quick Links:** [Practical Exam info](../../admin/tp-pe.html) | [PE Seat Numbers]({{ pe_seat_numbers_gsheet }})
+</box>
+{% endif %}

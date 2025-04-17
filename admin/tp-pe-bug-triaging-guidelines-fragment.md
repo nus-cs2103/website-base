@@ -13,7 +13,7 @@
 
 <div id="how-to-prove-out-of-scope">
 
-* **How to prove that something is `response.NotInScope`**: In general, a flaw (e.g., a missing feature, a suboptimal design of a feature, a known bug) can be considered `NotInScope` if rectifying it is less important than the work that has been done already (because it is fine to delay lower priority work until future iterations) %%i.e., the supposedly 'better' implementation will take more effort than the current implementation, reducing the effort available to spend on other more important tasks%%<br>
+* **How to prove that something is `response.NotInScope`**: In general, a flaw (e.g., a missing feature, a suboptimal design of a feature, a known bug) can be considered `NotInScope` ==if rectifying it is less important than the work that has been done already== (because it is fine to delay lower priority work until future iterations) %%i.e., the supposedly 'better' implementation will take more effort than the current implementation, reducing the effort available to spend on other more important tasks%%<br>
   In addition, the following (at least one) need to be satisfied:
   * The UG specifies it as not supported or coming in a future version.
   * The user cannot attempt to use the missing feature or when the user does so, the software fails gracefully, possibly with a suitable error message i.e., the software should not crash.
@@ -28,6 +28,7 @@
 
 * **Even bugs inherited from AB3 are counted**. As the current development team, you are responsible for all bugs in the product, irrespective of when it was created.
 
+* **Listing something as a known issue** in the DG can reduce the severity of the issue %%(because informing users about the issues, possibly how to avoid/circumvent the issue reduces the impact of the issue to some extent)%5 but that does not mean it is totally immune from being considered a bug.
 
 <div id="triaging-functionality-bugs">
 

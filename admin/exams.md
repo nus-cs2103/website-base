@@ -65,10 +65,10 @@ The final exam has two types of questions:
    * Try a few practice exams provided in the above link.
    * Write to NUS CIT (citbox25@nus.edu.sg) if you run into any technical issues.
    * If you do not have a working laptop for the exam, please contact IT Care itcare@nus.edu.sg directly for a laptop loan (for exam purpose only).
-1. ==**Examplify will use the full lock-down**== mode during the exam. That is, you will not be able to access Internet.
-   That is, you will not be able to access any applications/files in your computer while you are doing the exam.<br>
+1. ==**Examplify will use the full lock-down**== mode during the exam i.e., no access Internet, and,
+   no access to any applications/files in your computer during the exam.<br>
    %%Reason: Because of the risk of locally-installed LLMs affecting the integrity of the exam, NUS recommends using full-lockdown mode.%%
-1. **Consider this as a 'cheat-sheet' exam**, as that is the best match to the nature of the questions in this exam. However, you will have the following additional flexibilities:
+1. **Consider this as a 'cheat-sheet' exam**, as that matches the nature of the questions in this exam the best. However, you will have the following additional flexibilities:
    * **No limit on cheat-sheet page count.** You may bring any number of pages, and use any written/printed documents. %%For example, you may bring a printed copy of the entire textbook.%%
    * **An _exam reference_ PDF file will be available inside Examplify**, containing the full textbook, UML reference sheet, and the coding standard.
      * Caveat: Don't plan to refer to this file frequently. The Examplify UI is not optimized for quick opening/searching of big PDF files. So, use it only when your memory or the hard-copy cheat-sheets are not sufficient.
@@ -78,19 +78,28 @@ The final exam has two types of questions:
 
 <div class="indented-level1">
 
-<panel type="info" header="**How to check compatibility of your device**" expanded>
+<panel type="info" header="**How to check the compatibility of your device**" expanded>
 
 * **Ensure you have Examplify installed**{.text-info} in your exam device. {texts="['i.', 'ii.', 'iii.', 'iv.', 'v.']" t-class="fw-bold text-info"}
 * **Ensure you have Adobe Acrobat Reader installed**{.text-info} in your exam device, as Examplify will be using that software to open PDF files.
 * **Download the mock exam**{.text-info} we have provided. It has only three dummy questions, for you to get familiar with the exam mode.
 * **Do the mock exam**{.text-info} (password: `Hello123`).<br>
-  **Confirm you are able to open/resize/navigate/search the PDF file**{.text-info} we have provided as an attachment inside Examplify (this file can be accessed via the `EXAM CONTROLS` menu in the Examplify UI).
+  **Confirm you are able to open/resize/navigate/search the PDF file**{.text-info} we have provided as an attachment inside Examplify (this file can be accessed via the `EXAM CONTROLS` menu in the Examplify UI).<br>
+  In particular, ==check the search feature== (some have found the search to be too slow or non-responsive).
+
+**If searching the Exam Reference PDF file inside Examplify is not working properly**:
+
+* Uninstall, and install, the Adobe Acrobat Reader. Restart the computer. Ensure that you can use Adobe Acrobat to search the copy of the Exam Reference PDF file provided in Canvas/files/handouts. Then, try Examplify again.
+* If the problem persists in Examplify, contact CIT urgently, and request a time to go there and troubleshoot the issue (that way, you can conclude the problem faster than troubleshooting via email).
+
+Deadline to complete the compatibility check (including liaising with CIT): #r#at least {{ '10' if semester == 'AY2425S2' else '14' }} days before the exam##
+
 </panel>
 <p/>
 </div>
 
-7. **Not required to record the screen**.
-1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2). We'll give you the password for opening each part at the exam, at the respective starting time of each part.<br>
+7. **You are not required to record the screen**.
+1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2). We'll give you the password for opening each part at the exam, at the starting time of each part.<br>
   You will be notified when they are ready for download (typically, around 24 hours before the exam start time).
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== %%(reason: at an exam of this scale, it is not practical to clarify such doubts on-the-spot on a timely manner)%%. We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
 
@@ -116,7 +125,7 @@ The final exam has two types of questions:
   You may use pencils if you wish.
 * Duration: 20 minutes
 * The questions will be in Examplify.
-* **Bring 1-2 sheets of A4 size papers when you come to the exam:**
+* **Bring 1-2 sheets of A4 size papers when you come to the exam**, for drawing these diagrams.
 * These diagrams will not be graded directly. Instead, you will use them when answering part 2 of the exam.<br>
   However, we may use the diagrams to give _some_ consolation marks should you score very low in the corresponding MCQ questions.<br>
   For that purpose, the papers will be collected at the end of the full exam (i.e., after part 2 is over).
@@ -126,7 +135,7 @@ The final exam has two types of questions:
 ### Final exam - part 2
 
 * A quiz containing 32 MCQ questions. All questions are estimated to be equal size/difficulty.
-* You only need to answer 30 questions correctly to get full marks. The extra two questions are there to cushion you against careless mistakes or misinterpreting a question.
+* You only need to answer 30 questions correctly to get full marks. The extra two questions are a cushion against careless mistakes or misinterpreting a question.
 * Questions will appear in random order.
 * You #r#will not be able to go back to previous questions##.<br>
 

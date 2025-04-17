@@ -597,7 +597,7 @@
  'CS2103-F15-1': 'TAskbook',
  'CS2103-F15-2': 'TutorSynch',
  'CS2103-F15-3': 'RecruitTrackPro',
- 'CS2103-F15-4': 'HRtisan',
+ 'CS2103-F15-4': 'TAssit',
  'CS2103-W11-1': 'Mentorstack',
  'CS2103-W11-2': 'InternHive',
  'CS2103T-F10-1': 'TeamSync',

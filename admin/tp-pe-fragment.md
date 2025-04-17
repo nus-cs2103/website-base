@@ -91,8 +91,8 @@ FYI, given below are some of the recent tweaks we have done to the PE, to reduce
 
 * **Remote mode proctoring will be done via Zoom.** No admission if the following requirements are not met.{% if cs2103 %}
   * **You need two Zoom devices** (PC: chat, audio ~~video~~, Phone: video, ~~audio~~), unless you have an external webcam for your PC.
-  * {{ icon_tip }} To change the Zoom display name as required by the PE, join the Zoom call, go to the 'Participation' panel, and search for yourself. Then, click on 'More', followed by 'Rename'.
-  * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true)== about 2 days before the PE. e.g.,
+  * {{ icon_tip }} To change the Zoom display name as required by the PE, !!you must first join the PE Zoom meeting!! (Zoom will not allow you to change the name in advance). Then, go to the 'Participation' panel, and search for yourself. Then, click on 'More', followed by 'Rename'.
+  * **Add your `[PE_seat_number]` in front of the _first name_ of your Zoom display name**, in your Zoom devices. ==Seat numbers can be found in [here]({{ pe_seat_numbers_gsheet }})== about 2 days before the PE. e.g.,
     * `[M18] John Doe` (`M18` is the seat number)
     * `[M18][PC] John Doe` (for the PC, if using a phone as well){% elseif cs2113 %}
   * You will be ==notified of the zoom session== that you should log in at least 1 day in advance via Canvas. ==**Remember: we will NOT use the same zoom session as the lectures**==
@@ -326,6 +326,17 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a substantial bonus if >70%) of your bugs are _**accepted as reported**_ (i.e., the eventual ~~`type.*` and~~ `severity.*` of the bug matches the value you chose initially and the bug is either `response.Accepted` or `response.NotInScope`).
 </box>
 
+<div id="pe-questions-we-cannot-answer">
+<box type="info" seamless>
+
+**If you are not sure if something is a bug, or the correct severity ...**{.text-info}
+
+If you are not sure if something is a bug, or the correct severity, you are welcome to post in the forum and discuss with peers. But given these decisions are part of PE deliverables, the teaching team will not be able to directly answer questions such as 'is this a bug?' or 'what's the correct severity for this bug?' -- but we can still pitch in by providing relevant information/guidelines.
+
+The above **applies to this and all remaining PE phases**.
+</box>
+</div>
+
 ****Procedure:****
 
 1. **Wait for the announcement** declaring this part of the PE to be open -- expected to be Friday night or Saturday morning.
@@ -392,12 +403,16 @@ Accordingly, it is typical a team to have a lot more `response.NotInScope` bugs 
 Note that `response.NotInScope` bugs earn a small amount of credit for the tester without any penalty for the dev team, unless there is an unusually high number of such bugs for a team.
 </box>
 
-Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
+<include src="tp-pe-fragment.md#pe-questions-we-cannot-answer" />
 
 <box>
 
-**Instructions for Reviewing Bug Reports**
+**++Instructions for Reviewing Bug Reports++**
 
+* **Suggested workflow:**
+  1. Give a deadline for team members to self-assign bugs they voluntarily take responsibility for.
+  1. After the deadline, assign the remaining bugs based on team consensus (e.g., discuss through a team meeting).
+  1. Optionally, review how team members have responded to the bugs assigned to them, and providing suggestions on their choice of `response.*` label and justifications.
 * **Don't freak out if there are a lot of bug reports.** Many can be duplicates and some can be _false positives_. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.
 * **Nit-picking is a good sign**: If you receive a lot of nit-picking type of bugs that make you roll your eyes, it means testers were unable to find more serious bugs. That's a good thing.
 * **Not exactly zero-sum**: As mentioned earlier, the penalty for having a specific bug is not the same as the reward for reporting that bug (it's not a _zero-sum_ game). For example, the reward for testers will be higher (because we don't expect the products to have that many bugs after they have gone through so much prior testing)
@@ -519,10 +534,10 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
   * changing the bug type
   * non-obvious duplicate
 
-{{ show_faq("tpJustifyBugsAcceptedAsIs") }}
-{{ show_faq("tpMoreCodeMeansHigherPenalty") }}
-{{ show_faq("tpRealBugWrongLabel") }}
-{{ show_faq("tpCorrectBugIncorrectSuggestion") }}
+{{ show_faq("tpJustifyBugsAcceptedAsIs", is_compact=1) }}
+{{ show_faq("tpMoreCodeMeansHigherPenalty", is_compact=1) }}
+{{ show_faq("tpRealBugWrongLabel", is_compact=1) }}
+{{ show_faq("tpCorrectBugIncorrectSuggestion", is_compact=1) }}
 <p/>
 </box>
 
@@ -543,7 +558,7 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 {{ icon_important_big_red }} While you are waiting for Phase 3 to start, comments will be added to the bug reports in your `/pe` repo, to indicate the response each received from the receiving team. <span class="text-danger">Please do not edit any of those comments or reply to them via the GitHub interface.</span> Doing so can invalidate them, in which case the grading script will assume that you agree with the dev team's response. Instead, wait till the start of the Phase 3 is announced, after which you should use CATcher to respond.
 </div>
 
-==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 11) }}==
+==**Deadline:** {{ get_date(date_w13_start if pe_week == "13" else date_w12_start, 11) }}==. Strongly recommended to ==**finish early, by 6pm**== on that day (reason: we will be sending out a status update email at 6pm -- if there are any discrepancies, you can still rectify them before the hard deadline).
 
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the dev team, you can record your objections and the reason for the objection.
   * `response.*`: bug not accepted {texts="['(a)', '(b)', '(c)', '(d)']"}
@@ -569,7 +584,7 @@ However, ==if the dev team's argument is not too far from 'reasonable', it may b
 
 {{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Grading bugs found in the PE", "pe-gradingBugsFoundInPe", indent=1) }}
 
-* If the dev team disagreed with an aspect (i.e., type/severity/<tooltip content="i.e., accept vs not accept">validity</tooltip>) and you now agree with the dev team's position, it will not hurt your accuracy rating. Here are some examples (for the `severity.*`):
+* If the dev team disagreed with an aspect (i.e., <tooltip content="`type.*` is not considered for the accuracy bonus">~~type~~</tooltip>/severity/<tooltip content="i.e., accept vs not accept">validity</tooltip>) and you now agree with the dev team's position, it will not hurt your accuracy rating. Here are some examples (for the `severity.*`):
 
 {% set up %}<span class="text-success">:fas-arrow-up:</span>{% endset %}
 {% set down %}<span class="text-danger">:fas-arrow-down:</span>{% endset %}

@@ -75,6 +75,8 @@
 <variable name="lecture_name">{{ lecture_name_upper | lower }}</variable>
 <variable name="lecture_name_short">{{ lecture_name }}</variable>
 
+<variable name="pe_seat_numbers_gsheet">https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true</variable>
+
 <!-- ===========================  secondary variables =========================================== -->
 
 <variable name="cs2103">{{ "Y" if course == "CS2103" }}</variable>

@@ -1091,7 +1091,7 @@ You can disagree with the rejection, and the teaching team will likely rule in y
 <div id="faq-tpTesterAddingMoreInfoLater-Q">Can I (i.e., the tester) add more information about the bug when I object to a dev team's response?</div>
 <div id="faq-tpTesterAddingMoreInfoLater-A">
 
-Yes, you may. Given that the dev team did not get to see this addition info when they triaged the bug, the weight such additional info add to your case is lower than if you had that info in the initial bug report. Nevertheless, it can still help your cause, especially if the dev team should have thought about that info on their own, even if they were missing in the initial bug report.
+Yes, you may. Given that the dev team did not get to see this additional info when they triaged the bug, the weight such additional info adds to your case is lower than if you had that info in the initial bug report. Nevertheless, it can still help your cause, especially if the dev team should have thought about that info on their own, even if they were missing in the initial bug report.
 </div>
 <!-- =============================================================== -->
 
@@ -1133,7 +1133,7 @@ The standard operation procedure for digital exams: Some venues have charging po
 
 You are welcome to try past exam papers available in the library and post answers in the forum to discuss with others. The teaching team will contribute to those discussions as well, and ensure you reach a reasonable answer.
 
-Caution: The scope of the course and the exam format evolve over time and some past questions may not be exactly in sync with the current semester.
+Caution: The scope of the course and the exam format evolve over time and some past questions may not be exactly in sync with the current semester. The format of the archived exam papers is different from the current format.
 </div>
 <!-- =============================================================== -->
 <div id="faq-examWhyNoBackwardNavigation-Q">WHAT? Why aren't we allowed to go back to previous questions?</div>
