@@ -1,6 +1,7 @@
 {% from "common/admin.njk" import show_admin_page with context %}
 {% from "common/topics.njk" import panopto with context %}
 {% from "common/macros.njk" import show_faq with context %}
+{% set is_full_lockdown = 0 %}
 
 {% call show_admin_page("exams") %}
 <div id="main">
@@ -65,32 +66,40 @@ The final exam has two types of questions:
    * Try a few practice exams provided in the above link.
    * Write to NUS CIT (citbox25@nus.edu.sg) if you run into any technical issues.
    * If you do not have a working laptop for the exam, please contact IT Care itcare@nus.edu.sg directly for a laptop loan (for exam purpose only).
-1. ==**Examplify will use the full lock-down**== mode during the exam i.e., no access Internet, and,
-   no access to any applications/files in your computer during the exam.<br>
+1. ==**Examplify will use the {{ 'full' if is_full_lockdown else '~~full~~ simulated' }} lock-down**== mode during the exam i.e., no access Internet, and,
+   {{ 'no' if is_full_lockdown else 'not allowed to' }} access any applications/files in your computer during the exam {{ '==except the _Exam Reference_ PDF file==' if not is_full_lockdown }}.<br>
    %%Reason: Because of the risk of locally-installed LLMs affecting the integrity of the exam, NUS recommends using full-lockdown mode.%%
 1. **Consider this as a 'cheat-sheet' exam**, as that matches the nature of the questions in this exam the best. However, you will have the following additional flexibilities:
-   * **No limit on cheat-sheet page count.** You may bring any number of pages, and use any written/printed documents. %%For example, you may bring a printed copy of the entire textbook.%%
-   * **An _exam reference_ PDF file will be available inside Examplify**, containing the full textbook, UML reference sheet, and the coding standard.
+   * **No limit on cheat-sheet page count.** You may bring any number of pages, and use any written/printed documents. %%For example, you may bring a printed copy of the entire textbook.%%{% if is_full_lockdown %}
+   * **An _exam reference_ PDF file will be available inside Examplify**, containing the full textbook, the UML reference sheet, and the coding standard.
      * Caveat: Don't plan to refer to this file frequently. The Examplify UI is not optimized for quick opening/searching of big PDF files. So, use it only when your memory or the hard-copy cheat-sheets are not sufficient.
-     * A copy of this file will be provided to you in advance (in Canvas/files/handouts), in case you want to use it during exam preparations.
-1. **==You need to check the exam-compatibility of your device early==** (as given in the panel below) -- even if you have used Examplify for other exams before, as the Examplify behaviour varies based on the specific exam configuration -- and work with NUS CIT to resolve any issues you encounter.<br>
-   Issues encountered by past students include problems in viewing and searching the _exam reference_ PDF file inside Examplify.
+     * A copy of this file will be provided to you in advance (in Canvas/files/handouts), in case you want to use it during exam preparations.{% else %}
+   * **An _exam reference_ PDF file will be available in Canvas**, containing the full textbook, the UML reference sheet, and the coding standard. You may open it ==in Adobe Acrobat Reader (not allowed to use other PDF readers)== (<popover content="Using the same software prevents unfair advantages and makes it easy for invigilators to monitor for use of unauthorised software">Why?</popover>).
+     {% endif %}
+1. **==You need to check the exam-compatibility of your device early==** (as given in the panel below) -- even if you have used Examplify for other exams before, as the Examplify behaviour varies based on the specific exam configuration -- and work with NUS CIT to resolve any issues you encounter.{% if is_full_lockdown %}<br>
+   Issues encountered by past students include problems in viewing and searching the _exam reference_ PDF file inside Examplify.{% endif %}
 
 <div class="indented-level1">
 
 <panel type="info" header="**How to check the compatibility of your device**" expanded>
 
 * **Ensure you have Examplify installed**{.text-info} in your exam device. {texts="['i.', 'ii.', 'iii.', 'iv.', 'v.']" t-class="fw-bold text-info"}
-* **Ensure you have Adobe Acrobat Reader installed**{.text-info} in your exam device, as Examplify will be using that software to open PDF files.
+* **Ensure you have Adobe Acrobat Reader installed**{.text-info} in your exam device -- {{ 'Examplify will be using that software to open PDF files' if is_full_lockdown else "no other PDF software allowed during the exam" }}.<br>
+  :fab-windows: Windows users: When downloading the installer, you may want to opt out of installing additional bundled
+   software (e.g., McAfee Virus Scanner) -- this option is given when downloading, not when installing.
+
 * **Download the mock exam**{.text-info} we have provided. It has only three dummy questions, for you to get familiar with the exam mode.
 * **Do the mock exam**{.text-info} (password: `Hello123`).<br>
-  **Confirm you are able to open/resize/navigate/search the PDF file**{.text-info} we have provided as an attachment inside Examplify (this file can be accessed via the `EXAM CONTROLS` menu in the Examplify UI).<br>
-  In particular, ==check the search feature== (some have found the search to be too slow or non-responsive).
+  **Confirm you are able to open/resize/navigate{% if is_full_lockdown %}/search{% endif %} the PDF file**{.text-info} we have provided as an attachment inside Examplify (this file can be accessed via the `EXAM CONTROLS` menu in the Examplify UI).{% if is_full_lockdown %}<br>
+  In particular, ==check the search feature== (some have found the search to be too slow or non-responsive).{% else %}In the mock exam, this PDF file contains just a single page with some dummy content.{% endif %}
 
-**If searching the Exam Reference PDF file inside Examplify is not working properly**:
+{% if is_full_lockdown %}**If searching the Exam Reference PDF file inside Examplify is not working properly**:
 
-* Uninstall, and install, the Adobe Acrobat Reader. Restart the computer. Ensure that you can use Adobe Acrobat to search the copy of the Exam Reference PDF file provided in Canvas/files/handouts. Then, try Examplify again.
-* If the problem persists in Examplify, contact CIT urgently, and request a time to go there and troubleshoot the issue (that way, you can conclude the problem faster than troubleshooting via email).
+* Ensure that you can use Adobe Acrobat to search the copy of the Exam Reference PDF file provided in Canvas/files/handouts.
+* Delete Adobe Acrobat Reader cache (see https://www.youtube.com/watch?v=92xTlXv4Us8) and try the PDF attachment in Examplify again.
+* If the above doesn't work, uninstall, and install, the Adobe Acrobat Reader. Restart the computer.  Then, try Examplify again.
+* If the problem persists, contact CIT urgently, and request a time to go there and troubleshoot the issue (that way, you can conclude the problem faster than troubleshooting via email).
+{% endif %}
 
 Deadline to complete the compatibility check (including liaising with CIT): #r#at least {{ '10' if semester == 'AY2425S2' else '14' }} days before the exam##
 
@@ -98,7 +107,7 @@ Deadline to complete the compatibility check (including liaising with CIT): #r#a
 <p/>
 </div>
 
-7. **You are not required to record the screen**.
+7. **You are not required to record the screen**. Doing so can cause problems (lag, crashes, lockout etc.).
 1. **Download all parts of the exam before you come to the exam** (i.e., parts 1, 2). We'll give you the password for opening each part at the exam, at the starting time of each part.<br>
   You will be notified when they are ready for download (typically, around 24 hours before the exam start time).
 1. **If you have a doubt/query about a question**, or want to make an assumption about a question, please write it down in the 'NOTES' text box. ==Do not try to communicate those with the invigilator during the exam.== %%(reason: at an exam of this scale, it is not practical to clarify such doubts on-the-spot on a timely manner)%%. We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.
@@ -181,6 +190,8 @@ E. Gantt charts.
 <p/>
 </div>
 
+* **Some Part 2 questions will be based on the UML diagrams you drew in Part 1**. In case you need to refer back to Part 1 questions, they will be provided as a PDF attachment in Part 2.
+
 </div>
 
 ## Exam preparation resources
@@ -201,14 +212,27 @@ The following exam resources will be **available from the start of week 13**.
   Model answers are in {{ handouts_link }}.
 * **A practice exam** of same format/length/difficulty as the actual exam will be available at least one week before the exam.<br>
   You can use it to practice your timing/pace. Multiple attempts are allowed.
-    * Recommended:
-        * Watch the exam briefing video and finish studying the topics before
-          you attempt the practice exam, to get its full benefit.<br>
-        * Do the mock exam (to get used to the software and question structure) before the practice exam.
-    * Where to find it: on Examplify. Password: `Hello123`
-    * Model answers are available on {{ handouts_link }}.
+  * Recommended:
+      * Watch the exam briefing video and finish studying the topics before
+        you attempt the practice exam, to get its full benefit.<br>
+      * Do the mock exam (to get used to the software and question structure) before the practice exam.
+  * Where to find it: on Examplify.
+    * Part 1: Password `Hello123`  (Resume code: `B5FCD8`)
+    * Part 2: Password `Hello123`  (Resume code: `BD097F`)
+  * Model answers are available on {{ handouts_link }}.
 * **Some extra practice questions** for exam part 1 are in
   {{ handouts_link }} -- look for the file `Additional practice questions for part 1.pdf`
+* **UML Worked Examples** that you previously encountered (also given in the panel below) too are a suitable tool to prepare for the exam. For example, you can watch the first few minutes to see the code that will the basis for the diagram, then draw the diagram yourself, and watch the remainder of the video to compare your answer to the model answer.
+<div class="indented-level1">
+<panel type="seamless" header=":fab-youtube: UML Worked Examples">
+
+<include src="common-schedule-fragment.md#uml-worked-examples-cd" />
+<include src="common-schedule-fragment.md#uml-worked-examples-sd" />
+<include src="common-schedule-fragment.md#uml-worked-examples-ad" />
+
+</panel><p/>
+</div>
+
 * **All weekly quizzes** will be reopened on [Canvas Quizzes]({{ url_canvas_home }}/quizzes).
   You can retake them to self-test your knowledge (note: retaking them will not affect participation marks).
 * **Recordings of all tutorial Zoom sessions** should be available in a file named `Recordings.docx` inside
@@ -222,6 +246,8 @@ The following exam resources will be **available from the start of week 13**.
 * **PDF files useful for the exam** (given in {{ handouts_link }}):
   * Exam Reference PDF
   * Topics infographic (shows how the various topics fit into the big picture)
+* **Forum questions useful for exam preparations** are listed [here]({{ url_forum }}?q=label%3AsuitableForExamPrep) (marked with the label `suitableForExamPrep`).<br>
+   You are strongly encouraged to join those discussions -- it will help with exam prep, and earn you forum participation credit as well.
 
 {{ show_faq("examMorePastPapersAndAnswers") }}
 

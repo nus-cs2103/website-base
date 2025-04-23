@@ -783,9 +783,8 @@ Activity diagrams is the {{ "first" if tee3201 else "last" }} UML diagram type y
 <div id="{{ slugify("Followup Activity Diagrams") }}">
 
 Here are some examples showing the steps of drawing an activity diagram to match a given workflow.
+<include src="common-schedule-fragment.md#uml-worked-examples-ad" />
 
-{{ panopto("aca861a5-69f1-4669-a125-acde00a52a0a", desc="Activity diagram for the grade calculation") }}
-{{ panopto("1cc77229-f9d3-482e-b7e5-ac53003984e5", desc="Activity diagram for the do-while loop") }}
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Other UML Models") }}">
