@@ -139,6 +139,9 @@
 {{ show_expanded_faq("examMorePastPapersAndAnswers") }}
 {{ show_expanded_faq("examSitNearChargingPoint") }}
 {{ show_expanded_faq("examWhyNoBackwardNavigation") }}
+{{ show_expanded_faq("examGradingFollowUpQuestion") if cs2103 }}
+{{ show_expanded_faq("examMissedFollowUpQuestion") if cs2103 }}
+{{ show_expanded_faq("examPartialMarksForMsq") if cs2103 }}
 
 </div>
 

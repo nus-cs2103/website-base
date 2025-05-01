@@ -1122,6 +1122,36 @@ Yes. A higher severity means the enhancement you suggested is of higher value/im
 =============================================================== -->
 
 <!-- =============================================================== -->
+<div id="faq-examGradingFollowUpQuestion-Q">How is the follow-up question graded?</div>
+<div id="faq-examGradingFollowUpQuestion-A">
+
+In most cases the answer to the follow-up question is used to decide if you chose the right answer for the right reasons. Choosing the right answer for the wrong reasons will not earn you marks.
+
+In rare cases the answer to the follow-up question can be used to give partial marks for choosing the wrong answer (e.g., the second-best answer), if it shows your reasoning was mostly correct, although you ended up choosing the wrong answer.
+</div>
+<!-- =============================================================== -->
+<div id="faq-examMissedFollowUpQuestion-Q">What if I accidentally clicked `Next` before answering the follow-up question?</div>
+<div id="faq-examMissedFollowUpQuestion-A">
+
+In that case you will not be able to go back to type the answer, because our exam does not allow backward navigation.<br>
+Not to worry. We realise that this can happen under exam pressure. Therefore, we will overlook up to two missing/incorrect answers to follow-up questions. This also means if the timer is running out, it may be OK to skip the follow-up question in the last two questions.
+</div>
+<!-- =============================================================== -->
+<div id="faq-examPartialMarksForMsq-Q">Do I get partial marks for checkbox style questions?</div>
+<div id="faq-examPartialMarksForMsq-A">
+
+Yes, you get half the marks if your answer is only off-by-one.
+
+For example, if the answer is [A,B],
+
+* [A, B]: full marks
+* [A] or [B]: half marks, because only one correct answer missing
+* [A,B,C], [A,B,D] etc.: half marks, because only one incorrect option selected
+* [A,C], [B,C], [A,D] etc.: half marks, because only one selected answer is incorrect
+* [A,B,C,D]: no marks, because two incorrect options selected
+* [A,C,D]: no marks, because one correct answer missing and one incorrect option selected
+</div>
+<!-- =============================================================== -->
 <div id="faq-examSitNearChargingPoint-Q">My laptop battery is weak. Can I be put in a seat near a charging point?</div>
 <div id="faq-examSitNearChargingPoint-A">
 

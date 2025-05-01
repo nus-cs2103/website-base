@@ -53,8 +53,6 @@ The final exam has two types of questions:
 
 ## Exam admin info to note
 
-
-
 1. **Schedule/venue:** The final exam will be as per the normal exam schedule, which will be sent to you by the Registrar's Office (or you can find via EduRec -> Academics -> Exams -> View exam schedule). You can find the date/time from [NUSMODS](https://nusmods.com/modules/{{ course }}) as well.
 1. **Scope:**
    * All topics in the textbook, excluding level 4 topics (i.e., optional topics), are examinable. For your convenience, you can view the examinable portion of the textbook in [this printable view of the textbook](../se-book-adapted/print.html) (same as the PDF version of the textbook provided to you).
@@ -74,7 +72,9 @@ The final exam has two types of questions:
    * **An _exam reference_ PDF file will be available inside Examplify**, containing the full textbook, the UML reference sheet, and the coding standard.
      * Caveat: Don't plan to refer to this file frequently. The Examplify UI is not optimized for quick opening/searching of big PDF files. So, use it only when your memory or the hard-copy cheat-sheets are not sufficient.
      * A copy of this file will be provided to you in advance (in Canvas/files/handouts), in case you want to use it during exam preparations.{% else %}
-   * **An _exam reference_ PDF file will be available in Canvas**, containing the full textbook, the UML reference sheet, and the coding standard. You may open it ==in Adobe Acrobat Reader (not allowed to use other PDF readers)== (<popover content="Using the same software prevents unfair advantages and makes it easy for invigilators to monitor for use of unauthorised software">Why?</popover>).
+   * **An _exam reference_ PDF file will be available in Canvas**, containing the full textbook, the UML reference sheet, and the coding standard. You may open it ==in Adobe Acrobat Reader or the Mac Preview app (not allowed to use other PDF readers)== (<popover content="Allowing multiple PDF software increases the risk of some students getting an unfair advantages through the software (e.g., search performance of PDF readers can vary), and makes it harder for invigilators to monitor for use of unauthorised software">Why?</popover>).<br>
+     :fab-apple: Some Mac users have reported an issue with the Acrobat Reader -- hence, using the Mac Preview app to view the Exam Reference PDF will be allowed as well.<br>
+     {{ icon_important_big_red }} When using either of the two PDF 'allowed' viewers, **limit your usage to viewing, navigating, and simple search only**. #r#**Do not use any AI-like features provided by the PDF tool**##.
      {% endif %}
 1. **==You need to check the exam-compatibility of your device early==** (as given in the panel below) -- even if you have used Examplify for other exams before, as the Examplify behaviour varies based on the specific exam configuration -- and work with NUS CIT to resolve any issues you encounter.{% if is_full_lockdown %}<br>
    Issues encountered by past students include problems in viewing and searching the _exam reference_ PDF file inside Examplify.{% endif %}
@@ -83,10 +83,11 @@ The final exam has two types of questions:
 
 <panel type="info" header="**How to check the compatibility of your device**" expanded>
 
-* **Ensure you have Examplify installed**{.text-info} in your exam device. {texts="['i.', 'ii.', 'iii.', 'iv.', 'v.']" t-class="fw-bold text-info"}
-* **Ensure you have Adobe Acrobat Reader installed**{.text-info} in your exam device -- {{ 'Examplify will be using that software to open PDF files' if is_full_lockdown else "no other PDF software allowed during the exam" }}.<br>
-  :fab-windows: Windows users: When downloading the installer, you may want to opt out of installing additional bundled
-   software (e.g., McAfee Virus Scanner) -- this option is given when downloading, not when installing.
+* **Ensure you have Examplify installed**{.text-info} in your exam device. {texts="['i.', 'ii.', 'iii.', 'iv.', 'v.']" t-class="fw-bold text-info"}{% if not is_full_lockdown %}
+* **:fab-windows:/:fab-linux: Windows/Linux users: Ensure you have Adobe Acrobat Reader installed**{.text-info} in your exam device -- no other PDF software allowed during the exam.<br>
+  :fab-apple: Mac users: You may use the Preview app that comes with macOS or the Adobe Acrobat Reader.<br>
+  :fab-windows: Windows users: When downloading the Adobe Acrobat fifinstaller, you may want to opt out of installing additional bundled
+   software (e.g., McAfee Virus Scanner) -- this option is given when downloading, not when installing.{% endif %}
 
 * **Download the mock exam**{.text-info} we have provided. It has only three dummy questions, for you to get familiar with the exam mode.
 * **Do the mock exam**{.text-info} (password: `Hello123`).<br>
@@ -114,7 +115,8 @@ Deadline to complete the compatibility check (including liaising with CIT): #r#a
 
 <include src="exam-doubts-fragment.md" />
 
-9. **Bring your computer fully charged**, although some charging points will be available at the exam venue (so, bring the charger too).
+9. **Bring your computer fully charged**, although some charging points will be available at the exam venue (so, bring the charger too).<br>
+   {{ icon_important_big_red }} **NUS does not allow local LLMs in the exam device.** Please uninstall such tools before the exam.
 
 {{ show_faq("examSitNearChargingPoint") }}
 
@@ -169,6 +171,8 @@ Why is it incorrect? ______
 
 </panel>
 <p/>
+{{ show_faq("examGradingFollowUpQuestion", is_compact=1) }}
+{{ show_faq("examMissedFollowUpQuestion", is_compact=0) }}
 </div>
 
 * Here is another example question. Note the ==[**SELECT ALL**]== at the start of the question text, which tells you that this question can have multiple correct answers, and you need to select all of them i.e., it is a checkbox type question<br>
@@ -188,9 +192,19 @@ E. Gantt charts.
 
 </panel>
 <p/>
+
+{{ show_faq("examPartialMarksForMsq") }}
 </div>
 
 * **Some Part 2 questions will be based on the UML diagrams you drew in Part 1**. In case you need to refer back to Part 1 questions, they will be provided as a PDF attachment in Part 2.
+* **Diagrams/images in some questions will be repeated as an attachment** for some questions, so that you can see the top part and bottom part of the question side-by-side, rather than repeatedly scrolling up-and-down. You can close the attachment pane (using the `Close Toolkit` button) if it is getting in your way. An example is given below.
+
+<div class="indented-level1">
+<panel type="secondary" header="A question with the diagram repeated as an attachment" peek>
+
+<pic src="images/examplifyQuestionAttachment.png" />
+</panel>
+</div>
 
 </div>
 
