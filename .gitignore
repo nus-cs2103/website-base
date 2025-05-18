@@ -1,6 +1,7 @@
 .idea/*
 _site/
 .temp/
+node_modules/
 *.iml
 _markbind/logs/
 pullall.sh
