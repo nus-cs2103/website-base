@@ -2234,7 +2234,7 @@ Not applicable this semester
 
 <div class="indented">
 
-<big>**Submissions:**</big>
+++**Submissions:**++
 </div>
 
 <div class="indented">

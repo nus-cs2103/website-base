@@ -49,7 +49,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 #### <div class="bg-warning text-dark p-1">2. Project Grading: Implementation %%[{{ icon_individual }} {{ marks_tp_implementation }} marks]%%</div>
 
-**<big>2A. Code quality</big>**
+**++2A. Code quality++**
 
 **Evaluates:** the quality of the parts of the code you claim as written by you
 
@@ -75,7 +75,7 @@ Note that 'product design' or 'functionality' are not critical learning outcomes
 
 </span>
 
-**<big>2B. Effort</big>**
+**++2B. Effort++**
 
 **Evaluates:** how much value you contributed to the product
 
@@ -114,7 +114,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 
 <div tags="m--cs2113 m--cs2103">
 
-<big>**3A. Developer Testing:**</big>
+++**3A. Developer Testing:**++
 
 **Evaluates:** How well you tested your own feature
 
@@ -131,7 +131,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 </box>
 
 
-<big>**3B. System/Acceptance Testing:**</big>
+++**3B. System/Acceptance Testing:**++
 
 **Evaluates:** How well you can system-test/acceptance-test a product
 
@@ -184,7 +184,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 
 <div id="project-management-grading">
 
-<big>**5A. Process:**</big>
+++**5A. Process:**++
 
 **Evaluates:** How well you did in project management related aspects of the project, as an individual and as a team
 
@@ -205,7 +205,7 @@ Note: Effort put into non-user-visible implementation work (e.g., major refactor
 * Good use of buffers %%(opposite: everything at the last minute)%%.
 
 
-<big>**5B. Team-tasks:**</big>
+++**5B. Team-tasks:**++
 
 **Evaluates:** How much you contributed to team-tasks
 

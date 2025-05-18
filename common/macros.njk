@@ -126,7 +126,7 @@
 
 {% macro step(step_number, step_style="dark") %}<span class="badge bg-{{ step_style }}">Step {{ step_number }}</span>{% endmacro %}
 
-{% macro thumb(text, thumb_style="dark") %}<span class="badge rounded-pill bg-{{ thumb_style }} p-2"><big><big>{{ text }}</big></big></span>{% endmacro %}
+{% macro thumb(text, thumb_style="dark") %}<span style="font-size: larger;" class="badge rounded-pill bg-{{ thumb_style }} p-2">{{ text }}</span>{% endmacro %}
 {% macro thumb_small(text, thumb_style="secondary") %}<span class="badge rounded-pill bg-{{ thumb_style }} p-1">{{ text }}</span>{% endmacro %}
 
 {% macro timing_badge(text, type="danger") %}<span class="badge bg-{{ type }} {{ 'text-dark' if type in ['warning']}} font-weight-normal"><md>:far-clock: {{ text }}</md></span>{% endmacro %}

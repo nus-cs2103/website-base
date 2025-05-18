@@ -416,7 +416,7 @@ As you know, one of the objectives of the iP is to raise the quality of your cod
 
 <box type="info" header="In-video quizzes" seamless>
 
-The <span class="badge rounded-pill bg-warning text-dark"><big>Q+</big></span> icon indicates that the video has an in-video quiz. Submitting the in-video quiz can earn you bonus [participation marks]({{ baseUrl }}/admin/participation.html).<br>
+The <span style="font-size: large;" class="badge rounded-pill bg-warning text-dark">Q+</span> icon indicates that the video has an in-video quiz. Submitting the in-video quiz can earn you bonus [participation marks]({{ baseUrl }}/admin/participation.html).<br>
 
 In-video quizzes are in only a small number of pre-recorded videos that are more important than the rest. They are a very light way to engage you with the video a bit more than just passively watching.
 </box>
