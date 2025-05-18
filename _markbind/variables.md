@@ -6,21 +6,21 @@
 <variable name="course_color">success</variable>
 
 <variable name="S">1</variable>
-<variable name="semester">AY2021S{{ S }}</variable>
-<variable name="period">2020 Aug-Dec</variable>
-<variable name="current_week">-1</variable>
+<variable name="semester">AY2526S{{ S }}</variable>
+<variable name="period">2025 Aug-Nov</variable>
+<variable name="current_week">15</variable> <!-- after semester ends, set this to 15 and enable built-in search in site.json -->
 
-<variable name="algolia">no</variable>
+<variable name="algolia"></variable>
 
-<variable name="canvas_course_id">36678</variable>
-<variable name="url_instructors">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</variable>
-<variable name="url_coursemology_classroom">https://coursemology.org/courses/2020</variable>
-<variable name="url_ms_teams_class">x</variable>
+<variable name="canvas_course_id">77826</variable>
+<variable name="url_instructors">n/a</variable>
+<variable name="url_coursemology_classroom">n/a</variable>
+<variable name="url_ms_teams_class">n/a</variable>
 
-<variable name="date_w1_start">2022-01-10</variable>
+<variable name="date_w1_start">2025-08-11</variable>
 <variable name="day_first_tutorial">Wednesday</variable>
 <variable name="recess_after_week">6</variable>
-<variable name="lecture_venue">LT15</variable>
+<variable name="lecture_venue">I3-LT38</variable>
 <variable name="time_lecture_start">1600</variable>
 <variable name="time_lecture_end">1800</variable>
 <variable name="time_t_lecture_start">1600</variable>
@@ -28,7 +28,7 @@
 <variable name="ped_week">11</variable>
 <variable name="pe_week">12</variable>
 <variable name="show_feature_freeze_dashboards">yes</variable>
-<variable name="catcher_load_testing"></variable> <!-- keep empty if load testing falls on a holiday -->
+<variable name="catcher_load_testing">no</variable> <!-- keep empty if load testing falls on a holiday -->
 
 <variable name="ip_name">iP</variable>
 <variable name="ip_repo_name">ip</variable>
@@ -43,27 +43,27 @@
 <variable name="version_penultimate">v1.5</variable>
 <variable name="version_final">v1.6</variable>
 <variable name="version_future">v2.0</variable>
-<variable name="example_team_id">{{ course }}-T09-2</variable>
+<variable name="example_team_id">{{ course }}T-T09-2</variable>
 <variable name="tp_pe_bug_count">6</variable>
 
 <variable name="ug_pages_per_person">1</variable>
 <variable name="dg_pages_per_person">3</variable>
 <variable name="uml_diagrams_per_person">2 types of</variable>
 
-<variable name="marks_ip">30</variable>
-<variable name="marks_ip_implementation">15</variable>
-<variable name="marks_ip_pm">10</variable>
-<variable name="marks_ip_documentation">5</variable>
-<variable name="marks_tp">45</variable>
+<variable name="marks_ip">15</variable>
+<variable name="marks_ip_implementation">10</variable>
+<variable name="marks_ip_pm">2</variable>
+<variable name="marks_ip_documentation">3</variable>
+<variable name="marks_tp">50</variable>
 <variable name="marks_tp_design">5</variable>
 <variable name="marks_tp_documentation">10</variable>
-<variable name="marks_tp_implementation">10</variable>
+<variable name="marks_tp_implementation">15</variable>
 <variable name="marks_tp_pm">10</variable>
 <variable name="marks_tp_pm_individual">5</variable>
 <variable name="marks_tp_pm_team">5</variable>
 <variable name="marks_tp_qa">10</variable>
-<variable name="marks_tp_individual">35</variable>
-<variable name="marks_tp_team">10</variable>
+<variable name="marks_tp_individual">45</variable>
+<variable name="marks_tp_team">5</variable>
 <variable name="marks_participation">5</variable>
 <variable name="marks_exam">30</variable>
 <variable name="marks_exam_essay">0</variable>
@@ -71,9 +71,9 @@
 <variable name="marks_ca">70</variable>
 <variable name="mcq_count">100</variable>
 
-<variable name="lecture_name_upper">Lecture</variable>
+<variable name="lecture_name_upper">Weekly Briefing</variable>
 <variable name="lecture_name">{{ lecture_name_upper | lower }}</variable>
-<variable name="lecture_name_short">{{ lecture_name }}</variable>
+<variable name="lecture_name_short">briefing</variable>
 
 <variable name="pe_seat_numbers_gsheet">https://docs.google.com/spreadsheets/d/e/2PACX-1vSUbcJpMC5OdJkr_K6VxDwAkkrwJsqAFSPwHmZq88EbOdAWIPMeYvDQDYOUEcsEYVwACmAz5hH0W0ZY/pubhtml?gid=0&single=true</variable>
 
@@ -135,7 +135,7 @@
 <variable name="url_ab3_upstream_website">https://se-education.org/addressbook-level3</variable>
 <variable name="url_java_coding_standard">https://se-education.org/guides/conventions/java/{{ "intermediate" if cs2103 else "basic"}}.html</variable>
 <variable name="url_git_conventions">https://se-education.org/guides/conventions/git.html</variable>
-<variable name="url_ip_dashboard">{{ url_course_gihub_io | safe }}/ip-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&checkedFileTypes=java~md~fxml~sh~bat~gradle~txt</variable>
+<variable name="url_ip_dashboard">{{ url_course_gihub_io | safe }}/ip-dashboard/?search=&sort=groupTitle&sortWithin=title&timeframe=commit&mergegroup=&groupSelect=groupByRepos&breakdown=true&viewRepoTags=true&checkedFileTypes=java~md~fxml~sh~bat~gradle~txt</variable>
 <variable name="url_ip_progress_dashboard">{{ url_dashboards }}/contents/ip-progress.html</variable>
 <variable name="url_course_website">{{ url_course_gihub_io | safe }}/website</variable>
 <variable name="url_participation_dashboard">{{ url_dashboards }}/contents/participation.html</variable>
