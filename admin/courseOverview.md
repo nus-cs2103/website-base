@@ -6,7 +6,7 @@
 
 <!-- =============================================================================== -->
 <div tags="m--cs2103">
-<p class="lead text-secondary">++A balanced, iterative, and brownfield introduction to Software Engineering...++</p>
+<p class="lead text-secondary"><md>++A balanced, iterative, and brownfield introduction to Software Engineering...++</md></p>
 
 <pic eager src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
 
