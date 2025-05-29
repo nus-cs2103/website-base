@@ -161,7 +161,7 @@ The tP spans ten weeks, and is to be done in _breadth-first iterative_ fashion.
 * This version will be tested by peers, and you will receive the bug reports without any penalty.{{ bullet_target_green }}
 * Aim to **deliver all <tooltip content="i.e., all features you plan to deliver in this project at the end of the semester">target features</tooltip>** so that you can get them tested for free.
 
-#### {{ badge("W" + (tfw + 10))}} Iteration 3 → {{ version_final }}
+#### {{ badge("W" + (tfw + 9))}} Iteration 3 → {{ version_final }}
 
 * This iteration is <span class="text-danger">very short</span> (just 2-3 days).{{ bullet_target_green }}
 * Recommended to use it only for bug fixing, and wrapping up the final deliverables.

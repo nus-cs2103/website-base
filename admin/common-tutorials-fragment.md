@@ -441,7 +441,7 @@ Do the following tP task.
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="design-test-cases-isvalidday">
 
-* ~~Divide into two sub-teams and do the following exercises on the white board.~~
+* ~~Divide into two subteams and do the following exercises on the white board.~~
 
 <div class="indented-level2">
   <include src="../book/testCaseDesign/summary/exercises/q-essay-dayParameter.md" />
@@ -451,7 +451,7 @@ Do the following tP task.
 
 <box type="info">
 
-No tutorial this week. **Take a break** and prepare for the last burst of tP activities coming up soon.
+No tutorial this week.
 
 </box>
 </div>
