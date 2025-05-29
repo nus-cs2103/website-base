@@ -45,9 +45,10 @@ week11: [
   {id: 'submit_post_lecture_quiz', graded: true}
 ],
 week12: [
-  {id: 'submit_post_lecture_quiz', graded: true}
+  {id: 'submit_post_lecture_quiz', graded: true},
+  {id: 'submit_final_peer_evaluations', graded: true, deadline: get_date(date_w12_start, 3)}
 ],
 week13: [
-  {id: 'submit_final_peer_evaluations', graded: true, deadline: get_date(date_w13_start, 3)}
+  
 ]
 } %}

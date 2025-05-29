@@ -28,9 +28,9 @@
     * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to focus on reporting bugs in the product (but can report documentation bugs too)
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
-    * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [~half a day] -- For testers to select up to 7 bugs to send to the dev team.
-  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sunday - Monday period after PE </span>
-  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Tuesday - Thursday period after the PE.</span>
+    * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [~half a day] -- For testers to select up to 6 bugs to send to the dev team.
+  * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sunday - Tuesday period after PE </span>
+  * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Wednesday - Friday period after the PE.</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
 
 * **Grading**:
@@ -59,7 +59,7 @@
 
 * **Those opting for the F2F mode can ignore any Zoom-related points** in the instructions below.
 
-* **When**: ==Last lecture slot of the semester== ({{ get_date(date_w13_start, 4, format=format_normal, time="") | trim }}).
+* **When**: ==Week 12 lecture slot== ({{ get_date(date_w12_start, 4, format=format_normal, time="") | trim }}).
 
 {{ show_faq("tpPeEndTime") }}
 
@@ -284,7 +284,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 #### <span class="badge bg-success">&rarr; PE Phase 1 - Part IV</span> <span class="text-success">Trimming bugs</span>
 
-**This segment gives testers a second chance revisit their bug reports, and choose upto 7 bugs that they wish to send to the dev team.** They will be allowed to change bug type/severity too (but will not be allowed to change bug title or the description).
+**This segment gives testers a second chance revisit their bug reports, and choose upto 6 bugs that they wish to send to the dev team.** They will be allowed to change bug type/severity too (but will not be allowed to change bug title or the description).
 
 **Objectives:**
   * To give testers a chance to correct their type/severity choices in case they chose incorrectly during the PE due to time pressure.
@@ -309,15 +309,15 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
    * =={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
      * Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase of the PE.
      * As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower priority has a lower risk of being disputed by the dev team, giving you (and the dev team) a better chance of earning bonus marks for accuracy.
-1. **Decide which bugs should be sent to the dev team**. You may select ==no more than 7==.<br>
-   **Of these bugs, ==the highest scoring 5 bugs will be used for your tP grading==.** %%We allow you to select up to 7 bugs (instead of 5), to reduce your decision-stress (i.e., one or two wrong choices will not affect your marks).%%
+1. **Decide which bugs should be sent to the dev team**. You may select ==no more than 6==.<br>
+   **Of these bugs, ==the highest scoring 5 bugs will be used for your tP grading==.** %%We allow you to select up to 6 bugs (instead of 5), to reduce your decision-stress (i.e., it provides a safety margin against wrong choices).%%
    * **Choose based on,**<br>
      * **severity** -- %%because higher severity will earn higher marks.%% {{ bullet_tick_green }}
      * **confidence** level that it is indeed a bug %%-- if the bug is eventually rejected, it will not earn any marks.%%
      * **but not bug type** -- for this purpose, consider all bug types as equal. {{ bullet_x_red }}
 1. **Delete the remaining bug reports** using CATcher.
    * What if I deleted a bug that I intended to keep? When you 'delete' a bug using CATcher, the corresponding issue is closed (but not deleted) in GitHub issue tracker. So, the deleting can be reversed by going to GitHub and re-opening that issue.
-   * What if I keep more than 7 bugs? In that case, we take the 7 bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
+   * What if I keep more than 6 bugs? In that case, we take the 6 bugs with the highest severity. When choosing between two bugs with same severity, we take the bug that was created earlier (i.e., the one with a lower issue number).
 
 ------------------------------------------------------------------------------------ {.thick-2 .border-success}
 
@@ -325,7 +325,7 @@ You will receive bonus marks if a high percentage (e.g., some bonus if >50%, a s
 
 <include src="tp-pe-fragment.md#pe-p2-desc" inline /><p/>
 
-==**Deadline:** {{ get_date(date_w13_start, 7 if S == 2 else 7) }}==
+==**Deadline:** {{ get_date(date_w12_start, 8 if S == 2 else 8) }}==
 
 <box type="important" >
 
@@ -516,12 +516,12 @@ Only the `response.Accepted` bugs are counted against the dev team. While `respo
 {{ icon_important_big_red }} While you are waiting for Phase 3 to start, comments will be added to the bug reports in your `/pe` repo, to indicate the response each received from the receiving team. <span class="text-danger">Please do not edit any of those comments or reply to them via the GitHub interface.</span> Doing so can invalidate them, in which case the grading script will assume that you agree with the dev team's response. Instead, wait till the start of the Phase 3 is announced, after which you should use CATcher to respond.
 </div>
 
-==**Deadline:** {{ get_date(date_w13_start, 10) }}==
+==**Deadline:** {{ get_date(date_w12_start, 11) }}==
 
 * In this phase you will get to state whether you agree or disagree with the dev team's response to the bugs you reported. If a bug reported has been subjected to any of the below by the dev team, you can record your objections and the reason for the objection.
   * `response.*`: bug not accepted {texts="['(a)', '(b)', '(c)', '(d)']"}
   * `severity.*`: severity downgraded
-  * `type.*`: but type changed
+  * `type.*`: bug type changed
   * `duplicate`: bug flagged as duplicate %%(Note that you still get credit for bugs flagged as duplicates, unless you reported both bugs yourself. Nevertheless, it is in your interest to object to incorrect duplicate flags because when a bug is reported by more testers, it will be considered an 'obvious' bug and will earn slightly less credit than otherwise)%%
 * If CATcher doesn't give you an option to object to (a), (b), (c), or (d) mentioned above, that means there is nothing to object to %%e.g., if there is no option to object to (a), that means the bug was accepted by the team.%%
 

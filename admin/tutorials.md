@@ -66,7 +66,6 @@ If you continue to face recurring Wi-Fi issues at certain NUS locations while yo
 {% if cs2113 %}* Tutorials will be conducted in F2F, on campus.{% else %}
 * The initial few tutorials will be through Zoom; the rest will be F2F.{% endif %}
 * A tutorial group is handled by two tutors. Each tutor will work with two teams.
-* Zoom will be used (even during F2F tutorials) for projecting slides and {% if cs2113 %}(occasionally) {% endif %}collecting chat responses.
 * MS Teams will be used for file sharing.
 
 <br/>
@@ -74,7 +73,7 @@ If you continue to face recurring Wi-Fi issues at certain NUS locations while yo
 ##### Slides{% if cs2103 %} and recordings
 
 * The Zoom recording of a tutorial will be made available to you after the tutorial.{% endif %}
-* <span class="text-danger">Slides used in tutorials will not be distributed to students.</span> You are expected to take notes (or screenshots) during the tutorial as necessary. Reasons:
+* <span class="text-danger">Slides used in tutorials will not be distributed to students.</span> You are expected to take notes (and not take photos of the screen) during the tutorial as necessary. Reasons:
   1. Tutorial slides are meant to help the tutor deliver the tutorial, and not meant to be used as reference materials for you to study later). ==When some content is suitable as a reference material, we'll provide you a copy of it.==
   1. To encourage some level of active engagement with the materials (e.g., taking notes) which is known to increase retention.
   1. To discourage 'no need to bother now; can look at the slides near the exam' attitude -- because most of the materials covered in tutorials are applicable to the project immediately.

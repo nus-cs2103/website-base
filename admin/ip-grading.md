@@ -12,10 +12,10 @@
 
 ****Full marks for the iP is `{{ marks_ip }}`****.{.text-info}
 
-* **Meeting all the bars specified below** you earn your iP full  `{{ marks_ip }}` marks.
-* **Falling below _any_ of the bars specified below** will limit your iP score to less than half the marks.{.text-danger}
+* **Meeting the bars specified below for each aspect** will earn you full  `{{ marks_ip }}` marks for iP.
+* **Falling below the bars specified for _any_ of the aspects below** will limit your iP score to less than half the marks in that aspect.{.text-danger}
 
-That is, you either get full marks, or less than half the marks.
+That is, you either get full marks, or less than half the marks for each aspect.
 
 <box>
 
