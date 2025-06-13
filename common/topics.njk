@@ -66,7 +66,7 @@
 
 
 {%- macro make_anchor(text) %}{{ text | trim | replace(".", "-") }}{% endmacro -%}
-{%- macro slugify(text) %}{{ text | lower | replace(r/[\s\/]/g, '-') | replace(r/[\(\)%:,&'\[\]\+]/g, '') }}{% endmacro -%}
+{%- macro slugify(text) %}{{ text | lower | replace(r/[\'\s\/]/g, '-') | replace(r/[\(\)%:,&\`\[\]\+]/g, '') }}{% endmacro -%}
 {%- macro commentary(span_id) %}
 <include src="commentary-{{ course | lower }}-fragment.md#{{ span_id }}" optional />
 {% endmacro -%}

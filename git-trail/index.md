@@ -5,24 +5,7 @@ pageNav: 4
 
 {% from "common/topics.njk" import  panopto with context %}
 {% from "common/macros.njk" import embed_topic with context %}
-
-{% macro show_trail_unit(path, title, video='') %}
-<panel type="seamless" expanded>
-<div slot="header" class="card-title">
-
-## <span class="text-success">{{ title }}</span>
-</div>
-
-<div class="indented-level1">
-
-<small>[<span class="font-weight-bold text-muted">Textbook location: <include src="../book/{{ path }}/../path.md" inline trim /> **<include src="../book/{{ path }}/text.md#title" inline />**]</span></small>
-</div>
-{{ panopto(video) if video else '' }}
-<include src="../book/{{ path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
-</panel>
-{% endmacro %}
-
-{% macro divider(text) %}# <div class="text-white bg-success p-1"><span class="text-light">:fas-map-marker-alt:</span> {{ text }}</div>{% endmacro %}
+{% from "git-trail/common-fragement.md" import show_trail_unit, divider with context %}
 
 <div class="website-content" id="main">
 
@@ -40,22 +23,24 @@ These topics are covered during the [regular course schedule](../schedule/timeli
 * **If you encounter any problems** while following this learning trial, you can post in the [course forum]({{ url_forum }}) (requires a Github account).
 </box>
 
-{{ divider("Intro to RCS") }}
+<span class="non-printable">
 
-<p class="lead"><md>Git is a tool used for _revision control_. So, let's start by learning some basic revision control concepts.</md></p>
+**Take a peek at the full picture(?)**. Optionally, if you are the sort who prefers to have some sense of the full picture before you get into the nitty-gritty details, watch the video in the panel below:
+</span>
 
+<panel header="%%{{ icon_resource }} Git Overview%%" class="non-printable">
 
-{{ show_trail_unit("revisionControl/what", "RCS: Revision Control") }}
-{{ show_trail_unit("revisionControl/repositories", "RCS: Repositories") }}
+@[youtube](v40b3ExbM0c)
 
-{{ divider("Phase 1: Recording Revision History") }}
+</panel><p/>
 
-<p class="lead">In this phase, you'll start using Git to practice recording revision histories in your own computer.</p>
-{{ embed_topic("../admin/textbooks.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Lectures → Extract", "", status="expanded") }}
+<box>
 
-{{ show_trail_unit("gitAndGithub/init", "Git:`init`", "b5ca72a1-8366-4971-a523-ac090090f68b") }}
-{{ show_trail_unit("revisionControl/savingHistory", "RCS: Saving History") }}
-{{ show_trail_unit("gitAndGithub/commit", "Git: `commit`", "8f288870-1d75-4218-94fe-ac0900a026de") }}
+**Tours:**
+
+1. [Tour 1: Recording the History of a Folder](tour-recording-folder-history.md)
+</box>
+
 {{ show_trail_unit("gitAndGithub/ignore", "Git: `.ignore`", "47b7180e-9acb-4fc7-8ad7-ac0900a53544") }}
 
 {{ divider("Phase 2: Using Revision History") }}
