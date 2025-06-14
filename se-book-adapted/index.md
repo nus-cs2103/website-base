@@ -9,10 +9,9 @@
 
 
 {% macro show_section(section) %}
-++
 
-**{{ section.heading}}**
-++
+++**{{ section.heading}}**++
+
 {% for chapter in section.chapters %}
   {{ show_chapter(section, chapter) }}
 {% endfor %}
@@ -37,12 +36,12 @@ layout: textbook-layout.md
   {{ show_section(section) }}
 {% endfor %}
 
-++
 
 {% if not tee3201 %}
-**Supplementary**++
+++**Supplementary**++
 
 {{ show_chapter("dummy", config.chapters.cppToJava) }}
+* [Git Learning Trail](git-trail/index.html)
 * [Project Duke](projectDuke/index.html)
 * [Combined Exercises](common/exercises.html)
 * [List of Definitions](common/definitions.html){% endif %}

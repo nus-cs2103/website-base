@@ -10,6 +10,7 @@
 * Supplementary
 {% if not tee3201 %}
   * [C++ to Java]({{ baseUrl }}/se-book-adapted/chapters/cppToJava.html)
+  * [Git Learning Trail]({{ baseUrl }}/se-book-adapted/git-trail/index.html)
   * [Project Duke]({{ baseUrl }}/se-book-adapted/projectDuke/index.html)
 {% endif %}
 {% if cs2103 %}
