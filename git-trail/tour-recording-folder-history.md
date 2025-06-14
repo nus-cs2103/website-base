@@ -22,13 +22,13 @@ pageNav: 4
 {{ show_lesson_overview(tour.lesson_git_prep) }}
 {{ show_lesson_overview(tour.lesson_init) }}
 {{ show_lesson_overview(tour.lesson_stage) }}
-1. commits
+{{ show_lesson_overview(tour.lesson_commit) }}
 
-
-{{ embed_topic("../admin/textbooks.md#tip-about-lecture-videos", "Admin " + icon_embedding + " Lectures → Extract", "", status="expanded") }}
+<hr>
 
 {{ show_lesson(tour.lesson_git_prep) }}
 {{ show_lesson(tour.lesson_init) }}
 {{ show_lesson(tour.lesson_stage) }}
+{{ show_lesson(tour.lesson_commit) }}
 
 </div>
