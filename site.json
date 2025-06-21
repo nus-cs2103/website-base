@@ -52,9 +52,6 @@
     },
     {"glob": "book/**/index.md",
       "searchable": "no"
-    },
-    {"glob": "book/gitAndGithub/trail/tours/*.md",
-      "searchable": "no"
     }
   ],
   "pagesExclude": ["**/*-fragment.md", "book/_site/**/*.*"],

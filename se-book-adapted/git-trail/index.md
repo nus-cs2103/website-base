@@ -1,7 +1,7 @@
 <frontmatter>
 title: "Git Learning Trail"
 layout: textbook-layout.md
-pageNav: 4
+pageNav: 5
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">

@@ -1317,32 +1317,6 @@
       }
     ]
   },
-  revisionControl : {
-    name: "revisionControl",
-    heading: "Revision Control",
-    level_one_topics: [
-      {
-        name: "",
-        level_two_topics: [
-          {
-            name: "",
-            level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "repositories", heading: "Repositories", priority: "1"},
-              {name: "savingHistory", heading: "Saving History", priority: "1"},
-              {name: "usingHistory", heading: "Using History", priority: "2"},
-              {name: "remoteRepositories", heading: "Remote Repositories", priority: "2"},
-              {name: "branching", heading: "Branching", priority: "2"},
-              {name: "drcsVsCrcs", heading: "DRCS vs CRCS", priority: "3"},
-              {name: "forkingWorkflow", heading: "Forking Flow", priority: "2"},
-              {name: "featureBranchFlow", heading: "Feature Branch Flow", priority: "4"},
-              {name: "centralizedFlow", heading: "Centralized Flow", priority: "4"}
-            ]
-          }
-        ]
-      }
-    ]
-  },
   projectPlanning : {
     name: "projectPlanning",
     heading: "Project Planning",
@@ -1646,29 +1620,14 @@
     heading: "Git and Github",
     level_one_topics: [
       {
-        name: "",
+        name: "trail",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
-              {name: "init", heading: "`init`: Getting started", priority: "1"},
-              {name: "commit", heading: "`commit`: Saving changes to history", priority: "1"},
-              {name: "ignore", heading: "Omitting files from revision control", priority: "2"},
-              {name: "tag", heading: "`tag`: Naming commits", priority: "3"},
-              {name: "diff", heading: "`diff`: Comparing revisions", priority: "2"},
-              {name: "checkout", heading: "`checkout`: Retrieving a specific revision", priority: "2"},
-              {name: "stash", heading: "`stash`: Shelving changes temporarily", priority: "4"},
-              {name: "clone", heading: "`clone`: Copying a repo", priority: "1"},
-              {name: "pull", heading: "`pull`, `fetch`: Downloading data from other repos", priority: "1"},
-              {name: "fork", heading: "Fork: Creating a remote copy", priority: "1"},
-              {name: "push", heading: "`push`: Uploading data to other repos", priority: "1"},
-              {name: "branch", heading: "`branch`: Doing multiple parallel changes", priority: "2"},
-              {name: "mergeConflicts", heading: "Dealing with merge conflicts", priority: "2"},
-              {name: "remoteBranches", heading: "Remote branches", priority: "2"},
-              {name: "createPRs", heading: "Creating PRs", priority: "1"},
-              {name: "reviewPRs", heading: "Reviewing PRs", priority: "2"},
-              {name: "managePRs", heading: "Merging PRs", priority: "2"},
-              {name: "forkingWorkflow", heading: "Forking Workflow", priority: "3"}
+              {name: "recordingFolderHistory", heading: "Tour 1: Recording the History of a Folder", priority: "1"},
+              {name: "backingUpOnCloud", heading: "Tour 2: Backing up a Repo on the Cloud", priority: "1"},
+              {name: "usingRevisionHistory", heading: "Tour 3: Using the Revision History of a Repo", priority: "1"}
             ]
           }
         ]
