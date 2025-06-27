@@ -12,3 +12,4 @@
 * **Other tP/admin deadlines** will remain as before. If the deadline falls within the holiday period, you are recommended to finish the task early (i.e., before the holiday), but you can also do them _after_ the holidays if the deadline is flexible %%(e.g., weekly tP tasks)%%, or during the holiday period itself (if you prefer to stick with your regular weekly schedule).
 </box>
 {% endif %}
+<!-- ... -->

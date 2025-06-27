@@ -51,7 +51,7 @@
 * The relevant textbook topics are:
    {{ embed_topic("../book/gitAndGithub/commit/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Committing**", "1", indent=1) }}
    {{ embed_topic("../book/gitAndGithub/tag/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Tagging**", "1", indent=1) }}
-   {{ embed_topic("../book/gitAndGithub/push/text.md#simple-push", "Textbook " + icon_embedding + " Git & GitHub → **Pushing**", "1", indent=1) }}
+   {{ embed_topic("../book/gitAndGithub/push/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **Pushing**", "1", indent=1) }}
 </div>
 <div id="take-note-of-plagiarism" >
 
