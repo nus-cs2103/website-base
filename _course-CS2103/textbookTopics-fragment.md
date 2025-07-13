@@ -1680,7 +1680,6 @@
               {name: "reviewPRs", heading: "Reviewing PRs", priority: "2"},
               {name: "managePRs", heading: "Merging PRs", priority: "2"},
               {name: "forkingWorkflow", heading: "Forking Workflow", priority: "3"}
-
             ]
           }
         ]
