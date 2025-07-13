@@ -41,9 +41,7 @@ layout: textbook-layout.md
 ++**Supplementary**++
 
 {{ show_chapter("dummy", config.chapters.cppToJava) }}
-* [Git Learning Trail](git-trail/index.html)
 * [Project Duke](projectDuke/index.html)
-* [Combined Exercises](common/exercises.html)
 * [List of Definitions](common/definitions.html){% endif %}
 
 </div>

@@ -1617,7 +1617,7 @@
   },
   gitAndGithub : {
     name: "gitAndGithub",
-    heading: "Revision Control Using Git (and GitHub)",
+    heading: "Revision Control (Using Git & GitHub)",
     level_one_topics: [
       {
         name: "trail",
