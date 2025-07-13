@@ -1675,7 +1675,12 @@
               {name: "remoteBranchPush", heading: "Pushing Branches to a Remote", priority: "1"},
               {name: "remoteBranchPull", heading: "Pulling Branches from a Remote", priority: "1"},
               {name: "remoteBranchDelete", heading: "Deleting Branches from a Remote", priority: "2"},
-              {name: "remoteBranchRename", heading: "Renaming Branches in a Remote", priority: "3"}
+              {name: "remoteBranchRename", heading: "Renaming Branches in a Remote", priority: "3"},
+              {name: "createPRs", heading: "Creating PRs", priority: "1"},
+              {name: "reviewPRs", heading: "Reviewing PRs", priority: "2"},
+              {name: "managePRs", heading: "Merging PRs", priority: "2"},
+              {name: "forkingWorkflow", heading: "Forking Workflow", priority: "3"}
+
             ]
           }
         ]
