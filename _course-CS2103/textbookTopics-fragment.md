@@ -1620,6 +1620,24 @@
     heading: "Revision Control Using Git (and GitHub)",
     level_one_topics: [
       {
+        name: "trail",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "recordingFolderHistory", heading: "Tour 1: Recording the History of a Folder", priority: "1"},
+              {name: "backingUpOnCloud", heading: "Tour 2: Backing up a Repo on the Cloud", priority: "1"},
+              {name: "workingWithRemotes", heading: "Tour 3: Working Off a Remote Repo", priority: "1"},
+              {name: "usingRevisionHistory", heading: "Tour 4: Using the Revision History of a Repo", priority: "1"},
+              {name: "fineTuningHistory", heading: "Tour 5: Fine-Tuning the Revision History", priority: "1"},
+              {name: "branchingLocally", heading: "Tour 6: Branching Locally", priority: "1"},
+              {name: "syncingBranches", heading: "Tour 7: Keeping Branches in Sync", priority: "1"},
+              {name: "remoteBranches", heading: "Tour 8: Working with Remote Branches", priority: "1"}
+            ]
+          }
+        ]
+      },
+      {
         name: "",
         level_two_topics: [
           {
