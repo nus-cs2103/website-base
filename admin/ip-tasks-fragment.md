@@ -567,7 +567,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 1. Add the upstream repo `{{ url_course_org }}/{{ ip_repo_name }}.git` as a remote, and give it the name `upstream`.<br>
    General instructions for adding a remote to your repo can be found in the panel below:
 
-   {{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2", indent="1") }}
+   {{ embed_topic("../book/gitAndGithub/setRemote/text.md", "Textbook " + icon_embedding + " Git&Github → Linking a Local Repo With a Remote Repo", "2", indent="1") }}
 
 2. fetch the `add-gradle-support` from the remote `upstream`.<br>
    General instructions for fetching a new branch from a remote can be found in the panel below:

@@ -193,7 +193,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 **Next, add the `upstream` as a remote**: The forking workflow requires you to pull from the team repo and push to your own fork. To be able to do the former, you need to **add the team repo as a _remote_ of your clone**. Follow the instructions in the panel below to add a new remote with the _Remote name_ `upstream` (can be anything, but `upstream` is a common choice) and _URL / Path_ pointing to the team repo<br>
     e.g., `https://github.com/{{ semester }}-{{ example_team_id }}/{{ tp_repo_name }}.git` (==note the `.git` at the end==)
 
-{{ embed_topic("../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git & GitHub → Pull → [extract] **Working with multiple remotes**", "2", indent=2) }}
+{{ embed_topic("../book/gitAndGithub/setRemote/text.md", "Textbook " + icon_embedding + " Git & GitHub → Remotes", "2", indent=2) }}
 
 **Now, follow these steps to update the code using the forking workflow** e.g., each person can add their details to the `docs/AboutUs.md` page:
 * {{ step(1) }} Decide which update each person will do.

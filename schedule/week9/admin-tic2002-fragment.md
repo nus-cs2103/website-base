@@ -66,10 +66,6 @@ Alternatively, you could have added the team members as 'collaborators' to your 
      1. Merge the branch (the `--no-ff` tells git not to use a _fast-forward_ merge):<br>
      `git merge --no-ff upstream/tweak-readme`
 
-   * Alternatively see the panel see the panel below on how to pull a branch from another remote.<br>
-     In this case, the remote to pull _from_ is `{{ url_course_org }}/{{ ip_repo_name }}.git`, and the repo to pull _to_ is your local repo used for the project.
-
-{{ embed_topic("../../book/gitAndGithub/pull/text.md#section-working-with-multiple-remotes", "Textbook " + icon_embedding + " Git&Github → Pull → **Working with multiple remotes**", "2", indent="2") }}
 
 3. Suppose another member has pushed another branch `add-details-to-readme` to the same remote repo. Pull that one too and merge it. If there is a merge conflict, resolve it too.
 1. Push your master branch to your fork.
