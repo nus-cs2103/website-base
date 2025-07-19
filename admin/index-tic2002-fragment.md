@@ -63,7 +63,7 @@ e.g., **Instead of traditional instructor-led tutorials**, the course provides q
 
 #### Tutors:
 
-* **Richard Dominick**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`dominick`[at]`u.nus.edu`</span>
+* **...**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`...`[at]`u.nus.edu`</span>
 
 </div>
 
