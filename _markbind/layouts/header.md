@@ -39,9 +39,13 @@
 {% endfor %}
   </dropdown>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
+{% if tic2002 %}
+  <li><a href="{{baseUrl}}/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
+{% else %}
   <dropdown header="**Admin Info**" class="nav-link">
 {{ get_admin_menu_items() }}
   </dropdown>
+{% endif %}
   <dropdown tags="m--cs2103 m--cs2113" header="**Dashboards**" class="nav-link">
   <li><a href="{{ url_participation_dashboard }}" class="dropdown-item text-success" target="_blank"><md>:fas-trophy: **Participation** dashboard</md></a></li>
   <li><a href="{{ url_course_gihub_io }}/dashboards/contents/forum-activities.html" class="dropdown-item" target="_blank"><md>:octicon-comment: **Forum** Dashboard</md></a></li>

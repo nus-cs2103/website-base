@@ -63,7 +63,7 @@ e.g., **Instead of traditional instructor-led tutorials**, the course provides q
 
 #### Tutors:
 
-* **...**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`...`[at]`u.nus.edu`</span>
+* **Gabriel Lim Yi Wei**:&nbsp;&nbsp; %%:fas-envelope:%% <span id="ta-email">`e1121665`[at]`u.nus.edu`</span>
 
 </div>
 
@@ -252,11 +252,9 @@ The MST team used for the class is `TIC2002-{{ period }}` ([link]({{ url_ms_team
 
 <div id="git-info">
 
-### Git, Sourcetree
+### Git
 
 We'll be using Git as our revision control tool (compulsory).
-
-{{ icon_important_big_red }} If you are not familiar with Git already, install Sourcetree (a GUI for Git, but also contains Git) on your computer. Instructions are [here](https://se-education.org/guides/tutorials/sourcetree.html).
 
 </div>
 <div id="github-info">
@@ -280,7 +278,7 @@ We'll be using Coursemology for coding exercises (compulsory).
 
 ### IntelliJ IDEA
 
-We'll be using IntelliJ IDEA for programming. While using IntelliJ is not compulsory, there will be no help/instructions given for other IDEs.
+We'll be using IntelliJ IDEA for programming. While using IntelliJ is not compulsory, help/instructions given for other IDEs will be limited.
 
 {{ icon_info }} Install [IntelliJ](https://www.jetbrains.com/idea/) on your computer. You may use the Community Edition (free) or the Ultimate Edition (free for students).
 </div>

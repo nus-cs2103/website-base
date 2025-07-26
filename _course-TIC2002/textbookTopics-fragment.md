@@ -1629,33 +1629,74 @@
       }
     ]
   },
-  gitAndGithub : {
+    gitAndGithub : {
     name: "gitAndGithub",
-    heading: "Git and Github",
+    heading: "Revision Control (Using Git & GitHub)",
     level_one_topics: [
+      {
+        name: "trail",
+        level_two_topics: [
+          {
+            name: "",
+            level_three_topics: [
+              {name: "recordingFolderHistory", heading: "Tour 1: Recording the History of a Folder", priority: "1"},
+              {name: "backingUpOnCloud", heading: "Tour 2: Backing up a Repo on the Cloud", priority: "1"},
+              {name: "workingWithRemotes", heading: "Tour 3: Working Off a Remote Repo", priority: "1"},
+              {name: "usingRevisionHistory", heading: "Tour 4: Using the Revision History of a Repo", priority: "1"},
+              {name: "fineTuningHistory", heading: "Tour 5: Fine-Tuning the Revision History", priority: "4"},
+              {name: "branchingLocally", heading: "Tour 6: Branching Locally", priority: "2"},
+              {name: "syncingBranches", heading: "Tour 7: Keeping Branches in Sync", priority: "3"},
+              {name: "remoteBranches", heading: "Tour 8: Working with Remote Branches", priority: "4"}
+            ]
+          }
+        ]
+      },
       {
         name: "",
         level_two_topics: [
           {
             name: "",
             level_three_topics: [
-              {name: "init", heading: "`init`: Getting started", priority: "1"},
-              {name: "commit", heading: "`commit`: Saving changes to history", priority: "1"},
-              {name: "ignore", heading: "Omitting files from revision control", priority: "2"},
-              {name: "tag", heading: "`tag`: Naming commits", priority: "3"},
-              {name: "diff", heading: "`diff`: Comparing revisions", priority: "2"},
-              {name: "checkout", heading: "`checkout`: Retrieving a specific revision", priority: "2"},
-              {name: "clone", heading: "`clone`: Copying a repo", priority: "3"},
-              {name: "pull", heading: "`pull`, `fetch`: Downloading data from other repos", priority: "3"},
-              {name: "fork", heading: "Fork: Creating a remote copy", priority: "3"},
-              {name: "push", heading: "`push`: Uploading data to other repos", priority: "3"},
-              {name: "branch", heading: "`branch`: Doing multiple parallel changes", priority: "3"},
-              {name: "mergeConflicts", heading: "Dealing with merge conflicts", priority: "3"},
-              {name: "remoteBranches", heading: "Remote branches", priority: "3"},
-              {name: "createPRs", heading: "Creating PRs", priority: "3"},
-              {name: "reviewPRs", heading: "Reviewing PRs", priority: "4"},
-              {name: "managePRs", heading: "Merging PRs", priority: "4"},
-              {name: "forkingWorkflow", heading: "Forking Workflow", priority: "4"}
+              {name: "intro", heading: "Introduction to Revision Control", priority: "1"},
+              {name: "init", heading: "Putting a Folder Under Git's Control", priority: "1"},
+              {name: "stage", heading: "Specifying What to include in a Snapshot", priority: "1"},
+              {name: "commit", heading: "Saving a Snapshot", priority: "1"},
+              {name: "remoteRepos", heading: "Remote Repositories", priority: "1"},
+              {name: "createRemoteRepo", heading: "Creating a Repo on GitHub", priority: "1"},
+              {name: "setRemote", heading: "Linking a Local Repo With a Remote Repo", priority: "1"},
+              {name: "push", heading: "Updating the Remote Repo", priority: "1"},
+              {name: "ignore", heading: "Omitting Files from Revision Control", priority: "1"},
+              {name: "fork", heading: "Duplicating a Remote Repo on the Cloud", priority: "1"},
+              {name: "clone", heading: "Creating a Local Copy of a Repo", priority: "1"},
+              {name: "pull", heading: "Downloading Data Into a Local Repo", priority: "1"},
+              {name: "log", heading: "Examining the Revision History", priority: "1"},
+              {name: "show", heading: "Examining a Commit", priority: "1"},
+              {name: "tag", heading: "Tagging Commits", priority: "1"},
+              {name: "diff", heading: "Comparing Points of History", priority: "1"},
+              {name: "checkout", heading: "Traversing to a Specific Commit", priority: "1"},
+              {name: "reset", heading: "Rewriting History to Start Over", priority: "1"},
+              {name: "selectiveStage", heading: "Controlling What Goes Into a Commit", priority: "2"},
+              {name: "commitMessage", heading: "Writing Good Commit Messages", priority: "3"},
+              {name: "interactiveRebase", heading: "Reorganising Commits", priority: "3"},
+              {name: "branch", heading: "Creating Branches", priority: "1"},
+              {name: "merge", heading: "Merging Branches", priority: "1"},
+              {name: "mergeConflicts", heading: "Resolving Merge Conflicts", priority: "1"},
+              {name: "branchRename", heading: "Renaming Branches", priority: "3"},
+              {name: "branchDelete", heading: "Deleting Branches", priority: "1"},
+              {name: "syncByMerge", heading: "Merging to Sync Branches", priority: "1"},
+              {name: "syncByRebase", heading: "Rebasing to Sync Branches", priority: "3"},
+              {name: "cherryPick", heading: "Copying Specific Commits", priority: "3"},
+              {name: "remoteBranchPush", heading: "Pushing Branches to a Remote", priority: "1"},
+              {name: "remoteBranchPull", heading: "Pulling Branches from a Remote", priority: "1"},
+              {name: "remoteBranchDelete", heading: "Deleting Branches from a Remote", priority: "2"},
+              {name: "remoteBranchRename", heading: "Renaming Branches in a Remote", priority: "3"},
+              {name: "createPRs", heading: "Creating PRs", priority: "1"},
+              {name: "reviewPRs", heading: "Reviewing PRs", priority: "2"},
+              {name: "managePRs", heading: "Merging PRs", priority: "2"},
+              {name: "drcsVsCrcs", heading: "DRCS vs CRCS", priority: "4"},
+              {name: "forkingWorkflow", heading: "Forking Workflow", priority: "4"},
+              {name: "featureBranchFlow", heading: "Feature Branch flow", priority: "4"},
+              {name: "centralizedFlow", heading: "Centralised flow", priority: "4"}
             ]
           }
         ]

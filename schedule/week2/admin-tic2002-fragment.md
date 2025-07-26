@@ -3,16 +3,14 @@
 
 
 {% call show_admin_summary() %}
-1. Install Sourcetree {{ timing_badge("before the lecture") }}
+1. Install Git {{ timing_badge("before the lecture") }}
 1. Submit weekly exercises
 1. Submit post-lecture quiz
 {% endcall %}
 
-{{ thumb(1) }} Install Sourcetree {{ timing_badge("before the lecture", "secondary") }}
+{{ thumb(1) }} Get started with Git {{ timing_badge("before/during the lecture") }}
 
-* See the panel below:
-
-{{ embed_topic("../../admin/index-tic2002-fragment.md#git-info", "Admin " + icon_embedding + " Tools → Git, Sourcetree", "week2Admin-git", "1") }}
+* See weekly topics (Git Learning Trail - Tour 1) for more info.
 
 {{ thumb(2) }} Submit weekly exercises
 
