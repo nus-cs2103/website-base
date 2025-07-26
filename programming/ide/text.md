@@ -9,7 +9,7 @@
 </modal>
 
 
-If you have not done so already, <trigger trigger="click" for="modal:pythonIde-installingPython">install Python in your Computer.</trigger>
+If you have not done so already, <trigger trigger="click" for="modal:pythonIde-installingPython">install Python on your Computer.</trigger>
 
 <modal large header="Installing Python" id="modal:pythonIde-installingPython">
   <include src="../../programming/environment/text.md#install-python"/>

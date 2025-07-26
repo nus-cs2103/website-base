@@ -65,7 +65,7 @@ The final exam has two types of questions:
    * Write to NUS CIT (citbox25@nus.edu.sg) if you run into any technical issues.
    * If you do not have a working laptop for the exam, please contact IT Care itcare@nus.edu.sg directly for a laptop loan (for exam purpose only).
 1. ==**Examplify will use the {{ 'full' if is_full_lockdown else '~~full~~ simulated' }} lock-down**== mode during the exam i.e., no access Internet, and,
-   {{ 'no' if is_full_lockdown else 'not allowed to' }} access any applications/files in your computer during the exam {{ '==except the _Exam Reference_ PDF file==' if not is_full_lockdown }}.<br>
+   {{ 'no' if is_full_lockdown else 'not allowed to' }} access any applications/files on your computer during the exam {{ '==except the _Exam Reference_ PDF file==' if not is_full_lockdown }}.<br>
    %%Reason: Because of the risk of locally-installed LLMs affecting the integrity of the exam, NUS recommends using full-lockdown mode.%%
 1. **Consider this as a 'cheat-sheet' exam**, as that matches the nature of the questions in this exam the best. However, you will have the following additional flexibilities:
    * **No limit on cheat-sheet page count.** You may bring any number of pages, and use any written/printed documents. %%For example, you may bring a printed copy of the entire textbook.%%{% if is_full_lockdown %}

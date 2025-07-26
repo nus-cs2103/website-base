@@ -642,7 +642,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **IntelliJ IDEA**", "2", indent="1") }}
 </div>
 {#====================================================================================================================#}
-<span id="heading_set_up_project">Set up the project in your computer</span>
+<span id="heading_set_up_project">Set up the project on your computer</span>
 <div id="desc_set_up_project">
 
 <div class="indented">

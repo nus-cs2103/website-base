@@ -44,7 +44,7 @@ Mac users should use the specific Azul JDK 17 distribution specified in [this gu
 To reiterate, #r#it is not enough that you have Java 17##, it needs to be ==the precise **Azul** JDK<strong>+JavaFX</strong> version specified== in the page linked above.
 
 <!--
-**The problem:** You might not be able to run the JAR files produced by some of the classmates due to various incompatibility issues between your environment and theirs, although you can still get your own JAR files to work in your computer.
+**The problem:** You might not be able to run the JAR files produced by some of the classmates due to various incompatibility issues between your environment and theirs, although you can still get your own JAR files to work on your computer.
 
 **How to find if it applies to you:** If you are a Mac user, here are the steps to check if it applies to you:
 

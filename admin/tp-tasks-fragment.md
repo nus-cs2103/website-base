@@ -600,7 +600,7 @@ Use this week extra week to finish up any leftover work from the previous week.
 
 * **Steps:**
     1. Download the latest released version %%(i.e., the jar file)%% of AB3 from [its upstream repo](https://se-edu.github.io/addressbook-level3/UserGuide.html).
-    1. Get it running in your computer. Play around with it to familiarize yourself with its current features.
+    1. Get it running on your computer. Play around with it to familiarize yourself with its current features.
     1. Add yourself to the list of contacts in AB3 (using the `add ...` command).
     1. Take a screenshot of the AB3 Window, while it shows your own contact info you added earlier. Save it as a `.png` file.
     1. Think about how the AB3 user experience can be improved, for example, by tweaking the command format, or the GUI, or the features. Note them down as a list of feature suggestions, as free text (i.e., no specific format).<br>

@@ -108,7 +108,7 @@ A customized **online text book** is used for this course. Topic coverage may no
 
 This course uses Python programming language to teach you programming basics required for software engineering. <span class="text-danger">A basic knowledge of Python is expected in the final exam, to the extent it was used in the weekly exercises and the project.</span> For example, some questions might use Python code snippets as part of the question.
 
-**Install [Python (the latest 3.x version)](https://www.python.org/downloads/)** in your computer.
+**Install [Python (the latest 3.x version)](https://www.python.org/downloads/)** on your computer.
 
 <!-- .......................................................................................... --> {{ line_dotted }}
 

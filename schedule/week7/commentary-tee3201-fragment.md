@@ -18,7 +18,7 @@ From the above, you realized the need for test automation. **Next, we learn what
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("testing-testAutomation-testingTextUis", reuse=false) %}
-**Given below is a simple technique that you can use to semi-automate the testing of CLI apps** such as Monty, if you are running it in your computer (not on repl.it).
+**Given below is a simple technique that you can use to semi-automate the testing of CLI apps** such as Monty, if you are running it on your computer (not on repl.it).
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_followup("testing-testAutomation-testingTextUis", reuse=false) %}

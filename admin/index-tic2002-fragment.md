@@ -240,12 +240,13 @@ Please upload items 2, 3, 4 as three separate files, using the three Canvas assi
 
 ### Zoom
 
-Install Zoom in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Proctoring+with+Zoom) (requires login).<br>
+Install Zoom on your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Proctoring+with+Zoom) (requires login).<br>
+
 When using Zoom, remember to login using the `SSO` option and use your NUSNET account.
 
 ### Microsoft Teams (MST)
 
-Install MST in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams) (requires login).<br>
+Install MST on your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams) (requires login).<br>
 When using MST, remember to log in using your NUSNET account.
 
 The MST team used for the class is `TIC2002-{{ period }}` ([link]({{ url_ms_teams_class }})).

@@ -15,7 +15,7 @@ This course website is the main source of information for the course. In additio
 {% if not cs2113 %}
 ## Tool: Zoom (for {{ lecture_name }}s)
 
-Install Zoom in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Proctoring+with+Zoom). Remember to login using your NUSNET account.
+Install Zoom on your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Proctoring+with+Zoom). Remember to login using your NUSNET account.
 {% endif %}
 <!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="github">
@@ -121,7 +121,7 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 ##### :fas-users-cog: MS Teams %%({% if cs2103 %}for tutorials, {% endif %}as a backup if Zoom chat fails, for practical exam)%%
 
 * **MS Teams is used in our tutorials**.<br>
-  Install MST in your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to login using your NUSNET account.
+  Install MST on your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to login using your NUSNET account.
 
 
 <div tags="m--cs2103 m--cs2113">
@@ -155,7 +155,7 @@ b) we won't be able to help you if you run into problems while using any other I
 <box>
 
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
-* Install the IDE in your computer. You may use the IntelliJ community edition (free) or the ultimate edition (free for students).
+* Install the IDE on your computer. You may use the IntelliJ community edition (free) or the ultimate edition (free for students).
 * If you have an older version of the IDE, we recommend updating to the latest version.
 </box>
 

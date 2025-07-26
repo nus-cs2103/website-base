@@ -209,7 +209,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 1. **Fork** the `{{ tp_repo_name }}` team repo to your personal GitHub account.<br>
    <include src="appendixE-gitHub.md#do-not-rename" inline />
 1. **Clone** the fork to your computer.
-1. **Set up** the developer environment in your computer by following the
+1. **Set up** the developer environment on your computer by following the
    <span tags="m--cs2103">[_Setting up and getting started_ page]({{ url_ab3_fork_website }}/SettingUp.html) of AB3 developer guide.</span><span tags="m--cs2113">the [README]({{url_course_org}}/{{ tp_repo_name }}) carefully as the ==steps are different from the iP==.</span>
 
 <box type="wrong" seamless>
