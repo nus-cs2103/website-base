@@ -188,7 +188,7 @@ During the tutorial, **demo your ability to do debugging using an IDE** by perfo
 
 **First, ensure that you know how the _forking workflow_ works.**
 
-{{ embed_topic("../book/revisionControl/forkingWorkflow/text.md#body", "Textbook " + icon_embedding + " Revision Control → **Forking Workflow**", "1", indent=2) }}
+{{ embed_topic("../book/gitAndGithub/forkingWorkflow/text.md#body", "Textbook " + icon_embedding + " Revision Control → **Forking Workflow**", "1", indent=2) }}
 
 **Next, add the `upstream` as a remote**: The forking workflow requires you to pull from the team repo and push to your own fork. To be able to do the former, you need to **add the team repo as a _remote_ of your clone**. Follow the instructions in the panel below to add a new remote with the _Remote name_ `upstream` (can be anything, but `upstream` is a common choice) and _URL / Path_ pointing to the team repo<br>
     e.g., `https://github.com/{{ semester }}-{{ example_team_id }}/{{ tp_repo_name }}.git` (==note the `.git` at the end==)

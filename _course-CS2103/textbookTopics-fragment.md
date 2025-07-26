@@ -298,7 +298,7 @@
   },
   modeling : {
     name: "modeling",
-    heading: "Modeling",
+    heading: "Modeling (Using UML)",
     level_one_topics: [
       {
         name: "introduction",
@@ -1679,7 +1679,10 @@
               {name: "createPRs", heading: "Creating PRs", priority: "1"},
               {name: "reviewPRs", heading: "Reviewing PRs", priority: "2"},
               {name: "managePRs", heading: "Merging PRs", priority: "2"},
-              {name: "forkingWorkflow", heading: "Forking Workflow", priority: "3"}
+              {name: "drcsVsCrcs", heading: "DRCS vs CRCS", priority: "3"},
+              {name: "forkingWorkflow", heading: "Forking Workflow", priority: "3"},
+              {name: "featureBranchFlow", heading: "Feature Branch flow", priority: "3"},
+              {name: "centralizedFlow", heading: "Centralised flow", priority: "3"}
             ]
           }
         ]

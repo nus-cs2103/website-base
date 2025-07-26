@@ -6,7 +6,4 @@
 {{ topic_preamble("Java: Classes") }}
 {{ topic_preamble("OOP: Class-level members") }}
 {{ topic_preamble("RCS: Saving History", id="rcs-intro") }}
-{{ topic_preamble("revisionControl-what") }}
-{{ topic_preamble("gitAndGithub-init") }}
-{{ topic_preamble("revisionControl-savingHistory") }}
 {{ topic_preamble("RCS: Using History") }}

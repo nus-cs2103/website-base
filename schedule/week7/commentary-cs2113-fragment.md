@@ -8,5 +8,5 @@
 {{ topic_preamble("RCS: Merging PRs") }}
 {{ topic_preamble("RCS: Workflows") }}
 {{ topic_preamble("gitAndGithub-forkingWorkflow") }}
-{{ topic_preamble("revisionControl-drcsVsCrcs") }}
-{{ topic_preamble("revisionControl-featureBranchFlow") }}
+{{ topic_preamble("gitAndGithub-drcsVsCrcs") }}
+{{ topic_preamble("gitAndGithub-featureBranchFlow") }}

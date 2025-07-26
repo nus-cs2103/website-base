@@ -270,11 +270,6 @@ Let's jump in and learn how to get started using Git in your own computer.
 <p/></div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="{{ slugify("revisionControl-what") }}">
-
-First, let's learn a bit about _tracking the change history of a project_ in general, at a higher level.
-</div>
-<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("gitAndGithub-init") }}">
 
 Now that we know what RCS is in general, we can try to practice it ourselves using a specific tool i.e., Git.
@@ -291,11 +286,6 @@ Note that this topic (and many other topics) come with a pre-recorded video.
 <p/>
 
 </div>
-</div>
-<!-- ---------------------------------------------------------------------------- -->
-<div id="{{ slugify("revisionControl-savingHistory") }}">
-
-For the next few sections, the drill is the same: first learn the high-level explanation of a revision control concept, and then follow the given scenarios yourself to learn how to apply that concept using Git.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="rcs-remote-repos">
@@ -349,12 +339,12 @@ When working with Git, sooner or later you will face a problem called _merge con
 ==The activity in the section below can be skipped== as you will be doing a similar activity in a coming tutorial.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="{{ slugify("revisionControl-drcsVsCrcs") }}">
+<div id="{{ slugify("gitAndGithub-drcsVsCrcs") }}">
 
 **Git is considered a DRCS**. Read the topic below to learn what that means and how it differs from the alternative.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
-<div id="{{ slugify("revisionControl-featureBranchFlow") }}">
+<div id="{{ slugify("gitAndGithub-featureBranchFlow") }}">
 
 **These are two workflows that are riskier (but simpler) than the forking flow**. After following the forking flow for a while, you may switch to one of these, but at your own risk.
 </div>

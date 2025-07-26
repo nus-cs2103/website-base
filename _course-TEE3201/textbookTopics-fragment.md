@@ -1340,32 +1340,6 @@
       }
     ]
   },
-  revisionControl : {
-    name: "revisionControl",
-    heading: "Revision Control",
-    level_one_topics: [
-      {
-        name: "",
-        level_two_topics: [
-          {
-            name: "",
-            level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "repositories", heading: "Repositories", priority: "4"},
-              {name: "savingHistory", heading: "Saving History", priority: "-1"},
-              {name: "usingHistory", heading: "Using History", priority: "-1"},
-              {name: "remoteRepositories", heading: "Remote Repositories", priority: "-1"},
-              {name: "branching", heading: "Branching", priority: "-1"},
-              {name: "drcsVsCrcs", heading: "DRCS vs CRCS", priority: "-1"},
-              {name: "forkingWorkflow", heading: "Forking Flow", priority: "-1"},
-              {name: "featureBranchFlow", heading: "Feature Branch Flow", priority: "-1"},
-              {name: "centralizedFlow", heading: "Centralized Flow", priority: "-1"}
-            ]
-          }
-        ]
-      }
-    ]
-  },
   projectPlanning : {
     name: "projectPlanning",
     heading: "Project Planning",
@@ -1683,7 +1657,6 @@
               {name: "ignore", heading: "Ignore", priority: "2"},
               {name: "tag", heading: "Tag", priority: "3"},
               {name: "checkout", heading: "Checkout", priority: "2"},
-              {name: "stash", heading: "Stash", priority: "4"},
               {name: "clone", heading: "Clone", priority: "1"},
               {name: "pull", heading: "Pull", priority: "1"},
               {name: "push", heading: "Push", priority: "1"},

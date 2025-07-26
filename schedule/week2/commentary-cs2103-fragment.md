@@ -10,9 +10,6 @@
 
 {% endcall %}
 {{ topic_preamble("RCS: Revision History", id="rcs-intro") }}
-{{ topic_preamble("revisionControl-what") }}
-{{ topic_preamble("gitAndGithub-init") }}
-{{ topic_preamble("revisionControl-savingHistory") }}
 {{ topic_preamble("RCS: Remote Repos") }}
 {{ topic_preamble("IDEs: Basic Features") }}
 {{ topic_preamble("Automated Testing of Text UIs") }}

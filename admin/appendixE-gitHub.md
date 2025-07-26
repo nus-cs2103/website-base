@@ -327,12 +327,11 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
 {{ show_faq("githubIssueForEachPr") }}
 
 <modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-forkingworkflow">
-  <include src="../book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
   <include src="../book/gitAndGithub/forkingWorkflow/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 <modal large header="TextBook {{ icon_embedding }}" id="modal:appErecommendedWorkflow-featurebranchworkflow">
-  <include src="../book/revisionControl/featureBranchFlow/unit-inElsewhere-asFlat.md" boilerplate/>
+  <include src="../book/gitAndGithub/featureBranchFlow/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 
 </div>

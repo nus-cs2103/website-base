@@ -300,7 +300,7 @@
   },
   modeling : {
     name: "modeling",
-    heading: "Modeling",
+    heading: "Modeling (Using UML)",
     level_one_topics: [
       {
         name: "introduction",
@@ -1328,32 +1328,6 @@
       }
     ]
   },
-  revisionControl : {
-    name: "revisionControl",
-    heading: "Revision Control",
-    level_one_topics: [
-      {
-        name: "",
-        level_two_topics: [
-          {
-            name: "",
-            level_three_topics: [
-              {name: "what", heading: "What", priority: "2"},
-              {name: "repositories", heading: "Repositories", priority: "1"},
-              {name: "savingHistory", heading: "Saving History", priority: "1"},
-              {name: "usingHistory", heading: "Using History", priority: "2"},
-              {name: "remoteRepositories", heading: "Remote Repositories", priority: "2"},
-              {name: "branching", heading: "Branching", priority: "3"},
-              {name: "drcsVsCrcs", heading: "DRCS vs CRCS", priority: "4"},
-              {name: "forkingWorkflow", heading: "Forking Flow", priority: "4"},
-              {name: "featureBranchFlow", heading: "Feature Branch Flow", priority: "4"},
-              {name: "centralizedFlow", heading: "Centralized Flow", priority: "4"}
-            ]
-          }
-        ]
-      }
-    ]
-  },
   projectPlanning : {
     name: "projectPlanning",
     heading: "Project Planning",
@@ -1671,7 +1645,6 @@
               {name: "tag", heading: "`tag`: Naming commits", priority: "3"},
               {name: "diff", heading: "`diff`: Comparing revisions", priority: "2"},
               {name: "checkout", heading: "`checkout`: Retrieving a specific revision", priority: "2"},
-              {name: "stash", heading: "`stash`: Shelving changes temporarily", priority: "4"},
               {name: "clone", heading: "`clone`: Copying a repo", priority: "3"},
               {name: "pull", heading: "`pull`, `fetch`: Downloading data from other repos", priority: "3"},
               {name: "fork", heading: "Fork: Creating a remote copy", priority: "3"},

@@ -1571,7 +1571,7 @@ This is a good time to get familiar with the diagramming tools used by the tP.
 </box>
 
 <modal large header="TextBook {{ icon_embedding }}" id="modal:postmortemTip-featurebranchworkflow">
-<include src="../book/revisionControl/featureBranchFlow/unit-inElsewhere-asFlat.md" boilerplate/>
+<include src="../book/gitAndGithub/featureBranchFlow/unit-inElsewhere-asFlat.md" boilerplate/>
 </modal>
 </div>
 {#====================================================================================================================#}
