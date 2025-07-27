@@ -54,7 +54,7 @@
       {location: ["processModels", "introduction", "sequentialModels"]},
       {location: ["processModels", "introduction", "iterativeModels"]},
   {name: "Revision Control"},
-    {heading: "RCS: Recording Revision History"},
+    {heading: "RCS: Getting Started with Git and GitHub"},
       {location: ["gitAndGithub", "trail", "recordingFolderHistory"]},
       {location: ["gitAndGithub", "trail", "backingUpOnCloud"]},
       {location: ["gitAndGithub", "trail", "workingWithRemotes"]},

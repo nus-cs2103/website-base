@@ -36,6 +36,7 @@ footer: footer.md
 
 
 {% macro show_level_one(location, topic) %}
+{% if topic.name != 'trail' %}
 {% set level_location =  location + "/" + topic.name %}
 {% set level_is_empty =  (topic.name == "") %}
 {% set level_is_omitted =  (topic.priority in ["-1", "4", "0"]) %}
@@ -49,6 +50,7 @@ footer: footer.md
 </div>
   {% endfor %}
 {% endif %} {# end of: if not level_is_omitted #}
+{% endif %} {# end of: if not trail #}
 {% endmacro %}
 
 
