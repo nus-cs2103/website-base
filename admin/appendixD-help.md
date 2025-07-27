@@ -7,7 +7,7 @@
 {% set negative_icon = '{icon="fas-thumbs-down" i-class="text-white badge rounded-pill bg-danger" i-size="12px"}' %}
 {% set positive_icon = '{icon="fas-thumbs-up" i-class="text-white badge rounded-pill bg-success" i-size="12px"}' %}
 
-%%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on course topics too. e.g. what is the difference between_refactoring_and_rewriting_?%%
+%%{{ icon_info }} This guide is mostly about getting tech help, but it also applies to getting clarifications on course topics too. e.g., what is the difference between_refactoring_and_rewriting_?%%
 
 <span class="float-end">
 

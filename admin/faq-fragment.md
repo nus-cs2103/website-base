@@ -139,7 +139,7 @@ Pedagogical reasons:
 Practical reasons:
 
 * Some of the topics are tightly coupled to tools. Allowing more tools means tutors need to learn more tools, which increases their workload.
-* We provide learning resources for tools. e.g. 'Git guides'. Allowing more tools means we need to produce more resources.
+* We provide learning resources for tools. e.g., 'Git guides'. Allowing more tools means we need to produce more resources.
 * When all students use the same tool, the collective expertise of the tool is more, increasing the opportunities for you to learn from each others.
 
 Meanwhile, feel free to share with peers your experience of using other tools.
@@ -456,7 +456,7 @@ If you frequently find yourself being unable to finish task 1 in time, you can c
 
 The pedagogical reason: Learning how to solve technical problems, and <tooltip content="e.g., explaining the problem well">seek</tooltip>/give/receive help, **are learning outcomes of this course, and are critical skills for software engineers**. So, we want you to practice those things in this course as much as possible.
 
-A practical reason: Unlike in lower-level programming courses, the technical problem you encounter in this course are varied and dependent on your OS and tool choices. It is not possible for one person (e.g. your tutor) to know how to help with problems related to all OS'es and all tools used by students under his/her care. It is more practical to troubleshoot such problems via the course forum, as that gives you a way to get help from all your peers in the class, the entire teaching team, and a group of past students who have volunteered to help current students solve technical problems. Based on past data, we know that more than 90% of the problems posted in the course forum get resolved within 24 hours. So, **by not allowing you to get tech help from tutors, we are directing you to a more effective way to resolve those issues, while learning valuable skills at the same time**.
+A practical reason: Unlike in lower-level programming courses, the technical problem you encounter in this course are varied and dependent on your OS and tool choices. It is not possible for one person (e.g., your tutor) to know how to help with problems related to all OS'es and all tools used by students under his/her care. It is more practical to troubleshoot such problems via the course forum, as that gives you a way to get help from all your peers in the class, the entire teaching team, and a group of past students who have volunteered to help current students solve technical problems. Based on past data, we know that more than 90% of the problems posted in the course forum get resolved within 24 hours. So, **by not allowing you to get tech help from tutors, we are directing you to a more effective way to resolve those issues, while learning valuable skills at the same time**.
 </div>
 <!-- =============================================================== -->
 
@@ -595,7 +595,7 @@ First, kudos for wanting to find the rationale before you change the current des
 Some options:
 
 1. See if the rationale is documented in the developer documentation or code comments.
-1. Dig into the Git and GitHub history to find if there are any clues there e.g. commit message of the relevant commit, or the discussion in the relevant PR. Git _blame_ feature can help you locate the relevant commit.
+1. Dig into the Git and GitHub history to find if there are any clues there e.g., commit message of the relevant commit, or the discussion in the relevant PR. Git _blame_ feature can help you locate the relevant commit.
 1. Try to speculate the possible motives, get views from other developers.
 1. These days, you can also ask AI tools.
 1. Play it safe and delay the refactoring until you have worked with the code for a while, in case the reason becomes apparent after working with the code for a while.

@@ -83,7 +83,7 @@ It’s not that dramatization is bad or we don’t like it. We simply don’t ha
 Note that CS2101 demo requirements may differ. Different context → Different requirements.
 * **Showcase how the feature improves the user’s life** rather than simply describe each feature.
 * **Rehearse the steps well** and ensure you can do a smooth demo. ==Find a [_golden path_](https://www.ibtimes.co.uk/sleight-hand-white-lies-bottle-scotch-how-apple-pulled-off-first-iphone-launch-1600085) and stick to it==. Poor quality demos can affect your grade.
-* **Don’t waste time repeating things the target audience already knows.** e.g. no need to say things like "We are students from NUS, SoC".
+* **Don’t waste time repeating things the target audience already knows.** e.g., no need to say things like "We are students from NUS, SoC".
 * **No need to introduce next presenter** at the end of your part %%Reason: to save time%%.
 
 

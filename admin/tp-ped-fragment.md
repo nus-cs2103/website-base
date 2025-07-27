@@ -285,7 +285,7 @@ Use the pain of dealing with this kind of bug reports as an opportunity to devel
 
 
 * **If you have received stray bug reports** (i.e., bug reports that seems to be about a different project), do let us know ASAP (email the prof).
-* **You can navigate to the original bug report** (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g. to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
+* **You can navigate to the original bug report** (via the back-link provided in the bug report given to you) and post in that issue thread to communicate with the tester who reported the bug %%e.g., to ask for more info%%, etc. However, the tester is not obliged to respond. Note that simply replying to the bug report in your own repo will not notify the tester.
   * {{ icon_tip }} Do not argue with the tester to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the tester for their view and discontinue the discussion.
 * **Aim to ==do a systematic triaging of issues received==**. Some suggestions:
   * Close duplicate issues.

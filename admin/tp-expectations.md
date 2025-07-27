@@ -87,15 +87,15 @@ In fact, here is the grading criterion for the individual project effort:
 
 <panel type="seamless" header="Some example enhancements" >
 
-  * Add a new feature %%e.g. add the ability to view statistics%%
-  * Tweak an existing features %%e.g. make the command syntax more user-friendly and closer to natural language%%
-  * A redesign of the GUI %%e.g. make it work like a chat application (note: chat is a form of CLI)%%
-  * A redesign of the code %%e.g. Improve the design to improve the code quality.%%
+  * Add a new feature %%e.g., add the ability to view statistics%%
+  * Tweak an existing features %%e.g., make the command syntax more user-friendly and closer to natural language%%
+  * A redesign of the GUI %%e.g., make it work like a chat application (note: chat is a form of CLI)%%
+  * A redesign of the code %%e.g., Improve the design to improve the code quality.%%
 
 </panel><p/>
 </div>
 
-* **Recommended: Contribute to _all_ aspects of the project** e.g. write back-end code, front-end code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
+* **Recommended: Contribute to _all_ aspects of the project** e.g., write back-end code, front-end code, test code, user documentation, and developer documentation. %%Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.%%
 
 * **Recommended: Do _all_ the work related to your enhancement yourself.** %%Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.%%<br>
   In other words, ==we recommend that the work to be divided primarily based on _features/enhancements_== rather than _components_. The latter has problems such as the following:<br>
@@ -158,7 +158,7 @@ Here is a non-exhaustive list of team-tasks:
 1. Setting up tools e.g., GitHub, Gradle
 1. Maintaining the issue tracker
 1. Release management
-1. Updating user/developer docs that are not specific to a feature %%e.g. documenting the target user profile%%
+1. Updating user/developer docs that are not specific to a feature %%e.g., documenting the target user profile%%
 1. Incorporating more useful tools/libraries/frameworks into the product or the project workflow %%(e.g. automate more aspects of the project workflow using a GitHub plugin)%%
 
 </span>

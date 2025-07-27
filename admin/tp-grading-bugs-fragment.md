@@ -14,8 +14,8 @@ These are considered _feature flaws_:<br>
 
 These are considered _functionality bugs_:<br>
 :fas-bug: Behavior differs from the User Guide<br>
-:fas-bug: A legitimate user behavior is not handled %%e.g. incorrect commands, extra parameters%%<br>
-:fas-bug: Behavior is not specified and differs from normal expectations %%e.g. error message does not match the error%%<br>
+:fas-bug: A legitimate user behavior is not handled %%e.g., incorrect commands, extra parameters%%<br>
+:fas-bug: Behavior is not specified and differs from normal expectations %%e.g., error message does not match the error%%<br>
 </div>
 
 <div id="generalDocBugs">

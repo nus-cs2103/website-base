@@ -49,7 +49,7 @@ Giving constructive feedback to others is a valuable skill for software engineer
 Here are some things to keep in mind:
 
 * Assume you are giving feedback to a colleague, not a friend. Keep the tone of your feedback reasonably professional. Do not use offensive language or slang.
-* The feedback should be honest and consistent. Giving positive qualitative feedback (e.g. `Thanks for all the hard work!` and negative ratings (e.g. `Equal share - 40%`) to the same team member is not being honest.
+* The feedback should be honest and consistent. Giving positive qualitative feedback (e.g., `Thanks for all the hard work!` and negative ratings (e.g., `Equal share - 40%`) to the same team member is not being honest.
 * State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.
 
 ### Guidelines for interpreting contribution ratings

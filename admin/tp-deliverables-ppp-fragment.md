@@ -8,7 +8,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 #### <span class="badge bg-info">PPP</span> <span class="text-info">Objectives</span>
 
-* For you to use %%(e.g. in your resume)%% as a well-documented data point of your SE experience
+* For you to use %%(e.g., in your resume)%% as a well-documented data point of your SE experience
 * For evaluators to use as a data point for evaluating your project contributions
 
 #### <span class="badge bg-info">PPP</span> <span class="text-info">Sections to include</span>
@@ -22,8 +22,8 @@ At the end of the project each student is required to submit a _Project Portfoli
   * **Contributions to <trigger trigger="click" for="modal:deliverablesPPP-teamTasks">team-based tasks </trigger>**
   * **Review/mentoring contributions:** Links to PRs reviewed, instances of helping team members in other ways.
   * **Contributions beyond the project team:**
-    * Evidence of helping others %%e.g. responses you posted in our forum, bugs you reported in other team's products%%,
-    * Evidence of technical leadership %%e.g. sharing useful information in the forum%%
+    * Evidence of helping others %%e.g., responses you posted in our forum, bugs you reported in other team's products%%,
+    * Evidence of technical leadership %%e.g., sharing useful information in the forum%%
 
 <modal large header="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks">
   <include src="tp-expectations.md#team-tasks"/>

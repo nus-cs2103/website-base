@@ -205,7 +205,7 @@ This alternative is only suitable for those who are already good at hand-coding.
 <div tags="m--cs2113">
 
 * Do each increment as a Git branch. Here is an example:
-  * Start a branch named `branch-{increment ID}` (e.g. `branch-Level-5`). You are recommended to have multiple commits in that branch. Follow the branch naming convention exactly or else our gradings scripts might miss your branch.
+  * Start a branch named `branch-{increment ID}` (e.g., `branch-Level-5`). You are recommended to have multiple commits in that branch. Follow the branch naming convention exactly or else our gradings scripts might miss your branch.
   * After the increment is ready, merge the `branch-Level-5` back on to `master`, ==without a _fast-forward_== so that git creates a separate commit for the merge. `git tag` that merge commit as `Level-5`.
   * Push the branch to your fork so that the grading script can detect it. As before, push the tag as well.
   * {{ icon_important_big_red }} Advanced git users: do not delete the branch after merging.

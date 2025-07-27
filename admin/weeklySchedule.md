@@ -8,7 +8,7 @@
 
 ### Timing of the {{ lecture_name }}
 
-As our lecture slot (which we use for the weekly briefing) is on {{ day_lecture }} (i.e., at the end of the week), ==the briefing in Week~n~ lecture slot covers a recap of Week~n~ and a preview of Week~n+1~== %%e.g. The briefing on week 3 {{ day_lecture }} covers a recap of week 3 and a preview of week 4%%.
+As our lecture slot (which we use for the weekly briefing) is on {{ day_lecture }} (i.e., at the end of the week), ==the briefing in Week~n~ lecture slot covers a recap of Week~n~ and a preview of Week~n+1~== %%e.g., The briefing on week 3 {{ day_lecture }} covers a recap of week 3 and a preview of week 4%%.
 
 </div>
 <p/>

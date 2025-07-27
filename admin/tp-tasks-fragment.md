@@ -744,7 +744,7 @@ As we are still at the early stages of identifying a problem to solve, do not th
 
 * **Submission** (to be checked by the tutor later):<br>
   * Intermediate steps (e.g., persona, scenarios): Keep records of these in your collaborative project document started in the previous week.
-  * Brainstormed user stories:  Record them using an <!--~~write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
+  * Brainstormed user stories:  Record them using an <!--~~write each user story in a piece of paper (e.g., yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can~~--> online tool (some examples given in <trigger trigger="click" for="modal:v10-onlinetools">[Textbook {{ icon_embedding }} Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br>
   {{ icon_tip }} **Use an online spreadsheet for recording user stories** (e.g., Google Sheets), if you are not sure which tool to use. -- they are easy to edit, share, color, and more importantly, sort/filter.<br>
   {{ icon_info }} If you put the user stories in a page/file other than your main collaborative project notes document (i.e., the one given [here](teamList.html)), ensure that page/file is viewable by the public, and the main document has a link to that page/file. Otherwise, the tutor will not be able to see your list of user stories.
 

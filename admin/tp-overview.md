@@ -65,7 +65,7 @@ For example, an app to manage one of these:{% if cs2113 %}
 * Forum posts, news feeds, Social media feeds
 * Online projects or issue trackers that the user is interested in
 * Emails, possibly from different accounts
-* Multiple types of related things %%e.g. Contacts and Tasks (if Tasks are allocated to Contacts)%%
+* Multiple types of related things %%e.g., Contacts and Tasks (if Tasks are allocated to Contacts)%%
 * ...
 {% endset %}
 
@@ -78,7 +78,7 @@ For example, an app to manage one of these:{% if cs2113 %}
   * a teacher/tutor managing students (can be further optimized to a specific course or type of teaching)
   * a secretary of an organization managing member details
   * an event organizer managing participants
-* Manage more entity types related to contacts %%e.g. Tasks allocated to contacts, loans given, grades, etc.%%<br>
+* Manage more entity types related to contacts %%e.g., Tasks allocated to contacts, loans given, grades, etc.%%<br>
   Note: the contacts should still remain the primary focus, even if there are other things being managed e.g., an address book app that is optimized for a user who lends out money to those contacts (not a loan management app).
 * Introduce relationships between contacts e.g., members of a team
 * Make existing general features _really_ strong, worthy of a real product e.g.,
@@ -131,7 +131,7 @@ Note that **creating a novel/unique/interesting product will NOT earn you extra 
 
 You are expected to:
 * **Define a very specific _target user profile_.** <br> ==We require you to narrow down the target user profile==  %%as opposed to trying to make it as general as possible. Here is an example of progressively narrowing down target user: anybody → teachers → university teachers → tech-savvy university teachers → instructors of course CS____.%%<br><br>
- {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/tp-constraints.html) when defining the user profile %%e.g. the target user should still prefer typing to mouse actions%%.
+ {{ icon_important_big_red }} Be careful not to contradict given [project constraints]({{ baseUrl }}/admin/tp-constraints.html) when defining the user profile %%e.g., the target user should still prefer typing to mouse actions%%.
 
 <box type="warning" seamless>
 
@@ -149,9 +149,9 @@ You are expected to:
 * **Aim to optimize the product to the chosen target users** Although you should not decide specific features yet, keep in mind that eventually you should optimize the product for the chosen target user %%i.e., add/tweak features that are especially/only applicable for target users (to make the app especially attractive to them)%%.
   * Example 1: If the product targets {{ course_pair }} instructors, there can be features that are applicable to them only, %%such as the ability to see a link to a student's project on GitHub%%
   * Example 2: If your app manages contacts, you can optimize its features based on,
-    * the profession of the target user %%e.g. doctors, salesmen, teachers, etc.%%
-    * the nature/scale of contacts %%e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)%%
-    * what users do with the contacts %%e.g. organize group events, share info, do business, do analytics%%
+    * the profession of the target user %%e.g., doctors, salesmen, teachers, etc.%%
+    * the nature/scale of contacts %%e.g., huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g., contract employees)%%
+    * what users do with the contacts %%e.g., organize group events, share info, do business, do analytics%%
 
     {{ icon_tip }} Your project will be graded based on how well the features match the target user profile and how well the features fit-together.
 

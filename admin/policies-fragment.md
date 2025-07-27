@@ -160,7 +160,7 @@ If you **used a third party library**:
   * Mention in <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented.
 
 
-If you **reused code snippets found on the Internet** %%e.g. from StackOverflow answers%% or<br>
+If you **reused code snippets found on the Internet** %%e.g., from StackOverflow answers%% or<br>
 **referred code in another software** or<br>
 **referred project code by current/past student**:
 * If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>

@@ -499,7 +499,7 @@ Also, try to distribute the tP work among team members. If you have to do all th
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>Sometimes I find the quiz question slightly vague (could be a skill issue on my part), e.g. I think in week 4 there was a question on there can be associations between persons (0..1) and I interpreted it is >1 association possible. Other than that, I like the bit of humor incorporated in the videos (the edits etc.)</markdown>
+<markdown>Sometimes I find the quiz question slightly vague (could be a skill issue on my part), e.g., I think in week 4 there was a question on there can be associations between persons (0..1) and I interpreted it is >1 association possible. Other than that, I like the bit of humor incorporated in the videos (the edits etc.)</markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>Indeed, some things can be imprecise (open-ended, subjective, open to interpretation etc), in quiz questions, and in SE in general. Where possible, we  try to expose you to these aspects (rather than artificially shield you from it) so that you learn how to deal with it, but not to worry, we don't do that in the final exam.</markdown>
 </span></box>

@@ -54,7 +54,7 @@ Please follow the organization/repo name format precisely or else our grading sc
 
 After receiving your team ID, one team member should do the following steps:
 * Create a GitHub organization with the following details:
-  * **Organization name** ==(all UPPER CASE) :`{{ semester }}-TEAM_ID`==. e.g. {% if has_t %}`{{ semester }}-{{ course }}T-W12-1`,{% endif %} `{{ semester }}-{{ example_team_id }}`
+  * **Organization name** ==(all UPPER CASE) :`{{ semester }}-TEAM_ID`==. e.g., {% if has_t %}`{{ semester }}-{{ course }}T-W12-1`,{% endif %} `{{ semester }}-{{ example_team_id }}`
   * Plan: Open Source ($0/month)
   * This organization belongs to: My personal account
 * Add members to the organization:
@@ -161,10 +161,10 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 <box>
 
 **Issue type** labels:
-* `type.Epic`: A big feature which can be broken down into smaller stories e.g. search
+* `type.Epic`: A big feature which can be broken down into smaller stories e.g., search
 * `type.Story`: A user story
 * `type.Enhancement`: An enhancement to an existing story
-* `type.Task` (or `type.Chore`): Something that needs to be done, but not a story, bug, or an epic. %%e.g. Move testing code into a new folder%%
+* `type.Task` (or `type.Chore`): Something that needs to be done, but not a story, bug, or an epic. %%e.g., Move testing code into a new folder%%
 * `type.Bug`: A bug
 
 </box>
@@ -194,7 +194,7 @@ We recommend you configure the issue tracker of the tP team repo as follows:
 
 3. **Create following milestones** : {% if cs2103 %}`{{ version_practice }}`{% endif %} {% if cs2103 %}`{{ version_first }}`{% endif %} `{{ version_mvp }}` {% if cs2103 %}`{{ version_alpha }}`{% endif %} `{{ version_penultimate }}` `{{ version_final }}`
 
-4. You may configure other project settings as you wish. e.g. more labels, more milestones
+4. You may configure other project settings as you wish. e.g., more labels, more milestones
 
 </div>
 

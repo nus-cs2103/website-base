@@ -59,8 +59,8 @@
 
 #### Peer Evaluation Criteria: Professional Conduct
 * **Professional Communication** :
-  * Communicates sufficiently and professionally. e.g. Does not use offensive language or excessive slang in project communications.
-  * Responds to communication from team members in a timely manner (e.g. within 24 hours).
+  * Communicates sufficiently and professionally. e.g., Does not use offensive language or excessive slang in project communications.
+  * Responds to communication from team members in a timely manner (e.g., within 24 hours).
 * **Punctuality**: Does not cause others to waste time or slow down project progress by frequent tardiness.
 * **Dependability**: Promises what can be done, and delivers what was promised.
 * **Effort**: Puts in sufficient effort to, and tries their best to keep up with the course/project pace. Seeks help from others when necessary.
