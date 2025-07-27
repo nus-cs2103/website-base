@@ -126,7 +126,7 @@ Ability to deliver desired end results
 
 <td colspan="1" rowspan="1">
 
-Ability to deliver in a way that shows how well you delivered (i.e. visibility of your work)
+Ability to deliver in a way that shows how well you delivered (i.e., visibility of your work)
 
 </td>
 

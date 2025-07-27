@@ -35,7 +35,7 @@ As {{ marks_ca }}% of this course is based on CA (see <trigger trigger="click" f
 
 **Levels for lesson topics** (and textbook sections):
 
-* **Level-1 topics** {{ one_star }} are essential to keep up with the course. We recommend you to ==learn these topics if you want to pass the course== (i.e. up to a **C** grade).
+* **Level-1 topics** {{ one_star }} are essential to keep up with the course. We recommend you to ==learn these topics if you want to pass the course== (i.e., up to a **C** grade).
 * **Level-2 topics** {{ two_stars }} can get you up to a **B+**.
 * **Level-3 topics** {{ three_stars }} can get you up to an **A**.
 * **Level-4 topics** {{ four_stars }} can push you beyond the limits of the course, and help you get into a level above those who merely limit themselves to the topics of the course. They ==are not <popover content="_examinable_ here means _can affect the grade_ during evaluation of various components, not necessarily limited to the final exam (if any)">examinable</popover>==.

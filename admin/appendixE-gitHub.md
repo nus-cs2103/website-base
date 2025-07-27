@@ -398,7 +398,7 @@ In our project, we use _user stories_ to track user requirements. Instead of usi
 
 <pic eager src="{{baseUrl}}/admin/images/closingMilestones.png" width="700"/>
 
-* **Update the milestone to match the product** i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.
+* **Update the milestone to match the product** i.e., all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.
 * **Do a release** ([example](https://github.com/se-edu/addressbook-level3/releases/)), if required by the milestone.
 * **Close the milestone.**
 

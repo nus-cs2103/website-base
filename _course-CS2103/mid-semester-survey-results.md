@@ -531,7 +531,7 @@ Also, try to distribute the tP work among team members. If you have to do all th
 </tr>
 <tr style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
 <td style="border: 1px solid grey; border-collapse: collapse; padding:10px; text-align:left">
-<markdown>A major gripe I have up till now about this course is the steep incline in its pace over the initial weeks, where the first few iP increments are very straightforward for students who would all have completed CS2030S and CS2040S, yet they rise in terms of difficulty by Week 3 suddenly to incorporating built automation tools, JavaFX and UML each per week. As this course understandably emphasises breadth-first iterative learning, I earnestly believe it would benefit most of the cohort to already start off with snippets of these core concepts even earlier on starting from Week 1 possibly. This would also help make the learning gradient more manageable, considering its most probable target audience i.e. Year 2 undergraduates are pacing their CS2103T with some other heavy Level 2k courses, particularly CS2109S and CS2106. The lessons have been conducted quite clearly and the passion exuded by the course staff are very evident though. Thanks!</markdown>
+<markdown>A major gripe I have up till now about this course is the steep incline in its pace over the initial weeks, where the first few iP increments are very straightforward for students who would all have completed CS2030S and CS2040S, yet they rise in terms of difficulty by Week 3 suddenly to incorporating built automation tools, JavaFX and UML each per week. As this course understandably emphasises breadth-first iterative learning, I earnestly believe it would benefit most of the cohort to already start off with snippets of these core concepts even earlier on starting from Week 1 possibly. This would also help make the learning gradient more manageable, considering its most probable target audience i.e., Year 2 undergraduates are pacing their CS2103T with some other heavy Level 2k courses, particularly CS2109S and CS2106. The lessons have been conducted quite clearly and the passion exuded by the course staff are very evident though. Thanks!</markdown>
 
 <box type="info" icon=":fas-comment:" light><span class="text-info"><markdown>It is a fair point that the pace of this course is slow in the first two weeks. Some of [my general responses](#general) are related to your comments.</markdown>
 </span></box>
@@ -995,7 +995,7 @@ Given below are some general responses to points you guys (and past students) ra
      To verify the target LO Level is achieved (i.e., able to self evaluate/monitor), 
      no feedback about Git convention compliance is given during the tP,
      except for one early warning.
-   * #g#**Strategy**## (i.e. steps are taken to help students achieve this LO, at the target level): 
+   * #g#**Strategy**## (i.e., steps are taken to help students achieve this LO, at the target level):
      During the iP period, we do the following, to take you towards the target LO level:
      1. First, specify the Git standard and ask students to follow.<br>
         Also, remind about it via a tutorial question.

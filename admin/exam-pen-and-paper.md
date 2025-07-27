@@ -18,7 +18,7 @@ Instructions below are from the previous semester. Will be updated closer to the
 * The exam has two parts:
   * Part 1: MCQ questions (1 hour, 30 marks)
   * Part 2: Essay questions (1 hour, 30 marks)
-* Both papers will be given to you at the start, but you need to **answer Part 1 first** (i.e. MCQ paper). It will be **collected 1 hour after the exam start time** (even if you arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.
+* Both papers will be given to you at the start, but you need to **answer Part 1 first** (i.e., MCQ paper). It will be **collected 1 hour after the exam start time** (even if you arrived late for the exam). You are free to start part 2 early if you finish Part 1 early.
 
 {{ icon_info }} **The exam is open-book**: you may bring any printed or written materials to the exam in hard copy format. But no devices are allowed.
 

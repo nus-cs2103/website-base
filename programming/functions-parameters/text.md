@@ -8,7 +8,7 @@ def function_name(parameter1_name, parameter2_name, ...):
     ...
 ```
 
-****Parameters vs arguments:**** When you define a function, you can specify _parameters_ that it can accept. When you call the function, you can assign _arguments_ (i.e. values) to each of those parameters.
+****Parameters vs arguments:**** When you define a function, you can specify _parameters_ that it can accept. When you call the function, you can assign _arguments_ (i.e., values) to each of those parameters.
 
 <tip-box> 
 

@@ -13,7 +13,7 @@ The `//@@author` tag should indicates the beginning of the code you wrote. The c
   method 4 ...
   ```
 
-* **If you don't know who wrote the code segment below yours**, you may put an empty `//@@author` (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
+* **If you don't know who wrote the code segment below yours**, you may put an empty `//@@author` (i.e., no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
   Here is a sample code with an empty `author` tag:
   ```{highlight-lines="2,5"}
   method 0 ...

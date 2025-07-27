@@ -60,7 +60,7 @@ My age is 25
 
 {{ show_trinket('5e7550be09') }}
 
-{{ icon_example }} `input` function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user ==as a string==. {{ icon_tip }} Note how a call to the `print` without any arguments (i.e. `print()`) prints an empty line.
+{{ icon_example }} `input` function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user ==as a string==. {{ icon_tip }} Note how a call to the `print` without any arguments (i.e., `print()`) prints an empty line.
 
 ```python
 # read current price

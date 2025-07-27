@@ -34,7 +34,7 @@ The product should be targeting users who can type fast and prefer typing to oth
 {%- endcall  %}
 
 {% call show_constraint("Constraint-Single-User") -%}
-The product should be for a single user i.e. (not a multi-user product).<br>
+The product should be for a single user i.e., (not a multi-user product).<br>
 Not allowed: Application running in a shared computer and different people using it at different times.<br>
 Not allowed: The data file created by one user being accessed by another user during regular operations (e.g., through a shared file storage mechanism).<br>
 %%**Reason**: multi-user systems are hard to test, which is unfair for peer testers who will be graded based on the number of bugs they find.%%

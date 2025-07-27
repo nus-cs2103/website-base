@@ -63,12 +63,12 @@ In fact, here is the grading criterion for the individual project effort:
 
 <h2 class="text-white bg-success p-1">{{ icon_team }} Team Expectations</h2>
 
-* <span class="badge bg-success">Expectation</span> <span class="text-success">**Produce a _cohesive_ product:**</span> i.e. ensure,
+* <span class="badge bg-success">Expectation</span> <span class="text-success">**Produce a _cohesive_ product:**</span> i.e., ensure,
   1. features fit together to form a cohesive product,
   1. documentation follows a consistent style and presents a cohesive picture to the reader{% if cs2113 %}, and
   1. final project demo presents a cohesive picture to the audience.{% endif %}
-* <span class="badge bg-success">Expectation</span> <span class="text-success">**Maintain product integrity/quality:**</span> i.e. prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--cs2113">
-* <span class="badge bg-success">Expectation</span> <span class="text-success">**Manage the project:**</span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done properly.
+* <span class="badge bg-success">Expectation</span> <span class="text-success">**Maintain product integrity/quality:**</span> i.e., prevent breaking other parts of the product as it evolves. <span tags="m--cs2103 m--cs2113">
+* <span class="badge bg-success">Expectation</span> <span class="text-success">**Manage the project:**</span> i.e., ensure workflow, code maintenance, integration, releases, etc. are done properly.
 </span>
 
 </div>
@@ -103,7 +103,7 @@ In fact, here is the grading criterion for the individual project effort:
  (b) You become _too reliant_ on other team members %%e.g., a feature can't be delivered until all members have done their part%%<br>
  (c) Hard to keep tests passing %%i.e., tests break when one component is updated without the others%%<br>
  (e) Integration become harder/riskier %%i.e., move from _continuous integration_ (safer) towards _big-bang integration_ (riskier)%%<br>
- (f) Not aligned with breadth-first iterative %%i.e. evolving components separately moves you towards depth-first iterative approach instead%%
+ (f) Not aligned with breadth-first iterative %%i.e., evolving components separately moves you towards depth-first iterative approach instead%%
 
 <div tags="m--cs2103">
 

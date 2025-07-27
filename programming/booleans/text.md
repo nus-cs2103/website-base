@@ -1,6 +1,6 @@
 ### Booleans
 
-**The `bool` data type is used to represent <tooltip content="i.e. true/false values">_boolean_ values</tooltip>**. They are useful when the program execution needs to vary based on a certain condition %%&nbsp;e.g., print 'old' if age is greater than 100.%%
+**The `bool` data type is used to represent <tooltip content="i.e., true/false values">_boolean_ values</tooltip>**. They are useful when the program execution needs to vary based on a certain condition %%&nbsp;e.g., print 'old' if age is greater than 100.%%
 
 The `bool` data type can hold only two values `True` and `False` (case sensitive).
 ```python

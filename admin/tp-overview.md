@@ -61,7 +61,7 @@ For example, an app to manage one of these:{% if cs2113 %}
 * Bookmarks of websites
 * Tasks/Schedule
 * Location info
-* Thing to memorize i.e. flash cards, trivia
+* Thing to memorize i.e., flash cards, trivia
 * Forum posts, news feeds, Social media feeds
 * Online projects or issue trackers that the user is interested in
 * Emails, possibly from different accounts

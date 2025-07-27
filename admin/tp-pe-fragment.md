@@ -458,7 +458,7 @@ Accordingly, we hope you'll **accept bug reports graciously** (rather than fight
 </tabs>
 <p/>
 
-* **If a bug seems to be for a different product** (i.e. wrongly assigned to your team), let us know ASAP.
+* **If a bug seems to be for a different product** (i.e., wrongly assigned to your team), let us know ASAP.
 * **If the bug is reported multiple times**,
   * Mark <span class="text-danger">all copies ==EXCEPT one==</span> as duplicates of the one left out (let's call that one the _original_) using the :fas-check-square: `A Duplicate of` tick box.
   * For each group of duplicates, all duplicates should point to one _original_ i.e., no multiple levels of duplicates, and no cyclical duplication relationships.
