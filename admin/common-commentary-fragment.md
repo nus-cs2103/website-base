@@ -722,7 +722,7 @@ Now, you can try these worked examples:
 <div id="{{ slugify("Sequence Diagrams: Basics") }}">
 <div tags="m--cs2113">
 
-Good news: this will the the last installment of UML notations.<br>
+Good news: this will be the last installment of UML notations.<br>
 Bad news: we are going to cover an entire new diagram type in one go (reason: to give you more time to use them in project documentation).
 </div>
 <div tags="m--cs2103 m--tic2002">

@@ -10,7 +10,7 @@
 **The _Monty Project_ is an educational software project designed to take you through the steps of building a small software _incrementally_**, while applying as many Python and SE techniques as possible along the way.
 </div>
 
-**The project aims to build a product named _Monty_, a Personal Assistant Chatbot that helps a person to keep track of various things.** %%The name _Monty_ was chosen as a placeholder name, in honor of the [Monty Python comedy group](https://en.wikipedia.org/wiki/Monty_Python) whose work inspired the name of the the Python language.%% **You may give it any other name and personality you wish.**
+**The project aims to build a product named _Monty_, a Personal Assistant Chatbot that helps a person to keep track of various things.** %%The name _Monty_ was chosen as a placeholder name, in honor of the [Monty Python comedy group](https://en.wikipedia.org/wiki/Monty_Python) whose work inspired the name of the Python language.%% **You may give it any other name and personality you wish.**
 
 Here is a sample interaction with Monty:
 ```

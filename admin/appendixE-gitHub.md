@@ -137,7 +137,7 @@ Example AB3 website using MarkBind: [here](https://damithc.github.io/ab3-markbin
    * **PR subject: the name of your product** e.g., `[{{ example_team_id }}] InsureList`
    * **Description: a 1-2 sentence overview** (plain text only, no formatting or links) of your project indicating the target user and the value proposition e.g., `InsureList helps insurance agents manage detail of their clients. It is optimized for CLI users so that frequent tasks can be done faster by typing in commands.`
 1. [Optional, recommended] **Protect the `master` branch**: Use GitHub's [_Protected Branches_](https://help.github.com/articles/about-protected-branches/) feature to protect your `master` branch against rogue PRs. We suggest the following:
-   * Go the the {{ show_as_rounded_tab(':octicon-gear: settings') }} of your team repo.{ texts="['i.', 'ii.', 'iii.']" }
+   * Go to the {{ show_as_rounded_tab(':octicon-gear: settings') }} of your team repo.{ texts="['i.', 'ii.', 'iii.']" }
    * Click on the `Branches` option on the navigation menu on the left.
    * Click the {{ button('**Add rule**') }} button. In the _Branch protection rule_ page,
      * Specify the _Branch name pattern_ to be `master`
