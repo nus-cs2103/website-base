@@ -20,7 +20,6 @@
   </div>
 </div>
 
-<!-- -----------------------------
 
 <div id="Michael" class="container">
   <div class="row bt-2">
@@ -61,7 +60,8 @@
 </div>
 </div>
 </div>
--->
+
+<!--
 -----------------------------
 
 <div id="Ganesh" class="container">
@@ -106,26 +106,8 @@
 </div>
 </div>
 
------------------------------
 
-<div id="Danny" class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="{{ url_course_gihub_io }}/tutor-photos/bluesky0911.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### Kim hyeongcheol (**Danny**)
-
-**Head TA**<br>
-%%:fas-envelope:%% `dcskh`[at]`nus.edu.sg`<br>
-%%:fas-phone-square:%% 8750 5674<br>
-%%:fab-github:%% [@bluesky0911](https://github.com/bluesky0911)
-    </div>
-  </div>
-</div>
-
+-->
 -----------------------------
 
 <div id="Tzer-Bin" class="container">
@@ -138,32 +120,14 @@
 
 ### **Tzer Bin**
 
-**TA**<br>
+**Head TA**<br>
 %%:fas-envelope:%% `dcsnt`[at]`nus.edu.sg`<br>
 %%:fab-github:%% [@tzerbin](https://github.com/tzerbin)
     </div>
   </div>
 </div>
 
-<!-- -----------------------------
-<div id="Anis" class="container">
-  <div class="row bt-2">
-    <div class="col-3">
-
-<img src="{{ url_course_gihub_io }}/tutor-photos/anisyusof-sc.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
-    </div>
-    <div class="col">
-
-### **Anis** Bin Yusof
-
-**Graduate Tutor**<br>
-%%:fas-envelope:%% `anis`[at]`comp.nus.edu.sg`<br>
-%%:fas-phone-square:%% 6516 8557<br>
-%%:fab-github:%% [@anisyusof-sc](https://github.com/anisyusof-sc)
-    </div>
-  </div>
-</div>
--->
+------------------------
 
 ## Tutors
 {% for t in tutors %}

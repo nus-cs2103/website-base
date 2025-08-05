@@ -33,6 +33,8 @@ The exam expects you to know Java to the extent that you should be familiar with
 
 We require you to use **Java 17** (the [Oracle version](https://www.oracle.com/java/technologies/downloads/#java17) or another alternative such as the OpenJDK version) for all course work. It is your responsibility to ensure the code you write (and executables you produce) are compatible with that version of Java. ==Any incompatibilities will be considered as bugs==.
 
+**You are strongly discouraged from using Java version other than 17.** If you need to use a different version for another course, use this as an opportunity to learn how to manage multiple Java versions in your computer.
+
 Refer to [se-edu/guides Java installation guides](https://se-education.org/guides/tutorials/javaInstallation.html) for more help on how installing, verifying, configuring, and switching between Java versions.
 
 {% if cs2103 %}

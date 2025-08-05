@@ -47,7 +47,7 @@ As {{ marks_ca }}% of this course is based on CA (see <trigger trigger="click" f
 
 **Topic levels for other things** e.g., admin info sections:
 
-* The course uses a similar topic levels system to indicate the importance of other info in this website. i.e., information rated as level-1 are the most essential. ==Info rated level-4 are non-essential and can be ignored== without affecting your ability to follow the course.
+* The course uses a similar topic levels system to indicate the importance of other info in this website. i.e., information rated as level-1 are the most essential. ==Info rated level-4 are optional and can be ignored== without affecting your ability to follow the course.
 
 </div>
 <div tags="m--cs2103">

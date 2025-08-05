@@ -26,9 +26,15 @@
 
 * Follow the tool <span class="border pe-1 ps-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions given in the following panels.
 
-{{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
+{{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language** (and #r#the Java version you are required to use##)", "2", indent="1") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="1") }}
-{{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - Git**", "2", indent="1") }}
+<div class="indented-level1">
+<panel header="**Tools - Git {{ s }}{{ s }}**" minimized>
+
+Installing and configuring Git is covered in [this lesson]({{ baseUrl }}/book/gitAndGithub/gitPrep/index.html). No action required until you come to that lesson.
+</panel>
+</div>
+
 {{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="1") }}
 
 {{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "2", indent="1") }}
@@ -71,11 +77,10 @@
 
 </div>
 {#====================================================================================================================#}
-<span id="heading_follow_the_git_learning_trail">[Optional] Follow the Git learning trail</span>
+<span id="heading_follow_the_git_learning_trail">Get started on the Git learning trail</span>
 <div id="desc_follow_the_git_learning_trail">
 
-* If you have time to spare while waiting for the semester to start, and would like to get a headstart on learning Git and GitHub (used a lot in this course), you are welcome to follow the [Git Learning Trail]({{ baseUrl }}/git-trail/index.html).<br>
-  Doing so is totally optional, as the same content will be covered during the subsequent weeks as well.
+* Get started on learning Git and GitHub (used a lot in this course). The relevant lessons are in the [{{ show_as_tab('Topics', icon_tab_topics) }}](../schedule/week1/topics.html#w1-6-rcs-getting-started-with-git) tab.
 
 </div>
 {#====================================================================================================================#}

@@ -5,7 +5,7 @@
 <div id="main">
 <div id="essential">
 
-{{ icon_important_big_red }} The [_Weekly Schedule Page_]({{baseUrl}}/schedule/index.html) is your main source of information for {{ course_pair }}. You will need to refer to it weekly. For an overview of the full schedule, refer to the [Full Timeline](../schedule/timeline.html) page.
+{{ icon_important_big_red }} The [_Weekly Schedule Page_]({{baseUrl}}/schedule/index.html) is your main source of information for {{ course_pair }}. You will need to refer to it weekly. For an overview of the full semester's schedule, refer to the [Full Timeline](../schedule/timeline.html) page.
 
 {{ icon_info }} More details for the upcoming weeks will be added as the weeks progress. In general, ==information given for more than 1 week into the future should be treated as _tentative_==.
 
@@ -38,9 +38,7 @@ Use the search box in the top navigation bar to search for keywords in the websi
 
 ### Printing Textbook Content{.text-white .bg-secondary .p-2}
 
-A PDF version of the full textbook (<tooltip content="i.e., contains examinable topics only">optimized for exam reference</tooltip>) will be provided at the start of the semester.
-
-In addition, printer-friendly version %%(indicated by {{icon_print}} icon)%% have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.
+**[The Textbook page]({{ baseUrl }}/se-book-adapted/index.html) provides a printer-friendly and a study-friendly version** — omitting non-examinable topics, and limiting to things more relevant to studying for the exam — for each chapter and the whole book %%(indicated by {{icon_print}} icon)%%. You can use them for saving as pdf files or printing.
 
 ### Making this Website Better{.text-white .bg-secondary .p-2}
 

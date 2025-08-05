@@ -167,7 +167,8 @@ In addition, spreading the work across the semester aligns with the <tooltip con
 <div id="faq-java21-Q">Why not move to a newer Java version (e.g., 21)?</div>
 <div id="faq-java21-A">
 
-While we are aware that Java 21 is a more recent LTS version of Java, we are sticking with Java 17 for the time being. We plan to move to Java 21 in a future semester when its adoption is sufficiently high.
+While we are aware that Java 21 is a more recent <tooltip content="Long-Term Support">LTS</tooltip> version of Java, we are sticking with Java 17 for the time being. We plan to move to Java 21 in a future semester when its adoption is sufficiently high.<br>
+Related: The industry is slow to move to new Java versions. It is likely the legacy Java systems you'll encounter in your internships/jobs are even older than Java 17.
 </div>
 <!-- ===============================================================
   iP
@@ -308,6 +309,15 @@ deadline extensions).
 In most quizzes, answers will be released within a day after the quiz deadline.
 
 On a related note, if you are not confident about the answer you've selected for a question, ==you are welcome to discuss it in the [forum]({{ url_forum }}), even if the submission deadline is not over yet== (but one question per thread please).
+
+</div>
+<!-- =============================================================== -->
+<div id="faq-participationTaskMissedDueToValidReason-Q">What if I missed a participation task due to a legitimate reason? %%(e.g., falling sick, taking part in university event)%%</div>
+<div id="faq-participationTaskMissedDueToValidReason-A">
+
+See the panel below:
+{{ embed_topic("policies-fragment.md#policy-validAbsences", "Admin " + icon_embedding + " Policies → Absences due to valid reasons", "4", status='expanded', indent=1) }}
+<p/>
 
 </div>
 <!-- =============================================================== -->

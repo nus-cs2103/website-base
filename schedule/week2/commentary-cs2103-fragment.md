@@ -14,6 +14,16 @@
 {{ topic_preamble("IDEs: Basic Features") }}
 {{ topic_preamble("Automated Testing of Text UIs") }}
 <!-- ---------------------------------------------------------------------------- -->
+{% call topic_preamble("RCS: Getting Started with GitHub", reuse=false) %}
+
+Next, let's resume our Git Learning Trial, covering a few more tours. the first two focus on working with GitHub, while the other two focus on getting more out of the Git revision history.
+
+{% endcall %}
+{{ topic_preamble("RCS: Revision History", id="rcs-intro") }}
+{{ topic_preamble("RCS: Remote Repos") }}
+{{ topic_preamble("IDEs: Basic Features") }}
+{{ topic_preamble("Automated Testing of Text UIs") }}
+<!-- ---------------------------------------------------------------------------- -->
 
 {% call topic_followup("testing-testAutomation-testingTextUis", reuse=false) %}
 

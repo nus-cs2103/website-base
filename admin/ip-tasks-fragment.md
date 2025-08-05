@@ -639,7 +639,7 @@ If your fork doesn't have the `add-gradle-support` branch (i.e., you did not cop
 {{ embed_topic(baseUrl+"/admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="1") }}
 {{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools → Git**", "2", indent="1") }}
 {{ embed_topic("tools.md#github", "Admin " + icon_embedding + " Tools → **GitHub**", "2", indent="1") }}
-{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **IntelliJ IDEA**", "2", indent="1") }}
+{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " Tools → **The IDE**", "2", indent="1") }}
 </div>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project on your computer</span>

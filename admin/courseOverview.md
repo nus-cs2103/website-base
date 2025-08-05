@@ -15,7 +15,7 @@
 
 * **On the theory side,** this course is supported by a customized online textbook [_Software Engineering for Self-Directed Learners_](../se-book-adapted/index.html), integrated into this course website.
 
-* **The practice side,** you will first ramp up your technical skills by doing a small individual project (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brownfield) in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 <tooltip content="LoC = Lines of Code">KLoC</tooltip>) generic product -- and enhance it into a better product or evolve it in a direction that you choose.
+* **On the practice side,** you will first ramp up your technical skills by doing a small individual project (greenfield) in which you will develop a personal assistant chatbot called [Duke](../se-book-adapted/projectDuke/index.html). Then, you will move to a team project (brownfield) in which you will take over an existing project [AddressBook-Level3 (AB3)](https://se-edu.github.io/addressbook-level3/) -- a relatively small yet non-trivial (6 <tooltip content="LoC = Lines of Code">KLoC</tooltip>) generic product -- and enhance it into a better product or evolve it in a direction that you choose.
 
 <div id="meaning-of-iterative-topics">
 

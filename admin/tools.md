@@ -40,39 +40,7 @@ Create a GitHub account (if you don't have one yet), as explained in the panel b
 
 ## Tool: Git (for revision control)
 
-**You are _required to_ use Git.** The recommended GUI client for Git is [Sourcetree](https://www.sourcetreeapp.com/), but you may use any other, or none.
-
-<box>
-
-<span style="color:purple">**:fas-hard-hat: Preparation:**</span>
-
-**1. Install Git and a Git GUI client** on your computer.
-
-* **Option A [recommended]: install Sourcetree (our recommended Git GUI)** which comes bundled with Git i.e., if you install Sourcetree, you get both Git and a GUI client in one shot ([installation instructions](https://se-education.org/guides/tutorials/sourcetree.html)).<br>
-* **Option B: Install stand-alone Git**: If you are already familiar with Git and you prefer to use Git via the command line (i.e., without a GUI), you can [install standalone Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) instead.
-
-<div id="git-username">
-
-**2. Set Git `user.name`**: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to ==set your Git `user.name` in all computers you use== to a sensible string that uniquely identifies you. For example, ==you can set it to your GitHub username or your full name==. If this username is not set properly or if you use multiple usernames for Git, our grading scripts might miss some of your work.
-
-After installing Git in a computer, you can set the Git username as follows:
-1. Open a terminal that can run Git commands (e.g., a [Git Bash](https://www.atlassian.com/git/tutorials/git-bash) window, which comes with Sourcetree)
-2. Run the command `git config --global user.name YOUR_GITHUB_USERNAME`<br>
-   e.g., `git config --global user.name JohnDoe`
-
-More info about setting Git username is [here](https://help.github.com/articles/setting-your-username-in-git/).
-
-<box type="warning" seamless>
-
-**Cautions about Git GUIs** (especially if you are new to Git):
-
-* **Using Git GUIs other than Sourcetree** is allowed, but we are unable  to provide support if you run into any problems while using a different Git GUI.
-* **Using Git (or GitHub) features that come with the IDE** is discouraged as it is better to learn Git/GitHub independent of any other tool.
-* **Using clients provided by GitHub** (e.g., _GitHub Desktop_ app) is discouraged as it will make it harder for you to separate Git features from GitHub features.
-* **Long-term use of a Git GUI for _all_ Git usage** is discouraged as well. Once you are over the initial learning curve, it is best to use CLI in tandem with GUI, as each mode has pros and cons. Often, the best is to perform operations using CLI and use a GUI to get a more visual view (e.g., to visually inspect the revision graph).
-</box>
-</div>
-</box>
+**You are _required to_ use Git.** Installing and configuring Git is covered in [this lesson]({{ baseUrl }}/book/gitAndGithub/gitPrep/index.html) of the [Git Learning Trail]({{ baseUrl }}/se-book-adapted/git-trail/index.html).
 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 
@@ -106,7 +74,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 * When communicating with instructors, use the forum. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the forum is not suitable. %%Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy%%.
 <div tags="m--cs2103 m--cs2113">
 
-* You are encouraged to help others in the forum (e.g., share tips, help with technical problems). ==We consider such sharing when giving out `A+` grades and when recruiting tutors.==
+* You are encouraged to help others in the forum (e.g., share tips, help with technical problems). ==We consider forum participation for grading (for [participation](participation.md)) and when recruiting tutors.==
 </div>
 
 <box>
@@ -118,13 +86,13 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 
 <div tags="m--cs2103 m--cs2113">
 
-##### :fas-users-cog: MS Teams %%({% if cs2103 %}for tutorials, {% endif %}as a backup if Zoom chat fails, for practical exam)%%
+##### :fas-users-cog: MS Teams {% if cs2103 %}%%(for tutorials)%%{% endif %}
 
 * **MS Teams is used in our tutorials**.<br>
-  Install MST on your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to login using your NUSNET account.
+  Install MST on your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to log in using your NUSNET account.
 
 
-<div tags="m--cs2103 m--cs2113">
+<div tags="m--cs2113">
 
 * **MS Team for this class**: [{{ course_pair }}-{{ semester }}]({{ url_ms_teams_class }}) {% if cs2103 %}No need to send 'join requests'. We'll be mass-adding you to this around week 2.{% endif %}
 </div>
@@ -141,15 +109,19 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 </div><!-- ----------------------------------------------------------------------------------------------------- -->
 <div id="ide">
 
-## Tool: IntelliJ IDE
+## Tool: The IDE
 
 **[IntelliJ IDEA](https://www.jetbrains.com/idea/) is the recommended IDE** for course-related programming work. Using an IDE is strongly recommended but is not compulsory.
+
+Our Intellij **IDEA resources can be found at [se-edu/guides](https://se-education.org/guides/)**.
 
 <box type="warning" seamless>
 
 **Use other IDEs at your own risk**, because,<br>
 a) course materials are optimized for IntelliJ, and,<br>
 b) we won't be able to help you if you run into problems while using any other IDE.
+
+That said, we have also provided a good amount of **resources for VS Code at [se-edu/guides](https://se-education.org/guides/)**.
 </box>
 
 <box>

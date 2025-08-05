@@ -21,7 +21,11 @@
 {{ show_expanded_faq("manySubmissions") }}
 {{ show_expanded_faq("cs2101Difference") if cs2103  }}
 {{ show_expanded_faq("java21")  }}
+
+## FAQs on: Participation
+
 {{ show_expanded_faq("whenCanWeSeeQuizAnswers") }}
+{{ show_expanded_faq("participationTaskMissedDueToValidReason") }}
 
 ## FAQs on: iP
 

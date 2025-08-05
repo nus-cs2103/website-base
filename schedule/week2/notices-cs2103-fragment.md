@@ -9,7 +9,7 @@
 
 <box type="tip" seamless>
 
-**Noticed any issues (==even minor typos==) in the course website (or in resources in [se-edu/guides](https://se-education.org/guides/))?** Have suggestions for improvements, or noticed a part that wasn't clear?<br>
+**Noticed any issues (==even minor typos==) in the course website (or in [se-edu/guides](https://se-education.org/guides/))?** Have suggestions for improvements? Noticed a part that wasn't clear?<br>
 **You can earn [bonus participation points](../../admin/participation.md)** by reporting them in the [forum]({{ url_forum }}).<br>
 </box>
 
@@ -20,7 +20,7 @@
 <p/>
 <box type="info">
 
-****Week 2->3 Briefing**** (Week 2 Recap + Week 3 Preview) will be done in hybrid mode -- you can attend it F2F %%(@{{ lecture_venue }} {{ get_date(date_w2_start, 4, format=format_normal, time="from 4pm") }})%%, join via Zoom, watch the recording later, or skip it altogether).<br>
+****Week 2→3 Briefing**** (Week 2 Recap + Week 3 Preview) will be done in hybrid mode -- you can attend it F2F %%(@{{ lecture_venue }} {{ get_date(date_w2_start, 4, format=format_normal, time="from 4pm") }})%%, join via Zoom, watch the recording later).<br>
 
 ==**iP Help Session**== %%({{ get_date(date_w2_start, 4, format=format_normal, time="from 4.50pm") }})%%: This above weekly briefing will be followed by a F2F session to help those who are stuck in the iP due to technical difficulties. To attend that help session, be in {{ lecture_venue }} at least by 4.50pm.
 
