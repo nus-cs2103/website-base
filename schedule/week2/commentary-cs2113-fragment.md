@@ -6,8 +6,14 @@
 {{ topic_preamble("Java: HelloWorld") }}
 {{ topic_preamble("Java: Data Types") }}
 {{ topic_preamble("Java: Control Flow") }}
-{{ topic_preamble("RCS: Init, Commit", id="rcs-intro") }}
-{{ topic_preamble("gitAndGithub-init") }}
-{{ topic_preamble("RCS: Fork, Clone", id="rcs-remote-repos") }}
+{% call topic_preamble("RCS: Getting Started with Git", reuse=false) %}
+
+<include src="{{ baseUrl }}/book/gitAndGithub/trail/text.md#trail-intro" />
+<p/>
+
+This week, we start with first three tours, to get started with Git and GitHub.
+
+{% endcall %}
+<!-- ---------------------------------------------------------------------------- -->
 {{ topic_preamble("IDEs: Basic Features") }}
 {{ topic_preamble("Code Quality: Coding Standards") }}

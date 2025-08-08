@@ -127,6 +127,25 @@
   </div>
 </div>
 
+-----------------------------
+
+<div id="Yugin" class="container">
+  <div class="row bt-2">
+    <div class="col-3">
+
+<img src="{{ url_course_gihub_io }}/tutor-photos/lumos309.png" width="150" onerror="this.src='images/placeholder-large.png';" class="mt-1 rounded">
+    </div>
+    <div class="col">
+
+### **Tan Yugin**
+
+**Graduate TA**<br>
+%%:fas-envelope:%% `tanyugin`[at]`nus.edu.sg`<br>
+%%:fab-github:%% [@lumos309](https://github.com/lumos309)
+    </div>
+  </div>
+</div>
+
 ------------------------
 
 ## Tutors

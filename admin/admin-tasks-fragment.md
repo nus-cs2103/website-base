@@ -59,9 +59,9 @@ Installing and configuring Git is covered in [this lesson]({{ baseUrl }}/book/gi
 
 * Read the following admin info about the course.
 
-{{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="1", type="danger") }}
+{{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="1", type="danger", status="collapsed") }}
 {{ embed_topic(baseUrl+"/admin/courseExpectations.md#main", "Admin " + icon_embedding + " **Course expectations and ==topic levels==**", "1", indent="1", type="danger") }}
-{{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="1", type="info") }}
+{{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="1", type="info", status="collapsed") }}
 {{ embed_topic(baseUrl+"/admin/weeklySchedule.md#main", "Admin " + icon_embedding + " **Weekly schedule**", "2", indent="1", type="warning") }}
 
 

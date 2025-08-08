@@ -5,7 +5,7 @@
 
 <box type="info" header="++OK, I'm here. What am I looking at? What should I do next? ...++" icon=":fas-circle-info:">
 
-**This is the <span class="text-primary">{{ show_as_tab('Summary', icon_tab_summary) }}</span> tab** of the weekly schedule page of this week. It contains a summary of the week, and announcements relevant to that week.
+**You are now in the <span class="text-primary">{{ show_as_tab('Summary', icon_tab_summary) }}</span> tab** of the weekly schedule page of this week. It contains a summary of the week, and announcements relevant to that week.
 
 **In each week, you are expected to go through all the tabs for that week** (i.e., <span class="text-primary">{{ show_as_tab('Topics', icon_tab_topics) }}</span>, <span class="text-primary">{{ show_as_tab('Admin Info', icon_tab_admin_info) }}</span>, ...) given at the top of the weekly schedule page and follow the instructions in them. FYI, a **[full timeline](../schedule/timeline.html)** is available too.
 
