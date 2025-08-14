@@ -70,7 +70,7 @@ This week's briefing videos start with a detour.
 <span class="text-info">****3. Week 1->2 Briefing****</span> (Week 1 Recap + Week 2 Preview): This video recaps Week 1 and gives a preview of what you need to do in Week 2.<br>
 %%Note: While weekly briefings are normally done in hybrid mode, this week's briefing is released as a pre-recorded video, to allow you to get started with week 2 tasks early.%%
 
-{{ panopto(desc="4 mins", "d7a602f3-c4ce-404a-87b9-b26500a62e03", start_week="1") }}
+{{ panopto(desc="4 mins", "8548228b-dc17-4eaa-8aa2-b335010eea89", start_week="1") }}
 </div>
 </panel>
 

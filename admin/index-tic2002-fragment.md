@@ -116,6 +116,8 @@ This course uses Java. It assumes you are familiar with C++ basics and provides 
 
 {{ icon_important_big_red }} Install [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17) on your computer. Using other versions of Java is highly discouraged.
 
+See [se-edu/guides Java Installation Guide](https://se-education.org/guides/tutorials/javaInstallation.html) for guidance on how to install Java.
+
 </div>
 
 {{ line_dotted }}<!-- ................................................................................... -->
