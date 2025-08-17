@@ -89,7 +89,7 @@ We encourage all to ==_watch_ [the forum]({{ url_forum }})== to get alerts when 
 ##### :fas-users-cog: MS Teams {% if cs2103 %}%%(for tutorials)%%{% endif %}
 
 * **MS Teams is used in our tutorials**.<br>
-  Install MST on your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams). Remember to log in using your NUSNET account.
+  Install MST on your computer. Installation and login instructions are [here](https://nus.atlassian.net/wiki/spaces/CTS/pages/36388874/Getting+Started+with+Teams). Remember to log in using your NUSNET account.
 
 
 <div tags="m--cs2113">
@@ -149,7 +149,7 @@ We use the [TEAMMATES](http://teammatesv4.appspot.com/) online peer evaluation s
 <span style="color:purple">**:fas-hard-hat: Preparation:**</span>
 When the first feedback session is open on TEAMMATES, you will receive an email from TEAMMATES. There is nothing for you to do until then.
 
-When you do receive that email, it will contain a unique link that you can use to access TEAMMATES without logging in first. Logging in to TEAMMATES using a Google account is optional (but doing so will allow you to see all your TEAMMATES sessions in one page).
+When you receive that email, it will include a unique link that lets you access TEAMMATES without logging in. Logging in with a Google account is optional, but doing so allows you to view all your TEAMMATES sessions on one page.
 </box>
 </div>
 

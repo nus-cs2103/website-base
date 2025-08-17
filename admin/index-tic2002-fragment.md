@@ -248,7 +248,7 @@ When using Zoom, remember to login using the `SSO` option and use your NUSNET ac
 
 ### Microsoft Teams (MST)
 
-Install MST on your computer. Installation and login instructions are [here](https://wiki.nus.edu.sg/pages/viewpage.action?spaceKey=THES&title=Before+exams+-+Install+and+log+in+to+Microsoft+Teams) (requires login).<br>
+Install MST on your computer. Installation and login instructions are [here](https://nus.atlassian.net/wiki/spaces/CTS/pages/36388874/Getting+Started+with+Teams) (requires login).<br>
 When using MST, remember to log in using your NUSNET account.
 
 The MST team used for the class is `TIC2002-{{ period }}` ([link]({{ url_ms_teams_class }})).

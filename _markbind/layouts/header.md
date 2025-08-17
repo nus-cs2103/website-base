@@ -70,6 +70,7 @@
   {{ tp_dashboard_links() }}
   <li tags="m--cs2113"><a href="https://github.com/se-edu/addressbook-level3" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Reference AB3</md></a></li>
   </dropdown>
+  <li tags="m--cs2103 m--cs2113"><a href="{{url_forum}}" class="nav-link"><md>**Forum**</md></a></li>
   <dropdown header="**{{ "Other " if not tic2002 or tee3201 else ""}}Links**" class="nav-link">
     <li tags="m--cs2103 m--cs2113"><a href="{{url_bugs}}" target="_blank" class="dropdown-item"><md>:fas-bug: Report Bugs</md></a></li>
     <li><a href="{{url_forum}}" target="_blank" class="dropdown-item"><md>:fas-comment: Forum</md></a></li>

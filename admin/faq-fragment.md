@@ -360,7 +360,7 @@ The course has MANY admin details and there are subtle changes from semester to 
 <div id="faq-tutorialHowToImproveProjectWithoutTutorFeedback-Q">Huh? If tutors are not giving feedback on project deliverables, how can we improve our project work?</div>
 <div id="faq-tutorialHowToImproveProjectWithoutTutorFeedback-A">
 
-It is true that the teaching team will not give _ad hoc_ feedback on yet-to-be-graded project deliverables. **But you will receive systematic feedback at various points of the project**, in a way that ensures all of you receive the same level of feedback about same things.
+It is true that the teaching team will not give _ad hoc_ feedback on yet-to-be-graded project deliverables. **But you will receive systematic feedback at various points of the project**, in a way that ensures all of you receive the same level of feedback about the same things.
 
 **More importantly, we aim to develop your <tooltip content="i.e., the ability to make decisions about the quality of one's own work
    and that of others">_evaluative judgement_ skills</tooltip>** thus reducing your reliance on someone else's feedback to decide how to improve. To this end, we have set up various learning tasks to help you judge your own work. Examples:
@@ -982,7 +982,7 @@ Not a good idea. Given below are three reasons each of which can be reported by 
 
 This round is for your info only (i.e., no direct impact on grades). After the final tP peer evaluation session (which is done at the end of the semester, and can affect the tP grading) results are published, you will get a chance to submit your objections if you don't agree with the evaluations you received.
 
-{{ icon_tip }}eceiving 'lower than expected' feedback early is a good thing; it shows in which areas your team members are less-happy about your contribution/conduct, while there is still time to take corrective actions. It is much worse when team members give good ratings about aspects they are unhappy about, just to avoid conflict, and hold back the negative feedback until the project is over -- in such cases you will be taken by surprise (hey! I thought everything was fine!!) with no time left to rectify the problem.
+{{ icon_tip }} Receiving ‘lower than expected’ feedback early is actually a good thing. It highlights the areas where your team members are less satisfied with your contribution or conduct, while there is still time to take corrective action. What is far worse is when team members give positive ratings for aspects they are unhappy about — just to avoid conflict — and hold back negative feedback until the project ends. In such cases, you may be caught off guard (“Hey! I thought everything was fine!”) with no time left to address the problem.
 </div>
 <!-- =============================================================== -->
 

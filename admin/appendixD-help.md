@@ -121,7 +121,6 @@ _Rubber duck debugging_ is an informal term used in software engineering to refe
 
 {{ icon_resource }} Resources
 
-* [lifehacker article] [Google Tips and Tricks Every Student Should Know](http://lifehacker.com/google-tips-and-tricks-every-student-should-know-1508121671)
 * [Article] [How To Ask Questions The Smart Way](http://catb.org/esr/faqs/smart-questions.html) by Eric Steven Raymond
 </box>
 

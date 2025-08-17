@@ -1,7 +1,7 @@
 {% from "common/admin.njk" import show_admin_page with context %}
 {% from "common/topics.njk" import panopto with context %}
 {% from "common/macros.njk" import show_faq with context %}
-{% set is_full_lockdown = 0 %}
+{% set is_full_lockdown = 1 %}
 
 {% call show_admin_page("exams") %}
 <div id="main">
@@ -67,15 +67,7 @@ The final exam has two types of questions:
 1. ==**Examplify will use the {{ 'full' if is_full_lockdown else '~~full~~ simulated' }} lock-down**== mode during the exam i.e., no access Internet, and,
    {{ 'no' if is_full_lockdown else 'not allowed to' }} access any applications/files on your computer during the exam {{ '==except the _Exam Reference_ PDF file==' if not is_full_lockdown }}.<br>
    %%Reason: Because of the risk of locally-installed LLMs affecting the integrity of the exam, NUS recommends using full-lockdown mode.%%
-1. **Consider this as a 'cheat-sheet' exam**, as that matches the nature of the questions in this exam the best. However, you will have the following additional flexibilities:
-   * **No limit on cheat-sheet page count.** You may bring any number of pages, and use any written/printed documents. %%For example, you may bring a printed copy of the entire textbook.%%{% if is_full_lockdown %}
-   * **An _exam reference_ PDF file will be available inside Examplify**, containing the full textbook, the UML reference sheet, and the coding standard.
-     * Caveat: Don't plan to refer to this file frequently. The Examplify UI is not optimized for quick opening/searching of big PDF files. So, use it only when your memory or the hard-copy cheat-sheets are not sufficient.
-     * A copy of this file will be provided to you in advance (in Canvas/files/handouts), in case you want to use it during exam preparations.{% else %}
-   * **An _exam reference_ PDF file will be available in Canvas**, containing the full textbook, the UML reference sheet, and the coding standard. You may open it ==in Adobe Acrobat Reader or the Mac Preview app (not allowed to use other PDF readers)== (<popover content="Allowing multiple PDF software increases the risk of some students getting an unfair advantages through the software (e.g., search performance of PDF readers can vary), and makes it harder for invigilators to monitor for use of unauthorised software">Why?</popover>).<br>
-     :fab-apple: Some Mac users have reported an issue with the Acrobat Reader -- hence, using the Mac Preview app to view the Exam Reference PDF will be allowed as well.<br>
-     {{ icon_important_big_red }} When using either of the two PDF 'allowed' viewers, **limit your usage to viewing, navigating, and simple search only**. #r#**Do not use any AI-like features provided by the PDF tool**##.
-     {% endif %}
+1. **This is a 'cheatsheet' exam**: **You are allowed the usual one A4 size cheatsheet** (both sides). There is no restriction on what it can contain.
 1. **==You need to check the exam-compatibility of your device early==** (as given in the panel below) -- even if you have used Examplify for other exams before, as the Examplify behaviour varies based on the specific exam configuration -- and work with NUS CIT to resolve any issues you encounter.{% if is_full_lockdown %}<br>
    Issues encountered by past students include problems in viewing and searching the _exam reference_ PDF file inside Examplify.{% endif %}
 
@@ -86,7 +78,7 @@ The final exam has two types of questions:
 * **Ensure you have Examplify installed**{.text-info} in your exam device. {texts="['i.', 'ii.', 'iii.', 'iv.', 'v.']" t-class="fw-bold text-info"}{% if not is_full_lockdown %}
 * **:fab-windows:/:fab-linux: Windows/Linux users: Ensure you have Adobe Acrobat Reader installed**{.text-info} in your exam device -- no other PDF software allowed during the exam.<br>
   :fab-apple: Mac users: You may use the Preview app that comes with macOS or the Adobe Acrobat Reader.<br>
-  :fab-windows: Windows users: When downloading the Adobe Acrobat fifinstaller, you may want to opt out of installing additional bundled
+  :fab-windows: Windows users: When downloading the Adobe Acrobat installer, you may want to opt out of installing additional bundled
    software (e.g., McAfee Virus Scanner) -- this option is given when downloading, not when installing.{% endif %}
 
 * **Download the mock exam**{.text-info} we have provided. It has only three dummy questions, for you to get familiar with the exam mode.
