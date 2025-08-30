@@ -34,6 +34,9 @@
 {{ show_expanded_faq("ipMultipleIncrementsInSameCommit") }}
 {{ show_expanded_faq("ipIncrementAlreadyDone") }}
 {{ show_expanded_faq("ipForgotToPushTag") }}
+{{ show_expanded_faq("ipIncreaseDashboardFrequency") }}
+{{ show_expanded_faq("ipMarksForOptionalIncrements") }}
+{{ show_expanded_faq("ipForkedTheWrongRepo") }}
 {{ show_expanded_faq("ipIncorrectTagOrBranch") }}
 {{ show_expanded_faq("ipNotDoneInBranch") }}
 {{ show_expanded_faq("ipOtherDataFormats") }}

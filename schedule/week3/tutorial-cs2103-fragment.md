@@ -23,11 +23,6 @@ As this is the first tutorial, given below are general details about our tutoria
 </box>
 <p/>
 
-#### {{ thumb(0) }} **[{{ course }} students only] Form teams**
-
-<include src="../../admin/common-tutorials-fragment.md#form-teams" />
-
-
 #### {{ thumb(1) }} **Introduce yourselves**
 
 <include src="../../admin/common-tutorials-fragment.md#introduce-yourselves" />

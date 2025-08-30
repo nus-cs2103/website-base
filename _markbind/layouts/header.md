@@ -40,7 +40,7 @@
   </dropdown>
   <li><a href="{{baseUrl}}/se-book-adapted/index.html" class="nav-link"><md>**Textbook**</md></a></li>
 {% if tic2002 %}
-  <li><a href="{{baseUrl}}/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
+  <li><a href="{{baseUrl}}/admin/index.html" class="nav-link"><md>**Admin Info**</md></a></li>
 {% else %}
   <dropdown header="**Admin Info**" class="nav-link">
 {{ get_admin_menu_items() }}
@@ -82,8 +82,10 @@
     <li tags="m--cs2113 m--tic2002 m--tee3201"><a href="{{url_coursemology_classroom}}" target="_blank" class="dropdown-item"><md>{{ icon_exercise }} Coursemology link</md></a></li>
     {% if not cs2113 %}<li><a href="{{url_ms_teams_class}}" target="_blank" class="dropdown-item"><md>:fas-users-cog: MS Teams link</md></a></li>
     {% endif %}{% if cs2103 %}<li><a href="{{ baseUrl }}/se-book-adapted/git-trail/index.html" class="dropdown-item"><md>:fas-route: Git Learning Trail</md></a></li>
-    {% endif %}<li tags="m--cs2103 m--cs2113 m--tic2002"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
+    {% endif %}<li tags="m--tic2002"><a href="{{ url_participation_dashboard }}" class="dropdown-item text-success" target="_blank"><md>:fas-trophy: **Participation** dashboard</md></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic2002"><a href="{{url_java_coding_standard}}" target="_blank" class="dropdown-item"><md>:fas-code: Java Coding Standard</md></a></li>
     <li tags="m--cs2103 m--cs2113"><a href="{{url_git_conventions}}" target="_blank" class="dropdown-item"><md>:fab-git-square: Git Conventions</md></a></li>
+    <li tags="m--cs2103"><a href="{{ baseUrl }}/admin/uml-reference-sheet.md" target="_blank" class="dropdown-item"><md>:fas-diagram-project: UML Reference Sheet</md></a></li>
     <li tags="m--tic2002"><a href="{{url_ip_dashboard}}" target="_blank" class="dropdown-item"><md>:fas-chart-area: Code Dashboard</md></a></li>
     <li tags="m--tic2002"><a href="{{url_course_org}}/{{ ip_repo_name }}" target="_blank" class="dropdown-item"><md>{{ icon_repo }} Duke repo</md></a></li>
   </dropdown>

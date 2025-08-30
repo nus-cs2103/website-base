@@ -15,6 +15,11 @@ Now that we have a high-level understanding of the role played by models, let's 
 
 ==Note that we are learning to _interpret_ these models only==, not _draw_ them (that would come later), or _design_ them. Hence, we will be going through these topics fairly rapidly.
 
+<box type="tip" seamless>
+
+**Use the ==[UML Reference Sheet]({{ baseUrl }}/admin/uml-reference-sheet.md)==** to quickly look up UML notation.
+</box>
+
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Java: JavaFX", reuse=false) %}

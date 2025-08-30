@@ -91,6 +91,7 @@
       {location: ["documentation", "tools", "javaDoc", "how"]},
       {location: ["cppToJava", "misc", "fileAccess"]},
       {location: ["cppToJava", "misc", "packages"]},
+      {location: ["cppToJava", "misc", "accessModifiers"]},
       {location: ["cppToJava", "misc",  "jar"]},
     {heading: "Code Quality: Coding Standards"},
       {location: ["codeQuality", "introduction", "basic"], panopto: "e2ab97ac-e79c-4555-96cc-ac0e00dc8a73", questions:"y"},

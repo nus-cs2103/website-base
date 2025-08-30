@@ -34,7 +34,7 @@
 **Co-Lecturer**<br>
 %%:fas-envelope:%% `adamsmd`[at]`nus.edu.sg`<br>
 %%:fas-map-marker-alt:%% COM3‐02‐47<br>
-%%:fab-github:%% [@adamsmd](https://github.com/adamsmd)
+%%:fas-home:%% https://michaeldadams.org | %%:fab-github:%% [@adamsmd](https://github.com/adamsmd)
 
 </div>
 </div>

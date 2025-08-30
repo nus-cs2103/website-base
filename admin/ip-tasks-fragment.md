@@ -11,12 +11,15 @@
 
 #####  **FAQ** about iP increments{.text-info}
 
-{{ show_faq("ipHowTagsUsed") }}
-{{ show_faq("ipBugAfterIncrementDone") }}
-{{ show_faq("ipMultipleIncrementsInSameCommit") }}
-{{ show_faq("ipIncrementAlreadyDone") }}
-{{ show_faq("ipForgotToPushTag") }}
-{{ show_faq("ipIncorrectTagOrBranch") }}
+{{ show_faq("ipHowTagsUsed", is_compact=1) }}
+{{ show_faq("ipBugAfterIncrementDone", is_compact=1) }}
+{{ show_faq("ipMultipleIncrementsInSameCommit", is_compact=1) }}
+{{ show_faq("ipIncrementAlreadyDone", is_compact=1) }}
+{{ show_faq("ipForgotToPushTag", is_compact=1) }}
+{{ show_faq("ipIncreaseDashboardFrequency", is_compact=1) }}
+{{ show_faq("ipMarksForOptionalIncrements", is_compact=1) }}
+{{ show_faq("ipIncorrectTagOrBranch", is_compact=1) }}
+{{ show_faq("ipForkedTheWrongRepo") }}
 </box>
 </div>
 <div id="order">
@@ -113,6 +116,11 @@ As per the above, ==you have until the {{ lecture_name }}== at the end of this w
 
 **:fas-clock: Reminder about the deadline for the weekly project tasks:**
 {{ embed_topic("weeklySchedule.md#deadline-definition", "Admin " + icon_embedding + " Weekly schedule → **Deadline for weekly tasks**", "1", indent=1) }}
+
+<panel type="seamless" header="Repeating some FAQs from last week ..." peek>
+
+<include src="ip-tasks-fragment.md#ip-faq" />
+</panel>
 <p/>
 
 </div>
@@ -528,14 +536,6 @@ commit id: "m6"
 * The Java and Git standards to follow (for `A-CodingStandard`) are given in [this page](standardsAndConventions.html).
 * After finishing, assuming you encountered merge conflicts (and some were rather painful to resolve), think of how such conflicts could have been reduced %%(e.g., by changing the order of merging, or minimizing parallel branches when certain type of changes are being done to the code)%%.
 </div>
-</div>
-{#====================================================================================================================#}
-<div id="pre_A-CodingStandard">
-
-<box type="tip" seamless>
-
-Relevant SE-EDU guide: [Intellij IDEA: Configuring the code style](https://se-education.org/guides/tutorials/intellijCodeStyle.html)
-</box>
 </div>
 {#====================================================================================================================#}
 <div id="post_A-CodingStandard">

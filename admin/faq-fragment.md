@@ -204,6 +204,44 @@ You can add the corresponding tag to the earlier commit (or the latest commit --
 Not to worry. Just push the tags now. They will be detected by the dashboard at the next update. There is no penalty if mistakes are detected and fixed soon after.
 </div>
 <!-- =============================================================== -->
+<div id="faq-ipIncreaseDashboardFrequency-Q">Can the iP dashboard be updated more frequently?</div>
+<div id="faq-ipIncreaseDashboardFrequency-A">
+
+**Good news:** Even if an item in the iP dashboard turns red, it does not affect your marks if you fix it soon, turning it back to green subsequently.
+
+**It is difficult to increase the dashboard update frequency** due to following reasons:
+
+* **Resource limitations** e.g., limits on the number of GitHub API calls, GitHub Actions minutes, GitHub Actions bandwidth used, etc.
+* **The updates cannot be fully automated** as some data sources do not allow programmatic access or require a staff account to access them (e.g., Canvas). Therefore, dashboard updates require some manual work, and is run in a local computer (not running on a server somewhere).<br>
+  {{ icon_info }} While the stated update frequency is 24 hours, we do update it a few times each day.
+
+**A high frequency of dashboard updates is also not _desirable_** because an over-reliance on an external verification mechanism to confirm if you 'did something correctly' is not conducive to learning.
+
+**Recommendation:** Aim to finish tasks well in advance of the deadline so that, in the unlikely event that you make a mistake in your work and the item does not turn green, you will still have time to correct it before the deadline.
+</div>
+<!-- =============================================================== -->
+<div id="faq-ipMarksForOptionalIncrements-Q">If I do optional increments, do I get more marks?</div>
+<div id="faq-ipMarksForOptionalIncrements-A">
+
+Not necessarily. The iP is intended to help you to learn the skills required for the tP. Almost all students are expected to receive full marks. See [here](ip-grading.md) for more info on iP grading.
+
+If you are already experienced in using the concept covered by the optional increment, the value you gain from completing that increment is relatively low. But if you are not, there is value in doing that increment irrespective of how it affects iP marks.
+</div>
+<div id="faq-ipForkedTheWrongRepo-Q">I forked the iP repo from a previous semester. How to fix?</div>
+<div id="faq-ipForkedTheWrongRepo-A">
+
+Not to worry. Here are the steps to fix:
+
+1. Delete the fork in your GitHub account.
+1. Fork the [correct upstream repo]({{url_course_org}}/{{ ip_repo_name }}).
+1. [Optional] Take a backup of your local repo folder.
+1. Pull from your fork. Notes:
+   * Because the URL of the previous fork is the same as the new fork, this will now pull from the new fork.
+   * Pulling from the new fork is possible because your clone and both the old and the new fork have a shared ancestry (i.e., they all originated from the [same duke repo](https://github.com/se-edu/duke)).
+1. If the new fork has commits that were not present in your old fork, the above pull operation will result in a merge conflict. [Resolve it]({{ baseUrl }}/book/gitAndGithub/mergeConflicts/) and commit.
+1. Push to the fork. This will push your new commits to your new fork.
+</div>
+<!-- =============================================================== -->
 <div id="faq-ipIncorrectTagOrBranch-Q">Oh no! used the wrong tag/branch name.</div>
 <div id="faq-ipIncorrectTagOrBranch-A">
 

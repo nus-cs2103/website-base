@@ -10,7 +10,12 @@
 #### {{ thumb(1) }} **Interpret class/object diagrams**
 {% endif %}
 
-* Do the first of the two exercise given below, as directed by the tutor. If there is time left, do the second one as well.
+* Do the two exercise given below, as directed by the tutor.
+
+<box type="tip" seamless>
+
+**Use the ==[UML Reference Sheet]({{ baseUrl }}/admin/uml-reference-sheet.md)==** to quickly look up UML notation.
+</box>
 
 <div class="indented-level2">
 

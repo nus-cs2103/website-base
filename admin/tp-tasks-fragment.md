@@ -187,7 +187,7 @@ In addition, you can mitigate the impact of such bugs and thus lower its severit
 
 * **We already know that the tP will be done in breadth-first iterative manner**, each iteration delivering a working version that will be evolved further by subsequent iterations. Now is a good time for us to plan those iterations.{ texts="['A.','B.','C.','D.']" t-class="fw-bold text-info" }
 * **Intuitively, it feels like we should decide features of the final version first**, and then, work our way backwards to plan intermediate versions.<br>
-  **But that approach is not advisable, due to the difficulty of reliably estimating the effort** each feature will need, _especially because we are not experienced in doing similar projects_. So, any such long-range plan is likely to be highly inaccurate anyway.
+  **But that approach is not advisable, due to the difficulty of reliably estimating the effort** each feature will need, _especially because you are not experienced in doing similar projects_. So, any such long-range plan is likely to be highly inaccurate anyway.
 * **Instead, our approach is  to ==assume the current iteration is the last iteration.==**<br>
   Then, we aim to deliver the best possible product at the current iteration, based on available time.<br>
   We execute the iteration accordingly, and even tweak the plan further along the way, as needed.<br>

@@ -1643,7 +1643,7 @@
               {name: "backingUpOnCloud", heading: "Tour 2: Backing up a Repo on the Cloud", priority: "1"},
               {name: "workingWithRemotes", heading: "Tour 3: Working Off a Remote Repo", priority: "1"},
               {name: "usingRevisionHistory", heading: "Tour 4: Using the Revision History of a Repo", priority: "1"},
-              {name: "fineTuningHistory", heading: "Tour 5: Fine-Tuning the Revision History", priority: "4"},
+              {name: "fineTuningHistory", heading: "Tour 5: Fine-Tuning the Revision History", priority: "3"},
               {name: "branchingLocally", heading: "Tour 6: Branching Locally", priority: "2"},
               {name: "syncingBranches", heading: "Tour 7: Keeping Branches in Sync", priority: "3"},
               {name: "remoteBranches", heading: "Tour 8: Working with Remote Branches", priority: "4"}
@@ -1677,7 +1677,7 @@
               {name: "reset", heading: "Rewriting History to Start Over", priority: "1"},
               {name: "selectiveStage", heading: "Controlling What Goes Into a Commit", priority: "2"},
               {name: "commitMessage", heading: "Writing Good Commit Messages", priority: "3"},
-              {name: "interactiveRebase", heading: "Reorganising Commits", priority: "3"},
+              {name: "interactiveRebase", heading: "Reorganising Commits", priority: "4"},
               {name: "branch", heading: "Creating Branches", priority: "1"},
               {name: "merge", heading: "Merging Branches", priority: "1"},
               {name: "mergeConflicts", heading: "Resolving Merge Conflicts", priority: "1"},
