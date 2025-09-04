@@ -23,12 +23,14 @@
 </panel><p/>
 </div>
 
-* **The PE is divided into four phases**:
-  * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D. This phase is divided further into parts I, II, and III (done during the lecture slot), and part IV (done the day after the PE slot).</span>
+* **The PE is divided into four phases, and is of the form 'take home assignment'**:
+  * ****Phase 1: Bug Reporting****{.text-success}: <span id="pe-p1-desc">In this phase, you will test the allocated product and report bugs, similar to PE-D.<br>
+    This phase is divided further into parts I, II, and III.<br>
+    The recommended order and the recommended duration of each phase is given below. You will be given about 24 hours (Friday 12 noon to Saturday 12 noon) to finish this phase.<br>
+    We recommend that you do during the lecture slot (reason: support from the teaching team will be more readily available during that time).</span>
     * <span class="badge bg-success">Phase 1 - part I</span> **Product Testing** [60 minutes] -- to focus on reporting bugs in the product (but can report documentation bugs too)
     * <span class="badge bg-success">Phase 1 - part II</span> **Evaluating Documents** [30 minutes] -- to focus on reporting bugs in the UG and DG (but can report product bugs too)
     * <span class="badge bg-success">Phase 1 - part III</span> **Overall Evaluation** [15 minutes] -- to give overall evaluation of the product, documentation, effort, etc.
-    * <span class="badge bg-success">Phase 1 - part IV</span> **Trimming Bugs** [~half a day] -- For testers to select up to {{ tp_pe_bug_count }} bugs to send to the dev team.
   * ****Phase 2: Developer Response****{.text-success}: <span id="pe-p2-desc">This phase is for you to respond to the bug reports you received. Done during Sunday - Tuesday period after PE </span>
   * ****Phase 3: Tester Response****{.text-success}: <span id="pe-p3-desc">In this phase you will receive the dev teams response to the bugs you reported, and will give your own counter response (if needed). Done during Wednesday - Friday period after the PE.</span>
   * ****Phase 4: Tutor Moderation****{.text-secondary}: <span id="pe-p4-desc">In this phase tutors will look through all dev responses you objected to in the previous phase and decide on a final outcome. Students are not usually involved in this phase.</span><br><br>
@@ -39,27 +41,6 @@
   * Also see:
 
 {{ embed_topic("tp-grading-bugs-fragment.md#bugCalculationNotes", "Admin " + icon_embedding + " tP Grading → Notes on how marks are calculated for PE", "3", indent="2") }}
-
-<panel type="secondary" header="Recent tweaks to the PE" peek>
-
-FYI, given below are some of the recent tweaks we have done to the PE, to reduce the stress and the workload of the PE.
-
-1. **PE phase 1 is done on Week 12 Friday**. Phases 2-4 done over Week 13.
-   * %%Previous (i.e., the state before the tweak): Phase 1 done on Week 13 Friday, and phases 2-4 done over the Reading Week.%%
-   * Rationale for the tweak: To avoid spilling PE phases into the Reading Week.
-1. **Testers are given about 0.5-1 day to update type/severity of bugs** after the PE (but subject/body cannot be changed).
-   * Rationale for the tweak: To reduce the stress of having to choose the correct severity/type during the PE period itself.
-   * %%Previous (i.e., the state before the tweak): Any change to the bug after the PE deadline invalidated the bug report.%%
-1. **Testers should choose upto {{ tp_pe_bug_count }} bugs to be sent to the dev team.**
-   * Rationale: To reduce the workload of the dev team.
-   * %%Previous: All reported bugs are sent to the dev team, requiring the dev team to process many trivial/shot-in-the-dark bug reports.%%
-1. **Testers can report any type of bugs during the entire PE period.**
-   * %%Previous: The last 30-minutes was dedicated to reporting document bugs only.%%
-   * Rationale: To allow more flexibility e.g., to update a bug reported in the earlier part of the PE.
-1. **Bug type can be changed at dev team's discretion.**
-   * %%Previous: The tester and the dev team had to agree on the bug type.%%
-   * Rationale: To reduce the number of things testers and the dev teams have to agree on (less work).
-</panel>
 
 </div>
 
@@ -131,22 +112,9 @@ FYI, given below are some of the recent tweaks we have done to the PE, to reduce
 </div>
 <p/>
 
-* **During the bug reporting periods (i.e., <span class="badge bg-success">PE Phase 1 - part I</span> and <span class="badge bg-success">PE Phase 1 - part II</span>), do not use websites/software not in the list given below.** If you need to visit a different website or use another software, please ask for permission first.
-  * Website: Canvas
-  * Website/software: MSTeams (only to communicate with the prof of Tech support)
-  * Website: Course website %%(e.g., to look up PE info)%%
-  * Software: CATcher
-  * Software: any screen grab/recording software
-  * Software: PDF reader %%(to read the UG/DG or other references such as the textbook)%%
-  * Software: A text editor or word processing software %%(to keep notes while testing)%% -- use a simple text editor that doesn't have online collaboration features
-  * Software: An IDE or a code editor, to examine the code of the team
-* **Do not visit GitHub**. If you need to visit the team's GitHub page to find an information needed for testing, get the invigilator's permission first.<br>
-  To check if DG diagrams match the code, you can use the source files contained in the `[TEAM_ID]source.zip` file provided.
-* **Do not use any other software running** in the background e.g., Telegram chat.
-* **This is a _manual_ testing session**. Do not use any test automation tools or custom scripts.
-* **You may use any digital/physical notes** during the PE %%e.g., a list of things to check%%.
-* **Recommended to read the guidelines the dev team will follow when responding to your bug reports later**, given in the panel below. This will help decide what kind of bugs to report.
 * **Bugs reported during the PE should be the result of your own testing**. <span class="text-danger">Reporting bugs found by others as your own will be reported as a case of academic dishonesty</span> (severity is similar to cheating during the final exam).
+* **While the PE is primarily a manual testing session, you may use automated tools** or scripts to flush out bugs as well, including AI tools.
+* **Recommended to read the guidelines the dev team will follow when responding to your bug reports later**, given in the panel below. This will help decide what kind of bugs to report.
 <div class="indented-level1">
 <panel type="info" header="Guidelines for the dev team to follow when triaging PE bugs" peek>
 
@@ -180,26 +148,16 @@ while choosing the `{{ course_pair }} PE` as the session.
 
 -------------------------------------------------------------------------{.border-success}
 
-#### <span class="badge bg-success">&rarr; PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
+#### <span class="badge bg-success">&rarr; PE Phase 1 - Part I</span> <span class="text-success">Product Testing [~60 minutes]</span>
 
 **Test the product and report bugs** as described below. You may report both product bugs and documentation bugs during this period.
 
 <include src="tp-ped-fragment.md#tp-pe-testing-instructions" var-pe_active_tab="1"/>
 
 
-**There will be a _mass identity check_** during this part of the PE:
-
-<box type="info" header="**Mass identity check**" seamless id="identity-check-info" tags="m--cs2103">
-
-When the invigilator announces an identity check,
-
-1. remove mask (if any)
-1. turn towards the camera
-1. move closer to the camera (but do not adjust the camera position) -- no need to show the student card
-1. hold that pose until the invigilator has taken a screenshot and asks you to go back to the PE activity.
-
-<span class="text-danger">Please comply quickly</span> as non-compliance can delay the PE for everyone. This is expected to take no more than 15 seconds.
-</box>
+* =={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
+  * Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase of the PE.
+  * As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower priority has a lower risk of being disputed by the dev team, giving you (and the dev team) a better chance of earning bonus marks for accuracy.
 
 {{ show_faq("tpTestingLessBuggyProducts", is_compact="1") }}
 {{ show_faq("tpNoBugsInTestedProduct", is_compact="1") }}
@@ -207,7 +165,7 @@ When the invigilator announces an identity check,
 
 -------------------------------------------------------------------------{.border-success}
 
-#### <span class="badge bg-success">&rarr; PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
+#### <span class="badge bg-success">&rarr; PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [~30 minutes]</span>
 
 * **Use this slot mainly to report documentation bugs** (but you may report product bugs too). You may report bugs related to the UG and the DG.<br>
   Only the content of the UG/DG PDF files (not the online version) should be considered.
@@ -220,12 +178,12 @@ When the invigilator announces an identity check,
 
 * **You _may_ report grammar issues** as bugs but note that minor grammar issues that don't hinder the reader are allowed to be categorized as `response.NotInScope` (by the receiving team) -- such bugs earn only small amount or credit for the tester (hence, do not waste time reporting too many minor grammar errors).
 
+
 -------------------------------------------------------------------------{.border-success}
 
-#### <span class="badge bg-success">&rarr; PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span>
+#### <span class="badge bg-success">&rarr; PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [~15 minutes]</span>
 
-* To be submitted via TEAMMATES. You are expected to complete this during the PE session itself, but ==you have until the end of the day to submit (or revise) your submissions==.<br>
-  **If you have a valid reason to leave the PE early** (e.g., having another exam right after the PE), you may leave after part II has ended and do part III later -- but note that if you fail to submit this by the hard deadline (i.e., end of the day), you will receive an <span class="text-danger">automatic penalty</span>.
+* To be submitted via TEAMMATES. If you fail to submit this you will receive an <span class="text-danger">automatic penalty</span>.
 * The TEAMMATES email containing the submission link should have reached you the day before the PE. If you didn't receive it by then, you can request it to be resent from [this page](https://teammatesv4.appspot.com/web/front/help/session-links-recovery).
 * **If TEAMMATES submission page is slow/fails to load** (all of you accessing it at the same time is likely to overload the server), wait 3-5 minutes and try again. <span class="text-danger">Do not refresh the page repeatedly</span> as that will overload the server even more, and recovery can take even longer.
 
@@ -311,13 +269,7 @@ Use the person's PPP and RepoSense page to evaluate the effort.
 
 #### <span class="badge bg-success">&rarr; PE Phase 1 - Part IV</span> <span class="text-success">Trimming bugs</span>
 
-**This segment gives testers a second chance revisit their bug reports, and choose upto {{ tp_pe_bug_count }} bugs that they wish to send to the dev team.** They will be allowed to change bug type/severity too (but will not be allowed to change bug title or the description).
-
-**Objectives:**
-  * To give testers a chance to correct their type/severity choices in case they chose incorrectly during the PE due to time pressure.
-  * To filter out lower-impact (or low-confidence) bugs so that there is less work for the dev team during the next phase.
-
-**Deadline:** Saturday 23:59
+**This segment gives testers a second chance revisit their bug reports, and choose upto {{ tp_pe_bug_count }} bugs that they wish to send to the dev team.**
 
 <box type="tip" seamless>
 
@@ -341,12 +293,6 @@ The above **applies to this and all remaining PE phases**.
 
 1. **Wait for the announcement** declaring this part of the PE to be open -- expected to be Friday night or Saturday morning.
 1. **Open CATcher** as before (i.e., go to [CATcher Web app](https://catcher-org.github.io/CATcher/), and login to the profile `{{ course_pair }} PE`).
-1. **Revise severity and bug type** of your bug reports as you see fit.
-   * {{ icon_important_big_red }} #r#Do not change the title or the description.##<br>
-     What if I updated the title/description by mistake? Not to worry, they will be reverted to the previous version (i.e., as at the end of part II) by our processing script.
-   * =={{ icon_tip }} **When in doubt, choose the lower severity:**== If the severity of a bug seems to be smack in the _middle_ of two severity levels, choose the lower severity (unless much closer to the higher one than the lower one).
-     * Reason: The teaching team follow the same policy when adjudicating disputed severity levels in the last phase of the PE.
-     * As the tester, you might feel like you are throwing away marks by choosing a lower priority; but the lower priority has a lower risk of being disputed by the dev team, giving you (and the dev team) a better chance of earning bonus marks for accuracy.
 1. **Decide which bugs should be sent to the dev team**. You may select ==no more than {{ tp_pe_bug_count }}==.<br>
    **Of these bugs, ==the highest scoring 5 bugs will be used for your tP grading==.** %%We allow you to select up to {{ tp_pe_bug_count }} bugs (instead of 5), to reduce your decision-stress (i.e., it provides a safety margin against wrong choices).%%
    * **Choose based on,**<br>

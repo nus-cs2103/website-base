@@ -123,13 +123,14 @@ These are considered _functionality bugs_:<br>
 
 ##### Grading bugs found in the PE
 
-* ==Of the <popover content="1. _Developer Testing_ component -- based on the bugs found in your code;<br>2. _System/Acceptance Testing_ component -- based on the bugs found in others' code">two components of testing</popover>, the one you do better will be given a 70% weight and the other a 30% weight== so that your total score is driven by your strengths rather than weaknesses.
+* **Marks for finding bugs in the PE:** 3 marks. If you found 'enough' bugs (depends on how buggy the product was), you get full marks.<br>
+  **Bugs found in your product:** determines 7 marks under the QA component, but in addition, also affect other components of the tP grade (e.g., documentation bugs affect the documentation component of the tP grade).
 * **Bugs rejected by the dev team**, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.
 * **The penalty/credit for a bug varies based on the severity** of the bug: `severity.High` > `severity.Medium` > `severity.Low` > `severity.VeryLow`
 * **The three bug types (i.e., `type.FunctionalityBug`, `type.DocumentationBug`, `type.FeatureFlaw`) are counted for three different grade components.** The penalty/credit can vary slightly based on the bug type, but you may consider them as roughly equivalent. %%So, always choose the most suitable type for a bug rather than try to choose a type that benefits your grade.%%
 * **The penalty for a bug is divided equally** among <popover content="In the PE, each team get to decide who are the assignees for each bug report they received">assignees</popover>.
 * **Developers are not penalized for duplicate bug reports** they received but the testers earn credit for duplicate bug reports they submitted, provided the duplicates are not submitted by the same tester.<br>
-  However, **<tooltip content="i.e., the same bug reported by many testers">_obvious_ bugs</tooltip> earn less credit** for the tester and slightly higher penalty for the developer.
+  However, **<tooltip content="i.e., the same bug reported by many testers">_obvious_ bugs</tooltip> earn less credit** for the tester.
 * **Excessive incorrect downgrading/rejecting/<tooltip content="marking as duplicates">duplicate-flagging</tooltip>**, if deemed an attempt to _game the system_, will be penalized.
 
 {{ show_faq("tpMoreCodeMeansHigherPenalty") }}

@@ -4,8 +4,7 @@
 
 **What**: The product version released by the {{ version_penultimate }} iteration is subjected to a round of peer _acceptance/system testing_, also called the _Practical Exam (PE) Dry Run_ as this round of testing will be similar to the graded <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at {{ version_final }}</trigger>.
 
-**When, where**: uses a 60-minutes slot at the start of week {{ (ped_week | int) }} &rarr; {{ (ped_week | int) + 1 }} transition point (i.e., {{ get_date(date_w11_start if ped_week=='11' else date_w12_start, 4, time=time_lecture_start) }}) lecture slot.
-{% if cs2103 %}It will be conducted via Zoom. If you can't find another suitable location to join the Zoom meeting, you may do so from the lecture venue.{% endif%}
+**When**: To be done within a period of about 6 hours at the start of week {{ (ped_week | int) }} &rarr; {{ (ped_week | int) + 1 }} transition point (i.e., {{ get_date(date_w11_start if ped_week=='11' else date_w12_start, 4, time='1200-1800') }}). We recommend that you spend about 1-1.5 hours of the lecture slot (the one that falls inside the above period) for this task.
 
 <modal large header="Admin {{ icon_embedding }} tP → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
 <include src="tp-pe.md#tp-practicalexam"/>
@@ -30,13 +29,13 @@
 
 **Use ==the [CATcher Web app](https://catcher-org.github.io/CATcher/)==** for reporting bugs. More instructions will be given during the PE-D %%e.g., which session to use%%.
 
-**Use MS Teams (not Zoom) to contact prof** if you need help during the session. Use Zoom chat only if you don't get a response via MS Teams.
+**Use MS Teams private messages to contact prof** if you need help during the PE-D. You may also use email to contact the teaching team.
 
 <box type="warning" seamless>
 
 ****How many bugs to report?****
 
-Report as many bugs as you can find during the given time. You can take a bit longer if you wish to (unlike the PE, PE-D is not timed strictly -- you will be allowed to continue reporting PE-D bugs for at least an extra 30-40 minutes after the 'official' PE-D end time, if you wish to get a bit more out of the PED). If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. In that case, all the more reasons to spend more time and find more bugs now.
+Report as many bugs as you can find during the given time. If you can't find many bugs at this stage when the product is largely untested, you are unlikely to be able to find enough bugs in the better-tested final submission later. So, all the more reasons to spend more time and find more bugs now.
 
 For reference, here are what we consider as qualities of a good bug report:
 <box>
@@ -58,15 +57,16 @@ For reference, here are what we consider as qualities of a good bug report:
 {% elseif cs2103 %}
 #r#**Evaluation rubric:**##
 
-* Meets expectations (i.e., good enough to earn **participation points**): 3-5 good bug reports
-* Exceeds expectations (i.e., good enough for **1 mark**): more than 6-8 good bug reports
-* Greatly exceeds expectations (i.e., good enough for **2 marks**): more than 9 or more good bug reports
+-   |Meets expectations | Exceeds expectations | Greatly exceeds expectations
+----|----|----|----
+Number of 'good' bug reports | 3-5 | 6-8 | >9
+Marks | participation points (PP) only | PP, **#g#+1## mark** added to tP score | PP, **#g#+2## marks**
 
-As you can't be sure which of your bug reports will be considered as _good_ (the last criterion in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total if you aim for 1 mark, more if you are aiming for 2 marks. The **median bug reports count in the last round was 9**.
+**The 'good' bug reports count is determined by the team receiving your bugs.** As you can't be sure which of your bug reports will be considered as _good_ (the last criterion in particular) by the receiving team, we recommend that you aim to submit at least 8-10 bug reports in total if you aim for +1 mark, more if you are aiming for +2 marks. The **median bug reports count in the last round was 9**.
 {% endif %}
 </box>
 
-**PE and PE-D are _manual_ testing sessions.** Using test automation tools or scripting is not allowed. But you may use such techniques when testing your own product.
+While PE and PE-D are primarily _manual_ testing sessions, **you may also use any test automation tools or test scripts too.**
 
 **Test the product and report bugs** as described below, when the prof informs you to begin testing.
 
@@ -122,15 +122,16 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 
 <box type="info">
 
-**++If the product doesn't work at all:++** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, {% if not cs2103 %}contact the invigilator (via MS Teams, and failing that, via Zoom chat) to receive a _fallback_ team to test.{% else %}do the following:
+**++If the product doesn't work at all:++** If the product fails catastrophically %%e.g., cannot even launch, or even the basic commands crash the app%%, {% if not cs2103 %}contact the Prof (via MS Teams, and failing that, via email) to receive a _fallback_ team to test.{% else %}do the following:
 
 1. **Check the UG** of the team, to see if there are extra things you need to do before launching the JAR.<br>
    **Confirm that you are using Java 17** and using the `java -jar` command to run the JAR, as explained in points above.
-1. **Contact our head TA** via MS Teams (name: `Kim Hyeongcheol`, NUSNET: `dcskh`) and give him<br>
+1. **Contact our head TA** via MS Teams (name: `Ng Tzer Bin`, NUSNET: `dcsnt`) and give him<br>
 (a) **a screenshot** of the error message, and<br>
 (b) **your GitHub** username.
 1. **Wait for him to give you a fallback** team to test.<br>
-   Contact the prof (via MS Teams) if you didn't get a response from him within 5 minutes.
+   Expected response times: [12 noon - 4pm] 20 minutes, [4-6pm] 5 minutes, [after 6pm] not available #r#(i.e., you need to resolve these issues before 6pm)##.<br>
+   Contact the prof (via MS Teams) if you didn't get a response from him within the expected response time.
 1. **Delete bug reports you submitted for the previous team** (if any), using CATcher.
 1. **You should not go back to testing the previous team** _after_ you've been given a fallback team to test.
 {% endif %}
@@ -140,7 +141,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 ###### <div class="text-white bg-secondary p-1">b) What to test</div>
 
 * **Test ==based on the Developer Guide== (Appendix named _Instructions for Manual Testing_) ==and the User Guide== PDF files.** The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.<br>
- **If the provided UG/DG PDF files have serious issues** (e.g., some parts seem to be missing), ask prof for permission to use the Web versions of UG/DG instead.{% if cs2103 %}
+ **If the provided UG/DG PDF files have serious issues** (e.g., some parts seem to be missing) you can report it as a bug, and then, use the Web versions of UG/DG for the testing.{% if cs2103 %}
 * **The DG appendix named _Planned Enhancements_** (if it exists) gives some enhancements the team is planning for the near future. The feature flaws these enhancements address are 'known' -- reporting them will not earn you any credit.<br/>
   However, you can report `type.FeatureFlaws` bugs if you think these enhancements themselves are flawed/inadequate.<br/>
   You can also report `type.DocumentationBug` bugs if any of the enhancements in this list combines more than one enhancement.
@@ -182,7 +183,7 @@ As you can't be sure which of your bug reports will be considered as _good_ (the
 
 ###### <div class="text-white bg-secondary p-1">d) How to report bugs</div>
 
-* {{ icon_important_big_red }} **Post bugs as you find them** %%(i.e., do not wait to post all bugs at the end)%% because <span class="text-danger">bug reports created/updated after the allocated time will not count.</span>
+* #r# Bug reports created/updated after the allocated time will not count.##</span>
 <div class="indented-level1">
 
 <tabs>
