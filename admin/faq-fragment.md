@@ -406,7 +406,6 @@ It is true that the teaching team will not give _ad hoc_ feedback on yet-to-be-g
 * Tutorial tasks that go through a 'sample' project aspect/artifact (e.g., use cases of a sample project) and find problems in it. This way, we can ensure that all of you encounter all the important learning points related to that aspect/artifact, even if some may not be relevant to your own project (which means you wouldn't have encountered them on your own).
 * Peer evaluations of each other's work, within teams and between teams. This gives you a way to exercise your evaluative judgement skills.
 
-
 </div>
 <!-- =============================================================== -->
 <div id="faq-tutorialWhatIfMissedDueToValidReason-Q">What if I can't attend (or missed) a tutorial due to a valid reason (e.g., MC)?</div>
@@ -487,16 +486,16 @@ If you anticipate a late arrival due to a reason beyond your control (e.g., due 
 
 </div>
 <!-- =============================================================== -->
-<div id="faq-warmUpTaskRushed-Q">When doing tutorial task 1, I couldn't update the workspace file before it was downloaded by the tutor. Will I be penalised?</div>
+<div id="faq-warmUpTaskRushed-Q">Why is tutorial task 1 rushed? I couldn't update the Workspace file before it was downloaded by the tutor; will I be penalised? Can I do it later?</div>
 <div id="faq-warmUpTaskRushed-A">
 
-Not to worry; there is no penalty.
+Not to worry; there is no penalty. No need to do it later either.
 
-We download the workspace file at 10-minutes mark to discourage students from continuing task 1 (which is just a warmup activity) even after task 2 has started, thus not getting the full value of task 2 (which is more important than task 1).
+We download the workspace file at the task 1 cut-off point to discourage students from continuing with task 1 (which is just a warmup activity) after task 2 has started. Continuing to work on task 1 at that point may prevent students from getting the full value from task 2, which usually has more learning value than task 1.
 
-We do use the downloaded workspace files to identify students who consistently come prepared for tutorials and do a good job in tutorial tasks (e.g., when selecting tutors), but we do not penalise students based on those workspace files.
+We use the downloaded workspace files to identify students who consistently come prepared for tutorials and perform well in tutorial tasks (e.g., when selecting tutors or awarding bonus points). However, we do not penalise students based on the workspace files.
 
-If you frequently find yourself being unable to finish task 1 in time, you can consider doing it in advance.
+If you frequently find yourself being unable to finish task 1 in time, consider doing it in advance.
 </div>
 <!-- =============================================================== -->
 <div id="faq-tutorialWhyTutorCannotGiveTechHelp-Q">Why tutors are not allowed to give tech help?</div>

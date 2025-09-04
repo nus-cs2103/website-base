@@ -1,9 +1,14 @@
 {% from "common/macros.njk" import show_faq, thumb with context %}
 
 {% if semester != "AY2425S2" %}
-#### {{ thumb(1) }} **Discuss iP progress**
+#### {{ thumb(1) }} **[First 5 minutes] Share iP progress**
 
-* If you managed to add a GUI to your app, demo it to others.
+1. Launch the current version of your iP.
+1. Give some inputs to it.
+1. Take a screenshot of the current state of the UI.
+1. Paste the screenshot in the `T4-Workspace.pptx` file (your tutor will tell you where to find that file).
+
+{{ show_faq("warmUpTaskRushed") }}
 
 #### {{ thumb(2) }} **Interpret class/object diagrams**
 {% else %}
