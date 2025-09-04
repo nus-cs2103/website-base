@@ -118,7 +118,7 @@
     </div>
     <div class="col">
 
-### **Tzer Bin**
+### Ng **Tzer Bin**
 
 **Head TA**<br>
 %%:fas-envelope:%% `dcsnt`[at]`nus.edu.sg`<br>
@@ -137,7 +137,7 @@
     </div>
     <div class="col">
 
-### **Tan Yugin**
+### Tan **Yugin**
 
 **Graduate TA**<br>
 %%:fas-envelope:%% `tanyugin`[at]`nus.edu.sg`<br>
